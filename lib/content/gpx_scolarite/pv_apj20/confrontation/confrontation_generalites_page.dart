@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConfrontationGeneralitesPage extends StatelessWidget {
   const ConfrontationGeneralitesPage({super.key});
@@ -55,7 +56,11 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Confrontation",
@@ -73,7 +78,11 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Généralités — La confrontation",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+              "f00002",
+              "Généralités — La confrontation",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,16 +94,36 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
 
           // Intro
           _ConditionCard(
-            title: "Définition (objectif)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+              "f00003",
+              "Définition (objectif)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Au cours d’une enquête, les déclarations peuvent être contradictoires "
-                "(victime/suspect, divergences entre suspects, versions incompatibles d’un même fait). "
-                "La confrontation consiste à mettre en présence les personnes dont les déclarations sont contradictoires, "
-                "afin de clarifier les divergences point par point.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00004",
+                      "Au cours d’une enquête, les déclarations peuvent être contradictoires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00005",
+                      "(victime/suspect, divergences entre suspects, versions incompatibles d’un même fait). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00006",
+                      "La confrontation consiste à mettre en présence les personnes dont les déclarations sont contradictoires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00007",
+                      "afin de clarifier les divergences point par point.",
+                    ),
               ),
             ],
           ),
@@ -103,43 +132,59 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles cités dans ton texte)
           _ConditionCard(
-            title: "Élément légal — assistance de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+              "f00008",
+              "Élément légal — assistance de l’avocat",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lorsque l’infraction concernée est un crime ou un délit puni d’une peine d’emprisonnement, l’assistance de l’avocat peut s’appliquer. ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                    "f00009",
+                    "Lorsque l’infraction concernée est un crime ou un délit puni d’une peine d’emprisonnement, l’assistance de l’avocat peut s’appliquer. ",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Victime confrontée avec une personne gardée à vue : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                    "f00010",
+                    "Victime confrontée avec une personne gardée à vue : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 63-4-5 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                    "f00011",
+                    "article 63-4-5 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Victime confrontée avec une personne soupçonnée entendue librement : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                    "f00012",
+                    "Victime confrontée avec une personne soupçonnée entendue librement : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 61-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                    "f00013",
+                    "article 61-2 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -150,33 +195,90 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
 
           // AVANT
           _ConditionCard(
-            title: "I — Avant la confrontation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+              "f00014",
+              "I — Avant la confrontation",
+            ),
             cardColor: cardBefore,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaître l’affaire et les divergences"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                  "f00015",
+                  "A) Connaître l’affaire et les divergences",
+                ),
+              ),
               _Paragraph(
-                "La confrontation se prépare :\n"
-                "• relever précisément les points litigieux,\n"
-                "• répertorier les questions à poser,\n"
-                "• prévoir l’ordre des thèmes pour éviter les échanges confus.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00016",
+                      "La confrontation se prépare :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00017",
+                      "• relever précisément les points litigieux,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00018",
+                      "• répertorier les questions à poser,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00019",
+                      "• prévoir l’ordre des thèmes pour éviter les échanges confus.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Conditions matérielles"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                  "f00020",
+                  "B) Conditions matérielles",
+                ),
+              ),
               _Paragraph(
-                "La confrontation doit se dérouler dans un local du service suffisamment grand "
-                "pour accueillir toutes les personnes confrontées.\n"
-                "Le responsable de l’opération (assisté d’un ou plusieurs collègues) rappelle les règles :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00021",
+                      "La confrontation doit se dérouler dans un local du service suffisamment grand ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00022",
+                      "pour accueillir toutes les personnes confrontées.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00023",
+                      "Le responsable de l’opération (assisté d’un ou plusieurs collègues) rappelle les règles :",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Chacun doit garder son calme."),
               _BulletPoint(
-                text: "Interdiction de prendre la parole sans y être invité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                  "f00024",
+                  "Chacun doit garder son calme.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Interdiction d’interrompre son contradicteur au cours de sa déposition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                  "f00025",
+                  "Interdiction de prendre la parole sans y être invité.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                  "f00026",
+                  "Interdiction d’interrompre son contradicteur au cours de sa déposition.",
+                ),
               ),
             ],
           ),
@@ -185,56 +287,135 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
 
           // PENDANT
           _ConditionCard(
-            title: "II — Pendant la confrontation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+              "f00027",
+              "II — Pendant la confrontation",
+            ),
             cardColor: cardDuring,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Assistance de l’avocat"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                  "f00028",
+                  "A) Assistance de l’avocat",
+                ),
+              ),
               _Paragraph(
-                "➤ Pour la victime\n"
-                "La victime peut être assistée d’un avocat lorsqu’elle est confrontée avec une personne gardée à vue "
-                "ou une personne soupçonnée entendue librement. Elle doit être préalablement informée :\n"
-                "• du choix d’un avocat ou de la désignation d’office,\n"
-                "• des frais à sa charge (sauf conditions d’aide juridictionnelle).\n"
-                "L’avocat peut consulter les procès-verbaux d’audition de la victime.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00029",
+                      "➤ Pour la victime\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00030",
+                      "La victime peut être assistée d’un avocat lorsqu’elle est confrontée avec une personne gardée à vue ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00031",
+                      "ou une personne soupçonnée entendue librement. Elle doit être préalablement informée :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00032",
+                      "• du choix d’un avocat ou de la désignation d’office,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00033",
+                      "• des frais à sa charge (sauf conditions d’aide juridictionnelle).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00034",
+                      "L’avocat peut consulter les procès-verbaux d’audition de la victime.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "➤ Pour le suspect\n"
-                "La personne suspectée (gardée à vue ou entendue librement) peut également être assistée par un avocat lors de la confrontation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00035",
+                      "➤ Pour le suspect\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00036",
+                      "La personne suspectée (gardée à vue ou entendue librement) peut également être assistée par un avocat lors de la confrontation.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les avocats peuvent prendre des notes, mais ne peuvent ni conseiller leur client, ni intervenir pendant la confrontation.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00037",
+                      "Les avocats peuvent prendre des notes, mais ne peuvent ni conseiller leur client, ni intervenir pendant la confrontation.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Déroulement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                  "f00038",
+                  "B) Déroulement",
+                ),
+              ),
               _Paragraph(
-                "L’enquêteur met en présence les intéressés et donne lecture des déclarations respectives.\n"
-                "Point par point, il demande à chacun s’il maintient ou non ses déclarations antérieures.\n"
-                "Chaque contradiction est consignée et soulignée sur un seul et même procès-verbal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00039",
+                      "L’enquêteur met en présence les intéressés et donne lecture des déclarations respectives.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00040",
+                      "Point par point, il demande à chacun s’il maintient ou non ses déclarations antérieures.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00041",
+                      "Chaque contradiction est consignée et soulignée sur un seul et même procès-verbal.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’officier ou l’agent de police judiciaire conserve la direction de l’opération. "
-                        "Il peut y mettre fin si le comportement d’une partie empêche le bon déroulement : une mention est portée au procès-verbal.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                          "f00042",
+                          "L’officier ou l’agent de police judiciaire conserve la direction de l’opération. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                          "f00043",
+                          "Il peut y mettre fin si le comportement d’une partie empêche le bon déroulement : une mention est portée au procès-verbal.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "À l’issue de la confrontation, l’avocat peut poser des questions au suspect et/ou à la victime. "
-                "L’enquêteur peut s’opposer aux questions si elles risquent de nuire au bon déroulement de l’enquête.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00044",
+                      "À l’issue de la confrontation, l’avocat peut poser des questions au suspect et/ou à la victime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00045",
+                      "L’enquêteur peut s’opposer aux questions si elles risquent de nuire au bon déroulement de l’enquête.",
+                    ),
               ),
             ],
           ),
@@ -243,19 +424,51 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
 
           // PV / Qualité rédactionnelle
           _ConditionCard(
-            title: "Procès-verbal — exigences de rédaction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+              "f00046",
+              "Procès-verbal — exigences de rédaction",
+            ),
             cardColor: cardPV,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le procès-verbal de confrontation obéit aux mêmes règles que les autres PV.\n"
-                "Il doit refléter fidèlement le déroulement :\n"
-                "• lecture des déclarations,\n"
-                "• positions de chacun (maintien ou non),\n"
-                "• contradictions relevées,\n"
-                "• incidents éventuels et décisions (ex. fin de confrontation).\n"
-                "Tout doit être clair, chronologique et factuel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00047",
+                      "Le procès-verbal de confrontation obéit aux mêmes règles que les autres PV.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00048",
+                      "Il doit refléter fidèlement le déroulement :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00049",
+                      "• lecture des déclarations,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00050",
+                      "• positions de chacun (maintien ou non),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00051",
+                      "• contradictions relevées,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00052",
+                      "• incidents éventuels et décisions (ex. fin de confrontation).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_generalites_page.dart",
+                      "f00053",
+                      "Tout doit être clair, chronologique et factuel.",
+                    ),
               ),
             ],
           ),
@@ -511,9 +724,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PluraliteInfractionsContenuPage extends StatelessWidget {
   const PluraliteInfractionsContenuPage({super.key});
@@ -25,10 +26,18 @@ class PluraliteInfractionsContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "La sanction",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+            "f00002",
+            "La sanction",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class PluraliteInfractionsContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Les règles applicables en cas de pluralité d'infractions",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00003",
+              "Les règles applicables en cas de pluralité d'infractions",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,9 +66,21 @@ class PluraliteInfractionsContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Accédez aux documents essentiels pour distinguer les régimes de pluralité "
-            "(récidive, réitération, concours réel) et comprendre leurs conséquences "
-            "sur la sanction.",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux documents essentiels pour distinguer les régimes de pluralité ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+                  "f00005",
+                  "(récidive, réitération, concours réel) et comprendre leurs conséquences ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+                  "f00006",
+                  "sur la sanction.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -69,9 +94,16 @@ class PluraliteInfractionsContenuPage extends StatelessWidget {
           // ====================== PDF LIST ===========================
           _ModuleCard(
             tag: 'sanction_pluralite_recidive',
-            title: "La récidive",
-            subtitle:
-                "Comprendre la récidive et ses effets sur la peine encourue.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00007",
+              "La récidive",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00008",
+              "Comprendre la récidive et ses effets sur la peine encourue.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -84,9 +116,16 @@ class PluraliteInfractionsContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_pluralite_reiteration',
-            title: "La réitération d'infractions",
-            subtitle:
-                "Distinguer la réitération : conditions et conséquences juridiques.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00009",
+              "La réitération d'infractions",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00010",
+              "Distinguer la réitération : conditions et conséquences juridiques.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +138,16 @@ class PluraliteInfractionsContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_pluralite_concours_reel',
-            title: "Le concours réel d'infractions",
-            subtitle:
-                "Identifier le concours réel et appliquer les règles de cumul.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00011",
+              "Le concours réel d'infractions",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00012",
+              "Identifier le concours réel et appliquer les règles de cumul.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -116,9 +162,16 @@ class PluraliteInfractionsContenuPage extends StatelessWidget {
           // ====================== QUIZ ===========================
           _ModuleCard(
             tag: 'sanction_pluralite_quiz',
-            title: "Quiz — Pluralité d'infractions",
-            subtitle:
-                "Entraînez-vous : récidive, réitération, concours réel et effets sur la sanction.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00013",
+              "Quiz — Pluralité d'infractions",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_contenu_page.dart",
+              "f00014",
+              "Entraînez-vous : récidive, réitération, concours réel et effets sur la sanction.",
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -172,7 +225,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

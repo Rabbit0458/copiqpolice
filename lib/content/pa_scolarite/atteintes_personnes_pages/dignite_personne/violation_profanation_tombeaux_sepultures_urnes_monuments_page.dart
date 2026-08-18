@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
     extends StatelessWidget {
@@ -57,10 +58,18 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la dignité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+            "f00002",
+            "Atteintes à la dignité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -75,7 +84,11 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Violation et profanation de tombeaux, sépultures, urnes cinéraires ou monuments à la mémoire des morts",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+              "f00003",
+              "Violation et profanation de tombeaux, sépultures, urnes cinéraires ou monuments à la mémoire des morts",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,14 +100,26 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La violation ou la profanation, par quelque moyen que ce soit, de tombeaux, de sépultures, "
-                "d’urnes cinéraires ou de monuments édifiés à la mémoire des morts, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                      "f00005",
+                      "La violation ou la profanation, par quelque moyen que ce soit, de tombeaux, de sépultures, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                      "f00006",
+                      "d’urnes cinéraires ou de monuments édifiés à la mémoire des morts, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -103,20 +128,36 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-17 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00008",
+                    "Article 225-17 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : prévoit et réprime la violation ou la profanation de tombeaux, sépultures, urnes cinéraires "
-                      "ou monuments édifiés à la mémoire des morts.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                        "f00009",
+                        " : prévoit et réprime la violation ou la profanation de tombeaux, sépultures, urnes cinéraires ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                        "f00010",
+                        "ou monuments édifiés à la mémoire des morts.",
+                      ),
                 ),
               ]),
             ],
@@ -126,66 +167,133 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Les lieux et objets protégés"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00012",
+                  "A) Les lieux et objets protégés",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Sont protégés par "),
                 TextSpan(
-                  text: "l’article 225-17 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00013",
+                    "Sont protégés par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00014",
+                    "l’article 225-17 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Les tombeaux : monument élevé sur les restes d’un mort (tous actes portant atteinte sont punissables, sauf s’il n’a pas encore servi de sépulture à un être humain).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00015",
+                  "Les tombeaux : monument élevé sur les restes d’un mort (tous actes portant atteinte sont punissables, sauf s’il n’a pas encore servi de sépulture à un être humain).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les sépultures : lieu où le défunt est enterré ; peut viser aussi le drap mortuaire ou le cercueil avant l’inhumation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00016",
+                  "Les sépultures : lieu où le défunt est enterré ; peut viser aussi le drap mortuaire ou le cercueil avant l’inhumation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les urnes cinéraires : vase fermé contenant les cendres après crémation, protégées au même titre que les sépultures (columbarium, caveaux d’urnes, monuments où elles sont scellées).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00017",
+                  "Les urnes cinéraires : vase fermé contenant les cendres après crémation, protégées au même titre que les sépultures (columbarium, caveaux d’urnes, monuments où elles sont scellées).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les monuments édifiés à la mémoire des morts : monuments collectifs, plaques commémoratives, stèles… même sans sépulture (ex. plaque sur un mur, lieu où un soldat/résistant a été tué).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00018",
+                  "Les monuments édifiés à la mémoire des morts : monuments collectifs, plaques commémoratives, stèles… même sans sépulture (ex. plaque sur un mur, lieu où un soldat/résistant a été tué).",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un acte de violation ou de profanation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00019",
+                  "B) Un acte de violation ou de profanation",
+                ),
+              ),
               _Paragraph(
-                "L’acte doit être matérialisé par une action physique ou une voie de fait. "
-                "Il peut s’agir de dégradations, d’atteintes, ou d’agissements portant atteinte au respect dû aux morts.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                      "f00020",
+                      "L’acte doit être matérialisé par une action physique ou une voie de fait. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                      "f00021",
+                      "Il peut s’agir de dégradations, d’atteintes, ou d’agissements portant atteinte au respect dû aux morts.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Exemples d’actes (illustratifs)"),
-              _BulletPoint(
-                text:
-                    "Briser une pierre tombale, inscrire des tags/dessins, dégrader une sépulture.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00022",
+                  "Exemples d’actes (illustratifs)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arracher des fleurs déposées/plantées par les proches du défunt.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00023",
+                  "Briser une pierre tombale, inscrire des tags/dessins, dégrader une sépulture.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ouvrir un caveau, retirer un cercueil, déplacer des éléments funéraires.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00024",
+                  "Arracher des fleurs déposées/plantées par les proches du défunt.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Placarder un écrit injurieux/diffamatoire sur un tombeau.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00025",
+                  "Ouvrir un caveau, retirer un cercueil, déplacer des éléments funéraires.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Briser un objet funéraire (ex. crucifix) déposé sur le corps d’un défunt.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00026",
+                  "Placarder un écrit injurieux/diffamatoire sur un tombeau.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00027",
+                  "Briser un objet funéraire (ex. crucifix) déposé sur le corps d’un défunt.",
+                ),
               ),
 
               SizedBox(height: 12),
@@ -194,8 +302,16 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ne sont pas punissables : l’exhumation réalisée dans les règles prescrites par la loi, "
-                        "ainsi que l’ouverture de sépultures très anciennes dans un intérêt historique.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                          "f00028",
+                          "Ne sont pas punissables : l’exhumation réalisée dans les règles prescrites par la loi, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                          "f00029",
+                          "ainsi que l’ouverture de sépultures très anciennes dans un intérêt historique.",
+                        ),
                   ),
                 ],
               ),
@@ -206,14 +322,26 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+              "f00030",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’auteur agit en toute connaissance de cause : il a pleinement conscience d’accomplir un acte "
-                "de nature à porter atteinte au respect dû aux morts. Le mobile est indifférent.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                      "f00031",
+                      "L’auteur agit en toute connaissance de cause : il a pleinement conscience d’accomplir un acte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                      "f00032",
+                      "de nature à porter atteinte au respect dû aux morts. Le mobile est indifférent.",
+                    ),
               ),
             ],
           ),
@@ -222,19 +350,30 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+              "f00033",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-17 alinéa 3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00034",
+                    "Article 225-17 alinéa 3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : l’infraction est aggravée lorsque la violation ou la profanation a été accompagnée d’une atteinte à l’intégrité du cadavre.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00035",
+                    " : l’infraction est aggravée lorsque la violation ou la profanation a été accompagnée d’une atteinte à l’intégrité du cadavre.",
+                  ),
                 ),
               ]),
             ],
@@ -244,70 +383,174 @@ class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+              "f00036",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00037",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00038",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-17 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00039",
+                    "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00040",
+                    "article 225-17 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00041",
+                    "Qualification aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-17 alinéa 3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00042",
+                    "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00043",
+                    "article 225-17 alinéa 3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00044",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 225-18-1 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: " ; amende selon "),
-                TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: " + peines des "),
-                TextSpan(
-                  text: "articles 131-39 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00045",
+                    "Responsabilité pénale prévue par ",
+                  ),
                 ),
                 TextSpan(
-                  text: " (dissolution, interdiction d’exercer, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00046",
+                    "l’article 225-18-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00047",
+                    " ; amende selon ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00048",
+                    "l’article 131-38 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00049",
+                    " + peines des ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00050",
+                    "articles 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00051",
+                    " (dissolution, interdiction d’exercer, etc.).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00052",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                  "f00053",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00054",
+                    "Complicité : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00055",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart",
+                    "f00056",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
             ],
@@ -565,9 +808,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

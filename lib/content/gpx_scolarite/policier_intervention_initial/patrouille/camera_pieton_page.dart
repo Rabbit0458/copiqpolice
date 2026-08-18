@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CameraPietonPage extends StatelessWidget {
   const CameraPietonPage({super.key});
@@ -54,7 +55,11 @@ class CameraPietonPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -72,7 +77,11 @@ class CameraPietonPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La caméra piéton",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+              "f00002",
+              "La caméra piéton",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -83,42 +92,75 @@ class CameraPietonPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Définition & finalités",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+              "f00003",
+              "Définition & finalités",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Dans l’exercice des missions de prévention des atteintes à l’ordre public, de protection de la sécurité "
-                      "des personnes et des biens, ainsi que dans les missions de police judiciaire, les agents de la police nationale "
-                      "peuvent procéder, au moyen de caméras individuelles, à un enregistrement audiovisuel de leurs interventions (",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                        "f00004",
+                        "Dans l’exercice des missions de prévention des atteintes à l’ordre public, de protection de la sécurité ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                        "f00005",
+                        "des personnes et des biens, ainsi que dans les missions de police judiciaire, les agents de la police nationale ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                        "f00006",
+                        "peuvent procéder, au moyen de caméras individuelles, à un enregistrement audiovisuel de leurs interventions (",
+                      ),
                 ),
                 TextSpan(
-                  text: "article L. 241-1 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00007",
+                    "article L. 241-1 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Objectifs principaux"),
-              _IntroBullet(
-                text: "Prévenir les incidents au cours des interventions.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00008",
+                  "Objectifs principaux",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Constater des infractions et collecter les preuves nécessaires à la poursuite de leurs auteurs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00009",
+                  "Prévenir les incidents au cours des interventions.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00010",
+                  "Constater des infractions et collecter les preuves nécessaires à la poursuite de leurs auteurs.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les enregistrements peuvent aussi être utilisés à des fins de formation et de pédagogie (sous conditions, notamment d’anonymisation).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00011",
+                      "Les enregistrements peuvent aussi être utilisés à des fins de formation et de pédagogie (sous conditions, notamment d’anonymisation).",
+                    ),
                   ),
                 ],
               ),
@@ -129,37 +171,48 @@ class CameraPietonPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Base légale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+              "f00012",
+              "I — Base légale",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 241-1 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00013",
+                    "Article L. 241-1 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : autorise l’enregistrement audiovisuel des interventions via caméras individuelles, dans les missions prévues.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00014",
+                    " : autorise l’enregistrement audiovisuel des interventions via caméras individuelles, dans les missions prévues.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les données issues des caméras sont traitées dans un cadre réglementaire précisé notamment par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00015",
+                    "Les données issues des caméras sont traitées dans un cadre réglementaire précisé notamment par ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "les articles R. 241-2 à R. 241-5 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00016",
+                    "les articles R. 241-2 à R. 241-5 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -169,60 +222,140 @@ class CameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Modalités d’utilisation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+              "f00017",
+              "II — Modalités d’utilisation",
+            ),
             cardColor: cardUse,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Agents concernés"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00018",
+                  "A) Agents concernés",
+                ),
+              ),
               _Paragraph(
-                "Dans la police nationale, peuvent porter une caméra piéton :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00019",
+                  "Dans la police nationale, peuvent porter une caméra piéton :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Les personnels actifs (uniforme ou tenue civile*).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00020",
+                  "Les personnels actifs (uniforme ou tenue civile*).",
+                ),
               ),
-              _BulletPoint(text: "Les policiers adjoints."),
-              _BulletPoint(text: "Les réservistes."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00021",
+                  "Les policiers adjoints.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00022",
+                  "Les réservistes.",
+                ),
+              ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En tenue civile, l’agent doit porter des insignes extérieurs et apparents de sa qualité (ex : brassard).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00023",
+                      "En tenue civile, l’agent doit porter des insignes extérieurs et apparents de sa qualité (ex : brassard).",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Lieux concernés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00024",
+                  "B) Lieux concernés",
+                ),
+              ),
               _Paragraph(
-                "Les personnels régulièrement équipés peuvent utiliser la caméra en tous lieux "
-                "(publics ou privés, y compris domiciles et lieux assimilés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00025",
+                      "Les personnels régulièrement équipés peuvent utiliser la caméra en tous lieux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00026",
+                      "(publics ou privés, y compris domiciles et lieux assimilés).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dans un domicile, l’enregistrement doit se limiter au strict périmètre de l’intervention "
-                "et aux personnes concernées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00027",
+                      "Dans un domicile, l’enregistrement doit se limiter au strict périmètre de l’intervention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00028",
+                      "et aux personnes concernées.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Information des personnes filmées"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00029",
+                  "Information des personnes filmées",
+                ),
+              ),
               _Paragraph(
-                "Le déclenchement fait l’objet d’une information préalable des personnes filmées. "
-                "Si les circonstances font obstacle à cette information préalable, elle est faite à l’issue de l’intervention "
-                "(sauf si l’obstacle persiste).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00030",
+                      "Le déclenchement fait l’objet d’une information préalable des personnes filmées. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00031",
+                      "Si les circonstances font obstacle à cette information préalable, elle est faite à l’issue de l’intervention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00032",
+                      "(sauf si l’obstacle persiste).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exemple d’obstacle : état d’ébriété empêchant la compréhension de l’information. Référence : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00033",
+                      "Exemple d’obstacle : état d’ébriété empêchant la compréhension de l’information. Référence : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 2 mai 2024",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00034",
+                      "Cass. crim., 2 mai 2024",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -233,38 +366,67 @@ class CameraPietonPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le consentement des personnes filmées n’est pas requis. Une opposition ne fait pas obstacle "
-                "à la poursuite de l’enregistrement. Les personnes bénéficient d’un droit d’accès pouvant être exercé via la CNIL.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00035",
+                      "Le consentement des personnes filmées n’est pas requis. Une opposition ne fait pas obstacle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00036",
+                      "à la poursuite de l’enregistrement. Les personnes bénéficient d’un droit d’accès pouvant être exercé via la CNIL.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Conditions d’utilisation"),
-              _BulletPoint(
-                text:
-                    "Seule une caméra en dotation administrative, portée de façon apparente, peut être utilisée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00037",
+                  "C) Conditions d’utilisation",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La mise en service (mode pré-enregistrement) nécessite l’identification préalable de l’agent porteur (RIO ou carte agent selon le modèle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00038",
+                  "Seule une caméra en dotation administrative, portée de façon apparente, peut être utilisée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En cas d’incident ou de risque d’incident (circonstances / comportement), l’agent active le mode “enregistrement” puis le désactive en fin d’intervention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00039",
+                  "La mise en service (mode pré-enregistrement) nécessite l’identification préalable de l’agent porteur (RIO ou carte agent selon le modèle).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00040",
+                  "En cas d’incident ou de risque d’incident (circonstances / comportement), l’agent active le mode “enregistrement” puis le désactive en fin d’intervention.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les 30 secondes précédant le déclenchement sont sauvegardées (pré-enregistrement).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00041",
+                      "Les 30 secondes précédant le déclenchement sont sauvegardées (pré-enregistrement).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Si la sécurité des agents (risque immédiat) ou la sécurité des biens/personnes est menacée, les images peuvent être transmises en temps réel au poste de commandement et aux personnels engagés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00042",
+                  "Si la sécurité des agents (risque immédiat) ou la sécurité des biens/personnes est menacée, les images peuvent être transmises en temps réel au poste de commandement et aux personnels engagés.",
+                ),
               ),
             ],
           ),
@@ -272,68 +434,132 @@ class CameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Traitement des données",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+              "f00043",
+              "III — Traitement des données",
+            ),
             cardColor: cardData,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Données et informations enregistrées"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00044",
+                  "A) Données et informations enregistrées",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les catégories de données enregistrées sont prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00045",
+                    "Les catégories de données enregistrées sont prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article R. 241-2 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00046",
+                    "l’article R. 241-2 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 10),
-              _BulletPoint(text: "Images et sons captés par la caméra."),
               _BulletPoint(
-                text: "Jour et plages horaires d’enregistrement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00047",
+                  "Images et sons captés par la caméra.",
+                ),
               ),
               _BulletPoint(
-                text: "Identification de l’agent porteur de la caméra.",
-              ),
-              _BulletPoint(text: "Lieu de collecte des données."),
-              _BulletPoint(text: "Identification de la caméra."),
-              _BulletPoint(
-                text:
-                    "Identification des personnels utilisateurs du logiciel d’exploitation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00048",
+                  "Jour et plages horaires d’enregistrement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Motif d’export du fichier vidéo, nom de l’agent et du service demandeurs, numéro de la procédure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00049",
+                  "Identification de l’agent porteur de la caméra.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00050",
+                  "Lieu de collecte des données.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00051",
+                  "Identification de la caméra.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00052",
+                  "Identification des personnels utilisateurs du logiciel d’exploitation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00053",
+                  "Motif d’export du fichier vidéo, nom de l’agent et du service demandeurs, numéro de la procédure.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Stockage & conservation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00054",
+                  "B) Stockage & conservation",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Règles prévues notamment par "),
                 TextSpan(
-                  text:
-                      "les articles R. 241-3, R. 241-4 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00055",
+                    "Règles prévues notamment par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00056",
+                    "les articles R. 241-3, R. 241-4 du Code de la sécurité intérieure",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "En fin de vacation, les données sont transférées sur un support informatique sécurisé et automatiquement effacées de la caméra.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00057",
+                  "En fin de vacation, les données sont transférées sur un support informatique sécurisé et automatiquement effacées de la caméra.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Hors procédure (judiciaire/administrative/disciplinaire), les données sont conservées pendant un mois.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00058",
+                  "Hors procédure (judiciaire/administrative/disciplinaire), les données sont conservées pendant un mois.",
+                ),
               ),
             ],
           ),
@@ -341,85 +567,171 @@ class CameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Consultation & destinataires",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+              "f00059",
+              "IV — Consultation & destinataires",
+            ),
             cardColor: cardProc,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les règles de consultation/accès sont prévues notamment par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00060",
+                    "Les règles de consultation/accès sont prévues notamment par ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "les articles R. 241-3, R. 241-3-1 et R. 241-5 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                    "f00061",
+                    "les articles R. 241-3, R. 241-3-1 et R. 241-5 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Accès (gestionnaires)"),
-              _BulletPoint(
-                text:
-                    "Les chefs de service et les agents qu’ils désignent peuvent accéder à tout ou partie des données.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00062",
+                  "Accès (gestionnaires)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ils peuvent extraire les données pour les besoins exclusifs d’une procédure judiciaire, administrative ou disciplinaire, ou pour une action de formation/pédagogie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00063",
+                  "Les chefs de service et les agents qu’ils désignent peuvent accéder à tout ou partie des données.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00064",
+                  "Ils peuvent extraire les données pour les besoins exclusifs d’une procédure judiciaire, administrative ou disciplinaire, ou pour une action de formation/pédagogie.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("Destinataires possibles (selon le cadre)"),
-              _BulletPoint(
-                text: "Inspection générale de la police nationale (I.G.P.N.).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00065",
+                  "Destinataires possibles (selon le cadre)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Autorité hiérarchique participant au pouvoir disciplinaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00066",
+                  "Inspection générale de la police nationale (I.G.P.N.).",
+                ),
               ),
               _BulletPoint(
-                text: "Agents chargés de la formation des personnels.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00067",
+                  "Autorité hiérarchique participant au pouvoir disciplinaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00068",
+                  "Agents chargés de la formation des personnels.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les enregistrements utilisés à des fins pédagogiques et de formation sont anonymisés.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00069",
+                      "Les enregistrements utilisés à des fins pédagogiques et de formation sont anonymisés.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("Accès par l’agent après l’intervention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00070",
+                  "Accès par l’agent après l’intervention",
+                ),
+              ),
               _Paragraph(
-                "Dans le cadre d’une procédure judiciaire ou d’une intervention, les agents équipés peuvent accéder directement "
-                "après l’intervention (après transfert sur support sécurisé) aux enregistrements auxquels ils ont procédé afin de faciliter :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00071",
+                      "Dans le cadre d’une procédure judiciaire ou d’une intervention, les agents équipés peuvent accéder directement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00072",
+                      "après l’intervention (après transfert sur support sécurisé) aux enregistrements auxquels ils ont procédé afin de faciliter :",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "La recherche d’auteurs d’infractions."),
               _BulletPoint(
-                text: "La prévention d’atteintes imminentes à l’ordre public.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00073",
+                  "La recherche d’auteurs d’infractions.",
+                ),
               ),
-              _BulletPoint(text: "Le secours aux personnes."),
               _BulletPoint(
-                text:
-                    "L’établissement fidèle des faits lors des comptes rendus d’intervention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00074",
+                  "La prévention d’atteintes imminentes à l’ordre public.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00075",
+                  "Le secours aux personnes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00076",
+                  "L’établissement fidèle des faits lors des comptes rendus d’intervention.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("Traçabilité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                  "f00077",
+                  "Traçabilité",
+                ),
+              ),
               _Paragraph(
-                "Toutes les opérations de collecte, modification, consultation, communication et effacement sont enregistrées "
-                "et conservées pendant trois ans.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00078",
+                      "Toutes les opérations de collecte, modification, consultation, communication et effacement sont enregistrées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/camera_pieton_page.dart",
+                      "f00079",
+                      "et conservées pendant trois ans.",
+                    ),
               ),
             ],
           ),
@@ -675,9 +987,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

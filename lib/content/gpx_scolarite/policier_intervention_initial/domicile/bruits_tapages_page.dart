@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class BruitsTapagesPage extends StatelessWidget {
   const BruitsTapagesPage({super.key});
@@ -55,7 +56,11 @@ class BruitsTapagesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Domicile",
@@ -73,7 +78,11 @@ class BruitsTapagesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les bruits et tapages",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00002",
+              "Les bruits et tapages",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,12 +98,28 @@ class BruitsTapagesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les bruits portant atteinte à la tranquillité publique peuvent avoir des origines très diverses "
-                "(domestiques, chantiers, activités professionnelles, tapage nocturne, disputes bruyantes…). "
-                "Selon la nature du bruit, les textes applicables et la procédure diffèrent : parfois sans mesure acoustique, "
-                "parfois avec sonomètre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00003",
+                      "Les bruits portant atteinte à la tranquillité publique peuvent avoir des origines très diverses ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00004",
+                      "(domestiques, chantiers, activités professionnelles, tapage nocturne, disputes bruyantes…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00005",
+                      "Selon la nature du bruit, les textes applicables et la procédure diffèrent : parfois sans mesure acoustique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00006",
+                      "parfois avec sonomètre.",
+                    ),
               ),
             ],
           ),
@@ -103,72 +128,95 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT (textes principaux)
           _ConditionCard(
-            title: "I — Élément légal (textes principaux)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00007",
+              "I — Élément légal (textes principaux)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 1336-5 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00008",
+                    "Article R. 1336-5 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : bruits de voisinage d’origine domestique (durée, répétition ou intensité portant atteinte à la tranquillité).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00009",
+                    " : bruits de voisinage d’origine domestique (durée, répétition ou intensité portant atteinte à la tranquillité).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 1336-10 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00010",
+                    "Article R. 1336-10 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : bruits de chantier (travaux soumis à déclaration/autorisation) avec conditions spécifiques.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00011",
+                    " : bruits de chantier (travaux soumis à déclaration/autorisation) avec conditions spécifiques.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 1336-6 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00012",
+                    "Article R. 1336-6 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : bruits excessifs relevant d’activités (professionnelles, sportives, culturelles, loisirs) pouvant nécessiter une mesure.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00013",
+                    " : bruits excessifs relevant d’activités (professionnelles, sportives, culturelles, loisirs) pouvant nécessiter une mesure.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 623-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00014",
+                    "Article R. 623-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : bruits ou tapages injurieux ou nocturnes troublant la tranquillité d’autrui.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00015",
+                    " : bruits ou tapages injurieux ou nocturnes troublant la tranquillité d’autrui.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Selon le cadre (CSP / CP), la classe de contravention, la procédure (amende forfaitaire) et les peines complémentaires peuvent varier.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00016",
+                      "Selon le cadre (CSP / CP), la classe de contravention, la procédure (amende forfaitaire) et les peines complémentaires peuvent varier.",
+                    ),
                   ),
                 ],
               ),
@@ -179,143 +227,245 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // Bruits de voisinage sans mesure
           _ConditionCard(
-            title: "II — Bruits constatés sans mesure acoustique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00017",
+              "II — Bruits constatés sans mesure acoustique",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Bruits d’origine domestique"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00018",
+                  "A) Bruits d’origine domestique",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 1336-5 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00019",
+                    "Article R. 1336-5 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : s’applique aux bruits résultant du comportement d’une personne (ou d’une chose/animal dont elle a la garde) "
-                      "dès lors qu’ils portent atteinte à la tranquillité du voisinage par leur durée, leur répétition ou leur intensité.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                        "f00020",
+                        " : s’applique aux bruits résultant du comportement d’une personne (ou d’une chose/animal dont elle a la garde) ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                        "f00021",
+                        "dès lors qu’ils portent atteinte à la tranquillité du voisinage par leur durée, leur répétition ou leur intensité.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Exemples : cris d’animaux, musique, diffusion de son, jeux bruyants, fêtes familiales, travaux, outils, pièces d’artifice…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00022",
+                  "Exemples : cris d’animaux, musique, diffusion de son, jeux bruyants, fêtes familiales, travaux, outils, pièces d’artifice…",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Répression : amende 4e classe — "),
                 TextSpan(
-                  text: "article R. 1337-7 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00023",
+                    "Répression : amende 4e classe — ",
                   ),
                 ),
-                TextSpan(text: "."),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Amende forfaitaire possible — "),
                 TextSpan(
-                  text: "article R. 48-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00024",
+                    "article R. 1337-7 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Peine complémentaire possible : confiscation — ",
-                ),
-                TextSpan(
-                  text: "article R. 1337-8 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00025",
+                    "Amende forfaitaire possible — ",
                   ),
                 ),
-                TextSpan(text: " (sauf amende forfaitaire)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00026",
+                    "article R. 48-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00027",
+                    "Peine complémentaire possible : confiscation — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00028",
+                    "article R. 1337-8 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00029",
+                    " (sauf amende forfaitaire).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Complicité (aide/assistance) : même peine — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00030",
+                    "Complicité (aide/assistance) : même peine — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 1337-9 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00031",
+                    "article R. 1337-9 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Bruits de chantier"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00032",
+                  "B) Bruits de chantier",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 1336-10 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00033",
+                    "Article R. 1336-10 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : vise les bruits provenant de chantiers (travaux publics/privés) soumis à déclaration ou autorisation, "
-                      "lorsqu’ils troublent le voisinage.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                        "f00034",
+                        " : vise les bruits provenant de chantiers (travaux publics/privés) soumis à déclaration ou autorisation, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                        "f00035",
+                        "lorsqu’ils troublent le voisinage.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Le trouble est caractérisé notamment en cas de :\n"
-                "• non-respect des conditions fixées par l’autorité compétente (réalisation des travaux, matériels, équipements)\n"
-                "• insuffisance de précautions appropriées pour limiter le bruit\n"
-                "• comportement anormalement bruyant",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00036",
+                      "Le trouble est caractérisé notamment en cas de :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00037",
+                      "• non-respect des conditions fixées par l’autorité compétente (réalisation des travaux, matériels, équipements)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00038",
+                      "• insuffisance de précautions appropriées pour limiter le bruit\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00039",
+                      "• comportement anormalement bruyant",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Répression : amende 5e classe — "),
                 TextSpan(
-                  text: "article R. 1337-6 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00040",
+                    "Répression : amende 5e classe — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00041",
+                    "article R. 1337-6 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Confiscation possible — "),
                 TextSpan(
-                  text: "article R. 1337-8 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00042",
+                    "Confiscation possible — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00043",
+                    "article R. 1337-8 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Complicité (aide/assistance) : même peine — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00044",
+                    "Complicité (aide/assistance) : même peine — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 1337-9 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00045",
+                    "article R. 1337-9 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -324,8 +474,16 @@ class BruitsTapagesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le bricolage ou des travaux non soumis à déclaration/autorisation ne relèvent pas de ce régime spécifique : "
-                        "ils sont en pratique traités via les textes des bruits domestiques.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                          "f00046",
+                          "Le bricolage ou des travaux non soumis à déclaration/autorisation ne relèvent pas de ce régime spécifique : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                          "f00047",
+                          "ils sont en pratique traités via les textes des bruits domestiques.",
+                        ),
                   ),
                 ],
               ),
@@ -336,41 +494,80 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // Mesure acoustique
           _ConditionCard(
-            title: "III — Bruits nécessitant une mesure acoustique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00048",
+              "III — Bruits nécessitant une mesure acoustique",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 1336-6 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00049",
+                    "Article R. 1336-6 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : liste des bruits excessifs pouvant nécessiter un recours au sonomètre.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00050",
+                    " : liste des bruits excessifs pouvant nécessiter un recours au sonomètre.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Il s’agit notamment des bruits ayant pour origine :\n"
-                "• une activité professionnelle (hors chantier)\n"
-                "• une activité sportive\n"
-                "• une activité culturelle ou de loisirs\n"
-                "\nDans ces cas, l’activité est habituelle ou soumise à autorisation, et les conditions d’exercice relatives au bruit "
-                "n’ont pas été fixées par l’autorité compétente.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00051",
+                      "Il s’agit notamment des bruits ayant pour origine :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00052",
+                      "• une activité professionnelle (hors chantier)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00053",
+                      "• une activité sportive\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00054",
+                      "• une activité culturelle ou de loisirs\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00055",
+                      "\nDans ces cas, l’activité est habituelle ou soumise à autorisation, et les conditions d’exercice relatives au bruit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00056",
+                      "n’ont pas été fixées par l’autorité compétente.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Sont aussi concernés les établissements devant prévoir une isolation acoustique ou les locaux recevant du public diffusant habituellement de la musique amplifiée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00057",
+                  "Sont aussi concernés les établissements devant prévoir une isolation acoustique ou les locaux recevant du public diffusant habituellement de la musique amplifiée.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le non-respect des prescriptions applicables est susceptible d’être sanctionné par des contraventions de 5e classe.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00058",
+                  "Le non-respect des prescriptions applicables est susceptible d’être sanctionné par des contraventions de 5e classe.",
+                ),
               ),
             ],
           ),
@@ -379,35 +576,65 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // Agents habilités
           _ConditionCard(
-            title: "IV — Agents habilités à constater",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00059",
+              "IV — Agents habilités à constater",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sont notamment habilités à constater les infractions :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00060",
+                  "Sont notamment habilités à constater les infractions :",
+                ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00061",
+                  "O.P.J, A.P.J, A.P.J.A (dans le cadre des dispositions du Code de procédure pénale).",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "O.P.J, A.P.J, A.P.J.A (dans le cadre des dispositions du Code de procédure pénale).",
-              ),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "Agents des douanes, répression des fraudes, inspecteurs installations classées, agents commissionnés et assermentés "
-                    "(environnement, agriculture, industrie, équipement, transports, mer, santé, jeunesse et sports), inspecteurs de salubrité, "
-                    "agents des collectivités locales.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00062",
+                      "Agents des douanes, répression des fraudes, inspecteurs installations classées, agents commissionnés et assermentés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00063",
+                      "(environnement, agriculture, industrie, équipement, transports, mer, santé, jeunesse et sports), inspecteurs de salubrité, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00064",
+                      "agents des collectivités locales.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Fondement : "),
                 TextSpan(
-                  text: "article L. 571-18 du Code de l’environnement",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00065",
+                    "Fondement : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00066",
+                    "article L. 571-18 du Code de l’environnement",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -415,8 +642,11 @@ class BruitsTapagesPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ces agents peuvent, après accord du procureur de la République, procéder à des constatations en matière de bruits de voisinage.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00067",
+                      "Ces agents peuvent, après accord du procureur de la République, procéder à des constatations en matière de bruits de voisinage.",
+                    ),
                   ),
                 ],
               ),
@@ -427,42 +657,100 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // Tapage CP : rendu pédagogique 3 éléments
           _ConditionCard(
-            title: "V — Tapage (Code pénal) : les 3 éléments",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00068",
+              "V — Tapage (Code pénal) : les 3 éléments",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Élément légal"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00069",
+                  "A) Élément légal",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 623-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00070",
+                    "Article R. 623-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : incrimine les bruits ou tapages injurieux ou nocturnes troublant la tranquillité d’autrui.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00071",
+                    " : incrimine les bruits ou tapages injurieux ou nocturnes troublant la tranquillité d’autrui.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("B) Élément matériel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00072",
+                  "B) Élément matériel",
+                ),
+              ),
               _Paragraph(
-                "Le tapage peut être compris comme une série de bruits tumultueux (vacarme, brouhaha), "
-                "de nature à troubler la tranquillité publique.\n"
-                "\n• Tapage nocturne : entre le coucher et le lever du soleil.\n"
-                "• Tapage injurieux : disputes violentes et bruyantes, vociférations, invectives, grossièretés…\n"
-                "\nLe bruit peut provenir d’une ou plusieurs personnes, d’un animal ou d’une chose (aboiements, musique, télévision…). "
-                "Il suffit que le bruit soit perceptible à l’extérieur (voisins, passants), même si une seule personne est troublée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00073",
+                      "Le tapage peut être compris comme une série de bruits tumultueux (vacarme, brouhaha), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00074",
+                      "de nature à troubler la tranquillité publique.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00075",
+                      "\n• Tapage nocturne : entre le coucher et le lever du soleil.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00076",
+                      "• Tapage injurieux : disputes violentes et bruyantes, vociférations, invectives, grossièretés…\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00077",
+                      "\nLe bruit peut provenir d’une ou plusieurs personnes, d’un animal ou d’une chose (aboiements, musique, télévision…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00078",
+                      "Il suffit que le bruit soit perceptible à l’extérieur (voisins, passants), même si une seule personne est troublée.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Élément moral"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00079",
+                  "C) Élément moral",
+                ),
+              ),
               _Paragraph(
-                "L’infraction est constituée si le bruit résulte d’un fait volontaire et personnel. "
-                "L’idée-clé : l’auteur a conscience du trouble causé et refuse ou néglige de faire cesser le tapage.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00080",
+                      "L’infraction est constituée si le bruit résulte d’un fait volontaire et personnel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                      "f00081",
+                      "L’idée-clé : l’auteur a conscience du trouble causé et refuse ou néglige de faire cesser le tapage.",
+                    ),
               ),
             ],
           ),
@@ -471,74 +759,129 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // Répression / procédures
           _ConditionCard(
-            title: "VI — Répression & procédure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00082",
+              "VI — Répression & procédure",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Tapage (Code pénal)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00083",
+                  "Tapage (Code pénal)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Contravention 3e classe — "),
                 TextSpan(
-                  text: "article R. 623-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00084",
+                    "Contravention 3e classe — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00085",
+                    "article R. 623-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Amende forfaitaire applicable — "),
                 TextSpan(
-                  text: "article R. 48-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00086",
+                    "Amende forfaitaire applicable — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00087",
+                    "article R. 48-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                "Une peine complémentaire de confiscation peut être prononcée (selon les cas, notamment hors amende forfaitaire).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00088",
+                  "Une peine complémentaire de confiscation peut être prononcée (selon les cas, notamment hors amende forfaitaire).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Bruits domestiques / chantier (CSP)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00089",
+                  "Bruits domestiques / chantier (CSP)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Bruits domestiques : 4e classe — "),
                 TextSpan(
-                  text: "article R. 1337-7 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00090",
+                    "Bruits domestiques : 4e classe — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00091",
+                    "article R. 1337-7 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Bruits de chantier : 5e classe — "),
                 TextSpan(
-                  text: "article R. 1337-6 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00092",
+                    "Bruits de chantier : 5e classe — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00093",
+                    "article R. 1337-6 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Confiscation (CSP) — "),
                 TextSpan(
-                  text: "article R. 1337-8 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00094",
+                    "Confiscation (CSP) — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00095",
+                    "article R. 1337-8 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -549,42 +892,79 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // Tentative & complicité (rendu clean)
           _ConditionCard(
-            title: "VII — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00096",
+              "VII — Tentative & complicité",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Tentative"),
               _BulletPoint(
-                text:
-                    "En matière de contraventions, la tentative n’est en principe pas punissable (sauf texte spécial).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00097",
+                  "En matière de contraventions, la tentative n’est en principe pas punissable (sauf texte spécial).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00098",
+                  "Complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Pour les bruits relevant du CSP : "),
                 TextSpan(
-                  text: "article R. 1337-9 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00099",
+                    "Pour les bruits relevant du CSP : ",
                   ),
                 ),
-                TextSpan(text: " (aide ou assistance)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00100",
+                    "article R. 1337-9 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00101",
+                    " (aide ou assistance).",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Pour le tapage (CP) : la complicité est visée dans ",
-                ),
-                TextSpan(
-                  text: "l’article R. 623-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00102",
+                    "Pour le tapage (CP) : la complicité est visée dans ",
                   ),
                 ),
-                TextSpan(text: " (alinéa relatif à la complicité)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00103",
+                    "l’article R. 623-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                    "f00104",
+                    " (alinéa relatif à la complicité).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -593,41 +973,69 @@ class BruitsTapagesPage extends StatelessWidget {
 
           // Synthèse opérationnelle (codes)
           _ConditionCard(
-            title: "VIII — Synthèse opérationnelle (rappels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+              "f00105",
+              "VIII — Synthèse opérationnelle (rappels)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Repères utiles en intervention (sans mesure acoustique) :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00106",
+                  "Repères utiles en intervention (sans mesure acoustique) :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Tapage injurieux diurne : bruits/tapage injurieux troublant la tranquillité d’autrui (contravention 3e classe).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00107",
+                  "Tapage injurieux diurne : bruits/tapage injurieux troublant la tranquillité d’autrui (contravention 3e classe).",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Tapage nocturne : bruits/tapage nocturne troublant la tranquillité d’autrui (contravention 3e classe).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00108",
+                  "Tapage nocturne : bruits/tapage nocturne troublant la tranquillité d’autrui (contravention 3e classe).",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Bruits domestiques : atteinte à la tranquillité du voisinage par durée/répétition/intensité (contravention 4e classe).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00109",
+                  "Bruits domestiques : atteinte à la tranquillité du voisinage par durée/répétition/intensité (contravention 4e classe).",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Bruits de chantier (soumis à déclaration/autorisation) : conditions spécifiques + contravention 5e classe.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                  "f00110",
+                  "Bruits de chantier (soumis à déclaration/autorisation) : conditions spécifiques + contravention 5e classe.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Toujours qualifier selon l’origine (domestique / chantier / activité / tapage CP). "
-                        "C’est la qualification qui conditionne la procédure (forfaitaire ou non), la classe de contravention et les suites.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                          "f00111",
+                          "Toujours qualifier selon l’origine (domestique / chantier / activité / tapage CP). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/domicile/bruits_tapages_page.dart",
+                          "f00112",
+                          "C’est la qualification qui conditionne la procédure (forfaitaire ou non), la classe de contravention et les suites.",
+                        ),
                   ),
                 ],
               ),
@@ -885,9 +1293,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

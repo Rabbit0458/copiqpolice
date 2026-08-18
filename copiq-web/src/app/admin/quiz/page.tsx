@@ -43,8 +43,18 @@ function ModuleList() {
   const router = useRouter()
   const params = useSearchParams()
   const quality = params.get("quality")
+  const [search, setSearch] = useState("")
+  const [track, setTrack] = useState<"all" | "gpx" | "pa">("all")
   const { data, error, loading } = useAsync(() => quizApi.listModules(), [])
-  const visibleModules = (data ?? []).filter((row) => quality !== "missing-explanation" || row.nb_sans_explication > 0)
+  const normalizedSearch = search.trim().toLocaleLowerCase("fr")
+  const visibleModules = (data ?? []).filter((row) => {
+    if (quality === "missing-explanation" && row.nb_sans_explication === 0) return false
+    if (track !== "all" && row.track.toLocaleLowerCase("fr") !== track) return false
+    if (!normalizedSearch) return true
+    return [row.title, row.subtitle, row.module, row.route]
+      .filter(Boolean)
+      .some((value) => String(value).toLocaleLowerCase("fr").includes(normalizedSearch))
+  })
 
   return (
     <>
@@ -60,6 +70,36 @@ function ModuleList() {
           <span><strong>File de contrôle :</strong> modules contenant des questions sans correction.</span>
           <button type="button" onClick={() => router.push("/admin/quiz/")} className="min-h-9 cursor-pointer rounded-lg px-2.5 font-semibold text-[var(--brand)] hover:bg-[var(--brand)]/10">Voir tous les quiz</button>
         </div>
+      )}
+      <div className="mb-4 grid gap-2 sm:grid-cols-[minmax(0,1fr)_160px]">
+        <label className="block">
+          <span className="sr-only">Rechercher un quiz</span>
+          <input
+            type="search"
+            placeholder="Rechercher un titre, un module ou une route…"
+            value={search}
+            onChange={(event) => setSearch(event.target.value)}
+            className="min-h-11 w-full rounded-xl border border-[var(--outline)] bg-[var(--surface)] px-3 text-sm outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand)]/15"
+          />
+        </label>
+        <label className="block">
+          <span className="sr-only">Filtrer par filière</span>
+          <select
+            aria-label="Filtrer par filière"
+            value={track}
+            onChange={(event) => setTrack(event.target.value as "all" | "gpx" | "pa")}
+            className="min-h-11 w-full rounded-xl border border-[var(--outline)] bg-[var(--surface)] px-3 text-sm outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand)]/15"
+          >
+            <option value="all">Toutes les filières</option>
+            <option value="gpx">GPX</option>
+            <option value="pa">PA</option>
+          </select>
+        </label>
+      </div>
+      {data && (
+        <p className="mb-3 text-xs text-[var(--on-surface-muted)]">
+          {visibleModules.length} quiz affiché(s) sur {data.length}
+        </p>
       )}
       {data && visibleModules.length === 0 && <Empty>Aucun quiz dans cette sélection.</Empty>}
 

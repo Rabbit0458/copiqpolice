@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
   const SoustractionEnfantMineurParAscendantPage({super.key});
@@ -59,10 +60,18 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Autorité parentale",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+            "f00002",
+            "Autorité parentale",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La soustraction d’enfant mineur par ascendant",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+              "f00003",
+              "La soustraction d’enfant mineur par ascendant",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, par tout ascendant, de soustraire un enfant mineur des mains de ceux qui exercent "
-                "l’autorité parentale ou auxquels il a été confié ou chez qui il a sa résidence habituelle, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00005",
+                      "Le fait, par tout ascendant, de soustraire un enfant mineur des mains de ceux qui exercent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00006",
+                      "l’autorité parentale ou auxquels il a été confié ou chez qui il a sa résidence habituelle, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00007",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,22 +135,30 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
 
           // ✅ Élément légal (en haut)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00009",
+                    "Article 227-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la soustraction d’enfant mineur par un ascendant.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime la soustraction d’enfant mineur par un ascendant.",
+                  ),
                 ),
               ]),
             ],
@@ -131,75 +168,150 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) L’auteur est un ascendant du mineur"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00012",
+                  "A) L’auteur est un ascendant du mineur",
+                ),
+              ),
               _Paragraph(
-                "Tout ascendant peut être auteur : il doit exister un lien de filiation entre l’agent et le mineur. "
-                "Il peut s’agir du père, de la mère, des grands-parents ou arrière-grands-parents.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00013",
+                      "Tout ascendant peut être auteur : il doit exister un lien de filiation entre l’agent et le mineur. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00014",
+                      "Il peut s’agir du père, de la mère, des grands-parents ou arrière-grands-parents.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le lien de filiation entre le mineur et la « victime » n’est pas requis : le texte vise "
-                        "les personnes qui exercent l’autorité parentale, celles auxquelles l’enfant a été confié "
-                        "ou chez qui il a sa résidence habituelle (droits issus d’une décision de justice, d’une convention homologuée ou de la loi).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                          "f00015",
+                          "Le lien de filiation entre le mineur et la « victime » n’est pas requis : le texte vise ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                          "f00016",
+                          "les personnes qui exercent l’autorité parentale, celles auxquelles l’enfant a été confié ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                          "f00017",
+                          "ou chez qui il a sa résidence habituelle (droits issus d’une décision de justice, d’une convention homologuée ou de la loi).",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un acte de soustraction"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00018",
+                  "B) Un acte de soustraction",
+                ),
+              ),
               _Paragraph(
-                "La soustraction suppose un acte positif : déplacer ou obtenir le déplacement du mineur "
-                "du lieu où l’avait placé le titulaire de l’autorité parentale ou la personne à qui il avait été confié. "
-                "L’essentiel est que le déplacement soit à l’initiative de l’auteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00019",
+                      "La soustraction suppose un acte positif : déplacer ou obtenir le déplacement du mineur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00020",
+                      "du lieu où l’avait placé le titulaire de l’autorité parentale ou la personne à qui il avait été confié. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00021",
+                      "L’essentiel est que le déplacement soit à l’initiative de l’auteur.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "On ne peut retenir l’infraction contre une personne à qui l’enfant a été confié volontairement.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00022",
+                      "On ne peut retenir l’infraction contre une personne à qui l’enfant a été confié volontairement.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
               _Paragraph(
-                "La soustraction peut consister dans un enlèvement, ou dans le fait d’accepter d’héberger l’enfant "
-                "ayant fui de sa propre volonté l’endroit où il avait été placé par ceux exerçant l’autorité parentale.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00023",
+                      "La soustraction peut consister dans un enlèvement, ou dans le fait d’accepter d’héberger l’enfant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00024",
+                      "ayant fui de sa propre volonté l’endroit où il avait été placé par ceux exerçant l’autorité parentale.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La jurisprudence estime que le déplacement doit s’inscrire dans le temps : un déplacement de quelques heures ne suffit pas — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00025",
+                    "La jurisprudence estime que le déplacement doit s’inscrire dans le temps : un déplacement de quelques heures ne suffit pas — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Cass. crim., 23 décembre 1968",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00026",
+                    "Cass. crim., 23 décembre 1968",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Point de vigilance",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00027",
+                  "Point de vigilance",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Contrairement à l’infraction voisine, le texte ne limite pas la soustraction par ascendant à une soustraction « sans fraude ni violence ». "
-                        "Cependant, lorsque l’ascendant use de fraude ou violence, des textes plus sévères peuvent être retenus en fonction des faits.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                          "f00028",
+                          "Contrairement à l’infraction voisine, le texte ne limite pas la soustraction par ascendant à une soustraction « sans fraude ni violence ». ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                          "f00029",
+                          "Cependant, lorsque l’ascendant use de fraude ou violence, des textes plus sévères peuvent être retenus en fonction des faits.",
+                        ),
                   ),
                 ],
               ),
@@ -207,15 +319,19 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En cas de violence ou fraude, il peut être nécessaire d’envisager l’application des dispositions relatives à l’enlèvement et la séquestration — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00030",
+                    "En cas de violence ou fraude, il peut être nécessaire d’envisager l’application des dispositions relatives à l’enlèvement et la séquestration — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 224-1 et suivants du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00031",
+                    "articles 224-1 et suivants du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -226,18 +342,38 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+              "f00032",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conscience de soustraire le mineur à l’autorité de ceux auxquels il est soumis",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00033",
+                  "Conscience de soustraire le mineur à l’autorité de ceux auxquels il est soumis",
+                ),
               ),
               _Paragraph(
-                "La soustraction d’enfant mineur par ascendant est une infraction intentionnelle. "
-                "L’auteur agit en toute connaissance de cause, c’est-à-dire en ayant conscience de son absence de droit, "
-                "en procédant à un déplacement durable, sinon définitif, du mineur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00034",
+                      "La soustraction d’enfant mineur par ascendant est une infraction intentionnelle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00035",
+                      "L’auteur agit en toute connaissance de cause, c’est-à-dire en ayant conscience de son absence de droit, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                      "f00036",
+                      "en procédant à un déplacement durable, sinon définitif, du mineur.",
+                    ),
               ),
             ],
           ),
@@ -246,42 +382,57 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+              "f00037",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00038",
+                    "Article 227-9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Si l’enfant mineur est retenu au-delà de cinq jours sans que ceux qui ont droit de le réclamer sachent où il se trouve.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00039",
+                  "Si l’enfant mineur est retenu au-delà de cinq jours sans que ceux qui ont droit de le réclamer sachent où il se trouve.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si l’enfant mineur est retenu indûment hors du territoire de la République.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00040",
+                  "Si l’enfant mineur est retenu indûment hors du territoire de la République.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00041",
+                    "Article 227-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : si la personne coupable a été déchue de l’autorité parentale ou a fait l’objet d’une décision de retrait de l’exercice de cette autorité.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00042",
+                    " : si la personne coupable a été déchue de l’autorité parentale ou a fait l’objet d’une décision de retrait de l’exercice de cette autorité.",
+                  ),
                 ),
               ]),
             ],
@@ -291,98 +442,198 @@ class SoustractionEnfantMineurParAscendantPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+              "f00043",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00044",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple — "),
                 TextSpan(
-                  text: "article 227-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00045",
+                    "Qualification simple — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00046",
+                    "article 227-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "1 an d’emprisonnement."),
-              _BulletPoint(text: "15 000 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00047",
+                  "1 an d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00048",
+                  "15 000 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Peines en cas d’aggravation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00049",
+                  "Peines en cas d’aggravation",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Si une circonstance prévue par "),
                 TextSpan(
-                  text: "l’article 227-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00050",
+                    "Si une circonstance prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00051",
+                    "l’article 227-9 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
-                  text: "l’article 227-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00052",
+                    "l’article 227-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00053",
+                    " est caractérisée :",
                   ),
                 ),
-                TextSpan(text: " est caractérisée :"),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "3 ans d’emprisonnement."),
-              _BulletPoint(text: "45 000 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00054",
+                  "3 ans d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00055",
+                  "45 000 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00056",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale possible via "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00057",
+                    "Responsabilité pénale possible via ",
                   ),
                 ),
                 TextSpan(
-                  text: " (applicable depuis le 31 décembre 2005).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00058",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00059",
+                    " (applicable depuis le 31 décembre 2005).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                  "f00060",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Tentative : OUI — expressément prévue par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00061",
+                    "Tentative : OUI — expressément prévue par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 227-11 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00062",
+                    "l’article 227-11 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00063",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text: " (aide et assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00064",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart",
+                    "f00065",
+                    " (aide et assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
             ],

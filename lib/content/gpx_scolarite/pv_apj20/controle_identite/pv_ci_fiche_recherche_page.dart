@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PvCiFicheRecherchePage extends StatelessWidget {
   const PvCiFicheRecherchePage({super.key});
@@ -56,10 +57,18 @@ class PvCiFicheRecherchePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — CI + Fiche de recherche",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+            "f00002",
+            "PV — CI + Fiche de recherche",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PvCiFicheRecherchePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de procès-verbal de contrôle d’identité\nsuivi d’une exécution de fiche de recherche",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+              "f00003",
+              "Canevas de procès-verbal de contrôle d’identité\nsuivi d’une exécution de fiche de recherche",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,42 +99,65 @@ class PvCiFicheRecherchePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Base légale (à viser dans le PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+              "f00004",
+              "Base légale (à viser dans le PV)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Contrôle d’identité : "),
                 TextSpan(
-                  text: "art. 78-2 (alinéas 2 à 17) du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00005",
+                    "Contrôle d’identité : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00006",
+                    "art. 78-2 (alinéas 2 à 17) du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
-                  text: "art. 78-2-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00007",
+                    "art. 78-2-1 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Menottage (si utilisé) : "),
                 TextSpan(
-                  text: "art. 803 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00008",
+                    "Menottage (si utilisé) : ",
                   ),
                 ),
                 TextSpan(
-                  text: " — préciser les éléments objectifs qui le motivent.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00009",
+                    "art. 803 du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00010",
+                    " — préciser les éléments objectifs qui le motivent.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -129,8 +165,16 @@ class PvCiFicheRecherchePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Formule obligatoire : l’A.P.J agit « sur l’ordre et sous la responsabilité » d’un O.P.J. "
-                        "Elle doit figurer au PV (nullité si absente).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                          "f00011",
+                          "Formule obligatoire : l’A.P.J agit « sur l’ordre et sous la responsabilité » d’un O.P.J. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                          "f00012",
+                          "Elle doit figurer au PV (nullité si absente).",
+                        ),
                   ),
                 ],
               ),
@@ -141,13 +185,21 @@ class PvCiFicheRecherchePage extends StatelessWidget {
 
           // Images (recto/verso) avec plein écran + zoom
           _ConditionCard(
-            title: "Modèles (FPR) — recto / verso",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+              "f00013",
+              "Modèles (FPR) — recto / verso",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur une image pour l’ouvrir en plein écran et zoomer (pincement + déplacement).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00014",
+                  "Appuie sur une image pour l’ouvrir en plein écran et zoomer (pincement + déplacement).",
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableImageTile(
@@ -167,68 +219,138 @@ class PvCiFicheRecherchePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title:
-                "1 → 5 — Saisine, instructions, assistants, mission, constatations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+              "f00015",
+              "1 → 5 — Saisine, instructions, assistants, mission, constatations",
+            ),
             cardColor: cardOp,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00016",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Mentionner l’endroit exact où se situe l’équipage (adresse, voie, secteur, repère).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00017",
+                  "Mentionner l’endroit exact où se situe l’équipage (adresse, voie, secteur, repère).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00018",
+                  "2) Instructions",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "PV de saisine : en patrouille, le rédacteur agit conformément aux instructions permanentes du chef de service.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00019",
+                  "PV de saisine : en patrouille, le rédacteur agit conformément aux instructions permanentes du chef de service.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Assistants éventuels"),
-              _IntroBullet(
-                text:
-                    "Mentionner les fonctionnaires accompagnants (nom/grade/service).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00020",
+                  "3) Assistants éventuels",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Préciser la tenue : uniforme, tenue bourgeoise, port du brassard police.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00021",
+                  "Mentionner les fonctionnaires accompagnants (nom/grade/service).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00022",
+                  "Préciser la tenue : uniforme, tenue bourgeoise, port du brassard police.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4) Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00023",
+                  "4) Mission",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Indiquer le but de la mission initiale (patrouille, sécurisation, réquisition, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00024",
+                  "Indiquer le but de la mission initiale (patrouille, sécurisation, réquisition, etc.).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5) Constatations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00025",
+                  "5) Constatations",
+                ),
+              ),
               _Paragraph(
-                "Relater précisément les faits observés en mettant en évidence les éléments objectifs "
-                "justifiant le contrôle d’identité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                      "f00026",
+                      "Relater précisément les faits observés en mettant en évidence les éléments objectifs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                      "f00027",
+                      "justifiant le contrôle d’identité.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Mentionner le cadre : "),
                 TextSpan(
-                  text: "art. 78-2 al. 2 à 17",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00028",
+                    "Mentionner le cadre : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00029",
+                    "art. 78-2 al. 2 à 17",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
-                  text: "art. 78-2-1",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00030",
+                    "art. 78-2-1",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00031",
+                    " du C.P.P.",
                   ),
                 ),
-                TextSpan(text: " du C.P.P."),
               ]),
             ],
           ),
@@ -236,55 +358,100 @@ class PvCiFicheRecherchePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "6 → 8 — Formule OPJ, visa, contrôle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+              "f00032",
+              "6 → 8 — Formule OPJ, visa, contrôle",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle("6) Instructions (formule obligatoire)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00033",
+                  "6) Instructions (formule obligatoire)",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Le PV doit comporter la formule : "),
                 TextSpan(
-                  text: "« sur l’ordre et sous la responsabilité »",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00034",
+                    "Le PV doit comporter la formule : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00035",
+                    "« sur l’ordre et sous la responsabilité »",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : const Color(0xFF0D47A1),
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      " d’un O.P.J (obligatoire, pas besoin d’autorisation préalable pour contrôler).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00036",
+                    " d’un O.P.J (obligatoire, pas besoin d’autorisation préalable pour contrôler).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("7) Visa de l’article"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00037",
+                  "7) Visa de l’article",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Selon les constatations, viser l’alinéa adapté de ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00038",
+                    "Selon les constatations, viser l’alinéa adapté de ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’art. 78-2 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00039",
+                    "l’art. 78-2 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
-                  text: "l’art. 78-2-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00040",
+                    "l’art. 78-2-1 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("8) Contrôle"),
-              const _IntroBullet(
-                text: "Mentionner l’heure et le lieu du contrôle.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00041",
+                  "8) Contrôle",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00042",
+                  "Mentionner l’heure et le lieu du contrôle.",
+                ),
               ),
             ],
           ),
@@ -292,44 +459,96 @@ class PvCiFicheRecherchePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "9 → 12 — Résultat, palpation, FPR, avis OPJ",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+              "f00043",
+              "9 → 12 — Résultat, palpation, FPR, avis OPJ",
+            ),
             cardColor: cardPoints,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("9) Résultat du contrôle"),
-              _IntroBullet(
-                text:
-                    "Identifier la personne en style indirect : état civil et adresse (sans autres éléments de personnalité).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00044",
+                  "9) Résultat du contrôle",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Selon la situation, la palpation peut être faite avant le résultat (identité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00045",
+                  "Identifier la personne en style indirect : état civil et adresse (sans autres éléments de personnalité).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00046",
+                  "Selon la situation, la palpation peut être faite avant le résultat (identité).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("10) Palpation de sécurité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00047",
+                  "10) Palpation de sécurité",
+                ),
+              ),
               _Paragraph(
-                "Elle n’est pas systématique. Elle se justifie selon les circonstances de temps/lieu "
-                "(libellé de la fiche et conduite à tenir) et la nécessité de vérifier l’absence d’objet dangereux.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                      "f00048",
+                      "Elle n’est pas systématique. Elle se justifie selon les circonstances de temps/lieu ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                      "f00049",
+                      "(libellé de la fiche et conduite à tenir) et la nécessité de vérifier l’absence d’objet dangereux.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("11) Recherches administratives"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00050",
+                  "11) Recherches administratives",
+                ),
+              ),
               _Paragraph(
-                "Mentionner que la consultation révèle une fiche de recherche au F.P.R.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00051",
+                  "Mentionner que la consultation révèle une fiche de recherche au F.P.R.",
+                ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Retranscrire : numéro de fiche, libellé, conduite à tenir.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00052",
+                  "Retranscrire : numéro de fiche, libellé, conduite à tenir.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("12) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00053",
+                  "12) Avis O.P.J.",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Mentionner les instructions reçues de l’officier de police judiciaire (si nécessaires).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00054",
+                  "Mentionner les instructions reçues de l’officier de police judiciaire (si nécessaires).",
+                ),
               ),
             ],
           ),
@@ -337,52 +556,112 @@ class PvCiFicheRecherchePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "13 → 16 — Retour, clôture, présentation OPJ, annexe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+              "f00055",
+              "13 → 16 — Retour, clôture, présentation OPJ, annexe",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("13) Retour au service"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00056",
+                  "13) Retour au service",
+                ),
+              ),
               _Paragraph(
-                "Selon le libellé de la fiche et la conduite à tenir (ou les circonstances), "
-                "préciser si la personne suit de plein gré ou sous contrainte. "
-                "Tout emploi de la force doit être circonstancié.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                      "f00057",
+                      "Selon le libellé de la fiche et la conduite à tenir (ou les circonstances), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                      "f00058",
+                      "préciser si la personne suit de plein gré ou sous contrainte. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                      "f00059",
+                      "Tout emploi de la force doit être circonstancié.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Menottage : préciser le recours et le motif — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00060",
+                    "Menottage : préciser le recours et le motif — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "art. 803 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                    "f00061",
+                    "art. 803 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("14) Énonciation terminale (clôture)"),
-              _IntroBullet(
-                text:
-                    "Style direct = signature de la personne. Style indirect = pas de signature.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00062",
+                  "14) Énonciation terminale (clôture)",
+                ),
               ),
-              _IntroBullet(text: "Heure facultative."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00063",
+                  "Style direct = signature de la personne. Style indirect = pas de signature.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00064",
+                  "Heure facultative.",
+                ),
+              ),
               SizedBox(height: 10),
 
-              _SubTitle("15) Présentation O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00065",
+                  "15) Présentation O.P.J.",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Préciser l’heure de présentation + compte-rendu verbal + instructions éventuelles données par l’OPJ.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00066",
+                  "Préciser l’heure de présentation + compte-rendu verbal + instructions éventuelles données par l’OPJ.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("16) Annexe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00067",
+                  "16) Annexe",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Annexer la copie de la réquisition du procureur justifiant le contrôle d’identité (si contrôle sur réquisitions).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_ci_fiche_recherche_page.dart",
+                  "f00068",
+                  "Annexer la copie de la réquisition du procureur justifiant le contrôle d’identité (si contrôle sur réquisitions).",
+                ),
               ),
             ],
           ),
@@ -783,9 +1062,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

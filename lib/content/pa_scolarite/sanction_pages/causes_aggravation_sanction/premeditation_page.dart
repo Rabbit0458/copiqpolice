@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPremeditationPage extends StatelessWidget {
   const PaPremeditationPage({super.key});
@@ -44,7 +45,11 @@ class PaPremeditationPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'La préméditation',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+            "f00001",
+            'La préméditation',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,20 +75,23 @@ class PaPremeditationPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "« La préméditation est le dessein formé avant l’action de commettre un crime ou un délit déterminé. »",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                        "f00002",
+                        "« La préméditation est le dessein formé avant l’action de commettre un crime ou un délit déterminé. »",
+                      ),
                     ),
                   ]),
                 ),
@@ -92,22 +100,44 @@ class PaPremeditationPage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      law("L’article 132-72 du C.P."),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00004",
+                          "L’article 132-72 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            " définit la préméditation. Elle se traduit par une résolution d’agir marquant la volonté mûre et réfléchie "
-                            "de l’auteur d’atteindre le but qu’il s’est fixé.",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00005",
+                              " définit la préméditation. Elle se traduit par une résolution d’agir marquant la volonté mûre et réfléchie ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00006",
+                              "de l’auteur d’atteindre le but qu’il s’est fixé.",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "La jurisprudence parfois contradictoire la qualifie tantôt de réelle, tantôt de personnelle.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                        "f00007",
+                        "La jurisprudence parfois contradictoire la qualifie tantôt de réelle, tantôt de personnelle.",
+                      ),
                     ),
                   ],
                 ),
@@ -116,54 +146,130 @@ class PaPremeditationPage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                    "f00008",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _SubTitle("2.1 - Une résolution d’agir"),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "La résolution d’agir s’inscrit dans un intervalle de temps plus ou moins long, qui n’est pas déterminé. "
-                            "L’antériorité à l’acte est nécessaire pour matérialiser la préméditation (",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                        "f00009",
+                        "2.1 - Une résolution d’agir",
                       ),
-                      law("Cass. crim., 9 janvier 1990"),
-                      const TextSpan(text: ").\n\n"),
-                      const TextSpan(
+                    ),
+                    _Paragraph.rich([
+                      TextSpan(
                         text:
-                            "Cet intervalle de temps se situe entre la résolution de commettre l’acte et son exécution.",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00010",
+                              "La résolution d’agir s’inscrit dans un intervalle de temps plus ou moins long, qui n’est pas déterminé. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00011",
+                              "L’antériorité à l’acte est nécessaire pour matérialiser la préméditation (",
+                            ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00012",
+                          "Cass. crim., 9 janvier 1990",
+                        ),
+                      ),
+                      const TextSpan(text: ").\n\n"),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00013",
+                          "Cet intervalle de temps se situe entre la résolution de commettre l’acte et son exécution.",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _SubTitle("2.2 - Une volonté mûre et réfléchie"),
-                    const _Paragraph(
-                      "L’acte prémédité est médité et préparé. Il n’est donc pas spontané et ne peut pas faire suite à une pulsion. "
-                      "Ces éléments traduisent une volonté persistante et résolue d’appliquer le plan tracé à l’avance.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                        "f00014",
+                        "2.2 - Une volonté mûre et réfléchie",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                            "f00015",
+                            "L’acte prémédité est médité et préparé. Il n’est donc pas spontané et ne peut pas faire suite à une pulsion. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                            "f00016",
+                            "Ces éléments traduisent une volonté persistante et résolue d’appliquer le plan tracé à l’avance.",
+                          ),
                     ),
                     const SizedBox(height: 10),
-                    const _SubTitle("2.3 - Le but poursuivi"),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "Cette circonstance vise indifféremment une infraction commise ou tentée.\n\n"
-                            "La préméditation se matérialise par des faits ou des circonstances qui se situent dans l’intervalle de temps "
-                            "qui précède l’acte : « Elle doit être recherchée dans les faits qui ont accompagné l’acte de l’auteur principal » (",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                        "f00017",
+                        "2.3 - Le but poursuivi",
                       ),
-                      law("Cass. crim., 4 septembre 1976"),
-                      const TextSpan(
+                    ),
+                    _Paragraph.rich([
+                      TextSpan(
                         text:
-                            ").\n\n"
-                            "À titre d’exemple, il peut s’agir d’actes préparatoires, de menaces, de confidences, de la nature complexe de l’acte "
-                            "traduisant sa nécessaire préparation, etc.",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00018",
+                              "Cette circonstance vise indifféremment une infraction commise ou tentée.\n\n",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00019",
+                              "La préméditation se matérialise par des faits ou des circonstances qui se situent dans l’intervalle de temps ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00020",
+                              "qui précède l’acte : « Elle doit être recherchée dans les faits qui ont accompagné l’acte de l’auteur principal » (",
+                            ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00021",
+                          "Cass. crim., 4 septembre 1976",
+                        ),
+                      ),
+                      TextSpan(
+                        text:
+                            ").\n\n" +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00022",
+                              "À titre d’exemple, il peut s’agir d’actes préparatoires, de menaces, de confidences, de la nature complexe de l’acte ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                              "f00023",
+                              "traduisant sa nécessaire préparation, etc.",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
-                          text:
-                              "L’élément clé est l’antériorité : on doit retrouver des indices (faits/circonstances) montrant une préparation entre la décision et l’exécution.",
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                            "f00024",
+                            "L’élément clé est l’antériorité : on doit retrouver des indices (faits/circonstances) montrant une préparation entre la décision et l’exécution.",
+                          ),
                         ),
                       ],
                     ),
@@ -174,35 +280,80 @@ class PaPremeditationPage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                    "f00025",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _IntroBullet(
-                      text:
-                          "Le code pénal prévoit que la circonstance de commission avec préméditation est susceptible d’aggraver les infractions suivantes :",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                        "f00026",
+                        "Le code pénal prévoit que la circonstance de commission avec préméditation est susceptible d’aggraver les infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le meurtre ("),
-                      law("article 221-3 al. 1 C.P."),
-                      const TextSpan(
-                        text: ", le meurtre est alors qualifié d’assassinat).",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00027",
+                          "• Le meurtre (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00028",
+                          "article 221-3 al. 1 C.P.",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00029",
+                          ", le meurtre est alors qualifié d’assassinat).",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• L’empoisonnement ("),
-                      law("article 221-5 al. 3 C.P."),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00030",
+                          "• L’empoisonnement (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00031",
+                          "article 221-5 al. 3 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• Les violences ("),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00032",
+                          "• Les violences (",
+                        ),
+                      ),
                       law(
-                        "articles 222-8, 222-10, 222-12, 222-13, 9° et 222-14-5 C.P.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart",
+                          "f00033",
+                          "articles 222-8, 222-10, 222-12, 222-13, 9° et 222-14-5 C.P.",
+                        ),
                       ),
                       const TextSpan(text: ")."),
                     ]),
@@ -469,9 +620,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

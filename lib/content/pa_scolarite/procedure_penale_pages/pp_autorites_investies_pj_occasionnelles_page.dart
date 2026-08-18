@@ -10,7 +10,7 @@ class PaPPAutoritesInvestiesPJOccasionnellesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
- // bleu principal
+    // bleu principal
     return const Scaffold();
   }
 }

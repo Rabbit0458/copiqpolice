@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
   const PaIntroductionSuppressionModificationDonneesPage({super.key});
@@ -59,10 +60,18 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes aux STAD",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+            "f00002",
+            "Atteintes aux STAD",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Introduction, suppression ou modification frauduleuse de données",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+              "f00003",
+              "Introduction, suppression ou modification frauduleuse de données",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’introduire frauduleusement des données dans un système de traitement automatisé, "
-                "d’extraire, de détenir, de reproduire, de transmettre, de supprimer ou de modifier frauduleusement "
-                "les données qu’il contient constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00005",
+                      "Le fait d’introduire frauduleusement des données dans un système de traitement automatisé, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00006",
+                      "d’extraire, de détenir, de reproduire, de transmettre, de supprimer ou de modifier frauduleusement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00007",
+                      "les données qu’il contient constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,23 +135,36 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00009",
+                    "Article 323-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit et réprime l’introduction, l’extraction, la détention, la reproduction, la transmission, "
-                      "la suppression ou la modification frauduleuse de données contenues dans un système de traitement automatisé de données.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                        "f00010",
+                        " : définit et réprime l’introduction, l’extraction, la détention, la reproduction, la transmission, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                        "f00011",
+                        "la suppression ou la modification frauduleuse de données contenues dans un système de traitement automatisé de données.",
+                      ),
                 ),
               ]),
             ],
@@ -132,26 +174,50 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Une action sur des données contenues dans le système",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00013",
+                  "A) Une action sur des données contenues dans le système",
+                ),
               ),
               _Paragraph(
-                "L’action doit porter sur les données contenues dans le système. "
-                "Peu importe que le système soit finalisé ou en cours d’élaboration.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00014",
+                      "L’action doit porter sur les données contenues dans le système. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00015",
+                      "Peu importe que le système soit finalisé ou en cours d’élaboration.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Jurisprudence : système en cours d’élaboration — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00016",
+                      "Jurisprudence : système en cours d’élaboration — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 05 janvier 1994",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00017",
+                      "Cass. crim., 05 janvier 1994",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -162,62 +228,144 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "L’auteur peut avoir eu un accès licite ou non au système. "
-                "Il importe peu également que l’action ne crée aucune perturbation apparente ou immédiate du fonctionnement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00018",
+                      "L’auteur peut avoir eu un accès licite ou non au système. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00019",
+                      "Il importe peu également que l’action ne crée aucune perturbation apparente ou immédiate du fonctionnement.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Terme courant",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00020",
+                  "Terme courant",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans la pratique, cette forme de piratage informatique est souvent appelée « cracking ».",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00021",
+                      "Dans la pratique, cette forme de piratage informatique est souvent appelée « cracking ».",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Il est admis que l’action sur des données sorties d’un système ne tombe pas sous le coup de la loi "
-                "(ex. manipulation de données sur un support externe : clé USB, disque dur, CD-ROM…). "
-                "En revanche, si ces données sont réintroduites dans le système, l’incrimination peut s’appliquer.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00022",
+                      "Il est admis que l’action sur des données sorties d’un système ne tombe pas sous le coup de la loi ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00023",
+                      "(ex. manipulation de données sur un support externe : clé USB, disque dur, CD-ROM…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00024",
+                      "En revanche, si ces données sont réintroduites dans le système, l’incrimination peut s’appliquer.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Les pratiques incriminées"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00025",
+                  "B) Les pratiques incriminées",
+                ),
+              ),
               _Paragraph(
-                "L’article 323-3 vise plusieurs comportements distincts. "
-                "La jurisprudence incrimine l’action illicite qui porte directement sur les données, ou qui les atteint "
-                "à travers leur mode de traitement ou de transmission.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00026",
+                      "L’article 323-3 vise plusieurs comportements distincts. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00027",
+                      "La jurisprudence incrimine l’action illicite qui porte directement sur les données, ou qui les atteint ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00028",
+                      "à travers leur mode de traitement ou de transmission.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Introduction de données"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00029",
+                  "1) Introduction de données",
+                ),
+              ),
               _Paragraph(
-                "L’introduction peut être comprise comme l’incorporation de caractères informatiques nouveaux sur un support du système. "
-                "Dans la pratique, l’insertion d’un programme peut impliquer suppression/modification des données traitées, "
-                "et tombe alors dans le champ de l’article 323-3.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00030",
+                      "L’introduction peut être comprise comme l’incorporation de caractères informatiques nouveaux sur un support du système. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00031",
+                      "Dans la pratique, l’insertion d’un programme peut impliquer suppression/modification des données traitées, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00032",
+                      "et tombe alors dans le champ de l’article 323-3.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’introduction d’un logiciel espion entre dans le champ de l’incrimination (souvent appelée « sniffing »). "
-                        "Ce programme peut permettre une attaque ultérieure du système.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                          "f00033",
+                          "L’introduction d’un logiciel espion entre dans le champ de l’incrimination (souvent appelée « sniffing »). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                          "f00034",
+                          "Ce programme peut permettre une attaque ultérieure du système.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00035",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cartes bancaires : insertion de nouvelles données destinées à tromper un terminal de paiement — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00036",
+                      "Cartes bancaires : insertion de nouvelles données destinées à tromper un terminal de paiement — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "TGI Paris, 25 février 2000",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00037",
+                      "TGI Paris, 25 février 2000",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -229,44 +377,117 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Extraction de données"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00038",
+                  "2) Extraction de données",
+                ),
+              ),
               _Paragraph(
-                "L’extraction assure une protection spécifique aux données elles-mêmes : elle permet de réprimer celui "
-                "qui effectue une simple copie tout en laissant les données à la disposition du propriétaire légitime. "
-                "L’incrimination de vol est souvent inadaptée car les données ne sont pas « soustraites ».",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00039",
+                      "L’extraction assure une protection spécifique aux données elles-mêmes : elle permet de réprimer celui ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00040",
+                      "qui effectue une simple copie tout en laissant les données à la disposition du propriétaire légitime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00041",
+                      "L’incrimination de vol est souvent inadaptée car les données ne sont pas « soustraites ».",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("3) Détention — Reproduction — Transmission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00042",
+                  "3) Détention — Reproduction — Transmission",
+                ),
+              ),
               _Paragraph(
-                "• La détention peut s’apparenter à un recel de données extraites, reproduites ou transmises frauduleusement.\n"
-                "• La reproduction vise les actes de copie de données obtenues frauduleusement, quel qu’en soit le support.\n"
-                "• La transmission vise toute diffusion de données à un tiers, quel qu’en soit le moyen ou le support.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00043",
+                      "• La détention peut s’apparenter à un recel de données extraites, reproduites ou transmises frauduleusement.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00044",
+                      "• La reproduction vise les actes de copie de données obtenues frauduleusement, quel qu’en soit le support.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00045",
+                      "• La transmission vise toute diffusion de données à un tiers, quel qu’en soit le moyen ou le support.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("4) Suppression — Modification"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00046",
+                  "4) Suppression — Modification",
+                ),
+              ),
               _Paragraph(
-                "Supprimer des données peut consister en une atteinte à l’intégrité des données (effacement, « écrasement »), "
-                "ou encore un déplacement hors du système / vers une zone réservée.\n\n"
-                "La modification correspond à une altération de l’information portée par les données.\n\n"
-                "En pratique, il est difficile de séparer radicalement introduction, modification et suppression : "
-                "modifier suppose souvent d’ajouter, retrancher ou déplacer des données.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00047",
+                      "Supprimer des données peut consister en une atteinte à l’intégrité des données (effacement, « écrasement »), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00048",
+                      "ou encore un déplacement hors du système / vers une zone réservée.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00049",
+                      "La modification correspond à une altération de l’information portée par les données.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00050",
+                      "En pratique, il est difficile de séparer radicalement introduction, modification et suppression : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00051",
+                      "modifier suppose souvent d’ajouter, retrancher ou déplacer des données.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00052",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Comptable ayant modifié des données enregistrées définitivement dans le système automatisé de comptabilité — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00053",
+                      "Comptable ayant modifié des données enregistrées définitivement dans le système automatisé de comptabilité — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 08 décembre 1999",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00054",
+                      "Cass. crim., 08 décembre 1999",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -282,15 +503,31 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+              "f00055",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’élément moral réside dans la violation délibérée d’un interdit : "
-                "l’auteur agit en sachant que ce n’est pas autorisé et en voulant néanmoins le résultat "
-                "(introduire, extraire, détenir, reproduire, transmettre, supprimer ou modifier frauduleusement).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00056",
+                      "L’élément moral réside dans la violation délibérée d’un interdit : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00057",
+                      "l’auteur agit en sachant que ce n’est pas autorisé et en voulant néanmoins le résultat ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00058",
+                      "(introduire, extraire, détenir, reproduire, transmettre, supprimer ou modifier frauduleusement).",
+                    ),
               ),
             ],
           ),
@@ -299,53 +536,83 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+              "f00059",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-3 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00060",
+                    "Article 323-3 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque l’infraction est commise à l’encontre d’un système de traitement automatisé de données "
-                      "à caractère personnel mis en œuvre par l’État.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                        "f00061",
+                        " : lorsque l’infraction est commise à l’encontre d’un système de traitement automatisé de données ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                        "f00062",
+                        "à caractère personnel mis en œuvre par l’État.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00063",
+                    "Article 323-4-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque l’infraction est commise en bande organisée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00064",
+                    " : lorsque l’infraction est commise en bande organisée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00065",
+                    "Article 323-4-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque l’infraction expose autrui à un risque immédiat de mort ou de blessures graves, "
-                      "ou fait obstacle aux secours destinés à faire échapper une personne à un péril imminent "
-                      "ou à combattre un sinistre présentant un danger pour la sécurité des personnes.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                        "f00066",
+                        " : lorsque l’infraction expose autrui à un risque immédiat de mort ou de blessures graves, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                        "f00067",
+                        "ou fait obstacle aux secours destinés à faire échapper une personne à un péril imminent ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                        "f00068",
+                        "ou à combattre un sinistre présentant un danger pour la sécurité des personnes.",
+                      ),
                 ),
               ]),
             ],
@@ -355,99 +622,176 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+              "f00069",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00070",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 150 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00071",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 323-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00072",
+                    "5 ans d’emprisonnement et 150 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00073",
+                    "article 323-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravée (STAD personnel mis en œuvre par l’État) : ",
-                ),
-                TextSpan(
-                  text: "7 ans d’emprisonnement et 300 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 323-3 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00074",
+                    "Aggravée (STAD personnel mis en œuvre par l’État) : ",
                   ),
                 ),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Aggravée (bande organisée) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 300 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00075",
+                    "7 ans d’emprisonnement et 300 000 € d’amende. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 323-4-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00076",
+                    "article 323-3 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravée (risque immédiat / obstacle aux secours) : ",
-                ),
-                TextSpan(
-                  text: "10 ans d’emprisonnement et 300 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 323-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00077",
+                    "Aggravée (bande organisée) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00078",
+                    "7 ans d’emprisonnement et 300 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00079",
+                    "article 323-4-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00080",
+                    "Aggravée (risque immédiat / obstacle aux secours) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00081",
+                    "10 ans d’emprisonnement et 300 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00082",
+                    "article 323-4-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00083",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 323-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00084",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
-                TextSpan(text: ", avec amende selon "),
                 TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00085",
+                    "l’article 323-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00086",
+                    ", avec amende selon ",
                   ),
                 ),
-                TextSpan(text: " et peines prévues par "),
                 TextSpan(
-                  text: "l’article 131-39 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00087",
+                    "l’article 131-38 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00088",
+                    " et peines prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00089",
+                    "l’article 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -456,37 +800,72 @@ class PaIntroductionSuppressionModificationDonneesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’interdiction mentionnée au 2° de l’article 131-39 porte sur l’activité dans l’exercice ou à l’occasion "
-                        "de l’exercice de laquelle l’infraction a été commise.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                          "f00090",
+                          "L’interdiction mentionnée au 2° de l’article 131-39 porte sur l’activité dans l’exercice ou à l’occasion ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                          "f00091",
+                          "de l’exercice de laquelle l’infraction a été commise.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00092",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : OUI — spécialement prévue et réprimée par l’article 323-7 du Code pénal.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                  "f00093",
+                  "Tentative : OUI — spécialement prévue et réprimée par l’article 323-7 du Code pénal.",
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                "Comme pour toute tentative : commencement d’exécution et absence de résultat en raison de circonstances "
-                "indépendantes de la volonté de l’auteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00094",
+                      "Comme pour toute tentative : commencement d’exécution et absence de résultat en raison de circonstances ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                      "f00095",
+                      "indépendantes de la volonté de l’auteur.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00096",
+                    "Complicité : OUI — conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00097",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart",
+                    "f00098",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],

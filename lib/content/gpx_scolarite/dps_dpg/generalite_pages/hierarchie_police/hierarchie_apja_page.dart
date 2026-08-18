@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class HierarchieApjaPage extends StatelessWidget {
   const HierarchieApjaPage({super.key});
@@ -33,10 +34,18 @@ class HierarchieApjaPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Agents de police judiciaire adjoints',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+            "f00002",
+            'Agents de police judiciaire adjoints',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,7 +61,11 @@ class HierarchieApjaPage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            'Les agents de police judiciaire adjoints (APJA)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+              "f00003",
+              'Les agents de police judiciaire adjoints (APJA)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -62,31 +75,52 @@ class HierarchieApjaPage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO ----------------------------
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'Les agents de police judiciaire adjoints sont définis par l’article 21 du code de procédure pénale. ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                "f00004",
+                'Les agents de police judiciaire adjoints sont définis par l’article 21 du code de procédure pénale. ',
+              ),
             ),
             TextSpan(
               text:
-                  'Ils disposent de pouvoirs en matière de police judiciaire moins étendus que ceux des agents de police judiciaire, '
-                  'mais contribuent directement au fonctionnement de la police judiciaire sur le terrain.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                    "f00005",
+                    'Ils disposent de pouvoirs en matière de police judiciaire moins étendus que ceux des agents de police judiciaire, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                    "f00006",
+                    'mais contribuent directement au fonctionnement de la police judiciaire sur le terrain.',
+                  ),
             ),
           ]),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'Ils interviennent aux côtés des officiers de police judiciaire et des agents de police judiciaire, notamment dans les missions de constatation des infractions, de recueil d’éléments utiles à l’enquête et d’appui opérationnel.',
+          _Paragraph(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+              "f00007",
+              'Ils interviennent aux côtés des officiers de police judiciaire et des agents de police judiciaire, notamment dans les missions de constatation des infractions, de recueil d’éléments utiles à l’enquête et d’appui opérationnel.',
+            ),
           ),
           const SizedBox(height: 14),
 
-          const _IntroBullet(
-            text:
-                'Les agents de police judiciaire adjoints exercent leurs attributions dans un cadre strictement défini par la loi.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+              "f00008",
+              'Les agents de police judiciaire adjoints exercent leurs attributions dans un cadre strictement défini par la loi.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Ils constituent un maillon important de la chaîne judiciaire : policiers adjoints, agents de police municipale, gardes champêtres, réservistes, etc.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+              "f00009",
+              'Ils constituent un maillon important de la chaîne judiciaire : policiers adjoints, agents de police municipale, gardes champêtres, réservistes, etc.',
+            ),
           ),
 
           const SizedBox(height: 20),
@@ -95,34 +129,64 @@ class HierarchieApjaPage extends StatelessWidget {
           // A. QUALITÉ D’AGENT DE POLICE JUDICIAIRE ADJOINT
           // =======================================================
           _ConditionCard(
-            title: 'A. La qualité d’agent de police judiciaire adjoint',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+              "f00010",
+              'A. La qualité d’agent de police judiciaire adjoint',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les agents de police judiciaire adjoints visés à l’article 21 du code de procédure pénale disposent de pouvoirs en matière de police judiciaire moins étendus que ceux des agents de police judiciaire. '
-                'Ils sont néanmoins expressément investis par la loi de prérogatives judiciaires, qu’ils exercent sous la responsabilité et le contrôle de l’autorité judiciaire.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                      "f00011",
+                      'Les agents de police judiciaire adjoints visés à l’article 21 du code de procédure pénale disposent de pouvoirs en matière de police judiciaire moins étendus que ceux des agents de police judiciaire. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                      "f00012",
+                      'Ils sont néanmoins expressément investis par la loi de prérogatives judiciaires, qu’ils exercent sous la responsabilité et le contrôle de l’autorité judiciaire.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Ils sont placés, selon les cas, au sein des services actifs de la police nationale, de la gendarmerie nationale, des polices municipales ou encore parmi les gardes champêtres. ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                    "f00013",
+                    'Ils sont placés, selon les cas, au sein des services actifs de la police nationale, de la gendarmerie nationale, des polices municipales ou encore parmi les gardes champêtres. ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'Leur statut et leurs missions varient, mais tous relèvent du régime commun des agents de police judiciaire adjoints de l’article 21 du code de procédure pénale.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                    "f00014",
+                    'Leur statut et leurs missions varient, mais tous relèvent du régime commun des agents de police judiciaire adjoints de l’article 21 du code de procédure pénale.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Pouvoirs moins étendus',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00015",
+                  'Pouvoirs moins étendus',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Les agents de police judiciaire adjoints n’ont pas la même amplitude de pouvoirs que les agents de police judiciaire ou les officiers de police judiciaire. '
-                        'Leurs attributions sont limitées et s’exercent en appui des autres acteurs de la chaîne judiciaire.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                          "f00016",
+                          'Les agents de police judiciaire adjoints n’ont pas la même amplitude de pouvoirs que les agents de police judiciaire ou les officiers de police judiciaire. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                          "f00017",
+                          'Leurs attributions sont limitées et s’exercent en appui des autres acteurs de la chaîne judiciaire.',
+                        ),
                   ),
                 ],
               ),
@@ -135,70 +199,131 @@ class HierarchieApjaPage extends StatelessWidget {
           // B. CATÉGORIES D’APJA — ARTICLE 21 DU CODE DE PROCÉDURE PÉNALE
           // =======================================================
           _ConditionCard(
-            title:
-                'B. Les catégories d’agents de police judiciaire adjoints de l’article 21 du code de procédure pénale',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+              "f00018",
+              'B. Les catégories d’agents de police judiciaire adjoints de l’article 21 du code de procédure pénale',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’article 21 du code de procédure pénale énumère les différentes catégories de personnels qui disposent de la qualité d’agent de police judiciaire adjoint, avec des pouvoirs de police judiciaire moins étendus.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00019",
+                  'L’article 21 du code de procédure pénale énumère les différentes catégories de personnels qui disposent de la qualité d’agent de police judiciaire adjoint, avec des pouvoirs de police judiciaire moins étendus.',
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                'Personnels des services actifs de la police nationale',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00020",
+                  'Personnels des services actifs de la police nationale',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les fonctionnaires des services actifs de la police nationale qui ne remplissent pas les conditions prévues à l’article 20 du code de procédure pénale.',
-              ),
-              SizedBox(height: 8),
-
-              _SubTitle('Militaires de la gendarmerie nationale'),
-              _BulletPoint(
-                text:
-                    'Les volontaires servant en qualité de militaire dans la gendarmerie nationale et les militaires servant au titre de la réserve opérationnelle de la gendarmerie nationale qui ne remplissent pas les conditions prévues par l’article 20-1 du code de procédure pénale.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00021",
+                  'Les fonctionnaires des services actifs de la police nationale qui ne remplissent pas les conditions prévues à l’article 20 du code de procédure pénale.',
+                ),
               ),
               SizedBox(height: 8),
 
               _SubTitle(
-                'Policiers adjoints et réservistes de la police nationale',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00022",
+                  'Militaires de la gendarmerie nationale',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les policiers adjoints et les membres de la réserve opérationnelle de la police nationale qui ne remplissent pas les conditions prévues par les articles 16-1 A ou 20-1 du code de procédure pénale.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00023",
+                  'Les volontaires servant en qualité de militaire dans la gendarmerie nationale et les militaires servant au titre de la réserve opérationnelle de la gendarmerie nationale qui ne remplissent pas les conditions prévues par l’article 20-1 du code de procédure pénale.',
+                ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('Personnels de la préfecture de police'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00024",
+                  'Policiers adjoints et réservistes de la police nationale',
+                ),
+              ),
               _BulletPoint(
-                text:
-                    'Les contrôleurs de la préfecture de police exerçant la spécialité « voie publique » ainsi que les agents de surveillance de Paris.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00025",
+                  'Les policiers adjoints et les membres de la réserve opérationnelle de la police nationale qui ne remplissent pas les conditions prévues par les articles 16-1 A ou 20-1 du code de procédure pénale.',
+                ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('Polices municipales et gardes champêtres'),
-              _BulletPoint(
-                text:
-                    'Les agents de police municipale, pour les missions de police judiciaire qui leur sont confiées par la loi.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00026",
+                  'Personnels de la préfecture de police',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les gardes champêtres, lorsqu’ils agissent pour l’exercice des attributions fixées à l’avant-dernier alinéa de l’article L. 521-1 du code de la sécurité intérieure.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00027",
+                  'Les contrôleurs de la préfecture de police exerçant la spécialité « voie publique » ainsi que les agents de surveillance de Paris.',
+                ),
+              ),
+              SizedBox(height: 8),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00028",
+                  'Polices municipales et gardes champêtres',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00029",
+                  'Les agents de police municipale, pour les missions de police judiciaire qui leur sont confiées par la loi.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00030",
+                  'Les gardes champêtres, lorsqu’ils agissent pour l’exercice des attributions fixées à l’avant-dernier alinéa de l’article L. 521-1 du code de la sécurité intérieure.',
+                ),
               ),
 
               SizedBox(height: 12),
               _NotaBox(
-                title: 'À retenir',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                  "f00031",
+                  'À retenir',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Ces différents personnels partagent la même qualité d’agent de police judiciaire adjoint, mais interviennent dans des cadres institutionnels variés (police nationale, gendarmerie nationale, collectivités territoriales, préfecture de police). ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                      "f00032",
+                      'Ces différents personnels partagent la même qualité d’agent de police judiciaire adjoint, mais interviennent dans des cadres institutionnels variés (police nationale, gendarmerie nationale, collectivités territoriales, préfecture de police). ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        'Cette diversité reflète l’ancrage local et la complémentarité des missions de police judiciaire sur le territoire.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apja_page.dart",
+                      "f00033",
+                      'Cette diversité reflète l’ancrage local et la complémentarité des missions de police judiciaire sur le territoire.',
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ],

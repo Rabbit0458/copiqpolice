@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CirconstancesAggravantesPage extends StatelessWidget {
   const CirconstancesAggravantesPage({super.key});
@@ -44,7 +45,11 @@ class CirconstancesAggravantesPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Les circonstances aggravantes',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+            "f00001",
+            'Les circonstances aggravantes',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,25 +75,33 @@ class CirconstancesAggravantesPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Paragraph(
-                        "La peine encourue par l'auteur d'une infraction peut être aggravée lorsque celle-ci a été commise dans une circonstance considérée par la loi comme aggravant la criminalité de l'acte.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00002",
+                          "La peine encourue par l'auteur d'une infraction peut être aggravée lorsque celle-ci a été commise dans une circonstance considérée par la loi comme aggravant la criminalité de l'acte.",
+                        ),
                       ),
                       SizedBox(height: 10),
                       _Paragraph(
-                        "\"Si un même fait ne peut être retenu comme constitutif à la fois d'un crime et d'une circonstance aggravante accompagnant une autre infraction, rien ne s'oppose à ce qu'une même circonstance soit retenue comme aggravant des crimes distincts\" (Cass. crim., 7 février 2007).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00003",
+                          "\"Si un même fait ne peut être retenu comme constitutif à la fois d'un crime et d'une circonstance aggravante accompagnant une autre infraction, rien ne s'oppose à ce qu'une même circonstance soit retenue comme aggravant des crimes distincts\" (Cass. crim., 7 février 2007).",
+                        ),
                       ),
                     ],
                   ),
@@ -97,33 +110,61 @@ class CirconstancesAggravantesPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: 'NOTIONS GÉNÉRALES',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                    "f00004",
+                    'NOTIONS GÉNÉRALES',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "Une circonstance n'est aggravante que lorsque la loi le décide expressément. Elle les énumère de manière limitative et détermine pour chaque cas l'aggravation de la peine encourue.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00005",
+                        "Une circonstance n'est aggravante que lorsque la loi le décide expressément. Elle les énumère de manière limitative et détermine pour chaque cas l'aggravation de la peine encourue.",
+                      ),
                     ),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Une circonstance aggravante peut modifier la nature de la peine encourue par l'auteur de l'infraction et par conséquent la nature de l'infraction.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00006",
+                        "Une circonstance aggravante peut modifier la nature de la peine encourue par l'auteur de l'infraction et par conséquent la nature de l'infraction.",
+                      ),
                     ),
                     const SizedBox(height: 10),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "Les circonstances aggravantes sont dites spéciales car elles ne s'appliquent qu'aux auteurs des infractions pour lesquelles la loi les prévoit. On peut distinguer celles qui tiennent aux conséquences dommageables de l'infraction, à la personne de la victime, à la personne de l'auteur, aux moyens employés pour commettre l'infraction, au lieu de l'infraction. Seules seront ici traitées les circonstances aggravantes citées par le code pénal aux ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00007",
+                          "Les circonstances aggravantes sont dites spéciales car elles ne s'appliquent qu'aux auteurs des infractions pour lesquelles la loi les prévoit. On peut distinguer celles qui tiennent aux conséquences dommageables de l'infraction, à la personne de la victime, à la personne de l'auteur, aux moyens employés pour commettre l'infraction, au lieu de l'infraction. Seules seront ici traitées les circonstances aggravantes citées par le code pénal aux ",
+                        ),
                       ),
-                      law("articles 132-71 à 132-80"),
-                      const TextSpan(
-                        text:
-                            " ainsi que celles communes à plusieurs infractions et d'une application fréquente.",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00008",
+                          "articles 132-71 à 132-80",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00009",
+                          " ainsi que celles communes à plusieurs infractions et d'une application fréquente.",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "La jurisprudence les classe en deux catégories.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00010",
+                        "La jurisprudence les classe en deux catégories.",
+                      ),
                     ),
                   ],
                 ),
@@ -131,42 +172,72 @@ class CirconstancesAggravantesPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : CIRCONSTANCES AGGRAVANTES PERSONNELLES',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                    "f00011",
+                    '1 : CIRCONSTANCES AGGRAVANTES PERSONNELLES',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Il s'agit des circonstances aggravantes qui augmentent uniquement la culpabilité de celui qui agit car elles sont liées à sa personnalité. Tel est le cas de la récidive qui est « purement » personnelle et qui ne s'étend donc pas au coauteur ou au complice.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00012",
+                        "Il s'agit des circonstances aggravantes qui augmentent uniquement la culpabilité de celui qui agit car elles sont liées à sa personnalité. Tel est le cas de la récidive qui est « purement » personnelle et qui ne s'étend donc pas au coauteur ou au complice.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _Paragraph(
-                      "Cependant, les circonstances aggravantes personnelles liées à la qualité ou à la fonction ne semblent pas être exclusives à l'auteur. Elles ne sont donc pas dites « purement personnelles ».",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00013",
+                        "Cependant, les circonstances aggravantes personnelles liées à la qualité ou à la fonction ne semblent pas être exclusives à l'auteur. Elles ne sont donc pas dites « purement personnelles ».",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph.rich([
                       TextSpan(
-                        text:
-                            "En effet, un arrêt de la chambre criminelle de la cour de cassation indique que : « Sont applicables au complice les circonstances aggravantes liées à la qualité de l'auteur principal » (",
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00014",
+                          "En effet, un arrêt de la chambre criminelle de la cour de cassation indique que : « Sont applicables au complice les circonstances aggravantes liées à la qualité de l'auteur principal » (",
+                        ),
                       ),
                       TextSpan(
-                        text: "Cass. crim., 7 septembre 2005",
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00015",
+                          "Cass. crim., 7 septembre 2005",
+                        ),
                         style: TextStyle(fontWeight: FontWeight.w800),
                       ),
                       TextSpan(text: ")."),
                     ]),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Elle consacre ainsi le principe de l'emprunt de criminalité (étudié ultérieurement dans les principes généraux de la responsabilité pénale).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00016",
+                        "Elle consacre ainsi le principe de l'emprunt de criminalité (étudié ultérieurement dans les principes généraux de la responsabilité pénale).",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph.rich([
                       TextSpan(
-                        text:
-                            "Le complice encourt la responsabilité de toutes les circonstances qui qualifient l'acte poursuivi sans qu'il soit nécessaire que celles-ci aient été connues de lui (",
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00017",
+                          "Le complice encourt la responsabilité de toutes les circonstances qui qualifient l'acte poursuivi sans qu'il soit nécessaire que celles-ci aient été connues de lui (",
+                        ),
                       ),
                       TextSpan(
-                        text: "Cass. crim., 21 mai 1996",
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                          "f00018",
+                          "Cass. crim., 21 mai 1996",
+                        ),
                         style: TextStyle(fontWeight: FontWeight.w800),
                       ),
                       TextSpan(text: ")."),
@@ -177,24 +248,39 @@ class CirconstancesAggravantesPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CIRCONSTANCES AGGRAVANTES RÉELLES',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                    "f00019",
+                    '2 : CIRCONSTANCES AGGRAVANTES RÉELLES',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Il s'agit des circonstances aggravantes qui s'attachent à la matérialité du fait poursuivi dont elles ne peuvent être séparées.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00020",
+                        "Il s'agit des circonstances aggravantes qui s'attachent à la matérialité du fait poursuivi dont elles ne peuvent être séparées.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Elles ne peuvent donc pas exister à l'égard de l'un des participants sans exister en même temps à l'égard de tous les autres, qu'ils soient auteurs, coauteurs ou complices.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                        "f00021",
+                        "Elles ne peuvent donc pas exister à l'égard de l'un des participants sans exister en même temps à l'égard de tous les autres, qu'ils soient auteurs, coauteurs ou complices.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _NotaBox(
                       bodySpans: [
                         TextSpan(
-                          text:
-                              "La doctrine, quant à elle, ajoute une troisième catégorie : les circonstances aggravantes mixtes (tenant à la fois à la qualité de l'auteur et à la criminalité de l'acte) qui semblent donc être assimilées par la jurisprudence aux circonstances aggravantes réelles.",
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart",
+                            "f00022",
+                            "La doctrine, quant à elle, ajoute une troisième catégorie : les circonstances aggravantes mixtes (tenant à la fois à la qualité de l'auteur et à la criminalité de l'acte) qui semblent donc être assimilées par la jurisprudence aux circonstances aggravantes réelles.",
+                          ),
                         ),
                       ],
                     ),
@@ -458,9 +544,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

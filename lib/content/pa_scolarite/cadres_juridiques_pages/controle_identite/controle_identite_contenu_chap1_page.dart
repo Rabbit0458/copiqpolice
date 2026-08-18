@@ -1,6 +1,7 @@
 // lib/pa/dps_dpg/cadres_juridiques/controle_identite_contenu_chap1_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
   const PaControleIdentiteChap1ContenuPage({super.key});
@@ -14,8 +15,8 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
-? Colors.white70
-: const Color(0xFF222222).withValues(alpha: .70);
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -26,10 +27,18 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Chapitre 1 — Contrôle d’identité',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+            "f00002",
+            'Chapitre 1 — Contrôle d’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,7 +52,11 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'Chapitre 1 — Contrôle d’identité',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00003",
+              'Chapitre 1 — Contrôle d’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -52,10 +65,26 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Déclinaisons pratiques du contrôle d’identité : cadre général, contrôles préventifs, '
-            'zones frontières, locaux professionnels, visites de véhicules et bagages, distinction '
-            'avec le contrôle de réglementation, contrôle du séjour des étrangers et moyens de '
-            'preuve de l’identité.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00004",
+                  'Déclinaisons pratiques du contrôle d’identité : cadre général, contrôles préventifs, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00005",
+                  'zones frontières, locaux professionnels, visites de véhicules et bagages, distinction ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00006",
+                  'avec le contrôle de réglementation, contrôle du séjour des étrangers et moyens de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00007",
+                  'preuve de l’identité.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -70,8 +99,16 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
             tag: 'chap1_intro',
             title: 'Introduction',
             subtitle:
-                'Objectifs du contrôle d’identité, place dans la procédure pénale et notions clés '
-                'à maîtriser avant d’entrer dans le détail des différents types de contrôles.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00008",
+                  'Objectifs du contrôle d’identité, place dans la procédure pénale et notions clés ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00009",
+                  'à maîtriser avant d’entrer dans le détail des différents types de contrôles.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -85,10 +122,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // ===================== CADRE GENERAL DU CONTROLE =================
           _ModuleCard(
             tag: 'chap1_cadre_general',
-            title: 'Cadre général du contrôle',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00010",
+              'Cadre général du contrôle',
+            ),
             subtitle:
-                'Fondements juridiques, autorités compétentes, finalités et limites du contrôle '
-                'd’identité dans le respect des libertés individuelles.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00011",
+                  'Fondements juridiques, autorités compétentes, finalités et limites du contrôle ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00012",
+                  'd’identité dans le respect des libertés individuelles.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -102,10 +151,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // ===================== CONTROLES PREVENTIFS ======================
           _ModuleCard(
             tag: 'chap1_preventifs',
-            title: 'Les contrôles préventifs',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00013",
+              'Les contrôles préventifs',
+            ),
             subtitle:
-                'Contrôles destinés à prévenir les atteintes à l’ordre public, conditions de mise '
-                'en œuvre et exemples opérationnels.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00014",
+                  'Contrôles destinés à prévenir les atteintes à l’ordre public, conditions de mise ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00015",
+                  'en œuvre et exemples opérationnels.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -119,10 +180,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // ===================== CONTROLES EN ZONE FRONTIERE ==============
           _ModuleCard(
             tag: 'chap1_zone_frontiere',
-            title: 'Les contrôles en zone frontière',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00016",
+              'Les contrôles en zone frontière',
+            ),
             subtitle:
-                'Spécificités des contrôles réalisés aux frontières, zones assimilées et régime '
-                'juridique applicable aux personnes contrôlées.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00017",
+                  'Spécificités des contrôles réalisés aux frontières, zones assimilées et régime ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00018",
+                  'juridique applicable aux personnes contrôlées.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -136,10 +209,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // ===================== LOCAUX PROFESSIONNELS ====================
           _ModuleCard(
             tag: 'chap1_locaux_pro',
-            title: 'Les contrôles dans les locaux professionnels',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00019",
+              'Les contrôles dans les locaux professionnels',
+            ),
             subtitle:
-                'Conditions d’accès, finalité des contrôles et articulation avec les autres '
-                'pouvoirs d’inspection dans les lieux ouverts au public ou aux salariés.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00020",
+                  'Conditions d’accès, finalité des contrôles et articulation avec les autres ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00021",
+                  'pouvoirs d’inspection dans les lieux ouverts au public ou aux salariés.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -153,10 +238,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // = VISITES VEHICULES / BAGAGES / NAVIRES ========================
           _ModuleCard(
             tag: 'chap1_visites_vehicules',
-            title: 'Visites de véhicules, bagages et navires',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00022",
+              'Visites de véhicules, bagages et navires',
+            ),
             subtitle:
-                'Règles encadrant les visites de véhicules, l’inspection visuelle ou la fouille des '
-                'bagages et les visites de navires en lien avec le contrôle d’identité.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00023",
+                  'Règles encadrant les visites de véhicules, l’inspection visuelle ou la fouille des ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00024",
+                  'bagages et les visites de navires en lien avec le contrôle d’identité.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -170,11 +267,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // = DISTINCTION CONTROLE IDENTITE / REGLEMENTATION ==============
           _ModuleCard(
             tag: 'chap1_distinction_controles',
-            title:
-                'Distinction contrôle d’identité / contrôle de réglementation',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00025",
+              'Distinction contrôle d’identité / contrôle de réglementation',
+            ),
             subtitle:
-                'Comment différencier un contrôle d’identité d’un contrôle de réglementation, '
-                'et quelles conséquences pratiques pour la rédaction des actes.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00026",
+                  'Comment différencier un contrôle d’identité d’un contrôle de réglementation, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00027",
+                  'et quelles conséquences pratiques pour la rédaction des actes.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -188,10 +296,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // ================== SEJOUR DES ETRANGERS ========================
           _ModuleCard(
             tag: 'chap1_sejour_etrangers',
-            title: 'Contrôle de la régularité du séjour des étrangers',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00028",
+              'Contrôle de la régularité du séjour des étrangers',
+            ),
             subtitle:
-                'Spécificités des contrôles visant la régularité du séjour, coopération avec '
-                'l’autorité préfectorale et garanties procédurales.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00029",
+                  'Spécificités des contrôles visant la régularité du séjour, coopération avec ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00030",
+                  'l’autorité préfectorale et garanties procédurales.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -205,10 +325,22 @@ class PaControleIdentiteChap1ContenuPage extends StatelessWidget {
           // ================== MOYENS DE PREUVE DE L’IDENTITE ==============
           _ModuleCard(
             tag: 'chap1_moyens_preuve_identite',
-            title: 'Les moyens de preuve de l’identité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+              "f00031",
+              'Les moyens de preuve de l’identité',
+            ),
             subtitle:
-                'Documents et éléments permettant d’établir l’identité d’une personne, '
-                'appréciation de leur fiabilité et bonnes pratiques pour l’officier de police judiciaire.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00032",
+                  'Documents et éléments permettant d’établir l’identité d’une personne, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart",
+                  "f00033",
+                  'appréciation de leur fiabilité et bonnes pratiques pour l’officier de police judiciaire.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,

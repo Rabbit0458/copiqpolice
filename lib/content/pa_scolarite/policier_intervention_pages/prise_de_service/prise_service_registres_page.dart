@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPriseServiceRegistresPage extends StatelessWidget {
   const PaPriseServiceRegistresPage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/policier_intervention/prise-service/registres';
+  static const String routeName =
+      '/pa/dps_dpg/policier_intervention/prise-service/registres';
 
   // Couleur des articles de loi (CPP / CP / CSI / etc.)
   static const Color _lawRed = Color(0xFFE53935);
@@ -44,10 +46,18 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Prise de service",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+            "f00002",
+            "Prise de service",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -62,7 +72,11 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Principaux registres du poste",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00003",
+              "Principaux registres du poste",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -74,30 +88,41 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (seule référence fournie : art. 64 CPP)
           _ConditionCard(
-            title: "Référence (cadre)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00004",
+              "Référence (cadre)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 64 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                    "f00005",
+                    "Article 64 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : mentionné pour distinguer le registre des personnes gardées à vue tenu au poste de celui tenu par l’O.P.J. dans son service.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                    "f00006",
+                    " : mentionné pour distinguer le registre des personnes gardées à vue tenu au poste de celui tenu par l’O.P.J. dans son service.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le registre GAV « du poste » ne doit pas être confondu avec celui mis à disposition de l’O.P.J. dans son service.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00007",
+                      "Le registre GAV « du poste » ne doit pas être confondu avec celui mis à disposition de l’O.P.J. dans son service.",
+                    ),
                   ),
                 ],
               ),
@@ -107,28 +132,55 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — La main courante",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00008",
+              "I — La main courante",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "C’est le livre-journal tenu dans tout commissariat et poste de police, sur lequel les agents de tous grades "
-                "relatent succinctement leurs diligences ainsi que les faits, plaintes et démarches qui en sont à l’origine.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00009",
+                      "C’est le livre-journal tenu dans tout commissariat et poste de police, sur lequel les agents de tous grades ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00010",
+                      "relatent succinctement leurs diligences ainsi que les faits, plaintes et démarches qui en sont à l’origine.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("À quoi ça sert ?"),
-              _BulletPoint(
-                text:
-                    "Tracer les événements et actions réalisées au service (vision chronologique).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00011",
+                  "À quoi ça sert ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Assurer une continuité d’information entre les vacations (utile au roulement).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00012",
+                  "Tracer les événements et actions réalisées au service (vision chronologique).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garder une trace succincte : faits, plaintes, démarches, diligences.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00013",
+                  "Assurer une continuité d’information entre les vacations (utile au roulement).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00014",
+                  "Garder une trace succincte : faits, plaintes, démarches, diligences.",
+                ),
               ),
             ],
           ),
@@ -136,34 +188,100 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Registre des personnes gardées à vue",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00015",
+              "II — Registre des personnes gardées à vue",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tenu par le chef de poste (ou par des policiers dédiés si les geôles sont trop importantes), "
-                "ce registre recense des informations inhérentes au déroulement des mesures de garde à vue.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00016",
+                      "Tenu par le chef de poste (ou par des policiers dédiés si les geôles sont trop importantes), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00017",
+                      "ce registre recense des informations inhérentes au déroulement des mesures de garde à vue.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Il recense notamment"),
-              _IntroBullet(text: "identité des personnes ;"),
-              _IntroBullet(text: "date et heure de la mesure ;"),
-              _IntroBullet(text: "repas ;"),
-              _IntroBullet(text: "fouilles ;"),
-              _IntroBullet(text: "entretiens ;"),
-              _IntroBullet(text: "déplacements ;"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00018",
+                  "Il recense notamment",
+                ),
+              ),
               _IntroBullet(
-                text: "et tout élément utile au suivi de la mesure.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00019",
+                  "identité des personnes ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00020",
+                  "date et heure de la mesure ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00021",
+                  "repas ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00022",
+                  "fouilles ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00023",
+                  "entretiens ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00024",
+                  "déplacements ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00025",
+                  "et tout élément utile au suivi de la mesure.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "À ne pas confondre avec le registre O.P.J. (",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00026",
+                      "À ne pas confondre avec le registre O.P.J. (",
+                    ),
                   ),
                   TextSpan(
-                    text: "art. 64 CPP",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00027",
+                      "art. 64 CPP",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -178,23 +296,43 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Registre d’écrou",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00028",
+              "III — Registre d’écrou",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il concerne les individus en état d’ivresse. Il peut s’agir :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00029",
+                  "Il concerne les individus en état d’ivresse. Il peut s’agir :",
+                ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "des individus arrêtés en ivresse publique et manifeste ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00030",
+                  "des individus arrêtés en ivresse publique et manifeste ;",
+                ),
               ),
-              _IntroBullet(text: "des auteurs de conduite en état d’ivresse ;"),
               _IntroBullet(
-                text:
-                    "des individus arrêtés pour un autre délit, placés en garde à vue, mais dont les droits seront notifiés après complet dégrisement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00031",
+                  "des auteurs de conduite en état d’ivresse ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00032",
+                  "des individus arrêtés pour un autre délit, placés en garde à vue, mais dont les droits seront notifiés après complet dégrisement.",
+                ),
               ),
             ],
           ),
@@ -202,22 +340,41 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Registre des objets trouvés",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00033",
+              "IV — Registre des objets trouvés",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsqu’une personne se présente au commissariat pour remettre un objet trouvé, "
-                "un inventaire détaillé est effectué en présence de l’inventeur. "
-                "Ce dernier signe ensuite sur le registre des objets trouvés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00034",
+                      "Lorsqu’une personne se présente au commissariat pour remettre un objet trouvé, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00035",
+                      "un inventaire détaillé est effectué en présence de l’inventeur. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00036",
+                      "Ce dernier signe ensuite sur le registre des objets trouvés.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans certaines villes, la tenue de ce registre peut incomber aux personnels de mairie.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00037",
+                      "Dans certaines villes, la tenue de ce registre peut incomber aux personnels de mairie.",
+                    ),
                   ),
                 ],
               ),
@@ -227,31 +384,73 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Registre de l’armement collectif",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00038",
+              "V — Registre de l’armement collectif",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les armes collectives sont conservées à l’armurerie du commissariat. Elles ne sont mises à disposition "
-                "du personnel qu’à titre provisoire (gardes statiques, patrouilles, formation de maintien de l’ordre) "
-                "et doivent toujours être restituées à l’issue de ces missions.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00039",
+                      "Les armes collectives sont conservées à l’armurerie du commissariat. Elles ne sont mises à disposition ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00040",
+                      "du personnel qu’à titre provisoire (gardes statiques, patrouilles, formation de maintien de l’ordre) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00041",
+                      "et doivent toujours être restituées à l’issue de ces missions.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Exigences de suivi"),
-              _BulletPoint(
-                text:
-                    "Le chef de poste doit pouvoir préciser à tout moment le nombre d’armes en service.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00042",
+                  "Exigences de suivi",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Il doit aussi pouvoir indiquer leur affectation exacte (qui détient quoi, et pourquoi).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00043",
+                  "Le chef de poste doit pouvoir préciser à tout moment le nombre d’armes en service.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00044",
+                  "Il doit aussi pouvoir indiquer leur affectation exacte (qui détient quoi, et pourquoi).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Responsabilité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00045",
+                  "Responsabilité",
+                ),
+              ),
               _Paragraph(
-                "Les armes collectives doivent toujours être placées sous la responsabilité d’un fonctionnaire. "
-                "Leurs mouvements sont enregistrés par les détenteurs dépositaires et les détenteurs usagers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00046",
+                      "Les armes collectives doivent toujours être placées sous la responsabilité d’un fonctionnaire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00047",
+                      "Leurs mouvements sont enregistrés par les détenteurs dépositaires et les détenteurs usagers.",
+                    ),
               ),
             ],
           ),
@@ -259,24 +458,42 @@ class PaPriseServiceRegistresPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Registre d’ordre",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+              "f00048",
+              "VI — Registre d’ordre",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il consigne les directives données par le chef de service à faire passer au personnel "
-                "des unités de voie publique (notes de service, télégrammes, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00049",
+                      "Il consigne les directives données par le chef de service à faire passer au personnel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                      "f00050",
+                      "des unités de voie publique (notes de service, télégrammes, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _SubTitle("But"),
               _BulletPoint(
-                text:
-                    "Centraliser les consignes officielles et assurer leur diffusion au personnel.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00051",
+                  "Centraliser les consignes officielles et assurer leur diffusion au personnel.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garantir la traçabilité des directives transmises entre les vacations.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart",
+                  "f00052",
+                  "Garantir la traçabilité des directives transmises entre les vacations.",
+                ),
               ),
             ],
           ),
@@ -533,9 +750,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

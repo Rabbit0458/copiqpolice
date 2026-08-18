@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AvisFamillePage extends StatelessWidget {
   const AvisFamillePage({super.key});
@@ -56,10 +57,18 @@ class AvisFamillePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+            "f00002",
+            "Accident circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AvisFamillePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’avis à famille",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+              "f00003",
+              "L’avis à famille",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,27 +99,39 @@ class AvisFamillePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Élément légal (cadre général)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+              "f00004",
+              "Élément légal (cadre général)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 20 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                    "f00005",
+                    "Article 20 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixe le cadre des missions des gardiens de la paix (recherche et constatation des infractions dans les conditions prévues).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                    "f00006",
+                    " : fixe le cadre des missions des gardiens de la paix (recherche et constatation des infractions dans les conditions prévues).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Dans le cadre d’une mission de secours et d’intervention, le fonctionnaire peut être amené à informer la famille d’une personne secourue ou impliquée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00007",
+                  "Dans le cadre d’une mission de secours et d’intervention, le fonctionnaire peut être amené à informer la famille d’une personne secourue ou impliquée.",
+                ),
               ),
             ],
           ),
@@ -114,16 +139,36 @@ class AvisFamillePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Pourquoi c’est important",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+              "f00008",
+              "Pourquoi c’est important",
+            ),
             cardColor: cardWhy,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’avis à famille fait partie intégrante de la mission de service public. "
-                "Il doit être réalisé avec tact, psychologie et professionnalisme.\n\n"
-                "Objectif : transmettre une information sensible de façon humaine, maîtrisée "
-                "et sécurisée, tout en évitant d’aggraver la détresse des proches.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00009",
+                      "L’avis à famille fait partie intégrante de la mission de service public. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00010",
+                      "Il doit être réalisé avec tact, psychologie et professionnalisme.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00011",
+                      "Objectif : transmettre une information sensible de façon humaine, maîtrisée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00012",
+                      "et sécurisée, tout en évitant d’aggraver la détresse des proches.",
+                    ),
               ),
             ],
           ),
@@ -131,33 +176,69 @@ class AvisFamillePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — Cas nécessitant l’avis à famille",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+              "f00013",
+              "I — Cas nécessitant l’avis à famille",
+            ),
             cardColor: cardCases,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Un avis doit toujours être donné à la famille d’une personne lorsque l’intervention "
-                "de police a été requise.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00014",
+                      "Un avis doit toujours être donné à la famille d’une personne lorsque l’intervention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00015",
+                      "de police a été requise.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Décès survenu à l’occasion de faits ayant entraîné l’intervention de la Police.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00016",
+                  "Décès survenu à l’occasion de faits ayant entraîné l’intervention de la Police.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Admission à l’hôpital pour blessures ou malaise, sauf refus exprimé par une personne majeure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00017",
+                  "Admission à l’hôpital pour blessures ou malaise, sauf refus exprimé par une personne majeure.",
+                ),
               ),
-              _BulletPoint(text: "Avis obligatoire pour un mineur."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00018",
+                  "Avis obligatoire pour un mineur.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cette mission incombe en premier lieu au chef d’intervention / chef de poste, "
-                        "mais elle relève de toute la chaîne hiérarchique. L’OPJ est systématiquement avisé "
-                        "et décide des modalités de l’avis à famille.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                          "f00019",
+                          "Cette mission incombe en premier lieu au chef d’intervention / chef de poste, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                          "f00020",
+                          "mais elle relève de toute la chaîne hiérarchique. L’OPJ est systématiquement avisé ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                          "f00021",
+                          "et décide des modalités de l’avis à famille.",
+                        ),
                   ),
                 ],
               ),
@@ -167,20 +248,48 @@ class AvisFamillePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Réalisation de l’avis",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+              "f00022",
+              "II — Réalisation de l’avis",
+            ),
             cardColor: cardHow,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Appel téléphonique"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00023",
+                  "A) Appel téléphonique",
+                ),
+              ),
               _Paragraph(
-                "L’appel téléphonique concerne exclusivement les blessures dont l’issue n’est pas mortelle.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00024",
+                  "L’appel téléphonique concerne exclusivement les blessures dont l’issue n’est pas mortelle.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Déplacement au domicile"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00025",
+                  "B) Déplacement au domicile",
+                ),
+              ),
               _Paragraph(
-                "Le déplacement au domicile s’effectue systématiquement en cas de décès. "
-                "Il est également opportun en cas de blessures graves, notamment lorsqu’il s’agit d’un enfant.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00026",
+                      "Le déplacement au domicile s’effectue systématiquement en cas de décès. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00027",
+                      "Il est également opportun en cas de blessures graves, notamment lorsqu’il s’agit d’un enfant.",
+                    ),
               ),
             ],
           ),
@@ -188,51 +297,95 @@ class AvisFamillePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Précautions essentielles",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+              "f00028",
+              "III — Précautions essentielles",
+            ),
             cardColor: cardPrec,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’avis doit être donné avec tous les ménagements qu’imposent les circonstances. "
-                "Pour être exécutée dans les meilleures conditions d’humanité, cette mission délicate "
-                "doit être confiée à des fonctionnaires expérimentés et respecter une procédure adaptée :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00029",
+                      "L’avis doit être donné avec tous les ménagements qu’imposent les circonstances. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00030",
+                      "Pour être exécutée dans les meilleures conditions d’humanité, cette mission délicate ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                      "f00031",
+                      "doit être confiée à des fonctionnaires expérimentés et respecter une procédure adaptée :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "S’assurer de l’identification de la victime.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00032",
+                  "S’assurer de l’identification de la victime.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Recueillir un maximum d’éléments sur les circonstances (sans forcément les évoquer lors de l’annonce).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00033",
+                  "Recueillir un maximum d’éléments sur les circonstances (sans forcément les évoquer lors de l’annonce).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne pas intervenir seul : être au moins deux et se répartir les rôles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00034",
+                  "Ne pas intervenir seul : être au moins deux et se répartir les rôles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Entrer si possible au domicile ; à défaut, se placer hors de la vue du public.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00035",
+                  "Entrer si possible au domicile ; à défaut, se placer hors de la vue du public.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S’assurer de la présence d’un tiers pouvant accompagner/soutenir la famille (proche, voisin, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00036",
+                  "S’assurer de la présence d’un tiers pouvant accompagner/soutenir la famille (proche, voisin, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Anticiper les réactions : envisager un soutien médical si nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00037",
+                  "Anticiper les réactions : envisager un soutien médical si nécessaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Annoncer les faits avec pondération, progressivement, avec un langage clair et simple.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00038",
+                  "Annoncer les faits avec pondération, progressivement, avec un langage clair et simple.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rester un moment pour prévenir/encadrer les réactions (évanouissement, crise de nerfs, agitation…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00039",
+                  "Rester un moment pour prévenir/encadrer les réactions (évanouissement, crise de nerfs, agitation…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne jamais quitter les lieux en laissant la personne seule : s’assurer qu’un tiers est présent.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                  "f00040",
+                  "Ne jamais quitter les lieux en laissant la personne seule : s’assurer qu’un tiers est présent.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
@@ -240,8 +393,16 @@ class AvisFamillePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Transmettre l’information de manière humaine, maîtrisée et sécurisée, "
-                        "en garantissant un accompagnement minimal immédiat.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                          "f00041",
+                          "Transmettre l’information de manière humaine, maîtrisée et sécurisée, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/avis_famille_page.dart",
+                          "f00042",
+                          "en garantissant un accompagnement minimal immédiat.",
+                        ),
                   ),
                 ],
               ),

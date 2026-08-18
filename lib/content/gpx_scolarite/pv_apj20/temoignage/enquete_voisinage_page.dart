@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EnqueteVoisinagePage extends StatelessWidget {
   const EnqueteVoisinagePage({super.key});
@@ -55,10 +56,18 @@ class EnqueteVoisinagePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Témoignage",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+            "f00002",
+            "Témoignage",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class EnqueteVoisinagePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas — Procès-verbal d’enquête de voisinage",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00003",
+              "Canevas — Procès-verbal d’enquête de voisinage",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -97,16 +110,36 @@ class EnqueteVoisinagePage extends StatelessWidget {
           // ✅ (Élément légal en haut) — ici pas d’article “définissant” spécifique dans ton texte,
           // mais on met une carte "Cadre juridique" en premier, comme tu veux.
           _ConditionCard(
-            title: "Cadre juridique (à mentionner)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00004",
+              "Cadre juridique (à mentionner)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’agent de police judiciaire doit situer l’enquête de voisinage dans un cadre juridique précis :\n"
-                "• enquête de flagrance\n"
-                "• ou enquête préliminaire\n\n"
-                "Ce point doit apparaître clairement dès l’entête / les premières lignes du procès-verbal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00005",
+                      "L’agent de police judiciaire doit situer l’enquête de voisinage dans un cadre juridique précis :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00006",
+                      "• enquête de flagrance\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00007",
+                      "• ou enquête préliminaire\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00008",
+                      "Ce point doit apparaître clairement dès l’entête / les premières lignes du procès-verbal.",
+                    ),
               ),
             ],
           ),
@@ -114,22 +147,36 @@ class EnqueteVoisinagePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 — Lieu de l’opération",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00009",
+              "1 — Lieu de l’opération",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il convient de mentionner l’endroit exact où se situe l’enquête de voisinage.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00010",
+                  "Il convient de mentionner l’endroit exact où se situe l’enquête de voisinage.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Adresse / secteur (ville, rue, numéro, immeuble, étage si nécessaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00011",
+                  "Adresse / secteur (ville, rue, numéro, immeuble, étage si nécessaire).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contexte : proximité immédiate du lieu des faits ou itinéraire suivi.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00012",
+                  "Contexte : proximité immédiate du lieu des faits ou itinéraire suivi.",
+                ),
               ),
             ],
           ),
@@ -137,26 +184,45 @@ class EnqueteVoisinagePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2 — Instructions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00013",
+              "2 — Instructions",
+            ),
             cardColor: cardMethod,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Selon la nature de la procédure"),
-              _BulletPoint(
-                text:
-                    "En flagrant délit : l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00014",
+                  "Selon la nature de la procédure",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En préliminaire : il agit sous le contrôle de l’officier de police judiciaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00015",
+                  "En flagrant délit : l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00016",
+                  "En préliminaire : il agit sous le contrôle de l’officier de police judiciaire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Astuce rédaction : une phrase simple suffit en début de PV (ex. « agissant sur instructions de… » / « sous le contrôle de… »).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00017",
+                      "Astuce rédaction : une phrase simple suffit en début de PV (ex. « agissant sur instructions de… » / « sous le contrôle de… »).",
+                    ),
                   ),
                 ],
               ),
@@ -166,15 +232,31 @@ class EnqueteVoisinagePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3 — Cadre juridique (rappel rédactionnel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00018",
+              "3 — Cadre juridique (rappel rédactionnel)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur doit indiquer expressément le cadre juridique retenu pour l’opération : "
-                "enquête de flagrance ou enquête préliminaire.\n\n"
-                "Ce choix conditionne le vocabulaire employé et les mentions procédurales.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00019",
+                      "Le rédacteur doit indiquer expressément le cadre juridique retenu pour l’opération : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00020",
+                      "enquête de flagrance ou enquête préliminaire.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00021",
+                      "Ce choix conditionne le vocabulaire employé et les mentions procédurales.",
+                    ),
               ),
             ],
           ),
@@ -182,21 +264,36 @@ class EnqueteVoisinagePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "4 — Assistants éventuels",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00022",
+              "4 — Assistants éventuels",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur mentionne les fonctionnaires qui l’accompagnent pour l’accomplissement de la mission.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00023",
+                  "Le rédacteur mentionne les fonctionnaires qui l’accompagnent pour l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Nom / qualité / service (si exigé par tes habitudes de rédaction).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00024",
+                  "Nom / qualité / service (si exigé par tes habitudes de rédaction).",
+                ),
               ),
               _BulletPoint(
-                text: "Rôle sur place (appui, prise de notes, sécurité, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00025",
+                  "Rôle sur place (appui, prise de notes, sécurité, etc.).",
+                ),
               ),
             ],
           ),
@@ -204,44 +301,90 @@ class EnqueteVoisinagePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "5 — Opération (contenu cœur du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00026",
+              "5 — Opération (contenu cœur du PV)",
+            ),
             cardColor: cardOps,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _Paragraph("L’enquêteur indique de façon structurée :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00027",
+                  "L’enquêteur indique de façon structurée :",
+                ),
+              ),
               SizedBox(height: 8),
-              _SubTitle("A) Le lieu (adresses)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00028",
+                  "A) Le lieu (adresses)",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Énumérer avec précision les adresses où se déroule l’enquête.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00029",
+                  "Énumérer avec précision les adresses où se déroule l’enquête.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Les personnes contactées"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00030",
+                  "B) Les personnes contactées",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Lister les personnes contactées, susceptibles de fournir des éléments utiles à l’enquête.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00031",
+                  "Lister les personnes contactées, susceptibles de fournir des éléments utiles à l’enquête.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("C) Le résultat"),
-              _IntroBullet(
-                text:
-                    "Enquête négative OU présence de témoins (identifiés succinctement).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00032",
+                  "C) Le résultat",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Mentionner un résumé du témoignage en style indirect (pas de verbatim ici).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00033",
+                  "Enquête négative OU présence de témoins (identifiés succinctement).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Préciser qu’une convocation au service est faite pour audition ultérieure par procès-verbal, si nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00034",
+                  "Mentionner un résumé du témoignage en style indirect (pas de verbatim ici).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00035",
+                  "Préciser qu’une convocation au service est faite pour audition ultérieure par procès-verbal, si nécessaire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Objectif : que la lecture donne immédiatement « où / qui / quoi / résultat » sans ambiguïté.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00036",
+                      "Objectif : que la lecture donne immédiatement « où / qui / quoi / résultat » sans ambiguïté.",
+                    ),
                   ),
                 ],
               ),
@@ -251,14 +394,26 @@ class EnqueteVoisinagePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "6 — Énonciation terminale (clôture)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00037",
+              "6 — Énonciation terminale (clôture)",
+            ),
             cardColor: cardClose,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’indication de l’heure est facultative.\n\n"
-                "La clôture doit rester simple et conforme à tes usages rédactionnels (fin d’opération, retour service, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00038",
+                      "L’indication de l’heure est facultative.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                      "f00039",
+                      "La clôture doit rester simple et conforme à tes usages rédactionnels (fin d’opération, retour service, etc.).",
+                    ),
               ),
             ],
           ),
@@ -266,18 +421,29 @@ class EnqueteVoisinagePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "7 — Avis O.P.J.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+              "f00040",
+              "7 — Avis O.P.J.",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’agent de police judiciaire avise l’officier de police judiciaire de l’enquête de voisinage effectuée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00041",
+                  "L’agent de police judiciaire avise l’officier de police judiciaire de l’enquête de voisinage effectuée.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Préciser le mode (téléphone, radio, compte-rendu, mention au dossier) selon tes habitudes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/enquete_voisinage_page.dart",
+                  "f00042",
+                  "Préciser le mode (téléphone, radio, compte-rendu, mention au dossier) selon tes habitudes.",
+                ),
               ),
             ],
           ),
@@ -533,9 +699,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

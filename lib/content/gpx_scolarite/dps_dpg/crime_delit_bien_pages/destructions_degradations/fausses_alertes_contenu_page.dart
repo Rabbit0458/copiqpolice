@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FaussesAlertesPage extends StatelessWidget {
   const FaussesAlertesPage({super.key});
@@ -59,10 +60,18 @@ class FaussesAlertesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions / Dégradations",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+            "f00002",
+            "Destructions / Dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class FaussesAlertesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les fausses alertes",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+              "f00003",
+              "Les fausses alertes",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,17 +102,41 @@ class FaussesAlertesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de communiquer ou de divulguer une fausse information dans le but de faire croire "
-                "qu’une destruction, une dégradation ou une détérioration dangereuse pour les personnes "
-                "va être ou a été commise constitue une infraction.\n\n"
-                "Constitue également une infraction le fait de communiquer ou de divulguer une fausse information "
-                "faisant croire à un sinistre, et de nature à provoquer l’intervention inutile des secours.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00005",
+                      "Le fait de communiquer ou de divulguer une fausse information dans le but de faire croire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00006",
+                      "qu’une destruction, une dégradation ou une détérioration dangereuse pour les personnes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00007",
+                      "va être ou a été commise constitue une infraction.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00008",
+                      "Constitue également une infraction le fait de communiquer ou de divulguer une fausse information ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00009",
+                      "faisant croire à un sinistre, et de nature à provoquer l’intervention inutile des secours.",
+                    ),
               ),
             ],
           ),
@@ -108,21 +145,30 @@ class FaussesAlertesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-14 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                    "f00011",
+                    "Article 322-14 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime les fausses alertes.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                    "f00012",
+                    " : définit et réprime les fausses alertes.",
+                  ),
                 ),
               ]),
             ],
@@ -132,40 +178,98 @@ class FaussesAlertesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une communication ou divulgation"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00014",
+                  "A) Une communication ou divulgation",
+                ),
+              ),
               _Paragraph(
-                "Le moyen est indifférent : l’auteur peut utiliser n’importe quel procédé de communication "
-                "ou de divulgation (écrit ou oral, téléphone, radio, réseaux, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00015",
+                      "Le moyen est indifférent : l’auteur peut utiliser n’importe quel procédé de communication ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00016",
+                      "ou de divulgation (écrit ou oral, téléphone, radio, réseaux, etc.).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("B) Une fausse information"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00017",
+                  "B) Une fausse information",
+                ),
+              ),
               _Paragraph(
-                "L’information doit être fausse. Deux hypothèses sont visées par le texte.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00018",
+                  "L’information doit être fausse. Deux hypothèses sont visées par le texte.",
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "1) Faire croire à une destruction/dégradation/détérioration dangereuse",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00019",
+                  "1) Faire croire à une destruction/dégradation/détérioration dangereuse",
+                ),
               ),
               _Paragraph(
-                "Il s’agit de faire croire qu’une destruction, une dégradation ou une détérioration dangereuse "
-                "pour les personnes va être ou a été commise.\n"
-                "Exemples : fausse alerte à la bombe dans un établissement scolaire, une gare ou un aéroport ; "
-                "appel anonyme faisant croire à un incendie criminel, etc.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00020",
+                      "Il s’agit de faire croire qu’une destruction, une dégradation ou une détérioration dangereuse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00021",
+                      "pour les personnes va être ou a été commise.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00022",
+                      "Exemples : fausse alerte à la bombe dans un établissement scolaire, une gare ou un aéroport ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00023",
+                      "appel anonyme faisant croire à un incendie criminel, etc.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Cette hypothèse correspond à "),
                   TextSpan(
-                    text: "l’alinéa 1er de l’article 322-14 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00024",
+                      "Cette hypothèse correspond à ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00025",
+                      "l’alinéa 1er de l’article 322-14 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -173,8 +277,16 @@ class FaussesAlertesPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " : l’information porte sur des faits passés ou à venir susceptibles de recevoir la qualification pénale "
-                        "de destructions, dégradations ou détériorations dangereuses pour les personnes.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                          "f00026",
+                          " : l’information porte sur des faits passés ou à venir susceptibles de recevoir la qualification pénale ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                          "f00027",
+                          "de destructions, dégradations ou détériorations dangereuses pour les personnes.",
+                        ),
                   ),
                 ],
               ),
@@ -182,26 +294,51 @@ class FaussesAlertesPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "2) Faire croire à un sinistre pour provoquer l’intervention des secours",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00028",
+                  "2) Faire croire à un sinistre pour provoquer l’intervention des secours",
+                ),
               ),
               _Paragraph(
-                "Il s’agit de faire croire à un sinistre (feu accidentel ou naturel, accident de la circulation, du travail, "
-                "de loisir, atteintes à l’environnement, etc.) dans le but de provoquer l’intervention inutile des secours.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00029",
+                      "Il s’agit de faire croire à un sinistre (feu accidentel ou naturel, accident de la circulation, du travail, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00030",
+                      "de loisir, atteintes à l’environnement, etc.) dans le but de provoquer l’intervention inutile des secours.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Cette hypothèse correspond à "),
                   TextSpan(
-                    text: "l’alinéa 2 de l’article 322-14 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00031",
+                      "Cette hypothèse correspond à ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00032",
+                      "l’alinéa 2 de l’article 322-14 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : le texte vise un « sinistre » et non des faits nécessairement susceptibles d’être qualifiés pénalement.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00033",
+                      " : le texte vise un « sinistre » et non des faits nécessairement susceptibles d’être qualifiés pénalement.",
+                    ),
                   ),
                 ],
               ),
@@ -212,22 +349,58 @@ class FaussesAlertesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+              "f00034",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance de la fausseté"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00035",
+                  "A) Connaissance de la fausseté",
+                ),
+              ),
               _Paragraph(
-                "L’intention coupable est requise : l’auteur doit avoir connaissance de la fausseté de l’information. "
-                "Le mobile est indifférent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00036",
+                      "L’intention coupable est requise : l’auteur doit avoir connaissance de la fausseté de l’information. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00037",
+                      "Le mobile est indifférent.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Volonté de faire croire"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00038",
+                  "B) Volonté de faire croire",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit vouloir faire croire à autrui :\n"
-                "• soit l’existence/la survenance d’une destruction, dégradation ou détérioration dangereuse pour les personnes ;\n"
-                "• soit la nécessité d’une intervention des secours (intervention inutile).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00039",
+                      "L’auteur doit vouloir faire croire à autrui :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00040",
+                      "• soit l’existence/la survenance d’une destruction, dégradation ou détérioration dangereuse pour les personnes ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00041",
+                      "• soit la nécessité d’une intervention des secours (intervention inutile).",
+                    ),
               ),
             ],
           ),
@@ -236,13 +409,21 @@ class FaussesAlertesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+              "f00042",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante n’est prévue par le texte.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00043",
+                  "Aucune circonstance aggravante n’est prévue par le texte.",
+                ),
               ),
             ],
           ),
@@ -251,51 +432,102 @@ class FaussesAlertesPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+              "f00044",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00045",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                    "f00046",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 322-14 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                    "f00047",
+                    "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                    "f00048",
+                    "article 322-14 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00049",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                    "f00050",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                    "f00051",
+                    "l’article 322-17 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00052",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                  "f00053",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               SizedBox(height: 6),
               _Paragraph(
-                "Complicité : OUI. Elle est punissable pour l’infraction consommée, si un fait de complicité "
-                "et l’intention de s’associer à l’auteur principal sont caractérisés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00054",
+                      "Complicité : OUI. Elle est punissable pour l’infraction consommée, si un fait de complicité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/fausses_alertes_contenu_page.dart",
+                      "f00055",
+                      "et l’intention de s’associer à l’auteur principal sont caractérisés.",
+                    ),
               ),
             ],
           ),
@@ -551,9 +783,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

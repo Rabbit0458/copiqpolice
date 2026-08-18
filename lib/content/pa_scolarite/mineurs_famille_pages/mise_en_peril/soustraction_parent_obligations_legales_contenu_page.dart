@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
   const PaSoustractionParentObligationsLegalesPage({super.key});
@@ -56,10 +57,18 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en péril",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+            "f00002",
+            "Mise en péril",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La soustraction d’un parent à ses obligations légales",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+              "f00003",
+              "La soustraction d’un parent à ses obligations légales",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, par le père ou la mère, de se soustraire, sans motif légitime, à ses obligations légales "
-                "au point de compromettre la santé, la sécurité, la moralité ou l’éducation de son enfant mineur, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00005",
+                      "Le fait, par le père ou la mère, de se soustraire, sans motif légitime, à ses obligations légales ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00006",
+                      "au point de compromettre la santé, la sécurité, la moralité ou l’éducation de son enfant mineur, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00007",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -103,22 +132,30 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00009",
+                    "Article 227-17 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la soustraction d’un parent à ses obligations légales.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime la soustraction d’un parent à ses obligations légales.",
+                  ),
                 ),
               ]),
             ],
@@ -128,47 +165,115 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Les personnes visées par l’infraction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00012",
+                  "A) Les personnes visées par l’infraction",
+                ),
+              ),
               _Paragraph(
-                "Deux conditions personnelles structurent l’infraction : une victime mineure et un auteur déterminé (le père ou la mère).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00013",
+                  "Deux conditions personnelles structurent l’infraction : une victime mineure et un auteur déterminé (le père ou la mère).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("• Une victime mineure"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00014",
+                  "• Une victime mineure",
+                ),
+              ),
               _Paragraph(
-                "La victime doit être un mineur, sans condition d’âge : toute personne âgée de moins de 18 ans est concernée.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00015",
+                  "La victime doit être un mineur, sans condition d’âge : toute personne âgée de moins de 18 ans est concernée.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("• L’auteur : le père ou la mère"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00016",
+                  "• L’auteur : le père ou la mère",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le texte vise exclusivement le père et la mère (à l’exclusion des autres ascendants). "
-                      "Aucune référence n’est faite à l’exercice de l’autorité parentale ou à la garde : "
-                      "c’est le lien de filiation (légitime, naturel ou adoptif) qui conditionne les poursuites. "
-                      "Ce que l’on réprime ici est une défaillance parentale.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                        "f00017",
+                        "Le texte vise exclusivement le père et la mère (à l’exclusion des autres ascendants). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                        "f00018",
+                        "Aucune référence n’est faite à l’exercice de l’autorité parentale ou à la garde : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                        "f00019",
+                        "c’est le lien de filiation (légitime, naturel ou adoptif) qui conditionne les poursuites. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                        "f00020",
+                        "Ce que l’on réprime ici est une défaillance parentale.",
+                      ),
                 ),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une soustraction aux obligations légales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00021",
+                  "B) Une soustraction aux obligations légales",
+                ),
+              ),
               _Paragraph(
-                "Le texte incrimine le fait de se soustraire aux obligations découlant de la qualité de père ou mère "
-                "et, notamment, aux devoirs liés à l’autorité parentale.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00022",
+                      "Le texte incrimine le fait de se soustraire aux obligations découlant de la qualité de père ou mère ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00023",
+                      "et, notamment, aux devoirs liés à l’autorité parentale.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Référence utile",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00024",
+                  "Référence utile",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text: "Article 371-1 du Code civil",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00025",
+                      "Article 371-1 du Code civil",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -176,57 +281,127 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " : l’autorité parentale appartient aux parents jusqu’à la majorité ou l’émancipation de l’enfant "
-                        "pour le protéger dans sa sécurité, sa santé et sa moralité, assurer son éducation et permettre son développement, "
-                        "dans le respect dû à sa personne. Elle s’exerce sans violences physiques ou psychologiques.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00026",
+                          " : l’autorité parentale appartient aux parents jusqu’à la majorité ou l’émancipation de l’enfant ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00027",
+                          "pour le protéger dans sa sécurité, sa santé et sa moralité, assurer son éducation et permettre son développement, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00028",
+                          "dans le respect dû à sa personne. Elle s’exerce sans violences physiques ou psychologiques.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Il n’est pas nécessaire que le parent ait quitté le domicile familial : ce qui est réprimé est un abandon moral "
-                "consistant à se soustraire à ses devoirs, même en étant physiquement présent.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00029",
+                      "Il n’est pas nécessaire que le parent ait quitté le domicile familial : ce qui est réprimé est un abandon moral ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00030",
+                      "consistant à se soustraire à ses devoirs, même en étant physiquement présent.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Exemples fréquents",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00031",
+                  "Exemples fréquents",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Peuvent caractériser l’abandon moral ou matériel : mauvais traitements, inconduite notoire, "
-                        "manque de direction nécessaire, défaut de soins.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00032",
+                          "Peuvent caractériser l’abandon moral ou matériel : mauvais traitements, inconduite notoire, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00033",
+                          "manque de direction nécessaire, défaut de soins.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Des conséquences éventuelles pour le mineur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00034",
+                  "C) Des conséquences éventuelles pour le mineur",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’infraction n’est constituée que si la soustraction est susceptible de ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00035",
+                    "L’infraction n’est constituée que si la soustraction est susceptible de ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "« compromettre la santé, la sécurité, la moralité ou l’éducation de l’enfant »",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00036",
+                    "« compromettre la santé, la sécurité, la moralité ou l’éducation de l’enfant »",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Les juges apprécient au cas par cas. Il n’est pas requis que la compromission soit irréversible : "
-                "le texte n’exige pas que le dommage se soit effectivement réalisé ; il suffit qu’il soit susceptible de se réaliser. "
-                "En revanche, la carence des parents doit être effective.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00037",
+                      "Les juges apprécient au cas par cas. Il n’est pas requis que la compromission soit irréversible : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00038",
+                      "le texte n’exige pas que le dommage se soit effectivement réalisé ; il suffit qu’il soit susceptible de se réaliser. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00039",
+                      "En revanche, la carence des parents doit être effective.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00040",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Carence effective exigée — "),
                   TextSpan(
-                    text: "Cass. crim., 11 juillet 1994",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00041",
+                      "Carence effective exigée — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00042",
+                      "Cass. crim., 11 juillet 1994",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -241,11 +416,23 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Père poursuivi pour avoir abandonné ses deux enfants (12 et 17 ans) sur une aire d’autoroute et avoir indiqué "
-                        "ne pas avoir eu l’intention de revenir les chercher — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00043",
+                          "Père poursuivi pour avoir abandonné ses deux enfants (12 et 17 ans) sur une aire d’autoroute et avoir indiqué ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00044",
+                          "ne pas avoir eu l’intention de revenir les chercher — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "C.A. Douai, 17 novembre 2004",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00045",
+                      "C.A. Douai, 17 novembre 2004",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -260,11 +447,23 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Père ayant conditionné psychologiquement ses enfants, sans scolarisation ni suivi médical (absence de vaccination), "
-                        "les maintenant hors circuit scolaire — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00046",
+                          "Père ayant conditionné psychologiquement ses enfants, sans scolarisation ni suivi médical (absence de vaccination), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00047",
+                          "les maintenant hors circuit scolaire — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "C.A. Paris, 30 juin 2006",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00048",
+                      "C.A. Paris, 30 juin 2006",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -276,44 +475,88 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Une absence de motif légitime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00049",
+                  "D) Une absence de motif légitime",
+                ),
+              ),
               _Paragraph(
-                "Les faits ne sont punissables que si le parent s’est soustrait sans motif légitime. "
-                "C’est au prévenu d’apporter la preuve d’un motif grave ; l’appréciation de la légitimité relève du juge.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00050",
+                      "Les faits ne sont punissables que si le parent s’est soustrait sans motif légitime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00051",
+                      "C’est au prévenu d’apporter la preuve d’un motif grave ; l’appréciation de la légitimité relève du juge.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Appréciation des juges",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00052",
+                  "Appréciation des juges",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les tribunaux retiennent généralement le motif légitime de manière restrictive :\n"
-                        "• Une demande en divorce ne constitue pas, en soi, un motif grave — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00053",
+                          "Les tribunaux retiennent généralement le motif légitime de manière restrictive :\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                          "f00054",
+                          "• Une demande en divorce ne constitue pas, en soi, un motif grave — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 30 mai 1967",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00055",
+                      "Cass. crim., 30 mai 1967",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        ".\n• L’incarcération peut constituer un motif légitime si le parent n’a pas cessé d’habiter au domicile conjugal avant et après — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00056",
+                      ".\n• L’incarcération peut constituer un motif légitime si le parent n’a pas cessé d’habiter au domicile conjugal avant et après — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 26 mars 1957",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00057",
+                      "Cass. crim., 26 mars 1957",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        ".\n• Les convictions religieuses n’excusent pas la carence parentale — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00058",
+                      ".\n• Les convictions religieuses n’excusent pas la carence parentale — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 11 juillet 1994",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00059",
+                      "Cass. crim., 11 juillet 1994",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -329,25 +572,48 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+              "f00060",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : le parent se soustrait volontairement à ses devoirs parentaux "
-                "avec la conscience que cette carence pourrait avoir des conséquences dommageables pour l’enfant.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00061",
+                      "Il s’agit d’une infraction intentionnelle : le parent se soustrait volontairement à ses devoirs parentaux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00062",
+                      "avec la conscience que cette carence pourrait avoir des conséquences dommageables pour l’enfant.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00063",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’intention repose sur la conscience du danger moral encouru par le mineur — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00064",
+                      "L’intention repose sur la conscience du danger moral encouru par le mineur — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 21 octobre 1998",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00065",
+                      "Cass. crim., 21 octobre 1998",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -363,44 +629,70 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+              "f00066",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-17 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00067",
+                    "Article 227-17 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Lorsque la soustraction a directement conduit à la commission, par le mineur, d’au moins un crime "
-                    "ou de plusieurs délits ayant donné lieu à une condamnation définitive.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00068",
+                      "Lorsque la soustraction a directement conduit à la commission, par le mineur, d’au moins un crime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00069",
+                      "ou de plusieurs délits ayant donné lieu à une condamnation définitive.",
+                    ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-17 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00070",
+                    "Article 227-17 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Lorsque l’auteur s’est rendu coupable, sur le même mineur ou au détriment de ce dernier, "
-                    "de délits prévus notamment par les articles 227-3, 227-4, 227-4-3, 227-5 à 227-7, 227-17-1 et 433-18-1 "
-                    "(dont la non-déclaration d’une naissance auprès de l’officier d’état civil).",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00071",
+                      "Lorsque l’auteur s’est rendu coupable, sur le même mineur ou au détriment de ce dernier, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00072",
+                      "de délits prévus notamment par les articles 227-3, 227-4, 227-4-3, 227-5 à 227-7, 227-17-1 et 433-18-1 ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                      "f00073",
+                      "(dont la non-déclaration d’une naissance auprès de l’officier d’état civil).",
+                    ),
               ),
             ],
           ),
@@ -409,92 +701,176 @@ class PaSoustractionParentObligationsLegalesPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+              "f00074",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00075",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Forme simple : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00076",
+                    "Forme simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00077",
+                    "2 ans d’emprisonnement et 30 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00078",
+                    "article 227-17 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Forme aggravée : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00079",
+                    "Forme aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-17 alinéas 2 et 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00080",
+                    "3 ans d’emprisonnement et 45 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00081",
+                    "article 227-17 alinéas 2 et 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00082",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité possible prévue par "),
                 TextSpan(
-                  text: "l’article 227-17-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " : amende selon "),
-                TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " et peines complémentaires prévues par "),
-                TextSpan(
-                  text: "l’article 131-39 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00083",
+                    "Responsabilité possible prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (dissolution, placement sous surveillance judiciaire, interdiction d’exercer, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00084",
+                    "l’article 227-17-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00085",
+                    " : amende selon ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00086",
+                    "l’article 131-38 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00087",
+                    " et peines complémentaires prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00088",
+                    "l’article 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00089",
+                    " (dissolution, placement sous surveillance judiciaire, interdiction d’exercer, etc.).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non prévue)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00090",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                  "f00091",
+                  "Tentative : NON (non prévue).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00092",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00093",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart",
+                    "f00094",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaConduiteVehiculesPolicePage extends StatelessWidget {
   const PaConduiteVehiculesPolicePage({super.key});
@@ -56,7 +57,11 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -74,7 +79,11 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La conduite des véhicules de police",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+              "f00002",
+              "La conduite des véhicules de police",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,53 +95,84 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
 
           // ✅ Références (élément légal en haut)
           _ConditionCard(
-            title: "I — Références & cadre légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+              "f00003",
+              "I — Références & cadre légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Souvent dans le cadre de l’urgence, les policiers ont un souci légitime d’intervenir vite. "
-                "Le Code de la route prévoit un droit de priorité spécial pour les véhicules de police, mais "
-                "ce droit est strictement encadré, limité et toujours soumis à la prudence.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00004",
+                      "Souvent dans le cadre de l’urgence, les policiers ont un souci légitime d’intervenir vite. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00005",
+                      "Le Code de la route prévoit un droit de priorité spécial pour les véhicules de police, mais ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00006",
+                      "ce droit est strictement encadré, limité et toujours soumis à la prudence.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 415-12 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00007",
+                    "Article R. 415-12 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : tout conducteur doit céder le passage aux véhicules d’intérêt général prioritaires annonçant leur approche par les avertisseurs spéciaux.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00008",
+                    " : tout conducteur doit céder le passage aux véhicules d’intérêt général prioritaires annonçant leur approche par les avertisseurs spéciaux.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 311-1 (6.5) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00009",
+                    "Article R. 311-1 (6.5) du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : liste des véhicules prioritaires, incluant les véhicules de police.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00010",
+                    " : liste des véhicules prioritaires, incluant les véhicules de police.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Avertisseurs spéciaux : "),
                 TextSpan(
-                  text: "articles R. 313-27 et R. 313-34 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00011",
+                    "Avertisseurs spéciaux : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00012",
+                    "articles R. 313-27 et R. 313-34 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -141,19 +181,29 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
                 title: "Nota",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Policiers adjoints : la conduite n’est possible que si ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00013",
+                      "Policiers adjoints : la conduite n’est possible que si ",
+                    ),
                   ),
                   TextSpan(
-                    text: "l’article 134-1 du R.G.E.P.N.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00014",
+                      "l’article 134-1 du R.G.E.P.N.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " est respecté (permis adapté + aptitudes testées par le service d’emploi).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00015",
+                      " est respecté (permis adapté + aptitudes testées par le service d’emploi).",
+                    ),
                   ),
                 ],
               ),
@@ -164,35 +214,80 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
 
           // Principe
           _ConditionCard(
-            title: "II — Principe : priorité, mais sous conditions",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+              "f00016",
+              "II — Principe : priorité, mais sous conditions",
+            ),
             cardColor: cardPrincipe,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’urgence n’est pas la norme : la majorité des déplacements (liaisons, transports, patrouilles, "
-                "rondes, escortes) s’effectue à allure normale.\n\n"
-                "La priorité n’est justifiée que par la nécessité de répondre à une situation déterminée et "
-                "elle est limitée dans le temps.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00017",
+                      "L’urgence n’est pas la norme : la majorité des déplacements (liaisons, transports, patrouilles, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00018",
+                      "rondes, escortes) s’effectue à allure normale.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00019",
+                      "La priorité n’est justifiée que par la nécessité de répondre à une situation déterminée et ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00020",
+                      "elle est limitée dans le temps.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Conditions cumulatives du droit de priorité"),
-              _BulletPoint(text: "Urgence caractérisée de la mission."),
-              _BulletPoint(
-                text:
-                    "Utilisation des avertisseurs sonores et lumineux spéciaux (pas un gyrophare « tableau de bord »).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00021",
+                  "Conditions cumulatives du droit de priorité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Respect des règles élémentaires de prudence (ex : marquer un temps d’arrêt avant un feu rouge).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00022",
+                  "Urgence caractérisée de la mission.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00023",
+                  "Utilisation des avertisseurs sonores et lumineux spéciaux (pas un gyrophare « tableau de bord »).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00024",
+                  "Respect des règles élémentaires de prudence (ex : marquer un temps d’arrêt avant un feu rouge).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00025",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La responsabilité individuelle du conducteur peut être retenue en cas d’inobservation des règles de prudence, avec sanctions possibles.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00026",
+                      "La responsabilité individuelle du conducteur peut être retenue en cas d’inobservation des règles de prudence, avec sanctions possibles.",
+                    ),
                   ),
                 ],
               ),
@@ -203,37 +298,49 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
 
           // Ceinture
           _ConditionCard(
-            title: "III — Ceinture de sécurité : règle + exception",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+              "f00027",
+              "III — Ceinture de sécurité : règle + exception",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Principe : port obligatoire de la ceinture pour tout conducteur ou passager. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00028",
+                    "Principe : port obligatoire de la ceinture pour tout conducteur ou passager. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 412-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00029",
+                    "article R. 412-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Exception : l’obligation disparaît en intervention d’urgence. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00030",
+                    "Exception : l’obligation disparaît en intervention d’urgence. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 412-1 (I, 3°) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00031",
+                    "article R. 412-1 (I, 3°) du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -242,8 +349,11 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
                 title: "Recommandation",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Même en intervention, il est recommandé de respecter autant que possible le principe général du port de la ceinture.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00032",
+                      "Même en intervention, il est recommandé de respecter autant que possible le principe général du port de la ceinture.",
+                    ),
                   ),
                 ],
               ),
@@ -254,38 +364,89 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
 
           // Urgence
           _ConditionCard(
-            title: "IV — La notion d’urgence (appréciation terrain)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+              "f00033",
+              "IV — La notion d’urgence (appréciation terrain)",
+            ),
             cardColor: cardUrgence,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention en urgence ne se justifie que si elle est susceptible d’apporter une réponse "
-                "efficace à un danger ou à une menace pesant sur la vie ou sur les biens d’autrui.\n\n"
-                "Le policier doit apprécier, au cas par cas, le caractère d’urgence et le degré de gravité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00034",
+                      "L’intervention en urgence ne se justifie que si elle est susceptible d’apporter une réponse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00035",
+                      "efficace à un danger ou à une menace pesant sur la vie ou sur les biens d’autrui.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00036",
+                      "Le policier doit apprécier, au cas par cas, le caractère d’urgence et le degré de gravité.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Exemples d’urgence"),
-              _BulletPoint(
-                text: "Personne en péril (ex : tentative de suicide).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00037",
+                  "Exemples d’urgence",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accident de la circulation nécessitant un balisage rapide pour la sécurité des usagers.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00038",
+                  "Personne en péril (ex : tentative de suicide).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00039",
+                  "Accident de la circulation nécessitant un balisage rapide pour la sécurité des usagers.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Exemple sans urgence (principe)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00040",
+                  "Exemple sans urgence (principe)",
+                ),
+              ),
               _Paragraph(
-                "Il n’y a pas urgence à se rendre sur les lieux d’un cambriolage aux seules fins de constatations.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00041",
+                  "Il n’y a pas urgence à se rendre sur les lieux d’un cambriolage aux seules fins de constatations.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Conduite à tenir",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00042",
+                  "Conduite à tenir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le franchissement d’un feu rouge fixe ou d’un STOP doit se faire avec la plus grande précaution, "
-                        "à une vitesse permettant l’arrêt immédiat en cas de danger.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                          "f00043",
+                          "Le franchissement d’un feu rouge fixe ou d’un STOP doit se faire avec la plus grande précaution, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                          "f00044",
+                          "à une vitesse permettant l’arrêt immédiat en cas de danger.",
+                        ),
                   ),
                 ],
               ),
@@ -296,64 +457,112 @@ class PaConduiteVehiculesPolicePage extends StatelessWidget {
 
           // État de nécessité
           _ConditionCard(
-            title: "V — L’état de nécessité (fait justificatif)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+              "f00045",
+              "V — L’état de nécessité (fait justificatif)",
+            ),
             cardColor: cardNecessite,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’état de nécessité, défini en droit pénal, peut justifier une infraction au Code de la route : ",
-                ),
-                TextSpan(
-                  text: "article 122-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00046",
+                    "L’état de nécessité, défini en droit pénal, peut justifier une infraction au Code de la route : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Il entraîne l’irresponsabilité pénale si les conditions sont réunies.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00047",
+                    "article 122-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                    "f00048",
+                    ". Il entraîne l’irresponsabilité pénale si les conditions sont réunies.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Conditions à réunir"),
-              _BulletPoint(
-                text:
-                    "Danger actuel ou imminent menaçant une personne ou un bien.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00049",
+                  "Conditions à réunir",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Nécessité, pour sauvegarder la personne/le bien, de commettre une infraction.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00050",
+                  "Danger actuel ou imminent menaçant une personne ou un bien.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Proportion entre les moyens employés et la gravité de la menace.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00051",
+                  "Nécessité, pour sauvegarder la personne/le bien, de commettre une infraction.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00052",
+                  "Proportion entre les moyens employés et la gravité de la menace.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point de vigilance",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00053",
+                  "Point de vigilance",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Il ne doit pas exister de faute antérieure de l’agent (ex : retard volontaire préalable).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00054",
+                      "Il ne doit pas exister de faute antérieure de l’agent (ex : retard volontaire préalable).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Même si l’état de nécessité exonère pénalement, la responsabilité civile de l’administration "
-                "reste engagée pour les dommages. Sur le plan administratif, une sanction peut aussi être envisagée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00055",
+                      "Même si l’état de nécessité exonère pénalement, la responsabilité civile de l’administration ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00056",
+                      "reste engagée pour les dommages. Sur le plan administratif, une sanction peut aussi être envisagée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Règle d’or",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                  "f00057",
+                  "Règle d’or",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Même en urgence, éviter les risques inconsidérés : la progression doit rester compatible avec la sécurité des occupants et des autres usagers.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart",
+                      "f00058",
+                      "Même en urgence, éviter les risques inconsidérés : la progression doit rester compatible avec la sécurité des occupants et des autres usagers.",
+                    ),
                   ),
                 ],
               ),

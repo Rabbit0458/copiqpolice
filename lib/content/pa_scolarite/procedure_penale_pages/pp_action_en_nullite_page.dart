@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPActionEnNullitePage extends StatelessWidget {
   const PaPPActionEnNullitePage({super.key});
@@ -32,10 +33,18 @@ class PaPPActionEnNullitePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Action en nullité',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+            "f00002",
+            'Action en nullité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,7 +58,11 @@ class PaPPActionEnNullitePage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Action en nullité des actes de procédure',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00003",
+              'Action en nullité des actes de procédure',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -60,8 +73,16 @@ class PaPPActionEnNullitePage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            'Conditions, acteurs et effets de l’annulation d’un acte de procédure, '
-            'selon qu’il existe ou non une information judiciaire.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00004",
+                  'Conditions, acteurs et effets de l’annulation d’un acte de procédure, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00005",
+                  'selon qu’il existe ou non une information judiciaire.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -72,48 +93,100 @@ class PaPPActionEnNullitePage extends StatelessWidget {
 
           const SizedBox(height: 18),
 
-          const _SubTitle('Chapitre 2 : L’annulation de l’acte'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00006",
+              'Chapitre 2 : L’annulation de l’acte',
+            ),
+          ),
 
-          const _Paragraph(
-            'L’action en nullité permet d’obtenir l’annulation d’un acte ou d’une pièce de procédure '
-            'entachée d’irrégularité. Elle ne se présente pas de la même façon selon que les faits '
-            'donnant lieu aux poursuites font ou non l’objet d’une information judiciaire. '
-            'Une fois la nullité prononcée, elle produit des effets sur la procédure elle-même, '
-            'mais entraîne également des conséquences pour les parties.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00007",
+                  'L’action en nullité permet d’obtenir l’annulation d’un acte ou d’une pièce de procédure ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00008",
+                  'entachée d’irrégularité. Elle ne se présente pas de la même façon selon que les faits ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00009",
+                  'donnant lieu aux poursuites font ou non l’objet d’une information judiciaire. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00010",
+                  'Une fois la nullité prononcée, elle produit des effets sur la procédure elle-même, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00011",
+                  'mais entraîne également des conséquences pour les parties.',
+                ),
           ),
 
           const SizedBox(height: 18),
 
           // ================= CARD 1 — ACTION EN NULLITÉ & INFORMATION =========
           _ConditionCard(
-            title:
-                '2.1 – L’action en nullité en présence d’une information judiciaire',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00012",
+              '2.1 – L’action en nullité en présence d’une information judiciaire',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Lorsque les faits donnant lieu à des poursuites font l’objet d’une information judiciaire, '
-                      "l'appréciation des nullités relève de la chambre de l'instruction. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00013",
+                        'Lorsque les faits donnant lieu à des poursuites font l’objet d’une information judiciaire, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00014",
+                        "l'appréciation des nullités relève de la chambre de l'instruction. ",
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 170 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00015",
+                    'Article 170 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' attribue compétence à cette juridiction pour apprécier les éventuelles nullités et précise les personnes pouvant la saisir.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00016",
+                    ' attribue compétence à cette juridiction pour apprécier les éventuelles nullités et précise les personnes pouvant la saisir.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Le prononcé de la nullité repose à la fois sur des règles légales et sur la jurisprudence '
-                'de la Cour de cassation. Il peut porter sur un acte déterminé ou sur une pièce de la procédure.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00017",
+                      'Le prononcé de la nullité repose à la fois sur des règles légales et sur la jurisprudence ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00018",
+                      'de la Cour de cassation. Il peut porter sur un acte déterminé ou sur une pièce de la procédure.',
+                    ),
               ),
             ],
           ),
@@ -122,45 +195,102 @@ class PaPPActionEnNullitePage extends StatelessWidget {
 
           // ================= CARD 2 — SAISINE DE LA CHAMBRE ===================
           _ConditionCard(
-            title: '2.1.1 – La saisine de la chambre de l’instruction',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00019",
+              '2.1.1 – La saisine de la chambre de l’instruction',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _SubTitle('2.1.1.1 – Les personnes habilitées à agir'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00020",
+                  '2.1.1.1 – Les personnes habilitées à agir',
+                ),
+              ),
 
-              const _SubTitle('2.1.1.1.1 – Le juge d’instruction'),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00021",
+                  '2.1.1.1.1 – Le juge d’instruction',
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Lorsqu’une information judiciaire est ouverte, s’il apparaît au juge d’instruction qu’un acte '
-                      'ou une pièce de la procédure est frappé de nullité, il saisit la chambre de l’instruction aux fins d’annulation, '
-                      'après avoir pris l’avis du procureur de la République et informé les parties. ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00022",
+                        'Lorsqu’une information judiciaire est ouverte, s’il apparaît au juge d’instruction qu’un acte ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00023",
+                        'ou une pièce de la procédure est frappé de nullité, il saisit la chambre de l’instruction aux fins d’annulation, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00024",
+                        'après avoir pris l’avis du procureur de la République et informé les parties. ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 173 alinéa 1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00025",
+                    'Article 173 alinéa 1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' vise les « actes ou pièces de la procédure », notamment lorsque l’acte se confond avec la pièce (par exemple une décision prescrivant une interception et le procès-verbal la transcrivant).',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00026",
+                    ' vise les « actes ou pièces de la procédure », notamment lorsque l’acte se confond avec la pièce (par exemple une décision prescrivant une interception et le procès-verbal la transcrivant).',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('2.1.1.1.2 – Le procureur de la République'),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00027",
+                  '2.1.1.1.2 – Le procureur de la République',
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'S’il estime qu’une nullité a été commise, le procureur de la République peut requérir du juge d’instruction '
-                      'la communication de la procédure en vue de sa transmission à la chambre de l’instruction. '
-                      'Il présente une requête aux fins d’annulation et en informe les parties. ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00028",
+                        'S’il estime qu’une nullité a été commise, le procureur de la République peut requérir du juge d’instruction ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00029",
+                        'la communication de la procédure en vue de sa transmission à la chambre de l’instruction. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00030",
+                        'Il présente une requête aux fins d’annulation et en informe les parties. ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 173 alinéa 2 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00031",
+                    'Article 173 alinéa 2 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -169,16 +299,38 @@ class PaPPActionEnNullitePage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('2.1.1.1.3 – Les parties'),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00032",
+                  '2.1.1.1.3 – Les parties',
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Les parties peuvent saisir la chambre de l’instruction par une requête motivée. À peine d’irrecevabilité, '
-                      'une copie de cette requête doit être adressée au juge d’instruction, qui transmet le dossier au président de la chambre de l’instruction. '
-                      'La requête doit faire l’objet d’une déclaration au greffe de la chambre. ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00033",
+                        'Les parties peuvent saisir la chambre de l’instruction par une requête motivée. À peine d’irrecevabilité, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00034",
+                        'une copie de cette requête doit être adressée au juge d’instruction, qui transmet le dossier au président de la chambre de l’instruction. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00035",
+                        'La requête doit faire l’objet d’une déclaration au greffe de la chambre. ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 173 alinéa 3 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00036",
+                    'Article 173 alinéa 3 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -187,15 +339,35 @@ class PaPPActionEnNullitePage extends StatelessWidget {
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Lorsque la détention provisoire se poursuit au-delà de trois mois après l’ouverture de l’information et que l’avis de fin d’information n’a pas été délivré, '
-                      'le président de la chambre de l’instruction, le ministère public ou les parties peuvent saisir la chambre afin qu’elle examine l’ensemble de la procédure. '
-                      'L’audience doit se tenir dans les huit jours de la demande, et les parties peuvent déposer des mémoires, contenant notamment des requêtes en annulation, '
-                      'au moins deux jours ouvrables avant l’audience (',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00037",
+                        'Lorsque la détention provisoire se poursuit au-delà de trois mois après l’ouverture de l’information et que l’avis de fin d’information n’a pas été délivré, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00038",
+                        'le président de la chambre de l’instruction, le ministère public ou les parties peuvent saisir la chambre afin qu’elle examine l’ensemble de la procédure. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00039",
+                        'L’audience doit se tenir dans les huit jours de la demande, et les parties peuvent déposer des mémoires, contenant notamment des requêtes en annulation, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00040",
+                        'au moins deux jours ouvrables avant l’audience (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 221-3 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00041",
+                    'Article 221-3 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
@@ -205,17 +377,33 @@ class PaPPActionEnNullitePage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle(
-                '2.1.1.1.4 – Le témoin assisté et la partie civile',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00042",
+                  '2.1.1.1.4 – Le témoin assisté et la partie civile',
+                ),
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Le témoin assisté peut également présenter une requête en annulation dans les mêmes formes que les parties, '
-                      'conformément à l’',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00043",
+                        'Le témoin assisté peut également présenter une requête en annulation dans les mêmes formes que les parties, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00044",
+                        'conformément à l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 173 alinéa 3 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00045",
+                    'Article 173 alinéa 3 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -223,11 +411,23 @@ class PaPPActionEnNullitePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      '. Sont toutefois exclus de l’action en nullité les actes susceptibles d’appel (par exemple certaines décisions en matière de détention provisoire ou de contrôle judiciaire), '
-                      'comme le précise l’',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00046",
+                        '. Sont toutefois exclus de l’action en nullité les actes susceptibles d’appel (par exemple certaines décisions en matière de détention provisoire ou de contrôle judiciaire), ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00047",
+                        'comme le précise l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 173 alinéa 4 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00048",
+                    'Article 173 alinéa 4 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -236,14 +436,26 @@ class PaPPActionEnNullitePage extends StatelessWidget {
                 TextSpan(text: '.'),
               ]),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Les délais pour agir sont encadrés : la personne mise en examen, le témoin assisté et la partie civile disposent notamment de délais de six mois pour certains actes antérieurs, '
-                      'en application de l’',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00049",
+                        'Les délais pour agir sont encadrés : la personne mise en examen, le témoin assisté et la partie civile disposent notamment de délais de six mois pour certains actes antérieurs, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00050",
+                        'en application de l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 173-1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00051",
+                    'Article 173-1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -253,18 +465,38 @@ class PaPPActionEnNullitePage extends StatelessWidget {
               ]),
 
               const SizedBox(height: 14),
-              const _SubTitle(
-                '2.1.1.1.2 – Réception de la requête et pouvoirs du président',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00052",
+                  '2.1.1.1.2 – Réception de la requête et pouvoirs du président',
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Dans les huit jours de la réception du dossier par le greffe, le président de la chambre de l’instruction peut, par ordonnance non susceptible de recours, '
-                      'déclarer la requête irrecevable dans certains cas (défaut de déclaration au greffe, acte susceptible d’appel, dépassement des délais, requête non motivée, etc.), '
-                      'en application de l’',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00053",
+                        'Dans les huit jours de la réception du dossier par le greffe, le président de la chambre de l’instruction peut, par ordonnance non susceptible de recours, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00054",
+                        'déclarer la requête irrecevable dans certains cas (défaut de déclaration au greffe, acte susceptible d’appel, dépassement des délais, requête non motivée, etc.), ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00055",
+                        'en application de l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 173 alinéa 5 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00056",
+                    'Article 173 alinéa 5 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
@@ -272,22 +504,40 @@ class PaPPActionEnNullitePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              const _IntroBullet(
-                text:
-                    'En cas d’irrecevabilité, le dossier est renvoyé au juge d’instruction.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00057",
+                  'En cas d’irrecevabilité, le dossier est renvoyé au juge d’instruction.',
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    'Si la requête est recevable, le président réunit la chambre de l’instruction et la procédure est transmise au procureur général pour mise en état.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00058",
+                  'Si la requête est recevable, le président réunit la chambre de l’instruction et la procédure est transmise au procureur général pour mise en état.',
+                ),
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Le délai de mise en état est de quarante-huit heures en matière de détention provisoire et de dix jours en toute autre matière, '
-                      'conformément à l’',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00059",
+                        'Le délai de mise en état est de quarante-huit heures en matière de détention provisoire et de dix jours en toute autre matière, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00060",
+                        'conformément à l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 194 alinéa 1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00061",
+                    'Article 194 alinéa 1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -301,18 +551,29 @@ class PaPPActionEnNullitePage extends StatelessWidget {
 
           // ================= CARD 3 — POUVOIRS DE LA CHAMBRE ==================
           _ConditionCard(
-            title: '2.1.1.1.2 – Les pouvoirs de la chambre de l’instruction',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00062",
+              '2.1.1.1.2 – Les pouvoirs de la chambre de l’instruction',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'La chambre de l’instruction doit statuer dans les deux mois à compter de la transmission du dossier au procureur général (',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00063",
+                    'La chambre de l’instruction doit statuer dans les deux mois à compter de la transmission du dossier au procureur général (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'Article 194 alinéa 2 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00064",
+                    'Article 194 alinéa 2 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -322,60 +583,117 @@ class PaPPActionEnNullitePage extends StatelessWidget {
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Une fois saisie, toutes les nullités doivent être invoquées devant elle, sans que cela empêche la chambre de les relever d’office (',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00065",
+                    'Une fois saisie, toutes les nullités doivent être invoquées devant elle, sans que cela empêche la chambre de les relever d’office (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'Article 174 alinéa 1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00066",
+                    'Article 174 alinéa 1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      '). À défaut, les parties ne sont plus recevables à les soulever, sauf si elles ne pouvaient en avoir connaissance.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00067",
+                    '). À défaut, les parties ne sont plus recevables à les soulever, sauf si elles ne pouvaient en avoir connaissance.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _SubTitle('Purge des nullités selon la nature des faits'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00068",
+                  'Purge des nullités selon la nature des faits',
+                ),
+              ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'En matière criminelle, l’ordonnance de mise en accusation devant la cour d’assises, lorsqu’elle devient définitive, '
-                      'couvre les vices de la procédure, sauf notamment lorsque : ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00069",
+                        'En matière criminelle, l’ordonnance de mise en accusation devant la cour d’assises, lorsqu’elle devient définitive, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00070",
+                        'couvre les vices de la procédure, sauf notamment lorsque : ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 181 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00071",
+                    'Article 181 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
-                TextSpan(text: ' le prévoit.'),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00072",
+                    ' le prévoit.',
+                  ),
+                ),
               ]),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
-                    'L’accusé n’a pas été régulièrement informé de sa mise en examen, de l’avis de fin d’information ou de l’ordonnance de mise en accusation, '
-                    'sauf manœuvre ou négligence de sa part.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00073",
+                      'L’accusé n’a pas été régulièrement informé de sa mise en examen, de l’avis de fin d’information ou de l’ordonnance de mise en accusation, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00074",
+                      'sauf manœuvre ou négligence de sa part.',
+                    ),
               ),
-              const _IntroBullet(
-                text:
-                    'Les parties n’ont pas pu avoir préalablement connaissance des vices de procédure.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00075",
+                  'Les parties n’ont pas pu avoir préalablement connaissance des vices de procédure.',
+                ),
               ),
 
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'En matière délictuelle, les parties ne sont plus recevables à présenter une requête en nullité à l’expiration d’un délai d’un mois si la personne mise en examen est détenue, '
-                      'ou de trois mois dans les autres cas, à compter de l’avis de fin d’information (',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00076",
+                        'En matière délictuelle, les parties ne sont plus recevables à présenter une requête en nullité à l’expiration d’un délai d’un mois si la personne mise en examen est détenue, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00077",
+                        'ou de trois mois dans les autres cas, à compter de l’avis de fin d’information (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 175 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00078",
+                    'Article 175 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -385,21 +703,36 @@ class PaPPActionEnNullitePage extends StatelessWidget {
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Les nullités de l’information sont également « purgées » par le renvoi ordonné par le juge d’instruction ou la chambre de l’instruction, '
-                      'sauf si les moyens de nullité ne pouvaient être connus avant la clôture (',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00079",
+                        'Les nullités de l’information sont également « purgées » par le renvoi ordonné par le juge d’instruction ou la chambre de l’instruction, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00080",
+                        'sauf si les moyens de nullité ne pouvaient être connus avant la clôture (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 385 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00081",
+                    'Article 385 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      '), disposition applicable aussi en matière contraventionnelle.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00082",
+                    '), disposition applicable aussi en matière contraventionnelle.',
+                  ),
                 ),
               ]),
             ],
@@ -409,20 +742,37 @@ class PaPPActionEnNullitePage extends StatelessWidget {
 
           // ================= CARD 4 — PRONONCÉ DE LA NULLITÉ ==================
           _ConditionCard(
-            title: '2.1.1.2 – Le prononcé de la nullité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00083",
+              '2.1.1.2 – Le prononcé de la nullité',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
-              _SubTitle('2.1.1.2.1 – Nullités d’ordre privé'),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00084",
+                  '2.1.1.2.1 – Nullités d’ordre privé',
+                ),
+              ),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les nullités dites « d’ordre privé » sont régies notamment par l’',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00085",
+                    'Les nullités dites « d’ordre privé » sont régies notamment par l’',
+                  ),
                 ),
                 TextSpan(
-                  text: 'Article 802 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00086",
+                    'Article 802 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -430,39 +780,91 @@ class PaPPActionEnNullitePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : en cas de violation des formes prescrites à peine de nullité ou d’inobservation d’une formalité substantielle, '
-                      'toute juridiction, y compris la Cour de cassation, ne peut prononcer la nullité que si l’irrégularité a eu pour effet de porter atteinte '
-                      'aux intérêts de la partie qu’elle concerne.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00087",
+                        ' : en cas de violation des formes prescrites à peine de nullité ou d’inobservation d’une formalité substantielle, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00088",
+                        'toute juridiction, y compris la Cour de cassation, ne peut prononcer la nullité que si l’irrégularité a eu pour effet de porter atteinte ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00089",
+                        'aux intérêts de la partie qu’elle concerne.',
+                      ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph(
-                'Sont visés à la fois les actes accomplis par le juge d’instruction et ceux réalisés en enquête par la police judiciaire, '
-                'dès lors qu’ils s’intègrent à la procédure d’instruction. L’Article 802 du Code de Procédure Pénale couvre les nullités textuelles '
-                'comme les nullités substantielles, mais ne s’applique pas aux nullités d’ordre public.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00090",
+                      'Sont visés à la fois les actes accomplis par le juge d’instruction et ceux réalisés en enquête par la police judiciaire, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00091",
+                      'dès lors qu’ils s’intègrent à la procédure d’instruction. L’Article 802 du Code de Procédure Pénale couvre les nullités textuelles ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00092",
+                      'comme les nullités substantielles, mais ne s’applique pas aux nullités d’ordre public.',
+                    ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle('2.1.1.2.2 – Nullités d’ordre public'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00093",
+                  '2.1.1.2.2 – Nullités d’ordre public',
+                ),
+              ),
               _Paragraph(
-                'Les nullités d’ordre public ne reposent pas sur un critère légal précis. Elles visent la protection de règles et de principes fondamentaux '
-                'qui s’imposent à tous et dont la violation est jugée inacceptable, indépendamment des intérêts privés des parties.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00094",
+                      'Les nullités d’ordre public ne reposent pas sur un critère légal précis. Elles visent la protection de règles et de principes fondamentaux ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00095",
+                      'qui s’imposent à tous et dont la violation est jugée inacceptable, indépendamment des intérêts privés des parties.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'La jurisprudence permet d’identifier certaines catégories de nullités d’ordre public, par exemple :',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00096",
+                  'La jurisprudence permet d’identifier certaines catégories de nullités d’ordre public, par exemple :',
+                ),
               ),
               _IntroBullet(
-                text:
-                    'Les règles relatives à l’organisation, la composition et les compétences des juridictions.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00097",
+                  'Les règles relatives à l’organisation, la composition et les compétences des juridictions.',
+                ),
               ),
               _IntroBullet(
-                text:
-                    'L’interdiction de confier une mission technique assimilable à une expertise à un officier de police judiciaire par voie de commission rogatoire.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00098",
+                  'L’interdiction de confier une mission technique assimilable à une expertise à un officier de police judiciaire par voie de commission rogatoire.',
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Il s’agit globalement de l’ensemble des règles qui garantissent le bon fonctionnement du système répressif et la protection des intérêts généraux de la société.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00099",
+                  'Il s’agit globalement de l’ensemble des règles qui garantissent le bon fonctionnement du système répressif et la protection des intérêts généraux de la société.',
+                ),
               ),
             ],
           ),
@@ -471,58 +873,92 @@ class PaPPActionEnNullitePage extends StatelessWidget {
 
           // ================= CARD 5 — SANS INFORMATION JUDICIAIRE =============
           _ConditionCard(
-            title:
-                '2.1.2 – Action en nullité sans information judiciaire (enquête, délit, contravention)',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00100",
+              '2.1.2 – Action en nullité sans information judiciaire (enquête, délit, contravention)',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Lorsque les faits poursuivis ne font pas l’objet d’une information judiciaire, en matière délictuelle, ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00101",
+                    'Lorsque les faits poursuivis ne font pas l’objet d’une information judiciaire, en matière délictuelle, ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’Article 385 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00102",
+                    'l’Article 385 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' confère compétence au tribunal correctionnel pour constater les nullités de la procédure.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00103",
+                    ' confère compétence au tribunal correctionnel pour constater les nullités de la procédure.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _IntroBullet(
-                text:
-                    'Le tribunal correctionnel peut constater toutes les nullités lorsqu’il est saisi par citation directe, comparution immédiate ou comparution différée.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                  "f00104",
+                  'Le tribunal correctionnel peut constater toutes les nullités lorsqu’il est saisi par citation directe, comparution immédiate ou comparution différée.',
+                ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'L’Article 385 du Code de Procédure Pénale pose également la règle selon laquelle « dans tous les cas, les exceptions de nullité doivent être présentées '
-                      'avant toute défense au fond ». En conséquence, la nullité ne peut pas être invoquée pour la première fois devant la cour d’appel ou la Cour de cassation.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00105",
+                        'L’Article 385 du Code de Procédure Pénale pose également la règle selon laquelle « dans tous les cas, les exceptions de nullité doivent être présentées ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                        "f00106",
+                        'avant toute défense au fond ». En conséquence, la nullité ne peut pas être invoquée pour la première fois devant la cour d’appel ou la Cour de cassation.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'En matière contraventionnelle, les mêmes principes s’appliquent : ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00107",
+                    'En matière contraventionnelle, les mêmes principes s’appliquent : ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’Article 522 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00108",
+                    'l’Article 522 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' attribue au tribunal de police la compétence pour constater les nullités des procédures dont il est saisi.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                    "f00109",
+                    ' attribue au tribunal de police la compétence pour constater les nullités des procédures dont il est saisi.',
+                  ),
                 ),
               ]),
             ],
@@ -530,16 +966,40 @@ class PaPPActionEnNullitePage extends StatelessWidget {
 
           const SizedBox(height: 20),
 
-          const _NotaBox(
-            title: 'À RETENIR',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+              "f00110",
+              'À RETENIR',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'L’action en nullité est un outil central de contrôle de la régularité de la procédure pénale. '
-                    'Selon qu’il existe ou non une information judiciaire, la compétence pour statuer relève soit de la chambre de l’instruction, '
-                    'soit des juridictions de jugement (tribunal correctionnel, tribunal de police). '
-                    'Les nullités d’ordre privé supposent un grief causé à la partie, alors que les nullités d’ordre public protègent des principes fondamentaux '
-                    'dont la violation est sanctionnée indépendamment des intérêts particuliers.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00111",
+                      'L’action en nullité est un outil central de contrôle de la régularité de la procédure pénale. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00112",
+                      'Selon qu’il existe ou non une information judiciaire, la compétence pour statuer relève soit de la chambre de l’instruction, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00113",
+                      'soit des juridictions de jugement (tribunal correctionnel, tribunal de police). ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00114",
+                      'Les nullités d’ordre privé supposent un grief causé à la partie, alors que les nullités d’ordre public protègent des principes fondamentaux ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart",
+                      "f00115",
+                      'dont la violation est sanctionnée indépendamment des intérêts particuliers.',
+                    ),
               ),
             ],
           ),

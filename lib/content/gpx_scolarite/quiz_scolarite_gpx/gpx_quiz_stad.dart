@@ -19,8 +19,10 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:copiqpolice/core/widgets/quiz_report_dialog.dart';
-import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppNotifier, AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
+    show AppNotifier, AppSettingsController;
 import 'package:copiqpolice/core/services/user_context_service.dart';
+
 // Utilitaire alpha (évite withOpacity déprécié)
 Color _opa(Color c, double a) => c.withValues(alpha: a);
 
@@ -3640,7 +3642,8 @@ class QuizStadGPX extends StatefulWidget {
   State<QuizStadGPX> createState() => _QuizStadGPXState();
 }
 
-class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin {
+class _QuizStadGPXState extends State<QuizStadGPX>
+    with TickerProviderStateMixin {
   // Page & data
   late final PageController _page;
   late math.Random _rng;
@@ -3716,7 +3719,6 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
     super.dispose();
   }
 
-
   // ==================================================================
   // INTRO PREFERENCE
   // ==================================================================
@@ -3767,10 +3769,11 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
           .insert({
             'uid': widget.uid,
             'email': widget.email,
-            
+
             'grade': UserContextService.I.trackOrDefault,
             'track': UserContextService.I.trackOrDefault,
-            'mode': UserContextService.I.modeOrDefault,'module_name': 'Crimes & délits contre les biens',
+            'mode': UserContextService.I.modeOrDefault,
+            'module_name': 'Crimes & délits contre les biens',
             'quiz_name': 'Atteintes aux STAD',
             'score': 0,
             'total_questions': _qs.length,
@@ -3821,25 +3824,13 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
   /// existe, du geste retour système — sans quoi celui-ci contournerait la
   /// confirmation.
   Future<void> _fermerQuiz() async {
-    if (_sortieEnCours) return;
-    _sortieEnCours = true;
-    try {
-      // Rien n'est engagé avant le choix du niveau : on sort sans demander.
-      if (!_hasQuiz) {
-        if (mounted) _quitterEcran();
-        return;
-      }
-      final confirme = await _confirmerSortie(
-        titre: 'Quitter le quiz ?',
-        actionLabel: 'Quitter',
-      );
-      if (!confirme || !mounted) return;
-      await _updateHistoryOnFinish();
-      if (!mounted) return;
-      _quitterEcran();
-    } finally {
-      _sortieEnCours = false;
+    // La croix et « Mettre fin » partagent strictement la même clôture :
+    // confirmation, sauvegarde Supabase, calcul du score et écran de résultat.
+    if (!_hasQuiz) {
+      if (mounted) _quitterEcran();
+      return;
     }
+    await _endQuizNow();
   }
 
   /// Sortie effective de l'écran.
@@ -3881,7 +3872,8 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
             child: _ConfirmCard(
               isDark: isDark,
               titre: titre,
-              message: 'Tes réponses déjà validées sont enregistrées, et ton '
+              message:
+                  'Tes réponses déjà validées sont enregistrées, et ton '
                   'score sera calculé sur cette base.',
               actionLabel: actionLabel,
               onConfirmer: () => Navigator.of(ctx).pop(true),
@@ -3893,9 +3885,10 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
       transitionBuilder: (_, anim, __, child) => FadeTransition(
         opacity: CurvedAnimation(parent: anim, curve: Curves.easeOutCubic),
         child: ScaleTransition(
-          scale: Tween(begin: .96, end: 1.0)
-              .chain(CurveTween(curve: Curves.easeOutBack))
-              .animate(anim),
+          scale: Tween(
+            begin: .96,
+            end: 1.0,
+          ).chain(CurveTween(curve: Curves.easeOutBack)).animate(anim),
           child: child,
         ),
       ),
@@ -3934,8 +3927,9 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
       await _sb.from('quiz_stad').insert({
         'user_uid': widget.uid,
         'email': widget.email,
-        
-            'grade': UserContextService.I.trackOrDefault,'question': question,
+
+        'grade': UserContextService.I.trackOrDefault,
+        'question': question,
         'user_answer': userAnswer,
         'correct_answer': correctAnswer,
         'is_correct': isCorrect,
@@ -3979,7 +3973,10 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
     if (_hideIntroForever) {
       await _doStartQuiz();
     } else {
-      setState(() { _showIntro = true; _showSplash = false; });
+      setState(() {
+        _showIntro = true;
+        _showSplash = false;
+      });
     }
   }
 
@@ -4126,7 +4123,6 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
     );
   }
 
-
   // ==================================================================
   // UI
   // ==================================================================
@@ -4150,13 +4146,12 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
         const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
-          value: (isDark
-                  ? SystemUiOverlayStyle.light
-                  : SystemUiOverlayStyle.dark)
-              .copyWith(
-                systemNavigationBarColor: Colors.transparent,
-                systemNavigationBarDividerColor: Colors.transparent,
-              ),
+          value:
+              (isDark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark)
+                  .copyWith(
+                    systemNavigationBarColor: Colors.transparent,
+                    systemNavigationBarDividerColor: Colors.transparent,
+                  ),
           child: Theme(
             data: base.copyWith(
               scaffoldBackgroundColor: bg,
@@ -4173,189 +4168,211 @@ class _QuizStadGPXState extends State<QuizStadGPX> with TickerProviderStateMixin
               children: [
                 Positioned.fill(child: _QuizBackdrop(isDark: isDark)),
                 Scaffold(
-              backgroundColor: Colors.transparent,
-              extendBody: true,
-              extendBodyBehindAppBar: _showSplash,
-              appBar: AppBar(
-                backgroundColor: Colors.transparent,
-                elevation: 0,
-                scrolledUnderElevation: 0,
-                leading: IconButton(
-                  icon: Icon(Icons.close_rounded, color: textCol),
-                  onPressed: _fermerQuiz,
-                  tooltip: 'Fermer',
-                ),
-                actions: [
-                  IconButton(
-                    tooltip: 'Signaler',
-                    onPressed: (!_showSplash && _hasQuiz)
-                        ? () => _openReportDialog(isDark: isDark)
-                        : null,
-                    icon: Icon(
-                      Icons.flag_outlined,
-                      color: (!_showSplash && _hasQuiz)
-                          ? textCol
-                          : _opa(textCol, .35),
+                  backgroundColor: Colors.transparent,
+                  extendBody: true,
+                  extendBodyBehindAppBar: _showSplash,
+                  appBar: AppBar(
+                    backgroundColor: Colors.transparent,
+                    elevation: 0,
+                    scrolledUnderElevation: 0,
+                    leading: IconButton(
+                      icon: Icon(Icons.close_rounded, color: textCol),
+                      onPressed: _fermerQuiz,
+                      tooltip: 'Fermer',
                     ),
+                    actions: [
+                      IconButton(
+                        tooltip: 'Signaler',
+                        onPressed: (!_showSplash && _hasQuiz)
+                            ? () => _openReportDialog(isDark: isDark)
+                            : null,
+                        icon: Icon(
+                          Icons.flag_outlined,
+                          color: (!_showSplash && _hasQuiz)
+                              ? textCol
+                              : _opa(textCol, .35),
+                        ),
+                      ),
+                      const SizedBox(width: 6),
+                    ],
                   ),
-                  const SizedBox(width: 6),
-                ],
-              ),
-              body: SafeArea(
-                top: false,
-                child: LayoutBuilder(
-                  builder: (context, _) {
-
-                    return Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        // Masquée à la source plutôt que recouverte : on ne
-                        // construit pas une interface pour la dissimuler.
-                          if (!_showSplash)
-                        Column(
+                  body: SafeArea(
+                    top: false,
+                    child: LayoutBuilder(
+                      builder: (context, _) {
+                        return Stack(
+                          clipBehavior: Clip.none,
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
-                              child: _TopProgressBar(
-                                index: _qsSafeLength == 0 ? 0 : _index,
-                                total: _qsSafeLength == 0 ? 1 : _qs.length,
-                                accent: isDark ? _Brand.white : _Brand.accent,
-                              ),
-                            ),
-                            Expanded(
-                              child: PageView.builder(
-                                controller: _page,
-                                physics: const NeverScrollableScrollPhysics(),
-                                itemCount: _qsSafeLength == 0 ? 1 : _qs.length,
-                                itemBuilder: (_, i) {
-                                  if (_qsSafeLength == 0) {
-                                    return const Center(
-                                      child: Text(
-                                        'Sélectionne une difficulté pour commencer.',
-                                      ),
-                                    );
-                                  }
-                                  final q = _qs[i];
-                                  final opts = _opts[i];
-
-                                  final bool animVisible =
-                                      i == _index && _validated;
-
-                                  // La réserve ajoutait jusqu'à 240 px de vide sous la carte pour
-// loger la croix flottante. Le feedback vivant désormais dans le
-// bandeau, seule la barre de boutons est à compenser.
-final double bottomInsetForThisPage = bottomBarReserved;
-
-                                  return Padding(
+                            // Masquée à la source plutôt que recouverte : on ne
+                            // construit pas une interface pour la dissimuler.
+                            if (!_showSplash)
+                              Column(
+                                children: [
+                                  Padding(
                                     padding: const EdgeInsets.fromLTRB(
+                                      20,
+                                      0,
+                                      20,
+                                      8,
+                                    ),
+                                    child: _TopProgressBar(
+                                      index: _qsSafeLength == 0 ? 0 : _index,
+                                      total: _qsSafeLength == 0
+                                          ? 1
+                                          : _qs.length,
+                                      accent: isDark
+                                          ? _Brand.white
+                                          : _Brand.accent,
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: PageView.builder(
+                                      controller: _page,
+                                      physics:
+                                          const NeverScrollableScrollPhysics(),
+                                      itemCount: _qsSafeLength == 0
+                                          ? 1
+                                          : _qs.length,
+                                      itemBuilder: (_, i) {
+                                        if (_qsSafeLength == 0) {
+                                          return const Center(
+                                            child: Text(
+                                              'Sélectionne une difficulté pour commencer.',
+                                            ),
+                                          );
+                                        }
+                                        final q = _qs[i];
+                                        final opts = _opts[i];
+
+                                        final bool animVisible =
+                                            i == _index && _validated;
+
+                                        // La réserve ajoutait jusqu'à 240 px de vide sous la carte pour
+                                        // loger la croix flottante. Le feedback vivant désormais dans le
+                                        // bandeau, seule la barre de boutons est à compenser.
+                                        final double bottomInsetForThisPage =
+                                            bottomBarReserved;
+
+                                        return Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                            20,
+                                            8,
+                                            20,
+                                            0,
+                                          ),
+                                          child: KeyedSubtree(
+                                            key: ValueKey('page_$i'),
+                                            child: _QuestionCard(
+                                              question: q,
+                                              options: opts,
+                                              selected: i == _index
+                                                  ? _currentChoice
+                                                  : null,
+                                              onSelect: _select,
+                                              locked: _validated,
+                                              showOutcome: animVisible,
+                                              isCorrect: _isCorrect,
+                                              estActive: i == _index,
+                                              pulse: _pulseCtrl,
+                                              bottomSafeInset:
+                                                  bottomInsetForThisPage,
+                                            ),
+                                          ),
+                                        );
+                                      },
+                                    ),
+                                  ),
+                                  SafeArea(
+                                    top: false,
+                                    minimum: const EdgeInsets.fromLTRB(
                                       20,
                                       8,
                                       20,
-                                      0,
+                                      16,
                                     ),
-                                    child: KeyedSubtree(
-                                      key: ValueKey('page_$i'),
-                                      child: _QuestionCard(
-                                        question: q,
-                                        options: opts,
-                                        selected: i == _index
-                                            ? _currentChoice
-                                            : null,
-                                        onSelect: _select,
-                                        locked: _validated,
-                                        showOutcome: animVisible,
-                                        isCorrect: _isCorrect,
-                                        estActive: i == _index,
-                                        pulse: _pulseCtrl,
-                                        bottomSafeInset: bottomInsetForThisPage,
-                                      ),
-                                    ),
-                                  );
-                                },
-                              ),
-                            ),
-                            SafeArea(
-                              top: false,
-                              minimum: const EdgeInsets.fromLTRB(20, 8, 20, 16),
-                              child: Row(
-                                children: [
-                                  // Bouton principal (Valider / Suivant / Terminer)
-                                  Expanded(
-                                    child: SizedBox(
-                                      height: kButtonHeight,
-                                      child: _PrimaryButton(
-                                        label: !_validated
-                                            ? 'Valider'
-                                            : (_index ==
-                                                      ((_qsSafeLength == 0
-                                                              ? 1
-                                                              : _qs.length) -
-                                                          1)
-                                                  ? 'Terminer'
-                                                  : 'Suivant'),
-                                        onTap: _qsSafeLength == 0
-                                            ? null
-                                            : (!_validated
-                                                  ? (_currentChoice == null
-                                                        ? null
-                                                        : _validate)
-                                                  : _next),
-                                      ),
+                                    child: Row(
+                                      children: [
+                                        // Bouton principal (Valider / Suivant / Terminer)
+                                        Expanded(
+                                          child: SizedBox(
+                                            height: kButtonHeight,
+                                            child: _PrimaryButton(
+                                              label: !_validated
+                                                  ? 'Valider'
+                                                  : (_index ==
+                                                            ((_qsSafeLength == 0
+                                                                    ? 1
+                                                                    : _qs.length) -
+                                                                1)
+                                                        ? 'Terminer'
+                                                        : 'Suivant'),
+                                              onTap: _qsSafeLength == 0
+                                                  ? null
+                                                  : (!_validated
+                                                        ? (_currentChoice ==
+                                                                  null
+                                                              ? null
+                                                              : _validate)
+                                                        : _next),
+                                            ),
+                                          ),
+                                        ),
+
+                                        // Bouton rouge "Mettre fin"
+                                        if (_qsSafeLength != 0) ...[
+                                          const SizedBox(width: 12),
+                                          SizedBox(
+                                            height: kButtonHeight,
+                                            child: _DangerButton(
+                                              label: 'Mettre fin',
+                                              // dispo dès que la série est lancée
+                                              onTap: _endQuizNow,
+                                            ),
+                                          ),
+                                        ],
+                                      ],
                                     ),
                                   ),
-
-                                  // Bouton rouge "Mettre fin"
-                                  if (_qsSafeLength != 0) ...[
-                                    const SizedBox(width: 12),
-                                    SizedBox(
-                                      height: kButtonHeight,
-                                      child: _DangerButton(
-                                        label: 'Mettre fin',
-                                        // dispo dès que la série est lancée
-                                        onTap: _endQuizNow,
-                                      ),
-                                    ),
-                                  ],
                                 ],
                               ),
-                            ),
+
+                            // L'overlay de feedback a été retiré : il se superposait au bandeau
+                            // d'explication dès que l'énoncé était long. L'animation vit
+                            // maintenant dans `_OutcomeIcon`, bornée par le bandeau.
+                            if (_showIntro)
+                              _IntroSplash(
+                                isDark: isDark,
+                                hideForever: _hideIntroForever,
+                                onChangedHideForever: _saveIntroPreference,
+                                onStart: () async {
+                                  await _doStartQuiz();
+                                },
+                                icon: Icons.computer_rounded,
+                                title: 'STAD',
+                                description:
+                                    'Maîtrise les infractions relatives aux Systèmes de Traitement Automatisé de Données : accès frauduleux, entrave et atteintes aux systèmes.',
+                                timerText: '30 secondes par question',
+                                historyText:
+                                    'Tes résultats sont sauvegardés pour suivre ta progression',
+                              ),
+                            if (_showSplash)
+                              _DifficultySplash(
+                                fade: _splashFade,
+                                isDark: isDark,
+                                selected: _selectedDifficulty,
+                                onSelect: (d) => setState(() {
+                                  _selectedDifficulty = d;
+                                  _mixMode = false;
+                                }),
+                                onStart: () => _startQuiz(mix: false),
+                                onStartRandom: () => _startQuiz(mix: true),
+                              ),
                           ],
-                        ),
-
-                        // L'overlay de feedback a été retiré : il se superposait au bandeau
-                          // d'explication dès que l'énoncé était long. L'animation vit
-                          // maintenant dans `_OutcomeIcon`, bornée par le bandeau.
-
-                        if (_showIntro)
-                          _IntroSplash(
-                            isDark: isDark,
-                            hideForever: _hideIntroForever,
-                            onChangedHideForever: _saveIntroPreference,
-                            onStart: () async { await _doStartQuiz(); },
-                            icon: Icons.computer_rounded,
-                            title: 'STAD',
-                            description: 'Maîtrise les infractions relatives aux Systèmes de Traitement Automatisé de Données : accès frauduleux, entrave et atteintes aux systèmes.',
-                            timerText: '30 secondes par question',
-                            historyText: 'Tes résultats sont sauvegardés pour suivre ta progression',
-                          ),
-                        if (_showSplash)
-                          _DifficultySplash(
-                            fade: _splashFade,
-                            isDark: isDark,
-                            selected: _selectedDifficulty,
-                            onSelect: (d) => setState(() {
-                              _selectedDifficulty = d;
-                              _mixMode = false;
-                            }),
-                            onStart: () => _startQuiz(mix: false),
-                            onStartRandom: () => _startQuiz(mix: true),
-                          ),
-                      ],
-                    );
-                  },
+                        );
+                      },
+                    ),
+                  ),
                 ),
-              ),
-            ),
               ],
             ),
           ),
@@ -4601,10 +4618,12 @@ class _QuestionCardState extends State<_QuestionCard>
   static const int _msElement = 420;
   static const int _msDecalage = 130;
 
-  int get _nbElements => 1 + (_afficheSousTitre ? 1 : 0) + widget.options.length;
+  int get _nbElements =>
+      1 + (_afficheSousTitre ? 1 : 0) + widget.options.length;
 
   /// Le sous-titre compte comme un élément de la séquence quand il est affiché.
-  bool get _afficheSousTitre => (widget.question.sub?.trim().isNotEmpty ?? false);
+  bool get _afficheSousTitre =>
+      (widget.question.sub?.trim().isNotEmpty ?? false);
 
   int get _msTotal => _msDecalage * (_nbElements - 1) + _msElement;
 
@@ -4759,25 +4778,24 @@ class _QuestionCardState extends State<_QuestionCard>
           _ElementCascade(
             animation: _fenetre(rangCascade++),
             child: Text(
-            enonce,
-            style: _Brand.h1(context).copyWith(
-              color: textCol,
-              fontSize: _tailleTitre(enonce),
+              enonce,
+              style: _Brand.h1(
+                context,
+              ).copyWith(color: textCol, fontSize: _tailleTitre(enonce)),
             ),
-          ),
           ),
           if (widget.question.sub != null) ...[
             const SizedBox(height: 6),
             _ElementCascade(
               animation: _fenetre(rangCascade++),
               child: Text(
-              widget.question.sub!,
-              style: TextStyle(
-                color: textCol.withAlpha(180),
-                fontWeight: FontWeight.w600,
-                decoration: TextDecoration.none,
+                widget.question.sub!,
+                style: TextStyle(
+                  color: textCol.withAlpha(180),
+                  fontWeight: FontWeight.w600,
+                  decoration: TextDecoration.none,
+                ),
               ),
-            ),
             ),
           ],
           const SizedBox(height: 16),
@@ -4785,22 +4803,24 @@ class _QuestionCardState extends State<_QuestionCard>
           // Options
           ...widget.options.map((o) {
             final isSel = widget.selected == o;
-            final correctShown = widget.showOutcome && o == widget.question.answer;
-            final wrongShown = widget.showOutcome && isSel && o != widget.question.answer;
+            final correctShown =
+                widget.showOutcome && o == widget.question.answer;
+            final wrongShown =
+                widget.showOutcome && isSel && o != widget.question.answer;
 
             return _ElementCascade(
               animation: _fenetre(rangCascade++),
               child: Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: _OptionTile(
-                label: o,
-                selected: isSel,
-                locked: widget.locked,
-                correct: correctShown,
-                wrong: wrongShown,
-                onTap: () => widget.onSelect(o),
+                padding: const EdgeInsets.only(bottom: 12),
+                child: _OptionTile(
+                  label: o,
+                  selected: isSel,
+                  locked: widget.locked,
+                  correct: correctShown,
+                  wrong: wrongShown,
+                  onTap: () => widget.onSelect(o),
+                ),
               ),
-            ),
             );
           }),
 
@@ -5079,7 +5099,6 @@ class _PrimaryButton extends StatelessWidget {
 // vit désormais dans `_OutcomeIcon`, à l'intérieur du bandeau d'explication.
 // `_Star` est conservé, il sert aux étincelles.
 
-
 class _FeedbackStrokeDraw extends StatelessWidget {
   final AnimationController controller;
   final bool good;
@@ -5190,7 +5209,6 @@ class _StrokePainter extends CustomPainter {
   bool shouldRepaint(covariant _StrokePainter old) =>
       old.t != t || old.color != color || old.good != good;
 }
-
 
 class _Star extends StatelessWidget {
   final Color color;
@@ -5606,26 +5624,26 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         _ElementCascade(
                           animation: _fenetre(_rangTitre),
                           child: Text(
-                          'Sélectionne le niveau de difficulté',
-                          textAlign: TextAlign.center,
-                          style: _Brand.h1(
-                            context,
-                          ).copyWith(color: textMain, fontSize: 24),
-                        ),
+                            'Sélectionne le niveau de difficulté',
+                            textAlign: TextAlign.center,
+                            style: _Brand.h1(
+                              context,
+                            ).copyWith(color: textMain, fontSize: 24),
+                          ),
                         ),
                         const SizedBox(height: 8),
                         _ElementCascade(
                           animation: _fenetre(_rangSousTitre),
                           child: Text(
-                          'Nouvelles questions à chaque partie.',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: sub,
-                            fontWeight: FontWeight.w600,
-                            height: 1.3,
-                            decoration: TextDecoration.none,
+                            'Nouvelles questions à chaque partie.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: sub,
+                              fontWeight: FontWeight.w600,
+                              height: 1.3,
+                              decoration: TextDecoration.none,
+                            ),
                           ),
-                        ),
                         ),
                         const SizedBox(height: 20),
 
@@ -5641,13 +5659,13 @@ class _DifficultySplashState extends State<_DifficultySplash>
                               _ElementCascade(
                                 animation: _fenetre(_rangFacile),
                                 child: _LevelCard(
-                                label: 'Facile',
-                                icon: Icons.eco_rounded,
-                                tint: const Color(0xFF22C55E),
-                                active: widget.selected == 'Facile',
-                                onTap: () => widget.onSelect('Facile'),
-                                isDark: isDark,
-                              ),
+                                  label: 'Facile',
+                                  icon: Icons.eco_rounded,
+                                  tint: const Color(0xFF22C55E),
+                                  active: widget.selected == 'Facile',
+                                  onTap: () => widget.onSelect('Facile'),
+                                  isDark: isDark,
+                                ),
                               ),
                               _LevelCard(
                                 label: 'Moyenne',
@@ -5660,13 +5678,13 @@ class _DifficultySplashState extends State<_DifficultySplash>
                               _ElementCascade(
                                 animation: _fenetre(_rangDifficile),
                                 child: _LevelCard(
-                                label: 'Difficile',
-                                icon: Icons.emoji_events_rounded,
-                                tint: const Color(0xFFEF4444),
-                                active: widget.selected == 'Difficile',
-                                onTap: () => widget.onSelect('Difficile'),
-                                isDark: isDark,
-                              ),
+                                  label: 'Difficile',
+                                  icon: Icons.emoji_events_rounded,
+                                  tint: const Color(0xFFEF4444),
+                                  active: widget.selected == 'Difficile',
+                                  onTap: () => widget.onSelect('Difficile'),
+                                  isDark: isDark,
+                                ),
                               ),
                             ];
 
@@ -5739,33 +5757,33 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         _ElementCascade(
                           animation: _fenetre(_rangMelanger),
                           child: SizedBox(
-                          height: 56,
-                          width: double.infinity,
-                          child: OutlinedButton.icon(
-                            onPressed: widget.onStartRandom,
-                            icon: const Icon(Icons.shuffle_rounded, size: 20),
-                            label: const Text('Mélanger les 3 niveaux'),
-                            style: OutlinedButton.styleFrom(
-                              foregroundColor: isDark
-                                  ? Colors.white
-                                  : _Brand.textDark,
-                              side: BorderSide(
-                                color: isDark
-                                    ? Colors.white.withAlpha(160)
-                                    : _Brand.textDark.withAlpha(160),
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(28),
-                              ),
-                              textStyle: const TextStyle(
-                                fontFamily: 'InstrumentSans',
-                                fontWeight: FontWeight.w800,
-                                fontSize: 16,
-                                decoration: TextDecoration.none,
+                            height: 56,
+                            width: double.infinity,
+                            child: OutlinedButton.icon(
+                              onPressed: widget.onStartRandom,
+                              icon: const Icon(Icons.shuffle_rounded, size: 20),
+                              label: const Text('Mélanger les 3 niveaux'),
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: isDark
+                                    ? Colors.white
+                                    : _Brand.textDark,
+                                side: BorderSide(
+                                  color: isDark
+                                      ? Colors.white.withAlpha(160)
+                                      : _Brand.textDark.withAlpha(160),
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(28),
+                                ),
+                                textStyle: const TextStyle(
+                                  fontFamily: 'InstrumentSans',
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 16,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
                           ),
-                        ),
                         ),
                       ],
                     ),
@@ -5782,7 +5800,6 @@ class _DifficultySplashState extends State<_DifficultySplash>
 
 // `_AnimatedBackground` supprimé : dégradé propre au splash, remplacé par le
 // `_QuizBackdrop` de la page. Un seul fond pour tout l'écran.
-
 
 class _Halo extends StatelessWidget {
   final Color color;
@@ -5835,6 +5852,7 @@ class _Halo extends StatelessWidget {
 
 class _LevelCard extends StatelessWidget {
   final String label;
+
   /// Icône du niveau. Remplace un emoji, dont le dessin dépend de la police
   /// système et dont la couleur n'est pas contrôlable.
   final IconData icon;
@@ -5860,94 +5878,90 @@ class _LevelCard extends StatelessWidget {
     // faisait osciller de ±2 px a été retiré : sur trois cartes à
     // comparer, ce balancement désalignait les bords en permanence.
     return AnimatedScale(
-            duration: const Duration(milliseconds: 180),
-            scale: active ? 1.02 : 1.0,
-            curve: Curves.easeOutCubic,
-            child: InkWell(
-              onTap: onTap,
-              borderRadius: BorderRadius.circular(20),
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
-                height: 112,
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(
-                  color: _opa(tint, isDark
-                      ? (active ? .22 : .13)
-                      : (active ? .18 : .10)),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: active ? tint : track,
-                    width: active ? 2 : 1,
-                  ),
-                  boxShadow: [
-                    if (!isDark)
-                      BoxShadow(
-                        color: tint.withValues(alpha: .18),
-                        blurRadius: 18,
-                        offset: const Offset(0, 8),
-                      ),
-                  ],
+      duration: const Duration(milliseconds: 180),
+      scale: active ? 1.02 : 1.0,
+      curve: Curves.easeOutCubic,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 220),
+          curve: Curves.easeOutCubic,
+          height: 112,
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          decoration: BoxDecoration(
+            color: _opa(
+              tint,
+              isDark ? (active ? .22 : .13) : (active ? .18 : .10),
+            ),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: active ? tint : track,
+              width: active ? 2 : 1,
+            ),
+            boxShadow: [
+              if (!isDark)
+                BoxShadow(
+                  color: tint.withValues(alpha: .18),
+                  blurRadius: 18,
+                  offset: const Offset(0, 8),
                 ),
-                child: Row(
-                  children: [
-                    // pastille
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: _opa(tint, isDark ? .22 : .18),
-                        border: Border.all(
-                          color: active ? tint : _opa(tint, .45),
-                        ),
-                      ),
-                      child: Center(
-                        child: Icon(
-                          icon,
-                          size: 24,
-                          color: isDark ? tint : _assombrir(tint, .22),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 14),
-                    // label
-                    Expanded(
-                      child: Text(
-                        label,
-                        style: _Brand.option(context).copyWith(
-                          color: isDark ? Colors.white : _Brand.textDark,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                    ),
-                    // radio
-                    Container(
-                      width: 24,
-                      height: 24,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: active ? tint : track,
-                          width: 2,
-                        ),
-                      ),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        margin: const EdgeInsets.all(4),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: active ? tint : Colors.transparent,
-                        ),
-                      ),
-                    ),
-                  ],
+            ],
+          ),
+          child: Row(
+            children: [
+              // pastille
+              Container(
+                width: 48,
+                height: 48,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: _opa(tint, isDark ? .22 : .18),
+                  border: Border.all(color: active ? tint : _opa(tint, .45)),
+                ),
+                child: Center(
+                  child: Icon(
+                    icon,
+                    size: 24,
+                    color: isDark ? tint : _assombrir(tint, .22),
+                  ),
                 ),
               ),
-            ),
-          );
+              const SizedBox(width: 14),
+              // label
+              Expanded(
+                child: Text(
+                  label,
+                  style: _Brand.option(context).copyWith(
+                    color: isDark ? Colors.white : _Brand.textDark,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+              ),
+              // radio
+              Container(
+                width: 24,
+                height: 24,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: active ? tint : track, width: 2),
+                ),
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  margin: const EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: active ? tint : Colors.transparent,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
 
@@ -5980,12 +5994,14 @@ class _IntroSplash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const accent = Color(0xFF6C63FF);
-    const good   = Color(0xFF27C93F);
-    final bg      = isDark ? const Color(0xFF08111D) : const Color(0xFFF4F7FB);
-    final cardBg  = isDark ? const Color(0xFF101826) : Colors.white;
-    final border  = isDark ? const Color(0xFF253247) : const Color(0xFFE3EAF5);
+    const good = Color(0xFF27C93F);
+    final bg = isDark ? const Color(0xFF08111D) : const Color(0xFFF4F7FB);
+    final cardBg = isDark ? const Color(0xFF101826) : Colors.white;
+    final border = isDark ? const Color(0xFF253247) : const Color(0xFFE3EAF5);
     final txtMain = isDark ? Colors.white : const Color(0xFF212529);
-    final txtSub  = isDark ? Colors.white.withAlpha(210) : const Color(0xFF212529).withAlpha(210);
+    final txtSub = isDark
+        ? Colors.white.withAlpha(210)
+        : const Color(0xFF212529).withAlpha(210);
 
     return Positioned.fill(
       child: Container(
@@ -6004,7 +6020,9 @@ class _IntroSplash extends StatelessWidget {
                     border: Border.all(color: border),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: isDark ? .22 : .08),
+                        color: Colors.black.withValues(
+                          alpha: isDark ? .22 : .08,
+                        ),
                         blurRadius: 18,
                         offset: const Offset(0, 10),
                       ),
@@ -6038,24 +6056,61 @@ class _IntroSplash extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      Row(children: [
-                        const Icon(Icons.timer_outlined, color: accent, size: 18),
-                        const SizedBox(width: 8),
-                        Expanded(child: Text(timerText, style: TextStyle(color: txtMain, fontWeight: FontWeight.w700, decoration: TextDecoration.none))),
-                      ]),
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.timer_outlined,
+                            color: accent,
+                            size: 18,
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              timerText,
+                              style: TextStyle(
+                                color: txtMain,
+                                fontWeight: FontWeight.w700,
+                                decoration: TextDecoration.none,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                       const SizedBox(height: 10),
-                      Row(children: [
-                        const Icon(Icons.auto_graph_rounded, color: good, size: 18),
-                        const SizedBox(width: 8),
-                        Expanded(child: Text(historyText, style: TextStyle(color: txtMain, fontWeight: FontWeight.w700, decoration: TextDecoration.none))),
-                      ]),
+                      Row(
+                        children: [
+                          const Icon(
+                            Icons.auto_graph_rounded,
+                            color: good,
+                            size: 18,
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Text(
+                              historyText,
+                              style: TextStyle(
+                                color: txtMain,
+                                fontWeight: FontWeight.w700,
+                                decoration: TextDecoration.none,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                       const SizedBox(height: 16),
                       CheckboxListTile(
                         contentPadding: EdgeInsets.zero,
                         controlAffinity: ListTileControlAffinity.leading,
                         value: hideForever,
                         onChanged: (v) => onChangedHideForever(v ?? false),
-                        title: Text('Ne plus afficher cet \u00e9cran', style: TextStyle(color: txtMain, fontWeight: FontWeight.w700, decoration: TextDecoration.none)),
+                        title: Text(
+                          'Ne plus afficher cet \u00e9cran',
+                          style: TextStyle(
+                            color: txtMain,
+                            fontWeight: FontWeight.w700,
+                            decoration: TextDecoration.none,
+                          ),
+                        ),
                       ),
                       const SizedBox(height: 8),
                       SizedBox(
@@ -6065,8 +6120,12 @@ class _IntroSplash extends StatelessWidget {
                           onPressed: onStart,
                           style: ElevatedButton.styleFrom(
                             elevation: 0,
-                            backgroundColor: isDark ? Colors.white : const Color(0xFF212529),
-                            foregroundColor: isDark ? Colors.black : Colors.white,
+                            backgroundColor: isDark
+                                ? Colors.white
+                                : const Color(0xFF212529),
+                            foregroundColor: isDark
+                                ? Colors.black
+                                : Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(28),
                             ),
@@ -6093,7 +6152,6 @@ class _IntroSplash extends StatelessWidget {
   }
 }
 
-
 /// Assombrit une teinte pour qu'elle reste lisible sur fond clair.
 ///
 /// Les teintes de niveau sont vives (#22C55E, #F59E0B, #EF4444) : parfaites sur
@@ -6101,7 +6159,6 @@ class _IntroSplash extends StatelessWidget {
 /// que d'entretenir une seconde palette en parallèle.
 Color _assombrir(Color c, [double facteur = .45]) =>
     Color.lerp(c, Colors.black, facteur)!;
-
 
 /// Fond du quiz, dans les deux thèmes.
 ///
@@ -6239,7 +6296,6 @@ class _QuizBackdropState extends State<_QuizBackdrop>
   }
 }
 
-
 /// Un élément d'une cascade d'apparition : fondu et montée de 10 px.
 ///
 /// `FadeTransition` gère l'opacité sans rien reconstruire, et l'enfant est passé
@@ -6272,7 +6328,6 @@ class _ElementCascade extends StatelessWidget {
     );
   }
 }
-
 
 /// Icône de résultat animée : rebond à l'apparition, puis étincelles qui
 /// s'écartent et s'effacent.
@@ -6346,7 +6401,6 @@ class _OutcomeIcon extends StatelessWidget {
   }
 }
 
-
 /// Carte de confirmation avant une sortie de quiz.
 ///
 /// Sert la croix comme le bouton « Mettre fin » : même mise en page, seuls le
@@ -6390,7 +6444,9 @@ class _ConfirmCard extends StatelessWidget {
               color: fond,
               borderRadius: BorderRadius.circular(28),
               border: Border.all(
-                color: isDark ? _opa(Colors.white, .10) : _opa(Colors.black, .06),
+                color: isDark
+                    ? _opa(Colors.white, .10)
+                    : _opa(Colors.black, .06),
               ),
               boxShadow: [
                 BoxShadow(
@@ -6454,7 +6510,10 @@ class _ConfirmCard extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                       backgroundColor: _opa(_Brand.bad, .10),
                       foregroundColor: _Brand.bad,
-                      side: BorderSide(color: _opa(_Brand.bad, .55), width: 1.4),
+                      side: BorderSide(
+                        color: _opa(_Brand.bad, .55),
+                        width: 1.4,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(26),
                       ),

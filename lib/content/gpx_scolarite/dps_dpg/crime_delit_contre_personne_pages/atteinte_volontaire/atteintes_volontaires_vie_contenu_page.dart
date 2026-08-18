@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteintesVolontairesVieContenuPage extends StatelessWidget {
   const AtteintesVolontairesVieContenuPage({super.key});
@@ -25,10 +26,18 @@ class AtteintesVolontairesVieContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -43,7 +52,11 @@ class AtteintesVolontairesVieContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Atteintes volontaires à la vie",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00003",
+              "Atteintes volontaires à la vie",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,8 +66,16 @@ class AtteintesVolontairesVieContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux atteintes volontaires à la vie "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux atteintes volontaires à la vie ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,9 +88,16 @@ class AtteintesVolontairesVieContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'atteintes_volontaires_vie_meurtre',
-            title: "Le meurtre",
-            subtitle:
-                "Définition, éléments constitutifs, circonstances et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00006",
+              "Le meurtre",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00007",
+              "Définition, éléments constitutifs, circonstances et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,8 +111,16 @@ class AtteintesVolontairesVieContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'atteintes_volontaires_vie_empoisonnement',
-            title: "L’empoisonnement",
-            subtitle: "Qualification, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00008",
+              "L’empoisonnement",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00009",
+              "Qualification, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -98,9 +134,16 @@ class AtteintesVolontairesVieContenuPage extends StatelessWidget {
           // ================= 3 (AJOUT DEMANDÉ) =================
           _ModuleCard(
             tag: 'violences_volontaires_arme_personne_depositaire',
-            title:
-                "Les violences volontaires avec arme sur personne dépositaire de l’autorité publique, sur un sapeur-pompier ou un agent d’un réseau de transport public de voyageurs",
-            subtitle: "Cadre légal, aggravations et peines.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00010",
+              "Les violences volontaires avec arme sur personne dépositaire de l’autorité publique, sur un sapeur-pompier ou un agent d’un réseau de transport public de voyageurs",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00011",
+              "Cadre légal, aggravations et peines.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -114,9 +157,16 @@ class AtteintesVolontairesVieContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_atteintes_volontaires_vie',
-            title: 'Quiz — Atteintes volontaires à la vie',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00012",
+              'Quiz — Atteintes volontaires à la vie',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart",
+              "f00013",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -170,7 +220,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

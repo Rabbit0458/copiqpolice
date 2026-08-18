@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PneumatiquesPage extends StatelessWidget {
   const PneumatiquesPage({super.key});
@@ -66,10 +67,18 @@ class PneumatiquesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class PneumatiquesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les pneumatiques",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+              "f00003",
+              "Les pneumatiques",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -100,11 +113,23 @@ class PneumatiquesPage extends StatelessWidget {
             cardColor: cardInfra,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les pneumatiques doivent garantir l’adhérence et la sécurité. "
-                "Leur état et leur montage sont encadrés par le Code de la route : usure, déchirures, toile apparente, "
-                "profondeur de sculptures, et règles de montage par essieu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00004",
+                      "Les pneumatiques doivent garantir l’adhérence et la sécurité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00005",
+                      "Leur état et leur montage sont encadrés par le Code de la route : usure, déchirures, toile apparente, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00006",
+                      "profondeur de sculptures, et règles de montage par essieu.",
+                    ),
               ),
             ],
           ),
@@ -113,24 +138,64 @@ class PneumatiquesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 314-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00008",
+                    "R. 314-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 314-3 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00009",
+                    "R. 314-3 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence mémento : "),
-                _boldSpan("NATINF 6124"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00010",
+                    "Référence mémento : ",
+                  ),
+                ),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00011",
+                    "NATINF 6124",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _boldSpan("NATINF 22622"),
-                const TextSpan(text: " (montage)."),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00012",
+                    "NATINF 22622",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00013",
+                    " (montage).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -139,41 +204,81 @@ class PneumatiquesPage extends StatelessWidget {
 
           // Exigences techniques (R.314-1)
           _ConditionCard(
-            title: "II — Exigences des pneumatiques",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+              "f00014",
+              "II — Exigences des pneumatiques",
+            ),
             cardColor: cardExigences,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) État général obligatoire"),
-              _BulletPoint(
-                text:
-                    "Sculptures apparentes sur toute la surface de roulement.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00015",
+                  "A) État général obligatoire",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aucune toile ne doit apparaître (ni en surface, ni à fond de sculptures).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00016",
+                  "Sculptures apparentes sur toute la surface de roulement.",
+                ),
               ),
               _BulletPoint(
-                text: "Aucune déchirure profonde sur les flancs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00017",
+                  "Aucune toile ne doit apparaître (ni en surface, ni à fond de sculptures).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00018",
+                  "Aucune déchirure profonde sur les flancs.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Profondeur minimale des rainures"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00019",
+                  "B) Profondeur minimale des rainures",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Au moins 1,6 mm dans les rainures principales de la bande de roulement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00020",
+                  "Au moins 1,6 mm dans les rainures principales de la bande de roulement.",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Pour les véhicules de PTAC > 3,5 T : profondeur minimale de 1 mm.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00021",
+                  "Pour les véhicules de PTAC > 3,5 T : profondeur minimale de 1 mm.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Des indicateurs d’usure (dans les rainures principales) permettent de constater l’usure maximum autorisée "
-                        "sur les voitures particulières et leurs remorques.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                          "f00022",
+                          "Des indicateurs d’usure (dans les rainures principales) permettent de constater l’usure maximum autorisée ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                          "f00023",
+                          "sur les voitures particulières et leurs remorques.",
+                        ),
                   ),
                 ],
               ),
@@ -184,42 +289,83 @@ class PneumatiquesPage extends StatelessWidget {
 
           // Montage interdit (R.314-1) + pneus interdits
           _ConditionCard(
-            title: "III — Montage interdit / pneus interdits",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+              "f00024",
+              "III — Montage interdit / pneus interdits",
+            ),
             cardColor: cardMontage,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle(
-                "A) Différences de structure ou de type (même essieu)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00025",
+                  "A) Différences de structure ou de type (même essieu)",
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Il est interdit de monter sur un même essieu deux pneumatiques de structures ou de type différents (voir ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00026",
+                    "Il est interdit de monter sur un même essieu deux pneumatiques de structures ou de type différents (voir ",
+                  ),
                 ),
-                _boldSpan("NATINF 22622"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00027",
+                    "NATINF 22622",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                "Exemples :\n"
-                "• Structure : radial (lettre « R »)\n"
-                "• Type : dimension (ex. 195/65R15), catégorie (neige), code vitesse, indice de charge…",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00028",
+                      "Exemples :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00029",
+                      "• Structure : radial (lettre « R »)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00030",
+                      "• Type : dimension (ex. 195/65R15), catégorie (neige), code vitesse, indice de charge…",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Une dérogation temporaire est possible lorsqu’il est fait usage du pneumatique de secours.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00031",
+                      "Une dérogation temporaire est possible lorsqu’il est fait usage du pneumatique de secours.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
-              const _SubTitle("B) Marquages explicitement interdits"),
-              const _BulletPoint(
-                text:
-                    "Pneumatiques portant les indications : Max. 30 km/h, Max. 10 km/h, TA, AGRI ou AGRO.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00032",
+                  "B) Marquages explicitement interdits",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00033",
+                  "Pneumatiques portant les indications : Max. 30 km/h, Max. 10 km/h, TA, AGRI ou AGRO.",
+                ),
               ),
             ],
           ),
@@ -228,61 +374,159 @@ class PneumatiquesPage extends StatelessWidget {
 
           // Dispositions hivernales (R.314-3)
           _ConditionCard(
-            title: "IV — Période hivernale & massifs montagneux",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+              "f00034",
+              "IV — Période hivernale & massifs montagneux",
+            ),
             cardColor: cardHiver,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Dispositions particulières du 1er novembre au 31 mars (année suivante) — communes désignées par arrêté préfectoral. ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00035",
+                    "Dispositions particulières du 1er novembre au 31 mars (année suivante) — communes désignées par arrêté préfectoral. ",
+                  ),
                 ),
-                const TextSpan(text: "Référence : "),
-                _lawSpan("R. 314-3 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00036",
+                    "Référence : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00037",
+                    "R. 314-3 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle("A) Véhicules sans remorque (règle générale)"),
-              const _Paragraph(
-                "À compter du 1er novembre 2021, le conducteur :\n"
-                "• d’un véhicule de transport de personnes (8 places maxi + conducteur),\n"
-                "• d’un véhicule utilitaire léger,\n"
-                "• d’un véhicule de transport en commun de personnes,\n"
-                "• ou d’un véhicule de transport de marchandises de PTAC > 3,5 T,\n"
-                "sans remorque ni semi-remorque, doit :",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00038",
+                  "A) Véhicules sans remorque (règle générale)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00039",
+                      "À compter du 1er novembre 2021, le conducteur :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00040",
+                      "• d’un véhicule de transport de personnes (8 places maxi + conducteur),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00041",
+                      "• d’un véhicule utilitaire léger,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00042",
+                      "• d’un véhicule de transport en commun de personnes,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00043",
+                      "• ou d’un véhicule de transport de marchandises de PTAC > 3,5 T,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00044",
+                      "sans remorque ni semi-remorque, doit :",
+                    ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Soit détenir des dispositifs antidérapants amovibles (chaînes/chaussettes) pour équiper au moins 2 roues motrices.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00045",
+                  "Soit détenir des dispositifs antidérapants amovibles (chaînes/chaussettes) pour équiper au moins 2 roues motrices.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Soit conduire un véhicule équipé de 4 pneumatiques « hiver ».",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00046",
+                  "Soit conduire un véhicule équipé de 4 pneumatiques « hiver ».",
+                ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("B) PTAC > 3,5 T avec remorque ou semi-remorque"),
-              const _BulletPoint(
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00047",
+                  "B) PTAC > 3,5 T avec remorque ou semi-remorque",
+                ),
+              ),
+              _BulletPoint(
                 text:
-                    "Doit détenir des dispositifs antidérapants amovibles pour équiper au moins 2 roues motrices, "
-                    "que le véhicule soit équipé ou non de pneumatiques hiver.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00048",
+                      "Doit détenir des dispositifs antidérapants amovibles pour équiper au moins 2 roues motrices, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00049",
+                      "que le véhicule soit équipé ou non de pneumatiques hiver.",
+                    ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("C) Chaînes & pneus à clous"),
-              const _BulletPoint(
-                text:
-                    "Pneumatiques à clous (dispositifs inamovibles) autorisés uniquement pendant la période hivernale "
-                    "(VP, VUL, véhicules de transport en commun).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00050",
+                  "C) Chaînes & pneus à clous",
+                ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    "L’usage des chaînes n’est autorisé que sur routes enneigées.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00051",
+                      "Pneumatiques à clous (dispositifs inamovibles) autorisés uniquement pendant la période hivernale ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00052",
+                      "(VP, VUL, véhicules de transport en commun).",
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00053",
+                  "L’usage des chaînes n’est autorisé que sur routes enneigées.",
+                ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
-                _boldSpan("NATINF 6125"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00054",
+                    "Référence : ",
+                  ),
+                ),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00055",
+                    "NATINF 6125",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -292,48 +536,105 @@ class PneumatiquesPage extends StatelessWidget {
 
           // Infractions / constatation
           _ConditionCard(
-            title: "V — Infractions & constatation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+              "f00056",
+              "V — Infractions & constatation",
+            ),
             cardColor: cardInfra,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _boldSpan("NATINF 6124"),
-                const TextSpan(
-                  text:
-                      " — Circulation avec pneumatique lisse, déchiré ou dont la toile est apparente.",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00057",
+                    "NATINF 6124",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00058",
+                    " — Circulation avec pneumatique lisse, déchiré ou dont la toile est apparente.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                _boldSpan("NATINF 22622"),
-                const TextSpan(
-                  text:
-                      " — Circulation avec pneumatique interdit ou irrégulièrement monté.",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00059",
+                    "NATINF 22622",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00060",
+                    " — Circulation avec pneumatique interdit ou irrégulièrement monté.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Base légale : "),
-                _lawSpan("R. 314-1 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00061",
+                    "Base légale : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00062",
+                    "R. 314-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " ("),
-                _boldSpan("AF min. 4e classe"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                    "f00063",
+                    "AF min. 4e classe",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(text: "Immobilisation possible."),
-              const _BulletPoint(
-                text: "D.I.A. et dépistage stupéfiants : facultatifs.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00064",
+                  "Immobilisation possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00065",
+                  "D.I.A. et dépistage stupéfiants : facultatifs.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Plusieurs pneumatiques non conformes sur un même véhicule = une seule contravention ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00066",
+                      "Plusieurs pneumatiques non conformes sur un même véhicule = une seule contravention ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 25/05/1994)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00067",
+                      "(Cass. crim., 25/05/1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -343,12 +644,19 @@ class PneumatiquesPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Bon réflexe P.V.",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                  "f00068",
+                  "Bon réflexe P.V.",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Noter au P.V. le n° du (des) pneumatique(s) non conforme(s) (n° gravé sur le flanc du pneu).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/pneumatiques_page.dart",
+                      "f00069",
+                      "Noter au P.V. le n° du (des) pneumatique(s) non conforme(s) (n° gravé sur le flanc du pneu).",
+                    ),
                   ),
                 ],
               ),

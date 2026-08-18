@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FormationInitialePolicierAdjointPage extends StatelessWidget {
   const FormationInitialePolicierAdjointPage({super.key});
@@ -57,10 +58,18 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Formation initiale",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+            "f00002",
+            "Formation initiale",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -75,7 +84,11 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La formation initiale des policiers adjoints",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+              "f00003",
+              "La formation initiale des policiers adjoints",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,30 +100,57 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Élément légal (rappel déontologique)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+              "f00004",
+              "Élément légal (rappel déontologique)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Prestation de serment : "),
                 TextSpan(
-                  text: "article L 434-1 A du code de déontologie",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                    "f00005",
+                    "Prestation de serment : ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                    "f00006",
+                    "article L 434-1 A du code de déontologie",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " — « Préalablement à sa prise de fonctions, tout agent de la police nationale ou de la gendarmerie nationale "
-                      "déclare solennellement servir avec dignité et loyauté la République… »",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                        "f00007",
+                        " — « Préalablement à sa prise de fonctions, tout agent de la police nationale ou de la gendarmerie nationale ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                        "f00008",
+                        "déclare solennellement servir avec dignité et loyauté la République… »",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Lors d’une cérémonie, le directeur de l’école nationale de police (ou son représentant) "
-                "remet à l’élève policier adjoint le code de déontologie à l’issue de la prestation de serment.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                      "f00009",
+                      "Lors d’une cérémonie, le directeur de l’école nationale de police (ou son représentant) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                      "f00010",
+                      "remet à l’élève policier adjoint le code de déontologie à l’issue de la prestation de serment.",
+                    ),
               ),
             ],
           ),
@@ -119,20 +159,44 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
 
           // Organisation (format PA)
           _ConditionCard(
-            title: "I — L’organisation de la formation",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+              "f00011",
+              "I — L’organisation de la formation",
+            ),
             cardColor: cardOrg,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La formation initiale des policiers adjoints est structurée autour d’un socle commun de 16 semaines, "
-                "partagé avec les élèves gardiens de la paix.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                      "f00012",
+                      "La formation initiale des policiers adjoints est structurée autour d’un socle commun de 16 semaines, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                      "f00013",
+                      "partagé avec les élèves gardiens de la paix.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ces 16 semaines sont consacrées à l’étude des fondamentaux (institution policière, valeurs, bases juridiques, "
-                "dimension humaine) et à des situations professionnelles (relation police/population, interpellation, VIF, "
-                "sécurité routière), ainsi qu’à l’apprentissage des T.S.I., du secourisme et des outils numériques.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                      "f00014",
+                      "Ces 16 semaines sont consacrées à l’étude des fondamentaux (institution policière, valeurs, bases juridiques, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                      "f00015",
+                      "dimension humaine) et à des situations professionnelles (relation police/population, interpellation, VIF, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                      "f00016",
+                      "sécurité routière), ainsi qu’à l’apprentissage des T.S.I., du secourisme et des outils numériques.",
+                    ),
               ),
             ],
           ),
@@ -141,27 +205,64 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
 
           // Socle initial (16 semaines) détaillé
           _ConditionCard(
-            title: "Socle initial — 16 semaines",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+              "f00017",
+              "Socle initial — 16 semaines",
+            ),
             cardColor: cardPhases,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Axes pédagogiques"),
-              _BulletPoint(text: "Institution policière & ses valeurs."),
-              _BulletPoint(text: "Bases juridiques & dimension humaine."),
-              _BulletPoint(
-                text:
-                    "Situations professionnelles : interpellation, VIF, sécurité routière, relation police/population.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00018",
+                  "Axes pédagogiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Techniques de Sécurité et d’Intervention (T.S.I.) + secourisme.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00019",
+                  "Institution policière & ses valeurs.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aptitude à l’usage du P.A. SIG SAUER + habilitation bâtons de police.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00020",
+                  "Bases juridiques & dimension humaine.",
+                ),
               ),
-              _BulletPoint(text: "Outils numériques."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00021",
+                  "Situations professionnelles : interpellation, VIF, sécurité routière, relation police/population.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00022",
+                  "Techniques de Sécurité et d’Intervention (T.S.I.) + secourisme.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00023",
+                  "Aptitude à l’usage du P.A. SIG SAUER + habilitation bâtons de police.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00024",
+                  "Outils numériques.",
+                ),
+              ),
             ],
           ),
 
@@ -169,13 +270,21 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
 
           // Fin des 16 semaines (affectation PA)
           _ConditionCard(
-            title: "À l’issue des 16 semaines",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+              "f00025",
+              "À l’issue des 16 semaines",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "À l’issue des 16 premières semaines, les policiers adjoints rejoignent leur service d’affectation.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00026",
+                  "À l’issue des 16 premières semaines, les policiers adjoints rejoignent leur service d’affectation.",
+                ),
               ),
             ],
           ),
@@ -184,26 +293,72 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
 
           // Évaluation (ce que tu as fourni)
           _ConditionCard(
-            title: "II — L’évaluation (socle initial)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+              "f00027",
+              "II — L’évaluation (socle initial)",
+            ),
             cardColor: cardEval,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pendant le socle initial, une évaluation de compétences est prévue en « acquis / non acquis » :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00028",
+                  "Pendant le socle initial, une évaluation de compétences est prévue en « acquis / non acquis » :",
+                ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Compétences numériques."),
               _BulletPoint(
-                text: "TECR1 (Test d’Endurance Cardio-Respiratoire 1).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00029",
+                  "Compétences numériques.",
+                ),
               ),
-              _BulletPoint(text: "Aptitude SIG."),
-              _BulletPoint(text: "CEE1 (Contrôle Écrit École 1)."),
-              _BulletPoint(text: "MCPN (Main Courante Police Nationale)."),
-              _BulletPoint(text: "CES (Contrôle École de Simulation)."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00030",
+                  "TECR1 (Test d’Endurance Cardio-Respiratoire 1).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00031",
+                  "Aptitude SIG.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00032",
+                  "CEE1 (Contrôle Écrit École 1).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00033",
+                  "MCPN (Main Courante Police Nationale).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00034",
+                  "CES (Contrôle École de Simulation).",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "La validation de cinq compétences est nécessaire à l’acquisition de l’unité de valeur (commune aux deux publics).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart",
+                  "f00035",
+                  "La validation de cinq compétences est nécessaire à l’acquisition de l’unité de valeur (commune aux deux publics).",
+                ),
               ),
             ],
           ),
@@ -459,9 +614,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

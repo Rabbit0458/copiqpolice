@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
   const DisparitionInquietanteEnqueteGpxSchool({super.key});
@@ -36,7 +37,11 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
         centerTitle: true,
         iconTheme: IconThemeData(color: textMain),
         title: Text(
-          'Disparitions inquiétantes',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+            "f00001",
+            'Disparitions inquiétantes',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,8 +54,16 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            'Chapitre 3 – Suites de l’enquête diligentée en vertu des articles '
-            '74-1 et 80-4 du code de procédure pénale',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                  "f00002",
+                  'Chapitre 3 – Suites de l’enquête diligentée en vertu des articles ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                  "f00003",
+                  '74-1 et 80-4 du code de procédure pénale',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 19,
@@ -60,8 +73,16 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Conséquences de l’enquête selon que la personne disparue est retrouvée, '
-            'demeure introuvable ou que l’enquête révèle une infraction pénale.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                  "f00004",
+                  'Conséquences de l’enquête selon que la personne disparue est retrouvée, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                  "f00005",
+                  'demeure introuvable ou que l’enquête révèle une infraction pénale.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -72,98 +93,269 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title:
-                '2.3 – Les suites de l’enquête diligentée en vertu des articles 74-1 et 80-4 du code de procédure pénale',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+              "f00006",
+              '2.3 – Les suites de l’enquête diligentée en vertu des articles 74-1 et 80-4 du code de procédure pénale',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               // 2.3.1
-              _SubTitle('2.3.1 – La personne disparue est retrouvée'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                  "f00007",
+                  '2.3.1 – La personne disparue est retrouvée',
+                ),
+              ),
               _Paragraph(
-                'Lorsque la personne disparue est retrouvée et que les causes de la disparition '
-                'ne sont ni criminelles, ni délictuelles, la protection de sa vie privée et de sa '
-                'sécurité demeure prioritaire.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00008",
+                      'Lorsque la personne disparue est retrouvée et que les causes de la disparition ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00009",
+                      'ne sont ni criminelles, ni délictuelles, la protection de sa vie privée et de sa ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00010",
+                      'sécurité demeure prioritaire.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'S’il s’agit d’un mineur ou d’un majeur protégé, l’adresse de la personne retrouvée '
-                'ainsi que les pièces permettant d’avoir directement ou indirectement '
-                'connaissance de cette adresse ne peuvent être communiquées au représentant '
-                'légal ou à la partie civile qu’avec l’accord du juge des enfants ou du juge des '
-                'tutelles lorsque l’enquête a été menée sur le fondement de l’article 74-1, ou '
-                'avec l’accord du juge d’instruction lorsque l’information a été ouverte en '
-                'application de l’article 80-4 du code de procédure pénale.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00011",
+                      'S’il s’agit d’un mineur ou d’un majeur protégé, l’adresse de la personne retrouvée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00012",
+                      'ainsi que les pièces permettant d’avoir directement ou indirectement ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00013",
+                      'connaissance de cette adresse ne peuvent être communiquées au représentant ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00014",
+                      'légal ou à la partie civile qu’avec l’accord du juge des enfants ou du juge des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00015",
+                      'tutelles lorsque l’enquête a été menée sur le fondement de l’article 74-1, ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00016",
+                      'avec l’accord du juge d’instruction lorsque l’information a été ouverte en ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00017",
+                      'application de l’article 80-4 du code de procédure pénale.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Lorsque la personne disparue est un majeur qui n’est pas protégé, son adresse '
-                'ne peut être communiquée qu’avec son accord exprès.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00018",
+                      'Lorsque la personne disparue est un majeur qui n’est pas protégé, son adresse ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00019",
+                      'ne peut être communiquée qu’avec son accord exprès.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'En conséquence, le droit à la communication du dossier prévu par l’article 114 '
-                'du code de procédure pénale ne peut s’exercer qu’en respectant ces limitations, '
-                'édictées pour protéger la vie privée du majeur ou la sécurité du mineur ou du '
-                'majeur protégé.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00020",
+                      'En conséquence, le droit à la communication du dossier prévu par l’article 114 ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00021",
+                      'du code de procédure pénale ne peut s’exercer qu’en respectant ces limitations, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00022",
+                      'édictées pour protéger la vie privée du majeur ou la sécurité du mineur ou du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00023",
+                      'majeur protégé.',
+                    ),
               ),
 
               SizedBox(height: 18),
 
               // 2.3.2
               _SubTitle(
-                '2.3.2 – La personne disparue n’est pas retrouvée',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                  "f00024",
+                  '2.3.2 – La personne disparue n’est pas retrouvée',
+                ),
               ),
               _Paragraph(
-                'Lorsque la personne disparue demeure introuvable, il est alors nécessaire '
-                'd’adapter la suite procédurale. Plusieurs options s’offrent aux autorités '
-                'judiciaires :',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00025",
+                      'Lorsque la personne disparue demeure introuvable, il est alors nécessaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00026",
+                      'd’adapter la suite procédurale. Plusieurs options s’offrent aux autorités ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00027",
+                      'judiciaires :',
+                    ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
                 text:
-                    'Requérir l’ouverture d’une information pour recherche des causes de la '
-                    'disparition en vertu de l’article 80-4 du code de procédure pénale.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00028",
+                      'Requérir l’ouverture d’une information pour recherche des causes de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00029",
+                      'disparition en vertu de l’article 80-4 du code de procédure pénale.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Poursuivre l’information judiciaire déjà ouverte pour recherche des causes '
-                    'de la disparition.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00030",
+                      'Poursuivre l’information judiciaire déjà ouverte pour recherche des causes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00031",
+                      'de la disparition.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Ordonner à l’officier de police judiciaire ou à l’agent de police judiciaire '
-                    'qui a enquêté sur le fondement de l’article 74-1 du code de procédure '
-                    'pénale de poursuivre ses investigations selon le mode de l’enquête '
-                    'préliminaire.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00032",
+                      'Ordonner à l’officier de police judiciaire ou à l’agent de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00033",
+                      'qui a enquêté sur le fondement de l’article 74-1 du code de procédure ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00034",
+                      'pénale de poursuivre ses investigations selon le mode de l’enquête ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00035",
+                      'préliminaire.',
+                    ),
               ),
 
               SizedBox(height: 18),
 
               // 2.3.3
               _SubTitle(
-                '2.3.3 – L’enquête diligentée a permis d’établir le caractère '
-                'criminel ou délictuel à l’origine de la disparition',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00036",
+                      '2.3.3 – L’enquête diligentée a permis d’établir le caractère ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00037",
+                      'criminel ou délictuel à l’origine de la disparition',
+                    ),
               ),
               _Paragraph(
-                'Si les investigations menées dans le cadre des articles 74-1 et 80-4 du code de '
-                'procédure pénale permettent d’établir que la disparition a une origine '
-                'criminelle ou délictuelle, le procureur de la République dispose de plusieurs '
-                'choix procéduraux.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00038",
+                      'Si les investigations menées dans le cadre des articles 74-1 et 80-4 du code de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00039",
+                      'procédure pénale permettent d’établir que la disparition a une origine ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00040",
+                      'criminelle ou délictuelle, le procureur de la République dispose de plusieurs ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00041",
+                      'choix procéduraux.',
+                    ),
               ),
               SizedBox(height: 6),
-              _Paragraph('Le procureur de la République peut alors :'),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                  "f00042",
+                  'Le procureur de la République peut alors :',
+                ),
+              ),
               SizedBox(height: 4),
               _BulletPoint(
                 text:
-                    'Autoriser les enquêteurs à poursuivre leurs investigations selon le mode '
-                    'de l’enquête de flagrant délit ou celui de l’enquête préliminaire, en '
-                    'fonction des circonstances et des nécessités de l’enquête.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00043",
+                      'Autoriser les enquêteurs à poursuivre leurs investigations selon le mode ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00044",
+                      'de l’enquête de flagrant délit ou celui de l’enquête préliminaire, en ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00045",
+                      'fonction des circonstances et des nécessités de l’enquête.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Délivrer un réquisitoire introductif ouvrant une information judiciaire '
-                    'relative à l’infraction ainsi découverte.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00046",
+                      'Délivrer un réquisitoire introductif ouvrant une information judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart",
+                      "f00047",
+                      'relative à l’infraction ainsi découverte.',
+                    ),
               ),
             ],
           ),
@@ -419,9 +611,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
   const DelivranceIndueDocumentAdministratifPage({super.key});
@@ -57,10 +58,18 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Faux & usage de faux",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+            "f00002",
+            "Faux & usage de faux",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -75,7 +84,11 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La délivrance indue de document administratif",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+              "f00003",
+              "La délivrance indue de document administratif",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,15 +100,31 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Définition (sans répéter le titre ailleurs)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction consiste dans le fait de procurer frauduleusement à autrui un document "
-                "délivré par une administration publique aux fins de constater un droit, une identité ou "
-                "une qualité, ou d’accorder une autorisation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00005",
+                      "L’infraction consiste dans le fait de procurer frauduleusement à autrui un document ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00006",
+                      "délivré par une administration publique aux fins de constater un droit, une identité ou ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00007",
+                      "une qualité, ou d’accorder une autorisation.",
+                    ),
               ),
             ],
           ),
@@ -104,22 +133,30 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00009",
+                    "Article 441-5 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la délivrance indue de document administratif.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00010",
+                    " : définit et réprime la délivrance indue de document administratif.",
+                  ),
                 ),
               ]),
             ],
@@ -129,80 +166,151 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un document administratif"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00012",
+                  "A) Un document administratif",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00013",
+                    "Article 441-5 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : vise un document délivré par une administration publique aux fins de constater "
-                      "un droit, une identité ou une qualité, ou d’accorder une autorisation.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                        "f00014",
+                        " : vise un document délivré par une administration publique aux fins de constater ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                        "f00015",
+                        "un droit, une identité ou une qualité, ou d’accorder une autorisation.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’infraction ne s’applique pas à des faux : il s’agit de documents authentiques, "
-                "délivrés indûment.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00016",
+                      "L’infraction ne s’applique pas à des faux : il s’agit de documents authentiques, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00017",
+                      "délivrés indûment.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Exemples de documents visés"),
-              _IntroBullet(
-                text:
-                    "Documents d’identité : passeport, carte nationale d’identité, titre de séjour…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00018",
+                  "Exemples de documents visés",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Documents constatant un droit/une qualité : certificat de nationalité, carte grise, récépissés délivrés pour constater l’accomplissement d’une formalité obligatoire…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00019",
+                  "Documents d’identité : passeport, carte nationale d’identité, titre de séjour…",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Documents accordant une autorisation : permis de construire, permis de chasser, permis de conduire…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00020",
+                  "Documents constatant un droit/une qualité : certificat de nationalité, carte grise, récépissés délivrés pour constater l’accomplissement d’une formalité obligatoire…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00021",
+                  "Documents accordant une autorisation : permis de construire, permis de chasser, permis de conduire…",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Procuré frauduleusement à autrui"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00022",
+                  "B) Procuré frauduleusement à autrui",
+                ),
+              ),
               _Paragraph(
-                "Les documents administratifs sont délivrés indûment : un individu (fonctionnaire "
-                "complaisant ou particulier) permet à une personne n’y ayant pas droit d’obtenir un document.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00023",
+                      "Les documents administratifs sont délivrés indûment : un individu (fonctionnaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00024",
+                      "complaisant ou particulier) permet à une personne n’y ayant pas droit d’obtenir un document.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le caractère frauduleux est caractérisé dès lors que l’auteur délivre (ou fait délivrer) un document à une personne qu’il sait ne pas y avoir droit ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00025",
+                    "Le caractère frauduleux est caractérisé dès lors que l’auteur délivre (ou fait délivrer) un document à une personne qu’il sait ne pas y avoir droit ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 26 janvier 1993)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00026",
+                    "(Cass. crim., 26 janvier 1993)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00027",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Se rend coupable de délivrance frauduleuse de documents administratifs et de complicité d’obtention indue d’un titre de séjour le fonctionnaire des impôts qui, connaissant le but frauduleux de la demande, fournit des attestations fiscales de complaisance à un étranger ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00028",
+                      "Se rend coupable de délivrance frauduleuse de documents administratifs et de complicité d’obtention indue d’un titre de séjour le fonctionnaire des impôts qui, connaissant le but frauduleux de la demande, fournit des attestations fiscales de complaisance à un étranger ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 08 décembre 1999)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00029",
+                      "(Cass. crim., 08 décembre 1999)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -215,9 +323,21 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _Paragraph(
-                "L’auteur doit « procurer », c’est-à-dire fournir/remettre le document administratif à autrui. "
-                "L’acte est également réalisé lorsque l’auteur ne le remet pas lui-même mais le fait remettre "
-                "par une tierce personne de bonne foi.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00030",
+                      "L’auteur doit « procurer », c’est-à-dire fournir/remettre le document administratif à autrui. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00031",
+                      "L’acte est également réalisé lorsque l’auteur ne le remet pas lui-même mais le fait remettre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00032",
+                      "par une tierce personne de bonne foi.",
+                    ),
               ),
             ],
           ),
@@ -226,15 +346,33 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+              "f00033",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Remise en toute connaissance de cause"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00034",
+                  "Remise en toute connaissance de cause",
+                ),
+              ),
               _Paragraph(
-                "L’auteur agit intentionnellement : il sait qu’il procure un document administratif "
-                "à une personne qui n’y a pas droit.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00035",
+                      "L’auteur agit intentionnellement : il sait qu’il procure un document administratif ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                      "f00036",
+                      "à une personne qui n’y a pas droit.",
+                    ),
               ),
             ],
           ),
@@ -243,56 +381,73 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+              "f00037",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-5 1° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00038",
+                    "Article 441-5 1° du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque l’infraction est commise par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public agissant dans l’exercice de ses fonctions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00039",
+                  "Lorsque l’infraction est commise par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public agissant dans l’exercice de ses fonctions.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-5 2° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00040",
+                    "Article 441-5 2° du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Lorsque l’infraction est commise de manière habituelle.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00041",
+                  "Lorsque l’infraction est commise de manière habituelle.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-5 3° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00042",
+                    "Article 441-5 3° du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque l’infraction est commise dans le dessein de faciliter la commission d’un crime ou de procurer l’impunité à son auteur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00043",
+                  "Lorsque l’infraction est commise dans le dessein de faciliter la commission d’un crime ou de procurer l’impunité à son auteur.",
+                ),
               ),
             ],
           ),
@@ -301,78 +456,148 @@ class DelivranceIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+              "f00044",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00045",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00046",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 441-5 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00047",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00048",
+                    "article 441-5 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("Aggravations prévues par le texte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00049",
+                  "Aggravations prévues par le texte",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Selon les circonstances ("),
                 TextSpan(
-                  text: "article 441-5 1° à 3° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00050",
+                    "Selon les circonstances (",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      "), les peines sont portées à 7 ans de réclusion et 100 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00051",
+                    "article 441-5 1° à 3° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00052",
+                    "), les peines sont portées à 7 ans de réclusion et 100 000 € d’amende.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00053",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 441-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00054",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00055",
+                    "l’article 441-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00056",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 441-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00057",
+                    "Tentative : OUI — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (prévoit expressément la tentative des délits prévus à l’article 441-5).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00058",
+                    "article 441-9 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                    "f00059",
+                    " (prévoit expressément la tentative des délits prévus à l’article 441-5).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Complicité : OUI (règles générales de la complicité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart",
+                  "f00060",
+                  "Complicité : OUI (règles générales de la complicité).",
+                ),
               ),
             ],
           ),

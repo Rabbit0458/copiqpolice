@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/generalite_pages/complicite/complicite_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CompliciteContenuPage extends StatelessWidget {
   const CompliciteContenuPage({super.key});
@@ -25,10 +26,18 @@ class CompliciteContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La complicité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+            "f00002",
+            'La complicité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,23 +52,37 @@ class CompliciteContenuPage extends StatelessWidget {
           // Module 1 : conditions de la complicité
           _ModuleCard(
             tag: 'conditions_complicite',
-            title: 'Les conditions de la complicité',
-            subtitle:
-                'Définition, criminalité d’emprunt et lien avec le fait principal.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00003",
+              'Les conditions de la complicité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00004",
+              'Définition, criminalité d’emprunt et lien avec le fait principal.',
+            ),
             imagePath: 'assets/images/complicite_conditions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () =>
                 _openRoute(context, '/gpx/generalites/complicite/conditions'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // Module 2 : participation au fait principal
           _ModuleCard(
             tag: 'participation_complicite',
-            title: 'La participation au fait principal',
-            subtitle:
-                'Actes de complicité (provocation, instructions, aide ou assistance).',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00005",
+              'La participation au fait principal',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00006",
+              'Actes de complicité (provocation, instructions, aide ou assistance).',
+            ),
             imagePath: 'assets/images/complicite_participation.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -68,34 +91,48 @@ class CompliciteContenuPage extends StatelessWidget {
               '/gpx/generalites/complicite/participation',
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // Module 3 : répression de la complicité
           _ModuleCard(
             tag: 'repression_complicite',
-            title: 'La répression de la complicité',
-            subtitle:
-                'Règle de l’art. 121-6 C. pén., peines encourues et circonstances.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00007",
+              'La répression de la complicité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00008",
+              'Règle de l’art. 121-6 C. pén., peines encourues et circonstances.',
+            ),
             imagePath: 'assets/images/repression.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () =>
                 _openRoute(context, '/gpx/generalites/complicite/repression'),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 10),
 
           // Quiz
           _ModuleCard(
             tag: 'quiz_complicite',
-            title: 'Quiz — Complicité',
-            subtitle:
-                'Vérifiez votre maîtrise des conditions, de la participation et de la répression.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00009",
+              'Quiz — Complicité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart",
+              "f00010",
+              'Vérifiez votre maîtrise des conditions, de la participation et de la répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _openRoute(context, '/gpx/complicite/quiz/complicite'),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: 10),
         ],
       ),
     );
@@ -147,7 +184,11 @@ class _ModuleCard extends StatelessWidget {
         button: true,
         label: '$title — découvrir',
         child: Container(
-          height: 190,
+          height: ScolariteText.adaptiveCardHeight(
+            context,
+            cardCount: 4,
+            maxHeight: 190,
+          ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,

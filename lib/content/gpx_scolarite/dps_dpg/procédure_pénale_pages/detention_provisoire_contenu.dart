@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PPDetentionProvisoireContenuPage extends StatelessWidget {
   const PPDetentionProvisoireContenuPage({super.key});
@@ -25,10 +26,18 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Détention provisoire',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+            "f00002",
+            'Détention provisoire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'La détention provisoire',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00003",
+              'La détention provisoire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,7 +66,11 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            'Placement, déroulement, fin de la détention provisoire et réparation de la détention injustifiée.',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00004",
+              'Placement, déroulement, fin de la détention provisoire et réparation de la détention injustifiée.',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,9 +84,16 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
           // ============= MODULE 1 — PLACEMENT EN DÉTENTION PROVISOIRE ======
           _ModuleCard(
             tag: 'pp_placement_detention_provisoire',
-            title: 'Le placement en détention provisoire',
-            subtitle:
-                'Conditions de fond et de forme, critères légaux et rôle du J.L.D. et du juge d’instruction.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00005",
+              'Le placement en détention provisoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00006",
+              'Conditions de fond et de forme, critères légaux et rôle du J.L.D. et du juge d’instruction.',
+            ),
             imagePath: 'assets/images/mandat_arret.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,9 +107,16 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
           // ========= MODULE 2 — DÉROULEMENT DE LA DÉTENTION PROVISOIRE =====
           _ModuleCard(
             tag: 'pp_deroulement_detention_provisoire',
-            title: 'Déroulement de la détention provisoire',
-            subtitle:
-                'Durée, prolongations, contrôle juridictionnel et interventions de la chambre de l’instruction.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00007",
+              'Déroulement de la détention provisoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00008",
+              'Durée, prolongations, contrôle juridictionnel et interventions de la chambre de l’instruction.',
+            ),
             imagePath: 'assets/images/retention.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +130,16 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
           // ============== MODULE 3 — FIN DE LA DÉTENTION PROVISOIRE =========
           _ModuleCard(
             tag: 'pp_fin_detention_provisoire',
-            title: 'Fin de la détention provisoire',
-            subtitle:
-                'Mises en liberté, fins anticipées, effets sur les mesures de contrôle et la suite de la procédure.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00009",
+              'Fin de la détention provisoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00010",
+              'Mises en liberté, fins anticipées, effets sur les mesures de contrôle et la suite de la procédure.',
+            ),
             imagePath: 'assets/images/recherche_fuite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -115,14 +153,25 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
           // ===== MODULE 4 — RÉPARATION D’UNE DÉTENTION INJUSTIFIÉE =========
           _ModuleCard(
             tag: 'pp_reparation_detention_injustifiee',
-            title: 'Réparation d’une détention provisoire injustifiée',
-            subtitleSpans: const [
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00011",
+              'Réparation d’une détention provisoire injustifiée',
+            ),
+            subtitleSpans: [
               TextSpan(
-                text:
-                    'Conditions d’indemnisation, procédure devant la commission et voies de recours (',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+                  "f00012",
+                  'Conditions d’indemnisation, procédure devant la commission et voies de recours (',
+                ),
               ),
               TextSpan(
-                text: 'art. 149 et s. C. proc. pén.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+                  "f00013",
+                  'art. 149 et s. C. proc. pén.',
+                ),
                 style: TextStyle(
                   color: Colors.red, // articles de loi en rouge
                   fontWeight: FontWeight.w700,
@@ -143,9 +192,16 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
           // ================= MODULE 5 — TABLEAU RÉCAPITULATIF ===============
           _ModuleCard(
             tag: 'pp_detention_provisoire_tableau',
-            title: 'Tableau récapitulatif',
-            subtitle:
-                'Synthèse visuelle des délais, autorités compétentes et voies de recours en matière de détention provisoire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00014",
+              'Tableau récapitulatif',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00015",
+              'Synthèse visuelle des délais, autorités compétentes et voies de recours en matière de détention provisoire.',
+            ),
             imagePath: 'assets/images/cat_organisation.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -160,9 +216,16 @@ class PPDetentionProvisoireContenuPage extends StatelessWidget {
           // ================= MODULE 7 — QUIZ =================
           _ModuleCard(
             tag: 'quiz_instruction_preparatoire',
-            title: 'Quiz — Détention provisoire',
-            subtitle:
-                'Testez votre maîtrise des mesures de contrainte et du déroulement de la détention provisoire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00016",
+              'Quiz — Détention provisoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/detention_provisoire_contenu.dart",
+              "f00017",
+              'Testez votre maîtrise des mesures de contrainte et du déroulement de la détention provisoire.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

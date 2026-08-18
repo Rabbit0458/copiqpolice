@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — CONTRÔLE DE LA CONSTITUTIONNALITÉ DES LOIS
@@ -49,7 +50,11 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Contrôle de la constitutionnalité des lois',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+            "f00001",
+            'Contrôle de la constitutionnalité des lois',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17,
@@ -65,7 +70,11 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
         children: [
           // ================= TITRE + INTRO =================
           Text(
-            'Le contrôle de la constitutionnalité des lois',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+              "f00002",
+              'Le contrôle de la constitutionnalité des lois',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -73,22 +82,46 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'La Constitution est la norme suprême de l’État : toutes les lois devraient lui être conformes. '
-                  'Mais cette supériorité n’a de sens que si elle est accompagnée d’un mécanisme de contrôle. '
-                  'Comprendre qui contrôle, quand et comment, est indispensable pour mesurer la solidité de la protection des libertés publiques.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00003",
+                    'La Constitution est la norme suprême de l’État : toutes les lois devraient lui être conformes. ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00004",
+                    'Mais cette supériorité n’a de sens que si elle est accompagnée d’un mécanisme de contrôle. ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00005",
+                    'Comprendre qui contrôle, quand et comment, est indispensable pour mesurer la solidité de la protection des libertés publiques.',
+                  ),
             ),
           ]),
           const SizedBox(height: 16),
           _NotaBox(
-            title: 'Idée-clé',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+              "f00006",
+              'Idée-clé',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Sans contrôle de constitutionnalité effectif, la supériorité de la Constitution resterait purement théorique : '
-                    'une loi portant atteinte aux libertés pourrait être appliquée malgré tout. Le contrôle est donc un outil central de l’État de droit.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00007",
+                      'Sans contrôle de constitutionnalité effectif, la supériorité de la Constitution resterait purement théorique : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00008",
+                      'une loi portant atteinte aux libertés pourrait être appliquée malgré tout. Le contrôle est donc un outil central de l’État de droit.',
+                    ),
                 style: TextStyle(color: textColor),
               ),
             ],
@@ -99,51 +132,115 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
           // I — CONSTITUTION SOUPLE / RIGIDE & SUPRÉMATIE
           // =====================================================
           _HypoCard(
-            title: 'I — Suprématie constitutionnelle et types de Constitution',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+              "f00009",
+              'I — Suprématie constitutionnelle et types de Constitution',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Dans la plupart des États modernes, la Constitution est considérée comme une norme '
-                'supérieure aux autres, notamment aux lois ordinaires. Mais cette supériorité ne se '
-                'manifeste pas de la même manière partout : tout dépend du type de Constitution adopté.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00010",
+                      'Dans la plupart des États modernes, la Constitution est considérée comme une norme ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00011",
+                      'supérieure aux autres, notamment aux lois ordinaires. Mais cette supériorité ne se ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00012",
+                      'manifeste pas de la même manière partout : tout dépend du type de Constitution adopté.',
+                    ),
               ),
               const SizedBox(height: 10),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Constitution souple : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00013",
+                    'Constitution souple : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la Constitution peut être révisée par la même procédure que la loi ordinaire. '
-                      'Elle a, en pratique, la même valeur juridique que les lois votées par le Parlement. '
-                      'La loi n’est pas tenue de respecter un texte supérieur intangible.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00014",
+                        'la Constitution peut être révisée par la même procédure que la loi ordinaire. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00015",
+                        'Elle a, en pratique, la même valeur juridique que les lois votées par le Parlement. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00016",
+                        'La loi n’est pas tenue de respecter un texte supérieur intangible.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Constitution rigide : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00017",
+                    'Constitution rigide : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la révision constitutionnelle obéit à une procédure distincte et plus exigeante '
-                      '(majorités renforcées, référendum, etc.). La Constitution est alors clairement '
-                      'supérieure aux lois ordinaires, qui doivent impérativement lui être conformes.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00018",
+                        'la révision constitutionnelle obéit à une procédure distincte et plus exigeante ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00019",
+                        '(majorités renforcées, référendum, etc.). La Constitution est alors clairement ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00020",
+                        'supérieure aux lois ordinaires, qui doivent impérativement lui être conformes.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
               _NotaBox(
-                title: 'Conséquence pratique',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                  "f00021",
+                  'Conséquence pratique',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Dans un système de Constitution souple, la supériorité de la Constitution est faible ou inexistante. '
-                        'Dans un système rigide, elle devient un véritable outil de protection des droits fondamentaux, '
-                        'à condition d’être assortie d’un mécanisme de contrôle efficace.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00022",
+                          'Dans un système de Constitution souple, la supériorité de la Constitution est faible ou inexistante. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00023",
+                          'Dans un système rigide, elle devient un véritable outil de protection des droits fondamentaux, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00024",
+                          'à condition d’être assortie d’un mécanisme de contrôle efficace.',
+                        ),
                     style: TextStyle(color: textColor),
                   ),
                 ],
@@ -157,50 +254,110 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
           // CHAPITRE 1 — PROCÉDURE DE RÉVISION
           // =====================================================
           _HypoCard(
-            title: 'Chapitre 1 — La procédure de révision de la Constitution',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+              "f00025",
+              'Chapitre 1 — La procédure de révision de la Constitution',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La manière dont on révise la Constitution dépend du type de régime : souple ou rigide. '
-                'Cette procédure révèle le degré de protection accordé au texte constitutionnel.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00026",
+                      'La manière dont on révise la Constitution dépend du type de régime : souple ou rigide. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00027",
+                      'Cette procédure révèle le degré de protection accordé au texte constitutionnel.',
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Dans un État à Constitution souple : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00028",
+                    'Dans un État à Constitution souple : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la Constitution peut être modifiée par le même procédé que la loi ordinaire '
-                      '(même organe, même majorité, même procédure). Elle est donc facilement révisable.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00029",
+                        'la Constitution peut être modifiée par le même procédé que la loi ordinaire ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00030",
+                        '(même organe, même majorité, même procédure). Elle est donc facilement révisable.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Dans un État à Constitution rigide : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00031",
+                    'Dans un État à Constitution rigide : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'une procédure spécifique est prévue : intervention obligatoire du peuple, '
-                      'majorité qualifiée, double vote, délai entre les lectures… L’idée est de '
-                      'rendre la révision plus solennelle et plus difficile, afin de préserver la stabilité du texte.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00032",
+                        'une procédure spécifique est prévue : intervention obligatoire du peuple, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00033",
+                        'majorité qualifiée, double vote, délai entre les lectures… L’idée est de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00034",
+                        'rendre la révision plus solennelle et plus difficile, afin de préserver la stabilité du texte.',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
               _ExempleBox(
-                title: 'Exemple français',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                  "f00035",
+                  'Exemple français',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'En France, l’article 89 de la Constitution de 1958 prévoit que la révision doit être '
-                        'adoptée en termes identiques par l’Assemblée nationale et le Sénat, puis approuvée '
-                        'par référendum ou par le Parlement réuni en Congrès à la majorité des 3/5. '
-                        'On est donc clairement dans un régime de Constitution rigide.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00036",
+                          'En France, l’article 89 de la Constitution de 1958 prévoit que la révision doit être ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00037",
+                          'adoptée en termes identiques par l’Assemblée nationale et le Sénat, puis approuvée ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00038",
+                          'par référendum ou par le Parlement réuni en Congrès à la majorité des 3/5. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00039",
+                          'On est donc clairement dans un régime de Constitution rigide.',
+                        ),
                   ),
                 ],
               ),
@@ -213,46 +370,102 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
           // CHAPITRE 2 — PROCÉDURE DE CONTRÔLE DE LA CONSTITUTION
           // =====================================================
           _HypoCard(
-            title: 'Chapitre 2 — La procédure de contrôle de la Constitution',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+              "f00040",
+              'Chapitre 2 — La procédure de contrôle de la Constitution',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Au-delà de la révision, se pose la question du respect quotidien de la Constitution par les lois. '
-                'Là encore, tout dépend du système adopté.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00041",
+                      'Au-delà de la révision, se pose la question du respect quotidien de la Constitution par les lois. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00042",
+                      'Là encore, tout dépend du système adopté.',
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Dans une Constitution souple : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00043",
+                    'Dans une Constitution souple : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la loi ordinaire n’est pas tenue de respecter les règles inscrites dans la Constitution. '
-                      'Elle peut même les contredire sans qu’aucune sanction particulière ne soit prévue. '
-                      'La supériorité de la Constitution reste alors largement théorique.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00044",
+                        'la loi ordinaire n’est pas tenue de respecter les règles inscrites dans la Constitution. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00045",
+                        'Elle peut même les contredire sans qu’aucune sanction particulière ne soit prévue. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00046",
+                        'La supériorité de la Constitution reste alors largement théorique.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Dans une Constitution rigide : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00047",
+                    'Dans une Constitution rigide : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'toute loi doit respecter la Constitution et les textes qui en font partie intégrante '
-                      '(déclarations de droits, préambules, chartes). Toute norme législative contraire '
-                      'est dite inconstitutionnelle et devrait être écartée ou annulée.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00048",
+                        'toute loi doit respecter la Constitution et les textes qui en font partie intégrante ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00049",
+                        '(déclarations de droits, préambules, chartes). Toute norme législative contraire ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00050",
+                        'est dite inconstitutionnelle et devrait être écartée ou annulée.',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                'Il devient alors indispensable de prévoir un mécanisme de contrôle pour constater '
-                'l’inconstitutionnalité et empêcher l’application de la loi contraire. Sans cela, '
-                'la supériorité de la Constitution resterait sans effet concret.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00051",
+                      'Il devient alors indispensable de prévoir un mécanisme de contrôle pour constater ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00052",
+                      'l’inconstitutionnalité et empêcher l’application de la loi contraire. Sans cela, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00053",
+                      'la supériorité de la Constitution resterait sans effet concret.',
+                    ),
               ),
             ],
           ),
@@ -263,24 +476,47 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
           // CHAPITRE 3 — CONTRÔLE EFFECTIF DE LA CONSTITUTIONNALITÉ
           // =====================================================
           _HypoCard(
-            title:
-                'Chapitre 3 — Le contrôle effectif de la constitutionnalité des lois',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+              "f00054",
+              'Chapitre 3 — Le contrôle effectif de la constitutionnalité des lois',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'L’exercice réel du contrôle suppose la saisine d’organes juridictionnels compétents. '
-                'Deux grands modèles existent classiquement : le contrôle par voie d’exception et le '
-                'contrôle par une juridiction constitutionnelle spécialisée. En France, s’ajoute un '
-                'mécanisme original : la question prioritaire de constitutionnalité (QPC).',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00055",
+                      'L’exercice réel du contrôle suppose la saisine d’organes juridictionnels compétents. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00056",
+                      'Deux grands modèles existent classiquement : le contrôle par voie d’exception et le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00057",
+                      'contrôle par une juridiction constitutionnelle spécialisée. En France, s’ajoute un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00058",
+                      'mécanisme original : la question prioritaire de constitutionnalité (QPC).',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // 3.1 – Voie d’exception
               Text(
-                '3.1 — Le contrôle de la constitutionnalité des lois par voie d’exception',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                  "f00059",
+                  '3.1 — Le contrôle de la constitutionnalité des lois par voie d’exception',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -288,32 +524,68 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Dans ce système (emblématique des États-Unis), n’importe quel juge ordinaire peut, '
-                'à l’occasion d’un litige, vérifier la conformité de la loi qu’il doit appliquer à la Constitution. '
-                'S’il estime que la loi est contraire à la Constitution, il refuse simplement de l’appliquer au litige en cours.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00060",
+                      'Dans ce système (emblématique des États-Unis), n’importe quel juge ordinaire peut, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00061",
+                      'à l’occasion d’un litige, vérifier la conformité de la loi qu’il doit appliquer à la Constitution. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00062",
+                      'S’il estime que la loi est contraire à la Constitution, il refuse simplement de l’appliquer au litige en cours.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Le juge ne “supprime” pas la loi : il écarte son application dans l’affaire dont il est saisi. '
-                      'Si une juridiction supérieure confirme cette analyse (Cour suprême, Cour de cassation…), '
-                      'la norme inconstitutionnelle cessera progressivement d’être appliquée dans tout l’ordre juridique.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00063",
+                        'Le juge ne “supprime” pas la loi : il écarte son application dans l’affaire dont il est saisi. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00064",
+                        'Si une juridiction supérieure confirme cette analyse (Cour suprême, Cour de cassation…), ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00065",
+                        'la norme inconstitutionnelle cessera progressivement d’être appliquée dans tout l’ordre juridique.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Ce contrôle est diffus (tout juge peut l’exercer) et concret (lié à un litige précis). '
-                      'Il offre une protection fine mais au prix d’une certaine incertitude juridique.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00066",
+                        'Ce contrôle est diffus (tout juge peut l’exercer) et concret (lié à un litige précis). ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00067",
+                        'Il offre une protection fine mais au prix d’une certaine incertitude juridique.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // 3.2 – Juridiction constitutionnelle
               Text(
-                '3.2 — Le contrôle par une juridiction constitutionnelle',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                  "f00068",
+                  '3.2 — Le contrôle par une juridiction constitutionnelle',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -322,53 +594,105 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Dans ce modèle, le contrôle est confié à un organe spécialisé : une juridiction constitutionnelle. '
-                      'En France, il s’agit du ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00069",
+                        'Dans ce modèle, le contrôle est confié à un organe spécialisé : une juridiction constitutionnelle. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00070",
+                        'En France, il s’agit du ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Conseil constitutionnel',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00071",
+                    'Conseil constitutionnel',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', créé par la Constitution de 1958. Cette juridiction a vocation à écarter toute disposition législative '
-                      'contraire à la Constitution et à empêcher son entrée en vigueur.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00072",
+                        ', créé par la Constitution de 1958. Cette juridiction a vocation à écarter toute disposition législative ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00073",
+                        'contraire à la Constitution et à empêcher son entrée en vigueur.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Contrôle a priori : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00074",
+                    'Contrôle a priori : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'en France, le Conseil constitutionnel peut être saisi avant la promulgation d’une loi. '
-                      'La saisine est possible par le Président de la République, le Premier ministre, '
-                      'les présidents de l’Assemblée nationale ou du Sénat, ou encore par 60 députés ou 60 sénateurs.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00075",
+                        'en France, le Conseil constitutionnel peut être saisi avant la promulgation d’une loi. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00076",
+                        'La saisine est possible par le Président de la République, le Premier ministre, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00077",
+                        'les présidents de l’Assemblée nationale ou du Sénat, ou encore par 60 députés ou 60 sénateurs.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Effet de la décision : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00078",
+                    'Effet de la décision : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'une disposition déclarée inconstitutionnelle ne peut être promulguée ni appliquée. '
-                      'Le contrôle est donc abstrait (portant sur le texte lui-même) et concentré (exercé par une seule juridiction).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00079",
+                        'une disposition déclarée inconstitutionnelle ne peut être promulguée ni appliquée. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00080",
+                        'Le contrôle est donc abstrait (portant sur le texte lui-même) et concentré (exercé par une seule juridiction).',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // 3.3 – QPC
               Text(
-                '3.3 — La question prioritaire de constitutionnalité (QPC)',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                  "f00081",
+                  '3.3 — La question prioritaire de constitutionnalité (QPC)',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -377,15 +701,30 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'La révision du 23 juillet 2008 a introduit dans la Constitution de 1958 l’article 61-1. '
-                      'Il permet à tout justiciable de soutenir, à l’occasion d’un procès en cours, qu’une disposition législative '
-                      'porte atteinte aux droits et libertés que la Constitution garantit. ',
-                ),
                 TextSpan(
                   text:
-                      'Si la question est sérieuse, le Conseil constitutionnel peut être saisi pour trancher.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00082",
+                        'La révision du 23 juillet 2008 a introduit dans la Constitution de 1958 l’article 61-1. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00083",
+                        'Il permet à tout justiciable de soutenir, à l’occasion d’un procès en cours, qu’une disposition législative ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00084",
+                        'porte atteinte aux droits et libertés que la Constitution garantit. ',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00085",
+                    'Si la question est sérieuse, le Conseil constitutionnel peut être saisi pour trancher.',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: referenceColor,
@@ -393,56 +732,123 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'La procédure se déroule en trois grandes étapes, encadrées par une loi organique et un décret de 2010 :',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                  "f00086",
+                  'La procédure se déroule en trois grandes étapes, encadrées par une loi organique et un décret de 2010 :',
+                ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: '1) Devant la juridiction saisie du litige : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00087",
+                    '1) Devant la juridiction saisie du litige : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la partie invoque la QPC. La juridiction vérifie si la disposition est applicable au litige, '
-                      'si elle n’a pas déjà été déclarée conforme dans les mêmes circonstances et si la question présente un caractère sérieux. '
-                      'Si ces conditions sont réunies, elle transmet la QPC au Conseil d’État ou à la Cour de cassation.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00088",
+                        'la partie invoque la QPC. La juridiction vérifie si la disposition est applicable au litige, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00089",
+                        'si elle n’a pas déjà été déclarée conforme dans les mêmes circonstances et si la question présente un caractère sérieux. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00090",
+                        'Si ces conditions sont réunies, elle transmet la QPC au Conseil d’État ou à la Cour de cassation.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      '2) Devant le Conseil d’État ou la Cour de cassation : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00091",
+                    '2) Devant le Conseil d’État ou la Cour de cassation : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la haute juridiction exerce un second filtre. Elle dispose d’un délai limité pour décider '
-                      's’il y a lieu de renvoyer la question au Conseil constitutionnel. En cas de refus, la juridiction '
-                      'initiale statue sur le litige sans renvoi.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00092",
+                        'la haute juridiction exerce un second filtre. Elle dispose d’un délai limité pour décider ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00093",
+                        's’il y a lieu de renvoyer la question au Conseil constitutionnel. En cas de refus, la juridiction ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00094",
+                        'initiale statue sur le litige sans renvoi.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: '3) Devant le Conseil constitutionnel : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                    "f00095",
+                    '3) Devant le Conseil constitutionnel : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'saisi par renvoi, le Conseil se prononce sur la conformité de la disposition législative '
-                      'aux droits et libertés garantis par la Constitution. Sa décision a une portée générale : '
-                      'si la disposition est jugée inconstitutionnelle, elle est abrogée et ne peut plus être appliquée, '
-                      'sauf réintroduction ultérieure dans un contexte de “changement de circonstances”.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00096",
+                        'saisi par renvoi, le Conseil se prononce sur la conformité de la disposition législative ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00097",
+                        'aux droits et libertés garantis par la Constitution. Sa décision a une portée générale : ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00098",
+                        'si la disposition est jugée inconstitutionnelle, elle est abrogée et ne peut plus être appliquée, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00099",
+                        'sauf réintroduction ultérieure dans un contexte de “changement de circonstances”.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
               _NotaBox(
-                title: 'Intérêt de la QPC',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                  "f00100",
+                  'Intérêt de la QPC',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La QPC permet de contrôler des lois déjà en vigueur, souvent anciennes, à partir de situations concrètes. '
-                        'Elle renforce considérablement la protection des libertés publiques, en donnant la parole au justiciable lui-même.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00101",
+                          'La QPC permet de contrôler des lois déjà en vigueur, souvent anciennes, à partir de situations concrètes. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                          "f00102",
+                          'Elle renforce considérablement la protection des libertés publiques, en donnant la parole au justiciable lui-même.',
+                        ),
                     style: TextStyle(color: textColor),
                   ),
                 ],
@@ -454,31 +860,67 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
 
           // ====================== SYNTHÈSE FINALE ======================
           _HypoCard(
-            title: 'Synthèse — Lire la loi à la lumière de la Constitution',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+              "f00103",
+              'Synthèse — Lire la loi à la lumière de la Constitution',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Pour le policier, la Constitution n’est pas un texte abstrait réservé aux juristes : '
-                'elle irrigue l’ensemble des lois qu’il applique au quotidien. Savoir qu’une mesure peut '
-                'être contrôlée, censurée ou abrogée en cas d’atteinte excessive aux droits fondamentaux '
-                'est un repère essentiel dans l’exercice de ses missions.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00104",
+                      'Pour le policier, la Constitution n’est pas un texte abstrait réservé aux juristes : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00105",
+                      'elle irrigue l’ensemble des lois qu’il applique au quotidien. Savoir qu’une mesure peut ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00106",
+                      'être contrôlée, censurée ou abrogée en cas d’atteinte excessive aux droits fondamentaux ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                      "f00107",
+                      'est un repère essentiel dans l’exercice de ses missions.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Toujours garder à l’esprit la hiérarchie des normes : la loi n’est valable '
-                      'que si elle respecte la Constitution et les textes qui en font partie intégrante.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00108",
+                        'Toujours garder à l’esprit la hiérarchie des normes : la loi n’est valable ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00109",
+                        'que si elle respecte la Constitution et les textes qui en font partie intégrante.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Les mécanismes de contrôle (Conseil constitutionnel, QPC, conventions internationales) '
-                      'sont des garde-fous qui protègent le citoyen… mais aussi le policier, en lui fournissant un cadre juridique clair.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00110",
+                        'Les mécanismes de contrôle (Conseil constitutionnel, QPC, conventions internationales) ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/controle_constitutionnalite_lois_page.dart",
+                        "f00111",
+                        'sont des garde-fous qui protègent le citoyen… mais aussi le policier, en lui fournissant un cadre juridique clair.',
+                      ),
                 ),
               ]),
             ],

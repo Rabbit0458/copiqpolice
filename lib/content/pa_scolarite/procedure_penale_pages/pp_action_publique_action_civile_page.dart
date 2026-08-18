@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
   const PaPPActionPubliqueActionCivilePage({super.key});
@@ -12,7 +13,9 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Action publique & civile',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+            "f00002",
+            'Action publique & civile',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Action publique et action civile\nà la suite d’une infraction pénale',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00003",
+              'Action publique et action civile\nà la suite d’une infraction pénale',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -50,9 +65,21 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Fondements, acteurs, modalités d’exercice et extinction de '
-            'l’action publique, articulation avec l’action civile et '
-            'tableau synthétique des différentes actions possibles.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+                  "f00004",
+                  'Fondements, acteurs, modalités d’exercice et extinction de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+                  "f00005",
+                  'l’action publique, articulation avec l’action civile et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+                  "f00006",
+                  'tableau synthétique des différentes actions possibles.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +92,16 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
           // ===================== CHAPITRE 1 — TITRE PRÉLIMINAIRE ============
           _ModuleCard(
             tag: 'pp_apac_ch1',
-            title: 'Chapitre 1 — Titre préliminaire',
-            subtitle:
-                'Principes généraux, finalités de l’action publique, place de la victime et de la société dans la répression pénale.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00007",
+              'Chapitre 1 — Titre préliminaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00008",
+              'Principes généraux, finalités de l’action publique, place de la victime et de la société dans la répression pénale.',
+            ),
             imagePath: 'assets/images/generalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,9 +115,16 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
           // ========== CHAPITRE 2 — SUJETS DE L’ACTION PUBLIQUE ==============
           _ModuleCard(
             tag: 'pp_apac_ch2',
-            title: 'Chapitre 2 — Les sujets de l’action publique',
-            subtitle:
-                'Ministère public, autorités de poursuite, parties privées : rôles, compétences et initiatives possibles.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00009",
+              'Chapitre 2 — Les sujets de l’action publique',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00010",
+              'Ministère public, autorités de poursuite, parties privées : rôles, compétences et initiatives possibles.',
+            ),
             imagePath: 'assets/images/aggravations.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -97,9 +138,16 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
           // ======== CHAPITRE 3 — EXERCICE DE L’ACTION PUBLIQUE ==============
           _ModuleCard(
             tag: 'pp_apac_ch3',
-            title: 'Chapitre 3 — L’exercice de l’action publique',
-            subtitle:
-                'Déclenchement, modes de poursuite, opportunité des poursuites et principaux schémas procéduraux.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00011",
+              'Chapitre 3 — L’exercice de l’action publique',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00012",
+              'Déclenchement, modes de poursuite, opportunité des poursuites et principaux schémas procéduraux.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -113,9 +161,16 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
           // ======== CHAPITRE 4 — EXTINCTION DE L’ACTION PUBLIQUE ============
           _ModuleCard(
             tag: 'pp_apac_ch4',
-            title: 'Chapitre 4 — L’extinction de l’action publique',
-            subtitle:
-                'Prescriptions, amnistie, décès, retrait de plainte et autres causes d’extinction de l’action publique.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00013",
+              'Chapitre 4 — L’extinction de l’action publique',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00014",
+              'Prescriptions, amnistie, décès, retrait de plainte et autres causes d’extinction de l’action publique.',
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -129,10 +184,16 @@ class PaPPActionPubliqueActionCivilePage extends StatelessWidget {
           // ====================== TABLEAU SYNTHÉTIQUE =======================
           _ModuleCard(
             tag: 'pp_apac_tableau',
-            title:
-                'Tableau — Actions publique et civile\nsuite à une faute pénale',
-            subtitle:
-                'Comparatif des actions possibles, titulaires, délais, objet et effets : outil de révision rapide.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00015",
+              'Tableau — Actions publique et civile\nsuite à une faute pénale',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart",
+              "f00016",
+              'Comparatif des actions possibles, titulaires, délais, objet et effets : outil de révision rapide.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,

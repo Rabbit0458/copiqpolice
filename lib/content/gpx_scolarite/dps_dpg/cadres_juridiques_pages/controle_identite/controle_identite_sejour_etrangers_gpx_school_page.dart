@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConntroleIdentiteSejourGpxSchool extends StatelessWidget {
   const ConntroleIdentiteSejourGpxSchool({super.key});
@@ -38,10 +39,18 @@ class ConntroleIdentiteSejourGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Séjour des étrangers',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+            "f00002",
+            'Séjour des étrangers',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class ConntroleIdentiteSejourGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO ============================
           Text(
-            'Contrôle de la régularité du séjour des étrangers',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+              "f00003",
+              'Contrôle de la régularité du séjour des étrangers',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,8 +77,16 @@ class ConntroleIdentiteSejourGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Champ d’application du contrôle des titres de séjour, critères d’extranéité et limites '
-            'légales posées par le code de l’entrée et du séjour des étrangers et du droit d’asile.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00004",
+                  'Champ d’application du contrôle des titres de séjour, critères d’extranéité et limites ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00005",
+                  'légales posées par le code de l’entrée et du séjour des étrangers et du droit d’asile.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -76,143 +97,295 @@ class ConntroleIdentiteSejourGpxSchool extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title:
-                '1.3.2 – Le contrôle de la régularité du séjour des étrangers',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+              "f00006",
+              '1.3.2 – Le contrôle de la régularité du séjour des étrangers',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               // ===================== INTRO – CADRE JURIDIQUE =============
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Le contrôle des documents autorisant la circulation et le séjour sur le territoire français '
-                      'est encadré par les ',
-                ),
                 TextSpan(
                   text:
-                      'articles L. 812-1 et L. 812-2 du code de l’entrée et du séjour des étrangers et du droit d’asile (CESEDA)',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                        "f00007",
+                        'Le contrôle des documents autorisant la circulation et le séjour sur le territoire français ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                        "f00008",
+                        'est encadré par les ',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                    "f00009",
+                    'articles L. 812-1 et L. 812-2 du code de l’entrée et du séjour des étrangers et du droit d’asile (CESEDA)',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      '. Ces dispositions précisent dans quelles conditions les étrangers doivent être en mesure de '
-                      'présenter les pièces ou documents sous le couvert desquels ils sont autorisés à circuler ou à '
-                      'séjourner en France.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                        "f00010",
+                        '. Ces dispositions précisent dans quelles conditions les étrangers doivent être en mesure de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                        "f00011",
+                        'présenter les pièces ou documents sous le couvert desquels ils sont autorisés à circuler ou à ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                        "f00012",
+                        'séjourner en France.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // ===================== 1.3.2.1 – CHAMP D’APPLICATION =======
-              const _SubTitle('1.3.2.1 – Champ d’application'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00013",
+                  '1.3.2.1 – Champ d’application',
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: 'L’'),
                 TextSpan(
-                  text:
-                      'article L. 812-2, 2° du code de l’entrée et du séjour des étrangers et du droit d’asile',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                    "f00014",
+                    'L’',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                    "f00015",
+                    'article L. 812-2, 2° du code de l’entrée et du séjour des étrangers et du droit d’asile',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' prévoit qu’à la suite d’un contrôle d’identité effectué en application des ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                    "f00016",
+                    ' prévoit qu’à la suite d’un contrôle d’identité effectué en application des ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'articles 78-1 à 78-2-2 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                    "f00017",
+                    'articles 78-1 à 78-2-2 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', les personnes de nationalité étrangère doivent être en mesure de présenter les pièces ou '
-                      'documents sous le couvert desquels elles sont autorisées à circuler ou à séjourner en France.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                        "f00018",
+                        ', les personnes de nationalité étrangère doivent être en mesure de présenter les pièces ou ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                        "f00019",
+                        'documents sous le couvert desquels elles sont autorisées à circuler ou à séjourner en France.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Il s’agit donc d’un contrôle qui intervient en second temps : d’abord un contrôle d’identité régulier '
-                'au titre du code de procédure pénale, puis, si la personne est étrangère, un contrôle de la régularité '
-                'de sa situation au regard du code de l’entrée et du séjour des étrangers et du droit d’asile.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00020",
+                      'Il s’agit donc d’un contrôle qui intervient en second temps : d’abord un contrôle d’identité régulier ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00021",
+                      'au titre du code de procédure pénale, puis, si la personne est étrangère, un contrôle de la régularité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00022",
+                      'de sa situation au regard du code de l’entrée et du séjour des étrangers et du droit d’asile.',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // ===================== 1.3.2.2 – CRITERES D’EXTRANEITE =====
-              const _SubTitle('1.3.2.2 – Critères d’extranéité'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00023",
+                  '1.3.2.2 – Critères d’extranéité',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'L’article L. 812-2, 1° du code de l’entrée et du séjour des étrangers et du droit d’asile ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                    "f00024",
+                    'L’article L. 812-2, 1° du code de l’entrée et du séjour des étrangers et du droit d’asile ',
+                  ),
                   style: TextStyle(color: textSoft),
                 ),
                 TextSpan(
-                  text:
-                      'prévoit que le contrôle de situation administrative ne peut être pratiqué que si des « éléments objectifs déduits de circonstances extérieures à la personne même de l’intéressé sont de nature à faire apparaître sa qualité d’étranger ». ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                    "f00025",
+                    'prévoit que le contrôle de situation administrative ne peut être pratiqué que si des « éléments objectifs déduits de circonstances extérieures à la personne même de l’intéressé sont de nature à faire apparaître sa qualité d’étranger ». ',
+                  ),
                   style: TextStyle(color: textSoft),
                 ),
               ]),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Le recours à ces éléments objectifs exclut toute discrimination fondée, par exemple, sur la couleur '
-                'de peau, la morphologie, la tenue vestimentaire, l’usage d’une langue étrangère, le nom ou le lieu '
-                'de naissance déclaré. Ce sont les circonstances extérieures de la situation qui doivent révéler la '
-                'qualité d’étranger.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00026",
+                      'Le recours à ces éléments objectifs exclut toute discrimination fondée, par exemple, sur la couleur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00027",
+                      'de peau, la morphologie, la tenue vestimentaire, l’usage d’une langue étrangère, le nom ou le lieu ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00028",
+                      'de naissance déclaré. Ce sont les circonstances extérieures de la situation qui doivent révéler la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00029",
+                      'qualité d’étranger.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Il n’existe pas de liste légale exhaustive de ces critères objectifs : ils ont été dégagés par la '
-                'jurisprudence. À titre d’illustration, peuvent constituer de tels éléments :',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00030",
+                      'Il n’existe pas de liste légale exhaustive de ces critères objectifs : ils ont été dégagés par la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00031",
+                      'jurisprudence. À titre d’illustration, peuvent constituer de tels éléments :',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint(
-                text:
-                    'La circulation à bord d’un véhicule immatriculé à l’étranger ;',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00032",
+                  'La circulation à bord d’un véhicule immatriculé à l’étranger ;',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'La participation à une manifestation avec port de banderoles rédigées en langue étrangère ;',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00033",
+                  'La participation à une manifestation avec port de banderoles rédigées en langue étrangère ;',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'La distribution de tracts ou l’apposition d’affiches rédigées en langue étrangère ;',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00034",
+                  'La distribution de tracts ou l’apposition d’affiches rédigées en langue étrangère ;',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'L’occupation sans titre de bâtiments en revendiquant publiquement une situation irrégulière.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00035",
+                  'L’occupation sans titre de bâtiments en revendiquant publiquement une situation irrégulière.',
+                ),
               ),
               const SizedBox(height: 14),
 
               // ===================== 1.3.2.3 – DISPOSITIONS DU CONTROLE ===
-              const _SubTitle('1.3.2.3 – Dispositions du contrôle'),
-              const _Paragraph(
-                'L’article L. 812-2, 1° du code de l’entrée et du séjour des étrangers et du droit d’asile fixe des '
-                'limites précises à ces contrôles afin de garantir le respect des libertés individuelles et d’éviter '
-                'les contrôles généralisés ou systématiques.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00036",
+                  '1.3.2.3 – Dispositions du contrôle',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00037",
+                      'L’article L. 812-2, 1° du code de l’entrée et du séjour des étrangers et du droit d’asile fixe des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00038",
+                      'limites précises à ces contrôles afin de garantir le respect des libertés individuelles et d’éviter ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                      "f00039",
+                      'les contrôles généralisés ou systématiques.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _IntroBullet(
-                text:
-                    'Le contrôle ne peut être pratiqué que pour une durée n’excédant pas six heures consécutives dans un même lieu.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00040",
+                  'Le contrôle ne peut être pratiqué que pour une durée n’excédant pas six heures consécutives dans un même lieu.',
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    'Le contrôle ne peut pas consister en un contrôle systématique de toutes les personnes présentes ou circulant dans les zones ou lieux concernés.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                  "f00041",
+                  'Le contrôle ne peut pas consister en un contrôle systématique de toutes les personnes présentes ou circulant dans les zones ou lieux concernés.',
+                ),
               ),
               const SizedBox(height: 14),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'En pratique, le policier doit pouvoir justifier, dans la procédure, des éléments objectifs '
-                        'ayant permis d’identifier la qualité d’étranger de la personne contrôlée et des limites de lieu '
-                        'et de temps dans lesquelles le contrôle de situation administrative a été réalisé.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                          "f00042",
+                          'En pratique, le policier doit pouvoir justifier, dans la procédure, des éléments objectifs ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                          "f00043",
+                          'ayant permis d’identifier la qualité d’étranger de la personne contrôlée et des limites de lieu ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart",
+                          "f00044",
+                          'et de temps dans lesquelles le contrôle de situation administrative a été réalisé.',
+                        ),
                   ),
                 ],
               ),
@@ -470,9 +643,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

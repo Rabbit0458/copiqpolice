@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EssuieGlacePage extends StatelessWidget {
   const EssuieGlacePage({super.key});
@@ -66,10 +67,18 @@ class EssuieGlacePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class EssuieGlacePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les essuie-glace",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+              "f00003",
+              "Les essuie-glace",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -99,10 +112,18 @@ class EssuieGlacePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’essuie-glace (et le lave-glace) garantit un champ de vision vers l’avant suffisant, "
-                "quelles que soient les conditions atmosphériques, afin que le conducteur voie distinctement la route.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00004",
+                      "L’essuie-glace (et le lave-glace) garantit un champ de vision vers l’avant suffisant, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00005",
+                      "quelles que soient les conditions atmosphériques, afin que le conducteur voie distinctement la route.",
+                    ),
               ),
             ],
           ),
@@ -111,25 +132,65 @@ class EssuieGlacePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 316-4 du Code de la route"),
-                const TextSpan(
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00007",
+                    "R. 316-4 du Code de la route",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : impose que le pare-brise des véhicules concernés soit muni d’au moins un essuie-glace "
-                      "avec surface d’action, puissance et fréquence suffisantes pour permettre au conducteur, depuis son siège, "
-                      "de voir distinctement la route vers l’avant.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                        "f00008",
+                        " : impose que le pare-brise des véhicules concernés soit muni d’au moins un essuie-glace ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                        "f00009",
+                        "avec surface d’action, puissance et fréquence suffisantes pour permettre au conducteur, depuis son siège, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                        "f00010",
+                        "de voir distinctement la route vers l’avant.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _boldSpan("NATINF 22626"),
-                const TextSpan(text: " — Base : "),
-                _lawSpan("R. 316-4 du Code de la route"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00011",
+                    "NATINF 22626",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00012",
+                    " — Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00013",
+                    "R. 316-4 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -138,55 +199,133 @@ class EssuieGlacePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Véhicules concernés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00015",
+                  "A) Véhicules concernés",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Sont concernés : "),
-                _boldSpan("les véhicules à moteur équipés d’un pare-brise"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00016",
+                    "Sont concernés : ",
+                  ),
+                ),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00017",
+                    "les véhicules à moteur équipés d’un pare-brise",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                const TextSpan(
-                  text:
-                      "à l’exclusion des catégories suivantes (selon le mémento) :",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00018",
+                    "à l’exclusion des catégories suivantes (selon le mémento) :",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(text: "Cyclomoteurs à deux roues."),
-              const _BulletPoint(
-                text: "Cyclomoteurs à trois roues non carrossés.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00019",
+                  "Cyclomoteurs à deux roues.",
+                ),
               ),
-              const _BulletPoint(
-                text: "Quadricycles légers à moteur non carrossés.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00020",
+                  "Cyclomoteurs à trois roues non carrossés.",
+                ),
               ),
-              const _BulletPoint(text: "Motocyclettes."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00021",
+                  "Quadricycles légers à moteur non carrossés.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00022",
+                  "Motocyclettes.",
+                ),
+              ),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Exigence de performance (essuie-glace)"),
-              const _Paragraph(
-                "Le(s) essuie-glace doivent avoir une surface d’action, une puissance et une fréquence suffisantes "
-                "pour que le conducteur puisse, depuis son siège, voir distinctement la route vers l’avant.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00023",
+                  "B) Exigence de performance (essuie-glace)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00024",
+                      "Le(s) essuie-glace doivent avoir une surface d’action, une puissance et une fréquence suffisantes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00025",
+                      "pour que le conducteur puisse, depuis son siège, voir distinctement la route vers l’avant.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Contrôle terrain",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00026",
+                  "Contrôle terrain",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La notion clé est la visibilité réelle : un essuie-glace présent mais inefficace/HS peut caractériser l’infraction.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00027",
+                      "La notion clé est la visibilité réelle : un essuie-glace présent mais inefficace/HS peut caractériser l’infraction.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "C) Dispositif lave-glace (complément obligatoire)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00028",
+                  "C) Dispositif lave-glace (complément obligatoire)",
+                ),
               ),
-              const _Paragraph(
-                "Le pare-brise doit également être équipé d’un dispositif lave-glace permettant de compléter l’action "
-                "de l’essuie-glace, afin d’assurer le champ de vision vers l’avant quelles que soient les conditions atmosphériques.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00029",
+                      "Le pare-brise doit également être équipé d’un dispositif lave-glace permettant de compléter l’action ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00030",
+                      "de l’essuie-glace, afin d’assurer le champ de vision vers l’avant quelles que soient les conditions atmosphériques.",
+                    ),
               ),
             ],
           ),
@@ -194,14 +333,26 @@ class EssuieGlacePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+              "f00031",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit d’une contravention d’équipement / de conformité : la matérialité du défaut (absence, inefficacité, "
-                "ou non-respect des exigences) suffit en pratique, sans qu’il soit nécessaire de démontrer une intention particulière.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00032",
+                      "Il s’agit d’une contravention d’équipement / de conformité : la matérialité du défaut (absence, inefficacité, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                      "f00033",
+                      "ou non-respect des exigences) suffit en pratique, sans qu’il soit nécessaire de démontrer une intention particulière.",
+                    ),
               ),
             ],
           ),
@@ -209,13 +360,21 @@ class EssuieGlacePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+              "f00034",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est indiquée dans l’extrait du mémento pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00035",
+                  "Aucune circonstance aggravante spécifique n’est indiquée dans l’extrait du mémento pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -223,31 +382,60 @@ class EssuieGlacePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+              "f00036",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _boldSpan("NATINF 22626"),
-                const TextSpan(
-                  text:
-                      " — Circulation d’un véhicule à moteur dont le pare-brise n’est pas équipé d’essuie-glace performant. Base : ",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00037",
+                    "NATINF 22626",
+                  ),
                 ),
-                _lawSpan("R. 316-4 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00038",
+                    " — Circulation d’un véhicule à moteur dont le pare-brise n’est pas équipé d’essuie-glace performant. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                    "f00039",
+                    "R. 316-4 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text: "Contravention : amende forfaitaire (minimum 3e classe).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00040",
+                  "Contravention : amende forfaitaire (minimum 3e classe).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "D.I.A. / Dépistage stupéfiants : facultatifs (selon mémento).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00041",
+                  "D.I.A. / Dépistage stupéfiants : facultatifs (selon mémento).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Mesure complémentaire : immobilisation (mentionnée au mémento).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00042",
+                  "Mesure complémentaire : immobilisation (mentionnée au mémento).",
+                ),
               ),
             ],
           ),
@@ -255,18 +443,28 @@ class EssuieGlacePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+              "f00043",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Tentative : NON (non applicable : contravention constatée par le défaut d’équipement/efficacité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00044",
+                  "Tentative : NON (non applicable : contravention constatée par le défaut d’équipement/efficacité).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complicité : NON (pas pertinente ici : contravention d’équipement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/essuie_glace_page.dart",
+                  "f00045",
+                  "Complicité : NON (pas pertinente ici : contravention d’équipement).",
+                ),
               ),
             ],
           ),

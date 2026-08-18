@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
     extends StatelessWidget {
@@ -36,10 +37,18 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Chapitre 4 — Extinction de l’action publique',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+            "f00002",
+            'Chapitre 4 — Extinction de l’action publique',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -53,7 +62,11 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
         children: [
           // =================== EN-TÊTE CHAPITRE ============================
           Text(
-            'L’extinction de l’action publique',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00003",
+              'L’extinction de l’action publique',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -63,9 +76,21 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
           ),
           const SizedBox(height: 6),
           Text(
-            'Une fois l’action publique mise en mouvement, encore faut-il qu’elle ne soit pas '
-            'frappée par une cause d’extinction. Certaines causes sont propres à des infractions '
-            'particulières, d’autres sont générales et s’appliquent à l’ensemble du contentieux pénal.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00004",
+                  'Une fois l’action publique mise en mouvement, encore faut-il qu’elle ne soit pas ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00005",
+                  'frappée par une cause d’extinction. Certaines causes sont propres à des infractions ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00006",
+                  'particulières, d’autres sont générales et s’appliquent à l’ensemble du contentieux pénal.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -77,15 +102,31 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.1 CAUSES PARTICULIERES ====================
           _ConditionCard(
-            title: '4.1 — Les causes particulières à certaines infractions',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00007",
+              '4.1 — Les causes particulières à certaines infractions',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Certaines infractions bénéficient de mécanismes spécifiques permettant '
-                'd’éteindre l’action publique, indépendamment des causes générales : transaction, '
-                'désistement ou retrait de plainte dans des hypothèses limitativement prévues.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00008",
+                      'Certaines infractions bénéficient de mécanismes spécifiques permettant ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00009",
+                      'd’éteindre l’action publique, indépendamment des causes générales : transaction, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00010",
+                      'désistement ou retrait de plainte dans des hypothèses limitativement prévues.',
+                    ),
               ),
             ],
           ),
@@ -94,62 +135,133 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.1.1 TRANSACTION ===========================
           _ConditionCard(
-            title: '4.1.1 — La transaction',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00011",
+              '4.1.1 — La transaction',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Dans des cas exceptionnels, l’action publique peut s’éteindre par voie de transaction. '
-                'La loi accorde ce droit à certaines administrations qui proposent à l’auteur de l’infraction '
-                'd’abandonner les poursuites en contrepartie du versement d’une somme d’argent ou de '
-                'l’exécution d’obligations déterminées.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00012",
+                      'Dans des cas exceptionnels, l’action publique peut s’éteindre par voie de transaction. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00013",
+                      'La loi accorde ce droit à certaines administrations qui proposent à l’auteur de l’infraction ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00014",
+                      'd’abandonner les poursuites en contrepartie du versement d’une somme d’argent ou de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00015",
+                      'l’exécution d’obligations déterminées.',
+                    ),
               ),
               SizedBox(height: 6),
 
-              _SubTitle('Transactions des administrations publiques'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00016",
+                  'Transactions des administrations publiques',
+                ),
+              ),
               _Paragraph(
-                'Certaines administrations (fiscales, administration chargée des forêts, douanes, etc.) '
-                'disposent d’un pouvoir de transaction. Lorsque le contrevenant accepte et exécute la transaction '
-                'dans le délai imparti, l’action publique est éteinte.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00017",
+                      'Certaines administrations (fiscales, administration chargée des forêts, douanes, etc.) ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00018",
+                      'disposent d’un pouvoir de transaction. Lorsque le contrevenant accepte et exécute la transaction ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00019",
+                      'dans le délai imparti, l’action publique est éteinte.',
+                    ),
               ),
               SizedBox(height: 8),
 
               _SubTitle(
-                'Transactions proposées par le maire en matière contraventionnelle',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00020",
+                  'Transactions proposées par le maire en matière contraventionnelle',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Pour les contraventions que les agents de la police municipale et les gardes-champêtres sont habilités à constater, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00021",
+                    'Pour les contraventions que les agents de la police municipale et les gardes-champêtres sont habilités à constater, ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 44-1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00022",
+                    'l’article 44-1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' et les articles L. 511-1, L. 512-2, L. 521-1, L. 531-1 et L. 532-1 du Code de la sécurité intérieure ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00023",
+                    ' et les articles L. 511-1, L. 512-2, L. 521-1, L. 531-1 et L. 532-1 du Code de la sécurité intérieure ',
+                  ),
                 ),
                 TextSpan(
                   text:
-                      'permettent au maire de proposer une transaction. Celle-ci doit être acceptée par le contrevenant puis homologuée, '
-                      'soit par le procureur de la République, soit par le juge du tribunal de police. L’action publique est éteinte lorsque '
-                      'l’auteur de l’infraction a exécuté les obligations résultant de la transaction.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00024",
+                        'permettent au maire de proposer une transaction. Celle-ci doit être acceptée par le contrevenant puis homologuée, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00025",
+                        'soit par le procureur de la République, soit par le juge du tribunal de police. L’action publique est éteinte lorsque ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00026",
+                        'l’auteur de l’infraction a exécuté les obligations résultant de la transaction.',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Il peut également y avoir transaction pour certaines infractions à la police des services publics de transports terrestres : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00027",
+                    'Il peut également y avoir transaction pour certaines infractions à la police des services publics de transports terrestres : ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 529-3 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00028",
+                    'l’article 529-3 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -157,19 +269,34 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                 ),
                 TextSpan(
                   text:
-                      ' prévoit une transaction entre l’exploitant et le contrevenant. Cette procédure n’est toutefois pas applicable si plusieurs infractions '
-                      'dont au moins une ne peut donner lieu à transaction sont constatées simultanément.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00029",
+                        ' prévoit une transaction entre l’exploitant et le contrevenant. Cette procédure n’est toutefois pas applicable si plusieurs infractions ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00030",
+                        'dont au moins une ne peut donner lieu à transaction sont constatées simultanément.',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Selon le Code de la santé publique, une forme particulière de transaction existe encore : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00031",
+                    'Selon le Code de la santé publique, une forme particulière de transaction existe encore : ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article L. 3423-1 du Code de la santé publique',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00032",
+                    'l’article L. 3423-1 du Code de la santé publique',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -177,19 +304,39 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                 ),
                 TextSpan(
                   text:
-                      ' permet au procureur de la République d’inviter un toxicomane à se soumettre à une injonction thérapeutique ou à une surveillance médicale '
-                      'plutôt que de le poursuivre pour usage de stupéfiants. Si l’intéressé se conforme à toutes les prescriptions, l’action publique n’est pas exercée.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00033",
+                        ' permet au procureur de la République d’inviter un toxicomane à se soumettre à une injonction thérapeutique ou à une surveillance médicale ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00034",
+                        'plutôt que de le poursuivre pour usage de stupéfiants. Si l’intéressé se conforme à toutes les prescriptions, l’action publique n’est pas exercée.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: 'À retenir',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00035",
+                  'À retenir',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'la transaction est une cause d’extinction de l’action publique lorsque la loi l’autorise expressément et que l’auteur exécute intégralement ses engagements. '
-                        'Elle est souvent utilisée pour les infractions techniques ou économiques.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                          "f00036",
+                          'la transaction est une cause d’extinction de l’action publique lorsque la loi l’autorise expressément et que l’auteur exécute intégralement ses engagements. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                          "f00037",
+                          'Elle est souvent utilisée pour les infractions techniques ou économiques.',
+                        ),
                   ),
                 ],
               ),
@@ -200,32 +347,50 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.1.2 RETRAIT PLAINTES =====================
           _ConditionCard(
-            title: '4.1.2 — Le désistement ou retrait de plainte de la victime',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00038",
+              '4.1.2 — Le désistement ou retrait de plainte de la victime',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Cette cause d’extinction ne joue que si la plainte de la victime est une condition nécessaire à la poursuite. ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00039",
+                    'Cette cause d’extinction ne joue que si la plainte de la victime est une condition nécessaire à la poursuite. ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'L’article 6 alinéa 3 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00040",
+                    'L’article 6 alinéa 3 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' le prévoit notamment pour des infractions comme la diffamation ou certaines atteintes à la vie privée.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00041",
+                    ' le prévoit notamment pour des infractions comme la diffamation ou certaines atteintes à la vie privée.',
+                  ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'L’article 2 alinéa 2 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00042",
+                    'L’article 2 alinéa 2 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -233,9 +398,21 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                 ),
                 TextSpan(
                   text:
-                      ' pose au contraire le principe selon lequel le retrait d’une plainte simple ou avec constitution de partie civile est, '
-                      'en principe, sans effet sur l’action publique. La situation visée ici est donc une dérogation à ce principe général, '
-                      'limitée aux cas où la plainte est une condition de recevabilité de la poursuite.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00043",
+                        ' pose au contraire le principe selon lequel le retrait d’une plainte simple ou avec constitution de partie civile est, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00044",
+                        'en principe, sans effet sur l’action publique. La situation visée ici est donc une dérogation à ce principe général, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00045",
+                        'limitée aux cas où la plainte est une condition de recevabilité de la poursuite.',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
@@ -243,8 +420,16 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                 bodySpans: [
                   TextSpan(
                     text:
-                        'lorsque la loi subordonne l’exercice de l’action publique au dépôt d’une plainte préalable, '
-                        'le désistement du plaignant éteint l’action publique. Dans les autres cas, le ministère public reste libre de poursuivre.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                          "f00046",
+                          'lorsque la loi subordonne l’exercice de l’action publique au dépôt d’une plainte préalable, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                          "f00047",
+                          'le désistement du plaignant éteint l’action publique. Dans les autres cas, le ministère public reste libre de poursuivre.',
+                        ),
                   ),
                 ],
               ),
@@ -255,16 +440,31 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2 CAUSES GENERALES ========================
           _ConditionCard(
-            title:
-                '4.2 — Les causes générales d’extinction de l’action publique',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00048",
+              '4.2 — Les causes générales d’extinction de l’action publique',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Les causes générales d’extinction de l’action publique s’appliquent à tous types d’infractions, '
-                'sauf dispositions spéciales contraires : amnistie, abrogation de la loi pénale, décès du prévenu, '
-                'chose jugée, prescription de l’action publique.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00049",
+                      'Les causes générales d’extinction de l’action publique s’appliquent à tous types d’infractions, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00050",
+                      'sauf dispositions spéciales contraires : amnistie, abrogation de la loi pénale, décès du prévenu, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00051",
+                      'chose jugée, prescription de l’action publique.',
+                    ),
               ),
             ],
           ),
@@ -273,28 +473,54 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.1 AMNISTIE ==============================
           _ConditionCard(
-            title: '4.2.1 — L’amnistie',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00052",
+              '4.2.1 — L’amnistie',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'L’amnistie est une mesure législative. Seul le Parlement peut décider, par une loi d’amnistie, '
-                'd’effacer rétroactivement le caractère punissable de certains faits.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00053",
+                      'L’amnistie est une mesure législative. Seul le Parlement peut décider, par une loi d’amnistie, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00054",
+                      'd’effacer rétroactivement le caractère punissable de certains faits.',
+                    ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
                 text:
-                    'Elle éteint immédiatement l’action publique pour tous les faits visés par la loi d’amnistie '
-                    'et antérieurs à la date fixée par cette loi ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00055",
+                      'Elle éteint immédiatement l’action publique pour tous les faits visés par la loi d’amnistie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00056",
+                      'et antérieurs à la date fixée par cette loi ;',
+                    ),
               ),
               _BulletPoint(
-                text:
-                    'elle peut être générale ou ne viser qu’une catégorie déterminée de délinquants (amnistie personnelle) ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00057",
+                  'elle peut être générale ou ne viser qu’une catégorie déterminée de délinquants (amnistie personnelle) ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'l’amnistie laisse subsister l’action civile : la victime conserve la possibilité de demander réparation du préjudice subi.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00058",
+                  'l’amnistie laisse subsister l’action civile : la victime conserve la possibilité de demander réparation du préjudice subi.',
+                ),
               ),
             ],
           ),
@@ -303,22 +529,54 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.2 ABROGATION LOI ========================
           _ConditionCard(
-            title: '4.2.2 — L’abrogation de la loi pénale',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00059",
+              '4.2.2 — L’abrogation de la loi pénale',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'La loi applicable à une infraction est, en principe, celle en vigueur au jour des faits. '
-                'Toutefois, si la loi pénale est abrogée et que cette abrogation s’accompagne d’un effet plus doux, '
-                'les poursuites déjà engagées peuvent cesser : le fait n’est plus incriminé.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00060",
+                      'La loi applicable à une infraction est, en principe, celle en vigueur au jour des faits. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00061",
+                      'Toutefois, si la loi pénale est abrogée et que cette abrogation s’accompagne d’un effet plus doux, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00062",
+                      'les poursuites déjà engagées peuvent cesser : le fait n’est plus incriminé.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'En vertu du principe de l’application immédiate de la loi pénale plus douce, une abrogation pure et simple '
-                'de l’infraction entraîne l’extinction des poursuites en cours. '
-                'Exceptionnellement, le législateur peut prévoir que l’abrogation ne vaudra que pour l’avenir, '
-                'les poursuites déjà engagées continuant alors selon l’ancienne loi.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00063",
+                      'En vertu du principe de l’application immédiate de la loi pénale plus douce, une abrogation pure et simple ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00064",
+                      'de l’infraction entraîne l’extinction des poursuites en cours. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00065",
+                      'Exceptionnellement, le législateur peut prévoir que l’abrogation ne vaudra que pour l’avenir, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00066",
+                      'les poursuites déjà engagées continuant alors selon l’ancienne loi.',
+                    ),
               ),
             ],
           ),
@@ -327,20 +585,44 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.3 DECES PREVENU =========================
           _ConditionCard(
-            title: '4.2.3 — Le décès du prévenu',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00067",
+              '4.2.3 — Le décès du prévenu',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Le décès du prévenu éteint l’action publique. Si les poursuites n’ont pas encore été engagées, '
-                'elles ne peuvent plus l’être. Si elles sont en cours, elles doivent être arrêtées.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00068",
+                      'Le décès du prévenu éteint l’action publique. Si les poursuites n’ont pas encore été engagées, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00069",
+                      'elles ne peuvent plus l’être. Si elles sont en cours, elles doivent être arrêtées.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'En application du principe de la personnalité des peines, les héritiers du délinquant ne peuvent pas '
-                'être poursuivis pénalement à sa place. En revanche, l’action civile peut être exercée contre eux afin de '
-                'réparer le dommage causé par l’infraction sur le patrimoine successoral.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00070",
+                      'En application du principe de la personnalité des peines, les héritiers du délinquant ne peuvent pas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00071",
+                      'être poursuivis pénalement à sa place. En revanche, l’action civile peut être exercée contre eux afin de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00072",
+                      'réparer le dommage causé par l’infraction sur le patrimoine successoral.',
+                    ),
               ),
             ],
           ),
@@ -349,28 +631,74 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.4 CHOSE JUGEE ===========================
           _ConditionCard(
-            title: '4.2.4 — La chose jugée et le principe non bis in idem',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00073",
+              '4.2.4 — La chose jugée et le principe non bis in idem',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Il y a chose jugée au pénal lorsque la décision de la juridiction répressive sur les faits reprochés '
-                'est devenue définitive, soit parce que les voies de recours ont été épuisées, soit parce que les délais pour les exercer sont expirés.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00074",
+                      'Il y a chose jugée au pénal lorsque la décision de la juridiction répressive sur les faits reprochés ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00075",
+                      'est devenue définitive, soit parce que les voies de recours ont été épuisées, soit parce que les délais pour les exercer sont expirés.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Cette décision définitive éteint l’action publique. Selon la jurisprudence, '
-                'aucune nouvelle poursuite pénale ne peut être intentée à raison des mêmes faits, '
-                'même sous une qualification différente, et même si des charges nouvelles apparaissent après une relaxe ou un acquittement. '
-                'C’est l’expression du principe “non bis in idem”.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00076",
+                      'Cette décision définitive éteint l’action publique. Selon la jurisprudence, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00077",
+                      'aucune nouvelle poursuite pénale ne peut être intentée à raison des mêmes faits, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00078",
+                      'même sous une qualification différente, et même si des charges nouvelles apparaissent après une relaxe ou un acquittement. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00079",
+                      'C’est l’expression du principe “non bis in idem”.',
+                    ),
               ),
               SizedBox(height: 6),
-              _SubTitle('Cas des infractions continues'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00080",
+                  'Cas des infractions continues',
+                ),
+              ),
               _Paragraph(
-                'Pour les infractions continues (par exemple le recel, lorsque le receleur reste en possession de la chose), '
-                'l’action publique peut reprendre si l’état délictueux persiste après la condamnation initiale. '
-                'Chaque maintien volontaire dans l’infraction peut constituer un fait nouveau, bien que de même nature.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00081",
+                      'Pour les infractions continues (par exemple le recel, lorsque le receleur reste en possession de la chose), ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00082",
+                      'l’action publique peut reprendre si l’état délictueux persiste après la condamnation initiale. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00083",
+                      'Chaque maintien volontaire dans l’infraction peut constituer un fait nouveau, bien que de même nature.',
+                    ),
               ),
             ],
           ),
@@ -379,14 +707,26 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.5 PRESCRIPTION ==========================
           _ConditionCard(
-            title: '4.2.5 — La prescription de l’action publique',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00084",
+              '4.2.5 — La prescription de l’action publique',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Lorsque l’action publique n’est pas exercée dans les délais fixés par la loi, elle s’éteint par la prescription. '
-                'L’infraction restera impunie et l’auteur ne pourra plus être poursuivi pénalement.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00085",
+                      'Lorsque l’action publique n’est pas exercée dans les délais fixés par la loi, elle s’éteint par la prescription. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00086",
+                      'L’infraction restera impunie et l’auteur ne pourra plus être poursuivi pénalement.',
+                    ),
               ),
             ],
           ),
@@ -395,104 +735,230 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.5.1 DELAIS PRESCRIPTION =================
           _ConditionCard(
-            title: '4.2.5.1 — Le délai de prescription de l’action publique',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00087",
+              '4.2.5.1 — Le délai de prescription de l’action publique',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Les articles 7, 8 et 9 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00088",
+                    'Les articles 7, 8 et 9 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' fixent les délais de prescription de droit commun de l’action publique :',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00089",
+                    ' fixent les délais de prescription de droit commun de l’action publique :',
+                  ),
                 ),
               ]),
               SizedBox(height: 6),
-              _BulletPoint(text: '20 ans pour les crimes ;'),
-              _BulletPoint(text: '6 ans pour les délits ;'),
-              _BulletPoint(text: '1 an pour les contraventions.'),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00090",
+                  '20 ans pour les crimes ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00091",
+                  '6 ans pour les délits ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00092",
+                  '1 an pour les contraventions.',
+                ),
+              ),
               SizedBox(height: 10),
 
               _SubTitle(
-                'Délais exceptionnels pour certaines infractions',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00093",
+                  'Délais exceptionnels pour certaines infractions',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Délai imprescriptible pour les crimes de génocide et les crimes contre l’humanité '
-                    '(articles 211-1 à 212-3 du Code pénal).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00094",
+                      'Délai imprescriptible pour les crimes de génocide et les crimes contre l’humanité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00095",
+                      '(articles 211-1 à 212-3 du Code pénal).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    '30 ans pour certains crimes liés au terrorisme et 20 ans pour les délits correspondants '
-                    '(article 706-16 du Code de Procédure Pénale).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00096",
+                      '30 ans pour certains crimes liés au terrorisme et 20 ans pour les délits correspondants ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00097",
+                      '(article 706-16 du Code de Procédure Pénale).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    '30 ans pour les crimes de trafic de stupéfiants et 20 ans pour les délits correspondants '
-                    '(article 706-26 du Code de Procédure Pénale).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00098",
+                      '30 ans pour les crimes de trafic de stupéfiants et 20 ans pour les délits correspondants ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00099",
+                      '(article 706-26 du Code de Procédure Pénale).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    '30 ans pour les crimes relatifs à la prolifération d’armes de destruction massive et de leurs vecteurs, '
-                    'et 20 ans pour les délits punis de 10 ans d’emprisonnement (article 706-167 du Code de Procédure Pénale).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00100",
+                      '30 ans pour les crimes relatifs à la prolifération d’armes de destruction massive et de leurs vecteurs, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00101",
+                      'et 20 ans pour les délits punis de 10 ans d’emprisonnement (article 706-167 du Code de Procédure Pénale).',
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00102",
+                  '30 ans pour les crimes d’eugénisme et de clonage reproductif (articles 214-1 à 214-4 du Code pénal).',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00103",
+                  '30 ans pour le crime de disparition forcée (article 221-12 du Code pénal).',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00104",
+                  '30 ans pour les crimes de guerre et 20 ans pour les délits de guerre.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    '30 ans pour les crimes d’eugénisme et de clonage reproductif (articles 214-1 à 214-4 du Code pénal).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00105",
+                      '30 ans pour les crimes commis contre des mineurs listés à l’article 706-47 du Code de Procédure Pénale ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00106",
+                      '(meurtre, tortures ou actes de barbarie, viol, proxénétisme sur mineur de quinze ans, traite des êtres humains…).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    '30 ans pour le crime de disparition forcée (article 221-12 du Code pénal).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00107",
+                      '20 ans pour certains délits commis sur des mineurs (agressions sexuelles, atteintes sexuelles aggravées, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00108",
+                      'violences volontaires aggravées ayant entraîné une incapacité totale de travail de plus de huit jours).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    '30 ans pour les crimes de guerre et 20 ans pour les délits de guerre.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00109",
+                      '10 ans pour certains délits commis sur des mineurs (abus frauduleux de l’état d’ignorance ou de faiblesse, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00110",
+                      'infractions sexuelles et infractions liées à la pornographie impliquant des mineurs, traite, proxénétisme, etc.).',
+                    ),
               ),
               _BulletPoint(
-                text:
-                    '30 ans pour les crimes commis contre des mineurs listés à l’article 706-47 du Code de Procédure Pénale '
-                    '(meurtre, tortures ou actes de barbarie, viol, proxénétisme sur mineur de quinze ans, traite des êtres humains…).',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00111",
+                  '1 an pour certains délits de presse à caractère discriminatoire (article 65-3 de la loi du 29 juillet 1881).',
+                ),
               ),
               _BulletPoint(
-                text:
-                    '20 ans pour certains délits commis sur des mineurs (agressions sexuelles, atteintes sexuelles aggravées, '
-                    'violences volontaires aggravées ayant entraîné une incapacité totale de travail de plus de huit jours).',
-              ),
-              _BulletPoint(
-                text:
-                    '10 ans pour certains délits commis sur des mineurs (abus frauduleux de l’état d’ignorance ou de faiblesse, '
-                    'infractions sexuelles et infractions liées à la pornographie impliquant des mineurs, traite, proxénétisme, etc.).',
-              ),
-              _BulletPoint(
-                text:
-                    '1 an pour certains délits de presse à caractère discriminatoire (article 65-3 de la loi du 29 juillet 1881).',
-              ),
-              _BulletPoint(
-                text:
-                    '3 mois pour les délits de presse tels que la diffamation (article 65 de la loi du 29 juillet 1881).',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00112",
+                  '3 mois pour les délits de presse tels que la diffamation (article 65 de la loi du 29 juillet 1881).',
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle('Point de départ du délai'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00113",
+                  'Point de départ du délai',
+                ),
+              ),
               _Paragraph(
-                'En principe, le délai de prescription court à compter du jour où l’infraction a été commise pour une infraction instantanée (exemple : vol).',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00114",
+                  'En principe, le délai de prescription court à compter du jour où l’infraction a été commise pour une infraction instantanée (exemple : vol).',
+                ),
               ),
               SizedBox(height: 4),
               _Paragraph(
-                'Pour une infraction continue (comme le recel), le point de départ est fixé au jour où l’état délictueux cesse. '
-                'En cas d’abus de confiance, il peut être reporté au moment où la victime découvre le détournement.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00115",
+                      'Pour une infraction continue (comme le recel), le point de départ est fixé au jour où l’état délictueux cesse. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00116",
+                      'En cas d’abus de confiance, il peut être reporté au moment où la victime découvre le détournement.',
+                    ),
               ),
               SizedBox(height: 6),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Les articles 7 et 8 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00117",
+                    'Les articles 7 et 8 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -500,35 +966,83 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                 ),
                 TextSpan(
                   text:
-                      ' prévoient une règle particulière pour certains crimes et délits commis contre les mineurs : '
-                      'le délai de prescription ne commence à courir qu’à compter de la majorité de la victime.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00118",
+                        ' prévoient une règle particulière pour certains crimes et délits commis contre les mineurs : ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00119",
+                        'le délai de prescription ne commence à courir qu’à compter de la majorité de la victime.',
+                      ),
                 ),
               ]),
               SizedBox(height: 4),
               _Paragraph(
-                'Le délai de prescription d’un crime de viol peut encore être prolongé lorsque, avant l’expiration du délai, '
-                'l’auteur commet un nouveau viol, une agression sexuelle ou une atteinte sexuelle sur un autre mineur : '
-                'le délai initial est prolongé jusqu’à la date de prescription de la nouvelle infraction. '
-                'Ce mécanisme est étendu à certains délits sexuels.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00120",
+                      'Le délai de prescription d’un crime de viol peut encore être prolongé lorsque, avant l’expiration du délai, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00121",
+                      'l’auteur commet un nouveau viol, une agression sexuelle ou une atteinte sexuelle sur un autre mineur : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00122",
+                      'le délai initial est prolongé jusqu’à la date de prescription de la nouvelle infraction. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00123",
+                      'Ce mécanisme est étendu à certains délits sexuels.',
+                    ),
               ),
               SizedBox(height: 6),
 
               _Paragraph(
-                'Pour le délit de non-dénonciation d’atteintes et d’agressions sexuelles sur mineur (article 434-3 du Code pénal), '
-                'le délai de prescription est de 10 ans à compter de la majorité de la victime en cas d’agression ou d’atteinte sexuelle, '
-                'et de 20 ans si la victime a subi un viol.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00124",
+                      'Pour le délit de non-dénonciation d’atteintes et d’agressions sexuelles sur mineur (article 434-3 du Code pénal), ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00125",
+                      'le délai de prescription est de 10 ans à compter de la majorité de la victime en cas d’agression ou d’atteinte sexuelle, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00126",
+                      'et de 20 ans si la victime a subi un viol.',
+                    ),
               ),
               SizedBox(height: 6),
 
               _Paragraph(
-                'Pour les infractions commises par le biais d’Internet, le point de départ du délai de prescription est fixé '
-                'au jour de la première diffusion du message incriminé (jurisprudence de la Cour de cassation, 16 octobre 2001).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00127",
+                      'Pour les infractions commises par le biais d’Internet, le point de départ du délai de prescription est fixé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00128",
+                      'au jour de la première diffusion du message incriminé (jurisprudence de la Cour de cassation, 16 octobre 2001).',
+                    ),
               ),
               SizedBox(height: 6),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: 'L’article 9-1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                    "f00129",
+                    'L’article 9-1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -536,23 +1050,45 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                 ),
                 TextSpan(
                   text:
-                      ' prévoit un régime particulier pour l’infraction occulte ou dissimulée. '
-                      'Dans ce cas, le délai de prescription court à compter du jour où l’infraction est apparue '
-                      'et a pu être constatée dans des conditions permettant la mise en mouvement de l’action publique.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00130",
+                        ' prévoit un régime particulier pour l’infraction occulte ou dissimulée. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00131",
+                        'Dans ce cas, le délai de prescription court à compter du jour où l’infraction est apparue ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                        "f00132",
+                        'et a pu être constatée dans des conditions permettant la mise en mouvement de l’action publique.',
+                      ),
                 ),
               ]),
               SizedBox(height: 4),
               _BulletPoint(
-                text:
-                    'Infraction “occulte” : infraction qui, en raison de ses éléments constitutifs, ne peut être connue ni de la victime, ni de l’autorité judiciaire.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00133",
+                  'Infraction “occulte” : infraction qui, en raison de ses éléments constitutifs, ne peut être connue ni de la victime, ni de l’autorité judiciaire.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Infraction “dissimulée” : l’auteur accomplit des manœuvres caractérisées pour empêcher la découverte de l’infraction.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00134",
+                  'Infraction “dissimulée” : l’auteur accomplit des manœuvres caractérisées pour empêcher la découverte de l’infraction.',
+                ),
               ),
               SizedBox(height: 4),
               _Paragraph(
-                'Dans ces hypothèses, le délai de prescription ne peut toutefois excéder douze ans pour les délits et trente ans pour les crimes à compter du jour de la commission des faits.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00135",
+                  'Dans ces hypothèses, le délai de prescription ne peut toutefois excéder douze ans pour les délits et trente ans pour les crimes à compter du jour de la commission des faits.',
+                ),
               ),
             ],
           ),
@@ -561,47 +1097,95 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.5.2 INTERRUPTION ========================
           _ConditionCard(
-            title:
-                '4.2.5.2 — L’interruption de la prescription (Article 9-2 du Code de Procédure Pénale)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00136",
+              '4.2.5.2 — L’interruption de la prescription (Article 9-2 du Code de Procédure Pénale)',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'L’interruption a pour effet de remettre le compteur à zéro : un nouveau délai complet '
-                'de prescription commence à courir à partir de l’acte interruptif.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00137",
+                      'L’interruption a pour effet de remettre le compteur à zéro : un nouveau délai complet ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00138",
+                      'de prescription commence à courir à partir de l’acte interruptif.',
+                    ),
               ),
               SizedBox(height: 6),
 
               _BulletPoint(
-                text:
-                    'Tout acte, émanant du ministère public ou de la partie civile, tendant à la mise en mouvement de l’action publique ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00139",
+                  'Tout acte, émanant du ministère public ou de la partie civile, tendant à la mise en mouvement de l’action publique ;',
+                ),
               ),
               _BulletPoint(
-                text: 'Tout acte d’enquête émanant du ministère public ;',
-              ),
-              _BulletPoint(
-                text:
-                    'Tout procès-verbal dressé par un officier de police judiciaire ou un agent habilité, '
-                    'tendant effectivement à la recherche et à la poursuite des auteurs ;',
-              ),
-              _BulletPoint(
-                text:
-                    'Tout acte d’instruction tendant à la recherche et à la poursuite des auteurs ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00140",
+                  'Tout acte d’enquête émanant du ministère public ;',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Tout jugement ou arrêt, même non définitif, s’il n’est pas entaché de nullité.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00141",
+                      'Tout procès-verbal dressé par un officier de police judiciaire ou un agent habilité, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00142",
+                      'tendant effectivement à la recherche et à la poursuite des auteurs ;',
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00143",
+                  'Tout acte d’instruction tendant à la recherche et à la poursuite des auteurs ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00144",
+                  'Tout jugement ou arrêt, même non définitif, s’il n’est pas entaché de nullité.',
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Ces actes font courir un nouveau délai de prescription d’une durée égale au délai initial.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                  "f00145",
+                  'Ces actes font courir un nouveau délai de prescription d’une durée égale au délai initial.',
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Le délai de prescription d’un viol, d’une agression sexuelle ou d’une atteinte sexuelle commis sur un mineur '
-                'est également interrompu par un acte ou une décision concernant une infraction de même nature reprochée à la même personne, '
-                'dans une autre procédure, et commise sur un autre mineur.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00146",
+                      'Le délai de prescription d’un viol, d’une agression sexuelle ou d’une atteinte sexuelle commis sur un mineur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00147",
+                      'est également interrompu par un acte ou une décision concernant une infraction de même nature reprochée à la même personne, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00148",
+                      'dans une autre procédure, et commise sur un autre mineur.',
+                    ),
               ),
             ],
           ),
@@ -610,45 +1194,100 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
 
           // =================== 4.2.5.3 SUSPENSION ==========================
           _ConditionCard(
-            title:
-                '4.2.5.3 — La suspension de la prescription (Article 9-3 du Code de Procédure Pénale)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+              "f00149",
+              '4.2.5.3 — La suspension de la prescription (Article 9-3 du Code de Procédure Pénale)',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'La suspension a pour effet d’arrêter temporairement le cours de la prescription. '
-                'Lorsque la cause de suspension disparaît, le délai recommence à courir là où il s’était arrêté.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00150",
+                      'La suspension a pour effet d’arrêter temporairement le cours de la prescription. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00151",
+                      'Lorsque la cause de suspension disparaît, le délai recommence à courir là où il s’était arrêté.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'La différence avec l’interruption est essentielle : en cas d’interruption, un nouveau délai intégral court à nouveau ; '
-                'en cas de suspension, le délai reprend simplement là où il avait été suspendu.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00152",
+                      'La différence avec l’interruption est essentielle : en cas d’interruption, un nouveau délai intégral court à nouveau ; ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00153",
+                      'en cas de suspension, le délai reprend simplement là où il avait été suspendu.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'La suspension de la prescription est rarement prévue en droit pénal. '
-                'L’article 9-3 du Code de Procédure Pénale en donne une liste, mais la jurisprudence admet la suspension '
-                'chaque fois que l’exercice de l’action publique rencontre un obstacle insurmontable de droit ou de fait.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00154",
+                      'La suspension de la prescription est rarement prévue en droit pénal. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00155",
+                      'L’article 9-3 du Code de Procédure Pénale en donne une liste, mais la jurisprudence admet la suspension ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00156",
+                      'chaque fois que l’exercice de l’action publique rencontre un obstacle insurmontable de droit ou de fait.',
+                    ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
                 text:
-                    'Obstacles de droit : par exemple la nécessité de faire trancher une question préalable, '
-                    'ou d’obtenir une mainlevée, une autorisation, un avis ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00157",
+                      'Obstacles de droit : par exemple la nécessité de faire trancher une question préalable, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00158",
+                      'ou d’obtenir une mainlevée, une autorisation, un avis ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Obstacles de fait : événements rendant matériellement impossible la mise en mouvement de l’action publique, '
-                    'comme une invasion du territoire, une catastrophe naturelle majeure, etc.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00159",
+                      'Obstacles de fait : événements rendant matériellement impossible la mise en mouvement de l’action publique, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                      "f00160",
+                      'comme une invasion du territoire, une catastrophe naturelle majeure, etc.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'en pratique, l’enquêteur doit toujours garder à l’esprit la problématique de la prescription : '
-                        'le choix des actes, leur rythme et leur chronologie sont essentiels pour éviter l’extinction de l’action publique.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                          "f00161",
+                          'en pratique, l’enquêteur doit toujours garder à l’esprit la problématique de la prescription : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart",
+                          "f00162",
+                          'le choix des actes, leur rythme et leur chronologie sont essentiels pour éviter l’extinction de l’action publique.',
+                        ),
                   ),
                 ],
               ),

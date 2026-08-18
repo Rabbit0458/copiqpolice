@@ -623,118 +623,230 @@ class _QuotaLockDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-
-    final surface = isDark ? const Color(0xFF111317) : Colors.white;
-    final textMain = isDark ? Colors.white : const Color(0xFF0B0C0F);
-    final textMuted = (isDark ? Colors.white : Colors.black).withValues(alpha: 0.68);
+    const surface = Color(0xFF0B1220);
+    const accent = Color(0xFF4F8CFF);
+    const accentSoft = Color(0xFF72D4FF);
 
     return SafeArea(
       child: Center(
         child: AnimatedBuilder(
           animation: animation,
           builder: (context, _) {
-            final t = animation.value;
-            final scale = 0.98 + (0.02 * t);
-            final opacity = t;
+            final t = Curves.easeOutCubic.transform(animation.value);
 
             return Opacity(
-              opacity: opacity,
-              child: Transform.scale(
-                scale: scale,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 22),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(26),
-                    child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 14, sigmaY: 14),
-                      child: Container(
-                        width: 520,
-                        decoration: BoxDecoration(
-                          color: surface.withValues(alpha: isDark ? 0.92 : 0.95),
-                          borderRadius: BorderRadius.circular(26),
-                          border: Border.all(
-                            color: (isDark ? Colors.white : Colors.black)
-                                .withValues(alpha: 0.08),
-                            width: 1,
-                          ),
-                          boxShadow: const [
-                            BoxShadow(
-                              blurRadius: 48,
-                              offset: Offset(0, 22),
-                              color: Color(0x44000000),
+              opacity: t,
+              child: Transform.translate(
+                offset: Offset(0, 20 * (1 - t)),
+                child: Transform.scale(
+                  scale: .94 + (.06 * t),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 18),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(30),
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
+                        child: Container(
+                          width: 430,
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [Color(0xFF15223A), surface],
                             ),
-                          ],
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 18, 20, 18),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.center, // ✅
-                            children: [
-                              // ✅ Header centré (plus de badge Premium)
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.lock_rounded,
-                                    color: textMain.withValues(alpha: 0.9),
-                                  ),
-                                  const SizedBox(width: 10),
-                                  Text(
-                                    'Accès limité',
-                                    style: theme.textTheme.titleLarge?.copyWith(
-                                      fontWeight: FontWeight.w900,
-                                      letterSpacing: -0.2,
-                                      color: textMain,
-                                    ),
-                                  ),
-                                ],
+                            borderRadius: BorderRadius.circular(30),
+                            border: Border.all(
+                              color: accent.withValues(alpha: .32),
+                              width: 1,
+                            ),
+                            boxShadow: const [
+                              BoxShadow(
+                                blurRadius: 54,
+                                offset: Offset(0, 24),
+                                color: Color(0x66000000),
                               ),
-
-                              const SizedBox(height: 14),
-
-                              Text(
-                                'Vous avez atteint la limite hebdomadaire de 10 accès gratuits.',
-                                textAlign: TextAlign.center, // ✅
-                                style: theme.textTheme.bodyMedium?.copyWith(
-                                  color: textMuted,
-                                  height: 1.35,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-
-                              const SizedBox(height: 14),
-
-                              Text(
-                                'Réinitialisation : $resetsText',
-                                textAlign: TextAlign.center, // ✅
-                                style: theme.textTheme.bodyMedium?.copyWith(
-                                  color: textMain.withValues(alpha: 0.92),
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-
-                              const SizedBox(height: 18),
-
-                              Row(
-                                children: [
-                                  Expanded(
-                                    child: OutlinedButton(
-                                      onPressed: onLater,
-                                      child: const Text('Plus tard'),
-                                    ),
-                                  ),
-                                  const SizedBox(width: 12),
-                                  Expanded(
-                                    child: FilledButton(
-                                      onPressed: onPremium,
-                                      child: const Text('Voir Premium'),
-                                    ),
-                                  ),
-                                ],
+                              BoxShadow(
+                                blurRadius: 32,
+                                spreadRadius: -12,
+                                color: Color(0x664F8CFF),
                               ),
                             ],
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(22, 22, 22, 20),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Container(
+                                  width: 64,
+                                  height: 64,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    gradient: const LinearGradient(
+                                      colors: [accentSoft, accent],
+                                    ),
+                                    boxShadow: const [
+                                      BoxShadow(
+                                        color: Color(0x554F8CFF),
+                                        blurRadius: 24,
+                                      ),
+                                    ],
+                                  ),
+                                  child: const Icon(
+                                    Icons.lock_open_rounded,
+                                    color: Colors.white,
+                                    size: 30,
+                                  ),
+                                ),
+                                const SizedBox(height: 14),
+                                Text(
+                                  'COP’IQ PREMIUM',
+                                  style: theme.textTheme.labelSmall?.copyWith(
+                                    color: accentSoft,
+                                    letterSpacing: 1.7,
+                                    fontWeight: FontWeight.w900,
+                                  ),
+                                ),
+                                const SizedBox(height: 7),
+                                Text(
+                                  'Accès limité',
+                                  textAlign: TextAlign.center,
+                                  style: theme.textTheme.headlineSmall
+                                      ?.copyWith(
+                                        fontWeight: FontWeight.w900,
+                                        letterSpacing: -.5,
+                                        color: Colors.white,
+                                      ),
+                                ),
+                                const SizedBox(height: 10),
+                                Text(
+                                  'Tu as utilisé tes 10 accès gratuits de la semaine. Passe en Premium pour continuer sans interruption.',
+                                  textAlign: TextAlign.center,
+                                  style: theme.textTheme.bodyMedium?.copyWith(
+                                    color: Colors.white.withValues(alpha: .72),
+                                    height: 1.42,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                const SizedBox(height: 16),
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 14,
+                                    vertical: 10,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withValues(alpha: .07),
+                                    borderRadius: BorderRadius.circular(16),
+                                    border: Border.all(
+                                      color: Colors.white.withValues(
+                                        alpha: .09,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      const Icon(
+                                        Icons.schedule_rounded,
+                                        size: 18,
+                                        color: accentSoft,
+                                      ),
+                                      const SizedBox(width: 8),
+                                      Flexible(
+                                        child: Text(
+                                          'Nouveaux accès : $resetsText',
+                                          textAlign: TextAlign.center,
+                                          style: theme.textTheme.bodySmall
+                                              ?.copyWith(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w800,
+                                              ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(height: 20),
+                                LayoutBuilder(
+                                  builder: (context, constraints) {
+                                    final narrow = constraints.maxWidth < 330;
+                                    final later = SizedBox(
+                                      height: 50,
+                                      child: OutlinedButton(
+                                        onPressed: onLater,
+                                        style: OutlinedButton.styleFrom(
+                                          foregroundColor: Colors.white,
+                                          side: BorderSide(
+                                            color: Colors.white.withValues(
+                                              alpha: .20,
+                                            ),
+                                          ),
+                                          shape: RoundedRectangleBorder(
+                                            borderRadius: BorderRadius.circular(
+                                              16,
+                                            ),
+                                          ),
+                                        ),
+                                        child: const Text('Plus tard'),
+                                      ),
+                                    );
+                                    final premium = SizedBox(
+                                      height: 50,
+                                      child: DecoratedBox(
+                                        decoration: BoxDecoration(
+                                          gradient: const LinearGradient(
+                                            colors: [accentSoft, accent],
+                                          ),
+                                          borderRadius: BorderRadius.circular(
+                                            16,
+                                          ),
+                                        ),
+                                        child: FilledButton.icon(
+                                          onPressed: onPremium,
+                                          style: FilledButton.styleFrom(
+                                            backgroundColor: Colors.transparent,
+                                            shadowColor: Colors.transparent,
+                                            foregroundColor: Colors.white,
+                                            shape: RoundedRectangleBorder(
+                                              borderRadius:
+                                                  BorderRadius.circular(16),
+                                            ),
+                                          ),
+                                          icon: const Icon(
+                                            Icons.auto_awesome_rounded,
+                                            size: 18,
+                                          ),
+                                          label: const Text('Voir Premium'),
+                                        ),
+                                      ),
+                                    );
+                                    if (narrow) {
+                                      return Column(
+                                        children: [
+                                          SizedBox(
+                                            width: double.infinity,
+                                            child: premium,
+                                          ),
+                                          const SizedBox(height: 10),
+                                          SizedBox(
+                                            width: double.infinity,
+                                            child: later,
+                                          ),
+                                        ],
+                                      );
+                                    }
+                                    return Row(
+                                      children: [
+                                        Expanded(child: later),
+                                        const SizedBox(width: 10),
+                                        Expanded(child: premium),
+                                      ],
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ),

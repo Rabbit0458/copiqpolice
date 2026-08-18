@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GiletHauteVisibilitePage extends StatelessWidget {
   const GiletHauteVisibilitePage({super.key});
@@ -66,10 +67,18 @@ class GiletHauteVisibilitePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class GiletHauteVisibilitePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Gilet de haute visibilité",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00003",
+              "Gilet de haute visibilité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,16 +109,36 @@ class GiletHauteVisibilitePage extends StatelessWidget {
 
           // À retenir
           _ConditionCard(
-            title: "À retenir",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00004",
+              "À retenir",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le gilet de haute visibilité concerne :\n"
-                "• le conducteur d’un véhicule à moteur (disposer + porter en cas d’arrêt d’urgence) ;\n"
-                "• le conducteur d’un E.D.P.M. / cyclomobile léger (porter la nuit ou par visibilité insuffisante) ;\n"
-                "• le conducteur ou passager d’un cycle (hors agglomération, la nuit ou par visibilité insuffisante).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00005",
+                      "Le gilet de haute visibilité concerne :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00006",
+                      "• le conducteur d’un véhicule à moteur (disposer + porter en cas d’arrêt d’urgence) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00007",
+                      "• le conducteur d’un E.D.P.M. / cyclomobile léger (porter la nuit ou par visibilité insuffisante) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00008",
+                      "• le conducteur ou passager d’un cycle (hors agglomération, la nuit ou par visibilité insuffisante).",
+                    ),
               ),
             ],
           ),
@@ -114,18 +147,58 @@ class GiletHauteVisibilitePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 416-19 du Code de la route"),
-                const TextSpan(text: " (véhicules à moteur) • "),
-                _lawSpan("R. 412-43-3 du Code de la route"),
-                const TextSpan(text: " (E.D.P.M./cyclomobile léger) • "),
-                _lawSpan("R. 431-1-1 du Code de la route"),
-                const TextSpan(text: " (cycles)."),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00010",
+                    "R. 416-19 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00011",
+                    " (véhicules à moteur) • ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00012",
+                    "R. 412-43-3 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00013",
+                    " (E.D.P.M./cyclomobile léger) • ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00014",
+                    "R. 431-1-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00015",
+                    " (cycles).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -134,93 +207,200 @@ class GiletHauteVisibilitePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00016",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Conducteur d’un véhicule à moteur"),
-              const _Paragraph(
-                "En circulation, tout conducteur d’un véhicule à moteur (sauf véhicules agricoles) doit disposer "
-                "d’un gilet de haute visibilité conforme à la réglementation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00017",
+                  "A) Conducteur d’un véhicule à moteur",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00018",
+                      "En circulation, tout conducteur d’un véhicule à moteur (sauf véhicules agricoles) doit disposer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00019",
+                      "d’un gilet de haute visibilité conforme à la réglementation.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("Où doit se trouver le gilet ?"),
-              const _BulletPoint(
-                text:
-                    "2/3 roues ou quadricycle à moteur non carrossé : sur lui ou dans un rangement du véhicule (filet, coffre…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00020",
+                  "Où doit se trouver le gilet ?",
+                ),
               ),
-              const _BulletPoint(
-                text: "Autres véhicules : à portée de main du conducteur.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00021",
+                  "2/3 roues ou quadricycle à moteur non carrossé : sur lui ou dans un rangement du véhicule (filet, coffre…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00022",
+                  "Autres véhicules : à portée de main du conducteur.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Contrôle",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00023",
+                  "Contrôle",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le gilet doit être présenté à toute réquisition. En cas de non-présentation immédiate, "
-                        "le conducteur n’est pas tenu de justifier de sa possession.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                          "f00024",
+                          "Le gilet doit être présenté à toute réquisition. En cas de non-présentation immédiate, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                          "f00025",
+                          "le conducteur n’est pas tenu de justifier de sa possession.",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "NATINF (disposer du gilet)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00026",
+                  "NATINF (disposer du gilet)",
+                ),
                 bodySpans: [
                   _boldSpan("26987"),
                   const TextSpan(text: " — "),
-                  _lawSpan("R. 416-19 du Code de la route"),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00027",
+                      "R. 416-19 du Code de la route",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Port du gilet en cas d’arrêt d’urgence"),
-              const _Paragraph(
-                "Le conducteur doit revêtir le gilet lorsqu’il est amené à quitter son véhicule immobilisé "
-                "sur la chaussée ou ses abords à la suite d’un arrêt d’urgence.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00028",
+                  "B) Port du gilet en cas d’arrêt d’urgence",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00029",
+                      "Le conducteur doit revêtir le gilet lorsqu’il est amené à quitter son véhicule immobilisé ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00030",
+                      "sur la chaussée ou ses abords à la suite d’un arrêt d’urgence.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Présignalisation",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00031",
+                  "Présignalisation",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La présignalisation de l’obstacle doit également être assurée (feux de détresse + triangle de présignalisation).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00032",
+                      "La présignalisation de l’obstacle doit également être assurée (feux de détresse + triangle de présignalisation).",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "NATINF (descente sans gilet)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00033",
+                  "NATINF (descente sans gilet)",
+                ),
                 bodySpans: [
                   _boldSpan("26985"),
                   const TextSpan(text: " — "),
-                  _lawSpan("R. 416-19 du Code de la route"),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00034",
+                      "R. 416-19 du Code de la route",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "C) Conducteur d’un E.D.P.M. / cyclomobile léger",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00035",
+                  "C) Conducteur d’un E.D.P.M. / cyclomobile léger",
+                ),
               ),
-              const _Paragraph(
-                "Lorsqu’il circule la nuit ou le jour lorsque la visibilité est insuffisante, le conducteur "
-                "doit porter :\n"
-                "• un gilet de haute visibilité conforme, ou\n"
-                "• un équipement rétro-réfléchissant.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00036",
+                      "Lorsqu’il circule la nuit ou le jour lorsque la visibilité est insuffisante, le conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00037",
+                      "doit porter :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00038",
+                      "• un gilet de haute visibilité conforme, ou\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00039",
+                      "• un équipement rétro-réfléchissant.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "Option",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Il peut également porter un dispositif d’éclairage complémentaire non éblouissant et non clignotant.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00040",
+                      "Il peut également porter un dispositif d’éclairage complémentaire non éblouissant et non clignotant.",
+                    ),
                   ),
                 ],
               ),
@@ -230,17 +410,37 @@ class GiletHauteVisibilitePage extends StatelessWidget {
                 bodySpans: [
                   _boldSpan("33361"),
                   const TextSpan(text: " — "),
-                  _lawSpan("R. 412-43-3 du Code de la route"),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00041",
+                      "R. 412-43-3 du Code de la route",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("D) Conducteur ou passager d’un cycle"),
-              const _Paragraph(
-                "Hors agglomération, la nuit, ou le jour lorsque la visibilité est insuffisante : "
-                "tout conducteur ou passager d’un cycle doit porter un gilet de haute visibilité conforme.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00042",
+                  "D) Conducteur ou passager d’un cycle",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00043",
+                      "Hors agglomération, la nuit, ou le jour lorsque la visibilité est insuffisante : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00044",
+                      "tout conducteur ou passager d’un cycle doit porter un gilet de haute visibilité conforme.",
+                    ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
@@ -248,7 +448,13 @@ class GiletHauteVisibilitePage extends StatelessWidget {
                 bodySpans: [
                   _boldSpan("26988"),
                   const TextSpan(text: " — "),
-                  _lawSpan("R. 431-1-1 du Code de la route"),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00045",
+                      "R. 431-1-1 du Code de la route",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
@@ -259,14 +465,26 @@ class GiletHauteVisibilitePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00046",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Manquement aux obligations de disposer/porter un gilet de haute visibilité (ou équipement rétro-réfléchissant "
-                "pour E.D.P.M.) dans les situations prévues par le Code de la route.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00047",
+                      "Manquement aux obligations de disposer/porter un gilet de haute visibilité (ou équipement rétro-réfléchissant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                      "f00048",
+                      "pour E.D.P.M.) dans les situations prévues par le Code de la route.",
+                    ),
               ),
             ],
           ),
@@ -275,13 +493,21 @@ class GiletHauteVisibilitePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00049",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00050",
+                  "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento.",
+                ),
               ),
             ],
           ),
@@ -290,56 +516,157 @@ class GiletHauteVisibilitePage extends StatelessWidget {
 
           // Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00051",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Véhicule à moteur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00052",
+                  "Véhicule à moteur",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Ne pas disposer d’un gilet : "),
-                _boldSpan("NATINF 26987"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00053",
+                    "Ne pas disposer d’un gilet : ",
+                  ),
+                ),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00054",
+                    "NATINF 26987",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("R. 416-19 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00055",
+                    "R. 416-19 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                const TextSpan(text: "AF 1re classe."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00056",
+                    "AF 1re classe.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Quitter le véhicule (arrêt d’urgence) sans gilet : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00057",
+                    "Quitter le véhicule (arrêt d’urgence) sans gilet : ",
+                  ),
                 ),
-                _boldSpan("NATINF 26985"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00058",
+                    "NATINF 26985",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("R. 416-19 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00059",
+                    "R. 416-19 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                const TextSpan(text: "AF min. 4e classe."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00060",
+                    "AF min. 4e classe.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
 
               const _SubTitle("Cycle"),
               _Paragraph.rich([
-                _boldSpan("NATINF 26988"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00061",
+                    "NATINF 26988",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("R. 431-1-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00062",
+                    "R. 431-1-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                const TextSpan(text: "AF min. 2e classe."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00063",
+                    "AF min. 2e classe.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("E.D.P.M. / cyclomobile léger"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00064",
+                  "E.D.P.M. / cyclomobile léger",
+                ),
+              ),
               _Paragraph.rich([
-                _boldSpan("NATINF 33361"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00065",
+                    "NATINF 33361",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("R. 412-43-3 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00066",
+                    "R. 412-43-3 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                const TextSpan(text: "AF min. 2e classe."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                    "f00067",
+                    "AF min. 2e classe.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
 
-              const _BulletPoint(
-                text:
-                    "D.I.A. et dépistage stupéfiants : facultatifs (mention mémento).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00068",
+                  "D.I.A. et dépistage stupéfiants : facultatifs (mention mémento).",
+                ),
               ),
             ],
           ),
@@ -348,18 +675,28 @@ class GiletHauteVisibilitePage extends StatelessWidget {
 
           // Tentative & complicité
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+              "f00069",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Tentative : NON (contravention liée à un manquement constaté).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00070",
+                  "Tentative : NON (contravention liée à un manquement constaté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complicité : NON (obligation personnelle selon la situation).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart",
+                  "f00071",
+                  "Complicité : NON (obligation personnelle selon la situation).",
+                ),
               ),
             ],
           ),

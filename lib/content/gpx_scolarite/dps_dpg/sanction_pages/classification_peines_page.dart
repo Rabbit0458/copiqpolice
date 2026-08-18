@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/sanction_pages/classification_peines_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : La sanction — Classification des peines et mesures de sûreté
 /// Route alignée avec la config : /gpx/sanction/classification_peines
@@ -17,13 +18,33 @@ class ClassificationPeinesPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            badge: 'La sanction',
-            title: 'Classification des peines & mesures de sûreté',
-            subtitle: 'Natures · Régimes · Peines complémentaires',
+            badge: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+              "f00001",
+              'La sanction',
+            ),
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+              "f00002",
+              'Classification des peines & mesures de sûreté',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+              "f00003",
+              'Natures · Régimes · Peines complémentaires',
+            ),
             image: 'assets/images/sanction.jpeg',
             onPrimaryTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Classification — Récap 👌')),
+                SnackBar(
+                  content: Text(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                      "f00004",
+                      'Classification — Récap 👌',
+                    ),
+                  ),
+                ),
               );
             },
           ),
@@ -32,114 +53,238 @@ class ClassificationPeinesPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
-                  title: 'Finalité',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00005",
+                    'Finalité',
+                  ),
                   child: Text(
-                    'Qualifier la nature de la peine (criminelle, correctionnelle, contraventionnelle), '
-                    'distinguer peines principales, complémentaires et alternatives, et situer les mesures de sûreté.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00006",
+                          'Qualifier la nature de la peine (criminelle, correctionnelle, contraventionnelle), ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00007",
+                          'distinguer peines principales, complémentaires et alternatives, et situer les mesures de sûreté.',
+                        ),
                   ),
                 ),
 
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
-                    'Peines principales',
-                    'Peines complémentaires',
-                    'Peines alternatives',
-                    'Mesures de sûreté',
-                    'Exécution/Aménagement',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                      "f00008",
+                      'Peines principales',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                      "f00009",
+                      'Peines complémentaires',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                      "f00010",
+                      'Peines alternatives',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                      "f00011",
+                      'Mesures de sûreté',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                      "f00012",
+                      'Exécution/Aménagement',
+                    ),
                   ],
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '1) Natures de peines',
-                  caption: 'Qualification pénale & échelles',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00013",
+                    '1) Natures de peines',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00014",
+                    'Qualification pénale & échelles',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Criminelles : réclusion/criminalité organisée — cour d’assises.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00015",
+                          'Criminelles : réclusion/criminalité organisée — cour d’assises.',
+                        ),
                       ),
                       _Bullet(
-                        'Correctionnelles : emprisonnement, amende délictuelle, TIG, etc.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00016",
+                          'Correctionnelles : emprisonnement, amende délictuelle, TIG, etc.',
+                        ),
                       ),
                       _Bullet(
-                        'Contraventionnelles : amendes 1 à 5ᵉ classe, sanctions spécifiques.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00017",
+                          'Contraventionnelles : amendes 1 à 5ᵉ classe, sanctions spécifiques.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '2) Peines principales / alternatives',
-                  caption: 'Prononcé & articulation',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00018",
+                    '2) Peines principales / alternatives',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00019",
+                    'Prononcé & articulation',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Principales : privatives de liberté, amendes, jours-amende, TIG.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00020",
+                          'Principales : privatives de liberté, amendes, jours-amende, TIG.',
+                        ),
                       ),
                       _Bullet(
-                        'Alternatives : ajournement, sursis probatoire, peine autonome (TIG, stage…).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00021",
+                          'Alternatives : ajournement, sursis probatoire, peine autonome (TIG, stage…).',
+                        ),
                       ),
                       _Bullet(
-                        'Aménagements : semi-liberté, bracelet, libération sous contrainte (conditions légales).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00022",
+                          'Aménagements : semi-liberté, bracelet, libération sous contrainte (conditions légales).',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '3) Peines complémentaires',
-                  caption: 'Interdictions · Confiscations · Affichage',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00023",
+                    '3) Peines complémentaires',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00024",
+                    'Interdictions · Confiscations · Affichage',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Interdictions de droits, d’exercer, de paraître ; suspension permis, armes, etc.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00025",
+                          'Interdictions de droits, d’exercer, de paraître ; suspension permis, armes, etc.',
+                        ),
                       ),
                       _Bullet(
-                        'Confiscations : objets dangereux/prohibés, profits ; traçabilité patrimoniale.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00026",
+                          'Confiscations : objets dangereux/prohibés, profits ; traçabilité patrimoniale.',
+                        ),
                       ),
                       _Bullet(
-                        'Publications/affichages : quand la loi le prévoit.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00027",
+                          'Publications/affichages : quand la loi le prévoit.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '4) Mesures de sûreté',
-                  caption: 'Prévention de la récidive/risque',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00028",
+                    '4) Mesures de sûreté',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00029",
+                    'Prévention de la récidive/risque',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Mesures non répressives : ex. suivi socio-judiciaire, interdictions, soins.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00030",
+                          'Mesures non répressives : ex. suivi socio-judiciaire, interdictions, soins.',
+                        ),
                       ),
                       _Bullet(
-                        'Prononcé et durée guidés par la dangerosité et l’intérêt de la société.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00031",
+                          'Prononcé et durée guidés par la dangerosité et l’intérêt de la société.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '5) Points de vigilance',
-                  caption: 'Légalité du prononcé & motivation',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00032",
+                    '5) Points de vigilance',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00033",
+                    'Légalité du prononcé & motivation',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Motivation de la peine : individualisation (personnalité, faits, insertion).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00034",
+                          'Motivation de la peine : individualisation (personnalité, faits, insertion).',
+                        ),
                       ),
                       _Bullet(
-                        'Compatibilité peines/mesures ; limites légales (cumul, non bis in idem).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00035",
+                          'Compatibilité peines/mesures ; limites légales (cumul, non bis in idem).',
+                        ),
                       ),
                     ],
                   ),
@@ -147,22 +292,42 @@ class ClassificationPeinesPage extends StatelessWidget {
 
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00036",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'Causes d’aggravation de la sanction',
-                  subtitle: 'Récidive · Circonstances aggravantes',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00037",
+                    'Causes d’aggravation de la sanction',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00038",
+                    'Récidive · Circonstances aggravantes',
+                  ),
                   route: '/gpx/sanction/causes_aggravation',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Pluralité d’infractions',
-                  subtitle: 'Cumul/Concours · Confusion de peines',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00039",
+                    'Pluralité d’infractions',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                    "f00040",
+                    'Cumul/Concours · Confusion de peines',
+                  ),
                   route: '/gpx/sanction/pluralite_infractions',
                 ),
               ],
@@ -257,7 +422,13 @@ class _HeroHeader extends StatelessWidget {
                     ElevatedButton.icon(
                       onPressed: onPrimaryTap,
                       icon: const Icon(Icons.play_arrow_rounded),
-                      label: const Text('Découvrir'),
+                      label: Text(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart",
+                          "f00041",
+                          'Découvrir',
+                        ),
+                      ),
                       style: ElevatedButton.styleFrom(
                         elevation: 0,
                         backgroundColor: Colors.white,

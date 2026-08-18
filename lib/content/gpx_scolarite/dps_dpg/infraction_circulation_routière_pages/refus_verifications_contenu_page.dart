@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RefusVerificationsPage extends StatelessWidget {
   const RefusVerificationsPage({super.key});
@@ -59,10 +60,18 @@ class RefusVerificationsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infraction circulation routière",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+            "f00002",
+            "Infraction circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class RefusVerificationsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le refus de se soumettre aux vérifications",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+              "f00003",
+              "Le refus de se soumettre aux vérifications",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,14 +102,26 @@ class RefusVerificationsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour tout conducteur, de refuser de se soumettre à toutes vérifications prescrites "
-                "concernant son véhicule ou sa personne constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00005",
+                      "Le fait, pour tout conducteur, de refuser de se soumettre à toutes vérifications prescrites ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00006",
+                      "concernant son véhicule ou sa personne constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -105,22 +130,30 @@ class RefusVerificationsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 233-2 / I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00008",
+                    "Article L. 233-2 / I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le refus de se soumettre aux vérifications.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00009",
+                    " : définit et réprime le refus de se soumettre aux vérifications.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -128,11 +161,23 @@ class RefusVerificationsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "À l’exclusion des vérifications relatives à l’alcoolémie ou à l’usage de stupéfiants, "
-                        "qui sont respectivement prévues et réprimées par ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                          "f00010",
+                          "À l’exclusion des vérifications relatives à l’alcoolémie ou à l’usage de stupéfiants, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                          "f00011",
+                          "qui sont respectivement prévues et réprimées par ",
+                        ),
                   ),
                   TextSpan(
-                    text: "les articles L. 234-8",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00012",
+                      "les articles L. 234-8",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -140,7 +185,11 @@ class RefusVerificationsPage extends StatelessWidget {
                   ),
                   TextSpan(text: " et "),
                   TextSpan(
-                    text: "L. 235-3 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00013",
+                      "L. 235-3 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -156,74 +205,190 @@ class RefusVerificationsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les vérifications portent sur le respect des règles administratives et techniques afférentes "
-                "à la conduite et à la circulation des véhicules. Elles sont effectuées par des agents munis "
-                "des signes extérieurs de leurs fonctions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00015",
+                      "Les vérifications portent sur le respect des règles administratives et techniques afférentes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00016",
+                      "à la conduite et à la circulation des véhicules. Elles sont effectuées par des agents munis ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00017",
+                      "des signes extérieurs de leurs fonctions.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Base légale d’exécution : "),
                 TextSpan(
-                  text: "articles R. 233-1",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00018",
+                    "Base légale d’exécution : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00019",
+                    "articles R. 233-1",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "R. 233-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00020",
+                    "R. 233-3 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("A) Le refus"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00021",
+                  "A) Le refus",
+                ),
+              ),
               _Paragraph(
-                "Le refus est caractérisé lorsque le conducteur n’accepte pas de se soumettre "
-                "aux injonctions de l’agent agissant en application des articles précités.\n"
-                "Après avoir été informé du motif du contrôle, le conducteur exprime son refus :\n"
-                "• verbalement ;\n"
-                "• ou de façon passive (ne pas se conformer aux demandes).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00022",
+                      "Le refus est caractérisé lorsque le conducteur n’accepte pas de se soumettre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00023",
+                      "aux injonctions de l’agent agissant en application des articles précités.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00024",
+                      "Après avoir été informé du motif du contrôle, le conducteur exprime son refus :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00025",
+                      "• verbalement ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00026",
+                      "• ou de façon passive (ne pas se conformer aux demandes).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Les vérifications"),
-              _SubTitle("1) Concernant la personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00027",
+                  "B) Les vérifications",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00028",
+                  "1) Concernant la personne",
+                ),
+              ),
               _Paragraph(
-                "Les vérifications s’attachent essentiellement à la présentation d’un permis de conduire valable "
-                "mais aussi de tout titre justifiant une autorisation de conduire.\n"
-                "Elles permettent de s’assurer du droit de conduire en examinant les pièces administratives "
-                "que le conducteur doit obligatoirement présenter.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00029",
+                      "Les vérifications s’attachent essentiellement à la présentation d’un permis de conduire valable ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00030",
+                      "mais aussi de tout titre justifiant une autorisation de conduire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00031",
+                      "Elles permettent de s’assurer du droit de conduire en examinant les pièces administratives ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00032",
+                      "que le conducteur doit obligatoirement présenter.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Concernant le véhicule"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00033",
+                  "2) Concernant le véhicule",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit notamment des vérifications portant sur :\n"
-                "• le certificat d’immatriculation ;\n"
-                "• l’attestation d’assurance ;\n"
-                "• le procès-verbal de contrôle technique périodique ;\n"
-                "• et, le cas échéant, d’autres documents (ex. transport routier de marchandises…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00034",
+                      "Il s’agit notamment des vérifications portant sur :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00035",
+                      "• le certificat d’immatriculation ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00036",
+                      "• l’attestation d’assurance ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00037",
+                      "• le procès-verbal de contrôle technique périodique ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00038",
+                      "• et, le cas échéant, d’autres documents (ex. transport routier de marchandises…).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Elles peuvent également porter sur la présence, le bon état ou le bon fonctionnement "
-                "de certains équipements réglementaires (éclairage, plaques d’immatriculation, gilet de haute visibilité, "
-                "triangle de pré-signalisation…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00039",
+                      "Elles peuvent également porter sur la présence, le bon état ou le bon fonctionnement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00040",
+                      "de certains équipements réglementaires (éclairage, plaques d’immatriculation, gilet de haute visibilité, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00041",
+                      "triangle de pré-signalisation…).",
+                    ),
               ),
             ],
           ),
@@ -232,15 +397,33 @@ class RefusVerificationsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+              "f00042",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Refus volontaire et en connaissance de cause"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00043",
+                  "Refus volontaire et en connaissance de cause",
+                ),
+              ),
               _Paragraph(
-                "Le délit est constitué par le refus intentionnel du conducteur.\n"
-                "Le conducteur connaît les motifs du contrôle routier mais ne défère pas volontairement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00044",
+                      "Le délit est constitué par le refus intentionnel du conducteur.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00045",
+                      "Le conducteur connaît les motifs du contrôle routier mais ne défère pas volontairement.",
+                    ),
               ),
             ],
           ),
@@ -249,12 +432,22 @@ class RefusVerificationsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+              "f00046",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Aucune circonstance aggravante prévue."),
+            children: [
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00047",
+                  "Aucune circonstance aggravante prévue.",
+                ),
+              ),
             ],
           ),
 
@@ -262,26 +455,61 @@ class RefusVerificationsPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+              "f00048",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00049",
+                  "Peines encourues",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
-                TextSpan(text: "délit. — "),
                 TextSpan(
-                  text: "article L. 233-2 / I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00050",
+                    "Qualification simple : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00051",
+                    "délit. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                    "f00052",
+                    "article L. 233-2 / I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "3 mois d’emprisonnement."),
-              _BulletPoint(text: "3 750 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00053",
+                  "3 mois d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00054",
+                  "3 750 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
@@ -289,12 +517,28 @@ class RefusVerificationsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Des peines spécifiques existent pour le refus de se soumettre aux vérifications concernant "
-                        "l’alcool au volant et la conduite sous l’influence de stupéfiants : ce sont des infractions autonomes "
-                        "et non des circonstances aggravantes (références : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                          "f00055",
+                          "Des peines spécifiques existent pour le refus de se soumettre aux vérifications concernant ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                          "f00056",
+                          "l’alcool au volant et la conduite sous l’influence de stupéfiants : ce sont des infractions autonomes ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                          "f00057",
+                          "et non des circonstances aggravantes (références : ",
+                        ),
                   ),
                   TextSpan(
-                    text: "L. 234-8",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00058",
+                      "L. 234-8",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -302,7 +546,11 @@ class RefusVerificationsPage extends StatelessWidget {
                   ),
                   TextSpan(text: " et "),
                   TextSpan(
-                    text: "L. 235-3 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                      "f00059",
+                      "L. 235-3 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -314,9 +562,27 @@ class RefusVerificationsPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
-              _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00060",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00061",
+                  "Tentative : NON.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/refus_verifications_contenu_page.dart",
+                  "f00062",
+                  "Complicité : OUI.",
+                ),
+              ),
             ],
           ),
         ],
@@ -571,9 +837,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

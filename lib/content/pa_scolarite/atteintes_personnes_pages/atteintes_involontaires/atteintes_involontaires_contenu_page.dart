@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
   const PaAtteintesInvolontairesContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Atteintes involontaires",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00003",
+              "Atteintes involontaires",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux atteintes involontaires "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux atteintes involontaires ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,8 +88,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'atteintes_involontaires_participation_groupement_violent',
-            title: "La participation à un groupement violent",
-            subtitle: "Définition, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00006",
+              "La participation à un groupement violent",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00007",
+              "Définition, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -80,9 +111,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'atteintes_involontaires_conducteur_vtm',
-            title:
-                "Les atteintes involontaires à l’intégrité de la personne commises par le conducteur d’un véhicule terrestre à moteur",
-            subtitle: "Cadre légal, qualification et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00008",
+              "Les atteintes involontaires à l’intégrité de la personne commises par le conducteur d’un véhicule terrestre à moteur",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00009",
+              "Cadre légal, qualification et répression.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,9 +134,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'atteintes_involontaires_itt_inferieure_3_mois',
-            title:
-                "Les atteintes involontaires à l’intégrité de la personne inférieure à 3 mois",
-            subtitle: "Éléments constitutifs, aggravations et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00010",
+              "Les atteintes involontaires à l’intégrité de la personne inférieure à 3 mois",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00011",
+              "Éléments constitutifs, aggravations et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -112,9 +157,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= 4 =================
           _ModuleCard(
             tag: 'atteintes_involontaires_itt_superieure_3_mois',
-            title:
-                "Les atteintes involontaires à l’intégrité de la personne ITT > 3 mois",
-            subtitle: "Notion, qualification et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00012",
+              "Les atteintes involontaires à l’intégrité de la personne ITT > 3 mois",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00013",
+              "Notion, qualification et répression.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -128,9 +180,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= 5 =================
           _ModuleCard(
             tag: 'atteintes_involontaires_violation_deliberee_obligation',
-            title:
-                "Les atteintes involontaires par la violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence",
-            subtitle: "Conditions, aggravations et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00014",
+              "Les atteintes involontaires par la violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00015",
+              "Conditions, aggravations et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -144,9 +203,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= 6 =================
           _ModuleCard(
             tag: 'atteintes_volontaires_qualifiees_violences',
-            title:
-                "Les atteintes volontaires à l’intégrité de la personne qualifiées violences",
-            subtitle: "Qualification, éléments et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00016",
+              "Les atteintes volontaires à l’intégrité de la personne qualifiées violences",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00017",
+              "Qualification, éléments et répression.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -160,8 +226,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= 7 =================
           _ModuleCard(
             tag: 'homicide_involontaire',
-            title: "L’homicide involontaire",
-            subtitle: "Définition, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00018",
+              "L’homicide involontaire",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00019",
+              "Définition, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -176,9 +250,16 @@ class PaAtteintesInvolontairesContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_atteintes_involontaires',
-            title: 'Quiz — Atteintes involontaires',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00020",
+              'Quiz — Atteintes involontaires',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart",
+              "f00021",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

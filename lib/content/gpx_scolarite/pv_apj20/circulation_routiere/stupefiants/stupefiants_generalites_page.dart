@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class StupefiantsGeneralitesPage extends StatelessWidget {
   const StupefiantsGeneralitesPage({super.key});
@@ -63,10 +64,18 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -81,7 +90,11 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Généralités — dépistage en sécurité routière",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+              "f00003",
+              "Généralités — dépistage en sécurité routière",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,20 +109,38 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le dépistage des substances ou plantes classées comme stupéfiants vise à établir l’usage "
-                "par le conducteur (ou l’accompagnateur d’un élève conducteur) et à déterminer la procédure "
-                "à suivre selon la situation (accident, infraction, raisons plausibles, réquisitions…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00004",
+                      "Le dépistage des substances ou plantes classées comme stupéfiants vise à établir l’usage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00005",
+                      "par le conducteur (ou l’accompagnateur d’un élève conducteur) et à déterminer la procédure ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00006",
+                      "à suivre selon la situation (accident, infraction, raisons plausibles, réquisitions…).",
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Dépistage : étape de terrain (orientation). En cas de positivité / cas prévus : vérifications et analyses en laboratoire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00007",
+                  "Dépistage : étape de terrain (orientation). En cas de positivité / cas prévus : vérifications et analyses en laboratoire.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Toujours raisonner : situation → base légale → agent compétent → personne visée → actes à réaliser → pièces à transmettre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00008",
+                  "Toujours raisonner : situation → base légale → agent compétent → personne visée → actes à réaliser → pièces à transmettre.",
+                ),
               ),
             ],
           ),
@@ -118,52 +149,88 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Cadre juridique (élément légal)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+              "f00009",
+              "I — Cadre juridique (élément légal)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Le dispositif est organisé par le "),
                 TextSpan(
-                  text: "Code de la route (articles L. 235-1 et suivants)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " et ses dispositions réglementaires "),
-                TextSpan(
-                  text: "(articles R. 235-1 et suivants)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00010",
+                    "Le dispositif est organisé par le ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ", qui encadrent les dépistages, les vérifications et les analyses.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00011",
+                    "Code de la route (articles L. 235-1 et suivants)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00012",
+                    " et ses dispositions réglementaires ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00013",
+                    "(articles R. 235-1 et suivants)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00014",
+                    ", qui encadrent les dépistages, les vérifications et les analyses.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les intervenants médicaux/biologiques peuvent être précisés selon les cas, notamment par ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00015",
+                      "Les intervenants médicaux/biologiques peuvent être précisés selon les cas, notamment par ",
+                    ),
                   ),
                   TextSpan(
-                    text: "R. 235-3 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00016",
+                      "R. 235-3 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text: " (expertise/actes) et, pour certains statuts : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00017",
+                      " (expertise/actes) et, pour certains statuts : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "L. 4131-2 du Code de la santé publique",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00018",
+                      "L. 4131-2 du Code de la santé publique",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -178,15 +245,31 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Cas de dépistage (vue d’ensemble)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+              "f00019",
+              "II — Cas de dépistage (vue d’ensemble)",
+            ),
             cardColor: cardCas,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le dépistage peut être obligatoire (certains accidents), facultatif (selon critères), "
-                "ou préventif (sur réquisitions / initiative selon les cas). Le tableau récapitule : "
-                "cas de dépistage, agents compétents et personnes visées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00020",
+                      "Le dépistage peut être obligatoire (certains accidents), facultatif (selon critères), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00021",
+                      "ou préventif (sur réquisitions / initiative selon les cas). Le tableau récapitule : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00022",
+                      "cas de dépistage, agents compétents et personnes visées.",
+                    ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -194,22 +277,40 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
                 heroTag: 'stupefiants_generalites_237',
               ),
               SizedBox(height: 12),
-              _SubTitle("À retenir (lecture rapide)"),
-              _BulletPoint(
-                text:
-                    "Accident mortel / corporel : dépistage généralement obligatoire sur les personnes visées.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00023",
+                  "À retenir (lecture rapide)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toute infraction au Code de la route + raisons plausibles : dépistage possible (signes cliniques, résidus, objets…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00024",
+                  "Accident mortel / corporel : dépistage généralement obligatoire sur les personnes visées.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur réquisitions du procureur : possible même sans accident/infraction/raisons plausibles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00025",
+                  "Toute infraction au Code de la route + raisons plausibles : dépistage possible (signes cliniques, résidus, objets…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "À l’initiative d’un OPJ (ou APJ sur ordre et sous responsabilité OPJ) : possible selon le cadre opérationnel.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00026",
+                  "Sur réquisitions du procureur : possible même sans accident/infraction/raisons plausibles.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00027",
+                  "À l’initiative d’un OPJ (ou APJ sur ordre et sous responsabilité OPJ) : possible selon le cadre opérationnel.",
+                ),
               ),
             ],
           ),
@@ -217,14 +318,26 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Procédure terrain → labo (schéma)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+              "f00028",
+              "III — Procédure terrain → labo (schéma)",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le schéma ci-dessous synthétise les embranchements : dépistage salivaire, refus, "
-                "impossibilité, prélèvements (salive/sang), examen clinique et envoi au laboratoire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00029",
+                      "Le schéma ci-dessous synthétise les embranchements : dépistage salivaire, refus, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                      "f00030",
+                      "impossibilité, prélèvements (salive/sang), examen clinique et envoi au laboratoire.",
+                    ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -232,31 +345,61 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
                 heroTag: 'stupefiants_generalites_238',
               ),
               SizedBox(height: 12),
-              _SubTitle("Points pédagogiques"),
-              _BulletPoint(
-                text:
-                    "Dépistage salivaire : réalisé par OPJ / APJ / APJA (sur ordre et sous responsabilité d’un OPJ).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00031",
+                  "Points pédagogiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En cas de résultat positif : envoi au laboratoire + constitution du dossier (résultats, échantillon, fiche de suivi).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00032",
+                  "Dépistage salivaire : réalisé par OPJ / APJ / APJA (sur ordre et sous responsabilité d’un OPJ).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Refus de se soumettre aux vérifications : bascule sur la qualification délictuelle (procédure adaptée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00033",
+                  "En cas de résultat positif : envoi au laboratoire + constitution du dossier (résultats, échantillon, fiche de suivi).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si prélèvement salivaire impossible (ex. conducteur gravement blessé ou décédé) : orientation vers prélèvement sanguin selon cadre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00034",
+                  "Refus de se soumettre aux vérifications : bascule sur la qualification délictuelle (procédure adaptée).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00035",
+                  "Si prélèvement salivaire impossible (ex. conducteur gravement blessé ou décédé) : orientation vers prélèvement sanguin selon cadre.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "NOTA (pratique PV)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00036",
+                  "NOTA (pratique PV)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Toujours tracer : identité, qualité de l’agent, base légale, circonstances, déroulé chronologique, "
-                        "matériel utilisé, scellés, chaîne de conservation, transmissions et réquisitions.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                          "f00037",
+                          "Toujours tracer : identité, qualité de l’agent, base légale, circonstances, déroulé chronologique, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                          "f00038",
+                          "matériel utilisé, scellés, chaîne de conservation, transmissions et réquisitions.",
+                        ),
                   ),
                 ],
               ),
@@ -266,59 +409,110 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Rôles & documents (PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+              "f00039",
+              "IV — Rôles & documents (PV)",
+            ),
             cardColor: cardOutils,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Agents compétents"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00040",
+                  "Agents compétents",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Le dépistage est réalisé par "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00041",
+                    "Le dépistage est réalisé par ",
+                  ),
+                ),
                 TextSpan(text: "OPJ"),
                 TextSpan(text: ", "),
                 TextSpan(text: "APJ"),
                 TextSpan(text: " ou "),
                 TextSpan(text: "APJA"),
-                TextSpan(text: " (dans le cadre prévu)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00042",
+                    " (dans le cadre prévu).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Pièces qui reviennent souvent"),
-              _BulletPoint(
-                text:
-                    "Résultat du dépistage (support/trace) + mentions de contrôle et conditions de réalisation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00043",
+                  "Pièces qui reviennent souvent",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Fiche de suivi de prélèvement (si prélèvements) + concordance identité/scellés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00044",
+                  "Résultat du dépistage (support/trace) + mentions de contrôle et conditions de réalisation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Réquisitions (si médecin/biologiste requis) + visa/émargements si nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00045",
+                  "Fiche de suivi de prélèvement (si prélèvements) + concordance identité/scellés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transmission au laboratoire / expert + trace de remise (date/heure/personne/service).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00046",
+                  "Réquisitions (si médecin/biologiste requis) + visa/émargements si nécessaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00047",
+                  "Transmission au laboratoire / expert + trace de remise (date/heure/personne/service).",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Selon les cas, les intervenants médicaux peuvent être encadrés par ",
-                ),
-                TextSpan(
-                  text: "R. 235-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00048",
+                    "Selon les cas, les intervenants médicaux peuvent être encadrés par ",
                   ),
                 ),
-                TextSpan(text: " et certains statuts par "),
                 TextSpan(
-                  text: "L. 4131-2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00049",
+                    "R. 235-3 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00050",
+                    " et certains statuts par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00051",
+                    "L. 4131-2 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -649,8 +843,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+        "f00053",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+        "f00054",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -823,7 +1025,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                    "f00055",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -892,7 +1098,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart",
+                  "f00056",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -920,7 +1130,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -955,7 +1167,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

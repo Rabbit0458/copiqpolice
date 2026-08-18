@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
   const AtteintesInvolontairesIttInferieure3MoisPage({super.key});
@@ -56,10 +57,18 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes involontaires",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+            "f00002",
+            "Atteintes involontaires",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Atteintes involontaires à l’intégrité de la personne\n(I.T.T. ≤ 3 mois — Contraventions)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+              "f00003",
+              "Atteintes involontaires à l’intégrité de la personne\n(I.T.T. ≤ 3 mois — Contraventions)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,37 +99,69 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
           // Définition (sans répéter des titres inutilement)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Hors les cas prévus par "),
                 TextSpan(
-                  text: "les articles 222-20 et 222-20-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00005",
+                    "Hors les cas prévus par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ", le fait de causer à autrui, par maladresse, imprudence, inattention, négligence ou manquement à une obligation de sécurité ou de prudence imposée par la loi ou le règlement, "
-                      "dans les conditions et selon les distinctions prévues à ",
-                ),
-                TextSpan(
-                  text: "l’article 121-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00006",
+                    "les articles 222-20 et 222-20-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      ", une incapacité totale de travail d’une durée inférieure ou égale à trois mois constitue une infraction.\n\n"
-                      "Le fait, par la violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence prévue par la loi ou le règlement, "
-                      "de porter atteinte à l’intégrité d’autrui sans qu’il résulte d’I.T.T. constitue également une infraction.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                        "f00007",
+                        ", le fait de causer à autrui, par maladresse, imprudence, inattention, négligence ou manquement à une obligation de sécurité ou de prudence imposée par la loi ou le règlement, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                        "f00008",
+                        "dans les conditions et selon les distinctions prévues à ",
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00009",
+                    "l’article 121-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                        "f00010",
+                        ", une incapacité totale de travail d’une durée inférieure ou égale à trois mois constitue une infraction.\n\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                        "f00011",
+                        "Le fait, par la violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence prévue par la loi ou le règlement, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                        "f00012",
+                        "de porter atteinte à l’intégrité d’autrui sans qu’il résulte d’I.T.T. constitue également une infraction.",
+                      ),
                 ),
               ]),
             ],
@@ -126,30 +171,47 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (exigence)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+              "f00013",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Infractions prévues et réprimées par "),
                 TextSpan(
-                  text:
-                      "les articles R. 625-2, R. 625-3 et R. 622-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00014",
+                    "Infractions prévues et réprimées par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00015",
+                    "les articles R. 625-2, R. 625-3 et R. 622-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point-clé",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00016",
+                  "Point-clé",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "On est ici sur des contraventions : le régime est particulier (élément moral non exigé, distinctions selon ITT, etc.).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00017",
+                      "On est ici sur des contraventions : le régime est particulier (élément moral non exigé, distinctions selon ITT, etc.).",
+                    ),
                   ),
                 ],
               ),
@@ -160,88 +222,158 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
           // Élément matériel (pédagogique + visuel)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+              "f00018",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte involontaire : la faute"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00019",
+                  "A) Un acte involontaire : la faute",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "L’article R. 610-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00020",
+                    "L’article R. 610-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00021",
+                    " précise que les dispositions des 3e et 4e alinéas de ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " précise que les dispositions des 3e et 4e alinéas de ",
-                ),
-                TextSpan(
-                  text: "l’article 121-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00022",
+                    "l’article 121-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " sont applicables aux contraventions lorsque le règlement exige une faute d’imprudence ou de négligence.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00023",
+                    " sont applicables aux contraventions lorsque le règlement exige une faute d’imprudence ou de négligence.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("1) La faute simple (imprudence simple)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00024",
+                  "1) La faute simple (imprudence simple)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "L’article R. 625-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00025",
+                    "L’article R. 625-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      ", en référence à l’article 121-3, énumère une liste limitative de comportements fautifs (les juges doivent en caractériser au moins un).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00026",
+                    ", en référence à l’article 121-3, énumère une liste limitative de comportements fautifs (les juges doivent en caractériser au moins un).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Maladresse, imprudence, inattention, négligence.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00027",
+                  "Maladresse, imprudence, inattention, négligence.",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "• Imprudence / maladresse / inattention : agir sans précautions.\n"
-                "• Négligence : ne pas se soucier des conséquences de son abstention.\n"
-                "Ces fautes s’apprécient par comparaison avec la conduite d’une personne « normalement » adroite, attentive, prudente et diligente "
-                "(ou du professionnel moyen/diligent selon le cas).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00028",
+                      "• Imprudence / maladresse / inattention : agir sans précautions.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00029",
+                      "• Négligence : ne pas se soucier des conséquences de son abstention.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00030",
+                      "Ces fautes s’apprécient par comparaison avec la conduite d’une personne « normalement » adroite, attentive, prudente et diligente ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00031",
+                      "(ou du professionnel moyen/diligent selon le cas).",
+                    ),
               ),
               SizedBox(height: 12),
 
               _BulletPoint(
-                text:
-                    "Manquement à une obligation de sécurité ou de prudence imposée par la loi ou le règlement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00032",
+                  "Manquement à une obligation de sécurité ou de prudence imposée par la loi ou le règlement.",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Le terme « règlement » vise des actes administratifs à caractère général et impersonnel. "
-                "L’inobservation d’une obligation textuelle suffit : il n’est pas nécessaire de viser des devoirs généraux de prudence. "
-                "Les magistrats doivent pouvoir préciser la source et la nature exacte de l’obligation violée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00033",
+                      "Le terme « règlement » vise des actes administratifs à caractère général et impersonnel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00034",
+                      "L’inobservation d’une obligation textuelle suffit : il n’est pas nécessaire de viser des devoirs généraux de prudence. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00035",
+                      "Les magistrats doivent pouvoir préciser la source et la nature exacte de l’obligation violée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Cass. crim., 18 juin 2002",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00036",
+                      "Cass. crim., 18 juin 2002",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : nécessité de préciser la source et la nature exacte de l’obligation violée.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00037",
+                      " : nécessité de préciser la source et la nature exacte de l’obligation violée.",
+                    ),
                   ),
                 ],
               ),
@@ -249,24 +381,57 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "2) La faute caractérisée (cas de causalité indirecte)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00038",
+                  "2) La faute caractérisée (cas de causalité indirecte)",
+                ),
               ),
               _Paragraph(
-                "Si la faute est en lien direct avec le dommage, une faute simple suffit. "
-                "Pour un auteur dont la faute n’est qu’indirectement à l’origine du dommage, "
-                "il faut démontrer une faute caractérisée : lourde, exposant autrui à un danger d’une particulière gravité, "
-                "que l’auteur ne pouvait ignorer (faute grossière, inacceptable).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00039",
+                      "Si la faute est en lien direct avec le dommage, une faute simple suffit. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00040",
+                      "Pour un auteur dont la faute n’est qu’indirectement à l’origine du dommage, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00041",
+                      "il faut démontrer une faute caractérisée : lourde, exposant autrui à un danger d’une particulière gravité, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00042",
+                      "que l’auteur ne pouvait ignorer (faute grossière, inacceptable).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Exemples de jurisprudence :\n"),
                   TextSpan(
-                    text:
-                        "• Remettre volontairement les clés à une personne sans permis et alcoolisée — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00043",
+                      "Exemples de jurisprudence :\n",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 14 décembre 2010",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00044",
+                      "• Remettre volontairement les clés à une personne sans permis et alcoolisée — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00045",
+                      "Cass. crim., 14 décembre 2010",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -274,11 +439,18 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• Médecin du SAMU n’ayant pas posé les bonnes questions — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00046",
+                      "• Médecin du SAMU n’ayant pas posé les bonnes questions — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 2 décembre 2003",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00047",
+                      "Cass. crim., 2 décembre 2003",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -291,50 +463,103 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "3) Violation manifestement délibérée d’une obligation particulière",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00048",
+                  "3) Violation manifestement délibérée d’une obligation particulière",
+                ),
               ),
               _Paragraph(
-                "Il faut :\n"
-                "• une obligation particulière de prudence/sécurité prévue par la loi ou le règlement,\n"
-                "• la connaissance de cette obligation,\n"
-                "• un choix délibéré de ne pas la respecter.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00049",
+                      "Il faut :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00050",
+                      "• une obligation particulière de prudence/sécurité prévue par la loi ou le règlement,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00051",
+                      "• la connaissance de cette obligation,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00052",
+                      "• un choix délibéré de ne pas la respecter.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un lien de causalité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00053",
+                  "B) Un lien de causalité",
+                ),
+              ),
               _Paragraph(
-                "Un lien de causalité entre la faute et l’atteinte (physique ou psychique) est nécessaire. "
-                "Quand plusieurs fautes concourent au dommage, la causalité n’a pas à être immédiate : "
-                "le dommage est apprécié dans son dernier état.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00054",
+                      "Un lien de causalité entre la faute et l’atteinte (physique ou psychique) est nécessaire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00055",
+                      "Quand plusieurs fautes concourent au dommage, la causalité n’a pas à être immédiate : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00056",
+                      "le dommage est apprécié dans son dernier état.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "Causalité directe / indirecte (personnes physiques)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00057",
+                  "Causalité directe / indirecte (personnes physiques)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "L’article 121-3 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00058",
+                    "L’article 121-3 alinéa 4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " définit les auteurs indirects : ils ne sont pas directement à l’origine du dommage mais ont créé/contribué à créer la situation dangereuse ou n’ont pas pris les mesures permettant de l’éviter.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00059",
+                    " définit les auteurs indirects : ils ne sont pas directement à l’origine du dommage mais ont créé/contribué à créer la situation dangereuse ou n’ont pas pris les mesures permettant de l’éviter.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : professionnel de location confiant un scooter des mers à une personne sans permis — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00060",
+                      "Jurisprudence : professionnel de location confiant un scooter des mers à une personne sans permis — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 5 octobre 2004",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00061",
+                      "Cass. crim., 5 octobre 2004",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -347,11 +572,18 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La causalité indirecte est souvent retenue pour le chef d’entreprise/directeur d’établissement en matière d’accidents du travail — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00062",
+                      "La causalité indirecte est souvent retenue pour le chef d’entreprise/directeur d’établissement en matière d’accidents du travail — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 28 mars 2006",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00063",
+                      "Cass. crim., 28 mars 2006",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -363,13 +595,26 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Exemples (maire : lien indirect) :\n"),
                   TextSpan(
-                    text:
-                        "• Aire de jeux : buse non fixée écrasant un enfant — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00064",
+                      "Exemples (maire : lien indirect) :\n",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 20 mars 2001",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00065",
+                      "• Aire de jeux : buse non fixée écrasant un enfant — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00066",
+                      "Cass. crim., 20 mars 2001",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -377,11 +622,18 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• Absence de réglementation des déplacements de dameuses sur piste de luge — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00067",
+                      "• Absence de réglementation des déplacements de dameuses sur piste de luge — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 18 mars 2003",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00068",
+                      "Cass. crim., 18 mars 2003",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -393,18 +645,43 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Sur la personne d’autrui (victime)"),
-              _BulletPoint(text: "Une personne humaine."),
-              _BulletPoint(text: "Une personne vivante."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00069",
+                  "C) Sur la personne d’autrui (victime)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00070",
+                  "Une personne humaine.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00071",
+                  "Une personne vivante.",
+                ),
+              ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : enfant ayant survécu une heure après sa naissance et décédé des suites d’un accident — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00072",
+                      "Jurisprudence : enfant ayant survécu une heure après sa naissance et décédé des suites d’un accident — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 2 décembre 2003",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00073",
+                      "Cass. crim., 2 décembre 2003",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -416,44 +693,65 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un dommage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00074",
+                  "D) Un dommage",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 625-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00075",
+                    "Article R. 625-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : atteinte physique/psychique entraînant une I.T.T. ≤ 3 mois consécutifs (pas de périodes additionnées).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00076",
+                    " : atteinte physique/psychique entraînant une I.T.T. ≤ 3 mois consécutifs (pas de périodes additionnées).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 625-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00077",
+                    "Article R. 625-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : atteinte sans I.T.T., mais résultant d’une violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00078",
+                    " : atteinte sans I.T.T., mais résultant d’une violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 622-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00079",
+                    "Article R. 622-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00080",
+                    " : atteinte sans I.T.T.",
                   ),
                 ),
-                TextSpan(text: " : atteinte sans I.T.T."),
               ]),
             ],
           ),
@@ -462,12 +760,22 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+              "f00081",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Non exigé en matière contraventionnelle."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00082",
+                  "Non exigé en matière contraventionnelle.",
+                ),
+              ),
             ],
           ),
 
@@ -475,32 +783,58 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+              "f00083",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La contravention de 5e classe prévue par R. 625-3 constitue l’aggravation de la contravention de 2e classe prévue par R. 622-1 "
-                "en cas de violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence imposée par la loi ou le règlement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00084",
+                      "La contravention de 5e classe prévue par R. 625-3 constitue l’aggravation de la contravention de 2e classe prévue par R. 622-1 ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00085",
+                      "en cas de violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence imposée par la loi ou le règlement.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Fondement : "),
                 TextSpan(
-                  text: "article R. 625-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00086",
+                    "Fondement : ",
                   ),
                 ),
-                TextSpan(text: " (aggravation de "),
                 TextSpan(
-                  text: "R. 622-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00087",
+                    "article R. 625-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00088",
+                    " (aggravation de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00089",
+                    "R. 622-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
@@ -511,82 +845,144 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
 
           // Répression + tentative/complicité (pédago + propre)
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+              "f00090",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00091",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph(
-                "Les qualifications sont contraventionnelles (2e ou 5e classe selon les cas).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00092",
+                  "Les qualifications sont contraventionnelles (2e ou 5e classe selon les cas).",
+                ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "• Atteintes involontaires sans I.T.T. (2e classe) — ",
-                ),
-                TextSpan(
-                  text: "article R. 622-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00093",
+                    "• Atteintes involontaires sans I.T.T. (2e classe) — ",
                   ),
                 ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00094",
+                    "article R. 622-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
                 TextSpan(text: " : "),
-                TextSpan(text: "amende de 2e classe."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00095",
+                    "amende de 2e classe.",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
 
               _Paragraph.rich([
-                TextSpan(text: "• I.T.T. ≤ 3 mois (5e classe) — "),
                 TextSpan(
-                  text: "article R. 625-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00096",
+                    "• I.T.T. ≤ 3 mois (5e classe) — ",
                   ),
                 ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00097",
+                    "article R. 625-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
                 TextSpan(text: " : "),
-                TextSpan(text: "amende de 5e classe."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00098",
+                    "amende de 5e classe.",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "• Sans I.T.T. + violation manifestement délibérée d’une obligation particulière (5e classe) — ",
-                ),
-                TextSpan(
-                  text: "article R. 625-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00099",
+                    "• Sans I.T.T. + violation manifestement délibérée d’une obligation particulière (5e classe) — ",
                   ),
                 ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00100",
+                    "article R. 625-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
                 TextSpan(text: " : "),
-                TextSpan(text: "amende de 5e classe."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00101",
+                    "amende de 5e classe.",
+                  ),
+                ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Responsabilité pénale des personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00102",
+                  "Responsabilité pénale des personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Prévue notamment par "),
                 TextSpan(
-                  text: "l’article R. 625-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00103",
+                    "Prévue notamment par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00104",
+                    "l’article R. 625-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article R. 622-1 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                    "f00105",
+                    "l’article R. 622-1 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -594,17 +990,38 @@ class AtteintesInvolontairesIttInferieure3MoisPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Même si la causalité avec le dommage est indirecte, la responsabilité peut être engagée en cas de faute simple.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                      "f00106",
+                      "Même si la causalité avec le dommage est indirecte, la responsabilité peut être engagée en cas de faute simple.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
-              _BulletPoint(text: "Complicité : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00107",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00108",
+                  "Tentative : NON.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart",
+                  "f00109",
+                  "Complicité : NON.",
+                ),
+              ),
             ],
           ),
 

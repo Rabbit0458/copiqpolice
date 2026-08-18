@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MortPage extends StatelessWidget {
   const MortPage({super.key});
@@ -44,7 +45,11 @@ class MortPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'La mort',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+            "f00001",
+            'La mort',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,20 +75,23 @@ class MortPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "« Ayant entraîné la mort sans intention de la donner ».",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                        "f00002",
+                        "« Ayant entraîné la mort sans intention de la donner ».",
+                      ),
                     ),
                   ]),
                 ),
@@ -92,19 +100,39 @@ class MortPage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante peut être retenue lorsque l’infraction commise a entraîné la mort. "
-                      "L’auteur n’a jamais voulu donner volontairement la mort à autrui.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                            "f00004",
+                            "Cette circonstance aggravante peut être retenue lorsque l’infraction commise a entraîné la mort. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                            "f00005",
+                            "L’auteur n’a jamais voulu donner volontairement la mort à autrui.",
+                          ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, "
-                      "coauteurs et complices de l’infraction.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                            "f00006",
+                            "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                            "f00007",
+                            "coauteurs et complices de l’infraction.",
+                          ),
                     ),
                   ],
                 ),
@@ -113,36 +141,68 @@ class MortPage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                    "f00008",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _SubTitle(
-                      "2.1 - La nécessité d’une relation de cause à effet",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                        "f00009",
+                        "2.1 - La nécessité d’une relation de cause à effet",
+                      ),
                     ),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "Il est nécessaire qu’il existe entre l’acte délictueux et le décès de la victime une relation de cause à effet (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00010",
+                          "Il est nécessaire qu’il existe entre l’acte délictueux et le décès de la victime une relation de cause à effet (",
+                        ),
                       ),
-                      law("Cass. crim., 17 janvier 1991"),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00011",
+                          "Cass. crim., 17 janvier 1991",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 10),
-                    const _SubTitle(
-                      "2.2 - L’indifférence de l’état préexistant de la victime",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                        "f00012",
+                        "2.2 - L’indifférence de l’état préexistant de la victime",
+                      ),
                     ),
-                    const _Paragraph(
-                      "La circonstance peut être retenue quel que soit l’état de santé de la personne avant qu’elle ne soit victime de l’infraction, "
-                      "même s’il a concouru au décès de la victime alors que tel n’aurait pas été le cas pour une personne en bonne santé.",
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                            "f00013",
+                            "La circonstance peut être retenue quel que soit l’état de santé de la personne avant qu’elle ne soit victime de l’infraction, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                            "f00014",
+                            "même s’il a concouru au décès de la victime alors que tel n’aurait pas été le cas pour une personne en bonne santé.",
+                          ),
                     ),
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
-                          text:
-                              "Le lien causal doit être établi, mais l’état antérieur de la victime n’exclut pas la circonstance aggravante, même s’il a contribué au décès.",
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                            "f00015",
+                            "Le lien causal doit être établi, mais l’état antérieur de la victime n’exclut pas la circonstance aggravante, même s’il a contribué au décès.",
+                          ),
                         ),
                       ],
                     ),
@@ -153,98 +213,219 @@ class MortPage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                    "f00016",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _IntroBullet(
-                      text:
-                          "Cette circonstance aggravante peut notamment s’appliquer aux infractions suivantes :",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                        "f00017",
+                        "Cette circonstance aggravante peut notamment s’appliquer aux infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Les tortures ou actes de barbarie (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00018",
+                          "• Les tortures ou actes de barbarie (",
+                        ),
                       ),
-                      law("article 222-6 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Les violences ("),
                       law(
-                        "articles 222-7, 222-14 al. 2 et 222-14-1 al. 2 C.P.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00019",
+                          "article 222-6 C.P.",
+                        ),
                       ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’administration de substances nuisibles (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00020",
+                          "• Les violences (",
+                        ),
                       ),
-                      law("article 222-15 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le viol ("),
-                      law("article 222-25 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• Le délaissement d’une personne hors d’état de se protéger (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00021",
+                          "articles 222-7, 222-14 al. 2 et 222-14-1 al. 2 C.P.",
+                        ),
                       ),
-                      law("article 223-4 al. 2 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’enlèvement et la séquestration (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00022",
+                          "• L’administration de substances nuisibles (",
+                        ),
                       ),
-                      law("article 224-2 al. 2 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Le délaissement d’un mineur de quinze ans (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00023",
+                          "article 222-15 C.P.",
+                        ),
                       ),
-                      law("article 227-2 al. 2 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• La mise en péril des mineurs ("),
-                      law("article 227-16 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le vol commis avec violences ("),
-                      law("article 311-10 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’extorsion commise avec violences (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00024",
+                          "• Le viol (",
+                        ),
                       ),
-                      law("article 312-7 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00025",
+                          "article 222-25 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• Les destructions, dégradations et détériorations (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00026",
+                          "• Le délaissement d’une personne hors d’état de se protéger (",
+                        ),
                       ),
-                      law("articles 322-5 al. 6 et 322-10 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00027",
+                          "article 223-4 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00028",
+                          "• L’enlèvement et la séquestration (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00029",
+                          "article 224-2 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00030",
+                          "• Le délaissement d’un mineur de quinze ans (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00031",
+                          "article 227-2 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00032",
+                          "• La mise en péril des mineurs (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00033",
+                          "article 227-16 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00034",
+                          "• Le vol commis avec violences (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00035",
+                          "article 311-10 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00036",
+                          "• L’extorsion commise avec violences (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00037",
+                          "article 312-7 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00038",
+                          "• Les destructions, dégradations et détériorations (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mort_page.dart",
+                          "f00039",
+                          "articles 322-5 al. 6 et 322-10 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                   ],
@@ -508,9 +689,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
   const DeclarationDroitsHommeCitoyen1789Page({super.key});
@@ -56,10 +57,18 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Libertés publiques",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+            "f00002",
+            "Libertés publiques",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Déclaration des droits de l’Homme et du Citoyen — 26 août 1789",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+              "f00003",
+              "Déclaration des droits de l’Homme et du Citoyen — 26 août 1789",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
 
           // ===================== CONTEXTE =====================
           _ConditionCard(
-            title: "Repères",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+              "f00004",
+              "Repères",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Texte fondateur de la Révolution française, la Déclaration des droits de l’Homme et du Citoyen "
-                "(DDHC) affirme des droits « naturels, inaliénables et sacrés ». "
-                "Elle fixe des principes de valeur constitutionnelle, au cœur des libertés publiques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                      "f00005",
+                      "Texte fondateur de la Révolution française, la Déclaration des droits de l’Homme et du Citoyen ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                      "f00006",
+                      "(DDHC) affirme des droits « naturels, inaliénables et sacrés ». ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                      "f00007",
+                      "Elle fixe des principes de valeur constitutionnelle, au cœur des libertés publiques.",
+                    ),
               ),
             ],
           ),
@@ -103,22 +132,35 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
 
           // ===================== PRÉAMBULE =====================
           _ConditionCard(
-            title: "Préambule — idées clés",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+              "f00008",
+              "Préambule — idées clés",
+            ),
             cardColor: cardPreambule,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "L’ignorance, l’oubli ou le mépris des droits de l’Homme sont présentés comme causes des malheurs publics et de la corruption des gouvernements.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00009",
+                  "L’ignorance, l’oubli ou le mépris des droits de l’Homme sont présentés comme causes des malheurs publics et de la corruption des gouvernements.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "But : exposer solennellement les droits afin qu’ils restent présents à tous, rappellent droits et devoirs, et servent de référence au pouvoir législatif et exécutif.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00010",
+                  "But : exposer solennellement les droits afin qu’ils restent présents à tous, rappellent droits et devoirs, et servent de référence au pouvoir législatif et exécutif.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Les réclamations des citoyens doivent désormais être fondées sur des principes simples et incontestables, orientés vers la Constitution et le bonheur de tous.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00011",
+                  "Les réclamations des citoyens doivent désormais être fondées sur des principes simples et incontestables, orientés vers la Constitution et le bonheur de tous.",
+                ),
               ),
             ],
           ),
@@ -127,60 +169,97 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
 
           // ===================== PRINCIPES STRUCTURANTS =====================
           _ConditionCard(
-            title: "Principes structurants",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+              "f00012",
+              "Principes structurants",
+            ),
             cardColor: cardPrincipes,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Les droits naturels protégés"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00013",
+                  "Les droits naturels protégés",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Liberté — propriété — sûreté — résistance à l’oppression.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00014",
+                  "Liberté — propriété — sûreté — résistance à l’oppression.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("La souveraineté"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00015",
+                  "La souveraineté",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le principe de toute souveraineté réside dans la nation — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00016",
+                    "Le principe de toute souveraineté réside dans la nation — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Art. 3",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00017",
+                    "Art. 3",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
-              _SubTitle("La loi comme référence"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00018",
+                  "La loi comme référence",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La loi encadre l’exercice des libertés : elle fixe les bornes nécessaires pour permettre à chacun la jouissance des mêmes droits — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00019",
+                    "La loi encadre l’exercice des libertés : elle fixe les bornes nécessaires pour permettre à chacun la jouissance des mêmes droits — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Art. 4",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00020",
+                    "Art. 4",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Elle ne doit défendre que les actions nuisibles à la société — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00021",
+                    "Elle ne doit défendre que les actions nuisibles à la société — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Art. 5",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00022",
+                    "Art. 5",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -191,148 +270,192 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
 
           // ===================== ARTICLES (SÉLECTION) =====================
           _ConditionCard(
-            title: "Articles essentiels (sélection pédagogique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+              "f00023",
+              "Articles essentiels (sélection pédagogique)",
+            ),
             cardColor: cardArticles,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 1",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00024",
+                    "Art. 1",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : les hommes naissent et demeurent libres et égaux en droits ; les distinctions sociales ne peuvent être fondées que sur l’utilité commune.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00025",
+                    " : les hommes naissent et demeurent libres et égaux en droits ; les distinctions sociales ne peuvent être fondées que sur l’utilité commune.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 2",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00026",
+                    "Art. 2",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : but de toute association politique = conservation des droits naturels et imprescriptibles (liberté, propriété, sûreté, résistance à l’oppression).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00027",
+                    " : but de toute association politique = conservation des droits naturels et imprescriptibles (liberté, propriété, sûreté, résistance à l’oppression).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 6",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00028",
+                    "Art. 6",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : la loi est l’expression de la volonté générale ; elle doit être la même pour tous ; accès aux emplois publics selon capacité, vertus et talents.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00029",
+                    " : la loi est l’expression de la volonté générale ; elle doit être la même pour tous ; accès aux emplois publics selon capacité, vertus et talents.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 7",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00030",
+                    "Art. 7",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : nul ne peut être accusé, arrêté ou détenu que dans les cas déterminés par la loi et selon les formes qu’elle a prescrites.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00031",
+                    " : nul ne peut être accusé, arrêté ou détenu que dans les cas déterminés par la loi et selon les formes qu’elle a prescrites.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 8",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00032",
+                    "Art. 8",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : la loi ne doit établir que des peines strictement et évidemment nécessaires ; principe de légalité des délits et des peines.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00033",
+                    " : la loi ne doit établir que des peines strictement et évidemment nécessaires ; principe de légalité des délits et des peines.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 9",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00034",
+                    "Art. 9",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : présomption d’innocence ; toute rigueur non nécessaire doit être sévèrement réprimée par la loi.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00035",
+                    " : présomption d’innocence ; toute rigueur non nécessaire doit être sévèrement réprimée par la loi.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 10",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00036",
+                    "Art. 10",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : liberté d’opinion (même religieuse) tant que la manifestation ne trouble pas l’ordre public établi par la loi.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00037",
+                    " : liberté d’opinion (même religieuse) tant que la manifestation ne trouble pas l’ordre public établi par la loi.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 11",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00038",
+                    "Art. 11",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : libre communication des pensées et opinions ; chacun peut parler, écrire, imprimer librement (sauf abus prévus par la loi).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00039",
+                    " : libre communication des pensées et opinions ; chacun peut parler, écrire, imprimer librement (sauf abus prévus par la loi).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 16",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00040",
+                    "Art. 16",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : une société sans garantie des droits et sans séparation des pouvoirs n’a point de constitution.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00041",
+                    " : une société sans garantie des droits et sans séparation des pouvoirs n’a point de constitution.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 17",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00042",
+                    "Art. 17",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : propriété = droit inviolable et sacré ; privation possible seulement par nécessité publique, légalement constatée, et sous juste et préalable indemnité.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                    "f00043",
+                    " : propriété = droit inviolable et sacré ; privation possible seulement par nécessité publique, légalement constatée, et sous juste et préalable indemnité.",
+                  ),
                 ),
               ]),
             ],
@@ -342,29 +465,45 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
 
           // ===================== SYNTHÈSE OPÉRATIONNELLE =====================
           _ConditionCard(
-            title: "À retenir (synthèse)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+              "f00044",
+              "À retenir (synthèse)",
+            ),
             cardColor: cardSynthese,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "La DDHC pose des droits fondamentaux et des garanties contre l’arbitraire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00045",
+                  "La DDHC pose des droits fondamentaux et des garanties contre l’arbitraire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La loi encadre les libertés : elle autorise, limite et sanctionne uniquement ce qui est nécessaire à la vie sociale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00046",
+                  "La loi encadre les libertés : elle autorise, limite et sanctionne uniquement ce qui est nécessaire à la vie sociale.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Principes clés : égalité, souveraineté nationale, légalité, présomption d’innocence, libertés d’opinion et d’expression.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                  "f00047",
+                  "Principes clés : égalité, souveraineté nationale, légalité, présomption d’innocence, libertés d’opinion et d’expression.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En libertés publiques, ce texte sert de base de lecture : toute restriction doit être justifiée, encadrée et proportionnée, sous le contrôle du juge.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/introduction/declaration_droits_homme_citoyen_1789_page.dart",
+                      "f00048",
+                      "En libertés publiques, ce texte sert de base de lecture : toute restriction doit être justifiée, encadrée et proportionnée, sous le contrôle du juge.",
+                    ),
                   ),
                 ],
               ),
@@ -622,9 +761,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

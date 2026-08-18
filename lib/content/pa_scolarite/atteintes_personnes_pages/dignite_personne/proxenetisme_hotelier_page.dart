@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaProxenetismeHotelierPage extends StatelessWidget {
   const PaProxenetismeHotelierPage({super.key});
@@ -56,10 +57,18 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la dignité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+            "f00002",
+            "Atteintes à la dignité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le proxénétisme hôtelier",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+              "f00003",
+              "Le proxénétisme hôtelier",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,32 +99,60 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une infraction le fait, par quiconque, agissant directement ou par personne interposée, "
-                "de faciliter habituellement ou sciemment l’exercice de la prostitution par la fourniture de locaux "
-                "ou de moyens (établissement, local privé, emplacement, véhicule).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00005",
+                      "Constitue une infraction le fait, par quiconque, agissant directement ou par personne interposée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00006",
+                      "de faciliter habituellement ou sciemment l’exercice de la prostitution par la fourniture de locaux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00007",
+                      "ou de moyens (établissement, local privé, emplacement, véhicule).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "1° Détenir, gérer, exploiter, diriger, faire fonctionner, financer ou contribuer à financer un établissement de prostitution.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00008",
+                  "1° Détenir, gérer, exploiter, diriger, faire fonctionner, financer ou contribuer à financer un établissement de prostitution.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "2° Détenir/ gérer/ exploiter… un établissement ouvert ou utilisé par le public, et accepter ou tolérer habituellement la prostitution dans l’établissement (ou annexes) ou la recherche de clients.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00009",
+                  "2° Détenir/ gérer/ exploiter… un établissement ouvert ou utilisé par le public, et accepter ou tolérer habituellement la prostitution dans l’établissement (ou annexes) ou la recherche de clients.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "3° Vendre ou tenir à disposition des locaux/ emplacements non utilisés par le public, en sachant qu’ils serviront à la prostitution.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00010",
+                  "3° Vendre ou tenir à disposition des locaux/ emplacements non utilisés par le public, en sachant qu’ils serviront à la prostitution.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "4° Vendre, louer ou tenir à disposition des véhicules, en sachant qu’ils serviront à la prostitution.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00011",
+                  "4° Vendre, louer ou tenir à disposition des véhicules, en sachant qu’ils serviront à la prostitution.",
+                ),
               ),
             ],
           ),
@@ -120,18 +161,30 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+              "f00012",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-10 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00013",
+                    "Article 225-10 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime le proxénétisme hôtelier.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00014",
+                    " : définit et réprime le proxénétisme hôtelier.",
+                  ),
                 ),
               ]),
             ],
@@ -141,38 +194,84 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le texte sanctionne des comportements qui concourent à faciliter l’exercice de la prostitution par la fourniture de locaux "
-                "et distingue quatre infractions autonomes.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00016",
+                      "Le texte sanctionne des comportements qui concourent à faciliter l’exercice de la prostitution par la fourniture de locaux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00017",
+                      "et distingue quatre infractions autonomes.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "A) 1° — Tenue d’un établissement de prostitution",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00018",
+                  "A) 1° — Tenue d’un établissement de prostitution",
+                ),
               ),
               _Paragraph(
-                "Objectif : empêcher la reconstitution de maisons de prostitution (fermeture historique par la loi « Marthe Richard » du 13 avril 1946). "
-                "L’infraction vise la participation à l’exploitation d’un établissement de prostitution.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00019",
+                      "Objectif : empêcher la reconstitution de maisons de prostitution (fermeture historique par la loi « Marthe Richard » du 13 avril 1946). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00020",
+                      "L’infraction vise la participation à l’exploitation d’un établissement de prostitution.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("1) Une participation à l’exploitation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00021",
+                  "1) Une participation à l’exploitation",
+                ),
+              ),
               _Paragraph(
-                "L’exploitation est entendue très largement : détenir, gérer, exploiter, diriger, faire fonctionner, financer ou contribuer à financer, "
-                "directement ou par personne interposée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00022",
+                      "L’exploitation est entendue très largement : détenir, gérer, exploiter, diriger, faire fonctionner, financer ou contribuer à financer, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00023",
+                      "directement ou par personne interposée.",
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Jurisprudence : définition large de l’exploitation ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00024",
+                      "Jurisprudence : définition large de l’exploitation ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 14 mai 1968)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00025",
+                      "(Cass. crim., 14 mai 1968)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -183,25 +282,59 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La participation peut être un acte personnel de gestion (propriétaire, locataire, détenteur…), "
-                "ou l’exercice d’un pouvoir d’autorité/contrôle (diriger, faire fonctionner). Elle peut aussi résulter d’un financement "
-                "(apport de fonds, porteurs de parts/actions — parfois via prête-nom).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00026",
+                      "La participation peut être un acte personnel de gestion (propriétaire, locataire, détenteur…), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00027",
+                      "ou l’exercice d’un pouvoir d’autorité/contrôle (diriger, faire fonctionner). Elle peut aussi résulter d’un financement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00028",
+                      "(apport de fonds, porteurs de parts/actions — parfois via prête-nom).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Une reconstitution clandestine à établir"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00029",
+                  "2) Une reconstitution clandestine à établir",
+                ),
+              ),
               _Paragraph(
-                "Pour que l’infraction soit constituée, il faut établir que les comportements visés ont tendu à la reconstitution d’un établissement clandestin.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00030",
+                  "Pour que l’infraction soit constituée, il faut établir que les comportements visés ont tendu à la reconstitution d’un établissement clandestin.",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un établissement de prostitution peut être un local directement destiné à la prostitution, même si cette destination n’est pas exclusive ou permanente, "
-                        "accueillant prostituées et clients venus de l’extérieur ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                          "f00031",
+                          "Un établissement de prostitution peut être un local directement destiné à la prostitution, même si cette destination n’est pas exclusive ou permanente, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                          "f00032",
+                          "accueillant prostituées et clients venus de l’extérieur ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 01 février 1956)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00033",
+                      "(Cass. crim., 01 février 1956)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -214,11 +347,18 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La présence d’une seule prostituée pendant plusieurs jours peut suffire. En revanche, l’infraction n’est pas constituée lorsque seule la tenancière se prostitue ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00034",
+                      "La présence d’une seule prostituée pendant plusieurs jours peut suffire. En revanche, l’infraction n’est pas constituée lorsque seule la tenancière se prostitue ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 17 janvier 1963)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00035",
+                      "(Cass. crim., 17 janvier 1963)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -231,34 +371,75 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) 2° — Tolérance habituelle de la prostitution",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00036",
+                  "B) 2° — Tolérance habituelle de la prostitution",
+                ),
               ),
               _Paragraph(
-                "Cette incrimination vise les mêmes exploitants que le 1°. Trois conditions doivent être réunies.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00037",
+                  "Cette incrimination vise les mêmes exploitants que le 1°. Trois conditions doivent être réunies.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle(
-                "1) Un établissement ouvert au public ou utilisé par le public",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00038",
+                  "1) Un établissement ouvert au public ou utilisé par le public",
+                ),
               ),
               _Paragraph(
-                "Il s’agit de tout lieu que le public peut fréquenter à raison de sa destination (hôtel, restaurant, dancing, lieux de spectacles…), "
-                "ainsi que leurs annexes. L’exploitation doit relever du droit privé (particuliers).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00039",
+                      "Il s’agit de tout lieu que le public peut fréquenter à raison de sa destination (hôtel, restaurant, dancing, lieux de spectacles…), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00040",
+                      "ainsi que leurs annexes. L’exploitation doit relever du droit privé (particuliers).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Un caractère habituel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00041",
+                  "2) Un caractère habituel",
+                ),
+              ),
               _Paragraph(
-                "L’habitude est un élément essentiel : plusieurs faits de prostitution doivent avoir été réalisés dans l’établissement "
-                "(par une ou plusieurs personnes). Il n’est pas nécessaire que la prostitution soit l’activité habituelle de la personne (peut être occasionnelle).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00042",
+                      "L’habitude est un élément essentiel : plusieurs faits de prostitution doivent avoir été réalisés dans l’établissement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00043",
+                      "(par une ou plusieurs personnes). Il n’est pas nécessaire que la prostitution soit l’activité habituelle de la personne (peut être occasionnelle).",
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le délit n’est pas constitué si les faits se limitent à une seule journée ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00044",
+                      "Le délit n’est pas constitué si les faits se limitent à une seule journée ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Grenoble, 15 mai 1996)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00045",
+                      "(C.A. Grenoble, 15 mai 1996)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -268,49 +449,109 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Acceptation ou tolérance"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00046",
+                  "3) Acceptation ou tolérance",
+                ),
+              ),
               _Paragraph(
-                "L’exploitant doit avoir accepté (consenti) ou toléré (ne pas empêcher) la pratique de la prostitution dans les lieux qu’il gère, "
-                "ainsi que les annexes. Il doit avoir eu connaissance des faits : la simple présence de prostituées ne suffit pas.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00047",
+                      "L’exploitant doit avoir accepté (consenti) ou toléré (ne pas empêcher) la pratique de la prostitution dans les lieux qu’il gère, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00048",
+                      "ainsi que les annexes. Il doit avoir eu connaissance des faits : la simple présence de prostituées ne suffit pas.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) 3° — Vente ou mise à disposition de locaux/ emplacements privés",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00049",
+                  "C) 3° — Vente ou mise à disposition de locaux/ emplacements privés",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Le texte vise expressément "),
                 TextSpan(
-                  text:
-                      "« des locaux ou emplacements non utilisés par le public »",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00050",
+                    "Le texte vise expressément ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00051",
+                    "« des locaux ou emplacements non utilisés par le public »",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : propriétés privées (maisons, appartements, studios…), ou locaux non accessibles au public.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00052",
+                    " : propriétés privées (maisons, appartements, studios…), ou locaux non accessibles au public.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _SubTitle("Vente"),
               _Paragraph(
-                "Le propriétaire vend son bien en ayant connaissance, au moment de la transaction, de la nature de l’activité qui y sera exercée.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00053",
+                  "Le propriétaire vend son bien en ayant connaissance, au moment de la transaction, de la nature de l’activité qui y sera exercée.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Mise à disposition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00054",
+                  "Mise à disposition",
+                ),
+              ),
               _Paragraph(
-                "Peut être le propriétaire, locataire, sous-locataire, occupant sans titre… Il suffit qu’il puisse utiliser les lieux assez longtemps pour les mettre à disposition. "
-                "Le caractère habituel n’est pas requis : la mise à disposition peut être occasionnelle, le délit est constitué.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00055",
+                      "Peut être le propriétaire, locataire, sous-locataire, occupant sans titre… Il suffit qu’il puisse utiliser les lieux assez longtemps pour les mettre à disposition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00056",
+                      "Le caractère habituel n’est pas requis : la mise à disposition peut être occasionnelle, le délit est constitué.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) 4° — Vente, location ou mise à disposition de véhicules",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00057",
+                  "D) 4° — Vente, location ou mise à disposition de véhicules",
+                ),
               ),
               _Paragraph(
-                "Concerne exclusivement la vente, la location ou la mise à disposition de véhicules en vue de l’exercice de la prostitution "
-                "(voiture, camping-car, fourgon, etc.). L’auteur doit savoir que le véhicule servira à la prostitution.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00058",
+                      "Concerne exclusivement la vente, la location ou la mise à disposition de véhicules en vue de l’exercice de la prostitution ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00059",
+                      "(voiture, camping-car, fourgon, etc.). L’auteur doit savoir que le véhicule servira à la prostitution.",
+                    ),
               ),
             ],
           ),
@@ -319,15 +560,31 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+              "f00060",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intention coupable est exigée : l’auteur agit en toute connaissance de cause. "
-                "Il sait qu’il facilite la prostitution (reconstitution clandestine, acceptation/tolérance habituelle, "
-                "vente/location/mise à disposition de locaux ou de véhicules en vue de la prostitution).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00061",
+                      "L’intention coupable est exigée : l’auteur agit en toute connaissance de cause. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00062",
+                      "Il sait qu’il facilite la prostitution (reconstitution clandestine, acceptation/tolérance habituelle, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                      "f00063",
+                      "vente/location/mise à disposition de locaux ou de véhicules en vue de la prostitution).",
+                    ),
               ),
             ],
           ),
@@ -336,127 +593,299 @@ class PaProxenetismeHotelierPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+              "f00064",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [_Paragraph("Aucune.")],
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00065",
+                  "Aucune.",
+                ),
+              ),
+            ],
           ),
 
           const SizedBox(height: 14),
 
           // Répression + tentative/complicité + exemption
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+              "f00066",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00067",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 750 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00068",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-10 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00069",
+                    "10 ans d’emprisonnement et 750 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00070",
+                    "article 225-10 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                "Une période de sûreté est applicable pour les infractions prévues aux 1° et 2°.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00071",
+                  "Une période de sûreté est applicable pour les infractions prévues aux 1° et 2°.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00072",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 225-12 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00073",
+                    "Responsabilité pénale prévue par ",
+                  ),
                 ),
-                TextSpan(text: " ; amende selon "),
                 TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: " + peines prévues par "),
-                TextSpan(
-                  text: "l’article 131-39 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: ", ainsi que "),
-                TextSpan(
-                  text: "les articles 225-24 et 225-25 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00074",
+                    "l’article 225-12 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (confiscations, dissolution, interdictions professionnelles, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00075",
+                    " ; amende selon ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00076",
+                    "l’article 131-38 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00077",
+                    " + peines prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00078",
+                    "l’article 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00079",
+                    ", ainsi que ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00080",
+                    "les articles 225-24 et 225-25 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00081",
+                    " (confiscations, dissolution, interdictions professionnelles, etc.).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00082",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 225-11 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00083",
+                    "Tentative : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00084",
+                    "article 225-11 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00085",
+                    "Complicité : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00086",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00087",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00088",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Exemption de peine : OUI — "),
                 TextSpan(
-                  text: "article 225-11-1 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00089",
+                    "Exemption de peine : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00090",
+                    "article 225-11-1 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (avertir l’autorité administrative ou judiciaire et permettre d’éviter la réalisation de l’infraction).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00091",
+                    " (avertir l’autorité administrative ou judiciaire et permettre d’éviter la réalisation de l’infraction).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Réduction de peine : OUI — "),
                 TextSpan(
-                  text: "article 225-11-1 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00092",
+                    "Réduction de peine : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                    "f00093",
+                    "article 225-11-1 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " (peine réduite des deux tiers si l’auteur/complice avertit l’autorité et permet de faire cesser l’infraction, d’éviter un préjudice irréversible, "
-                      "ou d’identifier les autres auteurs/complices).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                        "f00094",
+                        " (peine réduite des deux tiers si l’auteur/complice avertit l’autorité et permet de faire cesser l’infraction, d’éviter un préjudice irréversible, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                        "f00095",
+                        "ou d’identifier les autres auteurs/complices).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                  "f00096",
+                  "À retenir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La loi distingue :\n"
-                        "• l’exemption : dénonciation au stade de la tentative + action permettant d’éviter l’infraction.\n"
-                        "• la réduction : dénonciation après commission pour faire cesser les faits, éviter un dommage irréversible, ou identifier les autres auteurs/complices.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                          "f00097",
+                          "La loi distingue :\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                          "f00098",
+                          "• l’exemption : dénonciation au stade de la tentative + action permettant d’éviter l’infraction.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart",
+                          "f00099",
+                          "• la réduction : dénonciation après commission pour faire cesser les faits, éviter un dommage irréversible, ou identifier les autres auteurs/complices.",
+                        ),
                   ),
                 ],
               ),

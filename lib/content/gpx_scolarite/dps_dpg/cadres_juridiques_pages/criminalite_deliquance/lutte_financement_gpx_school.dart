@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class LutteFinancementGpxSchool extends StatelessWidget {
   const LutteFinancementGpxSchool({super.key});
@@ -23,7 +24,11 @@ class LutteFinancementGpxSchool extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'Financement des activités criminelles',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+            "f00001",
+            'Financement des activités criminelles',
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w700, fontSize: 16),
         ),
       ),
@@ -33,29 +38,65 @@ class LutteFinancementGpxSchool extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const _SubTitle(
-                '2.3.4 – La lutte contre le financement des activités liées à la criminalité organisée',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                  "f00002",
+                  '2.3.4 – La lutte contre le financement des activités liées à la criminalité organisée',
+                ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Le dispositif de lutte contre le financement des activités liées à la '
-                'criminalité organisée permet de geler rapidement les biens de la '
-                'personne mise en examen afin de garantir le paiement des amendes et, '
-                'le cas échéant, l’indemnisation des victimes.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00003",
+                      'Le dispositif de lutte contre le financement des activités liées à la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00004",
+                      'criminalité organisée permet de geler rapidement les biens de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00005",
+                      'personne mise en examen afin de garantir le paiement des amendes et, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00006",
+                      'le cas échéant, l’indemnisation des victimes.',
+                    ),
               ),
               const SizedBox(height: 10),
               _ConditionCard(
-                title: 'Fondement juridique',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                  "f00007",
+                  'Fondement juridique',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          'L’article 706-103 du Code de procédure pénale autorise les '
-                          'mesures conservatoires lors de la commission d’une infraction '
-                          'liée à la criminalité organisée.',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00008",
+                            'L’article 706-103 du Code de procédure pénale autorise les ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00009",
+                            'mesures conservatoires lors de la commission d’une infraction ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00010",
+                            'liée à la criminalité organisée.',
+                          ),
                       style: TextStyle(color: Colors.red),
                     ),
                   ]),
@@ -64,134 +105,326 @@ class LutteFinancementGpxSchool extends StatelessWidget {
 
               const SizedBox(height: 22),
               _ConditionCard(
-                title: '2.3.4.1 – Le champ d’application',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                  "f00011",
+                  '2.3.4.1 – Le champ d’application',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'Il s’agit d’une procédure à caractère judiciaire, propre à la lutte '
-                    'contre la criminalité organisée.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00012",
+                          'Il s’agit d’une procédure à caractère judiciaire, propre à la lutte ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00013",
+                          'contre la criminalité organisée.',
+                        ),
                   ),
                   SizedBox(height: 6),
                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          'Elle permet au juge des libertés et de la détention, sur '
-                          'requête du procureur de la République, dans le cadre d’une '
-                          'information judiciaire portant sur les infractions relevant du '
-                          'domaine d’application des articles 706-73, 706-73-1 et 706-74 '
-                          'du Code de procédure pénale, d’ordonner des mesures '
-                          'conservatoires.',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00014",
+                            'Elle permet au juge des libertés et de la détention, sur ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00015",
+                            'requête du procureur de la République, dans le cadre d’une ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00016",
+                            'information judiciaire portant sur les infractions relevant du ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00017",
+                            'domaine d’application des articles 706-73, 706-73-1 et 706-74 ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00018",
+                            'du Code de procédure pénale, d’ordonner des mesures ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                            "f00019",
+                            'conservatoires.',
+                          ),
                       style: TextStyle(color: Colors.red),
                     ),
                   ]),
                   SizedBox(height: 8),
-                  _Paragraph('La mesure conservatoire doit garantir :'),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00020",
+                      'La mesure conservatoire doit garantir :',
+                    ),
+                  ),
                   SizedBox(height: 4),
-                  _BulletPoint(text: 'le paiement des amendes encourues ;'),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00021",
+                      'le paiement des amendes encourues ;',
+                    ),
+                  ),
                   _BulletPoint(
                     text:
-                        'et, le cas échéant, l’indemnisation des victimes (dommages et '
-                        'intérêts, restitution…).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00022",
+                          'et, le cas échéant, l’indemnisation des victimes (dommages et ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00023",
+                          'intérêts, restitution…).',
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 22),
               _ConditionCard(
-                title: '2.3.4.2 – Les modalités de mise en œuvre',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                  "f00024",
+                  '2.3.4.2 – Les modalités de mise en œuvre',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'Seul le juge des libertés et de la détention peut ordonner des '
-                    'mesures conservatoires en matière de criminalité organisée. Il est '
-                    'compétent sur l’ensemble du territoire national.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00025",
+                          'Seul le juge des libertés et de la détention peut ordonner des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00026",
+                          'mesures conservatoires en matière de criminalité organisée. Il est ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00027",
+                          'compétent sur l’ensemble du territoire national.',
+                        ),
                   ),
                   SizedBox(height: 6),
                   _Paragraph(
-                    'Le juge des libertés et de la détention est saisi par une requête du '
-                    'procureur de la République.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00028",
+                          'Le juge des libertés et de la détention est saisi par une requête du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00029",
+                          'procureur de la République.',
+                        ),
                   ),
                   SizedBox(height: 4),
                   _Paragraph(
-                    'Le rôle du juge d’instruction est indirect : il attire l’attention du '
-                    'procureur de la République sur l’intérêt de mettre en œuvre de telles '
-                    'mesures (par exemple lorsqu’il découvre un patrimoine important '
-                    'lié aux faits).',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00030",
+                          'Le rôle du juge d’instruction est indirect : il attire l’attention du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00031",
+                          'procureur de la République sur l’intérêt de mettre en œuvre de telles ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00032",
+                          'mesures (par exemple lorsqu’il découvre un patrimoine important ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00033",
+                          'lié aux faits).',
+                        ),
                   ),
                   SizedBox(height: 8),
-                  _Paragraph('Les mesures conservatoires peuvent porter sur :'),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00034",
+                      'Les mesures conservatoires peuvent porter sur :',
+                    ),
+                  ),
                   SizedBox(height: 4),
                   _BulletPoint(
-                    text:
-                        'les biens meubles (véhicules, sommes d’argent, valeurs, etc.) ;',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00035",
+                      'les biens meubles (véhicules, sommes d’argent, valeurs, etc.) ;',
+                    ),
                   ),
                   _BulletPoint(
                     text:
-                        'les biens immeubles (maisons, appartements, terrains, locaux '
-                        'professionnels, etc.) ;',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00036",
+                          'les biens immeubles (maisons, appartements, terrains, locaux ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00037",
+                          'professionnels, etc.) ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'des biens divis ou indivis appartenant à la personne mise en '
-                        'examen (par exemple un bien détenu en indivision avec un proche).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00038",
+                          'des biens divis ou indivis appartenant à la personne mise en ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00039",
+                          'examen (par exemple un bien détenu en indivision avec un proche).',
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 22),
               _ConditionCard(
-                title: '2.3.4.3 – Les suites des mesures conservatoires',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                  "f00040",
+                  '2.3.4.3 – Les suites des mesures conservatoires',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'Le sort des mesures conservatoires dépend de l’issue de la procédure '
-                    'pénale et de l’action civile.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00041",
+                          'Le sort des mesures conservatoires dépend de l’issue de la procédure ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00042",
+                          'pénale et de l’action civile.',
+                        ),
                   ),
                   SizedBox(height: 8),
-                  _Paragraph('En cas de condamnation :'),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00043",
+                      'En cas de condamnation :',
+                    ),
+                  ),
                   SizedBox(height: 4),
                   _BulletPoint(
                     text:
-                        'la condamnation pénale vaut validation des mesures '
-                        'conservatoires ;',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00044",
+                          'la condamnation pénale vaut validation des mesures ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00045",
+                          'conservatoires ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'elle permet l’inscription définitive des sûretés (hypothèques, '
-                        'saisies, etc.).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00046",
+                          'elle permet l’inscription définitive des sûretés (hypothèques, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00047",
+                          'saisies, etc.).',
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _Paragraph('En cas d’échec des poursuites :'),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00048",
+                      'En cas d’échec des poursuites :',
+                    ),
+                  ),
                   SizedBox(height: 4),
                   _BulletPoint(
-                    text: 'en cas de non-lieu, de relaxe ou d’acquittement ;',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00049",
+                      'en cas de non-lieu, de relaxe ou d’acquittement ;',
+                    ),
                   ),
                   _BulletPoint(
-                    text:
-                        'ou en cas d’extinction de l’action publique et de l’action civile,',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                      "f00050",
+                      'ou en cas d’extinction de l’action publique et de l’action civile,',
+                    ),
                   ),
                   _Paragraph(
-                    'la mainlevée des mesures conservatoires intervient alors de plein droit '
-                    '(les biens sont « libérés » et les sûretés radiées).',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00051",
+                          'la mainlevée des mesures conservatoires intervient alors de plein droit ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00052",
+                          '(les biens sont « libérés » et les sûretés radiées).',
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 24),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'En pratique, ces mesures visent à empêcher l’organisation '
-                        'criminelle de profiter des fruits de l’infraction et à garantir, '
-                        'autant que possible, l’indemnisation des victimes. Version au '
-                        '01/07/2025 – SDCP – Tous droits réservés.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00053",
+                          'En pratique, ces mesures visent à empêcher l’organisation ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00054",
+                          'criminelle de profiter des fruits de l’infraction et à garantir, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00055",
+                          'autant que possible, l’indemnisation des victimes. Version au ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart",
+                          "f00056",
+                          '01/07/2025 – SDCP – Tous droits réservés.',
+                        ),
                   ),
                 ],
               ),
@@ -449,9 +682,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

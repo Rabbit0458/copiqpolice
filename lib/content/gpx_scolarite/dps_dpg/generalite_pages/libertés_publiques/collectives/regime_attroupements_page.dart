@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RegimeAttroupementsPage extends StatelessWidget {
   const RegimeAttroupementsPage({super.key});
@@ -38,7 +39,11 @@ class RegimeAttroupementsPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Le régime des attroupements',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+            "f00001",
+            'Le régime des attroupements',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -54,7 +59,11 @@ class RegimeAttroupementsPage extends StatelessWidget {
           // TITRE + INTRO
           // ==================================================================
           Text(
-            'Le régime des attroupements',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+              "f00002",
+              'Le régime des attroupements',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -63,15 +72,31 @@ class RegimeAttroupementsPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           _Paragraph.rich([
-            const TextSpan(
+            TextSpan(
               text:
-                  'L’attroupement est au cœur du maintien de l’ordre public. Il se distingue de la manifestation déclarée, '
-                  'mais obéit à un régime juridique très encadré (Code Pénal et Code de la Sécurité Intérieure). ',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00003",
+                    'L’attroupement est au cœur du maintien de l’ordre public. Il se distingue de la manifestation déclarée, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00004",
+                    'mais obéit à un régime juridique très encadré (Code Pénal et Code de la Sécurité Intérieure). ',
+                  ),
             ),
             TextSpan(
               text:
-                  'Pour le policier, connaître précisément la définition de l’attroupement, les conditions de dispersion, '
-                  'l’emploi de la force et les infractions associées est indispensable pour agir légalement et en sécurité.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00005",
+                    'Pour le policier, connaître précisément la définition de l’attroupement, les conditions de dispersion, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00006",
+                    'l’emploi de la force et les infractions associées est indispensable pour agir légalement et en sécurité.',
+                  ),
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: referenceColor,
@@ -84,20 +109,30 @@ class RegimeAttroupementsPage extends StatelessWidget {
           // CHAPITRE 1 — DÉFINITION
           // ==================================================================
           _HypoCard(
-            title: 'Chapitre 1 — Définition de l’attroupement',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+              "f00007",
+              'Chapitre 1 — Définition de l’attroupement',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Selon l’article 431-3 du Code Pénal, constitue un attroupement ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00008",
+                    'Selon l’article 431-3 du Code Pénal, constitue un attroupement ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'tout rassemblement de personnes sur la voie publique ou dans un lieu public susceptible de troubler l’ordre public.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00009",
+                    'tout rassemblement de personnes sur la voie publique ou dans un lieu public susceptible de troubler l’ordre public.',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
@@ -105,84 +140,169 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Pas besoin de violences effectives : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00010",
+                    'Pas besoin de violences effectives : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'il n’est pas exigé que des violences soient commises pour qu’un rassemblement soit qualifié d’attroupement. '
-                      'Une simple menace de trouble peut suffire.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00011",
+                        'il n’est pas exigé que des violences soient commises pour qu’un rassemblement soit qualifié d’attroupement. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00012",
+                        'Une simple menace de trouble peut suffire.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Attroupement ≠ manifestation illicite : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00013",
+                    'Attroupement ≠ manifestation illicite : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la manifestation illicite résulte d’une absence de déclaration, d’une déclaration incomplète ou inexacte, '
-                      'ou encore d’une manifestation interdite par arrêté. L’attroupement vise le trouble potentiel à l’ordre public.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00014",
+                        'la manifestation illicite résulte d’une absence de déclaration, d’une déclaration incomplète ou inexacte, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00015",
+                        'ou encore d’une manifestation interdite par arrêté. L’attroupement vise le trouble potentiel à l’ordre public.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Le régime des attroupements est régi par les articles 431-3 à 431-8-1 du Code Pénal '
-                'et par les articles L.211-9 et L.211-10 du Code de la Sécurité Intérieure.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00016",
+                      'Le régime des attroupements est régi par les articles 431-3 à 431-8-1 du Code Pénal ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00017",
+                      'et par les articles L.211-9 et L.211-10 du Code de la Sécurité Intérieure.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Nature politique de l’infraction : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00018",
+                    'Nature politique de l’infraction : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'par un arrêt du 28 mars 2017, la chambre criminelle de la Cour de cassation a qualifié le délit '
-                      'd’attroupement prévu à l’article 431-4 du Code Pénal de ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00019",
+                        'par un arrêt du 28 mars 2017, la chambre criminelle de la Cour de cassation a qualifié le délit ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00020",
+                        'd’attroupement prévu à l’article 431-4 du Code Pénal de ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'délit politique.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00021",
+                    'délit politique.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Procédures pénales rapides : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00022",
+                    'Procédures pénales rapides : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'l’article 431-8-1 du Code Pénal permet de recourir à des procédures rapides (comparution immédiate, '
-                      'comparution sur reconnaissance préalable de culpabilité) sans remettre en cause le caractère politique du délit.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00023",
+                        'l’article 431-8-1 du Code Pénal permet de recourir à des procédures rapides (comparution immédiate, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00024",
+                        'comparution sur reconnaissance préalable de culpabilité) sans remettre en cause le caractère politique du délit.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Procédures applicables à tous les délits commis à l’occasion d’attroupements :\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00025",
+                    'Procédures applicables à tous les délits commis à l’occasion d’attroupements :\n',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      '• convocation par procès-verbal et comparution immédiate (art. 393 à 397-7 C.P.P.) ;\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00026",
+                    '• convocation par procès-verbal et comparution immédiate (art. 393 à 397-7 C.P.P.) ;\n',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      '• comparution sur reconnaissance préalable de culpabilité (CRPC) (art. 495-7 à 495-15-1 C.P.P.).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00027",
+                    '• comparution sur reconnaissance préalable de culpabilité (CRPC) (art. 495-7 à 495-15-1 C.P.P.).',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: 'Réflexe policier',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00028",
+                  'Réflexe policier',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Dès lors qu’un rassemblement devient susceptible de troubler l’ordre public, on peut entrer dans le champ '
-                        'de l’attroupement. La qualification pénale et le respect des procédures de sommations et de dispersion '
-                        'seront déterminants pour la suite judiciaire.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00029",
+                          'Dès lors qu’un rassemblement devient susceptible de troubler l’ordre public, on peut entrer dans le champ ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00030",
+                          'de l’attroupement. La qualification pénale et le respect des procédures de sommations et de dispersion ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00031",
+                          'seront déterminants pour la suite judiciaire.',
+                        ),
                   ),
                 ],
               ),
@@ -195,27 +315,55 @@ class RegimeAttroupementsPage extends StatelessWidget {
           // CHAPITRE 2 — PROCESSUS DE DISPERSION
           // ==================================================================
           _HypoCard(
-            title: 'Chapitre 2 — Le processus de dispersion',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+              "f00032",
+              'Chapitre 2 — Le processus de dispersion',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Dans les cas d’attroupements prévus à l’article 431-3 du Code Pénal, le maintien de l’ordre relève '
-                'exclusivement du ministre de l’Intérieur (article D.211-10 du C.S.I.).',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00033",
+                      'Dans les cas d’attroupements prévus à l’article 431-3 du Code Pénal, le maintien de l’ordre relève ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00034",
+                      'exclusivement du ministre de l’Intérieur (article D.211-10 du C.S.I.).',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Les forces armées, à l’exception de la gendarmerie nationale, ne peuvent participer au maintien de l’ordre '
-                'que lorsqu’elles sont légalement requises. La réquisition est adressée par l’autorité civile territoriale '
-                'responsable au commandant militaire compétent.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00035",
+                      'Les forces armées, à l’exception de la gendarmerie nationale, ne peuvent participer au maintien de l’ordre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00036",
+                      'que lorsqu’elles sont légalement requises. La réquisition est adressée par l’autorité civile territoriale ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00037",
+                      'responsable au commandant militaire compétent.',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // 2.1 Décision de dispersion
               Text(
-                '2.1 — La décision de dispersion',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00038",
+                  '2.1 — La décision de dispersion',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -223,33 +371,61 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Autorité compétente : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00039",
+                    'Autorité compétente : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'c’est l’autorité civile, présente sur les lieux du rassemblement, qui apprécie la réalité et l’intensité '
-                      'du danger pour l’ordre public.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00040",
+                        'c’est l’autorité civile, présente sur les lieux du rassemblement, qui apprécie la réalité et l’intensité ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00041",
+                        'du danger pour l’ordre public.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Motivation de la décision : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00042",
+                    'Motivation de la décision : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la décision de dispersion doit être fondée sur des critères objectifs (équipements des participants, '
-                      'présence d’armes, formation des individus, constitution de barricades, incendies, dissimulation des visages, etc.).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00043",
+                        'la décision de dispersion doit être fondée sur des critères objectifs (équipements des participants, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00044",
+                        'présence d’armes, formation des individus, constitution de barricades, incendies, dissimulation des visages, etc.).',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // 2.2 Autorités habilitées
               Text(
-                '2.2 — Les autorités habilitées à exécuter les sommations',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00045",
+                  '2.2 — Les autorités habilitées à exécuter les sommations',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -257,35 +433,63 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'L’article 431-3 alinéa 2 du Code Pénal et l’article L.211-9 du Code de la Sécurité Intérieure énumèrent '
-                'les autorités habilitées à effectuer les sommations (préfet, sous-préfet, directeur de cabinet, maire ou adjoint, '
-                'directeur de service territorial de la police, commandant de groupement de gendarmerie, commissaire mandaté, etc.).',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00046",
+                      'L’article 431-3 alinéa 2 du Code Pénal et l’article L.211-9 du Code de la Sécurité Intérieure énumèrent ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00047",
+                      'les autorités habilitées à effectuer les sommations (préfet, sous-préfet, directeur de cabinet, maire ou adjoint, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00048",
+                      'directeur de service territorial de la police, commandant de groupement de gendarmerie, commissaire mandaté, etc.).',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'L’article R.211-12 C.S.I. impose que ces autorités portent des insignes distinctifs lors des sommations :\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00049",
+                    'L’article R.211-12 C.S.I. impose que ces autorités portent des insignes distinctifs lors des sommations :\n',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      '• écharpe tricolore ou brassard tricolore pour le représentant de l’État dans le département ;\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00050",
+                    '• écharpe tricolore ou brassard tricolore pour le représentant de l’État dans le département ;\n',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      '• écharpe tricolore ou brassard tricolore pour le maire ou l’un de ses adjoints ;\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00051",
+                    '• écharpe tricolore ou brassard tricolore pour le maire ou l’un de ses adjoints ;\n',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      '• brassard tricolore pour l’officier de police judiciaire de la police nationale ou de la gendarmerie nationale.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00052",
+                    '• brassard tricolore pour l’officier de police judiciaire de la police nationale ou de la gendarmerie nationale.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // 2.3 Exécution des sommations
               Text(
-                '2.3 — L’exécution des sommations',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00053",
+                  '2.3 — L’exécution des sommations',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -293,36 +497,67 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'L’article R.211-11 du Code de la Sécurité Intérieure prévoit que l’autorité habilitée doit procéder '
-                'à deux sommations avant d’ordonner la dispersion par la force :',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00054",
+                      'L’article R.211-11 du Code de la Sécurité Intérieure prévoit que l’autorité habilitée doit procéder ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00055",
+                      'à deux sommations avant d’ordonner la dispersion par la force :',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Annonce des sommations, généralement au moyen d’un haut-parleur, par des formules du type : '
-                      '« Attention ! Attention ! Obéissance à la loi. Dispersez-vous. »\n',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00056",
+                        'Annonce des sommations, généralement au moyen d’un haut-parleur, par des formules du type : ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00057",
+                        '« Attention ! Attention ! Obéissance à la loi. Dispersez-vous. »\n',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Les sommations sont répétées : première sommation, puis une seconde sommation en cas de refus de se disperser.\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00058",
+                    'Les sommations sont répétées : première sommation, puis une seconde sommation en cas de refus de se disperser.\n',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'En cas d’impossibilité d’utiliser un haut-parleur (bruit, situation tactique…), la loi prévoit l’usage d’un '
-                      'signal sonore ou visuel (par exemple, une fusée de couleur) pour compléter ou remplacer les formules orales.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00059",
+                        'En cas d’impossibilité d’utiliser un haut-parleur (bruit, situation tactique…), la loi prévoit l’usage d’un ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00060",
+                        'signal sonore ou visuel (par exemple, une fusée de couleur) pour compléter ou remplacer les formules orales.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // 2.4 Dispersion et emploi de la force
               Text(
-                '2.4 — La dispersion des attroupements et l’emploi de la force',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00061",
+                  '2.4 — La dispersion des attroupements et l’emploi de la force',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -331,7 +566,11 @@ class RegimeAttroupementsPage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               Text(
-                '2.4.1 — L’emploi de la force après les sommations',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00062",
+                  '2.4.1 — L’emploi de la force après les sommations',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -339,37 +578,77 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'L’article R.211-13 C.S.I. précise que le recours à la force ne doit intervenir que lorsque les circonstances '
-                'le rendent “absolument nécessaire au maintien de l’ordre public”. Si une autre solution est envisageable, '
-                'elle doit être privilégiée.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00063",
+                      'L’article R.211-13 C.S.I. précise que le recours à la force ne doit intervenir que lorsque les circonstances ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00064",
+                      'le rendent “absolument nécessaire au maintien de l’ordre public”. Si une autre solution est envisageable, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00065",
+                      'elle doit être privilégiée.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'La force déployée doit être strictement proportionnée au trouble à faire cesser et doit cesser dès que le trouble a pris fin.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00066",
+                    'La force déployée doit être strictement proportionnée au trouble à faire cesser et doit cesser dès que le trouble a pris fin.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Le recours aux armes est encadré : les armes à feu susceptibles d’être utilisées sont énumérées par l’article D.211-17 C.S.I. :\n',
-                ),
-                TextSpan(text: '• grenades à effet sonore ;\n'),
-                TextSpan(
-                  text:
-                      '• grenades lacrymogènes (instantanées ou à effet prolongé) ;\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00067",
+                    'Le recours aux armes est encadré : les armes à feu susceptibles d’être utilisées sont énumérées par l’article D.211-17 C.S.I. :\n',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      '• lanceurs de grenades calibre 40 ou 56 mm (et leurs munitions) ;\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00068",
+                    '• grenades à effet sonore ;\n',
+                  ),
                 ),
-                TextSpan(text: '• grenades à main de désencerclement, etc.'),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00069",
+                    '• grenades lacrymogènes (instantanées ou à effet prolongé) ;\n',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00070",
+                    '• lanceurs de grenades calibre 40 ou 56 mm (et leurs munitions) ;\n',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00071",
+                    '• grenades à main de désencerclement, etc.',
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
               Text(
-                '2.4.2 — Un usage immédiat de la force',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00072",
+                  '2.4.2 — Un usage immédiat de la force',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -377,27 +656,59 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'L’article L.211-9 C.S.I. permet, dans certains cas, un recours immédiat à la force publique sans attendre la fin '
-                'des sommations, notamment lorsque des violences ou voies de fait sont exercées contre les forces de l’ordre '
-                'ou lorsque des lieux stratégiques sont menacés.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00073",
+                      'L’article L.211-9 C.S.I. permet, dans certains cas, un recours immédiat à la force publique sans attendre la fin ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00074",
+                      'des sommations, notamment lorsque des violences ou voies de fait sont exercées contre les forces de l’ordre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00075",
+                      'ou lorsque des lieux stratégiques sont menacés.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Dans ces situations, certaines armes non létales ou armes à feu spécifiques peuvent être utilisées '
-                      '(D.211-19 et D.211-20 et s. C.S.I.) : projectiles non métalliques tirés par lanceur, grenades, etc.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00076",
+                        'Dans ces situations, certaines armes non létales ou armes à feu spécifiques peuvent être utilisées ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00077",
+                        '(D.211-19 et D.211-20 et s. C.S.I.) : projectiles non métalliques tirés par lanceur, grenades, etc.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _ExempleBox(
-                title: 'Point de vigilance opérationnelle',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00078",
+                  'Point de vigilance opérationnelle',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Chaque usage de la force (et a fortiori des armes) doit pouvoir être justifié a posteriori : respect de la procédure '
-                        '(sommations, signaux), nécessité et proportionnalité. Les procès-verbaux devront relater précisément les étapes de la dispersion.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00079",
+                          'Chaque usage de la force (et a fortiori des armes) doit pouvoir être justifié a posteriori : respect de la procédure ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00080",
+                          '(sommations, signaux), nécessité et proportionnalité. Les procès-verbaux devront relater précisément les étapes de la dispersion.',
+                        ),
                   ),
                 ],
               ),
@@ -410,14 +721,22 @@ class RegimeAttroupementsPage extends StatelessWidget {
           // CHAPITRE 3 — INFRACTIONS ET SANCTIONS
           // ==================================================================
           _HypoCard(
-            title: 'Chapitre 3 — Infractions et sanctions',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+              "f00081",
+              'Chapitre 3 — Infractions et sanctions',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               Text(
-                '3.1 — La participation à l’attroupement après sommations',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00082",
+                  '3.1 — La participation à l’attroupement après sommations',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -425,36 +744,80 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Article 431-4 du Code Pénal : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00083",
+                    'Article 431-4 du Code Pénal : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'le fait de continuer volontairement à participer à un attroupement après les sommations, sans être porteur d’une arme, '
-                      'est puni d’un an d’emprisonnement et de 15 000 € d’amende. '
-                      'La peine est portée à 3 ans et 45 000 € lorsque l’auteur dissimule volontairement tout ou partie de son visage '
-                      'afin de ne pas être identifié.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00084",
+                        'le fait de continuer volontairement à participer à un attroupement après les sommations, sans être porteur d’une arme, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00085",
+                        'est puni d’un an d’emprisonnement et de 15 000 € d’amende. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00086",
+                        'La peine est portée à 3 ans et 45 000 € lorsque l’auteur dissimule volontairement tout ou partie de son visage ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00087",
+                        'afin de ne pas être identifié.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Article 431-5 du Code Pénal : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00088",
+                    'Article 431-5 du Code Pénal : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'le fait de participer à un attroupement en étant porteur d’une arme constitue un délit puni de 3 ans d’emprisonnement '
-                      'et de 45 000 € d’amende. '
-                      'Si la personne armée dissimule volontairement son visage après les sommations, la peine peut atteindre 5 ans '
-                      'd’emprisonnement et 75 000 € d’amende.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00089",
+                        'le fait de participer à un attroupement en étant porteur d’une arme constitue un délit puni de 3 ans d’emprisonnement ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00090",
+                        'et de 45 000 € d’amende. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00091",
+                        'Si la personne armée dissimule volontairement son visage après les sommations, la peine peut atteindre 5 ans ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00092",
+                        'd’emprisonnement et 75 000 € d’amende.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
               Text(
-                '3.2 — La provocation à un attroupement armé',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00093",
+                  '3.2 — La provocation à un attroupement armé',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -462,21 +825,41 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Article 431-6 du Code Pénal : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00094",
+                    'Article 431-6 du Code Pénal : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'réprime la provocation directe à un attroupement armé par des discours, écrits ou tout autre moyen. '
-                      'Les peines vont jusqu’à 5 ans d’emprisonnement et 45 000 € d’amende, portées à 7 ans et 100 000 € si la provocation '
-                      'a été suivie d’effets (l’attroupement armé a effectivement eu lieu).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00095",
+                        'réprime la provocation directe à un attroupement armé par des discours, écrits ou tout autre moyen. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00096",
+                        'Les peines vont jusqu’à 5 ans d’emprisonnement et 45 000 € d’amende, portées à 7 ans et 100 000 € si la provocation ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00097",
+                        'a été suivie d’effets (l’attroupement armé a effectivement eu lieu).',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
               Text(
-                '3.3 — La provocation à commettre certains crimes ou délits',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00098",
+                  '3.3 — La provocation à commettre certains crimes ou délits',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -484,29 +867,69 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Selon l’article 24 de la loi du 29 juillet 1881, la provocation à certains crimes ou délits commis à l’occasion '
-                'd’attroupements peut être punie de 5 ans d’emprisonnement et 45 000 € d’amende. Sont notamment visés :',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00099",
+                      'Selon l’article 24 de la loi du 29 juillet 1881, la provocation à certains crimes ou délits commis à l’occasion ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                      "f00100",
+                      'd’attroupements peut être punie de 5 ans d’emprisonnement et 45 000 € d’amende. Sont notamment visés :',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      '• les atteintes volontaires à la vie ou à l’intégrité des personnes ;\n'
-                      '• les violences, destructions et dégradations dangereuses ;\n'
-                      '• la rébellion et les outrages contre les agents de la force publique ;\n'
-                      '• les entraves à la circulation routière, etc.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00101",
+                        '• les atteintes volontaires à la vie ou à l’intégrité des personnes ;\n',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00102",
+                        '• les violences, destructions et dégradations dangereuses ;\n',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00103",
+                        '• la rébellion et les outrages contre les agents de la force publique ;\n',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00104",
+                        '• les entraves à la circulation routière, etc.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: 'À retenir pour le procès-verbal',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00105",
+                  'À retenir pour le procès-verbal',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'En matière d’attroupements, il est essentiel de préciser dans les PV : la réalité des sommations, la situation '
-                        'de l’intéressé (présent après sommations, armé ou non, visage dissimulé ou non) et, le cas échéant, '
-                        'les actes de provocation ou de violences commis.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00106",
+                          'En matière d’attroupements, il est essentiel de préciser dans les PV : la réalité des sommations, la situation ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00107",
+                          'de l’intéressé (présent après sommations, armé ou non, visage dissimulé ou non) et, le cas échéant, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00108",
+                          'les actes de provocation ou de violences commis.',
+                        ),
                   ),
                 ],
               ),
@@ -519,23 +942,41 @@ class RegimeAttroupementsPage extends StatelessWidget {
           // CHAPITRE 4 — RÉPARATION DES DOMMAGES
           // ==================================================================
           _HypoCard(
-            title:
-                'Chapitre 4 — La réparation des dommages causés au cours des attroupements',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+              "f00109",
+              'Chapitre 4 — La réparation des dommages causés au cours des attroupements',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'L’article L.211-10 du Code de la Sécurité Intérieure dispose que ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                    "f00110",
+                    'L’article L.211-10 du Code de la Sécurité Intérieure dispose que ',
+                  ),
                 ),
                 TextSpan(
                   text:
-                      '« l’État est civilement responsable des dégâts et dommages résultant des crimes et délits commis, '
-                      'à force ouverte ou par violence, par des attroupements ou rassemblements armés ou non armés, '
-                      'soit contre les personnes, soit contre les biens ». ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00111",
+                        '« l’État est civilement responsable des dégâts et dommages résultant des crimes et délits commis, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00112",
+                        'à force ouverte ou par violence, par des attroupements ou rassemblements armés ou non armés, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00113",
+                        'soit contre les personnes, soit contre les biens ». ',
+                      ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
@@ -543,29 +984,61 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'L’État peut exercer une action récursoire contre les auteurs du fait dommageable, dans les conditions prévues '
-                      'par le code civil (articles 1240 et s.).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00114",
+                        'L’État peut exercer une action récursoire contre les auteurs du fait dommageable, dans les conditions prévues ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00115",
+                        'par le code civil (articles 1240 et s.).',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Une action récursoire peut également être engagée contre la commune lorsque la responsabilité de celle-ci '
-                      'se trouve engagée.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00116",
+                        'Une action récursoire peut également être engagée contre la commune lorsque la responsabilité de celle-ci ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                        "f00117",
+                        'se trouve engagée.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _ExempleBox(
-                title: 'Conséquence pratique',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                  "f00118",
+                  'Conséquence pratique',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Pour les forces de l’ordre, cette responsabilité de l’État justifie la rigueur dans le compte-rendu des faits '
-                        'et des moyens employés. Les rapports et procès-verbaux serviront de base à l’indemnisation des victimes '
-                        'et à l’éventuelle action récursoire contre les auteurs identifiés.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00119",
+                          'Pour les forces de l’ordre, cette responsabilité de l’État justifie la rigueur dans le compte-rendu des faits ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00120",
+                          'et des moyens employés. Les rapports et procès-verbaux serviront de base à l’indemnisation des victimes ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/collectives/regime_attroupements_page.dart",
+                          "f00121",
+                          'et à l’éventuelle action récursoire contre les auteurs identifiés.',
+                        ),
                   ),
                 ],
               ),
@@ -687,7 +1160,9 @@ class _BulletPoint extends StatelessWidget {
       fontSize: 13.8,
       height: 1.4,
       fontWeight: FontWeight.w500,
-      color: isDark ? Colors.white70 : const Color(0xFF1F1F1F).withValues(alpha: .92),
+      color: isDark
+          ? Colors.white70
+          : const Color(0xFF1F1F1F).withValues(alpha: .92),
     );
 
     return Padding(

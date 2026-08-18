@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PpBraceletDeroulementMesurePage extends StatelessWidget {
   const PpBraceletDeroulementMesurePage({super.key});
@@ -32,10 +33,18 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Surveillance électronique — Déroulement',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+            "f00002",
+            'Surveillance électronique — Déroulement',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,7 +58,11 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Déroulement de la mesure d’assignation à résidence avec surveillance électronique',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+              "f00003",
+              'Déroulement de la mesure d’assignation à résidence avec surveillance électronique',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -60,28 +73,56 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
 
-          const _Paragraph(
-            'Cette page précise la durée de l’assignation à résidence avec surveillance électronique (ARSE) et les conséquences en cas de '
-            'non-respect des obligations imposées à la personne mise en examen.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00004",
+                  'Cette page précise la durée de l’assignation à résidence avec surveillance électronique (ARSE) et les conséquences en cas de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00005",
+                  'non-respect des obligations imposées à la personne mise en examen.',
+                ),
           ),
 
           const SizedBox(height: 16),
 
           _ConditionCard(
-            title: 'Durée et renouvellement de la mesure',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+              "f00006",
+              'Durée et renouvellement de la mesure',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'La mesure d’assignation à résidence avec surveillance électronique est ordonnée pour une durée fixée par le juge, '
-                      'dans la limite maximale de six mois. Elle peut être renouvelée par périodes successives de six mois après débat contradictoire. '
-                      'La durée totale de la mesure ne peut pas dépasser deux ans, conformément à ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                        "f00007",
+                        'La mesure d’assignation à résidence avec surveillance électronique est ordonnée pour une durée fixée par le juge, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                        "f00008",
+                        'dans la limite maximale de six mois. Elle peut être renouvelée par périodes successives de six mois après débat contradictoire. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                        "f00009",
+                        'La durée totale de la mesure ne peut pas dépasser deux ans, conformément à ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’Article 142-7 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                    "f00010",
+                    'l’Article 142-7 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -91,16 +132,25 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    'Durée initiale : au plus six mois, la durée exacte étant déterminée par le juge ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00011",
+                  'Durée initiale : au plus six mois, la durée exacte étant déterminée par le juge ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Renouvellement : par tranches de six mois, à l’issue d’un débat contradictoire impliquant la personne mise en examen et le ministère public ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00012",
+                  'Renouvellement : par tranches de six mois, à l’issue d’un débat contradictoire impliquant la personne mise en examen et le ministère public ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Durée maximale : deux ans, tous renouvellements compris.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00013",
+                  'Durée maximale : deux ans, tous renouvellements compris.',
+                ),
               ),
             ],
           ),
@@ -108,38 +158,76 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: 'Conséquences du non-respect de l’assignation à résidence',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+              "f00014",
+              'Conséquences du non-respect de l’assignation à résidence',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'Le respect strict des obligations liées à l’assignation à résidence avec surveillance électronique est essentiel. '
-                'Tout manquement peut entraîner un durcissement immédiat de la mesure.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                      "f00015",
+                      'Le respect strict des obligations liées à l’assignation à résidence avec surveillance électronique est essentiel. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                      "f00016",
+                      'Tout manquement peut entraîner un durcissement immédiat de la mesure.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                'Si l’intéressé ne respecte pas les conditions de l’assignation (horaires, lieu d’assignation, obligations associées, etc.) :',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00017",
+                  'Si l’intéressé ne respecte pas les conditions de l’assignation (horaires, lieu d’assignation, obligations associées, etc.) :',
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    'un mandat d’arrêt ou un mandat d’amener peut être délivré à son encontre ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00018",
+                  'un mandat d’arrêt ou un mandat d’amener peut être délivré à son encontre ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'la personne peut être placée en détention provisoire si les conditions légales sont réunies ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                  "f00019",
+                  'la personne peut être placée en détention provisoire si les conditions légales sont réunies ;',
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Dans cette hypothèse, le juge des libertés et de la détention, s’il estime que la détention provisoire n’est finalement pas justifiée, '
-                      'peut décider d’aménager la mesure en modifiant les obligations de l’assignation à résidence avec surveillance électronique. '
-                      'Ce pouvoir de modulation résulte de ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                        "f00020",
+                        'Dans cette hypothèse, le juge des libertés et de la détention, s’il estime que la détention provisoire n’est finalement pas justifiée, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                        "f00021",
+                        'peut décider d’aménager la mesure en modifiant les obligations de l’assignation à résidence avec surveillance électronique. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                        "f00022",
+                        'Ce pouvoir de modulation résulte de ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’Article 142-8 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                    "f00023",
+                    'l’Article 142-8 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -152,8 +240,16 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le non-respect de l’assignation à résidence est donc lourd de conséquences : il peut conduire à une privation totale de liberté. '
-                        'La personne mise en examen doit être clairement informée des risques encourus afin de mesurer l’importance du respect de la mesure.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                          "f00024",
+                          'Le non-respect de l’assignation à résidence est donc lourd de conséquences : il peut conduire à une privation totale de liberté. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_bracelet_deroulement_mesure.dart",
+                          "f00025",
+                          'La personne mise en examen doit être clairement informée des risques encourus afin de mesurer l’importance du respect de la mesure.',
+                        ),
                   ),
                 ],
               ),
@@ -413,9 +509,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

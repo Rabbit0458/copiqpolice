@@ -6,6 +6,7 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/liber
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/collectives/regime_attroupements_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/collectives/regime_manifestations_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/quiz_scolarite_gpx/gpx_quiz_libertes_publiques_collectives_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// =============================================================
 ///  COP'IQ — Les libertés d’expression collectives (hub)
@@ -21,7 +22,9 @@ class PaLibertesExpressionCollectivesPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -32,10 +35,18 @@ class PaLibertesExpressionCollectivesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Les libertés d’expression collectives',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+            "f00002",
+            'Les libertés d’expression collectives',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -50,8 +61,16 @@ class PaLibertesExpressionCollectivesPage extends StatelessWidget {
           // ===== Liberté de la presse =====
           _ModuleCard(
             tag: 'liberte_presse',
-            title: 'La liberté de la presse',
-            subtitle: 'Cadre juridique, limites et responsabilités.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00003",
+              'La liberté de la presse',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00004",
+              'Cadre juridique, limites et responsabilités.',
+            ),
             imagePath: 'assets/images/liberte_presse.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -63,8 +82,16 @@ class PaLibertesExpressionCollectivesPage extends StatelessWidget {
           // ===== Régime des attroupements =====
           _ModuleCard(
             tag: 'regime_attroupements',
-            title: 'Le régime des attroupements',
-            subtitle: 'Définition, conditions de dispersion, responsabilités.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00005",
+              'Le régime des attroupements',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00006",
+              'Définition, conditions de dispersion, responsabilités.',
+            ),
             imagePath: 'assets/images/regime_attroupements.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -79,8 +106,16 @@ class PaLibertesExpressionCollectivesPage extends StatelessWidget {
           // ===== Régime des manifestations =====
           _ModuleCard(
             tag: 'regime_manifestations',
-            title: 'Le régime des manifestations',
-            subtitle: 'Déclaration, encadrement, pouvoirs de police.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00007",
+              'Le régime des manifestations',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00008",
+              'Déclaration, encadrement, pouvoirs de police.',
+            ),
             imagePath: 'assets/images/regime_manifestations.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -94,9 +129,16 @@ class PaLibertesExpressionCollectivesPage extends StatelessWidget {
           const SizedBox(height: 22),
           _ModuleCard(
             tag: 'quiz_libertes',
-            title: 'Quiz — Collectives',
-            subtitle:
-                'Testez votre maîtrise de la liberté individuelle / sûreté et de la liberté d’aller et venir.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00009",
+              'Quiz — Collectives',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+              "f00010",
+              'Testez votre maîtrise de la liberté individuelle / sûreté et de la liberté d’aller et venir.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -159,7 +201,7 @@ class _ModuleCard extends StatelessWidget {
         button: true,
         label: '$title — découvrir',
         child: Container(
-          height: 190,
+          height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,
@@ -268,7 +310,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 6),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart",
+                "f00013",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,

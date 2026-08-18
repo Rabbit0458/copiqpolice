@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaLoiPenaleContenuPage extends StatelessWidget {
   const PaLoiPenaleContenuPage({super.key});
 
-  static const String routeName =
-      '/pa/dps_dpg/droit_penal_general/loi_penale';
+  static const String routeName = '/pa/dps_dpg/droit_penal_general/loi_penale';
 
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +25,18 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "De la loi pénale",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+            "f00002",
+            "De la loi pénale",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +50,11 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "De la loi pénale",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00003",
+              "De la loi pénale",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,9 +65,21 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Accédez aux fiches PDF essentielles : classification des infractions, "
-            "application de la loi pénale, bases de la législation pénale et éléments "
-            "constitutifs de l’infraction.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches PDF essentielles : classification des infractions, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+                  "f00005",
+                  "application de la loi pénale, bases de la législation pénale et éléments ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+                  "f00006",
+                  "constitutifs de l’infraction.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,9 +93,16 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
           // ================= MODULE 1 =================
           _ModuleCard(
             tag: 'dpg_loi_penale_classification_infractions',
-            title: "Classification des infractions",
-            subtitle:
-                "Contraventions, délits, crimes : critères de distinction et logique générale.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00007",
+              "Classification des infractions",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00008",
+              "Contraventions, délits, crimes : critères de distinction et logique générale.",
+            ),
             imagePath: 'assets/images/classification.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,9 +116,16 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
           // ================= MODULE 2 =================
           _ModuleCard(
             tag: 'dpg_loi_penale_etendue_application_lois',
-            title: "Étendue d’application des lois",
-            subtitle:
-                "Application dans le temps et dans l’espace : principes et exceptions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00009",
+              "Étendue d’application des lois",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00010",
+              "Application dans le temps et dans l’espace : principes et exceptions.",
+            ),
             imagePath: 'assets/images/droit_penal_general.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +139,16 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
           // ================= MODULE 3 =================
           _ModuleCard(
             tag: 'dpg_loi_penale_generalites_legislation_penale',
-            title: "Généralités sur la législation pénale",
-            subtitle:
-                "Définitions clés, sources, grands principes et architecture générale.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00011",
+              "Généralités sur la législation pénale",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00012",
+              "Définitions clés, sources, grands principes et architecture générale.",
+            ),
             imagePath: 'assets/images/generalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -115,9 +162,16 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
           // ================= MODULE 4 =================
           _ModuleCard(
             tag: 'dpg_loi_penale_elements_constitutifs_infraction',
-            title: "Les éléments constitutifs de l’infraction",
-            subtitle:
-                "Élément légal, matériel et moral : comment se forme l’infraction.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00013",
+              "Les éléments constitutifs de l’infraction",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00014",
+              "Élément légal, matériel et moral : comment se forme l’infraction.",
+            ),
             imagePath: 'assets/images/infraction_materiel.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -132,9 +186,16 @@ class PaLoiPenaleContenuPage extends StatelessWidget {
           // ================= MODULE 7 — QUIZ =================
           _ModuleCard(
             tag: 'droit_penal_general',
-            title: 'Quiz — Droit pénal général',
-            subtitle:
-                'Testez votre maîtrise des principes fondamentaux et des notions clés du droit pénal général.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00015",
+              'Quiz — Droit pénal général',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart",
+              "f00016",
+              'Testez votre maîtrise des principes fondamentaux et des notions clés du droit pénal général.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

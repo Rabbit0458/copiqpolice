@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
   const PaPPActionPubliqueAutoritesPJPage({super.key});
@@ -12,7 +13,9 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Action publique & autorités PJ',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+            "f00002",
+            'Action publique & autorités PJ',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Action publique, autorités et contrôle\nde la police judiciaire',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00003",
+              'Action publique, autorités et contrôle\nde la police judiciaire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,9 +66,21 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            'Organisation du ministère public, distinction action publique/'
-            'action civile, autorités investies de missions de police '
-            'judiciaire et contrôle des opérations PJ.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+                  "f00004",
+                  'Organisation du ministère public, distinction action publique/',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+                  "f00005",
+                  'action civile, autorités investies de missions de police ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+                  "f00006",
+                  'judiciaire et contrôle des opérations PJ.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,9 +94,16 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
           // ===================== MODULE 1 — ACTION PUBLIQUE =================
           _ModuleCard(
             tag: 'pp_action_publique',
-            title: 'Action publique et action civile',
-            subtitle:
-                'Définition, déclenchement, exercice, extinction et articulation entre action publique et action civile.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00007",
+              'Action publique et action civile',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00008",
+              'Définition, déclenchement, exercice, extinction et articulation entre action publique et action civile.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,9 +117,16 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
           // ================= MODULE 2 — CONTROLE MISSION PJ =================
           _ModuleCard(
             tag: 'pp_controle_pj',
-            title: 'Le contrôle de la mission de police judiciaire',
-            subtitle:
-                'Contrôle du parquet, autorité du procureur, supervision et responsabilité des enquêteurs.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00009",
+              'Le contrôle de la mission de police judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00010",
+              'Contrôle du parquet, autorité du procureur, supervision et responsabilité des enquêteurs.',
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,10 +140,16 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
           // ========= MODULE 3 — AUTORITÉS INVESTIES PAR LA LOI ==============
           _ModuleCard(
             tag: 'pp_autorites_investies',
-            title:
-                'Les autorités investies par la loi de fonctions de police judiciaire',
-            subtitle:
-                'Compétences, prérogatives et catégories d’autorités habilitées à exercer des actes de police judiciaire.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00011",
+              'Les autorités investies par la loi de fonctions de police judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00012",
+              'Compétences, prérogatives et catégories d’autorités habilitées à exercer des actes de police judiciaire.',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -116,9 +163,16 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
           // ========== MODULE 4 — ORGANISATION MINISTÈRE PUBLIC ==============
           _ModuleCard(
             tag: 'pp_orga_ministere_public',
-            title: 'Organisation hiérarchique du ministère public',
-            subtitle:
-                'Structure du parquet, rôle du procureur général, hiérarchie et organisation interne.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00013",
+              'Organisation hiérarchique du ministère public',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00014",
+              'Structure du parquet, rôle du procureur général, hiérarchie et organisation interne.',
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -133,9 +187,16 @@ class PaPPActionPubliqueAutoritesPJPage extends StatelessWidget {
           // ================= MODULE 5 — Quizz =================
           _ModuleCard(
             tag: 'quiz_action',
-            title: 'Quiz — Action publique',
-            subtitle:
-                'Vérifiez votre maîtrise des conditions de l\'action publique.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00015",
+              'Quiz — Action publique',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart",
+              "f00016",
+              'Vérifiez votre maîtrise des conditions de l\'action publique.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

@@ -13,6 +13,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:copiqpolice/core/quiz/quiz_end_controller.dart';
 
 import '../models/psycho_question.dart';
 import '../services/psycho_history_service.dart';
@@ -63,6 +64,17 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
   DateTime? _questionStart;
 
   bool _isSavingResult = false;
+  final QuizEndController _endController = QuizEndController();
+
+  @override
+  void initState() {
+    super.initState();
+    _endController.addListener(_onEndStateChanged);
+  }
+
+  void _onEndStateChanged() {
+    if (mounted) setState(() => _isSavingResult = _endController.isBusy);
+  }
 
   static const _categories = [
     {
@@ -118,6 +130,8 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
   @override
   void dispose() {
     _globalTimer?.cancel();
+    _endController.removeListener(_onEndStateChanged);
+    _endController.dispose();
     super.dispose();
   }
 
@@ -132,6 +146,7 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
       _responseTimes.clear();
       _pool = [];
       _poolCursor = 0;
+      _endController.reset();
     });
 
     try {
@@ -183,9 +198,7 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
       if (!mounted) return;
       setState(() => _phase = _ConcoursPhase.setup);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Impossible de charger les questions.'),
-        ),
+        const SnackBar(content: Text('Impossible de charger les questions.')),
       );
     }
   }
@@ -247,29 +260,66 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
     final avg = _responseTimes.isEmpty
         ? 0.0
         : _responseTimes.reduce((a, b) => a + b) / _responseTimes.length;
-    setState(() {
-      _phase = _ConcoursPhase.result;
-      _isSavingResult = true;
-    });
-    await _history.saveSession(
-      exerciseType: _selectedCategory ?? 'mode_concours_global',
-      score: score,
-      correctAnswers: _correct,
-      wrongAnswers: _wrong,
-      totalQuestions: total,
-      durationSeconds: duration,
-      avgResponseTime: avg,
-      mode: 'concours_global',
+    final saved = await _endController.save(
+      () => _history.saveSession(
+        exerciseType: _selectedCategory ?? 'mode_concours_global',
+        score: score,
+        correctAnswers: _correct,
+        wrongAnswers: _wrong,
+        totalQuestions: total,
+        durationSeconds: duration,
+        avgResponseTime: avg,
+        mode: 'concours_global',
+      ),
     );
     if (!mounted) return;
-    setState(() => _isSavingResult = false);
+    if (!saved) {
+      await _showSaveFailure();
+      return;
+    }
+    setState(() => _phase = _ConcoursPhase.result);
+    _endController.markResultsShown();
   }
 
   Future<void> _confirmExit() async {
+    if (!_endController.openConfirmation()) return;
+    _globalTimer?.cancel();
     final ok = await showPsychoExitDialog(context);
-    if (ok && mounted) {
-      _globalTimer?.cancel();
-      Navigator.maybePop(context);
+    if (!mounted) return;
+    if (ok) {
+      await _finishConcours();
+    } else {
+      _endController.cancelConfirmation();
+      _startGlobalTimer();
+    }
+  }
+
+  Future<void> _showSaveFailure() async {
+    final retry = await showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Sauvegarde impossible'),
+        content: const Text(
+          'Ta tentative est conservée sur cet écran. Vérifie ta connexion puis réessaie.',
+        ),
+        actions: [
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Réessayer'),
+          ),
+        ],
+      ),
+    );
+    if (retry == true && mounted) {
+      final saved = await _endController.retry();
+      if (!mounted) return;
+      if (saved) {
+        setState(() => _phase = _ConcoursPhase.result);
+        _endController.markResultsShown();
+      } else {
+        await _showSaveFailure();
+      }
     }
   }
 
@@ -384,16 +434,13 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
               ),
             ),
             const SizedBox(height: 16),
-            Text(
-              'Mode concours chronométré',
-              style: PsychoBrand.h1(context),
-            ),
+            Text('Mode concours chronométré', style: PsychoBrand.h1(context)),
             const SizedBox(height: 8),
             Text(
               'Réponds à un maximum de questions avant la fin du chrono.',
-              style: PsychoBrand.body(context).copyWith(
-                color: PsychoBrand.textMuted(context),
-              ),
+              style: PsychoBrand.body(
+                context,
+              ).copyWith(color: PsychoBrand.textMuted(context)),
             ),
             const SizedBox(height: 22),
             Text('Durée', style: PsychoBrand.h3(context)),
@@ -429,14 +476,12 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
                 _Chip(
                   label: 'Facile',
                   selected: _selectedDifficulty == 'Facile',
-                  onTap: () =>
-                      setState(() => _selectedDifficulty = 'Facile'),
+                  onTap: () => setState(() => _selectedDifficulty = 'Facile'),
                 ),
                 _Chip(
                   label: 'Moyenne',
                   selected: _selectedDifficulty == 'Moyenne',
-                  onTap: () =>
-                      setState(() => _selectedDifficulty = 'Moyenne'),
+                  onTap: () => setState(() => _selectedDifficulty = 'Moyenne'),
                 ),
                 _Chip(
                   label: 'Difficile',
@@ -466,9 +511,8 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
                   icon: c['icon'] as IconData,
                   color: c['color'] as Color,
                   selected: _selectedCategory == c['key'],
-                  onTap: () => setState(
-                    () => _selectedCategory = c['key'] as String,
-                  ),
+                  onTap: () =>
+                      setState(() => _selectedCategory = c['key'] as String),
                   fullWidth: true,
                 ),
               ),
@@ -562,8 +606,7 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
                   final i = entry.key;
                   final o = entry.value;
                   final isPicked = _picked?.key == o.key;
-                  final isCorrectOpt =
-                      o.key == q.answer || o.label == q.answer;
+                  final isCorrectOpt = o.key == q.answer || o.label == q.answer;
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 10),
                     child: PsychoAnswerButton(
@@ -609,6 +652,24 @@ class _ModeConcoursPsychoPageState extends State<ModeConcoursPsychoPage> {
                     ),
                   ),
                 ],
+                const SizedBox(height: 12),
+                SizedBox(
+                  height: 48,
+                  child: OutlinedButton.icon(
+                    onPressed: _endController.isBusy ? null : _confirmExit,
+                    icon: _endController.isBusy
+                        ? const SizedBox.square(
+                            dimension: 18,
+                            child: CircularProgressIndicator(strokeWidth: 2),
+                          )
+                        : const Icon(Icons.stop_circle_outlined),
+                    label: Text(
+                      _endController.isBusy
+                          ? 'Sauvegarde de votre progression…'
+                          : 'Mettre fin',
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -699,7 +760,11 @@ class _Chip extends StatelessWidget {
         mainAxisSize: fullWidth ? MainAxisSize.max : MainAxisSize.min,
         children: [
           if (icon != null) ...[
-            Icon(icon, size: 18, color: selected ? c : PsychoBrand.textMuted(context)),
+            Icon(
+              icon,
+              size: 18,
+              color: selected ? c : PsychoBrand.textMuted(context),
+            ),
             const SizedBox(width: 8),
           ],
           Expanded(
@@ -718,7 +783,9 @@ class _Chip extends StatelessWidget {
     return InkWell(
       borderRadius: BorderRadius.circular(14),
       onTap: onTap,
-      child: fullWidth ? SizedBox(width: double.infinity, child: content) : content,
+      child: fullWidth
+          ? SizedBox(width: double.infinity, child: content)
+          : content,
     );
   }
 }
@@ -746,21 +813,15 @@ class _ScoreBadge extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(
-            label,
-            style: PsychoBrand.small(context).copyWith(color: color),
-          ),
+          Text(label, style: PsychoBrand.small(context).copyWith(color: color)),
           const SizedBox(width: 6),
           Text(
             value,
-            style: PsychoBrand.small(context).copyWith(
-              color: color,
-              fontWeight: FontWeight.w800,
-              fontSize: 14,
-            ),
+            style: PsychoBrand.small(
+              context,
+            ).copyWith(color: color, fontWeight: FontWeight.w800, fontSize: 14),
           ),
         ],
-    
       ),
     );
   }

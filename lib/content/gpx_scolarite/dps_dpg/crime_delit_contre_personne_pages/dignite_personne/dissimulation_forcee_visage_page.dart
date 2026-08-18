@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DissimulationForceeVisagePage extends StatelessWidget {
   const DissimulationForceeVisagePage({super.key});
@@ -60,10 +61,18 @@ class DissimulationForceeVisagePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la dignité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+            "f00002",
+            "Atteintes à la dignité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class DissimulationForceeVisagePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La dissimulation forcée du visage",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+              "f00003",
+              "La dissimulation forcée du visage",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,14 +103,26 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait pour toute personne d’imposer à une ou plusieurs autres personnes de dissimuler leur visage "
-                "par menace, violence, contrainte, abus d’autorité ou abus de pouvoir, en raison de leur sexe, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00005",
+                      "Le fait pour toute personne d’imposer à une ou plusieurs autres personnes de dissimuler leur visage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00006",
+                      "par menace, violence, contrainte, abus d’autorité ou abus de pouvoir, en raison de leur sexe, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,19 +131,30 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-10 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00008",
+                    "Article 225-4-10 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime la dissimulation forcée du visage.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00009",
+                    " : prévoit et réprime la dissimulation forcée du visage.",
+                  ),
                 ),
               ]),
             ],
@@ -128,78 +164,171 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une dissimulation du visage imposée"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00011",
+                  "A) Une dissimulation du visage imposée",
+                ),
+              ),
               _Paragraph(
-                "Cette dissimulation imposée constitue une forme de violence à l’encontre de la victime.\n\n"
-                "Ce délit protège la victime : il peut lui permettre de s’exonérer de l’infraction de dissimulation du visage "
-                "dans l’espace public si elle démontre la contrainte subie.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00012",
+                      "Cette dissimulation imposée constitue une forme de violence à l’encontre de la victime.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00013",
+                      "Ce délit protège la victime : il peut lui permettre de s’exonérer de l’infraction de dissimulation du visage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00014",
+                      "dans l’espace public si elle démontre la contrainte subie.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Référence : "),
                   TextSpan(
-                    text: "article 122-2 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00015",
+                      "Référence : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00016",
+                      "article 122-2 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " (« n’est pas responsable pénalement la personne qui a agi sous l’empire d’une force ou d’une contrainte à laquelle elle n’a pu résister »).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00017",
+                      " (« n’est pas responsable pénalement la personne qui a agi sous l’empire d’une force ou d’une contrainte à laquelle elle n’a pu résister »).",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une ou plusieurs personnes visées"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00018",
+                  "B) Une ou plusieurs personnes visées",
+                ),
+              ),
               _Paragraph(
-                "Les situations de contrainte à dissimuler son visage prennent principalement place dans le cadre familial. "
-                "Elles sont souvent exercées au sein du couple ou par des parents sur leurs enfants.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00019",
+                      "Les situations de contrainte à dissimuler son visage prennent principalement place dans le cadre familial. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00020",
+                      "Elles sont souvent exercées au sein du couple ou par des parents sur leurs enfants.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un des cinq moyens énumérés par la loi"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00021",
+                  "C) Un des cinq moyens énumérés par la loi",
+                ),
+              ),
               _Paragraph(
-                "Tous les moyens de pression sont pris en compte : menace, violence, contrainte, abus d’autorité ou abus de pouvoir.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00022",
+                  "Tous les moyens de pression sont pris en compte : menace, violence, contrainte, abus d’autorité ou abus de pouvoir.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("• La menace"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00023",
+                  "• La menace",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Est considéré comme une menace tout acte d’intimidation inspirant la crainte d’un mal ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00024",
+                    "Est considéré comme une menace tout acte d’intimidation inspirant la crainte d’un mal ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 11 juin 1937)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00025",
+                    "(Cass. crim., 11 juin 1937)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      ". Elle se distingue des violences car elle porte atteinte à l’intégrité morale.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00026",
+                    ". Elle se distingue des violences car elle porte atteinte à l’intégrité morale.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("• La violence"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00027",
+                  "• La violence",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La violence peut impliquer un contact physique (coups, gifle, morsure…) mais peut aussi être retenue sans contact : "
-                      "comportement impressionnant fortement la personne au point de lui causer un choc émotif ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                        "f00028",
+                        "La violence peut impliquer un contact physique (coups, gifle, morsure…) mais peut aussi être retenue sans contact : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                        "f00029",
+                        "comportement impressionnant fortement la personne au point de lui causer un choc émotif ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 30 avril 1996)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00030",
+                    "(Cass. crim., 30 avril 1996)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -207,35 +336,75 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("• La contrainte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00031",
+                  "• La contrainte",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Elle s’apprécie selon la capacité de résistance de la victime ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00032",
+                    "Elle s’apprécie selon la capacité de résistance de la victime ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 8 juin 1994)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00033",
+                    "(Cass. crim., 8 juin 1994)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      ". Elle peut être corporelle (violences) ou psychologique (pressions assimilables à des menaces).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00034",
+                    ". Elle peut être corporelle (violences) ou psychologique (pressions assimilables à des menaces).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("• Abus d’autorité / abus de pouvoir"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00035",
+                  "• Abus d’autorité / abus de pouvoir",
+                ),
+              ),
               _Paragraph(
-                "L’autorité peut être légale (autorité parentale), professionnelle (employeur), ou de fait (ascendant exercé sur une autre personne).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00036",
+                  "L’autorité peut être légale (autorité parentale), professionnelle (employeur), ou de fait (ascendant exercé sur une autre personne).",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Fondement : le sexe de la victime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00037",
+                  "D) Fondement : le sexe de la victime",
+                ),
+              ),
               _Paragraph(
-                "La dissimulation doit être imposée en raison du sexe de la victime. "
-                "À l’heure actuelle, les femmes apparaissent comme les principales victimes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00038",
+                      "La dissimulation doit être imposée en raison du sexe de la victime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                      "f00039",
+                      "À l’heure actuelle, les femmes apparaissent comme les principales victimes.",
+                    ),
               ),
             ],
           ),
@@ -244,16 +413,28 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+              "f00040",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Conscience d’exercer une pression sur la victime.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00041",
+                  "Conscience d’exercer une pression sur la victime.",
+                ),
               ),
               _BulletPoint(
-                text: "Volonté d’imposer à autrui de dissimuler son visage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00042",
+                  "Volonté d’imposer à autrui de dissimuler son visage.",
+                ),
               ),
             ],
           ),
@@ -262,21 +443,33 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+              "f00043",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-10 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00044",
+                    "Article 225-4-10 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Lorsque le fait est commis au préjudice d’un mineur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00045",
+                  "Lorsque le fait est commis au préjudice d’un mineur.",
+                ),
               ),
             ],
           ),
@@ -285,43 +478,95 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+              "f00046",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00047",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00048",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-10 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00049",
+                    "1 an d’emprisonnement et 30 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00050",
+                    "article 225-4-10 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée (mineur) : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 60 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00051",
+                    "Qualification aggravée (mineur) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-10 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00052",
+                    "2 ans d’emprisonnement et 60 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00053",
+                    "article 225-4-10 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00054",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Responsabilité selon le principe général : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00055",
+                    "Responsabilité selon le principe général : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 121-2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00056",
+                    "article 121-2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -329,17 +574,42 @@ class DissimulationForceeVisagePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00057",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                  "f00058",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément aux "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00059",
+                    "Complicité : OUI, conformément aux ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00060",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide/assistance, provocation, instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dissimulation_forcee_visage_page.dart",
+                    "f00061",
+                    " (aide/assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
             ],
@@ -596,9 +866,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

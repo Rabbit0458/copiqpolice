@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Droit pénal général — portail de la responsabilité pénale.
 class PaResponsabilitePenalePage extends StatelessWidget {
@@ -28,12 +29,20 @@ class PaResponsabilitePenalePage extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         leading: IconButton(
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+            "f00001",
+            'Retour',
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
         title: Text(
-          'Responsabilité pénale',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+            "f00002",
+            'Responsabilité pénale',
+          ),
           style: GoogleFonts.fustat(fontSize: 18, fontWeight: FontWeight.w800),
         ),
       ),
@@ -43,108 +52,215 @@ class PaResponsabilitePenalePage extends StatelessWidget {
         children: [
           _HeroCard(isDark: isDark),
           const SizedBox(height: 22),
-          const _SectionTitle(
+          _SectionTitle(
             eyebrow: 'PARCOURS',
-            title: 'Comprendre en 4 étapes',
-            subtitle: 'Avance dans l’ordre ou ouvre directement une notion.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00003",
+              'Comprendre en 4 étapes',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00004",
+              'Avance dans l’ordre ou ouvre directement une notion.',
+            ),
           ),
           const SizedBox(height: 12),
-          const _CourseTile(
+          _CourseTile(
             index: '01',
             icon: Icons.gavel_rounded,
-            title: 'Principes généraux',
-            subtitle: 'Responsabilité personnelle, culpabilité et imputabilité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00005",
+              'Principes généraux',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00006",
+              'Responsabilité personnelle, culpabilité et imputabilité',
+            ),
             route:
                 '/pa/dps_dpg/droit_penal_general/responsabilite_penale/principes_generaux',
           ),
           const SizedBox(height: 10),
-          const _CourseTile(
+          _CourseTile(
             index: '02',
             icon: Icons.group_outlined,
-            title: 'Auteur, coauteur et complice',
-            subtitle: 'Participation, aide, assistance et provocation',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00007",
+              'Auteur, coauteur et complice',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00008",
+              'Participation, aide, assistance et provocation',
+            ),
             route:
                 '/pa/dps_dpg/droit_penal_general/responsabilite_penale/complicite_coaction',
           ),
           const SizedBox(height: 10),
-          const _CourseTile(
+          _CourseTile(
             index: '03',
             icon: Icons.apartment_rounded,
-            title: 'Personnes morales',
-            subtitle: 'Conditions, cumul des responsabilités et sanctions',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00009",
+              'Personnes morales',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00010",
+              'Conditions, cumul des responsabilités et sanctions',
+            ),
             route:
                 '/pa/dps_dpg/droit_penal_general/responsabilite_penale/personnes_morales',
           ),
           const SizedBox(height: 10),
-          const _CourseTile(
+          _CourseTile(
             index: '04',
             icon: Icons.shield_outlined,
-            title: 'Causes d’irresponsabilité',
-            subtitle:
-                'Trouble mental, contrainte, erreur et faits justificatifs',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00011",
+              'Causes d’irresponsabilité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00012",
+              'Trouble mental, contrainte, erreur et faits justificatifs',
+            ),
             route:
                 '/pa/dps_dpg/droit_penal_general/responsabilite_penale/causes_irresponsabilite',
           ),
           const SizedBox(height: 24),
-          const _SectionTitle(
-            eyebrow: 'À RETENIR',
-            title: 'Les trois conditions',
-            subtitle: 'Le raisonnement essentiel à maîtriser.',
+          _SectionTitle(
+            eyebrow: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00013",
+              'À RETENIR',
+            ),
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00014",
+              'Les trois conditions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00015",
+              'Le raisonnement essentiel à maîtriser.',
+            ),
           ),
           const SizedBox(height: 12),
-          const Row(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                 child: _PrincipleCard(
                   number: '1',
-                  title: 'Un texte',
-                  body: 'Un fait prévu et réprimé par la loi.',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                    "f00016",
+                    'Un texte',
+                  ),
+                  body: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                    "f00017",
+                    'Un fait prévu et réprimé par la loi.',
+                  ),
                 ),
               ),
               SizedBox(width: 8),
               Expanded(
                 child: _PrincipleCard(
                   number: '2',
-                  title: 'Un acte',
-                  body: 'Un comportement matériel caractérisé.',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                    "f00018",
+                    'Un acte',
+                  ),
+                  body: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                    "f00019",
+                    'Un comportement matériel caractérisé.',
+                  ),
                 ),
               ),
               SizedBox(width: 8),
               Expanded(
                 child: _PrincipleCard(
                   number: '3',
-                  title: 'Une faute',
-                  body: 'Une intention ou une négligence.',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                    "f00020",
+                    'Une faute',
+                  ),
+                  body: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                    "f00021",
+                    'Une intention ou une négligence.',
+                  ),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 24),
-          const _SectionTitle(
+          _SectionTitle(
             eyebrow: 'CONTINUER',
-            title: 'Cours associés',
-            subtitle: 'Replace cette notion dans le droit pénal général.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00022",
+              'Cours associés',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00023",
+              'Replace cette notion dans le droit pénal général.',
+            ),
           ),
           const SizedBox(height: 12),
-          const _RelatedTile(
+          _RelatedTile(
             icon: Icons.menu_book_rounded,
-            title: 'De la loi pénale',
-            subtitle: 'Sources, application et interprétation',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00024",
+              'De la loi pénale',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00025",
+              'Sources, application et interprétation',
+            ),
             route: '/pa/dps_dpg/droit_penal_general/loi_penale',
           ),
           const SizedBox(height: 10),
-          const _RelatedTile(
+          _RelatedTile(
             icon: Icons.balance_rounded,
-            title: 'La sanction',
-            subtitle: 'Classification des peines et aggravations',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00026",
+              'La sanction',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00027",
+              'Classification des peines et aggravations',
+            ),
             route: '/pa/dps_dpg/sanctions/classification_peines',
           ),
           const SizedBox(height: 10),
-          const _RelatedTile(
+          _RelatedTile(
             icon: Icons.account_tree_outlined,
-            title: 'Les généralités',
-            subtitle: 'Infraction, tentative, complicité et légitime défense',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00028",
+              'Les généralités',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+              "f00029",
+              'Infraction, tentative, complicité et légitime défense',
+            ),
             route: '/pa/dps_dpg/socle_initial/generalites/infraction_intro',
           ),
         ],
@@ -162,7 +278,11 @@ class _HeroCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Semantics(
       container: true,
-      label: 'Introduction au cours sur la responsabilité pénale',
+      label: ScolariteText.value(
+        "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+        "f00030",
+        'Introduction au cours sur la responsabilité pénale',
+      ),
       child: Container(
         height: 218,
         clipBehavior: Clip.antiAlias,
@@ -203,7 +323,11 @@ class _HeroCard extends StatelessWidget {
                   const _HeroBadge(),
                   const Spacer(),
                   Text(
-                    'De la responsabilité\npénale',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                      "f00031",
+                      'De la responsabilité\npénale',
+                    ),
                     style: GoogleFonts.fustat(
                       color: Colors.white,
                       fontSize: 26,
@@ -213,7 +337,11 @@ class _HeroCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 7),
                   Text(
-                    'Identifier qui répond pénalement des faits, et pourquoi.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+                      "f00032",
+                      'Identifier qui répond pénalement des faits, et pourquoi.',
+                    ),
                     maxLines: 2,
                     style: GoogleFonts.fustat(
                       color: Colors.white.withValues(alpha: .82),
@@ -266,7 +394,11 @@ class _HeroBadge extends StatelessWidget {
         borderRadius: BorderRadius.circular(999),
       ),
       child: Text(
-        'DROIT PÉNAL GÉNÉRAL',
+        ScolariteText.value(
+          "lib/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart",
+          "f00033",
+          'DROIT PÉNAL GÉNÉRAL',
+        ),
         style: GoogleFonts.fustat(
           color: PaResponsabilitePenalePage._navy,
           fontSize: 10,

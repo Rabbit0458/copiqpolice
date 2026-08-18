@@ -35,14 +35,17 @@ Future<bool> showPsychoExitDialog(BuildContext context) async {
                 color: PsychoBrand.bad,
                 radius: 16,
               ),
-              child: const Icon(Icons.warning_amber_rounded, color: PsychoBrand.bad),
+              child: const Icon(
+                Icons.warning_amber_rounded,
+                color: PsychoBrand.bad,
+              ),
             ),
             const SizedBox(height: 14),
-            Text('Quitter l’exercice ?', style: PsychoBrand.h2(ctx)),
+            Text('Mettre fin au quiz ?', style: PsychoBrand.h2(ctx)),
             const SizedBox(height: 6),
             Text(
-              'Ta progression actuelle ne sera pas enregistrée. '
-              'Tu pourras recommencer plus tard.',
+              'Le quiz va être arrêté. Tes réponses déjà données seront '
+              'sauvegardées avant l’affichage des résultats.',
               style: PsychoBrand.body(
                 ctx,
               ).copyWith(color: PsychoBrand.textMuted(ctx)),
@@ -62,7 +65,7 @@ Future<bool> showPsychoExitDialog(BuildContext context) async {
                       foregroundColor: PsychoBrand.text(ctx),
                     ),
                     child: const Text(
-                      'Continuer',
+                      'Continuer le quiz',
                       style: TextStyle(
                         fontFamily: 'InstrumentSans',
                         fontWeight: FontWeight.w700,
@@ -83,7 +86,7 @@ Future<bool> showPsychoExitDialog(BuildContext context) async {
                       ),
                     ),
                     child: const Text(
-                      'Quitter',
+                      'Mettre fin et voir mes résultats',
                       style: TextStyle(
                         fontFamily: 'InstrumentSans',
                         fontWeight: FontWeight.w800,
@@ -155,9 +158,7 @@ Future<bool> showPsychoReportSheet({
         builder: (_, scrollCtrl) => Container(
           decoration: BoxDecoration(
             color: PsychoBrand.surface(ctx),
-            borderRadius: const BorderRadius.vertical(
-              top: Radius.circular(28),
-            ),
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
           ),
           child: StatefulBuilder(
             builder: (ctx, setSheet) {
@@ -275,15 +276,13 @@ Future<bool> showPsychoReportSheet({
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Text(
-                        'Message (optionnel)',
-                        style: PsychoBrand.h3(ctx),
-                      ),
+                      Text('Message (optionnel)', style: PsychoBrand.h3(ctx)),
                       const Spacer(),
                       Text(
                         '${controller.text.characters.length}/$_kMaxReportMessage',
                         style: PsychoBrand.small(ctx).copyWith(
-                          color: controller.text.characters.length >
+                          color:
+                              controller.text.characters.length >
                                   _kMaxReportMessage
                               ? PsychoBrand.bad
                               : PsychoBrand.textMuted(ctx),

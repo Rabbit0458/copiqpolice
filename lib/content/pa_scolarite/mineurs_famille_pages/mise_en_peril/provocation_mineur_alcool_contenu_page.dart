@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaProvocationMineurAlcoolPage extends StatelessWidget {
   const PaProvocationMineurAlcoolPage({super.key});
@@ -56,10 +57,18 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en péril",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+            "f00002",
+            "Mise en péril",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La provocation directe d’un mineur à la consommation de boissons alcooliques",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+              "f00003",
+              "La provocation directe d’un mineur à la consommation de boissons alcooliques",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,13 +99,21 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de provoquer directement un mineur à la consommation excessive ou habituelle de boissons alcooliques constitue une infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00005",
+                  "Le fait de provoquer directement un mineur à la consommation excessive ou habituelle de boissons alcooliques constitue une infraction.",
+                ),
               ),
             ],
           ),
@@ -101,22 +122,30 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-19 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00007",
+                    "Article 227-19 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime la provocation directe d’un mineur à la consommation habituelle ou excessive de boissons alcooliques.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00008",
+                    " : prévoit et réprime la provocation directe d’un mineur à la consommation habituelle ou excessive de boissons alcooliques.",
+                  ),
                 ),
               ]),
             ],
@@ -126,49 +155,94 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
 
           // Élément matériel (structuré pédagogique)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+              "f00009",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une provocation directe"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00010",
+                  "A) Une provocation directe",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La provocation visée doit être distinguée de la provocation constitutive de la complicité ",
-                ),
-                TextSpan(
-                  text: "(article 121-7 alinéa 2 du Code pénal)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00011",
+                    "La provocation visée doit être distinguée de la provocation constitutive de la complicité ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : l’acte de provocation n’étant pas défini, il peut prendre différentes formes.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00012",
+                    "(article 121-7 alinéa 2 du Code pénal)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00013",
+                    " : l’acte de provocation n’étant pas défini, il peut prendre différentes formes.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Pour être répréhensible, la provocation doit être directe : elle doit tendre vers les faits précisément visés par la loi. "
-                "Il doit exister une relation précise et incontestable, ainsi qu’un lien étroit, entre la provocation et les faits. "
-                "Une simple suggestion ou un simple conseil ne suffit pas.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00014",
+                      "Pour être répréhensible, la provocation doit être directe : elle doit tendre vers les faits précisément visés par la loi. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00015",
+                      "Il doit exister une relation précise et incontestable, ainsi qu’un lien étroit, entre la provocation et les faits. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00016",
+                      "Une simple suggestion ou un simple conseil ne suffit pas.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00017",
+                  "À retenir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La provocation directe s’oppose à l’apologie, à la propagande ou à la simple publicité : "
-                        "elles peuvent présenter les faits sous un jour favorable sans inciter directement à les commettre.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                          "f00018",
+                          "La provocation directe s’oppose à l’apologie, à la propagande ou à la simple publicité : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                          "f00019",
+                          "elles peuvent présenter les faits sous un jour favorable sans inciter directement à les commettre.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Peu importe que la provocation ait été suivie d’effet : l’infraction peut être constituée même si le mineur ne consomme pas.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00020",
+                  "Peu importe que la provocation ait été suivie d’effet : l’infraction peut être constituée même si le mineur ne consomme pas.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
@@ -176,61 +250,119 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La loi vise surtout un adulte cherchant à influencer un mineur, mais aucun âge n’est exigé : "
-                        "la provocation peut donc émaner d’un majeur comme d’un mineur.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                          "f00021",
+                          "La loi vise surtout un adulte cherchant à influencer un mineur, mais aucun âge n’est exigé : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                          "f00022",
+                          "la provocation peut donc émaner d’un majeur comme d’un mineur.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Adressée à un mineur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00023",
+                  "B) Adressée à un mineur",
+                ),
+              ),
               _Paragraph(
-                "La provocation doit s’adresser à un mineur quel que soit son âge. "
-                "À noter : lorsqu’elle est adressée à un mineur de 15 ans, il s’agit d’une circonstance aggravante.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00024",
+                      "La provocation doit s’adresser à un mineur quel que soit son âge. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00025",
+                      "À noter : lorsqu’elle est adressée à un mineur de 15 ans, il s’agit d’une circonstance aggravante.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) À la consommation habituelle ou excessive de boissons alcooliques",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00026",
+                  "C) À la consommation habituelle ou excessive de boissons alcooliques",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "La notion de "),
                 TextSpan(
-                  text: "« boissons alcooliques »",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00027",
+                    "La notion de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00028",
+                    "« boissons alcooliques »",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " vise les boissons comportant des traces d’alcool supérieures à 1,2° ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00029",
+                    " vise les boissons comportant des traces d’alcool supérieures à 1,2° ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(article L. 3321-1 du Code de la santé publique)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00030",
+                    "(article L. 3321-1 du Code de la santé publique)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "La consommation visée doit être habituelle ou excessive :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00031",
+                  "La consommation visée doit être habituelle ou excessive :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Consommation excessive : faire boire jusqu’à l’ivresse un mineur. Cela suppose une présence constante et une participation directe, active et décisive d’une autre personne (alinéa 1).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00032",
+                  "Consommation excessive : faire boire jusqu’à l’ivresse un mineur. Cela suppose une présence constante et une participation directe, active et décisive d’une autre personne (alinéa 1).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Consommation habituelle : caractère répété (souvent lié à l’entourage / la famille). L’objectif est d’éviter une dépendance progressive et l’alcoolisme (alinéa 2).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00033",
+                  "Consommation habituelle : caractère répété (souvent lié à l’entourage / la famille). L’objectif est d’éviter une dépendance progressive et l’alcoolisme (alinéa 2).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ce délit complète d’autres dispositions (notamment du Code de la santé publique) visant la protection des mineurs contre l’alcoolisme : "
-                "en présence de plusieurs infractions, un cumul de qualifications peut être envisagé.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00034",
+                      "Ce délit complète d’autres dispositions (notamment du Code de la santé publique) visant la protection des mineurs contre l’alcoolisme : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00035",
+                      "en présence de plusieurs infractions, un cumul de qualifications peut être envisagé.",
+                    ),
               ),
             ],
           ),
@@ -239,14 +371,26 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+              "f00036",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "C’est une infraction intentionnelle : l’auteur doit avoir conscience que ses agissements "
-                "sont de nature à inciter un ou plusieurs mineurs à consommer de façon habituelle ou excessive des boissons alcooliques.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00037",
+                      "C’est une infraction intentionnelle : l’auteur doit avoir conscience que ses agissements ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                      "f00038",
+                      "sont de nature à inciter un ou plusieurs mineurs à consommer de façon habituelle ou excessive des boissons alcooliques.",
+                    ),
               ),
             ],
           ),
@@ -255,29 +399,40 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+              "f00039",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-19 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00040",
+                    "Article 227-19 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque la provocation est adressée à un mineur de quinze ans.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00041",
+                  "Lorsque la provocation est adressée à un mineur de quinze ans.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque la provocation est commise dans des établissements d’enseignement ou d’éducation, ou dans les locaux de l’administration, ainsi que lors des entrées/sorties ou à proximité immédiate.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00042",
+                  "Lorsque la provocation est commise dans des établissements d’enseignement ou d’éducation, ou dans les locaux de l’administration, ainsi que lors des entrées/sorties ou à proximité immédiate.",
+                ),
               ),
             ],
           ),
@@ -286,113 +441,199 @@ class PaProvocationMineurAlcoolPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+              "f00043",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00044",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification simple (excessive) : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00045",
+                    "Qualification simple (excessive) : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00046",
+                    "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-19 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00047",
+                    "article 227-19 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification simple (habituelle) : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00048",
+                    "Qualification simple (habituelle) : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 45 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00049",
+                    "2 ans d’emprisonnement et 45 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-19 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00050",
+                    "article 227-19 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravation : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00051",
+                    "Aggravation : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "doublement du maximum des peines encourues — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00052",
+                    "doublement du maximum des peines encourues — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-19 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00053",
+                    "article 227-19 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00054",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 227-28-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00055",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
-                TextSpan(text: " : amendes selon "),
                 TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00056",
+                    "l’article 227-28-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00057",
+                    " : amendes selon ",
                   ),
                 ),
-                TextSpan(text: " + peines complémentaires de "),
                 TextSpan(
-                  text: "l’article 131-39 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00058",
+                    "l’article 131-38 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00059",
+                    " + peines complémentaires de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00060",
+                    "l’article 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00061",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                  "f00062",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00063",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation, instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00064",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart",
+                    "f00065",
+                    " (aide et assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
             ],

@@ -6,6 +6,7 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/liber
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/introduction_libertes_publiques_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/libertes_individuelles_vie_privee_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/libertes_expression_collectives_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// =============================================================
 ///  COP'IQ — Les libertés publiques (hub)
@@ -23,7 +24,9 @@ class PaLibertesPubliquesContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -34,10 +37,18 @@ class PaLibertesPubliquesContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Les libertés publiques',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+            "f00002",
+            'Les libertés publiques',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,8 +63,16 @@ class PaLibertesPubliquesContenuPage extends StatelessWidget {
           // ===== Introduction générale aux libertés publiques =====
           _ModuleCard(
             tag: 'intro_libertes_publiques',
-            title: 'Introduction générale aux libertés publiques',
-            subtitle: 'Notion, sources et grandes catégories de libertés.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00003",
+              'Introduction générale aux libertés publiques',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00004",
+              'Notion, sources et grandes catégories de libertés.',
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -68,8 +87,16 @@ class PaLibertesPubliquesContenuPage extends StatelessWidget {
           // ===== Garanties et protection des libertés publiques =====
           _ModuleCard(
             tag: 'garanties_protection_libertes',
-            title: 'Garanties et protection des libertés publiques',
-            subtitle: 'Contrôle du juge, hiérarchie des normes, recours.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00005",
+              'Garanties et protection des libertés publiques',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00006",
+              'Contrôle du juge, hiérarchie des normes, recours.',
+            ),
             imagePath: 'assets/images/gav.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -84,8 +111,16 @@ class PaLibertesPubliquesContenuPage extends StatelessWidget {
           // ===== Libertés d’expression collectives =====
           _ModuleCard(
             tag: 'libertes_expression_collectives',
-            title: 'Les libertés d’expression collectives',
-            subtitle: 'Réunion, association, manifestation, presse…',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00007",
+              'Les libertés d’expression collectives',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00008",
+              'Réunion, association, manifestation, presse…',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -100,8 +135,16 @@ class PaLibertesPubliquesContenuPage extends StatelessWidget {
           // ===== Libertés individuelles et vie privée =====
           _ModuleCard(
             tag: 'libertes_individuelles_vie_privee',
-            title: 'Les libertés individuelles et la vie privée',
-            subtitle: 'Sûreté, domicile, correspondances, données perso.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00009",
+              'Les libertés individuelles et la vie privée',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+              "f00010",
+              'Sûreté, domicile, correspondances, données perso.',
+            ),
             imagePath: 'assets/images/libertes_garanties.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -165,7 +208,7 @@ class _ModuleCard extends StatelessWidget {
         button: true,
         label: '$title — découvrir',
         child: Container(
-          height: 190,
+          height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,
@@ -274,7 +317,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 6),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart",
+                "f00013",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DelitPage extends StatelessWidget {
   const DelitPage({super.key});
@@ -32,7 +33,11 @@ class DelitPage extends StatelessWidget {
         backgroundColor: bg,
         elevation: 0,
         title: Text(
-          'Délits',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+            "f00001",
+            'Délits',
+          ),
           style: GoogleFonts.fustat(
             color: textMain,
             fontWeight: FontWeight.w900,
@@ -49,7 +54,11 @@ class DelitPage extends StatelessWidget {
           SliverToBoxAdapter(
             child: _HeaderHero(
               imagePath: _headerImage,
-              title: 'Le DÉLIT',
+              title: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                "f00002",
+                'Le DÉLIT',
+              ),
               isDark: isDark,
             ),
           ),
@@ -58,7 +67,11 @@ class DelitPage extends StatelessWidget {
             sliver: SliverList.list(
               children: [
                 _SectionCard(
-                  title: 'Définition & juridiction',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                    "f00003",
+                    'Définition & juridiction',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -67,19 +80,35 @@ class DelitPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _p(
-                        "Le délit est une infraction de gravité intermédiaire entre le crime et la contravention.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00004",
+                          "Le délit est une infraction de gravité intermédiaire entre le crime et la contravention.",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
                       _p(
-                        "Il est jugé par le tribunal correctionnel, et peut être sanctionné de peines correctionnelles.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00005",
+                          "Il est jugé par le tribunal correctionnel, et peut être sanctionné de peines correctionnelles.",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
                       _ChipRow(
-                        labels: const [
-                          'Infraction intermédiaire',
-                          'Tribunal correctionnel',
+                        labels: [
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                            "f00006",
+                            'Infraction intermédiaire',
+                          ),
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                            "f00007",
+                            'Tribunal correctionnel',
+                          ),
                         ],
                         isDark: isDark,
                       ),
@@ -88,7 +117,11 @@ class DelitPage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Peines encourues',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                    "f00008",
+                    'Peines encourues',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -97,16 +130,35 @@ class DelitPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _bullet(
-                        "Emprisonnement de 2 mois à 10 ans (selon la nature du délit).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00009",
+                          "Emprisonnement de 2 mois à 10 ans (selon la nature du délit).",
+                        ),
                         textSoft,
                       ),
-                      _bullet("Amende supérieure à 3 750 €.", textSoft),
                       _bullet(
-                        "Travail d’intérêt général, jours-amende, interdictions, peines complémentaires…",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00010",
+                          "Amende supérieure à 3 750 €.",
+                        ),
+                        textSoft,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00011",
+                          "Travail d’intérêt général, jours-amende, interdictions, peines complémentaires…",
+                        ),
                         textSoft,
                       ),
                       _note(
-                        "Les peines correctionnelles sont prévues aux articles 131-3 et suivants du Code pénal.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00012",
+                          "Les peines correctionnelles sont prévues aux articles 131-3 et suivants du Code pénal.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -114,7 +166,11 @@ class DelitPage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Tentative & complicité',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                    "f00013",
+                    'Tentative & complicité',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -123,11 +179,19 @@ class DelitPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _bullet(
-                        "Tentative : punissable uniquement si la loi le prévoit expressément.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00014",
+                          "Tentative : punissable uniquement si la loi le prévoit expressément.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Complicité : toujours punissable (aide, assistance, provocation, etc.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00015",
+                          "Complicité : toujours punissable (aide, assistance, provocation, etc.).",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -144,15 +208,27 @@ class DelitPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _bullet(
-                        "Action publique : 6 ans à compter du jour des faits.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00016",
+                          "Action publique : 6 ans à compter du jour des faits.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Peine : 6 ans à compter du jour où la condamnation est devenue définitive.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00017",
+                          "Peine : 6 ans à compter du jour où la condamnation est devenue définitive.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Certaines infractions bénéficient de délais spéciaux (terrorisme, délits sexuels, etc.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00018",
+                          "Certaines infractions bénéficient de délais spéciaux (terrorisme, délits sexuels, etc.).",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -160,7 +236,11 @@ class DelitPage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Catégories de délits',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                    "f00019",
+                    'Catégories de délits',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -168,27 +248,71 @@ class DelitPage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle("Délits de droit commun", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00020",
+                          "Délits de droit commun",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Exemples : vol, escroquerie, abus de confiance, violences volontaires, etc.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00021",
+                          "Exemples : vol, escroquerie, abus de confiance, violences volontaires, etc.",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Délits politiques", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00022",
+                          "Délits politiques",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Liés aux intérêts fondamentaux de la Nation ; jugés par les juridictions ordinaires (ou militaires en temps de guerre).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00023",
+                          "Liés aux intérêts fondamentaux de la Nation ; jugés par les juridictions ordinaires (ou militaires en temps de guerre).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Délits terroristes", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00024",
+                          "Délits terroristes",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Prévu aux articles 421-1 et suivants du Code pénal. Compétence centralisée, peines aggravées.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00025",
+                          "Prévu aux articles 421-1 et suivants du Code pénal. Compétence centralisée, peines aggravées.",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Délits militaires", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00026",
+                          "Délits militaires",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Infractions commises par des militaires (désobéissance, désertion). Compétence : tribunaux militaires ou juridictions spécialisées.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00027",
+                          "Infractions commises par des militaires (désobéissance, désertion). Compétence : tribunaux militaires ou juridictions spécialisées.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -196,7 +320,11 @@ class DelitPage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Instantané / continu — effets juridiques',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                    "f00028",
+                    'Instantané / continu — effets juridiques',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -204,27 +332,54 @@ class DelitPage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle("Définitions", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00029",
+                          "Définitions",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Infraction instantanée : réalisée en un seul acte (ex. vol, escroquerie).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00030",
+                          "Infraction instantanée : réalisée en un seul acte (ex. vol, escroquerie).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Infraction continue : se prolonge dans le temps (ex. non-représentation d’enfant).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00031",
+                          "Infraction continue : se prolonge dans le temps (ex. non-représentation d’enfant).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
                       _subtitle("Effets", textMain),
                       _bullet(
-                        "Prescription : point de départ à la fin de la situation infractionnelle.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00032",
+                          "Prescription : point de départ à la fin de la situation infractionnelle.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Compétence : toutes les juridictions où les faits se produisent peuvent connaître l’affaire.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00033",
+                          "Compétence : toutes les juridictions où les faits se produisent peuvent connaître l’affaire.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Loi nouvelle : applicable aux délits continus si ceux-ci persistent sous son empire.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00034",
+                          "Loi nouvelle : applicable aux délits continus si ceux-ci persistent sous son empire.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -232,7 +387,11 @@ class DelitPage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Simple / complexe / d’habitude',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                    "f00035",
+                    'Simple / complexe / d’habitude',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -241,25 +400,52 @@ class DelitPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _bullet(
-                        "Infraction simple : acte unique (ex. vol).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00036",
+                          "Infraction simple : acte unique (ex. vol).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Infraction complexe : plusieurs actes différents (ex. escroquerie).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00037",
+                          "Infraction complexe : plusieurs actes différents (ex. escroquerie).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Infraction d’habitude : répétition d’actes semblables (ex. exercice illégal d’une profession).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00038",
+                          "Infraction d’habitude : répétition d’actes semblables (ex. exercice illégal d’une profession).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Effets juridiques", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00039",
+                          "Effets juridiques",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Prescription : part du dernier acte de l’habitude.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00040",
+                          "Prescription : part du dernier acte de l’habitude.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Loi nouvelle : s’applique si le dernier acte est postérieur à son entrée en vigueur.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00041",
+                          "Loi nouvelle : s’applique si le dernier acte est postérieur à son entrée en vigueur.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -267,7 +453,11 @@ class DelitPage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Exemples de délits fréquents',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                    "f00042",
+                    'Exemples de délits fréquents',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -276,19 +466,35 @@ class DelitPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _bullet(
-                        "Vol simple (art. 311-3 C. pén.) — 3 ans d’emprisonnement et 45 000 € d’amende.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00043",
+                          "Vol simple (art. 311-3 C. pén.) — 3 ans d’emprisonnement et 45 000 € d’amende.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Escroquerie (art. 313-1 C. pén.) — 5 ans et 375 000 €.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00044",
+                          "Escroquerie (art. 313-1 C. pén.) — 5 ans et 375 000 €.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Conduite en état d’ivresse (art. L.234-1 Code de la route) — 2 ans et 4 500 €.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00045",
+                          "Conduite en état d’ivresse (art. L.234-1 Code de la route) — 2 ans et 4 500 €.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Violences volontaires ayant entraîné une ITT < 8 jours — 3 ans et 45 000 €.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart",
+                          "f00046",
+                          "Violences volontaires ayant entraîné une ITT < 8 jours — 3 ans et 45 000 €.",
+                        ),
                         textSoft,
                       ),
                     ],

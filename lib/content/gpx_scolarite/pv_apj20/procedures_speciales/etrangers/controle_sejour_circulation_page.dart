@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ControleSejourCirculationPage extends StatelessWidget {
   const ControleSejourCirculationPage({super.key});
@@ -55,10 +56,18 @@ class ControleSejourCirculationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Procès-verbal",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+            "f00002",
+            "Procès-verbal",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class ControleSejourCirculationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Contrôle du séjour et de la circulation d’un étranger",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+              "f00003",
+              "Contrôle du séjour et de la circulation d’un étranger",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,27 +98,53 @@ class ControleSejourCirculationPage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT
           _ConditionCard(
-            title: "Base légale (à viser en tête d’acte)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+              "f00004",
+              "Base légale (à viser en tête d’acte)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                law("Article L. 812-2 (1°) du CESEDA"),
-                const TextSpan(
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                    "f00005",
+                    "Article L. 812-2 (1°) du CESEDA",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : contrôle de la situation administrative d’un étranger sans contrôle d’identité préalable, "
-                      "lorsque la qualité d’étranger est apparente au regard d’éléments objectifs extérieurs.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                        "f00006",
+                        " : contrôle de la situation administrative d’un étranger sans contrôle d’identité préalable, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                        "f00007",
+                        "lorsque la qualité d’étranger est apparente au regard d’éléments objectifs extérieurs.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "INTERDIT",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le fait de parler une langue étrangère, la tenue, ou la couleur de peau ne constituent pas des critères d’extranéité. "
-                        "Les éléments doivent être objectifs, extérieurs, et non discriminatoires.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                          "f00008",
+                          "Le fait de parler une langue étrangère, la tenue, ou la couleur de peau ne constituent pas des critères d’extranéité. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                          "f00009",
+                          "Les éléments doivent être objectifs, extérieurs, et non discriminatoires.",
+                        ),
                   ),
                 ],
               ),
@@ -116,7 +155,11 @@ class ControleSejourCirculationPage extends StatelessWidget {
 
           // Modèle Canva
           _ConditionCard(
-            title: "Modèle (Canva) — recto / verso",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+              "f00010",
+              "Modèle (Canva) — recto / verso",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -139,143 +182,351 @@ class ControleSejourCirculationPage extends StatelessWidget {
 
           // Canevas
           _ConditionCard(
-            title: "Canevas PV — déroulé opérationnel (1 → 16)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+              "f00011",
+              "Canevas PV — déroulé opérationnel (1 → 16)",
+            ),
             cardColor: cardCanevas,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("1) Lieu de saisine"),
-              const _BulletPoint(
-                text:
-                    "Mentionner l’endroit exact où se situe l’équipage (adresse précise / point remarquable).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00012",
+                  "1) Lieu de saisine",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00013",
+                  "Mentionner l’endroit exact où se situe l’équipage (adresse précise / point remarquable).",
+                ),
               ),
 
-              const _SubTitle("2) Instructions"),
-              const _BulletPoint(
-                text:
-                    "En patrouille : agir conformément aux instructions permanentes du chef de service.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00014",
+                  "2) Instructions",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00015",
+                  "En patrouille : agir conformément aux instructions permanentes du chef de service.",
+                ),
               ),
 
-              const _SubTitle("3) Assistants"),
-              const _BulletPoint(
-                text:
-                    "Lister les fonctionnaires accompagnants + préciser la tenue (uniforme / tenue bourgeoise / brassard police).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00016",
+                  "3) Assistants",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00017",
+                  "Lister les fonctionnaires accompagnants + préciser la tenue (uniforme / tenue bourgeoise / brassard police).",
+                ),
               ),
 
-              const _SubTitle("4) Mission"),
-              const _BulletPoint(
-                text:
-                    "Indiquer le but initial de la mission (surveillance, dissuasion, contrôle ciblé, sécurisation…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00018",
+                  "4) Mission",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00019",
+                  "Indiquer le but initial de la mission (surveillance, dissuasion, contrôle ciblé, sécurisation…).",
+                ),
               ),
 
-              const _SubTitle("5) Constatations de la qualité d’étranger"),
-              const _Paragraph(
-                "Relater précisément les faits observés justifiant le contrôle de la situation administrative "
-                "sans contrôle d’identité préalable. Les éléments d’extranéité doivent être objectifs et extérieurs.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00020",
+                  "5) Constatations de la qualité d’étranger",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00021",
+                      "Relater précisément les faits observés justifiant le contrôle de la situation administrative ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00022",
+                      "sans contrôle d’identité préalable. Les éléments d’extranéité doivent être objectifs et extérieurs.",
+                    ),
               ),
               const SizedBox(height: 8),
-              const _NotaBox(
-                title: "EXEMPLES (non exhaustifs)",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00023",
+                  "EXEMPLES (non exhaustifs)",
+                ),
                 bodySpans: [
-                  TextSpan(text: "• Véhicule immatriculé à l’étranger\n"),
                   TextSpan(
-                    text:
-                        "• Manifestation avec banderoles étrangères / tracts en langue étrangère\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00024",
+                      "• Véhicule immatriculé à l’étranger\n",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "• Tout autre élément objectif rendant apparente la qualité d’étranger\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00025",
+                      "• Manifestation avec banderoles étrangères / tracts en langue étrangère\n",
+                    ),
                   ),
                   TextSpan(
-                    text: "⚠️ La langue parlée n’est pas un critère.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00026",
+                      "• Tout autre élément objectif rendant apparente la qualité d’étranger\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00027",
+                      "⚠️ La langue parlée n’est pas un critère.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("6) Formule impérative APJ"),
-              const _BulletPoint(
-                text:
-                    "Inscrire : « Sur l’ordre et sous la responsabilité d’un OPJ » (sinon risque de nullité).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00028",
+                  "6) Formule impérative APJ",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00029",
+                  "Inscrire : « Sur l’ordre et sous la responsabilité d’un OPJ » (sinon risque de nullité).",
+                ),
               ),
 
-              const _SubTitle("7) Visa CESEDA"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00030",
+                  "7) Visa CESEDA",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Viser : "),
-                law("article L. 812-2 (1°) du CESEDA"),
-                const TextSpan(
-                  text:
-                      " (contrôle du séjour/circulation sans contrôle d’identité préalable).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                    "f00031",
+                    "Viser : ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                    "f00032",
+                    "article L. 812-2 (1°) du CESEDA",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                    "f00033",
+                    " (contrôle du séjour/circulation sans contrôle d’identité préalable).",
+                  ),
                 ),
               ]),
 
-              const _SubTitle("8) Contrôle (heure + lieu)"),
-              const _BulletPoint(
-                text:
-                    "L’heure est fondamentale (début d’une éventuelle retenue séjour) + mentionner le lieu exact.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00034",
+                  "8) Contrôle (heure + lieu)",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le contrôle porte sur les pièces/documents autorisant circulation et séjour en France.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00035",
+                  "L’heure est fondamentale (début d’une éventuelle retenue séjour) + mentionner le lieu exact.",
+                ),
               ),
-
-              const _SubTitle("9) Résultat du contrôle"),
-              const _BulletPoint(
-                text:
-                    "Identifier au style indirect : état civil + adresse uniquement (pas d’éléments perso).",
-              ),
-              const _BulletPoint(
-                text:
-                    "Selon contexte/attitude, la palpation (point 11) peut être faite avant ce point.",
-              ),
-
-              const _SubTitle("10) Interrogation AGDREF2"),
-              const _Paragraph(
-                "Rappeler l’objet : base recensant notamment empreintes/photos des étrangers demandeurs ou titulaires de titres > 1 an, "
-                "ou faisant l’objet d’une mesure d’éloignement / ne remplissant pas les conditions d’entrée Schengen. "
-                "Interrogation via état civil ou numéro du titre présenté.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00036",
+                  "Le contrôle porte sur les pièces/documents autorisant circulation et séjour en France.",
+                ),
               ),
 
-              const _SubTitle("11) Palpation de sécurité"),
-              const _BulletPoint(
-                text:
-                    "Jamais systématique : uniquement si nécessaire (circonstances de temps/lieux, sécurité).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00037",
+                  "9) Résultat du contrôle",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Doit être faite avec respect et discernement, pour vérifier l’absence d’objet dangereux.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00038",
+                  "Identifier au style indirect : état civil + adresse uniquement (pas d’éléments perso).",
+                ),
               ),
-
-              const _SubTitle("12) Avis OPJ"),
-              const _BulletPoint(
-                text:
-                    "Mentionner les instructions reçues de l’OPJ (contenu + moment).",
-              ),
-
-              const _SubTitle("13) Retour au service"),
-              const _BulletPoint(
-                text:
-                    "Mentionner que l’intéressé accompagne de plein gré ; en cas de refus, transport possible. "
-                    "Tout usage de la force doit être circonstancié et proportionné.",
-              ),
-
-              const _SubTitle("14) Énonciation terminale / signature"),
-              const _BulletPoint(
-                text:
-                    "Style direct : la personne signe. Style indirect : pas de signature. Heure de clôture facultative.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00039",
+                  "Selon contexte/attitude, la palpation (point 11) peut être faite avant ce point.",
+                ),
               ),
 
-              const _SubTitle("15) Présentation à l’OPJ"),
-              const _BulletPoint(
-                text:
-                    "Préciser l’heure + compte-rendu verbal + mentionner les instructions éventuellement données.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00040",
+                  "10) Interrogation AGDREF2",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00041",
+                      "Rappeler l’objet : base recensant notamment empreintes/photos des étrangers demandeurs ou titulaires de titres > 1 an, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00042",
+                      "ou faisant l’objet d’une mesure d’éloignement / ne remplissant pas les conditions d’entrée Schengen. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00043",
+                      "Interrogation via état civil ou numéro du titre présenté.",
+                    ),
               ),
 
-              const _SubTitle("16) Mention FPR"),
-              const _BulletPoint(
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00044",
+                  "11) Palpation de sécurité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00045",
+                  "Jamais systématique : uniquement si nécessaire (circonstances de temps/lieux, sécurité).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00046",
+                  "Doit être faite avec respect et discernement, pour vérifier l’absence d’objet dangereux.",
+                ),
+              ),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00047",
+                  "12) Avis OPJ",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00048",
+                  "Mentionner les instructions reçues de l’OPJ (contenu + moment).",
+                ),
+              ),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00049",
+                  "13) Retour au service",
+                ),
+              ),
+              _BulletPoint(
                 text:
-                    "Indiquer que les recherches administratives au FPR ont été effectuées (et résultat).",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00050",
+                      "Mentionner que l’intéressé accompagne de plein gré ; en cas de refus, transport possible. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                      "f00051",
+                      "Tout usage de la force doit être circonstancié et proportionné.",
+                    ),
+              ),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00052",
+                  "14) Énonciation terminale / signature",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00053",
+                  "Style direct : la personne signe. Style indirect : pas de signature. Heure de clôture facultative.",
+                ),
+              ),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00054",
+                  "15) Présentation à l’OPJ",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00055",
+                  "Préciser l’heure + compte-rendu verbal + mentionner les instructions éventuellement données.",
+                ),
+              ),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00056",
+                  "16) Mention FPR",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00057",
+                  "Indiquer que les recherches administratives au FPR ont été effectuées (et résultat).",
+                ),
               ),
             ],
           ),
@@ -284,30 +535,49 @@ class ControleSejourCirculationPage extends StatelessWidget {
 
           // Mémo
           _ConditionCard(
-            title: "Mémo rapide (points sensibles)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+              "f00058",
+              "Mémo rapide (points sensibles)",
+            ),
             cardColor: cardVigi,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Toujours une extranéité OBJECTIVE et extérieure (jamais discriminatoire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00059",
+                  "Toujours une extranéité OBJECTIVE et extérieure (jamais discriminatoire).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Ne jamais oublier la formule « sur l’ordre et sous la responsabilité d’un OPJ ».",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00060",
+                  "Ne jamais oublier la formule « sur l’ordre et sous la responsabilité d’un OPJ ».",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Heure + lieu du contrôle indispensables (début éventuelle retenue séjour).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00061",
+                  "Heure + lieu du contrôle indispensables (début éventuelle retenue séjour).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Palpation : jamais systématique, seulement si nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00062",
+                  "Palpation : jamais systématique, seulement si nécessaire.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Signature cohérente avec le style : direct = signe / indirect = ne signe pas.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00063",
+                  "Signature cohérente avec le style : direct = signe / indirect = ne signe pas.",
+                ),
               ),
             ],
           ),
@@ -636,8 +906,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+        "f00065",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+        "f00066",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -810,7 +1088,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                    "f00067",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -879,7 +1161,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart",
+                  "f00068",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -907,7 +1193,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -942,7 +1230,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

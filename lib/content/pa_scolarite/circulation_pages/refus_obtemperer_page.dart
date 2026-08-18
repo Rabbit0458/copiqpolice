@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaRefusObtempererPage extends StatelessWidget {
   const PaRefusObtempererPage({super.key});
@@ -59,10 +60,18 @@ class PaRefusObtempererPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions circulation routière",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+            "f00002",
+            "Infractions circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaRefusObtempererPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le refus d’obtempérer",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+              "f00003",
+              "Le refus d’obtempérer",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class PaRefusObtempererPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour tout conducteur, d’omettre d’obtempérer à une sommation de s’arrêter "
-                "émanant d’un fonctionnaire ou agent chargé de constater les infractions, "
-                "et muni des insignes extérieurs et apparents de sa qualité, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00005",
+                      "Le fait, pour tout conducteur, d’omettre d’obtempérer à une sommation de s’arrêter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00006",
+                      "émanant d’un fonctionnaire ou agent chargé de constater les infractions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00007",
+                      "et muni des insignes extérieurs et apparents de sa qualité, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,21 +135,30 @@ class PaRefusObtempererPage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 233-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00009",
+                    "Article L. 233-1 I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime le refus d’obtempérer.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00010",
+                    " : définit et réprime le refus d’obtempérer.",
+                  ),
                 ),
               ]),
             ],
@@ -130,26 +168,55 @@ class PaRefusObtempererPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Agents habilités et identifiables"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00012",
+                  "A) Agents habilités et identifiables",
+                ),
+              ),
               _Paragraph(
-                "Les termes « fonctionnaire ou agent chargé de constater les infractions » englobent "
-                "les agents énumérés par le Code de la route. Ces personnes doivent être clairement identifiables "
-                "par le port d’insignes extérieurs et apparents de leur qualité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00013",
+                      "Les termes « fonctionnaire ou agent chargé de constater les infractions » englobent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00014",
+                      "les agents énumérés par le Code de la route. Ces personnes doivent être clairement identifiables ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00015",
+                      "par le port d’insignes extérieurs et apparents de leur qualité.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Références : "),
                 TextSpan(
-                  text: "articles L. 130-1 à L. 130-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00016",
+                    "Références : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00017",
+                    "articles L. 130-1 à L. 130-4 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -158,11 +225,18 @@ class PaRefusObtempererPage extends StatelessWidget {
                 title: "Jurisprudences",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "• Tenue spéciale de sécurité pouvant induire en erreur sur la qualité des agents (confusion possible) ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00018",
+                      "• Tenue spéciale de sécurité pouvant induire en erreur sur la qualité des agents (confusion possible) ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(TGI Brive, 6 février 1981)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00019",
+                      "(TGI Brive, 6 février 1981)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -170,11 +244,18 @@ class PaRefusObtempererPage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• Gyrophare + avertisseur sonore : marques distinctives tenant lieu d’identification d’un véhicule de police ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00020",
+                      "• Gyrophare + avertisseur sonore : marques distinctives tenant lieu d’identification d’un véhicule de police ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 23 février 1987)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00021",
+                      "(Cass. crim., 23 février 1987)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -186,22 +267,47 @@ class PaRefusObtempererPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) La sommation de s’arrêter"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00022",
+                  "B) La sommation de s’arrêter",
+                ),
+              ),
               _Paragraph(
-                "Elle doit désigner clairement le conducteur (gestes réglementaires d’arrêt, coups de sifflet, "
-                "signalisations lumineuses…). Le conducteur ne doit avoir aucun doute sur la nature de l’ordre "
-                "qui lui est destiné. La forme de l’ordre importe peu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00023",
+                      "Elle doit désigner clairement le conducteur (gestes réglementaires d’arrêt, coups de sifflet, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00024",
+                      "signalisations lumineuses…). Le conducteur ne doit avoir aucun doute sur la nature de l’ordre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00025",
+                      "qui lui est destiné. La forme de l’ordre importe peu.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "• La connaissance non équivoque de l’obligation de s’arrêter est établie si un gendarme/policier invite à immobiliser le véhicule par projecteur + sifflet ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00026",
+                      "• La connaissance non équivoque de l’obligation de s’arrêter est établie si un gendarme/policier invite à immobiliser le véhicule par projecteur + sifflet ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 11 mai 1989)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00027",
+                      "(Cass. crim., 11 mai 1989)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -209,11 +315,18 @@ class PaRefusObtempererPage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• L’ordre peut résulter d’un geste ou de toute attitude significative d’une obligation de s’arrêter ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00028",
+                      "• L’ordre peut résulter d’un geste ou de toute attitude significative d’une obligation de s’arrêter ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 20 février 2007)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00029",
+                      "(Cass. crim., 20 février 2007)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -224,52 +337,85 @@ class PaRefusObtempererPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00030",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le délit ne saurait être retenu si une action violente ou dangereuse absorbe l’abstention/le refus de s’arrêter.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00031",
+                      "Le délit ne saurait être retenu si une action violente ou dangereuse absorbe l’abstention/le refus de s’arrêter.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Exemple : foncer sur des gendarmes avec le véhicule = violences volontaires aggravées ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00032",
+                    "Exemple : foncer sur des gendarmes avec le véhicule = violences volontaires aggravées ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 2 mai 2002)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00033",
+                    "(Cass. crim., 2 mai 2002)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Le refus d’obtempérer (fait du conducteur)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00034",
+                  "C) Le refus d’obtempérer (fait du conducteur)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le refus d’obtempérer est le fait du conducteur de tout véhicule ou ensemble de véhicules. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00035",
+                    "Le refus d’obtempérer est le fait du conducteur de tout véhicule ou ensemble de véhicules. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article R. 412-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00036",
+                    "Article R. 412-6 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Seul le conducteur peut être poursuivi comme auteur. Toutefois, la responsabilité des passagers "
-                "peut être retenue pour complicité, notamment selon leur comportement (ou celui du conducteur) "
-                "pendant la commission des faits.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00037",
+                      "Seul le conducteur peut être poursuivi comme auteur. Toutefois, la responsabilité des passagers ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00038",
+                      "peut être retenue pour complicité, notamment selon leur comportement (ou celui du conducteur) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00039",
+                      "pendant la commission des faits.",
+                    ),
               ),
             ],
           ),
@@ -278,15 +424,33 @@ class PaRefusObtempererPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+              "f00040",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Volonté de ne pas obéir à une sommation de s’arrêter"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00041",
+                  "Volonté de ne pas obéir à une sommation de s’arrêter",
+                ),
+              ),
               _Paragraph(
-                "Le délit est constitué par le refus intentionnel du conducteur de s’arrêter. "
-                "Cela suppose que l’ordre ait été clairement perçu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00042",
+                      "Le délit est constitué par le refus intentionnel du conducteur de s’arrêter. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00043",
+                      "Cela suppose que l’ordre ait été clairement perçu.",
+                    ),
               ),
             ],
           ),
@@ -295,41 +459,77 @@ class PaRefusObtempererPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+              "f00044",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 233-1-1 I alinéa 1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00045",
+                    "Article L. 233-1-1 I alinéa 1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque les faits sont commis dans des circonstances exposant directement autrui à un risque "
-                      "de mort ou de blessures de nature à entraîner une mutilation ou une infirmité permanente.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                        "f00046",
+                        " : lorsque les faits sont commis dans des circonstances exposant directement autrui à un risque ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                        "f00047",
+                        "de mort ou de blessures de nature à entraîner une mutilation ou une infirmité permanente.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Il s’agit d’un refus d’obtempérer commis par un conducteur qui conduit en violation d’une règle "
-                "du Code de la route. La violation doit, en soi, entraîner une probabilité très importante d’accident "
-                "corporel et le risque doit être causé à autrui (présence de personnes susceptibles d’être victimes).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00048",
+                      "Il s’agit d’un refus d’obtempérer commis par un conducteur qui conduit en violation d’une règle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00049",
+                      "du Code de la route. La violation doit, en soi, entraîner une probabilité très importante d’accident ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00050",
+                      "corporel et le risque doit être causé à autrui (présence de personnes susceptibles d’être victimes).",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00051",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Poursuivre sa route à très grande vitesse sur autoroute pour échapper au contrôle a exposé gendarmes et usagers à un risque de mort/blessures graves ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00052",
+                      "Poursuivre sa route à très grande vitesse sur autoroute pour échapper au contrôle a exposé gendarmes et usagers à un risque de mort/blessures graves ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 21 mai 2008, n° 08-80.017)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00053",
+                      "(Cass. crim., 21 mai 2008, n° 08-80.017)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -341,16 +541,25 @@ class PaRefusObtempererPage extends StatelessWidget {
               SizedBox(height: 14),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 233-1-1 I alinéa 2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00054",
+                    "Article L. 233-1-1 I alinéa 2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque les faits exposent directement les agents/fonctionnaires mentionnés au I "
-                      "de l’article L. 233-1 à un risque de mort ou de blessures graves (mutilation/infirmité permanente).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                        "f00055",
+                        " : lorsque les faits exposent directement les agents/fonctionnaires mentionnés au I ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                        "f00056",
+                        "de l’article L. 233-1 à un risque de mort ou de blessures graves (mutilation/infirmité permanente).",
+                      ),
                 ),
               ]),
             ],
@@ -360,56 +569,119 @@ class PaRefusObtempererPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+              "f00057",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — forme simple"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00058",
+                  "Peines encourues — forme simple",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : "),
-                TextSpan(text: "délit. "),
-                TextSpan(text: "— Peines principales : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 15 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00059",
+                    "Qualification : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 233-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00060",
+                    "délit. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00061",
+                    "— Peines principales : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00062",
+                    "2 ans d’emprisonnement et 15 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00063",
+                    "Article L. 233-1 I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Peines encourues — formes aggravées"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00064",
+                  "Peines encourues — formes aggravées",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Aggravation (risque pour autrui) : "),
                 TextSpan(
-                  text: "article L. 233-1-1 I alinéa 1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00065",
+                    "Aggravation (risque pour autrui) : ",
                   ),
                 ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00066",
+                    "article L. 233-1-1 I alinéa 1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
                 TextSpan(text: " — "),
-                TextSpan(text: "75 000 € d’amende."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00067",
+                    "75 000 € d’amende.",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravation (risque pour les agents) : "),
                 TextSpan(
-                  text: "article L. 233-1-1 I alinéa 2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00068",
+                    "Aggravation (risque pour les agents) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00069",
+                    "article L. 233-1-1 I alinéa 2 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " — "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 1 000 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00070",
+                    "7 ans d’emprisonnement et 1 000 000 € d’amende.",
+                  ),
                 ),
               ]),
 
@@ -419,7 +691,11 @@ class PaRefusObtempererPage extends StatelessWidget {
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
-                    text: "Article L. 233-1 II du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                      "f00071",
+                      "Article L. 233-1 II du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -427,33 +703,65 @@ class PaRefusObtempererPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " : les peines prononcées pour le délit prévu au I se cumulent, sans possibilité de confusion, "
-                        "avec celles prononcées pour les autres infractions commises à l’occasion de la conduite du véhicule "
-                        "(nonobstant les articles 132-2 à 132-5 du Code pénal).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                          "f00072",
+                          " : les peines prononcées pour le délit prévu au I se cumulent, sans possibilité de confusion, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                          "f00073",
+                          "avec celles prononcées pour les autres infractions commises à l’occasion de la conduite du véhicule ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                          "f00074",
+                          "(nonobstant les articles 132-2 à 132-5 du Code pénal).",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00075",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                  "f00076",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00077",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00078",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart",
+                    "f00079",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),

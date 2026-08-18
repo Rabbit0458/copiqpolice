@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/proc%C3%A9dure_p%C3%A9nale_pages/juridiction_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -55,7 +56,11 @@ class _JuridictionIntroPageState extends State<JuridictionIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LES JURIDICTIONS PÉNALES';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridiction_intro_page.dart",
+    "f00001",
+    'LES JURIDICTIONS PÉNALES',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -162,7 +167,11 @@ class _JuridictionIntroPageState extends State<JuridictionIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Comprendre l'organisation des juridictions pénale",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridiction_intro_page.dart",
+                        "f00002",
+                        "Comprendre l'organisation des juridictions pénale",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -277,7 +286,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridiction_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

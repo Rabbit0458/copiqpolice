@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaNonDenonciationCrimePage extends StatelessWidget {
   const PaNonDenonciationCrimePage({super.key});
@@ -56,10 +57,18 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à l’action de la justice",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+            "f00002",
+            "Atteintes à l’action de la justice",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La non-dénonciation de crime",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+              "f00003",
+              "La non-dénonciation de crime",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,21 +99,49 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour une personne ayant connaissance d’un crime dont il est encore possible de prévenir ou de limiter les effets, "
-                "ou dont les auteurs sont susceptibles de commettre de nouveaux crimes qui pourraient être empêchés, "
-                "de ne pas en informer les autorités judiciaires ou administratives, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00005",
+                      "Le fait, pour une personne ayant connaissance d’un crime dont il est encore possible de prévenir ou de limiter les effets, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00006",
+                      "ou dont les auteurs sont susceptibles de commettre de nouveaux crimes qui pourraient être empêchés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00007",
+                      "de ne pas en informer les autorités judiciaires ou administratives, constitue une infraction.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ces dispositions ne s’appliquent pas, sauf pour les crimes commis sur les mineurs, "
-                "aux proches de l’auteur ou du complice (immunité familiale). "
-                "Sont également exemptées les personnes astreintes au secret professionnel.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00008",
+                      "Ces dispositions ne s’appliquent pas, sauf pour les crimes commis sur les mineurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00009",
+                      "aux proches de l’auteur ou du complice (immunité familiale). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00010",
+                      "Sont également exemptées les personnes astreintes au secret professionnel.",
+                    ),
               ),
             ],
           ),
@@ -109,35 +150,56 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 434-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00012",
+                    "Article 434-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime le délit de non-dénonciation de crime.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00013",
+                    " : prévoit et réprime le délit de non-dénonciation de crime.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Secret professionnel : "),
                 TextSpan(
-                  text: "article 226-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00014",
+                    "Secret professionnel : ",
                   ),
                 ),
-                TextSpan(text: " (exception)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00015",
+                    "article 226-13 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00016",
+                    " (exception).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -146,25 +208,50 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+              "f00017",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance de la commission d’un crime"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00018",
+                  "A) Connaissance de la commission d’un crime",
+                ),
+              ),
               _Paragraph(
-                "L’obligation de dénoncer ne vise que les crimes pour lesquels la dénonciation est utile : "
-                "il doit encore être possible de prévenir ou limiter les effets, ou d’empêcher de nouveaux crimes.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00019",
+                      "L’obligation de dénoncer ne vise que les crimes pour lesquels la dénonciation est utile : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00020",
+                      "il doit encore être possible de prévenir ou limiter les effets, ou d’empêcher de nouveaux crimes.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La Cour de cassation impose aux juges de constater l’existence de l’infraction dans tous ses éléments. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00021",
+                      "La Cour de cassation impose aux juges de constater l’existence de l’infraction dans tous ses éléments. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 17 avril 1956)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00022",
+                      "(Cass. crim., 17 avril 1956)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -175,34 +262,84 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Sont visées toutes les infractions de nature criminelle, quelle que soit la nature du crime. "
-                "L’incrimination est également applicable à la tentative de crime. "
-                "En revanche, le simple projet criminel, sans commencement d’exécution, n’est pas concerné.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00023",
+                      "Sont visées toutes les infractions de nature criminelle, quelle que soit la nature du crime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00024",
+                      "L’incrimination est également applicable à la tentative de crime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00025",
+                      "En revanche, le simple projet criminel, sans commencement d’exécution, n’est pas concerné.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une abstention de dénonciation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00026",
+                  "B) Une abstention de dénonciation",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’une infraction d’omission : la personne avait la possibilité d’avertir les autorités "
-                "administratives ou judiciaires, et ne l’a pas fait.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00027",
+                      "Il s’agit d’une infraction d’omission : la personne avait la possibilité d’avertir les autorités ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00028",
+                      "administratives ou judiciaires, et ne l’a pas fait.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Par « autorités », on entend toute autorité capable de mesurer l’importance de l’information et d’y donner suite : "
-                "ministère public, services de police, gendarmerie, etc. La jurisprudence admet aussi une information transmise à une "
-                "personne intervenant pour leur compte.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00029",
+                      "Par « autorités », on entend toute autorité capable de mesurer l’importance de l’information et d’y donner suite : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00030",
+                      "ministère public, services de police, gendarmerie, etc. La jurisprudence admet aussi une information transmise à une ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00031",
+                      "personne intervenant pour leur compte.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Jurisprudence : information donnée à un médecin inspecteur de la santé (DDASS sous l’autorité du préfet) "
-                        "concernant le viol d’une mineure par son père. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                          "f00032",
+                          "Jurisprudence : information donnée à un médecin inspecteur de la santé (DDASS sous l’autorité du préfet) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                          "f00033",
+                          "concernant le viol d’une mineure par son père. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 13 octobre 1992)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00034",
+                      "(Cass. crim., 13 octobre 1992)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -214,20 +351,41 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Révélation de l’existence du crime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00035",
+                  "C) Révélation de l’existence du crime",
+                ),
+              ),
               _Paragraph(
-                "Toutes les modalités de dénonciation sont admissibles. L’obligation porte sur la révélation des faits eux-mêmes : "
-                "elle ne suppose pas de dénoncer l’identité de l’auteur, du complice ou son lieu de résidence.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00036",
+                      "Toutes les modalités de dénonciation sont admissibles. L’obligation porte sur la révélation des faits eux-mêmes : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00037",
+                      "elle ne suppose pas de dénoncer l’identité de l’auteur, du complice ou son lieu de résidence.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : l’obligation est de dénoncer le crime, et non l’identité des auteurs ou leur refuge. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00038",
+                      "Jurisprudence : l’obligation est de dénoncer le crime, et non l’identité des auteurs ou leur refuge. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 26 février 1959)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00039",
+                      "(Cass. crim., 26 février 1959)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -239,10 +397,24 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Objectif de la révélation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00040",
+                  "D) Objectif de la révélation",
+                ),
+              ),
               _Paragraph(
-                "L’information doit viser à prévenir un trouble à l’ordre public : prévenir ou limiter les effets du crime "
-                "(ex. tentative), et/ou éviter de nouveaux crimes (souvent via l’identification des auteurs).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00041",
+                      "L’information doit viser à prévenir un trouble à l’ordre public : prévenir ou limiter les effets du crime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00042",
+                      "(ex. tentative), et/ou éviter de nouveaux crimes (souvent via l’identification des auteurs).",
+                    ),
               ),
             ],
           ),
@@ -251,26 +423,55 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+              "f00043",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("S’abstenir volontairement de dénoncer"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00044",
+                  "S’abstenir volontairement de dénoncer",
+                ),
+              ),
               _Paragraph(
-                "La personne, consciente qu’un crime était en train de se commettre ou allait se produire, ne l’a pas dénoncé. "
-                "L’intention se déduit de la connaissance du crime et de l’absence de dénonciation. "
-                "Le mobile importe peu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00045",
+                      "La personne, consciente qu’un crime était en train de se commettre ou allait se produire, ne l’a pas dénoncé. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00046",
+                      "L’intention se déduit de la connaissance du crime et de l’absence de dénonciation. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00047",
+                      "Le mobile importe peu.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : conscience qu’un crime se commettait ou allait se produire + absence de dénonciation. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00048",
+                      "Jurisprudence : conscience qu’un crime se commettait ou allait se produire + absence de dénonciation. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 07 novembre 1990)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                      "f00049",
+                      "(Cass. crim., 07 novembre 1990)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -286,29 +487,45 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+              "f00050",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 434-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00051",
+                    "Article 434-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque le crime non dénoncé constitue une atteinte aux intérêts fondamentaux de la Nation "
-                      "ou un acte de terrorisme (trahison, espionnage, attentat, etc.).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                        "f00052",
+                        " : lorsque le crime non dénoncé constitue une atteinte aux intérêts fondamentaux de la Nation ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                        "f00053",
+                        "ou un acte de terrorisme (trahison, espionnage, attentat, etc.).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Dans ce cas, l’immunité familiale prévue pour l’article 434-1 ne s’applique pas.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00054",
+                  "Dans ce cas, l’immunité familiale prévue pour l’article 434-1 ne s’applique pas.",
+                ),
               ),
             ],
           ),
@@ -317,106 +534,208 @@ class PaNonDenonciationCrimePage extends StatelessWidget {
 
           // Répression + tentative/complicité + exceptions
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+              "f00055",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00056",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Forme simple : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00057",
+                    "Forme simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 434-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00058",
+                    "3 ans d’emprisonnement et 45 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00059",
+                    "article 434-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Forme aggravée : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
-                ),
-                TextSpan(
-                  text: "article 434-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00060",
+                    "Forme aggravée : ",
                   ),
                 ),
-                TextSpan(text: "."),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale possible — "),
                 TextSpan(
-                  text: "article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00061",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00062",
+                    "article 434-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00063",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00064",
+                    "Responsabilité pénale possible — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00065",
+                    "article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00066",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00067",
+                  "Tentative : NON.",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00068",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00069",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00070",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide/assistance, provocation, instructions). Exemple : inciter une personne à ne pas dénoncer un crime dont elle a été témoin.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                    "f00071",
+                    " (aide/assistance, provocation, instructions). Exemple : inciter une personne à ne pas dénoncer un crime dont elle a été témoin.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Immunité familiale & autres exceptions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00072",
+                  "Immunité familiale & autres exceptions",
+                ),
+              ),
               _NotaBox(
-                title: "IMMUNITÉ FAMILIALE",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00073",
+                  "IMMUNITÉ FAMILIALE",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Oui, sauf pour les crimes commis sur mineurs. L’incrimination ne s’applique pas aux proches de l’auteur/complice : "
-                        "parents en ligne directe et leurs conjoints, frères et sœurs et leurs conjoints, conjoint, concubin ou partenaire de PACS "
-                        "vivant notoirement en situation maritale.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                          "f00074",
+                          "Oui, sauf pour les crimes commis sur mineurs. L’incrimination ne s’applique pas aux proches de l’auteur/complice : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                          "f00075",
+                          "parents en ligne directe et leurs conjoints, frères et sœurs et leurs conjoints, conjoint, concubin ou partenaire de PACS ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                          "f00076",
+                          "vivant notoirement en situation maritale.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "AUTRES EXCEPTIONS",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                  "f00077",
+                  "AUTRES EXCEPTIONS",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les personnes astreintes au secret professionnel ne sont pas tenues de dénoncer le crime dont elles auraient connaissance. "
-                        "Celui qui a participé au crime est également excepté de l’obligation de dénonciation.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                          "f00078",
+                          "Les personnes astreintes au secret professionnel ne sont pas tenues de dénoncer le crime dont elles auraient connaissance. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart",
+                          "f00079",
+                          "Celui qui a participé au crime est également excepté de l’obligation de dénonciation.",
+                        ),
                   ),
                 ],
               ),

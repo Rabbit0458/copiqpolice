@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ProtocoleMorsurePage extends StatelessWidget {
   const ProtocoleMorsurePage({super.key});
@@ -78,10 +79,18 @@ class ProtocoleMorsurePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Intervention — Animal",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+            "f00002",
+            "Intervention — Animal",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -96,7 +105,11 @@ class ProtocoleMorsurePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Protocole sanitaire en cas de morsure",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00003",
+              "Protocole sanitaire en cas de morsure",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -107,16 +120,36 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "But du protocole",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00004",
+              "But du protocole",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tout animal ayant mordu ou griffé une personne doit être soumis à un protocole sanitaire, "
-                "afin de vérifier qu’il n’est pas porteur du virus de la rage.\n\n"
-                "Le suivi de la surveillance des animaux mordeurs ou griffeurs est enregistré auprès du gestionnaire "
-                "du fichier national d’identification des chiens, chats et furets.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00005",
+                      "Tout animal ayant mordu ou griffé une personne doit être soumis à un protocole sanitaire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00006",
+                      "afin de vérifier qu’il n’est pas porteur du virus de la rage.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00007",
+                      "Le suivi de la surveillance des animaux mordeurs ou griffeurs est enregistré auprès du gestionnaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00008",
+                      "du fichier national d’identification des chiens, chats et furets.",
+                    ),
               ),
             ],
           ),
@@ -125,34 +158,75 @@ class ProtocoleMorsurePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (comme demandé)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                lawSpan("Article L. 223-10 du C.R.P.M."),
-                const TextSpan(
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00010",
+                    "Article L. 223-10 du C.R.P.M.",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : impose la surveillance vétérinaire de tout animal ayant mordu ou griffé une personne, "
-                      "lorsqu’il est possible de s’en saisir sans l’abattre (aux frais du propriétaire/détenteur).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                        "f00011",
+                        " : impose la surveillance vétérinaire de tout animal ayant mordu ou griffé une personne, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                        "f00012",
+                        "lorsqu’il est possible de s’en saisir sans l’abattre (aux frais du propriétaire/détenteur).",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                lawSpan("Article R. 223-35 du C.R.P.M."),
-                const TextSpan(
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00013",
+                    "Article R. 223-35 du C.R.P.M.",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : pendant la période de surveillance, il est interdit de se dessaisir de l’animal, de le vacciner "
-                      "contre la rage, ou de l’abattre sans autorisation.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                        "f00014",
+                        " : pendant la période de surveillance, il est interdit de se dessaisir de l’animal, de le vacciner ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                        "f00015",
+                        "contre la rage, ou de l’abattre sans autorisation.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                lawSpan("Article R. 223-36 du C.R.P.M."),
-                const TextSpan(
-                  text:
-                      " : en cas d’animal mort/abattu, la tête ou le cadavre est adressé à un organisme ou laboratoire agréé.",
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00016",
+                    "Article R. 223-36 du C.R.P.M.",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00017",
+                    " : en cas d’animal mort/abattu, la tête ou le cadavre est adressé à un organisme ou laboratoire agréé.",
+                  ),
                 ),
               ]),
             ],
@@ -161,30 +235,67 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Conduite à tenir envers l’animal mordeur",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00018",
+              "II — Conduite à tenir envers l’animal mordeur",
+            ),
             cardColor: cardKnown,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) L’animal est connu"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00019",
+                  "A) L’animal est connu",
+                ),
+              ),
               _Paragraph(
-                "Même si l’animal n’est pas suspect de rage, dès lors qu’on peut s’en saisir sans l’abattre, "
-                "il doit être présenté à un vétérinaire sanitaire et placé sous surveillance pendant 15 jours. "
-                "Le statut vaccinal antirabique est vérifié (mais la surveillance reste obligatoire).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00020",
+                      "Même si l’animal n’est pas suspect de rage, dès lors qu’on peut s’en saisir sans l’abattre, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00021",
+                      "il doit être présenté à un vétérinaire sanitaire et placé sous surveillance pendant 15 jours. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00022",
+                      "Le statut vaccinal antirabique est vérifié (mais la surveillance reste obligatoire).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Les 3 visites obligatoires (même vétérinaire)"),
-              _IntroBullet(
-                text:
-                    "1ʳᵉ visite : dans les 24 h suivant la morsure (certificat provisoire).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00023",
+                  "Les 3 visites obligatoires (même vétérinaire)",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "2ᵉ visite : au plus tard 7 jours après la morsure (certificat provisoire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00024",
+                  "1ʳᵉ visite : dans les 24 h suivant la morsure (certificat provisoire).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "3ᵉ visite : 15 jours après la morsure (certificat définitif).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00025",
+                  "2ᵉ visite : au plus tard 7 jours après la morsure (certificat provisoire).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00026",
+                  "3ᵉ visite : 15 jours après la morsure (certificat définitif).",
+                ),
               ),
             ],
           ),
@@ -192,42 +303,87 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Certificats vétérinaires",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00027",
+              "Certificats vétérinaires",
+            ),
             cardColor: cardKnown,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "À chaque visite, un certificat justifiant l’exclusion de suspicion de rage est délivré. "
-                "Si l’animal présente des signes suspects, la vaccination antirabique de la personne mordue est engagée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00028",
+                      "À chaque visite, un certificat justifiant l’exclusion de suspicion de rage est délivré. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00029",
+                      "Si l’animal présente des signes suspects, la vaccination antirabique de la personne mordue est engagée.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Établissement en 5 exemplaires"),
-              _BulletPoint(
-                text:
-                    "3 exemplaires remis au propriétaire/détenteur (dont 1 à transmettre à la personne mordue et 1 à l’autorité investie des pouvoirs de police : le maire).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00030",
+                  "Établissement en 5 exemplaires",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "1 exemplaire adressé par le vétérinaire au directeur des services vétérinaires du département.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00031",
+                  "3 exemplaires remis au propriétaire/détenteur (dont 1 à transmettre à la personne mordue et 1 à l’autorité investie des pouvoirs de police : le maire).",
+                ),
               ),
               _BulletPoint(
-                text: "1 exemplaire conservé 1 an par le vétérinaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00032",
+                  "1 exemplaire adressé par le vétérinaire au directeur des services vétérinaires du département.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00033",
+                  "1 exemplaire conservé 1 an par le vétérinaire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Interdictions pendant la surveillance : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00034",
+                      "Interdictions pendant la surveillance : ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "se dessaisir / vacciner contre la rage / abattre sans autorisation",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00035",
+                      "se dessaisir / vacciner contre la rage / abattre sans autorisation",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  TextSpan(text: ". Référence : "),
                   TextSpan(
-                    text: "article R. 223-35 du C.R.P.M.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00036",
+                      ". Référence : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00037",
+                      "article R. 223-35 du C.R.P.M.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -242,14 +398,26 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "B) L’animal est inconnu ou en fuite",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00038",
+              "B) L’animal est inconnu ou en fuite",
+            ),
             cardColor: cardUnknown,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La personne mordue est orientée (via le médecin) vers un centre antirabique. "
-                "Le centre décide de l’attitude à adopter en fonction des risques potentiels de contamination.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00039",
+                      "La personne mordue est orientée (via le médecin) vers un centre antirabique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00040",
+                      "Le centre décide de l’attitude à adopter en fonction des risques potentiels de contamination.",
+                    ),
               ),
             ],
           ),
@@ -257,23 +425,44 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "C) L’animal est mort",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00041",
+              "C) L’animal est mort",
+            ),
             cardColor: cardDead,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La tête ou le cadavre des animaux mordeurs ou griffeurs abattus est adressé à un organisme ou laboratoire agréé. ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00042",
+                    "La tête ou le cadavre des animaux mordeurs ou griffeurs abattus est adressé à un organisme ou laboratoire agréé. ",
+                  ),
                 ),
-                lawSpan("Article R. 223-36 du C.R.P.M."),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00043",
+                    "Article R. 223-36 du C.R.P.M.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "En attendant les résultats, la vaccination contre la rage de la personne mordue est débutée, "
-                "puis arrêtée si la contamination est écartée.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00044",
+                      "En attendant les résultats, la vaccination contre la rage de la personne mordue est débutée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00045",
+                      "puis arrêtée si la contamination est écartée.",
+                    ),
               ),
             ],
           ),
@@ -281,42 +470,76 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Mesures spécifiques applicables aux chiens mordeurs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00046",
+              "III — Mesures spécifiques applicables aux chiens mordeurs",
+            ),
             cardColor: cardDogs,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "Tout fait de morsure d’une personne par un chien doit être déclaré au maire par le propriétaire/détenteur "
-                      "ou par tout professionnel en ayant connaissance (vétérinaire, médecin, policier, pompier…). ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                        "f00047",
+                        "Tout fait de morsure d’une personne par un chien doit être déclaré au maire par le propriétaire/détenteur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                        "f00048",
+                        "ou par tout professionnel en ayant connaissance (vétérinaire, médecin, policier, pompier…). ",
+                      ),
                 ),
-                lawSpan("Article L. 211-14-2 du C.R.P.M."),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00049",
+                    "Article L. 211-14-2 du C.R.P.M.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Le chien est soumis, pendant la surveillance, à une évaluation comportementale par un vétérinaire habilité (communiquée au maire).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00050",
+                  "Le chien est soumis, pendant la surveillance, à une évaluation comportementale par un vétérinaire habilité (communiquée au maire).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le maire (ou à défaut le préfet) peut imposer une formation et une attestation d’aptitude au propriétaire/détenteur.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00051",
+                  "Le maire (ou à défaut le préfet) peut imposer une formation et une attestation d’aptitude au propriétaire/détenteur.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "En cas de non-respect : placement en fourrière possible ; en cas de danger grave et immédiat, euthanasie possible après avis vétérinaire.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00052",
+                  "En cas de non-respect : placement en fourrière possible ; en cas de danger grave et immédiat, euthanasie possible après avis vétérinaire.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le refus d’exécuter l’arrêté municipal de placement constitue une contravention de 1ʳᵉ classe : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00053",
+                      "Le refus d’exécuter l’arrêté municipal de placement constitue une contravention de 1ʳᵉ classe : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article R. 610-5 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00054",
+                      "article R. 610-5 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -331,50 +554,114 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Infractions liées au protocole (repères)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00055",
+              "IV — Infractions liées au protocole (repères)",
+            ),
             cardColor: cardInfra,
             accent: accentOrange,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Repères opérationnels (codes internes + libellés) pour identifier les manquements fréquents "
-                "pendant la période de surveillance.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00056",
+                      "Repères opérationnels (codes internes + libellés) pour identifier les manquements fréquents ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                      "f00057",
+                      "pendant la période de surveillance.",
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle(
-                "Manquements pendant la surveillance vétérinaire",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00058",
+                  "Manquements pendant la surveillance vétérinaire",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "20785 — Absence de visite vétérinaire obligatoire pendant la période de surveillance (rage).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00059",
+                  "20785 — Absence de visite vétérinaire obligatoire pendant la période de surveillance (rage).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "20786 — Dessaisissement non autorisé de l’animal pendant la période de surveillance (rage).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00060",
+                  "20786 — Dessaisissement non autorisé de l’animal pendant la période de surveillance (rage).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "20787 — Vaccination non autorisée de l’animal pendant la période de surveillance (rage).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00061",
+                  "20787 — Vaccination non autorisée de l’animal pendant la période de surveillance (rage).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "20788 — Abattage non autorisé de l’animal pendant la période de surveillance (rage).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00062",
+                  "20788 — Abattage non autorisé de l’animal pendant la période de surveillance (rage).",
+                ),
               ),
 
               const SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(text: "Fondements cités : "),
-                lawSpan("L. 223-10"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00063",
+                    "Fondements cités : ",
+                  ),
+                ),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00064",
+                    "L. 223-10",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                lawSpan("R. 223-25 5°"),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00065",
+                    "R. 223-25 5°",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                lawSpan("R. 223-35"),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00066",
+                    "R. 223-35",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                lawSpan("R. 223-36"),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00067",
+                    "R. 223-36",
+                  ),
+                ),
                 const TextSpan(text: " du "),
-                lawSpan("C.R.P.M."),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                    "f00068",
+                    "C.R.P.M.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -383,18 +670,28 @@ class ProtocoleMorsurePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+              "f00069",
+              "Tentative & complicité",
+            ),
             cardColor: cardSynth,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Tentative : en pratique NON (contraventions et obligations administratives : pas de tentative punissable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00070",
+                  "Tentative : en pratique NON (contraventions et obligations administratives : pas de tentative punissable).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complicité : en principe NON pour les contraventions (la complicité vise surtout crimes et délits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/protocole_morsure_page.dart",
+                  "f00071",
+                  "Complicité : en principe NON pour les contraventions (la complicité vise surtout crimes et délits).",
+                ),
               ),
             ],
           ),
@@ -650,9 +947,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

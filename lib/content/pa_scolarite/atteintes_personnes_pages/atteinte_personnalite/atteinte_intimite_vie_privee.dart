@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
   const PaAtteinteIntimiteViePriveePage({super.key});
@@ -59,10 +60,18 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteinte à la personnalité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+            "f00002",
+            "Atteinte à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’atteinte à l’intimité de la vie privée",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+              "f00003",
+              "L’atteinte à l’intimité de la vie privée",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,28 +102,51 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
 
           // Définition / faits visés
           _ConditionCard(
-            title: "Définition — faits visés",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+              "f00004",
+              "Définition — faits visés",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Constituent des infractions :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00005",
+                  "Constituent des infractions :",
+                ),
+              ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "la captation, l’enregistrement ou la transmission, sans son consentement, des paroles d’une personne prononcées à titre privé ou confidentiel.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00006",
+                  "la captation, l’enregistrement ou la transmission, sans son consentement, des paroles d’une personne prononcées à titre privé ou confidentiel.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "la fixation, l’enregistrement ou la transmission, sans son consentement, de l’image d’une personne se trouvant dans un lieu privé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00007",
+                  "la fixation, l’enregistrement ou la transmission, sans son consentement, de l’image d’une personne se trouvant dans un lieu privé.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "la captation, l’enregistrement ou la transmission de la localisation (en temps réel ou en différé) d’une personne, sans son consentement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00008",
+                  "la captation, l’enregistrement ou la transmission de la localisation (en temps réel ou en différé) d’une personne, sans son consentement.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La conservation, l’utilisation ou la divulgation d’un document ou d’un enregistrement issu de ces agissements constitue également une infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00009",
+                  "La conservation, l’utilisation ou la divulgation d’un document ou d’un enregistrement issu de ces agissements constitue également une infraction.",
+                ),
               ),
             ],
           ),
@@ -119,36 +155,48 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (comme demandé)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00011",
+                    "Article 226-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les atteintes à l’intimité de la vie privée d’une personne.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00012",
+                    " : définit et réprime les atteintes à l’intimité de la vie privée d’une personne.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00013",
+                    "Article 226-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la conservation, la diffusion ou l’utilisation de tout document ou enregistrement obtenu à l’aide d’une atteinte à l’intimité de la vie privée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00014",
+                    " : définit et réprime la conservation, la diffusion ou l’utilisation de tout document ou enregistrement obtenu à l’aide d’une atteinte à l’intimité de la vie privée.",
+                  ),
                 ),
               ]),
             ],
@@ -158,53 +206,147 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Au moyen d’un procédé quelconque"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00016",
+                  "A) Au moyen d’un procédé quelconque",
+                ),
+              ),
               _Paragraph(
-                "Sont visés toutes les méthodes permettant de parvenir au résultat recherché : "
-                "dispositifs techniques (appareils, logiciels, balises…) mais aussi procédés ne faisant pas appel à un appareil.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00017",
+                      "Sont visés toutes les méthodes permettant de parvenir au résultat recherché : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00018",
+                      "dispositifs techniques (appareils, logiciels, balises…) mais aussi procédés ne faisant pas appel à un appareil.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Captation / enregistrement / transmission des paroles privées ou confidentielles",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00019",
+                  "B) Captation / enregistrement / transmission des paroles privées ou confidentielles",
+                ),
               ),
 
               SizedBox(height: 6),
-              _SubTitle("• La captation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00020",
+                  "• La captation",
+                ),
+              ),
               _Paragraph(
-                "Le Code pénal vise notamment l’audition par un ou des tiers, grâce à des moyens techniques appropriés, "
-                "de conversations (par ex. téléphoniques). Sont également concernés les propos tenus de vive voix alors "
-                "que le locuteur est éloigné de toute oreille indiscrète, mais rendus audibles par des moyens clandestins "
-                "de captation ou d’amplification.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00021",
+                      "Le Code pénal vise notamment l’audition par un ou des tiers, grâce à des moyens techniques appropriés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00022",
+                      "de conversations (par ex. téléphoniques). Sont également concernés les propos tenus de vive voix alors ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00023",
+                      "que le locuteur est éloigné de toute oreille indiscrète, mais rendus audibles par des moyens clandestins ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00024",
+                      "de captation ou d’amplification.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("• L’enregistrement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00025",
+                  "• L’enregistrement",
+                ),
+              ),
               _Paragraph(
-                "C’est le fait d’enregistrer, au moyen d’un appareil quelconque, des paroles prononcées à titre privé. "
-                "L’infraction est constituée quels que soient les résultats techniques : elle peut l’être même si les propos "
-                "enregistrés sont inaudibles.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00026",
+                      "C’est le fait d’enregistrer, au moyen d’un appareil quelconque, des paroles prononcées à titre privé. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00027",
+                      "L’infraction est constituée quels que soient les résultats techniques : elle peut l’être même si les propos ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00028",
+                      "enregistrés sont inaudibles.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("• La transmission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00029",
+                  "• La transmission",
+                ),
+              ),
               _Paragraph(
-                "Elle vise tout moyen permettant la mise à disposition, à un ou plusieurs destinataires avertis, "
-                "de la parole indûment captée. L’expédition d’un enregistrement matériel ou dématérialisé peut constituer cette transmission.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00030",
+                      "Elle vise tout moyen permettant la mise à disposition, à un ou plusieurs destinataires avertis, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00031",
+                      "de la parole indûment captée. L’expédition d’un enregistrement matériel ou dématérialisé peut constituer cette transmission.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("• Paroles « privées ou confidentielles »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00032",
+                  "• Paroles « privées ou confidentielles »",
+                ),
+              ),
               _Paragraph(
-                "Le délit est constitué dès lors que les paroles captées ou enregistrées ont été prononcées "
-                "dans un lieu privé ou public : l’important est qu’elles n’avaient pas vocation à être rendues publiques "
-                "(intimité ou volonté d’entourer les propos d’une part de secret).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00033",
+                      "Le délit est constitué dès lors que les paroles captées ou enregistrées ont été prononcées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00034",
+                      "dans un lieu privé ou public : l’important est qu’elles n’avaient pas vocation à être rendues publiques ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00035",
+                      "(intimité ou volonté d’entourer les propos d’une part de secret).",
+                    ),
               ),
 
               SizedBox(height: 10),
@@ -212,11 +354,23 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Jurisprudence : l’enregistrement de la parole ou de l’image d’une personne placée en garde à vue "
-                        "n’échappe pas ipso facto au champ d’application de l’atteinte à l’intimité de la vie privée ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00036",
+                          "Jurisprudence : l’enregistrement de la parole ou de l’image d’une personne placée en garde à vue ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00037",
+                          "n’échappe pas ipso facto au champ d’application de l’atteinte à l’intimité de la vie privée ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 21 avril 2020)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00038",
+                      "(Cass. crim., 21 avril 2020)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -228,23 +382,57 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("• Sans le consentement de la personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00039",
+                  "• Sans le consentement de la personne",
+                ),
+              ),
               _Paragraph(
-                "L’auteur des paroles n’a pas donné son accord pour qu’elles soient captées, enregistrées ou transmises. "
-                "À l’inverse, le consentement est présumé lorsque l’atteinte est accomplie au vu et au su de cette personne "
-                "sans qu’elle s’y soit opposée, alors même qu’elle pouvait le faire.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00040",
+                      "L’auteur des paroles n’a pas donné son accord pour qu’elles soient captées, enregistrées ou transmises. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00041",
+                      "À l’inverse, le consentement est présumé lorsque l’atteinte est accomplie au vu et au su de cette personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00042",
+                      "sans qu’elle s’y soit opposée, alors même qu’elle pouvait le faire.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Jurisprudence : l’infraction n’est pas caractérisée si l’acte est réalisé au vu et au su "
-                        "de la personne sans établir qu’elle s’y opposait ; la charge de la preuve ne pèse pas sur le prévenu "
-                        "mais sur le ministère public ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00043",
+                          "Jurisprudence : l’infraction n’est pas caractérisée si l’acte est réalisé au vu et au su ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00044",
+                          "de la personne sans établir qu’elle s’y opposait ; la charge de la preuve ne pèse pas sur le prévenu ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00045",
+                          "mais sur le ministère public ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 28 mars 2023)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00046",
+                      "(Cass. crim., 28 mars 2023)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -259,11 +447,23 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Dans le cas d’un mineur, le consentement doit émaner des titulaires de l’autorité parentale "
-                        "dans le respect de ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00047",
+                          "Dans le cas d’un mineur, le consentement doit émaner des titulaires de l’autorité parentale ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00048",
+                          "dans le respect de ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 372-1 du Code civil",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00049",
+                      "l’article 372-1 du Code civil",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -276,53 +476,130 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
               SizedBox(height: 16),
 
               _SubTitle(
-                "C) Fixation / enregistrement / transmission de l’image d’une personne en un lieu privé",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00050",
+                  "C) Fixation / enregistrement / transmission de l’image d’une personne en un lieu privé",
+                ),
               ),
               _Paragraph(
-                "Toute personne a le droit d’interdire la reproduction, sans autorisation, de son image : "
-                "elle constitue le prolongement de sa personnalité. Ce droit vaut que la personne soit anonyme ou publique.",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("• La fixation"),
-              _Paragraph(
-                "Cela inclut le recours aux appareils photos ou caméras vidéo.",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("• L’enregistrement"),
-              _Paragraph(
-                "L’image fixe ou animée est sauvegardée sur tout type de support (numérique ou technologies plus anciennes).",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("• La transmission"),
-              _Paragraph(
-                "Tout transfert du support de l’image illicite vers un ou des tiers avertis tombe sous le coup de cette incrimination.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00051",
+                      "Toute personne a le droit d’interdire la reproduction, sans autorisation, de son image : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00052",
+                      "elle constitue le prolongement de sa personnalité. Ce droit vaut que la personne soit anonyme ou publique.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("• De l’image d’une personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00053",
+                  "• La fixation",
+                ),
+              ),
               _Paragraph(
-                "Est exclue la photographie du lieu de vie d’une personne ou de biens, même prise sans consentement : "
-                "c’est bien l’image de la personne qui est visée.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00054",
+                  "Cela inclut le recours aux appareils photos ou caméras vidéo.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("• En un lieu privé"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00055",
+                  "• L’enregistrement",
+                ),
+              ),
               _Paragraph(
-                "Le champ de l’infraction est restreint : le lieu privé n’est pas ouvert à tous, sauf autorisation de celui "
-                "qui l’occupe de manière permanente ou temporaire.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00056",
+                  "L’image fixe ou animée est sauvegardée sur tout type de support (numérique ou technologies plus anciennes).",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00057",
+                  "• La transmission",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00058",
+                  "Tout transfert du support de l’image illicite vers un ou des tiers avertis tombe sous le coup de cette incrimination.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00059",
+                  "• De l’image d’une personne",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00060",
+                      "Est exclue la photographie du lieu de vie d’une personne ou de biens, même prise sans consentement : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00061",
+                      "c’est bien l’image de la personne qui est visée.",
+                    ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00062",
+                  "• En un lieu privé",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00063",
+                      "Le champ de l’infraction est restreint : le lieu privé n’est pas ouvert à tous, sauf autorisation de celui ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00064",
+                      "qui l’occupe de manière permanente ou temporaire.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : le lieu privé est un endroit non ouvert à tous sauf autorisation ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00065",
+                      "Jurisprudence : le lieu privé est un endroit non ouvert à tous sauf autorisation ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 28 novembre 2006)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00066",
+                      "(Cass. crim., 28 novembre 2006)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -333,30 +610,73 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La notion de lieu privé s’apprécie au cas par cas (exemples admis) :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00067",
+                  "La notion de lieu privé s’apprécie au cas par cas (exemples admis) :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Une chambre d’hôpital."),
-              _BulletPoint(text: "Une prison."),
-              _BulletPoint(text: "Un commissariat."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00068",
+                  "Une chambre d’hôpital.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00069",
+                  "Une prison.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00070",
+                  "Un commissariat.",
+                ),
+              ),
 
               SizedBox(height: 12),
-              _SubTitle("• Sans le consentement de la personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00071",
+                  "• Sans le consentement de la personne",
+                ),
+              ),
               _Paragraph(
-                "On retrouve les mêmes principes que pour les paroles, y compris lorsqu’il s’agit d’un mineur.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00072",
+                  "On retrouve les mêmes principes que pour les paroles, y compris lorsqu’il s’agit d’un mineur.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Ne tombent pas sous le coup de cet article :\n",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00073",
+                      "Ne tombent pas sous le coup de cet article :\n",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "• procédé photo police/gendarmerie pour matérialité d’un excès de vitesse ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00074",
+                      "• procédé photo police/gendarmerie pour matérialité d’un excès de vitesse ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. 2e civ., 29 juin 1988)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00075",
+                      "(Cass. 2e civ., 29 juin 1988)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -364,11 +684,18 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• prise de photos dans le cadre de la signalisation anthropométrique à l’occasion d’une enquête judiciaire ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00076",
+                      "• prise de photos dans le cadre de la signalisation anthropométrique à l’occasion d’une enquête judiciaire ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 18 décembre 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00077",
+                      "(Cass. crim., 18 décembre 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -381,34 +708,100 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
               SizedBox(height: 16),
 
               _SubTitle(
-                "D) Captation / enregistrement / transmission de la localisation (temps réel ou différé) sans consentement",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00078",
+                  "D) Captation / enregistrement / transmission de la localisation (temps réel ou différé) sans consentement",
+                ),
               ),
-              _SubTitle("• La captation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00079",
+                  "• La captation",
+                ),
+              ),
               _Paragraph(
-                "Tout dispositif technique est envisageable : placement clandestin d’une balise sur une personne ou un véhicule, "
-                "installation d’un logiciel espion sur un moyen de communication mobile, etc.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00080",
+                      "Tout dispositif technique est envisageable : placement clandestin d’une balise sur une personne ou un véhicule, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00081",
+                      "installation d’un logiciel espion sur un moyen de communication mobile, etc.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("• L’enregistrement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00082",
+                  "• L’enregistrement",
+                ),
+              ),
               _Paragraph(
-                "Les données de localisation (positionnement, éventuellement horodatage) sont stockées sur tout support.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00083",
+                  "Les données de localisation (positionnement, éventuellement horodatage) sont stockées sur tout support.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("• La transmission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00084",
+                  "• La transmission",
+                ),
+              ),
               _Paragraph(
-                "Les données sont mises à disposition d’un ou de plusieurs tiers avertis. "
-                "Peu importe que cela s’opère en temps réel, en différé ou en un seul bloc.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00085",
+                      "Les données sont mises à disposition d’un ou de plusieurs tiers avertis. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00086",
+                      "Peu importe que cela s’opère en temps réel, en différé ou en un seul bloc.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("• Localisation temps réel ou différé"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00087",
+                  "• Localisation temps réel ou différé",
+                ),
+              ),
               _Paragraph(
-                "Le niveau de précision importe peu : relais de communication ou GPS précis.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00088",
+                  "Le niveau de précision importe peu : relais de communication ou GPS précis.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("• Sans le consentement de la personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00089",
+                  "• Sans le consentement de la personne",
+                ),
+              ),
               _Paragraph(
-                "La personne n’a pas donné son accord à la localisation. La présomption de consentement prévue pour "
-                "les paroles et l’image ne s’applique pas à la localisation, car elle est très facilement clandestine.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00090",
+                      "La personne n’a pas donné son accord à la localisation. La présomption de consentement prévue pour ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00091",
+                      "les paroles et l’image ne s’applique pas à la localisation, car elle est très facilement clandestine.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -416,12 +809,28 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le consentement doit émaner des titulaires de l’autorité parentale. "
-                        "Il suffit de l’opposition de l’un d’eux pour rendre la localisation illicite, "
-                        "dans le respect de ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00092",
+                          "Le consentement doit émaner des titulaires de l’autorité parentale. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00093",
+                          "Il suffit de l’opposition de l’un d’eux pour rendre la localisation illicite, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00094",
+                          "dans le respect de ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 372-1 du Code civil",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00095",
+                      "l’article 372-1 du Code civil",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -434,28 +843,78 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
               SizedBox(height: 16),
 
               _SubTitle(
-                "E) Conservation / divulgation / utilisation d’un document ou enregistrement obtenu par atteinte à la vie privée",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00096",
+                  "E) Conservation / divulgation / utilisation d’un document ou enregistrement obtenu par atteinte à la vie privée",
+                ),
               ),
               _Paragraph(
-                "Il s’agit d’une infraction de conséquence : le « produit » des atteintes prévues par l’incrimination principale. "
-                "Le terme « document » inclut tous supports, y compris ceux liés au suivi géographique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00097",
+                      "Il s’agit d’une infraction de conséquence : le « produit » des atteintes prévues par l’incrimination principale. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00098",
+                      "Le terme « document » inclut tous supports, y compris ceux liés au suivi géographique.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("• La conservation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00099",
+                  "• La conservation",
+                ),
+              ),
               _Paragraph(
-                "Indépendamment de toute divulgation ou utilisation, le simple fait de garder à disposition le produit "
-                "de l’atteinte est réprimé (prévention de publication, chantage ultérieur, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00100",
+                      "Indépendamment de toute divulgation ou utilisation, le simple fait de garder à disposition le produit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00101",
+                      "de l’atteinte est réprimé (prévention de publication, chantage ultérieur, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("• L’utilisation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00102",
+                  "• L’utilisation",
+                ),
+              ),
               _Paragraph(
-                "Elle peut avoir lieu en public ou non : par exemple l’usage d’enregistrements illicites dans une procédure de divorce.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00103",
+                  "Elle peut avoir lieu en public ou non : par exemple l’usage d’enregistrements illicites dans une procédure de divorce.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("• La diffusion"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00104",
+                  "• La diffusion",
+                ),
+              ),
               _Paragraph(
-                "Est punissable la divulgation au sens large : presse, radio, télévision (objectif grand public) ou simple "
-                "communication à un tiers jusqu’alors ignorant la nature de ce qui est dévoilé.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00105",
+                      "Est punissable la divulgation au sens large : presse, radio, télévision (objectif grand public) ou simple ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00106",
+                      "communication à un tiers jusqu’alors ignorant la nature de ce qui est dévoilé.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -463,11 +922,23 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Quand l’infraction est commise par voie de presse écrite ou audiovisuelle, des règles particulières "
-                        "s’appliquent pour la détermination des responsables, avec notamment une hiérarchie prévue par ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00107",
+                          "Quand l’infraction est commise par voie de presse écrite ou audiovisuelle, des règles particulières ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                          "f00108",
+                          "s’appliquent pour la détermination des responsables, avec notamment une hiérarchie prévue par ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 42 de la loi du 29 juillet 1881",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00109",
+                      "l’article 42 de la loi du 29 juillet 1881",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -483,23 +954,53 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+              "f00110",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Conscience de se livrer à un acte illicite"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00111",
+                  "A) Conscience de se livrer à un acte illicite",
+                ),
+              ),
               _Paragraph(
-                "L’auteur sait que les paroles ont vocation à demeurer dans un cercle restreint (voire à rester secrètes). "
-                "Pour les images, il a connaissance de la nature privée du lieu où il procède à l’atteinte.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00112",
+                      "L’auteur sait que les paroles ont vocation à demeurer dans un cercle restreint (voire à rester secrètes). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00113",
+                      "Pour les images, il a connaissance de la nature privée du lieu où il procède à l’atteinte.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Volonté de porter atteinte à la vie privée d’autrui",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00114",
+                  "B) Volonté de porter atteinte à la vie privée d’autrui",
+                ),
               ),
               _Paragraph(
-                "L’auteur décide de ne pas respecter la vie privée de la victime, quelle que soit sa motivation "
-                "(enrichissement, règlement de compte, volonté de nuire, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00115",
+                      "L’auteur décide de ne pas respecter la vie privée de la victime, quelle que soit sa motivation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                      "f00116",
+                      "(enrichissement, règlement de compte, volonté de nuire, etc.).",
+                    ),
               ),
             ],
           ),
@@ -508,57 +1009,73 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+              "f00117",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-1 alinéa 7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00118",
+                    "Article 226-1 alinéa 7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque les faits sont commis par le conjoint, le concubin, ou le partenaire lié par un PACS.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00119",
+                  "Lorsque les faits sont commis par le conjoint, le concubin, ou le partenaire lié par un PACS.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-1 alinéa 8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00120",
+                    "Article 226-1 alinéa 8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque les faits sont commis au préjudice d’une personne dépositaire de l’autorité publique, chargée d’une mission de service public, titulaire d’un mandat électif public, candidate à un tel mandat ou d’un membre de sa famille.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00121",
+                  "Lorsque les faits sont commis au préjudice d’une personne dépositaire de l’autorité publique, chargée d’une mission de service public, titulaire d’un mandat électif public, candidate à un tel mandat ou d’un membre de sa famille.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-2-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00122",
+                    "Article 226-2-1 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque les faits portent sur des paroles ou des images présentant un caractère sexuel prises dans un lieu public ou privé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00123",
+                  "Lorsque les faits portent sur des paroles ou des images présentant un caractère sexuel prises dans un lieu public ou privé.",
+                ),
               ),
             ],
           ),
@@ -567,119 +1084,205 @@ class PaAtteinteIntimiteViePriveePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+              "f00124",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00125",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Atteinte simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 45 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00126",
+                    "Atteinte simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00127",
+                    "1 an d’emprisonnement et 45 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00128",
+                    "article 226-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Conservation / diffusion / utilisation : ",
-                ),
-                TextSpan(
-                  text: "1 an d’emprisonnement et 45 000 € d’amende — ",
-                ),
-                TextSpan(
-                  text: "article 226-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00129",
+                    "Conservation / diffusion / utilisation : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00130",
+                    "1 an d’emprisonnement et 45 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00131",
+                    "article 226-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Formes aggravées : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 60 000 € d’amende — ",
-                ),
-                TextSpan(
-                  text: "article 226-1 al. 7 et al. 8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00132",
+                    "Formes aggravées : ",
                   ),
                 ),
-                TextSpan(text: " ; et "),
                 TextSpan(
-                  text: "article 226-2-1 al. 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00133",
+                    "2 ans d’emprisonnement et 60 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00134",
+                    "article 226-1 al. 7 et al. 8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00135",
+                    " ; et ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00136",
+                    "article 226-2-1 al. 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00137",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 226-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00138",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00139",
+                    "l’article 226-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00140",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 226-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00141",
+                    "Tentative : OUI — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00142",
+                    "article 226-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00143",
+                    "Complicité : OUI — conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00144",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                    "f00145",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle suppose un fait constitutif de complicité prévu par la loi : aide et assistance, provocation ou instructions données.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart",
+                  "f00146",
+                  "Elle suppose un fait constitutif de complicité prévu par la loi : aide et assistance, provocation ou instructions données.",
+                ),
               ),
             ],
           ),

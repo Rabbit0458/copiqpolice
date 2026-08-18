@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConfrontationVictimeSuspectLibreEmprisonnementPage
     extends StatelessWidget {
@@ -57,7 +58,11 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Confrontation",
@@ -75,7 +80,11 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Confrontation victime / suspect (audition libre)\n(crime ou délit puni d’emprisonnement)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00002",
+              "PV — Confrontation victime / suspect (audition libre)\n(crime ou délit puni d’emprisonnement)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,15 +95,31 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Point clé avant l’acte",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00003",
+              "Point clé avant l’acte",
+            ),
             cardColor: cardCloture,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Une notification des droits (notamment le droit à l’assistance de l’avocat) doit être faite "
-                "à la personne entendue librement avant chaque audition.\n"
-                "Cette notification fait l’objet d’un procès-verbal distinct ou peut être insérée dans le PV de confrontation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00004",
+                      "Une notification des droits (notamment le droit à l’assistance de l’avocat) doit être faite ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00005",
+                      "à la personne entendue librement avant chaque audition.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00006",
+                      "Cette notification fait l’objet d’un procès-verbal distinct ou peut être insérée dans le PV de confrontation.",
+                    ),
               ),
             ],
           ),
@@ -103,32 +128,49 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
 
           // ✅ Élément légal en haut : visas CPP
           _ConditionCard(
-            title: "Visa des articles — assistance de l’avocat (CPP)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00007",
+              "Visa des articles — assistance de l’avocat (CPP)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Suspect entendu librement : "),
                 TextSpan(
-                  text:
-                      "articles 61-1, 63-4-3 et 63-4-4 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                    "f00008",
+                    "Suspect entendu librement : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                    "f00009",
+                    "articles 61-1, 63-4-3 et 63-4-4 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Victime : "),
                 TextSpan(
-                  text: "article 61-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                    "f00010",
+                    "Victime : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                    "f00011",
+                    "article 61-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -136,8 +178,11 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ces visas doivent apparaître avant le déroulement, pour encadrer immédiatement le régime de présence et d’intervention de l’avocat.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00012",
+                      "Ces visas doivent apparaître avant le déroulement, pour encadrer immédiatement le régime de présence et d’intervention de l’avocat.",
+                    ),
                   ),
                 ],
               ),
@@ -148,7 +193,11 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
 
           // Images CANVA (recto / verso)
           _ConditionCard(
-            title: "Modèle visuel (recto / verso)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00013",
+              "Modèle visuel (recto / verso)",
+            ),
             cardColor: cardCloture,
             accent: accentGrey,
             titleColor: textMain,
@@ -168,26 +217,68 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 → 3 — Lieu, instructions, cadre juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00014",
+              "1 → 3 — Lieu, instructions, cadre juridique",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de rédaction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00015",
+                  "1) Lieu de rédaction",
+                ),
+              ),
               _Paragraph(
-                "Le PV indique le lieu exact de rédaction (service / commune), comme tout acte de procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00016",
+                  "Le PV indique le lieu exact de rédaction (service / commune), comme tout acte de procédure.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00017",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.\n"
-                "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00018",
+                      "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00019",
+                      "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("3) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00020",
+                  "3) Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "L’APJ doit situer l’acte : enquête de flagrance ou enquête préliminaire.\n"
-                "Le cadre doit être clair dès le début car il conditionne la procédure.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00021",
+                      "L’APJ doit situer l’acte : enquête de flagrance ou enquête préliminaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00022",
+                      "Le cadre doit être clair dès le début car il conditionne la procédure.",
+                    ),
               ),
             ],
           ),
@@ -195,21 +286,53 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "5 → 6 — Assistants éventuels & personnes présentes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00023",
+              "5 → 6 — Assistants éventuels & personnes présentes",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("5) Assistants éventuels"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00024",
+                  "5) Assistants éventuels",
+                ),
+              ),
               _Paragraph(
-                "Cette précaution devient indispensable lorsqu’il existe un risque d’incident "
-                "ou un nombre important de personnes à confronter.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00025",
+                      "Cette précaution devient indispensable lorsqu’il existe un risque d’incident ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00026",
+                      "ou un nombre important de personnes à confronter.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("6) Personnes présentes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00027",
+                  "6) Personnes présentes",
+                ),
+              ),
               _Paragraph(
-                "Le PV précise l’identité des personnes mises en présence (victime / suspect) "
-                "et indique la présence ou non de leurs avocats.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00028",
+                      "Le PV précise l’identité des personnes mises en présence (victime / suspect) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00029",
+                      "et indique la présence ou non de leurs avocats.",
+                    ),
               ),
             ],
           ),
@@ -217,22 +340,41 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "7 — Règles de bon déroulement",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00030",
+              "7 — Règles de bon déroulement",
+            ),
             cardColor: cardOperation,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquêteur conserve la direction exclusive de l’acte.\n"
-                "Il peut mettre fin à la confrontation en cas de difficulté.\n"
-                "Mention doit être faite de tout incident, qu’il entraîne ou non l’interruption de l’acte.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00031",
+                      "L’enquêteur conserve la direction exclusive de l’acte.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00032",
+                      "Il peut mettre fin à la confrontation en cas de difficulté.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00033",
+                      "Mention doit être faite de tout incident, qu’il entraîne ou non l’interruption de l’acte.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Bon réflexe : rappeler dès le départ les règles (calme, pas d’interruption, prise de parole sur invitation).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00034",
+                      "Bon réflexe : rappeler dès le départ les règles (calme, pas d’interruption, prise de parole sur invitation).",
+                    ),
                   ),
                 ],
               ),
@@ -242,37 +384,78 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "8 → 9 — Opération & questions / réponses",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00035",
+              "8 → 9 — Opération & questions / réponses",
+            ),
             cardColor: cardOperation,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("8) Opération"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00036",
+                  "8) Opération",
+                ),
+              ),
               _Paragraph(
-                "Il est fait lecture des déclarations en présence de toutes les parties.\n"
-                "La confrontation est une audition contradictoire : les personnes s’expriment sur les contradictions relevées, portées à leur connaissance.\n"
-                "À aucun moment elles ne communiquent entre elles : elles s’adressent exclusivement à l’enquêteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00037",
+                      "Il est fait lecture des déclarations en présence de toutes les parties.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00038",
+                      "La confrontation est une audition contradictoire : les personnes s’expriment sur les contradictions relevées, portées à leur connaissance.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00039",
+                      "À aucun moment elles ne communiquent entre elles : elles s’adressent exclusivement à l’enquêteur.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("9) Questions — réponses"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00040",
+                  "9) Questions — réponses",
+                ),
+              ),
               _Paragraph(
-                "Deux types de questionnement (séparés ou conjoints) :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00041",
+                  "Deux types de questionnement (séparés ou conjoints) :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Question posée à tous : chaque personne répond à son tour.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00042",
+                  "Question posée à tous : chaque personne répond à son tour.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Questions alternées : une question à chaque partie à tour de rôle, en présence de l’autre (seule la personne interrogée répond).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00043",
+                  "Questions alternées : une question à chaque partie à tour de rôle, en présence de l’autre (seule la personne interrogée répond).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Objectif : consigner les contradictions clairement, point par point, sur un même PV.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00044",
+                      "Objectif : consigner les contradictions clairement, point par point, sur un même PV.",
+                    ),
                   ),
                 ],
               ),
@@ -282,16 +465,36 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "10 — Questions des avocats & observations écrites",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00045",
+              "10 — Questions des avocats & observations écrites",
+            ),
             cardColor: cardAvocats,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les avocats peuvent poser des questions au suspect et/ou à la victime à l’issue de la confrontation.\n"
-                "L’enquêteur peut s’opposer aux questions si elles lui semblent de nature à nuire au bon déroulement de l’enquête : "
-                "mention du refus devra être faite.\n"
-                "Les avocats peuvent formuler des observations écrites à la fin de la confrontation et les remettre à l’enquêteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00046",
+                      "Les avocats peuvent poser des questions au suspect et/ou à la victime à l’issue de la confrontation.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00047",
+                      "L’enquêteur peut s’opposer aux questions si elles lui semblent de nature à nuire au bon déroulement de l’enquête : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00048",
+                      "mention du refus devra être faite.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00049",
+                      "Les avocats peuvent formuler des observations écrites à la fin de la confrontation et les remettre à l’enquêteur.",
+                    ),
               ),
             ],
           ),
@@ -299,26 +502,68 @@ class ConfrontationVictimeSuspectLibreEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "11 → 13 — Clôture, annexe, avis O.P.J.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+              "f00050",
+              "11 → 13 — Clôture, annexe, avis O.P.J.",
+            ),
             cardColor: cardCloture,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("11) Énonciation terminale (clôture)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00051",
+                  "11) Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Après lecture, l’agent de police judiciaire fait signer les personnes entendues "
-                "et mentionne l’heure de fin de la confrontation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00052",
+                      "Après lecture, l’agent de police judiciaire fait signer les personnes entendues ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00053",
+                      "et mentionne l’heure de fin de la confrontation.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("12) Annexe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00054",
+                  "12) Annexe",
+                ),
+              ),
               _Paragraph(
-                "Le cas échéant, les observations écrites présentées par le ou les avocats sont jointes au présent PV.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00055",
+                  "Le cas échéant, les observations écrites présentées par le ou les avocats sont jointes au présent PV.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("13) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00056",
+                  "13) Avis O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "L’O.P.J. doit être informé des déclarations faites lors de la confrontation "
-                "et des éventuelles observations écrites.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00057",
+                      "L’O.P.J. doit être informé des déclarations faites lors de la confrontation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                      "f00058",
+                      "et des éventuelles observations écrites.",
+                    ),
               ),
             ],
           ),
@@ -574,9 +819,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -641,8 +884,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+        "f00059",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+        "f00060",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -815,7 +1066,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                    "f00061",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -884,7 +1139,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart",
+                  "f00062",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -912,7 +1171,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -947,7 +1208,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

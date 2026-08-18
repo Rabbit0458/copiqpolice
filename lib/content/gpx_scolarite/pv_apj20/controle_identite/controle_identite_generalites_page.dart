@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ControleIdentiteGeneralitesPage extends StatelessWidget {
   const ControleIdentiteGeneralitesPage({super.key});
@@ -55,10 +56,18 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrôles d’identité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+            "f00002",
+            "Contrôles d’identité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Généralités — cadre, cas et vérifications",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+              "f00003",
+              "Généralités — cadre, cas et vérifications",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,25 +98,44 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
 
           // Définition / rappel déontologique
           _ConditionCard(
-            title: "Définition & principe de dignité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+              "f00004",
+              "Définition & principe de dignité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le contrôle d’identité est l’opération par laquelle une personne est invitée à justifier "
-                "sur-le-champ de son identité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00005",
+                      "Le contrôle d’identité est l’opération par laquelle une personne est invitée à justifier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00006",
+                      "sur-le-champ de son identité.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Rappel",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le contrôle se déroule sans qu’il soit porté atteinte à la dignité de la personne qui en fait l’objet — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00007",
+                      "Le contrôle se déroule sans qu’il soit porté atteinte à la dignité de la personne qui en fait l’objet — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "art. R. 434-16 du C.S.I.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00008",
+                      "art. R. 434-16 du C.S.I.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -119,36 +151,48 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (base juridique)
           _ConditionCard(
-            title: "I — Base légale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+              "f00009",
+              "I — Base légale",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 78-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00010",
+                    "Article 78-1 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : toute personne sur le territoire national doit accepter de se prêter à un contrôle d’identité réalisé dans les conditions légales.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00011",
+                    " : toute personne sur le territoire national doit accepter de se prêter à un contrôle d’identité réalisé dans les conditions légales.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 78-2 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00012",
+                    "Article 78-2 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixe les principaux régimes du contrôle d’identité (judiciaire, réquisitions, préventif, zone frontière…).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00013",
+                    " : fixe les principaux régimes du contrôle d’identité (judiciaire, réquisitions, préventif, zone frontière…).",
+                  ),
                 ),
               ]),
             ],
@@ -158,96 +202,174 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
 
           // Cadre général
           _ConditionCard(
-            title: "II — Cadre général du contrôle d’identité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+              "f00014",
+              "II — Cadre général du contrôle d’identité",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Personnes concernées"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00015",
+                  "A) Personnes concernées",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Toute personne se trouvant sur le territoire national doit accepter de se prêter à un contrôle d’identité effectué légalement — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00016",
+                    "Toute personne se trouvant sur le territoire national doit accepter de se prêter à un contrôle d’identité effectué légalement — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "art. 78-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00017",
+                    "art. 78-1 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Autorités habilitées"),
-              const _Paragraph(
-                "Seuls certains personnels peuvent procéder à des contrôles d’identité, selon le cadre juridique.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00018",
+                  "B) Autorités habilitées",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00019",
+                  "Seuls certains personnels peuvent procéder à des contrôles d’identité, selon le cadre juridique.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Dans les cas prévus par le C.P.P. : O.P.J. et, sur leur ordre et sous leur responsabilité, A.P.J. et certains A.P.J. adjoints.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00020",
+                  "Dans les cas prévus par le C.P.P. : O.P.J. et, sur leur ordre et sous leur responsabilité, A.P.J. et certains A.P.J. adjoints.",
+                ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Certains cas spécifiques (ex. cadres prévus par les articles 78-2-2 et 78-2-4) concernent aussi des A.P.J. adjoints listés par le C.P.P. — références dans ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00021",
+                    "Certains cas spécifiques (ex. cadres prévus par les articles 78-2-2 et 78-2-4) concernent aussi des A.P.J. adjoints listés par le C.P.P. — références dans ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’art. 21-1° ter (C.P.P.)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00022",
+                    "l’art. 21-1° ter (C.P.P.)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Moyens de preuve de l’identité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00023",
+                  "C) Moyens de preuve de l’identité",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "La personne peut justifier de son identité ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00024",
+                    "La personne peut justifier de son identité ",
+                  ),
                 ),
                 TextSpan(
-                  text: "par tout moyen",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00025",
+                    "par tout moyen",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : const Color(0xFF0D47A1),
                   ),
                 ),
                 const TextSpan(text: " — "),
-                const TextSpan(
-                  text: "art. 78-2 (C.P.P.)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00026",
+                    "art. 78-2 (C.P.P.)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("• Documents officiels probants"),
-              const _IntroBullet(
-                text:
-                    "Documents officiels avec photographie et délivrance après procédure d’identification (CNI, passeport, permis de conduire…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00027",
+                  "• Documents officiels probants",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00028",
+                  "Documents officiels avec photographie et délivrance après procédure d’identification (CNI, passeport, permis de conduire…).",
+                ),
               ),
 
               const SizedBox(height: 10),
-              const _SubTitle("• Autres documents (commencement de preuve)"),
-              const _IntroBullet(
-                text:
-                    "Ex. carte d’électeur, certificat d’immatriculation, livret de famille… À apprécier selon les circonstances.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00029",
+                  "• Autres documents (commencement de preuve)",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00030",
+                  "Ex. carte d’électeur, certificat d’immatriculation, livret de famille… À apprécier selon les circonstances.",
+                ),
               ),
 
               const SizedBox(height: 12),
-              const _SubTitle("D) Recours à des témoignages"),
-              const _Paragraph(
-                "En cas de document non probant, ou en l’absence de pièce d’identité, la confirmation peut être obtenue "
-                "au moyen de témoignages concomitants au contrôle. Cette pratique reste à l’appréciation des policiers.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00031",
+                  "D) Recours à des témoignages",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00032",
+                      "En cas de document non probant, ou en l’absence de pièce d’identité, la confirmation peut être obtenue ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00033",
+                      "au moyen de témoignages concomitants au contrôle. Cette pratique reste à l’appréciation des policiers.",
+                    ),
               ),
             ],
           ),
@@ -256,93 +378,164 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
 
           // Cas dans lesquels on peut contrôler (structure claire)
           _ConditionCard(
-            title: "III — Cas de contrôle d’identité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+              "f00034",
+              "III — Cas de contrôle d’identité",
+            ),
             cardColor: cardCas,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Contrôles relevant de la police judiciaire"),
-              const _Paragraph.rich([
-                TextSpan(text: "Référence principale : "),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00035",
+                  "A) Contrôles relevant de la police judiciaire",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "art. 78-2 (alinéas 1 à 7) du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00036",
+                    "Référence principale : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00037",
+                    "art. 78-2 (alinéas 1 à 7) du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("1) À l’initiative des policiers"),
-              const _Paragraph.rich([
-                TextSpan(text: "Raisons plausibles de soupçonner ("),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00038",
+                  "1) À l’initiative des policiers",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "art. 78-2 (alinéas 2 à 6) du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00039",
+                    "Raisons plausibles de soupçonner (",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00040",
+                    "art. 78-2 (alinéas 2 à 6) du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ") :"),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Qu’elle a commis ou tenté de commettre une infraction (crime, délit ou contravention) — art. 78-2 al. 2.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00041",
+                  "Qu’elle a commis ou tenté de commettre une infraction (crime, délit ou contravention) — art. 78-2 al. 2.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Qu’elle se prépare à commettre un crime ou un délit — art. 78-2 al. 3 (ex. comportement anormal, fuite, changements brusques…).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00042",
+                  "Qu’elle se prépare à commettre un crime ou un délit — art. 78-2 al. 3 (ex. comportement anormal, fuite, changements brusques…).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Qu’elle est susceptible de fournir des renseignements utiles à l’enquête en cas de crime ou délit — art. 78-2 al. 4 (contraventions exclues).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00043",
+                  "Qu’elle est susceptible de fournir des renseignements utiles à l’enquête en cas de crime ou délit — art. 78-2 al. 4 (contraventions exclues).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Qu’elle a violé des obligations/interdictions (contrôle judiciaire, ARSE, peine/mesure suivie) — art. 78-2 al. 5.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00044",
+                  "Qu’elle a violé des obligations/interdictions (contrôle judiciaire, ARSE, peine/mesure suivie) — art. 78-2 al. 5.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Qu’elle fait l’objet de recherches ordonnées par une autorité judiciaire — art. 78-2 al. 6.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00045",
+                  "Qu’elle fait l’objet de recherches ordonnées par une autorité judiciaire — art. 78-2 al. 6.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("2) Sur réquisitions du procureur"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00046",
+                  "2) Sur réquisitions du procureur",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 78-2 al. 7 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00047",
+                    "Art. 78-2 al. 7 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : réquisitions écrites précisant les infractions à rechercher, les lieux et la période. "
-                      "Le contrôle vise toute personne présente dans le périmètre défini.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00048",
+                        " : réquisitions écrites précisant les infractions à rechercher, les lieux et la période. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00049",
+                        "Le contrôle vise toute personne présente dans le périmètre défini.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "Le fait que le contrôle révèle d’autres infractions que celles visées dans les réquisitions ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00050",
+                      "Le fait que le contrôle révèle d’autres infractions que celles visées dans les réquisitions ",
+                    ),
                   ),
                   TextSpan(
-                    text: "n’est pas une cause de nullité",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00051",
+                      "n’est pas une cause de nullité",
+                    ),
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
                       color: isDark ? Colors.white : const Color(0xFF0D47A1),
                     ),
                   ),
                   const TextSpan(text: " — "),
-                  const TextSpan(
-                    text: "art. 78-2 al. 7 (C.P.P.)",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00052",
+                      "art. 78-2 al. 7 (C.P.P.)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -354,113 +547,197 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Contrôles d’identité préventifs"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00053",
+                  "B) Contrôles d’identité préventifs",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 78-2 al. 8 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00054",
+                    "Art. 78-2 al. 8 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : l’identité de toute personne peut être contrôlée pour prévenir une atteinte à l’ordre public, "
-                      "notamment à la sécurité des personnes et des biens.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00055",
+                        " : l’identité de toute personne peut être contrôlée pour prévenir une atteinte à l’ordre public, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00056",
+                        "notamment à la sécurité des personnes et des biens.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Vise toute personne présente sur le lieu où le contrôle est mis en œuvre.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00057",
+                  "Vise toute personne présente sur le lieu où le contrôle est mis en œuvre.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le contrôle n’est pas strictement lié au comportement : il doit reposer sur des éléments objectifs de menace.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00058",
+                  "Le contrôle n’est pas strictement lié au comportement : il doit reposer sur des éléments objectifs de menace.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("Conditions usuelles"),
-              const _IntroBullet(
-                text:
-                    "Lieu : public ou ouvert au public (gare, bar, salle de spectacle, galerie marchande…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00059",
+                  "Conditions usuelles",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Temps : circonstances particulières (alertes, grands rassemblements…). La simple “zone propice” ne suffit pas.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00060",
+                  "Lieu : public ou ouvert au public (gare, bar, salle de spectacle, galerie marchande…).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00061",
+                  "Temps : circonstances particulières (alertes, grands rassemblements…). La simple “zone propice” ne suffit pas.",
+                ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("C) Contrôles en zone frontière"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00062",
+                  "C) Contrôles en zone frontière",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 78-2 al. 9 à 17 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00063",
+                    "Art. 78-2 al. 9 à 17 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : vérification du respect des obligations de détention, port et présentation de titres dans certaines zones (Schengen, ports/aéroports/gares, trains transnationaux, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00064",
+                    " : vérification du respect des obligations de détention, port et présentation de titres dans certaines zones (Schengen, ports/aéroports/gares, trains transnationaux, etc.).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _IntroBullet(
-                text:
-                    "Objectif : prévention/recherche d’infractions liées à la criminalité transfrontalière.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00065",
+                  "Objectif : prévention/recherche d’infractions liées à la criminalité transfrontalière.",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Caractère : non permanent (durée limitée) et aléatoire (non systématique).",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00066",
+                  "Caractère : non permanent (durée limitée) et aléatoire (non systématique).",
+                ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("D) Contrôles dans des locaux professionnels"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00067",
+                  "D) Contrôles dans des locaux professionnels",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 78-2-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00068",
+                    "Art. 78-2-1 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : sur réquisitions écrites du procureur (durée max 1 mois), pour vérifier notamment le travail dissimulé. "
-                      "Visent les personnes occupées dans l’entreprise (locaux à usage exclusivement professionnel).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00069",
+                        " : sur réquisitions écrites du procureur (durée max 1 mois), pour vérifier notamment le travail dissimulé. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00070",
+                        "Visent les personnes occupées dans l’entreprise (locaux à usage exclusivement professionnel).",
+                      ),
                 ),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "E) Visites de véhicules & inspection/fouille de bagages",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00071",
+                  "E) Visites de véhicules & inspection/fouille de bagages",
+                ),
               ),
-              const _Paragraph.rich([
-                TextSpan(text: "Cadre principal : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "art. 78-2-2 à 78-2-5 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00072",
+                    "Cadre principal : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00073",
+                    "art. 78-2-2 à 78-2-5 du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _IntroBullet(
-                text:
-                    "Sur réquisitions du procureur : contrôles + assistance OPJ pour visites véhicules et inspection/fouille bagages (selon cadres légaux).",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00074",
+                  "Sur réquisitions du procureur : contrôles + assistance OPJ pour visites véhicules et inspection/fouille bagages (selon cadres légaux).",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Crime/délit flagrant : assistance OPJ pour visite de véhicules (contrôle ID et bagages non prévus par ce cadre précis).",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00075",
+                  "Crime/délit flagrant : assistance OPJ pour visite de véhicules (contrôle ID et bagages non prévus par ce cadre précis).",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Prévention d’une atteinte grave : visite véhicule / inspection ou fouille bagages avec accord, sinon sur instructions du procureur (immobilisation/rétention max 30 min selon cas).",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00076",
+                  "Prévention d’une atteinte grave : visite véhicule / inspection ou fouille bagages avec accord, sinon sur instructions du procureur (immobilisation/rétention max 30 min selon cas).",
+                ),
               ),
             ],
           ),
@@ -469,40 +746,69 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
 
           // Vérification d'identité + situation
           _ConditionCard(
-            title: "IV — Vérifications (identité & situation)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+              "f00077",
+              "IV — Vérifications (identité & situation)",
+            ),
             cardColor: cardVerif,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Vérification d’identité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00078",
+                  "A) Vérification d’identité",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 78-3 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00079",
+                    "Art. 78-3 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : si la personne refuse ou ne peut justifier de son identité, elle peut être retenue sur place "
-                      "ou conduite au local pour vérification, et doit être présentée à un O.P.J.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00080",
+                        " : si la personne refuse ou ne peut justifier de son identité, elle peut être retenue sur place ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00081",
+                        "ou conduite au local pour vérification, et doit être présentée à un O.P.J.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Durée maximale : 4 heures (responsabilité exclusive de l’O.P.J.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00082",
+                  "Durée maximale : 4 heures (responsabilité exclusive de l’O.P.J.).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Droits possibles notifiés par un O.P.J. (ou A.P.J. sous contrôle d’un O.P.J.) : aviser le procureur, prévenir un proche, etc. — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00083",
+                      "Droits possibles notifiés par un O.P.J. (ou A.P.J. sous contrôle d’un O.P.J.) : aviser le procureur, prévenir un proche, etc. — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "art. 78-3 (C.P.P.)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                      "f00084",
+                      "art. 78-3 (C.P.P.)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -514,29 +820,50 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Vérification de situation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00085",
+                  "B) Vérification de situation",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 78-3-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                    "f00086",
+                    "Art. 78-3-1 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsqu’un contrôle/vérification révèle des raisons sérieuses de penser que le comportement peut être lié à des activités terroristes, "
-                      "une retenue peut être décidée même en présence d’un justificatif d’identité.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00087",
+                        " : lorsqu’un contrôle/vérification révèle des raisons sérieuses de penser que le comportement peut être lié à des activités terroristes, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                        "f00088",
+                        "une retenue peut être décidée même en présence d’un justificatif d’identité.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Responsabilité exclusive de l’O.P.J., sur place ou au local.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00089",
+                  "Responsabilité exclusive de l’O.P.J., sur place ou au local.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Durée maximale : 4 heures, limitée au temps nécessaire (consultation fichiers, contacts services, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/controle_identite_generalites_page.dart",
+                  "f00090",
+                  "Durée maximale : 4 heures, limitée au temps nécessaire (consultation fichiers, contacts services, etc.).",
+                ),
               ),
             ],
           ),

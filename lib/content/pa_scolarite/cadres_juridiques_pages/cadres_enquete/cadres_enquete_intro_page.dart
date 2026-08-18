@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -18,10 +19,12 @@ class PaCadresEnqueteIntroPage extends StatefulWidget {
   const PaCadresEnqueteIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/cadres_enquete_intro';
+  static const String routeName =
+      '/pa/dps_dpg/cadres_juridiques/cadres_enquete_intro';
 
   @override
-  State<PaCadresEnqueteIntroPage> createState() => _CadresEnqueteIntroPageState();
+  State<PaCadresEnqueteIntroPage> createState() =>
+      _CadresEnqueteIntroPageState();
 }
 
 class _CadresEnqueteIntroPageState extends State<PaCadresEnqueteIntroPage>
@@ -54,7 +57,11 @@ class _CadresEnqueteIntroPageState extends State<PaCadresEnqueteIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LES CADRES D\'ENQUÊTE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_intro_page.dart",
+    "f00001",
+    'LES CADRES D\'ENQUÊTE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -161,7 +168,11 @@ class _CadresEnqueteIntroPageState extends State<PaCadresEnqueteIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Comprendre les différents cadres d'enquête de la Police Nationale.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_intro_page.dart",
+                        "f00002",
+                        "Comprendre les différents cadres d'enquête de la Police Nationale.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -276,7 +287,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

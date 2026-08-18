@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PrelevementSanguinPage extends StatelessWidget {
   const PrelevementSanguinPage({super.key});
@@ -56,7 +57,11 @@ class PrelevementSanguinPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Alcool",
@@ -74,7 +79,11 @@ class PrelevementSanguinPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Prélèvement sanguin\nVérification de l’état alcoolique",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+              "f00002",
+              "PV — Prélèvement sanguin\nVérification de l’état alcoolique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,28 +95,53 @@ class PrelevementSanguinPage extends StatelessWidget {
 
           // Objectif
           _ConditionCard(
-            title: "Objectif du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+              "f00003",
+              "Objectif du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas guide la rédaction d’un procès-verbal de prélèvement sanguin destiné à établir la preuve "
-                "de l’état alcoolique lorsque la vérification par éthylomètre est impossible (ex : ivresse manifeste, état de santé, impossibilité technique).\n\n"
-                "Le prélèvement est réalisé par un praticien requis, avec scellés, fiches réglementaires et transmission au service compétent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00004",
+                      "Ce canevas guide la rédaction d’un procès-verbal de prélèvement sanguin destiné à établir la preuve ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00005",
+                      "de l’état alcoolique lorsque la vérification par éthylomètre est impossible (ex : ivresse manifeste, état de santé, impossibilité technique).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00006",
+                      "Le prélèvement est réalisé par un praticien requis, avec scellés, fiches réglementaires et transmission au service compétent.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Toujours préciser : lieu exact (service / hôpital), assistants, instructions O.P.J.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00007",
+                  "Toujours préciser : lieu exact (service / hôpital), assistants, instructions O.P.J.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Toujours tracer : réquisition, matériel remis, fiches A + B/C, scellés, transmission.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00008",
+                  "Toujours tracer : réquisition, matériel remis, fiches A + B/C, scellés, transmission.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Toujours assurer la concordance des informations (faits / comportement / examen).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00009",
+                  "Toujours assurer la concordance des informations (faits / comportement / examen).",
+                ),
               ),
             ],
           ),
@@ -116,38 +150,54 @@ class PrelevementSanguinPage extends StatelessWidget {
 
           // ✅ Cadre juridique en haut (avec articles en rouge)
           _ConditionCard(
-            title: "I — Cadre juridique (fondement)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+              "f00010",
+              "I — Cadre juridique (fondement)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les vérifications destinées à établir la preuve de l’état alcoolique peuvent être faites au moyen d’analyses et examens médicaux, cliniques et biologiques : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00011",
+                    "Les vérifications destinées à établir la preuve de l’état alcoolique peuvent être faites au moyen d’analyses et examens médicaux, cliniques et biologiques : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles L. 234-3 et suivants du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00012",
+                    "articles L. 234-3 et suivants du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text:
-                      "articles R. 3354-1 et suivants du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00013",
+                    "articles R. 3354-1 et suivants du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "En pratique, l’A.P.J. recourt au prélèvement sanguin lorsque le conducteur (ou l’accompagnateur de l’élève conducteur) "
-                "se trouve dans un état rendant impossible l’exécution des vérifications par éthylomètre (ex : ivresse manifeste).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00014",
+                      "En pratique, l’A.P.J. recourt au prélèvement sanguin lorsque le conducteur (ou l’accompagnateur de l’élève conducteur) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00015",
+                      "se trouve dans un état rendant impossible l’exécution des vérifications par éthylomètre (ex : ivresse manifeste).",
+                    ),
               ),
             ],
           ),
@@ -156,7 +206,11 @@ class PrelevementSanguinPage extends StatelessWidget {
 
           // Image CANVA
           _ConditionCard(
-            title: "Canevas (visuel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+              "f00016",
+              "Canevas (visuel)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -171,41 +225,81 @@ class PrelevementSanguinPage extends StatelessWidget {
 
           // 3 blocs pédagogiques “incontournables”
           _ConditionCard(
-            title: "Les 3 points indispensables",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+              "f00017",
+              "Les 3 points indispensables",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Réquisition régulière"),
-              _BulletPoint(
-                text:
-                    "Remettre au praticien une réquisition aux fins d’examen clinique médical et de prélèvement sanguin.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00018",
+                  "1) Réquisition régulière",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La réquisition doit être visée et annexée (copie conservée au dossier).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00019",
+                  "Remettre au praticien une réquisition aux fins d’examen clinique médical et de prélèvement sanguin.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00020",
+                  "La réquisition doit être visée et annexée (copie conservée au dossier).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Chaîne de conservation (scellés)"),
-              _BulletPoint(
-                text:
-                    "Deux tubes étiquetés, placés dans deux contenants identifiés et scellés par l’A.P.J. présent.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00021",
+                  "2) Chaîne de conservation (scellés)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Traçabilité complète : qui scelle, quand, où, et à qui les échantillons sont transmis.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00022",
+                  "Deux tubes étiquetés, placés dans deux contenants identifiés et scellés par l’A.P.J. présent.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00023",
+                  "Traçabilité complète : qui scelle, quand, où, et à qui les échantillons sont transmis.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Concordance des fiches"),
-              _BulletPoint(
-                text:
-                    "Fiche A (comportement) renseignée par l’A.P.J. ; examen clinique par le médecin ; analyse par le laboratoire/biologiste.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00024",
+                  "3) Concordance des fiches",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Vérifier la cohérence : faits reprochés ↔ résumé comportemental ↔ constatations médicales.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00025",
+                  "Fiche A (comportement) renseignée par l’A.P.J. ; examen clinique par le médecin ; analyse par le laboratoire/biologiste.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00026",
+                  "Vérifier la cohérence : faits reprochés ↔ résumé comportemental ↔ constatations médicales.",
+                ),
               ),
             ],
           ),
@@ -214,100 +308,193 @@ class PrelevementSanguinPage extends StatelessWidget {
 
           // Déroulé PV
           _ConditionCard(
-            title: "II — Déroulé chronologique (rédaction du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+              "f00027",
+              "II — Déroulé chronologique (rédaction du PV)",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1 — Lieu de vérification"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00028",
+                  "1 — Lieu de vérification",
+                ),
+              ),
               _Paragraph(
-                "Mentionner l’endroit exact où se situe l’équipage et où se déroule l’acte : service, centre hospitalier, unité d’accueil, etc.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00029",
+                  "Mentionner l’endroit exact où se situe l’équipage et où se déroule l’acte : service, centre hospitalier, unité d’accueil, etc.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2 — Instructions (flagrance)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00030",
+                  "2 — Instructions (flagrance)",
+                ),
+              ),
               _Paragraph(
-                "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00031",
+                  "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3 — Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00032",
+                  "3 — Assistants",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00033",
+                  "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4 — Cadre juridique (rappel)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00034",
+                  "4 — Cadre juridique (rappel)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Base légale : "),
                 TextSpan(
-                  text: "L. 234-3 et s. du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00035",
+                    "Base légale : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00036",
+                    "L. 234-3 et s. du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "R. 3354-1 et s. du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00037",
+                    "R. 3354-1 et s. du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("5 — Visa de la réquisition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00038",
+                  "5 — Visa de la réquisition",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Remettre au médecin (ou interne / étudiant en médecine autorisé / infirmier habilité) une réquisition aux fins d’examen clinique médical et de prélèvement sanguin : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00039",
+                    "Remettre au médecin (ou interne / étudiant en médecine autorisé / infirmier habilité) une réquisition aux fins d’examen clinique médical et de prélèvement sanguin : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 3354-5 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00040",
+                    "article R. 3354-5 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("6 — Mise à disposition du matériel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00041",
+                  "6 — Mise à disposition du matériel",
+                ),
+              ),
               _Paragraph(
-                "Fournir au praticien requis le matériel nécessaire, comprenant notamment :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00042",
+                  "Fournir au praticien requis le matériel nécessaire, comprenant notamment :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Tampon de stérilisation sans alcool."),
               _BulletPoint(
-                text:
-                    "Deux tubes de prélèvement sous vide (10 ml) avec héparinate de lithium + étiquettes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00043",
+                  "Tampon de stérilisation sans alcool.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aiguille à prélèvement sous vide avec adaptateur adéquat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00044",
+                  "Deux tubes de prélèvement sous vide (10 ml) avec héparinate de lithium + étiquettes.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Deux contenants permettant l’apposition d’un scellé et la protection des tubes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00045",
+                  "Aiguille à prélèvement sous vide avec adaptateur adéquat.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00046",
+                  "Deux contenants permettant l’apposition d’un scellé et la protection des tubes.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("7 — Fiches réglementaires (A / B-C)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00047",
+                  "7 — Fiches réglementaires (A / B-C)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Renseigner la fiche d’examen de comportement dite « fiche A » : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00048",
+                    "Renseigner la fiche d’examen de comportement dite « fiche A » : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 3354-4 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00049",
+                    "article R. 3354-4 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -317,53 +504,131 @@ class PrelevementSanguinPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Vérifier la cohérence des rubriques : par exemple, si « Nature des faits : conduite en état d’ivresse », "
-                        "alors la synthèse comportementale doit être compatible (ex : « l’intéressé semble en état d’ivresse »).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                          "f00050",
+                          "Vérifier la cohérence des rubriques : par exemple, si « Nature des faits : conduite en état d’ivresse », ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                          "f00051",
+                          "alors la synthèse comportementale doit être compatible (ex : « l’intéressé semble en état d’ivresse »).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le médecin consigne les résultats de l’examen clinique médical sur la partie B de la fiche B-C ; "
-                "le laboratoire (ou le biologiste expert) consigne les résultats de l’analyse sur la partie C.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00052",
+                      "Le médecin consigne les résultats de l’examen clinique médical sur la partie B de la fiche B-C ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00053",
+                      "le laboratoire (ou le biologiste expert) consigne les résultats de l’analyse sur la partie C.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("8 — Prélèvement sanguin (scellés)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00054",
+                  "8 — Prélèvement sanguin (scellés)",
+                ),
+              ),
               _Paragraph(
-                "L’A.P.J. assiste au prélèvement. Le prélèvement est réparti entre deux tubes étiquetés. "
-                "Chaque tube est placé dans un contenant identifié et scellé par l’A.P.J. ayant assisté à l’opération.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00055",
+                      "L’A.P.J. assiste au prélèvement. Le prélèvement est réparti entre deux tubes étiquetés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00056",
+                      "Chaque tube est placé dans un contenant identifié et scellé par l’A.P.J. ayant assisté à l’opération.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("9 — Retour au service"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00057",
+                  "9 — Retour au service",
+                ),
+              ),
               _Paragraph(
-                "Mentionner le retour au service et la mise en sécurité des scellés, en attente de transmission selon la procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00058",
+                  "Mentionner le retour au service et la mise en sécurité des scellés, en attente de transmission selon la procédure.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("10 — Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00059",
+                  "10 — Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Clôturer le procès-verbal (lecture, mentions utiles, signature si possible, ou mention des difficultés / refus).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00060",
+                  "Clôturer le procès-verbal (lecture, mentions utiles, signature si possible, ou mention des difficultés / refus).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("11 — Compte-rendu O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00061",
+                  "11 — Compte-rendu O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "Effectuer un compte-rendu verbal à l’O.P.J. Mentionner les instructions éventuellement données.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00062",
+                  "Effectuer un compte-rendu verbal à l’O.P.J. Mentionner les instructions éventuellement données.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("12 — Mention de police (transmission)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00063",
+                  "12 — Mention de police (transmission)",
+                ),
+              ),
               _Paragraph(
-                "Transmettre les échantillons scellés ainsi que les fiches A et B-C à l’officier (ou l’agent) "
-                "chargé d’établir la réquisition au laboratoire ou à l’expert (selon le service d’affectation).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00064",
+                      "Transmettre les échantillons scellés ainsi que les fiches A et B-C à l’officier (ou l’agent) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                      "f00065",
+                      "chargé d’établir la réquisition au laboratoire ou à l’expert (selon le service d’affectation).",
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle("Annexe"),
               _Paragraph(
-                "Annexer : copie de la réquisition remise au praticien requis.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00066",
+                  "Annexer : copie de la réquisition remise au praticien requis.",
+                ),
               ),
             ],
           ),
@@ -371,34 +636,70 @@ class PrelevementSanguinPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Check-list express (avant de clôturer)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+              "f00067",
+              "III — Check-list express (avant de clôturer)",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Lieu exact (service / hôpital) bien indiqué.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00068",
+                  "Lieu exact (service / hôpital) bien indiqué.",
+                ),
               ),
               _BulletPoint(
-                text: "Assistants + instructions O.P.J. mentionnés.",
-              ),
-              _BulletPoint(text: "Réquisition remise + copie en annexe."),
-              _BulletPoint(
-                text:
-                    "Matériel fourni listé (tampon sans alcool, 2 tubes, etc.).",
-              ),
-              _BulletPoint(
-                text: "Fiche A renseignée + cohérence des rubriques.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00069",
+                  "Assistants + instructions O.P.J. mentionnés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Partie B (médecin) + partie C (labo/biologiste) tracées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00070",
+                  "Réquisition remise + copie en annexe.",
+                ),
               ),
               _BulletPoint(
-                text: "Deux contenants identifiés + scellés posés par l’A.P.J.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00071",
+                  "Matériel fourni listé (tampon sans alcool, 2 tubes, etc.).",
+                ),
               ),
               _BulletPoint(
-                text: "Transmission des scellés + fiches A/B-C tracée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00072",
+                  "Fiche A renseignée + cohérence des rubriques.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00073",
+                  "Partie B (médecin) + partie C (labo/biologiste) tracées.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00074",
+                  "Deux contenants identifiés + scellés posés par l’A.P.J.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00075",
+                  "Transmission des scellés + fiches A/B-C tracée.",
+                ),
               ),
             ],
           ),
@@ -727,8 +1028,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+        "f00077",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+        "f00078",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -901,7 +1210,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                    "f00079",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -970,7 +1283,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart",
+                  "f00080",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -998,7 +1315,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1033,7 +1352,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

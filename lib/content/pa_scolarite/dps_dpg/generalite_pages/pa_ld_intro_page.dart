@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — L’LegitimeDefense (SPLASH IA 2025)
@@ -26,7 +27,8 @@ class PaLegitimeDefenseIntroPage extends StatefulWidget {
   const PaLegitimeDefenseIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/socle_initial/generalites/legitimedefense_intro';
+  static const String routeName =
+      '/pa/dps_dpg/socle_initial/generalites/legitimedefense_intro';
 
   @override
   State<PaLegitimeDefenseIntroPage> createState() =>
@@ -62,7 +64,11 @@ class _LegitimeDefenseIntroPageState extends State<PaLegitimeDefenseIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LA LÉGITIME DÉFENSE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_ld_intro_page.dart",
+    "f00001",
+    'LA LÉGITIME DÉFENSE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -169,7 +175,11 @@ class _LegitimeDefenseIntroPageState extends State<PaLegitimeDefenseIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Conditions, limites et réflexes essentiels de la légitime défense.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_ld_intro_page.dart",
+                        "f00002",
+                        "Conditions, limites et réflexes essentiels de la légitime défense.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -281,7 +291,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_ld_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

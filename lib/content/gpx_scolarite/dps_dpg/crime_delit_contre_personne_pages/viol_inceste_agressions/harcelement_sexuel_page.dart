@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class HarcelementSexuelPage extends StatelessWidget {
   const HarcelementSexuelPage({super.key});
@@ -70,7 +71,11 @@ class HarcelementSexuelPage extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Harcèlement sexuel",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+            "f00001",
+            "Harcèlement sexuel",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,25 +91,59 @@ class HarcelementSexuelPage extends StatelessWidget {
             children: [
               // ✅ EXIGENCE : article légal tout en haut
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    normal("Le harcèlement sexuel est défini par "),
-                    lawRef("l’article 222-33 du Code pénal"),
-                    normal(" (I et II)."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00003",
+                        "Le harcèlement sexuel est défini par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00004",
+                        "l’article 222-33 du Code pénal",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00005",
+                        " (I et II).",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle("Double définition (à connaître)"),
-                  const _BulletPoint(
-                    text:
-                        "Harcèlement « répété » : propos ou comportements imposés de façon répétée.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00006",
+                      "Double définition (à connaître)",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Acte unique « assimilé » : pression grave pour obtenir un acte de nature sexuelle.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00007",
+                      "Harcèlement « répété » : propos ou comportements imposés de façon répétée.",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00008",
+                      "Acte unique « assimilé » : pression grave pour obtenir un acte de nature sexuelle.",
+                    ),
                   ),
                 ],
               ),
@@ -112,31 +151,68 @@ class HarcelementSexuelPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                  "f00009",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "Le fait d’imposer à une personne, de façon répétée, des propos ou comportements à connotation sexuelle ou sexiste "
-                    "qui portent atteinte à sa dignité (caractère dégradant/humiliant) ou créent une situation intimidante, hostile ou "
-                    "offensante caractérise le harcèlement sexuel.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00010",
+                          "Le fait d’imposer à une personne, de façon répétée, des propos ou comportements à connotation sexuelle ou sexiste ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00011",
+                          "qui portent atteinte à sa dignité (caractère dégradant/humiliant) ou créent une situation intimidante, hostile ou ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00012",
+                          "offensante caractérise le harcèlement sexuel.",
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("Également constitué lorsque…"),
-                  _IntroBullet(
-                    text:
-                        "Plusieurs personnes imposent à la même victime des propos/comportements de manière concertée ou à l’instigation de l’une d’elles, même si chacune n’a pas agi de façon répétée.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00013",
+                      "Également constitué lorsque…",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Plusieurs personnes imposent successivement à la même victime des propos/comportements en sachant que cela caractérise une répétition (même sans concertation).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00014",
+                      "Plusieurs personnes imposent à la même victime des propos/comportements de manière concertée ou à l’instigation de l’une d’elles, même si chacune n’a pas agi de façon répétée.",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00015",
+                      "Plusieurs personnes imposent successivement à la même victime des propos/comportements en sachant que cela caractérise une répétition (même sans concertation).",
+                    ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("Assimilé (acte unique)"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00016",
+                      "Assimilé (acte unique)",
+                    ),
+                  ),
                   _IntroBullet(
-                    text:
-                        "Toute pression grave, même non répétée, dans le but réel ou apparent d’obtenir un acte de nature sexuelle (au profit de l’auteur ou d’un tiers).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00017",
+                      "Toute pression grave, même non répétée, dans le but réel ou apparent d’obtenir un acte de nature sexuelle (au profit de l’auteur ou d’un tiers).",
+                    ),
                   ),
                 ],
               ),
@@ -145,15 +221,29 @@ class HarcelementSexuelPage extends StatelessWidget {
 
               // I — Élément légal
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                  "f00018",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-33 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00019",
+                        "Article 222-33 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : (I) faits répétés ; (II) acte unique assimilé (pression grave).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00020",
+                        " : (I) faits répétés ; (II) acte unique assimilé (pression grave).",
+                      ),
                     ),
                   ]),
                 ],
@@ -163,141 +253,353 @@ class HarcelementSexuelPage extends StatelessWidget {
 
               // II — Élément matériel
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                  "f00021",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle(
-                    "A) Harcèlement sexuel exigeant des actes répétés",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00022",
+                      "A) Harcèlement sexuel exigeant des actes répétés",
+                    ),
                   ),
-                  const _SubTitle("1) Propos ou comportements imposés"),
-                  const _Paragraph(
-                    "Il peut s’agir de propos, gestes, attitudes, envois/remises de courriers, d’objets, etc. "
-                    "Cela inclut des propos sexistes, grivois, obscènes, des écrits répétés (provocations, injures, diffamations même non publiques) "
-                    "commis en raison du sexe, de l’orientation sexuelle ou de l’identité sexuelle de la victime.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00023",
+                      "1) Propos ou comportements imposés",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00024",
+                          "Il peut s’agir de propos, gestes, attitudes, envois/remises de courriers, d’objets, etc. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00025",
+                          "Cela inclut des propos sexistes, grivois, obscènes, des écrits répétés (provocations, injures, diffamations même non publiques) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00026",
+                          "commis en raison du sexe, de l’orientation sexuelle ou de l’identité sexuelle de la victime.",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _SubTitle(
-                    "2) Effet sur la victime (une des 2 options)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00027",
+                      "2) Effet sur la victime (une des 2 options)",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Atteinte à la dignité (caractère dégradant ou humiliant).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00028",
+                      "Atteinte à la dignité (caractère dégradant ou humiliant).",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Ou création d’une situation intimidante, hostile ou offensante (conditions de vie, de travail ou d’hébergement rendues insupportables).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00029",
+                      "Ou création d’une situation intimidante, hostile ou offensante (conditions de vie, de travail ou d’hébergement rendues insupportables).",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00030",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Une personne importune quotidiennement un(e) collègue en lui adressant sans cesse des messages/objets à connotation sexuelle "
-                        "malgré la demande de cesser (",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                              "f00031",
+                              "Une personne importune quotidiennement un(e) collègue en lui adressant sans cesse des messages/objets à connotation sexuelle ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                              "f00032",
+                              "malgré la demande de cesser (",
+                            ),
                       ),
-                      normal("Cass. crim., 21 septembre 2010"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00033",
+                          "Cass. crim., 21 septembre 2010",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
                   const SizedBox(height: 12),
-                  const _SubTitle("3) Connotation sexuelle ou sexiste"),
-                  const _Paragraph(
-                    "Les faits doivent présenter une connotation sexuelle ou sexiste. Un caractère explicitement et directement sexuel n’est pas exigé.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00034",
+                      "3) Connotation sexuelle ou sexiste",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00035",
+                      "Les faits doivent présenter une connotation sexuelle ou sexiste. Un caractère explicitement et directement sexuel n’est pas exigé.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00036",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Deux SMS nostalgiques d’un supérieur hiérarchique (« temps où elle le rendait heureux ») après une liaison : "
-                        "insuffisant pour présumer un harcèlement (",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                              "f00037",
+                              "Deux SMS nostalgiques d’un supérieur hiérarchique (« temps où elle le rendait heureux ») après une liaison : ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                              "f00038",
+                              "insuffisant pour présumer un harcèlement (",
+                            ),
                       ),
-                      normal("C.A. Lyon, 8 novembre 2013"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00039",
+                          "C.A. Lyon, 8 novembre 2013",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
                   const SizedBox(height: 12),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00040",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Propos à connotation sexuelle et sexiste tenus devant des étudiants : possible pluralité de victimes car les propos "
-                        "peuvent être imposés à chacune (",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                              "f00041",
+                              "Propos à connotation sexuelle et sexiste tenus devant des étudiants : possible pluralité de victimes car les propos ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                              "f00042",
+                              "peuvent être imposés à chacune (",
+                            ),
                       ),
-                      normal("Cass. crim., 12 mars 2025, n° 24-81.644"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00043",
+                          "Cass. crim., 12 mars 2025, n° 24-81.644",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
                   const SizedBox(height: 12),
-                  const _SubTitle("4) Absence de consentement"),
-                  const _Paragraph(
-                    "Les actes sont imposés : la victime les subit et ne les désire pas. "
-                    "L’absence de consentement peut être démontrée par un faisceau d’indices. "
-                    "La victime n’a pas à exprimer un refus explicite et formel.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00044",
+                      "4) Absence de consentement",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00045",
+                          "Les actes sont imposés : la victime les subit et ne les désire pas. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00046",
+                          "L’absence de consentement peut être démontrée par un faisceau d’indices. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00047",
+                          "La victime n’a pas à exprimer un refus explicite et formel.",
+                        ),
                   ),
                   const SizedBox(height: 8),
-                  const _SubTitle("Exemples d’indices"),
-                  const _BulletPoint(
-                    text: "Silence permanent face aux agissements.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00048",
+                      "Exemples d’indices",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Signalement ou demande d’intervention à un supérieur hiérarchique.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00049",
+                      "Silence permanent face aux agissements.",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00050",
+                      "Signalement ou demande d’intervention à un supérieur hiérarchique.",
+                    ),
                   ),
                   const SizedBox(height: 12),
-                  const _SubTitle("5) Répétition"),
-                  const _BulletPoint(
-                    text:
-                        "Un seul auteur : au moins 2 faits (pas de délai minimum, même sur un court laps de temps).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00051",
+                      "5) Répétition",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00052",
+                      "Un seul auteur : au moins 2 faits (pas de délai minimum, même sur un court laps de temps).",
+                    ),
                   ),
                   const SizedBox(height: 8),
-                  const _SubTitle("Plusieurs auteurs (élargissement 2018)"),
-                  const _Paragraph(
-                    "La définition couvre les agissements sur une même victime par plusieurs personnes (ex. « raids numériques »), "
-                    "sur internet ou au travail.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00053",
+                      "Plusieurs auteurs (élargissement 2018)",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00054",
+                          "La définition couvre les agissements sur une même victime par plusieurs personnes (ex. « raids numériques »), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00055",
+                          "sur internet ou au travail.",
+                        ),
                   ),
                   const SizedBox(height: 8),
-                  const _BulletPoint(
-                    text:
-                        "Concertation / instigation : même sans répétition individuelle.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00056",
+                      "Concertation / instigation : même sans répétition individuelle.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Successifs sans concertation : chacun sait que l’ensemble caractérise une répétition.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00057",
+                      "Successifs sans concertation : chacun sait que l’ensemble caractérise une répétition.",
+                    ),
                   ),
 
                   const SizedBox(height: 16),
 
-                  const _SubTitle(
-                    "B) Harcèlement sexuel résultant d’un acte unique (assimilé)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00058",
+                      "B) Harcèlement sexuel résultant d’un acte unique (assimilé)",
+                    ),
                   ),
-                  const _SubTitle("1) Pression grave"),
-                  const _Paragraph(
-                    "Une personne tente d’imposer un acte de nature sexuelle à la victime en contrepartie d’un avantage "
-                    "ou pour lui éviter une situation particulièrement dommageable. La gravité peut suffire à constituer l’infraction en un seul acte.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00059",
+                      "1) Pression grave",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00060",
+                          "Une personne tente d’imposer un acte de nature sexuelle à la victime en contrepartie d’un avantage ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00061",
+                          "ou pour lui éviter une situation particulièrement dommageable. La gravité peut suffire à constituer l’infraction en un seul acte.",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _SubTitle("Exemples typiques"),
-                  const _BulletPoint(
-                    text:
-                        "Avantage recherché : emploi, augmentation, bail, réussite à un examen, logement…",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00062",
+                      "Exemples typiques",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Éviter un dommage : licenciement, mutation non désirée, redoublement, hausse de loyer…",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00063",
+                      "Avantage recherché : emploi, augmentation, bail, réussite à un examen, logement…",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00064",
+                      "Éviter un dommage : licenciement, mutation non désirée, redoublement, hausse de loyer…",
+                    ),
                   ),
                   const SizedBox(height: 12),
-                  const _SubTitle("2) Finalité de nature sexuelle"),
-                  const _Paragraph(
-                    "La pression est exercée dans le but réel ou apparent d’obtenir un acte de nature sexuelle "
-                    "(au profit de l’auteur ou d’un tiers). Une relation sexuelle n’est pas nécessaire : des contacts physiques suffisent.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00065",
+                      "2) Finalité de nature sexuelle",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00066",
+                          "La pression est exercée dans le but réel ou apparent d’obtenir un acte de nature sexuelle ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00067",
+                          "(au profit de l’auteur ou d’un tiers). Une relation sexuelle n’est pas nécessaire : des contacts physiques suffisent.",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Même si l’auteur dit agir « pour jouer » ou pour humilier, il peut être sanctionné si les pressions donnaient l’impression "
-                    "qu’un acte sexuel était recherché (aux yeux de la victime ou des tiers).",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00068",
+                          "Même si l’auteur dit agir « pour jouer » ou pour humilier, il peut être sanctionné si les pressions donnaient l’impression ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00069",
+                          "qu’un acte sexuel était recherché (aux yeux de la victime ou des tiers).",
+                        ),
                   ),
                 ],
               ),
@@ -306,30 +608,66 @@ class HarcelementSexuelPage extends StatelessWidget {
 
               // III — Élément moral
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                  "f00070",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    normal("Infraction volontaire : "),
-                    lawRef("article 121-3 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00071",
+                        "Infraction volontaire : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00072",
+                        "article 121-3 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle(
-                    "1) Conscience de se livrer à un acte de harcèlement",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00073",
+                      "1) Conscience de se livrer à un acte de harcèlement",
+                    ),
                   ),
-                  const _Paragraph(
-                    "Le texte ne détaille pas l’élément moral, mais l’infraction est volontaire : l’auteur a conscience de ses propos/comportements.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00074",
+                      "Le texte ne détaille pas l’élément moral, mais l’infraction est volontaire : l’auteur a conscience de ses propos/comportements.",
+                    ),
                   ),
                   const SizedBox(height: 12),
-                  const _SubTitle(
-                    "2) Volonté d’obtenir un acte de nature sexuelle (acte unique)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00075",
+                      "2) Volonté d’obtenir un acte de nature sexuelle (acte unique)",
+                    ),
                   ),
-                  const _Paragraph(
-                    "Pour l’acte unique assimilé, la finalité pouvant être réelle ou apparente, il n’est pas exigé de démontrer un dol spécial "
-                    "parfois difficile à caractériser.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00076",
+                          "Pour l’acte unique assimilé, la finalité pouvant être réelle ou apparente, il n’est pas exigé de démontrer un dol spécial ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                          "f00077",
+                          "parfois difficile à caractériser.",
+                        ),
                   ),
                 ],
               ),
@@ -338,45 +676,88 @@ class HarcelementSexuelPage extends StatelessWidget {
 
               // IV — Circonstances aggravantes
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                  "f00078",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
                     normal(
-                      "Le harcèlement sexuel est aggravé dans les cas listés par ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00079",
+                        "Le harcèlement sexuel est aggravé dans les cas listés par ",
+                      ),
                     ),
-                    lawRef("l’article 222-33 III du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00080",
+                        "l’article 222-33 III du C.P.",
+                      ),
+                    ),
                     normal(" :"),
                   ]),
                   const SizedBox(height: 10),
-                  const _BulletPoint(
-                    text: "Abus d’autorité conférée par les fonctions.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00081",
+                      "Abus d’autorité conférée par les fonctions.",
+                    ),
                   ),
-                  const _BulletPoint(text: "Victime mineure de 15 ans."),
-                  const _BulletPoint(
-                    text:
-                        "Victime particulièrement vulnérable (âge, maladie, infirmité, déficience physique/psychique, grossesse), vulnérabilité apparente ou connue.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00082",
+                      "Victime mineure de 15 ans.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Vulnérabilité/dépendance liée à la précarité économique ou sociale (apparente ou connue).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00083",
+                      "Victime particulièrement vulnérable (âge, maladie, infirmité, déficience physique/psychique, grossesse), vulnérabilité apparente ou connue.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Plusieurs personnes agissant comme auteurs ou complices.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00084",
+                      "Vulnérabilité/dépendance liée à la précarité économique ou sociale (apparente ou connue).",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Utilisation d’un service de communication au public en ligne / support numérique.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00085",
+                      "Plusieurs personnes agissant comme auteurs ou complices.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text: "Présence d’un mineur qui assiste aux faits.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00086",
+                      "Utilisation d’un service de communication au public en ligne / support numérique.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Ascendant ou personne ayant autorité de droit ou de fait sur la victime.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00087",
+                      "Présence d’un mineur qui assiste aux faits.",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00088",
+                      "Ascendant ou personne ayant autorité de droit ou de fait sur la victime.",
+                    ),
                   ),
                 ],
               ),
@@ -385,41 +766,105 @@ class HarcelementSexuelPage extends StatelessWidget {
 
               // V — Répression / tentative / complicité
               _ConditionCard(
-                title: "V — Répression, tentative et complicité",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                  "f00089",
+                  "V — Répression, tentative et complicité",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines encourues (personnes physiques)"),
-                  const SizedBox(height: 6),
-                  const _BulletPoint(
-                    text:
-                        "Forme simple : 2 ans d’emprisonnement + 30 000 € d’amende.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00090",
+                      "Peines encourues (personnes physiques)",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Forme aggravée : 3 ans d’emprisonnement + 45 000 € d’amende.",
+                  const SizedBox(height: 6),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00091",
+                      "Forme simple : 2 ans d’emprisonnement + 30 000 € d’amende.",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00092",
+                      "Forme aggravée : 3 ans d’emprisonnement + 45 000 € d’amende.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Aggravation : "),
-                    lawRef("article 222-33 III (1° à 8°) du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00093",
+                        "Aggravation : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00094",
+                        "article 222-33 III (1° à 8°) du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 12),
                   _Paragraph.rich([
-                    normal("Personnes morales : responsabilité prévue par "),
-                    lawRef("l’article 121-2 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00095",
+                        "Personnes morales : responsabilité prévue par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00096",
+                        "l’article 121-2 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 12),
                   const _SubTitle("Tentative"),
-                  const _BulletPoint(text: "Tentative : NON."),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00097",
+                      "Tentative : NON.",
+                    ),
+                  ),
                   const SizedBox(height: 12),
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                      "f00098",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — punissable conformément aux "),
-                    lawRef("articles 121-6 et 121-7 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00099",
+                        "Complicité : OUI — punissable conformément aux ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/harcelement_sexuel_page.dart",
+                        "f00100",
+                        "articles 121-6 et 121-7 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                 ],

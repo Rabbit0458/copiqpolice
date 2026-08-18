@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — LIBERTÉS PUBLIQUES
@@ -49,7 +50,11 @@ class DeclarationDroitsHommePage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Déclaration des droits de l’homme',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+            "f00001",
+            'Déclaration des droits de l’homme',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -65,7 +70,11 @@ class DeclarationDroitsHommePage extends StatelessWidget {
         children: [
           // ================= TITRE + INTRO =================
           Text(
-            'La Déclaration des droits de l’homme\net du citoyen de 1789 (D.D.H.C.)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+              "f00002",
+              'La Déclaration des droits de l’homme\net du citoyen de 1789 (D.D.H.C.)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -74,31 +83,52 @@ class DeclarationDroitsHommePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           _Paragraph.rich([
-            const TextSpan(
-              text:
-                  'Adoptée le 26 août 1789, en pleine Révolution française, la Déclaration des droits de l’homme et du citoyen (D.D.H.C.) est un texte fondamental qui proclame les droits naturels, inaliénables et imprescriptibles de l’être humain. ',
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                "f00003",
+                'Adoptée le 26 août 1789, en pleine Révolution française, la Déclaration des droits de l’homme et du citoyen (D.D.H.C.) est un texte fondamental qui proclame les droits naturels, inaliénables et imprescriptibles de l’être humain. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'Elle figure aujourd’hui dans le Préambule de la Constitution de 1958',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                "f00004",
+                'Elle figure aujourd’hui dans le Préambule de la Constitution de 1958',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: referenceColor,
               ),
             ),
-            const TextSpan(
-              text:
-                  ' et fait partie du « bloc de constitutionnalité ». Elle s’impose à toutes les autorités : Parlement, Gouvernement, administration, juges… et encadre directement l’action de la police.',
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                "f00005",
+                ' et fait partie du « bloc de constitutionnalité ». Elle s’impose à toutes les autorités : Parlement, Gouvernement, administration, juges… et encadre directement l’action de la police.',
+              ),
             ),
           ]),
           const SizedBox(height: 14),
-          const _NotaBox(
-            title: 'À retenir absolument',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+              "f00006",
+              'À retenir absolument',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'La D.D.H.C. est un texte à valeur constitutionnelle qui consacre les grands principes des libertés publiques (égalité, liberté, sûreté, propriété, séparation des pouvoirs…). '
-                    'Elle est très souvent citée par le Conseil constitutionnel et les juridictions lorsqu’il s’agit de contrôler une loi, un acte administratif ou une atteinte aux libertés.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00007",
+                      'La D.D.H.C. est un texte à valeur constitutionnelle qui consacre les grands principes des libertés publiques (égalité, liberté, sûreté, propriété, séparation des pouvoirs…). ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00008",
+                      'Elle est très souvent citée par le Conseil constitutionnel et les juridictions lorsqu’il s’agit de contrôler une loi, un acte administratif ou une atteinte aux libertés.',
+                    ),
               ),
             ],
           ),
@@ -108,52 +138,82 @@ class DeclarationDroitsHommePage extends StatelessWidget {
           // 1 — CONTEXTE HISTORIQUE & PLACE DANS LA HIÉRARCHIE
           // =====================================================
           _HypoCard(
-            title:
-                '1. Contexte historique et place\nde la D.D.H.C. dans la hiérarchie des normes',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+              "f00009",
+              '1. Contexte historique et place\nde la D.D.H.C. dans la hiérarchie des normes',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'La D.D.H.C. est rédigée par les représentants du peuple français, réunis en Assemblée constituante. '
-                'Elle s’inspire à la fois des Lumières (Montesquieu, Rousseau, Voltaire) et des déclarations américaines d’indépendance.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00010",
+                      'La D.D.H.C. est rédigée par les représentants du peuple français, réunis en Assemblée constituante. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00011",
+                      'Elle s’inspire à la fois des Lumières (Montesquieu, Rousseau, Voltaire) et des déclarations américaines d’indépendance.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Date : 26 août 1789 ; texte adopté avant la première Constitution française de 1791.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00012",
+                    'Date : 26 août 1789 ; texte adopté avant la première Constitution française de 1791.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Finalité : rappeler les droits fondamentaux afin que « les actes du pouvoir législatif et ceux du pouvoir exécutif puissent être à chaque instant comparés avec le but de toute institution politique ». ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00013",
+                    'Finalité : rappeler les droits fondamentaux afin que « les actes du pouvoir législatif et ceux du pouvoir exécutif puissent être à chaque instant comparés avec le but de toute institution politique ». ',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Portée universelle : même si le texte est adopté en France, il se veut applicable à tous les êtres humains.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00014",
+                    'Portée universelle : même si le texte est adopté en France, il se veut applicable à tous les êtres humains.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Depuis la décision « Liberté d’association » du Conseil constitutionnel (1971), la D.D.H.C. est reconnue comme ayant ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00015",
+                    'Depuis la décision « Liberté d’association » du Conseil constitutionnel (1971), la D.D.H.C. est reconnue comme ayant ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'valeur constitutionnelle',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00016",
+                    'valeur constitutionnelle',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' : toute loi contraire peut être censurée. Elle fait partie du « bloc de constitutionnalité » aux côtés du Préambule de 1946, de la Constitution de 1958 et de la Charte de l’environnement de 2004.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00017",
+                    ' : toute loi contraire peut être censurée. Elle fait partie du « bloc de constitutionnalité » aux côtés du Préambule de 1946, de la Constitution de 1958 et de la Charte de l’environnement de 2004.',
+                  ),
                 ),
               ]),
             ],
@@ -165,54 +225,89 @@ class DeclarationDroitsHommePage extends StatelessWidget {
           // 2 — PRINCIPES GÉNÉRAUX ET ARTICLES CLÉS
           // =====================================================
           _HypoCard(
-            title: '2. Principes généraux proclamés par la D.D.H.C.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+              "f00018",
+              '2. Principes généraux proclamés par la D.D.H.C.',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La D.D.H.C. pose d’emblée quelques idées-forces qui irriguent ensuite tout le droit des libertés publiques.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                  "f00019",
+                  'La D.D.H.C. pose d’emblée quelques idées-forces qui irriguent ensuite tout le droit des libertés publiques.',
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Article 1er : « Les hommes naissent et demeurent libres et égaux en droits. » → Principe d’égalité et de liberté, interdiction des privilèges de naissance.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00020",
+                    'Article 1er : « Les hommes naissent et demeurent libres et égaux en droits. » → Principe d’égalité et de liberté, interdiction des privilèges de naissance.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Article 2 : énumère les droits naturels et imprescriptibles de l’homme : la liberté, la propriété, la sûreté et la résistance à l’oppression.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00021",
+                    'Article 2 : énumère les droits naturels et imprescriptibles de l’homme : la liberté, la propriété, la sûreté et la résistance à l’oppression.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Article 3 : principe de souveraineté nationale : « Le principe de toute Souveraineté réside essentiellement dans la Nation. »',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00022",
+                    'Article 3 : principe de souveraineté nationale : « Le principe de toute Souveraineté réside essentiellement dans la Nation. »',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Article 6 : la loi est « l’expression de la volonté générale » ; elle doit être la même pour tous, et tous les citoyens doivent pouvoir concourir à son élaboration, directement ou par leurs représentants.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00023",
+                    'Article 6 : la loi est « l’expression de la volonté générale » ; elle doit être la même pour tous, et tous les citoyens doivent pouvoir concourir à son élaboration, directement ou par leurs représentants.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Article 16 : « Toute Société dans laquelle la garantie des Droits n’est pas assurée, ni la séparation des Pouvoirs déterminée, n’a point de Constitution. » → principe de séparation des pouvoirs et nécessité de garanties effectives.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00024",
+                    'Article 16 : « Toute Société dans laquelle la garantie des Droits n’est pas assurée, ni la séparation des Pouvoirs déterminée, n’a point de Constitution. » → principe de séparation des pouvoirs et nécessité de garanties effectives.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _ExempleBox(
-                title: 'Illustrations en pratique',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                  "f00025",
+                  'Illustrations en pratique',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        '• Le principe d’égalité (art. 1) est régulièrement invoqué pour contester des différences de traitement injustifiées entre catégories de personnes (fonctionnaires, étrangers, détenus…).\n'
-                        '• L’article 16 sert de fondement au contrôle de la séparation des pouvoirs et au droit à un procès équitable (indépendance du juge, recours effectif…).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                          "f00026",
+                          '• Le principe d’égalité (art. 1) est régulièrement invoqué pour contester des différences de traitement injustifiées entre catégories de personnes (fonctionnaires, étrangers, détenus…).\n',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                          "f00027",
+                          '• L’article 16 sert de fondement au contrôle de la séparation des pouvoirs et au droit à un procès équitable (indépendance du juge, recours effectif…).',
+                        ),
                   ),
                 ],
               ),
@@ -225,55 +320,94 @@ class DeclarationDroitsHommePage extends StatelessWidget {
           // 3 — DROITS & LIBERTÉS GARANTIS
           // =====================================================
           _HypoCard(
-            title: '3. Les principaux droits et libertés garantis',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+              "f00028",
+              '3. Les principaux droits et libertés garantis',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La D.D.H.C. ne distingue pas comme nous entre « libertés individuelles », « libertés collectives » ou « droits sociaux ». '
-                'Elle énumère une série de droits qui seront ensuite précisés par le législateur et la jurisprudence.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00029",
+                      'La D.D.H.C. ne distingue pas comme nous entre « libertés individuelles », « libertés collectives » ou « droits sociaux ». ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00030",
+                      'Elle énumère une série de droits qui seront ensuite précisés par le législateur et la jurisprudence.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Liberté (art. 4) : la liberté consiste à « pouvoir faire tout ce qui ne nuit pas à autrui ». Elle est limitée par la loi, qui ne peut restreindre la liberté que lorsque c’est nécessaire pour garantir les droits d’autrui.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00031",
+                    'Liberté (art. 4) : la liberté consiste à « pouvoir faire tout ce qui ne nuit pas à autrui ». Elle est limitée par la loi, qui ne peut restreindre la liberté que lorsque c’est nécessaire pour garantir les droits d’autrui.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Sûreté (art. 7 à 9) : nul ne peut être arrêté ni détenu arbitrairement ; la loi fixe les procédures ; les agents qui ordonnent ou exécutent des ordres arbitraires doivent être punis.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00032",
+                    'Sûreté (art. 7 à 9) : nul ne peut être arrêté ni détenu arbitrairement ; la loi fixe les procédures ; les agents qui ordonnent ou exécutent des ordres arbitraires doivent être punis.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Propriété (art. 17) : « La propriété étant un droit inviolable et sacré », nul ne peut en être privé si ce n’est pour cause d’utilité publique et sous condition d’une juste et préalable indemnité.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00033",
+                    'Propriété (art. 17) : « La propriété étant un droit inviolable et sacré », nul ne peut en être privé si ce n’est pour cause d’utilité publique et sous condition d’une juste et préalable indemnité.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Liberté d’opinion, notamment religieuse (art. 10) : « Nul ne doit être inquiété pour ses opinions, même religieuses », tant que leur manifestation ne trouble pas l’ordre public établi par la loi.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00034",
+                    'Liberté d’opinion, notamment religieuse (art. 10) : « Nul ne doit être inquiété pour ses opinions, même religieuses », tant que leur manifestation ne trouble pas l’ordre public établi par la loi.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Liberté d’expression et de communication (art. 11) : la libre communication des pensées et des opinions est « un des droits les plus précieux de l’homme ». Chacun peut donc parler, écrire, imprimer librement, sous réserve de répondre des abus de cette liberté dans les cas prévus par la loi.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00035",
+                    'Liberté d’expression et de communication (art. 11) : la libre communication des pensées et des opinions est « un des droits les plus précieux de l’homme ». Chacun peut donc parler, écrire, imprimer librement, sous réserve de répondre des abus de cette liberté dans les cas prévus par la loi.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Articles incontournables à connaître',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                  "f00036",
+                  'Articles incontournables à connaître',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Pour un policier et plus largement pour tout agent public, les articles les plus cités sont : '
-                        '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 16 et 17. Ils servent de base à la plupart des grandes libertés étudiées en droit administratif et en droit pénal.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                          "f00037",
+                          'Pour un policier et plus largement pour tout agent public, les articles les plus cités sont : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                          "f00038",
+                          '1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 16 et 17. Ils servent de base à la plupart des grandes libertés étudiées en droit administratif et en droit pénal.',
+                        ),
                   ),
                 ],
               ),
@@ -286,48 +420,80 @@ class DeclarationDroitsHommePage extends StatelessWidget {
           // 4 — GARANTIES PÉNALES & PROCÉDURALES
           // =====================================================
           _HypoCard(
-            title: '4. Garanties pénales et procédurales',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+              "f00039",
+              '4. Garanties pénales et procédurales',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Plusieurs articles de la D.D.H.C. encadrent directement le droit pénal et la procédure pénale. Ils sont essentiels pour l’activité policière : contrôles d’identité, gardes à vue, enquêtes, perquisitions…',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                  "f00040",
+                  'Plusieurs articles de la D.D.H.C. encadrent directement le droit pénal et la procédure pénale. Ils sont essentiels pour l’activité policière : contrôles d’identité, gardes à vue, enquêtes, perquisitions…',
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Principe de légalité des délits et des peines (art. 8) : « Nul ne peut être puni qu’en vertu d’une loi établie et promulguée antérieurement au délit. » → interdiction des incriminations et peines rétroactives.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00041",
+                    'Principe de légalité des délits et des peines (art. 8) : « Nul ne peut être puni qu’en vertu d’une loi établie et promulguée antérieurement au délit. » → interdiction des incriminations et peines rétroactives.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Principe de nécessité et de proportionnalité des peines (art. 8) : la loi ne doit établir que des peines « strictement et évidemment nécessaires ». ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00042",
+                    'Principe de nécessité et de proportionnalité des peines (art. 8) : la loi ne doit établir que des peines « strictement et évidemment nécessaires ». ',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Principe de présomption d’innocence (art. 9) : « Tout homme étant présumé innocent jusqu’à ce qu’il ait été déclaré coupable… » ; la rigueur des mesures privatives de liberté ne doit pas excéder ce qui est nécessaire.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00043",
+                    'Principe de présomption d’innocence (art. 9) : « Tout homme étant présumé innocent jusqu’à ce qu’il ait été déclaré coupable… » ; la rigueur des mesures privatives de liberté ne doit pas excéder ce qui est nécessaire.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Garanties contre les arrestations arbitraires (art. 7) : ceux qui donnent ou exécutent des ordres arbitraires doivent être punis ; le citoyen a le droit de résister s’il est arrêté illégalement.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00044",
+                    'Garanties contre les arrestations arbitraires (art. 7) : ceux qui donnent ou exécutent des ordres arbitraires doivent être punis ; le citoyen a le droit de résister s’il est arrêté illégalement.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _ExempleBox(
-                title: 'Exemples de contrôle par le juge',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                  "f00045",
+                  'Exemples de contrôle par le juge',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        '• Une loi créant une nouvelle infraction floue et trop large peut être censurée au regard de l’article 8 (principe de légalité et de nécessité des peines).\n'
-                        '• Des conditions de garde à vue trop longues ou insuffisamment encadrées peuvent être jugées contraires à l’article 9 (présomption d’innocence et nécessité des mesures).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                          "f00046",
+                          '• Une loi créant une nouvelle infraction floue et trop large peut être censurée au regard de l’article 8 (principe de légalité et de nécessité des peines).\n',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                          "f00047",
+                          '• Des conditions de garde à vue trop longues ou insuffisamment encadrées peuvent être jugées contraires à l’article 9 (présomption d’innocence et nécessité des mesures).',
+                        ),
                   ),
                 ],
               ),
@@ -340,34 +506,59 @@ class DeclarationDroitsHommePage extends StatelessWidget {
           // 5 — INTÉRÊT POUR LE POLICIER & LES LIBERTÉS PUBLIQUES
           // =====================================================
           _HypoCard(
-            title:
-                '5. Intérêt de la D.D.H.C. pour les libertés publiques\n   et pour l’action du policier',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+              "f00048",
+              '5. Intérêt de la D.D.H.C. pour les libertés publiques\n   et pour l’action du policier',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Pour un policier, la D.D.H.C. n’est pas un texte théorique : elle constitue la base de la plupart des règles encadrant l’usage de la force, '
-                'les contrôles, les fouilles, les gardes à vue, les perquisitions ou encore la liberté de manifester.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00049",
+                      'Pour un policier, la D.D.H.C. n’est pas un texte théorique : elle constitue la base de la plupart des règles encadrant l’usage de la force, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00050",
+                      'les contrôles, les fouilles, les gardes à vue, les perquisitions ou encore la liberté de manifester.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Principe : toute mesure de police porte atteinte à une liberté. Cette atteinte doit toujours pouvoir être justifiée au regard des principes de la D.D.H.C. (nécessité, proportionnalité, égalité, respect de la sûreté…).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00051",
+                    'Principe : toute mesure de police porte atteinte à une liberté. Cette atteinte doit toujours pouvoir être justifiée au regard des principes de la D.D.H.C. (nécessité, proportionnalité, égalité, respect de la sûreté…).',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'En cas de contentieux, le juge administratif ou judiciaire peut contrôler la compatibilité d’un acte de police avec la D.D.H.C. et éventuellement l’annuler ou sanctionner ses auteurs.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                    "f00052",
+                    'En cas de contentieux, le juge administratif ou judiciaire peut contrôler la compatibilité d’un acte de police avec la D.D.H.C. et éventuellement l’annuler ou sanctionner ses auteurs.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Connaître les grands articles de la D.D.H.C. permet donc au policier de comprendre le sens des libertés publiques, '
-                'de mieux appliquer les lois et règlements et d’anticiper les risques juridiques liés à ses interventions.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00053",
+                      'Connaître les grands articles de la D.D.H.C. permet donc au policier de comprendre le sens des libertés publiques, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/declaration_droits_homme_page.dart",
+                      "f00054",
+                      'de mieux appliquer les lois et règlements et d’anticiper les risques juridiques liés à ses interventions.',
+                    ),
               ),
             ],
           ),

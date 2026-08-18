@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPInstructionPouvoirsPage extends StatelessWidget {
   const PaPPInstructionPouvoirsPage({super.key});
@@ -32,10 +33,18 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Pouvoirs du juge d'instruction",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+            "f00002",
+            "Pouvoirs du juge d'instruction",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,7 +58,11 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Chapitre 3 – Les pouvoirs du juge d'instruction",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00003",
+              "Chapitre 3 – Les pouvoirs du juge d'instruction",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -60,8 +73,16 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Rôle général du juge d’instruction, constatations matérielles, recours aux experts, "
-            "auditions des témoins, témoins assistés, personnes mises en examen et parties civiles.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00004",
+                  "Rôle général du juge d’instruction, constatations matérielles, recours aux experts, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00005",
+                  "auditions des témoins, témoins assistés, personnes mises en examen et parties civiles.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -75,26 +96,64 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           ////////////////////////////////////////////////////////////////////
           // 3.1 – CARACTÈRES GÉNÉRAUX
           ////////////////////////////////////////////////////////////////////
-          const _SubTitle('3.1 – Caractères généraux'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00006",
+              '3.1 – Caractères généraux',
+            ),
+          ),
 
           _ConditionCard(
-            title: "3.1 – Caractères généraux de l'instruction",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00007",
+              "3.1 – Caractères généraux de l'instruction",
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le juge d’instruction a pour première mission de rechercher avec précision les "
-                      "circonstances dans lesquelles l’infraction a été commise, ainsi que les conditions "
-                      "dans lesquelles les différentes personnes concernées y ont participé. Il doit aussi "
-                      "porter son attention sur la personnalité du mis en cause, prise en compte au moment "
-                      "de la répression, mais également sur la personnalité de la victime. Cette exigence est "
-                      "rappelée par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00008",
+                        "Le juge d’instruction a pour première mission de rechercher avec précision les ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00009",
+                        "circonstances dans lesquelles l’infraction a été commise, ainsi que les conditions ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00010",
+                        "dans lesquelles les différentes personnes concernées y ont participé. Il doit aussi ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00011",
+                        "porter son attention sur la personnalité du mis en cause, prise en compte au moment ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00012",
+                        "de la répression, mais également sur la personnalité de la victime. Cette exigence est ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00013",
+                        "rappelée par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 81-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00014",
+                    "l’Article 81-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -102,8 +161,16 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ", qui consacre l’importance de la recherche de la vérité tout en tenant compte "
-                      "de la situation personnelle des protagonistes.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00015",
+                        ", qui consacre l’importance de la recherche de la vérité tout en tenant compte ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00016",
+                        "de la situation personnelle des protagonistes.",
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
@@ -111,14 +178,38 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La recherche de la vérité doit être menée de la manière la plus objective possible. "
-                      "Pour y parvenir, le juge instruit à charge et à décharge : il doit rechercher et "
-                      "examiner avec soin tous les éléments susceptibles soit de confirmer la culpabilité "
-                      "de la personne mise en cause, soit au contraire de la disculper. Ce principe d’objectivité "
-                      "et de double regard est au cœur de ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00017",
+                        "La recherche de la vérité doit être menée de la manière la plus objective possible. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00018",
+                        "Pour y parvenir, le juge instruit à charge et à décharge : il doit rechercher et ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00019",
+                        "examiner avec soin tous les éléments susceptibles soit de confirmer la culpabilité ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00020",
+                        "de la personne mise en cause, soit au contraire de la disculper. Ce principe d’objectivité ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00021",
+                        "et de double regard est au cœur de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 81 alinéa 1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00022",
+                    "l’Article 81 alinéa 1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -129,12 +220,36 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               SizedBox(height: 8),
 
               _Paragraph(
-                "Pour mener à bien cette mission délicate, le juge d’instruction dispose de mesures "
-                "très diverses : mandats de justice, contrôle judiciaire, détention provisoire, commissions "
-                "rogatoires, expertises, auditions, perquisitions, saisies… Certaines de ces mesures font l’objet "
-                "d’un traitement détaillé dans d’autres chapitres (mandats, contrôle judiciaire, détention "
-                "provisoire, commissions rogatoires). Dans ce chapitre, l’accent est mis sur les constatations "
-                "matérielles et les différentes catégories de personnes que le juge peut entendre.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00023",
+                      "Pour mener à bien cette mission délicate, le juge d’instruction dispose de mesures ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00024",
+                      "très diverses : mandats de justice, contrôle judiciaire, détention provisoire, commissions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00025",
+                      "rogatoires, expertises, auditions, perquisitions, saisies… Certaines de ces mesures font l’objet ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00026",
+                      "d’un traitement détaillé dans d’autres chapitres (mandats, contrôle judiciaire, détention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00027",
+                      "provisoire, commissions rogatoires). Dans ce chapitre, l’accent est mis sur les constatations ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00028",
+                      "matérielles et les différentes catégories de personnes que le juge peut entendre.",
+                    ),
               ),
             ],
           ),
@@ -144,23 +259,49 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           ////////////////////////////////////////////////////////////////////
           // 3.2 – LES CONSTATATIONS MATÉRIELLES
           ////////////////////////////////////////////////////////////////////
-          const _SubTitle('3.2 – Les constatations matérielles'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00029",
+              '3.2 – Les constatations matérielles',
+            ),
+          ),
 
           _ConditionCard(
-            title: '3.2.1 – Les constatations effectuées par le juge',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00030",
+              '3.2.1 – Les constatations effectuées par le juge',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le juge d’instruction peut procéder lui-même à un certain nombre de constatations "
-                      "matérielles venant compléter celles déjà effectuées par les services d’enquête. "
-                      "Dans ce cadre, ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00031",
+                        "Le juge d’instruction peut procéder lui-même à un certain nombre de constatations ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00032",
+                        "matérielles venant compléter celles déjà effectuées par les services d’enquête. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00033",
+                        "Dans ce cadre, ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 92 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00034",
+                    "l’Article 92 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -168,40 +309,96 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      " l’autorise à se transporter sur les lieux pour effectuer toutes constatations utiles "
-                      "ou procéder à des perquisitions, le cas échéant en donnant avis au procureur de la "
-                      "République qui peut l’accompagner.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00035",
+                        " l’autorise à se transporter sur les lieux pour effectuer toutes constatations utiles ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00036",
+                        "ou procéder à des perquisitions, le cas échéant en donnant avis au procureur de la ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00037",
+                        "République qui peut l’accompagner.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph(
-                "Lors de ces déplacements, le juge d’instruction est assisté de son greffier, chargé de "
-                "rédiger le procès-verbal des constatations. Cet acte de procédure doit être signé par le "
-                "juge et par le greffier. Le juge peut se déplacer, être assisté de son greffier et, sans "
-                "être obligé de dresser un procès-verbal détaillé pour chaque observation, doit diriger et "
-                "contrôler personnellement l’exécution d’une éventuelle commission rogatoire.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00038",
+                      "Lors de ces déplacements, le juge d’instruction est assisté de son greffier, chargé de ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00039",
+                      "rédiger le procès-verbal des constatations. Cet acte de procédure doit être signé par le ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00040",
+                      "juge et par le greffier. Le juge peut se déplacer, être assisté de son greffier et, sans ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00041",
+                      "être obligé de dresser un procès-verbal détaillé pour chaque observation, doit diriger et ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00042",
+                      "contrôler personnellement l’exécution d’une éventuelle commission rogatoire.",
+                    ),
               ),
               const SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "Il peut également, dans le cadre de l’exécution d’une commission rogatoire, "
-                      "ordonner la prolongation de gardes à vue déjà décidées, conformément aux conditions "
-                      "posées par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00043",
+                        "Il peut également, dans le cadre de l’exécution d’une commission rogatoire, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00044",
+                        "ordonner la prolongation de gardes à vue déjà décidées, conformément aux conditions ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00045",
+                        "posées par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 152 alinéa 3 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00046",
+                    "l’Article 152 alinéa 3 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ". Certaines constatations peuvent aussi être réalisées au cabinet du juge, qui examine "
-                      "les pièces saisies et évalue leur intérêt pour l’information.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00047",
+                        ". Certaines constatations peuvent aussi être réalisées au cabinet du juge, qui examine ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00048",
+                        "les pièces saisies et évalue leur intérêt pour l’information.",
+                      ),
                 ),
               ]),
             ],
@@ -210,19 +407,35 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           const SizedBox(height: 16),
 
           _ConditionCard(
-            title: '3.2.2 – L’expertise',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00049",
+              '3.2.2 – L’expertise',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Lorsque la technicité d’une question dépasse ses compétences juridiques, le juge "
-                      "d’instruction peut recourir à des experts. L’expertise est encadrée par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00050",
+                        "Lorsque la technicité d’une question dépasse ses compétences juridiques, le juge ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00051",
+                        "d’instruction peut recourir à des experts. L’expertise est encadrée par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "les Articles 156 à 169-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00052",
+                    "les Articles 156 à 169-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -230,26 +443,68 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      " et a pour objet l’examen de questions d’ordre technique nécessitant, au-delà de "
-                      "constatations objectives, une véritable interprétation spécialisée : police scientifique, "
-                      "balistique, faux documents, médecine légale, psychiatrie, biologie, chimie, toxicologie, "
-                      "comptabilité, etc.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00053",
+                        " et a pour objet l’examen de questions d’ordre technique nécessitant, au-delà de ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00054",
+                        "constatations objectives, une véritable interprétation spécialisée : police scientifique, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00055",
+                        "balistique, faux documents, médecine légale, psychiatrie, biologie, chimie, toxicologie, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00056",
+                        "comptabilité, etc.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('3.2.2.1 – La nomination des experts'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00057",
+                  '3.2.2.1 – La nomination des experts',
+                ),
+              ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "L’initiative d’une expertise peut appartenir au ministère public, au juge d’instruction "
-                      "qui ordonne d’office, à l’une des parties ou encore au témoin assisté. Lorsque le juge "
-                      "refuse de donner suite à une demande d’expertise, il doit rendre une ordonnance motivée "
-                      "dans le délai d’un mois à compter de la demande, conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00058",
+                        "L’initiative d’une expertise peut appartenir au ministère public, au juge d’instruction ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00059",
+                        "qui ordonne d’office, à l’une des parties ou encore au témoin assisté. Lorsque le juge ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00060",
+                        "refuse de donner suite à une demande d’expertise, il doit rendre une ordonnance motivée ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00061",
+                        "dans le délai d’un mois à compter de la demande, conformément à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 156 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00062",
+                    "l’Article 156 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -259,15 +514,31 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les experts sont en principe choisis parmi les personnes physiques ou morales "
-                      "inscrites sur les listes nationales ou régionales dressées par les juridictions. "
-                      "Cette organisation est prévue par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00063",
+                        "Les experts sont en principe choisis parmi les personnes physiques ou morales ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00064",
+                        "inscrites sur les listes nationales ou régionales dressées par les juridictions. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00065",
+                        "Cette organisation est prévue par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 157 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00066",
+                    "l’Article 157 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -275,27 +546,73 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ", qui permet également de recourir à des services spécialisés, notamment les services "
-                      "de police technique et scientifique de la police nationale et de la gendarmerie nationale. "
-                      "L’Article 157-2 du Code de procédure pénale prévoit ces recours. Dans des cas exceptionnels, "
-                      "le juge peut désigner un expert non inscrit sur ces listes, à condition de motiver "
-                      "expressément ce choix.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00067",
+                        ", qui permet également de recourir à des services spécialisés, notamment les services ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00068",
+                        "de police technique et scientifique de la police nationale et de la gendarmerie nationale. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00069",
+                        "L’Article 157-2 du Code de procédure pénale prévoit ces recours. Dans des cas exceptionnels, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00070",
+                        "le juge peut désigner un expert non inscrit sur ces listes, à condition de motiver ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00071",
+                        "expressément ce choix.",
+                      ),
                 ),
               ]),
 
               const SizedBox(height: 12),
-              const _SubTitle('3.2.2.2 – Le déroulement de l’expertise'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00072",
+                  '3.2.2.2 – Le déroulement de l’expertise',
+                ),
+              ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Avant d’exercer leurs fonctions, les experts inscrits sur les listes prêtent serment "
-                      "« d’apporter leur concours à la justice, en leur honneur et en leur conscience ». Ce serment "
-                      "est prêté devant la cour d’appel dont ils dépendent ou, pour certains experts, devant la "
-                      "juridiction désignée. Les modalités de ce serment sont prévues par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00073",
+                        "Avant d’exercer leurs fonctions, les experts inscrits sur les listes prêtent serment ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00074",
+                        "« d’apporter leur concours à la justice, en leur honneur et en leur conscience ». Ce serment ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00075",
+                        "est prêté devant la cour d’appel dont ils dépendent ou, pour certains experts, devant la ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00076",
+                        "juridiction désignée. Les modalités de ce serment sont prévues par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 160 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00077",
+                    "l’Article 160 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -303,42 +620,92 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ". Les experts non inscrits sur une liste prêtent serment devant le juge d’instruction "
-                      "ou le magistrat désigné.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00078",
+                        ". Les experts non inscrits sur une liste prêtent serment devant le juge d’instruction ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00079",
+                        "ou le magistrat désigné.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "Les experts accomplissent leur mission sous le contrôle du juge d’instruction, qui doit "
-                      "être tenu informé des opérations en cours et peut prendre toute mesure utile. Ce contrôle "
-                      "est rappelé par ",
-                ),
-                const TextSpan(
-                  text: "l’Article 156 alinéa 3 du Code de procédure pénale",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    color: Colors.redAccent,
-                  ),
-                ),
-                const TextSpan(text: " et par les dispositions de "),
-                const TextSpan(
-                  text: "l’Article 161 alinéa 3 du Code de procédure pénale",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    color: Colors.redAccent,
-                  ),
-                ),
-                const TextSpan(
-                  text:
-                      ". Les pièces à conviction placées sous scellés peuvent, après inventaire, être mises "
-                      "à la disposition des experts qui, le cas échéant, peuvent ouvrir les scellés et procéder "
-                      "à l’inventaire des objets, en application de ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00080",
+                        "Les experts accomplissent leur mission sous le contrôle du juge d’instruction, qui doit ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00081",
+                        "être tenu informé des opérations en cours et peut prendre toute mesure utile. Ce contrôle ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00082",
+                        "est rappelé par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 163 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00083",
+                    "l’Article 156 alinéa 3 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: Colors.redAccent,
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00084",
+                    " et par les dispositions de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00085",
+                    "l’Article 161 alinéa 3 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: Colors.redAccent,
+                  ),
+                ),
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00086",
+                        ". Les pièces à conviction placées sous scellés peuvent, après inventaire, être mises ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00087",
+                        "à la disposition des experts qui, le cas échéant, peuvent ouvrir les scellés et procéder ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00088",
+                        "à l’inventaire des objets, en application de ",
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00089",
+                    "l’Article 163 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
@@ -348,16 +715,36 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "À l’issue de leurs opérations, les experts rédigent un rapport détaillé exposant la nature "
-                      "des investigations réalisées et leurs conclusions. Ce rapport doit être signé par les experts, "
-                      "mentionner les noms et qualités des personnes les ayant assistés et être déposé entre les mains "
-                      "du greffier, qui dresse procès-verbal de dépôt conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00090",
+                        "À l’issue de leurs opérations, les experts rédigent un rapport détaillé exposant la nature ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00091",
+                        "des investigations réalisées et leurs conclusions. Ce rapport doit être signé par les experts, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00092",
+                        "mentionner les noms et qualités des personnes les ayant assistés et être déposé entre les mains ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00093",
+                        "du greffier, qui dresse procès-verbal de dépôt conformément à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 166 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00094",
+                    "l’Article 166 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -365,9 +752,21 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ". Avec l’accord du juge d’instruction, les conclusions peuvent être communiquées au procureur "
-                      "de la République, aux officiers de police judiciaire chargés de l’exécution d’une commission "
-                      "rogatoire ou aux parties.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00095",
+                        ". Avec l’accord du juge d’instruction, les conclusions peuvent être communiquées au procureur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00096",
+                        "de la République, aux officiers de police judiciaire chargés de l’exécution d’une commission ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00097",
+                        "rogatoire ou aux parties.",
+                      ),
                 ),
               ]),
             ],
@@ -378,23 +777,45 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           ////////////////////////////////////////////////////////////////////
           // 3.3 – LES AUDITIONS
           ////////////////////////////////////////////////////////////////////
-          const _SubTitle('3.3 – Les auditions'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00098",
+              '3.3 – Les auditions',
+            ),
+          ),
 
           _ConditionCard(
-            title: '3.3.1 – Les auditions de témoins',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00099",
+              '3.3.1 – Les auditions de témoins',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le juge d’instruction peut entendre toute personne susceptible d’apporter des éléments "
-                      "utiles à la manifestation de la vérité. Les règles applicables aux témoins sont précisées "
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00100",
+                        "Le juge d’instruction peut entendre toute personne susceptible d’apporter des éléments ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00101",
+                        "utiles à la manifestation de la vérité. Les règles applicables aux témoins sont précisées ",
+                      ) +
                       "par ",
                 ),
                 TextSpan(
-                  text: "les Articles 101 à 113-8 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00102",
+                    "les Articles 101 à 113-8 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -404,43 +825,44 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              const _SubTitle('3.3.1.1 – Les personnes concernées'),
-
-              const _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "En vertu de ces dispositions, le juge d’instruction peut faire citer devant lui, par huissier "
-                      "ou par agent de la force publique, toute personne dont la déposition lui paraît utile. Si la "
-                      "personne régulièrement citée ne comparaît pas ou refuse de comparaître, elle peut y être "
-                      "contrainte par la force publique. En outre, ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00103",
+                  '3.3.1.1 – Les personnes concernées',
                 ),
-                TextSpan(
-                  text: "l’Article 105 du Code de procédure pénale",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    color: Colors.redAccent,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " impose au juge d’entendre comme témoins les personnes contre lesquelles existent des indices "
-                      "graves ou concordants d’avoir participé à l’infraction, sauf à les placer sous un autre statut.",
-                ),
-              ]),
-              const SizedBox(height: 8),
-
-              const _SubTitle(
-                '3.3.1.2 – Les formalités attachées à l’audition',
               ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les témoins doivent être entendus séparément et hors la présence des parties, sauf en cas de "
-                      "confrontation. Il est dressé procès-verbal de leurs déclarations, conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00104",
+                        "En vertu de ces dispositions, le juge d’instruction peut faire citer devant lui, par huissier ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00105",
+                        "ou par agent de la force publique, toute personne dont la déposition lui paraît utile. Si la ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00106",
+                        "personne régulièrement citée ne comparaît pas ou refuse de comparaître, elle peut y être ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00107",
+                        "contrainte par la force publique. En outre, ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 102 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00108",
+                    "l’Article 105 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -448,29 +870,48 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ". Le juge vérifie l’identité du témoin et précise ses liens éventuels avec les parties – "
-                      "parenté, alliance, lien de service – en application de ",
-                ),
-                TextSpan(
-                  text: "l’Article 103 du Code de procédure pénale",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    color: Colors.redAccent,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      ". Le témoin prête serment de dire toute la vérité, rien que la vérité.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00109",
+                        " impose au juge d’entendre comme témoins les personnes contre lesquelles existent des indices ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00110",
+                        "graves ou concordants d’avoir participé à l’infraction, sauf à les placer sous un autre statut.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00111",
+                  '3.3.1.2 – Les formalités attachées à l’audition',
+                ),
+              ),
+
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Les obligations du témoin sont détaillées par ",
+                  text:
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00112",
+                        "Les témoins doivent être entendus séparément et hors la présence des parties, sauf en cas de ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00113",
+                        "confrontation. Il est dressé procès-verbal de leurs déclarations, conformément à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 109 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00114",
+                    "l’Article 102 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -478,62 +919,173 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      " : il doit comparaître, prêter serment et déposer. Certaines catégories de personnes sont toutefois "
-                      "dispensées de l’obligation de prêter serment ou de déposer, notamment les proches parents du mis en "
-                      "cause et les mineurs, conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00115",
+                        ". Le juge vérifie l’identité du témoin et précise ses liens éventuels avec les parties – ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00116",
+                        "parenté, alliance, lien de service – en application de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 335 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00117",
+                    "l’Article 103 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " et aux textes relatifs à la protection de la famille et aux liens de parenté.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00118",
+                    ". Le témoin prête serment de dire toute la vérité, rien que la vérité.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Certaines personnes sont tenues au secret professionnel et ne peuvent déposer qu’avec l’autorisation "
-                      "de la personne concernée ou dans les limites fixées par ",
-                ),
                 TextSpan(
-                  text: "l’Article 131-26 du Code pénal",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    color: Colors.red.shade700,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00119",
+                    "Les obligations du témoin sont détaillées par ",
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00120",
+                    "l’Article 109 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: Colors.redAccent,
+                  ),
+                ),
+                TextSpan(
                   text:
-                      ". Quant aux journalistes professionnels, ils bénéficient d’une protection spécifique quant à leurs "
-                      "sources d’information.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00121",
+                        " : il doit comparaître, prêter serment et déposer. Certaines catégories de personnes sont toutefois ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00122",
+                        "dispensées de l’obligation de prêter serment ou de déposer, notamment les proches parents du mis en ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00123",
+                        "cause et les mineurs, conformément à ",
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00124",
+                    "l’Article 335 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: Colors.redAccent,
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00125",
+                    " et aux textes relatifs à la protection de la famille et aux liens de parenté.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "Le non-respect par le témoin de ses obligations peut être sanctionné pénalement. Ainsi, ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00126",
+                        "Certaines personnes sont tenues au secret professionnel et ne peuvent déposer qu’avec l’autorisation ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00127",
+                        "de la personne concernée ou dans les limites fixées par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 434-15-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00128",
+                    "l’Article 131-26 du Code pénal",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      " punit d’une amende pouvant aller jusqu’à 3 750 euros le témoin qui, sans motif légitime, "
-                      "refuse de comparaître ou de déposer devant le juge d’instruction ou devant un officier de "
-                      "police judiciaire agissant sur commission rogatoire.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00129",
+                        ". Quant aux journalistes professionnels, ils bénéficient d’une protection spécifique quant à leurs ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00130",
+                        "sources d’information.",
+                      ),
+                ),
+              ]),
+              const SizedBox(height: 8),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00131",
+                    "Le non-respect par le témoin de ses obligations peut être sanctionné pénalement. Ainsi, ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00132",
+                    "l’Article 434-15-1 du Code pénal",
+                  ),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: Colors.red.shade700,
+                  ),
+                ),
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00133",
+                        " punit d’une amende pouvant aller jusqu’à 3 750 euros le témoin qui, sans motif légitime, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00134",
+                        "refuse de comparaître ou de déposer devant le juge d’instruction ou devant un officier de ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00135",
+                        "police judiciaire agissant sur commission rogatoire.",
+                      ),
                 ),
               ]),
             ],
@@ -542,21 +1094,45 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: '3.3.2 – Les auditions de témoins assistés',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00136",
+              '3.3.2 – Les auditions de témoins assistés',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le témoin assisté occupe une position intermédiaire entre le simple témoin et la personne "
-                      "mise en examen. Ce statut concerne des personnes à l’égard desquelles pèsent des soupçons plus "
-                      "ou moins sérieux mais pour lesquelles la mise en examen n’est pas encore envisagée. Il est "
-                      "notamment organisé par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00137",
+                        "Le témoin assisté occupe une position intermédiaire entre le simple témoin et la personne ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00138",
+                        "mise en examen. Ce statut concerne des personnes à l’égard desquelles pèsent des soupçons plus ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00139",
+                        "ou moins sérieux mais pour lesquelles la mise en examen n’est pas encore envisagée. Il est ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00140",
+                        "notamment organisé par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 80-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00141",
+                    "l’Article 80-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -566,20 +1142,45 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              const _SubTitle('3.3.2.1 – Les personnes concernées'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00142",
+                  '3.3.2.1 – Les personnes concernées',
+                ),
+              ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Sont notamment témoins assistés, de plein droit ou à la demande, les personnes nommément "
-                      "visées dans un réquisitoire introductif ou supplétif du procureur de la République, celles "
-                      "contre lesquelles existent des indices graves ou concordants, ainsi que les personnes visées "
-                      "par une plainte ou une plainte avec constitution de partie civile. Ces situations sont visées "
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00143",
+                        "Sont notamment témoins assistés, de plein droit ou à la demande, les personnes nommément ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00144",
+                        "visées dans un réquisitoire introductif ou supplétif du procureur de la République, celles ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00145",
+                        "contre lesquelles existent des indices graves ou concordants, ainsi que les personnes visées ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00146",
+                        "par une plainte ou une plainte avec constitution de partie civile. Ces situations sont visées ",
+                      ) +
                       "par ",
                 ),
                 TextSpan(
-                  text:
-                      "les Articles 113-1, 113-2 et 113-6 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00147",
+                    "les Articles 113-1, 113-2 et 113-6 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -589,28 +1190,55 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              const _SubTitle('3.3.2.2 – Les droits du témoin assisté'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00148",
+                  '3.3.2.2 – Les droits du témoin assisté',
+                ),
+              ),
 
-              const _IntroBullet(
-                text:
-                    "Assistance d’un avocat, désigné par lui ou d’office, avec accès au dossier de la procédure.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00149",
+                  "Assistance d’un avocat, désigné par lui ou d’office, avec accès au dossier de la procédure.",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Droit d’obtenir l’interprétation ou la traduction des pièces essentielles du dossier.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00150",
+                  "Droit d’obtenir l’interprétation ou la traduction des pièces essentielles du dossier.",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Droit de demander des confrontations et de formuler des requêtes en annulation.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00151",
+                  "Droit de demander des confrontations et de formuler des requêtes en annulation.",
+                ),
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
-                    "Droit de demander son renvoi devant une juridiction de jugement ou la clôture de la procédure "
-                    "lorsqu’aucun acte d’instruction n’a été accompli depuis quatre mois, en application de ",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00152",
+                      "Droit de demander son renvoi devant une juridiction de jugement ou la clôture de la procédure ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00153",
+                      "lorsqu’aucun acte d’instruction n’a été accompli depuis quatre mois, en application de ",
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "l’Article 175-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00154",
+                    "l’Article 175-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
@@ -620,14 +1248,26 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le témoin assisté est avisé de la fin de l’information, peut présenter des observations et "
-                      "soulever des nullités au moment où le juge statue sur le règlement du dossier, conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00155",
+                        "Le témoin assisté est avisé de la fin de l’information, peut présenter des observations et ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00156",
+                        "soulever des nullités au moment où le juge statue sur le règlement du dossier, conformément à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 175 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00157",
+                    "l’Article 175 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -638,38 +1278,84 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               const SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "En cas de non-respect de ses obligations de comparution, le témoin assisté ne peut pas, "
-                      "devant le juge d’instruction, faire l’objet d’une contrainte par la force publique lorsqu’il "
-                      "est seulement convoqué par un officier de police judiciaire : en effet, ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00158",
+                        "En cas de non-respect de ses obligations de comparution, le témoin assisté ne peut pas, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00159",
+                        "devant le juge d’instruction, faire l’objet d’une contrainte par la force publique lorsqu’il ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00160",
+                        "est seulement convoqué par un officier de police judiciaire : en effet, ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 152 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00161",
+                    "l’Article 152 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      " subordonne l’audition d’un témoin assisté par un officier de police judiciaire à une demande "
-                      "expresse de ce dernier.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00162",
+                        " subordonne l’audition d’un témoin assisté par un officier de police judiciaire à une demande ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00163",
+                        "expresse de ce dernier.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _SubTitle('3.3.2.4 – La mise en examen du témoin assisté'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00164",
+                  '3.3.2.4 – La mise en examen du témoin assisté',
+                ),
+              ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La mise en examen d’un témoin assisté peut intervenir à sa demande ou à l’initiative du juge "
-                      "d’instruction lorsque ce dernier estime que des indices graves ou concordants rendent vraisemblable "
-                      "sa participation à l’infraction. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00165",
+                        "La mise en examen d’un témoin assisté peut intervenir à sa demande ou à l’initiative du juge ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00166",
+                        "d’instruction lorsque ce dernier estime que des indices graves ou concordants rendent vraisemblable ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00167",
+                        "sa participation à l’infraction. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "L’Article 113-6 alinéa 2 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00168",
+                    "L’Article 113-6 alinéa 2 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -677,8 +1363,16 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      " précise que, dans certains cas, le juge a la faculté de maintenir la personne sous le statut "
-                      "de témoin assisté s’il n’est pas en mesure de réunir des indices suffisamment graves ou concordants.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00169",
+                        " précise que, dans certains cas, le juge a la faculté de maintenir la personne sous le statut ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00170",
+                        "de témoin assisté s’il n’est pas en mesure de réunir des indices suffisamment graves ou concordants.",
+                      ),
                 ),
               ]),
             ],
@@ -687,20 +1381,42 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           const SizedBox(height: 20),
 
           _ConditionCard(
-            title: '3.3.3 – Les interrogatoires de la personne mise en examen',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00171",
+              '3.3.3 – Les interrogatoires de la personne mise en examen',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
-              _SubTitle('3.3.3.1 – Les personnes concernées'),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00172",
+                  '3.3.3.1 – Les personnes concernées',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La mise en examen suppose, à peine de nullité, l’existence d’indices graves ou concordants "
-                      "rendant vraisemblable la participation de la personne à l’infraction. Cette condition est posée par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00173",
+                        "La mise en examen suppose, à peine de nullité, l’existence d’indices graves ou concordants ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00174",
+                        "rendant vraisemblable la participation de la personne à l’infraction. Cette condition est posée par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 80-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00175",
+                    "l’Article 80-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -708,24 +1424,66 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ". Lorsque la mise en examen n’est pas possible ou pas nécessaire, le juge peut recourir au statut "
-                      "de témoin assisté.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00176",
+                        ". Lorsque la mise en examen n’est pas possible ou pas nécessaire, le juge peut recourir au statut ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00177",
+                        "de témoin assisté.",
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
 
               _SubTitle(
-                '3.3.3.2 – L’interrogatoire de première comparution d’une personne non témoin assisté',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00178",
+                  '3.3.3.2 – L’interrogatoire de première comparution d’une personne non témoin assisté',
+                ),
               ),
 
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Quand le juge envisage de mettre en examen une personne qui n’a pas encore le statut de témoin "
-                      "assisté, il doit procéder à un interrogatoire de première comparution, conformément aux exigences de ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00179",
+                        "Quand le juge envisage de mettre en examen une personne qui n’a pas encore le statut de témoin ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00180",
+                        "assisté, il doit procéder à un interrogatoire de première comparution, conformément aux exigences de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 116 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00181",
+                    "l’Article 116 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    color: Colors.redAccent,
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00182",
+                    ". En matière criminelle, cet interrogatoire fait l’objet d’un enregistrement audiovisuel, en application de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00183",
+                    "l’Article 116-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -733,36 +1491,55 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ". En matière criminelle, cet interrogatoire fait l’objet d’un enregistrement audiovisuel, en application de ",
-                ),
-                TextSpan(
-                  text: "l’Article 116-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w800,
-                    color: Colors.redAccent,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      ". L’Article 80-2 du Code de procédure pénale permet en outre au juge de convoquer la personne par lettre "
-                      "recommandée, dans un délai compris entre dix jours et deux mois.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00184",
+                        ". L’Article 80-2 du Code de procédure pénale permet en outre au juge de convoquer la personne par lettre ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00185",
+                        "recommandée, dans un délai compris entre dix jours et deux mois.",
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
 
-              _SubTitle('3.3.3.3 – Particularités'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00186",
+                  '3.3.3.3 – Particularités',
+                ),
+              ),
 
               _IntroBullet(
-                text: "La personne mise en examen ne prête pas serment.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00187",
+                  "La personne mise en examen ne prête pas serment.",
+                ),
               ),
               _IntroBullet(
                 text:
-                    "Elle peut demander à être entendue à nouveau, demander des confrontations ou la réalisation d’actes "
-                    "d’instruction complémentaires, notamment sur le fondement de ",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00188",
+                      "Elle peut demander à être entendue à nouveau, demander des confrontations ou la réalisation d’actes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00189",
+                      "d’instruction complémentaires, notamment sur le fondement de ",
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "l’Article 82-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00190",
+                    "l’Article 82-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -775,12 +1552,28 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le procureur de la République et les avocats peuvent prendre la parole au cours des interrogatoires pour "
-                      "formuler des observations ou poser des questions, mais c’est le juge d’instruction qui dirige les débats, "
-                      "conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00191",
+                        "Le procureur de la République et les avocats peuvent prendre la parole au cours des interrogatoires pour ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00192",
+                        "formuler des observations ou poser des questions, mais c’est le juge d’instruction qui dirige les débats, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00193",
+                        "conformément à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 120 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00194",
+                    "l’Article 120 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -794,48 +1587,95 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
           const SizedBox(height: 20),
 
           _ConditionCard(
-            title: '3.3.4 – Les auditions de parties civiles',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00195",
+              '3.3.4 – Les auditions de parties civiles',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _SubTitle('3.3.4.1 – Personnes concernées'),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00196",
+                  '3.3.4.1 – Personnes concernées',
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Toute personne qui se prétend lésée par un crime ou un délit peut se constituer partie civile devant le "
-                      "juge d’instruction en déposant plainte, conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00197",
+                        "Toute personne qui se prétend lésée par un crime ou un délit peut se constituer partie civile devant le ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00198",
+                        "juge d’instruction en déposant plainte, conformément à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 85 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00199",
+                    "l’Article 85 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". La constitution de partie civile déclenche en principe l’action publique si la plainte est recevable.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00200",
+                    ". La constitution de partie civile déclenche en principe l’action publique si la plainte est recevable.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La constitution de partie civile peut être formée par simple déclaration écrite ou orale, sans formalisme "
-                      "rigide, comme le rappelle ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00201",
+                        "La constitution de partie civile peut être formée par simple déclaration écrite ou orale, sans formalisme ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00202",
+                        "rigide, comme le rappelle ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 87 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00203",
+                    "l’Article 87 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
-                TextSpan(text: ". D’autres textes, tels que "),
                 TextSpan(
-                  text: "l’Article 80-3 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00204",
+                    ". D’autres textes, tels que ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00205",
+                    "l’Article 80-3 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -843,51 +1683,109 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ", encadrent l’information de la victime sur ses droits, sa possibilité de se constituer partie civile et les "
-                      "délais pour demander la clôture de la procédure.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00206",
+                        ", encadrent l’information de la victime sur ses droits, sa possibilité de se constituer partie civile et les ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00207",
+                        "délais pour demander la clôture de la procédure.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _SubTitle(
-                '3.3.4.3 – Effets de la constitution de partie civile pour la victime',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00208",
+                  '3.3.4.3 – Effets de la constitution de partie civile pour la victime',
+                ),
               ),
 
-              const _BulletPoint(
-                text:
-                    "La victime devient pleinement partie à la procédure et peut intervenir dans le déroulement de l’information.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00209",
+                  "La victime devient pleinement partie à la procédure et peut intervenir dans le déroulement de l’information.",
+                ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    "Elle peut demander l’annulation d’actes, faire appel de certaines décisions et solliciter la clôture de l’instruction "
-                    "lorsque aucun acte n’a été accompli depuis quatre mois.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00210",
+                      "Elle peut demander l’annulation d’actes, faire appel de certaines décisions et solliciter la clôture de l’instruction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00211",
+                      "lorsque aucun acte n’a été accompli depuis quatre mois.",
+                    ),
               ),
-              const _BulletPoint(
-                text:
-                    "Elle obtient le droit d’être informée régulièrement de l’avancement du dossier.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00212",
+                  "Elle obtient le droit d’être informée régulièrement de l’avancement du dossier.",
+                ),
               ),
 
               const SizedBox(height: 8),
 
-              const _SubTitle('3.3.4.4 – Particularités'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                  "f00213",
+                  '3.3.4.4 – Particularités',
+                ),
+              ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Lors de sa première audition, la partie civile est avisée de ses droits, notamment de la possibilité de formuler des "
-                      "demandes d’actes et des requêtes en annulation, ainsi que des délais dans lesquels elle peut demander la clôture de la "
-                      "procédure. Ces informations découlent notamment de ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00214",
+                        "Lors de sa première audition, la partie civile est avisée de ses droits, notamment de la possibilité de formuler des ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00215",
+                        "demandes d’actes et des requêtes en annulation, ainsi que des délais dans lesquels elle peut demander la clôture de la ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00216",
+                        "procédure. Ces informations découlent notamment de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 89-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00217",
+                    "l’Article 89-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
-                TextSpan(text: " et de "),
                 TextSpan(
-                  text: "l’Article 175-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00218",
+                    " et de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00219",
+                    "l’Article 175-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -898,21 +1796,36 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
               const SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "La partie civile ne prête pas serment. Elle peut demander à être entendue par le juge d’instruction, mais ne peut être "
-                      "auditionnée qu’en présence de son avocat, sauf renonciation expresse. Lors de l’exécution d’une commission rogatoire, ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00220",
+                        "La partie civile ne prête pas serment. Elle peut demander à être entendue par le juge d’instruction, mais ne peut être ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                        "f00221",
+                        "auditionnée qu’en présence de son avocat, sauf renonciation expresse. Lors de l’exécution d’une commission rogatoire, ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 152 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00222",
+                    "l’Article 152 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      " précise que l’audition d’une partie civile par un officier de police judiciaire ne peut intervenir qu’à la demande de celle-ci.",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                    "f00223",
+                    " précise que l’audition d’une partie civile par un officier de police judiciaire ne peut intervenir qu’à la demande de celle-ci.",
+                  ),
                 ),
               ]),
             ],
@@ -920,16 +1833,40 @@ class PaPPInstructionPouvoirsPage extends StatelessWidget {
 
           const SizedBox(height: 22),
 
-          const _NotaBox(
-            title: 'À RETENIR',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+              "f00224",
+              'À RETENIR',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    "Le juge d’instruction dispose de pouvoirs très étendus : constatations sur les lieux, recours à des experts, "
-                    "audition de témoins, mise en place du statut de témoin assisté, mise en examen et prise en compte des droits "
-                    "de la partie civile. Ces pouvoirs sont strictement encadrés par le Code de procédure pénale – en particulier "
-                    "les Articles 81-1, 92, 156 à 169-1, 101 à 113-8, 80-1, 113-1 à 113-7, 116, 120, 85, 87 et 175-1 – afin de concilier "
-                    "efficacité de l’enquête, respect des droits de la défense et protection des victimes.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00225",
+                      "Le juge d’instruction dispose de pouvoirs très étendus : constatations sur les lieux, recours à des experts, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00226",
+                      "audition de témoins, mise en place du statut de témoin assisté, mise en examen et prise en compte des droits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00227",
+                      "de la partie civile. Ces pouvoirs sont strictement encadrés par le Code de procédure pénale – en particulier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00228",
+                      "les Articles 81-1, 92, 156 à 169-1, 101 à 113-8, 80-1, 113-1 à 113-7, 116, 120, 85, 87 et 175-1 – afin de concilier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart",
+                      "f00229",
+                      "efficacité de l’enquête, respect des droits de la défense et protection des victimes.",
+                    ),
               ),
             ],
           ),

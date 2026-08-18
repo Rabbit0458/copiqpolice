@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
   const PaDisparitionInquietanteConditionsGpxSchool({super.key});
@@ -19,8 +20,8 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
         : const Color(0xFF1F1F1F).withValues(alpha: .95);
 
     final Color cardColor = isDark
-? const Color(0xFF1E272E)
-: const Color(0xFFE3F2FD);
+        ? const Color(0xFF1E272E)
+        : const Color(0xFFE3F2FD);
     const accent = Color(0xFF1565C0);
 
     // Couleur pour les références d’articles
@@ -34,7 +35,11 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
         centerTitle: true,
         iconTheme: IconThemeData(color: textMain),
         title: Text(
-          'Disparitions inquiétantes — Chapitre 1',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+            "f00001",
+            'Disparitions inquiétantes — Chapitre 1',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w800,
             fontSize: 18,
@@ -50,7 +55,11 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // Titre principal
           // ---------------------------------------------------------------
           Text(
-            'Conditions d’application des articles 74-1 et 80-4 du Code de procédure pénale',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+              "f00002",
+              'Conditions d’application des articles 74-1 et 80-4 du Code de procédure pénale',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -60,14 +69,32 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'Deux conditions doivent être réunies pour mettre en œuvre le cadre '
-            'juridique des disparitions inquiétantes :',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00003",
+                  'Deux conditions doivent être réunies pour mettre en œuvre le cadre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00004",
+                  'juridique des disparitions inquiétantes :',
+                ),
           ),
           const SizedBox(height: 8),
-          const _IntroBullet(text: 'La disparition doit être flagrante.'),
-          const _IntroBullet(
-            text: 'La disparition doit présenter un caractère inquiétant.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+              "f00005",
+              'La disparition doit être flagrante.',
+            ),
+          ),
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+              "f00006",
+              'La disparition doit présenter un caractère inquiétant.',
+            ),
           ),
 
           const SizedBox(height: 18),
@@ -75,26 +102,70 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // ---------------------------------------------------------------
           // 1.1 La disparition flagrante
           // ---------------------------------------------------------------
-          const _SubTitle('1.1 — La disparition « flagrante »'),
-          const _Paragraph.rich([
-            TextSpan(text: 'L’'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+              "f00007",
+              '1.1 — La disparition « flagrante »',
+            ),
+          ),
+          _Paragraph.rich([
             TextSpan(
-              text: 'article 74-1 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                "f00008",
+                'L’',
+              ),
+            ),
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                "f00009",
+                'article 74-1 du Code de procédure pénale',
+              ),
               style: TextStyle(fontWeight: FontWeight.w800, color: articleRed),
             ),
             TextSpan(
               text:
-                  ' exige le caractère flagrant de la disparition d’un mineur ou d’un '
-                  'majeur protégé. Il est précisé que la disparition « vient '
-                  'd’intervenir ou d’être constatée ». Cette exigence vaut également '
-                  'pour la disparition inquiétante d’un majeur.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00010",
+                    ' exige le caractère flagrant de la disparition d’un mineur ou d’un ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00011",
+                    'majeur protégé. Il est précisé que la disparition « vient ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00012",
+                    'd’intervenir ou d’être constatée ». Cette exigence vaut également ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00013",
+                    'pour la disparition inquiétante d’un majeur.',
+                  ),
             ),
           ]),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'En l’absence de flagrance, le procureur de la République conserve la '
-            'possibilité soit d’ordonner une enquête préliminaire, soit de requérir '
-            'l’ouverture d’une information pour recherche des causes de la disparition.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00014",
+                  'En l’absence de flagrance, le procureur de la République conserve la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00015",
+                  'possibilité soit d’ordonner une enquête préliminaire, soit de requérir ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00016",
+                  'l’ouverture d’une information pour recherche des causes de la disparition.',
+                ),
           ),
 
           const SizedBox(height: 18),
@@ -102,19 +173,49 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // ---------------------------------------------------------------
           // 1.2 La disparition est inquiétante
           // ---------------------------------------------------------------
-          const _SubTitle('1.2 — La disparition est inquiétante'),
-          const _Paragraph.rich([
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+              "f00017",
+              '1.2 — La disparition est inquiétante',
+            ),
+          ),
+          _Paragraph.rich([
             TextSpan(
-              text: 'Les articles 74-1 et 80-4 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                "f00018",
+                'Les articles 74-1 et 80-4 du Code de procédure pénale',
+              ),
               style: TextStyle(fontWeight: FontWeight.w800, color: articleRed),
             ),
             TextSpan(
               text:
-                  ' instaurent un cadre spécifique d’enquête reposant sur la notion '
-                  'de disparition inquiétante. Ce cadre peut être mis en œuvre dans '
-                  'deux grandes hypothèses : les disparitions obligatoirement '
-                  'inquiétantes et les disparitions inquiétantes en raison des '
-                  'circonstances.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00019",
+                    ' instaurent un cadre spécifique d’enquête reposant sur la notion ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00020",
+                    'de disparition inquiétante. Ce cadre peut être mis en œuvre dans ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00021",
+                    'deux grandes hypothèses : les disparitions obligatoirement ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00022",
+                    'inquiétantes et les disparitions inquiétantes en raison des ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                    "f00023",
+                    'circonstances.',
+                  ),
             ),
           ]),
 
@@ -124,23 +225,59 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // Carte 1 : disparitions obligatoirement inquiétantes
           // ---------------------------------------------------------------
           _ConditionCard(
-            title: '1.2.1 — Les disparitions obligatoirement inquiétantes',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+              "f00024",
+              '1.2.1 — Les disparitions obligatoirement inquiétantes',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
-              _BulletPoint(text: 'Toute disparition de mineur.'),
-              _BulletPoint(text: 'Toute disparition de majeur protégé.'),
-              SizedBox(height: 6),
-              _Paragraph(
-                'Les majeurs protégés sont les personnes placées sous sauvegarde '
-                'de justice, sous tutelle ou sous curatelle. ',
+            children: [
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00025",
+                  'Toute disparition de mineur.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00026",
+                  'Toute disparition de majeur protégé.',
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'À ce stade, toute disparition doit être considérée comme inquiétante, '
-                'même si l’intéressé a l’habitude de fuguer ou s’il apparaît '
-                'clairement qu’il s’agit d’une disparition volontaire.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00027",
+                      'Les majeurs protégés sont les personnes placées sous sauvegarde ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00028",
+                      'de justice, sous tutelle ou sous curatelle. ',
+                    ),
+              ),
+              SizedBox(height: 6),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00029",
+                      'À ce stade, toute disparition doit être considérée comme inquiétante, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00030",
+                      'même si l’intéressé a l’habitude de fuguer ou s’il apparaît ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00031",
+                      'clairement qu’il s’agit d’une disparition volontaire.',
+                    ),
               ),
             ],
           ),
@@ -151,43 +288,100 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // Carte 2 : disparitions inquiétantes en raison des circonstances
           // ---------------------------------------------------------------
           _ConditionCard(
-            title:
-                '1.2.2 — Les disparitions inquiétantes en raison des circonstances',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+              "f00032",
+              '1.2.2 — Les disparitions inquiétantes en raison des circonstances',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'Une disparition peut être qualifiée d’inquiétante ou suspecte lorsqu’elle '
-                'fait craindre que la personne disparue est en danger, en fonction '
-                'de plusieurs critères.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00033",
+                      'Une disparition peut être qualifiée d’inquiétante ou suspecte lorsqu’elle ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00034",
+                      'fait craindre que la personne disparue est en danger, en fonction ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00035",
+                      'de plusieurs critères.',
+                    ),
               ),
               SizedBox(height: 8),
-              _SubTitle('Critères liés à la personne'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00036",
+                  'Critères liés à la personne',
+                ),
+              ),
               _BulletPoint(
-                text:
-                    'Son âge (très jeune, personne âgée, personne vulnérable…).',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00037",
+                  'Son âge (très jeune, personne âgée, personne vulnérable…).',
+                ),
               ),
-              _BulletPoint(text: 'Son état de santé :'),
-              _IntroBullet(
-                text:
-                    'Personne sous traitement médical lourd ou atteinte d’une grave maladie.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00038",
+                  'Son état de santé :',
+                ),
               ),
               _IntroBullet(
-                text:
-                    'Personne en situation de handicap ou ayant subi un accident récent.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00039",
+                  'Personne sous traitement médical lourd ou atteinte d’une grave maladie.',
+                ),
               ),
               _IntroBullet(
-                text:
-                    'Personne dépressive ou présentant des tendances suicidaires.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00040",
+                  'Personne en situation de handicap ou ayant subi un accident récent.',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00041",
+                  'Personne dépressive ou présentant des tendances suicidaires.',
+                ),
               ),
               SizedBox(height: 8),
-              _SubTitle('Critères liés aux circonstances de la disparition'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                  "f00042",
+                  'Critères liés aux circonstances de la disparition',
+                ),
+              ),
               _BulletPoint(
                 text:
-                    'Disparition survenue de manière subite et inexpliquée, sans '
-                    'élément laissant penser à une simple volonté de rompre avec '
-                    'l’entourage habituel.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00043",
+                      'Disparition survenue de manière subite et inexpliquée, sans ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00044",
+                      'élément laissant penser à une simple volonté de rompre avec ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00045",
+                      'l’entourage habituel.',
+                    ),
               ),
             ],
           ),
@@ -197,29 +391,69 @@ class PaDisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // ---------------------------------------------------------------
           // Nota + Rappel pénal
           // ---------------------------------------------------------------
-          const _NotaBox(
+          _NotaBox(
             bodySpans: [
               TextSpan(
                 text:
-                    'Chaque situation signalée doit faire l’objet d’un examen attentif. '
-                    'En cas de doute, le fonctionnaire de police doit se rapprocher de '
-                    'son supérieur hiérarchique et du procureur de la République.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00046",
+                      'Chaque situation signalée doit faire l’objet d’un examen attentif. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00047",
+                      'En cas de doute, le fonctionnaire de police doit se rapprocher de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00048",
+                      'son supérieur hiérarchique et du procureur de la République.',
+                    ),
               ),
             ],
           ),
           const SizedBox(height: 10),
-          const _NotaBox(
+          _NotaBox(
             title: 'RAPPEL',
             bodySpans: [
               TextSpan(
                 text:
-                    'Le fait, pour une personne ayant connaissance de la disparition '
-                    'd’un mineur de quinze ans, de ne pas informer les autorités '
-                    'judiciaires ou administratives afin d’empêcher ou de retarder la '
-                    'mise en œuvre des procédures de recherche prévues par l’article '
-                    '74-1 du Code de procédure pénale, est puni de deux ans '
-                    'd’emprisonnement et de 30 000 € d’amende (article 434-4-1 du '
-                    'Code pénal).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00049",
+                      'Le fait, pour une personne ayant connaissance de la disparition ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00050",
+                      'd’un mineur de quinze ans, de ne pas informer les autorités ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00051",
+                      'judiciaires ou administratives afin d’empêcher ou de retarder la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00052",
+                      'mise en œuvre des procédures de recherche prévues par l’article ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00053",
+                      '74-1 du Code de procédure pénale, est puni de deux ans ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00054",
+                      'd’emprisonnement et de 30 000 € d’amende (article 434-4-1 du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart",
+                      "f00055",
+                      'Code pénal).',
+                    ),
               ),
             ],
           ),

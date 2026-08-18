@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaConntroleIdentiteIntroGpxSchool extends StatelessWidget {
   const PaConntroleIdentiteIntroGpxSchool({super.key});
@@ -19,11 +20,11 @@ class PaConntroleIdentiteIntroGpxSchool extends StatelessWidget {
         : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
-? const Color(0xFF424242)
-: const Color(0xFFF5F5F5);
+        ? const Color(0xFF424242)
+        : const Color(0xFFF5F5F5);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
     final Color articleColor = isDark
         ? const Color(0xFFFF8A80)
@@ -38,7 +39,11 @@ class PaConntroleIdentiteIntroGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           'Introduction',
@@ -55,7 +60,11 @@ class PaConntroleIdentiteIntroGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO ============================
           Text(
-            'Introduction au contrôle d’identité',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+              "f00002",
+              'Introduction au contrôle d’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,9 +73,21 @@ class PaConntroleIdentiteIntroGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Place des contrôles, relevés et vérifications d’identité dans l’activité de police, équilibre entre '
-            'protection des libertés individuelles et nécessités de la recherche des infractions et de la prévention '
-            'des atteintes à l’ordre public.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                  "f00003",
+                  'Place des contrôles, relevés et vérifications d’identité dans l’activité de police, équilibre entre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                  "f00004",
+                  'protection des libertés individuelles et nécessités de la recherche des infractions et de la prévention ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                  "f00005",
+                  'des atteintes à l’ordre public.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -77,83 +98,175 @@ class PaConntroleIdentiteIntroGpxSchool extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: 'Les opérations de contrôle d’identité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+              "f00006",
+              'Les opérations de contrôle d’identité',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               // ===================== PARAGRAPHE 1 ========================
-              const _Paragraph(
-                'Les contrôles, les relevés et les vérifications d’identité font partie des opérations de police '
-                'tendant à établir l’identité d’une personne. Ils doivent toujours être mis en œuvre dans le respect '
-                'd’un équilibre entre, d’une part, l’exercice des libertés individuelles dont l’autorité judiciaire est '
-                'gardienne et, d’autre part, la nécessité de rechercher les infractions et de prévenir les atteintes '
-                'à l’ordre public.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                      "f00007",
+                      'Les contrôles, les relevés et les vérifications d’identité font partie des opérations de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                      "f00008",
+                      'tendant à établir l’identité d’une personne. Ils doivent toujours être mis en œuvre dans le respect ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                      "f00009",
+                      'd’un équilibre entre, d’une part, l’exercice des libertés individuelles dont l’autorité judiciaire est ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                      "f00010",
+                      'gardienne et, d’autre part, la nécessité de rechercher les infractions et de prévenir les atteintes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                      "f00011",
+                      'à l’ordre public.',
+                    ),
               ),
               const SizedBox(height: 12),
 
               // ===================== PARAGRAPHE 2 (ARTICLES ROUGES) ======
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Les conditions juridiques de mise en œuvre de ces opérations et leurs modalités d’application '
-                      'sont prévues par le ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00012",
+                        'Les conditions juridiques de mise en œuvre de ces opérations et leurs modalités d’application ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00013",
+                        'sont prévues par le ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                    "f00014",
+                    'code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(text: ', aux '),
                 TextSpan(
-                  text: 'articles 78-1 à 78-7',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                    "f00015",
+                    ', aux ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                    "f00016",
+                    'articles 78-1 à 78-7',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      '. Ces dispositions encadrent la façon dont le policier, qu’il agisse dans un cadre de police '
-                      'judiciaire ou de police administrative, peut inviter une personne à justifier de son identité, '
-                      'relever celle-ci ou procéder à une vérification plus approfondie.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00017",
+                        '. Ces dispositions encadrent la façon dont le policier, qu’il agisse dans un cadre de police ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00018",
+                        'judiciaire ou de police administrative, peut inviter une personne à justifier de son identité, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00019",
+                        'relever celle-ci ou procéder à une vérification plus approfondie.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 12),
 
               // ===================== PARAGRAPHE 3 (CESEDA) ================
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Ces différents textes sont complétés par les dispositions contenues dans le ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                    "f00020",
+                    'Ces différents textes sont complétés par les dispositions contenues dans le ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'code de l’entrée et du séjour des étrangers et du droit d’asile',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                    "f00021",
+                    'code de l’entrée et du séjour des étrangers et du droit d’asile',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' (CESEDA), qui fait obligation aux personnes de nationalité étrangère, à la suite d’un contrôle '
-                      'd’identité, de présenter les pièces ou documents sous le couvert desquels elles sont autorisées '
-                      'à circuler ou séjourner en France.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00022",
+                        ' (CESEDA), qui fait obligation aux personnes de nationalité étrangère, à la suite d’un contrôle ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00023",
+                        'd’identité, de présenter les pièces ou documents sous le couvert desquels elles sont autorisées ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                        "f00024",
+                        'à circuler ou séjourner en France.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'L’enjeu pour l’officier de police judiciaire et l’agent de police judiciaire est donc de maîtriser '
-                        'ces différents cadres juridiques afin de sécuriser la procédure, de respecter les droits des '
-                        'personnes contrôlées et de pouvoir justifier, à tout moment, de la finalité et de la légalité '
-                        'de l’opération menée.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                          "f00025",
+                          'L’enjeu pour l’officier de police judiciaire et l’agent de police judiciaire est donc de maîtriser ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                          "f00026",
+                          'ces différents cadres juridiques afin de sécuriser la procédure, de respecter les droits des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                          "f00027",
+                          'personnes contrôlées et de pouvoir justifier, à tout moment, de la finalité et de la légalité ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart",
+                          "f00028",
+                          'de l’opération menée.',
+                        ),
                   ),
                 ],
               ),
@@ -412,9 +525,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

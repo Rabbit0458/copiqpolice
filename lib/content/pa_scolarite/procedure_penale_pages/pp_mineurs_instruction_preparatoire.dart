@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Texte rouge pour les articles de loi / références légales
 TextSpan _lawRef(String text) {
@@ -47,10 +48,18 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
             Icons.arrow_back_ios_new_rounded,
             color: isDark ? Colors.white : const Color(0xFF050505),
           ),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Instruction préparatoire — mineurs',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+            "f00002",
+            'Instruction préparatoire — mineurs',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -84,13 +93,25 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'CHAPITRE 2 : INSTRUCTION PRÉPARATOIRE',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00003",
+                        'CHAPITRE 2 : INSTRUCTION PRÉPARATOIRE',
+                      ),
                       style: textMain,
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Organisation et déroulement de l’instruction préparatoire lorsqu’un mineur est mis en cause : magistrats spécialisés, ouverture de l’information, '
-                      'mesures éducatives et de sûreté, contrôle judiciaire, A.R.S.E., détention provisoire et clôture de l’instruction.',
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00004",
+                            'Organisation et déroulement de l’instruction préparatoire lorsqu’un mineur est mis en cause : magistrats spécialisés, ouverture de l’information, ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00005",
+                            'mesures éducatives et de sûreté, contrôle judiciaire, A.R.S.E., détention provisoire et clôture de l’instruction.',
+                          ),
                       style: textSoft,
                       textAlign: TextAlign.justify,
                     ),
@@ -102,7 +123,11 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
               /// 2.1 — LE JUGE D'INSTRUCTION
               ////////////////////////////////////////////////////////////////
               _ConditionCard(
-                title: '2.1 — Le juge d’instruction',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                  "f00006",
+                  '2.1 — Le juge d’instruction',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -112,25 +137,55 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Les crimes et délits reprochés à un mineur sont instruits par un juge spécialisé : le juge d’instruction chargé spécialement des affaires '
-                          'concernant les mineurs, conformément à ',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00007",
+                            'Les crimes et délits reprochés à un mineur sont instruits par un juge spécialisé : le juge d’instruction chargé spécialement des affaires ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00008",
+                            'concernant les mineurs, conformément à ',
+                          ),
                     ),
                     _lawRef(
-                      'l’article L. 12-1, 3° du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00009",
+                        'l’article L. 12-1, 3° du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(text: ' (C.J.P.M.).'),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00010",
+                        ' (C.J.P.M.).',
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Ce juge est désigné, dans chaque tribunal judiciaire doté d’un pôle de l’instruction et dans le ressort duquel siège un tribunal pour enfants, '
-                          'par le premier président de la cour d’appel compétente, en application de ',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00011",
+                            'Ce juge est désigné, dans chaque tribunal judiciaire doté d’un pôle de l’instruction et dans le ressort duquel siège un tribunal pour enfants, ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00012",
+                            'par le premier président de la cour d’appel compétente, en application de ',
+                          ),
                     ),
                     _lawRef(
-                      'l’article D. 221-1 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00013",
+                        'l’article D. 221-1 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: '.'),
                   ]),
@@ -143,7 +198,11 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
               /// 2.2 — DÉROULEMENT DE L’INSTRUCTION
               ////////////////////////////////////////////////////////////////
               _ConditionCard(
-                title: '2.2 — Déroulement de l’instruction',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                  "f00014",
+                  '2.2 — Déroulement de l’instruction',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -155,114 +214,227 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
                   ////////////////////////////////////////////////////////////
                   /// 2.2.1 — L’ouverture d’information
                   ////////////////////////////////////////////////////////////
-                  const _SubTitle('2.2.1 — L’ouverture d’information'),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00015",
+                      '2.2.1 — L’ouverture d’information',
+                    ),
+                  ),
 
-                  const _SubTitle('2.2.1.1 — Les cas'),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00016",
+                      '2.2.1.1 — Les cas',
+                    ),
+                  ),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'En matière criminelle, l’information préalable est obligatoire (',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00017",
+                        'En matière criminelle, l’information préalable est obligatoire (',
+                      ),
                     ),
                     _lawRef(
-                      'article L. 423-3 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00018",
+                        'article L. 423-3 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ').'),
                   ]),
                   const SizedBox(height: 4),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Lorsque l’infraction reprochée au mineur est un délit ou une contravention de cinquième classe, l’information est facultative (',
-                    ),
-                    _lawRef(
-                      'article L. 423-2 du Code de la justice pénale des mineurs',
-                    ),
-                    const TextSpan(text: ').'),
-                  ]),
-
-                  const SizedBox(height: 10),
-
-                  const _SubTitle('2.2.1.2 — La compétence territoriale'),
-                  _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'L’information est ouverte près du tribunal judiciaire, siège d’un tribunal pour enfants, compétent au regard : du lieu de résidence du mineur '
-                          '(ou de ses représentants légaux), du lieu où le mineur est placé, du lieu de commission de l’infraction, ou du lieu où le mineur a été trouvé (',
-                    ),
-                    _lawRef(
-                      'article L. 231-1 du Code de la justice pénale des mineurs',
-                    ),
-                    const TextSpan(text: ').'),
-                  ]),
-
-                  const SizedBox(height: 10),
-
-                  const _SubTitle('2.2.1.3 — L’enquête de personnalité'),
-                  _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Lorsqu’il saisit le juge d’instruction, le procureur de la République ordonne une enquête de personnalité. Celle-ci consiste en un recueil de '
-                          'renseignements socio-éducatifs, de la compétence exclusive des services de la protection judiciaire de la jeunesse (P.J.J.), destiné à procéder à '
-                          'une évaluation synthétique de la personnalité et de la situation du mineur (',
-                    ),
-                    _lawRef(
-                      'article L. 322-3 du Code de la justice pénale des mineurs',
-                    ),
-                    const TextSpan(text: ').'),
-                  ]),
-
-                  const SizedBox(height: 10),
-
-                  const _SubTitle(
-                    '2.2.1.4 — Les mesures prises par le juge d’instruction',
-                  ),
-                  const _Paragraph.rich([
                     TextSpan(
-                      text: 'Lorsqu’il est saisi, le juge d’instruction :',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00019",
+                        'Lorsque l’infraction reprochée au mineur est un délit ou une contravention de cinquième classe, l’information est facultative (',
+                      ),
+                    ),
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00020",
+                        'article L. 423-2 du Code de la justice pénale des mineurs',
+                      ),
+                    ),
+                    const TextSpan(text: ').'),
+                  ]),
+
+                  const SizedBox(height: 10),
+
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00021",
+                      '2.2.1.2 — La compétence territoriale',
+                    ),
+                  ),
+                  _Paragraph.rich([
+                    TextSpan(
+                      text:
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00022",
+                            'L’information est ouverte près du tribunal judiciaire, siège d’un tribunal pour enfants, compétent au regard : du lieu de résidence du mineur ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00023",
+                            '(ou de ses représentants légaux), du lieu où le mineur est placé, du lieu de commission de l’infraction, ou du lieu où le mineur a été trouvé (',
+                          ),
+                    ),
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00024",
+                        'article L. 231-1 du Code de la justice pénale des mineurs',
+                      ),
+                    ),
+                    const TextSpan(text: ').'),
+                  ]),
+
+                  const SizedBox(height: 10),
+
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00025",
+                      '2.2.1.3 — L’enquête de personnalité',
+                    ),
+                  ),
+                  _Paragraph.rich([
+                    TextSpan(
+                      text:
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00026",
+                            'Lorsqu’il saisit le juge d’instruction, le procureur de la République ordonne une enquête de personnalité. Celle-ci consiste en un recueil de ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00027",
+                            'renseignements socio-éducatifs, de la compétence exclusive des services de la protection judiciaire de la jeunesse (P.J.J.), destiné à procéder à ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00028",
+                            'une évaluation synthétique de la personnalité et de la situation du mineur (',
+                          ),
+                    ),
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00029",
+                        'article L. 322-3 du Code de la justice pénale des mineurs',
+                      ),
+                    ),
+                    const TextSpan(text: ').'),
+                  ]),
+
+                  const SizedBox(height: 10),
+
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00030",
+                      '2.2.1.4 — Les mesures prises par le juge d’instruction',
+                    ),
+                  ),
+                  _Paragraph.rich([
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00031",
+                        'Lorsqu’il est saisi, le juge d’instruction :',
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _IntroBullet(
-                    text:
-                        'doit ordonner une mesure judiciaire d’investigation éducative (M.J.I.E.), en application de ',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00032",
+                      'doit ordonner une mesure judiciaire d’investigation éducative (M.J.I.E.), en application de ',
+                    ),
                   ),
                   _Paragraph.rich([
                     _lawRef(
-                      'l’article L. 432-1 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00033",
+                        'l’article L. 432-1 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          '. Cette mesure consiste en une évaluation approfondie et interdisciplinaire de la personnalité et de la situation du mineur.',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00034",
+                        '. Cette mesure consiste en une évaluation approfondie et interdisciplinaire de la personnalité et de la situation du mineur.',
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _IntroBullet(
-                    text:
-                        'peut ordonner une mesure éducative judiciaire provisoire (M.E.J.P.) (',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00035",
+                      'peut ordonner une mesure éducative judiciaire provisoire (M.E.J.P.) (',
+                    ),
                   ),
                   _Paragraph.rich([
                     _lawRef(
-                      'article L. 432-2 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00036",
+                        'article L. 432-2 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          '), après audition du mineur, afin d’engager un suivi éducatif.',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00037",
+                        '), après audition du mineur, afin d’engager un suivi éducatif.',
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Le contenu de la M.E.J.P. repose sur quatre grands modules (insertion, réparation, santé, placement) ainsi que sur des interdictions '
-                          '(paraître en certains lieux, entrer en contact avec certaines personnes, se rendre dans certains secteurs, utiliser des comptes d’accès à des '
-                          'services de plateformes en ligne) et des obligations (remettre un objet détenu, suivre un stage de formation civique, etc.), prévues aux ',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00038",
+                            'Le contenu de la M.E.J.P. repose sur quatre grands modules (insertion, réparation, santé, placement) ainsi que sur des interdictions ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00039",
+                            '(paraître en certains lieux, entrer en contact avec certaines personnes, se rendre dans certains secteurs, utiliser des comptes d’accès à des ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00040",
+                            'services de plateformes en ligne) et des obligations (remettre un objet détenu, suivre un stage de formation civique, etc.), prévues aux ',
+                          ),
                     ),
                     _lawRef(
-                      'articles L. 112-2, 1° à 9° bis du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00041",
+                        'articles L. 112-2, 1° à 9° bis du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          ', qui peuvent être prononcées alternativement ou cumulativement.',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00042",
+                        ', qui peuvent être prononcées alternativement ou cumulativement.',
+                      ),
                     ),
                   ]),
 
@@ -271,162 +443,353 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
                   ////////////////////////////////////////////////////////////
                   /// 2.2.2 — Le contrôle judiciaire
                   ////////////////////////////////////////////////////////////
-                  const _SubTitle('2.2.2 — Le contrôle judiciaire'),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00043",
+                      '2.2.2 — Le contrôle judiciaire',
+                    ),
+                  ),
 
-                  const _SubTitle('2.2.2.1 — Les conditions'),
-                  const _Paragraph(
-                    'Le recours au contrôle judiciaire pour un mineur est strictement encadré et varie en fonction de son âge et de la gravité des faits.',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00044",
+                      '2.2.2.1 — Les conditions',
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00045",
+                      'Le recours au contrôle judiciaire pour un mineur est strictement encadré et varie en fonction de son âge et de la gravité des faits.',
+                    ),
                   ),
                   const SizedBox(height: 6),
-                  const _SubTitle('Mineur de moins de 13 ans'),
-                  const _Paragraph(
-                    'Le mineur âgé de moins de 13 ans ne peut en aucun cas être placé sous contrôle judiciaire.',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00046",
+                      'Mineur de moins de 13 ans',
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00047",
+                      'Le mineur âgé de moins de 13 ans ne peut en aucun cas être placé sous contrôle judiciaire.',
+                    ),
                   ),
                   const SizedBox(height: 6),
 
-                  const _SubTitle('Mineur âgé de moins de 16 ans'),
-                  const _Paragraph(
-                    'Le mineur âgé de moins de 16 ans peut être placé sous contrôle judiciaire :',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00048",
+                      'Mineur âgé de moins de 16 ans',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text: 's’il encourt une peine criminelle ;',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00049",
+                      'Le mineur âgé de moins de 16 ans peut être placé sous contrôle judiciaire :',
+                    ),
                   ),
-                  const _IntroBullet(
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00050",
+                      's’il encourt une peine criminelle ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00051",
+                      'ou s’il encourt une peine d’emprisonnement égale ou supérieure à 7 ans ;',
+                    ),
+                  ),
+                  _IntroBullet(
                     text:
-                        'ou s’il encourt une peine d’emprisonnement égale ou supérieure à 7 ans ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                          "f00052",
+                          'ou s’il encourt une peine d’emprisonnement égale ou supérieure à 5 ans et qu’il a déjà fait l’objet d’une mesure éducative, d’une M.J.I.E., d’une mesure de sûreté, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                          "f00053",
+                          'd’une déclaration de culpabilité ou d’une peine dans une autre procédure ayant donné lieu à un rapport datant de moins d’un an ;',
+                        ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'ou s’il encourt une peine d’emprisonnement égale ou supérieure à 5 ans et qu’il a déjà fait l’objet d’une mesure éducative, d’une M.J.I.E., d’une mesure de sûreté, '
-                        'd’une déclaration de culpabilité ou d’une peine dans une autre procédure ayant donné lieu à un rapport datant de moins d’un an ;',
-                  ),
-                  const _IntroBullet(
-                    text:
-                        'ou si la peine encourue est au moins égale à 5 ans d’emprisonnement pour un délit de violences volontaires, d’agression sexuelle, ou un délit commis avec la circonstance aggravante de violences.',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00054",
+                      'ou si la peine encourue est au moins égale à 5 ans d’emprisonnement pour un délit de violences volontaires, d’agression sexuelle, ou un délit commis avec la circonstance aggravante de violences.',
+                    ),
                   ),
 
                   const SizedBox(height: 8),
 
-                  const _SubTitle('Mineur âgé d’au moins 16 ans'),
-                  const _Paragraph(
-                    'Le mineur âgé d’au moins 16 ans peut être placé sous contrôle judiciaire :',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00055",
+                      'Mineur âgé d’au moins 16 ans',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text: 's’il encourt une peine criminelle ;',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00056",
+                      'Le mineur âgé d’au moins 16 ans peut être placé sous contrôle judiciaire :',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text: 'ou s’il encourt une peine d’emprisonnement.',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00057",
+                      's’il encourt une peine criminelle ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00058",
+                      'ou s’il encourt une peine d’emprisonnement.',
+                    ),
                   ),
                   const SizedBox(height: 8),
 
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Lorsque le mineur est poursuivi pour l’une des infractions de nature sexuelle mentionnées à ',
-                    ),
-                    _lawRef('l’article 706-47 du Code de procédure pénale'),
-                    const TextSpan(
-                      text:
-                          ', le C.J.P.M. prévoit une transmission d’informations : une copie de l’ordonnance de placement sous contrôle judiciaire peut être adressée à la '
-                          'personne chez qui le mineur demeure, à l’autorité académique et, le cas échéant, à l’établissement scolaire où il est scolarisé (',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00059",
+                        'Lorsque le mineur est poursuivi pour l’une des infractions de nature sexuelle mentionnées à ',
+                      ),
                     ),
                     _lawRef(
-                      'article L. 331-6 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00060",
+                        'l’article 706-47 du Code de procédure pénale',
+                      ),
+                    ),
+                    TextSpan(
+                      text:
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00061",
+                            ', le C.J.P.M. prévoit une transmission d’informations : une copie de l’ordonnance de placement sous contrôle judiciaire peut être adressée à la ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00062",
+                            'personne chez qui le mineur demeure, à l’autorité académique et, le cas échéant, à l’établissement scolaire où il est scolarisé (',
+                          ),
+                    ),
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00063",
+                        'article L. 331-6 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ').'),
                   ]),
 
                   const SizedBox(height: 10),
 
-                  const _SubTitle('2.2.2.2 — Les obligations'),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00064",
+                      '2.2.2.2 — Les obligations',
+                    ),
+                  ),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Les obligations et interdictions susceptibles d’être prononcées dans le cadre du contrôle judiciaire sont limitativement énumérées par ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00065",
+                        'Les obligations et interdictions susceptibles d’être prononcées dans le cadre du contrôle judiciaire sont limitativement énumérées par ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article L. 331-2 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00066",
+                        'l’article L. 331-2 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          ' : ne pas sortir de certaines limites territoriales, ne s’absenter du domicile qu’à certaines conditions, suivre une scolarité ou une formation, exercer une '
-                          'activité professionnelle, etc.',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00067",
+                            ' : ne pas sortir de certaines limites territoriales, ne s’absenter du domicile qu’à certaines conditions, suivre une scolarité ou une formation, exercer une ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00068",
+                            'activité professionnelle, etc.',
+                          ),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph(
-                    'La durée du contrôle judiciaire n’est pas strictement limitée par les textes. Le juge d’instruction assure le suivi de cette mesure pendant toute la durée de l’instruction.',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00069",
+                      'La durée du contrôle judiciaire n’est pas strictement limitée par les textes. Le juge d’instruction assure le suivi de cette mesure pendant toute la durée de l’instruction.',
+                    ),
                   ),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Lorsqu’il existe une ou plusieurs raisons plausibles de soupçonner que le mineur n’a pas respecté certaines de ces obligations, il peut être placé en rétention '
-                          'sur décision d’un officier de police judiciaire (',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00070",
+                            'Lorsqu’il existe une ou plusieurs raisons plausibles de soupçonner que le mineur n’a pas respecté certaines de ces obligations, il peut être placé en rétention ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00071",
+                            'sur décision d’un officier de police judiciaire (',
+                          ),
                     ),
                     _lawRef(
-                      'article L. 331-7 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00072",
+                        'article L. 331-7 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ').'),
                   ]),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text: 'Dans ce cas, il bénéficie des droits prévus par ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00073",
+                        'Dans ce cas, il bénéficie des droits prévus par ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article L. 332-1 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00074",
+                        'l’article L. 332-1 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          ' (voir la partie relative à la rétention dans le cadre des mandats).',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00075",
+                        ' (voir la partie relative à la rétention dans le cadre des mandats).',
+                      ),
                     ),
                   ]),
 
                   const SizedBox(height: 10),
 
-                  const _SubTitle('2.2.2.3 — Déroulement et fin'),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00076",
+                      '2.2.2.3 — Déroulement et fin',
+                    ),
+                  ),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'La révocation du contrôle judiciaire des mineurs âgés de 16 à 18 ans obéit à des conditions strictes : elle n’est possible que si deux conditions sont réunies, '
-                          'conformément à ',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00077",
+                            'La révocation du contrôle judiciaire des mineurs âgés de 16 à 18 ans obéit à des conditions strictes : elle n’est possible que si deux conditions sont réunies, ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00078",
+                            'conformément à ',
+                          ),
                     ),
                     _lawRef(
-                      'l’article L. 334-5 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00079",
+                        'l’article L. 334-5 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ' :'),
                   ]),
                   const SizedBox(height: 6),
-                  const _IntroBullet(
-                    text:
-                        'la violation des obligations du contrôle judiciaire est répétée ou d’une particulière gravité ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00080",
+                      'la violation des obligations du contrôle judiciaire est répétée ou d’une particulière gravité ;',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'et le rappel ou l’aggravation de ces obligations ne suffit plus à atteindre les objectifs prévus par ',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00081",
+                      'et le rappel ou l’aggravation de ces obligations ne suffit plus à atteindre les objectifs prévus par ',
+                    ),
                   ),
                   _Paragraph.rich([
-                    _lawRef('l’article 144 du Code de procédure pénale'),
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00082",
+                        'l’article 144 du Code de procédure pénale',
+                      ),
+                    ),
                     const TextSpan(text: '.'),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Le juge des enfants ou le juge d’instruction peut ordonner la modification ou la mainlevée du contrôle judiciaire (',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00083",
+                        'Le juge des enfants ou le juge d’instruction peut ordonner la modification ou la mainlevée du contrôle judiciaire (',
+                      ),
                     ),
                     _lawRef(
-                      'article L. 331-5 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00084",
+                        'article L. 331-5 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ') :'),
                   ]),
-                  const _IntroBullet(text: 'soit d’office ;'),
-                  const _IntroBullet(
-                    text:
-                        'soit à la demande du mineur, de ses représentants légaux ou de la personne qui en a la garde ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00085",
+                      'soit d’office ;',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text: 'soit à la demande du procureur de la République.',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00086",
+                      'soit à la demande du mineur, de ses représentants légaux ou de la personne qui en a la garde ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00087",
+                      'soit à la demande du procureur de la République.',
+                    ),
                   ),
                 ],
               ),
@@ -437,8 +800,11 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
               /// 2.2.3 — A.R.S.E.
               ////////////////////////////////////////////////////////////////
               _ConditionCard(
-                title:
-                    '2.2.3 — L’assignation à résidence sous surveillance électronique (A.R.S.E.)',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                  "f00088",
+                  '2.2.3 — L’assignation à résidence sous surveillance électronique (A.R.S.E.)',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -448,43 +814,71 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'L’assignation à résidence sous surveillance électronique (A.R.S.E.), prévue aux ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00089",
+                        'L’assignation à résidence sous surveillance électronique (A.R.S.E.), prévue aux ',
+                      ),
                     ),
                     _lawRef(
-                      'articles L. 333-1 et L. 333-2 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00090",
+                        'articles L. 333-1 et L. 333-2 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          ', n’est applicable qu’au mineur âgé de plus de 16 ans encourant une peine d’emprisonnement égale ou supérieure à 3 ans.',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00091",
+                        ', n’est applicable qu’au mineur âgé de plus de 16 ans encourant une peine d’emprisonnement égale ou supérieure à 3 ans.',
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Elle est mise en place dans les conditions et selon les modalités prévues pour les majeurs par ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00092",
+                        'Elle est mise en place dans les conditions et selon les modalités prévues pour les majeurs par ',
+                      ),
                     ),
                     _lawRef(
-                      'les articles 137 et 142-5 à 142-13 du Code de procédure pénale',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00093",
+                        'les articles 137 et 142-5 à 142-13 du Code de procédure pénale',
+                      ),
                     ),
                     const TextSpan(text: '.'),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'La vérification de la faisabilité technique de l’A.R.S.E. est confiée au service de la protection judiciaire de la jeunesse (P.J.J.), conformément à ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00094",
+                        'La vérification de la faisabilité technique de l’A.R.S.E. est confiée au service de la protection judiciaire de la jeunesse (P.J.J.), conformément à ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article D. 333-3 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00095",
+                        'l’article D. 333-3 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: '.'),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph(
-                    'Le mineur placé sous A.R.S.E. peut également être soumis aux obligations du contrôle judiciaire.',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00096",
+                      'Le mineur placé sous A.R.S.E. peut également être soumis aux obligations du contrôle judiciaire.',
+                    ),
                   ),
                 ],
               ),
@@ -495,8 +889,11 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
               /// 2.2.4 — Détention provisoire
               ////////////////////////////////////////////////////////////////
               _ConditionCard(
-                title:
-                    '2.2.4 — La détention provisoire (art. L. 334-1 à L. 334-6 du C.J.P.M.)',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                  "f00097",
+                  '2.2.4 — La détention provisoire (art. L. 334-1 à L. 334-6 du C.J.P.M.)',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -506,45 +903,87 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Le mineur de moins de treize ans ne peut être placé en détention provisoire. Dans le cadre de l’instruction, seul le juge des libertés et de la '
-                          'détention (J.L.D.) est compétent pour prononcer et prolonger la détention provisoire des mineurs, conformément aux ',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00098",
+                            'Le mineur de moins de treize ans ne peut être placé en détention provisoire. Dans le cadre de l’instruction, seul le juge des libertés et de la ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                            "f00099",
+                            'détention (J.L.D.) est compétent pour prononcer et prolonger la détention provisoire des mineurs, conformément aux ',
+                          ),
                     ),
                     _lawRef(
-                      'articles L. 334-1 à L. 334-6 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                        "f00100",
+                        'articles L. 334-1 à L. 334-6 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: '.'),
                   ]),
 
                   const SizedBox(height: 10),
-                  const _SubTitle('Durées en matière criminelle'),
-                  const _IntroBullet(
-                    text:
-                        'pour les mineurs de moins de 16 ans : détention possible pour une durée de 6 mois, renouvelable une fois ;',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00101",
+                      'Durées en matière criminelle',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'pour les mineurs de 16 à 18 ans : détention possible pour une durée d’un an, renouvelable deux fois 6 mois (jusqu’à 3 ans en matière de terrorisme).',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00102",
+                      'pour les mineurs de moins de 16 ans : détention possible pour une durée de 6 mois, renouvelable une fois ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00103",
+                      'pour les mineurs de 16 à 18 ans : détention possible pour une durée d’un an, renouvelable deux fois 6 mois (jusqu’à 3 ans en matière de terrorisme).',
+                    ),
                   ),
 
                   const SizedBox(height: 10),
-                  const _SubTitle('Durées en matière correctionnelle'),
-                  const _IntroBullet(
-                    text:
-                        'pour les mineurs de moins de 16 ans : détention possible pour une durée de 15 jours renouvelable une fois si la peine encourue est inférieure à 10 ans d’emprisonnement ;',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00104",
+                      'Durées en matière correctionnelle',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'ou pour une durée d’un mois renouvelable une fois si la peine encourue est de 10 ans d’emprisonnement ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00105",
+                      'pour les mineurs de moins de 16 ans : détention possible pour une durée de 15 jours renouvelable une fois si la peine encourue est inférieure à 10 ans d’emprisonnement ;',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'pour les mineurs de 16 à 18 ans : détention possible pour une durée d’un mois renouvelable une fois si la peine encourue est inférieure ou égale à 7 ans d’emprisonnement ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00106",
+                      'ou pour une durée d’un mois renouvelable une fois si la peine encourue est de 10 ans d’emprisonnement ;',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'ou pour une durée de quatre mois renouvelable deux fois si la peine encourue est supérieure à 7 ans d’emprisonnement (jusqu’à deux ans en matière de terrorisme).',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00107",
+                      'pour les mineurs de 16 à 18 ans : détention possible pour une durée d’un mois renouvelable une fois si la peine encourue est inférieure ou égale à 7 ans d’emprisonnement ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00108",
+                      'ou pour une durée de quatre mois renouvelable deux fois si la peine encourue est supérieure à 7 ans d’emprisonnement (jusqu’à deux ans en matière de terrorisme).',
+                    ),
                   ),
                 ],
               ),
@@ -555,7 +994,11 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
               /// 2.2.5 — Clôture de l’instruction
               ////////////////////////////////////////////////////////////////
               _ConditionCard(
-                title: '2.2.5 — La clôture de l’instruction',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                  "f00109",
+                  '2.2.5 — La clôture de l’instruction',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -563,34 +1006,56 @@ class PaPPMineursInstructionPreparatoirePage extends StatelessWidget {
                     ? const Color(0xFF64B5F6)
                     : const Color(0xFF1565C0),
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-                children: const [
+                children: [
                   _Paragraph(
-                    'Lorsque l’instruction est terminée, le juge d’instruction statue par ordonnance en fonction de la qualification des faits et de l’âge du mineur.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00110",
+                      'Lorsque l’instruction est terminée, le juge d’instruction statue par ordonnance en fonction de la qualification des faits et de l’âge du mineur.',
+                    ),
                   ),
                   SizedBox(height: 8),
                   _IntroBullet(
-                    text:
-                        'ordonnance de non-lieu, lorsque les charges sont insuffisantes ou que l’infraction n’est pas caractérisée ;',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00111",
+                      'ordonnance de non-lieu, lorsque les charges sont insuffisantes ou que l’infraction n’est pas caractérisée ;',
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        'ordonnance de renvoi devant le tribunal de police si le fait constitue une contravention des quatre premières classes ;',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00112",
+                      'ordonnance de renvoi devant le tribunal de police si le fait constitue une contravention des quatre premières classes ;',
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        'ordonnance de renvoi devant le juge des enfants, en cas de délit ou de contravention de 5ᵉ classe reprochés à un mineur âgé de moins de 13 ans ;',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00113",
+                      'ordonnance de renvoi devant le juge des enfants, en cas de délit ou de contravention de 5ᵉ classe reprochés à un mineur âgé de moins de 13 ans ;',
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        'ordonnance de renvoi devant le tribunal pour enfants, en cas de délit ou de contravention de 5ᵉ classe reprochés à un mineur âgé d’au moins 13 ans, ou en cas de crime reproché à un mineur de moins de 16 ans ;',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00114",
+                      'ordonnance de renvoi devant le tribunal pour enfants, en cas de délit ou de contravention de 5ᵉ classe reprochés à un mineur âgé d’au moins 13 ans, ou en cas de crime reproché à un mineur de moins de 16 ans ;',
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        'ordonnance de mise en accusation devant la cour d’assises des mineurs, en cas de crime reproché à un mineur âgé d’au moins 16 ans ;',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00115",
+                      'ordonnance de mise en accusation devant la cour d’assises des mineurs, en cas de crime reproché à un mineur âgé d’au moins 16 ans ;',
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        'ordonnance de mise en accusation devant la cour d’assises des mineurs également en cas de connexité ou d’indivisibilité avec un crime reproché à un mineur d’au moins 16 ans, pour les crimes commis avant qu’il n’ait atteint cet âge, ou pour les crimes commis à compter de sa majorité.',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart",
+                      "f00116",
+                      'ordonnance de mise en accusation devant la cour d’assises des mineurs également en cas de connexité ou d’indivisibilité avec un crime reproché à un mineur d’au moins 16 ans, pour les crimes commis avant qu’il n’ait atteint cet âge, ou pour les crimes commis à compter de sa majorité.',
+                    ),
                   ),
                 ],
               ),
@@ -849,9 +1314,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

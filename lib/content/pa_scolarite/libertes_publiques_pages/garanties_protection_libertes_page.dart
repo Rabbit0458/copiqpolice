@@ -8,6 +8,7 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/liber
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/garanties/recours_non_juridictionnels_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/garanties/recours_organes_internationaux_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/quiz_scolarite_gpx/gpx_quiz_libertes_publiques_garanties_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// =============================================================
 ///  COP'IQ — Garanties et protection des libertés publiques (hub)
@@ -29,7 +30,9 @@ class PaGarantiesProtectionLibertesPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -40,10 +43,18 @@ class PaGarantiesProtectionLibertesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Garanties des libertés publiques',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+            "f00002",
+            'Garanties des libertés publiques',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -58,9 +69,16 @@ class PaGarantiesProtectionLibertesPage extends StatelessWidget {
           // ===== Le contrôle de la constitutionnalité des lois =====
           _ModuleCard(
             tag: 'controle_constitutionnalite',
-            title: 'Contrôle de la constitutionnalité des lois',
-            subtitle:
-                'Rôle du Conseil constitutionnel et protection des droits fondamentaux.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00003",
+              'Contrôle de la constitutionnalité des lois',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00004",
+              'Rôle du Conseil constitutionnel et protection des droits fondamentaux.',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -75,9 +93,16 @@ class PaGarantiesProtectionLibertesPage extends StatelessWidget {
           // ===== Les recours juridictionnels =====
           _ModuleCard(
             tag: 'recours_juridictionnels',
-            title: 'Les recours juridictionnels',
-            subtitle:
-                'Voies de recours devant les juridictions internes (administratives et judiciaires).',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00005",
+              'Les recours juridictionnels',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00006",
+              'Voies de recours devant les juridictions internes (administratives et judiciaires).',
+            ),
             imagePath: 'assets/images/pv_regles.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -92,9 +117,16 @@ class PaGarantiesProtectionLibertesPage extends StatelessWidget {
           // ===== Les recours non juridictionnels =====
           _ModuleCard(
             tag: 'recours_non_juridictionnels',
-            title: 'Les recours non juridictionnels',
-            subtitle:
-                'Médiateur, Défenseur des droits, autorités administratives indépendantes…',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00007",
+              'Les recours non juridictionnels',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00008",
+              'Médiateur, Défenseur des droits, autorités administratives indépendantes…',
+            ),
             imagePath: 'assets/images/pv_regles.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -109,9 +141,16 @@ class PaGarantiesProtectionLibertesPage extends StatelessWidget {
           // ===== Les recours devant les organes internationaux =====
           _ModuleCard(
             tag: 'recours_organes_internationaux',
-            title: 'Recours devant les organes internationaux',
-            subtitle:
-                'Cour européenne des droits de l’homme, comités de l’Organisation des Nations unies…',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00009",
+              'Recours devant les organes internationaux',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00010",
+              'Cour européenne des droits de l’homme, comités de l’Organisation des Nations unies…',
+            ),
             imagePath: 'assets/images/pv_regles.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -126,9 +165,16 @@ class PaGarantiesProtectionLibertesPage extends StatelessWidget {
           const SizedBox(height: 22),
           _ModuleCard(
             tag: 'quiz_libertes',
-            title: 'Quiz — Garanties',
-            subtitle:
-                'Testez votre maîtrise de la liberté individuelle / sûreté et de la liberté d’aller et venir.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00011",
+              'Quiz — Garanties',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+              "f00012",
+              'Testez votre maîtrise de la liberté individuelle / sûreté et de la liberté d’aller et venir.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -299,7 +345,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 6),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart",
+                "f00015",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,

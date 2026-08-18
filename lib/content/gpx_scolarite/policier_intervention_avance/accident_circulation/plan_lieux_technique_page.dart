@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PlanLieuxTechniquePage extends StatelessWidget {
   const PlanLieuxTechniquePage({super.key});
@@ -56,10 +57,18 @@ class PlanLieuxTechniquePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident de circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+            "f00002",
+            "Accident de circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PlanLieuxTechniquePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Techniques du plan des lieux",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00003",
+              "Techniques du plan des lieux",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,18 +99,34 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Définition / utilité
           _ConditionCard(
-            title: "Pourquoi le croquis est essentiel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00004",
+              "Pourquoi le croquis est essentiel",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Une procédure de constat d'accident gagne en pertinence si elle est accompagnée d’un croquis : "
-                "il fait ressortir et éclaire les faits, et aide à déterminer le rôle et la responsabilité de chaque partie.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00005",
+                      "Une procédure de constat d'accident gagne en pertinence si elle est accompagnée d’un croquis : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00006",
+                      "il fait ressortir et éclaire les faits, et aide à déterminer le rôle et la responsabilité de chaque partie.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Un bon croquis devient un support fidèle du dossier, notamment lors d’une éventuelle reconstitution demandée par un magistrat.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00007",
+                  "Un bon croquis devient un support fidèle du dossier, notamment lors d’une éventuelle reconstitution demandée par un magistrat.",
+                ),
               ),
             ],
           ),
@@ -106,36 +135,81 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // ⚖️ Principe général (obligation)
           _ConditionCard(
-            title: "I — Rappel du principe général",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00008",
+              "I — Rappel du principe général",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Le croquis est obligatoire dans les cas suivants :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00009",
+                  "Le croquis est obligatoire dans les cas suivants :",
+                ),
+              ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Accident avec dommages corporels (blessures ou décès).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00010",
+                  "Accident avec dommages corporels (blessures ou décès).",
+                ),
               ),
-              _BulletPoint(text: "Dégâts importants au domaine public."),
-              _BulletPoint(text: "Transport de marchandises dangereuses."),
               _BulletPoint(
-                text: "Implication d’un véhicule des forces armées alliées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00011",
+                  "Dégâts importants au domaine public.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00012",
+                  "Transport de marchandises dangereuses.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00013",
+                  "Implication d’un véhicule des forces armées alliées.",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Implication d’un véhicule de l’État ou d’une collectivité publique (armée, police, équipement, département, etc.) "
-                    "lorsque les dégâts matériels sont importants.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00014",
+                      "Implication d’un véhicule de l’État ou d’une collectivité publique (armée, police, équipement, département, etc.) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00015",
+                      "lorsque les dégâts matériels sont importants.",
+                    ),
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Le croquis montre la position des véhicules, des corps, des traces et des indices par rapport aux lieux.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00016",
+                  "Le croquis montre la position des véhicules, des corps, des traces et des indices par rapport aux lieux.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le croquis doit être réalisé à l’encre afin d’éviter toute falsification.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00017",
+                      "Le croquis doit être réalisé à l’encre afin d’éviter toute falsification.",
+                    ),
                   ),
                 ],
               ),
@@ -146,20 +220,31 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Communication du croquis
           _ConditionCard(
-            title: "Communication du croquis",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00018",
+              "Communication du croquis",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Si une des parties se présente et demande à voir le croquis, il convient de ne pas le lui montrer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00019",
+                  "Si une des parties se présente et demande à voir le croquis, il convient de ne pas le lui montrer.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Seul son conseil (assureur ou avocat) peut obtenir communication du dossier en faisant une demande à un magistrat.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00020",
+                      "Seul son conseil (assureur ou avocat) peut obtenir communication du dossier en faisant une demande à un magistrat.",
+                    ),
                   ),
                 ],
               ),
@@ -170,16 +255,38 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // II — Techniques du croquis (généralités)
           _ConditionCard(
-            title: "II — Techniques du croquis",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00021",
+              "II — Techniques du croquis",
+            ),
             cardColor: cardTech,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Généralités"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00022",
+                  "A) Généralités",
+                ),
+              ),
               _Paragraph(
-                "Pour exécuter un croquis, il est recommandé de respecter des règles de topographie : "
-                "choisir des points fixes, coter les éléments utiles et utiliser des signes conventionnels "
-                "pour une représentation schématique claire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00023",
+                      "Pour exécuter un croquis, il est recommandé de respecter des règles de topographie : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00024",
+                      "choisir des points fixes, coter les éléments utiles et utiliser des signes conventionnels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00025",
+                      "pour une représentation schématique claire.",
+                    ),
               ),
             ],
           ),
@@ -188,60 +295,126 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Points fixes + cotes
           _ConditionCard(
-            title: "1) Points fixes & cotes (règles de base)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00026",
+              "1) Points fixes & cotes (règles de base)",
+            ),
             cardColor: cardTech,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Choix des points fixes"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00027",
+                  "Choix des points fixes",
+                ),
+              ),
               _Paragraph(
-                "Les points fixes doivent être quasi définitifs et matérialisés sur le plan "
-                "(ex : angle de mur, borne, pylône, plaque d’égout, numéro d’habitation, point kilométrique (PK), signalisation verticale…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00028",
+                      "Les points fixes doivent être quasi définitifs et matérialisés sur le plan ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00029",
+                      "(ex : angle de mur, borne, pylône, plaque d’égout, numéro d’habitation, point kilométrique (PK), signalisation verticale…).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Règle des cotes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00030",
+                  "Règle des cotes",
+                ),
+              ),
               _Paragraph(
-                "Toute distance relevée est représentée par une cote : un trait plein avec une pointe de flèche à chaque extrémité. "
-                "La valeur chiffrée est écrite horizontalement pour éviter de manipuler le plan.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00031",
+                      "Toute distance relevée est représentée par une cote : un trait plein avec une pointe de flèche à chaque extrémité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00032",
+                      "La valeur chiffrée est écrite horizontalement pour éviter de manipuler le plan.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La mesure peut être inscrite sur le trait de cote ou en intervalle.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00033",
+                      "La mesure peut être inscrite sur le trait de cote ou en intervalle.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Prise de mesures : exigences incontournables"),
-              _BulletPoint(
-                text:
-                    "Relever 3 cotes obligatoires : elles ne se croisent jamais et ne croisent jamais l’élément à coter (ni un autre élément).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00034",
+                  "Prise de mesures : exigences incontournables",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur chaque élément à coter, retenir 2 points pour la prise de mesures (exemples ci-dessous).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00035",
+                  "Relever 3 cotes obligatoires : elles ne se croisent jamais et ne croisent jamais l’élément à coter (ni un autre élément).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00036",
+                  "Sur chaque élément à coter, retenir 2 points pour la prise de mesures (exemples ci-dessous).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Points de référence à retenir"),
-              _BulletPoint(
-                text:
-                    "Véhicule : avant / arrière, ou axe des roues, côté droit ou gauche (toujours le même côté sur la longueur).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00037",
+                  "Points de référence à retenir",
+                ),
               ),
               _BulletPoint(
-                text: "Victime : sommet de la tête + talon ou pointe du pied.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00038",
+                  "Véhicule : avant / arrière, ou axe des roues, côté droit ou gauche (toujours le même côté sur la longueur).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Deux-roues : axe de la roue avant + axe de la roue arrière.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00039",
+                  "Victime : sommet de la tête + talon ou pointe du pied.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00040",
+                  "Deux-roues : axe de la roue avant + axe de la roue arrière.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pour un élément circulaire/cylindrique (plaque d’égout, poteau…), la cote part du centre : éviter une mesure sur tangente.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00041",
+                      "Pour un élément circulaire/cylindrique (plaque d’égout, poteau…), la cote part du centre : éviter une mesure sur tangente.",
+                    ),
                   ),
                 ],
               ),
@@ -252,32 +425,62 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Signes conventionnels
           _ConditionCard(
-            title: "2) Signes conventionnels (lecture immédiate)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00042",
+              "2) Signes conventionnels (lecture immédiate)",
+            ),
             cardColor: cardMethod,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les éléments du plan sont représentés avec des signes conventionnels. "
-                "Pour les objets de petite taille (ex : casque, chapeau…), deux cotes suffisent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00043",
+                      "Les éléments du plan sont représentés avec des signes conventionnels. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00044",
+                      "Pour les objets de petite taille (ex : casque, chapeau…), deux cotes suffisent.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Règles pratiques"),
-              _BulletPoint(
-                text:
-                    "Les véhicules sont cotés (hors tout ou axe des roues) du même côté sur la longueur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00045",
+                  "Règles pratiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Une cote ne doit jamais être prise depuis une partie accidentée du véhicule.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00046",
+                  "Les véhicules sont cotés (hors tout ou axe des roues) du même côté sur la longueur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les traces de freinage : mesurer la longueur entre les deux extrémités.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00047",
+                  "Une cote ne doit jamais être prise depuis une partie accidentée du véhicule.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arbres, flaques de sang, débris de verre, taches d’huile : positionnés sans être cotés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00048",
+                  "Les traces de freinage : mesurer la longueur entre les deux extrémités.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00049",
+                  "Arbres, flaques de sang, débris de verre, taches d’huile : positionnés sans être cotés.",
+                ),
               ),
             ],
           ),
@@ -286,26 +489,44 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Relevé topo
           _ConditionCard(
-            title: "B) Relevé topographique (le plan des lieux)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00050",
+              "B) Relevé topographique (le plan des lieux)",
+            ),
             cardColor: cardTech,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Indépendant des faits, il présente la configuration des lieux : largeur des chaussées, accotements, directions, signalisation, orientation du plan.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00051",
+                  "Indépendant des faits, il présente la configuration des lieux : largeur des chaussées, accotements, directions, signalisation, orientation du plan.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Agir simplement : privilégier la clarté et ne reporter que ce qui facilite la compréhension.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00052",
+                  "Agir simplement : privilégier la clarté et ne reporter que ce qui facilite la compréhension.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Le croquis est fait à l’échelle pour respecter les proportions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00053",
+                  "Le croquis est fait à l’échelle pour respecter les proportions.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Échelles courantes : 1/100 (1 m terrain = 1 cm plan) ou 1/200 (1 m terrain = 0,5 cm plan).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00054",
+                  "Échelles courantes : 1/100 (1 m terrain = 1 cm plan) ou 1/200 (1 m terrain = 0,5 cm plan).",
+                ),
               ),
             ],
           ),
@@ -314,23 +535,49 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Positionnement véhicule
           _ConditionCard(
-            title: "C) Positionnement d’un véhicule",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00055",
+              "C) Positionnement d’un véhicule",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Principe"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00056",
+                  "1) Principe",
+                ),
+              ),
               _Paragraph(
-                "Le véhicule doit être positionné fidèlement tel qu’il est observé à l’arrivée sur les lieux. "
-                "Il est repéré par 3 cotes ne traversant aucun élément du plan (véhicule, personne…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00057",
+                      "Le véhicule doit être positionné fidèlement tel qu’il est observé à l’arrivée sur les lieux. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00058",
+                      "Il est repéré par 3 cotes ne traversant aucun élément du plan (véhicule, personne…).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si les véhicules ont été déplacés/enlevés avant l’arrivée : ne pas les dessiner. "
-                        "Relever la topographie, les directions prises et surtout le point de choc présumé + tous les indices utiles (avant dégagement de la chaussée).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                          "f00059",
+                          "Si les véhicules ont été déplacés/enlevés avant l’arrivée : ne pas les dessiner. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                          "f00060",
+                          "Relever la topographie, les directions prises et surtout le point de choc présumé + tous les indices utiles (avant dégagement de la chaussée).",
+                        ),
                   ),
                 ],
               ),
@@ -341,43 +588,98 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Méthodes
           _ConditionCard(
-            title: "2) Méthodes de relevé des cotes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00061",
+              "2) Méthodes de relevé des cotes",
+            ),
             cardColor: cardMethod,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Méthode 1 — Coordonnées directes"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00062",
+                  "Méthode 1 — Coordonnées directes",
+                ),
+              ),
               _Paragraph(
-                "Le véhicule est repéré avec 3 cotes prises à partir d’un même côté du véhicule, dont 2 issues d’un même point du véhicule. "
-                "Nécessite 2 points fixes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00063",
+                      "Le véhicule est repéré avec 3 cotes prises à partir d’un même côté du véhicule, dont 2 issues d’un même point du véhicule. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00064",
+                      "Nécessite 2 points fixes.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Méthode 2 — Coordonnées rectangulaires"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00065",
+                  "Méthode 2 — Coordonnées rectangulaires",
+                ),
+              ),
               _Paragraph(
-                "Le recoupement se fait par angles droits à partir d’un alignement fictif (prolongement de trottoir, façade d’immeuble, etc.). "
-                "Une cote perpendiculaire est prise vers un angle du véhicule (P1/P2) ou l’axe des roues si l’angle est indéterminable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00066",
+                      "Le recoupement se fait par angles droits à partir d’un alignement fictif (prolongement de trottoir, façade d’immeuble, etc.). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00067",
+                      "Une cote perpendiculaire est prise vers un angle du véhicule (P1/P2) ou l’axe des roues si l’angle est indéterminable.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Variante : création d’un point fictif O pour aérer le croquis (intersection d’alignements imaginaires).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00068",
+                  "Variante : création d’un point fictif O pour aérer le croquis (intersection d’alignements imaginaires).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Variante : création d’un point P plus proche (défini depuis un point fixe : entrée d’immeuble, bouche d’égout, PK…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00069",
+                  "Variante : création d’un point P plus proche (défini depuis un point fixe : entrée d’immeuble, bouche d’égout, PK…).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Méthode 3 — Méthode mixte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00070",
+                  "Méthode 3 — Méthode mixte",
+                ),
+              ),
               _Paragraph(
-                "Combinaison de points fixes et de coordonnées rectangulaires. "
-                "C’est la méthode la plus utilisée : 2 cotes en rectangulaire + 1 cote depuis un point fixe.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00071",
+                      "Combinaison de points fixes et de coordonnées rectangulaires. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00072",
+                      "C’est la méthode la plus utilisée : 2 cotes en rectangulaire + 1 cote depuis un point fixe.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le positionnement de chaque élément (véhicule, victime, indices) peut être fait indifféremment par l’une des trois méthodes.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00073",
+                      "Le positionnement de chaque élément (véhicule, victime, indices) peut être fait indifféremment par l’une des trois méthodes.",
+                    ),
                   ),
                 ],
               ),
@@ -388,35 +690,66 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Légende
           _ConditionCard(
-            title: "D) La légende (indispensable)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00074",
+              "D) La légende (indispensable)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La légende conserve au plan sa simplicité et sa clarté : elle doit comporter l’échelle utilisée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00075",
+                  "La légende conserve au plan sa simplicité et sa clarté : elle doit comporter l’échelle utilisée.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Les symboles du plan sont repérés par lettres (parties en cause) ou chiffres romains (points fixes).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00076",
+                  "Les symboles du plan sont repérés par lettres (parties en cause) ou chiffres romains (points fixes).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Véhicule présumé responsable : lettre A (A’, A”, A1…). Autres : B, C…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00077",
+                  "Véhicule présumé responsable : lettre A (A’, A”, A1…). Autres : B, C…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Piéton : Y (Y’, Y” sens de marche). Plusieurs piétons : Y1, Y2…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00078",
+                  "Piéton : Y (Y’, Y” sens de marche). Plusieurs piétons : Y1, Y2…",
+                ),
               ),
-              _BulletPoint(text: "Témoin : T (T1, T2…)."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00079",
+                  "Témoin : T (T1, T2…).",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Traces : sang lié à une victime → même lettre que la victime (si relation certaine), sinon lettre S. "
-                        "Huile liée à un véhicule → lettre du véhicule, sinon lettre H.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                          "f00080",
+                          "Traces : sang lié à une victime → même lettre que la victime (si relation certaine), sinon lettre S. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                          "f00081",
+                          "Huile liée à un véhicule → lettre du véhicule, sinon lettre H.",
+                        ),
                   ),
                 ],
               ),
@@ -427,28 +760,57 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Titre
           _ConditionCard(
-            title: "E) Le titre (ce qu’il doit contenir)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00082",
+              "E) Le titre (ce qu’il doit contenir)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Nature de l’accident : matériel / corporel / mortel (en ou hors agglomération).",
-              ),
-              _BulletPoint(text: "Date et heure des faits."),
-              _BulletPoint(
-                text:
-                    "Lieu : intersection / numéro / PK… + commune + département.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00083",
+                  "Nature de l’accident : matériel / corporel / mortel (en ou hors agglomération).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Affaire : noms/prénoms des parties (le présumé responsable en premier).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00084",
+                  "Date et heure des faits.",
+                ),
               ),
               _BulletPoint(
-                text: "Conséquences : blessé(s), hospitalisation, identité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00085",
+                  "Lieu : intersection / numéro / PK… + commune + département.",
+                ),
               ),
-              _BulletPoint(text: "Numéro de procédure correspondant au plan."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00086",
+                  "Affaire : noms/prénoms des parties (le présumé responsable en premier).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00087",
+                  "Conséquences : blessé(s), hospitalisation, identité.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00088",
+                  "Numéro de procédure correspondant au plan.",
+                ),
+              ),
             ],
           ),
 
@@ -456,38 +818,75 @@ class PlanLieuxTechniquePage extends StatelessWidget {
 
           // Photographies
           _ConditionCard(
-            title: "F) Les photographies (en complément)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+              "f00089",
+              "F) Les photographies (en complément)",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En cas d’accident grave, les photographies complètent le plan des lieux et renforcent la compréhension du dossier.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00090",
+                  "En cas d’accident grave, les photographies complètent le plan des lieux et renforcent la compréhension du dossier.",
+                ),
               ),
               SizedBox(height: 10),
-              _Paragraph("Sont notamment photographiés :"),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00091",
+                  "Sont notamment photographiés :",
+                ),
+              ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "La chaussée (de part et d’autre du point de l’accident).",
-              ),
-              _BulletPoint(text: "L’intersection, si elle existe."),
-              _BulletPoint(
-                text: "Les véhicules accidentés (pour distinguer les dégâts).",
-              ),
-              _BulletPoint(
-                text:
-                    "Les traces (freinage, dérapage, ripage) en lien avec le véhicule / point de choc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00092",
+                  "La chaussée (de part et d’autre du point de l’accident).",
+                ),
               ),
               _BulletPoint(
-                text: "Autres indices : terre, sang, objets, pièces détachées…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00093",
+                  "L’intersection, si elle existe.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00094",
+                  "Les véhicules accidentés (pour distinguer les dégâts).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00095",
+                  "Les traces (freinage, dérapage, ripage) en lien avec le véhicule / point de choc.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                  "f00096",
+                  "Autres indices : terre, sang, objets, pièces détachées…",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un album photographique est constitué et joint au plan des lieux.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/plan_lieux_technique_page.dart",
+                      "f00097",
+                      "Un album photographique est constitué et joint au plan des lieux.",
+                    ),
                   ),
                 ],
               ),
@@ -745,9 +1144,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

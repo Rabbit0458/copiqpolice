@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AmendeForfaitairePage extends StatelessWidget {
   const AmendeForfaitairePage({super.key});
@@ -65,10 +66,18 @@ class AmendeForfaitairePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Procédures — circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+            "f00002",
+            "Procédures — circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -83,7 +92,11 @@ class AmendeForfaitairePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’amende forfaitaire",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00003",
+              "L’amende forfaitaire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -95,30 +108,39 @@ class AmendeForfaitairePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (comme demandé)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 529 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00005",
+                    "Articles 529 et suivants du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text:
-                      "articles R. 48-1 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00006",
+                    "articles R. 48-1 et suivants du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : encadrent la procédure de l’amende forfaitaire.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00007",
+                    " : encadrent la procédure de l’amende forfaitaire.",
+                  ),
                 ),
               ]),
             ],
@@ -128,27 +150,50 @@ class AmendeForfaitairePage extends StatelessWidget {
 
           // Cadre d'application (définition + conditions)
           _ConditionCard(
-            title: "Cadre d’application",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00008",
+              "Cadre d’application",
+            ),
             cardColor: cardCadre,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "S’applique aux contraventions des 4 premières classes et à certaines contraventions de 5e classe listées par la réglementation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00009",
+                  "S’applique aux contraventions des 4 premières classes et à certaines contraventions de 5e classe listées par la réglementation.",
+                ),
               ),
               _IntroBullet(
-                text: "Constatation par procès-verbal électronique (PVe).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00010",
+                  "Constatation par procès-verbal électronique (PVe).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Non applicable s’il y a constatation simultanée de plusieurs infractions dont au moins une ne peut donner lieu à amende forfaitaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00011",
+                  "Non applicable s’il y a constatation simultanée de plusieurs infractions dont au moins une ne peut donner lieu à amende forfaitaire.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Donne lieu à la délivrance d’un avis de contravention + carte de paiement (envoi postal au domicile du contrevenant ou du titulaire du certificat d’immatriculation, ou par messagerie si une adresse e-mail est fournie — sauf paiement immédiat).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00012",
+                  "Donne lieu à la délivrance d’un avis de contravention + carte de paiement (envoi postal au domicile du contrevenant ou du titulaire du certificat d’immatriculation, ou par messagerie si une adresse e-mail est fournie — sauf paiement immédiat).",
+                ),
               ),
-              _IntroBullet(text: "Applicable aux mineurs de plus de 13 ans."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00013",
+                  "Applicable aux mineurs de plus de 13 ans.",
+                ),
+              ),
             ],
           ),
 
@@ -156,43 +201,88 @@ class AmendeForfaitairePage extends StatelessWidget {
 
           // Types d'amendes
           _ConditionCard(
-            title: "II — Les 3 régimes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00014",
+              "II — Les 3 régimes",
+            ),
             cardColor: cardTypes,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Amende forfaitaire « ordinaire »"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00015",
+                  "A) Amende forfaitaire « ordinaire »",
+                ),
+              ),
               _Paragraph(
-                "Concerne notamment les contraventions au Code de la route qui ne sont pas minorées, "
-                "les contraventions en matière d’arrêt/stationnement, d’assurance des véhicules, "
-                "ou encore celles liées à la réglementation des transports routiers.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00016",
+                      "Concerne notamment les contraventions au Code de la route qui ne sont pas minorées, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00017",
+                      "les contraventions en matière d’arrêt/stationnement, d’assurance des véhicules, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00018",
+                      "ou encore celles liées à la réglementation des transports routiers.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Amende forfaitaire minorée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00019",
+                  "B) Amende forfaitaire minorée",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le montant est minoré pour les contraventions routières des 2e, 3e, 4e et certaines 5e classes mentionnées à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00020",
+                    "Le montant est minoré pour les contraventions routières des 2e, 3e, 4e et certaines 5e classes mentionnées à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article R. 48-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00021",
+                    "l’article R. 48-1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ", "),
                 TextSpan(
-                  text:
-                      "à l’exception de certaines contraventions relatives au stationnement.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00022",
+                    "à l’exception de certaines contraventions relatives au stationnement.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Exception stationnement : "),
                   TextSpan(
-                    text: "articles R. 417-1 à R. 417-13",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00023",
+                      "Exception stationnement : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00024",
+                      "articles R. 417-1 à R. 417-13",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -200,7 +290,11 @@ class AmendeForfaitairePage extends StatelessWidget {
                   ),
                   TextSpan(text: " et "),
                   TextSpan(
-                    text: "article R. 421-7 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00025",
+                      "article R. 421-7 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -212,29 +306,50 @@ class AmendeForfaitairePage extends StatelessWidget {
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La minoration est conditionnée au paiement dans les délais prévus à ",
-                ),
-                TextSpan(
-                  text: "l’article 529-8 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00026",
+                    "La minoration est conditionnée au paiement dans les délais prévus à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". En cas de non-paiement dans les délais : application du montant « ordinaire ».",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00027",
+                    "l’article 529-8 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00028",
+                    ". En cas de non-paiement dans les délais : application du montant « ordinaire ».",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
-              _SubTitle("C) Amende forfaitaire majorée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00029",
+                  "C) Amende forfaitaire majorée",
+                ),
+              ),
               _Paragraph(
-                "Le contrevenant qui ne règle pas l’amende ou ne conteste pas dans les délais se voit appliquer de plein droit une majoration.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00030",
+                  "Le contrevenant qui ne règle pas l’amende ou ne conteste pas dans les délais se voit appliquer de plein droit une majoration.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Un titre rendu exécutoire par le ministère public permet au Trésor public de recouvrer le montant de l’amende forfaitaire majorée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00031",
+                  "Un titre rendu exécutoire par le ministère public permet au Trésor public de recouvrer le montant de l’amende forfaitaire majorée.",
+                ),
               ),
             ],
           ),
@@ -243,68 +358,123 @@ class AmendeForfaitairePage extends StatelessWidget {
 
           // Montants
           _ConditionCard(
-            title: "III — Montants (par classe)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00032",
+              "III — Montants (par classe)",
+            ),
             cardColor: cardMontants,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _Paragraph.rich([
-                TextSpan(text: "Références : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article R. 49 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00033",
+                    "Références : ",
                   ),
                 ),
-                TextSpan(text: " (ordinaire), "),
                 TextSpan(
-                  text: "article R. 49-9 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00034",
+                    "article R. 49 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00035",
+                    " (ordinaire), ",
                   ),
                 ),
-                TextSpan(text: " (minorée) et "),
                 TextSpan(
-                  text: "article R. 49-7 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00036",
+                    "article R. 49-9 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00037",
+                    " (minorée) et ",
                   ),
                 ),
-                TextSpan(text: " (majorée)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00038",
+                    "article R. 49-7 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00039",
+                    " (majorée).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
               _AmountTable(
                 isDark: isDark,
-                rows: const [
+                rows: [
                   _AmountRow(
-                    classe: "1ère classe",
+                    classe: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00040",
+                      "1ère classe",
+                    ),
                     ordinaire: "11 €",
-                    minoree: "4 € (piéton) / 7 € (autre)",
+                    minoree: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00041",
+                      "4 € (piéton) / 7 € (autre)",
+                    ),
                     majoree: "33 €",
                   ),
                   _AmountRow(
-                    classe: "2e classe",
+                    classe: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00042",
+                      "2e classe",
+                    ),
                     ordinaire: "35 €",
                     minoree: "22 €",
                     majoree: "75 €",
                   ),
                   _AmountRow(
-                    classe: "3e classe",
+                    classe: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00043",
+                      "3e classe",
+                    ),
                     ordinaire: "68 €",
                     minoree: "45 €",
                     majoree: "180 €",
                   ),
                   _AmountRow(
-                    classe: "4e classe",
+                    classe: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00044",
+                      "4e classe",
+                    ),
                     ordinaire: "135 €",
                     minoree: "90 €",
                     majoree: "375 €",
                   ),
                   _AmountRow(
-                    classe: "5e classe",
+                    classe: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00045",
+                      "5e classe",
+                    ),
                     ordinaire: "200 €",
                     minoree: "150 €",
                     majoree: "450 €",
@@ -318,60 +488,134 @@ class AmendeForfaitairePage extends StatelessWidget {
 
           // Paiement
           _ConditionCard(
-            title: "IV — Paiement de l’amende forfaitaire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00046",
+              "IV — Paiement de l’amende forfaitaire",
+            ),
             cardColor: cardPaiement,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Le paiement entraîne reconnaissance de l’infraction et extinction de l’action publique.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00047",
+                  "Le paiement entraîne reconnaissance de l’infraction et extinction de l’action publique.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Le paiement de l’amende forfaitaire « ordinaire » ou minorée peut être immédiat ou différé (dans les délais).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00048",
+                  "Le paiement de l’amende forfaitaire « ordinaire » ou minorée peut être immédiat ou différé (dans les délais).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Paiement immédiat à l’agent verbalisateur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00049",
+                  "A) Paiement immédiat à l’agent verbalisateur",
+                ),
+              ),
               _Paragraph(
-                "Sur les lieux, l’agent encaisse le montant et délivre une quittance. "
-                "Aucun procès-verbal n’est rédigé : la quittance tient lieu de feuillet de constatation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00050",
+                      "Sur les lieux, l’agent encaisse le montant et délivre une quittance. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00051",
+                      "Aucun procès-verbal n’est rédigé : la quittance tient lieu de feuillet de constatation.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Si l’agent dispose d’un dispositif électronique : quittance dématérialisée envoyée sur demande. "
-                "En cas de paiement en espèces : une quittance est obligatoirement adressée au contrevenant.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00052",
+                      "Si l’agent dispose d’un dispositif électronique : quittance dématérialisée envoyée sur demande. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00053",
+                      "En cas de paiement en espèces : une quittance est obligatoirement adressée au contrevenant.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les fonds provenant de la perception directe sont remis à l’agent comptable de l’unité (ou suppléant).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00054",
+                  "Les fonds provenant de la perception directe sont remis à l’agent comptable de l’unité (ou suppléant).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Paiement différé — délais"),
-              _BulletPoint(
-                text:
-                    "Amende forfaitaire « ordinaire » : 45 jours (60 jours en télépaiement / timbre dématérialisé).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00055",
+                  "B) Paiement différé — délais",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Amende forfaitaire minorée : 15 jours (30 jours en télépaiement / timbre dématérialisé).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00056",
+                  "Amende forfaitaire « ordinaire » : 45 jours (60 jours en télépaiement / timbre dématérialisé).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00057",
+                  "Amende forfaitaire minorée : 15 jours (30 jours en télépaiement / timbre dématérialisé).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Modes de paiement"),
-              _BulletPoint(text: "Chèque au comptable du Trésor."),
-              _BulletPoint(
-                text:
-                    "Télépaiement / timbre dématérialisé : Internet, serveur vocal, application « amendes.gouv ».",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00058",
+                  "C) Modes de paiement",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Débitants de tabac agréés « paiement électronique des amendes ».",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00059",
+                  "Chèque au comptable du Trésor.",
+                ),
               ),
               _BulletPoint(
-                text: "Trésoreries équipées de terminaux de télépaiement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00060",
+                  "Télépaiement / timbre dématérialisé : Internet, serveur vocal, application « amendes.gouv ».",
+                ),
               ),
               _BulletPoint(
-                text: "Virement bancaire international (si applicable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00061",
+                  "Débitants de tabac agréés « paiement électronique des amendes ».",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00062",
+                  "Trésoreries équipées de terminaux de télépaiement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00063",
+                  "Virement bancaire international (si applicable).",
+                ),
               ),
             ],
           ),
@@ -380,42 +624,69 @@ class AmendeForfaitairePage extends StatelessWidget {
 
           // Contestation
           _ConditionCard(
-            title: "V — Contestation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00064",
+              "V — Contestation",
+            ),
             cardColor: cardContest,
             accent: accentSteel,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’amende forfaitaire peut être contestée conformément aux ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00065",
+                    "L’amende forfaitaire peut être contestée conformément aux ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "articles 529-2, 529-10 et 530 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00066",
+                    "articles 529-2, 529-10 et 530 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
-              _SubTitle("A) Amende forfaitaire « ordinaire » ou minorée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00067",
+                  "A) Amende forfaitaire « ordinaire » ou minorée",
+                ),
+              ),
               _Paragraph(
-                "Deux voies existent selon le type de contravention.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00068",
+                  "Deux voies existent selon le type de contravention.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title:
-                    "Requête en exonération (cas CI / locataire / acquéreur / représentant légal)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00069",
+                  "Requête en exonération (cas CI / locataire / acquéreur / représentant légal)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si la contravention vise la responsabilité pécuniaire du titulaire du certificat d’immatriculation (ou assimilé) lorsque le conducteur n’a pas été interpellé (contrôle automatisé, vidéo-verbalisation). Référence : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00070",
+                      "Si la contravention vise la responsabilité pécuniaire du titulaire du certificat d’immatriculation (ou assimilé) lorsque le conducteur n’a pas été interpellé (contrôle automatisé, vidéo-verbalisation). Référence : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "L. 121-3 et R. 121-6 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00071",
+                      "L. 121-3 et R. 121-6 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -426,24 +697,51 @@ class AmendeForfaitairePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "→ Requête (courrier RAR au CNT de Rennes ou via ANTAI) avec : "
-                "formulaire rempli + pièces justificatives (vol, destruction, cession, usurpation de plaque) "
-                "ou exposé des motifs + preuve de consignation (si autre motif).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00072",
+                      "→ Requête (courrier RAR au CNT de Rennes ou via ANTAI) avec : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00073",
+                      "formulaire rempli + pièces justificatives (vol, destruction, cession, usurpation de plaque) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00074",
+                      "ou exposé des motifs + preuve de consignation (si autre motif).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "En cas de classement sans suite, la somme consignée est restituée par le comptable du Trésor.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00075",
+                  "En cas de classement sans suite, la somme consignée est restituée par le comptable du Trésor.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Requête en exonération simple",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00076",
+                  "Requête en exonération simple",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si l’amende forfaitaire concerne une contravention autre que celles liées à la responsabilité pécuniaire : envoi du formulaire + avis de contravention au CNT de Rennes (ou contestation dématérialisée). Référence : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00077",
+                      "Si l’amende forfaitaire concerne une contravention autre que celles liées à la responsabilité pécuniaire : envoi du formulaire + avis de contravention au CNT de Rennes (ou contestation dématérialisée). Référence : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article 529-2 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00078",
+                      "article 529-2 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -453,21 +751,35 @@ class AmendeForfaitairePage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Amende forfaitaire majorée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00079",
+                  "B) Amende forfaitaire majorée",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Réclamation (annule le titre exécutoire) — ",
-                ),
-                TextSpan(
-                  text: "article 530 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00080",
+                    "Réclamation (annule le titre exécutoire) — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : réclamation accompagnée de l’avis d’amende forfaitaire majorée correspondant.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00081",
+                    "article 530 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00082",
+                    " : réclamation accompagnée de l’avis d’amende forfaitaire majorée correspondant.",
+                  ),
                 ),
               ]),
             ],
@@ -477,78 +789,136 @@ class AmendeForfaitairePage extends StatelessWidget {
 
           // Suites possibles
           _ConditionCard(
-            title: "VI — Suites possibles après examen",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+              "f00083",
+              "VI — Suites possibles après examen",
+            ),
             cardColor: cardSuite,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Après examen de la recevabilité d’une requête en exonération ou d’une réclamation, le ministère public peut :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00084",
+                  "Après examen de la recevabilité d’une requête en exonération ou d’une réclamation, le ministère public peut :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Renoncer aux poursuites (classement sans suite).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00085",
+                  "Renoncer aux poursuites (classement sans suite).",
+                ),
               ),
               _BulletPoint(
-                text: "Saisir le tribunal par voie d’ordonnance pénale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00086",
+                  "Saisir le tribunal par voie d’ordonnance pénale.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Citer directement le contrevenant devant le tribunal de police.",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("A) Ordonnance pénale"),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Articles 524 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00087",
+                  "Citer directement le contrevenant devant le tribunal de police.",
                 ),
-                TextSpan(
-                  text:
-                      " : procédure simplifiée permettant au juge de statuer sans débat préalable (relaxe ou condamnation).",
-                ),
-              ]),
-              SizedBox(height: 10),
-              _Paragraph(
-                "À compter de l’envoi de la notification d’une ordonnance pénale de condamnation, le prévenu dispose de 30 jours pour former opposition ou payer l’amende.",
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Citation directe devant le tribunal de police",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00088",
+                  "A) Ordonnance pénale",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 531 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00089",
+                    "Articles 524 et suivants du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : applicable aux contraventions ne pouvant relever de l’amende forfaitaire ou lorsque l’ordonnance pénale est écartée.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00090",
+                    " : procédure simplifiée permettant au juge de statuer sans débat préalable (relaxe ou condamnation).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "La citation précise la juridiction saisie, le lieu, l’heure et la date d’audience. "
-                "Le juge prononce des sanctions proportionnées à la gravité de l’infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00091",
+                  "À compter de l’envoi de la notification d’une ordonnance pénale de condamnation, le prévenu dispose de 30 jours pour former opposition ou payer l’amende.",
+                ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                  "f00092",
+                  "B) Citation directe devant le tribunal de police",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00093",
+                    "Articles 531 et suivants du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00094",
+                    " : applicable aux contraventions ne pouvant relever de l’amende forfaitaire ou lorsque l’ordonnance pénale est écartée.",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00095",
+                      "La citation précise la juridiction saisie, le lieu, l’heure et la date d’audience. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00096",
+                      "Le juge prononce des sanctions proportionnées à la gravité de l’infraction.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Point pratique : l’agent verbalisateur doit relever avec précision et impartialité les circonstances de commission de l’infraction (qualité du PV, cohérence des mentions).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00097",
+                      "Point pratique : l’agent verbalisateur doit relever avec précision et impartialité les circonstances de commission de l’infraction (qualité du PV, cohérence des mentions).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
-                TextSpan(text: "Mis à jour le "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                    "f00098",
+                    "Mis à jour le ",
+                  ),
+                ),
                 TextSpan(
                   text: "15/06/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
@@ -637,7 +1007,11 @@ class _AmountTable extends StatelessWidget {
                 Expanded(
                   flex: 3,
                   child: Text(
-                    "Minorée",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00099",
+                      "Minorée",
+                    ),
                     style: GoogleFonts.fustat(
                       fontWeight: FontWeight.w900,
                       fontSize: 13.5,
@@ -648,7 +1022,11 @@ class _AmountTable extends StatelessWidget {
                 Expanded(
                   flex: 2,
                   child: Text(
-                    "Majorée",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart",
+                      "f00100",
+                      "Majorée",
+                    ),
                     textAlign: TextAlign.right,
                     style: GoogleFonts.fustat(
                       fontWeight: FontWeight.w900,

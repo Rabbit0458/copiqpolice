@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FicheSuiviSanguinePage extends StatelessWidget {
   const FicheSuiviSanguinePage({super.key});
@@ -38,10 +39,18 @@ class FicheSuiviSanguinePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -56,7 +65,11 @@ class FicheSuiviSanguinePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Fiche de suivi\nPrélèvement sanguin",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+              "f00003",
+              "Fiche de suivi\nPrélèvement sanguin",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -68,37 +81,49 @@ class FicheSuiviSanguinePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La fiche de suivi s’inscrit dans le cadre des vérifications visant à établir l’usage de stupéfiants prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+                    "f00005",
+                    "La fiche de suivi s’inscrit dans le cadre des vérifications visant à établir l’usage de stupéfiants prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L.235-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+                    "f00006",
+                    "l’article L.235-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les modalités de dépistage et les analyses/examens associés sont encadrés notamment par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+                    "f00007",
+                    "Les modalités de dépistage et les analyses/examens associés sont encadrés notamment par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’arrêté du 13 décembre 2016",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+                    "f00008",
+                    "l’arrêté du 13 décembre 2016",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -109,7 +134,11 @@ class FicheSuiviSanguinePage extends StatelessWidget {
 
           // ✅ Document (image CANVA zoomable)
           _ConditionCard(
-            title: "Document (aperçu)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+              "f00009",
+              "Document (aperçu)",
+            ),
             cardColor: cardDoc,
             accent: accentGrey,
             titleColor: textMain,
@@ -372,9 +401,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -439,8 +466,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+        "f00010",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+        "f00011",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -613,7 +648,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+                    "f00012",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -682,7 +721,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart",
+                  "f00013",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -710,7 +753,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -745,7 +790,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

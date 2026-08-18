@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RequisitionExamenCliniquePrelevementExpertisePage
     extends StatelessWidget {
@@ -51,10 +52,18 @@ class RequisitionExamenCliniquePrelevementExpertisePage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -69,7 +78,11 @@ class RequisitionExamenCliniquePrelevementExpertisePage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Réquisition — examen clinique\n& prélèvement sanguin (expertise)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+              "f00003",
+              "Réquisition — examen clinique\n& prélèvement sanguin (expertise)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,13 +97,33 @@ class RequisitionExamenCliniquePrelevementExpertisePage
             cardColor: cardDoc,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas sert à formaliser la réquisition adressée au praticien (médecin, étudiant autorisé à exercer "
-                "à titre de remplaçant, infirmier ou biologiste) aux fins :\n"
-                "• d’un examen clinique médical ;\n"
-                "• et/ou d’un prélèvement sanguin.\n"
-                "Il est utilisé pour établir l’usage de stupéfiants, ou dans le cadre d’un examen technique / d’une expertise.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00004",
+                      "Ce canevas sert à formaliser la réquisition adressée au praticien (médecin, étudiant autorisé à exercer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00005",
+                      "à titre de remplaçant, infirmier ou biologiste) aux fins :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00006",
+                      "• d’un examen clinique médical ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00007",
+                      "• et/ou d’un prélèvement sanguin.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00008",
+                      "Il est utilisé pour établir l’usage de stupéfiants, ou dans le cadre d’un examen technique / d’une expertise.",
+                    ),
               ),
             ],
           ),
@@ -99,51 +132,76 @@ class RequisitionExamenCliniquePrelevementExpertisePage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Cadre juridique (élément légal)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+              "f00009",
+              "I — Cadre juridique (élément légal)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les vérifications visant à établir l’usage de stupéfiants peuvent imposer un prélèvement sanguin, notamment :\n\n",
-                ),
-                TextSpan(text: "• En cas de décès du conducteur : "),
-                TextSpan(
-                  text: "article R. 235-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00010",
+                    "Les vérifications visant à établir l’usage de stupéfiants peuvent imposer un prélèvement sanguin, notamment :\n\n",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00011",
+                    "• En cas de décès du conducteur : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00012",
+                    "article R. 235-8 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ".\n"),
                 TextSpan(
-                  text:
-                      "• Lorsque le prélèvement salivaire est impossible (ex. conducteur gravement blessé).\n\n",
-                ),
-                TextSpan(
-                  text:
-                      "Dans ce cadre, le prélèvement sanguin est réparti entre deux tubes : ",
-                ),
-                TextSpan(
-                  text: "article R. 235-7 alinéa 2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00013",
+                    "• Lorsque le prélèvement salivaire est impossible (ex. conducteur gravement blessé).\n\n",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00014",
+                    "Dans ce cadre, le prélèvement sanguin est réparti entre deux tubes : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00015",
+                    "article R. 235-7 alinéa 2 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ".\n\n"),
                 TextSpan(
-                  text:
-                      "Un prélèvement sanguin peut aussi être effectué après un prélèvement salivaire, lorsque le conducteur demande un examen technique ou une expertise. Dans ce cas, le prélèvement est conservé dans un seul tube : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00016",
+                    "Un prélèvement sanguin peut aussi être effectué après un prélèvement salivaire, lorsque le conducteur demande un examen technique ou une expertise. Dans ce cas, le prélèvement est conservé dans un seul tube : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 235-7 alinéa 1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00017",
+                    "article R. 235-7 alinéa 1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -153,22 +211,37 @@ class RequisitionExamenCliniquePrelevementExpertisePage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Identité (rubrique à renseigner)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+              "f00018",
+              "II — Identité (rubrique à renseigner)",
+            ),
             cardColor: cardInfo,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’identité succincte de la personne requise doit être précisée.\n"
-                "Exemples : nom, qualité (médecin / infirmier / biologiste), structure d’exercice, coordonnées utiles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00019",
+                      "L’identité succincte de la personne requise doit être précisée.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00020",
+                      "Exemples : nom, qualité (médecin / infirmier / biologiste), structure d’exercice, coordonnées utiles.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Astuce",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Renseigner une identité claire facilite la traçabilité et sécurise la chaîne de réquisition (qui, quoi, où, quand).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00021",
+                      "Renseigner une identité claire facilite la traçabilité et sécurise la chaîne de réquisition (qui, quoi, où, quand).",
+                    ),
                   ),
                 ],
               ),
@@ -178,19 +251,51 @@ class RequisitionExamenCliniquePrelevementExpertisePage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Mission confiée (ce que doit faire le requis)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+              "f00022",
+              "III — Mission confiée (ce que doit faire le requis)",
+            ),
             cardColor: cardSteps,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur précise la mission confiée à la personne requise et liste les actes à accomplir.\n"
-                "Exemples :\n"
-                "• se transporter à l’adresse / sur le lieu indiqué ;\n"
-                "• procéder à l’examen clinique ;\n"
-                "• réaliser le prélèvement sanguin conformément aux modalités applicables ;\n"
-                "• conditionner/identifier l’échantillon selon les règles (tubes, étiquetage, scellés si requis) ;\n"
-                "• remettre les éléments nécessaires au suivi (fiche, documents).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00023",
+                      "Le rédacteur précise la mission confiée à la personne requise et liste les actes à accomplir.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00024",
+                      "Exemples :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00025",
+                      "• se transporter à l’adresse / sur le lieu indiqué ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00026",
+                      "• procéder à l’examen clinique ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00027",
+                      "• réaliser le prélèvement sanguin conformément aux modalités applicables ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00028",
+                      "• conditionner/identifier l’échantillon selon les règles (tubes, étiquetage, scellés si requis) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00029",
+                      "• remettre les éléments nécessaires au suivi (fiche, documents).",
+                    ),
               ),
             ],
           ),
@@ -198,16 +303,36 @@ class RequisitionExamenCliniquePrelevementExpertisePage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Remise de documents",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+              "f00030",
+              "IV — Remise de documents",
+            ),
             cardColor: cardDoc,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lors de la remise du document au requis, il est rappelé :\n"
-                "• l’obligation d’accomplir la prestation ;\n"
-                "• et la garantie qui en découle (réalisation effective des actes demandés).\n"
-                "Le rédacteur s’assure que la mission est comprise et que le document est bien transmis.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00031",
+                      "Lors de la remise du document au requis, il est rappelé :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00032",
+                      "• l’obligation d’accomplir la prestation ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00033",
+                      "• et la garantie qui en découle (réalisation effective des actes demandés).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                      "f00034",
+                      "Le rédacteur s’assure que la mission est comprise et que le document est bien transmis.",
+                    ),
               ),
             ],
           ),
@@ -215,14 +340,36 @@ class RequisitionExamenCliniquePrelevementExpertisePage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Mentions terminales",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+              "f00035",
+              "V — Mentions terminales",
+            ),
             cardColor: cardDoc,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Le lieu de rédaction est indiqué."),
-              _BulletPoint(text: "La date est indiquée."),
-              _BulletPoint(text: "Le rédacteur signe l’acte."),
+            children: [
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                  "f00036",
+                  "Le lieu de rédaction est indiqué.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                  "f00037",
+                  "La date est indiquée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                  "f00038",
+                  "Le rédacteur signe l’acte.",
+                ),
+              ),
             ],
           ),
 
@@ -230,7 +377,11 @@ class RequisitionExamenCliniquePrelevementExpertisePage
 
           // ✅ Image CANVA demandée
           _ConditionCard(
-            title: "Canevas (aperçu)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+              "f00039",
+              "Canevas (aperçu)",
+            ),
             cardColor: cardDoc,
             accent: accentGrey,
             titleColor: textMain,
@@ -567,8 +718,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+        "f00041",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+        "f00042",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -741,7 +900,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                    "f00043",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -810,7 +973,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart",
+                  "f00044",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -838,7 +1005,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -873,7 +1042,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personne_grievement_blessee/personne_contenu.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -57,8 +58,11 @@ class _PersonneBlesseGrievementntroPageState
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'LA DÉCOUVERTE D\'UNE PERSONNE GRIÈVEMENT BLESSÉE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personne_grievement_blessee/personne_intro.dart",
+    "f00001",
+    'LA DÉCOUVERTE D\'UNE PERSONNE GRIÈVEMENT BLESSÉE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -165,7 +169,11 @@ class _PersonneBlesseGrievementntroPageState
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Le cadre juridique applicable lors de la découverte d'une personne grièvement blessée",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personne_grievement_blessee/personne_intro.dart",
+                        "f00002",
+                        "Le cadre juridique applicable lors de la découverte d'une personne grièvement blessée",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -280,7 +288,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personne_grievement_blessee/personne_intro.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

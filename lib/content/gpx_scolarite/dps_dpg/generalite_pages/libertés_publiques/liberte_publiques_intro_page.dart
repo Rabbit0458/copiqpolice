@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/liberte_publiques_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — L’LibertesPubliques (SPLASH IA 2025)
@@ -63,7 +64,11 @@ class _LibertesPubliquesIntroPageState extends State<LibertesPubliquesIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LES LIBERTÉS PUBLIQUES';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/liberte_publiques_intro_page.dart",
+    "f00001",
+    'LES LIBERTÉS PUBLIQUES',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -173,7 +178,11 @@ class _LibertesPubliquesIntroPageState extends State<LibertesPubliquesIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Structure, éléments et repères clés.\nPrêt(e) pour un survol éclair avant la fiche complète ?",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/liberte_publiques_intro_page.dart",
+                        "f00002",
+                        "Structure, éléments et repères clés.\nPrêt(e) pour un survol éclair avant la fiche complète ?",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -278,7 +287,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/liberte_publiques_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

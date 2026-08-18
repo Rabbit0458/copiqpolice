@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPriseServiceAppelPage extends StatelessWidget {
   const PaPriseServiceAppelPage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/policier_intervention/prise-service/appel';
+  static const String routeName =
+      '/pa/dps_dpg/policier_intervention/prise-service/appel';
 
   // Couleur dédiée aux articles de loi (si tu en ajoutes dans cette page)
   static const Color _lawRed = Color(0xFFE53935);
@@ -47,10 +49,18 @@ class PaPriseServiceAppelPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Prise de service",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+            "f00002",
+            "Prise de service",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -65,7 +75,11 @@ class PaPriseServiceAppelPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’appel",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+              "f00003",
+              "L’appel",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -76,16 +90,36 @@ class PaPriseServiceAppelPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Idée générale",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+              "f00004",
+              "Idée générale",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Afin d’assurer la continuité du service, les gardiens de la paix et les policiers adjoints "
-                "effectuent souvent leur mission par cycle de travail. Cette pratique du « roulement » impose "
-                "un dispositif d’information de tout le personnel afin de maintenir l’efficacité du service.\n\n"
-                "Ce dispositif se réalise à un moment privilégié : l’appel.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00005",
+                      "Afin d’assurer la continuité du service, les gardiens de la paix et les policiers adjoints ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00006",
+                      "effectuent souvent leur mission par cycle de travail. Cette pratique du « roulement » impose ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00007",
+                      "un dispositif d’information de tout le personnel afin de maintenir l’efficacité du service.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00008",
+                      "Ce dispositif se réalise à un moment privilégié : l’appel.",
+                    ),
               ),
             ],
           ),
@@ -94,24 +128,47 @@ class PaPriseServiceAppelPage extends StatelessWidget {
 
           // ✅ “Élément légal” en haut : ici, pas d’article fourni -> on ne l’invente pas.
           _ConditionCard(
-            title: "Référence (cadre)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+              "f00009",
+              "Référence (cadre)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette fiche décrit une pratique d’organisation interne du service (prise d’informations et transmission "
-                "des consignes). Aucun article de loi précis n’est fourni dans ton contenu pour servir de fondement direct.\n\n"
-                "➡️ Si tu veux, tu pourras ajouter ici les références exactes (CPP / CSI / déontologie / notes de service) "
-                "et je te les mettrai en rouge automatiquement dans les TextSpan.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00010",
+                      "Cette fiche décrit une pratique d’organisation interne du service (prise d’informations et transmission ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00011",
+                      "des consignes). Aucun article de loi précis n’est fourni dans ton contenu pour servir de fondement direct.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00012",
+                      "➡️ Si tu veux, tu pourras ajouter ici les références exactes (CPP / CSI / déontologie / notes de service) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00013",
+                      "et je te les mettrai en rouge automatiquement dans les TextSpan.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: 'IMPORTANT',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ne pas inventer de références : on n’affiche que les textes officiellement donnés dans ton cours / ta source.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00014",
+                      "Ne pas inventer de références : on n’affiche que les textes officiellement donnés dans ton cours / ta source.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ],
@@ -122,22 +179,56 @@ class PaPriseServiceAppelPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Objectif de l’appel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+              "f00015",
+              "Objectif de l’appel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Effectué au moment de la prise de service par le chef de section ou de brigade, l’appel "
-                "constitue le moment favorable qui doit permettre :\n"
-                "• la circulation de l’information au sein du service ;\n"
-                "• la prise des ordres des autorités supérieures.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00016",
+                      "Effectué au moment de la prise de service par le chef de section ou de brigade, l’appel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00017",
+                      "constitue le moment favorable qui doit permettre :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00018",
+                      "• la circulation de l’information au sein du service ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00019",
+                      "• la prise des ordres des autorités supérieures.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("En clair"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00020",
+                  "En clair",
+                ),
+              ),
               _Paragraph(
-                "L’appel sert à aligner tout le monde : qui fait quoi, avec quelles consignes, avec quelles priorités, "
-                "et avec quels points de vigilance à connaître avant de partir en mission.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00021",
+                      "L’appel sert à aligner tout le monde : qui fait quoi, avec quelles consignes, avec quelles priorités, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00022",
+                      "et avec quels points de vigilance à connaître avant de partir en mission.",
+                    ),
               ),
             ],
           ),
@@ -145,21 +236,55 @@ class PaPriseServiceAppelPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Présentation du policier",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+              "f00023",
+              "Présentation du policier",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le policier doit se présenter à l’heure prévue, en tenue d’uniforme (s’il est affecté dans un corps en tenue) "
-                "et muni des équipements réglementaires.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00024",
+                      "Le policier doit se présenter à l’heure prévue, en tenue d’uniforme (s’il est affecté dans un corps en tenue) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00025",
+                      "et muni des équipements réglementaires.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("À vérifier pour soi-même avant l’appel"),
-              _BulletPoint(text: "Ponctualité (heure prévue)."),
-              _BulletPoint(text: "Tenue conforme (détails corrects)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00026",
+                  "À vérifier pour soi-même avant l’appel",
+                ),
+              ),
               _BulletPoint(
-                text: "Équipements réglementaires présents et opérationnels.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00027",
+                  "Ponctualité (heure prévue).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00028",
+                  "Tenue conforme (détails corrects).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00029",
+                  "Équipements réglementaires présents et opérationnels.",
+                ),
               ),
             ],
           ),
@@ -167,41 +292,83 @@ class PaPriseServiceAppelPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Rôle du chef d’unité pendant l’appel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+              "f00030",
+              "Rôle du chef d’unité pendant l’appel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "À l’occasion de l’appel, le chef d’unité assure la mise en condition opérationnelle et la transmission "
-                "des informations utiles au service.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00031",
+                      "À l’occasion de l’appel, le chef d’unité assure la mise en condition opérationnelle et la transmission ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00032",
+                      "des informations utiles au service.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Il/Elle :"),
-              _IntroBullet(text: "procède à l’appel nominal ;"),
-              _IntroBullet(
-                text:
-                    "effectue une inspection rapide et fait rectifier les détails de la tenue ;",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00033",
+                  "Il/Elle :",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "s’assure que tous sont bien porteurs de leur arme, de leur gilet pare-balles et de leurs équipements réglementaires ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00034",
+                  "procède à l’appel nominal ;",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "donne lecture des ordres, instructions et télégrammes parvenus depuis la dernière prise de service ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00035",
+                  "effectue une inspection rapide et fait rectifier les détails de la tenue ;",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "fait prendre en note sur le carnet ou le mémento de service les consignes particulières (recherches, fiches d’intervention) ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00036",
+                  "s’assure que tous sont bien porteurs de leur arme, de leur gilet pare-balles et de leurs équipements réglementaires ;",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "indique à chacun le service à effectuer durant la vacation (et éventuellement les suivantes) et rappelle les consignes ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00037",
+                  "donne lecture des ordres, instructions et télégrammes parvenus depuis la dernière prise de service ;",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "prend en compte les demandes (congés, repos, candidature, …) et recueille les informations susceptibles d’intéresser le service.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00038",
+                  "fait prendre en note sur le carnet ou le mémento de service les consignes particulières (recherches, fiches d’intervention) ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00039",
+                  "indique à chacun le service à effectuer durant la vacation (et éventuellement les suivantes) et rappelle les consignes ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00040",
+                  "prend en compte les demandes (congés, repos, candidature, …) et recueille les informations susceptibles d’intéresser le service.",
+                ),
               ),
             ],
           ),
@@ -209,27 +376,57 @@ class PaPriseServiceAppelPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "À retenir (pratique terrain)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+              "f00041",
+              "À retenir (pratique terrain)",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Bon réflexe"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                  "f00042",
+                  "Bon réflexe",
+                ),
+              ),
               _Paragraph(
-                "Arriver prêt : matériel OK, esprit dispo, et carnet/mémento accessible. "
-                "Le but, c’est de repartir avec une consigne claire, comprise, et notée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00043",
+                      "Arriver prêt : matériel OK, esprit dispo, et carnet/mémento accessible. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00044",
+                      "Le but, c’est de repartir avec une consigne claire, comprise, et notée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Pendant l’appel, note immédiatement les consignes particulières (recherches, fiches d’intervention). "
-                        "Ça évite les oublis, et ça sécurise ton action en intervention.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                          "f00045",
+                          "Pendant l’appel, note immédiatement les consignes particulières (recherches, fiches d’intervention). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                          "f00046",
+                          "Ça évite les oublis, et ça sécurise ton action en intervention.",
+                        ),
                   ),
                   TextSpan(text: " "),
                   TextSpan(
-                    text: "(mémento / carnet de service)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart",
+                      "f00047",
+                      "(mémento / carnet de service)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,

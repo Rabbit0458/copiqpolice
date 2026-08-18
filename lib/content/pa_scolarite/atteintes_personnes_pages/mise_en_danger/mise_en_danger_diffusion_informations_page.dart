@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
   const PaMiseEnDangerDiffusionInformationsPage({super.key});
@@ -56,10 +57,18 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en danger",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+            "f00002",
+            "Mise en danger",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La mise en danger par la diffusion d’informations personnelles",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00003",
+              "La mise en danger par la diffusion d’informations personnelles",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,16 +99,36 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
 
           // Intro pédagogique (propre + concise)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: card5,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Révéler, diffuser ou transmettre (par quelque moyen que ce soit) des informations "
-                "relatives à la vie privée, familiale ou professionnelle d’une personne, permettant de "
-                "l’identifier ou de la localiser, dans le but de l’exposer (elle ou sa famille) à un risque direct "
-                "d’atteinte à la personne ou aux biens, constitue une infraction lorsque l’auteur ne pouvait ignorer ce risque.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00005",
+                      "Révéler, diffuser ou transmettre (par quelque moyen que ce soit) des informations ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00006",
+                      "relatives à la vie privée, familiale ou professionnelle d’une personne, permettant de ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00007",
+                      "l’identifier ou de la localiser, dans le but de l’exposer (elle ou sa famille) à un risque direct ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00008",
+                      "d’atteinte à la personne ou aux biens, constitue une infraction lorsque l’auteur ne pouvait ignorer ce risque.",
+                    ),
               ),
             ],
           ),
@@ -104,19 +137,30 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
 
           // ✅ ÉLÉMENT LÉGAL EN HAUT (demandé)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Infraction définie et réprimée par "),
                 TextSpan(
-                  text: "l’article 223-1-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00010",
+                    "Infraction définie et réprimée par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00011",
+                    "l’article 223-1-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -125,9 +169,21 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’objectif est notamment de viser des comportements (souvent en ligne) "
-                        "qui, sans être une provocation directe ou une complicité, recherchent en pratique "
-                        "le même résultat : exposer la personne à un risque direct.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                          "f00012",
+                          "L’objectif est notamment de viser des comportements (souvent en ligne) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                          "f00013",
+                          "qui, sans être une provocation directe ou une complicité, recherchent en pratique ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                          "f00014",
+                          "le même résultat : exposer la personne à un risque direct.",
+                        ),
                   ),
                 ],
               ),
@@ -138,45 +194,116 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
 
           // ÉLÉMENT MATÉRIEL
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Révélation / diffusion / transmission (par quelque moyen)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00016",
+                  "A) Révélation / diffusion / transmission (par quelque moyen)",
+                ),
               ),
               _Paragraph(
-                "L’incrimination n’exige pas que la révélation, la diffusion ou la transmission soient publiques. "
-                "L’infraction vise particulièrement les réseaux sociaux, mais des moyens plus confidentiels "
-                "(courriels, SMS, messageries) peuvent également être concernés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00017",
+                      "L’incrimination n’exige pas que la révélation, la diffusion ou la transmission soient publiques. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00018",
+                      "L’infraction vise particulièrement les réseaux sociaux, mais des moyens plus confidentiels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00019",
+                      "(courriels, SMS, messageries) peuvent également être concernés.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "La simple réception, la captation ou la détention des informations n’est pas répréhensible.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00020",
+                  "La simple réception, la captation ou la détention des informations n’est pas répréhensible.",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Informations de vie privée, familiale ou professionnelle",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00021",
+                  "B) Informations de vie privée, familiale ou professionnelle",
+                ),
               ),
               _Paragraph(
-                "Exemples : numéro de téléphone, adresse, informations professionnelles. "
-                "Une photographie peut aussi constituer une information personnelle, notamment si elle "
-                "a été prise dans un lieu privé à l’insu de la personne.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00022",
+                      "Exemples : numéro de téléphone, adresse, informations professionnelles. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00023",
+                      "Une photographie peut aussi constituer une information personnelle, notamment si elle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00024",
+                      "a été prise dans un lieu privé à l’insu de la personne.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Permettant d’identifier ou de localiser"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00025",
+                  "C) Permettant d’identifier ou de localiser",
+                ),
+              ),
               _Paragraph(
-                "Les informations doivent permettre d’identifier ou de localiser la personne. "
-                "Il peut s’agir d’une personne distincte de celle visée à titre principal par la divulgation.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00026",
+                      "Les informations doivent permettre d’identifier ou de localiser la personne. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00027",
+                      "Il peut s’agir d’une personne distincte de celle visée à titre principal par la divulgation.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("D) Auteur : toute personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00028",
+                  "D) Auteur : toute personne",
+                ),
+              ),
               _Paragraph(
-                "L’incrimination vise toute personne, y compris un journaliste si la preuve est rapportée d’une "
-                "intention de nuire gravement à autrui. Elle n’a toutefois pas pour objet de réprimer la diffusion "
-                "d’éléments dans le but d’informer le public, même si ces éléments pourraient être réutilisés par un tiers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00029",
+                      "L’incrimination vise toute personne, y compris un journaliste si la preuve est rapportée d’une ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00030",
+                      "intention de nuire gravement à autrui. Elle n’a toutefois pas pour objet de réprimer la diffusion ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00031",
+                      "d’éléments dans le but d’informer le public, même si ces éléments pourraient être réutilisés par un tiers.",
+                    ),
               ),
             ],
           ),
@@ -185,25 +312,42 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
 
           // Jurisprudence (mise en valeur)
           _ConditionCard(
-            title: "Jurisprudence",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00032",
+              "Jurisprudence",
+            ),
             cardColor: card4,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La diffusion concomitante d’informations sur la qualité de fonctionnaire de police "
-                      "dans un contexte visant les forces de l’ordre peut exposer la personne et/ou sa famille "
-                      "à un risque direct d’atteinte à la personne ou aux biens. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                        "f00033",
+                        "La diffusion concomitante d’informations sur la qualité de fonctionnaire de police ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                        "f00034",
+                        "dans un contexte visant les forces de l’ordre peut exposer la personne et/ou sa famille ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                        "f00035",
+                        "à un risque direct d’atteinte à la personne ou aux biens. ",
+                      ),
                 ),
                 TextSpan(text: "— "),
                 TextSpan(
-                  text: "Cass. crim., n° 24-82.090, 11 février 2025",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00036",
+                    "Cass. crim., n° 24-82.090, 11 février 2025",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
             ],
@@ -213,16 +357,38 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
 
           // ÉLÉMENT MORAL
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00037",
+              "III — Élément moral",
+            ),
             cardColor: card3,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Intention de nuire gravement à autrui"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00038",
+                  "Intention de nuire gravement à autrui",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir l’intention manifeste qu’il soit porté une atteinte grave à la personne, "
-                "à ses proches ou à ses biens. L’intention peut être caractérisée par des propos explicites "
-                "ou déduite d’un faisceau d’indices.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00039",
+                      "L’auteur doit avoir l’intention manifeste qu’il soit porté une atteinte grave à la personne, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00040",
+                      "à ses proches ou à ses biens. L’intention peut être caractérisée par des propos explicites ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00041",
+                      "ou déduite d’un faisceau d’indices.",
+                    ),
               ),
             ],
           ),
@@ -231,57 +397,98 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
 
           // CIRCONSTANCES AGGRAVANTES
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00042",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-1-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00043",
+                    "Article 223-1-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Victime dépositaire de l’autorité publique, chargée d’une mission de service public, "
-                    "titulaire d’un mandat électif public, candidat à un mandat pendant la campagne, ou journaliste "
-                    "(au sens de l’art. 2, al. 2, loi du 29 juillet 1881).",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00044",
+                      "Victime dépositaire de l’autorité publique, chargée d’une mission de service public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00045",
+                      "titulaire d’un mandat électif public, candidat à un mandat pendant la campagne, ou journaliste ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00046",
+                      "(au sens de l’art. 2, al. 2, loi du 29 juillet 1881).",
+                    ),
               ),
               _BulletPoint(
                 text:
-                    "Faits commis dans les mêmes conditions envers le conjoint, ascendant, descendant en ligne directe "
-                    "ou toute personne vivant habituellement au domicile de la personne protégée, en raison des fonctions exercées.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00047",
+                      "Faits commis dans les mêmes conditions envers le conjoint, ascendant, descendant en ligne directe ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                      "f00048",
+                      "ou toute personne vivant habituellement au domicile de la personne protégée, en raison des fonctions exercées.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-1-1 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00049",
+                    "Article 223-1-1 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00050",
+                    " : victime mineure.",
                   ),
                 ),
-                TextSpan(text: " : victime mineure."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-1-1 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00051",
+                    "Article 223-1-1 alinéa 4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : victime présentant une particulière vulnérabilité (âge, maladie, infirmité, déficience, grossesse), "
-                      "apparente ou connue de l’auteur.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                        "f00052",
+                        " : victime présentant une particulière vulnérabilité (âge, maladie, infirmité, déficience, grossesse), ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                        "f00053",
+                        "apparente ou connue de l’auteur.",
+                      ),
                 ),
               ]),
             ],
@@ -291,85 +498,155 @@ class PaMiseEnDangerDiffusionInformationsPage extends StatelessWidget {
 
           // RÉPRESSION + tentative/complicité + personnes morales
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+              "f00054",
+              "V — Répression",
+            ),
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00055",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00056",
+                    "Qualification simple : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00057",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. ",
+                  ),
                 ),
                 TextSpan(text: "— "),
                 TextSpan(
-                  text: "Article 223-1-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00058",
+                    "Article 223-1-1 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00059",
+                    "Qualification aggravée : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00060",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. ",
+                  ),
                 ),
                 TextSpan(text: "— "),
                 TextSpan(
-                  text: "Article 223-1-1 alinéas 2 à 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00061",
+                    "Article 223-1-1 alinéas 2 à 4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00062",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Responsabilité pénale des personnes morales selon le principe général : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00063",
+                    "Responsabilité pénale des personnes morales selon le principe général : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00064",
+                    "article 121-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-1-1 alinéa 5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00065",
+                    "Article 223-1-1 alinéa 5 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : en cas de diffusion par voie de presse, audiovisuelle ou communication au public en ligne, "
-                      "application des règles spécifiques de ces matières pour la détermination des responsables.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                        "f00066",
+                        " : en cas de diffusion par voie de presse, audiovisuelle ou communication au public en ligne, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                        "f00067",
+                        "application des règles spécifiques de ces matières pour la détermination des responsables.",
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00068",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                  "f00069",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, selon "),
                 TextSpan(
-                  text: "les articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00070",
+                    "Complicité : OUI, selon ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart",
+                    "f00071",
+                    "les articles 121-6 et 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -628,9 +905,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

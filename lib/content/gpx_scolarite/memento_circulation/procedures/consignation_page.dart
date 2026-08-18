@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConsignationPage extends StatelessWidget {
   const ConsignationPage({super.key});
@@ -56,10 +57,18 @@ class ConsignationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Procédures — circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+            "f00002",
+            "Procédures — circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ConsignationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La consignation",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00003",
+              "La consignation",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,26 +99,32 @@ class ConsignationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 121-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                    "f00005",
+                    "Article L. 121-4 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article A. 37-27-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                    "f00006",
+                    "article A. 37-27-1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -114,8 +133,16 @@ class ConsignationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La consignation est une somme versée immédiatement pour garantir le paiement futur (amende, etc.) "
-                        "lorsque certaines garanties de représentation font défaut.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                          "f00007",
+                          "La consignation est une somme versée immédiatement pour garantir le paiement futur (amende, etc.) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                          "f00008",
+                          "lorsque certaines garanties de représentation font défaut.",
+                        ),
                   ),
                 ],
               ),
@@ -126,25 +153,48 @@ class ConsignationPage extends StatelessWidget {
 
           // Personnes concernées
           _ConditionCard(
-            title: "II — Personnes concernées",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00009",
+              "II — Personnes concernées",
+            ),
             cardColor: cardScope,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sont concernées les personnes (françaises ou étrangères) auteurs d’une infraction à la circulation routière "
-                "qui ne peuvent :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                      "f00010",
+                      "Sont concernées les personnes (françaises ou étrangères) auteurs d’une infraction à la circulation routière ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                      "f00011",
+                      "qui ne peuvent :",
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text: "Justifier d’un domicile sur le territoire français.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00012",
+                  "Justifier d’un domicile sur le territoire français.",
+                ),
               ),
               _IntroBullet(
-                text: "Justifier d’un emploi sur le territoire français.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00013",
+                  "Justifier d’un emploi sur le territoire français.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Justifier d’une caution agréée par l’administration (ex : Automobile-Club de France, Touring Club de France…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00014",
+                  "Justifier d’une caution agréée par l’administration (ex : Automobile-Club de France, Touring Club de France…).",
+                ),
               ),
             ],
           ),
@@ -153,30 +203,51 @@ class ConsignationPage extends StatelessWidget {
 
           // Infractions visées
           _ConditionCard(
-            title: "III — Infractions visées",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00015",
+              "III — Infractions visées",
+            ),
             cardColor: cardInfra,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sauf cas de paiement immédiat de l’amende forfaitaire ou de l’amende forfaitaire minorée "
-                "(prévu pour certaines contraventions), la consignation s’applique :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                      "f00016",
+                      "Sauf cas de paiement immédiat de l’amende forfaitaire ou de l’amende forfaitaire minorée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                      "f00017",
+                      "(prévu pour certaines contraventions), la consignation s’applique :",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Aux infractions au Code de la route : délits et contraventions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00018",
+                  "Aux infractions au Code de la route : délits et contraventions.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aux réglementations relatives aux transports routiers (dont marchandises dangereuses) et aux conditions de travail : délits et contraventions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00019",
+                  "Aux réglementations relatives aux transports routiers (dont marchandises dangereuses) et aux conditions de travail : délits et contraventions.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans la pratique, la consignation est surtout exigée pour les infractions mettant en danger la sécurité des personnes.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                      "f00020",
+                      "Dans la pratique, la consignation est surtout exigée pour les infractions mettant en danger la sécurité des personnes.",
+                    ),
                   ),
                 ],
               ),
@@ -184,15 +255,31 @@ class ConsignationPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La décision imposant le paiement de la consignation est prise par le procureur de la République, "
-                      "qui doit statuer dans les ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                        "f00021",
+                        "La décision imposant le paiement de la consignation est prise par le procureur de la République, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                        "f00022",
+                        "qui doit statuer dans les ",
+                      ),
                 ),
                 TextSpan(
-                  text: "24 heures",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                    "f00023",
+                    "24 heures",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " suivant la constatation de l’infraction.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                    "f00024",
+                    " suivant la constatation de l’infraction.",
+                  ),
                 ),
               ]),
             ],
@@ -202,13 +289,21 @@ class ConsignationPage extends StatelessWidget {
 
           // Montant consignation
           _ConditionCard(
-            title: "IV — Montant de la consignation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00025",
+              "IV — Montant de la consignation",
+            ),
             cardColor: cardMontants,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Montants indicatifs selon la nature de l’infraction :",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00026",
+                  "Montants indicatifs selon la nature de l’infraction :",
+                ),
               ),
               const SizedBox(height: 12),
               _ConsignationAmountTable(isDark: isDark),
@@ -219,83 +314,182 @@ class ConsignationPage extends StatelessWidget {
 
           // Mise en œuvre
           _ConditionCard(
-            title: "V — Mise en œuvre de la procédure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00027",
+              "V — Mise en œuvre de la procédure",
+            ),
             cardColor: cardMiseEnOeuvre,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Perception immédiate"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00028",
+                  "Perception immédiate",
+                ),
+              ),
               _Paragraph(
-                "L’agent verbalisateur utilise un carnet de quittances à souches permettant la perception immédiate "
-                "du montant de la consignation (feuillets 1 et 2 remis au contrevenant).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                      "f00029",
+                      "L’agent verbalisateur utilise un carnet de quittances à souches permettant la perception immédiate ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                      "f00030",
+                      "du montant de la consignation (feuillets 1 et 2 remis au contrevenant).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Refus de payer"),
-              _BulletPoint(
-                text:
-                    "Si le conducteur refuse de payer : le véhicule est immobilisé et l’agent avise immédiatement le procureur de la République.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00031",
+                  "Refus de payer",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’O.P.J. peut prescrire la mise en fourrière du véhicule.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00032",
+                  "Si le conducteur refuse de payer : le véhicule est immobilisé et l’agent avise immédiatement le procureur de la République.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00033",
+                  "L’O.P.J. peut prescrire la mise en fourrière du véhicule.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Paiement exigé auprès d’un comptable du Trésor"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00034",
+                  "Paiement exigé auprès d’un comptable du Trésor",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Si le conducteur exige de payer uniquement entre les mains d’un comptable du Trésor : le véhicule est retenu jusqu’au versement effectif.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00035",
+                  "Si le conducteur exige de payer uniquement entre les mains d’un comptable du Trésor : le véhicule est retenu jusqu’au versement effectif.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Titre de caution"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00036",
+                  "Titre de caution",
+                ),
+              ),
               _Paragraph(
-                "Si le conducteur présente un titre de caution, l’infraction est relevée par procès-verbal en mentionnant :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00037",
+                  "Si le conducteur présente un titre de caution, l’infraction est relevée par procès-verbal en mentionnant :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Le nom et le siège de l’association ayant délivré le carnet d’assistance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00038",
+                  "Le nom et le siège de l’association ayant délivré le carnet d’assistance.",
+                ),
               ),
               _BulletPoint(
-                text: "Le nom de l’organisme cautionnant la personne.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00039",
+                  "Le nom de l’organisme cautionnant la personne.",
+                ),
               ),
               _BulletPoint(
-                text: "Le numéro de sociétaire du contrevenant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00040",
+                  "Le numéro de sociétaire du contrevenant.",
+                ),
               ),
               _BulletPoint(
-                text: "Le numéro de l’attestation de cautionnement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00041",
+                  "Le numéro de l’attestation de cautionnement.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Modes de paiement acceptés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00042",
+                  "Modes de paiement acceptés",
+                ),
+              ),
               _Paragraph(
-                "En règle générale, le paiement s’effectue en numéraire ou par chèque tiré sur une banque française.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00043",
+                  "En règle générale, le paiement s’effectue en numéraire ou par chèque tiré sur une banque française.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Un versement en travellers chèques ou en eurochèques peut être accepté.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00044",
+                  "Un versement en travellers chèques ou en eurochèques peut être accepté.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Quittance dématérialisée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00045",
+                  "Quittance dématérialisée",
+                ),
+              ),
               _Paragraph(
-                "Le carnet de quittances n’est pas utilisé si l’agent est équipé d’un dispositif permettant l’envoi d’une quittance dématérialisée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00046",
+                  "Le carnet de quittances n’est pas utilisé si l’agent est équipé d’un dispositif permettant l’envoi d’une quittance dématérialisée.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Si paiement par chèque ou de façon dématérialisée (CB, télépaiement automatisé) : une quittance peut être envoyée à la demande à l’adresse électronique communiquée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00047",
+                  "Si paiement par chèque ou de façon dématérialisée (CB, télépaiement automatisé) : une quittance peut être envoyée à la demande à l’adresse électronique communiquée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si paiement en espèces : le contrevenant doit communiquer son adresse électronique pour l’envoi de la quittance dématérialisée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                  "f00048",
+                  "Si paiement en espèces : le contrevenant doit communiquer son adresse électronique pour l’envoi de la quittance dématérialisée.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
-                TextSpan(text: "Mis à jour le "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+                    "f00049",
+                    "Mis à jour le ",
+                  ),
+                ),
                 TextSpan(
                   text: "15/06/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
@@ -405,18 +599,69 @@ class _ConsignationAmountTable extends StatelessWidget {
             ),
           ),
           row(
-            nature: "Délits punis d’une amende de 15 000 € au plus",
-            montant: "1 125 € à 2 250 €",
+            nature: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00050",
+              "Délits punis d’une amende de 15 000 € au plus",
+            ),
+            montant: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00051",
+              "1 125 € à 2 250 €",
+            ),
           ),
           row(
-            nature: "Délits punis d’une amende de plus de 15 000 €",
-            montant: "2 250 € à 4 500 €",
+            nature: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00052",
+              "Délits punis d’une amende de plus de 15 000 €",
+            ),
+            montant: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00053",
+              "2 250 € à 4 500 €",
+            ),
           ),
-          row(nature: "Contravention de 1ʳᵉ classe", montant: "11 €"),
-          row(nature: "Contravention de 2ᵉ classe", montant: "35 €"),
-          row(nature: "Contravention de 3ᵉ classe", montant: "68 €"),
-          row(nature: "Contravention de 4ᵉ classe", montant: "135 €"),
-          row(nature: "Contravention de 5ᵉ classe", montant: "750 €"),
+          row(
+            nature: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00054",
+              "Contravention de 1ʳᵉ classe",
+            ),
+            montant: "11 €",
+          ),
+          row(
+            nature: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00055",
+              "Contravention de 2ᵉ classe",
+            ),
+            montant: "35 €",
+          ),
+          row(
+            nature: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00056",
+              "Contravention de 3ᵉ classe",
+            ),
+            montant: "68 €",
+          ),
+          row(
+            nature: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00057",
+              "Contravention de 4ᵉ classe",
+            ),
+            montant: "135 €",
+          ),
+          row(
+            nature: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/consignation_page.dart",
+              "f00058",
+              "Contravention de 5ᵉ classe",
+            ),
+            montant: "750 €",
+          ),
         ],
       ),
     );
@@ -669,9 +914,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

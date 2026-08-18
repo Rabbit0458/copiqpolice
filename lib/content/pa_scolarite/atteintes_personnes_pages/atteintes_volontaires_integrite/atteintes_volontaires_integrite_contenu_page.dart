@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
   const PaAtteintesVolontairesIntegriteContenuPage({super.key});
@@ -26,10 +27,18 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -44,7 +53,11 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Atteintes volontaires à l’intégrité",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00003",
+              "Atteintes volontaires à l’intégrité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -54,8 +67,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux atteintes volontaires à l’intégrité "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux atteintes volontaires à l’intégrité ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -68,9 +89,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'menace_sans_condition',
-            title:
-                "La menace sans condition de commettre un crime ou un délit contre les personnes",
-            subtitle: "Définition, conditions et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00006",
+              "La menace sans condition de commettre un crime ou un délit contre les personnes",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00007",
+              "Définition, conditions et sanctions.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -84,8 +112,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'embuscade',
-            title: "L’embuscade",
-            subtitle: "Cadre légal, éléments constitutifs et peines.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00008",
+              "L’embuscade",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00009",
+              "Cadre légal, éléments constitutifs et peines.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +135,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'appels_messages_malveillants_agressions_sonores',
-            title:
-                "Les appels téléphoniques et les envois de messages malveillants ou agressions sonores",
-            subtitle: "Qualification, éléments et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00010",
+              "Les appels téléphoniques et les envois de messages malveillants ou agressions sonores",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00011",
+              "Qualification, éléments et répression.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -115,9 +158,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 4 =================
           _ModuleCard(
             tag: 'menaces_avec_condition',
-            title:
-                "Les menaces de crime ou délit avec ordre de remplir une condition",
-            subtitle: "Conditions, aggravations et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00012",
+              "Les menaces de crime ou délit avec ordre de remplir une condition",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00013",
+              "Conditions, aggravations et sanctions.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -131,8 +181,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 5 =================
           _ModuleCard(
             tag: 'tortures_actes_barbarie',
-            title: "Les tortures et actes de barbarie",
-            subtitle: "Définition, aggravations et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00014",
+              "Les tortures et actes de barbarie",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00015",
+              "Définition, aggravations et répression.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -146,9 +204,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 6 =================
           _ModuleCard(
             tag: 'violences_habituelles_couple_ex',
-            title:
-                "Les violences habituelles au sein du couple ou bien commises par un ex-",
-            subtitle: "Cadre légal, aggravations et peines.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00016",
+              "Les violences habituelles au sein du couple ou bien commises par un ex-",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00017",
+              "Cadre légal, aggravations et peines.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -162,9 +227,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 7 =================
           _ModuleCard(
             tag: 'violences_habituelles_mineur_vulnerable',
-            title:
-                "Les violences habituelles sur mineur ou personne vulnérable",
-            subtitle: "Éléments constitutifs, aggravations et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00018",
+              "Les violences habituelles sur mineur ou personne vulnérable",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00019",
+              "Éléments constitutifs, aggravations et sanctions.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -178,8 +250,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= 8 =================
           _ModuleCard(
             tag: 'violences_sur_fsi',
-            title: "Les violences sur FSI",
-            subtitle: "Qualification, aggravations et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00020",
+              "Les violences sur FSI",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00021",
+              "Qualification, aggravations et répression.",
+            ),
             imagePath: 'assets/images/violence_pdap.png',
             textMain: textMain,
             textSoft: textSoft,
@@ -194,9 +274,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // MODULE — OUTRAGE SEXISTE
           _ModuleCard(
             tag: 'outrage_sexiste',
-            title: "L'outrage sexiste et sexuel",
-            subtitle:
-                "Art. 621-1 Cp — définition, éléments constitutifs, aggravations et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00022",
+              "L'outrage sexiste et sexuel",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00023",
+              "Art. 621-1 Cp — définition, éléments constitutifs, aggravations et répression.",
+            ),
             imagePath: 'assets/images/atteintes_integrite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -211,9 +298,16 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_atteintes_volontaires_integrite',
-            title: 'Quiz — Atteintes volontaires à l’intégrité',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00024",
+              'Quiz — Atteintes volontaires à l’intégrité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart",
+              "f00025",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MutilationInfirmitePermanentePage extends StatelessWidget {
   const MutilationInfirmitePermanentePage({super.key});
@@ -45,7 +46,11 @@ class MutilationInfirmitePermanentePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Mutilation / infirmité permanente',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+            "f00001",
+            'Mutilation / infirmité permanente',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -71,20 +76,23 @@ class MutilationInfirmitePermanentePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "« Ayant entraîné une mutilation ou une infirmité permanente ».",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                        "f00002",
+                        "« Ayant entraîné une mutilation ou une infirmité permanente ».",
+                      ),
                     ),
                   ]),
                 ),
@@ -93,30 +101,58 @@ class MutilationInfirmitePermanentePage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "La mutilation se définit comme : « la perte accidentelle ou l’ablation d’un membre, d’une partie externe du corps, "
-                      "qui cause une atteinte irréversible à l’intégrité physique » (définition Robert).",
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                            "f00004",
+                            "La mutilation se définit comme : « la perte accidentelle ou l’ablation d’un membre, d’une partie externe du corps, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                            "f00005",
+                            "qui cause une atteinte irréversible à l’intégrité physique » (définition Robert).",
+                          ),
                     ),
                     const SizedBox(height: 10),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "L’infirmité permanente se définit comme « une atteinte majeure et irréversible d’un membre ou d’une fonction organique » (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00006",
+                          "L’infirmité permanente se définit comme « une atteinte majeure et irréversible d’un membre ou d’une fonction organique » (",
+                        ),
                       ),
-                      law("Cass. crim., n° 21-85.347 du 24 novembre 2021"),
-                      const TextSpan(
-                        text:
-                            "). L’infirmité peut donc être physique, mais elle peut également affecter les facultés mentales ou intellectuelles de la victime.",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00007",
+                          "Cass. crim., n° 21-85.347 du 24 novembre 2021",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00008",
+                          "). L’infirmité peut donc être physique, mais elle peut également affecter les facultés mentales ou intellectuelles de la victime.",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                        "f00009",
+                        "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -125,44 +161,107 @@ class MutilationInfirmitePermanentePage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                    "f00010",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "Cette circonstance aggravante peut être retenue lorsque le fait punissable a entraîné une mutilation ou une infirmité permanente.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                        "f00011",
+                        "Cette circonstance aggravante peut être retenue lorsque le fait punissable a entraîné une mutilation ou une infirmité permanente.",
+                      ),
                     ),
                     const SizedBox(height: 10),
-                    const _SubTitle("2.1 - Le caractère permanent"),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "Ce point ne posant pas de problème pour la mutilation, il s’agit de préciser le caractère permanent de l’infirmité. "
-                            "L’infirmité doit donc être « irréversible » (",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                        "f00012",
+                        "2.1 - Le caractère permanent",
                       ),
-                      law("Cass. crim., n° 05-87.683 du 21 mars 2006"),
-                      const TextSpan(text: ") ou « définitive » ("),
-                      law("Cass. crim., n° 84-90.706 du 6 octobre 1985"),
+                    ),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text:
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                              "f00013",
+                              "Ce point ne posant pas de problème pour la mutilation, il s’agit de préciser le caractère permanent de l’infirmité. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                              "f00014",
+                              "L’infirmité doit donc être « irréversible » (",
+                            ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00015",
+                          "Cass. crim., n° 05-87.683 du 21 mars 2006",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00016",
+                          ") ou « définitive » (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00017",
+                          "Cass. crim., n° 84-90.706 du 6 octobre 1985",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 10),
-                    const _SubTitle("2.2 - La preuve"),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "Il appartient à la partie poursuivante de la rapporter par tout moyen (certificats médicaux ou expertises médicales) (",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                        "f00018",
+                        "2.2 - La preuve",
                       ),
-                      law("Cass. crim., n° 64-91.935 du 4 février 1965"),
+                    ),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00019",
+                          "Il appartient à la partie poursuivante de la rapporter par tout moyen (certificats médicaux ou expertises médicales) (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00020",
+                          "Cass. crim., n° 64-91.935 du 4 février 1965",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
                           text:
-                              "La permanence concerne surtout l’infirmité : elle doit être irréversible/définitive. La preuve peut être apportée par tout moyen, "
-                              "notamment certificats ou expertises médicales.",
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                                "f00021",
+                                "La permanence concerne surtout l’infirmité : elle doit être irréversible/définitive. La preuve peut être apportée par tout moyen, ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                                "f00022",
+                                "notamment certificats ou expertises médicales.",
+                              ),
                         ),
                       ],
                     ),
@@ -173,92 +272,201 @@ class MutilationInfirmitePermanentePage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                    "f00023",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _IntroBullet(
-                      text:
-                          "Cette circonstance aggravante peut notamment s’appliquer aux infractions suivantes :",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                        "f00024",
+                        "Cette circonstance aggravante peut notamment s’appliquer aux infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Les tortures ou actes de barbarie (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00025",
+                          "• Les tortures ou actes de barbarie (",
+                        ),
                       ),
-                      law("article 222-5 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Les violences ("),
                       law(
-                        "articles 222-9, 222-14 al. 3 et 222-14-1 al. 3 C.P.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00026",
+                          "article 222-5 C.P.",
+                        ),
                       ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’administration de substances nuisibles (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00027",
+                          "• Les violences (",
+                        ),
                       ),
-                      law("article 222-15 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le viol ("),
-                      law("article 222-24 al. 2 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• Le délaissement d’une personne hors d’état de se protéger (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00028",
+                          "articles 222-9, 222-14 al. 3 et 222-14-1 al. 3 C.P.",
+                        ),
                       ),
-                      law("article 223-4 al. 1 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’enlèvement et la séquestration (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00029",
+                          "• L’administration de substances nuisibles (",
+                        ),
                       ),
-                      law("article 224-2 al. 1 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Le délaissement d’un mineur de quinze ans (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00030",
+                          "article 222-15 C.P.",
+                        ),
                       ),
-                      law("article 227-2 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le vol commis avec violences ("),
-                      law("article 311-7 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’extorsion commise avec violences (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00031",
+                          "• Le viol (",
+                        ),
                       ),
-                      law("articles 312-4 et 312-6 al. 2 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00032",
+                          "article 222-24 al. 2 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• Les destructions, dégradations et détériorations (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00033",
+                          "• Le délaissement d’une personne hors d’état de se protéger (",
+                        ),
                       ),
-                      law("article 322-9 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00034",
+                          "article 223-4 al. 1 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00035",
+                          "• L’enlèvement et la séquestration (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00036",
+                          "article 224-2 al. 1 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00037",
+                          "• Le délaissement d’un mineur de quinze ans (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00038",
+                          "article 227-2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00039",
+                          "• Le vol commis avec violences (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00040",
+                          "article 311-7 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00041",
+                          "• L’extorsion commise avec violences (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00042",
+                          "articles 312-4 et 312-6 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00043",
+                          "• Les destructions, dégradations et détériorations (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart",
+                          "f00044",
+                          "article 322-9 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                   ],
@@ -523,9 +731,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

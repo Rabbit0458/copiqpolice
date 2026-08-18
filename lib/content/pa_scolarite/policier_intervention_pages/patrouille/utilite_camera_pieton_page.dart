@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaUtiliteCameraPietonPage extends StatelessWidget {
   const PaUtiliteCameraPietonPage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/policier_intervention/patrouille/utilite-camera';
+  static const String routeName =
+      '/pa/dps_dpg/policier_intervention/patrouille/utilite-camera';
 
   static const Color _lawRed = Color(0xFFE53935);
 
@@ -54,7 +56,11 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -72,7 +78,11 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’utilité de la caméra piéton",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+              "f00002",
+              "L’utilité de la caméra piéton",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,47 +94,71 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
 
           // ✅ Base légale en haut
           _ConditionCard(
-            title: "I — Base légale & cadre de référence",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+              "f00003",
+              "I — Base légale & cadre de référence",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Références principales : "),
                 TextSpan(
-                  text:
-                      "articles L. 241-1 et R. 241-1 et suivants du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                    "f00004",
+                    "Références principales : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                    "f00005",
+                    "articles L. 241-1 et R. 241-1 et suivants du Code de la sécurité intérieure",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Textes internes (doctrine d’emploi) : "),
                 TextSpan(
-                  text:
-                      "Instruction conjointe DGPN 2022-1793D et DGGN 044679 du 14/09/2022",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                    "f00006",
+                    "Textes internes (doctrine d’emploi) : ",
                   ),
                 ),
                 TextSpan(
-                  text: " relative à l’emploi des caméras piétons ; ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                    "f00007",
+                    "Instruction conjointe DGPN 2022-1793D et DGGN 044679 du 14/09/2022",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "Note DGPN 2022-1793D du 28/10/2022",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                    "f00008",
+                    " relative à l’emploi des caméras piétons ; ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " relative à l’emploi des caméras piétons mises en dotation dans les services de la police nationale.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                    "f00009",
+                    "Note DGPN 2022-1793D du 28/10/2022",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                    "f00010",
+                    " relative à l’emploi des caméras piétons mises en dotation dans les services de la police nationale.",
+                  ),
                 ),
               ]),
             ],
@@ -133,23 +167,41 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — À quoi ça sert (concrètement) ?",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+              "f00011",
+              "II — À quoi ça sert (concrètement) ?",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le déploiement des caméras individuelles permet de renforcer la sécurité juridique et physique "
-                "des policiers lors de leurs interventions, notamment dans un contexte tendu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00012",
+                      "Le déploiement des caméras individuelles permet de renforcer la sécurité juridique et physique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00013",
+                      "des policiers lors de leurs interventions, notamment dans un contexte tendu.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Aider à prouver la réalité d’une infraction et la légitimité de l’action des policiers.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00014",
+                  "Aider à prouver la réalité d’une infraction et la légitimité de l’action des policiers.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Désamorcer certaines situations : la présence d’une caméra peut réduire la tension et l’agressivité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00015",
+                  "Désamorcer certaines situations : la présence d’une caméra peut réduire la tension et l’agressivité.",
+                ),
               ),
             ],
           ),
@@ -157,37 +209,73 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Des possibilités d’utilisation très larges",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+              "f00016",
+              "III — Des possibilités d’utilisation très larges",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le cadre légal prévoit un usage très large : les enregistrements audiovisuels via caméra piéton "
-                "sont possibles dans toutes les missions de police, en tous lieux.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00017",
+                      "Le cadre légal prévoit un usage très large : les enregistrements audiovisuels via caméra piéton ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00018",
+                      "sont possibles dans toutes les missions de police, en tous lieux.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans un domicile, la captation audiovisuelle se limite strictement à l’intervention et aux personnes concernées.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00019",
+                      "Dans un domicile, la captation audiovisuelle se limite strictement à l’intervention et aux personnes concernées.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Un intérêt opérationnel avéré"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00020",
+                  "Un intérêt opérationnel avéré",
+                ),
+              ),
               _Paragraph(
-                "De nombreux RETEX (retours d’expérience) et comptes rendus d’enquête administrative mettent en évidence "
-                "l’intérêt, pour le policier, d’activer sa caméra piéton.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00021",
+                      "De nombreux RETEX (retours d’expérience) et comptes rendus d’enquête administrative mettent en évidence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00022",
+                      "l’intérêt, pour le policier, d’activer sa caméra piéton.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point clé",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00023",
+                  "Point clé",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’enregistrement rétroactif des 30 secondes avant déclenchement (mémoire tampon) est une raison supplémentaire d’utiliser la caméra.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00024",
+                      "L’enregistrement rétroactif des 30 secondes avant déclenchement (mémoire tampon) est une raison supplémentaire d’utiliser la caméra.",
+                    ),
                   ),
                 ],
               ),
@@ -197,55 +285,118 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Exemples opérationnels (RETEX)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+              "f00025",
+              "IV — Exemples opérationnels (RETEX)",
+            ),
             cardColor: cardEx,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "1) Faux signalement / mise en cause de l’action",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00026",
+                  "1) Faux signalement / mise en cause de l’action",
+                ),
               ),
               _Paragraph(
-                "Lors d’un contrôle d’identité, un individu se jette contre un mur et se cogne plusieurs fois la tête "
-                "en criant à son fils : « Appelle l’avocat, on va dire qu’ils nous ont frappés ».",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00027",
+                      "Lors d’un contrôle d’identité, un individu se jette contre un mur et se cogne plusieurs fois la tête ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00028",
+                      "en criant à son fils : « Appelle l’avocat, on va dire qu’ils nous ont frappés ».",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Le fait d’indiquer qu’un agent filme l’intervention a eu un effet immédiat : l’individu s’est calmé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00029",
+                  "Le fait d’indiquer qu’un agent filme l’intervention a eu un effet immédiat : l’individu s’est calmé.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Manifestation : caractériser et identifier"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00030",
+                  "2) Manifestation : caractériser et identifier",
+                ),
+              ),
               _Paragraph(
-                "Lors d’une manifestation, un individu jette une pierre au visage d’un policier, frappe un autre agent "
-                "et dégrade un véhicule.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00031",
+                      "Lors d’une manifestation, un individu jette une pierre au visage d’un policier, frappe un autre agent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00032",
+                      "et dégrade un véhicule.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "L’exploitation de la vidéo permet de caractériser l’infraction, d’identifier l’auteur et de l’interpeller.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00033",
+                  "L’exploitation de la vidéo permet de caractériser l’infraction, d’identifier l’auteur et de l’interpeller.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("3) Usage du PIE : remise en contexte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00034",
+                  "3) Usage du PIE : remise en contexte",
+                ),
+              ),
               _Paragraph(
-                "Des policiers ont été contraints de faire usage du PIE pour maîtriser un mis en cause. "
-                "Des images sorties du contexte, diffusées sur les réseaux sociaux, cherchaient à faire croire à un usage illégitime de la force.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00035",
+                      "Des policiers ont été contraints de faire usage du PIE pour maîtriser un mis en cause. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00036",
+                      "Des images sorties du contexte, diffusées sur les réseaux sociaux, cherchaient à faire croire à un usage illégitime de la force.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "L’enregistrement de la caméra piéton a permis de démontrer le bien-fondé de l’action des policiers.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00037",
+                  "L’enregistrement de la caméra piéton a permis de démontrer le bien-fondé de l’action des policiers.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Référence : "),
                   TextSpan(
-                    text: "Communication RETEX DCSP",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00038",
+                      "Référence : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00039",
+                      "Communication RETEX DCSP",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(text: "."),
@@ -257,32 +408,63 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — L’activation : un réflexe",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+              "f00040",
+              "V — L’activation : un réflexe",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La caméra piéton, activée conformément à la doctrine d’emploi, est une nécessité pour le policier "
-                "et doit devenir un réflexe.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00041",
+                      "La caméra piéton, activée conformément à la doctrine d’emploi, est une nécessité pour le policier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00042",
+                      "et doit devenir un réflexe.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("En résumé"),
-              _IntroBullet(
-                text:
-                    "Elle contribue à la protection du policier et peut établir la preuve des comportements délictueux des usagers.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00043",
+                  "En résumé",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Dans un environnement où tout est filmé et souvent détourné pour décrédibiliser l’action, disposer d’images issues des caméras piétons sécurise l’intervention.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00044",
+                  "Elle contribue à la protection du policier et peut établir la preuve des comportements délictueux des usagers.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00045",
+                  "Dans un environnement où tout est filmé et souvent détourné pour décrédibiliser l’action, disposer d’images issues des caméras piétons sécurise l’intervention.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00046",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette fiche n’édicte pas de prescriptions contraignantes ou exclusives : elle apporte un éclairage et une aide dans l’accomplissement des activités professionnelles.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00047",
+                      "Cette fiche n’édicte pas de prescriptions contraignantes ou exclusives : elle apporte un éclairage et une aide dans l’accomplissement des activités professionnelles.",
+                    ),
                   ),
                 ],
               ),
@@ -292,29 +474,50 @@ class PaUtiliteCameraPietonPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Pour aller plus loin",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+              "f00048",
+              "VI — Pour aller plus loin",
+            ),
             cardColor: cardRef,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Formation"),
               _Paragraph(
-                "Plate-forme eCampus : Cours / Applications police / Caméras piétons.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00049",
+                  "Plate-forme eCampus : Cours / Applications police / Caméras piétons.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Lien",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "https://e-campus.interieur.gouv.fr/course/view.php?id=2318",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                      "f00050",
+                      "https://e-campus.interieur.gouv.fr/course/view.php?id=2318",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Esprit AMARIS"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00051",
+                  "Esprit AMARIS",
+                ),
+              ),
               _Paragraph(
-                "Partageons nos expériences ; renforçons notre sécurité.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart",
+                  "f00052",
+                  "Partageons nos expériences ; renforçons notre sécurité.",
+                ),
               ),
             ],
           ),

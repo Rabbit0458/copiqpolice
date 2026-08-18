@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Texte rouge pour les articles de loi
 TextSpan _lawRef(String text) {
@@ -47,10 +48,18 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
             Icons.arrow_back_ios_new_rounded,
             color: isDark ? Colors.white : const Color(0xFF050505),
           ),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Principe généraux — mineurs',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+            "f00002",
+            'Principe généraux — mineurs',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -84,41 +93,79 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'CHAPITRE 1 : PRINCIPES GÉNÉRAUX DE LA JUSTICE PÉNALE DES MINEURS',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00003",
+                        'CHAPITRE 1 : PRINCIPES GÉNÉRAUX DE LA JUSTICE PÉNALE DES MINEURS',
+                      ),
                       style: textMain,
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Le Code de la justice pénale des mineurs (C.J.P.M.) fixe trois principes fondamentaux :',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00004",
+                        'Le Code de la justice pénale des mineurs (C.J.P.M.) fixe trois principes fondamentaux :',
+                      ),
                       style: textSoft,
                       textAlign: TextAlign.justify,
                     ),
                     const SizedBox(height: 8),
-                    const _IntroBullet(
-                      text:
-                          'l’atténuation de la responsabilité pénale du mineur ;',
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00005",
+                        'l’atténuation de la responsabilité pénale du mineur ;',
+                      ),
                     ),
-                    const _IntroBullet(
-                      text:
-                          'la primauté de la réponse éducative sur la réponse répressive ;',
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00006",
+                        'la primauté de la réponse éducative sur la réponse répressive ;',
+                      ),
                     ),
-                    const _IntroBullet(
-                      text: 'le jugement par une juridiction spécialisée.',
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00007",
+                        'le jugement par une juridiction spécialisée.',
+                      ),
                     ),
                     const SizedBox(height: 8),
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            'Le C.J.P.M. ajoute en liminaire que l’intérêt supérieur de l’enfant doit être pris en compte. '
-                            'Cette notion, consacrée à ',
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                              "f00008",
+                              'Le C.J.P.M. ajoute en liminaire que l’intérêt supérieur de l’enfant doit être pris en compte. ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                              "f00009",
+                              'Cette notion, consacrée à ',
+                            ),
                       ),
                       _lawRef(
-                        'l’article 3 de la Convention internationale des droits de l’enfant',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00010",
+                          'l’article 3 de la Convention internationale des droits de l’enfant',
+                        ),
                       ),
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            ' adoptée par les Nations unies le 20 novembre 1989, est érigée en principe directeur de l’ensemble '
-                            'de la procédure pénale applicable aux mineurs.',
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                              "f00011",
+                              ' adoptée par les Nations unies le 20 novembre 1989, est érigée en principe directeur de l’ensemble ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                              "f00012",
+                              'de la procédure pénale applicable aux mineurs.',
+                            ),
                       ),
                     ]),
                   ],
@@ -129,8 +176,11 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
               /// 1.1 — PRÉSOMPTION DE DISCERNEMENT
               ////////////////////////////////////////////////////////////////
               _ConditionCard(
-                title:
-                    '1.1 — Présomption de discernement (art. L. 11-1 du C.J.P.M.)',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                  "f00013",
+                  '1.1 — Présomption de discernement (art. L. 11-1 du C.J.P.M.)',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -140,71 +190,158 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(
-                      text: 'Le C.J.P.M. reprend le principe énoncé à ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00014",
+                        'Le C.J.P.M. reprend le principe énoncé à ',
+                      ),
                     ),
-                    _lawRef('l’article 122-8 du Code pénal'),
-                    const TextSpan(
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00015",
+                        'l’article 122-8 du Code pénal',
+                      ),
+                    ),
+                    TextSpan(
                       text:
-                          '. Les mineurs capables de discernement sont pénalement responsables des faits (crimes, délits, '
-                          'contraventions) dont ils sont reconnus coupables, leur responsabilité pénale étant subordonnée à leur '
-                          'capacité de discernement.',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00016",
+                            '. Les mineurs capables de discernement sont pénalement responsables des faits (crimes, délits, ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00017",
+                            'contraventions) dont ils sont reconnus coupables, leur responsabilité pénale étant subordonnée à leur ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00018",
+                            'capacité de discernement.',
+                          ),
                     ),
                   ]),
                   const SizedBox(height: 8),
-                  const _Paragraph(
-                    'Le seuil de capacité de discernement et, par voie de conséquence, de responsabilité pénale est fixé à l’âge de 13 ans.',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00019",
+                      'Le seuil de capacité de discernement et, par voie de conséquence, de responsabilité pénale est fixé à l’âge de 13 ans.',
+                    ),
                   ),
                   const SizedBox(height: 6),
-                  const _Paragraph('Ainsi sont établies deux présomptions :'),
-                  const _BulletPoint(
-                    text:
-                        'présomption de non discernement pour les mineurs âgés de moins de treize ans ;',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00020",
+                      'Ainsi sont établies deux présomptions :',
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        'présomption de discernement pour les mineurs âgés de treize ans et plus.',
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00021",
+                      'présomption de non discernement pour les mineurs âgés de moins de treize ans ;',
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00022",
+                      'présomption de discernement pour les mineurs âgés de treize ans et plus.',
+                    ),
                   ),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Ces présomptions peuvent être renversées. La capacité de discernement ou l’absence de discernement du mineur peut être établie '
-                          'par les éléments issus de la procédure (',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00023",
+                            'Ces présomptions peuvent être renversées. La capacité de discernement ou l’absence de discernement du mineur peut être établie ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00024",
+                            'par les éléments issus de la procédure (',
+                          ),
                     ),
                     _lawRef(
-                      'article R. 11-1 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00025",
+                        'article R. 11-1 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ') :'),
                   ]),
                   const SizedBox(height: 6),
-                  const _IntroBullet(
-                    text:
-                        'déclarations du mineur, de son entourage familial et scolaire ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00026",
+                      'déclarations du mineur, de son entourage familial et scolaire ;',
+                    ),
                   ),
-                  const _IntroBullet(text: 'éléments de l’enquête ;'),
-                  const _IntroBullet(
-                    text:
-                        'circonstances dans lesquelles les faits ont été commis ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00027",
+                      'éléments de l’enquête ;',
+                    ),
                   ),
-                  const _IntroBullet(text: 'antécédents éventuels du mineur ;'),
-                  const _IntroBullet(
-                    text: 'expertise ou examen psychiatrique ou psychologique.',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00028",
+                      'circonstances dans lesquelles les faits ont été commis ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00029",
+                      'antécédents éventuels du mineur ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00030",
+                      'expertise ou examen psychiatrique ou psychologique.',
+                    ),
                   ),
                   const SizedBox(height: 8),
-                  const _Paragraph(
-                    'Cette capacité de discernement se définit comme étant le fait, pour le mineur :',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00031",
+                      'Cette capacité de discernement se définit comme étant le fait, pour le mineur :',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text: 'de comprendre et vouloir l’acte reproché ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00032",
+                      'de comprendre et vouloir l’acte reproché ;',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'et d’être apte à comprendre le sens de la procédure pénale dont il fait l’objet.',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00033",
+                      'et d’être apte à comprendre le sens de la procédure pénale dont il fait l’objet.',
+                    ),
                   ),
                   const SizedBox(height: 6),
-                  const _Paragraph(
-                    'Elle relève de l’appréciation souveraine du magistrat.',
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00034",
+                      'Elle relève de l’appréciation souveraine du magistrat.',
+                    ),
                   ),
                 ],
               ),
@@ -215,7 +352,11 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
               /// 1.2 — LES GRANDS PRINCIPES
               ////////////////////////////////////////////////////////////////
               _ConditionCard(
-                title: '1.2 — Les grands principes',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                  "f00035",
+                  '1.2 — Les grands principes',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -225,107 +366,241 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
                   // 1.2.1 Primauté de l’éducatif / atténuation
-                  const _SubTitle(
-                    '1.2.1 — Primauté de l’éducatif et atténuation de la responsabilité pénale',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00036",
+                      '1.2.1 — Primauté de l’éducatif et atténuation de la responsabilité pénale',
+                    ),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text: 'Le C.J.P.M. consacre ces principes aux ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00037",
+                        'Le C.J.P.M. consacre ces principes aux ',
+                      ),
                     ),
                     _lawRef(
-                      'articles L. 11-2, L. 11-3, L. 11-4 et L. 11-5 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00038",
+                        'articles L. 11-2, L. 11-3, L. 11-4 et L. 11-5 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          '. La réponse éducative doit être privilégiée, les peines n’intervenant qu’à titre subsidiaire et '
-                          'toujours en tenant compte de l’âge, de la personnalité et de la situation du mineur.',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00039",
+                            '. La réponse éducative doit être privilégiée, les peines n’intervenant qu’à titre subsidiaire et ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00040",
+                            'toujours en tenant compte de l’âge, de la personnalité et de la situation du mineur.',
+                          ),
                     ),
                   ]),
                   const SizedBox(height: 10),
 
-                  const _SubTitle('1.2.1.1 — Mineur de moins de 13 ans'),
-                  const _Paragraph(
-                    'Les seuils de capacité de discernement et de responsabilité pénale étant fixés à l’âge de 13 ans, aucune peine ne peut être encourue '
-                    'en dessous de cet âge. Des mesures éducatives peuvent toutefois être prononcées si, et seulement si, il est établi que le mineur était '
-                    'capable de discernement au moment des faits.',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00041",
+                      '1.2.1.1 — Mineur de moins de 13 ans',
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00042",
+                          'Les seuils de capacité de discernement et de responsabilité pénale étant fixés à l’âge de 13 ans, aucune peine ne peut être encourue ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00043",
+                          'en dessous de cet âge. Des mesures éducatives peuvent toutefois être prononcées si, et seulement si, il est établi que le mineur était ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00044",
+                          'capable de discernement au moment des faits.',
+                        ),
                   ),
                   const SizedBox(height: 8),
 
-                  const _SubTitle('1.2.1.2 — Mineur âgé d’au moins 13 ans'),
-                  const _Paragraph(
-                    'À compter de 13 ans, des mesures éducatives et/ou des peines peuvent être prononcées à l’encontre du mineur. '
-                    'L’atténuation de la responsabilité pénale implique cependant que la nature et le quantum des peines soient adaptés à son âge et à sa '
-                    'personnalité, en tenant compte de son évolution.',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00045",
+                      '1.2.1.2 — Mineur âgé d’au moins 13 ans',
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00046",
+                          'À compter de 13 ans, des mesures éducatives et/ou des peines peuvent être prononcées à l’encontre du mineur. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00047",
+                          'L’atténuation de la responsabilité pénale implique cependant que la nature et le quantum des peines soient adaptés à son âge et à sa ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00048",
+                          'personnalité, en tenant compte de son évolution.',
+                        ),
                   ),
 
                   const SizedBox(height: 14),
 
                   // 1.2.2 Spécialisation des acteurs
-                  const _SubTitle(
-                    '1.2.2 — La spécialisation des acteurs (art. L. 12-1 et suivants du C.J.P.M.)',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00049",
+                      '1.2.2 — La spécialisation des acteurs (art. L. 12-1 et suivants du C.J.P.M.)',
+                    ),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Les crimes, délits et contraventions de la cinquième classe reprochés à un mineur sont instruits et jugés par des juridictions et '
-                          'chambres spécialement compétentes, conformément aux ',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00050",
+                            'Les crimes, délits et contraventions de la cinquième classe reprochés à un mineur sont instruits et jugés par des juridictions et ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00051",
+                            'chambres spécialement compétentes, conformément aux ',
+                          ),
                     ),
                     _lawRef(
-                      'articles L. 12-1 et suivants du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00052",
+                        'articles L. 12-1 et suivants du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ' :'),
                   ]),
                   const SizedBox(height: 6),
-                  const _IntroBullet(text: 'le juge des enfants ;'),
-                  const _IntroBullet(text: 'le tribunal pour enfants ;'),
-                  const _IntroBullet(
-                    text:
-                        'le juge d’instruction chargé spécialement des affaires concernant les mineurs ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00053",
+                      'le juge des enfants ;',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'le juge des libertés et de la détention chargé spécialement des affaires concernant les mineurs ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00054",
+                      'le tribunal pour enfants ;',
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        'la cour d’assises des mineurs (les assesseurs sont juges des enfants) ;',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00055",
+                      'le juge d’instruction chargé spécialement des affaires concernant les mineurs ;',
+                    ),
                   ),
-                  const _IntroBullet(text: 'la chambre spéciale des mineurs ;'),
-                  const _IntroBullet(
-                    text: 'la chambre de l’instruction spécialement composée.',
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00056",
+                      'le juge des libertés et de la détention chargé spécialement des affaires concernant les mineurs ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00057",
+                      'la cour d’assises des mineurs (les assesseurs sont juges des enfants) ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00058",
+                      'la chambre spéciale des mineurs ;',
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00059",
+                      'la chambre de l’instruction spécialement composée.',
+                    ),
                   ),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Les fonctions du ministère public, pour les crimes, délits et contraventions de cinquième classe, sont exercées par le procureur général '
-                          'ou par un magistrat du ministère public spécialement chargé des affaires de mineurs (',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00060",
+                            'Les fonctions du ministère public, pour les crimes, délits et contraventions de cinquième classe, sont exercées par le procureur général ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00061",
+                            'ou par un magistrat du ministère public spécialement chargé des affaires de mineurs (',
+                          ),
                     ),
                     _lawRef(
-                      'article L. 12-2 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00062",
+                        'article L. 12-2 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ').'),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'En cas d’urgence ou d’empêchement, tout magistrat du parquet peut exercer ces fonctions, conformément à ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00063",
+                        'En cas d’urgence ou d’empêchement, tout magistrat du parquet peut exercer ces fonctions, conformément à ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article L. 211-1 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00064",
+                        'l’article L. 211-1 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: '.'),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'La mise en œuvre des décisions prises en application du C.J.P.M. est confiée aux services et établissements de la protection judiciaire '
-                          'de la jeunesse (PJJ) et, dans les cas expressément prévus, au secteur associatif habilité (',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00065",
+                            'La mise en œuvre des décisions prises en application du C.J.P.M. est confiée aux services et établissements de la protection judiciaire ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                            "f00066",
+                            'de la jeunesse (PJJ) et, dans les cas expressément prévus, au secteur associatif habilité (',
+                          ),
                     ),
                     _lawRef(
-                      'article L. 241-1 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00067",
+                        'article L. 241-1 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ').'),
                   ]),
@@ -333,48 +608,88 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
                   const SizedBox(height: 14),
 
                   // 1.2.3 Droits spécifiques des mineurs
-                  const _SubTitle(
-                    '1.2.3 — Les droits spécifiques des mineurs (art. L. 12-4 et L. 12-5 du C.J.P.M.)',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00068",
+                      '1.2.3 — Les droits spécifiques des mineurs (art. L. 12-4 et L. 12-5 du C.J.P.M.)',
+                    ),
                   ),
-                  const _Paragraph(
-                    'Aux différentes phases de la procédure, certaines garanties revêtent un caractère constant et sont érigées en principes généraux applicables '
-                    'à tout mineur mis en cause.',
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00069",
+                          'Aux différentes phases de la procédure, certaines garanties revêtent un caractère constant et sont érigées en principes généraux applicables ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                          "f00070",
+                          'à tout mineur mis en cause.',
+                        ),
                   ),
 
                   const SizedBox(height: 10),
 
                   // 1.2.3.1 Assistance par un avocat
-                  const _SubTitle(
-                    '1.2.3.1 — Assistance du mineur par un avocat (art. L. 12-4 du C.J.P.M.)',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00071",
+                      '1.2.3.1 — Assistance du mineur par un avocat (art. L. 12-4 du C.J.P.M.)',
+                    ),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Le mineur est assisté par un avocat à tous les stades de la procédure, en application de ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00072",
+                        'Le mineur est assisté par un avocat à tous les stades de la procédure, en application de ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article L. 12-4 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00073",
+                        'l’article L. 12-4 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          '. Dans la mesure du possible, le même avocat doit poursuivre son intervention à chaque étape, notamment lorsqu’il est désigné d’office.',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00074",
+                        '. Dans la mesure du possible, le même avocat doit poursuivre son intervention à chaque étape, notamment lorsqu’il est désigné d’office.',
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Le mineur doit recevoir notification de ses droits dans des termes simples et accessibles (',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00075",
+                        'Le mineur doit recevoir notification de ses droits dans des termes simples et accessibles (',
+                      ),
                     ),
                     _lawRef(
-                      'article D. 12-2 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00076",
+                        'article D. 12-2 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          '). Lorsqu’une décision prise à son égard est susceptible de recours, il en est informé ainsi que ses représentants légaux (',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00077",
+                        '). Lorsqu’une décision prise à son égard est susceptible de recours, il en est informé ainsi que ses représentants légaux (',
+                      ),
                     ),
                     _lawRef(
-                      'article D. 12-1 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00078",
+                        'article D. 12-1 du Code de la justice pénale des mineurs',
+                      ),
                     ),
                     const TextSpan(text: ').'),
                   ]),
@@ -382,40 +697,68 @@ class PPMineursPrincipesGenerauxPage extends StatelessWidget {
                   const SizedBox(height: 10),
 
                   // 1.2.3.3 Information des représentants légaux
-                  const _SubTitle(
-                    '1.2.3.3 — Information des représentants légaux et accompagnement du mineur (art. L. 12-5 du C.J.P.M.)',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00079",
+                      '1.2.3.3 — Information des représentants légaux et accompagnement du mineur (art. L. 12-5 du C.J.P.M.)',
+                    ),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'Les représentants légaux, ou à défaut un adulte approprié, reçoivent les mêmes informations que celles communiquées au mineur, en vertu de ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00080",
+                        'Les représentants légaux, ou à défaut un adulte approprié, reçoivent les mêmes informations que celles communiquées au mineur, en vertu de ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article L. 12-5 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00081",
+                        'l’article L. 12-5 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          '. Le mineur a le droit d’être accompagné par ses représentants légaux ou, à défaut, par un adulte approprié tout au long de la procédure.',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00082",
+                        '. Le mineur a le droit d’être accompagné par ses représentants légaux ou, à défaut, par un adulte approprié tout au long de la procédure.',
+                      ),
                     ),
                   ]),
 
                   const SizedBox(height: 10),
 
                   // 1.2.3.4 Publicité restreinte
-                  const _SubTitle(
-                    '1.2.3.4 — Publicité restreinte (art. L. 13-3 du C.J.P.M.)',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                      "f00083",
+                      '1.2.3.4 — Publicité restreinte (art. L. 13-3 du C.J.P.M.)',
+                    ),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text:
-                          'L’identité ou l’image d’un mineur mis en cause ne peut, en aucune circonstance, être directement ou indirectement rendue publique, conformément à ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00084",
+                        'L’identité ou l’image d’un mineur mis en cause ne peut, en aucune circonstance, être directement ou indirectement rendue publique, conformément à ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article L. 13-3 du Code de la justice pénale des mineurs',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00085",
+                        'l’article L. 13-3 du Code de la justice pénale des mineurs',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          '. Cette règle protège le mineur contre toute stigmatisation et garantit la confidentialité des procédures le concernant.',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mineurs_principes_generaux.dart",
+                        "f00086",
+                        '. Cette règle protège le mineur contre toute stigmatisation et garantit la confidentialité des procédures le concernant.',
+                      ),
                     ),
                   ]),
                 ],
@@ -674,9 +1017,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

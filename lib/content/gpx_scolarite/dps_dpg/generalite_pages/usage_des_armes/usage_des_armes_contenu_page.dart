@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_conditions_prealables_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_situations_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 // ===================== PAGE QUIZ LD =====================
 
@@ -37,10 +38,18 @@ class UsageArmesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'LE CADRE LÉGAL D\'USAGE DES ARMES',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+            "f00002",
+            'LE CADRE LÉGAL D\'USAGE DES ARMES',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,9 +64,16 @@ class UsageArmesPage extends StatelessWidget {
           // ===== 3 CONDITIONS PRÉALABLES =====
           _ModuleCard(
             tag: 'ua_conditions',
-            title: 'Les 3 conditions préalables',
-            subtitle:
-                'Exercice des fonctions, port apparent et nécessité absolue.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00003",
+              'Les 3 conditions préalables',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00004",
+              'Exercice des fonctions, port apparent et nécessité absolue.',
+            ),
             imagePath:
                 'assets/images/legitime_defense.jpeg', // à adapter si tu as un visuel dédié
             textMain: textMain,
@@ -68,14 +84,21 @@ class UsageArmesPage extends StatelessWidget {
               'ua_conditions',
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // ===== LES 5 SITUATIONS L. 435-1 C.S.I. =====
           _ModuleCard(
             tag: 'ua_situations',
-            title: 'Les 5 situations d’usage des armes',
-            subtitle:
-                'Atteintes à la vie, défense de lieux, fuite, véhicule, périple meurtrier.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00005",
+              'Les 5 situations d’usage des armes',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00006",
+              'Atteintes à la vie, défense de lieux, fuite, véhicule, périple meurtrier.',
+            ),
             imagePath:
                 'assets/images/armes_cat_ab.jpeg', // visuel générique à changer
             textMain: textMain,
@@ -83,14 +106,21 @@ class UsageArmesPage extends StatelessWidget {
             onTap: () =>
                 _open(context, const UaSituationsPage(), 'ua_situations'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // ===== LIEN AVEC LA LÉGITIME DÉFENSE =====
           _ModuleCard(
             tag: 'ua_legitimedefense',
-            title: 'Lien avec la légitime défense',
-            subtitle:
-                'Art. 122-5 C. pén. et articulation avec l’art. L. 435-1 C.S.I.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00007",
+              'Lien avec la légitime défense',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00008",
+              'Art. 122-5 C. pén. et articulation avec l’art. L. 435-1 C.S.I.',
+            ),
             imagePath: 'assets/images/crime.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -100,14 +130,22 @@ class UsageArmesPage extends StatelessWidget {
               'ua_legitimedefense',
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 10),
 
           // ===== QUIZ =====
-          const SizedBox(height: 22),
+          const SizedBox(height: 10),
           _ModuleCard(
             tag: 'quiz_ua',
-            title: 'Quiz — Usage des armes',
-            subtitle: 'Testez votre maîtrise du cadre légal L. 435-1 C.S.I.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00009",
+              'Quiz — Usage des armes',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+              "f00010",
+              'Testez votre maîtrise du cadre légal L. 435-1 C.S.I.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -170,7 +208,13 @@ class _ModuleCard extends StatelessWidget {
         button: true,
         label: '$title — découvrir',
         child: SizedBox(
-          height: 200, // hauteur cible, mais contenu maintenant flexible
+          height:
+              ((MediaQuery.sizeOf(context).height -
+                          MediaQuery.paddingOf(context).vertical -
+                          kToolbarHeight -
+                          94) /
+                      4)
+                  .clamp(158.0, 200.0),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(18),
             child: Stack(
@@ -244,7 +288,7 @@ class _ModuleCard extends StatelessWidget {
                             ),
                             const SizedBox(height: 6),
                             Padding(
-                              padding: const EdgeInsets.only(right: 80),
+                              padding: const EdgeInsets.only(right: 126),
                               child: Text(
                                 subtitle,
                                 maxLines: 2,
@@ -295,7 +339,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 4),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+                "f00013",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -400,7 +448,11 @@ class _QuizCTA extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Quiz — Légitime défense',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+                            "f00014",
+                            'Quiz — Légitime défense',
+                          ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(
@@ -412,7 +464,11 @@ class _QuizCTA extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          'Conditions, cas présumés et limites à ne pas dépasser.\nPrêt(e) pour un survol express avant la fiche complète ?',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart",
+                            "f00015",
+                            'Conditions, cas présumés et limites à ne pas dépasser.\nPrêt(e) pour un survol express avant la fiche complète ?',
+                          ),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(

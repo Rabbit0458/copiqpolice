@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -79,6 +80,26 @@ class _AbonnementPageState extends State<AbonnementPage>
           "Le navigateur de paiement ne peut pas être ouvert sur cet appareil.",
         _ =>
           "Le paiement ne peut pas être ouvert pour le moment. Réessaie dans quelques secondes.",
+      };
+      _info(message);
+    }
+  }
+
+  Future<void> _restorePurchases() async {
+    final result = await StripePaymentService.instance.restorePurchases();
+    if (!mounted) return;
+    if (result.ok) {
+      AppNotifier.success(
+        context,
+        title: "Achats restaurés",
+        message: "Ton abonnement actif a été retrouvé et réappliqué.",
+      );
+    } else {
+      final message = switch (result.reason) {
+        'not_authenticated' =>
+          "Reconnecte-toi à ton compte avant de restaurer tes achats.",
+        _ =>
+          "Aucun achat actif retrouvé sur ce compte App Store / Google Play.",
       };
       _info(message);
     }
@@ -189,18 +210,14 @@ class _AbonnementPageState extends State<AbonnementPage>
               _PlanCard(
                 stroke: stroke,
                 tone: const Color(0xFFB07A2A),
-                title: "Semaine",
-                price: "4,99 € / semaine",
-                subtitle: "Renouvellement automatique • Accès intégral 7 jours",
-                badge: "Découverte",
-                highlighted: false,
-                valueLine: "Idéal pour tester COP’IQ à fond",
-                billingLine: "Facturé via App Store / Google Play / AppGallery",
-                details: const [
-                  "Accès complet concours + scolarité + quiz",
-                  "Entraînements illimités (culture G + psycho + langues)",
-                  "Annulable à tout moment (effet fin de période)",
-                ],
+                title: CopiqPlan.week.title,
+                price: CopiqPlan.week.priceLabel,
+                subtitle: CopiqPlan.week.subtitle,
+                badge: CopiqPlan.week.badge,
+                highlighted: CopiqPlan.week.highlighted,
+                valueLine: CopiqPlan.week.valueLine,
+                billingLine: kCopiqBillingLine,
+                details: CopiqPlan.week.details,
                 onTap: () => _subscribe(CopiqPlan.week),
               ),
 
@@ -210,18 +227,14 @@ class _AbonnementPageState extends State<AbonnementPage>
               _PlanCard(
                 stroke: stroke,
                 tone: t.colorScheme.primary,
-                title: "Mensuel",
-                price: "8,99 € / mois",
-                subtitle: "Renouvellement automatique",
-                badge: "Recommandé",
-                highlighted: true,
-                valueLine: "Le plus flexible • Résiliation en 30 secondes",
-                billingLine: "Facturé via App Store / Google Play / AppGallery",
-                details: const [
-                  "Tout débloqué + entraînements illimités",
-                  "Mises à jour incluses — chaque semaine",
-                  "Annulable à tout moment (effet fin de période)",
-                ],
+                title: CopiqPlan.month.title,
+                price: CopiqPlan.month.priceLabel,
+                subtitle: CopiqPlan.month.subtitle,
+                badge: CopiqPlan.month.badge,
+                highlighted: CopiqPlan.month.highlighted,
+                valueLine: CopiqPlan.month.valueLine,
+                billingLine: kCopiqBillingLine,
+                details: CopiqPlan.month.details,
                 onTap: () => _subscribe(CopiqPlan.month),
               ),
 
@@ -231,18 +244,14 @@ class _AbonnementPageState extends State<AbonnementPage>
               _PlanCard(
                 stroke: stroke,
                 tone: const Color(0xFF7B3FE4),
-                title: "Annuel",
-                price: "86,99 € / an",
-                subtitle: "20 % d’économie • Renouvellement automatique",
-                badge: "-20 %",
-                highlighted: false,
-                valueLine: "Meilleur prix sur l’année",
-                billingLine: "Facturé via App Store / Google Play / AppGallery",
-                details: const [
-                  "Accès complet 12 mois + mises à jour incluses",
-                  "Le meilleur rapport valeur / prix",
-                  "Annulable à tout moment (effet fin de période)",
-                ],
+                title: CopiqPlan.year.title,
+                price: CopiqPlan.year.priceLabel,
+                subtitle: CopiqPlan.year.subtitle,
+                badge: CopiqPlan.year.badge,
+                highlighted: CopiqPlan.year.highlighted,
+                valueLine: CopiqPlan.year.valueLine,
+                billingLine: kCopiqBillingLine,
+                details: CopiqPlan.year.details,
                 onTap: () => _subscribe(CopiqPlan.year),
               ),
 
@@ -268,6 +277,14 @@ class _AbonnementPageState extends State<AbonnementPage>
                 onPressed: _openResiliationFlow,
                 child: const Text("Résilier mon abonnement"),
               ),
+
+              if (!kIsWeb) ...[
+                const SizedBox(height: 12),
+                TextButton(
+                  onPressed: _restorePurchases,
+                  child: const Text("Restaurer mes achats"),
+                ),
+              ],
 
               const SizedBox(height: 22),
 
@@ -477,7 +494,7 @@ class _PlanCard extends StatefulWidget {
   final String price;
   final String subtitle;
   final String? valueLine; // ex: "Le plus populaire"
-  final String? billingLine; // ex: "Facturé via App Store/Google Play"
+  final String? billingLine; // ex: kCopiqBillingLine
   final List<String> details; // bullets
   final String? badge; // ex: "Découverte" | "Recommandé" | "-20 %"
   final bool highlighted;
@@ -847,8 +864,8 @@ class _LegalFooter extends StatelessWidget {
           constraints: const BoxConstraints(maxWidth: 520),
           child: Text(
             "Les abonnements se renouvellent automatiquement sauf annulation au moins 24 h avant la fin de la période en cours. "
-            "Le paiement est prélevé sur votre compte App Store/Google Play/AppGallery. "
-            "Vous pouvez gérer ou annuler votre abonnement à tout moment dans les réglages de votre compte. "
+            "${kIsWeb ? "Le paiement est traité de façon sécurisée par Stripe (carte bancaire), via un navigateur externe à l’app. " : "Le paiement est traité de façon sécurisée par l’App Store / Google Play. "}"
+            "Vous pouvez gérer ou annuler votre abonnement à tout moment depuis votre profil. "
             "L’annulation prend effet à la fin de la période en cours.",
             textAlign: TextAlign.center,
             style: t.textTheme.bodySmall?.copyWith(
@@ -908,29 +925,71 @@ class _ResiliationSheet extends StatefulWidget {
 
 class _ResiliationSheetState extends State<_ResiliationSheet> {
   bool confirmed = false;
+  bool _busy = false;
 
-  void _confirmResiliation() {
+  String _errorMessage(String? reason) => switch (reason) {
+    'not_authenticated' => "Reconnecte-toi à ton compte avant de continuer.",
+    'no_active_subscription' ||
+    'stripe_customer_not_found' =>
+      "Aucun abonnement actif trouvé sur ce compte.",
+    'cannot_launch_browser' =>
+      "Impossible d’ouvrir le navigateur de paiement sur cet appareil.",
+    'no_portal_url' =>
+      "Le service de résiliation n’a pas répondu correctement. Réessaie dans quelques secondes.",
+    _ => "Une erreur est survenue. Réessaie dans quelques secondes.",
+  };
+
+  Future<void> _confirmResiliation() async {
+    if (!confirmed || _busy) return;
+    setState(() => _busy = true);
+
+    final result = await StripePaymentService.instance.cancelAtPeriodEnd();
+
+    if (!mounted) return;
+    setState(() => _busy = false);
+
+    if (!result.ok) {
+      AppNotifier.error(
+        context,
+        title: "Résiliation impossible",
+        message: _errorMessage(result.reason),
+      );
+      return;
+    }
+
     Navigator.pop(context);
-
     AppNotifier.success(
       context,
-      title: "Résiliation enregistrée",
+      title: "Portail de résiliation ouvert",
       message:
-          "Votre accès restera actif jusqu’à la fin de la période d’abonnement en cours.",
+          "Finalise l’annulation dans l’onglet ouvert. Ton accès reste actif jusqu’à la fin de la période en cours.",
     );
   }
 
-  void _openStoreManagement() {
-    Navigator.pop(context);
+  Future<void> _openStoreManagement() async {
+    if (_busy) return;
+    setState(() => _busy = true);
 
+    final result = await StripePaymentService.instance.openPortal();
+
+    if (!mounted) return;
+    setState(() => _busy = false);
+
+    if (!result.ok) {
+      AppNotifier.error(
+        context,
+        title: "Ouverture impossible",
+        message: _errorMessage(result.reason),
+      );
+      return;
+    }
+
+    Navigator.pop(context);
     AppNotifier.info(
       context,
       title: "Gestion de l’abonnement",
-      message:
-          "Vous allez être redirigé vers la gestion de votre abonnement via le store.",
+      message: "Gère ton abonnement, tes factures et moyens de paiement dans l’onglet ouvert.",
     );
-
-    // 👉 Plus tard : redirection StoreKit / Play Billing
   }
 
   @override
@@ -977,7 +1036,7 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
           CheckboxListTile(
             contentPadding: EdgeInsets.zero,
             value: confirmed,
-            onChanged: (v) => setState(() => confirmed = v ?? false),
+            onChanged: _busy ? null : (v) => setState(() => confirmed = v ?? false),
             title: Text(
               "J’ai compris que l’accès reste actif jusqu’à la fin de la période en cours.",
               style: GoogleFonts.inter(
@@ -990,7 +1049,7 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
           const SizedBox(height: 16),
 
           FilledButton(
-            onPressed: confirmed ? _confirmResiliation : null,
+            onPressed: (confirmed && !_busy) ? _confirmResiliation : null,
             style: FilledButton.styleFrom(
               minimumSize: const Size.fromHeight(48),
               shape: RoundedRectangleBorder(
@@ -1001,13 +1060,22 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
                 letterSpacing: -0.1,
               ),
             ),
-            child: const Text("Confirmer la résiliation"),
+            child: _busy
+                ? const SizedBox(
+                    width: 20,
+                    height: 20,
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      color: Colors.white,
+                    ),
+                  )
+                : const Text("Confirmer la résiliation"),
           ),
 
           const SizedBox(height: 6),
 
           TextButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: _busy ? null : () => Navigator.pop(context),
             child: Text(
               "Annuler",
               style: GoogleFonts.inter(fontWeight: FontWeight.w600),
@@ -1017,7 +1085,7 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
           const SizedBox(height: 4),
 
           TextButton(
-            onPressed: _openStoreManagement,
+            onPressed: _busy ? null : _openStoreManagement,
             child: Text(
               "Gérer mon abonnement",
               style: GoogleFonts.inter(

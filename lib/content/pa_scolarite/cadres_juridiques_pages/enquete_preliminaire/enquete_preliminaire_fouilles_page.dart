@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
   const PaEnquetePreliminaireFouillesPage({super.key});
@@ -15,12 +15,12 @@ class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
 
     final Color bgColor = isDark ? const Color(0xFF121212) : Colors.white;
     final Color cardColor = isDark
-? const Color(0xFF1E1E1E)
-: const Color(0xFFF7F7F7);
+        ? const Color(0xFF1E1E1E)
+        : const Color(0xFFF7F7F7);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
 
     // Couleur spéciale pour les références aux articles de loi (CPP / CP / CSI)
     final Color lawColor = isDark
@@ -36,10 +36,18 @@ class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Les fouilles',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+            "f00002",
+            'Les fouilles',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +63,11 @@ class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            '2.3.6 – Les fouilles en enquête préliminaire',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+              "f00003",
+              '2.3.6 – Les fouilles en enquête préliminaire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -65,30 +77,45 @@ class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO ----------------------------
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'Les fouilles constituent des actes particulièrement intrusifs, destinés exclusivement à la recherche d’objets ou d’indices intéressant l’enquête, dans le cadre de l’établissement de la preuve. ',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                "f00004",
+                'Les fouilles constituent des actes particulièrement intrusifs, destinés exclusivement à la recherche d’objets ou d’indices intéressant l’enquête, dans le cadre de l’établissement de la preuve. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'En enquête préliminaire, leur mise en œuvre est strictement encadrée afin de concilier efficacité des investigations et protection des libertés individuelles.',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                "f00005",
+                'En enquête préliminaire, leur mise en œuvre est strictement encadrée afin de concilier efficacité des investigations et protection des libertés individuelles.',
+              ),
               style: TextStyle(fontStyle: FontStyle.italic),
             ),
           ]),
           const SizedBox(height: 10),
 
-          const _IntroBullet(
-            text:
-                'Deux grandes catégories sont distinguées : la fouille intégrale de la personne gardée à vue et la fouille de véhicule.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+              "f00006",
+              'Deux grandes catégories sont distinguées : la fouille intégrale de la personne gardée à vue et la fouille de véhicule.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'La fouille intégrale est assimilée à une perquisition et suppose un formalisme renforcé.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+              "f00007",
+              'La fouille intégrale est assimilée à une perquisition et suppose un formalisme renforcé.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'La fouille de véhicule, bien que ne portant pas sur un domicile, est également assimilée à une perquisition en raison de l’atteinte portée à la vie privée.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+              "f00008",
+              'La fouille de véhicule, bien que ne portant pas sur un domicile, est également assimilée à une perquisition en raison de l’atteinte portée à la vie privée.',
+            ),
           ),
 
           const SizedBox(height: 22),
@@ -97,21 +124,41 @@ class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
           // 2.3.6 – NOTION GÉNÉRALE
           // =======================================================
           _ConditionCard(
-            title: '2.3.6 – Les fouilles',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+              "f00009",
+              '2.3.6 – Les fouilles',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les fouilles ont pour finalité la recherche d’objets ou d’indices intéressant l’enquête, dans le cadre de l’établissement de la preuve. '
-                'Elles se distinguent des simples palpations de sécurité et des contrôles visuels, car elles impliquent une intrusion plus importante dans la sphère privée.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00010",
+                      'Les fouilles ont pour finalité la recherche d’objets ou d’indices intéressant l’enquête, dans le cadre de l’établissement de la preuve. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00011",
+                      'Elles se distinguent des simples palpations de sécurité et des contrôles visuels, car elles impliquent une intrusion plus importante dans la sphère privée.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'En enquête préliminaire, ces actes doivent toujours être justifiés par les nécessités de l’enquête et respecter les garanties prévues par le code de procédure pénale, '
-                      'en particulier les dispositions relatives aux perquisitions et aux atteintes à la dignité de la personne.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                        "f00012",
+                        'En enquête préliminaire, ces actes doivent toujours être justifiés par les nécessités de l’enquête et respecter les garanties prévues par le code de procédure pénale, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                        "f00013",
+                        'en particulier les dispositions relatives aux perquisitions et aux atteintes à la dignité de la personne.',
+                      ),
                 ),
               ]),
             ],
@@ -123,74 +170,145 @@ class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
           // 2.3.6.1 – LA FOUILLE INTÉGRALE
           // =======================================================
           _ConditionCard(
-            title: '2.3.6.1 – La fouille intégrale',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+              "f00014",
+              '2.3.6.1 – La fouille intégrale',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'La fouille intégrale consiste exclusivement à la recherche d’objets ou d’indices intéressant l’enquête, dans le cadre de l’établissement de la preuve. Conformément aux dispositions de l’',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                    "f00015",
+                    'La fouille intégrale consiste exclusivement à la recherche d’objets ou d’indices intéressant l’enquête, dans le cadre de l’établissement de la preuve. Conformément aux dispositions de l’',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 63-7 du Code de procédure pénale (C.P.P.)',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                    "f00016",
+                    'article 63-7 du Code de procédure pénale (C.P.P.)',
+                  ),
                   style: TextStyle(
                     color: lawColor,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ', elle ne peut être pratiquée que sur une personne gardée à vue et réalisée pour les nécessités de l’enquête.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                    "f00017",
+                    ', elle ne peut être pratiquée que sur une personne gardée à vue et réalisée pour les nécessités de l’enquête.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('Conditions de recours'),
-              const _BulletPoint(
-                text:
-                    'La personne doit être placée en garde à vue au moment de la fouille.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00018",
+                  'Conditions de recours',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'La fouille intégrale est décidée par un officier de police judiciaire (O.P.J.).',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00019",
+                  'La personne doit être placée en garde à vue au moment de la fouille.',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Il ne peut y être recouru que si un autre moyen de détection moins intrusif (palpation ou moyen électronique) ne peut être mis en œuvre.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00020",
+                  'La fouille intégrale est décidée par un officier de police judiciaire (O.P.J.).',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00021",
+                  'Il ne peut y être recouru que si un autre moyen de détection moins intrusif (palpation ou moyen électronique) ne peut être mis en œuvre.',
+                ),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle('Assimilation à une perquisition'),
-              const _Paragraph(
-                'Étant assimilée à une perquisition, la fouille intégrale est soumise, dans le cadre d’une enquête préliminaire, '
-                'à l’assentiment de la personne concernée, dans les formes et conditions identiques à l’autorisation prévue dans le cadre des perquisitions proprement dites.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00022",
+                  'Assimilation à une perquisition',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00023",
+                      'Étant assimilée à une perquisition, la fouille intégrale est soumise, dans le cadre d’une enquête préliminaire, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00024",
+                      'à l’assentiment de la personne concernée, dans les formes et conditions identiques à l’autorisation prévue dans le cadre des perquisitions proprement dites.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Le respect des heures légales applicables aux perquisitions ne s’applique pas en matière de fouilles de personnes : '
-                'une fouille intégrale peut donc être réalisée de jour comme de nuit, dès lors que les autres conditions légales sont réunies.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00025",
+                      'Le respect des heures légales applicables aux perquisitions ne s’applique pas en matière de fouilles de personnes : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00026",
+                      'une fouille intégrale peut donc être réalisée de jour comme de nuit, dès lors que les autres conditions légales sont réunies.',
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle('Modalités pratiques'),
-              const _BulletPoint(
-                text:
-                    'La fouille intégrale doit être réalisée dans un espace fermé, à l’abri des regards.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00027",
+                  'Modalités pratiques',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Elle doit être effectuée par une personne du même sexe que l’individu faisant l’objet de la fouille.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00028",
+                  'La fouille intégrale doit être réalisée dans un espace fermé, à l’abri des regards.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00029",
+                  'Elle doit être effectuée par une personne du même sexe que l’individu faisant l’objet de la fouille.',
+                ),
               ),
               const SizedBox(height: 8),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le caractère particulièrement intrusif de la fouille intégrale impose de veiller au respect de la dignité de la personne gardée à vue, '
-                        'en limitant l’acte à ce qui est strictement nécessaire à la recherche de la preuve.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                          "f00030",
+                          'Le caractère particulièrement intrusif de la fouille intégrale impose de veiller au respect de la dignité de la personne gardée à vue, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                          "f00031",
+                          'en limitant l’acte à ce qui est strictement nécessaire à la recherche de la preuve.',
+                        ),
                   ),
                 ],
               ),
@@ -203,68 +321,124 @@ class PaEnquetePreliminaireFouillesPage extends StatelessWidget {
           // 2.3.6.2 – LA FOUILLE DE VÉHICULE
           // =======================================================
           _ConditionCard(
-            title: '2.3.6.2 – La fouille de véhicule',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+              "f00032",
+              '2.3.6.2 – La fouille de véhicule',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
-              const _Paragraph(
-                'La fouille de véhicule n’est pas une perquisition au sens strict, les véhicules ne constituant pas un domicile. '
-                'Elle consiste néanmoins à rechercher, à l’intérieur d’un véhicule, des objets ou indices utiles à l’enquête.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00033",
+                      'La fouille de véhicule n’est pas une perquisition au sens strict, les véhicules ne constituant pas un domicile. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00034",
+                      'Elle consiste néanmoins à rechercher, à l’intérieur d’un véhicule, des objets ou indices utiles à l’enquête.',
+                    ),
               ),
               const SizedBox(height: 8),
 
-              const _SubTitle('Régime juridique'),
-              const _BulletPoint(
-                text:
-                    'La fouille de véhicule n’est pas soumise au respect des heures légales.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00035",
+                  'Régime juridique',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'En enquête préliminaire, compte tenu du caractère non coercitif de cette procédure, la fouille est réalisée en présence de la personne trouvée en possession du véhicule.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00036",
+                  'La fouille de véhicule n’est pas soumise au respect des heures légales.',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Elle suppose l’autorisation délivrée par cette personne, dans les formes et conditions identiques à l’autorisation prévue pour les perquisitions (assentiment exprès et écrit).',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00037",
+                  'En enquête préliminaire, compte tenu du caractère non coercitif de cette procédure, la fouille est réalisée en présence de la personne trouvée en possession du véhicule.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00038",
+                  'Elle suppose l’autorisation délivrée par cette personne, dans les formes et conditions identiques à l’autorisation prévue pour les perquisitions (assentiment exprès et écrit).',
+                ),
               ),
               const SizedBox(height: 10),
 
               _ExempleBox(
-                title: 'Jurisprudence – Assimilation à une perquisition',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                  "f00039",
+                  'Jurisprudence – Assimilation à une perquisition',
+                ),
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        'La jurisprudence considère qu’un véhicule, sauf s’il est spécialement aménagé à usage d’habitation et effectivement utilisé comme résidence, ne constitue pas un domicile. ',
-                  ),
-                  const TextSpan(
-                    text:
-                        'Cependant, la fouille d’un véhicule, par l’intrusion dans l’intimité de la vie privée qu’elle permet, est assimilable à une perquisition. ',
-                  ),
-                  const TextSpan(
-                    text:
-                        'Sauf si un texte l’autorise expressément, elle ne peut être effectuée qu’avec l’assentiment du propriétaire ou du conducteur du véhicule, recueilli dans les conditions prescrites par l’',
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00040",
+                      'La jurisprudence considère qu’un véhicule, sauf s’il est spécialement aménagé à usage d’habitation et effectivement utilisé comme résidence, ne constitue pas un domicile. ',
+                    ),
                   ),
                   TextSpan(
-                    text: 'article 76 du Code de procédure pénale (C.P.P.) ',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00041",
+                      'Cependant, la fouille d’un véhicule, par l’intrusion dans l’intimité de la vie privée qu’elle permet, est assimilable à une perquisition. ',
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00042",
+                      'Sauf si un texte l’autorise expressément, elle ne peut être effectuée qu’avec l’assentiment du propriétaire ou du conducteur du véhicule, recueilli dans les conditions prescrites par l’',
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00043",
+                      'article 76 du Code de procédure pénale (C.P.P.) ',
+                    ),
                     style: TextStyle(
                       color: lawColor,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const TextSpan(
-                    text: '(Cass. crim., 16 janv. 2024, n° 22-87.593).',
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                      "f00044",
+                      '(Cass. crim., 16 janv. 2024, n° 22-87.593).',
+                    ),
                     style: TextStyle(fontStyle: FontStyle.italic),
                   ),
                 ],
               ),
               const SizedBox(height: 8),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'En pratique, l’assentiment doit être recueilli de manière claire, libre et éclairée, consigné par écrit dans la procédure, '
-                        'et signé par la personne qui autorise la fouille du véhicule.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                          "f00045",
+                          'En pratique, l’assentiment doit être recueilli de manière claire, libre et éclairée, consigné par écrit dans la procédure, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart",
+                          "f00046",
+                          'et signé par la personne qui autorise la fouille du véhicule.',
+                        ),
                   ),
                 ],
               ),
@@ -578,9 +752,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

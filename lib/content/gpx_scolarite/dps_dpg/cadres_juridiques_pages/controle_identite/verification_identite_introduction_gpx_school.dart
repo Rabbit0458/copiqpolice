@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class VerificationIdentiteIntroductionGpxSchool extends StatelessWidget {
   const VerificationIdentiteIntroductionGpxSchool({super.key});
@@ -35,10 +36,18 @@ class VerificationIdentiteIntroductionGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Introduction — Vérification d’identité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+            "f00002",
+            'Introduction — Vérification d’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,7 +61,11 @@ class VerificationIdentiteIntroductionGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE PRINCIPAL ===========================
           Text(
-            'Introduction à la vérification d’identité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+              "f00003",
+              'Introduction à la vérification d’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,9 +74,21 @@ class VerificationIdentiteIntroductionGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Comprendre la logique et le cadre juridique de la vérification d’identité avant '
-            'd’aborder la rétention, la recherche de l’identité, les obligations procédurales et '
-            'le procès-verbal.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                  "f00004",
+                  'Comprendre la logique et le cadre juridique de la vérification d’identité avant ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                  "f00005",
+                  'd’aborder la rétention, la recherche de l’identité, les obligations procédurales et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                  "f00006",
+                  'le procès-verbal.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -75,17 +100,29 @@ class VerificationIdentiteIntroductionGpxSchool extends StatelessWidget {
 
           // ===================== BLOC INTRODUCTION =========================
           _ConditionCard(
-            title: 'La procédure de vérification d’identité',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+              "f00007",
+              'La procédure de vérification d’identité',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: 'La procédure de vérification est prévue par l’',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                    "f00008",
+                    'La procédure de vérification est prévue par l’',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 78-3 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                    "f00009",
+                    'article 78-3 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Color(0xFFD32F2F), // rouge pour l’article
@@ -93,16 +130,40 @@ class VerificationIdentiteIntroductionGpxSchool extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      '. Elle peut se définir comme la recherche coercitive de l’identité d’une '
-                      'personne qui n’a pas voulu ou n’a pas pu justifier de son identité à la suite '
-                      'd’un contrôle d’identité ou d’un relevé d’identité.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                        "f00010",
+                        '. Elle peut se définir comme la recherche coercitive de l’identité d’une ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                        "f00011",
+                        'personne qui n’a pas voulu ou n’a pas pu justifier de son identité à la suite ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                        "f00012",
+                        'd’un contrôle d’identité ou d’un relevé d’identité.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Sa mise en œuvre est de la responsabilité exclusive de l’officier de police '
-                'judiciaire parce qu’elle prévoit la recherche coercitive de l’identité d’une '
-                'personne.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                      "f00013",
+                      'Sa mise en œuvre est de la responsabilité exclusive de l’officier de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                      "f00014",
+                      'judiciaire parce qu’elle prévoit la recherche coercitive de l’identité d’une ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart",
+                      "f00015",
+                      'personne.',
+                    ),
               ),
             ],
           ),
@@ -358,9 +419,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

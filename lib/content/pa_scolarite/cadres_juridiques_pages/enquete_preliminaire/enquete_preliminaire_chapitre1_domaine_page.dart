@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
   const PaEnquetePreliminaireChapitre1DomainePage({super.key});
@@ -33,10 +34,10 @@ class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00001", 'Retour'),
         ),
         title: Text(
-          'Enquête préliminaire',
+          ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00002", 'Enquête préliminaire'),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,7 +53,7 @@ class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            'Chapitre 1 — Le domaine d’application',
+            ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00003", 'Chapitre 1 — Le domaine d’application'),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -62,41 +63,41 @@ class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO GÉNÉRALE -------------------
-          const _Paragraph.rich([
+           _Paragraph.rich([
             TextSpan(
               text:
-                  'L’enquête préliminaire, prévue aux articles 75 à 78 du code de procédure pénale, est une enquête ',
+                  ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00004", 'L’enquête préliminaire, prévue aux articles 75 à 78 du code de procédure pénale, est une enquête '),
             ),
             TextSpan(
-              text: 'légalisée par le C.P.P.',
+              text: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00005", 'légalisée par le C.P.P.'),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
             TextSpan(
               text:
-                  ' et destinée à obtenir sur une infraction les premiers renseignements afin de permettre au procureur de la République de prendre une décision quant à l’opportunité des poursuites.',
+                  ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00006", ' et destinée à obtenir sur une infraction les premiers renseignements afin de permettre au procureur de la République de prendre une décision quant à l’opportunité des poursuites.'),
             ),
           ]),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'Elle est diligentée par la police judiciaire (officiers et agents de police judiciaire), soit à la demande du parquet, soit d’initiative. Elle est très fréquemment mise en œuvre dans la pratique.',
+           _Paragraph(
+            ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00007", 'Elle est diligentée par la police judiciaire (officiers et agents de police judiciaire), soit à la demande du parquet, soit d’initiative. Elle est très fréquemment mise en œuvre dans la pratique.'),
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'Bien que caractérisée classiquement par l’absence de coercition, l’enquête préliminaire n’est pas pour autant dépourvue de risques pour les libertés individuelles, ce qui justifie un encadrement procédural strict.',
+           _Paragraph(
+            ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00008", 'Bien que caractérisée classiquement par l’absence de coercition, l’enquête préliminaire n’est pas pour autant dépourvue de risques pour les libertés individuelles, ce qui justifie un encadrement procédural strict.'),
           ),
           const SizedBox(height: 14),
 
-          const _IntroBullet(
+           _IntroBullet(
             text:
-                'L’enquête préliminaire est une enquête légalement organisée aux articles 75 à 78 du C.P.P.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00009", 'L’enquête préliminaire est une enquête légalement organisée aux articles 75 à 78 du C.P.P.'),
           ),
-          const _IntroBullet(
+           _IntroBullet(
             text:
-                'Elle vise à recueillir les premiers renseignements sur une infraction afin d’éclairer la décision du procureur de la République sur l’opportunité des poursuites.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00010", 'Elle vise à recueillir les premiers renseignements sur une infraction afin d’éclairer la décision du procureur de la République sur l’opportunité des poursuites.'),
           ),
-          const _IntroBullet(
+           _IntroBullet(
             text:
-                'Elle est diligentée par la police judiciaire, à la demande du parquet ou d’initiative, et peut porter atteinte aux libertés si ses règles ne sont pas strictement respectées.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00011", 'Elle est diligentée par la police judiciaire, à la demande du parquet ou d’initiative, et peut porter atteinte aux libertés si ses règles ne sont pas strictement respectées.'),
           ),
 
           const SizedBox(height: 20),
@@ -105,43 +106,39 @@ class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
           // 1.1 — LES INFRACTIONS
           // =======================================================
           _ConditionCard(
-            title: '1.1 — Les infractions',
+            title: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00012", '1.1 — Les infractions'),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children:  [
               _Paragraph(
-                'Tous les crimes, délits et contraventions peuvent faire l’objet d’une enquête préliminaire. '
-                'Il est même possible de traiter en enquête préliminaire des crimes et délits flagrants, '
-                'le choix du cadre procédural relevant de l’appréciation de l’autorité judiciaire.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00013", 'Tous les crimes, délits et contraventions peuvent faire l’objet d’une enquête préliminaire. ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00014", 'Il est même possible de traiter en enquête préliminaire des crimes et délits flagrants, ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00015", 'le choix du cadre procédural relevant de l’appréciation de l’autorité judiciaire.'),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'La seule limite tient au principe selon lequel, lorsqu’une information judiciaire est ouverte, ',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00016", 'La seule limite tient au principe selon lequel, lorsqu’une information judiciaire est ouverte, '),
                 ),
                 TextSpan(
                   text:
-                      'la police judiciaire ne peut plus agir que pour exécuter les délégations du magistrat instructeur ',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00017", 'la police judiciaire ne peut plus agir que pour exécuter les délégations du magistrat instructeur '),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
-                  text: '(article 14 alinéa 2 du code de procédure pénale).',
+                  text: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00018", '(article 14 alinéa 2 du code de procédure pénale).'),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Ainsi, tant qu’un officier de police judiciaire (O.P.J.) ou un agent de police judiciaire (A.P.J.) '
-                'n’a pas connaissance qu’une infraction fait l’objet d’une information judiciaire, les actes accomplis '
-                'dans le cadre de l’enquête préliminaire demeurent réguliers.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00019", 'Ainsi, tant qu’un officier de police judiciaire (O.P.J.) ou un agent de police judiciaire (A.P.J.) ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00020", 'n’a pas connaissance qu’une infraction fait l’objet d’une information judiciaire, les actes accomplis ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00021", 'dans le cadre de l’enquête préliminaire demeurent réguliers.'),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le basculement vers l’information judiciaire ne prive pas rétroactivement de validité les actes régulièrement accomplis en enquête préliminaire avant que les enquêteurs n’aient connaissance de l’ouverture de cette information.',
+                        ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00022", 'Le basculement vers l’information judiciaire ne prive pas rétroactivement de validité les actes régulièrement accomplis en enquête préliminaire avant que les enquêteurs n’aient connaissance de l’ouverture de cette information.'),
                   ),
                 ],
               ),
@@ -154,79 +151,69 @@ class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
           // 1.2 — LES PERSONNES
           // =======================================================
           _ConditionCard(
-            title: '1.2 — Les personnes',
+            title: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00023", '1.2 — Les personnes'),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
-              _SubTitle('1.2.1 — Le principe'),
+            children:  [
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00024", '1.2.1 — Le principe')),
               _Paragraph(
-                'Toute personne qui réside sur le territoire français peut se trouver impliquée dans une enquête préliminaire. '
-                'Ce principe de compétence personnelle large connaît toutefois des exceptions et des règles particulières, '
-                'notamment en raison de certains statuts protecteurs ou immunités.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00025", 'Toute personne qui réside sur le territoire français peut se trouver impliquée dans une enquête préliminaire. ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00026", 'Ce principe de compétence personnelle large connaît toutefois des exceptions et des règles particulières, ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00027", 'notamment en raison de certains statuts protecteurs ou immunités.'),
               ),
               SizedBox(height: 12),
 
-              _SubTitle('1.2.2 — Les exceptions'),
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00028", '1.2.2 — Les exceptions')),
               _Paragraph(
-                'Certaines personnes bénéficient d’un régime dérogatoire qui limite, voire exclut, la possibilité de mesures '
-                'd’enquête habituelles à leur encontre.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00029", 'Certaines personnes bénéficient d’un régime dérogatoire qui limite, voire exclut, la possibilité de mesures ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00030", 'd’enquête habituelles à leur encontre.'),
               ),
               SizedBox(height: 6),
               _BulletPoint(
                 text:
-                    'Les agents diplomatiques accrédités en France, en raison de leur statut protégé par le droit international, '
-                    'bénéficient d’immunités qui font obstacle, sauf exceptions, aux mesures d’enquête et de contrainte ordinaires.',
+                    ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00031", 'Les agents diplomatiques accrédités en France, en raison de leur statut protégé par le droit international, ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00032", 'bénéficient d’immunités qui font obstacle, sauf exceptions, aux mesures d’enquête et de contrainte ordinaires.'),
               ),
               _BulletPoint(
                 text:
-                    'Le Président de la République bénéficie d’une irresponsabilité à raison des actes accomplis dans l’exercice de ses fonctions '
-                    'et d’une inviolabilité totale durant son mandat.',
+                    ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00033", 'Le Président de la République bénéficie d’une irresponsabilité à raison des actes accomplis dans l’exercice de ses fonctions ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00034", 'et d’une inviolabilité totale durant son mandat.'),
               ),
               SizedBox(height: 12),
 
-              _SubTitle('1.2.3 — Les règles particulières'),
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00035", '1.2.3 — Les règles particulières')),
               _Paragraph(
-                'D’autres catégories de personnes ne sont pas totalement exclues du champ de l’enquête préliminaire, '
-                'mais bénéficient de règles spécifiques limitant certaines mesures d’enquête, notamment les mesures '
-                'privatives ou restrictives de liberté.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00036", 'D’autres catégories de personnes ne sont pas totalement exclues du champ de l’enquête préliminaire, ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00037", 'mais bénéficient de règles spécifiques limitant certaines mesures d’enquête, notamment les mesures ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00038", 'privatives ou restrictives de liberté.'),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('1.2.3.1 — Les agents consulaires'),
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00039", '1.2.3.1 — Les agents consulaires')),
               _Paragraph(
-                'La plupart des conventions bilatérales accordent aux agents consulaires un privilège d’exemption d’arrestation, '
-                'sauf en cas de crime flagrant. Cela implique, en pratique, une grande prudence pour toute mesure de contrainte '
-                'à leur encontre.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00040", 'La plupart des conventions bilatérales accordent aux agents consulaires un privilège d’exemption d’arrestation, ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00041", 'sauf en cas de crime flagrant. Cela implique, en pratique, une grande prudence pour toute mesure de contrainte ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00042", 'à leur encontre.'),
               ),
               SizedBox(height: 10),
 
-              _SubTitle('1.2.3.2 — Les parlementaires'),
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00043", '1.2.3.2 — Les parlementaires')),
               _Paragraph(
-                'Les parlementaires peuvent faire l’objet de poursuites pénales. Cependant, ces poursuites peuvent être suspendues '
-                'par l’assemblée concernée pendant la durée de la session parlementaire.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00044", 'Les parlementaires peuvent faire l’objet de poursuites pénales. Cependant, ces poursuites peuvent être suspendues ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00045", 'par l’assemblée concernée pendant la durée de la session parlementaire.'),
               ),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'En enquête préliminaire, lorsque l’autorité judiciaire envisage, à l’encontre d’un parlementaire, ',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00046", 'En enquête préliminaire, lorsque l’autorité judiciaire envisage, à l’encontre d’un parlementaire, '),
                 ),
                 TextSpan(
-                  text: 'des mesures privatives ou restrictives de liberté ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00047", 'des mesures privatives ou restrictives de liberté '),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
                   text:
-                      '(par exemple garde à vue, contrôle judiciaire, etc.), elle doit préalablement obtenir une autorisation ',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00048", '(par exemple garde à vue, contrôle judiciaire, etc.), elle doit préalablement obtenir une autorisation '),
                 ),
                 TextSpan(
-                  text: 'du bureau de l’Assemblée ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00049", 'du bureau de l’Assemblée '),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
                   text:
-                      'dont dépend ce parlementaire. À défaut de cette autorisation, la mesure ne peut légalement être exécutée.',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00050", 'dont dépend ce parlementaire. À défaut de cette autorisation, la mesure ne peut légalement être exécutée.'),
                 ),
               ]),
               SizedBox(height: 10),
@@ -234,8 +221,7 @@ class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Ce régime vise à concilier la séparation des pouvoirs, la protection de la représentation nationale '
-                        'et la nécessité de poursuites pénales lorsqu’un parlementaire est susceptible d’avoir commis une infraction.',
+                        ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00051", 'Ce régime vise à concilier la séparation des pouvoirs, la protection de la représentation nationale ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00052", 'et la nécessité de poursuites pénales lorsqu’un parlementaire est susceptible d’avoir commis une infraction.'),
                   ),
                 ],
               ),
@@ -248,101 +234,87 @@ class PaEnquetePreliminaireChapitre1DomainePage extends StatelessWidget {
           // 1.3 — LES LIEUX
           // =======================================================
           _ConditionCard(
-            title: '1.3 — Les lieux',
+            title: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00053", '1.3 — Les lieux'),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children:  [
               _Paragraph(
-                'Dans le cadre d’une enquête préliminaire, l’introduction dans un lieu privé, et notamment dans un domicile, '
-                'est en principe subordonnée à l’accord de la personne qui en a la jouissance. Ce principe reflète la protection '
-                'renforcée accordée au domicile et, plus largement, à la vie privée.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00054", 'Dans le cadre d’une enquête préliminaire, l’introduction dans un lieu privé, et notamment dans un domicile, ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00055", 'est en principe subordonnée à l’accord de la personne qui en a la jouissance. Ce principe reflète la protection ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00056", 'renforcée accordée au domicile et, plus largement, à la vie privée.'),
               ),
               SizedBox(height: 10),
 
-              _SubTitle('Accord du maître des lieux'),
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00057", 'Accord du maître des lieux')),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'L’introduction dans un domicile ou un autre lieu privé, lorsqu’une enquête préliminaire est en cours, '
-                      'suppose ',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00058", 'L’introduction dans un domicile ou un autre lieu privé, lorsqu’une enquête préliminaire est en cours, ') + 'suppose ',
                 ),
                 TextSpan(
-                  text: 'l’accord verbal et préalable du maître des lieux. ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00059", 'l’accord verbal et préalable du maître des lieux. '),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
                   text:
-                      'Cet accord doit être mentionné dans la procédure par l’O.P.J. ou l’A.P.J. qui intervient.',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00060", 'Cet accord doit être mentionné dans la procédure par l’O.P.J. ou l’A.P.J. qui intervient.'),
                 ),
               ]),
               SizedBox(height: 8),
 
-              _SubTitle('Perquisitions en enquête préliminaire'),
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00061", 'Perquisitions en enquête préliminaire')),
               _Paragraph(
-                'Les perquisitions dans des lieux privés, réalisées afin d’y découvrir des documents, objets ou indices susceptibles '
-                'd’intéresser l’enquête, ou des biens dont la confiscation est prévue à l’article 131-21 du code pénal, '
-                'supposent en principe l’assentiment exprès et écrit de la personne chez laquelle elles ont lieu.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00062", 'Les perquisitions dans des lieux privés, réalisées afin d’y découvrir des documents, objets ou indices susceptibles ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00063", 'd’intéresser l’enquête, ou des biens dont la confiscation est prévue à l’article 131-21 du code pénal, ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00064", 'supposent en principe l’assentiment exprès et écrit de la personne chez laquelle elles ont lieu.'),
               ),
               SizedBox(height: 8),
 
               _NotaBox(
-                title: 'Assentiment exprès et écrit',
+                title: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00065", 'Assentiment exprès et écrit'),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'L’assentiment doit être clair, non équivoque et matérialisé par un écrit signé par la personne concernée. '
-                        'Ce document, annexé à la procédure, permet de démontrer le respect des conditions légales de la perquisition '
-                        'en enquête préliminaire.',
+                        ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00066", 'L’assentiment doit être clair, non équivoque et matérialisé par un écrit signé par la personne concernée. ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00067", 'Ce document, annexé à la procédure, permet de démontrer le respect des conditions légales de la perquisition ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00068", 'en enquête préliminaire.'),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle('Perquisitions sans assentiment : intervention du JLD'),
+              _SubTitle(ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00069", 'Perquisitions sans assentiment : intervention du JLD')),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Toutefois, pour les crimes et délits punis d’une peine d’emprisonnement d’une durée égale ou supérieure à trois ans '
-                      '(article 76 alinéa 4 du C.P.P.), ainsi que pour les infractions prévues à l’article 706-73 du C.P.P. '
-                      '(article 76 et 706-90 du C.P.P.), ',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00070", 'Toutefois, pour les crimes et délits punis d’une peine d’emprisonnement d’une durée égale ou supérieure à trois ans ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00071", '(article 76 alinéa 4 du C.P.P.), ainsi que pour les infractions prévues à l’article 706-73 du C.P.P. ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00072", '(article 76 et 706-90 du C.P.P.), '),
                 ),
                 TextSpan(
                   text:
-                      'le juge des libertés et de la détention (J.L.D.) peut, à la requête du procureur de la République, ',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00073", 'le juge des libertés et de la détention (J.L.D.) peut, à la requête du procureur de la République, '),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
                   text:
-                      'décider que l’assentiment de la personne n’est pas nécessaire pour procéder à la perquisition.',
+                      ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00074", 'décider que l’assentiment de la personne n’est pas nécessaire pour procéder à la perquisition.'),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                'Ce régime dérogatoire permet, dans des dossiers plus graves (notamment criminalité organisée, infractions '
-                'visées par l’article 706-73 du C.P.P.), d’effectuer des perquisitions en enquête préliminaire sans le consentement '
-                'de l’occupant, sous contrôle du J.L.D. saisi par le procureur.',
+                ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00075", 'Ce régime dérogatoire permet, dans des dossiers plus graves (notamment criminalité organisée, infractions ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00076", 'visées par l’article 706-73 du C.P.P.), d’effectuer des perquisitions en enquête préliminaire sans le consentement ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00077", 'de l’occupant, sous contrôle du J.L.D. saisi par le procureur.'),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'L’intervention du juge des libertés et de la détention constitue une garantie importante pour les libertés '
-                        'individuelles, en encadrant strictement les perquisitions sans assentiment dans les enquêtes préliminaires '
-                        'portant sur les infractions les plus graves.',
+                        ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00078", 'L’intervention du juge des libertés et de la détention constitue une garantie importante pour les libertés ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00079", 'individuelles, en encadrant strictement les perquisitions sans assentiment dans les enquêtes préliminaires ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00080", 'portant sur les infractions les plus graves.'),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
               _ExempleBox(
-                title: 'Référence documentaire',
+                title: ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00081", 'Référence documentaire'),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Version au 01/07/2025 — SDCP — Tous droits réservés UoPl — Page 1. '
-                        'Ces éléments rappellent que les règles présentées sont à jour à cette date et issues d’une documentation officielle.',
+                        ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00082", 'Version au 01/07/2025 — SDCP — Tous droits réservés UoPl — Page 1. ') + ScolariteText.value("lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart", "f00083", 'Ces éléments rappellent que les règles présentées sont à jour à cette date et issues d’une documentation officielle.'),
                   ),
                 ],
               ),

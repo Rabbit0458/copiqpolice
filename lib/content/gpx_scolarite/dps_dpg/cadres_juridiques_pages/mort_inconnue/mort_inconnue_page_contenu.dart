@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques/mort_inconnue_page_contenu.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MortInconnueContenuPage extends StatelessWidget {
   const MortInconnueContenuPage({super.key});
@@ -26,10 +27,18 @@ class MortInconnueContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Mort de cause inconnue',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+            "f00002",
+            'Mort de cause inconnue',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,8 +52,16 @@ class MortInconnueContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'La découverte d’une personne décédée\n'
-            '(articles 74 et 80-4 du Code de procédure pénale)',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00003",
+                  'La découverte d’une personne décédée\n',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00004",
+                  '(articles 74 et 80-4 du Code de procédure pénale)',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -54,10 +71,26 @@ class MortInconnueContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Cadre applicable à la découverte d’un corps dont la cause du décès '
-            'est inconnue ou suspecte : déclenchement de l’enquête, rôle du '
-            'procureur de la République et du juge d’instruction, actes '
-            'd’investigation et suites possibles.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00005",
+                  'Cadre applicable à la découverte d’un corps dont la cause du décès ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00006",
+                  'est inconnue ou suspecte : déclenchement de l’enquête, rôle du ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00007",
+                  'procureur de la République et du juge d’instruction, actes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00008",
+                  'd’investigation et suites possibles.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -70,11 +103,27 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== INTRO / PRÉAMBULE =========================
           _ModuleCard(
             tag: 'mi_intro',
-            title: 'Introduction — Cadre général',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00009",
+              'Introduction — Cadre général',
+            ),
             subtitle:
-                'Notion de découverte d’un corps, loi applicable et articulation '
-                'avec la recherche des causes de la mort et la découverte d’une '
-                'personne grièvement blessée.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00010",
+                  'Notion de découverte d’un corps, loi applicable et articulation ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00011",
+                  'avec la recherche des causes de la mort et la découverte d’une ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00012",
+                  'personne grièvement blessée.',
+                ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -88,11 +137,27 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 1 ================================
           _ModuleCard(
             tag: 'mi_chap1',
-            title: 'Conditions d’application des articles 74 et 80-4 du C.P.P.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00013",
+              'Conditions d’application des articles 74 et 80-4 du C.P.P.',
+            ),
             subtitle:
-                'Quand appliquer ce cadre ? Découverte du corps, caractère '
-                'suspect ou inexpliqué du décès, information du parquet et '
-                'ouverture éventuelle d’information judiciaire.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00014",
+                  'Quand appliquer ce cadre ? Découverte du corps, caractère ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00015",
+                  'suspect ou inexpliqué du décès, information du parquet et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00016",
+                  'ouverture éventuelle d’information judiciaire.',
+                ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -106,11 +171,27 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 2 — PROCÉDURE GLOBALE ===========
           _ModuleCard(
             tag: 'mi_chap2',
-            title: 'Procédure des articles 74 et 80-4 du C.P.P.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00017",
+              'Procédure des articles 74 et 80-4 du C.P.P.',
+            ),
             subtitle:
-                'Déroulement de l’enquête : rôle de l’O.P.J., de l’A.P.J., du '
-                'procureur et du juge d’instruction, choix du cadre d’enquête et '
-                'contrôle de la légalité des actes.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00018",
+                  'Déroulement de l’enquête : rôle de l’O.P.J., de l’A.P.J., du ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00019",
+                  'procureur et du juge d’instruction, choix du cadre d’enquête et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00020",
+                  'contrôle de la légalité des actes.',
+                ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -124,10 +205,22 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== ACTES DE L’ENQUÊTE ========================
           _ModuleCard(
             tag: 'mi_actes_enquete',
-            title: 'Les actes de l’enquête',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00021",
+              'Les actes de l’enquête',
+            ),
             subtitle:
-                'Transport sur les lieux, premières constatations, réquisitions, '
-                'perquisitions et saisies réalisées pour déterminer l’origine du décès.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00022",
+                  'Transport sur les lieux, premières constatations, réquisitions, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00023",
+                  'perquisitions et saisies réalisées pour déterminer l’origine du décès.',
+                ),
             imagePath: 'assets/images/gavel_desk_2.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -141,11 +234,27 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== ACTES DÉLÉGUÉS PAR LE JI (80-4) ==========
           _ModuleCard(
             tag: 'mi_actes_804',
-            title: 'Les actes délégués par le procureur de la République',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00024",
+              'Les actes délégués par le procureur de la République',
+            ),
             subtitle:
-                'Enquête sur les causes de la mort dans le cadre d’une information : '
-                'missions confiées aux O.P.J. par commission rogatoire en vertu de '
-                'l’article 80-4.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00025",
+                  'Enquête sur les causes de la mort dans le cadre d’une information : ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00026",
+                  'missions confiées aux O.P.J. par commission rogatoire en vertu de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00027",
+                  'l’article 80-4.',
+                ),
             imagePath: 'assets/images/action_justice.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -159,12 +268,27 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== ACTES DÉLÉGUÉS PAR LE JI (80-4) ==========
           _ModuleCard(
             tag: 'mi_actes_ji',
-            title:
-                'Les actes délégués par le juge d\'instruction (art. 80-4 C.P.Р.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00028",
+              'Les actes délégués par le juge d\'instruction (art. 80-4 C.P.Р.)',
+            ),
             subtitle:
-                'Enquête sur les causes de la mort dans le cadre d’une information : '
-                'missions confiées aux O.P.J. par commission rogatoire en vertu de '
-                'l’article 80-4.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00029",
+                  'Enquête sur les causes de la mort dans le cadre d’une information : ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00030",
+                  'missions confiées aux O.P.J. par commission rogatoire en vertu de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00031",
+                  'l’article 80-4.',
+                ),
             imagePath: 'assets/images/action_justice.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -178,12 +302,27 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== SUITES DE L’ENQUÊTE =======================
           _ModuleCard(
             tag: 'mi_suites',
-            title:
-                'Les suites de l’enquête diligentée en vertu de l’article 74 du C.P.P.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00032",
+              'Les suites de l’enquête diligentée en vertu de l’article 74 du C.P.P.',
+            ),
             subtitle:
-                'Classement, ouverture d’enquête préliminaire, flagrance ou '
-                'information judiciaire selon que le décès est naturel, accidentel '
-                'ou révèle une infraction.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00033",
+                  'Classement, ouverture d’enquête préliminaire, flagrance ou ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00034",
+                  'information judiciaire selon que le décès est naturel, accidentel ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00035",
+                  'ou révèle une infraction.',
+                ),
             imagePath: 'assets/images/commission_rogatoire.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -197,10 +336,22 @@ class MortInconnueContenuPage extends StatelessWidget {
           // ===================== QUIZ MODULE ===============================
           _ModuleCard(
             tag: 'mi_quiz',
-            title: 'Quiz — Mort de cause inconnue',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+              "f00036",
+              'Quiz — Mort de cause inconnue',
+            ),
             subtitle:
-                'Vérifiez vos acquis : conditions d’application, procédure, actes '
-                'et suites d’enquête.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00037",
+                  'Vérifiez vos acquis : conditions d’application, procédure, actes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart",
+                  "f00038",
+                  'et suites d’enquête.',
+                ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

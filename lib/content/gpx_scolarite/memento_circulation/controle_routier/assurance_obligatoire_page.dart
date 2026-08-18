@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AssuranceObligatoirePage extends StatelessWidget {
   const AssuranceObligatoirePage({super.key});
@@ -66,10 +67,18 @@ class AssuranceObligatoirePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrôle routier",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+            "f00002",
+            "Contrôle routier",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class AssuranceObligatoirePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’assurance obligatoire",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+              "f00003",
+              "L’assurance obligatoire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,23 +109,45 @@ class AssuranceObligatoirePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDelit,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Toute personne physique ou morale (autre que l’État) doit être couverte par une assurance responsabilité civile pour faire circuler ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00005",
+                    "Toute personne physique ou morale (autre que l’État) doit être couverte par une assurance responsabilité civile pour faire circuler ",
+                  ),
                 ),
-                const TextSpan(text: "(y compris stationnement) "),
-                const TextSpan(
-                  text:
-                      "un véhicule terrestre à moteur (immatriculé ou non) ou une remorque. ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00006",
+                    "(y compris stationnement) ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00007",
+                    "un véhicule terrestre à moteur (immatriculé ou non) ou une remorque. ",
+                  ),
                 ),
                 const TextSpan(text: "Voir "),
-                _boldSpan("NATINF 6163"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00008",
+                    "NATINF 6163",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -122,19 +157,47 @@ class AssuranceObligatoirePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("L. 211-1 du Code des assurances"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00010",
+                    "L. 211-1 du Code des assurances",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 211-14-0 à R. 211-21-6 du Code des assurances"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00011",
+                    "R. 211-14-0 à R. 211-21-6 du Code des assurances",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("L. 324-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00012",
+                    "L. 324-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("L. 324-2 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00013",
+                    "L. 324-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -144,38 +207,75 @@ class AssuranceObligatoirePage extends StatelessWidget {
 
           // Véhicules immatriculés (FVA)
           _ConditionCard(
-            title: "II — Véhicules à moteur immatriculés",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+              "f00014",
+              "II — Véhicules à moteur immatriculés",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le conducteur d’un véhicule immatriculé est présumé satisfaire à l’obligation d’assurance "
-                "lorsqu’il résulte de la consultation du Fichier des Véhicules Assurés (FVA) que le véhicule est couvert.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00015",
+                      "Le conducteur d’un véhicule immatriculé est présumé satisfaire à l’obligation d’assurance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00016",
+                      "lorsqu’il résulte de la consultation du Fichier des Véhicules Assurés (FVA) que le véhicule est couvert.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "L’assureur dispose d’un délai de "),
                   TextSpan(
-                    text: "72 heures",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00017",
+                      "L’assureur dispose d’un délai de ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00018",
+                      "72 heures",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text:
-                        " à compter de la souscription du contrat pour alimenter le fichier.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00019",
+                      " à compter de la souscription du contrat pour alimenter le fichier.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Si la présomption FVA ne peut pas être établie"),
-              _BulletPoint(
-                text:
-                    "Elle peut l’être par la présentation d’un justificatif d’assurance mentionnant sa durée de validité (15 jours maximum).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00020",
+                  "Si la présomption FVA ne peut pas être établie",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le conducteur peut également prouver par tous moyens (auprès des autorités judiciaires) que son véhicule est assuré.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00021",
+                  "Elle peut l’être par la présentation d’un justificatif d’assurance mentionnant sa durée de validité (15 jours maximum).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00022",
+                  "Le conducteur peut également prouver par tous moyens (auprès des autorités judiciaires) que son véhicule est assuré.",
+                ),
               ),
             ],
           ),
@@ -184,52 +284,121 @@ class AssuranceObligatoirePage extends StatelessWidget {
 
           // Véhicules non immatriculés (EDPM / cyclomobiles légers)
           _ConditionCard(
-            title:
-                "III — Véhicules non immatriculés (EDPM & cyclomobiles légers)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+              "f00023",
+              "III — Véhicules non immatriculés (EDPM & cyclomobiles légers)",
+            ),
             cardColor: cardModalites,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Pour ces véhicules, les organismes d’assurance doivent délivrer sans frais :\n"
-                "• un document justificatif (attestation d’assurance ou attestation provisoire valable 1 mois)\n"
-                "• un certificat d’assurance (ou certificat provisoire valable 1 mois).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00024",
+                      "Pour ces véhicules, les organismes d’assurance doivent délivrer sans frais :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00025",
+                      "• un document justificatif (attestation d’assurance ou attestation provisoire valable 1 mois)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00026",
+                      "• un certificat d’assurance (ou certificat provisoire valable 1 mois).",
+                    ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("A) Attestation d’assurance"),
-              const _Paragraph(
-                "Ce document doit être présenté lors de tout contrôle des services de police.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00027",
+                  "A) Attestation d’assurance",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00028",
+                  "Ce document doit être présenté lors de tout contrôle des services de police.",
+                ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "La non-présentation ("),
-                _boldSpan("NATINF 6168"),
-                const TextSpan(
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00029",
+                    "La non-présentation (",
+                  ),
+                ),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00030",
+                    "NATINF 6168",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      ") entraîne l’obligation d’en justifier la possession dans les 5 jours "
-                      "(délai porté à 12 jours dans le cadre du PVe). ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                        "f00031",
+                        ") entraîne l’obligation d’en justifier la possession dans les 5 jours ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                        "f00032",
+                        "(délai porté à 12 jours dans le cadre du PVe). ",
+                      ),
                 ),
                 const TextSpan(text: "Voir "),
-                _boldSpan("NATINF 6164"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00033",
+                    "NATINF 6164",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En cas de non justification dans les délais, seule la contravention NATINF 6164 est maintenue.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00034",
+                      "En cas de non justification dans les délais, seule la contravention NATINF 6164 est maintenue.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
-              const _SubTitle("B) Certificat d’assurance"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Un certificat d’assurance en cours de validité doit être apposé sur les véhicules à moteur non immatriculés (voir ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00035",
+                  "B) Certificat d’assurance",
                 ),
-                _boldSpan("NATINF 6166"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00036",
+                    "Un certificat d’assurance en cours de validité doit être apposé sur les véhicules à moteur non immatriculés (voir ",
+                  ),
+                ),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00037",
+                    "NATINF 6166",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
             ],
@@ -239,38 +408,84 @@ class AssuranceObligatoirePage extends StatelessWidget {
 
           // Véhicules étrangers
           _ConditionCard(
-            title: "IV — Assurance des véhicules étrangers",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+              "f00038",
+              "IV — Assurance des véhicules étrangers",
+            ),
             cardColor: cardEtranger,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 211-14-0"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00039",
+                    "R. 211-14-0",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 211-14-1"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00040",
+                    "R. 211-14-1",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 211-22"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00041",
+                    "R. 211-22",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 211-23 du Code des assurances"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00042",
+                    "R. 211-23 du Code des assurances",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Le conducteur d’un véhicule ayant son stationnement habituel à l’étranger doit être en mesure de produire, "
-                "lors d’un contrôle de police ne visant pas exclusivement l’assurance :",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00043",
+                      "Le conducteur d’un véhicule ayant son stationnement habituel à l’étranger doit être en mesure de produire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00044",
+                      "lors d’un contrôle de police ne visant pas exclusivement l’assurance :",
+                    ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Une carte internationale d’assurance (« carte verte ») en cours de validité.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00045",
+                  "Une carte internationale d’assurance (« carte verte ») en cours de validité.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Ou une attestation justifiant la souscription d’une assurance spéciale dite « assurance frontière ».",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00046",
+                  "Ou une attestation justifiant la souscription d’une assurance spéciale dite « assurance frontière ».",
+                ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                "À défaut, il doit prouver par tout autre moyen que son véhicule est assuré.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00047",
+                  "À défaut, il doit prouver par tout autre moyen que son véhicule est assuré.",
+                ),
               ),
             ],
           ),
@@ -279,71 +494,200 @@ class AssuranceObligatoirePage extends StatelessWidget {
 
           // Délit : défaut d’assurance
           _ConditionCard(
-            title: "V — Défaut d’assurance (DÉLIT)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+              "f00048",
+              "V — Défaut d’assurance (DÉLIT)",
+            ),
             cardColor: cardDelit,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _boldSpan("NATINF 6163"),
-                const TextSpan(
-                  text:
-                      " — Circulation avec un véhicule terrestre à moteur sans assurance.",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00049",
+                    "NATINF 6163",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00050",
+                    " — Circulation avec un véhicule terrestre à moteur sans assurance.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle("Bases légales (constatation / répression)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00051",
+                  "Bases légales (constatation / répression)",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Prévu par "),
-                _lawSpan("L. 211-1"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00052",
+                    "Prévu par ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00053",
+                    "L. 211-1",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("L. 211-26 du Code des assurances"),
-                const TextSpan(text: ", ainsi que "),
-                _lawSpan("L. 324-1"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00054",
+                    "L. 211-26 du Code des assurances",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00055",
+                    ", ainsi que ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00056",
+                    "L. 324-1",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("L. 324-2 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00057",
+                    "L. 324-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Réprimé par "),
-                _lawSpan("L. 211-26"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00058",
+                    "Réprimé par ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00059",
+                    "L. 211-26",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("L. 211-27 du Code des assurances"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00060",
+                    "L. 211-27 du Code des assurances",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("L. 324-2 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00061",
+                    "L. 324-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("Mesures / contrôles associés"),
-              const _BulletPoint(
-                text: "A.F.D. ou P.V.O. (si cas d’exclusion de l’AFD ou EDPM).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00062",
+                  "Mesures / contrôles associés",
+                ),
               ),
-              const _BulletPoint(text: "Contrôle alcoolémie : obligatoire."),
-              const _BulletPoint(text: "Dépistage stupéfiants : facultatif."),
-              const _BulletPoint(text: "Immobilisation possible."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00063",
+                  "A.F.D. ou P.V.O. (si cas d’exclusion de l’AFD ou EDPM).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00064",
+                  "Contrôle alcoolémie : obligatoire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00065",
+                  "Dépistage stupéfiants : facultatif.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00066",
+                  "Immobilisation possible.",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "MEF possible avec accord du P.R. (cf "),
-                _lawSpan("L. 325-1-1 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00067",
+                    "MEF possible avec accord du P.R. (cf ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                    "f00068",
+                    "L. 325-1-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 12),
-              const _NotaBox(
-                title: "Attention",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                  "f00069",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Il s’agit d’un délit qui n’est pas puni d’une peine d’emprisonnement : pas de coercition.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00070",
+                      "Il s’agit d’un délit qui n’est pas puni d’une peine d’emprisonnement : pas de coercition.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "Rappel",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/assurance_obligatoire_page.dart",
+                      "f00071",
+                      "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    ),
                   ),
                 ],
               ),

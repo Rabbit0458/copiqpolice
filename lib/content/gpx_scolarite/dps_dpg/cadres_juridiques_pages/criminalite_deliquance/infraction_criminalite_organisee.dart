@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class InfractionCriminaliteOrganiseePage extends StatelessWidget {
   const InfractionCriminaliteOrganiseePage({super.key});
@@ -24,388 +25,806 @@ class InfractionCriminaliteOrganiseePage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Infractions – Criminalité organisée')),
+      appBar: AppBar(
+        title: Text(
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+            "f00001",
+            'Infractions – Criminalité organisée',
+          ),
+        ),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const _SubTitle(
-                'Les infractions relevant de la criminalité et délinquance organisées',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                  "f00002",
+                  'Les infractions relevant de la criminalité et délinquance organisées',
+                ),
               ),
               const SizedBox(height: 4),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'La loi distingue trois catégories d\'infractions relevant de la '
-                      'délinquance et de la criminalité organisées, en fonction de leur gravité. '
-                      'Cette distinction a donné lieu à la rédaction des ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00003",
+                        'La loi distingue trois catégories d\'infractions relevant de la ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00004",
+                        'délinquance et de la criminalité organisées, en fonction de leur gravité. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00005",
+                        'Cette distinction a donné lieu à la rédaction des ',
+                      ),
                 ),
-                _lawArticle('articles 706-73'),
+                _lawArticle(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                    "f00006",
+                    'articles 706-73',
+                  ),
+                ),
                 const TextSpan(text: ' , '),
                 _lawArticle('706-73-1'),
                 const TextSpan(text: ' et '),
                 _lawArticle('706-74'),
-                const TextSpan(text: ' du Code de procédure pénale.'),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                    "f00007",
+                    ' du Code de procédure pénale.',
+                  ),
+                ),
               ]),
               const SizedBox(height: 16),
 
               // 1.1
               _ConditionCard(
-                title:
-                    '1.1 – Les infractions listées à l’article 706-73 du Code de procédure pénale',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                  "f00008",
+                  '1.1 – Les infractions listées à l’article 706-73 du Code de procédure pénale',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(text: 'L’article '),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00009",
+                        'L’article ',
+                      ),
+                    ),
                     _lawArticle('706-73'),
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          ' du Code de procédure pénale énumère les formes les plus graves '
-                          'et complexes de la criminalité et de la délinquance organisées. '
-                          'Les nouveaux moyens d\'investigation et les règles procédurales '
-                          'dérogatoires sont applicables à l’ensemble des infractions listées dans cet article :',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                            "f00010",
+                            ' du Code de procédure pénale énumère les formes les plus graves ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                            "f00011",
+                            'et complexes de la criminalité et de la délinquance organisées. ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                            "f00012",
+                            'Les nouveaux moyens d\'investigation et les règles procédurales ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                            "f00013",
+                            'dérogatoires sont applicables à l’ensemble des infractions listées dans cet article :',
+                          ),
                     ),
                   ]),
                   const SizedBox(height: 10),
 
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '1° Crime de meurtre commis en bande organisée prévu par le 8° de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00014",
+                          '1° Crime de meurtre commis en bande organisée prévu par le 8° de l\'article ',
+                        ),
                       ),
                       _lawArticle('221-4'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00015",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '1° bis Crime de meurtre commis en concours, au sens de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00016",
+                          '1° bis Crime de meurtre commis en concours, au sens de l\'article ',
+                        ),
                       ),
                       _lawArticle('132-2'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, avec un ou plusieurs autres meurtres ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00017",
+                          ' du Code pénal, avec un ou plusieurs autres meurtres ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '2° Crime de tortures et d\'actes de barbarie commis en bande organisée prévu par l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00018",
+                          '2° Crime de tortures et d\'actes de barbarie commis en bande organisée prévu par l\'article ',
+                        ),
                       ),
                       _lawArticle('222-4'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00019",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '2° bis Crime de viol commis en concours, au sens de l’article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00020",
+                          '2° bis Crime de viol commis en concours, au sens de l’article ',
+                        ),
                       ),
                       _lawArticle('132-2'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, avec un ou plusieurs autres viols commis sur d’autres victimes ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00021",
+                          ' du Code pénal, avec un ou plusieurs autres viols commis sur d’autres victimes ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '3° Crimes et délits de trafic de stupéfiants prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00022",
+                          '3° Crimes et délits de trafic de stupéfiants prévus par les articles ',
+                        ),
                       ),
-                      _lawArticle('222-34 à 222-40'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00023",
+                          '222-34 à 222-40',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00024",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '4° Crimes et délits d\'enlèvement et de séquestration commis en bande organisée prévus par l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00025",
+                          '4° Crimes et délits d\'enlèvement et de séquestration commis en bande organisée prévus par l\'article ',
+                        ),
                       ),
                       _lawArticle('224-5-2'),
-                      const TextSpan(text: ' du Code pénal ;'),
-                    ],
-                  ),
-                  _LawBullet(
-                    spans: [
-                      const TextSpan(
-                        text:
-                            '5° Crimes et délits aggravés de traite des êtres humains prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00026",
+                          ' du Code pénal ;',
+                        ),
                       ),
-                      _lawArticle('225-4-2 à 225-4-7'),
-                      const TextSpan(text: ' du Code pénal ;'),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '6° Crimes et délits aggravés de proxénétisme prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00027",
+                          '5° Crimes et délits aggravés de traite des êtres humains prévus par les articles ',
+                        ),
                       ),
-                      _lawArticle('225-7 à 225-12'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00028",
+                          '225-4-2 à 225-4-7',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00029",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '7° Crime de vol commis en bande organisée prévu par l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00030",
+                          '6° Crimes et délits aggravés de proxénétisme prévus par les articles ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00031",
+                          '225-7 à 225-12',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00032",
+                          ' du Code pénal ;',
+                        ),
+                      ),
+                    ],
+                  ),
+                  _LawBullet(
+                    spans: [
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00033",
+                          '7° Crime de vol commis en bande organisée prévu par l\'article ',
+                        ),
                       ),
                       _lawArticle('311-9'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00034",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '8° Crimes aggravés d\'extorsion prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00035",
+                          '8° Crimes aggravés d\'extorsion prévus par les articles ',
+                        ),
                       ),
                       _lawArticle('312-6'),
                       const TextSpan(text: ' et '),
                       _lawArticle('312-7'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00036",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '9° Crime de destruction, dégradation et détérioration d\'un bien commis en bande organisée prévu par l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00037",
+                          '9° Crime de destruction, dégradation et détérioration d\'un bien commis en bande organisée prévu par l\'article ',
+                        ),
                       ),
                       _lawArticle('322-8'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00038",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '10° Crimes en matière de fausse monnaie prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00039",
+                          '10° Crimes en matière de fausse monnaie prévus par les articles ',
+                        ),
                       ),
                       _lawArticle('442-1'),
                       const TextSpan(text: ' et '),
                       _lawArticle('442-2'),
-                      const TextSpan(text: ' du Code pénal ;'),
-                    ],
-                  ),
-                  _LawBullet(
-                    spans: [
-                      const TextSpan(
-                        text:
-                            '11° Crimes et délits constituant des actes de terrorisme prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00040",
+                          ' du Code pénal ;',
+                        ),
                       ),
-                      _lawArticle('421-1 à 421-6'),
-                      const TextSpan(text: ' du Code pénal ;'),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '11° bis Crimes portant atteinte aux intérêts fondamentaux de la nation prévus au titre Iᵉʳ du livre IV du Code pénal et crimes mentionnés à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00041",
+                          '11° Crimes et délits constituant des actes de terrorisme prévus par les articles ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00042",
+                          '421-1 à 421-6',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00043",
+                          ' du Code pénal ;',
+                        ),
+                      ),
+                    ],
+                  ),
+                  _LawBullet(
+                    spans: [
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00044",
+                          '11° bis Crimes portant atteinte aux intérêts fondamentaux de la nation prévus au titre Iᵉʳ du livre IV du Code pénal et crimes mentionnés à l\'article ',
+                        ),
                       ),
                       _lawArticle('411-12'),
-                      const TextSpan(
-                        text:
-                            ' du même code, commis dans le but de servir les intérêts d\'une puissance étrangère ou d\'une entreprise ou d\'une organisation étrangère ou sous contrôle étranger ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00045",
+                          ' du même code, commis dans le but de servir les intérêts d\'une puissance étrangère ou d\'une entreprise ou d\'une organisation étrangère ou sous contrôle étranger ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '12° Délits en matière d\'armes et de produits explosifs prévus aux articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00046",
+                          '12° Délits en matière d\'armes et de produits explosifs prévus aux articles ',
+                        ),
                       ),
-                      _lawArticle('222-52 à 222-54'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00047",
+                          '222-52 à 222-54',
+                        ),
+                      ),
                       const TextSpan(text: ', '),
-                      _lawArticle('222-56 à 222-59'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00048",
+                          '222-56 à 222-59',
+                        ),
+                      ),
                       const TextSpan(text: ', '),
                       _lawArticle('322-6-1'),
                       const TextSpan(text: ' et '),
                       _lawArticle('322-11-1'),
-                      const TextSpan(text: ' du Code pénal, aux articles '),
-                      _lawArticle('L. 2339-2'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 2339-3'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 2339-10'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 2341-4'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 2353-4'),
-                      const TextSpan(text: ' et '),
-                      _lawArticle('L. 2353-5'),
-                      const TextSpan(
-                        text: ' du Code de la défense ainsi qu\'aux articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00049",
+                          ' du Code pénal, aux articles ',
+                        ),
                       ),
-                      _lawArticle('L. 317-2'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00050",
+                          'L. 2339-2',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00051",
+                          'L. 2339-3',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00052",
+                          'L. 2339-10',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00053",
+                          'L. 2341-4',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00054",
+                          'L. 2353-4',
+                        ),
+                      ),
                       const TextSpan(text: ' et '),
-                      _lawArticle('L. 317-7'),
-                      const TextSpan(
-                        text: ' du Code de la sécurité intérieure ;',
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00055",
+                          'L. 2353-5',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00056",
+                          ' du Code de la défense ainsi qu\'aux articles ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00057",
+                          'L. 317-2',
+                        ),
+                      ),
+                      const TextSpan(text: ' et '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00058",
+                          'L. 317-7',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00059",
+                          ' du Code de la sécurité intérieure ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '13° Crimes et délits d\'aide à l\'entrée, à la circulation et au séjour irréguliers d\'un étranger en France commis en bande organisée prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00060",
+                          '13° Crimes et délits d\'aide à l\'entrée, à la circulation et au séjour irréguliers d\'un étranger en France commis en bande organisée prévus par les articles ',
+                        ),
                       ),
-                      _lawArticle('L. 823-1'),
-                      const TextSpan(text: ' et '),
-                      _lawArticle('L. 823-2'),
-                      const TextSpan(
-                        text:
-                            ' du Code de l\'entrée et du séjour des étrangers et du droit d\'asile et crime de direction ou d\'organisation d\'un groupement ayant pour objet la commission de ces infractions prévu aux articles ',
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00061",
+                          'L. 823-1',
+                        ),
                       ),
-                      _lawArticle('L. 823-3'),
                       const TextSpan(text: ' et '),
-                      _lawArticle('L. 823-3-1'),
-                      const TextSpan(text: ' du même code ;'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00062",
+                          'L. 823-2',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00063",
+                          ' du Code de l\'entrée et du séjour des étrangers et du droit d\'asile et crime de direction ou d\'organisation d\'un groupement ayant pour objet la commission de ces infractions prévu aux articles ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00064",
+                          'L. 823-3',
+                        ),
+                      ),
+                      const TextSpan(text: ' et '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00065",
+                          'L. 823-3-1',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00066",
+                          ' du même code ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '14° Délits de blanchiment prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00067",
+                          '14° Délits de blanchiment prévus par les articles ',
+                        ),
                       ),
                       _lawArticle('324-1'),
                       const TextSpan(text: ' et '),
                       _lawArticle('324-2'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, ou de recel prévus par les articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00068",
+                          ' du Code pénal, ou de recel prévus par les articles ',
+                        ),
                       ),
                       _lawArticle('321-1'),
                       const TextSpan(text: ' et '),
                       _lawArticle('321-2'),
-                      const TextSpan(
-                        text:
-                            ' du même code, du produit, des revenus ou des choses provenant des infractions mentionnées aux 1° à 13° ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00069",
+                          ' du même code, du produit, des revenus ou des choses provenant des infractions mentionnées aux 1° à 13° ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '15° Crimes ou délits d\'association de malfaiteurs prévus par l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00070",
+                          '15° Crimes ou délits d\'association de malfaiteurs prévus par l\'article ',
+                        ),
                       ),
                       _lawArticle('450-1'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, lorsqu\'ils ont pour objet la préparation de l\'une des infractions mentionnées aux 1° à 14° et 17° ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00071",
+                          ' du Code pénal, lorsqu\'ils ont pour objet la préparation de l\'une des infractions mentionnées aux 1° à 14° et 17° ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '16° Délit de non-justification de ressources correspondant au train de vie, prévu par l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00072",
+                          '16° Délit de non-justification de ressources correspondant au train de vie, prévu par l\'article ',
+                        ),
                       ),
                       _lawArticle('321-6-1'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, lorsqu\'il est en relation avec l\'une des infractions mentionnées aux 1° à 15° et 17° ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00073",
+                          ' du Code pénal, lorsqu\'il est en relation avec l\'une des infractions mentionnées aux 1° à 15° et 17° ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '17° Crime de détournement d\'aéronef, de navire ou de tout autre moyen de transport commis en bande organisée prévu par l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00074",
+                          '17° Crime de détournement d\'aéronef, de navire ou de tout autre moyen de transport commis en bande organisée prévu par l\'article ',
+                        ),
                       ),
                       _lawArticle('224-6-1'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00075",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '18° Crimes et délits punis de dix ans d\'emprisonnement, contribuant à la prolifération des armes de destruction massive et de leurs vecteurs entrant dans le champ d\'application de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00076",
+                          '18° Crimes et délits punis de dix ans d\'emprisonnement, contribuant à la prolifération des armes de destruction massive et de leurs vecteurs entrant dans le champ d\'application de l\'article ',
+                        ),
                       ),
                       _lawArticle('706-167'),
-                      const TextSpan(text: ' du Code de procédure pénale ;'),
-                    ],
-                  ),
-                  _LawBullet(
-                    spans: [
-                      const TextSpan(
-                        text:
-                            '19° Délit d\'exploitation d\'une mine ou de disposition d\'une substance concessible sans titre d\'exploitation ou autorisation, accompagné d\'atteintes à l\'environnement, commis en bande organisée, prévu à l\'article ',
-                      ),
-                      _lawArticle('L. 512-2'),
-                      const TextSpan(
-                        text:
-                            ' du Code minier, lorsqu\'il est connexe avec l\'une des infractions mentionnées aux 1° à 17° du présent article ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00077",
+                          ' du Code de procédure pénale ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '20° Délits mentionnés au dernier alinéa de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00078",
+                          '19° Délit d\'exploitation d\'une mine ou de disposition d\'une substance concessible sans titre d\'exploitation ou autorisation, accompagné d\'atteintes à l\'environnement, commis en bande organisée, prévu à l\'article ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00079",
+                          'L. 512-2',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00080",
+                          ' du Code minier, lorsqu\'il est connexe avec l\'une des infractions mentionnées aux 1° à 17° du présent article ;',
+                        ),
+                      ),
+                    ],
+                  ),
+                  _LawBullet(
+                    spans: [
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00081",
+                          '20° Délits mentionnés au dernier alinéa de l\'article ',
+                        ),
                       ),
                       _lawArticle('223-15-2'),
-                      const TextSpan(text: ' et au 2° du III de l\'article '),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00082",
+                          ' et au 2° du III de l\'article ',
+                        ),
+                      ),
                       _lawArticle('223-15-3'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00083",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '21° Délits prévus au dernier alinéa de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00084",
+                          '21° Délits prévus au dernier alinéa de l\'article ',
+                        ),
                       ),
                       _lawArticle('414'),
-                      const TextSpan(
-                        text:
-                            ' du Code des douanes, lorsqu\'ils sont commis en bande organisée (contrebande, importation ou exportation portant sur des marchandises dangereuses pour la santé, la moralité ou la sécurité publiques, dont la liste est fixée par arrêté du ministre chargé des douanes).',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00085",
+                          ' du Code des douanes, lorsqu\'ils sont commis en bande organisée (contrebande, importation ou exportation portant sur des marchandises dangereuses pour la santé, la moralité ou la sécurité publiques, dont la liste est fixée par arrêté du ministre chargé des douanes).',
+                        ),
                       ),
                     ],
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
                     bodySpans: [
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            'La décision n° 2004-492 DC du Conseil constitutionnel, rendue le 2 mars 2004, '
-                            'apporte des précisions importantes sur les infractions de délinquance et de criminalité organisées retenues par la loi. '
-                            'Le vol commis en bande organisée ne peut faire l\'objet de mesures dérogatoires en matière de procédure pénale que s\'il présente des éléments de gravité suffisants : '
-                            'une atteinte grave à la sécurité, à la dignité ou à la vie des personnes doit être caractérisée. '
-                            'Il appartient à l\'autorité judiciaire d\'apprécier l\'existence de tels éléments de gravité. ',
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                              "f00086",
+                              'La décision n° 2004-492 DC du Conseil constitutionnel, rendue le 2 mars 2004, ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                              "f00087",
+                              'apporte des précisions importantes sur les infractions de délinquance et de criminalité organisées retenues par la loi. ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                              "f00088",
+                              'Le vol commis en bande organisée ne peut faire l\'objet de mesures dérogatoires en matière de procédure pénale que s\'il présente des éléments de gravité suffisants : ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                              "f00089",
+                              'une atteinte grave à la sécurité, à la dignité ou à la vie des personnes doit être caractérisée. ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                              "f00090",
+                              'Il appartient à l\'autorité judiciaire d\'apprécier l\'existence de tels éléments de gravité. ',
+                            ),
                       ),
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            'Le Conseil constitutionnel a également précisé que le délit d\'aide au séjour irrégulier d\'un étranger en France, commis en bande organisée, ne saurait concerner les organisations humanitaires d\'aide aux étrangers. '
-                            'De plus, s\'applique à la qualification d\'une telle infraction le principe énoncé à l\'article ',
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                              "f00091",
+                              'Le Conseil constitutionnel a également précisé que le délit d\'aide au séjour irrégulier d\'un étranger en France, commis en bande organisée, ne saurait concerner les organisations humanitaires d\'aide aux étrangers. ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                              "f00092",
+                              'De plus, s\'applique à la qualification d\'une telle infraction le principe énoncé à l\'article ',
+                            ),
                       ),
                       _lawArticle('121-3'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, selon lequel il n\'y a point de délit sans intention de le commettre.',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00093",
+                          ' du Code pénal, selon lequel il n\'y a point de délit sans intention de le commettre.',
+                        ),
                       ),
                     ],
                   ),
@@ -416,269 +835,585 @@ class InfractionCriminaliteOrganiseePage extends StatelessWidget {
 
               // 1.2
               _ConditionCard(
-                title:
-                    '1.2 – Les infractions listées à l’article 706-73-1 du Code de procédure pénale',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                  "f00094",
+                  '1.2 – Les infractions listées à l’article 706-73-1 du Code de procédure pénale',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(text: 'L’article '),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00095",
+                        'L’article ',
+                      ),
+                    ),
                     _lawArticle('706-73-1'),
-                    const TextSpan(
-                      text:
-                          ' du Code de procédure pénale réglemente un régime procédural spécifique pour les infractions suivantes :',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00096",
+                        ' du Code de procédure pénale réglemente un régime procédural spécifique pour les infractions suivantes :',
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
 
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '1° Délit d\'escroquerie en bande organisée, prévu au dernier alinéa de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00097",
+                          '1° Délit d\'escroquerie en bande organisée, prévu au dernier alinéa de l\'article ',
+                        ),
                       ),
                       _lawArticle('313-2'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, délit d\'atteinte aux systèmes de traitement automatisé de données commis en bande organisée, prévu à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00098",
+                          ' du Code pénal, délit d\'atteinte aux systèmes de traitement automatisé de données commis en bande organisée, prévu à l\'article ',
+                        ),
                       ),
                       _lawArticle('323-4-1'),
-                      const TextSpan(
-                        text:
-                            ' du même code, et délit d\'évasion commis en bande organisée prévu au second alinéa de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00099",
+                          ' du même code, et délit d\'évasion commis en bande organisée prévu au second alinéa de l\'article ',
+                        ),
                       ),
                       _lawArticle('434-30'),
-                      const TextSpan(text: ' du même code ;'),
-                    ],
-                  ),
-                  _LawBullet(
-                    spans: [
-                      const TextSpan(
-                        text:
-                            '2° Délits de dissimulation d\'activités ou de salariés, de recours aux services d\'une personne exerçant un travail dissimulé, de marchandage de main-d\'œuvre, de prêt illicite de main-d\'œuvre ou d\'emploi d\'étranger sans titre de travail, commis en bande organisée, prévus aux 1° et 3° de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00100",
+                          ' du même code ;',
+                        ),
                       ),
-                      _lawArticle('L. 8221-1'),
-                      const TextSpan(text: ' et aux articles '),
-                      _lawArticle('L. 8221-3'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8221-5'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8224-1'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8224-2'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8231-1'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8234-1'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8234-2'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8241-1'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8243-1'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8243-2'),
-                      const TextSpan(text: ', '),
-                      _lawArticle('L. 8251-1'),
-                      const TextSpan(text: ' et '),
-                      _lawArticle('L. 8256-2'),
-                      const TextSpan(text: ' du Code du travail ;'),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text: '3° Délits de blanchiment, prévus à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00101",
+                          '2° Délits de dissimulation d\'activités ou de salariés, de recours aux services d\'une personne exerçant un travail dissimulé, de marchandage de main-d\'œuvre, de prêt illicite de main-d\'œuvre ou d\'emploi d\'étranger sans titre de travail, commis en bande organisée, prévus aux 1° et 3° de l\'article ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00102",
+                          'L. 8221-1',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00103",
+                          ' et aux articles ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00104",
+                          'L. 8221-3',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00105",
+                          'L. 8221-5',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00106",
+                          'L. 8224-1',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00107",
+                          'L. 8224-2',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00108",
+                          'L. 8231-1',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00109",
+                          'L. 8234-1',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00110",
+                          'L. 8234-2',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00111",
+                          'L. 8241-1',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00112",
+                          'L. 8243-1',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00113",
+                          'L. 8243-2',
+                        ),
+                      ),
+                      const TextSpan(text: ', '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00114",
+                          'L. 8251-1',
+                        ),
+                      ),
+                      const TextSpan(text: ' et '),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00115",
+                          'L. 8256-2',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00116",
+                          ' du Code du travail ;',
+                        ),
+                      ),
+                    ],
+                  ),
+                  _LawBullet(
+                    spans: [
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00117",
+                          '3° Délits de blanchiment, prévus à l\'article ',
+                        ),
                       ),
                       _lawArticle('324-1'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, ou de recel, prévus aux articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00118",
+                          ' du Code pénal, ou de recel, prévus aux articles ',
+                        ),
                       ),
                       _lawArticle('321-1'),
                       const TextSpan(text: ' et '),
                       _lawArticle('321-2'),
-                      const TextSpan(
-                        text:
-                            ' du même code, du produit, des revenus ou des choses provenant des infractions mentionnées aux 1° et 2° du présent article ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00119",
+                          ' du même code, du produit, des revenus ou des choses provenant des infractions mentionnées aux 1° et 2° du présent article ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '3° bis Délits de blanchiment prévus à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00120",
+                          '3° bis Délits de blanchiment prévus à l\'article ',
+                        ),
                       ),
                       _lawArticle('324-2'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, à l\'exception de ceux mentionnés au 14° de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00121",
+                          ' du Code pénal, à l\'exception de ceux mentionnés au 14° de l\'article ',
+                        ),
                       ),
                       _lawArticle('706-73'),
-                      const TextSpan(text: ' du Code de procédure pénale ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00122",
+                          ' du Code de procédure pénale ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '4° Crimes ou délits d\'association de malfaiteurs, prévus à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00123",
+                          '4° Crimes ou délits d\'association de malfaiteurs, prévus à l\'article ',
+                        ),
                       ),
                       _lawArticle('450-1'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, lorsqu\'ils ont pour objet la préparation de l\'une des infractions mentionnées aux 1° à 3° du présent article ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00124",
+                          ' du Code pénal, lorsqu\'ils ont pour objet la préparation de l\'une des infractions mentionnées aux 1° à 3° du présent article ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '4° bis Délit de concours à une organisation criminelle prévu à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00125",
+                          '4° bis Délit de concours à une organisation criminelle prévu à l\'article ',
+                        ),
                       ),
                       _lawArticle('450-1-1'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00126",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '5° Délit de non-justification de ressources correspondant au train de vie, prévu à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00127",
+                          '5° Délit de non-justification de ressources correspondant au train de vie, prévu à l\'article ',
+                        ),
                       ),
                       _lawArticle('321-6-1'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, lorsqu\'il est en relation avec l\'une des infractions mentionnées aux 1° à 4° du présent article ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00128",
+                          ' du Code pénal, lorsqu\'il est en relation avec l\'une des infractions mentionnées aux 1° à 4° du présent article ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '6° Délits d\'importation, d\'exportation, de transit, de transport, de détention, de vente, d\'acquisition ou d\'échange d\'un bien culturel prévus à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00129",
+                          '6° Délits d\'importation, d\'exportation, de transit, de transport, de détention, de vente, d\'acquisition ou d\'échange d\'un bien culturel prévus à l\'article ',
+                        ),
                       ),
                       _lawArticle('322-3-2'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00130",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '7° Délits d\'atteintes au patrimoine naturel commis en bande organisée, prévus à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00131",
+                          '7° Délits d\'atteintes au patrimoine naturel commis en bande organisée, prévus à l\'article ',
+                        ),
                       ),
-                      _lawArticle('L. 415-6'),
-                      const TextSpan(text: ' du Code de l\'environnement ;'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00132",
+                          'L. 415-6',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00133",
+                          ' du Code de l\'environnement ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '8° Délits de trafic de produits phytopharmaceutiques commis en bande organisée, prévus au 3° de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00134",
+                          '8° Délits de trafic de produits phytopharmaceutiques commis en bande organisée, prévus au 3° de l\'article ',
+                        ),
                       ),
-                      _lawArticle('L. 253-17-1'),
-                      const TextSpan(text: ', au II des articles '),
-                      _lawArticle('L. 253-15'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00135",
+                          'L. 253-17-1',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00136",
+                          ', au II des articles ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00137",
+                          'L. 253-15',
+                        ),
+                      ),
                       const TextSpan(text: ' et '),
-                      _lawArticle('L. 253-16'),
-                      const TextSpan(text: ' et au III de l\'article '),
-                      _lawArticle('L. 254-12'),
-                      const TextSpan(
-                        text: ' du Code rural et de la pêche maritime ;',
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00138",
+                          'L. 253-16',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00139",
+                          ' et au III de l\'article ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00140",
+                          'L. 254-12',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00141",
+                          ' du Code rural et de la pêche maritime ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '9° Délits relatifs aux déchets mentionnés au I de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00142",
+                          '9° Délits relatifs aux déchets mentionnés au I de l\'article ',
+                        ),
                       ),
-                      _lawArticle('L. 541-46'),
-                      const TextSpan(
-                        text:
-                            ' du Code de l\'environnement commis en bande organisée, prévus au VII du même article ;',
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00143",
+                          'L. 541-46',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00144",
+                          ' du Code de l\'environnement commis en bande organisée, prévus au VII du même article ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '10° Délit de participation à la tenue d\'une maison de jeux d\'argent et de hasard commis en bande organisée, prévu au premier alinéa de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00145",
+                          '10° Délit de participation à la tenue d\'une maison de jeux d\'argent et de hasard commis en bande organisée, prévu au premier alinéa de l\'article ',
+                        ),
                       ),
-                      _lawArticle('L. 324-1'),
-                      const TextSpan(
-                        text:
-                            ' du Code de la sécurité intérieure, et délits d\'importation, de fabrication, de détention, de mise à disposition de tiers, d\'installation et d\'exploitation d\'appareil de jeux d\'argent et de hasard ou d\'adresse commis en bande organisée, prévus au premier alinéa de l\'article ',
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00146",
+                          'L. 324-1',
+                        ),
                       ),
-                      _lawArticle('L. 324-4'),
-                      const TextSpan(text: ' du même code ;'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00147",
+                          ' du Code de la sécurité intérieure, et délits d\'importation, de fabrication, de détention, de mise à disposition de tiers, d\'installation et d\'exploitation d\'appareil de jeux d\'argent et de hasard ou d\'adresse commis en bande organisée, prévus au premier alinéa de l\'article ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00148",
+                          'L. 324-4',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00149",
+                          ' du même code ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '11° Délits portant atteinte aux intérêts fondamentaux de la nation prévus aux articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00150",
+                          '11° Délits portant atteinte aux intérêts fondamentaux de la nation prévus aux articles ',
+                        ),
                       ),
                       _lawArticle('411-5'),
                       const TextSpan(text: ', '),
                       _lawArticle('411-7'),
                       const TextSpan(text: ' et '),
                       _lawArticle('411-8'),
-                      const TextSpan(
-                        text: ', aux deux premiers alinéas de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00151",
+                          ', aux deux premiers alinéas de l\'article ',
+                        ),
                       ),
                       _lawArticle('412-2'),
-                      const TextSpan(text: ', à l\'article '),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00152",
+                          ', à l\'article ',
+                        ),
+                      ),
                       _lawArticle('413-1'),
-                      const TextSpan(
-                        text: ' et au troisième alinéa de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00153",
+                          ' et au troisième alinéa de l\'article ',
+                        ),
                       ),
                       _lawArticle('413-13'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal, ainsi que les délits mentionnés à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00154",
+                          ' du Code pénal, ainsi que les délits mentionnés à l\'article ',
+                        ),
                       ),
                       _lawArticle('411-12'),
-                      const TextSpan(
-                        text:
-                            ' du même code, commis dans le but de servir les intérêts d\'une puissance étrangère ou d\'une entreprise ou d\'une organisation étrangère ou sous contrôle étranger, lorsque cette circonstance porte la durée de la peine d\'emprisonnement à cinq ans au moins ;',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00155",
+                          ' du même code, commis dans le but de servir les intérêts d\'une puissance étrangère ou d\'une entreprise ou d\'une organisation étrangère ou sous contrôle étranger, lorsque cette circonstance porte la durée de la peine d\'emprisonnement à cinq ans au moins ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '12° Délits d\'administration d\'une plateforme en ligne pour permettre la cession de produits, de contenus ou de services dont la cession, l\'offre, l\'acquisition ou la détention sont manifestement illicites et délits d\'intermédiation ou de séquestre ayant pour objet unique ou principal de mettre en œuvre, de dissimuler ou de faciliter ces opérations, prévus à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00156",
+                          '12° Délits d\'administration d\'une plateforme en ligne pour permettre la cession de produits, de contenus ou de services dont la cession, l\'offre, l\'acquisition ou la détention sont manifestement illicites et délits d\'intermédiation ou de séquestre ayant pour objet unique ou principal de mettre en œuvre, de dissimuler ou de faciliter ces opérations, prévus à l\'article ',
+                        ),
                       ),
                       _lawArticle('323-3-2'),
-                      const TextSpan(text: ' du Code pénal ;'),
-                    ],
-                  ),
-                  _LawBullet(
-                    spans: [
-                      const TextSpan(
-                        text:
-                            '13° Délit de mise à disposition d\'instruments de facilitation de la fraude sociale en bande organisée prévu à l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00157",
+                          ' du Code pénal ;',
+                        ),
                       ),
-                      _lawArticle('L. 114-13'),
-                      const TextSpan(text: ' du Code de la sécurité sociale ;'),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '14° Crimes et délits de corruption d\'agent public et de trafic d\'influence, prévus aux articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00158",
+                          '13° Délit de mise à disposition d\'instruments de facilitation de la fraude sociale en bande organisée prévu à l\'article ',
+                        ),
+                      ),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00159",
+                          'L. 114-13',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00160",
+                          ' du Code de la sécurité sociale ;',
+                        ),
+                      ),
+                    ],
+                  ),
+                  _LawBullet(
+                    spans: [
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00161",
+                          '14° Crimes et délits de corruption d\'agent public et de trafic d\'influence, prévus aux articles ',
+                        ),
                       ),
                       _lawArticle('432-11'),
                       const TextSpan(text: ', '),
@@ -690,29 +1425,78 @@ class InfractionCriminaliteOrganiseePage extends StatelessWidget {
                       const TextSpan(text: ', '),
                       _lawArticle('434-9-1'),
                       const TextSpan(text: ', '),
-                      _lawArticle('435-1 à 435-4'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00162",
+                          '435-1 à 435-4',
+                        ),
+                      ),
                       const TextSpan(text: ' et '),
-                      _lawArticle('435-7 à 435-10'),
-                      const TextSpan(text: ' du Code pénal ;'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00163",
+                          '435-7 à 435-10',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00164",
+                          ' du Code pénal ;',
+                        ),
+                      ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '15° Délits de corruption commis en bande organisée, prévus aux articles ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00165",
+                          '15° Délits de corruption commis en bande organisée, prévus aux articles ',
+                        ),
                       ),
-                      _lawArticle('445-1 à 445-2-2'),
-                      const TextSpan(text: ' du Code pénal.'),
+                      _lawArticle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00166",
+                          '445-1 à 445-2-2',
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00167",
+                          ' du Code pénal.',
+                        ),
+                      ),
                     ],
                   ),
 
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    'Ces différentes infractions bénéficient des règles dérogatoires applicables '
-                    'en matière de criminalité organisée, à l\'exclusion de celles figurant à '
-                    'l’article 706-88 du Code de procédure pénale relatives à la prolongation '
-                    'exceptionnelle de la garde à vue de quatre jours.',
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00168",
+                          'Ces différentes infractions bénéficient des règles dérogatoires applicables ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00169",
+                          'en matière de criminalité organisée, à l\'exclusion de celles figurant à ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00170",
+                          'l’article 706-88 du Code de procédure pénale relatives à la prolongation ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00171",
+                          'exceptionnelle de la garde à vue de quatre jours.',
+                        ),
                   ),
                 ],
               ),
@@ -721,47 +1505,77 @@ class InfractionCriminaliteOrganiseePage extends StatelessWidget {
 
               // 1.3
               _ConditionCard(
-                title:
-                    '1.3 – Les infractions visées à l’article 706-74 du Code de procédure pénale',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                  "f00172",
+                  '1.3 – Les infractions visées à l’article 706-74 du Code de procédure pénale',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(text: 'L’article '),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00173",
+                        'L’article ',
+                      ),
+                    ),
                     _lawArticle('706-74'),
-                    const TextSpan(
-                      text:
-                          ' du Code de procédure pénale liste une autre série d\'infractions pour lesquelles les règles procédurales spécifiques à la criminalité organisée ne sont applicables que dans les cas où la loi le prévoit expressément. Il s\'agit des :',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                        "f00174",
+                        ' du Code de procédure pénale liste une autre série d\'infractions pour lesquelles les règles procédurales spécifiques à la criminalité organisée ne sont applicables que dans les cas où la loi le prévoit expressément. Il s\'agit des :',
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
-                  const _LawBullet(
+                  _LawBullet(
                     spans: [
                       TextSpan(
-                        text:
-                            '• crimes et délits commis en bande organisée, autres que ceux relevant des articles 706-73 et 706-73-1 du Code de procédure pénale ;',
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00175",
+                          '• crimes et délits commis en bande organisée, autres que ceux relevant des articles 706-73 et 706-73-1 du Code de procédure pénale ;',
+                        ),
                       ),
                     ],
                   ),
                   _LawBullet(
                     spans: [
-                      const TextSpan(
-                        text:
-                            '• crimes ou délits d\'association de malfaiteurs prévus aux deuxième et troisième alinéas de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00176",
+                          '• crimes ou délits d\'association de malfaiteurs prévus aux deuxième et troisième alinéas de l\'article ',
+                        ),
                       ),
                       _lawArticle('450-1'),
-                      const TextSpan(
-                        text:
-                            ' du Code pénal et ne concernant pas les infractions énumérées au 15° de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00177",
+                          ' du Code pénal et ne concernant pas les infractions énumérées au 15° de l\'article ',
+                        ),
                       ),
                       _lawArticle('706-73'),
-                      const TextSpan(
-                        text:
-                            ' du Code de procédure pénale ou du 4° de l\'article ',
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00178",
+                          ' du Code de procédure pénale ou du 4° de l\'article ',
+                        ),
                       ),
                       _lawArticle('706-73-1'),
-                      const TextSpan(text: ' du même code.'),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart",
+                          "f00179",
+                          ' du même code.',
+                        ),
+                      ),
                     ],
                   ),
                 ],
@@ -975,9 +1789,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

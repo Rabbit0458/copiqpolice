@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaOrganigrammeMinistereInterieurPage extends StatelessWidget {
   const PaOrganigrammeMinistereInterieurPage({super.key});
@@ -32,10 +33,18 @@ class PaOrganigrammeMinistereInterieurPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Organigramme MI",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+            "f00002",
+            "Organigramme MI",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -50,7 +59,11 @@ class PaOrganigrammeMinistereInterieurPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Organigramme — Ministère de l’Intérieur",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+              "f00003",
+              "Organigramme — Ministère de l’Intérieur",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,21 +74,31 @@ class PaOrganigrammeMinistereInterieurPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _CardBox(
-            title: "Lecture simple (format tableau)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+              "f00004",
+              "Lecture simple (format tableau)",
+            ),
             cardColor: card,
             accent: accent,
             titleColor: textMain,
             children: [
-              const _InfoLine(
+              _InfoLine(
                 icon: Icons.swipe_rounded,
-                text:
-                    "Glisse horizontalement + verticalement pour lire toutes les cases.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+                  "f00005",
+                  "Glisse horizontalement + verticalement pour lire toutes les cases.",
+                ),
               ),
               const SizedBox(height: 6),
-              const _InfoLine(
+              _InfoLine(
                 icon: Icons.table_rows_rounded,
-                text:
-                    "Chaque colonne correspond à un grand bloc de l’organigramme.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+                  "f00006",
+                  "Chaque colonne correspond à un grand bloc de l’organigramme.",
+                ),
               ),
               const SizedBox(height: 10),
               RichText(
@@ -87,10 +110,20 @@ class PaOrganigrammeMinistereInterieurPage extends StatelessWidget {
                     fontWeight: FontWeight.w500,
                     color: isDark ? Colors.white70 : Colors.black87,
                   ),
-                  children: const [
-                    TextSpan(text: "Document : "),
+                  children: [
                     TextSpan(
-                      text: "mis à jour le 15/06/2025",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+                        "f00007",
+                        "Document : ",
+                      ),
+                    ),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+                        "f00008",
+                        "mis à jour le 15/06/2025",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -106,7 +139,11 @@ class PaOrganigrammeMinistereInterieurPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _CardBox(
-            title: "Tableau complet",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+              "f00009",
+              "Tableau complet",
+            ),
             cardColor: card,
             accent: accent,
             titleColor: textMain,
@@ -136,57 +173,133 @@ class _OrganigrammeMiTable extends StatelessWidget {
     final Color cellBg = isDark ? const Color(0xFF111827) : Colors.white;
 
     // En-tête (haut du schéma)
-    const List<String> topLine = [
-      "INSPECTION GÉNÉRALE DE L’ADMINISTRATION",
-      "CONSEIL SUPÉRIEUR DE L’APPUI TERRITORIAL ET DE L’ÉVALUATION",
-      "MINISTÈRE DE L’INTÉRIEUR",
+    final List<String> topLine = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00010",
+        "INSPECTION GÉNÉRALE DE L’ADMINISTRATION",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00011",
+        "CONSEIL SUPÉRIEUR DE L’APPUI TERRITORIAL ET DE L’ÉVALUATION",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00012",
+        "MINISTÈRE DE L’INTÉRIEUR",
+      ),
       "CABINET",
-      "CONTRÔLE BUDGÉTAIRE ET COMPTABLE MINISTÉRIEL",
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00013",
+        "CONTRÔLE BUDGÉTAIRE ET COMPTABLE MINISTÉRIEL",
+      ),
     ];
 
-    const List<String> topLine2 = [
+    final List<String> topLine2 = [
       "",
       "",
-      "Haut fonctionnaire de défense",
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00014",
+        "Haut fonctionnaire de défense",
+      ),
       "",
       "",
     ];
 
-    const List<String> topLine3 = [
+    final List<String> topLine3 = [
       "",
       "",
-      "Haut fonctionnaire au développement durable",
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00015",
+        "Haut fonctionnaire au développement durable",
+      ),
       "",
       "",
     ];
 
     // Colonnes principales (comme sur le schéma)
-    const headers = <String>[
+    final headers = <String>[
       "DGSCGC",
       "DGPN",
       "DGGN",
       "DGSI",
-      "Secrétariat général",
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00016",
+        "Secrétariat général",
+      ),
       "DGCL",
-      "Sécurité routière",
-      "Outre-mer",
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00017",
+        "Sécurité routière",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00018",
+        "Outre-mer",
+      ),
       "DGEF",
     ];
 
-    const colDGSCGC = [
-      "DIRECTION GÉNÉRALE DE LA SÉCURITÉ CIVILE\nET DE LA GESTION DES CRISES",
-      "Inspection générale de la sécurité civile",
-      "Direction des sapeurs-pompiers",
-      "Sous-direction de la préparation,\nanticipation et gestion des crises",
-      "Sous-direction des affaires internationales",
-      "Sous-direction des ressources et de la stratégie",
+    final colDGSCGC = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00019",
+        "DIRECTION GÉNÉRALE DE LA SÉCURITÉ CIVILE\nET DE LA GESTION DES CRISES",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00020",
+        "Inspection générale de la sécurité civile",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00021",
+        "Direction des sapeurs-pompiers",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00022",
+        "Sous-direction de la préparation,\nanticipation et gestion des crises",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00023",
+        "Sous-direction des affaires internationales",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00024",
+        "Sous-direction des ressources et de la stratégie",
+      ),
     ];
 
-    const colDGPN = [
-      "DIRECTION GÉNÉRALE DE LA POLICE NATIONALE",
-      "Service national des enquêtes administratives de sécurité",
-      "Service national des enquêtes d’autorisation de voyage",
-      "Agence du numérique des forces de sécurité intérieure",
+    final colDGPN = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00025",
+        "DIRECTION GÉNÉRALE DE LA POLICE NATIONALE",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00026",
+        "Service national des enquêtes administratives de sécurité",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00027",
+        "Service national des enquêtes d’autorisation de voyage",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00028",
+        "Agence du numérique des forces de sécurité intérieure",
+      ),
       "IGPN",
       "DRHFS",
       "DNPJ",
@@ -194,81 +307,283 @@ class _OrganigrammeMiTable extends StatelessWidget {
       "DNPAF",
       "DNRT",
       "DCCRS",
-      "Académie",
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00029",
+        "Académie",
+      ),
       "SDLP",
       "SNPS",
       "RAID",
     ];
 
-    const colDGGN = [
-      "DIRECTION GÉNÉRALE DE LA GENDARMERIE NATIONALE",
-      "Inspection générale de la gendarmerie nationale",
-      "Direction des opérations et de l’emploi",
-      "Direction des ressources humaines",
-      "Direction des soutiens et des finances",
-      "Service de la transformation",
-      "Service de l’information et des relations publiques",
-      "COMCYBER-MI",
+    final colDGGN = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00030",
+        "DIRECTION GÉNÉRALE DE LA GENDARMERIE NATIONALE",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00031",
+        "Inspection générale de la gendarmerie nationale",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00032",
+        "Direction des opérations et de l’emploi",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00033",
+        "Direction des ressources humaines",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00034",
+        "Direction des soutiens et des finances",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00035",
+        "Service de la transformation",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00036",
+        "Service de l’information et des relations publiques",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00037",
+        "COMCYBER-MI",
+      ),
     ];
 
-    const colDGSI = ["DIRECTION GÉNÉRALE DE LA SÉCURITÉ INTÉRIEURE"];
-
-    const colSG = [
-      "SECRÉTARIAT GÉNÉRAL",
-      "Direction du management de l’administration territoriale\net de l’encadrement supérieur",
-      "Service du haut fonctionnaire de défense",
-      "Direction de l’évaluation de la performance,\nde l’achat, des finances et de l’immobilier",
-      "Direction des libertés publiques et des affaires juridiques",
-      "Direction des ressources humaines",
-      "Délégation à l’information et à la communication",
-      "Direction de la transformation numérique",
-      "Direction des affaires européennes et internationales",
-      "Institut des hautes études du ministère de l’intérieur",
-      "Direction des entreprises et partenariats\nde sécurité et des armes",
+    final colDGSI = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00038",
+        "DIRECTION GÉNÉRALE DE LA SÉCURITÉ INTÉRIEURE",
+      ),
     ];
 
-    const colDGCL = [
-      "DIRECTION GÉNÉRALE DES COLLECTIVITÉS LOCALES",
-      "Sous-direction des finances locales\net de l’action économique",
-      "Sous-direction des élus locaux\net de la fonction publique territoriale",
-      "Sous-direction des compétences\net des institutions locales",
-      "Sous-direction de la cohésion\net de l’aménagement du territoire",
-      "Département des études et des statistiques locales",
+    final colSG = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00039",
+        "SECRÉTARIAT GÉNÉRAL",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00040",
+        "Direction du management de l’administration territoriale\net de l’encadrement supérieur",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00041",
+        "Service du haut fonctionnaire de défense",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00042",
+        "Direction de l’évaluation de la performance,\nde l’achat, des finances et de l’immobilier",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00043",
+        "Direction des libertés publiques et des affaires juridiques",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00044",
+        "Direction des ressources humaines",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00045",
+        "Délégation à l’information et à la communication",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00046",
+        "Direction de la transformation numérique",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00047",
+        "Direction des affaires européennes et internationales",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00048",
+        "Institut des hautes études du ministère de l’intérieur",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00049",
+        "Direction des entreprises et partenariats\nde sécurité et des armes",
+      ),
     ];
 
-    const colDSR = [
-      "DÉLÉGATION À LA SÉCURITÉ ROUTIÈRE",
-      "Département communication et information",
-      "Sous-direction éducation routière\net permis de conduire",
-      "Sous-direction protection des usagers de la route",
-      "Sous-direction des actions transversales\net des ressources",
-      "Département du contrôle automatisé",
-      "Conservatoire national interministériel\nde la sécurité routière",
+    final colDGCL = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00050",
+        "DIRECTION GÉNÉRALE DES COLLECTIVITÉS LOCALES",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00051",
+        "Sous-direction des finances locales\net de l’action économique",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00052",
+        "Sous-direction des élus locaux\net de la fonction publique territoriale",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00053",
+        "Sous-direction des compétences\net des institutions locales",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00054",
+        "Sous-direction de la cohésion\net de l’aménagement du territoire",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00055",
+        "Département des études et des statistiques locales",
+      ),
     ];
 
-    const colDGOM = [
-      "OUTRE-MER",
-      "Sous-direction des politiques publiques",
-      "Sous-direction des affaires juridiques\net institutionnelles",
-      "Sous-direction évaluation, prospective\net dépense de l’État",
-      "Commandement du service militaire adapté",
+    final colDSR = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00056",
+        "DÉLÉGATION À LA SÉCURITÉ ROUTIÈRE",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00057",
+        "Département communication et information",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00058",
+        "Sous-direction éducation routière\net permis de conduire",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00059",
+        "Sous-direction protection des usagers de la route",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00060",
+        "Sous-direction des actions transversales\net des ressources",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00061",
+        "Département du contrôle automatisé",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00062",
+        "Conservatoire national interministériel\nde la sécurité routière",
+      ),
     ];
 
-    const colDGEF = [
-      "DIRECTION GÉNÉRALE DES ÉTRANGERS EN FRANCE",
-      "Direction de l’immigration",
-      "Direction de l’intégration\net de l’accès à la nationalité",
-      "Direction de l’asile",
-      "Service de la performance et des ressources",
-      "Département des statistiques,\ndes études et de la documentation",
-      "Direction de programme :\nAdministration numérique des étrangers en France",
-      "Mission numérique",
+    final colDGOM = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00063",
+        "OUTRE-MER",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00064",
+        "Sous-direction des politiques publiques",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00065",
+        "Sous-direction des affaires juridiques\net institutionnelles",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00066",
+        "Sous-direction évaluation, prospective\net dépense de l’État",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00067",
+        "Commandement du service militaire adapté",
+      ),
     ];
 
-    const footerLines = [
-      "DIRECTION DE LA COOPÉRATION INTERNATIONALE DE SÉCURITÉ (DCIS)",
-      "AGENCE DU NUMÉRIQUE DES FORCES DE SÉCURITÉ INTÉRIEURE",
-      "SERVICE STATISTIQUE MINISTÉRIEL DE LA SÉCURITÉ INTÉRIEURE (SSMI)",
+    final colDGEF = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00068",
+        "DIRECTION GÉNÉRALE DES ÉTRANGERS EN FRANCE",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00069",
+        "Direction de l’immigration",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00070",
+        "Direction de l’intégration\net de l’accès à la nationalité",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00071",
+        "Direction de l’asile",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00072",
+        "Service de la performance et des ressources",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00073",
+        "Département des statistiques,\ndes études et de la documentation",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00074",
+        "Direction de programme :\nAdministration numérique des étrangers en France",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00075",
+        "Mission numérique",
+      ),
+    ];
+
+    final footerLines = [
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00076",
+        "DIRECTION DE LA COOPÉRATION INTERNATIONALE DE SÉCURITÉ (DCIS)",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00077",
+        "AGENCE DU NUMÉRIQUE DES FORCES DE SÉCURITÉ INTÉRIEURE",
+      ),
+      ScolariteText.value(
+        "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+        "f00078",
+        "SERVICE STATISTIQUE MINISTÉRIEL DE LA SÉCURITÉ INTÉRIEURE (SSMI)",
+      ),
     ];
 
     final columns = <List<String>>[
@@ -293,7 +608,13 @@ class _OrganigrammeMiTable extends StatelessWidget {
     // ✅ Bloc haut (5 colonnes) séparé (pour rester lisible)
     Widget topHeader = Column(
       children: [
-        const _MiniTitle("En-tête"),
+        _MiniTitle(
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+            "f00079",
+            "En-tête",
+          ),
+        ),
         const SizedBox(height: 8),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
@@ -404,7 +725,13 @@ class _OrganigrammeMiTable extends StatelessWidget {
         topHeader,
         const SizedBox(height: 14),
 
-        const _MiniTitle("Colonnes principales"),
+        _MiniTitle(
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+            "f00080",
+            "Colonnes principales",
+          ),
+        ),
         const SizedBox(height: 8),
 
         // ✅ Scroll horizontal + vertical
@@ -446,9 +773,15 @@ class _OrganigrammeMiTable extends StatelessWidget {
 
         const SizedBox(height: 12),
 
-        const _MiniTitle("Blocs transversaux"),
+        _MiniTitle(
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+            "f00081",
+            "Blocs transversaux",
+          ),
+        ),
         const SizedBox(height: 8),
-        const _FooterStrip(lines: footerLines),
+        _FooterStrip(lines: footerLines),
       ],
     );
   }
@@ -549,7 +882,11 @@ class _FooterStrip extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Structures associées",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigramme_mi_page.dart",
+              "f00082",
+              "Structures associées",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 14.5,
@@ -927,9 +1264,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

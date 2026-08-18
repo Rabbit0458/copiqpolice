@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaProvocationDirecteRebellionPage extends StatelessWidget {
   const PaProvocationDirecteRebellionPage({super.key});
@@ -56,10 +57,18 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à l’administration",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+            "f00002",
+            "Atteintes à l’administration",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La provocation directe à la rébellion",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+              "f00003",
+              "La provocation directe à la rébellion",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Consiste à provoquer directement quelqu’un à commettre le délit de rébellion, la provocation "
-                "étant manifestée soit par des cris ou des discours publics, soit par des écrits affichés ou distribués, "
-                "soit par tout autre moyen de transmission de l’écrit, de la parole ou de l’image.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00005",
+                      "Consiste à provoquer directement quelqu’un à commettre le délit de rébellion, la provocation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00006",
+                      "étant manifestée soit par des cris ou des discours publics, soit par des écrits affichés ou distribués, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00007",
+                      "soit par tout autre moyen de transmission de l’écrit, de la parole ou de l’image.",
+                    ),
               ),
             ],
           ),
@@ -103,22 +132,30 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 433-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00009",
+                    "Article 433-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime la provocation directe à la rébellion.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00010",
+                    " : prévoit et réprime la provocation directe à la rébellion.",
+                  ),
                 ),
               ]),
             ],
@@ -128,71 +165,158 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte de provocation directe"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00012",
+                  "A) Un acte de provocation directe",
+                ),
+              ),
               _Paragraph(
-                "L’infraction réprime les agissements de ceux qui rendent particulièrement difficile la mission "
-                "des représentants des forces de l’ordre (interpellation, expulsion, etc.) en provoquant directement "
-                "la personne à un acte de rébellion.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00013",
+                      "L’infraction réprime les agissements de ceux qui rendent particulièrement difficile la mission ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00014",
+                      "des représentants des forces de l’ordre (interpellation, expulsion, etc.) en provoquant directement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00015",
+                      "la personne à un acte de rébellion.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La provocation doit être directe : elle doit tendre sans ambiguïté à une opposition violente à l’action "
-                "d’un dépositaire de l’autorité publique. Il faut un lien étroit entre la provocation et les faits visés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00016",
+                      "La provocation doit être directe : elle doit tendre sans ambiguïté à une opposition violente à l’action ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00017",
+                      "d’un dépositaire de l’autorité publique. Il faut un lien étroit entre la provocation et les faits visés.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Peu importe que la provocation ait été suivie d’effet : l’infraction est constituée par le seul fait de provoquer.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00018",
+                  "Peu importe que la provocation ait été suivie d’effet : l’infraction est constituée par le seul fait de provoquer.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Manifestée par divers moyens"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00019",
+                  "B) Manifestée par divers moyens",
+                ),
+              ),
               _Paragraph(
-                "Les moyens peuvent être :\n"
-                "• des cris ou discours publics ;\n"
-                "• des écrits affichés ou distribués ;\n"
-                "• tout autre moyen de transmission de l’écrit, de la parole ou de l’image.\n"
-                "Les cris ou discours doivent avoir été tenus sur la voie publique ou dans un lieu public.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00020",
+                      "Les moyens peuvent être :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00021",
+                      "• des cris ou discours publics ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00022",
+                      "• des écrits affichés ou distribués ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00023",
+                      "• tout autre moyen de transmission de l’écrit, de la parole ou de l’image.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00024",
+                      "Les cris ou discours doivent avoir été tenus sur la voie publique ou dans un lieu public.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les tracts appelant à la rébellion peuvent être remis de la main à la main ou déposés dans des boîtes aux lettres.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00025",
+                  "Les tracts appelant à la rébellion peuvent être remis de la main à la main ou déposés dans des boîtes aux lettres.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 433-10 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00026",
+                    "Article 433-10 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque le délit est commis par la voie de la presse écrite ou audiovisuelle, "
-                      "les règles spécifiques s’appliquent (notamment la loi du 29 juillet 1881 sur la presse).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                        "f00027",
+                        " : lorsque le délit est commis par la voie de la presse écrite ou audiovisuelle, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                        "f00028",
+                        "les règles spécifiques s’appliquent (notamment la loi du 29 juillet 1881 sur la presse).",
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00029",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Est caractérisé le délit de provocation à la rébellion lorsque le prévenu harangue une foule en les incitant à faire obstacle à son interpellation : ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00030",
+                      "Est caractérisé le délit de provocation à la rébellion lorsque le prévenu harangue une foule en les incitant à faire obstacle à son interpellation : ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "« Venez, ils ne sont que quatre, on va les défoncer » ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00031",
+                      "« Venez, ils ne sont que quatre, on va les défoncer » ",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 21 février 2017)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00032",
+                      "(Cass. crim., 21 février 2017)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -208,18 +332,38 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+              "f00033",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté d’inciter un tiers à commettre un acte de rébellion",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00034",
+                  "Volonté d’inciter un tiers à commettre un acte de rébellion",
+                ),
               ),
               _Paragraph(
-                "L’auteur doit avoir la volonté d’inciter un tiers à commettre un acte de rébellion. "
-                "Peu importe que l’incitation ait été suivie d’effet : il s’agit d’une infraction formelle, réalisée "
-                "par le simple accomplissement des actes de provocation.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00035",
+                      "L’auteur doit avoir la volonté d’inciter un tiers à commettre un acte de rébellion. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00036",
+                      "Peu importe que l’incitation ait été suivie d’effet : il s’agit d’une infraction formelle, réalisée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00037",
+                      "par le simple accomplissement des actes de provocation.",
+                    ),
               ),
             ],
           ),
@@ -228,12 +372,22 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+              "f00038",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00039",
+                  "Aucune circonstance aggravante prévue.",
+                ),
+              ),
             ],
           ),
 
@@ -241,78 +395,145 @@ class PaProvocationDirecteRebellionPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+              "f00040",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00041",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit (simple) : "),
                 TextSpan(
-                  text: "2 mois d’emprisonnement et 7 500 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00042",
+                    "Délit (simple) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 433-10 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00043",
+                    "2 mois d’emprisonnement et 7 500 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00044",
+                    "article 433-10 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si la provocation est suivie d’effet, son auteur pourra être poursuivi comme complice de la rébellion par instruction au sens de ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00045",
+                      "Si la provocation est suivie d’effet, son auteur pourra être poursuivi comme complice de la rébellion par instruction au sens de ",
+                    ),
                   ),
                   TextSpan(
-                    text: "l’article 121-7 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00046",
+                      "l’article 121-7 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " et être sanctionné plus sévèrement."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                      "f00047",
+                      " et être sanctionné plus sévèrement.",
+                    ),
+                  ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00048",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00049",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00050",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00051",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                  "f00052",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00053",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00054",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart",
+                    "f00055",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),

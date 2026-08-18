@@ -1,11 +1,13 @@
 /// lib/gpx_scolarite_pages/generalite_pages/tentative/tentative_contenu_page.dart
 library;
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// =============================================================
 ///  COP'IQ — La tentative punissable (hub)
@@ -35,10 +37,18 @@ class TentativeContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La tentative punissable',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+            "f00002",
+            'La tentative punissable',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -53,33 +63,54 @@ class TentativeContenuPage extends StatelessWidget {
           // MODULES
           _ModuleCard(
             tag: 'conditions',
-            title: 'Les conditions de la tentative',
-            subtitle:
-                'Définition, éléments constitutifs et critères opérationnels',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00003",
+              'Les conditions de la tentative',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00004",
+              'Définition, éléments constitutifs et critères opérationnels',
+            ),
             imagePath: 'assets/images/tentative_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () =>
                 _open(context, const ConditionTentativePage(), 'conditions'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           _ModuleCard(
             tag: 'repression',
-            title: 'La répression',
-            subtitle:
-                'Fondements juridiques, portée pénale et modalités d’application.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00005",
+              'La répression',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00006",
+              'Fondements juridiques, portée pénale et modalités d’application.',
+            ),
             imagePath: 'assets/images/repression.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () =>
                 _open(context, const RepressionTentativePage(), 'repression'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           _ModuleCard(
             tag: 'tentative',
-            title: 'La tentative infructueuse',
-            subtitle:
-                'Analyse, qualification et limites de l’infraction manquée.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00007",
+              'La tentative infructueuse',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00008",
+              'Analyse, qualification et limites de l’infraction manquée.',
+            ),
             imagePath: 'assets/images/tentative_moral.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -89,13 +120,21 @@ class TentativeContenuPage extends StatelessWidget {
               'infructueuse',
             ),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 10),
 
           // Carte quiz “module” en bas
           _ModuleCard(
             tag: 'quiz',
-            title: 'Quiz — Tentative',
-            subtitle: 'Vérifiez votre maîtrise de la tentative punissable.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00009",
+              'Quiz — Tentative',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+              "f00010",
+              'Vérifiez votre maîtrise de la tentative punissable.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -103,7 +142,7 @@ class TentativeContenuPage extends StatelessWidget {
               context,
             ).pushNamed('/gpx/generalites/quiz/tentative'),
           ),
-          const SizedBox(height: 22), // respire en bas
+          const SizedBox(height: 10),
         ],
       ),
     );
@@ -163,7 +202,11 @@ class _QuizStripe extends StatelessWidget {
 
     return Semantics(
       button: true,
-      label: 'Quiz tentative punissable',
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+        "f00012",
+        'Quiz tentative punissable',
+      ),
       child: Container(
         margin: const EdgeInsets.only(top: 6, bottom: 4),
         padding: const EdgeInsets.symmetric(horizontal: 6),
@@ -216,7 +259,11 @@ class _QuizStripe extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Quiz — Tentative',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+                        "f00013",
+                        'Quiz — Tentative',
+                      ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.fustat(
@@ -228,7 +275,11 @@ class _QuizStripe extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      '15 questions • Légal, matériel & moral de la tentative',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/tentative_contenu_page.dart",
+                        "f00014",
+                        '15 questions • Légal, matériel & moral de la tentative',
+                      ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.fustat(
@@ -311,7 +362,11 @@ class _ModuleCard extends StatelessWidget {
         button: true,
         label: '$title — découvrir',
         child: Container(
-          height: 190,
+          height: ScolariteText.adaptiveCardHeight(
+            context,
+            cardCount: 4,
+            maxHeight: 190,
+          ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,

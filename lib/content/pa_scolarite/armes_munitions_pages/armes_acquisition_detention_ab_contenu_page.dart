@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
   const PaArmesAcquisitionDetentionABPage({super.key});
@@ -56,10 +57,18 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Armes & munitions",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+            "f00002",
+            "Armes & munitions",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Acquisition / détention / cession d’armes A ou B sans autorisation",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+              "f00003",
+              "Acquisition / détention / cession d’armes A ou B sans autorisation",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,19 +99,35 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
 
           // Définition (courte, sans répéter le titre)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "Constitue un délit le fait d’acquérir, de détenir ou de céder des matériels de guerre, armes, éléments d’armes "
-                      "ou munitions des catégories A ou B ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                        "f00005",
+                        "Constitue un délit le fait d’acquérir, de détenir ou de céder des matériels de guerre, armes, éléments d’armes ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                        "f00006",
+                        "ou munitions des catégories A ou B ",
+                      ),
                 ),
                 TextSpan(
-                  text: "sans l’autorisation requise",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00007",
+                    "sans l’autorisation requise",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : const Color(0xFF050505),
@@ -107,16 +136,29 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "⚠️ À ne pas confondre : "),
                   TextSpan(
-                    text: "détention",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00008",
+                      "⚠️ À ne pas confondre : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00009",
+                      "détention",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text:
-                        " ≠ port/transport (qui nécessitent des règles/autorisations spécifiques).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00010",
+                      " ≠ port/transport (qui nécessitent des règles/autorisations spécifiques).",
+                    ),
                   ),
                 ],
               ),
@@ -127,48 +169,67 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-52 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00012",
+                    "Article 222-52 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : réprime le fait d’acquérir, de détenir ou de céder sans autorisation des matériels de guerre, armes, éléments d’armes ou munitions des catégories A ou B.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00013",
+                    " : réprime le fait d’acquérir, de détenir ou de céder sans autorisation des matériels de guerre, armes, éléments d’armes ou munitions des catégories A ou B.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Autorisation de principe (cadre général) : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00014",
+                    "Autorisation de principe (cadre général) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 2332-1 I du Code de la défense",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00015",
+                    "article L. 2332-1 I du Code de la défense",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Règles CSI visées : "),
                 TextSpan(
-                  text:
-                      "articles L. 312-1 à L. 312-4, L. 312-4-3, L. 314-2 et L. 314-3 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00016",
+                    "Règles CSI visées : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00017",
+                    "articles L. 312-1 à L. 312-4, L. 312-4-3, L. 314-2 et L. 314-3 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -179,158 +240,314 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+              "f00018",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Les actes incriminés"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00019",
+                  "A) Les actes incriminés",
+                ),
+              ),
               _Paragraph(
-                "Le délit peut être constitué par l’un des trois comportements suivants : acquisition, cession ou détention.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00020",
+                  "Le délit peut être constitué par l’un des trois comportements suivants : acquisition, cession ou détention.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) L’acquisition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00021",
+                  "1) L’acquisition",
+                ),
+              ),
               _Paragraph(
-                "L’acquisition correspond au fait d’acheter une arme ou des munitions (chez un commerçant ou un particulier), "
-                "ou de la recevoir sous forme de don ou de legs. "
-                "Pour acquérir une arme, une autorisation préalable d’acquisition doit être obtenue.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00022",
+                      "L’acquisition correspond au fait d’acheter une arme ou des munitions (chez un commerçant ou un particulier), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00023",
+                      "ou de la recevoir sous forme de don ou de legs. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00024",
+                      "Pour acquérir une arme, une autorisation préalable d’acquisition doit être obtenue.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("2) La cession"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00025",
+                  "2) La cession",
+                ),
+              ),
               _Paragraph(
-                "On parle de cession lorsque l’arme ou les munitions sont transmises à un tiers : vente, don ou legs.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00026",
+                  "On parle de cession lorsque l’arme ou les munitions sont transmises à un tiers : vente, don ou legs.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("3) La détention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00027",
+                  "3) La détention",
+                ),
+              ),
               _Paragraph(
-                "La détention vise tous les actes par lesquels une personne exerce une maîtrise de fait sur une arme ou des munitions "
-                "(mainmise matérielle), quelle que soit la situation juridique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00028",
+                      "La détention vise tous les actes par lesquels une personne exerce une maîtrise de fait sur une arme ou des munitions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00029",
+                      "(mainmise matérielle), quelle que soit la situation juridique.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Le détenteur n’est pas nécessairement le propriétaire : il peut n’avoir que la jouissance (ex. agent de sécurité).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00030",
+                  "Le détenteur n’est pas nécessairement le propriétaire : il peut n’avoir que la jouissance (ex. agent de sécurité).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’arme/munition est conservée au domicile ou dans un lieu assimilé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00031",
+                  "L’arme/munition est conservée au domicile ou dans un lieu assimilé.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La détention doit être distinguée du port/transport : une autorisation de détention ne vaut pas autorisation de porter ou transporter.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00032",
+                      "La détention doit être distinguée du port/transport : une autorisation de détention ne vaut pas autorisation de porter ou transporter.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Les armes ou munitions concernées"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00033",
+                  "B) Les armes ou munitions concernées",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-52 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00034",
+                    "Article 222-52 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : incrimine uniquement les matériels de guerre, armes, éléments d’armes ou munitions relevant des catégories A ou B.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00035",
+                    " : incrimine uniquement les matériels de guerre, armes, éléments d’armes ou munitions relevant des catégories A ou B.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Catégorie A : matériels de guerre et armes interdits à l’acquisition et à la détention.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00036",
+                  "Catégorie A : matériels de guerre et armes interdits à l’acquisition et à la détention.",
+                ),
               ),
               _BulletPoint(
-                text: "Catégorie B : armes soumises à autorisation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00037",
+                  "Catégorie B : armes soumises à autorisation.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) L’absence d’autorisation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00038",
+                  "C) L’absence d’autorisation",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Principe : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00039",
+                    "Principe : ",
+                  ),
+                ),
                 TextSpan(
                   text: "interdiction",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: ". L’autorisation est une "),
                 TextSpan(
-                  text: "dérogation",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00040",
+                    ". L’autorisation est une ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00041",
+                    "dérogation",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: ", pas un droit."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00042",
+                    ", pas un droit.",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Nota (entreprises) : "),
                   TextSpan(
-                    text: "article L. 2332-1 I du Code de la défense",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00043",
+                      "Nota (entreprises) : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00044",
+                      "article L. 2332-1 I du Code de la défense",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " — les entreprises de fabrication ou de commerce (cat. A/B) doivent disposer d’une autorisation expresse de l’État et sont contrôlées.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00045",
+                      " — les entreprises de fabrication ou de commerce (cat. A/B) doivent disposer d’une autorisation expresse de l’État et sont contrôlées.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Concernant les particuliers, l’État conserve un contrôle strict : sans autorisation expresse, "
-                "l’acquisition et la détention des armes et munitions des catégories A ou B sont interdites.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00046",
+                      "Concernant les particuliers, l’État conserve un contrôle strict : sans autorisation expresse, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00047",
+                      "l’acquisition et la détention des armes et munitions des catégories A ou B sont interdites.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Obligations CSI à respecter : "),
                 TextSpan(
-                  text:
-                      "L. 312-1 à L. 312-4, L. 312-4-3, L. 314-2 et L. 314-3 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00048",
+                    "Obligations CSI à respecter : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00049",
+                    "L. 312-1 à L. 312-4, L. 312-4-3, L. 314-2 et L. 314-3 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Ces textes rappellent que l’acquisition et la détention des catégories A/B sont interdites sauf autorisation délivrée par l’État.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00050",
+                  "Ces textes rappellent que l’acquisition et la détention des catégories A/B sont interdites sauf autorisation délivrée par l’État.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’autorisation est généralement accordée aux tireurs sportifs et aux personnes exposées à des risques sérieux pour leur sécurité (nature/lieu d’activité).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00051",
+                  "L’autorisation est généralement accordée aux tireurs sportifs et aux personnes exposées à des risques sérieux pour leur sécurité (nature/lieu d’activité).",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Les conditions (nombre d’armes/munitions, âge, modalités) varient selon la qualité du détenteur (mineur, tireur sportif, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00052",
+                  "Les conditions (nombre d’armes/munitions, âge, modalités) varient selon la qualité du détenteur (mineur, tireur sportif, etc.).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Cession/transfert entre particuliers : "),
                 TextSpan(
-                  text: "articles L. 314-2 et L. 314-3 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00053",
+                    "Cession/transfert entre particuliers : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — possible uniquement si le cessionnaire/transféreur dispose lui-même d’une autorisation conforme.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00054",
+                    "articles L. 314-2 et L. 314-3 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00055",
+                    " — possible uniquement si le cessionnaire/transféreur dispose lui-même d’une autorisation conforme.",
+                  ),
                 ),
               ]),
             ],
@@ -340,21 +557,53 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+              "f00056",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Volonté de détenir (ou d’acquérir / céder)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00057",
+                  "A) Volonté de détenir (ou d’acquérir / céder)",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir la volonté de réaliser l’acte (acquérir, détenir ou céder) : "
-                "il s’agit d’un comportement intentionnel.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00058",
+                      "L’auteur doit avoir la volonté de réaliser l’acte (acquérir, détenir ou céder) : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00059",
+                      "il s’agit d’un comportement intentionnel.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Conscience de ne pas disposer de l’autorisation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00060",
+                  "B) Conscience de ne pas disposer de l’autorisation",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit savoir qu’il n’est pas en possession de l’autorisation correspondante "
-                "exigée pour des armes/munitions de catégories A ou B.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00061",
+                      "L’auteur doit savoir qu’il n’est pas en possession de l’autorisation correspondante ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00062",
+                      "exigée pour des armes/munitions de catégories A ou B.",
+                    ),
               ),
             ],
           ),
@@ -363,49 +612,76 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+              "f00063",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-52 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00064",
+                    "Article 222-52 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Lorsque l’auteur a été antérieurement condamné pour une ou plusieurs infractions mentionnées aux articles 706-73 et 706-73-1 du Code de procédure pénale, "
-                    "à une peine égale ou supérieure à un an d’emprisonnement ferme.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00065",
+                      "Lorsque l’auteur a été antérieurement condamné pour une ou plusieurs infractions mentionnées aux articles 706-73 et 706-73-1 du Code de procédure pénale, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00066",
+                      "à une peine égale ou supérieure à un an d’emprisonnement ferme.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-52 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00067",
+                    "Article 222-52 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque l’infraction est commise par au moins deux personnes agissant en qualité d’auteur ou de complice.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00068",
+                  "Lorsque l’infraction est commise par au moins deux personnes agissant en qualité d’auteur ou de complice.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Référence aggravation (CPP) : "),
                   TextSpan(
-                    text: "articles 706-73 et 706-73-1 du C.P.P.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00069",
+                      "Référence aggravation (CPP) : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                      "f00070",
+                      "articles 706-73 et 706-73-1 du C.P.P.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -421,16 +697,36 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
 
           // Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+              "f00071",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00072",
+                  "A) Personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : "),
                 TextSpan(
-                  text: "Délit",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00073",
+                    "Qualification : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00074",
+                    "Délit",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -438,106 +734,191 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
               SizedBox(height: 10),
 
               _Paragraph.rich([
-                TextSpan(text: "• Forme simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00075",
+                    "• Forme simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-52 alinéa 1 du C.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00076",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00077",
+                    "article 222-52 alinéa 1 du C.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
 
               _Paragraph.rich([
-                TextSpan(text: "• Aggravée (condamnation antérieure) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00078",
+                    "• Aggravée (condamnation antérieure) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-52 alinéa 2 du C.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00079",
+                    "7 ans d’emprisonnement et 100 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00080",
+                    "article 222-52 alinéa 2 du C.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
 
               _Paragraph.rich([
-                TextSpan(text: "• Aggravée (au moins deux personnes) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 500 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00081",
+                    "• Aggravée (au moins deux personnes) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-52 alinéa 3 du C.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00082",
+                    "10 ans d’emprisonnement et 500 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00083",
+                    "article 222-52 alinéa 3 du C.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00084",
+                  "B) Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 222-61 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00085",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00086",
+                    "l’article 222-61 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Amende selon "),
                 TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00087",
+                    "Amende selon ",
                   ),
                 ),
-                TextSpan(text: " et peines complémentaires selon "),
                 TextSpan(
-                  text: "l’article 131-39 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00088",
+                    "l’article 131-38 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00089",
+                    " et peines complémentaires selon ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00090",
+                    "l’article 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00091",
+                  "C) Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00092",
+                    "Tentative : ",
+                  ),
+                ),
                 TextSpan(
                   text: "OUI",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " — prévue spécialement par "),
                 TextSpan(
-                  text: "l’article 222-60 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00093",
+                    " — prévue spécialement par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00094",
+                    "l’article 222-60 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00095",
+                    "Complicité : ",
+                  ),
+                ),
                 TextSpan(
                   text: "OUI",
                   style: TextStyle(fontWeight: FontWeight.w900),
@@ -547,15 +928,28 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                  "f00096",
+                  "D) Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Exemption de peine : "),
                 TextSpan(
-                  text: "article 222-67-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00097",
+                    "Exemption de peine : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00098",
+                    "article 222-67-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -564,20 +958,35 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Toute personne qui a tenté de commettre les infractions de la section est exempte de peine si, "
-                        "ayant averti l’autorité administrative ou judiciaire, elle a permis d’éviter leur réalisation.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                          "f00099",
+                          "Toute personne qui a tenté de commettre les infractions de la section est exempte de peine si, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                          "f00100",
+                          "ayant averti l’autorité administrative ou judiciaire, elle a permis d’éviter leur réalisation.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
-                TextSpan(text: "Réduction de peine : "),
                 TextSpan(
-                  text: "article 222-67-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00101",
+                    "Réduction de peine : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                    "f00102",
+                    "article 222-67-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -586,8 +995,16 @@ class PaArmesAcquisitionDetentionABPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La peine privative de liberté est réduite des deux tiers si, ayant averti l’autorité administrative ou judiciaire, "
-                        "l’auteur/complice a permis de faire cesser l’infraction ou d’identifier les autres auteurs/complices.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                          "f00103",
+                          "La peine privative de liberté est réduite des deux tiers si, ayant averti l’autorité administrative ou judiciaire, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart",
+                          "f00104",
+                          "l’auteur/complice a permis de faire cesser l’infraction ou d’identifier les autres auteurs/complices.",
+                        ),
                   ),
                 ],
               ),
@@ -846,9 +1263,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

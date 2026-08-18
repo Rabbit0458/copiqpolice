@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_elements_constitutifs_infraction_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — L’infraction (SPLASH IA 2025)
@@ -27,7 +28,8 @@ class PaInfractionIntroPage extends StatefulWidget {
   const PaInfractionIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/socle_initial/generalites/infraction_intro';
+  static const String routeName =
+      '/pa/dps_dpg/socle_initial/generalites/infraction_intro';
 
   @override
   State<PaInfractionIntroPage> createState() => _InfractionIntroPageState();
@@ -63,7 +65,11 @@ class _InfractionIntroPageState extends State<PaInfractionIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'L’INFRACTION';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_infraction_intro_page.dart",
+    "f00001",
+    'L’INFRACTION',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -170,7 +176,11 @@ class _InfractionIntroPageState extends State<PaInfractionIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Structure, éléments et repères clés.\nPrêt(e) pour un survol éclair avant la fiche complète ?",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_infraction_intro_page.dart",
+                        "f00002",
+                        "Structure, éléments et repères clés.\nPrêt(e) pour un survol éclair avant la fiche complète ?",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -284,7 +294,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_infraction_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

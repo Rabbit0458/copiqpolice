@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ProtectionLocauxPolicePage extends StatelessWidget {
   const ProtectionLocauxPolicePage({super.key});
@@ -50,10 +51,18 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accueil du public",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+            "f00002",
+            "Accueil du public",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La protection des locaux de police",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+              "f00003",
+              "La protection des locaux de police",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -83,23 +96,40 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La mission de surveillance des locaux de police exige un haut niveau de vigilance et le respect strict des consignes de sécurité. "
-                "L’effectif en poste peut être confronté à tout moment à une situation anormale ou dangereuse : la réaction doit être rapide, coordonnée et conforme aux procédures internes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00004",
+                      "La mission de surveillance des locaux de police exige un haut niveau de vigilance et le respect strict des consignes de sécurité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00005",
+                      "L’effectif en poste peut être confronté à tout moment à une situation anormale ou dangereuse : la réaction doit être rapide, coordonnée et conforme aux procédures internes.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Vigilance permanente : personnes, accès, circulations et abords des locaux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00006",
+                  "Vigilance permanente : personnes, accès, circulations et abords des locaux.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Ne pas improviser : appliquer les consignes prévues dans les plans de protection.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00007",
+                  "Ne pas improviser : appliquer les consignes prévues dans les plans de protection.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Alerter sans délai la hiérarchie en cas de doute ou d’événement anormal.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00008",
+                  "Alerter sans délai la hiérarchie en cas de doute ou d’événement anormal.",
+                ),
               ),
             ],
           ),
@@ -108,83 +138,177 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
 
           // I — SURVEILLANCE ORDINAIRE
           _ConditionCard(
-            title: "I — Surveillance ordinaire des locaux",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+              "f00009",
+              "I — Surveillance ordinaire des locaux",
+            ),
             cardColor: cardOrdinaire,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Présence de personnes extérieures"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00010",
+                  "A) Présence de personnes extérieures",
+                ),
+              ),
               _Paragraph(
-                "Toute personne extérieure présente dans les locaux doit faire l’objet d’une attention particulière "
-                "(risque de vol, dégradations, intrusion, évasion, agression). "
-                "Dans la mesure du possible, les déplacements s’effectuent avec un accompagnement du personnel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00011",
+                      "Toute personne extérieure présente dans les locaux doit faire l’objet d’une attention particulière ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00012",
+                      "(risque de vol, dégradations, intrusion, évasion, agression). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00013",
+                      "Dans la mesure du possible, les déplacements s’effectuent avec un accompagnement du personnel.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Identifier et surveiller : qui, pourquoi, où, avec qui.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00014",
+                  "Identifier et surveiller : qui, pourquoi, où, avec qui.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Limiter l’accès : zones strictement nécessaires, circulation encadrée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00015",
+                  "Limiter l’accès : zones strictement nécessaires, circulation encadrée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prévenir les risques : ne pas laisser une personne seule dans des zones sensibles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00016",
+                  "Prévenir les risques : ne pas laisser une personne seule dans des zones sensibles.",
+                ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "B) Voies de passage (cours, escaliers, circulations)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00017",
+                  "B) Voies de passage (cours, escaliers, circulations)",
+                ),
               ),
               _Paragraph(
-                "Les voies de passage doivent être surveillées : elles peuvent servir de lieu de dépôt d’objets "
-                "(colis, sac oublié…), ou de point de vulnérabilité lors des mouvements de personnes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00018",
+                      "Les voies de passage doivent être surveillées : elles peuvent servir de lieu de dépôt d’objets ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00019",
+                      "(colis, sac oublié…), ou de point de vulnérabilité lors des mouvements de personnes.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Objet suspect",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00020",
+                  "Objet suspect",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En cas de découverte d’un objet suspect : ne pas toucher. Mettre en place un périmètre de sécurité et aviser immédiatement l’autorité hiérarchique.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00021",
+                      "En cas de découverte d’un objet suspect : ne pas toucher. Mettre en place un périmètre de sécurité et aviser immédiatement l’autorité hiérarchique.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Transferts / escortes (détenus, GAV)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00022",
+                  "C) Transferts / escortes (détenus, GAV)",
+                ),
+              ),
               _Paragraph(
-                "Les circulations sont particulièrement sensibles lors des transferts : risque d’évasion, de résistance active, "
-                "ou d’agression contre le personnel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00023",
+                      "Les circulations sont particulièrement sensibles lors des transferts : risque d’évasion, de résistance active, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00024",
+                      "ou d’agression contre le personnel.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Surveiller les couloirs/escaliers en amont et pendant les mouvements.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00025",
+                  "Surveiller les couloirs/escaliers en amont et pendant les mouvements.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éviter les croisements inutiles (public / mis en cause / personnels).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00026",
+                  "Éviter les croisements inutiles (public / mis en cause / personnels).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Anticiper : accès dégagés, portes contrôlées, points de rupture identifiés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00027",
+                  "Anticiper : accès dégagés, portes contrôlées, points de rupture identifiés.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("D) Abords immédiats des locaux"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00028",
+                  "D) Abords immédiats des locaux",
+                ),
+              ),
               _Paragraph(
-                "Les abords doivent être surveillés afin de déceler tout stationnement dangereux, repérage, "
-                "ou toute dégradation/inscription portant atteinte à l’autorité de l’État.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00029",
+                      "Les abords doivent être surveillés afin de déceler tout stationnement dangereux, repérage, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00030",
+                      "ou toute dégradation/inscription portant atteinte à l’autorité de l’État.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Surveiller les stationnements anormaux (durée, comportement, visibilité sur accès).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00031",
+                  "Surveiller les stationnements anormaux (durée, comportement, visibilité sur accès).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Signaler immédiatement toute dégradation ou inscription.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00032",
+                  "Signaler immédiatement toute dégradation ou inscription.",
+                ),
               ),
             ],
           ),
@@ -193,55 +317,140 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
 
           // II — PLAN AGGRESSION EXTÉRIEURE
           _ConditionCard(
-            title: "II — Plan de protection contre une agression extérieure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+              "f00033",
+              "II — Plan de protection contre une agression extérieure",
+            ),
             cardColor: cardAggression,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Un plan de protection à caractère confidentiel doit être prévu pour protéger les locaux contre une agression extérieure. "
-                "Il prend la forme d’un dossier regroupant les consignes, connu et consultable par les personnels concernés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00034",
+                      "Un plan de protection à caractère confidentiel doit être prévu pour protéger les locaux contre une agression extérieure. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00035",
+                      "Il prend la forme d’un dossier regroupant les consignes, connu et consultable par les personnels concernés.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Contenu minimal du plan (dossier)"),
-              _BulletPoint(text: "Gardes statiques."),
-              _BulletPoint(text: "Plantons."),
-              _BulletPoint(text: "Patrouilles."),
-              _BulletPoint(text: "Signaux conventionnels d’alerte."),
-              _BulletPoint(text: "Conduite à tenir en cas d’agression."),
-              _BulletPoint(
-                text: "Conduite à tenir en cas de tentative d’attentat.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00036",
+                  "Contenu minimal du plan (dossier)",
+                ),
               ),
               _BulletPoint(
-                text: "Règles relatives à l’usage des armes (cadre interne).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00037",
+                  "Gardes statiques.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00038",
+                  "Plantons.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00039",
+                  "Patrouilles.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00040",
+                  "Signaux conventionnels d’alerte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00041",
+                  "Conduite à tenir en cas d’agression.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00042",
+                  "Conduite à tenir en cas de tentative d’attentat.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00043",
+                  "Règles relatives à l’usage des armes (cadre interne).",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Vigilance renforcée",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00044",
+                  "Vigilance renforcée",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les structures décentralisées (postes de police, antennes…), fermées au public la nuit, week-ends et jours fériés, "
-                        "doivent faire l’objet d’une attention particulière en raison de leur vulnérabilité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                          "f00045",
+                          "Les structures décentralisées (postes de police, antennes…), fermées au public la nuit, week-ends et jours fériés, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                          "f00046",
+                          "doivent faire l’objet d’une attention particulière en raison de leur vulnérabilité.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Diffusion & accessibilité"),
-              _BulletPoint(
-                text:
-                    "Les consignes sont communiquées à l’ensemble du personnel.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00047",
+                  "Diffusion & accessibilité",
+                ),
               ),
               _BulletPoint(
-                text: "Elles doivent pouvoir être consultées à tout moment.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00048",
+                  "Les consignes sont communiquées à l’ensemble du personnel.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00049",
+                  "Elles doivent pouvoir être consultées à tout moment.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le plan est établi par chaque chef de circonscription et peut intégrer les mesures prévues dans le cadre de la lutte contre l’incendie.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00050",
+                  "Le plan est établi par chaque chef de circonscription et peut intégrer les mesures prévues dans le cadre de la lutte contre l’incendie.",
+                ),
               ),
             ],
           ),
@@ -250,39 +459,75 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
 
           // III — PLAN INCENDIE
           _ConditionCard(
-            title: "III — Plan de protection contre l’incendie",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+              "f00051",
+              "III — Plan de protection contre l’incendie",
+            ),
             cardColor: cardIncendie,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Un plan de protection contre l’incendie doit également être prévu. "
-                "Il s’agit d’un dossier diffusé à l’ensemble du personnel concerné, avec des consignes opérationnelles claires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00052",
+                      "Un plan de protection contre l’incendie doit également être prévu. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00053",
+                      "Il s’agit d’un dossier diffusé à l’ensemble du personnel concerné, avec des consignes opérationnelles claires.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Le dossier comprend"),
-              _BulletPoint(
-                text:
-                    "Un plan des lieux (implantation des bouches d’incendie à l’extérieur).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00054",
+                  "Le dossier comprend",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Localisation des lances à incendie et des extincteurs à l’intérieur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00055",
+                  "Un plan des lieux (implantation des bouches d’incendie à l’extérieur).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Consignes d’alerte : procédure interne + appel aux sapeurs-pompiers.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00056",
+                  "Localisation des lances à incendie et des extincteurs à l’intérieur.",
+                ),
               ),
-              _BulletPoint(text: "Ordre prioritaire d’évacuation."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00057",
+                  "Consignes d’alerte : procédure interne + appel aux sapeurs-pompiers.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00058",
+                  "Ordre prioritaire d’évacuation.",
+                ),
+              ),
               SizedBox(height: 12),
 
               _NotaBox(
                 title: "Affichage",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les consignes (alerte, appel, évacuation) doivent être affichées à proximité de chaque poste de matériel de lutte contre le feu.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                      "f00059",
+                      "Les consignes (alerte, appel, évacuation) doivent être affichées à proximité de chaque poste de matériel de lutte contre le feu.",
+                    ),
                   ),
                 ],
               ),
@@ -293,30 +538,49 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
 
           // Mémo opérationnel
           _ConditionCard(
-            title: "Mémo opérationnel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+              "f00060",
+              "Mémo opérationnel",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Toujours accompagner autant que possible les personnes extérieures dans les zones internes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00061",
+                  "Toujours accompagner autant que possible les personnes extérieures dans les zones internes.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Objet suspect : ne pas toucher, périmètre de sécurité, avis hiérarchique immédiat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00062",
+                  "Objet suspect : ne pas toucher, périmètre de sécurité, avis hiérarchique immédiat.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transferts GAV/détenus : surveillance renforcée des circulations, anticiper les points de vulnérabilité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00063",
+                  "Transferts GAV/détenus : surveillance renforcée des circulations, anticiper les points de vulnérabilité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Agression extérieure : appliquer le plan confidentiel (signaux, conduite à tenir, sécurité du site).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00064",
+                  "Agression extérieure : appliquer le plan confidentiel (signaux, conduite à tenir, sécurité du site).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Incendie : connaître le plan des lieux, le matériel, et l’ordre d’évacuation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/protection_locaux_police_page.dart",
+                  "f00065",
+                  "Incendie : connaître le plan des lieux, le matériel, et l’ordre d’évacuation.",
+                ),
               ),
             ],
           ),

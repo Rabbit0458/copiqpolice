@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — NOTION DE LIBERTÉS PUBLIQUES
@@ -54,7 +55,11 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Notion de libertés publiques',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+            "f00001",
+            'Notion de libertés publiques',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -70,7 +75,11 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
         children: [
           // ================= TITRE + INTRO =================
           Text(
-            'Comprendre la notion de libertés publiques',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+              "f00002",
+              'Comprendre la notion de libertés publiques',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -79,17 +88,41 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           _Paragraph.rich([
-            const TextSpan(
+            TextSpan(
               text:
-                  'Dans le langage courant, on confond souvent "droits de l’Homme" et '
-                  '"libertés publiques". Or, en droit, la notion de libertés publiques '
-                  'a un contenu beaucoup plus précis : il s’agit d’une catégorie de droits '
-                  'fondamentaux reconnus et organisés par l’État. ',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00003",
+                    'Dans le langage courant, on confond souvent "droits de l’Homme" et ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00004",
+                    '"libertés publiques". Or, en droit, la notion de libertés publiques ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00005",
+                    'a un contenu beaucoup plus précis : il s’agit d’une catégorie de droits ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00006",
+                    'fondamentaux reconnus et organisés par l’État. ',
+                  ),
             ),
             TextSpan(
               text:
-                  'Pour le policier, maîtriser cette distinction est essentiel : elle '
-                  'conditionne la légalité des mesures de police et la protection des citoyens.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00007",
+                    'Pour le policier, maîtriser cette distinction est essentiel : elle ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00008",
+                    'conditionne la légalité des mesures de police et la protection des citoyens.',
+                  ),
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: referenceColor,
@@ -97,15 +130,35 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 16),
-          const _NotaBox(
-            title: 'Plan de la fiche',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+              "f00009",
+              'Plan de la fiche',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    '1. Libertés publiques et droits de l’Homme : comment les distinguer ?\n'
-                    '2. Notion juridique de liberté et définition des libertés publiques.\n'
-                    'L’objectif est d’identifier ce qui fait qu’une liberté devient une '
-                    'véritable "liberté publique" protégée par le droit.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00010",
+                      '1. Libertés publiques et droits de l’Homme : comment les distinguer ?\n',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00011",
+                      '2. Notion juridique de liberté et définition des libertés publiques.\n',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00012",
+                      'L’objectif est d’identifier ce qui fait qu’une liberté devient une ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00013",
+                      'véritable "liberté publique" protégée par le droit.',
+                    ),
               ),
             ],
           ),
@@ -115,21 +168,45 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
           // CHAPITRE 1 — LIBERTÉS PUBLIQUES ET DROITS DE L’HOMME
           // =====================================================
           _HypoCard(
-            title: 'Chapitre 1 — Libertés publiques et droits de l’Homme',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+              "f00014",
+              'Chapitre 1 — Libertés publiques et droits de l’Homme',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'La tendance contemporaine est de superposer "libertés publiques" et '
-                '"droits de l’Homme". Pourtant, la notion de libertés publiques relève '
-                'd’abord du droit : c’est une catégorie de droits de l’Homme intégrée '
-                'dans le droit positif et assortie de garanties juridiques précises.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00015",
+                      'La tendance contemporaine est de superposer "libertés publiques" et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00016",
+                      '"droits de l’Homme". Pourtant, la notion de libertés publiques relève ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00017",
+                      'd’abord du droit : c’est une catégorie de droits de l’Homme intégrée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00018",
+                      'dans le droit positif et assortie de garanties juridiques précises.',
+                    ),
               ),
               const SizedBox(height: 10),
               Text(
-                'Trois idées issues du polycopié :',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                  "f00019",
+                  'Trois idées issues du polycopié :',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -137,61 +214,160 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: '1) Des droits "attendus" de l’État : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00020",
+                    '1) Des droits "attendus" de l’État : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'les individus n’attendent pas seulement que l’État ne porte pas '
-                      'atteinte à leurs droits ; ils attendent aussi qu’il mette en place '
-                      'les moyens concrets permettant de les exercer. '
-                      'Par exemple, la liberté d’enseignement prend tout son sens lorsque '
-                      'l’État organise des établissements publics et contrôle que les '
-                      'subventions au privé sont distribuées sans discrimination.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00021",
+                        'les individus n’attendent pas seulement que l’État ne porte pas ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00022",
+                        'atteinte à leurs droits ; ils attendent aussi qu’il mette en place ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00023",
+                        'les moyens concrets permettant de les exercer. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00024",
+                        'Par exemple, la liberté d’enseignement prend tout son sens lorsque ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00025",
+                        'l’État organise des établissements publics et contrôle que les ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00026",
+                        'subventions au privé sont distribuées sans discrimination.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: '2) Des droits reconnus par l’État : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00027",
+                    '2) Des droits reconnus par l’État : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'ce qui caractérise une liberté publique, c’est qu’elle est consacrée '
-                      'par un texte juridique : constitutionnel, législatif, voire '
-                      'réglementaire. Le droit objectif (la règle écrite) vient ainsi '
-                      'organiser les rapports entre l’État et les individus autour de ces droits.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00028",
+                        'ce qui caractérise une liberté publique, c’est qu’elle est consacrée ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00029",
+                        'par un texte juridique : constitutionnel, législatif, voire ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00030",
+                        'réglementaire. Le droit objectif (la règle écrite) vient ainsi ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00031",
+                        'organiser les rapports entre l’État et les individus autour de ces droits.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      '3) Des droits bénéficiant d’une protection particulière : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00032",
+                    '3) Des droits bénéficiant d’une protection particulière : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'certaines libertés, dites "fondamentales", profitent d’un régime '
-                      'juridique plus favorable que celui applicable aux autres droits '
-                      '(contrôle du juge administratif, procédures d’urgence, valeur '
-                      'constitutionnelle, etc.). C’est particulièrement vrai en matière '
-                      'de libertés publiques.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00033",
+                        'certaines libertés, dites "fondamentales", profitent d’un régime ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00034",
+                        'juridique plus favorable que celui applicable aux autres droits ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00035",
+                        '(contrôle du juge administratif, procédures d’urgence, valeur ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00036",
+                        'constitutionnelle, etc.). C’est particulièrement vrai en matière ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00037",
+                        'de libertés publiques.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _ExempleBox(
-                title: 'Illustration opérationnelle',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                  "f00038",
+                  'Illustration opérationnelle',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La liberté d’aller et venir n’est pas seulement une valeur abstraite : '
-                        'elle est expressément protégée par la Déclaration de 1789 et par la '
-                        'jurisprudence de la Cour européenne des droits de l’Homme. '
-                        'Toute mesure de contrôle d’identité, de garde à vue ou d’assignation '
-                        'à résidence doit donc être appréciée à la lumière de ce double ancrage '
-                        'constitutionnel et conventionnel.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00039",
+                          'La liberté d’aller et venir n’est pas seulement une valeur abstraite : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00040",
+                          'elle est expressément protégée par la Déclaration de 1789 et par la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00041",
+                          'jurisprudence de la Cour européenne des droits de l’Homme. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00042",
+                          'Toute mesure de contrôle d’identité, de garde à vue ou d’assignation ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00043",
+                          'à résidence doit donc être appréciée à la lumière de ce double ancrage ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00044",
+                          'constitutionnel et conventionnel.',
+                        ),
                   ),
                 ],
               ),
@@ -204,7 +380,11 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
           // CHAPITRE 2 — LIBERTÉ ET LIBERTÉS PUBLIQUES
           // =====================================================
           _HypoCard(
-            title: 'Chapitre 2 — Liberté et libertés publiques',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+              "f00045",
+              'Chapitre 2 — Liberté et libertés publiques',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
@@ -212,7 +392,11 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
             children: [
               // ---------------- 2.1 NOTION DE LIBERTÉ ----------------
               Text(
-                '2.1 — Notion de liberté',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                  "f00046",
+                  '2.1 — Notion de liberté',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -220,31 +404,71 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'La liberté, dans son sens le plus large, est une notion complexe qui '
-                'intéresse autant la philosophie que la politique, la culture, l’économie '
-                'ou encore les sciences humaines. Le polycopié la définit comme le pouvoir '
-                'd’autodétermination : la capacité pour un individu de choisir lui-même son '
-                'comportement personnel.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00047",
+                      'La liberté, dans son sens le plus large, est une notion complexe qui ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00048",
+                      'intéresse autant la philosophie que la politique, la culture, l’économie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00049",
+                      'ou encore les sciences humaines. Le polycopié la définit comme le pouvoir ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00050",
+                      'd’autodétermination : la capacité pour un individu de choisir lui-même son ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                      "f00051",
+                      'comportement personnel.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Définition simple mais incomplète : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00052",
+                    'Définition simple mais incomplète : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'cette approche purement individuelle ne prend pas en compte le rôle '
-                      'de l’État, ni les contraintes nécessaires à la vie en société '
-                      '(sécurité, ordre public, droits d’autrui).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00053",
+                        'cette approche purement individuelle ne prend pas en compte le rôle ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00054",
+                        'de l’État, ni les contraintes nécessaires à la vie en société ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00055",
+                        '(sécurité, ordre public, droits d’autrui).',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // ---------------- 2.2 NOTION DE LIBERTÉS PUBLIQUES ----------------
               Text(
-                '2.2 — Notion de libertés publiques',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                  "f00056",
+                  '2.2 — Notion de libertés publiques',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -252,32 +476,58 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'La notion de libertés publiques présente deux facettes complémentaires :\n\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00057",
+                    'La notion de libertés publiques présente deux facettes complémentaires :\n\n',
+                  ),
                 ),
                 TextSpan(
-                  text: '• La notion de liberté : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00058",
+                    '• La notion de liberté : ',
+                  ),
+                  style: TextStyle(fontWeight: FontWeight.w700),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00059",
+                    'elle renvoie aux choix individuels, aux convictions, à la vie privée.\n',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00060",
+                    '• Le qualificatif "publiques" : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'elle renvoie aux choix individuels, aux convictions, à la vie privée.\n',
-                ),
-                TextSpan(
-                  text: '• Le qualificatif "publiques" : ',
-                  style: TextStyle(fontWeight: FontWeight.w700),
-                ),
-                TextSpan(
-                  text:
-                      'il souligne l’intervention de l’État, qui reconnaît, encadre et '
-                      'protège ces libertés par le biais de normes juridiques.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00061",
+                        'il souligne l’intervention de l’État, qui reconnaît, encadre et ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00062",
+                        'protège ces libertés par le biais de normes juridiques.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               Text(
-                'Définition juridique issue du cours',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                  "f00063",
+                  'Définition juridique issue du cours',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -286,15 +536,35 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               _Paragraph.rich([
-                const TextSpan(
-                  text: 'Les libertés publiques peuvent être définies comme : ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00064",
+                    'Les libertés publiques peuvent être définies comme : ',
+                  ),
                 ),
                 TextSpan(
                   text:
-                      '« les libertés fondamentales reconnues par l’État, consacrées par un '
-                      'texte (constitutionnel, législatif, éventuellement réglementaire ou '
-                      'convention internationale ratifiée), dont l’exercice est organisé et '
-                      'encadré, et dont les atteintes sont sanctionnées. »',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00065",
+                        '« les libertés fondamentales reconnues par l’État, consacrées par un ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00066",
+                        'texte (constitutionnel, législatif, éventuellement réglementaire ou ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00067",
+                        'convention internationale ratifiée), dont l’exercice est organisé et ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00068",
+                        'encadré, et dont les atteintes sont sanctionnées. »',
+                      ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
@@ -302,54 +572,130 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Reconnaissance par un texte : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00069",
+                    'Reconnaissance par un texte : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'une liberté n’est "publique" que si elle est formellement inscrite '
-                      'dans l’ordre juridique (Constitution, loi, convention internationale).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00070",
+                        'une liberté n’est "publique" que si elle est formellement inscrite ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00071",
+                        'dans l’ordre juridique (Constitution, loi, convention internationale).',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Réglementation de l’exercice : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00072",
+                    'Réglementation de l’exercice : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'l’État fixe les conditions d’exercice de la liberté (déclarations '
-                      'préalables, autorisations, contrôles…). Ces règles ne doivent jamais '
-                      'vider la liberté de sa substance.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00073",
+                        'l’État fixe les conditions d’exercice de la liberté (déclarations ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00074",
+                        'préalables, autorisations, contrôles…). Ces règles ne doivent jamais ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00075",
+                        'vider la liberté de sa substance.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Sanction des atteintes : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                    "f00076",
+                    'Sanction des atteintes : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'toute restriction illégale peut être censurée par le juge, ce qui '
-                      'garantit concrètement l’effectivité des libertés publiques.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00077",
+                        'toute restriction illégale peut être censurée par le juge, ce qui ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                        "f00078",
+                        'garantit concrètement l’effectivité des libertés publiques.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: 'À retenir pour la pratique policière',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                  "f00079",
+                  'À retenir pour la pratique policière',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Toutes les libertés n’entrent pas dans la catégorie des libertés '
-                        'publiques. Sont des libertés publiques celles qui intéressent les '
-                        'rapports entre les particuliers et les autorités publiques et que '
-                        'l’État a choisi de consacrer, d’organiser et de protéger. '
-                        'Lorsqu’un policier intervient dans ce domaine (manifestation, '
-                        'contrôle d’identité, perquisition, mesures administratives, etc.), '
-                        'il agit donc au cœur même des droits fondamentaux : la légalité et la '
-                        'proportionnalité de son action seront particulièrement contrôlées.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00080",
+                          'Toutes les libertés n’entrent pas dans la catégorie des libertés ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00081",
+                          'publiques. Sont des libertés publiques celles qui intéressent les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00082",
+                          'rapports entre les particuliers et les autorités publiques et que ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00083",
+                          'l’État a choisi de consacrer, d’organiser et de protéger. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00084",
+                          'Lorsqu’un policier intervient dans ce domaine (manifestation, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00085",
+                          'contrôle d’identité, perquisition, mesures administratives, etc.), ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00086",
+                          'il agit donc au cœur même des droits fondamentaux : la légalité et la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/notion_libertes_publiques_page.dart",
+                          "f00087",
+                          'proportionnalité de son action seront particulièrement contrôlées.',
+                        ),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AgressionArmeeCrapuleuxPage extends StatelessWidget {
   const AgressionArmeeCrapuleuxPage({super.key});
@@ -59,10 +60,18 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Pratiques pro en intervention",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+            "f00002",
+            "Pratiques pro en intervention",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Intervention face à une agression armée\nà caractère crapuleux",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00003",
+              "Intervention face à une agression armée\nà caractère crapuleux",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,7 +100,11 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Réf. vS.01-2016",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00004",
+              "Réf. vS.01-2016",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w700,
               fontSize: 13.5,
@@ -98,21 +115,37 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (le texte fourni ne donne pas d’article précis)
           _ConditionCard(
-            title: "Cadre légal (à compléter)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00005",
+              "Cadre légal (à compléter)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ton document décrit une doctrine/méthode d’intervention mais ne mentionne pas d’articles précis (CP/CPP/CSI). "
-                        "Ajoute ici les articles/références internes que tu veux afficher : je les formaterai en rouge (ex. ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                          "f00006",
+                          "Ton document décrit une doctrine/méthode d’intervention mais ne mentionne pas d’articles précis (CP/CPP/CSI). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                          "f00007",
+                          "Ajoute ici les articles/références internes que tu veux afficher : je les formaterai en rouge (ex. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Article 123 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00008",
+                      "Article 123 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -132,15 +165,31 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention des forces de police dans le contexte particulièrement dangereux d’une agression armée, "
-                "sur réquisition ou de manière inopinée, exige la mise en œuvre de précautions particulières.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00009",
+                      "L’intervention des forces de police dans le contexte particulièrement dangereux d’une agression armée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00010",
+                      "sur réquisition ou de manière inopinée, exige la mise en œuvre de précautions particulières.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Comme pour toute intervention, le policier prépare et réalise son action selon la méthode de raisonnement "
-                "opérationnel (MRO).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00011",
+                      "Comme pour toute intervention, le policier prépare et réalise son action selon la méthode de raisonnement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00012",
+                      "opérationnel (MRO).",
+                    ),
               ),
             ],
           ),
@@ -149,21 +198,42 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // MRO
           _ConditionCard(
-            title: "Méthode de raisonnement opérationnel (MRO)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00013",
+              "Méthode de raisonnement opérationnel (MRO)",
+            ),
             cardColor: cardMro,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Les 3 phases chronologiques"),
-              _BulletPoint(
-                text: "Analyse de la situation : « Que se passe-t-il ? »",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00014",
+                  "Les 3 phases chronologiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Cadre juridique : « Quel est le cadre légal de l’intervention ? »",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00015",
+                  "Analyse de la situation : « Que se passe-t-il ? »",
+                ),
               ),
               _BulletPoint(
-                text: "Tactique d’action : « Comment intervenir ? »",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00016",
+                  "Cadre juridique : « Quel est le cadre légal de l’intervention ? »",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00017",
+                  "Tactique d’action : « Comment intervenir ? »",
+                ),
               ),
             ],
           ),
@@ -172,26 +242,56 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // Objectifs suite à levée de doute confirmée
           _ConditionCard(
-            title: "Objectifs après confirmation (levée de doute)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00018",
+              "Objectifs après confirmation (levée de doute)",
+            ),
             cardColor: cardMro,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La levée de doute ayant permis de confirmer une agression armée à caractère crapuleux en cours, "
-                "les mesures prises visent à favoriser la prise de renseignements et à prendre les premières mesures de sécurité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00019",
+                      "La levée de doute ayant permis de confirmer une agression armée à caractère crapuleux en cours, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00020",
+                      "les mesures prises visent à favoriser la prise de renseignements et à prendre les premières mesures de sécurité.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Les renseignements servent principalement à :"),
-              _IntroBullet(
-                text:
-                    "Évaluer en temps réel, le plus précisément possible, la dangerosité du (des) auteur(s) et les risques pour les tiers.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00021",
+                  "Les renseignements servent principalement à :",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Favoriser une interpellation ultérieure du (des) mis en cause dans des conditions optimales de sécurité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00022",
+                  "Évaluer en temps réel, le plus précisément possible, la dangerosité du (des) auteur(s) et les risques pour les tiers.",
+                ),
               ),
-              _IntroBullet(text: "Faciliter l’enquête judiciaire."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00023",
+                  "Favoriser une interpellation ultérieure du (des) mis en cause dans des conditions optimales de sécurité.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00024",
+                  "Faciliter l’enquête judiciaire.",
+                ),
+              ),
             ],
           ),
 
@@ -199,27 +299,49 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // Ce qu'il ne faut pas faire
           _ConditionCard(
-            title: "Ce qu’il ne faut pas faire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00025",
+              "Ce qu’il ne faut pas faire",
+            ),
             cardColor: cardDont,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Tenter de pénétrer dans l’établissement."),
+            children: [
               _BulletPoint(
-                text:
-                    "Chercher à bloquer le(s) agresseur(s) à l’intérieur, au risque de provoquer une prise d’otages ou un affrontement armé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00026",
+                  "Tenter de pénétrer dans l’établissement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Provoquer l’interpellation du ou des auteur(s) à leur sortie afin d’éviter un affrontement armé sur la voie publique.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00027",
+                  "Chercher à bloquer le(s) agresseur(s) à l’intérieur, au risque de provoquer une prise d’otages ou un affrontement armé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Faire obstacle au départ d’un véhicule dans lequel les auteurs prendraient place pour s’enfuir.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00028",
+                  "Provoquer l’interpellation du ou des auteur(s) à leur sortie afin d’éviter un affrontement armé sur la voie publique.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Faire usage des armes à feu sur un véhicule pour faire cesser la fuite, sauf cas de légitime défense.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00029",
+                  "Faire obstacle au départ d’un véhicule dans lequel les auteurs prendraient place pour s’enfuir.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00030",
+                  "Faire usage des armes à feu sur un véhicule pour faire cesser la fuite, sauf cas de légitime défense.",
+                ),
               ),
             ],
           ),
@@ -228,40 +350,108 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // Ce qu'il est préconisé de faire
           _ConditionCard(
-            title: "Ce qu’il est préconisé de faire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00031",
+              "Ce qu’il est préconisé de faire",
+            ),
             cardColor: cardDo,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Solliciter du renfort."),
+            children: [
               _BulletPoint(
-                text:
-                    "Solliciter la présence sur les lieux de l’OPJ territorialement compétent.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00032",
+                  "Solliciter du renfort.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dans la mesure du possible, interdire toute approche ou passage devant l’établissement depuis le poste d’observation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00033",
+                  "Solliciter la présence sur les lieux de l’OPJ territorialement compétent.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00034",
+                  "Dans la mesure du possible, interdire toute approche ou passage devant l’établissement depuis le poste d’observation.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Alerte CIC immédiate en cas de fuite / sortie"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00035",
+                  "Alerte CIC immédiate en cas de fuite / sortie",
+                ),
+              ),
               _Paragraph(
-                "Aviser instantanément le CIC afin de communiquer les premières informations relatives à :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00036",
+                  "Aviser instantanément le CIC afin de communiquer les premières informations relatives à :",
+                ),
               ),
               SizedBox(height: 8),
-              _IntroBullet(text: "Leur nombre."),
-              _IntroBullet(text: "Leur description physique."),
-              _IntroBullet(text: "Leur tenue vestimentaire."),
               _IntroBullet(
-                text:
-                    "La présence d’arme(s) (nombre, description générique : arme de poing, arme d’épaule, fusil, grenade, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00037",
+                  "Leur nombre.",
+                ),
               ),
-              _IntroBullet(text: "La présence supposée ou avérée d’otage(s)."),
-              _IntroBullet(text: "La direction de fuite."),
-              _IntroBullet(text: "Le moyen de locomotion utilisé."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00038",
+                  "Leur description physique.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00039",
+                  "Leur tenue vestimentaire.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00040",
+                  "La présence d’arme(s) (nombre, description générique : arme de poing, arme d’épaule, fusil, grenade, etc.).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00041",
+                  "La présence supposée ou avérée d’otage(s).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00042",
+                  "La direction de fuite.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00043",
+                  "Le moyen de locomotion utilisé.",
+                ),
+              ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Le cas échéant, changer ou multiplier les postes d’observation pour se soustraire à un risque ou favoriser la prise de renseignements.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00044",
+                  "Le cas échéant, changer ou multiplier les postes d’observation pour se soustraire à un risque ou favoriser la prise de renseignements.",
+                ),
               ),
             ],
           ),
@@ -270,22 +460,42 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // Différer interpellation
           _ConditionCard(
-            title: "Principe tactique — différer l’interpellation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00045",
+              "Principe tactique — différer l’interpellation",
+            ),
             cardColor: cardMro,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Différer l’interpellation permet aux services d’investigation, assistés de groupes spécialisés, "
-                "d’appréhender les auteurs dans de meilleures conditions de lieu et de temps, avec des risques évalués et contrôlés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00046",
+                      "Différer l’interpellation permet aux services d’investigation, assistés de groupes spécialisés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00047",
+                      "d’appréhender les auteurs dans de meilleures conditions de lieu et de temps, avec des risques évalués et contrôlés.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Objectif : privilégier le renseignement, éviter l’affrontement immédiat et préparer une interpellation "
-                        "dans un cadre maîtrisé.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                          "f00048",
+                          "Objectif : privilégier le renseignement, éviter l’affrontement immédiat et préparer une interpellation ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                          "f00049",
+                          "dans un cadre maîtrisé.",
+                        ),
                   ),
                 ],
               ),
@@ -296,27 +506,49 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // Intervention dans l’établissement (exceptionnel)
           _ConditionCard(
-            title: "Intervention dans l’établissement (exceptionnel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00050",
+              "Intervention dans l’établissement (exceptionnel)",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention des policiers dans l’établissement peut exceptionnellement être envisagée, notamment lorsque :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00051",
+                  "L’intervention des policiers dans l’établissement peut exceptionnellement être envisagée, notamment lorsque :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Les circonstances liées à la protection des personnes l’exigent.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00052",
+                  "Les circonstances liées à la protection des personnes l’exigent.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les renseignements disponibles, l’équipement des policiers et leur nombre le permettent.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00053",
+                  "Les renseignements disponibles, l’équipement des policiers et leur nombre le permettent.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dans certaines circonstances et sur instructions de l’autorité désignée, des brigades spécialisées, "
-                "entraînées et connaissant l’affaire en cours peuvent également intervenir.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00054",
+                      "Dans certaines circonstances et sur instructions de l’autorité désignée, des brigades spécialisées, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00055",
+                      "entraînées et connaissant l’affaire en cours peuvent également intervenir.",
+                    ),
               ),
             ],
           ),
@@ -325,21 +557,49 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // Confrontation inopinée
           _ConditionCard(
-            title: "La confrontation inopinée",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00056",
+              "La confrontation inopinée",
+            ),
             cardColor: cardDont,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les policiers peuvent être confrontés de manière inopinée à un ou plusieurs auteurs d’une agression armée en cours, "
-                "ne permettant pas la mise en œuvre préalable de tous les principes de la levée de doute.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00057",
+                      "Les policiers peuvent être confrontés de manière inopinée à un ou plusieurs auteurs d’une agression armée en cours, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                      "f00058",
+                      "ne permettant pas la mise en œuvre préalable de tous les principes de la levée de doute.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Priorité"),
-              _Paragraph("Se soustraire à une possible confrontation armée."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00059",
+                  "Priorité",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00060",
+                  "Se soustraire à une possible confrontation armée.",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dès que possible, les policiers chercheront à se poster afin d’appliquer le protocole d’intervention propre à ce type d’évènement.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00061",
+                  "Dès que possible, les policiers chercheront à se poster afin d’appliquer le protocole d’intervention propre à ce type d’évènement.",
+                ),
               ),
             ],
           ),
@@ -348,34 +608,57 @@ class AgressionArmeeCrapuleuxPage extends StatelessWidget {
 
           // Dispositions post-événementielles
           _ConditionCard(
-            title: "Dispositions post-événementielles",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+              "f00062",
+              "Dispositions post-événementielles",
+            ),
             cardColor: cardPost,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Après le départ des auteurs, se rendre sur place et prendre les mesures suivantes :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00063",
+                  "Après le départ des auteurs, se rendre sur place et prendre les mesures suivantes :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Sécuriser les lieux (s’assurer de l’absence d’autre(s) auteur(s) sur les lieux).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00064",
+                  "Sécuriser les lieux (s’assurer de l’absence d’autre(s) auteur(s) sur les lieux).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Porter secours aux victimes et, le cas échéant, aviser les sapeurs-pompiers.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00065",
+                  "Porter secours aux victimes et, le cas échéant, aviser les sapeurs-pompiers.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Relever les identités des victimes et des témoins et les maintenir sur les lieux jusqu’à l’arrivée de l’OPJ.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00066",
+                  "Relever les identités des victimes et des témoins et les maintenir sur les lieux jusqu’à l’arrivée de l’OPJ.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préserver les traces et indices, notamment d’origine papillaire et/ou biologique (mouchoir, mégot, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00067",
+                  "Préserver les traces et indices, notamment d’origine papillaire et/ou biologique (mouchoir, mégot, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prendre les renseignements sur la commission des faits (coups de feu, nombre d’auteurs, mode opératoire précis, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/agression_armee_crapuleux_page.dart",
+                  "f00068",
+                  "Prendre les renseignements sur la commission des faits (coups de feu, nombre d’auteurs, mode opératoire précis, etc.).",
+                ),
               ),
             ],
           ),

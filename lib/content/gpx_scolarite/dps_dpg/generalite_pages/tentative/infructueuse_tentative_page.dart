@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — LA TENTATIVE INFRUCTUEUSE
@@ -42,10 +43,18 @@ class InfructueuseTentativePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La tentative infructueuse',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+            "f00002",
+            'La tentative infructueuse',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -59,7 +68,11 @@ class InfructueuseTentativePage extends StatelessWidget {
         children: [
           // En-tête général
           Text(
-            'IV. La tentative infructueuse',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+              "f00003",
+              'IV. La tentative infructueuse',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -68,8 +81,16 @@ class InfructueuseTentativePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'La tentative est infructueuse quand l’auteur accomplit tous les actes '
-            'd’exécution sans parvenir au résultat recherché.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                  "f00004",
+                  'La tentative est infructueuse quand l’auteur accomplit tous les actes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                  "f00005",
+                  'd’exécution sans parvenir au résultat recherché.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 14,
@@ -79,7 +100,11 @@ class InfructueuseTentativePage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Elle recouvre deux hypothèses :',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+              "f00006",
+              'Elle recouvre deux hypothèses :',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 14,
@@ -88,40 +113,74 @@ class InfructueuseTentativePage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          const _BulletPoint(text: 'l’infraction manquée ;'),
-          const _BulletPoint(text: 'l’infraction impossible.'),
+          _BulletPoint(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+              "f00007",
+              'l’infraction manquée ;',
+            ),
+          ),
+          _BulletPoint(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+              "f00008",
+              'l’infraction impossible.',
+            ),
+          ),
 
           const SizedBox(height: 18),
 
           // INFRACTION MANQUÉE
           _HypoCard(
-            title: '1. L’infraction manquée',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+              "f00009",
+              '1. L’infraction manquée',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Elle suppose une exécution complète qui ne réussit pas.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                  "f00010",
+                  'Elle suppose une exécution complète qui ne réussit pas.',
+                ),
               ),
               SizedBox(height: 10),
               _ExempleBox(
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'L’auteur tire un coup de feu en direction de la victime mais, du fait de sa maladresse, la rate : tous les actes d’exécution ont été accomplis, ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00011",
+                      'L’auteur tire un coup de feu en direction de la victime mais, du fait de sa maladresse, la rate : tous les actes d’exécution ont été accomplis, ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        'mais le résultat (atteinte corporelle) ne se produit pas.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00012",
+                      'mais le résultat (atteinte corporelle) ne se produit pas.',
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
                   TextSpan(text: '\n\n'),
                   TextSpan(
                     text:
-                        'On peut aussi citer l’auteur qui poignarde à plusieurs reprises une personne, '
-                        'mais dont les blessures ne sont finalement pas mortelles grâce à une prise en charge médicale rapide.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                          "f00013",
+                          'On peut aussi citer l’auteur qui poignarde à plusieurs reprises une personne, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                          "f00014",
+                          'mais dont les blessures ne sont finalement pas mortelles grâce à une prise en charge médicale rapide.',
+                        ),
                   ),
                 ],
               ),
@@ -130,11 +189,18 @@ class InfructueuseTentativePage extends StatelessWidget {
                 title: 'Sanction',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'L’infraction manquée est punie comme l’infraction tentée ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00015",
+                      'L’infraction manquée est punie comme l’infraction tentée ',
+                    ),
                   ),
                   TextSpan(
-                    text: '(art. 121-5 C. pén.).',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00016",
+                      '(art. 121-5 C. pén.).',
+                    ),
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       decoration: TextDecoration.underline,
@@ -149,20 +215,37 @@ class InfructueuseTentativePage extends StatelessWidget {
 
           // INFRACTION IMPOSSIBLE
           _HypoCard(
-            title: '2. L’infraction impossible',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+              "f00017",
+              '2. L’infraction impossible',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: 'L’auteur n’a pas obtenu de résultat. '),
                 TextSpan(
-                  text:
-                      'Ce résultat ne pouvait pas exister en raison d’une impossibilité ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                    "f00018",
+                    'L’auteur n’a pas obtenu de résultat. ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'ignorée de l’auteur au moment des faits.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                    "f00019",
+                    'Ce résultat ne pouvait pas exister en raison d’une impossibilité ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                    "f00020",
+                    'ignorée de l’auteur au moment des faits.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
@@ -172,16 +255,30 @@ class InfructueuseTentativePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        '• Coup de feu tiré avec une arme chargée à blanc : l’auteur croit tuer, '
-                        'mais les munitions ne peuvent pas provoquer le décès.\n',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                          "f00021",
+                          '• Coup de feu tiré avec une arme chargée à blanc : l’auteur croit tuer, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                          "f00022",
+                          'mais les munitions ne peuvent pas provoquer le décès.\n',
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        '• Auteur qui tire sur un cadavre en pensant viser une personne vivante.\n',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00023",
+                      '• Auteur qui tire sur un cadavre en pensant viser une personne vivante.\n',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        '• Pickpocket qui plonge la main dans une poche… vide : l’objet visé n’a jamais été présent.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00024",
+                      '• Pickpocket qui plonge la main dans une poche… vide : l’objet visé n’a jamais été présent.',
+                    ),
                   ),
                 ],
               ),
@@ -190,12 +287,18 @@ class InfructueuseTentativePage extends StatelessWidget {
                 title: 'Sanction',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'L’infraction impossible est punie comme l’infraction tentée, ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00025",
+                      'L’infraction impossible est punie comme l’infraction tentée, ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        'dès lors qu’il y a eu commencement d’exécution de l’infraction projetée.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/infructueuse_tentative_page.dart",
+                      "f00026",
+                      'dès lors qu’il y a eu commencement d’exécution de l’infraction projetée.',
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ],

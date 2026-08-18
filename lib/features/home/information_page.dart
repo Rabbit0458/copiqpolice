@@ -30,6 +30,10 @@ class _InformationPageState extends State<InformationPage>
   String _publicVersion = 'v1.0.0'; // fallback si BDD non dispo
   List<Map<String, dynamic>> _patchNotes = [];
   bool _loadingNotes = true;
+  String _presentation =
+      'Tout COP’IQ au même endroit : préparation, scolarité, entraînements et accompagnement.';
+  String _serviceStatus = 'Tous les services sont opérationnels';
+  int _faqCount = 0;
 
   late final AnimationController _ac;
   late final Animation<double> _fadeAll;
@@ -43,6 +47,7 @@ class _InformationPageState extends State<InformationPage>
     _setupAnims();
     _bootstrapMeta();
     _loadPublicVersion();
+    _loadInformationContent();
     _loadPatchNotes();
   }
 
@@ -109,12 +114,10 @@ class _InformationPageState extends State<InformationPage>
 
   Future<void> _loadPatchNotes() async {
     try {
-      final rows = await _sb
-          .from('patch_notes')
-          .select('id,title,body,is_published,created_at')
-          .eq('is_published', true)
-          .order('created_at', ascending: false)
-          .limit(10);
+      final rows = await _sb.rpc(
+        'list_public_patch_notes',
+        params: {'p_limit': 10},
+      );
 
       final list = (rows as List?)?.cast<Map<String, dynamic>>() ?? [];
       if (mounted) {
@@ -126,6 +129,31 @@ class _InformationPageState extends State<InformationPage>
     } catch (_) {
       if (mounted) setState(() => _loadingNotes = false);
     }
+  }
+
+  Future<void> _loadInformationContent() async {
+    try {
+      final rows = await _sb
+          .from('information_contents')
+          .select('content_type,summary,body_md,metadata')
+          .inFilter('content_type', ['information', 'faq', 'service_status']);
+      final items = (rows as List).cast<Map<String, dynamic>>();
+      final info = items
+          .where((e) => e['content_type'] == 'information')
+          .firstOrNull;
+      final status = items
+          .where((e) => e['content_type'] == 'service_status')
+          .firstOrNull;
+      if (!mounted) return;
+      setState(() {
+        final text = '${info?['summary'] ?? info?['body_md'] ?? ''}'.trim();
+        if (text.isNotEmpty) _presentation = text;
+        final statusText = '${status?['summary'] ?? status?['body_md'] ?? ''}'
+            .trim();
+        if (statusText.isNotEmpty) _serviceStatus = statusText;
+        _faqCount = items.where((e) => e['content_type'] == 'faq').length;
+      });
+    } catch (_) {}
   }
 
   String get _email => _sb.auth.currentUser?.email ?? '';
@@ -164,8 +192,12 @@ class _InformationPageState extends State<InformationPage>
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
               children: [
-                // Header minimal : device + OS
-                _MetaHeader(device: _device, os: _os),
+                _InformationHero(
+                  version: _publicVersion,
+                  device: _device,
+                  os: _os,
+                  serviceStatus: _serviceStatus,
+                ),
                 const SizedBox(height: 16),
 
                 // Présentation (résumé) + bouton sheet
@@ -173,17 +205,25 @@ class _InformationPageState extends State<InformationPage>
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'Présentation',
-                        style: t.textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.w800,
-                        ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.auto_awesome_rounded,
+                            color: t.colorScheme.primary,
+                            size: 20,
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            'Découvrir COP’IQ',
+                            style: t.textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ],
                       ),
                       const SizedBox(height: 6),
                       Text(
-                        "Plateforme IA pour la préparation concours (PA/GPX), la scolarité en école de police, "
-                        "et l’aide opérationnelle des actifs. Génération de QCM, oraux simulés, fiches de révision, "
-                        "cas pratiques, rédaction de PV, conseils procéduraux et tableau de bord personnalisé.",
+                        _presentation,
                         style: t.textTheme.bodySmall?.copyWith(
                           color: t.hintColor,
                           height: 1.35,
@@ -198,6 +238,25 @@ class _InformationPageState extends State<InformationPage>
                         ),
                       ),
                     ],
+                  ),
+                ),
+
+                const SizedBox(height: 12),
+
+                _InformationLinks(
+                  faqCount: _faqCount,
+                  onFaq: () => launchUrl(
+                    Uri.parse('https://copiq.fr/faq/'),
+                    mode: LaunchMode.externalApplication,
+                  ),
+                  onUpdates: _openAllPatchNotes,
+                  onLegal: () => launchUrl(
+                    Uri.parse('https://copiq.fr/mentions-legales/'),
+                    mode: LaunchMode.externalApplication,
+                  ),
+                  onPrivacy: () => launchUrl(
+                    Uri.parse('https://copiq.fr/privacy/'),
+                    mode: LaunchMode.externalApplication,
                   ),
                 ),
 
@@ -349,6 +408,236 @@ class _InformationPageState extends State<InformationPage>
 }
 
 // ================== UI blocs (style Profil) ==================
+
+class _InformationHero extends StatelessWidget {
+  final String version;
+  final String device;
+  final String os;
+  final String serviceStatus;
+  const _InformationHero({
+    required this.version,
+    required this.device,
+    required this.os,
+    required this.serviceStatus,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final t = Theme.of(context);
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: const Color(0xFF0D2B3E),
+        borderRadius: BorderRadius.circular(26),
+        border: Border.all(
+          color: const Color(0xFF2E6F95).withValues(alpha: .55),
+        ),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 48,
+                height: 48,
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: .1),
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const Icon(
+                  Icons.shield_outlined,
+                  color: Color(0xFFF6C85F),
+                  size: 26,
+                ),
+              ),
+              const SizedBox(width: 13),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'CENTRE D’INFORMATION',
+                      style: t.textTheme.labelSmall?.copyWith(
+                        color: Colors.white60,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 1,
+                      ),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      'COP’IQ à tes côtés',
+                      style: t.textTheme.titleLarge?.copyWith(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 6),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF31C48D).withValues(alpha: .14),
+                  borderRadius: BorderRadius.circular(999),
+                ),
+                child: Text(
+                  version,
+                  style: const TextStyle(
+                    color: Color(0xFF75E6B8),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 18),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.all(13),
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: .08),
+              borderRadius: BorderRadius.circular(14),
+            ),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.only(top: 2),
+                  child: Icon(
+                    Icons.check_circle_rounded,
+                    color: Color(0xFF75E6B8),
+                    size: 18,
+                  ),
+                ),
+                const SizedBox(width: 9),
+                Expanded(
+                  child: Text(
+                    serviceStatus,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      height: 1.35,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 12),
+          Text(
+            '$device • $os',
+            style: const TextStyle(color: Colors.white54, fontSize: 12),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _InformationLinks extends StatelessWidget {
+  final int faqCount;
+  final VoidCallback onFaq;
+  final VoidCallback onUpdates;
+  final VoidCallback onLegal;
+  final VoidCallback onPrivacy;
+  const _InformationLinks({
+    required this.faqCount,
+    required this.onFaq,
+    required this.onUpdates,
+    required this.onLegal,
+    required this.onPrivacy,
+  });
+
+  @override
+  Widget build(BuildContext context) => GridView.count(
+    crossAxisCount: 2,
+    shrinkWrap: true,
+    physics: const NeverScrollableScrollPhysics(),
+    crossAxisSpacing: 10,
+    mainAxisSpacing: 10,
+    childAspectRatio: 1.42,
+    children: [
+      _InformationLink(
+        icon: Icons.help_outline_rounded,
+        title: 'FAQ',
+        subtitle: faqCount > 0 ? '$faqCount réponses' : 'Centre d’aide',
+        onTap: onFaq,
+      ),
+      _InformationLink(
+        icon: Icons.new_releases_outlined,
+        title: 'Nouveautés',
+        subtitle: 'Historique complet',
+        onTap: onUpdates,
+      ),
+      _InformationLink(
+        icon: Icons.gavel_rounded,
+        title: 'Mentions légales',
+        subtitle: 'Éditeur et droits',
+        onTap: onLegal,
+      ),
+      _InformationLink(
+        icon: Icons.privacy_tip_outlined,
+        title: 'Confidentialité',
+        subtitle: 'Tes données',
+        onTap: onPrivacy,
+      ),
+    ],
+  );
+}
+
+class _InformationLink extends StatelessWidget {
+  final IconData icon;
+  final String title;
+  final String subtitle;
+  final VoidCallback onTap;
+  const _InformationLink({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+    required this.onTap,
+  });
+  @override
+  Widget build(BuildContext context) {
+    final t = Theme.of(context);
+    return Material(
+      color: t.colorScheme.surface,
+      borderRadius: BorderRadius.circular(20),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: Container(
+          padding: const EdgeInsets.all(14),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(color: t.dividerColor.withValues(alpha: .18)),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(icon, color: t.colorScheme.primary, size: 22),
+              const Spacer(),
+              Text(
+                title,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(fontWeight: FontWeight.w900),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                subtitle,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: t.textTheme.bodySmall?.copyWith(color: t.hintColor),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 class _CardBlock extends StatelessWidget {
   final Widget child;
@@ -506,8 +795,9 @@ class _PatchNotesSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final t = Theme.of(context);
     final pad = MediaQuery.of(context).viewPadding.bottom;
+    final top = MediaQuery.of(context).viewPadding.top;
     return Padding(
-      padding: EdgeInsets.only(bottom: pad),
+      padding: EdgeInsets.only(top: top, bottom: pad),
       child: Material(
         color: t.colorScheme.surface,
         borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),

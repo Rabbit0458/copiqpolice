@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PvControleIdentitePage extends StatelessWidget {
   const PvControleIdentitePage({super.key});
@@ -56,10 +57,18 @@ class PvControleIdentitePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — Contrôle & vérification d’identité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+            "f00002",
+            "PV — Contrôle & vérification d’identité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PvControleIdentitePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de procès-verbal de contrôle d’identité\nsuivi d’une vérification d’identité",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00003",
+              "Canevas de procès-verbal de contrôle d’identité\nsuivi d’une vérification d’identité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,45 +99,77 @@ class PvControleIdentitePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Base légale (à viser dans le PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00004",
+              "Base légale (à viser dans le PV)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Contrôle d’identité : "),
                 TextSpan(
-                  text: "art. 78-2 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00005",
+                    "Contrôle d’identité : ",
                   ),
                 ),
                 TextSpan(
-                  text: " (selon l’alinéa correspondant aux constatations) ou ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00006",
+                    "art. 78-2 du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "art. 78-2-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00007",
+                    " (selon l’alinéa correspondant aux constatations) ou ",
                   ),
                 ),
-                TextSpan(text: " (locaux à usage professionnel)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00008",
+                    "art. 78-2-1 du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00009",
+                    " (locaux à usage professionnel).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Vérification d’identité : "),
                 TextSpan(
-                  text: "art. 78-3 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00010",
+                    "Vérification d’identité : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (si la personne ne justifie pas ou refuse de décliner son identité).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00011",
+                    "art. 78-3 du C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00012",
+                    " (si la personne ne justifie pas ou refuse de décliner son identité).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -132,8 +177,16 @@ class PvControleIdentitePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Formule obligatoire : l’A.P.J agit « sur l’ordre et sous la responsabilité » d’un O.P.J. "
-                        "Elle doit figurer au PV, sous peine de nullité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                          "f00013",
+                          "Formule obligatoire : l’A.P.J agit « sur l’ordre et sous la responsabilité » d’un O.P.J. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                          "f00014",
+                          "Elle doit figurer au PV, sous peine de nullité.",
+                        ),
                   ),
                 ],
               ),
@@ -144,13 +197,21 @@ class PvControleIdentitePage extends StatelessWidget {
 
           // Images PV (recto/verso) avec plein écran + zoom
           _ConditionCard(
-            title: "Modèles Canva (recto / verso)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00015",
+              "Modèles Canva (recto / verso)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur une image pour l’ouvrir en plein écran et zoomer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00016",
+                  "Appuie sur une image pour l’ouvrir en plein écran et zoomer.",
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableImageTile(
@@ -171,37 +232,80 @@ class PvControleIdentitePage extends StatelessWidget {
 
           // Lieu de saisine / instructions / assistants / mission
           _ConditionCard(
-            title: "1 → 4 — Saisine, instructions, assistants, mission",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00017",
+              "1 → 4 — Saisine, instructions, assistants, mission",
+            ),
             cardColor: cardOp,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00018",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Mentionner l’endroit exact où se situe l’équipage (adresse, secteur, repère utile).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00019",
+                  "Mentionner l’endroit exact où se situe l’équipage (adresse, secteur, repère utile).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00020",
+                  "2) Instructions",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "PV de saisine : l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00021",
+                  "PV de saisine : l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Assistants"),
-              _IntroBullet(
-                text:
-                    "Mentionner les fonctionnaires accompagnants (nom/grade/service).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00022",
+                  "3) Assistants",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Préciser la tenue : uniforme, tenue bourgeoise, port du brassard police.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00023",
+                  "Mentionner les fonctionnaires accompagnants (nom/grade/service).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00024",
+                  "Préciser la tenue : uniforme, tenue bourgeoise, port du brassard police.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("4) Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00025",
+                  "4) Mission",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Indiquer le but de la mission initiale (patrouille, sécurisation, présence dissuasive, réquisition…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00026",
+                  "Indiquer le but de la mission initiale (patrouille, sécurisation, présence dissuasive, réquisition…).",
+                ),
               ),
             ],
           ),
@@ -210,52 +314,98 @@ class PvControleIdentitePage extends StatelessWidget {
 
           // Constatations + cadres possibles
           _ConditionCard(
-            title: "5 — Constatations (justifier le contrôle)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00027",
+              "5 — Constatations (justifier le contrôle)",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Relater de manière précise les faits observés en faisant ressortir les éléments "
-                "objectifs qui justifient le contrôle d’identité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                      "f00028",
+                      "Relater de manière précise les faits observés en faisant ressortir les éléments ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                      "f00029",
+                      "objectifs qui justifient le contrôle d’identité.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Cadres possibles à mentionner"),
-              _BulletPoint(
-                text:
-                    "Raisons plausibles de soupçonner : infraction commise ou tentée — art. 78-2 al. 2 C.P.P.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00030",
+                  "Cadres possibles à mentionner",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préparation d’un crime ou d’un délit — art. 78-2 al. 3 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00031",
+                  "Raisons plausibles de soupçonner : infraction commise ou tentée — art. 78-2 al. 2 C.P.P.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Renseignements utiles à une enquête crime/délit — art. 78-2 al. 4 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00032",
+                  "Préparation d’un crime ou d’un délit — art. 78-2 al. 3 C.P.P.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Violation d’obligations/interdictions (CJ, ARSE, peine/mesure) — art. 78-2 al. 5 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00033",
+                  "Renseignements utiles à une enquête crime/délit — art. 78-2 al. 4 C.P.P.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Recherches ordonnées par une autorité judiciaire — art. 78-2 al. 6 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00034",
+                  "Violation d’obligations/interdictions (CJ, ARSE, peine/mesure) — art. 78-2 al. 5 C.P.P.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00035",
+                  "Recherches ordonnées par une autorité judiciaire — art. 78-2 al. 6 C.P.P.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Réquisitions du procureur (infractions, lieux, périodes) — art. 78-2 al. 7 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00036",
+                  "Réquisitions du procureur (infractions, lieux, périodes) — art. 78-2 al. 7 C.P.P.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prévenir une atteinte à l’ordre public (menace caractérisée) — art. 78-2 al. 8 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00037",
+                  "Prévenir une atteinte à l’ordre public (menace caractérisée) — art. 78-2 al. 8 C.P.P.",
+                ),
               ),
               _BulletPoint(
-                text: "Zone frontière — art. 78-2 al. 9 à 17 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00038",
+                  "Zone frontière — art. 78-2 al. 9 à 17 C.P.P.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Locaux professionnels (réquisitions) — art. 78-2-1 C.P.P.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00039",
+                  "Locaux professionnels (réquisitions) — art. 78-2-1 C.P.P.",
+                ),
               ),
             ],
           ),
@@ -264,43 +414,81 @@ class PvControleIdentitePage extends StatelessWidget {
 
           // Instructions / visa article
           _ConditionCard(
-            title: "6 → 7 — Formule OPJ & visa de l’article",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00040",
+              "6 → 7 — Formule OPJ & visa de l’article",
+            ),
             cardColor: cardPoints,
             accent: accentAmber,
             titleColor: textMain,
             children: [
-              const _SubTitle("6) Instructions (formule obligatoire)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00041",
+                  "6) Instructions (formule obligatoire)",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Le PV doit mentionner : "),
                 TextSpan(
-                  text: "« sur l’ordre et sous la responsabilité »",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00042",
+                    "Le PV doit mentionner : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00043",
+                    "« sur l’ordre et sous la responsabilité »",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : const Color(0xFF0D47A1),
                   ),
                 ),
-                const TextSpan(text: " d’un O.P.J. (obligatoire au PV)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00044",
+                    " d’un O.P.J. (obligatoire au PV).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle("7) Visa de l’article"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00045",
+                  "7) Visa de l’article",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Selon les constatations, viser l’alinéa adapté de ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00046",
+                    "Selon les constatations, viser l’alinéa adapté de ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’art. 78-2 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00047",
+                    "l’art. 78-2 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
-                  text: "l’art. 78-2-1 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                    "f00048",
+                    "l’art. 78-2-1 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -311,39 +499,88 @@ class PvControleIdentitePage extends StatelessWidget {
 
           // Contrôle / résultat / palpation / avis OPJ
           _ConditionCard(
-            title: "8 → 11 — Contrôle, résultat, palpation, avis OPJ",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00049",
+              "8 → 11 — Contrôle, résultat, palpation, avis OPJ",
+            ),
             cardColor: cardOp,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("8) Contrôle"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00050",
+                  "8) Contrôle",
+                ),
+              ),
               _IntroBullet(
-                text: "Mentionner l’heure et le lieu du contrôle.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00051",
+                  "Mentionner l’heure et le lieu du contrôle.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("9) Résultat du contrôle"),
-              _IntroBullet(
-                text:
-                    "Identifier la personne en style indirect : état civil et adresse (à l’exclusion des éléments de personnalité).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00052",
+                  "9) Résultat du contrôle",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Si l’individu ne justifie pas / refuse : mentionner clairement l’impossibilité ou le refus.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00053",
+                  "Identifier la personne en style indirect : état civil et adresse (à l’exclusion des éléments de personnalité).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00054",
+                  "Si l’individu ne justifie pas / refuse : mentionner clairement l’impossibilité ou le refus.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("10) Palpation de sécurité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00055",
+                  "10) Palpation de sécurité",
+                ),
+              ),
               _Paragraph(
-                "Elle n’est pas systématique. Elle se justifie uniquement selon les circonstances de temps/lieu "
-                "et la nécessité de vérifier l’absence d’objet dangereux (respect et discernement).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                      "f00056",
+                      "Elle n’est pas systématique. Elle se justifie uniquement selon les circonstances de temps/lieu ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                      "f00057",
+                      "et la nécessité de vérifier l’absence d’objet dangereux (respect et discernement).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("11) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00058",
+                  "11) Avis O.P.J.",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Mentionner les instructions reçues. La mise en œuvre de la vérification d’identité relève de la responsabilité exclusive de l’O.P.J.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00059",
+                  "Mentionner les instructions reçues. La mise en œuvre de la vérification d’identité relève de la responsabilité exclusive de l’O.P.J.",
+                ),
               ),
             ],
           ),
@@ -352,47 +589,99 @@ class PvControleIdentitePage extends StatelessWidget {
 
           // Retour / clôture / présentation OPJ / recherches / annexe
           _ConditionCard(
-            title:
-                "12 → 16 — Retour, clôture, présentation OPJ, recherches, annexe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+              "f00060",
+              "12 → 16 — Retour, clôture, présentation OPJ, recherches, annexe",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("12) Retour au service"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00061",
+                  "12) Retour au service",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Préciser si la personne suit de plein gré ou sous contrainte. Tout usage de la force doit être circonstancié.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00062",
+                  "Préciser si la personne suit de plein gré ou sous contrainte. Tout usage de la force doit être circonstancié.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("13) Énonciation terminale (clôture)"),
-              _IntroBullet(
-                text:
-                    "Si déclarations au style direct : signature de la personne. Si style indirect : pas de signature.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00063",
+                  "13) Énonciation terminale (clôture)",
+                ),
               ),
               _IntroBullet(
-                text: "L’indication de l’heure est facultative.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00064",
+                  "Si déclarations au style direct : signature de la personne. Si style indirect : pas de signature.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00065",
+                  "L’indication de l’heure est facultative.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("14) Présentation à l’O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00066",
+                  "14) Présentation à l’O.P.J.",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Mentionner l’heure de présentation, le compte-rendu verbal et les instructions données.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00067",
+                  "Mentionner l’heure de présentation, le compte-rendu verbal et les instructions données.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("15) Mention — recherches administratives"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00068",
+                  "15) Mention — recherches administratives",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Préciser que les recherches ont été effectuées (F.P.R., T.A.J. le cas échéant) et qu’aucune recherche ne vise la personne (si c’est le résultat).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00069",
+                  "Préciser que les recherches ont été effectuées (F.P.R., T.A.J. le cas échéant) et qu’aucune recherche ne vise la personne (si c’est le résultat).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("16) Annexe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00070",
+                  "16) Annexe",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Annexer la copie de la réquisition du procureur justifiant le contrôle d’identité (si contrôle sur réquisitions).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/controle_identite/pv_controle_identite_page.dart",
+                  "f00071",
+                  "Annexer la copie de la réquisition du procureur justifiant le contrôle d’identité (si contrôle sur réquisitions).",
+                ),
               ),
             ],
           ),
@@ -798,9 +1087,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

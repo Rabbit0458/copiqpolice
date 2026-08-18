@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
   const MenacesAvecConditionPageGPXSchool({super.key});
@@ -56,10 +57,18 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes aux biens",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+            "f00002",
+            "Atteintes aux biens",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Menaces de destruction, dégradation ou détérioration avec condition",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+              "f00003",
+              "Menaces de destruction, dégradation ou détérioration avec condition",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,14 +99,26 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La menace, par quelque moyen que ce soit, de commettre une destruction, une dégradation "
-                "ou une détérioration lorsqu’elle est faite avec l’ordre de remplir une condition, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00005",
+                      "La menace, par quelque moyen que ce soit, de commettre une destruction, une dégradation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00006",
+                      "ou une détérioration lorsqu’elle est faite avec l’ordre de remplir une condition, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -102,22 +127,30 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-13 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00008",
+                    "Article 322-13 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les menaces d’atteintes aux biens avec condition.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00009",
+                    " : définit et réprime les menaces d’atteintes aux biens avec condition.",
+                  ),
                 ),
               ]),
             ],
@@ -127,36 +160,110 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) La forme de la menace"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00011",
+                  "A) La forme de la menace",
+                ),
+              ),
               _Paragraph(
-                "La menace est l’annonce d’un mal que l’on dit vouloir faire.\n"
-                "Peu importe sa forme : elle peut être extériorisée « par quelque moyen que ce soit » "
-                "(écrit, moyens informatiques, vidéo, messages, menaces verbales, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00012",
+                      "La menace est l’annonce d’un mal que l’on dit vouloir faire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00013",
+                      "Peu importe sa forme : elle peut être extériorisée « par quelque moyen que ce soit » ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00014",
+                      "(écrit, moyens informatiques, vidéo, messages, menaces verbales, etc.).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) L’objet de la menace"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00015",
+                  "B) L’objet de la menace",
+                ),
+              ),
               _Paragraph(
-                "La menace doit viser un bien déterminé : elle doit porter sur une destruction, une dégradation "
-                "ou une détérioration envisagée à l’encontre d’un bien identifié (ou identifiable).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00016",
+                      "La menace doit viser un bien déterminé : elle doit porter sur une destruction, une dégradation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00017",
+                      "ou une détérioration envisagée à l’encontre d’un bien identifié (ou identifiable).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) La condition (élément clé)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00018",
+                  "C) La condition (élément clé)",
+                ),
+              ),
               _Paragraph(
-                "L’ordre de remplir une condition est exigé.\n"
-                "La condition peut prendre diverses formes :\n"
-                "• une action ou une abstention ;\n"
-                "• une obligation de faire ou de ne pas faire.\n\n"
-                "Il s’agit d’une injonction faite à autrui : la victime se trouve contrainte de s’y soumettre "
-                "si elle veut éviter la réalisation du mal annoncé.\n"
-                "L’auteur porte atteinte à la liberté d’agir de la victime en l’intimidant et en la contraignant "
-                "à adopter un certain comportement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00019",
+                      "L’ordre de remplir une condition est exigé.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00020",
+                      "La condition peut prendre diverses formes :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00021",
+                      "• une action ou une abstention ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00022",
+                      "• une obligation de faire ou de ne pas faire.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00023",
+                      "Il s’agit d’une injonction faite à autrui : la victime se trouve contrainte de s’y soumettre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00024",
+                      "si elle veut éviter la réalisation du mal annoncé.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00025",
+                      "L’auteur porte atteinte à la liberté d’agir de la victime en l’intimidant et en la contraignant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00026",
+                      "à adopter un certain comportement.",
+                    ),
               ),
             ],
           ),
@@ -165,16 +272,36 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+              "f00027",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intention coupable est requise : volonté d’atteindre moralement la victime.\n"
-                "Le mobile est indifférent.\n"
-                "Il est également indifférent que l’auteur des menaces n’ait manifestement pas les moyens "
-                "de les mettre à exécution.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00028",
+                      "L’intention coupable est requise : volonté d’atteindre moralement la victime.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00029",
+                      "Le mobile est indifférent.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00030",
+                      "Il est également indifférent que l’auteur des menaces n’ait manifestement pas les moyens ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                      "f00031",
+                      "de les mettre à exécution.",
+                    ),
               ),
             ],
           ),
@@ -183,25 +310,33 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+              "f00032",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-13 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00033",
+                    "Article 322-13 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Si la menace porte sur une destruction, une dégradation ou une détérioration dangereuses pour les personnes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00034",
+                  "Si la menace porte sur une destruction, une dégradation ou une détérioration dangereuses pour les personnes.",
+                ),
               ),
             ],
           ),
@@ -210,72 +345,129 @@ class MenacesAvecConditionPageGPXSchool extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+              "f00035",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00036",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
 
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple (délit) — "),
                 TextSpan(
-                  text: "article 322-13 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00037",
+                    "Qualification simple (délit) — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00038",
+                    "article 322-13 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "1 an d’emprisonnement et 15 000 € d’amende.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00039",
+                  "1 an d’emprisonnement et 15 000 € d’amende.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée — "),
                 TextSpan(
-                  text: "article 322-13 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00040",
+                    "Qualification aggravée — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00041",
+                    "article 322-13 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "3 ans d’emprisonnement et 45 000 € d’amende.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00042",
+                  "3 ans d’emprisonnement et 45 000 € d’amende.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00043",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00044",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                    "f00045",
+                    "l’article 322-17 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00046",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Complicité : OUI (punissable pour l’infraction consommée, pour personnes physiques ou morales).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00047",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart",
+                  "f00048",
+                  "Complicité : OUI (punissable pour l’infraction consommée, pour personnes physiques ou morales).",
+                ),
               ),
             ],
           ),
@@ -531,9 +723,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

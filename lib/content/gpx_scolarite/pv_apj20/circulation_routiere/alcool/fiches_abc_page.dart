@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FichesAbcPage extends StatelessWidget {
   const FichesAbcPage({super.key});
@@ -56,7 +57,11 @@ class FichesAbcPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Alcool",
@@ -74,7 +79,11 @@ class FichesAbcPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Fiches A / B-C\n(état alcoolique)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+              "f00002",
+              "Fiches A / B-C\n(état alcoolique)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,18 +95,46 @@ class FichesAbcPage extends StatelessWidget {
 
           // Objectif
           _ConditionCard(
-            title: "À quoi ça sert ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+              "f00003",
+              "À quoi ça sert ?",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les fiches A et B-C sont des documents normalisés utilisés lors des vérifications de l’état alcoolique "
-                "par examen clinique et prélèvement sanguin.\n\n"
-                "Elles permettent de tracer :\n"
-                "• les signes observés et le comportement (fiche A — partie police),\n"
-                "• l’examen clinique médical (fiche B — partie médecin),\n"
-                "• puis les résultats d’analyse biologique (fiche C — partie laboratoire/biologiste).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00004",
+                      "Les fiches A et B-C sont des documents normalisés utilisés lors des vérifications de l’état alcoolique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00005",
+                      "par examen clinique et prélèvement sanguin.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00006",
+                      "Elles permettent de tracer :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00007",
+                      "• les signes observés et le comportement (fiche A — partie police),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00008",
+                      "• l’examen clinique médical (fiche B — partie médecin),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00009",
+                      "• puis les résultats d’analyse biologique (fiche C — partie laboratoire/biologiste).",
+                    ),
               ),
             ],
           ),
@@ -106,30 +143,45 @@ class FichesAbcPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal (fondement)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+              "f00010",
+              "I — Élément légal (fondement)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’usage de ces fiches s’inscrit dans les vérifications par examens médicaux, cliniques et biologiques prévues par le ",
-                ),
-                TextSpan(
-                  text: "Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                    "f00011",
+                    "L’usage de ces fiches s’inscrit dans les vérifications par examens médicaux, cliniques et biologiques prévues par le ",
                   ),
                 ),
-                TextSpan(text: ", notamment : "),
                 TextSpan(
-                  text: "articles R. 3354-4 et suivants",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                    "f00012",
+                    "Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                    "f00013",
+                    ", notamment : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                    "f00014",
+                    "articles R. 3354-4 et suivants",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -138,8 +190,16 @@ class FichesAbcPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En pratique, la fiche A est renseignée par l’A.P.J. (comportement), la fiche B par le praticien (examen clinique), "
-                        "et la fiche C par le laboratoire/biologiste (résultats d’analyse). L’objectif : une traçabilité complète et cohérente au dossier.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                          "f00015",
+                          "En pratique, la fiche A est renseignée par l’A.P.J. (comportement), la fiche B par le praticien (examen clinique), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                          "f00016",
+                          "et la fiche C par le laboratoire/biologiste (résultats d’analyse). L’objectif : une traçabilité complète et cohérente au dossier.",
+                        ),
                   ),
                 ],
               ),
@@ -150,37 +210,72 @@ class FichesAbcPage extends StatelessWidget {
 
           // Fiche A
           _ConditionCard(
-            title: "II — Fiche A (comportement — partie police)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+              "f00017",
+              "II — Fiche A (comportement — partie police)",
+            ),
             cardColor: cardA,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("But"),
               _Paragraph(
-                "Décrire les signes extérieurs et le comportement observés au moment des constatations "
-                "(attitude, élocution, équilibre, haleine, réactions, cohérence du discours, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00018",
+                      "Décrire les signes extérieurs et le comportement observés au moment des constatations ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00019",
+                      "(attitude, élocution, équilibre, haleine, réactions, cohérence du discours, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("À remplir avec rigueur"),
-              _BulletPoint(
-                text:
-                    "Identité / contexte : état civil, circonstances, motif du contrôle ou de la procédure.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00020",
+                  "À remplir avec rigueur",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Observations objectivables : signes concrets, factuels, datés (éviter les jugements).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00021",
+                  "Identité / contexte : état civil, circonstances, motif du contrôle ou de la procédure.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Cohérence globale : ce qui est écrit doit correspondre à la nature des faits (ex. « conduite sous ivresse » ↔ signes décrits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00022",
+                  "Observations objectivables : signes concrets, factuels, datés (éviter les jugements).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00023",
+                  "Cohérence globale : ce qui est écrit doit correspondre à la nature des faits (ex. « conduite sous ivresse » ↔ signes décrits).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Astuce : privilégie des formulations neutres et descriptives (ex. « marche titubante », « propos incohérents », "
-                        "« odeur d’alcool perceptible ») plutôt que des conclusions (“ivre”).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                          "f00024",
+                          "Astuce : privilégie des formulations neutres et descriptives (ex. « marche titubante », « propos incohérents », ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                          "f00025",
+                          "« odeur d’alcool perceptible ») plutôt que des conclusions (“ivre”).",
+                        ),
                   ),
                 ],
               ),
@@ -191,31 +286,75 @@ class FichesAbcPage extends StatelessWidget {
 
           // Fiches B-C
           _ConditionCard(
-            title: "III — Fiches B-C (médical + biologique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+              "f00026",
+              "III — Fiches B-C (médical + biologique)",
+            ),
             cardColor: cardBC,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Fiche B — examen clinique médical"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00027",
+                  "Fiche B — examen clinique médical",
+                ),
+              ),
               _Paragraph(
-                "Renseignée par le praticien requis. Elle retrace les constatations médicales : "
-                "état général, vigilance, orientation, signes cliniques compatibles avec une alcoolisation, etc.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00028",
+                      "Renseignée par le praticien requis. Elle retrace les constatations médicales : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00029",
+                      "état général, vigilance, orientation, signes cliniques compatibles avec une alcoolisation, etc.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Fiche C — analyse biologique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00030",
+                  "Fiche C — analyse biologique",
+                ),
+              ),
               _Paragraph(
-                "Renseignée par le laboratoire/biologiste. Elle mentionne les résultats de l’analyse des prélèvements sanguins "
-                "et les informations utiles à l’exploitation judiciaire (résultats, modalités, références).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00031",
+                      "Renseignée par le laboratoire/biologiste. Elle mentionne les résultats de l’analyse des prélèvements sanguins ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                      "f00032",
+                      "et les informations utiles à l’exploitation judiciaire (résultats, modalités, références).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Concordance indispensable"),
-              _BulletPoint(
-                text:
-                    "Les informations d’identité, dates/heures, et références doivent être identiques entre la fiche A et les fiches B-C.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00033",
+                  "Concordance indispensable",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Tout écart (nom, date, heure, numéro de scellé, etc.) fragilise la procédure : vérifier avant transmission.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00034",
+                  "Les informations d’identité, dates/heures, et références doivent être identiques entre la fiche A et les fiches B-C.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00035",
+                  "Tout écart (nom, date, heure, numéro de scellé, etc.) fragilise la procédure : vérifier avant transmission.",
+                ),
               ),
             ],
           ),
@@ -224,7 +363,11 @@ class FichesAbcPage extends StatelessWidget {
 
           // Images CANVA (obligatoires)
           _ConditionCard(
-            title: "Documents (visuels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+              "f00036",
+              "Documents (visuels)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -239,33 +382,58 @@ class FichesAbcPage extends StatelessWidget {
 
           // Vigilance / erreurs fréquentes
           _ConditionCard(
-            title: "IV — Points de vigilance",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+              "f00037",
+              "IV — Points de vigilance",
+            ),
             cardColor: cardVigi,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Toujours relire la fiche A : identité, date/heure, et cohérence avec la procédure (nature des faits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00038",
+                  "Toujours relire la fiche A : identité, date/heure, et cohérence avec la procédure (nature des faits).",
+                ),
               ),
               _BulletPoint(
-                text: "Décrire des faits observables (et pas des conclusions).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00039",
+                  "Décrire des faits observables (et pas des conclusions).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S’assurer que la fiche B (praticien) et la fiche C (labo) sont bien rattachées au bon dossier (références identiques).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00040",
+                  "S’assurer que la fiche B (praticien) et la fiche C (labo) sont bien rattachées au bon dossier (références identiques).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éviter les zones vides non justifiées : si une rubrique ne s’applique pas, le mentionner clairement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00041",
+                  "Éviter les zones vides non justifiées : si une rubrique ne s’applique pas, le mentionner clairement.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Objectif final : une chaîne de preuve lisible et solide (constatations police → examen clinique → analyse biologique), "
-                        "sans incohérence ni trou de traçabilité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                          "f00042",
+                          "Objectif final : une chaîne de preuve lisible et solide (constatations police → examen clinique → analyse biologique), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                          "f00043",
+                          "sans incohérence ni trou de traçabilité.",
+                        ),
                   ),
                 ],
               ),
@@ -523,9 +691,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -590,8 +756,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+        "f00044",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+        "f00045",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -764,7 +938,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                    "f00046",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -833,7 +1011,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart",
+                  "f00047",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -861,7 +1043,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -896,7 +1080,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
   const PerquisitionPreliminairePerquisitionPage({super.key});
@@ -56,10 +57,18 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Perquisition — enquête préliminaire",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+            "f00002",
+            "Perquisition — enquête préliminaire",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de procès-verbal\n(PV de perquisition en enquête préliminaire)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+              "f00003",
+              "Canevas de procès-verbal\n(PV de perquisition en enquête préliminaire)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,23 +103,40 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas te guide pour rédiger un PV de perquisition en enquête préliminaire : "
-                "quoi écrire, dans quel ordre, et quels points sont sensibles (nullités, présence, assentiment, scellés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                      "f00004",
+                      "Ce canevas te guide pour rédiger un PV de perquisition en enquête préliminaire : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                      "f00005",
+                      "quoi écrire, dans quel ordre, et quels points sont sensibles (nullités, présence, assentiment, scellés).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Tu cadres ton action : APJ en préliminaire, sous contrôle de l’OPJ.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00006",
+                  "Tu cadres ton action : APJ en préliminaire, sous contrôle de l’OPJ.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Tu traces les faits : lieu, horaires, transport, présence, opérations, clôture.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00007",
+                  "Tu traces les faits : lieu, horaires, transport, présence, opérations, clôture.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Tu sécurises la procédure : assentiment, présence constante, scellés, annexes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00008",
+                  "Tu sécurises la procédure : assentiment, présence constante, scellés, annexes.",
+                ),
               ),
             ],
           ),
@@ -115,22 +145,30 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (comme demandé)
           _ConditionCard(
-            title: "Cadre juridique — Visa obligatoire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+              "f00009",
+              "Cadre juridique — Visa obligatoire",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 76 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                    "f00010",
+                    "Article 76 du Code de procédure pénale (CPP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixe le cadre de la perquisition en enquête préliminaire (assentiment préalable, conditions de régularité).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                    "f00011",
+                    " : fixe le cadre de la perquisition en enquête préliminaire (assentiment préalable, conditions de régularité).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -138,8 +176,16 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’APJ ne perquisitionne en préliminaire que sous le contrôle de l’OPJ et dans un cadre juridiquement justifié. "
-                        "Le visa doit apparaître en haut du PV.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                          "f00012",
+                          "L’APJ ne perquisitionne en préliminaire que sous le contrôle de l’OPJ et dans un cadre juridiquement justifié. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                          "f00013",
+                          "Le visa doit apparaître en haut du PV.",
+                        ),
                   ),
                 ],
               ),
@@ -150,57 +196,131 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
 
           // Préparation / rédaction : 1 à 6
           _ConditionCard(
-            title: "1 à 6 — En-tête & mentions préalables",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+              "f00014",
+              "1 à 6 — En-tête & mentions préalables",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("1) Lieu de rédaction"),
-              const _BulletPoint(
-                text:
-                    "Mentionner l’endroit exact où se situe l’équipage au moment de la rédaction.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00015",
+                  "1) Lieu de rédaction",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00016",
+                  "Mentionner l’endroit exact où se situe l’équipage au moment de la rédaction.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("2) Instructions"),
-              const _BulletPoint(
-                text:
-                    "Préciser que l’APJ agit sous le contrôle de l’OPJ (enquête préliminaire).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00017",
+                  "2) Instructions",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00018",
+                  "Préciser que l’APJ agit sous le contrôle de l’OPJ (enquête préliminaire).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("3) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00019",
+                  "3) Cadre juridique",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Indiquer explicitement : "),
                 TextSpan(
-                  text: "enquête préliminaire",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                    "f00020",
+                    "Indiquer explicitement : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                    "f00021",
+                    "enquête préliminaire",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : const Color(0xFF050505),
                   ),
                 ),
-                const TextSpan(text: " + visa de l’article applicable."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                    "f00022",
+                    " + visa de l’article applicable.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle("4) Assistants"),
-              const _BulletPoint(
-                text:
-                    "Lister les fonctionnaires accompagnants (et spécialistes éventuels : PTS, etc.).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00023",
+                  "4) Assistants",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00024",
+                  "Lister les fonctionnaires accompagnants (et spécialistes éventuels : PTS, etc.).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("5) Identité (occupant / personne concernée)"),
-              const _BulletPoint(
-                text:
-                    "Identifier la personne chez qui l’opération a lieu + préciser sa situation (GAV / suspect libre).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00025",
+                  "5) Identité (occupant / personne concernée)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00026",
+                  "Identifier la personne chez qui l’opération a lieu + préciser sa situation (GAV / suspect libre).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("6) Assentiment préalable"),
-              const _BulletPoint(
-                text:
-                    "Assentiment obtenu par inscription manuscrite sur l’imprimé d’autorisation de perquisition/saisies (préliminaire).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00027",
+                  "6) Assentiment préalable",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00028",
+                  "Assentiment obtenu par inscription manuscrite sur l’imprimé d’autorisation de perquisition/saisies (préliminaire).",
+                ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Indiquer : impossibilité d’écrire / refus / impossibilité d’assister + représentant désigné le cas échéant.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00029",
+                  "Indiquer : impossibilité d’écrire / refus / impossibilité d’assister + représentant désigné le cas échéant.",
+                ),
               ),
             ],
           ),
@@ -209,46 +329,97 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
 
           // Opérations : 7 à 10
           _ConditionCard(
-            title: "7 à 10 — Déroulé des opérations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+              "f00030",
+              "7 à 10 — Déroulé des opérations",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("7) Transport"),
-              _BulletPoint(
-                text:
-                    "Localisation exacte : ville, rue, numéro, immeuble, étage, porte.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00031",
+                  "7) Transport",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Indiquer l’heure précise d’arrivée et la manière d’entrer dans les lieux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00032",
+                  "Localisation exacte : ville, rue, numéro, immeuble, étage, porte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00033",
+                  "Indiquer l’heure précise d’arrivée et la manière d’entrer dans les lieux.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("8) Présence de l’occupant"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00034",
+                  "8) Présence de l’occupant",
+                ),
+              ),
               _Paragraph(
-                "La perquisition doit être opérée en présence constante et effective de la personne au domicile de laquelle se déroule l’opération "
-                "(ou de la personne désignée pour la représenter), sous peine de nullité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                      "f00035",
+                      "La perquisition doit être opérée en présence constante et effective de la personne au domicile de laquelle se déroule l’opération ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                      "f00036",
+                      "(ou de la personne désignée pour la représenter), sous peine de nullité.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Point sensible : la présence doit être continue, réelle et traçable (horaires / déplacements / incidents).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                      "f00037",
+                      "Point sensible : la présence doit être continue, réelle et traçable (horaires / déplacements / incidents).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("9) Perquisition (description du local)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00038",
+                  "9) Perquisition (description du local)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Définir le local (nombre de pièces, dépendances, accès, particularités).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00039",
+                  "Définir le local (nombre de pièces, dépendances, accès, particularités).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("10) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00040",
+                  "10) Énonciation terminale (clôture)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner l’heure de fin, incidents éventuels, fermeture des lieux, signature de la personne présente.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00041",
+                  "Mentionner l’heure de fin, incidents éventuels, fermeture des lieux, signature de la personne présente.",
+                ),
               ),
             ],
           ),
@@ -257,41 +428,67 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
 
           // SDISS
           _ConditionCard(
-            title: "Technique S.D.I.S.S. — objets découverts",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+              "f00042",
+              "Technique S.D.I.S.S. — objets découverts",
+            ),
             cardColor: cardSDISS,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour tout objet découvert, utilise une rédaction claire et systématique (S.D.I.S.S.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00043",
+                  "Pour tout objet découvert, utilise une rédaction claire et systématique (S.D.I.S.S.).",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "S — SITUATION : endroit exact de découverte (pièce, meuble, niveau, côté, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00044",
+                  "S — SITUATION : endroit exact de découverte (pièce, meuble, niveau, côté, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "D — DESCRIPTION : nature, caractéristiques, état, marquages, quantité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00045",
+                  "D — DESCRIPTION : nature, caractéristiques, état, marquages, quantité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "I — INTERPELLATION : présentation à l’intéressé + questionnement limité à l’appartenance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00046",
+                  "I — INTERPELLATION : présentation à l’intéressé + questionnement limité à l’appartenance.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S — SAISIE : l’objet est saisi immédiatement selon les règles applicables.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00047",
+                  "S — SAISIE : l’objet est saisi immédiatement selon les règles applicables.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S — SCELLÉS : mise sous scellé immédiate, numéroté et signé (mis en cause + rédacteur). Préciser la nature du scellé (ouvert/fermé/découvert).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00048",
+                  "S — SCELLÉS : mise sous scellé immédiate, numéroté et signé (mis en cause + rédacteur). Préciser la nature du scellé (ouvert/fermé/découvert).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Astuce : garde une logique « découverte → identification → traçabilité → scellé » pour que le lecteur suive sans effort.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                      "f00049",
+                      "Astuce : garde une logique « découverte → identification → traçabilité → scellé » pour que le lecteur suive sans effort.",
+                    ),
                   ),
                 ],
               ),
@@ -302,21 +499,43 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
 
           // Suites : 11-12 + annexes
           _ConditionCard(
-            title: "Suites & annexes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+              "f00050",
+              "Suites & annexes",
+            ),
             cardColor: cardClose,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("11) Annexe"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00051",
+                  "11) Annexe",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "L’autorisation expresse et manuscrite est annexée au procès-verbal.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00052",
+                  "L’autorisation expresse et manuscrite est annexée au procès-verbal.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("12) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00053",
+                  "12) Avis O.P.J.",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "L’OPJ est informé de la perquisition effectuée (avis tracé dans le PV / mention de l’information).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00054",
+                  "L’OPJ est informé de la perquisition effectuée (avis tracé dans le PV / mention de l’information).",
+                ),
               ),
             ],
           ),
@@ -325,13 +544,21 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
 
           // Visuels (recto / verso)
           _ConditionCard(
-            title: "Modèle visuel (recto/verso)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+              "f00055",
+              "Modèle visuel (recto/verso)",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tu peux t’appuyer sur les modèles scannés pour reproduire la mise en page et ne rien oublier.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00056",
+                  "Tu peux t’appuyer sur les modèles scannés pour reproduire la mise en page et ne rien oublier.",
+                ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -597,9 +824,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -664,8 +889,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+        "f00057",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+        "f00058",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -838,7 +1071,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                    "f00059",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -907,7 +1144,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart",
+                  "f00060",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -935,7 +1176,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -970,7 +1213,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

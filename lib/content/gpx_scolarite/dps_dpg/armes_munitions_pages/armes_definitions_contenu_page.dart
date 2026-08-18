@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ArmesDefinitionsPage extends StatelessWidget {
   const ArmesDefinitionsPage({super.key});
@@ -56,10 +57,18 @@ class ArmesDefinitionsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Armes & munitions",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+            "f00002",
+            "Armes & munitions",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ArmesDefinitionsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Définitions",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+              "f00003",
+              "Définitions",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,36 +99,62 @@ class ArmesDefinitionsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Textes de référence (élément légal)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+              "f00004",
+              "Textes de référence (élément légal)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Code pénal : "),
                 TextSpan(
-                  text: "article 132-75 du C.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00005",
+                    "Code pénal : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00006",
+                    "article 132-75 du C.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "Code de la sécurité intérieure : "),
                 TextSpan(
-                  text: "article R. 311-1 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00007",
+                    "Code de la sécurité intérieure : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00008",
+                    "article R. 311-1 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Ces définitions permettent de qualifier juridiquement ce qu’est une arme, une munition, "
-                "un élément d’arme, ainsi que certaines activités liées aux armes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                      "f00009",
+                      "Ces définitions permettent de qualifier juridiquement ce qu’est une arme, une munition, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                      "f00010",
+                      "un élément d’arme, ainsi que certaines activités liées aux armes.",
+                    ),
               ),
             ],
           ),
@@ -124,72 +163,119 @@ class ArmesDefinitionsPage extends StatelessWidget {
 
           // I - Code pénal
           _ConditionCard(
-            title: "I — Définitions des armes par le Code pénal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+              "f00011",
+              "I — Définitions des armes par le Code pénal",
+            ),
             cardColor: cardCP,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Arme par nature"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00012",
+                  "A) Arme par nature",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 132-75 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00013",
+                    "Article 132-75 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : « Est une arme tout objet conçu pour tuer ou blesser. »",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00014",
+                    " : « Est une arme tout objet conçu pour tuer ou blesser. »",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("B) Arme par usage / par destination"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00015",
+                  "B) Arme par usage / par destination",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 132-75 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00016",
+                    "Article 132-75 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : « Tout autre objet susceptible de présenter un danger pour les personnes est assimilé à une arme dès lors "
-                      "qu’il est utilisé pour tuer, blesser ou menacer, ou qu’il est destiné par celui qui en est porteur à tuer, blesser ou menacer. »",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                        "f00017",
+                        " : « Tout autre objet susceptible de présenter un danger pour les personnes est assimilé à une arme dès lors ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                        "f00018",
+                        "qu’il est utilisé pour tuer, blesser ou menacer, ou qu’il est destiné par celui qui en est porteur à tuer, blesser ou menacer. »",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 132-75 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00019",
+                    "Article 132-75 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : est assimilé à une arme tout objet ressemblant à une arme « par nature » au point de créer une confusion, "
-                      "lorsqu’il est utilisé (ou destiné) pour menacer de tuer ou de blesser.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                        "f00020",
+                        " : est assimilé à une arme tout objet ressemblant à une arme « par nature » au point de créer une confusion, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                        "f00021",
+                        "lorsqu’il est utilisé (ou destiné) pour menacer de tuer ou de blesser.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 132-75 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00022",
+                    "Article 132-75 alinéa 4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : l’utilisation d’un animal pour tuer, blesser ou menacer est assimilée à l’usage d’une arme "
-                      "(le tribunal peut décider du sort de l’animal dans certains cas).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                        "f00023",
+                        " : l’utilisation d’un animal pour tuer, blesser ou menacer est assimilée à l’usage d’une arme ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                        "f00024",
+                        "(le tribunal peut décider du sort de l’animal dans certains cas).",
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
@@ -198,9 +284,21 @@ class ArmesDefinitionsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "À retenir : un objet peut être une arme soit parce qu’il est conçu pour blesser (arme par nature), "
-                        "soit parce qu’il est utilisé/destiné à blesser ou menacer (arme par destination/usage), "
-                        "même s’il n’est pas une arme « au départ ».",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                          "f00025",
+                          "À retenir : un objet peut être une arme soit parce qu’il est conçu pour blesser (arme par nature), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                          "f00026",
+                          "soit parce qu’il est utilisé/destiné à blesser ou menacer (arme par destination/usage), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                          "f00027",
+                          "même s’il n’est pas une arme « au départ ».",
+                        ),
                   ),
                 ],
               ),
@@ -211,109 +309,207 @@ class ArmesDefinitionsPage extends StatelessWidget {
 
           // II - CSI : Armes par nature & munitions (R.311-1)
           _ConditionCard(
-            title: "II — Définitions par le Code de la sécurité intérieure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+              "f00028",
+              "II — Définitions par le Code de la sécurité intérieure",
+            ),
             cardColor: cardCSI,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Au sens de "),
                 TextSpan(
-                  text: "l’article R. 311-1 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00029",
+                    "Au sens de ",
                   ),
                 ),
-                TextSpan(text: ", on entend par :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00030",
+                    "l’article R. 311-1 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00031",
+                    ", on entend par :",
+                  ),
+                ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("A) Armes par nature et munitions"),
-              _BulletPoint(
-                text:
-                    "Arme : tout objet/dispositif conçu ou destiné par nature à tuer, blesser, frapper, neutraliser ou provoquer une incapacité.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00032",
+                  "A) Armes par nature et munitions",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme à canon lisse : âme du canon circulaire, ne donnant pas de mouvement de rotation au projectile.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00033",
+                  "Arme : tout objet/dispositif conçu ou destiné par nature à tuer, blesser, frapper, neutraliser ou provoquer une incapacité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme à canon rayé : âme non circulaire avec rayures (conventionnelles/polygonales) donnant une rotation au projectile.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00034",
+                  "Arme à canon lisse : âme du canon circulaire, ne donnant pas de mouvement de rotation au projectile.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme à feu : tire un projectile par combustion d’une charge propulsive (ou transformable aisément à cette fin).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00035",
+                  "Arme à canon rayé : âme non circulaire avec rayures (conventionnelles/polygonales) donnant une rotation au projectile.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme à répétition automatique : se recharge automatiquement et peut, par une seule pression sur la détente, lâcher une rafale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00036",
+                  "Arme à feu : tire un projectile par combustion d’une charge propulsive (ou transformable aisément à cette fin).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme à répétition manuelle : rechargée manuellement par introduction d’une munition prélevée dans un système d’alimentation, transportée via un mécanisme.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00037",
+                  "Arme à répétition automatique : se recharge automatiquement et peut, par une seule pression sur la détente, lâcher une rafale.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme à répétition semi-automatique : se recharge automatiquement mais ne peut lâcher plus d’un coup par pression sur la détente.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00038",
+                  "Arme à répétition manuelle : rechargée manuellement par introduction d’une munition prélevée dans un système d’alimentation, transportée via un mécanisme.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme à un coup : sans système d’alimentation, chargée avant chaque tir par introduction manuelle de la munition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00039",
+                  "Arme à répétition semi-automatique : se recharge automatiquement mais ne peut lâcher plus d’un coup par pression sur la détente.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme blanche : action perforante/tranchante/brisante due à la force humaine (hors explosion).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00040",
+                  "Arme à un coup : sans système d’alimentation, chargée avant chaque tir par introduction manuelle de la munition.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme camouflée : arme dissimulée sous la forme d’un autre objet (y compris un autre type d’arme).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00041",
+                  "Arme blanche : action perforante/tranchante/brisante due à la force humaine (hors explosion).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00042",
+                  "Arme camouflée : arme dissimulée sous la forme d’un autre objet (y compris un autre type d’arme).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("B) Armes d’épaule / armes de poing"),
-              _BulletPoint(
-                text:
-                    "Arme d’épaule : arme que l’on épaule pour tirer (mesures de longueur selon règles CSI).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00043",
+                  "B) Armes d’épaule / armes de poing",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme de poing : arme tenue par une poignée à une main et non destinée à être épaulée.",
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle("C) Armes incapacitantes / neutralisation"),
-              _BulletPoint(
-                text:
-                    "Arme incapacitante (projection/émission) : provoque une incapacité à distance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00044",
+                  "Arme d’épaule : arme que l’on épaule pour tirer (mesures de longueur selon règles CSI).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme incapacitante de contact : provoque une incapacité à bout touchant.",
-              ),
-              _BulletPoint(
-                text:
-                    "Arme neutralisée : rendue définitivement impropre au tir (procédés techniques rendant les éléments inutilisables).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00045",
+                  "Arme de poing : arme tenue par une poignée à une main et non destinée à être épaulée.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("D) Munitions et éléments"),
-              _BulletPoint(
-                text:
-                    "Élément d’arme : partie essentielle (canon, carcasse, boîte de culasse, culasse, barillet, systèmes de fermeture, conversion…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00046",
+                  "C) Armes incapacitantes / neutralisation",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Élément de munition : projectile, amorce, douille (amorcée/chargée…), etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00047",
+                  "Arme incapacitante (projection/émission) : provoque une incapacité à distance.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Munition perforante / explosive / incendiaire / expansive : classifications selon la nature du projectile.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00048",
+                  "Arme incapacitante de contact : provoque une incapacité à bout touchant.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Systèmes d’alimentation : magasins intégrés, chargeurs, bandes, réservoirs (fixes ou mobiles pendant le tir).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00049",
+                  "Arme neutralisée : rendue définitivement impropre au tir (procédés techniques rendant les éléments inutilisables).",
+                ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00050",
+                  "D) Munitions et éléments",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00051",
+                  "Élément d’arme : partie essentielle (canon, carcasse, boîte de culasse, culasse, barillet, systèmes de fermeture, conversion…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00052",
+                  "Élément de munition : projectile, amorce, douille (amorcée/chargée…), etc.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00053",
+                  "Munition perforante / explosive / incendiaire / expansive : classifications selon la nature du projectile.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00054",
+                  "Systèmes d’alimentation : magasins intégrés, chargeurs, bandes, réservoirs (fixes ou mobiles pendant le tir).",
+                ),
               ),
               SizedBox(height: 12),
 
@@ -321,8 +517,16 @@ class ArmesDefinitionsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ces définitions CSI servent ensuite à appliquer les régimes (catégories A/B/C/D), "
-                        "et à qualifier précisément la nature de l’arme/munition dans les procédures.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                          "f00055",
+                          "Ces définitions CSI servent ensuite à appliquer les régimes (catégories A/B/C/D), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                          "f00056",
+                          "et à qualifier précisément la nature de l’arme/munition dans les procédures.",
+                        ),
                   ),
                 ],
               ),
@@ -333,85 +537,156 @@ class ArmesDefinitionsPage extends StatelessWidget {
 
           // III - Autres armes / activités / exclusions
           _ConditionCard(
-            title: "III — Autres notions importantes (CSI)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+              "f00057",
+              "III — Autres notions importantes (CSI)",
+            ),
             cardColor: cardOther,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Autres armes (exemples)"),
-              _BulletPoint(
-                text:
-                    "Arme d’alarme et de signalisation : dispositif tirant des munitions à blanc/irritants/pyrotechniques, non transformable aisément pour propulser un projectile (selon arrêté).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00058",
+                  "A) Autres armes (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme de spectacle : arme à feu transformée pour munitions à blanc (tournages, théâtre…), classée dans sa catégorie d’origine.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00059",
+                  "Arme d’alarme et de signalisation : dispositif tirant des munitions à blanc/irritants/pyrotechniques, non transformable aisément pour propulser un projectile (selon arrêté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme didactique : arme authentique avec mécanismes visibles, sans neutralisation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00060",
+                  "Arme de spectacle : arme à feu transformée pour munitions à blanc (tournages, théâtre…), classée dans sa catégorie d’origine.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme factice : apparence d’une arme à feu expulstant un projectile non métallique < 2 joules.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00061",
+                  "Arme didactique : arme authentique avec mécanismes visibles, sans neutralisation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Munition inerte : munition factice non transformable en munition active.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00062",
+                  "Arme factice : apparence d’une arme à feu expulstant un projectile non métallique < 2 joules.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lanceur de paintball : propulsion non pyrotechnique d’un projectile marquant l’impact.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00063",
+                  "Munition inerte : munition factice non transformable en munition active.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00064",
+                  "Lanceur de paintball : propulsion non pyrotechnique d’un projectile marquant l’impact.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Activités en relation avec les armes"),
-              _BulletPoint(
-                text:
-                    "Activité d’intermédiation : rapprochement/organisation de contrats ou transferts d’armes/munitions (courtage, mandat, commission).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00065",
+                  "B) Activités en relation avec les armes",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Activité de fabrication : conception, réparation, transformation, assemblage d’armes/éléments/munitions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00066",
+                  "Activité d’intermédiation : rapprochement/organisation de contrats ou transferts d’armes/munitions (courtage, mandat, commission).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armurier : activité pro (fabrication, commerce, échange, location, prêt, réparation ou transformation).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00067",
+                  "Activité de fabrication : conception, réparation, transformation, assemblage d’armes/éléments/munitions.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Port d’arme : avoir une arme sur soi utilisable immédiatement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00068",
+                  "Armurier : activité pro (fabrication, commerce, échange, location, prêt, réparation ou transformation).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transport d’arme : déplacer une arme en l’ayant auprès de soi, inutilisable immédiatement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00069",
+                  "Port d’arme : avoir une arme sur soi utilisable immédiatement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00070",
+                  "Transport d’arme : déplacer une arme en l’ayant auprès de soi, inutilisable immédiatement.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Ne sont pas des armes (CSI)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00071",
+                  "C) Ne sont pas des armes (CSI)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Au sens de "),
                 TextSpan(
-                  text: "l’article R. 311-1 IV du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00072",
+                    "Au sens de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                    "f00073",
+                    "l’article R. 311-1 IV du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Objets tirant un projectile / projetant des gaz avec énergie à la bouche inférieure à 2 joules.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00074",
+                  "Objets tirant un projectile / projetant des gaz avec énergie à la bouche inférieure à 2 joules.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Réducteurs de son : pièces additionnelles ne modifiant pas le fonctionnement de l’arme.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00075",
+                  "Réducteurs de son : pièces additionnelles ne modifiant pas le fonctionnement de l’arme.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Objets conçus pour sauvetage, abattage, pêche au harpon, usages industriels/techniques (si usage strictement limité et non détournable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                  "f00076",
+                  "Objets conçus pour sauvetage, abattage, pêche au harpon, usages industriels/techniques (si usage strictement limité et non détournable).",
+                ),
               ),
             ],
           ),
@@ -420,15 +695,31 @@ class ArmesDefinitionsPage extends StatelessWidget {
 
           // Résumé final
           _ConditionCard(
-            title: "Synthèse",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+              "f00077",
+              "Synthèse",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "• Code pénal : définit l’arme par nature et l’assimilation par usage/destination (et même par ressemblance).\n"
-                "• CSI : définit précisément les types d’armes, munitions, éléments, systèmes d’alimentation, et certaines activités.\n"
-                "• Bien qualifier l’objet = appliquer le bon régime juridique (catégories A/B/C/D) et sécuriser la procédure.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                      "f00078",
+                      "• Code pénal : définit l’arme par nature et l’assimilation par usage/destination (et même par ressemblance).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                      "f00079",
+                      "• CSI : définit précisément les types d’armes, munitions, éléments, systèmes d’alimentation, et certaines activités.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_definitions_contenu_page.dart",
+                      "f00080",
+                      "• Bien qualifier l’objet = appliquer le bon régime juridique (catégories A/B/C/D) et sécuriser la procédure.",
+                    ),
               ),
             ],
           ),
@@ -684,9 +975,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

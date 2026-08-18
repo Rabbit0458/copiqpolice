@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/controle_mission_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -36,7 +37,8 @@ class _ControleMissionJudiciaireIntroPageState
   static const BoxFit _kFit = BoxFit.cover;
 
   // Cible : ta page contenu existante
-  static const String _kTargetRouteName = PaControleMissionJudiciairePage.routeName;
+  static const String _kTargetRouteName =
+      PaControleMissionJudiciairePage.routeName;
 
   // Animations
   late final AnimationController _fadeCtrl = AnimationController(
@@ -57,8 +59,11 @@ class _ControleMissionJudiciaireIntroPageState
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'LE CONTRÔLE DE LA MISSION DE POLICE JUDICIAIRE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/procedure_penale_pages/controle_mission_intro_page.dart",
+    "f00001",
+    'LE CONTRÔLE DE LA MISSION DE POLICE JUDICIAIRE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -165,7 +170,11 @@ class _ControleMissionJudiciaireIntroPageState
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Les membres de la police sont des fonctionnaires insérés dans le cadre d'une administration hiérarchisée",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/controle_mission_intro_page.dart",
+                        "f00002",
+                        "Les membres de la police sont des fonctionnaires insérés dans le cadre d'une administration hiérarchisée",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -280,7 +289,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/controle_mission_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

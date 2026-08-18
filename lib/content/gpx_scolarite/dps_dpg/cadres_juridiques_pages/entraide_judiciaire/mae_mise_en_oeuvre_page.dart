@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MaeMiseEnOeuvrePage extends StatelessWidget {
   const MaeMiseEnOeuvrePage({super.key});
@@ -34,11 +35,19 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+            "f00001",
+            'Retour',
+          ),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'Mandat d’arrêt européen — Mise en œuvre',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+            "f00002",
+            'Mandat d’arrêt européen — Mise en œuvre',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -54,7 +63,11 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
           // EN-TÊTE GÉNÉRAL
           // ===============================================================
           Text(
-            'Le mandat d’arrêt européen',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+              "f00003",
+              'Le mandat d’arrêt européen',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 13.5,
@@ -64,7 +77,11 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            '2.2 — Mise en œuvre',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+              "f00004",
+              '2.2 — Mise en œuvre',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -74,11 +91,27 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'La mise en œuvre concrète du mandat d’arrêt européen repose sur des conditions '
-            'liées à la gravité des faits et aux décisions déjà prononcées, ainsi que sur des '
-            'délais stricts et des règles particulières en matière de double incrimination et '
-            'de nationalité.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00005",
+                  'La mise en œuvre concrète du mandat d’arrêt européen repose sur des conditions ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00006",
+                  'liées à la gravité des faits et aux décisions déjà prononcées, ainsi que sur des ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00007",
+                  'délais stricts et des règles particulières en matière de double incrimination et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00008",
+                  'de nationalité.',
+                ),
           ),
           const SizedBox(height: 18),
 
@@ -86,44 +119,100 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
           // FAITS POUVANT DONNER LIEU À MANDAT D’ARRÊT
           // ===============================================================
           _ConditionCard(
-            title: 'Faits pouvant donner lieu à un mandat d’arrêt européen',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+              "f00009",
+              'Faits pouvant donner lieu à un mandat d’arrêt européen',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Un mandat d’arrêt européen ne peut être émis que pour des faits présentant un '
-                'certain degré de gravité. Il peut être délivré lorsqu’il s’agit :',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00010",
+                      'Un mandat d’arrêt européen ne peut être émis que pour des faits présentant un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00011",
+                      'certain degré de gravité. Il peut être délivré lorsqu’il s’agit :',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'de faits punis d’une mesure de sûreté privative de liberté d’une durée égale '
-                    'ou supérieure à un an ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00012",
+                      'de faits punis d’une mesure de sûreté privative de liberté d’une durée égale ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00013",
+                      'ou supérieure à un an ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'de faits punis d’une peine privative de liberté d’une durée égale ou supérieure '
-                    'à un an ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00014",
+                      'de faits punis d’une peine privative de liberté d’une durée égale ou supérieure ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00015",
+                      'à un an ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'd’une peine d’emprisonnement déjà prononcée à l’encontre de la personne recherchée, '
-                    'd’une durée égale ou supérieure à quatre mois ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00016",
+                      'd’une peine d’emprisonnement déjà prononcée à l’encontre de la personne recherchée, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00017",
+                      'd’une durée égale ou supérieure à quatre mois ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'd’une mesure de sûreté privative de liberté déjà infligée, lorsque la durée restant '
-                    'à subir est égale ou supérieure à quatre mois de privation de liberté.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00018",
+                      'd’une mesure de sûreté privative de liberté déjà infligée, lorsque la durée restant ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00019",
+                      'à subir est égale ou supérieure à quatre mois de privation de liberté.',
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Les mesures de sûreté privatives de liberté n’existent pas en droit français. '
-                        'Cette catégorie vise néanmoins des situations pouvant exister dans d’autres '
-                        'États membres de l’Union européenne.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                          "f00020",
+                          'Les mesures de sûreté privatives de liberté n’existent pas en droit français. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                          "f00021",
+                          'Cette catégorie vise néanmoins des situations pouvant exister dans d’autres ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                          "f00022",
+                          'États membres de l’Union européenne.',
+                        ),
                   ),
                 ],
               ),
@@ -135,22 +224,49 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
           // DÉLAIS DE DÉCISION
           // ===============================================================
           _ConditionCard(
-            title:
-                'Délais pour statuer sur la remise de la personne recherchée',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+              "f00023",
+              'Délais pour statuer sur la remise de la personne recherchée',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Une fois la personne arrêtée sur le fondement d’un mandat d’arrêt européen, '
-                'la décision définitive autorisant ou refusant la remise doit être prise dans '
-                'un délai maximum de trois mois à compter de la date de l’arrestation.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00024",
+                      'Une fois la personne arrêtée sur le fondement d’un mandat d’arrêt européen, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00025",
+                      'la décision définitive autorisant ou refusant la remise doit être prise dans ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00026",
+                      'un délai maximum de trois mois à compter de la date de l’arrestation.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Ce délai impose une grande réactivité de l’ensemble des acteurs (autorités '
-                'judiciaires, services d’enquête, administration pénitentiaire), afin de permettre '
-                'une exécution rapide et efficace de la coopération judiciaire européenne.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00027",
+                      'Ce délai impose une grande réactivité de l’ensemble des acteurs (autorités ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00028",
+                      'judiciaires, services d’enquête, administration pénitentiaire), afin de permettre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00029",
+                      'une exécution rapide et efficace de la coopération judiciaire européenne.',
+                    ),
               ),
             ],
           ),
@@ -160,49 +276,107 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
           // DOUBLE INCRIMINATION & LISTE DES 32 INFRACTIONS
           // ===============================================================
           _ConditionCard(
-            title:
-                'Double incrimination et liste des 32 catégories d’infractions',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+              "f00030",
+              'Double incrimination et liste des 32 catégories d’infractions',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'En principe, l’exécution d’un mandat d’arrêt européen suppose que les faits soient '
-                      'punissables dans les deux États (État membre d’émission et État membre d’exécution). '
-                      'Cependant, il n’est pas nécessaire de vérifier la double incrimination lorsque les faits '
-                      'entrent dans l’une des trente-deux catégories d’infractions visées par ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                        "f00031",
+                        'En principe, l’exécution d’un mandat d’arrêt européen suppose que les faits soient ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                        "f00032",
+                        'punissables dans les deux États (État membre d’émission et État membre d’exécution). ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                        "f00033",
+                        'Cependant, il n’est pas nécessaire de vérifier la double incrimination lorsque les faits ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                        "f00034",
+                        'entrent dans l’une des trente-deux catégories d’infractions visées par ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’article 694-32 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                    "f00035",
+                    'l’article 694-32 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      '. Dans ce cas, seule la peine encourue dans l’État d’émission est prise en compte.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                    "f00036",
+                    '. Dans ce cas, seule la peine encourue dans l’État d’émission est prise en compte.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Parmi ces trente-deux catégories d’infractions, on peut notamment citer :',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00037",
+                  'Parmi ces trente-deux catégories d’infractions, on peut notamment citer :',
+                ),
               ),
               const SizedBox(height: 6),
-              const _IntroBullet(
-                text: 'la participation à une organisation criminelle ;',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00038",
+                  'la participation à une organisation criminelle ;',
+                ),
               ),
-              const _IntroBullet(text: 'le terrorisme ;'),
-              const _IntroBullet(text: 'la traite des êtres humains ;'),
-              const _IntroBullet(
-                text: 'l’aide à l’entrée et au séjour irréguliers ;',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00039",
+                  'le terrorisme ;',
+                ),
               ),
-              const _IntroBullet(
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00040",
+                  'la traite des êtres humains ;',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                  "f00041",
+                  'l’aide à l’entrée et au séjour irréguliers ;',
+                ),
+              ),
+              _IntroBullet(
                 text:
-                    'ainsi que d’autres infractions graves, économiques, financières ou violentes, '
-                    'expressément listées par le texte.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00042",
+                      'ainsi que d’autres infractions graves, économiques, financières ou violentes, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00043",
+                      'expressément listées par le texte.',
+                    ),
               ),
             ],
           ),
@@ -212,23 +386,59 @@ class MaeMiseEnOeuvrePage extends StatelessWidget {
           // NATIONALITÉ FRANÇAISE
           // ===============================================================
           _ConditionCard(
-            title: 'Nationalité de la personne recherchée',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+              "f00044",
+              'Nationalité de la personne recherchée',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La nationalité française de la personne réclamée ne constitue pas, en soi, '
-                'un motif systématique de refus de remise dans le cadre d’un mandat d’arrêt '
-                'européen. Le mécanisme repose sur la confiance mutuelle entre États membres '
-                'et sur la reconnaissance des décisions judiciaires rendues dans l’Union européenne.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00045",
+                      'La nationalité française de la personne réclamée ne constitue pas, en soi, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00046",
+                      'un motif systématique de refus de remise dans le cadre d’un mandat d’arrêt ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00047",
+                      'européen. Le mécanisme repose sur la confiance mutuelle entre États membres ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00048",
+                      'et sur la reconnaissance des décisions judiciaires rendues dans l’Union européenne.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Il appartient néanmoins aux autorités judiciaires françaises de vérifier que les '
-                'conditions légales de la remise sont réunies, que les droits fondamentaux de la '
-                'personne sont garantis et qu’aucun motif de refus prévu par les textes ne trouve '
-                'à s’appliquer.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00049",
+                      'Il appartient néanmoins aux autorités judiciaires françaises de vérifier que les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00050",
+                      'conditions légales de la remise sont réunies, que les droits fondamentaux de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00051",
+                      'personne sont garantis et qu’aucun motif de refus prévu par les textes ne trouve ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart",
+                      "f00052",
+                      'à s’appliquer.',
+                    ),
               ),
             ],
           ),
@@ -484,9 +694,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

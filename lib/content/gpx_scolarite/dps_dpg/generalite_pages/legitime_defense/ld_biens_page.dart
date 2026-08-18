@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — LA LÉGITIME DÉFENSE DES BIENS
@@ -44,7 +45,11 @@ class LdBiensPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'La légitime défense – Biens',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+            "f00001",
+            'La légitime défense – Biens',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -59,7 +64,11 @@ class LdBiensPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            'II. La légitime défense d’un bien\n(Article 122-5 alinéa 2 du Code pénal)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+              "f00002",
+              'II. La légitime défense d’un bien\n(Article 122-5 alinéa 2 du Code pénal)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -68,11 +77,31 @@ class LdBiensPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'N’est pas pénalement responsable la personne qui, pour interrompre '
-            'l’exécution d’un crime ou d’un délit contre un bien, accomplit un acte '
-            'de défense, autre qu’un homicide volontaire, lorsque cet acte est '
-            'strictement nécessaire au but poursuivi, dès lors que les moyens '
-            'employés sont proportionnés à la gravité de l’infraction.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00003",
+                  'N’est pas pénalement responsable la personne qui, pour interrompre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00004",
+                  'l’exécution d’un crime ou d’un délit contre un bien, accomplit un acte ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00005",
+                  'de défense, autre qu’un homicide volontaire, lorsque cet acte est ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00006",
+                  'strictement nécessaire au but poursuivi, dès lors que les moyens ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00007",
+                  'employés sont proportionnés à la gravité de l’infraction.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 14,
@@ -82,8 +111,16 @@ class LdBiensPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'La légitime défense des biens est plus limitée que celle des personnes. '
-            'Elle ne joue que dans des cas précis :',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00008",
+                  'La légitime défense des biens est plus limitée que celle des personnes. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00009",
+                  'Elle ne joue que dans des cas précis :',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 14,
@@ -93,17 +130,23 @@ class LdBiensPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
 
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text:
-                  'Un bien doit être menacé par l’exécution d’un crime ou d’un délit.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                "f00010",
+                'Un bien doit être menacé par l’exécution d’un crime ou d’un délit.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
           ]),
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text:
-                  'L’acte de défense doit interrompre cette exécution dans des limites strictes.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                "f00011",
+                'L’acte de défense doit interrompre cette exécution dans des limites strictes.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
           ]),
@@ -114,41 +157,89 @@ class LdBiensPage extends StatelessWidget {
           // 1 — LE BIEN MENACÉ PAR L’EXÉCUTION D’UNE INFRACTION
           // ============================================
           _HypoCard(
-            title: '1. Le bien menacé par l’exécution d’un crime ou d’un délit',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+              "f00012",
+              '1. Le bien menacé par l’exécution d’un crime ou d’un délit',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La protection porte ici sur les biens (véhicule, commerce, habitation, '
-                'matériel professionnel, etc.). La légitime défense n’est ouverte que '
-                'si le bien est menacé par l’exécution d’un crime ou d’un délit.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                      "f00013",
+                      'La protection porte ici sur les biens (véhicule, commerce, habitation, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                      "f00014",
+                      'matériel professionnel, etc.). La légitime défense n’est ouverte que ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                      "f00015",
+                      'si le bien est menacé par l’exécution d’un crime ou d’un délit.',
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Infraction visée : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                    "f00016",
+                    'Infraction visée : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'l’atteinte doit être un crime ou un délit contre un bien '
-                      '(vol, dégradation grave, destruction, pillage…). Les simples '
-                      'contraventions ne suffisent pas.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00017",
+                        'l’atteinte doit être un crime ou un délit contre un bien ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00018",
+                        '(vol, dégradation grave, destruction, pillage…). Les simples ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00019",
+                        'contraventions ne suffisent pas.',
+                      ),
                 ),
               ]),
               SizedBox(height: 6),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Moment : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                    "f00020",
+                    'Moment : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'l’infraction doit être en cours d’exécution ou sur le point '
-                      'd’être commise ; la défense vise à interrompre ou empêcher '
-                      'la réalisation de cette infraction.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00021",
+                        'l’infraction doit être en cours d’exécution ou sur le point ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00022",
+                        'd’être commise ; la défense vise à interrompre ou empêcher ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00023",
+                        'la réalisation de cette infraction.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -157,10 +248,26 @@ class LdBiensPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Un commerçant surprend de nuit plusieurs individus en train de '
-                        'forcer le rideau métallique de sa boutique. Il intervient pour '
-                        'les faire fuir en utilisant un moyen de défense mesuré : le bien '
-                        'est directement menacé par l’exécution d’un délit.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00024",
+                          'Un commerçant surprend de nuit plusieurs individus en train de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00025",
+                          'forcer le rideau métallique de sa boutique. Il intervient pour ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00026",
+                          'les faire fuir en utilisant un moyen de défense mesuré : le bien ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00027",
+                          'est directement menacé par l’exécution d’un délit.',
+                        ),
                   ),
                 ],
               ),
@@ -173,22 +280,38 @@ class LdBiensPage extends StatelessWidget {
           // 2 — L’ACTE DE DÉFENSE SUR LES BIENS
           // ============================================
           _HypoCard(
-            title: '2. L’acte de défense sur les biens',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+              "f00028",
+              '2. L’acte de défense sur les biens',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La réaction de la personne poursuivie doit respecter trois conditions '
-                'cumulatives pour être couverte par la légitime défense des biens.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                      "f00029",
+                      'La réaction de la personne poursuivie doit respecter trois conditions ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                      "f00030",
+                      'cumulatives pour être couverte par la légitime défense des biens.',
+                    ),
               ),
               SizedBox(height: 10),
 
               // STRICTEMENT NÉCESSAIRE
               _BulletPoint.rich([
                 TextSpan(
-                  text: '« STRICTEMENT » NÉCESSAIRE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                    "f00031",
+                    '« STRICTEMENT » NÉCESSAIRE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -196,16 +319,32 @@ class LdBiensPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : l’acte de défense doit être rigoureusement adapté au but '
-                      'poursuivi (interrompre l’infraction). Il ne doit pas aller au-delà '
-                      'de ce qui est indispensable pour empêcher le crime ou le délit.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00032",
+                        ' : l’acte de défense doit être rigoureusement adapté au but ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00033",
+                        'poursuivi (interrompre l’infraction). Il ne doit pas aller au-delà ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00034",
+                        'de ce qui est indispensable pour empêcher le crime ou le délit.',
+                      ),
                 ),
               ]),
 
               // AUTRE QU’UN HOMICIDE VOLONTAIRE
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'AUTRE QU’UN HOMICIDE VOLONTAIRE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                    "f00035",
+                    'AUTRE QU’UN HOMICIDE VOLONTAIRE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -213,16 +352,32 @@ class LdBiensPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : le législateur considère qu’aucun crime ou délit contre un bien, '
-                      'aussi grave soit-il, ne peut justifier de donner volontairement la mort '
-                      'à une personne.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00036",
+                        ' : le législateur considère qu’aucun crime ou délit contre un bien, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00037",
+                        'aussi grave soit-il, ne peut justifier de donner volontairement la mort ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00038",
+                        'à une personne.',
+                      ),
                 ),
               ]),
 
               // PROPORTIONNÉE
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'PROPORTIONNÉE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                    "f00039",
+                    'PROPORTIONNÉE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -230,9 +385,21 @@ class LdBiensPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : les moyens employés doivent rester en rapport avec la gravité '
-                      'de l’infraction. Une défense manifestement excessive ne sera pas '
-                      'couverte par la légitime défense.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00040",
+                        ' : les moyens employés doivent rester en rapport avec la gravité ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00041",
+                        'de l’infraction. Une défense manifestement excessive ne sera pas ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                        "f00042",
+                        'couverte par la légitime défense.',
+                      ),
                 ),
               ]),
 
@@ -242,28 +409,63 @@ class LdBiensPage extends StatelessWidget {
                 title: 'Exemples',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        '• Un propriétaire déclenche l’alarme, crie et repousse un intrus en le poussant hors de son garage : la défense est strictement nécessaire et proportionnée.\n',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                      "f00043",
+                      '• Un propriétaire déclenche l’alarme, crie et repousse un intrus en le poussant hors de son garage : la défense est strictement nécessaire et proportionnée.\n',
+                    ),
                   ),
                   TextSpan(
                     text:
-                        '• En revanche, tirer avec une arme à feu sur un voleur en fuite '
-                        'pour protéger un simple bien matériel ne respecte ni la condition '
-                        'd’homicide exclu, ni celle de proportionnalité.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00044",
+                          '• En revanche, tirer avec une arme à feu sur un voleur en fuite ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00045",
+                          'pour protéger un simple bien matériel ne respecte ni la condition ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00046",
+                          'd’homicide exclu, ni celle de proportionnalité.',
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: 'Charge de la preuve',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                  "f00047",
+                  'Charge de la preuve',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Il appartient souvent à la personne poursuivie de démontrer que '
-                        'le principe de proportionnalité a été respecté. La jurisprudence '
-                        'impose un contrôle strict : la défense d’un bien ne doit jamais '
-                        'mettre en jeu de manière excessive la vie ou l’intégrité des personnes.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00048",
+                          'Il appartient souvent à la personne poursuivie de démontrer que ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00049",
+                          'le principe de proportionnalité a été respecté. La jurisprudence ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00050",
+                          'impose un contrôle strict : la défense d’un bien ne doit jamais ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart",
+                          "f00051",
+                          'mettre en jeu de manière excessive la vie ou l’intégrité des personnes.',
+                        ),
                   ),
                 ],
               ),

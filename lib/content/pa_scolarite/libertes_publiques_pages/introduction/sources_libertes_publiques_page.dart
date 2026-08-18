@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — SOURCES DES LIBERTÉS PUBLIQUES
@@ -52,7 +53,7 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Sources des libertés publiques',
+          ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00001", 'Sources des libertés publiques'),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -68,7 +69,7 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
         children: [
           // ================= TITRE + INTRO =================
           Text(
-            'Les sources des libertés publiques',
+            ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00002", 'Les sources des libertés publiques'),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -77,18 +78,13 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           _Paragraph.rich([
-            const TextSpan(
+             TextSpan(
               text:
-                  'Les libertés dont nous bénéficions aujourd’hui en France sont le résultat '
-                  'd’une construction historique longue. Textes philosophiques, déclarations '
-                  'de droits, constitutions successives, conventions internationales : '
-                  'chacun de ces éléments a contribué à forger le régime actuel des droits '
-                  'et libertés publiques. ',
+                  ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00003", 'Les libertés dont nous bénéficions aujourd’hui en France sont le résultat ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00004", 'd’une construction historique longue. Textes philosophiques, déclarations ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00005", 'de droits, constitutions successives, conventions internationales : ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00006", 'chacun de ces éléments a contribué à forger le régime actuel des droits ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00007", 'et libertés publiques. '),
             ),
             TextSpan(
               text:
-                  'Comprendre leurs sources permet au policier de situer juridiquement son action, '
-                  'mais aussi de mesurer le poids symbolique de chaque atteinte à ces droits.',
+                  ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00008", 'Comprendre leurs sources permet au policier de situer juridiquement son action, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00009", 'mais aussi de mesurer le poids symbolique de chaque atteinte à ces droits.'),
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: referenceColor,
@@ -100,14 +96,12 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 1 — ÉVOLUTION HISTORIQUE JUSQU’EN 1958
           // =====================================================
-          const _NotaBox(
-            title: 'Chapitre 1 — Évolution historique jusqu’en 1958',
+           _NotaBox(
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00010", 'Chapitre 1 — Évolution historique jusqu’en 1958'),
             bodySpans: [
               TextSpan(
                 text:
-                    'Avant d’identifier les sources actuelles, il faut comprendre comment la '
-                    'notion même de liberté publique s’est progressivement imposée : apports '
-                    'philosophiques, révolutions politiques, textes de droits successifs…',
+                    ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00011", 'Avant d’identifier les sources actuelles, il faut comprendre comment la ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00012", 'notion même de liberté publique s’est progressivement imposée : apports ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00013", 'philosophiques, révolutions politiques, textes de droits successifs…'),
               ),
             ],
           ),
@@ -118,7 +112,7 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // -----------------------------------------------------
           _HypoCard(
             title:
-                '1.1 — Les apports antérieurs à 1789\n1.1.1 — Les sources philosophiques',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00014", '1.1 — Les apports antérieurs à 1789\n1.1.1 — Les sources philosophiques'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
@@ -127,49 +121,39 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Avant la Révolution française, plusieurs courants philosophiques ont '
-                      'préparé le terrain à la reconnaissance des libertés publiques. Ils '
-                      'constituent de véritables “sources intellectuelles” du droit des libertés.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00015", 'Avant la Révolution française, plusieurs courants philosophiques ont ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00016", 'préparé le terrain à la reconnaissance des libertés publiques. Ils ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00017", 'constituent de véritables “sources intellectuelles” du droit des libertés.'),
                   style: TextStyle(color: textColor),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'La pensée chrétienne : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00018", 'La pensée chrétienne : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'affirmation de l’égalité fondamentale de tous les hommes et valeur '
-                      'de la personne humaine, qui doit être respectée en tant que créature '
-                      'de Dieu. Cette idée sera reprise plus tard par le droit naturel.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00019", 'affirmation de l’égalité fondamentale de tous les hommes et valeur ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00020", 'de la personne humaine, qui doit être respectée en tant que créature ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00021", 'de Dieu. Cette idée sera reprise plus tard par le droit naturel.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'La théorie du droit naturel et du contrat social : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00022", 'La théorie du droit naturel et du contrat social : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'développement, notamment chez Locke et Rousseau, de l’idée de droits '
-                      'naturels, universels et inaliénables attachés à toute personne. '
-                      'Le contrat social justifie la création de l’État, mais celui-ci ne peut '
-                      'porter atteinte à ces droits que dans la mesure nécessaire au bien commun.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00023", 'développement, notamment chez Locke et Rousseau, de l’idée de droits ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00024", 'naturels, universels et inaliénables attachés à toute personne. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00025", 'Le contrat social justifie la création de l’État, mais celui-ci ne peut ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00026", 'porter atteinte à ces droits que dans la mesure nécessaire au bien commun.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'La philosophie des Lumières (XVIIIᵉ siècle) : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00027", 'La philosophie des Lumières (XVIIIᵉ siècle) : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'modélisation des systèmes politiques anglo-saxons, esprit de résistance '
-                      'au pouvoir arbitraire, défense de la tolérance religieuse, de la '
-                      'liberté d’expression et de la séparation des pouvoirs. Ces idées '
-                      'circulent largement dans les Parlements et parmi les élites françaises.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00028", 'modélisation des systèmes politiques anglo-saxons, esprit de résistance ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00029", 'au pouvoir arbitraire, défense de la tolérance religieuse, de la ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00030", 'liberté d’expression et de la séparation des pouvoirs. Ces idées ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00031", 'circulent largement dans les Parlements et parmi les élites françaises.'),
                 ),
               ]),
             ],
@@ -181,41 +165,34 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // 1.1.2 — SOURCES JURIDIQUES AVANT 1789
           // -----------------------------------------------------
           _HypoCard(
-            title: '1.1.2 — Les sources juridiques avant 1789',
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00032", '1.1.2 — Les sources juridiques avant 1789'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children:  [
               _Paragraph(
-                'À ces sources philosophiques s’ajoutent des textes juridiques étrangers qui '
-                'proclament déjà des droits et organisent des garanties contre l’arbitraire.',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00033", 'À ces sources philosophiques s’ajoutent des textes juridiques étrangers qui ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00034", 'proclament déjà des droits et organisent des garanties contre l’arbitraire.'),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Les pactes anglais : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00035", 'Les pactes anglais : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'de la Grande Charte de 1215 au Habeas Corpus (1679) puis au Bill of Rights (1689), '
-                      'le roi s’engage progressivement à respecter certaines libertés '
-                      '(sûreté, procès équitable, liberté politique) et à accepter le contrôle '
-                      'du Parlement sur son pouvoir.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00036", 'de la Grande Charte de 1215 au Habeas Corpus (1679) puis au Bill of Rights (1689), ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00037", 'le roi s’engage progressivement à respecter certaines libertés ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00038", '(sûreté, procès équitable, liberté politique) et à accepter le contrôle ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00039", 'du Parlement sur son pouvoir.'),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Les déclarations américaines : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00040", 'Les déclarations américaines : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'les colonies américaines, influencées par ces précédents anglais, '
-                      'adoptent dès 1776 plusieurs déclarations de droits. On y retrouve '
-                      'la notion d’égalité, l’affirmation de droits inaliénables (vie, liberté, '
-                      'bonheur). Ces textes annoncent la Déclaration française de 1789.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00041", 'les colonies américaines, influencées par ces précédents anglais, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00042", 'adoptent dès 1776 plusieurs déclarations de droits. On y retrouve ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00043", 'la notion d’égalité, l’affirmation de droits inaliénables (vie, liberté, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00044", 'bonheur). Ces textes annoncent la Déclaration française de 1789.'),
                 ),
               ]),
             ],
@@ -228,23 +205,20 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // -----------------------------------------------------
           _HypoCard(
             title:
-                '1.2 — La Déclaration des droits de l’Homme et du citoyen\n       du 26 août 1789',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00045", '1.2 — La Déclaration des droits de l’Homme et du citoyen\n       du 26 août 1789'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                 TextSpan(
                   text:
-                      'Issue de l’Assemblée nationale constituante, la Déclaration de 1789 pose '
-                      'les bases de la société nouvelle : souveraineté de la Nation, égalité, '
-                      'droits naturels et séparation des pouvoirs. Elle devient la référence '
-                      'majeure en matière de libertés publiques. ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00046", 'Issue de l’Assemblée nationale constituante, la Déclaration de 1789 pose ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00047", 'les bases de la société nouvelle : souveraineté de la Nation, égalité, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00048", 'droits naturels et séparation des pouvoirs. Elle devient la référence ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00049", 'majeure en matière de libertés publiques. '),
                 ),
                 TextSpan(
                   text:
-                      'Ce texte a aujourd’hui valeur constitutionnelle en droit français.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00050", 'Ce texte a aujourd’hui valeur constitutionnelle en droit français.'),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
@@ -252,13 +226,12 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Le polycopié met d’abord en avant les caractéristiques de la Déclaration, '
-                'puis son contenu concret en matière de droits de l’Homme et du citoyen.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00051", 'Le polycopié met d’abord en avant les caractéristiques de la Déclaration, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00052", 'puis son contenu concret en matière de droits de l’Homme et du citoyen.'),
               ),
               const SizedBox(height: 10),
               Text(
-                '1.2.1 — Caractéristiques de la Déclaration de 1789',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00053", '1.2.1 — Caractéristiques de la Déclaration de 1789'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -266,54 +239,49 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'L’individualisme : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00054", 'L’individualisme : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la Déclaration vise d’abord l’homme en tant qu’individu titulaire '
-                      'de droits. Elle ne reconnaît pas de droits collectifs en tant que tels '
-                      '(association, grève, syndicat…).',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00055", 'la Déclaration vise d’abord l’homme en tant qu’individu titulaire ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00056", 'de droits. Elle ne reconnaît pas de droits collectifs en tant que tels ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00057", '(association, grève, syndicat…).'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'L’aspect métaphysique : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00058", 'L’aspect métaphysique : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'les droits proclamés sont présentés comme naturels, inaliénables et '
-                      'sacrés, c’est-à-dire antérieurs et supérieurs au pouvoir politique.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00059", 'les droits proclamés sont présentés comme naturels, inaliénables et ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00060", 'sacrés, c’est-à-dire antérieurs et supérieurs au pouvoir politique.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'L’universalité : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00061", 'L’universalité : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'les droits énoncés valent pour “tous les hommes”, même si, en pratique, '
-                      'ils ne s’appliquent alors qu’aux citoyens français.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00062", 'les droits énoncés valent pour “tous les hommes”, même si, en pratique, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00063", 'ils ne s’appliquent alors qu’aux citoyens français.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Le caractère abstrait : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00064", 'Le caractère abstrait : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'la Déclaration énonce de grands principes (liberté, égalité, sûreté, '
-                      'propriété…) mais prévoit peu de mécanismes concrets de mise en œuvre.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00065", 'la Déclaration énonce de grands principes (liberté, égalité, sûreté, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00066", 'propriété…) mais prévoit peu de mécanismes concrets de mise en œuvre.'),
                 ),
               ]),
               const SizedBox(height: 10),
               Text(
-                '1.2.2 — Contenu : droits de l’Homme et droits du citoyen',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00067", '1.2.2 — Contenu : droits de l’Homme et droits du citoyen'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -321,41 +289,33 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Les droits de l’Homme : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00068", 'Les droits de l’Homme : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'dignité, égalité (“les hommes naissent et demeurent libres et égaux en droits”), '
-                      'liberté individuelle, liberté d’opinion et de religion, propriété, '
-                      'résistance à l’oppression… Ces droits inspireront la plupart des libertés '
-                      'publiques contemporaines.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00069", 'dignité, égalité (“les hommes naissent et demeurent libres et égaux en droits”), ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00070", 'liberté individuelle, liberté d’opinion et de religion, propriété, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00071", 'résistance à l’oppression… Ces droits inspireront la plupart des libertés ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00072", 'publiques contemporaines.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Les droits du citoyen : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00073", 'Les droits du citoyen : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'droits politiques permettant la participation à la vie publique : '
-                      'concours à la formation de la loi, consentement à l’impôt, accès aux '
-                      'emplois publics, égalité devant les charges publiques, etc.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00074", 'droits politiques permettant la participation à la vie publique : ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00075", 'concours à la formation de la loi, consentement à l’impôt, accès aux ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00076", 'emplois publics, égalité devant les charges publiques, etc.'),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _ExempleBox(
-                title: 'Idée-clé à retenir',
+               _ExempleBox(
+                title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00077", 'Idée-clé à retenir'),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La Déclaration de 1789 ne se contente pas de “réciter” des valeurs. '
-                        'Elle affirme que la finalité de toute institution politique est la '
-                        'conservation de ces droits. Toute atteinte injustifiée aux libertés '
-                        'publiques est donc, en principe, contraire à la vocation même de l’État.',
+                        ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00078", 'La Déclaration de 1789 ne se contente pas de “réciter” des valeurs. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00079", 'Elle affirme que la finalité de toute institution politique est la ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00080", 'conservation de ces droits. Toute atteinte injustifiée aux libertés ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00081", 'publiques est donc, en principe, contraire à la vocation même de l’État.'),
                   ),
                 ],
               ),
@@ -368,78 +328,66 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // 1.3 — ÉVOLUTION POSTÉRIEURE
           // -----------------------------------------------------
           _HypoCard(
-            title: '1.3 — L’évolution postérieure (1789–1958)',
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00082", '1.3 — L’évolution postérieure (1789–1958)'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children:  [
               _Paragraph(
-                'Après 1789, différents régimes se succèdent. Chacun réinterprète les droits '
-                'et libertés proclamés, en les renforçant ou, au contraire, en les restreignant.',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00083", 'Après 1789, différents régimes se succèdent. Chacun réinterprète les droits ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00084", 'et libertés proclamés, en les renforçant ou, au contraire, en les restreignant.'),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'La Constituante (1789–1791) : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00085", 'La Constituante (1789–1791) : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'mise en place d’un régime de monarchie constitutionnelle. Large liberté '
-                      'de réunion et d’expression, développement de la presse et des clubs politiques.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00086", 'mise en place d’un régime de monarchie constitutionnelle. Large liberté ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00087", 'de réunion et d’expression, développement de la presse et des clubs politiques.'),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Les projets de 1793 (Girondins, Montagnards) : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00088", 'Les projets de 1793 (Girondins, Montagnards) : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'nouvelles déclarations de droits plus sociales (droit au travail, à '
-                      'l’instruction, aux secours publics…). Leur application reste toutefois '
-                      'limitée par l’instabilité politique.',
-                ),
-              ]),
-              _BulletPoint.rich([
-                TextSpan(
-                  text:
-                      'Directoire, Consulat et Empire (fin XVIIIᵉ – début XIXᵉ siècle) : ',
-                  style: TextStyle(fontWeight: FontWeight.w700),
-                ),
-                TextSpan(
-                  text:
-                      'périodes globalement défavorables aux libertés : censure de la presse, '
-                      'contrôle des associations, commissions de sûreté, prisons d’État…',
-                ),
-              ]),
-              _BulletPoint.rich([
-                TextSpan(
-                  text: 'Chartes de 1814 et 1830 : ',
-                  style: TextStyle(fontWeight: FontWeight.w700),
-                ),
-                TextSpan(
-                  text:
-                      'programme politique libéral, reconnaissance de certaines libertés '
-                      'individuelles (culte, presse, égalité civile), mais suffrage censitaire '
-                      'et maintien de fortes limitations.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00089", 'nouvelles déclarations de droits plus sociales (droit au travail, à ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00090", 'l’instruction, aux secours publics…). Leur application reste toutefois ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00091", 'limitée par l’instabilité politique.'),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Constitution de 1848 et IIᵉ République, Second Empire, IIIᵉ République, '
-                      'préambule de 1946 : ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00092", 'Directoire, Consulat et Empire (fin XVIIIᵉ – début XIXᵉ siècle) : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'progressive affirmation des droits sociaux (travail, grève, protection '
-                      'de la famille, instruction…) et élargissement du suffrage. La IIIᵉ '
-                      'République consacre par diverses lois la liberté de réunion, de presse '
-                      'et d’association. Le préambule de 1946 ajoute de nombreux droits '
-                      'économiques et sociaux, toujours en vigueur aujourd’hui.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00093", 'périodes globalement défavorables aux libertés : censure de la presse, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00094", 'contrôle des associations, commissions de sûreté, prisons d’État…'),
+                ),
+              ]),
+              _BulletPoint.rich([
+                TextSpan(
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00095", 'Chartes de 1814 et 1830 : '),
+                  style: TextStyle(fontWeight: FontWeight.w700),
+                ),
+                TextSpan(
+                  text:
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00096", 'programme politique libéral, reconnaissance de certaines libertés ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00097", 'individuelles (culte, presse, égalité civile), mais suffrage censitaire ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00098", 'et maintien de fortes limitations.'),
+                ),
+              ]),
+              _BulletPoint.rich([
+                TextSpan(
+                  text:
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00099", 'Constitution de 1848 et IIᵉ République, Second Empire, IIIᵉ République, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00100", 'préambule de 1946 : '),
+                  style: TextStyle(fontWeight: FontWeight.w700),
+                ),
+                TextSpan(
+                  text:
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00101", 'progressive affirmation des droits sociaux (travail, grève, protection ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00102", 'de la famille, instruction…) et élargissement du suffrage. La IIIᵉ ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00103", 'République consacre par diverses lois la liberté de réunion, de presse ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00104", 'et d’association. Le préambule de 1946 ajoute de nombreux droits ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00105", 'économiques et sociaux, toujours en vigueur aujourd’hui.'),
                 ),
               ]),
             ],
@@ -450,14 +398,12 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 2 — SOURCES ACTUELLES
           // =====================================================
-          const _NotaBox(
-            title: 'Chapitre 2 — Les sources actuelles des libertés publiques',
+           _NotaBox(
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00106", 'Chapitre 2 — Les sources actuelles des libertés publiques'),
             bodySpans: [
               TextSpan(
                 text:
-                    'Le régime contemporain des libertés publiques repose principalement '
-                    'sur la Constitution de 1958 et sur des conventions internationales '
-                    'ratifiées par la France, notamment celles relatives aux droits de l’Homme.',
+                    ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00107", 'Le régime contemporain des libertés publiques repose principalement ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00108", 'sur la Constitution de 1958 et sur des conventions internationales ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00109", 'ratifiées par la France, notamment celles relatives aux droits de l’Homme.'),
               ),
             ],
           ),
@@ -468,66 +414,59 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // -----------------------------------------------------
           _HypoCard(
             title:
-                '2.1 — Le préambule de la Constitution du 4 octobre 1958\n       (5ᵉ République)',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00110", '2.1 — Le préambule de la Constitution du 4 octobre 1958\n       (5ᵉ République)'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                 TextSpan(
                   text:
-                      'Le préambule de 1958 est la source interne principale des libertés '
-                      'publiques en France. Il renvoie explicitement à : ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00111", 'Le préambule de 1958 est la source interne principale des libertés ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00112", 'publiques en France. Il renvoie explicitement à : '),
                 ),
                 TextSpan(
                   text:
-                      'la Déclaration de 1789, le préambule de 1946 et la Charte de '
-                      'l’environnement de 2004',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00113", 'la Déclaration de 1789, le préambule de 1946 et la Charte de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00114", 'l’environnement de 2004'),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
+                 TextSpan(
                   text:
-                      '. Ces textes, reconnus comme ayant valeur constitutionnelle, forment '
-                      'le “bloc de constitutionnalité”.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00115", '. Ces textes, reconnus comme ayant valeur constitutionnelle, forment ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00116", 'le “bloc de constitutionnalité”.'),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Ils ont été complétés par des lois importantes qui créent de nouveaux droits '
-                'ou précisent la protection de libertés déjà existantes.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00117", 'Ils ont été complétés par des lois importantes qui créent de nouveaux droits ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00118", 'ou précisent la protection de libertés déjà existantes.'),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Droit au respect de la vie privée (loi du 17 juillet 1970) ; ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00119", 'Droit au respect de la vie privée (loi du 17 juillet 1970) ; '),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Informatique et libertés (loi du 6 janvier 1978) ; ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00120", 'Informatique et libertés (loi du 6 janvier 1978) ; '),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Droit d’accès aux documents administratifs (loi du 11 juillet 1979).',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00121", 'Droit d’accès aux documents administratifs (loi du 11 juillet 1979).'),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _ExempleBox(
-                title: 'Conséquence pratique',
+               _ExempleBox(
+                title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00122", 'Conséquence pratique'),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Lorsqu’un policier applique une loi ou un règlement, il doit garder en tête '
-                        'que ces textes doivent être compatibles avec le bloc de constitutionnalité. '
-                        'En cas de doute sérieux, les justiciables peuvent saisir le Conseil '
-                        'constitutionnel par la voie de la QPC.',
+                        ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00123", 'Lorsqu’un policier applique une loi ou un règlement, il doit garder en tête ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00124", 'que ces textes doivent être compatibles avec le bloc de constitutionnalité. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00125", 'En cas de doute sérieux, les justiciables peuvent saisir le Conseil ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00126", 'constitutionnel par la voie de la QPC.'),
                   ),
                 ],
               ),
@@ -540,20 +479,18 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // 2.2 — TEXTES INTERNATIONAUX
           // -----------------------------------------------------
           _HypoCard(
-            title: '2.2 — Les textes internationaux',
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00127", '2.2 — Les textes internationaux'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Les libertés publiques ne sont plus seulement protégées au niveau interne. '
-                'Elles bénéficient aussi d’un ensemble de garanties internationales, '
-                'issues principalement de l’Organisation des Nations Unies et du Conseil de l’Europe.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00128", 'Les libertés publiques ne sont plus seulement protégées au niveau interne. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00129", 'Elles bénéficient aussi d’un ensemble de garanties internationales, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00130", 'issues principalement de l’Organisation des Nations Unies et du Conseil de l’Europe.'),
               ),
               const SizedBox(height: 8),
               Text(
-                '2.2.1 — Le droit des conflits armés / droit international humanitaire',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00131", '2.2.1 — Le droit des conflits armés / droit international humanitaire'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -561,24 +498,21 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Convention de La Haye (1899–1907) : fixe des règles pour limiter les moyens '
-                      'et méthodes de guerre, protéger les blessés et la population civile.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00132", 'Convention de La Haye (1899–1907) : fixe des règles pour limiter les moyens ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00133", 'et méthodes de guerre, protéger les blessés et la population civile.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Conventions de Genève (12 août 1949) : protègent les prisonniers de guerre, '
-                      'les blessés et les civils ; complétées par les protocoles additionnels de 1977 '
-                      'qui prennent en compte les guerres de libération nationale, les conflits internes, etc.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00134", 'Conventions de Genève (12 août 1949) : protègent les prisonniers de guerre, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00135", 'les blessés et les civils ; complétées par les protocoles additionnels de 1977 ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00136", 'qui prennent en compte les guerres de libération nationale, les conflits internes, etc.'),
                 ),
               ]),
               const SizedBox(height: 10),
               Text(
-                '2.2.2 — La Déclaration universelle des droits de l’Homme (ONU, 1948)',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00137", '2.2.2 — La Déclaration universelle des droits de l’Homme (ONU, 1948)'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -586,41 +520,37 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Adoptée par l’Assemblée générale des Nations Unies le 10 décembre 1948, '
-                'la Déclaration universelle proclame un catalogue très large de droits '
-                'civils, politiques, économiques, sociaux et culturels. Elle a une valeur '
-                'essentiellement politique, mais a inspiré de nombreux traités contraignants.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00138", 'Adoptée par l’Assemblée générale des Nations Unies le 10 décembre 1948, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00139", 'la Déclaration universelle proclame un catalogue très large de droits ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00140", 'civils, politiques, économiques, sociaux et culturels. Elle a une valeur ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00141", 'essentiellement politique, mais a inspiré de nombreux traités contraignants.'),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Conventions sur le génocide (1948) et sur l’imprescriptibilité des crimes contre l’humanité (1968) ;',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00142", 'Conventions sur le génocide (1948) et sur l’imprescriptibilité des crimes contre l’humanité (1968) ;'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Conventions contre l’esclavage (1926) et la traite des personnes (1950) ;',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00143", 'Conventions contre l’esclavage (1926) et la traite des personnes (1950) ;'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Convention contre la torture et autres peines ou traitements cruels, inhumains ou dégradants (1984) ;',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00144", 'Convention contre la torture et autres peines ou traitements cruels, inhumains ou dégradants (1984) ;'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Convention de 1951 sur le statut des réfugiés, conventions relatives aux travailleurs migrants, '
-                      'convention sur l’élimination de la discrimination raciale (1965)…',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00145", 'Convention de 1951 sur le statut des réfugiés, conventions relatives aux travailleurs migrants, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00146", 'convention sur l’élimination de la discrimination raciale (1965)…'),
                 ),
               ]),
               const SizedBox(height: 10),
               Text(
-                '2.2.3 — La Convention européenne de sauvegarde des droits de l’Homme (CEDH, 1950)',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00147", '2.2.3 — La Convention européenne de sauvegarde des droits de l’Homme (CEDH, 1950)'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -629,16 +559,13 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                 TextSpan(
                   text:
-                      'Signée en 1950 et ratifiée par la France en 1974, la CEDH reprend l’essentiel '
-                      'des droits de 1948 et crée surtout un mécanisme de contrôle juridictionnel '
-                      'devant la Cour européenne des droits de l’Homme. ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00148", 'Signée en 1950 et ratifiée par la France en 1974, la CEDH reprend l’essentiel ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00149", 'des droits de 1948 et crée surtout un mécanisme de contrôle juridictionnel ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00150", 'devant la Cour européenne des droits de l’Homme. '),
                 ),
                 TextSpan(
                   text:
-                      'Tout justiciable qui s’estime victime d’une violation de ses droits peut, '
-                      'après épuisement des recours internes, saisir la Cour.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00151", 'Tout justiciable qui s’estime victime d’une violation de ses droits peut, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00152", 'après épuisement des recours internes, saisir la Cour.'),
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: referenceColor,
@@ -646,19 +573,16 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'La France a été condamnée pour lenteur excessive de la justice, pour violations '
-                      'du droit au respect de la vie privée (écoutes téléphoniques abusives), '
-                      'pour traitements inhumains ou dégradants, etc.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00153", 'La France a été condamnée pour lenteur excessive de la justice, pour violations ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00154", 'du droit au respect de la vie privée (écoutes téléphoniques abusives), ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00155", 'pour traitements inhumains ou dégradants, etc.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Les décisions de la Cour impliquent souvent des réformes législatives ou '
-                      'administratives, ce qui montre l’impact concret de cette source sur le droit interne.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00156", 'Les décisions de la Cour impliquent souvent des réformes législatives ou ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00157", 'administratives, ce qui montre l’impact concret de cette source sur le droit interne.'),
                 ),
               ]),
             ],
@@ -671,75 +595,66 @@ class PaSourcesLibertesPubliquesPage extends StatelessWidget {
           // =====================================================
           _HypoCard(
             title:
-                'Chapitre 3 — Valeur juridique des sources des libertés publiques',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00158", 'Chapitre 3 — Valeur juridique des sources des libertés publiques'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children:  [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Toutes les sources des libertés publiques n’ont pas la même force juridique. '
-                      'Plus un texte est élevé dans la hiérarchie des normes, plus la liberté qu’il '
-                      'proclame est solidement protégée. En droit français, la hiérarchie se présente, '
-                      'du niveau le plus fort au plus faible, de la manière suivante :\n\n',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00159", 'Toutes les sources des libertés publiques n’ont pas la même force juridique. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00160", 'Plus un texte est élevé dans la hiérarchie des normes, plus la liberté qu’il ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00161", 'proclame est solidement protégée. En droit français, la hiérarchie se présente, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00162", 'du niveau le plus fort au plus faible, de la manière suivante :\n\n'),
                 ),
                 TextSpan(
                   text:
-                      '• Constitution et textes à valeur constitutionnelle : ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00163", '• Constitution et textes à valeur constitutionnelle : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'Constitution de 1958, Déclaration de 1789, préambule de 1946, Charte de '
-                      'l’environnement, principes fondamentaux reconnus par les lois de la République.\n',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00164", 'Constitution de 1958, Déclaration de 1789, préambule de 1946, Charte de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00165", 'l’environnement, principes fondamentaux reconnus par les lois de la République.\n'),
                 ),
                 TextSpan(
-                  text: '• Engagements internationaux : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00166", '• Engagements internationaux : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'conventions de l’ONU, CEDH, traités relatifs aux droits de l’Homme…\n',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00167", 'conventions de l’ONU, CEDH, traités relatifs aux droits de l’Homme…\n'),
                 ),
                 TextSpan(
-                  text: '• Lois et textes de valeur législative : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00168", '• Lois et textes de valeur législative : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'codes et lois ordinaires qui organisent concrètement l’exercice des libertés.\n',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00169", 'codes et lois ordinaires qui organisent concrètement l’exercice des libertés.\n'),
                 ),
                 TextSpan(
-                  text: '• Principes généraux du droit : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00170", '• Principes généraux du droit : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'règles dégagées par la jurisprudence administrative (ex. respect des droits de la défense).\n',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00171", 'règles dégagées par la jurisprudence administrative (ex. respect des droits de la défense).\n'),
                 ),
                 TextSpan(
-                  text: '• Règlements : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00172", '• Règlements : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'décrets, arrêtés, circulaires qui précisent les modalités pratiques '
-                      'd’exercice ou de restriction des libertés publiques.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00173", 'décrets, arrêtés, circulaires qui précisent les modalités pratiques ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00174", 'd’exercice ou de restriction des libertés publiques.'),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Réflexe opérationnel',
+                title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00175", 'Réflexe opérationnel'),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Lorsqu’une mesure de police administrative porte atteinte à une liberté '
-                        'publique, elle doit toujours respecter cette hiérarchie : un règlement '
-                        'ne peut contredire une loi, et une loi ne peut méconnaître un texte à '
-                        'valeur constitutionnelle ou conventionnelle. C’est ce contrôle de '
-                        'conformité qui garantit, en dernier ressort, la protection des citoyens.',
+                        ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00176", 'Lorsqu’une mesure de police administrative porte atteinte à une liberté ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00177", 'publique, elle doit toujours respecter cette hiérarchie : un règlement ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00178", 'ne peut contredire une loi, et une loi ne peut méconnaître un texte à ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00179", 'valeur constitutionnelle ou conventionnelle. C’est ce contrôle de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart", "f00180", 'conformité qui garantit, en dernier ressort, la protection des citoyens.'),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ModelesPlanPage extends StatelessWidget {
   const ModelesPlanPage({super.key});
@@ -19,25 +20,45 @@ class ModelesPlanPage extends StatelessWidget {
         : const Color(0xFFF7F7F7);
     final Color accentGrey = isDark ? Colors.white70 : const Color(0xFF616161);
 
-    const List<_PlanModel> plans = [
+    final List<_PlanModel> plans = [
       _PlanModel(
-        title: 'Modèle plan 1',
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+          "f00001",
+          'Modèle plan 1',
+        ),
         assetPath: 'assets/images/modele_plan1.png',
       ),
       _PlanModel(
-        title: 'Modèle plan 2',
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+          "f00002",
+          'Modèle plan 2',
+        ),
         assetPath: 'assets/images/modele_plan2.png',
       ),
       _PlanModel(
-        title: 'Modèle plan 3',
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+          "f00003",
+          'Modèle plan 3',
+        ),
         assetPath: 'assets/images/modele_plan3.png',
       ),
       _PlanModel(
-        title: 'Modèle plan 4',
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+          "f00004",
+          'Modèle plan 4',
+        ),
         assetPath: 'assets/images/modele_plan4.png',
       ),
       _PlanModel(
-        title: 'Modèle plan 5',
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+          "f00005",
+          'Modèle plan 5',
+        ),
         assetPath: 'assets/images/modele_plan5.png',
       ),
     ];
@@ -51,10 +72,18 @@ class ModelesPlanPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+            "f00006",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+            "f00007",
+            "Accident circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -69,7 +98,11 @@ class ModelesPlanPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Modèles de plan",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+              "f00008",
+              "Modèles de plan",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -79,7 +112,11 @@ class ModelesPlanPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            "Appuie sur une image pour l’ouvrir en plein écran et zoomer.",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+              "f00009",
+              "Appuie sur une image pour l’ouvrir en plein écran et zoomer.",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 13.8,
@@ -90,7 +127,11 @@ class ModelesPlanPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Différents modèles",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+              "f00010",
+              "Différents modèles",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -168,7 +209,11 @@ class _PlanTile extends StatelessWidget {
                 ),
                 const SizedBox(width: 6),
                 Text(
-                  "Ouvrir & zoomer",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/modeles_plan_page.dart",
+                    "f00011",
+                    "Ouvrir & zoomer",
+                  ),
                   style: GoogleFonts.fustat(
                     fontWeight: FontWeight.w700,
                     fontSize: 13.5,
@@ -491,9 +536,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

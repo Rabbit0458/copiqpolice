@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AutoriteParentalePage extends StatelessWidget {
   const AutoriteParentalePage({super.key});
@@ -16,28 +17,48 @@ class AutoriteParentalePage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
 
     final items = <_Item>[
-      const _Item(
-        title: 'La non-représentation d’enfant mineur',
+      _Item(
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+          "f00001",
+          'La non-représentation d’enfant mineur',
+        ),
         route:
             '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale/non_representation_enfant_mineur',
       ),
-      const _Item(
-        title: 'La soustraction d’enfant mineur par ascendant',
+      _Item(
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+          "f00002",
+          'La soustraction d’enfant mineur par ascendant',
+        ),
         route:
             '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant',
       ),
-      const _Item(
-        title: 'La soustraction d’enfant mineur sans fraude',
+      _Item(
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+          "f00003",
+          'La soustraction d’enfant mineur sans fraude',
+        ),
         route:
             '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_sans_fraude',
       ),
-      const _Item(
-        title: 'Le défaut de notification de transfert (autorité parentale)',
+      _Item(
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+          "f00004",
+          'Le défaut de notification de transfert (autorité parentale)',
+        ),
         route:
             '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert',
       ),
-      const _Item.quiz(
-        title: 'Quiz — Autorité parentale',
+      _Item.quiz(
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+          "f00005",
+          'Quiz — Autorité parentale',
+        ),
         route:
             '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale/quiz_autorite_parentale',
       ),
@@ -52,10 +73,18 @@ class AutoriteParentalePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+            "f00006",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Atteintes aux mineurs & à la famille',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+            "f00007",
+            'Atteintes aux mineurs & à la famille',
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -172,7 +201,9 @@ class _Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color pillBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-    final Color pillBorder = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+    final Color pillBorder = Colors.white.withValues(
+      alpha: isDark ? 0.18 : 0.14,
+    );
 
     return GestureDetector(
       onTap: onTap,
@@ -241,7 +272,17 @@ class _Card extends StatelessWidget {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    isQuiz ? 'Testez vos connaissances' : 'Accéder au contenu',
+                    isQuiz
+                        ? ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+                            "f00009",
+                            'Testez vos connaissances',
+                          )
+                        : ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+                            "f00010",
+                            'Accéder au contenu',
+                          ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.fustat(
@@ -276,7 +317,13 @@ class _Card extends StatelessWidget {
                         ),
                         const SizedBox(width: 6),
                         Text(
-                          isQuiz ? 'Quiz' : 'Découvrir',
+                          isQuiz
+                              ? 'Quiz'
+                              : ScolariteText.value(
+                                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart",
+                                  "f00011",
+                                  'Découvrir',
+                                ),
                           style: GoogleFonts.fustat(
                             color: Colors.white,
                             fontWeight: FontWeight.w800,

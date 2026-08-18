@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques/criminalite_organisee_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CriminaliteOrganiseeContenuPage extends StatelessWidget {
   const CriminaliteOrganiseeContenuPage({super.key});
@@ -26,10 +27,18 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Criminalité organisée',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+            "f00002",
+            'Criminalité organisée',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,7 +52,11 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'La procédure applicable à\nla criminalité et délinquance organisées',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00003",
+              'La procédure applicable à\nla criminalité et délinquance organisées',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,10 +66,26 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Panorama des infractions relevant de la criminalité et délinquance '
-            'organisées, des règles procédurales dérogatoires au droit commun et '
-            'des principales techniques spéciales d’enquête (garde à vue, '
-            'perquisitions, interceptions, enquête préliminaire et commission rogatoire).',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+                  "f00004",
+                  'Panorama des infractions relevant de la criminalité et délinquance ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+                  "f00005",
+                  'organisées, des règles procédurales dérogatoires au droit commun et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+                  "f00006",
+                  'des principales techniques spéciales d’enquête (garde à vue, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+                  "f00007",
+                  'perquisitions, interceptions, enquête préliminaire et commission rogatoire).',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -69,10 +98,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== INFRACTIONS RELEVANT CO/DO ================
           _ModuleCard(
             tag: 'co_infractions',
-            title:
-                'Les infractions relevant de la criminalité et délinquance organisées',
-            subtitle:
-                'Définition, typologie et exemples d’infractions entrant dans le champ de la criminalité et de la délinquance organisées.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00008",
+              'Les infractions relevant de la criminalité et délinquance organisées',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00009",
+              'Définition, typologie et exemples d’infractions entrant dans le champ de la criminalité et de la délinquance organisées.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -86,9 +121,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== REGLES PROCEDURALES DEROGATOIRES ==========
           _ModuleCard(
             tag: 'co_regles_derogatoires',
-            title: 'Les règles procédurales dérogatoires au droit commun',
-            subtitle:
-                'Cadre légal des dérogations accordées en matière de criminalité organisée : durée des mesures, compétences, contrôles.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00010",
+              'Les règles procédurales dérogatoires au droit commun',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00011",
+              'Cadre légal des dérogations accordées en matière de criminalité organisée : durée des mesures, compétences, contrôles.',
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -102,9 +144,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== GARDE A VUE ===============================
           _ModuleCard(
             tag: 'co_gav',
-            title: 'La garde à vue',
-            subtitle:
-                'Durées spécifiques, régime dérogatoire, droits de la personne gardée à vue et rôle de l’avocat en matière de criminalité organisée.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00012",
+              'La garde à vue',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00013",
+              'Durées spécifiques, régime dérogatoire, droits de la personne gardée à vue et rôle de l’avocat en matière de criminalité organisée.',
+            ),
             imagePath: 'assets/images/gav.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -118,9 +167,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== PERQUISITIONS =============================
           _ModuleCard(
             tag: 'co_perquisitions',
-            title: 'Les perquisitions',
-            subtitle:
-                'Horaires dérogatoires, lieux visés, formalités et spécificités des perquisitions en matière de criminalité organisée.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00014",
+              'Les perquisitions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00015",
+              'Horaires dérogatoires, lieux visés, formalités et spécificités des perquisitions en matière de criminalité organisée.',
+            ),
             imagePath: 'assets/images/commission_rogatoire.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -134,9 +190,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== INTERCEPTIONS DE CORRESPONDANCES ==========
           _ModuleCard(
             tag: 'co_interceptions',
-            title: 'Les interceptions de correspondances',
-            subtitle:
-                'Interceptions téléphoniques et électroniques : conditions, autorité compétente, durée et exploitation des enregistrements.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00016",
+              'Les interceptions de correspondances',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00017",
+              'Interceptions téléphoniques et électroniques : conditions, autorité compétente, durée et exploitation des enregistrements.',
+            ),
             imagePath: 'assets/images/gavel_desk_2.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -150,9 +213,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== AUTRES TECHNIQUES SPECIALES ==============
           _ModuleCard(
             tag: 'co_techniques_speciales',
-            title: 'Les autres techniques spéciales d’enquête',
-            subtitle:
-                'Sonorisations, captations de données, infiltrations, surveillances renforcées et opérations sous couverture.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00018",
+              'Les autres techniques spéciales d’enquête',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00019",
+              'Sonorisations, captations de données, infiltrations, surveillances renforcées et opérations sous couverture.',
+            ),
             imagePath: 'assets/images/generalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -166,9 +236,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== ENQUETE PRELIMINAIRE ======================
           _ModuleCard(
             tag: 'co_enquete_preliminaire',
-            title: 'L’enquête préliminaire relative à la criminalité organisée',
-            subtitle:
-                'Particularités de l’enquête préliminaire en matière de criminalité organisée : pouvoirs, durée, contrôle du parquet.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00020",
+              'L’enquête préliminaire relative à la criminalité organisée',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00021",
+              'Particularités de l’enquête préliminaire en matière de criminalité organisée : pouvoirs, durée, contrôle du parquet.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -182,10 +259,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== COMMISSION ROGATOIRE ======================
           _ModuleCard(
             tag: 'co_commission_rogatoire',
-            title:
-                'La procédure de commission rogatoire relative à la criminalité organisée',
-            subtitle:
-                'Délégations d’actes par le juge d’instruction aux enquêteurs dans les dossiers de criminalité organisée.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00022",
+              'La procédure de commission rogatoire relative à la criminalité organisée',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00023",
+              'Délégations d’actes par le juge d’instruction aux enquêteurs dans les dossiers de criminalité organisée.',
+            ),
             imagePath: 'assets/images/criminalite_organisee.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -199,10 +282,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== LUTTE CONTRE LE FINANCEMENT ===============
           _ModuleCard(
             tag: 'co_financement',
-            title:
-                'La lutte contre le financement des activités liées à la criminalité organisée',
-            subtitle:
-                'Traçabilité des flux financiers, gel et saisie des avoirs, coopération avec les services spécialisés et autorités financières.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00024",
+              'La lutte contre le financement des activités liées à la criminalité organisée',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00025",
+              'Traçabilité des flux financiers, gel et saisie des avoirs, coopération avec les services spécialisés et autorités financières.',
+            ),
             imagePath: 'assets/images/probite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -216,9 +305,16 @@ class CriminaliteOrganiseeContenuPage extends StatelessWidget {
           // ===================== QUIZ (OPTIONNEL, SI TU LE PRÉVOIS) ========
           _ModuleCard(
             tag: 'co_quiz',
-            title: 'Quiz — Criminalité organisée',
-            subtitle:
-                'Testez vos connaissances sur les infractions, les règles dérogatoires et les techniques spéciales d’enquête.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00026",
+              'Quiz — Criminalité organisée',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart",
+              "f00027",
+              'Testez vos connaissances sur les infractions, les règles dérogatoires et les techniques spéciales d’enquête.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

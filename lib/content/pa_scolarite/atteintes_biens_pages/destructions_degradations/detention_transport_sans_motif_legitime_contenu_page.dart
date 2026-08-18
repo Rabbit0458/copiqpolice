@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
   const PaDetentionTransportSansMotifLegitimePage({super.key});
@@ -56,10 +57,18 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions, dégradations",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+            "f00002",
+            "Destructions, dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La détention ou le transport de substances ou produits incendiaires ou explosifs sans motif légitime permettant de commettre des destructions, dégradations ou détériorations dangereuses",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+              "f00003",
+              "La détention ou le transport de substances ou produits incendiaires ou explosifs sans motif légitime permettant de commettre des destructions, dégradations ou détériorations dangereuses",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,19 +99,51 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une infraction la détention ou le transport sans motif légitime :\n"
-                "1° de substances ou produits explosifs permettant de commettre les infractions définies à l’article 322-6, "
-                "lorsque ces substances ou produits ne sont pas soumis, pour la détention ou le transport, à un régime particulier ;\n"
-                "2° de substances ou produits incendiaires permettant de commettre les infractions définies à l’article 322-6 "
-                "ainsi que d’éléments ou substances destinés à entrer dans la composition de produits ou engins incendiaires ou explosifs, "
-                "lorsque leur détention ou leur transport ont été interdits par arrêté préfectoral en raison de l’urgence "
-                "ou du risque de trouble à l’ordre public.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00005",
+                      "Constitue une infraction la détention ou le transport sans motif légitime :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00006",
+                      "1° de substances ou produits explosifs permettant de commettre les infractions définies à l’article 322-6, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00007",
+                      "lorsque ces substances ou produits ne sont pas soumis, pour la détention ou le transport, à un régime particulier ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00008",
+                      "2° de substances ou produits incendiaires permettant de commettre les infractions définies à l’article 322-6 ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00009",
+                      "ainsi que d’éléments ou substances destinés à entrer dans la composition de produits ou engins incendiaires ou explosifs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00010",
+                      "lorsque leur détention ou leur transport ont été interdits par arrêté préfectoral en raison de l’urgence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00011",
+                      "ou du risque de trouble à l’ordre public.",
+                    ),
               ),
             ],
           ),
@@ -107,22 +152,30 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+              "f00012",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-11-1 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00013",
+                    "Article 322-11-1 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la détention ou le transport, sans motif légitime, de substances ou produits incendiaires ou explosifs susceptibles de permettre des destructions, dégradations ou détériorations dangereuses pour les personnes.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00014",
+                    " : définit et réprime la détention ou le transport, sans motif légitime, de substances ou produits incendiaires ou explosifs susceptibles de permettre des destructions, dégradations ou détériorations dangereuses pour les personnes.",
+                  ),
                 ),
               ]),
             ],
@@ -132,49 +185,115 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) La possession de substances/produits, sans motif légitime",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00016",
+                  "A) La possession de substances/produits, sans motif légitime",
+                ),
               ),
               _Paragraph(
-                "L’auteur est trouvé en possession de substances ou produits soit incendiaires, soit explosifs. "
-                "Cette possession peut prendre deux formes : la détention ou le transport.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00017",
+                      "L’auteur est trouvé en possession de substances ou produits soit incendiaires, soit explosifs. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00018",
+                      "Cette possession peut prendre deux formes : la détention ou le transport.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Détention : avoir à sa disposition ces substances/produits, sans être nécessairement possesseur ou propriétaire (domicile, parties communes, chez autrui…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00019",
+                  "Détention : avoir à sa disposition ces substances/produits, sans être nécessairement possesseur ou propriétaire (domicile, parties communes, chez autrui…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transport : déplacer ces substances/produits ; être trouvé porteur sur la voie publique peut caractériser à la fois détention et transport.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00020",
+                  "Transport : déplacer ces substances/produits ; être trouvé porteur sur la voie publique peut caractériser à la fois détention et transport.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("B) L’absence de motif légitime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00021",
+                  "B) L’absence de motif légitime",
+                ),
+              ),
               _Paragraph(
-                "La notion de « motif légitime » s’apprécie au cas par cas. "
-                "Elle permet de poursuivre une personne qui, notamment dans un contexte de violences urbaines "
-                "ou de manifestations violentes, transporte sans raison un bidon d’essence.\n"
-                "À l’inverse, une personne qui en transporte de bonne foi pour remplir une tondeuse à gazon ne saurait être inquiétée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00022",
+                      "La notion de « motif légitime » s’apprécie au cas par cas. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00023",
+                      "Elle permet de poursuivre une personne qui, notamment dans un contexte de violences urbaines ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00024",
+                      "ou de manifestations violentes, transporte sans raison un bidon d’essence.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00025",
+                      "À l’inverse, une personne qui en transporte de bonne foi pour remplir une tondeuse à gazon ne saurait être inquiétée.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Nature des substances : 2 régimes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00026",
+                  "C) Nature des substances : 2 régimes",
+                ),
+              ),
               _NotaBox(
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00027",
+                  "À retenir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Une distinction existe selon la nature des substances détenues ou transportées :\n"
-                        "• explosifs artisanaux non soumis à un régime particulier (1°)\n"
-                        "• produits/substances incendiaires + éléments de composition interdits par arrêté préfectoral (2°).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                          "f00028",
+                          "Une distinction existe selon la nature des substances détenues ou transportées :\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                          "f00029",
+                          "• explosifs artisanaux non soumis à un régime particulier (1°)\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                          "f00030",
+                          "• produits/substances incendiaires + éléments de composition interdits par arrêté préfectoral (2°).",
+                        ),
                   ),
                 ],
               ),
@@ -182,71 +301,141 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "D) 1° — Substances ou produits explosifs non soumis à un régime particulier",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00031",
+                  "D) 1° — Substances ou produits explosifs non soumis à un régime particulier",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Sont visées des substances ou produits explosifs de fabrication artisanale. "
-                      "Bien qu’ils ne soient pas des explosifs conventionnels, leur dangerosité est extrême : "
-                      "la détention ou le transport ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                        "f00032",
+                        "Sont visées des substances ou produits explosifs de fabrication artisanale. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                        "f00033",
+                        "Bien qu’ils ne soient pas des explosifs conventionnels, leur dangerosité est extrême : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                        "f00034",
+                        "la détention ou le transport ",
+                      ),
                 ),
                 TextSpan(
-                  text: "sans motif légitime",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00035",
+                    "sans motif légitime",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " suffit à constituer l’infraction.\nExemple : transport d’un mélange explosif contenant du nitrate d’ammonium (engrais) avec de l’essence.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00036",
+                    " suffit à constituer l’infraction.\nExemple : transport d’un mélange explosif contenant du nitrate d’ammonium (engrais) avec de l’essence.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "E) 2° — Produits incendiaires + éléments de composition malgré un arrêté préfectoral",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00037",
+                  "E) 2° — Produits incendiaires + éléments de composition malgré un arrêté préfectoral",
+                ),
               ),
               _Paragraph(
-                "Ici, il s’agit de substances plus « banales » qui ne sont pas interdites en temps normal. "
-                "Pour caractériser l’infraction, deux conditions doivent être réunies :",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00038",
+                      "Ici, il s’agit de substances plus « banales » qui ne sont pas interdites en temps normal. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00039",
+                      "Pour caractériser l’infraction, deux conditions doivent être réunies :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Absence de motif légitime (condition nécessaire mais insuffisante à elle seule).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00040",
+                  "Absence de motif légitime (condition nécessaire mais insuffisante à elle seule).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Violation d’un arrêté préfectoral interdisant la détention/le transport (urgence ou risque de trouble à l’ordre public).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00041",
+                  "Violation d’un arrêté préfectoral interdisant la détention/le transport (urgence ou risque de trouble à l’ordre public).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’arrêté préfectoral est une mesure temporaire liée aux circonstances de temps et de lieu "
-                "(ex. interdiction de transporter des bidons d’essence dans un contexte de violences urbaines).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00042",
+                      "L’arrêté préfectoral est une mesure temporaire liée aux circonstances de temps et de lieu ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00043",
+                      "(ex. interdiction de transporter des bidons d’essence dans un contexte de violences urbaines).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "F) Absence d’utilisation des produits (avant le passage à l’acte)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00044",
+                  "F) Absence d’utilisation des produits (avant le passage à l’acte)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Si ces substances étaient utilisées, elles pourraient entraîner des destructions dangereuses "
-                      "au sens de ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                        "f00045",
+                        "Si ces substances étaient utilisées, elles pourraient entraîner des destructions dangereuses ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                        "f00046",
+                        "au sens de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’article 322-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00047",
+                    "l’article 322-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      ". L’incrimination ici réprime la détention/le transport avant toute utilisation. "
-                      "Si l’auteur utilise ou tente d’utiliser ces substances, il sera poursuivi sur le fondement de 322-6, et non de 322-11-1.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                        "f00048",
+                        ". L’incrimination ici réprime la détention/le transport avant toute utilisation. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                        "f00049",
+                        "Si l’auteur utilise ou tente d’utiliser ces substances, il sera poursuivi sur le fondement de 322-6, et non de 322-11-1.",
+                      ),
                 ),
               ]),
             ],
@@ -256,23 +445,53 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+              "f00050",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1° — Produits explosifs (article 322-11-1, 1°)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00051",
+                  "1° — Produits explosifs (article 322-11-1, 1°)",
+                ),
+              ),
               _Paragraph(
-                "Il faut la conscience de détenir ou de transporter des substances ou produits explosifs "
-                "sans motif légitime.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00052",
+                      "Il faut la conscience de détenir ou de transporter des substances ou produits explosifs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00053",
+                      "sans motif légitime.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "2° — Produits incendiaires (article 322-11-1, 2°)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00054",
+                  "2° — Produits incendiaires (article 322-11-1, 2°)",
+                ),
               ),
               _Paragraph(
-                "Il faut ne disposer d’aucun motif légitime et ne pas respecter l’arrêté préfectoral "
-                "interdisant la détention/le transport.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00055",
+                      "Il faut ne disposer d’aucun motif légitime et ne pas respecter l’arrêté préfectoral ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                      "f00056",
+                      "interdisant la détention/le transport.",
+                    ),
               ),
             ],
           ),
@@ -281,13 +500,21 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+              "f00057",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante prévue pour cette incrimination.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00058",
+                  "Aucune circonstance aggravante prévue pour cette incrimination.",
+                ),
               ),
             ],
           ),
@@ -296,59 +523,115 @@ class PaDetentionTransportSansMotifLegitimePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+              "f00059",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00060",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph(
-                "Délit : 3 ans d’emprisonnement et 45 000 € d’amende.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00061",
+                  "Délit : 3 ans d’emprisonnement et 45 000 € d’amende.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Fondements : "),
                 TextSpan(
-                  text: "article 322-11-1, 1° et 2° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00062",
+                    "Fondements : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00063",
+                    "article 322-11-1, 1° et 2° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00064",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00065",
+                    "Peines prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00066",
+                    "l’article 322-17 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00067",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                  "f00068",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI (droit commun). "),
                 TextSpan(
-                  text: "Article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00069",
+                    "Complicité : OUI (droit commun). ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : suppose un fait de complicité (aide/assistance, provocation ou instructions) et l’intention de s’associer à l’action de l’auteur principal.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00070",
+                    "Article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart",
+                    "f00071",
+                    " : suppose un fait de complicité (aide/assistance, provocation ou instructions) et l’intention de s’associer à l’action de l’auteur principal.",
+                  ),
                 ),
               ]),
             ],

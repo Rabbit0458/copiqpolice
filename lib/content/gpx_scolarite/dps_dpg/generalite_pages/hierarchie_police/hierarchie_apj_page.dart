@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — HIÉRARCHIE : AGENTS DE POLICE JUDICIAIRE (APJ)
@@ -42,10 +43,18 @@ class HierarchieApjPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Agents de police judiciaire',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+            "f00002",
+            'Agents de police judiciaire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -61,7 +70,11 @@ class HierarchieApjPage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            'Les agents de police judiciaire (APJ)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00003",
+              'Les agents de police judiciaire (APJ)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -71,30 +84,46 @@ class HierarchieApjPage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO ----------------------------
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'Les agents de police judiciaire sont définis par les articles 20, 20-1 et 21 du code de procédure pénale. ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                "f00004",
+                'Les agents de police judiciaire sont définis par les articles 20, 20-1 et 21 du code de procédure pénale. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'Ils disposent de certaines attributions de police judiciaire et ont pour mission essentielle de seconder les officiers de police judiciaire dans l’exercice de leurs fonctions.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                "f00005",
+                'Ils disposent de certaines attributions de police judiciaire et ont pour mission essentielle de seconder les officiers de police judiciaire dans l’exercice de leurs fonctions.',
+              ),
             ),
           ]),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'Le code de procédure pénale distingue plusieurs catégories d’agents de police judiciaire, en fonction de leur statut, de leur affectation et, pour certains, de leur engagement dans la réserve opérationnelle.',
+          _Paragraph(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00006",
+              'Le code de procédure pénale distingue plusieurs catégories d’agents de police judiciaire, en fonction de leur statut, de leur affectation et, pour certains, de leur engagement dans la réserve opérationnelle.',
+            ),
           ),
           const SizedBox(height: 14),
 
-          const _IntroBullet(
-            text:
-                'Les agents de police judiciaire participent aux enquêtes, sous la direction et le contrôle des officiers de police judiciaire.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00007",
+              'Les agents de police judiciaire participent aux enquêtes, sous la direction et le contrôle des officiers de police judiciaire.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Ils exercent des attributions de police judiciaire encadrées par le code de procédure pénale et les instructions de l’autorité judiciaire.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00008",
+              'Ils exercent des attributions de police judiciaire encadrées par le code de procédure pénale et les instructions de l’autorité judiciaire.',
+            ),
           ),
 
           const SizedBox(height: 20),
@@ -103,24 +132,42 @@ class HierarchieApjPage extends StatelessWidget {
           // A. QUALITÉ D’AGENT DE POLICE JUDICIAIRE
           // =======================================================
           _ConditionCard(
-            title: 'A. La qualité d’agent de police judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00009",
+              'A. La qualité d’agent de police judiciaire',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les agents de police judiciaire sont investis de certaines attributions de police judiciaire. '
-                'Ils doivent, en parallèle, seconder les officiers de police judiciaire dans l’accomplissement de leurs missions d’enquête.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                      "f00010",
+                      'Les agents de police judiciaire sont investis de certaines attributions de police judiciaire. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                      "f00011",
+                      'Ils doivent, en parallèle, seconder les officiers de police judiciaire dans l’accomplissement de leurs missions d’enquête.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'L’article 20 du code de procédure pénale définit une première catégorie d’agents de police judiciaire. ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                    "f00012",
+                    'L’article 20 du code de procédure pénale définit une première catégorie d’agents de police judiciaire. ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'L’article 20-1 du code de procédure pénale prévoit une autre catégorie visant plus spécifiquement la réserve opérationnelle de la police nationale et de la gendarmerie nationale.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                    "f00013",
+                    'L’article 20-1 du code de procédure pénale prévoit une autre catégorie visant plus spécifiquement la réserve opérationnelle de la police nationale et de la gendarmerie nationale.',
+                  ),
                 ),
               ]),
             ],
@@ -132,36 +179,55 @@ class HierarchieApjPage extends StatelessWidget {
           // B. APJ DE L’ARTICLE 20 DU CODE DE PROCÉDURE PÉNALE
           // =======================================================
           _ConditionCard(
-            title:
-                'B. Les agents de police judiciaire de l’article 20 du code de procédure pénale',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00014",
+              'B. Les agents de police judiciaire de l’article 20 du code de procédure pénale',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Sont agents de police judiciaire au sens de l’article 20 du code de procédure pénale (sous réserve des dispositions de l’article 20-1 du même code) :',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                    "f00015",
+                    'Sont agents de police judiciaire au sens de l’article 20 du code de procédure pénale (sous réserve des dispositions de l’article 20-1 du même code) :',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    'Les militaires de la gendarmerie nationale autres que les volontaires, lorsqu’ils ne disposent pas de la qualité d’officier de police judiciaire.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00016",
+                  'Les militaires de la gendarmerie nationale autres que les volontaires, lorsqu’ils ne disposent pas de la qualité d’officier de police judiciaire.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les fonctionnaires des services actifs de la police nationale, titulaires et stagiaires, lorsqu’ils ne disposent pas de la qualité d’officier de police judiciaire.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00017",
+                  'Les fonctionnaires des services actifs de la police nationale, titulaires et stagiaires, lorsqu’ils ne disposent pas de la qualité d’officier de police judiciaire.',
+                ),
               ),
 
               SizedBox(height: 12),
               _NotaBox(
-                title: 'Rôle opérationnel',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00018",
+                  'Rôle opérationnel',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Ces agents de police judiciaire participent aux missions d’enquête, exécutent les instructions des officiers de police judiciaire et réalisent les actes entrant dans leurs attributions, sous la direction de l’autorité judiciaire.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                      "f00019",
+                      'Ces agents de police judiciaire participent aux missions d’enquête, exécutent les instructions des officiers de police judiciaire et réalisent les actes entrant dans leurs attributions, sous la direction de l’autorité judiciaire.',
+                    ),
                   ),
                 ],
               ),
@@ -172,38 +238,62 @@ class HierarchieApjPage extends StatelessWidget {
 
           // === B.2 CONDITIONS D’EXERCICE APJ 20 ==================
           _ConditionCard(
-            title:
-                'B.2 Conditions d’exercice de la qualité d’agent de police judiciaire (article 20)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00020",
+              'B.2 Conditions d’exercice de la qualité d’agent de police judiciaire (article 20)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les agents de police judiciaire mentionnés à l’article 20 du code de procédure pénale ne peuvent exercer les attributions attachées à cette qualité que s’ils remplissent certaines conditions liées à leur emploi et à leurs missions.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00021",
+                  'Les agents de police judiciaire mentionnés à l’article 20 du code de procédure pénale ne peuvent exercer les attributions attachées à cette qualité que s’ils remplissent certaines conditions liées à leur emploi et à leurs missions.',
+                ),
               ),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    'Ils doivent être affectés à un emploi comportant l’exercice de la police judiciaire.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00022",
+                  'Ils doivent être affectés à un emploi comportant l’exercice de la police judiciaire.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Ils ne doivent pas participer, en unité constituée, à une opération de maintien de l’ordre.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00023",
+                  'Ils ne doivent pas participer, en unité constituée, à une opération de maintien de l’ordre.',
+                ),
               ),
               SizedBox(height: 8),
 
               _Paragraph(
-                'Sont donc exclus, pour l’exercice effectif de ces attributions, les fonctionnaires des services actifs affectés principalement à des tâches administratives ou engagés dans une mission de maintien de l’ordre.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00024",
+                  'Sont donc exclus, pour l’exercice effectif de ces attributions, les fonctionnaires des services actifs affectés principalement à des tâches administratives ou engagés dans une mission de maintien de l’ordre.',
+                ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: 'Modalités d’emploi',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00025",
+                  'Modalités d’emploi',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Des instructions émanant de chaque direction active précisent les modalités d’emploi des gardiens agents de police judiciaire de l’article 20, afin d’assurer une utilisation cohérente et sécurisée de leurs prérogatives en matière de police judiciaire.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                      "f00026",
+                      'Des instructions émanant de chaque direction active précisent les modalités d’emploi des gardiens agents de police judiciaire de l’article 20, afin d’assurer une utilisation cohérente et sécurisée de leurs prérogatives en matière de police judiciaire.',
+                    ),
                   ),
                 ],
               ),
@@ -216,60 +306,103 @@ class HierarchieApjPage extends StatelessWidget {
           // C. APJ DE L’ARTICLE 20-1 DU CODE DE PROCÉDURE PÉNALE
           // =======================================================
           _ConditionCard(
-            title:
-                'C. Les agents de police judiciaire de l’article 20-1 du code de procédure pénale',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+              "f00027",
+              'C. Les agents de police judiciaire de l’article 20-1 du code de procédure pénale',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’article 20-1 du code de procédure pénale prévoit une qualité d’agent de police judiciaire au bénéfice de certains personnels servant dans la réserve opérationnelle.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00028",
+                  'L’article 20-1 du code de procédure pénale prévoit une qualité d’agent de police judiciaire au bénéfice de certains personnels servant dans la réserve opérationnelle.',
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                'Personnels pouvant bénéficier de la qualité d’agent de police judiciaire (article 20-1)',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00029",
+                  'Personnels pouvant bénéficier de la qualité d’agent de police judiciaire (article 20-1)',
+                ),
               ),
               _Paragraph(
-                'Peuvent bénéficier de la qualité d’agent de police judiciaire, lorsqu’ils servent dans la réserve opérationnelle de la police nationale ou de la gendarmerie nationale :',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00030",
+                  'Peuvent bénéficier de la qualité d’agent de police judiciaire, lorsqu’ils servent dans la réserve opérationnelle de la police nationale ou de la gendarmerie nationale :',
+                ),
               ),
               SizedBox(height: 6),
 
               _BulletPoint(
-                text:
-                    'Les fonctionnaires de la police nationale, actifs ou à la retraite, ayant exercé en tant qu’officier de police judiciaire ou agent de police judiciaire pendant au moins cinq années au cours de leur activité.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00031",
+                  'Les fonctionnaires de la police nationale, actifs ou à la retraite, ayant exercé en tant qu’officier de police judiciaire ou agent de police judiciaire pendant au moins cinq années au cours de leur activité.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les militaires de la gendarmerie nationale, actifs ou à la retraite, ayant exercé en tant qu’officier de police judiciaire ou agent de police judiciaire pendant au moins cinq années au cours de leur activité.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00032",
+                  'Les militaires de la gendarmerie nationale, actifs ou à la retraite, ayant exercé en tant qu’officier de police judiciaire ou agent de police judiciaire pendant au moins cinq années au cours de leur activité.',
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle('Remise à niveau professionnelle'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00033",
+                  'Remise à niveau professionnelle',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Pour bénéficier durablement de cette qualité d’agent de police judiciaire dans la réserve opérationnelle, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                    "f00034",
+                    'Pour bénéficier durablement de cette qualité d’agent de police judiciaire dans la réserve opérationnelle, ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'les personnels ayant rompu le lien avec le service dans lequel ils exerçaient en tant qu’officier de police judiciaire ou agent de police judiciaire depuis plus d’un an ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                    "f00035",
+                    'les personnels ayant rompu le lien avec le service dans lequel ils exerçaient en tant qu’officier de police judiciaire ou agent de police judiciaire depuis plus d’un an ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
-                  text:
-                      'sont soumis à une remise à niveau professionnelle adaptée et périodique.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                    "f00036",
+                    'sont soumis à une remise à niveau professionnelle adaptée et périodique.',
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
 
               _NotaBox(
-                title: 'Objectif de la remise à niveau',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                  "f00037",
+                  'Objectif de la remise à niveau',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Cette formation vise à garantir que les agents de police judiciaire de la réserve opérationnelle maîtrisent toujours les règles de procédure, les droits des personnes et les techniques d’enquête, malgré l’interruption éventuelle de leur activité principale.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_apj_page.dart",
+                      "f00038",
+                      'Cette formation vise à garantir que les agents de police judiciaire de la réserve opérationnelle maîtrisent toujours les règles de procédure, les droits des personnes et les techniques d’enquête, malgré l’interruption éventuelle de leur activité principale.',
+                    ),
                   ),
                 ],
               ),

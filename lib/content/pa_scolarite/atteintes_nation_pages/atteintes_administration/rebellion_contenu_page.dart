@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaRebellionPage extends StatelessWidget {
   const PaRebellionPage({super.key});
@@ -56,10 +57,18 @@ class PaRebellionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à l’administration",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+            "f00002",
+            "Atteintes à l’administration",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaRebellionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La rébellion",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+              "f00003",
+              "La rébellion",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,16 +99,36 @@ class PaRebellionPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’opposer une résistance violente à une personne dépositaire de l’autorité publique "
-                "ou chargée d’une mission de service public agissant, dans l’exercice de ses fonctions, "
-                "pour l’exécution des lois, des ordres de l’autorité publique, des décisions ou mandats de justice, "
-                "est une rébellion et constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00005",
+                      "Le fait d’opposer une résistance violente à une personne dépositaire de l’autorité publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00006",
+                      "ou chargée d’une mission de service public agissant, dans l’exercice de ses fonctions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00007",
+                      "pour l’exécution des lois, des ordres de l’autorité publique, des décisions ou mandats de justice, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00008",
+                      "est une rébellion et constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -104,28 +137,46 @@ class PaRebellionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 433-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00010",
+                    "Article 433-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " : définit la rébellion. "),
                 TextSpan(
-                  text: "Article 433-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00011",
+                    " : définit la rébellion. ",
                   ),
                 ),
-                TextSpan(text: " : la réprime."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00012",
+                    "Article 433-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00013",
+                    " : la réprime.",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -134,79 +185,191 @@ class PaRebellionPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une victime particulière"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00015",
+                  "A) Une victime particulière",
+                ),
+              ),
               _Paragraph(
-                "La rébellion vise la résistance violente contre :\n"
-                "• une personne dépositaire de l’autorité publique ;\n"
-                "• ou une personne chargée d’une mission de service public.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00016",
+                      "La rébellion vise la résistance violente contre :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00017",
+                      "• une personne dépositaire de l’autorité publique ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00018",
+                      "• ou une personne chargée d’une mission de service public.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Dépositaire de l’autorité publique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00019",
+                  "1) Dépositaire de l’autorité publique",
+                ),
+              ),
               _Paragraph(
-                "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur la parcelle "
-                "d’autorité publique que lui confèrent ses fonctions (fonctionnaire, militaire, magistrat, officier public, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00020",
+                      "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur la parcelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00021",
+                      "d’autorité publique que lui confèrent ses fonctions (fonctionnaire, militaire, magistrat, officier public, etc.).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, commissaires-priseurs, "
-                "fonctionnaires des eaux et forêts, responsables d’exécutifs locaux (maires, présidents d’EPCI, conseils départementaux/régionaux), "
-                "ainsi que les adjoints au maire et conseillers municipaux délégués.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00022",
+                      "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, commissaires-priseurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00023",
+                      "fonctionnaires des eaux et forêts, responsables d’exécutifs locaux (maires, présidents d’EPCI, conseils départementaux/régionaux), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00024",
+                      "ainsi que les adjoints au maire et conseillers municipaux délégués.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Chargé d’une mission de service public"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00025",
+                  "2) Chargé d’une mission de service public",
+                ),
+              ),
               _Paragraph(
-                "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement "
-                "ou sur réquisition des autorités, un service public quelconque. Il participe à une mission d’intérêt général "
-                "sans pouvoir de décision/commandement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00026",
+                      "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00027",
+                      "ou sur réquisition des autorités, un service public quelconque. Il participe à une mission d’intérêt général ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00028",
+                      "sans pouvoir de décision/commandement.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Exemple : un serrurier requis par l’O.P.J. Les élus locaux sans délégation de prérogatives de puissance publique "
-                "(comme les parlementaires) relèvent de cette catégorie.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00029",
+                      "Exemple : un serrurier requis par l’O.P.J. Les élus locaux sans délégation de prérogatives de puissance publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00030",
+                      "(comme les parlementaires) relèvent de cette catégorie.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Agissant dans l’exercice de ses fonctions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00031",
+                  "B) Agissant dans l’exercice de ses fonctions",
+                ),
+              ),
               _Paragraph(
-                "Il n’y a rébellion que si la résistance se manifeste alors que l’agent agit dans le cadre de ses fonctions.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00032",
+                  "Il n’y a rébellion que si la résistance se manifeste alors que l’agent agit dans le cadre de ses fonctions.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Article 113-3 du règlement général d’emploi de la Police nationale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00033",
+                    "Article 113-3 du règlement général d’emploi de la Police nationale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : les fonctionnaires actifs sont tenus, même hors service, d’intervenir (assistance à personne en danger, "
-                      "prévenir/réprimer un trouble à l’ordre public, protéger les personnes et les biens).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                        "f00034",
+                        " : les fonctionnaires actifs sont tenus, même hors service, d’intervenir (assistance à personne en danger, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                        "f00035",
+                        "prévenir/réprimer un trouble à l’ordre public, protéger les personnes et les biens).",
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00036",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Tout fonctionnaire de police est considéré comme étant en service et agissant dans l’exercice de ses fonctions "
-                        "lorsqu’il intervient dans sa circonscription, de sa propre initiative ou sur réquisition, pour prévenir et réprimer "
-                        "tout acte troublant la sécurité et l’ordre publics ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00037",
+                          "Tout fonctionnaire de police est considéré comme étant en service et agissant dans l’exercice de ses fonctions ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00038",
+                          "lorsqu’il intervient dans sa circonscription, de sa propre initiative ou sur réquisition, pour prévenir et réprimer ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00039",
+                          "tout acte troublant la sécurité et l’ordre publics ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 15 décembre 2015)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00040",
+                      "(Cass. crim., 15 décembre 2015)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -219,24 +382,56 @@ class PaRebellionPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Pour l’exécution des lois / ordres / décisions ou mandats de justice",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00041",
+                  "C) Pour l’exécution des lois / ordres / décisions ou mandats de justice",
+                ),
               ),
               _Paragraph(
-                "Il n’y a rébellion que si la résistance intervient alors que l’agent opère :\n"
-                "• en police judiciaire (flagrant délit, enquête préliminaire, commission rogatoire, mandat, jugement, etc.) ;\n"
-                "• ou en police administrative (maintien/rétablissement de l’ordre public, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00042",
+                      "Il n’y a rébellion que si la résistance intervient alors que l’agent opère :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00043",
+                      "• en police judiciaire (flagrant délit, enquête préliminaire, commission rogatoire, mandat, jugement, etc.) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00044",
+                      "• ou en police administrative (maintien/rétablissement de l’ordre public, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00045",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Après un vol avec port d’arme, l’individu résiste violemment aux gendarmes en tenue qui tentent de procéder à son arrestation : "
-                        "ils agissent nécessairement pour l’exécution des lois ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00046",
+                          "Après un vol avec port d’arme, l’individu résiste violemment aux gendarmes en tenue qui tentent de procéder à son arrestation : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00047",
+                          "ils agissent nécessairement pour l’exécution des lois ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 24 octobre 1984)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00048",
+                      "(Cass. crim., 24 octobre 1984)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -247,20 +442,44 @@ class PaRebellionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’ordre peut être implicite (ex. contrôle d’identité par un A.P.J. « sur ordre et sous la responsabilité d’un O.P.J. ») "
-                "ou nécessiter une autorisation/réquisition préalable (commission rogatoire, mandats…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00049",
+                      "L’ordre peut être implicite (ex. contrôle d’identité par un A.P.J. « sur ordre et sous la responsabilité d’un O.P.J. ») ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00050",
+                      "ou nécessiter une autorisation/réquisition préalable (commission rogatoire, mandats…).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00051",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’illégalité supposée de l’acte accompli par l’agent dans l’exercice de ses fonctions est sans incidence sur la procédure "
-                        "pour rébellion (et outrage) ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00052",
+                          "L’illégalité supposée de l’acte accompli par l’agent dans l’exercice de ses fonctions est sans incidence sur la procédure ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00053",
+                          "pour rébellion (et outrage) ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 1er septembre 2004)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00054",
+                      "(Cass. crim., 1er septembre 2004)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -271,26 +490,56 @@ class PaRebellionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "En revanche, si l’agent commet un acte sans lien avec sa mission (litige d’ordre privé), la résistance ne constitue pas une rébellion.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00055",
+                  "En revanche, si l’agent commet un acte sans lien avec sa mission (litige d’ordre privé), la résistance ne constitue pas une rébellion.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un acte de résistance violente"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00056",
+                  "D) Un acte de résistance violente",
+                ),
+              ),
               _Paragraph(
-                "Sont exclus : la simple désobéissance ou l’obstacle passif à l’accomplissement de la mission.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00057",
+                  "Sont exclus : la simple désobéissance ou l’obstacle passif à l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00058",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un sexagénaire frêle qui refuse de suivre les gendarmes en s’accrochant au volant de son véhicule : obstacle passif, "
-                        "pas de rébellion ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00059",
+                          "Un sexagénaire frêle qui refuse de suivre les gendarmes en s’accrochant au volant de son véhicule : obstacle passif, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00060",
+                          "pas de rébellion ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 1er mars 2006)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00061",
+                      "(Cass. crim., 1er mars 2006)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -301,16 +550,34 @@ class PaRebellionPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "La rébellion est retenue dès lors qu’il y a violence et initiative de confrontation. "
-                "La résistance doit être violente, sans exiger nécessairement une agression caractérisée ni un préjudice pour l’agent.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00062",
+                      "La rébellion est retenue dès lors qu’il y a violence et initiative de confrontation. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00063",
+                      "La résistance doit être violente, sans exiger nécessairement une agression caractérisée ni un préjudice pour l’agent.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  TextSpan(text: "Agent frappé (poings/pieds) "),
                   TextSpan(
-                    text: "(Cass. crim., 06 novembre 2001)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00064",
+                      "Agent frappé (poings/pieds) ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00065",
+                      "(Cass. crim., 06 novembre 2001)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -318,11 +585,18 @@ class PaRebellionPage extends StatelessWidget {
                   ),
                   TextSpan(text: ". "),
                   TextSpan(
-                    text:
-                        "Chute de deux gardiens de la paix provoquée dans un escalier mécanique ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00066",
+                      "Chute de deux gardiens de la paix provoquée dans un escalier mécanique ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Paris, 23 septembre 1982)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00067",
+                      "(C.A. Paris, 23 septembre 1982)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -330,11 +604,18 @@ class PaRebellionPage extends StatelessWidget {
                   ),
                   TextSpan(text: ". "),
                   TextSpan(
-                    text:
-                        "Coup de pied lors d’une fouille de sécurité après énervement/insultes ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00068",
+                      "Coup de pied lors d’une fouille de sécurité après énervement/insultes ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 23 mai 2006)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00069",
+                      "(Cass. crim., 23 mai 2006)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -345,15 +626,31 @@ class PaRebellionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00070",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Journaliste qui se débat au moment de son interpellation et réussit à prendre la fuite, sans frapper les policiers : "
-                        "résistance active suffisante ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00071",
+                          "Journaliste qui se débat au moment de son interpellation et réussit à prendre la fuite, sans frapper les policiers : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00072",
+                          "résistance active suffisante ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 07 novembre 2006)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00073",
+                      "(Cass. crim., 07 novembre 2006)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -364,20 +661,43 @@ class PaRebellionPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Distinction avec les violences volontaires :\n"
-                "• violences aggravées si l’agent public n’exerce pas de prérogative à l’égard de l’individu violent ;\n"
-                "• rébellion si l’agent exerce ses fonctions à l’égard de l’individu qui répond par un acte violent.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00074",
+                      "Distinction avec les violences volontaires :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00075",
+                      "• violences aggravées si l’agent public n’exerce pas de prérogative à l’égard de l’individu violent ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00076",
+                      "• rébellion si l’agent exerce ses fonctions à l’égard de l’individu qui répond par un acte violent.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00077",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Rébellion retenue lorsque les violences ne sont pas distinctes de la résistance violente constitutive de la rébellion ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00078",
+                      "Rébellion retenue lorsque les violences ne sont pas distinctes de la résistance violente constitutive de la rébellion ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 21 février 2006)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00079",
+                      "(Cass. crim., 21 février 2006)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -393,23 +713,53 @@ class PaRebellionPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+              "f00080",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Connaissance de la qualité de l’agent public",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00081",
+                  "A) Connaissance de la qualité de l’agent public",
+                ),
               ),
               _Paragraph(
-                "En général, cette connaissance résulte du fait que l’agent est en uniforme ou présente des signes distinctifs "
-                "(brassard, carte professionnelle, etc.) et précise l’objet de son intervention.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00082",
+                      "En général, cette connaissance résulte du fait que l’agent est en uniforme ou présente des signes distinctifs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00083",
+                      "(brassard, carte professionnelle, etc.) et précise l’objet de son intervention.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Volonté de résister à l’agent public"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00084",
+                  "B) Volonté de résister à l’agent public",
+                ),
+              ),
               _Paragraph(
-                "Le mobile est indifférent. L’infraction est intentionnelle : l’auteur agit volontairement en ayant conscience "
-                "d’exercer des violences ou voies de fait.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00085",
+                      "Le mobile est indifférent. L’infraction est intentionnelle : l’auteur agit volontairement en ayant conscience ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00086",
+                      "d’exercer des violences ou voies de fait.",
+                    ),
               ),
             ],
           ),
@@ -418,46 +768,77 @@ class PaRebellionPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+              "f00087",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 433-7 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00088",
+                    "Article 433-7 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00089",
+                    " : rébellion commise en réunion.",
                   ),
                 ),
-                TextSpan(text: " : rébellion commise en réunion."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 433-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00090",
+                    "Article 433-8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : rébellion commise par une personne porteuse d’une arme (apparente ou cachée). "
-                      "Un degré d’aggravation supplémentaire est prévu si la rébellion armée est commise en réunion.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                        "f00091",
+                        " : rébellion commise par une personne porteuse d’une arme (apparente ou cachée). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                        "f00092",
+                        "Un degré d’aggravation supplémentaire est prévu si la rébellion armée est commise en réunion.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00093",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Suspect irascible en garde à vue, menace l’enquêteur de le frapper avec une chaise, nécessite une maîtrise par la force ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00094",
+                      "Suspect irascible en garde à vue, menace l’enquêteur de le frapper avec une chaise, nécessite une maîtrise par la force ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Amiens, 19 décembre 2007)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00095",
+                      "(C.A. Amiens, 19 décembre 2007)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -469,14 +850,19 @@ class PaRebellionPage extends StatelessWidget {
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 433-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00096",
+                    "Article 433-9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : lorsque l’auteur de la rébellion est détenu.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00097",
+                    " : lorsque l’auteur de la rébellion est détenu.",
+                  ),
                 ),
               ]),
             ],
@@ -486,132 +872,245 @@ class PaRebellionPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+              "f00098",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00099",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Simple : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00100",
+                    "Simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 433-7 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00101",
+                    "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00102",
+                    "article 433-7 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (en réunion) : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00103",
+                    "Aggravée (en réunion) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 433-7 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00104",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00105",
+                    "article 433-7 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (arme) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00106",
+                    "Aggravée (arme) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 433-8 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00107",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00108",
+                    "article 433-8 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (arme + réunion) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 150 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00109",
+                    "Aggravée (arme + réunion) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 433-8 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00110",
+                    "10 ans d’emprisonnement et 150 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00111",
+                    "article 433-8 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Auteur détenu : "),
                 TextSpan(
-                  text:
-                      "cumul des peines de la rébellion et de l’infraction pour laquelle l’auteur est détenu. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00112",
+                    "Auteur détenu : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 433-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00113",
+                    "cumul des peines de la rébellion et de l’infraction pour laquelle l’auteur est détenu. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00114",
+                    "article 433-9 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00115",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00116",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00117",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00118",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00119",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00120",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00121",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                    "f00122",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                  "f00123",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’assistance apportée à l’auteur principal peut constituer une complicité de rébellion : "
-                        "jeter des graviers et débris de verre en direction d’un policier en sommant de relâcher un camarade interpellé ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00124",
+                          "L’assistance apportée à l’auteur principal peut constituer une complicité de rébellion : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                          "f00125",
+                          "jeter des graviers et débris de verre en direction d’un policier en sommant de relâcher un camarade interpellé ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 8 décembre 2009)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart",
+                      "f00126",
+                      "(Cass. crim., 8 décembre 2009)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,

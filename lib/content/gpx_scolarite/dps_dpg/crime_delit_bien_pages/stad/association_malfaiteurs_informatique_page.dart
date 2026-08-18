@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
   const AssociationMalfaiteursInformatiquePage({super.key});
@@ -59,10 +60,18 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes aux STAD",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+            "f00002",
+            "Atteintes aux STAD",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’association de malfaiteurs en informatique",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+              "f00003",
+              "L’association de malfaiteurs en informatique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La participation à un groupement formé ou à une entente établie en vue de la préparation, "
-                "caractérisée par un ou plusieurs faits matériels, d'une ou de plusieurs infractions prévues "
-                "par les articles 323-1 à 323-3-1 du Code pénal, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00005",
+                      "La participation à un groupement formé ou à une entente établie en vue de la préparation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00006",
+                      "caractérisée par un ou plusieurs faits matériels, d'une ou de plusieurs infractions prévues ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00007",
+                      "par les articles 323-1 à 323-3-1 du Code pénal, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,22 +135,30 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00009",
+                    "Article 323-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’association de malfaiteurs en informatique.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00010",
+                    " : définit et réprime l’association de malfaiteurs en informatique.",
+                  ),
                 ),
               ]),
             ],
@@ -131,31 +168,68 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un groupement ou une entente"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00012",
+                  "A) Un groupement ou une entente",
+                ),
+              ),
               _Paragraph(
-                "La loi ne définit ni le groupement, ni l’entente. L’objectif est de permettre une défense avancée "
-                "des systèmes contre le danger que représentent certains « clubs »/« hackers » mettant en commun "
-                "leurs connaissances pour commettre des délits informatiques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00013",
+                      "La loi ne définit ni le groupement, ni l’entente. L’objectif est de permettre une défense avancée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00014",
+                      "des systèmes contre le danger que représentent certains « clubs »/« hackers » mettant en commun ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00015",
+                      "leurs connaissances pour commettre des délits informatiques.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le nombre de participants importe peu : l’entente a même été retenue pour deux personnes. "
-                "Il peut s’agir de personnes physiques comme de personnes morales.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00016",
+                      "Le nombre de participants importe peu : l’entente a même été retenue pour deux personnes. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00017",
+                      "Il peut s’agir de personnes physiques comme de personnes morales.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : entente retenue pour deux personnes ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00018",
+                      "Jurisprudence : entente retenue pour deux personnes ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Tr. corr. Limoges, 14 mars 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00019",
+                      "(Tr. corr. Limoges, 14 mars 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -166,47 +240,101 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Il n’est pas nécessaire que le groupement ait été formé à l’origine pour préparer des délits informatiques. "
-                "Si une association régulièrement déclarée dérive vers la délinquance informatique, seuls ceux qui continuent "
-                "à y participer peuvent tomber sous le coup de la loi.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00020",
+                      "Il n’est pas nécessaire que le groupement ait été formé à l’origine pour préparer des délits informatiques. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00021",
+                      "Si une association régulièrement déclarée dérive vers la délinquance informatique, seuls ceux qui continuent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00022",
+                      "à y participer peuvent tomber sous le coup de la loi.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) La préparation d’une ou plusieurs infractions",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00023",
+                  "B) La préparation d’une ou plusieurs infractions",
+                ),
               ),
               _Paragraph(
-                "La préparation se situe en amont de la commission. La participation à l’entente doit se concrétiser "
-                "par un ou plusieurs faits matériels.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00024",
+                      "La préparation se situe en amont de la commission. La participation à l’entente doit se concrétiser ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00025",
+                      "par un ou plusieurs faits matériels.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Sont notamment visés : échanges d’informations sur les modes opératoires (communication de codes d’accès, "
-                "moyens utilisés pour « casser » un code, méthodes techniques, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00026",
+                      "Sont notamment visés : échanges d’informations sur les modes opératoires (communication de codes d’accès, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00027",
+                      "moyens utilisés pour « casser » un code, méthodes techniques, etc.).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Les infractions visées"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00028",
+                  "C) Les infractions visées",
+                ),
+              ),
               _Paragraph(
-                "Les infractions préparées doivent relever des atteintes aux STAD visées par le Code pénal :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00029",
+                  "Les infractions préparées doivent relever des atteintes aux STAD visées par le Code pénal :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Accès ou maintien frauduleux dans un système de traitement automatisé de données.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00030",
+                  "Accès ou maintien frauduleux dans un système de traitement automatisé de données.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Entrave au fonctionnement d’un système de traitement automatisé de données.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00031",
+                  "Entrave au fonctionnement d’un système de traitement automatisé de données.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Introduction, extraction, détention, reproduction, transmission, suppression ou modification frauduleuse de données.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00032",
+                  "Introduction, extraction, détention, reproduction, transmission, suppression ou modification frauduleuse de données.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Importation, détention, offre, cession ou mise à disposition de données adaptées/conçues pour commettre des infractions d’atteintes aux STAD.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00033",
+                  "Importation, détention, offre, cession ou mise à disposition de données adaptées/conçues pour commettre des infractions d’atteintes aux STAD.",
+                ),
               ),
             ],
           ),
@@ -215,25 +343,48 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+              "f00034",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délit suppose une participation volontaire au groupement ou à l’entente. "
-                "L’auteur doit avoir conscience qu’au sein de cette structure se préparait une ou plusieurs infractions "
-                "d’atteinte au système de traitement automatisé de données.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00035",
+                      "Le délit suppose une participation volontaire au groupement ou à l’entente. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00036",
+                      "L’auteur doit avoir conscience qu’au sein de cette structure se préparait une ou plusieurs infractions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00037",
+                      "d’atteinte au système de traitement automatisé de données.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : il n’est pas nécessaire que chaque membre soit au courant de toutes les activités des autres membres ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00038",
+                      "Jurisprudence : il n’est pas nécessaire que chaque membre soit au courant de toutes les activités des autres membres ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Aix, 02 juin 1993)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00039",
+                      "(C.A. Aix, 02 juin 1993)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -249,87 +400,125 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+              "f00040",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction définie à l’association de malfaiteurs en informatique est punie des peines prévues "
-                "respectivement pour l’infraction elle-même ou pour l’infraction la plus sévèrement réprimée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00041",
+                      "L’infraction définie à l’association de malfaiteurs en informatique est punie des peines prévues ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                      "f00042",
+                      "respectivement pour l’infraction elle-même ou pour l’infraction la plus sévèrement réprimée.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00043",
+                    "Article 323-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : mécanisme de renvoi aux peines de l’infraction préparée (ou la plus sévère).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00044",
+                    " : mécanisme de renvoi aux peines de l’infraction préparée (ou la plus sévère).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Renvois (exemples)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00045",
+                  "Renvois (exemples)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00046",
+                    "Article 323-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : aggravations si suppression/modification de données ou altération du fonctionnement, ou si STAD à caractère personnel mis en œuvre par l’État.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00047",
+                    " : aggravations si suppression/modification de données ou altération du fonctionnement, ou si STAD à caractère personnel mis en œuvre par l’État.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00048",
+                    "Article 323-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : aggravation si STAD à caractère personnel mis en œuvre par l’État.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00049",
+                    " : aggravation si STAD à caractère personnel mis en œuvre par l’État.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00050",
+                    "Article 323-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : aggravation si STAD à caractère personnel mis en œuvre par l’État.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00051",
+                    " : aggravation si STAD à caractère personnel mis en œuvre par l’État.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-3-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00052",
+                    "Article 323-3-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : reprend le même mécanisme répressif que l’article 323-4 (renvoi à l’infraction la plus sévère).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00053",
+                    " : reprend le même mécanisme répressif que l’article 323-4 (renvoi à l’infraction la plus sévère).",
+                  ),
                 ),
               ]),
             ],
@@ -339,83 +528,162 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+              "f00054",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Principe (peines variables)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00055",
+                  "Principe (peines variables)",
+                ),
+              ),
               _Paragraph(
-                "En cas de pluralité d’infractions préparées, la peine retenue est celle de l’infraction la plus sévèrement réprimée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00056",
+                  "En cas de pluralité d’infractions préparées, la peine retenue est celle de l’infraction la plus sévèrement réprimée.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Repères usuels (selon l’infraction préparée)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00057",
+                  "Repères usuels (selon l’infraction préparée)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Base (ex. "),
                 TextSpan(
-                  text: "article 323-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00058",
+                    "Base (ex. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00059",
+                    "article 323-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ") : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 100 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00060",
+                    "3 ans d’emprisonnement et 100 000 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravations possibles (ex. "),
                 TextSpan(
-                  text: "article 323-1 alinéa 2 et 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00061",
+                    "Aggravations possibles (ex. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00062",
+                    "article 323-1 alinéa 2 et 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ") : "),
                 TextSpan(
-                  text:
-                      "jusqu’à 5 ans / 150 000 € puis 7 ans / 300 000 € selon les cas.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00063",
+                    "jusqu’à 5 ans / 150 000 € puis 7 ans / 300 000 € selon les cas.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00064",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 323-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00065",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (amende selon l’article 131-38 et peines de l’article 131-39 ; interdiction d’activité liée à l’infraction).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00066",
+                    "l’article 323-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00067",
+                    " (amende selon l’article 131-38 et peines de l’article 131-39 ; interdiction d’activité liée à l’infraction).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non prévue)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00068",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                  "f00069",
+                  "Tentative : NON (non prévue).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00070",
+                    "Complicité : OUI — conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00071",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/stad/association_malfaiteurs_informatique_page.dart",
+                    "f00072",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],
@@ -672,9 +940,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

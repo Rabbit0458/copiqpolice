@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaNonAssistancePersonnePerilPage extends StatelessWidget {
   const PaNonAssistancePersonnePerilPage({super.key});
@@ -56,10 +57,18 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en danger",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+            "f00002",
+            "Mise en danger",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La non-assistance à personne en péril",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00003",
+              "La non-assistance à personne en péril",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: card5,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour quiconque, de s’abstenir volontairement de porter à une personne en péril "
-                "l’assistance que, sans risque pour lui ou pour les tiers, il pouvait lui prêter "
-                "soit par son action personnelle, soit en provoquant un secours, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00005",
+                      "Le fait, pour quiconque, de s’abstenir volontairement de porter à une personne en péril ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00006",
+                      "l’assistance que, sans risque pour lui ou pour les tiers, il pouvait lui prêter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00007",
+                      "soit par son action personnelle, soit en provoquant un secours, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -103,28 +132,46 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00009",
+                    "Article 223-6 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " : incrimination.\n"),
                 TextSpan(
-                  text: "Article 223-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00010",
+                    " : incrimination.\n",
                   ),
                 ),
-                TextSpan(text: " : peine applicable."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00011",
+                    "Article 223-6 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00012",
+                    " : peine applicable.",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -133,21 +180,47 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délit consiste à s’abstenir d’aider autrui dans une situation de péril.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00014",
+                  "Le délit consiste à s’abstenir d’aider autrui dans une situation de péril.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("A) Imminence d’un péril"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00015",
+                  "A) Imminence d’un péril",
+                ),
+              ),
               _Paragraph(
-                "Le péril doit être caractérisé et non simplement présumé : il doit être impérativement et "
-                "expressément constaté. La notion de péril suppose un danger présent : les risques éventuels ou "
-                "hypothétiques ne suffisent pas.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00016",
+                      "Le péril doit être caractérisé et non simplement présumé : il doit être impérativement et ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00017",
+                      "expressément constaté. La notion de péril suppose un danger présent : les risques éventuels ou ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00018",
+                      "hypothétiques ne suffisent pas.",
+                    ),
               ),
             ],
           ),
@@ -156,37 +229,54 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Jurisprudence (imminence)
           _ConditionCard(
-            title: "Jurisprudence — imminence",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00019",
+              "Jurisprudence — imminence",
+            ),
             cardColor: card4,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Des médecins qui s’abstiennent de faire passer un test de dépistage du sida à une patiente "
-                      "polytransfusée ne sont pas coupables de non-assistance, car le caractère imminent du péril n’est pas établi. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                        "f00020",
+                        "Des médecins qui s’abstiennent de faire passer un test de dépistage du sida à une patiente ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                        "f00021",
+                        "polytransfusée ne sont pas coupables de non-assistance, car le caractère imminent du péril n’est pas établi. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 4 novembre 1999)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00022",
+                    "(Cass. crim., 4 novembre 1999)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "C.A. Poitiers, 03 février 1977",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00023",
+                    "C.A. Poitiers, 03 février 1977",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : le péril doit être constaté expressément, pas seulement présumé.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00024",
+                    " : le péril doit être constaté expressément, pas seulement présumé.",
+                  ),
                 ),
               ]),
             ],
@@ -196,60 +286,127 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Matériel : nature du péril + cause indifférente
           _ConditionCard(
-            title: "II — Élément matériel (suite)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00025",
+              "II — Élément matériel (suite)",
+            ),
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("B) Nature du péril"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00026",
+                  "B) Nature du péril",
+                ),
+              ),
               _Paragraph(
-                "L’état de péril correspond à un état dangereux ou une situation critique qui fait craindre "
-                "de graves conséquences : risque de mort ou d’atteintes corporelles graves.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00027",
+                      "L’état de péril correspond à un état dangereux ou une situation critique qui fait craindre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00028",
+                      "de graves conséquences : risque de mort ou d’atteintes corporelles graves.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Le péril peut être d’origine "),
                   TextSpan(
-                    text: "naturelle, accidentelle ou infractionnelle. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00029",
+                      "Le péril peut être d’origine ",
+                    ),
                   ),
                   TextSpan(
-                    text: "\nPrincipe d’indifférence confirmé par ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00030",
+                      "naturelle, accidentelle ou infractionnelle. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 31 mai 1949",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00031",
+                      "\nPrincipe d’indifférence confirmé par ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00032",
+                      "Cass. crim., 31 mai 1949",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : aucune distinction selon la cause ou la nature du péril.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00033",
+                      " : aucune distinction selon la cause ou la nature du péril.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) L’auteur du péril est indifférent"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00034",
+                  "C) L’auteur du péril est indifférent",
+                ),
+              ),
               _Paragraph(
-                "Peu importe que le péril soit le fait d’un tiers, du débiteur de l’obligation de secours "
-                "ou même de la victime. Il est fréquent que l’auteur d’un accident soit la personne la mieux placée "
-                "pour porter les premiers secours.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00035",
+                      "Peu importe que le péril soit le fait d’un tiers, du débiteur de l’obligation de secours ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00036",
+                      "ou même de la victime. Il est fréquent que l’auteur d’un accident soit la personne la mieux placée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00037",
+                      "pour porter les premiers secours.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Exemple : "),
                 TextSpan(
-                  text: "Cass. crim., 04 mars 1998",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00038",
+                    "Exemple : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : l’auteur d’un accident qui néglige de porter secours peut être coupable.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00039",
+                    "Cass. crim., 04 mars 1998",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00040",
+                    " : l’auteur d’un accident qui néglige de porter secours peut être coupable.",
+                  ),
                 ),
               ]),
             ],
@@ -259,41 +416,61 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Cumul avec violences volontaires
           _ConditionCard(
-            title: "Cumul de qualifications",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00041",
+              "Cumul de qualifications",
+            ),
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les qualifications de violences volontaires et de non-assistance à personne en péril peuvent "
-                "être retenues cumulativement si elles sont constituées dans des temps d’action différents.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00042",
+                      "Les qualifications de violences volontaires et de non-assistance à personne en péril peuvent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00043",
+                      "être retenues cumulativement si elles sont constituées dans des temps d’action différents.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Cass. crim., 24 juin 1980",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00044",
+                    "Cass. crim., 24 juin 1980",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : l’inculpation de violences n’est pas nécessairement exclusive de celle d’abstention volontaire de porter secours.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00045",
+                    " : l’inculpation de violences n’est pas nécessairement exclusive de celle d’abstention volontaire de porter secours.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Cass. crim., 22 mars 2016",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00046",
+                    "Cass. crim., 22 mars 2016",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : deux temps d’action différents → poursuites concomitantes possibles.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00047",
+                    " : deux temps d’action différents → poursuites concomitantes possibles.",
+                  ),
                 ),
               ]),
             ],
@@ -303,86 +480,146 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Absence d'assistance + modalités + efficacité
           _ConditionCard(
-            title: "II — Élément matériel (points clés)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00048",
+              "II — Élément matériel (points clés)",
+            ),
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("D) Une absence d’assistance"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00049",
+                  "D) Une absence d’assistance",
+                ),
+              ),
               _Paragraph(
-                "Infraction formelle : elle existe du seul fait de l’abstention de secours. "
-                "L’assistance doit être suffisante (apte à faire cesser le péril), mais peu importe qu’elle réussisse.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00050",
+                      "Infraction formelle : elle existe du seul fait de l’abstention de secours. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00051",
+                      "L’assistance doit être suffisante (apte à faire cesser le péril), mais peu importe qu’elle réussisse.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "C.A. Nancy, 27 octobre 1965",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00052",
+                    "C.A. Nancy, 27 octobre 1965",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : l’infraction n’est pas de ne pas avoir sauvé, mais de ne pas avoir prêté une aide.",
-                ),
-              ]),
-              SizedBox(height: 12),
-
-              _SubTitle("E) Possibilité d’intervenir"),
-              _Paragraph(
-                "Le délit vise une abstention d’assistance à la victime, pas une abstention de combattre le péril. "
-                "On ne peut pas se défendre en disant que le secours aurait été inefficace.",
-              ),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Cass. crim., 23 mars 1953",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00053",
+                    " : l’infraction n’est pas de ne pas avoir sauvé, mais de ne pas avoir prêté une aide.",
                   ),
-                ),
-                TextSpan(
-                  text:
-                      " : l’auteur ne peut invoquer l’inefficacité supposée du secours.",
                 ),
               ]),
               SizedBox(height: 12),
 
               _SubTitle(
-                "F) Nature de l’assistance : agir ou provoquer un secours",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00054",
+                  "E) Possibilité d’intervenir",
+                ),
               ),
               _Paragraph(
-                "L’assistance peut consister à agir personnellement ou à rechercher/provoquer l’intervention d’autrui. "
-                "Mais l’appel à autrui ne suffit pas si une action personnelle aurait été manifestement plus efficace.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00055",
+                      "Le délit vise une abstention d’assistance à la victime, pas une abstention de combattre le péril. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00056",
+                      "On ne peut pas se défendre en disant que le secours aurait été inefficace.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Cass. crim., 26 juillet 1954",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00057",
+                    "Cass. crim., 23 mars 1953",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : obligation d’intervenir par le mode que la nécessité commande, voire cumulativement.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00058",
+                    " : l’auteur ne peut invoquer l’inefficacité supposée du secours.",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00059",
+                  "F) Nature de l’assistance : agir ou provoquer un secours",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00060",
+                      "L’assistance peut consister à agir personnellement ou à rechercher/provoquer l’intervention d’autrui. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00061",
+                      "Mais l’appel à autrui ne suffit pas si une action personnelle aurait été manifestement plus efficace.",
+                    ),
+              ),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00062",
+                    "Cass. crim., 26 juillet 1954",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00063",
+                    " : obligation d’intervenir par le mode que la nécessité commande, voire cumulativement.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Cass. crim., 07 mars 1991",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00064",
+                    "Cass. crim., 07 mars 1991",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : tenter de provoquer un secours n’exclut pas le délit si une action immédiate était possible sans risque.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00065",
+                    " : tenter de provoquer un secours n’exclut pas le délit si une action immédiate était possible sans risque.",
+                  ),
                 ),
               ]),
             ],
@@ -392,15 +629,33 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Absence de risque
           _ConditionCard(
-            title: "Condition essentielle",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00066",
+              "Condition essentielle",
+            ),
             cardColor: card5,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Une absence de risque pour soi-même ou pour autrui"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00067",
+                  "Une absence de risque pour soi-même ou pour autrui",
+                ),
+              ),
               _Paragraph(
-                "La loi n’impose ni héroïsme ni témérité : l’assistance doit pouvoir être apportée sans risque "
-                "pour l’intervenant ou pour les tiers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00068",
+                      "La loi n’impose ni héroïsme ni témérité : l’assistance doit pouvoir être apportée sans risque ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00069",
+                      "pour l’intervenant ou pour les tiers.",
+                    ),
               ),
             ],
           ),
@@ -409,39 +664,66 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00070",
+              "III — Élément moral",
+            ),
             cardColor: card3,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Pour que le délit soit constitué, il faut que la personne ait connu l’existence d’un péril "
-                      "immédiat et constant rendant son intervention nécessaire, et qu’elle ait volontairement refusé "
-                      "d’intervenir par les modes possibles. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                        "f00071",
+                        "Pour que le délit soit constitué, il faut que la personne ait connu l’existence d’un péril ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                        "f00072",
+                        "immédiat et constant rendant son intervention nécessaire, et qu’elle ait volontairement refusé ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                        "f00073",
+                        "d’intervenir par les modes possibles. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 25 juin 1964)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00074",
+                    "(Cass. crim., 25 juin 1964)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
-              _SubTitle("A) Conscience du péril imminent"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00075",
+                  "A) Conscience du péril imminent",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le délit n’est constitué que si le prévenu a eu conscience du degré de gravité du péril et s’est abstenu volontairement. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00076",
+                    "Le délit n’est constitué que si le prévenu a eu conscience du degré de gravité du péril et s’est abstenu volontairement. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 3 février 1993)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00077",
+                    "(Cass. crim., 3 février 1993)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
@@ -449,11 +731,23 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Exemple : un pilote d’avion militaire survolant à basse altitude un accident d’hélicoptère dont il est à l’origine "
-                        "ne pouvait ignorer que les occupants avaient besoin de soins urgents. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                          "f00078",
+                          "Exemple : un pilote d’avion militaire survolant à basse altitude un accident d’hélicoptère dont il est à l’origine ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                          "f00079",
+                          "ne pouvait ignorer que les occupants avaient besoin de soins urgents. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 04 mars 1998)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00080",
+                      "(Cass. crim., 04 mars 1998)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -462,10 +756,24 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Volonté de ne pas agir"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00081",
+                  "B) Volonté de ne pas agir",
+                ),
+              ),
               _Paragraph(
-                "Elle se traduit par une volonté consciente et assumée de ne pas porter assistance à une personne "
-                "que l’on sait en péril.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00082",
+                      "Elle se traduit par une volonté consciente et assumée de ne pas porter assistance à une personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                      "f00083",
+                      "que l’on sait en péril.",
+                    ),
               ),
             ],
           ),
@@ -474,24 +782,33 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00084",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-6 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00085",
+                    "Article 223-6 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Lorsque la personne en péril est un mineur de 15 ans.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00086",
+                  "Lorsque la personne en péril est un mineur de 15 ans.",
+                ),
               ),
             ],
           ),
@@ -500,75 +817,140 @@ class PaNonAssistancePersonnePerilPage extends StatelessWidget {
 
           // Répression + personnes morales + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+              "f00087",
+              "V — Répression",
+            ),
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00088",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00089",
+                    "Qualification simple : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00090",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. ",
+                  ),
                 ),
                 TextSpan(text: "— "),
                 TextSpan(
-                  text: "article 223-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00091",
+                    "article 223-6 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00092",
+                    "Qualification aggravée : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00093",
+                    "7 ans d’emprisonnement et 100 000 € d’amende. ",
+                  ),
                 ),
                 TextSpan(text: "— "),
                 TextSpan(
-                  text: "article 223-6 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00094",
+                    "article 223-6 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00095",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 223-7-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00096",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00097",
+                    "l’article 223-7-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00098",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                  "f00099",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00100",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00101",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart",
+                    "f00102",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -827,9 +1209,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaTraiteEtresHumainsPage extends StatelessWidget {
   const PaTraiteEtresHumainsPage({super.key});
@@ -56,10 +57,18 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la dignité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+            "f00002",
+            "Atteintes à la dignité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La traite des êtres humains",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+              "f00003",
+              "La traite des êtres humains",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,16 +99,36 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La traite des êtres humains est le fait de recruter une personne, de la transporter, de la transférer, "
-                "de l’héberger ou de l’accueillir à des fins d’exploitation, notamment lorsqu’elle est obtenue par menace, "
-                "contrainte, violence, manœuvre dolosive, abus d’autorité, ou abus d’une situation de vulnérabilité, "
-                "ou encore en échange d’une rémunération/avantage (ou promesse).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00005",
+                      "La traite des êtres humains est le fait de recruter une personne, de la transporter, de la transférer, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00006",
+                      "de l’héberger ou de l’accueillir à des fins d’exploitation, notamment lorsqu’elle est obtenue par menace, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00007",
+                      "contrainte, violence, manœuvre dolosive, abus d’autorité, ou abus d’une situation de vulnérabilité, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00008",
+                      "ou encore en échange d’une rémunération/avantage (ou promesse).",
+                    ),
               ),
             ],
           ),
@@ -104,18 +137,30 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00010",
+                    "Article 225-4-1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime la traite des êtres humains.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00011",
+                    " : définit et réprime la traite des êtres humains.",
+                  ),
                 ),
               ]),
             ],
@@ -125,94 +170,197 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte positif envers une personne"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00013",
+                  "A) Un acte positif envers une personne",
+                ),
+              ),
               _Paragraph(
-                "La traite suppose un acte positif de l’auteur : recruter, transporter, transférer, accueillir ou héberger.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00014",
+                  "La traite suppose un acte positif de l’auteur : recruter, transporter, transférer, accueillir ou héberger.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Recruter : démarches pour convaincre/forcer une personne à être mise à disposition d’un tiers dans un but criminel.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00015",
+                  "Recruter : démarches pour convaincre/forcer une personne à être mise à disposition d’un tiers dans un but criminel.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transporter : assurer effectivement le déplacement de la victime d’un point à un autre.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00016",
+                  "Transporter : assurer effectivement le déplacement de la victime d’un point à un autre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transférer : faire en sorte que le déplacement s’effectue sans intervenir directement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00017",
+                  "Transférer : faire en sorte que le déplacement s’effectue sans intervenir directement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accueillir : être présent lors de l’arrivée de la victime ; Héberger : loger la victime.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00018",
+                  "Accueillir : être présent lors de l’arrivée de la victime ; Héberger : loger la victime.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Une circonstance de commission (pour un majeur)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00019",
+                  "B) Une circonstance de commission (pour un majeur)",
+                ),
               ),
               _Paragraph(
-                "À l’égard d’un majeur, la traite est constituée si l’acte est commis dans au moins l’une des circonstances suivantes :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00020",
+                  "À l’égard d’un majeur, la traite est constituée si l’acte est commis dans au moins l’une des circonstances suivantes :",
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "1) Menace, contrainte, violence ou manœuvre dolosive",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00021",
+                  "1) Menace, contrainte, violence ou manœuvre dolosive",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Menace / contrainte : moyens visant à supprimer le consentement (violences morales assimilées à des violences physiques).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00022",
+                  "Menace / contrainte : moyens visant à supprimer le consentement (violences morales assimilées à des violences physiques).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Violence : violence physique exercée sur la victime (ou sa famille / proche).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00023",
+                  "Violence : violence physique exercée sur la victime (ou sa famille / proche).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La menace/la contrainte doit inspirer une crainte sérieuse et immédiate (pour la victime ou un proche).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00024",
+                  "La menace/la contrainte doit inspirer une crainte sérieuse et immédiate (pour la victime ou un proche).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Manœuvre dolosive : agissements trompeurs amenant la victime à être abusée (ruse).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00025",
+                  "Manœuvre dolosive : agissements trompeurs amenant la victime à être abusée (ruse).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Ascendant / autorité / abus d’autorité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00026",
+                  "2) Ascendant / autorité / abus d’autorité",
+                ),
+              ),
               _Paragraph(
-                "Sont visées les personnes disposant :\n"
-                "• d’une autorité de droit (ex. tuteur)\n"
-                "• d’une autorité de fait (permanente ou discontinue) liée aux circonstances\n"
-                "• d’une autorité conférée par les fonctions (publiques : professeur… / privées : médecin…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00027",
+                      "Sont visées les personnes disposant :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00028",
+                      "• d’une autorité de droit (ex. tuteur)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00029",
+                      "• d’une autorité de fait (permanente ou discontinue) liée aux circonstances\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00030",
+                      "• d’une autorité conférée par les fonctions (publiques : professeur… / privées : médecin…).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("3) Abus d’une situation de vulnérabilité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00031",
+                  "3) Abus d’une situation de vulnérabilité",
+                ),
+              ),
               _Paragraph(
-                "La vulnérabilité doit être due à des causes limitativement prévues (âge, maladie, infirmité, déficience physique/psychique, grossesse) "
-                "et résulter d’un état préexistant (non créé par l’infraction). Elle doit être apparente ou connue de l’auteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00032",
+                      "La vulnérabilité doit être due à des causes limitativement prévues (âge, maladie, infirmité, déficience physique/psychique, grossesse) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00033",
+                      "et résulter d’un état préexistant (non créé par l’infraction). Elle doit être apparente ou connue de l’auteur.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("4) Rémunération / avantage / promesse"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00034",
+                  "4) Rémunération / avantage / promesse",
+                ),
+              ),
               _Paragraph(
-                "Cette circonstance suppose une forme de négociation : l’échange doit être convenu initialement (avant la remise/mise à disposition). "
-                "La rémunération peut être en numéraire ou en nature. L’avantage doit être tangible. La promesse est une anticipation et n’a pas besoin d’être contractualisée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00035",
+                      "Cette circonstance suppose une forme de négociation : l’échange doit être convenu initialement (avant la remise/mise à disposition). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00036",
+                      "La rémunération peut être en numéraire ou en nature. L’avantage doit être tangible. La promesse est une anticipation et n’a pas besoin d’être contractualisée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si une « contrepartie » intervient seulement après la remise, l’infraction n’est pas constituée au titre de cette circonstance.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00037",
+                      "Si une « contrepartie » intervient seulement après la remise, l’infraction n’est pas constituée au titre de cette circonstance.",
+                    ),
                   ),
                 ],
               ),
@@ -223,12 +371,19 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
                 title: "Mineur",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La traite à l’égard d’un mineur est constituée même si elle n’est commise dans aucune des circonstances 1° à 4°.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00038",
+                      "La traite à l’égard d’un mineur est constituée même si elle n’est commise dans aucune des circonstances 1° à 4°.",
+                    ),
                   ),
                   TextSpan(text: " — "),
                   TextSpan(
-                    text: "article 225-4-1 II du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00039",
+                      "article 225-4-1 II du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -240,39 +395,89 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Une mise à disposition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00040",
+                  "C) Une mise à disposition",
+                ),
+              ),
               _Paragraph(
-                "La victime doit être mise à la disposition de l’auteur ou d’un tiers (même non identifié). "
-                "La mise à disposition est sanctionnée même si elle n’a pas été effectivement réalisée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00041",
+                      "La victime doit être mise à la disposition de l’auteur ou d’un tiers (même non identifié). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00042",
+                      "La mise à disposition est sanctionnée même si elle n’a pas été effectivement réalisée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point clé",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00043",
+                  "Point clé",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’intervention d’un tiers n’est pas nécessaire : la traite peut être retenue si l’auteur agit pour mettre la victime à sa propre disposition.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00044",
+                      "L’intervention d’un tiers n’est pas nécessaire : la traite peut être retenue si l’auteur agit pour mettre la victime à sa propre disposition.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un objectif criminel d’exploitation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00045",
+                  "D) Un objectif criminel d’exploitation",
+                ),
+              ),
               _Paragraph(
-                "L’exploitation consiste à mettre la victime à disposition afin de permettre notamment : proxénétisme, agressions/atteintes sexuelles, "
-                "réduction en esclavage, travail ou services forcés, servitude, prélèvement d’organe, exploitation de la mendicité, "
-                "conditions de travail/hébergement contraires à la dignité, ou à contraindre la victime à commettre un crime ou un délit.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00046",
+                      "L’exploitation consiste à mettre la victime à disposition afin de permettre notamment : proxénétisme, agressions/atteintes sexuelles, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00047",
+                      "réduction en esclavage, travail ou services forcés, servitude, prélèvement d’organe, exploitation de la mendicité, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00048",
+                      "conditions de travail/hébergement contraires à la dignité, ou à contraindre la victime à commettre un crime ou un délit.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Il n’est pas nécessaire que les infractions d’exploitation soient effectivement commises pour que la traite soit constituée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00049",
+                  "Il n’est pas nécessaire que les infractions d’exploitation soient effectivement commises pour que la traite soit constituée.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Lorsque l’objectif est de contraindre la victime à commettre un crime/délit, la contrainte doit être ressentie comme irrésistible "
-                "(impossibilité absolue de respecter la loi).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00050",
+                      "Lorsque l’objectif est de contraindre la victime à commettre un crime/délit, la contrainte doit être ressentie comme irrésistible ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00051",
+                      "(impossibilité absolue de respecter la loi).",
+                    ),
               ),
             ],
           ),
@@ -281,23 +486,44 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+              "f00052",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Conscience du devenir de la victime"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00053",
+                  "Conscience du devenir de la victime",
+                ),
+              ),
               _Paragraph(
-                "L’infraction étant intentionnelle, il faut établir que l’auteur savait à quoi la victime était destinée : "
-                "il doit connaître les infractions auxquelles elle devait être soumise, ou la contrainte exercée sur elle pour la déterminer à en commettre.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00054",
+                      "L’infraction étant intentionnelle, il faut établir que l’auteur savait à quoi la victime était destinée : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00055",
+                      "il doit connaître les infractions auxquelles elle devait être soumise, ou la contrainte exercée sur elle pour la déterminer à en commettre.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Consentement",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette incrimination ne repose pas sur la notion de consentement : l’existence ou l’absence de consentement de la victime n’a pas à être démontrée.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00056",
+                      "Cette incrimination ne repose pas sur la notion de consentement : l’existence ou l’absence de consentement de la victime n’a pas à être démontrée.",
+                    ),
                   ),
                 ],
               ),
@@ -308,78 +534,151 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+              "f00057",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Traite aggravée délictuelle"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00058",
+                  "Traite aggravée délictuelle",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-1 II du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00059",
+                    "Article 225-4-1 II du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsqu’elle est commise à l’égard d’un mineur, même sans les circonstances 1° à 4°.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00060",
+                  "Lorsqu’elle est commise à l’égard d’un mineur, même sans les circonstances 1° à 4°.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-2 I du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00061",
+                    "Article 225-4-2 I du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsqu’elle est commise dans deux des circonstances 1° à 4° de l’article 225-4-1 I.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00062",
+                  "Lorsqu’elle est commise dans deux des circonstances 1° à 4° de l’article 225-4-1 I.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Ou avec l’une des circonstances supplémentaires : plusieurs victimes ; victime hors du territoire / à l’arrivée ; contact via réseau de communication électronique ; "
-                    "exposition à un risque immédiat de mort ou de mutilation/infirmité permanente ; violences avec ITT > 8 jours ; "
-                    "auteur participant par ses fonctions à la lutte contre la traite ou au maintien de l’ordre public ; "
-                    "victime placée dans une situation matérielle ou psychologique grave.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00063",
+                      "Ou avec l’une des circonstances supplémentaires : plusieurs victimes ; victime hors du territoire / à l’arrivée ; contact via réseau de communication électronique ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00064",
+                      "exposition à un risque immédiat de mort ou de mutilation/infirmité permanente ; violences avec ITT > 8 jours ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00065",
+                      "auteur participant par ses fonctions à la lutte contre la traite ou au maintien de l’ordre public ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00066",
+                      "victime placée dans une situation matérielle ou psychologique grave.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("Traite aggravée criminelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00067",
+                  "Traite aggravée criminelle",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-2 II du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00068",
+                    "Article 225-4-2 II du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsqu’elle est commise à l’égard d’un mineur + l’une des circonstances de l’article 225-4-1 I ou de l’article 225-4-2 I.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00069",
+                  "Lorsqu’elle est commise à l’égard d’un mineur + l’une des circonstances de l’article 225-4-1 I ou de l’article 225-4-2 I.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00070",
+                    "Article 225-4-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " : bande organisée."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00071",
+                    " : bande organisée.",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-4-4 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00072",
+                    "Article 225-4-4 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " : tortures ou actes de barbarie."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00073",
+                    " : tortures ou actes de barbarie.",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -388,75 +687,168 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
           // Répression + tentative/complicité + exemption/réduction
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+              "f00074",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00075",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Simple : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 150 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00076",
+                    "Simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-1 I du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00077",
+                    "7 ans d’emprisonnement et 150 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00078",
+                    "article 225-4-1 I du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (mineur) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 1 500 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00079",
+                    "Aggravée (mineur) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-1 II du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00080",
+                    "10 ans d’emprisonnement et 1 500 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00081",
+                    "article 225-4-1 II du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (225-4-2 I) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 1 500 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00082",
+                    "Aggravée (225-4-2 I) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-2 I du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00083",
+                    "10 ans d’emprisonnement et 1 500 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00084",
+                    "article 225-4-2 I du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Criminelle (225-4-2 II) : "),
                 TextSpan(
-                  text: "15 ans de réclusion et 1 500 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00085",
+                    "Criminelle (225-4-2 II) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-2 II du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00086",
+                    "15 ans de réclusion et 1 500 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00087",
+                    "article 225-4-2 II du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Bande organisée : "),
                 TextSpan(
-                  text: "20 ans de réclusion et 3 000 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00088",
+                    "Bande organisée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00089",
+                    "20 ans de réclusion et 3 000 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00090",
+                    "article 225-4-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Tortures / barbarie : "),
                 TextSpan(
-                  text:
-                      "réclusion criminelle à perpétuité et 4 500 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00091",
+                    "Tortures / barbarie : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-4 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00092",
+                    "réclusion criminelle à perpétuité et 4 500 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00093",
+                    "article 225-4-4 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
@@ -468,12 +860,24 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si le crime ou délit commis (ou devant être commis) contre la victime est puni d’une peine privative de liberté supérieure, "
-                        "la traite est punie des peines attachées à ce crime/délit (et à ses circonstances aggravantes connues de l’auteur). ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                          "f00094",
+                          "Si le crime ou délit commis (ou devant être commis) contre la victime est puni d’une peine privative de liberté supérieure, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                          "f00095",
+                          "la traite est punie des peines attachées à ce crime/délit (et à ses circonstances aggravantes connues de l’auteur). ",
+                        ),
                   ),
                   TextSpan(text: "— "),
                   TextSpan(
-                    text: "article 225-4-5 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                      "f00096",
+                      "article 225-4-5 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -485,75 +889,182 @@ class PaTraiteEtresHumainsPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00097",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité prévue par "),
                 TextSpan(
-                  text: "l’article 225-4-6 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: " ; amende selon "),
-                TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: " + peines des "),
-                TextSpan(
-                  text: "articles 131-39, 225-24 et 225-25 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00098",
+                    "Responsabilité prévue par ",
+                  ),
                 ),
                 TextSpan(
-                  text: " (dissolution, interdictions, confiscations…).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00099",
+                    "l’article 225-4-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00100",
+                    " ; amende selon ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00101",
+                    "l’article 131-38 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00102",
+                    " + peines des ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00103",
+                    "articles 131-39, 225-24 et 225-25 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00104",
+                    " (dissolution, interdictions, confiscations…).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00105",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 225-4-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00106",
+                    "Tentative : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00107",
+                    "article 225-4-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00108",
+                    "Complicité : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00109",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00110",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                  "f00111",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Exemption de peine : "),
                 TextSpan(
-                  text: "article 225-4-9 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00112",
+                    "Exemption de peine : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00113",
+                    "article 225-4-9 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (auteur au stade de la tentative qui avertit l’autorité et permet d’éviter la réalisation de l’infraction).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00114",
+                    " (auteur au stade de la tentative qui avertit l’autorité et permet d’éviter la réalisation de l’infraction).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Réduction de peine : "),
                 TextSpan(
-                  text: "article 225-4-9 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00115",
+                    "Réduction de peine : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                    "f00116",
+                    "article 225-4-9 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " (peine réduite des 2/3 si l’auteur/complice avertit et permet de faire cesser l’infraction, d’éviter une mort/infirmité permanente, "
-                      "ou d’identifier les autres auteurs/complices ; perpétuité ramenée à 20 ans).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                        "f00117",
+                        " (peine réduite des 2/3 si l’auteur/complice avertit et permet de faire cesser l’infraction, d’éviter une mort/infirmité permanente, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart",
+                        "f00118",
+                        "ou d’identifier les autres auteurs/complices ; perpétuité ramenée à 20 ans).",
+                      ),
                 ),
               ]),
             ],

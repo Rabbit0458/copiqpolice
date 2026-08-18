@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MenottagePage extends StatelessWidget {
   const MenottagePage({super.key});
@@ -55,7 +56,11 @@ class MenottagePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -73,7 +78,11 @@ class MenottagePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le menottage",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+              "f00002",
+              "Le menottage",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,16 +94,36 @@ class MenottagePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+              "f00003",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le menottage est une mesure de sûreté, relevant des pouvoirs de coercition utilisés "
-                "en matière d’arrestation et de détention. Il sert à prévenir un danger immédiat "
-                "ou une tentative de fuite.\n\n"
-                "⚠️ Il ne doit jamais être systématique : la décision repose sur l’appréciation de la situation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00004",
+                      "Le menottage est une mesure de sûreté, relevant des pouvoirs de coercition utilisés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00005",
+                      "en matière d’arrestation et de détention. Il sert à prévenir un danger immédiat ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00006",
+                      "ou une tentative de fuite.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00007",
+                      "⚠️ Il ne doit jamais être systématique : la décision repose sur l’appréciation de la situation.",
+                    ),
               ),
             ],
           ),
@@ -103,55 +132,79 @@ class MenottagePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles rouges)
           _ConditionCard(
-            title: "I — Fondements juridiques",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+              "f00008",
+              "I — Fondements juridiques",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 803 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                    "f00009",
+                    "Article 803 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : nul ne peut être soumis au port de menottes/entraves que si la personne est considérée "
-                      "dangereuse pour autrui ou pour elle-même, ou susceptible de tenter de prendre la fuite.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                        "f00010",
+                        " : nul ne peut être soumis au port de menottes/entraves que si la personne est considérée ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                        "f00011",
+                        "dangereuse pour autrui ou pour elle-même, ou susceptible de tenter de prendre la fuite.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 434-17 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                    "f00012",
+                    "Article R. 434-17 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : rappelle les mêmes principes et encadre l’usage du menottage en tant que mesure de sûreté.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                    "f00013",
+                    " : rappelle les mêmes principes et encadre l’usage du menottage en tant que mesure de sûreté.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La décision engage la responsabilité personnelle de l’agent : elle doit être prise avec discernement (",
-                ),
-                TextSpan(
-                  text: "article R. 434-10 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                    "f00014",
+                    "La décision engage la responsabilité personnelle de l’agent : elle doit être prise avec discernement (",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ") en fonction des circonstances de temps, de lieu, et du comportement/état de la personne.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                    "f00015",
+                    "article R. 434-10 du Code de la sécurité intérieure",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                    "f00016",
+                    ") en fonction des circonstances de temps, de lieu, et du comportement/état de la personne.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
@@ -159,9 +212,21 @@ class MenottagePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Règle d’or : si l’absence de risques n’est pas évidente, des mesures de sûreté peuvent être appliquées. "
-                        "L’objectif est de garantir la sécurité des tiers, des policiers et de la personne appréhendée, "
-                        "et d’empêcher toute soustraction à l’action de la justice.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00017",
+                          "Règle d’or : si l’absence de risques n’est pas évidente, des mesures de sûreté peuvent être appliquées. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00018",
+                          "L’objectif est de garantir la sécurité des tiers, des policiers et de la personne appréhendée, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00019",
+                          "et d’empêcher toute soustraction à l’action de la justice.",
+                        ),
                   ),
                 ],
               ),
@@ -172,38 +237,84 @@ class MenottagePage extends StatelessWidget {
 
           // Appréciation / publics particuliers
           _ConditionCard(
-            title: "II — Appréciation des risques",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+              "f00020",
+              "II — Appréciation des risques",
+            ),
             cardColor: cardMinors,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’agent apprécie l’ensemble des éléments :\n"
-                "• personnalité et antécédents connus (si éléments disponibles),\n"
-                "• comportement (agressivité, agitation, provocation à la rébellion, fuite…),\n"
-                "• état physique et psychologique,\n"
-                "• circonstances de temps et de lieu (nuit, foule, isolement, environnement hostile…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00021",
+                      "L’agent apprécie l’ensemble des éléments :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00022",
+                      "• personnalité et antécédents connus (si éléments disponibles),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00023",
+                      "• comportement (agressivité, agitation, provocation à la rébellion, fuite…),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00024",
+                      "• état physique et psychologique,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00025",
+                      "• circonstances de temps et de lieu (nuit, foule, isolement, environnement hostile…).",
+                    ),
               ),
               SizedBox(height: 10),
               _SubTitle(
-                "Situations nécessitant une appréciation particulièrement fine",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00026",
+                  "Situations nécessitant une appréciation particulièrement fine",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mineurs, personnes qui se sont volontairement constituées prisonnières, personnes âgées ou dont l’état de santé réduit la mobilité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00027",
+                  "Mineurs, personnes qui se sont volontairement constituées prisonnières, personnes âgées ou dont l’état de santé réduit la mobilité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En dehors de situations circonstanciées, il est exclu de menotter un simple témoin.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00028",
+                  "En dehors de situations circonstanciées, il est exclu de menotter un simple témoin.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Mineurs : le menottage est à proscrire pour les moins de 13 ans non mis en cause dans une affaire criminelle, "
-                        "sauf avis contraire du magistrat compétent. Pour les plus de 13 ans, il doit être exercé avec discernement, "
-                        "notamment selon la gravité des faits.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00029",
+                          "Mineurs : le menottage est à proscrire pour les moins de 13 ans non mis en cause dans une affaire criminelle, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00030",
+                          "sauf avis contraire du magistrat compétent. Pour les plus de 13 ans, il doit être exercé avec discernement, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00031",
+                          "notamment selon la gravité des faits.",
+                        ),
                   ),
                 ],
               ),
@@ -214,36 +325,71 @@ class MenottagePage extends StatelessWidget {
 
           // PV / justification + image/dignité
           _ConditionCard(
-            title: "III — Justification et traçabilité (procès-verbal)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+              "f00032",
+              "III — Justification et traçabilité (procès-verbal)",
+            ),
             cardColor: cardPv,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sur le plan pratique, l’emploi du menottage doit être justifié et retranscrit juridiquement "
-                "dans le procès-verbal d’interpellation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00033",
+                      "Sur le plan pratique, l’emploi du menottage doit être justifié et retranscrit juridiquement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00034",
+                      "dans le procès-verbal d’interpellation.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("À mentionner dans le PV"),
-              _BulletPoint(
-                text:
-                    "Les circonstances et l’évaluation du risque (dangerosité / fuite).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00035",
+                  "À mentionner dans le PV",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le comportement observé (fuite, provocation à la rébellion, menaces, agitation…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00036",
+                  "Les circonstances et l’évaluation du risque (dangerosité / fuite).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les incidents survenus lors du menottage (ex. blessure, résistance…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00037",
+                  "Le comportement observé (fuite, provocation à la rébellion, menaces, agitation…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00038",
+                  "Les incidents survenus lors du menottage (ex. blessure, résistance…).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Il est nécessaire de prendre toute mesure utile afin d’éviter que la personne menottée soit photographiée "
-                        "ou fasse l’objet d’un enregistrement audiovisuel.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00039",
+                          "Il est nécessaire de prendre toute mesure utile afin d’éviter que la personne menottée soit photographiée ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                          "f00040",
+                          "ou fasse l’objet d’un enregistrement audiovisuel.",
+                        ),
                   ),
                 ],
               ),
@@ -254,50 +400,95 @@ class MenottagePage extends StatelessWidget {
 
           // Principes de base (technique)
           _ConditionCard(
-            title: "IV — Principes de base (sécurité & technique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+              "f00041",
+              "IV — Principes de base (sécurité & technique)",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Le menottage ne doit pas être excessivement serré.",
-              ),
-              _BulletPoint(text: "Exécuter fermement mais sans agressivité."),
-              _BulletPoint(
-                text:
-                    "Autant que possible : emmener la personne à l’écart (hors de la vue des tiers).",
-              ),
-              _BulletPoint(
-                text:
-                    "Limiter l’impact sur le public : si un amené au sol est nécessaire, il doit être le plus bref possible, puis extraire rapidement du lieu.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00042",
+                  "Le menottage ne doit pas être excessivement serré.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne jamais menotter à un point fixe (poteau, radiateur…) ou mobile (véhicule…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00043",
+                  "Exécuter fermement mais sans agressivité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Utiliser uniquement les menottes administratives en dotation (responsabilité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00044",
+                  "Autant que possible : emmener la personne à l’écart (hors de la vue des tiers).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Une fois commencée, la pose doit aller jusqu’au terme : ne pas changer de technique en cours.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00045",
+                  "Limiter l’impact sur le public : si un amené au sol est nécessaire, il doit être le plus bref possible, puis extraire rapidement du lieu.",
+                ),
               ),
-              _BulletPoint(text: "Toujours menotter dans le dos."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00046",
+                  "Ne jamais menotter à un point fixe (poteau, radiateur…) ou mobile (véhicule…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00047",
+                  "Utiliser uniquement les menottes administratives en dotation (responsabilité).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00048",
+                  "Une fois commencée, la pose doit aller jusqu’au terme : ne pas changer de technique en cours.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00049",
+                  "Toujours menotter dans le dos.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point sécurité majeur",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00050",
+                  "Point sécurité majeur",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Après la pose de la première menotte, ne jamais lâcher la menotte libre : elle peut devenir une arme.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00051",
+                      "Après la pose de la première menotte, ne jamais lâcher la menotte libre : elle peut devenir une arme.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Dès que la personne est menottée : effectuer systématiquement une palpation de la zone lombaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                  "f00052",
+                  "Dès que la personne est menottée : effectuer systématiquement une palpation de la zone lombaire.",
+                ),
               ),
             ],
           ),
@@ -306,18 +497,46 @@ class MenottagePage extends StatelessWidget {
 
           // Conduite / escorte
           _ConditionCard(
-            title: "V — Conduite et escorte",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+              "f00053",
+              "V — Conduite et escorte",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour conduire la personne, le policier se place derrière elle :\n"
-                "• légèrement à droite si la personne est droitière,\n"
-                "• légèrement à gauche si elle est gauchère,\n"
-                "afin que l’arme du policier reste la plus éloignée possible.\n\n"
-                "Si la personne devient récalcitrante ou agressive, une pression contrôlée sur les menottes "
-                "en direction du sol peut suffire à la déséquilibrer et reprendre le contrôle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00054",
+                      "Pour conduire la personne, le policier se place derrière elle :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00055",
+                      "• légèrement à droite si la personne est droitière,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00056",
+                      "• légèrement à gauche si elle est gauchère,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00057",
+                      "afin que l’arme du policier reste la plus éloignée possible.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00058",
+                      "Si la personne devient récalcitrante ou agressive, une pression contrôlée sur les menottes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/menottage_page.dart",
+                      "f00059",
+                      "en direction du sol peut suffire à la déséquilibrer et reprendre le contrôle.",
+                    ),
               ),
             ],
           ),

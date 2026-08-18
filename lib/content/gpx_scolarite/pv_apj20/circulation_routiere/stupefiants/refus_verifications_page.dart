@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RefusVerificationsGPXPage extends StatelessWidget {
   const RefusVerificationsGPXPage({super.key});
@@ -69,10 +70,18 @@ class RefusVerificationsGPXPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Alcool & stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+            "f00002",
+            "Alcool & stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -87,7 +96,11 @@ class RefusVerificationsGPXPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Refus de se soumettre aux vérifications",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00003",
+              "PV — Refus de se soumettre aux vérifications",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -99,15 +112,31 @@ class RefusVerificationsGPXPage extends StatelessWidget {
 
           // Intro (objectif)
           _ConditionCard(
-            title: "Objectif du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00004",
+              "Objectif du canevas",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas sert à structurer le procès-verbal de conduite au poste d’un individu ayant refusé "
-                "de se soumettre aux vérifications tendant à établir l’état alcoolique et/ou l’usage de stupéfiants. "
-                "Il aide à rédiger de manière complète, pédagogique et juridiquement sécurisée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00005",
+                      "Ce canevas sert à structurer le procès-verbal de conduite au poste d’un individu ayant refusé ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00006",
+                      "de se soumettre aux vérifications tendant à établir l’état alcoolique et/ou l’usage de stupéfiants. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00007",
+                      "Il aide à rédiger de manière complète, pédagogique et juridiquement sécurisée.",
+                    ),
               ),
             ],
           ),
@@ -116,7 +145,11 @@ class RefusVerificationsGPXPage extends StatelessWidget {
 
           // Images (CANVA)
           _ConditionCard(
-            title: "Canevas (visuels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00008",
+              "Canevas (visuels)",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
@@ -135,52 +168,116 @@ class RefusVerificationsGPXPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le refus de se soumettre aux vérifications constitue un délit dès lors qu’une injonction régulière a été faite au conducteur : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00010",
+                    "Le refus de se soumettre aux vérifications constitue un délit dès lors qu’une injonction régulière a été faite au conducteur : ",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Alcool — "),
-                  _lawSpan("Article L. 234-8 du Code de la route"),
-                  const TextSpan(
-                    text:
-                        " : refus de se soumettre aux vérifications tendant à établir l’état alcoolique.",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00011",
+                      "Alcool — ",
+                    ),
+                  ),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00012",
+                      "Article L. 234-8 du Code de la route",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00013",
+                      " : refus de se soumettre aux vérifications tendant à établir l’état alcoolique.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Stupéfiants — "),
-                  _lawSpan("Article L. 235-3 du Code de la route"),
-                  const TextSpan(
-                    text:
-                        " : refus de se soumettre aux analyses ou examens en vue d’établir l’usage de stupéfiants.",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00014",
+                      "Stupéfiants — ",
+                    ),
+                  ),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00015",
+                      "Article L. 235-3 du Code de la route",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00016",
+                      " : refus de se soumettre aux analyses ou examens en vue d’établir l’usage de stupéfiants.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Important : le refus de dépistage (souffle/salivaire) n’est pas, à lui seul, une infraction pénale ; il déclenche l’obligation de se soumettre aux vérifications : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00017",
+                    "Important : le refus de dépistage (souffle/salivaire) n’est pas, à lui seul, une infraction pénale ; il déclenche l’obligation de se soumettre aux vérifications : ",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _lawSpan("Article L. 234-4 du Code de la route"),
-                const TextSpan(text: " (alcool) et "),
-                _lawSpan("Article L. 235-2 du Code de la route"),
-                const TextSpan(text: " (stupéfiants)."),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00018",
+                    "Article L. 234-4 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00019",
+                    " (alcool) et ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00020",
+                    "Article L. 235-2 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00021",
+                    " (stupéfiants).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -189,28 +286,78 @@ class RefusVerificationsGPXPage extends StatelessWidget {
 
           // Élément matériel (3 éléments)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00022",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une injonction régulière de se soumettre"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00023",
+                  "A) Une injonction régulière de se soumettre",
+                ),
+              ),
               _Paragraph(
-                "Le délit suppose que le conducteur ait été informé de l’obligation de se soumettre aux vérifications "
-                "et qu’une injonction claire lui ait été faite (vérifications alcool et/ou stupéfiants).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00024",
+                      "Le délit suppose que le conducteur ait été informé de l’obligation de se soumettre aux vérifications ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00025",
+                      "et qu’une injonction claire lui ait été faite (vérifications alcool et/ou stupéfiants).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Un refus caractérisé et réitéré"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00026",
+                  "B) Un refus caractérisé et réitéré",
+                ),
+              ),
               _Paragraph(
-                "Le refus doit être persistant et déterminé, de manière à faire apparaître la volonté délibérée "
-                "du conducteur de refuser les vérifications. La réitération de l’injonction et la réitération du refus "
-                "doivent être décrites précisément dans le PV.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00027",
+                      "Le refus doit être persistant et déterminé, de manière à faire apparaître la volonté délibérée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00028",
+                      "du conducteur de refuser les vérifications. La réitération de l’injonction et la réitération du refus ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00029",
+                      "doivent être décrites précisément dans le PV.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("C) Constatations utiles à consigner"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00030",
+                  "C) Constatations utiles à consigner",
+                ),
+              ),
               _Paragraph(
-                "Consigner : les propos exacts (style direct si possible), l’attitude, les circonstances de temps et de lieu, "
-                "l’information donnée au conducteur, et toute mention utile permettant d’établir la réalité et la constance du refus.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00031",
+                      "Consigner : les propos exacts (style direct si possible), l’attitude, les circonstances de temps et de lieu, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00032",
+                      "l’information donnée au conducteur, et toute mention utile permettant d’établir la réalité et la constance du refus.",
+                    ),
               ),
             ],
           ),
@@ -219,22 +366,41 @@ class RefusVerificationsGPXPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00033",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ces délits sont intentionnels : il faut caractériser la volonté de refuser. "
-                "Le PV doit faire ressortir que le conducteur a compris la demande, a été informé des conséquences, "
-                "et a néanmoins maintenu son refus.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00034",
+                      "Ces délits sont intentionnels : il faut caractériser la volonté de refuser. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00035",
+                      "Le PV doit faire ressortir que le conducteur a compris la demande, a été informé des conséquences, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00036",
+                      "et a néanmoins maintenu son refus.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Bon réflexe rédactionnel : noter la réitération de l’injonction + la réitération du refus pour matérialiser l’intention.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00037",
+                      "Bon réflexe rédactionnel : noter la réitération de l’injonction + la réitération du refus pour matérialiser l’intention.",
+                    ),
                   ),
                 ],
               ),
@@ -245,193 +411,494 @@ class RefusVerificationsGPXPage extends StatelessWidget {
 
           // Procédure / canevas détaillé
           _ConditionCard(
-            title: "IV — Canevas de rédaction (plan complet)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00038",
+              "IV — Canevas de rédaction (plan complet)",
+            ),
             cardColor: cardProc,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00039",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _Paragraph(
-                "Mentionner l’endroit exact où se situe l’équipage (commune, voie, point de repère).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00040",
+                  "Mentionner l’endroit exact où se situe l’équipage (commune, voie, point de repère).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00041",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Indiquer que l’équipage, en patrouille, agit conformément aux instructions permanentes du chef de service "
-                "(ou selon les instructions reçues).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00042",
+                      "Indiquer que l’équipage, en patrouille, agit conformément aux instructions permanentes du chef de service ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00043",
+                      "(ou selon les instructions reçues).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00044",
+                  "3) Assistants",
+                ),
+              ),
               _Paragraph(
-                "Citer les fonctionnaires accompagnants et préciser la tenue (uniforme, tenue civile, port du brassard POLICE).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00045",
+                  "Citer les fonctionnaires accompagnants et préciser la tenue (uniforme, tenue civile, port du brassard POLICE).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4) Mission"),
-              _Paragraph("Indiquer le but de la mission initiale."),
-              SizedBox(height: 10),
-
-              _SubTitle("5) Interception du véhicule"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00046",
+                  "4) Mission",
+                ),
+              ),
               _Paragraph(
-                "Préciser le cadre :\n"
-                "• suite à la constatation d’une infraction au code de la route (relater les faits observés), ou\n"
-                "• suite à un contrôle routier sans infraction préalable, ou\n"
-                "• suite à un contrôle préventif (initiative de l’agent / réquisition du procureur de la République).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00047",
+                  "Indiquer le but de la mission initiale.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("6) Contrôle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00048",
+                  "5) Interception du véhicule",
+                ),
+              ),
               _Paragraph(
-                "Mentionner le contrôle : pièces afférentes à la conduite et à la circulation, obligation d’assurance "
-                "(consultation du fichier des véhicules assurés), et identification en style indirect (état civil + adresse), "
-                "à l’exclusion de tout autre élément de personnalité (familial/professionnel).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00049",
+                      "Préciser le cadre :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00050",
+                      "• suite à la constatation d’une infraction au code de la route (relater les faits observés), ou\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00051",
+                      "• suite à un contrôle routier sans infraction préalable, ou\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00052",
+                      "• suite à un contrôle préventif (initiative de l’agent / réquisition du procureur de la République).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("7) Dépistages (alcool et stupéfiants)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00053",
+                  "6) Contrôle",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00054",
+                      "Mentionner le contrôle : pièces afférentes à la conduite et à la circulation, obligation d’assurance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00055",
+                      "(consultation du fichier des véhicules assurés), et identification en style indirect (état civil + adresse), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00056",
+                      "à l’exclusion de tout autre élément de personnalité (familial/professionnel).",
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00057",
+                  "7) Dépistages (alcool et stupéfiants)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Rappeler que le refus de dépistage n’est pas une infraction pénale, mais entraîne l’obligation de se soumettre aux vérifications (",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00058",
+                    "Rappeler que le refus de dépistage n’est pas une infraction pénale, mais entraîne l’obligation de se soumettre aux vérifications (",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 234-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00059",
+                    "Article L. 234-4 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "Article L. 235-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00060",
+                    "Article L. 235-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("8) Information"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00061",
+                  "8) Information",
+                ),
+              ),
               _Paragraph(
-                "En cas de refus du dépistage, préciser que le conducteur est informé que ce refus entraîne l’obligation "
-                "de procéder aux vérifications destinées à :\n"
-                "• établir un état alcoolique,\n"
-                "• rechercher et confirmer la présence d’un ou plusieurs produits stupéfiants.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00062",
+                      "En cas de refus du dépistage, préciser que le conducteur est informé que ce refus entraîne l’obligation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00063",
+                      "de procéder aux vérifications destinées à :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00064",
+                      "• établir un état alcoolique,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00065",
+                      "• rechercher et confirmer la présence d’un ou plusieurs produits stupéfiants.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("9) Déclarations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00066",
+                  "9) Déclarations",
+                ),
+              ),
               _Paragraph(
-                "Consigner les déclarations du contrevenant sur son premier refus de se soumettre aux vérifications "
-                "(style direct si possible).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00067",
+                      "Consigner les déclarations du contrevenant sur son premier refus de se soumettre aux vérifications ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00068",
+                      "(style direct si possible).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("10) Réitération de l’injonction"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00069",
+                  "10) Réitération de l’injonction",
+                ),
+              ),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Refus alcool — "),
                   TextSpan(
-                    text: "Article L. 234-8 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00070",
+                      "Refus alcool — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00071",
+                      "Article L. 234-8 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : puni de 2 ans d’emprisonnement et de 4 500 € d’amende.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00072",
+                      " : puni de 2 ans d’emprisonnement et de 4 500 € d’amende.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Refus stupéfiants — "),
                   TextSpan(
-                    text: "Article L. 235-3 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00073",
+                      "Refus stupéfiants — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00074",
+                      "Article L. 235-3 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : puni de 2 ans d’emprisonnement et de 4 500 € d’amende.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00075",
+                      " : puni de 2 ans d’emprisonnement et de 4 500 € d’amende.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
 
-              _SubTitle("11) Réitération du refus"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00076",
+                  "11) Réitération du refus",
+                ),
+              ),
               _Paragraph(
-                "Le refus doit être persistant et déterminé : il doit faire apparaître la volonté délibérée du conducteur "
-                "de refuser les vérifications. Détailler précisément.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00077",
+                      "Le refus doit être persistant et déterminé : il doit faire apparaître la volonté délibérée du conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00078",
+                      "de refuser les vérifications. Détailler précisément.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("12) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00079",
+                  "12) Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "Dès que les délits sont caractérisés, l’action de l’agent de police judiciaire se situe dans le cadre "
-                "du flagrant délit (à qualifier selon la situation).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00080",
+                      "Dès que les délits sont caractérisés, l’action de l’agent de police judiciaire se situe dans le cadre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00081",
+                      "du flagrant délit (à qualifier selon la situation).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("13) Retour au service"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00082",
+                  "13) Retour au service",
+                ),
+              ),
               _Paragraph(
-                "Mentionner que la personne appréhendée accepte d’accompagner de son plein gré les fonctionnaires de police.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00083",
+                  "Mentionner que la personne appréhendée accepte d’accompagner de son plein gré les fonctionnaires de police.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("14) Palpation de sécurité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00084",
+                  "14) Palpation de sécurité",
+                ),
+              ),
               _Paragraph(
-                "Uniquement si nécessaire (temps/lieu/risque). Si découverte d’objets : situer, décrire, présenter à la personne "
-                "qui peut faire une brève déclaration sur l’appartenance (style direct) sans que cela constitue une audition. "
-                "Objets appréhendés aux fins de remise à l’OPJ (D.R.D.A).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00085",
+                      "Uniquement si nécessaire (temps/lieu/risque). Si découverte d’objets : situer, décrire, présenter à la personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00086",
+                      "qui peut faire une brève déclaration sur l’appartenance (style direct) sans que cela constitue une audition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00087",
+                      "Objets appréhendés aux fins de remise à l’OPJ (D.R.D.A).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("15) Compte-rendu OPJ"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00088",
+                  "15) Compte-rendu OPJ",
+                ),
+              ),
               _Paragraph(
-                "Compte-rendu verbal à l’OPJ. Mentionner les instructions éventuellement données.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00089",
+                  "Compte-rendu verbal à l’OPJ. Mentionner les instructions éventuellement données.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("16) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00090",
+                  "16) Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Signature : si déclarations au style direct, la personne doit signer. "
-                "Si déclarations au style indirect, pas de signature. L’heure est facultative.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00091",
+                      "Signature : si déclarations au style direct, la personne doit signer. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00092",
+                      "Si déclarations au style indirect, pas de signature. L’heure est facultative.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("17) Présentation à l’OPJ"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00093",
+                  "17) Présentation à l’OPJ",
+                ),
+              ),
               _Paragraph(
-                "Présentation de l’individu en précisant l’heure. Compte-rendu verbal et éventuelle remise d’objets appréhendés. "
-                "Mentionner les instructions reçues.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00094",
+                      "Présentation de l’individu en précisant l’heure. Compte-rendu verbal et éventuelle remise d’objets appréhendés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00095",
+                      "Mentionner les instructions reçues.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("18) Mention — fichiers"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00096",
+                  "18) Mention — fichiers",
+                ),
+              ),
               _Paragraph(
-                "Recherches administratives (FPR, SNPC). Préciser que les recherches ont été effectuées et que la personne ne fait l’objet d’aucune recherche.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00097",
+                  "Recherches administratives (FPR, SNPC). Préciser que les recherches ont été effectuées et que la personne ne fait l’objet d’aucune recherche.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("19) Mention — immobilisation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00098",
+                  "19) Mention — immobilisation",
+                ),
+              ),
               _Paragraph(
-                "Il peut être procédé d’office à l’immobilisation du véhicule pendant la durée de rétention du permis de conduire. "
-                "Elle est levée dès qu’un conducteur qualifié (proposé par le conducteur / l’accompagnateur de l’élève conducteur / "
-                "ou le propriétaire) peut assurer la conduite. Remettre un exemplaire de la fiche d’immobilisation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00099",
+                      "Il peut être procédé d’office à l’immobilisation du véhicule pendant la durée de rétention du permis de conduire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00100",
+                      "Elle est levée dès qu’un conducteur qualifié (proposé par le conducteur / l’accompagnateur de l’élève conducteur / ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                      "f00101",
+                      "ou le propriétaire) peut assurer la conduite. Remettre un exemplaire de la fiche d’immobilisation.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("20) Mention — avis de rétention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00102",
+                  "20) Mention — avis de rétention",
+                ),
+              ),
               _Paragraph(
-                "Remettre un exemplaire de l’avis de rétention du permis de conduire au conducteur.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00103",
+                  "Remettre un exemplaire de l’avis de rétention du permis de conduire au conducteur.",
+                ),
               ),
             ],
           ),
@@ -440,60 +907,112 @@ class RefusVerificationsGPXPage extends StatelessWidget {
 
           // Répression + tentative / complicité
           _ConditionCard(
-            title: "V — Répression, tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+              "f00104",
+              "V — Répression, tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentIndigo,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines principales (rappel)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00105",
+                  "Peines principales (rappel)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Refus alcool : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 4 500 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00106",
+                    "Refus alcool : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 234-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00107",
+                    "2 ans d’emprisonnement et 4 500 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00108",
+                    "Article L. 234-8 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Refus stupéfiants : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 4 500 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00109",
+                    "Refus stupéfiants : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 235-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00110",
+                    "2 ans d’emprisonnement et 4 500 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00111",
+                    "Article L. 235-3 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00112",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : en pratique, le refus se consomme instantanément ; la tentative est rarement pertinente à caractériser.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00113",
+                  "Tentative : en pratique, le refus se consomme instantanément ; la tentative est rarement pertinente à caractériser.",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Complicité : possible en théorie, mais à apprécier au cas par cas selon l’aide ou l’assistance apportée au refus.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00114",
+                  "Complicité : possible en théorie, mais à apprécier au cas par cas selon l’aide ou l’assistance apportée au refus.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Conseil rédactionnel : rester factuel (paroles, injonctions, refus) et bien chronologiser. "
-                        "C’est ce qui rend le PV “béton” et pédagogique.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                          "f00115",
+                          "Conseil rédactionnel : rester factuel (paroles, injonctions, refus) et bien chronologiser. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                          "f00116",
+                          "C’est ce qui rend le PV “béton” et pédagogique.",
+                        ),
                   ),
                 ],
               ),
@@ -751,9 +1270,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -818,8 +1335,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+        "f00117",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+        "f00118",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -992,7 +1517,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                    "f00119",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -1061,7 +1590,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart",
+                  "f00120",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -1089,7 +1622,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1124,7 +1659,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

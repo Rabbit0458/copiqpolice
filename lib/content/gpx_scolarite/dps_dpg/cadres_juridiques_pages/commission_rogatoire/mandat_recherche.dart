@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MandatRecherchePage extends StatelessWidget {
   const MandatRecherchePage({super.key});
@@ -30,7 +31,11 @@ class MandatRecherchePage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'Mandat de recherche',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+            "f00001",
+            'Mandat de recherche',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -43,7 +48,11 @@ class MandatRecherchePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            '3.6 — Le mandat de recherche',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+              "f00002",
+              '3.6 — Le mandat de recherche',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -57,54 +66,113 @@ class MandatRecherchePage extends StatelessWidget {
           // 3.6 — LE MANDAT DE RECHERCHE
           // ================================================================
           _ConditionCard(
-            title: '3.6 — Le mandat de recherche',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+              "f00003",
+              '3.6 — Le mandat de recherche',
+            ),
             cardColor: cardBlue,
             accent: cardBlueAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Le mandat de recherche est "l’ordre donné à la force publique de rechercher la personne à l’encontre de laquelle il est décerné et de la placer en garde à vue" ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                    "f00004",
+                    'Le mandat de recherche est "l’ordre donné à la force publique de rechercher la personne à l’encontre de laquelle il est décerné et de la placer en garde à vue" ',
+                  ),
                 ),
                 TextSpan(
-                  text: '(article 122 alinéa 2 du Code de procédure pénale).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                    "f00005",
+                    '(article 122 alinéa 2 du Code de procédure pénale).',
+                  ),
                   style: TextStyle(color: Colors.red),
                 ),
               ]),
               SizedBox(height: 10),
 
               _Paragraph(
-                'Il ne peut être décerné qu’à l’égard d’une personne pour laquelle il '
-                'existe une ou plusieurs raisons plausibles de soupçonner qu’elle a '
-                'commis ou tenté de commettre une infraction.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00006",
+                      'Il ne peut être décerné qu’à l’égard d’une personne pour laquelle il ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00007",
+                      'existe une ou plusieurs raisons plausibles de soupçonner qu’elle a ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00008",
+                      'commis ou tenté de commettre une infraction.',
+                    ),
               ),
               SizedBox(height: 8),
 
               // PUCE LISTE
               _BulletPoint(
-                text:
-                    'D’une personne ayant fait l’objet d’un réquisitoire nominatif ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00009",
+                  'D’une personne ayant fait l’objet d’un réquisitoire nominatif ;',
+                ),
               ),
-              _BulletPoint(text: 'D’un témoin assisté ;'),
-              _BulletPoint(text: 'D’une personne mise en examen ;'),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00010",
+                  'D’un témoin assisté ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00011",
+                  'D’une personne mise en examen ;',
+                ),
+              ),
 
               SizedBox(height: 18),
 
-              _SubTitle('3.6.2 — L’exécution du mandat de recherche'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00012",
+                  '3.6.2 — L’exécution du mandat de recherche',
+                ),
+              ),
 
               // 3.6.2.1 NOTIFICATION
               _SubTitle(
-                '3.6.2.1 — La notification du mandat de recherche '
-                '(article 123 alinéa 4 du Code de procédure pénale)',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00013",
+                      '3.6.2.1 — La notification du mandat de recherche ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00014",
+                      '(article 123 alinéa 4 du Code de procédure pénale)',
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Le mandat de recherche est notifié et exécuté par un officier ou agent de police judiciaire, ou un agent de la force publique, qui l’exhibe à la personne et lui en délivre copie. ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                    "f00015",
+                    'Le mandat de recherche est notifié et exécuté par un officier ou agent de police judiciaire, ou un agent de la force publique, qui l’exhibe à la personne et lui en délivre copie. ',
+                  ),
                 ),
                 TextSpan(
-                  text: '(article 123 alinéa 4 du Code de procédure pénale).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                    "f00016",
+                    '(article 123 alinéa 4 du Code de procédure pénale).',
+                  ),
                   style: TextStyle(color: Colors.red),
                 ),
               ]),
@@ -112,21 +180,38 @@ class MandatRecherchePage extends StatelessWidget {
 
               // 3.6.2.2 INVESTIGATIONS
               _SubTitle(
-                '3.6.2.2 — Les investigations '
-                '(article 134 du Code de procédure pénale)',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00017",
+                      '3.6.2.2 — Les investigations ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00018",
+                      '(article 134 du Code de procédure pénale)',
+                    ),
               ),
 
               _BulletPoint(
-                text:
-                    'L’introduction dans un domicile doit respecter les heures légales ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00019",
+                  'L’introduction dans un domicile doit respecter les heures légales ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'La présence d’une force suffisante doit être garantie pour éviter toute fuite ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00020",
+                  'La présence d’une force suffisante doit être garantie pour éviter toute fuite ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Si la personne ne peut être saisie, un procès-verbal de perquisition et recherches infructueuses est transmis au magistrat mandant. La personne est alors considérée comme mise en examen pour l’application de l’article 176.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00021",
+                  'Si la personne ne peut être saisie, un procès-verbal de perquisition et recherches infructueuses est transmis au magistrat mandant. La personne est alors considérée comme mise en examen pour l’application de l’article 176.',
+                ),
               ),
               SizedBox(height: 18),
 
@@ -134,50 +219,109 @@ class MandatRecherchePage extends StatelessWidget {
               // 3.6.3 — DÉCOUVERTE DE LA PERSONNE
               // --------------------------------------------------------------
               _SubTitle(
-                '3.6.3 — La découverte de la personne '
-                '(article 135-1 du Code de procédure pénale)',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00022",
+                      '3.6.3 — La découverte de la personne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00023",
+                      '(article 135-1 du Code de procédure pénale)',
+                    ),
               ),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'La personne découverte en vertu d’un mandat de recherche est placée en garde à vue selon les modalités prévues ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                    "f00024",
+                    'La personne découverte en vertu d’un mandat de recherche est placée en garde à vue selon les modalités prévues ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'à l’article 154 du Code de procédure pénale.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                    "f00025",
+                    'à l’article 154 du Code de procédure pénale.',
+                  ),
                   style: TextStyle(color: Colors.red),
                 ),
               ]),
               SizedBox(height: 10),
 
               _Paragraph(
-                'Le juge d’instruction mandant est immédiatement avisé du début de la garde à vue.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00026",
+                  'Le juge d’instruction mandant est immédiatement avisé du début de la garde à vue.',
+                ),
               ),
               SizedBox(height: 10),
 
               _Paragraph(
-                'L’OPJ du lieu de découverte peut être requis par le juge d’instruction '
-                'pour procéder à l’audition de l’intéressé ainsi qu’à tous les actes '
-                'nécessaires à l’information judiciaire.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00027",
+                      'L’OPJ du lieu de découverte peut être requis par le juge d’instruction ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00028",
+                      'pour procéder à l’audition de l’intéressé ainsi qu’à tous les actes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00029",
+                      'nécessaires à l’information judiciaire.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph(
-                'L’OPJ déjà saisi par commission rogatoire peut également réaliser '
-                'l’audition. La personne peut être transférée dans les locaux du service '
-                'd’enquête saisi des faits.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00030",
+                      'L’OPJ déjà saisi par commission rogatoire peut également réaliser ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00031",
+                      'l’audition. La personne peut être transférée dans les locaux du service ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                      "f00032",
+                      'd’enquête saisi des faits.',
+                    ),
               ),
 
               SizedBox(height: 22),
 
               _NotaBox(
-                title: 'NOTE IMPORTANTE',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                  "f00033",
+                  'NOTE IMPORTANTE',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le mandat de recherche autorise la garde à vue immédiate. '
-                        'Toute irrégularité dans la notification ou l’exécution peut '
-                        'entraîner la nullité des actes subséquents.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                          "f00034",
+                          'Le mandat de recherche autorise la garde à vue immédiate. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                          "f00035",
+                          'Toute irrégularité dans la notification ou l’exécution peut ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart",
+                          "f00036",
+                          'entraîner la nullité des actes subséquents.',
+                        ),
                   ),
                 ],
               ),

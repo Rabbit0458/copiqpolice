@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DiffusionMessageViolentMineurPage extends StatelessWidget {
   const DiffusionMessageViolentMineurPage({super.key});
@@ -56,10 +57,18 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en péril",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+            "f00002",
+            "Mise en péril",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La diffusion d’un message violent / terroriste / pornographique ou dangereux susceptible d’être vu ou perçu par un mineur",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+              "f00003",
+              "La diffusion d’un message violent / terroriste / pornographique ou dangereux susceptible d’être vu ou perçu par un mineur",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,17 +99,41 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait soit de fabriquer, de transporter, de diffuser par quelque moyen que ce soit et quel qu’en soit le support "
-                "un message à caractère violent, incitant au terrorisme, pornographique (y compris des images pornographiques impliquant "
-                "un ou plusieurs animaux), ou de nature à porter gravement atteinte à la dignité humaine, ou à inciter des mineurs à se livrer "
-                "à des jeux les mettant physiquement en danger, soit de faire commerce d’un tel message, lorsque ce message est susceptible "
-                "d’être vu ou perçu par un mineur, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00005",
+                      "Le fait soit de fabriquer, de transporter, de diffuser par quelque moyen que ce soit et quel qu’en soit le support ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00006",
+                      "un message à caractère violent, incitant au terrorisme, pornographique (y compris des images pornographiques impliquant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00007",
+                      "un ou plusieurs animaux), ou de nature à porter gravement atteinte à la dignité humaine, ou à inciter des mineurs à se livrer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00008",
+                      "à des jeux les mettant physiquement en danger, soit de faire commerce d’un tel message, lorsque ce message est susceptible ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00009",
+                      "d’être vu ou perçu par un mineur, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -105,19 +142,30 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-24 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00011",
+                    "Article 227-24 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime la diffusion de ce type de message lorsqu’il est susceptible d’être vu ou perçu par un mineur.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00012",
+                    " : prévoit et réprime la diffusion de ce type de message lorsqu’il est susceptible d’être vu ou perçu par un mineur.",
+                  ),
                 ),
               ]),
             ],
@@ -127,28 +175,57 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
           // Élément matériel (3 éléments pédagogiques + actes incriminés)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un message (notion large)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00014",
+                  "A) Un message (notion large)",
+                ),
+              ),
               _Paragraph(
-                "Le terme « message » s’entend au sens le plus large : il peut s’agir d’une communication au sens strict "
-                "(lettre, appel, message, etc.) mais aussi d’un contenu transmis par une œuvre (fiction, peinture, représentation, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00015",
+                      "Le terme « message » s’entend au sens le plus large : il peut s’agir d’une communication au sens strict ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00016",
+                      "(lettre, appel, message, etc.) mais aussi d’un contenu transmis par une œuvre (fiction, peinture, représentation, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Le support est indifférent : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00017",
+                    "Le support est indifférent : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      "la loi vise la diffusion « par quelque moyen que ce soit et quel qu’en soit le support » (écrits, œuvres audio/vidéo, représentations matérielles, productions télématiques, etc.). — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00018",
+                    "la loi vise la diffusion « par quelque moyen que ce soit et quel qu’en soit le support » (écrits, œuvres audio/vidéo, représentations matérielles, productions télématiques, etc.). — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-24 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00019",
+                    "article 227-24 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -156,68 +233,156 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Le caractère du message"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00020",
+                  "B) Le caractère du message",
+                ),
+              ),
               _Paragraph(
-                "Le message doit présenter l’un des caractères suivants : violent, incitant au terrorisme, pornographique "
-                "(y compris des images pornographiques impliquant un ou plusieurs animaux), portant gravement atteinte à la dignité humaine, "
-                "ou incitant les mineurs à se livrer à des jeux les mettant physiquement en danger.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00021",
+                      "Le message doit présenter l’un des caractères suivants : violent, incitant au terrorisme, pornographique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00022",
+                      "(y compris des images pornographiques impliquant un ou plusieurs animaux), portant gravement atteinte à la dignité humaine, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00023",
+                      "ou incitant les mineurs à se livrer à des jeux les mettant physiquement en danger.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ces notions peuvent viser des actes dégradants ou d’une grande violence, susceptibles de provoquer des effets traumatisants "
-                "sur la jeunesse.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00024",
+                      "Ces notions peuvent viser des actes dégradants ou d’une grande violence, susceptibles de provoquer des effets traumatisants ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00025",
+                      "sur la jeunesse.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Exemple",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sont notamment visées des pratiques comme le « jeu du foulard » : compétition consistant à résister le plus longtemps possible à une strangulation.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00026",
+                      "Sont notamment visées des pratiques comme le « jeu du foulard » : compétition consistant à résister le plus longtemps possible à une strangulation.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Les actes incriminés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00027",
+                  "C) Les actes incriminés",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Sont réprimés : "),
                 TextSpan(
-                  text:
-                      "la fabrication, le transport, la diffusion, ou le commerce d’un tel message. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00028",
+                    "Sont réprimés : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-24 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00029",
+                    "la fabrication, le transport, la diffusion, ou le commerce d’un tel message. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00030",
+                    "article 227-24 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Ces actes visent tous ceux qui interviennent dans l’exploitation des messages interdits : "
-                "fabrication, diffusion, ou profit. Le commerce peut inclure les financeurs en amont et les bénéficiaires en aval, "
-                "même s’ils n’ont pas participé matériellement à la diffusion.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00031",
+                      "Ces actes visent tous ceux qui interviennent dans l’exploitation des messages interdits : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00032",
+                      "fabrication, diffusion, ou profit. Le commerce peut inclure les financeurs en amont et les bénéficiaires en aval, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00033",
+                      "même s’ils n’ont pas participé matériellement à la diffusion.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) Un mineur susceptible de voir / percevoir le message",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00034",
+                  "D) Un mineur susceptible de voir / percevoir le message",
+                ),
               ),
               _Paragraph(
-                "L’infraction est constituée dès lors que le message est « susceptible d’être vu ou perçu par un mineur ». "
-                "Il n’est pas nécessaire qu’un mineur (ou même le public) ait effectivement été atteint par le message.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00035",
+                      "L’infraction est constituée dès lors que le message est « susceptible d’être vu ou perçu par un mineur ». ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00036",
+                      "Il n’est pas nécessaire qu’un mineur (ou même le public) ait effectivement été atteint par le message.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La diffusion sciemment réalisée est sanctionnée, mais aussi l’imprudence ou la négligence "
-                "permettant l’accès des mineurs à des messages réservés aux majeurs (absence de précautions suffisantes).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00037",
+                      "La diffusion sciemment réalisée est sanctionnée, mais aussi l’imprudence ou la négligence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00038",
+                      "permettant l’accès des mineurs à des messages réservés aux majeurs (absence de précautions suffisantes).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’infraction peut être constituée même si l’accès du mineur résulte d’une simple déclaration de celui-ci "
-                "affirmant avoir au moins 18 ans.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00039",
+                      "L’infraction peut être constituée même si l’accès du mineur résulte d’une simple déclaration de celui-ci ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00040",
+                      "affirmant avoir au moins 18 ans.",
+                    ),
               ),
             ],
           ),
@@ -226,21 +391,41 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+              "f00041",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conscience de la possible diffusion à des mineurs",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00042",
+                  "Conscience de la possible diffusion à des mineurs",
+                ),
               ),
               _Paragraph(
-                "L’élément moral est caractérisé dès lors que l’auteur a conscience que le message est susceptible d’être vu ou perçu par un mineur.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00043",
+                  "L’élément moral est caractérisé dès lors que l’auteur a conscience que le message est susceptible d’être vu ou perçu par un mineur.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il est réalisé si la diffusion est délibérément effectuée à destination de mineurs, "
-                "mais aussi lorsque l’accès des mineurs résulte d’un manque de précautions suffisantes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00044",
+                      "Il est réalisé si la diffusion est délibérément effectuée à destination de mineurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00045",
+                      "mais aussi lorsque l’accès des mineurs résulte d’un manque de précautions suffisantes.",
+                    ),
               ),
             ],
           ),
@@ -249,12 +434,22 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+              "f00046",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00047",
+                  "Aucune circonstance aggravante prévue.",
+                ),
+              ),
             ],
           ),
 
@@ -262,22 +457,44 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+              "f00048",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00049",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Délit — qualification simple : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00050",
+                    "Délit — qualification simple : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00051",
+                    "3 ans d’emprisonnement et 75 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-24 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00052",
+                    "article 227-24 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -288,11 +505,18 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Lorsque le délit est commis par voie de presse écrite/audiovisuelle ou communication au public en ligne, des règles spécifiques déterminent les responsables : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00053",
+                      "Lorsque le délit est commis par voie de presse écrite/audiovisuelle ou communication au public en ligne, des règles spécifiques déterminent les responsables : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article 227-24 alinéa 2 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00054",
+                      "article 227-24 alinéa 2 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -307,11 +531,18 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Lorsque l’infraction est commise à l’étranger par un Français (ou une personne résidant habituellement en France), la loi française peut s’appliquer même sans plainte ni dénonciation : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00055",
+                      "Lorsque l’infraction est commise à l’étranger par un Français (ou une personne résidant habituellement en France), la loi française peut s’appliquer même sans plainte ni dénonciation : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article 227-27-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                      "f00056",
+                      "article 227-27-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -323,11 +554,27 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00057",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 227-28-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00058",
+                    "Responsabilité pénale prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00059",
+                    "l’article 227-28-1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -335,16 +582,42 @@ class DiffusionMessageViolentMineurPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00060",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                  "f00061",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00062",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00063",
+                    "l’article 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart",
+                    "f00064",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
             ],

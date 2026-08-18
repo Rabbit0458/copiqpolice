@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolationOrdonnancesJafPage extends StatelessWidget {
   const PaViolationOrdonnancesJafPage({super.key});
@@ -16,23 +17,34 @@ class PaViolationOrdonnancesJafPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF0E0F12) : Colors.white;
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
-? Colors.white70
-: const Color(0xFF222222).withValues(alpha: .70);
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final items = <_Item>[
-      const _Item(
-        title: 'Le défaut de notification de changement (ordonnance JAF)',
+      _Item(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+          "f00001",
+          'Le défaut de notification de changement (ordonnance JAF)',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement',
       ),
-      const _Item(
-        title:
-            'Le non-respect des obligations ou interdictions (ordonnance JAF)',
+      _Item(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+          "f00002",
+          'Le non-respect des obligations ou interdictions (ordonnance JAF)',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions',
       ),
-      const _Item.quiz(
-        title: 'Quiz — Ordonnances JAF (violences)',
+      _Item.quiz(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+          "f00003",
+          'Quiz — Ordonnances JAF (violences)',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/violation_ordonnances_jaf/quiz_ordonnances_jaf',
       ),
@@ -47,10 +59,18 @@ class PaViolationOrdonnancesJafPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+            "f00004",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Atteintes aux mineurs & à la famille',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+            "f00005",
+            'Atteintes aux mineurs & à la famille',
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -192,7 +212,9 @@ class _Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color pillBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-    final Color pillBorder = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+    final Color pillBorder = Colors.white.withValues(
+      alpha: isDark ? 0.18 : 0.14,
+    );
 
     return GestureDetector(
       onTap: onTap,
@@ -261,7 +283,17 @@ class _Card extends StatelessWidget {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    isQuiz ? 'Testez vos connaissances' : 'Accéder au contenu',
+                    isQuiz
+                        ? ScolariteText.value(
+                            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+                            "f00007",
+                            'Testez vos connaissances',
+                          )
+                        : ScolariteText.value(
+                            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+                            "f00008",
+                            'Accéder au contenu',
+                          ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.fustat(
@@ -296,7 +328,13 @@ class _Card extends StatelessWidget {
                         ),
                         const SizedBox(width: 6),
                         Text(
-                          isQuiz ? 'Quiz' : 'Découvrir',
+                          isQuiz
+                              ? 'Quiz'
+                              : ScolariteText.value(
+                                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart",
+                                  "f00009",
+                                  'Découvrir',
+                                ),
                           style: GoogleFonts.fustat(
                             color: Colors.white,
                             fontWeight: FontWeight.w800,

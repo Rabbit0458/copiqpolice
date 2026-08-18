@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
   const PaPPInstructionPreparatoireContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Instruction préparatoire",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+            "f00002",
+            "Instruction préparatoire",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "L'instruction préparatoire",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00003",
+              "L'instruction préparatoire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,9 +66,21 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Définition, ouverture d’une information, pouvoirs du juge "
-            "d’instruction, clôture, rôle de la chambre de l’instruction "
-            "et attributions du juge des libertés et de la détention.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+                  "f00004",
+                  "Définition, ouverture d’une information, pouvoirs du juge ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+                  "f00005",
+                  "d’instruction, clôture, rôle de la chambre de l’instruction ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+                  "f00006",
+                  "et attributions du juge des libertés et de la détention.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,9 +94,16 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           // ================= MODULE 1 — DÉFINITION =================
           _ModuleCard(
             tag: 'pp_instruction_def',
-            title: "Définition et principes généraux",
-            subtitle:
-                "Organisation, finalité, objectifs, caractère inquisitoire, écrit, secret et non contradictoire.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00007",
+              "Définition et principes généraux",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00008",
+              "Organisation, finalité, objectifs, caractère inquisitoire, écrit, secret et non contradictoire.",
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,9 +117,16 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           // ================= MODULE 2 — OUVERTURE ====================
           _ModuleCard(
             tag: 'pp_instruction_ouverture',
-            title: "Chapitre 2 : L'ouverture d'une information",
-            subtitle:
-                "Cas d’ouverture, critères légaux, plainte avec constitution, saisine, rôle du procureur.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00009",
+              "Chapitre 2 : L'ouverture d'une information",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00010",
+              "Cas d’ouverture, critères légaux, plainte avec constitution, saisine, rôle du procureur.",
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +140,16 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           // ================= MODULE 3 — POUVOIRS DU JUGE =====================
           _ModuleCard(
             tag: 'pp_instruction_pouvoirs',
-            title: "Chapitre 3 : Les pouvoirs du juge d'instruction",
-            subtitle:
-                "Caractères généraux, perquisitions, auditions, expertises, commissions rogatoires.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00011",
+              "Chapitre 3 : Les pouvoirs du juge d'instruction",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00012",
+              "Caractères généraux, perquisitions, auditions, expertises, commissions rogatoires.",
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -115,9 +163,16 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           // ================= MODULE 4 — CLÔTURE =====================
           _ModuleCard(
             tag: 'pp_instruction_cloture',
-            title: "Chapitre 4 : La clôture de l’instruction",
-            subtitle:
-                "Moment de la clôture, avis aux parties, ordonnances de règlement et décisions du juge.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00013",
+              "Chapitre 4 : La clôture de l’instruction",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00014",
+              "Moment de la clôture, avis aux parties, ordonnances de règlement et décisions du juge.",
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -131,9 +186,16 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           // ================= MODULE 5 — CHAMBRE DE L'INSTRUCTION ========================
           _ModuleCard(
             tag: 'pp_chambre_instruction',
-            title: "Chapitre 5 : La chambre de l'instruction",
-            subtitle:
-                "Composition, rôle, contrôle de l’instruction, décisions rendues, voies de recours.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00015",
+              "Chapitre 5 : La chambre de l'instruction",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00016",
+              "Composition, rôle, contrôle de l’instruction, décisions rendues, voies de recours.",
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -147,16 +209,21 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           // ================= MODULE 6 — JLD ============================
           _ModuleCard(
             tag: 'pp_jld',
-            title: "Chapitre 6 : Le juge des libertés et de la détention",
-            subtitle:
-                "Statut, rôle, pouvoirs, mesures de sûreté, détention provisoire et libertés individuelles.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00017",
+              "Chapitre 6 : Le juge des libertés et de la détention",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00018",
+              "Statut, rôle, pouvoirs, mesures de sûreté, détention provisoire et libertés individuelles.",
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
-            onTap: () => _openRoute(
-              context,
-              '/pa/dps_dpg/procedure_penale/pp_jld',
-            ),
+            onTap: () =>
+                _openRoute(context, '/pa/dps_dpg/procedure_penale/pp_jld'),
           ),
 
           const SizedBox(height: 22),
@@ -164,9 +231,16 @@ class PaPPInstructionPreparatoireContenuPage extends StatelessWidget {
           // ================= MODULE 7 — QUIZ =================
           _ModuleCard(
             tag: 'quiz_instruction_preparatoire',
-            title: 'Quiz — Instruction préparatoire',
-            subtitle:
-                'Testez vos connaissances sur la procédure d’instruction, ses phases et ses acteurs.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00019",
+              'Quiz — Instruction préparatoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart",
+              "f00020",
+              'Testez vos connaissances sur la procédure d’instruction, ses phases et ses acteurs.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

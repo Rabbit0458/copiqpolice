@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEtatAlcooliquePage extends StatelessWidget {
   const PaEtatAlcooliquePage({super.key});
@@ -59,10 +60,18 @@ class PaEtatAlcooliquePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infraction circulation routière",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+            "f00002",
+            "Infraction circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaEtatAlcooliquePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La conduite sous l’empire d’un état alcoolique",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+              "f00003",
+              "La conduite sous l’empire d’un état alcoolique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,17 +102,41 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une infraction, même en l’absence de tout signe d’ivresse manifeste, le fait de conduire un véhicule "
-                "sous l’empire d’un état alcoolique caractérisé :\n"
-                "• par une concentration d’alcool dans le sang égale ou supérieure à 0,80 g/L ;\n"
-                "• ou par une concentration d’alcool dans l’air expiré égale ou supérieure à 0,40 mg/L.\n\n"
-                "Ces dispositions sont applicables à l’accompagnateur d’un élève conducteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00005",
+                      "Constitue une infraction, même en l’absence de tout signe d’ivresse manifeste, le fait de conduire un véhicule ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00006",
+                      "sous l’empire d’un état alcoolique caractérisé :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00007",
+                      "• par une concentration d’alcool dans le sang égale ou supérieure à 0,80 g/L ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00008",
+                      "• ou par une concentration d’alcool dans l’air expiré égale ou supérieure à 0,40 mg/L.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00009",
+                      "Ces dispositions sont applicables à l’accompagnateur d’un élève conducteur.",
+                    ),
               ),
             ],
           ),
@@ -108,23 +145,36 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 234-1 / I et V du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00011",
+                    "Article L. 234-1 / I et V du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit et réprime la conduite sous l’empire d’un état alcoolique par un conducteur "
-                      "ou par l’accompagnateur d’un élève conducteur.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                        "f00012",
+                        " : définit et réprime la conduite sous l’empire d’un état alcoolique par un conducteur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                        "f00013",
+                        "ou par l’accompagnateur d’un élève conducteur.",
+                      ),
                 ),
               ]),
             ],
@@ -134,37 +184,90 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Une personne visée"),
-              const _SubTitle("1) Un conducteur de véhicule"),
-              const _Paragraph(
-                "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, véhicules de transport en commun, "
-                "motocyclettes, cyclomoteurs, matériels agricoles et forestiers, engins de travaux publics, engins spéciaux, trolleybus), "
-                "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00015",
+                  "A) Une personne visée",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00016",
+                  "1) Un conducteur de véhicule",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00017",
+                      "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, véhicules de transport en commun, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00018",
+                      "motocyclettes, cyclomoteurs, matériels agricoles et forestiers, engins de travaux publics, engins spéciaux, trolleybus), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00019",
+                      "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("2) Un accompagnateur d’élève conducteur"),
-              const _Paragraph(
-                "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre "
-                "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00020",
+                  "2) Un accompagnateur d’élève conducteur",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00021",
+                      "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00022",
+                      "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
-              const _NotaBox(
-                title: "Jurisprudence",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00023",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les seuls faits d’avoir pris le volant, mis le contact et enclenché une vitesse suffisent pour caractériser la conduite d’un véhicule ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00024",
+                      "Les seuls faits d’avoir pris le volant, mis le contact et enclenché une vitesse suffisent pour caractériser la conduite d’un véhicule ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 23 mars 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00025",
+                      "(Cass. crim., 23 mars 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -174,15 +277,26 @@ class PaEtatAlcooliquePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Jurisprudence",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00026",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’infraction peut être relevée même si le prévenu vient de quitter son véhicule, dès lors qu’il peut être prouvé qu’il l’a conduit sous l’emprise de l’alcool ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00027",
+                      "L’infraction peut être relevée même si le prévenu vient de quitter son véhicule, dès lors qu’il peut être prouvé qu’il l’a conduit sous l’emprise de l’alcool ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 7 mars 1989)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00028",
+                      "(Cass. crim., 7 mars 1989)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -194,196 +308,335 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Les cas de contrôle de l’alcoolémie"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00029",
+                  "B) Les cas de contrôle de l’alcoolémie",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La recherche de l’état alcoolique doit être systématique dans les cas visés par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00030",
+                    "La recherche de l’état alcoolique doit être systématique dans les cas visés par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 234-3 alinéa 1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00031",
+                    "l’article L. 234-3 alinéa 1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Auteur présumé d’une infraction (délit ou contravention) au code de la route punie de la peine complémentaire de suspension du permis de conduire.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00032",
+                  "Auteur présumé d’une infraction (délit ou contravention) au code de la route punie de la peine complémentaire de suspension du permis de conduire.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Conducteur ou accompagnateur d’élève conducteur impliqué dans un accident corporel de la circulation.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00033",
+                  "Conducteur ou accompagnateur d’élève conducteur impliqué dans un accident corporel de la circulation.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La recherche peut aussi être effectuée dans les cas visés par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00034",
+                    "La recherche peut aussi être effectuée dans les cas visés par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 234-3 alinéa 2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00035",
+                    "l’article L. 234-3 alinéa 2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Conducteur ou accompagnateur d’élève conducteur impliqué dans un accident quelconque de la circulation.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00036",
+                  "Conducteur ou accompagnateur d’élève conducteur impliqué dans un accident quelconque de la circulation.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Auteur présumé d’une infraction aux prescriptions du code de la route (autre que celles mentionnées au 1er alinéa).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00037",
+                  "Auteur présumé d’une infraction aux prescriptions du code de la route (autre que celles mentionnées au 1er alinéa).",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Même sans infraction préalable ni accident, la recherche peut être effectuée dans le cadre de ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00038",
+                    "Même sans infraction préalable ni accident, la recherche peut être effectuée dans le cadre de ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 234-9 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00039",
+                    "l’article L. 234-9 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Par OPJ/APJ : sur instruction du procureur de la République ou à leur initiative.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00040",
+                  "Par OPJ/APJ : sur instruction du procureur de la République ou à leur initiative.",
+                ),
               ),
-              const _BulletPoint(
-                text: "Par APJA : sur ordre et sous responsabilité des OPJ.",
-              ),
-
-              const SizedBox(height: 14),
-
-              const _SubTitle("C) Les moyens de recherche de l’alcoolémie"),
-              const _SubTitle("1) Le dépistage"),
-              const _Paragraph(
-                "Le dépistage de l’imprégnation alcoolique par l’air expiré s’effectue à l’aide :\n"
-                "• d’un éthylotest de type A (alcootest) ;\n"
-                "• ou d’un éthylotest de type B (appareil portatif à affichage électronique).",
-              ),
-              const SizedBox(height: 10),
-              const _Paragraph(
-                "Les opérations de dépistage doivent être effectuées préalablement à toute vérification notamment :\n"
-                "• lorsque la recherche est effectuée par un APJA (sur ordre et sous responsabilité d’un OPJ) ;\n"
-                "• dans le cadre des recherches préventives, si OPJ/APJ ne disposent pas du matériel permettant la vérification immédiate sur place.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00041",
+                  "Par APJA : sur ordre et sous responsabilité des OPJ.",
+                ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("2) La preuve : les vérifications"),
-              const _Paragraph(
-                "Lorsque le dépistage permet de présumer l’existence d’un état alcoolique, ou en cas de refus de se soumettre au dépistage, "
-                "ou en cas d’impossibilité (incapacité physique attestée par médecin requis), OPJ/APJ font procéder aux vérifications destinées à établir la preuve.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00042",
+                  "C) Les moyens de recherche de l’alcoolémie",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00043",
+                  "1) Le dépistage",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00044",
+                      "Le dépistage de l’imprégnation alcoolique par l’air expiré s’effectue à l’aide :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00045",
+                      "• d’un éthylotest de type A (alcootest) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00046",
+                      "• ou d’un éthylotest de type B (appareil portatif à affichage électronique).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Les vérifications sont faites :\n"
-                "• soit au moyen d’analyses ou examens médicaux, cliniques ou biologiques ;\n"
-                "• soit au moyen d’un éthylomètre homologué (analyse de l’air expiré).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00047",
+                      "Les opérations de dépistage doivent être effectuées préalablement à toute vérification notamment :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00048",
+                      "• lorsque la recherche est effectuée par un APJA (sur ordre et sous responsabilité d’un OPJ) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00049",
+                      "• dans le cadre des recherches préventives, si OPJ/APJ ne disposent pas du matériel permettant la vérification immédiate sur place.",
+                    ),
+              ),
+
+              const SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00050",
+                  "2) La preuve : les vérifications",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00051",
+                      "Lorsque le dépistage permet de présumer l’existence d’un état alcoolique, ou en cas de refus de se soumettre au dépistage, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00052",
+                      "ou en cas d’impossibilité (incapacité physique attestée par médecin requis), OPJ/APJ font procéder aux vérifications destinées à établir la preuve.",
+                    ),
+              ),
+              const SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00053",
+                      "Les vérifications sont faites :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00054",
+                      "• soit au moyen d’analyses ou examens médicaux, cliniques ou biologiques ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00055",
+                      "• soit au moyen d’un éthylomètre homologué (analyse de l’air expiré).",
+                    ),
               ),
 
               const SizedBox(height: 10),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Pour une prise de sang, l’OPJ/APJ peut requérir (notamment) un médecin ou un infirmier conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00056",
+                    "Pour une prise de sang, l’OPJ/APJ peut requérir (notamment) un médecin ou un infirmier conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 234-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00057",
+                    "l’article L. 234-4 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article R. 3354-5 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00058",
+                    "l’article R. 3354-5 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En cas d’éthylomètre, un second contrôle peut être immédiatement effectué ; il est de droit si demandé par l’intéressé (",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00059",
+                    "En cas d’éthylomètre, un second contrôle peut être immédiatement effectué ; il est de droit si demandé par l’intéressé (",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 234-5 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00060",
+                    "article L. 234-5 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _NotaBox(
-                title: "Règle pratique",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00061",
+                  "Règle pratique",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’indication du taux affichée par l’éthylomètre constitue à elle seule la base légale de toute procédure et sa valeur juridique "
-                        "est équivalente à celle de l’analyse de sang. Le choix du mode de vérification appartient à l’enquêteur : la demande de prélèvement sanguin "
-                        "à la place de l’éthylomètre ne peut pas être imposée par l’intéressé.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                          "f00062",
+                          "L’indication du taux affichée par l’éthylomètre constitue à elle seule la base légale de toute procédure et sa valeur juridique ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                          "f00063",
+                          "est équivalente à celle de l’analyse de sang. Le choix du mode de vérification appartient à l’enquêteur : la demande de prélèvement sanguin ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                          "f00064",
+                          "à la place de l’éthylomètre ne peut pas être imposée par l’intéressé.",
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Si la personne persiste à refuser les vérifications, le délit de refus est retenu (",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00065",
+                    "Si la personne persiste à refuser les vérifications, le délit de refus est retenu (",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 234-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00066",
+                    "article L. 234-8 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _NotaBox(
-                title: "Jurisprudence",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00067",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’interprétation des mesures de concentration d’alcool dans l’air expiré effectuées au moyen d’un éthylomètre est une obligation pour le juge ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00068",
+                      "L’interprétation des mesures de concentration d’alcool dans l’air expiré effectuées au moyen d’un éthylomètre est une obligation pour le juge ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 26 mars 2019)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00069",
+                      "(Cass. crim., 26 mars 2019)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -395,60 +648,115 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              const _SubTitle("D) Seuils : délit / contravention"),
-              const _SubTitle("1) Le taux délictuel"),
-              const _Paragraph(
-                "Même sans signe d’ivresse manifeste, le délit est constitué lorsque la concentration d’alcool est :\n"
-                "• égale ou supérieure à 0,80 g/L de sang ;\n"
-                "• ou égale ou supérieure à 0,40 mg/L d’air expiré.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00070",
+                  "D) Seuils : délit / contravention",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00071",
+                  "1) Le taux délictuel",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00072",
+                      "Même sans signe d’ivresse manifeste, le délit est constitué lorsque la concentration d’alcool est :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00073",
+                      "• égale ou supérieure à 0,80 g/L de sang ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00074",
+                      "• ou égale ou supérieure à 0,40 mg/L d’air expiré.",
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("2) Le taux contraventionnel"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00075",
+                  "2) Le taux contraventionnel",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Même sans signe d’ivresse manifeste, l’infraction est contraventionnelle dans les cas prévus par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00076",
+                    "Même sans signe d’ivresse manifeste, l’infraction est contraventionnelle dans les cas prévus par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article R. 234-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00077",
+                    "l’article R. 234-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
               _ConditionCard(
-                title: "Cas particuliers (seuil 0,20 g/L)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00078",
+                  "Cas particuliers (seuil 0,20 g/L)",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF263238)
                     : const Color(0xFFEFF7FF),
                 accent: accentBlue,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _BulletPoint(
-                    text:
-                        "Conducteur de transport en commun (véhicule > 9 places assises, conducteur compris).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00079",
+                      "Conducteur de transport en commun (véhicule > 9 places assises, conducteur compris).",
+                    ),
                   ),
                   _BulletPoint(
-                    text:
-                        "Conducteur dont le droit de conduire est limité aux véhicules équipés d’un EAD (anti-démarrage).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00080",
+                      "Conducteur dont le droit de conduire est limité aux véhicules équipés d’un EAD (anti-démarrage).",
+                    ),
                   ),
                   _BulletPoint(
-                    text:
-                        "Conducteur en apprentissage ou titulaire d’un permis probatoire.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00081",
+                      "Conducteur en apprentissage ou titulaire d’un permis probatoire.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Pour ces conducteurs : contravention si alcoolémie ≥ 0,20 g/L de sang (≥ 0,10 mg/L d’air expiré) sans atteindre 0,80 g/L (0,40 mg/L).",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00082",
+                  "Pour ces conducteurs : contravention si alcoolémie ≥ 0,20 g/L de sang (≥ 0,10 mg/L d’air expiré) sans atteindre 0,80 g/L (0,40 mg/L).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Pour les autres conducteurs : contravention si alcoolémie ≥ 0,50 g/L de sang (≥ 0,25 mg/L d’air expiré) sans atteindre 0,80 g/L (0,40 mg/L).",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00083",
+                  "Pour les autres conducteurs : contravention si alcoolémie ≥ 0,50 g/L de sang (≥ 0,25 mg/L d’air expiré) sans atteindre 0,80 g/L (0,40 mg/L).",
+                ),
               ),
             ],
           ),
@@ -457,56 +765,74 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+              "f00084",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté de conduire après avoir consommé de l’alcool",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00085",
+                  "Volonté de conduire après avoir consommé de l’alcool",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La conduite sous l’empire d’un état alcoolique procède d’un comportement volontaire : c’est une infraction intentionnelle au regard de ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00086",
+                    "La conduite sous l’empire d’un état alcoolique procède d’un comportement volontaire : c’est une infraction intentionnelle au regard de ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 121-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00087",
+                    "l’article 121-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ("),
                 TextSpan(
-                  text: "Cass. crim., 19 décembre 1994",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00088",
+                    "Cass. crim., 19 décembre 1994",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "18 octobre 1995",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00089",
+                    "18 octobre 1995",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’élément moral peut résulter du simple fait de consommer de l’alcool alors que le conducteur sait qu’il va prendre le volant ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00090",
+                    "L’élément moral peut résulter du simple fait de consommer de l’alcool alors que le conducteur sait qu’il va prendre le volant ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 19 décembre 1994)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00091",
+                    "(Cass. crim., 19 décembre 1994)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -515,8 +841,11 @@ class PaEtatAlcooliquePage extends StatelessWidget {
                 title: "Contraventions",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pour les infractions contraventionnelles, l’élément moral n’est pas exigé.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00092",
+                      "Pour les infractions contraventionnelles, l’élément moral n’est pas exigé.",
+                    ),
                   ),
                 ],
               ),
@@ -527,26 +856,49 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+              "f00093",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00094",
+                  "Aucune circonstance aggravante spécifique n’est prévue pour cette infraction.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00095",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La conduite sous l’empire d’un état alcoolique peut aggraver les peines en cas d’homicide involontaire ou d’atteintes involontaires : "
-                        "le délit peut constituer une circonstance aggravante (",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                          "f00096",
+                          "La conduite sous l’empire d’un état alcoolique peut aggraver les peines en cas d’homicide involontaire ou d’atteintes involontaires : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                          "f00097",
+                          "le délit peut constituer une circonstance aggravante (",
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                      "f00098",
+                      "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -562,91 +914,179 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
           // Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+              "f00099",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00100",
+                  "Peines encourues",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Contravention : "),
-                TextSpan(text: "750 € d’amende (amende forfaitaire). — "),
                 TextSpan(
-                  text: "article R. 234-1 (I 1° et V) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00101",
+                    "Contravention : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00102",
+                    "750 € d’amende (amende forfaitaire). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00103",
+                    "article R. 234-1 (I 1° et V) du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Contravention (autres conducteurs) : "),
-                TextSpan(text: "750 € d’amende (amende forfaitaire). — "),
                 TextSpan(
-                  text: "article R. 234-1 (I 2° et V) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00104",
+                    "Contravention (autres conducteurs) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00105",
+                    "750 € d’amende (amende forfaitaire). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00106",
+                    "article R. 234-1 (I 2° et V) du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 4 500 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00107",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 234-1 (I et V) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00108",
+                    "2 ans d’emprisonnement et 4 500 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00109",
+                    "article L. 234-1 (I et V) du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00110",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00111",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00112",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00113",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00114",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Immunité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                  "f00115",
+                  "Immunité",
+                ),
+              ),
               _SubTitle("Diplomates"),
               _Paragraph.rich([
-                TextSpan(text: "La convention de Vienne ("),
                 TextSpan(
-                  text: "article 27, décret n°71-284 du 29/03/1971",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00116",
+                    "La convention de Vienne (",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00117",
+                    "article 27, décret n°71-284 du 29/03/1971",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      ") prévoit que les diplomates ne peuvent être soumis à aucune forme d’arrestation. "
-                      "Ne pas faire subir de dépistage ou de vérification de l’alcoolémie.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                        "f00118",
+                        ") prévoit que les diplomates ne peuvent être soumis à aucune forme d’arrestation. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                        "f00119",
+                        "Ne pas faire subir de dépistage ou de vérification de l’alcoolémie.",
+                      ),
                 ),
               ]),
 
@@ -654,18 +1094,33 @@ class PaEtatAlcooliquePage extends StatelessWidget {
 
               _SubTitle("Parlementaires"),
               _Paragraph.rich([
-                TextSpan(text: "La Constitution de 1958 ("),
                 TextSpan(
-                  text: "article 26",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00120",
+                    "La Constitution de 1958 (",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                    "f00121",
+                    "article 26",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      ") consacre l’inviolabilité des parlementaires. Concernant les épreuves de dépistage obligatoires à la suite d’un flagrant délit "
-                      "(accident mortel ou corporel grave, etc.), le dépistage peut être effectué, mais si possible, le procureur doit être préalablement informé.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                        "f00122",
+                        ") consacre l’inviolabilité des parlementaires. Concernant les épreuves de dépistage obligatoires à la suite d’un flagrant délit ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart",
+                        "f00123",
+                        "(accident mortel ou corporel grave, etc.), le dépistage peut être effectué, mais si possible, le procureur doit être préalablement informé.",
+                      ),
                 ),
               ]),
             ],

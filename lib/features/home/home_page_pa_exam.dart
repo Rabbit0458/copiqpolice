@@ -275,6 +275,13 @@ class _HomePagePaExamState extends State<HomePagePaExam>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final screenHeight = MediaQuery.sizeOf(context).height;
+    final compactHome = screenHeight < 760;
+    final heroHeight = screenHeight < 700
+        ? 232.0
+        : screenHeight < 820
+        ? 272.0
+        : 320.0;
 
     // Deck items
     final deckItems = _cats
@@ -420,7 +427,7 @@ class _HomePagePaExamState extends State<HomePagePaExam>
               ),
             ),
 
-            const SizedBox(height: 22),
+            SizedBox(height: compactHome ? 14 : 22),
 
             // Concours préparé
             _entrance(
@@ -429,29 +436,28 @@ class _HomePagePaExamState extends State<HomePagePaExam>
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
-                  'Concours Policier adjoint',
-                  style: theme.textTheme.titleMedium?.copyWith(
-                    color: theme.colorScheme.onSurfaceVariant,
-                    fontWeight: FontWeight.w700,
+                  'Examen — Policier adjoint',
+                  style: theme.textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.w900,
                   ),
                 ),
               ),
             ),
-            const SizedBox(height: 8),
+            SizedBox(height: compactHome ? 4 : 8),
             _entrance(
               begin: .24,
               end: .60,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
-                  'À découvrir',
+                  'Sélection de contenu',
                   style: theme.textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w800,
                   ),
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: compactHome ? 7 : 10),
 
             // ===== HÉRO CAROUSEL =====
             _entrance(
@@ -461,14 +467,14 @@ class _HomePagePaExamState extends State<HomePagePaExam>
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: _HeroDeck(
                   key: const PageStorageKey('pa-hero-deck'),
-                  height: 330,
+                  height: heroHeight,
                   items: deckItems,
                   initialIndex: _initialDeckIndex,
                 ),
               ),
             ),
 
-            const SizedBox(height: 26),
+            SizedBox(height: compactHome ? 16 : 26),
 
             // ===== Continue ta préparation (progression perso PA) =====
             _entrance(
@@ -485,7 +491,7 @@ class _HomePagePaExamState extends State<HomePagePaExam>
               ),
             ),
 
-            const SizedBox(height: 24),
+            const SizedBox(height: 92),
           ],
         ),
       ),

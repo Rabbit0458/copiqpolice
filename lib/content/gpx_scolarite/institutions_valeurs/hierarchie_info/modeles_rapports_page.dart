@@ -1,30 +1,63 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ModelesRapportsPage extends StatelessWidget {
   const ModelesRapportsPage({super.key});
 
   static const String routeName = '/gpx/institution/hierarchie_info/modeles';
 
-  static const List<_ReportModelItem> _items = [
+  static final List<_ReportModelItem> _items = [
     _ReportModelItem(
-      title: "Rapport — Modèle général",
-      subtitle: "Structure standard (en-tête, objet, corps, signature).",
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00001",
+        "Rapport — Modèle général",
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00002",
+        "Structure standard (en-tête, objet, corps, signature).",
+      ),
       assetPath: "assets/images/modele_rapport.png",
     ),
     _ReportModelItem(
-      title: "Rapport — ASA",
-      subtitle: "Autorisation spéciale d’absence (exemple).",
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00003",
+        "Rapport — ASA",
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00004",
+        "Autorisation spéciale d’absence (exemple).",
+      ),
       assetPath: "assets/images/modele_rapport_asa.png",
     ),
     _ReportModelItem(
-      title: "Rapport — Résidence",
-      subtitle: "Modèle orienté résidence / domicile (exemple).",
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00005",
+        "Rapport — Résidence",
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00006",
+        "Modèle orienté résidence / domicile (exemple).",
+      ),
       assetPath: "assets/images/modele_rapport_residence.png",
     ),
     _ReportModelItem(
-      title: "Rapport — Permis",
-      subtitle: "Modèle orienté permis (exemple).",
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00007",
+        "Rapport — Permis",
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+        "f00008",
+        "Modèle orienté permis (exemple).",
+      ),
       assetPath: "assets/images/modele_rapport_permis.png",
     ),
   ];
@@ -52,10 +85,18 @@ class ModelesRapportsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+            "f00009",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Modèles de rapports",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+            "f00010",
+            "Modèles de rapports",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -70,7 +111,11 @@ class ModelesRapportsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Choisis un modèle",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+              "f00011",
+              "Choisis un modèle",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -80,7 +125,11 @@ class ModelesRapportsPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            "Appuie sur une vignette pour l’ouvrir en plein écran (zoom + balayage).",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/modeles_rapports_page.dart",
+              "f00012",
+              "Appuie sur une vignette pour l’ouvrir en plein écran (zoom + balayage).",
+            ),
             style: GoogleFonts.fustat(
               fontSize: 14,
               height: 1.35,
@@ -98,7 +147,10 @@ class ModelesRapportsPage extends StatelessWidget {
             decoration: BoxDecoration(
               color: card,
               borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
+              border: Border.all(
+                color: accent.withValues(alpha: .22),
+                width: 0.8,
+              ),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withValues(alpha: .12),

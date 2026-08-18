@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaRecidivePage extends StatelessWidget {
   const PaRecidivePage({super.key});
@@ -22,8 +23,8 @@ class PaRecidivePage extends StatelessWidget {
         : const Color(0xFFF3F7FF);
 
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
 
     final Color lawRed = isDark
@@ -46,10 +47,18 @@ class PaRecidivePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La sanction',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+            "f00002",
+            'La sanction',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -63,7 +72,11 @@ class PaRecidivePage extends StatelessWidget {
         children: [
           // ===================== TITRE (UNE SEULE FOIS) =====================
           Text(
-            "La récidive",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+              "f00003",
+              "La récidive",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -74,20 +87,44 @@ class PaRecidivePage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Idée générale",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+              "f00004",
+              "Idée générale",
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                "La récidive est la principale cause qui permet au juge de dépasser le maximum normal de la peine. "
-                "Le délinquant, après avoir été condamné pour une première infraction, en commet une seconde.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00005",
+                      "La récidive est la principale cause qui permet au juge de dépasser le maximum normal de la peine. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00006",
+                      "Le délinquant, après avoir été condamné pour une première infraction, en commet une seconde.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La récidive suppose :\n"
-                "• une condamnation définitive passée en force de chose jugée (premier terme),\n"
-                "• une seconde infraction (second terme).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00007",
+                      "La récidive suppose :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00008",
+                      "• une condamnation définitive passée en force de chose jugée (premier terme),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00009",
+                      "• une seconde infraction (second terme).",
+                    ),
               ),
             ],
           ),
@@ -96,212 +133,554 @@ class PaRecidivePage extends StatelessWidget {
 
           // ===================== CHAPITRE 1 =====================
           _ConditionCard(
-            title: "Chapitre 1 — Les termes de la récidive",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+              "f00010",
+              "Chapitre 1 — Les termes de la récidive",
+            ),
             cardColor: card2,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                law("Articles 132-8 et suivants du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00011",
+                    "Articles 132-8 et suivants du Code pénal",
+                  ),
+                ),
                 t("."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "1.1 — Premier terme : une première condamnation",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00012",
+                  "1.1 — Premier terme : une première condamnation",
+                ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                "La première condamnation doit avoir le caractère d’une peine. "
-                "Ainsi, les sanctions administratives et les mesures de sûreté ne peuvent constituer le premier terme. "
-                "Il en est de même d’un acquittement ou d’une mesure de rééducation prise à l’encontre d’un mineur.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00013",
+                      "La première condamnation doit avoir le caractère d’une peine. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00014",
+                      "Ainsi, les sanctions administratives et les mesures de sûreté ne peuvent constituer le premier terme. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00015",
+                      "Il en est de même d’un acquittement ou d’une mesure de rééducation prise à l’encontre d’un mineur.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Sont prises en compte les peines encourues pour telle infraction et non les peines prononcées par le tribunal.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00016",
+                  "Sont prises en compte les peines encourues pour telle infraction et non les peines prononcées par le tribunal.",
+                ),
               ),
               const SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
                   t(
-                    "Sont prises en compte les condamnations prononcées par une juridiction pénale française ",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00017",
+                      "Sont prises en compte les condamnations prononcées par une juridiction pénale française ",
+                    ),
                   ),
-                  t("ou d’un État membre de l’Union européenne : "),
-                  law("article 132-23-1 du Code pénal"),
                   t(
-                    ". Quand la condamnation provient d’un État membre, la qualification est appréciée au regard de la loi française, ",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00018",
+                      "ou d’un État membre de l’Union européenne : ",
+                    ),
                   ),
-                  t("et les peines équivalentes sont retenues : "),
-                  law("article 132-23-2 du Code pénal"),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00019",
+                      "article 132-23-1 du Code pénal",
+                    ),
+                  ),
                   t(
-                    ". Les autres condamnations étrangères ne sont pas prises en considération.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00020",
+                      ". Quand la condamnation provient d’un État membre, la qualification est appréciée au regard de la loi française, ",
+                    ),
+                  ),
+                  t(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00021",
+                      "et les peines équivalentes sont retenues : ",
+                    ),
+                  ),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00022",
+                      "article 132-23-2 du Code pénal",
+                    ),
+                  ),
+                  t(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00023",
+                      ". Les autres condamnations étrangères ne sont pas prises en considération.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
 
-              const _Paragraph(
-                "La condamnation doit être définitive : elle doit être passée en force de chose jugée avant que la seconde infraction intervienne. "
-                "Dans le cas contraire, on se trouve en présence d’un concours réel d’infractions.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00024",
+                      "La condamnation doit être définitive : elle doit être passée en force de chose jugée avant que la seconde infraction intervienne. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00025",
+                      "Dans le cas contraire, on se trouve en présence d’un concours réel d’infractions.",
+                    ),
               ),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
                 t(
-                  "Dans un avis du 26 janvier 2009, la Cour de cassation estime qu’une condamnation avec sursis, réputée non avenue (non révoquée), ",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00026",
+                    "Dans un avis du 26 janvier 2009, la Cour de cassation estime qu’une condamnation avec sursis, réputée non avenue (non révoquée), ",
+                  ),
                 ),
-                t("peut constituer le premier terme d’une récidive. "),
+                t(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00027",
+                    "peut constituer le premier terme d’une récidive. ",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
                 t(
-                  "Une condamnation par le tribunal de police ou le tribunal correctionnel ne devient définitive qu’à l’expiration du délai d’appel du Procureur général, ",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00028",
+                    "Une condamnation par le tribunal de police ou le tribunal correctionnel ne devient définitive qu’à l’expiration du délai d’appel du Procureur général, ",
+                  ),
                 ),
                 t(
-                  "qui est de 20 jours à compter du prononcé de la décision : ",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00029",
+                    "qui est de 20 jours à compter du prononcé de la décision : ",
+                  ),
                 ),
-                law("article 505 du Code de procédure pénale"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00030",
+                    "article 505 du Code de procédure pénale",
+                  ),
+                ),
                 t("."),
               ]),
               const SizedBox(height: 10),
 
-              const _Paragraph(
-                "La condamnation doit encore être inscrite au casier judiciaire au moment de la commission de la seconde infraction. "
-                "Si elle a été effacée par une amnistie, elle ne peut plus servir de premier terme. "
-                "En revanche, en cas de grâce, la récidive peut être retenue (la grâce dispensant seulement d’exécuter la peine).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00031",
+                      "La condamnation doit encore être inscrite au casier judiciaire au moment de la commission de la seconde infraction. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00032",
+                      "Si elle a été effacée par une amnistie, elle ne peut plus servir de premier terme. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00033",
+                      "En revanche, en cas de grâce, la récidive peut être retenue (la grâce dispensant seulement d’exécuter la peine).",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("1.2 — Second terme : une infraction ultérieure"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00034",
+                  "1.2 — Second terme : une infraction ultérieure",
+                ),
+              ),
               const SizedBox(height: 6),
 
               _Paragraph.rich([
-                t("Le Code pénal prévoit quatre cas de récidive : "),
-                law("articles 132-8 à 132-11 du Code pénal"),
+                t(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00035",
+                    "Le Code pénal prévoit quatre cas de récidive : ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00036",
+                    "articles 132-8 à 132-11 du Code pénal",
+                  ),
+                ),
                 t("."),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("1.2.1 — Crime/délit puni de 10 ans → crime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00037",
+                  "1.2.1 — Crime/délit puni de 10 ans → crime",
+                ),
+              ),
               _Paragraph.rich([
-                law("Article 132-8 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00038",
+                    "Article 132-8 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : celui qui, condamné une première fois pour un crime ou un délit puni de 10 ans d’emprisonnement, commet ultérieurement un autre crime, est en état de récidive.",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00039",
+                    " : celui qui, condamné une première fois pour un crime ou un délit puni de 10 ans d’emprisonnement, commet ultérieurement un autre crime, est en état de récidive.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Le second terme doit être un crime."),
-              const _BulletPoint(
-                text:
-                    "Récidive générale : les infractions n’ont pas à être similaires.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00040",
+                  "Le second terme doit être un crime.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Récidive perpétuelle : pas de délai (tant que la première condamnation n’est pas effacée).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00041",
+                  "Récidive générale : les infractions n’ont pas à être similaires.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00042",
+                  "Récidive perpétuelle : pas de délai (tant que la première condamnation n’est pas effacée).",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("1.2.2 — Crime/délit puni de 10 ans → délit"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00043",
+                  "1.2.2 — Crime/délit puni de 10 ans → délit",
+                ),
+              ),
               _Paragraph.rich([
-                law("Article 132-9 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00044",
+                    "Article 132-9 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : celui qui, condamné une première fois pour un crime ou un délit puni de 10 ans d’emprisonnement, commet ultérieurement un nouveau délit, est en état de récidive.",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00045",
+                    " : celui qui, condamné une première fois pour un crime ou un délit puni de 10 ans d’emprisonnement, commet ultérieurement un nouveau délit, est en état de récidive.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text: "Récidive générale : pas nécessairement identique.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00046",
+                  "Récidive générale : pas nécessairement identique.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Récidive temporaire : la seconde infraction doit être commise dans un délai après l’expiration ou la prescription de la peine.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00047",
+                  "Récidive temporaire : la seconde infraction doit être commise dans un délai après l’expiration ou la prescription de la peine.",
+                ),
               ),
               const SizedBox(height: 6),
-              const _IntroBullet(
-                text:
-                    "Délai de 10 ans si le second délit est puni de 10 ans d’emprisonnement.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00048",
+                  "Délai de 10 ans si le second délit est puni de 10 ans d’emprisonnement.",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Délai de 5 ans si le second délit est puni d’une peine inférieure à 10 ans.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00049",
+                  "Délai de 5 ans si le second délit est puni d’une peine inférieure à 10 ans.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("1.2.3 — La récidive correctionnelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00050",
+                  "1.2.3 — La récidive correctionnelle",
+                ),
+              ),
               _Paragraph.rich([
-                law("Article 132-10 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00051",
+                    "Article 132-10 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : celui qui, déjà condamné définitivement pour un délit, commet dans le délai de 5 ans le même délit ou un délit assimilé, est récidiviste.",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00052",
+                    " : celui qui, déjà condamné définitivement pour un délit, commet dans le délai de 5 ans le même délit ou un délit assimilé, est récidiviste.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Temporaire (délai : 5 ans)."),
-              const _BulletPoint(
-                text: "Spéciale : délits identiques ou assimilés.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00053",
+                  "Temporaire (délai : 5 ans).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00054",
+                  "Spéciale : délits identiques ou assimilés.",
+                ),
               ),
               const SizedBox(height: 10),
 
               _NotaBox(
-                title: "Assimilations (exemples)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00055",
+                  "Assimilations (exemples)",
+                ),
                 bodySpans: [
                   t(
-                    "Le législateur a assimilé certains délits pour l’application de la récidive, notamment :\n",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00056",
+                      "Le législateur a assimilé certains délits pour l’application de la récidive, notamment :\n",
+                    ),
                   ),
                   t(
-                    "• vol, extorsion, chantage, escroquerie, abus de confiance : ",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00057",
+                      "• vol, extorsion, chantage, escroquerie, abus de confiance : ",
+                    ),
                   ),
-                  law("article 132-16 du Code pénal"),
-                  t("\n• agression sexuelle et atteintes sexuelles : "),
-                  law("article 132-16-1 du Code pénal"),
-                  t("\n• infractions liées à la conduite d’un VTM : "),
-                  law("article 132-16-2 du Code pénal"),
-                  t("\n• traite des êtres humains et proxénétisme : "),
-                  law("article 132-16-3 du Code pénal"),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00058",
+                      "article 132-16 du Code pénal",
+                    ),
+                  ),
                   t(
-                    "\n• violences volontaires et tout délit commis avec la circonstance aggravante de violences : ",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00059",
+                      "\n• agression sexuelle et atteintes sexuelles : ",
+                    ),
                   ),
-                  law("article 132-16-4 du Code pénal"),
-                  t("\n• recel et délit ayant procuré la chose : "),
-                  law("article 321-5 du Code pénal"),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00060",
+                      "article 132-16-1 du Code pénal",
+                    ),
+                  ),
+                  t(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00061",
+                      "\n• infractions liées à la conduite d’un VTM : ",
+                    ),
+                  ),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00062",
+                      "article 132-16-2 du Code pénal",
+                    ),
+                  ),
+                  t(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00063",
+                      "\n• traite des êtres humains et proxénétisme : ",
+                    ),
+                  ),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00064",
+                      "article 132-16-3 du Code pénal",
+                    ),
+                  ),
+                  t(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00065",
+                      "\n• violences volontaires et tout délit commis avec la circonstance aggravante de violences : ",
+                    ),
+                  ),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00066",
+                      "article 132-16-4 du Code pénal",
+                    ),
+                  ),
+                  t(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00067",
+                      "\n• recel et délit ayant procuré la chose : ",
+                    ),
+                  ),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00068",
+                      "article 321-5 du Code pénal",
+                    ),
+                  ),
                   t("."),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("1.2.4 — La récidive contraventionnelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00069",
+                  "1.2.4 — La récidive contraventionnelle",
+                ),
+              ),
               _Paragraph.rich([
-                law("Article 132-11 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00070",
+                    "Article 132-11 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : celui qui, déjà condamné définitivement pour une contravention de 5e classe, commet la même contravention, est récidiviste.",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00071",
+                    " : celui qui, déjà condamné définitivement pour une contravention de 5e classe, commet la même contravention, est récidiviste.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Spéciale : même contravention."),
-              const _BulletPoint(
-                text:
-                    "Temporaire : dans les 12 mois suivant l’expiration ou la prescription de la peine.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00072",
+                  "Spéciale : même contravention.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00073",
+                  "Temporaire : dans les 12 mois suivant l’expiration ou la prescription de la peine.",
+                ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 t(
-                  "Dans certains cas, la récidive d’une contravention de 5e classe constitue un délit : ",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00074",
+                    "Dans certains cas, la récidive d’une contravention de 5e classe constitue un délit : ",
+                  ),
                 ),
-                law("article 132-11 alinéa 2 du Code pénal"),
-                t(" (délai : 3 ans)."),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00075",
+                    "article 132-11 alinéa 2 du Code pénal",
+                  ),
+                ),
+                t(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00076",
+                    " (délai : 3 ans).",
+                  ),
+                ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("1.2.5 — Cas spéciaux"),
-              const _Paragraph(
-                "Il existe des exceptions au droit commun de la récidive : certains textes spéciaux écartent l’aggravation, "
-                "ou modifient les délais (ex. : infractions de chasse, délai de 12 mois au lieu de 5 ans pour les délits).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00077",
+                  "1.2.5 — Cas spéciaux",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00078",
+                      "Il existe des exceptions au droit commun de la récidive : certains textes spéciaux écartent l’aggravation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00079",
+                      "ou modifient les délais (ex. : infractions de chasse, délai de 12 mois au lieu de 5 ans pour les délits).",
+                    ),
               ),
             ],
           ),
@@ -310,43 +689,91 @@ class PaRecidivePage extends StatelessWidget {
 
           // ===================== CHAPITRE 2 =====================
           _ConditionCard(
-            title: "Chapitre 2 — Récidive et personnes morales",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+              "f00080",
+              "Chapitre 2 — Récidive et personnes morales",
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
                 t(
-                  "Le Code pénal a prévu la récidive pour les personnes morales (régime propre).",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00081",
+                    "Le Code pénal a prévu la récidive pour les personnes morales (régime propre).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                law("Article 132-12 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00082",
+                    "Article 132-12 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : récidive crime (ou délit assimilé) → crime (générale et perpétuelle).",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00083",
+                    " : récidive crime (ou délit assimilé) → crime (générale et perpétuelle).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                law("Article 132-13 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00084",
+                    "Article 132-13 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : crime (ou délit assimilé) → délit (générale et temporaire).",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00085",
+                    " : crime (ou délit assimilé) → délit (générale et temporaire).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                law("Article 132-14 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00086",
+                    "Article 132-14 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : délit → délit identique ou assimilé (spéciale et temporaire).",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00087",
+                    " : délit → délit identique ou assimilé (spéciale et temporaire).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                law("Article 132-15 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00088",
+                    "Article 132-15 du Code pénal",
+                  ),
+                ),
                 t(
-                  " : récidive contraventionnelle (5e classe, si le règlement l’a prévue).",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00089",
+                    " : récidive contraventionnelle (5e classe, si le règlement l’a prévue).",
+                  ),
                 ),
               ]),
             ],
@@ -356,43 +783,96 @@ class PaRecidivePage extends StatelessWidget {
 
           // ===================== CHAPITRE 3 =====================
           _ConditionCard(
-            title: "Chapitre 3 — Preuve : le casier judiciaire",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+              "f00090",
+              "Chapitre 3 — Preuve : le casier judiciaire",
+            ),
             cardColor: card2,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
                 t(
-                  "La preuve de la récidive repose principalement sur le casier judiciaire. ",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00091",
+                    "La preuve de la récidive repose principalement sur le casier judiciaire. ",
+                  ),
                 ),
                 t(
-                  "Le juge se fonde essentiellement sur les mentions du bulletin n°1.\n\n",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00092",
+                    "Le juge se fonde essentiellement sur les mentions du bulletin n°1.\n\n",
+                  ),
                 ),
-                t("Organisation et fonctionnement : "),
-                law("articles 768 et suivants du Code de procédure pénale"),
+                t(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00093",
+                    "Organisation et fonctionnement : ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00094",
+                    "articles 768 et suivants du Code de procédure pénale",
+                  ),
+                ),
                 t("."),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("3.1 — Les bulletins"),
-              const _BulletPoint(
-                text:
-                    "Bulletin n°1 : relevé intégral (réservé aux autorités judiciaires).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00095",
+                  "3.1 — Les bulletins",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Bulletin n°2 : relevé avec exclusions (selon les cas prévus).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00096",
+                  "Bulletin n°1 : relevé intégral (réservé aux autorités judiciaires).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Bulletin n°3 : extrait délivré à la personne concernée (infractions les plus graves).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00097",
+                  "Bulletin n°2 : relevé avec exclusions (selon les cas prévus).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00098",
+                  "Bulletin n°3 : extrait délivré à la personne concernée (infractions les plus graves).",
+                ),
               ),
 
               const SizedBox(height: 10),
-              const _SubTitle("3.3 — Utilisation par le juge"),
-              const _Paragraph(
-                "Les mentions du bulletin n°1 font preuve de la récidive. "
-                "Si l’intéressé conteste, le ministère public doit solliciter les copies des décisions auprès des greffes concernés.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00099",
+                  "3.3 — Utilisation par le juge",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00100",
+                      "Les mentions du bulletin n°1 font preuve de la récidive. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00101",
+                      "Si l’intéressé conteste, le ministère public doit solliciter les copies des décisions auprès des greffes concernés.",
+                    ),
               ),
             ],
           ),
@@ -401,40 +881,88 @@ class PaRecidivePage extends StatelessWidget {
 
           // ===================== CHAPITRE 4 =====================
           _ConditionCard(
-            title: "Chapitre 4 — Effets de la récidive",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+              "f00102",
+              "Chapitre 4 — Effets de la récidive",
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             children: [
-              const _SubTitle("4.1 — Personnes physiques"),
-              const _BulletPoint(
-                text:
-                    "Art. 132-8 : aggravation pouvant conduire jusqu’à la perpétuité selon le maximum prévu.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00103",
+                  "4.1 — Personnes physiques",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Art. 132-9 : doublement du maximum (emprisonnement et amende).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00104",
+                  "Art. 132-8 : aggravation pouvant conduire jusqu’à la perpétuité selon le maximum prévu.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Art. 132-10 : doublement des peines encourues (emprisonnement / amende).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00105",
+                  "Art. 132-9 : doublement du maximum (emprisonnement et amende).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Art. 132-11 : amende maximale portée à 3 000 € (hors cas où la récidive devient un délit).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00106",
+                  "Art. 132-10 : doublement des peines encourues (emprisonnement / amende).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00107",
+                  "Art. 132-11 : amende maximale portée à 3 000 € (hors cas où la récidive devient un délit).",
+                ),
               ),
 
               const SizedBox(height: 10),
 
-              const _SubTitle("4.2 — Personnes morales"),
-              const _Paragraph(
-                "Principe : l’amende encourue est augmentée (souvent doublée, voire x10 en matière contraventionnelle), "
-                "et les peines complémentaires applicables peuvent être prononcées selon les textes.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                  "f00108",
+                  "4.2 — Personnes morales",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00109",
+                      "Principe : l’amende encourue est augmentée (souvent doublée, voire x10 en matière contraventionnelle), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00110",
+                      "et les peines complémentaires applicables peuvent être prononcées selon les textes.",
+                    ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                t("Peines complémentaires possibles (personnes morales) : "),
-                law("article 131-39 du Code pénal"),
+                t(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00111",
+                    "Peines complémentaires possibles (personnes morales) : ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                    "f00112",
+                    "article 131-39 du Code pénal",
+                  ),
+                ),
                 t("."),
               ]),
 
@@ -444,7 +972,11 @@ class PaRecidivePage extends StatelessWidget {
                 title: "NOTA",
                 bodySpans: [
                   t(
-                    "Le délai de commission de la nouvelle infraction est calculé à compter de l’expiration ou de la prescription de la peine.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart",
+                      "f00113",
+                      "Le délai de commission de la nouvelle infraction est calculé à compter de l’expiration ou de la prescription de la peine.",
+                    ),
                   ),
                 ],
               ),

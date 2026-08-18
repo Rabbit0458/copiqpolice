@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
   const PriseServiceRisqueEvasionFuitePage({super.key});
@@ -56,10 +57,18 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Prise de service",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+            "f00002",
+            "Prise de service",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Maîtriser le risque d’évasion et de fuite",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00003",
+              "Maîtriser le risque d’évasion et de fuite",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,38 +99,62 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // ✅ Références (élément légal) en haut
           _ConditionCard(
-            title: "Références (élément légal)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00004",
+              "Références (élément légal)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Usage des menottes (principes) — "),
                 TextSpan(
-                  text: "article 803 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                    "f00005",
+                    "Usage des menottes (principes) — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : le menottage n’est pas automatique et doit être justifié (dangerosité / risque de fuite).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                    "f00006",
+                    "article 803 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                    "f00007",
+                    " : le menottage n’est pas automatique et doit être justifié (dangerosité / risque de fuite).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Devoir de protection et de dignité — "),
                 TextSpan(
-                  text: "article R. 434-17 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                    "f00008",
+                    "Devoir de protection et de dignité — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : vigilance et mesures adaptées pour préserver la sécurité des agents et des personnes privées de liberté.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                    "f00009",
+                    "article R. 434-17 du Code de la sécurité intérieure",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                    "f00010",
+                    " : vigilance et mesures adaptées pour préserver la sécurité des agents et des personnes privées de liberté.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -125,8 +162,11 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
                 title: "NOTE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette page synthétise des principes opérationnels de sécurité (type mémo). Elle ne remplace pas les instructions locales ni l’appréciation hiérarchique.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00011",
+                      "Cette page synthétise des principes opérationnels de sécurité (type mémo). Elle ne remplace pas les instructions locales ni l’appréciation hiérarchique.",
+                    ),
                   ),
                 ],
               ),
@@ -137,16 +177,36 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // De quoi s'agit-il ?
           _ConditionCard(
-            title: "De quoi s’agit-il ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00012",
+              "De quoi s’agit-il ?",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "De nombreux incidents (évasions, fuites, tentatives) rappellent les risques liés à la privation de liberté "
-                "et la nécessité de maintenir des principes généraux de sécurité.\n\n"
-                "Les évasions et fuites créent un danger pour les agents et pour la personne surveillée, "
-                "et nuisent au bon déroulement des investigations et des procédures.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00013",
+                      "De nombreux incidents (évasions, fuites, tentatives) rappellent les risques liés à la privation de liberté ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00014",
+                      "et la nécessité de maintenir des principes généraux de sécurité.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00015",
+                      "Les évasions et fuites créent un danger pour les agents et pour la personne surveillée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00016",
+                      "et nuisent au bon déroulement des investigations et des procédures.",
+                    ),
               ),
             ],
           ),
@@ -155,21 +215,48 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // Objectif
           _ConditionCard(
-            title: "Objectif opérationnel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00017",
+              "Objectif opérationnel",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Réduire le risque d’évasion/fuite en appliquant une vigilance continue et des règles simples "
-                "lors des déplacements et des transports, avec une attention partagée par tous (agents de surveillance + occupants des bureaux).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00018",
+                      "Réduire le risque d’évasion/fuite en appliquant une vigilance continue et des règles simples ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00019",
+                      "lors des déplacements et des transports, avec une attention partagée par tous (agents de surveillance + occupants des bureaux).",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Sécurité des agents et du public."),
-              _BulletPoint(text: "Sécurité de la personne privée de liberté."),
               _BulletPoint(
-                text:
-                    "Protection des procédures (judiciaires et administratives).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00020",
+                  "Sécurité des agents et du public.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00021",
+                  "Sécurité de la personne privée de liberté.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00022",
+                  "Protection des procédures (judiciaires et administratives).",
+                ),
               ),
             ],
           ),
@@ -178,33 +265,69 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // I — Vigilance constante
           _ConditionCard(
-            title: "I — Vigilance constante (le réflexe n°1)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00023",
+              "I — Vigilance constante (le réflexe n°1)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Partage des informations de dangerosité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00024",
+                  "A) Partage des informations de dangerosité",
+                ),
+              ),
               _Paragraph(
-                "Les informations sur l’agressivité ou le degré de dangerosité doivent être consignées "
-                "et portées à la connaissance de tous les agents en contact avec la personne.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00025",
+                      "Les informations sur l’agressivité ou le degré de dangerosité doivent être consignées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00026",
+                      "et portées à la connaissance de tous les agents en contact avec la personne.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "ATTENTION",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Une attitude passive et calme n’est pas un indicateur fiable.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00027",
+                      "Une attitude passive et calme n’est pas un indicateur fiable.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Menottage : ni automatique, ni oublié"),
-              _BulletPoint(text: "Le menottage ne doit pas être systématique."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00028",
+                  "B) Menottage : ni automatique, ni oublié",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Il s’applique aux personnes dangereuses pour elles-mêmes ou pour autrui, ou susceptibles de prendre la fuite.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00029",
+                  "Le menottage ne doit pas être systématique.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00030",
+                  "Il s’applique aux personnes dangereuses pour elles-mêmes ou pour autrui, ou susceptibles de prendre la fuite.",
+                ),
               ),
             ],
           ),
@@ -213,43 +336,92 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // II — Déplacements dans les locaux
           _ConditionCard(
-            title: "II — Déplacements dans les locaux (zone à risque)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00031",
+              "II — Déplacements dans les locaux (zone à risque)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les risques d’évasion sont accrus lors de tout déplacement : entrées/sorties des locaux, toilettes, "
-                "bureaux des enquêteurs, parking, cour du commissariat…",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00032",
+                      "Les risques d’évasion sont accrus lors de tout déplacement : entrées/sorties des locaux, toilettes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00033",
+                      "bureaux des enquêteurs, parking, cour du commissariat…",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Positionnement et progression"),
-              _IntroBullet(
-                text:
-                    "Placer la personne du côté opposé aux ouvertures (portes et fenêtres).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00034",
+                  "A) Positionnement et progression",
+                ),
               ),
               _IntroBullet(
-                text: "Dans les cages d’escalier : progresser côté mur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00035",
+                  "Placer la personne du côté opposé aux ouvertures (portes et fenêtres).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Se positionner derrière la personne lors de la conduite.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00036",
+                  "Dans les cages d’escalier : progresser côté mur.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00037",
+                  "Se positionner derrière la personne lors de la conduite.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Sécurisation des ouvertures et de l’environnement"),
-              _IntroBullet(
-                text:
-                    "Les agents en charge de la surveillance et les occupants des bureaux s’assurent que les ouvertures sont fermées et verrouillées.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00038",
+                  "B) Sécurisation des ouvertures et de l’environnement",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Rester vigilant sur les objets pouvant être projetés (presse-papier, cadres, bouteilles) ou utilisés comme arme (coupe-papier, ciseaux, briquet, stylo…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00039",
+                  "Les agents en charge de la surveillance et les occupants des bureaux s’assurent que les ouvertures sont fermées et verrouillées.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00040",
+                  "Rester vigilant sur les objets pouvant être projetés (presse-papier, cadres, bouteilles) ou utilisés comme arme (coupe-papier, ciseaux, briquet, stylo…).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Dispositifs de sécurité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00041",
+                  "C) Dispositifs de sécurité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Contrôler régulièrement : fermeture des cellules, dispositifs d’alerte, vidéosurveillance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00042",
+                  "Contrôler régulièrement : fermeture des cellules, dispositifs d’alerte, vidéosurveillance.",
+                ),
               ),
             ],
           ),
@@ -258,42 +430,84 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // III — Transports hors locaux
           _ConditionCard(
-            title: "III — Transports hors des locaux (surveillance renforcée)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00043",
+              "III — Transports hors des locaux (surveillance renforcée)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le risque d’évasion augmente lors des perquisitions, conduites en milieu hospitalier, "
-                "présentations à magistrat, ou en milieu carcéral.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00044",
+                      "Le risque d’évasion augmente lors des perquisitions, conduites en milieu hospitalier, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00045",
+                      "présentations à magistrat, ou en milieu carcéral.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) En véhicule"),
-              _BulletPoint(
-                text:
-                    "La personne est assise à l’arrière, jamais derrière le conducteur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00046",
+                  "A) En véhicule",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dans la mesure du possible : positionnée entre deux agents, ceinture de sécurité bouclée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00047",
+                  "La personne est assise à l’arrière, jamais derrière le conducteur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Équipage de 2 agents : activer la « sécurité enfants » de la portière côté interpellé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00048",
+                  "Dans la mesure du possible : positionnée entre deux agents, ceinture de sécurité bouclée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00049",
+                  "Équipage de 2 agents : activer la « sécurité enfants » de la portière côté interpellé.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) À pied"),
-              _BulletPoint(
-                text:
-                    "Le policier se positionne derrière la personne afin que l’arme ne soit pas accessible.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00050",
+                  "B) À pied",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Menottes dans le dos : un agent droitier maintient par la main gauche (inverse pour un agent gaucher).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00051",
+                  "Le policier se positionne derrière la personne afin que l’arme ne soit pas accessible.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le recours à une chaîne d’accompagnement peut être envisagé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00052",
+                  "Menottes dans le dos : un agent droitier maintient par la main gauche (inverse pour un agent gaucher).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00053",
+                  "Le recours à une chaîne d’accompagnement peut être envisagé.",
+                ),
               ),
             ],
           ),
@@ -302,29 +516,49 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // Checklist
           _ConditionCard(
-            title: "Check-list express (à appliquer à chaque situation)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00054",
+              "Check-list express (à appliquer à chaque situation)",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Les infos de dangerosité sont-elles connues de tous ceux qui vont être en contact ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00055",
+                  "Les infos de dangerosité sont-elles connues de tous ceux qui vont être en contact ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Portes/fenêtres/verrouillage : tout est sécurisé avant et pendant le passage ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00056",
+                  "Portes/fenêtres/verrouillage : tout est sécurisé avant et pendant le passage ?",
+                ),
               ),
               _BulletPoint(
-                text: "Objets à risque dans la zone : retirés/écartés ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00057",
+                  "Objets à risque dans la zone : retirés/écartés ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Positionnement : personne côté opposé aux ouvertures, progression côté mur, agent derrière ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00058",
+                  "Positionnement : personne côté opposé aux ouvertures, progression côté mur, agent derrière ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transport véhicule : arrière, jamais derrière conducteur, ceinture bouclée, sécurité enfant si besoin ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00059",
+                  "Transport véhicule : arrière, jamais derrière conducteur, ceinture bouclée, sécurité enfant si besoin ?",
+                ),
               ),
             ],
           ),
@@ -333,22 +567,41 @@ class PriseServiceRisqueEvasionFuitePage extends StatelessWidget {
 
           // Résumé
           _ConditionCard(
-            title: "En résumé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+              "f00060",
+              "En résumé",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La surveillance des personnes privées de liberté requiert une vigilance de tous les instants : "
-                "sécurité des agents, bon déroulement des procédures et attente légitime des victimes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00061",
+                      "La surveillance des personnes privées de liberté requiert une vigilance de tous les instants : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00062",
+                      "sécurité des agents, bon déroulement des procédures et attente légitime des victimes.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "BON RÉFLEXE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                  "f00063",
+                  "BON RÉFLEXE",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Lorsqu’un individu est libéré, son identité est systématiquement vérifiée afin d’éviter toute confusion sur la personne.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_risque_evasion_fuite_page.dart",
+                      "f00064",
+                      "Lorsqu’un individu est libéré, son identité est systématiquement vérifiée afin d’éviter toute confusion sur la personne.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],

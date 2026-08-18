@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuditionSuspectLibrePage extends StatelessWidget {
   const AuditionSuspectLibrePage({super.key});
@@ -51,7 +52,11 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           onPressed: () => Navigator.of(context).maybePop(),
         ),
         title: Text(
-          "Audition suspect libre",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+            "f00001",
+            "Audition suspect libre",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -64,7 +69,11 @@ class AuditionSuspectLibrePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            "Canevas de procès-verbal d’audition du suspect libre",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00002",
+              "Canevas de procès-verbal d’audition du suspect libre",
+            ),
             style: GoogleFonts.fustat(
               fontSize: 21,
               fontWeight: FontWeight.w900,
@@ -75,15 +84,29 @@ class AuditionSuspectLibrePage extends StatelessWidget {
 
           /// ✅ ÉLÉMENT LÉGAL EN HAUT
           _ConditionCard(
-            title: "Cadre juridique et visas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00003",
+              "Cadre juridique et visas",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: "Audition réalisée dans le cadre d’une "),
                 TextSpan(
-                  text: "enquête de flagrance",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00004",
+                    "Audition réalisée dans le cadre d’une ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00005",
+                    "enquête de flagrance",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
@@ -91,7 +114,11 @@ class AuditionSuspectLibrePage extends StatelessWidget {
                 ),
                 const TextSpan(text: " ou "),
                 TextSpan(
-                  text: "enquête préliminaire",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00006",
+                    "enquête préliminaire",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
@@ -100,27 +127,40 @@ class AuditionSuspectLibrePage extends StatelessWidget {
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
-                TextSpan(text: "Assistance de l’avocat : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "articles du Code de procédure pénale relatifs à l’audition du suspect libre",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00007",
+                    "Assistance de l’avocat : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00008",
+                    "articles du Code de procédure pénale relatifs à l’audition du suspect libre",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph.rich([
-                TextSpan(text: "Majeur protégé (le cas échéant) : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article 706-112-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00009",
+                    "Majeur protégé (le cas échéant) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00010",
+                    "article 706-112-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -130,15 +170,31 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 — Lieu de rédaction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00011",
+              "1 — Lieu de rédaction",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Mentionner l’endroit exact où se déroule l’audition. "
-                "L’audition peut se tenir au service ou dans tout autre lieu "
-                "(autre service, hôpital, maison d’arrêt, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00012",
+                      "Mentionner l’endroit exact où se déroule l’audition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00013",
+                      "L’audition peut se tenir au service ou dans tout autre lieu ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00014",
+                      "(autre service, hôpital, maison d’arrêt, etc.).",
+                    ),
               ),
             ],
           ),
@@ -146,20 +202,42 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2 — Instructions et hiérarchie",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00015",
+              "2 — Instructions et hiérarchie",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Flagrance"),
               _Paragraph(
-                "En flagrant délit, l’agent de police judiciaire agit "
-                "conformément aux instructions reçues de l’officier de police judiciaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00016",
+                      "En flagrant délit, l’agent de police judiciaire agit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00017",
+                      "conformément aux instructions reçues de l’officier de police judiciaire.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Préliminaire"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                  "f00018",
+                  "Préliminaire",
+                ),
+              ),
               _Paragraph(
-                "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                  "f00019",
+                  "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                ),
               ),
             ],
           ),
@@ -167,15 +245,31 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3 — Assistants éventuels",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00020",
+              "3 — Assistants éventuels",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur peut se faire assister d’un collègue. "
-                "Cette assistance doit être mentionnée clairement "
-                "(grade, nom, service).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00021",
+                      "Le rédacteur peut se faire assister d’un collègue. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00022",
+                      "Cette assistance doit être mentionnée clairement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00023",
+                      "(grade, nom, service).",
+                    ),
               ),
             ],
           ),
@@ -183,15 +277,31 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "4 — Présence de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00024",
+              "4 — Présence de l’avocat",
+            ),
             cardColor: cardVigil,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucun délai d’attente n’est prévu. "
-                "Le suspect peut se présenter accompagné d’un avocat "
-                "et conserve la possibilité de quitter les lieux à tout moment.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00025",
+                      "Aucun délai d’attente n’est prévu. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00026",
+                      "Le suspect peut se présenter accompagné d’un avocat ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00027",
+                      "et conserve la possibilité de quitter les lieux à tout moment.",
+                    ),
               ),
             ],
           ),
@@ -199,29 +309,45 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "5 — Mineur : représentant légal ou adulte approprié",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00028",
+              "5 — Mineur : représentant légal ou adulte approprié",
+            ),
             cardColor: cardVigil,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le mineur peut être accompagné lors de l’audition conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00029",
+                    "Le mineur peut être accompagné lors de l’audition conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L.311-1 du CJPM",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00030",
+                    "l’article L.311-1 du CJPM",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                "L’audition peut débuter en leur absence à l’issue d’un délai "
-                "de deux heures à compter de leur invitation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00031",
+                      "L’audition peut débuter en leur absence à l’issue d’un délai ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00032",
+                      "de deux heures à compter de leur invitation.",
+                    ),
               ),
             ],
           ),
@@ -229,14 +355,26 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "6 — Identité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00033",
+              "6 — Identité",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Recueillir et mentionner les éléments essentiels d’identité "
-                "(état civil, adresse).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00034",
+                      "Recueillir et mentionner les éléments essentiels d’identité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00035",
+                      "(état civil, adresse).",
+                    ),
               ),
             ],
           ),
@@ -244,27 +382,53 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "7 — Déclarations et questions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00036",
+              "7 — Déclarations et questions",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le suspect s’exprime librement sur les faits reprochés. "
-                "Ses propos sont retranscrits à la première personne. "
-                "L’audition ne doit être ni subjective, ni dirigée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00037",
+                      "Le suspect s’exprime librement sur les faits reprochés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00038",
+                      "Ses propos sont retranscrits à la première personne. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00039",
+                      "L’audition ne doit être ni subjective, ni dirigée.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "En cas d’aveux : préciser Heure, Lieu et Motif des faits (H.L.M.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                  "f00040",
+                  "En cas d’aveux : préciser Heure, Lieu et Motif des faits (H.L.M.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les questions servent à préciser, rectifier ou confronter aux contradictions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                  "f00041",
+                  "Les questions servent à préciser, rectifier ou confronter aux contradictions.",
+                ),
               ),
               _BulletPoint(
-                text: "Présentation éventuelle des objets ou documents saisis.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                  "f00042",
+                  "Présentation éventuelle des objets ou documents saisis.",
+                ),
               ),
             ],
           ),
@@ -272,19 +436,39 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "8 — Clôture et annexes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00043",
+              "8 — Clôture et annexes",
+            ),
             cardColor: cardVigil,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Mentionner l’heure de fin d’audition. "
-                "Conclure par une formule indiquant aveux ou persistance de la négation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00044",
+                      "Mentionner l’heure de fin d’audition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00045",
+                      "Conclure par une formule indiquant aveux ou persistance de la négation.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les observations écrites de l’avocat, le cas échéant, "
-                "sont jointes en annexe au procès-verbal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00046",
+                      "Les observations écrites de l’avocat, le cas échéant, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                      "f00047",
+                      "sont jointes en annexe au procès-verbal.",
+                    ),
               ),
             ],
           ),
@@ -292,7 +476,11 @@ class AuditionSuspectLibrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Aperçu du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+              "f00048",
+              "Aperçu du canevas",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
@@ -560,9 +748,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -627,8 +813,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+        "f00049",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+        "f00050",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -801,7 +995,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                    "f00051",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -870,7 +1068,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_libre_page.dart",
+                  "f00052",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -898,7 +1100,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -933,7 +1137,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

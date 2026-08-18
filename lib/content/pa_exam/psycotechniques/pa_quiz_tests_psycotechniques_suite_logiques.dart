@@ -708,6 +708,15 @@ class _PaQuizPsycotechniquesSuitesLogiquesState
     }
   }
 
+  Future<void> _closeQuiz() async {
+    // Aucun résultat à sauvegarder tant que la série n'a pas démarré.
+    if (showDifficultyScreen || showIntroScreen || currentQuestion == null) {
+      if (mounted) Navigator.maybePop(context);
+      return;
+    }
+    await stopSeries();
+  }
+
   Future<void> _reportCurrentQuestion() async {
     if (currentQuestion == null || isSaving) return;
 
@@ -1042,284 +1051,288 @@ class _PaQuizPsycotechniquesSuitesLogiquesState
               children: [
                 Positioned.fill(child: _QuizBackdrop(isDark: isDark)),
                 Scaffold(
-              backgroundColor: Colors.transparent,
-              appBar: AppBar(
-                backgroundColor: Colors.transparent,
-                elevation: 0,
-                scrolledUnderElevation: 0,
-                leading: IconButton(
-                  icon: Icon(Icons.close_rounded, color: textCol),
-                  onPressed: () => Navigator.maybePop(context),
-                  tooltip: 'Fermer',
-                ),
-                actions: [
-                  if (!showDifficultyScreen && !showIntroScreen)
-                    Padding(
-                      padding: const EdgeInsets.only(right: 16),
-                      child: _TimerRing(
-                        timer: timerController,
-                        durationSeconds: questionDuration,
-                        timerColorBuilder: _getTimerColor,
-                        border: _border(context),
-                      ),
+                  backgroundColor: Colors.transparent,
+                  appBar: AppBar(
+                    backgroundColor: Colors.transparent,
+                    elevation: 0,
+                    scrolledUnderElevation: 0,
+                    leading: IconButton(
+                      icon: Icon(Icons.close_rounded, color: textCol),
+                      onPressed: _closeQuiz,
+                      tooltip: 'Fermer',
                     ),
-                ],
-              ),
-              body: SafeArea(
-                top: false,
-                child: isLoading
-                    ? const Center(child: CircularProgressIndicator())
-                    : loadFailed
-                    ? _FatalState(
-                        isDark: isDark,
-                        title: 'Aucune question chargée',
-                        message:
-                            'Vérifie la table tests_psyco_suite_logique, les policies et les colonnes sequence_text / options / answer.',
-                        onRetry: () async {
-                          setState(() {
-                            isLoading = true;
-                            loadFailed = false;
-                          });
-                          await loadQuestions();
-                        },
-                      )
-                    : LayoutBuilder(
-                        builder: (context, _) {
-                          return Stack(
-                            fit: StackFit.expand,
-                            clipBehavior: Clip.none,
-                            children: [
-                              SizedBox.expand(
-                                child: Column(
-                                  children: [
-                                    if (!showDifficultyScreen &&
-                                        !showIntroScreen)
-                                      Padding(
-                                        padding: const EdgeInsets.fromLTRB(
-                                          20,
-                                          0,
-                                          20,
-                                          12,
-                                        ),
-                                        child: _TopProgressBar(
-                                          index: currentIndex <= 0
-                                              ? 0
-                                              : currentIndex - 1,
-                                          total:
-                                              availableForSelectedDifficulty <=
-                                                  0
-                                              ? 1
-                                              : availableForSelectedDifficulty,
-                                          accent: isDark
-                                              ? _Brand.white
-                                              : _Brand.accent,
-                                        ),
-                                      ),
-                                    Expanded(
-                                      child: AnimatedSwitcher(
-                                        duration: const Duration(
-                                          milliseconds: 250,
-                                        ),
-                                        child:
-                                            (!showDifficultyScreen &&
-                                                !showIntroScreen &&
-                                                currentQuestion != null)
-                                            ? Padding(
-                                                key: ValueKey(
-                                                  currentQuestion!.id,
-                                                ),
-                                                padding:
-                                                    const EdgeInsets.fromLTRB(
-                                                      20,
-                                                      8,
-                                                      20,
-                                                      0,
-                                                    ),
-                                                child: _QuestionCard(
-                                                  question: currentQuestion!,
-                                                  options:
-                                                      currentQuestion!.options,
-                                                  selected: selectedAnswer,
-                                                  onSelect: (value) {
-                                                    if (answerLocked) return;
-                                                    setState(
-                                                      () => selectedAnswer =
-                                                          value,
-                                                    );
-                                                  },
-                                                  locked: answerLocked,
-                                                  showOutcome: showResult,
-                                                  isCorrect: isCorrect,
-                                                  // Cet écran n'a qu'une page à
-                                                  // la fois : la question
-                                                  // affichée est donc toujours
-                                                  // celle qu'on regarde.
-                                                  estActive: true,
-                                                  pulse: pulseController,
-                                                  // La réserve ajoutait jusqu'à
-                                                  // 240 px de vide sous la carte
-                                                  // pour loger la croix
-                                                  // flottante. Seule la barre de
-                                                  // boutons est à compenser.
-                                                  bottomSafeInset:
-                                                      bottomBarReserved,
-                                                ),
-                                              )
-                                            : const SizedBox.shrink(),
-                                      ),
-                                    ),
-                                    if (!showDifficultyScreen &&
-                                        !showIntroScreen)
-                                      SafeArea(
-                                        top: false,
-                                        minimum: const EdgeInsets.fromLTRB(
-                                          20,
-                                          8,
-                                          20,
-                                          16,
-                                        ),
-                                        child: Column(
-                                          children: [
-                                            Center(
-                                              child: TextButton.icon(
-                                                onPressed:
-                                                    currentQuestion == null
-                                                    ? null
-                                                    : _reportCurrentQuestion,
-                                                icon: Icon(
-                                                  Icons.flag_outlined,
-                                                  size: 16,
-                                                  color: _textSecondary(
-                                                    context,
-                                                  ),
-                                                ),
-                                                label: Text(
-                                                  'Signaler la question',
-                                                  style: TextStyle(
-                                                    color: _textSecondary(
-                                                      context,
-                                                    ),
-                                                    fontWeight: FontWeight.w700,
-                                                    decoration:
-                                                        TextDecoration.none,
-                                                  ),
-                                                ),
-                                                style: TextButton.styleFrom(
-                                                  minimumSize:
-                                                      const Size.fromHeight(
-                                                        kBottomReportHeight,
-                                                      ),
-                                                  padding:
-                                                      const EdgeInsets.symmetric(
-                                                        horizontal: 12,
-                                                        vertical: 4,
-                                                      ),
-                                                ),
-                                              ),
+                    actions: [
+                      if (!showDifficultyScreen && !showIntroScreen)
+                        Padding(
+                          padding: const EdgeInsets.only(right: 16),
+                          child: _TimerRing(
+                            timer: timerController,
+                            durationSeconds: questionDuration,
+                            timerColorBuilder: _getTimerColor,
+                            border: _border(context),
+                          ),
+                        ),
+                    ],
+                  ),
+                  body: SafeArea(
+                    top: false,
+                    child: isLoading
+                        ? const Center(child: CircularProgressIndicator())
+                        : loadFailed
+                        ? _FatalState(
+                            isDark: isDark,
+                            title: 'Aucune question chargée',
+                            message:
+                                'Vérifie la table tests_psyco_suite_logique, les policies et les colonnes sequence_text / options / answer.',
+                            onRetry: () async {
+                              setState(() {
+                                isLoading = true;
+                                loadFailed = false;
+                              });
+                              await loadQuestions();
+                            },
+                          )
+                        : LayoutBuilder(
+                            builder: (context, _) {
+                              return Stack(
+                                fit: StackFit.expand,
+                                clipBehavior: Clip.none,
+                                children: [
+                                  SizedBox.expand(
+                                    child: Column(
+                                      children: [
+                                        if (!showDifficultyScreen &&
+                                            !showIntroScreen)
+                                          Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                              20,
+                                              0,
+                                              20,
+                                              12,
                                             ),
-                                            const SizedBox(height: 8),
-                                            Row(
+                                            child: _TopProgressBar(
+                                              index: currentIndex <= 0
+                                                  ? 0
+                                                  : currentIndex - 1,
+                                              total:
+                                                  availableForSelectedDifficulty <=
+                                                      0
+                                                  ? 1
+                                                  : availableForSelectedDifficulty,
+                                              accent: isDark
+                                                  ? _Brand.white
+                                                  : _Brand.accent,
+                                            ),
+                                          ),
+                                        Expanded(
+                                          child: AnimatedSwitcher(
+                                            duration: const Duration(
+                                              milliseconds: 250,
+                                            ),
+                                            child:
+                                                (!showDifficultyScreen &&
+                                                    !showIntroScreen &&
+                                                    currentQuestion != null)
+                                                ? Padding(
+                                                    key: ValueKey(
+                                                      currentQuestion!.id,
+                                                    ),
+                                                    padding:
+                                                        const EdgeInsets.fromLTRB(
+                                                          20,
+                                                          8,
+                                                          20,
+                                                          0,
+                                                        ),
+                                                    child: _QuestionCard(
+                                                      question:
+                                                          currentQuestion!,
+                                                      options: currentQuestion!
+                                                          .options,
+                                                      selected: selectedAnswer,
+                                                      onSelect: (value) {
+                                                        if (answerLocked)
+                                                          return;
+                                                        setState(
+                                                          () => selectedAnswer =
+                                                              value,
+                                                        );
+                                                      },
+                                                      locked: answerLocked,
+                                                      showOutcome: showResult,
+                                                      isCorrect: isCorrect,
+                                                      // Cet écran n'a qu'une page à
+                                                      // la fois : la question
+                                                      // affichée est donc toujours
+                                                      // celle qu'on regarde.
+                                                      estActive: true,
+                                                      pulse: pulseController,
+                                                      // La réserve ajoutait jusqu'à
+                                                      // 240 px de vide sous la carte
+                                                      // pour loger la croix
+                                                      // flottante. Seule la barre de
+                                                      // boutons est à compenser.
+                                                      bottomSafeInset:
+                                                          bottomBarReserved,
+                                                    ),
+                                                  )
+                                                : const SizedBox.shrink(),
+                                          ),
+                                        ),
+                                        if (!showDifficultyScreen &&
+                                            !showIntroScreen)
+                                          SafeArea(
+                                            top: false,
+                                            minimum: const EdgeInsets.fromLTRB(
+                                              20,
+                                              8,
+                                              20,
+                                              16,
+                                            ),
+                                            child: Column(
                                               children: [
-                                                Expanded(
-                                                  child: SizedBox(
-                                                    height: kButtonHeight,
-                                                    child: _PrimaryButton(
-                                                      label: !showResult
-                                                          ? 'Valider'
-                                                          : 'Suivant',
-                                                      onTap: !showResult
-                                                          ? (selectedAnswer ==
-                                                                    null
-                                                                ? null
-                                                                : () => answer(
-                                                                    selectedAnswer!,
-                                                                  ))
-                                                          : () {
-                                                              if (consecutiveAfkTimeouts >=
-                                                                  afkStopLimit) {
-                                                                endGame(
-                                                                  autoStoppedByAfk:
-                                                                      true,
-                                                                );
-                                                                return;
-                                                              }
-                                                              currentIndex =
-                                                                  totalAnswers +
-                                                                  1;
-                                                              questionSwapController
-                                                                  .reverse(
-                                                                    from: 1,
-                                                                  );
-                                                              Future.delayed(
-                                                                const Duration(
-                                                                  milliseconds:
-                                                                      90,
-                                                                ),
-                                                                () {
-                                                                  if (!mounted) {
+                                                Center(
+                                                  child: TextButton.icon(
+                                                    onPressed:
+                                                        currentQuestion == null
+                                                        ? null
+                                                        : _reportCurrentQuestion,
+                                                    icon: Icon(
+                                                      Icons.flag_outlined,
+                                                      size: 16,
+                                                      color: _textSecondary(
+                                                        context,
+                                                      ),
+                                                    ),
+                                                    label: Text(
+                                                      'Signaler la question',
+                                                      style: TextStyle(
+                                                        color: _textSecondary(
+                                                          context,
+                                                        ),
+                                                        fontWeight:
+                                                            FontWeight.w700,
+                                                        decoration:
+                                                            TextDecoration.none,
+                                                      ),
+                                                    ),
+                                                    style: TextButton.styleFrom(
+                                                      minimumSize:
+                                                          const Size.fromHeight(
+                                                            kBottomReportHeight,
+                                                          ),
+                                                      padding:
+                                                          const EdgeInsets.symmetric(
+                                                            horizontal: 12,
+                                                            vertical: 4,
+                                                          ),
+                                                    ),
+                                                  ),
+                                                ),
+                                                const SizedBox(height: 8),
+                                                Row(
+                                                  children: [
+                                                    Expanded(
+                                                      child: SizedBox(
+                                                        height: kButtonHeight,
+                                                        child: _PrimaryButton(
+                                                          label: !showResult
+                                                              ? 'Valider'
+                                                              : 'Suivant',
+                                                          onTap: !showResult
+                                                              ? (selectedAnswer ==
+                                                                        null
+                                                                    ? null
+                                                                    : () => answer(
+                                                                        selectedAnswer!,
+                                                                      ))
+                                                              : () {
+                                                                  if (consecutiveAfkTimeouts >=
+                                                                      afkStopLimit) {
+                                                                    endGame(
+                                                                      autoStoppedByAfk:
+                                                                          true,
+                                                                    );
                                                                     return;
                                                                   }
-                                                                  nextQuestion();
+                                                                  currentIndex =
+                                                                      totalAnswers +
+                                                                      1;
+                                                                  questionSwapController
+                                                                      .reverse(
+                                                                        from: 1,
+                                                                      );
+                                                                  Future.delayed(
+                                                                    const Duration(
+                                                                      milliseconds:
+                                                                          90,
+                                                                    ),
+                                                                    () {
+                                                                      if (!mounted) {
+                                                                        return;
+                                                                      }
+                                                                      nextQuestion();
+                                                                    },
+                                                                  );
                                                                 },
-                                                              );
-                                                            },
+                                                        ),
+                                                      ),
                                                     ),
-                                                  ),
-                                                ),
-                                                const SizedBox(width: 12),
-                                                SizedBox(
-                                                  height: kButtonHeight,
-                                                  child: _DangerButton(
-                                                    label: 'Mettre fin',
-                                                    onTap: stopSeries,
-                                                  ),
+                                                    const SizedBox(width: 12),
+                                                    SizedBox(
+                                                      height: kButtonHeight,
+                                                      child: _DangerButton(
+                                                        label: 'Mettre fin',
+                                                        onTap: stopSeries,
+                                                      ),
+                                                    ),
+                                                  ],
                                                 ),
                                               ],
                                             ),
-                                          ],
-                                        ),
-                                      ),
-                                  ],
-                                ),
-                              ),
-                              // L'overlay de feedback a été retiré : il se
-                              // superposait au bandeau d'explication dès que
-                              // l'énoncé était long. L'animation vit maintenant
-                              // dans `_OutcomeIcon`, bornée par le bandeau.
-                              if (showDifficultyScreen ||
-                                  shouldForceDifficultySplash)
-                                _DifficultySplash(
-                                  fade: _difficultySplashFade,
-                                  isDark: isDark,
-                                  selected: selectedDifficulty,
-                                  onSelect: (d) => setState(() {
-                                    selectedDifficulty = d;
-                                    randomMode = false;
-                                    _recalculateAvailableCount();
-                                  }),
-                                  onStart: _startExercise,
-                                  onStartRandom: () {
-                                    setState(() {
-                                      randomMode = true;
-                                      selectedDifficulty = null;
-                                      _recalculateAvailableCount();
-                                    });
-                                    _startExercise();
-                                  },
-                                ),
-                              if (showIntroScreen)
-                                _IntroSplash(
-                                  isDark: isDark,
-                                  hideForever: hideIntroForever,
-                                  onChangedHideForever: _saveIntroPreference,
-                                  onStart: _beginSessionNow,
-                                ),
-                            ],
-                          );
-                        },
-                      ),
-              ),
-            ),
+                                          ),
+                                      ],
+                                    ),
+                                  ),
+                                  // L'overlay de feedback a été retiré : il se
+                                  // superposait au bandeau d'explication dès que
+                                  // l'énoncé était long. L'animation vit maintenant
+                                  // dans `_OutcomeIcon`, bornée par le bandeau.
+                                  if (showDifficultyScreen ||
+                                      shouldForceDifficultySplash)
+                                    _DifficultySplash(
+                                      fade: _difficultySplashFade,
+                                      isDark: isDark,
+                                      selected: selectedDifficulty,
+                                      onSelect: (d) => setState(() {
+                                        selectedDifficulty = d;
+                                        randomMode = false;
+                                        _recalculateAvailableCount();
+                                      }),
+                                      onStart: _startExercise,
+                                      onStartRandom: () {
+                                        setState(() {
+                                          randomMode = true;
+                                          selectedDifficulty = null;
+                                          _recalculateAvailableCount();
+                                        });
+                                        _startExercise();
+                                      },
+                                    ),
+                                  if (showIntroScreen)
+                                    _IntroSplash(
+                                      isDark: isDark,
+                                      hideForever: hideIntroForever,
+                                      onChangedHideForever:
+                                          _saveIntroPreference,
+                                      onStart: _beginSessionNow,
+                                    ),
+                                ],
+                              );
+                            },
+                          ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -1589,6 +1602,7 @@ class _QuestionCard extends StatefulWidget {
   final bool locked;
   final bool showOutcome;
   final bool isCorrect;
+
   /// `true` quand cette page est celle que l'utilisateur regarde.
   ///
   /// Indispensable : `PageView.builder` construit aussi les pages voisines
@@ -1629,7 +1643,8 @@ class _QuestionCardState extends State<_QuestionCard>
   static const int _msElement = 420;
   static const int _msDecalage = 130;
 
-  int get _nbElements => 1 + (_afficheSousTitre ? 1 : 0) + widget.options.length;
+  int get _nbElements =>
+      1 + (_afficheSousTitre ? 1 : 0) + widget.options.length;
 
   /// Le sous-titre compte comme un élément de la séquence quand il est affiché.
   /// Ce modèle de question n'a pas de champ `sub` : la séquence ne compte donc
@@ -1790,12 +1805,11 @@ class _QuestionCardState extends State<_QuestionCard>
           _ElementCascade(
             animation: _fenetre(rangCascade++),
             child: Text(
-            enonce,
-            style: _Brand.h1(context).copyWith(
-              color: textCol,
-              fontSize: _tailleTitre(enonce),
+              enonce,
+              style: _Brand.h1(
+                context,
+              ).copyWith(color: textCol, fontSize: _tailleTitre(enonce)),
             ),
-          ),
           ),
           if (widget.question.prompt != null &&
               widget.question.prompt!.trim().isNotEmpty) ...[
@@ -1812,22 +1826,24 @@ class _QuestionCardState extends State<_QuestionCard>
           const SizedBox(height: 16),
           ...widget.options.where((o) => o.trim().isNotEmpty).map((o) {
             final isSel = widget.selected == o;
-            final correctShown = widget.showOutcome && o == widget.question.answer;
-            final wrongShown = widget.showOutcome && isSel && o != widget.question.answer;
+            final correctShown =
+                widget.showOutcome && o == widget.question.answer;
+            final wrongShown =
+                widget.showOutcome && isSel && o != widget.question.answer;
 
             return _ElementCascade(
               animation: _fenetre(rangCascade++),
               child: Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: _OptionTile(
-                label: o,
-                selected: isSel,
-                locked: widget.locked,
-                correct: correctShown,
-                wrong: wrongShown,
-                onTap: () => widget.onSelect(o),
+                padding: const EdgeInsets.only(bottom: 12),
+                child: _OptionTile(
+                  label: o,
+                  selected: isSel,
+                  locked: widget.locked,
+                  correct: correctShown,
+                  wrong: wrongShown,
+                  onTap: () => widget.onSelect(o),
+                ),
               ),
-            ),
             );
           }),
           AnimatedSwitcher(
@@ -2702,12 +2718,12 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         _ElementCascade(
                           animation: _fenetre(_rangTitre),
                           child: Text(
-                          'Sélectionne le niveau de difficulté',
-                          textAlign: TextAlign.center,
-                          style: _Brand.h1(
-                            context,
-                          ).copyWith(color: textMain, fontSize: 24),
-                        ),
+                            'Sélectionne le niveau de difficulté',
+                            textAlign: TextAlign.center,
+                            style: _Brand.h1(
+                              context,
+                            ).copyWith(color: textMain, fontSize: 24),
+                          ),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -2733,13 +2749,13 @@ class _DifficultySplashState extends State<_DifficultySplash>
                               _ElementCascade(
                                 animation: _fenetre(_rangFacile),
                                 child: _LevelCard(
-                                label: 'Facile',
-                                icon: Icons.eco_rounded,
-                                tint: const Color(0xFF22C55E),
-                                active: widget.selected == 'Facile',
-                                onTap: () => widget.onSelect('Facile'),
-                                isDark: isDark,
-                              ),
+                                  label: 'Facile',
+                                  icon: Icons.eco_rounded,
+                                  tint: const Color(0xFF22C55E),
+                                  active: widget.selected == 'Facile',
+                                  onTap: () => widget.onSelect('Facile'),
+                                  isDark: isDark,
+                                ),
                               ),
                               _LevelCard(
                                 label: 'Moyenne',
@@ -2752,13 +2768,13 @@ class _DifficultySplashState extends State<_DifficultySplash>
                               _ElementCascade(
                                 animation: _fenetre(_rangDifficile),
                                 child: _LevelCard(
-                                label: 'Difficile',
-                                icon: Icons.emoji_events_rounded,
-                                tint: const Color(0xFFEF4444),
-                                active: widget.selected == 'Difficile',
-                                onTap: () => widget.onSelect('Difficile'),
-                                isDark: isDark,
-                              ),
+                                  label: 'Difficile',
+                                  icon: Icons.emoji_events_rounded,
+                                  tint: const Color(0xFFEF4444),
+                                  active: widget.selected == 'Difficile',
+                                  onTap: () => widget.onSelect('Difficile'),
+                                  isDark: isDark,
+                                ),
                               ),
                             ];
 
@@ -2825,33 +2841,33 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         _ElementCascade(
                           animation: _fenetre(_rangMelanger),
                           child: SizedBox(
-                          height: 56,
-                          width: double.infinity,
-                          child: OutlinedButton.icon(
-                            onPressed: widget.onStartRandom,
-                            icon: const Icon(Icons.shuffle_rounded, size: 20),
-                            label: const Text('Mélanger les 3 niveaux'),
-                            style: OutlinedButton.styleFrom(
-                              foregroundColor: isDark
-                                  ? Colors.white
-                                  : _Brand.textDark,
-                              side: BorderSide(
-                                color: isDark
-                                    ? Colors.white.withAlpha(160)
-                                    : _Brand.textDark.withAlpha(160),
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(28),
-                              ),
-                              textStyle: const TextStyle(
-                                fontFamily: 'InstrumentSans',
-                                fontWeight: FontWeight.w800,
-                                fontSize: 16,
-                                decoration: TextDecoration.none,
+                            height: 56,
+                            width: double.infinity,
+                            child: OutlinedButton.icon(
+                              onPressed: widget.onStartRandom,
+                              icon: const Icon(Icons.shuffle_rounded, size: 20),
+                              label: const Text('Mélanger les 3 niveaux'),
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: isDark
+                                    ? Colors.white
+                                    : _Brand.textDark,
+                                side: BorderSide(
+                                  color: isDark
+                                      ? Colors.white.withAlpha(160)
+                                      : _Brand.textDark.withAlpha(160),
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(28),
+                                ),
+                                textStyle: const TextStyle(
+                                  fontFamily: 'InstrumentSans',
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 16,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
                           ),
-                        ),
                         ),
                       ],
                     ),
@@ -2868,7 +2884,6 @@ class _DifficultySplashState extends State<_DifficultySplash>
 
 // `_AnimatedBackground` supprimé : dégradé propre au splash, remplacé par le
 // `_QuizBackdrop` de la page. Un seul fond pour tout l'écran.
-
 
 class _Halo extends StatelessWidget {
   final Color color;
@@ -2924,6 +2939,7 @@ class _Halo extends StatelessWidget {
 
 class _LevelCard extends StatelessWidget {
   final String label;
+
   /// Icône du niveau. Remplace un emoji, dont le dessin dépend de la police
   /// système et dont la couleur n'est pas contrôlable.
   final IconData icon;
@@ -2949,94 +2965,89 @@ class _LevelCard extends StatelessWidget {
     // faisait osciller de ±2 px a été retiré : sur trois cartes à
     // comparer, ce balancement désalignait les bords en permanence.
     return AnimatedScale(
-            duration: const Duration(milliseconds: 180),
-            scale: active ? 1.02 : 1.0,
-            curve: Curves.easeOutCubic,
-            child: InkWell(
-              onTap: onTap,
-              borderRadius: BorderRadius.circular(20),
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
-                height: 112,
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(
-                  color: _opa(tint, isDark
-                      ? (active ? .22 : .13)
-                      : (active ? .18 : .10)),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: active ? tint : track,
-                    width: active ? 2 : 1,
-                  ),
-                  boxShadow: [
-                    if (!isDark)
-                      BoxShadow(
-                        color: tint.withValues(alpha: .18),
-                        blurRadius: 18,
-                        offset: const Offset(0, 8),
-                      ),
-                  ],
+      duration: const Duration(milliseconds: 180),
+      scale: active ? 1.02 : 1.0,
+      curve: Curves.easeOutCubic,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 220),
+          curve: Curves.easeOutCubic,
+          height: 112,
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          decoration: BoxDecoration(
+            color: _opa(
+              tint,
+              isDark ? (active ? .22 : .13) : (active ? .18 : .10),
+            ),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: active ? tint : track,
+              width: active ? 2 : 1,
+            ),
+            boxShadow: [
+              if (!isDark)
+                BoxShadow(
+                  color: tint.withValues(alpha: .18),
+                  blurRadius: 18,
+                  offset: const Offset(0, 8),
                 ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: _opa(tint, isDark ? .22 : .18),
-                        border: Border.all(
-                          color: active ? tint : _opa(tint, .45),
-                        ),
-                      ),
-                      child: Center(
-                        child: Icon(
-                          icon,
-                          size: 24,
-                          color: isDark ? tint : _assombrir(tint, .22),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 14),
-                    Expanded(
-                      child: Text(
-                        label,
-                        style: _Brand.option(context).copyWith(
-                          color: isDark ? Colors.white : _Brand.textDark,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 24,
-                      height: 24,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: active ? tint : track,
-                          width: 2,
-                        ),
-                      ),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        margin: const EdgeInsets.all(4),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: active ? tint : Colors.transparent,
-                        ),
-                      ),
-                    ),
-                  ],
+            ],
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 48,
+                height: 48,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: _opa(tint, isDark ? .22 : .18),
+                  border: Border.all(color: active ? tint : _opa(tint, .45)),
+                ),
+                child: Center(
+                  child: Icon(
+                    icon,
+                    size: 24,
+                    color: isDark ? tint : _assombrir(tint, .22),
+                  ),
                 ),
               ),
-            ),
-          );
+              const SizedBox(width: 14),
+              Expanded(
+                child: Text(
+                  label,
+                  style: _Brand.option(context).copyWith(
+                    color: isDark ? Colors.white : _Brand.textDark,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+              ),
+              Container(
+                width: 24,
+                height: 24,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: active ? tint : track, width: 2),
+                ),
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  margin: const EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: active ? tint : Colors.transparent,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
-
 
 /// Assombrit une teinte pour qu'elle reste lisible sur fond clair.
 ///
@@ -3045,7 +3056,6 @@ class _LevelCard extends StatelessWidget {
 /// que d'entretenir une seconde palette en parallèle.
 Color _assombrir(Color c, [double facteur = .45]) =>
     Color.lerp(c, Colors.black, facteur)!;
-
 
 /// Fond du quiz, dans les deux thèmes.
 ///
@@ -3183,7 +3193,6 @@ class _QuizBackdropState extends State<_QuizBackdrop>
   }
 }
 
-
 /// Un élément d'une cascade d'apparition : fondu et montée de 10 px.
 ///
 /// `FadeTransition` gère l'opacité sans rien reconstruire, et l'enfant est passé
@@ -3216,7 +3225,6 @@ class _ElementCascade extends StatelessWidget {
     );
   }
 }
-
 
 /// Icône de résultat animée : rebond à l'apparition, puis étincelles qui
 /// s'écartent et s'effacent.
@@ -3290,7 +3298,6 @@ class _OutcomeIcon extends StatelessWidget {
   }
 }
 
-
 /// Carte de confirmation avant une sortie de quiz.
 ///
 /// Sert la croix comme le bouton « Mettre fin » : même mise en page, seuls le
@@ -3334,7 +3341,9 @@ class _ConfirmCard extends StatelessWidget {
               color: fond,
               borderRadius: BorderRadius.circular(28),
               border: Border.all(
-                color: isDark ? _opa(Colors.white, .10) : _opa(Colors.black, .06),
+                color: isDark
+                    ? _opa(Colors.white, .10)
+                    : _opa(Colors.black, .06),
               ),
               boxShadow: [
                 BoxShadow(
@@ -3398,7 +3407,10 @@ class _ConfirmCard extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                       backgroundColor: _opa(_Brand.bad, .10),
                       foregroundColor: _Brand.bad,
-                      side: BorderSide(color: _opa(_Brand.bad, .55), width: 1.4),
+                      side: BorderSide(
+                        color: _opa(_Brand.bad, .55),
+                        width: 1.4,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(26),
                       ),

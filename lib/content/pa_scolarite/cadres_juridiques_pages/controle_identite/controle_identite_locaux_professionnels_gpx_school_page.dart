@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
   const PaConntroleIdentiteLocauxGpxSchool({super.key});
@@ -19,11 +20,11 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
         : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
-? const Color(0xFF424242)
-: const Color(0xFFF5F5F5);
+        ? const Color(0xFF424242)
+        : const Color(0xFFF5F5F5);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
     final Color articleColor = isDark
         ? const Color(0xFFFF8A80)
@@ -38,10 +39,18 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Locaux professionnels',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+            "f00002",
+            'Locaux professionnels',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO ============================
           Text(
-            'Les contrôles dans les locaux professionnels',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+              "f00003",
+              'Les contrôles dans les locaux professionnels',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,9 +77,21 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Contrôles d’identité et visites de locaux professionnels pour la lutte contre le '
-            'travail dissimulé : autorités compétentes, conditions d’entrée, personnes '
-            'concernées et suites de la visite.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00004",
+                  'Contrôles d’identité et visites de locaux professionnels pour la lutte contre le ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00005",
+                  'travail dissimulé : autorités compétentes, conditions d’entrée, personnes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00006",
+                  'concernées et suites de la visite.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -78,25 +103,51 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.4 – CONTROLES DANS LES LOCAUX =======
           _ConditionCard(
-            title: '1.2.4 – Des contrôles dans les locaux professionnels',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+              "f00007",
+              '1.2.4 – Des contrôles dans les locaux professionnels',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: 'L’outil principal est prévu par l’'),
                 TextSpan(
-                  text: 'article 78-2-1 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                    "f00008",
+                    'L’outil principal est prévu par l’',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                    "f00009",
+                    'article 78-2-1 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', qui permet aux policiers de pénétrer dans les locaux professionnels afin de '
-                      'vérifier qu’il ne s’y commet pas de travail dissimulé ou d’emploi de travailleurs '
-                      'dépourvus de titre de travail.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00010",
+                        ', qui permet aux policiers de pénétrer dans les locaux professionnels afin de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00011",
+                        'vérifier qu’il ne s’y commet pas de travail dissimulé ou d’emploi de travailleurs ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00012",
+                        'dépourvus de titre de travail.',
+                      ),
                 ),
               ]),
             ],
@@ -105,20 +156,40 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.4.1 – AUTORITÉS COMPÉTENTES =========
           _ConditionCard(
-            title: '1.2.4.1 – Les autorités compétentes',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+              "f00013",
+              '1.2.4.1 – Les autorités compétentes',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Sont compétents pour mettre en œuvre ces contrôles : les officiers de police '
-                      'judiciaire et, sur ordre et sous la responsabilité de ceux-ci, les agents de police '
-                      'judiciaire et agents de police judiciaire adjoints mentionnés aux ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00014",
+                        'Sont compétents pour mettre en œuvre ces contrôles : les officiers de police ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00015",
+                        'judiciaire et, sur ordre et sous la responsabilité de ceux-ci, les agents de police ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00016",
+                        'judiciaire et agents de police judiciaire adjoints mentionnés aux ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'articles 20 et 21, 1° du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                    "f00017",
+                    'articles 20 et 21, 1° du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: articleColor,
@@ -132,37 +203,77 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.4.2 – CONDITIONS DES CONTRÔLES ======
           _ConditionCard(
-            title:
-                '1.2.4.2 – Conditions dans lesquelles peuvent s’opérer ces contrôles',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+              "f00018",
+              '1.2.4.2 – Conditions dans lesquelles peuvent s’opérer ces contrôles',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
-              const _SubTitle('1.2.4.2.1 – L’entrée dans les locaux'),
-              const _Paragraph.rich([
-                TextSpan(
-                  text:
-                      'L’entrée dans les locaux professionnels suppose des réquisitions écrites du '
-                      'procureur de la République. Ces réquisitions doivent :\n',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00019",
+                  '1.2.4.2.1 – L’entrée dans les locaux',
                 ),
-              ]),
-              const _BulletPoint(
-                text:
-                    'préciser le ou les lieux dans lesquels l’opération de contrôle se déroulera ;',
-              ),
-              const _BulletPoint(
-                text:
-                    'indiquer les infractions devant être recherchées (travail dissimulé, emploi de '
-                    'travailleurs dépourvus de titre de travail) ;',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'La durée de validité des réquisitions, fixée par le procureur de la République, '
-                      'ne peut excéder un mois, conformément à l’',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00020",
+                        'L’entrée dans les locaux professionnels suppose des réquisitions écrites du ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00021",
+                        'procureur de la République. Ces réquisitions doivent :\n',
+                      ),
+                ),
+              ]),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00022",
+                  'préciser le ou les lieux dans lesquels l’opération de contrôle se déroulera ;',
+                ),
+              ),
+              _BulletPoint(
+                text:
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00023",
+                      'indiquer les infractions devant être recherchées (travail dissimulé, emploi de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00024",
+                      'travailleurs dépourvus de titre de travail) ;',
+                    ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00025",
+                        'La durée de validité des réquisitions, fixée par le procureur de la République, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                        "f00026",
+                        'ne peut excéder un mois, conformément à l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-2-1 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                    "f00027",
+                    'article 78-2-1 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: articleColor,
@@ -172,33 +283,92 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('1.2.4.2.2 – La présentation de la réquisition'),
-              const _Paragraph(
-                'Les réquisitions doivent être présentées à la personne qui a la responsabilité des '
-                'lieux. Lorsque cette formalité est impossible (par exemple si personne ne se '
-                'prépare ou ne se déclare responsable), la procédure issue du contrôle n’est pas '
-                'pour autant nulle. Il est toutefois recommandé de consacrer suffisamment de temps '
-                'à l’identification du maître des lieux afin d’éviter toute ambiguïté ou contestation '
-                'ultérieure.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00028",
+                  '1.2.4.2.2 – La présentation de la réquisition',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00029",
+                      'Les réquisitions doivent être présentées à la personne qui a la responsabilité des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00030",
+                      'lieux. Lorsque cette formalité est impossible (par exemple si personne ne se ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00031",
+                      'prépare ou ne se déclare responsable), la procédure issue du contrôle n’est pas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00032",
+                      'pour autant nulle. Il est toutefois recommandé de consacrer suffisamment de temps ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00033",
+                      'à l’identification du maître des lieux afin d’éviter toute ambiguïté ou contestation ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00034",
+                      'ultérieure.',
+                    ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Le procureur de la République, qui suit le cours de ces opérations, peut y mettre fin '
-                'à tout moment.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00035",
+                      'Le procureur de la République, qui suit le cours de ces opérations, peut y mettre fin ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00036",
+                      'à tout moment.',
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle(
-                '1.2.4.2.3 – Les locaux pouvant donner lieu à visite',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00037",
+                  '1.2.4.2.3 – Les locaux pouvant donner lieu à visite',
+                ),
               ),
-              const _Paragraph(
-                'Les réquisitions ne peuvent viser que les lieux à usage exclusivement professionnel '
-                'ainsi que leurs annexes et dépendances. Sont exclus :',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00038",
+                      'Les réquisitions ne peuvent viser que les lieux à usage exclusivement professionnel ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00039",
+                      'ainsi que leurs annexes et dépendances. Sont exclus :',
+                    ),
               ),
-              const _BulletPoint(text: 'les domiciles des personnes ;'),
-              const _BulletPoint(
-                text:
-                    'les lieux à usage mixte servant à la fois de local de travail et de domicile.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00040",
+                  'les domiciles des personnes ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00041",
+                  'les lieux à usage mixte servant à la fois de local de travail et de domicile.',
+                ),
               ),
             ],
           ),
@@ -206,25 +376,58 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.4.3 – PERSONNES CONTRÔLÉES ==========
           _ConditionCard(
-            title:
-                '1.2.4.3 – Les personnes pouvant faire l’objet d’un contrôle',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+              "f00042",
+              '1.2.4.3 – Les personnes pouvant faire l’objet d’un contrôle',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Sont contrôlées les personnes occupées dans l’entreprise au moment de la visite. '
-                'Leur identité permet de procéder à des rapprochements avec :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00043",
+                      'Sont contrôlées les personnes occupées dans l’entreprise au moment de la visite. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00044",
+                      'Leur identité permet de procéder à des rapprochements avec :',
+                    ),
               ),
-              _BulletPoint(text: 'le registre unique du personnel ;'),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00045",
+                  'le registre unique du personnel ;',
+                ),
+              ),
               _BulletPoint(
                 text:
-                    'les documents relatifs aux déclarations préalables à l’embauche (déclaration '
-                    'unique d’embauche, déclaration préalable à l’embauche, etc.).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00046",
+                      'les documents relatifs aux déclarations préalables à l’embauche (déclaration ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00047",
+                      'unique d’embauche, déclaration préalable à l’embauche, etc.).',
+                    ),
               ),
               _Paragraph(
-                'Ce contrôle d’identité permettra également, le cas échéant, d’engager des '
-                'procédures judiciaires incidentes si des infractions sont constatées.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00048",
+                      'Ce contrôle d’identité permettra également, le cas échéant, d’engager des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00049",
+                      'procédures judiciaires incidentes si des infractions sont constatées.',
+                    ),
               ),
             ],
           ),
@@ -232,29 +435,54 @@ class PaConntroleIdentiteLocauxGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.4.4 – SUITES DE LA VISITE ============
           _ConditionCard(
-            title: '1.2.4.4 – Les suites de la visite',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+              "f00050",
+              '1.2.4.4 – Les suites de la visite',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le contrôle donne lieu à l’établissement d’un procès-verbal qui doit mentionner :',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00051",
+                  'Le contrôle donne lieu à l’établissement d’un procès-verbal qui doit mentionner :',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'les réquisitions du procureur de la République (date, référence, objet) ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00052",
+                  'les réquisitions du procureur de la République (date, référence, objet) ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'l’ensemble des diligences effectuées pendant l’opération de contrôle ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00053",
+                  'l’ensemble des diligences effectuées pendant l’opération de contrôle ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'l’heure de début et l’heure de fin de la visite des locaux professionnels.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                  "f00054",
+                  'l’heure de début et l’heure de fin de la visite des locaux professionnels.',
+                ),
               ),
               _Paragraph(
-                'Un double du procès-verbal est remis au responsable du local visité, afin d’assurer '
-                'la traçabilité et l’information de l’entreprise sur le déroulement de l’opération.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00055",
+                      'Un double du procès-verbal est remis au responsable du local visité, afin d’assurer ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart",
+                      "f00056",
+                      'la traçabilité et l’information de l’entreprise sur le déroulement de l’opération.',
+                    ),
               ),
             ],
           ),
@@ -511,9 +739,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Texte rouge pour les articles de loi
 TextSpan _lawRef(String text) {
@@ -47,7 +48,11 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
           color: isDark ? Colors.white : const Color(0xFF050505),
         ),
         title: Text(
-          'Sanctions des irrégularités',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+            "f00001",
+            'Sanctions des irrégularités',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w800,
             fontSize: 18,
@@ -81,15 +86,35 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'CHAPITRE 3 : SANCTIONS DES IRRÉGULARITÉS DES MANDATS',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                        "f00002",
+                        'CHAPITRE 3 : SANCTIONS DES IRRÉGULARITÉS DES MANDATS',
+                      ),
                       style: textMain,
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Les irrégularités affectant les mandats judiciaires peuvent entraîner des '
-                      'sanctions visant les personnes responsables ou les actes eux-mêmes. '
-                      'Le respect des formes est essentiel pour garantir la liberté individuelle '
-                      'et les droits de la défense.',
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00003",
+                            'Les irrégularités affectant les mandats judiciaires peuvent entraîner des ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00004",
+                            'sanctions visant les personnes responsables ou les actes eux-mêmes. ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00005",
+                            'Le respect des formes est essentiel pour garantir la liberté individuelle ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00006",
+                            'et les droits de la défense.',
+                          ),
                       style: textSoft,
                       textAlign: TextAlign.justify,
                     ),
@@ -101,7 +126,11 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
               /// 3.1 — SANCTIONS CONTRE LES PERSONNES
               //////////////////////////////////////////////////////////////
               _ConditionCard(
-                title: '3.1 — Sanctions contre les personnes',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                  "f00007",
+                  '3.1 — Sanctions contre les personnes',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -110,83 +139,222 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
                     : const Color(0xFF1565C0),
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
-                  const _Paragraph(
-                    'Plusieurs acteurs interviennent dans la chaîne de délivrance et '
-                    'd’exécution des mandats. Certains d’entre eux peuvent voir leur '
-                    'responsabilité engagée en cas d’irrégularités.',
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00008",
+                          'Plusieurs acteurs interviennent dans la chaîne de délivrance et ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00009",
+                          'd’exécution des mandats. Certains d’entre eux peuvent voir leur ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00010",
+                          'responsabilité engagée en cas d’irrégularités.',
+                        ),
                   ),
 
                   const SizedBox(height: 10),
-                  const _SubTitle('Rôle du greffier'),
-                  const _Paragraph(
-                    'Le greffier est considéré comme responsable de la régularité formelle '
-                    'des mandats. Il doit s’assurer que chaque mandat :',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00011",
+                      'Rôle du greffier',
+                    ),
                   ),
-                  const _BulletPoint(text: 'est régulièrement signé et daté ;'),
-                  const _BulletPoint(
-                    text:
-                        'est revêtu du sceau du magistrat ou de la juridiction compétente ;',
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00012",
+                          'Le greffier est considéré comme responsable de la régularité formelle ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00013",
+                          'des mandats. Il doit s’assurer que chaque mandat :',
+                        ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        'mentionne l’identité complète de la personne visée ;',
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00014",
+                      'est régulièrement signé et daté ;',
+                    ),
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00015",
+                      'est revêtu du sceau du magistrat ou de la juridiction compétente ;',
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00016",
+                      'mentionne l’identité complète de la personne visée ;',
+                    ),
+                  ),
+                  _BulletPoint(
                     text:
-                        'et, lorsque la loi l’exige, précise la nature des faits imputés, '
-                        'leur qualification juridique ainsi que les textes applicables.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00017",
+                          'et, lorsque la loi l’exige, précise la nature des faits imputés, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00018",
+                          'leur qualification juridique ainsi que les textes applicables.',
+                        ),
                   ),
 
                   const SizedBox(height: 12),
-                  const _SubTitle(
-                    'Responsabilité disciplinaire des magistrats',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00019",
+                      'Responsabilité disciplinaire des magistrats',
+                    ),
                   ),
-                  const _Paragraph(
-                    'Les éventuelles sanctions disciplinaires à l’encontre du juge '
-                    'd’instruction, du juge des libertés et de la détention ou du procureur '
-                    'de la République ne peuvent être prononcées que dans le cadre des '
-                    'règles du statut de la magistrature.',
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00020",
+                          'Les éventuelles sanctions disciplinaires à l’encontre du juge ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00021",
+                          'd’instruction, du juge des libertés et de la détention ou du procureur ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00022",
+                          'de la République ne peuvent être prononcées que dans le cadre des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00023",
+                          'règles du statut de la magistrature.',
+                        ),
                   ),
 
                   const SizedBox(height: 12),
-                  const _SubTitle(
-                    'Responsabilité pénale en cas de détention arbitraire',
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00024",
+                      'Responsabilité pénale en cas de détention arbitraire',
+                    ),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'En cas de détention arbitraire résultant du non-respect des délais '
-                          'légaux, la responsabilité pénale des autorités peut être engagée. ',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00025",
+                            'En cas de détention arbitraire résultant du non-respect des délais ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00026",
+                            'légaux, la responsabilité pénale des autorités peut être engagée. ',
+                          ),
                     ),
-                    _lawRef('L’article 126 du Code de procédure pénale'),
-                    const TextSpan(text: ' renvoie aux dispositions des '),
-                    _lawRef('articles 432-4 à 432-6 du Code pénal'),
-                    const TextSpan(
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                        "f00027",
+                        'L’article 126 du Code de procédure pénale',
+                      ),
+                    ),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                        "f00028",
+                        ' renvoie aux dispositions des ',
+                      ),
+                    ),
+                    _lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                        "f00029",
+                        'articles 432-4 à 432-6 du Code pénal',
+                      ),
+                    ),
+                    TextSpan(
                       text:
-                          ', qui répriment les atteintes volontaires à la liberté individuelle '
-                          'commises par une personne dépositaire de l’autorité publique.',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00030",
+                            ', qui répriment les atteintes volontaires à la liberté individuelle ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00031",
+                            'commises par une personne dépositaire de l’autorité publique.',
+                          ),
                     ),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                    TextSpan(
                       text:
-                          'Sont notamment visés les magistrats ou fonctionnaires (procureur '
-                          'de la République, juge d’instruction, chef d’établissement '
-                          'pénitentiaire) qui ont ordonné ou sciemment toléré une détention '
-                          'arbitraire résultant de l’inobservation du délai de 24 heures fixé '
-                          'pour l’interrogatoire de la personne arrêtée en vertu d’un mandat '
-                          'd’amener. ',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00032",
+                            'Sont notamment visés les magistrats ou fonctionnaires (procureur ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00033",
+                            'de la République, juge d’instruction, chef d’établissement ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00034",
+                            'pénitentiaire) qui ont ordonné ou sciemment toléré une détention ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00035",
+                            'arbitraire résultant de l’inobservation du délai de 24 heures fixé ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00036",
+                            'pour l’interrogatoire de la personne arrêtée en vertu d’un mandat ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                            "f00037",
+                            'd’amener. ',
+                          ),
                     ),
                     _lawRef(
-                      'Les dispositions de l’article 126 du Code de procédure pénale',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                        "f00038",
+                        'Les dispositions de l’article 126 du Code de procédure pénale',
+                      ),
                     ),
-                    const TextSpan(
-                      text:
-                          ' sont également applicables au mandat d’arrêt, conformément à ',
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                        "f00039",
+                        ' sont également applicables au mandat d’arrêt, conformément à ',
+                      ),
                     ),
                     _lawRef(
-                      'l’article 133 alinéa 1 du Code de procédure pénale',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                        "f00040",
+                        'l’article 133 alinéa 1 du Code de procédure pénale',
+                      ),
                     ),
                     const TextSpan(text: '.'),
                   ]),
@@ -199,7 +367,11 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
               /// 3.2 — SANCTIONS CONCERNANT LES ACTES
               //////////////////////////////////////////////////////////////
               _ConditionCard(
-                title: '3.2 — Sanctions concernant les actes',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                  "f00041",
+                  '3.2 — Sanctions concernant les actes',
+                ),
                 cardColor: isDark
                     ? const Color(0xFF10141A)
                     : const Color(0xFFF5F7FB),
@@ -207,50 +379,142 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
                     ? const Color(0xFF64B5F6)
                     : const Color(0xFF1565C0),
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-                children: const [
+                children: [
                   _Paragraph(
-                    'Les irrégularités peuvent porter soit sur la délivrance même du mandat '
-                    '(vice de forme ou de fond), soit sur sa notification ou son exécution. '
-                    'Les conséquences juridiques ne sont pas les mêmes.',
-                  ),
-
-                  SizedBox(height: 10),
-                  _SubTitle('Irrégularités affectant la délivrance'),
-                  _Paragraph(
-                    'Lorsque le mandat ne respecte pas les conditions de forme ou de fond '
-                    'prévues par la loi (mentions obligatoires, compétence du magistrat, '
-                    'base légale…), ces irrégularités peuvent entraîner la nullité du '
-                    'mandat lui-même. La mesure privative ou restrictive de liberté repose '
-                    'alors sur un titre irrégulier.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00042",
+                          'Les irrégularités peuvent porter soit sur la délivrance même du mandat ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00043",
+                          '(vice de forme ou de fond), soit sur sa notification ou son exécution. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00044",
+                          'Les conséquences juridiques ne sont pas les mêmes.',
+                        ),
                   ),
 
                   SizedBox(height: 10),
                   _SubTitle(
-                    'Irrégularités de notification ou d’exécution',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00045",
+                      'Irrégularités affectant la délivrance',
+                    ),
                   ),
                   _Paragraph(
-                    'Les vices affectant la notification ou les modalités d’exécution '
-                    'du mandat ne remettent pas nécessairement en cause l’existence du '
-                    'mandat. Ils peuvent, en revanche, entraîner :',
-                  ),
-                  _BulletPoint(
-                    text:
-                        'la nullité de l’exécution (par exemple, si les droits de la défense '
-                        'n’ont pas été respectés) ;',
-                  ),
-                  _BulletPoint(
-                    text:
-                        'ou la caducité du mandat lorsque son inexécution ou son exécution '
-                        'irrégulière en a vidé les effets.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00046",
+                          'Lorsque le mandat ne respecte pas les conditions de forme ou de fond ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00047",
+                          'prévues par la loi (mentions obligatoires, compétence du magistrat, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00048",
+                          'base légale…), ces irrégularités peuvent entraîner la nullité du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00049",
+                          'mandat lui-même. La mesure privative ou restrictive de liberté repose ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00050",
+                          'alors sur un titre irrégulier.',
+                        ),
                   ),
 
                   SizedBox(height: 10),
-                  _SubTitle('Appréciation par la jurisprudence'),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00051",
+                      'Irrégularités de notification ou d’exécution',
+                    ),
+                  ),
                   _Paragraph(
-                    'La jurisprudence considère que seules les irrégularités substantielles, '
-                    'de nature à porter atteinte aux droits de la défense ou aux garanties '
-                    'fondamentales de la personne, justifient la nullité. Les simples '
-                    'irrégularités de pure forme, sans grief, ne suffisent pas.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00052",
+                          'Les vices affectant la notification ou les modalités d’exécution ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00053",
+                          'du mandat ne remettent pas nécessairement en cause l’existence du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00054",
+                          'mandat. Ils peuvent, en revanche, entraîner :',
+                        ),
+                  ),
+                  _BulletPoint(
+                    text:
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00055",
+                          'la nullité de l’exécution (par exemple, si les droits de la défense ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00056",
+                          'n’ont pas été respectés) ;',
+                        ),
+                  ),
+                  _BulletPoint(
+                    text:
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00057",
+                          'ou la caducité du mandat lorsque son inexécution ou son exécution ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00058",
+                          'irrégulière en a vidé les effets.',
+                        ),
+                  ),
+
+                  SizedBox(height: 10),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                      "f00059",
+                      'Appréciation par la jurisprudence',
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00060",
+                          'La jurisprudence considère que seules les irrégularités substantielles, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00061",
+                          'de nature à porter atteinte aux droits de la défense ou aux garanties ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00062",
+                          'fondamentales de la personne, justifient la nullité. Les simples ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                          "f00063",
+                          'irrégularités de pure forme, sans grief, ne suffisent pas.',
+                        ),
                   ),
 
                   SizedBox(height: 12),
@@ -259,11 +523,31 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
                     bodySpans: [
                       TextSpan(
                         text:
-                            'Lorsqu’une détention irrégulière a été subie, une indemnisation '
-                            'peut être accordée. Elle est décidée par le premier président de '
-                            'la cour d’appel. L’État dispose ensuite d’un recours contre le '
-                            'dénonciateur de mauvaise foi ou le faux témoin ayant provoqué la '
-                            'détention injustifiée.',
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                              "f00064",
+                              'Lorsqu’une détention irrégulière a été subie, une indemnisation ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                              "f00065",
+                              'peut être accordée. Elle est décidée par le premier président de ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                              "f00066",
+                              'la cour d’appel. L’État dispose ensuite d’un recours contre le ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                              "f00067",
+                              'dénonciateur de mauvaise foi ou le faux témoin ayant provoqué la ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_mandats_sanctions_irregularites.dart",
+                              "f00068",
+                              'détention injustifiée.',
+                            ),
                       ),
                     ],
                   ),

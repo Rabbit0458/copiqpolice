@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 // Page Quiz
 
@@ -36,10 +37,18 @@ class InfractionContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'L\'infractions',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+            "f00002",
+            'L\'infractions',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -53,41 +62,71 @@ class InfractionContenuPage extends StatelessWidget {
         children: [
           _ModuleCard(
             tag: 'legal',
-            title: 'Élément légal',
-            subtitle: 'Le texte qui fonde l’infraction.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00003",
+              'Élément légal',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00004",
+              'Le texte qui fonde l’infraction.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _open(context, const ElementLegalPage(), 'legal'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           _ModuleCard(
             tag: 'materiel',
-            title: 'Élément matériel',
-            subtitle: 'L’acte ou le fait concret reproché.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00005",
+              'Élément matériel',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00006",
+              'L’acte ou le fait concret reproché.',
+            ),
             imagePath: 'assets/images/infraction_materiel.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () =>
                 _open(context, const ElementMaterielPage(), 'materiel'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           _ModuleCard(
             tag: 'moral',
-            title: 'Élément moral',
-            subtitle: 'L’intention ou la faute de l’auteur.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00007",
+              'Élément moral',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00008",
+              'L’intention ou la faute de l’auteur.',
+            ),
             imagePath: 'assets/images/infraction_moral.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _open(context, const ElementMoralPage(), 'moral'),
           ),
-          const SizedBox(height: 20),
-
-          const SizedBox(height: 22), // un peu plus bas que les autres
+          const SizedBox(height: 10),
           _ModuleCard(
             tag: 'quiz',
-            title: 'Quiz — Infractions',
-            subtitle: 'Testez vos connaissances.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00009",
+              'Quiz — Infractions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+              "f00010",
+              'Testez vos connaissances.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -95,7 +134,7 @@ class InfractionContenuPage extends StatelessWidget {
               context,
             ).pushNamed('/gpx/generalites/quiz/infraction'),
           ),
-          const SizedBox(height: 22), // respire en bas
+          const SizedBox(height: 10),
         ],
       ),
     );
@@ -149,7 +188,11 @@ class _ModuleCard extends StatelessWidget {
         button: true,
         label: '$title — découvrir',
         child: Container(
-          height: 190,
+          height: ScolariteText.adaptiveCardHeight(
+            context,
+            cardCount: 4,
+            maxHeight: 190,
+          ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,
@@ -257,7 +300,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 6),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+                "f00013",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -364,7 +411,11 @@ class _QuizCTA extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Quiz — Infractions',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+                            "f00014",
+                            'Quiz — Infractions',
+                          ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(
@@ -376,7 +427,11 @@ class _QuizCTA extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          '15 questions • Élément légal, matériel & moral',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart",
+                            "f00015",
+                            '15 questions • Élément légal, matériel & moral',
+                          ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(

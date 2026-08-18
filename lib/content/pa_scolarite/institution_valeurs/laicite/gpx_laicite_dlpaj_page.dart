@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaGpxLaiciteDlpajPage extends StatelessWidget {
   const PaGpxLaiciteDlpajPage({super.key});
@@ -62,10 +63,18 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Institutions & valeurs",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+            "f00002",
+            "Institutions & valeurs",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -80,7 +89,11 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La laïcité",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00003",
+              "La laïcité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -90,7 +103,11 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Source : DLPAJ / bureau des cultes",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00004",
+              "Source : DLPAJ / bureau des cultes",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w700,
               fontSize: 13.5,
@@ -102,58 +119,107 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
 
           // ✅ Références juridiques en haut (comme demandé)
           _ConditionCard(
-            title: "Références juridiques essentielles",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00005",
+              "Références juridiques essentielles",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
                 _law(
-                  "Article 10 de la Déclaration des droits de l’homme et du citoyen",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00006",
+                    "Article 10 de la Déclaration des droits de l’homme et du citoyen",
+                  ),
                 ),
-                const TextSpan(
-                  text:
-                      " : « Nul ne doit être inquiété pour ses opinions, même religieuses, pourvu que leur manifestation ne trouble pas l’ordre public établi par la Loi. »",
-                ),
-              ]),
-              const SizedBox(height: 10),
-              _Paragraph.rich([
-                _law("Article 1er de la Constitution de 1958"),
-                const TextSpan(
-                  text:
-                      " : « La France est une République indivisible, laïque, démocratique et sociale. »",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00007",
+                    " : « Nul ne doit être inquiété pour ses opinions, même religieuses, pourvu que leur manifestation ne trouble pas l’ordre public établi par la Loi. »",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
                 _law(
-                  "Loi du 9 décembre 1905 (séparation des Églises et de l’État)",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00008",
+                    "Article 1er de la Constitution de 1958",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00009",
+                    " : « La France est une République indivisible, laïque, démocratique et sociale. »",
+                  ),
+                ),
+              ]),
+              const SizedBox(height: 10),
+              _Paragraph.rich([
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00010",
+                    "Loi du 9 décembre 1905 (séparation des Églises et de l’État)",
+                  ),
                 ),
                 const TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _law("Article 1er (loi de 1905)"),
-                const TextSpan(
-                  text:
-                      " : liberté de conscience et libre exercice des cultes, sous réserve de l’ordre public.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00011",
+                    "Article 1er (loi de 1905)",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00012",
+                    " : liberté de conscience et libre exercice des cultes, sous réserve de l’ordre public.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _law("Article 2 (loi de 1905)"),
-                const TextSpan(
-                  text:
-                      " : « La République ne reconnaît, ne salarie ni ne subventionne aucun culte. »",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00013",
+                    "Article 2 (loi de 1905)",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00014",
+                    " : « La République ne reconnaît, ne salarie ni ne subventionne aucun culte. »",
+                  ),
                 ),
               ]),
               const SizedBox(height: 12),
-              const _NotaBox(
-                title: "À connaître",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00015",
+                  "À connaître",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La circulaire du Premier ministre du 13 avril 2007 (charte de la laïcité dans les services publics) rappelle la neutralité des agents publics ; la charte doit être affichée dans les services publics.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00016",
+                      "La circulaire du Premier ministre du 13 avril 2007 (charte de la laïcité dans les services publics) rappelle la neutralité des agents publics ; la charte doit être affichée dans les services publics.",
+                    ),
                   ),
                 ],
               ),
@@ -164,36 +230,70 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
 
           // I. Qu'est-ce que la laïcité ?
           _ConditionCard(
-            title: "I — Qu’est-ce que la laïcité ?",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00017",
+              "I — Qu’est-ce que la laïcité ?",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Définition"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00018",
+                  "A) Définition",
+                ),
+              ),
               _Paragraph(
-                "Il n’existe pas de définition juridique officielle unique. "
-                "Le Conseil d’État (Rapport public 2004 « Un siècle de laïcité ») décrit une triple dimension :",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00019",
+                      "Il n’existe pas de définition juridique officielle unique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00020",
+                      "Le Conseil d’État (Rapport public 2004 « Un siècle de laïcité ») décrit une triple dimension :",
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Neutralité de l’État vis-à-vis des croyances et des religions.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00021",
+                  "Neutralité de l’État vis-à-vis des croyances et des religions.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Respect de la liberté de religion et du libre exercice des cultes.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00022",
+                  "Respect de la liberté de religion et du libre exercice des cultes.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Pluralisme : toutes les religions doivent pouvoir s’exprimer.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00023",
+                  "Pluralisme : toutes les religions doivent pouvoir s’exprimer.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00024",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La laïcité n’est ni le reniement des religions, ni un choix spirituel particulier : c’est un cadre commun d’organisation de l’espace public et du service public.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00025",
+                      "La laïcité n’est ni le reniement des religions, ni un choix spirituel particulier : c’est un cadre commun d’organisation de l’espace public et du service public.",
+                    ),
                   ),
                 ],
               ),
@@ -204,63 +304,129 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
 
           // II. Agents publics
           _ConditionCard(
-            title: "II — La laïcité et les agents publics",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00026",
+              "II — La laïcité et les agents publics",
+            ),
             cardColor: cardAgents,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Neutralité dans l’exercice des fonctions"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00027",
+                  "A) Neutralité dans l’exercice des fonctions",
+                ),
+              ),
               _Paragraph(
-                "Il est interdit d’avantager ou de pénaliser les usagers (ou les cocontractants de l’administration) "
-                "en fonction de convictions politiques, religieuses ou philosophiques.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00028",
+                      "Il est interdit d’avantager ou de pénaliser les usagers (ou les cocontractants de l’administration) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00029",
+                      "en fonction de convictions politiques, religieuses ou philosophiques.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "La neutralité s’applique aussi aux salariés d’organismes de droit privé chargés d’une mission de service public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00030",
+                  "La neutralité s’applique aussi aux salariés d’organismes de droit privé chargés d’une mission de service public.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En revanche, elle ne s’applique pas aux salariés d’organismes de droit privé n’assurant pas une mission de service public (ex : agents d’entretien dans les commissariats).",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("B) Ne pas manifester sa religion au travail"),
-              _Paragraph(
-                "Les agents publics ne doivent pas adopter d’attitudes pouvant traduire une adhésion visible à une croyance. "
-                "Cela peut constituer une faute professionnelle et entraîner une sanction disciplinaire.",
-              ),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "Ne pas porter de signe religieux visible sur le lieu de travail.",
-              ),
-              _BulletPoint(
-                text:
-                    "Ne pas faire de prosélytisme auprès des usagers ou des collègues (ex : courriels religieux).",
-              ),
-              _BulletPoint(
-                text:
-                    "Ne pas utiliser les moyens du service à des fins religieuses (ex : afficher son mail pro sur le site d’une association religieuse).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00031",
+                  "En revanche, elle ne s’applique pas aux salariés d’organismes de droit privé n’assurant pas une mission de service public (ex : agents d’entretien dans les commissariats).",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Liberté de conscience préservée (hors service)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00032",
+                  "B) Ne pas manifester sa religion au travail",
+                ),
               ),
               _Paragraph(
-                "Il est interdit de prendre en compte les opinions ou la pratique religieuse (hors travail) "
-                "dans le recrutement, la carrière ou la gestion administrative des agents.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00033",
+                      "Les agents publics ne doivent pas adopter d’attitudes pouvant traduire une adhésion visible à une croyance. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00034",
+                      "Cela peut constituer une faute professionnelle et entraîner une sanction disciplinaire.",
+                    ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00035",
+                  "Ne pas porter de signe religieux visible sur le lieu de travail.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00036",
+                  "Ne pas faire de prosélytisme auprès des usagers ou des collègues (ex : courriels religieux).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00037",
+                  "Ne pas utiliser les moyens du service à des fins religieuses (ex : afficher son mail pro sur le site d’une association religieuse).",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00038",
+                  "C) Liberté de conscience préservée (hors service)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00039",
+                      "Il est interdit de prendre en compte les opinions ou la pratique religieuse (hors travail) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00040",
+                      "dans le recrutement, la carrière ou la gestion administrative des agents.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Devoir de réserve",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00041",
+                  "Devoir de réserve",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans la sphère privée, l’expression des convictions est possible mais doit rester compatible avec la dignité, l’impartialité et la sérénité des fonctions (pas de manifestation excessive susceptible d’avoir un retentissement sur le service).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00042",
+                      "Dans la sphère privée, l’expression des convictions est possible mais doit rester compatible avec la dignité, l’impartialité et la sérénité des fonctions (pas de manifestation excessive susceptible d’avoir un retentissement sur le service).",
+                    ),
                   ),
                 ],
               ),
@@ -271,80 +437,172 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
 
           // III. Usagers & citoyens
           _ConditionCard(
-            title:
-                "III — La laïcité et les usagers du service public / citoyens",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00043",
+              "III — La laïcité et les usagers du service public / citoyens",
+            ),
             cardColor: cardUsagers,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle(
-                "A) Principe : liberté d’expression des convictions",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00044",
+                  "A) Principe : liberté d’expression des convictions",
+                ),
               ),
-              const _Paragraph(
-                "La règle est que les usagers ont le droit d’exprimer leurs convictions religieuses. "
-                "Ils peuvent porter des signes religieux (kippa, foulard, turban, etc.) dans les services publics "
-                "(commissariat, mairie, préfecture, équipement public).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00045",
+                      "La règle est que les usagers ont le droit d’exprimer leurs convictions religieuses. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00046",
+                      "Ils peuvent porter des signes religieux (kippa, foulard, turban, etc.) dans les services publics ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00047",
+                      "(commissariat, mairie, préfecture, équipement public).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Cette liberté vaut aussi dans l’espace public : chacun peut porter des signes religieux dans la rue, "
-                "exprimer ses convictions et exercer son culte, dès lors que l’ordre public n’est pas troublé.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00048",
+                      "Cette liberté vaut aussi dans l’espace public : chacun peut porter des signes religieux dans la rue, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00049",
+                      "exprimer ses convictions et exercer son culte, dès lors que l’ordre public n’est pas troublé.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Exceptions : limites à respecter"),
-              const _Paragraph(
-                "La charte de la laïcité dans les services publics rappelle que l’expression des convictions religieuses "
-                "s’exerce dans les limites : neutralité du service public, bon fonctionnement, ordre public, santé et hygiène.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00050",
+                  "B) Exceptions : limites à respecter",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00051",
+                      "La charte de la laïcité dans les services publics rappelle que l’expression des convictions religieuses ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00052",
+                      "s’exerce dans les limites : neutralité du service public, bon fonctionnement, ordre public, santé et hygiène.",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("1) Motifs d’ordre public"),
-              const _BulletPoint(
-                text:
-                    "Documents d’identité : obligation d’être photographié « tête nue » (décret de 1955).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00053",
+                  "1) Motifs d’ordre public",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Dissimulation du visage : interdite dans l’espace public par la loi du 11 octobre 2010 (sauf lieux de culte ouverts au public).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00054",
+                  "Documents d’identité : obligation d’être photographié « tête nue » (décret de 1955).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Prière de rue : si elle gêne la circulation ou trouble l’ordre public, elle peut être limitée.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00055",
+                  "Dissimulation du visage : interdite dans l’espace public par la loi du 11 octobre 2010 (sauf lieux de culte ouverts au public).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00056",
+                  "Prière de rue : si elle gêne la circulation ou trouble l’ordre public, elle peut être limitée.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("2) Bon fonctionnement / santé / hygiène"),
-              const _Paragraph(
-                "Un usager ne peut pas exiger qu’un service public s’adapte à ses convictions religieuses.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00057",
+                  "2) Bon fonctionnement / santé / hygiène",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00058",
+                  "Un usager ne peut pas exiger qu’un service public s’adapte à ses convictions religieuses.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "Exemple",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Restauration collective : la circulaire du ministère de l’Intérieur du 16 août 2011 rappelle que les menus confessionnels ne sont ni un droit pour les usagers, ni une obligation pour les collectivités. Des menus de substitution peuvent exister en pratique.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00059",
+                      "Restauration collective : la circulaire du ministère de l’Intérieur du 16 août 2011 rappelle que les menus confessionnels ne sont ni un droit pour les usagers, ni une obligation pour les collectivités. Des menus de substitution peuvent exister en pratique.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("3) Élèves des collèges et lycées publics"),
-              const _Paragraph(
-                "Ils ne doivent pas porter de signes religieux ostensibles dans l’enceinte des établissements. "
-                "Des signes « discrets » peuvent être autorisés.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00060",
+                  "3) Élèves des collèges et lycées publics",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00061",
+                      "Ils ne doivent pas porter de signes religieux ostensibles dans l’enceinte des établissements. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00062",
+                      "Des signes « discrets » peuvent être autorisés.",
+                    ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _law("Loi du 15 mars 2004"),
-                const TextSpan(
-                  text:
-                      " : encadre le port de signes religieux dans les écoles, collèges et lycées publics.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00063",
+                    "Loi du 15 mars 2004",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                    "f00064",
+                    " : encadre le port de signes religieux dans les écoles, collèges et lycées publics.",
+                  ),
                 ),
               ]),
             ],
@@ -354,36 +612,72 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
 
           // Aide-mémoire (visuel + clair)
           _ConditionCard(
-            title: "Aide-mémoire (à retenir)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00065",
+              "Aide-mémoire (à retenir)",
+            ),
             cardColor: cardMemo,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Règle générale"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00066",
+                  "Règle générale",
+                ),
+              ),
               _Paragraph(
-                "Tous les citoyens peuvent porter des signes religieux en tous lieux (commissariat, mairie, rue, équipements publics, etc.).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00067",
+                  "Tous les citoyens peuvent porter des signes religieux en tous lieux (commissariat, mairie, rue, équipements publics, etc.).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Sauf (3 cas majeurs)"),
-              _IntroBullet(
-                text:
-                    "Les agents publics dans l’exercice de leurs fonctions (neutralité).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00068",
+                  "Sauf (3 cas majeurs)",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Les élèves des collèges et lycées publics dans l’enceinte des établissements (signes ostensibles interdits).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00069",
+                  "Les agents publics dans l’exercice de leurs fonctions (neutralité).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "La dissimulation du visage (voile intégral) dans l’espace public (interdite par la loi du 11 octobre 2010).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00070",
+                  "Les élèves des collèges et lycées publics dans l’enceinte des établissements (signes ostensibles interdits).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00071",
+                  "La dissimulation du visage (voile intégral) dans l’espace public (interdite par la loi du 11 octobre 2010).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Ne pas confondre",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                  "f00072",
+                  "Ne pas confondre",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Voile intégral (visage dissimulé) ≠ voile couvrant les cheveux : seul le voile intégral est interdit dans l’espace public.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00073",
+                      "Voile intégral (visage dissimulé) ≠ voile couvrant les cheveux : seul le voile intégral est interdit dans l’espace public.",
+                    ),
                   ),
                 ],
               ),
@@ -394,14 +688,26 @@ class PaGpxLaiciteDlpajPage extends StatelessWidget {
 
           // Pour aller plus loin (sans lien cliquable)
           _ConditionCard(
-            title: "Pour aller plus loin",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+              "f00074",
+              "Pour aller plus loin",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Consulter l’intranet de la direction des libertés publiques et des affaires juridiques (DLPAJ) "
-                "pour des ressources complémentaires sur la laïcité et le cadre juridique applicable.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00075",
+                      "Consulter l’intranet de la direction des libertés publiques et des affaires juridiques (DLPAJ) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart",
+                      "f00076",
+                      "pour des ressources complémentaires sur la laïcité et le cadre juridique applicable.",
+                    ),
               ),
             ],
           ),

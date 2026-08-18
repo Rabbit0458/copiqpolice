@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class HierarchiePnPage extends StatelessWidget {
   const HierarchiePnPage({super.key});
@@ -65,10 +66,18 @@ class HierarchiePnPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Hiérarchie",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+            "f00002",
+            "Hiérarchie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -83,7 +92,11 @@ class HierarchiePnPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Hiérarchie des personnels de la Police nationale",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00003",
+              "Hiérarchie des personnels de la Police nationale",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -94,17 +107,41 @@ class HierarchiePnPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Présentation",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00004",
+              "Présentation",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La Police nationale comprend des personnels actifs, ainsi que des personnels administratifs, "
-                "techniques et scientifiques soumis au statut général de la fonction publique. "
-                "Ces fonctionnaires appartiennent à des corps organisés par niveaux hiérarchiques.\n\n"
-                "Elle comprend aussi d’autres catégories d’agents concourant aux missions de sécurité : "
-                "policiers adjoints, cadets de la République et réservistes.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00005",
+                      "La Police nationale comprend des personnels actifs, ainsi que des personnels administratifs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00006",
+                      "techniques et scientifiques soumis au statut général de la fonction publique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00007",
+                      "Ces fonctionnaires appartiennent à des corps organisés par niveaux hiérarchiques.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00008",
+                      "Elle comprend aussi d’autres catégories d’agents concourant aux missions de sécurité : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00009",
+                      "policiers adjoints, cadets de la République et réservistes.",
+                    ),
               ),
             ],
           ),
@@ -112,30 +149,62 @@ class HierarchiePnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Repères visuels — galonnage",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00010",
+              "Repères visuels — galonnage",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur une image pour l’ouvrir en grand et zoomer (pincement).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00011",
+                  "Appuie sur une image pour l’ouvrir en grand et zoomer (pincement).",
+                ),
               ),
               SizedBox(height: 10),
               _OrgImageTile(
-                title: "Corps de conception et de direction",
-                subtitle: "Grades et appellations — commissaires",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00012",
+                  "Corps de conception et de direction",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00013",
+                  "Grades et appellations — commissaires",
+                ),
                 assetPath: "assets/images/ccd.png",
               ),
               SizedBox(height: 12),
               _OrgImageTile(
-                title: "Corps de commandement",
-                subtitle: "Grades et appellations — officiers",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00014",
+                  "Corps de commandement",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00015",
+                  "Grades et appellations — officiers",
+                ),
                 assetPath: "assets/images/cc.png",
               ),
               SizedBox(height: 12),
               _OrgImageTile(
-                title: "Corps d’encadrement et d’application",
-                subtitle: "Grades et appellations — gradés et gardiens",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00016",
+                  "Corps d’encadrement et d’application",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00017",
+                  "Grades et appellations — gradés et gardiens",
+                ),
                 assetPath: "assets/images/cea.png",
               ),
             ],
@@ -144,94 +213,262 @@ class HierarchiePnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — Personnels des services actifs",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00018",
+              "I — Personnels des services actifs",
+            ),
             cardColor: cardActive,
             accent: accentBlue,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Corps de conception et de direction"),
-              const _Paragraph(
-                "Il comprend les grades :\n"
-                "• Commissaire général de police\n"
-                "• Commissaire divisionnaire de police\n"
-                "• Commissaire de police\n\n"
-                "Il comprend aussi des emplois fonctionnels (direction/inspection) accessibles à partir du grade de commissaire divisionnaire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00019",
+                  "A) Corps de conception et de direction",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00020",
+                      "Il comprend les grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00021",
+                      "• Commissaire général de police\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00022",
+                      "• Commissaire divisionnaire de police\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00023",
+                      "• Commissaire de police\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00024",
+                      "Il comprend aussi des emplois fonctionnels (direction/inspection) accessibles à partir du grade de commissaire divisionnaire.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("Rôle"),
-              const _Paragraph(
-                "Les commissaires élaborent et mettent en œuvre les doctrines d’emploi et la direction des services. "
-                "Ils assument une responsabilité opérationnelle et organique et exercent une autorité sur les personnels affectés.\n\n"
-                "Placés à la tête d’une circonscription, d’un service (local, départemental ou zonal) ou d’un groupement de CRS, "
-                "ils exercent des fonctions de conception et de direction.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00025",
+                  "Rôle",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00026",
+                      "Les commissaires élaborent et mettent en œuvre les doctrines d’emploi et la direction des services. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00027",
+                      "Ils assument une responsabilité opérationnelle et organique et exercent une autorité sur les personnels affectés.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00028",
+                      "Placés à la tête d’une circonscription, d’un service (local, départemental ou zonal) ou d’un groupement de CRS, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00029",
+                      "ils exercent des fonctions de conception et de direction.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ils exercent les attributions de magistrat qui leur sont conférées par la loi.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00030",
+                      "Ils exercent les attributions de magistrat qui leur sont conférées par la loi.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Corps de commandement"),
-              const _Paragraph(
-                "Il comprend les grades :\n"
-                "• Commandant divisionnaire de police\n"
-                "• Commandant de police\n"
-                "• Capitaine de police\n\n"
-                "Appellations usuelles : « commandant » et « capitaine ».\n"
-                "Durant les 4 premières années après titularisation, les officiers du premier grade prennent l’appellation « lieutenant ».\n\n"
-                "Sous conditions d’ancienneté (et selon l’emploi exercé), des commandants peuvent être nommés à l’emploi de "
-                "commandant divisionnaire fonctionnel.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00031",
+                  "B) Corps de commandement",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00032",
+                      "Il comprend les grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00033",
+                      "• Commandant divisionnaire de police\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00034",
+                      "• Commandant de police\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00035",
+                      "• Capitaine de police\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00036",
+                      "Appellations usuelles : « commandant » et « capitaine ».\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00037",
+                      "Durant les 4 premières années après titularisation, les officiers du premier grade prennent l’appellation « lieutenant ».\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00038",
+                      "Sous conditions d’ancienneté (et selon l’emploi exercé), des commandants peuvent être nommés à l’emploi de ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00039",
+                      "commandant divisionnaire fonctionnel.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("Rôle"),
-              const _Paragraph(
-                "Les officiers secondent ou suppléent les commissaires dans l’exercice de leurs fonctions "
-                "(sauf cas où la loi impose l’intervention du commissaire).\n\n"
-                "Ils peuvent diriger certains services et commander l’ensemble des personnels placés sous leur autorité.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00040",
+                  "Rôle",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00041",
+                      "Les officiers secondent ou suppléent les commissaires dans l’exercice de leurs fonctions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00042",
+                      "(sauf cas où la loi impose l’intervention du commissaire).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00043",
+                      "Ils peuvent diriger certains services et commander l’ensemble des personnels placés sous leur autorité.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Ils exercent les attributions prévues par le ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00044",
+                    "Ils exercent les attributions prévues par le ",
+                  ),
                 ),
-                law("Code de procédure pénale"),
-                const TextSpan(
-                  text:
-                      " et des textes réglementaires propres à leur service d’emploi (discipline, formation, etc.).",
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00045",
+                    "Code de procédure pénale",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00046",
+                    " et des textes réglementaires propres à leur service d’emploi (discipline, formation, etc.).",
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("C) Corps d’encadrement et d’application"),
-              const _Paragraph(
-                "Les gradés et gardiens participent aux missions des services actifs et exercent les compétences "
-                "que leur confère le Code de procédure pénale.\n\n"
-                "Les majors de police et brigadiers-chefs assurent l’encadrement des gardiens de la paix, des policiers adjoints "
-                "et des membres de la réserve opérationnelle.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00047",
+                  "C) Corps d’encadrement et d’application",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00048",
+                      "Les gradés et gardiens participent aux missions des services actifs et exercent les compétences ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00049",
+                      "que leur confère le Code de procédure pénale.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00050",
+                      "Les majors de police et brigadiers-chefs assurent l’encadrement des gardiens de la paix, des policiers adjoints ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00051",
+                      "et des membres de la réserve opérationnelle.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("Grades & appellations usuelles"),
-              const _BulletPoint(text: "Major de police — « major »."),
-              const _BulletPoint(
-                text: "Brigadier-chef de police — « brigadier-chef ».",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00052",
+                  "Grades & appellations usuelles",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Gardien de la paix — « sous-brigadier » (gardien ayant atteint le 6e échelon) / « gardien ».",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00053",
+                  "Major de police — « major ».",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00054",
+                  "Brigadier-chef de police — « brigadier-chef ».",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00055",
+                  "Gardien de la paix — « sous-brigadier » (gardien ayant atteint le 6e échelon) / « gardien ».",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sous certaines conditions d’ancienneté et selon l’emploi exercé, les majors peuvent accéder à un emploi fonctionnel de responsable d’unité locale de police.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00056",
+                      "Sous certaines conditions d’ancienneté et selon l’emploi exercé, les majors peuvent accéder à un emploi fonctionnel de responsable d’unité locale de police.",
+                    ),
                   ),
                 ],
               ),
@@ -241,39 +478,123 @@ class HierarchiePnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Personnels administratifs",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00057",
+              "II — Personnels administratifs",
+            ),
             cardColor: cardAdmin,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Corps des attachés d’administration de l’intérieur",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00058",
+                  "A) Corps des attachés d’administration de l’intérieur",
+                ),
               ),
               _Paragraph(
-                "Grades :\n"
-                "• Attaché principal\n"
-                "• Attaché\n\n"
-                "Les attachés exercent des tâches de gestion administrative, financière ou logistique, "
-                "et peuvent encadrer des personnels / piloter une unité de gestion.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00059",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00060",
+                      "• Attaché principal\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00061",
+                      "• Attaché\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00062",
+                      "Les attachés exercent des tâches de gestion administrative, financière ou logistique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00063",
+                      "et peuvent encadrer des personnels / piloter une unité de gestion.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Corps des secrétaires administratifs"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00064",
+                  "B) Corps des secrétaires administratifs",
+                ),
+              ),
               _Paragraph(
-                "Grades :\n"
-                "• Classe exceptionnelle\n"
-                "• Classe supérieure\n"
-                "• Classe normale\n\n"
-                "Ils réalisent les tâches administratives les plus importantes et peuvent encadrer des adjoints/agents administratifs. "
-                "Certains peuvent être assistants d’enquête.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00065",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00066",
+                      "• Classe exceptionnelle\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00067",
+                      "• Classe supérieure\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00068",
+                      "• Classe normale\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00069",
+                      "Ils réalisent les tâches administratives les plus importantes et peuvent encadrer des adjoints/agents administratifs. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00070",
+                      "Certains peuvent être assistants d’enquête.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Corps des adjoints administratifs"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00071",
+                  "C) Corps des adjoints administratifs",
+                ),
+              ),
               _Paragraph(
-                "Grades :\n"
-                "• Adjoint administratif principal de 1re classe\n"
-                "• Adjoint administratif principal de 2e classe\n"
-                "• Adjoint administratif\n\n"
-                "Ils participent à des tâches administratives variées : correspondance, classement, gestion de pièces et dossiers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00072",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00073",
+                      "• Adjoint administratif principal de 1re classe\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00074",
+                      "• Adjoint administratif principal de 2e classe\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00075",
+                      "• Adjoint administratif\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00076",
+                      "Ils participent à des tâches administratives variées : correspondance, classement, gestion de pièces et dossiers.",
+                    ),
               ),
             ],
           ),
@@ -281,42 +602,128 @@ class HierarchiePnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Personnels techniques et scientifiques",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00077",
+              "III — Personnels techniques et scientifiques",
+            ),
             cardColor: cardTech,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Ingénieurs de la police technique et scientifique"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00078",
+                  "A) Ingénieurs de la police technique et scientifique",
+                ),
+              ),
               _Paragraph(
-                "Grades :\n"
-                "• Ingénieur en chef\n"
-                "• Ingénieur principal\n"
-                "• Ingénieur\n\n"
-                "Ils effectuent constatations, examens et analyses demandés par les magistrats et services enquêteurs. "
-                "Ils encadrent des personnels et peuvent diriger des unités selon leur compétence.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00079",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00080",
+                      "• Ingénieur en chef\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00081",
+                      "• Ingénieur principal\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00082",
+                      "• Ingénieur\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00083",
+                      "Ils effectuent constatations, examens et analyses demandés par les magistrats et services enquêteurs. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00084",
+                      "Ils encadrent des personnels et peuvent diriger des unités selon leur compétence.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Techniciens de la police technique et scientifique",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00085",
+                  "B) Techniciens de la police technique et scientifique",
+                ),
               ),
               _Paragraph(
-                "Grades :\n"
-                "• Technicien en chef\n"
-                "• Technicien principal\n"
-                "• Technicien\n\n"
-                "Ils assistent les ingénieurs, participent aux analyses, exploitent la documentation et peuvent encadrer "
-                "les agents spécialisés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00086",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00087",
+                      "• Technicien en chef\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00088",
+                      "• Technicien principal\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00089",
+                      "• Technicien\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00090",
+                      "Ils assistent les ingénieurs, participent aux analyses, exploitent la documentation et peuvent encadrer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00091",
+                      "les agents spécialisés.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "C) Agents spécialisés de la police technique et scientifique",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00092",
+                  "C) Agents spécialisés de la police technique et scientifique",
+                ),
               ),
               _Paragraph(
-                "Grades :\n"
-                "• Agent spécialisé principal\n"
-                "• Agent spécialisé\n\n"
-                "Ils interviennent notamment sur la signalisation, les scènes d’infraction, les prélèvements, "
-                "l’exploitation des traces/indices et l’alimentation des fichiers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00093",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00094",
+                      "• Agent spécialisé principal\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00095",
+                      "• Agent spécialisé\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00096",
+                      "Ils interviennent notamment sur la signalisation, les scènes d’infraction, les prélèvements, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00097",
+                      "l’exploitation des traces/indices et l’alimentation des fichiers.",
+                    ),
               ),
             ],
           ),
@@ -324,28 +731,83 @@ class HierarchiePnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title:
-                "IV — Filière SIC (systèmes d’information et de communication)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00098",
+              "IV — Filière SIC (systèmes d’information et de communication)",
+            ),
             cardColor: cardActive,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Ingénieurs SIC"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00099",
+                  "A) Ingénieurs SIC",
+                ),
+              ),
               _Paragraph(
-                "Grades :\n"
-                "• Ingénieur hors classe\n"
-                "• Ingénieur principal\n"
-                "• Ingénieur\n\n"
-                "Ils assurent conception, mise en œuvre, expertise, conseil, contrôle et encadrement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00100",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00101",
+                      "• Ingénieur hors classe\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00102",
+                      "• Ingénieur principal\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00103",
+                      "• Ingénieur\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00104",
+                      "Ils assurent conception, mise en œuvre, expertise, conseil, contrôle et encadrement.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Techniciens SIC"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00105",
+                  "B) Techniciens SIC",
+                ),
+              ),
               _Paragraph(
-                "Grades :\n"
-                "• Classe exceptionnelle\n"
-                "• Classe supérieure\n"
-                "• Classe normale\n\n"
-                "Ils exercent dans l’exploitation, la production, l’installation et la gestion des systèmes d’information et de communication.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00106",
+                      "Grades :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00107",
+                      "• Classe exceptionnelle\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00108",
+                      "• Classe supérieure\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00109",
+                      "• Classe normale\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00110",
+                      "Ils exercent dans l’exploitation, la production, l’installation et la gestion des systèmes d’information et de communication.",
+                    ),
               ),
             ],
           ),
@@ -353,75 +815,179 @@ class HierarchiePnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Autres catégories d’agents",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+              "f00111",
+              "V — Autres catégories d’agents",
+            ),
             cardColor: cardOther,
             accent: accentAmber,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Les policiers adjoints"),
-              const _Paragraph(
-                "Recrutés sous contrat (3 ans, renouvelable une fois), ils concourent aux missions de sécurité "
-                "des personnes et des biens. Ils agissent sous l’autorité et la responsabilité de policiers titulaires.\n\n"
-                "Sous certaines conditions, ils peuvent exercer les fonctions d’assistant d’enquête.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00112",
+                  "A) Les policiers adjoints",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00113",
+                      "Recrutés sous contrat (3 ans, renouvelable une fois), ils concourent aux missions de sécurité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00114",
+                      "des personnes et des biens. Ils agissent sous l’autorité et la responsabilité de policiers titulaires.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00115",
+                      "Sous certaines conditions, ils peuvent exercer les fonctions d’assistant d’enquête.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Ils disposent de la qualité d’agent de police judiciaire adjoint — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00116",
+                    "Ils disposent de la qualité d’agent de police judiciaire adjoint — ",
+                  ),
                 ),
-                law("article 21-1° ter du Code de procédure pénale"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00117",
+                    "article 21-1° ter du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Ils peuvent constater certaines contraventions au code de la route — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00118",
+                    "Ils peuvent constater certaines contraventions au code de la route — ",
+                  ),
                 ),
-                law("article R. 130-1-1 du Code de la route"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00119",
+                    "article R. 130-1-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Les cadets de la République"),
-              const _Paragraph(
-                "Recrutés sous contrat (3 ans, renouvelable une fois), ils ont le statut de policier adjoint.\n"
-                "La 1re année : formation spécifique de 12 mois + préparation au concours de gardien de la paix.\n"
-                "Après cette année, ils peuvent se présenter au concours et sont affectés comme policiers adjoints.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00120",
+                  "B) Les cadets de la République",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00121",
+                      "Recrutés sous contrat (3 ans, renouvelable une fois), ils ont le statut de policier adjoint.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00122",
+                      "La 1re année : formation spécifique de 12 mois + préparation au concours de gardien de la paix.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00123",
+                      "Après cette année, ils peuvent se présenter au concours et sont affectés comme policiers adjoints.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Ils disposent également de la qualité d’APJA — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00124",
+                    "Ils disposent également de la qualité d’APJA — ",
+                  ),
                 ),
-                law("article 21-1° ter du Code de procédure pénale"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00125",
+                    "article 21-1° ter du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Les réservistes"),
-              const _Paragraph(
-                "1) Réserve opérationnelle : renfort temporaire aux forces de sécurité intérieure et missions de solidarité "
-                "(hors maintien/rétablissement de l’ordre public). Elle peut inclure retraités des corps actifs et volontaires.\n\n"
-                "2) Réserve citoyenne : missions bénévoles et occasionnelles (solidarité, médiation, éducation à la loi, prévention).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                  "f00126",
+                  "C) Les réservistes",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00127",
+                      "1) Réserve opérationnelle : renfort temporaire aux forces de sécurité intérieure et missions de solidarité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00128",
+                      "(hors maintien/rétablissement de l’ordre public). Elle peut inclure retraités des corps actifs et volontaires.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                      "f00129",
+                      "2) Réserve citoyenne : missions bénévoles et occasionnelles (solidarité, médiation, éducation à la loi, prévention).",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Les réservistes citoyens n’ont aucune prérogative de puissance publique — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00130",
+                    "Les réservistes citoyens n’ont aucune prérogative de puissance publique — ",
+                  ),
                 ),
-                law("article L. 411-18 du Code de la sécurité intérieure"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00131",
+                    "article L. 411-18 du Code de la sécurité intérieure",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Condition de résidence/ intégration mentionnée notamment à ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00132",
+                    "Condition de résidence/ intégration mentionnée notamment à ",
+                  ),
                 ),
-                law("l’article L. 413-7 du CESEDA"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart",
+                    "f00133",
+                    "l’article L. 413-7 du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -461,7 +1027,9 @@ class _OrgImageTile extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: (isDark ? Colors.white10 : Colors.black12).withValues(alpha: .8),
+            color: (isDark ? Colors.white10 : Colors.black12).withValues(
+              alpha: .8,
+            ),
             width: 0.8,
           ),
         ),
@@ -851,9 +1419,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

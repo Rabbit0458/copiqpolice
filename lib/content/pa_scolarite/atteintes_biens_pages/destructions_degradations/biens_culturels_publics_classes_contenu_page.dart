@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
   const PaBiensCulturelsPublicsClassesPage({super.key});
@@ -56,10 +57,18 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions, dégradations",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+            "f00002",
+            "Destructions, dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Destructions, dégradations et détériorations sur biens culturels publics ou classés",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+              "f00003",
+              "Destructions, dégradations et détériorations sur biens culturels publics ou classés",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,29 +99,56 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une infraction la destruction, la dégradation ou la détérioration lorsqu’elle porte sur certains biens culturels "
-                "publics, classés, inscrits ou affectés au culte (protection renforcée du patrimoine national).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00005",
+                      "Constitue une infraction la destruction, la dégradation ou la détérioration lorsqu’elle porte sur certains biens culturels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00006",
+                      "publics, classés, inscrits ou affectés au culte (protection renforcée du patrimoine national).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Immeuble / objet mobilier classé ou inscrit (code du patrimoine) ou archives privées classées.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00007",
+                  "Immeuble / objet mobilier classé ou inscrit (code du patrimoine) ou archives privées classées.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Patrimoine archéologique (au sens du code du patrimoine).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00008",
+                  "Patrimoine archéologique (au sens du code du patrimoine).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Biens culturels du domaine public mobilier ou exposés / conservés / déposés (musées de France, bibliothèques, médiathèques, services d’archives, lieux dépendant d’une personne publique/mission d’intérêt général, édifices affectés au culte).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00009",
+                  "Biens culturels du domaine public mobilier ou exposés / conservés / déposés (musées de France, bibliothèques, médiathèques, services d’archives, lieux dépendant d’une personne publique/mission d’intérêt général, édifices affectés au culte).",
+                ),
               ),
-              _IntroBullet(text: "Édifice affecté au culte."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00010",
+                  "Édifice affecté au culte.",
+                ),
+              ),
             ],
           ),
 
@@ -116,22 +156,30 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-3-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00012",
+                    "Article 322-3-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les destructions, dégradations ou détériorations portant sur des biens culturels publics ou classés.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00013",
+                    " : définit et réprime les destructions, dégradations ou détériorations portant sur des biens culturels publics ou classés.",
+                  ),
                 ),
               ]),
             ],
@@ -141,54 +189,127 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une atteinte matérielle"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00015",
+                  "A) Une atteinte matérielle",
+                ),
+              ),
               _Paragraph(
-                "Le législateur ne précise pas les moyens : n’importe quel moyen peut être employé "
-                "(à l’exception de l’incendie et de l’usage de substances explosives, qui relèvent d’autres incriminations).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00016",
+                      "Le législateur ne précise pas les moyens : n’importe quel moyen peut être employé ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00017",
+                      "(à l’exception de l’incendie et de l’usage de substances explosives, qui relèvent d’autres incriminations).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Sur un bien culturel public ou classé"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00018",
+                  "B) Sur un bien culturel public ou classé",
+                ),
+              ),
               _Paragraph(
-                "Les biens faisant partie du patrimoine national font l’objet d’une protection particulière afin d’éviter "
-                "la disparition d’objets liés à l’histoire et à l’identité du pays.\n"
-                "La protection renforcée s’applique notamment aux biens suivants :",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00019",
+                      "Les biens faisant partie du patrimoine national font l’objet d’une protection particulière afin d’éviter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00020",
+                      "la disparition d’objets liés à l’histoire et à l’identité du pays.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00021",
+                      "La protection renforcée s’applique notamment aux biens suivants :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Immeuble ou objet mobilier classé ou inscrit (code du patrimoine) ou document d’archives privées classé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00022",
+                  "Immeuble ou objet mobilier classé ou inscrit (code du patrimoine) ou document d’archives privées classé.",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Patrimoine archéologique au sens de "),
                 TextSpan(
-                  text: "l’article L. 510-1 du code du patrimoine",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00023",
+                    "Patrimoine archéologique au sens de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00024",
+                    "l’article L. 510-1 du code du patrimoine",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Bien culturel du domaine public mobilier ou exposé / conservé / déposé (même temporairement) dans un musée de France, une bibliothèque, une médiathèque, un service d’archives, ou dans un lieu dépendant d’une personne publique/mission d’intérêt général, ou dans un édifice affecté au culte.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00025",
+                  "Bien culturel du domaine public mobilier ou exposé / conservé / déposé (même temporairement) dans un musée de France, une bibliothèque, une médiathèque, un service d’archives, ou dans un lieu dépendant d’une personne publique/mission d’intérêt général, ou dans un édifice affecté au culte.",
+                ),
               ),
-              _BulletPoint(text: "Édifice affecté au culte."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00026",
+                  "Édifice affecté au culte.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("C) Entraînant un dommage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00027",
+                  "C) Entraînant un dommage",
+                ),
+              ),
               _Paragraph(
-                "Les résultats visés sont identiques à ceux des destructions volontaires : destruction, dégradation, détérioration.\n"
-                "Le dommage peut être léger ou important : il suffit que le bien endommagé fasse partie de ceux protégés "
-                "par l’article 322-3-1 du Code pénal.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00028",
+                      "Les résultats visés sont identiques à ceux des destructions volontaires : destruction, dégradation, détérioration.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00029",
+                      "Le dommage peut être léger ou important : il suffit que le bien endommagé fasse partie de ceux protégés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00030",
+                      "par l’article 322-3-1 du Code pénal.",
+                    ),
               ),
             ],
           ),
@@ -197,15 +318,31 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+              "f00031",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’auteur doit avoir la volonté d’occasionner un dommage sur le bien, "
-                "en sachant qu’il présente un intérêt pour la collectivité.\n"
-                "L’infraction est constituée même si l’auteur est propriétaire du bien détruit, dégradé ou détérioré.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00032",
+                      "L’auteur doit avoir la volonté d’occasionner un dommage sur le bien, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00033",
+                      "en sachant qu’il présente un intérêt pour la collectivité.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                      "f00034",
+                      "L’infraction est constituée même si l’auteur est propriétaire du bien détruit, dégradé ou détérioré.",
+                    ),
               ),
             ],
           ),
@@ -214,26 +351,37 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+              "f00035",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-3, 1° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00036",
+                    "Article 322-3, 1° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00037",
+                    " : circonstance aggravante lorsque l’infraction est commise ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : circonstance aggravante lorsque l’infraction est commise ",
-                ),
-                TextSpan(
-                  text:
-                      "par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00038",
+                    "par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                  ),
                 ),
               ]),
             ],
@@ -243,89 +391,153 @@ class PaBiensCulturelsPublicsClassesPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+              "f00039",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00040",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
 
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple (délit) — "),
                 TextSpan(
-                  text: "article 322-3-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00041",
+                    "Qualification simple (délit) — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00042",
+                    "article 322-3-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "7 ans d’emprisonnement et 100 000 € d’amende (ou 1/2 de la valeur du bien).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00043",
+                  "7 ans d’emprisonnement et 100 000 € d’amende (ou 1/2 de la valeur du bien).",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée — "),
                 TextSpan(
-                  text: "article 322-3-1 alinéa 6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00044",
+                    "Qualification aggravée — ",
                   ),
                 ),
                 TextSpan(
-                  text: " (avec la circonstance du 1° de l’article 322-3) :",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00045",
+                    "article 322-3-1 alinéa 6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00046",
+                    " (avec la circonstance du 1° de l’article 322-3) :",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "10 ans d’emprisonnement et 150 000 € d’amende (ou 1/2 de la valeur du bien).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00047",
+                  "10 ans d’emprisonnement et 150 000 € d’amende (ou 1/2 de la valeur du bien).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00048",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00049",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00050",
+                    "l’article 322-17 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00051",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 322-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00052",
+                    "Tentative : OUI — ",
                   ),
                 ),
                 TextSpan(
-                  text: " (tentative punissable pour ces délits).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00053",
+                    "article 322-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                    "f00054",
+                    " (tentative punissable pour ces délits).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Complicité : OUI (punissable pour l’infraction consommée comme pour l’infraction tentée, pour personnes physiques ou morales).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart",
+                  "f00055",
+                  "Complicité : OUI (punissable pour l’infraction consommée comme pour l’infraction tentée, pour personnes physiques ou morales).",
+                ),
               ),
             ],
           ),
@@ -582,9 +794,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

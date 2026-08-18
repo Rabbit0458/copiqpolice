@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personne_grievement_blessee/personne_contenu.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -18,7 +19,8 @@ class PaPersonneBlesseGrievementntroPage extends StatefulWidget {
   const PaPersonneBlesseGrievementntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/personne_blessee_intro';
+  static const String routeName =
+      '/pa/dps_dpg/cadres_juridiques/personne_blessee_intro';
 
   @override
   State<PaPersonneBlesseGrievementntroPage> createState() =>
@@ -35,7 +37,8 @@ class _PersonneBlesseGrievementntroPageState
   static const BoxFit _kFit = BoxFit.cover;
 
   // Cible : ta page contenu existante
-  static const String _kTargetRouteName = PaPersonneBlesseGrievementContenuPage.routeName;
+  static const String _kTargetRouteName =
+      PaPersonneBlesseGrievementContenuPage.routeName;
 
   // Animations
   late final AnimationController _fadeCtrl = AnimationController(
@@ -56,8 +59,11 @@ class _PersonneBlesseGrievementntroPageState
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'LA DÉCOUVERTE D\'UNE PERSONNE GRIÈVEMENT BLESSÉE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/cadres_juridiques_pages/personne_grievement_blessee/personne_intro.dart",
+    "f00001",
+    'LA DÉCOUVERTE D\'UNE PERSONNE GRIÈVEMENT BLESSÉE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -164,7 +170,11 @@ class _PersonneBlesseGrievementntroPageState
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Le cadre juridique applicable lors de la découverte d'une personne grièvement blessée",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personne_grievement_blessee/personne_intro.dart",
+                        "f00002",
+                        "Le cadre juridique applicable lors de la découverte d'une personne grièvement blessée",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -279,7 +289,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personne_grievement_blessee/personne_intro.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

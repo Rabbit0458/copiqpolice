@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
   const ClassificationInfractionsContenuPageLoiPenal({super.key});
@@ -26,10 +26,18 @@ class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Classification des infractions",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+            "f00002",
+            "Classification des infractions",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,7 +51,11 @@ class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Classification des infractions",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00003",
+              "Classification des infractions",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -54,8 +66,16 @@ class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Accédez aux sections essentielles : définition, classification, tableau "
-            "de la classification tripartite et conséquences pratiques.",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux sections essentielles : définition, classification, tableau ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+                  "f00005",
+                  "de la classification tripartite et conséquences pratiques.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -69,9 +89,16 @@ class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
           // ================= MODULE 1 — DÉFINITION =================
           _ModuleCard(
             tag: 'loi_penale_classification_infractions_definition',
-            title: "DÉFINITION",
-            subtitle:
-                "Comprendre ce qu’est la classification des infractions et son objectif.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00006",
+              "DÉFINITION",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00007",
+              "Comprendre ce qu’est la classification des infractions et son objectif.",
+            ),
             imagePath: 'assets/images/classification.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -85,9 +112,16 @@ class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
           // ================= MODULE 2 — CLASSIFICATION =================
           _ModuleCard(
             tag: 'loi_penale_classification_infractions_classification',
-            title: "CLASSIFICATION DES INFRACTIONS",
-            subtitle:
-                "Contraventions, délits, crimes : critères de distinction et logique générale.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00008",
+              "CLASSIFICATION DES INFRACTIONS",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00009",
+              "Contraventions, délits, crimes : critères de distinction et logique générale.",
+            ),
             imagePath: 'assets/images/droit_penal_general.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -101,9 +135,16 @@ class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
           // ================= MODULE 3 — TABLEAU =================
           _ModuleCard(
             tag: 'loi_penale_classification_infractions_tableau_tripartite',
-            title: "TABLEAU : CLASSIFICATION TRIPARTITE DES INFRACTIONS",
-            subtitle:
-                "Tableau synthèse : catégories, juridictions, peines encourues (vue d’ensemble).",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00010",
+              "TABLEAU : CLASSIFICATION TRIPARTITE DES INFRACTIONS",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00011",
+              "Tableau synthèse : catégories, juridictions, peines encourues (vue d’ensemble).",
+            ),
             imagePath: 'assets/images/generalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -117,9 +158,16 @@ class ClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
           // ================= MODULE 4 — CONSÉQUENCES =================
           _ModuleCard(
             tag: 'loi_penale_classification_infractions_consequences',
-            title: "CONSÉQUENCES DE LA CLASSIFICATION DES INFRACTIONS",
-            subtitle:
-                "Effets en pratique : compétence, procédure, sanctions et impacts juridiques.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00012",
+              "CONSÉQUENCES DE LA CLASSIFICATION DES INFRACTIONS",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/classification_infractions_contenu_page.dart",
+              "f00013",
+              "Effets en pratique : compétence, procédure, sanctions et impacts juridiques.",
+            ),
             imagePath: 'assets/images/infraction_materiel.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -176,7 +224,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

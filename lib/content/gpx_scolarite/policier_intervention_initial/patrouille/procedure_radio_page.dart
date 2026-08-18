@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ProcedureRadioPage extends StatelessWidget {
   const ProcedureRadioPage({super.key});
@@ -56,7 +57,11 @@ class ProcedureRadioPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -74,7 +79,11 @@ class ProcedureRadioPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Procédure radio (ACROPOL)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00002",
+              "Procédure radio (ACROPOL)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,22 +95,37 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // Résumé ultra opérationnel (tout en haut)
           _ConditionCard(
-            title: "Mémo express (à appliquer à chaque prise d’ondes)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00003",
+              "Mémo express (à appliquer à chaque prise d’ondes)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les messages doivent être : clairs, calmes, précis et concis.\n"
-                "Le vouvoiement est de rigueur. La discipline radio fait partie de la sécurité opérationnelle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00004",
+                      "Les messages doivent être : clairs, calmes, précis et concis.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00005",
+                      "Le vouvoiement est de rigueur. La discipline radio fait partie de la sécurité opérationnelle.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "TRIPTYQUE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Indicatif — Motif — Infos essentielles (localisation / effectifs / mission).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00006",
+                      "Indicatif — Motif — Infos essentielles (localisation / effectifs / mission).",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -113,27 +137,59 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // 1) Essai radio
           _ConditionCard(
-            title: "1 — Effectuer un essai radio (avec la station directrice)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00007",
+              "1 — Effectuer un essai radio (avec la station directrice)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Avant l’essai"),
-              _BulletPoint(
-                text:
-                    "S’assurer que les ondes sont libres avant de procéder à l’essai.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00008",
+                  "Avant l’essai",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Après appui PTT, attendre ~1 seconde avant de parler (activation des circuits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00009",
+                  "S’assurer que les ondes sont libres avant de procéder à l’essai.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00010",
+                  "Après appui PTT, attendre ~1 seconde avant de parler (activation des circuits).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Message à émettre (modèle)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00011",
+                  "Message à émettre (modèle)",
+                ),
+              ),
               _NotaBox(
-                title: "MODÈLE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00012",
+                  "MODÈLE",
+                ),
                 bodySpans: [
-                  TextSpan(text: "« TN "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00013",
+                      "« TN ",
+                    ),
+                  ),
                   TextSpan(
                     text: "**",
                     style: TextStyle(
@@ -142,17 +198,37 @@ class ProcedureRadioPage extends StatelessWidget {
                     ),
                   ),
                   TextSpan(
-                    text: " de TV… pour un essai radio, comment reçu ? »",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00014",
+                      " de TV… pour un essai radio, comment reçu ? »",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Réponse attendue du CIC (exemple)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00015",
+                  "Réponse attendue du CIC (exemple)",
+                ),
+              ),
               _NotaBox(
-                title: "RÉPONSE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00016",
+                  "RÉPONSE",
+                ),
                 bodySpans: [
-                  TextSpan(text: "« TV… de TN "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00017",
+                      "« TV… de TN ",
+                    ),
+                  ),
                   TextSpan(
                     text: "**",
                     style: TextStyle(
@@ -160,23 +236,45 @@ class ProcedureRadioPage extends StatelessWidget {
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " je vous reçois 5/5, fort et clair. »"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00018",
+                      " je vous reçois 5/5, fort et clair. »",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
 
-              _SubTitle("À faire ensuite"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00019",
+                  "À faire ensuite",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Accuser réception pour confirmer que l’émission est bonne en retour.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00020",
+                  "Accuser réception pour confirmer que l’émission est bonne en retour.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "EN CAS D’ANOMALIE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00021",
+                  "EN CAS D’ANOMALIE",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Aviser la supervision du réseau radio (chefs de poste), le référent logistique local, le référent ACROPOL et le CIC.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00022",
+                      "Aviser la supervision du réseau radio (chefs de poste), le référent logistique local, le référent ACROPOL et le CIC.",
+                    ),
                   ),
                 ],
               ),
@@ -187,32 +285,117 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // 2) Terminologie
           _ConditionCard(
-            title: "2 — Terminologie radio (standard)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00023",
+              "2 — Terminologie radio (standard)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Règle d’or"),
-              _Paragraph("Le vouvoiement est de rigueur."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00024",
+                  "Règle d’or",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00025",
+                  "Le vouvoiement est de rigueur.",
+                ),
+              ),
               SizedBox(height: 10),
-              _SubTitle("Termes à utiliser"),
-              _IntroBullet(text: "Parlez…"),
-              _IntroBullet(text: "Transmettez…"),
-              _IntroBullet(text: "Attendez…"),
-              _IntroBullet(text: "Répétez…"),
-              _IntroBullet(text: "Reçu…"),
-              _IntroBullet(text: "Correct…"),
-              _IntroBullet(text: "Je vous reçois…"),
-              _IntroBullet(text: "J’épelle…"),
-              _IntroBullet(text: "Je décompose…"),
-              _IntroBullet(text: "Je réitère…"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00026",
+                  "Termes à utiliser",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00027",
+                  "Parlez…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00028",
+                  "Transmettez…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00029",
+                  "Attendez…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00030",
+                  "Répétez…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00031",
+                  "Reçu…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00032",
+                  "Correct…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00033",
+                  "Je vous reçois…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00034",
+                  "J’épelle…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00035",
+                  "Je décompose…",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00036",
+                  "Je réitère…",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "ASTUCE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si c’est long : tu coupes en blocs, tu annonces « Attendez », puis tu reprends proprement.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00037",
+                      "Si c’est long : tu coupes en blocs, tu annonces « Attendez », puis tu reprends proprement.",
+                    ),
                   ),
                 ],
               ),
@@ -223,44 +406,170 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // 3) Alphabet international + chiffres
           _ConditionCard(
-            title: "3 — Épeler & décomposer (procédure)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00038",
+              "3 — Épeler & décomposer (procédure)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les noms propres, groupes de lettres et mots pouvant prêter à confusion doivent être épelés. "
-                "Les chiffres doivent être décomposés selon la procédure.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00039",
+                      "Les noms propres, groupes de lettres et mots pouvant prêter à confusion doivent être épelés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00040",
+                      "Les chiffres doivent être décomposés selon la procédure.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Alphabet international (lettres)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00041",
+                  "Alphabet international (lettres)",
+                ),
+              ),
               _NotaBox(
                 title: "LETTRES",
                 bodySpans: [
-                  TextSpan(text: "ALPHA — BRAVO — CHARLIE — DELTA\n"),
-                  TextSpan(text: "ECHO — FOX-TROT — GOLF — HOTEL\n"),
-                  TextSpan(text: "INDIA — JULIETTE — KILO — LIMA\n"),
-                  TextSpan(text: "MIKE — NOVEMBER — OSCAR — PAPA\n"),
-                  TextSpan(text: "QUEBEC — ROMEO — SIERRA — TANGO\n"),
-                  TextSpan(text: "UNIFORM — VICTOR — WISKEY — X-RAY\n"),
-                  TextSpan(text: "YANKEE — ZOULOU"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00042",
+                      "ALPHA — BRAVO — CHARLIE — DELTA\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00043",
+                      "ECHO — FOX-TROT — GOLF — HOTEL\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00044",
+                      "INDIA — JULIETTE — KILO — LIMA\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00045",
+                      "MIKE — NOVEMBER — OSCAR — PAPA\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00046",
+                      "QUEBEC — ROMEO — SIERRA — TANGO\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00047",
+                      "UNIFORM — VICTOR — WISKEY — X-RAY\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00048",
+                      "YANKEE — ZOULOU",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Énoncé des chiffres"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00049",
+                  "Énoncé des chiffres",
+                ),
+              ),
               _NotaBox(
                 title: "CHIFFRES",
                 bodySpans: [
-                  TextSpan(text: "0 : zéro comme rien\n"),
-                  TextSpan(text: "1 : un tout seul\n"),
-                  TextSpan(text: "2 : un et un\n"),
-                  TextSpan(text: "3 : deux et un\n"),
-                  TextSpan(text: "4 : deux fois deux\n"),
-                  TextSpan(text: "5 : trois et deux\n"),
-                  TextSpan(text: "6 : deux fois trois\n"),
-                  TextSpan(text: "7 : quatre et trois\n"),
-                  TextSpan(text: "8 : deux fois quatre\n"),
-                  TextSpan(text: "9 : cinq et quatre"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00050",
+                      "0 : zéro comme rien\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00051",
+                      "1 : un tout seul\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00052",
+                      "2 : un et un\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00053",
+                      "3 : deux et un\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00054",
+                      "4 : deux fois deux\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00055",
+                      "5 : trois et deux\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00056",
+                      "6 : deux fois trois\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00057",
+                      "7 : quatre et trois\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00058",
+                      "8 : deux fois quatre\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00059",
+                      "9 : cinq et quatre",
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -270,37 +579,99 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // 4) Prendre en compte un terminal portatif
           _ConditionCard(
-            title: "4 — Prendre en compte un terminal portatif (P2G)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00060",
+              "4 — Prendre en compte un terminal portatif (P2G)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Contrôles essentiels"),
-              _BulletPoint(
-                text:
-                    "Vérifier l’état général : antenne, batterie + accroche, écran, boutons (conférences/volume).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00061",
+                  "Contrôles essentiels",
+                ),
               ),
-              _BulletPoint(text: "Allumer le terminal."),
-              _BulletPoint(text: "Vérifier le numéro de RFGI (MENU 81)."),
-              _BulletPoint(text: "Vérifier le niveau de batterie (MENU 51)."),
               _BulletPoint(
-                text:
-                    "Vérifier le son : écoute privative/collective (MENU 73) + mode silence (MENU 72).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00062",
+                  "Vérifier l’état général : antenne, batterie + accroche, écran, boutons (conférences/volume).",
+                ),
               ),
-              _BulletPoint(text: "Vérifier les voyants lumineux (MENU 78)."),
               _BulletPoint(
-                text:
-                    "Prendre une batterie de rechange (2 batteries pour 1 P2G).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00063",
+                  "Allumer le terminal.",
+                ),
               ),
-              _BulletPoint(text: "Émarger le registre ad hoc."),
-              _BulletPoint(text: "Faire un essai radio avec le CIC."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00064",
+                  "Vérifier le numéro de RFGI (MENU 81).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00065",
+                  "Vérifier le niveau de batterie (MENU 51).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00066",
+                  "Vérifier le son : écoute privative/collective (MENU 73) + mode silence (MENU 72).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00067",
+                  "Vérifier les voyants lumineux (MENU 78).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00068",
+                  "Prendre une batterie de rechange (2 batteries pour 1 P2G).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00069",
+                  "Émarger le registre ad hoc.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00070",
+                  "Faire un essai radio avec le CIC.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "PERTE / VOL",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00071",
+                  "PERTE / VOL",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En cas de perte ou de vol du terminal : aviser le CIC dans les plus brefs délais.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00072",
+                      "En cas de perte ou de vol du terminal : aviser le CIC dans les plus brefs délais.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -312,22 +683,51 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // 5) Annoncer sa sortie / prise de service sur les ondes
           _ConditionCard(
-            title: "5 — Annoncer sa prise de service sur les ondes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00073",
+              "5 — Annoncer sa prise de service sur les ondes",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Avant émission"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00074",
+                  "Avant émission",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "S’assurer que les ondes sont libres avant de procéder à l’émission.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00075",
+                  "S’assurer que les ondes sont libres avant de procéder à l’émission.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Message de prise d’ondes (modèle)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00076",
+                  "Message de prise d’ondes (modèle)",
+                ),
+              ),
               _NotaBox(
-                title: "MODÈLE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00077",
+                  "MODÈLE",
+                ),
                 bodySpans: [
-                  TextSpan(text: "« TN "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00078",
+                      "« TN ",
+                    ),
+                  ),
                   TextSpan(
                     text: "**",
                     style: TextStyle(
@@ -335,31 +735,79 @@ class ProcedureRadioPage extends StatelessWidget {
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " de TV… annonce sa prise de service »"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00079",
+                      " de TV… annonce sa prise de service »",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
-              _SubTitle("Éléments à énoncer (obligatoires)"),
-              _BulletPoint(
-                text: "Nombre d’effectifs (présence de gradés, ADS, H/F).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00080",
+                  "Éléments à énoncer (obligatoires)",
+                ),
               ),
-              _BulletPoint(text: "Immatriculation du véhicule."),
               _BulletPoint(
-                text:
-                    "Numéros radio : embarquée + portatifs (communiquer les 5 derniers chiffres du RFGI).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00081",
+                  "Nombre d’effectifs (présence de gradés, ADS, H/F).",
+                ),
               ),
-              _BulletPoint(text: "Matériel embarqué (MO, PIE, terro…)."),
               _BulletPoint(
-                text: "Mission (patrouille portée, pédestre, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00082",
+                  "Immatriculation du véhicule.",
+                ),
               ),
-              _BulletPoint(text: "Horaires de vacation."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00083",
+                  "Numéros radio : embarquée + portatifs (communiquer les 5 derniers chiffres du RFGI).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00084",
+                  "Matériel embarqué (MO, PIE, terro…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00085",
+                  "Mission (patrouille portée, pédestre, etc.).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00086",
+                  "Horaires de vacation.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "GÉOLOCALISATION",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00087",
+                  "GÉOLOCALISATION",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La géolocalisation d’un véhicule dépend de la mise en fonction de la radio embarquée (ou d’un P2G dans le BIV) et de l’annonce du numéro RFGI (voire du numéro de la poire géolocalisée si utilisée sur un P2G).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00088",
+                      "La géolocalisation d’un véhicule dépend de la mise en fonction de la radio embarquée (ou d’un P2G dans le BIV) et de l’annonce du numéro RFGI (voire du numéro de la poire géolocalisée si utilisée sur un P2G).",
+                    ),
                   ),
                 ],
               ),
@@ -370,29 +818,64 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // 6) Prendre en compte une mission
           _ConditionCard(
-            title:
-                "6 — Prendre en compte une mission (CIC / hiérarchie / initiative)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00089",
+              "6 — Prendre en compte une mission (CIC / hiérarchie / initiative)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Séquence obligatoire (4 annonces)"),
-              _BulletPoint(
-                text: "1) Confirmer la prise en compte de la mission.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00090",
+                  "Séquence obligatoire (4 annonces)",
+                ),
               ),
-              _BulletPoint(text: "2) Annoncer l’arrivée sur les lieux."),
               _BulletPoint(
-                text:
-                    "3) Communiquer toute information utile sur l’évènement au CIC : 1ère physionomie, évolution, avis, demandes de renfort / autre service.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00091",
+                  "1) Confirmer la prise en compte de la mission.",
+                ),
               ),
-              _BulletPoint(text: "4) Annoncer la fin d’intervention."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00092",
+                  "2) Annoncer l’arrivée sur les lieux.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00093",
+                  "3) Communiquer toute information utile sur l’évènement au CIC : 1ère physionomie, évolution, avis, demandes de renfort / autre service.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00094",
+                  "4) Annoncer la fin d’intervention.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "QUALITÉ DU MESSAGE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00095",
+                  "QUALITÉ DU MESSAGE",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Toujours : clair, calme, précis, concis — et uniquement l’essentiel opérationnel.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                      "f00096",
+                      "Toujours : clair, calme, précis, concis — et uniquement l’essentiel opérationnel.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -404,22 +887,35 @@ class ProcedureRadioPage extends StatelessWidget {
 
           // Conclusion ultra utile
           _ConditionCard(
-            title: "Synthèse (à mémoriser)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+              "f00097",
+              "Synthèse (à mémoriser)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Je vérifie mon matériel → je fais un essai radio → j’annonce ma prise de service → je traite mes missions avec 4 annonces.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00098",
+                  "Je vérifie mon matériel → je fais un essai radio → j’annonce ma prise de service → je traite mes missions avec 4 annonces.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Je vouvoie, j’utilise la terminologie standard, j’épelle/décompose quand c’est nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00099",
+                  "Je vouvoie, j’utilise la terminologie standard, j’épelle/décompose quand c’est nécessaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En anomalie / perte / vol : j’avise immédiatement le CIC (et la chaîne concernée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/procedure_radio_page.dart",
+                  "f00100",
+                  "En anomalie / perte / vol : j’avise immédiatement le CIC (et la chaîne concernée).",
+                ),
               ),
             ],
           ),

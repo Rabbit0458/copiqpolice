@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -18,7 +19,8 @@ class PaHierarchieIntroPage extends StatefulWidget {
   const PaHierarchieIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/socle_initial/hierarchie/hierarchie_intro';
+  static const String routeName =
+      '/pa/dps_dpg/socle_initial/hierarchie/hierarchie_intro';
 
   @override
   State<PaHierarchieIntroPage> createState() => _HierarchieIntroPageState();
@@ -54,8 +56,11 @@ class _HierarchieIntroPageState extends State<PaHierarchieIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'LA HIÉRARCHIE DES PERSONNELS DE LA POLICE NATIONALE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_hierarchie_intro_page.dart",
+    "f00001",
+    'LA HIÉRARCHIE DES PERSONNELS DE LA POLICE NATIONALE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -162,7 +167,11 @@ class _HierarchieIntroPageState extends State<PaHierarchieIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Fonctions judiciaires et place de chacun dans la chaîne hiérarchique.\nIdéal pour visualiser qui fait quoi, du gardien au directeur.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_hierarchie_intro_page.dart",
+                        "f00002",
+                        "Fonctions judiciaires et place de chacun dans la chaîne hiérarchique.\nIdéal pour visualiser qui fait quoi, du gardien au directeur.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -277,7 +286,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/dps_dpg/generalite_pages/pa_hierarchie_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

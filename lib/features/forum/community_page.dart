@@ -108,12 +108,17 @@ class _CommunityPageState extends State<CommunityPage> {
   Future<void> _chooseScope() async {
     final selected = await showModalBottomSheet<CommunityScope>(
       context: context,
+      isScrollControlled: true,
+      useSafeArea: true,
       showDragHandle: true,
-      builder: (sheetContext) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 0, 16, 18),
+      builder: (sheetContext) => DraggableScrollableSheet(
+        expand: false,
+        initialChildSize: .72,
+        minChildSize: .45,
+        maxChildSize: .92,
+        builder: (context, scrollController) => Padding(
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
           child: Column(
-            mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
@@ -131,77 +136,91 @@ class _CommunityPageState extends State<CommunityPage> {
                 ),
               ),
               const SizedBox(height: 14),
-              for (final scope in CommunityScope.values)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: Material(
-                    color: scope == _scope
-                        ? scope.color.withValues(alpha: .11)
-                        : Colors.transparent,
-                    borderRadius: BorderRadius.circular(17),
-                    child: InkWell(
+              Expanded(
+                child: ListView.separated(
+                  controller: scrollController,
+                  padding: EdgeInsets.only(
+                    bottom: MediaQuery.paddingOf(sheetContext).bottom + 8,
+                  ),
+                  itemCount: CommunityScope.values.length,
+                  separatorBuilder: (_, __) => const SizedBox(height: 8),
+                  itemBuilder: (context, index) {
+                    final scope = CommunityScope.values[index];
+                    return Material(
+                      color: scope == _scope
+                          ? scope.color.withValues(alpha: .11)
+                          : Colors.transparent,
                       borderRadius: BorderRadius.circular(17),
-                      onTap: () => Navigator.pop(sheetContext, scope),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 13,
-                          vertical: 11,
-                        ),
-                        child: Row(
-                          children: [
-                            Container(
-                              width: 40,
-                              height: 40,
-                              decoration: BoxDecoration(
-                                color: scope.color.withValues(alpha: .12),
-                                borderRadius: BorderRadius.circular(13),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(17),
+                        onTap: () => Navigator.pop(sheetContext, scope),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 13,
+                            vertical: 11,
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 40,
+                                height: 40,
+                                decoration: BoxDecoration(
+                                  color: scope.color.withValues(alpha: .12),
+                                  borderRadius: BorderRadius.circular(13),
+                                ),
+                                child: Icon(
+                                  scope.icon,
+                                  color: scope.color,
+                                  size: 20,
+                                ),
                               ),
-                              child: Icon(
-                                scope.icon,
-                                color: scope.color,
-                                size: 20,
-                              ),
-                            ),
-                            const SizedBox(width: 12),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    scope.label,
-                                    style: const TextStyle(
-                                      fontWeight: FontWeight.w800,
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      scope.label,
+                                      style: const TextStyle(
+                                        fontWeight: FontWeight.w800,
+                                      ),
                                     ),
-                                  ),
-                                  Text(
-                                    scope == _writeScope
-                                        ? 'Module actif · participation autorisée'
-                                        : 'Consultation uniquement',
-                                    style: Theme.of(context).textTheme.bodySmall
-                                        ?.copyWith(
-                                          color: scope == _writeScope
-                                              ? scope.color
-                                              : Theme.of(
-                                                  context,
-                                                ).colorScheme.onSurfaceVariant,
-                                        ),
-                                  ),
-                                ],
+                                    Text(
+                                      scope == _writeScope
+                                          ? 'Module actif · participation autorisée'
+                                          : 'Consultation uniquement',
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .bodySmall
+                                          ?.copyWith(
+                                            color: scope == _writeScope
+                                                ? scope.color
+                                                : Theme.of(context)
+                                                      .colorScheme
+                                                      .onSurfaceVariant,
+                                          ),
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                            if (scope == _scope)
-                              Icon(
-                                Icons.check_circle_rounded,
-                                color: scope.color,
-                              )
-                            else if (scope != _writeScope)
-                              const Icon(Icons.lock_outline_rounded, size: 18),
-                          ],
+                              if (scope == _scope)
+                                Icon(
+                                  Icons.check_circle_rounded,
+                                  color: scope.color,
+                                )
+                              else if (scope != _writeScope)
+                                const Icon(
+                                  Icons.lock_outline_rounded,
+                                  size: 18,
+                                ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  ),
+                    );
+                  },
                 ),
+              ),
             ],
           ),
         ),

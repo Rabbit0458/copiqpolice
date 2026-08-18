@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/sanction_pages/pluralite_infractions_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : La sanction — Règles en cas de pluralité d’infractions
 /// Route alignée avec la config : /gpx/sanction/pluralite_infractions
@@ -17,13 +18,33 @@ class PluraliteInfractionsPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            badge: 'La sanction',
-            title: 'Pluralité d’infractions',
-            subtitle: 'Cumul/Concours · Peines · Confusion',
+            badge: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+              "f00001",
+              'La sanction',
+            ),
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+              "f00002",
+              'Pluralité d’infractions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+              "f00003",
+              'Cumul/Concours · Peines · Confusion',
+            ),
             image: 'assets/images/sanction.jpeg',
             onPrimaryTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Pluralité — Récap 👌')),
+                SnackBar(
+                  content: Text(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                      "f00004",
+                      'Pluralité — Récap 👌',
+                    ),
+                  ),
+                ),
               );
             },
           ),
@@ -32,97 +53,193 @@ class PluraliteInfractionsPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
+                _SectionCard(
                   title: 'Objectif',
                   child: Text(
-                    'Comprendre les effets de la pluralité d’infractions sur la qualification et le prononcé des peines : '
-                    'concours réel, concours idéal, réitération, confusion des peines.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00005",
+                          'Comprendre les effets de la pluralité d’infractions sur la qualification et le prononcé des peines : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00006",
+                          'concours réel, concours idéal, réitération, confusion des peines.',
+                        ),
                   ),
                 ),
 
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
-                    'Concours réel/Idéal',
-                    'Cumul des peines',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                      "f00007",
+                      'Concours réel/Idéal',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                      "f00008",
+                      'Cumul des peines',
+                    ),
                     'Confusion',
-                    'Non bis in idem',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                      "f00009",
+                      'Non bis in idem',
+                    ),
                     'Motivation',
                   ],
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '1) Concours d’infractions',
-                  caption: 'Concours réel vs concours idéal',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00010",
+                    '1) Concours d’infractions',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00011",
+                    'Concours réel vs concours idéal',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Concours réel : plusieurs faits distincts → plusieurs infractions.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00012",
+                          'Concours réel : plusieurs faits distincts → plusieurs infractions.',
+                        ),
                       ),
                       _Bullet(
-                        'Concours idéal : un seul fait matérialise plusieurs infractions.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00013",
+                          'Concours idéal : un seul fait matérialise plusieurs infractions.',
+                        ),
                       ),
                       _Bullet(
-                        'Effets : cumul partiel/total des peines selon textes et plafonds.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00014",
+                          'Effets : cumul partiel/total des peines selon textes et plafonds.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '2) Non bis in idem',
-                  caption: 'Pas de double condamnation pour les mêmes faits',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00015",
+                    '2) Non bis in idem',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00016",
+                    'Pas de double condamnation pour les mêmes faits',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Vérifier l’unicité des faits, des parties, de la période, et la nature des sanctions.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00017",
+                          'Vérifier l’unicité des faits, des parties, de la période, et la nature des sanctions.',
+                        ),
                       ),
                       _Bullet(
-                        'Coordination pénal/administratif : attention aux doubles poursuites pour le même fait.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00018",
+                          'Coordination pénal/administratif : attention aux doubles poursuites pour le même fait.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '3) Confusion des peines',
-                  caption: 'Principe, total/partiel, motivation',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00019",
+                    '3) Confusion des peines',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00020",
+                    'Principe, total/partiel, motivation',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Peut être ordonnée pour regrouper des peines prononcées à propos de faits distincts.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00021",
+                          'Peut être ordonnée pour regrouper des peines prononcées à propos de faits distincts.',
+                        ),
                       ),
                       _Bullet(
-                        'Appréciation souveraine du juge ; motivation requise (personnalisation).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00022",
+                          'Appréciation souveraine du juge ; motivation requise (personnalisation).',
+                        ),
                       ),
                       _Bullet(
-                        'Limites : infractions de nature différente, récidive, textes spéciaux.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00023",
+                          'Limites : infractions de nature différente, récidive, textes spéciaux.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '4) Vigilances',
-                  caption: 'PV & dossier',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00024",
+                    '4) Vigilances',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00025",
+                    'PV & dossier',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _ChecklistLine(
-                        'Chronologie claire des faits — dates/heures, lieux, victimes.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00026",
+                          'Chronologie claire des faits — dates/heures, lieux, victimes.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Qualification rigoureuse : éviter les requalifications contradictoires.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00027",
+                          'Qualification rigoureuse : éviter les requalifications contradictoires.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Justifier les demandes de confusion/leur refus par des éléments concrets.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00028",
+                          'Justifier les demandes de confusion/leur refus par des éléments concrets.',
+                        ),
                       ),
                     ],
                   ),
@@ -130,22 +247,42 @@ class PluraliteInfractionsPage extends StatelessWidget {
 
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00029",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'Classification des peines',
-                  subtitle: 'Peines principales/complémentaires · Mesures',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00030",
+                    'Classification des peines',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00031",
+                    'Peines principales/complémentaires · Mesures',
+                  ),
                   route: '/gpx/sanction/classification_peines',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Causes d’aggravation',
-                  subtitle: 'Récidive · Circonstances aggravantes',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00032",
+                    'Causes d’aggravation',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                    "f00033",
+                    'Récidive · Circonstances aggravantes',
+                  ),
                   route: '/gpx/sanction/causes_aggravation',
                 ),
               ],
@@ -235,7 +372,13 @@ class _HeroHeader extends StatelessWidget {
                     ElevatedButton.icon(
                       onPressed: onPrimaryTap,
                       icon: const Icon(Icons.play_arrow_rounded),
-                      label: const Text('Découvrir'),
+                      label: Text(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart",
+                          "f00034",
+                          'Découvrir',
+                        ),
+                      ),
                       style: ElevatedButton.styleFrom(
                         elevation: 0,
                         backgroundColor: Colors.white,

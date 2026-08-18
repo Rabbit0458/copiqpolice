@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
   const PaAtteintesInviolabiliteDomicilePage({super.key});
@@ -56,10 +57,18 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Abus d’autorité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+            "f00002",
+            "Abus d’autorité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les atteintes à l’inviolabilité du domicile",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+              "f00003",
+              "Les atteintes à l’inviolabilité du domicile",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,16 +99,36 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une atteinte à l’inviolabilité du domicile le fait, par une personne dépositaire "
-                "de l’autorité ou chargée d’une mission de service public, agissant dans l’exercice ou à "
-                "l’occasion de l’exercice de ses fonctions ou de sa mission, de s’introduire ou de tenter "
-                "de s’introduire dans le domicile d’autrui contre le gré de celui-ci, hors les cas prévus par la loi.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00005",
+                      "Constitue une atteinte à l’inviolabilité du domicile le fait, par une personne dépositaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00006",
+                      "de l’autorité ou chargée d’une mission de service public, agissant dans l’exercice ou à ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00007",
+                      "l’occasion de l’exercice de ses fonctions ou de sa mission, de s’introduire ou de tenter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00008",
+                      "de s’introduire dans le domicile d’autrui contre le gré de celui-ci, hors les cas prévus par la loi.",
+                    ),
               ),
             ],
           ),
@@ -104,21 +137,30 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00010",
+                    "Article 432-8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : l’infraction est prévue et réprimée par ce texte.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00011",
+                    " : l’infraction est prévue et réprimée par ce texte.",
+                  ),
                 ),
               ]),
             ],
@@ -128,84 +170,212 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un auteur qualifié"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00013",
+                  "A) Un auteur qualifié",
+                ),
+              ),
 
               _SubTitle(
-                "1) Une personne dépositaire de l’autorité publique",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00014",
+                  "1) Une personne dépositaire de l’autorité publique",
+                ),
               ),
               _Paragraph(
-                "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision "
-                "fondé sur une parcelle d’autorité publique que lui confèrent ses fonctions (fonctionnaire, "
-                "militaire, magistrat, officier public ou ministériel, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00015",
+                      "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00016",
+                      "fondé sur une parcelle d’autorité publique que lui confèrent ses fonctions (fonctionnaire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00017",
+                      "militaire, magistrat, officier public ou ministériel, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, "
-                "commissaires-priseurs, fonctionnaires des eaux et forêts.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00018",
+                      "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00019",
+                      "commissaires-priseurs, fonctionnaires des eaux et forêts.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les responsables des exécutifs locaux (maires, présidents d’intercommunalités, "
-                "conseils départementaux et régionaux), ainsi que certains adjoints et conseillers municipaux "
-                "délégués, peuvent aussi avoir cette qualité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00020",
+                      "Les responsables des exécutifs locaux (maires, présidents d’intercommunalités, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00021",
+                      "conseils départementaux et régionaux), ainsi que certains adjoints et conseillers municipaux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00022",
+                      "délégués, peuvent aussi avoir cette qualité.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "2) Une personne chargée d’une mission de service public",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00023",
+                  "2) Une personne chargée d’une mission de service public",
+                ),
               ),
               _Paragraph(
-                "Est chargée d’une mission de service public la personne qui accomplit, à titre temporaire "
-                "ou permanent, volontairement ou sur réquisition, un service public quelconque : elle "
-                "participe à une mission d’intérêt général sans pouvoir de décision ou de commandement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00024",
+                      "Est chargée d’une mission de service public la personne qui accomplit, à titre temporaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00025",
+                      "ou permanent, volontairement ou sur réquisition, un service public quelconque : elle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00026",
+                      "participe à une mission d’intérêt général sans pouvoir de décision ou de commandement.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les élus locaux qui ne détiennent aucune prérogative de puissance publique par délégation, "
-                "ainsi que les parlementaires, peuvent relever de cette catégorie.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00027",
+                      "Les élus locaux qui ne détiennent aucune prérogative de puissance publique par délégation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00028",
+                      "ainsi que les parlementaires, peuvent relever de cette catégorie.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Agissant dans l’exercice ou à l’occasion des fonctions / mission",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00029",
+                  "B) Agissant dans l’exercice ou à l’occasion des fonctions / mission",
+                ),
               ),
               _Paragraph(
-                "L’auteur doit avoir abusé de sa qualité pour pénétrer au domicile. Il doit agir dans le cadre "
-                "de ses attributions : sont exclues les intrusions motivées par des raisons personnelles.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00030",
+                      "L’auteur doit avoir abusé de sa qualité pour pénétrer au domicile. Il doit agir dans le cadre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00031",
+                      "de ses attributions : sont exclues les intrusions motivées par des raisons personnelles.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un domicile"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00032",
+                  "C) Un domicile",
+                ),
+              ),
               _Paragraph(
-                "Le domicile est le lieu où une personne, qu’elle y habite ou non, a le droit de se dire chez elle, "
-                "quel que soit le titre juridique d’occupation et l’affectation des locaux. L’idée centrale : "
-                "le lieu protège l’intimité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00033",
+                      "Le domicile est le lieu où une personne, qu’elle y habite ou non, a le droit de se dire chez elle, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00034",
+                      "quel que soit le titre juridique d’occupation et l’affectation des locaux. L’idée centrale : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00035",
+                      "le lieu protège l’intimité.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Cela vise : domicile légal, résidence, lieu de séjour occasionnel, occupation précaire. "
-                "La notion peut s’étendre à un logement inoccupé contenant des meubles, si ces éléments "
-                "traduisent une occupation effective (ex. table, chaises, lit, canapé, électroménager). "
-                "À l’inverse, une simple bicyclette ou un carton de livres ne suffit pas.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00036",
+                      "Cela vise : domicile légal, résidence, lieu de séjour occasionnel, occupation précaire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00037",
+                      "La notion peut s’étendre à un logement inoccupé contenant des meubles, si ces éléments ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00038",
+                      "traduisent une occupation effective (ex. table, chaises, lit, canapé, électroménager). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00039",
+                      "À l’inverse, une simple bicyclette ou un carton de livres ne suffit pas.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le domicile comprend aussi une habitation avec ses dépendances (caves, terrasses, etc.). "
-                        "Cours/jardins/parcs peuvent être assimilés au domicile s’ils sont clos et attenants. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00040",
+                          "Le domicile comprend aussi une habitation avec ses dépendances (caves, terrasses, etc.). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00041",
+                          "Cours/jardins/parcs peuvent être assimilés au domicile s’ils sont clos et attenants. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 26 septembre 1990)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00042",
+                      "(Cass. crim., 26 septembre 1990)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -216,40 +386,92 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "La jurisprudence exige en pratique un lien étroit et immédiat : la dépendance doit être une annexe "
-                "au domicile et se trouver à proximité de l’habitation.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00043",
+                      "La jurisprudence exige en pratique un lien étroit et immédiat : la dépendance doit être une annexe ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00044",
+                      "au domicile et se trouver à proximité de l’habitation.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Une introduction (ou tentative) illicite"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00045",
+                  "D) Une introduction (ou tentative) illicite",
+                ),
+              ),
               _Paragraph(
-                "L’acte incriminé est l’introduction ou la tentative d’introduction dans un domicile, quel que soit le moyen, "
-                "même sans violence ni artifice. Le maintien dans le domicile n’est pas visé par ce texte.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00046",
+                      "L’acte incriminé est l’introduction ou la tentative d’introduction dans un domicile, quel que soit le moyen, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00047",
+                      "même sans violence ni artifice. Le maintien dans le domicile n’est pas visé par ce texte.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Exemple : en enquête préliminaire, l’O.P.J. ayant obtenu une autorisation écrite de perquisition "
-                        "ne commet pas ce délit en refusant de quitter les lieux si la personne « retire » ensuite son autorisation "
-                        "(dans certaines hypothèses analysées).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00048",
+                          "Exemple : en enquête préliminaire, l’O.P.J. ayant obtenu une autorisation écrite de perquisition ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00049",
+                          "ne commet pas ce délit en refusant de quitter les lieux si la personne « retire » ensuite son autorisation ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00050",
+                          "(dans certaines hypothèses analysées).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Jurisprudences (illustrations)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00051",
+                  "Jurisprudences (illustrations)",
+                ),
+              ),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Des policiers se rendent dans le hall d’un hôtel et demandent par téléphone à l’occupant d’une chambre "
-                        "de les rejoindre : pas de pénétration dans un domicile. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00052",
+                          "Des policiers se rendent dans le hall d’un hôtel et demandent par téléphone à l’occupant d’une chambre ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00053",
+                          "de les rejoindre : pas de pénétration dans un domicile. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 06 avril 1993)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00054",
+                      "(Cass. crim., 06 avril 1993)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -263,11 +485,23 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Des gendarmes se placent au seuil d’un garage ouvert par l’agent immobilier et photographient des véhicules "
-                        "sans pénétrer : pas d’introduction dans un domicile. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00055",
+                          "Des gendarmes se placent au seuil d’un garage ouvert par l’agent immobilier et photographient des véhicules ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00056",
+                          "sans pénétrer : pas d’introduction dans un domicile. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 29 mars 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00057",
+                      "(Cass. crim., 29 mars 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -279,21 +513,47 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("E) Contre le gré de l’occupant"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00058",
+                  "E) Contre le gré de l’occupant",
+                ),
+              ),
               _Paragraph(
-                "L’infraction suppose une introduction contre le gré de l’occupant. Si l’agent pénètre avec le consentement, "
-                "l’infraction n’est pas constituée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00059",
+                      "L’infraction suppose une introduction contre le gré de l’occupant. Si l’agent pénètre avec le consentement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00060",
+                      "l’infraction n’est pas constituée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Des agents entrent chez les parents d’un conducteur venant de causer un accident et présentant des signes d’ivresse, "
-                        "avec l’accord des parents : délit non constitué. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00061",
+                          "Des agents entrent chez les parents d’un conducteur venant de causer un accident et présentant des signes d’ivresse, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00062",
+                          "avec l’accord des parents : délit non constitué. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 28 juin 1990)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00063",
+                      "(Cass. crim., 28 juin 1990)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -306,11 +566,18 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Attention : le consentement ne doit pas être vicié par des manœuvres ou « stratagèmes policiers ». ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00064",
+                      "Attention : le consentement ne doit pas être vicié par des manœuvres ou « stratagèmes policiers ». ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 27 février 1996)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00065",
+                      "(Cass. crim., 27 février 1996)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -322,19 +589,34 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("F) Hors les cas prévus par la loi"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00066",
+                  "F) Hors les cas prévus par la loi",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Certains textes permettent de pénétrer dans le domicile au nom d’intérêts supérieurs : une introduction peut être régulière "
-                      "si elle respecte strictement les conditions légales. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                        "f00067",
+                        "Certains textes permettent de pénétrer dans le domicile au nom d’intérêts supérieurs : une introduction peut être régulière ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                        "f00068",
+                        "si elle respecte strictement les conditions légales. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 12 mai 1992)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00069",
+                    "(Cass. crim., 12 mai 1992)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -343,11 +625,23 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Toute introduction en vue de constater une infraction peut constituer une visite domiciliaire irrégulière si opérée "
-                        "hors les heures légales. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00070",
+                          "Toute introduction en vue de constater une infraction peut constituer une visite domiciliaire irrégulière si opérée ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                          "f00071",
+                          "hors les heures légales. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 03 juin 1991)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00072",
+                      "(Cass. crim., 03 juin 1991)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -358,8 +652,16 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’article 432-8 du Code pénal sanctionne le non-respect des conditions de fond des interventions, "
-                "et non les actes accessoires qui peuvent accompagner l’intervention.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00073",
+                      "L’article 432-8 du Code pénal sanctionne le non-respect des conditions de fond des interventions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00074",
+                      "et non les actes accessoires qui peuvent accompagner l’intervention.",
+                    ),
               ),
             ],
           ),
@@ -368,20 +670,48 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+              "f00075",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Conscience de pénétrer irrégulièrement"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00076",
+                  "A) Conscience de pénétrer irrégulièrement",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir conscience de l’irrégularité de ses agissements : il sait qu’il pénètre (ou tente de pénétrer) "
-                "dans le domicile d’autrui en dehors des conditions légales.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00077",
+                      "L’auteur doit avoir conscience de l’irrégularité de ses agissements : il sait qu’il pénètre (ou tente de pénétrer) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                      "f00078",
+                      "dans le domicile d’autrui en dehors des conditions légales.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Volonté de passer outre le consentement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00079",
+                  "B) Volonté de passer outre le consentement",
+                ),
+              ),
               _Paragraph(
-                "Il doit exister la volonté de passer outre l’absence de consentement (ou l’opposition) de l’occupant.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00080",
+                  "Il doit exister la volonté de passer outre l’absence de consentement (ou l’opposition) de l’occupant.",
+                ),
               ),
             ],
           ),
@@ -390,13 +720,21 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+              "f00081",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante n’est prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00082",
+                  "Aucune circonstance aggravante n’est prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -405,80 +743,153 @@ class PaAtteintesInviolabiliteDomicilePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+              "f00083",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00084",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit — "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00085",
+                    "Délit — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 432-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00086",
+                    "2 ans d’emprisonnement et 30 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00087",
+                    "article 432-8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00088",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph(
-                "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales de responsabilité).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00089",
+                  "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales de responsabilité).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _Paragraph.rich([
-                TextSpan(text: "Tentative : "),
-                TextSpan(
-                  text: "OUI. ",
-                  style: TextStyle(fontWeight: FontWeight.w900),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                  "f00090",
+                  "Tentative & complicité",
                 ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "L’article 432-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00091",
+                    "Tentative : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " incrimine spécifiquement la tentative de violation de domicile par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00092",
+                    "OUI. ",
+                  ),
+                  style: TextStyle(fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00093",
+                    "L’article 432-8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00094",
+                    " incrimine spécifiquement la tentative de violation de domicile par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : "),
                 TextSpan(
-                  text: "OUI, ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00095",
+                    "Complicité : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00096",
+                    "OUI, ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: "conformément aux "),
                 TextSpan(
-                  text: "articles 121-6",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00097",
+                    "conformément aux ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00098",
+                    "articles 121-6",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00099",
+                    "121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions…).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart",
+                    "f00100",
+                    " (aide/assistance, provocation, instructions…).",
+                  ),
                 ),
               ]),
             ],
@@ -736,9 +1147,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

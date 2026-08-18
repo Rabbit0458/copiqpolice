@@ -1,8 +1,34 @@
 1:"$Sreact.fragment"
-5:I[25355,["/_next/static/chunks/2v_artx8vxqru.js","/_next/static/chunks/12v-ekist3zc_.js"],"OutletBoundary"]
-6:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"max-w-3xl mx-auto px-4 py-16","children":[["$","h1",null,{"className":"text-3xl font-bold text-[var(--on-surface)] mb-2","children":"Politique de confidentialité"}],["$","p",null,{"className":"text-sm text-[var(--on-surface-muted)] mb-10","children":"Dernière mise à jour : 1er juin 2026"}],["$","div",null,{"className":"prose prose-sm max-w-none text-[var(--on-surface-muted)] space-y-8","children":[["$","section","1. Responsable du traitement",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"1. Responsable du traitement"}],["$","p",null,{"className":"leading-relaxed","children":"COP'IQ est responsable du traitement de vos données personnelles. Pour toute question : contact@copiqpolice.app"}]]}],["$","section","2. Données collectées",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"2. Données collectées"}],["$","p",null,{"className":"leading-relaxed","children":"Nous collectons : adresse email (inscription), progression et résultats de quiz (synchronisation mobile/web), données de paiement Stripe (nous ne stockons pas les numéros de carte), adresse IP et données de navigation (analytics Firebase)."}]]}],["$","section","3. Finalités du traitement",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"3. Finalités du traitement"}],["$","p",null,{"className":"leading-relaxed","children":"Vos données sont utilisées pour : gérer votre compte et votre progression, traiter votre abonnement via Stripe, améliorer nos services grâce aux analytics, vous envoyer des notifications (si activées)."}]]}],["$","section","4. Base légale",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"4. Base légale"}],["$","p",null,{"className":"leading-relaxed","children":"Le traitement repose sur votre consentement (inscription), l'exécution du contrat d'abonnement, et nos intérêts légitimes (amélioration du service)."}]]}],["$","section","5. Durée de conservation",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"5. Durée de conservation"}],["$","p",null,{"className":"leading-relaxed","children":"Vos données sont conservées pendant la durée de votre compte + 3 ans après fermeture, conformément aux obligations légales. Les données de paiement sont conservées 10 ans (obligation comptable)."}]]}],["$","section","6. Partage des données",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"6. Partage des données"}],["$","p",null,{"className":"leading-relaxed","children":"Nous partageons vos données avec : Supabase (hébergement BDD, USA - standard contractuel), Stripe (paiement, USA - Privacy Shield), Firebase/Google (analytics, USA - standard contractuel). Aucune vente à des tiers."}]]}],["$","section","7. Vos droits",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"7. Vos droits"}],["$","p",null,{"className":"leading-relaxed","children":"Vous disposez d'un droit d'accès, de rectification, d'effacement, de portabilité et d'opposition. Pour exercer vos droits : contact@copiqpolice.app. Vous pouvez également supprimer votre compte directement dans l'application (Paramètres → Supprimer mon compte)."}]]}],["$","section","8. Cookies",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"8. Cookies"}],["$","p",null,{"className":"leading-relaxed","children":"Nous utilisons des cookies essentiels (session, authentification) et des cookies d'analyse (Firebase Analytics). Vous pouvez refuser les cookies non essentiels dans les paramètres de votre navigateur."}]]}],"$L2","$L3"]}]]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"3DO-l-bft_WsTEhaAzHEr"}
-2:["$","section","9. Sécurité",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"9. Sécurité"}],["$","p",null,{"className":"leading-relaxed","children":"Vos données sont chiffrées en transit (HTTPS/TLS) et au repos. Supabase applique des politiques RLS (Row Level Security) garantissant que chaque utilisateur n'accède qu'à ses propres données."}]]}]
-3:["$","section","10. Contact & réclamation",{"children":[["$","h2",null,{"className":"text-lg font-semibold text-[var(--on-surface)] mb-2","children":"10. Contact & réclamation"}],["$","p",null,{"className":"leading-relaxed","children":"DPO : contact@copiqpolice.app. En cas de désaccord non résolu, vous pouvez saisir la CNIL (www.cnil.fr)."}]]}]
-4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
-7:null
+2:I[47277,["/_next/static/chunks/1zc_rgwahtc7g.js","/_next/static/chunks/17soygbyacdz3.js","/_next/static/chunks/0uetrv0ul7t7g.js","/_next/static/chunks/0h-1r9lluk2wa.js","/_next/static/chunks/3b0sadfrj23zy.js"],"EditorialDocument"]
+4:I[25573,["/_next/static/chunks/1zc_rgwahtc7g.js","/_next/static/chunks/17soygbyacdz3.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+3:T683,## 1. Responsable du traitement
+COP'IQ est responsable du traitement de vos données personnelles. Pour toute question : **contact@copiq.fr**.
+
+## 2. Données collectées
+Nous collectons les données nécessaires au compte, à la progression, aux résultats, au fonctionnement du service et à la facturation. Les paiements sont traités par Stripe : COP'IQ ne stocke pas le numéro complet de ta carte bancaire.
+
+## 3. Finalités du traitement
+- Gérer ton compte et synchroniser ta progression.
+- Traiter ton abonnement et afficher son état.
+- Assurer la sécurité et améliorer la qualité du service.
+- Répondre à tes demandes de support.
+
+## 4. Base légale
+Les traitements reposent selon les cas sur l'exécution du contrat, ton consentement, nos obligations légales et notre intérêt légitime à sécuriser et améliorer COP'IQ.
+
+## 5. Durée de conservation
+Les données sont conservées pendant les durées nécessaires au service et aux obligations légales, notamment comptables.
+
+## 6. Prestataires
+COP'IQ utilise notamment Supabase pour l'infrastructure et Stripe pour la facturation. Aucune donnée personnelle n'est vendue à des tiers.
+
+## 7. Tes droits
+Tu disposes de droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité. Tu peux exercer ces droits via **contact@copiq.fr**. Tu peux également saisir la CNIL.
+
+## 8. Sécurité
+Les échanges sont chiffrés et les accès aux données sont contrôlés. Aucun service en ligne ne pouvant garantir un risque nul, COP'IQ améliore continuellement ses protections.
+
+## 9. Contact
+Pour toute question relative à la confidentialité : **contact@copiq.fr**.0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"type":"privacy","title":"Politique de confidentialité","fallback":"$3","updatedAt":"1er juin 2026"}],[["$","script","script-0",{"src":"/_next/static/chunks/0h-1r9lluk2wa.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/3b0sadfrj23zy.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"2OAaT2BQYUfd4AJjrSMA1"}
+6:null

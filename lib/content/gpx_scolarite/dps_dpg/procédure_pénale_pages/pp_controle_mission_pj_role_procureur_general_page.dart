@@ -9,7 +9,8 @@ class PPControleMissionPJRoleProcureurGeneralPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark; // bleu foncé
+    final isDark =
+        Theme.of(context).brightness == Brightness.dark; // bleu foncé
     return const Scaffold();
   }
 }

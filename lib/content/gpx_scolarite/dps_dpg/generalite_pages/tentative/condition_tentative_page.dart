@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConditionTentativePage extends StatelessWidget {
   const ConditionTentativePage({super.key});
@@ -33,10 +34,18 @@ class ConditionTentativePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Conditions de la tentative',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+            "f00002",
+            'Conditions de la tentative',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -50,7 +59,11 @@ class ConditionTentativePage extends StatelessWidget {
         children: [
           // En-tête
           Text(
-            'Les conditions de la tentative',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+              "f00003",
+              'Les conditions de la tentative',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -59,7 +72,11 @@ class ConditionTentativePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Pour que la tentative soit retenue, deux conditions doivent être réunies :',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+              "f00004",
+              'Pour que la tentative soit retenue, deux conditions doivent être réunies :',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 14,
@@ -71,40 +88,63 @@ class ConditionTentativePage extends StatelessWidget {
 
           // Condition A (plus de label)
           _ConditionCard(
-            title: 'I. Un commencement d’exécution',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+              "f00005",
+              'I. Un commencement d’exécution',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Il y a commencement d’exécution lorsque l’acte accompli tend directement au crime ou au délit ; ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00006",
+                    'Il y a commencement d’exécution lorsque l’acte accompli tend directement au crime ou au délit ; ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'c\'est-à-dire lorsque l\'auteur est déjà en action du crime ou du délit tenté.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00007",
+                    'c\'est-à-dire lorsque l\'auteur est déjà en action du crime ou du délit tenté.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
-                  text:
-                      ' Il n’existe plus aucun doute sur son intention d’aller jusqu’au bout de son forfait.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00008",
+                    ' Il n’existe plus aucun doute sur son intention d’aller jusqu’au bout de son forfait.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Dans le cas contraire, si l’acte accompli ne permet pas de déterminer de façon sûre que l’auteur est en ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00009",
+                    'Dans le cas contraire, si l’acte accompli ne permet pas de déterminer de façon sûre que l’auteur est en ',
+                  ),
                 ),
                 TextSpan(
-                  text: '« action du crime ou du délit »',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00010",
+                    '« action du crime ou du délit »',
+                  ),
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
                 TextSpan(
-                  text:
-                      ', il s’agit alors d’un acte préparatoire non punissable.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00011",
+                    ', il s’agit alors d’un acte préparatoire non punissable.',
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
@@ -112,30 +152,48 @@ class ConditionTentativePage extends StatelessWidget {
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Le fait d’acheter un pied de biche avec l’intention de commettre un vol avec effraction ne constitue qu’un acte préparatoire. ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00012",
+                      'Le fait d’acheter un pied de biche avec l’intention de commettre un vol avec effraction ne constitue qu’un acte préparatoire. ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        'L’auteur peut, après l’achat, abandonner son projet délictuel ; ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00013",
+                      'L’auteur peut, après l’achat, abandonner son projet délictuel ; ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        'son acte (achat du pied de biche) n’a donc plus aucun lien direct avec l’infraction qu’il projetait de commettre.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00014",
+                      'son acte (achat du pied de biche) n’a donc plus aucun lien direct avec l’infraction qu’il projetait de commettre.',
+                    ),
                   ),
                   TextSpan(text: '\n\n'),
                   TextSpan(
-                    text:
-                        'Mais si l’individu, après avoir fracturé une porte avec ce pied de biche, interrompt son action parce qu’il en est empêché (arrivée inopinée d’un tiers, etc.), ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00015",
+                      'Mais si l’individu, après avoir fracturé une porte avec ce pied de biche, interrompt son action parce qu’il en est empêché (arrivée inopinée d’un tiers, etc.), ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        'son acte est constitutif d’un commencement d’exécution.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00016",
+                      'son acte est constitutif d’un commencement d’exécution.',
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                   TextSpan(
-                    text:
-                        ' S’il n’en avait pas été empêché, on est en droit de penser qu’il serait allé jusqu’au bout de son forfait, c’est-à-dire voler des objets.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00017",
+                      ' S’il n’en avait pas été empêché, on est en droit de penser qu’il serait allé jusqu’au bout de son forfait, c’est-à-dire voler des objets.',
+                    ),
                   ),
                 ],
               ),
@@ -143,12 +201,18 @@ class ConditionTentativePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Les auteurs d’actes préparatoires peuvent être réprimés mais seulement à titre d’infractions distinctes ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00018",
+                      'Les auteurs d’actes préparatoires peuvent être réprimés mais seulement à titre d’infractions distinctes ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        '(par exemple : achat d’une arme de catégorie B avec intention de tuer ; abandon du projet : il y a infraction de détention d’arme prohibée).',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                      "f00019",
+                      '(par exemple : achat d’une arme de catégorie B avec intention de tuer ; abandon du projet : il y a infraction de détention d’arme prohibée).',
+                    ),
                     style: TextStyle(fontStyle: FontStyle.italic),
                   ),
                 ],
@@ -160,24 +224,38 @@ class ConditionTentativePage extends StatelessWidget {
 
           // Condition B (plus de label)
           _ConditionCard(
-            title: 'II. L’absence de désistement volontaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+              "f00020",
+              'II. L’absence de désistement volontaire',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le désistement volontaire consiste à renoncer de sa propre volonté à la commission de l’infraction.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                  "f00021",
+                  'Le désistement volontaire consiste à renoncer de sa propre volonté à la commission de l’infraction.',
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'En cas d’absence de désistement volontaire, la tentative est caractérisée lorsque la commission de l’infraction a été interrompue par une cause étrangère à la volonté de son auteur ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00022",
+                    'En cas d’absence de désistement volontaire, la tentative est caractérisée lorsque la commission de l’infraction a été interrompue par une cause étrangère à la volonté de son auteur ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'après commencement d’exécution (dans l’exemple précédent : arrivée inopinée d’un tiers).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                    "f00023",
+                    'après commencement d’exécution (dans l’exemple précédent : arrivée inopinée d’un tiers).',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
@@ -397,7 +475,11 @@ class _NotaBox extends StatelessWidget {
           ),
           children: [
             TextSpan(
-              text: 'NOTA : ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/condition_tentative_page.dart",
+                "f00025",
+                'NOTA : ',
+              ),
               style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
             ),
             ...bodySpans,

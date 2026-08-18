@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ExtraditionSimplifieeUEPage extends StatelessWidget {
   const ExtraditionSimplifieeUEPage({super.key});
@@ -34,11 +35,19 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+            "f00001",
+            'Retour',
+          ),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'Extradition simplifiée U.E.',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+            "f00002",
+            'Extradition simplifiée U.E.',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -54,7 +63,11 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
           // EN-TÊTE
           // =============================================================
           Text(
-            '3 — L’extradition',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00003",
+              '3 — L’extradition',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 13.5,
@@ -64,7 +77,11 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            '3.2 — La procédure simplifiée d’extradition\nentre États membres de l’Union européenne',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00004",
+              '3.2 — La procédure simplifiée d’extradition\nentre États membres de l’Union européenne',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -74,10 +91,22 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'La procédure simplifiée d’extradition entre États membres de l’Union européenne est un '
-            'mécanisme spécifique destiné à accélérer la remise des personnes recherchées, lorsque '
-            'la procédure du mandat d’arrêt européen n’est pas applicable.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                  "f00005",
+                  'La procédure simplifiée d’extradition entre États membres de l’Union européenne est un ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                  "f00006",
+                  'mécanisme spécifique destiné à accélérer la remise des personnes recherchées, lorsque ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                  "f00007",
+                  'la procédure du mandat d’arrêt européen n’est pas applicable.',
+                ),
           ),
           const SizedBox(height: 16),
 
@@ -85,31 +114,70 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
           // CADRE JURIDIQUE
           // =============================================================
           _ConditionCard(
-            title: 'Cadre juridique et champ d’application',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00008",
+              'Cadre juridique et champ d’application',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
             children: [
-              const _Paragraph(
-                'Cette procédure n’est applicable qu’aux demandes d’extradition émanant d’un État partie '
-                'à la convention du 10 mars 1995 relative à la procédure simplifiée d’extradition entre les '
-                'États membres de l’Union européenne, et uniquement lorsque la procédure du mandat d’arrêt '
-                'européen ne peut pas être utilisée.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00009",
+                      'Cette procédure n’est applicable qu’aux demandes d’extradition émanant d’un État partie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00010",
+                      'à la convention du 10 mars 1995 relative à la procédure simplifiée d’extradition entre les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00011",
+                      'États membres de l’Union européenne, et uniquement lorsque la procédure du mandat d’arrêt ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00012",
+                      'européen ne peut pas être utilisée.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Elle s’applique également aux demandes d’arrestation provisoire aux fins d’extradition '
-                'adressées à la France par un État partie au troisième protocole additionnel du 10 novembre '
-                '2010 à la convention européenne d’extradition du 13 décembre 1957.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00013",
+                      'Elle s’applique également aux demandes d’arrestation provisoire aux fins d’extradition ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00014",
+                      'adressées à la France par un État partie au troisième protocole additionnel du 10 novembre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00015",
+                      '2010 à la convention européenne d’extradition du 13 décembre 1957.',
+                    ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text: 'En droit interne, cette procédure est prévue par ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00016",
+                    'En droit interne, cette procédure est prévue par ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'les articles 696-25 à 696-33 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00017",
+                    'les articles 696-25 à 696-33 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
@@ -124,25 +192,59 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
           // =============================================================
           // 3.2.1 CONDITIONS DE MISE EN ŒUVRE
           // =============================================================
-          const _SubTitle('3.2.1 — Conditions de mise en œuvre'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00018",
+              '3.2.1 — Conditions de mise en œuvre',
+            ),
+          ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Conditions de mise en œuvre',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00019",
+              'Conditions de mise en œuvre',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les conditions de mise en œuvre de la procédure simplifiée sont identiques à celles de la '
-                'procédure d’extradition de droit commun : gravité suffisante des faits, absence de caractère '
-                'politique, respect de la double incrimination, compétences territoriales et matérielles des '
-                'juridictions concernées.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00020",
+                      'Les conditions de mise en œuvre de la procédure simplifiée sont identiques à celles de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00021",
+                      'procédure d’extradition de droit commun : gravité suffisante des faits, absence de caractère ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00022",
+                      'politique, respect de la double incrimination, compétences territoriales et matérielles des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00023",
+                      'juridictions concernées.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'La différence essentielle réside dans la simplification et l’accélération de la phase '
-                'décisionnelle lorsqu’il existe un consentement formel de la personne réclamée.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00024",
+                      'La différence essentielle réside dans la simplification et l’accélération de la phase ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00025",
+                      'décisionnelle lorsqu’il existe un consentement formel de la personne réclamée.',
+                    ),
               ),
             ],
           ),
@@ -151,64 +253,147 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
           // =============================================================
           // 3.2.2 PROCÉDURE SIMPLIFIÉE
           // =============================================================
-          const _SubTitle('3.2.2 — La procédure simplifiée'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00026",
+              '3.2.2 — La procédure simplifiée',
+            ),
+          ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Déroulement de la procédure simplifiée',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00027",
+              'Déroulement de la procédure simplifiée',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'La procédure se déroule, pour l’essentiel, conformément aux dispositions de ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00028",
+                    'La procédure se déroule, pour l’essentiel, conformément aux dispositions de ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 696-10 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00029",
+                    'l’article 696-10 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
                   ),
                 ),
-                const TextSpan(text: ' et de '),
                 TextSpan(
-                  text: 'l’article 696-11 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00030",
+                    ' et de ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00031",
+                    'l’article 696-11 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', relatives à l’interpellation de la personne réclamée, à sa présentation devant le '
-                      'procureur général puis devant le premier président de la cour d’appel ou le magistrat '
-                      'désigné, ainsi qu’à son éventuelle incarcération sous écrou extraditionnel.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                        "f00032",
+                        ', relatives à l’interpellation de la personne réclamée, à sa présentation devant le ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                        "f00033",
+                        'procureur général puis devant le premier président de la cour d’appel ou le magistrat ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                        "f00034",
+                        'désigné, ainsi qu’à son éventuelle incarcération sous écrou extraditionnel.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Lorsque la personne comparaît devant la chambre de l’instruction et réitère son '
-                'consentement à l’extradition, elle est informée de manière précise et compréhensible des '
-                'conséquences juridiques de ce consentement.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00035",
+                      'Lorsque la personne comparaît devant la chambre de l’instruction et réitère son ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00036",
+                      'consentement à l’extradition, elle est informée de manière précise et compréhensible des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00037",
+                      'conséquences juridiques de ce consentement.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Il lui est notamment demandé si elle renonce au bénéfice de la règle de la spécialité. '
-                'En cas de renonciation, la personne pourra être poursuivie, condamnée et détenue en vue de '
-                'l’exécution d’une peine privative de liberté pour tout fait antérieur à sa remise, autre que '
-                'celui ayant motivé la demande d’extradition.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00038",
+                      'Il lui est notamment demandé si elle renonce au bénéfice de la règle de la spécialité. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00039",
+                      'En cas de renonciation, la personne pourra être poursuivie, condamnée et détenue en vue de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00040",
+                      'l’exécution d’une peine privative de liberté pour tout fait antérieur à sa remise, autre que ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00041",
+                      'celui ayant motivé la demande d’extradition.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Règle de la spécialité : en l’absence de renonciation, la personne extradée ne peut '
-                        'être poursuivie, jugée ou détenue que pour les faits ayant servi de fondement à la '
-                        'demande d’extradition, sauf exceptions prévues par les textes internationaux ou le '
-                        'Code de Procédure Pénale.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                          "f00042",
+                          'Règle de la spécialité : en l’absence de renonciation, la personne extradée ne peut ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                          "f00043",
+                          'être poursuivie, jugée ou détenue que pour les faits ayant servi de fondement à la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                          "f00044",
+                          'demande d’extradition, sauf exceptions prévues par les textes internationaux ou le ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                          "f00045",
+                          'Code de Procédure Pénale.',
+                        ),
                   ),
                 ],
               ),
@@ -219,33 +404,75 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
           // =============================================================
           // 3.2.3 EFFETS DE LA PROCÉDURE
           // =============================================================
-          const _SubTitle('3.2.3 — Effets de la procédure'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00046",
+              '3.2.3 — Effets de la procédure',
+            ),
+          ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Décision de la chambre de l’instruction et remise',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+              "f00047",
+              'Décision de la chambre de l’instruction et remise',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
             children: [
-              const _Paragraph(
-                'Si les conditions légales de l’extradition sont réunies, la chambre de l’instruction rend un '
-                'arrêt par lequel elle donne acte à la personne réclamée de son consentement formel à être '
-                'extradée, ainsi que, le cas échéant, de sa renonciation à la règle de la spécialité, puis '
-                'accorde l’extradition.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00048",
+                      'Si les conditions légales de l’extradition sont réunies, la chambre de l’instruction rend un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00049",
+                      'arrêt par lequel elle donne acte à la personne réclamée de son consentement formel à être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00050",
+                      'extradée, ainsi que, le cas échéant, de sa renonciation à la règle de la spécialité, puis ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00051",
+                      'accorde l’extradition.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'La chambre de l’instruction doit statuer dans un délai de sept jours à compter de la '
-                'comparution de la personne. L’arrêt rendu est susceptible de recours.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00052",
+                      'La chambre de l’instruction doit statuer dans un délai de sept jours à compter de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00053",
+                      'comparution de la personne. L’arrêt rendu est susceptible de recours.',
+                    ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text: 'Le recours contre cet arrêt est organisé par ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00054",
+                    'Le recours contre cet arrêt est organisé par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 696-30 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                    "f00055",
+                    'l’article 696-30 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
@@ -254,21 +481,53 @@ class ExtraditionSimplifieeUEPage extends StatelessWidget {
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Lorsque l’arrêt accordant l’extradition est devenu définitif, la procédure revêt un caractère '
-                'entièrement judiciaire : l’extradition n’est plus accordée par décret, contrairement à la '
-                'procédure de droit commun.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00056",
+                      'Lorsque l’arrêt accordant l’extradition est devenu définitif, la procédure revêt un caractère ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00057",
+                      'entièrement judiciaire : l’extradition n’est plus accordée par décret, contrairement à la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00058",
+                      'procédure de droit commun.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Le procureur général avise le ministre de la Justice, qui informe l’État requérant de la '
-                'décision définitive. La personne doit être remise aux autorités de cet État dans un délai de '
-                'vingt jours à compter de la notification de la décision à ces autorités.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00059",
+                      'Le procureur général avise le ministre de la Justice, qui informe l’État requérant de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00060",
+                      'décision définitive. La personne doit être remise aux autorités de cet État dans un délai de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00061",
+                      'vingt jours à compter de la notification de la décision à ces autorités.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Si, à l’expiration de ce délai de vingt jours, la personne extradée se trouve encore sur le '
-                'territoire de la République, sa mise en liberté doit être ordonnée.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00062",
+                      'Si, à l’expiration de ce délai de vingt jours, la personne extradée se trouve encore sur le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart",
+                      "f00063",
+                      'territoire de la République, sa mise en liberté doit être ordonnée.',
+                    ),
               ),
             ],
           ),
@@ -524,9 +783,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

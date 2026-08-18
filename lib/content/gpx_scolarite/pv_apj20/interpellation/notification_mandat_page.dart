@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class NotificationMandatPage extends StatelessWidget {
   const NotificationMandatPage({super.key});
@@ -50,7 +51,11 @@ class NotificationMandatPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Interpellation",
@@ -68,7 +73,11 @@ class NotificationMandatPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Notification d’un mandat (d’amener ou d’arrêt)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+              "f00002",
+              "PV — Notification d’un mandat (d’amener ou d’arrêt)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -83,20 +92,38 @@ class NotificationMandatPage extends StatelessWidget {
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas guide la rédaction d’un procès-verbal de notification d’un mandat "
-                "(mandat d’amener ou mandat d’arrêt), exécuté à moins de 200 km avec présentation "
-                "immédiate au magistrat mandant.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00003",
+                      "Ce canevas guide la rédaction d’un procès-verbal de notification d’un mandat ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00004",
+                      "(mandat d’amener ou mandat d’arrêt), exécuté à moins de 200 km avec présentation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00005",
+                      "immédiate au magistrat mandant.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "L’heure mentionnée lors de l’arrestation est fondamentale : elle peut marquer le début d’une mesure de rétention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00006",
+                  "L’heure mentionnée lors de l’arrestation est fondamentale : elle peut marquer le début d’une mesure de rétention.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Les mentions doivent rester factuelles, précises, datées, et chronologiques.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00007",
+                  "Les mentions doivent rester factuelles, précises, datées, et chronologiques.",
+                ),
               ),
             ],
           ),
@@ -105,43 +132,77 @@ class NotificationMandatPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal (références)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+              "f00008",
+              "I — Élément légal (références)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Mandats d’instruction : "),
                 TextSpan(
-                  text: "article 122 alinéa 5 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00009",
+                    "Mandats d’instruction : ",
                   ),
                 ),
-                TextSpan(text: " (mandat d’amener) et "),
                 TextSpan(
-                  text: "article 122 alinéa 6 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00010",
+                    "article 122 alinéa 5 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00011",
+                    " (mandat d’amener) et ",
                   ),
                 ),
-                TextSpan(text: " (mandat d’arrêt)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00012",
+                    "article 122 alinéa 6 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00013",
+                    " (mandat d’arrêt).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Menottage / contrainte : "),
                 TextSpan(
-                  text: "article 803 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00014",
+                    "Menottage / contrainte : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — le recours doit être motivé et circonstancié (dangerosité ou risque de fuite).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00015",
+                    "article 803 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00016",
+                    " — le recours doit être motivé et circonstancié (dangerosité ou risque de fuite).",
+                  ),
                 ),
               ]),
             ],
@@ -150,51 +211,118 @@ class NotificationMandatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Déroulé du PV (structure pas à pas)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+              "f00017",
+              "II — Déroulé du PV (structure pas à pas)",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de rédaction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00018",
+                  "1) Lieu de rédaction",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Indiquer précisément le lieu où le procès-verbal est rédigé (service, unité, commune).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00019",
+                  "Indiquer précisément le lieu où le procès-verbal est rédigé (service, unité, commune).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00020",
+                  "2) Instructions",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner que l’agent de police judiciaire agit sous le contrôle de l’officier de police judiciaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00021",
+                  "Mentionner que l’agent de police judiciaire agit sous le contrôle de l’officier de police judiciaire.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Exécution du mandat"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00022",
+                  "3) Exécution du mandat",
+                ),
+              ),
               _Paragraph(
-                "L’agent de police judiciaire indique les références du mandat en vertu duquel il agit. "
-                "Les mentions attendues sont les suivantes :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00023",
+                      "L’agent de police judiciaire indique les références du mandat en vertu duquel il agit. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00024",
+                      "Les mentions attendues sont les suivantes :",
+                    ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Type de mandat : amener ou arrêt."),
               _BulletPoint(
-                text:
-                    "Date de délivrance + nom et qualité du magistrat mandant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00025",
+                  "Type de mandat : amener ou arrêt.",
+                ),
               ),
-              _BulletPoint(text: "Identité de la personne concernée."),
               _BulletPoint(
-                text:
-                    "Motif : personne soupçonnée / témoin assisté / mise en examen.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00026",
+                  "Date de délivrance + nom et qualité du magistrat mandant.",
+                ),
               ),
-              _BulletPoint(text: "Infraction visée."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00027",
+                  "Identité de la personne concernée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00028",
+                  "Motif : personne soupçonnée / témoin assisté / mise en examen.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00029",
+                  "Infraction visée.",
+                ),
+              ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Penser à faire référence aux articles relatifs au mandat (ex. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00030",
+                      "Penser à faire référence aux articles relatifs au mandat (ex. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "art. 122 al. 5 et/ou art. 122 al. 6 C.P.P.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00031",
+                      "art. 122 al. 5 et/ou art. 122 al. 6 C.P.P.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -205,119 +333,242 @@ class NotificationMandatPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
 
-              _SubTitle("4) Assistants"),
-              _BulletPoint(
-                text:
-                    "Lister les fonctionnaires accompagnant le rédacteur (identité/qualité si nécessaire).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00032",
+                  "4) Assistants",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser la tenue : uniforme / tenue bourgeoise / port du brassard police.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00033",
+                  "Lister les fonctionnaires accompagnant le rédacteur (identité/qualité si nécessaire).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00034",
+                  "Préciser la tenue : uniforme / tenue bourgeoise / port du brassard police.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5) Transport"),
-              _BulletPoint(
-                text:
-                    "Transport au dernier domicile connu de la personne concernée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00035",
+                  "5) Transport",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Respect des heures légales : 06h–21h (mentionner l’heure précise d’arrivée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00036",
+                  "Transport au dernier domicile connu de la personne concernée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00037",
+                  "Respect des heures légales : 06h–21h (mentionner l’heure précise d’arrivée).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("6) Identité"),
-              _BulletPoint(
-                text:
-                    "Exposer qualités et motif de la visite, puis relever l’identité succincte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00038",
+                  "6) Identité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser le document utilisé pour vérifier l’identité (CNI, passeport, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00039",
+                  "Exposer qualités et motif de la visite, puis relever l’identité succincte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00040",
+                  "Préciser le document utilisé pour vérifier l’identité (CNI, passeport, etc.).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Selon la situation (comportement/attitude), la ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00041",
+                      "Selon la situation (comportement/attitude), la ",
+                    ),
                   ),
                   TextSpan(
-                    text: "palpation de sécurité",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00042",
+                      "palpation de sécurité",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text: " peut être réalisée avant l’étape « identité ».",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00043",
+                      " peut être réalisée avant l’étape « identité ».",
+                    ),
                   ),
                 ],
                 title: "Organisation",
               ),
               SizedBox(height: 12),
 
-              _SubTitle("7) Mandat de justice"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00044",
+                  "7) Mandat de justice",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Présenter et notifier le mandat à l’intéressé (mentionner la remise d’une copie).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00045",
+                  "Présenter et notifier le mandat à l’intéressé (mentionner la remise d’une copie).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("8) Arrestation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00046",
+                  "8) Arrestation",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner l’heure exacte (fondamentale) : elle peut correspondre au début d’une mesure de rétention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00047",
+                  "Mentionner l’heure exacte (fondamentale) : elle peut correspondre au début d’une mesure de rétention.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("9) Palpation de sécurité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00048",
+                  "9) Palpation de sécurité",
+                ),
+              ),
               _Paragraph(
-                "Décrire la palpation de sécurité et, le cas échéant, la découverte d’objets "
-                "(localisation + description).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00049",
+                      "Décrire la palpation de sécurité et, le cas échéant, la découverte d’objets ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                      "f00050",
+                      "(localisation + description).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Si recours au menottage : préciser les éléments motivant la mesure, conformément à ",
-                ),
-                TextSpan(
-                  text: "l’article 803 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00051",
+                    "Si recours au menottage : préciser les éléments motivant la mesure, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (risque de fuite, menaces, gestes de résistance, dangerosité pour soi/autrui).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00052",
+                    "l’article 803 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                    "f00053",
+                    " (risque de fuite, menaces, gestes de résistance, dangerosité pour soi/autrui).",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("10) Retour au service"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00054",
+                  "10) Retour au service",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Pour l’exécution des mandats, la coercition est possible : l’emploi de la force doit être circonstancié.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00055",
+                  "Pour l’exécution des mandats, la coercition est possible : l’emploi de la force doit être circonstancié.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("11) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00056",
+                  "11) Énonciation terminale (clôture)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "La personne interpellée signe le procès-verbal (et l’heure est précisée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00057",
+                  "La personne interpellée signe le procès-verbal (et l’heure est précisée).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("12) Avis magistrat"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00058",
+                  "12) Avis magistrat",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Informer le magistrat mandant et indiquer clairement les instructions reçues (présentation immédiate / mesure de rétention en attente).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00059",
+                  "Informer le magistrat mandant et indiquer clairement les instructions reçues (présentation immédiate / mesure de rétention en attente).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("13) Présentation au magistrat mandant"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00060",
+                  "13) Présentation au magistrat mandant",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner la présentation au magistrat mandant (date/heure) et tout élément utile (compte-rendu verbal, remise éventuelle d’objets).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00061",
+                  "Mentionner la présentation au magistrat mandant (date/heure) et tout élément utile (compte-rendu verbal, remise éventuelle d’objets).",
+                ),
               ),
             ],
           ),
@@ -325,26 +576,42 @@ class NotificationMandatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Points de vigilance",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+              "f00062",
+              "III — Points de vigilance",
+            ),
             cardColor: cardVigi,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Chronologie : dérouler les faits dans l’ordre, avec des heures exactes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00063",
+                  "Chronologie : dérouler les faits dans l’ordre, avec des heures exactes.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Motivation : toute contrainte (menottage/force) doit être justifiée et décrite.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00064",
+                  "Motivation : toute contrainte (menottage/force) doit être justifiée et décrite.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Notification : mentionner la présentation du mandat + la remise d’une copie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00065",
+                  "Notification : mentionner la présentation du mandat + la remise d’une copie.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Identité : rester strictement sur l’état civil et l’adresse (pas d’éléments de personnalité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00066",
+                  "Identité : rester strictement sur l’état civil et l’adresse (pas d’éléments de personnalité).",
+                ),
               ),
             ],
           ),
@@ -352,21 +619,39 @@ class NotificationMandatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Canevas (visuels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+              "f00067",
+              "Canevas (visuels)",
+            ),
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Appuie pour ouvrir en plein écran et zoomer."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00068",
+                  "Appuie pour ouvrir en plein écran et zoomer.",
+                ),
+              ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canva_mandat_pv.png',
-                label: 'Canevas — recto',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00069",
+                  'Canevas — recto',
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canva_mandat_pv_verso.png',
-                label: 'Canevas — verso',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                  "f00070",
+                  'Canevas — verso',
+                ),
               ),
             ],
           ),
@@ -724,7 +1009,11 @@ class _ZoomableAssetImage extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        "Plein écran",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/notification_mandat_page.dart",
+                          "f00073",
+                          "Plein écran",
+                        ),
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w800,
                           fontSize: 12.5,

@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : L’infraction — refonte UI (sliders + CTA pill + mémo)
 /// Route: /gpx/generalites/infraction
@@ -55,8 +56,8 @@ class _InfractionPageState extends State<InfractionPage>
     HapticFeedback.mediumImpact();
     AppNotifier.info(
       context,
-      title: 'Quiz « L’infraction »',
-      message: 'Entraîne-toi : correction immédiate & explications ✨',
+      title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00001", 'Quiz « L’infraction »'),
+      message: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00002", 'Entraîne-toi : correction immédiate & explications ✨'),
     );
     Navigator.of(context).pushNamed('/gpx/generalites/quiz/infraction');
   }
@@ -92,10 +93,10 @@ class _InfractionPageState extends State<InfractionPage>
             leading: IconButton(
               icon: const Icon(Icons.arrow_back_rounded, color: Colors.white),
               onPressed: () => Navigator.maybePop(context),
-              tooltip: 'Retour',
+              tooltip: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00003", 'Retour'),
             ),
-            title: const Text(
-              'L’infraction',
+            title:  Text(
+              ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00004", 'L’infraction'),
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -158,15 +159,15 @@ class _InfractionPageState extends State<InfractionPage>
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: _QuickNav(
-                        items: const [
-                          ('Élément légal', Icons.menu_book_rounded),
-                          ('Élément matériel', Icons.architecture_rounded),
-                          ('Élément moral', Icons.psychology_alt_rounded),
+                        items:  [
+                          (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00005", 'Élément légal'), Icons.menu_book_rounded),
+                          (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00006", 'Élément matériel'), Icons.architecture_rounded),
+                          (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00007", 'Élément moral'), Icons.psychology_alt_rounded),
                           (
-                            'Circonstances aggravantes',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00008", 'Circonstances aggravantes'),
                             Icons.local_fire_department_rounded,
                           ),
-                          ('Fiche mémo', Icons.view_carousel_rounded),
+                          (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00009", 'Fiche mémo'), Icons.view_carousel_rounded),
                         ],
                         onTap: (label) {
                           switch (label) {
@@ -195,18 +196,18 @@ class _InfractionPageState extends State<InfractionPage>
                   // 1) Légal — sliders
                   SliverToBoxAdapter(
                     key: _kLegal,
-                    child: const _SliderSection(
-                      title: '1) Élément légal',
+                    child:  _SliderSection(
+                      title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00015", '1) Élément légal'),
                       pages: [
                         _CardData('Principe', Icons.rule_rounded, [
-                          'Nullum crimen, nulla poena sine lege.',
-                          'Un texte incrimine précisément les faits : loi/ordonnance ; règlement pour les contraventions.',
-                          'Interprétation stricte : pas d’analogie créatrice.',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00016", 'Nullum crimen, nulla poena sine lege.'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00017", 'Un texte incrimine précisément les faits : loi/ordonnance ; règlement pour les contraventions.'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00018", 'Interprétation stricte : pas d’analogie créatrice.'),
                         ]),
-                        _CardData('Contenu du texte', Icons.description_rounded, [
-                          'Éléments constitutifs : action/omission, objet, circonstances.',
-                          'Qualités/états des personnes : mineur, dépositaire de l’autorité…',
-                          'Circonstances aggravantes éventuelles prévues par la loi.',
+                        _CardData(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00019", 'Contenu du texte'), Icons.description_rounded, [
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00020", 'Éléments constitutifs : action/omission, objet, circonstances.'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00021", 'Qualités/états des personnes : mineur, dépositaire de l’autorité…'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00022", 'Circonstances aggravantes éventuelles prévues par la loi.'),
                         ]),
                       ],
                     ),
@@ -215,25 +216,25 @@ class _InfractionPageState extends State<InfractionPage>
                   // 2) Matériel — sliders
                   SliverToBoxAdapter(
                     key: _kMaterial,
-                    child: const _SliderSection(
-                      title: '2) Élément matériel',
+                    child:  _SliderSection(
+                      title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00023", '2) Élément matériel'),
                       pages: [
                         _CardData(
-                          'Acte & résultat',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00024", 'Acte & résultat'),
                           Icons.precision_manufacturing_rounded,
                           [
-                            'Commission (acte positif) ou omission si obligation d’agir.',
-                            'Résultat exigé (ex. blessures) ou délit formel (ex. conduite alcoolique).',
-                            'Lien de causalité requis quand le texte l’implique.',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00025", 'Commission (acte positif) ou omission si obligation d’agir.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00026", 'Résultat exigé (ex. blessures) ou délit formel (ex. conduite alcoolique).'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00027", 'Lien de causalité requis quand le texte l’implique.'),
                           ],
                         ),
                         _CardData(
-                          'Commission / Omission',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00028", 'Commission / Omission'),
                           Icons.compare_arrows_rounded,
                           [
-                            'Commission : réalisation d’un acte prohibé (ex. violences).',
-                            'Omission : abstention fautive (ex. non-assistance).',
-                            'Même exigence de texte et de culpabilité.',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00029", 'Commission : réalisation d’un acte prohibé (ex. violences).'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00030", 'Omission : abstention fautive (ex. non-assistance).'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00031", 'Même exigence de texte et de culpabilité.'),
                           ],
                         ),
                       ],
@@ -243,27 +244,27 @@ class _InfractionPageState extends State<InfractionPage>
                   // 3) Moral — sliders
                   SliverToBoxAdapter(
                     key: _kMoral,
-                    child: const _SliderSection(
-                      title: '3) Élément moral',
+                    child:  _SliderSection(
+                      title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00032", '3) Élément moral'),
                       pages: [
                         _CardData('Intention', Icons.bolt_rounded, [
-                          'Délits intentionnels : volonté en connaissance de cause.',
-                          'Mobile indifférent sauf texte contraire.',
-                          'Peut se déduire des circonstances matérielles.',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00033", 'Délits intentionnels : volonté en connaissance de cause.'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00034", 'Mobile indifférent sauf texte contraire.'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00035", 'Peut se déduire des circonstances matérielles.'),
                         ]),
                         _CardData(
-                          'Imprudence/Négligence',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00036", 'Imprudence/Négligence'),
                           Icons.report_gmailerrorred_rounded,
                           [
-                            'Infractions non intentionnelles : imprudence, négligence, violation d’une obligation de prudence.',
-                            'Faute simple / qualifiée / délibérée selon le texte.',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00037", 'Infractions non intentionnelles : imprudence, négligence, violation d’une obligation de prudence.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00038", 'Faute simple / qualifiée / délibérée selon le texte.'),
                           ],
                         ),
                         _CardData(
-                          'Matière contraventionnelle',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00039", 'Matière contraventionnelle'),
                           Icons.info_rounded,
                           [
-                            'Faute souvent présumée : la violation de la prescription suffit à caractériser l’infraction.',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00040", 'Faute souvent présumée : la violation de la prescription suffit à caractériser l’infraction.'),
                           ],
                         ),
                       ],
@@ -273,56 +274,56 @@ class _InfractionPageState extends State<InfractionPage>
                   // 4) Circonstances aggravantes — sliders (renuméroté)
                   SliverToBoxAdapter(
                     key: _kAggravations,
-                    child: const _SliderSection(
-                      title: '4) Circonstances aggravantes',
+                    child:  _SliderSection(
+                      title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00041", '4) Circonstances aggravantes'),
                       pages: [
                         _CardData(
-                          'Principe général',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00042", 'Principe général'),
                           Icons.local_fire_department_rounded,
                           [
-                            'La peine peut être aggravée si l’infraction est commise dans des circonstances prévues par la loi.',
-                            'Ne constitue pas un élément constitutif de l’infraction (sauf textes spéciaux).',
-                            'Exclues en matière contraventionnelle (principe).',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00043", 'La peine peut être aggravée si l’infraction est commise dans des circonstances prévues par la loi.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00044", 'Ne constitue pas un élément constitutif de l’infraction (sauf textes spéciaux).'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00045", 'Exclues en matière contraventionnelle (principe).'),
                           ],
                         ),
                         _CardData(
-                          'Exemples légaux (arts. 132-71 à 132-80 C. pén.)',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00046", 'Exemples légaux (arts. 132-71 à 132-80 C. pén.)'),
                           Icons.list_alt_rounded,
                           [
-                            'Bande organisée, guet-apens, préméditation, effraction, escalade.',
-                            'Port/usage d’une arme.',
-                            'Réunion, incapacité totale de travail.',
-                            'État d’ivresse de l’auteur ou emprise de stupéfiants.',
-                            'Qualité de la victime : dépositaire de l’autorité publique, conjoint/partenaire, etc.',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00047", 'Bande organisée, guet-apens, préméditation, effraction, escalade.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00048", 'Port/usage d’une arme.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00049", 'Réunion, incapacité totale de travail.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00050", 'État d’ivresse de l’auteur ou emprise de stupéfiants.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00051", 'Qualité de la victime : dépositaire de l’autorité publique, conjoint/partenaire, etc.'),
                           ],
                         ),
                         _CardData(
-                          'Motif discriminatoire — principe',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00052", 'Motif discriminatoire — principe'),
                           Icons.flag_rounded,
                           [
-                            'Aggravation lorsque crime/délit est précédé, accompagné ou suivi de propos/actes/objets à motif :',
-                            '— Caractère raciste (art. 132-76 C. pén.).',
-                            '— Orientation sexuelle ou identité sexuelle de la victime (art. 132-77 C. pén.).',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00053", 'Aggravation lorsque crime/délit est précédé, accompagné ou suivi de propos/actes/objets à motif :'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00054", '— Caractère raciste (art. 132-76 C. pén.).'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00055", '— Orientation sexuelle ou identité sexuelle de la victime (art. 132-77 C. pén.).'),
                           ],
                         ),
                         _CardData(
-                          'Motif discriminatoire — exceptions',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00056", 'Motif discriminatoire — exceptions'),
                           Icons.rule_folder_rounded,
                           [
-                            'Ne s’applique pas aux violences : régimes spécifiques (ex. art. 222-13 C. pén.).',
-                            'Harcèlement sexuel (art. 222-33 C. pén.) : texte spécial.',
-                            'Provocations, diffamations, injures : loi du 29 juillet 1881.',
-                            'Disposition déjà aggravée par ailleurs pour le même motif.',
-                            'Cas spécifiques : contrainte au mariage/union, etc.',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00057", 'Ne s’applique pas aux violences : régimes spécifiques (ex. art. 222-13 C. pén.).'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00058", 'Harcèlement sexuel (art. 222-33 C. pén.) : texte spécial.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00059", 'Provocations, diffamations, injures : loi du 29 juillet 1881.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00060", 'Disposition déjà aggravée par ailleurs pour le même motif.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00061", 'Cas spécifiques : contrainte au mariage/union, etc.'),
                           ],
                         ),
                         _CardData(
-                          'Répression aggravée — repères',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00062", 'Répression aggravée — repères'),
                           Icons.balance_rounded,
                           [
-                            'Criminel : échelles relevées (ex. 20 ans → 30 ans / perpétuité selon textes).',
-                            'Délictuel : peines majorées (ex. 3 → 6 ans ; 5 → 7 ans ; 7 → 10 ans) et/ou amendes.',
-                            'Toujours vérifier l’article spécial de l’infraction pour le quantum exact.',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00063", 'Criminel : échelles relevées (ex. 20 ans → 30 ans / perpétuité selon textes).'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00064", 'Délictuel : peines majorées (ex. 3 → 6 ans ; 5 → 7 ans ; 7 → 10 ans) et/ou amendes.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00065", 'Toujours vérifier l’article spécial de l’infraction pour le quantum exact.'),
                           ],
                         ),
                       ],
@@ -332,23 +333,23 @@ class _InfractionPageState extends State<InfractionPage>
                   // 5) Fiche mémo
                   SliverToBoxAdapter(
                     key: _kMemo,
-                    child: const _SliderSection(
-                      title: 'Fiche mémo',
+                    child:  _SliderSection(
+                      title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00066", 'Fiche mémo'),
                       pages: [
-                        _CardData('Check terrain', Icons.fact_check_rounded, [
-                          'Texte d’incrimination OK ?',
-                          'Faits ↔ texte (éléments constitutifs) ?',
-                          'Auteur (qualité requise/interdite) ?',
-                          'Culpabilité : intention / imprudence ?',
-                          'Causes d’irresponsabilité (LD, nécessité, ordre de la loi…)?',
+                        _CardData(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00067", 'Check terrain'), Icons.fact_check_rounded, [
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00068", 'Texte d’incrimination OK ?'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00069", 'Faits ↔ texte (éléments constitutifs) ?'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00070", 'Auteur (qualité requise/interdite) ?'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00071", 'Culpabilité : intention / imprudence ?'),
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00072", 'Causes d’irresponsabilité (LD, nécessité, ordre de la loi…)?'),
                         ]),
                         _CardData(
-                          'Exemples rapides',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00073", 'Exemples rapides'),
                           Icons.tips_and_updates_rounded,
                           [
-                            'Vol : soustraction + intention d’appropriation + texte.',
-                            'Blessures involontaires : résultat + faute + causalité.',
-                            'Conduite sous alcool : seuil + conduite (délit formel).',
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00074", 'Vol : soustraction + intention d’appropriation + texte.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00075", 'Blessures involontaires : résultat + faute + causalité.'),
+                            ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00076", 'Conduite sous alcool : seuil + conduite (délit formel).'),
                           ],
                         ),
                       ],
@@ -443,7 +444,7 @@ class _QuizCTAState extends State<_QuizCTA>
             children: [
               const SizedBox(width: 2),
               Text(
-                'Accès quiz',
+                ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart", "f00077", 'Accès quiz'),
                 style: theme.textTheme.titleMedium?.copyWith(
                   color: textColor,
                   fontWeight: FontWeight.w800,

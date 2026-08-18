@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPFinDetentionProvisoirePage extends StatelessWidget {
   const PaPPFinDetentionProvisoirePage({super.key});
@@ -25,10 +26,18 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Fin de la détention provisoire',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+            "f00002",
+            'Fin de la détention provisoire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
         children: [
           // ====================== CHAPITRE & TITRE ==========================
           Text(
-            'CHAPITRE 3',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00003",
+              'CHAPITRE 3',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 18,
@@ -51,7 +64,11 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Fin de la détention provisoire',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00004",
+              'Fin de la détention provisoire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,9 +78,21 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Règlement de la procédure, demandes de mise en liberté, mises en '
-            'liberté de plein droit, d’office, sur réquisitions ou pour raisons '
-            'de santé.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00005",
+                  'Règlement de la procédure, demandes de mise en liberté, mises en ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00006",
+                  'liberté de plein droit, d’office, sur réquisitions ou pour raisons ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00007",
+                  'de santé.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -75,32 +104,80 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
           const SizedBox(height: 18),
 
           // ====================== 3.1 – RÈGLEMENT DE LA PROCÉDURE ==========
-          const _SubTitle('3.1 – Le règlement de la procédure'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00008",
+              '3.1 – Le règlement de la procédure',
+            ),
+          ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'La détention provisoire prend fin notamment en cas de non-lieu ou '
-                  'lorsque les faits sont requalifiés en contravention ou en délit '
-                  'n’entrant plus dans les prévisions de ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00009",
+                    'La détention provisoire prend fin notamment en cas de non-lieu ou ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00010",
+                    'lorsque les faits sont requalifiés en contravention ou en délit ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00011",
+                    'n’entrant plus dans les prévisions de ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 144 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00012",
+                'l’article 144 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  '. De plus, le juge d’instruction ou, s’il est saisi, le juge des '
-                  'libertés et de la détention doit ordonner la mise en liberté '
-                  'immédiate de la personne détenue dès que les conditions de ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00013",
+                    '. De plus, le juge d’instruction ou, s’il est saisi, le juge des ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00014",
+                    'libertés et de la détention doit ordonner la mise en liberté ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00015",
+                    'immédiate de la personne détenue dès que les conditions de ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 144 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00016",
+                'l’article 144 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
-            TextSpan(text: ' ne sont plus réunies, conformément à '),
             TextSpan(
-              text: 'l’article 144-1 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00017",
+                ' ne sont plus réunies, conformément à ',
+              ),
+            ),
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00018",
+                'l’article 144-1 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(text: '.'),
@@ -108,76 +185,174 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
 
           const SizedBox(height: 16),
 
-          const _SubTitle(
-            '3.1.1 – En cas de renvoi devant le tribunal correctionnel\n(art. 179 C. proc. pén.)',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00019",
+              '3.1.1 – En cas de renvoi devant le tribunal correctionnel\n(art. 179 C. proc. pén.)',
+            ),
           ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text: 'En cas de renvoi devant le tribunal correctionnel, ',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00020",
+                'En cas de renvoi devant le tribunal correctionnel, ',
+              ),
             ),
             TextSpan(
-              text: 'l’article 179 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00021",
+                'l’article 179 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  ' prévoit que l’ordonnance de renvoi met normalement fin à la '
-                  'détention provisoire. Toutefois, le juge d’instruction peut, '
-                  'par ordonnance distincte spécialement motivée, maintenir la '
-                  'personne en détention jusqu’à sa comparution devant le tribunal.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00022",
+                    ' prévoit que l’ordonnance de renvoi met normalement fin à la ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00023",
+                    'détention provisoire. Toutefois, le juge d’instruction peut, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00024",
+                    'par ordonnance distincte spécialement motivée, maintenir la ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00025",
+                    'personne en détention jusqu’à sa comparution devant le tribunal.',
+                  ),
             ),
           ]),
 
           const SizedBox(height: 12),
 
-          const _SubTitle(
-            '3.1.2 – En cas de renvoi devant la cour d’assises\n(art. 181 C. proc. pén.)',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00026",
+              '3.1.2 – En cas de renvoi devant la cour d’assises\n(art. 181 C. proc. pén.)',
+            ),
           ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'Lorsque le juge d’instruction ou la chambre de l’instruction estime '
-                  'que les faits retenus à la charge de la personne mise en examen '
-                  'constituent un crime, ils prononcent une mise en accusation devant '
-                  'la cour d’assises, en application de ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00027",
+                    'Lorsque le juge d’instruction ou la chambre de l’instruction estime ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00028",
+                    'que les faits retenus à la charge de la personne mise en examen ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00029",
+                    'constituent un crime, ils prononcent une mise en accusation devant ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00030",
+                    'la cour d’assises, en application de ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 181 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00031",
+                'l’article 181 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  '. La détention provisoire se poursuit alors selon le régime des '
-                  'accusés détenus en attente de jugement par la cour d’assises, '
-                  'sous le contrôle des juridictions compétentes.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00032",
+                    '. La détention provisoire se poursuit alors selon le régime des ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00033",
+                    'accusés détenus en attente de jugement par la cour d’assises, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00034",
+                    'sous le contrôle des juridictions compétentes.',
+                  ),
             ),
           ]),
 
           const SizedBox(height: 22),
 
           // ====================== 3.2 – DEMANDE DE MISE EN LIBERTÉ =========
-          const _SubTitle('3.2 – La demande de mise en liberté'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00035",
+              '3.2 – La demande de mise en liberté',
+            ),
+          ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'La mise en liberté peut être demandée à tout moment au juge '
-                  'd’instruction par la personne mise en examen ou par son avocat, '
-                  'en application de ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00036",
+                    'La mise en liberté peut être demandée à tout moment au juge ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00037",
+                    'd’instruction par la personne mise en examen ou par son avocat, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00038",
+                    'en application de ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 148 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00039",
+                'l’article 148 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  '. De même, tout prévenu ou accusé peut demander sa mise en liberté, '
-                  'conformément à ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00040",
+                    '. De même, tout prévenu ou accusé peut demander sa mise en liberté, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00041",
+                    'conformément à ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 148-1 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00042",
+                'l’article 148-1 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(text: '.'),
@@ -185,41 +360,108 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
 
           const SizedBox(height: 14),
 
-          const _SubTitle('3.2.1 – Procédure devant le juge d’instruction'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00043",
+              '3.2.1 – Procédure devant le juge d’instruction',
+            ),
+          ),
 
-          const _Paragraph(
-            'Le juge d’instruction communique immédiatement la demande de mise en '
-            'liberté au procureur de la République pour réquisitions. Il dispose '
-            'ensuite de deux options :',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00044",
+                  'Le juge d’instruction communique immédiatement la demande de mise en ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00045",
+                  'liberté au procureur de la République pour réquisitions. Il dispose ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00046",
+                  'ensuite de deux options :',
+                ),
           ),
           const SizedBox(height: 6),
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'S’il accepte de faire droit à la demande, il rend lui-même une '
-                'ordonnance de mise en liberté, éventuellement assortie d’un '
-                'contrôle judiciaire.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00047",
+                  'S’il accepte de faire droit à la demande, il rend lui-même une ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00048",
+                  'ordonnance de mise en liberté, éventuellement assortie d’un ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00049",
+                  'contrôle judiciaire.',
+                ),
           ),
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'S’il n’entend pas y faire droit, il ne peut pas rejeter lui-même la '
-                'demande : il transmet celle-ci, avec son avis motivé, au juge des '
-                'libertés et de la détention dans les dix jours suivant la '
-                'communication au procureur de la République.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00050",
+                  'S’il n’entend pas y faire droit, il ne peut pas rejeter lui-même la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00051",
+                  'demande : il transmet celle-ci, avec son avis motivé, au juge des ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00052",
+                  'libertés et de la détention dans les dix jours suivant la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00053",
+                  'communication au procureur de la République.',
+                ),
           ),
           const SizedBox(height: 6),
-          const _Paragraph(
-            'Saisi, le juge des libertés et de la détention peut soit accorder la '
-            'mise en liberté, avec ou sans contrôle judiciaire, soit rejeter la '
-            'demande.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00054",
+                  'Saisi, le juge des libertés et de la détention peut soit accorder la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00055",
+                  'mise en liberté, avec ou sans contrôle judiciaire, soit rejeter la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00056",
+                  'demande.',
+                ),
           ),
 
           const SizedBox(height: 16),
 
-          const _SubTitle('3.2.2 – Saisine de la chambre de l’instruction'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00057",
+              '3.2.2 – Saisine de la chambre de l’instruction',
+            ),
+          ),
 
           _ConditionCard(
-            title:
-                'Saisine de la chambre de l’instruction\n(contentieux de la détention)',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00058",
+              'Saisine de la chambre de l’instruction\n(contentieux de la détention)',
+            ),
             cardColor: isDark
                 ? const Color(0xFF263238)
                 : const Color(0xFFE3F2F1),
@@ -227,83 +469,229 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
             titleColor: isDark
                 ? const Color(0xFFB2EBF2)
                 : const Color(0xFF004D40),
-            children: const [
+            children: [
               _IntroBullet(
                 text:
-                    'En cas de carence du juge des libertés et de la détention : '
-                    'l’intéressé peut saisir la chambre lorsque le J.L.D. n’a pas '
-                    'statué dans les cinq jours ouvrables sur une demande de mise '
-                    'en liberté.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00059",
+                      'En cas de carence du juge des libertés et de la détention : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00060",
+                      'l’intéressé peut saisir la chambre lorsque le J.L.D. n’a pas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00061",
+                      'statué dans les cinq jours ouvrables sur une demande de mise ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00062",
+                      'en liberté.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'En cas de carence du juge d’instruction : l’intéressé ou son '
-                    'avocat peut saisir la chambre à l’expiration d’un délai de '
-                    'six mois depuis la dernière comparution, conformément à '
-                    'l’article 148-4 du Code de procédure pénale.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00063",
+                      'En cas de carence du juge d’instruction : l’intéressé ou son ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00064",
+                      'avocat peut saisir la chambre à l’expiration d’un délai de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00065",
+                      'six mois depuis la dernière comparution, conformément à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00066",
+                      'l’article 148-4 du Code de procédure pénale.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Lorsque la chambre de l’instruction s’est réservée le '
-                    'contentieux de la détention, elle demeure seule compétente '
-                    'pour statuer sur les demandes de mise en liberté.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00067",
+                      'Lorsque la chambre de l’instruction s’est réservée le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00068",
+                      'contentieux de la détention, elle demeure seule compétente ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00069",
+                      'pour statuer sur les demandes de mise en liberté.',
+                    ),
               ),
             ],
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'La chambre de l’instruction dispose d’un délai de 30 jours à compter '
-            'de la réception de la demande de mise en liberté pour rendre sa '
-            'décision.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00070",
+                  'La chambre de l’instruction dispose d’un délai de 30 jours à compter ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00071",
+                  'de la réception de la demande de mise en liberté pour rendre sa ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00072",
+                  'décision.',
+                ),
           ),
 
           const SizedBox(height: 16),
 
-          const _SubTitle('3.2.3 – Saisine de la juridiction de jugement'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00073",
+              '3.2.3 – Saisine de la juridiction de jugement',
+            ),
+          ),
 
-          const _Paragraph(
-            'Après le renvoi devant une juridiction de jugement (tribunal '
-            'correctionnel ou cour d’assises), la personne peut demander sa mise '
-            'en liberté à tout moment de la procédure. C’est alors la juridiction '
-            'de jugement saisie qui statue sur cette demande, selon les textes qui '
-            'lui sont applicables.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00074",
+                  'Après le renvoi devant une juridiction de jugement (tribunal ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00075",
+                  'correctionnel ou cour d’assises), la personne peut demander sa mise ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00076",
+                  'en liberté à tout moment de la procédure. C’est alors la juridiction ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00077",
+                  'de jugement saisie qui statue sur cette demande, selon les textes qui ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00078",
+                  'lui sont applicables.',
+                ),
           ),
 
           const SizedBox(height: 22),
 
           // ====================== 3.3 – MISE EN LIBERTÉ DE PLEIN DROIT =====
-          const _SubTitle('3.3 – La mise en liberté de plein droit'),
-
-          const _SubTitle(
-            '3.3.1 – À la fin de la durée de la détention provisoire',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00079",
+              '3.3 – La mise en liberté de plein droit',
+            ),
           ),
-          const _Paragraph(
-            'Lorsque la durée légale maximale de la détention provisoire est '
-            'atteinte, prolongations éventuelles comprises, la mise en liberté de '
-            'la personne est automatique : la juridiction n’a plus la faculté de '
-            'maintenir la détention au-delà des limites fixées par la loi.',
+
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00080",
+              '3.3.1 – À la fin de la durée de la détention provisoire',
+            ),
+          ),
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00081",
+                  'Lorsque la durée légale maximale de la détention provisoire est ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00082",
+                  'atteinte, prolongations éventuelles comprises, la mise en liberté de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00083",
+                  'la personne est automatique : la juridiction n’a plus la faculté de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00084",
+                  'maintenir la détention au-delà des limites fixées par la loi.',
+                ),
           ),
 
           const SizedBox(height: 10),
 
-          const _SubTitle('3.3.2 – Inobservation des délais'),
-          const _Paragraph(
-            'L’inobservation par les juridictions des délais légaux pour statuer sur '
-            'les demandes de mise en liberté entraîne également la mise en liberté '
-            'de plein droit de la personne détenue.',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00085",
+              '3.3.2 – Inobservation des délais',
+            ),
+          ),
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00086",
+                  'L’inobservation par les juridictions des délais légaux pour statuer sur ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00087",
+                  'les demandes de mise en liberté entraîne également la mise en liberté ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00088",
+                  'de plein droit de la personne détenue.',
+                ),
           ),
 
           const SizedBox(height: 16),
 
-          const _NotaBox(
-            title: 'Conséquence pratique',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00089",
+              'Conséquence pratique',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'La maîtrise des délais (durée de la détention, délais pour '
-                    'statuer sur les demandes, délais de recours) est essentielle : '
-                    'leur non-respect se traduit par la remise en liberté de la '
-                    'personne, indépendamment du fond du dossier.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00090",
+                      'La maîtrise des délais (durée de la détention, délais pour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00091",
+                      'statuer sur les demandes, délais de recours) est essentielle : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00092",
+                      'leur non-respect se traduit par la remise en liberté de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                      "f00093",
+                      'personne, indépendamment du fond du dossier.',
+                    ),
               ),
             ],
           ),
@@ -311,53 +699,147 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
           const SizedBox(height: 22),
 
           // ====================== 3.4 – MISE EN LIBERTÉ D’OFFICE ===========
-          const _SubTitle('3.4 – La mise en liberté d’office'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00094",
+              '3.4 – La mise en liberté d’office',
+            ),
+          ),
 
-          const _Paragraph(
-            'La mise en liberté d’office est prononcée sans qu’elle ait été '
-            'demandée par la personne détenue ou requise par le ministère public. '
-            'Elle doit être ordonnée lorsque la mise en liberté est de droit, mais '
-            'aussi lorsque la juridiction estime que la détention n’est plus utile '
-            'à la bonne marche de l’instruction ou à la protection de l’ordre public.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00095",
+                  'La mise en liberté d’office est prononcée sans qu’elle ait été ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00096",
+                  'demandée par la personne détenue ou requise par le ministère public. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00097",
+                  'Elle doit être ordonnée lorsque la mise en liberté est de droit, mais ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00098",
+                  'aussi lorsque la juridiction estime que la détention n’est plus utile ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00099",
+                  'à la bonne marche de l’instruction ou à la protection de l’ordre public.',
+                ),
           ),
 
           const SizedBox(height: 10),
 
-          const _SubTitle('3.4.1 – Décision du juge d’instruction'),
-          const _Paragraph(
-            'Avant d’ordonner une mise en liberté d’office, le juge d’instruction '
-            'sollicite l’avis du procureur de la République. Il prend ensuite sa '
-            'décision sans débat contradictoire. La personne mise en examen doit '
-            's’engager à se présenter à tous les actes de la procédure et à tenir '
-            'le juge informé de ses changements de domicile ou de déplacements '
-            'importants.',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00100",
+              '3.4.1 – Décision du juge d’instruction',
+            ),
+          ),
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00101",
+                  'Avant d’ordonner une mise en liberté d’office, le juge d’instruction ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00102",
+                  'sollicite l’avis du procureur de la République. Il prend ensuite sa ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00103",
+                  'décision sans débat contradictoire. La personne mise en examen doit ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00104",
+                  's’engager à se présenter à tous les actes de la procédure et à tenir ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00105",
+                  'le juge informé de ses changements de domicile ou de déplacements ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00106",
+                  'importants.',
+                ),
           ),
 
           const SizedBox(height: 10),
 
-          const _SubTitle('3.4.2 – Décision de la chambre de l’instruction'),
-          const _Paragraph(
-            'La chambre de l’instruction peut, quel que soit son mode de saisine, '
-            'décider la mise en liberté d’office lorsqu’elle estime que les '
-            'conditions d’un maintien en détention ne sont plus remplies.',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00107",
+              '3.4.2 – Décision de la chambre de l’instruction',
+            ),
+          ),
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00108",
+                  'La chambre de l’instruction peut, quel que soit son mode de saisine, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00109",
+                  'décider la mise en liberté d’office lorsqu’elle estime que les ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                  "f00110",
+                  'conditions d’un maintien en détention ne sont plus remplies.',
+                ),
           ),
 
           const SizedBox(height: 22),
 
           // ====================== 3.5 – SUR RÉQUISITIONS DU PARQUET ========
-          const _SubTitle(
-            '3.5 – La mise en liberté sur réquisitions du parquet',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00111",
+              '3.5 – La mise en liberté sur réquisitions du parquet',
+            ),
           ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'Le procureur de la République peut, à tout moment, requérir auprès '
-                  'du juge d’instruction la mise en liberté d’une personne placée en '
-                  'détention provisoire, en application de ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00112",
+                    'Le procureur de la République peut, à tout moment, requérir auprès ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00113",
+                    'du juge d’instruction la mise en liberté d’une personne placée en ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00114",
+                    'détention provisoire, en application de ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 147 alinéa 2 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00115",
+                'l’article 147 alinéa 2 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(text: '.'),
@@ -366,21 +848,59 @@ class PaPPFinDetentionProvisoirePage extends StatelessWidget {
           const SizedBox(height: 22),
 
           // ====================== 3.6 – POUR RAISON DE SANTÉ ===============
-          const _SubTitle('3.6 – La mise en liberté pour raison de santé'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+              "f00116",
+              '3.6 – La mise en liberté pour raison de santé',
+            ),
+          ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'Sauf s’il existe un risque grave de renouvellement de l’infraction, '
-                  'la mise en liberté d’une personne placée en détention provisoire '
-                  'peut être ordonnée, d’office ou à la demande de l’intéressé, '
-                  'lorsqu’une expertise médicale établit que cette personne est '
-                  'atteinte d’une pathologie engageant le pronostic vital ou que son '
-                  'état de santé physique ou mentale est incompatible avec le maintien '
-                  'en détention, conformément à ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00117",
+                    'Sauf s’il existe un risque grave de renouvellement de l’infraction, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00118",
+                    'la mise en liberté d’une personne placée en détention provisoire ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00119",
+                    'peut être ordonnée, d’office ou à la demande de l’intéressé, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00120",
+                    'lorsqu’une expertise médicale établit que cette personne est ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00121",
+                    'atteinte d’une pathologie engageant le pronostic vital ou que son ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00122",
+                    'état de santé physique ou mentale est incompatible avec le maintien ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                    "f00123",
+                    'en détention, conformément à ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 147-1 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart",
+                "f00124",
+                'l’article 147-1 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(text: '.'),

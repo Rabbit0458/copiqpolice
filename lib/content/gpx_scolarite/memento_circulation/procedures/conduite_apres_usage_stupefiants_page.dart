@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
   const ConduiteApresUsageStupefiantsPage({super.key});
@@ -57,7 +58,11 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
           onPressed: () => Navigator.of(context).maybePop(),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+            "f00001",
+            "Stupéfiants",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -70,7 +75,11 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            "La conduite après usage de stupéfiants",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+              "f00002",
+              "La conduite après usage de stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontSize: 21,
               fontWeight: FontWeight.w900,
@@ -83,15 +92,31 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+              "f00003",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La conduite après usage de stupéfiants est constituée dès lors qu’un conducteur "
-                "a conduit un véhicule après avoir fait usage de substances ou plantes classées "
-                "comme stupéfiants, indépendamment de toute notion de taux ou d’altération de la conduite.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00004",
+                      "La conduite après usage de stupéfiants est constituée dès lors qu’un conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00005",
+                      "a conduit un véhicule après avoir fait usage de substances ou plantes classées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00006",
+                      "comme stupéfiants, indépendamment de toute notion de taux ou d’altération de la conduite.",
+                    ),
               ),
             ],
           ),
@@ -100,23 +125,36 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
 
           // I — Élément légal
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L.235-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                    "f00008",
+                    "Article L.235-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : incrimine le fait de conduire un véhicule après avoir fait usage de substances "
-                      "ou plantes classées comme stupéfiants.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                        "f00009",
+                        " : incrimine le fait de conduire un véhicule après avoir fait usage de substances ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                        "f00010",
+                        "ou plantes classées comme stupéfiants.",
+                      ),
                 ),
               ]),
             ],
@@ -126,28 +164,78 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
 
           // II — Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une conduite d’un véhicule"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00012",
+                  "A) Une conduite d’un véhicule",
+                ),
+              ),
               _Paragraph(
-                "L’infraction suppose la conduite effective d’un véhicule, peu importe la durée ou "
-                "la distance parcourue.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00013",
+                      "L’infraction suppose la conduite effective d’un véhicule, peu importe la durée ou ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00014",
+                      "la distance parcourue.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Un usage préalable de stupéfiants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00015",
+                  "B) Un usage préalable de stupéfiants",
+                ),
+              ),
               _Paragraph(
-                "L’usage est établi par des opérations de dépistage puis de vérifications "
-                "réalisées par prélèvement salivaire ou sanguin. "
-                "La simple présence de stupéfiants suffit à caractériser l’infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00016",
+                      "L’usage est établi par des opérations de dépistage puis de vérifications ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00017",
+                      "réalisées par prélèvement salivaire ou sanguin. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00018",
+                      "La simple présence de stupéfiants suffit à caractériser l’infraction.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("C) Indépendance de toute notion de taux"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00019",
+                  "C) Indépendance de toute notion de taux",
+                ),
+              ),
               _Paragraph(
-                "Contrairement à l’alcoolémie, aucun seuil n’est exigé : "
-                "la seule détection de substances stupéfiantes caractérise l’élément matériel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00020",
+                      "Contrairement à l’alcoolémie, aucun seuil n’est exigé : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00021",
+                      "la seule détection de substances stupéfiantes caractérise l’élément matériel.",
+                    ),
               ),
             ],
           ),
@@ -156,14 +244,26 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
 
           // III — Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+              "f00022",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction est intentionnelle. Il suffit que l’auteur ait eu conscience "
-                "d’avoir consommé un produit stupéfiant, peu importe qu’il se croyait apte à conduire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00023",
+                      "L’infraction est intentionnelle. Il suffit que l’auteur ait eu conscience ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                      "f00024",
+                      "d’avoir consommé un produit stupéfiant, peu importe qu’il se croyait apte à conduire.",
+                    ),
               ),
             ],
           ),
@@ -172,23 +272,36 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
 
           // IV — Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+              "f00025",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L.235-1 alinéa 2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                    "f00026",
+                    "Article L.235-1 alinéa 2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque la conduite après usage de stupéfiants est cumulée "
-                      "avec un état alcoolique, les peines sont aggravées.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                        "f00027",
+                        " : lorsque la conduite après usage de stupéfiants est cumulée ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                        "f00028",
+                        "avec un état alcoolique, les peines sont aggravées.",
+                      ),
                 ),
               ]),
             ],
@@ -198,44 +311,98 @@ class ConduiteApresUsageStupefiantsPage extends StatelessWidget {
 
           // V — Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+              "f00029",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines principales"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00030",
+                  "Peines principales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Deux ans d’emprisonnement et 4 500 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                    "f00031",
+                    "Deux ans d’emprisonnement et 4 500 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L.235-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                    "f00032",
+                    "article L.235-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Peines complémentaires"),
-              _BulletPoint(
-                text: "Retrait de 6 points du permis de conduire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00033",
+                  "Peines complémentaires",
+                ),
               ),
-              _BulletPoint(text: "Suspension ou annulation du permis."),
-              _BulletPoint(text: "Immobilisation du véhicule."),
-              SizedBox(height: 12),
-              _SubTitle("Tentative & complicité"),
               _BulletPoint(
-                text: "Tentative : NON (infraction consommée par la conduite).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00034",
+                  "Retrait de 6 points du permis de conduire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00035",
+                  "Suspension ou annulation du permis.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00036",
+                  "Immobilisation du véhicule.",
+                ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00037",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                  "f00038",
+                  "Tentative : NON (infraction consommée par la conduite).",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément aux "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                    "f00039",
+                    "Complicité : OUI, conformément aux ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_apres_usage_stupefiants_page.dart",
+                    "f00040",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -493,9 +660,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

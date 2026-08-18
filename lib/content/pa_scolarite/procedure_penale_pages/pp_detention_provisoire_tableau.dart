@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPDetentionProvisoireTableauPage extends StatelessWidget {
   const PaPPDetentionProvisoireTableauPage({super.key});
@@ -22,10 +23,18 @@ class PaPPDetentionProvisoireTableauPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Tableaux — Détention provisoire',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+            "f00002",
+            'Tableaux — Détention provisoire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -41,8 +50,12 @@ class PaPPDetentionProvisoireTableauPage extends StatelessWidget {
           const SizedBox(height: 20),
 
           // =================== DÉLITS ======================
-          const _SubTitle(
-            'Tableau — Détention provisoire des majeurs en matière de délits',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+              "f00003",
+              'Tableau — Détention provisoire des majeurs en matière de délits',
+            ),
           ),
           const SizedBox(height: 8),
           const _DetentionDelitsTable(),
@@ -50,8 +63,12 @@ class PaPPDetentionProvisoireTableauPage extends StatelessWidget {
           const SizedBox(height: 28),
 
           // =================== CRIMES ======================
-          const _SubTitle(
-            'Tableau — Détention provisoire des majeurs en matière de crimes',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+              "f00004",
+              'Tableau — Détention provisoire des majeurs en matière de crimes',
+            ),
           ),
           const SizedBox(height: 8),
           const _DetentionCrimesTable(),
@@ -90,7 +107,11 @@ class _TitleBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Tableaux de la détention provisoire',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+              "f00005",
+              'Tableaux de la détention provisoire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -99,11 +120,27 @@ class _TitleBlock extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'Ces tableaux récapitulent les durées initiales, les prolongations et les '
-            'durées maximales de la détention provisoire pour les majeurs, en matière '
-            'de délits et de crimes. Ils complètent les règles posées par la loi et '
-            'permettent une vision globale des différents cas.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+                  "f00006",
+                  'Ces tableaux récapitulent les durées initiales, les prolongations et les ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+                  "f00007",
+                  'durées maximales de la détention provisoire pour les majeurs, en matière ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+                  "f00008",
+                  'de délits et de crimes. Ils complètent les règles posées par la loi et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart",
+                  "f00009",
+                  'permettent une vision globale des différents cas.',
+                ),
           ),
         ],
       ),

@@ -62,11 +62,19 @@ extension GpxSchoolProgramX on GpxSchoolProgram {
     GpxSchoolProgram.mememtoCirculationRoutiere =>
       'Mémento • Circulation routière',
     GpxSchoolProgram.policierEnIntervention =>
-      'Policier en intervention               (Socle initial)',
+      'Policier en intervention — Socle initial',
     GpxSchoolProgram.policierEnInterventionsa =>
-      'Policier en intervention               (Socle Avancé)',
+      'Policier en intervention — Socle avancé',
     GpxSchoolProgram.recueilPvApj20 => 'Recueil de procès-verbaux (APJ 20)',
     GpxSchoolProgram.dimensionHumaine => 'Dimension humaine',
+  };
+
+  String get compactTitle => switch (this) {
+    GpxSchoolProgram.mememtoCirculationRoutiere => 'Circulation routière',
+    GpxSchoolProgram.policierEnIntervention => 'Intervention — Socle initial',
+    GpxSchoolProgram.policierEnInterventionsa => 'Intervention — Socle avancé',
+    GpxSchoolProgram.recueilPvApj20 => 'Procès-verbaux (APJ 20)',
+    _ => title,
   };
 
   String get subtitle => switch (this) {
@@ -183,6 +191,24 @@ class _GpxSchoolArtState extends State<GpxSchoolArt> {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     final lock = widget.lockToApj20Only;
+    final recommended = lock
+        ? GpxSchoolProgram.recueilPvApj20
+        : GpxSchoolProgram.institutionValeurs;
+    final otherPrograms = GpxSchoolProgram.values
+        .where((program) => program != recommended)
+        .toList(growable: false);
+
+    Widget cardFor(GpxSchoolProgram program) {
+      final card = _ProgramCompactCard(
+        program: program,
+        selected: _selected == program,
+        disabled: _loading || lock,
+        onTap: () => _pick(program),
+      );
+      return program == GpxSchoolProgram.recueilPvApj20
+          ? KeyedSubtree(key: widget.apj20CardKey, child: card)
+          : card;
+    }
 
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
@@ -235,91 +261,70 @@ class _GpxSchoolArtState extends State<GpxSchoolArt> {
                 ),
               ],
             ),
-            const SizedBox(height: 10),
-            Text(
-              '💡 Ce choix n’est pas mémorisé : tu le sélectionnes à chaque démarrage.',
-              style: theme.textTheme.bodySmall?.copyWith(
-                color: _muted(context, .72),
-                height: 1.35,
+            const SizedBox(height: 14),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+              decoration: BoxDecoration(
+                color: theme.colorScheme.primary.withValues(alpha: .07),
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.info_outline_rounded,
+                    size: 18,
+                    color: theme.colorScheme.primary,
+                  ),
+                  const SizedBox(width: 9),
+                  Expanded(
+                    child: Text(
+                      'Tu pourras changer de programme à chaque démarrage.',
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: _muted(context, .76),
+                        height: 1.3,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
-            const SizedBox(height: 18),
-
-            _ProgramHeroCard(
-              program: GpxSchoolProgram.institutionValeurs,
-              selected: _selected == GpxSchoolProgram.institutionValeurs,
-              disabled: _loading || lock,
-              onTap: lock
-                  ? null
-                  : () => _pick(GpxSchoolProgram.institutionValeurs),
+            const SizedBox(height: 22),
+            _SectionLabel(
+              title: lock ? 'Programme du tutoriel' : 'Recommandé aujourd’hui',
+              icon: Icons.auto_awesome_rounded,
+              color: theme.colorScheme.primary,
             ),
-            const SizedBox(height: 16),
-
-            _ProgramHeroCard(
-              program: GpxSchoolProgram.dpsDpg,
-              selected: _selected == GpxSchoolProgram.dpsDpg,
-              disabled: _loading || lock,
-              onTap: lock ? null : () => _pick(GpxSchoolProgram.dpsDpg),
-            ),
-            const SizedBox(height: 16),
-
-            _ProgramHeroCard(
-              program: GpxSchoolProgram.mememtoCirculationRoutiere,
-              selected:
-                  _selected == GpxSchoolProgram.mememtoCirculationRoutiere,
-              disabled: _loading || lock,
-              onTap: lock
-                  ? null
-                  : () => _pick(GpxSchoolProgram.mememtoCirculationRoutiere),
-            ),
-            const SizedBox(height: 16),
-
-            _ProgramHeroCard(
-              program: GpxSchoolProgram.policierEnIntervention,
-              selected: _selected == GpxSchoolProgram.policierEnIntervention,
-              disabled: _loading || lock,
-              onTap: lock
-                  ? null
-                  : () => _pick(GpxSchoolProgram.policierEnIntervention),
-            ),
-            const SizedBox(height: 16),
-
-            _ProgramHeroCard(
-              program: GpxSchoolProgram.policierEnInterventionsa,
-              selected: _selected == GpxSchoolProgram.policierEnInterventionsa,
-              disabled: _loading || lock,
-              onTap: lock
-                  ? null
-                  : () => _pick(GpxSchoolProgram.policierEnInterventionsa),
-            ),
-            const SizedBox(height: 16),
-
-            // ✅ APJ20 : focusable + seul autorisé en lock
+            const SizedBox(height: 10),
             KeyedSubtree(
-              key: widget.apj20CardKey,
+              key: recommended == GpxSchoolProgram.recueilPvApj20
+                  ? widget.apj20CardKey
+                  : null,
               child: _ProgramHeroCard(
-                program: GpxSchoolProgram.recueilPvApj20,
-                selected: _selected == GpxSchoolProgram.recueilPvApj20 || lock,
+                program: recommended,
+                selected: _selected == recommended || lock,
                 disabled: _loading,
                 onTap: () async {
                   if (lock) {
                     widget.onApj20TapOverride?.call();
                     return;
                   }
-                  await _pick(GpxSchoolProgram.recueilPvApj20);
+                  await _pick(recommended);
                 },
               ),
             ),
-            const SizedBox(height: 16),
-
-            _ProgramHeroCard(
-              program: GpxSchoolProgram.dimensionHumaine,
-              selected: _selected == GpxSchoolProgram.dimensionHumaine,
-              disabled: _loading || lock,
-              onTap: lock
-                  ? null
-                  : () => _pick(GpxSchoolProgram.dimensionHumaine),
+            const SizedBox(height: 24),
+            _SectionLabel(
+              title: 'Tous les programmes',
+              trailing: '${otherPrograms.length} disponibles',
+              icon: Icons.grid_view_rounded,
+              color: theme.colorScheme.primary,
             ),
+            const SizedBox(height: 10),
+            for (var index = 0; index < otherPrograms.length; index++) ...[
+              cardFor(otherPrograms[index]),
+              if (index != otherPrograms.length - 1) const SizedBox(height: 10),
+            ],
 
             if (_loading) ...[
               const SizedBox(height: 18),
@@ -337,17 +342,209 @@ class _GpxSchoolArtState extends State<GpxSchoolArt> {
               ),
             ],
 
-            const SizedBox(height: 16),
-            Center(
-              child: Text(
-                'Tu pourras revenir ici quand tu veux pour changer de focus.',
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: _muted(context, .70),
+            const SizedBox(height: 8),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SectionLabel extends StatelessWidget {
+  const _SectionLabel({
+    required this.title,
+    required this.icon,
+    required this.color,
+    this.trailing,
+  });
+
+  final String title;
+  final String? trailing;
+  final IconData icon;
+  final Color color;
+
+  @override
+  Widget build(BuildContext context) => Row(
+    children: [
+      Icon(icon, size: 19, color: color),
+      const SizedBox(width: 8),
+      Expanded(
+        child: Text(
+          title,
+          style: GoogleFonts.instrumentSans(
+            fontSize: 16,
+            fontWeight: FontWeight.w900,
+          ),
+        ),
+      ),
+      if (trailing != null)
+        Text(
+          trailing!,
+          style: GoogleFonts.instrumentSans(
+            fontSize: 12,
+            color: _muted(context, .62),
+            fontWeight: FontWeight.w700,
+          ),
+        ),
+    ],
+  );
+}
+
+class _ProgramCompactCard extends StatelessWidget {
+  const _ProgramCompactCard({
+    required this.program,
+    required this.selected,
+    required this.disabled,
+    required this.onTap,
+  });
+
+  final GpxSchoolProgram program;
+  final bool selected;
+  final bool disabled;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final primary = theme.colorScheme.primary;
+    return Semantics(
+      button: true,
+      selected: selected,
+      label: 'Choisir ${program.title}',
+      child: AnimatedOpacity(
+        duration: const Duration(milliseconds: 180),
+        opacity: disabled && !selected ? .55 : 1,
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: disabled ? null : onTap,
+            borderRadius: BorderRadius.circular(20),
+            child: Ink(
+              height: 104,
+              decoration: BoxDecoration(
+                color: theme.cardColor,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(
+                  color: selected
+                      ? primary.withValues(alpha: .55)
+                      : theme.dividerColor.withValues(alpha: .20),
+                  width: selected ? 1.5 : 1,
                 ),
+                boxShadow: [_T.softShadow],
+              ),
+              child: Row(
+                children: [
+                  ClipRRect(
+                    borderRadius: const BorderRadius.horizontal(
+                      left: Radius.circular(19),
+                    ),
+                    child: SizedBox(
+                      width: 96,
+                      height: double.infinity,
+                      child: Stack(
+                        fit: StackFit.expand,
+                        children: [
+                          Image.asset(
+                            program.heroImage,
+                            fit: BoxFit.cover,
+                            errorBuilder: (_, __, ___) => Container(
+                              color: primary.withValues(alpha: .10),
+                            ),
+                          ),
+                          DecoratedBox(
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Colors.transparent,
+                                  Colors.black.withValues(alpha: .34),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Center(
+                            child: Container(
+                              width: 38,
+                              height: 38,
+                              decoration: BoxDecoration(
+                                color: Colors.black.withValues(alpha: .38),
+                                borderRadius: BorderRadius.circular(13),
+                                border: Border.all(
+                                  color: Colors.white.withValues(alpha: .22),
+                                ),
+                              ),
+                              child: Icon(
+                                program.icon,
+                                color: Colors.white,
+                                size: 20,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          program.compactTitle,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: GoogleFonts.instrumentSans(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                        const SizedBox(height: 5),
+                        Text(
+                          program.subtitle,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: GoogleFonts.instrumentSans(
+                            fontSize: 12,
+                            height: 1.25,
+                            color: _muted(context, .67),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    width: 38,
+                    height: 38,
+                    decoration: BoxDecoration(
+                      color: selected
+                          ? primary
+                          : primary.withValues(alpha: .08),
+                      borderRadius: BorderRadius.circular(13),
+                    ),
+                    child: selected
+                        ? const Padding(
+                            padding: EdgeInsets.all(10),
+                            child: CircularProgressIndicator(
+                              strokeWidth: 2.2,
+                              color: Colors.white,
+                            ),
+                          )
+                        : Icon(
+                            Icons.arrow_forward_rounded,
+                            color: primary,
+                            size: 19,
+                          ),
+                  ),
+                  const SizedBox(width: 12),
+                ],
               ),
             ),
-          ],
+          ),
         ),
       ),
     );
@@ -476,30 +673,6 @@ class _ProgramHeroCard extends StatelessWidget {
                   ),
                 ),
 
-                Positioned(
-                  left: 14,
-                  top: 14,
-                  child: _GlassPill(
-                    isDark: isDark,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(program.icon, size: 16, color: Colors.white),
-                        const SizedBox(width: 8),
-                        Text(
-                          program.badge,
-                          style: GoogleFonts.instrumentSans(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w800,
-                            fontSize: 12.5,
-                            letterSpacing: .2,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-
                 Center(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 22),
@@ -552,66 +725,12 @@ class _ProgramHeroCard extends StatelessWidget {
                   right: 14,
                   bottom: 14,
                   child: _DiscoverButton(
-                    label: selected ? 'Continuer' : 'Choisir',
+                    label: selected ? 'Ouverture…' : 'Commencer',
                     onTap: canTap ? onTap : null,
                   ),
                 ),
               ],
             ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _GlassPill extends StatelessWidget {
-  final Widget child;
-  final bool isDark;
-
-  const _GlassPill({required this.child, required this.isDark});
-
-  @override
-  Widget build(BuildContext context) {
-    // ✅ Glass pill légèrement plus flou que avant, mais pas “gelée”
-    final double pillBlur = isDark ? 18.0 : 16.0;
-
-    // ✅ un peu moins opaque pour laisser “lire” l’arrière
-    final glassFill = Colors.white.withValues(alpha: isDark ? .10 : .12);
-    final glassStroke = Colors.white.withValues(alpha: isDark ? .22 : .24);
-
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(18),
-      child: BackdropFilter(
-        filter: ImageFilter.blur(sigmaX: pillBlur, sigmaY: pillBlur),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          decoration: BoxDecoration(
-            color: glassFill,
-            borderRadius: BorderRadius.circular(18),
-            border: Border.all(color: glassStroke),
-          ),
-          child: Stack(
-            children: [
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [
-                          Colors.white.withValues(alpha: isDark ? .14 : .16),
-                          Colors.transparent,
-                          Colors.black.withValues(alpha: isDark ? .10 : .08),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              child,
-            ],
           ),
         ),
       ),

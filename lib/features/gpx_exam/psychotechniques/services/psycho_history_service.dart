@@ -25,21 +25,17 @@ class PsychoHistoryService {
   }) async {
     final user = _supabase.auth.currentUser;
     if (user == null) return;
-    try {
-      await _supabase.from('tests_psychotechnique_history').insert({
-        'user_id': user.id,
-        'exercise_type': exerciseType,
-        'module': module,
-        'score': score,
-        'correct_answers': correctAnswers,
-        'wrong_answers': wrongAnswers,
-        'total_questions': totalQuestions,
-        'duration_seconds': durationSeconds,
-        'avg_response_time': avgResponseTime,
-        'mode': mode,
-      });
-    } catch (_) {
-      // Silencieux : la sauvegarde ne doit pas casser la fin d'exercice.
-    }
+    await _supabase.from('tests_psychotechnique_history').insert({
+      'user_id': user.id,
+      'exercise_type': exerciseType,
+      'module': module,
+      'score': score,
+      'correct_answers': correctAnswers,
+      'wrong_answers': wrongAnswers,
+      'total_questions': totalQuestions,
+      'duration_seconds': durationSeconds,
+      'avg_response_time': avgResponseTime,
+      'mode': mode,
+    });
   }
 }

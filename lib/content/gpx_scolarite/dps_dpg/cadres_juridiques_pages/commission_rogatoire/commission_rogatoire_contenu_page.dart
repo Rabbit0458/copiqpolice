@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques/commission_rogatoire_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CommissionRogatoireContenuPage extends StatelessWidget {
   const CommissionRogatoireContenuPage({super.key});
@@ -26,10 +27,18 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Commission rogatoire',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+            "f00002",
+            'Commission rogatoire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,7 +52,11 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'La commission rogatoire\n(art. 81 et 151 à 154-2 du Code de Procédure Pénale)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00003",
+              'La commission rogatoire\n(art. 81 et 151 à 154-2 du Code de Procédure Pénale)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,8 +66,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Définition, autorités compétentes, formalisme et principaux actes '
-            'd’enquête exécutés sur délégation du juge d’instruction.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+                  "f00004",
+                  'Définition, autorités compétentes, formalisme et principaux actes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+                  "f00005",
+                  'd’enquête exécutés sur délégation du juge d’instruction.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,9 +88,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 1 ================================
           _ModuleCard(
             tag: 'cr_chap1',
-            title: 'Chapitre 1 — Autorités déléguantes et délégataires',
-            subtitle:
-                'Qui délègue, qui exécute ? Juge d’instruction, OPJ, APJ et répartition des pouvoirs dans l’exécution des commissions rogatoires.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00006",
+              'Chapitre 1 — Autorités déléguantes et délégataires',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00007",
+              'Qui délègue, qui exécute ? Juge d’instruction, OPJ, APJ et répartition des pouvoirs dans l’exécution des commissions rogatoires.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,9 +111,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 2 ================================
           _ModuleCard(
             tag: 'cr_chap2',
-            title: 'Chapitre 2 — Le formalisme de la commission rogatoire',
-            subtitle:
-                'Mentions obligatoires, portée territoriale, durée, limites de la délégation et conséquences en cas d’irrégularité.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00008",
+              'Chapitre 2 — Le formalisme de la commission rogatoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00009",
+              'Mentions obligatoires, portée territoriale, durée, limites de la délégation et conséquences en cas d’irrégularité.',
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +134,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 3 (VUE GLOBALE) ==================
           _ModuleCard(
             tag: 'cr_chap3',
-            title: 'Chapitre 3 — Les actes procéduraux',
-            subtitle:
-                'Logique générale des actes accomplis sur commission rogatoire, contrôle du juge d’instruction et du parquet, traçabilité des opérations.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00010",
+              'Chapitre 3 — Les actes procéduraux',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00011",
+              'Logique générale des actes accomplis sur commission rogatoire, contrôle du juge d’instruction et du parquet, traçabilité des opérations.',
+            ),
             imagePath: 'assets/images/chap3.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -115,9 +157,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== ACTES PROCÉDURAUX : PERQUISITIONS =========
           _ModuleCard(
             tag: 'cr_perquisitions',
-            title: 'Perquisitions et fouilles',
-            subtitle:
-                'Conditions, horaires, lieux, présence des occupants, saisies et rédaction du procès-verbal sur commission rogatoire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00012",
+              'Perquisitions et fouilles',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00013",
+              'Conditions, horaires, lieux, présence des occupants, saisies et rédaction du procès-verbal sur commission rogatoire.',
+            ),
             imagePath: 'assets/images/fouille.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -131,8 +180,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== ACTES PROCÉDURAUX : SAISIES ET SCELLES =========
           _ModuleCard(
             tag: 'cr_saisies',
-            title: 'Saisies et scellés',
-            subtitle: 'Conditions des saisies sur commission rogatoire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00014",
+              'Saisies et scellés',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00015",
+              'Conditions des saisies sur commission rogatoire.',
+            ),
             imagePath: 'assets/images/stup_import_export.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -146,9 +203,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== ACTES PROCÉDURAUX : MANDAT DE RECHERCHE ===
           _ModuleCard(
             tag: 'cr_mandat_recherche',
-            title: 'Le mandat de recherche',
-            subtitle:
-                'Fondement juridique, mentions essentielles, effets du mandat de recherche et articulation avec l’interpellation.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00016",
+              'Le mandat de recherche',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00017",
+              'Fondement juridique, mentions essentielles, effets du mandat de recherche et articulation avec l’interpellation.',
+            ),
             imagePath: 'assets/images/mandat.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -162,9 +226,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== ACTES PROCÉDURAUX : GARDE À VUE ===========
           _ModuleCard(
             tag: 'cr_gav',
-            title: 'La garde à vue sur commission rogatoire',
-            subtitle:
-                'Conditions de fond et de forme, information des droits, durée, prolongations et rôle du juge d’instruction.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00018",
+              'La garde à vue sur commission rogatoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00019",
+              'Conditions de fond et de forme, information des droits, durée, prolongations et rôle du juge d’instruction.',
+            ),
             imagePath: 'assets/images/gardeavue.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -178,9 +249,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== ACTES PROCÉDURAUX : RÉQUISITIONS ==========
           _ModuleCard(
             tag: 'cr_requisitions',
-            title: 'Les réquisitions sur commission rogatoire',
-            subtitle:
-                'Réquisitions judiciaires aux organismes publics ou privés : finalité, portée, limites et conservation des réponses.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00020",
+              'Les réquisitions sur commission rogatoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00021",
+              'Réquisitions judiciaires aux organismes publics ou privés : finalité, portée, limites et conservation des réponses.',
+            ),
             imagePath: 'assets/images/requisitions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -194,9 +272,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== ACTES PROCÉDURAUX : VIOLATION CJ ==========
           _ModuleCard(
             tag: 'cr_violation_cj',
-            title: 'Les violations du contrôle judiciaire',
-            subtitle:
-                'La retenue judiciaire en cas de présomption de violation de certaines obligations du contrôle judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00022",
+              'Les violations du contrôle judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00023",
+              'La retenue judiciaire en cas de présomption de violation de certaines obligations du contrôle judiciaire',
+            ),
             imagePath: 'assets/images/retention.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -210,9 +295,16 @@ class CommissionRogatoireContenuPage extends StatelessWidget {
           // ===================== QUIZ MODULE ===============================
           _ModuleCard(
             tag: 'flagrant_quiz',
-            title: 'Quiz — Commission rogatoire',
-            subtitle:
-                'Testez vos réflexes : définition, conditions, pouvoirs et limites.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00024",
+              'Quiz — Commission rogatoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart",
+              "f00025",
+              'Testez vos réflexes : définition, conditions, pouvoirs et limites.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

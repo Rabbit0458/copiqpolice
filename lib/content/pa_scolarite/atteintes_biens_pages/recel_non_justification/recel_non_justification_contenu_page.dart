@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaRecelNonJustificationContenuPage extends StatelessWidget {
   const PaRecelNonJustificationContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaRecelNonJustificationContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaRecelNonJustificationContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre les biens",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre les biens",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaRecelNonJustificationContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Recel & non-justification de ressources",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+              "f00003",
+              "Recel & non-justification de ressources",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaRecelNonJustificationContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles sur le recel et la non-justification de ressources "
-            "(définition, éléments constitutifs, aggravations et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles sur le recel et la non-justification de ressources ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+                  "f00005",
+                  "(définition, éléments constitutifs, aggravations et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,8 +88,16 @@ class PaRecelNonJustificationContenuPage extends StatelessWidget {
           // ================= PDF 1 =================
           _ModuleCard(
             tag: 'recel',
-            title: "Le recel",
-            subtitle: "Définition, caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+              "f00006",
+              "Le recel",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+              "f00007",
+              "Définition, caractérisation et sanctions.",
+            ),
             imagePath: 'assets/images/recel.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -80,8 +111,16 @@ class PaRecelNonJustificationContenuPage extends StatelessWidget {
           // ================= PDF 2 =================
           _ModuleCard(
             tag: 'non_justification_ressources',
-            title: "La non-justification de ressources",
-            subtitle: "Cadre légal, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+              "f00008",
+              "La non-justification de ressources",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+              "f00009",
+              "Cadre légal, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/recel.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,9 +135,16 @@ class PaRecelNonJustificationContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_recel_non_justification',
-            title: 'Quiz — Recel & non-justification',
-            subtitle:
-                'Testez vos connaissances sur les définitions, éléments constitutifs et sanctions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+              "f00010",
+              'Quiz — Recel & non-justification',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart",
+              "f00011",
+              'Testez vos connaissances sur les définitions, éléments constitutifs et sanctions.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

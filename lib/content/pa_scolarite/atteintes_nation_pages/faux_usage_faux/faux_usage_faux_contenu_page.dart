@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaFauxUsageFauxContenuPage extends StatelessWidget {
   const PaFauxUsageFauxContenuPage({super.key});
@@ -13,7 +14,9 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
 
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -24,10 +27,18 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crime & délit contre la nation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+            "f00002",
+            "Crime & délit contre la nation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -42,7 +53,11 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Les faux et l’usage de faux",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00003",
+              "Les faux et l’usage de faux",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -52,8 +67,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux faux et à l’usage de faux "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux faux et à l’usage de faux ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -66,8 +89,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'nation_faux_delivrance_indue_document_admin',
-            title: "La délivrance indue de document administratif",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00006",
+              "La délivrance indue de document administratif",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00007",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/faux_usage_faux.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,8 +112,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'nation_faux_faux_document_admin',
-            title: "Le faux commis dans un document administratif",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00008",
+              "Le faux commis dans un document administratif",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00009",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/faux_usage_faux.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,8 +135,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'nation_faux_faux_ecriture_publique_authentique',
-            title: "Le faux commis dans une écriture publique ou authentique",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00010",
+              "Le faux commis dans une écriture publique ou authentique",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00011",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/faux_usage_faux.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -111,8 +158,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           // ================= 4 =================
           _ModuleCard(
             tag: 'nation_faux_faux_et_usage_faux',
-            title: "Le faux et l’usage de faux",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00012",
+              "Le faux et l’usage de faux",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00013",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/faux_usage_faux.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -126,8 +181,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           // ================= 5 =================
           _ModuleCard(
             tag: 'nation_faux_faux_certificats_attestations',
-            title: "Les faux certificats ou attestations",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00014",
+              "Les faux certificats ou attestations",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00015",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/faux_usage_faux.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -141,8 +204,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           // ================= 6 =================
           _ModuleCard(
             tag: 'nation_faux_obtention_indue_document_admin',
-            title: "L’obtention indue de document administratif",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00016",
+              "L’obtention indue de document administratif",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00017",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/faux_usage_faux.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -157,9 +228,16 @@ class PaFauxUsageFauxContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_faux_usage_faux',
-            title: 'Quiz — Les faux et l\'usage de faux',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00018",
+              'Quiz — Les faux et l\'usage de faux',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart",
+              "f00019",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

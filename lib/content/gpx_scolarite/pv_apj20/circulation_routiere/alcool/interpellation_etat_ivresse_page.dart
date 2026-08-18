@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class InterpellationEtatIvressePage extends StatelessWidget {
   const InterpellationEtatIvressePage({super.key});
@@ -56,7 +57,11 @@ class InterpellationEtatIvressePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Alcool",
@@ -74,7 +79,11 @@ class InterpellationEtatIvressePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Interpellation suite à conduite en état d’ivresse",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00002",
+              "PV — Interpellation suite à conduite en état d’ivresse",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,27 +94,53 @@ class InterpellationEtatIvressePage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Objectif du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00003",
+              "Objectif du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas sert à rédiger un procès-verbal clair, complet et chronologique lors de l’interpellation "
-                "d’un conducteur pour conduite en état d’ivresse manifeste. L’idée : caractériser les signes extérieurs, "
-                "poser le cadre juridique, tracer les actes et sécuriser la procédure.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00004",
+                      "Ce canevas sert à rédiger un procès-verbal clair, complet et chronologique lors de l’interpellation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00005",
+                      "d’un conducteur pour conduite en état d’ivresse manifeste. L’idée : caractériser les signes extérieurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00006",
+                      "poser le cadre juridique, tracer les actes et sécuriser la procédure.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Rédaction chronologique (du contrôle à la présentation OPJ).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00007",
+                  "Rédaction chronologique (du contrôle à la présentation OPJ).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Style indirect pour l’identité (état civil + adresse uniquement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00008",
+                  "Style indirect pour l’identité (état civil + adresse uniquement).",
+                ),
               ),
               _IntroBullet(
-                text: "Préciser les horaires (notamment début de GAV).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00009",
+                  "Préciser les horaires (notamment début de GAV).",
+                ),
               ),
             ],
           ),
@@ -114,22 +149,30 @@ class InterpellationEtatIvressePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Base légale — à rappeler dès le début",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00010",
+              "Base légale — à rappeler dès le début",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Contrôle obligatoire de l’alcoolémie (ivresse) : peine complémentaire de suspension du permis — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                    "f00011",
+                    "Contrôle obligatoire de l’alcoolémie (ivresse) : peine complémentaire de suspension du permis — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 234-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                    "f00012",
+                    "article L. 234-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -139,11 +182,23 @@ class InterpellationEtatIvressePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le dépistage préalable d’imprégnation alcoolique n’est pas obligatoire : "
-                        "le conducteur peut être soumis directement aux vérifications destinées à établir l’état alcoolique — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                          "f00013",
+                          "Le dépistage préalable d’imprégnation alcoolique n’est pas obligatoire : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                          "f00014",
+                          "le conducteur peut être soumis directement aux vérifications destinées à établir l’état alcoolique — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article L. 234-3 alinéa 1 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00015",
+                      "article L. 234-3 alinéa 1 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -151,7 +206,11 @@ class InterpellationEtatIvressePage extends StatelessWidget {
                   ),
                   TextSpan(text: " et "),
                   TextSpan(
-                    text: "article L. 234-6 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00016",
+                      "article L. 234-6 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -162,12 +221,24 @@ class InterpellationEtatIvressePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point important",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00017",
+                  "Point important",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le refus de subir le dépistage n’est pas une infraction pénale ; "
-                        "il entraîne l’obligation de se soumettre aux vérifications.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                          "f00018",
+                          "Le refus de subir le dépistage n’est pas une infraction pénale ; ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                          "f00019",
+                          "il entraîne l’obligation de se soumettre aux vérifications.",
+                        ),
                   ),
                 ],
               ),
@@ -178,7 +249,11 @@ class InterpellationEtatIvressePage extends StatelessWidget {
 
           // Images CANVA
           _ConditionCard(
-            title: "Canevas (visuels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00020",
+              "Canevas (visuels)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -199,51 +274,102 @@ class InterpellationEtatIvressePage extends StatelessWidget {
 
           // Les 3 éléments (pédagogiques, adaptés)
           _ConditionCard(
-            title: "Structure de rédaction — les 3 piliers",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00021",
+              "Structure de rédaction — les 3 piliers",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Contexte (avant le contrôle)"),
-              _BulletPoint(
-                text: "Lieu de saisine : endroit exact où se situe l’équipage.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00022",
+                  "1) Contexte (avant le contrôle)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Instructions : patrouille / instructions permanentes du chef de service.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00023",
+                  "Lieu de saisine : endroit exact où se situe l’équipage.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Assistants : fonctionnaires accompagnants + tenue (uniforme/tenue bourgeoise/brassard).",
-              ),
-              _BulletPoint(text: "Mission : but initial."),
-              SizedBox(height: 10),
-
-              _SubTitle("2) Faits générateurs (interception + contrôle)"),
-              _BulletPoint(
-                text:
-                    "Interception : motif (infraction constatée / contrôle sans infraction / contrôle préventif alcool / instructions PR).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00024",
+                  "Instructions : patrouille / instructions permanentes du chef de service.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contrôle : pièces conduite/circulation + assurance (FVA) + identification (état civil + adresse uniquement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00025",
+                  "Assistants : fonctionnaires accompagnants + tenue (uniforme/tenue bourgeoise/brassard).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00026",
+                  "Mission : but initial.",
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "3) Constat d’ivresse + vérifications + interpellation",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00027",
+                  "2) Faits générateurs (interception + contrôle)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Caractérisation des signes extérieurs d’ivresse manifeste (haleine alcool, propos incohérents, élocution hésitante, titubation, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00028",
+                  "Interception : motif (infraction constatée / contrôle sans infraction / contrôle préventif alcool / instructions PR).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dépistage : rappeler qu’il peut être omis au profit de vérifications directes (si pertinent).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00029",
+                  "Contrôle : pièces conduite/circulation + assurance (FVA) + identification (état civil + adresse uniquement).",
+                ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00030",
+                  "3) Constat d’ivresse + vérifications + interpellation",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Interpellation : tracer l’heure exacte (début GAV) et le lieu exact si différent.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00031",
+                  "Caractérisation des signes extérieurs d’ivresse manifeste (haleine alcool, propos incohérents, élocution hésitante, titubation, etc.).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00032",
+                  "Dépistage : rappeler qu’il peut être omis au profit de vérifications directes (si pertinent).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00033",
+                  "Interpellation : tracer l’heure exacte (début GAV) et le lieu exact si différent.",
+                ),
               ),
             ],
           ),
@@ -251,74 +377,195 @@ class InterpellationEtatIvressePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Étapes détaillées (PV chronologique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00034",
+              "Étapes détaillées (PV chronologique)",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1 — Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00035",
+                  "1 — Lieu de saisine",
+                ),
+              ),
               _Paragraph(
-                "Indiquer l’endroit exact où se situe l’équipage (adresse précise, repère, sens de circulation, point kilométrique si utile).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00036",
+                  "Indiquer l’endroit exact où se situe l’équipage (adresse précise, repère, sens de circulation, point kilométrique si utile).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2 — Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00037",
+                  "2 — Instructions",
+                ),
+              ),
               _Paragraph(
-                "Dans le PV de saisine, préciser que l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00038",
+                  "Dans le PV de saisine, préciser que l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3 — Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00039",
+                  "3 — Assistants",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires qui t’accompagnent et préciser la tenue de l’équipage (uniforme, tenue bourgeoise, port du brassard police).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00040",
+                  "Mentionner les fonctionnaires qui t’accompagnent et préciser la tenue de l’équipage (uniforme, tenue bourgeoise, port du brassard police).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4 — Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00041",
+                  "4 — Mission",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le but de la mission initiale (patrouille générale, contrôle routier, prévention, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00042",
+                  "Indiquer le but de la mission initiale (patrouille générale, contrôle routier, prévention, etc.).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5 — Interception du véhicule"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00043",
+                  "5 — Interception du véhicule",
+                ),
+              ),
               _Paragraph(
-                "Relater le contexte :\n"
-                "• suite à une infraction au Code de la route (décrire les faits observés)\n"
-                "• ou contrôle routier sans infraction préalable\n"
-                "• ou contrôle préventif de l’imprégnation alcoolique\n"
-                "• à l’initiative de l’agent ou sur instructions du procureur de la République.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00044",
+                      "Relater le contexte :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00045",
+                      "• suite à une infraction au Code de la route (décrire les faits observés)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00046",
+                      "• ou contrôle routier sans infraction préalable\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00047",
+                      "• ou contrôle préventif de l’imprégnation alcoolique\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00048",
+                      "• à l’initiative de l’agent ou sur instructions du procureur de la République.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("6 — Contrôle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00049",
+                  "6 — Contrôle",
+                ),
+              ),
               _Paragraph(
-                "Contrôle des pièces afférentes à la conduite et à la circulation, de l’obligation d’assurance "
-                "(consultation du F.V.A. si véhicule à moteur immatriculé) et identification en style indirect : "
-                "état civil et adresse uniquement, sans autre élément de personnalité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00050",
+                      "Contrôle des pièces afférentes à la conduite et à la circulation, de l’obligation d’assurance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00051",
+                      "(consultation du F.V.A. si véhicule à moteur immatriculé) et identification en style indirect : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00052",
+                      "état civil et adresse uniquement, sans autre élément de personnalité.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("7 — Constatation de l’état d’ivresse manifeste"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00053",
+                  "7 — Constatation de l’état d’ivresse manifeste",
+                ),
+              ),
               _Paragraph(
-                "Caractériser l’ivresse par des signes extérieurs visibles par tous : haleine sentant l’alcool, "
-                "propos incohérents / explications embrouillées, élocution hésitante, titubation, attitude, etc. "
-                "Décrire concrètement ce que tu constates (pas de généralités).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00054",
+                      "Caractériser l’ivresse par des signes extérieurs visibles par tous : haleine sentant l’alcool, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00055",
+                      "propos incohérents / explications embrouillées, élocution hésitante, titubation, attitude, etc. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00056",
+                      "Décrire concrètement ce que tu constates (pas de généralités).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("8 — Dépistage / Vérifications"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00057",
+                  "8 — Dépistage / Vérifications",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Rappeler que la conduite en état d’ivresse entraîne le contrôle obligatoire de l’alcoolémie, "
-                      "notamment en raison de la peine complémentaire de suspension du permis — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                        "f00058",
+                        "Rappeler que la conduite en état d’ivresse entraîne le contrôle obligatoire de l’alcoolémie, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                        "f00059",
+                        "notamment en raison de la peine complémentaire de suspension du permis — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article L. 234-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                    "f00060",
+                    "article L. 234-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -327,11 +574,23 @@ class InterpellationEtatIvressePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le dépistage préalable n’est pas obligatoire : il peut être procédé directement aux vérifications "
-                        "destinées à établir l’état alcoolique — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                          "f00061",
+                          "Le dépistage préalable n’est pas obligatoire : il peut être procédé directement aux vérifications ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                          "f00062",
+                          "destinées à établir l’état alcoolique — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article L. 234-3 alinéa 1 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00063",
+                      "article L. 234-3 alinéa 1 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -339,7 +598,11 @@ class InterpellationEtatIvressePage extends StatelessWidget {
                   ),
                   TextSpan(text: " et "),
                   TextSpan(
-                    text: "article L. 234-6 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00064",
+                      "article L. 234-6 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -350,49 +613,115 @@ class InterpellationEtatIvressePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Préciser clairement ce qui a été fait : dépistage ou vérifications directes, et rappeler que "
-                "le refus de dépistage n’est pas une infraction pénale mais impose les vérifications.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00065",
+                      "Préciser clairement ce qui a été fait : dépistage ou vérifications directes, et rappeler que ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00066",
+                      "le refus de dépistage n’est pas une infraction pénale mais impose les vérifications.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("9 — Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00067",
+                  "9 — Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "Vu les faits constatés, indiquer le cadre juridique de la flagrance (raisonner à partir des constats "
-                "et de l’infraction apparente).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00068",
+                      "Vu les faits constatés, indiquer le cadre juridique de la flagrance (raisonner à partir des constats ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00069",
+                      "et de l’infraction apparente).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("10 — Interpellation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00070",
+                  "10 — Interpellation",
+                ),
+              ),
               _Paragraph(
-                "L’heure exacte est fondamentale : c’est également l’heure de début de la garde à vue. "
-                "Indiquer le lieu exact si différent du lieu de saisine ou du point d’interception.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00071",
+                      "L’heure exacte est fondamentale : c’est également l’heure de début de la garde à vue. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00072",
+                      "Indiquer le lieu exact si différent du lieu de saisine ou du point d’interception.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("11 — Palpation de sécurité / Menottage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00073",
+                  "11 — Palpation de sécurité / Menottage",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Si menottage : préciser le recours, les motifs et le contexte — ",
-                ),
-                TextSpan(
-                  text: "article 803 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                    "f00074",
+                    "Si menottage : préciser le recours, les motifs et le contexte — ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                    "f00075",
+                    "article 803 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      ". Le menottage n’est possible que si la personne manifeste l’intention de se soustraire "
-                      "à la mesure ou si elle est susceptible d’être dangereuse pour elle-même ou pour autrui.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                        "f00076",
+                        ". Le menottage n’est possible que si la personne manifeste l’intention de se soustraire ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                        "f00077",
+                        "à la mesure ou si elle est susceptible d’être dangereuse pour elle-même ou pour autrui.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Si des objets sont découverts : les situer et les décrire. La personne étant en état d’ivresse, "
-                "prévoir la représentation ultérieure des objets après complet dégrisement. "
-                "Préciser qu’ils sont appréhendés aux fins de remise à l’OPJ (D.A.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00078",
+                      "Si des objets sont découverts : les situer et les décrire. La personne étant en état d’ivresse, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00079",
+                      "prévoir la représentation ultérieure des objets après complet dégrisement. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00080",
+                      "Préciser qu’ils sont appréhendés aux fins de remise à l’OPJ (D.A.).",
+                    ),
               ),
             ],
           ),
@@ -400,34 +729,86 @@ class InterpellationEtatIvressePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Suites procédurales (très important)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00081",
+              "Suites procédurales (très important)",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("12 — Avis O.P.J."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00082",
+                  "12 — Avis O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les instructions reçues de l’officier de police judiciaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00083",
+                  "Mentionner les instructions reçues de l’officier de police judiciaire.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("13 — Retour au service"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00084",
+                  "13 — Retour au service",
+                ),
+              ),
               _Paragraph(
-                "Si le transport nécessite l’usage de la force : détailler les actes de résistance "
-                "et les moyens de coercition utilisés pour y répondre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00085",
+                      "Si le transport nécessite l’usage de la force : détailler les actes de résistance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00086",
+                      "et les moyens de coercition utilisés pour y répondre.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("14 — Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00087",
+                  "14 — Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "L’indication de l’heure est facultative (sauf si utile au contexte).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00088",
+                  "L’indication de l’heure est facultative (sauf si utile au contexte).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("15 — Présentation O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00089",
+                  "15 — Présentation O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "Présenter l’individu à l’OPJ en précisant l’heure. Faire un compte-rendu verbal, "
-                "avec remise éventuelle d’objets appréhendés, et mentionner les instructions données.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00090",
+                      "Présenter l’individu à l’OPJ en précisant l’heure. Faire un compte-rendu verbal, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00091",
+                      "avec remise éventuelle d’objets appréhendés, et mentionner les instructions données.",
+                    ),
               ),
             ],
           ),
@@ -435,30 +816,80 @@ class InterpellationEtatIvressePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Mentions indispensables (à ne pas oublier)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+              "f00092",
+              "Mentions indispensables (à ne pas oublier)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("16 — Recherches administratives"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00093",
+                  "16 — Recherches administratives",
+                ),
+              ),
               _Paragraph(
-                "Préciser les recherches : F.P.R., S.N.P.C., F.V.A., T.A.J. le cas échéant. "
-                "Cette mention confirme que les recherches ont bien été effectuées et que la personne "
-                "ne fait l’objet d’aucune recherche.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00094",
+                      "Préciser les recherches : F.P.R., S.N.P.C., F.V.A., T.A.J. le cas échéant. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00095",
+                      "Cette mention confirme que les recherches ont bien été effectuées et que la personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00096",
+                      "ne fait l’objet d’aucune recherche.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("17 — Immobilisation du véhicule"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00097",
+                  "17 — Immobilisation du véhicule",
+                ),
+              ),
               _Paragraph(
-                "Indiquer que l’immobilisation est levée dès qu’un conducteur qualifié, proposé par le conducteur "
-                "(ou l’accompagnateur de l’élève conducteur) ou éventuellement par le propriétaire du véhicule, "
-                "peut en assurer la conduite. Un exemplaire de la fiche d’immobilisation est remis au conducteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00098",
+                      "Indiquer que l’immobilisation est levée dès qu’un conducteur qualifié, proposé par le conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00099",
+                      "(ou l’accompagnateur de l’élève conducteur) ou éventuellement par le propriétaire du véhicule, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                      "f00100",
+                      "peut en assurer la conduite. Un exemplaire de la fiche d’immobilisation est remis au conducteur.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("18 — Rétention du permis"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00101",
+                  "18 — Rétention du permis",
+                ),
+              ),
               _Paragraph(
-                "Mentionner qu’un exemplaire de l’avis de rétention du permis de conduire est remis au conducteur.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00102",
+                  "Mentionner qu’un exemplaire de l’avis de rétention du permis de conduire est remis au conducteur.",
+                ),
               ),
             ],
           ),
@@ -787,8 +1218,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+        "f00104",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+        "f00105",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -961,7 +1400,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                    "f00106",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -1030,7 +1473,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart",
+                  "f00107",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -1058,7 +1505,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1093,7 +1542,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

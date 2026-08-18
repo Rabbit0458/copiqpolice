@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaReferentielMariannePage extends StatelessWidget {
   const PaReferentielMariannePage({super.key});
@@ -78,10 +79,18 @@ class PaReferentielMariannePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accueil du public",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+            "f00002",
+            "Accueil du public",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -96,7 +105,11 @@ class PaReferentielMariannePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "De la charte d’accueil du public\nau référentiel Marianne",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00003",
+              "De la charte d’accueil du public\nau référentiel Marianne",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -107,15 +120,31 @@ class PaReferentielMariannePage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Idée générale",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00004",
+              "Idée générale",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La charte Marianne formalise des engagements simples de qualité d’accueil. "
-                "Le référentiel Marianne prolonge cette logique sous forme de certification, avec des exigences "
-                "mesurables et un suivi interne.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00005",
+                      "La charte Marianne formalise des engagements simples de qualité d’accueil. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00006",
+                      "Le référentiel Marianne prolonge cette logique sous forme de certification, avec des exigences ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00007",
+                      "mesurables et un suivi interne.",
+                    ),
               ),
             ],
           ),
@@ -124,33 +153,74 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // I — Charte Marianne
           _ConditionCard(
-            title: "I — La charte Marianne",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00008",
+              "I — La charte Marianne",
+            ),
             cardColor: cardCharte,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Adoptée par plus de 2 000 services publics, la charte Marianne décline des critères "
-                "d’engagement garantissant la qualité de l’accueil, qu’il soit physique, par téléphone, "
-                "par courrier ou par courriel.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00009",
+                      "Adoptée par plus de 2 000 services publics, la charte Marianne décline des critères ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00010",
+                      "d’engagement garantissant la qualité de l’accueil, qu’il soit physique, par téléphone, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00011",
+                      "par courrier ou par courriel.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Engagements clés"),
-              _IntroBullet(
-                text: "Faciliter l’accès des usagers dans les services.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00012",
+                  "Engagements clés",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Accueillir les usagers de manière attentive et courtoise.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00013",
+                  "Faciliter l’accès des usagers dans les services.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Répondre de manière compréhensible et dans un délai annoncé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00014",
+                  "Accueillir les usagers de manière attentive et courtoise.",
+                ),
               ),
-              _IntroBullet(text: "Traiter systématiquement les réclamations."),
               _IntroBullet(
-                text:
-                    "Recueillir les propositions des usagers pour améliorer la qualité du service public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00015",
+                  "Répondre de manière compréhensible et dans un délai annoncé.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00016",
+                  "Traiter systématiquement les réclamations.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00017",
+                  "Recueillir les propositions des usagers pour améliorer la qualité du service public.",
+                ),
               ),
             ],
           ),
@@ -159,29 +229,65 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // II — Référentiel Marianne (certification)
           _ConditionCard(
-            title: "II — Le référentiel Marianne",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00018",
+              "II — Le référentiel Marianne",
+            ),
             cardColor: cardRef,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Dans le prolongement de la charte, le référentiel Marianne est une certification "
-                "de la qualité de l’accueil, délivrée par un organisme indépendant.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00019",
+                      "Dans le prolongement de la charte, le référentiel Marianne est une certification ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00020",
+                      "de la qualité de l’accueil, délivrée par un organisme indépendant.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il comprend 19 engagements structurés en 6 rubriques : les 5 premières reprennent "
-                "les critères de la charte et engagent directement les services vis-à-vis des usagers ; "
-                "la dernière est dédiée au pilotage et au suivi interne des exigences de qualité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00021",
+                      "Il comprend 19 engagements structurés en 6 rubriques : les 5 premières reprennent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00022",
+                      "les critères de la charte et engagent directement les services vis-à-vis des usagers ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00023",
+                      "la dernière est dédiée au pilotage et au suivi interne des exigences de qualité.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Dans la Police nationale",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00024",
+                  "Dans la Police nationale",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La charte d’accueil du public et d’assistance aux victimes reste le texte de référence. "
-                        "Toutefois, des mesures permettent de répondre aux engagements du référentiel Marianne.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00025",
+                          "La charte d’accueil du public et d’assistance aux victimes reste le texte de référence. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00026",
+                          "Toutefois, des mesures permettent de répondre aux engagements du référentiel Marianne.",
+                        ),
                   ),
                 ],
               ),
@@ -192,20 +298,46 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Mesures concrètes
           _ConditionCard(
-            title: "Mesures concrètes dans les services de police",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00027",
+              "Mesures concrètes dans les services de police",
+            ),
             cardColor: cardMesures,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Évaluation externe"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00028",
+                  "1) Évaluation externe",
+                ),
+              ),
               _Paragraph(
-                "Des « enquêtes mystère » (ou contrôles inopinés) peuvent être diligentées par les services "
-                "de contrôle du ministère de l’Intérieur (DNSP, IGPN, etc.). Elles prennent la forme "
-                "d’appels téléphoniques ou de visites à l’accueil des commissariats/bureaux de police.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00029",
+                      "Des « enquêtes mystère » (ou contrôles inopinés) peuvent être diligentées par les services ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00030",
+                      "de contrôle du ministère de l’Intérieur (DNSP, IGPN, etc.). Elles prennent la forme ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00031",
+                      "d’appels téléphoniques ou de visites à l’accueil des commissariats/bureaux de police.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Objectif : obtenir une appréciation extérieure de la qualité de l’accueil dans les services.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00032",
+                  "Objectif : obtenir une appréciation extérieure de la qualité de l’accueil dans les services.",
+                ),
               ),
             ],
           ),
@@ -214,31 +346,65 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Délais du référentiel
           _ConditionCard(
-            title: "Délais de réponse attendus (référentiel)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00033",
+              "Délais de réponse attendus (référentiel)",
+            ),
             cardColor: cardDelais,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Téléphone"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00034",
+                  "Téléphone",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Prise en charge en moins de 5 sonneries (agent ou serveur vocal interactif).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00035",
+                  "Prise en charge en moins de 5 sonneries (agent ou serveur vocal interactif).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Courrier électronique"),
-              _BulletPoint(
-                text:
-                    "Première réponse sous 5 jours ouvrés : réponse sur le fond OU réponse d’attente indiquant le délai prévisionnel.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00036",
+                  "Courrier électronique",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accusé de réception électronique adressé systématiquement suite à toute sollicitation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00037",
+                  "Première réponse sous 5 jours ouvrés : réponse sur le fond OU réponse d’attente indiquant le délai prévisionnel.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00038",
+                  "Accusé de réception électronique adressé systématiquement suite à toute sollicitation.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Courrier postal"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00039",
+                  "Courrier postal",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Traitement sous 15 jours ouvrés (si délai non tenu : réponse d’attente indiquant le délai prévisionnel).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00040",
+                  "Traitement sous 15 jours ouvrés (si délai non tenu : réponse d’attente indiquant le délai prévisionnel).",
+                ),
               ),
             ],
           ),
@@ -247,29 +413,60 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Bonnes pratiques / adaptation
           _ConditionCard(
-            title: "Exigences de qualité (attitude & accessibilité)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00041",
+              "Exigences de qualité (attitude & accessibilité)",
+            ),
             cardColor: cardBonnesPratiques,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les agents doivent être sensibilisés à l’accueil des personnes en difficulté "
-                "(handicap, âge, état d’anxiété, non-maîtrise de la langue française…) et adapter "
-                "leur comportement selon la difficulté perçue.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00042",
+                      "Les agents doivent être sensibilisés à l’accueil des personnes en difficulté ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00043",
+                      "(handicap, âge, état d’anxiété, non-maîtrise de la langue française…) et adapter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00044",
+                      "leur comportement selon la difficulté perçue.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Points de vigilance"),
-              _BulletPoint(
-                text:
-                    "Adapter le langage : réponses compréhensibles et accessibles au destinataire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00045",
+                  "Points de vigilance",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mentionner les références de l’agent chargé du dossier (quand c’est prévu/possible).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00046",
+                  "Adapter le langage : réponses compréhensibles et accessibles au destinataire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Faciliter l’accomplissement des démarches pour les personnes à mobilité réduite.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00047",
+                  "Mentionner les références de l’agent chargé du dossier (quand c’est prévu/possible).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00048",
+                  "Faciliter l’accomplissement des démarches pour les personnes à mobilité réduite.",
+                ),
               ),
             ],
           ),
@@ -278,22 +475,35 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Récap express
           _ConditionCard(
-            title: "Synthèse (mémo rapide)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00049",
+              "Synthèse (mémo rapide)",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Charte Marianne : engagements de qualité d’accueil (physique, téléphone, courrier, e-mail).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00050",
+                  "Charte Marianne : engagements de qualité d’accueil (physique, téléphone, courrier, e-mail).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Référentiel Marianne : certification indépendante + exigences mesurables + suivi interne.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00051",
+                  "Référentiel Marianne : certification indépendante + exigences mesurables + suivi interne.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Police : la charte accueil du public/victimes reste la référence, mais des mesures permettent d’atteindre les engagements du référentiel.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00052",
+                  "Police : la charte accueil du public/victimes reste la référence, mais des mesures permettent d’atteindre les engagements du référentiel.",
+                ),
               ),
             ],
           ),
@@ -304,22 +514,44 @@ class PaReferentielMariannePage extends StatelessWidget {
           // //////////////////////  AJOUT — DISCRIMINATION / HARCELEMENT  //////////////
           // /////////////////////////////////////////////////////////////////////////////
           _ConditionCard(
-            title: "Discrimination & harcèlement : en parler, c’est agir",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00053",
+              "Discrimination & harcèlement : en parler, c’est agir",
+            ),
             cardColor: cardDiscriIntro,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ces supports institutionnels rappellent les définitions, les démarches possibles "
-                "et les dispositifs d’écoute et de signalement du ministère de l’Intérieur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00054",
+                      "Ces supports institutionnels rappellent les définitions, les démarches possibles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00055",
+                      "et les dispositifs d’écoute et de signalement du ministère de l’Intérieur.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Source",
                 bodySpans: [
-                  TextSpan(text: "Affiches et flyers (kit graphique) — "),
                   TextSpan(
-                    text: "egalite-diversite.interieur.ader.gouv.fr",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00056",
+                      "Affiches et flyers (kit graphique) — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00057",
+                      "egalite-diversite.interieur.ader.gouv.fr",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(text: "."),
@@ -327,11 +559,18 @@ class PaReferentielMariannePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Référence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00058",
+                  "Référence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "INSTITUTIONS ET VALEURS / Retour Sommaire 130 — Mis à jour le 13/03/2025.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00059",
+                      "INSTITUTIONS ET VALEURS / Retour Sommaire 130 — Mis à jour le 13/03/2025.",
+                    ),
                   ),
                 ],
               ),
@@ -342,19 +581,36 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Témoins : que faire ?
           _ConditionCard(
-            title: "Vous êtes témoin direct",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00060",
+              "Vous êtes témoin direct",
+            ),
             cardColor: cardBonnesPratiques,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Si vous êtes témoin direct d’une situation de discrimination sur votre lieu de travail, vous pouvez :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00061",
+                  "Si vous êtes témoin direct d’une situation de discrimination sur votre lieu de travail, vous pouvez :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Rendre compte à votre hiérarchie."),
               _BulletPoint(
-                text:
-                    "Signaler les faits aux interlocuteurs mentionnés (cellules d’écoute), si toute démarche auprès de votre hiérarchie a été rejetée et en l’absence d’initiative de la part de la victime.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00062",
+                  "Rendre compte à votre hiérarchie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00063",
+                  "Signaler les faits aux interlocuteurs mentionnés (cellules d’écoute), si toute démarche auprès de votre hiérarchie a été rejetée et en l’absence d’initiative de la part de la victime.",
+                ),
               ),
             ],
           ),
@@ -363,39 +619,91 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Auteurs : sanctions
           _ConditionCard(
-            title: "Vous êtes auteur : sanctions possibles",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00064",
+              "Vous êtes auteur : sanctions possibles",
+            ),
             cardColor: cardSanctions,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Sanctions pénales"),
-              _BulletPoint(
-                text:
-                    "Discrimination : 3 ans d’emprisonnement et 45 000 € d’amende.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00065",
+                  "Sanctions pénales",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Harcèlement moral : 2 ans de prison et 30 000 € d’amende.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00066",
+                  "Discrimination : 3 ans d’emprisonnement et 45 000 € d’amende.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Harcèlement sexuel : 2 à 3 ans de prison et 30 000 € à 45 000 € d’amende.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00067",
+                  "Harcèlement moral : 2 ans de prison et 30 000 € d’amende.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00068",
+                  "Harcèlement sexuel : 2 à 3 ans de prison et 30 000 € à 45 000 € d’amende.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Sanctions disciplinaires"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00069",
+                  "Sanctions disciplinaires",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Après étude du dossier et selon la gravité : jusqu’à la radiation des cadres ou la révocation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00070",
+                  "Après étude du dossier et selon la gravité : jusqu’à la radiation des cadres ou la révocation.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Mesures administratives"),
-              _BulletPoint(text: "Suspension de fonction."),
-              _BulletPoint(text: "Mutation dans l’intérêt du service."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00071",
+                  "Mesures administratives",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00072",
+                  "Suspension de fonction.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00073",
+                  "Mutation dans l’intérêt du service.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  TextSpan(text: "Référence document : @SICoP/2017."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00074",
+                      "Référence document : @SICoP/2017.",
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -405,41 +713,111 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Cellule d'écoute : définition + phases
           _ConditionCard(
-            title: "Qu’est-ce qu’une cellule d’écoute et de signalement ?",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00075",
+              "Qu’est-ce qu’une cellule d’écoute et de signalement ?",
+            ),
             cardColor: cardCellule,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Communément appelés « cellules d’écoute », les dispositifs d’alerte et de signalement "
-                "ont pour vocation d’écouter, analyser la situation et aider les agents à trouver une solution "
-                "pour mettre fin aux pratiques discriminatoires et de harcèlement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00076",
+                      "Communément appelés « cellules d’écoute », les dispositifs d’alerte et de signalement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00077",
+                      "ont pour vocation d’écouter, analyser la situation et aider les agents à trouver une solution ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00078",
+                      "pour mettre fin aux pratiques discriminatoires et de harcèlement.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Les 4 phases du traitement"),
-              _BulletPoint(text: "Recueil du signalement du déclarant."),
-              _BulletPoint(text: "Entretien individuel avec le déclarant."),
-              _BulletPoint(text: "Traitement par l’administration."),
-              _BulletPoint(text: "Clôture du signalement."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00079",
+                  "Les 4 phases du traitement",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00080",
+                  "Recueil du signalement du déclarant.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00081",
+                  "Entretien individuel avec le déclarant.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00082",
+                  "Traitement par l’administration.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00083",
+                  "Clôture du signalement.",
+                ),
+              ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Confidentialité",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00084",
+                  "Confidentialité",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Soumises à des obligations de confidentialité et d’impartialité, les cellules peuvent être saisies par tout agent, "
-                        "victime ou témoin (discrimination ou harcèlement moral/sexuel).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00085",
+                          "Soumises à des obligations de confidentialité et d’impartialité, les cellules peuvent être saisies par tout agent, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00086",
+                          "victime ou témoin (discrimination ou harcèlement moral/sexuel).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Signalement anonyme",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00087",
+                  "Signalement anonyme",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les signalements anonymes (ou par un tiers) sont possibles, mais le traitement ne sera poursuivi "
-                        "qu’avec l’accord de l’agent concerné.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00088",
+                          "Les signalements anonymes (ou par un tiers) sont possibles, mais le traitement ne sera poursuivi ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00089",
+                          "qu’avec l’accord de l’agent concerné.",
+                        ),
                   ),
                 ],
               ),
@@ -450,55 +828,107 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Définitions : discrimination / harcèlement
           _ConditionCard(
-            title: "Définitions essentielles",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00090",
+              "Définitions essentielles",
+            ),
             cardColor: cardDiscriDef,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Qu’est-ce qu’une discrimination ?"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00091",
+                  "Qu’est-ce qu’une discrimination ?",
+                ),
+              ),
               _Paragraph(
-                "C’est un traitement défavorable appliqué à une personne :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00092",
+                  "C’est un traitement défavorable appliqué à une personne :",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Sur un des critères interdits par la loi (origine, sexe, orientation sexuelle, handicap, lieu de résidence… etc.).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00093",
+                  "Sur un des critères interdits par la loi (origine, sexe, orientation sexuelle, handicap, lieu de résidence… etc.).",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Référence : "),
                 TextSpan(
-                  text: "article 225-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00094",
+                    "Référence : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (énonce les critères de distinction constitutifs d’une discrimination).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00095",
+                    "article 225-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00096",
+                    " (énonce les critères de distinction constitutifs d’une discrimination).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Dans un domaine spécifié par la loi (ex. accès à l’emploi, sanctions disciplinaires, relations fournisseurs, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00097",
+                  "Dans un domaine spécifié par la loi (ex. accès à l’emploi, sanctions disciplinaires, relations fournisseurs, etc.).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00098",
+                  "À retenir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Certaines différences de traitement sont prévues par la loi et ne constituent pas une discrimination "
-                        "(ex. critère objectif de sélection pour un avancement).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00099",
+                          "Certaines différences de traitement sont prévues par la loi et ne constituent pas une discrimination ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00100",
+                          "(ex. critère objectif de sélection pour un avancement).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Qu’est-ce que le harcèlement ?"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00101",
+                  "Qu’est-ce que le harcèlement ?",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Harcèlement moral : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00102",
+                    "Harcèlement moral : ",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: Colors.black,
@@ -507,30 +937,44 @@ class PaReferentielMariannePage extends StatelessWidget {
               ]),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-33-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00103",
+                    "Article 222-33-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article 6 quinquies de la loi n°83-634",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00104",
+                    "article 6 quinquies de la loi n°83-634",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : propos ou comportements répétés ayant pour objet/effet une dégradation des conditions de travail "
-                      "susceptible de porter atteinte aux droits et à la dignité, d’altérer la santé, ou de compromettre l’avenir professionnel.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                        "f00105",
+                        " : propos ou comportements répétés ayant pour objet/effet une dégradation des conditions de travail ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                        "f00106",
+                        "susceptible de porter atteinte aux droits et à la dignité, d’altérer la santé, ou de compromettre l’avenir professionnel.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Harcèlement sexuel : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00107",
+                    "Harcèlement sexuel : ",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: Colors.black,
@@ -539,25 +983,39 @@ class PaReferentielMariannePage extends StatelessWidget {
               ]),
               _Paragraph.rich([
                 TextSpan(
-                  text: "article 222-33 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00108",
+                    "article 222-33 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article 6 ter de la loi n°83-634",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00109",
+                    "article 6 ter de la loi n°83-634",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : imposer de façon répétée des propos/comportements à connotation sexuelle "
-                      "portant atteinte à la dignité (dégradant/humiliant) ou créant une situation intimidante, hostile ou offensante. "
-                      "Peut aussi être constitué par une pression grave, même non répétée, pour obtenir un acte de nature sexuelle.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                        "f00110",
+                        " : imposer de façon répétée des propos/comportements à connotation sexuelle ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                        "f00111",
+                        "portant atteinte à la dignité (dégradant/humiliant) ou créant une situation intimidante, hostile ou offensante. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                        "f00112",
+                        "Peut aussi être constitué par une pression grave, même non répétée, pour obtenir un acte de nature sexuelle.",
+                      ),
                 ),
               ]),
             ],
@@ -567,37 +1025,71 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Que faire + cellules
           _ConditionCard(
-            title: "Que faire en cas de discrimination ou de harcèlement ?",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00113",
+              "Que faire en cas de discrimination ou de harcèlement ?",
+            ),
             cardColor: cardHarcDef,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Premiers réflexes"),
-              _BulletPoint(
-                text:
-                    "Solliciter un entretien avec sa hiérarchie de proximité.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00114",
+                  "Premiers réflexes",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Saisir un référent de proximité : référent RH local, assistant de prévention, référent diversité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00115",
+                  "Solliciter un entretien avec sa hiérarchie de proximité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Demander un rendez-vous à l’assistant de service social ou au médecin de prévention.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00116",
+                  "Saisir un référent de proximité : référent RH local, assistant de prévention, référent diversité.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00117",
+                  "Demander un rendez-vous à l’assistant de service social ou au médecin de prévention.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Contacter une cellule d’écoute"),
-              _BulletPoint(
-                text:
-                    "SIGNAL-DISCRI (Police nationale) : mail igpn-signal-discri@interieur.gouv.fr — tél. 01 86 21 55 55 — courrier IGPN, place Beauvau, 75800 Paris Cedex 08.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00118",
+                  "Contacter une cellule d’écoute",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "ALLO-DISCRI (Secrétariat général) : mail cellule-allo-discri@interieur.gouv.fr — tél. 01 80 15 33 00 — courrier Ministère de l’Intérieur, Place Beauvau, 75800 Paris Cedex 08.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00119",
+                  "SIGNAL-DISCRI (Police nationale) : mail igpn-signal-discri@interieur.gouv.fr — tél. 01 86 21 55 55 — courrier IGPN, place Beauvau, 75800 Paris Cedex 08.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "STOP DISCRI (Gendarmerie nationale) : mail alerte-signalement@gendarmerie.interieur.gouv.fr — tél. 01 84 22 15 67 — courrier IGGN, 1 boulevard Henri Barbusse, 92240 Malakoff.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00120",
+                  "ALLO-DISCRI (Secrétariat général) : mail cellule-allo-discri@interieur.gouv.fr — tél. 01 80 15 33 00 — courrier Ministère de l’Intérieur, Place Beauvau, 75800 Paris Cedex 08.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00121",
+                  "STOP DISCRI (Gendarmerie nationale) : mail alerte-signalement@gendarmerie.interieur.gouv.fr — tél. 01 84 22 15 67 — courrier IGGN, 1 boulevard Henri Barbusse, 92240 Malakoff.",
+                ),
               ),
             ],
           ),
@@ -606,52 +1098,130 @@ class PaReferentielMariannePage extends StatelessWidget {
 
           // Victimes violences sexistes/sexuelles (fiche)
           _ConditionCard(
-            title: "Victime de violences sexistes et sexuelles",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+              "f00122",
+              "Victime de violences sexistes et sexuelles",
+            ),
             cardColor: cardVictimes,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Une violence sexuelle peut être : un acte sexuel (avec ou sans pénétration) commis "
-                "avec violence, contrainte, menace ou surprise, donc sans consentement. "
-                "Aucune tenue, parole ou comportement (même sous alcool) ne justifie ces violences.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00123",
+                      "Une violence sexuelle peut être : un acte sexuel (avec ou sans pénétration) commis ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00124",
+                      "avec violence, contrainte, menace ou surprise, donc sans consentement. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                      "f00125",
+                      "Aucune tenue, parole ou comportement (même sous alcool) ne justifie ces violences.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Déposer plainte (24h/24 – 7j/7)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00126",
+                  "Déposer plainte (24h/24 – 7j/7)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les policiers ou gendarmes sont tenus de recevoir toutes les plaintes (",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00127",
+                    "Les policiers ou gendarmes sont tenus de recevoir toutes les plaintes (",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 15-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                    "f00128",
+                    "article 15-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Urgences & contacts essentiels"),
-              _BulletPoint(text: "En danger : 17 (Police/Gendarmerie)."),
-              _BulletPoint(text: "Depuis un portable : 112."),
-              _BulletPoint(
-                text: "Pour personnes sourdes/malentendantes/muettes : 114.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00129",
+                  "Urgences & contacts essentiels",
+                ),
               ),
-              _BulletPoint(text: "Sapeurs-pompiers : 18."),
-              _BulletPoint(text: "Urgences médicales : 15."),
-              SizedBox(height: 12),
-              _SubTitle("Portail en ligne (tchat)"),
               _BulletPoint(
-                text:
-                    "Signalement violences sexuelles et sexistes : 7j/7 24h/24 (service-public.fr / signalement-violences-sexuelles-sexistes.gouv.fr).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00130",
+                  "En danger : 17 (Police/Gendarmerie).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00131",
+                  "Depuis un portable : 112.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00132",
+                  "Pour personnes sourdes/malentendantes/muettes : 114.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00133",
+                  "Sapeurs-pompiers : 18.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00134",
+                  "Urgences médicales : 15.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Numéro d’écoute"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00135",
+                  "Portail en ligne (tchat)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "3919 : violences femmes info (appel gratuit et anonyme).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00136",
+                  "Signalement violences sexuelles et sexistes : 7j/7 24h/24 (service-public.fr / signalement-violences-sexuelles-sexistes.gouv.fr).",
+                ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00137",
+                  "Numéro d’écoute",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                  "f00138",
+                  "3919 : violences femmes info (appel gratuit et anonyme).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
@@ -659,8 +1229,16 @@ class PaReferentielMariannePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Dans la procédure pénale, des mesures de protection peuvent être mises en place et la victime peut demander réparation "
-                        "en se constituant partie civile.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00139",
+                          "Dans la procédure pénale, des mesures de protection peuvent être mises en place et la victime peut demander réparation ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart",
+                          "f00140",
+                          "en se constituant partie civile.",
+                        ),
                   ),
                 ],
               ),

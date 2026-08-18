@@ -546,6 +546,13 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
     }
 
     final theme = Theme.of(context);
+    final screenHeight = MediaQuery.sizeOf(context).height;
+    final compactHome = screenHeight < 760;
+    final heroHeight = screenHeight < 700
+        ? 232.0
+        : screenHeight < 820
+        ? 272.0
+        : 320.0;
 
     final deckItems = _cats
         .map(
@@ -689,25 +696,35 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
               ),
             ),
 
-            const SizedBox(height: 18),
+            SizedBox(height: compactHome ? 12 : 18),
 
-            // ⚠️ tu as demandé : ne pas toucher "Sélection de contenu" + deck
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                'Sélection de contenu',
+                'Examen — Gardien de la paix',
                 style: theme.textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.w900,
                 ),
               ),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: compactHome ? 4 : 8),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                'Sélection de contenu',
+                style: theme.textTheme.titleMedium?.copyWith(
+                  fontWeight: FontWeight.w800,
+                ),
+              ),
+            ),
+            SizedBox(height: compactHome ? 7 : 10),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: _HeroDeck(
                 key: const PageStorageKey('gpx-exam-hero-deck'),
-                height: 330,
+                height: heroHeight,
                 items: deckItems,
                 initialIndex: _initialDeckIndex,
                 onIndexChanged: _onHeroIndexChanged,
@@ -721,7 +738,7 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
               ),
             ),
 
-            const SizedBox(height: 20),
+            SizedBox(height: compactHome ? 14 : 20),
 
             _sectionHeader(
               context,
@@ -729,7 +746,7 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
               actionText: 'Mon suivi',
               onAction: () => _goToTab(1),
             ),
-            const SizedBox(height: 10),
+            SizedBox(height: compactHome ? 7 : 10),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -740,12 +757,13 @@ class _HomePageGpxExamState extends State<HomePageGpxExam>
                     : _NextStepCard(
                         key: const ValueKey('ready'),
                         data: _nextStep(),
+                        compact: compactHome,
                         onTap: () => _openRouteWithQuota(_nextStep().route),
                       ),
               ),
             ),
 
-            const SizedBox(height: 18),
+            const SizedBox(height: 92),
           ],
         ),
       ),
@@ -1746,10 +1764,16 @@ class _NextStepData {
 }
 
 class _NextStepCard extends StatelessWidget {
-  const _NextStepCard({super.key, required this.data, required this.onTap});
+  const _NextStepCard({
+    super.key,
+    required this.data,
+    required this.onTap,
+    this.compact = false,
+  });
 
   final _NextStepData data;
   final VoidCallback onTap;
+  final bool compact;
 
   @override
   Widget build(BuildContext context) {
@@ -1765,9 +1789,9 @@ class _NextStepCard extends StatelessWidget {
             HapticFeedback.selectionClick();
             onTap();
           },
-          borderRadius: BorderRadius.circular(24),
+          borderRadius: BorderRadius.circular(compact ? 20 : 24),
           child: Ink(
-            padding: const EdgeInsets.all(18),
+            padding: EdgeInsets.all(compact ? 14 : 18),
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
@@ -1776,7 +1800,7 @@ class _NextStepCard extends StatelessWidget {
                     ? const [Color(0xFF152238), Color(0xFF0E1726)]
                     : const [Color(0xFFF3F7FF), Color(0xFFE8F0FF)],
               ),
-              borderRadius: BorderRadius.circular(24),
+              borderRadius: BorderRadius.circular(compact ? 20 : 24),
               border: Border.all(
                 color: accent.withValues(alpha: dark ? .30 : .16),
               ),
@@ -1788,8 +1812,8 @@ class _NextStepCard extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      width: 42,
-                      height: 42,
+                      width: compact ? 38 : 42,
+                      height: compact ? 38 : 42,
                       decoration: BoxDecoration(
                         color: accent,
                         borderRadius: BorderRadius.circular(14),
@@ -1815,7 +1839,7 @@ class _NextStepCard extends StatelessWidget {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.poppins(
-                              fontSize: 17,
+                              fontSize: compact ? 15 : 17,
                               height: 1.15,
                               fontWeight: FontWeight.w900,
                             ),
@@ -1825,10 +1849,10 @@ class _NextStepCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 13),
+                SizedBox(height: compact ? 9 : 13),
                 Text(
                   data.subtitle,
-                  maxLines: 3,
+                  maxLines: compact ? 2 : 3,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.instrumentSans(
                     color: _muted(context, .70),
@@ -1837,7 +1861,7 @@ class _NextStepCard extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                const SizedBox(height: 14),
+                SizedBox(height: compact ? 10 : 14),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(99),
                   child: LinearProgressIndicator(
@@ -1847,12 +1871,14 @@ class _NextStepCard extends StatelessWidget {
                     backgroundColor: accent.withValues(alpha: .12),
                   ),
                 ),
-                const SizedBox(height: 14),
+                SizedBox(height: compact ? 10 : 14),
                 Row(
                   children: [
                     Container(
-                      constraints: const BoxConstraints(minHeight: 44),
-                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      constraints: BoxConstraints(minHeight: compact ? 40 : 44),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: compact ? 13 : 16,
+                      ),
                       decoration: BoxDecoration(
                         color: accent,
                         borderRadius: BorderRadius.circular(15),

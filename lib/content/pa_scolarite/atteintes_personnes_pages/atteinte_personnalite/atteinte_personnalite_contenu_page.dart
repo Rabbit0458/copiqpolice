@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
   const PaAtteintePersonnaliteContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Atteintes à la personnalité",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00003",
+              "Atteintes à la personnalité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux infractions portant atteinte à la personnalité "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux infractions portant atteinte à la personnalité ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,8 +88,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'personnalite_denonciation_calomnieuse',
-            title: "La dénonciation calomnieuse",
-            subtitle: "Définition, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00006",
+              "La dénonciation calomnieuse",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00007",
+              "Définition, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -80,9 +111,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'personnalite_diffusion_enregistrement_sexuel_sans_accord',
-            title:
-                "La diffusion, sans l'accord de la personne concernée, d'un enregistrement ou document portant sur des paroles ou images à caractère sexuel",
-            subtitle: "Cadre légal, qualification et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00008",
+              "La diffusion, sans l'accord de la personne concernée, d'un enregistrement ou document portant sur des paroles ou images à caractère sexuel",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00009",
+              "Cadre légal, qualification et répression.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,8 +134,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'personnalite_violation_domicile_particulier',
-            title: "La violation de domicile commise par un particulier",
-            subtitle: "Éléments constitutifs, aggravations et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00010",
+              "La violation de domicile commise par un particulier",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00011",
+              "Éléments constitutifs, aggravations et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -111,9 +157,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 4 =================
           _ModuleCard(
             tag: 'personnalite_violation_correspondances_voie_electronique',
-            title:
-                "La violation des correspondances émises par la voie électronique",
-            subtitle: "Notion, comportements visés et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00012",
+              "La violation des correspondances émises par la voie électronique",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00013",
+              "Notion, comportements visés et répression.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -127,8 +180,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 5 =================
           _ModuleCard(
             tag: 'personnalite_atteinte_representation_personne',
-            title: "L’atteinte à la représentation de la personne",
-            subtitle: "Qualification, caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00014",
+              "L’atteinte à la représentation de la personne",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00015",
+              "Qualification, caractérisation et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -142,8 +203,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 6 =================
           _ModuleCard(
             tag: 'personnalite_atteinte_intimite_vie_privee',
-            title: "L’atteinte à l’intimité de la vie privée",
-            subtitle: "Définition, éléments et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00016",
+              "L’atteinte à l’intimité de la vie privée",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00017",
+              "Définition, éléments et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -157,8 +226,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 7 =================
           _ModuleCard(
             tag: 'personnalite_atteinte_intimite_personne',
-            title: "L’atteinte à l’intimité d’une personne",
-            subtitle: "Notion, comportements réprimés et peines.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00018",
+              "L’atteinte à l’intimité d’une personne",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00019",
+              "Notion, comportements réprimés et peines.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -172,9 +249,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 8 =================
           _ModuleCard(
             tag: 'personnalite_secret_correspondances_particulier',
-            title:
-                "L’atteinte au secret des correspondances commise par un particulier",
-            subtitle: "Cadre légal, caractérisation et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00020",
+              "L’atteinte au secret des correspondances commise par un particulier",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00021",
+              "Cadre légal, caractérisation et répression.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -188,8 +272,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= 9 =================
           _ModuleCard(
             tag: 'personnalite_secret_professionnel',
-            title: "L’atteinte au secret professionnel",
-            subtitle: "Champ, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00022",
+              "L’atteinte au secret professionnel",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00023",
+              "Champ, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -204,9 +296,16 @@ class PaAtteintePersonnaliteContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_atteinte_personnalite',
-            title: 'Quiz — Atteintes à la personnalité',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00024",
+              'Quiz — Atteintes à la personnalité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart",
+              "f00025",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

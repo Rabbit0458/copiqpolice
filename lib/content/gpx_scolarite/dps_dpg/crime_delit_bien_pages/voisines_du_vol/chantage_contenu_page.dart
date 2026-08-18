@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ChantagePage extends StatelessWidget {
   const ChantagePage({super.key});
@@ -56,10 +57,18 @@ class ChantagePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Voisines du vol",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+            "f00002",
+            "Voisines du vol",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ChantagePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le chantage",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+              "f00003",
+              "Le chantage",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -86,15 +99,31 @@ class ChantagePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le chantage est le fait d’obtenir, en menaçant de révéler ou d’imputer des faits de nature à porter atteinte "
-                "à l’honneur ou à la considération, soit une signature, un engagement ou une renonciation, soit la révélation "
-                "d’un secret, soit la remise de fonds, de valeurs ou d’un bien quelconque.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00005",
+                      "Le chantage est le fait d’obtenir, en menaçant de révéler ou d’imputer des faits de nature à porter atteinte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00006",
+                      "à l’honneur ou à la considération, soit une signature, un engagement ou une renonciation, soit la révélation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00007",
+                      "d’un secret, soit la remise de fonds, de valeurs ou d’un bien quelconque.",
+                    ),
               ),
             ],
           ),
@@ -103,20 +132,31 @@ class ChantagePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (obligatoire)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 312-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00009",
+                    "Article 312-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime le chantage.",
                   ),
                 ),
-                TextSpan(text: " : définit et réprime le chantage."),
               ]),
             ],
           ),
@@ -125,40 +165,81 @@ class ChantagePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "C’est la nature de la menace qui distingue le chantage de l’extorsion : "
-                "il ne s’agit pas de menaces de violences ou de contrainte morale, mais de menace de diffamation. "
-                "En revanche, le but recherché est identique à celui de l’extorsion.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00012",
+                      "C’est la nature de la menace qui distingue le chantage de l’extorsion : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00013",
+                      "il ne s’agit pas de menaces de violences ou de contrainte morale, mais de menace de diffamation. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00014",
+                      "En revanche, le but recherché est identique à celui de l’extorsion.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "A) Menace de révélations ou d’imputations diffamatoires",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00015",
+                  "A) Menace de révélations ou d’imputations diffamatoires",
+                ),
               ),
               _Paragraph(
-                "Le chantage repose sur une menace à caractère diffamatoire : menace de révéler ou d’imputer un fait "
-                "de nature à porter atteinte à l’honneur ou à la considération.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00016",
+                      "Le chantage repose sur une menace à caractère diffamatoire : menace de révéler ou d’imputer un fait ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00017",
+                      "de nature à porter atteinte à l’honneur ou à la considération.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "La diffamation est définie par "),
                   TextSpan(
-                    text: "l’article 29 de la loi du 29 juillet 1881",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00018",
+                      "La diffamation est définie par ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00019",
+                      "l’article 29 de la loi du 29 juillet 1881",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : « toute allégation ou imputation d’un fait portant atteinte à l’honneur ou à la considération… ».",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00020",
+                      " : « toute allégation ou imputation d’un fait portant atteinte à l’honneur ou à la considération… ».",
+                    ),
                   ),
                 ],
               ),
@@ -166,72 +247,25 @@ class ChantagePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00021",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le chantage consiste à menacer quelqu’un de faire connaître à des tiers des faits portant atteinte à l’honneur ou à la considération ",
-                  ),
-                  TextSpan(
-                    text: "(C.A. Paris, 24 mars 1953)",
-                    style: TextStyle(
-                      color: _lawRed,
-                      fontWeight: FontWeight.w900,
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00022",
+                      "Le chantage consiste à menacer quelqu’un de faire connaître à des tiers des faits portant atteinte à l’honneur ou à la considération ",
                     ),
                   ),
-                  TextSpan(text: "."),
-                ],
-              ),
-
-              SizedBox(height: 10),
-
-              _NotaBox(
-                title: "Jurisprudence",
-                bodySpans: [
                   TextSpan(
-                    text:
-                        "La menace de révélation d’une relation adultère en demandant de l’argent pour le prix du silence est de nature à porter atteinte à la considération de la victime ",
-                  ),
-                  TextSpan(
-                    text: "(Cass. crim., 28 janvier 2015)",
-                    style: TextStyle(
-                      color: _lawRed,
-                      fontWeight: FontWeight.w900,
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00023",
+                      "(C.A. Paris, 24 mars 1953)",
                     ),
-                  ),
-                  TextSpan(text: "."),
-                ],
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("B) Révélation vs imputation"),
-              _Paragraph(
-                "La révélation consiste à reprendre / répéter / reproduire des propos ou écrits attribués à des tiers. "
-                "L’imputation renvoie plutôt à l’affirmation personnelle d’un fait dont l’auteur assume la responsabilité.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle(
-                "C) Menace visant une personne physique ou morale",
-              ),
-              _Paragraph(
-                "L’atteinte diffamatoire doit être dirigée contre une personne physique ou une personne morale "
-                "(les deux peuvent être atteintes dans leur honneur ou leur considération). "
-                "Le chantage peut donc viser une société.",
-              ),
-              SizedBox(height: 10),
-
-              _NotaBox(
-                title: "Jurisprudence",
-                bodySpans: [
-                  TextSpan(
-                    text:
-                        "Menace proférée par l’employé d’une banque de saisir la Commission des opérations de bourse d’un dossier compromettant sur des pratiques de ladite banque ",
-                  ),
-                  TextSpan(
-                    text: "(Cass. crim., 12 octobre 1995)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -241,24 +275,28 @@ class ChantagePage extends StatelessWidget {
                 ],
               ),
 
-              SizedBox(height: 12),
-
-              _Paragraph(
-                "La personne sous la menace peut ne pas être la victime directe : le délit existe dès lors que la menace "
-                "porte sur un fait pouvant atteindre l’honneur/la considération d’un tiers, si cette menace permet d’obtenir "
-                "une remise (fonds, valeurs, etc.).",
-              ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00024",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un proche parent peut exercer une contrainte morale sur la personne menacée afin d’obtenir une remise d’argent ou de valeurs ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00025",
+                      "La menace de révélation d’une relation adultère en demandant de l’argent pour le prix du silence est de nature à porter atteinte à la considération de la victime ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 15 avril 1896)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00026",
+                      "(Cass. crim., 28 janvier 2015)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -271,24 +309,180 @@ class ChantagePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "D) Menace visant un fait déterminé (vrai ou faux)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00027",
+                  "B) Révélation vs imputation",
+                ),
               ),
               _Paragraph(
-                "La menace doit se référer à un fait précis, déterminant pour amener la victime à céder. "
-                "Peu importe que le fait soit vrai ou faux : l’« imputation » peut porter sur des faits imaginaires, "
-                "la « révélation » suppose plutôt la véracité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00028",
+                      "La révélation consiste à reprendre / répéter / reproduire des propos ou écrits attribués à des tiers. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00029",
+                      "L’imputation renvoie plutôt à l’affirmation personnelle d’un fait dont l’auteur assume la responsabilité.",
+                    ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00030",
+                  "C) Menace visant une personne physique ou morale",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00031",
+                      "L’atteinte diffamatoire doit être dirigée contre une personne physique ou une personne morale ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00032",
+                      "(les deux peuvent être atteintes dans leur honneur ou leur considération). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00033",
+                      "Le chantage peut donc viser une société.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00034",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Menace de dévoiler à la famille et aux proches les liaisons vraies ou supposées de la victime ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00035",
+                      "Menace proférée par l’employé d’une banque de saisir la Commission des opérations de bourse d’un dossier compromettant sur des pratiques de ladite banque ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Aix-en-Provence, 7 juin 1993)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00036",
+                      "(Cass. crim., 12 octobre 1995)",
+                    ),
+                    style: TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  TextSpan(text: "."),
+                ],
+              ),
+
+              SizedBox(height: 12),
+
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00037",
+                      "La personne sous la menace peut ne pas être la victime directe : le délit existe dès lors que la menace ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00038",
+                      "porte sur un fait pouvant atteindre l’honneur/la considération d’un tiers, si cette menace permet d’obtenir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00039",
+                      "une remise (fonds, valeurs, etc.).",
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00040",
+                  "Jurisprudence",
+                ),
+                bodySpans: [
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00041",
+                      "Un proche parent peut exercer une contrainte morale sur la personne menacée afin d’obtenir une remise d’argent ou de valeurs ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00042",
+                      "(Cass. crim., 15 avril 1896)",
+                    ),
+                    style: TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  TextSpan(text: "."),
+                ],
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00043",
+                  "D) Menace visant un fait déterminé (vrai ou faux)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00044",
+                      "La menace doit se référer à un fait précis, déterminant pour amener la victime à céder. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00045",
+                      "Peu importe que le fait soit vrai ou faux : l’« imputation » peut porter sur des faits imaginaires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00046",
+                      "la « révélation » suppose plutôt la véracité.",
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00047",
+                  "Jurisprudence",
+                ),
+                bodySpans: [
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00048",
+                      "Menace de dévoiler à la famille et aux proches les liaisons vraies ou supposées de la victime ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00049",
+                      "(C.A. Aix-en-Provence, 7 juin 1993)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -299,14 +493,25 @@ class ChantagePage extends StatelessWidget {
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00050",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Menace de divulguer à la presse et à l’opinion publique des agissements prétendus frauduleux ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00051",
+                      "Menace de divulguer à la presse et à l’opinion publique des agissements prétendus frauduleux ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Paris, 8 mars 1989)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00052",
+                      "(C.A. Paris, 8 mars 1989)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -318,50 +523,103 @@ class ChantagePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("E) Expression de la menace"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00053",
+                  "E) Expression de la menace",
+                ),
+              ),
               _BulletPoint(
-                text: "Menace écrite ou verbale : aucune distinction en droit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00054",
+                  "Menace écrite ou verbale : aucune distinction en droit.",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "La forme est indifférente au regard de "),
                 TextSpan(
-                  text: "l’article 312-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00055",
+                    "La forme est indifférente au regard de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00056",
+                    "l’article 312-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "La menace peut être implicite (termes voilés, sous-entendus) dès lors qu’elle est facilement compréhensible "
-                "et qu’elle exerce une pression conduisant à la remise demandée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00057",
+                      "La menace peut être implicite (termes voilés, sous-entendus) dès lors qu’elle est facilement compréhensible ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00058",
+                      "et qu’elle exerce une pression conduisant à la remise demandée.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Même commis par voie de presse, le chantage reste traité comme un délit de droit commun (règles spécifiques de la loi de 1881 écartées).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00059",
+                  "Même commis par voie de presse, le chantage reste traité comme un délit de droit commun (règles spécifiques de la loi de 1881 écartées).",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("F) Objet de la menace (ce qui est exigé)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00060",
+                  "F) Objet de la menace (ce qui est exigé)",
+                ),
+              ),
               _Paragraph(
-                "L’objet est le même que pour l’extorsion : obtenir quelque chose sous la pression de la menace. "
-                "Il faut que l’exigence résulte directement des menaces.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00061",
+                      "L’objet est le même que pour l’extorsion : obtenir quelque chose sous la pression de la menace. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00062",
+                      "Il faut que l’exigence résulte directement des menaces.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Point-clé",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00063",
+                  "Point-clé",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pas de chantage si l’exigence n’est pas clairement établie ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00064",
+                      "Pas de chantage si l’exigence n’est pas clairement établie ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Paris, 25 mai 1999)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00065",
+                      "(C.A. Paris, 25 mai 1999)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -373,34 +631,64 @@ class ChantagePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("G) Exemples d’objets visés par la loi"),
-              _BulletPoint(
-                text: "Une signature (même sur une feuille blanche).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00066",
+                  "G) Exemples d’objets visés par la loi",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Un engagement ou une renonciation (contrats, quittances, reçus, démission, mainlevées…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00067",
+                  "Une signature (même sur une feuille blanche).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La révélation d’un secret (personnel, professionnel, correspondance, affaires…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00068",
+                  "Un engagement ou une renonciation (contrats, quittances, reçus, démission, mainlevées…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La remise de fonds, valeurs ou d’un bien quelconque (mobiliers/immobiliers, corporel ou non).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00069",
+                  "La révélation d’un secret (personnel, professionnel, correspondance, affaires…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00070",
+                  "La remise de fonds, valeurs ou d’un bien quelconque (mobiliers/immobiliers, corporel ou non).",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00071",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exigence par un salarié d’une promotion professionnelle et d’une lettre de recommandation ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00072",
+                      "Exigence par un salarié d’une promotion professionnelle et d’une lettre de recommandation ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 12 octobre 1995)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00073",
+                      "(Cass. crim., 12 octobre 1995)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -413,14 +701,25 @@ class ChantagePage extends StatelessWidget {
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00074",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pression exercée pour obtenir une somme correspondant à une partie d’héritage avant détermination notariale ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00075",
+                      "Pression exercée pour obtenir une somme correspondant à une partie d’héritage avant détermination notariale ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Orléans, 9 janvier 1995)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00076",
+                      "(C.A. Orléans, 9 janvier 1995)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -436,25 +735,48 @@ class ChantagePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+              "f00077",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’élément intentionnel réside dans la volonté de contraindre autrui afin d’obtenir ce qui n’aurait "
-                "pas pu être obtenu par un accord librement consenti (le mobile est indifférent).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00078",
+                      "L’élément intentionnel réside dans la volonté de contraindre autrui afin d’obtenir ce qui n’aurait ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00079",
+                      "pas pu être obtenu par un accord librement consenti (le mobile est indifférent).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Définition (Cour de cassation)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00080",
+                  "Définition (Cour de cassation)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "« Le dessein de contraindre autrui à souscrire des engagements ou à remettre des fonds » ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00081",
+                      "« Le dessein de contraindre autrui à souscrire des engagements ou à remettre des fonds » ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 25 octobre 1973)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00082",
+                      "(Cass. crim., 25 octobre 1973)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -465,8 +787,16 @@ class ChantagePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette définition permet de réprimer aussi bien le maître chanteur agissant par vengeance, intérêt personnel, "
-                "ou même en se croyant « justicier ».",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00083",
+                      "Cette définition permet de réprimer aussi bien le maître chanteur agissant par vengeance, intérêt personnel, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                      "f00084",
+                      "ou même en se croyant « justicier ».",
+                    ),
               ),
             ],
           ),
@@ -475,43 +805,63 @@ class ChantagePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+              "f00085",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 312-10 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00086",
+                    "Article 312-10 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque le chantage est exercé par un service de communication au public en ligne :",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00087",
+                    " : lorsque le chantage est exercé par un service de communication au public en ligne :",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Au moyen d’images ou de vidéos à caractère sexuel.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00088",
+                  "Au moyen d’images ou de vidéos à caractère sexuel.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En vue d’obtenir des images ou des vidéos à caractère sexuel.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00089",
+                  "En vue d’obtenir des images ou des vidéos à caractère sexuel.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 312-11 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00090",
+                    "Article 312-11 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : lorsque l’auteur a mis sa menace à exécution.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00091",
+                    " : lorsque l’auteur a mis sa menace à exécution.",
+                  ),
                 ),
               ]),
             ],
@@ -521,119 +871,223 @@ class ChantagePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+              "f00092",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00093",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00094",
+                    "Simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 312-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00095",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00096",
+                    "article 312-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (en ligne, al. 3) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00097",
+                    "Aggravée (en ligne, al. 3) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 312-10 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00098",
+                    "7 ans d’emprisonnement et 100 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00099",
+                    "article 312-10 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (menace exécutée) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00100",
+                    "Aggravée (menace exécutée) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 312-11 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00101",
+                    "7 ans d’emprisonnement et 100 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00102",
+                    "article 312-11 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00103",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
                 TextSpan(
-                  text: "l’article 312-15 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00104",
+                    "Peines prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00105",
+                    "l’article 312-15 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00106",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI, réprimée par "),
                 TextSpan(
-                  text: "l’article 312-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00107",
+                    "Tentative : OUI, réprimée par ",
                   ),
                 ),
                 TextSpan(
-                  text: " (même peine que l’infraction consommée).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00108",
+                    "l’article 312-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00109",
+                    " (même peine que l’infraction consommée).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00110",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00111",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00112",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Immunité familiale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                  "f00113",
+                  "Immunité familiale",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "OUI : "),
                 TextSpan(
-                  text: "l’article 312-12 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00114",
+                    "OUI : ",
                   ),
                 ),
-                TextSpan(text: " renvoie à l’immunité familiale de "),
                 TextSpan(
-                  text: "l’article 311-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00115",
+                    "l’article 312-12 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00116",
+                    " renvoie à l’immunité familiale de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/voisines_du_vol/chantage_contenu_page.dart",
+                    "f00117",
+                    "l’article 311-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),

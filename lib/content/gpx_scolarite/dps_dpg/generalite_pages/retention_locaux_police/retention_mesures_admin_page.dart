@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — RÉTENTION DANS LES LOCAUX DE POLICE
@@ -49,7 +50,11 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Mesures à caractère administratif',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+            "f00001",
+            'Mesures à caractère administratif',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17,
@@ -64,7 +69,11 @@ class RetentionMesuresAdminPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            'II. Mesures à caractère administratif',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00002",
+              'II. Mesures à caractère administratif',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -72,19 +81,43 @@ class RetentionMesuresAdminPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'Ces rétentions ne s’inscrivent pas directement dans une poursuite pénale. '
-            'Elles répondent à des objectifs d’ordre public, de sûreté ou de protection des personnes. '
-            'Elles restent toutefois encadrées par la loi, avec des durées maximales et des formalités précises.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                  "f00003",
+                  'Ces rétentions ne s’inscrivent pas directement dans une poursuite pénale. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                  "f00004",
+                  'Elles répondent à des objectifs d’ordre public, de sûreté ou de protection des personnes. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                  "f00005",
+                  'Elles restent toutefois encadrées par la loi, avec des durées maximales et des formalités précises.',
+                ),
           ),
           const SizedBox(height: 10),
-          const _NotaBox(
-            title: 'Réflexe général',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00006",
+              'Réflexe général',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Même en matière administrative, la rétention porte atteinte à la liberté d’aller et venir. '
-                    'Elle doit donc toujours rester justifiée, nécessaire, proportionnée et limitée dans le temps.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00007",
+                      'Même en matière administrative, la rétention porte atteinte à la liberté d’aller et venir. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00008",
+                      'Elle doit donc toujours rester justifiée, nécessaire, proportionnée et limitée dans le temps.',
+                    ),
               ),
             ],
           ),
@@ -95,56 +128,97 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           // 1 — DROIT AU SÉJOUR
           // =====================================================
           _HypoCard(
-            title: '1. Retenue pour vérification du droit au séjour',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00009",
+              '1. Retenue pour vérification du droit au séjour',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Il s’agit d’une mesure de rétention visant à vérifier le droit de circulation ou de séjour '
-                'd’une personne de nationalité étrangère sur le territoire français.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00010",
+                      'Il s’agit d’une mesure de rétention visant à vérifier le droit de circulation ou de séjour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00011",
+                      'd’une personne de nationalité étrangère sur le territoire français.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Décision par un O.P.J.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00012",
+                    'Décision par un O.P.J.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      ' dans le cadre d’une procédure administrative (droit des étrangers).',
-                ),
-              ]),
-              const _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Finalité : vérification du droit au séjour ou à la circulation d’un étranger (titre, visa, situation).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00013",
+                    ' dans le cadre d’une procédure administrative (droit des étrangers).',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
-                const TextSpan(
-                  text: 'Durée maximale : ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00014",
+                    'Finalité : vérification du droit au séjour ou à la circulation d’un étranger (titre, visa, situation).',
+                  ),
+                ),
+              ]),
+              _BulletPoint.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00015",
+                    'Durée maximale : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
-                  text: '24 heures',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00016",
+                    '24 heures',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ', à compter du début de la retenue. Au-delà, une autre mesure doit être prise (ex. placement en rétention administrative, liberté…).',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00017",
+                    ', à compter du début de la retenue. Au-delà, une autre mesure doit être prise (ex. placement en rétention administrative, liberté…).',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Mesure placée sous le contrôle du parquet et/ou du juge compétent, avec respect des droits fondamentaux '
-                      '(interprète, information sur la mesure, assistance d’un conseil selon la procédure mise en œuvre, etc.).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00018",
+                        'Mesure placée sous le contrôle du parquet et/ou du juge compétent, avec respect des droits fondamentaux ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00019",
+                        '(interprète, information sur la mesure, assistance d’un conseil selon la procédure mise en œuvre, etc.).',
+                      ),
                 ),
               ]),
             ],
@@ -156,50 +230,91 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           // 2 — HÉBERGEMENT AVANT RECONDUITE
           // =====================================================
           _HypoCard(
-            title:
-                '2. Hébergement des étrangers avant une reconduite à la frontière',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00020",
+              '2. Hébergement des étrangers avant une reconduite à la frontière',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Avant la mise à exécution d’une mesure d’éloignement, certains étrangers peuvent être hébergés '
-                'temporairement dans des locaux surveillés.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00021",
+                      'Avant la mise à exécution d’une mesure d’éloignement, certains étrangers peuvent être hébergés ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00022",
+                      'temporairement dans des locaux surveillés.',
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'La surveillance est assurée par les fonctionnaires de police (policiers de la paix).',
-                ),
-              ]),
-              const _BulletPoint.rich([
-                TextSpan(
-                  text:
-                      'La rétention dure uniquement jusqu’à ce que les conditions matérielles du transport soient réunies '
-                      '(convocation du vol, escorte, documents de voyage…).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00023",
+                    'La surveillance est assurée par les fonctionnaires de police (policiers de la paix).',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Principe directeur : ',
+                  text:
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00024",
+                        'La rétention dure uniquement jusqu’à ce que les conditions matérielles du transport soient réunies ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00025",
+                        '(convocation du vol, escorte, documents de voyage…).',
+                      ),
+                ),
+              ]),
+              _BulletPoint.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00026",
+                    'Principe directeur : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      'durée strictement limitée au temps nécessaire à l’exécution de la mesure d’éloignement (OQTF, reconduite, expulsion administrative…).',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00027",
+                    'durée strictement limitée au temps nécessaire à l’exécution de la mesure d’éloignement (OQTF, reconduite, expulsion administrative…).',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _NotaBox(
-                title: 'Dignité',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                  "f00028",
+                  'Dignité',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Les conditions matérielles de séjour (alimentation, hygiène, repos) doivent rester compatibles '
-                        'avec le respect de la dignité humaine, même en l’absence de procédure pénale.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00029",
+                          'Les conditions matérielles de séjour (alimentation, hygiène, repos) doivent rester compatibles ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00030",
+                          'avec le respect de la dignité humaine, même en l’absence de procédure pénale.',
+                        ),
                   ),
                 ],
               ),
@@ -212,64 +327,114 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           // 3 — CHAMBRE DE SÛRETÉ (IVRESSE)
           // =====================================================
           _HypoCard(
-            title: '3. Placement en chambre de sûreté (ivresse)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00031",
+              '3. Placement en chambre de sûreté (ivresse)',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'La chambre de sûreté vise les personnes en état d’ivresse présentant un danger pour elles-mêmes '
-                'ou pour l’ordre public.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00032",
+                      'La chambre de sûreté vise les personnes en état d’ivresse présentant un danger pour elles-mêmes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00033",
+                      'ou pour l’ordre public.',
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Personnes concernées : ivresse publique et manifeste (IPM), conducteurs en état d’ivresse, '
-                      'ou auteurs d’un autre délit commis en état d’ivresse.',
-                ),
-              ]),
-              const _BulletPoint.rich([
-                TextSpan(
-                  text:
-                      'Finalité principale : protéger la personne et la collectivité (prévention des accidents, des violences, des troubles).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00034",
+                        'Personnes concernées : ivresse publique et manifeste (IPM), conducteurs en état d’ivresse, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00035",
+                        'ou auteurs d’un autre délit commis en état d’ivresse.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
-                const TextSpan(
-                  text: 'Durée : ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00036",
+                    'Finalité principale : protéger la personne et la collectivité (prévention des accidents, des violences, des troubles).',
+                  ),
+                ),
+              ]),
+              _BulletPoint.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00037",
+                    'Durée : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
-                  text: 'jusqu’au complet dégrisement',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00038",
+                    'jusqu’au complet dégrisement',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ', apprécié médicalement et/ou au vu du comportement. La mesure ne doit pas se prolonger plus que nécessaire.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00039",
+                    ', apprécié médicalement et/ou au vu du comportement. La mesure ne doit pas se prolonger plus que nécessaire.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Les infractions commises pendant la rétention (dégradations, violences, outrages…) '
-                      'restent pénalement poursuivables.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00040",
+                        'Les infractions commises pendant la rétention (dégradations, violences, outrages…) ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00041",
+                        'restent pénalement poursuivables.',
+                      ),
                 ),
               ]),
 
               const SizedBox(height: 8),
-              const _ExempleBox(
+              _ExempleBox(
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Un individu en état d’ivresse publique est trouvé couché sur la chaussée. '
-                        'Il est conduit en chambre de sûreté pour sa protection. Il est laissé libre après complet dégrisement et vérifications d’identité.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00042",
+                          'Un individu en état d’ivresse publique est trouvé couché sur la chaussée. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00043",
+                          'Il est conduit en chambre de sûreté pour sa protection. Il est laissé libre après complet dégrisement et vérifications d’identité.',
+                        ),
                   ),
                 ],
               ),
@@ -282,49 +447,91 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           // 4 — RECUEIL MALADES MENTAUX
           // =====================================================
           _HypoCard(
-            title: '4. Recueil temporaire des malades mentaux',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00044",
+              '4. Recueil temporaire des malades mentaux',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Il s’agit d’une mesure exceptionnelle concernant une personne présentant des troubles mentaux '
-                'et un danger grave pour elle-même ou pour autrui.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00045",
+                      'Il s’agit d’une mesure exceptionnelle concernant une personne présentant des troubles mentaux ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                      "f00046",
+                      'et un danger grave pour elle-même ou pour autrui.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Caractère temporaire et exceptionnel : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00047",
+                    'Caractère temporaire et exceptionnel : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      'le placement en locaux de police ne doit durer que le temps d’organiser la prise en charge médicale.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00048",
+                    'le placement en locaux de police ne doit durer que le temps d’organiser la prise en charge médicale.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'La mesure doit aboutir immédiatement au transfert médical dans un établissement spécialisé '
-                      '(hospitalisation à la demande d’un tiers, sur décision préfectorale, etc.).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00049",
+                        'La mesure doit aboutir immédiatement au transfert médical dans un établissement spécialisé ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00050",
+                        '(hospitalisation à la demande d’un tiers, sur décision préfectorale, etc.).',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Travail en lien étroit avec les secours, le médecin régulateur SAMU / SMUR et éventuellement le maire ou le préfet.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00051",
+                    'Travail en lien étroit avec les secours, le médecin régulateur SAMU / SMUR et éventuellement le maire ou le préfet.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _NotaBox(
-                title: 'Respect de la dignité',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                  "f00052",
+                  'Respect de la dignité',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Même en cas de crise aiguë, la personne doit être traitée avec humanité. '
-                        'L’usage de la force (menottage, contention) doit rester strictement nécessaire et proportionné au danger.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00053",
+                          'Même en cas de crise aiguë, la personne doit être traitée avec humanité. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00054",
+                          'L’usage de la force (menottage, contention) doit rester strictement nécessaire et proportionné au danger.',
+                        ),
                   ),
                 ],
               ),
@@ -337,39 +544,70 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           // 5 — MINEURS EN FUGUE
           // =====================================================
           _HypoCard(
-            title: '5. Garde des mineurs en fugue',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00055",
+              '5. Garde des mineurs en fugue',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Lorsqu’un mineur en fugue est retrouvé, il peut être retenu temporairement dans les locaux de police.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                  "f00056",
+                  'Lorsqu’un mineur en fugue est retrouvé, il peut être retenu temporairement dans les locaux de police.',
+                ),
               ),
               SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Finalité : permettre aux personnes qui en ont la garde (parents, tuteurs, ASE…) de le retrouver.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00057",
+                    'Finalité : permettre aux personnes qui en ont la garde (parents, tuteurs, ASE…) de le retrouver.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Durée : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00058",
+                    'Durée : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'strictement limitée au temps nécessaire pour contacter la famille, les services sociaux ou le parquet des mineurs, '
-                      'et organiser la remise du mineur.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00059",
+                        'strictement limitée au temps nécessaire pour contacter la famille, les services sociaux ou le parquet des mineurs, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00060",
+                        'et organiser la remise du mineur.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Les conditions matérielles doivent être adaptées à l’âge et à la vulnérabilité de l’enfant '
-                      '(surveillance, isolement des majeurs, prise en charge bienveillante).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00061",
+                        'Les conditions matérielles doivent être adaptées à l’âge et à la vulnérabilité de l’enfant ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00062",
+                        '(surveillance, isolement des majeurs, prise en charge bienveillante).',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
@@ -378,9 +616,21 @@ class RetentionMesuresAdminPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Une adolescente en fugue est découverte dans un hall d’immeuble. '
-                        'Elle est conduite au commissariat, prise en charge dans un espace séparé, puis remise à ses parents '
-                        'sur instruction du parquet des mineurs.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00063",
+                          'Une adolescente en fugue est découverte dans un hall d’immeuble. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00064",
+                          'Elle est conduite au commissariat, prise en charge dans un espace séparé, puis remise à ses parents ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00065",
+                          'sur instruction du parquet des mineurs.',
+                        ),
                   ),
                 ],
               ),
@@ -393,63 +643,114 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           // 6 — VÉRIFICATION DE SITUATION (TERRORISME)
           // =====================================================
           _HypoCard(
-            title: '6. Retenue pour vérification de situation – Terrorisme',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00066",
+              '6. Retenue pour vérification de situation – Terrorisme',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Cette mesure vise une personne à l’encontre de laquelle il existe des ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00067",
+                    'Cette mesure vise une personne à l’encontre de laquelle il existe des ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'raisons sérieuses de penser',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00068",
+                    'raisons sérieuses de penser',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      ' que son comportement peut être lié à des activités à caractère terroriste.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00069",
+                    ' que son comportement peut être lié à des activités à caractère terroriste.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'La personne peut être retenue pour vérification de sa situation même si elle présente un document d’identité valable.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00070",
+                    'La personne peut être retenue pour vérification de sa situation même si elle présente un document d’identité valable.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
-                const TextSpan(
-                  text: 'Durée maximale : ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00071",
+                    'Durée maximale : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
-                  text: '4 heures',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00072",
+                    '4 heures',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(text: ', à compter du début du contrôle.'),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00073",
+                    ', à compter du début du contrôle.',
+                  ),
+                ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Mesure particulièrement sensible : elle nécessite une traçabilité complète, une information rapide du parquet '
-                      'et un contrôle strict de la proportionnalité des moyens employés.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00074",
+                        'Mesure particulièrement sensible : elle nécessite une traçabilité complète, une information rapide du parquet ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                        "f00075",
+                        'et un contrôle strict de la proportionnalité des moyens employés.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _NotaBox(
-                title: 'Traçabilité renforcée',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                  "f00076",
+                  'Traçabilité renforcée',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Horaires de début et de fin, motifs précis, éléments factuels justifiant les “raisons sérieuses de penser” '
-                        'doivent être consignés avec soin dans les procédures.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00077",
+                          'Horaires de début et de fin, motifs précis, éléments factuels justifiant les “raisons sérieuses de penser” ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                          "f00078",
+                          'doivent être consignés avec soin dans les procédures.',
+                        ),
                   ),
                 ],
               ),
@@ -462,40 +763,60 @@ class RetentionMesuresAdminPage extends StatelessWidget {
           // SYNTHÈSE / POINT DE VIGILANCE
           // =====================================================
           _HypoCard(
-            title: 'Point de vigilance – Ne pas contourner le cadre judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+              "f00079",
+              'Point de vigilance – Ne pas contourner le cadre judiciaire',
+            ),
             cardColor: card,
             accent: redAccent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Les mesures administratives ne doivent jamais servir à contourner le cadre de la ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00080",
+                    'Les mesures administratives ne doivent jamais servir à contourner le cadre de la ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'garde à vue',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00081",
+                    'garde à vue',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' ou des autres procédures judiciaires. Un usage abusif peut entraîner la nullité de la procédure et engager la responsabilité de l’État.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00082",
+                    ' ou des autres procédures judiciaires. Un usage abusif peut entraîner la nullité de la procédure et engager la responsabilité de l’État.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Toujours pouvoir expliquer : le fondement légal, la durée, la finalité de la rétention et les garanties offertes à la personne.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00083",
+                    'Toujours pouvoir expliquer : le fondement légal, la durée, la finalité de la rétention et les garanties offertes à la personne.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'En cas d’hésitation entre un cadre administratif et judiciaire, réflexe : appel au gradé, au parquet ou au COG.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart",
+                    "f00084",
+                    'En cas d’hésitation entre un cadre administratif et judiciaire, réflexe : appel au gradé, au parquet ou au COG.',
+                  ),
                 ),
               ]),
             ],

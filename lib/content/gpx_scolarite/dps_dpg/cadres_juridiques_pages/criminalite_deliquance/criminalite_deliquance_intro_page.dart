@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -58,8 +59,11 @@ class _CriminaliteDeliquanceIntroPageState
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'LA PROCÉDURE APPLICABLE À LA CRIMINALITÉ ET DÉLINQUANCE ORGANISÉES';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_deliquance_intro_page.dart",
+    "f00001",
+    'LA PROCÉDURE APPLICABLE À LA CRIMINALITÉ ET DÉLINQUANCE ORGANISÉES',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -166,7 +170,11 @@ class _CriminaliteDeliquanceIntroPageState
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "La procédure pénale applicable à la criminalité et à la délinquance organisées et aux crimes",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_deliquance_intro_page.dart",
+                        "f00002",
+                        "La procédure pénale applicable à la criminalité et à la délinquance organisées et aux crimes",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -281,7 +289,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/criminalite_deliquance/criminalite_deliquance_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

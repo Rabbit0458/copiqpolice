@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
   const PaTagsInscriptionsSignesDessinsPage({super.key});
@@ -59,10 +60,18 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions / Dégradations",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+            "f00002",
+            "Destructions / Dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Destructions, dégradations et détériorations par inscriptions, signes et dessins\ncommunément appelés « tags »",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+              "f00003",
+              "Destructions, dégradations et détériorations par inscriptions, signes et dessins\ncommunément appelés « tags »",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de tracer des inscriptions, des signes ou des dessins, sans autorisation préalable, "
-                "sur les façades, les véhicules, les voies publiques ou le mobilier urbain, lorsqu’il n’en est "
-                "résulté qu’un dommage léger, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00005",
+                      "Le fait de tracer des inscriptions, des signes ou des dessins, sans autorisation préalable, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00006",
+                      "sur les façades, les véhicules, les voies publiques ou le mobilier urbain, lorsqu’il n’en est ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00007",
+                      "résulté qu’un dommage léger, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,22 +135,30 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-1 II du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00009",
+                    "Article 322-1 II du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les « tags » (inscriptions, signes et dessins).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime les « tags » (inscriptions, signes et dessins).",
+                  ),
                 ),
               ]),
             ],
@@ -131,25 +168,49 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce texte permet de réprimer les auteurs de graffiti (« tags »). Le dommage doit être léger : "
-                "l’inscription doit pouvoir être enlevée facilement, sans altération du support.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00012",
+                      "Ce texte permet de réprimer les auteurs de graffiti (« tags »). Le dommage doit être léger : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00013",
+                      "l’inscription doit pouvoir être enlevée facilement, sans altération du support.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si les faits occasionnent des dommages importants (ex. signes indélébiles ou altération du support), "
-                        "ils relèvent des dispositions de ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                          "f00014",
+                          "Si les faits occasionnent des dommages importants (ex. signes indélébiles ou altération du support), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                          "f00015",
+                          "ils relèvent des dispositions de ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 322-1 I du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00016",
+                      "l’article 322-1 I du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -161,11 +222,29 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("A) Une atteinte matérielle par traçage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00017",
+                  "A) Une atteinte matérielle par traçage",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’un acte positif de traçage. Le terme « tracer » n’ayant pas de sens technique particulier, "
-                "tout procédé peut être retenu : écriture, peinture, gravure…\n"
-                "Le procédé employé ne doit toutefois pas être de nature à entraîner un dommage important.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00018",
+                      "Il s’agit d’un acte positif de traçage. Le terme « tracer » n’ayant pas de sens technique particulier, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00019",
+                      "tout procédé peut être retenu : écriture, peinture, gravure…\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00020",
+                      "Le procédé employé ne doit toutefois pas être de nature à entraîner un dommage important.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(text: "Inscriptions"),
@@ -174,36 +253,95 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("B) Sur un bien appartenant à autrui"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00021",
+                  "B) Sur un bien appartenant à autrui",
+                ),
+              ),
               _Paragraph(
-                "Les biens protégés sont clairement énoncés et aucune autorisation préalable ne doit avoir été donnée à l’auteur.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00022",
+                  "Les biens protégés sont clairement énoncés et aucune autorisation préalable ne doit avoir été donnée à l’auteur.",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Façades"),
-              _BulletPoint(text: "Véhicules"),
-              _BulletPoint(text: "Voies publiques"),
-              _BulletPoint(text: "Mobilier urbain"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00023",
+                  "Façades",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00024",
+                  "Véhicules",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00025",
+                  "Voies publiques",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00026",
+                  "Mobilier urbain",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "La loi ne distingue pas selon le caractère public ou privé des façades. Il en va de même pour les véhicules.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00027",
+                  "La loi ne distingue pas selon le caractère public ou privé des façades. Il en va de même pour les véhicules.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("C) Entraînant un dommage léger"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00028",
+                  "C) Entraînant un dommage léger",
+                ),
+              ),
               _Paragraph(
-                "Le dommage doit être léger (ex. inscription effaçable sans abîmer le crépi). "
-                "Si l’inscription altère le support, le comportement relève alors du régime du dommage important.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00029",
+                      "Le dommage doit être léger (ex. inscription effaçable sans abîmer le crépi). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00030",
+                      "Si l’inscription altère le support, le comportement relève alors du régime du dommage important.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Dans ce cas, application de "),
                 TextSpan(
-                  text: "l’article 322-1 I du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00031",
+                    "Dans ce cas, application de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00032",
+                    "l’article 322-1 I du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -214,26 +352,56 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+              "f00033",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit du même élément moral que pour l’article 322-1 I : l’intention simple suffit. "
-                "L’auteur est punissable dès lors qu’il a agi sciemment et volontairement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00034",
+                      "Il s’agit du même élément moral que pour l’article 322-1 I : l’intention simple suffit. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00035",
+                      "L’auteur est punissable dès lors qu’il a agi sciemment et volontairement.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il doit avoir agi en sachant ne pas être propriétaire du bien et n’avoir aucun droit de disposition. "
-                "Aucun dol spécial n’est exigé : le mobile importe peu (vengeance, vandalisme, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00036",
+                      "Il doit avoir agi en sachant ne pas être propriétaire du bien et n’avoir aucun droit de disposition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00037",
+                      "Aucun dol spécial n’est exigé : le mobile importe peu (vengeance, vandalisme, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Référence jurisprudentielle : "),
                   TextSpan(
-                    text: "Cass. crim., 18 septembre 1991",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00038",
+                      "Référence jurisprudentielle : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00039",
+                      "Cass. crim., 18 septembre 1991",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -249,80 +417,128 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+              "f00040",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00041",
+                    "Article 322-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque le bien détruit, dégradé ou détérioré est un registre, une minute ou un acte original de l’autorité publique.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00042",
+                    " : lorsque le bien détruit, dégradé ou détérioré est un registre, une minute ou un acte original de l’autorité publique.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00043",
+                    "Article 322-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00044",
+                    " : notamment lorsque :",
                   ),
                 ),
-                TextSpan(text: " : notamment lorsque :"),
               ]),
               SizedBox(height: 8),
 
               _BulletPoint(
-                text:
-                    "L’infraction est commise par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00045",
+                  "L’infraction est commise par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Elle est facilitée par la particulière vulnérabilité d’une personne (âge, maladie, infirmité, déficience physique/psychique, grossesse), apparente ou connue.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00046",
+                  "Elle est facilitée par la particulière vulnérabilité d’une personne (âge, maladie, infirmité, déficience physique/psychique, grossesse), apparente ou connue.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Elle est commise au préjudice de personnes dépositaires de l’autorité publique ou chargées d’une mission de service public, pour influencer leur comportement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00047",
+                  "Elle est commise au préjudice de personnes dépositaires de l’autorité publique ou chargées d’une mission de service public, pour influencer leur comportement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Elle est commise au préjudice du conjoint/ascendant/descendant (ou personne vivant habituellement au domicile) des personnes visées ci-dessus, en raison de leurs fonctions.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00048",
+                  "Elle est commise au préjudice du conjoint/ascendant/descendant (ou personne vivant habituellement au domicile) des personnes visées ci-dessus, en raison de leurs fonctions.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Elle est commise au préjudice d’un témoin, d’une victime ou d’une partie civile, pour empêcher/faire cesser une dénonciation, plainte ou déposition, ou en raison de celles-ci.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00049",
+                  "Elle est commise au préjudice d’un témoin, d’une victime ou d’une partie civile, pour empêcher/faire cesser une dénonciation, plainte ou déposition, ou en raison de celles-ci.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Elle est commise dans un local d’habitation ou un lieu d’entrepôt de fonds/valeurs/marchandises/matériels, avec ruse, effraction ou escalade.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00050",
+                  "Elle est commise dans un local d’habitation ou un lieu d’entrepôt de fonds/valeurs/marchandises/matériels, avec ruse, effraction ou escalade.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Elle est commise à l’encontre d’un lieu classifié au titre du secret de la défense nationale.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00051",
+                  "Elle est commise à l’encontre d’un lieu classifié au titre du secret de la défense nationale.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’auteur dissimule volontairement tout ou partie de son visage afin de ne pas être identifié.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00052",
+                  "L’auteur dissimule volontairement tout ou partie de son visage afin de ne pas être identifié.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le bien est destiné à l’utilité ou à la décoration publique et appartient à une personne publique ou chargée d’une mission de service public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00053",
+                  "Le bien est destiné à l’utilité ou à la décoration publique et appartient à une personne publique ou chargée d’une mission de service public.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Elle porte sur du matériel destiné à prodiguer des soins de premiers secours.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00054",
+                  "Elle porte sur du matériel destiné à prodiguer des soins de premiers secours.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le bien détruit, dégradé ou détérioré est destiné à la vaccination.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00055",
+                  "Le bien détruit, dégradé ou détérioré est destiné à la vaccination.",
+                ),
               ),
             ],
           ),
@@ -331,114 +547,212 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
 
           // Répression + tentative/complicité + attention flagrance/GAV
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+              "f00056",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00057",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
-                TextSpan(text: "3 750 € d’amende + T.I.G. — "),
                 TextSpan(
-                  text: "article 322-1 II du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00058",
+                    "Qualification simple : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00059",
+                    "3 750 € d’amende + T.I.G. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00060",
+                    "article 322-1 II du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée : "),
-                TextSpan(text: "7 500 € d’amende + T.I.G. — "),
                 TextSpan(
-                  text: "article 322-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00061",
+                    "Aggravée : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00062",
+                    "7 500 € d’amende + T.I.G. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00063",
+                    "article 322-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravée (hypothèses prévues par l’article 322-3) : ",
-                ),
-                TextSpan(text: "15 000 € d’amende + T.I.G. — "),
-                TextSpan(
-                  text: "article 322-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00064",
+                    "Aggravée (hypothèses prévues par l’article 322-3) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00065",
+                    "15 000 € d’amende + T.I.G. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00066",
+                    "article 322-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00067",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00068",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00069",
+                    "l’article 322-17 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Amende forfaitaire délictuelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00070",
+                  "Amende forfaitaire délictuelle",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-1 II du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00071",
+                    "Article 322-1 II du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00072",
+                    " : permet de recourir à la procédure d’amende forfaitaire prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : permet de recourir à la procédure d’amende forfaitaire prévue par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00073",
+                    "les articles 495-17 à 495-25 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      "les articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00074",
+                    ", y compris en cas de récidive.",
                   ),
                 ),
-                TextSpan(text: ", y compris en cas de récidive."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                  "f00075",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 322-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00076",
+                    "Tentative : OUI — ",
                   ),
                 ),
                 TextSpan(
-                  text: " (prévoit la tentative punissable pour ces délits).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00077",
+                    "article 322-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                    "f00078",
+                    " (prévoit la tentative punissable pour ces délits).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                "Complicité : OUI. Elle est punissable pour l’infraction consommée comme pour l’infraction tentée, "
-                "si un fait de complicité et l’intention de s’associer à l’auteur principal sont caractérisés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00079",
+                      "Complicité : OUI. Elle est punissable pour l’infraction consommée comme pour l’infraction tentée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                      "f00080",
+                      "si un fait de complicité et l’intention de s’associer à l’auteur principal sont caractérisés.",
+                    ),
               ),
 
               SizedBox(height: 12),
@@ -448,8 +762,16 @@ class PaTagsInscriptionsSignesDessinsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ce délit n’étant pas sanctionné d’une peine d’emprisonnement, il interdit la mise en œuvre du cadre juridique de flagrance "
-                        "et d’une mesure de garde à vue.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                          "f00081",
+                          "Ce délit n’étant pas sanctionné d’une peine d’emprisonnement, il interdit la mise en œuvre du cadre juridique de flagrance ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart",
+                          "f00082",
+                          "et d’une mesure de garde à vue.",
+                        ),
                   ),
                 ],
               ),

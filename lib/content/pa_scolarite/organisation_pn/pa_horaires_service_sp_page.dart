@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaHorairesServiceSpPage extends StatelessWidget {
   const PaHorairesServiceSpPage({super.key});
@@ -70,10 +71,18 @@ class PaHorairesServiceSpPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Horaires SP",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+            "f00002",
+            "Horaires SP",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -88,7 +97,11 @@ class PaHorairesServiceSpPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les horaires de service en Sécurité publique",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+              "f00003",
+              "Les horaires de service en Sécurité publique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -100,28 +113,53 @@ class PaHorairesServiceSpPage extends StatelessWidget {
 
           // Intro
           _ConditionCard(
-            title: "À retenir",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+              "f00004",
+              "À retenir",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le temps de travail en Police nationale peut s’organiser en régime hebdomadaire "
-                "ou en régime cyclique (continuité du service). En Sécurité publique, les policiers adjoints "
-                "sont soumis au même régime de travail que les personnels actifs qu’ils assistent.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00005",
+                      "Le temps de travail en Police nationale peut s’organiser en régime hebdomadaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00006",
+                      "ou en régime cyclique (continuité du service). En Sécurité publique, les policiers adjoints ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00007",
+                      "sont soumis au même régime de travail que les personnels actifs qu’ils assistent.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Régime hebdomadaire : calqué sur la semaine civile (ou grande/petite semaine).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00008",
+                  "Régime hebdomadaire : calqué sur la semaine civile (ou grande/petite semaine).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Régime cyclique : organisation en équipes successives (jour/nuit, dimanches/jours fériés).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00009",
+                  "Régime cyclique : organisation en équipes successives (jour/nuit, dimanches/jours fériés).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Congés, repos et compensations : RL, RC, CA, CF, RPS, ARTT…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00010",
+                  "Congés, repos et compensations : RL, RC, CA, CF, RPS, ARTT…",
+                ),
               ),
             ],
           ),
@@ -130,39 +168,93 @@ class PaHorairesServiceSpPage extends StatelessWidget {
 
           // I — Hebdomadaire
           _ConditionCard(
-            title: "I — Régime de travail hebdomadaire",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+              "f00011",
+              "I — Régime de travail hebdomadaire",
+            ),
             cardColor: cardHebdo,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Applicable de jour ou de nuit. Il peut être :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00012",
+                  "Applicable de jour ou de nuit. Il peut être :",
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Calqué sur la semaine civile : 5 jours de travail / 2 jours de repos consécutifs.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00013",
+                  "Calqué sur la semaine civile : 5 jours de travail / 2 jours de repos consécutifs.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Basé sur grande/petite semaine : 6 jours de travail / 2 jours de repos puis 4 jours de travail / 2 jours de repos.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00014",
+                  "Basé sur grande/petite semaine : 6 jours de travail / 2 jours de repos puis 4 jours de travail / 2 jours de repos.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Organisation de la journée"),
-              _BulletPoint(
-                text:
-                    "Sans interruption : pause obligatoire de 20 minutes (sauf nécessités imprévisibles et impérieuses), en principe au milieu de la journée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00015",
+                  "Organisation de la journée",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Avec interruption : coupure méridienne de 45 minutes à 2 heures entre 11h30 et 14h30.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00016",
+                  "Sans interruption : pause obligatoire de 20 minutes (sauf nécessités imprévisibles et impérieuses), en principe au milieu de la journée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00017",
+                  "Avec interruption : coupure méridienne de 45 minutes à 2 heures entre 11h30 et 14h30.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Horaires variables"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00018",
+                  "Horaires variables",
+                ),
+              ),
               _Paragraph(
-                "Le régime hebdomadaire peut être décliné en horaires variables :\n"
-                "• 2 plages variables (arrivée/départ)\n"
-                "• 2 plages fixes de 2 heures\n"
-                "• 1 interruption médiane de 45 minutes minimum à 2 heures maximum\n"
-                "Les prises de service, pauses et fins de service sont saisies par l’agent dans l’outil de gestion du temps de travail ; le décompte est quotidien.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00019",
+                      "Le régime hebdomadaire peut être décliné en horaires variables :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00020",
+                      "• 2 plages variables (arrivée/départ)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00021",
+                      "• 2 plages fixes de 2 heures\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00022",
+                      "• 1 interruption médiane de 45 minutes minimum à 2 heures maximum\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00023",
+                      "Les prises de service, pauses et fins de service sont saisies par l’agent dans l’outil de gestion du temps de travail ; le décompte est quotidien.",
+                    ),
               ),
             ],
           ),
@@ -171,70 +263,185 @@ class PaHorairesServiceSpPage extends StatelessWidget {
 
           // II — Cyclique
           _ConditionCard(
-            title: "II — Régimes de travail cyclique",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+              "f00024",
+              "II — Régimes de travail cyclique",
+            ),
             cardColor: cardCyclique,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le régime cyclique permet d’assurer la continuité du service public. "
-                "Il fonctionne en continu par équipes successives, de jour et/ou de nuit, "
-                "en horaires décalés (dimanches et jours fériés compris) : il ne correspond pas à la semaine civile.",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("A) Cycle 4/2"),
-              _Paragraph("Trois versions existent :"),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "« Classique » : 4 matin / 2 repos / 4 après-midi / 2 repos.",
-              ),
-              _BulletPoint(
-                text: "« Panaché » : 2 matin / 2 après-midi / 2 repos.",
-              ),
-              _BulletPoint(
-                text:
-                    "« Compressé » : 3 après-midi / 2 repos — 4 matin / 1 repos — 4 après-midi / 2 repos — 3 matin / 2 repos.",
-              ),
-              SizedBox(height: 10),
-              _Paragraph(
-                "Les cycles 4/2 nécessitent 3 brigades de jour et une brigade de nuit (3 groupes).\n"
-                "La durée moyenne d’une vacation est de 8 h 10.\n"
-                "La prise de service des vacations de matinée doit être comprise entre 5h20 et 6h30 (sauf nécessités de service).",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("B) Cycles à vacation de 11h08 ou 12h08"),
-              _BulletPoint(text: "Cycle 2/2 : 2 vacations / 2 jours de repos."),
-              _BulletPoint(text: "Cycle 3/3 : 3 vacations / 3 jours de repos."),
-              _BulletPoint(
-                text:
-                    "Cycle 2/2/3/2/2/3 : 2 vacations / 2 repos / 3 vacations / 2 repos / 2 vacations / 3 repos.",
-              ),
-              SizedBox(height: 10),
-              _Paragraph(
-                "Ces cycles nécessitent 1 brigade de jour et 1 brigade de nuit (2 groupes chacune).\n"
-                "Ils prévoient 2 pauses de 20 minutes, divisant la journée en 3 périodes de travail équilibrées.",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("C) Cycle « vacation forte » (2/2/3/2/3/2)"),
-              _Paragraph(
-                "2 vacations / 2 repos / 3 vacations / 2 repos / 3 vacations / 2 repos.\n"
-                "Il permet la présence de 2 brigades ou 2 groupes durant chaque vacation forte.\n"
-                "• Jour : « vacation forte de lundi », « de mercredi » ou « de vendredi » (2 brigades de jour, 2 groupes chacune)\n"
-                "• Nuit : « vacation forte de mardi » ou « de jeudi » (1 brigade, 2 groupes)\n"
-                "Durée moyenne d’une vacation : 9 h 31.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00025",
+                      "Le régime cyclique permet d’assurer la continuité du service public. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00026",
+                      "Il fonctionne en continu par équipes successives, de jour et/ou de nuit, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00027",
+                      "en horaires décalés (dimanches et jours fériés compris) : il ne correspond pas à la semaine civile.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "D) Cycles spécifiques U.C.L (unités cynotechniques légères)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00028",
+                  "A) Cycle 4/2",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00029",
+                  "Trois versions existent :",
+                ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00030",
+                  "« Classique » : 4 matin / 2 repos / 4 après-midi / 2 repos.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Cycle 4/2 UCL : 3 vacations de nuit de 9 h 30 + 1 vacation de jour de 4 h 10.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00031",
+                  "« Panaché » : 2 matin / 2 après-midi / 2 repos.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Cycle « vacation forte » UCL : cycle de nuit, avec la vacation du mardi ou du jeudi effectuée de jour.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00032",
+                  "« Compressé » : 3 après-midi / 2 repos — 4 matin / 1 repos — 4 après-midi / 2 repos — 3 matin / 2 repos.",
+                ),
+              ),
+              SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00033",
+                      "Les cycles 4/2 nécessitent 3 brigades de jour et une brigade de nuit (3 groupes).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00034",
+                      "La durée moyenne d’une vacation est de 8 h 10.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00035",
+                      "La prise de service des vacations de matinée doit être comprise entre 5h20 et 6h30 (sauf nécessités de service).",
+                    ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00036",
+                  "B) Cycles à vacation de 11h08 ou 12h08",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00037",
+                  "Cycle 2/2 : 2 vacations / 2 jours de repos.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00038",
+                  "Cycle 3/3 : 3 vacations / 3 jours de repos.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00039",
+                  "Cycle 2/2/3/2/2/3 : 2 vacations / 2 repos / 3 vacations / 2 repos / 2 vacations / 3 repos.",
+                ),
+              ),
+              SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00040",
+                      "Ces cycles nécessitent 1 brigade de jour et 1 brigade de nuit (2 groupes chacune).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00041",
+                      "Ils prévoient 2 pauses de 20 minutes, divisant la journée en 3 périodes de travail équilibrées.",
+                    ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00042",
+                  "C) Cycle « vacation forte » (2/2/3/2/3/2)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00043",
+                      "2 vacations / 2 repos / 3 vacations / 2 repos / 3 vacations / 2 repos.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00044",
+                      "Il permet la présence de 2 brigades ou 2 groupes durant chaque vacation forte.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00045",
+                      "• Jour : « vacation forte de lundi », « de mercredi » ou « de vendredi » (2 brigades de jour, 2 groupes chacune)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00046",
+                      "• Nuit : « vacation forte de mardi » ou « de jeudi » (1 brigade, 2 groupes)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00047",
+                      "Durée moyenne d’une vacation : 9 h 31.",
+                    ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00048",
+                  "D) Cycles spécifiques U.C.L (unités cynotechniques légères)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00049",
+                  "Cycle 4/2 UCL : 3 vacations de nuit de 9 h 30 + 1 vacation de jour de 4 h 10.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00050",
+                  "Cycle « vacation forte » UCL : cycle de nuit, avec la vacation du mardi ou du jeudi effectuée de jour.",
+                ),
               ),
             ],
           ),
@@ -243,89 +450,230 @@ class PaHorairesServiceSpPage extends StatelessWidget {
 
           // III — Congés & repos
           _ConditionCard(
-            title: "III — Congés et repos",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+              "f00051",
+              "III — Congés et repos",
+            ),
             cardColor: cardConges,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Repos légal (R.L.)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00052",
+                  "A) Repos légal (R.L.)",
+                ),
+              ),
               _Paragraph(
-                "• Régime hebdomadaire : le dimanche.\n"
-                "• Régime cyclique : le jour de repos suivant le ou les deux jours de repos compensateurs.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00053",
+                      "• Régime hebdomadaire : le dimanche.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00054",
+                      "• Régime cyclique : le jour de repos suivant le ou les deux jours de repos compensateurs.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Repos compensateur (R.C.)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00055",
+                  "B) Repos compensateur (R.C.)",
+                ),
+              ),
               _Paragraph(
-                "• Régime hebdomadaire : le samedi ou le lundi.\n"
-                "• Régime cyclique : le premier jour de repos.\n"
-                "  Pour les cycles avec 3 jours de repos consécutifs : les 2 premiers jours (ex : cycle 3/3).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00056",
+                      "• Régime hebdomadaire : le samedi ou le lundi.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00057",
+                      "• Régime cyclique : le premier jour de repos.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00058",
+                      "  Pour les cycles avec 3 jours de repos consécutifs : les 2 premiers jours (ex : cycle 3/3).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Congés annuels (C.A.)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00059",
+                  "C) Congés annuels (C.A.)",
+                ),
+              ),
               _Paragraph(
-                "En principe : 5 fois les obligations hebdomadaires, soit 25 jours ouvrés en régime hebdomadaire.\n"
-                "Exceptions :\n"
-                "• Cycles 4/2, 4/2 compressé, 4/2 panaché : 23 jours\n"
-                "• Cycle « vacation forte » : 20 jours\n"
-                "• Cycles 2/2, 3/3, 2/2/3/2/2/3 : 18 jours\n"
-                "L’absence du service ne peut excéder 31 jours consécutifs.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00060",
+                      "En principe : 5 fois les obligations hebdomadaires, soit 25 jours ouvrés en régime hebdomadaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00061",
+                      "Exceptions :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00062",
+                      "• Cycles 4/2, 4/2 compressé, 4/2 panaché : 23 jours\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00063",
+                      "• Cycle « vacation forte » : 20 jours\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00064",
+                      "• Cycles 2/2, 3/3, 2/2/3/2/2/3 : 18 jours\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00065",
+                      "L’absence du service ne peut excéder 31 jours consécutifs.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Jours supplémentaires :\n"
-                "• +1 jour si 5 à 7 jours de CA sont pris hors période du 1er mai au 31 octobre\n"
-                "• +2 jours si au moins 8 jours sont pris hors période",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00066",
+                      "Jours supplémentaires :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00067",
+                      "• +1 jour si 5 à 7 jours de CA sont pris hors période du 1er mai au 31 octobre\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00068",
+                      "• +2 jours si au moins 8 jours sont pris hors période",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sont exclus du rappel au service et du report de repos les agents ayant positionné leurs C.A. sur le plan prévisionnel de congés.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00069",
+                      "Sont exclus du rappel au service et du report de repos les agents ayant positionné leurs C.A. sur le plan prévisionnel de congés.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("D) Crédit férié (C.F.)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00070",
+                  "D) Crédit férié (C.F.)",
+                ),
+              ),
               _Paragraph(
-                "Compensation propre aux régimes cycliques destinée à restituer les jours fériés et chômés (ponts compris).\n"
-                "Volume annuel forfaitaire : 109 h 12.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00071",
+                      "Compensation propre aux régimes cycliques destinée à restituer les jours fériés et chômés (ponts compris).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00072",
+                      "Volume annuel forfaitaire : 109 h 12.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("E) Temps compensés (R.P.S.)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00073",
+                  "E) Temps compensés (R.P.S.)",
+                ),
+              ),
               _Paragraph(
-                "Repos de pénibilité spécifique : crédit d’heures calculé avec des coefficients multiplicateurs.\n"
-                "Cas principaux :\n"
-                "• Régime cyclique : période nocturne (21h00–06h00) et dimanche\n"
-                "• Régime hebdomadaire : heures de nuit, prise de service décalée sur R.C./R.L./jour férié, services supplémentaires récurrents",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00074",
+                      "Repos de pénibilité spécifique : crédit d’heures calculé avec des coefficients multiplicateurs.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00075",
+                      "Cas principaux :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00076",
+                      "• Régime cyclique : période nocturne (21h00–06h00) et dimanche\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00077",
+                      "• Régime hebdomadaire : heures de nuit, prise de service décalée sur R.C./R.L./jour férié, services supplémentaires récurrents",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Périodes de prise : du 01 janvier au 30 avril et du 01 octobre au 31 décembre.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00078",
+                  "Périodes de prise : du 01 janvier au 30 avril et du 01 octobre au 31 décembre.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sont exclus du rappel au service et du report de repos les agents ayant positionné leurs R.P.S. sur le plan prévisionnel de congés.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00079",
+                      "Sont exclus du rappel au service et du report de repos les agents ayant positionné leurs R.P.S. sur le plan prévisionnel de congés.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("F) Jours ARTT & crédit annuel ARTT"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00080",
+                  "F) Jours ARTT & crédit annuel ARTT",
+                ),
+              ),
               _Paragraph(
-                "• Jours ARTT (régime hebdomadaire) : attribués lorsque le service permanent dépasse le volume horaire annuel maximum autorisé.\n"
-                "• Heures ARTT (régime cyclique) : crédit annuel ARTT exprimé en heures (A.R.T.C.), ARTT indemnisées et journée de solidarité déduites.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00081",
+                      "• Jours ARTT (régime hebdomadaire) : attribués lorsque le service permanent dépasse le volume horaire annuel maximum autorisé.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00082",
+                      "• Heures ARTT (régime cyclique) : crédit annuel ARTT exprimé en heures (A.R.T.C.), ARTT indemnisées et journée de solidarité déduites.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sont exclus du rappel au service et du report de repos les agents ayant positionné leurs A.R.T.T. ou A.R.T.C. sur le plan prévisionnel de congés.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00083",
+                      "Sont exclus du rappel au service et du report de repos les agents ayant positionné leurs A.R.T.T. ou A.R.T.C. sur le plan prévisionnel de congés.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ],
@@ -337,27 +685,67 @@ class PaHorairesServiceSpPage extends StatelessWidget {
 
           // IV — Services supplémentaires (NOTA PA)
           _ConditionCard(
-            title: "IV — Services supplémentaires",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+              "f00084",
+              "IV — Services supplémentaires",
+            ),
             cardColor: cardSup,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Constituent des services supplémentaires :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00085",
+                  "Constituent des services supplémentaires :",
+                ),
+              ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Le rappel au service."),
-              _BulletPoint(text: "Le dépassement horaire."),
-              _BulletPoint(text: "La permanence."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00086",
+                  "Le rappel au service.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00087",
+                  "Le dépassement horaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00088",
+                  "La permanence.",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ces services ouvrent droit à des repos compensateurs égaux ou équivalents.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00089",
+                  "Ces services ouvrent droit à des repos compensateurs égaux ou équivalents.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les policiers adjoints ne peuvent pas être soumis à l’astreinte. "
-                        "En revanche, ils peuvent être volontaires dans le cadre des permanences.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                          "f00090",
+                          "Les policiers adjoints ne peuvent pas être soumis à l’astreinte. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                          "f00091",
+                          "En revanche, ils peuvent être volontaires dans le cadre des permanences.",
+                        ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ],
@@ -369,37 +757,86 @@ class PaHorairesServiceSpPage extends StatelessWidget {
 
           // V & VI — Comptes
           _ConditionCard(
-            title: "V — CET & VI — RCSS",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+              "f00092",
+              "V — CET & VI — RCSS",
+            ),
             cardColor: cardComptes,
             accent: accentTeal,
             titleColor: textMain,
             children: [
-              const _SubTitle("V) Compte épargne-temps (CET)"),
-              const _Paragraph(
-                "Le CET permet d’accumuler des droits à congés rémunérés. "
-                "Il est ouvert sur demande à tout agent : titulaire (tous corps) ou non titulaire (policiers adjoints), "
-                "ayant accompli au moins une année de service.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00093",
+                  "V) Compte épargne-temps (CET)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00094",
+                      "Le CET permet d’accumuler des droits à congés rémunérés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00095",
+                      "Il est ouvert sur demande à tout agent : titulaire (tous corps) ou non titulaire (policiers adjoints), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00096",
+                      "ayant accompli au moins une année de service.",
+                    ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle(
-                "VI) Repos compensateurs pour services supplémentaires (RCSS)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00097",
+                  "VI) Repos compensateurs pour services supplémentaires (RCSS)",
+                ),
               ),
-              const _Paragraph(
-                "Chaque agent dispose d’un compte personnel de RCSS. "
-                "Au-delà d’un seuil de 160 heures, l’agent récupère ses RCSS dans un délai de 30 jours "
-                "dès que le pourcentage de présence nécessaire à l’exercice des missions le permet.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00098",
+                      "Chaque agent dispose d’un compte personnel de RCSS. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00099",
+                      "Au-delà d’un seuil de 160 heures, l’agent récupère ses RCSS dans un délai de 30 jours ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00100",
+                      "dès que le pourcentage de présence nécessaire à l’exercice des missions le permet.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "À défaut, les chefs de service prescrivent la récupération des repos restants au terme du délai "
-                "par journées, sous réserve des nécessités de service.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00101",
+                      "À défaut, les chefs de service prescrivent la récupération des repos restants au terme du délai ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00102",
+                      "par journées, sous réserve des nécessités de service.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les RCSS placés sur le compte peuvent faire l’objet d’une indemnisation.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00103",
+                      "Les RCSS placés sur le compte peuvent faire l’objet d’une indemnisation.",
+                    ),
                   ),
                 ],
               ),
@@ -407,15 +844,32 @@ class PaHorairesServiceSpPage extends StatelessWidget {
 
               // ✅ Petit rappel des références “code” (en rouge quand présent)
               _NotaBox(
-                title: "Rappel législatif",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                  "f00104",
+                  "Rappel législatif",
+                ),
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "Les règles de temps de travail et les prérogatives en service s’inscrivent notamment dans le cadre du ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00105",
+                      "Les règles de temps de travail et les prérogatives en service s’inscrivent notamment dans le cadre du ",
+                    ),
                   ),
-                  lawSpan("Code de procédure pénale"),
-                  const TextSpan(
-                    text: " et des textes réglementaires applicables.",
+                  lawSpan(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00106",
+                      "Code de procédure pénale",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_horaires_service_sp_page.dart",
+                      "f00107",
+                      " et des textes réglementaires applicables.",
+                    ),
                   ),
                 ],
               ),

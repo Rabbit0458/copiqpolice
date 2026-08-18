@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaStadContenuPage extends StatelessWidget {
   const PaStadContenuPage({super.key});
 
-  static const String routeName =
-      '/pa/dps_dpg/atteintes_biens/stad';
+  static const String routeName = '/pa/dps_dpg/atteintes_biens/stad';
 
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +25,18 @@ class PaStadContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre les biens",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre les biens",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +51,11 @@ class PaStadContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Atteintes aux STAD",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00003",
+              "Atteintes aux STAD",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +65,16 @@ class PaStadContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles sur les atteintes aux systèmes de traitement automatisé de données "
-            "(définitions, éléments constitutifs, aggravations et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles sur les atteintes aux systèmes de traitement automatisé de données ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, aggravations et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +87,16 @@ class PaStadContenuPage extends StatelessWidget {
           // ================= PDF 1 =================
           _ModuleCard(
             tag: 'stad_acces_maintien_frauduleux',
-            title:
-                "L’accès ou le maintien frauduleux dans un système de traitement automatisé de données",
-            subtitle: "Définition, caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00006",
+              "L’accès ou le maintien frauduleux dans un système de traitement automatisé de données",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00007",
+              "Définition, caractérisation et sanctions.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,8 +110,16 @@ class PaStadContenuPage extends StatelessWidget {
           // ================= PDF 2 =================
           _ModuleCard(
             tag: 'stad_association_malfaiteurs_info',
-            title: "L’association de malfaiteurs en informatique",
-            subtitle: "Qualification, éléments et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00008",
+              "L’association de malfaiteurs en informatique",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00009",
+              "Qualification, éléments et répression.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,9 +133,16 @@ class PaStadContenuPage extends StatelessWidget {
           // ================= PDF 3 =================
           _ModuleCard(
             tag: 'stad_donnees_adaptees',
-            title:
-                "L’importation, la détention, l’offre, la cession, la mise à disposition de toutes données adaptées pour commettre les infractions d’atteintes aux systèmes de traitement automatisé de données",
-            subtitle: "Cadre légal, conditions et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00010",
+              "L’importation, la détention, l’offre, la cession, la mise à disposition de toutes données adaptées pour commettre les infractions d’atteintes aux systèmes de traitement automatisé de données",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00011",
+              "Cadre légal, conditions et sanctions.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -112,9 +156,16 @@ class PaStadContenuPage extends StatelessWidget {
           // ================= PDF 4 =================
           _ModuleCard(
             tag: 'stad_intro_supp_modif',
-            title:
-                "L’introduction, la suppression ou la modification frauduleuse de données",
-            subtitle: "Éléments constitutifs, aggravations et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00012",
+              "L’introduction, la suppression ou la modification frauduleuse de données",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00013",
+              "Éléments constitutifs, aggravations et répression.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -129,9 +180,16 @@ class PaStadContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_stad',
-            title: 'Quiz — Atteintes aux STAD',
-            subtitle:
-                'Testez vos connaissances sur les définitions, éléments constitutifs et sanctions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00014",
+              'Quiz — Atteintes aux STAD',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart",
+              "f00015",
+              'Testez vos connaissances sur les définitions, éléments constitutifs et sanctions.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

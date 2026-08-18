@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDefautNotificationChangementDomicileCreancierPage
     extends StatelessWidget {
@@ -60,10 +61,18 @@ class PaDefautNotificationChangementDomicileCreancierPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Violation d’ordonnances JAF",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+            "f00002",
+            "Violation d’ordonnances JAF",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class PaDefautNotificationChangementDomicileCreancierPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le défaut de notification de changement de domicile au créancier",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+              "f00003",
+              "Le défaut de notification de changement de domicile au créancier",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,16 +103,36 @@ class PaDefautNotificationChangementDomicileCreancierPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour une personne tenue de verser une contribution ou des subsides au titre "
-                "de l’ordonnance de protection rendue en application de l’article 515-9 du code civil, "
-                "de ne pas notifier son changement de domicile au créancier dans un délai d’un mois "
-                "à compter de ce changement, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00005",
+                      "Le fait, pour une personne tenue de verser une contribution ou des subsides au titre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00006",
+                      "de l’ordonnance de protection rendue en application de l’article 515-9 du code civil, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00007",
+                      "de ne pas notifier son changement de domicile au créancier dans un délai d’un mois ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00008",
+                      "à compter de ce changement, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -108,22 +141,30 @@ class PaDefautNotificationChangementDomicileCreancierPage
 
           // ✅ Élément légal (en haut)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-4-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00010",
+                    "Article 227-4-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le défaut de notification de changement de domicile au créancier.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00011",
+                    " : définit et réprime le défaut de notification de changement de domicile au créancier.",
+                  ),
                 ),
               ]),
             ],
@@ -133,73 +174,128 @@ class PaDefautNotificationChangementDomicileCreancierPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le juge aux affaires familiales pouvant être amené à se prononcer, dans le cadre du référé protection, "
-                "sur la contribution aux charges du ménage, il était nécessaire de prévoir, à des fins dissuasives, "
-                "l’infraction du défaut de communication de changement d’adresse du débiteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00013",
+                      "Le juge aux affaires familiales pouvant être amené à se prononcer, dans le cadre du référé protection, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00014",
+                      "sur la contribution aux charges du ménage, il était nécessaire de prévoir, à des fins dissuasives, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00015",
+                      "l’infraction du défaut de communication de changement d’adresse du débiteur.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "A) Une personne tenue de verser une contribution ou des subsides",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00016",
+                  "A) Une personne tenue de verser une contribution ou des subsides",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Dans le cadre de l’ordonnance de protection, le juge peut intervenir sur le fondement de ",
-                ),
-                TextSpan(
-                  text: "l’article 515-9 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00017",
+                    "Dans le cadre de l’ordonnance de protection, le juge peut intervenir sur le fondement de ",
                   ),
                 ),
-                TextSpan(text: ", selon les modalités fixées par "),
                 TextSpan(
-                  text: "l’article 515-11 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00018",
+                    "l’article 515-9 du code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00019",
+                    ", selon les modalités fixées par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00020",
+                    "l’article 515-11 du code civil",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "Statuer sur la résidence séparée des époux, préciser qui demeure dans le logement conjugal et les modalités de prise en charge des frais afférents ; en principe, la jouissance est attribuée au conjoint non auteur des violences.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00021",
+                  "Statuer sur la résidence séparée des époux, préciser qui demeure dans le logement conjugal et les modalités de prise en charge des frais afférents ; en principe, la jouissance est attribuée au conjoint non auteur des violences.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser lequel des partenaires PACS ou concubins demeure dans le logement commun et statuer sur la prise en charge des frais ; en principe, la jouissance est attribuée au partenaire/concubin non auteur des violences.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00022",
+                  "Préciser lequel des partenaires PACS ou concubins demeure dans le logement commun et statuer sur la prise en charge des frais ; en principe, la jouissance est attribuée au partenaire/concubin non auteur des violences.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Se prononcer sur l’autorité parentale et, le cas échéant, sur la contribution : charges du mariage (couples mariés), aide matérielle (PACS) et contribution à l’entretien/éducation des enfants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00023",
+                  "Se prononcer sur l’autorité parentale et, le cas échéant, sur la contribution : charges du mariage (couples mariés), aide matérielle (PACS) et contribution à l’entretien/éducation des enfants.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Un défaut de notification de changement de domicile au créancier",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00024",
+                  "B) Un défaut de notification de changement de domicile au créancier",
+                ),
               ),
               _Paragraph(
-                "Le débiteur doit, dans un délai d’un mois, notifier au créancier son changement de domicile. "
-                "Aucune exigence particulière n’est imposée quant à la forme de cette notification.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00025",
+                      "Le débiteur doit, dans un délai d’un mois, notifier au créancier son changement de domicile. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00026",
+                      "Aucune exigence particulière n’est imposée quant à la forme de cette notification.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Point clé : l’infraction vise le silence volontaire du débiteur, malgré l’existence d’une obligation de contribution/subsides au titre de l’ordonnance de protection.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00027",
+                      "Point clé : l’infraction vise le silence volontaire du débiteur, malgré l’existence d’une obligation de contribution/subsides au titre de l’ordonnance de protection.",
+                    ),
                   ),
                 ],
               ),
@@ -210,16 +306,38 @@ class PaDefautNotificationChangementDomicileCreancierPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+              "f00028",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Volonté de ne pas informer le créancier"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00029",
+                  "Volonté de ne pas informer le créancier",
+                ),
+              ),
               _Paragraph(
-                "Le défaut de notification de changement de domicile est une infraction intentionnelle. "
-                "La simple négligence n’est pas punissable : la volonté coupable consiste à vouloir, par son silence, "
-                "priver le titulaire du droit de l’exercice de ce droit.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00030",
+                      "Le défaut de notification de changement de domicile est une infraction intentionnelle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00031",
+                      "La simple négligence n’est pas punissable : la volonté coupable consiste à vouloir, par son silence, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00032",
+                      "priver le titulaire du droit de l’exercice de ce droit.",
+                    ),
               ),
             ],
           ),
@@ -228,13 +346,21 @@ class PaDefautNotificationChangementDomicileCreancierPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+              "f00033",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00034",
+                  "Aucune circonstance aggravante prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -243,69 +369,140 @@ class PaDefautNotificationChangementDomicileCreancierPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+              "f00035",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00036",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit — "),
                 TextSpan(
-                  text: "article 227-4-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00037",
+                    "Délit — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00038",
+                    "article 227-4-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " : "),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "6 mois d’emprisonnement."),
-              _BulletPoint(text: "7 500 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00039",
+                  "6 mois d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00040",
+                  "7 500 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00041",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale possible via "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00042",
+                    "Responsabilité pénale possible via ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (généralisation de la responsabilité des personnes morales).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00043",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00044",
+                    " (généralisation de la responsabilité des personnes morales).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En pratique, l’engagement de la responsabilité des personnes morales s’apprécie au regard des conditions légales d’imputabilité (organe/représentant, intérêt, etc.).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                      "f00045",
+                      "En pratique, l’engagement de la responsabilité des personnes morales s’apprécie au regard des conditions légales d’imputabilité (organe/représentant, intérêt, etc.).",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00046",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                  "f00047",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00048",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation ou instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00049",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart",
+                    "f00050",
+                    " (aide/assistance, provocation ou instructions).",
+                  ),
                 ),
               ]),
             ],
@@ -563,9 +760,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

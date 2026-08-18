@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -18,7 +19,8 @@ class PaControleIdentiteIntroPage extends StatefulWidget {
   const PaControleIdentiteIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/controle_identite_intro';
+  static const String routeName =
+      '/pa/dps_dpg/cadres_juridiques/controle_identite_intro';
 
   @override
   State<PaControleIdentiteIntroPage> createState() =>
@@ -34,7 +36,8 @@ class _ControleIdentiteIntroPageState extends State<PaControleIdentiteIntroPage>
   static const BoxFit _kFit = BoxFit.cover;
 
   // Cible : ta page contenu existante
-  static const String _kTargetRouteName = PaControleIdentiteContenuPage.routeName;
+  static const String _kTargetRouteName =
+      PaControleIdentiteContenuPage.routeName;
 
   // Animations
   late final AnimationController _fadeCtrl = AnimationController(
@@ -55,8 +58,11 @@ class _ControleIdentiteIntroPageState extends State<PaControleIdentiteIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'LES CONTRÔLES, LES RELEVÉS ET LES VÉRIFICATIONS D\'IDENTITÉ';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_page.dart",
+    "f00001",
+    'LES CONTRÔLES, LES RELEVÉS ET LES VÉRIFICATIONS D\'IDENTITÉ',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -163,7 +169,11 @@ class _ControleIdentiteIntroPageState extends State<PaControleIdentiteIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Les conditions juridiques de mise en œuvre de ces opérations",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_page.dart",
+                        "f00002",
+                        "Les conditions juridiques de mise en œuvre de ces opérations",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -278,7 +288,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

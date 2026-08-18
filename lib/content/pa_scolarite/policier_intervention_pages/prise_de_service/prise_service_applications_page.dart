@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPriseServiceApplicationsPage extends StatelessWidget {
   const PaPriseServiceApplicationsPage({super.key});
@@ -48,10 +49,18 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Prise de service",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+            "f00002",
+            "Prise de service",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -66,7 +75,11 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Applications « Main courante » et « Déclaration d’usagers »",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+              "f00003",
+              "Applications « Main courante » et « Déclaration d’usagers »",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -78,25 +91,52 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut : aucun article fourni -> on n’invente pas.
           _ConditionCard(
-            title: "Référence (cadre)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+              "f00004",
+              "Référence (cadre)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le contenu fourni décrit des outils applicatifs internes (main courante et déclaration d’usagers) "
-                "et leurs usages opérationnels. Aucun article de loi n’est explicitement mentionné dans ton texte pour servir "
-                "de fondement juridique direct.\n\n"
-                "➡️ Si ton cours indique une référence (CPP/CSI/Code de déontologie/notes de service), place-la ici : "
-                "je la mettrai en rouge automatiquement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00005",
+                      "Le contenu fourni décrit des outils applicatifs internes (main courante et déclaration d’usagers) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00006",
+                      "et leurs usages opérationnels. Aucun article de loi n’est explicitement mentionné dans ton texte pour servir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00007",
+                      "de fondement juridique direct.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00008",
+                      "➡️ Si ton cours indique une référence (CPP/CSI/Code de déontologie/notes de service), place-la ici : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00009",
+                      "je la mettrai en rouge automatiquement.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: 'IMPORTANT',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "On n’invente jamais les références : on affiche uniquement celles présentes dans ta source officielle.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00010",
+                      "On n’invente jamais les références : on affiche uniquement celles présentes dans ta source officielle.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
                 ],
@@ -107,28 +147,56 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Fonctions de la « main courante »",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+              "f00011",
+              "Fonctions de la « main courante »",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La main courante remplit plusieurs fonctions essentielles au suivi de l’activité et au partage "
-                "de l’information au sein des services.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00012",
+                      "La main courante remplit plusieurs fonctions essentielles au suivi de l’activité et au partage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00013",
+                      "de l’information au sein des services.",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Gestion chronologique des événements."),
               _BulletPoint(
-                text:
-                    "Gestion des emplois et des activités du personnel de sécurité publique.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00014",
+                  "Gestion chronologique des événements.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Diffusion et partage d’information dans le cadre de missions de police judiciaire et du traitement de l’information criminelle.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00015",
+                  "Gestion des emplois et des activités du personnel de sécurité publique.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00016",
+                  "Diffusion et partage d’information dans le cadre de missions de police judiciaire et du traitement de l’information criminelle.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La réception des déclarations d’usagers s’effectue, elle, sur une application dédiée.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00017",
+                  "La réception des déclarations d’usagers s’effectue, elle, sur une application dédiée.",
+                ),
               ),
             ],
           ),
@@ -136,39 +204,104 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — Gestion chronologique des événements",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+              "f00018",
+              "I — Gestion chronologique des événements",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Elle consiste en la saisie de tous les événements traités (d’initiative comme sur réquisition) "
-                "par tous les services de sécurité publique et par les unités de renfort (CRS, EGM, voire polices municipales).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00019",
+                      "Elle consiste en la saisie de tous les événements traités (d’initiative comme sur réquisition) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00020",
+                      "par tous les services de sécurité publique et par les unités de renfort (CRS, EGM, voire polices municipales).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Chaque intervention donne lieu à une fiche"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00021",
+                  "Chaque intervention donne lieu à une fiche",
+                ),
+              ),
               _Paragraph(
-                "Chaque intervention fait l’objet de la création d’une fiche relatant l’intervention dans son intégralité.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00022",
+                  "Chaque intervention fait l’objet de la création d’une fiche relatant l’intervention dans son intégralité.",
+                ),
               ),
               SizedBox(height: 10),
-              _IntroBullet(text: "heure de saisine ;"),
               _IntroBullet(
-                text: "heure d’arrivée sur les lieux et d’intervention ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00023",
+                  "heure de saisine ;",
+                ),
               ),
               _IntroBullet(
-                text: "équipage intervenant (composition du véhicule) ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00024",
+                  "heure d’arrivée sur les lieux et d’intervention ;",
+                ),
               ),
-              _IntroBullet(text: "nature des faits ;"),
               _IntroBullet(
-                text:
-                    "secteur (circonscription découpée en secteurs, incluant les quartiers sensibles, permettant une localisation géographique des faits dénoncés) ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00025",
+                  "équipage intervenant (composition du véhicule) ;",
+                ),
               ),
-              _IntroBullet(text: "identité des personnes concernées."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00026",
+                  "nature des faits ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00027",
+                  "secteur (circonscription découpée en secteurs, incluant les quartiers sensibles, permettant une localisation géographique des faits dénoncés) ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00028",
+                  "identité des personnes concernées.",
+                ),
+              ),
               SizedBox(height: 12),
-              _SubTitle("Le « film » des événements"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00029",
+                  "Le « film » des événements",
+                ),
+              ),
               _Paragraph(
-                "Le « film » constitué par l’ensemble des événements enregistrés peut être consulté par les chefs de service et d’unité. "
-                "Il constitue une « grille de lecture » des interventions (ou des faits dénoncés), ainsi que de leur répartition dans le temps et dans l’espace.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00030",
+                      "Le « film » constitué par l’ensemble des événements enregistrés peut être consulté par les chefs de service et d’unité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00031",
+                      "Il constitue une « grille de lecture » des interventions (ou des faits dénoncés), ainsi que de leur répartition dans le temps et dans l’espace.",
+                    ),
               ),
             ],
           ),
@@ -176,19 +309,39 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Gestion des emplois",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+              "f00032",
+              "II — Gestion des emplois",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit de la saisie de l’ensemble des heures de travail effectuées par la totalité des fonctionnaires, "
-                "sans distinction de corps ni de services d’appartenance.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00033",
+                      "Il s’agit de la saisie de l’ensemble des heures de travail effectuées par la totalité des fonctionnaires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00034",
+                      "sans distinction de corps ni de services d’appartenance.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les fonctionnalités de la main courante permettent la transmission des informations enregistrées "
-                "à l’échelon central de chaque direction concernée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00035",
+                      "Les fonctionnalités de la main courante permettent la transmission des informations enregistrées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00036",
+                      "à l’échelon central de chaque direction concernée.",
+                    ),
               ),
             ],
           ),
@@ -196,26 +349,49 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Réception des déclarations d’usagers",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+              "f00037",
+              "III — Réception des déclarations d’usagers",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’application « déclaration d’usagers » permet de recevoir des doléances ne présentant pas de caractère pénal "
-                "(exemples : abandon de domicile conjugal, conflits de voisinage, différent locatif…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00038",
+                      "L’application « déclaration d’usagers » permet de recevoir des doléances ne présentant pas de caractère pénal ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00039",
+                      "(exemples : abandon de domicile conjugal, conflits de voisinage, différent locatif…).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Une victime ne souhaitant pas déposer plainte peut également effectuer une déclaration pour des infractions peu importantes "
-                "entraînant un faible préjudice.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00040",
+                      "Une victime ne souhaitant pas déposer plainte peut également effectuer une déclaration pour des infractions peu importantes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00041",
+                      "entraînant un faible préjudice.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Certaines déclarations peuvent donner lieu à des interventions, voire à des verbalisations (ex : rondes et patrouilles suite à des nuisances sonores).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                      "f00042",
+                      "Certaines déclarations peuvent donner lieu à des interventions, voire à des verbalisations (ex : rondes et patrouilles suite à des nuisances sonores).",
+                    ),
                   ),
                 ],
               ),
@@ -225,29 +401,57 @@ class PaPriseServiceApplicationsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "À retenir (opérationnel)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+              "f00043",
+              "À retenir (opérationnel)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Main courante"),
-              _BulletPoint(
-                text:
-                    "Outil de traçabilité : événements, interventions, répartition dans le temps et dans l’espace.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00044",
+                  "Main courante",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Outil de pilotage : consultation par les chefs de service / d’unité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00045",
+                  "Outil de traçabilité : événements, interventions, répartition dans le temps et dans l’espace.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00046",
+                  "Outil de pilotage : consultation par les chefs de service / d’unité.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Déclaration d’usagers"),
-              _BulletPoint(
-                text:
-                    "Canal dédié pour les doléances sans caractère pénal (et parfois pour des faits mineurs).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00047",
+                  "Déclaration d’usagers",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Peut déclencher une action terrain (rondes, intervention) et, selon les cas, une verbalisation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00048",
+                  "Canal dédié pour les doléances sans caractère pénal (et parfois pour des faits mineurs).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart",
+                  "f00049",
+                  "Peut déclencher une action terrain (rondes, intervention) et, selon les cas, une verbalisation.",
+                ),
               ),
             ],
           ),

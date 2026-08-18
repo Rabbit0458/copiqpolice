@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
   const EnregistrementDiffusionImagesParolesPage({super.key});
@@ -56,7 +57,11 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -74,7 +79,11 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Enregistrement et diffusion d’images/paroles des policiers",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+              "f00002",
+              "Enregistrement et diffusion d’images/paroles des policiers",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,16 +94,36 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Idée clé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+              "f00003",
+              "Idée clé",
+            ),
             cardColor: cardPrinciple,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sur la voie publique (ou dans un lieu ouvert au public), un policier en mission ne peut "
-                "pas, en principe, s’opposer au fait d’être filmé ou enregistré.\n\n"
-                "➡️ En revanche, certaines règles protègent la vie privée, la dignité, les victimes, "
-                "le secret de l’enquête/instruction, et l’anonymat de certains services.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                      "f00004",
+                      "Sur la voie publique (ou dans un lieu ouvert au public), un policier en mission ne peut ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                      "f00005",
+                      "pas, en principe, s’opposer au fait d’être filmé ou enregistré.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                      "f00006",
+                      "➡️ En revanche, certaines règles protègent la vie privée, la dignité, les victimes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                      "f00007",
+                      "le secret de l’enquête/instruction, et l’anonymat de certains services.",
+                    ),
               ),
             ],
           ),
@@ -103,149 +132,272 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
 
           // ✅ Cadre légal en haut
           _ConditionCard(
-            title: "I — Cadre juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+              "f00008",
+              "I — Cadre juridique",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00009",
+                    "Article 226-1 du Code pénal",
                   ),
-                ),
-                TextSpan(
-                  text:
-                      " : interdit la captation, l’enregistrement et la transmission, sans consentement, "
-                      "de paroles prononcées à titre privé/confidentiel (même en lieu public) et de l’image d’une personne "
-                      "se trouvant dans un lieu privé.",
-                ),
-              ]),
-              SizedBox(height: 10),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article 35 ter de la loi du 29 juillet 1881",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " : protège l’image d’une personne identifiée/identifiable mise en cause dans une procédure pénale "
-                      "non condamnée, lorsque l’image montre menottes/entraves ou détention provisoire.",
-                ),
-              ]),
-              SizedBox(height: 10),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article 39 sexies de la loi du 29 juillet 1881",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " : base de la protection de l’anonymat de certains fonctionnaires de police (services listés par arrêté).",
-                ),
-              ]),
-              SizedBox(height: 10),
-              _NotaBox(
-                bodySpans: [
-                  TextSpan(
-                    text:
-                        "Important : en intervention, la liberté d’information peut primer, tant qu’elle n’est pas dévoyée "
-                        "par une atteinte à la dignité ou par une atteinte au secret de l’enquête/instruction.",
-                  ),
-                ],
-              ),
-            ],
-          ),
-
-          const SizedBox(height: 14),
-
-          _ConditionCard(
-            title: "II — Principe (voie publique)",
-            cardColor: cardPrinciple,
-            accent: accentGrey,
-            titleColor: textMain,
-            children: const [
-              _SubTitle("Ce que je ne peux pas faire"),
-              _BulletPoint(
-                text:
-                    "Interdire à quelqu’un de filmer/registrer un policier en mission sur la voie publique, sur ce seul motif.",
-              ),
-              _BulletPoint(
-                text:
-                    "Interpeller une personne uniquement parce qu’elle filme.",
-              ),
-              _BulletPoint(
-                text:
-                    "Retirer le matériel, exiger la destruction, ou détruire l’enregistrement / son support.",
-              ),
-              SizedBox(height: 10),
-              _NotaBox(
-                bodySpans: [
-                  TextSpan(
-                    text:
-                        "Une action de confiscation/destruction « pour empêcher de filmer » expose l’agent à des risques "
-                        "disciplinaires et judiciaires.",
-                  ),
-                ],
-              ),
-              SizedBox(height: 12),
-              _SubTitle("Posture pro"),
-              _Paragraph(
-                "Soumis à des règles de déontologie, le policier doit s’y conformer dans chacune de ses missions "
-                "et apprendre à travailler sous l’œil de l’objectif, y compris à très courte distance.",
-              ),
-            ],
-          ),
-
-          const SizedBox(height: 14),
-
-          _ConditionCard(
-            title: "III — Exceptions et limites",
-            cardColor: cardExceptions,
-            accent: accentGreen,
-            titleColor: textMain,
-            children: const [
-              _SubTitle("A) Limiter l’enregistrement (dans certains cas)"),
-              _BulletPoint(
-                text:
-                    "Préservation des traces et indices / respect du secret de l’enquête et de l’instruction (maintenir à distance d’une scène).",
-              ),
-              _BulletPoint(
-                text:
-                    "Sécurité : tenir à distance lors d’une action présentant un risque (protéger policiers, collègues, public).",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("B) Limiter la diffusion / publication"),
-              _BulletPoint(
-                text:
-                    "Protection de la dignité de certaines personnes (ex. victimes blessées, personnes dénudées…).",
-              ),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article 35 ter de la loi du 29 juillet 1881",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : attention aux images de personnes mises en cause non condamnées si menottes/entraves ou détention provisoire apparaissent.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                        "f00010",
+                        " : interdit la captation, l’enregistrement et la transmission, sans consentement, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                        "f00011",
+                        "de paroles prononcées à titre privé/confidentiel (même en lieu public) et de l’image d’une personne ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                        "f00012",
+                        "se trouvant dans un lieu privé.",
+                      ),
+                ),
+              ]),
+              SizedBox(height: 10),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00013",
+                    "Article 35 ter de la loi du 29 juillet 1881",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                        "f00014",
+                        " : protège l’image d’une personne identifiée/identifiable mise en cause dans une procédure pénale ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                        "f00015",
+                        "non condamnée, lorsque l’image montre menottes/entraves ou détention provisoire.",
+                      ),
+                ),
+              ]),
+              SizedBox(height: 10),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00016",
+                    "Article 39 sexies de la loi du 29 juillet 1881",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00017",
+                    " : base de la protection de l’anonymat de certains fonctionnaires de police (services listés par arrêté).",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 10),
+              _NotaBox(
+                bodySpans: [
+                  TextSpan(
+                    text:
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00018",
+                          "Important : en intervention, la liberté d’information peut primer, tant qu’elle n’est pas dévoyée ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00019",
+                          "par une atteinte à la dignité ou par une atteinte au secret de l’enquête/instruction.",
+                        ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          _ConditionCard(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+              "f00020",
+              "II — Principe (voie publique)",
+            ),
+            cardColor: cardPrinciple,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00021",
+                  "Ce que je ne peux pas faire",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00022",
+                  "Interdire à quelqu’un de filmer/registrer un policier en mission sur la voie publique, sur ce seul motif.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00023",
+                  "Interpeller une personne uniquement parce qu’elle filme.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00024",
+                  "Retirer le matériel, exiger la destruction, ou détruire l’enregistrement / son support.",
+                ),
+              ),
+              SizedBox(height: 10),
+              _NotaBox(
+                bodySpans: [
+                  TextSpan(
+                    text:
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00025",
+                          "Une action de confiscation/destruction « pour empêcher de filmer » expose l’agent à des risques ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00026",
+                          "disciplinaires et judiciaires.",
+                        ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00027",
+                  "Posture pro",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                      "f00028",
+                      "Soumis à des règles de déontologie, le policier doit s’y conformer dans chacune de ses missions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                      "f00029",
+                      "et apprendre à travailler sous l’œil de l’objectif, y compris à très courte distance.",
+                    ),
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          _ConditionCard(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+              "f00030",
+              "III — Exceptions et limites",
+            ),
+            cardColor: cardExceptions,
+            accent: accentGreen,
+            titleColor: textMain,
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00031",
+                  "A) Limiter l’enregistrement (dans certains cas)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00032",
+                  "Préservation des traces et indices / respect du secret de l’enquête et de l’instruction (maintenir à distance d’une scène).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00033",
+                  "Sécurité : tenir à distance lors d’une action présentant un risque (protéger policiers, collègues, public).",
+                ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00034",
+                  "B) Limiter la diffusion / publication",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00035",
+                  "Protection de la dignité de certaines personnes (ex. victimes blessées, personnes dénudées…).",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00036",
+                    "Article 35 ter de la loi du 29 juillet 1881",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00037",
+                    " : attention aux images de personnes mises en cause non condamnées si menottes/entraves ou détention provisoire apparaissent.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Conseil pratique",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00038",
+                  "Conseil pratique",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Sans contrainte légale, on peut suggérer un floutage/mosaïque avant diffusion : "
-                        "l’anonymat participe à l’efficacité et à la sécurité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00039",
+                          "Sans contrainte légale, on peut suggérer un floutage/mosaïque avant diffusion : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00040",
+                          "l’anonymat participe à l’efficacité et à la sécurité.",
+                        ),
                   ),
                 ],
               ),
@@ -255,34 +407,48 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Protection spéciale (certains services)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+              "f00041",
+              "IV — Protection spéciale (certains services)",
+            ),
             cardColor: cardSpecial,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Certains services d’intervention / anti-terrorisme / contre-espionnage (listés par arrêté) bénéficient d’une garantie d’anonymat. ",
-                ),
-                TextSpan(
-                  text: "Article 39 sexies de la loi du 29 juillet 1881",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00042",
+                    "Certains services d’intervention / anti-terrorisme / contre-espionnage (listés par arrêté) bénéficient d’une garantie d’anonymat. ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : publication interdite si l’image permet l’identification.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00043",
+                    "Article 39 sexies de la loi du 29 juillet 1881",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                    "f00044",
+                    " : publication interdite si l’image permet l’identification.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans ce cadre, l’anonymat est protégé en toute circonstance, y compris sur la voie publique et dans des lieux ouverts au public.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                      "f00045",
+                      "Dans ce cadre, l’anonymat est protégé en toute circonstance, y compris sur la voie publique et dans des lieux ouverts au public.",
+                    ),
                   ),
                 ],
               ),
@@ -292,36 +458,70 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Conduite à tenir sur intervention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+              "f00046",
+              "V — Conduite à tenir sur intervention",
+            ),
             cardColor: cardPractice,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Réflexes terrain (pédagogique)"),
-              _BulletPoint(
-                text:
-                    "Rester concentré sur la mission : sécurité, maîtrise, cadre déontologique.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00047",
+                  "Réflexes terrain (pédagogique)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si nécessaire, tenir la personne à distance pour sécurité ou préservation d’une scène (sans viser l’interdiction de filmer).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00048",
+                  "Rester concentré sur la mission : sécurité, maîtrise, cadre déontologique.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Protéger les victimes et préserver la dignité (éviter exposition inutile).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00049",
+                  "Si nécessaire, tenir la personne à distance pour sécurité ou préservation d’une scène (sans viser l’interdiction de filmer).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éviter tout geste illégal : pas de confiscation, pas de suppression, pas de destruction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00050",
+                  "Protéger les victimes et préserver la dignité (éviter exposition inutile).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00051",
+                  "Éviter tout geste illégal : pas de confiscation, pas de suppression, pas de destruction.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Information hiérarchique",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                  "f00052",
+                  "Information hiérarchique",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Tout enregistrement connu d’images/paroles de policiers en lien avec l’exercice des fonctions doit faire, "
-                        "dès que possible, l’objet d’une information de la hiérarchie.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00053",
+                          "Tout enregistrement connu d’images/paroles de policiers en lien avec l’exercice des fonctions doit faire, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/enregistrement_diffusion_images_paroles_page.dart",
+                          "f00054",
+                          "dès que possible, l’objet d’une information de la hiérarchie.",
+                        ),
                   ),
                 ],
               ),

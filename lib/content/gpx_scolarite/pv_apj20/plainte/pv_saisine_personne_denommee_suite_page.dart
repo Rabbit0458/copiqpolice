@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
   const PVPvSaisinePersonneDenommeeSuitePage({super.key});
@@ -56,7 +57,11 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Plainte",
@@ -74,7 +79,11 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV de plainte — personne dénommée",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+              "f00002",
+              "PV de plainte — personne dénommée",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +95,31 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
 
           // Définition (simple, non répétitive)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+              "f00003",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le procès-verbal de saisine est rédigé dès lors qu’un service reçoit une plainte. "
-                "Le PV doit être clair, chronologique et exploitable : il organise le récit, fait ressortir les éléments utiles, "
-                "et prépare les actes d’enquête.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00004",
+                      "Le procès-verbal de saisine est rédigé dès lors qu’un service reçoit une plainte. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00005",
+                      "Le PV doit être clair, chronologique et exploitable : il organise le récit, fait ressortir les éléments utiles, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00006",
+                      "et prépare les actes d’enquête.",
+                    ),
               ),
             ],
           ),
@@ -103,43 +128,68 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Obligation de recevoir les plaintes — "),
                 TextSpan(
-                  text: "article 15-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00008",
+                    "Obligation de recevoir les plaintes — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00009",
+                    "article 15-3 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Information des droits des victimes — "),
                 TextSpan(
-                  text: "article 10-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00010",
+                    "Information des droits des victimes — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00011",
+                    "article 10-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "PV + récépissé + copie sur demande — "),
                 TextSpan(
-                  text: "article 15-3 alinéa 2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00012",
+                    "PV + récépissé + copie sur demande — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00013",
+                    "article 15-3 alinéa 2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -148,23 +198,42 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cadre juridique à annoncer dans le PV : enquête de flagrance ou enquête préliminaire. "
-                        "On vise « articles 53 et suivants » ou « articles 75 et suivants » selon le cas.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                          "f00014",
+                          "Cadre juridique à annoncer dans le PV : enquête de flagrance ou enquête préliminaire. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                          "f00015",
+                          "On vise « articles 53 et suivants » ou « articles 75 et suivants » selon le cas.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Dommages-intérêts (si demande) — "),
                 TextSpan(
-                  text: "article 420-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00016",
+                    "Dommages-intérêts (si demande) — ",
                   ),
                 ),
                 TextSpan(
-                  text: " (se conformer aux consignes du parquet local).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00017",
+                    "article 420-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00018",
+                    " (se conformer aux consignes du parquet local).",
+                  ),
                 ),
               ]),
             ],
@@ -174,164 +243,356 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
 
           // Canevas (structure)
           _ConditionCard(
-            title: "II — Canevas (PV de saisine)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+              "f00019",
+              "II — Canevas (PV de saisine)",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de rédaction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00020",
+                  "1) Lieu de rédaction",
+                ),
+              ),
               _Paragraph(
-                "L’agent de police judiciaire peut recevoir la plainte ailleurs qu’au service "
-                "(domicile, hôpital, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00021",
+                      "L’agent de police judiciaire peut recevoir la plainte ailleurs qu’au service ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00022",
+                      "(domicile, hôpital, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00023",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Lorsqu’il s’agit d’un procès-verbal de saisine, l’agent agit sur "
-                "« instructions permanentes du chef de service ».",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00024",
+                      "Lorsqu’il s’agit d’un procès-verbal de saisine, l’agent agit sur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00025",
+                      "« instructions permanentes du chef de service ».",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Réception du déclarant"),
-              _BulletPoint(
-                text:
-                    "Si la victime se présente avec un interprète, mentionner les coordonnées de ce dernier.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00026",
+                  "3) Réception du déclarant",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Selon la gravité des faits, la qualité de la victime et/ou de l’auteur, informer immédiatement l’OPJ (avant toute rédaction si nécessaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00027",
+                  "Si la victime se présente avec un interprète, mentionner les coordonnées de ce dernier.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Une description succincte des circonstances permet d’annoncer la rubrique suivante.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00028",
+                  "Selon la gravité des faits, la qualité de la victime et/ou de l’auteur, informer immédiatement l’OPJ (avant toute rédaction si nécessaire).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00029",
+                  "Une description succincte des circonstances permet d’annoncer la rubrique suivante.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("4) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00030",
+                  "4) Cadre juridique",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Situer l’action : enquête de flagrance ou préliminaire. Citer « vu les articles 53 et suivants » ou « vu les articles 75 et suivants » — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00031",
+                    "Situer l’action : enquête de flagrance ou préliminaire. Citer « vu les articles 53 et suivants » ou « vu les articles 75 et suivants » — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00032",
+                    "Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("5) Droits des victimes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00033",
+                  "5) Droits des victimes",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Informer la victime — "),
                 TextSpan(
-                  text: "article 10-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00034",
+                    "Informer la victime — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00035",
+                    "article 10-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Si demande de dommages-intérêts — "),
                   TextSpan(
-                    text: "article 420-1 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00036",
+                      "Si demande de dommages-intérêts — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00037",
+                      "article 420-1 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text: " : se conformer aux consignes du parquet local.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00038",
+                      " : se conformer aux consignes du parquet local.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("6) Identité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00039",
+                  "6) Identité",
+                ),
+              ),
               _Paragraph(
-                "Identifier la victime pour pouvoir la recontacter. La petite identité est en pratique déjà relevée au CRI. "
-                "Le rappel du NOM et du Prénom suffit dans le corps du PV.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00040",
+                      "Identifier la victime pour pouvoir la recontacter. La petite identité est en pratique déjà relevée au CRI. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00041",
+                      "Le rappel du NOM et du Prénom suffit dans le corps du PV.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("7) Déclarations"),
-              _BulletPoint(
-                text:
-                    "Déroulé des faits : description précise (Heure, Lieu, Motif : H.L.M.) en utilisant la première personne (« je… »).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00042",
+                  "7) Déclarations",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Récit libre d’abord (déclarations spontanées), puis questions ouvertes pour qualifier les faits et déterminer le rôle de chacun.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00043",
+                  "Déroulé des faits : description précise (Heure, Lieu, Motif : H.L.M.) en utilisant la première personne (« je… »).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Auteur : préciser les liens éventuels victime/auteur et les renseignements utiles (nom, prénom, adresse, profession…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00044",
+                  "Récit libre d’abord (déclarations spontanées), puis questions ouvertes pour qualifier les faits et déterminer le rôle de chacun.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00045",
+                  "Auteur : préciser les liens éventuels victime/auteur et les renseignements utiles (nom, prénom, adresse, profession…).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("8) Dépôt de plainte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00046",
+                  "8) Dépôt de plainte",
+                ),
+              ),
               _Paragraph(
-                "Certaines infractions sont conditionnées par le dépôt de plainte (ex. diffamation).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00047",
+                  "Certaines infractions sont conditionnées par le dépôt de plainte (ex. diffamation).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("9) Remise de documents"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00048",
+                  "9) Remise de documents",
+                ),
+              ),
               _Paragraph(
-                "Certificats médicaux, chèques, factures, captures, documents utiles… (à annexer et mentionner).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00049",
+                  "Certificats médicaux, chèques, factures, captures, documents utiles… (à annexer et mentionner).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("10) Demande de copie"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00050",
+                  "10) Demande de copie",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Copie du PV si demandée — "),
                 TextSpan(
-                  text: "article 15-3 alinéa 2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00051",
+                    "Copie du PV si demandée — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00052",
+                    "article 15-3 alinéa 2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("11) Énonciation terminale (clôture)"),
-              _BulletPoint(
-                text:
-                    "Mentionner la lecture + signature. Si impossibilité de lecture : indiquer que la lecture est faite par l’APJ.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00053",
+                  "11) Énonciation terminale (clôture)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si interprète : préciser que la lecture est faite par son truchement et faire signer l’interprète.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00054",
+                  "Mentionner la lecture + signature. Si impossibilité de lecture : indiquer que la lecture est faite par l’APJ.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00055",
+                  "Si interprète : préciser que la lecture est faite par son truchement et faire signer l’interprète.",
+                ),
               ),
               _Paragraph(
-                "L’heure de fin d’audition de plainte est facultative.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00056",
+                  "L’heure de fin d’audition de plainte est facultative.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("12) Annexes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00057",
+                  "12) Annexes",
+                ),
+              ),
               _Paragraph(
-                "Les documents remis doivent être annexés au procès-verbal. La rubrique peut figurer en marge pour plus de clarté.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00058",
+                  "Les documents remis doivent être annexés au procès-verbal. La rubrique peut figurer en marge pour plus de clarté.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("13) Mention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00059",
+                  "13) Mention",
+                ),
+              ),
               _Paragraph(
-                "Remise à la victime : formulaire d’information des droits, récépissé de plainte, éventuellement copie du PV.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00060",
+                  "Remise à la victime : formulaire d’information des droits, récépissé de plainte, éventuellement copie du PV.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("14) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00061",
+                  "14) Avis O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "L’agent de police judiciaire avise l’officier de police judiciaire des faits contenus dans la plainte.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00062",
+                  "L’agent de police judiciaire avise l’officier de police judiciaire des faits contenus dans la plainte.",
+                ),
               ),
             ],
           ),
@@ -340,14 +601,28 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
 
           // Docs + images demandées (recto/verso + zoom)
           _ConditionCard(
-            title: "III — Documents & modèles (images)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+              "f00063",
+              "III — Documents & modèles (images)",
+            ),
             cardColor: cardDocs,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Modèle PV (recto / verso)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00064",
+                  "Modèle PV (recto / verso)",
+                ),
+              ),
               _Paragraph(
-                "Appuie sur l’image pour l’ouvrir en plein écran et zoomer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00065",
+                  "Appuie sur l’image pour l’ouvrir en plein écran et zoomer.",
+                ),
               ),
               SizedBox(height: 10),
               _ZoomableImage(
@@ -365,33 +640,64 @@ class PVPvSaisinePersonneDenommeeSuitePage extends StatelessWidget {
 
           // Bonnes pratiques (rendu pédagogique)
           _ConditionCard(
-            title: "IV — Bonnes pratiques (rendu exploitable)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+              "f00066",
+              "IV — Bonnes pratiques (rendu exploitable)",
+            ),
             cardColor: cardDecl,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Qualité rédactionnelle"),
-              _BulletPoint(
-                text:
-                    "Factuel, chronologique, sans jugement ni interprétation gratuite.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00067",
+                  "Qualité rédactionnelle",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "D’abord récit libre, puis questions ouvertes (ne jamais suggérer la réponse).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00068",
+                  "Factuel, chronologique, sans jugement ni interprétation gratuite.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toujours faire ressortir : preuves, témoins, messages, blessures, menaces, antécédents du conflit, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00069",
+                  "D’abord récit libre, puis questions ouvertes (ne jamais suggérer la réponse).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00070",
+                  "Toujours faire ressortir : preuves, témoins, messages, blessures, menaces, antécédents du conflit, etc.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Signalement / éléments utiles"),
-              _BulletPoint(
-                text:
-                    "Signalement si pertinent : sexe, âge apparent, taille, corpulence, signes distinctifs, tenue…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00071",
+                  "Signalement / éléments utiles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Liens victime/auteur : relation, contexte, fréquence, éventuelles démarches déjà faites.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00072",
+                  "Signalement si pertinent : sexe, âge apparent, taille, corpulence, signes distinctifs, tenue…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                  "f00073",
+                  "Liens victime/auteur : relation, contexte, fréquence, éventuelles démarches déjà faites.",
+                ),
               ),
             ],
           ),
@@ -502,19 +808,29 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
-              color: isDark ? Colors.black.withValues(alpha: .18) : Colors.black12,
+              color: isDark
+                  ? Colors.black.withValues(alpha: .18)
+                  : Colors.black12,
               border: Border(bottom: BorderSide(color: border, width: 1)),
             ),
             child: Row(
               children: [
                 IconButton(
                   onPressed: _rotateLeft,
-                  tooltip: 'Tourner à gauche',
+                  tooltip: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00074",
+                    'Tourner à gauche',
+                  ),
                   icon: const Icon(Icons.rotate_left_rounded),
                 ),
                 IconButton(
                   onPressed: _rotateRight,
-                  tooltip: 'Tourner à droite',
+                  tooltip: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                    "f00075",
+                    'Tourner à droite',
+                  ),
                   icon: const Icon(Icons.rotate_right_rounded),
                 ),
                 const Spacer(),
@@ -522,7 +838,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                   onPressed: _reset,
                   icon: const Icon(Icons.refresh_rounded),
                   label: Text(
-                    "Réinitialiser",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00076",
+                      "Réinitialiser",
+                    ),
                     style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                   ),
                 ),
@@ -531,7 +851,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                   onPressed: () => _openFullscreen(context),
                   icon: const Icon(Icons.fullscreen_rounded),
                   label: Text(
-                    "Plein écran",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                      "f00077",
+                      "Plein écran",
+                    ),
                     style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                   ),
                 ),
@@ -588,7 +912,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                             IconButton(
                               onPressed: () =>
                                   setLocalState(() => turns = (turns - 1) % 4),
-                              tooltip: 'Tourner à gauche',
+                              tooltip: ScolariteText.value(
+                                "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                                "f00078",
+                                'Tourner à gauche',
+                              ),
                               icon: const Icon(
                                 Icons.rotate_left_rounded,
                                 color: Colors.white,
@@ -597,7 +925,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                             IconButton(
                               onPressed: () =>
                                   setLocalState(() => turns = (turns + 1) % 4),
-                              tooltip: 'Tourner à droite',
+                              tooltip: ScolariteText.value(
+                                "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                                "f00079",
+                                'Tourner à droite',
+                              ),
                               icon: const Icon(
                                 Icons.rotate_right_rounded,
                                 color: Colors.white,
@@ -611,7 +943,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                                 color: Colors.white,
                               ),
                               label: Text(
-                                "Réinitialiser",
+                                ScolariteText.value(
+                                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_personne_denommee_suite_page.dart",
+                                  "f00080",
+                                  "Réinitialiser",
+                                ),
                                 style: GoogleFonts.fustat(
                                   fontWeight: FontWeight.w900,
                                   color: Colors.white,
@@ -910,9 +1246,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteintesSecretCorrespondancesPage extends StatelessWidget {
   const AtteintesSecretCorrespondancesPage({super.key});
@@ -56,10 +57,18 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Abus d’autorité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+            "f00002",
+            "Abus d’autorité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les atteintes au secret des correspondances",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+              "f00003",
+              "Les atteintes au secret des correspondances",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,24 +99,64 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’atteinte au secret des correspondances consiste, pour une personne dépositaire de l’autorité publique "
-                "ou chargée d’une mission de service public, agissant dans l’exercice ou à l’occasion de l’exercice de ses "
-                "fonctions ou de sa mission, à ordonner, commettre ou faciliter, hors les cas prévus par la loi : "
-                "le détournement, la suppression ou l’ouverture de correspondances, ou la révélation du contenu de correspondances.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00005",
+                      "L’atteinte au secret des correspondances consiste, pour une personne dépositaire de l’autorité publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00006",
+                      "ou chargée d’une mission de service public, agissant dans l’exercice ou à l’occasion de l’exercice de ses ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00007",
+                      "fonctions ou de sa mission, à ordonner, commettre ou faciliter, hors les cas prévus par la loi : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00008",
+                      "le détournement, la suppression ou l’ouverture de correspondances, ou la révélation du contenu de correspondances.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle vise aussi le fait, par ces personnes ou par un agent d’un exploitant de réseaux ouverts au public de "
-                "communications électroniques / d’un fournisseur de services de télécommunications, agissant dans l’exercice "
-                "de ses fonctions, d’ordonner, commettre ou faciliter, hors les cas prévus par la loi : l’interception ou le "
-                "détournement des correspondances émises, transmises ou reçues par télécommunications, l’utilisation ou la "
-                "divulgation de leur contenu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00009",
+                      "Elle vise aussi le fait, par ces personnes ou par un agent d’un exploitant de réseaux ouverts au public de ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00010",
+                      "communications électroniques / d’un fournisseur de services de télécommunications, agissant dans l’exercice ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00011",
+                      "de ses fonctions, d’ordonner, commettre ou faciliter, hors les cas prévus par la loi : l’interception ou le ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00012",
+                      "détournement des correspondances émises, transmises ou reçues par télécommunications, l’utilisation ou la ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00013",
+                      "divulgation de leur contenu.",
+                    ),
               ),
             ],
           ),
@@ -112,21 +165,30 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+              "f00014",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00015",
+                    "Article 432-9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : l’infraction est prévue et réprimée par ce texte.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00016",
+                    " : l’infraction est prévue et réprimée par ce texte.",
+                  ),
                 ),
               ]),
             ],
@@ -136,145 +198,335 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+              "f00017",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un auteur déterminé"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00018",
+                  "A) Un auteur déterminé",
+                ),
+              ),
 
               _SubTitle(
-                "1) Dépositaire de l’autorité publique ou chargé d’une mission de service public",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00019",
+                  "1) Dépositaire de l’autorité publique ou chargé d’une mission de service public",
+                ),
               ),
               _Paragraph(
-                "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle "
-                "d’autorité publique conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou "
-                "ministériel, etc.). Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, "
-                "commissaires-priseurs, fonctionnaires des eaux et forêts. Certains exécutifs locaux et élus peuvent aussi "
-                "avoir cette qualité selon leurs attributions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00020",
+                      "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00021",
+                      "d’autorité publique conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00022",
+                      "ministériel, etc.). Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00023",
+                      "commissaires-priseurs, fonctionnaires des eaux et forêts. Certains exécutifs locaux et élus peuvent aussi ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00024",
+                      "avoir cette qualité selon leurs attributions.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement "
-                "ou sur réquisition, un service public quelconque, en participant à une mission d’intérêt général sans pouvoir "
-                "de décision/commandement. Les élus sans prérogatives de puissance publique par délégation peuvent relever "
-                "de cette catégorie.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00025",
+                      "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00026",
+                      "ou sur réquisition, un service public quelconque, en participant à une mission d’intérêt général sans pouvoir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00027",
+                      "de décision/commandement. Les élus sans prérogatives de puissance publique par délégation peuvent relever ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00028",
+                      "de cette catégorie.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "2) Agissant dans l’exercice ou à l’occasion des fonctions",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00029",
+                  "2) Agissant dans l’exercice ou à l’occasion des fonctions",
+                ),
               ),
               _Paragraph(
-                "L’acte accompli dans l’exercice des fonctions suppose que, dans le cadre de ses attributions professionnelles, "
-                "le dépositaire/chargé de mission abuse de son autorité ou détourne le pouvoir qui lui est conféré.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00030",
+                      "L’acte accompli dans l’exercice des fonctions suppose que, dans le cadre de ses attributions professionnelles, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00031",
+                      "le dépositaire/chargé de mission abuse de son autorité ou détourne le pouvoir qui lui est conféré.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "On parle d’acte commis à l’occasion de l’exercice des fonctions lorsque l’auteur agit en dehors de sa compétence "
-                "d’attribution. En revanche, n’entre pas dans le champ de l’infraction le fonctionnaire qui agit en dehors de sa "
-                "mission ou de ses fonctions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00032",
+                      "On parle d’acte commis à l’occasion de l’exercice des fonctions lorsque l’auteur agit en dehors de sa compétence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00033",
+                      "d’attribution. En revanche, n’entre pas dans le champ de l’infraction le fonctionnaire qui agit en dehors de sa ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00034",
+                      "mission ou de ses fonctions.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "3) Agents des opérateurs de communications électroniques / télécoms",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00035",
+                  "3) Agents des opérateurs de communications électroniques / télécoms",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Un réseau ouvert au public est tout réseau établi ou utilisé pour la fourniture au public de services de communications électroniques "
-                      "ou de communication au public par voie électronique, au sens de ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                        "f00036",
+                        "Un réseau ouvert au public est tout réseau établi ou utilisé pour la fourniture au public de services de communications électroniques ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                        "f00037",
+                        "ou de communication au public par voie électronique, au sens de ",
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      "l’article L. 32 (4°) du Code des postes et des communications électroniques",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00038",
+                    "l’article L. 32 (4°) du Code des postes et des communications électroniques",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Les communications électroniques sont les émissions, transmissions ou réceptions de signes, signaux, écrits, images "
-                "ou sons par câble, voie hertzienne, moyen optique ou autres moyens électromagnétiques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00039",
+                      "Les communications électroniques sont les émissions, transmissions ou réceptions de signes, signaux, écrits, images ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00040",
+                      "ou sons par câble, voie hertzienne, moyen optique ou autres moyens électromagnétiques.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Peut être auteur toute personne travaillant pour un exploitant (personne physique ou morale) d’un réseau ouvert au public, "
-                "salariée ou non, relevant de son autorité. Idem pour un agent d’un fournisseur de services de télécommunications, quel que soit "
-                "son statut et sa place dans l’entreprise.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00041",
+                      "Peut être auteur toute personne travaillant pour un exploitant (personne physique ou morale) d’un réseau ouvert au public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00042",
+                      "salariée ou non, relevant de son autorité. Idem pour un agent d’un fournisseur de services de télécommunications, quel que soit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00043",
+                      "son statut et sa place dans l’entreprise.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Des correspondances"),
-              _SubTitle("1) Correspondances matérielles"),
-              _Paragraph(
-                "Sont visées toutes les correspondances protégées : plis clos ou ouverts, imprimés, journaux, paquets, etc. "
-                "Le contenu importe peu : correspondance professionnelle ou privée.",
-              ),
-              SizedBox(height: 10),
-              _SubTitle("2) Correspondances par télécommunications"),
-              _Paragraph(
-                "Il s’agit de correspondances dématérialisées (téléphone, courrier informatique). Elles doivent être en cours de transmission "
-                "ou parvenues à destination mais non encore appréhendées par le destinataire.",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("C) Un acte matériel d’atteinte"),
               _SubTitle(
-                "1) Les modalités : ordonner / commettre / faciliter",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00044",
+                  "B) Des correspondances",
+                ),
               ),
-              _BulletPoint(
-                text:
-                    "Ordonner : l’ordre émane d’une personne dépositaire de l’autorité publique (abus de pouvoir).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00045",
+                  "1) Correspondances matérielles",
+                ),
               ),
-              _BulletPoint(
-                text:
-                    "Commettre : l’auteur réalise lui-même l’acte répréhensible.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00046",
+                      "Sont visées toutes les correspondances protégées : plis clos ou ouverts, imprimés, journaux, paquets, etc. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00047",
+                      "Le contenu importe peu : correspondance professionnelle ou privée.",
+                    ),
               ),
-              _BulletPoint(
-                text:
-                    "Faciliter : l’auteur aide, donne des indications ou des instructions permettant la commission.",
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00048",
+                  "2) Correspondances par télécommunications",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00049",
+                      "Il s’agit de correspondances dématérialisées (téléphone, courrier informatique). Elles doivent être en cours de transmission ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00050",
+                      "ou parvenues à destination mais non encore appréhendées par le destinataire.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Le contenu de l’atteinte (exemples)"),
-              _BulletPoint(
-                text:
-                    "Atteinte à l’acheminement : détournement d’une correspondance, modification du cours de transmission.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00051",
+                  "C) Un acte matériel d’atteinte",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00052",
+                  "1) Les modalités : ordonner / commettre / faciliter",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Atteinte à l’inviolabilité du support : ouverture d’une correspondance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00053",
+                  "Ordonner : l’ordre émane d’une personne dépositaire de l’autorité publique (abus de pouvoir).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Suppression : tout acte empêchant la correspondance de parvenir à destination.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00054",
+                  "Commettre : l’auteur réalise lui-même l’acte répréhensible.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Révélation du contenu : divulgation à un tiers sans qualité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00055",
+                  "Faciliter : l’auteur aide, donne des indications ou des instructions permettant la commission.",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00056",
+                  "2) Le contenu de l’atteinte (exemples)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00057",
+                  "Atteinte à l’acheminement : détournement d’une correspondance, modification du cours de transmission.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00058",
+                  "Atteinte à l’inviolabilité du support : ouverture d’une correspondance.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00059",
+                  "Suppression : tout acte empêchant la correspondance de parvenir à destination.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00060",
+                  "Révélation du contenu : divulgation à un tiers sans qualité.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Jurisprudences (illustrations)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00061",
+                  "Jurisprudences (illustrations)",
+                ),
+              ),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un préposé des P.T.T. ouvre une lettre adressée à son épouse alors qu’il est en instance de divorce : atteinte constituée. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00062",
+                      "Un préposé des P.T.T. ouvre une lettre adressée à son épouse alors qu’il est en instance de divorce : atteinte constituée. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Limoges, 20 décembre 1995)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00063",
+                      "(C.A. Limoges, 20 décembre 1995)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -287,11 +539,18 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Soustraction de lettres par des employés d’un centre de tri postal pour en dérober le contenu : suppression au sens du texte. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00064",
+                      "Soustraction de lettres par des employés d’un centre de tri postal pour en dérober le contenu : suppression au sens du texte. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Paris, 16 septembre 2005)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00065",
+                      "(C.A. Paris, 16 septembre 2005)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -304,11 +563,18 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Surveillance visant à connaître le contenu des mails d’un étudiant avec lecture et divulgation : violation du secret par divulgation. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00066",
+                      "Surveillance visant à connaître le contenu des mails d’un étudiant avec lecture et divulgation : violation du secret par divulgation. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Paris, 17 décembre 2001)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00067",
+                      "(C.A. Paris, 17 décembre 2001)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -321,12 +587,28 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "3) Spécificités télécom : interception / détournement / usage / divulgation",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00068",
+                  "3) Spécificités télécom : interception / détournement / usage / divulgation",
+                ),
               ),
               _Paragraph(
-                "Pour les correspondances émises, transmises ou reçues par voie de télécommunications, l’atteinte peut notamment consister en : "
-                "un détournement (manipulation informatique), une interception (captation pendant la transmission), une divulgation (révéler à un tiers), "
-                "ou une utilisation (se servir du contenu comme si l’agent en était destinataire).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00069",
+                      "Pour les correspondances émises, transmises ou reçues par voie de télécommunications, l’atteinte peut notamment consister en : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00070",
+                      "un détournement (manipulation informatique), une interception (captation pendant la transmission), une divulgation (révéler à un tiers), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00071",
+                      "ou une utilisation (se servir du contenu comme si l’agent en était destinataire).",
+                    ),
               ),
             ],
           ),
@@ -335,28 +617,56 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+              "f00072",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté d’attenter au secret des correspondances",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00073",
+                  "Volonté d’attenter au secret des correspondances",
+                ),
               ),
               _Paragraph(
-                "L’auteur a conscience d’agir sans droit : il sait que la correspondance ne lui est pas destinée et qu’il n’a aucun droit sur elle. "
-                "L’intention de nuire n’est pas exigée, mais l’intention de porter atteinte au contenu des correspondances doit être caractérisée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00074",
+                      "L’auteur a conscience d’agir sans droit : il sait que la correspondance ne lui est pas destinée et qu’il n’a aucun droit sur elle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00075",
+                      "L’intention de nuire n’est pas exigée, mais l’intention de porter atteinte au contenu des correspondances doit être caractérisée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En matière d’atteinte au secret des correspondances par un fonctionnaire public, l’élément intentionnel nécessite que le fonctionnaire "
-                        "ait eu l’intention de porter atteinte au contenu des correspondances litigieuses. ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                          "f00076",
+                          "En matière d’atteinte au secret des correspondances par un fonctionnaire public, l’élément intentionnel nécessite que le fonctionnaire ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                          "f00077",
+                          "ait eu l’intention de porter atteinte au contenu des correspondances litigieuses. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 27 février 2018)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00078",
+                      "(Cass. crim., 27 février 2018)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -366,11 +676,29 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Erreur de fait (effet)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00079",
+                  "Erreur de fait (effet)",
+                ),
+              ),
               _Paragraph(
-                "L’erreur de fait peut faire disparaître l’intention : ouvrir par méprise une correspondance non destinée (ex. pour rechercher l’adresse du destinataire "
-                "afin de la réexpédier) peut exclure la punissabilité. Pour les correspondances dématérialisées, l’erreur n’a vocation à s’appliquer que lorsqu’il est "
-                "possible de recevoir sans prendre connaissance du contenu (ex. e-mail consulté plus tard).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00080",
+                      "L’erreur de fait peut faire disparaître l’intention : ouvrir par méprise une correspondance non destinée (ex. pour rechercher l’adresse du destinataire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00081",
+                      "afin de la réexpédier) peut exclure la punissabilité. Pour les correspondances dématérialisées, l’erreur n’a vocation à s’appliquer que lorsqu’il est ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00082",
+                      "possible de recevoir sans prendre connaissance du contenu (ex. e-mail consulté plus tard).",
+                    ),
               ),
             ],
           ),
@@ -379,13 +707,21 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+              "f00083",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante n’est prévue par le texte.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00084",
+                  "Aucune circonstance aggravante n’est prévue par le texte.",
+                ),
               ),
             ],
           ),
@@ -394,85 +730,179 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
 
           // Répression + tentative/complicité + faits justificatifs
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+              "f00085",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                TextSpan(text: "Délit — "),
-                TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00086",
+                  "Peines encourues — personnes physiques",
                 ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article 432-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00087",
+                    "Délit — ",
                   ),
                 ),
-                TextSpan(text: " (alinéas 1 et 2)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00088",
+                    "3 ans d’emprisonnement et 45 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00089",
+                    "article 432-9 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00090",
+                    " (alinéas 1 et 2).",
+                  ),
+                ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00091",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph(
-                "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00092",
+                  "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00093",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00094",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, selon "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00095",
+                    "Complicité : OUI, selon ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00096",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " : aide/assistance, provocation (ex. ordonner d’ouvrir une lettre destinée à un tiers), ou instructions "
-                      "(ex. expliquer comment récupérer le courrier électronique d’un tiers).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                        "f00097",
+                        " : aide/assistance, provocation (ex. ordonner d’ouvrir une lettre destinée à un tiers), ou instructions ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                        "f00098",
+                        "(ex. expliquer comment récupérer le courrier électronique d’un tiers).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Un particulier peut être complice d’un dépositaire de l’autorité publique en fournissant, par exemple, les moyens matériels.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00099",
+                  "Un particulier peut être complice d’un dépositaire de l’autorité publique en fournissant, par exemple, les moyens matériels.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("Faits justificatifs (cas prévus par la loi)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00100",
+                  "Faits justificatifs (cas prévus par la loi)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00101",
+                    "Article 432-9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : l’infraction est exclue lorsque l’atteinte est réalisée dans les cas prévus par la loi (notamment procédures judiciaires).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                    "f00102",
+                    " : l’infraction est exclue lorsque l’atteinte est réalisée dans les cas prévus par la loi (notamment procédures judiciaires).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Procédures judiciaires (exemples)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00103",
+                  "Procédures judiciaires (exemples)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’interception, l’enregistrement et la transcription de correspondances émises par communications électroniques peuvent être autorisés "
-                        "par le juge d’instruction en matière criminelle et pour les délits punis d’au moins 3 ans d’emprisonnement, selon les ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                          "f00104",
+                          "L’interception, l’enregistrement et la transcription de correspondances émises par communications électroniques peuvent être autorisés ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                          "f00105",
+                          "par le juge d’instruction en matière criminelle et pour les délits punis d’au moins 3 ans d’emprisonnement, selon les ",
+                        ),
                   ),
                   TextSpan(
-                    text: "articles 100 à 100-8 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00106",
+                      "articles 100 à 100-8 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -486,22 +916,44 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En enquête de flagrance ou préliminaire (infractions relevant des régimes spéciaux), l’autorisation peut relever du juge des libertés et de la détention "
-                        "sur requête du procureur, selon ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                          "f00107",
+                          "En enquête de flagrance ou préliminaire (infractions relevant des régimes spéciaux), l’autorisation peut relever du juge des libertés et de la détention ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                          "f00108",
+                          "sur requête du procureur, selon ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 706-95 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00109",
+                      "l’article 706-95 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " et les textes de renvoi."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                      "f00110",
+                      " et les textes de renvoi.",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "D’autres exemptions existent en matière administrative, notamment pour certaines réquisitions liées à la lutte contre le terrorisme (données techniques de connexion et de trafic).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart",
+                  "f00111",
+                  "D’autres exemptions existent en matière administrative, notamment pour certaines réquisitions liées à la lutte contre le terrorisme (données techniques de connexion et de trafic).",
+                ),
               ),
             ],
           ),

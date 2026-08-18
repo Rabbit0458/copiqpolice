@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuteurIvreOuStupefiantsPage extends StatelessWidget {
   const AuteurIvreOuStupefiantsPage({super.key});
@@ -41,10 +42,18 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Auteur ivre / stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+            "f00002",
+            "Auteur ivre / stupéfiants",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -57,7 +66,11 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 10, 18, 26),
         children: [
           Text(
-            "Auteur ivre ou sous l’emprise\nde stupéfiants",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+              "f00003",
+              "Auteur ivre ou sous l’emprise\nde stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -67,8 +80,16 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Circonstance aggravante : « par une personne agissant en état d’ivresse manifeste "
-            "ou sous l’emprise manifeste de produits stupéfiants ».",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00004",
+                  "Circonstance aggravante : « par une personne agissant en état d’ivresse manifeste ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00005",
+                  "ou sous l’emprise manifeste de produits stupéfiants ».",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -80,30 +101,70 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
 
           // ========================= 1 — DÉFINITION =========================
           _ConditionCard(
-            title: "1 — Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+              "f00006",
+              "1 — Définition",
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette circonstance aggravante peut être retenue lorsque la personne boit en connaissance "
-                "des effets de l’alcool et commet ensuite en état d’ivresse une infraction qu’elle n’a pas "
-                "à proprement parler voulue avant de boire, et qu’elle n’aurait pas voulu en son état normal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00007",
+                      "Cette circonstance aggravante peut être retenue lorsque la personne boit en connaissance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00008",
+                      "des effets de l’alcool et commet ensuite en état d’ivresse une infraction qu’elle n’a pas ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00009",
+                      "à proprement parler voulue avant de boire, et qu’elle n’aurait pas voulu en son état normal.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La grande majorité des décisions jurisprudentielles se refusent à voir dans l’ivresse "
-                "une cause légale d’exemption de la peine.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00010",
+                      "La grande majorité des décisions jurisprudentielles se refusent à voir dans l’ivresse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00011",
+                      "une cause légale d’exemption de la peine.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette solution semble devoir être appliquée a fortiori à l’usage volontaire de produits "
-                "stupéfiants, illicite en tant que tel, contrairement à la consommation d’alcool.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00012",
+                      "Cette solution semble devoir être appliquée a fortiori à l’usage volontaire de produits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00013",
+                      "stupéfiants, illicite en tant que tel, contrairement à la consommation d’alcool.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il s’agit d’une circonstance aggravante réelle : ses effets s’étendent à tous les auteurs, "
-                "coauteurs et complices de l’infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00014",
+                      "Il s’agit d’une circonstance aggravante réelle : ses effets s’étendent à tous les auteurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00015",
+                      "coauteurs et complices de l’infraction.",
+                    ),
               ),
             ],
           ),
@@ -112,81 +173,212 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
 
           // ========================= 2 — CONDITIONS =========================
           _ConditionCard(
-            title: "2 — Conditions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+              "f00016",
+              "2 — Conditions",
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
-              const _SubTitle(
-                "2.1 — L’état d’ivresse manifeste et l’emprise manifeste de stupéfiants",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00017",
+                  "2.1 — L’état d’ivresse manifeste et l’emprise manifeste de stupéfiants",
+                ),
               ),
-              const _Paragraph(
-                "Ces états sont ceux définis par le code de la santé publique, le code de la route et la "
-                "jurisprudence s’y rapportant.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00018",
+                      "Ces états sont ceux définis par le code de la santé publique, le code de la route et la ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00019",
+                      "jurisprudence s’y rapportant.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Cependant, aucune précision n’a été rapportée par le législateur concernant les éléments "
-                "permettant de les caractériser en tant que circonstance aggravante de certaines infractions pénales.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00020",
+                      "Cependant, aucune précision n’a été rapportée par le législateur concernant les éléments ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00021",
+                      "permettant de les caractériser en tant que circonstance aggravante de certaines infractions pénales.",
+                    ),
               ),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                t("On peut néanmoins retenir "),
-                law("l’article L. 3354-1 du C.S.P."),
                 t(
-                  " qui prévoit que les officiers ou agents de police judiciaire doivent, lors de la constatation "
-                  "d’un crime, d’un délit ou d’un accident de la circulation, faire procéder sur la personne de "
-                  "l’auteur présumé aux vérifications prévues au ",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00022",
+                    "On peut néanmoins retenir ",
+                  ),
                 ),
-                law("I de l’article L. 234-1 du code de la route"),
-                t(" et à "),
-                law("l’article L. 4274-14 du code des transports"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00023",
+                    "l’article L. 3354-1 du C.S.P.",
+                  ),
+                ),
                 t(
-                  ", destinées à établir la preuve de la présence d’alcool dans son organisme lorsqu’il semble que "
-                  "le crime, le délit ou l’accident a été commis ou causé sous l’empire d’un état alcoolique. "
-                  "Ces vérifications sont obligatoires dans tous les cas de crimes, délits ou accidents suivis de mort ; "
-                  "et, lorsqu’elles peuvent être utiles, elles sont également effectuées sur la victime.",
+                  ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                        "f00024",
+                        " qui prévoit que les officiers ou agents de police judiciaire doivent, lors de la constatation ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                        "f00025",
+                        "d’un crime, d’un délit ou d’un accident de la circulation, faire procéder sur la personne de ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                        "f00026",
+                        "l’auteur présumé aux vérifications prévues au ",
+                      ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00027",
+                    "I de l’article L. 234-1 du code de la route",
+                  ),
+                ),
+                t(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00028",
+                    " et à ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00029",
+                    "l’article L. 4274-14 du code des transports",
+                  ),
+                ),
+                t(
+                  ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                        "f00030",
+                        ", destinées à établir la preuve de la présence d’alcool dans son organisme lorsqu’il semble que ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                        "f00031",
+                        "le crime, le délit ou l’accident a été commis ou causé sous l’empire d’un état alcoolique. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                        "f00032",
+                        "Ces vérifications sont obligatoires dans tous les cas de crimes, délits ou accidents suivis de mort ; ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                        "f00033",
+                        "et, lorsqu’elles peuvent être utiles, elles sont également effectuées sur la victime.",
+                      ),
                 ),
               ]),
 
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Aucune disposition spéciale ne prévoit une telle procédure en matière de produits stupéfiants.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00034",
+                  "Aucune disposition spéciale ne prévoit une telle procédure en matière de produits stupéfiants.",
+                ),
               ),
 
               const SizedBox(height: 14),
-              const _SubTitle(
-                "2.2 — La constitution de la preuve de ces états",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00035",
+                  "2.2 — La constitution de la preuve de ces états",
+                ),
               ),
-              const _Paragraph(
-                "La détermination de l’état manifeste d’ivresse ou d’emprise de stupéfiants peut s’avérer "
-                "difficile à apprécier dans certains cas. La question de la preuve a été soulevée à plusieurs reprises "
-                "lors du vote de la loi, mais elle est restée sans réponse.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00036",
+                      "La détermination de l’état manifeste d’ivresse ou d’emprise de stupéfiants peut s’avérer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00037",
+                      "difficile à apprécier dans certains cas. La question de la preuve a été soulevée à plusieurs reprises ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                      "f00038",
+                      "lors du vote de la loi, mais elle est restée sans réponse.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _IntroBullet(
-                text:
-                    "Comment faire la preuve de l’état d’ivresse manifeste lorsque la victime porte plainte quelques heures, voire quelques jours après les faits ?",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00039",
+                  "Comment faire la preuve de l’état d’ivresse manifeste lorsque la victime porte plainte quelques heures, voire quelques jours après les faits ?",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "À l’inverse, comment déterminer la date de consommation de produits stupéfiants alors que leur présence demeure plusieurs jours dans l’organisme ?",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00040",
+                  "À l’inverse, comment déterminer la date de consommation de produits stupéfiants alors que leur présence demeure plusieurs jours dans l’organisme ?",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Quelle est l’influence du degré de dépendance à ces produits sur le comportement individuel ?",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00041",
+                  "Quelle est l’influence du degré de dépendance à ces produits sur le comportement individuel ?",
+                ),
               ),
               const SizedBox(height: 10),
 
               _NotaBox(
-                title: "Éclairage",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00042",
+                  "Éclairage",
+                ),
                 bodySpans: [
                   t(
-                    "Les représentants du Conseil national de l’Ordre des médecins indiquent que la conjugaison "
-                    "de trois types de dépistage (analyses d’urine, de sang et des cheveux) permet de détecter "
-                    "précisément le niveau de consommation de stupéfiants (faible, moyen ou important) et la date "
-                    "à laquelle ces produits ont été consommés.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                          "f00043",
+                          "Les représentants du Conseil national de l’Ordre des médecins indiquent que la conjugaison ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                          "f00044",
+                          "de trois types de dépistage (analyses d’urine, de sang et des cheveux) permet de détecter ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                          "f00045",
+                          "précisément le niveau de consommation de stupéfiants (faible, moyen ou important) et la date ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                          "f00046",
+                          "à laquelle ces produits ont été consommés.",
+                        ),
                   ),
                 ],
               ),
@@ -197,85 +389,191 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
 
           // ====================== 3 — CHAMP D’APPLICATION =====================
           _ConditionCard(
-            title: "3 — Champ d’application",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+              "f00047",
+              "3 — Champ d’application",
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
-              const _Paragraph(
-                "Cette circonstance aggravante est notamment prévue / utilisée dans les infractions suivantes :",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                  "f00048",
+                  "Cette circonstance aggravante est notamment prévue / utilisée dans les infractions suivantes :",
+                ),
               ),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "• Le meurtre ("),
-                law("article 221-4, 11° C.P."),
-                const TextSpan(text: ")."),
-              ]),
-              const SizedBox(height: 6),
-
-              _Paragraph.rich([
-                const TextSpan(text: "• Les violences volontaires ("),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00049",
+                    "• Le meurtre (",
+                  ),
+                ),
                 law(
-                  "articles 222-8 et 222-10, 11°, 222-12 et 222-13, 14°, et 222-14-5 al. 4 C.P.",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00050",
+                    "article 221-4, 11° C.P.",
+                  ),
                 ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
 
               _Paragraph.rich([
-                const TextSpan(text: "• Le viol ("),
-                law("article 222-24, 12° C.P."),
-                const TextSpan(text: ")."),
-              ]),
-              const SizedBox(height: 6),
-
-              _Paragraph.rich([
-                const TextSpan(text: "• Les agressions sexuelles ("),
-                law("article 222-28, 8° C.P."),
-                const TextSpan(text: ")."),
-              ]),
-              const SizedBox(height: 6),
-
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "• Les agressions sexuelles sur mineur de quinze ans ou personne vulnérable (",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00051",
+                    "• Les violences volontaires (",
+                  ),
                 ),
-                law("article 222-30, 7° C.P."),
-                const TextSpan(text: ")."),
-              ]),
-              const SizedBox(height: 6),
-
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "• Les atteintes sexuelles sans violence sur mineur de quinze ans (",
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00052",
+                    "articles 222-8 et 222-10, 11°, 222-12 et 222-13, 14°, et 222-14-5 al. 4 C.P.",
+                  ),
                 ),
-                law("article 227-26, 5° C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
 
               _Paragraph.rich([
-                const TextSpan(text: "• L’empoisonnement ("),
-                law("article 221-5 al. 3 C.P."),
-                const TextSpan(text: ")."),
-              ]),
-              const SizedBox(height: 6),
-
-              _Paragraph.rich([
-                const TextSpan(text: "• Les tortures ou actes de barbarie ("),
-                law("article 222-3, 11° C.P."),
-                const TextSpan(text: ")."),
-              ]),
-              const SizedBox(height: 6),
-
-              _Paragraph.rich([
-                const TextSpan(
-                  text: "• L’administration de substances nuisibles (",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00053",
+                    "• Le viol (",
+                  ),
                 ),
-                law("article 222-15 C.P."),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00054",
+                    "article 222-24, 12° C.P.",
+                  ),
+                ),
+                const TextSpan(text: ")."),
+              ]),
+              const SizedBox(height: 6),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00055",
+                    "• Les agressions sexuelles (",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00056",
+                    "article 222-28, 8° C.P.",
+                  ),
+                ),
+                const TextSpan(text: ")."),
+              ]),
+              const SizedBox(height: 6),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00057",
+                    "• Les agressions sexuelles sur mineur de quinze ans ou personne vulnérable (",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00058",
+                    "article 222-30, 7° C.P.",
+                  ),
+                ),
+                const TextSpan(text: ")."),
+              ]),
+              const SizedBox(height: 6),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00059",
+                    "• Les atteintes sexuelles sans violence sur mineur de quinze ans (",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00060",
+                    "article 227-26, 5° C.P.",
+                  ),
+                ),
+                const TextSpan(text: ")."),
+              ]),
+              const SizedBox(height: 6),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00061",
+                    "• L’empoisonnement (",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00062",
+                    "article 221-5 al. 3 C.P.",
+                  ),
+                ),
+                const TextSpan(text: ")."),
+              ]),
+              const SizedBox(height: 6),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00063",
+                    "• Les tortures ou actes de barbarie (",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00064",
+                    "article 222-3, 11° C.P.",
+                  ),
+                ),
+                const TextSpan(text: ")."),
+              ]),
+              const SizedBox(height: 6),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00065",
+                    "• L’administration de substances nuisibles (",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart",
+                    "f00066",
+                    "article 222-15 C.P.",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
             ],

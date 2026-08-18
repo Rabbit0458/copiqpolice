@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RequisitionsGeneralitesPage extends StatelessWidget {
   const RequisitionsGeneralitesPage({super.key});
@@ -70,10 +71,18 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Réquisitions judiciaires",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+            "f00002",
+            "Réquisitions judiciaires",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -88,7 +97,11 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les réquisitions judiciaires — généralités",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00003",
+              "Les réquisitions judiciaires — généralités",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -100,14 +113,26 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La réquisition est un acte permettant à une autorité judiciaire d’exiger d’une personne "
-                "l’accomplissement d’une prestation ou la remise d’informations utiles à l’enquête.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                      "f00005",
+                      "La réquisition est un acte permettant à une autorité judiciaire d’exiger d’une personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                      "f00006",
+                      "l’accomplissement d’une prestation ou la remise d’informations utiles à l’enquête.",
+                    ),
               ),
             ],
           ),
@@ -116,86 +141,120 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (bases principales)
           _ConditionCard(
-            title: "Élément légal — textes de référence",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00007",
+              "Élément légal — textes de référence",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 60 et 77-1 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00008",
+                    "Articles 60 et 77-1 du Code de procédure pénale (CPP)",
                   ),
-                ),
-                TextSpan(text: " : réquisitions à personne qualifiée."),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Articles 60-1 et 77-1-1 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : réquisitions générales (remise d’informations/documents).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00009",
+                    " : réquisitions à personne qualifiée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Articles 57-1, 60-2, 60-3, 77-1-2, 97-1, 99-4 et 99-5 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00010",
+                    "Articles 60-1 et 77-1-1 du Code de procédure pénale (CPP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : réquisitions informatiques et téléphoniques.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00011",
+                    " : réquisitions générales (remise d’informations/documents).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 100-3 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00012",
+                    "Articles 57-1, 60-2, 60-3, 77-1-2, 97-1, 99-4 et 99-5 du Code de procédure pénale (CPP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : interceptions de correspondances (commission rogatoire).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00013",
+                    " : réquisitions informatiques et téléphoniques.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 642-1 du Code pénal (CP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00014",
+                    "Article 100-3 du Code de procédure pénale (CPP)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00015",
+                    " : interceptions de correspondances (commission rogatoire).",
                   ),
                 ),
-                TextSpan(text: " : réquisition à manœuvrier."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 3354-1 du Code de la santé publique (CSP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00016",
+                    "Article R. 642-1 du Code pénal (CP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : réquisition à des fins de prélèvement sanguin.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00017",
+                    " : réquisition à manœuvrier.",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00018",
+                    "Article L. 3354-1 du Code de la santé publique (CSP)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00019",
+                    " : réquisition à des fins de prélèvement sanguin.",
+                  ),
                 ),
               ]),
             ],
@@ -205,41 +264,69 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // I — Personne qualifiée
           _ConditionCard(
-            title: "I — Réquisition à personne qualifiée",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00020",
+              "I — Réquisition à personne qualifiée",
+            ),
             cardColor: cardPQ,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 60 et 77-1 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00021",
+                    "Articles 60 et 77-1 du CPP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : l’OPJ (ou sous son contrôle l’APJ / assistant d’enquête) peut recourir à toute personne "
-                      "susceptible de réaliser des constatations ou examens techniques/scientifiques utiles à l’enquête.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00022",
+                        " : l’OPJ (ou sous son contrôle l’APJ / assistant d’enquête) peut recourir à toute personne ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00023",
+                        "susceptible de réaliser des constatations ou examens techniques/scientifiques utiles à l’enquête.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "En enquête préliminaire : autorisation préalable du procureur de la République requise.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00024",
+                  "En enquête préliminaire : autorisation préalable du procureur de la République requise.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les personnes requises prêtent serment par écrit (« en leur honneur et conscience »). "
-                        "Le serment figure en tête du rapport ou sur déclaration séparée, sauf si la personne est inscrite sur une liste d’experts.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                          "f00025",
+                          "Les personnes requises prêtent serment par écrit (« en leur honneur et conscience »). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                          "f00026",
+                          "Le serment figure en tête du rapport ou sur déclaration séparée, sauf si la personne est inscrite sur une liste d’experts.",
+                        ),
                   ),
                   TextSpan(text: " "),
                   TextSpan(
-                    text: "(référence : article 157 du CPP)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                      "f00027",
+                      "(référence : article 157 du CPP)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -250,13 +337,19 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Peut ouvrir des scellés, replacer sous scellés et placer sous scellés les objets issus de l’examen (ex : prélèvements).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00028",
+                  "Peut ouvrir des scellés, replacer sous scellés et placer sous scellés les objets issus de l’examen (ex : prélèvements).",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Sur instructions du procureur : communication des résultats aux personnes mises en cause (indices) et aux victimes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00029",
+                  "Sur instructions du procureur : communication des résultats aux personnes mises en cause (indices) et aux victimes.",
+                ),
               ),
             ],
           ),
@@ -265,42 +358,62 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // II — Générales
           _ConditionCard(
-            title: "II — Réquisition générale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00030",
+              "II — Réquisition générale",
+            ),
             cardColor: cardGen,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 60-1 et 77-1-1 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00031",
+                    "Articles 60-1 et 77-1-1 du CPP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : l’OPJ (ou sous son contrôle l’APJ) peut requérir toute personne, établissement, organisme privé/public "
-                      "ou administration susceptible de détenir des informations intéressant l’enquête, y compris issues de systèmes informatiques.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00032",
+                        " : l’OPJ (ou sous son contrôle l’APJ) peut requérir toute personne, établissement, organisme privé/public ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00033",
+                        "ou administration susceptible de détenir des informations intéressant l’enquête, y compris issues de systèmes informatiques.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Remise possible sous forme numérique ; le secret professionnel ne peut être opposé sans motif légitime.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00034",
+                  "Remise possible sous forme numérique ; le secret professionnel ne peut être opposé sans motif légitime.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En enquête préliminaire : réquisition sur autorisation préalable du procureur de la République. ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00035",
+                    "En enquête préliminaire : réquisition sur autorisation préalable du procureur de la République. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(article 77-1-1 du CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00036",
+                    "(article 77-1-1 du CPP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -309,16 +422,38 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le procureur peut aussi autoriser par « instructions générales » certaines réquisitions nécessaires à la vérité. "
-                        "Durée maximale : 6 mois (renouvelables / modifiables / interrompues). "
-                        "Le procureur doit être immédiatement avisé des réquisitions délivrées en application de ses instructions.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                          "f00037",
+                          "Le procureur peut aussi autoriser par « instructions générales » certaines réquisitions nécessaires à la vérité. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                          "f00038",
+                          "Durée maximale : 6 mois (renouvelables / modifiables / interrompues). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                          "f00039",
+                          "Le procureur doit être immédiatement avisé des réquisitions délivrées en application de ses instructions.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
-              _SubTitle("Sanction (non-réponse)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00040",
+                  "Sanction (non-réponse)",
+                ),
+              ),
               _Paragraph(
-                "Le fait de s’abstenir de répondre dans les meilleurs délais est puni d’une amende de 3 750 €.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00041",
+                  "Le fait de s’abstenir de répondre dans les meilleurs délais est puni d’une amende de 3 750 €.",
+                ),
               ),
             ],
           ),
@@ -327,98 +462,171 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // III — Informatiques & téléphoniques
           _ConditionCard(
-            title: "III — Réquisitions informatiques & téléphoniques",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00042",
+              "III — Réquisitions informatiques & téléphoniques",
+            ),
             cardColor: cardNum,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Articles 57-1, 60-2, 60-3, 77-1-2, 97-1, 99-4 et 99-5 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00043",
+                    "Articles 57-1, 60-2, 60-3, 77-1-2, 97-1, 99-4 et 99-5 du CPP",
                   ),
-                ),
-                TextSpan(text: " : principales hypothèses."),
-              ]),
-              SizedBox(height: 10),
-              _SubTitle("A) Accès / protection des données"),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article 57-1 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : requérir toute personne ayant connaissance des mesures de protection ou permettant l’accès aux données (perquisition).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00044",
+                    " : principales hypothèses.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("B) Remise d’informations par organismes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00045",
+                  "A) Accès / protection des données",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 60-2 alinéa 1 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00046",
+                    "Article 57-1 du CPP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : requérir des organismes publics / personnes morales de droit privé détenant des informations utiles (sauf secret prévu par la loi).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00047",
+                    " : requérir toute personne ayant connaissance des mesures de protection ou permettant l’accès aux données (perquisition).",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00048",
+                  "B) Remise d’informations par organismes",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00049",
+                    "Article 60-2 alinéa 1 du CPP",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00050",
+                    " : requérir des organismes publics / personnes morales de droit privé détenant des informations utiles (sauf secret prévu par la loi).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "En enquête préliminaire : "),
                 TextSpan(
-                  text: "article 77-1-2 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00051",
+                    "En enquête préliminaire : ",
                   ),
                 ),
-                TextSpan(text: " → autorisation préalable du procureur."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00052",
+                    "article 77-1-2 du CPP",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00053",
+                    " → autorisation préalable du procureur.",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("C) Préservation de données (opérateurs)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00054",
+                  "C) Préservation de données (opérateurs)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 60-2 alinéa 2 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00055",
+                    "Article 60-2 alinéa 2 du CPP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : sur réquisition du procureur après autorisation du JLD, imposer aux opérateurs de préserver certaines données (max. 1 an).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00056",
+                    " : sur réquisition du procureur après autorisation du JLD, imposer aux opérateurs de préserver certaines données (max. 1 an).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("D) Ouverture de scellés / copies"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00057",
+                  "D) Ouverture de scellés / copies",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 60-3 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00058",
+                    "Article 60-3 du CPP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : requérir une personne qualifiée pour ouvrir des scellés supports de données, copier/exploiter sans altérer l’intégrité.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00059",
+                    " : requérir une personne qualifiée pour ouvrir des scellés supports de données, copier/exploiter sans altérer l’intégrité.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Sanction (refus non légitime)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00060",
+                  "Sanction (refus non légitime)",
+                ),
+              ),
               _Paragraph(
-                "Le refus de répondre sans motif légitime à ces réquisitions est puni d’une amende de 3 750 €.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00061",
+                  "Le refus de répondre sans motif légitime à ces réquisitions est puni d’une amende de 3 750 €.",
+                ),
               ),
             ],
           ),
@@ -427,32 +635,47 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // IV — Interceptions (CR)
           _ConditionCard(
-            title:
-                "IV — Interceptions de correspondances (commission rogatoire)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00062",
+              "IV — Interceptions de correspondances (commission rogatoire)",
+            ),
             cardColor: cardInter,
             accent: accentIndigo,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 100-3 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00063",
+                    "Article 100-3 du CPP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : en commission rogatoire, l’OPJ (ou sous son contrôle l’APJ) peut requérir un agent qualifié "
-                      "pour installer un dispositif d’interception (service sous tutelle ou exploitant/fournisseur autorisé).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00064",
+                        " : en commission rogatoire, l’OPJ (ou sous son contrôle l’APJ) peut requérir un agent qualifié ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00065",
+                        "pour installer un dispositif d’interception (service sous tutelle ou exploitant/fournisseur autorisé).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette réquisition est liée à un cadre judiciaire spécifique (commission rogatoire) : rigueur maximale sur la trace et l’autorisation.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                      "f00066",
+                      "Cette réquisition est liée à un cadre judiciaire spécifique (commission rogatoire) : rigueur maximale sur la trace et l’autorisation.",
+                    ),
                   ),
                 ],
               ),
@@ -463,35 +686,61 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // V — Manœuvrier
           _ConditionCard(
-            title: "V — Réquisition à manœuvrier",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00067",
+              "V — Réquisition à manœuvrier",
+            ),
             cardColor: cardMan,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 642-1 du Code pénal (CP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00068",
+                    "Article R. 642-1 du Code pénal (CP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : l’APJ, dans l’exercice de ses fonctions, peut requérir toute personne susceptible de fournir "
-                      "une prestation utile (ex : serrurier) en cas d’atteinte à l’ordre public, sinistre, ou danger.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00069",
+                        " : l’APJ, dans l’exercice de ses fonctions, peut requérir toute personne susceptible de fournir ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00070",
+                        "une prestation utile (ex : serrurier) en cas d’atteinte à l’ordre public, sinistre, ou danger.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "La personne requise ne concourt pas directement à la manifestation de la vérité et ne réalise pas d’examen technique/scientifique.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00071",
+                  "La personne requise ne concourt pas directement à la manifestation de la vérité et ne réalise pas d’examen technique/scientifique.",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Pas d’obligation de prêter serment."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00072",
+                  "Pas d’obligation de prêter serment.",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le refus ou la négligence sans motif légitime est puni de l’amende des contraventions de 2ᵉ classe.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00073",
+                  "Le refus ou la négligence sans motif légitime est puni de l’amende des contraventions de 2ᵉ classe.",
+                ),
               ),
             ],
           ),
@@ -500,57 +749,90 @@ class RequisitionsGeneralitesPage extends StatelessWidget {
 
           // VI — Prélèvement sanguin
           _ConditionCard(
-            title: "VI — Réquisition pour prélèvement sanguin",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+              "f00074",
+              "VI — Réquisition pour prélèvement sanguin",
+            ),
             cardColor: cardBlood,
             accent: accentRed,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 3354-1 du CSP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00075",
+                    "Article L. 3354-1 du CSP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : en cas de crime/délit/accident de circulation, les OPJ/APJ doivent faire procéder aux vérifications "
-                      "pour déterminer la présence d’alcool (obligatoires si mort).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00076",
+                        " : en cas de crime/délit/accident de circulation, les OPJ/APJ doivent faire procéder aux vérifications ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                        "f00077",
+                        "pour déterminer la présence d’alcool (obligatoires si mort).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Vérifications prévues par "),
                 TextSpan(
-                  text: "l’article L. 234-4 du Code de la route (CR)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00078",
+                    "Vérifications prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                    "f00079",
+                    "l’article L. 234-4 du Code de la route (CR)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Peuvent être effectuées sur l’auteur présumé et, si utile, sur la victime.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00080",
+                  "Peuvent être effectuées sur l’auteur présumé et, si utile, sur la victime.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Moyens : analyses/examens médicaux, cliniques, biologiques, ou éthylomètre (air expiré).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                  "f00081",
+                  "Moyens : analyses/examens médicaux, cliniques, biologiques, ou éthylomètre (air expiré).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À cette fin, l’OPJ/APJ peut requérir : médecin, interne, étudiant autorisé remplaçant, ou infirmier pour la prise de sang.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                      "f00082",
+                      "À cette fin, l’OPJ/APJ peut requérir : médecin, interne, étudiant autorisé remplaçant, ou infirmier pour la prise de sang.",
+                    ),
                   ),
                   TextSpan(text: " "),
                   TextSpan(
-                    text: "(article L. 234-4 du Code de la route)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/requisitions_generalites_page.dart",
+                      "f00083",
+                      "(article L. 234-4 du Code de la route)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -813,9 +1095,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

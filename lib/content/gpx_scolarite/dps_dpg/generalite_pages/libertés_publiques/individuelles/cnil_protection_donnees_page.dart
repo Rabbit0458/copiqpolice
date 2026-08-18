@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CnilProtectionDonneesPage extends StatelessWidget {
   const CnilProtectionDonneesPage({super.key});
@@ -38,7 +39,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'CNIL & protection des données',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+            "f00001",
+            'CNIL & protection des données',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17,
@@ -54,7 +59,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
           // EN-TÊTE / INTRO
           // =====================================================
           Text(
-            "La Commission Nationale de l’Informatique et des Libertés",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+              "f00002",
+              "La Commission Nationale de l’Informatique et des Libertés",
+            ),
             textAlign: TextAlign.center,
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
@@ -67,9 +76,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
           _Paragraph.rich([
             TextSpan(
               text:
-                  "Selon l’article 1 de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, "
-                  "« l’informatique doit être au service de chaque citoyen. Son développement doit s’opérer dans le cadre de la coopération internationale. "
-                  "Elle ne doit porter atteinte ni à l’identité humaine, ni aux droits de l’homme, ni à la vie privée, ni aux libertés individuelles ou publiques ». ",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00003",
+                    "Selon l’article 1 de la loi n° 78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés, ",
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00004",
+                    "« l’informatique doit être au service de chaque citoyen. Son développement doit s’opérer dans le cadre de la coopération internationale. ",
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00005",
+                    "Elle ne doit porter atteinte ni à l’identité humaine, ni aux droits de l’homme, ni à la vie privée, ni aux libertés individuelles ou publiques ». ",
+                  ),
               style: TextStyle(color: textColor),
             ),
           ]),
@@ -77,16 +98,27 @@ class CnilProtectionDonneesPage extends StatelessWidget {
           _Paragraph.rich([
             TextSpan(
               text:
-                  "La loi n° 2018-493 du 20 juin 2018 a modifié la loi Informatique et Libertés afin de mettre en conformité le droit national avec le cadre juridique européen. "
-                  "Elle permet la mise en œuvre concrète du règlement général sur la protection des données (RGPD) et de la directive « police-justice » applicable aux fichiers de la sphère pénale. ",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00006",
+                    "La loi n° 2018-493 du 20 juin 2018 a modifié la loi Informatique et Libertés afin de mettre en conformité le droit national avec le cadre juridique européen. ",
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00007",
+                    "Elle permet la mise en œuvre concrète du règlement général sur la protection des données (RGPD) et de la directive « police-justice » applicable aux fichiers de la sphère pénale. ",
+                  ),
               style: TextStyle(color: textColor),
             ),
           ]),
           const SizedBox(height: 6),
           _Paragraph.rich([
             TextSpan(
-              text:
-                  "La CNIL est le régulateur français des données personnelles : elle accompagne les professionnels dans leur mise en conformité et aide les particuliers à maîtriser leurs données et à exercer leurs droits.",
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                "f00008",
+                "La CNIL est le régulateur français des données personnelles : elle accompagne les professionnels dans leur mise en conformité et aide les particuliers à maîtriser leurs données et à exercer leurs droits.",
+              ),
               style: TextStyle(color: textColor),
             ),
           ]),
@@ -96,7 +128,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
           // CHAPITRE 1 — STATUT DE LA CNIL
           // =====================================================
           _HypoCard(
-            title: "Chapitre 1 — Le statut de la CNIL",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+              "f00009",
+              "Chapitre 1 — Le statut de la CNIL",
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
@@ -104,7 +140,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
             children: [
               // 1.1
               Text(
-                "1.1 — La composition",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00010",
+                  "1.1 — La composition",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -114,44 +154,73 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               const SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La CNIL est composée de 18 membres nommés pour cinq ans :",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00011",
+                    "La CNIL est composée de 18 membres nommés pour cinq ans :",
+                  ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
-              const _BulletPoint.rich([
-                TextSpan(text: "4 parlementaires (2 députés, 2 sénateurs) ;"),
-              ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "2 représentants du Conseil économique, social et environnemental ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00012",
+                    "4 parlementaires (2 députés, 2 sénateurs) ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "6 représentants des hautes juridictions (2 conseillers auprès du Conseil d’État, de la Cour de cassation et de la Cour des comptes) ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00013",
+                    "2 représentants du Conseil économique, social et environnemental ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "5 personnalités qualifiées désignées par le président de l’Assemblée nationale, le président du Sénat et en conseil des ministres ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00014",
+                    "6 représentants des hautes juridictions (2 conseillers auprès du Conseil d’État, de la Cour de cassation et de la Cour des comptes) ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "le président de la CADA (Commission d’accès aux documents administratifs).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00015",
+                    "5 personnalités qualifiées désignées par le président de l’Assemblée nationale, le président du Sénat et en conseil des ministres ;",
+                  ),
+                ),
+              ]),
+              _BulletPoint.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00016",
+                    "le président de la CADA (Commission d’accès aux documents administratifs).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 4),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Elle comprend en outre, avec voix consultative, le Défenseur des droits. "
-                      "Depuis la loi n° 2014-873 du 4 août 2014 pour l’égalité réelle entre les femmes et les hommes, la parité doit être assurée au sein de la CNIL.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00017",
+                        "Elle comprend en outre, avec voix consultative, le Défenseur des droits. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00018",
+                        "Depuis la loi n° 2014-873 du 4 août 2014 pour l’égalité réelle entre les femmes et les hommes, la parité doit être assurée au sein de la CNIL.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -159,7 +228,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 1.2
               Text(
-                "1.2 — Le fonctionnement",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00019",
+                  "1.2 — Le fonctionnement",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -170,9 +243,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le président de la CNIL est nommé par décret du président de la République parmi les membres de la commission pour une durée de cinq ans (article 9). "
-                      "Le gouvernement, les autorités publiques et les dirigeants d’entreprises publiques ou privées ne peuvent s’opposer à l’action de la commission "
-                      "et doivent prendre toutes les mesures utiles pour faciliter sa tâche (article 18).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00020",
+                        "Le président de la CNIL est nommé par décret du président de la République parmi les membres de la commission pour une durée de cinq ans (article 9). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00021",
+                        "Le gouvernement, les autorités publiques et les dirigeants d’entreprises publiques ou privées ne peuvent s’opposer à l’action de la commission ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00022",
+                        "et doivent prendre toutes les mesures utiles pour faciliter sa tâche (article 18).",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -180,9 +265,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La CNIL établit chaque année un rapport public qu’elle présente au président de la République, au Premier ministre et au Parlement (article 8). "
-                      "Dans l’exercice de leurs attributions, les agents de la commission sont soumis au secret professionnel "
-                      "dans les conditions prévues aux articles 226-13 et 413-10 du Code pénal (article 11).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00023",
+                        "La CNIL établit chaque année un rapport public qu’elle présente au président de la République, au Premier ministre et au Parlement (article 8). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00024",
+                        "Dans l’exercice de leurs attributions, les agents de la commission sont soumis au secret professionnel ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00025",
+                        "dans les conditions prévues aux articles 226-13 et 413-10 du Code pénal (article 11).",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -190,7 +287,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 1.3
               Text(
-                "1.3 — Une autorité administrative indépendante",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00026",
+                  "1.3 — Une autorité administrative indépendante",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -201,9 +302,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La CNIL est une autorité administrative indépendante (AAI). "
-                      "Il s’agit d’un organisme public agissant au nom de l’État, sans être placé sous l’autorité du gouvernement ou d’un ministre. "
-                      "Cette indépendance renforce sa légitimité lorsqu’elle contrôle l’action de l’État lui-même, notamment en matière de fichiers de police et de justice.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00027",
+                        "La CNIL est une autorité administrative indépendante (AAI). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00028",
+                        "Il s’agit d’un organisme public agissant au nom de l’État, sans être placé sous l’autorité du gouvernement ou d’un ministre. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00029",
+                        "Cette indépendance renforce sa légitimité lorsqu’elle contrôle l’action de l’État lui-même, notamment en matière de fichiers de police et de justice.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -215,7 +328,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
           // CHAPITRE 2 — MISSIONS DE LA CNIL
           // =====================================================
           _HypoCard(
-            title: "Chapitre 2 — Les missions de la CNIL",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+              "f00030",
+              "Chapitre 2 — Les missions de la CNIL",
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
@@ -224,8 +341,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les missions de la CNIL sont définies par l’article 8 de la loi n° 78-17 du 6 janvier 1978. "
-                      "Pour accomplir ces missions, la commission peut adopter des recommandations et prendre des décisions individuelles ou réglementaires dans les cas prévus par la loi.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00031",
+                        "Les missions de la CNIL sont définies par l’article 8 de la loi n° 78-17 du 6 janvier 1978. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00032",
+                        "Pour accomplir ces missions, la commission peut adopter des recommandations et prendre des décisions individuelles ou réglementaires dans les cas prévus par la loi.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -233,7 +358,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 2.1
               Text(
-                "2.1 — Informer des droits et des obligations",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00033",
+                  "2.1 — Informer des droits et des obligations",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -244,8 +373,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La CNIL informe toutes les personnes concernées et tous les responsables de traitements de leurs droits et obligations. "
-                      "Elle peut, à cette fin, apporter une information adaptée aux collectivités territoriales, à leurs groupements ainsi qu’aux petites et moyennes entreprises.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00034",
+                        "La CNIL informe toutes les personnes concernées et tous les responsables de traitements de leurs droits et obligations. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00035",
+                        "Elle peut, à cette fin, apporter une information adaptée aux collectivités territoriales, à leurs groupements ainsi qu’aux petites et moyennes entreprises.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -253,7 +390,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 2.2
               Text(
-                "2.2 — Veiller au respect de la loi et aux dispositions relatives à la protection des données",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00036",
+                  "2.2 — Veiller au respect de la loi et aux dispositions relatives à la protection des données",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -264,9 +405,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Elle veille à ce que les traitements de données à caractère personnel soient mis en œuvre conformément à la loi Informatique et Libertés, "
-                      "au RGPD et aux autres textes relatifs à la protection des données personnelles. "
-                      "Dans ce cadre, elle dispose de pouvoirs de contrôle sur place ou sur pièces et peut prononcer des mises en demeure ou des sanctions.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00037",
+                        "Elle veille à ce que les traitements de données à caractère personnel soient mis en œuvre conformément à la loi Informatique et Libertés, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00038",
+                        "au RGPD et aux autres textes relatifs à la protection des données personnelles. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00039",
+                        "Dans ce cadre, elle dispose de pouvoirs de contrôle sur place ou sur pièces et peut prononcer des mises en demeure ou des sanctions.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -274,7 +427,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 2.3
               Text(
-                "2.3 — Délivrer un label",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00040",
+                  "2.3 — Délivrer un label",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -285,8 +442,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La CNIL délivre des labels à des produits ou à des procédures tendant à la protection des données à caractère personnel, "
-                      "attestant leur conformité aux dispositions de la loi. Ces labels constituent un outil de confiance pour les usagers et les partenaires.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00041",
+                        "La CNIL délivre des labels à des produits ou à des procédures tendant à la protection des données à caractère personnel, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00042",
+                        "attestant leur conformité aux dispositions de la loi. Ces labels constituent un outil de confiance pour les usagers et les partenaires.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -294,7 +459,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 2.4
               Text(
-                "2.4 — Se tenir informée de l’évolution des technologies de l’information",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00043",
+                  "2.4 — Se tenir informée de l’évolution des technologies de l’information",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -305,9 +474,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La CNIL se tient informée de l’évolution des technologies de l’information et de la communication. "
-                      "Elle rend publique, le cas échéant, son appréciation des conséquences de ces évolutions sur l’exercice des droits et libertés, "
-                      "par exemple à propos de la vidéoprotection, des objets connectés, de l’intelligence artificielle ou de la reconnaissance faciale.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00044",
+                        "La CNIL se tient informée de l’évolution des technologies de l’information et de la communication. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00045",
+                        "Elle rend publique, le cas échéant, son appréciation des conséquences de ces évolutions sur l’exercice des droits et libertés, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00046",
+                        "par exemple à propos de la vidéoprotection, des objets connectés, de l’intelligence artificielle ou de la reconnaissance faciale.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -315,7 +496,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 2.5
               Text(
-                "2.5 — Présenter des observations devant toute juridiction",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00047",
+                  "2.5 — Présenter des observations devant toute juridiction",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -326,9 +511,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La CNIL peut présenter des observations devant toute juridiction, à l’occasion d’un litige relatif à l’application de la loi Informatique et Libertés "
-                      "ou des dispositions relatives à la protection des données à caractère personnel prévues par les textes législatifs et réglementaires, "
-                      "par le droit de l’Union européenne ou par les engagements internationaux de la France.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00048",
+                        "La CNIL peut présenter des observations devant toute juridiction, à l’occasion d’un litige relatif à l’application de la loi Informatique et Libertés ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00049",
+                        "ou des dispositions relatives à la protection des données à caractère personnel prévues par les textes législatifs et réglementaires, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00050",
+                        "par le droit de l’Union européenne ou par les engagements internationaux de la France.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -336,8 +533,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les infractions aux dispositions de la loi du 6 janvier 1978 sont prévues et réprimées par les articles 226-16 à 226-24 du Code pénal. "
-                      "Il s’agit de délits, assortis de peines d’amende et parfois d’emprisonnement.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00051",
+                        "Les infractions aux dispositions de la loi du 6 janvier 1978 sont prévues et réprimées par les articles 226-16 à 226-24 du Code pénal. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00052",
+                        "Il s’agit de délits, assortis de peines d’amende et parfois d’emprisonnement.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -349,7 +554,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
           // CHAPITRE 3 — PROTECTION DES DONNÉES
           // =====================================================
           _HypoCard(
-            title: "Chapitre 3 — La protection des données",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+              "f00053",
+              "Chapitre 3 — La protection des données",
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
@@ -358,8 +567,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Constitue un fichier de données à caractère personnel tout ensemble structuré de données à caractère personnel accessibles selon des critères déterminés, "
-                      "que cet ensemble soit centralisé, décentralisé ou réparti de manière fonctionnelle ou géographique (article 2 de la loi).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00054",
+                        "Constitue un fichier de données à caractère personnel tout ensemble structuré de données à caractère personnel accessibles selon des critères déterminés, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00055",
+                        "que cet ensemble soit centralisé, décentralisé ou réparti de manière fonctionnelle ou géographique (article 2 de la loi).",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -367,8 +584,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le RGPD a supprimé la plupart des déclarations préalables de fichiers auprès de la CNIL. "
-                      "Seules subsistent certaines formalités pour des secteurs sensibles, comme la santé ou la police-justice.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00056",
+                        "Le RGPD a supprimé la plupart des déclarations préalables de fichiers auprès de la CNIL. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00057",
+                        "Seules subsistent certaines formalités pour des secteurs sensibles, comme la santé ou la police-justice.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -376,7 +601,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 3.1
               Text(
-                "3.1 — Conditions de mise en œuvre de certains traitements de données relevant de l’État",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00058",
+                  "3.1 — Conditions de mise en œuvre de certains traitements de données relevant de l’État",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -387,11 +616,31 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le législateur a expressément maintenu, pour certaines catégories de traitements à risques relevant du secteur public, "
-                      "et en particulier pour les traitements dits de souveraineté, un régime de demande d’avis auprès de la CNIL. "
-                      "Sont visés les traitements qui intéressent la sûreté de l’État, la défense ou la sécurité publique, "
-                      "ou ceux ayant pour objet la prévention, la recherche, la constatation ou la poursuite des infractions pénales, "
-                      "ainsi que l’exécution des condamnations pénales ou des mesures de sûreté (article 31).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00059",
+                        "Le législateur a expressément maintenu, pour certaines catégories de traitements à risques relevant du secteur public, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00060",
+                        "et en particulier pour les traitements dits de souveraineté, un régime de demande d’avis auprès de la CNIL. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00061",
+                        "Sont visés les traitements qui intéressent la sûreté de l’État, la défense ou la sécurité publique, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00062",
+                        "ou ceux ayant pour objet la prévention, la recherche, la constatation ou la poursuite des infractions pénales, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00063",
+                        "ainsi que l’exécution des condamnations pénales ou des mesures de sûreté (article 31).",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -399,67 +648,112 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les traitements de données à caractère personnel mis en œuvre pour le compte de l’État, "
-                      "agissant dans l’exercice de ses prérogatives de puissance publique, qui portent sur des données génétiques "
-                      "ou sur des données biométriques nécessaires à l’authentification ou au contrôle de l’identité des personnes, "
-                      "sont autorisés par décret en Conseil d’État, après avis motivé et publié de la CNIL (article 32).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00064",
+                        "Les traitements de données à caractère personnel mis en œuvre pour le compte de l’État, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00065",
+                        "agissant dans l’exercice de ses prérogatives de puissance publique, qui portent sur des données génétiques ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00066",
+                        "ou sur des données biométriques nécessaires à l’authentification ou au contrôle de l’identité des personnes, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00067",
+                        "sont autorisés par décret en Conseil d’État, après avis motivé et publié de la CNIL (article 32).",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les actes autorisant la création d’un tel traitement doivent préciser notamment :",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00068",
+                    "Les actes autorisant la création d’un tel traitement doivent préciser notamment :",
+                  ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "la finalité du traitement et, le cas échéant, sa dénomination ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00069",
+                    "la finalité du traitement et, le cas échéant, sa dénomination ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: "le service auprès duquel s’exerce le droit d’accès ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00070",
+                    "le service auprès duquel s’exerce le droit d’accès ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "les catégories de données à caractère personnel enregistrées ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00071",
+                    "les catégories de données à caractère personnel enregistrées ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "les destinataires ou catégories de destinataires habilités à recevoir communication de ces données ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00072",
+                    "les destinataires ou catégories de destinataires habilités à recevoir communication de ces données ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "le cas échéant, les dérogations à l’obligation d’information des personnes concernées ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00073",
+                    "le cas échéant, les dérogations à l’obligation d’information des personnes concernées ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "le cas échéant, les limitations et restrictions aux droits des personnes concernées ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00074",
+                    "le cas échéant, les limitations et restrictions aux droits des personnes concernées ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "le cas échéant, la désignation, parmi les responsables conjoints du traitement, du point de contact pour les personnes concernées.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00075",
+                    "le cas échéant, la désignation, parmi les responsables conjoints du traitement, du point de contact pour les personnes concernées.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // 3.2
               Text(
-                "3.2 — Les droits des personnes sur leurs données",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00076",
+                  "3.2 — Les droits des personnes sur leurs données",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 14.5,
@@ -470,8 +764,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Sont ici évoquées principalement les dispositions relatives aux traitements mis en œuvre à des fins de prévention et de détection des infractions pénales, "
-                      "d’enquêtes et de poursuites en la matière ou d’exécution de sanctions pénales, ainsi qu’à la libre circulation de ces données.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00077",
+                        "Sont ici évoquées principalement les dispositions relatives aux traitements mis en œuvre à des fins de prévention et de détection des infractions pénales, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00078",
+                        "d’enquêtes et de poursuites en la matière ou d’exécution de sanctions pénales, ainsi qu’à la libre circulation de ces données.",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -479,7 +781,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 3.2.1
               Text(
-                "3.2.1 — Information de la personne concernée (article 104)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00079",
+                  "3.2.1 — Information de la personne concernée (article 104)",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -489,47 +795,74 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               const SizedBox(height: 4),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le responsable du traitement doit mettre à disposition de la personne concernée notamment :",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00080",
+                    "Le responsable du traitement doit mettre à disposition de la personne concernée notamment :",
+                  ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "l’identité et les coordonnées du responsable de traitement et, le cas échéant, celles de son représentant ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00081",
+                    "l’identité et les coordonnées du responsable de traitement et, le cas échéant, celles de son représentant ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "le cas échéant, les coordonnées du délégué à la protection des données (DPO) ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00082",
+                    "le cas échéant, les coordonnées du délégué à la protection des données (DPO) ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "les finalités poursuivies par le traitement auquel les données sont destinées ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00083",
+                    "les finalités poursuivies par le traitement auquel les données sont destinées ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      "le droit d’introduire une réclamation auprès de la Commission nationale de l’informatique et des libertés (CNIL) et les coordonnées de celle-ci ;",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                    "f00084",
+                    "le droit d’introduire une réclamation auprès de la Commission nationale de l’informatique et des libertés (CNIL) et les coordonnées de celle-ci ;",
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      "l’existence du droit de demander au responsable de traitement l’accès aux données personnelles, leur rectification ou leur effacement, "
-                      "ainsi que le droit de demander la limitation du traitement des données personnelles concernant la personne.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00085",
+                        "l’existence du droit de demander au responsable de traitement l’accès aux données personnelles, leur rectification ou leur effacement, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00086",
+                        "ainsi que le droit de demander la limitation du traitement des données personnelles concernant la personne.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
 
               // 3.2.2
               Text(
-                "3.2.2 — Un droit d’accès direct (article 105)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00087",
+                  "3.2.2 — Un droit d’accès direct (article 105)",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -540,8 +873,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Toute personne peut demander si des données à caractère personnel la concernant sont ou ne sont pas traitées. "
-                      "Si tel est le cas, elle peut obtenir des informations sur ce traitement (finalités, base juridique, catégories de données concernées, etc.).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00088",
+                        "Toute personne peut demander si des données à caractère personnel la concernant sont ou ne sont pas traitées. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00089",
+                        "Si tel est le cas, elle peut obtenir des informations sur ce traitement (finalités, base juridique, catégories de données concernées, etc.).",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -549,7 +890,11 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
               // 3.2.3
               Text(
-                "3.2.3 — Droit de rectification, de complément et d’effacement (article 106)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                  "f00090",
+                  "3.2.3 — Droit de rectification, de complément et d’effacement (article 106)",
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -560,8 +905,16 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La personne concernée peut demander au responsable d’un fichier de procéder à la rectification des données personnelles inexactes, "
-                      "au complément des données incomplètes, ainsi qu’à l’effacement des données dont la conservation serait contraire à la loi. ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00091",
+                        "La personne concernée peut demander au responsable d’un fichier de procéder à la rectification des données personnelles inexactes, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00092",
+                        "au complément des données incomplètes, ainsi qu’à l’effacement des données dont la conservation serait contraire à la loi. ",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -569,9 +922,21 @@ class CnilProtectionDonneesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les décisions judiciaires et les dossiers faisant l’objet d’une procédure pénale ne sont pas régis par ces dispositions : "
-                      "l’accès à ces données et les conditions de rectification ou d’effacement sont prévus par le Code de procédure pénale (article 111), "
-                      "par exemple pour les modalités d’effacement des données inscrites dans le TAJ (articles 230-8 et 230-9 du C.P.P.).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00093",
+                        "Les décisions judiciaires et les dossiers faisant l’objet d’une procédure pénale ne sont pas régis par ces dispositions : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00094",
+                        "l’accès à ces données et les conditions de rectification ou d’effacement sont prévus par le Code de procédure pénale (article 111), ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                        "f00095",
+                        "par exemple pour les modalités d’effacement des données inscrites dans le TAJ (articles 230-8 et 230-9 du C.P.P.).",
+                      ),
                   style: TextStyle(color: textColor),
                 ),
               ]),
@@ -581,13 +946,29 @@ class CnilProtectionDonneesPage extends StatelessWidget {
 
           // PETIT FOCUS OPÉRATIONNEL
           _NotaBox(
-            title: "Enjeux pratiques pour les services de police",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+              "f00096",
+              "Enjeux pratiques pour les services de police",
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    "Les fichiers de police (TAJ, FPR, fichiers de la circulation, etc.) sont soumis au contrôle de la CNIL. "
-                    "Toute création ou consultation doit reposer sur un fondement légal clair, une finalité déterminée et un accès strictement limité aux missions de service. "
-                    "En cas de doute, il convient de se référer aux textes réglementaires et aux référents « protection des données » de l’unité.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                      "f00097",
+                      "Les fichiers de police (TAJ, FPR, fichiers de la circulation, etc.) sont soumis au contrôle de la CNIL. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                      "f00098",
+                      "Toute création ou consultation doit reposer sur un fondement légal clair, une finalité déterminée et un accès strictement limité aux missions de service. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/individuelles/cnil_protection_donnees_page.dart",
+                      "f00099",
+                      "En cas de doute, il convient de se référer aux textes réglementaires et aux référents « protection des données » de l’unité.",
+                    ),
                 style: TextStyle(color: textColor),
               ),
             ],

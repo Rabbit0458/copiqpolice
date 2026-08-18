@@ -62,7 +62,11 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
+<<<<<<< HEAD
     <html lang="fr" suppressHydrationWarning className={instrumentSans.variable}>
+=======
+    <html lang="fr" suppressHydrationWarning data-scroll-behavior="smooth">
+>>>>>>> 73f199b (Mise à jour COP'IQ)
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>

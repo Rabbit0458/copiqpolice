@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ElementMaterielPage extends StatefulWidget {
   static const String routeName =
@@ -73,7 +74,7 @@ class _ElementMaterielPageState extends State<ElementMaterielPage>
           // Titre volontairement vide (cohérent avec la page Légal)
           title: const Text(''),
           leading: IconButton(
-            tooltip: 'Retour',
+            tooltip: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00001", 'Retour'),
             icon: Icon(
               Icons.arrow_back_rounded,
               color: theme.colorScheme.onSurface,
@@ -95,12 +96,12 @@ class _ElementMaterielPageState extends State<ElementMaterielPage>
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
                     child: _QuickNav(
-                      items: const [
-                        ('Notion générale', Icons.topic_rounded),
-                        ('Tentative punissable', Icons.flag_rounded),
-                        ('Tentative infructueuse', Icons.block_rounded),
-                        ('Commission / omission', Icons.swap_horiz_rounded),
-                        ('Mémo', Icons.fact_check_rounded),
+                      items:  [
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00002", 'Notion générale'), Icons.topic_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00003", 'Tentative punissable'), Icons.flag_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00004", 'Tentative infructueuse'), Icons.block_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00005", 'Commission / omission'), Icons.swap_horiz_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00006", 'Mémo'), Icons.fact_check_rounded),
                       ],
                       onTap: (label) {
                         switch (label) {
@@ -129,66 +130,66 @@ class _ElementMaterielPageState extends State<ElementMaterielPage>
                 // ===== SECTIONS =====
                 SliverToBoxAdapter(
                   key: _kNotion,
-                  child: const _GlassCard(
-                    title: 'Notion générale de l’élément matériel',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00012", 'Notion générale de l’élément matériel'),
                     icon: Icons.topic_rounded,
                     bullets: [
-                      'Manifestation extérieure de la volonté délictueuse (acte ou abstention).',
-                      'Peut être unique ou multiple, instantané ou continu.',
-                      'La seule pensée criminelle n’est pas punissable.',
-                      'Actes préparatoires : en principe non réprimés, sauf texte spécial.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00013", 'Manifestation extérieure de la volonté délictueuse (acte ou abstention).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00014", 'Peut être unique ou multiple, instantané ou continu.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00015", 'La seule pensée criminelle n’est pas punissable.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00016", 'Actes préparatoires : en principe non réprimés, sauf texte spécial.'),
                     ],
                     note:
-                        'Deux formes classiques : infraction de commission (agir) et infraction d’omission (ne pas faire ce que la loi ordonne).',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00017", 'Deux formes classiques : infraction de commission (agir) et infraction d’omission (ne pas faire ce que la loi ordonne).'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kTentative,
-                  child: const _GlassCard(
-                    title: 'Tentative punissable (Article 121-5 du Code pénal)',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00018", 'Tentative punissable (Article 121-5 du Code pénal)'),
                     icon: Icons.flag_rounded,
                     bullets: [
-                      'Constituée lorsqu’il y a commencement d’exécution et que le résultat a manqué pour des circonstances indépendantes de la volonté de l’auteur.',
-                      'Commencement d’exécution : notion jurisprudentielle — acte univoque + intention irrévocable (ex. début d’évasion en creusant le béton).',
-                      'Pas de commencement d’exécution : simples préparatifs ou propos d’intention.',
-                      'Absence de désistement volontaire : si l’agent renonce spontanément avant le résultat, la tentative n’est pas punissable.',
-                      'Régime : crimes — toujours punissable ; délits — si un texte le prévoit ; contraventions — en principe non.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00019", 'Constituée lorsqu’il y a commencement d’exécution et que le résultat a manqué pour des circonstances indépendantes de la volonté de l’auteur.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00020", 'Commencement d’exécution : notion jurisprudentielle — acte univoque + intention irrévocable (ex. début d’évasion en creusant le béton).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00021", 'Pas de commencement d’exécution : simples préparatifs ou propos d’intention.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00022", 'Absence de désistement volontaire : si l’agent renonce spontanément avant le résultat, la tentative n’est pas punissable.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00023", 'Régime : crimes — toujours punissable ; délits — si un texte le prévoit ; contraventions — en principe non.'),
                     ],
                     note:
-                        'Le désistement provoqué par une cause extérieure (ex. intervention policière) n’exonère pas : la tentative demeure punissable.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00024", 'Le désistement provoqué par une cause extérieure (ex. intervention policière) n’exonère pas : la tentative demeure punissable.'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kInfructueuse,
-                  child: const _GlassCard(
-                    title: 'Tentative infructueuse',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00025", 'Tentative infructueuse'),
                     icon: Icons.block_rounded,
                     bullets: [
-                      'Infraction manquée : exécution complète mais le résultat échoue pour des circonstances indépendantes (punie comme la tentative).',
-                      'Infraction impossible : moyens inopérants ou objet inexistant (non punissable sauf si la tentative est incriminée : crimes et certains délits).',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00026", 'Infraction manquée : exécution complète mais le résultat échoue pour des circonstances indépendantes (punie comme la tentative).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00027", 'Infraction impossible : moyens inopérants ou objet inexistant (non punissable sauf si la tentative est incriminée : crimes et certains délits).'),
                     ],
                     note:
-                        'Exemples : tir qui n’atteint pas sa cible (manquée) ; pickpocket dans une poche vide ou arme à blanc (impossible).',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00028", 'Exemples : tir qui n’atteint pas sa cible (manquée) ; pickpocket dans une poche vide ou arme à blanc (impossible).'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kCommissionOmission,
-                  child: const _GlassCard(
-                    title: 'Commission / Omission — conditions',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00029", 'Commission / Omission — conditions'),
                     icon: Icons.swap_horiz_rounded,
                     bullets: [
-                      'Commission (agir) : action matérielle interdite par la loi.',
-                      'Pour la commission, on recherche : une action, un résultat (quand exigé), un lien de causalité.',
-                      'Omission (ne pas faire) : abstention alors que la loi impose d’agir (ex. non-assistance à personne en danger).',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00030", 'Commission (agir) : action matérielle interdite par la loi.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00031", 'Pour la commission, on recherche : une action, un résultat (quand exigé), un lien de causalité.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00032", 'Omission (ne pas faire) : abstention alors que la loi impose d’agir (ex. non-assistance à personne en danger).'),
                     ],
                     note:
-                        'Schéma récapitulatif : acte positif / acte négatif, commission / omission, lien de causalité — à intégrer en annexe graphique si besoin.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00033", 'Schéma récapitulatif : acte positif / acte négatif, commission / omission, lien de causalité — à intégrer en annexe graphique si besoin.'),
                   ),
                 ),
                 const _Gutter(),
@@ -196,13 +197,13 @@ class _ElementMaterielPageState extends State<ElementMaterielPage>
                 // ===== MEMO =====
                 SliverToBoxAdapter(
                   key: _kMemo,
-                  child: const _MemoCard(
+                  child:  _MemoCard(
                     lines: [
-                      'Élément matériel = acte ou abstention extériorisés.',
-                      'Pensée seule : jamais punissable.',
-                      'Tentative : commencement d’exécution + absence de désistement volontaire.',
-                      'Crimes : tentative toujours punissable ; délits : seulement si texte ; contraventions : non.',
-                      'Commission : action + (éventuel) résultat + causalité ; Omission : abstention malgré une obligation légale.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00034", 'Élément matériel = acte ou abstention extériorisés.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00035", 'Pensée seule : jamais punissable.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00036", 'Tentative : commencement d’exécution + absence de désistement volontaire.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00037", 'Crimes : tentative toujours punissable ; délits : seulement si texte ; contraventions : non.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00038", 'Commission : action + (éventuel) résultat + causalité ; Omission : abstention malgré une obligation légale.'),
                     ],
                   ),
                 ),
@@ -275,7 +276,7 @@ class _HeaderHero extends StatelessWidget {
                     _chip('Module'),
                     const Spacer(),
                     Text(
-                      'Élément matériel',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00039", 'Élément matériel'),
                       style: GoogleFonts.fustat(
                         color: Colors.white,
                         fontWeight: FontWeight.w900,
@@ -286,7 +287,7 @@ class _HeaderHero extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      'L’acte ou le fait concret reproché.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00040", 'L’acte ou le fait concret reproché.'),
                       style: GoogleFonts.fustat(
                         color: Colors.white.withValues(alpha: .88),
                         fontWeight: FontWeight.w600,
@@ -627,7 +628,7 @@ class _MemoCard extends StatelessWidget {
                 Icon(Icons.fact_check_rounded, color: text),
                 const SizedBox(width: 8),
                 Text(
-                  'Mémo',
+                  ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_materiel_page.dart", "f00041", 'Mémo'),
                   style: GoogleFonts.fustat(
                     color: text,
                     fontWeight: FontWeight.w900,

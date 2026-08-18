@@ -499,10 +499,17 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
               SafeArea(
                 child: LayoutBuilder(
                   builder: (context, c) {
+                    final keyboardOpen =
+                        MediaQuery.viewInsetsOf(context).bottom > 0;
                     return Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(14, 10, 14, 6),
+                          padding: EdgeInsets.fromLTRB(
+                            14,
+                            keyboardOpen ? 4 : 10,
+                            14,
+                            keyboardOpen ? 2 : 6,
+                          ),
                           child: Row(
                             children: [
                               _TopBackPill(enabled: _index > 0, onTap: _goPrev),
@@ -521,7 +528,12 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                         // zone pages
                         Expanded(
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(18, 10, 18, 10),
+                            padding: EdgeInsets.fromLTRB(
+                              18,
+                              keyboardOpen ? 2 : 10,
+                              18,
+                              keyboardOpen ? 4 : 10,
+                            ),
                             child: PageView(
                               controller: _pc,
                               physics: const NeverScrollableScrollPhysics(),
@@ -583,7 +595,12 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
 
                         // bottom sticky area
                         Padding(
-                          padding: const EdgeInsets.fromLTRB(18, 0, 18, 14),
+                          padding: EdgeInsets.fromLTRB(
+                            18,
+                            0,
+                            18,
+                            keyboardOpen ? 6 : 14,
+                          ),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
@@ -621,33 +638,35 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                                   ],
                                 ),
                               ],
-                              const SizedBox(height: 10),
-
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  Text(
-                                    "Déjà un compte ? ",
-                                    style: GoogleFonts.montserrat(
-                                      color: _whiteA(.85),
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                  TextButton(
-                                    onPressed: () {
-                                      HapticFeedback.selectionClick();
-                                      Navigator.of(context).pushNamed('/login');
-                                    },
-                                    child: Text(
-                                      "Se connecter",
+                              if (!keyboardOpen) const SizedBox(height: 10),
+                              if (!keyboardOpen)
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "Déjà un compte ? ",
                                       style: GoogleFonts.montserrat(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w900,
+                                        color: _whiteA(.85),
+                                        fontWeight: FontWeight.w600,
                                       ),
                                     ),
-                                  ),
-                                ],
-                              ),
+                                    TextButton(
+                                      onPressed: () {
+                                        HapticFeedback.selectionClick();
+                                        Navigator.of(
+                                          context,
+                                        ).pushNamed('/login');
+                                      },
+                                      child: Text(
+                                        "Se connecter",
+                                        style: GoogleFonts.montserrat(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.w900,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                             ],
                           ),
                         ),
@@ -758,7 +777,10 @@ class _GlassCardPremium extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: Colors.white.withValues(alpha: 0.075),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.10), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.10),
+          width: 1,
+        ),
         boxShadow: [
           BoxShadow(
             blurRadius: 28,
@@ -843,14 +865,16 @@ class _WelcomeStep extends StatelessWidget {
                     color: Colors.white.withValues(alpha: 0.90),
                   ),
                   const SizedBox(width: 10),
-                  Text(
-                    "Chaque étape est vérifiée automatiquement",
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.montserrat(
-                      color: Colors.white.withValues(alpha: 0.88),
-                      fontWeight: FontWeight.w800,
-                      fontSize: 13.2,
-                      height: 1.2,
+                  Flexible(
+                    child: Text(
+                      "Chaque étape est vérifiée automatiquement",
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.montserrat(
+                        color: Colors.white.withValues(alpha: 0.88),
+                        fontWeight: FontWeight.w800,
+                        fontSize: 13.2,
+                        height: 1.2,
+                      ),
                     ),
                   ),
                 ],
@@ -1032,74 +1056,78 @@ class _EmailStepState extends State<_EmailStep> {
         _emailFormatOk &&
         widget.emailAvailable == true;
 
-    return Center(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(10, 18, 10, 0),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              "Ton e-mail",
-              textAlign: TextAlign.center,
-              style: widget.h1.copyWith(fontSize: 24),
-            ),
-            const SizedBox(height: 10),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final compact = constraints.maxHeight < 470;
+        return SingleChildScrollView(
+          keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
+          padding: EdgeInsets.fromLTRB(10, compact ? 2 : 18, 10, 0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                "Ton e-mail",
+                textAlign: TextAlign.center,
+                style: widget.h1.copyWith(fontSize: compact ? 22 : 24),
+              ),
+              SizedBox(height: compact ? 5 : 10),
 
-            Text(
-              "On vérifie automatiquement qu’il est valide et disponible.",
-              textAlign: TextAlign.center,
-              style: widget.p,
-            ),
-            const SizedBox(height: 18),
+              Text(
+                "On vérifie automatiquement qu’il est valide et disponible.",
+                textAlign: TextAlign.center,
+                style: widget.p,
+              ),
+              SizedBox(height: compact ? 9 : 18),
 
-            _GlowField(
-              label: "Email",
-              hint: "email@exemple.com",
-              isDark: widget.isDark,
-              controller: widget.emailCtrl,
-              focusNode: widget.fnEmail,
-              validator: widget.validateEmail,
-              keyboardType: TextInputType.emailAddress,
-              textInputAction: TextInputAction.next,
-              onSubmitted: (_) => widget.fnEmail2.requestFocus(),
-            ),
-            const SizedBox(height: 12),
+              _GlowField(
+                label: "Email",
+                hint: "email@exemple.com",
+                isDark: widget.isDark,
+                controller: widget.emailCtrl,
+                focusNode: widget.fnEmail,
+                validator: widget.validateEmail,
+                keyboardType: TextInputType.emailAddress,
+                textInputAction: TextInputAction.next,
+                onSubmitted: (_) => widget.fnEmail2.requestFocus(),
+              ),
+              SizedBox(height: compact ? 7 : 12),
 
-            _GlowField(
-              label: "Confirme l’email",
-              hint: "Retape le même email",
-              isDark: widget.isDark,
-              controller: widget.email2Ctrl,
-              focusNode: widget.fnEmail2,
-              validator: (v) {
-                if ((v ?? '').trim().isEmpty) {
-                  return "Confirme ton email.";
-                }
-                if (!_emailsMatch) {
-                  return "Les emails ne correspondent pas.";
-                }
-                return null;
-              },
-              keyboardType: TextInputType.emailAddress,
-              textInputAction: TextInputAction.done,
-            ),
-            const SizedBox(height: 14),
+              _GlowField(
+                label: "Confirme l’email",
+                hint: "Retape le même email",
+                isDark: widget.isDark,
+                controller: widget.email2Ctrl,
+                focusNode: widget.fnEmail2,
+                validator: (v) {
+                  if ((v ?? '').trim().isEmpty) {
+                    return "Confirme ton email.";
+                  }
+                  if (!_emailsMatch) {
+                    return "Les emails ne correspondent pas.";
+                  }
+                  return null;
+                },
+                keyboardType: TextInputType.emailAddress,
+                textInputAction: TextInputAction.done,
+              ),
+              SizedBox(height: compact ? 6 : 14),
 
-            // 🔐 FEEDBACK EMAIL (SIMPLE + BLOQUANT)
-            AnimatedSwitcher(
-              duration: const Duration(milliseconds: 180),
-              child: widget.checkingEmail
-                  ? const _EmailLoadingPill()
-                  : _emailsFilled
-                  ? _EmailAvailabilityPill(
-                      ok: ok,
-                      emailAvailable: widget.emailAvailable,
-                    )
-                  : const SizedBox.shrink(),
-            ),
-          ],
-        ),
-      ),
+              // 🔐 FEEDBACK EMAIL (SIMPLE + BLOQUANT)
+              AnimatedSwitcher(
+                duration: const Duration(milliseconds: 180),
+                child: widget.checkingEmail
+                    ? const _EmailLoadingPill()
+                    : _emailsFilled
+                    ? _EmailAvailabilityPill(
+                        ok: ok,
+                        emailAvailable: widget.emailAvailable,
+                      )
+                    : const SizedBox.shrink(),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }
@@ -1110,7 +1138,7 @@ class _EmailLoadingPill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 56,
+      height: 44,
       child: Center(child: CircularProgressIndicator(strokeWidth: 2)),
     );
   }
@@ -1144,7 +1172,7 @@ class _EmailAvailabilityPill extends StatelessWidget {
         : "Vérification de l’email…";
 
     return SizedBox(
-      height: 56,
+      height: 44,
       width: double.infinity,
       child: DecoratedBox(
         decoration: BoxDecoration(
@@ -1168,11 +1196,7 @@ class _EmailAvailabilityPill extends StatelessWidget {
 }
 
 class _EmailStatusPill extends StatefulWidget {
-  const _EmailStatusPill({
-    required this.ok,
-    required this.a,
-    required this.b,
-  });
+  const _EmailStatusPill({required this.ok, required this.a, required this.b});
 
   final bool ok;
   final String a;
@@ -2198,7 +2222,9 @@ class _GlowFieldState extends State<_GlowField> {
         : const Color(0xFF355BE0);
 
     // Glow super léger
-    final glowColor = Colors.white.withValues(alpha: widget.isDark ? 0.12 : 0.16);
+    final glowColor = Colors.white.withValues(
+      alpha: widget.isDark ? 0.12 : 0.16,
+    );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

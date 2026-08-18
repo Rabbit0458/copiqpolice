@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class SanctionsRecompensesPage extends StatelessWidget {
   const SanctionsRecompensesPage({super.key});
@@ -50,10 +51,18 @@ class SanctionsRecompensesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Déontologie",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+            "f00002",
+            "Déontologie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class SanctionsRecompensesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Sanctions et récompenses",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00003",
+              "Sanctions et récompenses",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -80,16 +93,36 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // Contexte
           _ConditionCard(
-            title: "Idée essentielle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00004",
+              "Idée essentielle",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les policiers sont assujettis à un régime disciplinaire : toute faute commise dans l’exercice "
-                "ou à l’occasion de l’exercice des fonctions peut entraîner une sanction.\n\n"
-                "À l’inverse, un comportement exceptionnel (abnégation, courage, sens du devoir, esprit d’initiative) "
-                "peut ouvrir droit à une récompense.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00005",
+                      "Les policiers sont assujettis à un régime disciplinaire : toute faute commise dans l’exercice ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00006",
+                      "ou à l’occasion de l’exercice des fonctions peut entraîner une sanction.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00007",
+                      "À l’inverse, un comportement exceptionnel (abnégation, courage, sens du devoir, esprit d’initiative) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00008",
+                      "peut ouvrir droit à une récompense.",
+                    ),
               ),
             ],
           ),
@@ -98,32 +131,49 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // ✅ Références légales en haut
           _ConditionCard(
-            title: "Références (à connaître)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00009",
+              "Références (à connaître)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Contrôle externe (qualité OPJ/APJ) : "),
                 TextSpan(
-                  text: "articles 224 à 230 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                    "f00010",
+                    "Contrôle externe (qualité OPJ/APJ) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                    "f00011",
+                    "articles 224 à 230 du Code de procédure pénale (CPP)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Contrôle par le Défenseur des droits : "),
                 TextSpan(
-                  text:
-                      "article R. 434-24 du Code de la sécurité intérieure (CSI)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                    "f00012",
+                    "Contrôle par le Défenseur des droits : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                    "f00013",
+                    "article R. 434-24 du Code de la sécurité intérieure (CSI)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -131,8 +181,11 @@ class SanctionsRecompensesPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ces contrôles sont la contrepartie des pouvoirs exercés au quotidien (interpellation, usage de la force, etc.).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00014",
+                      "Ces contrôles sont la contrepartie des pouvoirs exercés au quotidien (interpellation, usage de la force, etc.).",
+                    ),
                   ),
                 ],
               ),
@@ -143,25 +196,57 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // I — Contrôle
           _ConditionCard(
-            title: "I — Le contrôle de la Police nationale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00015",
+              "I — Le contrôle de la Police nationale",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Contrôle interne"),
-              _IntroBullet(text: "Par la chaîne hiérarchique."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00016",
+                  "1) Contrôle interne",
+                ),
+              ),
               _IntroBullet(
-                text: "Par les services d’inspection de la Police nationale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00017",
+                  "Par la chaîne hiérarchique.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00018",
+                  "Par les services d’inspection de la Police nationale.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Contrôle externe"),
-              _IntroBullet(
-                text:
-                    "Par les autorités judiciaires (ex. chambre de l’instruction pour l’exercice de la qualité OPJ/APJ).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00019",
+                  "2) Contrôle externe",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Par des autorités et organismes nationaux ou internationaux (ex. Défenseur des droits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00020",
+                  "Par les autorités judiciaires (ex. chambre de l’instruction pour l’exercice de la qualité OPJ/APJ).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00021",
+                  "Par des autorités et organismes nationaux ou internationaux (ex. Défenseur des droits).",
+                ),
               ),
             ],
           ),
@@ -170,13 +255,21 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // II — Policiers actifs : sanctions
           _ConditionCard(
-            title: "II — Policiers actifs : sanctions disciplinaires",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00022",
+              "II — Policiers actifs : sanctions disciplinaires",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les sanctions sont réparties en 4 groupes, par ordre croissant de gravité.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00023",
+                  "Les sanctions sont réparties en 4 groupes, par ordre croissant de gravité.",
+                ),
               ),
             ],
           ),
@@ -185,22 +278,35 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // Groupe 1
           _ConditionCard(
-            title: "A) Sanctions — 1er groupe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00024",
+              "A) Sanctions — 1er groupe",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Avertissement : non inscrit au dossier, mais porté dans un registre spécial.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00025",
+                  "Avertissement : non inscrit au dossier, mais porté dans un registre spécial.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Blâme : inscrit au dossier, effacé automatiquement au bout de 3 ans si aucune autre sanction n’intervient.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00026",
+                  "Blâme : inscrit au dossier, effacé automatiquement au bout de 3 ans si aucune autre sanction n’intervient.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exclusion temporaire de fonctions (max 3 jours) : inscrite au dossier, effacée au bout de 3 ans si aucune autre sanction n’est prononcée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00027",
+                  "Exclusion temporaire de fonctions (max 3 jours) : inscrite au dossier, effacée au bout de 3 ans si aucune autre sanction n’est prononcée.",
+                ),
               ),
             ],
           ),
@@ -209,33 +315,59 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // Groupe 2
           _ConditionCard(
-            title: "B) Sanctions — 2ème groupe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00028",
+              "B) Sanctions — 2ème groupe",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Radiation du tableau d’avancement (peut aussi être une sanction complémentaire des 2ème et 3ème groupes).",
-              ),
-              _BulletPoint(text: "Abaissement d’échelon."),
-              _BulletPoint(
-                text:
-                    "Exclusion temporaire de fonctions (4 à 15 jours) : privative de rémunération, possible avec sursis total ou partiel.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00029",
+                  "Radiation du tableau d’avancement (peut aussi être une sanction complémentaire des 2ème et 3ème groupes).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Déplacement d’office : à distinguer d’une mutation dans l’intérêt du service.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00030",
+                  "Abaissement d’échelon.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00031",
+                  "Exclusion temporaire de fonctions (4 à 15 jours) : privative de rémunération, possible avec sursis total ou partiel.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00032",
+                  "Déplacement d’office : à distinguer d’une mutation dans l’intérêt du service.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Repère : la mutation dans l’intérêt du service est prévue par ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00033",
+                      "Repère : la mutation dans l’intérêt du service est prévue par ",
+                    ),
                   ),
                   TextSpan(
-                    text: "l’article 25 du décret n° 95-654 du 9 mai 1995",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00034",
+                      "l’article 25 du décret n° 95-654 du 9 mai 1995",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -251,15 +383,28 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // Groupe 3
           _ConditionCard(
-            title: "C) Sanctions — 3ème groupe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00035",
+              "C) Sanctions — 3ème groupe",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Rétrogradation."),
+            children: [
               _BulletPoint(
-                text:
-                    "Exclusion temporaire de fonctions (16 jours à 2 ans) : possible avec sursis, sans pouvoir ramener la durée à moins d’un mois.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00036",
+                  "Rétrogradation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00037",
+                  "Exclusion temporaire de fonctions (16 jours à 2 ans) : possible avec sursis, sans pouvoir ramener la durée à moins d’un mois.",
+                ),
               ),
             ],
           ),
@@ -268,13 +413,29 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // Groupe 4
           _ConditionCard(
-            title: "D) Sanctions — 4ème groupe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00038",
+              "D) Sanctions — 4ème groupe",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Mise à la retraite d’office."),
-              _BulletPoint(text: "Révocation."),
+            children: [
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00039",
+                  "Mise à la retraite d’office.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00040",
+                  "Révocation.",
+                ),
+              ),
             ],
           ),
 
@@ -282,45 +443,89 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // Règles + effacement + suspension
           _ConditionCard(
-            title: "Points de procédure (à ne pas confondre)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00041",
+              "Points de procédure (à ne pas confondre)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Conseil de discipline"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00042",
+                  "Conseil de discipline",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Les sanctions du 1er groupe peuvent être prononcées sans consultation du conseil de discipline.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00043",
+                  "Les sanctions du 1er groupe peuvent être prononcées sans consultation du conseil de discipline.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Cumul avec le pénal"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00044",
+                  "Cumul avec le pénal",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Les sanctions disciplinaires peuvent s’appliquer sans préjudice des peines prévues par la loi pénale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00045",
+                  "Les sanctions disciplinaires peuvent s’appliquer sans préjudice des peines prévues par la loi pénale.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Effacement / suppression des mentions"),
-              _BulletPoint(
-                text:
-                    "Blâme et exclusion (max 3 jours) : effacement automatique au bout de 3 ans si aucune autre sanction n’intervient.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00046",
+                  "Effacement / suppression des mentions",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sanctions des 2ème ou 3ème groupes : possibilité de demander la suppression de toute mention après 10 ans de services effectifs à compter de la sanction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00047",
+                  "Blâme et exclusion (max 3 jours) : effacement automatique au bout de 3 ans si aucune autre sanction n’intervient.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00048",
+                  "Sanctions des 2ème ou 3ème groupes : possibilité de demander la suppression de toute mention après 10 ans de services effectifs à compter de la sanction.",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle("Suspension"),
               _Paragraph(
-                "La suspension n’est pas une sanction : c’est une mesure administrative provisoire, possible lorsqu’une procédure disciplinaire est engagée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00049",
+                  "La suspension n’est pas une sanction : c’est une mesure administrative provisoire, possible lorsqu’une procédure disciplinaire est engagée.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Le fonctionnaire suspendu conserve pendant 4 mois son traitement ainsi que les indemnités et prestations sociales associées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00050",
+                  "Le fonctionnaire suspendu conserve pendant 4 mois son traitement ainsi que les indemnités et prestations sociales associées.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "À l’issue des 4 mois, sans décision disciplinaire : rétablissement dans les fonctions, sauf poursuites pénales.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00051",
+                  "À l’issue des 4 mois, sans décision disciplinaire : rétablissement dans les fonctions, sauf poursuites pénales.",
+                ),
               ),
             ],
           ),
@@ -329,25 +534,62 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // Récompenses (actifs)
           _ConditionCard(
-            title: "B) Récompenses — policiers actifs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00052",
+              "B) Récompenses — policiers actifs",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute action mettant en évidence l’abnégation, le sens du devoir, le courage ou l’esprit d’initiative "
-                "doit faire l’objet d’un rapport circonstancié du supérieur hiérarchique (avec proposition éventuelle de récompense).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00053",
+                      "Toute action mettant en évidence l’abnégation, le sens du devoir, le courage ou l’esprit d’initiative ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                      "f00054",
+                      "doit faire l’objet d’un rapport circonstancié du supérieur hiérarchique (avec proposition éventuelle de récompense).",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Lettre de félicitations versée au dossier individuel.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00055",
+                  "Lettre de félicitations versée au dossier individuel.",
+                ),
               ),
-              _BulletPoint(text: "Gratification."),
-              _BulletPoint(text: "Prime pour résultats exceptionnels."),
-              _BulletPoint(text: "Proposition de décoration."),
               _BulletPoint(
-                text:
-                    "Proposition d’avancement au titre exceptionnel (selon les conditions statutaires).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00056",
+                  "Gratification.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00057",
+                  "Prime pour résultats exceptionnels.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00058",
+                  "Proposition de décoration.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00059",
+                  "Proposition d’avancement au titre exceptionnel (selon les conditions statutaires).",
+                ),
               ),
             ],
           ),
@@ -356,34 +598,102 @@ class SanctionsRecompensesPage extends StatelessWidget {
 
           // III — Policiers adjoints
           _ConditionCard(
-            title: "III — Policiers adjoints",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+              "f00060",
+              "III — Policiers adjoints",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les sanctions disciplinaires applicables aux policiers adjoints sont prises par le préfet du département d’affectation.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00061",
+                  "Les sanctions disciplinaires applicables aux policiers adjoints sont prises par le préfet du département d’affectation.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("A) Sanctions (ordre croissant)"),
-              _BulletPoint(text: "Avertissement."),
-              _BulletPoint(text: "Blâme."),
-              _BulletPoint(
-                text: "Exclusion temporaire de fonctions (max 3 jours).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00062",
+                  "A) Sanctions (ordre croissant)",
+                ),
               ),
               _BulletPoint(
-                text: "Exclusion temporaire de fonctions (4 jours à 6 mois).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00063",
+                  "Avertissement.",
+                ),
               ),
-              _BulletPoint(text: "Licenciement sans préavis ni indemnité."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00064",
+                  "Blâme.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00065",
+                  "Exclusion temporaire de fonctions (max 3 jours).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00066",
+                  "Exclusion temporaire de fonctions (4 jours à 6 mois).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00067",
+                  "Licenciement sans préavis ni indemnité.",
+                ),
+              ),
               SizedBox(height: 12),
-              _SubTitle("Mesure conservatoire"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00068",
+                  "Mesure conservatoire",
+                ),
+              ),
               _Paragraph(
-                "À titre conservatoire et dans l’intérêt du service, un policier adjoint peut être suspendu de ses fonctions par arrêté du préfet.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00069",
+                  "À titre conservatoire et dans l’intérêt du service, un policier adjoint peut être suspendu de ses fonctions par arrêté du préfet.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Récompenses"),
-              _BulletPoint(text: "Lettre de félicitations."),
-              _BulletPoint(text: "Prime pour résultats exceptionnels."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00070",
+                  "B) Récompenses",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00071",
+                  "Lettre de félicitations.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/sanctions_recompenses_page.dart",
+                  "f00072",
+                  "Prime pour résultats exceptionnels.",
+                ),
+              ),
             ],
           ),
         ],
@@ -638,9 +948,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

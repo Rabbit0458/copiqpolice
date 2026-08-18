@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaConntroleIdentiteReglementationGpxSchool extends StatelessWidget {
   const PaConntroleIdentiteReglementationGpxSchool({super.key});
@@ -19,11 +20,11 @@ class PaConntroleIdentiteReglementationGpxSchool extends StatelessWidget {
         : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
-? const Color(0xFF424242)
-: const Color(0xFFF5F5F5);
+        ? const Color(0xFF424242)
+        : const Color(0xFFF5F5F5);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
     final Color articleColor = isDark
         ? const Color(0xFFFF8A80)
@@ -38,10 +39,18 @@ class PaConntroleIdentiteReglementationGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Contrôle / réglementation',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+            "f00002",
+            'Contrôle / réglementation',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class PaConntroleIdentiteReglementationGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO ============================
           Text(
-            'Distinction contrôle d’identité / contrôle de réglementation',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+              "f00003",
+              'Distinction contrôle d’identité / contrôle de réglementation',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,9 +77,21 @@ class PaConntroleIdentiteReglementationGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Comprendre la différence entre le contrôle d’identité de droit commun et les contrôles '
-            'portant sur la présentation de titres ou documents liés à certaines activités ou situations '
-            '(automobilistes, chasseurs, commerçants ambulants, etc.).',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                  "f00004",
+                  'Comprendre la différence entre le contrôle d’identité de droit commun et les contrôles ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                  "f00005",
+                  'portant sur la présentation de titres ou documents liés à certaines activités ou situations ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                  "f00006",
+                  '(automobilistes, chasseurs, commerçants ambulants, etc.).',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -77,87 +102,231 @@ class PaConntroleIdentiteReglementationGpxSchool extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title:
-                'La distinction contrôle d’identité – contrôle de réglementation',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+              "f00007",
+              'La distinction contrôle d’identité – contrôle de réglementation',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               // ===================== 1.3.1 – INTÉRÊT =====================
-              const _SubTitle('1.3.1 – Intérêt de la distinction'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                  "f00008",
+                  '1.3.1 – Intérêt de la distinction',
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Le contrôle d’identité de droit commun est strictement encadré par le ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                    "f00009",
+                    'Le contrôle d’identité de droit commun est strictement encadré par le ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 78-2 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                    "f00010",
+                    'article 78-2 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', qui fixe les hypothèses, les autorités compétentes et les modalités de sa mise en œuvre. '
-                      'En dehors de ces cas limitativement définis, d’autres textes imposent à certaines catégories '
-                      'de personnes de présenter, à toute réquisition de la force publique, un titre ou un document '
-                      'prouvant la régularité de leur situation ou de leur activité.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                        "f00011",
+                        ', qui fixe les hypothèses, les autorités compétentes et les modalités de sa mise en œuvre. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                        "f00012",
+                        'En dehors de ces cas limitativement définis, d’autres textes imposent à certaines catégories ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                        "f00013",
+                        'de personnes de présenter, à toute réquisition de la force publique, un titre ou un document ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                        "f00014",
+                        'prouvant la régularité de leur situation ou de leur activité.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Il s’agit notamment des règles applicables à certaines professions ou activités soumises à un '
-                'statut particulier : commerçants ambulants, forains, brocanteurs, chasseurs, pêcheurs, '
-                'automobilistes, etc. Dans ces situations, la personne doit pouvoir présenter le document requis '
-                '(permis, autorisation, titre, attestation…), mais il ne s’agit pas, juridiquement, d’un contrôle '
-                'd’identité au sens de l’article 78-2 du code de procédure pénale.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00015",
+                      'Il s’agit notamment des règles applicables à certaines professions ou activités soumises à un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00016",
+                      'statut particulier : commerçants ambulants, forains, brocanteurs, chasseurs, pêcheurs, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00017",
+                      'automobilistes, etc. Dans ces situations, la personne doit pouvoir présenter le document requis ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00018",
+                      '(permis, autorisation, titre, attestation…), mais il ne s’agit pas, juridiquement, d’un contrôle ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00019",
+                      'd’identité au sens de l’article 78-2 du code de procédure pénale.',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // ===================== CONTROLE D’IDENTITÉ ==================
-              const _SubTitle('Le contrôle d’identité de droit commun'),
-              const _Paragraph(
-                'Le contrôle d’identité est l’opération par laquelle une personne est invitée à justifier, sur place, '
-                'de son identité. Il répond aux conditions et aux finalités prévues par le code de procédure pénale '
-                '(police judiciaire, police administrative, contrôles en zone frontière, etc.).',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                  "f00020",
+                  'Le contrôle d’identité de droit commun',
+                ),
               ),
-              const _Paragraph(
-                'Dans ce cadre, l’agent qui contrôle doit pouvoir justifier qu’il se trouve dans l’un des cas prévus '
-                'par les textes (raison plausible de soupçonner une infraction, réquisitions du procureur de la '
-                'République, prévention d’atteintes à l’ordre public, recherches d’auteurs d’infractions, etc.).',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00021",
+                      'Le contrôle d’identité est l’opération par laquelle une personne est invitée à justifier, sur place, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00022",
+                      'de son identité. Il répond aux conditions et aux finalités prévues par le code de procédure pénale ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00023",
+                      '(police judiciaire, police administrative, contrôles en zone frontière, etc.).',
+                    ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00024",
+                      'Dans ce cadre, l’agent qui contrôle doit pouvoir justifier qu’il se trouve dans l’un des cas prévus ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00025",
+                      'par les textes (raison plausible de soupçonner une infraction, réquisitions du procureur de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00026",
+                      'République, prévention d’atteintes à l’ordre public, recherches d’auteurs d’infractions, etc.).',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // ===================== CONTROLE DE RÉGLEMENTATION ===========
-              const _SubTitle('Le contrôle de réglementation'),
-              const _Paragraph(
-                'À l’inverse, certains textes imposent la présentation d’un titre ou d’un document en lien direct '
-                'avec une activité ou une situation particulière : permis de conduire, permis de chasser, titre '
-                'professionnel, autorisation d’exercice, etc. La personne contrôlée doit alors justifier non pas de '
-                'son identité, mais de la régularité de sa situation au regard d’une réglementation spécifique.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                  "f00027",
+                  'Le contrôle de réglementation',
+                ),
               ),
-              const _Paragraph(
-                'Ce contrôle de réglementation peut intervenir indépendamment de tout contrôle d’identité dès lors '
-                'que l’appartenance de la personne à la catégorie concernée est matériellement évidente : '
-                'automobiliste au volant de son véhicule, chasseur porteur de son fusil, marchand ambulant dans '
-                'sa voiture-boutique, pêcheur en action de pêche, etc.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00028",
+                      'À l’inverse, certains textes imposent la présentation d’un titre ou d’un document en lien direct ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00029",
+                      'avec une activité ou une situation particulière : permis de conduire, permis de chasser, titre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00030",
+                      'professionnel, autorisation d’exercice, etc. La personne contrôlée doit alors justifier non pas de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00031",
+                      'son identité, mais de la régularité de sa situation au regard d’une réglementation spécifique.',
+                    ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00032",
+                      'Ce contrôle de réglementation peut intervenir indépendamment de tout contrôle d’identité dès lors ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00033",
+                      'que l’appartenance de la personne à la catégorie concernée est matériellement évidente : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00034",
+                      'automobiliste au volant de son véhicule, chasseur porteur de son fusil, marchand ambulant dans ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00035",
+                      'sa voiture-boutique, pêcheur en action de pêche, etc.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'On parle donc de vérification spécifique liée à des statuts particuliers (professions, activités ou '
-                'personnes soumises à des obligations particulières) et non d’un contrôle d’identité au sens du '
-                'code de procédure pénale.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00036",
+                      'On parle donc de vérification spécifique liée à des statuts particuliers (professions, activités ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00037",
+                      'personnes soumises à des obligations particulières) et non d’un contrôle d’identité au sens du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                      "f00038",
+                      'code de procédure pénale.',
+                    ),
               ),
               const SizedBox(height: 14),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Pour le policier sur le terrain, bien distinguer contrôle d’identité et contrôle de '
-                        'réglementation permet de choisir le bon fondement juridique, d’éviter les nullités de procédure '
-                        'et de respecter l’équilibre entre les libertés individuelles et les nécessités de l’ordre public.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                          "f00039",
+                          'Pour le policier sur le terrain, bien distinguer contrôle d’identité et contrôle de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                          "f00040",
+                          'réglementation permet de choisir le bon fondement juridique, d’éviter les nullités de procédure ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart",
+                          "f00041",
+                          'et de respecter l’équilibre entre les libertés individuelles et les nécessités de l’ordre public.',
+                        ),
                   ),
                 ],
               ),
@@ -416,9 +585,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
   const PaPpGavDroitsPersonneGardeePage({super.key});
@@ -35,16 +36,16 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
     const cardRedAccent = Color(0xFFC62828);
 
     Widget sectionTitle(String text) => Padding(
-          padding: const EdgeInsets.only(top: 22, bottom: 8),
-          child: Text(
-            text,
-            style: GoogleFonts.fustat(
-              fontWeight: FontWeight.w900,
-              fontSize: 15,
-              color: cardBlueAccent,
-            ),
-          ),
-        );
+      padding: const EdgeInsets.only(top: 22, bottom: 8),
+      child: Text(
+        text,
+        style: GoogleFonts.fustat(
+          fontWeight: FontWeight.w900,
+          fontSize: 15,
+          color: cardBlueAccent,
+        ),
+      ),
+    );
 
     Widget rightCard({
       required Color bg,
@@ -52,48 +53,47 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
       required IconData icon,
       required String title,
       required String body,
-  }) =>
-        Container(
-          margin: const EdgeInsets.only(bottom: 12),
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: accent.withValues(alpha: .3)),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(icon, color: accent, size: 22),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      title,
-                      style: GoogleFonts.fustat(
-                        fontWeight: FontWeight.w800,
-                        fontSize: 13.5,
-                        color: accent,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      body,
-                      style: GoogleFonts.fustat(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 13,
-                        height: 1.4,
-                        color: textSoft,
-                      ),
-                    ),
-                  ],
+    }) => Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: accent.withValues(alpha: .3)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, color: accent, size: 22),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: GoogleFonts.fustat(
+                    fontWeight: FontWeight.w800,
+                    fontSize: 13.5,
+                    color: accent,
+                  ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 4),
+                Text(
+                  body,
+                  style: GoogleFonts.fustat(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 13,
+                    height: 1.4,
+                    color: textSoft,
+                  ),
+                ),
+              ],
+            ),
           ),
-        );
+        ],
+      ),
+    );
 
     return Scaffold(
       backgroundColor: bg,
@@ -104,10 +104,18 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Droits de la personne gardée à vue',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+            "f00002",
+            'Droits de la personne gardée à vue',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16,
@@ -120,7 +128,11 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 32),
         children: [
           Text(
-            'Droits de la personne gardée à vue',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00003",
+              'Droits de la personne gardée à vue',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -130,7 +142,11 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Art. 63-1 à 63-6 CPP — notification immédiate',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00004",
+              'Art. 63-1 à 63-6 CPP — notification immédiate',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 13,
@@ -140,107 +156,208 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
           const SizedBox(height: 20),
 
           // ----------------------------------------------------------------
-          sectionTitle('1. Droits notifiés dès le placement en GAV'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00005",
+              '1. Droits notifiés dès le placement en GAV',
+            ),
+          ),
           // ----------------------------------------------------------------
           rightCard(
             bg: cardBlue,
             accent: cardBlueAccent,
             icon: Icons.info_outline,
-            title: 'Notification de la nature de l\'infraction',
-            body:
-                'La personne gardée à vue doit être informée, dans une langue qu\'elle comprend, de la nature et de la date présumée de l\'infraction sur laquelle porte l\'enquête.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00006",
+              'Notification de la nature de l\'infraction',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00007",
+              'La personne gardée à vue doit être informée, dans une langue qu\'elle comprend, de la nature et de la date présumée de l\'infraction sur laquelle porte l\'enquête.',
+            ),
           ),
           rightCard(
             bg: cardBlue,
             accent: cardBlueAccent,
             icon: Icons.mic_off_outlined,
-            title: 'Droit au silence',
-            body:
-                'La personne a le droit de faire des déclarations, de répondre aux questions posées ou de se taire (art. 63-1 CPP).',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00008",
+              'Droit au silence',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00009",
+              'La personne a le droit de faire des déclarations, de répondre aux questions posées ou de se taire (art. 63-1 CPP).',
+            ),
           ),
           rightCard(
             bg: cardBlue,
             accent: cardBlueAccent,
             icon: Icons.schedule_outlined,
-            title: 'Durée maximale',
-            body:
-                'La GAV ne peut excéder 24 heures. Elle peut être prolongée une fois, pour la même durée, sur autorisation du Procureur de la République.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00010",
+              'Durée maximale',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00011",
+              'La GAV ne peut excéder 24 heures. Elle peut être prolongée une fois, pour la même durée, sur autorisation du Procureur de la République.',
+            ),
           ),
 
           // ----------------------------------------------------------------
-          sectionTitle('2. Droit à un avocat (art. 63-3-1 CPP)'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00012",
+              '2. Droit à un avocat (art. 63-3-1 CPP)',
+            ),
+          ),
           // ----------------------------------------------------------------
           rightCard(
             bg: cardGreen,
             accent: cardGreenAccent,
             icon: Icons.balance_outlined,
-            title: 'Désignation d\'un avocat',
-            body:
-                'La personne peut demander à être assistée par un avocat dès le début de la garde à vue. Si elle n\'en a pas, un avocat commis d\'office peut être désigné.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00013",
+              'Désignation d\'un avocat',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00014",
+              'La personne peut demander à être assistée par un avocat dès le début de la garde à vue. Si elle n\'en a pas, un avocat commis d\'office peut être désigné.',
+            ),
           ),
           rightCard(
             bg: cardGreen,
             accent: cardGreenAccent,
             icon: Icons.access_time_outlined,
-            title: 'Entretien de 30 minutes',
-            body:
-                'L\'avocat peut s\'entretenir confidentiellement avec la personne gardée à vue pendant 30 minutes dès son arrivée.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00015",
+              'Entretien de 30 minutes',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00016",
+              'L\'avocat peut s\'entretenir confidentiellement avec la personne gardée à vue pendant 30 minutes dès son arrivée.',
+            ),
           ),
           rightCard(
             bg: cardGreen,
             accent: cardGreenAccent,
             icon: Icons.assignment_ind_outlined,
-            title: 'Assistance aux auditions',
-            body:
-                'L\'avocat peut assister aux auditions. Il peut prendre des notes et, à l\'issue de chaque audition, poser des questions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00017",
+              'Assistance aux auditions',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00018",
+              'L\'avocat peut assister aux auditions. Il peut prendre des notes et, à l\'issue de chaque audition, poser des questions.',
+            ),
           ),
 
           // ----------------------------------------------------------------
-          sectionTitle('3. Autres droits garantis'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00019",
+              '3. Autres droits garantis',
+            ),
+          ),
           // ----------------------------------------------------------------
           rightCard(
             bg: cardOrange,
             accent: cardOrangeAccent,
             icon: Icons.phone_outlined,
-            title: 'Prévenir un proche (art. 63-2 CPP)',
-            body:
-                'La personne peut faire prévenir un membre de sa famille, son employeur ou son consulat si elle est étrangère. Cette notification peut être différée par le Parquet.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00020",
+              'Prévenir un proche (art. 63-2 CPP)',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00021",
+              'La personne peut faire prévenir un membre de sa famille, son employeur ou son consulat si elle est étrangère. Cette notification peut être différée par le Parquet.',
+            ),
           ),
           rightCard(
             bg: cardOrange,
             accent: cardOrangeAccent,
             icon: Icons.medical_services_outlined,
-            title: 'Examen médical (art. 63-3 CPP)',
-            body:
-                'La personne peut demander à tout moment à être examinée par un médecin. Un médecin doit être désigné par l\'OPJ ou le Procureur.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00022",
+              'Examen médical (art. 63-3 CPP)',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00023",
+              'La personne peut demander à tout moment à être examinée par un médecin. Un médecin doit être désigné par l\'OPJ ou le Procureur.',
+            ),
           ),
           rightCard(
             bg: cardOrange,
             accent: cardOrangeAccent,
             icon: Icons.translate_outlined,
-            title: 'Interprète (art. 63-1 CPP)',
-            body:
-                'Si la personne ne comprend pas le français, un interprète doit être désigné. Toutes les notifications sont effectuées dans une langue comprise.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00024",
+              'Interprète (art. 63-1 CPP)',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00025",
+              'Si la personne ne comprend pas le français, un interprète doit être désigné. Toutes les notifications sont effectuées dans une langue comprise.',
+            ),
           ),
 
           // ----------------------------------------------------------------
-          sectionTitle('4. Ce qui est interdit'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00026",
+              '4. Ce qui est interdit',
+            ),
+          ),
           // ----------------------------------------------------------------
           rightCard(
             bg: cardRed,
             accent: cardRedAccent,
             icon: Icons.block_outlined,
-            title: 'Interdiction de contrainte',
-            body:
-                'Aucune pression physique ou psychologique ne peut être exercée. Les aveux obtenus sous la contrainte sont nuls.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00027",
+              'Interdiction de contrainte',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00028",
+              'Aucune pression physique ou psychologique ne peut être exercée. Les aveux obtenus sous la contrainte sont nuls.',
+            ),
           ),
           rightCard(
             bg: cardRed,
             accent: cardRedAccent,
             icon: Icons.no_food_outlined,
-            title: 'Conditions matérielles',
-            body:
-                'La personne gardée à vue bénéficie de repas et d\'un lieu de repos décent. Le non-respect de ces conditions peut entraîner la nullité de la procédure.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00029",
+              'Conditions matérielles',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+              "f00030",
+              'La personne gardée à vue bénéficie de repas et d\'un lieu de repos décent. Le non-respect de ces conditions peut entraîner la nullité de la procédure.',
+            ),
           ),
 
           const SizedBox(height: 8),
@@ -249,7 +366,9 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
             decoration: BoxDecoration(
               color: isDark ? const Color(0xFF1A1A2E) : const Color(0xFFEDE7F6),
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(color: const Color(0xFF4527A0).withValues(alpha: .3)),
+              border: Border.all(
+                color: const Color(0xFF4527A0).withValues(alpha: .3),
+              ),
             ),
             child: RichText(
               text: TextSpan(
@@ -259,17 +378,24 @@ class PaPpGavDroitsPersonneGardeePage extends StatelessWidget {
                   height: 1.45,
                   color: textSoft,
                 ),
-                children: const [
+                children: [
                   TextSpan(
-                    text: 'À retenir : ',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+                      "f00031",
+                      'À retenir : ',
+                    ),
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
                       color: Color(0xFF4527A0),
                     ),
                   ),
                   TextSpan(
-                    text:
-                        'La notification des droits doit être immédiate, complète et tracée dans le PV de GAV. Toute omission peut entraîner la nullité de la procédure.',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart",
+                      "f00032",
+                      'La notification des droits doit être immédiate, complète et tracée dans le PV de GAV. Toute omission peut entraîner la nullité de la procédure.',
+                    ),
                   ),
                 ],
               ),

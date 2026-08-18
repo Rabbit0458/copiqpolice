@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ClassificationPeinesContenuPage extends StatelessWidget {
   const ClassificationPeinesContenuPage({super.key});
@@ -25,10 +26,18 @@ class ClassificationPeinesContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "La sanction",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+            "f00002",
+            "La sanction",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -41,7 +50,11 @@ class ClassificationPeinesContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "La classification des peines et des mesures de sûreté",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+              "f00003",
+              "La classification des peines et des mesures de sûreté",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +64,16 @@ class ClassificationPeinesContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux deux documents essentiels : la classification légale des peines "
-            "et la classification des mesures de sûreté.",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux deux documents essentiels : la classification légale des peines ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+                  "f00005",
+                  "et la classification des mesures de sûreté.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +86,16 @@ class ClassificationPeinesContenuPage extends StatelessWidget {
           // ================= PDF 1 =================
           _ModuleCard(
             tag: 'sanction_classification_mesures_surete',
-            title: "La classification des mesures de sûreté",
-            subtitle:
-                "Définition, logique et grandes catégories des mesures de sûreté.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+              "f00006",
+              "La classification des mesures de sûreté",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+              "f00007",
+              "Définition, logique et grandes catégories des mesures de sûreté.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,9 +109,16 @@ class ClassificationPeinesContenuPage extends StatelessWidget {
           // ================= PDF 2 =================
           _ModuleCard(
             tag: 'sanction_classification_legale_peines',
-            title: "La classification légale des peines",
-            subtitle:
-                "Peines principales, complémentaires et règles de classification.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+              "f00008",
+              "La classification légale des peines",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+              "f00009",
+              "Peines principales, complémentaires et règles de classification.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -97,9 +132,16 @@ class ClassificationPeinesContenuPage extends StatelessWidget {
           // ================= MODULE 7 — QUIZ =================
           _ModuleCard(
             tag: 'sanction_classification_peine',
-            title: 'Quiz — Sanction',
-            subtitle:
-                'Testez votre maîtrise des principes fondamentaux et des notions clés des sanctions des classifications des peines.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+              "f00010",
+              'Quiz — Sanction',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_contenu_page.dart",
+              "f00011",
+              'Testez votre maîtrise des principes fondamentaux et des notions clés des sanctions des classifications des peines.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

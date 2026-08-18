@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaVictimeChargeeMissionPage extends StatelessWidget {
   const PaVictimeChargeeMissionPage({super.key});
@@ -44,7 +45,11 @@ class PaVictimeChargeeMissionPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Victime chargée d'une mission de service public",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+            "f00001",
+            "Victime chargée d'une mission de service public",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16.8,
@@ -70,21 +75,24 @@ class PaVictimeChargeeMissionPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Sur un enseignant ou tout membre des personnels travaillant dans les établissements d'enseignement scolaire, sur un agent d'un exploitant de réseau de transport public de voyageurs ou toute autre personne chargée d'une mission de service public ainsi que sur un professionnel de santé, dans l'exercice de ses fonctions, lorsque la qualité de la victime est apparente ou connue de l'auteur.",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00002",
+                        "Sur un enseignant ou tout membre des personnels travaillant dans les établissements d'enseignement scolaire, sur un agent d'un exploitant de réseau de transport public de voyageurs ou toute autre personne chargée d'une mission de service public ainsi que sur un professionnel de santé, dans l'exercice de ses fonctions, lorsque la qualité de la victime est apparente ou connue de l'auteur.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,17 +102,29 @@ class PaVictimeChargeeMissionPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante accroît la protection due aux personnes particulièrement exposées à diverses infractions en raison des missions qu'elles exercent.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00004",
+                        "Cette circonstance aggravante accroît la protection due aux personnes particulièrement exposées à diverses infractions en raison des missions qu'elles exercent.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00005",
+                        "Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -112,88 +132,175 @@ class PaVictimeChargeeMissionPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                    "f00006",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _SubTitle(
-                      "2.1 - Les personnes chargées d'une mission de service public",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00007",
+                        "2.1 - Les personnes chargées d'une mission de service public",
+                      ),
                     ),
                     _Paragraph.rich([
                       TextSpan(
-                        text:
-                            "La circulaire générale d'application du code pénal du 14 mai 1993 estime que cette expression désigne : ",
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00008",
+                          "La circulaire générale d'application du code pénal du 14 mai 1993 estime que cette expression désigne : ",
+                        ),
                       ),
                       TextSpan(text: "« "),
                       TextSpan(
-                        text:
-                            "Les personnes privées ou publiques qui, sans être dépositaires d'une parcelle de l'autorité publique, accomplissent à titre temporaire ou permanent, volontairement ou sur réquisition des autorités, un service quelconque",
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00009",
+                          "Les personnes privées ou publiques qui, sans être dépositaires d'une parcelle de l'autorité publique, accomplissent à titre temporaire ou permanent, volontairement ou sur réquisition des autorités, un service quelconque",
+                        ),
                         style: TextStyle(fontWeight: FontWeight.w700),
                       ),
                       TextSpan(text: " ». "),
                       TextSpan(
-                        text:
-                            "Cette qualité ne peut pas se déduire de la seule appartenance à un établissement public sans caractériser les actes accomplis en matière de service public.",
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00010",
+                          "Cette qualité ne peut pas se déduire de la seule appartenance à un établissement public sans caractériser les actes accomplis en matière de service public.",
+                        ),
                       ),
                     ]),
                     SizedBox(height: 12),
 
                     _SubTitle(
-                      "2.1.1 - Enseignants et personnels des établissements d'enseignement scolaire",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00011",
+                        "2.1.1 - Enseignants et personnels des établissements d'enseignement scolaire",
+                      ),
                     ),
                     _Paragraph(
-                      "Il n'existe pas de distinction concernant les établissements d'enseignement scolaire. Il peut s'agir d'établissements publics ou privés qui regroupent les écoles (maternelles et primaires), collèges, lycées, université ou écoles supérieures.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00012",
+                        "Il n'existe pas de distinction concernant les établissements d'enseignement scolaire. Il peut s'agir d'établissements publics ou privés qui regroupent les écoles (maternelles et primaires), collèges, lycées, université ou écoles supérieures.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Le législateur a souhaité protéger par cette circonstance aggravante l'ensemble du corps professoral mais également l'ensemble des personnels travaillant au sein de ces établissements : enseignants (maître des écoles, professeurs, maître de conférence...), personnels de direction, agents administratifs, personnels techniques (entretien et fonctionnement des infrastructures), etc.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00013",
+                        "Le législateur a souhaité protéger par cette circonstance aggravante l'ensemble du corps professoral mais également l'ensemble des personnels travaillant au sein de ces établissements : enseignants (maître des écoles, professeurs, maître de conférence...), personnels de direction, agents administratifs, personnels techniques (entretien et fonctionnement des infrastructures), etc.",
+                      ),
                     ),
                     SizedBox(height: 12),
 
                     _SubTitle(
-                      "2.1.2 - Agents d'un exploitant de réseau de transport public de voyageurs",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00014",
+                        "2.1.2 - Agents d'un exploitant de réseau de transport public de voyageurs",
+                      ),
                     ),
                     _Paragraph(
-                      "Cette expression vise des établissements tels que la RATP ou la SNCF mais également, par exemple, les compagnies chargées d'effectuer le ramassage scolaire.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00015",
+                        "Cette expression vise des établissements tels que la RATP ou la SNCF mais également, par exemple, les compagnies chargées d'effectuer le ramassage scolaire.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Le législateur a décidé d'étendre l'application de la qualité de personne chargée d'une mission de service public à tous les agents des exploitants, et non seulement aux agents en contact avec le public.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00016",
+                        "Le législateur a décidé d'étendre l'application de la qualité de personne chargée d'une mission de service public à tous les agents des exploitants, et non seulement aux agents en contact avec le public.",
+                      ),
                     ),
                     SizedBox(height: 12),
 
                     _SubTitle(
-                      "2.1.3 - Autres personnes chargées d'une mission de service public",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00017",
+                        "2.1.3 - Autres personnes chargées d'une mission de service public",
+                      ),
                     ),
                     _Paragraph(
-                      "La jurisprudence alimente régulièrement cette catégorie de personnes. Sans être exhaustif, on peut citer : un parlementaire, un garde-chasse particulier, un préposé à la distribution du courrier, une gérante d'agence postale d'une commune, un expert nommé par décision judiciaire, un greffier, un gardien de scellés, un médecin requis par un O.P.J., etc.",
-                    ),
-                    SizedBox(height: 12),
-
-                    _SubTitle("2.1.4 - Les professionnels de santé"),
-                    _Paragraph(
-                      "Cette adjonction protège dorénavant médecin, infirmier, pharmacien, etc.",
-                    ),
-                    SizedBox(height: 12),
-
-                    _SubTitle("2.1.5 - Les personnes assimilées"),
-                    _Paragraph(
-                      "La loi n° 2006-1294 du 23 octobre 2006 assimile les arbitres et juges sportifs à des personnes chargées d'une mission de service public.",
-                    ),
-                    SizedBox(height: 12),
-
-                    _SubTitle("2.2 - L'exercice des fonctions"),
-                    _Paragraph(
-                      "La personne chargée d'une mission de service public doit avoir été victime des faits répréhensibles alors qu'elle était en service ou qu'elle procédait à un des actes entrant dans ses attributions (dans l'exercice de ses fonctions).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00018",
+                        "La jurisprudence alimente régulièrement cette catégorie de personnes. Sans être exhaustif, on peut citer : un parlementaire, un garde-chasse particulier, un préposé à la distribution du courrier, une gérante d'agence postale d'une commune, un expert nommé par décision judiciaire, un greffier, un gardien de scellés, un médecin requis par un O.P.J., etc.",
+                      ),
                     ),
                     SizedBox(height: 12),
 
                     _SubTitle(
-                      "2.3 - La qualité apparente ou connue de l'auteur",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00019",
+                        "2.1.4 - Les professionnels de santé",
+                      ),
                     ),
                     _Paragraph(
-                      "Il s'agit de la même condition que celle liée à la particulière vulnérabilité. Elle implique donc que l'auteur agit en raison de la qualité de la victime.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00020",
+                        "Cette adjonction protège dorénavant médecin, infirmier, pharmacien, etc.",
+                      ),
+                    ),
+                    SizedBox(height: 12),
+
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00021",
+                        "2.1.5 - Les personnes assimilées",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00022",
+                        "La loi n° 2006-1294 du 23 octobre 2006 assimile les arbitres et juges sportifs à des personnes chargées d'une mission de service public.",
+                      ),
+                    ),
+                    SizedBox(height: 12),
+
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00023",
+                        "2.2 - L'exercice des fonctions",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00024",
+                        "La personne chargée d'une mission de service public doit avoir été victime des faits répréhensibles alors qu'elle était en service ou qu'elle procédait à un des actes entrant dans ses attributions (dans l'exercice de ses fonctions).",
+                      ),
+                    ),
+                    SizedBox(height: 12),
+
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00025",
+                        "2.3 - La qualité apparente ou connue de l'auteur",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                        "f00026",
+                        "Il s'agit de la même condition que celle liée à la particulière vulnérabilité. Elle implique donc que l'auteur agit en raison de la qualité de la victime.",
+                      ),
                     ),
                   ],
                 ),
@@ -201,34 +308,76 @@ class PaVictimeChargeeMissionPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                    "f00027",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE MEURTRE (ARTICLE "),
-                      law("221-4, 4° bis C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "➤ L'EMPOISONNEMENT (ARTICLE "),
-                      law("221-5 C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00028",
+                          "➤ LE MEURTRE (ARTICLE ",
+                        ),
                       ),
-                      law("222-3, 4° bis C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00029",
+                          "221-4, 4° bis C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00030",
+                          "➤ L'EMPOISONNEMENT (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00031",
+                          "221-5 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00032",
+                          "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00033",
+                          "222-3, 4° bis C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00034",
+                          "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                        ),
                       ),
                       law("222-8"),
                       const TextSpan(text: ", "),
@@ -236,36 +385,69 @@ class PaVictimeChargeeMissionPage extends StatelessWidget {
                       const TextSpan(text: ", "),
                       law("222-12*"),
                       const TextSpan(text: " ET "),
-                      law("222-13*, 4° bis C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00035",
+                          "222-13*, 4° bis C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00036",
+                          "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                        ),
                       ),
-                      law("222-15 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00037",
+                          "222-15 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LES DESTRUCTIONS, DÉGRADATIONS ET DÉTÉRIORATIONS (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00038",
+                          "➤ LES DESTRUCTIONS, DÉGRADATIONS ET DÉTÉRIORATIONS (ARTICLE ",
+                        ),
                       ),
-                      law("322-3, 3° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                          "f00039",
+                          "322-3, 3° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 12),
                     _NotaBox(
                       title: 'NOTA',
                       bodySpans: [
-                        const TextSpan(
-                          text:
-                              "Les violences volontaires avec ITT ≤ et > à 8 jours à l'encontre des élus locaux sont érigées en infraction autonome (art. ",
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                            "f00040",
+                            "Les violences volontaires avec ITT ≤ et > à 8 jours à l'encontre des élus locaux sont érigées en infraction autonome (art. ",
+                          ),
                         ),
-                        law("222-14-5 du C.P."),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart",
+                            "f00041",
+                            "222-14-5 du C.P.",
+                          ),
+                        ),
                         const TextSpan(text: ")."),
                       ],
                     ),

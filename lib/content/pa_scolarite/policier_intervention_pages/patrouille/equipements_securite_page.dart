@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEquipementsSecuritePage extends StatelessWidget {
   const PaEquipementsSecuritePage({super.key});
@@ -59,7 +60,11 @@ class PaEquipementsSecuritePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -77,7 +82,11 @@ class PaEquipementsSecuritePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les équipements de sécurité",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00002",
+              "Les équipements de sécurité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,23 +98,30 @@ class PaEquipementsSecuritePage extends StatelessWidget {
 
           // ✅ Base légale en haut
           _ConditionCard(
-            title: "I — Base réglementaire (signalisation lumineuse)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00003",
+              "I — Base réglementaire (signalisation lumineuse)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Pour l’injonction « RALENTIR », la signalisation repose sur l’usage d’un feu jaune orangé. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                    "f00004",
+                    "Pour l’injonction « RALENTIR », la signalisation repose sur l’usage d’un feu jaune orangé. — ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "article 7-1 de l’arrêté interministériel du 24 novembre 1967",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                    "f00005",
+                    "article 7-1 de l’arrêté interministériel du 24 novembre 1967",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -114,8 +130,11 @@ class PaEquipementsSecuritePage extends StatelessWidget {
                 title: "Important",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le projecteur « LAP » (feu blanc) sert à éclairer la zone accidentée et ne doit jamais être utilisé pour obtenir le ralentissement des véhicules.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00006",
+                      "Le projecteur « LAP » (feu blanc) sert à éclairer la zone accidentée et ne doit jamais être utilisé pour obtenir le ralentissement des véhicules.",
+                    ),
                   ),
                 ],
               ),
@@ -125,15 +144,31 @@ class PaEquipementsSecuritePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Objectif & logique d’emploi",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00007",
+              "II — Objectif & logique d’emploi",
+            ),
             cardColor: cardMat,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sur accident routier ou contrôle routier, de jour comme de nuit, les policiers disposent "
-                "d’équipements adaptés pour intervenir en sécurité : vêtements et matériels rétroréfléchissants "
-                "ou fluorescents, et moyens lumineux spécifiques.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00008",
+                      "Sur accident routier ou contrôle routier, de jour comme de nuit, les policiers disposent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00009",
+                      "d’équipements adaptés pour intervenir en sécurité : vêtements et matériels rétroréfléchissants ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00010",
+                      "ou fluorescents, et moyens lumineux spécifiques.",
+                    ),
               ),
             ],
           ),
@@ -141,20 +176,48 @@ class PaEquipementsSecuritePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Vêtements réfléchissants",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00011",
+              "III — Vêtements réfléchissants",
+            ),
             cardColor: cardWear,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) La chasuble réfléchissante"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00012",
+                  "A) La chasuble réfléchissante",
+                ),
+              ),
               _Paragraph(
-                "Gilet sans manches, ouvert sur les côtés et doté d’une matière réfléchissante. "
-                "Sur les deux faces, une inscription « POLICE » réfléchissante est fixée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00013",
+                      "Gilet sans manches, ouvert sur les côtés et doté d’une matière réfléchissante. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00014",
+                      "Sur les deux faces, une inscription « POLICE » réfléchissante est fixée.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) L’imperméable de signalisation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00015",
+                  "B) L’imperméable de signalisation",
+                ),
+              ),
               _Paragraph(
-                "Vêtement imperméable aux coloris : jaune fluorescent, gris rétroréfléchissant et bleu police.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00016",
+                  "Vêtement imperméable aux coloris : jaune fluorescent, gris rétroréfléchissant et bleu police.",
+                ),
               ),
             ],
           ),
@@ -162,77 +225,168 @@ class PaEquipementsSecuritePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Matériels réfléchissants (balisage)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00017",
+              "IV — Matériels réfléchissants (balisage)",
+            ),
             cardColor: cardMat,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les matériels de balisage sont recouverts d’un revêtement possédant les mêmes propriétés "
-                "réfléchissantes que les tissus. On retrouve notamment :",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00018",
+                      "Les matériels de balisage sont recouverts d’un revêtement possédant les mêmes propriétés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00019",
+                      "réfléchissantes que les tissus. On retrouve notamment :",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Panneau de signalisation « Tri flash » (avec support repliable).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00020",
+                  "Panneau de signalisation « Tri flash » (avec support repliable).",
+                ),
               ),
               _BulletPoint(
-                text: "Panneaux : « Police ralentir », « Halte police ».",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00021",
+                  "Panneaux : « Police ralentir », « Halte police ».",
+                ),
               ),
-              _BulletPoint(text: "Dispositifs coniques : « cônes de Lubeck »."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00022",
+                  "Dispositifs coniques : « cônes de Lubeck ».",
+                ),
+              ),
             ],
           ),
 
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Moyens lumineux (balisage nocturne)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00023",
+              "V — Moyens lumineux (balisage nocturne)",
+            ),
             cardColor: cardLight,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les moyens lumineux les plus utilisés lors d’un balisage nocturne sont :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00024",
+                  "Les moyens lumineux les plus utilisés lors d’un balisage nocturne sont :",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("A) Palette de signalisation lumineuse"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00025",
+                  "A) Palette de signalisation lumineuse",
+                ),
+              ),
               _Paragraph(
-                "À feu clignotant, avec disques colorés orange ou rouge devant la lentille. "
-                "Elle permet d’obtenir soit le ralentissement, soit l’arrêt des véhicules.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00026",
+                      "À feu clignotant, avec disques colorés orange ou rouge devant la lentille. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00027",
+                      "Elle permet d’obtenir soit le ralentissement, soit l’arrêt des véhicules.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Raquette de signalisation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00028",
+                  "B) Raquette de signalisation",
+                ),
+              ),
               _Paragraph(
-                "À feux rouge et orange, fixes ou clignotants. Peut être tenue à la main ou placée sur un mât "
-                "démontable pour être employée à poste fixe.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00029",
+                      "À feux rouge et orange, fixes ou clignotants. Peut être tenue à la main ou placée sur un mât ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00030",
+                      "démontable pour être employée à poste fixe.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Bâton lumineux"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00031",
+                  "C) Bâton lumineux",
+                ),
+              ),
               _Paragraph(
-                "Utilisé en étant balancé à bout de bras dans un plan vertical.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00032",
+                  "Utilisé en étant balancé à bout de bras dans un plan vertical.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("D) Projecteur « LAP » (feu blanc fixe)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00033",
+                  "D) Projecteur « LAP » (feu blanc fixe)",
+                ),
+              ),
               _Paragraph(
-                "Sert à éclairer la zone accidentée (véhicule, débris, etc.).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00034",
+                  "Sert à éclairer la zone accidentée (véhicule, débris, etc.).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Interdiction d’emploi pour « ralentir » : ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00035",
+                      "Interdiction d’emploi pour « ralentir » : ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "article 7-1 de l’arrêté interministériel du 24 novembre 1967",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00036",
+                      "article 7-1 de l’arrêté interministériel du 24 novembre 1967",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " (seul le feu jaune orangé signifie l’injonction « RALENTIR »).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00037",
+                      " (seul le feu jaune orangé signifie l’injonction « RALENTIR »).",
+                    ),
                   ),
                 ],
               ),
@@ -242,23 +396,42 @@ class PaEquipementsSecuritePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Feux spéciaux des véhicules de police",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00038",
+              "VI — Feux spéciaux des véhicules de police",
+            ),
             cardColor: cardVeh,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les véhicules de police peuvent être équipés de dispositifs lumineux spéciaux, notamment :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00039",
+                  "Les véhicules de police peuvent être équipés de dispositifs lumineux spéciaux, notamment :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Feux individuels tournants (gyrophares) émettant une lumière bleue.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00040",
+                  "Feux individuels tournants (gyrophares) émettant une lumière bleue.",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Rampe spéciale de signalisation : feux à faisceaux tournants ou stationnaires clignotants bleus ; "
-                    "des feux orangés peuvent y être associés.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00041",
+                      "Rampe spéciale de signalisation : feux à faisceaux tournants ou stationnaires clignotants bleus ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00042",
+                      "des feux orangés peuvent y être associés.",
+                    ),
               ),
             ],
           ),
@@ -266,51 +439,106 @@ class PaEquipementsSecuritePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VII — La pratique du policier (conseils terrain)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+              "f00043",
+              "VII — La pratique du policier (conseils terrain)",
+            ),
             cardColor: cardPractice,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucun texte réglementaire (hors l’arrêté évoqué ci-dessus) ne fixe précisément les conditions de mise "
-                "en place d’un ensemble de signalisation. L’expérience professionnelle se résume en réflexes à adopter, "
-                "notamment lors d’une intervention nocturne :",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00044",
+                      "Aucun texte réglementaire (hors l’arrêté évoqué ci-dessus) ne fixe précisément les conditions de mise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00045",
+                      "en place d’un ensemble de signalisation. L’expérience professionnelle se résume en réflexes à adopter, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00046",
+                      "notamment lors d’une intervention nocturne :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "S’équiper de la protection individuelle avant de descendre du véhicule.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00047",
+                  "S’équiper de la protection individuelle avant de descendre du véhicule.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00048",
+                  "Rester constamment mobile (même équipé d’effets réfléchissants) pour accroître visibilité et sécurité.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00049",
+                  "Utiliser uniquement la palette de signalisation (ou éventuellement la raquette) pour obtenir le ralentissement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00050",
+                  "Ne jamais diriger les feux blancs du projecteur « LAP » vers les usagers (risque d’éblouissement et usage non réglementaire).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00051",
+                  "Utiliser des cônes coniques à bon pouvoir réfléchissant : propres, récents (durée de vie du revêtement ≈ 6 ans).",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Rester constamment mobile (même équipé d’effets réfléchissants) pour accroître visibilité et sécurité.",
-              ),
-              _BulletPoint(
-                text:
-                    "Utiliser uniquement la palette de signalisation (ou éventuellement la raquette) pour obtenir le ralentissement.",
-              ),
-              _BulletPoint(
-                text:
-                    "Ne jamais diriger les feux blancs du projecteur « LAP » vers les usagers (risque d’éblouissement et usage non réglementaire).",
-              ),
-              _BulletPoint(
-                text:
-                    "Utiliser des cônes coniques à bon pouvoir réfléchissant : propres, récents (durée de vie du revêtement ≈ 6 ans).",
-              ),
-              _BulletPoint(
-                text:
-                    "Privilégier les feux à éclats plutôt que les feux fixes/tournants : "
-                    "les premiers attirent l’attention sans diminuer la capacité de réaction ; "
-                    "les seconds peuvent diminuer les capacités de réaction.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00052",
+                      "Privilégier les feux à éclats plutôt que les feux fixes/tournants : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00053",
+                      "les premiers attirent l’attention sans diminuer la capacité de réaction ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                      "f00054",
+                      "les seconds peuvent diminuer les capacités de réaction.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                  "f00055",
+                  "À retenir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En général, les feux à éclats du panneau tri flash, du véhicule de police et de la palette de signalisation, "
-                        "combinés aux effets vestimentaires et matériels réfléchissants, suffisent pour la grande majorité des accidents nocturnes.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                          "f00056",
+                          "En général, les feux à éclats du panneau tri flash, du véhicule de police et de la palette de signalisation, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart",
+                          "f00057",
+                          "combinés aux effets vestimentaires et matériels réfléchissants, suffisent pour la grande majorité des accidents nocturnes.",
+                        ),
                   ),
                 ],
               ),

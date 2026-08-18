@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FormalismeRapportPage extends StatelessWidget {
   const FormalismeRapportPage({super.key});
@@ -56,10 +57,18 @@ class FormalismeRapportPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Hiérarchie & information",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+            "f00002",
+            "Hiérarchie & information",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class FormalismeRapportPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le formalisme du rapport",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00003",
+              "Le formalisme du rapport",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rapport est un compte-rendu adressé à l’autorité hiérarchique dans le but "
-                "de l’informer de tout fait ou incident à caractère personnel ou se rapportant "
-                "à l’exécution du service, et des circonstances dans lesquelles ils se sont produits.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00005",
+                      "Le rapport est un compte-rendu adressé à l’autorité hiérarchique dans le but ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00006",
+                      "de l’informer de tout fait ou incident à caractère personnel ou se rapportant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00007",
+                      "à l’exécution du service, et des circonstances dans lesquelles ils se sont produits.",
+                    ),
               ),
             ],
           ),
@@ -103,35 +132,48 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (textes cités)
           _ConditionCard(
-            title: "I — Le formalisme (cadre de référence)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00008",
+              "I — Le formalisme (cadre de référence)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les seuls textes relatifs au rapport, de façon presque incidente, sont : ",
-                ),
-                TextSpan(
-                  text:
-                      "articles D. 14-1, 430 et 537 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00009",
+                    "Les seuls textes relatifs au rapport, de façon presque incidente, sont : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Ces dispositions sont muettes quant au formalisme : celui-ci découle donc de la pratique, de circulaires et du bon sens.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00010",
+                    "articles D. 14-1, 430 et 537 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00011",
+                    ". Ces dispositions sont muettes quant au formalisme : celui-ci découle donc de la pratique, de circulaires et du bon sens.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Objectif : produire un document exploitable, lisible et immédiatement compréhensible par la hiérarchie.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00012",
+                      "Objectif : produire un document exploitable, lisible et immédiatement compréhensible par la hiérarchie.",
+                    ),
                   ),
                 ],
               ),
@@ -142,27 +184,46 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // A. En-tête
           _ConditionCard(
-            title: "A — L’en-tête du rapport",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00013",
+              "A — L’en-tête du rapport",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Le rapport est établi sur un modèle comportant :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00014",
+                  "Le rapport est établi sur un modèle comportant :",
+                ),
+              ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "En haut à gauche : logo du Ministère de l’Intérieur + identification de la direction d’emploi et du service (ex. commissariat / SDPJ…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00015",
+                  "En haut à gauche : logo du Ministère de l’Intérieur + identification de la direction d’emploi et du service (ex. commissariat / SDPJ…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En haut à droite : logo Police nationale + lieu et date de rédaction du rapport.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00016",
+                  "En haut à droite : logo Police nationale + lieu et date de rédaction du rapport.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le lieu indiqué à l’en-tête est celui de la rédaction (pas celui de la constatation des faits). La rédaction peut être différée.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00017",
+                      "Le lieu indiqué à l’en-tête est celui de la rédaction (pas celui de la constatation des faits). La rédaction peut être différée.",
+                    ),
                   ),
                 ],
               ),
@@ -174,51 +235,92 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // En-tête (suite) : identité rédacteur + destinataire
           _ConditionCard(
-            title: "À faire figurer après l’en-tête",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00018",
+              "À faire figurer après l’en-tête",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Doivent ensuite apparaître :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00019",
+                  "Doivent ensuite apparaître :",
+                ),
+              ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Qualité administrative (grade), matricule, nom et prénom du rédacteur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00020",
+                  "Qualité administrative (grade), matricule, nom et prénom du rédacteur.",
+                ),
               ),
               _BulletPoint(
-                text: "Service d’appartenance (unité, section…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00021",
+                  "Service d’appartenance (unité, section…).",
+                ),
               ),
               _BulletPoint(
-                text: "Destinataire (supérieur hiérarchique direct).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00022",
+                  "Destinataire (supérieur hiérarchique direct).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Conformément à "),
                 TextSpan(
-                  text: "l’article D. 14-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00023",
+                    "Conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ", le destinataire est le supérieur hiérarchique direct du rédacteur. Si un autre destinataire est visé : mentionner « sous couvert de la voie hiérarchique ».",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00024",
+                    "l’article D. 14-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00025",
+                    ", le destinataire est le supérieur hiérarchique direct du rédacteur. Si un autre destinataire est visé : mentionner « sous couvert de la voie hiérarchique ».",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "À la différence du procès-verbal ("),
                 TextSpan(
-                  text: "article 66 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00026",
+                    "À la différence du procès-verbal (",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      "), le rapport n’est pas réputé établi « dans le même trait de temps » que les opérations.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00027",
+                    "article 66 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                    "f00028",
+                    "), le rapport n’est pas réputé établi « dans le même trait de temps » que les opérations.",
+                  ),
                 ),
               ]),
             ],
@@ -228,20 +330,56 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // B. Mentions obligatoires
           _ConditionCard(
-            title: "B — Mentions obligatoires (1ʳᵉ page)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00029",
+              "B — Mentions obligatoires (1ʳᵉ page)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La première page doit comporter des mentions obligatoires, qui varient selon que le rapport est "
-                "de type administratif ou judiciaire. On retient quatre mentions principales :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00030",
+                      "La première page doit comporter des mentions obligatoires, qui varient selon que le rapport est ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00031",
+                      "de type administratif ou judiciaire. On retient quatre mentions principales :",
+                    ),
               ),
               SizedBox(height: 10),
-              _IntroBullet(text: "L’objet"),
-              _IntroBullet(text: "L’affaire (si rapport judiciaire)"),
-              _IntroBullet(text: "La référence"),
-              _IntroBullet(text: "Les pièces jointes"),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00032",
+                  "L’objet",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00033",
+                  "L’affaire (si rapport judiciaire)",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00034",
+                  "La référence",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00035",
+                  "Les pièces jointes",
+                ),
+              ),
             ],
           ),
 
@@ -249,33 +387,93 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // Détail des mentions
           _ConditionCard(
-            title: "Détail des mentions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00036",
+              "Détail des mentions",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) L’objet"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00037",
+                  "1) L’objet",
+                ),
+              ),
               _Paragraph(
-                "L’objet résume en quelques mots précis le corps du rapport.\n"
-                "• Administratif : ex. demande d’absence exceptionnelle, demande de fermeture administrative…\n"
-                "• Judiciaire : résume la nature des faits, le lieu et la date de commission.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00038",
+                      "L’objet résume en quelques mots précis le corps du rapport.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00039",
+                      "• Administratif : ex. demande d’absence exceptionnelle, demande de fermeture administrative…\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00040",
+                      "• Judiciaire : résume la nature des faits, le lieu et la date de commission.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) L’affaire (rapport judiciaire)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00041",
+                  "2) L’affaire (rapport judiciaire)",
+                ),
+              ),
               _Paragraph(
-                "Indique la « petite identité » de l’individu objet du rapport :\n"
-                "• ex. C/ Albert M… (qualité, naissance, domicile) ou C/ X…",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00042",
+                      "Indique la « petite identité » de l’individu objet du rapport :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00043",
+                      "• ex. C/ Albert M… (qualité, naissance, domicile) ou C/ X…",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("3) La référence"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00044",
+                  "3) La référence",
+                ),
+              ),
               _Paragraph(
-                "Rappelle les instructions verbales/écrites auxquelles le rapport se réfère.\n"
-                "En pratique : indiquer la date et le numéro d’enregistrement de la pièce visée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00045",
+                      "Rappelle les instructions verbales/écrites auxquelles le rapport se réfère.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00046",
+                      "En pratique : indiquer la date et le numéro d’enregistrement de la pièce visée.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("4) Les pièces jointes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00047",
+                  "4) Les pièces jointes",
+                ),
+              ),
               _Paragraph(
-                "Récapitule les documents à joindre au rapport (annexes, copies, justificatifs…).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00048",
+                  "Récapitule les documents à joindre au rapport (annexes, copies, justificatifs…).",
+                ),
               ),
             ],
           ),
@@ -284,23 +482,46 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // C. Préambule
           _ConditionCard(
-            title: "C — Le préambule",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00049",
+              "C — Le préambule",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le préambule est une formule stéréotypée, par exemple :\n"
-                "• « J’ai l’honneur de vous rendre compte des faits suivants… »\n"
-                "• « J’ai l’honneur de vous rendre compte de l’enquête diligentée conformément à vos instructions… »\n"
-                "• « J’ai l’honneur de solliciter de votre bienveillance… »",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00050",
+                      "Le préambule est une formule stéréotypée, par exemple :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00051",
+                      "• « J’ai l’honneur de vous rendre compte des faits suivants… »\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00052",
+                      "• « J’ai l’honneur de vous rendre compte de l’enquête diligentée conformément à vos instructions… »\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00053",
+                      "• « J’ai l’honneur de solliciter de votre bienveillance… »",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Rigueur : l’unicité du rédacteur est de rigueur. Les autres intervenants sont mentionnés dans le préambule ou dans le corps du rapport.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00054",
+                      "Rigueur : l’unicité du rédacteur est de rigueur. Les autres intervenants sont mentionnés dans le préambule ou dans le corps du rapport.",
+                    ),
                   ),
                 ],
               ),
@@ -311,17 +532,41 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // D. Corps
           _ConditionCard(
-            title: "D — Le corps du rapport",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00055",
+              "D — Le corps du rapport",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur relate :\n"
-                "• ce qu’il a vu, entendu ou constaté ;\n"
-                "• ce qu’il a fait ;\n"
-                "• les mesures prises ;\n"
-                "• les diligences effectuées et leur résultat.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00056",
+                      "Le rédacteur relate :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00057",
+                      "• ce qu’il a vu, entendu ou constaté ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00058",
+                      "• ce qu’il a fait ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00059",
+                      "• les mesures prises ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00060",
+                      "• les diligences effectuées et leur résultat.",
+                    ),
               ),
             ],
           ),
@@ -330,15 +575,31 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // E. Signature / destinataires
           _ConditionCard(
-            title: "E — Signature & destinataires",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00061",
+              "E — Signature & destinataires",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur signe le rapport à droite, sous la dernière phrase, "
-                "après mention de sa qualité administrative (grade).\n\n"
-                "Une rubrique « destinataires » peut être ajoutée en bas à gauche du dernier feuillet, après la signature.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00062",
+                      "Le rédacteur signe le rapport à droite, sous la dernière phrase, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00063",
+                      "après mention de sa qualité administrative (grade).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00064",
+                      "Une rubrique « destinataires » peut être ajoutée en bas à gauche du dernier feuillet, après la signature.",
+                    ),
               ),
             ],
           ),
@@ -347,24 +608,64 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // F. Présentation / style
           _ConditionCard(
-            title: "F — Présentation & style",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00065",
+              "F — Présentation & style",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Une présentation correcte dépend notamment de :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00066",
+                  "Une présentation correcte dépend notamment de :",
+                ),
+              ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Une mise en page aérée."),
               _BulletPoint(
-                text: "Une orthographe et une ponctuation correctes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00067",
+                  "Une mise en page aérée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00068",
+                  "Une orthographe et une ponctuation correctes.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Règles de rédaction :\n"
-                "• Rédaction au passé (passé composé ou imparfait).\n"
-                "• Style impersonnel (éviter « nous »).\n"
-                "• Dans certains cas : rédaction à la première personne « je » (ex. rapport d’autorisation d’absence).\n\n"
-                "Éviter les phrases interminables : le rapport doit être clair, précis et concis.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00069",
+                      "Règles de rédaction :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00070",
+                      "• Rédaction au passé (passé composé ou imparfait).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00071",
+                      "• Style impersonnel (éviter « nous »).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00072",
+                      "• Dans certains cas : rédaction à la première personne « je » (ex. rapport d’autorisation d’absence).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                      "f00073",
+                      "Éviter les phrases interminables : le rapport doit être clair, précis et concis.",
+                    ),
               ),
             ],
           ),
@@ -373,22 +674,35 @@ class FormalismeRapportPage extends StatelessWidget {
 
           // Synthèse
           _ConditionCard(
-            title: "En résumé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+              "f00074",
+              "En résumé",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Un rapport = informer la hiérarchie de faits/incidents et des circonstances.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00075",
+                  "Un rapport = informer la hiérarchie de faits/incidents et des circonstances.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Respecter une structure : en-tête, mentions obligatoires, préambule, corps, signature.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00076",
+                  "Respecter une structure : en-tête, mentions obligatoires, préambule, corps, signature.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Références : D. 14-1, 430, 537 CPP ; distinction PV/rapport (art. 66 CPP).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/formalisme_rapport_page.dart",
+                  "f00077",
+                  "Références : D. 14-1, 430, 537 CPP ; distinction PV/rapport (art. 66 CPP).",
+                ),
               ),
             ],
           ),
@@ -644,9 +958,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

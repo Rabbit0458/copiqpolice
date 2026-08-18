@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — L’RetentionLocaux (SPLASH IA 2025)
@@ -63,8 +64,11 @@ class _RetentionLocauxIntroPageState extends State<RetentionLocauxIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'LES CAS DE RÉTENTION DANS LES LOCAUX DE POLICE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_intro.dart",
+    "f00001",
+    'LES CAS DE RÉTENTION DANS LES LOCAUX DE POLICE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -174,7 +178,11 @@ class _RetentionLocauxIntroPageState extends State<RetentionLocauxIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Conditions, limites et réflexes essentiels des cas de rétention dans les locaux de police.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_intro.dart",
+                        "f00002",
+                        "Conditions, limites et réflexes essentiels des cas de rétention dans les locaux de police.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -283,7 +291,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_intro.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

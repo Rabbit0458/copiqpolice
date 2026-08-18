@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FauxDocumentAdministratifPage extends StatelessWidget {
   const FauxDocumentAdministratifPage({super.key});
@@ -57,10 +58,18 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Faux & usage de faux",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+            "f00002",
+            "Faux & usage de faux",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -75,7 +84,11 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le faux commis dans un document administratif",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+              "f00003",
+              "Le faux commis dans un document administratif",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,15 +100,31 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction consiste dans le fait de commettre un faux dans un document délivré "
-                "par une administration publique aux fins de constater un droit, une identité ou une "
-                "qualité, ou d’accorder une autorisation. L’usage de ce faux est également incriminé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00005",
+                      "L’infraction consiste dans le fait de commettre un faux dans un document délivré ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00006",
+                      "par une administration publique aux fins de constater un droit, une identité ou une ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00007",
+                      "qualité, ou d’accorder une autorisation. L’usage de ce faux est également incriminé.",
+                    ),
               ),
             ],
           ),
@@ -104,22 +133,30 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00009",
+                    "Article 441-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le faux commis dans un document administratif ainsi que son usage.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00010",
+                    " : définit et réprime le faux commis dans un document administratif ainsi que son usage.",
+                  ),
                 ),
               ]),
             ],
@@ -129,97 +166,226 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Contrefaçon ou falsification d’un document administratif",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00012",
+                  "A) Contrefaçon ou falsification d’un document administratif",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00013",
+                    "Article 441-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : concerne les faux matériels commis dans les documents délivrés par l’administration "
-                      "établis aux fins de constater un droit, une identité ou une qualité, ou d’accorder une autorisation. "
-                      "Le texte vise un écrit, mais aussi un document fixé sur un autre support que l’écrit.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                        "f00014",
+                        " : concerne les faux matériels commis dans les documents délivrés par l’administration ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                        "f00015",
+                        "établis aux fins de constater un droit, une identité ou une qualité, ou d’accorder une autorisation. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                        "f00016",
+                        "Le texte vise un écrit, mais aussi un document fixé sur un autre support que l’écrit.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("• Une falsification matérielle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00017",
+                  "• Une falsification matérielle",
+                ),
+              ),
               _Paragraph(
-                "Il y a faux matériel lorsque c’est le support qui est falsifié. La particularité du faux matériel "
-                "est qu’il porte en lui-même la trace de sa falsification : elle peut se constater par l’examen "
-                "du support. On distingue notamment :\n"
-                "— le faux matériel par altération d’un document authentique ;\n"
-                "— le faux matériel par des procédés donnant l’apparence de l’authenticité à un document qui ne l’est pas.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00018",
+                      "Il y a faux matériel lorsque c’est le support qui est falsifié. La particularité du faux matériel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00019",
+                      "est qu’il porte en lui-même la trace de sa falsification : elle peut se constater par l’examen ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00020",
+                      "du support. On distingue notamment :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00021",
+                      "— le faux matériel par altération d’un document authentique ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00022",
+                      "— le faux matériel par des procédés donnant l’apparence de l’authenticité à un document qui ne l’est pas.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Point important",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00023",
+                  "Point important",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La jurisprudence ne semble pas retenir ici le faux intellectuel (défaut de véridicité) : "
-                        "il consiste, par exemple, à fournir de faux renseignements (identité), le mensonge atteignant le contenu de l’écrit et non le support.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                          "f00024",
+                          "La jurisprudence ne semble pas retenir ici le faux intellectuel (défaut de véridicité) : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                          "f00025",
+                          "il consiste, par exemple, à fournir de faux renseignements (identité), le mensonge atteignant le contenu de l’écrit et non le support.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un document administratif"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00026",
+                  "B) Un document administratif",
+                ),
+              ),
               _Paragraph(
-                "Les documents administratifs sont des documents/formulaires normalisés, établis pour constater :\n"
-                "— un droit ;\n"
-                "— une identité (carte nationale d’identité, titre de séjour…) ;\n"
-                "— une qualité (ex. certificat de nationalité) ;\n"
-                "— ou accorder une autorisation (permis de construire, permis de chasser, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00027",
+                      "Les documents administratifs sont des documents/formulaires normalisés, établis pour constater :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00028",
+                      "— un droit ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00029",
+                      "— une identité (carte nationale d’identité, titre de séjour…) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00030",
+                      "— une qualité (ex. certificat de nationalité) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00031",
+                      "— ou accorder une autorisation (permis de construire, permis de chasser, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00032",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Certificat de nationalité : "),
                   TextSpan(
-                    text: "(Cass. crim., 19 mai 1981)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00033",
+                      "Certificat de nationalité : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00034",
+                      "(Cass. crim., 19 mai 1981)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(text: ". "),
-                  TextSpan(text: "Permis de chasser : "),
                   TextSpan(
-                    text: "(Cass. crim., 03 octobre 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00035",
+                      "Permis de chasser : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00036",
+                      "(Cass. crim., 03 octobre 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(text: ". "),
-                  TextSpan(text: "Permis de construire : "),
                   TextSpan(
-                    text: "(Cass. crim., 15 mars 1995)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00037",
+                      "Permis de construire : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00038",
+                      "(Cass. crim., 15 mars 1995)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(text: ". "),
-                  TextSpan(text: "Certificat de mariage : "),
                   TextSpan(
-                    text: "(Cass. crim., 22 octobre 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00039",
+                      "Certificat de mariage : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00040",
+                      "(Cass. crim., 22 octobre 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -235,11 +401,18 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
                 title: "Jurisprudences",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Faux ordres de mission établis par un président de conseil général à l’occasion de détournements de fonds publics ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00041",
+                      "Faux ordres de mission établis par un président de conseil général à l’occasion de détournements de fonds publics ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 18 octobre 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00042",
+                      "(Cass. crim., 18 octobre 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -247,11 +420,18 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
                   ),
                   TextSpan(text: ". "),
                   TextSpan(
-                    text:
-                        "Bons de commande fictifs destinés à masquer l’objet exact d’une prestation relevant du droit des marchés publics ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00043",
+                      "Bons de commande fictifs destinés à masquer l’objet exact d’une prestation relevant du droit des marchés publics ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 22 septembre 2004)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00044",
+                      "(Cass. crim., 22 septembre 2004)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -264,41 +444,75 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _Paragraph(
-                "La falsification ne doit pas être immédiatement identifiable.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00045",
+                  "La falsification ne doit pas être immédiatement identifiable.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un préjudice"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00046",
+                  "C) Un préjudice",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le texte ne précise pas l’existence ou l’éventualité d’un préjudice, mais la jurisprudence "
-                      "retient que le préjudice découle de la nature de la pièce faussée ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                        "f00047",
+                        "Le texte ne précise pas l’existence ou l’éventualité d’un préjudice, mais la jurisprudence ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                        "f00048",
+                        "retient que le préjudice découle de la nature de la pièce faussée ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 12 novembre 1998)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00049",
+                    "(Cass. crim., 12 novembre 1998)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Le faux commis dans un document administratif peut également porter préjudice aux particuliers.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00050",
+                  "Le faux commis dans un document administratif peut également porter préjudice aux particuliers.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00051",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Fausse carte grise permettant au faussaire de s’approprier le véhicule d’autrui ou d’obtenir frauduleusement un crédit ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00052",
+                      "Fausse carte grise permettant au faussaire de s’approprier le véhicule d’autrui ou d’obtenir frauduleusement un crédit ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 07 décembre 1965)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00053",
+                      "(Cass. crim., 07 décembre 1965)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -310,20 +524,41 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("D) L’usage du faux"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00054",
+                  "D) L’usage du faux",
+                ),
+              ),
               _Paragraph(
-                "L’usage du faux ne se conçoit que sur un document administratif falsifié.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00055",
+                  "L’usage du faux ne se conçoit que sur un document administratif falsifié.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00056",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Production, dans une instance en divorce en France, d’un certificat de mariage fabriqué (mariage coutumier au Sénégal non transcrit) ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00057",
+                      "Production, dans une instance en divorce en France, d’un certificat de mariage fabriqué (mariage coutumier au Sénégal non transcrit) ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 22 octobre 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00058",
+                      "(Cass. crim., 22 octobre 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -335,15 +570,19 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En revanche, l’usage d’un document administratif dont les mentions sont devenues incomplètes ou inexactes relève d’une contravention de 5e classe prévue par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00059",
+                    "En revanche, l’usage d’un document administratif dont les mentions sont devenues incomplètes ou inexactes relève d’une contravention de 5e classe prévue par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article R. 645-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00060",
+                    "l’article R. 645-8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -354,29 +593,70 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+              "f00061",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Concernant l’infraction de faux"),
-              _BulletPoint(
-                text: "Volonté de commettre la falsification.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00062",
+                  "A) Concernant l’infraction de faux",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conscience de l’altération de la vérité dans le document (atteinte à l’authenticité / intégrité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00063",
+                  "Volonté de commettre la falsification.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00064",
+                  "Conscience de l’altération de la vérité dans le document (atteinte à l’authenticité / intégrité).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’acte de falsification matérielle révèle l’intention de l’auteur du fait même de son accomplissement "
-                "(fabriquer un acte, apposer une fausse signature, etc.). Les mobiles sont indifférents.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00065",
+                      "L’acte de falsification matérielle révèle l’intention de l’auteur du fait même de son accomplissement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00066",
+                      "(fabriquer un acte, apposer une fausse signature, etc.). Les mobiles sont indifférents.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Concernant l’infraction d’usage de faux"),
-              _BulletPoint(text: "Volonté d’user de la pièce fausse."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00067",
+                  "B) Concernant l’infraction d’usage de faux",
+                ),
+              ),
               _BulletPoint(
-                text: "Connaissance de la fausseté de la pièce.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00068",
+                  "Volonté d’user de la pièce fausse.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00069",
+                  "Connaissance de la fausseté de la pièce.",
+                ),
               ),
             ],
           ),
@@ -385,54 +665,83 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+              "f00070",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-2 1° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00071",
+                    "Article 441-2 1° du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Lorsque le faux ou l’usage de faux est commis par une personne dépositaire de l’autorité publique "
-                    "ou chargée d’une mission de service public agissant dans l’exercice de ses fonctions.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00072",
+                      "Lorsque le faux ou l’usage de faux est commis par une personne dépositaire de l’autorité publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00073",
+                      "ou chargée d’une mission de service public agissant dans l’exercice de ses fonctions.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-2 2° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00074",
+                    "Article 441-2 2° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00075",
+                    " : (aggravation prévue par le texte).",
                   ),
                 ),
-                TextSpan(text: " : (aggravation prévue par le texte)."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-2 3° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00076",
+                    "Article 441-2 3° du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Lorsque le faux ou l’usage de faux est commis dans le dessein de faciliter la commission d’un crime "
-                    "ou de procurer l’impunité à son auteur.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00077",
+                      "Lorsque le faux ou l’usage de faux est commis dans le dessein de faciliter la commission d’un crime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00078",
+                      "ou de procurer l’impunité à son auteur.",
+                    ),
               ),
             ],
           ),
@@ -441,37 +750,69 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+              "f00079",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00080",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00081",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 441-2 alinéas 1 et 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00082",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00083",
+                    "article 441-2 alinéas 1 et 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00084",
+                    "Aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 441-2 1° à 3° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00085",
+                    "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00086",
+                    "article 441-2 1° à 3° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
@@ -481,7 +822,11 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
-                    text: "Article 441-3 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00087",
+                      "Article 441-3 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -489,57 +834,115 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " : réprime la détention d’un faux document administratif. Cette incrimination vise à lutter "
-                        "contre le trafic de faux documents administratifs et présente un intérêt par rapport au recel "
-                        "car elle permet de sanctionner le détenteur d’un document qu’il a lui-même falsifié.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                          "f00088",
+                          " : réprime la détention d’un faux document administratif. Cette incrimination vise à lutter ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                          "f00089",
+                          "contre le trafic de faux documents administratifs et présente un intérêt par rapport au recel ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                          "f00090",
+                          "car elle permet de sanctionner le détenteur d’un document qu’il a lui-même falsifié.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00091",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 441-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00092",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00093",
+                    "l’article 441-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00094",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 441-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00095",
+                    "Tentative : OUI — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (prévoit expressément la tentative des délits prévus à l’article 441-2).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00096",
+                    "article 441-9 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                    "f00097",
+                    " (prévoit expressément la tentative des délits prévus à l’article 441-2).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "Complicité : OUI (règles générales)."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00098",
+                  "Complicité : OUI (règles générales).",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                  "f00099",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le secrétaire de mairie qui fait procéder par un employé subalterne à la falsification des registres ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00100",
+                      "Le secrétaire de mairie qui fait procéder par un employé subalterne à la falsification des registres ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 18 octobre 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_document_administratif_page.dart",
+                      "f00101",
+                      "(Cass. crim., 18 octobre 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,

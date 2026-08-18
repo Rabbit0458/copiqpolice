@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
   const ViolationCorrespondancesVoieElectroniquePage({super.key});
@@ -59,10 +60,18 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la personnalité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+            "f00002",
+            "Atteintes à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La violation des correspondances émises par la voie électronique",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+              "f00003",
+              "La violation des correspondances émises par la voie électronique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, commis de mauvaise foi, d’intercepter, de détourner, d’utiliser ou de divulguer des correspondances "
-                "émises, transmises ou reçues par la voie électronique, ou de procéder à l’installation d’appareils de nature "
-                "à permettre la réalisation de telles interceptions, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00005",
+                      "Le fait, commis de mauvaise foi, d’intercepter, de détourner, d’utiliser ou de divulguer des correspondances ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00006",
+                      "émises, transmises ou reçues par la voie électronique, ou de procéder à l’installation d’appareils de nature ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00007",
+                      "à permettre la réalisation de telles interceptions, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,35 +135,48 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-15 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00009",
+                    "Article 226-15 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit la violation des correspondances émises par la voie électronique (commise par un particulier).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00010",
+                    " : définit la violation des correspondances émises par la voie électronique (commise par un particulier).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-15 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00011",
+                    "Article 226-15 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : prévoit la répression de cette infraction.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00012",
+                    " : prévoit la répression de cette infraction.",
+                  ),
                 ),
               ]),
             ],
@@ -144,37 +186,84 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Des correspondances émises, transmises ou reçues par la voie électronique",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00014",
+                  "A) Des correspondances émises, transmises ou reçues par la voie électronique",
+                ),
               ),
               _Paragraph(
-                "Le texte protège les correspondances « dématérialisées » (sans support tangible), "
-                "par exemple : appels téléphoniques, courrier électronique, messages électroniques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00015",
+                      "Le texte protège les correspondances « dématérialisées » (sans support tangible), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00016",
+                      "par exemple : appels téléphoniques, courrier électronique, messages électroniques.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il vise les correspondances en cours de transmission ou parvenues à destination mais non encore appréhendées "
-                "par leur destinataire. Une fois la correspondance ouverte/prise de connaissance, elle perd ce régime spécifique "
-                "et peut relever d’autres qualifications (ex. vol de données copiées, accès/maintien frauduleux dans un STAD).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00017",
+                      "Il vise les correspondances en cours de transmission ou parvenues à destination mais non encore appréhendées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00018",
+                      "par leur destinataire. Une fois la correspondance ouverte/prise de connaissance, elle perd ce régime spécifique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00019",
+                      "et peut relever d’autres qualifications (ex. vol de données copiées, accès/maintien frauduleux dans un STAD).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "DÉFINITION LÉGALE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00020",
+                  "DÉFINITION LÉGALE",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le courrier électronique est défini comme « tout message, sous forme de texte, de voix, de son ou d’image, "
-                        "envoyé par un réseau public de communications, stocké sur un serveur du réseau ou dans l’équipement terminal "
-                        "du destinataire, jusqu’à ce que ce dernier le récupère ». — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                          "f00021",
+                          "Le courrier électronique est défini comme « tout message, sous forme de texte, de voix, de son ou d’image, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                          "f00022",
+                          "envoyé par un réseau public de communications, stocké sur un serveur du réseau ou dans l’équipement terminal ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                          "f00023",
+                          "du destinataire, jusqu’à ce que ce dernier le récupère ». — ",
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        "article 1er de la loi n° 2004-575 du 21 juin 2004 (LCEN)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00024",
+                      "article 1er de la loi n° 2004-575 du 21 juin 2004 (LCEN)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -185,29 +274,68 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un acte matériel d’atteinte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00025",
+                  "B) Un acte matériel d’atteinte",
+                ),
+              ),
               _Paragraph(
-                "L’infraction est constituée par l’un des actes suivants : intercepter, détourner, utiliser, divulguer "
-                "ou installer des appareils permettant ces atteintes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00026",
+                      "L’infraction est constituée par l’un des actes suivants : intercepter, détourner, utiliser, divulguer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00027",
+                      "ou installer des appareils permettant ces atteintes.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Intercepter"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00028",
+                  "1) Intercepter",
+                ),
+              ),
               _Paragraph(
-                "Intercepter consiste à « prendre au passage » ce qui est destiné à autrui, pendant le cours de la transmission, "
-                "au moyen d’un matériel quelconque. Il n’est pas nécessaire que l’auteur prenne connaissance du contenu pour que "
-                "l’interception soit réprimée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00029",
+                      "Intercepter consiste à « prendre au passage » ce qui est destiné à autrui, pendant le cours de la transmission, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00030",
+                      "au moyen d’un matériel quelconque. Il n’est pas nécessaire que l’auteur prenne connaissance du contenu pour que ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00031",
+                      "l’interception soit réprimée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "JURISPRUDENCE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’interception suppose la captation pendant la transmission (",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00032",
+                      "L’interception suppose la captation pendant la transmission (",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 14 avril 1999",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00033",
+                      "Cass. crim., 14 avril 1999",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -221,11 +349,18 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
                 title: "EXEMPLE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Interception d’échanges radio entre différentes patrouilles de police (",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00034",
+                      "Interception d’échanges radio entre différentes patrouilles de police (",
+                    ),
                   ),
                   TextSpan(
-                    text: "C.A. Paris, 15 septembre 2005",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00035",
+                      "C.A. Paris, 15 septembre 2005",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -237,11 +372,29 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Détourner"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00036",
+                  "2) Détourner",
+                ),
+              ),
               _Paragraph(
-                "Détourner consiste à modifier le cours de la transmission, notamment par l’installation d’un dispositif permettant "
-                "une dérivation de la correspondance vers un point choisi par l’auteur. Le détournement peut viser des messages en attente "
-                "d’être lus par le destinataire (ils ne sont plus « en cours de transmission », mais pas encore appréhendés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00037",
+                      "Détourner consiste à modifier le cours de la transmission, notamment par l’installation d’un dispositif permettant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00038",
+                      "une dérivation de la correspondance vers un point choisi par l’auteur. Le détournement peut viser des messages en attente ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00039",
+                      "d’être lus par le destinataire (ils ne sont plus « en cours de transmission », mais pas encore appréhendés).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -249,11 +402,23 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Détournement retenu à l’encontre d’un employeur accédant aux courriers électroniques d’un salarié "
-                        "avant que celui-ci en ait eu connaissance (",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                          "f00040",
+                          "Détournement retenu à l’encontre d’un employeur accédant aux courriers électroniques d’un salarié ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                          "f00041",
+                          "avant que celui-ci en ait eu connaissance (",
+                        ),
                   ),
                   TextSpan(
-                    text: "C.A. Pau, 24 novembre 2005",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00042",
+                      "C.A. Pau, 24 novembre 2005",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -265,33 +430,81 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("3) Utiliser"),
-              _Paragraph(
-                "Utiliser consiste à se servir de la correspondance comme si l’on en était le destinataire (ex. effacer un courriel "
-                "dont on n’est pas destinataire, ou le transférer à un tiers, sans qualité pour en connaître).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00043",
+                  "3) Utiliser",
+                ),
               ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("4) Divulguer"),
               _Paragraph(
-                "Divulguer consiste à révéler à un tiers le contenu d’une correspondance qui ne vous est pas destinée. "
-                "La divulgation peut faire suite à une interception (ex. faire écouter une conversation enregistrée, transmettre un courriel intercepté).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00044",
+                      "Utiliser consiste à se servir de la correspondance comme si l’on en était le destinataire (ex. effacer un courriel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00045",
+                      "dont on n’est pas destinataire, ou le transférer à un tiers, sans qualité pour en connaître).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "5) Installer un dispositif permettant l’interception",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00046",
+                  "4) Divulguer",
+                ),
               ),
               _Paragraph(
-                "L’installation consiste à mettre en œuvre un dispositif (matériel ou logiciel) permettant d’intercepter, détourner, "
-                "utiliser ou divulguer des correspondances émises par la voie électronique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00047",
+                      "Divulguer consiste à révéler à un tiers le contenu d’une correspondance qui ne vous est pas destinée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00048",
+                      "La divulgation peut faire suite à une interception (ex. faire écouter une conversation enregistrée, transmettre un courriel intercepté).",
+                    ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00049",
+                  "5) Installer un dispositif permettant l’interception",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00050",
+                      "L’installation consiste à mettre en œuvre un dispositif (matériel ou logiciel) permettant d’intercepter, détourner, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00051",
+                      "utiliser ou divulguer des correspondances émises par la voie électronique.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Même sans précision légale, la personne réalisant l’installation peut être considérée comme auteur de la violation "
-                "du secret des correspondances, y compris si elle agit pour le compte d’un tiers qui recueille les informations interceptées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00052",
+                      "Même sans précision légale, la personne réalisant l’installation peut être considérée comme auteur de la violation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                      "f00053",
+                      "du secret des correspondances, y compris si elle agit pour le compte d’un tiers qui recueille les informations interceptées.",
+                    ),
               ),
             ],
           ),
@@ -300,26 +513,38 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+              "f00054",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction suppose la mauvaise foi : l’auteur agit en toute connaissance de cause en violant le secret des correspondances.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00055",
+                  "L’infraction suppose la mauvaise foi : l’auteur agit en toute connaissance de cause en violant le secret des correspondances.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La Cour de cassation définit la « mauvaise foi » comme la connaissance que les correspondances ne lui étaient pas destinées (",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00056",
+                    "La Cour de cassation définit la « mauvaise foi » comme la connaissance que les correspondances ne lui étaient pas destinées (",
+                  ),
                 ),
                 TextSpan(
-                  text: "Cass. crim., 15 mai 1990",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00057",
+                    "Cass. crim., 15 mai 1990",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
@@ -329,8 +554,16 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La méprise ou l’erreur ne permet pas de caractériser l’infraction faute d’intention coupable. "
-                        "L’intention de nuire n’est pas exigée : le mobile importe peu.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                          "f00058",
+                          "La méprise ou l’erreur ne permet pas de caractériser l’infraction faute d’intention coupable. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                          "f00059",
+                          "L’intention de nuire n’est pas exigée : le mobile importe peu.",
+                        ),
                   ),
                 ],
               ),
@@ -341,25 +574,33 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+              "f00060",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-15 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00061",
+                    "Article 226-15 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque les faits sont commis par le conjoint, le concubin ou le partenaire lié à la victime par un pacte civil de solidarité (PACS).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00062",
+                  "Lorsque les faits sont commis par le conjoint, le concubin ou le partenaire lié à la victime par un pacte civil de solidarité (PACS).",
+                ),
               ),
             ],
           ),
@@ -368,85 +609,154 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+              "f00063",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00064",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
 
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00065",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-15 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00066",
+                    "1 an d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00067",
+                    "article 226-15 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification aggravée (conjoint/concubin/PACS) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00068",
+                    "Qualification aggravée (conjoint/concubin/PACS) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 60 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00069",
+                    "2 ans d’emprisonnement et 60 000 € d’amende. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-15 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00070",
+                    "article 226-15 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00071",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00072",
+                    "Responsabilité pénale possible via ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00073",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00074",
+                    " (responsabilité généralisée depuis le 31 décembre 2005, notamment suite à l’article 54 de la loi n° 2004-204 du 9 mars 2004).",
                   ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00075",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                  "f00076",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale possible via "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00077",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (responsabilité généralisée depuis le 31 décembre 2005, notamment suite à l’article 54 de la loi n° 2004-204 du 9 mars 2004).",
-                ),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
-              _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
-                TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00078",
+                    "l’article 121-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00079",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation, instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart",
+                    "f00080",
+                    " (aide et assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
             ],

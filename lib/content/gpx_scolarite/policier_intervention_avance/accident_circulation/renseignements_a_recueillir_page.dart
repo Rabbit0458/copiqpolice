@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RenseignementsARecueillirPage extends StatelessWidget {
   const RenseignementsARecueillirPage({super.key});
@@ -56,10 +57,18 @@ class RenseignementsARecueillirPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+            "f00002",
+            "Accident circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class RenseignementsARecueillirPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Renseignements à recueillir (accident corporel)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+              "f00003",
+              "Renseignements à recueillir (accident corporel)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,18 +99,46 @@ class RenseignementsARecueillirPage extends StatelessWidget {
 
           // Contexte
           _ConditionCard(
-            title: "Objectif opérationnel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+              "f00004",
+              "Objectif opérationnel",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Une procédure de constat d’accident est d’autant plus pertinente qu’elle repose sur "
-                "des renseignements complets, recueillis méthodiquement dès que les lieux sont sécurisés.\n\n"
-                "Ces éléments servent à :\n"
-                "• comprendre les circonstances et facteurs présumés (lieux, véhicules, usagers, témoins),\n"
-                "• alimenter la procédure, le plan accident (positions, traces, indices),\n"
-                "• compléter le B.A.A.C. (bulletin d’analyse des accidents corporels).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00005",
+                      "Une procédure de constat d’accident est d’autant plus pertinente qu’elle repose sur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00006",
+                      "des renseignements complets, recueillis méthodiquement dès que les lieux sont sécurisés.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00007",
+                      "Ces éléments servent à :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00008",
+                      "• comprendre les circonstances et facteurs présumés (lieux, véhicules, usagers, témoins),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00009",
+                      "• alimenter la procédure, le plan accident (positions, traces, indices),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00010",
+                      "• compléter le B.A.A.C. (bulletin d’analyse des accidents corporels).",
+                    ),
               ),
             ],
           ),
@@ -106,40 +147,55 @@ class RenseignementsARecueillirPage extends StatelessWidget {
 
           // ✅ Cadre légal en haut (comme demandé)
           _ConditionCard(
-            title: "Cadre légal (à connaître)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+              "f00011",
+              "Cadre légal (à connaître)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les policiers agissent notamment dans les conditions fixées par ",
-                ),
-                TextSpan(
-                  text: "l’article 20 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00012",
+                    "Les policiers agissent notamment dans les conditions fixées par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ", pour rechercher et constater les infractions concernées.\n",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00013",
+                    "l’article 20 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00014",
+                    ", pour rechercher et constater les infractions concernées.\n",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Infractions au code de la route et atteintes involontaires : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00015",
+                    "Infractions au code de la route et atteintes involontaires : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 130-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00016",
+                    "article L. 130-3 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -147,8 +203,11 @@ class RenseignementsARecueillirPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Après sécurisation : constatations + procédures adaptées (alcoolémie, stupéfiants, rétention du permis, etc.).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00017",
+                      "Après sécurisation : constatations + procédures adaptées (alcoolémie, stupéfiants, rétention du permis, etc.).",
+                    ),
                   ),
                 ],
               ),
@@ -159,61 +218,138 @@ class RenseignementsARecueillirPage extends StatelessWidget {
 
           // I — Lieux
           _ConditionCard(
-            title: "I — Les lieux de l’accident",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+              "f00018",
+              "I — Les lieux de l’accident",
+            ),
             cardColor: cardLieux,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Localisation"),
-              _BulletPoint(
-                text:
-                    "Commune : si la route est limite de deux communes → retenir celle où circulait l’usager présumé responsable.",
-              ),
-              _BulletPoint(text: "Agglomération ou hors agglomération."),
-              _BulletPoint(
-                text:
-                    "Intersection (ou proximité) : rencontre d’au moins 2 voies. Proximité : < 50 m en agglomération, < 150 m hors agglomération.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00019",
+                  "A) Localisation",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Voie(s) : nature + nom (ex : avenue…), catégorie administrative + numéro (ex : RD1089).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00020",
+                  "Commune : si la route est limite de deux communes → retenir celle où circulait l’usager présumé responsable.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Point de choc initial / sortie de route : numéro + voie, et/ou n° de route, coordonnées GPS, PK (autoroute) ou repère (PR hors autoroute).",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("B) Caractéristiques de la chaussée"),
-              _BulletPoint(
-                text:
-                    "Régime : sens unique / bidirectionnelle, chaussées séparées (terre-plein/îlot), voie à affectation variable.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00021",
+                  "Agglomération ou hors agglomération.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Nombre de voies : circulation générale + voies spéciales (pistes/bandes cyclables, couloirs bus/taxis, voies réservées, tram, covoiturage…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00022",
+                  "Intersection (ou proximité) : rencontre d’au moins 2 voies. Proximité : < 50 m en agglomération, < 150 m hors agglomération.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Priorité : feux, priorité à droite, STOP, cédez-le-passage, route prioritaire, giratoire à feux, etc.",
-              ),
-              _BulletPoint(text: "Profil : plat, pente, sommet/bas de côte."),
-              _BulletPoint(
-                text: "Tracé : rectiligne, courbe gauche/droite, en S.",
-              ),
-              _BulletPoint(
-                text:
-                    "État de surface : sèche, mouillée, flaques, inondée, enneigée, boueuse, verglacée, corps gras/huile, dégradations (nid de poule, affaissement…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00023",
+                  "Voie(s) : nature + nom (ex : avenue…), catégorie administrative + numéro (ex : RD1089).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aménagements : tunnel/souterrain, pont, bretelle, voie ferrée (PN/tram), carrefour aménagé, zone piétonne, péage, chantier…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00024",
+                  "Point de choc initial / sortie de route : numéro + voie, et/ou n° de route, coordonnées GPS, PK (autoroute) ou repère (PR hors autoroute).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Météo & luminosité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00025",
+                  "B) Caractéristiques de la chaussée",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00026",
+                  "Régime : sens unique / bidirectionnelle, chaussées séparées (terre-plein/îlot), voie à affectation variable.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00027",
+                  "Nombre de voies : circulation générale + voies spéciales (pistes/bandes cyclables, couloirs bus/taxis, voies réservées, tram, covoiturage…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00028",
+                  "Priorité : feux, priorité à droite, STOP, cédez-le-passage, route prioritaire, giratoire à feux, etc.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00029",
+                  "Profil : plat, pente, sommet/bas de côte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00030",
+                  "Tracé : rectiligne, courbe gauche/droite, en S.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00031",
+                  "État de surface : sèche, mouillée, flaques, inondée, enneigée, boueuse, verglacée, corps gras/huile, dégradations (nid de poule, affaissement…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00032",
+                  "Aménagements : tunnel/souterrain, pont, bretelle, voie ferrée (PN/tram), carrefour aménagé, zone piétonne, péage, chantier…",
+                ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00033",
+                  "C) Météo & luminosité",
+                ),
+              ),
               _Paragraph(
-                "Noter les conditions (éblouissement, pluie, neige, brouillard…) et la luminosité "
-                "(aube, jour, crépuscule, nuit avec/sans éclairage public) : elles peuvent favoriser l’accident "
-                "ou en aggraver les conséquences.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00034",
+                      "Noter les conditions (éblouissement, pluie, neige, brouillard…) et la luminosité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00035",
+                      "(aube, jour, crépuscule, nuit avec/sans éclairage public) : elles peuvent favoriser l’accident ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00036",
+                      "ou en aggraver les conséquences.",
+                    ),
               ),
             ],
           ),
@@ -222,72 +358,173 @@ class RenseignementsARecueillirPage extends StatelessWidget {
 
           // II — Véhicules
           _ConditionCard(
-            title: "II — Véhicules impliqués",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+              "f00037",
+              "II — Véhicules impliqués",
+            ),
             cardColor: cardVeh,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Typologie"),
               _BulletPoint(
-                text:
-                    "Accident sans collision : 1 seul véhicule sans choc (sortie de route simple, tonneau…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00038",
+                  "Accident sans collision : 1 seul véhicule sans choc (sortie de route simple, tonneau…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accident avec collision : obstacle fixe (arbre, glissière, bâtiment…) ou mobile (véhicule, piéton, animal…), ou collision entre véhicules (avant/arrière/côté), ou carambolage (chaîne / multiple).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00039",
+                  "Accident avec collision : obstacle fixe (arbre, glissière, bâtiment…) ou mobile (véhicule, piéton, animal…), ou collision entre véhicules (avant/arrière/côté), ou carambolage (chaîne / multiple).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Identification conventionnelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00040",
+                  "Identification conventionnelle",
+                ),
+              ),
               _Paragraph(
-                "Pour la compréhension : chaque véhicule (y compris EDPM, cycle, véhicule en fuite) "
-                "est identifié par une lettre (A → Z). La lettre A est attribuée au véhicule dont le conducteur "
-                "est présumé responsable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00041",
+                      "Pour la compréhension : chaque véhicule (y compris EDPM, cycle, véhicule en fuite) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00042",
+                      "est identifié par une lettre (A → Z). La lettre A est attribuée au véhicule dont le conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00043",
+                      "est présumé responsable.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Éléments d’identification (carte grise)"),
-              _BulletPoint(text: "Descriptifs : marque, modèle, couleur."),
-              _BulletPoint(
-                text:
-                    "Catégorie : rubrique J1 (genre national). Exemple : MTL / MTT1 / MTT2. Véhicule spécial : préciser la fonction (scolaire, taxi, ambulance, handicar…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00044",
+                  "A) Éléments d’identification (carte grise)",
+                ),
               ),
-              _BulletPoint(text: "Immatriculation."),
-              _BulletPoint(text: "Date de première mise en circulation."),
-              _BulletPoint(text: "Nom et adresse du propriétaire."),
               _BulletPoint(
-                text:
-                    "CNIT (rubrique D.2.1) ou type mine (anciennes cartes grises).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00045",
+                  "Descriptifs : marque, modèle, couleur.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00046",
+                  "Catégorie : rubrique J1 (genre national). Exemple : MTL / MTT1 / MTT2. Véhicule spécial : préciser la fonction (scolaire, taxi, ambulance, handicar…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00047",
+                  "Immatriculation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00048",
+                  "Date de première mise en circulation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00049",
+                  "Nom et adresse du propriétaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00050",
+                  "CNIT (rubrique D.2.1) ou type mine (anciennes cartes grises).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si non immatriculé (mini-moto, EDPM, cycle…) : relever tout élément utile (genre, marque, modèle, couleur…).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00051",
+                      "Si non immatriculé (mini-moto, EDPM, cycle…) : relever tout élément utile (genre, marque, modèle, couleur…).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Éléments circonstanciels"),
-              _BulletPoint(text: "Sens de circulation."),
-              _BulletPoint(
-                text:
-                    "Manœuvre principale (ex : dépassement, ouverture de portière…).",
-              ),
-              _BulletPoint(text: "Conformité de l’assurance."),
-              _BulletPoint(
-                text: "Conformité contrôle/visite technique (si applicable).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00052",
+                  "B) Éléments circonstanciels",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "État du véhicule / chargement (arrimage, pneus, éclairage…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00053",
+                  "Sens de circulation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Point de choc initial (avant, arrière, avant gauche, côté droit…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00054",
+                  "Manœuvre principale (ex : dépassement, ouverture de portière…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conséquences : dégâts décrits + véhicule repris par conducteur ou enlevé par dépannage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00055",
+                  "Conformité de l’assurance.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00056",
+                  "Conformité contrôle/visite technique (si applicable).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00057",
+                  "État du véhicule / chargement (arrimage, pneus, éclairage…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00058",
+                  "Point de choc initial (avant, arrière, avant gauche, côté droit…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00059",
+                  "Conséquences : dégâts décrits + véhicule repris par conducteur ou enlevé par dépannage.",
+                ),
               ),
             ],
           ),
@@ -296,108 +533,219 @@ class RenseignementsARecueillirPage extends StatelessWidget {
 
           // III — Personnes
           _ConditionCard(
-            title: "III — Personnes concernées",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+              "f00060",
+              "III — Personnes concernées",
+            ),
             cardColor: cardPers,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Usagers (conducteurs, passagers, piétons)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00061",
+                  "A) Usagers (conducteurs, passagers, piétons)",
+                ),
+              ),
               _Paragraph(
-                "Sont concernés : conducteurs, passagers, piétons (et assimilés : pousser une poussette, "
-                "conduire un cycle à la main, PMR en fauteuil à allure du pas, personne sortie du véhicule pour changer une roue…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00062",
+                      "Sont concernés : conducteurs, passagers, piétons (et assimilés : pousser une poussette, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00063",
+                      "conduire un cycle à la main, PMR en fauteuil à allure du pas, personne sortie du véhicule pour changer une roue…).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Renseignements à relever pour chaque usager"),
-              _BulletPoint(text: "Petite identité."),
-              _BulletPoint(
-                text:
-                    "État : indemne / blessé / décédé + gravité des dommages.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00064",
+                  "Renseignements à relever pour chaque usager",
+                ),
               ),
               _BulletPoint(
-                text: "Lieu d’hospitalisation (si applicable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00065",
+                  "Petite identité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Nature du trajet (domicile-travail, domicile-école, professionnel…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00066",
+                  "État : indemne / blessé / décédé + gravité des dommages.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00067",
+                  "Lieu d’hospitalisation (si applicable).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00068",
+                  "Nature du trajet (domicile-travail, domicile-école, professionnel…).",
+                ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Alcoolémie (contrôle obligatoire) : conducteurs et accompagnateurs d’élève conducteur — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00069",
+                    "Alcoolémie (contrôle obligatoire) : conducteurs et accompagnateurs d’élève conducteur — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 234-3 alinéa 1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00070",
+                    "article L. 234-3 alinéa 1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Piétons et passagers : recherche d’imprégnation alcoolique selon ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00071",
+                    "Piétons et passagers : recherche d’imprégnation alcoolique selon ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 3354-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                    "f00072",
+                    "l’article L. 3354-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Stupéfiants : dépistage obligatoire puis vérifications le cas échéant (conducteurs et accompagnateurs d’élève conducteur).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00073",
+                  "Stupéfiants : dépistage obligatoire puis vérifications le cas échéant (conducteurs et accompagnateurs d’élève conducteur).",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Focus conducteur"),
-              _BulletPoint(text: "Responsabilité présumée."),
-              _BulletPoint(
-                text:
-                    "Permis : n°, validité, date d’obtention, catégorie adaptée au véhicule.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00074",
+                  "Focus conducteur",
+                ),
               ),
-              _BulletPoint(text: "Infraction(s) commise(s)."),
               _BulletPoint(
-                text:
-                    "Équipements de sécurité : ceinture, casque, gants, gilet rétro-réfléchissant…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00075",
+                  "Responsabilité présumée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00076",
+                  "Permis : n°, validité, date d’obtention, catégorie adaptée au véhicule.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00077",
+                  "Infraction(s) commise(s).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00078",
+                  "Équipements de sécurité : ceinture, casque, gants, gilet rétro-réfléchissant…",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Rétention du permis : possible notamment en accident corporel/mortel s’il existe des raisons plausibles de soupçonner une infraction (téléphone tenu en main, vitesse, règles de croisement/dépassement, intersection/priorités…).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00079",
+                      "Rétention du permis : possible notamment en accident corporel/mortel s’il existe des raisons plausibles de soupçonner une infraction (téléphone tenu en main, vitesse, règles de croisement/dépassement, intersection/priorités…).",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Focus passager"),
-              _BulletPoint(text: "Place occupée dans le véhicule."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00080",
+                  "Focus passager",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Équipements de sécurité : ceinture, casque, dispositif enfant…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00081",
+                  "Place occupée dans le véhicule.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00082",
+                  "Équipements de sécurité : ceinture, casque, dispositif enfant…",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Focus piéton"),
-              _BulletPoint(
-                text:
-                    "Localisation : sur chaussée, trottoir, à ± 50 m d’un passage piéton…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00083",
+                  "Focus piéton",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Manœuvre : sens de traversée, descente d’un véhicule, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00084",
+                  "Localisation : sur chaussée, trottoir, à ± 50 m d’un passage piéton…",
+                ),
               ),
-              _BulletPoint(text: "Infraction éventuellement commise."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00085",
+                  "Manœuvre : sens de traversée, descente d’un véhicule, etc.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                  "f00086",
+                  "Infraction éventuellement commise.",
+                ),
+              ),
             ],
           ),
 
@@ -405,16 +753,36 @@ class RenseignementsARecueillirPage extends StatelessWidget {
 
           // Témoins
           _ConditionCard(
-            title: "IV — Témoins",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+              "f00087",
+              "IV — Témoins",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les témoins sont des personnes présentes sur les lieux sans être impliquées, mais pouvant "
-                "apporter des éléments déterminants (vitesse excessive/inadaptée, dépassement dangereux, "
-                "refus de priorité, téléphone, absence d’éclairage…).\n\n"
-                "Recueillir leurs identités, coordonnées, emplacement au moment des faits et le récit précis.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00088",
+                      "Les témoins sont des personnes présentes sur les lieux sans être impliquées, mais pouvant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00089",
+                      "apporter des éléments déterminants (vitesse excessive/inadaptée, dépassement dangereux, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00090",
+                      "refus de priorité, téléphone, absence d’éclairage…).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/renseignements_a_recueillir_page.dart",
+                      "f00091",
+                      "Recueillir leurs identités, coordonnées, emplacement au moment des faits et le récit précis.",
+                    ),
               ),
             ],
           ),
@@ -670,9 +1038,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuditionTemoinsPage extends StatelessWidget {
   const AuditionTemoinsPage({super.key});
@@ -55,10 +56,18 @@ class AuditionTemoinsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Témoignage",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+            "f00002",
+            "Témoignage",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class AuditionTemoinsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas — Procès-verbal d’audition de témoin",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00003",
+              "Canevas — Procès-verbal d’audition de témoin",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -111,43 +124,90 @@ class AuditionTemoinsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (cadre juridique + "vu les articles...")
           _ConditionCard(
-            title: "Cadre juridique (à faire apparaître en haut du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00004",
+              "Cadre juridique (à faire apparaître en haut du PV)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’agent de police judiciaire doit situer son action dans un cadre juridique précis : "
-                "enquête de flagrance ou enquête préliminaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00005",
+                      "L’agent de police judiciaire doit situer son action dans un cadre juridique précis : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00006",
+                      "enquête de flagrance ou enquête préliminaire.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Formule attendue (exemples)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00007",
+                  "Formule attendue (exemples)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "• « Vu les "),
                 TextSpan(
-                  text: "articles 53 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00008",
+                    "• « Vu les ",
                   ),
                 ),
-                TextSpan(text: " » (flagrance)\n"),
-                TextSpan(text: "• « Vu les "),
                 TextSpan(
-                  text: "articles 75 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00009",
+                    "articles 53 et suivants du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00010",
+                    " » (flagrance)\n",
                   ),
                 ),
-                TextSpan(text: " » (préliminaire)"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00011",
+                    "• « Vu les ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00012",
+                    "articles 75 et suivants du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00013",
+                    " » (préliminaire)",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le cadre juridique doit être clair dès l’entête : il conditionne le vocabulaire, les mentions et l’ensemble du PV.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00014",
+                      "Le cadre juridique doit être clair dès l’entête : il conditionne le vocabulaire, les mentions et l’ensemble du PV.",
+                    ),
                   ),
                 ],
               ),
@@ -157,16 +217,36 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 — Lieu de rédaction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00015",
+              "1 — Lieu de rédaction",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La rédaction a lieu le plus souvent au service. Elle peut aussi être effectuée :\n"
-                "• sur les lieux de l’infraction,\n"
-                "• au domicile du témoin,\n"
-                "• ou en tout autre lieu (ex : hôpital).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00016",
+                      "La rédaction a lieu le plus souvent au service. Elle peut aussi être effectuée :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00017",
+                      "• sur les lieux de l’infraction,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00018",
+                      "• au domicile du témoin,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00019",
+                      "• ou en tout autre lieu (ex : hôpital).",
+                    ),
               ),
             ],
           ),
@@ -174,19 +254,35 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2 — Instructions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00020",
+              "2 — Instructions",
+            ),
             cardColor: cardMethod,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Selon la nature de la procédure"),
-              _BulletPoint(
-                text:
-                    "En flagrant délit : l’A.P.J. agit conformément aux instructions reçues de l’O.P.J.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00021",
+                  "Selon la nature de la procédure",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En préliminaire : l’A.P.J. agit sous le contrôle de l’O.P.J.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00022",
+                  "En flagrant délit : l’A.P.J. agit conformément aux instructions reçues de l’O.P.J.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00023",
+                  "En préliminaire : l’A.P.J. agit sous le contrôle de l’O.P.J.",
+                ),
               ),
             ],
           ),
@@ -194,23 +290,53 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3 — Cadre juridique (mention procédurale)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00024",
+              "3 — Cadre juridique (mention procédurale)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le PV doit indiquer explicitement si l’audition s’inscrit dans :\n"
-                "• une enquête de flagrance\n"
-                "• ou une enquête préliminaire\n\n"
-                "Puis reprendre la formule « vu les articles… » correspondante.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00025",
+                      "Le PV doit indiquer explicitement si l’audition s’inscrit dans :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00026",
+                      "• une enquête de flagrance\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00027",
+                      "• ou une enquête préliminaire\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00028",
+                      "Puis reprendre la formule « vu les articles… » correspondante.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "À intégrer tel quel, en haut du PV : "),
                   TextSpan(
-                    text: "articles 53 et suivants du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00029",
+                      "À intégrer tel quel, en haut du PV : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00030",
+                      "articles 53 et suivants du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -218,7 +344,11 @@ class AuditionTemoinsPage extends StatelessWidget {
                   ),
                   TextSpan(text: " ou "),
                   TextSpan(
-                    text: "articles 75 et suivants du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00031",
+                      "articles 75 et suivants du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -233,15 +363,31 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "4 — Assistants éventuels",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00032",
+              "4 — Assistants éventuels",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour certaines affaires complexes ou lorsque la personnalité du témoin peut engendrer des difficultés, "
-                "le rédacteur peut se faire assister d’un collègue.\n\n"
-                "Il convient de le mentionner clairement (nom, grade, service).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00033",
+                      "Pour certaines affaires complexes ou lorsque la personnalité du témoin peut engendrer des difficultés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00034",
+                      "le rédacteur peut se faire assister d’un collègue.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00035",
+                      "Il convient de le mentionner clairement (nom, grade, service).",
+                    ),
               ),
             ],
           ),
@@ -249,22 +395,41 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "5 — Mode de comparution",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00036",
+              "5 — Mode de comparution",
+            ),
             cardColor: cardOps,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le témoin peut :\n"
-                "• se présenter spontanément (« constatons que se présente… »),\n"
-                "• ou être convoqué (« Avons mandé et constatons que se présente… »).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00037",
+                      "Le témoin peut :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00038",
+                      "• se présenter spontanément (« constatons que se présente… »),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00039",
+                      "• ou être convoqué (« Avons mandé et constatons que se présente… »).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le choix des formules doit être cohérent avec la réalité de la comparution (spontanée / convoquée).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00040",
+                      "Le choix des formules doit être cohérent avec la réalité de la comparution (spontanée / convoquée).",
+                    ),
                   ),
                 ],
               ),
@@ -274,46 +439,75 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "6 — Identité (et protections possibles)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00041",
+              "6 — Identité (et protections possibles)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Objectif : identifier le témoin et pouvoir le recontacter. "
-                "L’A.P.J. enregistre la petite identité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00042",
+                      "Objectif : identifier le témoin et pouvoir le recontacter. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00043",
+                      "L’A.P.J. enregistre la petite identité.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le témoin peut se domicilier à une autre adresse que la sienne (",
-                ),
-                TextSpan(
-                  text: "article 706-57 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00044",
+                    "Le témoin peut se domicilier à une autre adresse que la sienne (",
                   ),
                 ),
-                TextSpan(text: ") ou déposer de manière anonyme ("),
                 TextSpan(
-                  text: "article 706-58 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00045",
+                    "article 706-57 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00046",
+                    ") ou déposer de manière anonyme (",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                    "f00047",
+                    "article 706-58 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Petite identité : état civil + éléments de contact utiles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00048",
+                  "Petite identité : état civil + éléments de contact utiles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mentionner clairement toute modalité particulière (domiciliation / anonymat).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00049",
+                  "Mentionner clairement toute modalité particulière (domiciliation / anonymat).",
+                ),
               ),
             ],
           ),
@@ -321,52 +515,114 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "7 — Déclarations (structure idéale)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00050",
+              "7 — Déclarations (structure idéale)",
+            ),
             cardColor: cardOps,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Déroulé des faits (récit du témoin)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00051",
+                  "A) Déroulé des faits (récit du témoin)",
+                ),
+              ),
               _Paragraph(
-                "Le témoin décrit précisément ce qu’il a vu, entendu et fait.\n"
-                "Les expressions employées doivent être retranscrites telles quelles, entre guillemets.\n\n"
-                "Le rédacteur doit situer le témoin dans le temps et l’espace : "
-                "Date, Heure, Lieu, Motif (H.L.M.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00052",
+                      "Le témoin décrit précisément ce qu’il a vu, entendu et fait.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00053",
+                      "Les expressions employées doivent être retranscrites telles quelles, entre guillemets.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00054",
+                      "Le rédacteur doit situer le témoin dans le temps et l’espace : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00055",
+                      "Date, Heure, Lieu, Motif (H.L.M.).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Déclarations spontanées puis questions"),
-              _IntroBullet(
-                text:
-                    "1) Récit libre (spontané) pour poser le contexte et éviter l’influence.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00056",
+                  "B) Déclarations spontanées puis questions",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "2) Questions pour qualifier les faits et préciser le rôle de chacun.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00057",
+                  "1) Récit libre (spontané) pour poser le contexte et éviter l’influence.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "3) Si besoin : récit guidé (toujours sans suggérer la réponse).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00058",
+                  "2) Questions pour qualifier les faits et préciser le rôle de chacun.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00059",
+                  "3) Si besoin : récit guidé (toujours sans suggérer la réponse).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les questions doivent être « ouvertes » : elles ne doivent jamais suggérer la réponse.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00060",
+                      "Les questions doivent être « ouvertes » : elles ne doivent jamais suggérer la réponse.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Signalement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00061",
+                  "C) Signalement",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Sexe, âge apparent, taille, corpulence, type, cheveux, yeux, signes particuliers.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00062",
+                  "Sexe, âge apparent, taille, corpulence, type, cheveux, yeux, signes particuliers.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("D) Reconnaissance éventuelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00063",
+                  "D) Reconnaissance éventuelle",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Sur photographies et/ou présentation derrière une glace sans tain.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00064",
+                  "Sur photographies et/ou présentation derrière une glace sans tain.",
+                ),
               ),
             ],
           ),
@@ -374,24 +630,46 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "8 — Remise de documents / éléments",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00065",
+              "8 — Remise de documents / éléments",
+            ),
             cardColor: cardMethod,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tous éléments, indices, objets, documents découverts par le témoin sur les lieux des faits "
-                "ou s’y rapportant, sont appréhendés pour être mis sous scellés ou annexés "
-                "selon leur nature et leur importance.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00066",
+                      "Tous éléments, indices, objets, documents découverts par le témoin sur les lieux des faits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00067",
+                      "ou s’y rapportant, sont appréhendés pour être mis sous scellés ou annexés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00068",
+                      "selon leur nature et leur importance.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Préciser la nature exacte de l’élément remis (document, photo, objet, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00069",
+                  "Préciser la nature exacte de l’élément remis (document, photo, objet, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Tracer la prise en charge (annexe / scellé) de manière claire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00070",
+                  "Tracer la prise en charge (annexe / scellé) de manière claire.",
+                ),
               ),
             ],
           ),
@@ -399,22 +677,41 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "9 — Énonciation terminale (clôture)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00071",
+              "9 — Énonciation terminale (clôture)",
+            ),
             cardColor: cardClose,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’A.P.J. mentionne que lecture est faite par la personne.\n"
-                "Si cela est impossible (ex : non-voyant, ne sait pas lire), mentionner la lecture faite par l’A.P.J.\n\n"
-                "La personne signe le procès-verbal sous l’énonciation terminale, après lecture.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00072",
+                      "L’A.P.J. mentionne que lecture est faite par la personne.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00073",
+                      "Si cela est impossible (ex : non-voyant, ne sait pas lire), mentionner la lecture faite par l’A.P.J.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00074",
+                      "La personne signe le procès-verbal sous l’énonciation terminale, après lecture.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exemple : « Après lecture faite par nous-même, l’intéressé ne sachant pas lire… »",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00075",
+                      "Exemple : « Après lecture faite par nous-même, l’intéressé ne sachant pas lire… »",
+                    ),
                   ),
                 ],
               ),
@@ -424,23 +721,41 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "10 — Annexes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00076",
+              "10 — Annexes",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les documents remis doivent être annexés au procès-verbal.\n"
-                "La rubrique peut figurer en marge pour plus de clarté.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00077",
+                      "Les documents remis doivent être annexés au procès-verbal.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                      "f00078",
+                      "La rubrique peut figurer en marge pour plus de clarté.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lister les annexes avec une identification simple (Annexe 1, Annexe 2…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00079",
+                  "Lister les annexes avec une identification simple (Annexe 1, Annexe 2…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rester cohérent entre « remis », « annexé », « placé sous scellé ».",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00080",
+                  "Rester cohérent entre « remis », « annexé », « placé sous scellé ».",
+                ),
               ),
             ],
           ),
@@ -448,18 +763,29 @@ class AuditionTemoinsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "11 — Avis O.P.J.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+              "f00081",
+              "11 — Avis O.P.J.",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur mentionne l’avis donné à l’O.P.J. des diligences réalisées et du contenu utile à la procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00082",
+                  "Le rédacteur mentionne l’avis donné à l’O.P.J. des diligences réalisées et du contenu utile à la procédure.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Préciser le mode d’avis (téléphone, compte-rendu, etc.) selon tes usages.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/audition_temoins_page.dart",
+                  "f00083",
+                  "Préciser le mode d’avis (téléphone, compte-rendu, etc.) selon tes usages.",
+                ),
               ),
             ],
           ),
@@ -768,9 +1094,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

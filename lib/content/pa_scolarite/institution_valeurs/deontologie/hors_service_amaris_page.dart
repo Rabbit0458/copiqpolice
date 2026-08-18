@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaHorsServiceAmarisPage extends StatelessWidget {
   const PaHorsServiceAmarisPage({super.key});
@@ -50,10 +51,18 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Déontologie",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+            "f00002",
+            "Déontologie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Policier hors service : dois-je intervenir et comment ?",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00003",
+              "Policier hors service : dois-je intervenir et comment ?",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -80,15 +93,31 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Contexte AMARIS
           _ConditionCard(
-            title: "Mémo AMARIS — repères",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00004",
+              "Mémo AMARIS — repères",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’obligation d’intervention, d’assistance et de protection d’un policier perdure au-delà du temps de travail. "
-                "Elle va plus loin que la simple obligation d’assistance à personne en péril.\n\n"
-                "Objectif : intervenir avec discernement, en garantissant la sécurité (la sienne et celle des tiers).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00005",
+                      "L’obligation d’intervention, d’assistance et de protection d’un policier perdure au-delà du temps de travail. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00006",
+                      "Elle va plus loin que la simple obligation d’assistance à personne en péril.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00007",
+                      "Objectif : intervenir avec discernement, en garantissant la sécurité (la sienne et celle des tiers).",
+                    ),
               ),
             ],
           ),
@@ -97,30 +126,39 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (références + idée-force)
           _ConditionCard(
-            title: "Référence & principe",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00008",
+              "Référence & principe",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le devoir d’intervenir hors service est prévu par les textes : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                    "f00009",
+                    "Le devoir d’intervenir hors service est prévu par les textes : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Code de la sécurité intérieure (CSI)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                    "f00010",
+                    "Code de la sécurité intérieure (CSI)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ", "),
                 TextSpan(
-                  text: "Règlement général d’emploi (RGEPN)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                    "f00011",
+                    "Règlement général d’emploi (RGEPN)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -128,8 +166,11 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Hors service, intervenir ne veut pas dire « se mettre en danger » : l’obligation d’agir s’exerce avec discernement et adaptation au contexte.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00012",
+                      "Hors service, intervenir ne veut pas dire « se mettre en danger » : l’obligation d’agir s’exerce avec discernement et adaptation au contexte.",
+                    ),
                   ),
                 ],
               ),
@@ -140,21 +181,48 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Quand suis-je obligé d’intervenir ?
           _ConditionCard(
-            title: "Quand suis-je obligé d’intervenir ?",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00013",
+              "Quand suis-je obligé d’intervenir ?",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Situations typiques"),
-              _BulletPoint(text: "Quand des personnes sont en péril."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00014",
+                  "Situations typiques",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Quand des infractions sont commises contre des personnes ou des biens.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00015",
+                  "Quand des personnes sont en péril.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00016",
+                  "Quand des infractions sont commises contre des personnes ou des biens.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le devoir d’intervenir s’exerce de sa propre initiative ou si vous êtes requis : "
-                "porter aide à toute personne en danger et faire cesser (ou contribuer à faire cesser) les infractions.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00017",
+                      "Le devoir d’intervenir s’exerce de sa propre initiative ou si vous êtes requis : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00018",
+                      "porter aide à toute personne en danger et faire cesser (ou contribuer à faire cesser) les infractions.",
+                    ),
               ),
             ],
           ),
@@ -163,24 +231,48 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Comment intervenir ?
           _ConditionCard(
-            title: "Comment intervenir (concrètement) ?",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00019",
+              "Comment intervenir (concrètement) ?",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Deux options, selon le contexte"),
-              _IntroBullet(
-                text:
-                    "Intervenir personnellement (action directe), si c’est pertinent et sécurisé.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00020",
+                  "Deux options, selon le contexte",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Solliciter une patrouille / des renforts et/ou les secours.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00021",
+                  "Intervenir personnellement (action directe), si c’est pertinent et sécurisé.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00022",
+                  "Solliciter une patrouille / des renforts et/ou les secours.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Vous adaptez votre réponse à l’urgence, au contexte et aux moyens dont vous disposez. "
-                "Hors service, vous n’avez pas le même soutien humain et logistique qu’en service (et vous pouvez être avec votre famille).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00023",
+                      "Vous adaptez votre réponse à l’urgence, au contexte et aux moyens dont vous disposez. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00024",
+                      "Hors service, vous n’avez pas le même soutien humain et logistique qu’en service (et vous pouvez être avec votre famille).",
+                    ),
               ),
             ],
           ),
@@ -189,28 +281,55 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Sécurité / discernement
           _ConditionCard(
-            title: "Sécurité & discernement",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00025",
+              "Sécurité & discernement",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Règle d’or"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00026",
+                  "Règle d’or",
+                ),
+              ),
               _Paragraph(
-                "L’obligation d’agir ne signifie pas prendre un risque inconsidéré. "
-                "Hors service, plus encore qu’en service, l’intervention doit rester proportionnée et réaliste.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00027",
+                      "L’obligation d’agir ne signifie pas prendre un risque inconsidéré. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00028",
+                      "Hors service, plus encore qu’en service, l’intervention doit rester proportionnée et réaliste.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "J’évalue la situation (danger immédiat, nombre d’auteurs, armes, environnement, présence de proches…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00029",
+                  "J’évalue la situation (danger immédiat, nombre d’auteurs, armes, environnement, présence de proches…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Je choisis l’action la plus utile et la plus sûre, au vu de l’urgence et du contexte.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00030",
+                  "Je choisis l’action la plus utile et la plus sûre, au vu de l’urgence et du contexte.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si je ne peux pas agir directement, je fais intervenir ceux qui le peuvent (forces / secours).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00031",
+                  "Si je ne peux pas agir directement, je fais intervenir ceux qui le peuvent (forces / secours).",
+                ),
               ),
             ],
           ),
@@ -219,20 +338,42 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Si je n’interviens pas moi-même : procédure
           _ConditionCard(
-            title: "Si je n’interviens pas moi-même",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00032",
+              "Si je n’interviens pas moi-même",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Je déclenche l’intervention"),
-              _BulletPoint(text: "J’appelle le 17."),
-              _BulletPoint(
-                text:
-                    "Je décline ma qualité (policier) et je donne un maximum de renseignements.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00033",
+                  "Je déclenche l’intervention",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Je décris précisément ce que j’ai observé (faits, lieux, descriptions, direction de fuite, danger…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00034",
+                  "J’appelle le 17.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00035",
+                  "Je décline ma qualité (policier) et je donne un maximum de renseignements.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00036",
+                  "Je décris précisément ce que j’ai observé (faits, lieux, descriptions, direction de fuite, danger…).",
+                ),
               ),
             ],
           ),
@@ -241,17 +382,35 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // En présence d’autres services intervenants
           _ConditionCard(
-            title: "Si d’autres services interviennent",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00037",
+              "Si d’autres services interviennent",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Éviter la confusion"),
-              _BulletPoint(
-                text: "Je m’identifie au plus vite et/ou je suis identifiable.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00038",
+                  "Éviter la confusion",
+                ),
               ),
               _BulletPoint(
-                text: "Je me mets à disposition des effectifs intervenants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00039",
+                  "Je m’identifie au plus vite et/ou je suis identifiable.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00040",
+                  "Je me mets à disposition des effectifs intervenants.",
+                ),
               ),
             ],
           ),
@@ -260,33 +419,53 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Arme / carte / brassard / RIO
           _ConditionCard(
-            title: "Règles générales de sécurité",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00041",
+              "Règles générales de sécurité",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Intervenir hors service, c’est aussi respecter les règles générales de sécurité.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00042",
+                  "Intervenir hors service, c’est aussi respecter les règles générales de sécurité.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Si je porte mon arme : je détiens en permanence ma carte professionnelle.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00043",
+                  "Si je porte mon arme : je détiens en permanence ma carte professionnelle.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Je détiens un brassard Police supportant mon numéro RIO.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00044",
+                  "Je détiens un brassard Police supportant mon numéro RIO.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "J’applique les mêmes règles générales de sécurité que lorsque je suis en service.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00045",
+                  "J’applique les mêmes règles générales de sécurité que lorsque je suis en service.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Point clé : être identifiable et ne pas créer de confusion lors de l’arrivée des effectifs.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00046",
+                      "Point clé : être identifiable et ne pas créer de confusion lors de l’arrivée des effectifs.",
+                    ),
                   ),
                 ],
               ),
@@ -297,30 +476,49 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Résumé “mémo”
           _ConditionCard(
-            title: "En résumé",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00047",
+              "En résumé",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Intervenir, c’est signaler une infraction commise ou se commettant.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00048",
+                  "Intervenir, c’est signaler une infraction commise ou se commettant.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "C’est agir directement ou solliciter une patrouille et/ou les secours.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00049",
+                  "C’est agir directement ou solliciter une patrouille et/ou les secours.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Hors service, intervenir ne veut pas dire prendre des risques inconsidérés.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00050",
+                  "Hors service, intervenir ne veut pas dire prendre des risques inconsidérés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "J’interviens avec discernement : que puis-je faire de mieux, au vu de l’urgence et du contexte ?",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00051",
+                  "J’interviens avec discernement : que puis-je faire de mieux, au vu de l’urgence et du contexte ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si nécessaire : je reste à disposition des effectifs locaux et je rends compte à ma hiérarchie.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                  "f00052",
+                  "Si nécessaire : je reste à disposition des effectifs locaux et je rends compte à ma hiérarchie.",
+                ),
               ),
             ],
           ),
@@ -329,29 +527,39 @@ class PaHorsServiceAmarisPage extends StatelessWidget {
 
           // Attention fiche
           _ConditionCard(
-            title: "Attention",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+              "f00053",
+              "Attention",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "INFORMATION",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette fiche ne comporte pas de prescriptions contraignantes ou exclusives : elle apporte un éclairage et une aide dans l’accomplissement des activités professionnelles.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                      "f00054",
+                      "Cette fiche ne comporte pas de prescriptions contraignantes ou exclusives : elle apporte un éclairage et une aide dans l’accomplissement des activités professionnelles.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Source : fiches AMARIS (mise à jour "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart",
+                    "f00055",
+                    "Source : fiches AMARIS (mise à jour ",
+                  ),
+                ),
                 TextSpan(
                   text: "13/03/2025",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),

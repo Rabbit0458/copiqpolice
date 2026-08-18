@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMoyenCryptologiePage extends StatelessWidget {
   const PaMoyenCryptologiePage({super.key});
@@ -44,7 +45,11 @@ class PaMoyenCryptologiePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Moyen de cryptologie",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+            "f00001",
+            "Moyen de cryptologie",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,27 +75,33 @@ class PaMoyenCryptologiePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Lorsqu'un moyen de cryptologie au sens de l'article 29 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique a été utilisé pour préparer ou commettre un crime ou un délit, ou pour en faciliter la préparation ou la commission, le maximum de la peine privative de liberté est relevé. ",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00002",
+                        "Lorsqu'un moyen de cryptologie au sens de l'article 29 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique a été utilisé pour préparer ou commettre un crime ou un délit, ou pour en faciliter la préparation ou la commission, le maximum de la peine privative de liberté est relevé. ",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: "\n\n"),
                     TextSpan(
-                      text:
-                          "Les dispositions du présent article ne sont toutefois pas applicables à l'auteur ou au complice de l'infraction qui, à la demande des autorités judiciaires ou administratives, leur a remis la version en clair des messages chiffrés ainsi que les conventions secrètes nécessaires au déchiffrement.",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00003",
+                        "Les dispositions du présent article ne sont toutefois pas applicables à l'auteur ou au complice de l'infraction qui, à la demande des autorités judiciaires ou administratives, leur a remis la version en clair des messages chiffrés ainsi que les conventions secrètes nécessaires au déchiffrement.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -100,22 +111,39 @@ class PaMoyenCryptologiePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                    "f00004",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "L'article "),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                          "f00005",
+                          "L'article ",
+                        ),
+                      ),
                       law("132-79"),
-                      const TextSpan(
-                        text:
-                            " du C.P. définit l'utilisation d'un moyen de cryptologie. Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                          "f00006",
+                          " du C.P. définit l'utilisation d'un moyen de cryptologie. Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Cette circonstance a pour but de réprimer plus sévèrement les auteurs d'infractions qui ont utilisé un moyen permettant d'assurer la confidentialité des communications pour préparer, faciliter ou commettre les faits.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00007",
+                        "Cette circonstance a pour but de réprimer plus sévèrement les auteurs d'infractions qui ont utilisé un moyen permettant d'assurer la confidentialité des communications pour préparer, faciliter ou commettre les faits.",
+                      ),
                     ),
                   ],
                 ),
@@ -123,32 +151,69 @@ class PaMoyenCryptologiePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                    "f00008",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _SubTitle(
-                      "2.1 - L'utilisation d’un moyen de cryptologie",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00009",
+                        "2.1 - L'utilisation d’un moyen de cryptologie",
+                      ),
                     ),
-                    const _Paragraph(
-                      "Il s'agit d'un moyen permettant d'assurer la confidentialité des communications.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00010",
+                        "Il s'agit d'un moyen permettant d'assurer la confidentialité des communications.",
+                      ),
                     ),
                     const SizedBox(height: 10),
                     _Paragraph.rich([
-                      const TextSpan(text: "L'article "),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                          "f00011",
+                          "L'article ",
+                        ),
+                      ),
                       law("29"),
-                      const TextSpan(text: " de la loi n° "),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                          "f00012",
+                          " de la loi n° ",
+                        ),
+                      ),
                       law("2004-575"),
-                      const TextSpan(
-                        text:
-                            " du 21 juin 2004 précise : « On entend par moyen de cryptologie, tout matériel ou logiciel conçu ou modifié pour transformer des données, qu'il s'agisse d'informations ou de signaux, à l'aide de conventions secrètes ou pour réaliser l'opération inverse avec ou sans convention secrète. Ces moyens de cryptologie ont principalement pour objet de garantir la sécurité du stockage ou de la transmission des données, en permettant d'assurer leur confidentialité, leur authentification ou le contrôle de leur intégrité. »",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                          "f00013",
+                          " du 21 juin 2004 précise : « On entend par moyen de cryptologie, tout matériel ou logiciel conçu ou modifié pour transformer des données, qu'il s'agisse d'informations ou de signaux, à l'aide de conventions secrètes ou pour réaliser l'opération inverse avec ou sans convention secrète. Ces moyens de cryptologie ont principalement pour objet de garantir la sécurité du stockage ou de la transmission des données, en permettant d'assurer leur confidentialité, leur authentification ou le contrôle de leur intégrité. »",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 12),
-                    const _SubTitle('2.2 - Le but poursuivi'),
-                    const _Paragraph(
-                      "Il s'agit de réprimer les infractions pour lesquelles un procédé technique a été utilisé.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00014",
+                        '2.2 - Le but poursuivi',
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00015",
+                        "Il s'agit de réprimer les infractions pour lesquelles un procédé technique a été utilisé.",
+                      ),
                     ),
                   ],
                 ),
@@ -156,43 +221,79 @@ class PaMoyenCryptologiePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                    "f00016",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "L'article "),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                          "f00017",
+                          "L'article ",
+                        ),
+                      ),
                       law("132-79"),
-                      const TextSpan(
-                        text:
-                            " du code pénal est de portée générale. Ses dispositions s'appliquent à tous les crimes et délits qu'ils aient été commis ou tentés.",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                          "f00018",
+                          " du code pénal est de portée générale. Ses dispositions s'appliquent à tous les crimes et délits qu'ils aient été commis ou tentés.",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Cependant, cette circonstance ne sera pas applicable à l'auteur ou au complice de l'infraction qui : « à la demande des autorités judiciaires ou administratives, leur a remis la version en clair des messages chiffrés ainsi que les conventions secrètes nécessaires au déchiffrement. »",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00019",
+                        "Cependant, cette circonstance ne sera pas applicable à l'auteur ou au complice de l'infraction qui : « à la demande des autorités judiciaires ou administratives, leur a remis la version en clair des messages chiffrés ainsi que les conventions secrètes nécessaires au déchiffrement. »",
+                      ),
                     ),
                     const SizedBox(height: 12),
 
                     _NotaBox(
-                      title: 'Jurisprudence',
+                      title: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                        "f00020",
+                        'Jurisprudence',
+                      ),
                       bodySpans: [
-                        const TextSpan(
-                          text:
-                              "Le code de déverrouillage d'un téléphone mobile peut constituer une clé de déchiffrement, si ce téléphone est équipé d'un moyen de cryptologie ",
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                            "f00021",
+                            "Le code de déverrouillage d'un téléphone mobile peut constituer une clé de déchiffrement, si ce téléphone est équipé d'un moyen de cryptologie ",
+                          ),
                         ),
                         const TextSpan(text: "("),
-                        law("Cass. crim., n° 19-85.984 du 11 octobre 2020"),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                            "f00022",
+                            "Cass. crim., n° 19-85.984 du 11 octobre 2020",
+                          ),
+                        ),
                         const TextSpan(text: "). "),
-                        const TextSpan(
-                          text:
-                              "L'utilisation d'un tel téléphone dans les conditions prévues par l'article ",
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                            "f00023",
+                            "L'utilisation d'un tel téléphone dans les conditions prévues par l'article ",
+                          ),
                         ),
                         law("132-79"),
-                        const TextSpan(
-                          text:
-                              " pourrait donc constituer la circonstance aggravante.",
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart",
+                            "f00024",
+                            " pourrait donc constituer la circonstance aggravante.",
+                          ),
                         ),
                       ],
                     ),

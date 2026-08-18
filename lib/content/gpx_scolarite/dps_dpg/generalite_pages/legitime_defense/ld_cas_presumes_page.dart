@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class LdCasPresumesPage extends StatelessWidget {
   const LdCasPresumesPage({super.key});
@@ -36,7 +37,11 @@ class LdCasPresumesPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Cas présumés de légitime défense',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+            "f00001",
+            'Cas présumés de légitime défense',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -51,7 +56,11 @@ class LdCasPresumesPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            'III. Cas présumés de légitime défense\n(Article 122-6 du Code pénal)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+              "f00002",
+              'III. Cas présumés de légitime défense\n(Article 122-6 du Code pénal)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -60,9 +69,21 @@ class LdCasPresumesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'La loi prévoit des situations dans lesquelles la personne qui accomplit '
-            'l’acte est présumée avoir agi en état de légitime défense. '
-            'Il s’agit d’une présomption simple : elle peut être renversée par la preuve contraire.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                  "f00003",
+                  'La loi prévoit des situations dans lesquelles la personne qui accomplit ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                  "f00004",
+                  'l’acte est présumée avoir agi en état de légitime défense. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                  "f00005",
+                  'Il s’agit d’une présomption simple : elle peut être renversée par la preuve contraire.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 14,
@@ -72,7 +93,11 @@ class LdCasPresumesPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Deux grands cas sont visés par l’article 122-6 du Code pénal :',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+              "f00006",
+              'Deux grands cas sont visés par l’article 122-6 du Code pénal :',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 14,
@@ -82,17 +107,23 @@ class LdCasPresumesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
 
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text:
-                  'La défense de nuit contre l’entrée frauduleuse dans un lieu d’habitation ;',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                "f00007",
+                'La défense de nuit contre l’entrée frauduleuse dans un lieu d’habitation ;',
+              ),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
           ]),
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text:
-                  'La défense contre les auteurs de vols ou de pillages exécutés avec violence.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                "f00008",
+                'La défense contre les auteurs de vols ou de pillages exécutés avec violence.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
           ]),
@@ -103,21 +134,37 @@ class LdCasPresumesPage extends StatelessWidget {
           // 1 — PREMIER CAS : LA DÉFENSE DE NUIT
           // ============================================
           _HypoCard(
-            title: '1. Défense de nuit contre l’entrée dans un lieu habité',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+              "f00009",
+              '1. Défense de nuit contre l’entrée dans un lieu habité',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Est présumé avoir agi en état de légitime défense celui qui, '
-                'pour repousser, DE NUIT, l’entrée dans un lieu habité, accomplit un acte de défense.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00010",
+                      'Est présumé avoir agi en état de légitime défense celui qui, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00011",
+                      'pour repousser, DE NUIT, l’entrée dans un lieu habité, accomplit un acte de défense.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'DE NUIT',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                    "f00012",
+                    'DE NUIT',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -125,36 +172,67 @@ class LdCasPresumesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : l’intervalle de temps est compris entre le coucher et le lever du soleil. '
-                      'La présomption ne joue pas de jour.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00013",
+                        ' : l’intervalle de temps est compris entre le coucher et le lever du soleil. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00014",
+                        'La présomption ne joue pas de jour.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Lieu visé : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                    "f00015",
+                    'Lieu visé : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'un lieu habité (maison ou appartement occupé). Les dépendances '
-                      'ou locaux purement professionnels peuvent poser davantage de difficultés.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00016",
+                        'un lieu habité (maison ou appartement occupé). Les dépendances ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00017",
+                        'ou locaux purement professionnels peuvent poser davantage de difficultés.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Modalités d’entrée : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                    "f00018",
+                    'Modalités d’entrée : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
-                  text: 'EFFRACTION, VIOLENCE ou RUSE.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                    "f00019",
+                    'EFFRACTION, VIOLENCE ou RUSE.',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' L’entrée doit donc être obtenue par un procédé irrégulier ou agressif.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                    "f00020",
+                    ' L’entrée doit donc être obtenue par un procédé irrégulier ou agressif.',
+                  ),
                 ),
               ]),
 
@@ -165,10 +243,26 @@ class LdCasPresumesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'De nuit, un individu fracture la porte d’un appartement occupé. '
-                        'L’occupant repousse l’intrus en lui portant un coup pour le faire sortir. '
-                        'La loi présume alors la légitime défense, sous réserve de l’absence '
-                        'de disproportion manifeste dans la riposte.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00021",
+                          'De nuit, un individu fracture la porte d’un appartement occupé. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00022",
+                          'L’occupant repousse l’intrus en lui portant un coup pour le faire sortir. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00023",
+                          'La loi présume alors la légitime défense, sous réserve de l’absence ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00024",
+                          'de disproportion manifeste dans la riposte.',
+                        ),
                   ),
                 ],
               ),
@@ -181,17 +275,32 @@ class LdCasPresumesPage extends StatelessWidget {
           // 2 — DEUXIÈME CAS : VOLS / PILLAGES VIOLENTS
           // ============================================
           _HypoCard(
-            title:
-                '2. Défense contre les vols ou pillages exécutés avec violence',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+              "f00025",
+              '2. Défense contre les vols ou pillages exécutés avec violence',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Est également présumé avoir agi en état de légitime défense celui qui, '
-                'pour se défendre, de jour comme de nuit, contre les auteurs de certains '
-                'vols ou pillages exécutés avec violence, accomplit un acte de défense.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00026",
+                      'Est également présumé avoir agi en état de légitime défense celui qui, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00027",
+                      'pour se défendre, de jour comme de nuit, contre les auteurs de certains ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00028",
+                      'vols ou pillages exécutés avec violence, accomplit un acte de défense.',
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -213,8 +322,16 @@ class LdCasPresumesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : il doit s’agir d’atteintes graves aux biens, généralement commises '
-                      'en groupe ou dans un contexte de trouble important à l’ordre public.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00029",
+                        ' : il doit s’agir d’atteintes graves aux biens, généralement commises ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00030",
+                        'en groupe ou dans un contexte de trouble important à l’ordre public.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
@@ -227,20 +344,44 @@ class LdCasPresumesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : les vols ou pillages doivent être exécutés avec violences '
-                      '(coups, sévices, agressions physiques). La simple présence de menaces '
-                      'ou l’intimidation peuvent ne pas suffire pour bénéficier de la présomption.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00031",
+                        ' : les vols ou pillages doivent être exécutés avec violences ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00032",
+                        '(coups, sévices, agressions physiques). La simple présence de menaces ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00033",
+                        'ou l’intimidation peuvent ne pas suffire pour bénéficier de la présomption.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Moment de l’acte de défense : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                    "f00034",
+                    'Moment de l’acte de défense : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'l’acte doit intervenir pour se défendre contre les auteurs, '
-                      'pendant l’attaque ou dans son immédiate continuité.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00035",
+                        'l’acte doit intervenir pour se défendre contre les auteurs, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                        "f00036",
+                        'pendant l’attaque ou dans son immédiate continuité.',
+                      ),
                 ),
               ]),
 
@@ -251,10 +392,26 @@ class LdCasPresumesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Lors d’un pillage de magasin avec coups et violences sur le personnel, '
-                        'un agent de sécurité repousse un agresseur en utilisant un moyen de défense '
-                        'proportionné. Il bénéficie de la présomption de légitime défense, sous réserve '
-                        'des vérifications du juge.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00037",
+                          'Lors d’un pillage de magasin avec coups et violences sur le personnel, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00038",
+                          'un agent de sécurité repousse un agresseur en utilisant un moyen de défense ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00039",
+                          'proportionné. Il bénéficie de la présomption de légitime défense, sous réserve ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                          "f00040",
+                          'des vérifications du juge.',
+                        ),
                   ),
                 ],
               ),
@@ -266,23 +423,51 @@ class LdCasPresumesPage extends StatelessWidget {
           // ============================================
           // BLOC PRÉSOMPTION
           // ============================================
-          const _NotaBox(
-            title: 'Présomption simple',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+              "f00041",
+              'Présomption simple',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Dans ces deux hypothèses, la personne est présumée avoir agi en état '
-                    'de légitime défense. Il s’agit toutefois d’une ',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00042",
+                      'Dans ces deux hypothèses, la personne est présumée avoir agi en état ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00043",
+                      'de légitime défense. Il s’agit toutefois d’une ',
+                    ),
               ),
               TextSpan(
-                text: 'présomption simple',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                  "f00044",
+                  'présomption simple',
+                ),
                 style: TextStyle(fontWeight: FontWeight.w700),
               ),
               TextSpan(
                 text:
-                    ' : le ministère public ou la partie civile peuvent apporter la preuve '
-                    'contraire (par exemple en démontrant une riposte manifestement '
-                    'disproportionnée ou un détournement de la situation).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00045",
+                      ' : le ministère public ou la partie civile peuvent apporter la preuve ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00046",
+                      'contraire (par exemple en démontrant une riposte manifestement ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart",
+                      "f00047",
+                      'disproportionnée ou un détournement de la situation).',
+                    ),
               ),
             ],
           ),

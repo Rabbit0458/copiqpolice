@@ -11,184 +11,187 @@
  * Un utilisateur qui bricolerait le JavaScript ne gagnerait rien.
  */
 
-import { createClient } from "@/lib/supabase/client"
-import type { LifecycleAction, PublicationStatus } from "@/lib/admin/content-lifecycle"
+import { createClient } from "@/lib/supabase/client";
+import type {
+  LifecycleAction,
+  PublicationStatus,
+} from "@/lib/admin/content-lifecycle";
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Types                                                                     */
 /* ────────────────────────────────────────────────────────────────────────── */
 
-export type AdminRole = "owner" | "superadmin" | "admin" | "moderator"
+export type AdminRole = "owner" | "superadmin" | "admin" | "moderator";
 
 export interface AdminSession {
-  ok: boolean
-  reason?: "no_session" | "not_admin" | "disabled" | "locked" | "expired"
-  until?: string
-  admin_id?: string
-  email?: string
-  role?: AdminRole
-  permissions?: Record<string, boolean>
-  totp_enrolled?: boolean
-  aal?: "aal1" | "aal2"
-  code_required?: boolean
+  ok: boolean;
+  reason?: "no_session" | "not_admin" | "disabled" | "locked" | "expired";
+  until?: string;
+  admin_id?: string;
+  email?: string;
+  role?: AdminRole;
+  permissions?: Record<string, boolean>;
+  totp_enrolled?: boolean;
+  aal?: "aal1" | "aal2";
+  code_required?: boolean;
 }
 
 export interface CpDashboard {
-  themes: number
-  cases_total: number
-  cases_published: number
-  questions: number
-  rubric_points: number
-  keywords: number
-  perfect_answers: number
-  attempts_total: number
-  attempts_done: number
-  avg_percent: number | null
-  appeals_pending: number
-  appeals_total: number
-  cases_sans_rubric: number
-  questions_sans_modele: number
+  themes: number;
+  cases_total: number;
+  cases_published: number;
+  questions: number;
+  rubric_points: number;
+  keywords: number;
+  perfect_answers: number;
+  attempts_total: number;
+  attempts_done: number;
+  avg_percent: number | null;
+  appeals_pending: number;
+  appeals_total: number;
+  cases_sans_rubric: number;
+  questions_sans_modele: number;
 }
 
 export interface AdminDashboardStats {
-  users_total: number
-  users_active_30d: number
-  users_24h: number
-  users_premium: number
-  users_trial: number
-  subs_expired_30d: number
-  reports_open_cg: number
-  reports_open_psy: number
-  bug_reports_open: number
-  contact_open: number
-  forum_reports_open: number
-  staff_total: number
-  staff_locked: number
-  audit_logs_24h: number
-  critical_events_7d: number
-  quiz_questions: number
-  app_logs_total: number
-  refreshed_at: string | null
+  users_total: number;
+  users_active_30d: number;
+  users_24h: number;
+  users_premium: number;
+  users_trial: number;
+  subs_expired_30d: number;
+  reports_open_cg: number;
+  reports_open_psy: number;
+  bug_reports_open: number;
+  contact_open: number;
+  forum_reports_open: number;
+  staff_total: number;
+  staff_locked: number;
+  audit_logs_24h: number;
+  critical_events_7d: number;
+  quiz_questions: number;
+  app_logs_total: number;
+  refreshed_at: string | null;
 }
 
 export interface CpCaseRow {
-  id: string
-  slug: string
-  title: string
-  year: number | null
-  month: string | null
-  difficulty: string | null
-  theme_slug: string | null
-  theme_label: string | null
-  status: "draft" | "published" | "archived"
-  is_free: boolean
-  total_points: number | null
-  expected_minutes: number | null
-  nb_questions: number
-  nb_rubric_points: number
-  nb_perfect: number
-  nb_attempts: number
-  avg_percent: number | null
-  updated_at: string | null
+  id: string;
+  slug: string;
+  title: string;
+  year: number | null;
+  month: string | null;
+  difficulty: string | null;
+  theme_slug: string | null;
+  theme_label: string | null;
+  status: "draft" | "published" | "archived";
+  is_free: boolean;
+  total_points: number | null;
+  expected_minutes: number | null;
+  nb_questions: number;
+  nb_rubric_points: number;
+  nb_perfect: number;
+  nb_attempts: number;
+  avg_percent: number | null;
+  updated_at: string | null;
 }
 
 export interface CpKeyword {
-  id: string
-  value: string
-  is_phrase: boolean
-  is_negation: boolean
-  fuzzy_max_dist: number
-  auto_added: boolean
+  id: string;
+  value: string;
+  is_phrase: boolean;
+  is_negation: boolean;
+  fuzzy_max_dist: number;
+  auto_added: boolean;
 }
 export interface CpGroup {
-  id: string
-  position: number
-  description: string | null
-  is_optional: boolean
-  keywords: CpKeyword[]
+  id: string;
+  position: number;
+  description: string | null;
+  is_optional: boolean;
+  keywords: CpKeyword[];
 }
 export interface CpRubricPoint {
-  id: string
-  position: number
-  label: string
-  weight: number
-  is_required: boolean
-  kind: "core" | "bonus"
-  explanation_md: string | null
-  groups: CpGroup[]
+  id: string;
+  position: number;
+  label: string;
+  weight: number;
+  is_required: boolean;
+  kind: "core" | "bonus";
+  explanation_md: string | null;
+  groups: CpGroup[];
 }
 export interface CpQuestion {
-  id: string
-  position: number
-  label: string
-  hint: string | null
-  max_points: number
-  char_min: number | null
-  char_recommended: number | null
-  perfect_answer: { body_md: string; references_legal: string[] } | null
-  rubric_points: CpRubricPoint[]
+  id: string;
+  position: number;
+  label: string;
+  hint: string | null;
+  max_points: number;
+  char_min: number | null;
+  char_recommended: number | null;
+  perfect_answer: { body_md: string; references_legal: string[] } | null;
+  rubric_points: CpRubricPoint[];
 }
 export interface CpCaseDetail {
   case: Record<string, unknown> & {
-    id: string
-    slug: string
-    title: string
-    situation_md: string | null
-    theme_slug: string | null
-    theme_label: string | null
-    status: string
-  }
-  questions: CpQuestion[]
-  error?: string
+    id: string;
+    slug: string;
+    title: string;
+    situation_md: string | null;
+    theme_slug: string | null;
+    theme_label: string | null;
+    status: string;
+  };
+  questions: CpQuestion[];
+  error?: string;
 }
 
 export interface CpAppeal {
-  id: string
-  created_at: string
-  status: "pending" | "approved" | "rejected"
-  message: string | null
-  admin_response: string | null
-  user_email: string | null
-  case_slug: string | null
-  case_title: string | null
-  question_label: string | null
-  point_label: string | null
-  point_id: string | null
-  user_answer: string | null
+  id: string;
+  created_at: string;
+  status: "pending" | "approved" | "rejected";
+  message: string | null;
+  admin_response: string | null;
+  user_email: string | null;
+  case_slug: string | null;
+  case_title: string | null;
+  question_label: string | null;
+  point_label: string | null;
+  point_id: string | null;
+  user_answer: string | null;
 }
 
 export interface CpHealthRow {
-  gravite: "critique" | "important" | "mineur"
-  objet: string
-  probleme: string
-  action: string
+  gravite: "critique" | "important" | "mineur";
+  objet: string;
+  probleme: string;
+  action: string;
 }
 
 export interface CpTheme {
-  id: string
-  slug: string
-  label: string
-  color_hex: string | null
-  icon: string | null
-  sort_order: number | null
-  nb_cases: number
+  id: string;
+  slug: string;
+  label: string;
+  color_hex: string | null;
+  icon: string | null;
+  sort_order: number | null;
+  nb_cases: number;
 }
 
 /** Spécification d'une grille de correction (même format que les migrations). */
 export interface RubricSpec {
-  case: string
-  q: number
-  perfect?: string
-  refs?: string[]
+  case: string;
+  q: number;
+  perfect?: string;
+  refs?: string[];
   points: {
-    label: string
-    weight?: number
-    kind?: "core" | "bonus"
-    required?: boolean
-    expl?: string
+    label: string;
+    weight?: number;
+    kind?: "core" | "bonus";
+    required?: boolean;
+    expl?: string;
     /** Tableau de groupes. ET entre groupes, OU à l'intérieur d'un groupe. */
-    groups: string[][]
-  }[]
+    groups: string[][];
+  }[];
 }
 
 /* ────────────────────────────────────────────────────────────────────────── */
@@ -200,26 +203,27 @@ export class AdminApiError extends Error {
     message: string,
     readonly code?: string,
   ) {
-    super(message)
-    this.name = "AdminApiError"
+    super(message);
+    this.name = "AdminApiError";
   }
 }
 
-async function rpc<T>(fn: string, args: Record<string, unknown> = {}): Promise<T> {
-  const supabase = createClient()
-  const { data, error } = await supabase.rpc(fn as never, args as never)
+async function rpc<T>(
+  fn: string,
+  args: Record<string, unknown> = {},
+): Promise<T> {
+  const supabase = createClient();
+  const { data, error } = await supabase.rpc(fn as never, args as never);
   if (error) {
     // 42501 = permission refusée côté PostgreSQL (garde admin)
     const denied =
-      error.code === "42501" || /acc[eè]s refus[eé]/i.test(error.message ?? "")
+      error.code === "42501" || /acc[eè]s refus[eé]/i.test(error.message ?? "");
     throw new AdminApiError(
-      denied
-        ? error.message
-        : `Erreur ${fn} : ${error.message ?? "inconnue"}`,
+      denied ? error.message : `Erreur ${fn} : ${error.message ?? "inconnue"}`,
       error.code,
-    )
+    );
   }
-  return data as T
+  return data as T;
 }
 
 /* ────────────────────────────────────────────────────────────────────────── */
@@ -237,56 +241,61 @@ export const adminAuth = {
     }),
 
   async signIn(email: string, password: string) {
-    const supabase = createClient()
-    const { error } = await supabase.auth.signInWithPassword({ email, password })
-    if (error) throw new AdminApiError(error.message)
+    const supabase = createClient();
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+    if (error) throw new AdminApiError(error.message);
   },
 
   async signOut() {
-    const supabase = createClient()
-    await supabase.auth.signOut()
+    const supabase = createClient();
+    await supabase.auth.signOut();
   },
 
   /* ── MFA TOTP (Google Authenticator) ─────────────────────────────────── */
 
   async listFactors() {
-    const supabase = createClient()
-    const { data, error } = await supabase.auth.mfa.listFactors()
-    if (error) throw new AdminApiError(error.message)
-    return data
+    const supabase = createClient();
+    const { data, error } = await supabase.auth.mfa.listFactors();
+    if (error) throw new AdminApiError(error.message);
+    return data;
   },
 
   /** Démarre l'enrôlement : renvoie le QR code à scanner + le secret. */
   async enrollTotp() {
-    const supabase = createClient()
+    const supabase = createClient();
     const { data, error } = await supabase.auth.mfa.enroll({
       factorType: "totp",
       friendlyName: `COP'IQ Admin — ${new Date().toLocaleDateString("fr-FR")}`,
-    })
-    if (error) throw new AdminApiError(error.message)
-    return data
+    });
+    if (error) throw new AdminApiError(error.message);
+    return data;
   },
 
   /** Valide un code à 6 chiffres (enrôlement OU connexion) → passe en AAL2. */
   async verifyTotp(factorId: string, code: string) {
-    const supabase = createClient()
-    const { data: ch, error: e1 } = await supabase.auth.mfa.challenge({ factorId })
-    if (e1) throw new AdminApiError(e1.message)
+    const supabase = createClient();
+    const { data: ch, error: e1 } = await supabase.auth.mfa.challenge({
+      factorId,
+    });
+    if (e1) throw new AdminApiError(e1.message);
     const { error: e2 } = await supabase.auth.mfa.verify({
       factorId,
       challengeId: ch.id,
       code,
-    })
-    if (e2) throw new AdminApiError("Code invalide ou expiré.")
-    return true
+    });
+    if (e2) throw new AdminApiError("Code invalide ou expiré.");
+    return true;
   },
 
   async unenrollTotp(factorId: string) {
-    const supabase = createClient()
-    const { error } = await supabase.auth.mfa.unenroll({ factorId })
-    if (error) throw new AdminApiError(error.message)
+    const supabase = createClient();
+    const { error } = await supabase.auth.mfa.unenroll({ factorId });
+    if (error) throw new AdminApiError(error.message);
   },
-}
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Module Cas Pratique                                                       */
@@ -302,13 +311,15 @@ export const casPratiqueApi = {
   upsertTheme: (data: Partial<CpTheme>) =>
     rpc<{ ok: boolean; id: string }>("cp_admin_upsert_theme", { p_data: data }),
 
-  listCases: (opts: {
-    search?: string
-    status?: string
-    theme?: string
-    limit?: number
-    offset?: number
-  } = {}) =>
+  listCases: (
+    opts: {
+      search?: string;
+      status?: string;
+      theme?: string;
+      limit?: number;
+      offset?: number;
+    } = {},
+  ) =>
     rpc<CpCaseRow[]>("cp_admin_list_cases", {
       p_search: opts.search || null,
       p_status: opts.status || null,
@@ -332,7 +343,9 @@ export const casPratiqueApi = {
     ),
 
   upsertQuestion: (data: Record<string, unknown>) =>
-    rpc<{ ok: boolean; id: string }>("cp_admin_upsert_question", { p_data: data }),
+    rpc<{ ok: boolean; id: string }>("cp_admin_upsert_question", {
+      p_data: data,
+    }),
 
   deleteQuestion: (id: string, reason?: string) =>
     rpc<{ ok: boolean }>("cp_admin_delete_question", {
@@ -370,7 +383,7 @@ export const casPratiqueApi = {
       p_response: response ?? null,
       p_keywords: keywords && keywords.length ? keywords : null,
     }),
-}
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Modules transverses (RPC déjà présentes en base)                          */
@@ -381,36 +394,36 @@ export const casPratiqueApi = {
 /* ────────────────────────────────────────────────────────────────────────── */
 
 export interface QuizModuleRow {
-  module: string
-  title: string
-  subtitle: string | null
-  route: string
-  color_hex: string
-  track: string
-  is_active: boolean
-  nb_questions: number
-  nb_facile: number
-  nb_moyenne: number
-  nb_difficile: number
-  nb_sans_explication: number
+  module: string;
+  title: string;
+  subtitle: string | null;
+  route: string;
+  color_hex: string;
+  track: string;
+  is_active: boolean;
+  nb_questions: number;
+  nb_facile: number;
+  nb_moyenne: number;
+  nb_difficile: number;
+  nb_sans_explication: number;
 }
 
 export interface QuizQuestionRow {
-  id: number
-  category: string | null
-  difficulty: "Facile" | "Moyenne" | "Difficile"
-  question: string
-  options: string[]
-  answer: string
-  explanation: string | null
-  legal_ref: string | null
-  is_active: boolean
-  publication_status: PublicationStatus
-  scheduled_at: string | null
-  published_at: string | null
-  archived_at: string | null
-  archived_previous_status: PublicationStatus | null
-  updated_at: string
+  id: number;
+  category: string | null;
+  difficulty: "Facile" | "Moyenne" | "Difficile";
+  question: string;
+  options: string[];
+  answer: string;
+  explanation: string | null;
+  legal_ref: string | null;
+  is_active: boolean;
+  publication_status: PublicationStatus;
+  scheduled_at: string | null;
+  published_at: string | null;
+  archived_at: string | null;
+  archived_previous_status: PublicationStatus | null;
+  updated_at: string;
 }
 
 export const quizApi = {
@@ -432,30 +445,57 @@ export const quizApi = {
       p_id: id,
       p_reason: reason ?? null,
     }),
-}
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Fiches de cours                                                           */
 /* ────────────────────────────────────────────────────────────────────────── */
 
 export interface CoursRow {
-  id: number
-  route: string
-  track: string
-  module: string
-  section: string | null
-  code: string | null
-  title: string
-  subtitle: string | null
-  quiz_module: string | null
-  is_published: boolean
-  publication_status: PublicationStatus
-  scheduled_at: string | null
-  published_at: string | null
-  archived_at: string | null
-  archived_previous_status: PublicationStatus | null
-  taille: number
-  updated_at: string
+  id: number;
+  route: string;
+  track: string;
+  module: string;
+  section: string | null;
+  code: string | null;
+  title: string;
+  subtitle: string | null;
+  quiz_module: string | null;
+  is_published: boolean;
+  publication_status: PublicationStatus;
+  scheduled_at: string | null;
+  published_at: string | null;
+  archived_at: string | null;
+  archived_previous_status: PublicationStatus | null;
+  taille: number;
+  updated_at: string;
+}
+
+export interface ScolariteFragment {
+  source_path: string;
+  fragment_key: string;
+  panel: string;
+  position: number;
+  component: string;
+  text_value: string;
+  original_text: string;
+  style_payload: Record<string, unknown>;
+  is_editable: boolean;
+  revision: number;
+  updated_at: string;
+}
+
+export interface ScolariteEditorData {
+  source_path: string;
+  track: "gpx" | "pa";
+  fragments: ScolariteFragment[];
+  link: {
+    id: number;
+    link_status: "linked" | "separated";
+    gpx_source_path: string;
+    pa_source_path: string;
+  } | null;
+  linked_source_path: string | null;
 }
 
 export const coursApi = {
@@ -471,107 +511,133 @@ export const coursApi = {
 
   upsert: (data: Record<string, unknown>) =>
     rpc<{ ok: boolean; id: number }>("cours_admin_upsert", { p_data: data }),
-}
+};
+
+export const scolariteContentApi = {
+  editor: (sourcePath: string) =>
+    rpc<ScolariteEditorData>("scolarite_admin_get_editor", {
+      p_source_path: sourcePath,
+    }),
+
+  updateFragment: (
+    sourcePath: string,
+    fragmentKey: string,
+    textValue: string,
+    applyLinked: boolean,
+  ) =>
+    rpc<{ ok: boolean; linked_updated: boolean }>(
+      "scolarite_admin_update_fragment",
+      {
+        p_source_path: sourcePath,
+        p_fragment_key: fragmentKey,
+        p_text_value: textValue,
+        p_apply_linked: applyLinked,
+      },
+    ),
+
+  separate: (sourcePath: string) =>
+    rpc<{ ok: boolean; link_id: number }>("scolarite_admin_separate_link", {
+      p_source_path: sourcePath,
+    }),
+};
 
 export const contentLifecycleApi = {
-  set: (contentType: "course" | "quiz_question", contentKey: string | number, status: LifecycleAction, scheduledAt?: string | null) =>
-    rpc<{ ok: boolean; publication_status: PublicationStatus }>("content_admin_set_lifecycle", {
-      p_content_type: contentType,
-      p_content_key: String(contentKey),
-      p_status: status,
-      p_scheduled_at: scheduledAt ?? null,
-    }),
-}
+  set: (
+    contentType: "course" | "quiz_question",
+    contentKey: string | number,
+    status: LifecycleAction,
+    scheduledAt?: string | null,
+  ) =>
+    rpc<{ ok: boolean; publication_status: PublicationStatus }>(
+      "content_admin_set_lifecycle",
+      {
+        p_content_type: contentType,
+        p_content_key: String(contentKey),
+        p_status: status,
+        p_scheduled_at: scheduledAt ?? null,
+      },
+    ),
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Forum — modération                                                        */
 /* ────────────────────────────────────────────────────────────────────────── */
 
 export interface ForumReport {
-  id: string
-  created_at: string
-  status: string
-  reason: string | null
-  reporter_email: string | null
-  post_id: string | null
-  post_title: string | null
-  post_content: string | null
-  post_author_email: string | null
-  post_author_id: string | null
-  post_created_at: string | null
-  post_supprime: boolean
-  nb_signalements: number
-  auteur_banni: boolean
+  id: string;
+  created_at: string;
+  status: string;
+  reason: string | null;
+  reporter_email: string | null;
+  post_id: string | null;
+  post_title: string | null;
+  post_content: string | null;
+  post_author_email: string | null;
+  post_author_id: string | null;
+  post_created_at: string | null;
+  post_supprime: boolean;
+  nb_signalements: number;
+  auteur_banni: boolean;
 }
 
 export interface ForumBan {
-  user_id: string
-  email: string | null
-  reason: string | null
-  expires_at: string | null
-  created_at: string
+  user_id: string;
+  email: string | null;
+  reason: string | null;
+  expires_at: string | null;
+  created_at: string;
 }
 
 export type CommunityReportStatus =
-  | "new"
-  | "triaged"
-  | "in_progress"
-  | "resolved"
-  | "rejected"
-  | "appealed"
+  "new" | "triaged" | "in_progress" | "resolved" | "rejected" | "appealed";
 
-export type CommunityReportPriority = "normal" | "high" | "urgent"
+export type CommunityReportPriority = "normal" | "high" | "urgent";
 export type CommunityReportTarget =
-  | "post"
-  | "comment"
-  | "message"
-  | "profile"
-  | "attachment"
-  | "room"
+  "post" | "comment" | "message" | "profile" | "attachment" | "room";
 
 export interface CommunityModerationDashboard {
-  posts_today: number
-  comments_today: number
-  open_reports: number
-  active_sanctions: number
+  posts_today: number;
+  comments_today: number;
+  open_reports: number;
+  active_sanctions: number;
 }
 
 export interface CommunityAdminReport {
-  id: string
-  created_at: string
-  status: CommunityReportStatus
-  priority: CommunityReportPriority
-  space_id: string | null
-  space_label: string
-  target_type: CommunityReportTarget
-  target_id: string
-  reason: string
-  details: string | null
-  reporter_id: string
-  reporter_name: string | null
-  reporter_username: string | null
-  reporter_avatar_index: number | null
-  subject_user_id: string | null
-  subject_name: string | null
-  subject_username: string | null
-  subject_avatar_index: number | null
-  target_title: string
-  target_content: string | null
-  target_status: string | null
-  resolution: string | null
-  resolved_at: string | null
-  appealed_at: string | null
-  appeal_text: string | null
-  total_count: number
+  id: string;
+  created_at: string;
+  status: CommunityReportStatus;
+  priority: CommunityReportPriority;
+  space_id: string | null;
+  space_label: string;
+  target_type: CommunityReportTarget;
+  target_id: string;
+  reason: string;
+  details: string | null;
+  reporter_id: string;
+  reporter_name: string | null;
+  reporter_username: string | null;
+  reporter_avatar_index: number | null;
+  subject_user_id: string | null;
+  subject_name: string | null;
+  subject_username: string | null;
+  subject_avatar_index: number | null;
+  target_title: string;
+  target_content: string | null;
+  target_status: string | null;
+  resolution: string | null;
+  resolved_at: string | null;
+  appealed_at: string | null;
+  appeal_text: string | null;
+  total_count: number;
 }
 
 export interface CommunityMessageEvidence {
-  context_position: number
-  message_id: string
-  sender_id: string
-  content: string
-  created_at: string
-  is_reported: boolean
+  context_position: number;
+  message_id: string;
+  sender_id: string;
+  content: string;
+  created_at: string;
+  is_reported: boolean;
 }
 
 export const communityForumApi = {
@@ -580,15 +646,17 @@ export const communityForumApi = {
       p_space_id: spaceId || null,
     }),
 
-  listReports: (opts: {
-    status?: CommunityReportStatus
-    targetType?: CommunityReportTarget
-    spaceId?: string
-    priority?: CommunityReportPriority
-    search?: string
-    limit?: number
-    offset?: number
-  } = {}) =>
+  listReports: (
+    opts: {
+      status?: CommunityReportStatus;
+      targetType?: CommunityReportTarget;
+      spaceId?: string;
+      priority?: CommunityReportPriority;
+      search?: string;
+      limit?: number;
+      offset?: number;
+    } = {},
+  ) =>
     rpc<CommunityAdminReport[]>("community_admin_list_reports", {
       p_status: opts.status || null,
       p_target_type: opts.targetType || null,
@@ -626,7 +694,7 @@ export const communityForumApi = {
       p_report_id: reportId,
       p_access_reason: accessReason,
     }),
-}
+};
 
 export const forumApi = {
   listReports: (status?: string) =>
@@ -664,74 +732,167 @@ export const forumApi = {
       p_user_id: userId,
       p_reason: reason ?? null,
     }),
-}
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Notes de patch                                                            */
 /* ────────────────────────────────────────────────────────────────────────── */
 
 export interface PatchNote {
-  id: number
-  title: string
-  body: string
-  is_published: boolean
-  created_at: string
-  author_email: string | null
+  id: number;
+  title: string;
+  summary: string | null;
+  body: string;
+  publication_status: EditorialStatus;
+  scheduled_at: string | null;
+  published_at: string | null;
+  archived_at: string | null;
+  created_at: string;
+  updated_at: string;
+  author_email: string | null;
 }
 
 export const patchNotesApi = {
-  list: (published?: "yes" | "no") =>
-    rpc<PatchNote[]>("list_patch_notes", {
-      p_published: published ?? null,
+  list: (status?: EditorialStatus) =>
+    rpc<PatchNote[]>("patch_notes_admin_list", {
+      p_status: status ?? null,
       p_limit: 100,
     }),
 
-  create: (title: string, body: string, published = false) =>
-    rpc<Record<string, unknown>>("create_patch_note", {
-      p_title: title,
-      p_body: body,
-      p_published: published,
-    }),
-
-  setPublished: (id: number, published: boolean) =>
-    rpc<Record<string, unknown>>("set_patch_note_published", {
-      p_id: id,
-      p_published: published,
+  save: (note: {
+    id?: number;
+    title: string;
+    summary?: string;
+    body: string;
+    status: EditorialStatus;
+    scheduledAt?: string | null;
+  }) =>
+    rpc<number>("patch_notes_admin_save", {
+      p_id: note.id ?? null,
+      p_title: note.title,
+      p_summary: note.summary ?? null,
+      p_body: note.body,
+      p_status: note.status,
+      p_scheduled_at: note.scheduledAt ?? null,
     }),
 
   remove: (id: number) =>
     rpc<Record<string, unknown>>("delete_patch_note", { p_id: id }),
+};
+
+/* ────────────────────────────────────────────────────────────────────────── */
+/*  Centre d'information : FAQ, support et documents légaux                  */
+/* ────────────────────────────────────────────────────────────────────────── */
+
+export type InformationContentType =
+  | "information"
+  | "faq"
+  | "legal_notice"
+  | "privacy"
+  | "support"
+  | "service_status";
+
+export type EditorialStatus = "draft" | "scheduled" | "published" | "archived";
+
+export interface InformationContent {
+  id: string;
+  content_type: InformationContentType;
+  slug: string;
+  title: string;
+  summary: string;
+  body_md: string;
+  category: string;
+  sort_order: number;
+  status: EditorialStatus;
+  scheduled_at: string | null;
+  published_at: string | null;
+  archived_at: string | null;
+  metadata: Record<string, unknown>;
+  created_at: string;
+  updated_at: string;
 }
+
+export interface SupportRequest {
+  id: string;
+  user_id: string | null;
+  name: string;
+  email: string;
+  category: string;
+  subject: string;
+  message: string;
+  status: "new" | "in_progress" | "waiting_user" | "resolved" | "closed";
+  priority: "low" | "normal" | "high" | "urgent";
+  admin_note: string;
+  resolved_at: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export const informationAdminApi = {
+  list: (
+    type?: InformationContentType,
+    status?: EditorialStatus,
+    search?: string,
+  ) =>
+    rpc<InformationContent[]>("information_admin_list", {
+      p_type: type ?? null,
+      p_status: status ?? null,
+      p_search: search || null,
+    }),
+  save: (
+    data: Partial<InformationContent> &
+      Pick<InformationContent, "content_type" | "slug" | "title">,
+  ) => rpc<InformationContent>("information_admin_save", { p_data: data }),
+  remove: (id: string) =>
+    rpc<boolean>("information_admin_delete", { p_id: id }),
+  listSupport: (status?: SupportRequest["status"], search?: string) =>
+    rpc<SupportRequest[]>("support_admin_list", {
+      p_status: status ?? null,
+      p_search: search || null,
+    }),
+  updateSupport: (
+    id: string,
+    status: SupportRequest["status"],
+    priority: SupportRequest["priority"],
+    adminNote: string,
+  ) =>
+    rpc<SupportRequest>("support_admin_update", {
+      p_id: id,
+      p_status: status,
+      p_priority: priority,
+      p_admin_note: adminNote,
+    }),
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Comptes administrateurs                                                   */
 /* ────────────────────────────────────────────────────────────────────────── */
 
 export interface AdminStaff {
-  id: string
-  email: string
-  role: AdminRole
-  first_name: string | null
-  last_name: string | null
-  username: string | null
-  disabled: boolean
-  second_factor_enabled: boolean
-  permissions: Record<string, boolean>
-  locked_until: string | null
-  expires_at: string | null
-  failed_admin_code_attempts: number
-  last_admin_login_at: string | null
-  last_admin_login_ip: string | null
-  notes: string | null
-  created_at: string
-  updated_at: string
+  id: string;
+  email: string;
+  role: AdminRole;
+  first_name: string | null;
+  last_name: string | null;
+  username: string | null;
+  disabled: boolean;
+  second_factor_enabled: boolean;
+  permissions: Record<string, boolean>;
+  locked_until: string | null;
+  expires_at: string | null;
+  failed_admin_code_attempts: number;
+  last_admin_login_at: string | null;
+  last_admin_login_ip: string | null;
+  notes: string | null;
+  created_at: string;
+  updated_at: string;
 }
 
 export interface CommunityModeratorScope {
-  space_id: string
-  space_label: string
-  role: "helper" | "moderator" | "admin" | "owner"
-  expires_at: string | null
+  space_id: string;
+  space_label: string;
+  role: "helper" | "moderator" | "admin" | "owner";
+  expires_at: string | null;
 }
 
 export const staffApi = {
@@ -745,14 +906,14 @@ export const staffApi = {
     }),
 
   create: (data: {
-    email: string
-    role: string
-    first_name?: string
-    last_name?: string
-    username?: string
-    permissions?: Record<string, boolean>
-    expires_at?: string | null
-    notes?: string
+    email: string;
+    role: string;
+    first_name?: string;
+    last_name?: string;
+    username?: string;
+    permissions?: Record<string, boolean>;
+    expires_at?: string | null;
+    notes?: string;
   }) =>
     rpc<Record<string, unknown>>("create_admin_staff", {
       p_email: data.email,
@@ -815,7 +976,7 @@ export const staffApi = {
       p_scopes: scopes,
       p_reason: reason,
     }),
-}
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Modules transverses (RPC déjà présentes en base)                          */
@@ -864,7 +1025,7 @@ export const supportApi = {
       p_limit: 60,
       p_offset: 0,
     }),
-}
+};
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /*  Utilisateurs & sanctions communautaires                                   */
@@ -876,84 +1037,86 @@ export type CommunitySanctionKind =
   | "comment_restriction"
   | "message_restriction"
   | "suspension"
-  | "ban"
+  | "ban";
 
 export interface CommunityAdminUserRow {
-  user_id: string
-  email: string | null
-  username: string | null
-  first_name: string | null
-  last_name: string | null
-  avatar_index: number | null
-  user_role: string | null
-  user_track: string | null
-  user_mode: string | null
-  plan: string | null
-  subscription_status: string | null
-  current_period_end: string | null
-  posts_count: number
-  comments_count: number
-  reports_received: number
-  active_sanctions: number
-  last_seen: string | null
-  created_at: string | null
-  total_count: number
+  user_id: string;
+  email: string | null;
+  username: string | null;
+  first_name: string | null;
+  last_name: string | null;
+  avatar_index: number | null;
+  user_role: string | null;
+  user_track: string | null;
+  user_mode: string | null;
+  plan: string | null;
+  subscription_status: string | null;
+  current_period_end: string | null;
+  posts_count: number;
+  comments_count: number;
+  reports_received: number;
+  active_sanctions: number;
+  last_seen: string | null;
+  created_at: string | null;
+  total_count: number;
 }
 
 export interface CommunitySanction {
-  id: string
-  space_id: string
-  kind: CommunitySanctionKind
-  reason: string
-  starts_at: string
-  ends_at: string | null
-  status: "active" | "expired" | "revoked" | "appealed"
-  created_at: string
-  revoked_at: string | null
-  imposed_by: string
-  revoked_by: string | null
+  id: string;
+  space_id: string;
+  kind: CommunitySanctionKind;
+  reason: string;
+  starts_at: string;
+  ends_at: string | null;
+  status: "active" | "expired" | "revoked" | "appealed";
+  created_at: string;
+  revoked_at: string | null;
+  imposed_by: string;
+  revoked_by: string | null;
 }
 
 export interface CommunityAdminUserDetail {
   profile: {
-    user_id: string
-    email: string | null
-    username: string | null
-    first_name: string | null
-    last_name: string | null
-    avatar_index: number | null
-    city: string | null
-    user_role: string | null
-    user_track: string | null
-    user_mode: string | null
-    created_at: string
-    updated_at: string
-  }
+    user_id: string;
+    email: string | null;
+    username: string | null;
+    first_name: string | null;
+    last_name: string | null;
+    avatar_index: number | null;
+    city: string | null;
+    user_role: string | null;
+    user_track: string | null;
+    user_mode: string | null;
+    created_at: string;
+    updated_at: string;
+  };
   subscription: {
-    plan?: string
-    status?: string
-    current_period_end?: string
-  }
+    plan?: string;
+    status?: string;
+    current_period_end?: string;
+  };
   activity: {
-    posts: number
-    comments: number
-    messages: number
-    reports_received: number
-    reports_sent: number
-  }
-  sanctions: CommunitySanction[]
+    posts: number;
+    comments: number;
+    messages: number;
+    reports_received: number;
+    reports_sent: number;
+  };
+  sanctions: CommunitySanction[];
 }
 
 export const communityUsersApi = {
-  list: (opts: {
-    search?: string
-    track?: string
-    mode?: string
-    subscription?: string
-    sanctioned?: boolean
-    limit?: number
-    offset?: number
-  } = {}) =>
+  list: (
+    opts: {
+      search?: string;
+      track?: string;
+      mode?: string;
+      subscription?: string;
+      sanctioned?: boolean;
+      limit?: number;
+      offset?: number;
+    } = {},
+  ) =>
     rpc<CommunityAdminUserRow[]>("community_admin_list_users", {
       p_search: opts.search || null,
       p_track: opts.track || null,
@@ -970,11 +1133,11 @@ export const communityUsersApi = {
     }),
 
   imposeSanction: (data: {
-    userId: string
-    kind: CommunitySanctionKind
-    reason: string
-    spaceId: string
-    endsAt?: string | null
+    userId: string;
+    kind: CommunitySanctionKind;
+    reason: string;
+    spaceId: string;
+    endsAt?: string | null;
   }) =>
     rpc<string>("community_admin_impose_sanction", {
       p_user_id: data.userId,
@@ -989,4 +1152,4 @@ export const communityUsersApi = {
       p_sanction_id: sanctionId,
       p_reason: reason,
     }),
-}
+};

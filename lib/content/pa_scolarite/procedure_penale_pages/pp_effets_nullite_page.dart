@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPEffetsNullitePage extends StatelessWidget {
   const PaPPEffetsNullitePage({super.key});
@@ -32,10 +33,18 @@ class PaPPEffetsNullitePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Effets de la nullité',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+            "f00002",
+            'Effets de la nullité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,7 +58,11 @@ class PaPPEffetsNullitePage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Les effets de la nullité\ndes actes de procédure',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+              "f00003",
+              'Les effets de la nullité\ndes actes de procédure',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -60,8 +73,16 @@ class PaPPEffetsNullitePage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            'Conséquences de l’annulation sur la procédure pénale elle-même et sur la '
-            'situation procédurale des parties (purge des nullités, mémoires, débats…).',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00004",
+                  'Conséquences de l’annulation sur la procédure pénale elle-même et sur la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00005",
+                  'situation procédurale des parties (purge des nullités, mémoires, débats…).',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -72,31 +93,64 @@ class PaPPEffetsNullitePage extends StatelessWidget {
 
           const SizedBox(height: 18),
 
-          const _SubTitle('2.2 – Les effets de la nullité'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+              "f00006",
+              '2.2 – Les effets de la nullité',
+            ),
+          ),
 
-          const _Paragraph(
-            'Lorsqu’elle est prononcée, la nullité ne se limite pas à « effacer » un acte isolé. '
-            'Elle a des effets directs sur le dossier de procédure (retrait, classement, portée de '
-            'l’annulation) et des effets pratiques importants pour les parties (purge des nullités, '
-            'organisation des moyens, recevabilité des contestations ultérieures).',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00007",
+                  'Lorsqu’elle est prononcée, la nullité ne se limite pas à « effacer » un acte isolé. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00008",
+                  'Elle a des effets directs sur le dossier de procédure (retrait, classement, portée de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00009",
+                  'l’annulation) et des effets pratiques importants pour les parties (purge des nullités, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00010",
+                  'organisation des moyens, recevabilité des contestations ultérieures).',
+                ),
           ),
 
           const SizedBox(height: 18),
 
           // ================= CARD 1 — EFFETS SUR LA PROCÉDURE =================
           _ConditionCard(
-            title: '2.2.1 – Les effets sur la procédure',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+              "f00011",
+              '2.2.1 – Les effets sur la procédure',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les effets de la nullité sur la procédure sont principalement encadrés par ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00012",
+                    'Les effets de la nullité sur la procédure sont principalement encadrés par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’Article 174 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00013",
+                    'l’Article 174 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -104,53 +158,121 @@ class PaPPEffetsNullitePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      '. La chambre de l’instruction dispose d’un pouvoir d’appréciation sur '
-                      'l’étendue de l’annulation.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00014",
+                        '. La chambre de l’instruction dispose d’un pouvoir d’appréciation sur ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00015",
+                        'l’étendue de l’annulation.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _IntroBullet(
+              _IntroBullet(
                 text:
-                    'La chambre de l’instruction détermine si l’annulation est limitée à tout ou partie '
-                    'des actes ou pièces viciés, ou si elle s’étend à tout ou partie de la procédure '
-                    'ultérieure qui en découle.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00016",
+                      'La chambre de l’instruction détermine si l’annulation est limitée à tout ou partie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00017",
+                      'des actes ou pièces viciés, ou si elle s’étend à tout ou partie de la procédure ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00018",
+                      'ultérieure qui en découle.',
+                    ),
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
-                    'En cas d’annulation, la chambre peut évoquer elle-même l’affaire ou renvoyer le dossier '
-                    'soit au même juge d’instruction, soit à un autre juge d’instruction.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00019",
+                      'En cas d’annulation, la chambre peut évoquer elle-même l’affaire ou renvoyer le dossier ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00020",
+                      'soit au même juge d’instruction, soit à un autre juge d’instruction.',
+                    ),
               ),
 
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Les actes annulés sont retirés du dossier d’instruction et classés au greffe de la cour '
-                      'd’appel. ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00021",
+                        'Les actes annulés sont retirés du dossier d’instruction et classés au greffe de la cour ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00022",
+                        'd’appel. ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'L’Article 174 alinéa 3 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00023",
+                    'L’Article 174 alinéa 3 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' prévoit qu’il est interdit d’y puiser le moindre renseignement contre les parties, '
-                      'à peine de poursuites disciplinaires pour les avocats et les magistrats.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00024",
+                        ' prévoit qu’il est interdit d’y puiser le moindre renseignement contre les parties, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00025",
+                        'à peine de poursuites disciplinaires pour les avocats et les magistrats.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph(
-                'Lorsque l’annulation est partielle, les actes ou pièces de la procédure sont « cancellés » : '
-                'ils sont rayés ou bâtonnés de manière à devenir matériellement illisibles. Avant cette '
-                'opération, une copie certifiée conforme à l’original est établie et classée au greffe de la '
-                'cour d’appel, afin de conserver une trace archivée de la pièce annulée sans qu’elle puisse '
-                'être utilisée contre les parties.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00026",
+                      'Lorsque l’annulation est partielle, les actes ou pièces de la procédure sont « cancellés » : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00027",
+                      'ils sont rayés ou bâtonnés de manière à devenir matériellement illisibles. Avant cette ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00028",
+                      'opération, une copie certifiée conforme à l’original est établie et classée au greffe de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00029",
+                      'cour d’appel, afin de conserver une trace archivée de la pièce annulée sans qu’elle puisse ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00030",
+                      'être utilisée contre les parties.',
+                    ),
               ),
             ],
           ),
@@ -159,124 +281,252 @@ class PaPPEffetsNullitePage extends StatelessWidget {
 
           // ================= CARD 2 — EFFETS POUR LES PARTIES =================
           _ConditionCard(
-            title: '2.2.2 – Les effets pour les parties',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+              "f00031",
+              '2.2.2 – Les effets pour les parties',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Les effets de la nullité pour les parties sont étroitement liés au mécanisme de la '
-                      '« purge successive » des nullités qui peuvent affecter une information. ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00032",
+                        'Les effets de la nullité pour les parties sont étroitement liés au mécanisme de la ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00033",
+                        '« purge successive » des nullités qui peuvent affecter une information. ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'L’Article 174 alinéa 1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00034",
+                    'L’Article 174 alinéa 1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' et la jurisprudence organisent cette purge aﬁn d’éviter les manœuvres dilatoires.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00035",
+                    ' et la jurisprudence organisent cette purge aﬁn d’éviter les manœuvres dilatoires.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle(
-                'Organisation des moyens de nullité par les parties',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00036",
+                  'Organisation des moyens de nullité par les parties',
+                ),
               ),
 
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'En principe, la partie requérante doit présenter ses moyens de nullité dans sa requête motivée. '
-                      'Les autres parties formulent leurs moyens dans les mémoires qu’elles peuvent déposer en application de ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00037",
+                        'En principe, la partie requérante doit présenter ses moyens de nullité dans sa requête motivée. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00038",
+                        'Les autres parties formulent leurs moyens dans les mémoires qu’elles peuvent déposer en application de ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’Article 198 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00039",
+                    'l’Article 198 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' qui organise la production des mémoires devant la chambre de l’instruction.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00040",
+                    ' qui organise la production des mémoires devant la chambre de l’instruction.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
 
-              const _Paragraph(
-                'À compter du 30 septembre 2025, le dernier mémoire déposé par une partie devra récapituler '
-                'l’ensemble des moyens pris de la nullité de la procédure. À défaut, ces moyens sont réputés '
-                'avoir été abandonnés. Cette exigence renforce la logique de concentration des moyens.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00041",
+                      'À compter du 30 septembre 2025, le dernier mémoire déposé par une partie devra récapituler ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00042",
+                      'l’ensemble des moyens pris de la nullité de la procédure. À défaut, ces moyens sont réputés ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00043",
+                      'avoir été abandonnés. Cette exigence renforce la logique de concentration des moyens.',
+                    ),
               ),
 
               const SizedBox(height: 8),
-              const _IntroBullet(
-                text:
-                    'Jusqu’au jour de l’audience, les parties peuvent produire des mémoires qu’elles communiquent au ministère public et aux autres parties.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00044",
+                  'Jusqu’au jour de l’audience, les parties peuvent produire des mémoires qu’elles communiquent au ministère public et aux autres parties.',
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    'Lors des débats devant la chambre de l’instruction, chacune des parties peut encore développer tout moyen de nullité dont elle se prévaut.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00045",
+                  'Lors des débats devant la chambre de l’instruction, chacune des parties peut encore développer tout moyen de nullité dont elle se prévaut.',
+                ),
               ),
 
               const SizedBox(height: 12),
-              const _SubTitle(
-                'Limites temporelles : ce qui ne peut plus être soulevé',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                  "f00046",
+                  'Limites temporelles : ce qui ne peut plus être soulevé',
+                ),
               ),
 
-              const _Paragraph(
-                'Après la clôture des débats devant la chambre de l’instruction, les parties qui avaient la possibilité '
-                'de connaître les nullités entachant la procédure antérieure à la saisine ne peuvent plus soulever de nouveaux moyens de ce chef. '
-                'Seules les personnes devenues parties à la procédure après cette saisine conservent la possibilité d’invoquer des nullités antérieures.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00047",
+                      'Après la clôture des débats devant la chambre de l’instruction, les parties qui avaient la possibilité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00048",
+                      'de connaître les nullités entachant la procédure antérieure à la saisine ne peuvent plus soulever de nouveaux moyens de ce chef. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00049",
+                      'Seules les personnes devenues parties à la procédure après cette saisine conservent la possibilité d’invoquer des nullités antérieures.',
+                    ),
               ),
 
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
-                  text: 'Ce mécanisme reprend le principe posé par ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00050",
+                    'Ce mécanisme reprend le principe posé par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’Article 595 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                    "f00051",
+                    'l’Article 595 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.red.shade700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : lorsque la chambre de l’instruction statue sur le règlement d’une procédure autre que criminelle, '
-                      'les moyens pris de nullité doivent lui avoir été proposés pour être ensuite recevables devant la chambre criminelle '
-                      'de la Cour de cassation.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00052",
+                        ' : lorsque la chambre de l’instruction statue sur le règlement d’une procédure autre que criminelle, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00053",
+                        'les moyens pris de nullité doivent lui avoir été proposés pour être ensuite recevables devant la chambre criminelle ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                        "f00054",
+                        'de la Cour de cassation.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph(
-                'Ce dispositif vise clairement à éviter les manœuvres dilatoires de certaines parties. Il interdit en pratique '
-                'les saisines répétées et tardives de la chambre de l’instruction fondées sur des irrégularités qui auraient pu être '
-                'invoquées plus tôt, et sécurise ainsi la progression de la procédure pénale.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00055",
+                      'Ce dispositif vise clairement à éviter les manœuvres dilatoires de certaines parties. Il interdit en pratique ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00056",
+                      'les saisines répétées et tardives de la chambre de l’instruction fondées sur des irrégularités qui auraient pu être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00057",
+                      'invoquées plus tôt, et sécurise ainsi la progression de la procédure pénale.',
+                    ),
               ),
             ],
           ),
 
           const SizedBox(height: 20),
 
-          const _NotaBox(
-            title: 'À RETENIR',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+              "f00058",
+              'À RETENIR',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'La nullité d’un acte de procédure n’est jamais neutre : elle purge le dossier de toutes les traces '
-                    'juridiques exploitables de l’acte annulé, encadre la manière dont les parties peuvent organiser et présenter '
-                    'leurs moyens, et verrouille la possibilité de revenir indéfiniment sur les mêmes irrégularités. '
-                    'Les Articles 174, 198 et 595 du Code de Procédure Pénale constituent des repères essentiels pour comprendre '
-                    'l’articulation entre effets sur la procédure et effets sur les droits des parties.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00059",
+                      'La nullité d’un acte de procédure n’est jamais neutre : elle purge le dossier de toutes les traces ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00060",
+                      'juridiques exploitables de l’acte annulé, encadre la manière dont les parties peuvent organiser et présenter ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00061",
+                      'leurs moyens, et verrouille la possibilité de revenir indéfiniment sur les mêmes irrégularités. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00062",
+                      'Les Articles 174, 198 et 595 du Code de Procédure Pénale constituent des repères essentiels pour comprendre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart",
+                      "f00063",
+                      'l’articulation entre effets sur la procédure et effets sur les droits des parties.',
+                    ),
               ),
             ],
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FouilleVehiculePreliminairePage extends StatelessWidget {
   const FouilleVehiculePreliminairePage({super.key});
@@ -56,10 +57,18 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Fouille de véhicule — préliminaire",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+            "f00002",
+            "Fouille de véhicule — préliminaire",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de procès-verbal\nFouille de véhicule en enquête préliminaire",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+              "f00003",
+              "Canevas de procès-verbal\nFouille de véhicule en enquête préliminaire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,19 +103,33 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
             cardColor: cardPrep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas te guide pour rédiger un PV de fouille de véhicule en enquête préliminaire : "
-                "mentions indispensables, ordre logique, points sensibles (assentiment, présence, scellés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                      "f00004",
+                      "Ce canevas te guide pour rédiger un PV de fouille de véhicule en enquête préliminaire : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                      "f00005",
+                      "mentions indispensables, ordre logique, points sensibles (assentiment, présence, scellés).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Même logique que la perquisition : autorisation + traçabilité + présence constante.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00006",
+                  "Même logique que la perquisition : autorisation + traçabilité + présence constante.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Toujours sous le contrôle de l’OPJ lorsque l’APJ agit en préliminaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00007",
+                  "Toujours sous le contrôle de l’OPJ lorsque l’APJ agit en préliminaire.",
+                ),
               ),
             ],
           ),
@@ -111,31 +138,47 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Cadre juridique — Visa obligatoire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+              "f00008",
+              "Cadre juridique — Visa obligatoire",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 76 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                    "f00009",
+                    "Article 76 du Code de procédure pénale (CPP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : la fouille de véhicule obéit aux mêmes règles que la perquisition en enquête préliminaire "
-                      "(assentiment préalable, conditions identiques).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                        "f00010",
+                        " : la fouille de véhicule obéit aux mêmes règles que la perquisition en enquête préliminaire ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                        "f00011",
+                        "(assentiment préalable, conditions identiques).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Point clé : sans assentiment régulier (formes identiques), tu t’exposes à une fragilité procédurale.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                      "f00012",
+                      "Point clé : sans assentiment régulier (formes identiques), tu t’exposes à une fragilité procédurale.",
+                    ),
                   ),
                 ],
               ),
@@ -146,50 +189,111 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
 
           // 1 à 6 — Préparation & mentions
           _ConditionCard(
-            title: "1 à 6 — Mentions préalables",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+              "f00013",
+              "1 à 6 — Mentions préalables",
+            ),
             cardColor: cardPrep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de rédaction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00014",
+                  "1) Lieu de rédaction",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner l’endroit exact où se situe l’équipage au moment de la rédaction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00015",
+                  "Mentionner l’endroit exact où se situe l’équipage au moment de la rédaction.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00016",
+                  "2) Instructions",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "L’APJ agit sous le contrôle de l’OPJ en enquête préliminaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00017",
+                  "L’APJ agit sous le contrôle de l’OPJ en enquête préliminaire.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00018",
+                  "3) Cadre juridique",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Situer l’action : enquête préliminaire uniquement + visa de l’article applicable.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00019",
+                  "Situer l’action : enquête préliminaire uniquement + visa de l’article applicable.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("4) Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00020",
+                  "4) Assistants",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Lister les fonctionnaires accompagnants + spécialistes (PTS…) si présents.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00021",
+                  "Lister les fonctionnaires accompagnants + spécialistes (PTS…) si présents.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("5) Identité (personne en possession du véhicule)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00022",
+                  "5) Identité (personne en possession du véhicule)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Identifier la personne en possession du véhicule + préciser sa situation (GAV / suspect libre).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00023",
+                  "Identifier la personne en possession du véhicule + préciser sa situation (GAV / suspect libre).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("6) Assentiment préalable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00024",
+                  "6) Assentiment préalable",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Autorisation délivrée par la personne en possession du véhicule dans des formes identiques à la perquisition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00025",
+                  "Autorisation délivrée par la personne en possession du véhicule dans des formes identiques à la perquisition.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Indiquer sur l’autorisation : impossibilité d’écrire, refus / impossibilité d’assister, représentant désigné.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00026",
+                  "Indiquer sur l’autorisation : impossibilité d’écrire, refus / impossibilité d’assister, représentant désigné.",
+                ),
               ),
             ],
           ),
@@ -198,33 +302,78 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
 
           // 7 à 10 — Opérations
           _ConditionCard(
-            title: "7 à 10 — Déroulé des opérations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+              "f00027",
+              "7 à 10 — Déroulé des opérations",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("7) Transport"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00028",
+                  "7) Transport",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Localisation exacte du stationnement du véhicule + heure précise d’arrivée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00029",
+                  "Localisation exacte du stationnement du véhicule + heure précise d’arrivée.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("8) Présence de la personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00030",
+                  "8) Présence de la personne",
+                ),
+              ),
               _Paragraph(
-                "La fouille doit être opérée en présence constante et effective de la personne en possession du véhicule, "
-                "sous peine de nullité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                      "f00031",
+                      "La fouille doit être opérée en présence constante et effective de la personne en possession du véhicule, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                      "f00032",
+                      "sous peine de nullité.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("9) Fouille (description du véhicule)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00033",
+                  "9) Fouille (description du véhicule)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Définir le véhicule : marque, type, couleur, immatriculation (et tout élément utile).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00034",
+                  "Définir le véhicule : marque, type, couleur, immatriculation (et tout élément utile).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("10) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00035",
+                  "10) Énonciation terminale (clôture)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner l’heure de fin, incidents éventuels, et la signature de la personne présente.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00036",
+                  "Mentionner l’heure de fin, incidents éventuels, et la signature de la personne présente.",
+                ),
               ),
             ],
           ),
@@ -233,41 +382,67 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
 
           // SDISS — très visuel
           _ConditionCard(
-            title: "Technique S.D.I.S.S. — objets découverts",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+              "f00037",
+              "Technique S.D.I.S.S. — objets découverts",
+            ),
             cardColor: cardSDISS,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour chaque objet découvert, applique une rédaction systématique et lisible (S.D.I.S.S.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00038",
+                  "Pour chaque objet découvert, applique une rédaction systématique et lisible (S.D.I.S.S.).",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "S — SITUATION : endroit exact de découverte (coffre, boîte à gants, sous siège…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00039",
+                  "S — SITUATION : endroit exact de découverte (coffre, boîte à gants, sous siège…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "D — DESCRIPTION : nature, caractéristiques, quantité, marquages, état.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00040",
+                  "D — DESCRIPTION : nature, caractéristiques, quantité, marquages, état.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "I — INTERPELLATION : présenter l’objet et questionner uniquement sur l’appartenance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00041",
+                  "I — INTERPELLATION : présenter l’objet et questionner uniquement sur l’appartenance.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S — SAISIE : l’objet est saisi immédiatement selon les règles applicables.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00042",
+                  "S — SAISIE : l’objet est saisi immédiatement selon les règles applicables.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S — SCELLÉS : mise sous scellé immédiate, numéroté et signé (mis en cause + rédacteur). Préciser ouvert/fermé/découvert.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00043",
+                  "S — SCELLÉS : mise sous scellé immédiate, numéroté et signé (mis en cause + rédacteur). Préciser ouvert/fermé/découvert.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Astuce : garde toujours la même structure pour chaque découverte, le lecteur comprend instantanément.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                      "f00044",
+                      "Astuce : garde toujours la même structure pour chaque découverte, le lecteur comprend instantanément.",
+                    ),
                   ),
                 ],
               ),
@@ -278,21 +453,43 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
 
           // 11-12 — annexes & avis
           _ConditionCard(
-            title: "Suites & annexes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+              "f00045",
+              "Suites & annexes",
+            ),
             cardColor: cardClose,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("11) Annexe"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00046",
+                  "11) Annexe",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "L’autorisation expresse et manuscrite est annexée au procès-verbal.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00047",
+                  "L’autorisation expresse et manuscrite est annexée au procès-verbal.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("12) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00048",
+                  "12) Avis O.P.J.",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "L’OPJ est informé de la fouille effectuée (avis tracé dans le PV).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00049",
+                  "L’OPJ est informé de la fouille effectuée (avis tracé dans le PV).",
+                ),
               ),
             ],
           ),
@@ -301,13 +498,21 @@ class FouilleVehiculePreliminairePage extends StatelessWidget {
 
           // Images (recto / verso)
           _ConditionCard(
-            title: "Modèle visuel (recto/verso)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+              "f00050",
+              "Modèle visuel (recto/verso)",
+            ),
             cardColor: cardPrep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Utilise ces modèles pour caler la mise en page et vérifier que tu n’oublies aucune mention.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00051",
+                  "Utilise ces modèles pour caler la mise en page et vérifier que tu n’oublies aucune mention.",
+                ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -575,9 +780,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -642,8 +845,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+        "f00052",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+        "f00053",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -816,7 +1027,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                    "f00054",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -885,7 +1100,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart",
+                  "f00055",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -913,7 +1132,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -948,7 +1169,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

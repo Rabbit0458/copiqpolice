@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuditionLibreNotificationDroitsSansEmprisonnementPage
     extends StatelessWidget {
@@ -56,10 +57,18 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Audition libre",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+            "f00002",
+            "Audition libre",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV d’audition du suspect libre (majeur)\nNotification des droits — sans emprisonnement",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+              "f00003",
+              "PV d’audition du suspect libre (majeur)\nNotification des droits — sans emprisonnement",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -85,26 +98,48 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Objectif & cadre d’utilisation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+              "f00004",
+              "Objectif & cadre d’utilisation",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas s’utilise pour entendre une personne suspectée (majeure) dans le cadre d’une audition libre "
-                "pour une contravention ou un délit non puni d’une peine d’emprisonnement (sans droit à l’assistance d’un avocat).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                      "f00005",
+                      "Ce canevas s’utilise pour entendre une personne suspectée (majeure) dans le cadre d’une audition libre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                      "f00006",
+                      "pour une contravention ou un délit non puni d’une peine d’emprisonnement (sans droit à l’assistance d’un avocat).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text: "Aucune contrainte : la personne vient librement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00007",
+                  "Aucune contrainte : la personne vient librement.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Le cadre juridique doit être clairement identifié (flagrance / préliminaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00008",
+                  "Le cadre juridique doit être clairement identifié (flagrance / préliminaire).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "La notification des droits doit être complète, compréhensible et tracée au PV.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00009",
+                  "La notification des droits doit être complète, compréhensible et tracée au PV.",
+                ),
               ),
             ],
           ),
@@ -113,19 +148,30 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal (à placer en tête du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+              "f00010",
+              "I — Élément légal (à placer en tête du PV)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 61-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                    "f00011",
+                    "Article 61-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixe les conditions de l’audition libre et la liste des droits devant être notifiés à la personne soupçonnée.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                    "f00012",
+                    " : fixe les conditions de l’audition libre et la liste des droits devant être notifiés à la personne soupçonnée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -133,8 +179,16 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ce texte encadre l’audition de la personne à l’égard de laquelle il existe des raisons plausibles de soupçonner "
-                        "qu’elle a commis ou tenté de commettre une infraction, lorsqu’elle est entendue librement.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                          "f00013",
+                          "Ce texte encadre l’audition de la personne à l’égard de laquelle il existe des raisons plausibles de soupçonner ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                          "f00014",
+                          "qu’elle a commis ou tenté de commettre une infraction, lorsqu’elle est entendue librement.",
+                        ),
                   ),
                 ],
               ),
@@ -144,47 +198,128 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Conditions préalables & sécurité juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+              "f00015",
+              "II — Conditions préalables & sécurité juridique",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Lieu de rédaction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00016",
+                  "A) Lieu de rédaction",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le lieu précis de rédaction et le service.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00017",
+                  "Indiquer le lieu précis de rédaction et le service.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00018",
+                  "B) Instructions",
+                ),
+              ),
               _Paragraph(
-                "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.\n"
-                "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                      "f00019",
+                      "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                      "f00020",
+                      "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00021",
+                  "C) Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "Le rédacteur doit situer l’action dans un cadre juridique précis : enquête de flagrance ou enquête préliminaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00022",
+                  "Le rédacteur doit situer l’action dans un cadre juridique précis : enquête de flagrance ou enquête préliminaire.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("D) Assistants éventuels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00023",
+                  "D) Assistants éventuels",
+                ),
+              ),
               _Paragraph(
-                "Le rédacteur peut se faire assister d’un collègue. Le mentionner clairement (grade, nom, service).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00024",
+                  "Le rédacteur peut se faire assister d’un collègue. Le mentionner clairement (grade, nom, service).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("E) Mode de comparution (sans contrainte)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00025",
+                  "E) Mode de comparution (sans contrainte)",
+                ),
+              ),
               _Paragraph(
-                "L’audition libre exclut toute forme de contrainte. La personne comparaît :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00026",
+                  "L’audition libre exclut toute forme de contrainte. La personne comparaît :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "À la suite d’une convocation."),
               _BulletPoint(
-                text:
-                    "Après avoir été conduite sans contrainte devant l’OPJ (acceptation de rejoindre le service).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00027",
+                  "À la suite d’une convocation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00028",
+                  "Après avoir été conduite sans contrainte devant l’OPJ (acceptation de rejoindre le service).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("F) Confirmation de l’absence de contrainte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00029",
+                  "F) Confirmation de l’absence de contrainte",
+                ),
+              ),
               _Paragraph(
-                "La personne doit confirmer qu’elle a suivi de son plein gré les agents de la force publique "
-                "et qu’elle n’a subi aucune contrainte.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                      "f00030",
+                      "La personne doit confirmer qu’elle a suivi de son plein gré les agents de la force publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                      "f00031",
+                      "et qu’elle n’a subi aucune contrainte.",
+                    ),
               ),
             ],
           ),
@@ -192,48 +327,84 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Notification des droits (contenu obligatoire)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+              "f00032",
+              "III — Notification des droits (contenu obligatoire)",
+            ),
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Droits visés à "),
                 TextSpan(
-                  text: "l’article 61-1 du C.P.P.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                    "f00033",
+                    "Droits visés à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                    "f00034",
+                    "l’article 61-1 du C.P.P.",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : la personne suspectée doit être informée :",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                    "f00035",
+                    " : la personne suspectée doit être informée :",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "De la qualification, de la date et du lieu présumés de l’infraction qu’elle est soupçonnée d’avoir commise ou tenté de commettre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00036",
+                  "De la qualification, de la date et du lieu présumés de l’infraction qu’elle est soupçonnée d’avoir commise ou tenté de commettre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "De son droit de quitter, à tout moment, les locaux où elle est entendue.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00037",
+                  "De son droit de quitter, à tout moment, les locaux où elle est entendue.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "De son droit d’être assistée par un interprète, le cas échéant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00038",
+                  "De son droit d’être assistée par un interprète, le cas échéant.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "De son droit, après avoir décliné son identité, de faire des déclarations, de répondre aux questions posées ou de se taire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00039",
+                  "De son droit, après avoir décliné son identité, de faire des déclarations, de répondre aux questions posées ou de se taire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "De la possibilité de bénéficier, le cas échéant gratuitement, de conseils juridiques dans une structure d’accès au droit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00040",
+                  "De la possibilité de bénéficier, le cas échéant gratuitement, de conseils juridiques dans une structure d’accès au droit.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Conseil pratique : fais notifier lentement, reformule si besoin, puis fais acter clairement que la personne a compris chacun des droits.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                      "f00041",
+                      "Conseil pratique : fais notifier lentement, reformule si besoin, puis fais acter clairement que la personne a compris chacun des droits.",
+                    ),
                   ),
                 ],
               ),
@@ -243,38 +414,122 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Déroulé pédagogique du PV (structure complète)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+              "f00042",
+              "IV — Déroulé pédagogique du PV (structure complète)",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour un rendu propre, fluide et exploitable, voici une structure claire (à reprendre dans l’ordre).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00043",
+                  "Pour un rendu propre, fluide et exploitable, voici une structure claire (à reprendre dans l’ordre).",
+                ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "1) Lieu de rédaction."),
-              _BulletPoint(text: "2) Instructions (flagrance / préliminaire)."),
-              _BulletPoint(text: "3) Cadre juridique (identifier l’enquête)."),
               _BulletPoint(
-                text: "4) Visa de l’audition libre (art. 61-1 CPP).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00044",
+                  "1) Lieu de rédaction.",
+                ),
               ),
-              _BulletPoint(text: "5) Assistants éventuels (si présent)."),
-              _BulletPoint(text: "6) Mode de comparution (sans contrainte)."),
-              _BulletPoint(text: "7) Confirmation de l’absence de contrainte."),
-              _BulletPoint(text: "8) Information des droits (liste complète)."),
-              _BulletPoint(text: "9) Identité (grande identité)."),
-              _BulletPoint(text: "10) Déclarations / questions / pièces."),
-              _BulletPoint(text: "11) Clôture (heure de fin)."),
               _BulletPoint(
-                text: "12) Avis à l’OPJ (information des déclarations).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00045",
+                  "2) Instructions (flagrance / préliminaire).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00046",
+                  "3) Cadre juridique (identifier l’enquête).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00047",
+                  "4) Visa de l’audition libre (art. 61-1 CPP).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00048",
+                  "5) Assistants éventuels (si présent).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00049",
+                  "6) Mode de comparution (sans contrainte).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00050",
+                  "7) Confirmation de l’absence de contrainte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00051",
+                  "8) Information des droits (liste complète).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00052",
+                  "9) Identité (grande identité).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00053",
+                  "10) Déclarations / questions / pièces.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00054",
+                  "11) Clôture (heure de fin).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00055",
+                  "12) Avis à l’OPJ (information des déclarations).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Dans la partie « Déclarations », laisser parler l’individu, éviter un interrogatoire dirigé. "
-                        "En cas d’aveux : demander des précisions circonstanciées. ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                          "f00056",
+                          "Dans la partie « Déclarations », laisser parler l’individu, éviter un interrogatoire dirigé. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                          "f00057",
+                          "En cas d’aveux : demander des précisions circonstanciées. ",
+                        ),
                   ),
                 ],
               ),
@@ -284,13 +539,21 @@ class AuditionLibreNotificationDroitsSansEmprisonnementPage
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Modèles visuels (recto / verso)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+              "f00058",
+              "V — Modèles visuels (recto / verso)",
+            ),
             cardColor: cardMedia,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ces visuels servent de référence pour la mise en forme du canevas et l’ordre des mentions à reprendre.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00059",
+                  "Ces visuels servent de référence pour la mise en forme du canevas et l’ordre des mentions à reprendre.",
+                ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -556,9 +819,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -623,8 +884,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+        "f00060",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+        "f00061",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -797,7 +1066,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                    "f00062",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -866,7 +1139,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart",
+                  "f00063",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -894,7 +1171,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -929,7 +1208,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

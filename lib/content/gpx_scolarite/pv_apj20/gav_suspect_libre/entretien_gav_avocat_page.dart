@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EntretienGavAvocatPage extends StatelessWidget {
   const EntretienGavAvocatPage({super.key});
@@ -55,10 +56,18 @@ class EntretienGavAvocatPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Entretien GAV – Avocat",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+            "f00002",
+            "Entretien GAV – Avocat",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class EntretienGavAvocatPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de procès-verbal d’entretien du gardé à vue avec l’avocat",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00003",
+              "Canevas de procès-verbal d’entretien du gardé à vue avec l’avocat",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -93,25 +106,41 @@ class EntretienGavAvocatPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (visa)
           _ConditionCard(
-            title: "Visa (modalités de l’entretien)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00004",
+              "Visa (modalités de l’entretien)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "L’entretien avec l’avocat est encadré par les dispositions de ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                    "f00005",
+                    "L’entretien avec l’avocat est encadré par les dispositions de ",
+                  ),
                 ),
-                _law("l’article 63-4 du Code de procédure pénale"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                    "f00006",
+                    "l’article 63-4 du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ce visa doit apparaître clairement dans le procès-verbal : il fonde la présence et l’entretien confidentiel.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                      "f00007",
+                      "Ce visa doit apparaître clairement dans le procès-verbal : il fonde la présence et l’entretien confidentiel.",
+                    ),
                   ),
                 ],
               ),
@@ -121,13 +150,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 — Lieu de rédaction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00008",
+              "1 — Lieu de rédaction",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Mentionner l’endroit exact où se situe l’agent (service, unité, adresse/lieu précis).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00009",
+                  "Mentionner l’endroit exact où se situe l’agent (service, unité, adresse/lieu précis).",
+                ),
               ),
             ],
           ),
@@ -135,18 +172,28 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2 — Instructions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00010",
+              "2 — Instructions",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00011",
+                  "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00012",
+                  "En préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                ),
               ),
             ],
           ),
@@ -154,13 +201,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3 — Cadre juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00013",
+              "3 — Cadre juridique",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Situer l’action dans un cadre juridique précis : enquête de flagrance ou enquête préliminaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00014",
+                  "Situer l’action dans un cadre juridique précis : enquête de flagrance ou enquête préliminaire.",
+                ),
               ),
             ],
           ),
@@ -168,13 +223,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "5 — Rappel de la demande",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00015",
+              "5 — Rappel de la demande",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Rappeler la demande de la personne placée en garde à vue lors de la notification de son droit d’être assistée par un avocat.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00016",
+                  "Rappeler la demande de la personne placée en garde à vue lors de la notification de son droit d’être assistée par un avocat.",
+                ),
               ),
             ],
           ),
@@ -182,18 +245,28 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "6 — Arrivée de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00017",
+              "6 — Arrivée de l’avocat",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Vérifier l’identité et la qualité de la personne se présentant comme avocat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00018",
+                  "Vérifier l’identité et la qualité de la personne se présentant comme avocat.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Relever les références de sa carte professionnelle (barreau, numéro, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00019",
+                  "Relever les références de sa carte professionnelle (barreau, numéro, etc.).",
+                ),
               ),
             ],
           ),
@@ -201,13 +274,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "7 — Information de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00020",
+              "7 — Information de l’avocat",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Rappeler la nature et la date présumées de l’infraction sur laquelle porte l’enquête.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00021",
+                  "Rappeler la nature et la date présumées de l’infraction sur laquelle porte l’enquête.",
+                ),
               ),
             ],
           ),
@@ -215,39 +296,71 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "8 — Consultation de certaines pièces de procédure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00022",
+              "8 — Consultation de certaines pièces de procédure",
+            ),
             cardColor: cardOps,
             accent: accentAmber,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Mentionner au procès-verbal la demande formulée par l’avocat de consulter des pièces du dossier.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00023",
+                  "Mentionner au procès-verbal la demande formulée par l’avocat de consulter des pièces du dossier.",
+                ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "L’avocat peut uniquement consulter "),
-                _law("(article 63-4-1 du Code de procédure pénale)"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                    "f00024",
+                    "L’avocat peut uniquement consulter ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                    "f00025",
+                    "(article 63-4-1 du Code de procédure pénale)",
+                  ),
+                ),
                 const TextSpan(text: " :"),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Le procès-verbal de notification du placement en garde à vue et des droits y étant attachés, ainsi que les réponses formulées par le gardé à vue.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00026",
+                  "Le procès-verbal de notification du placement en garde à vue et des droits y étant attachés, ainsi que les réponses formulées par le gardé à vue.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le certificat médical établi suite au placement en garde à vue.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00027",
+                  "Le certificat médical établi suite au placement en garde à vue.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Les procès-verbaux d’audition et de confrontation du gardé à vue.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00028",
+                  "Les procès-verbaux d’audition et de confrontation du gardé à vue.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La consultation doit rester strictement limitée aux pièces prévues. Penser à tracer : demande, pièces consultées, heure/durée si utile.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                      "f00029",
+                      "La consultation doit rester strictement limitée aux pièces prévues. Penser à tracer : demande, pièces consultées, heure/durée si utile.",
+                    ),
                   ),
                 ],
               ),
@@ -257,25 +370,38 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "9 — Entretien confidentiel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00030",
+              "9 — Entretien confidentiel",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "L’avocat désigné peut s’entretenir avec la personne gardée à vue pendant 30 minutes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00031",
+                  "L’avocat désigné peut s’entretenir avec la personne gardée à vue pendant 30 minutes.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Un seul entretien par tranche de 24 heures est prévu, même en cas de changement d’avocat en cours de garde à vue.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00032",
+                  "Un seul entretien par tranche de 24 heures est prévu, même en cas de changement d’avocat en cours de garde à vue.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Mentionner la durée effective de l’entretien dans le procès-verbal (heure début/fin si possible).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                      "f00033",
+                      "Mentionner la durée effective de l’entretien dans le procès-verbal (heure début/fin si possible).",
+                    ),
                   ),
                 ],
               ),
@@ -285,13 +411,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "10 — Remise éventuelle d’observations écrites",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00034",
+              "10 — Remise éventuelle d’observations écrites",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Si l’avocat remet des observations écrites, l’indiquer clairement (et préciser leur remise).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00035",
+                  "Si l’avocat remet des observations écrites, l’indiquer clairement (et préciser leur remise).",
+                ),
               ),
             ],
           ),
@@ -299,13 +433,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "11 — Énonciation terminale (clôture)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00036",
+              "11 — Énonciation terminale (clôture)",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Préciser l’heure de fin de l’acte / de l’entretien et clôturer le procès-verbal.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00037",
+                  "Préciser l’heure de fin de l’acte / de l’entretien et clôturer le procès-verbal.",
+                ),
               ),
             ],
           ),
@@ -313,13 +455,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "12 — Annexe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00038",
+              "12 — Annexe",
+            ),
             cardColor: cardOps,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Si l’avocat formule des observations écrites, les annexer au procès-verbal.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00039",
+                  "Si l’avocat formule des observations écrites, les annexer au procès-verbal.",
+                ),
               ),
             ],
           ),
@@ -327,13 +477,21 @@ class EntretienGavAvocatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "13 — Avis O.P.J.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+              "f00040",
+              "13 — Avis O.P.J.",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Si l’avocat remet des observations écrites, le procureur de la République est immédiatement informé par l’enquêteur en charge du dossier.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00041",
+                  "Si l’avocat remet des observations écrites, le procureur de la République est immédiatement informé par l’enquêteur en charge du dossier.",
+                ),
               ),
             ],
           ),
@@ -589,9 +747,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -656,8 +812,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+        "f00042",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+        "f00043",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -830,7 +994,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                    "f00044",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -899,7 +1067,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart",
+                  "f00045",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -927,7 +1099,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -962,7 +1136,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — HIÉRARCHIE : OFFICIERS DE POLICE JUDICIAIRE (OPJ)
@@ -44,10 +45,18 @@ class HierarchieOpjPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Officiers de police judiciaire',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+            "f00002",
+            'Officiers de police judiciaire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -63,7 +72,11 @@ class HierarchieOpjPage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            'Les officiers de police judiciaire (OPJ)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00003",
+              'Les officiers de police judiciaire (OPJ)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -73,30 +86,46 @@ class HierarchieOpjPage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO ----------------------------
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'La police judiciaire est exercée sous la direction du procureur de la République, conformément à l’article 12 du Code de Procédure Pénale. ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                "f00004",
+                'La police judiciaire est exercée sous la direction du procureur de la République, conformément à l’article 12 du Code de Procédure Pénale. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'Elle est placée sous la surveillance du procureur général et le contrôle de la chambre de l’instruction, selon l’article 13 du Code de Procédure Pénale. ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                "f00005",
+                'Elle est placée sous la surveillance du procureur général et le contrôle de la chambre de l’instruction, selon l’article 13 du Code de Procédure Pénale. ',
+              ),
             ),
           ]),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'Pour exercer les missions de police judiciaire, les personnels de la police nationale doivent recevoir la qualification suivante : officier de police judiciaire, agent de police judiciaire ou agent de police judiciaire adjoint.',
+          _Paragraph(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00006",
+              'Pour exercer les missions de police judiciaire, les personnels de la police nationale doivent recevoir la qualification suivante : officier de police judiciaire, agent de police judiciaire ou agent de police judiciaire adjoint.',
+            ),
           ),
           const SizedBox(height: 14),
 
-          const _IntroBullet(
-            text:
-                'Les officiers de police judiciaire disposent de pouvoirs d’enquête renforcés.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00007",
+              'Les officiers de police judiciaire disposent de pouvoirs d’enquête renforcés.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Ils sont strictement encadrés par le Code de Procédure Pénale et par l’habilitation délivrée par le procureur général.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00008",
+              'Ils sont strictement encadrés par le Code de Procédure Pénale et par l’habilitation délivrée par le procureur général.',
+            ),
           ),
           const SizedBox(height: 18),
 
@@ -104,33 +133,65 @@ class HierarchieOpjPage extends StatelessWidget {
           // A. QUALITÉ D’OPJ
           // =======================================================
           _ConditionCard(
-            title: 'A. Qualité d’officier de police judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00009",
+              'A. Qualité d’officier de police judiciaire',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’article 16 du Code de Procédure Pénale énumère les personnes ayant la qualité d’officier de police judiciaire.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00010",
+                  'L’article 16 du Code de Procédure Pénale énumère les personnes ayant la qualité d’officier de police judiciaire.',
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle('Personnes ayant la qualité d’OPJ'),
-              _BulletPoint(text: 'Les maires et leurs adjoints.'),
-              _BulletPoint(
-                text:
-                    'Les officiers et gradés de la gendarmerie ainsi que les gendarmes désignés par arrêtés ministériels après avis conforme d’une commission.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00011",
+                  'Personnes ayant la qualité d’OPJ',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les inspecteurs généraux, sous-directeurs de police active, contrôleurs généraux, commissaires de police et officiers de police.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00012",
+                  'Les maires et leurs adjoints.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les fonctionnaires du corps d’encadrement et d’application de la police nationale, désignés par arrêtés des ministres de la justice et de l’intérieur après avis conforme d’une commission.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00013",
+                  'Les officiers et gradés de la gendarmerie ainsi que les gendarmes désignés par arrêtés ministériels après avis conforme d’une commission.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les directeurs et sous-directeurs de la police judiciaire et de la gendarmerie.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00014",
+                  'Les inspecteurs généraux, sous-directeurs de police active, contrôleurs généraux, commissaires de police et officiers de police.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00015",
+                  'Les fonctionnaires du corps d’encadrement et d’application de la police nationale, désignés par arrêtés des ministres de la justice et de l’intérieur après avis conforme d’une commission.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00016",
+                  'Les directeurs et sous-directeurs de la police judiciaire et de la gendarmerie.',
+                ),
               ),
             ],
           ),
@@ -141,27 +202,44 @@ class HierarchieOpjPage extends StatelessWidget {
           // B. CONDITIONS D’EXERCICE
           // =======================================================
           _ConditionCard(
-            title: 'B. Conditions d’exercice de la qualité d’OPJ',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00017",
+              'B. Conditions d’exercice de la qualité d’OPJ',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Même s’ils possèdent la qualité d’officier de police judiciaire, les personnels ne peuvent exercer les pouvoirs attachés à cette fonction que s’ils remplissent des conditions cumulatives strictes.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00018",
+                  'Même s’ils possèdent la qualité d’officier de police judiciaire, les personnels ne peuvent exercer les pouvoirs attachés à cette fonction que s’ils remplissent des conditions cumulatives strictes.',
+                ),
               ),
               SizedBox(height: 12),
 
               _BulletPoint(
-                text:
-                    'Être affecté à un emploi comportant l’exercice de la police judiciaire.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00019",
+                  'Être affecté à un emploi comportant l’exercice de la police judiciaire.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Avoir reçu une habilitation personnelle du procureur général.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00020",
+                  'Avoir reçu une habilitation personnelle du procureur général.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Ne pas participer, en unité constituée, à une opération de maintien de l’ordre.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00021",
+                  'Ne pas participer, en unité constituée, à une opération de maintien de l’ordre.',
+                ),
               ),
 
               SizedBox(height: 14),
@@ -170,8 +248,11 @@ class HierarchieOpjPage extends StatelessWidget {
                 title: 'Important',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Les fonctionnaires du corps d’encadrement et d’application ne peuvent recevoir l’habilitation que s’ils sont affectés dans un service déterminé par l’autorité judiciaire.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                      "f00022",
+                      'Les fonctionnaires du corps d’encadrement et d’application ne peuvent recevoir l’habilitation que s’ils sont affectés dans un service déterminé par l’autorité judiciaire.',
+                    ),
                   ),
                 ],
               ),
@@ -184,34 +265,64 @@ class HierarchieOpjPage extends StatelessWidget {
           // C. MODES DE DÉSIGNATION
           // =======================================================
           _ConditionCard(
-            title: 'C. Modes de désignation',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00023",
+              'C. Modes de désignation',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
-              _SubTitle('1. De plein droit'),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00024",
+                  '1. De plein droit',
+                ),
+              ),
               _Paragraph(
-                'Les maires, les adjoints au maire, ainsi que les directeurs et sous-directeurs de la police judiciaire et de la gendarmerie exercent automatiquement les fonctions d’officier de police judiciaire, sans habilitation préalable.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00025",
+                  'Les maires, les adjoints au maire, ainsi que les directeurs et sous-directeurs de la police judiciaire et de la gendarmerie exercent automatiquement les fonctions d’officier de police judiciaire, sans habilitation préalable.',
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle('2. Avec habilitation'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00026",
+                  '2. Avec habilitation',
+                ),
+              ),
               _Paragraph(
-                'Pour les autres personnels, l’exercice effectif des attributions d’officier de police judiciaire nécessite une habilitation individuelle délivrée par le procureur général territorialement compétent.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00027",
+                  'Pour les autres personnels, l’exercice effectif des attributions d’officier de police judiciaire nécessite une habilitation individuelle délivrée par le procureur général territorialement compétent.',
+                ),
               ),
               SizedBox(height: 8),
 
               _BulletPoint(
-                text:
-                    'Sont concernés : gendarmes (à l’exception des directeurs et sous-directeurs), inspecteurs généraux, commissaires, officiers de police, ainsi que les fonctionnaires du corps de commandement et d’encadrement.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00028",
+                  'Sont concernés : gendarmes (à l’exception des directeurs et sous-directeurs), inspecteurs généraux, commissaires, officiers de police, ainsi que les fonctionnaires du corps de commandement et d’encadrement.',
+                ),
               ),
               SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'La première habilitation reste valable pour toute la durée des fonctions, même en cas de changement d’affectation, à condition que le fonctionnaire continue à travailler dans un service de police judiciaire.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                      "f00029",
+                      'La première habilitation reste valable pour toute la durée des fonctions, même en cas de changement d’affectation, à condition que le fonctionnaire continue à travailler dans un service de police judiciaire.',
+                    ),
                   ),
                 ],
               ),
@@ -223,12 +334,19 @@ class HierarchieOpjPage extends StatelessWidget {
           // =======================================================
           // NOTE FINALE
           // =======================================================
-          const _NotaBox(
-            title: 'À noter',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+              "f00030",
+              'À noter',
+            ),
             bodySpans: [
               TextSpan(
-                text:
-                    'Certains réservistes opérationnels peuvent conserver la qualité d’officier de police judiciaire conformément aux articles 16-1 A et R. 15-2-1 à R. 15-6-6 du Code de Procédure Pénale.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_opj_page.dart",
+                  "f00031",
+                  'Certains réservistes opérationnels peuvent conserver la qualité d’officier de police judiciaire conformément aux articles 16-1 A et R. 15-2-1 à R. 15-6-6 du Code de Procédure Pénale.',
+                ),
               ),
             ],
           ),

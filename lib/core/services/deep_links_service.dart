@@ -62,6 +62,7 @@ import 'dart:async';
 
 import 'package:app_links/app_links.dart';
 import 'package:copiqpolice/core/cas_pratique/deep_links/cp_deep_links_handler.dart';
+import 'package:copiqpolice/features/home/payment_result_page.dart';
 import 'package:flutter/widgets.dart';
 
 class DeepLinksService {
@@ -72,13 +73,15 @@ class DeepLinksService {
   final AppLinks _appLinks = AppLinks();
 
   /// Navigator key partagé avec MaterialApp pour pouvoir naviguer en background.
-  final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+  GlobalKey<NavigatorState>? _navigatorKey;
 
   StreamSubscription<Uri>? _sub;
   bool _initialized = false;
 
-  /// À appeler dans main() APRÈS Supabase init et AVANT runApp(MyApp()).
-  Future<void> init() async {
+  /// À appeler une fois `runApp` monté et la clé de navigation attachée.
+  /// Le lien initial reste récupéré afin de couvrir un démarrage à froid.
+  Future<void> init({required GlobalKey<NavigatorState> navigatorKey}) async {
+    _navigatorKey = navigatorKey;
     if (_initialized) return;
     _initialized = true;
 
@@ -86,10 +89,7 @@ class DeepLinksService {
     try {
       final initialUri = await _appLinks.getInitialLink();
       if (initialUri != null) {
-        // Délai pour laisser MaterialApp s'initialiser.
-        Future.delayed(const Duration(milliseconds: 400), () {
-          _handleUri(initialUri);
-        });
+        unawaited(_handleUri(initialUri));
       }
     } catch (e) {
       debugPrint('[DeepLinks] initialLink failed: $e');
@@ -97,7 +97,7 @@ class DeepLinksService {
 
     // Stream pour les liens reçus pendant que l'app tourne.
     _sub = _appLinks.uriLinkStream.listen(
-      _handleUri,
+      (uri) => unawaited(_handleUri(uri)),
       onError: (e) => debugPrint('[DeepLinks] stream error: $e'),
     );
   }
@@ -105,17 +105,35 @@ class DeepLinksService {
   Future<void> dispose() async {
     await _sub?.cancel();
     _sub = null;
+    _navigatorKey = null;
     _initialized = false;
   }
 
-  void _handleUri(Uri uri) {
+  Future<void> _handleUri(Uri uri) async {
+    NavigatorState? navigator;
+    for (var attempt = 0; attempt < 20; attempt++) {
+      navigator = _navigatorKey?.currentState;
+      if (navigator != null) break;
+      await Future<void>.delayed(const Duration(milliseconds: 100));
+    }
+    if (navigator == null) {
+      debugPrint('[DeepLinks] navigator unavailable for $uri');
+      return;
+    }
+
     // CODE-071 — Cas Pratique links (app.copiq.fr/c/<slug>) ont priorité.
-    if (CpDeepLinksHandler.I.handleUri(uri, navigatorKey.currentState)) return;
+    if (CpDeepLinksHandler.I.handleUri(uri, navigator)) return;
+
+    if (PaymentResultPage.supportsUri(uri)) {
+      debugPrint('[DeepLinks] $uri -> paiement');
+      await navigator.pushNamed(uri.toString());
+      return;
+    }
 
     final route = _routeForUri(uri);
     if (route == null) return;
     debugPrint('[DeepLinks] $uri -> $route');
-    navigatorKey.currentState?.pushNamed(route);
+    await navigator.pushNamed(route);
   }
 
   /// Conversion d'un Uri en route Flutter.
@@ -168,8 +186,14 @@ class DeepLinksService {
     }
 
     // https://copiqpolice.app/* : on prend simplement le path.
-    if ((scheme == 'https' || scheme == 'http') &&
-        (host == 'copiqpolice.app' || host == 'www.copiqpolice.app')) {
+    if (scheme == 'https' &&
+        const {
+          'copiqpolice.app',
+          'www.copiqpolice.app',
+          'copiq.fr',
+          'www.copiq.fr',
+          'app.copiq.fr',
+        }.contains(host)) {
       if (uri.path.isEmpty || uri.path == '/') return '/home-bootstrap';
       return uri.path;
     }

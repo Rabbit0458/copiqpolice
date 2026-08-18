@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ReseauxSociauxPage extends StatelessWidget {
   const ReseauxSociauxPage({super.key});
@@ -56,10 +57,18 @@ class ReseauxSociauxPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Déontologie",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+            "f00002",
+            "Déontologie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ReseauxSociauxPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Soyez vigilants sur les réseaux sociaux",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00003",
+              "Soyez vigilants sur les réseaux sociaux",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,18 +99,46 @@ class ReseauxSociauxPage extends StatelessWidget {
 
           // Intro / enjeu
           _ConditionCard(
-            title: "Pourquoi c’est important ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00004",
+              "Pourquoi c’est important ?",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sans le savoir, certains policiers se mettent en danger sur les réseaux sociaux.\n\n"
-                "Les réseaux sociaux accélèrent et amplifient la circulation de l’information : "
-                "une publication anodine (photo, vidéo, commentaire, partage) peut révéler des éléments "
-                "sur votre identité, vos proches, vos habitudes, vos missions ou votre affectation.\n\n"
-                "L’usage des réseaux sociaux doit donc être raisonné, avec prudence, bon sens, discrétion "
-                "et modération, pour protéger votre sécurité, celle de vos proches, et l’image de l’institution.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00005",
+                      "Sans le savoir, certains policiers se mettent en danger sur les réseaux sociaux.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00006",
+                      "Les réseaux sociaux accélèrent et amplifient la circulation de l’information : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00007",
+                      "une publication anodine (photo, vidéo, commentaire, partage) peut révéler des éléments ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00008",
+                      "sur votre identité, vos proches, vos habitudes, vos missions ou votre affectation.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00009",
+                      "L’usage des réseaux sociaux doit donc être raisonné, avec prudence, bon sens, discrétion ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00010",
+                      "et modération, pour protéger votre sécurité, celle de vos proches, et l’image de l’institution.",
+                    ),
               ),
             ],
           ),
@@ -106,62 +147,84 @@ class ReseauxSociauxPage extends StatelessWidget {
 
           // ✅ Cadre légal en haut (articles en rouge)
           _ConditionCard(
-            title: "I — Cadre légal & obligations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00011",
+              "I — Cadre légal & obligations",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 26 de la loi n° 83-634 du 13 juillet 1983",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                    "f00012",
+                    "Article 26 de la loi n° 83-634 du 13 juillet 1983",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : secret professionnel + discrétion professionnelle (faits, informations, documents connus dans l’exercice des fonctions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                    "f00013",
+                    " : secret professionnel + discrétion professionnelle (faits, informations, documents connus dans l’exercice des fonctions).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                    "f00014",
+                    "Article 226-13 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : réprime la révélation d’une information à caractère secret par une personne dépositaire par état, profession, fonction ou mission.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                    "f00015",
+                    " : réprime la révélation d’une information à caractère secret par une personne dépositaire par état, profession, fonction ou mission.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Code de déontologie (Police / Gendarmerie) : ",
-                ),
-                TextSpan(
-                  text:
-                      "articles R. 434-2 à R. 434-33 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                    "f00016",
+                    "Code de déontologie (Police / Gendarmerie) : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — dignité en toute circonstance, y compris sur les réseaux de communication électronique sociaux.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                    "f00017",
+                    "articles R. 434-2 à R. 434-33 du Code de la sécurité intérieure",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                    "f00018",
+                    " — dignité en toute circonstance, y compris sur les réseaux de communication électronique sociaux.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Même sous pseudonyme, vous restez responsable de vos publications : ce que vous écrivez, partagez, commentez ou « likez » peut engager votre responsabilité disciplinaire et/ou pénale.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00019",
+                      "Même sous pseudonyme, vous restez responsable de vos publications : ce que vous écrivez, partagez, commentez ou « likez » peut engager votre responsabilité disciplinaire et/ou pénale.",
+                    ),
                   ),
                 ],
               ),
@@ -172,36 +235,67 @@ class ReseauxSociauxPage extends StatelessWidget {
 
           // Risques principaux (sécurité + institution)
           _ConditionCard(
-            title: "II — Les risques majeurs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00020",
+              "II — Les risques majeurs",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Risque sécurité (vous + proches)"),
-              _BulletPoint(
-                text:
-                    "Publier des éléments de vie privée (lieux, habitudes, famille) + indices d’appartenance à l’institution peut attirer des personnes mal intentionnées.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00021",
+                  "A) Risque sécurité (vous + proches)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le danger existe en service comme hors service (et peut viser l’entourage).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00022",
+                  "Publier des éléments de vie privée (lieux, habitudes, famille) + indices d’appartenance à l’institution peut attirer des personnes mal intentionnées.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00023",
+                  "Le danger existe en service comme hors service (et peut viser l’entourage).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Risque institutionnel (image + neutralité)"),
-              _BulletPoint(
-                text:
-                    "Si vous mentionnez directement ou indirectement votre qualité de policier, vous représentez l’institution auprès de ceux qui vous lisent.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00024",
+                  "B) Risque institutionnel (image + neutralité)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Neutralité renforcée en période électorale : ne pas s’identifier politiquement ou religieusement au titre de sa qualité d’agent.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00025",
+                  "Si vous mentionnez directement ou indirectement votre qualité de policier, vous représentez l’institution auprès de ceux qui vous lisent.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00026",
+                  "Neutralité renforcée en période électorale : ne pas s’identifier politiquement ou religieusement au titre de sa qualité d’agent.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le droit à l’oubli n’existe pas sur internet : une diffusion inappropriée est difficile à supprimer et peut causer des préjudices irréparables.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00027",
+                      "Le droit à l’oubli n’existe pas sur internet : une diffusion inappropriée est difficile à supprimer et peut causer des préjudices irréparables.",
+                    ),
                   ),
                 ],
               ),
@@ -212,51 +306,109 @@ class ReseauxSociauxPage extends StatelessWidget {
 
           // Bonnes pratiques (checklist)
           _ConditionCard(
-            title:
-                "III — Bonnes pratiques (discrétion • prudence • responsabilité)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00028",
+              "III — Bonnes pratiques (discrétion • prudence • responsabilité)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Protégez votre anonymat"),
-              _IntroBullet(
-                text:
-                    "Utilisez un pseudonyme et évitez toute information personnelle (adresse, habitudes, proches).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00029",
+                  "Protégez votre anonymat",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Préservez votre famille : limitez l’exposition de vos proches sur vos contenus.",
-              ),
-              SizedBox(height: 10),
-              _SubTitle("Maîtrisez vos paramètres"),
-              _IntroBullet(
-                text:
-                    "Calibrez strictement la confidentialité (idéalement : famille/amis). Vérifiez régulièrement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00030",
+                  "Utilisez un pseudonyme et évitez toute information personnelle (adresse, habitudes, proches).",
+                ),
               ),
               _IntroBullet(
-                text: "Désactivez la géolocalisation sur tous vos comptes.",
-              ),
-              SizedBox(height: 10),
-              _SubTitle("Connaissez vos contacts"),
-              _IntroBullet(
-                text:
-                    "N’acceptez pas n’importe qui : surtout pas des inconnus.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00031",
+                  "Préservez votre famille : limitez l’exposition de vos proches sur vos contenus.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Préservez votre identité professionnelle"),
-              _IntroBullet(
-                text:
-                    "Ne vous identifiez pas comme policier (tenue, logo, lieu de travail). Attention aux arrière-plans sur photos/vidéos.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00032",
+                  "Maîtrisez vos paramètres",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Respectez strictement le secret professionnel : n’évoquez aucune mission en cours ou achevée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00033",
+                  "Calibrez strictement la confidentialité (idéalement : famille/amis). Vérifiez régulièrement.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00034",
+                  "Désactivez la géolocalisation sur tous vos comptes.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Devoir de réserve"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00035",
+                  "Connaissez vos contacts",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Évitez les prises de position ou publications susceptibles de nuire à l’institution : retenue, neutralité, exemplarité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00036",
+                  "N’acceptez pas n’importe qui : surtout pas des inconnus.",
+                ),
+              ),
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00037",
+                  "Préservez votre identité professionnelle",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00038",
+                  "Ne vous identifiez pas comme policier (tenue, logo, lieu de travail). Attention aux arrière-plans sur photos/vidéos.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00039",
+                  "Respectez strictement le secret professionnel : n’évoquez aucune mission en cours ou achevée.",
+                ),
+              ),
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00040",
+                  "Devoir de réserve",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00041",
+                  "Évitez les prises de position ou publications susceptibles de nuire à l’institution : retenue, neutralité, exemplarité.",
+                ),
               ),
             ],
           ),
@@ -265,33 +417,52 @@ class ReseauxSociauxPage extends StatelessWidget {
 
           // Contenus / publications
           _ConditionCard(
-            title: "IV — Avant de publier : check mental",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00042",
+              "IV — Avant de publier : check mental",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Est-ce que mon contenu révèle un lieu, une habitude, un proche, une affectation, une mission, un véhicule, un badge, un uniforme, un logo ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00043",
+                  "Est-ce que mon contenu révèle un lieu, une habitude, un proche, une affectation, une mission, un véhicule, un badge, un uniforme, un logo ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Est-ce que mon propos peut être lu par un supérieur, un collègue, un adversaire, un journaliste, un justiciable ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00044",
+                  "Est-ce que mon propos peut être lu par un supérieur, un collègue, un adversaire, un journaliste, un justiciable ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Est-ce que je suis en train de commenter la hiérarchie, le ministre, ou l’institution ? (à proscrire)",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00045",
+                  "Est-ce que je suis en train de commenter la hiérarchie, le ministre, ou l’institution ? (à proscrire)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Est-ce que je respecte neutralité, réserve, discrétion, loyauté, dignité ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00046",
+                  "Est-ce que je respecte neutralité, réserve, discrétion, loyauté, dignité ?",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Même une « blague » ou un contenu supposé privé peut devenir public (captures, partages, piratage).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00047",
+                      "Même une « blague » ou un contenu supposé privé peut devenir public (captures, partages, piratage).",
+                    ),
                   ),
                 ],
               ),
@@ -302,32 +473,67 @@ class ReseauxSociauxPage extends StatelessWidget {
 
           // Menaces / injures : quoi faire
           _ConditionCard(
-            title: "V — Menaces / injures : que faire si vous êtes victime ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00048",
+              "V — Menaces / injures : que faire si vous êtes victime ?",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Réflexe immédiat"),
-              _BulletPoint(
-                text:
-                    "Conserver une preuve datée : capture d’écran, impression, export…",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00049",
+                  "Réflexe immédiat",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Signaler le compte/contenu via la procédure du réseau social.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00050",
+                  "Conserver une preuve datée : capture d’écran, impression, export…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00051",
+                  "Signaler le compte/contenu via la procédure du réseau social.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Si menaces sérieuses"),
-              _BulletPoint(text: "Rendre compte en priorité à la hiérarchie."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00052",
+                  "Si menaces sérieuses",
+                ),
+              ),
               _BulletPoint(
-                text: "Déposer plainte pour engager des poursuites.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00053",
+                  "Rendre compte en priorité à la hiérarchie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00054",
+                  "Déposer plainte pour engager des poursuites.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À savoir : la plateforme PHAROS dispose d’outils permettant de récupérer certains contenus supprimés. Si le contenu a disparu, vous pouvez le signaler sur la plateforme officielle de signalement.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                      "f00055",
+                      "À savoir : la plateforme PHAROS dispose d’outils permettant de récupérer certains contenus supprimés. Si le contenu a disparu, vous pouvez le signaler sur la plateforme officielle de signalement.",
+                    ),
                   ),
                 ],
               ),
@@ -338,22 +544,35 @@ class ReseauxSociauxPage extends StatelessWidget {
 
           // Synthèse
           _ConditionCard(
-            title: "En résumé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+              "f00056",
+              "En résumé",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Prudence, bon sens, discrétion, modération : votre sécurité et celle de vos proches passent en premier.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00057",
+                  "Prudence, bon sens, discrétion, modération : votre sécurité et celle de vos proches passent en premier.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Neutralité et réserve : si vous êtes identifiable comme policier, vous engagez l’institution.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00058",
+                  "Neutralité et réserve : si vous êtes identifiable comme policier, vous engagez l’institution.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Internet n’oublie pas : une diffusion inadaptée peut avoir des conséquences durables (disciplinaire/pénal/sécurité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/reseaux_sociaux_page.dart",
+                  "f00059",
+                  "Internet n’oublie pas : une diffusion inadaptée peut avoir des conséquences durables (disciplinaire/pénal/sécurité).",
+                ),
               ),
             ],
           ),
@@ -609,9 +828,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

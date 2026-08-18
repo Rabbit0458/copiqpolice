@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPalpationSecuritePage extends StatelessWidget {
   const PaPalpationSecuritePage({super.key});
@@ -56,7 +57,11 @@ class PaPalpationSecuritePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -74,7 +79,11 @@ class PaPalpationSecuritePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La palpation de sécurité",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00002",
+              "La palpation de sécurité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,16 +95,36 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // Définition (courte + claire)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00003",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La palpation de sécurité est une mesure de sûreté : elle consiste à appliquer les mains "
-                "par-dessus les vêtements (et sur les accessoires/objets portés : sac, banane, casquette, etc.) "
-                "pour vérifier qu’une personne n’est pas porteuse d’un objet dangereux pour elle-même ou pour autrui.\n\n"
-                "➡️ Elle est sommaire, externe, administrative et guidée par des éléments objectifs (dangerosité potentielle).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00004",
+                      "La palpation de sécurité est une mesure de sûreté : elle consiste à appliquer les mains ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00005",
+                      "par-dessus les vêtements (et sur les accessoires/objets portés : sac, banane, casquette, etc.) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00006",
+                      "pour vérifier qu’une personne n’est pas porteuse d’un objet dangereux pour elle-même ou pour autrui.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00007",
+                      "➡️ Elle est sommaire, externe, administrative et guidée par des éléments objectifs (dangerosité potentielle).",
+                    ),
               ),
             ],
           ),
@@ -104,60 +133,110 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (en rouge)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 434-16 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00009",
+                    "Article R. 434-16 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : la palpation est exclusivement une mesure de sûreté, non systématique, réservée aux cas où elle est nécessaire "
-                      "pour la sécurité du policier/gendarme ou d’autrui ; elle vise à vérifier l’absence d’objet dangereux.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00010",
+                        " : la palpation est exclusivement une mesure de sûreté, non systématique, réservée aux cas où elle est nécessaire ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00011",
+                        "pour la sécurité du policier/gendarme ou d’autrui ; elle vise à vérifier l’absence d’objet dangereux.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Principe : "),
                   TextSpan(
-                    text: "pratiquée à l’abri du regard du public ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00012",
+                      "Principe : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00013",
+                      "pratiquée à l’abri du regard du public ",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text: "lorsque les circonstances le permettent.\n",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00014",
+                      "lorsque les circonstances le permettent.\n",
+                    ),
                   ),
-                  TextSpan(text: "Règle : "),
                   TextSpan(
-                    text: "réalisée par une personne du même sexe",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00015",
+                      "Règle : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00016",
+                      "réalisée par une personne du même sexe",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text:
-                        " (sauf situations exceptionnelles liées à la dangerosité/urgence).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00017",
+                      " (sauf situations exceptionnelles liées à la dangerosité/urgence).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "À distinguer de la fouille intégrale : "),
                 TextSpan(
-                  text: "article 63-7 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00018",
+                    "À distinguer de la fouille intégrale : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (mesure de recherche de preuve, pouvant aller jusqu’au déshabillage complet).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00019",
+                    "article 63-7 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00020",
+                    " (mesure de recherche de preuve, pouvant aller jusqu’au déshabillage complet).",
+                  ),
                 ),
               ]),
             ],
@@ -167,35 +246,72 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // Différences (pédagogie)
           _ConditionCard(
-            title: "II — Différences à connaître",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00021",
+              "II — Différences à connaître",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Palpation de sécurité"),
-              _BulletPoint(
-                text:
-                    "But : vérifier l’absence d’objet dangereux (mesure de sûreté).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00022",
+                  "A) Palpation de sécurité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Méthode : contact externe, par-dessus les vêtements, sans retrait de vêtement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00023",
+                  "But : vérifier l’absence d’objet dangereux (mesure de sûreté).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00024",
+                  "Méthode : contact externe, par-dessus les vêtements, sans retrait de vêtement.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Fouille de sécurité"),
-              _BulletPoint(
-                text:
-                    "Avant rétention (GAV, IPM…) ou sous mandat : vérifications plus poussées et adaptées au contexte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00025",
+                  "B) Fouille de sécurité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Nécessité : suspicion d’objets dangereux ; déshabillage complet interdit.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00026",
+                  "Avant rétention (GAV, IPM…) ou sous mandat : vérifications plus poussées et adaptées au contexte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00027",
+                  "Nécessité : suspicion d’objets dangereux ; déshabillage complet interdit.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("C) Fouille intégrale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00028",
+                  "C) Fouille intégrale",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "But : recherche de preuve (poche/doublures, etc.) ; peut impliquer un déshabillage complet.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00029",
+                  "But : recherche de preuve (poche/doublures, etc.) ; peut impliquer un déshabillage complet.",
+                ),
               ),
             ],
           ),
@@ -204,50 +320,96 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // Modalités
           _ConditionCard(
-            title: "III — Modalités de mise en œuvre",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00030",
+              "III — Modalités de mise en œuvre",
+            ),
             cardColor: cardModal,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Quand la pratiquer ?"),
-              _BulletPoint(
-                text:
-                    "Jamais systématique : uniquement si les circonstances (temps/lieux/comportement) rendent nécessaire la recherche d’un objet dangereux.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00031",
+                  "Quand la pratiquer ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Respect et discernement : pas de caractère vexatoire, pas d’agressivité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00032",
+                  "Jamais systématique : uniquement si les circonstances (temps/lieux/comportement) rendent nécessaire la recherche d’un objet dangereux.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00033",
+                  "Respect et discernement : pas de caractère vexatoire, pas d’agressivité.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Comment la pratiquer ? (méthodique)"),
-              _BulletPoint(
-                text:
-                    "Un seul agent effectue la palpation pendant qu’un ou deux collègues assurent la couverture et la sécurité de l’environnement.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00034",
+                  "Comment la pratiquer ? (méthodique)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aucune dénudation : palpation au travers des vêtements uniquement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00035",
+                  "Un seul agent effectue la palpation pendant qu’un ou deux collègues assurent la couverture et la sécurité de l’environnement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Cibler d’abord les zones à risque (ceinture abdominale, creux lombaire, aisselles), puis compléter du haut vers le bas.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00036",
+                  "Aucune dénudation : palpation au travers des vêtements uniquement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dès découverte d’un objet suspect : informer immédiatement les collègues.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00037",
+                  "Cibler d’abord les zones à risque (ceinture abdominale, creux lombaire, aisselles), puis compléter du haut vers le bas.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00038",
+                  "Dès découverte d’un objet suspect : informer immédiatement les collègues.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Technique recommandée (AMARIS)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00039",
+                  "Technique recommandée (AMARIS)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Privilégier la technique de pince : pressions successives avec le pouce et l’index, "
-                        "plutôt que de faire glisser les mains le long du corps.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00040",
+                          "Privilégier la technique de pince : pressions successives avec le pouce et l’index, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00041",
+                          "plutôt que de faire glisser les mains le long du corps.",
+                        ),
                   ),
                 ],
               ),
@@ -255,12 +417,24 @@ class PaPalpationSecuritePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Saisie / procédure",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00042",
+                  "Saisie / procédure",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La palpation ne nécessite pas la qualité d’OPJ. Les objets dangereux découverts (armes, outils d’effraction…) "
-                        "sont appréhendés matériellement puis remis à l’OPJ aux fins de saisie dans les formes de droit.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00043",
+                          "La palpation ne nécessite pas la qualité d’OPJ. Les objets dangereux découverts (armes, outils d’effraction…) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00044",
+                          "sont appréhendés matériellement puis remis à l’OPJ aux fins de saisie dans les formes de droit.",
+                        ),
                   ),
                 ],
               ),
@@ -271,51 +445,108 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // Cas pratiques
           _ConditionCard(
-            title: "IV — Cas pratiques (terrain)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00045",
+              "IV — Cas pratiques (terrain)",
+            ),
             cardColor: cardCases,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Avant un contrôle d’identité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00046",
+                  "Avant un contrôle d’identité",
+                ),
+              ),
               _Paragraph(
-                "Si la personne apparaît potentiellement dangereuse, il est conseillé d’effectuer une palpation de sécurité "
-                "avant la mise en œuvre du contrôle.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00047",
+                      "Si la personne apparaît potentiellement dangereuse, il est conseillé d’effectuer une palpation de sécurité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00048",
+                      "avant la mise en œuvre du contrôle.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Indice apparent : forme d’une arme sous un vêtement, objet saillant…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00049",
+                  "Indice apparent : forme d’une arme sous un vêtement, objet saillant…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Comportement : alcool/stupéfiants, agressivité, agitation…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00050",
+                  "Comportement : alcool/stupéfiants, agressivité, agitation…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Connaissance/infos utiles : antécédents (si consultation de traitements possible), contexte à risque…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00051",
+                  "Connaissance/infos utiles : antécédents (si consultation de traitements possible), contexte à risque…",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Après un contrôle d’identité sans infraction"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00052",
+                  "Après un contrôle d’identité sans infraction",
+                ),
+              ),
               _Paragraph(
-                "Une palpation postérieure ne se justifie plus si aucun comportement dangereux ou suspect n’est constaté.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00053",
+                  "Une palpation postérieure ne se justifie plus si aucun comportement dangereux ou suspect n’est constaté.",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "En revanche, si la personne devient menaçante ou si la situation dégénère, la palpation peut redevenir nécessaire "
-                "car elle protège policiers et tiers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00054",
+                      "En revanche, si la personne devient menaçante ou si la situation dégénère, la palpation peut redevenir nécessaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00055",
+                      "car elle protège policiers et tiers.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Trace écrite",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00056",
+                  "Trace écrite",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si le contrôle intervient dans des conditions dangereuses, il faut faire apparaître dans la procédure "
-                        "le caractère délicat/dangereux de l’intervention.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00057",
+                          "Si le contrôle intervient dans des conditions dangereuses, il faut faire apparaître dans la procédure ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00058",
+                          "le caractère délicat/dangereux de l’intervention.",
+                        ),
                   ),
                 ],
               ),
@@ -323,12 +554,24 @@ class PaPalpationSecuritePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00059",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Une palpation non justifiée peut être qualifiée d’atteinte à la dignité : les saisies incidentes "
-                        "et les procédures qui suivent peuvent être annulées.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00060",
+                          "Une palpation non justifiée peut être qualifiée d’atteinte à la dignité : les saisies incidentes ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00061",
+                          "et les procédures qui suivent peuvent être annulées.",
+                        ),
                   ),
                 ],
               ),
@@ -336,18 +579,33 @@ class PaPalpationSecuritePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _Paragraph.rich([
-                TextSpan(text: "Exemple jurisprudentiel : "),
                 TextSpan(
-                  text: "Cass. crim., 27 septembre 1988",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00062",
+                    "Exemple jurisprudentiel : ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00063",
+                    "Cass. crim., 27 septembre 1988",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " — opération jugée régulière dès lors que les policiers se sont bornés à prendre les mesures nécessaires "
-                      "à leur sécurité et à celle des tiers.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00064",
+                        " — opération jugée régulière dès lors que les policiers se sont bornés à prendre les mesures nécessaires ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00065",
+                        "à leur sécurité et à celle des tiers.",
+                      ),
                 ),
               ]),
             ],
@@ -357,26 +615,42 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // Particularités / dignité / transidentité
           _ConditionCard(
-            title: "V — Dignité, discrétion et situations particulières",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00066",
+              "V — Dignité, discrétion et situations particulières",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Expliquer (si possible) : annoncer la palpation et son objectif (sécurité).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00067",
+                  "Expliquer (si possible) : annoncer la palpation et son objectif (sécurité).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne pas exiger le retrait de vêtements ; éviter les positions vexatoires (appui mur, amené au sol, bras levés…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00068",
+                  "Ne pas exiger le retrait de vêtements ; éviter les positions vexatoires (appui mur, amené au sol, bras levés…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Autant que possible : pratiquer à l’abri du regard du public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00069",
+                  "Autant que possible : pratiquer à l’abri du regard du public.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Même sexe : principe. Exceptions uniquement si dangerosité/urgence ne permet pas autrement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00070",
+                  "Même sexe : principe. Exceptions uniquement si dangerosité/urgence ne permet pas autrement.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -384,8 +658,16 @@ class PaPalpationSecuritePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En matière de palpation/fouille, prendre en compte le genre. Certaines personnes transgenres peuvent présenter un formulaire explicatif "
-                        "et demander que l’opération soit réalisée par un homme ou une femme. Dans la mesure du possible, il est recommandé de tenir compte de cette demande.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00071",
+                          "En matière de palpation/fouille, prendre en compte le genre. Certaines personnes transgenres peuvent présenter un formulaire explicatif ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00072",
+                          "et demander que l’opération soit réalisée par un homme ou une femme. Dans la mesure du possible, il est recommandé de tenir compte de cette demande.",
+                        ),
                   ),
                 ],
               ),
@@ -396,43 +678,73 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // Agents privés
           _ConditionCard(
-            title: "VI — Palpation par des agents privés de sécurité",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00073",
+              "VI — Palpation par des agents privés de sécurité",
+            ),
             cardColor: cardPrivate,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La loi autorise, sous conditions, des palpations par des agents de sécurité privée. "
-                "Dans tous les cas : la personne doit donner son accord exprès et l’agent doit être du même sexe.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00074",
+                      "La loi autorise, sous conditions, des palpations par des agents de sécurité privée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                      "f00075",
+                      "Dans tous les cas : la personne doit donner son accord exprès et l’agent doit être du même sexe.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 613-2 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00076",
+                    "Article L. 613-2 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : agents d’entreprises de surveillance/gardiennage ou services internes de sécurité, "
-                      "en cas de menaces graves pour la sécurité publique ou périmètre de protection par arrêté préfectoral.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00077",
+                        " : agents d’entreprises de surveillance/gardiennage ou services internes de sécurité, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00078",
+                        "en cas de menaces graves pour la sécurité publique ou périmètre de protection par arrêté préfectoral.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 613-3 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                    "f00079",
+                    "Article L. 613-3 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : sécurité à l’entrée d’enceintes de manifestations sportives/récréatives/culturelles "
-                      "rassemblant plus de 300 spectateurs (agents/membres du service d’ordre).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00080",
+                        " : sécurité à l’entrée d’enceintes de manifestations sportives/récréatives/culturelles ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                        "f00081",
+                        "rassemblant plus de 300 spectateurs (agents/membres du service d’ordre).",
+                      ),
                 ),
               ]),
             ],
@@ -442,52 +754,120 @@ class PaPalpationSecuritePage extends StatelessWidget {
 
           // Mémo AMARIS
           _ConditionCard(
-            title: "Mémo terrain (AMARIS) — “Comment faire ?”",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+              "f00082",
+              "Mémo terrain (AMARIS) — “Comment faire ?”",
+            ),
             cardColor: cardModal,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) J’annonce"),
-              _BulletPoint(
-                text:
-                    "Informer la personne que je vais procéder à une palpation de sécurité.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00083",
+                  "1) J’annonce",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si le contexte le permet : inviter à remettre volontairement les objets estimés dangereux (politesse + calme).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00084",
+                  "Informer la personne que je vais procéder à une palpation de sécurité.",
+                ),
               ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("2) Je respecte la dignité"),
-              _BulletPoint(text: "Je ne suis ni brutal ni agressif."),
-              _BulletPoint(text: "Je n’exige pas qu’elle ôte ses vêtements."),
               _BulletPoint(
-                text:
-                    "J’évite les positions vexatoires (mur, amené au sol, bras levés…).",
-              ),
-              _BulletPoint(text: "Même sexe (hors situation exceptionnelle)."),
-              _BulletPoint(
-                text: "À l’abri du regard du public dès que possible.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00085",
+                  "Si le contexte le permet : inviter à remettre volontairement les objets estimés dangereux (politesse + calme).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("3) Je fais une palpation efficace"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00086",
+                  "2) Je respecte la dignité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Technique de pince : pressions successives + mouvement pouce/index.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00087",
+                  "Je ne suis ni brutal ni agressif.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00088",
+                  "Je n’exige pas qu’elle ôte ses vêtements.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00089",
+                  "J’évite les positions vexatoires (mur, amené au sol, bras levés…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00090",
+                  "Même sexe (hors situation exceptionnelle).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00091",
+                  "À l’abri du regard du public dès que possible.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00092",
+                  "3) Je fais une palpation efficace",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00093",
+                  "Technique de pince : pressions successives + mouvement pouce/index.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "En résumé",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                  "f00094",
+                  "En résumé",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La palpation sert uniquement à rechercher un objet dangereux. "
-                        "Elle doit respecter la dignité et être réalisée selon les techniques enseignées.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00095",
+                          "La palpation sert uniquement à rechercher un objet dangereux. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart",
+                          "f00096",
+                          "Elle doit respecter la dignité et être réalisée selon les techniques enseignées.",
+                        ),
                   ),
                 ],
               ),

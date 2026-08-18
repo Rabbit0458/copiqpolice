@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ChiensCategoriesPage extends StatefulWidget {
   const ChiensCategoriesPage({super.key});
@@ -83,10 +84,10 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00001", 'Retour'),
         ),
         title: Text(
-          "Intervention — Animal",
+          ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00002", "Intervention — Animal"),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -101,7 +102,7 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Chiens d’attaque, de garde ou de défense",
+            ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00003", "Chiens d’attaque, de garde ou de défense"),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -113,30 +114,30 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00004", "Définition"),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _Paragraph.rich([
+               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le Code rural classe certains chiens considérés comme les plus dangereux en deux catégories : ",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00005", "Le Code rural classe certains chiens considérés comme les plus dangereux en deux catégories : "),
                 ),
                 TextSpan(
-                  text: "1ʳᵉ catégorie (chiens d’attaque) ",
+                  text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00006", "1ʳᵉ catégorie (chiens d’attaque) "),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "et "),
                 TextSpan(
-                  text: "2ᵉ catégorie (chiens de garde ou de défense).",
+                  text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00007", "2ᵉ catégorie (chiens de garde ou de défense)."),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Cadre juridique : "),
-                _law("articles L. 211-12 et suivants du C.R.P.M."),
+                 TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00008", "Cadre juridique : ")),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00009", "articles L. 211-12 et suivants du C.R.P.M.")),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -146,40 +147,40 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00010", "I — Élément légal"),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Articles L. 211-12 et suivants du C.R.P.M."),
-                const TextSpan(
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00011", "Articles L. 211-12 et suivants du C.R.P.M.")),
+                 TextSpan(
                   text:
-                      " : fondent la classification des chiens dangereux et les règles particulières applicables à leur détention.",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00012", " : fondent la classification des chiens dangereux et les règles particulières applicables à leur détention."),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article L. 211-13 du C.R.P.M."),
-                const TextSpan(
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00013", "Article L. 211-13 du C.R.P.M.")),
+                 TextSpan(
                   text:
-                      " : fixe les personnes interdites de détention (mineurs, tutelle sans autorisation, condamnations, retrait de garde…).",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00014", " : fixe les personnes interdites de détention (mineurs, tutelle sans autorisation, condamnations, retrait de garde…)."),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Articles L. 211-14 et R. 215-2 du C.R.P.M."),
-                const TextSpan(
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00015", "Articles L. 211-14 et R. 215-2 du C.R.P.M.")),
+                 TextSpan(
                   text:
-                      " : encadrent le permis de détention et les documents à présenter aux forces de l’ordre.",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00016", " : encadrent le permis de détention et les documents à présenter aux forces de l’ordre."),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article L. 211-16 du C.R.P.M."),
-                const TextSpan(
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00017", "Article L. 211-16 du C.R.P.M.")),
+                 TextSpan(
                   text:
-                      " : règles de présence des chiens de 1ʳᵉ / 2ᵉ catégorie dans les lieux (transports, lieux publics, parties communes…).",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00018", " : règles de présence des chiens de 1ʳᵉ / 2ᵉ catégorie dans les lieux (transports, lieux publics, parties communes…)."),
                 ),
               ]),
             ],
@@ -189,14 +190,13 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
 
           // Image (zoom + rotation)
           _ConditionCard(
-            title: "Schéma d’identification (zoom + rotation)",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00019", "Schéma d’identification (zoom + rotation)"),
             cardColor: cardImg,
             accent: accentBlue,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Astuce : pince pour zoomer, glisse pour déplacer. "
-                "Tu peux aussi tourner l’image pour lire le tableau facilement.",
+               _Paragraph(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00020", "Astuce : pince pour zoomer, glisse pour déplacer. ") + ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00021", "Tu peux aussi tourner l’image pour lire le tableau facilement."),
               ),
               const SizedBox(height: 10),
 
@@ -233,7 +233,7 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
                         });
                       },
                       icon: const Icon(Icons.refresh_rounded),
-                      label: const Text("Réinitialiser"),
+                      label:  Text(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00022", "Réinitialiser")),
                       style: ElevatedButton.styleFrom(
                         elevation: 0,
                         padding: const EdgeInsets.symmetric(vertical: 10),
@@ -256,9 +256,9 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (_) => const ChiensImageFullScreenPage(
+                      builder: (_) =>  ChiensImageFullScreenPage(
                         assetPath: 'assets/images/chien-1.png',
-                        title: 'Schéma d’identification',
+                        title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00023", 'Schéma d’identification'),
                       ),
                     ),
                   );
@@ -284,59 +284,57 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
 
           // Catégories
           _ConditionCard(
-            title: "II — Catégories de chiens susceptibles d’être dangereux",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00024", "II — Catégories de chiens susceptibles d’être dangereux"),
             cardColor: cardCat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) 1ʳᵉ catégorie : chiens d’attaque"),
+            children:  [
+              _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00025", "A) 1ʳᵉ catégorie : chiens d’attaque")),
               _Paragraph(
-                "Chiens issus de croisements incontrôlés, sans inscription au Livre des origines français (LOF), "
-                "donc sans traçabilité. Ils sont assimilables (morphologie) à certaines races.",
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00026", "Chiens issus de croisements incontrôlés, sans inscription au Livre des origines français (LOF), ") + ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00027", "donc sans traçabilité. Ils sont assimilables (morphologie) à certaines races."),
               ),
               SizedBox(height: 10),
               _BulletPoint(
                 text:
-                    "Chiens assimilables aux races Staffordshire Terrier / American Staffordshire Terrier (dit « pit-bull »).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00028", "Chiens assimilables aux races Staffordshire Terrier / American Staffordshire Terrier (dit « pit-bull »)."),
               ),
               _BulletPoint(
-                text: "Chiens assimilables aux Mastiff (dit « boer-bull »).",
+                text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00029", "Chiens assimilables aux Mastiff (dit « boer-bull »)."),
               ),
               _BulletPoint(
-                text: "Chiens assimilables aux Tosa-Inu (plus rare en France).",
+                text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00030", "Chiens assimilables aux Tosa-Inu (plus rare en France)."),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) 2ᵉ catégorie : chiens de garde ou de défense"),
+              _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00031", "B) 2ᵉ catégorie : chiens de garde ou de défense")),
               _Paragraph(
-                "Chiens de races reconnues par la Société Centrale Canine et disposant de documents LOF "
-                "(certificat de naissance et/ou pedigree). Races citées par l’arrêté du 27/04/1999.",
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00032", "Chiens de races reconnues par la Société Centrale Canine et disposant de documents LOF ") + ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00033", "(certificat de naissance et/ou pedigree). Races citées par l’arrêté du 27/04/1999."),
               ),
               SizedBox(height: 10),
               _BulletPoint(
                 text:
-                    "Staffordshire Terrier / American Staffordshire Terrier (races reconnues).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00034", "Staffordshire Terrier / American Staffordshire Terrier (races reconnues)."),
               ),
               _BulletPoint(
                 text:
-                    "Rottweiler (ou assimilable) : classé en 2ᵉ catégorie, même sans LOF.",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00035", "Rottweiler (ou assimilable) : classé en 2ᵉ catégorie, même sans LOF."),
               ),
-              _BulletPoint(text: "Tosa-Inu (race reconnue)."),
+              _BulletPoint(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00036", "Tosa-Inu (race reconnue).")),
             ],
           ),
 
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "NOTA (diagnose & chiens nés à l’étranger)",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00037", "NOTA (diagnose & chiens nés à l’étranger)"),
             cardColor: cardLieux,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children:  [
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un vétérinaire agréé peut réaliser une diagnose pour déterminer la catégorie (1 ou 2) et délivrer un document officiel.",
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00038", "Un vétérinaire agréé peut réaliser une diagnose pour déterminer la catégorie (1 ou 2) et délivrer un document officiel."),
                   ),
                 ],
               ),
@@ -345,14 +343,14 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Pour un chien né à l’étranger, le maître doit détenir un document généalogique reconnu par la ",
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00039", "Pour un chien né à l’étranger, le maître doit détenir un document généalogique reconnu par la "),
                   ),
                   TextSpan(
-                    text: "F.C.I.",
+                    text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00040", "F.C.I."),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text: " (Fédération Cynologique Internationale).",
+                    text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00041", " (Fédération Cynologique Internationale)."),
                   ),
                 ],
               ),
@@ -363,73 +361,72 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
 
           // Obligations (avec articles rouges)
           _ConditionCard(
-            title: "III — Obligations de détention (1ʳᵉ / 2ᵉ catégorie)",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00042", "III — Obligations de détention (1ʳᵉ / 2ᵉ catégorie)"),
             cardColor: cardObl,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Personnes interdites de détention"),
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00043", "A) Personnes interdites de détention")),
               _Paragraph.rich([
-                _law("Article L. 211-13 du C.R.P.M."),
-                const TextSpan(
-                  text: " : ces chiens ne peuvent être détenus par :",
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00044", "Article L. 211-13 du C.R.P.M.")),
+                 TextSpan(
+                  text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00045", " : ces chiens ne peuvent être détenus par :"),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Les personnes de moins de 18 ans."),
-              const _BulletPoint(
+               _BulletPoint(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00046", "Les personnes de moins de 18 ans.")),
+               _BulletPoint(
                 text:
-                    "Les majeurs en tutelle (sauf autorisation du juge des tutelles).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00047", "Les majeurs en tutelle (sauf autorisation du juge des tutelles)."),
               ),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Les personnes condamnées (crime ou certains délits au bulletin n°2, ou équivalent pour étrangers).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00048", "Les personnes condamnées (crime ou certains délits au bulletin n°2, ou équivalent pour étrangers)."),
               ),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Les personnes auxquelles la propriété/la garde d’un chien a été retirée (décision du maire ; à Paris : préfet de police).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00049", "Les personnes auxquelles la propriété/la garde d’un chien a été retirée (décision du maire ; à Paris : préfet de police)."),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Permis de détention (propriétaire / détenteur)",
+               _SubTitle(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00050", "B) Permis de détention (propriétaire / détenteur)"),
               ),
-              const _Paragraph(
-                "La détention est subordonnée à un permis délivré par le maire de la commune de résidence. "
-                "Le permis prend la forme d’un arrêté (identité du détenteur, identité du chien, catégorie…).",
+               _Paragraph(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00051", "La détention est subordonnée à un permis délivré par le maire de la commune de résidence. ") + ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00052", "Le permis prend la forme d’un arrêté (identité du détenteur, identité du chien, catégorie…)."),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle("Pièces à justifier"),
-              const _BulletPoint(
-                text: "Identification (tatouage ou puce électronique).",
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00053", "Pièces à justifier")),
+               _BulletPoint(
+                text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00054", "Identification (tatouage ou puce électronique)."),
               ),
-              const _BulletPoint(
-                text: "Vaccination antirabique en cours de validité.",
+               _BulletPoint(
+                text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00055", "Vaccination antirabique en cours de validité."),
               ),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Assurance responsabilité civile (dommages causés aux tiers par l’animal).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00056", "Assurance responsabilité civile (dommages causés aux tiers par l’animal)."),
               ),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Stérilisation (chiens mâles et femelles de 1ʳᵉ catégorie).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00057", "Stérilisation (chiens mâles et femelles de 1ʳᵉ catégorie)."),
               ),
-              const _BulletPoint(text: "Attestation d’aptitude (formation)."),
-              const _BulletPoint(
-                text: "Évaluation comportementale (vétérinaire agréé).",
+               _BulletPoint(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00058", "Attestation d’aptitude (formation).")),
+               _BulletPoint(
+                text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00059", "Évaluation comportementale (vétérinaire agréé)."),
               ),
 
               const SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                   TextSpan(
                     text:
-                        "Le maire (ou à défaut le préfet) peut imposer des mesures de prévention à tout type de chien présentant un danger, notamment formation + attestation après évaluation : ",
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00060", "Le maire (ou à défaut le préfet) peut imposer des mesures de prévention à tout type de chien présentant un danger, notamment formation + attestation après évaluation : "),
                   ),
-                  _law("article L. 211-11 du C.R.P.M."),
+                  _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00061", "article L. 211-11 du C.R.P.M.")),
                   const TextSpan(text: "."),
                 ],
               ),
@@ -437,30 +434,28 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "Présentation aux forces de l’ordre : "),
-                _law("article R. 215-2 du C.R.P.M."),
-                const TextSpan(
+                 TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00062", "Présentation aux forces de l’ordre : ")),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00063", "article R. 215-2 du C.R.P.M.")),
+                 TextSpan(
                   text:
-                      " (le permis de détention, l’assurance et la vaccination antirabique doivent pouvoir être présentés à tout moment).",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00064", " (le permis de détention, l’assurance et la vaccination antirabique doivent pouvoir être présentés à tout moment)."),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Détenteur à titre temporaire"),
-              const _Paragraph(
-                "Le détenteur temporaire doit pouvoir justifier de sa qualité : "
-                "original ou copie du permis (ou permis provisoire) au nom du propriétaire/détenteur, sur réquisition des forces de l’ordre.",
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00065", "C) Détenteur à titre temporaire")),
+               _Paragraph(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00066", "Le détenteur temporaire doit pouvoir justifier de sa qualité : ") + ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00067", "original ou copie du permis (ou permis provisoire) au nom du propriétaire/détenteur, sur réquisition des forces de l’ordre."),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "D) Commerce des chiens de 1ʳᵉ catégorie (interdit)",
+               _SubTitle(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00068", "D) Commerce des chiens de 1ʳᵉ catégorie (interdit)"),
               ),
-              const _Paragraph(
-                "Acquisition, cession (gratuite ou onéreuse), importation et introduction sur le territoire "
-                "métropolitain / DOM / Saint-Pierre-et-Miquelon : interdits (sauf exceptions prévues, ex : fourrière / association).",
+               _Paragraph(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00069", "Acquisition, cession (gratuite ou onéreuse), importation et introduction sur le territoire ") + ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00070", "métropolitain / DOM / Saint-Pierre-et-Miquelon : interdits (sauf exceptions prévues, ex : fourrière / association)."),
               ),
             ],
           ),
@@ -469,53 +464,53 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
 
           // Règles de présence
           _ConditionCard(
-            title: "IV — Présence dans certains lieux",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00071", "IV — Présence dans certains lieux"),
             cardColor: cardLieux,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: "Règles principales : "),
-                _law("article L. 211-16 du C.R.P.M."),
+                 TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00072", "Règles principales : ")),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00073", "article L. 211-16 du C.R.P.M.")),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("1ʳᵉ catégorie : lieux interdits"),
-              const _BulletPoint(
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00074", "1ʳᵉ catégorie : lieux interdits")),
+               _BulletPoint(
                 text:
-                    "Accès interdit aux transports en commun, lieux publics (sauf voie publique) et locaux ouverts au public, même muselé et tenu en laisse.",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00075", "Accès interdit aux transports en commun, lieux publics (sauf voie publique) et locaux ouverts au public, même muselé et tenu en laisse."),
               ),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Stationnement interdit dans les parties communes des immeubles collectifs.",
-              ),
-
-              const SizedBox(height: 12),
-
-              const _SubTitle("Mesures communes (1ʳᵉ + 2ᵉ catégorie)"),
-              const _BulletPoint(
-                text:
-                    "Sur la voie publique et dans les parties communes : muselé + tenu en laisse par une personne majeure.",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00076", "Stationnement interdit dans les parties communes des immeubles collectifs."),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("2ᵉ catégorie : lieux publics / transports"),
-              const _BulletPoint(
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00077", "Mesures communes (1ʳᵉ + 2ᵉ catégorie)")),
+               _BulletPoint(
                 text:
-                    "Dans les lieux publics, lieux ouverts au public et transports en commun : muselé + tenu en laisse par une personne majeure.",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00078", "Sur la voie publique et dans les parties communes : muselé + tenu en laisse par une personne majeure."),
+              ),
+
+              const SizedBox(height: 12),
+
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00079", "2ᵉ catégorie : lieux publics / transports")),
+               _BulletPoint(
+                text:
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00080", "Dans les lieux publics, lieux ouverts au public et transports en commun : muselé + tenu en laisse par une personne majeure."),
               ),
 
               const SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                   TextSpan(
                     text:
-                        "Danger grave et immédiat : le maire (ou à défaut le préfet) peut ordonner le placement en dépôt adapté et, le cas échéant, l’euthanasie. Est notamment réputé danger grave un chien 1 ou 2 détenu par une personne non autorisée, présent dans un lieu interdit, ou circulant sans muselière/laisse, ou sans attestation d’aptitude : ",
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00081", "Danger grave et immédiat : le maire (ou à défaut le préfet) peut ordonner le placement en dépôt adapté et, le cas échéant, l’euthanasie. Est notamment réputé danger grave un chien 1 ou 2 détenu par une personne non autorisée, présent dans un lieu interdit, ou circulant sans muselière/laisse, ou sans attestation d’aptitude : "),
                   ),
-                  _law("article L. 211-11 du C.R.P.M."),
+                  _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00082", "article L. 211-11 du C.R.P.M.")),
                   const TextSpan(text: "."),
                 ],
               ),
@@ -526,161 +521,160 @@ class _ChiensCategoriesPageState extends State<ChiensCategoriesPage> {
 
           // Infractions (structure claire)
           _ConditionCard(
-            title: "V — Infractions (repères opérationnels)",
+            title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00083", "V — Infractions (repères opérationnels)"),
             cardColor: cardInfra,
             accent: accentOrange,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Voici les manquements les plus fréquents (contraventions / délits) avec leurs fondements. "
-                "Objectif : lecture rapide et pédagogique en intervention.",
+               _Paragraph(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00084", "Voici les manquements les plus fréquents (contraventions / délits) avec leurs fondements. ") + ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00085", "Objectif : lecture rapide et pédagogique en intervention."),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("A) Détention / cession / acquisition (délits)"),
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00086", "A) Détention / cession / acquisition (délits)")),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Interdits de détention (mineur, incapacité…) : ",
+                 TextSpan(
+                  text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00087", "Interdits de détention (mineur, incapacité…) : "),
                 ),
-                _law("article L. 211-13 du C.R.P.M."),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00088", "article L. 211-13 du C.R.P.M.")),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Détention par mineur / malgré incapacité (catégorie 1 ou 2).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00089", "Détention par mineur / malgré incapacité (catégorie 1 ou 2)."),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Interdiction commerce catégorie 1 : "),
-                _law("article L. 211-15 du C.R.P.M."),
+                 TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00090", "Interdiction commerce catégorie 1 : ")),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00091", "article L. 211-15 du C.R.P.M.")),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Acquisition / cession / importation / introduction de chiens d’attaque (1ʳᵉ catégorie) : interdit.",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00092", "Acquisition / cession / importation / introduction de chiens d’attaque (1ʳᵉ catégorie) : interdit."),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Défaut de permis de détention (contravention)",
+               _SubTitle(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00093", "B) Défaut de permis de détention (contravention)"),
               ),
               _Paragraph.rich([
-                _law("Articles L. 211-14, L. 211-12 et R. 215-2 du C.R.P.M."),
-                const TextSpan(
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00094", "Articles L. 211-14, L. 211-12 et R. 215-2 du C.R.P.M.")),
+                 TextSpan(
                   text:
-                      " : détention d’un chien de 1ʳᵉ ou 2ᵉ catégorie sans permis (ou permis provisoire si < 8 mois).",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00095", " : détention d’un chien de 1ʳᵉ ou 2ᵉ catégorie sans permis (ou permis provisoire si < 8 mois)."),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Défaut de permis (1ʳᵉ catégorie) / Défaut de permis (2ᵉ catégorie).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00096", "Défaut de permis (1ʳᵉ catégorie) / Défaut de permis (2ᵉ catégorie)."),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "C) Défaut d’assurance / vaccination / identification",
+               _SubTitle(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00097", "C) Défaut d’assurance / vaccination / identification"),
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Base documents à présenter : "),
-                _law("article R. 215-2 du C.R.P.M."),
+                 TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00098", "Base documents à présenter : ")),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00099", "article R. 215-2 du C.R.P.M.")),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Sans assurance responsabilité civile (dommages aux tiers).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00100", "Sans assurance responsabilité civile (dommages aux tiers)."),
               ),
-              const _BulletPoint(
-                text: "Sans vaccination antirabique en cours de validité.",
+               _BulletPoint(
+                text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00101", "Sans vaccination antirabique en cours de validité."),
               ),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Chien de plus de 4 mois non identifié (tatouage ou puce).",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00102", "Chien de plus de 4 mois non identifié (tatouage ou puce)."),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("D) Présence interdite / muselière / laisse"),
+               _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00103", "D) Présence interdite / muselière / laisse")),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Règles lieux / transports / voie publique : ",
+                 TextSpan(
+                  text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00104", "Règles lieux / transports / voie publique : "),
                 ),
-                _law("article L. 211-16 du C.R.P.M."),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00105", "article L. 211-16 du C.R.P.M.")),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "1ʳᵉ catégorie : transports en commun / lieux publics (hors voie publique) / locaux ouverts au public : interdit.",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00106", "1ʳᵉ catégorie : transports en commun / lieux publics (hors voie publique) / locaux ouverts au public : interdit."),
               ),
-              const _BulletPoint(
+               _BulletPoint(
                 text:
-                    "Non muselé ou non tenu en laisse (selon lieux) : infraction, pour 1ʳᵉ et/ou 2ᵉ catégorie.",
+                    ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00107", "Non muselé ou non tenu en laisse (selon lieux) : infraction, pour 1ʳᵉ et/ou 2ᵉ catégorie."),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "E) Atteintes involontaires à la personne (délits)",
+               _SubTitle(
+                ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00108", "E) Atteintes involontaires à la personne (délits)"),
               ),
               _Paragraph.rich([
-                const TextSpan(
+                 TextSpan(
                   text:
-                      "Responsabilité pénale possible du propriétaire/détenteur en cas de décès/blessures causés par le chien : ",
+                      ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00109", "Responsabilité pénale possible du propriétaire/détenteur en cas de décès/blessures causés par le chien : "),
                 ),
-                _law("articles 221-6-2, 222-19-2 et 222-20-2 du Code pénal"),
+                _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00110", "articles 221-6-2, 222-19-2 et 222-20-2 du Code pénal")),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
 
               // 3 éléments (pédagogique)
               _ConditionCard(
-                title: "Lecture rapide — 3 éléments (atteintes involontaires)",
+                title: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00111", "Lecture rapide — 3 éléments (atteintes involontaires)"),
                 cardColor: cardDef,
                 accent: accentGrey,
                 titleColor: textMain,
                 children: [
-                  const _SubTitle("1) Élément légal"),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00112", "1) Élément légal")),
                   _Paragraph.rich([
-                    _law("221-6-2 / 222-19-2 / 222-20-2 du Code pénal"),
-                    const TextSpan(
+                    _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00113", "221-6-2 / 222-19-2 / 222-20-2 du Code pénal")),
+                     TextSpan(
                       text:
-                          " : incriminent ces atteintes involontaires liées à une agression par chien.",
+                          ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00114", " : incriminent ces atteintes involontaires liées à une agression par chien."),
                     ),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle("2) Élément matériel"),
-                  const _BulletPoint(
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00115", "2) Élément matériel")),
+                   _BulletPoint(
                     text:
-                        "Un décès ou des blessures résultant d’une agression commise par l’animal.",
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00116", "Un décès ou des blessures résultant d’une agression commise par l’animal."),
                   ),
-                  const _BulletPoint(
+                   _BulletPoint(
                     text:
-                        "Lien de causalité entre les manquements (garde/maîtrise) et le dommage.",
-                  ),
-                  const SizedBox(height: 10),
-                  const _SubTitle("3) Élément moral"),
-                  const _BulletPoint(
-                    text:
-                        "Faute d’imprudence / négligence / manquement à une obligation de prudence ou de sécurité.",
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00117", "Lien de causalité entre les manquements (garde/maîtrise) et le dommage."),
                   ),
                   const SizedBox(height: 10),
-                  const _SubTitle("Tentative & complicité (repère)"),
-                  const _BulletPoint(
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00118", "3) Élément moral")),
+                   _BulletPoint(
                     text:
-                        "Tentative : non pertinente en matière d’involontaire (le texte vise un résultat).",
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00119", "Faute d’imprudence / négligence / manquement à une obligation de prudence ou de sécurité."),
+                  ),
+                  const SizedBox(height: 10),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00120", "Tentative & complicité (repère)")),
+                   _BulletPoint(
+                    text:
+                        ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00121", "Tentative : non pertinente en matière d’involontaire (le texte vise un résultat)."),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text: "Complicité : possible pour un délit, selon ",
+                     TextSpan(
+                      text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00122", "Complicité : possible pour un délit, selon "),
                     ),
-                    _law("articles 121-6 et 121-7 du Code pénal"),
-                    const TextSpan(text: ", si les conditions sont réunies."),
+                    _law(ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00123", "articles 121-6 et 121-7 du Code pénal")),
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00124", ", si les conditions sont réunies.")),
                   ]),
                 ],
               ),
@@ -990,7 +984,7 @@ class _ChiensImageFullScreenPageState extends State<ChiensImageFullScreenPage> {
         ),
         actions: [
           IconButton(
-            tooltip: "Tourner 90°",
+            tooltip: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00126", "Tourner 90°"),
             onPressed: () {
               setState(() {
                 _rotationTurns += 0.25;
@@ -999,7 +993,7 @@ class _ChiensImageFullScreenPageState extends State<ChiensImageFullScreenPage> {
             icon: const Icon(Icons.rotate_right_rounded, color: Colors.white),
           ),
           IconButton(
-            tooltip: "Réinitialiser",
+            tooltip: ScolariteText.value("lib/content/gpx_scolarite/policier_intervention_avance/animal/chiens_categories_page.dart", "f00127", "Réinitialiser"),
             onPressed: () {
               setState(() {
                 _rotationTurns = 0.0;

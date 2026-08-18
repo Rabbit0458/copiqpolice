@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PvIpmExamenMedicalPage extends StatelessWidget {
   const PvIpmExamenMedicalPage({super.key});
@@ -55,10 +56,18 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — IPM",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+            "f00002",
+            "PV — IPM",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de procès-verbal (I.P.M.) — Examen médical",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+              "f00003",
+              "Canevas de procès-verbal (I.P.M.) — Examen médical",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,14 +97,26 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "But du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+              "f00004",
+              "But du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas te guide pour rédiger un PV clair, complet et pédagogique en matière d’ivresse publique et manifeste (IPM), "
-                "avec un focus sur l’examen médical et le certificat de non-admission.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00005",
+                      "Ce canevas te guide pour rédiger un PV clair, complet et pédagogique en matière d’ivresse publique et manifeste (IPM), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00006",
+                      "avec un focus sur l’examen médical et le certificat de non-admission.",
+                    ),
               ),
             ],
           ),
@@ -100,50 +125,66 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Fondements juridiques (à citer)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+              "f00007",
+              "I — Fondements juridiques (à citer)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00008",
+                    "Article R. 3353-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : contravention d’ivresse publique et manifeste (2ᵉ classe) — à relater précisément dans les constatations.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00009",
+                    " : contravention d’ivresse publique et manifeste (2ᵉ classe) — à relater précisément dans les constatations.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 3341-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00010",
+                    "Article L. 3341-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prise en charge et placement (chambre de sûreté) le temps nécessaire au recouvrement de la raison.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00011",
+                    " : prise en charge et placement (chambre de sûreté) le temps nécessaire au recouvrement de la raison.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Audition libre (si réalisée) : notification des droits à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00012",
+                    "Audition libre (si réalisée) : notification des droits à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 61-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00013",
+                    "l’article 61-1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -154,92 +195,192 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
 
           // Canevas structuré (1 -> 14)
           _ConditionCard(
-            title: "II — Trame du PV (pas à pas)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+              "f00014",
+              "II — Trame du PV (pas à pas)",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00015",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _Paragraph(
-                "Mentionner l’endroit exact où se situe l’équipage (adresse, point remarquable, commune, contexte).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00016",
+                  "Mentionner l’endroit exact où se situe l’équipage (adresse, point remarquable, commune, contexte).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00017",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Préciser les instructions reçues (patrouille, réquisition, appel radio, demande CIC, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00018",
+                  "Préciser les instructions reçues (patrouille, réquisition, appel radio, demande CIC, etc.).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00019",
+                  "3) Assistants",
+                ),
+              ),
               _Paragraph(
-                "Citer les fonctionnaires accompagnants. Préciser la tenue (uniforme, tenue bourgeoise, port du brassard « police »).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00020",
+                  "Citer les fonctionnaires accompagnants. Préciser la tenue (uniforme, tenue bourgeoise, port du brassard « police »).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4) Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00021",
+                  "4) Mission",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le but de la mission initiale (prévention, surveillance, sécurisation, intervention, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00022",
+                  "Indiquer le but de la mission initiale (prévention, surveillance, sécurisation, intervention, etc.).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5) Constatations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00023",
+                  "5) Constatations",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Relater précisément les faits constitutifs de l’IPM, contravention de 2ᵉ classe prévue et réprimée par ",
-                ),
-                TextSpan(
-                  text: "l’article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00024",
+                    "Relater précisément les faits constitutifs de l’IPM, contravention de 2ᵉ classe prévue et réprimée par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (Natinf 6252). L’ivresse doit être caractérisée comme :",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00025",
+                    "l’article R. 3353-1 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00026",
+                    " (Natinf 6252). L’ivresse doit être caractérisée comme :",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Manifeste : évidente, constatable (haleine alcoolisée, défaut d’équilibre, élocution bégayante, propos incohérents, attitude anormale…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00027",
+                  "Manifeste : évidente, constatable (haleine alcoolisée, défaut d’équilibre, élocution bégayante, propos incohérents, attitude anormale…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Publique : constatée dans un lieu public ou privé ouvert au public (place, route, gare, café…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00028",
+                  "Publique : constatée dans un lieu public ou privé ouvert au public (place, route, gare, café…).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Évite les formules vagues : décris des faits observables (comportement, propos, démarche, odeur, réactions, danger pour lui/les autres).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00029",
+                      "Évite les formules vagues : décris des faits observables (comportement, propos, démarche, odeur, réactions, danger pour lui/les autres).",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("6) Contrôle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00030",
+                  "6) Contrôle",
+                ),
+              ),
               _Paragraph(
-                "Identification en style indirect : état civil et adresse uniquement (exclure situation familiale/professionnelle et éléments de personnalité).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00031",
+                  "Identification en style indirect : état civil et adresse uniquement (exclure situation familiale/professionnelle et éléments de personnalité).",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("7) Palpation de sécurité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00032",
+                  "7) Palpation de sécurité",
+                ),
+              ),
               _Paragraph(
-                "Elle n’est pas systématique : agir avec respect et discernement. Elle se justifie selon les circonstances (temps/lieu) "
-                "et si nécessaire pour vérifier l’absence d’objet dangereux pour soi ou pour autrui, notamment avant le transport vers l’hôpital.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00033",
+                      "Elle n’est pas systématique : agir avec respect et discernement. Elle se justifie selon les circonstances (temps/lieu) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00034",
+                      "et si nécessaire pour vérifier l’absence d’objet dangereux pour soi ou pour autrui, notamment avant le transport vers l’hôpital.",
+                    ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("8) Compte-rendu radio"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00035",
+                  "8) Compte-rendu radio",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les transmissions utiles (CIC), l’évolution de la situation, et les décisions prises (hôpital, service, tiers, chambre de sûreté…).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00036",
+                  "Mentionner les transmissions utiles (CIC), l’évolution de la situation, et les décisions prises (hôpital, service, tiers, chambre de sûreté…).",
+                ),
               ),
             ],
           ),
@@ -248,29 +389,60 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
 
           // Focus examen médical (9-10)
           _ConditionCard(
-            title: "III — Focus : Examen médical (point clé)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+              "f00037",
+              "III — Focus : Examen médical (point clé)",
+            ),
             cardColor: cardFocus,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("9) Examen médical"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00038",
+                  "9) Examen médical",
+                ),
+              ),
               _Paragraph(
-                "La personne trouvée en état d’ivresse sur la voie publique est conduite devant un médecin par les policiers. "
-                "Si l’état de santé ne nécessite pas d’admission à l’hôpital, un certificat médical de non-admission, le précisant, est remis aux policiers.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00039",
+                      "La personne trouvée en état d’ivresse sur la voie publique est conduite devant un médecin par les policiers. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00040",
+                      "Si l’état de santé ne nécessite pas d’admission à l’hôpital, un certificat médical de non-admission, le précisant, est remis aux policiers.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un dispositif d’examen médical des personnes retenues pour IPM peut être mis en place dans les locaux de police (instruction de commandement DCSP n° 107 du 03 novembre 2016).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00041",
+                      "Un dispositif d’examen médical des personnes retenues pour IPM peut être mis en place dans les locaux de police (instruction de commandement DCSP n° 107 du 03 novembre 2016).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("10) Retour au service"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00042",
+                  "10) Retour au service",
+                ),
+              ),
               _Paragraph(
-                "Dans le modèle proposé, aucun moyen coercitif n’est employé : préciser un retour conforme, maîtrisé et proportionné.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00043",
+                  "Dans le modèle proposé, aucun moyen coercitif n’est employé : préciser un retour conforme, maîtrisé et proportionné.",
+                ),
               ),
             ],
           ),
@@ -279,45 +451,100 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
 
           // Sécurité / chambre de sûreté + clôture/annexe (11-14)
           _ConditionCard(
-            title: "IV — Sécurité, chambre de sûreté, clôture & annexe",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+              "f00044",
+              "IV — Sécurité, chambre de sûreté, clôture & annexe",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("11) Fouille de sécurité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00045",
+                  "11) Fouille de sécurité",
+                ),
+              ),
               _Paragraph(
-                "Retirer tous les objets, pièces et documents, ainsi que les accessoires pouvant nuire à la sécurité "
-                "(ceinture, lacets, médicaments, etc.). La fouille ne prévoit pas le dénuement complet. "
-                "Les moyens de détection électronique peuvent être utilisés, le cas échéant.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00046",
+                      "Retirer tous les objets, pièces et documents, ainsi que les accessoires pouvant nuire à la sécurité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00047",
+                      "(ceinture, lacets, médicaments, etc.). La fouille ne prévoit pas le dénuement complet. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                      "f00048",
+                      "Les moyens de détection électronique peuvent être utilisés, le cas échéant.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("12) Placement en chambre de sûreté"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00049",
+                  "12) Placement en chambre de sûreté",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La personne est placée en chambre de sûreté le temps nécessaire au recouvrement de la raison — ",
-                ),
-                TextSpan(
-                  text: "article L. 3341-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00050",
+                    "La personne est placée en chambre de sûreté le temps nécessaire au recouvrement de la raison — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Sous la responsabilité du chef de poste, une surveillance constante est assurée.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00051",
+                    "article L. 3341-1 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00052",
+                    ". Sous la responsabilité du chef de poste, une surveillance constante est assurée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("13) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00053",
+                  "13) Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Clore clairement : suites données, état final, mesures prises, documents annexés, date/heure/lieu, signatures.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00054",
+                  "Clore clairement : suites données, état final, mesures prises, documents annexés, date/heure/lieu, signatures.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("14) Annexe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00055",
+                  "14) Annexe",
+                ),
+              ),
               _Paragraph(
-                "Le certificat médical de non-admission est annexé au PV.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00056",
+                  "Le certificat médical de non-admission est annexé au PV.",
+                ),
               ),
             ],
           ),
@@ -326,7 +553,11 @@ class PvIpmExamenMedicalPage extends StatelessWidget {
 
           // Image (CANVA / zoomable)
           _ConditionCard(
-            title: "Aperçu du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+              "f00057",
+              "Aperçu du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -588,9 +819,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -655,8 +884,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+        "f00058",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+        "f00059",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -829,7 +1066,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                    "f00060",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -898,7 +1139,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart",
+                  "f00061",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -926,7 +1171,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -961,7 +1208,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

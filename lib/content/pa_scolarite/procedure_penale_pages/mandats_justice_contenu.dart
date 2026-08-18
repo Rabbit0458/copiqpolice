@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMandatsJusticeContenuPage extends StatelessWidget {
   const PaMandatsJusticeContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mandats de justice",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+            "f00002",
+            "Mandats de justice",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Les mandats de justice\n(Art. 122 à 136 du Code de Procédure Pénale)",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+              "f00003",
+              "Les mandats de justice\n(Art. 122 à 136 du Code de Procédure Pénale)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Cadre juridique, nature et effets des mandats de justice : "
-            "principes généraux, typologie des mandats et sanctions des irrégularités.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00004",
+                  "Cadre juridique, nature et effets des mandats de justice : ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00005",
+                  "principes généraux, typologie des mandats et sanctions des irrégularités.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -66,10 +89,22 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
           // ========== MODULE 1 — PRINCIPES GÉNÉRAUX QUI RÉGISSENT LES MANDATS ====
           _ModuleCard(
             tag: 'pp_mandats_principes_generaux',
-            title: "Principes généraux qui régissent les mandats",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+              "f00006",
+              "Principes généraux qui régissent les mandats",
+            ),
             subtitle:
-                "Fondements juridiques, autorités compétentes, finalité des mandats "
-                "et garanties liées à la liberté individuelle.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00007",
+                  "Fondements juridiques, autorités compétentes, finalité des mandats ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00008",
+                  "et garanties liées à la liberté individuelle.",
+                ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,10 +118,22 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
           // ================= MODULE 2 — LES DIFFÉRENTS MANDATS ====================
           _ModuleCard(
             tag: 'pp_mandats_types',
-            title: 'Les différents mandats',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+              "f00009",
+              'Les différents mandats',
+            ),
             subtitle:
-                "Mandat de comparution, d’amener, de dépôt, d’arrêt : définition, "
-                "conditions de délivrance, effets et exécution pratique.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00010",
+                  "Mandat de comparution, d’amener, de dépôt, d’arrêt : définition, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00011",
+                  "conditions de délivrance, effets et exécution pratique.",
+                ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -100,10 +147,22 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
           // ========== MODULE 3 — SANCTIONS DES IRRÉGULARITÉS DES MANDATS ==========
           _ModuleCard(
             tag: 'pp_mandats_sanctions_irregularites',
-            title: 'Sanctions des irrégularités des mandats',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+              "f00012",
+              'Sanctions des irrégularités des mandats',
+            ),
             subtitle:
-                "Nullités, mises en liberté, responsabilité éventuelle de l’autorité, "
-                "incidences sur la procédure pénale.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00013",
+                  "Nullités, mises en liberté, responsabilité éventuelle de l’autorité, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+                  "f00014",
+                  "incidences sur la procédure pénale.",
+                ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -118,9 +177,16 @@ class PaMandatsJusticeContenuPage extends StatelessWidget {
           // ================= MODULE 4 — QUIZ ======================================
           _ModuleCard(
             tag: 'quiz_mandats_justice',
-            title: 'Quiz — Mandats de justice',
-            subtitle:
-                'Évaluez votre maîtrise des principes, des différents mandats et des sanctions liées à leurs irrégularités.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+              "f00015",
+              'Quiz — Mandats de justice',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart",
+              "f00016",
+              'Évaluez votre maîtrise des principes, des différents mandats et des sanctions liées à leurs irrégularités.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -177,7 +243,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ImmobilisationPage extends StatelessWidget {
   const ImmobilisationPage({super.key});
@@ -59,10 +60,18 @@ class ImmobilisationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Procédures — circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+            "f00002",
+            "Procédures — circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class ImmobilisationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’immobilisation",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00003",
+              "L’immobilisation",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,26 +102,32 @@ class ImmobilisationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles L. 325-1 à L. 325-13 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00005",
+                    "Articles L. 325-1 à L. 325-13 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "articles R. 325-1 à R. 325-11 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00006",
+                    "articles R. 325-1 à R. 325-11 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -117,8 +136,16 @@ class ImmobilisationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’immobilisation est une mesure administrative prévue par le Code de la route : "
-                        "elle vise à empêcher un véhicule de circuler tant que la cause ayant motivé la mesure n’a pas cessé.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00007",
+                          "L’immobilisation est une mesure administrative prévue par le Code de la route : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00008",
+                          "elle vise à empêcher un véhicule de circuler tant que la cause ayant motivé la mesure n’a pas cessé.",
+                        ),
                   ),
                 ],
               ),
@@ -129,21 +156,44 @@ class ImmobilisationPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "II — Définition (à retenir)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00009",
+              "II — Définition (à retenir)",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’immobilisation est l’obligation faite, par un O.P.J., un A.P.J. ou un A.P.J.A., au conducteur "
-                "ou au propriétaire d’un véhicule, dans les cas prévus au Code de la route, de maintenir ce véhicule "
-                "sur place ou à proximité du lieu de constatation de l’infraction, en se conformant aux règles relatives "
-                "au stationnement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00010",
+                      "L’immobilisation est l’obligation faite, par un O.P.J., un A.P.J. ou un A.P.J.A., au conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00011",
+                      "ou au propriétaire d’un véhicule, dans les cas prévus au Code de la route, de maintenir ce véhicule ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00012",
+                      "sur place ou à proximité du lieu de constatation de l’infraction, en se conformant aux règles relatives ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00013",
+                      "au stationnement.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Pendant toute la durée de l’immobilisation, le véhicule demeure sous la garde juridique de son propriétaire ou de son conducteur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00014",
+                  "Pendant toute la durée de l’immobilisation, le véhicule demeure sous la garde juridique de son propriétaire ou de son conducteur.",
+                ),
               ),
             ],
           ),
@@ -152,58 +202,123 @@ class ImmobilisationPage extends StatelessWidget {
 
           // Procédure courante
           _ConditionCard(
-            title: "III — Procédure courante",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00015",
+              "III — Procédure courante",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Où et comment immobiliser ?"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00016",
+                  "1) Où et comment immobiliser ?",
+                ),
+              ),
               _Paragraph(
-                "L’immobilisation s’opère sur place ou à proximité du lieu de constatation, "
-                "en respectant les règles relatives au stationnement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00017",
+                      "L’immobilisation s’opère sur place ou à proximité du lieu de constatation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00018",
+                      "en respectant les règles relatives au stationnement.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Deux situations pratiques"),
-              _BulletPoint(
-                text:
-                    "Si l’infraction cesse en présence de l’agent : pas de fiche d’immobilisation, le véhicule peut repartir.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00019",
+                  "2) Deux situations pratiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si l’infraction n’a pas cessé lorsque l’agent quitte le lieu : l’agent peut saisir l’O.P.J. territorialement compétent en lui remettant la fiche d’immobilisation et le certificat d’immatriculation (et, selon cas, les pièces administratives nécessaires à la circulation).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00020",
+                  "Si l’infraction cesse en présence de l’agent : pas de fiche d’immobilisation, le véhicule peut repartir.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00021",
+                  "Si l’infraction n’a pas cessé lorsque l’agent quitte le lieu : l’agent peut saisir l’O.P.J. territorialement compétent en lui remettant la fiche d’immobilisation et le certificat d’immatriculation (et, selon cas, les pièces administratives nécessaires à la circulation).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La suspension de l’autorisation de circuler liée à l’immobilisation est enregistrée au S.I.V. "
-                        "et apparaît en consultation dans la rubrique « situation administrative ».",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00022",
+                          "La suspension de l’autorisation de circuler liée à l’immobilisation est enregistrée au S.I.V. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00023",
+                          "et apparaît en consultation dans la rubrique « situation administrative ».",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Dans tous les cas, "),
                 TextSpan(
-                  text: "un double de la fiche d’immobilisation",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00024",
+                    "Dans tous les cas, ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00025",
+                    "un double de la fiche d’immobilisation",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " est remis au contrevenant."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00026",
+                    " est remis au contrevenant.",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Cas particulier « barrière de dégel » : l’autorité saisie est ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00027",
+                    "Cas particulier « barrière de dégel » : l’autorité saisie est ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’ingénieur des ponts et chaussées",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00028",
+                    "l’ingénieur des ponts et chaussées",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
-                  text: "le maire (voie communale)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00029",
+                    "le maire (voie communale)",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -215,38 +330,78 @@ class ImmobilisationPage extends StatelessWidget {
 
           // Procédures particulières
           _ConditionCard(
-            title: "IV — Procédures particulières",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00030",
+              "IV — Procédures particulières",
+            ),
             cardColor: cardPart,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Remplacement du conducteur"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00031",
+                  "A) Remplacement du conducteur",
+                ),
+              ),
               _Paragraph(
-                "L’immobilisation est levée dès qu’un conducteur qualifié (proposé par le conducteur, "
-                "ou le cas échéant l’accompagnateur de l’élève conducteur ou le propriétaire) peut assurer la conduite, notamment si :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00032",
+                      "L’immobilisation est levée dès qu’un conducteur qualifié (proposé par le conducteur, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00033",
+                      "ou le cas échéant l’accompagnateur de l’élève conducteur ou le propriétaire) peut assurer la conduite, notamment si :",
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Conducteur (ou accompagnateur) présumé en état d’ivresse / sous l’empire d’un état alcoolique.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00034",
+                  "Conducteur (ou accompagnateur) présumé en état d’ivresse / sous l’empire d’un état alcoolique.",
+                ),
               ),
               _IntroBullet(
-                text: "Conducteur non titulaire du permis de conduire exigé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00035",
+                  "Conducteur non titulaire du permis de conduire exigé.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Conducteur en infraction à la réglementation sociale dans les transports routiers.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00036",
+                  "Conducteur en infraction à la réglementation sociale dans les transports routiers.",
+                ),
               ),
               _IntroBullet(
-                text: "Pendant la durée de rétention du permis de conduire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00037",
+                  "Pendant la durée de rétention du permis de conduire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "À défaut de conducteur qualifié, les policiers peuvent prendre toute mesure pour placer le véhicule "
-                        "en stationnement régulier (conduire le véhicule eux-mêmes ou faire appel à un conducteur qualifié).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00038",
+                          "À défaut de conducteur qualifié, les policiers peuvent prendre toute mesure pour placer le véhicule ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00039",
+                          "en stationnement régulier (conduire le véhicule eux-mêmes ou faire appel à un conducteur qualifié).",
+                        ),
                   ),
                 ],
               ),
@@ -254,108 +409,203 @@ class ImmobilisationPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Fiche de circulation provisoire (valable 7 jours)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00040",
+                  "B) Fiche de circulation provisoire (valable 7 jours)",
+                ),
               ),
               _Paragraph(
-                "Le verso de la fiche d’immobilisation peut tenir lieu de fiche de circulation provisoire valable 7 jours.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00041",
+                  "Le verso de la fiche d’immobilisation peut tenir lieu de fiche de circulation provisoire valable 7 jours.",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Le Code de la route limite cette procédure aux infractions liées à :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00042",
+                  "Le Code de la route limite cette procédure aux infractions liées à :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Contrôle technique : la fiche prescrit la présentation du véhicule dans le centre de contrôle technique choisi par le conducteur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00043",
+                  "Contrôle technique : la fiche prescrit la présentation du véhicule dans le centre de contrôle technique choisi par le conducteur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Surteintage des vitres avant : la fiche prescrit la mise en conformité du véhicule.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00044",
+                  "Surteintage des vitres avant : la fiche prescrit la mise en conformité du véhicule.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Chronotachygraphe / dispositif de limitation de vitesse (transports) : la fiche prescrit l’installation, la réparation ou la mise en conformité par un installateur agréé.",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("C) Immobilisation sur le lieu de réparation"),
-              _Paragraph(
-                "Si l’infraction concerne l’état / l’équipement du véhicule et nécessite des réparations pour cesser :",
-              ),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "Le conducteur peut être autorisé à déplacer le véhicule en conditions de sécurité satisfaisantes (au besoin accompagné) vers le garage le plus proche.",
-              ),
-              _BulletPoint(
-                text:
-                    "Ou à faire remorquer le véhicule, à ses frais, par un professionnel qualifié.",
-              ),
-              SizedBox(height: 8),
-              _Paragraph(
-                "L’immobilisation devient effective au lieu de réparation.",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("D) Véhicule en surcharge"),
-              _Paragraph(
-                "L’agent verbalisateur peut prescrire la présentation du véhicule à une bascule proche en vue de sa pesée. "
-                "L’immobilisation peut être prononcée si le poids réel excède de 5% le PTAC figurant sur le certificat d’immatriculation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00045",
+                  "Chronotachygraphe / dispositif de limitation de vitesse (transports) : la fiche prescrit l’installation, la réparation ou la mise en conformité par un installateur agréé.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "E) Véhicule polluant / bruyant ou cyclomoteur débridé",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00046",
+                  "C) Immobilisation sur le lieu de réparation",
+                ),
               ),
               _Paragraph(
-                "Si le véhicule paraît exagérément bruyant, non conforme aux émissions (fumées/gaz toxiques), "
-                "ou si un cyclomoteur paraît débridé (vitesse/cylindrée/puissance) :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00047",
+                  "Si l’infraction concerne l’état / l’équipement du véhicule et nécessite des réparations pour cesser :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Soit prescrire la présentation à un service de contrôle spécialisé (ex : brigade de contrôle technique).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00048",
+                  "Le conducteur peut être autorisé à déplacer le véhicule en conditions de sécurité satisfaisantes (au besoin accompagné) vers le garage le plus proche.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Soit établir une fiche de circulation provisoire autorisant la conduite vers un établissement choisi pour effectuer les réparations nécessaires.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00049",
+                  "Ou à faire remorquer le véhicule, à ses frais, par un professionnel qualifié.",
+                ),
+              ),
+              SizedBox(height: 8),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00050",
+                  "L’immobilisation devient effective au lieu de réparation.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "F) Transports de marchandises dangereuses (TMD)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00051",
+                  "D) Véhicule en surcharge",
+                ),
               ),
               _Paragraph(
-                "Toute décision d’immobilisation d’un transport de marchandises dangereuses doit être prise "
-                "après avis d’agents spécialisés (sécurité civile, D.R.E.A.L.) lorsqu’une infraction est constatée, notamment :",
-              ),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "Circulation sur voies ou dates interdites par arrêté préfectoral.",
-              ),
-              _BulletPoint(
-                text:
-                    "Non-respect de l’arrêté TMD ou de règles relatives aux visites techniques, certificat d’agrément, etc.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00052",
+                      "L’agent verbalisateur peut prescrire la présentation du véhicule à une bascule proche en vue de sa pesée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00053",
+                      "L’immobilisation peut être prononcée si le poids réel excède de 5% le PTAC figurant sur le certificat d’immatriculation.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "G) Véhicule endommagé lors d’un accident (procédure dédiée)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00054",
+                  "E) Véhicule polluant / bruyant ou cyclomoteur débridé",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00055",
+                      "Si le véhicule paraît exagérément bruyant, non conforme aux émissions (fumées/gaz toxiques), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00056",
+                      "ou si un cyclomoteur paraît débridé (vitesse/cylindrée/puissance) :",
+                    ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00057",
+                  "Soit prescrire la présentation à un service de contrôle spécialisé (ex : brigade de contrôle technique).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00058",
+                  "Soit établir une fiche de circulation provisoire autorisant la conduite vers un établissement choisi pour effectuer les réparations nécessaires.",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00059",
+                  "F) Transports de marchandises dangereuses (TMD)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00060",
+                      "Toute décision d’immobilisation d’un transport de marchandises dangereuses doit être prise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00061",
+                      "après avis d’agents spécialisés (sécurité civile, D.R.E.A.L.) lorsqu’une infraction est constatée, notamment :",
+                    ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00062",
+                  "Circulation sur voies ou dates interdites par arrêté préfectoral.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00063",
+                  "Non-respect de l’arrêté TMD ou de règles relatives aux visites techniques, certificat d’agrément, etc.",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00064",
+                  "G) Véhicule endommagé lors d’un accident (procédure dédiée)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Procédure « véhicule endommagé » : articles L. 327-4 et R. 327-1 à R. 327-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00065",
+                    "Procédure « véhicule endommagé » : articles L. 327-4 et R. 327-1 à R. 327-6 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -364,9 +614,21 @@ class ImmobilisationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les A.P.J.A. ne sont pas habilités à mettre en œuvre la procédure « véhicule endommagé ». "
-                        "Elle vise à détecter et immobiliser un véhicule potentiellement dangereux à l’occasion d’un accident, "
-                        "dans l’attente de la décision d’un expert.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00066",
+                          "Les A.P.J.A. ne sont pas habilités à mettre en œuvre la procédure « véhicule endommagé ». ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00067",
+                          "Elle vise à détecter et immobiliser un véhicule potentiellement dangereux à l’occasion d’un accident, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                          "f00068",
+                          "dans l’attente de la décision d’un expert.",
+                        ),
                   ),
                 ],
               ),
@@ -377,44 +639,83 @@ class ImmobilisationPage extends StatelessWidget {
 
           // Levée
           _ConditionCard(
-            title: "V — Levée de l’immobilisation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00069",
+              "V — Levée de l’immobilisation",
+            ),
             cardColor: cardLevee,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "L’immobilisation ne peut pas être maintenue après cessation de la circonstance qui l’a motivée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00070",
+                  "L’immobilisation ne peut pas être maintenue après cessation de la circonstance qui l’a motivée.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le véhicule peut circuler entre le lieu d’immobilisation et la résidence de l’autorité désignée "
-                "pour lever la mesure, sous couvert du double de la fiche d’immobilisation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00071",
+                      "Le véhicule peut circuler entre le lieu d’immobilisation et la résidence de l’autorité désignée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00072",
+                      "pour lever la mesure, sous couvert du double de la fiche d’immobilisation.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Autorités pouvant lever la mesure"),
-              _BulletPoint(text: "L’agent qui l’a prescrite."),
-              _BulletPoint(
-                text:
-                    "L’O.P.J. (si une fiche d’immobilisation a été établie) — restitution du certificat d’immatriculation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00073",
+                  "Autorités pouvant lever la mesure",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’ingénieur des ponts, des eaux et des forêts ou le maire (barrières de dégel).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00074",
+                  "L’agent qui l’a prescrite.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00075",
+                  "L’O.P.J. (si une fiche d’immobilisation a été établie) — restitution du certificat d’immatriculation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00076",
+                  "L’ingénieur des ponts, des eaux et des forêts ou le maire (barrières de dégel).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La fin de la suspension de l’autorisation de circuler doit être enregistrée dans le S.I.V.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                      "f00077",
+                      "La fin de la suspension de l’autorisation de circuler doit être enregistrée dans le S.I.V.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Si la cessation de l’infraction n’est pas justifiée dans un délai de 48 heures, l’O.P.J. peut transformer l’immobilisation en mise en fourrière.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00078",
+                  "Si la cessation de l’infraction n’est pas justifiée dans un délai de 48 heures, l’O.P.J. peut transformer l’immobilisation en mise en fourrière.",
+                ),
               ),
             ],
           ),
@@ -423,13 +724,21 @@ class ImmobilisationPage extends StatelessWidget {
 
           // NATINF / infractions liées (table claire)
           _ConditionCard(
-            title: "VI — Infractions fréquemment associées (repères NATINF)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00079",
+              "VI — Infractions fréquemment associées (repères NATINF)",
+            ),
             cardColor: cardNatinf,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Repères issus du mémento (utile pour l’identification terrain).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                  "f00080",
+                  "Repères issus du mémento (utile pour l’identification terrain).",
+                ),
               ),
               SizedBox(height: 12),
               _NatinfTable(),
@@ -437,8 +746,14 @@ class ImmobilisationPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 12),
-          const _Paragraph.rich([
-            TextSpan(text: "Mis à jour le "),
+          _Paragraph.rich([
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                "f00081",
+                "Mis à jour le ",
+              ),
+            ),
             TextSpan(
               text: "15/06/2025",
               style: TextStyle(fontWeight: FontWeight.w900),
@@ -549,80 +864,183 @@ class _NatinfTable extends StatelessWidget {
               children: [
                 headerCell("NATINF", flex: 2),
                 const SizedBox(width: 8),
-                headerCell("Intitulé", flex: 7),
+                headerCell(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00082",
+                    "Intitulé",
+                  ),
+                  flex: 7,
+                ),
                 const SizedBox(width: 8),
-                headerCell("Référence", flex: 3, align: TextAlign.right),
+                headerCell(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+                    "f00083",
+                    "Référence",
+                  ),
+                  flex: 3,
+                  align: TextAlign.right,
+                ),
               ],
             ),
           ),
 
           row(
             natinf: "6245",
-            intitule: "Obstacle à une mesure d’immobilisation (délit)",
-            ref: "L. 325-3-1 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00084",
+              "Obstacle à une mesure d’immobilisation (délit)",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00085",
+              "L. 325-3-1 CR",
+            ),
           ),
           row(
             natinf: "697",
-            intitule:
-                "Mise en circulation malgré immobilisation — PTAC ≤ 3,5 t (AF minorée 4e classe)",
-            ref: "R. 325-2 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00086",
+              "Mise en circulation malgré immobilisation — PTAC ≤ 3,5 t (AF minorée 4e classe)",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00087",
+              "R. 325-2 CR",
+            ),
           ),
           row(
             natinf: "21925",
-            intitule:
-                "Transport marchandises malgré immobilisation — PTAC > 3,5 t (PVO 5e classe)",
-            ref: "R. 325-2 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00088",
+              "Transport marchandises malgré immobilisation — PTAC > 3,5 t (PVO 5e classe)",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00089",
+              "R. 325-2 CR",
+            ),
           ),
           row(
             natinf: "21926",
-            intitule:
-                "Transport en commun malgré immobilisation (PVO 5e classe)",
-            ref: "R. 325-2 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00090",
+              "Transport en commun malgré immobilisation (PVO 5e classe)",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00091",
+              "R. 325-2 CR",
+            ),
           ),
           row(
             natinf: "22746",
-            intitule: "Refus de présenter à une bascule — PTAC ≤ 3,5 t",
-            ref: "R. 325-8 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00092",
+              "Refus de présenter à une bascule — PTAC ≤ 3,5 t",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00093",
+              "R. 325-8 CR",
+            ),
           ),
           row(
             natinf: "22747",
-            intitule: "Refus de présenter à une bascule — PTAC > 3,5 t",
-            ref: "R. 325-8 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00094",
+              "Refus de présenter à une bascule — PTAC > 3,5 t",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00095",
+              "R. 325-8 CR",
+            ),
           ),
           row(
             natinf: "22748",
-            intitule: "Refus de présenter à une bascule — transport en commun",
-            ref: "R. 325-8 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00096",
+              "Refus de présenter à une bascule — transport en commun",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00097",
+              "R. 325-8 CR",
+            ),
           ),
           row(
             natinf: "6210",
-            intitule:
-                "Refus contrôle technique (bruit/émissions) — PTAC ≤ 3,5 t",
-            ref: "R. 325-8 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00098",
+              "Refus contrôle technique (bruit/émissions) — PTAC ≤ 3,5 t",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00099",
+              "R. 325-8 CR",
+            ),
           ),
           row(
             natinf: "21937",
-            intitule:
-                "Refus contrôle technique (bruit/émissions) — PTAC > 3,5 t",
-            ref: "R. 325-8 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00100",
+              "Refus contrôle technique (bruit/émissions) — PTAC > 3,5 t",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00101",
+              "R. 325-8 CR",
+            ),
           ),
           row(
             natinf: "21938",
-            intitule:
-                "Refus contrôle technique (bruit/émissions) — transport en commun",
-            ref: "R. 325-8 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00102",
+              "Refus contrôle technique (bruit/émissions) — transport en commun",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00103",
+              "R. 325-8 CR",
+            ),
           ),
           row(
             natinf: "28029",
-            intitule:
-                "Refus de présenter un cyclomoteur (conformité vitesse/cylindrée/puissance)",
-            ref: "R. 325-8 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00104",
+              "Refus de présenter un cyclomoteur (conformité vitesse/cylindrée/puissance)",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00105",
+              "R. 325-8 CR",
+            ),
           ),
           row(
             natinf: "7548",
-            intitule:
-                "Maintien en circulation d’un véhicule endommagé malgré retrait conservatoire / interdiction",
-            ref: "R. 327-5 CR",
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00106",
+              "Maintien en circulation d’un véhicule endommagé malgré retrait conservatoire / interdiction",
+            ),
+            ref: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/immobilisation_page.dart",
+              "f00107",
+              "R. 327-5 CR",
+            ),
           ),
         ],
       ),
@@ -876,9 +1294,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

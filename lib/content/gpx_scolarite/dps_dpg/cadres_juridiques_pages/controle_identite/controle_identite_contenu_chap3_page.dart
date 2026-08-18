@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ControleIdentiteChap3ContenuPage extends StatelessWidget {
   const ControleIdentiteChap3ContenuPage({super.key});
@@ -25,10 +26,18 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Chapitre 3 — Vérification d’identité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+            "f00002",
+            'Chapitre 3 — Vérification d’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'Chapitre 3 — Vérification d’identité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+              "f00003",
+              'Chapitre 3 — Vérification d’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,9 +64,21 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Rétention de la personne contrôlée, recherche de l’identité, obligations légales de '
-            'procédure et rédaction du procès-verbal de vérification : cadre juridique et bonnes '
-            'pratiques pour l’officier de police judiciaire.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00004",
+                  'Rétention de la personne contrôlée, recherche de l’identité, obligations légales de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00005",
+                  'procédure et rédaction du procès-verbal de vérification : cadre juridique et bonnes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00006",
+                  'pratiques pour l’officier de police judiciaire.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -68,8 +93,16 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
             tag: 'chap3_intro',
             title: 'Introduction',
             subtitle:
-                'Rôle de la vérification d’identité, articulation avec le contrôle d’identité et le relevé '
-                'd’identité, et enjeux en matière de libertés individuelles.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00007",
+                  'Rôle de la vérification d’identité, articulation avec le contrôle d’identité et le relevé ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00008",
+                  'd’identité, et enjeux en matière de libertés individuelles.',
+                ),
             imagePath: 'assets/images/verficiation_identite_chap3.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,10 +116,22 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
           // ========== LA RÉTENTION DE LA PERSONNE CONTRÔLÉE ===============
           _ModuleCard(
             tag: 'chap3_retention',
-            title: 'La rétention de la personne contrôlée',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+              "f00009",
+              'La rétention de la personne contrôlée',
+            ),
             subtitle:
-                'Conditions de placement en rétention, durée maximale, droits de la personne et '
-                'contrôle exercé par l’autorité judiciaire.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00010",
+                  'Conditions de placement en rétention, durée maximale, droits de la personne et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00011",
+                  'contrôle exercé par l’autorité judiciaire.',
+                ),
             imagePath: 'assets/images/verficiation_identite_chap3.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -100,10 +145,22 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
           // ================== LA RECHERCHE DE L’IDENTITÉ ===================
           _ModuleCard(
             tag: 'chap3_recherche_identite',
-            title: 'La recherche de l’identité',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+              "f00012",
+              'La recherche de l’identité',
+            ),
             subtitle:
-                'Moyens mis en œuvre pour établir l’identité, vérifications possibles, recours aux '
-                'fichiers et coopération avec les autres services.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00013",
+                  'Moyens mis en œuvre pour établir l’identité, vérifications possibles, recours aux ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00014",
+                  'fichiers et coopération avec les autres services.',
+                ),
             imagePath: 'assets/images/verficiation_identite_chap3.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -117,10 +174,22 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
           // ============ LES OBLIGATIONS LÉGALES DE PROCÉDURE ==============
           _ModuleCard(
             tag: 'chap3_obligations_legales',
-            title: 'Les obligations légales de procédure',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+              "f00015",
+              'Les obligations légales de procédure',
+            ),
             subtitle:
-                'Information des droits, formalités obligatoires, respect des délais et risques de '
-                'nullité en cas d’irrégularité.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00016",
+                  'Information des droits, formalités obligatoires, respect des délais et risques de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00017",
+                  'nullité en cas d’irrégularité.',
+                ),
             imagePath: 'assets/images/verficiation_identite_chap3.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -134,10 +203,22 @@ class ControleIdentiteChap3ContenuPage extends StatelessWidget {
           // ============ LE PROCÈS-VERBAL DE VÉRIFICATION ==================
           _ModuleCard(
             tag: 'chap3_pv_verification',
-            title: 'Le procès-verbal de vérification',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+              "f00018",
+              'Le procès-verbal de vérification',
+            ),
             subtitle:
-                'Mentions indispensables, chronologie des opérations, articulation avec les autres '
-                'pièces de procédure et bonnes pratiques de rédaction.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00019",
+                  'Mentions indispensables, chronologie des opérations, articulation avec les autres ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart",
+                  "f00020",
+                  'pièces de procédure et bonnes pratiques de rédaction.',
+                ),
             imagePath: 'assets/images/verficiation_identite_chap3.jpeg',
             textMain: textMain,
             textSoft: textSoft,

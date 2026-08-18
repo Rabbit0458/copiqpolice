@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class HierarchieAssistantsEnquetePage extends StatelessWidget {
   const HierarchieAssistantsEnquetePage({super.key});
@@ -33,10 +34,18 @@ class HierarchieAssistantsEnquetePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Les assistants d’enquête',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+            "f00002",
+            'Les assistants d’enquête',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,7 +61,11 @@ class HierarchieAssistantsEnquetePage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            'Les assistants d’enquête',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+              "f00003",
+              'Les assistants d’enquête',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -62,25 +75,37 @@ class HierarchieAssistantsEnquetePage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO ----------------------------
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'Les assistants d’enquête, prévus à l’article 21-3 du code de procédure pénale, ont pour mission de seconder les officiers de police judiciaire et les agents de police judiciaire dans l’accomplissement de certaines formalités procédurales. ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                "f00004",
+                'Les assistants d’enquête, prévus à l’article 21-3 du code de procédure pénale, ont pour mission de seconder les officiers de police judiciaire et les agents de police judiciaire dans l’accomplissement de certaines formalités procédurales. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'Ils renforcent la capacité opérationnelle des services d’enquête, tout en agissant dans un cadre strictement défini par la loi.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                "f00005",
+                'Ils renforcent la capacité opérationnelle des services d’enquête, tout en agissant dans un cadre strictement défini par la loi.',
+              ),
             ),
           ]),
           const SizedBox(height: 12),
 
-          const _IntroBullet(
-            text:
-                'Les assistants d’enquête ne remplacent pas les officiers de police judiciaire ou les agents de police judiciaire, mais les appuient dans la réalisation des actes de procédure.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+              "f00006",
+              'Les assistants d’enquête ne remplacent pas les officiers de police judiciaire ou les agents de police judiciaire, mais les appuient dans la réalisation des actes de procédure.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Ils sont choisis parmi des personnels déjà insérés dans les institutions de sécurité intérieure ou de justice, et spécialement formés à ces missions.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+              "f00007",
+              'Ils sont choisis parmi des personnels déjà insérés dans les institutions de sécurité intérieure ou de justice, et spécialement formés à ces missions.',
+            ),
           ),
 
           const SizedBox(height: 20),
@@ -89,27 +114,55 @@ class HierarchieAssistantsEnquetePage extends StatelessWidget {
           // A. MISSION ET RÔLE DES ASSISTANTS D’ENQUÊTE
           // =======================================================
           _ConditionCard(
-            title: 'A. Missions des assistants d’enquête',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+              "f00008",
+              'A. Missions des assistants d’enquête',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les assistants d’enquête sont chargés de seconder les officiers de police judiciaire et les agents de police judiciaire dans l’accomplissement de certaines formalités procédurales. '
-                'Ils participent concrètement au déroulement de l’enquête, en réalisant des tâches techniques ou administratives qui nécessitent une bonne maîtrise de la procédure pénale.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                      "f00009",
+                      'Les assistants d’enquête sont chargés de seconder les officiers de police judiciaire et les agents de police judiciaire dans l’accomplissement de certaines formalités procédurales. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                      "f00010",
+                      'Ils participent concrètement au déroulement de l’enquête, en réalisant des tâches techniques ou administratives qui nécessitent une bonne maîtrise de la procédure pénale.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                'Leur intervention permet aux officiers de police judiciaire et aux agents de police judiciaire de se concentrer sur les actes d’enquête les plus sensibles ou les plus décisifs, tout en garantissant la qualité et la traçabilité des opérations réalisées.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00011",
+                  'Leur intervention permet aux officiers de police judiciaire et aux agents de police judiciaire de se concentrer sur les actes d’enquête les plus sensibles ou les plus décisifs, tout en garantissant la qualité et la traçabilité des opérations réalisées.',
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Travail en appui',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00012",
+                  'Travail en appui',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Les assistants d’enquête agissent toujours sous l’autorité et la responsabilité des officiers de police judiciaire et des agents de police judiciaire. '
-                        'Ils n’ont pas vocation à décider seuls des orientations de l’enquête, mais à mettre en œuvre les tâches qui leur sont confiées.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                          "f00013",
+                          'Les assistants d’enquête agissent toujours sous l’autorité et la responsabilité des officiers de police judiciaire et des agents de police judiciaire. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                          "f00014",
+                          'Ils n’ont pas vocation à décider seuls des orientations de l’enquête, mais à mettre en œuvre les tâches qui leur sont confiées.',
+                        ),
                   ),
                 ],
               ),
@@ -122,48 +175,96 @@ class HierarchieAssistantsEnquetePage extends StatelessWidget {
           // B. PROFILS RECRUTÉS COMME ASSISTANTS D’ENQUÊTE
           // =======================================================
           _ConditionCard(
-            title:
-                'B. Les personnels pouvant être assistants d’enquête (article 21-3 du code de procédure pénale)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+              "f00015",
+              'B. Les personnels pouvant être assistants d’enquête (article 21-3 du code de procédure pénale)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les assistants d’enquête sont recrutés parmi des personnels déjà intégrés dans les structures de la gendarmerie nationale ou de la police nationale. '
-                'Ils apportent leur expérience et leurs compétences dans le domaine administratif, technique ou opérationnel.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                      "f00016",
+                      'Les assistants d’enquête sont recrutés parmi des personnels déjà intégrés dans les structures de la gendarmerie nationale ou de la police nationale. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                      "f00017",
+                      'Ils apportent leur expérience et leurs compétences dans le domaine administratif, technique ou opérationnel.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                'Militaires du corps de soutien technique et administratif',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00018",
+                  'Militaires du corps de soutien technique et administratif',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les militaires appartenant au corps de soutien technique et administratif de la gendarmerie nationale peuvent être désignés comme assistants d’enquête.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00019",
+                  'Les militaires appartenant au corps de soutien technique et administratif de la gendarmerie nationale peuvent être désignés comme assistants d’enquête.',
+                ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('Personnels administratifs de catégorie B'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00020",
+                  'Personnels administratifs de catégorie B',
+                ),
+              ),
               _BulletPoint(
-                text:
-                    'Les personnels administratifs de catégorie B de la police nationale et de la gendarmerie nationale peuvent également exercer les fonctions d’assistant d’enquête.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00021",
+                  'Les personnels administratifs de catégorie B de la police nationale et de la gendarmerie nationale peuvent également exercer les fonctions d’assistant d’enquête.',
+                ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('Agents de police judiciaire adjoints'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00022",
+                  'Agents de police judiciaire adjoints',
+                ),
+              ),
               _BulletPoint(
-                text:
-                    'Les agents de police judiciaire adjoints de la police nationale et de la gendarmerie nationale peuvent, eux aussi, être désignés comme assistants d’enquête.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00023",
+                  'Les agents de police judiciaire adjoints de la police nationale et de la gendarmerie nationale peuvent, eux aussi, être désignés comme assistants d’enquête.',
+                ),
               ),
 
               SizedBox(height: 12),
               _NotaBox(
-                title: 'Diversité des profils',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00024",
+                  'Diversité des profils',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Cette diversité de profils (militaires de soutien, personnels administratifs, agents de police judiciaire adjoints) permet de doter les services d’enquête de compétences variées, '
-                        'utiles tant pour la gestion des procédures que pour le suivi administratif et logistique des dossiers.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                          "f00025",
+                          'Cette diversité de profils (militaires de soutien, personnels administratifs, agents de police judiciaire adjoints) permet de doter les services d’enquête de compétences variées, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                          "f00026",
+                          'utiles tant pour la gestion des procédures que pour le suivi administratif et logistique des dossiers.',
+                        ),
                   ),
                 ],
               ),
@@ -176,34 +277,60 @@ class HierarchieAssistantsEnquetePage extends StatelessWidget {
           // C. FORMATION ET APTITUDE
           // =======================================================
           _ConditionCard(
-            title: 'C. Formation et aptitude des assistants d’enquête',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+              "f00027",
+              'C. Formation et aptitude des assistants d’enquête',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les assistants d’enquête doivent avoir satisfait à une formation spécifique, sanctionnée par un examen, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                    "f00028",
+                    'Les assistants d’enquête doivent avoir satisfait à une formation spécifique, sanctionnée par un examen, ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'certifiant leur aptitude à assurer les missions que la loi leur confie.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                    "f00029",
+                    'certifiant leur aptitude à assurer les missions que la loi leur confie.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Cette formation porte notamment sur la procédure pénale, les droits des personnes mises en cause ou victimes, la rédaction des actes, ainsi que sur les outils informatiques et les applications métiers utilisées dans les services d’enquête.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00030",
+                  'Cette formation porte notamment sur la procédure pénale, les droits des personnes mises en cause ou victimes, la rédaction des actes, ainsi que sur les outils informatiques et les applications métiers utilisées dans les services d’enquête.',
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Garantie de compétence',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                  "f00031",
+                  'Garantie de compétence',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'L’exigence de formation et d’examen garantit que les assistants d’enquête maîtrisent les règles de fond et de forme des actes qu’ils accomplissent. '
-                        'Elle contribue à la fiabilité juridique des procédures et à la qualité globale du travail d’enquête.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                          "f00032",
+                          'L’exigence de formation et d’examen garantit que les assistants d’enquête maîtrisent les règles de fond et de forme des actes qu’ils accomplissent. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_assistants_enquete_page.dart",
+                          "f00033",
+                          'Elle contribue à la fiabilité juridique des procédures et à la qualité globale du travail d’enquête.',
+                        ),
                   ),
                 ],
               ),

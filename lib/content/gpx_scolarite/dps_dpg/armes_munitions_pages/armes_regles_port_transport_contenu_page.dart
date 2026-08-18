@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ArmesReglesPortTransportPage extends StatelessWidget {
   const ArmesReglesPortTransportPage({super.key});
@@ -56,10 +57,18 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Armes & munitions",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+            "f00002",
+            "Armes & munitions",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les règles de port et de transport",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+              "f00003",
+              "Les règles de port et de transport",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,44 +99,70 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
           // Définition (claire)
           _ConditionCard(
-            title: "Définitions (port / transport)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+              "f00004",
+              "Définitions (port / transport)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 311-1 du C.S.I. (III-10° et 13°)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00005",
+                    "Article R. 311-1 du C.S.I. (III-10° et 13°)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : introduit la définition réglementaire du port et du transport des armes.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00006",
+                    " : introduit la définition réglementaire du port et du transport des armes.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Port d’arme : avoir une arme sur soi, utilisable immédiatement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00007",
+                  "Port d’arme : avoir une arme sur soi, utilisable immédiatement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transport d’arme : déplacer une arme en l’ayant auprès de soi, inutilisable immédiatement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00008",
+                  "Transport d’arme : déplacer une arme en l’ayant auprès de soi, inutilisable immédiatement.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En principe, il n’existe pas d’autorisation administrative générale de port/transport pour les particuliers. "
-                        "Exceptions : autorisations ministérielles de port d’arme.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                          "f00009",
+                          "En principe, il n’existe pas d’autorisation administrative générale de port/transport pour les particuliers. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                          "f00010",
+                          "Exceptions : autorisations ministérielles de port d’arme.",
+                        ),
                   ),
                   TextSpan(text: " "),
                   TextSpan(
-                    text: "Articles R. 315-5 et R. 315-6 du C.S.I.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00011",
+                      "Articles R. 315-5 et R. 315-6 du C.S.I.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -139,36 +178,55 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
           // Base légale (règles générales)
           _ConditionCard(
-            title: "Base légale & logique générale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+              "f00012",
+              "Base légale & logique générale",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Sur la base de "),
                 TextSpan(
-                  text: "l’article L. 315-1 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00013",
+                    "Sur la base de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00014",
+                    "l’article L. 315-1 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ", "),
                 TextSpan(
-                  text: "l’article R. 315-1 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00015",
+                    "l’article R. 315-1 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " précise les règles générales d’interdiction de port ou de transport selon la catégorie (donc selon la dangerosité).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00016",
+                    " précise les règles générales d’interdiction de port ou de transport selon la catégorie (donc selon la dangerosité).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Idée clé : plus la catégorie est dangereuse, plus l’interdiction est stricte et les exceptions sont encadrées.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00017",
+                  "Idée clé : plus la catégorie est dangereuse, plus l’interdiction est stricte et les exceptions sont encadrées.",
+                ),
               ),
             ],
           ),
@@ -177,43 +235,83 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
           // Règles par catégories (A/B puis C/D)
           _ConditionCard(
-            title: "Règles selon la catégorie",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+              "f00018",
+              "Règles selon la catégorie",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("I — Catégories A et B"),
-              _BulletPoint(
-                text:
-                    "Interdiction du port des armes, éléments d’armes et munitions.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00019",
+                  "I — Catégories A et B",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transport : interdit sauf motif légitime (et/ou exceptions prévues par les textes).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00020",
+                  "Interdiction du port des armes, éléments d’armes et munitions.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00021",
+                  "Transport : interdit sauf motif légitime (et/ou exceptions prévues par les textes).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("II — Catégories C et D"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00022",
+                  "II — Catégories C et D",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Interdiction, sans motif légitime, du port et du transport des armes, éléments d’armes et munitions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00023",
+                  "Interdiction, sans motif légitime, du port et du transport des armes, éléments d’armes et munitions.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Important : pour les couteaux (catégorie D), le port/transport peut être admis s’il existe un motif légitime.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00024",
+                      "Important : pour les couteaux (catégorie D), le port/transport peut être admis s’il existe un motif légitime.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La légitimité dépend de l’activité réelle : le couteau doit présenter des caractéristiques cohérentes avec l’usage (travail, activité, déplacement…). "
-                "Elle s’apprécie au cas par cas, à partir des faits et, si nécessaire, des titres détenus.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00025",
+                      "La légitimité dépend de l’activité réelle : le couteau doit présenter des caractéristiques cohérentes avec l’usage (travail, activité, déplacement…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00026",
+                      "Elle s’apprécie au cas par cas, à partir des faits et, si nécessaire, des titres détenus.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le transport peut être professionnel (ex. artisan) ou non professionnel (ex. tireur sportif qui se rend à son club).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00027",
+                  "Le transport peut être professionnel (ex. artisan) ou non professionnel (ex. tireur sportif qui se rend à son club).",
+                ),
               ),
             ],
           ),
@@ -222,57 +320,123 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
           // Cas particuliers (chasse / tir sportif / reconstitutions / collectionneurs)
           _ConditionCard(
-            title: "Règles particulières (activités encadrées)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+              "f00028",
+              "Règles particulières (activités encadrées)",
+            ),
             cardColor: cardCases,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Afin de concilier sécurité publique et pratiques autorisées, des règles spécifiques existent, notamment pour la chasse, le tir sportif et les reconstitutions historiques : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00029",
+                    "Afin de concilier sécurité publique et pratiques autorisées, des règles spécifiques existent, notamment pour la chasse, le tir sportif et les reconstitutions historiques : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles R. 315-2 et R. 315-3 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00030",
+                    "articles R. 315-2 et R. 315-3 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("III — Concernant la chasse"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00031",
+                  "III — Concernant la chasse",
+                ),
+              ),
               _Paragraph(
-                "Le permis de chasser, accompagné d’un titre français de validation de l’année en cours, vaut titre de port légitime "
-                "pour les armes/éléments/munitions de catégorie C ainsi que pour certaines armes de catégorie D (utilisation en action de chasse ou activité liée).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00032",
+                      "Le permis de chasser, accompagné d’un titre français de validation de l’année en cours, vaut titre de port légitime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00033",
+                      "pour les armes/éléments/munitions de catégorie C ainsi que pour certaines armes de catégorie D (utilisation en action de chasse ou activité liée).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Pour ces mêmes armes/éléments/munitions, le permis de chasser vaut aussi titre de transport : dans ce cas, la validation de l’année en cours n’est pas nécessaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00034",
+                  "Pour ces mêmes armes/éléments/munitions, le permis de chasser vaut aussi titre de transport : dans ce cas, la validation de l’année en cours n’est pas nécessaire.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("IV — Concernant le tir sportif"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00035",
+                  "IV — Concernant le tir sportif",
+                ),
+              ),
               _Paragraph(
-                "La licence de tir en cours de validité vaut titre de transport légitime des armes, éléments d’armes, systèmes d’alimentation et munitions "
-                "des catégories A, B et C, ainsi que des armes/éléments/munitions de catégorie D utilisés dans la pratique du sport relevant de la fédération.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00036",
+                      "La licence de tir en cours de validité vaut titre de transport légitime des armes, éléments d’armes, systèmes d’alimentation et munitions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00037",
+                      "des catégories A, B et C, ainsi que des armes/éléments/munitions de catégorie D utilisés dans la pratique du sport relevant de la fédération.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("V — Les collectionneurs"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00038",
+                  "V — Les collectionneurs",
+                ),
+              ),
               _Paragraph(
-                "La carte de collectionneur vaut titre de transport légitime des armes de catégorie C, pour les activités liées à :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00039",
+                  "La carte de collectionneur vaut titre de transport légitime des armes de catégorie C, pour les activités liées à :",
+                ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text: "Exposition dans un musée ouvert au public.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00040",
+                  "Exposition dans un musée ouvert au public.",
+                ),
               ),
-              _IntroBullet(text: "Conservation."),
-              _IntroBullet(text: "Connaissance / étude des armes."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00041",
+                  "Conservation.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00042",
+                  "Connaissance / étude des armes.",
+                ),
+              ),
             ],
           ),
 
@@ -280,25 +444,37 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
           // Agents publics + cas PN/GN + douanes/pénitentiaire + ERP + PA/ réserve
           _ConditionCard(
-            title: "Agents publics (règles & cas usuels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+              "f00043",
+              "Agents publics (règles & cas usuels)",
+            ),
             cardColor: cardAgents,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "VI — Fonctionnaires / agents chargés d’une mission de police",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00044",
+                  "VI — Fonctionnaires / agents chargés d’une mission de police",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Ils peuvent être autorisés à porter, dans l’exercice ou à l’occasion de leurs fonctions, certaines armes et munitions détenues régulièrement : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00045",
+                    "Ils peuvent être autorisés à porter, dans l’exercice ou à l’occasion de leurs fonctions, certaines armes et munitions détenues régulièrement : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 315-8 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00046",
+                    "article R. 315-8 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -306,15 +482,19 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Concernant les militaires (officiers / sous-officiers), le port s’effectue selon leurs règlements particuliers : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00047",
+                    "Concernant les militaires (officiers / sous-officiers), le port s’effectue selon leurs règlements particuliers : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 315-9 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00048",
+                    "article R. 315-9 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -322,84 +502,150 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Douanes et administration pénitentiaire : transport/port/usage des armes remises par l’administration : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00049",
+                    "Douanes et administration pénitentiaire : transport/port/usage des armes remises par l’administration : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 315-10 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00050",
+                    "article R. 315-10 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("Accès à un ERP hors service (PN / GN)"),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Un fonctionnaire de police nationale ou un gendarme d’active peut accéder à un ERP hors service en étant porteur de son arme : ",
-                ),
-                TextSpan(
-                  text: "article R. 315-11 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: "."),
-              ]),
-              SizedBox(height: 10),
-              _Paragraph("Conditions essentielles (à retenir) :"),
-              SizedBox(height: 8),
-              _IntroBullet(
-                text:
-                    "Être à jour de la formation continue (emploi des armes).",
-              ),
-              _IntroBullet(text: "Ne jamais se séparer de l’arme."),
-              _IntroBullet(
-                text:
-                    "Avant un contrôle d’accès : justifier sa qualité (carte pro + brassard d’identification).",
-              ),
-              _IntroBullet(text: "Arme portée de façon non visible."),
-
-              SizedBox(height: 14),
-
               _SubTitle(
-                "Policiers adjoints / réservistes : autorisations possibles",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00051",
+                  "Accès à un ERP hors service (PN / GN)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Si la mission le requiert, ils peuvent être autorisés à porter certaines armes et systèmes d’alimentation : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00052",
+                    "Un fonctionnaire de police nationale ou un gendarme d’active peut accéder à un ERP hors service en étant porteur de son arme : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles R. 411-7 et R. 411-29 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00053",
+                    "article R. 315-11 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Ils peuvent également être autorisés (selon mission) au port/transport de certains équipements : grenades de désencerclement, "
-                "grenades lacrymogènes, armes à impulsion électrique, aérosols lacrymogènes/incapacitants, bâtons de défense, etc.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00054",
+                  "Conditions essentielles (à retenir) :",
+                ),
+              ),
+              SizedBox(height: 8),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00055",
+                  "Être à jour de la formation continue (emploi des armes).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00056",
+                  "Ne jamais se séparer de l’arme.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00057",
+                  "Avant un contrôle d’accès : justifier sa qualité (carte pro + brassard d’identification).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00058",
+                  "Arme portée de façon non visible.",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00059",
+                  "Policiers adjoints / réservistes : autorisations possibles",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00060",
+                    "Si la mission le requiert, ils peuvent être autorisés à porter certaines armes et systèmes d’alimentation : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00061",
+                    "articles R. 411-7 et R. 411-29 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+              SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00062",
+                      "Ils peuvent également être autorisés (selon mission) au port/transport de certains équipements : grenades de désencerclement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00063",
+                      "grenades lacrymogènes, armes à impulsion électrique, aérosols lacrymogènes/incapacitants, bâtons de défense, etc.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Réservistes retraités : possibilité de port/transport du LBD 40 mm et munitions si habilitation à jour lors de l’intégration, "
-                        "sur autorisation du chef de service — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                          "f00064",
+                          "Réservistes retraités : possibilité de port/transport du LBD 40 mm et munitions si habilitation à jour lors de l’intégration, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                          "f00065",
+                          "sur autorisation du chef de service — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article R. 411-29 du C.S.I.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00066",
+                      "article R. 411-29 du C.S.I.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -415,113 +661,187 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
 
           // Activités privées + risques exceptionnels + étrangers
           _ConditionCard(
-            title:
-                "Autorisations exceptionnelles (privé / risques / étrangers)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+              "f00067",
+              "Autorisations exceptionnelles (privé / risques / étrangers)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("VII — Activités privées de sécurité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00068",
+                  "VII — Activités privées de sécurité",
+                ),
+              ),
               _Paragraph(
-                "Le personnel d’entreprises pouvant être amené à assurer la sécurité des biens ou le gardiennage peut, lorsque la mission le justifie, "
-                "être autorisé à porter des armes et munitions à l’extérieur des bâtiments/locaux.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00069",
+                      "Le personnel d’entreprises pouvant être amené à assurer la sécurité des biens ou le gardiennage peut, lorsque la mission le justifie, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00070",
+                      "être autorisé à porter des armes et munitions à l’extérieur des bâtiments/locaux.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Autorisation délivrée par le préfet du département où se situent les lieux à surveiller ; révocable à tout moment.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00071",
+                  "Autorisation délivrée par le préfet du département où se situent les lieux à surveiller ; révocable à tout moment.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "VIII — Personnes exposées à des risques exceptionnels",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00072",
+                  "VIII — Personnes exposées à des risques exceptionnels",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le ministre de l’Intérieur peut autoriser, par arrêté, une personne exposée à des risques exceptionnels d’atteinte à sa vie "
-                      "à porter et transporter une arme de poing : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                        "f00073",
+                        "Le ministre de l’Intérieur peut autoriser, par arrêté, une personne exposée à des risques exceptionnels d’atteinte à sa vie ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                        "f00074",
+                        "à porter et transporter une arme de poing : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article R. 312-39 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00075",
+                    "article R. 312-39 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Munitions correspondantes : limite de 50 cartouches par arme — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00076",
+                    "Munitions correspondantes : limite de 50 cartouches par arme — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 312-47 1° du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00077",
+                    "article R. 312-47 1° du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Possibilité de port sur le lieu d’activité professionnelle — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00078",
+                    "Possibilité de port sur le lieu d’activité professionnelle — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 315-5-1 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00079",
+                    "article R. 315-5-1 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("IX — Personnes étrangères séjournant en France"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00080",
+                  "IX — Personnes étrangères séjournant en France",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le ministre de l’Intérieur peut autoriser, par arrêté, certains agents/personnalités étrangers et leurs agents de sécurité, "
-                      "ainsi que des personnes exerçant des fonctions diplomatiques/internationales, à détenir/porter/transporter une arme de poing : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                        "f00081",
+                        "Le ministre de l’Intérieur peut autoriser, par arrêté, certains agents/personnalités étrangers et leurs agents de sécurité, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                        "f00082",
+                        "ainsi que des personnes exerçant des fonctions diplomatiques/internationales, à détenir/porter/transporter une arme de poing : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article R. 315-6 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00083",
+                    "article R. 315-6 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Munitions : limite de 50 cartouches par arme — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00084",
+                    "Munitions : limite de 50 cartouches par arme — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 312-47 1° du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                    "f00085",
+                    "article R. 312-47 1° du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Peut aussi porter deux armes parmi certaines catégories : matraque/bâton télescopique (cat. D a) ou aérosol lacrymogène/incapacitant (cat. D b).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                  "f00086",
+                  "Peut aussi porter deux armes parmi certaines catégories : matraque/bâton télescopique (cat. D a) ou aérosol lacrymogène/incapacitant (cat. D b).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La durée de l’autorisation est limitée (mission/séjour/fonctions). Dans certains cas : durée maximale d’un an, renouvelable. "
-                "À titre exceptionnel, le transport de plusieurs armes de poing et munitions par une même personne assurant la sécurité peut être autorisé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00087",
+                      "La durée de l’autorisation est limitée (mission/séjour/fonctions). Dans certains cas : durée maximale d’un an, renouvelable. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart",
+                      "f00088",
+                      "À titre exceptionnel, le transport de plusieurs armes de poing et munitions par une même personne assurant la sécurité peut être autorisé.",
+                    ),
               ),
             ],
           ),
@@ -777,9 +1097,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

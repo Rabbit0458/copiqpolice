@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAtteintesAdministrationContenuPage extends StatelessWidget {
   const PaAtteintesAdministrationContenuPage({super.key});
@@ -13,7 +14,9 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
 
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -24,10 +27,18 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crime & délit contre la nation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+            "f00002",
+            "Crime & délit contre la nation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -42,7 +53,11 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Les atteintes à l’administration publique commises par des particuliers",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00003",
+              "Les atteintes à l’administration publique commises par des particuliers",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -52,8 +67,16 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux atteintes à l’administration publique commises par des particuliers "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux atteintes à l’administration publique commises par des particuliers ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -66,8 +89,16 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'nation_atteintes_admin_provocation_directe_rebellion',
-            title: "La provocation directe à la rébellion",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00006",
+              "La provocation directe à la rébellion",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00007",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/administration_particuliers.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,8 +112,16 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'nation_atteintes_admin_rebellion',
-            title: "La rébellion",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00008",
+              "La rébellion",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00009",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/administration_particuliers.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,9 +135,16 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'nation_atteintes_admin_menaces_depositaire_autorite',
-            title:
-                "Les menaces de crime ou délit envers une personne dépositaire de l’autorité publique, chargée d’une mission de service public, ou assimilée",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00010",
+              "Les menaces de crime ou délit envers une personne dépositaire de l’autorité publique, chargée d’une mission de service public, ou assimilée",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00011",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/administration_particuliers.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -113,9 +159,16 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
           _ModuleCard(
             tag:
                 'nation_atteintes_admin_menaces_violences_intimidation_derogation',
-            title:
-                "Les menaces, violences ou actes d’intimidation aux fins d’obtention d’une dérogation aux règles de fonctionnement d’un service public",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00012",
+              "Les menaces, violences ou actes d’intimidation aux fins d’obtention d’une dérogation aux règles de fonctionnement d’un service public",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00013",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/administration_particuliers.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -129,9 +182,16 @@ class PaAtteintesAdministrationContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_atteintes_administration',
-            title: 'Quiz — Atteintes à l’administration',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00014",
+              'Quiz — Atteintes à l’administration',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart",
+              "f00015",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

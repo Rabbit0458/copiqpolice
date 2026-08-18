@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolencesConjugalesPage extends StatelessWidget {
   const PaViolencesConjugalesPage({super.key});
@@ -56,7 +57,11 @@ class PaViolencesConjugalesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Domicile",
@@ -74,7 +79,11 @@ class PaViolencesConjugalesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Violences conjugales — conduites à tenir",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00002",
+              "Violences conjugales — conduites à tenir",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,12 +99,28 @@ class PaViolencesConjugalesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute sollicitation pour des faits relatifs à des violences conjugales ou intrafamiliales "
-                "doit conduire à une intervention dans les meilleurs délais.\n\n"
-                "Les primo-intervenants adoptent une posture de prudence : la nature exacte des faits "
-                "n’est pas toujours connue, ni les moyens utilisés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00003",
+                      "Toute sollicitation pour des faits relatifs à des violences conjugales ou intrafamiliales ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00004",
+                      "doit conduire à une intervention dans les meilleurs délais.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00005",
+                      "Les primo-intervenants adoptent une posture de prudence : la nature exacte des faits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00006",
+                      "n’est pas toujours connue, ni les moyens utilisés.",
+                    ),
               ),
             ],
           ),
@@ -104,16 +129,36 @@ class PaViolencesConjugalesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut : (texte fourni ne cite pas d’articles précis -> on garde un cadre légal “propre” sans inventer)
           _ConditionCard(
-            title: "I — Élément légal (cadre)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00007",
+              "I — Élément légal (cadre)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette fiche présente une conduite opérationnelle applicable lors des interventions au domicile "
-                "pour violences conjugales/intrafamiliales.\n\n"
-                "Le cadre juridique précis dépendra de la qualification retenue (violences, menaces, harcèlement, "
-                "infractions connexes) et de la situation procédurale (flagrance, enquête…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00008",
+                      "Cette fiche présente une conduite opérationnelle applicable lors des interventions au domicile ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00009",
+                      "pour violences conjugales/intrafamiliales.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00010",
+                      "Le cadre juridique précis dépendra de la qualification retenue (violences, menaces, harcèlement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00011",
+                      "infractions connexes) et de la situation procédurale (flagrance, enquête…).",
+                    ),
               ),
             ],
           ),
@@ -122,30 +167,88 @@ class PaViolencesConjugalesPage extends StatelessWidget {
 
           // 3 éléments (pédagogique) : on l’adapte à la situation “violences”
           _ConditionCard(
-            title: "II — 3 éléments (qualification pénale : violences)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00012",
+              "II — 3 éléments (qualification pénale : violences)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Élément légal"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00013",
+                  "A) Élément légal",
+                ),
+              ),
               _Paragraph(
-                "Les violences au sein du couple relèvent du domaine délictuel. "
-                "La qualification exacte dépend des constatations (violences physiques/psychologiques, menaces, armes, ITT, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00014",
+                      "Les violences au sein du couple relèvent du domaine délictuel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00015",
+                      "La qualification exacte dépend des constatations (violences physiques/psychologiques, menaces, armes, ITT, etc.).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Élément matériel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00016",
+                  "B) Élément matériel",
+                ),
+              ),
               _Paragraph(
-                "Ce sont les faits observables/constatables :\n"
-                "• blessures, douleurs, traces de coups\n"
-                "• traces de lutte, désordre, dégâts matériels\n"
-                "• déclarations croisées (victime, auteur, enfants, témoins)\n"
-                "• contexte : séparation, alcool/stupéfiants, présence d’armes, répétition.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00017",
+                      "Ce sont les faits observables/constatables :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00018",
+                      "• blessures, douleurs, traces de coups\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00019",
+                      "• traces de lutte, désordre, dégâts matériels\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00020",
+                      "• déclarations croisées (victime, auteur, enfants, témoins)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00021",
+                      "• contexte : séparation, alcool/stupéfiants, présence d’armes, répétition.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Élément moral"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00022",
+                  "C) Élément moral",
+                ),
+              ),
               _Paragraph(
-                "Apprécier l’intention et la dangerosité : attitude de l’auteur (déni, minimisation, agressivité), "
-                "craintes exprimées, emprise, menaces, contrôle…",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00023",
+                      "Apprécier l’intention et la dangerosité : attitude de l’auteur (déni, minimisation, agressivité), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00024",
+                      "craintes exprimées, emprise, menaces, contrôle…",
+                    ),
               ),
             ],
           ),
@@ -154,43 +257,84 @@ class PaViolencesConjugalesPage extends StatelessWidget {
 
           // Intervention à domicile — 2 cas (violences constatées / pas de violences apparentes)
           _ConditionCard(
-            title: "III — À domicile : conduite immédiate",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00025",
+              "III — À domicile : conduite immédiate",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Violences constatées"),
-              _BulletPoint(
-                text:
-                    "Procéder à l’interpellation de l’auteur en cas de violences constatées.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00026",
+                  "A) Violences constatées",
+                ),
               ),
               _BulletPoint(
-                text: "Mettre en sécurité la victime et ses enfants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00027",
+                  "Procéder à l’interpellation de l’auteur en cas de violences constatées.",
+                ),
               ),
-              _BulletPoint(text: "Préserver les traces et indices."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00028",
+                  "Mettre en sécurité la victime et ses enfants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00029",
+                  "Préserver les traces et indices.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’interpellation intervient même si la victime s’y oppose ou refuse de déposer plainte.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00030",
+                      "L’interpellation intervient même si la victime s’y oppose ou refuse de déposer plainte.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 14),
-              _SubTitle("B) Absence de violences apparentes"),
-              _BulletPoint(
-                text:
-                    "Recueillir isolément la version des faits auprès de chaque personne présente (victime, enfants, témoins, auteur).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00031",
+                  "B) Absence de violences apparentes",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En cas de doute sur la conduite à tenir, rendre compte immédiatement à l’OPJ de permanence.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00032",
+                  "Recueillir isolément la version des faits auprès de chaque personne présente (victime, enfants, témoins, auteur).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00033",
+                  "En cas de doute sur la conduite à tenir, rendre compte immédiatement à l’OPJ de permanence.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Relever l’identité de l’ensemble des personnes présentes (dans tous les cas).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00034",
+                  "Relever l’identité de l’ensemble des personnes présentes (dans tous les cas).",
+                ),
               ),
             ],
           ),
@@ -199,29 +343,52 @@ class PaViolencesConjugalesPage extends StatelessWidget {
 
           // MCI / main courante exhaustive
           _ConditionCard(
-            title: "IV — Si la victime refuse audition / plainte",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00035",
+              "IV — Si la victime refuse audition / plainte",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En cas de refus d’être entendue au service (plainte, audition), l’équipage intervenant :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00036",
+                  "En cas de refus d’être entendue au service (plainte, audition), l’équipage intervenant :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Rédige une main courante exhaustive (selon le modèle).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00037",
+                  "Rédige une main courante exhaustive (selon le modèle).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Remet discrètement à la victime un document d’information au format « carte de visite » (numéros utiles).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00038",
+                  "Remet discrètement à la victime un document d’information au format « carte de visite » (numéros utiles).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La rédaction MCI intervient y compris si les policiers n’ont pas pu pénétrer au domicile "
-                        "(carence requérant, pas d’ouverture…) ou si la victime nie les violences.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                          "f00039",
+                          "La rédaction MCI intervient y compris si les policiers n’ont pas pu pénétrer au domicile ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                          "f00040",
+                          "(carence requérant, pas d’ouverture…) ou si la victime nie les violences.",
+                        ),
                   ),
                 ],
               ),
@@ -232,46 +399,106 @@ class PaViolencesConjugalesPage extends StatelessWidget {
 
           // Contenu “MCI exhaustive” — rendu très visuel
           _ConditionCard(
-            title: "V — MCI exhaustive : mentions à intégrer",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00041",
+              "V — MCI exhaustive : mentions à intégrer",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Outre les mentions habituelles (identité de la victime + téléphone, identité/coordonnées du requérant…), "
-                "les renseignements suivants doivent être enregistrés :",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00042",
+                      "Outre les mentions habituelles (identité de la victime + téléphone, identité/coordonnées du requérant…), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00043",
+                      "les renseignements suivants doivent être enregistrés :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Motif de l’intervention (dispute, violences, tapage…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00044",
+                  "Motif de l’intervention (dispute, violences, tapage…).",
+                ),
               ),
               _BulletPoint(
-                text: "Identité des enfants éventuels (âge, école).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00045",
+                  "Identité des enfants éventuels (âge, école).",
+                ),
               ),
               _BulletPoint(
-                text: "Identité et coordonnées des témoins éventuels.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00046",
+                  "Identité et coordonnées des témoins éventuels.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "État psychologique de la victime et des enfants (peur, soumission, pleurs).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00047",
+                  "État psychologique de la victime et des enfants (peur, soumission, pleurs).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Comportement de l’auteur (agressif, sur la défensive, déni, minimisation…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00048",
+                  "Comportement de l’auteur (agressif, sur la défensive, déni, minimisation…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Constatations / éléments d’observation (désordre, dégâts matériels, traces de lutte, traces de coups…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00049",
+                  "Constatations / éléments d’observation (désordre, dégâts matériels, traces de lutte, traces de coups…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Nombre d’interventions déjà réalisées au domicile (si connu).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00050",
+                  "Nombre d’interventions déjà réalisées au domicile (si connu).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Facteurs aggravants à signaler"),
-              _BulletPoint(text: "Arme à feu."),
-              _BulletPoint(text: "Alcool / stupéfiants."),
-              _BulletPoint(text: "Séparation."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00051",
+                  "Facteurs aggravants à signaler",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00052",
+                  "Arme à feu.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00053",
+                  "Alcool / stupéfiants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00054",
+                  "Séparation.",
+                ),
+              ),
             ],
           ),
 
@@ -279,21 +506,47 @@ class PaViolencesConjugalesPage extends StatelessWidget {
 
           // Tentative & complicité (sans inventer d’articles)
           _ConditionCard(
-            title: "VI — Tentative & complicité (repères)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00055",
+              "VI — Tentative & complicité (repères)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Tentative"),
               _Paragraph(
-                "À apprécier selon l’infraction retenue et les circonstances. "
-                "En pratique, en intervention : sécuriser, constater, préserver les indices et qualifier précisément.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00056",
+                      "À apprécier selon l’infraction retenue et les circonstances. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00057",
+                      "En pratique, en intervention : sécuriser, constater, préserver les indices et qualifier précisément.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00058",
+                  "Complicité",
+                ),
+              ),
               _Paragraph(
-                "Peut être envisagée si un tiers a facilité l’infraction (aide/assistance, fourniture de moyens, incitation, etc.), "
-                "selon les critères légaux applicables à l’infraction retenue.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00059",
+                      "Peut être envisagée si un tiers a facilité l’infraction (aide/assistance, fourniture de moyens, incitation, etc.), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                      "f00060",
+                      "selon les critères légaux applicables à l’infraction retenue.",
+                    ),
               ),
             ],
           ),
@@ -302,23 +555,42 @@ class PaViolencesConjugalesPage extends StatelessWidget {
 
           // Synthèse opérationnelle finale
           _ConditionCard(
-            title: "VII — Synthèse opérationnelle",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+              "f00061",
+              "VII — Synthèse opérationnelle",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _IntroBullet(text: "Intervenir rapidement + posture prudente."),
+            children: [
               _IntroBullet(
-                text:
-                    "Si violences constatées : interpellation + mise en sécurité + préservation traces/indices.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00062",
+                  "Intervenir rapidement + posture prudente.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Sinon : auditions isolées + compte rendu OPJ si doute + identités relevées.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00063",
+                  "Si violences constatées : interpellation + mise en sécurité + préservation traces/indices.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Si refus plainte/audition : MCI exhaustive + remise discrète des numéros utiles.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00064",
+                  "Sinon : auditions isolées + compte rendu OPJ si doute + identités relevées.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart",
+                  "f00065",
+                  "Si refus plainte/audition : MCI exhaustive + remise discrète des numéros utiles.",
+                ),
               ),
             ],
           ),
@@ -575,9 +847,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

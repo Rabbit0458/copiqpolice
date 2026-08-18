@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ArmesIntroductionPage extends StatelessWidget {
   const ArmesIntroductionPage({super.key});
@@ -56,10 +57,18 @@ class ArmesIntroductionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Armes & munitions",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+            "f00002",
+            "Armes & munitions",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -86,28 +95,44 @@ class ArmesIntroductionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Élément légal (texte fondateur)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+              "f00003",
+              "Élément légal (texte fondateur)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Loi n°2012-304 du 06 mars 2012",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                    "f00004",
+                    "Loi n°2012-304 du 06 mars 2012",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : relative à l’établissement d’un contrôle des armes moderne, simplifié et préventif.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                    "f00005",
+                    " : relative à l’établissement d’un contrôle des armes moderne, simplifié et préventif.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette loi met en place une nomenclature des armes selon leur régime juridique d’acquisition et de détention, "
-                "avec un objectif de modernisation des procédures et de renforcement de la sécurité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00006",
+                      "Cette loi met en place une nomenclature des armes selon leur régime juridique d’acquisition et de détention, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00007",
+                      "avec un objectif de modernisation des procédures et de renforcement de la sécurité.",
+                    ),
               ),
             ],
           ),
@@ -116,14 +141,26 @@ class ArmesIntroductionPage extends StatelessWidget {
 
           // Présentation générale
           _ConditionCard(
-            title: "Ce que la loi organise",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+              "f00008",
+              "Ce que la loi organise",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La réglementation répartit les armes en 4 catégories, en fonction du régime juridique applicable "
-                "(interdiction, autorisation, déclaration, liberté).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00009",
+                      "La réglementation répartit les armes en 4 catégories, en fonction du régime juridique applicable ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00010",
+                      "(interdiction, autorisation, déclaration, liberté).",
+                    ),
               ),
             ],
           ),
@@ -132,26 +169,42 @@ class ArmesIntroductionPage extends StatelessWidget {
 
           // Catégories
           _ConditionCard(
-            title: "Les 4 catégories",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+              "f00011",
+              "Les 4 catégories",
+            ),
             cardColor: cardCat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Catégorie A : matériels de guerre et armes interdits (acquisition et détention interdites).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00012",
+                  "Catégorie A : matériels de guerre et armes interdits (acquisition et détention interdites).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Catégorie B : armes soumises à autorisation (acquisition/détention sous conditions strictes).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00013",
+                  "Catégorie B : armes soumises à autorisation (acquisition/détention sous conditions strictes).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Catégorie C : armes soumises à déclaration (détention possible après déclaration).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00014",
+                  "Catégorie C : armes soumises à déclaration (détention possible après déclaration).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Catégorie D : armes et matériels dont l’acquisition et la détention sont libres (selon conditions prévues).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00015",
+                  "Catégorie D : armes et matériels dont l’acquisition et la détention sont libres (selon conditions prévues).",
+                ),
               ),
             ],
           ),
@@ -160,21 +213,53 @@ class ArmesIntroductionPage extends StatelessWidget {
 
           // Finalités de la loi
           _ConditionCard(
-            title: "Les finalités de la réglementation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+              "f00016",
+              "Les finalités de la réglementation",
+            ),
             cardColor: cardGoals,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Moderniser les procédures administratives"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00017",
+                  "1) Moderniser les procédures administratives",
+                ),
+              ),
               _Paragraph(
-                "La réglementation vise à simplifier et moderniser les démarches : "
-                "des allègements de formalités ont été mis en place pour les détenteurs légaux d’armes à feu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00018",
+                      "La réglementation vise à simplifier et moderniser les démarches : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00019",
+                      "des allègements de formalités ont été mis en place pour les détenteurs légaux d’armes à feu.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Renforcer la sécurité et préserver l’ordre public"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00020",
+                  "2) Renforcer la sécurité et préserver l’ordre public",
+                ),
+              ),
               _Paragraph(
-                "Le texte cherche à préserver une diffusion maîtrisée des armes, afin de garantir l’ordre public, "
-                "en renforçant les outils de prévention et de répression.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00021",
+                      "Le texte cherche à préserver une diffusion maîtrisée des armes, afin de garantir l’ordre public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00022",
+                      "en renforçant les outils de prévention et de répression.",
+                    ),
               ),
             ],
           ),
@@ -183,46 +268,108 @@ class ArmesIntroductionPage extends StatelessWidget {
 
           // Mesures prévues par le législateur
           _ConditionCard(
-            title: "Mesures prévues par le législateur",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+              "f00023",
+              "Mesures prévues par le législateur",
+            ),
             cardColor: cardMeasures,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Rendre obligatoires certaines peines complémentaires",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00024",
+                  "A) Rendre obligatoires certaines peines complémentaires",
+                ),
               ),
               _Paragraph(
-                "Dans le cadre de certaines infractions (atteintes à la vie, atteintes à l’intégrité physique ou psychique…), "
-                "les peines complémentaires auparavant laissées à l’appréciation du juge peuvent être rendues obligatoires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00025",
+                      "Dans le cadre de certaines infractions (atteintes à la vie, atteintes à l’intégrité physique ou psychique…), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00026",
+                      "les peines complémentaires auparavant laissées à l’appréciation du juge peuvent être rendues obligatoires.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Interdiction de détenir et de porter une arme.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00027",
+                  "Interdiction de détenir et de porter une arme.",
+                ),
               ),
-              _BulletPoint(text: "Retrait du permis de chasser."),
-              _BulletPoint(text: "Confiscation des armes."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00028",
+                  "Retrait du permis de chasser.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00029",
+                  "Confiscation des armes.",
+                ),
+              ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "B) Renforcer le volet pénal (trafic illégal d’armes)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00030",
+                  "B) Renforcer le volet pénal (trafic illégal d’armes)",
+                ),
               ),
               _Paragraph(
-                "Renforcer la répression pour mieux lutter contre les filières et le trafic illégal d’armes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00031",
+                  "Renforcer la répression pour mieux lutter contre les filières et le trafic illégal d’armes.",
+                ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "C) Créer de nouvelles mesures pour interdire l’accès aux armes",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00032",
+                  "C) Créer de nouvelles mesures pour interdire l’accès aux armes",
+                ),
               ),
               _Paragraph(
-                "L’objectif est d’empêcher l’accès aux armes aux personnes condamnées pour des infractions "
-                "révélant un comportement violent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00033",
+                      "L’objectif est d’empêcher l’accès aux armes aux personnes condamnées pour des infractions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                      "f00034",
+                      "révélant un comportement violent.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("D) Renforcer les saisies administratives"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00035",
+                  "D) Renforcer les saisies administratives",
+                ),
+              ),
               _Paragraph(
-                "Désormais, toutes les catégories d’armes peuvent faire l’objet d’une saisie administrative.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                  "f00036",
+                  "Désormais, toutes les catégories d’armes peuvent faire l’objet d’une saisie administrative.",
+                ),
               ),
               SizedBox(height: 10),
 
@@ -230,8 +377,16 @@ class ArmesIntroductionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En pratique : la logique de la loi = simplifier pour les détenteurs légitimes, "
-                        "mais durcir l’accès et les mesures contre les comportements dangereux et le trafic.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                          "f00037",
+                          "En pratique : la logique de la loi = simplifier pour les détenteurs légitimes, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_introduction_contenu_page.dart",
+                          "f00038",
+                          "mais durcir l’accès et les mesures contre les comportements dangereux et le trafic.",
+                        ),
                   ),
                 ],
               ),
@@ -489,9 +644,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

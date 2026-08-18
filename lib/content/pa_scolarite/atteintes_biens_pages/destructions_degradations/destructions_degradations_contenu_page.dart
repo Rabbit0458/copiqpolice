@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDestructionsDegradationsContenuPage extends StatelessWidget {
   const PaDestructionsDegradationsContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre les biens",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre les biens",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Les destructions, dégradations et détériorations",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00003",
+              "Les destructions, dégradations et détériorations",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles : définitions, conditions de caractérisation, "
-            "circonstances aggravantes, tentative, complicité et répression.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles : définitions, conditions de caractérisation, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+                  "f00005",
+                  "circonstances aggravantes, tentative, complicité et répression.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +88,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'dd_detention_transport_preparation',
-            title:
-                "La détention ou le transport de substances ou produits incendiaires ou explosifs en vue de la préparation de destruction, dégradation ou détérioration dangereuses ou d’une atteinte aux personnes",
-            subtitle: "Cadre légal, éléments et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00006",
+              "La détention ou le transport de substances ou produits incendiaires ou explosifs en vue de la préparation de destruction, dégradation ou détérioration dangereuses ou d’une atteinte aux personnes",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00007",
+              "Cadre légal, éléments et sanctions.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,9 +111,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'dd_detention_transport_sans_motif',
-            title:
-                "La détention ou le transport de substances ou produits incendiaires ou explosifs sans motif légitime permettant de commettre des destructions, dégradations ou détériorations dangereuses",
-            subtitle: "Conditions, preuve et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00008",
+              "La détention ou le transport de substances ou produits incendiaires ou explosifs sans motif légitime permettant de commettre des destructions, dégradations ou détériorations dangereuses",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00009",
+              "Conditions, preuve et répression.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -97,9 +134,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'dd_diffusion_procedes_engins',
-            title:
-                "La diffusion de procédés permettant la fabrication d’engins de destruction",
-            subtitle: "Qualification, éléments et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00010",
+              "La diffusion de procédés permettant la fabrication d’engins de destruction",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00011",
+              "Qualification, éléments et sanctions.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -113,9 +157,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 4 =================
           _ModuleCard(
             tag: 'dd_dangereuses_intentionnelle',
-            title:
-                "Les destructions, dégradations et détériorations dangereuses pour les personnes (infraction intentionnelle)",
-            subtitle: "Éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00012",
+              "Les destructions, dégradations et détériorations dangereuses pour les personnes (infraction intentionnelle)",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00013",
+              "Éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -129,9 +180,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 5 =================
           _ModuleCard(
             tag: 'dd_dangereuses_non_intentionnelle',
-            title:
-                "Les destructions, dégradations et détériorations dangereuses pour les personnes (infraction non intentionnelle)",
-            subtitle: "Faute, causalité et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00014",
+              "Les destructions, dégradations et détériorations dangereuses pour les personnes (infraction non intentionnelle)",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00015",
+              "Faute, causalité et sanctions.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -145,9 +203,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 6 =================
           _ModuleCard(
             tag: 'dd_sans_danger_dommage_important',
-            title:
-                "Les destructions, dégradations et détériorations ne présentant pas un danger pour les personnes et entraînant un dommage important",
-            subtitle: "Qualification et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00016",
+              "Les destructions, dégradations et détériorations ne présentant pas un danger pour les personnes et entraînant un dommage important",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00017",
+              "Qualification et répression.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -161,9 +226,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 7 =================
           _ModuleCard(
             tag: 'dd_sans_danger_dommage_leger',
-            title:
-                "Les destructions, dégradations et détériorations ne présentant pas un danger pour les personnes et entraînant un dommage léger",
-            subtitle: "Qualification et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00018",
+              "Les destructions, dégradations et détériorations ne présentant pas un danger pour les personnes et entraînant un dommage léger",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00019",
+              "Qualification et sanctions.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -177,9 +249,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 8 =================
           _ModuleCard(
             tag: 'dd_tags_inscriptions',
-            title:
-                "Les destructions, dégradations et détériorations par inscriptions, signes et dessins communément appelés tags",
-            subtitle: "Cadre légal et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00020",
+              "Les destructions, dégradations et détériorations par inscriptions, signes et dessins communément appelés tags",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00021",
+              "Cadre légal et répression.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -193,9 +272,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 9 =================
           _ModuleCard(
             tag: 'dd_biens_culturels',
-            title:
-                "Les destructions, dégradations et détériorations portant sur des biens culturels publics ou classés",
-            subtitle: "Protection renforcée et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00022",
+              "Les destructions, dégradations et détériorations portant sur des biens culturels publics ou classés",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00023",
+              "Protection renforcée et sanctions.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -209,8 +295,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 10 =================
           _ModuleCard(
             tag: 'dd_fausses_alertes',
-            title: "Les fausses alertes",
-            subtitle: "Qualification et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00024",
+              "Les fausses alertes",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00025",
+              "Qualification et répression.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -224,9 +318,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 11 =================
           _ModuleCard(
             tag: 'dd_menaces_avec_condition',
-            title:
-                "Les menaces de destruction, de dégradation ou de détérioration avec condition",
-            subtitle: "Éléments et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00026",
+              "Les menaces de destruction, de dégradation ou de détérioration avec condition",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00027",
+              "Éléments et sanctions.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -240,9 +341,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= 12 =================
           _ModuleCard(
             tag: 'dd_menaces_sans_condition',
-            title:
-                "Les menaces de destruction, de dégradation ou de détérioration sans condition",
-            subtitle: "Éléments et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00028",
+              "Les menaces de destruction, de dégradation ou de détérioration sans condition",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00029",
+              "Éléments et sanctions.",
+            ),
             imagePath: 'assets/images/destructions.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -257,9 +365,16 @@ class PaDestructionsDegradationsContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_dd',
-            title: 'Quiz — Destructions, dégradations et détériorations',
-            subtitle:
-                'Testez vos connaissances sur les qualifications et sanctions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00030",
+              'Quiz — Destructions, dégradations et détériorations',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart",
+              "f00031",
+              'Testez vos connaissances sur les qualifications et sanctions.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

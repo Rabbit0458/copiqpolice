@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PlaquesPage extends StatelessWidget {
   const PlaquesPage({super.key});
@@ -66,10 +67,18 @@ class PlaquesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class PlaquesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Plaques (constructeur, tare, immatriculation)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+              "f00003",
+              "Plaques (constructeur, tare, immatriculation)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -99,11 +112,23 @@ class PlaquesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les plaques (constructeur, tare et immatriculation) permettent l’identification du véhicule "
-                "et la vérification de sa conformité. Leur absence, leur non-conformité ou leur falsification "
-                "peut entraîner des contraventions, voire des délits.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00004",
+                      "Les plaques (constructeur, tare et immatriculation) permettent l’identification du véhicule ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00005",
+                      "et la vérification de sa conformité. Leur absence, leur non-conformité ou leur falsification ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00006",
+                      "peut entraîner des contraventions, voire des délits.",
+                    ),
               ),
             ],
           ),
@@ -112,28 +137,71 @@ class PlaquesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 317-8 à R. 317-11 du Code de la route"),
-                const TextSpan(
-                  text:
-                      " : obligations relatives aux plaques (immatriculation, plaque constructeur, plaque de tare…).",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00008",
+                    "R. 317-8 à R. 317-11 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00009",
+                    " : obligations relatives aux plaques (immatriculation, plaque constructeur, plaque de tare…).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Délits relatifs aux plaques : "),
-                _lawSpan("L. 317-2"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00010",
+                    "Délits relatifs aux plaques : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00011",
+                    "L. 317-2",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("L. 317-3"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00012",
+                    "L. 317-3",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("L. 317-4"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00013",
+                    "L. 317-4",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("L. 317-4-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00014",
+                    "L. 317-4-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -143,131 +211,253 @@ class PlaquesPage extends StatelessWidget {
 
           // Élément matériel — obligations
           _ConditionCard(
-            title: "II — Élément matériel (obligations)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+              "f00015",
+              "II — Élément matériel (obligations)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Plaque du constructeur"),
-              const _Paragraph(
-                "Tout véhicule à moteur, toute remorque ou semi-remorque agricole doit être muni d’une plaque du constructeur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00016",
+                  "A) Plaque du constructeur",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00017",
+                  "Tout véhicule à moteur, toute remorque ou semi-remorque agricole doit être muni d’une plaque du constructeur.",
+                ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Nom ou marque du constructeur."),
-              const _BulletPoint(text: "Type du véhicule."),
-              const _BulletPoint(
-                text:
-                    "Numéro d’identification du véhicule (V.I.N.) — inscrit aussi à la rubrique E du certificat d’immatriculation.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00018",
+                  "Nom ou marque du constructeur.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Informations techniques (ex. poids, niveau sonore à l’arrêt pour les motocyclettes…).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00019",
+                  "Type du véhicule.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00020",
+                  "Numéro d’identification du véhicule (V.I.N.) — inscrit aussi à la rubrique E du certificat d’immatriculation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00021",
+                  "Informations techniques (ex. poids, niveau sonore à l’arrêt pour les motocyclettes…).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le numéro V.I.N. est également frappé à froid sur un élément indémontable du véhicule, à un endroit accessible (ex. cadre moto).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00022",
+                      "Le numéro V.I.N. est également frappé à froid sur un élément indémontable du véhicule, à un endroit accessible (ex. cadre moto).",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "ASTUCE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’application EUVID (via CHEOPS NG) permet d’identifier l’emplacement de la plaque constructeur et du V.I.N. sur de nombreux modèles.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00023",
+                      "L’application EUVID (via CHEOPS NG) permet d’identifier l’emplacement de la plaque constructeur et du V.I.N. sur de nombreux modèles.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Plaque de tare (chargement / encombrement)"),
-              const _Paragraph(
-                "Obligatoire pour tout véhicule à moteur de P.T.A.C. > 3,5 t et toute remorque de P.T.A.C. > 3,5 t.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00024",
+                  "B) Plaque de tare (chargement / encombrement)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00025",
+                  "Obligatoire pour tout véhicule à moteur de P.T.A.C. > 3,5 t et toute remorque de P.T.A.C. > 3,5 t.",
+                ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Poids à vide (P.V.)."),
-              const _BulletPoint(
-                text: "Poids total autorisé en charge (P.T.A.C.).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00026",
+                  "Poids à vide (P.V.).",
+                ),
               ),
-              const _BulletPoint(
-                text: "Poids total roulant autorisé (P.T.R.A.).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00027",
+                  "Poids total autorisé en charge (P.T.A.C.).",
+                ),
               ),
-              const _BulletPoint(
-                text: "Longueur (L), largeur (l), surface (S).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00028",
+                  "Poids total roulant autorisé (P.T.R.A.).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00029",
+                  "Longueur (L), largeur (l), surface (S).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La plaque de tare doit être fixée en évidence pour un observateur placé à droite.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00030",
+                      "La plaque de tare doit être fixée en évidence pour un observateur placé à droite.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Plaque d’immatriculation (règles générales)"),
-              const _BulletPoint(
-                text:
-                    "Tout véhicule à moteur (sauf matériels de travaux publics) doit porter 1 ou 2 plaques d’immatriculation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00031",
+                  "C) Plaque d’immatriculation (règles générales)",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Remorques de PTAC > 500 kg et semi-remorques : plaque d’immatriculation obligatoire.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00032",
+                  "Tout véhicule à moteur (sauf matériels de travaux publics) doit porter 1 ou 2 plaques d’immatriculation.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Remorques de PTAC ≤ 500 kg : plaque reproduisant le numéro du véhicule tracteur (sauf cas particuliers).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00033",
+                  "Remorques de PTAC > 500 kg et semi-remorques : plaque d’immatriculation obligatoire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00034",
+                  "Remorques de PTAC ≤ 500 kg : plaque reproduisant le numéro du véhicule tracteur (sauf cas particuliers).",
+                ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Chaque plaque doit reproduire le numéro inscrit sur le certificat d’immatriculation. ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00035",
+                    "Chaque plaque doit reproduire le numéro inscrit sur le certificat d’immatriculation. ",
+                  ),
                 ),
                 _boldSpan(
-                  "Toute discordance peut faire basculer sur un délit.",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00036",
+                    "Toute discordance peut faire basculer sur un délit.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "D) Plaques “série normale” (SIV) — points visibles",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00037",
+                  "D) Plaques “série normale” (SIV) — points visibles",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Numéro au format AA-111-AA (tiret entre blocs), sur 1 ou 2 lignes.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00038",
+                  "Numéro au format AA-111-AA (tiret entre blocs), sur 1 ou 2 lignes.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Caractères noirs non rétro-réfléchissants sur fond blanc rétro-réfléchissant.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00039",
+                  "Caractères noirs non rétro-réfléchissants sur fond blanc rétro-réfléchissant.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Symbole européen + lettre F sur fond bleu rétro-réfléchissant.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00040",
+                  "Symbole européen + lettre F sur fond bleu rétro-réfléchissant.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Identifiant territorial : logo de région + numéro de département.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00041",
+                  "Identifiant territorial : logo de région + numéro de département.",
+                ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("E) Conditions de conformité"),
-              const _BulletPoint(
-                text:
-                    "Conformes aux modèles réglementaires (dimensions, caractères, couleur).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00042",
+                  "E) Conditions de conformité",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "En état d’entretien permettant la lecture (plaque lisible).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00043",
+                  "Conformes aux modèles réglementaires (dimensions, caractères, couleur).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Fixées de manière inamovible (sauf plaque de remorque reproduisant le numéro du tracteur).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00044",
+                  "En état d’entretien permettant la lecture (plaque lisible).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00045",
+                  "Fixées de manière inamovible (sauf plaque de remorque reproduisant le numéro du tracteur).",
+                ),
               ),
             ],
           ),
@@ -276,69 +466,180 @@ class PlaquesPage extends StatelessWidget {
 
           // Contraventions (infractions “matérielles”)
           _ConditionCard(
-            title: "III — Contraventions (contrôles terrain)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+              "f00046",
+              "III — Contraventions (contrôles terrain)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Plaque constructeur / tare"),
-              _Paragraph.rich([
-                _boldSpan("NATINF 22628"),
-                const TextSpan(
-                  text: " — Plaque constructeur non conforme. Base : ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00047",
+                  "A) Plaque constructeur / tare",
                 ),
-                _lawSpan("R. 317-9 du Code de la route"),
+              ),
+              _Paragraph.rich([
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00048",
+                    "NATINF 22628",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00049",
+                    " — Plaque constructeur non conforme. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00050",
+                    "R. 317-9 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 7541"),
-                const TextSpan(
-                  text:
-                      " — Véhicule/remorque PTAC > 3,5 t sans inscription conforme (poids, longueur, largeur, surface). Base : ",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00051",
+                    "NATINF 7541",
+                  ),
                 ),
-                _lawSpan("R. 317-11 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00052",
+                    " — Véhicule/remorque PTAC > 3,5 t sans inscription conforme (poids, longueur, largeur, surface). Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00053",
+                    "R. 317-11 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Plaque d’immatriculation — contraventions"),
-              _Paragraph.rich([
-                _boldSpan("NATINF 24030"),
-                const TextSpan(
-                  text: " — Plaque d’immatriculation non conforme. Base : ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00054",
+                  "B) Plaque d’immatriculation — contraventions",
                 ),
-                _lawSpan("R. 317-8 du Code de la route"),
+              ),
+              _Paragraph.rich([
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00055",
+                    "NATINF 24030",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00056",
+                    " — Plaque d’immatriculation non conforme. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00057",
+                    "R. 317-8 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 24028"),
-                const TextSpan(text: " — Plaque illisible. Base : "),
-                _lawSpan("R. 317-8 du Code de la route"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00058",
+                    "NATINF 24028",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00059",
+                    " — Plaque illisible. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00060",
+                    "R. 317-8 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 24029"),
-                const TextSpan(text: " — Plaque amovible. Base : "),
-                _lawSpan("R. 317-8 du Code de la route"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00061",
+                    "NATINF 24029",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00062",
+                    " — Plaque amovible. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00063",
+                    "R. 317-8 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 7542"),
-                const TextSpan(
-                  text:
-                      " — Véhicule/remorque non muni de plaque d’immatriculation visible (absence de plaque visible).",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00064",
+                    "NATINF 7542",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00065",
+                    " — Véhicule/remorque non muni de plaque d’immatriculation visible (absence de plaque visible).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Selon la situation, une immobilisation peut être envisagée (notamment absence de plaque visible / plaque non conforme).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00066",
+                      "Selon la situation, une immobilisation peut être envisagée (notamment absence de plaque visible / plaque non conforme).",
+                    ),
                   ),
                 ],
               ),
@@ -349,93 +650,224 @@ class PlaquesPage extends StatelessWidget {
 
           // Délits (avec élément moral)
           _ConditionCard(
-            title: "IV — Délits relatifs aux plaques",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+              "f00067",
+              "IV — Délits relatifs aux plaques",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Attention : la qualification change tout. Dès qu’il y a falsification, usurpation ou usage volontaire d’une plaque mensongère, "
-                "on n’est plus dans la simple contravention.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00068",
+                      "Attention : la qualification change tout. Dès qu’il y a falsification, usurpation ou usage volontaire d’une plaque mensongère, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                      "f00069",
+                      "on n’est plus dans la simple contravention.",
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle("A) Typologie (mémo clair)"),
-              const _BulletPoint(
-                text:
-                    "Défaut de plaque (simple) : contravention 4e classe — NATINF 7542.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00070",
+                  "A) Typologie (mémo clair)",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Usage de fausse plaque / fausse inscription : délit — NATINF 48.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00071",
+                  "Défaut de plaque (simple) : contravention 4e classe — NATINF 7542.",
+                ),
               ),
-              const _BulletPoint(text: "Plaque inexacte : délit — NATINF 45."),
-              const _BulletPoint(
-                text:
-                    "Fausse déclaration (propriétaire / identité) sur véhicule circulant sans plaque : délit — NATINF 49.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00072",
+                  "Usage de fausse plaque / fausse inscription : délit — NATINF 48.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Usurpation de plaque (numéro attribué à un autre véhicule) : délit — NATINF 25123.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00073",
+                  "Plaque inexacte : délit — NATINF 45.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00074",
+                  "Fausse déclaration (propriétaire / identité) sur véhicule circulant sans plaque : délit — NATINF 49.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00075",
+                  "Usurpation de plaque (numéro attribué à un autre véhicule) : délit — NATINF 25123.",
+                ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Base légale (à citer en procédure)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00076",
+                  "B) Base légale (à citer en procédure)",
+                ),
+              ),
               _Paragraph.rich([
-                _boldSpan("NATINF 48"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00077",
+                    "NATINF 48",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("L. 317-2 du Code de la route"),
-                const TextSpan(
-                  text: " (usage de fausse plaque / fausse inscription).",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00078",
+                    "L. 317-2 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00079",
+                    " (usage de fausse plaque / fausse inscription).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 49"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00080",
+                    "NATINF 49",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("L. 317-3 du Code de la route"),
-                const TextSpan(
-                  text:
-                      " (fausse déclaration sur propriétaire, véhicule circulant sans plaque).",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00081",
+                    "L. 317-3 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00082",
+                    " (fausse déclaration sur propriétaire, véhicule circulant sans plaque).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 45"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00083",
+                    "NATINF 45",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("L. 317-4 du Code de la route"),
-                const TextSpan(
-                  text:
-                      " (mise en circulation avec plaque / inscription inexacte).",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00084",
+                    "L. 317-4 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00085",
+                    " (mise en circulation avec plaque / inscription inexacte).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 25123"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00086",
+                    "NATINF 25123",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("L. 317-4-1 du Code de la route"),
-                const TextSpan(text: " (usurpation de plaque)."),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00087",
+                    "L. 317-4-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00088",
+                    " (usurpation de plaque).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Élément moral (intention)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00089",
+                  "C) Élément moral (intention)",
+                ),
+              ),
               _ConditionCard(
-                title: "Point clé",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00090",
+                  "Point clé",
+                ),
                 cardColor: cardMoral,
                 accent: accentPink,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _Paragraph(
-                    "Les délits impliquent une dimension volontaire : utilisation d’une plaque fausse/inexacte, "
-                    "ou usage d’un numéro attribué à un autre véhicule, typiquement avec une volonté d’induire en erreur "
-                    "ou d’échapper à des poursuites (ex. radars automatiques).",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                          "f00091",
+                          "Les délits impliquent une dimension volontaire : utilisation d’une plaque fausse/inexacte, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                          "f00092",
+                          "ou usage d’un numéro attribué à un autre véhicule, typiquement avec une volonté d’induire en erreur ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                          "f00093",
+                          "ou d’échapper à des poursuites (ex. radars automatiques).",
+                        ),
                   ),
                   SizedBox(height: 10),
                   _NotaBox(
                     bodySpans: [
                       TextSpan(
-                        text:
-                            "Important : les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal (selon ton mémento).",
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                          "f00094",
+                          "Important : les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal (selon ton mémento).",
+                        ),
                       ),
                     ],
                   ),
@@ -448,20 +880,45 @@ class PlaquesPage extends StatelessWidget {
 
           // Tentative/complicité (demande utilisateur)
           _ConditionCard(
-            title: "V — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+              "f00095",
+              "V — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _BulletPoint(
-                text:
-                    "Tentative : NON (non expressément prévue ici : les textes visent des actes consommés comme la mise en circulation / l’usage).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                  "f00096",
+                  "Tentative : NON (non expressément prévue ici : les textes visent des actes consommés comme la mise en circulation / l’usage).",
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
-                _lawSpan("l’article 121-6 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00097",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00098",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("l’article 121-7 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/plaques_page.dart",
+                    "f00099",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],

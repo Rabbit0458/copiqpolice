@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaSaisiesScellesPage extends StatelessWidget {
   const PaSaisiesScellesPage({super.key});
@@ -37,10 +38,18 @@ class PaSaisiesScellesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Saisies et scellés',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+            "f00002",
+            'Saisies et scellés',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -56,7 +65,11 @@ class PaSaisiesScellesPage extends StatelessWidget {
           // TITRE PRINCIPAL
           // ================================================================
           Text(
-            '3.4 — Les saisies et scellés',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+              "f00003",
+              '3.4 — Les saisies et scellés',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -76,38 +89,72 @@ class PaSaisiesScellesPage extends StatelessWidget {
                 height: 1.35,
                 color: textSoft,
               ),
-              children: const [
+              children: [
                 TextSpan(
-                  text:
-                      'Cadre légal des saisies et de la mise sous scellés en information judiciaire (',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00004",
+                    'Cadre légal des saisies et de la mise sous scellés en information judiciaire (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'articles 97 et 98 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00005",
+                    'articles 97 et 98 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      '), ainsi que saisie pénale des comptes bancaires et actifs numériques.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00006",
+                    '), ainsi que saisie pénale des comptes bancaires et actifs numériques.',
+                  ),
                 ),
               ],
             ),
           ),
           const SizedBox(height: 10),
 
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'Les saisies sur commission rogatoire se font sous le contrôle '
-                'du juge d’instruction et dans le respect du secret '
-                'professionnel et des droits de la défense.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00007",
+                  'Les saisies sur commission rogatoire se font sous le contrôle ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00008",
+                  'du juge d’instruction et dans le respect du secret ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00009",
+                  'professionnel et des droits de la défense.',
+                ),
           ),
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'Les scellés garantissent l’intégrité des objets, documents et '
-                'données informatiques saisis jusqu’à leur ouverture en présence '
-                'des parties.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00010",
+                  'Les scellés garantissent l’intégrité des objets, documents et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00011",
+                  'données informatiques saisis jusqu’à leur ouverture en présence ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00012",
+                  'des parties.',
+                ),
           ),
           const SizedBox(height: 20),
 
@@ -115,73 +162,152 @@ class PaSaisiesScellesPage extends StatelessWidget {
           // 3.4 — LES SAISIES ET SCELLÉS
           // ================================================================
           _ConditionCard(
-            title: '3.4 — Les saisies et scellés',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+              "f00013",
+              '3.4 — Les saisies et scellés',
+            ),
             cardColor: cardBlue,
             accent: cardBlueAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               // L’article 97 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text: 'L’article 97 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00014",
+                    'L’article 97 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' fixe les règles à respecter par le juge d’instruction, ou par l’officier de police judiciaire délégué, pour assurer la légalité des saisies réalisées au cours de l’information judiciaire.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00015",
+                    ' fixe les règles à respecter par le juge d’instruction, ou par l’officier de police judiciaire délégué, pour assurer la légalité des saisies réalisées au cours de l’information judiciaire.',
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
 
               _Paragraph(
-                'Lorsque, au cours de l’information, il y a lieu de rechercher '
-                'des documents ou des données informatiques, le juge '
-                'd’instruction ou l’officier de police judiciaire commis par lui '
-                'est seul habilité, sous réserve des nécessités de l’information '
-                'et du respect du secret professionnel et des droits de la '
-                'défense, à en prendre connaissance avant de procéder à la '
-                'saisie.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00016",
+                      'Lorsque, au cours de l’information, il y a lieu de rechercher ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00017",
+                      'des documents ou des données informatiques, le juge ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00018",
+                      'd’instruction ou l’officier de police judiciaire commis par lui ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00019",
+                      'est seul habilité, sous réserve des nécessités de l’information ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00020",
+                      'et du respect du secret professionnel et des droits de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00021",
+                      'défense, à en prendre connaissance avant de procéder à la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00022",
+                      'saisie.',
+                    ),
               ),
               SizedBox(height: 10),
 
               // L’article 98 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text: 'L’article 98 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00023",
+                    'L’article 98 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' incrimine, sous réserve des nécessités de l’information judiciaire, toute communication ou divulgation, sans autorisation, du contenu d’un document saisi (par exemple lors d’une perquisition) à une personne qui n’est pas légalement qualifiée pour en prendre connaissance.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00024",
+                    ' incrimine, sous réserve des nécessités de l’information judiciaire, toute communication ou divulgation, sans autorisation, du contenu d’un document saisi (par exemple lors d’une perquisition) à une personne qui n’est pas légalement qualifiée pour en prendre connaissance.',
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
               _Paragraph(
-                'L’appréciation des nécessités de l’information relève du juge '
-                'd’instruction. En pratique, l’officier de police judiciaire '
-                'sollicite donc son autorisation si la présence d’un tiers sur '
-                'les lieux de la perquisition, ou la communication d’un document '
-                'saisi, apparaît nécessaire à la conduite de l’enquête.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00025",
+                      'L’appréciation des nécessités de l’information relève du juge ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00026",
+                      'd’instruction. En pratique, l’officier de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00027",
+                      'sollicite donc son autorisation si la présence d’un tiers sur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00028",
+                      'les lieux de la perquisition, ou la communication d’un document ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00029",
+                      'saisi, apparaît nécessaire à la conduite de l’enquête.',
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle('Inventaire et mise sous scellés'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00030",
+                  'Inventaire et mise sous scellés',
+                ),
+              ),
 
               // article 97 al. 2 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les objets, documents ou données informatiques saisis sont inventoriés immédiatement et placés sous scellés (',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00031",
+                    'Les objets, documents ou données informatiques saisis sont inventoriés immédiatement et placés sous scellés (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 97 alinéa 2 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00032",
+                    'article 97 alinéa 2 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -194,33 +320,56 @@ class PaSaisiesScellesPage extends StatelessWidget {
               // article 56 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Lorsque l’inventaire sur place présente des difficultés, l’officier de police judiciaire peut constituer des scellés fermés provisoires, conformément au renvoi à ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00033",
+                    'Lorsque l’inventaire sur place présente des difficultés, l’officier de police judiciaire peut constituer des scellés fermés provisoires, conformément au renvoi à ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 56',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00034",
+                    'l’article 56',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' : l’inventaire détaillé et la mise sous scellés définitifs interviennent ultérieurement, en présence des personnes qui ont participé à la perquisition.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00035",
+                    ' : l’inventaire détaillé et la mise sous scellés définitifs interviennent ultérieurement, en présence des personnes qui ont participé à la perquisition.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle('Saisie des données informatiques'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                  "f00036",
+                  'Saisie des données informatiques',
+                ),
+              ),
 
               // article 97 al. 3 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'La saisie des données informatiques nécessaires à la manifestation de la vérité peut être réalisée en plaçant sous main de justice soit le support physique contenant ces données, soit une copie effectuée en présence des personnes assistant à la perquisition (',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00037",
+                    'La saisie des données informatiques nécessaires à la manifestation de la vérité peut être réalisée en plaçant sous main de justice soit le support physique contenant ces données, soit une copie effectuée en présence des personnes assistant à la perquisition (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 97 alinéa 3 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00038",
+                    'article 97 alinéa 3 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -233,11 +382,18 @@ class PaSaisiesScellesPage extends StatelessWidget {
               // article 97 al. 4 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Si une copie est réalisée, le juge d’instruction peut ordonner l’effacement définitif, sur le support resté hors de la main de justice, des données dont la détention ou l’usage est illégal ou dangereux pour la sécurité des personnes ou des biens (',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00039",
+                    'Si une copie est réalisée, le juge d’instruction peut ordonner l’effacement définitif, sur le support resté hors de la main de justice, des données dont la détention ou l’usage est illégal ou dangereux pour la sécurité des personnes ou des biens (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 97 alinéa 4 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00040",
+                    'article 97 alinéa 4 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -250,11 +406,18 @@ class PaSaisiesScellesPage extends StatelessWidget {
               // article 131-21 + 97 al. 5 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Avec l’accord du juge d’instruction, seules sont maintenues par l’officier de police judiciaire la saisie des objets, documents et données informatiques utiles à la manifestation de la vérité ainsi que des biens dont la confiscation est prévue à ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00041",
+                    'Avec l’accord du juge d’instruction, seules sont maintenues par l’officier de police judiciaire la saisie des objets, documents et données informatiques utiles à la manifestation de la vérité ainsi que des biens dont la confiscation est prévue à ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 131-21 du Code pénal',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00042",
+                    'l’article 131-21 du Code pénal',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -262,7 +425,11 @@ class PaSaisiesScellesPage extends StatelessWidget {
                 ),
                 TextSpan(text: ' ('),
                 TextSpan(
-                  text: 'article 97 alinéa 5 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00043",
+                    'article 97 alinéa 5 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -275,11 +442,18 @@ class PaSaisiesScellesPage extends StatelessWidget {
               // article 97 al. 6 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les scellés fermés ne peuvent être ouverts, et les documents qu’ils contiennent ne peuvent être dépouillés, qu’en présence de la personne mise en examen assistée de son avocat, ou après que ceux-ci ont été dûment appelés (',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00044",
+                    'Les scellés fermés ne peuvent être ouverts, et les documents qu’ils contiennent ne peuvent être dépouillés, qu’en présence de la personne mise en examen assistée de son avocat, ou après que ceux-ci ont été dûment appelés (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 97 alinéa 6 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00045",
+                    'article 97 alinéa 6 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -293,11 +467,18 @@ class PaSaisiesScellesPage extends StatelessWidget {
                 title: 'NOTA',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'La violation du secret de l’information (divulgation d’un document saisi sans autorisation) expose son auteur à des poursuites délictuelles sur le fondement de ',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00046",
+                      'La violation du secret de l’information (divulgation d’un document saisi sans autorisation) expose son auteur à des poursuites délictuelles sur le fondement de ',
+                    ),
                   ),
                   TextSpan(
-                    text: 'l’article 98 du Code de procédure pénale.',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00047",
+                      'l’article 98 du Code de procédure pénale.',
+                    ),
                     style: TextStyle(
                       color: Colors.red,
                       fontWeight: FontWeight.w700,
@@ -313,19 +494,30 @@ class PaSaisiesScellesPage extends StatelessWidget {
           // 3.5 — SAISIE PÉNALE DES COMPTES BANCAIRES
           // ================================================================
           _ConditionCard(
-            title: '3.5 — La saisie pénale des comptes bancaires',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+              "f00048",
+              '3.5 — La saisie pénale des comptes bancaires',
+            ),
             cardColor: cardIndigo,
             accent: cardIndigoAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF311B92),
-            children: const [
+            children: [
               // article L. 54-10-1 en rouge
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Dans le cadre d’une procédure de confiscation portant sur des biens ou droits mobiliers incorporels, lorsque la peine de confiscation est prévue par les textes, ou dans le cadre de crimes et délits punis d’une peine d’emprisonnement supérieure à un an, l’officier de police judiciaire peut procéder à la saisie des sommes inscrites sur un compte bancaire, ainsi que des actifs numériques (jetons, crypto-actifs) mentionnés à ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00049",
+                    'Dans le cadre d’une procédure de confiscation portant sur des biens ou droits mobiliers incorporels, lorsque la peine de confiscation est prévue par les textes, ou dans le cadre de crimes et délits punis d’une peine d’emprisonnement supérieure à un an, l’officier de police judiciaire peut procéder à la saisie des sommes inscrites sur un compte bancaire, ainsi que des actifs numériques (jetons, crypto-actifs) mentionnés à ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article L. 54-10-1 du Code monétaire et financier.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                    "f00050",
+                    'l’article L. 54-10-1 du Code monétaire et financier.',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -335,18 +527,50 @@ class PaSaisiesScellesPage extends StatelessWidget {
               SizedBox(height: 10),
 
               _Paragraph(
-                'Cette saisie est réalisée sur la base d’une autorisation donnée '
-                'par tout moyen par le juge d’instruction. L’officier de police '
-                'judiciaire agit donc toujours dans le cadre strict fixé par le '
-                'magistrat instructeur.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00051",
+                      'Cette saisie est réalisée sur la base d’une autorisation donnée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00052",
+                      'par tout moyen par le juge d’instruction. L’officier de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00053",
+                      'judiciaire agit donc toujours dans le cadre strict fixé par le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00054",
+                      'magistrat instructeur.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph(
-                'Le juge des libertés et de la détention, saisi par le juge '
-                'd’instruction, se prononce par ordonnance motivée sur le '
-                'maintien ou la mainlevée de la saisie dans un délai de dix jours '
-                'à compter de sa réalisation.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00055",
+                      'Le juge des libertés et de la détention, saisi par le juge ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00056",
+                      'd’instruction, se prononce par ordonnance motivée sur le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00057",
+                      'maintien ou la mainlevée de la saisie dans un délai de dix jours ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart",
+                      "f00058",
+                      'à compter de sa réalisation.',
+                    ),
               ),
             ],
           ),

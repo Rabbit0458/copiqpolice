@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CompteRenduOPJPage extends StatelessWidget {
   const CompteRenduOPJPage({super.key});
@@ -50,7 +51,11 @@ class CompteRenduOPJPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Interpellation",
@@ -68,7 +73,11 @@ class CompteRenduOPJPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas — Compte-rendu à l’OPJ",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+              "f00002",
+              "Canevas — Compte-rendu à l’OPJ",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,24 +93,45 @@ class CompteRenduOPJPage extends StatelessWidget {
             cardColor: cardCanva,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas permet de faire un compte-rendu clair et complet à l’OPJ après une intervention : "
-                "qui intervient, pourquoi, où/quand, ce qui s’est passé, les mesures prises, et les éléments utiles "
-                "pour l’enquête (mis en cause, victimes, témoins, objets, fichiers consultés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00003",
+                      "Ce canevas permet de faire un compte-rendu clair et complet à l’OPJ après une intervention : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00004",
+                      "qui intervient, pourquoi, où/quand, ce qui s’est passé, les mesures prises, et les éléments utiles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00005",
+                      "pour l’enquête (mis en cause, victimes, témoins, objets, fichiers consultés).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Écrire chronologiquement, de façon factuelle et vérifiable (heures, lieux, identités, actions).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00006",
+                  "Écrire chronologiquement, de façon factuelle et vérifiable (heures, lieux, identités, actions).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Distinguer : origine → motif (cadre légal) → récit → suites/mesures → éléments d’enquête.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00007",
+                  "Distinguer : origine → motif (cadre légal) → récit → suites/mesures → éléments d’enquête.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Toujours préciser ce qui est constaté, ce qui est déclaré, et par qui.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00008",
+                  "Toujours préciser ce qui est constaté, ce qui est déclaré, et par qui.",
+                ),
               ),
             ],
           ),
@@ -110,31 +140,55 @@ class CompteRenduOPJPage extends StatelessWidget {
 
           // Cadre légal (si tu veux ajouter des articles plus tard, ils seront en rouge)
           _ConditionCard(
-            title: "I — Cadre légal (rappel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+              "f00009",
+              "I — Cadre légal (rappel)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le compte-rendu doit situer l’intervention dans un cadre légal clair (flagrant délit, contrôle "
-                "d’identité, exécution d’un mandat, situation d’un étranger, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00010",
+                      "Le compte-rendu doit situer l’intervention dans un cadre légal clair (flagrant délit, contrôle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00011",
+                      "d’identité, exécution d’un mandat, situation d’un étranger, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Quand un article de loi doit être cité, écris-le sous la forme : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00012",
+                      "Quand un article de loi doit être cité, écris-le sous la forme : ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "« Article XXX du Code de procédure pénale » / « Article XXX du Code pénal »",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00013",
+                      "« Article XXX du Code de procédure pénale » / « Article XXX du Code pénal »",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " (toujours en rouge)."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00014",
+                      " (toujours en rouge).",
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -144,27 +198,113 @@ class CompteRenduOPJPage extends StatelessWidget {
 
           // Structure
           _ConditionCard(
-            title: "II — Structure du compte-rendu (plan)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+              "f00015",
+              "II — Structure du compte-rendu (plan)",
+            ),
             cardColor: cardGuide,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("À faire apparaître dans cet ordre"),
-              _BulletPoint(text: "1) Agents intervenants"),
-              _BulletPoint(text: "2) Origine de l’intervention"),
-              _BulletPoint(text: "3) Date / heure / lieu d’intervention"),
-              _BulletPoint(text: "4) Motif d’intervention (cadre légal)"),
-              _BulletPoint(text: "5) Récit des faits"),
-              _BulletPoint(
-                text: "6) Conditions d’interpellation / conduite au poste",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00016",
+                  "À faire apparaître dans cet ordre",
+                ),
               ),
-              _BulletPoint(text: "7) Mis en cause"),
-              _BulletPoint(text: "8) Victime(s)"),
-              _BulletPoint(text: "9) Témoin(s)"),
-              _BulletPoint(text: "10) Préjudice matériel estimé"),
-              _BulletPoint(text: "11) Objet(s) appréhendé(s)"),
-              _BulletPoint(text: "12) Autre(s) mesure(s) prise(s)"),
-              _BulletPoint(text: "13) Recherches fichiers"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00017",
+                  "1) Agents intervenants",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00018",
+                  "2) Origine de l’intervention",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00019",
+                  "3) Date / heure / lieu d’intervention",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00020",
+                  "4) Motif d’intervention (cadre légal)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00021",
+                  "5) Récit des faits",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00022",
+                  "6) Conditions d’interpellation / conduite au poste",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00023",
+                  "7) Mis en cause",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00024",
+                  "8) Victime(s)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00025",
+                  "9) Témoin(s)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00026",
+                  "10) Préjudice matériel estimé",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00027",
+                  "11) Objet(s) appréhendé(s)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00028",
+                  "12) Autre(s) mesure(s) prise(s)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00029",
+                  "13) Recherches fichiers",
+                ),
+              ),
             ],
           ),
 
@@ -172,109 +312,341 @@ class CompteRenduOPJPage extends StatelessWidget {
 
           // Canevas détaillé
           _ConditionCard(
-            title: "III — Canevas détaillé (à recopier / adapter)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+              "f00030",
+              "III — Canevas détaillé (à recopier / adapter)",
+            ),
             cardColor: cardSteps,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Agents intervenants"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00031",
+                  "1) Agents intervenants",
+                ),
+              ),
               _Paragraph(
-                "Unité d’affectation, composition de l’équipage (grade, nom, prénom) et tenue des agents "
-                "(tous en uniforme ou tenue bourgeoise avec port du brassard police).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00032",
+                      "Unité d’affectation, composition de l’équipage (grade, nom, prénom) et tenue des agents ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00033",
+                      "(tous en uniforme ou tenue bourgeoise avec port du brassard police).",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("2) Origine de l’intervention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00034",
+                  "2) Origine de l’intervention",
+                ),
+              ),
               _Paragraph(
-                "Préciser l’origine :\n"
-                "• Initiative (flagrance en patrouille, contrôle routier, contrôle d’identité…)\n"
-                "• Réquisition particulier (victime ou témoin)\n"
-                "• Appel C.I.C. (intervention signalée par radio)\n"
-                "• Instructions (mission ordonnée : contrôle débit de boissons, recherche et interpellation, "
-                "réquisition / instructions du procureur : alcoolémie / STUP / contrôle d’identité…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00035",
+                      "Préciser l’origine :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00036",
+                      "• Initiative (flagrance en patrouille, contrôle routier, contrôle d’identité…)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00037",
+                      "• Réquisition particulier (victime ou témoin)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00038",
+                      "• Appel C.I.C. (intervention signalée par radio)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00039",
+                      "• Instructions (mission ordonnée : contrôle débit de boissons, recherche et interpellation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00040",
+                      "réquisition / instructions du procureur : alcoolémie / STUP / contrôle d’identité…).",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("3) Date / heure / lieu d’intervention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00041",
+                  "3) Date / heure / lieu d’intervention",
+                ),
+              ),
               _Paragraph(
-                "Indiquer précisément : date, heure de début, lieu (adresse / secteur).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00042",
+                  "Indiquer précisément : date, heure de début, lieu (adresse / secteur).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("4) Motif d’intervention (cadre légal)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00043",
+                  "4) Motif d’intervention (cadre légal)",
+                ),
+              ),
               _Paragraph(
-                "Expliquer clairement pourquoi l’OPJ doit être informé : interpellation / conduite au poste "
-                "(flagrant délit, contrôle d’identité, exécution d’un mandat, situation étranger…), "
-                "ou toute autre intervention (ex : découverte de cadavre…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00044",
+                      "Expliquer clairement pourquoi l’OPJ doit être informé : interpellation / conduite au poste ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00045",
+                      "(flagrant délit, contrôle d’identité, exécution d’un mandat, situation étranger…), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00046",
+                      "ou toute autre intervention (ex : découverte de cadavre…).",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("5) Récit des faits"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00047",
+                  "5) Récit des faits",
+                ),
+              ),
               _Paragraph(
-                "Relater fidèlement les faits constatés et l’action des policiers.\n"
-                "Préciser le comportement et le rôle de chacun des mis en cause.\n"
-                "Indiquer l’heure et le lieu exacts d’interpellation si différents du début d’intervention.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00048",
+                      "Relater fidèlement les faits constatés et l’action des policiers.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00049",
+                      "Préciser le comportement et le rôle de chacun des mis en cause.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00050",
+                      "Indiquer l’heure et le lieu exacts d’interpellation si différents du début d’intervention.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("6) Conditions d’interpellation / conduite au poste"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00051",
+                  "6) Conditions d’interpellation / conduite au poste",
+                ),
+              ),
               _Paragraph(
-                "Motif justifiant le menottage (dangereux pour lui-même / autrui, ou susceptible de prendre la fuite).\n"
-                "Actes de résistance et moyens de coercition utilisés.\n"
-                "Description des blessures éventuelles (liées à l’interpellation ou pré-existantes).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00052",
+                      "Motif justifiant le menottage (dangereux pour lui-même / autrui, ou susceptible de prendre la fuite).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00053",
+                      "Actes de résistance et moyens de coercition utilisés.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00054",
+                      "Description des blessures éventuelles (liées à l’interpellation ou pré-existantes).",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("7) Mis en cause"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00055",
+                  "7) Mis en cause",
+                ),
+              ),
               _Paragraph(
-                "Nombre de mis en cause.\n"
-                "Identités contrôlées (C.N.I., passeport…), déclarées ou non communiquées.\n"
-                "Mineur(s) / majeur(s).\n"
-                "Éléments particuliers : comportement (ivresse…), qualité connue/déclarée (majeur protégé, personnalité locale…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00056",
+                      "Nombre de mis en cause.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00057",
+                      "Identités contrôlées (C.N.I., passeport…), déclarées ou non communiquées.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00058",
+                      "Mineur(s) / majeur(s).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00059",
+                      "Éléments particuliers : comportement (ivresse…), qualité connue/déclarée (majeur protégé, personnalité locale…).",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("8) Victime(s)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00060",
+                  "8) Victime(s)",
+                ),
+              ),
               _Paragraph(
-                "Nombre, identité(s), qualité(s) si nécessaire (PDAP, personne vulnérable, personnalité locale…).\n"
-                "Nature et gravité des blessures.\n"
-                "Lieu d’hospitalisation le cas échéant.\n"
-                "Intention de déposer plainte.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00061",
+                      "Nombre, identité(s), qualité(s) si nécessaire (PDAP, personne vulnérable, personnalité locale…).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00062",
+                      "Nature et gravité des blessures.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00063",
+                      "Lieu d’hospitalisation le cas échéant.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00064",
+                      "Intention de déposer plainte.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("9) Témoin(s)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00065",
+                  "9) Témoin(s)",
+                ),
+              ),
               _Paragraph(
-                "Identité des témoins présents.\n"
-                "Ce qu’ils peuvent apporter : signalement(s), déroulement, rôle de chacun, éléments orientant les recherches.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00066",
+                      "Identité des témoins présents.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00067",
+                      "Ce qu’ils peuvent apporter : signalement(s), déroulement, rôle de chacun, éléments orientant les recherches.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("10) Préjudice matériel estimé"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00068",
+                  "10) Préjudice matériel estimé",
+                ),
+              ),
               _Paragraph(
-                "Nature et gravité des dégâts.\n"
-                "Montant estimé.\n"
-                "Objets dérobés : nature, nombre, valeur déclarée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00069",
+                      "Nature et gravité des dégâts.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00070",
+                      "Montant estimé.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00071",
+                      "Objets dérobés : nature, nombre, valeur déclarée.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("11) Objet(s) appréhendé(s)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00072",
+                  "11) Objet(s) appréhendé(s)",
+                ),
+              ),
               _Paragraph(
-                "Objets utiles à l’enquête : découverts sur les lieux, en possession du mis en cause "
-                "au moment de l’interpellation (ex : sac contenant objets dérobés), "
-                "ou découverts lors de la palpation (ex : arme, pied-de-biche…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00073",
+                      "Objets utiles à l’enquête : découverts sur les lieux, en possession du mis en cause ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00074",
+                      "au moment de l’interpellation (ex : sac contenant objets dérobés), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00075",
+                      "ou découverts lors de la palpation (ex : arme, pied-de-biche…).",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("12) Autre(s) mesure(s) prise(s)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00076",
+                  "12) Autre(s) mesure(s) prise(s)",
+                ),
+              ),
               _Paragraph(
-                "Exemples : destination véhicule volé, immobilisation du véhicule, rétention du permis, "
-                "sécurisation des lieux par un autre équipage, préservation des traces et indices…",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00077",
+                      "Exemples : destination véhicule volé, immobilisation du véhicule, rétention du permis, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                      "f00078",
+                      "sécurisation des lieux par un autre équipage, préservation des traces et indices…",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("13) Recherches fichiers"),
-              _Paragraph("Préciser les fichiers consultés et le résultat."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00079",
+                  "13) Recherches fichiers",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00080",
+                  "Préciser les fichiers consultés et le résultat.",
+                ),
+              ),
             ],
           ),
 
@@ -282,18 +654,30 @@ class CompteRenduOPJPage extends StatelessWidget {
 
           // Canva
           _ConditionCard(
-            title: "CANVA — Modèle (zoom)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+              "f00081",
+              "CANVA — Modèle (zoom)",
+            ),
             cardColor: cardCanva,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuyez sur l’image pour l’ouvrir en plein écran et zoomer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00082",
+                  "Appuyez sur l’image pour l’ouvrir en plein écran et zoomer.",
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/compte_rendu_opj.png',
-                label: 'Compte-rendu OPJ',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                  "f00083",
+                  'Compte-rendu OPJ',
+                ),
               ),
             ],
           ),
@@ -549,9 +933,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -645,7 +1027,11 @@ class _ZoomableAssetImage extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        "Plein écran",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/compte_rendu_opj_page.dart",
+                          "f00085",
+                          "Plein écran",
+                        ),
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w800,
                           fontSize: 12.5,

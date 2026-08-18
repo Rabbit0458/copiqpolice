@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPatrouillePatrouillePage extends StatelessWidget {
   const PaPatrouillePatrouillePage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/policier_intervention/patrouille/patrouille';
+  static const String routeName =
+      '/pa/dps_dpg/policier_intervention/patrouille/patrouille';
 
   static const Color _lawRed = Color(0xFFE53935);
 
@@ -55,7 +57,11 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -73,7 +79,11 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La patrouille",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00002",
+              "La patrouille",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,25 +95,52 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
 
           // ✅ Cadre (en haut) — pas d’article fourni dans ton cours, donc pas d’invention
           _ConditionCard(
-            title: "Cadre & idée clé",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00003",
+              "Cadre & idée clé",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La patrouille est l’activité la plus fréquente et l’une des plus importantes exercées "
-                "par les gardiens de la paix assistés des policiers adjoints.\n\n"
-                "Elle vise la surveillance générale de la voie publique, l’assistance aux personnes, "
-                "le maintien de l’ordre et la tranquillité/salubrité publiques. "
-                "C’est le domaine où le policier a le plus de responsabilités et d’initiative.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00004",
+                      "La patrouille est l’activité la plus fréquente et l’une des plus importantes exercées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00005",
+                      "par les gardiens de la paix assistés des policiers adjoints.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00006",
+                      "Elle vise la surveillance générale de la voie publique, l’assistance aux personnes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00007",
+                      "le maintien de l’ordre et la tranquillité/salubrité publiques. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00008",
+                      "C’est le domaine où le policier a le plus de responsabilités et d’initiative.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "RAPPEL",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La patrouille n’est pas une “promenade” : elle représente une image directe de la Police pour le public.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00009",
+                      "La patrouille n’est pas une “promenade” : elle représente une image directe de la Police pour le public.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -115,41 +152,76 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
 
           // I — Buts
           _ConditionCard(
-            title: "I — Les buts de la patrouille",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00010",
+              "I — Les buts de la patrouille",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Effectuer correctement une patrouille signifie qu’à son issue, un double rôle a été rempli.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00011",
+                  "Effectuer correctement une patrouille signifie qu’à son issue, un double rôle a été rempli.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("A) ÊTRE VU"),
-              _BulletPoint(
-                text:
-                    "Dissuasion & prévention : objectifs primordiaux de la patrouille.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00012",
+                  "A) ÊTRE VU",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présence et passage à faible allure : dissuadent, rassurent et protègent les usagers.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00013",
+                  "Dissuasion & prévention : objectifs primordiaux de la patrouille.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00014",
+                  "Présence et passage à faible allure : dissuadent, rassurent et protègent les usagers.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) VOIR ET AGIR"),
-              _BulletPoint(
-                text:
-                    "Repérer tout ce qui trouble l’ordre public (de l’embarras de circulation au flagrant délit).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00015",
+                  "B) VOIR ET AGIR",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Intervenir pour faire cesser les troubles, renseigner le public, faciliter la circulation piétons/véhicules.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00016",
+                  "Repérer tout ce qui trouble l’ordre public (de l’embarras de circulation au flagrant délit).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00017",
+                  "Intervenir pour faire cesser les troubles, renseigner le public, faciliter la circulation piétons/véhicules.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 title: "RADIO",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La patrouille doit toujours disposer d’un moyen radio. Toute intervention est annoncée (localisation précise + motif).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00018",
+                      "La patrouille doit toujours disposer d’un moyen radio. Toute intervention est annoncée (localisation précise + motif).",
+                    ),
                   ),
                 ],
               ),
@@ -160,82 +232,170 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
 
           // II — Formes
           _ConditionCard(
-            title: "II — Les différentes formes de patrouille",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00019",
+              "II — Les différentes formes de patrouille",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La patrouille peut être réalisée selon plusieurs modalités : à pied, en deux-roues (cyclomoteur, moto, VTT), "
-                "ou en automobile/fourgon.\n\n"
-                "L’efficacité n’est pas liée au nombre de kilomètres parcourus : elle dépend du comportement de surveillance "
-                "et de prévention (ralentir, s’arrêter, observer, intervenir).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00020",
+                      "La patrouille peut être réalisée selon plusieurs modalités : à pied, en deux-roues (cyclomoteur, moto, VTT), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00021",
+                      "ou en automobile/fourgon.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00022",
+                      "L’efficacité n’est pas liée au nombre de kilomètres parcourus : elle dépend du comportement de surveillance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00023",
+                      "et de prévention (ralentir, s’arrêter, observer, intervenir).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Patrouille à pied"),
-              _BulletPoint(
-                text:
-                    "Généralement 2 à 3 fonctionnaires en tenue, itinéraire défini ou adapté selon le contexte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00024",
+                  "A) Patrouille à pied",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Avant départ : tenue adaptée + armement et moyens matériels (gilet pare-balles, radio…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00025",
+                  "Généralement 2 à 3 fonctionnaires en tenue, itinéraire défini ou adapté selon le contexte.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Principe : ne pas progresser groupés (alignements/hauteurs différentes).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00026",
+                  "Avant départ : tenue adaptée + armement et moyens matériels (gilet pare-balles, radio…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00027",
+                  "Principe : ne pas progresser groupés (alignements/hauteurs différentes).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "QUARTIERS SENSIBLES",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00028",
+                  "QUARTIERS SENSIBLES",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Rester vigilant, observer les zones de danger potentiel et garder une distance suffisante pour :\n",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00029",
+                      "Rester vigilant, observer les zones de danger potentiel et garder une distance suffisante pour :\n",
+                    ),
                   ),
-                  TextSpan(text: "• se protéger des jets de projectiles\n"),
                   TextSpan(
-                    text:
-                        "• détecter des individus en position haute (prise à partie / alerte)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00030",
+                      "• se protéger des jets de projectiles\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00031",
+                      "• détecter des individus en position haute (prise à partie / alerte)",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _BulletPoint(
-                text:
-                    "Surveiller les “points hauts” (étages, fenêtres, toits, halls, coursives, passerelles, buttes…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00032",
+                  "Surveiller les “points hauts” (étages, fenêtres, toits, halls, coursives, passerelles, buttes…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garder du recul par rapport aux immeubles pour augmenter la distance de sécurité et élargir l’angle d’observation.",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("B) Patrouille en deux-roues"),
-              _BulletPoint(
-                text:
-                    "Adaptée au trafic urbain et à la surveillance de secteurs étendus grâce à la mobilité.",
-              ),
-              _BulletPoint(
-                text:
-                    "Limite : l’attention de conduite réduit la capacité d’observation fine de l’environnement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00033",
+                  "Garder du recul par rapport aux immeubles pour augmenter la distance de sécurité et élargir l’angle d’observation.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Patrouille automobile"),
-              _BulletPoint(
-                text:
-                    "Couvre de grandes distances et permet de rester en contact permanent avec le CIC.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00034",
+                  "B) Patrouille en deux-roues",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le commandement est assuré par un gradé ou le plus ancien ; il embarque le matériel de protection/intervention nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00035",
+                  "Adaptée au trafic urbain et à la surveillance de secteurs étendus grâce à la mobilité.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00036",
+                  "Limite : l’attention de conduite réduit la capacité d’observation fine de l’environnement.",
+                ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00037",
+                  "C) Patrouille automobile",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00038",
+                  "Couvre de grandes distances et permet de rester en contact permanent avec le CIC.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00039",
+                  "Le commandement est assuré par un gradé ou le plus ancien ; il embarque le matériel de protection/intervention nécessaire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "SÉCURITÉ MATÉRIEL",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00040",
+                  "SÉCURITÉ MATÉRIEL",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le matériel doit être rangé avec rigueur : certains objets peuvent devenir des projectiles en cas de freinage brusque (radio, équipements de protection, LBD, etc.).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00041",
+                      "Le matériel doit être rangé avec rigueur : certains objets peuvent devenir des projectiles en cas de freinage brusque (radio, équipements de protection, LBD, etc.).",
+                    ),
                   ),
                 ],
               ),
@@ -246,44 +406,74 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
 
           // Focus quartiers sensibles en véhicule
           _ConditionCard(
-            title: "Conduite en quartiers sensibles (automobile)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00042",
+              "Conduite en quartiers sensibles (automobile)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Ne s’engager que sur des itinéraires connus ; détour possible pour éviter une zone à risques (dalles, passerelles, impasses…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00043",
+                  "Ne s’engager que sur des itinéraires connus ; détour possible pour éviter une zone à risques (dalles, passerelles, impasses…).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Stationner à distance du lieu direct de l’intervention ; garder une échappatoire avant ou arrière.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00044",
+                  "Stationner à distance du lieu direct de l’intervention ; garder une échappatoire avant ou arrière.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "À l’arrêt : chauffeur debout à côté du véhicule, radio en main (surveillance + demande de renfort si besoin).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00045",
+                  "À l’arrêt : chauffeur debout à côté du véhicule, radio en main (surveillance + demande de renfort si besoin).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Ne pas laisser le véhicule sans surveillance (sauf force majeure) : retirer les clés, fermer portières et coffres.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00046",
+                  "Ne pas laisser le véhicule sans surveillance (sauf force majeure) : retirer les clés, fermer portières et coffres.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "DÉGAGEMENT",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00047",
+                  "DÉGAGEMENT",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En situation dangereuse difficilement gérable : le véhicule est un moyen de dégagement d’urgence. Pour jets de projectiles, la carrosserie peut servir d’abri temporaire (en restant à l’extérieur). Dès que l’embarquement est possible : se soustraire immédiatement.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00048",
+                      "En situation dangereuse difficilement gérable : le véhicule est un moyen de dégagement d’urgence. Pour jets de projectiles, la carrosserie peut servir d’abri temporaire (en restant à l’extérieur). Dès que l’embarquement est possible : se soustraire immédiatement.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "ARME À FEU",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00049",
+                  "ARME À FEU",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En cas de tir sur des policiers, seul le bloc moteur du véhicule offre une protection efficace.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00050",
+                      "En cas de tir sur des policiers, seul le bloc moteur du véhicule offre une protection efficace.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -295,33 +485,70 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
 
           // III — Moyens
           _ConditionCard(
-            title: "III — Les moyens de la patrouille",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00051",
+              "III — Les moyens de la patrouille",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’action du policier doit s’effectuer en sécurité. Le chef de service fixe les moyens matériels "
-                "mis à disposition des équipages.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00052",
+                      "L’action du policier doit s’effectuer en sécurité. Le chef de service fixe les moyens matériels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00053",
+                      "mis à disposition des équipages.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Catégories de moyens"),
-              _BulletPoint(
-                text:
-                    "Moyens de protection : signalisation, éclairage, vêtements rétro-réfléchissants…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00054",
+                  "Catégories de moyens",
+                ),
               ),
-              _BulletPoint(text: "Moyens de liaisons : radio."),
               _BulletPoint(
-                text:
-                    "Moyens de riposte : armes collectives, armes individuelles, lacrymogènes…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00055",
+                  "Moyens de protection : signalisation, éclairage, vêtements rétro-réfléchissants…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00056",
+                  "Moyens de liaisons : radio.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00057",
+                  "Moyens de riposte : armes collectives, armes individuelles, lacrymogènes…",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "AVANT DÉPART",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00058",
+                  "AVANT DÉPART",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Vérifier le bon état et le bon fonctionnement du matériel emporté.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00059",
+                      "Vérifier le bon état et le bon fonctionnement du matériel emporté.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -333,29 +560,64 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
 
           // IV — Principes
           _ConditionCard(
-            title: "IV — Les principes essentiels",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00060",
+              "IV — Les principes essentiels",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Liaison radio constante (CIC)"),
-              _BulletPoint(text: "Essai radio avant l’annonce du départ."),
-              _BulletPoint(
-                text:
-                    "Comptes-rendus en temps réel concernant les interventions.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00061",
+                  "A) Liaison radio constante (CIC)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Retour au service (momentané ou fin de vacation) systématiquement signalé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00062",
+                  "Essai radio avant l’annonce du départ.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00063",
+                  "Comptes-rendus en temps réel concernant les interventions.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00064",
+                  "Retour au service (momentané ou fin de vacation) systématiquement signalé.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Mission cadrée"),
-              _BulletPoint(
-                text:
-                    "Accomplir la mission dans un temps et un lieu précis : la circonscription est divisée en secteurs de patrouille.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00065",
+                  "B) Mission cadrée",
+                ),
               ),
               _BulletPoint(
-                text: "En fin de patrouille : rendre compte à la hiérarchie.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00066",
+                  "Accomplir la mission dans un temps et un lieu précis : la circonscription est divisée en secteurs de patrouille.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                  "f00067",
+                  "En fin de patrouille : rendre compte à la hiérarchie.",
+                ),
               ),
             ],
           ),
@@ -364,15 +626,31 @@ class PaPatrouillePatrouillePage extends StatelessWidget {
 
           // Synthèse
           _ConditionCard(
-            title: "Synthèse opérationnelle",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+              "f00068",
+              "Synthèse opérationnelle",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Une bonne patrouille = présence visible + observation active + intervention adaptée, "
-                "le tout en sécurité et en lien radio constant.\n\n"
-                "Le public juge souvent la Police à travers l’attitude et le professionnalisme de la patrouille.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00069",
+                      "Une bonne patrouille = présence visible + observation active + intervention adaptée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00070",
+                      "le tout en sécurité et en lien radio constant.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart",
+                      "f00071",
+                      "Le public juge souvent la Police à travers l’attitude et le professionnalisme de la patrouille.",
+                    ),
               ),
             ],
           ),
@@ -653,6 +931,5 @@ class _NotaBox extends StatelessWidget {
         ),
       ),
     );
-
   }
 }

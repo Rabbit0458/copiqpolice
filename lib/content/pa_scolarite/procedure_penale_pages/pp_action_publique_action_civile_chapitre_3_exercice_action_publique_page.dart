@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
     extends StatelessWidget {
@@ -36,10 +37,18 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Chapitre 3 — Exercice de l’action publique',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+            "f00002",
+            'Chapitre 3 — Exercice de l’action publique',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -53,7 +62,11 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
         children: [
           // =================== EN-TÊTE CHAPITRE ============================
           Text(
-            'L’exercice de l’action publique',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00003",
+              'L’exercice de l’action publique',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -63,10 +76,26 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
           ),
           const SizedBox(height: 6),
           Text(
-            'De l’information du procureur de la République à la mise en mouvement '
-            'de l’action publique, en passant par l’appréciation de la légalité, '
-            'la recevabilité, le principe d’opportunité, les alternatives aux poursuites '
-            'et les différentes modalités de saisine des juridictions.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00004",
+                  'De l’information du procureur de la République à la mise en mouvement ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00005",
+                  'de l’action publique, en passant par l’appréciation de la légalité, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00006",
+                  'la recevabilité, le principe d’opportunité, les alternatives aux poursuites ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00007",
+                  'et les différentes modalités de saisine des juridictions.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -78,128 +107,267 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
 
           // =================== 3.1 INFORMATION DU PROCUREUR ================
           _ConditionCard(
-            title: '3.1 — Information du procureur de la République',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00008",
+              '3.1 — Information du procureur de la République',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
             children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 40 alinéa 1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00009",
+                    'Article 40 alinéa 1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : le procureur de la République reçoit les plaintes et '
-                      'les dénonciations et apprécie la suite à leur donner.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00010",
+                        ' : le procureur de la République reçoit les plaintes et ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00011",
+                        'les dénonciations et apprécie la suite à leur donner.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Les sources d’information du procureur de la République peuvent être :',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00012",
+                  'Les sources d’information du procureur de la République peuvent être :',
+                ),
               ),
               const SizedBox(height: 4),
-              const _IntroBullet(text: 'une plainte émanant de la victime ;'),
-              const _IntroBullet(
-                text:
-                    'une dénonciation (particulier, association, administration, autorité constituée, etc.).',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00013",
+                  'une plainte émanant de la victime ;',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00014",
+                  'une dénonciation (particulier, association, administration, autorité constituée, etc.).',
+                ),
               ),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 40 alinéa 2 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00015",
+                    'Article 40 alinéa 2 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : toute autorité constituée, tout officier public ou fonctionnaire '
-                      'qui, dans l’exercice de ses fonctions, acquiert connaissance d’un crime '
-                      'ou d’un délit doit en informer sans délai le procureur de la République.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00016",
+                        ' : toute autorité constituée, tout officier public ou fonctionnaire ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00017",
+                        'qui, dans l’exercice de ses fonctions, acquiert connaissance d’un crime ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00018",
+                        'ou d’un délit doit en informer sans délai le procureur de la République.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 19 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00019",
+                    'Article 19 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : les officiers de police judiciaire doivent informer sans délai '
-                      'le procureur de la République des crimes, délits et contraventions '
-                      'dont ils ont connaissance.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00020",
+                        ' : les officiers de police judiciaire doivent informer sans délai ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00021",
+                        'le procureur de la République des crimes, délits et contraventions ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00022",
+                        'dont ils ont connaissance.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _SubTitle('Obligations pesant sur les citoyens'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00023",
+                  'Obligations pesant sur les citoyens',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Les articles 434-1 à 434-3 du Code pénal',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00024",
+                    'Les articles 434-1 à 434-3 du Code pénal',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' sanctionnent l’abstention volontaire d’informer les autorités '
-                      'administratives ou judiciaires de certains crimes dont on peut '
-                      'prévenir ou limiter les effets, ainsi que de sévices ou privations '
-                      'infligés à un mineur ou à une personne vulnérable, ou d’atteintes '
-                      'aux intérêts fondamentaux de la Nation.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00025",
+                        ' sanctionnent l’abstention volontaire d’informer les autorités ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00026",
+                        'administratives ou judiciaires de certains crimes dont on peut ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00027",
+                        'prévenir ou limiter les effets, ainsi que de sévices ou privations ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00028",
+                        'infligés à un mineur ou à une personne vulnérable, ou d’atteintes ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00029",
+                        'aux intérêts fondamentaux de la Nation.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 4),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'L’article 434-4-1 du Code pénal',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00030",
+                    'L’article 434-4-1 du Code pénal',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' réprime le fait d’entraver les procédures de recherche concernant '
-                      'la disparition d’un mineur de quinze ans.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00031",
+                        ' réprime le fait d’entraver les procédures de recherche concernant ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00032",
+                        'la disparition d’un mineur de quinze ans.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _Paragraph(
-                'Certaines législations spéciales prévoient aussi une obligation de signalement :',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00033",
+                  'Certaines législations spéciales prévoient aussi une obligation de signalement :',
+                ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'les maires doivent révéler les faits délictueux dont ils ont connaissance '
-                    '(article L. 132-2 du Code de la sécurité intérieure) ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00034",
+                      'les maires doivent révéler les faits délictueux dont ils ont connaissance ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00035",
+                      '(article L. 132-2 du Code de la sécurité intérieure) ;',
+                    ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'les commissaires aux comptes (article L. 821-9 du Code de commerce), '
-                    'et d’autres professions réglementées ayant des obligations de signalement.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00036",
+                      'les commissaires aux comptes (article L. 821-9 du Code de commerce), ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00037",
+                      'et d’autres professions réglementées ayant des obligations de signalement.',
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _NotaBox(
-                title: 'Pour l’enquêteur',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00038",
+                  'Pour l’enquêteur',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'l’information rapide et complète du procureur de la République est un pivot '
-                        'de la procédure : toute rétention ou retard injustifié peut faire perdre '
-                        'en réactivité et en efficacité dans la réponse pénale.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                          "f00039",
+                          'l’information rapide et complète du procureur de la République est un pivot ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                          "f00040",
+                          'de la procédure : toute rétention ou retard injustifié peut faire perdre ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                          "f00041",
+                          'en réactivité et en efficacité dans la réponse pénale.',
+                        ),
                   ),
                 ],
               ),
@@ -210,52 +378,124 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
 
           // =================== 3.2 APPRECIATION LEGALITE ===================
           _ConditionCard(
-            title: '3.2 — L’appréciation de la légalité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00042",
+              '3.2 — L’appréciation de la légalité',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Avant d’exercer l’action publique, le ministère public vérifie d’abord '
-                'si la poursuite est légalement possible, puis s’il est opportun de le faire.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00043",
+                      'Avant d’exercer l’action publique, le ministère public vérifie d’abord ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00044",
+                      'si la poursuite est légalement possible, puis s’il est opportun de le faire.',
+                    ),
               ),
               SizedBox(height: 6),
 
-              _SubTitle('Qualification des faits'),
-              _BulletPoint(
-                text:
-                    'Vérifier que les faits constituent bien une infraction prévue par un texte pénal : '
-                    'élément légal, élément matériel, élément moral.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00045",
+                  'Qualification des faits',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Qualifier juridiquement l’infraction (crime, délit ou contravention, nature de l’infraction).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00046",
+                      'Vérifier que les faits constituent bien une infraction prévue par un texte pénal : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00047",
+                      'élément légal, élément matériel, élément moral.',
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00048",
+                  'Qualifier juridiquement l’infraction (crime, délit ou contravention, nature de l’infraction).',
+                ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('Identification des personnes poursuivies'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00049",
+                  'Identification des personnes poursuivies',
+                ),
+              ),
               _BulletPoint(
-                text:
-                    'Identifier précisément la personne physique ou morale : auteur, coauteurs, complices.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00050",
+                  'Identifier précisément la personne physique ou morale : auteur, coauteurs, complices.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Si l’auteur est inconnu, l’action publique peut être engagée contre X : '
-                    'réquisitoire introductif contre X permettant l’ouverture d’une information.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00051",
+                      'Si l’auteur est inconnu, l’action publique peut être engagée contre X : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00052",
+                      'réquisitoire introductif contre X permettant l’ouverture d’une information.',
+                    ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('Imputabilité et causes d’irresponsabilité'),
-              _BulletPoint(
-                text:
-                    'Vérifier que l’infraction est imputable à la personne identifiée : '
-                    'absence de cause d’irresponsabilité pénale (trouble psychique, contrainte, '
-                    'erreur invincible, minorité pénale, etc.).',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00053",
+                  'Imputabilité et causes d’irresponsabilité',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'S’assurer qu’aucune cause légale d’exemption ou de justification '
-                    '(légitime défense, état de nécessité, autorisation de la loi…) ne fait obstacle à la poursuite.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00054",
+                      'Vérifier que l’infraction est imputable à la personne identifiée : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00055",
+                      'absence de cause d’irresponsabilité pénale (trouble psychique, contrainte, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00056",
+                      'erreur invincible, minorité pénale, etc.).',
+                    ),
+              ),
+              _BulletPoint(
+                text:
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00057",
+                      'S’assurer qu’aucune cause légale d’exemption ou de justification ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00058",
+                      '(légitime défense, état de nécessité, autorisation de la loi…) ne fait obstacle à la poursuite.',
+                    ),
               ),
             ],
           ),
@@ -264,39 +504,90 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
 
           // =================== 3.3 RECEVABILITE ============================
           _ConditionCard(
-            title: '3.3 — La recevabilité de l’action publique',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00059",
+              '3.3 — La recevabilité de l’action publique',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Une fois la légalité vérifiée, le procureur de la République doit s’assurer '
-                'que l’action publique est recevable.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00060",
+                      'Une fois la légalité vérifiée, le procureur de la République doit s’assurer ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00061",
+                      'que l’action publique est recevable.',
+                    ),
               ),
               SizedBox(height: 6),
 
-              _SubTitle('Compétence'),
-              _BulletPoint(
-                text:
-                    'Compétence territoriale : lien avec le lieu de commission des faits, le domicile '
-                    'du prévenu ou de la victime, ou le lieu d’arrestation, selon les règles du Code de Procédure Pénale.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00062",
+                  'Compétence',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Compétence matérielle : tribunal de police, tribunal correctionnel, cour d’assises, '
-                    'selon la nature de l’infraction et la peine encourue.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00063",
+                      'Compétence territoriale : lien avec le lieu de commission des faits, le domicile ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00064",
+                      'du prévenu ou de la victime, ou le lieu d’arrestation, selon les règles du Code de Procédure Pénale.',
+                    ),
+              ),
+              _BulletPoint(
+                text:
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00065",
+                      'Compétence matérielle : tribunal de police, tribunal correctionnel, cour d’assises, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00066",
+                      'selon la nature de l’infraction et la peine encourue.',
+                    ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('Absence de cause d’extinction de l’action publique'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00067",
+                  'Absence de cause d’extinction de l’action publique',
+                ),
+              ),
               _BulletPoint(
-                text:
-                    'Vérifier l’absence de prescription de l’action publique.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00068",
+                  'Vérifier l’absence de prescription de l’action publique.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Vérifier l’absence d’amnistie, de décès du prévenu, de transaction éteignant l’action publique, '
-                    'ou de décision définitive ayant déjà statué sur les mêmes faits (autorité de la chose jugée).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00069",
+                      'Vérifier l’absence d’amnistie, de décès du prévenu, de transaction éteignant l’action publique, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00070",
+                      'ou de décision définitive ayant déjà statué sur les mêmes faits (autorité de la chose jugée).',
+                    ),
               ),
             ],
           ),
@@ -305,215 +596,469 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
 
           // =================== 3.4 DECISION DE POURSUITE ===================
           _ConditionCard(
-            title: '3.4 — La décision de poursuite du ministère public',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00071",
+              '3.4 — La décision de poursuite du ministère public',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
             children: [
-              const _Paragraph(
-                'Une fois la légalité et la recevabilité vérifiées, le procureur de la République '
-                'se trouve devant une alternative : exercer l’action publique ou renoncer à engager '
-                'des poursuites. Cette liberté de choix est encadrée par le principe de l’opportunité '
-                'des poursuites.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00072",
+                      'Une fois la légalité et la recevabilité vérifiées, le procureur de la République ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00073",
+                      'se trouve devant une alternative : exercer l’action publique ou renoncer à engager ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00074",
+                      'des poursuites. Cette liberté de choix est encadrée par le principe de l’opportunité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00075",
+                      'des poursuites.',
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle('3.4.1 — Le principe de l’opportunité des poursuites'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00076",
+                  '3.4.1 — Le principe de l’opportunité des poursuites',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 40-1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00077",
+                    'Article 40-1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : lorsque le procureur de la République estime que les faits '
-                      'portés à sa connaissance constituent une infraction commise par une '
-                      'personne identifiée, il décide s’il est opportun :',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00078",
+                        ' : lorsque le procureur de la République estime que les faits ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00079",
+                        'portés à sa connaissance constituent une infraction commise par une ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00080",
+                        'personne identifiée, il décide s’il est opportun :',
+                      ),
                 ),
               ]),
               const SizedBox(height: 4),
-              const _IntroBullet(text: 'd’engager des poursuites ;'),
-              const _IntroBullet(
-                text:
-                    'de mettre en œuvre une procédure alternative aux poursuites ;',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00081",
+                  'd’engager des poursuites ;',
+                ),
               ),
-              const _IntroBullet(
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00082",
+                  'de mettre en œuvre une procédure alternative aux poursuites ;',
+                ),
+              ),
+              _IntroBullet(
                 text:
-                    'ou de classer sans suite la procédure lorsque des circonstances particulières '
-                    'liées à la commission des faits le justifient.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00083",
+                      'ou de classer sans suite la procédure lorsque des circonstances particulières ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00084",
+                      'liées à la commission des faits le justifient.',
+                    ),
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 40 alinéa 1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00085",
+                    'Article 40 alinéa 1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : le procureur de la République reçoit les plaintes et les dénonciations '
-                      'et apprécie la suite à leur donner conformément à l’article 40-1.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00086",
+                        ' : le procureur de la République reçoit les plaintes et les dénonciations ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00087",
+                        'et apprécie la suite à leur donner conformément à l’article 40-1.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('3.4.1.1 — Le classement sans suite'),
-              const _Paragraph(
-                'Le procureur peut décider de classer sans suite lorsqu’il estime :',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00088",
+                  '3.4.1.1 — Le classement sans suite',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'que l’infraction n’est pas constituée (élément légal, matériel ou moral manquant) ;',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00089",
+                  'Le procureur peut décider de classer sans suite lorsqu’il estime :',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'que les faits ne sont pas imputables à la personne mise en cause ;',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00090",
+                  'que l’infraction n’est pas constituée (élément légal, matériel ou moral manquant) ;',
+                ),
               ),
-              const _BulletPoint(text: 'que la preuve est insuffisante ;'),
-              const _BulletPoint(
-                text:
-                    'ou que l’action publique n’est pas recevable (prescription, extinction…).',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00091",
+                  'que les faits ne sont pas imputables à la personne mise en cause ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00092",
+                  'que la preuve est insuffisante ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00093",
+                  'ou que l’action publique n’est pas recevable (prescription, extinction…).',
+                ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Le classement sans suite n’est pas un déni de justice. Il est provisoire et peut '
-                'être remis en cause tant que la prescription n’est pas acquise, notamment en cas '
-                'd’éléments nouveaux révélant une infraction ou la gravité réelle des faits.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00094",
+                      'Le classement sans suite n’est pas un déni de justice. Il est provisoire et peut ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00095",
+                      'être remis en cause tant que la prescription n’est pas acquise, notamment en cas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00096",
+                      'd’éléments nouveaux révélant une infraction ou la gravité réelle des faits.',
+                    ),
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 40-2 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00097",
+                    'Article 40-2 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : le procureur de la République avise les plaignants, les victimes identifiées '
-                      'et les autorités mentionnées à l’article 40 alinéa 2 des poursuites, des mesures '
-                      'alternatives ou du classement décidé. En cas de classement, il indique les '
-                      'raisons juridiques ou d’opportunité qui le justifient.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00098",
+                        ' : le procureur de la République avise les plaignants, les victimes identifiées ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00099",
+                        'et les autorités mentionnées à l’article 40 alinéa 2 des poursuites, des mesures ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00100",
+                        'alternatives ou du classement décidé. En cas de classement, il indique les ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00101",
+                        'raisons juridiques ou d’opportunité qui le justifient.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 4),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text: 'Le bureau d’ordre national informatisé « Cassiopée »',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00102",
+                    'Le bureau d’ordre national informatisé « Cassiopée »',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      ' gère les obligations d’avis motivé des classements sans suite à la victime, '
-                      'conformément à l’article 48-1 du Code de Procédure Pénale.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00103",
+                        ' gère les obligations d’avis motivé des classements sans suite à la victime, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00104",
+                        'conformément à l’article 48-1 du Code de Procédure Pénale.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('3.4.1.2 — Le procureur engage les poursuites'),
-              const _Paragraph(
-                'Lorsque le procureur décide d’exercer l’action publique, sa décision est irrévocable : '
-                'il ne peut plus revenir sur la poursuite engagée. Seule la juridiction saisie peut '
-                'décider d’éteindre l’action (relaxe, nullité, prescription constatée, etc.).',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00105",
+                  '3.4.1.2 — Le procureur engage les poursuites',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00106",
+                      'Lorsque le procureur décide d’exercer l’action publique, sa décision est irrévocable : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00107",
+                      'il ne peut plus revenir sur la poursuite engagée. Seule la juridiction saisie peut ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00108",
+                      'décider d’éteindre l’action (relaxe, nullité, prescription constatée, etc.).',
+                    ),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint(
-                text:
-                    'Il n’existe pas de recours contre la décision d’exercer l’action publique, même de la part du supérieur hiérarchique.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00109",
+                  'Il n’existe pas de recours contre la décision d’exercer l’action publique, même de la part du supérieur hiérarchique.',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Le parquet ne peut ni renoncer aux voies de recours que la loi lui ouvre, ni se désister de celles qu’il a déjà exercées.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00110",
+                  'Le parquet ne peut ni renoncer aux voies de recours que la loi lui ouvre, ni se désister de celles qu’il a déjà exercées.',
+                ),
               ),
               const SizedBox(height: 8),
 
-              const _SubTitle('3.4.2 — Les limites au principe d’opportunité'),
-              const _Paragraph(
-                'Certaines situations limitent la liberté de décision du procureur : il peut être '
-                'obligé d’agir, ou au contraire empêché de poursuivre.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00111",
+                  '3.4.2 — Les limites au principe d’opportunité',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00112",
+                      'Certaines situations limitent la liberté de décision du procureur : il peut être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00113",
+                      'obligé d’agir, ou au contraire empêché de poursuivre.',
+                    ),
               ),
               const SizedBox(height: 8),
 
-              const _SubTitle(
-                '3.4.2.1 — L’obligation d’agir du ministère public',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00114",
+                  '3.4.2.1 — L’obligation d’agir du ministère public',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 36 et article 37 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00115",
+                    'Article 36 et article 37 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : le procureur général peut adresser au procureur de la République des instructions écrites, '
-                      'versées au dossier, pour lui enjoindre d’engager des poursuites.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00116",
+                        ' : le procureur général peut adresser au procureur de la République des instructions écrites, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00117",
+                        'versées au dossier, pour lui enjoindre d’engager des poursuites.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 4),
-              const _BulletPoint(
-                text:
-                    'En cas de recours auprès du procureur général contre un classement sans suite, celui-ci peut ordonner au procureur d’engager des poursuites ou confirmer le classement (article 40-3 du Code de Procédure Pénale).',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00118",
+                  'En cas de recours auprès du procureur général contre un classement sans suite, celui-ci peut ordonner au procureur d’engager des poursuites ou confirmer le classement (article 40-3 du Code de Procédure Pénale).',
+                ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'La plainte avec constitution de partie civile devant le juge d’instruction, '
-                    'ou la constitution de partie civile devant la juridiction de jugement, '
-                    'met automatiquement l’action publique en mouvement, même contre l’avis du procureur.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00119",
+                      'La plainte avec constitution de partie civile devant le juge d’instruction, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00120",
+                      'ou la constitution de partie civile devant la juridiction de jugement, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00121",
+                      'met automatiquement l’action publique en mouvement, même contre l’avis du procureur.',
+                    ),
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'La chambre de l’instruction peut également ordonner d’office la poursuite de faits principaux ou connexes (articles 202 et 204 du Code de Procédure Pénale)',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00122",
+                    'La chambre de l’instruction peut également ordonner d’office la poursuite de faits principaux ou connexes (articles 202 et 204 du Code de Procédure Pénale)',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ', à l’encontre de personnes déjà mises en examen ou d’autres personnes n’ayant pas encore été renvoyées devant elle.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00123",
+                    ', à l’encontre de personnes déjà mises en examen ou d’autres personnes n’ayant pas encore été renvoyées devant elle.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle('3.4.2.2 — Les interdictions d’agir'),
-              const _Paragraph(
-                'Le procureur peut être empêché d’engager des poursuites : immunités, nécessité d’une plainte, d’une autorisation, d’un avis préalable, ou d’une décision sur une question préjudicielle.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00124",
+                  '3.4.2.2 — Les interdictions d’agir',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00125",
+                  'Le procureur peut être empêché d’engager des poursuites : immunités, nécessité d’une plainte, d’une autorisation, d’un avis préalable, ou d’une décision sur une question préjudicielle.',
+                ),
               ),
               const SizedBox(height: 6),
 
-              const _SubTitle('Les immunités'),
-              const _BulletPoint(
-                text:
-                    'Certaines infractions ne peuvent être poursuivies en raison d’immunités, par exemple familiales : vol entre époux (article 311-12 du Code pénal), sauf exceptions.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00126",
+                  'Les immunités',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00127",
+                  'Certaines infractions ne peuvent être poursuivies en raison d’immunités, par exemple familiales : vol entre époux (article 311-12 du Code pénal), sauf exceptions.',
+                ),
               ),
               const SizedBox(height: 6),
 
-              const _SubTitle('Nécessité d’une plainte préalable'),
-              const _Paragraph(
-                'Dans certains cas, le ministère public ne peut agir qu’après dépôt d’une plainte :',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00128",
+                  'Nécessité d’une plainte préalable',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'considérations d’ordre moral ou familial (ex : diffamation et injure nécessitant une plainte de la victime ou de ses ayants droit).',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00129",
+                  'Dans certains cas, le ministère public ne peut agir qu’après dépôt d’une plainte :',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00130",
+                  'considérations d’ordre moral ou familial (ex : diffamation et injure nécessitant une plainte de la victime ou de ses ayants droit).',
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'De nombreux délits de presse ou certaines infractions d’atteinte à la vie privée nécessitent une plainte préalable ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00131",
+                    'De nombreux délits de presse ou certaines infractions d’atteinte à la vie privée nécessitent une plainte préalable ',
+                  ),
                 ),
                 TextSpan(
-                  text: '(par exemple article 226-6 du Code pénal)',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00132",
+                    '(par exemple article 226-6 du Code pénal)',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
@@ -522,68 +1067,125 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 4),
-              const _BulletPoint(
-                text:
-                    'lorsque la plainte est une condition nécessaire à la poursuite, le désistement du plaignant entraîne l’extinction de l’action publique (article 6 alinéa 3 du Code de Procédure Pénale).',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00133",
+                  'lorsque la plainte est une condition nécessaire à la poursuite, le désistement du plaignant entraîne l’extinction de l’action publique (article 6 alinéa 3 du Code de Procédure Pénale).',
+                ),
               ),
               const SizedBox(height: 6),
 
-              const _SubTitle('Nécessité d’une plainte d’une administration'),
-              const _BulletPoint(
-                text:
-                    'En matière d’impôts directs ou de taxe sur la valeur ajoutée, l’action publique ne peut être engagée qu’après dépôt d’une plainte de l’administration fiscale.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00134",
+                  'Nécessité d’une plainte d’une administration',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00135",
+                  'En matière d’impôts directs ou de taxe sur la valeur ajoutée, l’action publique ne peut être engagée qu’après dépôt d’une plainte de l’administration fiscale.',
+                ),
               ),
               const SizedBox(height: 6),
 
-              const _SubTitle('Nécessité d’une autorisation préalable'),
-              const _BulletPoint(
-                text:
-                    'Parlementaires : l’action pénale peut être engagée, mais les mesures privatives ou restrictives de liberté sont, sauf flagrance, soumises à l’autorisation du bureau de l’assemblée concernée.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00136",
+                  'Nécessité d’une autorisation préalable',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Président de la République : irresponsabilité pour les actes accomplis en cette qualité, sous réserve de l’article 53-2 de la Constitution (crimes contre l’humanité) et de l’article 68 (destitution). Inviolabilité pendant le mandat pour les actes détachables.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00137",
+                  'Parlementaires : l’action pénale peut être engagée, mais les mesures privatives ou restrictives de liberté sont, sauf flagrance, soumises à l’autorisation du bureau de l’assemblée concernée.',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Premier ministre et ministres : responsables pénalement selon le droit commun pour les crimes et délits commis dans l’exercice de leurs fonctions devant la Cour de justice de la République, sur saisine organisée par la loi.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00138",
+                  'Président de la République : irresponsabilité pour les actes accomplis en cette qualité, sous réserve de l’article 53-2 de la Constitution (crimes contre l’humanité) et de l’article 68 (destitution). Inviolabilité pendant le mandat pour les actes détachables.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00139",
+                  'Premier ministre et ministres : responsables pénalement selon le droit commun pour les crimes et délits commis dans l’exercice de leurs fonctions devant la Cour de justice de la République, sur saisine organisée par la loi.',
+                ),
               ),
               const SizedBox(height: 6),
 
-              const _SubTitle('Nécessité d’un avis ou d’une mise en demeure'),
-              const _BulletPoint(
-                text:
-                    'Dans certains délits boursiers (délit d’initié), l’avis de l’Autorité des marchés financiers est nécessaire.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00140",
+                  'Nécessité d’un avis ou d’une mise en demeure',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'En matière d’hygiène et de sécurité au travail, une mise en demeure de l’inspecteur du travail peut être exigée avant poursuite (articles L. 4721-4 et suivants du Code du travail).',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00141",
+                  'Dans certains délits boursiers (délit d’initié), l’avis de l’Autorité des marchés financiers est nécessaire.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00142",
+                  'En matière d’hygiène et de sécurité au travail, une mise en demeure de l’inspecteur du travail peut être exigée avant poursuite (articles L. 4721-4 et suivants du Code du travail).',
+                ),
               ),
               const SizedBox(height: 6),
 
-              const _SubTitle(
-                'Nécessité de résoudre une question préjudicielle',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00143",
+                  'Nécessité de résoudre une question préjudicielle',
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Dans certains cas, la poursuite pénale suppose qu’une juridiction ait préalablement statué sur une question déterminante. ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00144",
+                    'Dans certains cas, la poursuite pénale suppose qu’une juridiction ait préalablement statué sur une question déterminante. ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'Article 6-1 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00145",
+                    'Article 6-1 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' : l’action publique ne peut être exercée pour un crime ou un délit prétendument commis à l’occasion d’une procédure qu’à condition que le caractère illégal de cette procédure ou de la décision ait été constaté par une décision définitive.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00146",
+                    ' : l’action publique ne peut être exercée pour un crime ou un délit prétendument commis à l’occasion d’une procédure qu’à condition que le caractère illégal de cette procédure ou de la décision ait été constaté par une décision définitive.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Exemple jurisprudentiel : falsification d’un procès-verbal de notification de garde à vue quant à l’heure ou au lieu (article 63-1 du Code de Procédure Pénale). Tant que le caractère illégal du procès-verbal n’a pas été constaté par une décision définitive, l’action publique pour faux ne peut être engagée (Crim., 7 décembre 2005).',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00147",
+                  'Exemple jurisprudentiel : falsification d’un procès-verbal de notification de garde à vue quant à l’heure ou au lieu (article 63-1 du Code de Procédure Pénale). Tant que le caractère illégal du procès-verbal n’a pas été constaté par une décision définitive, l’action publique pour faux ne peut être engagée (Crim., 7 décembre 2005).',
+                ),
               ),
             ],
           ),
@@ -592,68 +1194,145 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
 
           // =================== 3.4.3 ALTERNATIVES =========================
           _ConditionCard(
-            title:
-                '3.4.3 — L’alternative aux poursuites (Article 41-1 du Code de Procédure Pénale)',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00148",
+              '3.4.3 — L’alternative aux poursuites (Article 41-1 du Code de Procédure Pénale)',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Avant de décider d’exercer l’action publique, le procureur de la République '
-                'peut mettre en œuvre des mesures alternatives aux poursuites, directement ou '
-                'par l’intermédiaire d’un officier de police judiciaire, d’un délégué ou d’un '
-                'médiateur du procureur.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00149",
+                      'Avant de décider d’exercer l’action publique, le procureur de la République ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00150",
+                      'peut mettre en œuvre des mesures alternatives aux poursuites, directement ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00151",
+                      'par l’intermédiaire d’un officier de police judiciaire, d’un délégué ou d’un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00152",
+                      'médiateur du procureur.',
+                    ),
               ),
               SizedBox(height: 8),
 
               _BulletPoint(
                 text:
-                    'Avertissement pénal probatoire : rappel des obligations légales et des peines '
-                    'encourues, valable sous condition de non-récidive dans un délai déterminé. '
-                    'Réservé à certaines situations (pas de condamnation antérieure, pas de violences graves, etc.).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00153",
+                      'Avertissement pénal probatoire : rappel des obligations légales et des peines ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00154",
+                      'encourues, valable sous condition de non-récidive dans un délai déterminé. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00155",
+                      'Réservé à certaines situations (pas de condamnation antérieure, pas de violences graves, etc.).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Orientation vers une structure sanitaire, sociale ou professionnelle '
-                    '(stages de citoyenneté, sensibilisation à la sécurité routière, aux dangers des stupéfiants, '
-                    'à la lutte contre le sexisme, les violences au sein du couple, etc.).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00156",
+                      'Orientation vers une structure sanitaire, sociale ou professionnelle ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00157",
+                      '(stages de citoyenneté, sensibilisation à la sécurité routière, aux dangers des stupéfiants, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00158",
+                      'à la lutte contre le sexisme, les violences au sein du couple, etc.).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Demande de régularisation de la situation au regard de la loi '
-                    '(ex : urbanisme, construction irrégulière).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00159",
+                      'Demande de régularisation de la situation au regard de la loi ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00160",
+                      '(ex : urbanisme, construction irrégulière).',
+                    ),
               ),
               _BulletPoint(
-                text: 'Demande de réparation du dommage causé à la victime.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00161",
+                  'Demande de réparation du dommage causé à la victime.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Médiation pénale entre auteur et victime, à la demande ou avec l’accord de cette dernière. En cas de succès, un procès-verbal permet à la victime d’obtenir le recouvrement des sommes dues par la procédure d’injonction de payer. La médiation est exclue en cas de violences au sein du couple relevant de l’article 132-80 du Code pénal.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00162",
+                  'Médiation pénale entre auteur et victime, à la demande ou avec l’accord de cette dernière. En cas de succès, un procès-verbal permet à la victime d’obtenir le recouvrement des sommes dues par la procédure d’injonction de payer. La médiation est exclue en cas de violences au sein du couple relevant de l’article 132-80 du Code pénal.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Mise en demeure de résider hors du domicile conjugal et de ne pas s’en approcher en cas de violences intrafamiliales.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00163",
+                  'Mise en demeure de résider hors du domicile conjugal et de ne pas s’en approcher en cas de violences intrafamiliales.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Interdiction temporaire de paraître dans certains lieux ou de rencontrer certaines personnes (victimes, coauteurs, complices).',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00164",
+                  'Interdiction temporaire de paraître dans certains lieux ou de rencontrer certaines personnes (victimes, coauteurs, complices).',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Contribution citoyenne au profit d’une association d’aide aux victimes.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00165",
+                  'Contribution citoyenne au profit d’une association d’aide aux victimes.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Réponse en lien avec le maire (transaction prévue à l’article 44-1 du Code de Procédure Pénale).',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00166",
+                  'Réponse en lien avec le maire (transaction prévue à l’article 44-1 du Code de Procédure Pénale).',
+                ),
               ),
               SizedBox(height: 8),
 
               _NotaBox(
-                title: 'En pratique',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00167",
+                  'En pratique',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'le procureur utilise ces mesures lorsqu’elles permettent d’assurer une réparation rapide, de mettre fin au trouble et de favoriser le reclassement de l’auteur. En cas d’échec ou de non-exécution, des poursuites peuvent être engagées.',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00168",
+                      'le procureur utilise ces mesures lorsqu’elles permettent d’assurer une réparation rapide, de mettre fin au trouble et de favoriser le reclassement de l’auteur. En cas d’échec ou de non-exécution, des poursuites peuvent être engagées.',
+                    ),
                   ),
                 ],
               ),
@@ -664,100 +1343,220 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
 
           // =================== 3.4.4 COMPOSITION PENALE ====================
           _ConditionCard(
-            title:
-                '3.4.4 — La composition pénale (Articles 41-2, 41-3 et suivants du Code de Procédure Pénale)',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00169",
+              '3.4.4 — La composition pénale (Articles 41-2, 41-3 et suivants du Code de Procédure Pénale)',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
             children: [
-              const _Paragraph(
-                'Tant que l’action publique n’a pas été mise en mouvement, le procureur '
-                'de la République peut proposer à une personne qui reconnaît les faits une '
-                'composition pénale. C’est une réponse pénale négociée, distincte du jugement classique.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00170",
+                      'Tant que l’action publique n’a pas été mise en mouvement, le procureur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00171",
+                      'de la République peut proposer à une personne qui reconnaît les faits une ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00172",
+                      'composition pénale. C’est une réponse pénale négociée, distincte du jugement classique.',
+                    ),
               ),
               const SizedBox(height: 6),
 
-              const _SubTitle('Conditions générales'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00173",
+                  'Conditions générales',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 41-2 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00174",
+                    'Article 41-2 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : la composition pénale concerne les délits punis d’une peine '
-                      'd’amende ou d’emprisonnement inférieure ou égale à cinq ans, ainsi '
-                      'que les contraventions. Elle peut, sous conditions, s’appliquer aux personnes morales.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00175",
+                        ' : la composition pénale concerne les délits punis d’une peine ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00176",
+                        'd’amende ou d’emprisonnement inférieure ou égale à cinq ans, ainsi ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00177",
+                        'que les contraventions. Elle peut, sous conditions, s’appliquer aux personnes morales.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 4),
-              const _Paragraph('Elle n’est pas applicable :'),
-              const _BulletPoint(text: 'aux mineurs de moins de treize ans ;'),
-              const _BulletPoint(
-                text:
-                    'en matière de délits de presse, d’homicides involontaires, de délits politiques ;',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00178",
+                  'Elle n’est pas applicable :',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00179",
+                  'aux mineurs de moins de treize ans ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00180",
+                  'en matière de délits de presse, d’homicides involontaires, de délits politiques ;',
+                ),
               ),
               const SizedBox(height: 8),
 
-              const _SubTitle('Formes possibles de la composition pénale'),
-              const _Paragraph(
-                'La composition pénale peut prévoir : amende, stage, travail non rémunéré, remise en état, indemnisation, obligations diverses, etc., dans les limites prévues par la loi. '
-                'Lorsque la victime est identifiée, une mesure de réparation du préjudice peut être proposée dans un délai de six mois.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00181",
+                  'Formes possibles de la composition pénale',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00182",
+                      'La composition pénale peut prévoir : amende, stage, travail non rémunéré, remise en état, indemnisation, obligations diverses, etc., dans les limites prévues par la loi. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00183",
+                      'Lorsque la victime est identifiée, une mesure de réparation du préjudice peut être proposée dans un délai de six mois.',
+                    ),
               ),
               const SizedBox(height: 8),
 
-              const _SubTitle('Mise en œuvre'),
-              const _BulletPoint(
-                text:
-                    'Proposition écrite du procureur de la République, jointe à la procédure, précisant la nature et la durée des mesures.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00184",
+                  'Mise en œuvre',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Information de la personne sur son droit à être assistée d’un avocat avant d’accepter.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00185",
+                  'Proposition écrite du procureur de la République, jointe à la procédure, précisant la nature et la durée des mesures.',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'Validation par le président du tribunal ou un magistrat délégué, sauf hypothèses où la validation n’est pas requise pour certains délits.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00186",
+                  'Information de la personne sur son droit à être assistée d’un avocat avant d’accepter.',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'En cas de validation, les mesures sont exécutées. En cas de refus d’homologation, la composition devient caduque.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00187",
+                  'Validation par le président du tribunal ou un magistrat délégué, sauf hypothèses où la validation n’est pas requise pour certains délits.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00188",
+                  'En cas de validation, les mesures sont exécutées. En cas de refus d’homologation, la composition devient caduque.',
+                ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Si la personne refuse la composition, ou si elle n’exécute pas les mesures '
-                'acceptées, le procureur de la République peut mettre en mouvement l’action '
-                'publique. Les compositions exécutées sont inscrites au bulletin n°1 du casier judiciaire.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00189",
+                      'Si la personne refuse la composition, ou si elle n’exécute pas les mesures ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00190",
+                      'acceptées, le procureur de la République peut mettre en mouvement l’action ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00191",
+                      'publique. Les compositions exécutées sont inscrites au bulletin n°1 du casier judiciaire.',
+                    ),
               ),
               const SizedBox(height: 8),
 
               const _SubTitle('Effets'),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 41-2 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00192",
+                    'Article 41-2 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red.shade700,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : les actes tendant à la mise en œuvre ou à l’exécution de la composition pénale '
-                      'interrompent la prescription de l’action publique. L’exécution complète de la composition '
-                      'éteint l’action publique.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00193",
+                        ' : les actes tendant à la mise en œuvre ou à l’exécution de la composition pénale ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00194",
+                        'interrompent la prescription de l’action publique. L’exécution complète de la composition ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                        "f00195",
+                        'éteint l’action publique.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _NotaBox(
+              _NotaBox(
                 title: 'Nota',
                 bodySpans: [
                   TextSpan(
                     text:
-                        'si l’auteur des faits s’est engagé à verser des dommages et intérêts à la victime, '
-                        'celle-ci peut en demander le recouvrement par la procédure d’injonction de payer.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                          "f00196",
+                          'si l’auteur des faits s’est engagé à verser des dommages et intérêts à la victime, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                          "f00197",
+                          'celle-ci peut en demander le recouvrement par la procédure d’injonction de payer.',
+                        ),
                   ),
                 ],
               ),
@@ -768,130 +1567,344 @@ class PaPPActionPubliqueChapitre3ExerciceActionPubliquePage
 
           // =================== 3.5 EXECUTION : SAISINE JURIDICTION =========
           _ConditionCard(
-            title:
-                '3.5 — L’exécution de la poursuite : saisine de la juridiction de jugement',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+              "f00198",
+              '3.5 — L’exécution de la poursuite : saisine de la juridiction de jugement',
+            ),
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: const [
+            children: [
               _Paragraph(
-                'Lorsque le procureur de la République décide d’exercer l’action publique, '
-                'il doit saisir la juridiction de jugement compétente par différents procédés :',
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle('3.5.1 — La citation directe'),
-              _Paragraph(
-                'Acte par lequel le ministère public cite directement le prévenu à comparaître '
-                'devant le tribunal correctionnel ou le tribunal de police. Il s’agit d’un exploit '
-                'd’huissier délivré selon les formes et délais prévus par les articles 550 et suivants '
-                'du Code de Procédure Pénale (article 390 notamment).',
-              ),
-              _Paragraph(
-                'Lorsque la personne est sans domicile ou résidence connus, un procès-verbal du procureur '
-                'peut valoir citation à parquet (article 559 du Code de Procédure Pénale) et permettre de '
-                'juger par défaut selon l’article 412.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00199",
+                      'Lorsque le procureur de la République décide d’exercer l’action publique, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00200",
+                      'il doit saisir la juridiction de jugement compétente par différents procédés :',
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                '3.5.2 — L’avertissement suivi de la comparution volontaire',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00201",
+                  '3.5.1 — La citation directe',
+                ),
               ),
               _Paragraph(
-                'Le procureur de la République adresse un avertissement au mis en cause pour l’inviter '
-                'à se présenter volontairement devant le tribunal à une date fixée (articles 389 et 532 '
-                'du Code de Procédure Pénale). La juridiction n’est saisie que si la personne comparaît effectivement.',
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle('3.5.3 — La convocation en justice'),
-              _Paragraph(
-                'C’est une citation à comparaître décidée par le parquet sans présentation préalable de la personne (article 390-1 du Code de Procédure Pénale). '
-                'La convocation est notifiée par un greffier, un officier ou agent de police judiciaire, un fonctionnaire habilité, un délégué ou médiateur du procureur ou, si le prévenu est détenu, par le chef d’établissement. Un procès-verbal signé est remis au prévenu.',
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle('3.5.4 — La convocation par procès-verbal'),
-              _Paragraph(
-                'Dans la convocation par procès-verbal (article 394 du Code de Procédure Pénale), '
-                'le procureur invite la personne à comparaître devant le tribunal correctionnel dans un '
-                'délai de dix jours à six mois. Les faits retenus, le lieu, la date et l’heure d’audience '
-                'sont notifiés. Si nécessaire, un contrôle judiciaire, une assignation à résidence avec '
-                'surveillance électronique ou une détention provisoire peuvent être décidés par le juge des libertés et de la détention.',
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle('3.5.5 — La comparution immédiate'),
-              _Paragraph(
-                'Procédure rapide par laquelle le procureur fait traduire immédiatement le prévenu devant '
-                'le tribunal correctionnel (article 395 du Code de Procédure Pénale), lorsque :',
-              ),
-              _IntroBullet(
-                text:
-                    'la peine encourue est au moins égale à deux ans d’emprisonnement (six mois en cas de délit flagrant) ;',
-              ),
-              _IntroBullet(
-                text:
-                    'les charges sont suffisantes et l’affaire en état d’être jugée ;',
-              ),
-              _IntroBullet(
-                text:
-                    'la gravité et les circonstances de l’espèce justifient une réponse rapide.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00202",
+                      'Acte par lequel le ministère public cite directement le prévenu à comparaître ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00203",
+                      'devant le tribunal correctionnel ou le tribunal de police. Il s’agit d’un exploit ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00204",
+                      'd’huissier délivré selon les formes et délais prévus par les articles 550 et suivants ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00205",
+                      'du Code de Procédure Pénale (article 390 notamment).',
+                    ),
               ),
               _Paragraph(
-                'Si le tribunal ne peut être réuni le jour même et que la gravité le justifie, le juge des libertés '
-                'et de la détention peut placer le prévenu en détention provisoire en attendant l’audience, qui doit '
-                'intervenir au plus tard le troisième jour ouvrable suivant, à défaut de quoi la personne est remise en liberté.',
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle('3.5.6 — La comparution à délai différé'),
-              _Paragraph(
-                'Prévue à l’article 397-1-1 du Code de Procédure Pénale, cette procédure permet de saisir le tribunal '
-                'pour une audience fixée dans un délai maximum de deux mois lorsque la culpabilité paraît pouvoir être '
-                'retenue mais que l’affaire n’est pas totalement en état d’être jugée (examens techniques ou médicaux en cours, expertises, etc.).',
-              ),
-              _Paragraph(
-                'Elle concerne les délits flagrants punis d’au moins six mois d’emprisonnement, et les délits non flagrants '
-                'punis d’au moins deux ans, à condition que le prévenu soit assisté d’un avocat.',
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle('3.5.7 — L’ordonnance pénale'),
-              _Paragraph(
-                'Procédure simplifiée (articles 495 à 495-6 et 524 à 528-2 du Code de Procédure Pénale) permettant de juger '
-                'certains délits et contraventions sans débat contradictoire préalable. Le président du tribunal statue sur dossier, '
-                'sur réquisitions écrites du procureur, par ordonnance de relaxe ou de condamnation. Un délai est ouvert pour former opposition.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00206",
+                      'Lorsque la personne est sans domicile ou résidence connus, un procès-verbal du procureur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00207",
+                      'peut valoir citation à parquet (article 559 du Code de Procédure Pénale) et permettre de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00208",
+                      'juger par défaut selon l’article 412.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                '3.5.8 — La comparution sur reconnaissance préalable de culpabilité (C.R.P.C.)',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00209",
+                  '3.5.2 — L’avertissement suivi de la comparution volontaire',
+                ),
               ),
               _Paragraph(
-                'La C.R.P.C. (articles 495-8 et suivants du Code de Procédure Pénale) est une forme de poursuite fondée sur la '
-                'reconnaissance de culpabilité par la personne poursuivie. Elle ne s’applique pas aux mineurs, ni à certains délits '
-                '(presse, homicides involontaires, délits politiques, etc.). La personne doit être assistée d’un avocat. '
-                'Le procureur propose une ou plusieurs peines ; si la personne accepte, un juge homologue la proposition. '
-                'L’ordonnance d’homologation a les effets d’un jugement de condamnation et est susceptible d’appel.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00210",
+                      'Le procureur de la République adresse un avertissement au mis en cause pour l’inviter ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00211",
+                      'à se présenter volontairement devant le tribunal à une date fixée (articles 389 et 532 ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00212",
+                      'du Code de Procédure Pénale). La juridiction n’est saisie que si la personne comparaît effectivement.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                '3.5.9 — Le réquisitoire introductif ou réquisitoire aux fins d’informer',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00213",
+                  '3.5.3 — La convocation en justice',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00214",
+                      'C’est une citation à comparaître décidée par le parquet sans présentation préalable de la personne (article 390-1 du Code de Procédure Pénale). ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00215",
+                      'La convocation est notifiée par un greffier, un officier ou agent de police judiciaire, un fonctionnaire habilité, un délégué ou médiateur du procureur ou, si le prévenu est détenu, par le chef d’établissement. Un procès-verbal signé est remis au prévenu.',
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00216",
+                  '3.5.4 — La convocation par procès-verbal',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00217",
+                      'Dans la convocation par procès-verbal (article 394 du Code de Procédure Pénale), ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00218",
+                      'le procureur invite la personne à comparaître devant le tribunal correctionnel dans un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00219",
+                      'délai de dix jours à six mois. Les faits retenus, le lieu, la date et l’heure d’audience ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00220",
+                      'sont notifiés. Si nécessaire, un contrôle judiciaire, une assignation à résidence avec ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00221",
+                      'surveillance électronique ou une détention provisoire peuvent être décidés par le juge des libertés et de la détention.',
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00222",
+                  '3.5.5 — La comparution immédiate',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00223",
+                      'Procédure rapide par laquelle le procureur fait traduire immédiatement le prévenu devant ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00224",
+                      'le tribunal correctionnel (article 395 du Code de Procédure Pénale), lorsque :',
+                    ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00225",
+                  'la peine encourue est au moins égale à deux ans d’emprisonnement (six mois en cas de délit flagrant) ;',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00226",
+                  'les charges sont suffisantes et l’affaire en état d’être jugée ;',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00227",
+                  'la gravité et les circonstances de l’espèce justifient une réponse rapide.',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00228",
+                      'Si le tribunal ne peut être réuni le jour même et que la gravité le justifie, le juge des libertés ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00229",
+                      'et de la détention peut placer le prévenu en détention provisoire en attendant l’audience, qui doit ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00230",
+                      'intervenir au plus tard le troisième jour ouvrable suivant, à défaut de quoi la personne est remise en liberté.',
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00231",
+                  '3.5.6 — La comparution à délai différé',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00232",
+                      'Prévue à l’article 397-1-1 du Code de Procédure Pénale, cette procédure permet de saisir le tribunal ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00233",
+                      'pour une audience fixée dans un délai maximum de deux mois lorsque la culpabilité paraît pouvoir être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00234",
+                      'retenue mais que l’affaire n’est pas totalement en état d’être jugée (examens techniques ou médicaux en cours, expertises, etc.).',
+                    ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00235",
+                      'Elle concerne les délits flagrants punis d’au moins six mois d’emprisonnement, et les délits non flagrants ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00236",
+                      'punis d’au moins deux ans, à condition que le prévenu soit assisté d’un avocat.',
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00237",
+                  '3.5.7 — L’ordonnance pénale',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00238",
+                      'Procédure simplifiée (articles 495 à 495-6 et 524 à 528-2 du Code de Procédure Pénale) permettant de juger ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00239",
+                      'certains délits et contraventions sans débat contradictoire préalable. Le président du tribunal statue sur dossier, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00240",
+                      'sur réquisitions écrites du procureur, par ordonnance de relaxe ou de condamnation. Un délai est ouvert pour former opposition.',
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00241",
+                  '3.5.8 — La comparution sur reconnaissance préalable de culpabilité (C.R.P.C.)',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00242",
+                      'La C.R.P.C. (articles 495-8 et suivants du Code de Procédure Pénale) est une forme de poursuite fondée sur la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00243",
+                      'reconnaissance de culpabilité par la personne poursuivie. Elle ne s’applique pas aux mineurs, ni à certains délits ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00244",
+                      '(presse, homicides involontaires, délits politiques, etc.). La personne doit être assistée d’un avocat. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00245",
+                      'Le procureur propose une ou plusieurs peines ; si la personne accepte, un juge homologue la proposition. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                      "f00246",
+                      'L’ordonnance d’homologation a les effets d’un jugement de condamnation et est susceptible d’appel.',
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                  "f00247",
+                  '3.5.9 — Le réquisitoire introductif ou réquisitoire aux fins d’informer',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'C’est l’acte par lequel le procureur de la République requiert le juge d’instruction d’ouvrir une information (article 80 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00248",
+                    'C’est l’acte par lequel le procureur de la République requiert le juge d’instruction d’ouvrir une information (article 80 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ') contre une personne dénommée ou non. Il est obligatoire en matière criminelle et permet de confier au juge d’instruction la conduite des investigations.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart",
+                    "f00249",
+                    ') contre une personne dénommée ou non. Il est obligatoire en matière criminelle et permet de confier au juge d’instruction la conduite des investigations.',
+                  ),
                 ),
               ]),
             ],
@@ -1158,7 +2171,6 @@ class _NotaBox extends StatelessWidget {
             ...bodySpans,
           ],
         ),
-    
       ),
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEnlevementSequestrationPage extends StatelessWidget {
   const PaEnlevementSequestrationPage({super.key});
@@ -70,7 +71,11 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Enlèvement & séquestration",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+            "f00001",
+            "Enlèvement & séquestration",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,15 +91,29 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
             children: [
               // ✅ Exigence : élément légal en haut
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 224-1 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00003",
+                        "Article 224-1 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : prévoit et réprime les infractions d’arrestation, enlèvement, détention et séquestration.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00004",
+                        " : prévoit et réprime les infractions d’arrestation, enlèvement, détention et séquestration.",
+                      ),
                     ),
                   ]),
                 ],
@@ -103,28 +122,55 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                  "f00005",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "Le fait, sans ordre des autorités constituées et hors les cas prévus par la loi, "
-                    "d’arrêter, d’enlever, de détenir ou de séquestrer une personne constitue une infraction.",
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00006",
+                          "Le fait, sans ordre des autorités constituées et hors les cas prévus par la loi, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00007",
+                          "d’arrêter, d’enlever, de détenir ou de séquestrer une personne constitue une infraction.",
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("À retenir"),
-                  _IntroBullet(
-                    text:
-                        "4 verbes = 4 infractions autonomes (arrestation / enlèvement / détention / séquestration).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00008",
+                      "À retenir",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Point commun : entraver la liberté d’aller et venir.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00009",
+                      "4 verbes = 4 infractions autonomes (arrestation / enlèvement / détention / séquestration).",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Condition négative : absence d’ordre de la loi / de l’autorité légitime.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00010",
+                      "Point commun : entraver la liberté d’aller et venir.",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00011",
+                      "Condition négative : absence d’ordre de la loi / de l’autorité légitime.",
+                    ),
                   ),
                 ],
               ),
@@ -132,16 +178,34 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                  "f00012",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 224-1 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00013",
+                        "Article 224-1 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : incrimine l’arrestation, l’enlèvement, la détention ou la séquestration, "
-                      "sans ordre des autorités constituées et hors les cas prévus par la loi.",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00014",
+                            " : incrimine l’arrestation, l’enlèvement, la détention ou la séquestration, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00015",
+                            "sans ordre des autorités constituées et hors les cas prévus par la loi.",
+                          ),
                     ),
                   ]),
                 ],
@@ -150,85 +214,217 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                  "f00016",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle(
-                    "1) La commission d’un acte (4 infractions autonomes)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00017",
+                      "1) La commission d’un acte (4 infractions autonomes)",
+                    ),
                   ),
-                  const _SubTitle("• Arrestation"),
-                  const _Paragraph(
-                    "Appréhender physiquement une personne à l’endroit où elle se trouve, de manière à la priver "
-                    "de sa liberté d’aller et venir.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00018",
+                      "• Arrestation",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00019",
+                          "Appréhender physiquement une personne à l’endroit où elle se trouve, de manière à la priver ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00020",
+                          "de sa liberté d’aller et venir.",
+                        ),
                   ),
                   const SizedBox(height: 10),
 
-                  const _SubTitle("• Enlèvement"),
-                  const _Paragraph(
-                    "Entraîner la victime de l’endroit où elle se trouve pour la déplacer vers un lieu différent. "
-                    "Durant ce déplacement, la victime est privée de sa liberté d’aller et venir.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00021",
+                      "• Enlèvement",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00022",
+                          "Entraîner la victime de l’endroit où elle se trouve pour la déplacer vers un lieu différent. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00023",
+                          "Durant ce déplacement, la victime est privée de sa liberté d’aller et venir.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00024",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Victime maintenue à l’arrière d’un véhicule et transportée, sans possibilité de fuite, "
-                        "vers un lieu où elle ne voulait pas aller : ",
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                              "f00025",
+                              "Victime maintenue à l’arrière d’un véhicule et transportée, sans possibilité de fuite, ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                              "f00026",
+                              "vers un lieu où elle ne voulait pas aller : ",
+                            ),
                       ),
-                      normal("Cass. crim., 23 février 2000"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00027",
+                          "Cass. crim., 23 février 2000",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("• Détention"),
-                  const _Paragraph(
-                    "La détention consiste à retenir une personne contre son gré, en la privant de sa liberté d’aller et venir. "
-                    "L’atteinte à la liberté de mouvement doit se prolonger.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00028",
+                      "• Détention",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00029",
+                          "La détention consiste à retenir une personne contre son gré, en la privant de sa liberté d’aller et venir. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00030",
+                          "L’atteinte à la liberté de mouvement doit se prolonger.",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Exemple classique : des salariés grévistes retiennent des cadres/dirigeants jusqu’à acceptation de revendications.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00031",
+                      "Exemple classique : des salariés grévistes retiennent des cadres/dirigeants jusqu’à acceptation de revendications.",
+                    ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("• Séquestration"),
-                  const _Paragraph(
-                    "La distinction détention / séquestration est délicate. Selon certains auteurs, la séquestration "
-                    "serait une détention doublée d’inconfort (conditions plus contraignantes).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00032",
+                      "• Séquestration",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00033",
+                          "La distinction détention / séquestration est délicate. Selon certains auteurs, la séquestration ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00034",
+                          "serait une détention doublée d’inconfort (conditions plus contraignantes).",
+                        ),
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "2) Absence d’élément justificatif (condition négative)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00035",
+                      "2) Absence d’élément justificatif (condition négative)",
+                    ),
                   ),
-                  const _Paragraph(
-                    "L’existence d’un ordre de la loi ou d’un commandement de l’autorité légitime empêche l’infraction "
-                    "d’être constituée.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00036",
+                          "L’existence d’un ordre de la loi ou d’un commandement de l’autorité légitime empêche l’infraction ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00037",
+                          "d’être constituée.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Exemple : "),
-                    lawRef("article 73 du Code de procédure pénale"),
                     normal(
-                      " — permet à toute personne d’appréhender l’auteur d’un crime ou d’un délit flagrant.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00038",
+                        "Exemple : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00039",
+                        "article 73 du Code de procédure pénale",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00040",
+                        " — permet à toute personne d’appréhender l’auteur d’un crime ou d’un délit flagrant.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00041",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Ne commet pas une arrestation/détention illégale la personne ayant appréhendé l’auteur d’un vol "
-                        "et l’ayant retenu jusqu’à l’arrivée de l’OPJ : ",
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                              "f00042",
+                              "Ne commet pas une arrestation/détention illégale la personne ayant appréhendé l’auteur d’un vol ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                              "f00043",
+                              "et l’ayant retenu jusqu’à l’arrivée de l’OPJ : ",
+                            ),
                       ),
-                      normal("Cass. crim., 1er octobre 1979"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00044",
+                          "Cass. crim., 1er octobre 1979",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
@@ -238,26 +434,58 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                  "f00045",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle(
-                    "Conscience d’entraver la liberté d’aller et venir",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00046",
+                      "Conscience d’entraver la liberté d’aller et venir",
+                    ),
                   ),
                   _Paragraph.rich([
                     normal(
-                      "L’intention délictueuse est caractérisée par la volonté d’empêcher la victime d’aller et venir "
-                      "librement pendant un temps plus ou moins long ou de l’isoler du monde extérieur. ",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00047",
+                            "L’intention délictueuse est caractérisée par la volonté d’empêcher la victime d’aller et venir ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00048",
+                            "librement pendant un temps plus ou moins long ou de l’isoler du monde extérieur. ",
+                          ),
                     ),
                   ]),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00049",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
-                      normal("Définition de l’intention : "),
-                      normal("T. corr. Caen, 24 novembre 1972"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00050",
+                          "Définition de l’intention : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00051",
+                          "T. corr. Caen, 24 novembre 1972",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
@@ -267,38 +495,90 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                  "f00052",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 224-2 du C.P."),
-                    normal(" : deux degrés d’aggravation."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00053",
+                        "Article 224-2 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00054",
+                        " : deux degrés d’aggravation.",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 10),
 
-                  const _SubTitle("• Premier degré (224-2 al. 1)"),
-                  const _BulletPoint(
-                    text:
-                        "La victime a subi une mutilation ou une infirmité permanente (volontairement provoquée ou résultant des conditions de détention, d’une privation d’aliments ou de soins).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00055",
+                      "• Premier degré (224-2 al. 1)",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00056",
+                      "La victime a subi une mutilation ou une infirmité permanente (volontairement provoquée ou résultant des conditions de détention, d’une privation d’aliments ou de soins).",
+                    ),
                   ),
                   const SizedBox(height: 10),
 
-                  const _SubTitle("• Second degré (224-2 al. 2)"),
-                  const _BulletPoint(
-                    text:
-                        "Infraction précédée ou accompagnée de tortures / actes de barbarie, ou suivie de la mort de la victime.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00057",
+                      "• Second degré (224-2 al. 2)",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00058",
+                      "Infraction précédée ou accompagnée de tortures / actes de barbarie, ou suivie de la mort de la victime.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00059",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "La mort de la victime ne peut pas être retenue à la fois comme constitutive de l’assassinat et "
-                        "comme circonstance aggravante de la séquestration : ",
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                              "f00060",
+                              "La mort de la victime ne peut pas être retenue à la fois comme constitutive de l’assassinat et ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                              "f00061",
+                              "comme circonstance aggravante de la séquestration : ",
+                            ),
                       ),
-                      normal("Cass. crim., 20 février 2002"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00062",
+                          "Cass. crim., 20 février 2002",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
@@ -306,63 +586,126 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
                   const SizedBox(height: 14),
 
                   _Paragraph.rich([
-                    lawRef("Article 224-3 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00063",
+                        "Article 224-3 du C.P.",
+                      ),
+                    ),
                     normal(" :"),
                   ]),
                   const SizedBox(height: 8),
-                  const _BulletPoint(
-                    text:
-                        "Infraction commise à l’égard de plusieurs personnes.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00064",
+                      "Infraction commise à l’égard de plusieurs personnes.",
+                    ),
                   ),
 
                   const SizedBox(height: 12),
 
                   _Paragraph.rich([
-                    lawRef("Article 224-4 du C.P."),
-                    normal(" (prise d’otage) :"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00065",
+                        "Article 224-4 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00066",
+                        " (prise d’otage) :",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 8),
-                  const _BulletPoint(
-                    text:
-                        "Pour préparer ou faciliter la commission d’un crime ou d’un délit.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00067",
+                      "Pour préparer ou faciliter la commission d’un crime ou d’un délit.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Pour favoriser la fuite ou assurer l’impunité de l’auteur/complice d’un crime ou délit.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00068",
+                      "Pour favoriser la fuite ou assurer l’impunité de l’auteur/complice d’un crime ou délit.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Pour obtenir l’exécution d’un ordre ou d’une condition (notamment versement d’une rançon).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00069",
+                      "Pour obtenir l’exécution d’un ordre ou d’une condition (notamment versement d’une rançon).",
+                    ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "La circonstance aggravante « prise d’otage » a un caractère réel : elle s’étend aux coauteurs et complices.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00070",
+                      "La circonstance aggravante « prise d’otage » a un caractère réel : elle s’étend aux coauteurs et complices.",
+                    ),
                   ),
 
                   const SizedBox(height: 12),
 
                   _Paragraph.rich([
-                    lawRef("Article 224-5 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00071",
+                        "Article 224-5 du C.P.",
+                      ),
+                    ),
                     normal(" :"),
                   ]),
                   const SizedBox(height: 8),
-                  const _BulletPoint(text: "Victime mineure de 15 ans."),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00072",
+                      "Victime mineure de 15 ans.",
+                    ),
+                  ),
 
                   const SizedBox(height: 12),
 
                   _Paragraph.rich([
-                    lawRef("Article 224-5-2 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00073",
+                        "Article 224-5-2 du C.P.",
+                      ),
+                    ),
                     normal(" :"),
                   ]),
                   const SizedBox(height: 8),
-                  const _BulletPoint(
-                    text:
-                        "Enlèvement ou séquestration commis en bande organisée.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00074",
+                      "Enlèvement ou séquestration commis en bande organisée.",
+                    ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Un 2ᵉ degré d’aggravation est prévu lorsque les infractions des articles 224-2 à 224-5 "
-                    "sont commises en bande organisée.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00075",
+                          "Un 2ᵉ degré d’aggravation est prévu lorsque les infractions des articles 224-2 à 224-5 ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00076",
+                          "sont commises en bande organisée.",
+                        ),
                   ),
                 ],
               ),
@@ -370,115 +713,311 @@ class PaEnlevementSequestrationPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "V — Répression, tentative, complicité, exemptions",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                  "f00077",
+                  "V — Répression, tentative, complicité, exemptions",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines (vue d’ensemble)"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00078",
+                      "Peines (vue d’ensemble)",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Forme simple ("),
-                    lawRef("article 224-1 al. 1 du C.P."),
                     normal(
-                      ") : 20 ans de réclusion criminelle (période de sûreté).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00079",
+                        "Forme simple (",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00080",
+                        "article 224-1 al. 1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00081",
+                        ") : 20 ans de réclusion criminelle (période de sûreté).",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    normal("Aggravation 1ᵉʳ degré ("),
-                    lawRef("article 224-2 al. 1 du C.P."),
                     normal(
-                      ") : 30 ans de réclusion criminelle (période de sûreté).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00082",
+                        "Aggravation 1ᵉʳ degré (",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00083",
+                        "article 224-2 al. 1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00084",
+                        ") : 30 ans de réclusion criminelle (période de sûreté).",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    normal("Aggravation 2ᵉ degré ("),
-                    lawRef("article 224-2 al. 2 du C.P."),
                     normal(
-                      ") : réclusion criminelle à perpétuité (période de sûreté).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00085",
+                        "Aggravation 2ᵉ degré (",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00086",
+                        "article 224-2 al. 2 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00087",
+                        ") : réclusion criminelle à perpétuité (période de sûreté).",
+                      ),
                     ),
                   ]),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Personnes morales"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00088",
+                      "Personnes morales",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Responsabilité pénale prévue par "),
-                    lawRef("l’article 121-2 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00089",
+                        "Responsabilité pénale prévue par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00090",
+                        "l’article 121-2 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
                   const SizedBox(height: 12),
 
                   const _SubTitle("Tentative"),
-                  const _Paragraph(
-                    "Tentative : OUI (toujours prévue pour les crimes). "
-                    "Attention : la question peut se poser si, par réduction de peine (224-1 al. 3), l’infraction devient un délit.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00091",
+                          "Tentative : OUI (toujours prévue pour les crimes). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00092",
+                          "Attention : la question peut se poser si, par réduction de peine (224-1 al. 3), l’infraction devient un délit.",
+                        ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00093",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — punissable selon "),
-                    lawRef("les articles 121-6 et 121-7 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00094",
+                        "Complicité : OUI — punissable selon ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00095",
+                        "les articles 121-6 et 121-7 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Exemption ou réduction de peine : OUI"),
-                  const _SubTitle("• Libération volontaire"),
-                  const _Paragraph(
-                    "Une diminution de peine est prévue lorsque la personne détenue/séquestrée est libérée volontairement "
-                    "avant le 7ᵉ jour accompli depuis son appréhension. Cela peut changer la qualification : le crime devient délit.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00096",
+                      "Exemption ou réduction de peine : OUI",
+                    ),
+                  ),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00097",
+                      "• Libération volontaire",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00098",
+                          "Une diminution de peine est prévue lorsque la personne détenue/séquestrée est libérée volontairement ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00099",
+                          "avant le 7ᵉ jour accompli depuis son appréhension. Cela peut changer la qualification : le crime devient délit.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00100",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Le crime peut devenir un délit en cas de libération volontaire avant 7 jours : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00101",
+                          "Le crime peut devenir un délit en cas de libération volontaire avant 7 jours : ",
+                        ),
                       ),
-                      normal("Cass. crim., 8 juin 2006"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00102",
+                          "Cass. crim., 8 juin 2006",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Cette réduction n’est pas mentionnée à l’article 224-5 (victime mineure de 15 ans) : "
-                    "elle n’est donc pas applicable dans cette hypothèse.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00103",
+                          "Cette réduction n’est pas mentionnée à l’article 224-5 (victime mineure de 15 ans) : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00104",
+                          "elle n’est donc pas applicable dans cette hypothèse.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00105",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "La libération volontaire peut résulter d’une cessation de surveillance permettant à la victime de quitter les lieux : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00106",
+                          "La libération volontaire peut résulter d’une cessation de surveillance permettant à la victime de quitter les lieux : ",
+                        ),
                       ),
-                      normal("Cass. crim., 11 août 2021"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                          "f00107",
+                          "Cass. crim., 11 août 2021",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("• Dénonciation (224-5-1)"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                      "f00108",
+                      "• Dénonciation (224-5-1)",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    lawRef("Article 224-5-1 al. 1 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00109",
+                        "Article 224-5-1 al. 1 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : exemption de peine si l’auteur d’une tentative a averti l’autorité administrative/judiciaire et a permis "
-                      "d’éviter la réalisation de l’infraction.",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00110",
+                            " : exemption de peine si l’auteur d’une tentative a averti l’autorité administrative/judiciaire et a permis ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00111",
+                            "d’éviter la réalisation de l’infraction.",
+                          ),
                     ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    lawRef("Article 224-5-1 al. 2 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                        "f00112",
+                        "Article 224-5-1 al. 2 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : réduction de peine des deux tiers si, après avoir averti l’autorité, il a permis de faire cesser l’infraction, "
-                      "d’éviter mort/infirmité permanente, ou d’identifier d’autres auteurs/complices. "
-                      "Si perpétuité encourue, elle est ramenée à 20 ans.",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00113",
+                            " : réduction de peine des deux tiers si, après avoir averti l’autorité, il a permis de faire cesser l’infraction, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00114",
+                            "d’éviter mort/infirmité permanente, ou d’identifier d’autres auteurs/complices. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart",
+                            "f00115",
+                            "Si perpétuité encourue, elle est ramenée à 20 ans.",
+                          ),
                     ),
                   ]),
                 ],

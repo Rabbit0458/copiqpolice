@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PlaquesInscriptionsPage extends StatelessWidget {
   const PlaquesInscriptionsPage({super.key});
@@ -59,10 +60,18 @@ class PlaquesInscriptionsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions circulation routière",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+            "f00002",
+            "Infractions circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PlaquesInscriptionsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Délits relatifs aux plaques et inscriptions",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+              "f00003",
+              "Délits relatifs aux plaques et inscriptions",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,28 +102,50 @@ class PlaquesInscriptionsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Constitue une infraction le fait :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00005",
+                  "Constitue une infraction le fait :",
+                ),
+              ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "d’utiliser une plaque ou une inscription exigée, apposée sur un véhicule à moteur ou une remorque, portant un numéro, un nom ou un domicile faux ou supposé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00006",
+                  "d’utiliser une plaque ou une inscription exigée, apposée sur un véhicule à moteur ou une remorque, portant un numéro, un nom ou un domicile faux ou supposé.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "de faire circuler un véhicule à moteur ou une remorque, sur voie ouverte à la circulation publique, sans plaques/inscriptions exigées et, en outre, de déclarer un numéro, un nom ou un domicile autre que le sien ou celui du propriétaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00007",
+                  "de faire circuler un véhicule à moteur ou une remorque, sur voie ouverte à la circulation publique, sans plaques/inscriptions exigées et, en outre, de déclarer un numéro, un nom ou un domicile autre que le sien ou celui du propriétaire.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "de mettre en circulation un véhicule muni d’une plaque ou d’une inscription ne correspondant pas à la qualité du véhicule ou à celle de l’utilisateur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00008",
+                  "de mettre en circulation un véhicule muni d’une plaque ou d’une inscription ne correspondant pas à la qualité du véhicule ou à celle de l’utilisateur.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "de mettre en circulation ou de faire circuler un véhicule muni d’une plaque portant un numéro attribué à un autre véhicule, dans des circonstances ayant déterminé ou pouvant déterminer des poursuites pénales contre un tiers.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00009",
+                  "de mettre en circulation ou de faire circuler un véhicule muni d’une plaque portant un numéro attribué à un autre véhicule, dans des circonstances ayant déterminé ou pouvant déterminer des poursuites pénales contre un tiers.",
+                ),
               ),
             ],
           ),
@@ -119,24 +154,37 @@ class PlaquesInscriptionsPage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Les articles "),
                 TextSpan(
-                  text:
-                      "L. 317-2 I, L. 317-3 I, L. 317-4 I et L. 317-4-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00011",
+                    "Les articles ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " définissent et répriment les délits relatifs aux plaques et inscriptions apposées sur les véhicules.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00012",
+                    "L. 317-2 I, L. 317-3 I, L. 317-4 I et L. 317-4-1 I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00013",
+                    " définissent et répriment les délits relatifs aux plaques et inscriptions apposées sur les véhicules.",
+                  ),
                 ),
               ]),
             ],
@@ -146,30 +194,56 @@ class PlaquesInscriptionsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tout véhicule, au moment de sa fabrication, est doté de plaques et inscriptions apposées par le constructeur "
-                "(marque, type, cylindrée, numéro de série, poids, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00015",
+                      "Tout véhicule, au moment de sa fabrication, est doté de plaques et inscriptions apposées par le constructeur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00016",
+                      "(marque, type, cylindrée, numéro de série, poids, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dès la première mise en circulation, l’acquéreur doit faire installer des plaques reproduisant le numéro "
-                "d’immatriculation inscrit sur le certificat d’immatriculation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00017",
+                      "Dès la première mise en circulation, l’acquéreur doit faire installer des plaques reproduisant le numéro ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00018",
+                      "d’immatriculation inscrit sur le certificat d’immatriculation.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Références réglementaires : "),
                 TextSpan(
-                  text:
-                      "articles R. 317-8, R. 317-12 et R. 322-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00019",
+                    "Références réglementaires : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00020",
+                    "articles R. 317-8, R. 317-12 et R. 322-1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -177,77 +251,130 @@ class PlaquesInscriptionsPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "A) Usage de plaque/inscription fausse (fausses plaques)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00021",
+                  "A) Usage de plaque/inscription fausse (fausses plaques)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 317-2 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00022",
+                    "Article L. 317-2 I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : faire usage d’une plaque ou d’une inscription exigée portant un numéro, un nom ou un domicile faux ou supposé.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00023",
+                    " : faire usage d’une plaque ou d’une inscription exigée portant un numéro, un nom ou un domicile faux ou supposé.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Il s’agit de l’utilisation de « fausses plaques » : apposition ou usage de plaques/inscriptions comportant des indications "
-                "ne correspondant pas au certificat d’immatriculation.",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("B) Circuler sans plaques + fausse déclaration"),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article L. 317-3 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " : faire circuler un véhicule sans plaques/inscriptions exigées et, en outre, déclarer un numéro/nom/domicile autre que le sien ou celui du propriétaire.",
-                ),
-              ]),
-              SizedBox(height: 10),
-              _Paragraph(
-                "Sont visés les véhicules démunis de plaques pour lesquels le conducteur déclare de fausses informations "
-                "concernant l’identification du véhicule ou du propriétaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00024",
+                      "Il s’agit de l’utilisation de « fausses plaques » : apposition ou usage de plaques/inscriptions comportant des indications ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00025",
+                      "ne correspondant pas au certificat d’immatriculation.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Plaque/inscription ne correspondant pas à la qualité du véhicule ou de l’utilisateur",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00026",
+                  "B) Circuler sans plaques + fausse déclaration",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 317-4 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00027",
+                    "Article L. 317-3 I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : mettre en circulation un véhicule muni d’une plaque ou d’une inscription ne correspondant pas à la qualité du véhicule ou à celle de l’utilisateur.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00028",
+                    " : faire circuler un véhicule sans plaques/inscriptions exigées et, en outre, déclarer un numéro/nom/domicile autre que le sien ou celui du propriétaire.",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00029",
+                      "Sont visés les véhicules démunis de plaques pour lesquels le conducteur déclare de fausses informations ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00030",
+                      "concernant l’identification du véhicule ou du propriétaire.",
+                    ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00031",
+                  "C) Plaque/inscription ne correspondant pas à la qualité du véhicule ou de l’utilisateur",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00032",
+                    "Article L. 317-4 I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00033",
+                    " : mettre en circulation un véhicule muni d’une plaque ou d’une inscription ne correspondant pas à la qualité du véhicule ou à celle de l’utilisateur.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00034",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Utilisation de plaques et documents administratifs d’un véhicule accidenté pour mettre en service un autre véhicule non assuré ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00035",
+                      "Utilisation de plaques et documents administratifs d’un véhicule accidenté pour mettre en service un autre véhicule non assuré ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 15 février 1978)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00036",
+                      "(Cass. crim., 15 février 1978)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -260,27 +387,52 @@ class PlaquesInscriptionsPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) Usurpation de plaque (numéro attribué à un autre véhicule)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00037",
+                  "D) Usurpation de plaque (numéro attribué à un autre véhicule)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 317-4-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00038",
+                    "Article L. 317-4-1 I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : mettre en circulation ou faire circuler un véhicule muni d’une plaque portant un numéro attribué à un autre véhicule, "
-                      "dans des circonstances ayant déterminé ou pouvant déterminer des poursuites pénales contre un tiers.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                        "f00039",
+                        " : mettre en circulation ou faire circuler un véhicule muni d’une plaque portant un numéro attribué à un autre véhicule, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                        "f00040",
+                        "dans des circonstances ayant déterminé ou pouvant déterminer des poursuites pénales contre un tiers.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Il s’agit notamment d’utiliser un numéro d’immatriculation que l’on sait déjà attribué à un autre véhicule, "
-                "afin de commettre une ou plusieurs infractions susceptibles d’entraîner des poursuites à l’encontre du titulaire "
-                "du certificat d’immatriculation correspondant à ce numéro.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00041",
+                      "Il s’agit notamment d’utiliser un numéro d’immatriculation que l’on sait déjà attribué à un autre véhicule, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00042",
+                      "afin de commettre une ou plusieurs infractions susceptibles d’entraîner des poursuites à l’encontre du titulaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00043",
+                      "du certificat d’immatriculation correspondant à ce numéro.",
+                    ),
               ),
             ],
           ),
@@ -289,16 +441,32 @@ class PlaquesInscriptionsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+              "f00044",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Intention"),
               _Paragraph(
-                "L’auteur agit intentionnellement et en toute connaissance de cause : "
-                "conscience et volonté de ne pas respecter les règles prescrites en matière d’immatriculation, "
-                "de plaques et d’inscriptions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00045",
+                      "L’auteur agit intentionnellement et en toute connaissance de cause : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00046",
+                      "conscience et volonté de ne pas respecter les règles prescrites en matière d’immatriculation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                      "f00047",
+                      "de plaques et d’inscriptions.",
+                    ),
               ),
             ],
           ),
@@ -307,13 +475,21 @@ class PlaquesInscriptionsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+              "f00048",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Aucune circonstance aggravante prévue par ces textes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00049",
+                  "Aucune circonstance aggravante prévue par ces textes.",
+                ),
               ),
             ],
           ),
@@ -322,63 +498,114 @@ class PlaquesInscriptionsPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+              "f00050",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00051",
+                  "Peines encourues",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délits prévus par "),
                 TextSpan(
-                  text:
-                      "L. 317-2 I, L. 317-3 I et L. 317-4 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00052",
+                    "Délits prévus par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00053",
+                    "L. 317-2 I, L. 317-3 I et L. 317-4 I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 3 750 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00054",
+                    "5 ans d’emprisonnement et 3 750 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Délit prévu par "),
                 TextSpan(
-                  text: "L. 317-4-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00055",
+                    "Délit prévu par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00056",
+                    "L. 317-4-1 I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 30 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00057",
+                    "7 ans d’emprisonnement et 30 000 € d’amende.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00058",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                  "f00059",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00060",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00061",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                    "f00062",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -388,8 +615,16 @@ class PlaquesInscriptionsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La complicité est punissable au regard de l’infraction consommée, comme au regard de l’infraction tentée. "
-                        "Elle suppose un fait matériel de complicité prévu par la loi et l’intention de s’associer à l’action de l’auteur principal.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                          "f00063",
+                          "La complicité est punissable au regard de l’infraction consommée, comme au regard de l’infraction tentée. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/plaques_inscriptions_page.dart",
+                          "f00064",
+                          "Elle suppose un fait matériel de complicité prévu par la loi et l’intention de s’associer à l’action de l’auteur principal.",
+                        ),
                   ),
                 ],
               ),

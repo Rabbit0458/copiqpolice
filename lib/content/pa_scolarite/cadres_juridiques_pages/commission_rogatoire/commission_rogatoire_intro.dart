@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -18,7 +19,8 @@ class PaCommissionRogatoireIntroPage extends StatefulWidget {
   const PaCommissionRogatoireIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/commission_rogatoire_intro';
+  static const String routeName =
+      '/pa/dps_dpg/cadres_juridiques/commission_rogatoire_intro';
 
   @override
   State<PaCommissionRogatoireIntroPage> createState() =>
@@ -35,7 +37,8 @@ class _CommissionRogatoireIntroPageState
   static const BoxFit _kFit = BoxFit.cover;
 
   // Cible : ta page contenu existante
-  static const String _kTargetRouteName = PaCommissionRogatoireContenuPage.routeName;
+  static const String _kTargetRouteName =
+      PaCommissionRogatoireContenuPage.routeName;
 
   // Animations
   late final AnimationController _fadeCtrl = AnimationController(
@@ -56,7 +59,11 @@ class _CommissionRogatoireIntroPageState
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LA COMMISSION ROGATOIRE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_intro.dart",
+    "f00001",
+    'LA COMMISSION ROGATOIRE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -163,7 +170,11 @@ class _CommissionRogatoireIntroPageState
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Comprendre la commission rogatoire et son rôle dans les enquêtes judiciaires.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_intro.dart",
+                        "f00002",
+                        "Comprendre la commission rogatoire et son rôle dans les enquêtes judiciaires.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -278,7 +289,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_intro.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — RÉPRESSION DE LA COMPLICITÉ
@@ -42,10 +43,18 @@ class CompliciteRepressionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Répression de la complicité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+            "f00002",
+            'Répression de la complicité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -59,7 +68,11 @@ class CompliciteRepressionPage extends StatelessWidget {
         children: [
           // En-tête
           Text(
-            'I. La répression de la complicité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+              "f00003",
+              'I. La répression de la complicité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -67,10 +80,20 @@ class CompliciteRepressionPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          const _Paragraph.rich([
-            TextSpan(text: 'Selon les termes de '),
+          _Paragraph.rich([
             TextSpan(
-              text: 'l’article 121-6 du Code pénal',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                "f00004",
+                'Selon les termes de ',
+              ),
+            ),
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                "f00005",
+                'l’article 121-6 du Code pénal',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 decoration: TextDecoration.underline,
@@ -78,38 +101,86 @@ class CompliciteRepressionPage extends StatelessWidget {
             ),
             TextSpan(
               text:
-                  ', le complice est puni comme auteur. La question est donc de savoir '
-                  'comment cette équivalence de principe s’applique concrètement aux peines.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00006",
+                    ', le complice est puni comme auteur. La question est donc de savoir ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00007",
+                    'comment cette équivalence de principe s’applique concrètement aux peines.',
+                  ),
             ),
           ]),
           const SizedBox(height: 18),
 
           // 3.1 Sens de la règle
           _SectionCard(
-            title: '1. Sens de la règle',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+              "f00008",
+              '1. Sens de la règle',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les peines encourues par l’auteur et le complice de l’infraction sont les mêmes : '
-                'en théorie, chacun répond de l’infraction comme s’il en était l’auteur principal. '
-                'Cependant, le juge n’a pas l’obligation de prononcer des peines identiques.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00009",
+                      'Les peines encourues par l’auteur et le complice de l’infraction sont les mêmes : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00010",
+                      'en théorie, chacun répond de l’infraction comme s’il en était l’auteur principal. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00011",
+                      'Cependant, le juge n’a pas l’obligation de prononcer des peines identiques.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                'Cette règle permet de prendre en compte le rôle réel joué par le complice dans la commission de l’infraction, '
-                'tout en lui appliquant le même barème légal de peines que celui prévu pour l’auteur.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00012",
+                      'Cette règle permet de prendre en compte le rôle réel joué par le complice dans la commission de l’infraction, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00013",
+                      'tout en lui appliquant le même barème légal de peines que celui prévu pour l’auteur.',
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Idée clé',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00014",
+                  'Idée clé',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Complice et auteur encourent en principe la même peine légale, '
-                        'mais la peine effectivement prononcée peut varier en fonction de la personnalité de chacun '
-                        'et des circonstances qui leur sont propres.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                          "f00015",
+                          'Complice et auteur encourent en principe la même peine légale, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                          "f00016",
+                          'mais la peine effectivement prononcée peut varier en fonction de la personnalité de chacun ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                          "f00017",
+                          'et des circonstances qui leur sont propres.',
+                        ),
                   ),
                 ],
               ),
@@ -120,42 +191,93 @@ class CompliciteRepressionPage extends StatelessWidget {
 
           // 3.2 Application de la règle
           _SectionCard(
-            title: '2. Application de la règle',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+              "f00018",
+              '2. Application de la règle',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
-              _Paragraph('Dans la pratique, le complice peut être puni :'),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00019",
+                  'Dans la pratique, le complice peut être puni :',
+                ),
+              ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    'd’une peine plus forte que l’auteur principal, si sa situation personnelle le justifie ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00020",
+                  'd’une peine plus forte que l’auteur principal, si sa situation personnelle le justifie ;',
+                ),
               ),
               _BulletPoint(
-                text: 'd’une peine équivalente à celle de l’auteur ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00021",
+                  'd’une peine équivalente à celle de l’auteur ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'ou d’une peine inférieure, s’il bénéficie de circonstances atténuantes.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00022",
+                  'ou d’une peine inférieure, s’il bénéficie de circonstances atténuantes.',
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                'Le juge apprécie donc la peine du complice à la lumière des circonstances qui aggravent ou atténuent '
-                'sa responsabilité. D’où la distinction entre circonstances personnelles, réelles et mixtes.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00023",
+                      'Le juge apprécie donc la peine du complice à la lumière des circonstances qui aggravent ou atténuent ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00024",
+                      'sa responsabilité. D’où la distinction entre circonstances personnelles, réelles et mixtes.',
+                    ),
               ),
 
               SizedBox(height: 16),
-              _SubTitle('2.1 — Les circonstances personnelles à l’auteur'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00025",
+                  '2.1 — Les circonstances personnelles à l’auteur',
+                ),
+              ),
               _Paragraph(
-                'Les circonstances personnelles sont celles qui atteignent ou aggravent la culpabilité de l’auteur lui-même '
-                '(ex. état de démence, contrainte, qualité de récidiviste, minorité, etc.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00026",
+                      'Les circonstances personnelles sont celles qui atteignent ou aggravent la culpabilité de l’auteur lui-même ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00027",
+                      '(ex. état de démence, contrainte, qualité de récidiviste, minorité, etc.).',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: 'Elles ne sont pas applicables au complice : '),
                 TextSpan(
-                  text:
-                      'chacun reste jugé selon ses propres caractéristiques personnelles.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00028",
+                    'Elles ne sont pas applicables au complice : ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00029",
+                    'chacun reste jugé selon ses propres caractéristiques personnelles.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
@@ -165,36 +287,75 @@ class CompliciteRepressionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        '• L’auteur est en état de démence ou contraint : il peut être déclaré pénalement irresponsable, '
-                        'alors que le complice, pleinement conscient, demeure punissable.\n',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                          "f00030",
+                          '• L’auteur est en état de démence ou contraint : il peut être déclaré pénalement irresponsable, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                          "f00031",
+                          'alors que le complice, pleinement conscient, demeure punissable.\n',
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        '• L’auteur est récidiviste : l’aggravation de peine liée à la récidive ne s’étend pas automatiquement au complice qui ne l’est pas.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00032",
+                      '• L’auteur est récidiviste : l’aggravation de peine liée à la récidive ne s’étend pas automatiquement au complice qui ne l’est pas.',
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 16),
               _SubTitle(
-                '2.2 — Les circonstances réelles qui touchent à la matérialité de l’acte',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00033",
+                  '2.2 — Les circonstances réelles qui touchent à la matérialité de l’acte',
+                ),
               ),
               _Paragraph(
-                'Les circonstances réelles sont des circonstances de fait qui modifient '
-                'la nature ou la gravité de l’infraction (ex. réunion, usage d’une arme, '
-                'commission de nuit, etc.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00034",
+                      'Les circonstances réelles sont des circonstances de fait qui modifient ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00035",
+                      'la nature ou la gravité de l’infraction (ex. réunion, usage d’une arme, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00036",
+                      'commission de nuit, etc.).',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: 'Ces circonstances aggravantes ou atténuantes '),
                 TextSpan(
-                  text:
-                      's’étendent au complice, même s’il en ignorait l’existence, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00037",
+                    'Ces circonstances aggravantes ou atténuantes ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00038",
+                    's’étendent au complice, même s’il en ignorait l’existence, ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
-                  text:
-                      'dès lors qu’elles sont liées à l’acte lui-même et non à la personne de l’auteur.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00039",
+                    'dès lors qu’elles sont liées à l’acte lui-même et non à la personne de l’auteur.',
+                  ),
                 ),
               ]),
               SizedBox(height: 6),
@@ -203,52 +364,111 @@ class CompliciteRepressionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La réunion pour un vol aggravé : même si le complice ignorait que l’auteur agirait avec un autre individu, '
-                        'l’aggravation liée à la réunion s’applique également à lui, car elle touche à la matérialité de l’acte de vol.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                          "f00040",
+                          'La réunion pour un vol aggravé : même si le complice ignorait que l’auteur agirait avec un autre individu, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                          "f00041",
+                          'l’aggravation liée à la réunion s’applique également à lui, car elle touche à la matérialité de l’acte de vol.',
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 16),
-              _SubTitle('2.3 — Les circonstances mixtes (personne + acte)'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00042",
+                  '2.3 — Les circonstances mixtes (personne + acte)',
+                ),
+              ),
               _Paragraph(
-                'Les circonstances mixtes concernent à la fois la personne de l’auteur et l’acte. '
-                'Elles procèdent de la qualité ou de la situation personnelle de l’auteur, '
-                'mais se répercutent sur l’acte en modifiant la nature de l’infraction.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00043",
+                      'Les circonstances mixtes concernent à la fois la personne de l’auteur et l’acte. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00044",
+                      'Elles procèdent de la qualité ou de la situation personnelle de l’auteur, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00045",
+                      'mais se répercutent sur l’acte en modifiant la nature de l’infraction.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Exemples : infractions aggravées du fait des fonctions professionnelles de l’auteur, '
-                'de l’existence d’un lien familial entre l’auteur et la victime, ou encore de la préméditation de l’acte.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00046",
+                      'Exemples : infractions aggravées du fait des fonctions professionnelles de l’auteur, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00047",
+                      'de l’existence d’un lien familial entre l’auteur et la victime, ou encore de la préméditation de l’acte.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Une question s’est alors posée : ces circonstances aggravantes liées à la qualité de l’auteur principal '
-                      'sont-elles applicables au complice ? ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                        "f00048",
+                        'Une question s’est alors posée : ces circonstances aggravantes liées à la qualité de l’auteur principal ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                        "f00049",
+                        'sont-elles applicables au complice ? ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'La Cour de cassation a répondu par l’affirmative.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                    "f00050",
+                    'La Cour de cassation a répondu par l’affirmative.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
               SizedBox(height: 6),
               _NotaBox(
-                title: 'Arrêt du 7 septembre 2005',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                  "f00051",
+                  'Arrêt du 7 septembre 2005',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Dans un arrêt du 7 septembre 2005 (n° 04-84.235), la Cour de cassation a jugé que ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00052",
+                      'Dans un arrêt du 7 septembre 2005 (n° 04-84.235), la Cour de cassation a jugé que ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        '« sont applicables au complice des circonstances aggravantes liées à la qualité de l’auteur principal »',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00053",
+                      '« sont applicables au complice des circonstances aggravantes liées à la qualité de l’auteur principal »',
+                    ),
                     style: TextStyle(fontStyle: FontStyle.italic),
                   ),
                   TextSpan(
-                    text:
-                        ' : ainsi, la circonstance tirée de la qualité de fonctionnaire, par exemple, peut aggraver la peine du complice même s’il n’a pas cette qualité.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_repression_page.dart",
+                      "f00054",
+                      ' : ainsi, la circonstance tirée de la qualité de fonctionnaire, par exemple, peut aggraver la peine du complice même s’il n’a pas cette qualité.',
+                    ),
                   ),
                 ],
               ),

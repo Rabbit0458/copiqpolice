@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// La sanction — portail de la classification des peines et mesures de sûreté.
 class PaClassificationPeinesPage extends StatelessWidget {
@@ -25,12 +26,20 @@ class PaClassificationPeinesPage extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         leading: IconButton(
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+            "f00001",
+            'Retour',
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
         title: Text(
-          'Classification des peines',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+            "f00002",
+            'Classification des peines',
+          ),
           style: GoogleFonts.fustat(fontSize: 18, fontWeight: FontWeight.w800),
         ),
       ),
@@ -40,83 +49,151 @@ class PaClassificationPeinesPage extends StatelessWidget {
         children: [
           _HeroCard(isDark: isDark),
           const SizedBox(height: 22),
-          const _SectionTitle(
+          _SectionTitle(
             eyebrow: 'PARCOURS',
-            title: 'Deux notions à distinguer',
-            subtitle:
-                'Commence par les peines, puis étudie la prévention du risque.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00003",
+              'Deux notions à distinguer',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00004",
+              'Commence par les peines, puis étudie la prévention du risque.',
+            ),
           ),
           const SizedBox(height: 12),
-          const _CourseTile(
+          _CourseTile(
             index: '01',
             icon: Icons.gavel_rounded,
-            title: 'Classification légale des peines',
-            subtitle: 'Crimes, délits, contraventions et peines applicables',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00005",
+              'Classification légale des peines',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00006",
+              'Crimes, délits, contraventions et peines applicables',
+            ),
             route:
                 '/pa/dps_dpg/sanctions/classification_peines/classification_legale_peines',
           ),
           const SizedBox(height: 10),
-          const _CourseTile(
+          _CourseTile(
             index: '02',
             icon: Icons.health_and_safety_outlined,
-            title: 'Mesures de sûreté',
-            subtitle: 'Prévenir la récidive, surveiller et accompagner',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00007",
+              'Mesures de sûreté',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00008",
+              'Prévenir la récidive, surveiller et accompagner',
+            ),
             route:
                 '/pa/dps_dpg/sanctions/classification_peines/classification_mesures_surete',
           ),
           const SizedBox(height: 24),
-          const _SectionTitle(
-            eyebrow: 'REPÈRES',
-            title: 'Les trois natures de peines',
-            subtitle:
-                'La qualification de l’infraction détermine l’échelle applicable.',
+          _SectionTitle(
+            eyebrow: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00009",
+              'REPÈRES',
+            ),
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00010",
+              'Les trois natures de peines',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00011",
+              'La qualification de l’infraction détermine l’échelle applicable.',
+            ),
           ),
           const SizedBox(height: 12),
-          const _PenaltyCard(
+          _PenaltyCard(
             number: '01',
             title: 'Criminelles',
-            body:
-                'Réclusion ou détention criminelle. Compétence de la cour d’assises.',
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00012",
+              'Réclusion ou détention criminelle. Compétence de la cour d’assises.',
+            ),
             icon: Icons.account_balance_rounded,
           ),
           const SizedBox(height: 10),
-          const _PenaltyCard(
+          _PenaltyCard(
             number: '02',
             title: 'Correctionnelles',
-            body:
-                'Emprisonnement, amende délictuelle, travail d’intérêt général.',
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00013",
+              'Emprisonnement, amende délictuelle, travail d’intérêt général.',
+            ),
             icon: Icons.balance_rounded,
           ),
           const SizedBox(height: 10),
-          const _PenaltyCard(
+          _PenaltyCard(
             number: '03',
             title: 'Contraventionnelles',
-            body: 'Amendes de la 1re à la 5e classe et sanctions spécifiques.',
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00014",
+              'Amendes de la 1re à la 5e classe et sanctions spécifiques.',
+            ),
             icon: Icons.receipt_long_outlined,
           ),
           const SizedBox(height: 24),
-          const _SectionTitle(
-            eyebrow: 'À RETENIR',
-            title: 'Articuler la réponse pénale',
-            subtitle: 'Trois familles complémentaires à ne pas confondre.',
+          _SectionTitle(
+            eyebrow: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00015",
+              'À RETENIR',
+            ),
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00016",
+              'Articuler la réponse pénale',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00017",
+              'Trois familles complémentaires à ne pas confondre.',
+            ),
           ),
           const SizedBox(height: 12),
-          const Row(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                 child: _PrincipleCard(
                   icon: Icons.looks_one_outlined,
                   title: 'Principale',
-                  body: 'La sanction de référence.',
+                  body: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+                    "f00018",
+                    'La sanction de référence.',
+                  ),
                 ),
               ),
               SizedBox(width: 8),
               Expanded(
                 child: _PrincipleCard(
                   icon: Icons.add_circle_outline_rounded,
-                  title: 'Complémentaire',
-                  body: 'S’ajoute si la loi le prévoit.',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+                    "f00019",
+                    'Complémentaire',
+                  ),
+                  body: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+                    "f00020",
+                    'S’ajoute si la loi le prévoit.',
+                  ),
                 ),
               ),
               SizedBox(width: 8),
@@ -124,29 +201,57 @@ class PaClassificationPeinesPage extends StatelessWidget {
                 child: _PrincipleCard(
                   icon: Icons.alt_route_rounded,
                   title: 'Alternative',
-                  body: 'Se substitue à une peine.',
+                  body: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+                    "f00021",
+                    'Se substitue à une peine.',
+                  ),
                 ),
               ),
             ],
           ),
           const SizedBox(height: 24),
-          const _SectionTitle(
+          _SectionTitle(
             eyebrow: 'CONTINUER',
-            title: 'Cours associés',
-            subtitle: 'Replace la peine dans le raisonnement pénal complet.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00022",
+              'Cours associés',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00023",
+              'Replace la peine dans le raisonnement pénal complet.',
+            ),
           ),
           const SizedBox(height: 12),
-          const _RelatedTile(
+          _RelatedTile(
             icon: Icons.trending_up_rounded,
-            title: 'Causes d’aggravation',
-            subtitle: 'Récidive et circonstances aggravantes',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00024",
+              'Causes d’aggravation',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00025",
+              'Récidive et circonstances aggravantes',
+            ),
             route: '/pa/dps_dpg/sanctions/causes_aggravation',
           ),
           const SizedBox(height: 10),
-          const _RelatedTile(
+          _RelatedTile(
             icon: Icons.account_tree_outlined,
-            title: 'Pluralité d’infractions',
-            subtitle: 'Concours, cumul et confusion des peines',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00026",
+              'Pluralité d’infractions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+              "f00027",
+              'Concours, cumul et confusion des peines',
+            ),
             route: '/pa/dps_dpg/sanctions/pluralite_infractions',
           ),
         ],
@@ -163,7 +268,11 @@ class _HeroCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Semantics(
       container: true,
-      label: 'Introduction à la classification des peines',
+      label: ScolariteText.value(
+        "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+        "f00028",
+        'Introduction à la classification des peines',
+      ),
       child: Container(
         height: 218,
         clipBehavior: Clip.antiAlias,
@@ -204,7 +313,11 @@ class _HeroCard extends StatelessWidget {
                   const _HeroBadge(),
                   const Spacer(),
                   Text(
-                    'Peines & mesures\nde sûreté',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+                      "f00029",
+                      'Peines & mesures\nde sûreté',
+                    ),
                     style: GoogleFonts.fustat(
                       color: Colors.white,
                       fontSize: 27,
@@ -214,7 +327,11 @@ class _HeroCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 7),
                   Text(
-                    'Qualifier la sanction, comprendre son rôle et son articulation.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+                      "f00030",
+                      'Qualifier la sanction, comprendre son rôle et son articulation.',
+                    ),
                     maxLines: 2,
                     style: GoogleFonts.fustat(
                       color: Colors.white.withValues(alpha: .82),
@@ -243,7 +360,11 @@ class _HeroBadge extends StatelessWidget {
       borderRadius: BorderRadius.circular(999),
     ),
     child: Text(
-      'LA SANCTION',
+      ScolariteText.value(
+        "lib/content/pa_scolarite/sanction_pages/classification_peines_page.dart",
+        "f00031",
+        'LA SANCTION',
+      ),
       style: GoogleFonts.fustat(
         color: PaClassificationPeinesPage._navy,
         fontSize: 11,

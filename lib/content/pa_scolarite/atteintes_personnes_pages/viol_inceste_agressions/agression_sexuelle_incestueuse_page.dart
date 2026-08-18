@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
   const PaAgressionSexuelleIncestueusePage({super.key});
@@ -70,7 +71,11 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Agression sexuelle incestueuse",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+            "f00001",
+            "Agression sexuelle incestueuse",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,22 +91,46 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
             children: [
               // ✅ EXIGENCE : article légal en premier (et la référence 222-22-3 juste après)
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-29-3 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00003",
+                        "Article 222-29-3 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : définit et réprime l’agression sexuelle incestueuse.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00004",
+                        " : définit et réprime l’agression sexuelle incestueuse.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    lawRef("Article 222-22-3 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00005",
+                        "Article 222-22-3 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : détermine la liste des personnes pouvant être auteurs d’agressions sexuelles incestueuses (lien de parenté + autorité).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00006",
+                        " : détermine la liste des personnes pouvant être auteurs d’agressions sexuelles incestueuses (lien de parenté + autorité).",
+                      ),
                     ),
                   ]),
                 ],
@@ -110,36 +139,83 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                  "f00007",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
                 children: [
-                  const _Paragraph(
-                    "Hors le cas prévu pour l’agression imposée à un mineur de 15 ans par violence, contrainte, menace ou surprise, "
-                    "toute atteinte sexuelle autre qu’un viol commise par un majeur sur la personne d’un mineur, "
-                    "lorsque le majeur est un ascendant ou une personne mentionnée par la loi et qu’il exerce sur le mineur "
-                    "une autorité de droit ou de fait, constitue une agression sexuelle incestueuse.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00008",
+                          "Hors le cas prévu pour l’agression imposée à un mineur de 15 ans par violence, contrainte, menace ou surprise, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00009",
+                          "toute atteinte sexuelle autre qu’un viol commise par un majeur sur la personne d’un mineur, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00010",
+                          "lorsque le majeur est un ascendant ou une personne mentionnée par la loi et qu’il exerce sur le mineur ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00011",
+                          "une autorité de droit ou de fait, constitue une agression sexuelle incestueuse.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Exception rappelée : hors le cas visé par "),
-                    lawRef("l’article 222-29-1 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00012",
+                        "Exception rappelée : hors le cas visé par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00013",
+                        "l’article 222-29-1 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle("À retenir"),
-                  const _IntroBullet(
-                    text:
-                        "Acte sexuel sans pénétration ni acte bucco-génital (sinon on bascule vers le viol).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00014",
+                      "À retenir",
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        "Auteur majeur + victime mineure + lien de parenté listé par la loi + autorité de droit ou de fait.",
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00015",
+                      "Acte sexuel sans pénétration ni acte bucco-génital (sinon on bascule vers le viol).",
+                    ),
                   ),
-                  const _IntroBullet(
-                    text:
-                        "Le consentement du mineur ne se discute pas : pas besoin de violence/menace/surprise si les conditions incestueuses sont réunies.",
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00016",
+                      "Auteur majeur + victime mineure + lien de parenté listé par la loi + autorité de droit ou de fait.",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00017",
+                      "Le consentement du mineur ne se discute pas : pas besoin de violence/menace/surprise si les conditions incestueuses sont réunies.",
+                    ),
                   ),
                 ],
               ),
@@ -148,19 +224,47 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
 
               // I — Élément légal
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                  "f00018",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-29-3 du C.P."),
-                    normal(" : incrimine l’agression sexuelle incestueuse."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00019",
+                        "Article 222-29-3 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00020",
+                        " : incrimine l’agression sexuelle incestueuse.",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("La liste des auteurs possibles est fixée par "),
-                    lawRef("l’article 222-22-3 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00021",
+                        "La liste des auteurs possibles est fixée par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00022",
+                        "l’article 222-22-3 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                 ],
@@ -170,152 +274,395 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
 
               // II — Élément matériel
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                  "f00023",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle(
-                    "1) Un acte de nature sexuelle (autre qu’un viol)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00024",
+                      "1) Un acte de nature sexuelle (autre qu’un viol)",
+                    ),
                   ),
-                  const _Paragraph(
-                    "L’atteinte sexuelle suppose un contact physique entre l’agresseur et la victime. "
-                    "Elle se définit comme tout acte impudique autre qu’une pénétration ou un acte bucco-génital, "
-                    "directement exercé sur une personne.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00025",
+                          "L’atteinte sexuelle suppose un contact physique entre l’agresseur et la victime. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00026",
+                          "Elle se définit comme tout acte impudique autre qu’une pénétration ou un acte bucco-génital, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00027",
+                          "directement exercé sur une personne.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
                     normal(
-                      "Si l’auteur se livre à un acte immoral ou obscène sur lui-même en présence de témoins, il peut s’agir d’",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00028",
+                        "Si l’auteur se livre à un acte immoral ou obscène sur lui-même en présence de témoins, il peut s’agir d’",
+                      ),
                     ),
-                    lawRef("exhibition sexuelle (art. 222-32 C.P.)"),
-                    normal(" ou d’"),
                     lawRef(
-                      "incitation à la corruption de mineur (art. 227-22 C.P.)",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00029",
+                        "exhibition sexuelle (art. 222-32 C.P.)",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00030",
+                        " ou d’",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00031",
+                        "incitation à la corruption de mineur (art. 227-22 C.P.)",
+                      ),
                     ),
                     normal("."),
                   ]),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "L’atteinte sexuelle peut être commise par l’auteur sur la victime, ou correspondre à un acte effectué par la victime "
-                    "sur l’auteur (victime contrainte).",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00032",
+                          "L’atteinte sexuelle peut être commise par l’auteur sur la victime, ou correspondre à un acte effectué par la victime ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00033",
+                          "sur l’auteur (victime contrainte).",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00034",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Exemples fréquents : attouchements/caresses (sexe, fesses, cuisses, poitrine), éventuellement accompagnés de baisers "
-                        "(C.A. Paris, 19 juin 1985). "
-                        "Caresser le dos de la victime en passant la main sous son pull-over (C.A. Agen, 27 octobre 1997).",
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                              "f00035",
+                              "Exemples fréquents : attouchements/caresses (sexe, fesses, cuisses, poitrine), éventuellement accompagnés de baisers ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                              "f00036",
+                              "(C.A. Paris, 19 juin 1985). ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                              "f00037",
+                              "Caresser le dos de la victime en passant la main sous son pull-over (C.A. Agen, 27 octobre 1997).",
+                            ),
                       ),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("2) Un auteur majeur"),
-                  const _Paragraph(
-                    "Le texte vise exclusivement un auteur majeur : les actes accomplis entre mineurs sont exclus de ce champ d’incrimination.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00038",
+                      "2) Un auteur majeur",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00039",
+                      "Le texte vise exclusivement un auteur majeur : les actes accomplis entre mineurs sont exclus de ce champ d’incrimination.",
+                    ),
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("3) Une victime mineure"),
-                  const _SubTitle("• Victime vivante"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00040",
+                      "3) Une victime mineure",
+                    ),
+                  ),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00041",
+                      "• Victime vivante",
+                    ),
+                  ),
                   _Paragraph.rich([
                     normal(
-                      "Il ne peut y avoir agression sexuelle sur un cadavre. Cela relève d’une infraction autonome : ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00042",
+                        "Il ne peut y avoir agression sexuelle sur un cadavre. Cela relève d’une infraction autonome : ",
+                      ),
                     ),
-                    lawRef("article 225-17 du C.P."),
-                    normal(" (atteinte à l’intégrité du cadavre)."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00043",
+                        "article 225-17 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00044",
+                        " (atteinte à l’intégrité du cadavre).",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle("• Mineur de moins de 18 ans"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00045",
+                      "• Mineur de moins de 18 ans",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("L’âge à retenir est celui au moment des faits ("),
-                    normal("Cass. crim., 21 mars 1957"),
-                    normal("). L’âge se calcule d’heure à heure ("),
-                    normal("Cass. crim., 3 septembre 1985"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00046",
+                        "L’âge à retenir est celui au moment des faits (",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00047",
+                        "Cass. crim., 21 mars 1957",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00048",
+                        "). L’âge se calcule d’heure à heure (",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00049",
+                        "Cass. crim., 3 septembre 1985",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
                     normal(
-                      "À défaut d’acte probant, la preuve de l’âge peut se faire par tout moyen (",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00050",
+                        "À défaut d’acte probant, la preuve de l’âge peut se faire par tout moyen (",
+                      ),
                     ),
-                    normal("Cass. crim., 17 juillet 1991"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00051",
+                        "Cass. crim., 17 juillet 1991",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Le texte n’exige pas que la minorité soit apparente ou connue : le mineur bénéficie d’une protection particulière.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00052",
+                      "Le texte n’exige pas que la minorité soit apparente ou connue : le mineur bénéficie d’une protection particulière.",
+                    ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "La question du consentement ne se pose pas : un mineur n’est pas apte à consentir à un acte sexuel avec un majeur "
-                    "lorsqu’il existe certains liens de parenté et un rapport d’autorité. "
-                    "Il n’est donc pas nécessaire de prouver violence, contrainte, menace ou surprise.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00053",
+                          "La question du consentement ne se pose pas : un mineur n’est pas apte à consentir à un acte sexuel avec un majeur ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00054",
+                          "lorsqu’il existe certains liens de parenté et un rapport d’autorité. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00055",
+                          "Il n’est donc pas nécessaire de prouver violence, contrainte, menace ou surprise.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
                     title: "NOTA",
                     bodySpans: [
                       normal(
-                        "Si la victime est majeure, l’incrimination d’agression sexuelle de ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00056",
+                          "Si la victime est majeure, l’incrimination d’agression sexuelle de ",
+                        ),
                       ),
-                      lawRef("l’article 222-27 du C.P."),
+                      lawRef(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00057",
+                          "l’article 222-27 du C.P.",
+                        ),
+                      ),
                       normal(
-                        " peut être retenue en cas de violence, contrainte, menace ou surprise. "
-                        "La « surqualification » incestueuse (",
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                              "f00058",
+                              " peut être retenue en cas de violence, contrainte, menace ou surprise. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                              "f00059",
+                              "La « surqualification » incestueuse (",
+                            ),
                       ),
-                      lawRef("art. 222-22-3 C.P."),
-                      normal(") pourra alors s’appliquer."),
+                      lawRef(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00060",
+                          "art. 222-22-3 C.P.",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00061",
+                          ") pourra alors s’appliquer.",
+                        ),
+                      ),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "4) Lien de parenté direct ou indirect (liste exhaustive)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00062",
+                      "4) Lien de parenté direct ou indirect (liste exhaustive)",
+                    ),
                   ),
                   _Paragraph.rich([
-                    normal("La liste des liens de parenté est fixée par "),
-                    lawRef("l’article 222-22-3 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00063",
+                        "La liste des liens de parenté est fixée par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00064",
+                        "l’article 222-22-3 du C.P.",
+                      ),
+                    ),
                     normal(" :"),
                   ]),
                   const SizedBox(height: 8),
-                  const _BulletPoint(
-                    text:
-                        "Ascendants : père, mère, aïeuls (légitimes, naturels ou adoptifs).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00065",
+                      "Ascendants : père, mère, aïeuls (légitimes, naturels ou adoptifs).",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Frères et sœurs ; oncles et tantes ; grands-oncles et grands-tantes ; neveux et nièces.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00066",
+                      "Frères et sœurs ; oncles et tantes ; grands-oncles et grands-tantes ; neveux et nièces.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Conjoints et concubins de ces personnes, ou partenaires liés par un PACS.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00067",
+                      "Conjoints et concubins de ces personnes, ou partenaires liés par un PACS.",
+                    ),
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "5) Autorité de droit ou de fait sur la victime",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00068",
+                      "5) Autorité de droit ou de fait sur la victime",
+                    ),
                   ),
-                  const _Paragraph(
-                    "Le seul lien de parenté ne suffit pas : il faut démontrer l’existence d’une autorité sur le mineur. "
-                    "Elle peut être de droit (ex. parents) ou de fait (permanente ou discontinue), établie par des circonstances particulières.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00069",
+                          "Le seul lien de parenté ne suffit pas : il faut démontrer l’existence d’une autorité sur le mineur. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00070",
+                          "Elle peut être de droit (ex. parents) ou de fait (permanente ou discontinue), établie par des circonstances particulières.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00071",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Le partenaire lié à la tante de la victime par un PACS ne peut être qualifié d’auteur d’une agression incestueuse "
-                        "si l’existence d’une autorité de droit ou de fait sur la victime n’est pas rapportée (",
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                              "f00072",
+                              "Le partenaire lié à la tante de la victime par un PACS ne peut être qualifié d’auteur d’une agression incestueuse ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                              "f00073",
+                              "si l’existence d’une autorité de droit ou de fait sur la victime n’est pas rapportée (",
+                            ),
                       ),
-                      normal("Cass. crim., 15 mars 2023, n° 21-87.389"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00074",
+                          "Cass. crim., 15 mars 2023, n° 21-87.389",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
@@ -326,19 +673,43 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
 
               // III — Élément moral
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                  "f00075",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _SubTitle(
-                    "Conscience de commettre un acte immoral ou obscène",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00076",
+                      "Conscience de commettre un acte immoral ou obscène",
+                    ),
                   ),
                   _Paragraph(
-                    "Comme pour tout crime ou délit, l’agression sexuelle incestueuse exige une intention coupable. "
-                    "L’auteur sait qu’il commet un acte immoral ou obscène. "
-                    "Cette intention est presque toujours indissociable de l’acte matériel. "
-                    "Le mobile importe peu (vengeance, haine, lubricité, etc.).",
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00077",
+                          "Comme pour tout crime ou délit, l’agression sexuelle incestueuse exige une intention coupable. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00078",
+                          "L’auteur sait qu’il commet un acte immoral ou obscène. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00079",
+                          "Cette intention est presque toujours indissociable de l’acte matériel. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                          "f00080",
+                          "Le mobile importe peu (vengeance, haine, lubricité, etc.).",
+                        ),
                   ),
                 ],
               ),
@@ -347,13 +718,21 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
 
               // IV — Circonstances aggravantes
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                  "f00081",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "Aucune circonstance aggravante spécifique prévue par cette fiche.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00082",
+                      "Aucune circonstance aggravante spécifique prévue par cette fiche.",
+                    ),
                   ),
                 ],
               ),
@@ -362,32 +741,86 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
 
               // V — Répression / tentative / complicité
               _ConditionCard(
-                title: "V — Répression, tentative et complicité",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                  "f00083",
+                  "V — Répression, tentative et complicité",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines encourues (personnes physiques)"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00084",
+                      "Peines encourues (personnes physiques)",
+                    ),
+                  ),
                   _Paragraph.rich([
                     normal(
-                      "Qualification : agression sexuelle incestueuse — délit (",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00085",
+                        "Qualification : agression sexuelle incestueuse — délit (",
+                      ),
                     ),
-                    lawRef("article 222-29-3 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00086",
+                        "article 222-29-3 du C.P.",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                   const SizedBox(height: 10),
-                  const _BulletPoint(
-                    text: "Peine principale : 10 ans d’emprisonnement.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00087",
+                      "Peine principale : 10 ans d’emprisonnement.",
+                    ),
                   ),
-                  const _BulletPoint(text: "Amende : 150 000 €."),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00088",
+                      "Amende : 150 000 €.",
+                    ),
+                  ),
 
                   const SizedBox(height: 12),
 
                   _Paragraph.rich([
-                    normal("Responsabilité pénale des personnes morales : "),
-                    lawRef("article 222-33-1 du C.P."),
-                    normal(" (amende + peines complémentaires prévues à "),
-                    lawRef("l’article 131-39 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00089",
+                        "Responsabilité pénale des personnes morales : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00090",
+                        "article 222-33-1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00091",
+                        " (amende + peines complémentaires prévues à ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00092",
+                        "l’article 131-39 du C.P.",
+                      ),
+                    ),
                     normal(")."),
                   ]),
 
@@ -395,21 +828,59 @@ class PaAgressionSexuelleIncestueusePage extends StatelessWidget {
 
                   const _SubTitle("Tentative"),
                   _Paragraph.rich([
-                    normal("Tentative : OUI — prévue par "),
-                    lawRef("l’article 222-31 du C.P."),
                     normal(
-                      ". En pratique, la distinction est délicate : le commencement d’exécution correspond souvent à une agression déjà consommée.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00093",
+                        "Tentative : OUI — prévue par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00094",
+                        "l’article 222-31 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00095",
+                        ". En pratique, la distinction est délicate : le commencement d’exécution correspond souvent à une agression déjà consommée.",
+                      ),
                     ),
                   ]),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                      "f00096",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — punissable conformément aux "),
-                    lawRef("articles 121-6 et 121-7 du C.P."),
                     normal(
-                      ". Elle suppose un fait de complicité prévu par la loi : aide/assistance, provocation ou instructions données.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00097",
+                        "Complicité : OUI — punissable conformément aux ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00098",
+                        "articles 121-6 et 121-7 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart",
+                        "f00099",
+                        ". Elle suppose un fait de complicité prévu par la loi : aide/assistance, provocation ou instructions données.",
+                      ),
                     ),
                   ]),
                 ],

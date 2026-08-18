@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DiffusionProcedesFabricationEnginsDestructionPage
     extends StatelessWidget {
@@ -60,10 +61,18 @@ class DiffusionProcedesFabricationEnginsDestructionPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions & dégradations",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+            "f00002",
+            "Destructions & dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class DiffusionProcedesFabricationEnginsDestructionPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La diffusion de procédés permettant la fabrication d’engins de destruction",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+              "f00003",
+              "La diffusion de procédés permettant la fabrication d’engins de destruction",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,17 +103,41 @@ class DiffusionProcedesFabricationEnginsDestructionPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de diffuser par tout moyen, sauf à destination des professionnels, "
-                "des procédés permettant la fabrication d’engins de destruction élaborés à partir "
-                "de poudre ou de substances explosives, de matières nucléaires, biologiques ou chimiques, "
-                "ou à partir de tout autre produit destiné à l’usage domestique, industriel ou agricole, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00005",
+                      "Le fait de diffuser par tout moyen, sauf à destination des professionnels, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00006",
+                      "des procédés permettant la fabrication d’engins de destruction élaborés à partir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00007",
+                      "de poudre ou de substances explosives, de matières nucléaires, biologiques ou chimiques, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00008",
+                      "ou à partir de tout autre produit destiné à l’usage domestique, industriel ou agricole, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00009",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -109,22 +146,30 @@ class DiffusionProcedesFabricationEnginsDestructionPage
 
           // ✅ Élément légal en haut (exigence)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-6-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00011",
+                    "Article 322-6-1 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la diffusion de procédés permettant la fabrication d’engins de destruction.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00012",
+                    " : définit et réprime la diffusion de procédés permettant la fabrication d’engins de destruction.",
+                  ),
                 ),
               ]),
             ],
@@ -134,57 +179,125 @@ class DiffusionProcedesFabricationEnginsDestructionPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Des moyens de diffusion"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00014",
+                  "A) Des moyens de diffusion",
+                ),
+              ),
               _Paragraph(
-                "La diffusion doit être constatée : il faut qu’il existe une transmission vers une ou plusieurs personnes. "
-                "Tous les moyens de diffusion sont visés : courriers, tracts, affiches, revues, cassettes vidéos, communications électroniques, etc.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00015",
+                      "La diffusion doit être constatée : il faut qu’il existe une transmission vers une ou plusieurs personnes. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00016",
+                      "Tous les moyens de diffusion sont visés : courriers, tracts, affiches, revues, cassettes vidéos, communications électroniques, etc.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "B) Une diffusion à l’égard de tout public (sauf professionnels)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00017",
+                  "B) Une diffusion à l’égard de tout public (sauf professionnels)",
+                ),
               ),
               _Paragraph(
-                "L’incrimination peut être retenue dès lors que la diffusion intervient :\n"
-                "• soit à destination d’un correspondant déterminé (particulier), à titre privé ;\n"
-                "• soit à l’égard d’un public non identifié (ex. : site Internet).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00018",
+                      "L’incrimination peut être retenue dès lors que la diffusion intervient :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00019",
+                      "• soit à destination d’un correspondant déterminé (particulier), à titre privé ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00020",
+                      "• soit à l’égard d’un public non identifié (ex. : site Internet).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’infraction ne s’applique pas lorsque les diffusions interviennent dans un cadre strictement professionnel (ex. : chercheurs, investigations de services d’enquête).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00021",
+                      "L’infraction ne s’applique pas lorsque les diffusions interviennent dans un cadre strictement professionnel (ex. : chercheurs, investigations de services d’enquête).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "C) Des procédés permettant la fabrication d’engins de destruction",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00022",
+                  "C) Des procédés permettant la fabrication d’engins de destruction",
+                ),
               ),
               _Paragraph(
-                "Tous les « modes d’emploi » proposés sont concernés, qu’ils soient élaborés à partir :\n"
-                "• de poudre ou de substances explosives ;\n"
-                "• de matières nucléaires, biologiques ou chimiques ;\n"
-                "• ou de tout autre produit destiné à l’usage domestique, industriel ou agricole.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00023",
+                      "Tous les « modes d’emploi » proposés sont concernés, qu’ils soient élaborés à partir :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00024",
+                      "• de poudre ou de substances explosives ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00025",
+                      "• de matières nucléaires, biologiques ou chimiques ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00026",
+                      "• ou de tout autre produit destiné à l’usage domestique, industriel ou agricole.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’engin susceptible d’être confectionné à l’aide du mode d’emploi doit permettre d’envisager, en cas d’utilisation, "
-                "la mise en danger de l’intégrité physique des personnes et la destruction partielle ou totale d’un bien.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00027",
+                      "L’engin susceptible d’être confectionné à l’aide du mode d’emploi doit permettre d’envisager, en cas d’utilisation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00028",
+                      "la mise en danger de l’intégrité physique des personnes et la destruction partielle ou totale d’un bien.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Il s’agit d’engins de destruction en tout genre pouvant provoquer des dommages : incendies, explosions, contaminations (ex. : engins explosifs improvisés).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00029",
+                      "Il s’agit d’engins de destruction en tout genre pouvant provoquer des dommages : incendies, explosions, contaminations (ex. : engins explosifs improvisés).",
+                    ),
                   ),
                 ],
               ),
@@ -195,20 +308,48 @@ class DiffusionProcedesFabricationEnginsDestructionPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+              "f00030",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance du risque lié à la diffusion"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00031",
+                  "A) Connaissance du risque lié à la diffusion",
+                ),
+              ),
               _Paragraph(
-                "L’auteur n’ignore pas le risque couru en diffusant des modes d’emploi dont l’utilisation s’avère dangereuse pour les tiers, "
-                "et notamment pour les « apprentis artificiers ».",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00032",
+                      "L’auteur n’ignore pas le risque couru en diffusant des modes d’emploi dont l’utilisation s’avère dangereuse pour les tiers, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00033",
+                      "et notamment pour les « apprentis artificiers ».",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Diffusion sciemment d’un mode d’emploi"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00034",
+                  "B) Diffusion sciemment d’un mode d’emploi",
+                ),
+              ),
               _Paragraph(
-                "L’incrimination est retenue à l’encontre de la personne qui a sciemment diffusé un mode d’emploi destiné à fabriquer un engin de destruction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00035",
+                  "L’incrimination est retenue à l’encontre de la personne qui a sciemment diffusé un mode d’emploi destiné à fabriquer un engin de destruction.",
+                ),
               ),
             ],
           ),
@@ -217,25 +358,33 @@ class DiffusionProcedesFabricationEnginsDestructionPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+              "f00036",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-6-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00037",
+                    "Article 322-6-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque, pour la diffusion des procédés, est utilisé un réseau de communication électronique à destination d’un public non déterminé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00038",
+                  "Lorsque, pour la diffusion des procédés, est utilisé un réseau de communication électronique à destination d’un public non déterminé.",
+                ),
               ),
             ],
           ),
@@ -244,68 +393,136 @@ class DiffusionProcedesFabricationEnginsDestructionPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+              "f00039",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00040",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00041",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 322-6-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00042",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00043",
+                    "article 322-6-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00044",
+                    "Qualification aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 322-6-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00045",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00046",
+                    "article 322-6-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00047",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00048",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                    "f00049",
+                    "l’article 322-17 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00050",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00051",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               SizedBox(height: 6),
-              _BulletPoint(text: "Complicité : OUI."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                  "f00052",
+                  "Complicité : OUI.",
+                ),
+              ),
               SizedBox(height: 8),
               _Paragraph(
-                "La complicité est punissable au regard de l’infraction consommée (personne physique ou morale). "
-                "Elle suppose un fait de complicité prévu par la loi et l’intention de s’associer à l’action de l’auteur principal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00053",
+                      "La complicité est punissable au regard de l’infraction consommée (personne physique ou morale). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart",
+                      "f00054",
+                      "Elle suppose un fait de complicité prévu par la loi et l’intention de s’associer à l’action de l’auteur principal.",
+                    ),
               ),
             ],
           ),
@@ -561,9 +778,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

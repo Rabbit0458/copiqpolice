@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuditionGavPage extends StatelessWidget {
   const AuditionGavPage({super.key});
@@ -49,10 +50,18 @@ class AuditionGavPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Audition GAV",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+            "f00002",
+            "Audition GAV",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -67,7 +76,11 @@ class AuditionGavPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas — procès-verbal d’audition du mis en cause gardé à vue",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00003",
+              "Canevas — procès-verbal d’audition du mis en cause gardé à vue",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -82,23 +95,40 @@ class AuditionGavPage extends StatelessWidget {
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas t’aide à rédiger une audition en garde à vue de manière claire, complète et juridiquement cadrée : "
-                "mentions indispensables, visas utiles, déroulé logique et clôture propre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00004",
+                      "Ce canevas t’aide à rédiger une audition en garde à vue de manière claire, complète et juridiquement cadrée : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00005",
+                      "mentions indispensables, visas utiles, déroulé logique et clôture propre.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Rendu pédagogique, structuré et exploitable en procédure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00006",
+                  "Rendu pédagogique, structuré et exploitable en procédure.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Pensé pour éviter les oublis (lieu, délais, assistances, clôture).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00007",
+                  "Pensé pour éviter les oublis (lieu, délais, assistances, clôture).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Compatible avec audition au service ou hors service (hôpital, autre service, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00008",
+                  "Compatible avec audition au service ou hors service (hôpital, autre service, etc.).",
+                ),
               ),
             ],
           ),
@@ -107,17 +137,29 @@ class AuditionGavPage extends StatelessWidget {
 
           // ✅ Élément légal tout en haut (comme demandé)
           _ConditionCard(
-            title: "Cadre juridique — visas (à placer en tête)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00009",
+              "Cadre juridique — visas (à placer en tête)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text: "L’action de l’enquêteur doit être située : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00010",
+                    "L’action de l’enquêteur doit être située : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "enquête de flagrance",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00011",
+                    "enquête de flagrance",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
@@ -125,73 +167,123 @@ class AuditionGavPage extends StatelessWidget {
                 ),
                 const TextSpan(text: " ou "),
                 TextSpan(
-                  text: "enquête préliminaire",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00012",
+                    "enquête préliminaire",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
                   ),
                 ),
-                const TextSpan(text: ", sous le contrôle de l’OPJ."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00013",
+                    ", sous le contrôle de l’OPJ.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("Visas utiles (assistance / protections)"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00014",
+                  "Visas utiles (assistance / protections)",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "• Visas relatifs à l’assistance de l’avocat lors des auditions : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00015",
+                    "• Visas relatifs à l’assistance de l’avocat lors des auditions : ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "articles du Code de procédure pénale (CPP) relatifs à l’assistance de l’avocat en GAV",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00016",
+                    "articles du Code de procédure pénale (CPP) relatifs à l’assistance de l’avocat en GAV",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph.rich([
-                TextSpan(text: "• Majeur protégé (si concerné) : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article 706-112-1 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00017",
+                    "• Majeur protégé (si concerné) : ",
                   ),
                 ),
                 TextSpan(
-                  text: " (tutelle, curatelle, sauvegarde de justice).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00018",
+                    "article 706-112-1 du CPP",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00019",
+                    " (tutelle, curatelle, sauvegarde de justice).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph.rich([
-                TextSpan(text: "• Mineur (accompagnement possible) : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article L.311-1 du CJPM",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00020",
+                    "• Mineur (accompagnement possible) : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (présence d’un titulaire de l’autorité parentale ou d’un adulte approprié, selon l’intérêt supérieur de l’enfant et sans préjudice à la procédure).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00021",
+                    "article L.311-1 du CJPM",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00022",
+                    " (présence d’un titulaire de l’autorité parentale ou d’un adulte approprié, selon l’intérêt supérieur de l’enfant et sans préjudice à la procédure).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 12),
 
-              const _NotaBox(
-                title: "Point de vigilance",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00023",
+                  "Point de vigilance",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le délai d’attente de 2 heures doit être respecté avant de débuter la première audition en présence de l’avocat (à compter de l’avis à l’avocat choisi ou de permanence). ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00024",
+                      "Le délai d’attente de 2 heures doit être respecté avant de débuter la première audition en présence de l’avocat (à compter de l’avis à l’avocat choisi ou de permanence). ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "Pendant ce délai, seule une audition portant sur les éléments essentiels d’identité est admise (état civil et adresse), à l’exclusion des éléments de personnalité.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00025",
+                      "Pendant ce délai, seule une audition portant sur les éléments essentiels d’identité est admise (état civil et adresse), à l’exclusion des éléments de personnalité.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -202,23 +294,41 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 — Lieu de rédaction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00026",
+              "1 — Lieu de rédaction",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Mentionner l’endroit exact où se déroule l’audition. "
-                "Dans certains cas, l’APJ peut entendre le mis en cause hors service (autre service, hôpital, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00027",
+                      "Mentionner l’endroit exact où se déroule l’audition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00028",
+                      "Dans certains cas, l’APJ peut entendre le mis en cause hors service (autre service, hôpital, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Indiquer précisément : service / unité / commune / adresse (si utile).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00029",
+                  "Indiquer précisément : service / unité / commune / adresse (si utile).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si hors service : préciser le motif (hospitalisation, transfert, contraintes opérationnelles…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00030",
+                  "Si hors service : préciser le motif (hospitalisation, transfert, contraintes opérationnelles…).",
+                ),
               ),
             ],
           ),
@@ -226,19 +336,37 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2 — Instructions & hiérarchie (flagrance / préliminaire)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00031",
+              "2 — Instructions & hiérarchie (flagrance / préliminaire)",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Flagrance"),
               _Paragraph(
-                "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00032",
+                  "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Préliminaire"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00033",
+                  "Préliminaire",
+                ),
+              ),
               _Paragraph(
-                "En enquête préliminaire, l’agent agit sous le contrôle de l’officier de police judiciaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00034",
+                  "En enquête préliminaire, l’agent agit sous le contrôle de l’officier de police judiciaire.",
+                ),
               ),
             ],
           ),
@@ -246,18 +374,34 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3 — Assistants éventuels",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00035",
+              "3 — Assistants éventuels",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rédacteur peut se faire assister d’un collègue. "
-                "Si c’est le cas, le mentionner clairement en indiquant son grade, son nom et son service.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00036",
+                      "Le rédacteur peut se faire assister d’un collègue. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00037",
+                      "Si c’est le cas, le mentionner clairement en indiquant son grade, son nom et son service.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Grade — Nom — Service (et rôle concret si utile).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00038",
+                  "Grade — Nom — Service (et rôle concret si utile).",
+                ),
               ),
             ],
           ),
@@ -265,34 +409,61 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "4 — Présence de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00039",
+              "4 — Présence de l’avocat",
+            ),
             cardColor: cardVigil,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Avant de débuter la première audition (hors identité), respecter le délai d’attente de deux heures "
-                "à compter du moment où l’avocat choisi ou de permanence a été avisé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00040",
+                      "Avant de débuter la première audition (hors identité), respecter le délai d’attente de deux heures ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00041",
+                      "à compter du moment où l’avocat choisi ou de permanence a été avisé.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Pendant l’attente : "),
                   TextSpan(
-                    text:
-                        "seule une audition d’identité (état civil + adresse) est possible, à l’exclusion de la personnalité.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00042",
+                      "Pendant l’attente : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00043",
+                      "seule une audition d’identité (état civil + adresse) est possible, à l’exclusion de la personnalité.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Si l’avocat est présent : le mentionner, ainsi que l’heure d’arrivée et le moment effectif de début d’audition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00044",
+                  "Si l’avocat est présent : le mentionner, ainsi que l’heure d’arrivée et le moment effectif de début d’audition.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si absence à l’issue du délai : mentionner les diligences, l’heure de l’avis, et le début d’audition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00045",
+                  "Si absence à l’issue du délai : mentionner les diligences, l’heure de l’avis, et le début d’audition.",
+                ),
               ),
             ],
           ),
@@ -300,41 +471,57 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title:
-                "5 — Présence d’un représentant légal / adulte approprié (mineur)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00046",
+              "5 — Présence d’un représentant légal / adulte approprié (mineur)",
+            ),
             cardColor: cardVigil,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le mineur suspecté peut être accompagné lors de ses auditions (si l’enquêteur estime que c’est dans son intérêt et sans préjudice à la procédure) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00047",
+                    "Le mineur suspecté peut être accompagné lors de ses auditions (si l’enquêteur estime que c’est dans son intérêt et sans préjudice à la procédure) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L.311-1 du CJPM",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00048",
+                    "article L.311-1 du CJPM",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Mentionner l’identité et la qualité de la personne présente (père/mère/tuteur/adulte approprié).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00049",
+                  "Mentionner l’identité et la qualité de la personne présente (père/mère/tuteur/adulte approprié).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’audition peut débuter en l’absence de ces personnes à l’issue d’un délai de deux heures à compter de l’invitation : noter heures et diligences.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00050",
+                  "L’audition peut débuter en l’absence de ces personnes à l’issue d’un délai de deux heures à compter de l’invitation : noter heures et diligences.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les personnes accompagnantes ne posent pas de questions et ne formulent pas d’observations.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00051",
+                      "Les personnes accompagnantes ne posent pas de questions et ne formulent pas d’observations.",
+                    ),
                   ),
                 ],
               ),
@@ -344,20 +531,41 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "6 — Identité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00052",
+              "6 — Identité",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Renseigner les éléments essentiels d’identité (état civil et adresse). "
-                "En phase d’attente avocat, rester strictement sur l’identité (pas de situation pro/familiale).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00053",
+                      "Renseigner les éléments essentiels d’identité (état civil et adresse). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00054",
+                      "En phase d’attente avocat, rester strictement sur l’identité (pas de situation pro/familiale).",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "État civil complet."),
               _BulletPoint(
-                text:
-                    "Adresse complète + précisions utiles (bâtiment, étage, interphone si nécessaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00055",
+                  "État civil complet.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00056",
+                  "Adresse complète + précisions utiles (bâtiment, étage, interphone si nécessaire).",
+                ),
               ),
             ],
           ),
@@ -365,22 +573,41 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "7 — Déclarations (récit libre)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00057",
+              "7 — Déclarations (récit libre)",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Retranscrire le récit du mis en cause sur les faits reprochés en utilisant la première personne. "
-                "Laisser parler : audition non subjective, non dirigée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00058",
+                      "Retranscrire le récit du mis en cause sur les faits reprochés en utilisant la première personne. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00059",
+                      "Laisser parler : audition non subjective, non dirigée.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Si aveux : exiger des aveux circonstanciés (H.L.M. : Heure — Lieu — Motif).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00060",
+                  "Si aveux : exiger des aveux circonstanciés (H.L.M. : Heure — Lieu — Motif).",
+                ),
               ),
               _BulletPoint(
-                text: "Rester factuel : pas d’interprétation, pas de jugement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00061",
+                  "Rester factuel : pas d’interprétation, pas de jugement.",
+                ),
               ),
             ],
           ),
@@ -388,23 +615,48 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "8 — Questions / réponses",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00062",
+              "8 — Questions / réponses",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Poser des questions pour préciser, rectifier, vérifier la cohérence, ou confronter à des éléments objectifs. "
-                "Utiliser la forme questions–réponses en reformulant stricto sensu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00063",
+                      "Poser des questions pour préciser, rectifier, vérifier la cohérence, ou confronter à des éléments objectifs. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00064",
+                      "Utiliser la forme questions–réponses en reformulant stricto sensu.",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Questions courtes, une idée à la fois."),
               _BulletPoint(
-                text: "Horodatage si nécessaire (avant/après tel événement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00065",
+                  "Questions courtes, une idée à la fois.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Confrontation aux contradictions : calmement, sur des faits vérifiables.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00066",
+                  "Horodatage si nécessaire (avant/après tel événement).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00067",
+                  "Confrontation aux contradictions : calmement, sur des faits vérifiables.",
+                ),
               ),
             ],
           ),
@@ -412,22 +664,41 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "9 — Objets / documents (présentation, confrontation)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00068",
+              "9 — Objets / documents (présentation, confrontation)",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Mentionner la présentation des objets et/ou documents saisis, et la réaction du mis en cause. "
-                "Décrire ce qui est montré (référence, scellés, pièces) et ce que la personne déclare.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00069",
+                      "Mentionner la présentation des objets et/ou documents saisis, et la réaction du mis en cause. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00070",
+                      "Décrire ce qui est montré (référence, scellés, pièces) et ce que la personne déclare.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Référencer précisément : scellés, PV annexes, pièces de procédure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00071",
+                  "Référencer précisément : scellés, PV annexes, pièces de procédure.",
+                ),
               ),
               _BulletPoint(
-                text: "Noter les explications, reconnaissances, contestations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00072",
+                  "Noter les explications, reconnaissances, contestations.",
+                ),
               ),
             ],
           ),
@@ -435,22 +706,41 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "10 — Clôture (énonciation terminale)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00073",
+              "10 — Clôture (énonciation terminale)",
+            ),
             cardColor: cardVigil,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Indiquer impérativement l’heure de fin d’audition. "
-                "Clore par une formule : aveux / persistance de la négation / maintien des déclarations.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00074",
+                      "Indiquer impérativement l’heure de fin d’audition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00075",
+                      "Clore par une formule : aveux / persistance de la négation / maintien des déclarations.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Heure de fin indispensable (cohérence GAV / délais).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00076",
+                  "Heure de fin indispensable (cohérence GAV / délais).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mention finale : lecture faite / observations éventuelles / signatures.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00077",
+                  "Mention finale : lecture faite / observations éventuelles / signatures.",
+                ),
               ),
             ],
           ),
@@ -458,20 +748,39 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Questions de l’avocat & observations écrites",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00078",
+              "Questions de l’avocat & observations écrites",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les questions de l’avocat, s’il est présent, interviennent à la fin de l’audition. "
-                "L’enquêteur peut s’opposer à des questions si elles nuisent au bon déroulement de l’enquête : "
-                "le refus doit être mentionné au PV.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00079",
+                      "Les questions de l’avocat, s’il est présent, interviennent à la fin de l’audition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00080",
+                      "L’enquêteur peut s’opposer à des questions si elles nuisent au bon déroulement de l’enquête : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                      "f00081",
+                      "le refus doit être mentionné au PV.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Observations écrites : l’avocat peut remettre des observations à joindre au PV d’audition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00082",
+                  "Observations écrites : l’avocat peut remettre des observations à joindre au PV d’audition.",
+                ),
               ),
             ],
           ),
@@ -479,13 +788,21 @@ class AuditionGavPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Aperçu visuel (recto / verso)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+              "f00083",
+              "Aperçu visuel (recto / verso)",
+            ),
             cardColor: cardGuide,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Clique sur les images pour ouvrir l’aperçu zoomable (pincez pour zoomer, glissez pour déplacer).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00084",
+                  "Clique sur les images pour ouvrir l’aperçu zoomable (pincez pour zoomer, glissez pour déplacer).",
+                ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -824,8 +1141,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+        "f00086",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+        "f00087",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -998,7 +1323,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                    "f00088",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -1067,7 +1396,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_gav_page.dart",
+                  "f00089",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -1095,7 +1428,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1130,7 +1465,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

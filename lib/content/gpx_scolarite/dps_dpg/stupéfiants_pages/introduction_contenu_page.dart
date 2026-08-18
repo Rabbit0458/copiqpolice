@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class StupefiantsIntroductionPage extends StatelessWidget {
   const StupefiantsIntroductionPage({super.key});
@@ -75,10 +76,18 @@ class StupefiantsIntroductionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -105,27 +114,53 @@ class StupefiantsIntroductionPage extends StatelessWidget {
 
           // Intro générale
           _ConditionCard(
-            title: "Contexte général",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+              "f00003",
+              "Contexte général",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’extension du phénomène toxicomaniaque dans le monde, à laquelle la France n’a pas échappé, "
-                "s’est traduite au niveau international par l’élaboration de conventions constituant la base de référence "
-                "en matière de lutte contre la drogue.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00004",
+                      "L’extension du phénomène toxicomaniaque dans le monde, à laquelle la France n’a pas échappé, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00005",
+                      "s’est traduite au niveau international par l’élaboration de conventions constituant la base de référence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00006",
+                      "en matière de lutte contre la drogue.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Convention unique sur les stupéfiants (1961), amendée par le protocole de 1972.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00007",
+                  "Convention unique sur les stupéfiants (1961), amendée par le protocole de 1972.",
+                ),
               ),
               _IntroBullet(
-                text: "Convention sur les substances psychotropes (1971).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00008",
+                  "Convention sur les substances psychotropes (1971).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Convention contre le trafic des stupéfiants et des substances psychotropes (1988).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00009",
+                  "Convention contre le trafic des stupéfiants et des substances psychotropes (1988).",
+                ),
               ),
             ],
           ),
@@ -134,54 +169,127 @@ class StupefiantsIntroductionPage extends StatelessWidget {
 
           // Dispositif FR
           _ConditionCard(
-            title: "Logique du dispositif français",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+              "f00010",
+              "Logique du dispositif français",
+            ),
             cardColor: cardKey,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "La France a ratifié et transposé ces conventions. Le dispositif répressif distingue :\n"
-                "• les toxicomanes, qu’il importe de soigner ;\n"
-                "• les trafiquants, qu’il faut sanctionner plus sévèrement.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00011",
+                      "La France a ratifié et transposé ces conventions. Le dispositif répressif distingue :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00012",
+                      "• les toxicomanes, qu’il importe de soigner ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00013",
+                      "• les trafiquants, qu’il faut sanctionner plus sévèrement.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Répression du trafic dans le Code pénal : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00014",
+                    "Répression du trafic dans le Code pénal : ",
+                  ),
                 ),
-                _lawSpan("articles 222-34 à 222-43-1 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00015",
+                    "articles 222-34 à 222-43-1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Usage et provocation à l’usage dans le Code de la santé publique : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00016",
+                    "Usage et provocation à l’usage dans le Code de la santé publique : ",
+                  ),
                 ),
                 _lawSpan(
-                  "articles L. 3421-1 et L. 3421-4 du Code de la santé publique",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00017",
+                    "articles L. 3421-1 et L. 3421-4 du Code de la santé publique",
+                  ),
                 ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("Autres comportements liés"),
-              const _BulletPoint(
-                text: "Provocation directe d’un mineur à l’usage ou au trafic.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00018",
+                  "Autres comportements liés",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00019",
+                  "Provocation directe d’un mineur à l’usage ou au trafic.",
+                ),
               ),
               _Paragraph.rich([
-                _lawSpan("Articles 227-18 et 227-18-1 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00020",
+                    "Articles 227-18 et 227-18-1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Non-justification de ressources."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00021",
+                  "Non-justification de ressources.",
+                ),
+              ),
               _Paragraph.rich([
-                _lawSpan("Articles 321-6 et 321-6-1 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00022",
+                    "Articles 321-6 et 321-6-1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Association de malfaiteurs."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00023",
+                  "Association de malfaiteurs.",
+                ),
+              ),
               _Paragraph.rich([
-                _lawSpan("Article 450-1 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00024",
+                    "Article 450-1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -191,41 +299,104 @@ class StupefiantsIntroductionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (définition légale)
           _ConditionCard(
-            title: "Définition légale des stupéfiants",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+              "f00025",
+              "Définition légale des stupéfiants",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("Article 222-41 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants » ",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00026",
+                    "Article 222-41 du Code pénal",
+                  ),
                 ),
-                const TextSpan(text: "en application de "),
-                _lawSpan("l’article L. 5132-7 du Code de la santé publique"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00027",
+                    " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants » ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00028",
+                    "en application de ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00029",
+                    "l’article L. 5132-7 du Code de la santé publique",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "La définition légale est plus restrictive que la définition médicale : "
-                "même si d’autres substances peuvent avoir des effets toxicomanogènes, "
-                "seules sont retenues celles figurant sur des listes évolutives arrêtées par voie réglementaire.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00030",
+                      "La définition légale est plus restrictive que la définition médicale : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00031",
+                      "même si d’autres substances peuvent avoir des effets toxicomanogènes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00032",
+                      "seules sont retenues celles figurant sur des listes évolutives arrêtées par voie réglementaire.",
+                    ),
               ),
               const SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Les substances vénéneuses non classées stupéfiants (ex. anabolisants, hormones de croissance) "
-                        "relèvent du Code de la santé publique. L’incrimination vise notamment la production, le transport, "
-                        "l’importation, l’exportation, la détention, l’offre, la cession, l’acquisition, l’emploi et la culture illicite — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                          "f00033",
+                          "Les substances vénéneuses non classées stupéfiants (ex. anabolisants, hormones de croissance) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                          "f00034",
+                          "relèvent du Code de la santé publique. L’incrimination vise notamment la production, le transport, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                          "f00035",
+                          "l’importation, l’exportation, la détention, l’offre, la cession, l’acquisition, l’emploi et la culture illicite — ",
+                        ),
                   ),
-                  _lawSpan("article L. 5432-1 du Code de la santé publique"),
-                  const TextSpan(
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00036",
+                      "article L. 5432-1 du Code de la santé publique",
+                    ),
+                  ),
+                  TextSpan(
                     text:
-                        ". Il n’existe pas d’incrimination spécifique de l’usage illicite de ces produits ; "
-                        "on peut retenir, selon les cas, la détention, l’acquisition ou le transport illicite.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                          "f00037",
+                          ". Il n’existe pas d’incrimination spécifique de l’usage illicite de ces produits ; ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                          "f00038",
+                          "on peut retenir, selon les cas, la détention, l’acquisition ou le transport illicite.",
+                        ),
                   ),
                 ],
               ),
@@ -236,65 +407,132 @@ class StupefiantsIntroductionPage extends StatelessWidget {
 
           // Classification (pédagogique, sans tableau lourd)
           _ConditionCard(
-            title: "Classification des produits",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+              "f00039",
+              "Classification des produits",
+            ),
             cardColor: cardClassif,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La classification comporte plusieurs centaines de substances. "
-                "Ici, on retient les produits les plus fréquemment rencontrés/consommés, "
-                "avec un repère simple : aspect + effets dominants.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00040",
+                      "La classification comporte plusieurs centaines de substances. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00041",
+                      "Ici, on retient les produits les plus fréquemment rencontrés/consommés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00042",
+                      "avec un repère simple : aspect + effets dominants.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Stimulants / excitants (SNC)"),
-              _BulletPoint(
-                text:
-                    "Cocaïne (base, chlorhydrate), crack : forte dépendance, risques cardiovasculaires, agitation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00043",
+                  "A) Stimulants / excitants (SNC)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Amphétamines / méthamphétamine : stimulation, anorexigène, irritabilité, hallucinations, risque de surdosage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00044",
+                  "Cocaïne (base, chlorhydrate), crack : forte dépendance, risques cardiovasculaires, agitation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ecstasy / MDMA : stimulant avec nuances hallucinogènes, risques hyperthermie/déshydratation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00045",
+                  "Amphétamines / méthamphétamine : stimulation, anorexigène, irritabilité, hallucinations, risque de surdosage.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Khat : légère excitation, euphorie, puis torpeur ; dépendance possible.",
-              ),
-              SizedBox(height: 12),
-              _SubTitle("B) Perturbateurs / hallucinogènes"),
-              _BulletPoint(
-                text:
-                    "Cannabis (herbe, résine, huile) : euphorie, baisse de vigilance, troubles cognitifs, dépendance possible.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00046",
+                  "Ecstasy / MDMA : stimulant avec nuances hallucinogènes, risques hyperthermie/déshydratation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "LSD : altération du temps/de l’espace, risque de flash-back et de surdosage.",
-              ),
-              _BulletPoint(
-                text:
-                    "Champignons hallucinogènes / psilocybine : vertiges, anxiété, phénomènes visuels, risque surdosage.",
-              ),
-              _BulletPoint(
-                text:
-                    "GHB : désinhibition, perte de mémoire ; risque majeur en mélange avec alcool.",
-              ),
-              _BulletPoint(
-                text:
-                    "Kétamine : ivresse dissociative, hallucinations ; risques accrus si alcool.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00047",
+                  "Khat : légère excitation, euphorie, puis torpeur ; dépendance possible.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Calmants / sédatifs"),
-              _BulletPoint(
-                text:
-                    "Opiacés (opium, morphine, héroïne) : somnolence, myosis, forte dépendance, risque de surdosage.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00048",
+                  "B) Perturbateurs / hallucinogènes",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rach / rachacha : produit artisanal dérivé du pavot, utilisé comme “descente”, dépendance et surdosage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00049",
+                  "Cannabis (herbe, résine, huile) : euphorie, baisse de vigilance, troubles cognitifs, dépendance possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00050",
+                  "LSD : altération du temps/de l’espace, risque de flash-back et de surdosage.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00051",
+                  "Champignons hallucinogènes / psilocybine : vertiges, anxiété, phénomènes visuels, risque surdosage.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00052",
+                  "GHB : désinhibition, perte de mémoire ; risque majeur en mélange avec alcool.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00053",
+                  "Kétamine : ivresse dissociative, hallucinations ; risques accrus si alcool.",
+                ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00054",
+                  "C) Calmants / sédatifs",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00055",
+                  "Opiacés (opium, morphine, héroïne) : somnolence, myosis, forte dépendance, risque de surdosage.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                  "f00056",
+                  "Rach / rachacha : produit artisanal dérivé du pavot, utilisé comme “descente”, dépendance et surdosage.",
+                ),
               ),
             ],
           ),
@@ -303,19 +541,43 @@ class StupefiantsIntroductionPage extends StatelessWidget {
 
           // Procédure spécifique (706-73 CPP)
           _ConditionCard(
-            title: "Procédure pénale spécifique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+              "f00057",
+              "Procédure pénale spécifique",
+            ),
             cardColor: cardProc,
             accent: accentAmber,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Les crimes et délits de trafic de stupéfiants prévus par les articles 222-34 à 222-40 du Code pénal "
-                "peuvent relever de la procédure spécifique applicable à la criminalité et à la délinquance organisées.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00058",
+                      "Les crimes et délits de trafic de stupéfiants prévus par les articles 222-34 à 222-40 du Code pénal ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                      "f00059",
+                      "peuvent relever de la procédure spécifique applicable à la criminalité et à la délinquance organisées.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
-                _lawSpan("article 706-73 du Code de procédure pénale"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00060",
+                    "Référence : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/introduction_contenu_page.dart",
+                    "f00061",
+                    "article 706-73 du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -572,9 +834,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CommunicationRadioPage extends StatelessWidget {
   const CommunicationRadioPage({super.key});
@@ -56,7 +57,11 @@ class CommunicationRadioPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -74,7 +79,11 @@ class CommunicationRadioPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La communication radioélectrique",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00002",
+              "La communication radioélectrique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,20 +99,39 @@ class CommunicationRadioPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La « radio » est le mode de communication opérationnel entre les agents du terrain, "
-                "le commandement et le Centre d’Information et de Commandement (C.I.C.).\n\n"
-                "Le policier applique strictement les règles de procédure radio : "
-                "les messages doivent être brefs, concis, clairs et à caractère opérationnel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00003",
+                      "La « radio » est le mode de communication opérationnel entre les agents du terrain, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00004",
+                      "le commandement et le Centre d’Information et de Commandement (C.I.C.).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00005",
+                      "Le policier applique strictement les règles de procédure radio : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00006",
+                      "les messages doivent être brefs, concis, clairs et à caractère opérationnel.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "PRINCIPE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ce qui fait une bonne radio : information utile + formulation courte + vocabulaire standardisé.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00007",
+                      "Ce qui fait une bonne radio : information utile + formulation courte + vocabulaire standardisé.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -115,54 +143,107 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // I — Règles
           _ConditionCard(
-            title: "I — Les règles à respecter",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00008",
+              "I — Les règles à respecter",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Avant et pendant l’émission"),
-              _BulletPoint(
-                text:
-                    "S’assurer avant la mission du bon fonctionnement des appareils radio.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00009",
+                  "Avant et pendant l’émission",
+                ),
               ),
               _BulletPoint(
-                text: "Avant tout appel, vérifier que le réseau est libre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00010",
+                  "S’assurer avant la mission du bon fonctionnement des appareils radio.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Après avoir appuyé sur la touche d’émission, attendre ~1 seconde avant de parler (activation des circuits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00011",
+                  "Avant tout appel, vérifier que le réseau est libre.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00012",
+                  "Après avoir appuyé sur la touche d’émission, attendre ~1 seconde avant de parler (activation des circuits).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Contenu du message"),
-              _BulletPoint(
-                text:
-                    "Annoncer son indicatif radio et le motif (intervention / demande / information).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00013",
+                  "Contenu du message",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Parler calmement et distinctement, micro légèrement éloigné (éviter souffle et chuintements).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00014",
+                  "Annoncer son indicatif radio et le motif (intervention / demande / information).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Utiliser le code phonétique international pour épeler noms, prénoms et lettres (ex : plaque d’immatriculation).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00015",
+                  "Parler calmement et distinctement, micro légèrement éloigné (éviter souffle et chuintements).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00016",
+                  "Utiliser le code phonétique international pour épeler noms, prénoms et lettres (ex : plaque d’immatriculation).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Confidentialité et discipline radio"),
-              _BulletPoint(
-                text:
-                    "Communiquer à l’écart des personnes concernées (confidentialité des réponses).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00017",
+                  "Confidentialité et discipline radio",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne jamais citer le nom des policiers ou autorités : utiliser uniquement l’indicatif radio du véhicule ou de la station.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00018",
+                  "Communiquer à l’écart des personnes concernées (confidentialité des réponses).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Supprimer les communications inutiles : messages brefs et nécessaires uniquement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00019",
+                  "Ne jamais citer le nom des policiers ou autorités : utiliser uniquement l’indicatif radio du véhicule ou de la station.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si une station ne peut pas écouter en permanence : signaler le retrait du réseau, puis le retour.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00020",
+                  "Supprimer les communications inutiles : messages brefs et nécessaires uniquement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00021",
+                  "Si une station ne peut pas écouter en permanence : signaler le retrait du réseau, puis le retour.",
+                ),
               ),
             ],
           ),
@@ -171,38 +252,121 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // II — Procédure radiotéléphonique
           _ConditionCard(
-            title: "II — Termes de procédure radiotéléphonique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00022",
+              "II — Termes de procédure radiotéléphonique",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour éviter les malentendus, certains termes standard doivent être utilisés.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00023",
+                  "Pour éviter les malentendus, certains termes standard doivent être utilisés.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Termes essentiels"),
-              _IntroBullet(text: "« Parlez » / « Transmettez »"),
-              _IntroBullet(text: "« Comment me recevez-vous ? »"),
-              _IntroBullet(text: "« Je vous reçois fort et clair »"),
-              _IntroBullet(text: "« Attente »"),
-              _IntroBullet(text: "« Correction » / « Répétez »"),
-              _IntroBullet(text: "« J’épelle »"),
-              _IntroBullet(text: "« Je décompose »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00024",
+                  "Termes essentiels",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00025",
+                  "« Parlez » / « Transmettez »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00026",
+                  "« Comment me recevez-vous ? »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00027",
+                  "« Je vous reçois fort et clair »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00028",
+                  "« Attente »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00029",
+                  "« Correction » / « Répétez »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00030",
+                  "« J’épelle »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00031",
+                  "« Je décompose »",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "COLLATIONNEZ",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le collationnement consiste à répéter totalement ou partiellement une communication reçue, afin de vérifier qu’elle a été comprise et reçue correctement.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00032",
+                      "Le collationnement consiste à répéter totalement ou partiellement une communication reçue, afin de vérifier qu’elle a été comprise et reçue correctement.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
-              _SubTitle("Fin de transmission"),
-              _IntroBullet(text: "« Correct »"),
-              _IntroBullet(text: "« Reçu »"),
-              _IntroBullet(text: "« Terminé »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00033",
+                  "Fin de transmission",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00034",
+                  "« Correct »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00035",
+                  "« Reçu »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00036",
+                  "« Terminé »",
+                ),
+              ),
             ],
           ),
 
@@ -210,29 +374,93 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // Code phonétique international
           _ConditionCard(
-            title: "Code phonétique international",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00037",
+              "Code phonétique international",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les noms propres, groupes de lettres, mots importants ou pouvant prêter à confusion "
-                "sont épelés selon le tableau d’analogie phonétique. "
-                "Les chiffres sont « décomposés » selon une formulation standard.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00038",
+                      "Les noms propres, groupes de lettres, mots importants ou pouvant prêter à confusion ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00039",
+                      "sont épelés selon le tableau d’analogie phonétique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00040",
+                      "Les chiffres sont « décomposés » selon une formulation standard.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("A) Énoncé des lettres (exemples clés)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00041",
+                  "A) Énoncé des lettres (exemples clés)",
+                ),
+              ),
               _NotaBox(
                 title: "LETTRES",
                 bodySpans: [
-                  TextSpan(text: "A Alpha — B Bravo — C Charlie — D Delta\n"),
-                  TextSpan(text: "E Écho — F Fox-trot — G Golf — H Hôtel\n"),
-                  TextSpan(text: "I India — J Juliette — K Kilo — L Lima\n"),
-                  TextSpan(text: "M Mike — N November — O Oscar — P Papa\n"),
-                  TextSpan(text: "Q Québec — R Roméo — S Sierra — T Tango\n"),
-                  TextSpan(text: "U Uniform — V Victor — W Whisky — X X-Ray\n"),
-                  TextSpan(text: "Y Yankee — Z Zoulou"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00042",
+                      "A Alpha — B Bravo — C Charlie — D Delta\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00043",
+                      "E Écho — F Fox-trot — G Golf — H Hôtel\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00044",
+                      "I India — J Juliette — K Kilo — L Lima\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00045",
+                      "M Mike — N November — O Oscar — P Papa\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00046",
+                      "Q Québec — R Roméo — S Sierra — T Tango\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00047",
+                      "U Uniform — V Victor — W Whisky — X X-Ray\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00048",
+                      "Y Yankee — Z Zoulou",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
@@ -240,8 +468,11 @@ class CommunicationRadioPage extends StatelessWidget {
                 title: "EXEMPLE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "PARIS, j’épelle : « Papa » — « Alpha » — « Roméo » — « India » — « Sierra ».",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00049",
+                      "PARIS, j’épelle : « Papa » — « Alpha » — « Roméo » — « India » — « Sierra ».",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -249,20 +480,86 @@ class CommunicationRadioPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("B) Énoncé des chiffres"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00050",
+                  "B) Énoncé des chiffres",
+                ),
+              ),
               _NotaBox(
                 title: "CHIFFRES",
                 bodySpans: [
-                  TextSpan(text: "0 Zéro\n"),
-                  TextSpan(text: "1 Un tout seul\n"),
-                  TextSpan(text: "2 Un et un\n"),
-                  TextSpan(text: "3 Deux et un\n"),
-                  TextSpan(text: "4 Deux fois deux\n"),
-                  TextSpan(text: "5 Trois et deux\n"),
-                  TextSpan(text: "6 Deux fois trois\n"),
-                  TextSpan(text: "7 Quatre et trois\n"),
-                  TextSpan(text: "8 Deux fois quatre\n"),
-                  TextSpan(text: "9 Cinq et quatre"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00051",
+                      "0 Zéro\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00052",
+                      "1 Un tout seul\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00053",
+                      "2 Un et un\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00054",
+                      "3 Deux et un\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00055",
+                      "4 Deux fois deux\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00056",
+                      "5 Trois et deux\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00057",
+                      "6 Deux fois trois\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00058",
+                      "7 Quatre et trois\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00059",
+                      "8 Deux fois quatre\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00060",
+                      "9 Cinq et quatre",
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -272,27 +569,68 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // III — Indicatifs radio (structure + catégories)
           _ConditionCard(
-            title: "III — Les indicatifs radio",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00061",
+              "III — Les indicatifs radio",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Principes généraux"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00062",
+                  "A) Principes généraux",
+                ),
+              ),
               _Paragraph(
-                "Les indicatifs sont composés de lettres et de chiffres permettant d’identifier "
-                "le personnel, l’équipage ou la station, ainsi que le service et le département.\n\n"
-                "En pratique :\n"
-                "• En interne : indicatif « court » (identification adaptée au département)\n"
-                "• Hors département : indicatif « long » (incluant le numéro de département)\n"
-                "• Une lettre peut identifier le rang ou la station.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00063",
+                      "Les indicatifs sont composés de lettres et de chiffres permettant d’identifier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00064",
+                      "le personnel, l’équipage ou la station, ainsi que le service et le département.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00065",
+                      "En pratique :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00066",
+                      "• En interne : indicatif « court » (identification adaptée au département)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00067",
+                      "• Hors département : indicatif « long » (incluant le numéro de département)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00068",
+                      "• Une lettre peut identifier le rang ou la station.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "RÉFLEXE",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00069",
+                  "RÉFLEXE",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Tu dois être capable de donner ton indicatif + motif + localisation précise en une phrase courte.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00070",
+                      "Tu dois être capable de donner ton indicatif + motif + localisation précise en une phrase courte.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -304,39 +642,69 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // Stations fixes
           _ConditionCard(
-            title: "B) Indicatifs des stations fixes (C.I.C.)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00071",
+              "B) Indicatifs des stations fixes (C.I.C.)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les Centres d’Information et de Commandement (C.I.C.) ont pour indicatif : TN.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00072",
+                  "Les Centres d’Information et de Commandement (C.I.C.) ont pour indicatif : TN.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "CIC DDPN : TN + numéro de département (ex : TN92).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00073",
+                  "CIC DDPN : TN + numéro de département (ex : TN92).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Circonscriptions (selon organisation DDPN)"),
-              _BulletPoint(
-                text:
-                    "Si DDPN ≤ 4 circonscriptions : TN 100 / 200 / 300 / 400 ; commissariats de secteur : TN 110, TN 120…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00074",
+                  "Circonscriptions (selon organisation DDPN)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si DDPN 5 à 8 circonscriptions (avec divisions) : TN 100, 150, 200, 250, 300, 350, 400, 450 ; divisions en dizaines (ex : TN 110, TN 120…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00075",
+                  "Si DDPN ≤ 4 circonscriptions : TN 100 / 200 / 300 / 400 ; commissariats de secteur : TN 110, TN 120…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si DDPN > 8 circonscriptions : incrémentation de 50 en 50 ; divisions/secteurs : TN 100 à TN 140 et TN 160 à TN 190.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00076",
+                  "Si DDPN 5 à 8 circonscriptions (avec divisions) : TN 100, 150, 200, 250, 300, 350, 400, 450 ; divisions en dizaines (ex : TN 110, TN 120…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00077",
+                  "Si DDPN > 8 circonscriptions : incrémentation de 50 en 50 ; divisions/secteurs : TN 100 à TN 140 et TN 160 à TN 190.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "EXEMPLE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "CSP Marseille : TN 100 ; Division Marseille centre : TN 110 ; Division Marseille Nord : TN 120 ; CSP Aubagne : TN 140.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00078",
+                      "CSP Marseille : TN 100 ; Division Marseille centre : TN 110 ; Division Marseille Nord : TN 120 ; CSP Aubagne : TN 140.",
+                    ),
                   ),
                 ],
               ),
@@ -347,58 +715,185 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // Autorités (centrales/zonales/départementales/locales)
           _ConditionCard(
-            title: "C) Indicatifs des autorités",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00079",
+              "C) Indicatifs des autorités",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Autorités centrales"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00080",
+                  "Autorités centrales",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "DNSP : JURA — adjoint : JURA Alpha — adjoint renseignement : JURA Bravo — chef d’État-Major : JURA Charlie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00081",
+                  "DNSP : JURA — adjoint : JURA Alpha — adjoint renseignement : JURA Bravo — chef d’État-Major : JURA Charlie.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Autorités zonales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00082",
+                  "Autorités zonales",
+                ),
+              ),
               _BulletPoint(
-                text: "Directeur zonal : TI + numéro de zone.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00083",
+                  "Directeur zonal : TI + numéro de zone.",
+                ),
               ),
               _NotaBox(
                 title: "ZONES",
                 bodySpans: [
-                  TextSpan(text: "TI 2000 : Nord\n"),
-                  TextSpan(text: "TI 3000 : Est\n"),
-                  TextSpan(text: "TI 4000 : Sud-Est\n"),
-                  TextSpan(text: "TI 5000 : Sud\n"),
-                  TextSpan(text: "TI 6000 : Sud-Ouest\n"),
-                  TextSpan(text: "TI 7000 : Ouest"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00084",
+                      "TI 2000 : Nord\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00085",
+                      "TI 3000 : Est\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00086",
+                      "TI 4000 : Sud-Est\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00087",
+                      "TI 5000 : Sud\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00088",
+                      "TI 6000 : Sud-Ouest\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00089",
+                      "TI 7000 : Ouest",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Autorités départementales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00090",
+                  "Autorités départementales",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "DDPN : TI + numéro du département ; DDPN adjoint : ajouter « A » (ex : TI 63, TI 63 A).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00091",
+                  "DDPN : TI + numéro du département ; DDPN adjoint : ajouter « A » (ex : TI 63, TI 63 A).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Autorités locales (grades — repères)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00092",
+                  "Autorités locales (grades — repères)",
+                ),
+              ),
               _NotaBox(
                 title: "GRADES",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Commissaire (chef) : TI + numéro du service (ex : TI 100). "
-                        "Lettre A pour l’adjoint, S pour stagiaire.\n\n",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                          "f00093",
+                          "Commissaire (chef) : TI + numéro du service (ex : TI 100). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                          "f00094",
+                          "Lettre A pour l’adjoint, S pour stagiaire.\n\n",
+                        ),
                   ),
-                  TextSpan(text: "Commandant chef de service : TX\n"),
-                  TextSpan(text: "Commandant : TK\n"),
-                  TextSpan(text: "Capitaine : TO\n"),
-                  TextSpan(text: "Lieutenant : TL\n"),
-                  TextSpan(text: "Lieutenant stagiaire : TL S\n"),
-                  TextSpan(text: "Major : TJ\n"),
-                  TextSpan(text: "Brigadier-chef : TR\n\n"),
                   TextSpan(
-                    text:
-                        "Ex : TL 100 S (lieutenant stagiaire) ; TJ 200 BAC (major BAC circonscription 200).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00095",
+                      "Commandant chef de service : TX\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00096",
+                      "Commandant : TK\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00097",
+                      "Capitaine : TO\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00098",
+                      "Lieutenant : TL\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00099",
+                      "Lieutenant stagiaire : TL S\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00100",
+                      "Major : TJ\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00101",
+                      "Brigadier-chef : TR\n\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00102",
+                      "Ex : TL 100 S (lieutenant stagiaire) ; TJ 200 BAC (major BAC circonscription 200).",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -410,49 +905,185 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // Services
           _ConditionCard(
-            title: "D) Indicatifs des services (exemples)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00103",
+              "D) Indicatifs des services (exemples)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les unités correspondent souvent à des secteurs. Des lettres peuvent préciser le régime de travail.\n\n"
-                "• Régime cyclique : A à D\n"
-                "• Régime hebdomadaire : E à H",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00104",
+                      "Les unités correspondent souvent à des secteurs. Des lettres peuvent préciser le régime de travail.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00105",
+                      "• Régime cyclique : A à D\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00106",
+                      "• Régime hebdomadaire : E à H",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "EXEMPLES",
                 bodySpans: [
-                  TextSpan(text: "Cyclique : GAJ 110 A, GAJ 120 B…\n"),
-                  TextSpan(text: "Hebdomadaire : GAJ 130 E…\n\n"),
                   TextSpan(
-                    text: "Voie publique (circonscription 100) :\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00107",
+                      "Cyclique : GAJ 110 A, GAJ 120 B…\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00108",
+                      "Hebdomadaire : GAJ 130 E…\n\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00109",
+                      "Voie publique (circonscription 100) :\n",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  TextSpan(text: "• TI SVP 100\n"),
-                  TextSpan(text: "• PS 100 (police secours)\n"),
-                  TextSpan(text: "• UAO 100 (appui opérationnel)\n"),
-                  TextSpan(text: "• BAC 100\n"),
-                  TextSpan(text: "• GSP 100\n"),
-                  TextSpan(text: "• UOP 100\n"),
-                  TextSpan(text: "• BAAJ 100\n"),
-                  TextSpan(text: "• CYNO 100\n"),
-                  TextSpan(text: "• TM 100 (motocycliste)\n"),
-                  TextSpan(text: "• BSR 100\n"),
-                  TextSpan(text: "• STC 100\n"),
-                  TextSpan(text: "• BE 100 (équestre)\n"),
-                  TextSpan(text: "• BN 100 (nautique)\n"),
-                  TextSpan(text: "• SIR 100\n"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00110",
+                      "• TI SVP 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00111",
+                      "• PS 100 (police secours)\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00112",
+                      "• UAO 100 (appui opérationnel)\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00113",
+                      "• BAC 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00114",
+                      "• GSP 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00115",
+                      "• UOP 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00116",
+                      "• BAAJ 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00117",
+                      "• CYNO 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00118",
+                      "• TM 100 (motocycliste)\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00119",
+                      "• BSR 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00120",
+                      "• STC 100\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00121",
+                      "• BE 100 (équestre)\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00122",
+                      "• BN 100 (nautique)\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00123",
+                      "• SIR 100\n",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Services départementaux :\n"
-                "• 600 : renseignement territorial\n"
-                "• 700 : SOPS (ex : CDI 710, BAC D 720, sécurité routière 730, FMUD 740, cynophile 750…)\n"
-                "• 800 : sûreté départementale/urbaine (ex : GAJ 820, UPTS 890…)\n"
-                "• 900 : services centraux DDPN (ex : état-major 900, commandement de nuit 902…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00124",
+                      "Services départementaux :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00125",
+                      "• 600 : renseignement territorial\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00126",
+                      "• 700 : SOPS (ex : CDI 710, BAC D 720, sécurité routière 730, FMUD 740, cynophile 750…)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00127",
+                      "• 800 : sûreté départementale/urbaine (ex : GAJ 820, UPTS 890…)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00128",
+                      "• 900 : services centraux DDPN (ex : état-major 900, commandement de nuit 902…).",
+                    ),
               ),
             ],
           ),
@@ -461,43 +1092,130 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // Véhicules + piétons
           _ConditionCard(
-            title: "E) Véhicules & piétons",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00129",
+              "E) Véhicules & piétons",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Véhicules (lettres repères)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00130",
+                  "Véhicules (lettres repères)",
+                ),
+              ),
               _NotaBox(
-                title: "VÉHICULES",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00131",
+                  "VÉHICULES",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Fourgon de patrouille : TC\n"),
-                  TextSpan(text: "Voiture légère : TV\n"),
-                  TextSpan(text: "Motocyclette : TM\n"),
-                  TextSpan(text: "Scooter : TSC\n"),
-                  TextSpan(text: "VTT : TT\n"),
-                  TextSpan(text: "Transport équestre : TCH\n"),
-                  TextSpan(text: "Véhicule BAC : BAC\n"),
-                  TextSpan(text: "Véhicule BST : BST\n"),
-                  TextSpan(text: "GSP : GSP\n\n"),
                   TextSpan(
-                    text: "Ex : TV 111 A — TC 310 A — BAC 112 B — TM 122 C…",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00132",
+                      "Fourgon de patrouille : TC\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00133",
+                      "Voiture légère : TV\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00134",
+                      "Motocyclette : TM\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00135",
+                      "Scooter : TSC\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00136",
+                      "VTT : TT\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00137",
+                      "Transport équestre : TCH\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00138",
+                      "Véhicule BAC : BAC\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00139",
+                      "Véhicule BST : BST\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00140",
+                      "GSP : GSP\n\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00141",
+                      "Ex : TV 111 A — TC 310 A — BAC 112 B — TM 122 C…",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Piétons (points fixes / déplacements à pied)"),
-              _BulletPoint(
-                text:
-                    "Point particulier : TP + numéro défini par le dispositif (ex : TP 1, TP 2…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00142",
+                  "Piétons (points fixes / déplacements à pied)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Passager d’un véhicule se déplaçant à pied : TP + indicatif du véhicule (ex : TP BAC 220).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00143",
+                  "Point particulier : TP + numéro défini par le dispositif (ex : TP 1, TP 2…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garde statique : TG + chiffres du service (+ lettre rang si besoin) (ex : TG 110 A).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00144",
+                  "Passager d’un véhicule se déplaçant à pied : TP + indicatif du véhicule (ex : TP BAC 220).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00145",
+                  "Garde statique : TG + chiffres du service (+ lettre rang si besoin) (ex : TG 110 A).",
+                ),
               ),
             ],
           ),
@@ -506,30 +1224,102 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // Personnalités de l'État
           _ConditionCard(
-            title: "F) Principales personnalités de l’État (repères)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00146",
+              "F) Principales personnalités de l’État (repères)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "INDICATIFS",
                 bodySpans: [
-                  TextSpan(text: "Présidence de la République : VEGA\n"),
-                  TextSpan(text: "Président du Sénat : SENEQUE\n"),
                   TextSpan(
-                    text: "Président de l’Assemblée Nationale : ANTARES\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00147",
+                      "Présidence de la République : VEGA\n",
+                    ),
                   ),
-                  TextSpan(text: "Premier Ministre : MEROVEE\n"),
-                  TextSpan(text: "Ministre de l’Intérieur : AMIENS\n"),
-                  TextSpan(text: "Ministre de la Justice : MERCURE\n"),
-                  TextSpan(text: "Ministre des Affaires étrangères : CRATER\n"),
-                  TextSpan(text: "Ministre de l’Économie : RIGEL\n"),
                   TextSpan(
-                    text: "Ministre de l’Éducation nationale : GERMINY\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00148",
+                      "Président du Sénat : SENEQUE\n",
+                    ),
                   ),
-                  TextSpan(text: "Ministre de la Défense : MISAR\n"),
-                  TextSpan(text: "Préfet : ARAMIS\n"),
-                  TextSpan(text: "Sous-Préfet : BAZIN"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00149",
+                      "Président de l’Assemblée Nationale : ANTARES\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00150",
+                      "Premier Ministre : MEROVEE\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00151",
+                      "Ministre de l’Intérieur : AMIENS\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00152",
+                      "Ministre de la Justice : MERCURE\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00153",
+                      "Ministre des Affaires étrangères : CRATER\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00154",
+                      "Ministre de l’Économie : RIGEL\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00155",
+                      "Ministre de l’Éducation nationale : GERMINY\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00156",
+                      "Ministre de la Défense : MISAR\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00157",
+                      "Préfet : ARAMIS\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00158",
+                      "Sous-Préfet : BAZIN",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
@@ -537,8 +1327,11 @@ class CommunicationRadioPage extends StatelessWidget {
                 title: "NOTE",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans l’usage opérationnel, l’essentiel est de savoir reconnaître ces indicatifs et d’éviter toute confusion d’interlocuteur.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00159",
+                      "Dans l’usage opérationnel, l’essentiel est de savoir reconnaître ces indicatifs et d’éviter toute confusion d’interlocuteur.",
+                    ),
                   ),
                 ],
               ),
@@ -549,38 +1342,75 @@ class CommunicationRadioPage extends StatelessWidget {
 
           // Synthèse opérationnelle (ultra utile)
           _ConditionCard(
-            title: "Synthèse opérationnelle (à retenir)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+              "f00160",
+              "Synthèse opérationnelle (à retenir)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Le triptyque radio"),
-              _BulletPoint(text: "Indicatif — Motif — Localisation précise."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00161",
+                  "Le triptyque radio",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00162",
+                  "Indicatif — Motif — Localisation précise.",
+                ),
+              ),
               SizedBox(height: 10),
-              _SubTitle("Les erreurs à éviter"),
-              _BulletPoint(
-                text:
-                    "Parler trop vite / trop long / sans vérifier que le réseau est libre.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00163",
+                  "Les erreurs à éviter",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Citer des noms (policiers/autorités) au lieu des indicatifs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00164",
+                  "Parler trop vite / trop long / sans vérifier que le réseau est libre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transmettre devant la personne concernée (confidentialité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00165",
+                  "Citer des noms (policiers/autorités) au lieu des indicatifs.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Oublier d’annoncer retrait/retour quand l’écoute permanente est impossible.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00166",
+                  "Transmettre devant la personne concernée (confidentialité).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                  "f00167",
+                  "Oublier d’annoncer retrait/retour quand l’écoute permanente est impossible.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "OBJECTIF",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Être compris du premier coup, sans ambiguïté, en restant discret et opérationnel.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/communication_radio_page.dart",
+                      "f00168",
+                      "Être compris du premier coup, sans ambiguïté, en restant discret et opérationnel.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],

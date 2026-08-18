@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVProcedurePage extends StatelessWidget {
   const PVProcedurePage({super.key});
@@ -55,10 +56,18 @@ class PVProcedurePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — APJ 20",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+            "f00002",
+            "PV — APJ 20",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class PVProcedurePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La procédure",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+              "f00003",
+              "La procédure",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -85,44 +98,71 @@ class PVProcedurePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (obligation respectée)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 20 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                    "f00005",
+                    "Article 20 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit les agents de police judiciaire (A.P.J.) et leurs missions dans le cadre de la procédure pénale.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                    "f00006",
+                    " : définit les agents de police judiciaire (A.P.J.) et leurs missions dans le cadre de la procédure pénale.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Mission des A.P.J. (article 20 CPP)"),
-              _BulletPoint(
-                text: "Seconder les officiers de police judiciaire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00007",
+                  "Mission des A.P.J. (article 20 CPP)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Constater les crimes, les délits et les contraventions et en dresser procès-verbal.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00008",
+                  "Seconder les officiers de police judiciaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Recevoir par procès-verbal les déclarations de toutes personnes susceptibles de fournir des renseignements sur les auteurs et complices des infractions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00009",
+                  "Constater les crimes, les délits et les contraventions et en dresser procès-verbal.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00010",
+                  "Recevoir par procès-verbal les déclarations de toutes personnes susceptibles de fournir des renseignements sur les auteurs et complices des infractions.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les A.P.J. ne peuvent exercer effectivement leurs attributions judiciaires que si leurs activités consistent, à titre principal, en des missions comportant l’exercice de la police judiciaire.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                      "f00011",
+                      "Les A.P.J. ne peuvent exercer effectivement leurs attributions judiciaires que si leurs activités consistent, à titre principal, en des missions comportant l’exercice de la police judiciaire.",
+                    ),
                   ),
                 ],
               ),
@@ -133,13 +173,21 @@ class PVProcedurePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "II — Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+              "f00012",
+              "II — Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La procédure pénale policière peut être définie comme un ensemble de règles qui définissent la manière dont les policiers procèdent à leurs enquêtes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00013",
+                  "La procédure pénale policière peut être définie comme un ensemble de règles qui définissent la manière dont les policiers procèdent à leurs enquêtes.",
+                ),
               ),
             ],
           ),
@@ -148,27 +196,51 @@ class PVProcedurePage extends StatelessWidget {
 
           // Méthode de l’enquêteur
           _ConditionCard(
-            title: "III — Méthode de travail",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+              "f00014",
+              "III — Méthode de travail",
+            ),
             cardColor: cardMethod,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le policier qui débute une enquête doit respecter certaines méthodes : il relate, au fur et à mesure, tout ce qu’il a fait, vu ou tout ce qui a été dit devant lui.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00015",
+                  "Le policier qui débute une enquête doit respecter certaines méthodes : il relate, au fur et à mesure, tout ce qu’il a fait, vu ou tout ce qui a été dit devant lui.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il retranscrit ensuite ces éléments, de manière très précise, sur un acte officiel, signé de sa main : un procès-verbal.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00016",
+                  "Il retranscrit ensuite ces éléments, de manière très précise, sur un acte officiel, signé de sa main : un procès-verbal.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Bon réflexe"),
-              _BulletPoint(
-                text:
-                    "Écrire au fil de l’enquête : faits, constatations, paroles entendues, actions réalisées.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00017",
+                  "Bon réflexe",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rédiger un PV clair, précis, daté, structuré et exploitable.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00018",
+                  "Écrire au fil de l’enquête : faits, constatations, paroles entendues, actions réalisées.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00019",
+                  "Rédiger un PV clair, précis, daté, structuré et exploitable.",
+                ),
               ),
             ],
           ),
@@ -177,24 +249,52 @@ class PVProcedurePage extends StatelessWidget {
 
           // Saisine + construction de la procédure
           _ConditionCard(
-            title: "IV — Construction de la procédure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+              "f00020",
+              "IV — Construction de la procédure",
+            ),
             cardColor: cardFlow,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Le premier acte : la saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00021",
+                  "A) Le premier acte : la saisine",
+                ),
+              ),
               _Paragraph(
-                "Le premier acte de la procédure, appelé « saisine », décrit la manière dont les services de police ont connaissance des faits.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00022",
+                  "Le premier acte de la procédure, appelé « saisine », décrit la manière dont les services de police ont connaissance des faits.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) La procédure : un ensemble cohérent de PV"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00023",
+                  "B) La procédure : un ensemble cohérent de PV",
+                ),
+              ),
               _Paragraph(
-                "L’ensemble des procès-verbaux rédigés au cours d’une même enquête constitue une procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00024",
+                  "L’ensemble des procès-verbaux rédigés au cours d’une même enquête constitue une procédure.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les différents actes d’investigation sont généralement classés de manière chronologique.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00025",
+                  "Les différents actes d’investigation sont généralement classés de manière chronologique.",
+                ),
               ),
               SizedBox(height: 12),
 
@@ -202,8 +302,11 @@ class PVProcedurePage extends StatelessWidget {
                 title: "Objectif",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Permettre une lecture fluide : comprendre l’affaire du début à la fin, sans zones d’ombre.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                      "f00026",
+                      "Permettre une lecture fluide : comprendre l’affaire du début à la fin, sans zones d’ombre.",
+                    ),
                   ),
                 ],
               ),
@@ -214,18 +317,36 @@ class PVProcedurePage extends StatelessWidget {
 
           // Transmission au magistrat + instructions
           _ConditionCard(
-            title: "V — Fin d’enquête & transmission",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+              "f00027",
+              "V — Fin d’enquête & transmission",
+            ),
             cardColor: cardRep,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsque les investigations sont terminées, la procédure est transmise au magistrat, qui décide ou non de poursuivre la (ou les) personne(s) mise(s) en cause.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00028",
+                  "Lorsque les investigations sont terminées, la procédure est transmise au magistrat, qui décide ou non de poursuivre la (ou les) personne(s) mise(s) en cause.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Cadre d’emploi"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00029",
+                  "Cadre d’emploi",
+                ),
+              ),
               _Paragraph(
-                "Des instructions émanant de chaque direction active précisent les modalités d’emploi des gardiens A.P.J. 20.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart",
+                  "f00030",
+                  "Des instructions émanant de chaque direction active précisent les modalités d’emploi des gardiens A.P.J. 20.",
+                ),
               ),
             ],
           ),

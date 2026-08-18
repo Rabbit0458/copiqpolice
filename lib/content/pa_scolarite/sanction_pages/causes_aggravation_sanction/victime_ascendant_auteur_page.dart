@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaVictimeAscendantAuteurPage extends StatelessWidget {
   const PaVictimeAscendantAuteurPage({super.key});
@@ -44,7 +45,11 @@ class PaVictimeAscendantAuteurPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Victime ascendant de l'auteur",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+            "f00001",
+            "Victime ascendant de l'auteur",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,21 +75,24 @@ class PaVictimeAscendantAuteurPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Sur un ascendant légitime ou naturel ou sur les père ou mère adoptifs.",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00002",
+                        "Sur un ascendant légitime ou naturel ou sur les père ou mère adoptifs.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,17 +102,29 @@ class PaVictimeAscendantAuteurPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante a été réintroduite dans le code pénal suite à la suppression de l'incrimination de parricide.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00004",
+                        "Cette circonstance aggravante a été réintroduite dans le code pénal suite à la suppression de l'incrimination de parricide.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Résultant de la filiation existant entre l'auteur de l'infraction et sa victime, cette circonstance aggravante est de nature personnelle.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00005",
+                        "Résultant de la filiation existant entre l'auteur de l'infraction et sa victime, cette circonstance aggravante est de nature personnelle.",
+                      ),
                     ),
                   ],
                 ),
@@ -112,28 +132,66 @@ class PaVictimeAscendantAuteurPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                    "f00006",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
-                    _SubTitle('2.1 - Un ascendant légitime'),
+                  children: [
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00007",
+                        '2.1 - Un ascendant légitime',
+                      ),
+                    ),
                     _Paragraph(
-                      "Ce sont les père et mère légitimes de l'auteur de l'infraction et ses autres ascendants directs.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00008",
+                        "Ce sont les père et mère légitimes de l'auteur de l'infraction et ses autres ascendants directs.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "La circonstance aggravante ne s'étend pas aux alliés aux mêmes degrés. Les auteurs sont donc des enfants nés de parents unis par le mariage.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00009",
+                        "La circonstance aggravante ne s'étend pas aux alliés aux mêmes degrés. Les auteurs sont donc des enfants nés de parents unis par le mariage.",
+                      ),
                     ),
                     SizedBox(height: 12),
-                    _SubTitle('2.2 - Un ascendant naturel'),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00010",
+                        '2.2 - Un ascendant naturel',
+                      ),
+                    ),
                     _Paragraph(
-                      "Les auteurs sont des enfants nés hors mariage. La filiation naturelle doit cependant être légalement établie.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00011",
+                        "Les auteurs sont des enfants nés hors mariage. La filiation naturelle doit cependant être légalement établie.",
+                      ),
                     ),
                     SizedBox(height: 12),
-                    _SubTitle('2.3 - Père ou mère adoptifs'),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00012",
+                        '2.3 - Père ou mère adoptifs',
+                      ),
+                    ),
                     _Paragraph(
-                      "Les auteurs sont des enfants adoptés. Cependant, la circonstance aggravante pourra être caractérisée dans le cas où la victime serait le père ou la mère par le sang.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                        "f00013",
+                        "Les auteurs sont des enfants adoptés. Cependant, la circonstance aggravante pourra être caractérisée dans le cas où la victime serait le père ou la mère par le sang.",
+                      ),
                     ),
                   ],
                 ),
@@ -141,34 +199,76 @@ class PaVictimeAscendantAuteurPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                    "f00014",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE MEURTRE (ARTICLE "),
-                      law("221-4, 2° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "➤ L'EMPOISONNEMENT (ARTICLE "),
-                      law("221-5 C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00015",
+                          "➤ LE MEURTRE (ARTICLE ",
+                        ),
                       ),
-                      law("222-3, 3° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00016",
+                          "221-4, 2° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00017",
+                          "➤ L'EMPOISONNEMENT (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00018",
+                          "221-5 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00019",
+                          "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00020",
+                          "222-3, 3° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00021",
+                          "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                        ),
                       ),
                       law("222-8"),
                       const TextSpan(text: ", "),
@@ -176,16 +276,31 @@ class PaVictimeAscendantAuteurPage extends StatelessWidget {
                       const TextSpan(text: ", "),
                       law("222-12"),
                       const TextSpan(text: " ET "),
-                      law("222-13, 3° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00022",
+                          "222-13, 3° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00023",
+                          "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                        ),
                       ),
-                      law("222-15 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart",
+                          "f00024",
+                          "222-15 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                   ],
@@ -449,9 +564,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_biens_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_cas_presumes_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 // ===================== PAGE QUIZ LD =====================
 
@@ -37,10 +38,18 @@ class LdContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La légitime défense',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+            "f00002",
+            'La légitime défense',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,46 +64,76 @@ class LdContenuPage extends StatelessWidget {
           // ===== LD PERSONNES =====
           _ModuleCard(
             tag: 'ld_personnes',
-            title: 'Légitime défense des personnes',
-            subtitle: 'Réaction immédiate face à une atteinte injustifiée.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00003",
+              'Légitime défense des personnes',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00004",
+              'Réaction immédiate face à une atteinte injustifiée.',
+            ),
             imagePath: 'assets/images/legitime_defense.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () =>
                 _open(context, const LdPersonnesPage(), 'ld_personnes'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // ===== LD BIENS =====
           _ModuleCard(
             tag: 'ld_biens',
-            title: 'Légitime défense des biens',
-            subtitle: 'Protéger un bien sans excès.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00005",
+              'Légitime défense des biens',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00006",
+              'Protéger un bien sans excès.',
+            ),
             imagePath: 'assets/images/recel.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _open(context, const LdBiensPage(), 'ld_biens'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // ===== CAS PRESUMES =====
           _ModuleCard(
             tag: 'ld_presomptions',
-            title: 'Cas présumés de légitime défense',
-            subtitle: 'Situations où la LD est présumée.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00007",
+              'Cas présumés de légitime défense',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00008",
+              'Situations où la LD est présumée.',
+            ),
             imagePath: 'assets/images/contre_biens.jpeg',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () =>
                 _open(context, const LdCasPresumesPage(), 'ld_presomptions'),
           ),
-          const SizedBox(height: 24),
-
-          const SizedBox(height: 22), // un peu plus bas que les autres
+          const SizedBox(height: 10),
           _ModuleCard(
             tag: 'quiz',
-            title: 'Quiz — Légitime Défense',
-            subtitle: 'Testez vos connaissances.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00009",
+              'Quiz — Légitime Défense',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+              "f00010",
+              'Testez vos connaissances.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -102,7 +141,7 @@ class LdContenuPage extends StatelessWidget {
               context,
             ).pushNamed('/gpx/generalites/quiz/legitimedefense'),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: 10),
         ],
       ),
     );
@@ -158,7 +197,13 @@ class _ModuleCard extends StatelessWidget {
         label: '$title — découvrir',
         child: Container(
           // un poil plus haut pour laisser respirer texte + CTA
-          height: 200,
+          height:
+              ((MediaQuery.sizeOf(context).height -
+                          MediaQuery.paddingOf(context).vertical -
+                          kToolbarHeight -
+                          94) /
+                      4)
+                  .clamp(158.0, 200.0),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,
@@ -212,7 +257,7 @@ class _ModuleCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 60), // réduit l’espace poussé vers le bas
+                    const Spacer(),
                     // titre un tout petit peu plus petit
                     Text(
                       title,
@@ -228,7 +273,7 @@ class _ModuleCard extends StatelessWidget {
                     const SizedBox(height: 6),
                     // on “réserve” la zone à droite pour le bouton Découvrir
                     Padding(
-                      padding: const EdgeInsets.only(right: 80),
+                      padding: const EdgeInsets.only(right: 126),
                       child: Text(
                         subtitle,
                         maxLines: 2,
@@ -273,7 +318,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 4),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+                "f00013",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -378,7 +427,11 @@ class _QuizCTA extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Quiz — Légitime défense',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+                            "f00014",
+                            'Quiz — Légitime défense',
+                          ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(
@@ -390,7 +443,11 @@ class _QuizCTA extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          'Conditions, cas présumés et limites à ne pas dépasser.\nPrêt(e) pour un survol express avant la fiche complète ?',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_contenu_page.dart",
+                            "f00015",
+                            'Conditions, cas présumés et limites à ne pas dépasser.\nPrêt(e) pour un survol express avant la fiche complète ?',
+                          ),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(

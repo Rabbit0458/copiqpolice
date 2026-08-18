@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CausesAggravationSanctionContenuPage extends StatelessWidget {
   const CausesAggravationSanctionContenuPage({super.key});
@@ -25,10 +26,18 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "La sanction",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+            "f00002",
+            "La sanction",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Les causes d’aggravation de la sanction",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00003",
+              "Les causes d’aggravation de la sanction",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,8 +66,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Accédez à l’ensemble des documents portant sur les circonstances et "
-            "qualités aggravantes (mode opératoire, vulnérabilité, armes, bande organisée, etc.).",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+                  "f00004",
+                  "Accédez à l’ensemble des documents portant sur les circonstances et ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+                  "f00005",
+                  "qualités aggravantes (mode opératoire, vulnérabilité, armes, bande organisée, etc.).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -68,8 +89,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
           // ================= PDF LIST (capture écran) =================
           _ModuleCard(
             tag: 'sanction_aggrav_auteur_ivre_stupefiants',
-            title: "Auteur ivre ou sous l’emprise de stupéfiants",
-            subtitle: "Cause d’aggravation liée à l’état de l’auteur.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00006",
+              "Auteur ivre ou sous l’emprise de stupéfiants",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00007",
+              "Cause d’aggravation liée à l’état de l’auteur.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -82,9 +111,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_reseau_communication',
-            title: "Avec utilisation d’un réseau de communication",
-            subtitle:
-                "Aggravation liée à l’usage d’un réseau de communication.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00008",
+              "Avec utilisation d’un réseau de communication",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00009",
+              "Aggravation liée à l’usage d’un réseau de communication.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -97,9 +133,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_etablissement_enseignement',
-            title: "Dans un établissement d’enseignement",
-            subtitle:
-                "Aggravation liée au lieu : établissement d’enseignement.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00010",
+              "Dans un établissement d’enseignement",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00011",
+              "Aggravation liée au lieu : établissement d’enseignement.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -112,9 +155,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_bande_organisee',
-            title: "La bande organisée",
-            subtitle:
-                "Aggravation liée à l’organisation et la préparation collective.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00012",
+              "La bande organisée",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00013",
+              "Aggravation liée à l’organisation et la préparation collective.",
+            ),
             imagePath: 'assets/images/complicite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -127,9 +177,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_minorite_quinze_ans',
-            title: "La minorité de quinze ans",
-            subtitle:
-                "Aggravation liée à l’âge de la victime (moins de 15 ans).",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00014",
+              "La minorité de quinze ans",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00015",
+              "Aggravation liée à l’âge de la victime (moins de 15 ans).",
+            ),
             imagePath: 'assets/images/defaut_permis.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -142,8 +199,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_mort',
-            title: "La mort",
-            subtitle: "Aggravation liée au résultat : décès.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00016",
+              "La mort",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00017",
+              "Aggravation liée au résultat : décès.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -156,9 +221,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_mutilation_inf_permanente',
-            title: "La mutilation ou l’infirmité permanente",
-            subtitle:
-                "Aggravation liée au résultat : mutilation / infirmité permanente.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00018",
+              "La mutilation ou l’infirmité permanente",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00019",
+              "Aggravation liée au résultat : mutilation / infirmité permanente.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -171,9 +243,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_vulnerabilite_victime',
-            title: "La particulière vulnérabilité de la victime",
-            subtitle:
-                "Aggravation liée à l’état ou la situation de la victime.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00020",
+              "La particulière vulnérabilité de la victime",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00021",
+              "Aggravation liée à l’état ou la situation de la victime.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -186,9 +265,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_premeditation',
-            title: "La préméditation",
-            subtitle:
-                "Aggravation liée à l’intention et la préparation préalable.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00022",
+              "La préméditation",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00023",
+              "Aggravation liée à l’intention et la préparation préalable.",
+            ),
             imagePath: 'assets/images/complicite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -201,8 +287,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_qualite_conjoint_concubin',
-            title: "La qualité de conjoint, de concubin ou de partenaire",
-            subtitle: "Aggravation liée au lien entre auteur et victime.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00024",
+              "La qualité de conjoint, de concubin ou de partenaire",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00025",
+              "Aggravation liée au lien entre auteur et victime.",
+            ),
             imagePath: 'assets/images/defaut_permis.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -215,8 +309,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_caractere_homophobe',
-            title: "Le caractère homophobe",
-            subtitle: "Aggravation liée au mobile homophobe.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00026",
+              "Le caractère homophobe",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00027",
+              "Aggravation liée au mobile homophobe.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -229,8 +331,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_caractere_raciste',
-            title: "Le caractère raciste",
-            subtitle: "Aggravation liée au mobile raciste.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00028",
+              "Le caractère raciste",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00029",
+              "Aggravation liée au mobile raciste.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -243,8 +353,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_guet_apens',
-            title: "Le guet-apens",
-            subtitle: "Aggravation liée au procédé : guet-apens.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00030",
+              "Le guet-apens",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00031",
+              "Aggravation liée au procédé : guet-apens.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -257,8 +375,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_port_usage_arme',
-            title: "Le port ou l’usage d’une arme",
-            subtitle: "Aggravation liée à l’arme : port / usage.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00032",
+              "Le port ou l’usage d’une arme",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00033",
+              "Aggravation liée à l’arme : port / usage.",
+            ),
             imagePath: 'assets/images/complicite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -271,8 +397,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_effraction',
-            title: "L’effraction",
-            subtitle: "Aggravation liée au mode d’accès : effraction.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00034",
+              "L’effraction",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00035",
+              "Aggravation liée au mode d’accès : effraction.",
+            ),
             imagePath: 'assets/images/defaut_permis.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -285,8 +419,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_circonstances_aggravantes',
-            title: "Les circonstances aggravantes",
-            subtitle: "Synthèse et logique des circonstances aggravantes.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00036",
+              "Les circonstances aggravantes",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00037",
+              "Synthèse et logique des circonstances aggravantes.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -299,8 +441,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_escalade',
-            title: "L’escalade",
-            subtitle: "Aggravation liée au mode opératoire : escalade.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00038",
+              "L’escalade",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00039",
+              "Aggravation liée au mode opératoire : escalade.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -313,8 +463,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_incapacite_totale_travail',
-            title: "L’incapacité totale de travail",
-            subtitle: "Aggravation liée au résultat : ITT.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00040",
+              "L’incapacité totale de travail",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00041",
+              "Aggravation liée au résultat : ITT.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -327,8 +485,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_moyen_cryptologie',
-            title: "L’utilisation d’un moyen de cryptologie",
-            subtitle: "Aggravation liée à l’usage d’un moyen de cryptologie.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00042",
+              "L’utilisation d’un moyen de cryptologie",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00043",
+              "Aggravation liée à l’usage d’un moyen de cryptologie.",
+            ),
             imagePath: 'assets/images/complicite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -341,8 +507,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_auteur_abusant_autorite',
-            title: "Qualité d’auteur abusant de son autorité",
-            subtitle: "Aggravation liée à l’abus d’autorité par l’auteur.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00044",
+              "Qualité d’auteur abusant de son autorité",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00045",
+              "Aggravation liée à l’abus d’autorité par l’auteur.",
+            ),
             imagePath: 'assets/images/defaut_permis.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -355,8 +529,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_auteur_ascendant_victime',
-            title: "Qualité d’auteur ascendant de la victime",
-            subtitle: "Aggravation liée au lien : ascendant de la victime.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00046",
+              "Qualité d’auteur ascendant de la victime",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00047",
+              "Aggravation liée au lien : ascendant de la victime.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -369,9 +551,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_auteur_depositaire_autorite',
-            title: "Qualité d’auteur dépositaire de l’autorité",
-            subtitle:
-                "Aggravation liée à la qualité de dépositaire de l’autorité.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00048",
+              "Qualité d’auteur dépositaire de l’autorité",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00049",
+              "Aggravation liée à la qualité de dépositaire de l’autorité.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -384,9 +573,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_victime_ascendant_auteur',
-            title: "Qualité de la victime ascendant de l’auteur",
-            subtitle:
-                "Aggravation liée au lien : victime ascendant de l’auteur.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00050",
+              "Qualité de la victime ascendant de l’auteur",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00051",
+              "Aggravation liée au lien : victime ascendant de l’auteur.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -399,8 +595,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_victime_chargee_mission',
-            title: "Qualité de la victime chargée d’une mission",
-            subtitle: "Aggravation liée à la qualité : mission de service.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00052",
+              "Qualité de la victime chargée d’une mission",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00053",
+              "Aggravation liée à la qualité : mission de service.",
+            ),
             imagePath: 'assets/images/complicite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -413,9 +617,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_victime_depositaire_autorite',
-            title: "Qualité de la victime dépositaire de l’autorité",
-            subtitle:
-                "Aggravation liée à la qualité de dépositaire de l’autorité.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00054",
+              "Qualité de la victime dépositaire de l’autorité",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00055",
+              "Aggravation liée à la qualité de dépositaire de l’autorité.",
+            ),
             imagePath: 'assets/images/defaut_permis.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -428,8 +639,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_victime_prostitution',
-            title: "Qualité de la victime qui se livre à la prostitution",
-            subtitle: "Aggravation liée à la situation de la victime.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00056",
+              "Qualité de la victime qui se livre à la prostitution",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00057",
+              "Aggravation liée à la situation de la victime.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -442,9 +661,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_temoin_victime_partie_civile',
-            title: "Qualité de témoin, victime ou partie civile",
-            subtitle:
-                "Aggravation liée à la qualité procédurale de la victime.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00058",
+              "Qualité de témoin, victime ou partie civile",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00059",
+              "Aggravation liée à la qualité procédurale de la victime.",
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -457,8 +683,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'sanction_aggrav_victime_parente_personne',
-            title: "Qualité de victime parente d’une personne",
-            subtitle: "Aggravation liée au lien familial / parenté.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00060",
+              "Qualité de victime parente d’une personne",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00061",
+              "Aggravation liée au lien familial / parenté.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -473,9 +707,16 @@ class CausesAggravationSanctionContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'sanction_causes_aggravation_quiz',
-            title: 'Quiz — Causes d’aggravation',
-            subtitle:
-                'Entraînez-vous sur les circonstances aggravantes et leurs effets.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00062",
+              'Quiz — Causes d’aggravation',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction_contenu_page.dart",
+              "f00063",
+              'Entraînez-vous sur les circonstances aggravantes et leurs effets.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

@@ -888,28 +888,13 @@ class _QuizCultureGeneralFranceState extends State<QuizCultureGeneralFrance>
   /// données. Chemin unique de la croix et du geste retour système : sans ça, le
   /// geste contournerait la confirmation.
   Future<void> _fermerQuiz() async {
-    if (_sortieEnCours) return;
-    _sortieEnCours = true;
-    try {
-      // Sur l'écran de choix de difficulté, ou après un quiz déjà clôturé, rien
-      // n'est engagé : on sort sans demander.
-      if (!_hasQuiz || _historyFinished) {
-        if (mounted) _quitterEcran();
-        return;
-      }
-
-      final confirme = await _confirmerSortie(
-        titre: 'Quitter le quiz ?',
-        actionLabel: 'Quitter',
-      );
-      if (!confirme || !mounted) return;
-
-      await _updateHistoryOnFinish();
-      if (!mounted) return;
-      _quitterEcran();
-    } finally {
-      _sortieEnCours = false;
+    // La croix et « Mettre fin » partagent strictement la même clôture :
+    // confirmation, sauvegarde Supabase, calcul du score et écran de résultat.
+    if (!_hasQuiz) {
+      if (mounted) _quitterEcran();
+      return;
     }
+    await _endQuizNow();
   }
 
   /// Sortie effective de l'écran.

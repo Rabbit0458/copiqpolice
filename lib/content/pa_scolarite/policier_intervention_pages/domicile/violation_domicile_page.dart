@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolationDomicilePage extends StatelessWidget {
   const PaViolationDomicilePage({super.key});
@@ -56,7 +57,11 @@ class PaViolationDomicilePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Domicile",
@@ -74,7 +79,11 @@ class PaViolationDomicilePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La violation de domicile",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00002",
+              "La violation de domicile",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,36 +95,48 @@ class PaViolationDomicilePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles en rouge)
           _ConditionCard(
-            title: "I — Élément légal (textes d’incrimination)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00003",
+              "I — Élément légal (textes d’incrimination)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00004",
+                    "Article 226-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la violation de domicile commise par un particulier (introduction ou maintien).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00005",
+                    " : définit et réprime la violation de domicile commise par un particulier (introduction ou maintien).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00006",
+                    "Article 432-8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime l’introduction (ou la tentative) dans le domicile d’autrui contre le gré de l’habitant, lorsqu’elle est commise par une personne dépositaire de l’autorité publique / chargée d’une mission de service public, hors les cas prévus par la loi.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00007",
+                    " : prévoit et réprime l’introduction (ou la tentative) dans le domicile d’autrui contre le gré de l’habitant, lorsqu’elle est commise par une personne dépositaire de l’autorité publique / chargée d’une mission de service public, hors les cas prévus par la loi.",
+                  ),
                 ),
               ]),
             ],
@@ -125,85 +146,183 @@ class PaViolationDomicilePage extends StatelessWidget {
 
           // Notion de domicile
           _ConditionCard(
-            title: "II — La notion de domicile",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00008",
+              "II — La notion de domicile",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le domicile est l’endroit où une personne a le droit de se dire chez elle, qu’elle y habite ou non, quel que soit le titre juridique d’occupation et l’affectation des locaux. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00009",
+                    "Le domicile est l’endroit où une personne a le droit de se dire chez elle, qu’elle y habite ou non, quel que soit le titre juridique d’occupation et l’affectation des locaux. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article 226-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00010",
+                    "Article 226-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "La protection vise aussi bien le domicile « légal » que la résidence, un lieu de séjour occasionnel, "
-                "et peut concerner un lieu occupé à titre de propriétaire ou d’occupant précaire, à condition que le lieu protège l’intimité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00011",
+                      "La protection vise aussi bien le domicile « légal » que la résidence, un lieu de séjour occasionnel, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00012",
+                      "et peut concerner un lieu occupé à titre de propriétaire ou d’occupant précaire, à condition que le lieu protège l’intimité.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La notion peut s’étendre à des logements inoccupés contenant des meubles (ex. table, chaises, lit, canapé, électroménager…).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00013",
+                  "La notion peut s’étendre à des logements inoccupés contenant des meubles (ex. table, chaises, lit, canapé, électroménager…).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : la chambre criminelle développe aussi l’idée de « lieu normalement clos » : un lieu non constitutif d’un domicile n’est pas pour autant libre d’accès pour l’agent, s’il est normalement clos et protège une sphère privée.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00014",
+                      "Jurisprudence : la chambre criminelle développe aussi l’idée de « lieu normalement clos » : un lieu non constitutif d’un domicile n’est pas pour autant libre d’accès pour l’agent, s’il est normalement clos et protège une sphère privée.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 14),
 
-              _SubTitle("Exemples : constituent un domicile"),
-              _IntroBullet(text: "Appartement loué."),
-              _IntroBullet(
-                text:
-                    "Maison de campagne / vacances, demeure temporairement inoccupée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00015",
+                  "Exemples : constituent un domicile",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Dépendances prolongeant l’habitation (débarras, garage, balcon/terrasse, remise…), dans l’enceinte ou à proximité immédiate.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00016",
+                  "Appartement loué.",
+                ),
               ),
               _IntroBullet(
-                text: "Box fermé non attenant / garage en parking souterrain.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00017",
+                  "Maison de campagne / vacances, demeure temporairement inoccupée.",
+                ),
               ),
               _IntroBullet(
-                text: "Logement occupé sans titre mais pacifiquement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00018",
+                  "Dépendances prolongeant l’habitation (débarras, garage, balcon/terrasse, remise…), dans l’enceinte ou à proximité immédiate.",
+                ),
               ),
-              _IntroBullet(text: "Chambre d’hôtel."),
               _IntroBullet(
-                text:
-                    "Locaux professionnels : protégés sauf lorsqu’ils sont ouverts au public pendant les heures d’ouverture.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00019",
+                  "Box fermé non attenant / garage en parking souterrain.",
+                ),
               ),
               _IntroBullet(
-                text: "Véhicule réellement aménagé pour l’habitation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00020",
+                  "Logement occupé sans titre mais pacifiquement.",
+                ),
               ),
-              _IntroBullet(text: "Caravane, roulotte, tente."),
               _IntroBullet(
-                text: "Yacht/voilier/péniche (navire habitable).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00021",
+                  "Chambre d’hôtel.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00022",
+                  "Locaux professionnels : protégés sauf lorsqu’ils sont ouverts au public pendant les heures d’ouverture.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00023",
+                  "Véhicule réellement aménagé pour l’habitation.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00024",
+                  "Caravane, roulotte, tente.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00025",
+                  "Yacht/voilier/péniche (navire habitable).",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("Exemples : ne constituent pas un domicile"),
-              _IntroBullet(
-                text: "Logement vide de meubles entre deux locations.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00026",
+                  "Exemples : ne constituent pas un domicile",
+                ),
               ),
               _IntroBullet(
-                text: "Immeuble en construction, immeuble neuf jamais occupé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00027",
+                  "Logement vide de meubles entre deux locations.",
+                ),
               ),
-              _IntroBullet(text: "Immeuble en cours de démolition."),
-              _IntroBullet(text: "Véhicule non aménagé."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00028",
+                  "Immeuble en construction, immeuble neuf jamais occupé.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00029",
+                  "Immeuble en cours de démolition.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00030",
+                  "Véhicule non aménagé.",
+                ),
+              ),
             ],
           ),
 
@@ -211,35 +330,65 @@ class PaViolationDomicilePage extends StatelessWidget {
 
           // Violation de domicile - Particulier
           _ConditionCard(
-            title: "III — Violation de domicile par un particulier",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00031",
+              "III — Violation de domicile par un particulier",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00032",
+                    "Article 226-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00033",
+                    " : l’introduction (ou le maintien) dans le domicile d’autrui, par manœuvres/menaces/voies de fait/contrainte, hors les cas où la loi le permet, est punie de ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : l’introduction (ou le maintien) dans le domicile d’autrui, par manœuvres/menaces/voies de fait/contrainte, hors les cas où la loi le permet, est punie de ",
-                ),
-                TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00034",
+                    "3 ans d’emprisonnement et 45 000 € d’amende",
+                  ),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("A) Élément matériel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00035",
+                  "A) Élément matériel",
+                ),
+              ),
               _Paragraph(
-                "Deux comportements sont réprimés :\n"
-                "• L’introduction frauduleuse dans le domicile d’autrui.\n"
-                "• Le maintien dans le domicile d’autrui après une introduction réalisée dans ces conditions.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00036",
+                      "Deux comportements sont réprimés :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00037",
+                      "• L’introduction frauduleuse dans le domicile d’autrui.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00038",
+                      "• Le maintien dans le domicile d’autrui après une introduction réalisée dans ces conditions.",
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -247,19 +396,48 @@ class PaViolationDomicilePage extends StatelessWidget {
                 title: "Introduction",
                 bodySpans: [
                   TextSpan(
-                    text: "Entrer illicitement dans un domicile, ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00039",
+                      "Entrer illicitement dans un domicile, ",
+                    ),
                   ),
-                  TextSpan(text: "à l’aide de "),
                   TextSpan(
-                    text: "manœuvres, menaces, voies de fait ou contrainte",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00040",
+                      "à l’aide de ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00041",
+                      "manœuvres, menaces, voies de fait ou contrainte",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text:
-                        " (ruse, violences, escalade, fausses clés, effraction…), ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00042",
+                      " (ruse, violences, escalade, fausses clés, effraction…), ",
+                    ),
                   ),
-                  TextSpan(text: "en dehors des cas prévus par la loi "),
-                  TextSpan(text: "et contre le gré de l’occupant."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00043",
+                      "en dehors des cas prévus par la loi ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00044",
+                      "et contre le gré de l’occupant.",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
@@ -269,43 +447,82 @@ class PaViolationDomicilePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Rester dans le domicile d’autrui après une introduction réalisée par manœuvres/menaces/voies de fait/contrainte. "
-                        "Le maintien n’exige pas en lui-même de nouvelles manœuvres : il suffit qu’il fasse suite à l’introduction initiale.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                          "f00045",
+                          "Rester dans le domicile d’autrui après une introduction réalisée par manœuvres/menaces/voies de fait/contrainte. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                          "f00046",
+                          "Le maintien n’exige pas en lui-même de nouvelles manœuvres : il suffit qu’il fasse suite à l’introduction initiale.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Hors les cas où la loi le permet"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00047",
+                  "B) Hors les cas où la loi le permet",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Exemples cités : obligation de porter secours / empêcher la commission d’un crime ou délit contre une personne — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00048",
+                    "Exemples cités : obligation de porter secours / empêcher la commission d’un crime ou délit contre une personne — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 223-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00049",
+                    "article 223-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("C) Élément moral"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00050",
+                  "C) Élément moral",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir :\n"
-                "• conscience de commettre un acte illicite ;\n"
-                "• la volonté de pénétrer ou de se maintenir dans le domicile d’autrui malgré l’opposition de l’occupant, ou à son insu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00051",
+                      "L’auteur doit avoir :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00052",
+                      "• conscience de commettre un acte illicite ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00053",
+                      "• la volonté de pénétrer ou de se maintenir dans le domicile d’autrui malgré l’opposition de l’occupant, ou à son insu.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Infraction continue : la violation de domicile permet d’agir dans le cadre d’une enquête de flagrance tant que l’occupation illicite perdure.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00054",
+                      "Infraction continue : la violation de domicile permet d’agir dans le cadre d’une enquête de flagrance tant que l’occupation illicite perdure.",
+                    ),
                   ),
                 ],
               ),
@@ -316,24 +533,43 @@ class PaViolationDomicilePage extends StatelessWidget {
 
           // Circonstances aggravantes (nota racisme etc)
           _ConditionCard(
-            title: "IV — Circonstances aggravantes (NOTA)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00055",
+              "IV — Circonstances aggravantes (NOTA)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsque le délit est commis pour des raisons liées au racisme, à la xénophobie, à la religion, "
-                "au sexisme, à l’orientation sexuelle ou à l’identité de genre, le maximum de la peine privative de liberté encourue est relevé.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00056",
+                      "Lorsque le délit est commis pour des raisons liées au racisme, à la xénophobie, à la religion, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00057",
+                      "au sexisme, à l’orientation sexuelle ou à l’identité de genre, le maximum de la peine privative de liberté encourue est relevé.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Conformément aux "),
                 TextSpan(
-                  text: "articles 132-76 et 132-77 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00058",
+                    "Conformément aux ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00059",
+                    "articles 132-76 et 132-77 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -344,30 +580,69 @@ class PaViolationDomicilePage extends StatelessWidget {
 
           // Répression + tentative/complicité (particulier)
           _ConditionCard(
-            title: "V — Répression (particulier)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00060",
+              "V — Répression (particulier)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines — infraction simple"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00061",
+                  "Peines — infraction simple",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00062",
+                    "Peines : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00063",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00064",
+                    "article 226-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : OUI."),
-              _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00065",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00066",
+                  "Tentative : OUI.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00067",
+                  "Complicité : OUI.",
+                ),
+              ),
             ],
           ),
 
@@ -375,64 +650,137 @@ class PaViolationDomicilePage extends StatelessWidget {
 
           // Violation de domicile - Fonctionnaire (DAP / MSP)
           _ConditionCard(
-            title: "VI — Violation de domicile par un « fonctionnaire »",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00068",
+              "VI — Violation de domicile par un « fonctionnaire »",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le terme « fonctionnaire » est entendu largement : personne dépositaire de l’autorité publique "
-                "(ex. policier actif, policier adjoint) ou chargée d’une mission de service public (ex. sapeur-pompier), "
-                "agissant dans l’exercice ou à l’occasion de l’exercice de ses fonctions/mission.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00069",
+                      "Le terme « fonctionnaire » est entendu largement : personne dépositaire de l’autorité publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00070",
+                      "(ex. policier actif, policier adjoint) ou chargée d’une mission de service public (ex. sapeur-pompier), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00071",
+                      "agissant dans l’exercice ou à l’occasion de l’exercice de ses fonctions/mission.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Élément matériel"),
-              _BulletPoint(
-                text:
-                    "Introduction (ou tentative d’introduction) dans le domicile d’autrui : le simple franchissement du seuil peut suffire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00072",
+                  "A) Élément matériel",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Commis par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00073",
+                  "Introduction (ou tentative d’introduction) dans le domicile d’autrui : le simple franchissement du seuil peut suffire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contre le gré de l’habitant et hors les cas prévus par la loi.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00074",
+                  "Commis par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00075",
+                  "Contre le gré de l’habitant et hors les cas prévus par la loi.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Élément moral"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00076",
+                  "B) Élément moral",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir :\n"
-                "• conscience d’agir en dehors des cas prévus par la loi ;\n"
-                "• volonté de pénétrer dans le domicile malgré l’opposition de l’occupant.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00077",
+                      "L’auteur doit avoir :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00078",
+                      "• conscience d’agir en dehors des cas prévus par la loi ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00079",
+                      "• volonté de pénétrer dans le domicile malgré l’opposition de l’occupant.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Répression"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00080",
+                  "C) Répression",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00081",
+                    "Peines : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 432-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00082",
+                    "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00083",
+                    "article 432-8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "NOTA : si le délit est commis pour des raisons liées au racisme/xénophobie/religion/sexisme/orientation sexuelle/identité de genre, le maximum encouru est relevé selon ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00084",
+                      "NOTA : si le délit est commis pour des raisons liées au racisme/xénophobie/religion/sexisme/orientation sexuelle/identité de genre, le maximum encouru est relevé selon ",
+                    ),
                   ),
                   TextSpan(
-                    text: "les articles 132-76 et 132-77 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00085",
+                      "les articles 132-76 et 132-77 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -443,9 +791,27 @@ class PaViolationDomicilePage extends StatelessWidget {
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : OUI."),
-              _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00086",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00087",
+                  "Tentative : OUI.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00088",
+                  "Complicité : OUI.",
+                ),
+              ),
             ],
           ),
 
@@ -453,136 +819,228 @@ class PaViolationDomicilePage extends StatelessWidget {
 
           // Cas où le policier peut pénétrer (péril/urgence + missions)
           _ConditionCard(
-            title: "VII — Cas d’introduction légale dans un domicile",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+              "f00089",
+              "VII — Cas d’introduction légale dans un domicile",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les dispositions permettant l’introduction dans un domicile reposent soit sur l’obligation de porter secours, "
-                "soit sur la nécessité d’exercer les missions de police.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00090",
+                      "Les dispositions permettant l’introduction dans un domicile reposent soit sur l’obligation de porter secours, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00091",
+                      "soit sur la nécessité d’exercer les missions de police.",
+                    ),
               ),
               SizedBox(height: 14),
 
               _SubTitle(
-                "A) Cas possibles de jour comme de nuit (péril / urgence)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00092",
+                  "A) Cas possibles de jour comme de nuit (péril / urgence)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "1) Réclamation depuis l’intérieur (appel au secours) — ",
-                ),
-                TextSpan(
-                  text: "article 59 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00093",
+                    "1) Réclamation depuis l’intérieur (appel au secours) — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : cris/hurlements… l’introduction peut être justifiée même si l’appel s’avère fantaisiste.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00094",
+                    "article 59 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00095",
+                    " : cris/hurlements… l’introduction peut être justifiée même si l’appel s’avère fantaisiste.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "2) Maison atteinte ou menacée par un incendie ou une inondation : la réclamation de l’intérieur n’est pas nécessaire ; "
-                "le péril peut être ignoré des occupants.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00096",
+                      "2) Maison atteinte ou menacée par un incendie ou une inondation : la réclamation de l’intérieur n’est pas nécessaire ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00097",
+                      "le péril peut être ignoré des occupants.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "3) Assistance à personne en péril — "),
                 TextSpan(
-                  text: "article 223-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00098",
+                    "3) Assistance à personne en péril — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : indices laissant croire à un péril grave dans un domicile (appel sans réponse, odeur suspecte, absence anormale d’une personne seule…).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00099",
+                    "article 223-6 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00100",
+                    " : indices laissant croire à un péril grave dans un domicile (appel sans réponse, odeur suspecte, absence anormale d’une personne seule…).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "4) Police administrative (danger imminent + certificat médical) — ",
-                ),
-                TextSpan(
-                  text: "article L. 3213-2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00101",
+                    "4) Police administrative (danger imminent + certificat médical) — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : intervention possible de nuit, notamment pour conduite en milieu psychiatrique (soins sans consentement) dans les conditions prévues.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00102",
+                    "article L. 3213-2 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00103",
+                    " : intervention possible de nuit, notamment pour conduite en milieu psychiatrique (soins sans consentement) dans les conditions prévues.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "5) Visites domiciliaires / perquisitions / saisies en flagrance sur autorisation JLD — ",
-                ),
-                TextSpan(
-                  text: "articles 59-1 et 706-89 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00104",
+                    "5) Visites domiciliaires / perquisitions / saisies en flagrance sur autorisation JLD — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : possible en dehors des heures prévues à l’article 59 CPP, sur ordonnance spécialement motivée (à la requête du procureur).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00105",
+                    "articles 59-1 et 706-89 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00106",
+                    " : possible en dehors des heures prévues à l’article 59 CPP, sur ordonnance spécialement motivée (à la requête du procureur).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "6) État de nécessité : pénétrer pour faire cesser un danger actuel ou imminent (ex. fuite de gaz, alarme intempestive causant un trouble intolérable…).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00107",
+                  "6) État de nécessité : pénétrer pour faire cesser un danger actuel ou imminent (ex. fuite de gaz, alarme intempestive causant un trouble intolérable…).",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Cas uniquement pendant les heures légales (6h → 21h)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00108",
+                  "B) Cas uniquement pendant les heures légales (6h → 21h)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Les heures légales sont fixées entre 6h et 21h — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00109",
+                    "Les heures légales sont fixées entre 6h et 21h — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 59 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                    "f00110",
+                    "article 59 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "1) Exécution d’un mandat d’amener, d’arrêt, de recherche : visite des lieux uniquement pour appréhender la personne visée, au dernier domicile connu.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00111",
+                  "1) Exécution d’un mandat d’amener, d’arrêt, de recherche : visite des lieux uniquement pour appréhender la personne visée, au dernier domicile connu.",
+                ),
               ),
               _IntroBullet(
-                text: "2) Exécution des décisions portant condamnation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00112",
+                  "2) Exécution des décisions portant condamnation.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "3) Exécution d’une contrainte judiciaire — art. 749 et suivants et D. 13-4° CPP.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00113",
+                  "3) Exécution d’une contrainte judiciaire — art. 749 et suivants et D. 13-4° CPP.",
+                ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Perquisition en enquête préliminaire",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00114",
+                  "Perquisition en enquête préliminaire",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Régime — "),
                   TextSpan(
-                    text: "articles 75 et 76 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00115",
+                      "Régime — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                      "f00116",
+                      "articles 75 et 76 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -590,14 +1048,26 @@ class PaViolationDomicilePage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " : pénétration soumise à l’autorisation préalable et écrite de la personne chez laquelle l’opération a lieu. "
-                        "En cas de crime ou délit puni d’au moins 3 ans, l’OPJ (uniquement) peut, sur autorisation du JLD, effectuer une perquisition sans assentiment.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                          "f00117",
+                          " : pénétration soumise à l’autorisation préalable et écrite de la personne chez laquelle l’opération a lieu. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                          "f00118",
+                          "En cas de crime ou délit puni d’au moins 3 ans, l’OPJ (uniquement) peut, sur autorisation du JLD, effectuer une perquisition sans assentiment.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les opérations commencées avant 21h peuvent se poursuivre après cette heure.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart",
+                  "f00119",
+                  "Les opérations commencées avant 21h peuvent se poursuivre après cette heure.",
+                ),
               ),
             ],
           ),

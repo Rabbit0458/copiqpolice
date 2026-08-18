@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaTraitePrumPage extends StatelessWidget {
   const PaTraitePrumPage({super.key});
@@ -15,11 +16,11 @@ class PaTraitePrumPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF2F2F2F) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color cardColor = isDark
-? const Color(0xFF424242)
-: const Color(0xFFF5F7FB);
+        ? const Color(0xFF424242)
+        : const Color(0xFFF5F7FB);
     final Color titleCardColor = isDark
         ? Colors.white
         : const Color(0xFF0D47A1);
@@ -32,11 +33,19 @@ class PaTraitePrumPage extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+            "f00001",
+            'Retour',
+          ),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'Traité de Prüm',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+            "f00002",
+            'Traité de Prüm',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,7 +61,11 @@ class PaTraitePrumPage extends StatelessWidget {
           // EN-TÊTE GÉNÉRAL
           // ===============================================================
           Text(
-            'L’entraide judiciaire internationale',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+              "f00003",
+              'L’entraide judiciaire internationale',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 13.5,
@@ -62,7 +75,11 @@ class PaTraitePrumPage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Chapitre 1 — La coopération pénale policière',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+              "f00004",
+              'Chapitre 1 — La coopération pénale policière',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -72,23 +89,57 @@ class PaTraitePrumPage extends StatelessWidget {
           ),
           const SizedBox(height: 12),
 
-          const _SubTitle('1.2 — Le traité de Prüm'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+              "f00005",
+              '1.2 — Le traité de Prüm',
+            ),
+          ),
           const SizedBox(height: 4),
 
-          const _Paragraph(
-            'Le traité de Prüm, ratifié par la France le 1er août 2007, a pour objet '
-            'l’approfondissement de la coopération transfrontalière, notamment en vue de '
-            'lutter contre le terrorisme, la criminalité organisée et l’immigration illégale. '
-            'Dix-sept États sont concernés par son application. '
-            'Le 23 juin 2008, les décisions de Prüm ont été transposées dans le cadre '
-            'juridique de l’Union européenne.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00006",
+                  'Le traité de Prüm, ratifié par la France le 1er août 2007, a pour objet ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00007",
+                  'l’approfondissement de la coopération transfrontalière, notamment en vue de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00008",
+                  'lutter contre le terrorisme, la criminalité organisée et l’immigration illégale. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00009",
+                  'Dix-sept États sont concernés par son application. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00010",
+                  'Le 23 juin 2008, les décisions de Prüm ont été transposées dans le cadre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00011",
+                  'juridique de l’Union européenne.',
+                ),
           ),
           const SizedBox(height: 12),
 
-          const _NotaBox(
+          _NotaBox(
             bodySpans: [
               TextSpan(
-                text: 'Version au 01/07/2025 — COP\'IQ, tous droits réservés.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00012",
+                  'Version au 01/07/2025 — COP\'IQ, tous droits réservés.',
+                ),
               ),
             ],
           ),
@@ -98,30 +149,65 @@ class PaTraitePrumPage extends StatelessWidget {
           // OBJET ET PORTEE DU TRAITÉ
           // ===============================================================
           _ConditionCard(
-            title: 'Objet et portée du traité de Prüm',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+              "f00013",
+              'Objet et portée du traité de Prüm',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le traité de Prüm renforce la coopération entre les États signataires en '
-                'permettant un échange rapide et sécurisé d’informations, ainsi que la mise '
-                'en œuvre d’actions communes. Il vise en particulier :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00014",
+                      'Le traité de Prüm renforce la coopération entre les États signataires en ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00015",
+                      'permettant un échange rapide et sécurisé d’informations, ainsi que la mise ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00016",
+                      'en œuvre d’actions communes. Il vise en particulier :',
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    'À améliorer la lutte contre le terrorisme et la criminalité organisée ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                  "f00017",
+                  'À améliorer la lutte contre le terrorisme et la criminalité organisée ;',
+                ),
               ),
               _IntroBullet(
                 text:
-                    'À renforcer la lutte contre l’immigration illégale grâce à des outils '
-                    'communs et une meilleure coordination des moyens ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00018",
+                      'À renforcer la lutte contre l’immigration illégale grâce à des outils ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00019",
+                      'communs et une meilleure coordination des moyens ;',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'À faciliter la coopération opérationnelle entre forces de sécurité et '
-                    'autorités judiciaires des différents États concernés.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00020",
+                      'À faciliter la coopération opérationnelle entre forces de sécurité et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00021",
+                      'autorités judiciaires des différents États concernés.',
+                    ),
               ),
             ],
           ),
@@ -131,56 +217,156 @@ class PaTraitePrumPage extends StatelessWidget {
           // PRINCIPALES MESURES PRÉVUES PAR LE TRAITÉ
           // ===============================================================
           _ConditionCard(
-            title: 'Principales mesures prévues par le traité de Prüm',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+              "f00022",
+              'Principales mesures prévues par le traité de Prüm',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le traité de Prüm permet aux États parties d’organiser à la fois des échanges '
-                'de données et des interventions communes. Parmi les dispositifs majeurs :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00023",
+                      'Le traité de Prüm permet aux États parties d’organiser à la fois des échanges ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00024",
+                      'de données et des interventions communes. Parmi les dispositifs majeurs :',
+                    ),
               ),
               SizedBox(height: 10),
 
               _BulletPoint(
                 text:
-                    'Les échanges de données génétiques et dactyloscopiques, afin de '
-                    'faciliter l’identification des auteurs d’infractions et de rapprocher '
-                    'les enquêtes menées dans différents États.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00025",
+                      'Les échanges de données génétiques et dactyloscopiques, afin de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00026",
+                      'faciliter l’identification des auteurs d’infractions et de rapprocher ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00027",
+                      'les enquêtes menées dans différents États.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Pour prévenir les actions terroristes, les États peuvent transmettre des '
-                    'données à caractère personnel dans le respect des garanties prévues '
-                    'par leurs droits internes et par le droit de l’Union européenne.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00028",
+                      'Pour prévenir les actions terroristes, les États peuvent transmettre des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00029",
+                      'données à caractère personnel dans le respect des garanties prévues ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00030",
+                      'par leurs droits internes et par le droit de l’Union européenne.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Dans le cadre de la lutte contre l’immigration illégale, le traité prévoit '
-                    'une mutualisation en matière de formation des personnels. Il organise '
-                    'également la possibilité de mettre en place des vols communs pour les '
-                    'mesures d’éloignement et de transiter, le cas échéant, par le territoire '
-                    'd’une autre partie contractante au traité.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00031",
+                      'Dans le cadre de la lutte contre l’immigration illégale, le traité prévoit ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00032",
+                      'une mutualisation en matière de formation des personnels. Il organise ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00033",
+                      'également la possibilité de mettre en place des vols communs pour les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00034",
+                      'mesures d’éloignement et de transiter, le cas échéant, par le territoire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00035",
+                      'd’une autre partie contractante au traité.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'La mise en place de patrouilles mixtes et d’interventions communes pour '
-                    'le maintien de l’ordre et de la sécurité publics, ainsi que pour la '
-                    'prévention des infractions pénales.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00036",
+                      'La mise en place de patrouilles mixtes et d’interventions communes pour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00037",
+                      'le maintien de l’ordre et de la sécurité publics, ainsi que pour la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00038",
+                      'prévention des infractions pénales.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'La possibilité de franchir les frontières en cas d’urgence, en vue de '
-                    'prendre, en zone frontalière sur le territoire de l’autre partie '
-                    'contractante et dans le respect du droit national de celle-ci, les '
-                    'mesures provisoires nécessaires afin d’écarter tout danger présent pour '
-                    'la vie ou l’intégrité des personnes.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00039",
+                      'La possibilité de franchir les frontières en cas d’urgence, en vue de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00040",
+                      'prendre, en zone frontalière sur le territoire de l’autre partie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00041",
+                      'contractante et dans le respect du droit national de celle-ci, les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00042",
+                      'mesures provisoires nécessaires afin d’écarter tout danger présent pour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00043",
+                      'la vie ou l’intégrité des personnes.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Les États membres peuvent également prévoir de se prêter assistance '
-                    'dans la gestion d’événements d’ordre public programmés (manifestations, '
-                    'grands rassemblements, sommets internationaux, etc.).',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00044",
+                      'Les États membres peuvent également prévoir de se prêter assistance ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00045",
+                      'dans la gestion d’événements d’ordre public programmés (manifestations, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart",
+                      "f00046",
+                      'grands rassemblements, sommets internationaux, etc.).',
+                    ),
               ),
             ],
           ),
@@ -437,9 +623,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

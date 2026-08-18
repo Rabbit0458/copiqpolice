@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/generalite_pages/complicite/complicite_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class HierarchieContenuPage extends StatelessWidget {
   const HierarchieContenuPage({super.key});
@@ -25,10 +26,18 @@ class HierarchieContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La hiérarchie',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+            "f00002",
+            'La hiérarchie',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,9 +52,16 @@ class HierarchieContenuPage extends StatelessWidget {
           // MODULE 5 — INTRO GLOBALE (Structure & direction PJ)
           _ModuleCard(
             tag: 'intro_hierarchie',
-            title: 'Structure de la police judiciaire',
-            subtitle:
-                'Direction du procureur, contrôle du procureur général et chambre de l’instruction.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00003",
+              'Structure de la police judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00004",
+              'Direction du procureur, contrôle du procureur général et chambre de l’instruction.',
+            ),
             imagePath: 'assets/images/image4.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -59,9 +75,16 @@ class HierarchieContenuPage extends StatelessWidget {
           // MODULE 1 — OPJ (Officiers de Police Judiciaire)
           _ModuleCard(
             tag: 'opj_hierarchie',
-            title: 'Les Officiers de Police Judiciaire',
-            subtitle:
-                "Qualité, pouvoirs, conditions d'exercice, habilitation et rôle dans la procédure pénale.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00005",
+              'Les Officiers de Police Judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00006",
+              "Qualité, pouvoirs, conditions d'exercice, habilitation et rôle dans la procédure pénale.",
+            ),
             imagePath: 'assets/images/opj.png',
             textMain: textMain,
             textSoft: textSoft,
@@ -72,9 +95,16 @@ class HierarchieContenuPage extends StatelessWidget {
           // MODULE 2 — APJ (Agents de Police Judiciaire)
           _ModuleCard(
             tag: 'apj_hierarchie',
-            title: 'Les Agents de Police Judiciaire',
-            subtitle:
-                'Art. 20, 20-1 et 21 C.P.P. — trois catégories, attributions et limites légales.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00007",
+              'Les Agents de Police Judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00008",
+              'Art. 20, 20-1 et 21 C.P.P. — trois catégories, attributions et limites légales.',
+            ),
             imagePath: 'assets/images/gardien_de_la_paix.png',
             textMain: textMain,
             textSoft: textSoft,
@@ -85,9 +115,16 @@ class HierarchieContenuPage extends StatelessWidget {
           // MODULE 3 — APJA (Agents de Police Judiciaire Adjoints)
           _ModuleCard(
             tag: 'apja_hierarchie',
-            title: 'Les Agents de Police Judiciaire Adjoints',
-            subtitle:
-                'Auxiliaires judiciaires : policiers adjoints, réservistes, agents municipaux, etc.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00009",
+              'Les Agents de Police Judiciaire Adjoints',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00010",
+              'Auxiliaires judiciaires : policiers adjoints, réservistes, agents municipaux, etc.',
+            ),
             imagePath: 'assets/images/image4.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +136,16 @@ class HierarchieContenuPage extends StatelessWidget {
           // MODULE 4 — ASSISTANTS D'ENQUÊTE
           _ModuleCard(
             tag: 'assistants_enquete_hierarchie',
-            title: "Les assistants d'enquête",
-            subtitle:
-                'Appui technique : personnels B, CSTAGN, APJA. Missions et cadre légal.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00011",
+              "Les assistants d'enquête",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00012",
+              'Appui technique : personnels B, CSTAGN, APJA. Missions et cadre légal.',
+            ),
             imagePath: 'assets/images/assistant_enquete.png',
             textMain: textMain,
             textSoft: textSoft,
@@ -115,9 +159,16 @@ class HierarchieContenuPage extends StatelessWidget {
           // QUIZ
           _ModuleCard(
             tag: 'quiz_hierarchie',
-            title: 'Quiz — Hiérarchie judiciaire',
-            subtitle:
-                'Testez votre maîtrise : OPJ, APJ, APJA, assistants, pouvoirs et cadre légal.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00013",
+              'Quiz — Hiérarchie judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_contenu_page.dart",
+              "f00014",
+              'Testez votre maîtrise : OPJ, APJ, APJA, assistants, pouvoirs et cadre légal.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -262,7 +313,7 @@ class _ModuleCard extends StatelessWidget {
                   ],
                 ),
               ),
-                        ],
+            ],
           ),
         ),
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class IpmGeneralitesPage extends StatelessWidget {
   const IpmGeneralitesPage({super.key});
@@ -55,7 +56,11 @@ class IpmGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "IPM",
@@ -73,7 +78,11 @@ class IpmGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’ivresse publique et manifeste",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+              "f00002",
+              "L’ivresse publique et manifeste",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,16 +94,36 @@ class IpmGeneralitesPage extends StatelessWidget {
 
           // Définition / cadre général
           _ConditionCard(
-            title: "Définition & objectif",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+              "f00003",
+              "Définition & objectif",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute personne trouvée en état d’ivresse dans les lieux publics peut, par mesure de police, "
-                "être conduite à ses frais par les forces habilitées (PN, GN, PM, gardes champêtres), après "
-                "un examen médical attestant que son état de santé ne s’y oppose pas, dans le service le plus proche "
-                "ou en chambre de sûreté, afin d’y être retenue jusqu’à ce qu’elle ait recouvré la raison.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00004",
+                      "Toute personne trouvée en état d’ivresse dans les lieux publics peut, par mesure de police, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00005",
+                      "être conduite à ses frais par les forces habilitées (PN, GN, PM, gardes champêtres), après ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00006",
+                      "un examen médical attestant que son état de santé ne s’y oppose pas, dans le service le plus proche ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00007",
+                      "ou en chambre de sûreté, afin d’y être retenue jusqu’à ce qu’elle ait recouvré la raison.",
+                    ),
               ),
             ],
           ),
@@ -103,37 +132,54 @@ class IpmGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (comme tu veux)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 3341-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00009",
+                    "Article L. 3341-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : encadre la prise en charge d’une personne en état d’ivresse dans un lieu public, "
-                      "la conduite dans un service/une chambre de sûreté, et la possibilité de remise à un tiers lorsque l’audition n’est pas nécessaire immédiatement.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                        "f00010",
+                        " : encadre la prise en charge d’une personne en état d’ivresse dans un lieu public, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                        "f00011",
+                        "la conduite dans un service/une chambre de sûreté, et la possibilité de remise à un tiers lorsque l’audition n’est pas nécessaire immédiatement.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00012",
+                    "Article R. 3353-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit l’infraction d’ivresse publique et manifeste et la réprime par l’amende prévue pour les contraventions de 2ᵉ classe.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00013",
+                    " : prévoit l’infraction d’ivresse publique et manifeste et la réprime par l’amende prévue pour les contraventions de 2ᵉ classe.",
+                  ),
                 ),
               ]),
             ],
@@ -143,26 +189,60 @@ class IpmGeneralitesPage extends StatelessWidget {
 
           // Champ d'application (conditions de l'IPM)
           _ConditionCard(
-            title: "II — Champ d’application",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+              "f00014",
+              "II — Champ d’application",
+            ),
             cardColor: cardScope,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Conditions cumulatives"),
-              _BulletPoint(
-                text:
-                    "Ivresse manifeste : évidente, constatable par tout le monde (signes extérieurs et troubles du comportement).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00015",
+                  "Conditions cumulatives",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ivresse publique : constatée dans un lieu public ou un lieu privé ouvert au public (place, route, gare, café, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00016",
+                  "Ivresse manifeste : évidente, constatable par tout le monde (signes extérieurs et troubles du comportement).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00017",
+                  "Ivresse publique : constatée dans un lieu public ou un lieu privé ouvert au public (place, route, gare, café, etc.).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Appréciation de l’ivresse"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00018",
+                  "Appréciation de l’ivresse",
+                ),
+              ),
               _Paragraph(
-                "L’ivresse s’apprécie indépendamment de toute mesure d’imprégnation alcoolique : "
-                "elle résulte du comportement de la personne et de la constatation de signes extérieurs "
-                "mettant en évidence un état d’ivresse manifeste.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00019",
+                      "L’ivresse s’apprécie indépendamment de toute mesure d’imprégnation alcoolique : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00020",
+                      "elle résulte du comportement de la personne et de la constatation de signes extérieurs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00021",
+                      "mettant en évidence un état d’ivresse manifeste.",
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -171,29 +251,70 @@ class IpmGeneralitesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les critères ne doivent pas être nécessairement réunis de manière cumulative : "
-                        "un trouble du comportement anormal peut suffire à caractériser l’ivresse manifeste.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                          "f00022",
+                          "Les critères ne doivent pas être nécessairement réunis de manière cumulative : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                          "f00023",
+                          "un trouble du comportement anormal peut suffire à caractériser l’ivresse manifeste.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Exemples de signes caractéristiques"),
-              _BulletPoint(text: "Haleine sentant fortement l’alcool."),
-              _BulletPoint(text: "Défaut d’équilibre."),
-              _BulletPoint(
-                text: "Élocution bégayante / trouble de l’expression.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00024",
+                  "Exemples de signes caractéristiques",
+                ),
               ),
               _BulletPoint(
-                text: "Comportement anormal et incohérence des propos tenus.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00025",
+                  "Haleine sentant fortement l’alcool.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00026",
+                  "Défaut d’équilibre.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00027",
+                  "Élocution bégayante / trouble de l’expression.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00028",
+                  "Comportement anormal et incohérence des propos tenus.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00029",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette mesure concerne les personnes majeures. Les mineurs ne doivent pas être placés en chambre de sûreté.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00030",
+                      "Cette mesure concerne les personnes majeures. Les mineurs ne doivent pas être placés en chambre de sûreté.",
+                    ),
                   ),
                 ],
               ),
@@ -204,26 +325,66 @@ class IpmGeneralitesPage extends StatelessWidget {
 
           // Conduite à tenir (obligations)
           _ConditionCard(
-            title: "III — Conduite à tenir",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+              "f00031",
+              "III — Conduite à tenir",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’IPM est une mesure de police administrative : son but est de prévenir les atteintes à l’ordre public "
-                "et de protéger la personne concernée (personne vulnérable).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00032",
+                      "L’IPM est une mesure de police administrative : son but est de prévenir les atteintes à l’ordre public ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00033",
+                      "et de protéger la personne concernée (personne vulnérable).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Deux obligations fondamentales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00034",
+                  "Deux obligations fondamentales",
+                ),
+              ),
               _BulletPoint(
-                text: "Devoir de protection et d’assistance aux personnes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00035",
+                  "Devoir de protection et d’assistance aux personnes.",
+                ),
               ),
-              _BulletPoint(text: "Obligation de rendre compte."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00036",
+                  "Obligation de rendre compte.",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’équipage intervenant doit rendre compte régulièrement au C.I.C. de l’évolution de l’intervention "
-                "(contrôle de l’individu, placement sous responsabilité d’un tiers, prise en charge et conduite à l’hôpital, etc.). "
-                "La main courante informatisée doit également être renseignée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00037",
+                      "L’équipage intervenant doit rendre compte régulièrement au C.I.C. de l’évolution de l’intervention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00038",
+                      "(contrôle de l’individu, placement sous responsabilité d’un tiers, prise en charge et conduite à l’hôpital, etc.). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00039",
+                      "La main courante informatisée doit également être renseignée.",
+                    ),
               ),
             ],
           ),
@@ -232,26 +393,59 @@ class IpmGeneralitesPage extends StatelessWidget {
 
           // Prise en charge (A / B)
           _ConditionCard(
-            title: "IV — Prise en charge",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+              "f00040",
+              "IV — Prise en charge",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Prise en charge par les fonctionnaires"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00041",
+                  "A) Prise en charge par les fonctionnaires",
+                ),
+              ),
               _Paragraph(
-                "Retirée sans brutalité de la vue du public et soumise à une palpation de sécurité, la personne "
-                "peut être prise en charge selon deux modalités principales :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00042",
+                      "Retirée sans brutalité de la vue du public et soumise à une palpation de sécurité, la personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00043",
+                      "peut être prise en charge selon deux modalités principales :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Conduite à l’hôpital : délivrance d’un certificat médical de non-admission (ou admission si nécessaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00044",
+                  "Conduite à l’hôpital : délivrance d’un certificat médical de non-admission (ou admission si nécessaire).",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "L’examen médical permet de déterminer si l’intéressé peut être maintenu dans les locaux de police "
-                "ou si son état de santé nécessite une admission à l’hôpital. Si l’état est compatible avec le maintien, "
-                "un certificat médical de non-admission est délivré à l’issue de l’examen.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00045",
+                      "L’examen médical permet de déterminer si l’intéressé peut être maintenu dans les locaux de police ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00046",
+                      "ou si son état de santé nécessite une admission à l’hôpital. Si l’état est compatible avec le maintien, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00047",
+                      "un certificat médical de non-admission est délivré à l’issue de l’examen.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -259,60 +453,132 @@ class IpmGeneralitesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Certaines situations peuvent mimer l’ivresse (choc, prise de médicaments, malaise). "
-                        "L’APJ n’est pas qualifié pour poser un diagnostic : prudence (ex. malaise hypoglycémique, symptômes proches du coma éthylique).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                          "f00048",
+                          "Certaines situations peuvent mimer l’ivresse (choc, prise de médicaments, malaise). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                          "f00049",
+                          "L’APJ n’est pas qualifié pour poser un diagnostic : prudence (ex. malaise hypoglycémique, symptômes proches du coma éthylique).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _BulletPoint(
-                text:
-                    "Conduite au commissariat : présentation au chef de poste et mise en œuvre des mesures de sécurité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00050",
+                  "Conduite au commissariat : présentation au chef de poste et mise en œuvre des mesures de sécurité.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Mesures de sécurité (chef de poste)"),
-              _BulletPoint(
-                text:
-                    "Fouille de sécurité : retrait des objets/accessoires dangereux (ceinture, lacets, médicaments…). "
-                    "La fouille ne suppose pas un déshabillage complet ; détection électronique possible si besoin.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00051",
+                  "Mesures de sécurité (chef de poste)",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Inventaire au registre d’écrou : objets écartés, identité, heure de prise en charge.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00052",
+                      "Fouille de sécurité : retrait des objets/accessoires dangereux (ceinture, lacets, médicaments…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00053",
+                      "La fouille ne suppose pas un déshabillage complet ; détection électronique possible si besoin.",
+                    ),
               ),
               _BulletPoint(
-                text:
-                    "Placement en chambre de sûreté : sous responsabilité du chef de poste, surveillance constante.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00054",
+                  "Inventaire au registre d’écrou : objets écartés, identité, heure de prise en charge.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rondes régulières : intervalle maximum de 15 minutes (feuille de rondes : heures, signature, observations).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00055",
+                  "Placement en chambre de sûreté : sous responsabilité du chef de poste, surveillance constante.",
+                ),
               ),
               _BulletPoint(
-                text: "Au moindre signe d’alerte : appel à un médecin.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00056",
+                  "Rondes régulières : intervalle maximum de 15 minutes (feuille de rondes : heures, signature, observations).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00057",
+                  "Au moindre signe d’alerte : appel à un médecin.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Fin de mesure"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00058",
+                  "Fin de mesure",
+                ),
+              ),
               _Paragraph(
-                "La retenue en chambre de sûreté prend fin après le complet dégrisement, c’est-à-dire lorsque les caractéristiques "
-                "ayant révélé l’ivresse ont disparu. Les effets sont restitués et une décharge est faite par émargement du registre d’écrou.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00059",
+                      "La retenue en chambre de sûreté prend fin après le complet dégrisement, c’est-à-dire lorsque les caractéristiques ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00060",
+                      "ayant révélé l’ivresse ont disparu. Les effets sont restitués et une décharge est faite par émargement du registre d’écrou.",
+                    ),
               ),
               SizedBox(height: 14),
-              _SubTitle("B) Prise en charge par un tiers"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00061",
+                  "B) Prise en charge par un tiers",
+                ),
+              ),
               _Paragraph(
-                "Lorsque l’audition n’est pas nécessaire immédiatement après le recouvrement de la raison "
-                "(ex. infraction connexe), la personne peut être placée sous la responsabilité d’un tiers qui se porte garante.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00062",
+                      "Lorsque l’audition n’est pas nécessaire immédiatement après le recouvrement de la raison ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00063",
+                      "(ex. infraction connexe), la personne peut être placée sous la responsabilité d’un tiers qui se porte garante.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Fondement : "),
                 TextSpan(
-                  text:
-                      "Article L. 3341-1 alinéa 2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00064",
+                    "Fondement : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00065",
+                    "Article L. 3341-1 alinéa 2 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -321,8 +587,11 @@ class IpmGeneralitesPage extends StatelessWidget {
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si la remise à un tiers intervient avant l’examen médical, la remise d’un certificat de non-admission ne sera pas sollicitée.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00066",
+                      "Si la remise à un tiers intervient avant l’examen médical, la remise d’un certificat de non-admission ne sera pas sollicitée.",
+                    ),
                   ),
                 ],
               ),
@@ -333,47 +602,75 @@ class IpmGeneralitesPage extends StatelessWidget {
 
           // Rédaction PV
           _ConditionCard(
-            title: "V — Rédaction du procès-verbal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+              "f00067",
+              "V — Rédaction du procès-verbal",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La constatation de l’ivresse publique et manifeste (contravention de 2ᵉ classe) doit donner lieu à la rédaction d’un PV ordinaire, "
-                      "faisant ressortir précisément tous les signes extérieurs caractérisant l’ivresse. — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                        "f00068",
+                        "La constatation de l’ivresse publique et manifeste (contravention de 2ᵉ classe) doit donner lieu à la rédaction d’un PV ordinaire, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                        "f00069",
+                        "faisant ressortir précisément tous les signes extérieurs caractérisant l’ivresse. — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "Article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00070",
+                    "Article R. 3353-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "La personne est entendue sur procès-verbal séparé : soit à l’issue de la période de dégrisement, "
-                "soit ultérieurement si elle a été remise à un tiers. Il s’agit d’une audition libre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00071",
+                      "La personne est entendue sur procès-verbal séparé : soit à l’issue de la période de dégrisement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                      "f00072",
+                      "soit ultérieurement si elle a été remise à un tiers. Il s’agit d’une audition libre.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’audition libre est précédée de la notification des droits listés à ",
-                ),
-                TextSpan(
-                  text: "l’article 61-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00073",
+                    "L’audition libre est précédée de la notification des droits listés à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ", à l’exception du droit d’être assisté d’un avocat (selon le canevas IPM fourni).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00074",
+                    "l’article 61-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00075",
+                    ", à l’exception du droit d’être assisté d’un avocat (selon le canevas IPM fourni).",
+                  ),
                 ),
               ]),
             ],
@@ -703,8 +1000,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+        "f00077",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+        "f00078",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -877,7 +1182,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                    "f00079",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -946,7 +1255,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_page.dart",
+                  "f00080",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -974,7 +1287,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1009,7 +1324,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

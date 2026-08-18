@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
   const ViolencesHabituellesMineurVulnerablePage({super.key});
@@ -59,10 +60,18 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes volontaires",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+            "f00002",
+            "Atteintes volontaires",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les violences habituelles sur mineur ou personne vulnérable",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+              "f00003",
+              "Les violences habituelles sur mineur ou personne vulnérable",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,28 +102,51 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les violences habituelles commises sur un mineur de quinze ans ou sur une personne dont la particulière vulnérabilité "
-                      "(âge, maladie, infirmité, déficience physique ou psychique, grossesse) est apparente ou connue de l’auteur, "
-                      "ou encore sur une personne en état de sujétion psychologique ou physique, constituent une infraction.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00005",
+                        "Les violences habituelles commises sur un mineur de quinze ans ou sur une personne dont la particulière vulnérabilité ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00006",
+                        "(âge, maladie, infirmité, déficience physique ou psychique, grossesse) est apparente ou connue de l’auteur, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00007",
+                        "ou encore sur une personne en état de sujétion psychologique ou physique, constituent une infraction.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "La sujétion est appréciée au sens de "),
                 TextSpan(
-                  text: "l’article 223-15-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00008",
+                    "La sujétion est appréciée au sens de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00009",
+                    "l’article 223-15-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -121,35 +157,48 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14 du Code pénal (alinéa 1)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00011",
+                    "Article 222-14 du Code pénal (alinéa 1)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit les violences habituelles sur mineur ou personne vulnérable.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00012",
+                    " : définit les violences habituelles sur mineur ou personne vulnérable.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14 du Code pénal (alinéas 2 à 5)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00013",
+                    "Article 222-14 du Code pénal (alinéas 2 à 5)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : fixe la répression selon le résultat.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00014",
+                    " : fixe la répression selon le résultat.",
+                  ),
                 ),
               ]),
             ],
@@ -159,44 +208,100 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte positif de violences"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00016",
+                  "A) Un acte positif de violences",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent un comportement actif : la simple abstention ne suffit pas "
-                "(en cas d’omissions, d’autres qualifications peuvent être retenues : privation de soins, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00017",
+                      "Les violences supposent un comportement actif : la simple abstention ne suffit pas ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00018",
+                      "(en cas d’omissions, d’autres qualifications peuvent être retenues : privation de soins, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("1) Un contact physique (direct ou indirect)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00019",
+                  "1) Un contact physique (direct ou indirect)",
+                ),
+              ),
               _Paragraph(
-                "Sont visés tous les comportements impliquant un contact physique : coups, gifles, morsures, etc. "
-                "Le contact peut être indirect : arme (par nature ou destination), objet, animal excité par l’auteur, etc.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00020",
+                      "Sont visés tous les comportements impliquant un contact physique : coups, gifles, morsures, etc. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00021",
+                      "Le contact peut être indirect : arme (par nature ou destination), objet, animal excité par l’auteur, etc.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "2) Une atteinte psychique (violences psychologiques)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00022",
+                  "2) Une atteinte psychique (violences psychologiques)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les violences volontaires peuvent être matérialisées par une agression psychique : "
-                      "tout acte de nature à impressionner vivement la victime et à lui causer un choc émotif, "
-                      "même sans atteinte physique.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00023",
+                        "Les violences volontaires peuvent être matérialisées par une agression psychique : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00024",
+                        "tout acte de nature à impressionner vivement la victime et à lui causer un choc émotif, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00025",
+                        "même sans atteinte physique.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "« Le délit de violences est constitué… » — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00026",
+                      "« Le délit de violences est constitué… » — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 18 mars 2008, n°07-86.075",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00027",
+                      "Cass. crim., 18 mars 2008, n°07-86.075",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -208,16 +313,25 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00028",
+                    "Article 222-14-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : codifie la jurisprudence en précisant que les violences sont constituées quelle que soit leur nature, "
-                      "y compris psychologiques.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00029",
+                        " : codifie la jurisprudence en précisant que les violences sont constituées quelle que soit leur nature, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                        "f00030",
+                        "y compris psychologiques.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -225,11 +339,18 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
                 title: "Exemple",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Individu descendant avec une barre de fer et frappant le véhicule de la victime — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00031",
+                      "Individu descendant avec une barre de fer et frappant le véhicule de la victime — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 18 mars 2008",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00032",
+                      "Cass. crim., 18 mars 2008",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -241,21 +362,42 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Des violences habituelles (répétition)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00033",
+                  "B) Des violences habituelles (répétition)",
+                ),
+              ),
               _Paragraph(
-                "L’habitude implique que les violences aient été commises à plusieurs reprises. "
-                "La répétition peut s’apprécier sur une durée relativement courte si les faits sont réitérés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00034",
+                      "L’habitude implique que les violences aient été commises à plusieurs reprises. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00035",
+                      "La répétition peut s’apprécier sur une durée relativement courte si les faits sont réitérés.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Institution spécialisée : privations, enfermements, douches froides… assimilés à des traitements inhumains ou dégradants — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00036",
+                      "Institution spécialisée : privations, enfermements, douches froides… assimilés à des traitements inhumains ou dégradants — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 2 décembre 1998",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00037",
+                      "Cass. crim., 2 décembre 1998",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -263,11 +405,18 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
                   ),
                   TextSpan(text: ". "),
                   TextSpan(
-                    text:
-                        "Violences sur une période de deux mois : constitutives de violences habituelles — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00038",
+                      "Violences sur une période de deux mois : constitutives de violences habituelles — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "C.A. Grenoble, 5 novembre 1999",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00039",
+                      "C.A. Grenoble, 5 novembre 1999",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -279,56 +428,132 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Une victime particulière"),
-              _Paragraph("La loi protège spécifiquement :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00040",
+                  "C) Une victime particulière",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00041",
+                  "La loi protège spécifiquement :",
+                ),
+              ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Un mineur de 15 ans."),
               _BulletPoint(
-                text:
-                    "Une personne dont la particulière vulnérabilité est apparente ou connue (âge, maladie, infirmité, déficience physique/psychique, grossesse).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00042",
+                  "Un mineur de 15 ans.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Une personne en état de sujétion psychologique ou physique (pressions graves/réitérées ou techniques altérant le jugement, avec effets graves ou actes/abstentions gravement préjudiciables).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00043",
+                  "Une personne dont la particulière vulnérabilité est apparente ou connue (âge, maladie, infirmité, déficience physique/psychique, grossesse).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00044",
+                  "Une personne en état de sujétion psychologique ou physique (pressions graves/réitérées ou techniques altérant le jugement, avec effets graves ou actes/abstentions gravement préjudiciables).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Sujétion au sens de "),
                 TextSpan(
-                  text: "l’article 223-15-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00045",
+                    "Sujétion au sens de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00046",
+                    "l’article 223-15-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un résultat dommageable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00047",
+                  "D) Un résultat dommageable",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. "
-                "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00048",
+                      "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00049",
+                      "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’article 222-14 distingue quatre types de préjudices selon que les violences :\n"
-                "• ont entraîné la mort ;\n"
-                "• ont entraîné une mutilation ou une infirmité permanente ;\n"
-                "• ont entraîné une I.T.T. > 8 jours ;\n"
-                "• n’ont pas entraîné une I.T.T. > 8 jours.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00050",
+                      "L’article 222-14 distingue quatre types de préjudices selon que les violences :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00051",
+                      "• ont entraîné la mort ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00052",
+                      "• ont entraîné une mutilation ou une infirmité permanente ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00053",
+                      "• ont entraîné une I.T.T. > 8 jours ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00054",
+                      "• n’ont pas entraîné une I.T.T. > 8 jours.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00055",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Brimades ayant entraîné un état anxio-dépressif grave et une I.T.T. > 8 jours — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00056",
+                      "Brimades ayant entraîné un état anxio-dépressif grave et une I.T.T. > 8 jours — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 4 mars 2003, n°2003-018405",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00057",
+                      "Cass. crim., 4 mars 2003, n°2003-018405",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -344,15 +569,31 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+              "f00058",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délit est consommé lorsque les violences sont intentionnelles : "
-                "l’auteur a conscience de commettre un acte affectant l’intégrité physique et/ou psychique d’autrui, "
-                "avec la connaissance qu’il en résultera un préjudice pour la victime.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00059",
+                      "Le délit est consommé lorsque les violences sont intentionnelles : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00060",
+                      "l’auteur a conscience de commettre un acte affectant l’intégrité physique et/ou psychique d’autrui, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                      "f00061",
+                      "avec la connaissance qu’il en résultera un préjudice pour la victime.",
+                    ),
               ),
             ],
           ),
@@ -361,129 +602,230 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+              "f00062",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [_Paragraph("Aucune (au titre de cette fiche).")],
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00063",
+                  "Aucune (au titre de cette fiche).",
+                ),
+              ),
+            ],
           ),
 
           const SizedBox(height: 14),
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+              "f00064",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                TextSpan(text: "I.T.T. 0 à 8 jours (délit) : "),
-                TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00065",
+                  "Peines encourues — personnes physiques",
                 ),
-                TextSpan(
-                  text: "article 222-14 4° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "I.T.T. > 8 jours (délit) : "),
-                TextSpan(
-                  text: "10 ans d’emprisonnement et 150 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 222-14 3° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ]),
-              SizedBox(height: 8),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Mutilation / infirmité permanente (crime) : ",
-                ),
-                TextSpan(
-                  text: "20 ans de réclusion (période de sûreté). — ",
-                ),
-                TextSpan(
-                  text: "article 222-14 2° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00066",
+                    "I.T.T. 0 à 8 jours (délit) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00067",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00068",
+                    "article 222-14 4° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Mort sans intention de la donner (crime) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00069",
+                    "I.T.T. > 8 jours (délit) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "30 ans de réclusion (période de sûreté). — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00070",
+                    "10 ans d’emprisonnement et 150 000 € d’amende. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-14 1° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00071",
+                    "article 222-14 3° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00072",
+                    "Mutilation / infirmité permanente (crime) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00073",
+                    "20 ans de réclusion (période de sûreté). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00074",
+                    "article 222-14 2° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00075",
+                    "Mort sans intention de la donner (crime) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00076",
+                    "30 ans de réclusion (période de sûreté). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00077",
+                    "article 222-14 1° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00078",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00079",
+                    "Responsabilité pénale prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00080",
+                    "l’article 222-16-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00081",
+                    " (amende + peines complémentaires).",
                   ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
-                TextSpan(
-                  text: "l’article 222-16-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00082",
+                  "Tentative & complicité",
                 ),
-                TextSpan(text: " (amende + peines complémentaires)."),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Tentative & complicité"),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : NON (non visée pour les violences délictuelles).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                  "f00083",
+                  "Tentative : NON (non visée pour les violences délictuelles).",
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En matière criminelle, la tentative est théoriquement punissable, mais difficile à établir car l’infraction dépend en partie du résultat.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00084",
+                    "En matière criminelle, la tentative est théoriquement punissable, mais difficile à établir car l’infraction dépend en partie du résultat.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00085",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00086",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart",
+                    "f00087",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),

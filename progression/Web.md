@@ -93,3 +93,32 @@ y aient un sens. Ordre suggéré :
   (colonne `xp_total` inexistante) — la vraie source XP est
   `cas_pratique_user_progress` / `cas_pratique_xp_ledger` côté Supabase,
   pas branchée ici. Non touché pour rester focalisé sur les badges.
+
+---
+
+## 5. Centre d'information web et administrateur — 16/08/2026
+
+- ✅ Centre public `/informations` avec présentation, état du service et accès rapide.
+- ✅ FAQ publique dynamique, recherche et catégories.
+- ✅ Formulaire de support réellement enregistré dans Supabase avec référence de suivi.
+- ✅ Boîte de réception du support dans `/admin/informations` : statut, priorité et note interne.
+- ✅ Mentions légales et confidentialité chargées depuis Supabase et modifiables dans le panneau.
+- ✅ Notes de mise à jour publiques et administrables : brouillon, planification, publication et archivage.
+- ✅ Sécurité d'écriture : aucune écriture directe depuis le navigateur ; RPC contrôlées, RLS et double authentification administrateur.
+- ✅ Navigation publique mise à jour avec Aide, FAQ et notes de mise à jour.
+- ✅ Migration distante appliquée sur le projet `nuoonagnkhbeeymtvrcn` sans suppression de table existante.
+- ✅ ESLint ciblé sans erreur et compilation Next.js de production réussie (86 pages).
+- ✅ Export `fae16dc1` régénéré et vérifié : 835 fichiers, 9,3 Mo.
+- ⚠️ Les champs d'identification juridique marqués `[à compléter avant la mise en production]` doivent être renseignés par le propriétaire avant publication officielle.
+
+### Correctif mobile Flutter — 16/08/2026
+
+- ✅ Page Facturation mobile entièrement modernisée : carte Premium, état réel, échéance, jours restants, factures et total payé.
+- ✅ Gestion de l'abonnement, de la carte et des factures reliée au portail Stripe sécurisé.
+- ✅ Téléchargement et envoi des factures activés lorsqu'un lien Stripe existe.
+- ✅ Suppression de la création automatique erronée d'un faux abonnement « Pro Mensuel actif ».
+- ✅ Abonnement mobile désormais lu depuis la source Stripe unifiée `cp_my_subscription`.
+- ✅ Page Informations mobile modernisée : état du service, version, appareil, FAQ, nouveautés, mentions légales et confidentialité.
+- ✅ Présentation, statut et compteur FAQ chargés depuis le CMS Supabase administrable.
+- ✅ Notes mobiles reliées à `list_public_patch_notes` ; elles ne dépendent plus d'une lecture directe réservée aux administrateurs.
+- ✅ Analyse Flutter complète : aucune erreur.

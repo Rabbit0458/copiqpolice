@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MaeMandatParJuridictionsFrPage extends StatelessWidget {
   const MaeMandatParJuridictionsFrPage({super.key});
@@ -34,11 +35,19 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+            "f00001",
+            'Retour',
+          ),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'MAE — Émission par les juridictions françaises',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+            "f00002",
+            'MAE — Émission par les juridictions françaises',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -54,7 +63,11 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
           // EN-TÊTE GÉNÉRAL
           // ===============================================================
           Text(
-            'Le mandat d’arrêt européen',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00003",
+              'Le mandat d’arrêt européen',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 13.5,
@@ -64,7 +77,11 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            '2.3 — Émission d’un mandat d’arrêt européen par les juridictions françaises',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00004",
+              '2.3 — Émission d’un mandat d’arrêt européen par les juridictions françaises',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -74,22 +91,48 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'L’émission d’un mandat d’arrêt européen par les juridictions françaises obéit à un '
-            'cadre strict : détermination de l’autorité compétente, existence d’un titre '
-            'exécutoire, modalités de diffusion et de transmission du mandat, puis gestion de '
-            'la situation une fois la personne arrêtée et remise aux autorités françaises.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00005",
+                  'L’émission d’un mandat d’arrêt européen par les juridictions françaises obéit à un ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00006",
+                  'cadre strict : détermination de l’autorité compétente, existence d’un titre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00007",
+                  'exécutoire, modalités de diffusion et de transmission du mandat, puis gestion de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00008",
+                  'la situation une fois la personne arrêtée et remise aux autorités françaises.',
+                ),
           ),
           const SizedBox(height: 16),
 
           // ===============================================================
           // 2.3.1  AUTORITÉ COMPÉTENTE
           // ===============================================================
-          const _SubTitle('2.3.1 — Autorité compétente'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00009",
+              '2.3.1 — Autorité compétente',
+            ),
+          ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Qui peut émettre un mandat d’arrêt européen ?',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00010",
+              'Qui peut émettre un mandat d’arrêt européen ?',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
@@ -97,36 +140,75 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
               _Paragraph.rich([
                 const TextSpan(text: 'Selon '),
                 TextSpan(
-                  text: 'l’article 695-16 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                    "f00011",
+                    'l’article 695-16 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', l’autorité compétente pour émettre un mandat d’arrêt européen est le ministère public '
-                      'près la juridiction d’instruction, de jugement ou d’application des peines qui a délivré '
-                      'le titre exécutoire.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                        "f00012",
+                        ', l’autorité compétente pour émettre un mandat d’arrêt européen est le ministère public ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                        "f00013",
+                        'près la juridiction d’instruction, de jugement ou d’application des peines qui a délivré ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                        "f00014",
+                        'le titre exécutoire.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Le ministère public peut émettre un mandat d’arrêt européen :',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00015",
+                  'Le ministère public peut émettre un mandat d’arrêt européen :',
+                ),
               ),
               const SizedBox(height: 6),
-              const _IntroBullet(
-                text: 'soit à la demande de la juridiction concernée ;',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00016",
+                  'soit à la demande de la juridiction concernée ;',
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    'soit d’office, lorsqu’il l’estime nécessaire à l’exécution de la décision.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00017",
+                  'soit d’office, lorsqu’il l’estime nécessaire à l’exécution de la décision.',
+                ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Il peut également, afin d’assurer l’exécution d’une peine privative de liberté '
-                'd’une durée supérieure ou égale à quatre ans, décider l’émission d’un mandat '
-                'd’arrêt européen.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00018",
+                      'Il peut également, afin d’assurer l’exécution d’une peine privative de liberté ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00019",
+                      'd’une durée supérieure ou égale à quatre ans, décider l’émission d’un mandat ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00020",
+                      'd’arrêt européen.',
+                    ),
               ),
             ],
           ),
@@ -135,48 +217,90 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
           // ===============================================================
           // 2.3.2  TITRE POUVANT FAIRE L’OBJET D’UN MAE
           // ===============================================================
-          const _SubTitle(
-            '2.3.2 — Titre pouvant faire l’objet d’un mandat d’arrêt',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00021",
+              '2.3.2 — Titre pouvant faire l’objet d’un mandat d’arrêt',
+            ),
           ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Exigence d’un titre exécutoire préalable',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00022",
+              'Exigence d’un titre exécutoire préalable',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
             children: [
-              const _Paragraph(
-                'Le ministère public ne peut émettre un mandat d’arrêt européen que sur la base '
-                'd’un titre exécutoire préexistant. Il peut s’agir notamment :',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00023",
+                      'Le ministère public ne peut émettre un mandat d’arrêt européen que sur la base ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00024",
+                      'd’un titre exécutoire préexistant. Il peut s’agir notamment :',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint(
-                text:
-                    'd’un mandat d’arrêt déjà décerné par la juridiction compétente ;',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00025",
+                  'd’un mandat d’arrêt déjà décerné par la juridiction compétente ;',
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    'd’une décision de condamnation devenue exécutoire (peine privative de liberté ou mesure de sûreté).',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00026",
+                  'd’une décision de condamnation devenue exécutoire (peine privative de liberté ou mesure de sûreté).',
+                ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Un formulaire-type de mandat d’arrêt européen a été imposé à l’ensemble des '
-                      'autorités judiciaires de l’Union européenne par ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                        "f00027",
+                        'Un formulaire-type de mandat d’arrêt européen a été imposé à l’ensemble des ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                        "f00028",
+                        'autorités judiciaires de l’Union européenne par ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’article 695-13 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                    "f00029",
+                    'l’article 695-13 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', afin de standardiser le contenu et de faciliter la compréhension et l’exécution '
-                      'dans chaque État membre.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                        "f00030",
+                        ', afin de standardiser le contenu et de faciliter la compréhension et l’exécution ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                        "f00031",
+                        'dans chaque État membre.',
+                      ),
                 ),
               ]),
             ],
@@ -186,50 +310,124 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
           // ===============================================================
           // 2.3.3  DIFFUSION ET TRANSMISSION DU MANDAT
           // ===============================================================
-          const _SubTitle('2.3.3 — Diffusion et transmission du mandat'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00032",
+              '2.3.3 — Diffusion et transmission du mandat',
+            ),
+          ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Acheminement du mandat d’arrêt européen',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00033",
+              'Acheminement du mandat d’arrêt européen',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Une fois le mandat d’arrêt européen émis, sa diffusion et sa transmission '
-                'dépendent de la localisation de la personne recherchée :',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00034",
+                      'Une fois le mandat d’arrêt européen émis, sa diffusion et sa transmission ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00035",
+                      'dépendent de la localisation de la personne recherchée :',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'Lorsque la personne recherchée se trouve, à un lieu connu, sur le territoire '
-                    'd’un autre État membre, le mandat d’arrêt peut être adressé directement à '
-                    'l’autorité judiciaire d’exécution, sous réserve que cet État accepte cette '
-                    'transmission directe.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00036",
+                      'Lorsque la personne recherchée se trouve, à un lieu connu, sur le territoire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00037",
+                      'd’un autre État membre, le mandat d’arrêt peut être adressé directement à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00038",
+                      'l’autorité judiciaire d’exécution, sous réserve que cet État accepte cette ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00039",
+                      'transmission directe.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'La transmission du mandat est alors assurée par le parquet émetteur, dans les '
-                    'délais impartis et selon les formes requises par l’autorité judiciaire '
-                    'compétente du lieu d’arrestation (courrier sécurisé, télécopie, messagerie '
-                    'électronique, etc.).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00040",
+                      'La transmission du mandat est alors assurée par le parquet émetteur, dans les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00041",
+                      'délais impartis et selon les formes requises par l’autorité judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00042",
+                      'compétente du lieu d’arrestation (courrier sécurisé, télécopie, messagerie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00043",
+                      'électronique, etc.).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Lorsque la personne recherchée n’est pas localisée, son signalement est diffusé '
-                    'dans le Système d’information Schengen (S.I.S.) et via INTERPOL pour les autres services.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00044",
+                      'Lorsque la personne recherchée n’est pas localisée, son signalement est diffusé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00045",
+                      'dans le Système d’information Schengen (S.I.S.) et via INTERPOL pour les autres services.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Le mandat d’arrêt européen peut, de manière générale, être transmis par tout moyen '
-                    'laissant une trace écrite et permettant à l’autorité judiciaire d’exécution '
-                    'd’en vérifier l’authenticité.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00046",
+                      'Le mandat d’arrêt européen peut, de manière générale, être transmis par tout moyen ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00047",
+                      'laissant une trace écrite et permettant à l’autorité judiciaire d’exécution ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00048",
+                      'd’en vérifier l’authenticité.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: 'Version au 01/07/2025 — SDCP, tous droits réservés.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00049",
+                      'Version au 01/07/2025 — SDCP, tous droits réservés.',
+                    ),
                   ),
                 ],
               ),
@@ -240,23 +438,39 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
           // ===============================================================
           // 2.3.4  LORSQUE LA PERSONNE A ÉTÉ ARRÊTÉE
           // ===============================================================
-          const _SubTitle('2.3.4 — Lorsque la personne a été arrêtée'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00050",
+              '2.3.4 — Lorsque la personne a été arrêtée',
+            ),
+          ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Conséquences de l’arrestation dans l’État d’exécution',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00051",
+              'Conséquences de l’arrestation dans l’État d’exécution',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Les suites à donner à l’arrestation de la personne recherchée sont prévues par ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                    "f00052",
+                    'Les suites à donner à l’arrestation de la personne recherchée sont prévues par ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'les articles 695-17 et 695-17-1 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                    "f00053",
+                    'les articles 695-17 et 695-17-1 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
@@ -265,25 +479,69 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
                 const TextSpan(text: ' :'),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Dès que le ministère public est informé de l’arrestation de la personne recherchée, '
-                    'il adresse sans délai au ministre de la Justice une copie du mandat d’arrêt transmis '
-                    'à l’autorité judiciaire de l’État membre d’exécution ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00054",
+                      'Dès que le ministère public est informé de l’arrestation de la personne recherchée, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00055",
+                      'il adresse sans délai au ministre de la Justice une copie du mandat d’arrêt transmis ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00056",
+                      'à l’autorité judiciaire de l’État membre d’exécution ;',
+                    ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Lorsque la personne arrêtée est recherchée pour l’exécution d’une peine ou d’une mesure '
-                    'de sûreté privative de liberté et qu’elle a été condamnée en son absence, si elle demande '
-                    'la communication de la décision de condamnation, le ministère public transmet à l’autorité '
-                    'judiciaire de l’État membre d’exécution une copie de cette décision pour remise à l’intéressé ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00057",
+                      'Lorsque la personne arrêtée est recherchée pour l’exécution d’une peine ou d’une mesure ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00058",
+                      'de sûreté privative de liberté et qu’elle a été condamnée en son absence, si elle demande ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00059",
+                      'la communication de la décision de condamnation, le ministère public transmet à l’autorité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00060",
+                      'judiciaire de l’État membre d’exécution une copie de cette décision pour remise à l’intéressé ;',
+                    ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Si le ministère public est informé par l’autorité judiciaire d’exécution d’une demande '
-                    'de la personne arrêtée tendant à la désignation d’un avocat en France, il lui adresse les '
-                    'informations nécessaires pour choisir un avocat ou, à sa demande, fait procéder à la '
-                    'désignation d’office d’un avocat par le bâtonnier compétent.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00061",
+                      'Si le ministère public est informé par l’autorité judiciaire d’exécution d’une demande ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00062",
+                      'de la personne arrêtée tendant à la désignation d’un avocat en France, il lui adresse les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00063",
+                      'informations nécessaires pour choisir un avocat ou, à sa demande, fait procéder à la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00064",
+                      'désignation d’office d’un avocat par le bâtonnier compétent.',
+                    ),
               ),
             ],
           ),
@@ -292,41 +550,102 @@ class MaeMandatParJuridictionsFrPage extends StatelessWidget {
           // ===============================================================
           // 2.3.5  REMISE AUX AUTORITÉS FRANÇAISES
           // ===============================================================
-          const _SubTitle(
-            '2.3.5 — Remise de l’intéressé aux autorités françaises',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00065",
+              '2.3.5 — Remise de l’intéressé aux autorités françaises',
+            ),
           ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Organisation de la remise et suites procédurales',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+              "f00066",
+              'Organisation de la remise et suites procédurales',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Lorsque l’autorité judiciaire étrangère a rendu une décision définitive autorisant '
-                'la remise, celle-ci doit intervenir dans un délai de dix jours à compter de cette décision. '
-                'Si ce délai n’est pas respecté, la personne réclamée peut être remise en liberté dans l’État '
-                'd’exécution.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00067",
+                      'Lorsque l’autorité judiciaire étrangère a rendu une décision définitive autorisant ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00068",
+                      'la remise, celle-ci doit intervenir dans un délai de dix jours à compter de cette décision. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00069",
+                      'Si ce délai n’est pas respecté, la personne réclamée peut être remise en liberté dans l’État ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00070",
+                      'd’exécution.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Si les autorités de l’État d’exécution entendent différer la remise parce que la personne '
-                'fait l’objet de poursuites ou doit exécuter une peine sur leur territoire, les autorités '
-                'françaises peuvent solliciter :',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00071",
+                      'Si les autorités de l’État d’exécution entendent différer la remise parce que la personne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00072",
+                      'fait l’objet de poursuites ou doit exécuter une peine sur leur territoire, les autorités ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00073",
+                      'françaises peuvent solliciter :',
+                    ),
               ),
               SizedBox(height: 6),
-              _IntroBullet(text: 'soit la remise temporaire de l’intéressé ;'),
               _IntroBullet(
-                text:
-                    'soit son audition sur commission rogatoire internationale.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00074",
+                  'soit la remise temporaire de l’intéressé ;',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                  "f00075",
+                  'soit son audition sur commission rogatoire internationale.',
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Lors de la remise effective de la personne aux autorités françaises, le signalement '
-                'doit être retiré des fichiers nationaux (Fichier des personnes recherchées — F.P.R.) et '
-                'des systèmes internationaux (notamment INTERPOL), afin d’éviter tout maintien injustifié '
-                'du statut de personne recherchée.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00076",
+                      'Lors de la remise effective de la personne aux autorités françaises, le signalement ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00077",
+                      'doit être retiré des fichiers nationaux (Fichier des personnes recherchées — F.P.R.) et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00078",
+                      'des systèmes internationaux (notamment INTERPOL), afin d’éviter tout maintien injustifié ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart",
+                      "f00079",
+                      'du statut de personne recherchée.',
+                    ),
               ),
             ],
           ),
@@ -582,9 +901,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

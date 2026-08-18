@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
   const ObtentionIndueDocumentAdministratifPage({super.key});
@@ -59,10 +60,18 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Faux & usage de faux",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+            "f00002",
+            "Faux & usage de faux",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’obtention indue de document administratif",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+              "f00003",
+              "L’obtention indue de document administratif",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,22 +102,54 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Est incriminée l’action de se faire délivrer indûment, par une administration publique "
-                "ou par un organisme chargé d’une mission de service public, par quelque moyen frauduleux que ce soit, "
-                "un document destiné à constater un droit, une identité, une qualité ou à accorder une autorisation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00005",
+                      "Est incriminée l’action de se faire délivrer indûment, par une administration publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00006",
+                      "ou par un organisme chargé d’une mission de service public, par quelque moyen frauduleux que ce soit, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00007",
+                      "un document destiné à constater un droit, une identité, une qualité ou à accorder une autorisation.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Est également prévu le fait de fournir sciemment une fausse déclaration ou une déclaration incomplète "
-                "en vue d’obtenir (ou de tenter d’obtenir), de faire obtenir (ou de tenter de faire obtenir) d’une personne publique, "
-                "d’un organisme de protection sociale ou d’un organisme chargé d’une mission de service public "
-                "une allocation, une prestation, un paiement ou un avantage indu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00008",
+                      "Est également prévu le fait de fournir sciemment une fausse déclaration ou une déclaration incomplète ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00009",
+                      "en vue d’obtenir (ou de tenter d’obtenir), de faire obtenir (ou de tenter de faire obtenir) d’une personne publique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00010",
+                      "d’un organisme de protection sociale ou d’un organisme chargé d’une mission de service public ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00011",
+                      "une allocation, une prestation, un paiement ou un avantage indu.",
+                    ),
               ),
             ],
           ),
@@ -113,19 +158,30 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+              "f00012",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00013",
+                    "Article 441-6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’obtention indue de document administratif et l’assimilation liée aux fausses déclarations pour obtenir des avantages indus.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00014",
+                    " : définit et réprime l’obtention indue de document administratif et l’assimilation liée aux fausses déclarations pour obtenir des avantages indus.",
+                  ),
                 ),
               ]),
             ],
@@ -135,108 +191,198 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Document administratif ou assimilé"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00016",
+                  "A) Document administratif ou assimilé",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le texte vise un document délivré par une administration publique (ou assimilé) au sens de ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00017",
+                    "Le texte vise un document délivré par une administration publique (ou assimilé) au sens de ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 441-6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00018",
+                    "l’article 441-6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      ", destiné à constater un droit, une identité, une qualité, ou à accorder une autorisation.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00019",
+                    ", destiné à constater un droit, une identité, une qualité, ou à accorder une autorisation.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "L’infraction ne s’applique pas à des faux : elle vise des documents authentiques délivrés indûment.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00020",
+                  "L’infraction ne s’applique pas à des faux : elle vise des documents authentiques délivrés indûment.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
               _ConditionCard(
-                title: "Exemples de documents visés",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00021",
+                  "Exemples de documents visés",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF1E232A)
                     : const Color(0xFFF3F4F6),
                 accent: accentGrey,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _IntroBullet(
-                    text:
-                        "Documents d’identité : passeport, carte nationale d’identité, titre de séjour, etc.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00022",
+                      "Documents d’identité : passeport, carte nationale d’identité, titre de séjour, etc.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Documents constatant un droit/une qualité : certificat de nationalité, carte grise, récépissés administratifs constatant une formalité obligatoire, etc.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00023",
+                      "Documents constatant un droit/une qualité : certificat de nationalité, carte grise, récépissés administratifs constatant une formalité obligatoire, etc.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Documents accordant une autorisation : permis de construire, permis de chasser, permis de conduire, etc.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00024",
+                      "Documents accordant une autorisation : permis de construire, permis de chasser, permis de conduire, etc.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Délivrance par un organisme chargé d’une mission de service public",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00025",
+                  "B) Délivrance par un organisme chargé d’une mission de service public",
+                ),
               ),
-              const _Paragraph(
-                "Le texte étend l’incrimination aux documents délivrés par des organismes chargés d’une mission de service public "
-                "(ex. caisses de sécurité sociale, OFPRA, Pôle emploi, etc.).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00026",
+                      "Le texte étend l’incrimination aux documents délivrés par des organismes chargés d’une mission de service public ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00027",
+                      "(ex. caisses de sécurité sociale, OFPRA, Pôle emploi, etc.).",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("C) Obtenu frauduleusement"),
-              const _Paragraph(
-                "Les documents sont délivrés indûment. Le texte vise « quelque moyen frauduleux que ce soit » "
-                "sans en donner une liste exhaustive.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00028",
+                  "C) Obtenu frauduleusement",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00029",
+                      "Les documents sont délivrés indûment. Le texte vise « quelque moyen frauduleux que ce soit » ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00030",
+                      "sans en donner une liste exhaustive.",
+                    ),
               ),
               const SizedBox(height: 10),
 
               _ConditionCard(
-                title: "Moyens frauduleux : repères",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00031",
+                  "Moyens frauduleux : repères",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF1E232A)
                     : const Color(0xFFF3F4F6),
                 accent: accentGrey,
                 titleColor: textMain,
-                children: const [
-                  _IntroBullet(text: "Fausses déclarations."),
+                children: [
                   _IntroBullet(
-                    text: "Faux renseignements, certificats ou attestations.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00032",
+                      "Fausses déclarations.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Déclarations d’un tiers (ex. fausse attestation de réussite).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00033",
+                      "Faux renseignements, certificats ou attestations.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Manœuvres frauduleuses (ex. mariage de complaisance).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00034",
+                      "Déclarations d’un tiers (ex. fausse attestation de réussite).",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00035",
+                      "Manœuvres frauduleuses (ex. mariage de complaisance).",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : indications mensongères données pour se faire délivrer un plan de chasse ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00036",
+                      "Jurisprudence : indications mensongères données pour se faire délivrer un plan de chasse ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 03 octobre 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00037",
+                      "(Cass. crim., 03 octobre 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -246,14 +392,21 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : fausse date d’entrée en France sur un formulaire de demande de carte de séjour ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00038",
+                      "Jurisprudence : fausse date d’entrée en France sur un formulaire de demande de carte de séjour ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 20 mars 1991)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00039",
+                      "(Cass. crim., 20 mars 1991)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -263,14 +416,21 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : personne se déclarant atteinte de cécité pour accéder au statut d’invalide ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00040",
+                      "Jurisprudence : personne se déclarant atteinte de cécité pour accéder au statut d’invalide ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 30 avril 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00041",
+                      "(Cass. crim., 30 avril 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -280,14 +440,21 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : délivrance d’un brevet d’éducateur sportif sur la base d’une fausse attestation de réussite ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00042",
+                      "Jurisprudence : délivrance d’un brevet d’éducateur sportif sur la base d’une fausse attestation de réussite ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 02 juin 1999)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00043",
+                      "(Cass. crim., 02 juin 1999)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -297,14 +464,21 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : mariage de complaisance constitutif de manœuvres pour l’obtention indue d’un titre de séjour ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00044",
+                      "Jurisprudence : mariage de complaisance constitutif de manœuvres pour l’obtention indue d’un titre de séjour ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 04 novembre 1992)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00045",
+                      "(Cass. crim., 04 novembre 1992)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -314,14 +488,21 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’infraction n’a pas à être préjudiciable pour être qualifiée ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00046",
+                      "L’infraction n’a pas à être préjudiciable pour être qualifiée ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 07 avril 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00047",
+                      "(Cass. crim., 07 avril 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -333,39 +514,70 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "D) Allocation, prestation, paiement ou avantage indu (assimilation)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00048",
+                  "D) Allocation, prestation, paiement ou avantage indu (assimilation)",
+                ),
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(text: "Selon "),
                 TextSpan(
-                  text: "l’article 441-6 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00049",
+                    "l’article 441-6 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      ", est assimilé le fait de fournir une fausse déclaration ou une déclaration incomplète "
-                      "pour obtenir (ou tenter d’obtenir) des avantages indus.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                        "f00050",
+                        ", est assimilé le fait de fournir une fausse déclaration ou une déclaration incomplète ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                        "f00051",
+                        "pour obtenir (ou tenter d’obtenir) des avantages indus.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "La fausse déclaration peut être verbale ou écrite (si elle est écrite, elle doit être recueillie par écrit par le destinataire, puis signée).",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00052",
+                  "La fausse déclaration peut être verbale ou écrite (si elle est écrite, elle doit être recueillie par écrit par le destinataire, puis signée).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "La déclaration est fausse ou incomplète lorsqu’elle altère la vérité : affirmation de faits faux ou omission de faits exacts.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00053",
+                  "La déclaration est fausse ou incomplète lorsqu’elle altère la vérité : affirmation de faits faux ou omission de faits exacts.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "L’avantage n’a pas besoin d’avoir été obtenu : il suffit que la déclaration ait été faite dans le but de l’obtenir ou de le faire obtenir.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00054",
+                  "L’avantage n’a pas besoin d’avoir été obtenu : il suffit que la déclaration ait été faite dans le but de l’obtenir ou de le faire obtenir.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Lorsque des qualifications spécifiques existent, elles s’appliquent prioritairement (ex. dispositions du code de l’action sociale et des familles pour certaines aides).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00055",
+                      "Lorsque des qualifications spécifiques existent, elles s’appliquent prioritairement (ex. dispositions du code de l’action sociale et des familles pour certaines aides).",
+                    ),
                   ),
                 ],
               ),
@@ -376,19 +588,41 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+              "f00056",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Intention frauduleuse"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00057",
+                  "Intention frauduleuse",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir conscience de se faire délivrer indûment un document (ou de tenter d’obtenir un avantage indu) "
-                "et vouloir recourir à un moyen frauduleux.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00058",
+                      "L’auteur doit avoir conscience de se faire délivrer indûment un document (ou de tenter d’obtenir un avantage indu) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                      "f00059",
+                      "et vouloir recourir à un moyen frauduleux.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "S’agissant de l’alinéa 2 : la fausse déclaration ou la déclaration incomplète doit être faite volontairement.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00060",
+                  "S’agissant de l’alinéa 2 : la fausse déclaration ou la déclaration incomplète doit être faite volontairement.",
+                ),
               ),
             ],
           ),
@@ -397,12 +631,22 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+              "f00061",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue par le texte."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00062",
+                  "Aucune circonstance aggravante prévue par le texte.",
+                ),
+              ),
             ],
           ),
 
@@ -410,30 +654,70 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+              "f00063",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00064",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00065",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 441-6 (alinéas 1 et 2) du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00066",
+                    "2 ans d’emprisonnement et 30 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00067",
+                    "article 441-6 (alinéas 1 et 2) du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00068",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 441-12 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00069",
+                    "Responsabilité pénale prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00070",
+                    "l’article 441-12 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -441,22 +725,44 @@ class ObtentionIndueDocumentAdministratifPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00071",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 441-9 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00072",
+                    "Tentative : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00073",
+                    "article 441-9 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (prévoit expressément la tentative des délits, dont ceux visés à l’article 441-6).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                    "f00074",
+                    " (prévoit expressément la tentative des délits, dont ceux visés à l’article 441-6).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Complicité : OUI (règles générales relatives à la complicité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart",
+                  "f00075",
+                  "Complicité : OUI (règles générales relatives à la complicité).",
+                ),
               ),
             ],
           ),
@@ -712,9 +1018,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

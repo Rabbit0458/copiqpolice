@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
   const PaMineur15ViolencesContrainteMenaceSurprisePage({super.key});
@@ -70,7 +71,11 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Agressions sexuelles sur mineur de 15 ans",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+            "f00001",
+            "Agressions sexuelles sur mineur de 15 ans",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,22 +91,46 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
             children: [
               // ✅ EXIGENCE : l’élément légal tout en haut
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-22 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00003",
+                        "Article 222-22 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : définit les agressions sexuelles commises avec violence, contrainte, menace ou surprise.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00004",
+                        " : définit les agressions sexuelles commises avec violence, contrainte, menace ou surprise.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    lawRef("Article 222-29-1 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00005",
+                        "Article 222-29-1 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : prévoit et réprime les agressions sexuelles autres que le viol lorsqu’elles sont imposées à un mineur de 15 ans.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00006",
+                        " : prévoit et réprime les agressions sexuelles autres que le viol lorsqu’elles sont imposées à un mineur de 15 ans.",
+                      ),
                     ),
                   ]),
                 ],
@@ -110,28 +139,55 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                  "f00007",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "Les agressions sexuelles autres que le viol imposées à un mineur de quinze ans "
-                    "par violence, contrainte, menace ou surprise constituent des infractions.",
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00008",
+                          "Les agressions sexuelles autres que le viol imposées à un mineur de quinze ans ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00009",
+                          "par violence, contrainte, menace ou surprise constituent des infractions.",
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("À retenir"),
-                  _IntroBullet(
-                    text:
-                        "Acte sexuel sans pénétration et sans acte bucco-génital (sinon : viol).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00010",
+                      "À retenir",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Victime : mineur de moins de 15 ans (âge au moment des faits).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00011",
+                      "Acte sexuel sans pénétration et sans acte bucco-génital (sinon : viol).",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Absence de consentement : violence / contrainte / menace / surprise.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00012",
+                      "Victime : mineur de moins de 15 ans (âge au moment des faits).",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00013",
+                      "Absence de consentement : violence / contrainte / menace / surprise.",
+                    ),
                   ),
                 ],
               ),
@@ -139,22 +195,46 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                  "f00014",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-22 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00015",
+                        "Article 222-22 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : agressions sexuelles commises avec violence, contrainte, menace ou surprise.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00016",
+                        " : agressions sexuelles commises avec violence, contrainte, menace ou surprise.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    lawRef("Article 222-29-1 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00017",
+                        "Article 222-29-1 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : répression des agressions sexuelles autres que le viol lorsqu’elles sont imposées à un mineur de 15 ans.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00018",
+                        " : répression des agressions sexuelles autres que le viol lorsqu’elles sont imposées à un mineur de 15 ans.",
+                      ),
                     ),
                   ]),
                 ],
@@ -163,177 +243,477 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                  "f00019",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle(
-                    "1) Un acte de nature sexuelle autre qu’une pénétration ou un acte bucco-génital",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00020",
+                      "1) Un acte de nature sexuelle autre qu’une pénétration ou un acte bucco-génital",
+                    ),
                   ),
-                  const _Paragraph(
-                    "L’agression sexuelle suppose un contact physique entre l’agresseur et la victime. "
-                    "Elle se définit comme tout acte impudique, autre qu’une pénétration ou qu’un acte bucco-génital, "
-                    "directement exercé sur une personne.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00021",
+                          "L’agression sexuelle suppose un contact physique entre l’agresseur et la victime. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00022",
+                          "Elle se définit comme tout acte impudique, autre qu’une pénétration ou qu’un acte bucco-génital, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00023",
+                          "directement exercé sur une personne.",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Elle peut être le fait de l’auteur sur la victime, mais aussi celui effectué par la victime contrainte sur l’auteur.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00024",
+                      "Elle peut être le fait de l’auteur sur la victime, mais aussi celui effectué par la victime contrainte sur l’auteur.",
+                    ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Le plus grand nombre est constitué d’attouchements ou de caresses du sexe, des fesses, "
-                    "des cuisses, de la poitrine, éventuellement accompagnés de baisers sur le corps ou sur la bouche.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00025",
+                          "Le plus grand nombre est constitué d’attouchements ou de caresses du sexe, des fesses, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00026",
+                          "des cuisses, de la poitrine, éventuellement accompagnés de baisers sur le corps ou sur la bouche.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00027",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
-                      normal("Attouchements / caresses : "),
-                      normal("C.A. Paris, 19 juin 1985"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00028",
+                          "Attouchements / caresses : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00029",
+                          "C.A. Paris, 19 juin 1985",
+                        ),
+                      ),
                       normal(". "),
                       normal(
-                        "Main passée sous le pull-over pour caresser le dos : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00030",
+                          "Main passée sous le pull-over pour caresser le dos : ",
+                        ),
                       ),
-                      normal("C.A. Agen, 27 octobre 1997"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00031",
+                          "C.A. Agen, 27 octobre 1997",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("2) Cas à ne pas confondre"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00032",
+                      "2) Cas à ne pas confondre",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Exhibition sexuelle : "),
-                    lawRef("article 222-32 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00033",
+                        "Exhibition sexuelle : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00034",
+                        "article 222-32 du C.P.",
+                      ),
+                    ),
                     normal(". "),
-                    normal("Incitation à la corruption de mineur : "),
-                    lawRef("article 227-22 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00035",
+                        "Incitation à la corruption de mineur : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00036",
+                        "article 227-22 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("3) Victime mineure de moins de 15 ans"),
-                  const _Paragraph(
-                    "Une victime vivante : il ne peut y avoir agression sexuelle sur un cadavre. "
-                    "L’infraction suppose l’absence de consentement, or un mort ne peut consentir.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00037",
+                      "3) Victime mineure de moins de 15 ans",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00038",
+                          "Une victime vivante : il ne peut y avoir agression sexuelle sur un cadavre. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00039",
+                          "L’infraction suppose l’absence de consentement, or un mort ne peut consentir.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    lawRef("Article 225-17 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00040",
+                        "Article 225-17 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : réprime l’atteinte à l’intégrité du cadavre (infraction autonome).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00041",
+                        " : réprime l’atteinte à l’intégrité du cadavre (infraction autonome).",
+                      ),
                     ),
                   ]),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("4) Preuve de l’âge (< 15 ans)"),
-                  const _Paragraph(
-                    "C’est l’âge de la victime au moment des faits qui est retenu.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00042",
+                      "4) Preuve de l’âge (< 15 ans)",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00043",
+                      "C’est l’âge de la victime au moment des faits qui est retenu.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00044",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
-                      normal("Âge au moment des faits : "),
-                      normal("Cass. crim., 21 mars 1957"),
-                      normal(". "),
-                      normal("Âge calculé d’heure à heure : "),
-                      normal("Cass. crim., 3 septembre 1985"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00045",
+                          "Âge au moment des faits : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00046",
+                          "Cass. crim., 21 mars 1957",
+                        ),
+                      ),
                       normal(". "),
                       normal(
-                        "Preuve par tout moyen à défaut d’acte probant : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00047",
+                          "Âge calculé d’heure à heure : ",
+                        ),
                       ),
-                      normal("Cass. crim., 17 juillet 1991"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00048",
+                          "Cass. crim., 3 septembre 1985",
+                        ),
+                      ),
+                      normal(". "),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00049",
+                          "Preuve par tout moyen à défaut d’acte probant : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00050",
+                          "Cass. crim., 17 juillet 1991",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Le texte ne précise pas que la minorité de 15 ans doit être apparente ou connue de l’auteur : "
-                    "le mineur de quinze ans bénéficie d’une protection particulière.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00051",
+                          "Le texte ne précise pas que la minorité de 15 ans doit être apparente ou connue de l’auteur : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00052",
+                          "le mineur de quinze ans bénéficie d’une protection particulière.",
+                        ),
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("5) Absence de consentement : 4 moyens"),
-                  const _Paragraph(
-                    "Ces agressions sexuelles supposent l’usage de violence, contrainte, menace ou surprise.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00053",
+                      "5) Absence de consentement : 4 moyens",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00054",
+                      "Ces agressions sexuelles supposent l’usage de violence, contrainte, menace ou surprise.",
+                    ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("• La violence"),
-                  const _Paragraph(
-                    "Violence physique exercée sur la victime. Les pressions doivent être suffisantes pour accomplir "
-                    "l’agression sexuelle malgré le refus. Il doit être établi que la victime n’a pas pu résister. "
-                    "L’appréciation du caractère contraignant appartient aux juges.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00055",
+                      "• La violence",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00056",
+                          "Violence physique exercée sur la victime. Les pressions doivent être suffisantes pour accomplir ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00057",
+                          "l’agression sexuelle malgré le refus. Il doit être établi que la victime n’a pas pu résister. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00058",
+                          "L’appréciation du caractère contraignant appartient aux juges.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00059",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Pincer les fesses + faire pénétrer de force dans un véhicule : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00060",
+                          "Pincer les fesses + faire pénétrer de force dans un véhicule : ",
+                        ),
                       ),
-                      normal("Cass. crim., 15 avril 1992"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00061",
+                          "Cass. crim., 15 avril 1992",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("• La contrainte ou la menace"),
-                  const _Paragraph(
-                    "Visent à supprimer le consentement : violences morales assimilées à des violences physiques. "
-                    "La menace/contrainte doit inspirer une crainte sérieuse et immédiate (pour la victime ou un proche), "
-                    "appréciée concrètement selon la capacité de résistance.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00062",
+                      "• La contrainte ou la menace",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00063",
+                          "Visent à supprimer le consentement : violences morales assimilées à des violences physiques. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00064",
+                          "La menace/contrainte doit inspirer une crainte sérieuse et immédiate (pour la victime ou un proche), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00065",
+                          "appréciée concrètement selon la capacité de résistance.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Appréciation : "),
-                    normal("Cass. crim., 8 juin 1994"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00066",
+                        "Appréciation : ",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00067",
+                        "Cass. crim., 8 juin 1994",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    lawRef("Article 222-22-1 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00068",
+                        "Article 222-22-1 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : la contrainte prévue par l’article 222-22 peut être physique ou morale.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00069",
+                        " : la contrainte prévue par l’article 222-22 peut être physique ou morale.",
+                      ),
                     ),
                   ]),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("• La surprise"),
-                  const _Paragraph(
-                    "La surprise = surprendre le consentement (et non la surprise ressentie). "
-                    "Elle peut accompagner une violence (victime consciente mais ne peut s’opposer) "
-                    "ou consister à accomplir un acte sans consentement éclairé (victime ne se rend pas compte des actes). "
-                    "Cela peut concerner des enfants dont la maturité est insuffisante pour comprendre l’acte imposé.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00070",
+                      "• La surprise",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00071",
+                          "La surprise = surprendre le consentement (et non la surprise ressentie). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00072",
+                          "Elle peut accompagner une violence (victime consciente mais ne peut s’opposer) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00073",
+                          "ou consister à accomplir un acte sans consentement éclairé (victime ne se rend pas compte des actes). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00074",
+                          "Cela peut concerner des enfants dont la maturité est insuffisante pour comprendre l’acte imposé.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
                     normal(
-                      "Concernant les mineurs de 15 ans, la contrainte morale ou la surprise peuvent être caractérisées par ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00075",
+                        "Concernant les mineurs de 15 ans, la contrainte morale ou la surprise peuvent être caractérisées par ",
+                      ),
                     ),
-                    normal("l’abus de vulnérabilité"),
                     normal(
-                      " de la victime ne disposant pas du discernement nécessaire (",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00076",
+                        "l’abus de vulnérabilité",
+                      ),
                     ),
-                    lawRef("article 222-22-1 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00077",
+                        " de la victime ne disposant pas du discernement nécessaire (",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00078",
+                        "article 222-22-1 du C.P.",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                   const SizedBox(height: 10),
-                  const _NotaBox(
+                  _NotaBox(
                     title: "NOTA",
                     bodySpans: [
                       TextSpan(
                         text:
-                            "Dans certains cas prévus par la loi, la violence, la contrainte, la menace ou la surprise n’ont pas à être démontrées "
-                            "(voir fiches : agression sexuelle commise par un majeur sur un mineur de 15 ans ; agression sexuelle incestueuse).",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                              "f00079",
+                              "Dans certains cas prévus par la loi, la violence, la contrainte, la menace ou la surprise n’ont pas à être démontrées ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                              "f00080",
+                              "(voir fiches : agression sexuelle commise par un majeur sur un mineur de 15 ans ; agression sexuelle incestueuse).",
+                            ),
                       ),
                     ],
                   ),
@@ -343,35 +723,101 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                  "f00081",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Intention coupable"),
-                  const _Paragraph(
-                    "L’auteur doit avoir conscience de commettre un acte immoral ou obscène contre le gré de la victime. "
-                    "Cette intention est généralement inséparable de l’acte matériel. "
-                    "Le mobile importe peu (vengeance, haine, lubricité, etc.).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00082",
+                      "Intention coupable",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00083",
+                          "L’auteur doit avoir conscience de commettre un acte immoral ou obscène contre le gré de la victime. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00084",
+                          "Cette intention est généralement inséparable de l’acte matériel. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00085",
+                          "Le mobile importe peu (vengeance, haine, lubricité, etc.).",
+                        ),
                   ),
                   const SizedBox(height: 12),
-                  const _SubTitle("Connaissance de l’âge (< 15 ans)"),
-                  const _Paragraph(
-                    "L’erreur sur l’âge n’atténue pas la responsabilité pénale. Toutefois, dans certaines hypothèses, "
-                    "l’infraction peut être écartée s’il est acquis que l’auteur ignorait l’âge réel, "
-                    "notamment si la victime avait un comportement et un développement physique d’adulte.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00086",
+                      "Connaissance de l’âge (< 15 ans)",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00087",
+                          "L’erreur sur l’âge n’atténue pas la responsabilité pénale. Toutefois, dans certaines hypothèses, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00088",
+                          "l’infraction peut être écartée s’il est acquis que l’auteur ignorait l’âge réel, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00089",
+                          "notamment si la victime avait un comportement et un développement physique d’adulte.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00090",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
-                      normal("Ignorance de l’âge réel (hypothèse) : "),
-                      normal("Cass. crim., 4 janvier 1902"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00091",
+                          "Ignorance de l’âge réel (hypothèse) : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00092",
+                          "Cass. crim., 4 janvier 1902",
+                        ),
+                      ),
                       normal(". "),
                       normal(
-                        "Il appartient à l’auteur de justifier avoir été trompé : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00093",
+                          "Il appartient à l’auteur de justifier avoir été trompé : ",
+                        ),
                       ),
-                      normal("Cass. crim., 7 février 1957"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                          "f00094",
+                          "Cass. crim., 7 février 1957",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
@@ -381,36 +827,106 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                  "f00095",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
-                children: const [_Paragraph("Aucune.")],
+                children: [
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00096",
+                      "Aucune.",
+                    ),
+                  ),
+                ],
               ),
 
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "V — Répression, tentative et complicité",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                  "f00097",
+                  "V — Répression, tentative et complicité",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines encourues (personnes physiques)"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00098",
+                      "Peines encourues (personnes physiques)",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Qualification : délit — "),
-                    lawRef("article 222-29-1 du C.P."),
-                    normal(" → 10 ans d’emprisonnement et 150 000 € d’amende."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00099",
+                        "Qualification : délit — ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00100",
+                        "article 222-29-1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00101",
+                        " → 10 ans d’emprisonnement et 150 000 € d’amende.",
+                      ),
+                    ),
                   ]),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Personnes morales"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00102",
+                      "Personnes morales",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Responsabilité : "),
-                    lawRef("article 222-33-1 du C.P."),
-                    normal(" + peines complémentaires : "),
-                    lawRef("article 131-39 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00103",
+                        "Responsabilité : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00104",
+                        "article 222-33-1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00105",
+                        " + peines complémentaires : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00106",
+                        "article 131-39 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
@@ -418,20 +934,60 @@ class PaMineur15ViolencesContrainteMenaceSurprisePage extends StatelessWidget {
 
                   const _SubTitle("Tentative"),
                   _Paragraph.rich([
-                    normal("Tentative : OUI — spécialement prévue par "),
-                    lawRef("l’article 222-31 du C.P."),
                     normal(
-                      ", mais difficile à distinguer car le commencement d’exécution est souvent une agression consommée.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00107",
+                        "Tentative : OUI — spécialement prévue par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00108",
+                        "l’article 222-31 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00109",
+                        ", mais difficile à distinguer car le commencement d’exécution est souvent une agression consommée.",
+                      ),
                     ),
                   ]),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                      "f00110",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — "),
-                    lawRef("articles 121-6 et 121-7 du C.P."),
-                    normal(" (aide/assistance, provocation, instructions)."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00111",
+                        "Complicité : OUI — ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00112",
+                        "articles 121-6 et 121-7 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart",
+                        "f00113",
+                        " (aide/assistance, provocation, instructions).",
+                      ),
+                    ),
                   ]),
                 ],
               ),

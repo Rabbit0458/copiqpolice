@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAuteurAbusantAutoritePage extends StatelessWidget {
   const PaAuteurAbusantAutoritePage({super.key});
@@ -44,7 +45,11 @@ class PaAuteurAbusantAutoritePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Auteur abusant de son autorité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+            "f00001",
+            "Auteur abusant de son autorité",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,21 +75,24 @@ class PaAuteurAbusantAutoritePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Par une personne qui abuse de l'autorité que lui confèrent ses fonctions.",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00002",
+                        "Par une personne qui abuse de l'autorité que lui confèrent ses fonctions.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,17 +102,29 @@ class PaAuteurAbusantAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggrave les infractions commises par des personnes ayant une autorité générale due aux fonctions qu'elles exercent à l'égard d'un certain nombre de personnes.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00004",
+                        "Cette circonstance aggrave les infractions commises par des personnes ayant une autorité générale due aux fonctions qu'elles exercent à l'égard d'un certain nombre de personnes.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s'agit d'une circonstance aggravante personnelle. Ses effets ne s'étendent pas aux coauteurs de l'infraction.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00005",
+                        "Il s'agit d'une circonstance aggravante personnelle. Ses effets ne s'étendent pas aux coauteurs de l'infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -112,26 +132,58 @@ class PaAuteurAbusantAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                    "f00006",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _SubTitle(
-                      "2.1 - La personne ayant autorité sur la victime",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00007",
+                        "2.1 - La personne ayant autorité sur la victime",
+                      ),
                     ),
                     _Paragraph(
-                      "Ces personnes ne rentrent pas dans le cadre des ascendants. Il s'agit notamment des professeurs, médecins, prêtres, marabout, etc.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00008",
+                        "Ces personnes ne rentrent pas dans le cadre des ascendants. Il s'agit notamment des professeurs, médecins, prêtres, marabout, etc.",
+                      ),
                     ),
                     SizedBox(height: 12),
-                    _SubTitle("2.2 - Les fonctions exercées"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00009",
+                        "2.2 - Les fonctions exercées",
+                      ),
+                    ),
                     _Paragraph(
-                      "Les fonctions exercées peuvent être publiques ou privées.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00010",
+                        "Les fonctions exercées peuvent être publiques ou privées.",
+                      ),
                     ),
                     SizedBox(height: 12),
-                    _SubTitle("2.3 - L'abus de l’autorité"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00011",
+                        "2.3 - L'abus de l’autorité",
+                      ),
+                    ),
                     _Paragraph(
-                      "L'aggravation est encourue lorsque l'auteur de l'infraction a abusé de cette autorité pour commettre des actes répréhensibles auxquels elle s'applique.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                        "f00012",
+                        "L'aggravation est encourue lorsque l'auteur de l'infraction a abusé de cette autorité pour commettre des actes répréhensibles auxquels elle s'applique.",
+                      ),
                     ),
                   ],
                 ),
@@ -139,81 +191,188 @@ class PaAuteurAbusantAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                    "f00013",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE VIOL (ARTICLE "),
-                      law("222-24, 5° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES AGRESSIONS SEXUELLES (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00014",
+                          "➤ LE VIOL (ARTICLE ",
+                        ),
                       ),
-                      law("222-28, 3° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LES AGRESSIONS SEXUELLES SUR MINEUR DE QUINZE ANS OU PERSONNE VULNÉRABLE (ARTICLE ",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00015",
+                          "222-24, 5° C.P.",
+                        ),
                       ),
-                      law("222-30, 3° C.P."),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE HARCÈLEMENT SEXUEL (ARTICLE "),
-                      law("222-33 III, 1° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LA TRAITE DES ÊTRES HUMAINS (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00016",
+                          "➤ LES AGRESSIONS SEXUELLES (ARTICLE ",
+                        ),
                       ),
-                      law("225-4-2, 8° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00017",
+                          "222-28, 3° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE PROXÉNÉTISME (ARTICLE "),
-                      law("225-7, 5° C.P."),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00018",
+                          "➤ LES AGRESSIONS SEXUELLES SUR MINEUR DE QUINZE ANS OU PERSONNE VULNÉRABLE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00019",
+                          "222-30, 3° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LE RECOURS À LA PROSTITUTION DE MINEUR (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00020",
+                          "➤ LE HARCÈLEMENT SEXUEL (ARTICLE ",
+                        ),
                       ),
-                      law("225-12-2, 3° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00021",
+                          "222-33 III, 1° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LES ATTEINTES SEXUELLES SANS VIOLENCE SUR MINEUR DE QUINZE ANS (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00022",
+                          "➤ LA TRAITE DES ÊTRES HUMAINS (ARTICLE ",
+                        ),
                       ),
-                      law("227-26, 2° C.P."),
-                      const TextSpan(
-                        text: ") ET DE PLUS DE QUINZE ANS (ARTICLE ",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00023",
+                          "225-4-2, 8° C.P.",
+                        ),
                       ),
-                      law("227-27, 2° C.P."),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00024",
+                          "➤ LE PROXÉNÉTISME (ARTICLE ",
+                        ),
                       ),
-                      law("222-3, al. 18 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00025",
+                          "225-7, 5° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00026",
+                          "➤ LE RECOURS À LA PROSTITUTION DE MINEUR (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00027",
+                          "225-12-2, 3° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00028",
+                          "➤ LES ATTEINTES SEXUELLES SANS VIOLENCE SUR MINEUR DE QUINZE ANS (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00029",
+                          "227-26, 2° C.P.",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00030",
+                          ") ET DE PLUS DE QUINZE ANS (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00031",
+                          "227-27, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00032",
+                          "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart",
+                          "f00033",
+                          "222-3, al. 18 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                   ],
@@ -477,9 +636,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

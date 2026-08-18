@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
   const PaPriseServiceFouilleIntegralePage({super.key});
@@ -51,10 +52,18 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mesures de sécurité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+            "f00002",
+            "Mesures de sécurité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -69,7 +78,11 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La fouille intégrale",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00003",
+              "La fouille intégrale",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -81,22 +94,30 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Référence (élément légal)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00004",
+              "Référence (élément légal)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 63-7 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                    "f00005",
+                    "Article 63-7 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : encadre la fouille intégrale, qui est un moyen de recherche de la preuve (et non une mesure de sécurité).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                    "f00006",
+                    " : encadre la fouille intégrale, qui est un moyen de recherche de la preuve (et non une mesure de sécurité).",
+                  ),
                 ),
               ]),
             ],
@@ -105,15 +126,31 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — Mesures de sécurité",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00007",
+              "I — Mesures de sécurité",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constituent des mesures de sécurité :\n"
-                "• la palpation de sécurité ;\n"
-                "• la fouille de sécurité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00008",
+                      "Constituent des mesures de sécurité :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00009",
+                      "• la palpation de sécurité ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00010",
+                      "• la fouille de sécurité.",
+                    ),
               ),
             ],
           ),
@@ -121,33 +158,81 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "A) La palpation de sécurité",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00011",
+              "A) La palpation de sécurité",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La palpation de sécurité est une mesure administrative ayant pour finalité la sécurité "
-                "des policiers, de la personne contrôlée ou interpellée, et du public.\n\n"
-                "Elle consiste à détecter sur une personne (ou sur les accessoires qu’elle porte) tout objet "
-                "susceptible de constituer un danger pour elle-même ou pour autrui.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00012",
+                      "La palpation de sécurité est une mesure administrative ayant pour finalité la sécurité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00013",
+                      "des policiers, de la personne contrôlée ou interpellée, et du public.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00014",
+                      "Elle consiste à détecter sur une personne (ou sur les accessoires qu’elle porte) tout objet ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00015",
+                      "susceptible de constituer un danger pour elle-même ou pour autrui.",
+                    ),
               ),
               SizedBox(height: 10),
               _SubTitle("Principes"),
-              _BulletPoint(text: "Nécessité et proportionnalité."),
               _BulletPoint(
-                text: "Mise en œuvre avec discernement et professionnalisme.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00016",
+                  "Nécessité et proportionnalité.",
+                ),
               ),
-              _BulletPoint(text: "Respect de la dignité de la personne."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00017",
+                  "Mise en œuvre avec discernement et professionnalisme.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00018",
+                  "Respect de la dignité de la personne.",
+                ),
+              ),
               SizedBox(height: 12),
-              _SubTitle("Situations typiques"),
-              _IntroBullet(
-                text:
-                    "Lors d’une interpellation en flagrant délit : palpation immédiate possible et retrait des armes/objets dangereux.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00019",
+                  "Situations typiques",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Surveillance de personnes interpellées/retenues dans les locaux : lors des déplacements et en cas d’interruption de surveillance, pour s’assurer de l’absence d’objet dangereux.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00020",
+                  "Lors d’une interpellation en flagrant délit : palpation immédiate possible et retrait des armes/objets dangereux.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00021",
+                  "Surveillance de personnes interpellées/retenues dans les locaux : lors des déplacements et en cas d’interruption de surveillance, pour s’assurer de l’absence d’objet dangereux.",
+                ),
               ),
             ],
           ),
@@ -155,65 +240,147 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "B) La fouille de sécurité",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00022",
+              "B) La fouille de sécurité",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La fouille de sécurité est une mesure administrative pouvant être réalisée sur une personne retenue "
-                "(garde à vue, I.P.M., mandat de justice…), juste avant son placement dans le local de rétention.\n\n"
-                "Elle est motivée par des circonstances particulières qui justifient des vérifications plus adaptées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00023",
+                      "La fouille de sécurité est une mesure administrative pouvant être réalisée sur une personne retenue ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00024",
+                      "(garde à vue, I.P.M., mandat de justice…), juste avant son placement dans le local de rétention.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00025",
+                      "Elle est motivée par des circonstances particulières qui justifient des vérifications plus adaptées.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Motifs pouvant la justifier"),
-              _IntroBullet(
-                text:
-                    "Conditions de l’interpellation (tentative de fuite et/ou violences).",
-              ),
-              _IntroBullet(text: "Nature et gravité des faits reprochés."),
-              _IntroBullet(
-                text:
-                    "Personnalité et comportement (antécédents judiciaires, âge, état de santé apparent, agressivité…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00026",
+                  "Motifs pouvant la justifier",
+                ),
               ),
               _IntroBullet(
-                text: "Découverte d’objets dangereux lors de la palpation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00027",
+                  "Conditions de l’interpellation (tentative de fuite et/ou violences).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Signes manifestes d’une consommation d’alcool ou de stupéfiants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00028",
+                  "Nature et gravité des faits reprochés.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00029",
+                  "Personnalité et comportement (antécédents judiciaires, âge, état de santé apparent, agressivité…).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00030",
+                  "Découverte d’objets dangereux lors de la palpation.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00031",
+                  "Signes manifestes d’une consommation d’alcool ou de stupéfiants.",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle("But"),
               _Paragraph(
-                "Découvrir et écarter tout objet dangereux pour la personne concernée ou pour autrui.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00032",
+                  "Découvrir et écarter tout objet dangereux pour la personne concernée ou pour autrui.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Limites — déshabillage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00033",
+                  "Limites — déshabillage",
+                ),
+              ),
               _Paragraph(
-                "Le déshabillage complet est interdit. La fouille peut aller jusqu’aux sous-vêtements "
-                "ou à l’ultime couche de vêtements.\n\n"
-                "La personne peut être invitée à retirer ses accessoires (bretelles, ceinture, cravate, lacets…) "
-                "et un sous-vêtement (notamment le soutien-gorge) dès lors que son port peut constituer un danger pour elle-même.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00034",
+                      "Le déshabillage complet est interdit. La fouille peut aller jusqu’aux sous-vêtements ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00035",
+                      "ou à l’ultime couche de vêtements.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00036",
+                      "La personne peut être invitée à retirer ses accessoires (bretelles, ceinture, cravate, lacets…) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00037",
+                      "et un sous-vêtement (notamment le soutien-gorge) dès lors que son port peut constituer un danger pour elle-même.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Tout déshabillage éventuel et ses raisons doivent être mentionnés dans le registre administratif (garde à vue, dégrisement, etc.).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00038",
+                      "Tout déshabillage éventuel et ses raisons doivent être mentionnés dans le registre administratif (garde à vue, dégrisement, etc.).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Règles de mise en œuvre"),
-              _BulletPoint(
-                text:
-                    "Doit être effectuée par un policier du même sexe que la personne concernée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00039",
+                  "Règles de mise en œuvre",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si la force est employée : les actes de résistance et les moyens de coercition doivent être décrits précisément (rapport ou P.V.).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00040",
+                  "Doit être effectuée par un policier du même sexe que la personne concernée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00041",
+                  "Si la force est employée : les actes de résistance et les moyens de coercition doivent être décrits précisément (rapport ou P.V.).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -221,10 +388,26 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En matière de palpation ou de fouille, il convient de prendre en compte le genre de la personne. "
-                        "Les personnes transgenres peuvent présenter un « formulaire » expliquant leur situation et demander "
-                        "que l’opération soit réalisée par un homme ou par une femme. La D.G.P.N. préconise, dans la mesure du possible, "
-                        "de tenir compte de cette demande.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                          "f00042",
+                          "En matière de palpation ou de fouille, il convient de prendre en compte le genre de la personne. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                          "f00043",
+                          "Les personnes transgenres peuvent présenter un « formulaire » expliquant leur situation et demander ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                          "f00044",
+                          "que l’opération soit réalisée par un homme ou par une femme. La D.G.P.N. préconise, dans la mesure du possible, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                          "f00045",
+                          "de tenir compte de cette demande.",
+                        ),
                   ),
                 ],
               ),
@@ -234,42 +417,92 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Fouille intégrale (différence essentielle)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00046",
+              "II — Fouille intégrale (différence essentielle)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La fouille intégrale est un moyen de recherche de la preuve, et non une mesure de sécurité. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                    "f00047",
+                    "La fouille intégrale est un moyen de recherche de la preuve, et non une mesure de sécurité. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(art. 63-7 CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                    "f00048",
+                    "(art. 63-7 CPP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Condition de recours"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00049",
+                  "Condition de recours",
+                ),
+              ),
               _Paragraph(
-                "Elle n’est possible que si la fouille par palpation ou l’utilisation de moyens de détection électronique "
-                "ne peuvent pas être réalisées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00050",
+                      "Elle n’est possible que si la fouille par palpation ou l’utilisation de moyens de détection électronique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00051",
+                      "ne peuvent pas être réalisées.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Finalité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00052",
+                  "Finalité",
+                ),
+              ),
               _Paragraph(
-                "Rechercher, sur la personne ou dans ses effets, des objets utiles à la manifestation de la vérité "
-                "ou dont la détention est susceptible de constituer une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00053",
+                      "Rechercher, sur la personne ou dans ses effets, des objets utiles à la manifestation de la vérité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00054",
+                      "ou dont la détention est susceptible de constituer une infraction.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Décision"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00055",
+                  "Décision",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’une mesure décidée par un officier de police judiciaire (O.P.J.) "
-                "pour les nécessités d’une enquête en cours.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00056",
+                      "Il s’agit d’une mesure décidée par un officier de police judiciaire (O.P.J.) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00057",
+                      "pour les nécessités d’une enquête en cours.",
+                    ),
               ),
             ],
           ),
@@ -277,33 +510,70 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Cadre selon le type d’enquête",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00058",
+              "Cadre selon le type d’enquête",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Enquête de flagrant délit"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00059",
+                  "Enquête de flagrant délit",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La fouille intégrale doit être réalisée par un O.P.J., sur une personne du même sexe. "
-                      "Sur instructions de l’O.P.J., l’A.P.J. peut le seconder. — ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                        "f00060",
+                        "La fouille intégrale doit être réalisée par un O.P.J., sur une personne du même sexe. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                        "f00061",
+                        "Sur instructions de l’O.P.J., l’A.P.J. peut le seconder. — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "articles 20 CPP et D. 13 CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                    "f00062",
+                    "articles 20 CPP et D. 13 CPP",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Enquête préliminaire"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                  "f00063",
+                  "Enquête préliminaire",
+                ),
+              ),
               _Paragraph(
-                "La fouille intégrale, assimilée à une perquisition, peut être effectuée par un O.P.J. "
-                "ou un A.P.J. agissant sous son contrôle, dès lors que l’assentiment exprès et manuscrit du mis en cause "
-                "a été obtenu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00064",
+                      "La fouille intégrale, assimilée à une perquisition, peut être effectuée par un O.P.J. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00065",
+                      "ou un A.P.J. agissant sous son contrôle, dès lors que l’assentiment exprès et manuscrit du mis en cause ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00066",
+                      "a été obtenu.",
+                    ),
               ),
             ],
           ),
@@ -311,14 +581,26 @@ class PaPriseServiceFouilleIntegralePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Modalités pratiques (mise à nu)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+              "f00067",
+              "Modalités pratiques (mise à nu)",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La fouille intégrale implique le retrait de tous les vêtements de la personne avec mise à nu.\n\n"
-                "Elle doit être effectuée dans un local fermé, par une personne du même sexe.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00068",
+                      "La fouille intégrale implique le retrait de tous les vêtements de la personne avec mise à nu.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart",
+                      "f00069",
+                      "Elle doit être effectuée dans un local fermé, par une personne du même sexe.",
+                    ),
               ),
             ],
           ),

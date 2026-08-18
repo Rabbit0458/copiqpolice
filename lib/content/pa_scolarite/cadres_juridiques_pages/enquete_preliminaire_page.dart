@@ -1,6 +1,7 @@
 // lib/pa/dps_dpg/cadres_juridiques_pages/enquete_preliminaire_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : Enquête préliminaire
 /// Route : /pa/dps_dpg/cadres_juridiques/enquete_preliminaire
@@ -23,7 +24,11 @@ class PaEnquetePreliminairePage extends StatelessWidget {
         surfaceTintColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          tooltip: "Retour",
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+            "f00001",
+            "Retour",
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
@@ -32,8 +37,16 @@ class PaEnquetePreliminairePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            title: 'Enquête préliminaire',
-            subtitle: 'Direction Procureur · Autorisations requises',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+              "f00002",
+              'Enquête préliminaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+              "f00003",
+              'Direction Procureur · Autorisations requises',
+            ),
             image: 'assets/images/cadres_juridiques.jpeg',
             onPrimaryTap: () {},
           ),
@@ -41,88 +54,192 @@ class PaEnquetePreliminairePage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
-                  title: 'Définition pratique',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00004",
+                    'Définition pratique',
+                  ),
                   child: Text(
-                    'L’enquête préliminaire s’ouvre hors flagrance. Elle est dirigée par le Procureur de la République '
-                    'et nécessite, pour certains actes attentatoires, des autorisations préalables (JLD/JI selon les cas).',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00005",
+                          'L’enquête préliminaire s’ouvre hors flagrance. Elle est dirigée par le Procureur de la République ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00006",
+                          'et nécessite, pour certains actes attentatoires, des autorisations préalables (JLD/JI selon les cas).',
+                        ),
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
-                    'Direction Procureur',
-                    'Actes sur autorisation',
-                    'Durée adaptée',
-                    'Garanties renforcées',
-                    'Traçabilité',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                      "f00007",
+                      'Direction Procureur',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                      "f00008",
+                      'Actes sur autorisation',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                      "f00009",
+                      'Durée adaptée',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                      "f00010",
+                      'Garanties renforcées',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                      "f00011",
+                      'Traçabilité',
+                    ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Actes possibles',
-                  caption: 'Exemples usuels',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00012",
+                    'Actes possibles',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00013",
+                    'Exemples usuels',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Auditions libres, réquisitions, surveillances, constats, saisies sur autorisation.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00014",
+                          'Auditions libres, réquisitions, surveillances, constats, saisies sur autorisation.',
+                        ),
                       ),
                       _Bullet(
-                        'Perquisitions/dérouillage : conditions spécifiques et autorisation préalable.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00015",
+                          'Perquisitions/dérouillage : conditions spécifiques et autorisation préalable.',
+                        ),
                       ),
                       _Bullet(
-                        'Mesures intrusives : autorisations judiciaire nécessaires (proportion/nécessité).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00016",
+                          'Mesures intrusives : autorisations judiciaire nécessaires (proportion/nécessité).',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Réflexes PV',
-                  caption: 'Sécuriser la procédure',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00017",
+                    'Réflexes PV',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00018",
+                    'Sécuriser la procédure',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _ChecklistLine(
-                        'Citer la base légale et la saisine du Procureur.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00019",
+                          'Citer la base légale et la saisine du Procureur.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Tracer les avis/demandes et autorisations reçues (dates/heures).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00020",
+                          'Tracer les avis/demandes et autorisations reçues (dates/heures).',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Respecter scrupuleusement le contenu des autorisations.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00021",
+                          'Respecter scrupuleusement le contenu des autorisations.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Informer les personnes de leurs droits (auditions, perquisitions, saisies).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                          "f00022",
+                          'Informer les personnes de leurs droits (auditions, perquisitions, saisies).',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00023",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'Enquête de flagrant délit',
-                  subtitle: 'Actes immédiats · Pouvoirs renforcés',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00024",
+                    'Enquête de flagrant délit',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00025",
+                    'Actes immédiats · Pouvoirs renforcés',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/enquete_flagrant_delit',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Autres cadres d’enquête',
-                  subtitle: 'JI · CR · Douanes · Spécialités',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00026",
+                    'Autres cadres d’enquête',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00027",
+                    'JI · CR · Douanes · Spécialités',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/autres_cadres_enquete',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Les cadres d’enquête (vue d’ensemble)',
-                  subtitle: 'Flagrance · Préliminaire · Autres',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00028",
+                    'Les cadres d’enquête (vue d’ensemble)',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                    "f00029",
+                    'Flagrance · Préliminaire · Autres',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/cadres_enquete',
                 ),
               ],
@@ -194,7 +311,13 @@ class _HeroHeader extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const _Badge(text: 'Cadres juridiques'),
+                    _Badge(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart",
+                        "f00030",
+                        'Cadres juridiques',
+                      ),
+                    ),
                     const SizedBox(height: 8),
                     Text(
                       title,

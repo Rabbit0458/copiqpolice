@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EtrangersGeneralitesPage extends StatelessWidget {
   const EtrangersGeneralitesPage({super.key});
@@ -61,10 +62,18 @@ class EtrangersGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Procédures spéciales",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+            "f00002",
+            "Procédures spéciales",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -79,7 +88,11 @@ class EtrangersGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Contrôle de la situation des étrangers",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+              "f00003",
+              "Contrôle de la situation des étrangers",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -97,20 +110,38 @@ class EtrangersGeneralitesPage extends StatelessWidget {
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Toute personne de nationalité étrangère doit pouvoir présenter aux forces de l’ordre les pièces ou documents l’autorisant à circuler ou séjourner en France — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00004",
+                    "Toute personne de nationalité étrangère doit pouvoir présenter aux forces de l’ordre les pièces ou documents l’autorisant à circuler ou séjourner en France — ",
+                  ),
                 ),
-                law("art. L. 812-1 du CESEDA"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00005",
+                    "art. L. 812-1 du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Ce contrôle n’est possible que si des circonstances extérieures à la personne permettent d’en déduire sa qualité d’étranger — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00006",
+                    "Ce contrôle n’est possible que si des circonstances extérieures à la personne permettent d’en déduire sa qualité d’étranger — ",
+                  ),
                 ),
-                law("art. L. 812-2 du CESEDA"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00007",
+                    "art. L. 812-2 du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -120,24 +151,57 @@ class EtrangersGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (base juridique opérationnelle)
           _ConditionCard(
-            title: "I — Base légale & conditions de déclenchement",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+              "f00008",
+              "I — Base légale & conditions de déclenchement",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
-              const _SubTitle("Ce qu’il faut retenir"),
-              const _Paragraph(
-                "Le contrôle de la situation d’un étranger n’est jamais “automatique”.\n"
-                "Il doit reposer sur des éléments objectifs d’extranéité et exclure toute discrimination.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00009",
+                  "Ce qu’il faut retenir",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00010",
+                      "Le contrôle de la situation d’un étranger n’est jamais “automatique”.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00011",
+                      "Il doit reposer sur des éléments objectifs d’extranéité et exclure toute discrimination.",
+                    ),
               ),
               const SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Fondement central : "),
-                  law("art. L. 812-2 du CESEDA"),
-                  const TextSpan(
-                    text:
-                        " (circonstances extérieures à la personne → qualité d’étranger).",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00012",
+                      "Fondement central : ",
+                    ),
+                  ),
+                  law(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00013",
+                      "art. L. 812-2 du CESEDA",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00014",
+                      " (circonstances extérieures à la personne → qualité d’étranger).",
+                    ),
                   ),
                 ],
               ),
@@ -148,130 +212,304 @@ class EtrangersGeneralitesPage extends StatelessWidget {
 
           // I — Cas de contrôle
           _ConditionCard(
-            title: "II — Cas de contrôle de régularité (circulation / séjour)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+              "f00015",
+              "II — Cas de contrôle de régularité (circulation / séjour)",
+            ),
             cardColor: cardCond,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Après un contrôle d’identité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00016",
+                  "A) Après un contrôle d’identité",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Lors d’un contrôle d’identité réalisé sur le fondement des articles ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00017",
+                    "Lors d’un contrôle d’identité réalisé sur le fondement des articles ",
+                  ),
                 ),
-                law("78-1, 78-2, 78-2-1 et 78-2-2 du CPP"),
-                const TextSpan(
-                  text:
-                      ", la personne doit justifier de son identité. Si le contrôle révèle une nationalité étrangère, elle peut être tenue de présenter les documents de circulation / séjour — ",
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00018",
+                    "78-1, 78-2, 78-2-1 et 78-2-2 du CPP",
+                  ),
                 ),
-                law("art. L. 812-2 (2°) du CESEDA"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00019",
+                    ", la personne doit justifier de son identité. Si le contrôle révèle une nationalité étrangère, elle peut être tenue de présenter les documents de circulation / séjour — ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00020",
+                    "art. L. 812-2 (2°) du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La déduction de la nationalité doit reposer sur des critères objectifs excluant toute discrimination. La simple évocation “être né à l’étranger” sans précisions ne suffit pas.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00021",
+                      "La déduction de la nationalité doit reposer sur des critères objectifs excluant toute discrimination. La simple évocation “être né à l’étranger” sans précisions ne suffit pas.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 14),
-              const _SubTitle(
-                "B) Qualité d’étranger apparente (sans contrôle d’identité préalable)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00022",
+                  "B) Qualité d’étranger apparente (sans contrôle d’identité préalable)",
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Le contrôle peut être effectué directement si des éléments objectifs d’extranéité, extérieurs à la personne, permettent d’en déduire la qualité d’étranger — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00023",
+                    "Le contrôle peut être effectué directement si des éléments objectifs d’extranéité, extérieurs à la personne, permettent d’en déduire la qualité d’étranger — ",
+                  ),
                 ),
-                law("art. L. 812-2 (1°) du CESEDA"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00024",
+                    "art. L. 812-2 (1°) du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Exemples jurisprudentiels (liste non exhaustive) :\n"
-                "• véhicule immatriculé à l’étranger ;\n"
-                "• participation à une manifestation avec banderoles étrangères ;\n"
-                "• tracts / affiches en langue étrangère ;\n"
-                "• entrée/sortie d’un consulat/ambassade ;\n"
-                "• document d’identité étranger en main ;\n"
-                "• déclaration spontanée de sa qualité d’étranger, etc.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00025",
+                      "Exemples jurisprudentiels (liste non exhaustive) :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00026",
+                      "• véhicule immatriculé à l’étranger ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00027",
+                      "• participation à une manifestation avec banderoles étrangères ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00028",
+                      "• tracts / affiches en langue étrangère ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00029",
+                      "• entrée/sortie d’un consulat/ambassade ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00030",
+                      "• document d’identité étranger en main ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00031",
+                      "• déclaration spontanée de sa qualité d’étranger, etc.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sont à exclure : couleur de peau, langue parlée, tenue vestimentaire… (risque de discrimination).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00032",
+                      "Sont à exclure : couleur de peau, langue parlée, tenue vestimentaire… (risque de discrimination).",
+                    ),
                   ),
                 ],
                 title: "VIGILANCE",
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
-                TextSpan(text: "Durée : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "pas de contrôle systématique",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00033",
+                    "Durée : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00034",
+                    "pas de contrôle systématique",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "maximum 6 heures consécutives dans un même lieu",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00035",
+                    "maximum 6 heures consécutives dans un même lieu",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 14),
-              const _SubTitle("C) Visite sommaire d’un véhicule"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00036",
+                  "C) Visite sommaire d’un véhicule",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Cadre : "),
-                law("art. L. 812-3 et suivants du CESEDA"),
-                const TextSpan(
-                  text:
-                      ". Compétence exclusive de l’OPJ (assisté éventuellement d’APJ/APJA).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00037",
+                    "Cadre : ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00038",
+                    "art. L. 812-3 et suivants du CESEDA",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00039",
+                    ". Compétence exclusive de l’OPJ (assisté éventuellement d’APJ/APJA).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Zones concernées (exemples) :\n"
-                "• bande 20 km en deçà de la frontière terrestre Schengen ;\n"
-                "• bande 20 km en deçà du littoral dans certains départements (arrêté) ;\n"
-                "• rayon max 10 km autour de ports/aéroports (arrêté) ;\n"
-                "• aires / péages autoroutiers liés à ces zones.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00040",
+                      "Zones concernées (exemples) :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00041",
+                      "• bande 20 km en deçà de la frontière terrestre Schengen ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00042",
+                      "• bande 20 km en deçà du littoral dans certains départements (arrêté) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00043",
+                      "• rayon max 10 km autour de ports/aéroports (arrêté) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00044",
+                      "• aires / péages autoroutiers liés à ces zones.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph("Mise en œuvre :"),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00045",
+                  "Mise en œuvre :",
+                ),
+              ),
               const SizedBox(height: 6),
-              const _BulletPoint(text: "Avec l’accord du conducteur, ou"),
-              const _BulletPoint(
-                text:
-                    "À défaut, sur instructions du procureur de la République.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00046",
+                  "Avec l’accord du conducteur, ou",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00047",
+                  "À défaut, sur instructions du procureur de la République.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "But : vérifier le respect des obligations de détention, port et présentation des documents "
-                "ou rechercher/constater les infractions relatives à l’entrée et au séjour des étrangers en France.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00048",
+                      "But : vérifier le respect des obligations de détention, port et présentation des documents ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00049",
+                      "ou rechercher/constater les infractions relatives à l’entrée et au séjour des étrangers en France.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
-                TextSpan(text: "Immobilisation : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "4 heures maximum",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00050",
+                    "Immobilisation : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00051",
+                    "4 heures maximum",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " dans l’attente des instructions du procureur. Sans instructions à l’issue : libre de repartir.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00052",
+                    " dans l’attente des instructions du procureur. Sans instructions à l’issue : libre de repartir.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La retenue ne s’applique pas au conducteur : il peut téléphoner librement (sauf procédure incidente). "
-                        "Des dispositions similaires existent pour navires/engins flottants.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                          "f00053",
+                          "La retenue ne s’applique pas au conducteur : il peut téléphoner librement (sauf procédure incidente). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                          "f00054",
+                          "Des dispositions similaires existent pour navires/engins flottants.",
+                        ),
                   ),
                 ],
               ),
@@ -282,59 +520,135 @@ class EtrangersGeneralitesPage extends StatelessWidget {
 
           // II — Vérification du droit au séjour
           _ConditionCard(
-            title: "III — Vérification du droit au séjour",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+              "f00055",
+              "III — Vérification du droit au séjour",
+            ),
             cardColor: cardModal,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Entrée et documents"),
-              const _Paragraph(
-                "Pour entrer en France : passeport ou carte d’identité en cours de validité, visa éventuel…\n"
-                "UE/EEE/Suisse : pas de visa, mais document d’identité valide.\n"
-                "Certaines nationalités peuvent être dispensées de visa (références internes D.C.P.A.F).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00056",
+                  "A) Entrée et documents",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00057",
+                      "Pour entrer en France : passeport ou carte d’identité en cours de validité, visa éventuel…\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00058",
+                      "UE/EEE/Suisse : pas de visa, mais document d’identité valide.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00059",
+                      "Certaines nationalités peuvent être dispensées de visa (références internes D.C.P.A.F).",
+                    ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("B) Séjour au-delà de 3 mois"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Au-delà de 3 mois, l’étranger de plus de 18 ans doit détenir un document de séjour — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00060",
+                  "B) Séjour au-delà de 3 mois",
                 ),
-                law("art. L. 411-1 du CESEDA"),
-                const TextSpan(
-                  text:
-                      " (visa long séjour, cartes de séjour, carte de résident, etc.).",
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00061",
+                    "Au-delà de 3 mois, l’étranger de plus de 18 ans doit détenir un document de séjour — ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00062",
+                    "art. L. 411-1 du CESEDA",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00063",
+                    " (visa long séjour, cartes de séjour, carte de résident, etc.).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("C) Mineurs étrangers"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Les mineurs étrangers résidant en France peuvent obtenir de plein droit un document de circulation (5 ans) sous conditions — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00064",
+                  "C) Mineurs étrangers",
                 ),
-                law("art. L. 414-4 à L. 414-9 du CESEDA"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00065",
+                    "Les mineurs étrangers résidant en France peuvent obtenir de plein droit un document de circulation (5 ans) sous conditions — ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00066",
+                    "art. L. 414-4 à L. 414-9 du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("D) Fraude à l’identité / usage frauduleux"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "L’utilisation par un porteur autre que le titulaire légitime d’un document authentique constitue une fraude à l’identité — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00067",
+                  "D) Fraude à l’identité / usage frauduleux",
                 ),
-                law("art. 441-8 du Code pénal"),
-                const TextSpan(
-                  text:
-                      ". Cela vise aussi l’usage frauduleux des titres de séjour et documents provisoires.",
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00068",
+                    "L’utilisation par un porteur autre que le titulaire légitime d’un document authentique constitue une fraude à l’identité — ",
+                  ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00069",
+                    "art. 441-8 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00070",
+                    ". Cela vise aussi l’usage frauduleux des titres de séjour et documents provisoires.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Tous les titres de séjour sont sécurisés : un examen attentif peut révéler un faux ou au minimum des anomalies justifiant vérifications OPJ.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00071",
+                      "Tous les titres de séjour sont sécurisés : un examen attentif peut révéler un faux ou au minimum des anomalies justifiant vérifications OPJ.",
+                    ),
                   ),
                 ],
               ),
@@ -345,47 +659,114 @@ class EtrangersGeneralitesPage extends StatelessWidget {
 
           // Retenue vérification droit au séjour
           _ConditionCard(
-            title: "IV — Retenue pour vérification du droit au séjour",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+              "f00072",
+              "IV — Retenue pour vérification du droit au séjour",
+            ),
             cardColor: cardVigi,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La retenue intervient lorsque la personne n’a pas justifié de son droit à circuler ou séjourner par la présentation de pièces et documents — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00073",
+                    "La retenue intervient lorsque la personne n’a pas justifié de son droit à circuler ou séjourner par la présentation de pièces et documents — ",
+                  ),
                 ),
-                law("art. L. 813-1 du CESEDA"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00074",
+                    "art. L. 813-1 du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Nature : procédure administrative.\n"
-                "Finalité : examens de situation administrative et/ou décisions administratives la concernant.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00075",
+                      "Nature : procédure administrative.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                      "f00076",
+                      "Finalité : examens de situation administrative et/ou décisions administratives la concernant.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
-                TextSpan(text: "Durée maximale : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "24 heures",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00077",
+                    "Durée maximale : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00078",
+                    "24 heures",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " à compter du début du contrôle."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00079",
+                    " à compter du début du contrôle.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("Compétence & contrôle"),
-              const _Paragraph(
-                "Placement : compétence exclusive de l’OPJ, sous le contrôle du procureur de la République.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00080",
+                  "Compétence & contrôle",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00081",
+                  "Placement : compétence exclusive de l’OPJ, sous le contrôle du procureur de la République.",
+                ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("Droits de la personne"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La personne bénéficie de droits : interprète, avocat, examen médical, avis à une personne de son choix, autorités consulaires…\n"
-                      "Notification : motifs, durée max et droits dans une langue comprise, par OPJ (ou APJ sous contrôle) — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00082",
+                  "Droits de la personne",
                 ),
-                law("art. L. 813-5 du CESEDA"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                        "f00083",
+                        "La personne bénéficie de droits : interprète, avocat, examen médical, avis à une personne de son choix, autorités consulaires…\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                        "f00084",
+                        "Notification : motifs, durée max et droits dans une langue comprise, par OPJ (ou APJ sous contrôle) — ",
+                      ),
+                ),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                    "f00085",
+                    "art. L. 813-5 du CESEDA",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -395,26 +776,42 @@ class EtrangersGeneralitesPage extends StatelessWidget {
 
           // Synthèse actionnable
           _ConditionCard(
-            title: "Synthèse terrain (mémo rapide)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+              "f00086",
+              "Synthèse terrain (mémo rapide)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Toujours rattacher l’acte à une base légale CESEDA (et CPP si contrôle d’identité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00087",
+                  "Toujours rattacher l’acte à une base légale CESEDA (et CPP si contrôle d’identité).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Exclure tout critère discriminatoire : uniquement des éléments objectifs et extérieurs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00088",
+                  "Exclure tout critère discriminatoire : uniquement des éléments objectifs et extérieurs.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Visite sommaire véhicule : OPJ uniquement, accord conducteur ou instructions parquet, immobilisation max 4 h.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00089",
+                  "Visite sommaire véhicule : OPJ uniquement, accord conducteur ou instructions parquet, immobilisation max 4 h.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Retenue vérification séjour : administrative, max 24 h, droits notifiés (interprète/avocat/médecin/avis).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart",
+                  "f00090",
+                  "Retenue vérification séjour : administrative, max 24 h, droits notifiés (interprète/avocat/médecin/avis).",
+                ),
               ),
             ],
           ),

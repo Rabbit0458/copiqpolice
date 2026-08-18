@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "copiq-web",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["--dir", "copiq-web", "dev"],
+      "port": 3000
+    }
+  ]
+}

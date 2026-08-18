@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class TitresSejourPage extends StatelessWidget {
   const TitresSejourPage({super.key});
@@ -55,10 +56,18 @@ class TitresSejourPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Étrangers",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+            "f00002",
+            "Étrangers",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class TitresSejourPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les différents titres de séjour",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+              "f00003",
+              "Les différents titres de séjour",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,23 +97,41 @@ class TitresSejourPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Point de départ (contrôle)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+              "f00004",
+              "Point de départ (contrôle)",
+            ),
             cardColor: cardProv,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Dès que la qualité d’étranger est établie, il appartient au gardien de la paix "
-                "d’examiner le titre de séjour présenté : type, validité, mentions, cohérence avec la situation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00005",
+                      "Dès que la qualité d’étranger est établie, il appartient au gardien de la paix ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00006",
+                      "d’examiner le titre de séjour présenté : type, validité, mentions, cohérence avec la situation.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Toujours vérifier : identité / dates / mentions (activité, étudiant…) / intégrité du document.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00007",
+                  "Toujours vérifier : identité / dates / mentions (activité, étudiant…) / intégrité du document.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "En cas de doute : recoupements via les outils et canaux habituels (procédures internes).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00008",
+                  "En cas de doute : recoupements via les outils et canaux habituels (procédures internes).",
+                ),
               ),
             ],
           ),
@@ -109,30 +140,41 @@ class TitresSejourPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Cadre légal (référence)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+              "f00009",
+              "Cadre légal (référence)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 411-1 du C.E.S.E.D.A.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00010",
+                    "Article L. 411-1 du C.E.S.E.D.A.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : présente les principaux titres de séjour délivrés aux majeurs (typologie).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00011",
+                    " : présente les principaux titres de séjour délivrés aux majeurs (typologie).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La mention exacte portée sur le titre est déterminante (ex. « salarié », « vie privée et familiale », « étudiant »…).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00012",
+                      "La mention exacte portée sur le titre est déterminante (ex. « salarié », « vie privée et familiale », « étudiant »…).",
+                    ),
                   ),
                 ],
               ),
@@ -143,132 +185,313 @@ class TitresSejourPage extends StatelessWidget {
 
           // I — Majeurs
           _ConditionCard(
-            title: "I — Titres de séjour délivrés aux majeurs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+              "f00013",
+              "I — Titres de séjour délivrés aux majeurs",
+            ),
             cardColor: cardMaj,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Les différents titres"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00014",
+                  "A) Les différents titres",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Base : "),
                 TextSpan(
-                  text: "article L. 411-1 du C.E.S.E.D.A.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00015",
+                    "Base : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00016",
+                    "article L. 411-1 du C.E.S.E.D.A.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("1) Carte de résident"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00017",
+                  "1) Carte de résident",
+                ),
+              ),
               _Paragraph(
-                "Délivrable aux étrangers résidant en France qui remplissent les conditions fixées par la loi. "
-                "Validité : 10 ans. La carte de résident permanent est délivrée de droit dès le 2ᵉ renouvellement (selon régime applicable).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00018",
+                      "Délivrable aux étrangers résidant en France qui remplissent les conditions fixées par la loi. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00019",
+                      "Validité : 10 ans. La carte de résident permanent est délivrée de droit dès le 2ᵉ renouvellement (selon régime applicable).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Carte de séjour temporaire"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00020",
+                  "2) Carte de séjour temporaire",
+                ),
+              ),
               _Paragraph(
-                "Validité : 1 an. Concerne notamment les étrangers ne remplissant pas les conditions pour une carte de résident. "
-                "Peut se présenter sous forme de carte plastifiée ou de vignette apposée sur le passeport. "
-                "Elle comporte des mentions (ex. « salarié », « vie privée et familiale »).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00021",
+                      "Validité : 1 an. Concerne notamment les étrangers ne remplissant pas les conditions pour une carte de résident. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00022",
+                      "Peut se présenter sous forme de carte plastifiée ou de vignette apposée sur le passeport. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00023",
+                      "Elle comporte des mentions (ex. « salarié », « vie privée et familiale »).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("3) Carte de séjour pluriannuelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00024",
+                  "3) Carte de séjour pluriannuelle",
+                ),
+              ),
               _Paragraph(
-                "Porte des mentions (ex. « talent », « étudiant-programme de mobilité », « salarié détaché ICT »). "
-                "Validité : de 2 à 4 ans, renouvelable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00025",
+                      "Porte des mentions (ex. « talent », « étudiant-programme de mobilité », « salarié détaché ICT »). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00026",
+                      "Validité : de 2 à 4 ans, renouvelable.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 411-4 du C.E.S.E.D.A.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00027",
+                    "Article L. 411-4 du C.E.S.E.D.A.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00028",
+                    " : durée/renouvellement (référence).",
                   ),
                 ),
-                TextSpan(text: " : durée/renouvellement (référence)."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("4) Carte de séjour « retraité »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00029",
+                  "4) Carte de séjour « retraité »",
+                ),
+              ),
               _Paragraph(
-                "Validité : 10 ans, renouvelée de plein droit. "
-                "Le bénéficiaire peut entrer en France à tout moment pour y effectuer des séjours n’excédant pas 1 an.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00030",
+                      "Validité : 10 ans, renouvelée de plein droit. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00031",
+                      "Le bénéficiaire peut entrer en France à tout moment pour y effectuer des séjours n’excédant pas 1 an.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("5) Certificat de résidence algérien"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00032",
+                  "5) Certificat de résidence algérien",
+                ),
+              ),
               _Paragraph(
-                "Régime particulier lié à un accord bilatéral. Les ressortissants algériens se voient délivrer un certificat de résidence algérien.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00033",
+                  "Régime particulier lié à un accord bilatéral. Les ressortissants algériens se voient délivrer un certificat de résidence algérien.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Tout ressortissant algérien majeur doit être titulaire d’un titre de séjour pour résider en France.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00034",
+                  "Tout ressortissant algérien majeur doit être titulaire d’un titre de séjour pour résider en France.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Entre 16 et 18 ans : titre requis s’il souhaite travailler.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00035",
+                  "Entre 16 et 18 ans : titre requis s’il souhaite travailler.",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Un certificat d’1 an peut être délivré avec mentions (« vie privée et familiale », « salarié », « étudiant »…). "
-                "Un certificat de 10 ans peut aussi être délivré sous certaines conditions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00036",
+                      "Un certificat d’1 an peut être délivré avec mentions (« vie privée et familiale », « salarié », « étudiant »…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00037",
+                      "Un certificat de 10 ans peut aussi être délivré sous certaines conditions.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("6) Résidents U.E / E.E.E"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00038",
+                  "6) Résidents U.E / E.E.E",
+                ),
+              ),
               _Paragraph(
-                "Les résidents de l’Union européenne et de l’Espace économique européen peuvent séjourner en France "
-                "avec un passeport ou une carte nationale d’identité en cours de validité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00039",
+                      "Les résidents de l’Union européenne et de l’Espace économique européen peuvent séjourner en France ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00040",
+                      "avec un passeport ou une carte nationale d’identité en cours de validité.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Ils peuvent également demander une carte de séjour « Ressortissant d’un État membre de l’U.E » "
-                "(convenances personnelles). Certains cas peuvent exiger une mention autorisant l’activité professionnelle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00041",
+                      "Ils peuvent également demander une carte de séjour « Ressortissant d’un État membre de l’U.E » ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00042",
+                      "(convenances personnelles). Certains cas peuvent exiger une mention autorisant l’activité professionnelle.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "E.E.E. : États membres de l’U.E + Islande, Liechtenstein, Norvège.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00043",
+                      "E.E.E. : États membres de l’U.E + Islande, Liechtenstein, Norvège.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("7) Visas de long séjour (visa D)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00044",
+                  "7) Visas de long séjour (visa D)",
+                ),
+              ),
               _Paragraph(
-                "Trois grands types existent, selon les mentions : "
-                "« vie privée et familiale », « visiteur », « étudiant », « salarié », « travailleur temporaire », "
-                "« scientifique-chercheur », « stagiaire », etc. "
-                "Certains visent une dispense temporaire de carte de séjour ou imposent une demande de carte dans les 2 mois.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00045",
+                      "Trois grands types existent, selon les mentions : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00046",
+                      "« vie privée et familiale », « visiteur », « étudiant », « salarié », « travailleur temporaire », ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00047",
+                      "« scientifique-chercheur », « stagiaire », etc. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00048",
+                      "Certains visent une dispense temporaire de carte de séjour ou imposent une demande de carte dans les 2 mois.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Ces visas valent titre de séjour (durée > 3 mois et ≤ 1 an). "
-                "Les titulaires sont soumis à une procédure d’enregistrement auprès de l’O.F.I.I. "
-                "Une vignette spécifique est apposée dans le passeport.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00049",
+                      "Ces visas valent titre de séjour (durée > 3 mois et ≤ 1 an). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00050",
+                      "Les titulaires sont soumis à une procédure d’enregistrement auprès de l’O.F.I.I. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00051",
+                      "Une vignette spécifique est apposée dans le passeport.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("8) Mention « Accord de retrait » (Royaume-Uni)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00052",
+                  "8) Mention « Accord de retrait » (Royaume-Uni)",
+                ),
+              ),
               _Paragraph(
-                "Depuis le 1er janvier 2022, les ressortissants britanniques doivent détenir soit "
-                "un titre spécifique portant la mention « Accord de retrait », soit un titre de droit commun.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00053",
+                      "Depuis le 1er janvier 2022, les ressortissants britanniques doivent détenir soit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00054",
+                      "un titre spécifique portant la mention « Accord de retrait », soit un titre de droit commun.",
+                    ),
               ),
             ],
           ),
@@ -277,35 +500,69 @@ class TitresSejourPage extends StatelessWidget {
 
           // II — Mineurs
           _ConditionCard(
-            title: "II — Titres / documents pour les mineurs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+              "f00055",
+              "II — Titres / documents pour les mineurs",
+            ),
             cardColor: cardMin,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les mineurs étrangers résidant en France sont dispensés de détenir un titre de séjour. "
-                "Cependant, pour faciliter les déplacements à l’étranger et le retour sur le territoire, "
-                "un document spécifique est requis.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00056",
+                      "Les mineurs étrangers résidant en France sont dispensés de détenir un titre de séjour. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00057",
+                      "Cependant, pour faciliter les déplacements à l’étranger et le retour sur le territoire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00058",
+                      "un document spécifique est requis.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "Document de Circulation pour Étranger Mineur (D.C.E.M.)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00059",
+                  "Document de Circulation pour Étranger Mineur (D.C.E.M.)",
+                ),
               ),
               _Paragraph(
-                "Le D.C.E.M. facilite les déplacements et la réadmission sur le territoire français. "
-                "Sa durée de validité ne peut excéder 5 ans (conditions de délivrance simplifiées).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00060",
+                      "Le D.C.E.M. facilite les déplacements et la réadmission sur le territoire français. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00061",
+                      "Sa durée de validité ne peut excéder 5 ans (conditions de délivrance simplifiées).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Références : "),
                 TextSpan(
-                  text:
-                      "articles L.414-4, L.414-5, L.414-6, L.414-9 et L. 236-1 du C.E.S.E.D.A.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00062",
+                    "Références : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00063",
+                    "articles L.414-4, L.414-5, L.414-6, L.414-9 et L. 236-1 du C.E.S.E.D.A.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -314,8 +571,16 @@ class TitresSejourPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un D.C.E.M. délivré par le préfet de Mayotte ne permet la réadmission qu’à Mayotte. "
-                        "Le document est inscrit dans l’application A.G.D.R.E.F.2.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                          "f00064",
+                          "Un D.C.E.M. délivré par le préfet de Mayotte ne permet la réadmission qu’à Mayotte. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                          "f00065",
+                          "Le document est inscrit dans l’application A.G.D.R.E.F.2.",
+                        ),
                   ),
                 ],
               ),
@@ -326,68 +591,131 @@ class TitresSejourPage extends StatelessWidget {
 
           // III — Asile / apatrides
           _ConditionCard(
-            title: "III — Demandeurs d’asile, réfugiés, apatrides",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+              "f00066",
+              "III — Demandeurs d’asile, réfugiés, apatrides",
+            ),
             cardColor: cardAsile,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Définitions"),
-              _BulletPoint(
-                text:
-                    "Réfugié : craint d’être persécuté (race, religion, nationalité, groupe social, opinions politiques).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00067",
+                  "A) Définitions",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Apatride : aucun État ne le considère comme ressortissant (Convention de New York, 28/09/1954).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00068",
+                  "Réfugié : craint d’être persécuté (race, religion, nationalité, groupe social, opinions politiques).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Protection subsidiaire : ne remplit pas les critères du réfugié, mais risque des menaces graves (peine de mort, tortures, traitements inhumains, menace grave contre la vie).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00069",
+                  "Apatride : aucun État ne le considère comme ressortissant (Convention de New York, 28/09/1954).",
+                ),
               ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("B) Documents délivrés pendant la procédure"),
-              _Paragraph(
-                "Les demandeurs déposent un dossier auprès de l’O.F.P.R.A. "
-                "Ils reçoivent un récépissé constatant le dépôt (valable 3 mois). "
-                "Il existe plusieurs types de récépissés (dépôt, reconnaissance de protection, admission au titre de l’asile).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00070",
+                  "Protection subsidiaire : ne remplit pas les critères du réfugié, mais risque des menaces graves (peine de mort, tortures, traitements inhumains, menace grave contre la vie).",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "C) En cas de décision favorable de l’O.F.P.R.A.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00071",
+                  "B) Documents délivrés pendant la procédure",
+                ),
               ),
               _Paragraph(
-                "Les réfugiés et apatrides peuvent obtenir une carte de séjour pluriannuelle "
-                "mention « bénéficiaire du statut d’apatride » (4 ans) ou une carte de résident (10 ans), selon le cas.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00072",
+                      "Les demandeurs déposent un dossier auprès de l’O.F.P.R.A. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00073",
+                      "Ils reçoivent un récépissé constatant le dépôt (valable 3 mois). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00074",
+                      "Il existe plusieurs types de récépissés (dépôt, reconnaissance de protection, admission au titre de l’asile).",
+                    ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00075",
+                  "C) En cas de décision favorable de l’O.F.P.R.A.",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00076",
+                      "Les réfugiés et apatrides peuvent obtenir une carte de séjour pluriannuelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00077",
+                      "mention « bénéficiaire du statut d’apatride » (4 ans) ou une carte de résident (10 ans), selon le cas.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles L.424-1 et L. 424-18 du C.E.S.E.D.A.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00078",
+                    "Articles L.424-1 et L. 424-18 du C.E.S.E.D.A.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Les bénéficiaires de la protection subsidiaire reçoivent de plein droit une carte de séjour pluriannuelle "
-                "mention « bénéficiaire de la protection subsidiaire » (4 ans). Une carte de résident (10 ans) peut être obtenue "
-                "après une résidence régulière d’au moins 4 ans (selon conditions).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00079",
+                      "Les bénéficiaires de la protection subsidiaire reçoivent de plein droit une carte de séjour pluriannuelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00080",
+                      "mention « bénéficiaire de la protection subsidiaire » (4 ans). Une carte de résident (10 ans) peut être obtenue ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00081",
+                      "après une résidence régulière d’au moins 4 ans (selon conditions).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles L.424-9 et L. 424-13 du C.E.S.E.D.A.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                    "f00082",
+                    "Articles L.424-9 et L. 424-13 du C.E.S.E.D.A.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -398,28 +726,67 @@ class TitresSejourPage extends StatelessWidget {
 
           // IV — Titres provisoires
           _ConditionCard(
-            title: "IV — Titres provisoires de séjour",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+              "f00083",
+              "IV — Titres provisoires de séjour",
+            ),
             cardColor: cardProv,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Autorisation provisoire de séjour (A.P.S.)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00084",
+                  "A) Autorisation provisoire de séjour (A.P.S.)",
+                ),
+              ),
               _Paragraph(
-                "Document autorisant la présence en France pendant sa durée de validité. "
-                "Délivrée pour 15 jours, 1 mois, 3 mois ou 6 mois, renouvelable. "
-                "Elle peut porter une mention autorisant (ou non) l’exercice d’un emploi.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00085",
+                      "Document autorisant la présence en France pendant sa durée de validité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00086",
+                      "Délivrée pour 15 jours, 1 mois, 3 mois ou 6 mois, renouvelable. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00087",
+                      "Elle peut porter une mention autorisant (ou non) l’exercice d’un emploi.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Récépissé de demande de carte de séjour (R.C.S.)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00088",
+                  "B) Récépissé de demande de carte de séjour (R.C.S.)",
+                ),
+              ),
               _Paragraph(
-                "Tout étranger autorisé à déposer une première demande ou un renouvellement reçoit un document provisoire appelé « récépissé ». "
-                "Il permet de demeurer régulièrement en France pendant l’instruction du dossier.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00089",
+                      "Tout étranger autorisé à déposer une première demande ou un renouvellement reçoit un document provisoire appelé « récépissé ». ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                      "f00090",
+                      "Il permet de demeurer régulièrement en France pendant l’instruction du dossier.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Durée : au minimum 1 mois (souvent 3 mois), renouvelable si nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/titres_sejour_page.dart",
+                  "f00091",
+                  "Durée : au minimum 1 mois (souvent 3 mois), renouvelable si nécessaire.",
+                ),
               ),
             ],
           ),
@@ -675,9 +1042,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

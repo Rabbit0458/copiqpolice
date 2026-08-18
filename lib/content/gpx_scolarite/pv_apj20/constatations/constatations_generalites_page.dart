@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConstatationsGeneralitesPage extends StatelessWidget {
   const ConstatationsGeneralitesPage({super.key});
@@ -55,7 +56,11 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Constatations",
@@ -73,7 +78,11 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les constatations — généralités",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+              "f00002",
+              "Les constatations — généralités",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,14 +94,26 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+              "f00003",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les constatations ont pour but de fixer l’état des lieux, d’établir la réalité de l’infraction "
-                "et de rechercher les objets, traces et indices susceptibles d’orienter l’enquête.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00004",
+                      "Les constatations ont pour but de fixer l’état des lieux, d’établir la réalité de l’infraction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00005",
+                      "et de rechercher les objets, traces et indices susceptibles d’orienter l’enquête.",
+                    ),
               ),
             ],
           ),
@@ -101,31 +122,45 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (si tu veux rajouter des articles exacts, tu peux compléter ici)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les constatations s’inscrivent dans le cadre de l’enquête (flagrance ou préliminaire). "
-                      "Selon le cas, viser : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                        "f00007",
+                        "Les constatations s’inscrivent dans le cadre de l’enquête (flagrance ou préliminaire). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                        "f00008",
+                        "Selon le cas, viser : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "articles 53 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                    "f00009",
+                    "articles 53 et suivants du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
-                  text: "articles 75 et suivants du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                    "f00010",
+                    "articles 75 et suivants du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -134,8 +169,16 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le reste (sécurisation, préservation des traces, PTS) relève des bonnes pratiques opérationnelles "
-                        "et des consignes de service (UCG / LRPPN / doctrine locale).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                          "f00011",
+                          "Le reste (sécurisation, préservation des traces, PTS) relève des bonnes pratiques opérationnelles ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                          "f00012",
+                          "et des consignes de service (UCG / LRPPN / doctrine locale).",
+                        ),
                   ),
                 ],
               ),
@@ -146,39 +189,76 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
 
           // Généralités
           _ConditionCard(
-            title: "II — Généralités (réflexes premiers intervenants)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+              "f00013",
+              "II — Généralités (réflexes premiers intervenants)",
+            ),
             cardColor: cardGen,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le déroulement des opérations de constatations dépend de la nature de l’infraction, "
-                "des circonstances et des lieux (voie publique, lieux publics, propriétés privées).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00014",
+                      "Le déroulement des opérations de constatations dépend de la nature de l’infraction, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00015",
+                      "des circonstances et des lieux (voie publique, lieux publics, propriétés privées).",
+                    ),
               ),
               SizedBox(height: 12),
               _BulletPoint(
-                text: "Visite de sécurité ou de pénétration des lieux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00016",
+                  "Visite de sécurité ou de pénétration des lieux.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Évacuation des lieux (présence d’un auteur sur place / blessés éventuels).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00017",
+                  "Évacuation des lieux (présence d’un auteur sur place / blessés éventuels).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Interdiction d’accès (périmètre de sécurité si la gravité des faits l’exige).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00018",
+                  "Interdiction d’accès (périmètre de sécurité si la gravité des faits l’exige).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Protection des traces (y compris en cas d’intempéries) et avis au représentant PTS.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00019",
+                  "Protection des traces (y compris en cas d’intempéries) et avis au représentant PTS.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si des mesures conservatoires urgentes doivent être prises avant l’arrivée de la PTS : "
-                        "prélever avec des gants, noter l’emplacement exact au moment du prélèvement, "
-                        "conditionner de manière protectrice, et remettre au plus vite au service PTS compétent.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                          "f00020",
+                          "Si des mesures conservatoires urgentes doivent être prises avant l’arrivée de la PTS : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                          "f00021",
+                          "prélever avec des gants, noter l’emplacement exact au moment du prélèvement, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                          "f00022",
+                          "conditionner de manière protectrice, et remettre au plus vite au service PTS compétent.",
+                        ),
                   ),
                 ],
               ),
@@ -189,23 +269,42 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
 
           // Modèles PV
           _ConditionCard(
-            title: "III — Constatations (modèles de PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+              "f00023",
+              "III — Constatations (modèles de PV)",
+            ),
             cardColor: cardPv,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Modèles utilisables"),
-              _BulletPoint(
-                text:
-                    "Procès-verbal ordinaire (PVO) si l’affaire débute contre personne dénommée.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00024",
+                  "A) Modèles utilisables",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Procès-verbal normalisé : CRI initial (saisine) ou complémentaire, lorsque l’affaire débute contre auteur inconnu.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00025",
+                  "Procès-verbal ordinaire (PVO) si l’affaire débute contre personne dénommée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Également utilisé dans une enquête contre personne dénommée si des éléments importants apparaissent (objets dérobés/découverts, traces/indices, mode opératoire, auteurs remarqués…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00026",
+                  "Procès-verbal normalisé : CRI initial (saisine) ou complémentaire, lorsque l’affaire débute contre auteur inconnu.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00027",
+                  "Également utilisé dans une enquête contre personne dénommée si des éléments importants apparaissent (objets dérobés/découverts, traces/indices, mode opératoire, auteurs remarqués…).",
+                ),
               ),
             ],
           ),
@@ -214,30 +313,51 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
 
           // Assistance PTS
           _ConditionCard(
-            title: "IV — Assistance P.T.S.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+              "f00028",
+              "IV — Assistance P.T.S.",
+            ),
             cardColor: cardPts,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le transport du représentant de la police technique et scientifique (SDPTS, BPTS ou SRPTS) "
-                "doit être systématique sur les scènes d’infractions, notamment en matière de petite et moyenne délinquance.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00029",
+                      "Le transport du représentant de la police technique et scientifique (SDPTS, BPTS ou SRPTS) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00030",
+                      "doit être systématique sur les scènes d’infractions, notamment en matière de petite et moyenne délinquance.",
+                    ),
               ),
               SizedBox(height: 12),
               _BulletPoint(
-                text:
-                    "Préserver les lieux en l’état et conserver traces/indices jusqu’aux opérations PTS.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00031",
+                  "Préserver les lieux en l’état et conserver traces/indices jusqu’aux opérations PTS.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les constatations ne devraient débuter qu’en présence du fonctionnaire PTS (sauf nécessité absolue).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00032",
+                  "Les constatations ne devraient débuter qu’en présence du fonctionnaire PTS (sauf nécessité absolue).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pour rédiger correctement un PV de constatations, il est recommandé de renseigner l’annexe II (cambriolages).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00033",
+                      "Pour rédiger correctement un PV de constatations, il est recommandé de renseigner l’annexe II (cambriolages).",
+                    ),
                   ),
                 ],
               ),
@@ -248,37 +368,60 @@ class ConstatationsGeneralitesPage extends StatelessWidget {
 
           // Découverte d'une arme
           _ConditionCard(
-            title: "V — Découverte d’une arme à feu",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+              "f00034",
+              "V — Découverte d’une arme à feu",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute découverte d’une arme à feu impose une mise en protection immédiate et la conservation des traces.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00035",
+                  "Toute découverte d’une arme à feu impose une mise en protection immédiate et la conservation des traces.",
+                ),
               ),
               SizedBox(height: 12),
               _BulletPoint(
-                text:
-                    "Port de gants (jetables) et éventuellement masque anti-poussière.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00036",
+                  "Port de gants (jetables) et éventuellement masque anti-poussière.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mise en sécurité de l’arme en respectant les règles habituelles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00037",
+                  "Mise en sécurité de l’arme en respectant les règles habituelles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Compte-rendu précis : position des éléments mobiles au moment de la découverte (cartouche engagée, douille percutée, culasse, chien…), et positions des munitions dans le barillet.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00038",
+                  "Compte-rendu précis : position des éléments mobiles au moment de la découverte (cartouche engagée, douille percutée, culasse, chien…), et positions des munitions dans le barillet.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sous-conditionnement séparé : arme et éléments d’approvisionnement (chargeur, munitions extraites) séparés (kraft/carton) pour préserver les traces, avant présentation OPJ et placement sous scellé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                  "f00039",
+                  "Sous-conditionnement séparé : arme et éléments d’approvisionnement (chargeur, munitions extraites) séparés (kraft/carton) pour préserver les traces, avant présentation OPJ et placement sous scellé.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si le protocole ne peut être respecté : établir un périmètre de sécurité et ne pas modifier les lieux avant l’arrivée PTS.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/constatations_generalites_page.dart",
+                      "f00040",
+                      "Si le protocole ne peut être respecté : établir un périmètre de sécurité et ne pas modifier les lieux avant l’arrivée PTS.",
+                    ),
                   ),
                 ],
               ),
@@ -536,9 +679,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

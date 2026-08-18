@@ -30,8 +30,10 @@ import 'package:copiqpolice/features/home/abonnement_page.dart';
 import 'package:copiqpolice/features/home/premium_required_page.dart';
 import 'package:copiqpolice/features/home/payment_result_page.dart';
 import 'package:copiqpolice/core/services/subscription_gate.dart';
+import 'package:copiqpolice/core/services/revenuecat_payment_service.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
 import 'package:copiqpolice/core/services/ad_service.dart';
+import 'package:copiqpolice/core/services/deep_links_service.dart';
 
 // === Écrans (imports unifiés) ===
 import 'package:copiqpolice/features/warning/warning_screen.dart';
@@ -815,6 +817,7 @@ import 'package:copiqpolice/content/gpx_exam/cas_pratique/cp_privacy_page.dart';
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_onboarding_premium.dart';
 import 'package:copiqpolice/content/gpx_scolarite/quiz_scolarite_gpx/gpx_quiz_dynamique_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/shared/cours_scolarite_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 import 'package:copiqpolice/content/gpx_scolarite/shared/plainte_page.dart';
 import 'package:copiqpolice/features/memos/cp_memos_page.dart';
 import 'package:copiqpolice/content/paywall/cp_paywall_page.dart';
@@ -1642,7 +1645,8 @@ Future<void> _installUsernameLoader() async {
     return name;
   }
 
-  HomePageGpxSchool.usernameLoader = usernameLoader;
+  // ✅ GPX school : même accueil familier, basé sur le prénom réel.
+  HomePageGpxSchool.usernameLoader = firstNameLoader;
   // ✅ PA exam : accueil personnalisé avec le prénom (first_name).
   HomePagePaExam.usernameLoader = firstNameLoader;
   // ✅ PA school : même accueil familier, basé sur user_profiles.first_name.
@@ -1806,6 +1810,20 @@ Future<void> _initBackend() async {
       );
     }
 
+    // RevenueCat (achats iOS/Android) — web garde Stripe, StoreKit/Play
+    // Billing n'existent pas dans un navigateur. Best-effort : une erreur ici
+    // ne doit pas empêcher le reste de l'app de démarrer.
+    if (!kIsWeb) {
+      try {
+        await RevenueCatPaymentService.instance.initialize();
+      } catch (e) {
+        if (kDebugMode) {
+          // ignore: avoid_print
+          debugPrint('$_red[COP\'IQ] [ERROR] Échec init RevenueCat: $e$_rst');
+        }
+      }
+    }
+
     _backendReady.complete();
   } catch (e, st) {
     if (kDebugMode) {
@@ -1842,11 +1860,15 @@ class _MyAppState extends State<MyApp> {
     // Auth listener + SubscriptionService déplacés dans _bootstrap()
     // car Supabase n'est pas encore initialisé à ce stade.
     _bootstrap();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      unawaited(DeepLinksService.I.init(navigatorKey: _navKey));
+    });
   }
 
   @override
   void dispose() {
     _authSub?.cancel();
+    unawaited(DeepLinksService.I.dispose());
     super.dispose();
   }
 
@@ -2025,40 +2047,42 @@ class _MyAppState extends State<MyApp> {
     return ValueListenableBuilder<ThemeMode>(
       valueListenable: settingsCtrl.themeMode,
       builder: (_, mode, __) {
-        return MaterialApp(
-          title: "COP'IQ",
-          debugShowCheckedModeBanner: false,
-          theme: _lightTheme(),
-          darkTheme: _darkTheme(),
-          themeMode: mode, // ← pilote tout : onboarding, login, home, etc.
-          navigatorKey: _navKey,
-          navigatorObservers: [_LoggerRouteObserver()],
-          routes: RouteRegistry.routes,
-          onGenerateRoute: appOnGenerateRoute,
-          // AnimatedSwitcher : assure le fade de sortie du SplashScreen
-          // (300 ms, soit la fenêtre 2300–2600 ms demandée dans les specs).
-          home: AnimatedSwitcher(
-            duration: const Duration(milliseconds: 300),
-            child: switch (_route) {
-              _Route.loading => _BootSplash(
-                key: const ValueKey('splash'),
-                onAnimationComplete: _onSplashComplete,
-              ),
+        return ScolariteTextRefresh(
+          builder: (_) => MaterialApp(
+            title: "COP'IQ",
+            debugShowCheckedModeBanner: false,
+            theme: _lightTheme(),
+            darkTheme: _darkTheme(),
+            themeMode: mode, // ← pilote tout : onboarding, login, home, etc.
+            navigatorKey: _navKey,
+            navigatorObservers: [_LoggerRouteObserver()],
+            routes: RouteRegistry.routes,
+            onGenerateRoute: appOnGenerateRoute,
+            // AnimatedSwitcher : assure le fade de sortie du SplashScreen
+            // (300 ms, soit la fenêtre 2300–2600 ms demandée dans les specs).
+            home: AnimatedSwitcher(
+              duration: const Duration(milliseconds: 300),
+              child: switch (_route) {
+                _Route.loading => _BootSplash(
+                  key: const ValueKey('splash'),
+                  onAnimationComplete: _onSplashComplete,
+                ),
 
-              _Route.warning => WarningScreen(
-                key: const ValueKey('warning'),
-                onAccepted: _onWarningAccepted,
-              ),
+                _Route.warning => WarningScreen(
+                  key: const ValueKey('warning'),
+                  onAccepted: _onWarningAccepted,
+                ),
 
-              _Route.onboarding => OnboardingScreen(
-                key: const ValueKey('onboarding'),
-                onSkip: _goToSignupAfterOnboarding,
-                onFinish: _goToSignupAfterOnboarding,
-                onLogin: _goToLoginAfterOnboarding,
-              ),
+                _Route.onboarding => OnboardingScreen(
+                  key: const ValueKey('onboarding'),
+                  onSkip: _goToSignupAfterOnboarding,
+                  onFinish: _goToSignupAfterOnboarding,
+                  onLogin: _goToLoginAfterOnboarding,
+                ),
 
-              _Route.home => const ModePickerScreen(key: ValueKey('home')),
-            },
+                _Route.home => const ModePickerScreen(key: ValueKey('home')),
+              },
+            ),
           ),
         );
       },

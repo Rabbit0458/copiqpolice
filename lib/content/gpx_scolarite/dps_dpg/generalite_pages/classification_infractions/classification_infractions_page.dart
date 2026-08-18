@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 // ==============================================================
 //  COP'IQ — Classification des infractions (SPLASH IA 2025)
@@ -68,7 +69,11 @@ class _ClassificationInfractionsPageState
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'CLASSIFICATION DES INFRACTIONS';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart",
+    "f00001",
+    'CLASSIFICATION DES INFRACTIONS',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -175,7 +180,11 @@ class _ClassificationInfractionsPageState
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Découvrez et comprenez les classes d'infractions.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart",
+                        "f00002",
+                        "Découvrez et comprenez les classes d'infractions.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -292,7 +301,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

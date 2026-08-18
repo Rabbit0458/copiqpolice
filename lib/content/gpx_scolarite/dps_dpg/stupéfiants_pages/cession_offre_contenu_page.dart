@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class StupefiantsCessionOffrePage extends StatelessWidget {
   const StupefiantsCessionOffrePage({super.key});
@@ -66,10 +67,18 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La cession ou l’offre illicites de stupéfiants\nà une personne en vue de sa consommation personnelle",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+              "f00003",
+              "La cession ou l’offre illicites de stupéfiants\nà une personne en vue de sa consommation personnelle",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,15 +109,31 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La cession ou l’offre illicites de stupéfiants à une personne en vue de sa consommation personnelle "
-                "constituent des infractions. Cette qualification vise principalement les « petits dealers », "
-                "avec une logique distincte des infractions de détention/transport/détention en vue de trafic.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00005",
+                      "La cession ou l’offre illicites de stupéfiants à une personne en vue de sa consommation personnelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00006",
+                      "constituent des infractions. Cette qualification vise principalement les « petits dealers », ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00007",
+                      "avec une logique distincte des infractions de détention/transport/détention en vue de trafic.",
+                    ),
               ),
             ],
           ),
@@ -113,16 +142,29 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("Article 222-39 alinéa 1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : définit et réprime la cession ou l’offre illicites de stupéfiants à une personne en vue de sa consommation personnelle.",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00009",
+                    "Article 222-39 alinéa 1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime la cession ou l’offre illicites de stupéfiants à une personne en vue de sa consommation personnelle.",
+                  ),
                 ),
               ]),
             ],
@@ -132,88 +174,219 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Cette qualification, orientée « cession/offre au détail », exclut celle de l’infraction réprimée par "
-                "l’article 222-37 (notamment détention de stupéfiants). Elle vise la vente au détail d’une ou quelques doses, "
-                "où l’acheteur est considéré comme un simple usager.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00012",
+                      "Cette qualification, orientée « cession/offre au détail », exclut celle de l’infraction réprimée par ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00013",
+                      "l’article 222-37 (notamment détention de stupéfiants). Elle vise la vente au détail d’une ou quelques doses, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00014",
+                      "où l’acheteur est considéré comme un simple usager.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence d’exclusion : "),
-                _lawSpan("article 222-37 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00015",
+                    "Référence d’exclusion : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00016",
+                    "article 222-37 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 14),
 
-              const _SubTitle("A) Céder ou offrir en vue de la consommation"),
-              const _Paragraph(
-                "• L’offre correspond à l’instant qui précède la remise : l’acte matériel de remise n’a pas encore eu lieu, "
-                "on propose des stupéfiants.\n"
-                "• La cession signifie que le produit a changé de mains : la transaction est déjà réalisée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00017",
+                  "A) Céder ou offrir en vue de la consommation",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00018",
+                      "• L’offre correspond à l’instant qui précède la remise : l’acte matériel de remise n’a pas encore eu lieu, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00019",
+                      "on propose des stupéfiants.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00020",
+                      "• La cession signifie que le produit a changé de mains : la transaction est déjà réalisée.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Le texte ne distingue pas le caractère onéreux ou désintéressé de la transaction. "
-                "Peu importe que l’auteur ait pris l’initiative de l’opération ou qu’il ait simplement accédé à une demande.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00021",
+                      "Le texte ne distingue pas le caractère onéreux ou désintéressé de la transaction. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00022",
+                      "Peu importe que l’auteur ait pris l’initiative de l’opération ou qu’il ait simplement accédé à une demande.",
+                    ),
               ),
               const SizedBox(height: 12),
-              const _Paragraph(
-                "Dans les faits, il s’agit souvent d’usagers cherchant un gain pour satisfaire leurs propres besoins, "
-                "ou d’une vente « au détail » d’une ou quelques doses.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00023",
+                      "Dans les faits, il s’agit souvent d’usagers cherchant un gain pour satisfaire leurs propres besoins, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00024",
+                      "ou d’une vente « au détail » d’une ou quelques doses.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Un produit stupéfiant"),
-              _Paragraph.rich([
-                _lawSpan("Article 222-41 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants » en application de ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00025",
+                  "B) Un produit stupéfiant",
                 ),
-                _lawSpan("l’article L. 5132-7 du Code de la santé publique"),
+              ),
+              _Paragraph.rich([
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00026",
+                    "Article 222-41 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00027",
+                    " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants » en application de ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00028",
+                    "l’article L. 5132-7 du Code de la santé publique",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _lawSpan("Article L. 5132-7 du Code de la santé publique"),
-                const TextSpan(
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00029",
+                    "Article L. 5132-7 du Code de la santé publique",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : précise qu’une substance est classée comme stupéfiant par décision du directeur général de l’Agence nationale "
-                      "de sécurité du médicament et des produits de santé (ANSM).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                        "f00030",
+                        " : précise qu’une substance est classée comme stupéfiant par décision du directeur général de l’Agence nationale ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                        "f00031",
+                        "de sécurité du médicament et des produits de santé (ANSM).",
+                      ),
                 ),
               ]),
               const SizedBox(height: 12),
-              const _Paragraph(
-                "Ainsi, même si d’autres substances peuvent produire des effets toxicomanogènes, seules sont retenues celles figurant "
-                "sur des listes arrêtées par voie réglementaire. L’infraction ne peut s’appliquer qu’à une substance figurant sur ces listes, "
-                "et elle doit être désignée avec suffisamment de précision.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00032",
+                      "Ainsi, même si d’autres substances peuvent produire des effets toxicomanogènes, seules sont retenues celles figurant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00033",
+                      "sur des listes arrêtées par voie réglementaire. L’infraction ne peut s’appliquer qu’à une substance figurant sur ces listes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00034",
+                      "et elle doit être désignée avec suffisamment de précision.",
+                    ),
               ),
               const SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "La liste exhaustive et évolutive des substances classées comme stupéfiants figure en annexes de ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00035",
+                      "La liste exhaustive et évolutive des substances classées comme stupéfiants figure en annexes de ",
+                    ),
                   ),
-                  _lawSpan("l’arrêté du 22 février 1990"),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00036",
+                      "l’arrêté du 22 février 1990",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00037",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "Un juge ne peut se contenter de viser de façon générale « des substances stupéfiantes » sans préciser lesquelles : ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00038",
+                      "Un juge ne peut se contenter de viser de façon générale « des substances stupéfiantes » sans préciser lesquelles : ",
+                    ),
                   ),
-                  _lawSpan("Cass. crim., 16 septembre 1985"),
+                  _lawSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00039",
+                      "Cass. crim., 16 septembre 1985",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
@@ -224,14 +397,26 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+              "f00040",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’auteur agit en connaissance de cause : il cède ou offre en sachant qu’il s’agit de produits stupéfiants "
-                "et qu’il les remet/propose à une personne en vue de sa consommation personnelle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00041",
+                      "L’auteur agit en connaissance de cause : il cède ou offre en sachant qu’il s’agit de produits stupéfiants ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                      "f00042",
+                      "et qu’il les remet/propose à une personne en vue de sa consommation personnelle.",
+                    ),
               ),
             ],
           ),
@@ -240,27 +425,46 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+              "f00043",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("Article 222-39 alinéa 2 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00044",
+                    "Article 222-39 alinéa 2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Lorsque les stupéfiants sont offerts ou cédés à des mineurs.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00045",
+                  "Lorsque les stupéfiants sont offerts ou cédés à des mineurs.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Lorsque les faits sont commis dans des établissements d’enseignement/éducation ou dans les locaux de l’administration.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00046",
+                  "Lorsque les faits sont commis dans des établissements d’enseignement/éducation ou dans les locaux de l’administration.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Ainsi que lors des entrées/sorties des élèves ou du public, ou dans un temps très voisin, aux abords de ces établissements ou locaux.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00047",
+                  "Ainsi que lors des entrées/sorties des élèves ou du public, ou dans un temps très voisin, aux abords de ces établissements ou locaux.",
+                ),
               ),
             ],
           ),
@@ -269,76 +473,203 @@ class StupefiantsCessionOffrePage extends StatelessWidget {
 
           // Répression + tentative/complicité + exemption/réduction
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+              "f00048",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (délit) : "),
-                const TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00049",
+                  "Peines encourues — personnes physiques",
                 ),
-                _lawSpan("article 222-39 alinéa 1 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00050",
+                    "Qualification simple (délit) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00051",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00052",
+                    "article 222-39 alinéa 1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
-                  text: "10 ans d’emprisonnement et 75 000 € d’amende — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00053",
+                    "Qualification aggravée : ",
+                  ),
                 ),
-                _lawSpan("article 222-39 alinéa 2 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00054",
+                    "10 ans d’emprisonnement et 75 000 € d’amende — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00055",
+                    "article 222-39 alinéa 2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00056",
+                  "Personnes morales",
                 ),
-                _lawSpan("l’article 222-42 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00057",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00058",
+                    "l’article 222-42 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00059",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — prévue par "),
-                _lawSpan("l’article 222-40 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00060",
+                    "Tentative : OUI — prévue par ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00061",
+                    "l’article 222-40 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément aux "),
-                _lawSpan("articles 121-6 et 121-7 du Code pénal"),
-                const TextSpan(
-                  text: " (aide et assistance, provocation, instructions).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00062",
+                    "Complicité : OUI — conformément aux ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00063",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00064",
+                    " (aide et assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                  "f00065",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : OUI — "),
-                _lawSpan("article 222-43 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (peine réduite des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements ou d’identifier les autres coupables).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00066",
+                    "Réduction de peine : OUI — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00067",
+                    "article 222-43 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00068",
+                    " (peine réduite des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements ou d’identifier les autres coupables).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : OUI — "),
-                _lawSpan("article 222-43-1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (exempté si la personne avertit l’autorité administrative ou judiciaire, évite la réalisation de l’infraction et permet d’identifier les autres auteurs/complices).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00069",
+                    "Exemption de peine : OUI — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00070",
+                    "article 222-43-1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/cession_offre_contenu_page.dart",
+                    "f00071",
+                    " (exempté si la personne avertit l’autorité administrative ou judiciaire, évite la réalisation de l’infraction et permet d’identifier les autres auteurs/complices).",
+                  ),
                 ),
               ]),
             ],

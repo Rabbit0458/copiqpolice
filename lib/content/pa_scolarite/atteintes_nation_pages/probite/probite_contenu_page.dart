@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaProbiteContenuPage extends StatelessWidget {
   const PaProbiteContenuPage({super.key});
 
-  static const String routeName =
-      '/pa/dps_dpg/atteintes_nation_pages/probite';
+  static const String routeName = '/pa/dps_dpg/atteintes_nation_pages/probite';
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,9 @@ class PaProbiteContenuPage extends StatelessWidget {
 
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -24,10 +26,18 @@ class PaProbiteContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crime & délit contre la nation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+            "f00002",
+            "Crime & délit contre la nation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -42,7 +52,11 @@ class PaProbiteContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "La probité",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00003",
+              "La probité",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -52,8 +66,16 @@ class PaProbiteContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux atteintes à la probité "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux atteintes à la probité ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -66,8 +88,16 @@ class PaProbiteContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'nation_probite_concussion',
-            title: "La concussion",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00006",
+              "La concussion",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00007",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/probite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,8 +111,16 @@ class PaProbiteContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'nation_probite_corruption',
-            title: "La corruption",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00008",
+              "La corruption",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00009",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/probite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,8 +134,16 @@ class PaProbiteContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'nation_probite_trafic_influence',
-            title: "Le trafic d’influence",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00010",
+              "Le trafic d’influence",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00011",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/probite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -112,9 +158,16 @@ class PaProbiteContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_probite',
-            title: 'Quiz — La probité',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00012",
+              'Quiz — La probité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart",
+              "f00013",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -165,7 +218,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

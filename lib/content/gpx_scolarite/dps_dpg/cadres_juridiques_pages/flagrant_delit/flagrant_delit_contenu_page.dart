@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques/enquete_flagrant_delit_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FlagrantDelitContenuPage extends StatelessWidget {
   const FlagrantDelitContenuPage({super.key});
@@ -26,10 +27,18 @@ class FlagrantDelitContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Enquête de flagrant délit',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+            "f00002",
+            'Enquête de flagrant délit',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,7 +52,11 @@ class FlagrantDelitContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'L’enquête de police sur infraction flagrante',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00003",
+              'L’enquête de police sur infraction flagrante',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -52,8 +65,16 @@ class FlagrantDelitContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Articles 53 à 73 du code de procédure pénale — définition, champ '
-            'd’application et déroulement procédural.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+                  "f00004",
+                  'Articles 53 à 73 du code de procédure pénale — définition, champ ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+                  "f00005",
+                  'd’application et déroulement procédural.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -66,9 +87,16 @@ class FlagrantDelitContenuPage extends StatelessWidget {
           // ===================== MODULE INTRO GLOBAL =======================
           _ModuleCard(
             tag: 'flagrant_intro',
-            title: 'Panorama de la flagrance',
-            subtitle:
-                'Logique générale, rôle de la flagrance dans la procédure pénale et place des articles 53 à 73 du code de procédure pénale.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00006",
+              'Panorama de la flagrance',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00007",
+              'Logique générale, rôle de la flagrance dans la procédure pénale et place des articles 53 à 73 du code de procédure pénale.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -82,9 +110,16 @@ class FlagrantDelitContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 1 ================================
           _ModuleCard(
             tag: 'flagrant_chap1',
-            title: 'Chapitre 1 — La notion de flagrance',
-            subtitle:
-                'Situations de flagrance, critères légaux, durée et bascule vers les autres cadres d’enquête.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00008",
+              'Chapitre 1 — La notion de flagrance',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00009",
+              'Situations de flagrance, critères légaux, durée et bascule vers les autres cadres d’enquête.',
+            ),
             imagePath: 'assets/images/tentative_moral.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -98,9 +133,16 @@ class FlagrantDelitContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 2 ================================
           _ModuleCard(
             tag: 'flagrant_chap2',
-            title: 'Chapitre 2 — Le domaine d’application',
-            subtitle:
-                'Infractions concernées, limites matérielles et territoriales, articulation avec les autres enquêtes.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00010",
+              'Chapitre 2 — Le domaine d’application',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00011",
+              'Infractions concernées, limites matérielles et territoriales, articulation avec les autres enquêtes.',
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -114,9 +156,16 @@ class FlagrantDelitContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 3 ================================
           _ModuleCard(
             tag: 'flagrant_chap3',
-            title: 'Chapitre 3 — La procédure de flagrant délit',
-            subtitle:
-                'Pouvoirs de l’officier de police judiciaire, actes possibles, contrôles du parquet et suites de l’enquête.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00012",
+              'Chapitre 3 — La procédure de flagrant délit',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00013",
+              'Pouvoirs de l’officier de police judiciaire, actes possibles, contrôles du parquet et suites de l’enquête.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -130,9 +179,16 @@ class FlagrantDelitContenuPage extends StatelessWidget {
           // ===================== QUIZ MODULE ===============================
           _ModuleCard(
             tag: 'flagrant_quiz',
-            title: 'Quiz — Flagrant délit',
-            subtitle:
-                'Testez vos réflexes : définition, conditions, pouvoirs et limites de la flagrance.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00014",
+              'Quiz — Flagrant délit',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart",
+              "f00015",
+              'Testez vos réflexes : définition, conditions, pouvoirs et limites de la flagrance.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

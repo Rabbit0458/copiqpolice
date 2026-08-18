@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPlansOrsecPage extends StatelessWidget {
   const PaPlansOrsecPage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/policier_intervention/autres/plans-orsec';
+  static const String routeName =
+      '/pa/dps_dpg/policier_intervention/autres/plans-orsec';
 
   static const Color _lawRed = Color(0xFFE53935);
 
@@ -55,10 +57,18 @@ class PaPlansOrsecPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Intervention — Autres",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+            "f00002",
+            "Intervention — Autres",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +83,11 @@ class PaPlansOrsecPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les plans ORSEC",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00003",
+              "Les plans ORSEC",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,17 +99,41 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // Définition / objectif
           _ConditionCard(
-            title: "Définition & objectif",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00004",
+              "Définition & objectif",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le dispositif ORSEC (Organisation de la Réponse de SEcurité Civile) organise, en cas de situation d’urgence particulière, "
-                "la mobilisation, la mise en œuvre et la coordination des actions de toutes les personnes publiques ou privées concourant à "
-                "la protection générale de la population.\n\n"
-                "Il vise à créer et entretenir un réseau d’acteurs, et à développer des habitudes de travail en commun "
-                "(services de l’État, collectivités, associations, entreprises, gestionnaires de réseaux…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00005",
+                      "Le dispositif ORSEC (Organisation de la Réponse de SEcurité Civile) organise, en cas de situation d’urgence particulière, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00006",
+                      "la mobilisation, la mise en œuvre et la coordination des actions de toutes les personnes publiques ou privées concourant à ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00007",
+                      "la protection générale de la population.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00008",
+                      "Il vise à créer et entretenir un réseau d’acteurs, et à développer des habitudes de travail en commun ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00009",
+                      "(services de l’État, collectivités, associations, entreprises, gestionnaires de réseaux…).",
+                    ),
               ),
             ],
           ),
@@ -104,23 +142,37 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (référence générale)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Le cadre général est fixé par le "),
                 TextSpan(
-                  text: "Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                    "f00011",
+                    "Le cadre général est fixé par le ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : mesures de protection générale de la population, organisation des secours et gestion des crises.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                    "f00012",
+                    "Code de la sécurité intérieure",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                    "f00013",
+                    " : mesures de protection générale de la population, organisation des secours et gestion des crises.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -128,8 +180,16 @@ class PaPlansOrsecPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "ORSEC est une organisation. Le plan est complété par une fonctionnalité (ex. secours à de nombreuses victimes, hébergement) "
-                        "ou par un risque (inondation, cyclone, accident ferroviaire…).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                          "f00014",
+                          "ORSEC est une organisation. Le plan est complété par une fonctionnalité (ex. secours à de nombreuses victimes, hébergement) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                          "f00015",
+                          "ou par un risque (inondation, cyclone, accident ferroviaire…).",
+                        ),
                   ),
                 ],
               ),
@@ -140,29 +200,72 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // Principes d’organisation
           _ConditionCard(
-            title: "II — Principes d’organisation ORSEC",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00016",
+              "II — Principes d’organisation ORSEC",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("L’ORSEC repose sur :"),
-              _BulletPoint(
-                text:
-                    "Le recensement et l’analyse préalable des risques et des conséquences des menaces.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00017",
+                  "L’ORSEC repose sur :",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Un dispositif opérationnel unique de gestion d’évènement majeur pour la protection des populations.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00018",
+                  "Le recensement et l’analyse préalable des risques et des conséquences des menaces.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Une phase de préparation (exercices et entraînements réguliers) pour faire travailler les acteurs ensemble.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00019",
+                  "Un dispositif opérationnel unique de gestion d’évènement majeur pour la protection des populations.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00020",
+                  "Une phase de préparation (exercices et entraînements réguliers) pour faire travailler les acteurs ensemble.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Déclinaison territoriale"),
-              _BulletPoint(text: "Niveau départemental."),
-              _BulletPoint(text: "Niveau zone de défense."),
-              _BulletPoint(text: "Niveau zones maritimes."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00021",
+                  "Déclinaison territoriale",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00022",
+                  "Niveau départemental.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00023",
+                  "Niveau zone de défense.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00024",
+                  "Niveau zones maritimes.",
+                ),
+              ),
             ],
           ),
 
@@ -170,41 +273,93 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // Direction unique / DOS
           _ConditionCard(
-            title: "III — Direction des opérations de secours (DOS)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00025",
+              "III — Direction des opérations de secours (DOS)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tous les moyens publics et privés sont coordonnés par une direction unique : la direction des opérations de secours (DOS). "
-                "Elle repose le plus souvent sur le maire.\n\n"
-                "Toutefois, le préfet prend la direction des opérations de secours dans certains cas, notamment lorsque les conséquences dépassent "
-                "les limites et les capacités d’une commune. Dans ce cas, le maire reste chargé des mesures de soutien à sa population.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00026",
+                      "Tous les moyens publics et privés sont coordonnés par une direction unique : la direction des opérations de secours (DOS). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00027",
+                      "Elle repose le plus souvent sur le maire.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00028",
+                      "Toutefois, le préfet prend la direction des opérations de secours dans certains cas, notamment lorsque les conséquences dépassent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00029",
+                      "les limites et les capacités d’une commune. Dans ce cas, le maire reste chargé des mesures de soutien à sa population.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Repères pratiques (tendance)"),
-              _BulletPoint(
-                text: "Accident simple / intervention courante : DOS = Maire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00030",
+                  "Repères pratiques (tendance)",
+                ),
               ),
               _BulletPoint(
-                text: "Accident important : DOS = Maire (moyens renforcés).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00031",
+                  "Accident simple / intervention courante : DOS = Maire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accident avec nombreuses victimes / pollution / spéléo… : DOS = Préfet.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00032",
+                  "Accident important : DOS = Maire (moyens renforcés).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Situations majeures (tempête majeure, pandémie, inondation majeure, nucléaire…) : DOS = Préfet.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00033",
+                  "Accident avec nombreuses victimes / pollution / spéléo… : DOS = Préfet.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00034",
+                  "Situations majeures (tempête majeure, pandémie, inondation majeure, nucléaire…) : DOS = Préfet.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "À Paris et dans les départements de la petite couronne, le préfet de police assure en permanence la direction des opérations de secours.\n"
-                        "En mer, le préfet maritime assure la DOS et commande le dispositif ORSEC maritime.\n"
-                        "Si l’évènement dépasse un département : le préfet de zone de défense peut prendre la DOS.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                          "f00035",
+                          "À Paris et dans les départements de la petite couronne, le préfet de police assure en permanence la direction des opérations de secours.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                          "f00036",
+                          "En mer, le préfet maritime assure la DOS et commande le dispositif ORSEC maritime.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                          "f00037",
+                          "Si l’évènement dépasse un département : le préfet de zone de défense peut prendre la DOS.",
+                        ),
                   ),
                 ],
               ),
@@ -215,38 +370,103 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // Noyau dur / missions / outils
           _ConditionCard(
-            title: "IV — Acteurs & “boîte à outils” opérationnelle",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00038",
+              "IV — Acteurs & “boîte à outils” opérationnelle",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Noyau dur d’acteurs (département)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00039",
+                  "Noyau dur d’acteurs (département)",
+                ),
+              ),
               _Paragraph(
-                "Le préfet rassemble un noyau dur : SDIS, services sanitaires et sociaux, police/gendarmerie, collectivités, "
-                "services techniques, délégué militaire départemental, associations agréées de sécurité civile… "
-                "Ce noyau est complété par d’autres intervenants selon la nature de l’évènement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00040",
+                      "Le préfet rassemble un noyau dur : SDIS, services sanitaires et sociaux, police/gendarmerie, collectivités, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00041",
+                      "services techniques, délégué militaire départemental, associations agréées de sécurité civile… ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00042",
+                      "Ce noyau est complété par d’autres intervenants selon la nature de l’évènement.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Missions de base communes"),
-              _BulletPoint(
-                text:
-                    "Organisation des acteurs publics/privés concourant à la protection générale de la population.",
-              ),
-              _BulletPoint(text: "Commandement."),
-              _BulletPoint(
-                text:
-                    "Communication de crise : alerte, information des populations et des élus.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00043",
+                  "Missions de base communes",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Veille et alerte en toutes circonstances des acteurs du dispositif.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00044",
+                  "Organisation des acteurs publics/privés concourant à la protection générale de la population.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00045",
+                  "Commandement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00046",
+                  "Communication de crise : alerte, information des populations et des élus.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00047",
+                  "Veille et alerte en toutes circonstances des acteurs du dispositif.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Modes d’action (exemples)"),
-              _BulletPoint(text: "Secours à de nombreuses victimes."),
-              _BulletPoint(text: "Évacuation des populations."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00048",
+                  "Modes d’action (exemples)",
+                ),
+              ),
               _BulletPoint(
-                text: "Hébergement / ravitaillement / soutien / réconfort.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00049",
+                  "Secours à de nombreuses victimes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00050",
+                  "Évacuation des populations.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00051",
+                  "Hébergement / ravitaillement / soutien / réconfort.",
+                ),
               ),
             ],
           ),
@@ -255,56 +475,123 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // PPI
           _ConditionCard(
-            title: "V — Plan particulier d’intervention (PPI)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00052",
+              "V — Plan particulier d’intervention (PPI)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les PPI sont réalisés pour faire face à un risque lié à des installations fixes pouvant avoir des conséquences sur la population.\n\n"
-                "Le PPI est élaboré par le préfet : il prépare, selon les risques identifiés, les mesures de protection, la mobilisation "
-                "et la coordination de l’ensemble des acteurs concernés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00053",
+                      "Les PPI sont réalisés pour faire face à un risque lié à des installations fixes pouvant avoir des conséquences sur la population.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00054",
+                      "Le PPI est élaboré par le préfet : il prépare, selon les risques identifiés, les mesures de protection, la mobilisation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00055",
+                      "et la coordination de l’ensemble des acteurs concernés.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Sites/risques concernés (exemples)"),
-              _BulletPoint(
-                text:
-                    "Installations nucléaires de base (réacteur, usine de traitement…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00056",
+                  "Sites/risques concernés (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Installations classées SEVESO (raffineries, dépôts pétroliers…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00057",
+                  "Installations nucléaires de base (réacteur, usine de traitement…).",
+                ),
               ),
               _BulletPoint(
-                text: "Certains aménagements hydrauliques (barrages…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00058",
+                  "Installations classées SEVESO (raffineries, dépôts pétroliers…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Stockages souterrains (gaz naturel, produits chimiques industriels…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00059",
+                  "Certains aménagements hydrauliques (barrages…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Infrastructures transport marchandises dangereuses (ports, sites ferroviaires/routiers…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00060",
+                  "Stockages souterrains (gaz naturel, produits chimiques industriels…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Établissements utilisant des micro-organismes hautement pathogènes.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00061",
+                  "Infrastructures transport marchandises dangereuses (ports, sites ferroviaires/routiers…).",
+                ),
               ),
-              _BulletPoint(text: "Autres sites à risque…"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00062",
+                  "Établissements utilisant des micro-organismes hautement pathogènes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00063",
+                  "Autres sites à risque…",
+                ),
+              ),
               SizedBox(height: 12),
-              _SubTitle("Construction du plan"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00064",
+                  "Construction du plan",
+                ),
+              ),
               _Paragraph(
-                "Le PPI est établi à partir de scénarios d’accidents identifiés par l’exploitant et contrôlés par l’État. "
-                "Le scénario le plus défavorable délimite la zone d’application (communes/populations concernées).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00065",
+                      "Le PPI est établi à partir de scénarios d’accidents identifiés par l’exploitant et contrôlés par l’État. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00066",
+                      "Le scénario le plus défavorable délimite la zone d’application (communes/populations concernées).",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Consultation : maires, exploitant, population de la zone d’application.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00067",
+                  "Consultation : maires, exploitant, population de la zone d’application.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Après approbation : diffusion d’une brochure d’information à la population concernée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00068",
+                  "Après approbation : diffusion d’une brochure d’information à la population concernée.",
+                ),
               ),
             ],
           ),
@@ -313,46 +600,92 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // PCS
           _ConditionCard(
-            title: "VI — Plan communal de sauvegarde (PCS)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00069",
+              "VI — Plan communal de sauvegarde (PCS)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le PCS (créé par la loi de modernisation de la sécurité civile de 2004) fournit au maire un outil pour gérer un évènement de sécurité civile. "
-                "Il complète le plan ORSEC de protection générale des populations.\n\n"
-                "Le PCS organise les secours au niveau communal : alerte, information, protection et soutien de la population.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00070",
+                      "Le PCS (créé par la loi de modernisation de la sécurité civile de 2004) fournit au maire un outil pour gérer un évènement de sécurité civile. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00071",
+                      "Il complète le plan ORSEC de protection générale des populations.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00072",
+                      "Le PCS organise les secours au niveau communal : alerte, information, protection et soutien de la population.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Obligation / recommandation"),
-              _BulletPoint(
-                text:
-                    "Obligatoire dans les communes soumises à des risques majeurs, comprises dans le champ d’un PPI, ou dotées d’un PPRN.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00073",
+                  "Obligation / recommandation",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conseillé pour toutes les communes (même hors obligation).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00074",
+                  "Obligatoire dans les communes soumises à des risques majeurs, comprises dans le champ d’un PPI, ou dotées d’un PPRN.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00075",
+                  "Conseillé pour toutes les communes (même hors obligation).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Méthode"),
-              _BulletPoint(
-                text:
-                    "Recensement et analyse des risques à l’échelle de la commune.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00076",
+                  "Méthode",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Document opérationnel : organisation communale de gestion des situations d’urgence.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00077",
+                  "Recensement et analyse des risques à l’échelle de la commune.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Acteurs identifiés, formés et entraînés, adapté aux moyens de la commune.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00078",
+                  "Document opérationnel : organisation communale de gestion des situations d’urgence.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00079",
+                  "Acteurs identifiés, formés et entraînés, adapté aux moyens de la commune.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le PCS est mis à jour périodiquement. Son délai de révision ne peut excéder 5 ans.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                      "f00080",
+                      "Le PCS est mis à jour périodiquement. Son délai de révision ne peut excéder 5 ans.",
+                    ),
                   ),
                 ],
               ),
@@ -363,30 +696,49 @@ class PaPlansOrsecPage extends StatelessWidget {
 
           // Résumé rapide
           _ConditionCard(
-            title: "En résumé (check-list)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+              "f00081",
+              "En résumé (check-list)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "ORSEC = organisation globale de réponse de sécurité civile (acteurs + coordination).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00082",
+                  "ORSEC = organisation globale de réponse de sécurité civile (acteurs + coordination).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "DOS = direction unique (souvent maire ; préfet si dépassement communal / cas définis).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00083",
+                  "DOS = direction unique (souvent maire ; préfet si dépassement communal / cas définis).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Noyau dur départemental + renforts selon situation (boîte à outils).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00084",
+                  "Noyau dur départemental + renforts selon situation (boîte à outils).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "PPI = risques liés à installations fixes (pilotage préfet, scénarios, zone d’application).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00085",
+                  "PPI = risques liés à installations fixes (pilotage préfet, scénarios, zone d’application).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "PCS = organisation communale sous autorité du maire (obligatoire si risques majeurs / PPI / PPRN ; révision ≤ 5 ans).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart",
+                  "f00086",
+                  "PCS = organisation communale sous autorité du maire (obligatoire si risques majeurs / PPI / PPRN ; révision ≤ 5 ans).",
+                ),
               ),
             ],
           ),
@@ -643,9 +995,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

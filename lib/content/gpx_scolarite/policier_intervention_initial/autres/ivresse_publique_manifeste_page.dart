@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class IvressePubliqueManifestePage extends StatelessWidget {
   const IvressePubliqueManifestePage({super.key});
@@ -55,10 +56,18 @@ class IvressePubliqueManifestePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Intervention — Autres",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+            "f00002",
+            "Intervention — Autres",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class IvressePubliqueManifestePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Ivresse publique et manifeste (IPM)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00003",
+              "Ivresse publique et manifeste (IPM)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,16 +98,36 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // Définition / Esprit de la mesure
           _ConditionCard(
-            title: "De quoi s’agit-il ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00004",
+              "De quoi s’agit-il ?",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’IPM est une mesure de police administrative visant à prévenir les atteintes à l’ordre public "
-                "et à protéger la personne en état d’ivresse.\n\n"
-                "Toute personne trouvée en état d’ivresse dans un lieu public peut être conduite, après examen médical, "
-                "dans un local de police/gendarmerie ou en chambre de sûreté, jusqu’au retour à la raison.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00005",
+                      "L’IPM est une mesure de police administrative visant à prévenir les atteintes à l’ordre public ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00006",
+                      "et à protéger la personne en état d’ivresse.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00007",
+                      "Toute personne trouvée en état d’ivresse dans un lieu public peut être conduite, après examen médical, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00008",
+                      "dans un local de police/gendarmerie ou en chambre de sûreté, jusqu’au retour à la raison.",
+                    ),
               ),
             ],
           ),
@@ -103,52 +136,80 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal (textes)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00009",
+              "I — Élément légal (textes)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 3341-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00010",
+                    "Article L. 3341-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : prévoit la conduite (après examen médical) et la retenue jusqu’au retour à la raison, "
-                      "et permet la remise sous responsabilité d’un tiers (OPJ/APJ) lorsque l’audition immédiate n’est pas nécessaire.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                        "f00011",
+                        " : prévoit la conduite (après examen médical) et la retenue jusqu’au retour à la raison, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                        "f00012",
+                        "et permet la remise sous responsabilité d’un tiers (OPJ/APJ) lorsque l’audition immédiate n’est pas nécessaire.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00013",
+                    "Article R. 3353-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : réprime l’ivresse publique et manifeste (contravention de 2ᵉ classe).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00014",
+                    " : réprime l’ivresse publique et manifeste (contravention de 2ᵉ classe).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Audition libre : notification des droits de ",
-                ),
-                TextSpan(
-                  text: "l’article 61-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00015",
+                    "Audition libre : notification des droits de ",
                   ),
                 ),
-                TextSpan(text: " (selon le cadre retenu)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00016",
+                    "l’article 61-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00017",
+                    " (selon le cadre retenu).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -157,37 +218,72 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // Champ d’application
           _ConditionCard(
-            title: "II — Champ d’application (quand c’est une IPM ?)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00018",
+              "II — Champ d’application (quand c’est une IPM ?)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Conditions"),
               _BulletPoint(
-                text:
-                    "Ivresse manifeste : évidente, constatable (signes extérieurs, troubles du comportement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00019",
+                  "Ivresse manifeste : évidente, constatable (signes extérieurs, troubles du comportement).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ivresse publique : constatée dans un lieu public ou privé ouvert au public (place, route, gare, café…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00020",
+                  "Ivresse publique : constatée dans un lieu public ou privé ouvert au public (place, route, gare, café…).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Appréciation pratique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00021",
+                  "Appréciation pratique",
+                ),
+              ),
               _Paragraph(
-                "L’ivresse s’apprécie indépendamment de toute mesure d’imprégnation alcoolique. "
-                "Elle résulte du comportement observé et des signes extérieurs.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00022",
+                      "L’ivresse s’apprécie indépendamment de toute mesure d’imprégnation alcoolique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00023",
+                      "Elle résulte du comportement observé et des signes extérieurs.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Exemples de signes fréquemment relevés : haleine alcoolisée, défaut d’équilibre, élocution bégayante, "
-                "propos incohérents, comportement anormal. Ces critères n’ont pas à être tous réunis.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00024",
+                      "Exemples de signes fréquemment relevés : haleine alcoolisée, défaut d’équilibre, élocution bégayante, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00025",
+                      "propos incohérents, comportement anormal. Ces critères n’ont pas à être tous réunis.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette mesure ne s’applique qu’aux majeurs : les mineurs ne doivent pas être placés en chambre de sûreté.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00026",
+                      "Cette mesure ne s’applique qu’aux majeurs : les mineurs ne doivent pas être placés en chambre de sûreté.",
+                    ),
                   ),
                 ],
               ),
@@ -198,35 +294,74 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // Conduite à tenir : obligations
           _ConditionCard(
-            title: "III — Conduite à tenir (principes)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00027",
+              "III — Conduite à tenir (principes)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Nature de la mesure"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00028",
+                  "Nature de la mesure",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’une mesure de police administrative : l’objectif est la protection et la prévention des troubles à l’ordre public.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00029",
+                  "Il s’agit d’une mesure de police administrative : l’objectif est la protection et la prévention des troubles à l’ordre public.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Deux obligations fondamentales"),
-              _BulletPoint(
-                text:
-                    "Devoir de protection et d’assistance (personne vulnérable).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00030",
+                  "Deux obligations fondamentales",
+                ),
               ),
               _BulletPoint(
-                text: "Obligation de rendre compte (CIC + traçabilité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00031",
+                  "Devoir de protection et d’assistance (personne vulnérable).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00032",
+                  "Obligation de rendre compte (CIC + traçabilité).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’équipage doit adapter son intervention à l’état réel de la personne et appliquer les gestes de secourisme si nécessaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00033",
+                  "L’équipage doit adapter son intervention à l’état réel de la personne et appliquer les gestes de secourisme si nécessaire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Une situation qui ressemble à une ivresse peut être un malaise (hypoglycémie/diabète, choc, prise de médicaments…). "
-                        "Un policier ne pose pas de diagnostic : prudence + examen médical.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                          "f00034",
+                          "Une situation qui ressemble à une ivresse peut être un malaise (hypoglycémie/diabète, choc, prise de médicaments…). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                          "f00035",
+                          "Un policier ne pose pas de diagnostic : prudence + examen médical.",
+                        ),
                   ),
                 ],
               ),
@@ -237,62 +372,142 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // Prise en charge par les policiers
           _ConditionCard(
-            title: "IV — Prise en charge par les policiers",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00036",
+              "IV — Prise en charge par les policiers",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Étapes opérationnelles"),
-              _BulletPoint(
-                text:
-                    "Retirer la personne sans brutalité de la vue du public, sécuriser la situation, palpation de sécurité.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00037",
+                  "Étapes opérationnelles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rendre compte régulièrement au CIC (contrôle, décision de remise tiers / hôpital / service…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00038",
+                  "Retirer la personne sans brutalité de la vue du public, sécuriser la situation, palpation de sécurité.",
+                ),
               ),
               _BulletPoint(
-                text: "Renseigner la main courante informatisée (traçabilité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00039",
+                  "Rendre compte régulièrement au CIC (contrôle, décision de remise tiers / hôpital / service…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00040",
+                  "Renseigner la main courante informatisée (traçabilité).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Conduite à l’hôpital (examen médical)"),
-              _BulletPoint(
-                text:
-                    "L’examen médical vérifie si l’état de santé est compatible avec un maintien en locaux de police.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00041",
+                  "A) Conduite à l’hôpital (examen médical)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si compatible : délivrance d’un certificat médical de non-admission.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00042",
+                  "L’examen médical vérifie si l’état de santé est compatible avec un maintien en locaux de police.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00043",
+                  "Si compatible : délivrance d’un certificat médical de non-admission.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Conduite au commissariat / chef de poste"),
-              _BulletPoint(
-                text:
-                    "Mesures de sécurité décidées par le chef de poste (ou sous son contrôle).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00044",
+                  "B) Conduite au commissariat / chef de poste",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Fouille de sécurité : retirer objets/accessoires pouvant nuire (ceinture, lacets, médicaments…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00045",
+                  "Mesures de sécurité décidées par le chef de poste (ou sous son contrôle).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Inventaire + mention sur registre d’écrou (identité + heure de prise en charge).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00046",
+                  "Fouille de sécurité : retirer objets/accessoires pouvant nuire (ceinture, lacets, médicaments…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00047",
+                  "Inventaire + mention sur registre d’écrou (identité + heure de prise en charge).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("C) Chambre de sûreté (surveillance)"),
-              _BulletPoint(
-                text:
-                    "Surveillance constante + rondes régulières (intervalle max 15 minutes).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00048",
+                  "C) Chambre de sûreté (surveillance)",
+                ),
               ),
               _BulletPoint(
-                text: "Feuille de rondes : heures, signature, observations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00049",
+                  "Surveillance constante + rondes régulières (intervalle max 15 minutes).",
+                ),
               ),
-              _BulletPoint(text: "Au moindre signe d’alerte : appel médecin."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00050",
+                  "Feuille de rondes : heures, signature, observations.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00051",
+                  "Au moindre signe d’alerte : appel médecin.",
+                ),
+              ),
               SizedBox(height: 12),
-              _SubTitle("Fin de mesure"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00052",
+                  "Fin de mesure",
+                ),
+              ),
               _Paragraph(
-                "La retenue prend fin au complet dégrisement : disparition des caractéristiques d’ivresse. "
-                "Restitution des effets et décharge par émargement du registre d’écrou.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00053",
+                      "La retenue prend fin au complet dégrisement : disparition des caractéristiques d’ivresse. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00054",
+                      "Restitution des effets et décharge par émargement du registre d’écrou.",
+                    ),
               ),
             ],
           ),
@@ -301,37 +516,50 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // Remise à un tiers
           _ConditionCard(
-            title: "V — Remise sous responsabilité d’un tiers",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00055",
+              "V — Remise sous responsabilité d’un tiers",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lorsque l’audition immédiate n’est pas nécessaire après le retour à la raison, la personne peut être placée par OPJ/APJ sous la responsabilité d’un tiers garant — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00056",
+                    "Lorsque l’audition immédiate n’est pas nécessaire après le retour à la raison, la personne peut être placée par OPJ/APJ sous la responsabilité d’un tiers garant — ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "article L. 3341-1 alinéa 2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00057",
+                    "article L. 3341-1 alinéa 2 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "La remise à un tiers peut intervenir à tout moment : à l’hôpital, au service, avant ou après la chambre de sûreté.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00058",
+                  "La remise à un tiers peut intervenir à tout moment : à l’hôpital, au service, avant ou après la chambre de sûreté.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si la remise à un tiers intervient avant l’examen médical, le certificat de non-admission ne sera pas sollicité.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00059",
+                      "Si la remise à un tiers intervient avant l’examen médical, le certificat de non-admission ne sera pas sollicité.",
+                    ),
                   ),
                 ],
               ),
@@ -342,23 +570,36 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // PV + audition
           _ConditionCard(
-            title: "VI — Procès-verbal & audition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00060",
+              "VI — Procès-verbal & audition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La contravention d’ivresse publique et manifeste doit donner lieu à un PV ordinaire, "
-                      "en décrivant précisément les signes extérieurs constatés — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                        "f00061",
+                        "La contravention d’ivresse publique et manifeste doit donner lieu à un PV ordinaire, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                        "f00062",
+                        "en décrivant précisément les signes extérieurs constatés — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00063",
+                    "article R. 3353-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -366,8 +607,11 @@ class IvressePubliqueManifestePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les APJA ne sont pas compétents pour constater cette contravention par procès-verbal.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                      "f00064",
+                      "Les APJA ne sont pas compétents pour constater cette contravention par procès-verbal.",
+                    ),
                   ),
                 ],
               ),
@@ -376,15 +620,24 @@ class IvressePubliqueManifestePage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La personne est entendue sur PV séparé : soit après dégrisement, soit ultérieurement si remise à un tiers. "
-                      "Il s’agit d’une audition libre avec notification des droits de ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                        "f00065",
+                        "La personne est entendue sur PV séparé : soit après dégrisement, soit ultérieurement si remise à un tiers. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                        "f00066",
+                        "Il s’agit d’une audition libre avec notification des droits de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’article 61-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                    "f00067",
+                    "l’article 61-1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -395,34 +648,56 @@ class IvressePubliqueManifestePage extends StatelessWidget {
 
           // Résumé
           _ConditionCard(
-            title: "En résumé (check-list rapide)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+              "f00068",
+              "En résumé (check-list rapide)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Constater : public + manifeste (signes extérieurs, comportement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00069",
+                  "Constater : public + manifeste (signes extérieurs, comportement).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Protéger : personne vulnérable, prudence (malaise possible).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00070",
+                  "Protéger : personne vulnérable, prudence (malaise possible).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Examiner : examen médical avant maintien (certificat non-admission si compatible).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00071",
+                  "Examiner : examen médical avant maintien (certificat non-admission si compatible).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Sécuriser : fouille de sécurité + registre d’écrou + surveillance (rondes ≤ 15 min).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00072",
+                  "Sécuriser : fouille de sécurité + registre d’écrou + surveillance (rondes ≤ 15 min).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Tracer : compte-rendu CIC + MCI + PV (signes détaillés).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00073",
+                  "Tracer : compte-rendu CIC + MCI + PV (signes détaillés).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Audition : après dégrisement / ultérieurement + droits CPP.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/ivresse_publique_manifeste_page.dart",
+                  "f00074",
+                  "Audition : après dégrisement / ultérieurement + droits CPP.",
+                ),
               ),
             ],
           ),
@@ -678,9 +953,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

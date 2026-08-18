@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — L’Complicite (SPLASH IA 2025)
@@ -62,7 +63,11 @@ class _CompliciteIntroPageState extends State<CompliciteIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LA COMPLICITÉ';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_intro_page.dart",
+    "f00001",
+    'LA COMPLICITÉ',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -164,7 +169,11 @@ class _CompliciteIntroPageState extends State<CompliciteIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Les bases de la complicité : conditions, participation et rôle du complice.\nPrêt(e) pour une vue d’ensemble ultra claire avant la fiche détaillée ?",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_intro_page.dart",
+                        "f00002",
+                        "Les bases de la complicité : conditions, participation et rôle du complice.\nPrêt(e) pour une vue d’ensemble ultra claire avant la fiche détaillée ?",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -264,7 +273,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

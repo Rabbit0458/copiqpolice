@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GrandExcesVitesseGPXPage extends StatelessWidget {
   const GrandExcesVitesseGPXPage({super.key});
@@ -56,10 +57,18 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contravention 5e classe",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+            "f00002",
+            "Contravention 5e classe",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Grand excès de vitesse (≥ 50 km/h)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00003",
+              "Grand excès de vitesse (≥ 50 km/h)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le grand excès de vitesse correspond au fait, pour le conducteur d’un véhicule à moteur, "
-                "de dépasser d’au moins 50 km/h la vitesse maximale autorisée sur la voie contrôlée. "
-                "Le procès-verbal doit relater précisément les circonstances de constatation et les mesures relevées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00005",
+                      "Le grand excès de vitesse correspond au fait, pour le conducteur d’un véhicule à moteur, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00006",
+                      "de dépasser d’au moins 50 km/h la vitesse maximale autorisée sur la voie contrôlée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00007",
+                      "Le procès-verbal doit relater précisément les circonstances de constatation et les mesures relevées.",
+                    ),
               ),
             ],
           ),
@@ -103,22 +132,30 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (obligatoire)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 413-14-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00009",
+                    "Article R. 413-14-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’excès de vitesse d’au moins 50 km/h (contravention de 5e classe).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00010",
+                    " : définit et réprime l’excès de vitesse d’au moins 50 km/h (contravention de 5e classe).",
+                  ),
                 ),
               ]),
             ],
@@ -128,34 +165,88 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Dépassement d’au moins 50 km/h"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00012",
+                  "A) Dépassement d’au moins 50 km/h",
+                ),
+              ),
               _Paragraph(
-                "L’infraction est constituée lorsque la vitesse retenue (après application de la marge d’erreur) "
-                "dépasse d’au moins 50 km/h la vitesse maximale autorisée sur la voie contrôlée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00013",
+                      "L’infraction est constituée lorsque la vitesse retenue (après application de la marge d’erreur) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00014",
+                      "dépasse d’au moins 50 km/h la vitesse maximale autorisée sur la voie contrôlée.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Constatation précise par cinémomètre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00015",
+                  "B) Constatation précise par cinémomètre",
+                ),
+              ),
               _Paragraph(
-                "Les faits doivent être relatés de manière circonstanciée. Sous peine de fragiliser la procédure, "
-                "le procès-verbal doit mentionner clairement les éléments techniques et réglementaires liés à la mesure.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00016",
+                      "Les faits doivent être relatés de manière circonstanciée. Sous peine de fragiliser la procédure, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00017",
+                      "le procès-verbal doit mentionner clairement les éléments techniques et réglementaires liés à la mesure.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "À mentionner impérativement :\n"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00018",
+                      "À mentionner impérativement :\n",
+                    ),
+                  ),
                   TextSpan(
                     text:
-                        "• Marque, type, numéro et date de la dernière vérification du cinémomètre utilisé\n"
-                        "• Vitesse maximale autorisée sur la voie contrôlée\n"
-                        "• Vitesse enregistrée par l’appareil\n"
-                        "• Vitesse retenue (vitesse enregistrée minorée de la marge d’erreur applicable)\n",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                          "f00019",
+                          "• Marque, type, numéro et date de la dernière vérification du cinémomètre utilisé\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                          "f00020",
+                          "• Vitesse maximale autorisée sur la voie contrôlée\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                          "f00021",
+                          "• Vitesse enregistrée par l’appareil\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                          "f00022",
+                          "• Vitesse retenue (vitesse enregistrée minorée de la marge d’erreur applicable)\n",
+                        ),
                   ),
                 ],
               ),
@@ -163,19 +254,26 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Rappel spécifique (jeune conducteur / probatoire) : certains conducteurs sont soumis à des vitesses maximales réduites conformément à ",
-                ),
-                TextSpan(
-                  text: "l’article R. 413-5 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00023",
+                    "Rappel spécifique (jeune conducteur / probatoire) : certains conducteurs sont soumis à des vitesses maximales réduites conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (ex. autoroute 110 km/h ou 100 km/h si limitation < 130, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00024",
+                    "l’article R. 413-5 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00025",
+                    " (ex. autoroute 110 km/h ou 100 km/h si limitation < 130, etc.).",
+                  ),
                 ),
               ]),
             ],
@@ -185,15 +283,31 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00026",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En matière de contravention, l’infraction est caractérisée par le comportement fautif du conducteur "
-                "(imprudence, négligence, inattention ou non-respect délibéré). Il n’est pas nécessaire de démontrer "
-                "une intention spécifique : le dépassement constaté suffit lorsque les mentions techniques et factuelles sont régulières.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00027",
+                      "En matière de contravention, l’infraction est caractérisée par le comportement fautif du conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00028",
+                      "(imprudence, négligence, inattention ou non-respect délibéré). Il n’est pas nécessaire de démontrer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00029",
+                      "une intention spécifique : le dépassement constaté suffit lorsque les mentions techniques et factuelles sont régulières.",
+                    ),
               ),
             ],
           ),
@@ -202,26 +316,51 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Circonstances aggravantes / tentative / complicité
           _ConditionCard(
-            title: "IV — Particularités (aggravation, tentative, complicité)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00030",
+              "IV — Particularités (aggravation, tentative, complicité)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Circonstances aggravantes (pratique PV)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00031",
+                  "A) Circonstances aggravantes (pratique PV)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Si des éléments particuliers entourent les faits (conditions de circulation, danger créé, comportement du conducteur), ils doivent être décrits avec précision dans les constatations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00032",
+                  "Si des éléments particuliers entourent les faits (conditions de circulation, danger créé, comportement du conducteur), ils doivent être décrits avec précision dans les constatations.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("B) Tentative & complicité"),
-              _BulletPoint(
-                text:
-                    "Tentative : en principe NON retenue pour une contravention, sauf texte spécial.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00033",
+                  "B) Tentative & complicité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complicité : en principe NON pour une contravention (la complicité vise surtout crimes/délits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00034",
+                  "Tentative : en principe NON retenue pour une contravention, sauf texte spécial.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00035",
+                  "Complicité : en principe NON pour une contravention (la complicité vise surtout crimes/délits).",
+                ),
               ),
             ],
           ),
@@ -230,54 +369,150 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Procédure / Trame PV
           _ConditionCard(
-            title: "V — Canevas PV (rendu pédagogique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00036",
+              "V — Canevas PV (rendu pédagogique)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
-              _Paragraph("Mentionner l’endroit exact où se situe l’équipage."),
-
-              SizedBox(height: 10),
-              _SubTitle("2) Instructions"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00037",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _Paragraph(
-                "Indiquer les instructions permanentes du chef de service (uniquement s’il s’agit du procès-verbal de saisine).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00038",
+                  "Mentionner l’endroit exact où se situe l’équipage.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("3) Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00039",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires accompagnant le rédacteur et préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00040",
+                  "Indiquer les instructions permanentes du chef de service (uniquement s’il s’agit du procès-verbal de saisine).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("4) Mission"),
-              _Paragraph("Indiquer le but de la mission initiale."),
-
-              SizedBox(height: 10),
-              _SubTitle("5) Constatations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00041",
+                  "3) Assistants",
+                ),
+              ),
               _Paragraph(
-                "Relater précisément les faits observés et constitutifs de l’infraction. "
-                "Décrire les conditions de constatation (lieu, sens, voie, signalisation, circonstances) "
-                "et intégrer toutes les mentions techniques liées au cinémomètre.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00042",
+                  "Mentionner les fonctionnaires accompagnant le rédacteur et préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("6) Dépistages (alcool et stupéfiants)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00043",
+                  "4) Mission",
+                ),
+              ),
               _Paragraph(
-                "Mentionner, si réalisé, le dépistage alcool/stupéfiants et les résultats (ou l’absence de dépistage si non pratiqué).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00044",
+                  "Indiquer le but de la mission initiale.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("7) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00045",
+                  "5) Constatations",
+                ),
+              ),
               _Paragraph(
-                "Clôturer l’acte conformément aux règles habituelles de rédaction du PV.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00046",
+                      "Relater précisément les faits observés et constitutifs de l’infraction. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00047",
+                      "Décrire les conditions de constatation (lieu, sens, voie, signalisation, circonstances) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                      "f00048",
+                      "et intégrer toutes les mentions techniques liées au cinémomètre.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("8) Mention — Recherches administratives"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00049",
+                  "6) Dépistages (alcool et stupéfiants)",
+                ),
+              ),
               _Paragraph(
-                "Recherches administratives : S.N.P.C., S.I.V. et F.P.R.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00050",
+                  "Mentionner, si réalisé, le dépistage alcool/stupéfiants et les résultats (ou l’absence de dépistage si non pratiqué).",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00051",
+                  "7) Énonciation terminale (clôture)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00052",
+                  "Clôturer l’acte conformément aux règles habituelles de rédaction du PV.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00053",
+                  "8) Mention — Recherches administratives",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00054",
+                  "Recherches administratives : S.N.P.C., S.I.V. et F.P.R.",
+                ),
               ),
             ],
           ),
@@ -286,29 +521,40 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Rétention PC
           _ConditionCard(
-            title: "VI — Rétention du permis de conduire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00055",
+              "VI — Rétention du permis de conduire",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lorsque le dépassement de la vitesse maximale autorisée (de 40 km/h ou plus) est établi au moyen d’un appareil homologué et que le véhicule est intercepté, le permis de conduire du conducteur doit être retenu — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00056",
+                    "Lorsque le dépassement de la vitesse maximale autorisée (de 40 km/h ou plus) est établi au moyen d’un appareil homologué et que le véhicule est intercepté, le permis de conduire du conducteur doit être retenu — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 224-1 (5°) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00057",
+                    "article L. 224-1 (5°) du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Remettre au conducteur un exemplaire de l’avis de rétention du permis de conduire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00058",
+                  "Remettre au conducteur un exemplaire de l’avis de rétention du permis de conduire.",
+                ),
               ),
             ],
           ),
@@ -317,40 +563,62 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Immobilisation
           _ConditionCard(
-            title: "VII — Immobilisation du véhicule",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00059",
+              "VII — Immobilisation du véhicule",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "1) Dans le cadre de la rétention du permis : ",
-                ),
-                TextSpan(
-                  text: "article L. 224-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00060",
+                    "1) Dans le cadre de la rétention du permis : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". L’immobilisation peut être levée dès qu’un conducteur qualifié, proposé par le conducteur (ou l’accompagnateur de l’élève conducteur) ou éventuellement par le propriétaire, peut assurer la conduite.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00061",
+                    "article L. 224-4 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00062",
+                    ". L’immobilisation peut être levée dès qu’un conducteur qualifié, proposé par le conducteur (ou l’accompagnateur de l’élève conducteur) ou éventuellement par le propriétaire, peut assurer la conduite.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "2) Mise en fourrière possible : "),
                 TextSpan(
-                  text: "article L. 325-1-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00063",
+                    "2) Mise en fourrière possible : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Lorsqu’une peine de confiscation du véhicule est encourue, l’A.P.J. peut, avec l’autorisation préalable du procureur de la République (par tout moyen), faire procéder à l’immobilisation et à la mise en fourrière du véhicule.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00064",
+                    "article L. 325-1-1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00065",
+                    ". Lorsqu’une peine de confiscation du véhicule est encourue, l’A.P.J. peut, avec l’autorisation préalable du procureur de la République (par tout moyen), faire procéder à l’immobilisation et à la mise en fourrière du véhicule.",
+                  ),
                 ),
               ]),
             ],
@@ -360,7 +628,11 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
 
           // Images canevas
           _ConditionCard(
-            title: "Canevas (aperçu)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+              "f00066",
+              "Canevas (aperçu)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -628,9 +900,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -695,8 +965,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+        "f00067",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+        "f00068",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -869,7 +1147,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                    "f00069",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -938,7 +1220,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart",
+                  "f00070",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -966,7 +1252,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1001,7 +1289,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

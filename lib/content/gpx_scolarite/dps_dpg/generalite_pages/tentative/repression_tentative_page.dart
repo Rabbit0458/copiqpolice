@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — RÉPRESSION DE LA TENTATIVE
@@ -42,10 +43,18 @@ class RepressionTentativePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La répression de la tentative',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+            "f00002",
+            'La répression de la tentative',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -59,7 +68,11 @@ class RepressionTentativePage extends StatelessWidget {
         children: [
           // En-tête
           Text(
-            'II. La répression',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+              "f00003",
+              'II. La répression',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -68,7 +81,11 @@ class RepressionTentativePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Comment la tentative est-elle punie selon la nature de l’infraction (crime, délit, contravention) ?',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+              "f00004",
+              'Comment la tentative est-elle punie selon la nature de l’infraction (crime, délit, contravention) ?',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 14,
@@ -80,16 +97,30 @@ class RepressionTentativePage extends StatelessWidget {
 
           // Carte principale : art. 121-4 C. pén. et répartition
           _RepressionCard(
-            title: 'Principe de répression (art. 121-4 C. pén.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+              "f00005",
+              'Principe de répression (art. 121-4 C. pén.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: 'La répression de la tentative est définie à '),
                 TextSpan(
-                  text: 'l’art. 121-4 du Code pénal',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+                    "f00006",
+                    'La répression de la tentative est définie à ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+                    "f00007",
+                    'l’art. 121-4 du Code pénal',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     decoration: TextDecoration.underline,
@@ -100,22 +131,42 @@ class RepressionTentativePage extends StatelessWidget {
               SizedBox(height: 12),
 
               // Puces
-              _BulletPoint(text: 'toute tentative de crime est punissable ;'),
               _BulletPoint(
-                text:
-                    'la tentative de délit n’est punissable que dans les cas prévus par la loi ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+                  "f00008",
+                  'toute tentative de crime est punissable ;',
+                ),
               ),
               _BulletPoint(
-                text: 'la tentative de contravention n’est pas punissable.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+                  "f00009",
+                  'la tentative de délit n’est punissable que dans les cas prévus par la loi ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+                  "f00010",
+                  'la tentative de contravention n’est pas punissable.',
+                ),
               ),
 
               SizedBox(height: 14),
               _NotaBox(
-                title: 'À retenir',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+                  "f00011",
+                  'À retenir',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'La peine encourue pour la tentative est la même que celle prévue pour l’infraction consommée.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/tentative/repression_tentative_page.dart",
+                      "f00012",
+                      'La peine encourue pour la tentative est la même que celle prévue pour l’infraction consommée.',
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ],

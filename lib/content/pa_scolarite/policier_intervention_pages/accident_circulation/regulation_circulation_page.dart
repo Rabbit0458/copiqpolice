@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaRegulationCirculationPage extends StatelessWidget {
   const PaRegulationCirculationPage({super.key});
@@ -56,10 +57,18 @@ class PaRegulationCirculationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident de circulation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+            "f00002",
+            "Accident de circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaRegulationCirculationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La régulation de la circulation",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+              "f00003",
+              "La régulation de la circulation",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,37 +99,49 @@ class PaRegulationCirculationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles en rouge)
           _ConditionCard(
-            title: "Base légale",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+              "f00004",
+              "Base légale",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les fonctionnaires de la Police nationale et les policiers adjoints placés sous leur commandement ont le pouvoir de régler la circulation — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                    "f00005",
+                    "Les fonctionnaires de la Police nationale et les policiers adjoints placés sous leur commandement ont le pouvoir de régler la circulation — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 130-10 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                    "f00006",
+                    "article R. 130-10 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les indications données par ces agents prévalent sur toutes signalisations, feux de signalisation ou règles de circulation — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                    "f00007",
+                    "Les indications données par ces agents prévalent sur toutes signalisations, feux de signalisation ou règles de circulation — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 411-28 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                    "f00008",
+                    "article R. 411-28 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -131,10 +156,18 @@ class PaRegulationCirculationPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La régulation de la circulation permet de faciliter l’écoulement du trafic en assurant une progression régulière des véhicules. "
-                "Elle peut être mise en œuvre sur les lieux d’un accident, lors d’un contrôle routier, ou à l’occasion de difficultés ponctuelles de circulation.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00009",
+                      "La régulation de la circulation permet de faciliter l’écoulement du trafic en assurant une progression régulière des véhicules. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00010",
+                      "Elle peut être mise en œuvre sur les lieux d’un accident, lors d’un contrôle routier, ou à l’occasion de difficultés ponctuelles de circulation.",
+                    ),
               ),
             ],
           ),
@@ -143,59 +176,125 @@ class PaRegulationCirculationPage extends StatelessWidget {
 
           // I — Sécurité du policier
           _ConditionCard(
-            title: "I — La sécurité du policier en régulation",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+              "f00011",
+              "I — La sécurité du policier en régulation",
+            ),
             cardColor: cardI,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Comportement de l’automobiliste"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00012",
+                  "A) Comportement de l’automobiliste",
+                ),
+              ),
               _Paragraph(
-                "La fatigue, la monotonie de la conduite, les troubles de santé, les soucis, et l’absorption d’alcool "
-                "sont des causes fréquentes de baisse de vigilance. Sur des trajets courts ou habituels (domicile-travail), "
-                "l’automobiliste peut ne pas voir le policier sur la voie publique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00013",
+                      "La fatigue, la monotonie de la conduite, les troubles de santé, les soucis, et l’absorption d’alcool ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00014",
+                      "sont des causes fréquentes de baisse de vigilance. Sur des trajets courts ou habituels (domicile-travail), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00015",
+                      "l’automobiliste peut ne pas voir le policier sur la voie publique.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La conduite est aussi une activité très automatisée : la vigilance diminue, l’estimation du risque baisse, "
-                "et le conducteur fait moins attention aux signaux.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00016",
+                      "La conduite est aussi une activité très automatisée : la vigilance diminue, l’estimation du risque baisse, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00017",
+                      "et le conducteur fait moins attention aux signaux.",
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("B) Attitude du policier"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00018",
+                  "B) Attitude du policier",
+                ),
+              ),
               _Paragraph(
-                "Pour assurer sa sécurité, le policier doit éviter d’être trop statique. Il adopte une attitude dynamique, "
-                "avec des signaux énergiques et précis, et utilise si nécessaire le sifflet pour capter l’attention.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00019",
+                      "Pour assurer sa sécurité, le policier doit éviter d’être trop statique. Il adopte une attitude dynamique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00020",
+                      "avec des signaux énergiques et précis, et utilise si nécessaire le sifflet pour capter l’attention.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Certaines missions demandent une attention soutenue, notamment aux « points-écoles » (forte présence de piétons/enfants) et la nuit (visibilité réduite, éblouissement).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00021",
+                      "Certaines missions demandent une attention soutenue, notamment aux « points-écoles » (forte présence de piétons/enfants) et la nuit (visibilité réduite, éblouissement).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 14),
 
-              _SubTitle("C) Moyens techniques à mettre en œuvre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00022",
+                  "C) Moyens techniques à mettre en œuvre",
+                ),
+              ),
               _Paragraph(
-                "Le policier qui régule la circulation doit répondre à deux objectifs :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00023",
+                  "Le policier qui régule la circulation doit répondre à deux objectifs :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Il doit VOIR : se placer à l’endroit le plus favorable pour observer l’ensemble des usagers (ex. milieu de l’intersection), anticiper les difficultés et intervenir selon la situation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00024",
+                  "Il doit VOIR : se placer à l’endroit le plus favorable pour observer l’ensemble des usagers (ex. milieu de l’intersection), anticiper les difficultés et intervenir selon la situation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Il doit ÊTRE VU : utiliser les équipements adaptés (sifflet, gants blancs, tenues réfléchissantes, bâtons lumineux…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00025",
+                  "Il doit ÊTRE VU : utiliser les équipements adaptés (sifflet, gants blancs, tenues réfléchissantes, bâtons lumineux…).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Il doit s’équiper des protections individuelles avant de descendre du véhicule.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00026",
+                      "Il doit s’équiper des protections individuelles avant de descendre du véhicule.",
+                    ),
                   ),
                 ],
               ),
@@ -206,83 +305,189 @@ class PaRegulationCirculationPage extends StatelessWidget {
 
           // II — Poste de régulation
           _ConditionCard(
-            title: "II — Le poste de régulation",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+              "f00027",
+              "II — Le poste de régulation",
+            ),
             cardColor: cardII,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le poste est souvent installé à une intersection à forte circulation. Il peut aussi être mis en place "
-                "sur un rétrécissement temporaire, en réalisant une alternance de passage.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00028",
+                      "Le poste est souvent installé à une intersection à forte circulation. Il peut aussi être mis en place ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00029",
+                      "sur un rétrécissement temporaire, en réalisant une alternance de passage.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Principes de base"),
-              _BulletPoint(
-                text:
-                    "Être visible : équipement adapté (vêtements réfléchissants, bâtons lumineux la nuit, etc.).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00030",
+                  "Principes de base",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Port des gants blancs : facilite la compréhension des signaux par les usagers.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00031",
+                  "Être visible : équipement adapté (vêtements réfléchissants, bâtons lumineux la nuit, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Se placer en sécurité : ne pas gêner la progression des véhicules.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00032",
+                  "Port des gants blancs : facilite la compréhension des signaux par les usagers.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Adopter une attitude dynamique et énergique, sans raideur excessive.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00033",
+                  "Se placer en sécurité : ne pas gêner la progression des véhicules.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00034",
+                  "Adopter une attitude dynamique et énergique, sans raideur excessive.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Rôle possible : aide-régulateur"),
-              _IntroBullet(text: "Surveiller le trafic"),
-              _IntroBullet(text: "Intervenir sur les infractions"),
-              _IntroBullet(text: "Renseigner le public"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00035",
+                  "Rôle possible : aide-régulateur",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Arrêter la circulation d’une file sur ordre du régulateur",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00036",
+                  "Surveiller le trafic",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00037",
+                  "Intervenir sur les infractions",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00038",
+                  "Renseigner le public",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00039",
+                  "Arrêter la circulation d’une file sur ordre du régulateur",
+                ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("Mission : priorités & efficacité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00040",
+                  "Mission : priorités & efficacité",
+                ),
+              ),
               _Paragraph(
-                "Les priorités de passage se font de manière alternée. Il convient toutefois d’assurer une priorité "
-                "à l’axe supportant le plus de circulation, tout en évitant des attentes trop longues sur les voies moins desservies.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00041",
+                      "Les priorités de passage se font de manière alternée. Il convient toutefois d’assurer une priorité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00042",
+                      "à l’axe supportant le plus de circulation, tout en évitant des attentes trop longues sur les voies moins desservies.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Durée des cycles",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00043",
+                  "Durée des cycles",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Quand la circulation est dense, adopter un cycle de passage assez long afin de résorber alternativement chacune des files.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00044",
+                      "Quand la circulation est dense, adopter un cycle de passage assez long afin de résorber alternativement chacune des files.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Dégagement d’une intersection",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00045",
+                  "Dégagement d’une intersection",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Donner la priorité à tout conducteur voulant tourner à gauche s’il crée un obstacle au milieu du carrefour. "
-                        "Interdire de s’engager dans l’aire d’une intersection sans possibilité de poursuivre sa route.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                          "f00046",
+                          "Donner la priorité à tout conducteur voulant tourner à gauche s’il crée un obstacle au milieu du carrefour. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                          "f00047",
+                          "Interdire de s’engager dans l’aire d’une intersection sans possibilité de poursuivre sa route.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Choix du véhicule à arrêter",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00048",
+                  "Choix du véhicule à arrêter",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Éviter de couper la circulation sur un poids lourd ou un véhicule peu rapide : sa faible accélération "
-                        "augmente le temps mort et ralentit la progression des autres usagers. Le conducteur doit être prévenu suffisamment tôt "
-                        "pour que la décélération de la file soit progressive.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                          "f00049",
+                          "Éviter de couper la circulation sur un poids lourd ou un véhicule peu rapide : sa faible accélération ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                          "f00050",
+                          "augmente le temps mort et ralentit la progression des autres usagers. Le conducteur doit être prévenu suffisamment tôt ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                          "f00051",
+                          "pour que la décélération de la file soit progressive.",
+                        ),
                   ),
                 ],
               ),
@@ -293,63 +498,148 @@ class PaRegulationCirculationPage extends StatelessWidget {
 
           // III — Signalisation manuelle
           _ConditionCard(
-            title: "III — La signalisation manuelle",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+              "f00052",
+              "III — La signalisation manuelle",
+            ),
             cardColor: cardIII,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les gestes réglementaires exécutés par les agents habilités prévalent sur toute signalisation/feux/règles — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                    "f00053",
+                    "Les gestes réglementaires exécutés par les agents habilités prévalent sur toute signalisation/feux/règles — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 411-28 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                    "f00054",
+                    "article R. 411-28 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Les signaux manuels s’exécutent sans rigidité, mais avec énergie et précision.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00055",
+                  "Les signaux manuels s’exécutent sans rigidité, mais avec énergie et précision.",
+                ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("Signaux de passage — « feu vert »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00056",
+                  "Signaux de passage — « feu vert »",
+                ),
+              ),
               _Paragraph(
-                "L’agent ouvre la voie à un ou plusieurs véhicules en se plaçant parallèlement à leur axe de marche, "
-                "bras tendus horizontalement et latéralement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00057",
+                      "L’agent ouvre la voie à un ou plusieurs véhicules en se plaçant parallèlement à leur axe de marche, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00058",
+                      "bras tendus horizontalement et latéralement.",
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("Signal préparatoire d’arrêt — « feu orange »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00059",
+                  "Signal préparatoire d’arrêt — « feu orange »",
+                ),
+              ),
               _Paragraph(
-                "Le bras droit ou gauche est levé verticalement, légèrement en avant de la tête ; "
-                "la main dans le prolongement de l’avant-bras, doigts tendus et joints. "
-                "L’autre bras reste le long du corps lorsque le geste d’arrêt sur un véhicule repéré n’est pas nécessaire.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00060",
+                      "Le bras droit ou gauche est levé verticalement, légèrement en avant de la tête ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00061",
+                      "la main dans le prolongement de l’avant-bras, doigts tendus et joints. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00062",
+                      "L’autre bras reste le long du corps lorsque le geste d’arrêt sur un véhicule repéré n’est pas nécessaire.",
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("Arrêt — « feu rouge »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00063",
+                  "Arrêt — « feu rouge »",
+                ),
+              ),
               _Paragraph(
-                "L’agent ferme la voie à un ou plusieurs véhicules en se plaçant perpendiculairement à leur axe de marche, "
-                "bras tendus horizontalement et latéralement (ou un seul bras tendu).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00064",
+                      "L’agent ferme la voie à un ou plusieurs véhicules en se plaçant perpendiculairement à leur axe de marche, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00065",
+                      "bras tendus horizontalement et latéralement (ou un seul bras tendu).",
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("Gestes complémentaires (si nécessaire)"),
-              _BulletPoint(text: "PASSEZ (sur mouvement direct)."),
-              _BulletPoint(text: "ACCÉLÉREZ."),
-              _BulletPoint(text: "RALENTISSEZ."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00066",
+                  "Gestes complémentaires (si nécessaire)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00067",
+                  "PASSEZ (sur mouvement direct).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00068",
+                  "ACCÉLÉREZ.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                  "f00069",
+                  "RALENTISSEZ.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ces gestes doivent rester simples, lisibles et immédiatement compréhensibles par les usagers.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart",
+                      "f00070",
+                      "Ces gestes doivent rester simples, lisibles et immédiatement compréhensibles par les usagers.",
+                    ),
                   ),
                 ],
               ),

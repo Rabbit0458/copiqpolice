@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
     extends StatelessWidget {
@@ -62,10 +63,18 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Violences avec arme",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+            "f00002",
+            "Violences avec arme",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -80,7 +89,11 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Violences volontaires avec arme\nsur personne dépositaire / pompier / transport public",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+              "f00003",
+              "Violences volontaires avec arme\nsur personne dépositaire / pompier / transport public",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -92,22 +105,54 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
 
           // Définition (propre + claire)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsqu’elles sont commises en bande organisée ou avec guet-apens, les violences commises avec "
-                "usage ou menace d’une arme sur certaines victimes (personnes dépositaires de l’autorité publique, "
-                "sapeur-pompiers, agents d’un réseau de transport public de voyageurs) dans l’exercice, "
-                "à l’occasion, ou en raison des fonctions/missions, constituent une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00005",
+                      "Lorsqu’elles sont commises en bande organisée ou avec guet-apens, les violences commises avec ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00006",
+                      "usage ou menace d’une arme sur certaines victimes (personnes dépositaires de l’autorité publique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00007",
+                      "sapeur-pompiers, agents d’un réseau de transport public de voyageurs) dans l’exercice, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00008",
+                      "à l’occasion, ou en raison des fonctions/missions, constituent une infraction.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Sont également visées, dans les mêmes conditions, les violences commises à l’encontre du conjoint, "
-                "d’un ascendant, d’un descendant en ligne directe ou de toute autre personne vivant habituellement au "
-                "domicile d’une personne protégée, en raison des fonctions exercées par cette dernière.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00009",
+                      "Sont également visées, dans les mêmes conditions, les violences commises à l’encontre du conjoint, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00010",
+                      "d’un ascendant, d’un descendant en ligne directe ou de toute autre personne vivant habituellement au ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00011",
+                      "domicile d’une personne protégée, en raison des fonctions exercées par cette dernière.",
+                    ),
               ),
             ],
           ),
@@ -116,20 +161,31 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+              "f00012",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00013",
+                    "Article 222-14-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00014",
+                    " : définit et réprime l’infraction.",
                   ),
                 ),
-                TextSpan(text: " : définit et réprime l’infraction."),
               ]),
             ],
           ),
@@ -138,55 +194,105 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle(
-                "A) Une commission en bande organisée ou avec guet-apens",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00016",
+                  "A) Une commission en bande organisée ou avec guet-apens",
+                ),
               ),
-              const _Paragraph(
-                "Les deux conditions sont alternatives : il suffit de l’une ou de l’autre.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00017",
+                  "Les deux conditions sont alternatives : il suffit de l’une ou de l’autre.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
-                TextSpan(text: "• Bande organisée : "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article 132-71 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00018",
+                    "• Bande organisée : ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00019",
+                    "article 132-71 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " — « tout groupement formé ou toute entente établie en vue de la préparation, caractérisée par "
-                      "un ou plusieurs faits matériels, d’une ou de plusieurs infractions » (les violences sont alors préméditées).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                        "f00020",
+                        " — « tout groupement formé ou toute entente établie en vue de la préparation, caractérisée par ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                        "f00021",
+                        "un ou plusieurs faits matériels, d’une ou de plusieurs infractions » (les violences sont alors préméditées).",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "• Guet-apens : fait d’attendre la victime un certain temps, dans un lieu déterminé, "
-                "créant un effet de surprise l’empêchant de se défendre.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00022",
+                      "• Guet-apens : fait d’attendre la victime un certain temps, dans un lieu déterminé, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00023",
+                      "créant un effet de surprise l’empêchant de se défendre.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "B) Des violences commises avec usage ou menace d’une arme",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00024",
+                  "B) Des violences commises avec usage ou menace d’une arme",
+                ),
               ),
-              const _Paragraph(
-                "Les violences doivent être commises avec une arme (arme par nature ou par destination). "
-                "L’usage ou la menace d’une arme suffit.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00025",
+                      "Les violences doivent être commises avec une arme (arme par nature ou par destination). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00026",
+                      "L’usage ou la menace d’une arme suffit.",
+                    ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
                 title: "Rappel",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les violences peuvent être physiques ou psychologiques (au sens large des articles 222-7 et suivants).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00027",
+                      "Les violences peuvent être physiques ou psychologiques (au sens large des articles 222-7 et suivants).",
+                    ),
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       color: isDark ? Colors.white70 : const Color(0xFF3E2723),
@@ -197,89 +303,192 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "C) Une victime particulière (protégée par la loi)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00028",
+                  "C) Une victime particulière (protégée par la loi)",
+                ),
               ),
-              const _Paragraph(
-                "La loi vise expressément certaines victimes. Exemples :",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00029",
+                  "La loi vise expressément certaines victimes. Exemples :",
+                ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Agents de la force publique : fonctionnaires de la police nationale, militaires de la gendarmerie.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00030",
+                  "Agents de la force publique : fonctionnaires de la police nationale, militaires de la gendarmerie.",
+                ),
               ),
-              const _BulletPoint(
-                text: "Membre du personnel de l’administration pénitentiaire.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00031",
+                  "Membre du personnel de l’administration pénitentiaire.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Toute autre personne dépositaire de l’autorité publique (pouvoir de décision/contrainte, par délégation de puissance publique : maires, adjoints, élus délégués…).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00032",
+                  "Toute autre personne dépositaire de l’autorité publique (pouvoir de décision/contrainte, par délégation de puissance publique : maires, adjoints, élus délégués…).",
+                ),
               ),
-              const _BulletPoint(text: "Sapeur-pompier civil ou militaire."),
-              const _BulletPoint(
-                text:
-                    "Agent d’un exploitant de réseau de transport public de voyageurs (ex. RATP, SNCF, ramassage scolaire…).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00033",
+                  "Sapeur-pompier civil ou militaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00034",
+                  "Agent d’un exploitant de réseau de transport public de voyageurs (ex. RATP, SNCF, ramassage scolaire…).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Sont également protégés : le conjoint, l’ascendant, le descendant en ligne directe, "
-                "ou toute personne vivant habituellement au domicile des personnes visées, lorsque les violences "
-                "sont commises en raison des fonctions exercées par la personne protégée.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00035",
+                      "Sont également protégés : le conjoint, l’ascendant, le descendant en ligne directe, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00036",
+                      "ou toute personne vivant habituellement au domicile des personnes visées, lorsque les violences ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00037",
+                      "sont commises en raison des fonctions exercées par la personne protégée.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("D) Un contexte lié aux fonctions / mission"),
-              const _Paragraph("L’infraction doit être commise :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00038",
+                  "D) Un contexte lié aux fonctions / mission",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00039",
+                  "L’infraction doit être commise :",
+                ),
+              ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Dans l’exercice des fonctions (victime en service / en train d’accomplir un acte de ses attributions).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00040",
+                  "Dans l’exercice des fonctions (victime en service / en train d’accomplir un acte de ses attributions).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "À l’occasion des fonctions (en raison d’un acte déterminé lié à la fonction, même antérieur).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00041",
+                  "À l’occasion des fonctions (en raison d’un acte déterminé lié à la fonction, même antérieur).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "En raison des fonctions (l’auteur agit parce qu’il connaît la qualité de la victime et que cette qualité motive l’agression).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00042",
+                  "En raison des fonctions (l’auteur agit parce qu’il connaît la qualité de la victime et que cette qualité motive l’agression).",
+                ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("E) Un résultat dommageable (préjudices)"),
-              const _Paragraph(
-                "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. "
-                "La réalité de cette atteinte doit être établie (souvent par certificat médical).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00043",
+                  "E) Un résultat dommageable (préjudices)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00044",
+                      "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00045",
+                      "La réalité de cette atteinte doit être établie (souvent par certificat médical).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00046",
+                    "Article 222-14-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : distingue quatre types de préjudices selon que les violences ont entraîné :",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00047",
+                    " : distingue quatre types de préjudices selon que les violences ont entraîné :",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "La mort."),
-              const _BulletPoint(
-                text: "Une mutilation ou une infirmité permanente.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00048",
+                  "La mort.",
+                ),
               ),
-              const _BulletPoint(text: "Une ITT > 8 jours."),
-              const _BulletPoint(text: "Une ITT ≤ 8 jours (ou absence d’ITT)."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00049",
+                  "Une mutilation ou une infirmité permanente.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00050",
+                  "Une ITT > 8 jours.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00051",
+                  "Une ITT ≤ 8 jours (ou absence d’ITT).",
+                ),
+              ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "Expertise",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’ITT peut, à la demande de la victime ou de la personne poursuivie, être constatée par un médecin expert.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00052",
+                      "L’ITT peut, à la demande de la victime ou de la personne poursuivie, être constatée par un médecin expert.",
+                    ),
                   ),
                 ],
               ),
@@ -290,21 +499,53 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+              "f00053",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Conscience d’affecter l’intégrité d’autrui"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00054",
+                  "A) Conscience d’affecter l’intégrité d’autrui",
+                ),
+              ),
               _Paragraph(
-                "L’auteur a conscience de commettre un acte de violence qui va affecter l’intégrité physique "
-                "et/ou psychique d’autrui.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00055",
+                      "L’auteur a conscience de commettre un acte de violence qui va affecter l’intégrité physique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00056",
+                      "et/ou psychique d’autrui.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Volonté visant une victime à qualité déterminée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00057",
+                  "B) Volonté visant une victime à qualité déterminée",
+                ),
+              ),
               _Paragraph(
-                "L’auteur veut commettre des violences sur une personne dont la qualité est déterminée "
-                "(qualité protégée par le texte).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00058",
+                      "L’auteur veut commettre des violences sur une personne dont la qualité est déterminée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00059",
+                      "(qualité protégée par le texte).",
+                    ),
               ),
             ],
           ),
@@ -313,13 +554,21 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+              "f00060",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune (le texte incriminant est déjà construit sur des conditions aggravées).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00061",
+                  "Aucune (le texte incriminant est déjà construit sur des conditions aggravées).",
+                ),
               ),
             ],
           ),
@@ -328,119 +577,225 @@ class PaViolencesVolontairesArmePersonneDepositaireTransportPompierPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+              "f00062",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00063",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-1 4° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00064",
+                    "Article 222-14-1 4° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00065",
+                    " (violences ITT 0 à 8 jours) : ",
                   ),
                 ),
-                TextSpan(text: " (violences ITT 0 à 8 jours) : "),
                 TextSpan(
-                  text:
-                      "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00066",
+                    "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-1 3° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00067",
+                    "Article 222-14-1 3° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00068",
+                    " (violences ITT > 8 jours) : ",
                   ),
                 ),
-                TextSpan(text: " (violences ITT > 8 jours) : "),
                 TextSpan(
-                  text: "15 ans de réclusion (période de sûreté).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00069",
+                    "15 ans de réclusion (période de sûreté).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-1 2° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00070",
+                    "Article 222-14-1 2° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00071",
+                    " (mutilation / infirmité permanente) : ",
                   ),
                 ),
-                TextSpan(text: " (mutilation / infirmité permanente) : "),
                 TextSpan(
-                  text: "20 ans de réclusion (période de sûreté).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00072",
+                    "20 ans de réclusion (période de sûreté).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-1 1° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00073",
+                    "Article 222-14-1 1° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00074",
+                    " (mort sans intention de la donner) : ",
                   ),
                 ),
-                TextSpan(text: " (mort sans intention de la donner) : "),
                 TextSpan(
-                  text: "30 ans de réclusion (période de sûreté).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00075",
+                    "30 ans de réclusion (période de sûreté).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00076",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 222-16-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00077",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (amende + peines complémentaires prévues notamment par l’article 131-39 du Code pénal).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00078",
+                    "l’article 222-16-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00079",
+                    " (amende + peines complémentaires prévues notamment par l’article 131-39 du Code pénal).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00080",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : NON (les textes relatifs aux violences délictuelles ne visent pas la tentative).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00081",
+                  "Tentative : NON (les textes relatifs aux violences délictuelles ne visent pas la tentative).",
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                "En matière criminelle, la tentative est théoriquement punissable, mais peut être difficile à établir "
-                "car l’infraction est en partie fonction du résultat qu’elle provoque.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00082",
+                      "En matière criminelle, la tentative est théoriquement punissable, mais peut être difficile à établir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00083",
+                      "car l’infraction est en partie fonction du résultat qu’elle provoque.",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Complicité : OUI."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00084",
+                  "Complicité : OUI.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Punissable conformément aux "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00085",
+                    "Punissable conformément aux ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                    "f00086",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Logique du texte",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                  "f00087",
+                  "Logique du texte",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’infraction pouvant être commise en bande organisée, cela implique souvent plusieurs auteurs ou complices.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart",
+                      "f00088",
+                      "L’infraction pouvant être commise en bande organisée, cela implique souvent plusieurs auteurs ou complices.",
+                    ),
                   ),
                 ],
               ),

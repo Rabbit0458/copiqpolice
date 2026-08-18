@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DocumentInfoSynthetiquePage extends StatelessWidget {
   const DocumentInfoSynthetiquePage({super.key});
@@ -44,10 +45,18 @@ class DocumentInfoSynthetiquePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Violences conjugales",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+            "f00002",
+            "Violences conjugales",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -62,7 +71,11 @@ class DocumentInfoSynthetiquePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Document d’information synthétique",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+              "f00003",
+              "Document d’information synthétique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -78,10 +91,18 @@ class DocumentInfoSynthetiquePage extends StatelessWidget {
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce document permet de remettre à la victime une information claire et immédiatement exploitable "
-                "sur les démarches, les droits et les ressources utiles. Il peut être annexé à la procédure selon les consignes du service.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                      "f00004",
+                      "Ce document permet de remettre à la victime une information claire et immédiatement exploitable ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                      "f00005",
+                      "sur les démarches, les droits et les ressources utiles. Il peut être annexé à la procédure selon les consignes du service.",
+                    ),
               ),
             ],
           ),
@@ -90,19 +111,30 @@ class DocumentInfoSynthetiquePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (si tu veux compléter d’autres articles, mets-les ici)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Information des droits des victimes — "),
                 TextSpan(
-                  text: "article 10-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                    "f00007",
+                    "Information des droits des victimes — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                    "f00008",
+                    "article 10-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -113,22 +145,35 @@ class DocumentInfoSynthetiquePage extends StatelessWidget {
 
           // Utilisation
           _ConditionCard(
-            title: "II — Utilisation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+              "f00009",
+              "II — Utilisation",
+            ),
             cardColor: cardUse,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Remettre à la victime au moment opportun (plainte / audition / MCI selon le cadre).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                  "f00010",
+                  "Remettre à la victime au moment opportun (plainte / audition / MCI selon le cadre).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Expliquer brièvement le contenu : droits, contacts, démarches, accompagnement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                  "f00011",
+                  "Expliquer brièvement le contenu : droits, contacts, démarches, accompagnement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mentionner en procédure la remise du document si requis par les consignes locales.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                  "f00012",
+                  "Mentionner en procédure la remise du document si requis par les consignes locales.",
+                ),
               ),
             ],
           ),
@@ -137,13 +182,21 @@ class DocumentInfoSynthetiquePage extends StatelessWidget {
 
           // Documents (zoom + rotation)
           _ConditionCard(
-            title: "III — Documents (zoom / rotation)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+              "f00013",
+              "III — Documents (zoom / rotation)",
+            ),
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur l’image pour l’ouvrir en plein écran. Tu peux zoomer et tourner.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                  "f00014",
+                  "Appuie sur l’image pour l’ouvrir en plein écran. Tu peux zoomer et tourner.",
+                ),
               ),
               SizedBox(height: 10),
 
@@ -200,7 +253,9 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
-              color: isDark ? Colors.black.withValues(alpha: .18) : Colors.black12,
+              color: isDark
+                  ? Colors.black.withValues(alpha: .18)
+                  : Colors.black12,
               border: Border(bottom: BorderSide(color: border, width: 1)),
             ),
 
@@ -213,12 +268,20 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                 children: [
                   IconButton(
                     onPressed: _rotateLeft,
-                    tooltip: 'Tourner à gauche',
+                    tooltip: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                      "f00015",
+                      'Tourner à gauche',
+                    ),
                     icon: const Icon(Icons.rotate_left_rounded),
                   ),
                   IconButton(
                     onPressed: _rotateRight,
-                    tooltip: 'Tourner à droite',
+                    tooltip: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                      "f00016",
+                      'Tourner à droite',
+                    ),
                     icon: const Icon(Icons.rotate_right_rounded),
                   ),
                   const SizedBox(width: 6),
@@ -226,7 +289,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                     onPressed: _reset,
                     icon: const Icon(Icons.refresh_rounded),
                     label: Text(
-                      "Réinitialiser",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                        "f00017",
+                        "Réinitialiser",
+                      ),
                       style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                     ),
                   ),
@@ -235,7 +302,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                     onPressed: () => _openFullscreen(context),
                     icon: const Icon(Icons.fullscreen_rounded),
                     label: Text(
-                      "Plein écran",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                        "f00018",
+                        "Plein écran",
+                      ),
                       style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                     ),
                   ),
@@ -297,7 +368,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                           IconButton(
                             onPressed: () =>
                                 setLocalState(() => turns = (turns - 1) % 4),
-                            tooltip: 'Tourner à gauche',
+                            tooltip: ScolariteText.value(
+                              "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                              "f00019",
+                              'Tourner à gauche',
+                            ),
                             icon: const Icon(
                               Icons.rotate_left_rounded,
                               color: Colors.white,
@@ -306,7 +381,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                           IconButton(
                             onPressed: () =>
                                 setLocalState(() => turns = (turns + 1) % 4),
-                            tooltip: 'Tourner à droite',
+                            tooltip: ScolariteText.value(
+                              "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                              "f00020",
+                              'Tourner à droite',
+                            ),
                             icon: const Icon(
                               Icons.rotate_right_rounded,
                               color: Colors.white,
@@ -320,7 +399,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                               color: Colors.white,
                             ),
                             label: Text(
-                              "Réinitialiser",
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/pv_apj20/plainte/document_info_synthetique_page.dart",
+                                "f00021",
+                                "Réinitialiser",
+                              ),
                               style: GoogleFonts.fustat(
                                 fontWeight: FontWeight.w900,
                                 color: Colors.white,
@@ -617,9 +700,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

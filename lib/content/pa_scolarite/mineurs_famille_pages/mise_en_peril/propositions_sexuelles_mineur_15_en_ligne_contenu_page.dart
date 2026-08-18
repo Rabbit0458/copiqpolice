@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
   const PaPropositionsSexuellesMineur15EnLignePage({super.key});
@@ -56,10 +57,18 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en péril",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+            "f00002",
+            "Mise en péril",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Propositions sexuelles à un mineur de quinze ans par un moyen de communication électronique",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+              "f00003",
+              "Propositions sexuelles à un mineur de quinze ans par un moyen de communication électronique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour un majeur, de faire des propositions sexuelles à un mineur de quinze ans "
-                "— ou à une personne se présentant comme telle — en utilisant un moyen de communication électronique, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00005",
+                      "Le fait, pour un majeur, de faire des propositions sexuelles à un mineur de quinze ans ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00006",
+                      "— ou à une personne se présentant comme telle — en utilisant un moyen de communication électronique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00007",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -103,22 +132,30 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-22-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00009",
+                    "Article 227-22-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime les propositions sexuelles à un mineur de quinze ans par un moyen de communication électronique.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00010",
+                    " : prévoit et réprime les propositions sexuelles à un mineur de quinze ans par un moyen de communication électronique.",
+                  ),
                 ),
               ]),
             ],
@@ -128,44 +165,98 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un auteur majeur"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00012",
+                  "A) Un auteur majeur",
+                ),
+              ),
               _Paragraph(
-                "L’auteur des faits doit être une personne majeure.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00013",
+                  "L’auteur des faits doit être une personne majeure.",
+                ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "B) Des propositions sexuelles via un moyen de communication électronique",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00014",
+                  "B) Des propositions sexuelles via un moyen de communication électronique",
+                ),
               ),
               _Paragraph(
-                "Cette infraction permet d’incriminer des comportements pouvant conduire à une atteinte sexuelle. "
-                "Les faits se traduisent par des propositions sexuelles explicites : il s’agit de réprimer de manière autonome "
-                "un acte préparatoire ou une tentative d’atteinte sexuelle.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00015",
+                      "Cette infraction permet d’incriminer des comportements pouvant conduire à une atteinte sexuelle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00016",
+                      "Les faits se traduisent par des propositions sexuelles explicites : il s’agit de réprimer de manière autonome ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00017",
+                      "un acte préparatoire ou une tentative d’atteinte sexuelle.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Moyen visé",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00018",
+                  "Moyen visé",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les propositions doivent être effectuées via un moyen de communication électronique (notamment Internet), "
-                        "souvent utilisé pour établir un contact puis organiser une rencontre.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                          "f00019",
+                          "Les propositions doivent être effectuées via un moyen de communication électronique (notamment Internet), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                          "f00020",
+                          "souvent utilisé pour établir un contact puis organiser une rencontre.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "C) Une victime mineure de quinze ans ou se présentant comme telle",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00021",
+                  "C) Une victime mineure de quinze ans ou se présentant comme telle",
+                ),
               ),
               _Paragraph(
-                "Les propositions doivent être adressées à un mineur de quinze ans ou à une personne se présentant comme telle. "
-                "Il suffit donc que l’auteur ait cru être en présence d’un mineur de quinze ans.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00022",
+                      "Les propositions doivent être adressées à un mineur de quinze ans ou à une personne se présentant comme telle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00023",
+                      "Il suffit donc que l’auteur ait cru être en présence d’un mineur de quinze ans.",
+                    ),
               ),
             ],
           ),
@@ -174,15 +265,31 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+              "f00024",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : l’élément moral résulte de la volonté de l’auteur "
-                "de faire des propositions sexuelles via un moyen de communication électronique "
-                "à une personne qu’il sait ou suppose être âgée de moins de quinze ans.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00025",
+                      "Il s’agit d’une infraction intentionnelle : l’élément moral résulte de la volonté de l’auteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00026",
+                      "de faire des propositions sexuelles via un moyen de communication électronique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                      "f00027",
+                      "à une personne qu’il sait ou suppose être âgée de moins de quinze ans.",
+                    ),
               ),
             ],
           ),
@@ -191,22 +298,30 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+              "f00028",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-22-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00029",
+                    "Article 227-22-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque les propositions ont été suivies d’une rencontre.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00030",
+                    " : lorsque les propositions ont été suivies d’une rencontre.",
+                  ),
                 ),
               ]),
             ],
@@ -216,73 +331,140 @@ class PaPropositionsSexuellesMineur15EnLignePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+              "f00031",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00032",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00033",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-22-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00034",
+                    "2 ans d’emprisonnement et 30 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00035",
+                    "article 227-22-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée (rencontre) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00036",
+                    "Qualification aggravée (rencontre) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-22-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00037",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00038",
+                    "article 227-22-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00039",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 227-28-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00040",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00041",
+                    "l’article 227-28-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00042",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                  "f00043",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00044",
+                    "Complicité : OUI — conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00045",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart",
+                    "f00046",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],

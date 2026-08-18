@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ResponsabilitePenaleContenuPage extends StatelessWidget {
   const ResponsabilitePenaleContenuPage({super.key});
@@ -25,10 +26,18 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Responsabilité pénale",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+            "f00002",
+            "Responsabilité pénale",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Responsabilité pénale",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00003",
+              "Responsabilité pénale",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,9 +66,21 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Étudiez les fondements de la responsabilité pénale : principes généraux, "
-            "complicité et coaction, responsabilité des personnes morales ainsi que "
-            "les causes d’irresponsabilité ou d’atténuation.",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+                  "f00004",
+                  "Étudiez les fondements de la responsabilité pénale : principes généraux, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+                  "f00005",
+                  "complicité et coaction, responsabilité des personnes morales ainsi que ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+                  "f00006",
+                  "les causes d’irresponsabilité ou d’atténuation.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -69,9 +94,16 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
           // ================= MODULE 1 =================
           _ModuleCard(
             tag: 'dpg_responsabilite_penale_principes_generaux',
-            title: "Principes généraux de la responsabilité pénale",
-            subtitle:
-                "Fondements, conditions et logique générale de l’imputabilité pénale.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00007",
+              "Principes généraux de la responsabilité pénale",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00008",
+              "Fondements, conditions et logique générale de l’imputabilité pénale.",
+            ),
             imagePath: 'assets/images/cat_bases_juridiques.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -85,9 +117,16 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
           // ================= MODULE 2 =================
           _ModuleCard(
             tag: 'dpg_responsabilite_penale_complicite_coaction',
-            title: "La complicité et la coaction",
-            subtitle:
-                "Aide, assistance, provocation et participation à l’infraction.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00009",
+              "La complicité et la coaction",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00010",
+              "Aide, assistance, provocation et participation à l’infraction.",
+            ),
             imagePath: 'assets/images/complicite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -101,9 +140,16 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
           // ================= MODULE 3 =================
           _ModuleCard(
             tag: 'dpg_responsabilite_penale_personnes_morales',
-            title: "La responsabilité pénale des personnes morales",
-            subtitle:
-                "Conditions d’engagement et spécificités de la responsabilité des personnes morales.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00011",
+              "La responsabilité pénale des personnes morales",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00012",
+              "Conditions d’engagement et spécificités de la responsabilité des personnes morales.",
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -117,10 +163,16 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
           // ================= MODULE 4 =================
           _ModuleCard(
             tag: 'dpg_responsabilite_penale_irresponsabilite_attenuation',
-            title:
-                "Les causes d’irresponsabilité ou d’atténuation de la responsabilité",
-            subtitle:
-                "Troubles psychiques, contrainte, erreur, minorité et causes légales.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00013",
+              "Les causes d’irresponsabilité ou d’atténuation de la responsabilité",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00014",
+              "Troubles psychiques, contrainte, erreur, minorité et causes légales.",
+            ),
             imagePath: 'assets/images/defaut_permis.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -134,9 +186,16 @@ class ResponsabilitePenaleContenuPage extends StatelessWidget {
           // ================= MODULE 7 — QUIZ =================
           _ModuleCard(
             tag: 'responsabilite_penal_general',
-            title: 'Quiz — Responsabilité pénale',
-            subtitle:
-                'Testez votre maîtrise des principes fondamentaux et des notions clés des responsabilité pénale.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00015",
+              'Quiz — Responsabilité pénale',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_contenu.dart",
+              "f00016",
+              'Testez votre maîtrise des principes fondamentaux et des notions clés des responsabilité pénale.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
   const EnquetePreliminaireConstatationsRequisitionsPage({super.key});
@@ -30,10 +31,18 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Constatations & réquisitions',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+            "f00002",
+            'Constatations & réquisitions',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,8 +58,16 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            '2.3 — Les actes de l’enquête préliminaire\n'
-            'Constatations, réquisitions et prélèvements',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00003",
+                  '2.3 — Les actes de l’enquête préliminaire\n',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00004",
+                  'Constatations, réquisitions et prélèvements',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -60,33 +77,61 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO ----------------------------
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'Dans le cadre de l’enquête préliminaire, les officiers de police judiciaire (O.P.J.) '
-                  'et, sous leur contrôle, les agents de police judiciaire (A.P.J.) disposent d’une large '
-                  'palette d’actes : saisine, transport sur les lieux, constatations, réquisitions, '
-                  'prélèvements et relevés signalétiques. ',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00005",
+                    'Dans le cadre de l’enquête préliminaire, les officiers de police judiciaire (O.P.J.) ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00006",
+                    'et, sous leur contrôle, les agents de police judiciaire (A.P.J.) disposent d’une large ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00007",
+                    'palette d’actes : saisine, transport sur les lieux, constatations, réquisitions, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00008",
+                    'prélèvements et relevés signalétiques. ',
+                  ),
             ),
             TextSpan(
-              text:
-                  'Ces actes demeurent encadrés par le code de procédure pénale afin de concilier efficacité de l’enquête et protection des libertés individuelles.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                "f00009",
+                'Ces actes demeurent encadrés par le code de procédure pénale afin de concilier efficacité de l’enquête et protection des libertés individuelles.',
+              ),
               style: TextStyle(fontStyle: FontStyle.italic),
             ),
           ]),
           const SizedBox(height: 12),
 
-          const _IntroBullet(
-            text:
-                'Le procès-verbal de saisine ouvre concrètement l’enquête préliminaire.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00010",
+              'Le procès-verbal de saisine ouvre concrètement l’enquête préliminaire.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Les constatations et réquisitions permettent de rechercher la vérité en s’appuyant sur des examens techniques, scientifiques ou documentaires.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00011",
+              'Les constatations et réquisitions permettent de rechercher la vérité en s’appuyant sur des examens techniques, scientifiques ou documentaires.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Les prélèvements externes et relevés signalétiques complètent ces opérations en identifiant les personnes mises en cause.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00012",
+              'Les prélèvements externes et relevés signalétiques complètent ces opérations en identifiant les personnes mises en cause.',
+            ),
           ),
           const SizedBox(height: 22),
 
@@ -95,37 +140,105 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // (rappel synthétique pour situer les constatations)
           // =======================================================
           _ConditionCard(
-            title: '2.3.1 – La saisine & 2.3.2 – Le transport sur les lieux',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00013",
+              '2.3.1 – La saisine & 2.3.2 – Le transport sur les lieux',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
-              _SubTitle('2.3.1 – La saisine'),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00014",
+                  '2.3.1 – La saisine',
+                ),
+              ),
               _Paragraph(
-                'Le procès-verbal de saisine est le plus souvent ouvert :\n'
-                '• à l’initiative de l’O.P.J., ou sous le contrôle de celui-ci, de l’A.P.J. ;\n'
-                '• sur instructions écrites ou verbales du procureur de la République (art. 75 C.P.P.) ;\n'
-                '• à la suite d’une plainte ou d’une dénonciation (art. 17 C.P.P.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00015",
+                      'Le procès-verbal de saisine est le plus souvent ouvert :\n',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00016",
+                      '• à l’initiative de l’O.P.J., ou sous le contrôle de celui-ci, de l’A.P.J. ;\n',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00017",
+                      '• sur instructions écrites ou verbales du procureur de la République (art. 75 C.P.P.) ;\n',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00018",
+                      '• à la suite d’une plainte ou d’une dénonciation (art. 17 C.P.P.).',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'À compter de ce premier procès-verbal, l’enquête préliminaire est formellement ouverte. '
-                'L’O.P.J. dirige les premières investigations et rend compte au procureur des suites données.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00019",
+                      'À compter de ce premier procès-verbal, l’enquête préliminaire est formellement ouverte. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00020",
+                      'L’O.P.J. dirige les premières investigations et rend compte au procureur des suites données.',
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle('2.3.2 – Le transport sur les lieux'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00021",
+                  '2.3.2 – Le transport sur les lieux',
+                ),
+              ),
               _Paragraph(
-                'Le code de procédure pénale ne décrit pas spécifiquement le transport sur les lieux en matière '
-                'd’enquête préliminaire. Les enquêteurs conservent pourtant la faculté de se rendre sur place '
-                'pour effectuer les premières constatations utiles.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00022",
+                      'Le code de procédure pénale ne décrit pas spécifiquement le transport sur les lieux en matière ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00023",
+                      'd’enquête préliminaire. Les enquêteurs conservent pourtant la faculté de se rendre sur place ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00024",
+                      'pour effectuer les premières constatations utiles.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Lorsque les lieux sont privés, l’introduction dans ceux-ci est subordonnée à l’autorisation '
-                'expresse de l’occupant habituel ou de son représentant. Cette autorisation est verbale mais '
-                'doit être consignée dans la procédure. Elle ne doit pas être confondue avec l’assentiment '
-                'exprès et écrit exigé en matière de perquisition ou de saisie de pièces à conviction.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00025",
+                      'Lorsque les lieux sont privés, l’introduction dans ceux-ci est subordonnée à l’autorisation ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00026",
+                      'expresse de l’occupant habituel ou de son représentant. Cette autorisation est verbale mais ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00027",
+                      'doit être consignée dans la procédure. Elle ne doit pas être confondue avec l’assentiment ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00028",
+                      'exprès et écrit exigé en matière de perquisition ou de saisie de pièces à conviction.',
+                    ),
               ),
             ],
           ),
@@ -136,32 +249,65 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3 – LES CONSTATATIONS ET RÉQUISITIONS
           // =======================================================
           _ConditionCard(
-            title: '2.3.3 – Les constatations et réquisitions',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00029",
+              '2.3.3 – Les constatations et réquisitions',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les constatations regroupent l’ensemble des opérations d’examen des lieux, objets, documents '
-                'ou personnes, destinées à conserver les traces et indices utiles à la manifestation de la vérité. '
-                'Elles peuvent s’accompagner de réquisitions, qui permettent à l’autorité judiciaire ou à l’O.P.J. '
-                'de solliciter l’intervention de personnes ou organismes extérieurs (médecins, experts, opérateurs, '
-                'banques, administrations, etc.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00030",
+                      'Les constatations regroupent l’ensemble des opérations d’examen des lieux, objets, documents ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00031",
+                      'ou personnes, destinées à conserver les traces et indices utiles à la manifestation de la vérité. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00032",
+                      'Elles peuvent s’accompagner de réquisitions, qui permettent à l’autorité judiciaire ou à l’O.P.J. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00033",
+                      'de solliciter l’intervention de personnes ou organismes extérieurs (médecins, experts, opérateurs, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00034",
+                      'banques, administrations, etc.).',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les constatations et réquisitions en enquête préliminaire sont principalement encadrées par les articles ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00035",
+                    'Les constatations et réquisitions en enquête préliminaire sont principalement encadrées par les articles ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      '77-1 à 77-1-4, 60, 60-1, 60-2, 60-3, 230-28 et suivants, 230-32 à 230-44 du C.P.P., ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00036",
+                    '77-1 à 77-1-4, 60, 60-1, 60-2, 60-3, 230-28 et suivants, 230-32 à 230-44 du C.P.P., ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
-                  text:
-                      'ainsi que par les dispositions relatives aux données de connexion et à la géolocalisation.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00037",
+                    'ainsi que par les dispositions relatives aux données de connexion et à la géolocalisation.',
+                  ),
                 ),
               ]),
             ],
@@ -173,39 +319,86 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.1 – LES RÉQUISITIONS JUDICIAIRES (ART. 77-1 C.P.P.)
           // =======================================================
           _ConditionCard(
-            title: '2.3.3.1 – Les réquisitions judiciaires (art. 77-1 C.P.P.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00038",
+              '2.3.3.1 – Les réquisitions judiciaires (art. 77-1 C.P.P.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les constatations ne sont évoquées qu’indirectement par l’article 77-1 du C.P.P. qui dispose que : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00039",
+                    'Les constatations ne sont évoquées qu’indirectement par l’article 77-1 du C.P.P. qui dispose que : ',
+                  ),
                 ),
                 TextSpan(
                   text:
-                      '“S’il y a lieu de procéder à des constatations ou à des examens techniques ou scientifiques, '
-                      'le procureur de la République, ou, sur autorisation de celui-ci, l’officier ou l’agent de police '
-                      'judiciaire ou, sous le contrôle de ces derniers, l’assistant d’enquête, a recours à toutes personnes qualifiées.”',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                        "f00040",
+                        '“S’il y a lieu de procéder à des constatations ou à des examens techniques ou scientifiques, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                        "f00041",
+                        'le procureur de la République, ou, sur autorisation de celui-ci, l’officier ou l’agent de police ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                        "f00042",
+                        'judiciaire ou, sous le contrôle de ces derniers, l’assistant d’enquête, a recours à toutes personnes qualifiées.”',
+                      ),
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                'Les dispositions des quatre derniers alinéas de l’article 60 sont applicables : la personne requise '
-                'intervient sous serment, à charge pour elle de déposer un rapport détaillé et d’apposer sa signature '
-                'sur les scellés le cas échéant.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00043",
+                      'Les dispositions des quatre derniers alinéas de l’article 60 sont applicables : la personne requise ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00044",
+                      'intervient sous serment, à charge pour elle de déposer un rapport détaillé et d’apposer sa signature ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00045",
+                      'sur les scellés le cas échéant.',
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Objectif du dispositif',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00046",
+                  'Objectif du dispositif',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le législateur a souhaité encadrer les nombreuses réquisitions d’examens ou d’expertises en '
-                        'matière de petites infractions, en rappelant que seules les opérations réellement nécessaires '
-                        'à la manifestation de la vérité doivent être ordonnées.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00047",
+                          'Le législateur a souhaité encadrer les nombreuses réquisitions d’examens ou d’expertises en ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00048",
+                          'matière de petites infractions, en rappelant que seules les opérations réellement nécessaires ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00049",
+                          'à la manifestation de la vérité doivent être ordonnées.',
+                        ),
                   ),
                 ],
               ),
@@ -218,39 +411,94 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.1.1 – RÉQUISITIONS À PERSONNES QUALIFIÉES
           // =======================================================
           _ConditionCard(
-            title:
-                '2.3.3.1.1 – Les réquisitions à personnes qualifiées (art. 77-1 & 60 C.P.P.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00050",
+              '2.3.3.1.1 – Les réquisitions à personnes qualifiées (art. 77-1 & 60 C.P.P.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le procureur de la République peut, par la voie d’instructions générales prises en application '
-                'de l’article 39-3, autoriser les O.P.J. et, sous leur contrôle, les A.P.J. ou assistants d’enquête, '
-                'à requérir toutes personnes qualifiées afin d’effectuer des examens techniques ou scientifiques : '
-                'médecins, psychologues, techniciens, experts, services de police technique et scientifique, etc.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00051",
+                      'Le procureur de la République peut, par la voie d’instructions générales prises en application ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00052",
+                      'de l’article 39-3, autoriser les O.P.J. et, sous leur contrôle, les A.P.J. ou assistants d’enquête, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00053",
+                      'à requérir toutes personnes qualifiées afin d’effectuer des examens techniques ou scientifiques : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00054",
+                      'médecins, psychologues, techniciens, experts, services de police technique et scientifique, etc.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'Examens ou constatations sur la victime ou la personne mise en cause (traumatologie, alcoolémie, '
-                    'toxicologie, examens psychologiques…).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00055",
+                      'Examens ou constatations sur la victime ou la personne mise en cause (traumatologie, alcoolémie, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00056",
+                      'toxicologie, examens psychologiques…).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Examens médicaux ou psychologiques demandés à la victime d’infractions graves, notamment celles visées '
-                    'à l’article 706-47 ou réalisées dans le cadre de l’article 706-115 C.P.P.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00057",
+                      'Examens médicaux ou psychologiques demandés à la victime d’infractions graves, notamment celles visées ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00058",
+                      'à l’article 706-47 ou réalisées dans le cadre de l’article 706-115 C.P.P.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: 'Jurisprudence',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00059",
+                  'Jurisprudence',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La mission confiée en application de l’article 77-1 du C.P.P. à une “personne qualifiée” ne peut pas '
-                        'dégénérer en véritable expertise judiciaire cachée. Lorsque les investigations requises dépassent la '
-                        'simple constatation technique pour emporter une analyse approfondie, il convient de recourir au régime '
-                        'de l’expertise contradictoire.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00060",
+                          'La mission confiée en application de l’article 77-1 du C.P.P. à une “personne qualifiée” ne peut pas ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00061",
+                          'dégénérer en véritable expertise judiciaire cachée. Lorsque les investigations requises dépassent la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00062",
+                          'simple constatation technique pour emporter une analyse approfondie, il convient de recourir au régime ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00063",
+                          'de l’expertise contradictoire.',
+                        ),
                   ),
                 ],
               ),
@@ -263,36 +511,79 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.1.2 – RÉQUISITIONS D’ORDRE GÉNÉRAL
           // =======================================================
           _ConditionCard(
-            title:
-                '2.3.3.1.2 – Les réquisitions d’ordre général (art. 77-1-1 C.P.P.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00064",
+              '2.3.3.1.2 – Les réquisitions d’ordre général (art. 77-1-1 C.P.P.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le procureur de la République ou, sur son autorisation, l’O.P.J. ou l’A.P.J. peut adresser des réquisitions '
-                'd’ordre général à toute personne, service ou organisme, public ou privé, pour la remise d’informations ou de '
-                'documents utiles à l’enquête : enregistrements de vidéo-protection, images, listes de salariés ou d’usagers, '
-                'contrats, données administratives, etc.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00065",
+                      'Le procureur de la République ou, sur son autorisation, l’O.P.J. ou l’A.P.J. peut adresser des réquisitions ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00066",
+                      'd’ordre général à toute personne, service ou organisme, public ou privé, pour la remise d’informations ou de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00067",
+                      'documents utiles à l’enquête : enregistrements de vidéo-protection, images, listes de salariés ou d’usagers, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00068",
+                      'contrats, données administratives, etc.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'Les réquisitions peuvent viser, par exemple, des établissements bancaires, des sociétés de transport, '
-                    'des employeurs, des collectivités, des organismes sociaux ou des sociétés privées.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00069",
+                      'Les réquisitions peuvent viser, par exemple, des établissements bancaires, des sociétés de transport, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00070",
+                      'des employeurs, des collectivités, des organismes sociaux ou des sociétés privées.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Le secret professionnel ne peut être opposé que lorsqu’il est directement et légalement protégé '
-                    '(avocats, médecins, journalistes pour la protection des sources, etc.).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00071",
+                      'Le secret professionnel ne peut être opposé que lorsqu’il est directement et légalement protégé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00072",
+                      '(avocats, médecins, journalistes pour la protection des sources, etc.).',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le refus injustifié de déférer à une réquisition régulièrement formulée est susceptible de constituer '
-                        'l’infraction prévue par l’article R. 642-1 du code pénal.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00073",
+                          'Le refus injustifié de déférer à une réquisition régulièrement formulée est susceptible de constituer ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00074",
+                          'l’infraction prévue par l’article R. 642-1 du code pénal.',
+                        ),
                   ),
                 ],
               ),
@@ -305,53 +596,115 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.1.3 – DONNÉES DE CONNEXION
           // =======================================================
           _ConditionCard(
-            title:
-                '2.3.3.1.3 – Réquisitions portant sur les données de connexion (art. 77-1-2 & 77-1-3 C.P.P.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00075",
+              '2.3.3.1.3 – Réquisitions portant sur les données de connexion (art. 77-1-2 & 77-1-3 C.P.P.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les réquisitions visant les données de connexion ne peuvent être effectuées que si l’enquête porte sur un crime ou sur un délit puni ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00076",
+                    'Les réquisitions visant les données de connexion ne peuvent être effectuées que si l’enquête porte sur un crime ou sur un délit puni ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'd’au moins trois ans d’emprisonnement, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                    "f00077",
+                    'd’au moins trois ans d’emprisonnement, ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
                   text:
-                      'ou dans certaines hypothèses particulières (entraîde pénale internationale, disparition inquiétante, '
-                      'criminalité grave, etc.).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                        "f00078",
+                        'ou dans certaines hypothèses particulières (entraîde pénale internationale, disparition inquiétante, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                        "f00079",
+                        'criminalité grave, etc.).',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'Données techniques permettant d’identifier la source de la connexion ou les équipements terminaux utilisés '
-                    '(adresse IP, identifiant de connexion, numéro de téléphone, données de facturation, etc.).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00080",
+                      'Données techniques permettant d’identifier la source de la connexion ou les équipements terminaux utilisés ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00081",
+                      '(adresse IP, identifiant de connexion, numéro de téléphone, données de facturation, etc.).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Données de trafic et de localisation, permettant de reconstituer le parcours d’une communication ou les '
-                    'déplacements d’un appareil.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00082",
+                      'Données de trafic et de localisation, permettant de reconstituer le parcours d’une communication ou les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00083",
+                      'déplacements d’un appareil.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Ces données sont détenues par les fournisseurs d’accès à Internet, les hébergeurs de contenus en ligne ou les '
-                'opérateurs de communications électroniques. La Cour de cassation, à la suite de décisions européennes, a insisté '
-                'sur la nécessité d’un contrôle renforcé du recours à ces réquisitions, compte tenu de l’atteinte portée à la vie privée.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00084",
+                      'Ces données sont détenues par les fournisseurs d’accès à Internet, les hébergeurs de contenus en ligne ou les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00085",
+                      'opérateurs de communications électroniques. La Cour de cassation, à la suite de décisions européennes, a insisté ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00086",
+                      'sur la nécessité d’un contrôle renforcé du recours à ces réquisitions, compte tenu de l’atteinte portée à la vie privée.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: 'Contrôle de proportionnalité',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00087",
+                  'Contrôle de proportionnalité',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le juge doit vérifier, en cas de contestation, que la réquisition de données de connexion était justifiée '
-                        'par la gravité des faits, la complexité de l’enquête et l’existence d’indices sérieux, et qu’elle ne portait '
-                        'pas atteinte de façon disproportionnée aux droits fondamentaux.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00088",
+                          'Le juge doit vérifier, en cas de contestation, que la réquisition de données de connexion était justifiée ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00089",
+                          'par la gravité des faits, la complexité de l’enquête et l’existence d’indices sérieux, et qu’elle ne portait ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00090",
+                          'pas atteinte de façon disproportionnée aux droits fondamentaux.',
+                        ),
                   ),
                 ],
               ),
@@ -364,37 +717,84 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.1.4 – RÉQUISITIONS INFORMATIQUES OU TÉLÉPHONIQUES
           // =======================================================
           _ConditionCard(
-            title:
-                '2.3.3.1.4 – Les réquisitions informatiques ou téléphoniques',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00091",
+              '2.3.3.1.4 – Les réquisitions informatiques ou téléphoniques',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Sur autorisation du procureur de la République, l’O.P.J. ou l’A.P.J. peut requérir des organismes publics ou des '
-                'personnes morales de droit privé la mise à disposition d’informations utiles conservées dans des systèmes '
-                'informatiques : historique de connexions, contenus de comptes, données techniques, enregistrements de vidéosurveillance, etc.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00092",
+                      'Sur autorisation du procureur de la République, l’O.P.J. ou l’A.P.J. peut requérir des organismes publics ou des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00093",
+                      'personnes morales de droit privé la mise à disposition d’informations utiles conservées dans des systèmes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00094",
+                      'informatiques : historique de connexions, contenus de comptes, données techniques, enregistrements de vidéosurveillance, etc.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'Les limitations de l’article 60-1-2 du C.P.P. s’appliquent, notamment pour les données de connexion et les '
-                    'données sensibles relatives à la vie privée.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00095",
+                      'Les limitations de l’article 60-1-2 du C.P.P. s’appliquent, notamment pour les données de connexion et les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00096",
+                      'données sensibles relatives à la vie privée.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Les services de police technique et scientifique peuvent être réquisitionnés directement pour procéder '
-                    'aux extractions et analyses, sans qu’il soit nécessaire d’établir une réquisition distincte pour chaque agent intervenant.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00097",
+                      'Les services de police technique et scientifique peuvent être réquisitionnés directement pour procéder ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00098",
+                      'aux extractions et analyses, sans qu’il soit nécessaire d’établir une réquisition distincte pour chaque agent intervenant.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: 'Refus de déférer',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00099",
+                  'Refus de déférer',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le refus, sans motif légitime, de répondre à ces réquisitions est sanctionné. À l’inverse, les personnes ou '
-                        'organismes bénéficiant d’un secret spécialement protégé par la loi peuvent opposer ce secret lorsque les '
-                        'demandes d’informations le mettraient gravement en péril.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00100",
+                          'Le refus, sans motif légitime, de répondre à ces réquisitions est sanctionné. À l’inverse, les personnes ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00101",
+                          'organismes bénéficiant d’un secret spécialement protégé par la loi peuvent opposer ce secret lorsque les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00102",
+                          'demandes d’informations le mettraient gravement en péril.',
+                        ),
                   ),
                 ],
               ),
@@ -407,35 +807,78 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.1.5 – RÉQUISITIONS AUX FINS D’AUTOPSIE
           // =======================================================
           _ConditionCard(
-            title: '2.3.3.1.5 – Les réquisitions aux fins d’autopsie',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00103",
+              '2.3.3.1.5 – Les réquisitions aux fins d’autopsie',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’article 230-28 du C.P.P. prévoit que, dans le cadre d’une enquête préliminaire, une autopsie peut être '
-                'ordonnée lorsque les circonstances du décès apparaissent suspectes ou lorsque la cause de la mort doit être '
-                'déterminée avec précision. L’O.P.J. agit alors sur réquisitions écrites du procureur de la République.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00104",
+                      'L’article 230-28 du C.P.P. prévoit que, dans le cadre d’une enquête préliminaire, une autopsie peut être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00105",
+                      'ordonnée lorsque les circonstances du décès apparaissent suspectes ou lorsque la cause de la mort doit être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00106",
+                      'déterminée avec précision. L’O.P.J. agit alors sur réquisitions écrites du procureur de la République.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    'Seul un médecin qualifié en médecine légale, titulaire des titres requis, peut être désigné pour pratiquer une autopsie judiciaire.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00107",
+                  'Seul un médecin qualifié en médecine légale, titulaire des titres requis, peut être désigné pour pratiquer une autopsie judiciaire.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Les prélèvements effectués lors de l’autopsie (sang, organes, fragments biologiques) sont placés sous scellés et peuvent '
-                    'donner lieu à des analyses complémentaires ou à une contre-expertise.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00108",
+                      'Les prélèvements effectués lors de l’autopsie (sang, organes, fragments biologiques) sont placés sous scellés et peuvent ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00109",
+                      'donner lieu à des analyses complémentaires ou à une contre-expertise.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: 'Information des proches',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00110",
+                  'Information des proches',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Sous réserve des nécessités de l’enquête, la famille ou les proches du défunt sont informés de la '
-                        'réalisation de l’autopsie et de la restitution ultérieure du corps. La conservation prolongée du corps '
-                        'ou de certaines pièces n’est admise que si elle est indispensable à la manifestation de la vérité.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00111",
+                          'Sous réserve des nécessités de l’enquête, la famille ou les proches du défunt sont informés de la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00112",
+                          'réalisation de l’autopsie et de la restitution ultérieure du corps. La conservation prolongée du corps ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00113",
+                          'ou de certaines pièces n’est admise que si elle est indispensable à la manifestation de la vérité.',
+                        ),
                   ),
                 ],
               ),
@@ -448,57 +891,135 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.1.6 – GÉOLOCALISATION EN TEMPS RÉEL
           // =======================================================
           _ConditionCard(
-            title:
-                '2.3.3.1.6 – La géolocalisation en temps réel (art. 230-32 à 230-44 C.P.P.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00114",
+              '2.3.3.1.6 – La géolocalisation en temps réel (art. 230-32 à 230-44 C.P.P.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Des réquisitions peuvent être établies afin de suivre, en temps réel et à son insu ou avec son consentement, '
-                'les déplacements d’une personne, d’un véhicule ou d’un objet au moyen d’un dispositif de géolocalisation ou '
-                'du système intégré d’un terminal (téléphone, boîtier GPS embarqué, etc.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00115",
+                      'Des réquisitions peuvent être établies afin de suivre, en temps réel et à son insu ou avec son consentement, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00116",
+                      'les déplacements d’une personne, d’un véhicule ou d’un objet au moyen d’un dispositif de géolocalisation ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00117",
+                      'du système intégré d’un terminal (téléphone, boîtier GPS embarqué, etc.).',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'La mesure ne peut être utilisée que pour les crimes et délits punis d’au moins trois ans d’emprisonnement, '
-                    'lorsque les nécessités de l’enquête l’exigent.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00118",
+                      'La mesure ne peut être utilisée que pour les crimes et délits punis d’au moins trois ans d’emprisonnement, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00119",
+                      'lorsque les nécessités de l’enquête l’exigent.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'En enquête préliminaire, l’autorisation initiale appartient au procureur de la République pour une durée '
-                    'limitée (8 jours pour le droit commun, 15 jours pour certaines infractions graves), renouvelable sous le contrôle du J.L.D.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00120",
+                      'En enquête préliminaire, l’autorisation initiale appartient au procureur de la République pour une durée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00121",
+                      'limitée (8 jours pour le droit commun, 15 jours pour certaines infractions graves), renouvelable sous le contrôle du J.L.D.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'L’introduction dans un domicile pour installer ou retirer un dispositif de géolocalisation suppose une '
-                    'ordonnance écrite et motivée du juge des libertés et de la détention.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00122",
+                      'L’introduction dans un domicile pour installer ou retirer un dispositif de géolocalisation suppose une ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00123",
+                      'ordonnance écrite et motivée du juge des libertés et de la détention.',
+                    ),
               ),
               SizedBox(height: 10),
               _ExempleBox(
-                title:
-                    'Tableau de synthèse – Mise en œuvre de la géolocalisation',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00124",
+                  'Tableau de synthèse – Mise en œuvre de la géolocalisation',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Champ d’application : crimes et délits punis d’au moins 3 ans ; toute personne ou tout objet, même à son insu. '
-                        'Décision initiale : procureur de la République ; renouvellements : J.L.D. pour des périodes d’un mois renouvelables '
-                        'dans la limite d’un an pour le droit commun (ou de deux ans pour certaines infractions de criminalité organisée). '
-                        'Activation à distance d’un appareil électronique : réservée aux infractions les plus graves, sur autorisation écrite '
-                        'et motivée du J.L.D., sans possibilité de viser certaines catégories protégées (avocat, magistrat, journaliste, parlementaire…).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00125",
+                          'Champ d’application : crimes et délits punis d’au moins 3 ans ; toute personne ou tout objet, même à son insu. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00126",
+                          'Décision initiale : procureur de la République ; renouvellements : J.L.D. pour des périodes d’un mois renouvelables ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00127",
+                          'dans la limite d’un an pour le droit commun (ou de deux ans pour certaines infractions de criminalité organisée). ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00128",
+                          'Activation à distance d’un appareil électronique : réservée aux infractions les plus graves, sur autorisation écrite ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00129",
+                          'et motivée du J.L.D., sans possibilité de viser certaines catégories protégées (avocat, magistrat, journaliste, parlementaire…).',
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Lien avec les lieux privés',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00130",
+                  'Lien avec les lieux privés',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Lorsque l’installation du dispositif nécessite une pénétration dans des lieux privés (domicile, dépendance, '
-                        'cabinet professionnel), les règles applicables à l’introduction dans les lieux privés et au contrôle du J.L.D. '
-                        'doivent être scrupuleusement respectées.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00131",
+                          'Lorsque l’installation du dispositif nécessite une pénétration dans des lieux privés (domicile, dépendance, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00132",
+                          'cabinet professionnel), les règles applicables à l’introduction dans les lieux privés et au contrôle du J.L.D. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00133",
+                          'doivent être scrupuleusement respectées.',
+                        ),
                   ),
                 ],
               ),
@@ -511,40 +1032,85 @@ class EnquetePreliminaireConstatationsRequisitionsPage extends StatelessWidget {
           // 2.3.3.2 – PRÉLÈVEMENTS EXTERNES & RELEVÉS SIGNALETIQUES
           // =======================================================
           _ConditionCard(
-            title:
-                '2.3.3.2 – Les prélèvements externes et les relevés signalétiques',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+              "f00134",
+              '2.3.3.2 – Les prélèvements externes et les relevés signalétiques',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le procureur de la République ou, sur son autorisation, l’O.P.J. ou l’A.P.J. peut faire procéder, '
-                'sur toute personne mise en cause ou tout témoin utile, à des prélèvements externes ou à des relevés '
-                'signalétiques nécessaires aux examens techniques et scientifiques de comparaison (art. 76-2-1 C.P.P.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00135",
+                      'Le procureur de la République ou, sur son autorisation, l’O.P.J. ou l’A.P.J. peut faire procéder, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00136",
+                      'sur toute personne mise en cause ou tout témoin utile, à des prélèvements externes ou à des relevés ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00137",
+                      'signalétiques nécessaires aux examens techniques et scientifiques de comparaison (art. 76-2-1 C.P.P.).',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    'Empreintes digitales, palmaires ou photographies destinées à l’alimentation de fichiers de police.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00138",
+                  'Empreintes digitales, palmaires ou photographies destinées à l’alimentation de fichiers de police.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Prélèvements biologiques superficiels (salive, cheveux, etc.) aux fins d’analyses génétiques ou d’autres comparaisons scientifiques.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                  "f00139",
+                  'Prélèvements biologiques superficiels (salive, cheveux, etc.) aux fins d’analyses génétiques ou d’autres comparaisons scientifiques.',
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Le refus injustifié de se soumettre à certaines opérations de signalisation ou de prélèvement, alors qu’elles '
-                'constituent le seul moyen d’identifier une personne ou de vérifier son implication, est pénalement sanctionné. '
-                'Les règles protectrices de l’article 55-1 du C.P.P. restent applicables en enquête préliminaire.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00140",
+                      'Le refus injustifié de se soumettre à certaines opérations de signalisation ou de prélèvement, alors qu’elles ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00141",
+                      'constituent le seul moyen d’identifier une personne ou de vérifier son implication, est pénalement sanctionné. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                      "f00142",
+                      'Les règles protectrices de l’article 55-1 du C.P.P. restent applicables en enquête préliminaire.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Ces opérations doivent respecter la dignité de la personne et, sauf urgence particulière, être réalisées '
-                        'dans des locaux adaptés, à l’abri du regard du public. Lorsque la mesure porte sur un mineur ou une personne '
-                        'vulnérable, des garanties supplémentaires (présence d’un représentant légal, information adaptée) sont nécessaires.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00143",
+                          'Ces opérations doivent respecter la dignité de la personne et, sauf urgence particulière, être réalisées ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00144",
+                          'dans des locaux adaptés, à l’abri du regard du public. Lorsque la mesure porte sur un mineur ou une personne ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart",
+                          "f00145",
+                          'vulnérable, des garanties supplémentaires (présence d’un représentant légal, information adaptée) sont nécessaires.',
+                        ),
                   ),
                 ],
               ),

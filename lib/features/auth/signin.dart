@@ -214,41 +214,53 @@ class _SignInPageState extends State<SignInPage> {
               child: Icon(Icons.shield_rounded, size: 220, color: Colors.white),
             ),
           ),
-          // ── Contenu — tout sur une page, zéro scroll ──────────────
+          // ── Contenu — tient sur une page si possible, scroll sinon ──
+          // (filet de sécurité : les seuils compact/small ci-dessus visent
+          // zéro scroll, mais un écran plus petit que prévu ne doit jamais
+          // faire planter le layout avec un overflow — il scrolle à la place)
           SafeArea(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                // ── Header ────────────────────────────────────────────
-                _LoginHeader(
-                  logoSize:  logoSize,
-                  titleSize: titleSize,
-                  vGap:      vGap,
-                  topPad:    topPad,
-                ),
-                // ── Carte formulaire ──────────────────────────────────
-                _LoginCard(
-                  formKey:          _formKey,
-                  emailCtrl:        _emailCtrl,
-                  pwdCtrl:          _pwdCtrl,
-                  loading:          _loading,
-                  obscure:          _obscure,
-                  rememberMe:       _rememberMe,
-                  validateEmail:    _validateEmail,
-                  validatePwd:      _validatePassword,
-                  onToggleObscure:  () => setState(() => _obscure = !_obscure),
-                  onToggleRemember: (v) =>
-                      setState(() => _rememberMe = v ?? true),
-                  onSubmit:         _submit,
-                  onForgot:         _forgotPassword,
-                  onSignup:         _goSignup,
-                  cardHPad:         cardHPad,
-                  cardVPad:         cardVPad,
-                  compact:          compact,
-                ),
-                // ── Footer ────────────────────────────────────────────
-                const _LoginFooter(),
-              ],
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return SingleChildScrollView(
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        // ── Header ────────────────────────────────────
+                        _LoginHeader(
+                          logoSize:  logoSize,
+                          titleSize: titleSize,
+                          vGap:      vGap,
+                          topPad:    topPad,
+                        ),
+                        // ── Carte formulaire ──────────────────────────
+                        _LoginCard(
+                          formKey:          _formKey,
+                          emailCtrl:        _emailCtrl,
+                          pwdCtrl:          _pwdCtrl,
+                          loading:          _loading,
+                          obscure:          _obscure,
+                          rememberMe:       _rememberMe,
+                          validateEmail:    _validateEmail,
+                          validatePwd:      _validatePassword,
+                          onToggleObscure:  () => setState(() => _obscure = !_obscure),
+                          onToggleRemember: (v) =>
+                              setState(() => _rememberMe = v ?? true),
+                          onSubmit:         _submit,
+                          onForgot:         _forgotPassword,
+                          onSignup:         _goSignup,
+                          cardHPad:         cardHPad,
+                          cardVPad:         cardVPad,
+                          compact:          compact,
+                        ),
+                        // ── Footer ──────────────────────────────────────
+                        const _LoginFooter(),
+                      ],
+                    ),
+                  ),
+                );
+              },
             ),
           ),
         ],
@@ -767,7 +779,7 @@ class _StatsRow extends StatelessWidget {
           const VerticalDivider(color: _C.divider, thickness: 1, width: 1),
           _StatItem(
             icon: Icons.article_rounded,
-            value: '+200',
+            value: '+1200',
             label: 'Fiches de révision',
           ),
           const VerticalDivider(color: _C.divider, thickness: 1, width: 1),

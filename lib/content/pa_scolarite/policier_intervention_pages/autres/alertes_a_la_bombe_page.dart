@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAlertesALaBombePage extends StatelessWidget {
   const PaAlertesALaBombePage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/policier_intervention/autres/alertes-a-la-bombe';
+  static const String routeName =
+      '/pa/dps_dpg/policier_intervention/autres/alertes-a-la-bombe';
 
   static const Color _lawRed = Color(0xFFE53935);
 
@@ -55,10 +57,18 @@ class PaAlertesALaBombePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Intervention — Domicile/Autres",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+            "f00002",
+            "Intervention — Domicile/Autres",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +83,11 @@ class PaAlertesALaBombePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Alertes à la bombe & objets/engins/véhicules suspects",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00003",
+              "Alertes à la bombe & objets/engins/véhicules suspects",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,23 +99,46 @@ class PaAlertesALaBombePage extends StatelessWidget {
 
           // Définition / esprit général
           _ConditionCard(
-            title: "Rappel essentiel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00004",
+              "Rappel essentiel",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Qu’il s’agisse de munitions/engins de guerre, de bagages oubliés/abandonnés, "
-                "d’objets/engins suspects (EEI, ENRI, ECI, EBI ou leurre), d’un véhicule suspect ou d’une alerte à la bombe, "
-                "l’intervention exige un maximum de précautions.\n\n"
-                "Ces engins sont conçus pour blesser, tuer, détruire ou contaminer.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00005",
+                      "Qu’il s’agisse de munitions/engins de guerre, de bagages oubliés/abandonnés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00006",
+                      "d’objets/engins suspects (EEI, ENRI, ECI, EBI ou leurre), d’un véhicule suspect ou d’une alerte à la bombe, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00007",
+                      "l’intervention exige un maximum de précautions.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00008",
+                      "Ces engins sont conçus pour blesser, tuer, détruire ou contaminer.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un engin explosif improvisé ayant déjà fonctionné peut encore blesser ou tuer (fonctionnement partiel possible).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00009",
+                      "Un engin explosif improvisé ayant déjà fonctionné peut encore blesser ou tuer (fonctionnement partiel possible).",
+                    ),
                   ),
                 ],
               ),
@@ -112,15 +149,31 @@ class PaAlertesALaBombePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (ici: pas d’articles explicitement cités dans ton extrait)
           _ConditionCard(
-            title: "I — Cadre de référence",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00010",
+              "I — Cadre de référence",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La fiche fournie est principalement opérationnelle. "
-                "Lorsque des textes (CP / CPP / CSI…) sont cités dans ton support, ils doivent être affichés en rouge dans cette section.\n\n"
-                "Ici, l’objectif est d’appliquer les consignes de sécurité et d’alerter immédiatement la chaîne compétente (CIC / déminage).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00011",
+                      "La fiche fournie est principalement opérationnelle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00012",
+                      "Lorsque des textes (CP / CPP / CSI…) sont cités dans ton support, ils doivent être affichés en rouge dans cette section.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00013",
+                      "Ici, l’objectif est d’appliquer les consignes de sécurité et d’alerter immédiatement la chaîne compétente (CIC / déminage).",
+                    ),
               ),
             ],
           ),
@@ -129,54 +182,105 @@ class PaAlertesALaBombePage extends StatelessWidget {
 
           // PRINCIPES DE BASE
           _ConditionCard(
-            title: "II — Principes de base",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00014",
+              "II — Principes de base",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Situer très vite l’origine de l’information"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00015",
+                  "A) Situer très vite l’origine de l’information",
+                ),
+              ),
               _Paragraph(
-                "Les objets suspects sont parfois signalés sous anonymat ou identité empruntée : téléphone, lettre, message… "
-                "Le contexte du lieu visé (nature du site, événement en cours, zone sensible) permet une première évaluation du risque.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00016",
+                      "Les objets suspects sont parfois signalés sous anonymat ou identité empruntée : téléphone, lettre, message… ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00017",
+                      "Le contexte du lieu visé (nature du site, événement en cours, zone sensible) permet une première évaluation du risque.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Danger connu (ex. munitions découvertes) : un délai peut exister, estimé uniquement par les démineurs.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00018",
+                  "Danger connu (ex. munitions découvertes) : un délai peut exister, estimé uniquement par les démineurs.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Danger/heure inconnus (engins improvisés) : prendre au plus vite les premières mesures de sécurité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00019",
+                  "Danger/heure inconnus (engins improvisés) : prendre au plus vite les premières mesures de sécurité.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Recueillir le maximum d’informations"),
-              _BulletPoint(
-                text:
-                    "Mode de réquisition : identité/coordonnées du requérant, lieu précis, numéro d’appel, localisation du site menacé.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00020",
+                  "B) Recueillir le maximum d’informations",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Teneur du message : auteur (si possible), motivations, mouvement revendiqué, heure/lieu annoncés de l’explosion.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00021",
+                  "Mode de réquisition : identité/coordonnées du requérant, lieu précis, numéro d’appel, localisation du site menacé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Localisation de l’objet/engin : cheminement d’accès, obstacles, superficie autour, accès possibles.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00022",
+                  "Teneur du message : auteur (si possible), motivations, mouvement revendiqué, heure/lieu annoncés de l’explosion.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aspect extérieur : dimensions, texture, inscriptions, fils/adhésifs, antenne/interrupteur, récipients/bouteilles, odeurs, effets secondaires à l’approche, stabilité/instabilité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00023",
+                  "Localisation de l’objet/engin : cheminement d’accès, obstacles, superficie autour, accès possibles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pourquoi c’est suspect : cible potentielle (bâtiment, installation, personne/groupe…), moment de dépôt/découverte, menaces associées.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00024",
+                  "Aspect extérieur : dimensions, texture, inscriptions, fils/adhésifs, antenne/interrupteur, récipients/bouteilles, odeurs, effets secondaires à l’approche, stabilité/instabilité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Manipulations éventuelles : en aucun cas ne pas déplacer/ouvrir/modifier un bagage, un objet ou un engin suspect.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00025",
+                  "Pourquoi c’est suspect : cible potentielle (bâtiment, installation, personne/groupe…), moment de dépôt/découverte, menaces associées.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présence de témoins (les inviter à rester), suspects, risques additionnels (gaz, essence, fuel…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00026",
+                  "Manipulations éventuelles : en aucun cas ne pas déplacer/ouvrir/modifier un bagage, un objet ou un engin suspect.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00027",
+                  "Présence de témoins (les inviter à rester), suspects, risques additionnels (gaz, essence, fuel…).",
+                ),
               ),
             ],
           ),
@@ -184,62 +288,121 @@ class PaAlertesALaBombePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Indices principaux de suspicion",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00028",
+              "III — Indices principaux de suspicion",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Objet / engin suspect"),
-              _BulletPoint(
-                text:
-                    "Contexte particulier (événements politiques, sociaux, religieux…).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00029",
+                  "A) Objet / engin suspect",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Proximité d’une zone sensible, d’individus/personnalités pouvant constituer une cible.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00030",
+                  "Contexte particulier (événements politiques, sociaux, religieux…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Action signalée : appel, message revendicatif, tract, témoignage…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00031",
+                  "Proximité d’une zone sensible, d’individus/personnalités pouvant constituer une cible.",
+                ),
               ),
               _BulletPoint(
-                text: "Indications sur l’emballage : inscriptions, sigles…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00032",
+                  "Action signalée : appel, message revendicatif, tract, témoignage…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Abandon en lieu public : absence de propriétaire, fuite constatée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00033",
+                  "Indications sur l’emballage : inscriptions, sigles…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éléments insolites : fils, adhésifs, antenne, interrupteur, récipients, odeurs, effets secondaires à l’approche…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00034",
+                  "Abandon en lieu public : absence de propriétaire, fuite constatée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00035",
+                  "Éléments insolites : fils, adhésifs, antenne, interrupteur, récipients, odeurs, effets secondaires à l’approche…",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Véhicule suspect"),
-              _BulletPoint(
-                text:
-                    "Signalement : information, appel, message revendicatif, tract, témoignage…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00036",
+                  "B) Véhicule suspect",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Indices véhicule : zone sensible/fréquentée, stationnement inapproprié, volé, plaque suspecte, inscriptions/sigles.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00037",
+                  "Signalement : information, appel, message revendicatif, tract, témoignage…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Indices conducteur/passager : habitacle inoccupé, personnes suspectes quittant le véhicule.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00038",
+                  "Indices véhicule : zone sensible/fréquentée, stationnement inapproprié, volé, plaque suspecte, inscriptions/sigles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Signes : fils/adhésifs/antenne/interrupteur, fumée, fuite de liquide, affaissement du véhicule.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00039",
+                  "Indices conducteur/passager : habitacle inoccupé, personnes suspectes quittant le véhicule.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00040",
+                  "Signes : fils/adhésifs/antenne/interrupteur, fumée, fuite de liquide, affaissement du véhicule.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Personne potentiellement porteuse (charge/arme)"),
-              _BulletPoint(
-                text:
-                    "Comportements : nervosité, agitation, sudation, « effet tunnel ».",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00041",
+                  "C) Personne potentiellement porteuse (charge/arme)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Marquage/indices : portiques dédiés, unités cynotechniques (REXPEMO) si engagées.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00042",
+                  "Comportements : nervosité, agitation, sudation, « effet tunnel ».",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00043",
+                  "Marquage/indices : portiques dédiés, unités cynotechniques (REXPEMO) si engagées.",
+                ),
               ),
             ],
           ),
@@ -248,56 +411,105 @@ class PaAlertesALaBombePage extends StatelessWidget {
 
           // MODE OPÉRATOIRE
           _ConditionCard(
-            title: "IV — Mode opératoire : dispositifs de sécurité",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00044",
+              "IV — Mode opératoire : dispositifs de sécurité",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Règles immédiates (toujours)"),
-              _BulletPoint(
-                text:
-                    "Ne pas toucher / ne pas déplacer l’objet, l’engin ou le véhicule. Éviter toute vibration à proximité.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00045",
+                  "Règles immédiates (toujours)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne pas jeter d’eau, ne pas recouvrir, ne pas provoquer de vibrations sonores/thermiques/mécaniques.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00046",
+                  "Ne pas toucher / ne pas déplacer l’objet, l’engin ou le véhicule. Éviter toute vibration à proximité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Établir un périmètre de sécurité et ne le rendre accessible qu’aux personnes spécialisées (avant neutralisation : démineurs uniquement).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00047",
+                  "Ne pas jeter d’eau, ne pas recouvrir, ne pas provoquer de vibrations sonores/thermiques/mécaniques.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00048",
+                  "Établir un périmètre de sécurité et ne le rendre accessible qu’aux personnes spécialisées (avant neutralisation : démineurs uniquement).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Prévoir un seul point d’accès au périmètre (filtrage : un policier + un responsable sécurité du site).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00049",
+                      "Prévoir un seul point d’accès au périmètre (filtrage : un policier + un responsable sécurité du site).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Périmètres (repères opérationnels)"),
-              _BulletPoint(
-                text:
-                    "Objet/engin en local : rayon 100 m (penser étages supérieurs/inférieurs).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00050",
+                  "Périmètres (repères opérationnels)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Individu potentiellement porteur : 60 m minimum à couvert.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00051",
+                  "Objet/engin en local : rayon 100 m (penser étages supérieurs/inférieurs).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Véhicule : périmètre le plus large possible, repère 200 m.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00052",
+                  "Individu potentiellement porteur : 60 m minimum à couvert.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "NRBC possible : repère 500 m minimum (périmètre élargi sur demande démineurs).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00053",
+                  "Véhicule : périmètre le plus large possible, repère 200 m.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00054",
+                  "NRBC possible : repère 500 m minimum (périmètre élargi sur demande démineurs).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Télécom / radios"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00055",
+                  "Télécom / radios",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Ne pas utiliser d’émetteurs-récepteurs radio ni téléphones mobiles à proximité immédiate de l’objet/engin suspect.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00056",
+                  "Ne pas utiliser d’émetteurs-récepteurs radio ni téléphones mobiles à proximité immédiate de l’objet/engin suspect.",
+                ),
               ),
             ],
           ),
@@ -305,67 +517,126 @@ class PaAlertesALaBombePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Aviser / Évacuer / Réglementer",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00057",
+              "V — Aviser / Évacuer / Réglementer",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Aviser"),
-              _BulletPoint(
-                text:
-                    "Avis au C.I.C immédiat : il répercute l’appel aux services de déminage (seuls compétents pour neutraliser).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00058",
+                  "1) Aviser",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Informer autorités administratives & judiciaires compétentes, et services de secours si besoin (pompiers, SAMU, EDF-GDF…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00059",
+                  "Avis au C.I.C immédiat : il répercute l’appel aux services de déminage (seuls compétents pour neutraliser).",
+                ),
               ),
               _BulletPoint(
-                text: "Informer le responsable du bâtiment / maître des lieux.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00060",
+                  "Informer autorités administratives & judiciaires compétentes, et services de secours si besoin (pompiers, SAMU, EDF-GDF…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00061",
+                  "Informer le responsable du bâtiment / maître des lieux.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À l’intérieur : mesures de sécurité relèvent du responsable de l’établissement. À l’extérieur : ordre public. En cas de menace avérée/doutes suffisants, l’autorité de police peut imposer l’évacuation.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00062",
+                      "À l’intérieur : mesures de sécurité relèvent du responsable de l’établissement. À l’extérieur : ordre public. En cas de menace avérée/doutes suffisants, l’autorité de police peut imposer l’évacuation.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Évacuer"),
-              _BulletPoint(
-                text:
-                    "S’informer de l’existence d’un plan d’évacuation et décider avec le responsable de sa mise en œuvre.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00063",
+                  "2) Évacuer",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S’assurer que l’itinéraire d’évacuation a été soigneusement contrôlé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00064",
+                  "S’informer de l’existence d’un plan d’évacuation et décider avec le responsable de sa mise en œuvre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne jamais laisser une garde statique près d’un objet/engin/véhicule suspect.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00065",
+                  "S’assurer que l’itinéraire d’évacuation a été soigneusement contrôlé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toujours envisager un second engin à proximité après une première explosion.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00066",
+                  "Ne jamais laisser une garde statique près d’un objet/engin/véhicule suspect.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne pas lever le dispositif de sécurité sans ordre des autorités (après avis démineurs). Maintien environ 1 h en cas de fausse alerte.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00067",
+                  "Toujours envisager un second engin à proximité après une première explosion.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Traiter les blessés en liaison avec les services médicaux et préserver les traces/indices.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00068",
+                  "Ne pas lever le dispositif de sécurité sans ordre des autorités (après avis démineurs). Maintien environ 1 h en cas de fausse alerte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00069",
+                  "Traiter les blessés en liaison avec les services médicaux et préserver les traces/indices.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("3) Réglementer"),
-              _BulletPoint(
-                text:
-                    "Faciliter l’accès des démineurs : itinéraire préférentiel, gestion circulation, point de rendez-vous clair.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00070",
+                  "3) Réglementer",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Écarter les curieux, canaliser les flux, maintenir le périmètre.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00071",
+                  "Faciliter l’accès des démineurs : itinéraire préférentiel, gestion circulation, point de rendez-vous clair.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00072",
+                  "Écarter les curieux, canaliser les flux, maintenir le périmètre.",
+                ),
               ),
             ],
           ),
@@ -374,56 +645,116 @@ class PaAlertesALaBombePage extends StatelessWidget {
 
           // ALERTE A LA BOMBE
           _ConditionCard(
-            title: "VI — Alerte à la bombe : message & exploitation",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00073",
+              "VI — Alerte à la bombe : message & exploitation",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Supports possibles"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00074",
+                  "1) Supports possibles",
+                ),
+              ),
               _Paragraph(
-                "Une alerte peut être directe ou indirecte (appel au 17 ou via un tiers). "
-                "Supports : téléphone, fax, mail, vidéo, lettre, message…",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00075",
+                      "Une alerte peut être directe ou indirecte (appel au 17 ou via un tiers). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00076",
+                      "Supports : téléphone, fax, mail, vidéo, lettre, message…",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Documents écrits"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00077",
+                  "2) Documents écrits",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Éviter de manipuler excessivement et de écrire dessus (traces papillaires, foulage…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00078",
+                  "Éviter de manipuler excessivement et de écrire dessus (traces papillaires, foulage…).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Audio / vidéo"),
-              _BulletPoint(
-                text:
-                    "Éviter de laisser les supports près d’une source de rayonnement ou champ magnétique (radiateur, écran, aimant…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00079",
+                  "3) Audio / vidéo",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éviter les arrêts intempestifs sur l’enregistrement original.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00080",
+                  "Éviter de laisser les supports près d’une source de rayonnement ou champ magnétique (radiateur, écran, aimant…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00081",
+                  "Éviter les arrêts intempestifs sur l’enregistrement original.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("4) Message téléphoné : relever les détails"),
-              _BulletPoint(
-                text:
-                    "Origine : appel direct anonyme / indirect, numéro si possible, identité du requérant.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00082",
+                  "4) Message téléphoné : relever les détails",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sexe, caractéristiques de la voix (grave, déformée, joyeuse/ivresse, enrouée…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00083",
+                  "Origine : appel direct anonyme / indirect, numéro si possible, identité du requérant.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accent, élocution (rapide, lente, claire, en colère…), termes employés (ordinaires, argotiques, obscènes…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00084",
+                  "Sexe, caractéristiques de la voix (grave, déformée, joyeuse/ivresse, enrouée…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Bruits de fond : bureau, usine, rue, gare, aéroport, bar, dispute…",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00085",
+                  "Accent, élocution (rapide, lente, claire, en colère…), termes employés (ordinaires, argotiques, obscènes…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00086",
+                  "Bruits de fond : bureau, usine, rue, gare, aéroport, bar, dispute…",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si téléphone mobile abandonné : éviter toute manipulation intempestive.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00087",
+                      "Si téléphone mobile abandonné : éviter toute manipulation intempestive.",
+                    ),
                   ),
                 ],
               ),
@@ -433,15 +764,31 @@ class PaAlertesALaBombePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VII — Procédure de recherche (alerte à la bombe)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00088",
+              "VII — Procédure de recherche (alerte à la bombe)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En cas d’alerte à la bombe, une opération de recherche doit être menée sous la responsabilité du maître des lieux "
-                "ou de son représentant afin de localiser un éventuel objet non identifié.\n\n"
-                "Tout objet découvert est traité comme un engin explosif : appliquer immédiatement les consignes « objet/engin suspect ».",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00089",
+                      "En cas d’alerte à la bombe, une opération de recherche doit être menée sous la responsabilité du maître des lieux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00090",
+                      "ou de son représentant afin de localiser un éventuel objet non identifié.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00091",
+                      "Tout objet découvert est traité comme un engin explosif : appliquer immédiatement les consignes « objet/engin suspect ».",
+                    ),
               ),
             ],
           ),
@@ -450,48 +797,129 @@ class PaAlertesALaBombePage extends StatelessWidget {
 
           // GLOSSAIRE (propre et clair)
           _ConditionCard(
-            title: "VIII — Glossaire (définitions opérationnelles)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00092",
+              "VIII — Glossaire (définitions opérationnelles)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Objet suspect"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00093",
+                  "Objet suspect",
+                ),
+              ),
               _Paragraph(
-                "Objet de forme/nature quelconque déclaré suspect, contenu inconnu : peut être actif (EEI, ENRI, EBI, ECI), "
-                "inerte (leurre) ou simple bagage abandonné/oublié sans risque.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00094",
+                      "Objet de forme/nature quelconque déclaré suspect, contenu inconnu : peut être actif (EEI, ENRI, EBI, ECI), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00095",
+                      "inerte (leurre) ou simple bagage abandonné/oublié sans risque.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Engin suspect"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00096",
+                  "Engin suspect",
+                ),
+              ),
               _Paragraph(
-                "Objet déclaré suspect dont le contenu est connu : peut être actif (EEI, ENRI, EBI, ECI) ou inactif (leurre).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00097",
+                  "Objet déclaré suspect dont le contenu est connu : peut être actif (EEI, ENRI, EBI, ECI) ou inactif (leurre).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Bagage abandonné / bagage oublié"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00098",
+                  "Bagage abandonné / bagage oublié",
+                ),
+              ),
               _Paragraph(
-                "Terminologie non employée par les services de déminage (souvent utilisée en transport). "
-                "À l’instant où le bagage est signalé aux démineurs, il devient un objet suspect.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00099",
+                      "Terminologie non employée par les services de déminage (souvent utilisée en transport). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00100",
+                      "À l’instant où le bagage est signalé aux démineurs, il devient un objet suspect.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Dislocation / démantèlement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00101",
+                  "Dislocation / démantèlement",
+                ),
+              ),
               _Paragraph(
-                "Opération visant à séparer les composants d’un engin suspect afin de le rendre inoffensif.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00102",
+                  "Opération visant à séparer les composants d’un engin suspect afin de le rendre inoffensif.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Neutralisation"),
               _Paragraph(
-                "Action permettant de séparer les composants d’un engin improvisé.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00103",
+                  "Action permettant de séparer les composants d’un engin improvisé.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Sigles"),
               _BulletPoint(
-                text: "ENRI : Engin nucléaire ou radiologique improvisé",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00104",
+                  "ENRI : Engin nucléaire ou radiologique improvisé",
+                ),
               ),
-              _BulletPoint(text: "ECI : Engin chimique improvisé"),
-              _BulletPoint(text: "EBI : Engin biologique improvisé"),
-              _BulletPoint(text: "EEI : Engin explosif improvisé"),
               _BulletPoint(
-                text:
-                    "Leurre : engin « ressemblant » mais ne pouvant fonctionner nominalement (explosif inerte, élément manquant…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00105",
+                  "ECI : Engin chimique improvisé",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00106",
+                  "EBI : Engin biologique improvisé",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00107",
+                  "EEI : Engin explosif improvisé",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00108",
+                  "Leurre : engin « ressemblant » mais ne pouvant fonctionner nominalement (explosif inerte, élément manquant…).",
+                ),
               ),
             ],
           ),
@@ -500,29 +928,52 @@ class PaAlertesALaBombePage extends StatelessWidget {
 
           // Résumé ultra clair
           _ConditionCard(
-            title: "En résumé (réflexe primo-intervenant)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+              "f00109",
+              "En résumé (réflexe primo-intervenant)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text: "Ne touche pas. Ne déplace pas. Ne manipule pas.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00110",
+                  "Ne touche pas. Ne déplace pas. Ne manipule pas.",
+                ),
               ),
-              _IntroBullet(text: "Périmètre. Filtrage. Évacuation maîtrisée."),
               _IntroBullet(
-                text:
-                    "Alerte C.I.C immédiate → déminage uniquement dans la zone.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00111",
+                  "Périmètre. Filtrage. Évacuation maîtrisée.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Rendre compte. Préserver les traces/indices. Prévoir un second engin.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00112",
+                  "Alerte C.I.C immédiate → déminage uniquement dans la zone.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                  "f00113",
+                  "Rendre compte. Préserver les traces/indices. Prévoir un second engin.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les distances sont des repères : elles peuvent être élargies sur demande des démineurs.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart",
+                      "f00114",
+                      "Les distances sont des repères : elles peuvent être élargies sur demande des démineurs.",
+                    ),
                   ),
                 ],
               ),
@@ -781,9 +1232,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

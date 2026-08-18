@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
   const ProvocationDirecteMineurCrimeDelitPage({super.key});
@@ -56,10 +57,18 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en péril",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+            "f00002",
+            "Mise en péril",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La provocation directe d’un mineur à commettre un crime ou un délit",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+              "f00003",
+              "La provocation directe d’un mineur à commettre un crime ou un délit",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,13 +99,21 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de provoquer directement un mineur à commettre un crime ou un délit constitue une infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00005",
+                  "Le fait de provoquer directement un mineur à commettre un crime ou un délit constitue une infraction.",
+                ),
               ),
             ],
           ),
@@ -101,22 +122,30 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-21 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00007",
+                    "Article 227-21 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime la provocation d’un mineur à commettre un crime ou un délit.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00008",
+                    " : prévoit et réprime la provocation d’un mineur à commettre un crime ou un délit.",
+                  ),
                 ),
               ]),
             ],
@@ -126,52 +155,104 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
 
           // Élément matériel (3 éléments pédagogiques)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+              "f00009",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Une provocation directe"),
-              const _Paragraph(
-                "La provocation visée ici doit être distinguée de la provocation constitutive de la complicité "
-                "(elle-même prévue par la loi). L’acte de provocation n’étant pas défini, il peut prendre différentes formes.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00010",
+                  "A) Une provocation directe",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00011",
+                      "La provocation visée ici doit être distinguée de la provocation constitutive de la complicité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00012",
+                      "(elle-même prévue par la loi). L’acte de provocation n’étant pas défini, il peut prendre différentes formes.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Pour être répréhensible, la provocation doit être directe : elle doit tendre à la commission de faits précisément désignés par la loi. "
-                      "Il faut donc une relation précise et incontestable, ainsi qu’un lien étroit, entre la provocation et les faits visés. ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                        "f00013",
+                        "Pour être répréhensible, la provocation doit être directe : elle doit tendre à la commission de faits précisément désignés par la loi. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                        "f00014",
+                        "Il faut donc une relation précise et incontestable, ainsi qu’un lien étroit, entre la provocation et les faits visés. ",
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      "Une simple suggestion ou un simple conseil est insuffisant.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00015",
+                    "Une simple suggestion ou un simple conseil est insuffisant.",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
               ]),
               const SizedBox(height: 12),
-              const _NotaBox(
-                title: "À ne pas confondre",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00016",
+                  "À ne pas confondre",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La provocation directe s’oppose à l’apologie, la propagande ou la simple publicité : "
-                        "ces comportements peuvent présenter l’infraction sous un jour favorable sans inciter directement à la commettre.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                          "f00017",
+                          "La provocation directe s’oppose à l’apologie, la propagande ou la simple publicité : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                          "f00018",
+                          "ces comportements peuvent présenter l’infraction sous un jour favorable sans inciter directement à la commettre.",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
-              const _Paragraph(
-                "Il importe peu que la provocation ait été suivie d’effet : l’infraction peut être constituée même si le mineur ne passe pas à l’acte.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00019",
+                  "Il importe peu que la provocation ait été suivie d’effet : l’infraction peut être constituée même si le mineur ne passe pas à l’acte.",
+                ),
               ),
               const SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La provocation n’a pas nécessairement à s’adresser à une personne déterminée : la provocation commise par voie de presse est également envisagée par la loi. ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00020",
+                    "La provocation n’a pas nécessairement à s’adresser à une personne déterminée : la provocation commise par voie de presse est également envisagée par la loi. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(ex. diffusion publique)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00021",
+                    "(ex. diffusion publique)",
+                  ),
                   style: TextStyle(
                     color: isDark ? Colors.white70 : const Color(0xFF616161),
                     fontStyle: FontStyle.italic,
@@ -180,34 +261,82 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
               ]),
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Adressée à un mineur"),
-              const _Paragraph(
-                "La provocation doit viser un mineur, quel que soit son âge. "
-                "À noter : lorsqu’elle est adressée à un mineur de 15 ans, il s’agit d’une circonstance aggravante.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00022",
+                  "B) Adressée à un mineur",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00023",
+                      "La provocation doit viser un mineur, quel que soit son âge. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00024",
+                      "À noter : lorsqu’elle est adressée à un mineur de 15 ans, il s’agit d’une circonstance aggravante.",
+                    ),
               ),
               const SizedBox(height: 14),
 
-              const _SubTitle("C) À la commission d’un crime ou d’un délit"),
-              const _Paragraph(
-                "L’objet de la provocation doit être la commission d’un crime ou d’un délit : "
-                "la provocation à commettre une contravention n’est pas visée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00025",
+                  "C) À la commission d’un crime ou d’un délit",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00026",
+                      "L’objet de la provocation doit être la commission d’un crime ou d’un délit : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00027",
+                      "la provocation à commettre une contravention n’est pas visée.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "La nature du crime ou du délit importe peu, mais la provocation doit porter sur une ou plusieurs infractions déterminées. "
-                "Une incitation générale à la délinquance ne suffit pas.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00028",
+                      "La nature du crime ou du délit importe peu, mais la provocation doit porter sur une ou plusieurs infractions déterminées. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00029",
+                      "Une incitation générale à la délinquance ne suffit pas.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "La condition d’habitude n’est plus requise : la provocation à la commission d’un acte unique, criminel ou délictuel, suffit à caractériser l’infraction.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00030",
+                  "La condition d’habitude n’est plus requise : la provocation à la commission d’un acte unique, criminel ou délictuel, suffit à caractériser l’infraction.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Important : la loi vise surtout la manipulation d’un mineur par un adulte, "
-                        "mais aucun âge n’est exigé pour l’auteur : la provocation peut donc être le fait d’un majeur comme d’un mineur.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                          "f00031",
+                          "Important : la loi vise surtout la manipulation d’un mineur par un adulte, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                          "f00032",
+                          "mais aucun âge n’est exigé pour l’auteur : la provocation peut donc être le fait d’un majeur comme d’un mineur.",
+                        ),
                   ),
                 ],
               ),
@@ -218,17 +347,33 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+              "f00033",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conscience de provoquer un mineur à commettre un crime ou un délit",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00034",
+                  "Conscience de provoquer un mineur à commettre un crime ou un délit",
+                ),
               ),
               _Paragraph(
-                "Cette infraction est intentionnelle : l’auteur doit avoir conscience que ses agissements "
-                "sont de nature à inciter un ou plusieurs mineurs à commettre des crimes ou des délits.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00035",
+                      "Cette infraction est intentionnelle : l’auteur doit avoir conscience que ses agissements ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                      "f00036",
+                      "sont de nature à inciter un ou plusieurs mineurs à commettre des crimes ou des délits.",
+                    ),
               ),
             ],
           ),
@@ -237,33 +382,47 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+              "f00037",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-21 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00038",
+                    "Article 227-21 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque la provocation est adressée à un mineur de quinze ans.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00039",
+                  "Lorsque la provocation est adressée à un mineur de quinze ans.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque le mineur est provoqué à commettre habituellement des crimes ou délits.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00040",
+                  "Lorsque le mineur est provoqué à commettre habituellement des crimes ou délits.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque la provocation est commise dans des établissements d’enseignement ou d’éducation, ou dans les locaux de l’administration, ainsi que lors des entrées/sorties ou à proximité immédiate.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00041",
+                  "Lorsque la provocation est commise dans des établissements d’enseignement ou d’éducation, ou dans les locaux de l’administration, ainsi que lors des entrées/sorties ou à proximité immédiate.",
+                ),
               ),
             ],
           ),
@@ -272,95 +431,172 @@ class ProvocationDirecteMineurCrimeDelitPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+              "f00042",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00043",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification simple : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00044",
+                    "Qualification simple : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 150 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00045",
+                    "5 ans d’emprisonnement et 150 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-21 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00046",
+                    "article 227-21 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification aggravée : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00047",
+                    "Qualification aggravée : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 150 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00048",
+                    "7 ans d’emprisonnement et 150 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-21 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00049",
+                    "article 227-21 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00050",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 227-28-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00051",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
-                TextSpan(text: " (amendes selon "),
                 TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00052",
+                    "l’article 227-28-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00053",
+                    " (amendes selon ",
                   ),
                 ),
-                TextSpan(text: " + peines complémentaires de "),
                 TextSpan(
-                  text: "l’article 131-39 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00054",
+                    "l’article 131-38 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00055",
+                    " + peines complémentaires de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00056",
+                    "l’article 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00057",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                  "f00058",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00059",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation, instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00060",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart",
+                    "f00061",
+                    " (aide et assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
             ],

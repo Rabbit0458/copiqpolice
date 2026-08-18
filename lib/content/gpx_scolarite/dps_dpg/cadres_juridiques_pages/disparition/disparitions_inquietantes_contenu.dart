@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DisparitionContenuPage extends StatelessWidget {
   const DisparitionContenuPage({super.key});
@@ -27,10 +28,18 @@ class DisparitionContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Disparitions inquiétantes',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+            "f00002",
+            'Disparitions inquiétantes',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -44,7 +53,11 @@ class DisparitionContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'Les disparitions inquiétantes',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+              "f00003",
+              'Les disparitions inquiétantes',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,9 +66,21 @@ class DisparitionContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Articles 74-1 et 80-4 du Code de procédure pénale — cadre spécifique '
-            'd’enquête en cas de disparition d’un mineur, d’un majeur protégé ou '
-            'd’un majeur présentant un caractère inquiétant.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00004",
+                  'Articles 74-1 et 80-4 du Code de procédure pénale — cadre spécifique ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00005",
+                  'd’enquête en cas de disparition d’un mineur, d’un majeur protégé ou ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00006",
+                  'd’un majeur présentant un caractère inquiétant.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -68,11 +93,27 @@ class DisparitionContenuPage extends StatelessWidget {
           // ===================== MODULE INTRO GLOBAL =======================
           _ModuleCard(
             tag: 'disparition_intro',
-            title: 'Module 1 — Comprendre les disparitions inquiétantes',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+              "f00007",
+              'Module 1 — Comprendre les disparitions inquiétantes',
+            ),
             subtitle:
-                'Fondement des articles 74-1 et 80-4 du Code de procédure pénale, '
-                'notion d’enquête spécifique ou transitoire et articulation avec la '
-                'flagrance et l’information judiciaire.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00008",
+                  'Fondement des articles 74-1 et 80-4 du Code de procédure pénale, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00009",
+                  'notion d’enquête spécifique ou transitoire et articulation avec la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00010",
+                  'flagrance et l’information judiciaire.',
+                ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -87,11 +128,27 @@ class DisparitionContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 1 ================================
           _ModuleCard(
             tag: 'disparition_chap1',
-            title: 'Chapitre 1 — Conditions d’application',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+              "f00011",
+              'Chapitre 1 — Conditions d’application',
+            ),
             subtitle:
-                'Disparition flagrante ou inquiétante, disparitions '
-                'obligatoirement inquiétantes et disparitions inquiétantes '
-                'en raison des circonstances (âge, santé, contexte...).',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00012",
+                  'Disparition flagrante ou inquiétante, disparitions ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00013",
+                  'obligatoirement inquiétantes et disparitions inquiétantes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00014",
+                  'en raison des circonstances (âge, santé, contexte...).',
+                ),
             imagePath: 'assets/images/tentative_moral.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -105,11 +162,27 @@ class DisparitionContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 2 ================================
           _ModuleCard(
             tag: 'disparition_chap2',
-            title: 'Chapitre 2 — Procédures des articles 74-1 et 80-4',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+              "f00015",
+              'Chapitre 2 — Procédures des articles 74-1 et 80-4',
+            ),
             subtitle:
-                'Magistrats et officiers de police judiciaire compétents, actes de '
-                'l’enquête, poursuite des investigations et actes délégués par le '
-                'juge d’instruction.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00016",
+                  'Magistrats et officiers de police judiciaire compétents, actes de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00017",
+                  'l’enquête, poursuite des investigations et actes délégués par le ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00018",
+                  'juge d’instruction.',
+                ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -123,11 +196,27 @@ class DisparitionContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 3 ================================
           _ModuleCard(
             tag: 'disparition_chap3',
-            title: 'Chapitre 3 — Suites de l’enquête',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+              "f00019",
+              'Chapitre 3 — Suites de l’enquête',
+            ),
             subtitle:
-                'Hypothèses lorsque la personne disparue est retrouvée, '
-                'non retrouvée, ou lorsque l’enquête permet d’établir un '
-                'caractère criminel ou délictuel à la disparition.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00020",
+                  'Hypothèses lorsque la personne disparue est retrouvée, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00021",
+                  'non retrouvée, ou lorsque l’enquête permet d’établir un ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00022",
+                  'caractère criminel ou délictuel à la disparition.',
+                ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -141,10 +230,22 @@ class DisparitionContenuPage extends StatelessWidget {
           // ===================== QUIZ MODULE ===============================
           _ModuleCard(
             tag: 'disparition_quiz',
-            title: 'Quiz — Disparitions inquiétantes',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+              "f00023",
+              'Quiz — Disparitions inquiétantes',
+            ),
             subtitle:
-                'Vérifiez vos réflexes sur les conditions d’application, les autorités '
-                'habilitées et les suites de l’enquête prévues aux articles 74-1 et 80-4.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00024",
+                  'Vérifiez vos réflexes sur les conditions d’application, les autorités ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart",
+                  "f00025",
+                  'habilitées et les suites de l’enquête prévues aux articles 74-1 et 80-4.',
+                ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

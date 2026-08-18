@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
   const PaNonObstacleCommissionCrimeDelitPage({super.key});
@@ -56,10 +57,18 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en danger",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+            "f00002",
+            "Mise en danger",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le non-obstacle à la commission d’un crime ou d’un délit",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+              "f00003",
+              "Le non-obstacle à la commission d’un crime ou d’un délit",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, lorsque quiconque pouvant empêcher par son action immédiate, sans risque pour lui "
-                "ou pour les tiers, soit un crime, soit un délit contre l’intégrité corporelle de la personne, "
-                "de s’abstenir volontairement de le faire, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00005",
+                      "Le fait, lorsque quiconque pouvant empêcher par son action immédiate, sans risque pour lui ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00006",
+                      "ou pour les tiers, soit un crime, soit un délit contre l’intégrité corporelle de la personne, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00007",
+                      "de s’abstenir volontairement de le faire, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -103,22 +132,30 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00009",
+                    "Article 223-6 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime l’infraction de non-obstacle à la commission d’un crime ou d’un délit.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00010",
+                    " : prévoit et réprime l’infraction de non-obstacle à la commission d’un crime ou d’un délit.",
+                  ),
                 ),
               ]),
             ],
@@ -128,48 +165,101 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Imminence d’un crime ou d’un délit contre l’intégrité corporelle",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00012",
+                  "A) Imminence d’un crime ou d’un délit contre l’intégrité corporelle",
+                ),
               ),
               _Paragraph(
-                "Le délit ne vise pas toutes les abstentions : il est limité aux crimes et délits "
-                "contre l’intégrité corporelle. Il n’y a pas d’abstention punissable s’il n’existe pas "
-                "d’infraction à empêcher.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00013",
+                      "Le délit ne vise pas toutes les abstentions : il est limité aux crimes et délits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00014",
+                      "contre l’intégrité corporelle. Il n’y a pas d’abstention punissable s’il n’existe pas ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00015",
+                      "d’infraction à empêcher.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Ainsi, on ne peut poursuivre l’abstention d’empêcher une personne de se suicider, "
-                      "puisque le suicide ne constitue pas un crime ou un délit contre l’intégrité corporelle ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                        "f00016",
+                        "Ainsi, on ne peut poursuivre l’abstention d’empêcher une personne de se suicider, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                        "f00017",
+                        "puisque le suicide ne constitue pas un crime ou un délit contre l’intégrité corporelle ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 23 avril 1971)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00018",
+                    "(Cass. crim., 23 avril 1971)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
 
               _Paragraph(
-                "Le texte exclut notamment les contraventions, mais aussi les délits contre les biens, "
-                "ou contre la Nation, l’État et la paix publique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00019",
+                      "Le texte exclut notamment les contraventions, mais aussi les délits contre les biens, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00020",
+                      "ou contre la Nation, l’État et la paix publique.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph(
-                "La jurisprudence admet que l’obligation d’agir puisse concerner une infraction en cours "
-                "d’exécution, mais aussi une infraction future, dès lors qu’elle est certaine et imminente. "
-                "L’obligation d’agir apparaît donc dès la certitude de l’imminence de la commission d’un crime "
-                "ou d’un délit contre l’intégrité corporelle.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00021",
+                      "La jurisprudence admet que l’obligation d’agir puisse concerner une infraction en cours ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00022",
+                      "d’exécution, mais aussi une infraction future, dès lors qu’elle est certaine et imminente. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00023",
+                      "L’obligation d’agir apparaît donc dès la certitude de l’imminence de la commission d’un crime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00024",
+                      "ou d’un délit contre l’intégrité corporelle.",
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -177,11 +267,23 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Jurisprudence : épouse condamnée pour ne pas avoir fait obstacle à l’assassinat de son mari "
-                        "par son amant alors qu’elle ne pouvait avoir de doute sur l’imminence du crime dont elle connaissait le projet ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                          "f00025",
+                          "Jurisprudence : épouse condamnée pour ne pas avoir fait obstacle à l’assassinat de son mari ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                          "f00026",
+                          "par son amant alors qu’elle ne pouvait avoir de doute sur l’imminence du crime dont elle connaissait le projet ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 4 mai 1951)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00027",
+                      "(Cass. crim., 4 mai 1951)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -193,41 +295,91 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Possibilité d’action immédiate"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00028",
+                  "B) Possibilité d’action immédiate",
+                ),
+              ),
               _Paragraph(
-                "Seule l’abstention est punie : il n’est pas exigé que l’action ait réussi. "
-                "L’obligation d’agir ne concerne que celui qui avait un moyen d’empêcher le crime ou le délit "
-                "sans risque pour lui-même ou pour les tiers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00029",
+                      "Seule l’abstention est punie : il n’est pas exigé que l’action ait réussi. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00030",
+                      "L’obligation d’agir ne concerne que celui qui avait un moyen d’empêcher le crime ou le délit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00031",
+                      "sans risque pour lui-même ou pour les tiers.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La Cour précise que l’action devait être possible « sans risque » ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00032",
+                    "La Cour précise que l’action devait être possible « sans risque » ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 16 novembre 1955)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00033",
+                    "(Cass. crim., 16 novembre 1955)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
 
               _Paragraph(
-                "Les formes de l’action ne sont pas définies : une action personnelle n’est pas exigée. "
-                "L’action immédiate doit être choisie selon les capacités de la personne et peut consister "
-                "à prévenir les autorités ou à solliciter des tiers si cela constitue le meilleur moyen d’empêcher "
-                "l’infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00034",
+                      "Les formes de l’action ne sont pas définies : une action personnelle n’est pas exigée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00035",
+                      "L’action immédiate doit être choisie selon les capacités de la personne et peut consister ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00036",
+                      "à prévenir les autorités ou à solliciter des tiers si cela constitue le meilleur moyen d’empêcher ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00037",
+                      "l’infraction.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph(
-                "L’abstention punissable peut aussi être retenue lorsque la personne est intervenue, "
-                "mais de manière insuffisante. L’aptitude de l’action à empêcher l’infraction est appréciée, "
-                "sans que l’échec ou la réussite ne soit déterminant.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00038",
+                      "L’abstention punissable peut aussi être retenue lorsque la personne est intervenue, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00039",
+                      "mais de manière insuffisante. L’aptitude de l’action à empêcher l’infraction est appréciée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00040",
+                      "sans que l’échec ou la réussite ne soit déterminant.",
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -235,11 +387,23 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Jurisprudence : deux alpinistes s’étaient contentés de protestations verbales pour dissuader "
-                        "un camarade de sectionner des cordes ; dissuasion jugée insuffisante ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                          "f00041",
+                          "Jurisprudence : deux alpinistes s’étaient contentés de protestations verbales pour dissuader ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                          "f00042",
+                          "un camarade de sectionner des cordes ; dissuasion jugée insuffisante ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 26 mars 2002)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00043",
+                      "(Cass. crim., 26 mars 2002)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -252,12 +416,28 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Absence de risque pour soi-même ou pour les tiers",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00044",
+                  "C) Absence de risque pour soi-même ou pour les tiers",
+                ),
               ),
               _Paragraph(
-                "L’abstention n’est punissable que si l’action omise pouvait être réalisée sans risque "
-                "pour l’intéressé ou pour les tiers. La crainte de représailles futures ne constitue pas "
-                "un risque justificatif au sens du texte.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00045",
+                      "L’abstention n’est punissable que si l’action omise pouvait être réalisée sans risque ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00046",
+                      "pour l’intéressé ou pour les tiers. La crainte de représailles futures ne constitue pas ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00047",
+                      "un risque justificatif au sens du texte.",
+                    ),
               ),
             ],
           ),
@@ -266,22 +446,58 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+              "f00048",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Conscience de l’imminence d’une infraction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00049",
+                  "Conscience de l’imminence d’une infraction",
+                ),
+              ),
               _Paragraph(
-                "Il ne peut y avoir abstention volontaire si l’auteur ignorait que la commission était imminente. "
-                "Celui qui n’a pas conscience du péril criminel ou délictuel exposant une victime, "
-                "ou qui ignore que le fait à venir est un crime ou un délit, n’est pas répréhensible sur ce fondement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00050",
+                      "Il ne peut y avoir abstention volontaire si l’auteur ignorait que la commission était imminente. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00051",
+                      "Celui qui n’a pas conscience du péril criminel ou délictuel exposant une victime, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00052",
+                      "ou qui ignore que le fait à venir est un crime ou un délit, n’est pas répréhensible sur ce fondement.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Volonté de ne pas empêcher l’infraction"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00053",
+                  "Volonté de ne pas empêcher l’infraction",
+                ),
+              ),
               _Paragraph(
-                "La volonté coupable n’est pas caractérisée si l’auteur pensait de bonne foi qu’il n’avait aucun moyen "
-                "d’empêcher l’infraction. Elle existe lorsque la personne s’est abstenue alors qu’elle savait qu’elle pouvait empêcher.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00054",
+                      "La volonté coupable n’est pas caractérisée si l’auteur pensait de bonne foi qu’il n’avait aucun moyen ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                      "f00055",
+                      "d’empêcher l’infraction. Elle existe lorsque la personne s’est abstenue alors qu’elle savait qu’elle pouvait empêcher.",
+                    ),
               ),
             ],
           ),
@@ -290,22 +506,30 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+              "f00056",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-6 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00057",
+                    "Article 223-6 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque le crime ou le délit contre l’intégrité corporelle est commis sur un mineur de 15 ans.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00058",
+                    " : lorsque le crime ou le délit contre l’intégrité corporelle est commis sur un mineur de 15 ans.",
+                  ),
                 ),
               ]),
             ],
@@ -315,80 +539,143 @@ class PaNonObstacleCommissionCrimeDelitPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+              "f00059",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00060",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple (délit) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00061",
+                    "Qualification simple (délit) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 223-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00062",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00063",
+                    "article 223-6 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00064",
+                    "Qualification aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 223-6 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00065",
+                    "7 ans d’emprisonnement et 100 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00066",
+                    "article 223-6 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00067",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 223-7-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00068",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00069",
+                    "l’article 223-7-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _Paragraph("Tentative : NON"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00070",
+                  "Tentative & complicité",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                  "f00071",
+                  "Tentative : NON",
+                ),
+              ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Complicité : OUI — punissable conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00072",
+                    "Complicité : OUI — punissable conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00073",
+                    "l’article 121-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart",
+                    "f00074",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -649,9 +936,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

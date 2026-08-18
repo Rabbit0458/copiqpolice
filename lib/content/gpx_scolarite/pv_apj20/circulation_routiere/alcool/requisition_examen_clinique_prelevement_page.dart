@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
   const RequisitionExamenCliniquePrelevementPage({super.key});
@@ -56,7 +57,11 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Alcool",
@@ -74,7 +79,11 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Réquisition — Examen clinique\n& prélèvement sanguin",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+              "f00002",
+              "Réquisition — Examen clinique\n& prélèvement sanguin",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,18 +95,46 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
 
           // Objectif
           _ConditionCard(
-            title: "Objectif du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+              "f00003",
+              "Objectif du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas sert à rédiger un rapport de réquisition adressé à un praticien requis "
-                "(médecin / interne / étudiant en médecine autorisé / infirmier habilité), afin de réaliser :\n"
-                "• un examen clinique médical,\n"
-                "• et un prélèvement sanguin,\n"
-                "dans le cadre de la vérification de l’état alcoolique.\n\n"
-                "La réquisition doit être claire, complète, datée, localisée, et rappeler l’obligation d’accomplir la prestation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00004",
+                      "Ce canevas sert à rédiger un rapport de réquisition adressé à un praticien requis ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00005",
+                      "(médecin / interne / étudiant en médecine autorisé / infirmier habilité), afin de réaliser :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00006",
+                      "• un examen clinique médical,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00007",
+                      "• et un prélèvement sanguin,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00008",
+                      "dans le cadre de la vérification de l’état alcoolique.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00009",
+                      "La réquisition doit être claire, complète, datée, localisée, et rappeler l’obligation d’accomplir la prestation.",
+                    ),
               ),
             ],
           ),
@@ -106,35 +143,54 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Cadre juridique (fondement)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+              "f00010",
+              "I — Cadre juridique (fondement)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les vérifications destinées à établir la preuve de l’état alcoolique peuvent être faites au moyen d’analyses et examens médicaux, cliniques et biologiques : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                    "f00011",
+                    "Les vérifications destinées à établir la preuve de l’état alcoolique peuvent être faites au moyen d’analyses et examens médicaux, cliniques et biologiques : ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "articles R. 3354-4 et suivants du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                    "f00012",
+                    "articles R. 3354-4 et suivants du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Cas d’ouverture (quand y recourir)"),
-              _BulletPoint(
-                text:
-                    "Accident de la circulation commis ou causé sous l’empire d’un état alcoolique (auteur présumé et/ou victime).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00013",
+                  "Cas d’ouverture (quand y recourir)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ivresse manifeste du conducteur (ou de l’accompagnateur d’un élève conducteur) rendant impossible l’éthylomètre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00014",
+                  "Accident de la circulation commis ou causé sous l’empire d’un état alcoolique (auteur présumé et/ou victime).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00015",
+                  "Ivresse manifeste du conducteur (ou de l’accompagnateur d’un élève conducteur) rendant impossible l’éthylomètre.",
+                ),
               ),
             ],
           ),
@@ -143,7 +199,11 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
 
           // Image CANVA
           _ConditionCard(
-            title: "Canevas (visuel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+              "f00016",
+              "Canevas (visuel)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -159,45 +219,127 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
 
           // Déroulé
           _ConditionCard(
-            title: "II — Structure du rapport (contenu attendu)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+              "f00017",
+              "II — Structure du rapport (contenu attendu)",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1 — Cadre juridique"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00018",
+                  "1 — Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "Rappeler le fondement légal et préciser pourquoi la réquisition est nécessaire "
-                "(accident sous alcool / ivresse manifeste empêchant l’éthylomètre).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00019",
+                      "Rappeler le fondement légal et préciser pourquoi la réquisition est nécessaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00020",
+                      "(accident sous alcool / ivresse manifeste empêchant l’éthylomètre).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2 — Identité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00021",
+                  "2 — Identité",
+                ),
+              ),
               _Paragraph(
-                "Préciser l’identité succincte de la personne requise (nom, qualité/fonction, établissement si nécessaire).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00022",
+                  "Préciser l’identité succincte de la personne requise (nom, qualité/fonction, établissement si nécessaire).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3 — Mission confiée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00023",
+                  "3 — Mission confiée",
+                ),
+              ),
               _Paragraph(
-                "Exposer clairement la mission :\n"
-                "• réaliser un examen clinique médical,\n"
-                "• procéder à un prélèvement sanguin,\n"
-                "• compléter les documents requis (selon organisation : partie clinique, constatations),\n"
-                "• permettre l’analyse biologique ultérieure par le laboratoire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00024",
+                      "Exposer clairement la mission :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00025",
+                      "• réaliser un examen clinique médical,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00026",
+                      "• procéder à un prélèvement sanguin,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00027",
+                      "• compléter les documents requis (selon organisation : partie clinique, constatations),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00028",
+                      "• permettre l’analyse biologique ultérieure par le laboratoire.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4 — Remise de documents"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00029",
+                  "4 — Remise de documents",
+                ),
+              ),
               _Paragraph(
-                "Lors de la remise du document, rappeler l’obligation d’accomplir la prestation et les garanties associées "
-                "(réquisition émise par autorité publique, mission dans le cadre légal).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00030",
+                      "Lors de la remise du document, rappeler l’obligation d’accomplir la prestation et les garanties associées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00031",
+                      "(réquisition émise par autorité publique, mission dans le cadre légal).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5 — Mentions terminales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00032",
+                  "5 — Mentions terminales",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le lieu de rédaction et la date, puis signer l’acte.\n"
-                "Le rapport doit être clair, daté, localisé et exploitable immédiatement au dossier.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00033",
+                      "Indiquer le lieu de rédaction et la date, puis signer l’acte.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                      "f00034",
+                      "Le rapport doit être clair, daté, localisé et exploitable immédiatement au dossier.",
+                    ),
               ),
             ],
           ),
@@ -206,37 +348,65 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
 
           // Check-list
           _ConditionCard(
-            title: "III — Check-list express (avant remise)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+              "f00035",
+              "III — Check-list express (avant remise)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Base légale citée (CSP) + motif (accident / ivresse manifeste).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00036",
+                  "Base légale citée (CSP) + motif (accident / ivresse manifeste).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Identité/qualité du requis précisée (médecin / interne / étudiant autorisé / infirmier).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00037",
+                  "Identité/qualité du requis précisée (médecin / interne / étudiant autorisé / infirmier).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mission listée clairement (examen clinique + prélèvement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00038",
+                  "Mission listée clairement (examen clinique + prélèvement).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Documents remis mentionnés + rappel de l’obligation d’accomplir la prestation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00039",
+                  "Documents remis mentionnés + rappel de l’obligation d’accomplir la prestation.",
+                ),
               ),
               _BulletPoint(
-                text: "Lieu + date + signature (mentions terminales).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00040",
+                  "Lieu + date + signature (mentions terminales).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Conseil : dans la pratique, garde une copie systématique de la réquisition pour l’annexe/dossier, "
-                        "et trace l’heure de remise au praticien ainsi que son identité/qualité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                          "f00041",
+                          "Conseil : dans la pratique, garde une copie systématique de la réquisition pour l’annexe/dossier, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                          "f00042",
+                          "et trace l’heure de remise au praticien ainsi que son identité/qualité.",
+                        ),
                   ),
                 ],
               ),
@@ -247,26 +417,42 @@ class RequisitionExamenCliniquePrelevementPage extends StatelessWidget {
 
           // Bloc “pédagogique”
           _ConditionCard(
-            title: "IV — Points de vigilance",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+              "f00043",
+              "IV — Points de vigilance",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Écrire simple et opérationnel : qui est requis + pour faire quoi + dans quel cadre + à quel titre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00044",
+                  "Écrire simple et opérationnel : qui est requis + pour faire quoi + dans quel cadre + à quel titre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le motif doit être explicite (accident / impossibilité éthylomètre).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00045",
+                  "Le motif doit être explicite (accident / impossibilité éthylomètre).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Tracer la remise : date, lieu, identité/qualité du requis, signature de l’auteur du rapport.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00046",
+                  "Tracer la remise : date, lieu, identité/qualité du requis, signature de l’auteur du rapport.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éviter les formulations floues : la mission doit être listée en actes concrets.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00047",
+                  "Éviter les formulations floues : la mission doit être listée en actes concrets.",
+                ),
               ),
             ],
           ),
@@ -522,9 +708,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -589,8 +773,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+        "f00048",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+        "f00049",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -763,7 +955,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                    "f00050",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -832,7 +1028,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart",
+                  "f00051",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -860,7 +1060,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -895,7 +1097,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

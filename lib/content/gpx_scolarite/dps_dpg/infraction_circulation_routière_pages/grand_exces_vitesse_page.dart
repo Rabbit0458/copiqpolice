@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GrandExcesVitessePage extends StatelessWidget {
   const GrandExcesVitessePage({super.key});
@@ -59,10 +60,18 @@ class GrandExcesVitessePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions circulation routière",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+            "f00002",
+            "Infractions circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class GrandExcesVitessePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le délit de grand excès de vitesse",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+              "f00003",
+              "Le délit de grand excès de vitesse",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,16 +102,36 @@ class GrandExcesVitessePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour tout conducteur d’un véhicule à moteur, déjà condamné définitivement "
-                "pour un dépassement de la vitesse maximale autorisée égal ou supérieur à 50 km/h, "
-                "de commettre à nouveau la même infraction en état de récidive (dans les conditions "
-                "prévues par le deuxième alinéa de l’article 132-11 du code pénal), constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00005",
+                      "Le fait, pour tout conducteur d’un véhicule à moteur, déjà condamné définitivement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00006",
+                      "pour un dépassement de la vitesse maximale autorisée égal ou supérieur à 50 km/h, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00007",
+                      "de commettre à nouveau la même infraction en état de récidive (dans les conditions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00008",
+                      "prévues par le deuxième alinéa de l’article 132-11 du code pénal), constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -107,22 +140,30 @@ class GrandExcesVitessePage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 413-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00010",
+                    "Article L. 413-1 I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le délit de grand excès de vitesse.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00011",
+                    " : définit et réprime le délit de grand excès de vitesse.",
+                  ),
                 ),
               ]),
             ],
@@ -132,47 +173,80 @@ class GrandExcesVitessePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Principe : de la contravention au délit (récidive)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00013",
+                  "A) Principe : de la contravention au délit (récidive)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "L’excès de vitesse égal ou supérieur à 50 km/h est, à l’origine, une contravention de 5e classe. "
-                      "Il devient un délit lorsqu’il est commis en état de récidive, selon les conditions prévues par ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                        "f00014",
+                        "L’excès de vitesse égal ou supérieur à 50 km/h est, à l’origine, une contravention de 5e classe. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                        "f00015",
+                        "Il devient un délit lorsqu’il est commis en état de récidive, selon les conditions prévues par ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’article 132-11 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00016",
+                    "l’article 132-11 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Référence contravention : "),
                 TextSpan(
-                  text: "article R. 413-14-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00017",
+                    "Référence contravention : ",
                   ),
                 ),
-                TextSpan(text: " (5e classe)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00018",
+                    "article R. 413-14-1 I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00019",
+                    " (5e classe).",
+                  ),
+                ),
               ]),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un élargissement du délai et des cas de délits assimilés en matière de récidive a été mis en place.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00020",
+                      "Un élargissement du délai et des cas de délits assimilés en matière de récidive a été mis en place.",
+                    ),
                   ),
                 ],
               ),
@@ -180,57 +254,107 @@ class GrandExcesVitessePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Un dépassement de la vitesse maximale autorisée ≥ 50 km/h",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00021",
+                  "B) Un dépassement de la vitesse maximale autorisée ≥ 50 km/h",
+                ),
               ),
               _Paragraph(
-                "Il s’agit du dépassement de la vitesse maximale à laquelle est limité le conducteur "
-                "ou la catégorie du véhicule, sur une section de route donnée, ou en fonction de circonstances particulières.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00022",
+                      "Il s’agit du dépassement de la vitesse maximale à laquelle est limité le conducteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00023",
+                      "ou la catégorie du véhicule, sur une section de route donnée, ou en fonction de circonstances particulières.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Commission en état de récidive"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00024",
+                  "C) Commission en état de récidive",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 132-11 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00025",
+                    "Article 132-11 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque la loi prévoit que la récidive d’une contravention de 5e classe constitue un délit, "
-                      "la récidive est constituée si les faits sont commis dans le délai de 3 ans "
-                      "à compter de l’expiration ou de la prescription de la précédente peine.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                        "f00026",
+                        " : lorsque la loi prévoit que la récidive d’une contravention de 5e classe constitue un délit, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                        "f00027",
+                        "la récidive est constituée si les faits sont commis dans le délai de 3 ans ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                        "f00028",
+                        "à compter de l’expiration ou de la prescription de la précédente peine.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Conséquence : le délai de récidive est porté de 1 an à 3 ans pour cette infraction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00029",
+                  "Conséquence : le délai de récidive est porté de 1 an à 3 ans pour cette infraction.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 132-16-2 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00030",
+                    "Article 132-16-2 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : certains délits du Code de la route sont considérés, au regard de la récidive, comme une même infraction.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00031",
+                    " : certains délits du Code de la route sont considérés, au regard de la récidive, comme une même infraction.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "En pratique, l’excès de vitesse ≥ 50 km/h devient délictuel lorsqu’il est commis après ces mêmes faits "
-                "ou après certains délits assimilés (ex. refus d’obtempérer, défaut de permis, conduite en état d’ivresse "
-                "ou sous l’empire d’un état alcoolique, conduite après usage de stupéfiants).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00032",
+                      "En pratique, l’excès de vitesse ≥ 50 km/h devient délictuel lorsqu’il est commis après ces mêmes faits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00033",
+                      "ou après certains délits assimilés (ex. refus d’obtempérer, défaut de permis, conduite en état d’ivresse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00034",
+                      "ou sous l’empire d’un état alcoolique, conduite après usage de stupéfiants).",
+                    ),
               ),
             ],
           ),
@@ -239,17 +363,33 @@ class GrandExcesVitessePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+              "f00035",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conscience et volonté de commettre un dépassement ≥ 50 km/h en récidive",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00036",
+                  "Conscience et volonté de commettre un dépassement ≥ 50 km/h en récidive",
+                ),
               ),
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : l’auteur doit avoir conscience de dépasser la vitesse maximale autorisée "
-                "d’au moins 50 km/h et agir volontairement, en situation de récidive.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00037",
+                      "Il s’agit d’une infraction intentionnelle : l’auteur doit avoir conscience de dépasser la vitesse maximale autorisée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                      "f00038",
+                      "d’au moins 50 km/h et agir volontairement, en situation de récidive.",
+                    ),
               ),
             ],
           ),
@@ -258,58 +398,123 @@ class GrandExcesVitessePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+              "f00039",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [_Paragraph("Aucune.")],
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00040",
+                  "Aucune.",
+                ),
+              ),
+            ],
           ),
 
           const SizedBox(height: 14),
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+              "f00041",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00042",
+                  "Peines encourues",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : "),
-                TextSpan(text: "délit. "),
-                TextSpan(text: "— Peines principales : "),
                 TextSpan(
-                  text: "3 mois d’emprisonnement et 3 750 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00043",
+                    "Qualification : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 413-1 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00044",
+                    "délit. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00045",
+                    "— Peines principales : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00046",
+                    "3 mois d’emprisonnement et 3 750 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00047",
+                    "Article L. 413-1 I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00048",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                  "f00049",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00050",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00051",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/grand_exces_vitesse_page.dart",
+                    "f00052",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -567,9 +772,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

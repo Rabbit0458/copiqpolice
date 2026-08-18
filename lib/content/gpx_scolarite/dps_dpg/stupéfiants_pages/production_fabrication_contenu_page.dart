@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class StupefiantsProductionFabricationPage extends StatelessWidget {
   const StupefiantsProductionFabricationPage({super.key});
@@ -66,10 +67,18 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La production ou la fabrication\nillicites de stupéfiants",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+              "f00003",
+              "La production ou la fabrication\nillicites de stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,13 +109,21 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de produire ou fabriquer de manière illicite des stupéfiants constitue une infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00005",
+                  "Le fait de produire ou fabriquer de manière illicite des stupéfiants constitue une infraction.",
+                ),
               ),
             ],
           ),
@@ -111,16 +132,29 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-35 alinéa 1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : réprime la production ou la fabrication illicites de stupéfiants.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00007",
+                    "Article 222-35 alinéa 1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00008",
+                    " : réprime la production ou la fabrication illicites de stupéfiants.",
+                  ),
                 ),
               ]),
             ],
@@ -130,57 +164,165 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+              "f00009",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) La production ou la fabrication illicites"),
-              const _Paragraph(
-                "Ces deux notions ont un point commun : elles donnent naissance à une substance classée comme stupéfiant.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00010",
+                  "A) La production ou la fabrication illicites",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00011",
+                  "Ces deux notions ont un point commun : elles donnent naissance à une substance classée comme stupéfiant.",
+                ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("1) La production"),
-              const _Paragraph(
-                "La production vise les opérations consistant à recueillir, par exemple, l’opium, la feuille de coca, "
-                "le cannabis ou la résine de cannabis des plantes qui les produisent.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00012",
+                  "1) La production",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00013",
+                      "La production vise les opérations consistant à recueillir, par exemple, l’opium, la feuille de coca, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00014",
+                      "le cannabis ou la résine de cannabis des plantes qui les produisent.",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("2) La fabrication"),
-              const _Paragraph(
-                "La fabrication recouvre les opérations autres que la production permettant d’obtenir des stupéfiants. "
-                "Elle comprend notamment la purification, ainsi que la transformation de stupéfiants en d’autres stupéfiants.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00015",
+                  "2) La fabrication",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00016",
+                      "La fabrication recouvre les opérations autres que la production permettant d’obtenir des stupéfiants. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00017",
+                      "Elle comprend notamment la purification, ainsi que la transformation de stupéfiants en d’autres stupéfiants.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Un produit stupéfiant"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00018",
+                  "B) Un produit stupéfiant",
+                ),
+              ),
               _Paragraph.rich([
-                _law("Article 222-41 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants "
-                      "en application de ",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00019",
+                    "Article 222-41 du Code pénal",
+                  ),
                 ),
-                _law("l’article L.5132-7 du Code de la santé publique"),
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00020",
+                        " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00021",
+                        "en application de ",
+                      ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00022",
+                    "l’article L.5132-7 du Code de la santé publique",
+                  ),
+                ),
                 const TextSpan(text: " ».\n\n"),
-                _law("Article L.5132-7 du Code de la santé publique"),
-                const TextSpan(
-                  text:
-                      " : une substance est classée comme stupéfiant par décision du directeur général "
-                      "de l’Agence nationale de sécurité du médicament et des produits de santé.\n\n"
-                      "Ainsi, bien que d’autres substances puissent avoir des effets toxicomanogènes, seules doivent être retenues "
-                      "celles figurant sur les listes arrêtées par voie réglementaire.\n\n"
-                      "La liste exhaustive et évolutive des substances classées comme stupéfiants figure en annexes de ",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00023",
+                    "Article L.5132-7 du Code de la santé publique",
+                  ),
                 ),
-                _law("l’arrêté du 22 février 1990"),
-                const TextSpan(
+                TextSpan(
                   text:
-                      " : l’infraction ne s’applique donc qu’à une substance figurant sur cette liste, "
-                      "désignée avec suffisamment de précision.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00024",
+                        " : une substance est classée comme stupéfiant par décision du directeur général ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00025",
+                        "de l’Agence nationale de sécurité du médicament et des produits de santé.\n\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00026",
+                        "Ainsi, bien que d’autres substances puissent avoir des effets toxicomanogènes, seules doivent être retenues ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00027",
+                        "celles figurant sur les listes arrêtées par voie réglementaire.\n\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00028",
+                        "La liste exhaustive et évolutive des substances classées comme stupéfiants figure en annexes de ",
+                      ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00029",
+                    "l’arrêté du 22 février 1990",
+                  ),
+                ),
+                TextSpan(
+                  text:
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00030",
+                        " : l’infraction ne s’applique donc qu’à une substance figurant sur cette liste, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                        "f00031",
+                        "désignée avec suffisamment de précision.",
+                      ),
                 ),
               ]),
             ],
@@ -190,14 +332,26 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+              "f00032",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intention coupable est requise : produire ou fabriquer doit être réalisé en connaissance de cause. "
-                "Elle peut être mise en évidence par les actes matériels eux-mêmes, mais aussi par le profit tiré de ces actes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00033",
+                      "L’intention coupable est requise : produire ou fabriquer doit être réalisé en connaissance de cause. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00034",
+                      "Elle peut être mise en évidence par les actes matériels eux-mêmes, mais aussi par le profit tiré de ces actes.",
+                    ),
               ),
             ],
           ),
@@ -206,34 +360,63 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+              "f00035",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-35 alinéa 2 du Code pénal"),
-                const TextSpan(
-                  text: " : lorsque les faits sont commis en bande organisée.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00036",
+                    "Article 222-35 alinéa 2 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00037",
+                    " : lorsque les faits sont commis en bande organisée.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article 222-37-1 alinéa 1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : lorsque l’infraction est commise par un majeur agissant avec l’aide ou l’assistance, directe ou indirecte, d’un mineur.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00038",
+                    "Article 222-37-1 alinéa 1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00039",
+                    " : lorsque l’infraction est commise par un majeur agissant avec l’aide ou l’assistance, directe ou indirecte, d’un mineur.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Le mineur est utilisé pour le transport, la détention, l’offre, la cession, l’acquisition ou la vente de stupéfiants.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00040",
+                  "Le mineur est utilisé pour le transport, la détention, l’offre, la cession, l’acquisition ou la vente de stupéfiants.",
+                ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint(
-                text:
-                    "L’aide/assistance peut être caractérisée par tout acte de sollicitation, d’incitation ou d’organisation intégrant un mineur dans un réseau (participation volontaire ou contrainte).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00041",
+                  "L’aide/assistance peut être caractérisée par tout acte de sollicitation, d’incitation ou d’organisation intégrant un mineur dans un réseau (participation volontaire ou contrainte).",
+                ),
               ),
             ],
           ),
@@ -242,106 +425,259 @@ class StupefiantsProductionFabricationPage extends StatelessWidget {
 
           // Répression + tentative/complicité + réduction/exemption
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+              "f00042",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (crime) : "),
-                const TextSpan(
-                  text:
-                      "20 ans de réclusion criminelle et 7 500 000 € d’amende, période de sûreté. — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00043",
+                  "Peines encourues — personnes physiques",
                 ),
-                _law("article 222-35 alinéa 1 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00044",
+                    "Qualification simple (crime) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00045",
+                    "20 ans de réclusion criminelle et 7 500 000 € d’amende, période de sûreté. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00046",
+                    "article 222-35 alinéa 1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (bande organisée) : "),
-                const TextSpan(
-                  text:
-                      "30 ans de réclusion criminelle et 7 500 000 € d’amende, période de sûreté. — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00047",
+                    "Aggravée (bande organisée) : ",
+                  ),
                 ),
-                _law("article 222-35 alinéa 2 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00048",
+                    "30 ans de réclusion criminelle et 7 500 000 € d’amende, période de sûreté. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00049",
+                    "article 222-35 alinéa 2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Aggravée (majeur + aide/assistance d’un mineur) : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00050",
+                    "Aggravée (majeur + aide/assistance d’un mineur) : ",
+                  ),
                 ),
-                const TextSpan(
-                  text:
-                      "30 ans de réclusion criminelle et 7 500 000 € d’amende, période de sûreté. — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00051",
+                    "30 ans de réclusion criminelle et 7 500 000 € d’amende, période de sûreté. — ",
+                  ),
                 ),
-                _law("article 222-37-1 2° du Code pénal"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00052",
+                    "article 222-37-1 2° du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (cumul des circonstances) : "),
-                const TextSpan(
-                  text:
-                      "réclusion criminelle à perpétuité et 7 500 000 € d’amende, période de sûreté. — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00053",
+                    "Aggravée (cumul des circonstances) : ",
+                  ),
                 ),
-                _law("article 222-37-1 3° du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00054",
+                    "réclusion criminelle à perpétuité et 7 500 000 € d’amende, période de sûreté. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00055",
+                    "article 222-37-1 3° du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00056",
+                  "Personnes morales",
                 ),
-                _law("l’article 222-42 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00057",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00058",
+                    "l’article 222-42 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
-                text:
-                    "Tentative : OUI (toujours punissable en matière de crime).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00059",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00060",
+                  "Tentative : OUI (toujours punissable en matière de crime).",
+                ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément aux "),
-                _law("articles 121-6 et 121-7 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (aide et assistance, provocation, instructions données).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00061",
+                    "Complicité : OUI — conformément aux ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00062",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                    "f00063",
+                    " (aide et assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                  "f00064",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Réduction de peine : prévue par "),
-                  _law("l’article 222-43 du Code pénal"),
-                  const TextSpan(
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00065",
+                      "Réduction de peine : prévue par ",
+                    ),
+                  ),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00066",
+                      "l’article 222-43 du Code pénal",
+                    ),
+                  ),
+                  TextSpan(
                     text:
-                        " (réduction des deux tiers si avertissement des autorités permettant de faire cesser les agissements "
-                        "ou d’identifier les autres coupables ; cas particulier de l’article 222-34 : perpétuité ramenée à 20 ans).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                          "f00067",
+                          " (réduction des deux tiers si avertissement des autorités permettant de faire cesser les agissements ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                          "f00068",
+                          "ou d’identifier les autres coupables ; cas particulier de l’article 222-34 : perpétuité ramenée à 20 ans).",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Exemption de peine : prévue par "),
-                  _law("l’article 222-43-1 du Code pénal"),
-                  const TextSpan(
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00069",
+                      "Exemption de peine : prévue par ",
+                    ),
+                  ),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                      "f00070",
+                      "l’article 222-43-1 du Code pénal",
+                    ),
+                  ),
+                  TextSpan(
                     text:
-                        " (exemption si avertissement de l’autorité administrative/judiciaire permettant d’éviter la réalisation "
-                        "de l’infraction et d’identifier les auteurs/complices).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                          "f00071",
+                          " (exemption si avertissement de l’autorité administrative/judiciaire permettant d’éviter la réalisation ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/production_fabrication_contenu_page.dart",
+                          "f00072",
+                          "de l’infraction et d’identifier les auteurs/complices).",
+                        ),
                   ),
                 ],
               ),
@@ -599,9 +935,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

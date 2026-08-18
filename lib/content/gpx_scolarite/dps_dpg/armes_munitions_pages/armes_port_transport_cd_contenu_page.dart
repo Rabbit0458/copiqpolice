@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ArmesPortTransportCDPage extends StatelessWidget {
   const ArmesPortTransportCDPage({super.key});
@@ -56,10 +57,18 @@ class ArmesPortTransportCDPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Armes & munitions",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+            "f00002",
+            "Armes & munitions",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ArmesPortTransportCDPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Port sans autorisation / transport sans motif légitime (cat. C ou D)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+              "f00003",
+              "Port sans autorisation / transport sans motif légitime (cat. C ou D)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,38 +99,72 @@ class ArmesPortTransportCDPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Hors du domicile (et sauf exceptions), le fait d’être trouvé porteur ou d’effectuer sans motif légitime le transport ",
-                ),
-                const TextSpan(
-                  text:
-                      "d’armes de catégories C ou D (liste fixée par arrêté), de munitions ou de leurs éléments ",
-                ),
-                const TextSpan(text: "constitue un "),
                 TextSpan(
-                  text: "délit",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00005",
+                    "Hors du domicile (et sauf exceptions), le fait d’être trouvé porteur ou d’effectuer sans motif légitime le transport ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00006",
+                    "d’armes de catégories C ou D (liste fixée par arrêté), de munitions ou de leurs éléments ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00007",
+                    "constitue un ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00008",
+                    "délit",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : const Color(0xFF050505),
                   ),
                 ),
-                const TextSpan(
-                  text: ", même si l’on en est régulièrement détenteur.",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00009",
+                    ", même si l’on en est régulièrement détenteur.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Exceptions : "),
                   TextSpan(
-                    text: "articles L. 315-1 et L. 315-2 du C.S.I.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00010",
+                      "Exceptions : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00011",
+                      "articles L. 315-1 et L. 315-2 du C.S.I.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -133,34 +180,54 @@ class ArmesPortTransportCDPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+              "f00012",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 317-8 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00013",
+                    "Article L. 317-8 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : prévoit et réprime le port et le transport sans motif légitime des armes, munitions ou éléments des catégories C ou D "
-                      "(à l’exception de ceux présentant une faible dangerosité et figurant sur une liste fixée par arrêté).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                        "f00014",
+                        " : prévoit et réprime le port et le transport sans motif légitime des armes, munitions ou éléments des catégories C ou D ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                        "f00015",
+                        "(à l’exception de ceux présentant une faible dangerosité et figurant sur une liste fixée par arrêté).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Réserves / exceptions : "),
                 TextSpan(
-                  text: "articles L. 315-1 et L. 315-2 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00016",
+                    "Réserves / exceptions : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00017",
+                    "articles L. 315-1 et L. 315-2 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -171,47 +238,110 @@ class ArmesPortTransportCDPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+              "f00018",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Port ou transport hors du domicile"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00019",
+                  "A) Port ou transport hors du domicile",
+                ),
+              ),
               _Paragraph(
-                "L’infraction vise des faits commis hors du domicile, selon les mêmes logiques que pour les catégories A ou B : "
-                "l’interdiction est le principe, les dérogations sont encadrées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00020",
+                      "L’infraction vise des faits commis hors du domicile, selon les mêmes logiques que pour les catégories A ou B : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00021",
+                      "l’interdiction est le principe, les dérogations sont encadrées.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("1) Le port"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00022",
+                  "1) Le port",
+                ),
+              ),
               _Paragraph(
-                "Le port, c’est le fait d’avoir l’arme sur soi (ceinture, étui, poche, etc.) et utilisable immédiatement.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00023",
+                  "Le port, c’est le fait d’avoir l’arme sur soi (ceinture, étui, poche, etc.) et utilisable immédiatement.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Le transport"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00024",
+                  "2) Le transport",
+                ),
+              ),
               _Paragraph(
-                "Le transport, c’est déplacer une arme d’un lieu à un autre (hors domicile) en l’ayant auprès de soi, mais inutilisable immédiatement "
-                "(ex. dans une valise, une housse, le coffre d’un véhicule, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00025",
+                      "Le transport, c’est déplacer une arme d’un lieu à un autre (hors domicile) en l’ayant auprès de soi, mais inutilisable immédiatement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00026",
+                      "(ex. dans une valise, une housse, le coffre d’un véhicule, etc.).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Armes / munitions / éléments concernés"),
-              _BulletPoint(
-                text: "Catégorie C : armes soumises à déclaration.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00027",
+                  "B) Armes / munitions / éléments concernés",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Catégorie D : uniquement celles figurant sur une liste fixée par arrêté (hors faible dangerosité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00028",
+                  "Catégorie C : armes soumises à déclaration.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00029",
+                  "Catégorie D : uniquement celles figurant sur une liste fixée par arrêté (hors faible dangerosité).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le législateur inclut aussi les éléments d’armes (même isolés) pour éviter le transport d’une arme en pièces détachées "
-                        "afin de la remonter au lieu de destination ou d’emploi.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                          "f00030",
+                          "Le législateur inclut aussi les éléments d’armes (même isolés) pour éviter le transport d’une arme en pièces détachées ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                          "f00031",
+                          "afin de la remonter au lieu de destination ou d’emploi.",
+                        ),
                   ),
                 ],
               ),
@@ -219,18 +349,60 @@ class ArmesPortTransportCDPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Dérogations : le motif légitime de transport",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00032",
+                  "C) Dérogations : le motif légitime de transport",
+                ),
               ),
               _Paragraph(
-                "Le transport d’une arme, de munitions ou d’éléments d’arme de catégorie C ou D (sauf cas où il est libre) est admis "
-                "s’il existe un motif légitime lié au déplacement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00033",
+                      "Le transport d’une arme, de munitions ou d’éléments d’arme de catégorie C ou D (sauf cas où il est libre) est admis ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                      "f00034",
+                      "s’il existe un motif légitime lié au déplacement.",
+                    ),
               ),
               SizedBox(height: 8),
-              _IntroBullet(text: "Déménagement."),
-              _IntroBullet(text: "Trajet domicile ↔ armurerie."),
-              _IntroBullet(text: "Compétition ou entraînement."),
-              _IntroBullet(text: "Chasse (dans le cadre prévu)."),
-              _IntroBullet(text: "Reconstitution historique."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00035",
+                  "Déménagement.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00036",
+                  "Trajet domicile ↔ armurerie.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00037",
+                  "Compétition ou entraînement.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00038",
+                  "Chasse (dans le cadre prévu).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00039",
+                  "Reconstitution historique.",
+                ),
+              ),
             ],
           ),
 
@@ -238,23 +410,51 @@ class ArmesPortTransportCDPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+              "f00040",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : l’auteur a conscience de ne pas respecter la loi.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00041",
+                  "Il s’agit d’une infraction intentionnelle : l’auteur a conscience de ne pas respecter la loi.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("A) Volonté de porter / transporter hors du domicile"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00042",
+                  "A) Volonté de porter / transporter hors du domicile",
+                ),
+              ),
               _Paragraph(
-                "L’individu décide de porter ou transporter l’arme (ou munitions/éléments) en dehors de son domicile.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00043",
+                  "L’individu décide de porter ou transporter l’arme (ou munitions/éléments) en dehors de son domicile.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Conscience de l’absence de motif légitime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00044",
+                  "B) Conscience de l’absence de motif légitime",
+                ),
+              ),
               _Paragraph(
-                "L’individu sait qu’il porte ou transporte sans motif légitime au sens de la réglementation.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00045",
+                  "L’individu sait qu’il porte ou transporte sans motif légitime au sens de la réglementation.",
+                ),
               ),
             ],
           ),
@@ -263,25 +463,33 @@ class ArmesPortTransportCDPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+              "f00046",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 317-9 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00047",
+                    "Article L. 317-9 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Si le transport d’armes est effectué par au moins deux personnes, ou si deux personnes au moins sont trouvées porteuses d’armes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00048",
+                  "Si le transport d’armes est effectué par au moins deux personnes, ou si deux personnes au moins sont trouvées porteuses d’armes.",
+                ),
               ),
             ],
           ),
@@ -290,154 +498,293 @@ class ArmesPortTransportCDPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+              "f00049",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Personnes physiques — peines principales"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00050",
+                  "A) Personnes physiques — peines principales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : "),
                 TextSpan(
-                  text: "Délit",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00051",
+                    "Qualification : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00052",
+                    "Délit",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Catégorie C"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00053",
+                  "Catégorie C",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "• Simple : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00054",
+                    "• Simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 317-8 2° du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00055",
+                    "2 ans d’emprisonnement et 30 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00056",
+                    "article L. 317-8 2° du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "• Aggravée : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00057",
+                    "• Aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 317-9 2° du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00058",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00059",
+                    "article L. 317-9 2° du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Catégorie D"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00060",
+                  "Catégorie D",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "• Simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00061",
+                    "• Simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 317-8 3° du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00062",
+                    "1 an d’emprisonnement et 15 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00063",
+                    "article L. 317-8 3° du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "• Aggravée : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00064",
+                    "• Aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 317-9 3° du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00065",
+                    "2 ans d’emprisonnement et 30 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00066",
+                    "article L. 317-9 3° du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Personnes morales"),
-              _BulletPoint(text: "NON (non prévu ici)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00067",
+                  "B) Personnes morales",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00068",
+                  "NON (non prévu ici).",
+                ),
+              ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Amende forfaitaire délictuelle (AFD)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00069",
+                  "C) Amende forfaitaire délictuelle (AFD)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Le dernier alinéa de "),
                 TextSpan(
-                  text: "l’article L. 317-8 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00070",
+                    "Le dernier alinéa de ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " permet de recourir à la procédure d’amende forfaitaire pour le délit (catégorie D), sauf s’il s’agit d’armes à feu.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00071",
+                    "l’article L. 317-8 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00072",
+                    " permet de recourir à la procédure d’amende forfaitaire pour le délit (catégorie D), sauf s’il s’agit d’armes à feu.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Procédure prévue par "),
                 TextSpan(
-                  text:
-                      "les articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00073",
+                    "Procédure prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00074",
+                    "les articles 495-17 à 495-25 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                  "f00075",
+                  "D) Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00076",
+                    "Tentative : ",
+                  ),
+                ),
                 TextSpan(
                   text: "NON",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (en l’absence de texte spécial : la tentative n’est punissable que si la loi le prévoit).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00077",
+                    " (en l’absence de texte spécial : la tentative n’est punissable que si la loi le prévoit).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00078",
+                    "Complicité : ",
+                  ),
+                ),
                 TextSpan(
                   text: "OUI",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: ", conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00079",
+                    ", conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00080",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart",
+                    "f00081",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -695,9 +1042,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

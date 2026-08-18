@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ContraventionPage extends StatelessWidget {
   const ContraventionPage({super.key});
@@ -46,7 +47,11 @@ class ContraventionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
       ),
       body: CustomScrollView(
@@ -55,7 +60,11 @@ class ContraventionPage extends StatelessWidget {
           SliverToBoxAdapter(
             child: _HeaderHero(
               imagePath: _headerImage,
-              title: 'La CONTRAVENTION',
+              title: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                "f00002",
+                'La CONTRAVENTION',
+              ),
               isDark: isDark,
             ),
           ),
@@ -65,7 +74,11 @@ class ContraventionPage extends StatelessWidget {
               children: [
                 // Définition
                 _SectionCard(
-                  title: 'Définition et juridiction',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                    "f00003",
+                    'Définition et juridiction',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -74,9 +87,21 @@ class ContraventionPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _p(
-                        "La contravention est l’infraction pénale la moins grave. "
-                        "Elle relève de la compétence du tribunal de police. "
-                        "Les contraventions sont classées de la 1ère à la 5ème classe.",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00004",
+                              "La contravention est l’infraction pénale la moins grave. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00005",
+                              "Elle relève de la compétence du tribunal de police. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00006",
+                              "Les contraventions sont classées de la 1ère à la 5ème classe.",
+                            ),
                         textSoft,
                       ),
                     ],
@@ -85,8 +110,11 @@ class ContraventionPage extends StatelessWidget {
 
                 // Montant amendes maximum (Article 131-13)
                 _Accordion(
-                  title:
-                      'Montant légal maximal des amendes (Article 131-13 du Code pénal)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                    "f00007",
+                    'Montant légal maximal des amendes (Article 131-13 du Code pénal)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -96,15 +124,55 @@ class ContraventionPage extends StatelessWidget {
                     textMain: textMain,
                     textSoft: textSoft,
                     header1: 'Classe',
-                    header2: 'Montant maximal légal',
-                    rows: const [
-                      ['1ère classe', '38 €'],
-                      ['2ème classe', '150 €'],
-                      ['3ème classe', '450 €'],
-                      ['4ème classe', '750 €'],
+                    header2: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                      "f00008",
+                      'Montant maximal légal',
+                    ),
+                    rows: [
                       [
-                        '5ème classe',
-                        '1 500 € (porté à 3 000 € en cas de récidive lorsque le texte le prévoit)',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00009",
+                          '1ère classe',
+                        ),
+                        '38 €',
+                      ],
+                      [
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00010",
+                          '2ème classe',
+                        ),
+                        '150 €',
+                      ],
+                      [
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00011",
+                          '3ème classe',
+                        ),
+                        '450 €',
+                      ],
+                      [
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00012",
+                          '4ème classe',
+                        ),
+                        '750 €',
+                      ],
+                      [
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00013",
+                          '5ème classe',
+                        ),
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00014",
+                          '1 500 € (porté à 3 000 € en cas de récidive lorsque le texte le prévoit)',
+                        ),
                       ],
                     ],
                   ),
@@ -112,7 +180,11 @@ class ContraventionPage extends StatelessWidget {
 
                 // Amende forfaitaire (1 -> 4)
                 _Accordion(
-                  title: 'Amende forfaitaire (classes de la 1ère à la 4ème)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                    "f00015",
+                    'Amende forfaitaire (classes de la 1ère à la 4ème)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -121,8 +193,16 @@ class ContraventionPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _p(
-                        "Certaines contraventions des quatre 1ères classes sont punies d’une amende forfaitaire "
-                        "(montants indicatifs ci-dessous).",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00016",
+                              "Certaines contraventions des quatre 1ères classes sont punies d’une amende forfaitaire ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00017",
+                              "(montants indicatifs ci-dessous).",
+                            ),
                         textSoft,
                       ),
                       const SizedBox(height: 10),
@@ -131,17 +211,57 @@ class ContraventionPage extends StatelessWidget {
                         textMain: textMain,
                         textSoft: textSoft,
                         header1: 'Classe',
-                        header2: 'Montant forfaitaire indicatif',
-                        rows: const [
-                          ['1ère classe', '38 €'],
-                          ['2ème classe', '150 €'],
-                          ['3ème classe', '450 €'],
-                          ['4ème classe', '750 €'],
+                        header2: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00018",
+                          'Montant forfaitaire indicatif',
+                        ),
+                        rows: [
+                          [
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00019",
+                              '1ère classe',
+                            ),
+                            '38 €',
+                          ],
+                          [
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00020",
+                              '2ème classe',
+                            ),
+                            '150 €',
+                          ],
+                          [
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00021",
+                              '3ème classe',
+                            ),
+                            '450 €',
+                          ],
+                          [
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00022",
+                              '4ème classe',
+                            ),
+                            '750 €',
+                          ],
                         ],
                       ),
                       _note(
-                        "Les montants peuvent varier selon les textes et selon le régime minoré / normal / majoré. "
-                        "Toujours vérifier le texte réprimant l’infraction et les barèmes en vigueur.",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00023",
+                              "Les montants peuvent varier selon les textes et selon le régime minoré / normal / majoré. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00024",
+                              "Toujours vérifier le texte réprimant l’infraction et les barèmes en vigueur.",
+                            ),
                         textSoft,
                         isDark,
                       ),
@@ -151,7 +271,11 @@ class ContraventionPage extends StatelessWidget {
 
                 // Exemples par classe
                 _Accordion(
-                  title: 'Exemples d’infractions par classe (repères)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                    "f00025",
+                    'Exemples d’infractions par classe (repères)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -159,113 +283,240 @@ class ContraventionPage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle("1ère classe", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00026",
+                          "1ère classe",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Infractions aux règles de stationnement (exemple : stationnement gênant).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00027",
+                          "Infractions aux règles de stationnement (exemple : stationnement gênant).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       const SizedBox(height: 8),
 
-                      _subtitle("2ème classe", textMain),
-                      _bullet(
-                        "Changement de direction sans utiliser les indicateurs de direction.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet("Non-paiement d’un péage.", textSoft, textMain),
-                      _bullet(
-                        "Absence d’attestation d’assurance (cas contraventionnel).",
-                        textSoft,
-                        textMain,
-                      ),
-                      const SizedBox(height: 8),
-
-                      _subtitle("3ème classe", textMain),
-                      _bullet(
-                        "Excès de vitesse inférieur à 20 km/h lorsque la vitesse maximale autorisée est supérieure à 50 km/h.",
-                        textSoft,
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00028",
+                          "2ème classe",
+                        ),
                         textMain,
                       ),
                       _bullet(
-                        "Dispositifs de freinage non conformes.",
-                        textSoft,
-                        textMain,
-                      ),
-                      const SizedBox(height: 8),
-
-                      _subtitle("4ème classe", textMain),
-                      _bullet(
-                        "Utilisation d’un téléphone tenu en main.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00029",
+                          "Changement de direction sans utiliser les indicateurs de direction.",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Circulation sur la bande d’arrêt d’urgence.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00030",
+                          "Non-paiement d’un péage.",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Conduite sans ceinture de sécurité.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet("Refus de priorité.", textSoft, textMain),
-                      _bullet(
-                        "Non-respect d’un feu rouge ou d’un panneau stop.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Franchissement ou chevauchement d’une ligne continue.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Absence de contrôle technique périodique.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Conduite en état alcoolique (contraventionnelle selon les seuils).",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Circulation en sens interdit.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Non-respect des distances de sécurité.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Excès de vitesse inférieur à 50 km/h.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Dépassement dangereux ou sans visibilité.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Circulation sans éclairage.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Absence de certificat d’immatriculation.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00031",
+                          "Absence d’attestation d’assurance (cas contraventionnel).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       const SizedBox(height: 8),
 
-                      _subtitle("5ème classe", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00032",
+                          "3ème classe",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Excès de vitesse supérieur à 50 km/h (hors bascule délictuelle prévue par certains textes).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00033",
+                          "Excès de vitesse inférieur à 20 km/h lorsque la vitesse maximale autorisée est supérieure à 50 km/h.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00034",
+                          "Dispositifs de freinage non conformes.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      const SizedBox(height: 8),
+
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00035",
+                          "4ème classe",
+                        ),
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00036",
+                          "Utilisation d’un téléphone tenu en main.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00037",
+                          "Circulation sur la bande d’arrêt d’urgence.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00038",
+                          "Conduite sans ceinture de sécurité.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00039",
+                          "Refus de priorité.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00040",
+                          "Non-respect d’un feu rouge ou d’un panneau stop.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00041",
+                          "Franchissement ou chevauchement d’une ligne continue.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00042",
+                          "Absence de contrôle technique périodique.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00043",
+                          "Conduite en état alcoolique (contraventionnelle selon les seuils).",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00044",
+                          "Circulation en sens interdit.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00045",
+                          "Non-respect des distances de sécurité.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00046",
+                          "Excès de vitesse inférieur à 50 km/h.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00047",
+                          "Dépassement dangereux ou sans visibilité.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00048",
+                          "Circulation sans éclairage.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00049",
+                          "Absence de certificat d’immatriculation.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      const SizedBox(height: 8),
+
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00050",
+                          "5ème classe",
+                        ),
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00051",
+                          "Excès de vitesse supérieur à 50 km/h (hors bascule délictuelle prévue par certains textes).",
+                        ),
                         textSoft,
                         textMain,
                       ),
@@ -275,7 +526,11 @@ class ContraventionPage extends StatelessWidget {
 
                 // Peines prévues par le Code pénal
                 _Accordion(
-                  title: 'Peines contraventionnelles — Code pénal',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                    "f00052",
+                    'Peines contraventionnelles — Code pénal',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -284,137 +539,261 @@ class ContraventionPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _subtitle(
-                        "Article 131-12 du Code pénal — Principe",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00053",
+                          "Article 131-12 du Code pénal — Principe",
+                        ),
                         textMain,
                       ),
-                      _bullet("1° L’amende.", textSoft, textMain),
                       _bullet(
-                        "2° Les peines privatives ou restrictives de droits (Article 131-14 du Code pénal).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00054",
+                          "1° L’amende.",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "3° La peine de sanction-réparation (Article 131-15-1 du Code pénal).",
-                        textSoft,
-                        textMain,
-                      ),
-                      const SizedBox(height: 10),
-
-                      _subtitle(
-                        "Article 131-14 du Code pénal — 5ème classe : peines privatives ou restrictives de droits possibles",
-                        textMain,
-                      ),
-                      _bullet(
-                        "Suspension du permis de conduire (jusqu’à un an, sauf texte excluant cette limitation).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00055",
+                          "2° Les peines privatives ou restrictives de droits (Article 131-14 du Code pénal).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Immobilisation d’un ou de plusieurs véhicules (jusqu’à six mois).",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Confiscation d’une ou de plusieurs armes.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Retrait du permis de chasser.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Interdiction, pour une durée d’un an au plus, d’émettre certains chèques et d’utiliser des cartes de paiement.",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Confiscation de la chose ayant servi à commettre l’infraction ou qui en est le produit (sauf en matière de délit de presse).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00056",
+                          "3° La peine de sanction-réparation (Article 131-15-1 du Code pénal).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       const SizedBox(height: 10),
 
                       _subtitle(
-                        "Article 131-16 du Code pénal — Peines complémentaires pouvant être prévues par le règlement",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00057",
+                          "Article 131-14 du Code pénal — 5ème classe : peines privatives ou restrictives de droits possibles",
+                        ),
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00058",
+                          "Suspension du permis de conduire (jusqu’à un an, sauf texte excluant cette limitation).",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00059",
+                          "Immobilisation d’un ou de plusieurs véhicules (jusqu’à six mois).",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00060",
+                          "Confiscation d’une ou de plusieurs armes.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00061",
+                          "Retrait du permis de chasser.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00062",
+                          "Interdiction, pour une durée d’un an au plus, d’émettre certains chèques et d’utiliser des cartes de paiement.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00063",
+                          "Confiscation de la chose ayant servi à commettre l’infraction ou qui en est le produit (sauf en matière de délit de presse).",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      const SizedBox(height: 10),
+
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00064",
+                          "Article 131-16 du Code pénal — Peines complémentaires pouvant être prévues par le règlement",
+                        ),
                         textMain,
                       ),
                       _p(
-                        "Selon le texte réprimant la contravention, le règlement peut notamment prévoir :",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00065",
+                          "Selon le texte réprimant la contravention, le règlement peut notamment prévoir :",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Suspension du permis de conduire (jusqu’à trois ans).",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet(
-                        "Interdiction de détenir ou de porter une arme soumise à autorisation (jusqu’à trois ans).",
-                        textSoft,
-                        textMain,
-                      ),
-                      _bullet("Confiscation d’armes.", textSoft, textMain),
-                      _bullet(
-                        "Retrait du permis de chasser (jusqu’à trois ans).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00066",
+                          "Suspension du permis de conduire (jusqu’à trois ans).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Confiscation de l’objet ou du produit de l’infraction.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00067",
+                          "Interdiction de détenir ou de porter une arme soumise à autorisation (jusqu’à trois ans).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Interdiction de conduire certains véhicules terrestres à moteur (jusqu’à trois ans).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00068",
+                          "Confiscation d’armes.",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Peines de stage (par exemple : sécurité routière).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00069",
+                          "Retrait du permis de chasser (jusqu’à trois ans).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Confiscation d’un animal utilisé pour l’infraction ou contre lequel l’infraction a été commise.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00070",
+                          "Confiscation de l’objet ou du produit de l’infraction.",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Interdiction de détenir un animal (jusqu’à trois ans).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00071",
+                          "Interdiction de conduire certains véhicules terrestres à moteur (jusqu’à trois ans).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Retrait de titres de conduite en mer / interdiction de navigation (jusqu’à un an).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00072",
+                          "Peines de stage (par exemple : sécurité routière).",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00073",
+                          "Confiscation d’un animal utilisé pour l’infraction ou contre lequel l’infraction a été commise.",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00074",
+                          "Interdiction de détenir un animal (jusqu’à trois ans).",
+                        ),
+                        textSoft,
+                        textMain,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00075",
+                          "Retrait de titres de conduite en mer / interdiction de navigation (jusqu’à un an).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       const SizedBox(height: 10),
 
                       _subtitle(
-                        "Article 131-17 du Code pénal — 5ème classe : peines complémentaires spécifiques",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00076",
+                          "Article 131-17 du Code pénal — 5ème classe : peines complémentaires spécifiques",
+                        ),
                         textMain,
                       ),
                       _bullet(
-                        "Interdiction d’émettre certains chèques (jusqu’à trois ans).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00077",
+                          "Interdiction d’émettre certains chèques (jusqu’à trois ans).",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        "Travail d’intérêt général (de vingt à cent-vingt heures) à titre de peine complémentaire.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00078",
+                          "Travail d’intérêt général (de vingt à cent-vingt heures) à titre de peine complémentaire.",
+                        ),
                         textSoft,
                         textMain,
                       ),
                       const SizedBox(height: 10),
 
                       _subtitle(
-                        "Article 131-18 du Code pénal — Cumul",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00079",
+                          "Article 131-18 du Code pénal — Cumul",
+                        ),
                         textMain,
                       ),
                       _p(
-                        "Lorsque plusieurs peines complémentaires sont encourues (Articles 131-16 et 131-17 du Code pénal), "
-                        "la juridiction peut prononcer soit la peine complémentaire, soit une ou plusieurs des peines complémentaires encourues.",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00080",
+                              "Lorsque plusieurs peines complémentaires sont encourues (Articles 131-16 et 131-17 du Code pénal), ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                              "f00081",
+                              "la juridiction peut prononcer soit la peine complémentaire, soit une ou plusieurs des peines complémentaires encourues.",
+                            ),
                         textSoft,
                       ),
                     ],
@@ -423,7 +802,11 @@ class ContraventionPage extends StatelessWidget {
 
                 // Procédure / permis
                 _Accordion(
-                  title: 'Procédure et permis à points (routier)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                    "f00082",
+                    'Procédure et permis à points (routier)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -431,26 +814,56 @@ class ContraventionPage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle('Procédure', textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00083",
+                          'Procédure',
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        'Procès-verbal sur place ou contrôle automatisé.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00084",
+                          'Procès-verbal sur place ou contrôle automatisé.',
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        'Amende forfaitaire (minorée / forfaitaire / majorée) selon les délais et le paiement.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00085",
+                          'Amende forfaitaire (minorée / forfaitaire / majorée) selon les délais et le paiement.',
+                        ),
                         textSoft,
                         textMain,
                       ),
                       _bullet(
-                        'Possibilité de contestation (requête) menant à une ordonnance pénale ou à une audience.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00086",
+                          'Possibilité de contestation (requête) menant à une ordonnance pénale ou à une audience.',
+                        ),
                         textSoft,
                         textMain,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle('Permis à points', textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00087",
+                          'Permis à points',
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Mesure administrative distincte des peines pénales. Retraits de points possibles pour certaines contraventions du Code de la route.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00088",
+                          "Mesure administrative distincte des peines pénales. Retraits de points possibles pour certaines contraventions du Code de la route.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -459,7 +872,11 @@ class ContraventionPage extends StatelessWidget {
 
                 // 4ème express
                 _Accordion(
-                  title: 'Mémo express',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                    "f00089",
+                    'Mémo express',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -470,22 +887,79 @@ class ContraventionPage extends StatelessWidget {
                     textSoft: textSoft,
                     header1: 'Rubrique',
                     header2: 'Information',
-                    rows: const [
-                      ['Juridiction compétente', 'Tribunal de police'],
+                    rows: [
                       [
-                        'Gravité',
-                        'La moins élevée (de la 1ère à la 5ème classe)',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00090",
+                          'Juridiction compétente',
+                        ),
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00091",
+                          'Tribunal de police',
+                        ),
                       ],
                       [
-                        'Peine principale',
-                        'Amende (Articles 131-12 et 131-13 du Code pénal)',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00092",
+                          'Gravité',
+                        ),
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00093",
+                          'La moins élevée (de la 1ère à la 5ème classe)',
+                        ),
                       ],
                       [
-                        'Peines complémentaires',
-                        'Selon les textes — 5ème classe : Article 131-14 ; Règlements : Article 131-16 ; Spécifiques : Article 131-17',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00094",
+                          'Peine principale',
+                        ),
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00095",
+                          'Amende (Articles 131-12 et 131-13 du Code pénal)',
+                        ),
                       ],
-                      ['Tentative et complicité', 'Non punissables'],
-                      ['Prescription de l’action publique', '1 an'],
+                      [
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00096",
+                          'Peines complémentaires',
+                        ),
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00097",
+                          'Selon les textes — 5ème classe : Article 131-14 ; Règlements : Article 131-16 ; Spécifiques : Article 131-17',
+                        ),
+                      ],
+                      [
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00098",
+                          'Tentative et complicité',
+                        ),
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00099",
+                          'Non punissables',
+                        ),
+                      ],
+                      [
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00100",
+                          'Prescription de l’action publique',
+                        ),
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart",
+                          "f00101",
+                          '1 an',
+                        ),
+                      ],
                     ],
                   ),
                 ),
@@ -528,7 +1002,11 @@ class ContraventionPage extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 7),
-          child: Icon(Icons.circle, size: 6, color: main.withValues(alpha: 0.7)),
+          child: Icon(
+            Icons.circle,
+            size: 6,
+            color: main.withValues(alpha: 0.7),
+          ),
         ),
         const SizedBox(width: 10),
         Expanded(
@@ -546,7 +1024,9 @@ class ContraventionPage extends StatelessWidget {
     margin: const EdgeInsets.only(top: 8),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(12),
-      color: isDark ? Colors.white.withValues(alpha: 0.08) : const Color(0xFFF1F1F1),
+      color: isDark
+          ? Colors.white.withValues(alpha: 0.08)
+          : const Color(0xFFF1F1F1),
       border: Border.all(
         color: isDark
             ? Colors.white.withValues(alpha: 0.12)

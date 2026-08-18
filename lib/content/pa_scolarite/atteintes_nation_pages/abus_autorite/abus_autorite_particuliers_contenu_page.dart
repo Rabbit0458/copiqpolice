@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
   const PaAbusAutoriteParticuliersContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crime & délit contre la nation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+            "f00002",
+            "Crime & délit contre la nation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Les abus d’autorité commis contre les particuliers",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00003",
+              "Les abus d’autorité commis contre les particuliers",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux abus d’autorité commis contre les particuliers "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux abus d’autorité commis contre les particuliers ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,8 +88,16 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'nation_abus_autorite_inviolabilite_domicile',
-            title: "Les atteintes à l’inviolabilité du domicile",
-            subtitle: "Fiches et qualifications liées au domicile.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00006",
+              "Les atteintes à l’inviolabilité du domicile",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00007",
+              "Fiches et qualifications liées au domicile.",
+            ),
             imagePath: 'assets/images/abus_autorite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -80,8 +111,16 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'nation_abus_autorite_secret_correspondances',
-            title: "Les atteintes au secret des correspondances",
-            subtitle: "Fiches relatives au secret des correspondances.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00008",
+              "Les atteintes au secret des correspondances",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00009",
+              "Fiches relatives au secret des correspondances.",
+            ),
             imagePath: 'assets/images/abus_autorite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -95,8 +134,16 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'nation_abus_autorite_discriminations',
-            title: "Les discriminations",
-            subtitle: "Définitions, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00010",
+              "Les discriminations",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00011",
+              "Définitions, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/abus_autorite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -111,9 +158,16 @@ class PaAbusAutoriteParticuliersContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_abus_autorite_particuliers',
-            title: 'Quiz — Abus d’autorité (particuliers)',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00012",
+              'Quiz — Abus d’autorité (particuliers)',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart",
+              "f00013",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -167,7 +221,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

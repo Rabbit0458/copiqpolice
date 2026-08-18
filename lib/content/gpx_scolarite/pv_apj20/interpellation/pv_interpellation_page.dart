@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVInterpellationPage extends StatelessWidget {
   const PVInterpellationPage({super.key});
@@ -56,7 +57,11 @@ class PVInterpellationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Interpellation",
@@ -74,7 +79,11 @@ class PVInterpellationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV d’interpellation — canevas de rédaction",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+              "f00002",
+              "PV d’interpellation — canevas de rédaction",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,11 +98,23 @@ class PVInterpellationPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas te guide pour rédiger un procès-verbal d’interpellation d’un individu auteur "
-                "d’une infraction : déroulé chronologique, mentions obligatoires, points de vigilance (heure, "
-                "cadre juridique, coercition, DRDA, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                      "f00003",
+                      "Ce canevas te guide pour rédiger un procès-verbal d’interpellation d’un individu auteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                      "f00004",
+                      "d’une infraction : déroulé chronologique, mentions obligatoires, points de vigilance (heure, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                      "f00005",
+                      "cadre juridique, coercition, DRDA, etc.).",
+                    ),
               ),
             ],
           ),
@@ -102,18 +123,29 @@ class PVInterpellationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles en rouge)
           _ConditionCard(
-            title: "I — Points légaux indispensables",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+              "f00006",
+              "I — Points légaux indispensables",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le recours éventuel au menottage doit être justifié et circonstancié conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                    "f00007",
+                    "Le recours éventuel au menottage doit être justifié et circonstancié conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 803 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                    "f00008",
+                    "l’article 803 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -123,8 +155,16 @@ class PVInterpellationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’heure exacte de l’interpellation est fondamentale : elle correspond aussi au début "
-                        "de la mesure de garde à vue lorsque la personne est tenue sous contrainte.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                          "f00009",
+                          "L’heure exacte de l’interpellation est fondamentale : elle correspond aussi au début ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                          "f00010",
+                          "de la mesure de garde à vue lorsque la personne est tenue sous contrainte.",
+                        ),
                   ),
                 ],
               ),
@@ -134,71 +174,163 @@ class PVInterpellationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Structure du procès-verbal (chronologie)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+              "f00011",
+              "II — Structure du procès-verbal (chronologie)",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00012",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _BulletPoint(
-                text: "Mentionner l’endroit exact où se situe l’équipage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00013",
+                  "Mentionner l’endroit exact où se situe l’équipage.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("2) Instructions (PV de saisine)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00014",
+                  "2) Instructions (PV de saisine)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Si l’équipage est en patrouille : agir conformément aux instructions permanentes du chef de service.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00015",
+                  "Si l’équipage est en patrouille : agir conformément aux instructions permanentes du chef de service.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("3) Assistants éventuels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00016",
+                  "3) Assistants éventuels",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Citer les fonctionnaires accompagnants + préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00017",
+                  "Citer les fonctionnaires accompagnants + préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("4) Mission"),
-              _BulletPoint(text: "Indiquer le but de la mission initiale."),
-
-              SizedBox(height: 10),
-              _SubTitle("5) Constatations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00018",
+                  "4) Mission",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Relater précisément les faits constitutifs de l’infraction (et si besoin l’heure des constatations / arrivée sur les lieux).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00019",
+                  "Indiquer le but de la mission initiale.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("6) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00020",
+                  "5) Constatations",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Indiquer le cadre juridique de l’intervention : il fonde tes pouvoirs et les droits attachés à la situation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00021",
+                  "Relater précisément les faits constitutifs de l’infraction (et si besoin l’heure des constatations / arrivée sur les lieux).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("7) Interpellation"),
-              _BulletPoint(
-                text:
-                    "Mentionner l’heure exacte (point clé) + lieu exact (si différent du lieu de saisine/constatations).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00022",
+                  "6) Cadre juridique",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si utile : décrire le comportement de l’individu lors de l’interpellation (résistance, fuite, menace, etc.).",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("8) Palpation de sécurité"),
-              _BulletPoint(
-                text:
-                    "Si découverte d’objets : situer et décrire précisément (où, quoi, comment).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00023",
+                  "Indiquer le cadre juridique de l’intervention : il fonde tes pouvoirs et les droits attachés à la situation.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("9) Identité (style indirect)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00024",
+                  "7) Interpellation",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "État civil et adresse uniquement (exclure situation familiale/professionnelle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00025",
+                  "Mentionner l’heure exacte (point clé) + lieu exact (si différent du lieu de saisine/constatations).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00026",
+                  "Si utile : décrire le comportement de l’individu lors de l’interpellation (résistance, fuite, menace, etc.).",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00027",
+                  "8) Palpation de sécurité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00028",
+                  "Si découverte d’objets : situer et décrire précisément (où, quoi, comment).",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00029",
+                  "9) Identité (style indirect)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00030",
+                  "État civil et adresse uniquement (exclure situation familiale/professionnelle).",
+                ),
               ),
             ],
           ),
@@ -206,19 +338,36 @@ class PVInterpellationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Contrainte, DRDA et suites",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+              "f00031",
+              "III — Contrainte, DRDA et suites",
+            ),
             cardColor: cardActes,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Menottage (si nécessaire)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00032",
+                  "Menottage (si nécessaire)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le menottage doit être motivé (dangerosité, risque de fuite, résistance…), conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                    "f00033",
+                    "Le menottage doit être motivé (dangerosité, risque de fuite, résistance…), conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 803 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                    "f00034",
+                    "l’article 803 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -228,69 +377,144 @@ class PVInterpellationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Décris toujours : les actes de résistance observés + la réponse proportionnée employée. "
-                        "C’est ce qui protège juridiquement l’intervention.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                          "f00035",
+                          "Décris toujours : les actes de résistance observés + la réponse proportionnée employée. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                          "f00036",
+                          "C’est ce qui protège juridiquement l’intervention.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
               _SubTitle(
-                "10) Constatations & appréhensions éventuelles (après interpellation)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00037",
+                  "10) Constatations & appréhensions éventuelles (après interpellation)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Constatations postérieures : effractions, bris de serrure/vitre, objets abandonnés, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00038",
+                  "Constatations postérieures : effractions, bris de serrure/vitre, objets abandonnés, etc.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Objets pièces à conviction : les décrire, les représenter à la personne, puis les appréhender.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00039",
+                  "Objets pièces à conviction : les décrire, les représenter à la personne, puis les appréhender.",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: "Méthode",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00040",
+                  "Méthode",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "D.R.D.A. : Décrire — Représenter — (brève) Déclaration — Appréhender. "
-                        "La déclaration doit rester limitée à l’appartenance de l’objet : ce n’est pas une audition.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                          "f00041",
+                          "D.R.D.A. : Décrire — Représenter — (brève) Déclaration — Appréhender. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                          "f00042",
+                          "La déclaration doit rester limitée à l’appartenance de l’objet : ce n’est pas une audition.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
-              _SubTitle("11) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00043",
+                  "11) Avis O.P.J.",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner les instructions reçues de l’officier de police judiciaire + les avis donnés (radio, invitation à déposer, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00044",
+                  "Mentionner les instructions reçues de l’officier de police judiciaire + les avis donnés (radio, invitation à déposer, etc.).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("12) Retour au service"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00045",
+                  "12) Retour au service",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Si usage de la force pour le transport : préciser les résistances et les moyens de coercition utilisés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00046",
+                  "Si usage de la force pour le transport : préciser les résistances et les moyens de coercition utilisés.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("13) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00047",
+                  "13) Énonciation terminale (clôture)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00048",
+                  "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("14) Présentation O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00049",
+                  "14) Présentation O.P.J.",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Présenter l’individu, préciser l’heure, faire un compte-rendu verbal, remettre les objets appréhendés le cas échéant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00050",
+                  "Présenter l’individu, préciser l’heure, faire un compte-rendu verbal, remettre les objets appréhendés le cas échéant.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("15) Mention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00051",
+                  "15) Mention",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Recherches administratives : FPR, TAJ (le cas échéant). Mentionner qu’elles ont été effectuées et le résultat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00052",
+                  "Recherches administratives : FPR, TAJ (le cas échéant). Mentionner qu’elles ont été effectuées et le résultat.",
+                ),
               ),
             ],
           ),
@@ -298,23 +522,39 @@ class PVInterpellationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Canevas (images) — zoom & plein écran",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+              "f00053",
+              "IV — Canevas (images) — zoom & plein écran",
+            ),
             cardColor: cardDocs,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur une image pour l’ouvrir en plein écran. Tu peux zoomer (pincement) et déplacer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00054",
+                  "Appuie sur une image pour l’ouvrir en plein écran. Tu peux zoomer (pincement) et déplacer.",
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canevas_interpellation_recto.png',
-                label: 'Recto — canevas',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00055",
+                  'Recto — canevas',
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canevas_interpellation_verso.png',
-                label: 'Verso — suite',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                  "f00056",
+                  'Verso — suite',
+                ),
               ),
             ],
           ),
@@ -411,7 +651,11 @@ class _ZoomableAssetImage extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        "Plein écran",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_interpellation_page.dart",
+                          "f00058",
+                          "Plein écran",
+                        ),
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w800,
                           fontSize: 12.5,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVPlainteGeneralitesPage extends StatelessWidget {
   const PVPlainteGeneralitesPage({super.key});
@@ -55,7 +56,11 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Plainte",
@@ -73,7 +78,11 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Généralités — prise de plainte",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+              "f00002",
+              "Généralités — prise de plainte",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -85,28 +94,40 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+              "f00003",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les officiers et agents de police judiciaire sont tenus de recevoir les plaintes, y compris lorsqu’elles sont déposées dans un service territorialement incompétent. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00004",
+                    "Les officiers et agents de police judiciaire sont tenus de recevoir les plaintes, y compris lorsqu’elles sont déposées dans un service territorialement incompétent. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 15-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00005",
+                    "article 15-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Tout dépôt de plainte fait l’objet d’un procès-verbal et donne lieu à la délivrance immédiate d’un récépissé à la victime ; une copie peut être remise à sa demande.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00006",
+                  "Tout dépôt de plainte fait l’objet d’un procès-verbal et donne lieu à la délivrance immédiate d’un récépissé à la victime ; une copie peut être remise à sa demande.",
+                ),
               ),
             ],
           ),
@@ -115,17 +136,29 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+              "f00007",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La plainte est l’acte par lequel la personne victime d’un crime, d’un délit ou d’une contravention porte les faits à la connaissance de l’autorité compétente.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00008",
+                  "La plainte est l’acte par lequel la personne victime d’un crime, d’un délit ou d’une contravention porte les faits à la connaissance de l’autorité compétente.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle peut être déposée contre X (auteur non identifié) ou contre personne dénommée (auteur connu de la victime).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00009",
+                  "Elle peut être déposée contre X (auteur non identifié) ou contre personne dénommée (auteur connu de la victime).",
+                ),
               ),
             ],
           ),
@@ -134,56 +167,104 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
 
           // Généralités / méthode
           _ConditionCard(
-            title: "II — Généralités (méthode)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+              "f00010",
+              "II — Généralités (méthode)",
+            ),
             cardColor: cardMethod,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le policier ne doit pas se contenter de retranscrire les déclarations : il doit faire ressortir les éléments utiles permettant de diligenter une enquête et de qualifier les faits.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00011",
+                  "Le policier ne doit pas se contenter de retranscrire les déclarations : il doit faire ressortir les éléments utiles permettant de diligenter une enquête et de qualifier les faits.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Ce qu’il faut faire apparaître clairement"),
-              _BulletPoint(
-                text:
-                    "Situer les faits dans le temps et l’espace (date/heure, lieu précis).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00012",
+                  "Ce qu’il faut faire apparaître clairement",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Déterminer le cadre juridique de l’enquête (flagrance ou préliminaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00013",
+                  "Situer les faits dans le temps et l’espace (date/heure, lieu précis).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Permettre un éventuel transport sur les lieux (constatations, traces, témoins).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00014",
+                  "Déterminer le cadre juridique de l’enquête (flagrance ou préliminaire).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00015",
+                  "Permettre un éventuel transport sur les lieux (constatations, traces, témoins).",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Déterminer les faits et agissements de chaque acteur (rôle précis).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00016",
+                  "Déterminer les faits et agissements de chaque acteur (rôle précis).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Qualifier l’infraction (rendre visibles les éléments constitutifs : matériel et moral).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00017",
+                  "Qualifier l’infraction (rendre visibles les éléments constitutifs : matériel et moral).",
+                ),
               ),
-              _BulletPoint(text: "Préciser le mode opératoire."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00018",
+                  "Préciser le mode opératoire.",
+                ),
+              ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Décrire précisément les éléments utiles (objets volés, véhicules, signalements, tenues).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00019",
+                  "Décrire précisément les éléments utiles (objets volés, véhicules, signalements, tenues).",
+                ),
               ),
               _BulletPoint(
-                text: "Enregistrer le préjudice subi par la victime.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00020",
+                  "Enregistrer le préjudice subi par la victime.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prendre en compte les objets/documents remis (factures, captures, certificats, messages…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00021",
+                  "Prendre en compte les objets/documents remis (factures, captures, certificats, messages…).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Objectif : une plainte exploitable immédiatement (qualification, pistes d’enquête, actes à réaliser, éléments de preuve à préserver).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00022",
+                      "Objectif : une plainte exploitable immédiatement (qualification, pistes d’enquête, actes à réaliser, éléments de preuve à préserver).",
+                    ),
                   ),
                 ],
               ),
@@ -194,107 +275,171 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
 
           // Droits des victimes
           _ConditionCard(
-            title: "III — Droits des victimes d’infraction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+              "f00023",
+              "III — Droits des victimes d’infraction",
+            ),
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lors de la prise de plainte, l’APJ doit accorder une attention particulière aux victimes et garantir la confidentialité des déclarations. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00024",
+                    "Lors de la prise de plainte, l’APJ doit accorder une attention particulière aux victimes et garantir la confidentialité des déclarations. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 434-20 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00025",
+                    "article R. 434-20 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("A) Information de la victime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00026",
+                  "A) Information de la victime",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "L’agent informe la victime de ses droits. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00027",
+                    "L’agent informe la victime de ses droits. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 10-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00028",
+                    "article 10-2 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "Obtenir réparation de son préjudice."),
               _BulletPoint(
-                text:
-                    "Se constituer partie civile et être assistée, si elle le souhaite, d’un avocat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00029",
+                  "Obtenir réparation de son préjudice.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Être aidée par un service/association agréée d’aide aux victimes (coordonnées actualisées).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00030",
+                  "Se constituer partie civile et être assistée, si elle le souhaite, d’un avocat.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Saisir la commission d’indemnisation des victimes d’infraction (CIVI) selon les cas.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00031",
+                  "Être aidée par un service/association agréée d’aide aux victimes (coordonnées actualisées).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00032",
+                  "Saisir la commission d’indemnisation des victimes d’infraction (CIVI) selon les cas.",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Notamment lorsque l’infraction est visée aux ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00033",
+                    "Notamment lorsque l’infraction est visée aux ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 706-3",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00034",
+                    "articles 706-3",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ou "),
                 TextSpan(
                   text: "706-14",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00035",
+                    " du Code de procédure pénale.",
                   ),
                 ),
-                TextSpan(text: " du Code de procédure pénale."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Être informée des mesures de protection possibles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00036",
+                  "Être informée des mesures de protection possibles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Être informée des peines encourues et des conditions d’exécution des condamnations (si applicable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00037",
+                  "Être informée des peines encourues et des conditions d’exécution des condamnations (si applicable).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Bénéficier, le cas échéant, d’un interprète et d’une traduction des informations indispensables.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00038",
+                  "Bénéficier, le cas échéant, d’un interprète et d’une traduction des informations indispensables.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Être accompagnée à tous les stades par son représentant légal et par la personne majeure de son choix (y compris un avocat), sauf décision contraire motivée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00039",
+                  "Être accompagnée à tous les stades par son représentant légal et par la personne majeure de son choix (y compris un avocat), sauf décision contraire motivée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Déclarer comme domicile l’adresse d’un tiers (avec accord exprès) ; certaines victimes peuvent déclarer leur adresse professionnelle selon les conditions prévues.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00040",
+                  "Déclarer comme domicile l’adresse d’un tiers (avec accord exprès) ; certaines victimes peuvent déclarer leur adresse professionnelle selon les conditions prévues.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Recevoir le certificat d’examen médical lorsqu’un examen a été requis par OPJ ou magistrat (selon conditions).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00041",
+                  "Recevoir le certificat d’examen médical lorsqu’un examen a été requis par OPJ ou magistrat (selon conditions).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette information peut être donnée par tout moyen, notamment via un formulaire d’information (LRPPN).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00042",
+                      "Cette information peut être donnée par tout moyen, notamment via un formulaire d’information (LRPPN).",
+                    ),
                   ),
                 ],
               ),
@@ -305,208 +450,205 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
 
           // Mesures de protection générales + évaluation
           _ConditionCard(
-            title: "IV — Mesures de protection",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+              "f00043",
+              "IV — Mesures de protection",
+            ),
             cardColor: cardProtect,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Mesures générales"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00044",
+                  "A) Mesures générales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Interprète si la victime ne comprend pas le français. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00045",
+                    "Interprète si la victime ne comprend pas le français. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 10-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00046",
+                    "article 10-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Accompagnement à tous les stades, notamment lors des auditions, par le représentant légal et une personne majeure de son choix (y compris un avocat), sauf décision contraire motivée. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00047",
+                    "Accompagnement à tous les stades, notamment lors des auditions, par le représentant légal et une personne majeure de son choix (y compris un avocat), sauf décision contraire motivée. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 10-4 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00048",
+                    "article 10-4 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Pratique (avocat)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00049",
+                  "Pratique (avocat)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si la victime est accompagnée d’un avocat, celui-ci n’intervient pas pendant l’audition : il attend la fin pour poser des questions. Les questions/réponses sont retranscrites au PV ; des observations écrites peuvent être annexées.",
-                  ),
-                ],
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("B) Évaluation personnalisée"),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Une évaluation personnalisée est mentionnée au PV afin de déterminer la nécessité de mesures spéciales de protection. — ",
-                ),
-                TextSpan(
-                  text: "article 10-5 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: "."),
-              ]),
-              SizedBox(height: 8),
-              _BulletPoint(text: "Importance du préjudice subi."),
-              _BulletPoint(
-                text: "Circonstances de commission de l’infraction.",
-              ),
-              _BulletPoint(
-                text: "Vulnérabilité particulière de la victime.",
-              ),
-              _BulletPoint(
-                text: "Risque d’intimidation ou de représailles.",
-              ),
-              SizedBox(height: 10),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Une évaluation approfondie peut être réalisée par une association conventionnée, sur décision du procureur de la République ou du juge d’instruction. — ",
-                ),
-                TextSpan(
-                  text: "article D. 1-9 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: "."),
-              ]),
-
-              SizedBox(height: 14),
-
-              _SubTitle("C) Mesures spécifiques (cas fréquents)"),
-
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Mineur victime d’un crime ou d’un délit — article 706-53 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " :"),
-              ]),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "Peut être accompagné (à sa demande) : représentant légal, personne majeure de son choix, association d’aide aux victimes.",
-              ),
-              _BulletPoint(
-                text:
-                    "Peut dénoncer seul les faits : une enquête peut être diligentée même sans plainte du représentant légal (si discernement suffisant).",
-              ),
-              SizedBox(height: 10),
-              _NotaBox(
-                bodySpans: [
-                  TextSpan(
-                    text:
-                        "Après examen médical d’un mineur : le médecin peut refuser de remettre une copie aux représentants légaux si cela est contraire à l’intérêt supérieur de l’enfant ou si le mineur (maturité suffisante) refuse. — ",
-                  ),
-                  TextSpan(
-                    text: "article D1-12 du Code de procédure pénale",
-                    style: TextStyle(
-                      color: _lawRed,
-                      fontWeight: FontWeight.w900,
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00050",
+                      "Si la victime est accompagnée d’un avocat, celui-ci n’intervient pas pendant l’audition : il attend la fin pour poser des questions. Les questions/réponses sont retranscrites au PV ; des observations écrites peuvent être annexées.",
                     ),
                   ),
-                  TextSpan(text: "."),
                 ],
-              ),
-
-              SizedBox(height: 14),
-
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Mineur victime d’infraction à caractère sexuel : enregistrement audiovisuel obligatoire pour certaines infractions. Référence : ",
-                ),
-                TextSpan(
-                  text: "article 706-47 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " (liste), et "),
-                TextSpan(
-                  text: "article 706-52 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " (règles d’enregistrement)."),
-              ]),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "Même si l’audition est filmée, un PV d’audition / d’entretien est rédigé.",
-              ),
-              _BulletPoint(
-                text:
-                    "L’enregistrement peut être exclusivement sonore sur décision du procureur ou du juge si l’intérêt du mineur le justifie.",
-              ),
-              _BulletPoint(
-                text:
-                    "Préférence pour services spécialisés (méthodologie + formation).",
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) Situations particulières (rappels opérationnels)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00051",
+                  "B) Évaluation personnalisée",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00052",
+                    "Une évaluation personnalisée est mentionnée au PV afin de déterminer la nécessité de mesures spéciales de protection. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00053",
+                    "article 10-5 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00054",
+                  "Importance du préjudice subi.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Victime transgenre : accueillir d’abord selon l’apparence, puis selon le genre déclaré ; dans le PV, utiliser civilité/prénom choisis, tout en mentionnant l’identité officielle dans les rubriques d’identité du LRPPN.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00055",
+                  "Circonstances de commission de l’infraction.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00056",
+                  "Vulnérabilité particulière de la victime.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00057",
+                  "Risque d’intimidation ou de représailles.",
+                ),
               ),
               SizedBox(height: 10),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00058",
+                    "Une évaluation approfondie peut être réalisée par une association conventionnée, sur décision du procureur de la République ou du juge d’instruction. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00059",
+                    "article D. 1-9 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00060",
+                  "C) Mesures spécifiques (cas fréquents)",
+                ),
+              ),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00061",
+                    "Mineur victime d’un crime ou d’un délit — article 706-53 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: " :"),
+              ]),
+              SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Victime de violences conjugales : la prise en charge n’est pas conditionnée à un certificat médical ; orienter vers les services spécialisés si possible ; avis hiérarchie + parquet ; réquisition d’examen médical (blessures + retentissement psychologique).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00062",
+                  "Peut être accompagné (à sa demande) : représentant légal, personne majeure de son choix, association d’aide aux victimes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00063",
+                  "Peut dénoncer seul les faits : une enquête peut être diligentée même sans plainte du représentant légal (si discernement suffisant).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Bracelet anti-rapprochement",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Lors du dépôt de plainte, informer la victime éligible qu’elle peut demander un bracelet anti-rapprochement. — ",
-                  ),
-                  TextSpan(
-                    text: "article 15-3-2 du Code de procédure pénale",
-                    style: TextStyle(
-                      color: _lawRed,
-                      fontWeight: FontWeight.w900,
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00064",
+                      "Après examen médical d’un mineur : le médecin peut refuser de remettre une copie aux représentants légaux si cela est contraire à l’intérêt supérieur de l’enfant ou si le mineur (maturité suffisante) refuse. — ",
                     ),
                   ),
-                  TextSpan(text: " ; mesure prévue par "),
                   TextSpan(
-                    text: "article 138-3 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00065",
+                      "article D1-12 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -518,22 +660,177 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("E) Mesures pratiques de sécurité"),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00066",
+                    "Mineur victime d’infraction à caractère sexuel : enregistrement audiovisuel obligatoire pour certaines infractions. Référence : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00067",
+                    "article 706-47 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00068",
+                    " (liste), et ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00069",
+                    "article 706-52 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                    "f00070",
+                    " (règles d’enregistrement).",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Aider à trouver un hébergement d’urgence si retour au domicile impossible (115 / dispositifs locaux).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00071",
+                  "Même si l’audition est filmée, un PV d’audition / d’entretien est rédigé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Assistance possible pour récupérer des effets personnels au domicile (selon disponibilité opérationnelle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00072",
+                  "L’enregistrement peut être exclusivement sonore sur décision du procureur ou du juge si l’intérêt du mineur le justifie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00073",
+                  "Préférence pour services spécialisés (méthodologie + formation).",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00074",
+                  "D) Situations particulières (rappels opérationnels)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00075",
+                  "Victime transgenre : accueillir d’abord selon l’apparence, puis selon le genre déclaré ; dans le PV, utiliser civilité/prénom choisis, tout en mentionnant l’identité officielle dans les rubriques d’identité du LRPPN.",
+                ),
+              ),
+              SizedBox(height: 10),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00076",
+                  "Victime de violences conjugales : la prise en charge n’est pas conditionnée à un certificat médical ; orienter vers les services spécialisés si possible ; avis hiérarchie + parquet ; réquisition d’examen médical (blessures + retentissement psychologique).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À penser",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00077",
+                  "Bracelet anti-rapprochement",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En violences conjugales, procéder aux consultations utiles (TAJ, MCI, FPR, base locale LRPPN, fichiers armes selon procédures en vigueur) et envisager la saisie des armes si nécessaire.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00078",
+                      "Lors du dépôt de plainte, informer la victime éligible qu’elle peut demander un bracelet anti-rapprochement. — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00079",
+                      "article 15-3-2 du Code de procédure pénale",
+                    ),
+                    style: TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00080",
+                      " ; mesure prévue par ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00081",
+                      "article 138-3 du Code de procédure pénale",
+                    ),
+                    style: TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  TextSpan(text: "."),
+                ],
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00082",
+                  "E) Mesures pratiques de sécurité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00083",
+                  "Aider à trouver un hébergement d’urgence si retour au domicile impossible (115 / dispositifs locaux).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00084",
+                  "Assistance possible pour récupérer des effets personnels au domicile (selon disponibilité opérationnelle).",
+                ),
+              ),
+              SizedBox(height: 10),
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                  "f00085",
+                  "À penser",
+                ),
+                bodySpans: [
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/plainte_generalites_page.dart",
+                      "f00086",
+                      "En violences conjugales, procéder aux consultations utiles (TAJ, MCI, FPR, base locale LRPPN, fichiers armes selon procédures en vigueur) et envisager la saisie des armes si nécessaire.",
+                    ),
                   ),
                 ],
               ),

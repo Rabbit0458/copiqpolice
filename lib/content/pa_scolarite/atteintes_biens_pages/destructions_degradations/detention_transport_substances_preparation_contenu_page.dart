@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
   const PaDetentionTransportSubstancesPreparationPage({super.key});
@@ -56,10 +57,18 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions, dégradations",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+            "f00002",
+            "Destructions, dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La détention ou le transport de substances ou produits incendiaires ou explosifs en vue de la préparation de destruction, dégradation ou détérioration dangereuses ou d’une atteinte aux personnes",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+              "f00003",
+              "La détention ou le transport de substances ou produits incendiaires ou explosifs en vue de la préparation de destruction, dégradation ou détérioration dangereuses ou d’une atteinte aux personnes",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,16 +99,36 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La détention ou le transport de substances ou produits incendiaires ou explosifs ainsi que d’éléments "
-                "ou substances destinés à entrer dans la composition de produits ou engins incendiaires ou explosifs "
-                "en vue de la préparation, caractérisée par un ou plusieurs faits matériels, des infractions définies "
-                "à l’article 322-6 du Code pénal ou d’atteintes aux personnes, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00005",
+                      "La détention ou le transport de substances ou produits incendiaires ou explosifs ainsi que d’éléments ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00006",
+                      "ou substances destinés à entrer dans la composition de produits ou engins incendiaires ou explosifs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00007",
+                      "en vue de la préparation, caractérisée par un ou plusieurs faits matériels, des infractions définies ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00008",
+                      "à l’article 322-6 du Code pénal ou d’atteintes aux personnes, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -104,22 +137,30 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-11-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00010",
+                    "Article 322-11-1 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la détention ou le transport de substances ou produits incendiaires ou explosifs en vue de la préparation d’infractions dangereuses.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00011",
+                    " : définit et réprime la détention ou le transport de substances ou produits incendiaires ou explosifs en vue de la préparation d’infractions dangereuses.",
+                  ),
                 ),
               ]),
             ],
@@ -129,55 +170,137 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les violences urbaines sont souvent marquées par des incendies (bâtiments, véhicules), provoqués "
-                "notamment par des engins explosifs ou incendiaires improvisés (jets d’essence, cocktails Molotov). "
-                "Pour prévenir ces phénomènes, le législateur a créé une infraction spécifique permettant de réprimer "
-                "certains comportements avant que les destructions ne soient commises ou tentées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00013",
+                      "Les violences urbaines sont souvent marquées par des incendies (bâtiments, véhicules), provoqués ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00014",
+                      "notamment par des engins explosifs ou incendiaires improvisés (jets d’essence, cocktails Molotov). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00015",
+                      "Pour prévenir ces phénomènes, le législateur a créé une infraction spécifique permettant de réprimer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00016",
+                      "certains comportements avant que les destructions ne soient commises ou tentées.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) La détention ou le transport"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00017",
+                  "A) La détention ou le transport",
+                ),
+              ),
               _Paragraph(
-                "L’auteur est trouvé en possession de substances ou produits soit incendiaires, soit explosifs. "
-                "Cette possession peut prendre deux formes : la détention ou le transport.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00018",
+                      "L’auteur est trouvé en possession de substances ou produits soit incendiaires, soit explosifs. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00019",
+                      "Cette possession peut prendre deux formes : la détention ou le transport.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Détention : avoir à sa disposition ces substances ou produits, sans être nécessairement possesseur ou propriétaire.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00020",
+                  "Détention : avoir à sa disposition ces substances ou produits, sans être nécessairement possesseur ou propriétaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Transport : déplacer ces substances ou produits, notamment sur la voie publique.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00021",
+                  "Transport : déplacer ces substances ou produits, notamment sur la voie publique.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les incriminations de détention et de transport offrent une grande souplesse : être trouvé porteur "
-                "de tels produits sur la voie publique peut caractériser à la fois la détention et le transport.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00022",
+                      "Les incriminations de détention et de transport offrent une grande souplesse : être trouvé porteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00023",
+                      "de tels produits sur la voie publique peut caractériser à la fois la détention et le transport.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) La nature des substances / produits"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00024",
+                  "B) La nature des substances / produits",
+                ),
+              ),
               _Paragraph(
-                "Sont visés :\n"
-                "• les poudres et substances explosives, ainsi que les produits ouvrés comportant des substances explosives (ex. dynamite)\n"
-                "• les explosifs artisanaux (engins explosifs improvisés)\n"
-                "• les produits incendiaires (ex. cocktails Molotov).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00025",
+                      "Sont visés :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00026",
+                      "• les poudres et substances explosives, ainsi que les produits ouvrés comportant des substances explosives (ex. dynamite)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00027",
+                      "• les explosifs artisanaux (engins explosifs improvisés)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00028",
+                      "• les produits incendiaires (ex. cocktails Molotov).",
+                    ),
               ),
               SizedBox(height: 10),
               _SubTitle(
-                "C) Les éléments destinés à entrer dans la composition d’engins",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00029",
+                  "C) Les éléments destinés à entrer dans la composition d’engins",
+                ),
               ),
               _Paragraph(
-                "De nombreux éléments peuvent être concernés (liste non exhaustive) : mèche lente, détonateur, "
-                "poudre explosive, bouteille de gaz, etc.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00030",
+                      "De nombreux éléments peuvent être concernés (liste non exhaustive) : mèche lente, détonateur, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00031",
+                      "poudre explosive, bouteille de gaz, etc.",
+                    ),
               ),
               SizedBox(height: 12),
 
@@ -185,8 +308,16 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Pluralité exigée : le texte vise des substances, produits ou éléments au pluriel. "
-                        "La jurisprudence retient qu’un seul objet n’est pas suffisant.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                          "f00032",
+                          "Pluralité exigée : le texte vise des substances, produits ou éléments au pluriel. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                          "f00033",
+                          "La jurisprudence retient qu’un seul objet n’est pas suffisant.",
+                        ),
                   ),
                 ],
               ),
@@ -195,9 +326,19 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
 
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
-                    text: "Cass. crim., n° 23-84.092, 20 mars 2024",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00034",
+                      "Jurisprudence : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00035",
+                      "Cass. crim., n° 23-84.092, 20 mars 2024",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -205,8 +346,16 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " : dès lors que les objets étaient au moins au nombre de deux, mis en œuvre par le feu, "
-                        "leur transport/détention s’inscrivait dans la préparation d’infractions aux personnes ou aux biens.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                          "f00036",
+                          " : dès lors que les objets étaient au moins au nombre de deux, mis en œuvre par le feu, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                          "f00037",
+                          "leur transport/détention s’inscrivait dans la préparation d’infractions aux personnes ou aux biens.",
+                        ),
                   ),
                 ],
               ),
@@ -214,32 +363,70 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) La préparation caractérisée d’infractions déterminées",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00038",
+                  "D) La préparation caractérisée d’infractions déterminées",
+                ),
               ),
               _Paragraph(
-                "L’auteur ne doit pas être passé à l’acte, mais sa volonté doit être caractérisée par un ou plusieurs "
-                "faits matériels. La résolution d’agir est démontrée à partir d’actes préparatoires (ex. transport d’un bidon "
-                "d’essence + bouteilles vides + chiffons usagés permettant la confection de cocktails Molotov).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00039",
+                      "L’auteur ne doit pas être passé à l’acte, mais sa volonté doit être caractérisée par un ou plusieurs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00040",
+                      "faits matériels. La résolution d’agir est démontrée à partir d’actes préparatoires (ex. transport d’un bidon ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00041",
+                      "d’essence + bouteilles vides + chiffons usagés permettant la confection de cocktails Molotov).",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Préparation d’une destruction dangereuse pour les personnes : infraction visée à l’article 322-6 du Code pénal (incendie, substance explosive, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00042",
+                  "Préparation d’une destruction dangereuse pour les personnes : infraction visée à l’article 322-6 du Code pénal (incendie, substance explosive, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préparation d’atteintes aux personnes : infractions du titre II du livre II du Code pénal (atteintes à la vie, violences…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00043",
+                  "Préparation d’atteintes aux personnes : infractions du titre II du livre II du Code pénal (atteintes à la vie, violences…).",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "E) L’absence d’utilisation des substances ou produits",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00044",
+                  "E) L’absence d’utilisation des substances ou produits",
+                ),
               ),
               _Paragraph(
-                "L’article 322-11-1 alinéa 1 vise à réprimer la détention ou le transport avant toute utilisation. "
-                "Si l’auteur utilise ou tente d’utiliser les substances/produits, il sera poursuivi sur le fondement "
-                "de l’article 322-6 du Code pénal (ou d’une infraction d’atteintes aux personnes), et non sur 322-11-1.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00045",
+                      "L’article 322-11-1 alinéa 1 vise à réprimer la détention ou le transport avant toute utilisation. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00046",
+                      "Si l’auteur utilise ou tente d’utiliser les substances/produits, il sera poursuivi sur le fondement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00047",
+                      "de l’article 322-6 du Code pénal (ou d’une infraction d’atteintes aux personnes), et non sur 322-11-1.",
+                    ),
               ),
             ],
           ),
@@ -248,16 +435,36 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+              "f00048",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délit ne peut être retenu que si l’intention coupable est démontrée : l’auteur doit avoir "
-                "conscience de détenir ou de transporter ces substances ou produits dans le but de commettre "
-                "une infraction dangereuse pour les personnes. La découverte d’actes préparatoires met en évidence "
-                "son intention malveillante.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00049",
+                      "Le délit ne peut être retenu que si l’intention coupable est démontrée : l’auteur doit avoir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00050",
+                      "conscience de détenir ou de transporter ces substances ou produits dans le but de commettre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00051",
+                      "une infraction dangereuse pour les personnes. La découverte d’actes préparatoires met en évidence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                      "f00052",
+                      "son intention malveillante.",
+                    ),
               ),
             ],
           ),
@@ -266,21 +473,30 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+              "f00053",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-11-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00054",
+                    "Article 322-11-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : lorsque les faits sont commis en bande organisée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00055",
+                    " : lorsque les faits sont commis en bande organisée.",
+                  ),
                 ),
               ]),
             ],
@@ -290,71 +506,138 @@ class PaDetentionTransportSubstancesPreparationPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+              "f00056",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00057",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00058",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 322-11-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00059",
+                    "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00060",
+                    "article 322-11-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (bande organisée) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 500 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00061",
+                    "Aggravée (bande organisée) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 322-11-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00062",
+                    "10 ans d’emprisonnement et 500 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00063",
+                    "article 322-11-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00064",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00065",
+                    "Peines prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00066",
+                    "l’article 322-17 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00067",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                  "f00068",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI (droit commun). "),
                 TextSpan(
-                  text: "Article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00069",
+                    "Complicité : OUI (droit commun). ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : suppose aide/assistance, provocation ou instructions, et l’intention de s’associer à l’action.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00070",
+                    "Article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart",
+                    "f00071",
+                    " : suppose aide/assistance, provocation ou instructions, et l’intention de s’associer à l’action.",
+                  ),
                 ),
               ]),
             ],
@@ -612,9 +895,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

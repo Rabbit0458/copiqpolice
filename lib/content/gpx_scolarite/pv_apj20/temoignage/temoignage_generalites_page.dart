@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class TemoignageGeneralitesPage extends StatelessWidget {
   const TemoignageGeneralitesPage({super.key});
@@ -55,10 +56,18 @@ class TemoignageGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Témoignage",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+            "f00002",
+            "Témoignage",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class TemoignageGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le témoignage",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+              "f00003",
+              "Le témoignage",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,16 +97,36 @@ class TemoignageGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Définition & intérêt",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+              "f00004",
+              "Définition & intérêt",
+            ),
             cardColor: cardGeneral,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le témoignage constitue un des éléments essentiels de l’enquête policière. "
-                "Il peut permettre de déterminer les circonstances de l’affaire, d’orienter les recherches, "
-                "quelquefois d’identifier le ou les auteurs.\n\n"
-                "Il reste toutefois un mode de preuve précaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00005",
+                      "Le témoignage constitue un des éléments essentiels de l’enquête policière. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00006",
+                      "Il peut permettre de déterminer les circonstances de l’affaire, d’orienter les recherches, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00007",
+                      "quelquefois d’identifier le ou les auteurs.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00008",
+                      "Il reste toutefois un mode de preuve précaire.",
+                    ),
               ),
             ],
           ),
@@ -102,72 +135,136 @@ class TemoignageGeneralitesPage extends StatelessWidget {
 
           // ✅ Partie légale en haut (protection du témoin) : art. 62 / 78 / 706-57 / 706-58 CPP
           _ConditionCard(
-            title: "Cadre légal — protection du témoin (à connaître)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+              "f00009",
+              "Cadre légal — protection du témoin (à connaître)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Droit de ne pas être retenu — "),
                 TextSpan(
-                  text: "art. 62 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00010",
+                    "Droit de ne pas être retenu — ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00011",
+                    "art. 62 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " : le témoin est entendu sans contrainte ; retenue possible uniquement si nécessaire, "
-                      "pour le temps strictement nécessaire, dans la limite de 4 heures (hors comparution libre informée).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00012",
+                        " : le témoin est entendu sans contrainte ; retenue possible uniquement si nécessaire, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00013",
+                        "pour le temps strictement nécessaire, dans la limite de 4 heures (hors comparution libre informée).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Droit de ne pas déposer — "),
                 TextSpan(
-                  text: "art. 78 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00014",
+                    "Droit de ne pas déposer — ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00015",
+                    "art. 78 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " : les personnes convoquées sont tenues de comparaître, mais ne sont pas tenues de déposer ; "
-                      "le refus doit être mentionné au procès-verbal.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00016",
+                        " : les personnes convoquées sont tenues de comparaître, mais ne sont pas tenues de déposer ; ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00017",
+                        "le refus doit être mentionné au procès-verbal.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Domiciliation du témoin — "),
                 TextSpan(
-                  text: "art. 706-57 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00018",
+                    "Domiciliation du témoin — ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00019",
+                    "art. 706-57 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " : domiciliation possible au commissariat/brigade (sur autorisation PR/JI) ou sur le lieu de travail ; "
-                      "registre dédié pour l’adresse personnelle.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00020",
+                        " : domiciliation possible au commissariat/brigade (sur autorisation PR/JI) ou sur le lieu de travail ; ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00021",
+                        "registre dédié pour l’adresse personnelle.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Anonymat — "),
                 TextSpan(
-                  text: "art. 706-58 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00022",
+                    "Anonymat — ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00023",
+                    "art. 706-58 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " : possible sur autorisation du JLD si l’audition expose gravement le témoin (ou proches) "
-                      "et si l’enquête porte sur un crime ou un délit puni d’au moins 3 ans d’emprisonnement.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00024",
+                        " : possible sur autorisation du JLD si l’audition expose gravement le témoin (ou proches) ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                        "f00025",
+                        "et si l’enquête porte sur un crime ou un délit puni d’au moins 3 ans d’emprisonnement.",
+                      ),
                 ),
               ]),
             ],
@@ -176,60 +273,142 @@ class TemoignageGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — Généralités",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+              "f00026",
+              "I — Généralités",
+            ),
             cardColor: cardGeneral,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute personne est tenue d’apporter son concours à la justice en vue de la manifestation de la vérité. "
-                "Cependant, rares sont les témoins qui se présentent spontanément aux services de police.\n\n"
-                "Dès la découverte de l’infraction, l’enquêteur doit les rechercher :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00027",
+                      "Toute personne est tenue d’apporter son concours à la justice en vue de la manifestation de la vérité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00028",
+                      "Cependant, rares sont les témoins qui se présentent spontanément aux services de police.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00029",
+                      "Dès la découverte de l’infraction, l’enquêteur doit les rechercher :",
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "en relevant l’identité des témoins présents sur les lieux de l’infraction ;",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00030",
+                  "en relevant l’identité des témoins présents sur les lieux de l’infraction ;",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "en effectuant une enquête de voisinage (le jour même ou les jours suivants) ;",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00031",
+                  "en effectuant une enquête de voisinage (le jour même ou les jours suivants) ;",
+                ),
               ),
-              _IntroBullet(text: "par un appel à la presse ;"),
-              _IntroBullet(text: "par l’audition des proches."),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00032",
+                  "par un appel à la presse ;",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00033",
+                  "par l’audition des proches.",
+                ),
+              ),
             ],
           ),
 
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — L’enquête de voisinage",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+              "f00034",
+              "II — L’enquête de voisinage",
+            ),
             cardColor: cardMethod,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquête de voisinage est une technique de police judiciaire consistant à rechercher, "
-                "près du lieu de l’infraction, des témoins susceptibles de faire progresser l’enquête "
-                "en déterminant le déroulement des faits ou en apportant des éléments utiles "
-                "(description de l’auteur, présence de personnes, de véhicule…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00035",
+                      "L’enquête de voisinage est une technique de police judiciaire consistant à rechercher, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00036",
+                      "près du lieu de l’infraction, des témoins susceptibles de faire progresser l’enquête ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00037",
+                      "en déterminant le déroulement des faits ou en apportant des éléments utiles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00038",
+                      "(description de l’auteur, présence de personnes, de véhicule…).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Objectif : trouver tout témoin pertinent"),
-              _BulletPoint(
-                text:
-                    "Témoin visuel : a vu la commission de l’infraction, l’itinéraire suivi par le ou les auteurs…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00039",
+                  "Objectif : trouver tout témoin pertinent",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Témoin auditif : a entendu des informations utiles (bruits, cris, échanges, véhicules, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00040",
+                  "Témoin visuel : a vu la commission de l’infraction, l’itinéraire suivi par le ou les auteurs…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00041",
+                  "Témoin auditif : a entendu des informations utiles (bruits, cris, échanges, véhicules, etc.).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La zone d’enquête est variable : immeuble, quartier, axe de déplacement, parcours… "
-                "Le choix appartient au directeur d’enquête.\n\n"
-                "Méthode : porte-à-porte, questionnement des personnes présentes, notation des absents, "
-                "convocation des témoins intéressants, retours sur place si nécessaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00042",
+                      "La zone d’enquête est variable : immeuble, quartier, axe de déplacement, parcours… ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00043",
+                      "Le choix appartient au directeur d’enquête.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00044",
+                      "Méthode : porte-à-porte, questionnement des personnes présentes, notation des absents, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00045",
+                      "convocation des témoins intéressants, retours sur place si nécessaire.",
+                    ),
               ),
             ],
           ),
@@ -237,44 +416,121 @@ class TemoignageGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — L’audition du témoin",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+              "f00046",
+              "III — L’audition du témoin",
+            ),
             cardColor: cardHearing,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La réception du témoignage doit être réalisée le plus tôt possible afin d’éviter "
-                "que les souvenirs se modifient ou s’effacent.\n\n"
-                "Le témoin doit être accueilli convenablement : adopter un comportement attentionné, "
-                "le rassurer si besoin, et instaurer un climat de confiance.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00047",
+                      "La réception du témoignage doit être réalisée le plus tôt possible afin d’éviter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00048",
+                      "que les souvenirs se modifient ou s’effacent.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00049",
+                      "Le témoin doit être accueilli convenablement : adopter un comportement attentionné, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00050",
+                      "le rassurer si besoin, et instaurer un climat de confiance.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Lieu possible de l’audition"),
-              _BulletPoint(text: "Sur les lieux de l’infraction."),
-              _BulletPoint(
-                text:
-                    "Dans les locaux de police (présentation spontanée ou convocation).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00051",
+                  "Lieu possible de l’audition",
+                ),
               ),
               _BulletPoint(
-                text: "Au domicile du témoin ou tout autre lieu (hôpital…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00052",
+                  "Sur les lieux de l’infraction.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00053",
+                  "Dans les locaux de police (présentation spontanée ou convocation).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00054",
+                  "Au domicile du témoin ou tout autre lieu (hôpital…).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Déroulé recommandé"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00055",
+                  "Déroulé recommandé",
+                ),
+              ),
               _Paragraph(
-                "1) Récit spontané (libre évocation)\n"
-                "Le témoin raconte sans être interrompu : cela permet de situer le témoin dans le temps et l’espace "
-                "(date, heure, lieu, circonstances) et de décrire l’événement (vu, entendu, fait).\n\n"
-                "2) Récit guidé\n"
-                "L’enquêteur demande des précisions (imprécisions, oublis). Les questions doivent être ouvertes "
-                "et ne jamais suggérer la réponse. L’enquêteur reste objectif et impartial.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00056",
+                      "1) Récit spontané (libre évocation)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00057",
+                      "Le témoin raconte sans être interrompu : cela permet de situer le témoin dans le temps et l’espace ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00058",
+                      "(date, heure, lieu, circonstances) et de décrire l’événement (vu, entendu, fait).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00059",
+                      "2) Récit guidé\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00060",
+                      "L’enquêteur demande des précisions (imprécisions, oublis). Les questions doivent être ouvertes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                      "f00061",
+                      "et ne jamais suggérer la réponse. L’enquêteur reste objectif et impartial.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les expressions du témoin doivent être reproduites telles quelles (guillemets). "
-                        "Son opinion peut être mentionnée (ex. « je pense », « je crois », « je suis sûr que… »).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                          "f00062",
+                          "Les expressions du témoin doivent être reproduites telles quelles (guillemets). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                          "f00063",
+                          "Son opinion peut être mentionnée (ex. « je pense », « je crois », « je suis sûr que… »).",
+                        ),
                   ),
                 ],
               ),
@@ -284,79 +540,143 @@ class TemoignageGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Protection du témoin (synthèse pratique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+              "f00064",
+              "IV — Protection du témoin (synthèse pratique)",
+            ),
             cardColor: cardProtect,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Ne pas être retenu"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00065",
+                  "A) Ne pas être retenu",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Règle : audition sans contrainte — "),
                 TextSpan(
-                  text: "art. 62 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00066",
+                    "Règle : audition sans contrainte — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Retenue possible uniquement si nécessaire, 4h max, sauf comparution libre informée.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00067",
+                    "art. 62 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00068",
+                    ". Retenue possible uniquement si nécessaire, 4h max, sauf comparution libre informée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("B) Ne pas déposer"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00069",
+                  "B) Ne pas déposer",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Comparution possible sous contrainte, mais pas obligation de déposer — ",
-                ),
-                TextSpan(
-                  text: "art. 78 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00070",
+                    "Comparution possible sous contrainte, mais pas obligation de déposer — ",
                   ),
                 ),
                 TextSpan(
-                  text: ". En cas de refus, le mentionner expressément au PV.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00071",
+                    "art. 78 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00072",
+                    ". En cas de refus, le mentionner expressément au PV.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("C) Domicile élu"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00073",
+                  "C) Domicile élu",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Domiciliation possible (sécurité / travail) — ",
-                ),
-                TextSpan(
-                  text: "art. 706-57 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00074",
+                    "Domiciliation possible (sécurité / travail) — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Adresse personnelle conservée sur registre dédié (papier ou numérique).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00075",
+                    "art. 706-57 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00076",
+                    ". Adresse personnelle conservée sur registre dédié (papier ou numérique).",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("D) Anonymat"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                  "f00077",
+                  "D) Anonymat",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Anonymat sur autorisation JLD — "),
                 TextSpan(
-                  text: "art. 706-58 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00078",
+                    "Anonymat sur autorisation JLD — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (crime/délit ≥ 3 ans + danger grave). PV anonyme non signé + PV distinct signé (identité/adresse) versé à part.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00079",
+                    "art. 706-58 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                    "f00080",
+                    " (crime/délit ≥ 3 ans + danger grave). PV anonyme non signé + PV distinct signé (identité/adresse) versé à part.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -364,8 +684,16 @@ class TemoignageGeneralitesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Point clé : la protection vise à garantir la sécurité du témoin tout en conservant la valeur probante "
-                        "des déclarations et la traçabilité procédurale.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                          "f00081",
+                          "Point clé : la protection vise à garantir la sécurité du témoin tout en conservant la valeur probante ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/temoignage/temoignage_generalites_page.dart",
+                          "f00082",
+                          "des déclarations et la traçabilité procédurale.",
+                        ),
                   ),
                 ],
               ),
@@ -623,9 +951,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

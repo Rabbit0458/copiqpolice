@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RapportRequisitionPersonnePage extends StatelessWidget {
   const RapportRequisitionPersonnePage({super.key});
@@ -56,10 +57,18 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Rapport de réquisition",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+            "f00002",
+            "Rapport de réquisition",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas du rapport de réquisition à personne",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+              "f00003",
+              "Canevas du rapport de réquisition à personne",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,10 +102,18 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
             cardColor: cardModel,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Présenter un rapport clair et complet établi par la personne requise, "
-                "en cohérence avec la réquisition délivrée (cadre juridique, mission, serment, remise, mentions terminales).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00004",
+                      "Présenter un rapport clair et complet établi par la personne requise, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00005",
+                      "en cohérence avec la réquisition délivrée (cadre juridique, mission, serment, remise, mentions terminales).",
+                    ),
               ),
             ],
           ),
@@ -101,37 +122,55 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Élément légal — articles de référence",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+              "f00006",
+              "Élément légal — articles de référence",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 60 et 77-1 du Code de procédure pénale (CPP)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00007",
+                    "Articles 60 et 77-1 du Code de procédure pénale (CPP)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : encadrent la réquisition à personne qualifiée et la remise du rapport/constatations utiles à l’enquête.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00008",
+                    " : encadrent la réquisition à personne qualifiée et la remise du rapport/constatations utiles à l’enquête.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Experts judiciaires : "),
                 TextSpan(
-                  text: "article 157 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00009",
+                    "Experts judiciaires : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (dispense de serment si la personne est inscrite sur une liste).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00010",
+                    "article 157 du CPP",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00011",
+                    " (dispense de serment si la personne est inscrite sur une liste).",
+                  ),
                 ),
               ]),
             ],
@@ -141,53 +180,153 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
 
           // Étapes canevas (rapport)
           _ConditionCard(
-            title: "Structure du rapport — canevas (8 points)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+              "f00012",
+              "Structure du rapport — canevas (8 points)",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Instructions"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00013",
+                  "1) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Rappeler le cadre :\n"
-                "• Flagrance : APJ sous contrôle OPJ.\n"
-                "• Préliminaire : APJ sur autorisation du procureur de la République.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00014",
+                      "Rappeler le cadre :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00015",
+                      "• Flagrance : APJ sous contrôle OPJ.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00016",
+                      "• Préliminaire : APJ sur autorisation du procureur de la République.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00017",
+                  "2) Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "Indiquer si l’acte s’inscrit en enquête de flagrance ou en enquête préliminaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00018",
+                  "Indiquer si l’acte s’inscrit en enquête de flagrance ou en enquête préliminaire.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Visa de l’article de référence"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00019",
+                  "3) Visa de l’article de référence",
+                ),
+              ),
               _Paragraph(
-                "Le visa varie selon :\n"
-                "• le cadre juridique,\n"
-                "• et le type de réquisition (personne qualifiée / générale / informatique / manœuvrier).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00020",
+                      "Le visa varie selon :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00021",
+                      "• le cadre juridique,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00022",
+                      "• et le type de réquisition (personne qualifiée / générale / informatique / manœuvrier).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("4) Identité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00023",
+                  "4) Identité",
+                ),
+              ),
               _Paragraph(
-                "Préciser l’identité succincte de la personne requise (et sa qualité si utile).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00024",
+                  "Préciser l’identité succincte de la personne requise (et sa qualité si utile).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("5) Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00025",
+                  "5) Mission",
+                ),
+              ),
               _Paragraph(
-                "Rappeler la mission confiée et lister les actes réalisés (constatations, examens, analyses, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00026",
+                  "Rappeler la mission confiée et lister les actes réalisés (constatations, examens, analyses, etc.).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("6) Prestation de serment"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00027",
+                  "6) Prestation de serment",
+                ),
+              ),
               _Paragraph(
-                "Mentionner le serment (si requis) avant l’accomplissement de la mission.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00028",
+                  "Mentionner le serment (si requis) avant l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("7) Remise de documents"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00029",
+                  "7) Remise de documents",
+                ),
+              ),
               _Paragraph(
-                "Indiquer la remise du document et rappeler l’obligation d’accomplir la prestation.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00030",
+                  "Indiquer la remise du document et rappeler l’obligation d’accomplir la prestation.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("8) Mentions terminales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00031",
+                  "8) Mentions terminales",
+                ),
+              ),
               _Paragraph(
-                "Le lieu de rédaction et la date sont précisés. Le rédacteur signe l’acte.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00032",
+                  "Le lieu de rédaction et la date sont précisés. Le rédacteur signe l’acte.",
+                ),
               ),
             ],
           ),
@@ -196,30 +335,45 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
 
           // Serment (focus)
           _ConditionCard(
-            title: "Focus — serment (rendu attendu dans le rapport)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+              "f00033",
+              "Focus — serment (rendu attendu dans le rapport)",
+            ),
             cardColor: cardOath,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "La personne qualifiée requise ("),
                 TextSpan(
-                  text: "articles 60 et 77-1 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00034",
+                    "La personne qualifiée requise (",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ") prête serment avant sa mission, sauf si elle est inscrite sur une liste d’experts (",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00035",
+                    "articles 60 et 77-1 du CPP",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "article 157 du CPP",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00036",
+                    ") prête serment avant sa mission, sauf si elle est inscrite sur une liste d’experts (",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00037",
+                    "article 157 du CPP",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
@@ -228,10 +382,26 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Serment écrit : « apporter son concours à la justice en son honneur et conscience ».\n"
-                        "Il figure :\n"
-                        "• en tête du rapport, OU\n"
-                        "• sur une déclaration écrite séparée.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                          "f00038",
+                          "Serment écrit : « apporter son concours à la justice en son honneur et conscience ».\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                          "f00039",
+                          "Il figure :\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                          "f00040",
+                          "• en tête du rapport, OU\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                          "f00041",
+                          "• sur une déclaration écrite séparée.",
+                        ),
                   ),
                 ],
               ),
@@ -242,17 +412,41 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
 
           // Mentions terminales (lieu + date)
           _ConditionCard(
-            title: "Mentions terminales — point de vigilance",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+              "f00042",
+              "Mentions terminales — point de vigilance",
+            ),
             cardColor: cardTerminal,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le rapport doit impérativement préciser :\n"
-                "• le lieu de rédaction,\n"
-                "• la date,\n"
-                "• la signature du rédacteur.\n"
-                "Ces mentions assurent la traçabilité et la régularité formelle du document.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00043",
+                      "Le rapport doit impérativement préciser :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00044",
+                      "• le lieu de rédaction,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00045",
+                      "• la date,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00046",
+                      "• la signature du rédacteur.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                      "f00047",
+                      "Ces mentions assurent la traçabilité et la régularité formelle du document.",
+                    ),
               ),
             ],
           ),
@@ -261,7 +455,11 @@ class RapportRequisitionPersonnePage extends StatelessWidget {
 
           // Image CANVA (aperçu)
           _ConditionCard(
-            title: "Modèle (CANVA) — aperçu",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+              "f00048",
+              "Modèle (CANVA) — aperçu",
+            ),
             cardColor: cardModel,
             accent: accentGrey,
             titleColor: textMain,
@@ -523,9 +721,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -590,8 +786,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+        "f00049",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+        "f00050",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -764,7 +968,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                    "f00051",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -833,7 +1041,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/requisitions/rapport_requisition_personne_page.dart",
+                  "f00052",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -861,7 +1073,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -896,7 +1110,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

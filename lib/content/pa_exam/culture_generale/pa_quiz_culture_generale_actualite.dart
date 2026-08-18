@@ -862,25 +862,13 @@ class _PaQuizCultureGeneraleActualiteState
   /// existe, du geste retour système — sans quoi celui-ci contournerait la
   /// confirmation.
   Future<void> _fermerQuiz() async {
-    if (_sortieEnCours) return;
-    _sortieEnCours = true;
-    try {
-      // Rien n'est engagé avant le choix du niveau : on sort sans demander.
-      if (!_hasQuiz) {
-        if (mounted) _quitterEcran();
-        return;
-      }
-      final confirme = await _confirmerSortie(
-        titre: 'Quitter le quiz ?',
-        actionLabel: 'Quitter',
-      );
-      if (!confirme || !mounted) return;
-      await _updateHistoryOnFinish();
-      if (!mounted) return;
-      _quitterEcran();
-    } finally {
-      _sortieEnCours = false;
+    // La croix et « Mettre fin » partagent strictement la même clôture :
+    // confirmation, sauvegarde Supabase, calcul du score et écran de résultat.
+    if (!_hasQuiz) {
+      if (mounted) _quitterEcran();
+      return;
     }
+    await _endQuizNow();
   }
 
   /// Sortie effective de l'écran.
@@ -922,7 +910,8 @@ class _PaQuizCultureGeneraleActualiteState
             child: _ConfirmCard(
               isDark: isDark,
               titre: titre,
-              message: 'Tes réponses déjà validées sont enregistrées, et ton '
+              message:
+                  'Tes réponses déjà validées sont enregistrées, et ton '
                   'score sera calculé sur cette base.',
               actionLabel: actionLabel,
               onConfirmer: () => Navigator.of(ctx).pop(true),
@@ -934,9 +923,10 @@ class _PaQuizCultureGeneraleActualiteState
       transitionBuilder: (_, anim, __, child) => FadeTransition(
         opacity: CurvedAnimation(parent: anim, curve: Curves.easeOutCubic),
         child: ScaleTransition(
-          scale: Tween(begin: .96, end: 1.0)
-              .chain(CurveTween(curve: Curves.easeOutBack))
-              .animate(anim),
+          scale: Tween(
+            begin: .96,
+            end: 1.0,
+          ).chain(CurveTween(curve: Curves.easeOutBack)).animate(anim),
           child: child,
         ),
       ),
@@ -1467,227 +1457,235 @@ class _PaQuizCultureGeneraleActualiteState
                 if (!didPop) unawaited(_fermerQuiz());
               },
               child: Stack(
-              children: [
-                Positioned.fill(child: _QuizBackdrop(isDark: isDark)),
-                Scaffold(
-                backgroundColor: Colors.transparent,
-                extendBody: true,
-                extendBodyBehindAppBar: true,
-                appBar: AppBar(
-                  backgroundColor: Colors.transparent,
-                  elevation: 0,
-                  scrolledUnderElevation: 0,
-                  leading: IconButton(
-                    icon: Icon(Icons.close_rounded, color: textCol),
-                    onPressed: _fermerQuiz,
-                    tooltip: 'Fermer',
-                  ),
-                  actions: [
-                    if (_hasQuiz && !_showSplash)
-                      IconButton(
-                        tooltip: 'Signaler',
-                        onPressed: () => _openReportDialog(isDark: isDark),
-                        icon: Icon(Icons.flag_outlined, color: textCol),
+                children: [
+                  Positioned.fill(child: _QuizBackdrop(isDark: isDark)),
+                  Scaffold(
+                    backgroundColor: Colors.transparent,
+                    extendBody: true,
+                    extendBodyBehindAppBar: true,
+                    appBar: AppBar(
+                      backgroundColor: Colors.transparent,
+                      elevation: 0,
+                      scrolledUnderElevation: 0,
+                      leading: IconButton(
+                        icon: Icon(Icons.close_rounded, color: textCol),
+                        onPressed: _fermerQuiz,
+                        tooltip: 'Fermer',
                       ),
-                    const SizedBox(width: 6),
-                  ],
-                ),
+                      actions: [
+                        if (_hasQuiz && !_showSplash)
+                          IconButton(
+                            tooltip: 'Signaler',
+                            onPressed: () => _openReportDialog(isDark: isDark),
+                            icon: Icon(Icons.flag_outlined, color: textCol),
+                          ),
+                        const SizedBox(width: 6),
+                      ],
+                    ),
 
-                // ✅ ton UI inchangé dessous
-                body: SafeArea(
-                  top: false,
-                  child: LayoutBuilder(
-                    builder: (context, _) {
-
-                      return Stack(
-                        clipBehavior: Clip.none,
-                        children: [
-                          // Masquée à la source plutôt que recouverte : on ne
-                          // construit pas une interface pour la dissimuler.
-                          if (!_showSplash)
-                          Column(
+                    // ✅ ton UI inchangé dessous
+                    body: SafeArea(
+                      top: false,
+                      child: LayoutBuilder(
+                        builder: (context, _) {
+                          return Stack(
+                            clipBehavior: Clip.none,
                             children: [
-                              SizedBox(height: topInset),
+                              // Masquée à la source plutôt que recouverte : on ne
+                              // construit pas une interface pour la dissimuler.
+                              if (!_showSplash)
+                                Column(
+                                  children: [
+                                    SizedBox(height: topInset),
 
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(
-                                  20,
-                                  0,
-                                  20,
-                                  8,
-                                ),
-                                child: _TopProgressBar(
-                                  index: _hasQuiz ? _index : 0,
-                                  total: totalSafe,
-                                  accent: isDark ? _Brand.white : _Brand.accent,
-                                ),
-                              ),
-                              Expanded(
-                                child: PageView.builder(
-                                  controller: _page,
-                                  physics: const NeverScrollableScrollPhysics(),
-                                  itemCount: _hasQuiz ? totalSafe : 1,
-                                  itemBuilder: (_, i) {
-                                    if (!_hasQuiz) {
-                                      return Center(
-                                        child: _loading
-                                            ? const CircularProgressIndicator()
-                                            : const Text(
-                                                'Sélectionne une difficulté pour commencer.',
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                        20,
+                                        0,
+                                        20,
+                                        8,
+                                      ),
+                                      child: _TopProgressBar(
+                                        index: _hasQuiz ? _index : 0,
+                                        total: totalSafe,
+                                        accent: isDark
+                                            ? _Brand.white
+                                            : _Brand.accent,
+                                      ),
+                                    ),
+                                    Expanded(
+                                      child: PageView.builder(
+                                        controller: _page,
+                                        physics:
+                                            const NeverScrollableScrollPhysics(),
+                                        itemCount: _hasQuiz ? totalSafe : 1,
+                                        itemBuilder: (_, i) {
+                                          if (!_hasQuiz) {
+                                            return Center(
+                                              child: _loading
+                                                  ? const CircularProgressIndicator()
+                                                  : const Text(
+                                                      'Sélectionne une difficulté pour commencer.',
+                                                    ),
+                                            );
+                                          }
+
+                                          final q = _cache[i];
+                                          final opts = _optsCache[i];
+
+                                          final bool animVisible =
+                                              i == _index && _validated;
+
+                                          // La réserve ajoutait jusqu'à 240 px de vide sous la carte pour
+                                          // loger la croix flottante. Le feedback vivant désormais dans le
+                                          // bandeau, seule la barre de boutons est à compenser.
+                                          final double bottomInsetForThisPage =
+                                              bottomBarReserved;
+
+                                          if (q == null || opts == null) {
+                                            _requestEnsure(i);
+                                            return Center(
+                                              child: Column(
+                                                mainAxisSize: MainAxisSize.min,
+                                                children: [
+                                                  const CircularProgressIndicator(),
+                                                  const SizedBox(height: 12),
+                                                  Text(
+                                                    'Chargement des questions…',
+                                                    style: TextStyle(
+                                                      color: textCol.withAlpha(
+                                                        200,
+                                                      ),
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                    ),
+                                                  ),
+                                                ],
                                               ),
-                                      );
-                                    }
+                                            );
+                                          }
 
-                                    final q = _cache[i];
-                                    final opts = _optsCache[i];
-
-                                    final bool animVisible =
-                                        i == _index && _validated;
-
-                                    // La réserve ajoutait jusqu'à 240 px de vide sous la carte pour
-// loger la croix flottante. Le feedback vivant désormais dans le
-// bandeau, seule la barre de boutons est à compenser.
-final double bottomInsetForThisPage = bottomBarReserved;
-
-                                    if (q == null || opts == null) {
-                                      _requestEnsure(i);
-                                      return Center(
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          children: [
-                                            const CircularProgressIndicator(),
-                                            const SizedBox(height: 12),
-                                            Text(
-                                              'Chargement des questions…',
-                                              style: TextStyle(
-                                                color: textCol.withAlpha(200),
-                                                fontWeight: FontWeight.w600,
+                                          return Padding(
+                                            padding: const EdgeInsets.fromLTRB(
+                                              20,
+                                              8,
+                                              20,
+                                              0,
+                                            ),
+                                            child: KeyedSubtree(
+                                              key: ValueKey('page_$i'),
+                                              child: _QuestionCard(
+                                                question: q,
+                                                options: opts,
+                                                selected: i == _index
+                                                    ? _currentChoice
+                                                    : null,
+                                                onSelect: _select,
+                                                locked: _validated,
+                                                showOutcome: animVisible,
+                                                isCorrect: _isCorrect,
+                                                estActive: i == _index,
+                                                pulse: _pulseCtrl,
+                                                bottomSafeInset:
+                                                    bottomInsetForThisPage,
                                               ),
                                             ),
-                                          ],
-                                        ),
-                                      );
-                                    }
-
-                                    return Padding(
-                                      padding: const EdgeInsets.fromLTRB(
+                                          );
+                                        },
+                                      ),
+                                    ),
+                                    SafeArea(
+                                      top: false,
+                                      minimum: const EdgeInsets.fromLTRB(
                                         20,
                                         8,
                                         20,
-                                        0,
+                                        16,
                                       ),
-                                      child: KeyedSubtree(
-                                        key: ValueKey('page_$i'),
-                                        child: _QuestionCard(
-                                          question: q,
-                                          options: opts,
-                                          selected: i == _index
-                                              ? _currentChoice
-                                              : null,
-                                          onSelect: _select,
-                                          locked: _validated,
-                                          showOutcome: animVisible,
-                                          isCorrect: _isCorrect,
-                                          estActive: i == _index,
-                                          pulse: _pulseCtrl,
-                                          bottomSafeInset:
-                                              bottomInsetForThisPage,
-                                        ),
-                                      ),
-                                    );
-                                  },
-                                ),
-                              ),
-                              SafeArea(
-                                top: false,
-                                minimum: const EdgeInsets.fromLTRB(
-                                  20,
-                                  8,
-                                  20,
-                                  16,
-                                ),
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: SizedBox(
-                                        height: kButtonHeight,
-                                        child: _PrimaryButton(
-                                          label: !_validated
-                                              ? 'Valider'
-                                              : (_index == totalSafe - 1
-                                                    ? 'Terminer'
-                                                    : 'Suivant'),
-                                          onTap: !_hasQuiz
-                                              ? null
-                                              : (!_validated
-                                                    ? (_currentChoice == null
-                                                          ? null
-                                                          : _validate)
-                                                    : _next),
-                                        ),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: SizedBox(
+                                              height: kButtonHeight,
+                                              child: _PrimaryButton(
+                                                label: !_validated
+                                                    ? 'Valider'
+                                                    : (_index == totalSafe - 1
+                                                          ? 'Terminer'
+                                                          : 'Suivant'),
+                                                onTap: !_hasQuiz
+                                                    ? null
+                                                    : (!_validated
+                                                          ? (_currentChoice ==
+                                                                    null
+                                                                ? null
+                                                                : _validate)
+                                                          : _next),
+                                              ),
+                                            ),
+                                          ),
+                                          if (_hasQuiz) ...[
+                                            const SizedBox(width: 12),
+                                            SizedBox(
+                                              height: kButtonHeight,
+                                              child: _DangerButton(
+                                                label: 'Mettre fin',
+                                                onTap: _endQuizNow,
+                                              ),
+                                            ),
+                                          ],
+                                        ],
                                       ),
                                     ),
-                                    if (_hasQuiz) ...[
-                                      const SizedBox(width: 12),
-                                      SizedBox(
-                                        height: kButtonHeight,
-                                        child: _DangerButton(
-                                          label: 'Mettre fin',
-                                          onTap: _endQuizNow,
-                                        ),
-                                      ),
-                                    ],
                                   ],
                                 ),
-                              ),
-                            ],
-                          ),
 
-                          // L'overlay de feedback a été retiré : il se superposait au bandeau
-                          // d'explication dès que l'énoncé était long. L'animation vit
-                          // maintenant dans `_OutcomeIcon`, bornée par le bandeau.
-
-                          if (_showSplash)
-                            _DifficultySplash(
-                              fade: _splashFade,
-                              isDark: isDark,
-                              selected: _selectedDifficulty,
-                              onSelect: (d) => setState(() {
-                                _selectedDifficulty = d;
-                                _mixMode = false;
-                              }),
-                              onStart: () => _startQuiz(mix: false),
-                              onStartRandom: () => _startQuiz(mix: true),
-                            ),
-
-                          if (_loading)
-                            Positioned.fill(
-                              child: _LoadingOverlay(
-                                isDark: isDark,
-                                total: _total,
-                                animated: _animatedCount,
-                                loaded: _loadedCount,
-                                readyTarget: math.min(
-                                  23,
-                                  (_total <= 0 ? 23 : _total),
+                              // L'overlay de feedback a été retiré : il se superposait au bandeau
+                              // d'explication dès que l'énoncé était long. L'animation vit
+                              // maintenant dans `_OutcomeIcon`, bornée par le bandeau.
+                              if (_showSplash)
+                                _DifficultySplash(
+                                  fade: _splashFade,
+                                  isDark: isDark,
+                                  selected: _selectedDifficulty,
+                                  onSelect: (d) => setState(() {
+                                    _selectedDifficulty = d;
+                                    _mixMode = false;
+                                  }),
+                                  onStart: () => _startQuiz(mix: false),
+                                  onStartRandom: () => _startQuiz(mix: true),
                                 ),
-                                onRetry: () {
-                                  if (!_hasQuiz) {
-                                    unawaited(_startQuiz(mix: _mixMode));
-                                    return;
-                                  }
-                                  unawaited(_ensureBatchForQuizIndex(_index));
-                                },
-                              ),
-                            ),
-                        ],
-                      );
-                    },
+
+                              if (_loading)
+                                Positioned.fill(
+                                  child: _LoadingOverlay(
+                                    isDark: isDark,
+                                    total: _total,
+                                    animated: _animatedCount,
+                                    loaded: _loadedCount,
+                                    readyTarget: math.min(
+                                      23,
+                                      (_total <= 0 ? 23 : _total),
+                                    ),
+                                    onRetry: () {
+                                      if (!_hasQuiz) {
+                                        unawaited(_startQuiz(mix: _mixMode));
+                                        return;
+                                      }
+                                      unawaited(
+                                        _ensureBatchForQuizIndex(_index),
+                                      );
+                                    },
+                                  ),
+                                ),
+                            ],
+                          );
+                        },
+                      ),
+                    ),
                   ),
-                ),
+                ],
               ),
-              ],
-            ),
             ),
           ),
         );
@@ -1891,6 +1889,7 @@ class _QuestionCard extends StatefulWidget {
   final bool locked;
   final bool showOutcome;
   final bool isCorrect;
+
   /// `true` quand cette page est celle que l'utilisateur regarde.
   ///
   /// Indispensable : `PageView.builder` construit aussi les pages voisines
@@ -1931,7 +1930,8 @@ class _QuestionCardState extends State<_QuestionCard>
   static const int _msElement = 420;
   static const int _msDecalage = 130;
 
-  int get _nbElements => 1 + (_afficheSousTitre ? 1 : 0) + widget.options.length;
+  int get _nbElements =>
+      1 + (_afficheSousTitre ? 1 : 0) + widget.options.length;
 
   /// Le sous-titre compte comme un élément de la séquence quand il est affiché.
   bool get _afficheSousTitre => _shouldShowSub(widget.question.sub);
@@ -2102,12 +2102,11 @@ class _QuestionCardState extends State<_QuestionCard>
           _ElementCascade(
             animation: _fenetre(rangCascade++),
             child: Text(
-            enonce,
-            style: _Brand.h1(context).copyWith(
-              color: textCol,
-              fontSize: _tailleTitre(enonce),
+              enonce,
+              style: _Brand.h1(
+                context,
+              ).copyWith(color: textCol, fontSize: _tailleTitre(enonce)),
             ),
-          ),
           ),
 
           // ✅ Sous-titre uniquement si pertinent (et pas un tag technique)
@@ -2116,13 +2115,13 @@ class _QuestionCardState extends State<_QuestionCard>
             _ElementCascade(
               animation: _fenetre(rangCascade++),
               child: Text(
-              sub!, // safe car _shouldShowSub(sub) => sub non null & non vide
-              style: TextStyle(
-                color: textCol.withAlpha(180),
-                fontWeight: FontWeight.w600,
-                decoration: TextDecoration.none,
+                sub!, // safe car _shouldShowSub(sub) => sub non null & non vide
+                style: TextStyle(
+                  color: textCol.withAlpha(180),
+                  fontWeight: FontWeight.w600,
+                  decoration: TextDecoration.none,
+                ),
               ),
-            ),
             ),
           ],
 
@@ -2130,22 +2129,24 @@ class _QuestionCardState extends State<_QuestionCard>
 
           ...widget.options.map((o) {
             final isSel = widget.selected == o;
-            final correctShown = widget.showOutcome && o == widget.question.answer;
-            final wrongShown = widget.showOutcome && isSel && o != widget.question.answer;
+            final correctShown =
+                widget.showOutcome && o == widget.question.answer;
+            final wrongShown =
+                widget.showOutcome && isSel && o != widget.question.answer;
 
             return _ElementCascade(
               animation: _fenetre(rangCascade++),
               child: Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: _OptionTile(
-                label: o,
-                selected: isSel,
-                locked: widget.locked,
-                correct: correctShown,
-                wrong: wrongShown,
-                onTap: () => widget.onSelect(o),
+                padding: const EdgeInsets.only(bottom: 12),
+                child: _OptionTile(
+                  label: o,
+                  selected: isSel,
+                  locked: widget.locked,
+                  correct: correctShown,
+                  wrong: wrongShown,
+                  onTap: () => widget.onSelect(o),
+                ),
               ),
-            ),
             );
           }),
 
@@ -2832,26 +2833,26 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         _ElementCascade(
                           animation: _fenetre(_rangTitre),
                           child: Text(
-                          'Sélectionne le niveau de difficulté',
-                          textAlign: TextAlign.center,
-                          style: _Brand.h1(
-                            context,
-                          ).copyWith(color: textMain, fontSize: 24),
-                        ),
+                            'Sélectionne le niveau de difficulté',
+                            textAlign: TextAlign.center,
+                            style: _Brand.h1(
+                              context,
+                            ).copyWith(color: textMain, fontSize: 24),
+                          ),
                         ),
                         const SizedBox(height: 8),
                         _ElementCascade(
                           animation: _fenetre(_rangSousTitre),
                           child: Text(
-                          'Nouvelles questions à chaque partie.',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: sub,
-                            fontWeight: FontWeight.w600,
-                            height: 1.3,
-                            decoration: TextDecoration.none,
+                            'Nouvelles questions à chaque partie.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: sub,
+                              fontWeight: FontWeight.w600,
+                              height: 1.3,
+                              decoration: TextDecoration.none,
+                            ),
                           ),
-                        ),
                         ),
                         const SizedBox(height: 20),
                         LayoutBuilder(
@@ -2866,35 +2867,35 @@ class _DifficultySplashState extends State<_DifficultySplash>
                               _ElementCascade(
                                 animation: _fenetre(_rangFacile),
                                 child: _LevelCard(
-                                label: 'Facile',
-                                icon: Icons.eco_rounded,
-                                tint: const Color(0xFF22C55E),
-                                active: widget.selected == 'Facile',
-                                onTap: () => widget.onSelect('Facile'),
-                                isDark: isDark,
-                              ),
+                                  label: 'Facile',
+                                  icon: Icons.eco_rounded,
+                                  tint: const Color(0xFF22C55E),
+                                  active: widget.selected == 'Facile',
+                                  onTap: () => widget.onSelect('Facile'),
+                                  isDark: isDark,
+                                ),
                               ),
                               _ElementCascade(
                                 animation: _fenetre(_rangMoyen),
                                 child: _LevelCard(
-                                label: 'Moyen',
-                                icon: Icons.military_tech_rounded,
-                                tint: const Color(0xFFF59E0B),
-                                active: widget.selected == 'Moyenne',
-                                onTap: () => widget.onSelect('Moyenne'),
-                                isDark: isDark,
-                              ),
+                                  label: 'Moyen',
+                                  icon: Icons.military_tech_rounded,
+                                  tint: const Color(0xFFF59E0B),
+                                  active: widget.selected == 'Moyenne',
+                                  onTap: () => widget.onSelect('Moyenne'),
+                                  isDark: isDark,
+                                ),
                               ),
                               _ElementCascade(
                                 animation: _fenetre(_rangDifficile),
                                 child: _LevelCard(
-                                label: 'Difficile',
-                                icon: Icons.emoji_events_rounded,
-                                tint: const Color(0xFFEF4444),
-                                active: widget.selected == 'Difficile',
-                                onTap: () => widget.onSelect('Difficile'),
-                                isDark: isDark,
-                              ),
+                                  label: 'Difficile',
+                                  icon: Icons.emoji_events_rounded,
+                                  tint: const Color(0xFFEF4444),
+                                  active: widget.selected == 'Difficile',
+                                  onTap: () => widget.onSelect('Difficile'),
+                                  isDark: isDark,
+                                ),
                               ),
                             ];
 
@@ -2961,33 +2962,33 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         _ElementCascade(
                           animation: _fenetre(_rangMelanger),
                           child: SizedBox(
-                          height: 56,
-                          width: double.infinity,
-                          child: OutlinedButton.icon(
-                            onPressed: widget.onStartRandom,
-                            icon: const Icon(Icons.shuffle_rounded, size: 20),
-                            label: const Text('Mélanger les 3 niveaux'),
-                            style: OutlinedButton.styleFrom(
-                              foregroundColor: isDark
-                                  ? Colors.white
-                                  : _Brand.textDark,
-                              side: BorderSide(
-                                color: isDark
-                                    ? Colors.white.withAlpha(160)
-                                    : _Brand.textDark.withAlpha(160),
-                              ),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(28),
-                              ),
-                              textStyle: const TextStyle(
-                                fontFamily: 'InstrumentSans',
-                                fontWeight: FontWeight.w800,
-                                fontSize: 16,
-                                decoration: TextDecoration.none,
+                            height: 56,
+                            width: double.infinity,
+                            child: OutlinedButton.icon(
+                              onPressed: widget.onStartRandom,
+                              icon: const Icon(Icons.shuffle_rounded, size: 20),
+                              label: const Text('Mélanger les 3 niveaux'),
+                              style: OutlinedButton.styleFrom(
+                                foregroundColor: isDark
+                                    ? Colors.white
+                                    : _Brand.textDark,
+                                side: BorderSide(
+                                  color: isDark
+                                      ? Colors.white.withAlpha(160)
+                                      : _Brand.textDark.withAlpha(160),
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(28),
+                                ),
+                                textStyle: const TextStyle(
+                                  fontFamily: 'InstrumentSans',
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 16,
+                                  decoration: TextDecoration.none,
+                                ),
                               ),
                             ),
                           ),
-                        ),
                         ),
                       ],
                     ),
@@ -3004,7 +3005,6 @@ class _DifficultySplashState extends State<_DifficultySplash>
 
 // `_AnimatedBackground` supprimé : dégradé propre au splash, remplacé par le
 // `_QuizBackdrop` de la page. Un seul fond pour tout l'écran.
-
 
 class _Halo extends StatelessWidget {
   final Color color;
@@ -3057,6 +3057,7 @@ class _Halo extends StatelessWidget {
 
 class _LevelCard extends StatelessWidget {
   final String label;
+
   /// Icône du niveau. Remplace un emoji, dont le dessin dépend de la police
   /// système et dont la couleur n'est pas contrôlable.
   final IconData icon;
@@ -3082,94 +3083,89 @@ class _LevelCard extends StatelessWidget {
     // faisait osciller de ±2 px a été retiré : sur trois cartes à
     // comparer, ce balancement désalignait les bords en permanence.
     return AnimatedScale(
-            duration: const Duration(milliseconds: 180),
-            scale: active ? 1.02 : 1.0,
-            curve: Curves.easeOutCubic,
-            child: InkWell(
-              onTap: onTap,
-              borderRadius: BorderRadius.circular(20),
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
-                height: 112,
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                decoration: BoxDecoration(
-                  color: _opa(tint, isDark
-                      ? (active ? .22 : .13)
-                      : (active ? .18 : .10)),
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(
-                    color: active ? tint : track,
-                    width: active ? 2 : 1,
-                  ),
-                  boxShadow: [
-                    if (!isDark)
-                      BoxShadow(
-                        color: tint.withValues(alpha: .18),
-                        blurRadius: 18,
-                        offset: const Offset(0, 8),
-                      ),
-                  ],
+      duration: const Duration(milliseconds: 180),
+      scale: active ? 1.02 : 1.0,
+      curve: Curves.easeOutCubic,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 220),
+          curve: Curves.easeOutCubic,
+          height: 112,
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          decoration: BoxDecoration(
+            color: _opa(
+              tint,
+              isDark ? (active ? .22 : .13) : (active ? .18 : .10),
+            ),
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: active ? tint : track,
+              width: active ? 2 : 1,
+            ),
+            boxShadow: [
+              if (!isDark)
+                BoxShadow(
+                  color: tint.withValues(alpha: .18),
+                  blurRadius: 18,
+                  offset: const Offset(0, 8),
                 ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: _opa(tint, isDark ? .22 : .18),
-                        border: Border.all(
-                          color: active ? tint : _opa(tint, .45),
-                        ),
-                      ),
-                      child: Center(
-                        child: Icon(
-                          icon,
-                          size: 24,
-                          color: isDark ? tint : _assombrir(tint, .22),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 14),
-                    Expanded(
-                      child: Text(
-                        label,
-                        style: _Brand.option(context).copyWith(
-                          color: isDark ? Colors.white : _Brand.textDark,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w800,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 24,
-                      height: 24,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: active ? tint : track,
-                          width: 2,
-                        ),
-                      ),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 200),
-                        margin: const EdgeInsets.all(4),
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: active ? tint : Colors.transparent,
-                        ),
-                      ),
-                    ),
-                  ],
+            ],
+          ),
+          child: Row(
+            children: [
+              Container(
+                width: 48,
+                height: 48,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: _opa(tint, isDark ? .22 : .18),
+                  border: Border.all(color: active ? tint : _opa(tint, .45)),
+                ),
+                child: Center(
+                  child: Icon(
+                    icon,
+                    size: 24,
+                    color: isDark ? tint : _assombrir(tint, .22),
+                  ),
                 ),
               ),
-            ),
-          );
+              const SizedBox(width: 14),
+              Expanded(
+                child: Text(
+                  label,
+                  style: _Brand.option(context).copyWith(
+                    color: isDark ? Colors.white : _Brand.textDark,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w800,
+                    decoration: TextDecoration.none,
+                  ),
+                ),
+              ),
+              Container(
+                width: 24,
+                height: 24,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  border: Border.all(color: active ? tint : track, width: 2),
+                ),
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  margin: const EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: active ? tint : Colors.transparent,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
-
 
 /// Assombrit une teinte pour qu'elle reste lisible sur fond clair.
 ///
@@ -3178,7 +3174,6 @@ class _LevelCard extends StatelessWidget {
 /// que d'entretenir une seconde palette en parallèle.
 Color _assombrir(Color c, [double facteur = .45]) =>
     Color.lerp(c, Colors.black, facteur)!;
-
 
 /// Fond du quiz, dans les deux thèmes.
 ///
@@ -3316,7 +3311,6 @@ class _QuizBackdropState extends State<_QuizBackdrop>
   }
 }
 
-
 /// Un élément d'une cascade d'apparition : fondu et montée de 10 px.
 ///
 /// `FadeTransition` gère l'opacité sans rien reconstruire, et l'enfant est passé
@@ -3349,7 +3343,6 @@ class _ElementCascade extends StatelessWidget {
     );
   }
 }
-
 
 /// Icône de résultat animée : rebond à l'apparition, puis étincelles qui
 /// s'écartent et s'effacent.
@@ -3423,7 +3416,6 @@ class _OutcomeIcon extends StatelessWidget {
   }
 }
 
-
 /// Carte de confirmation avant une sortie de quiz.
 ///
 /// Sert la croix comme le bouton « Mettre fin » : même mise en page, seuls le
@@ -3467,7 +3459,9 @@ class _ConfirmCard extends StatelessWidget {
               color: fond,
               borderRadius: BorderRadius.circular(28),
               border: Border.all(
-                color: isDark ? _opa(Colors.white, .10) : _opa(Colors.black, .06),
+                color: isDark
+                    ? _opa(Colors.white, .10)
+                    : _opa(Colors.black, .06),
               ),
               boxShadow: [
                 BoxShadow(
@@ -3531,7 +3525,10 @@ class _ConfirmCard extends StatelessWidget {
                     style: OutlinedButton.styleFrom(
                       backgroundColor: _opa(_Brand.bad, .10),
                       foregroundColor: _Brand.bad,
-                      side: BorderSide(color: _opa(_Brand.bad, .55), width: 1.4),
+                      side: BorderSide(
+                        color: _opa(_Brand.bad, .55),
+                        width: 1.4,
+                      ),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(26),
                       ),

@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques/enquete_flagrant_delit_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PersonnesFuiteContenuPage extends StatelessWidget {
   const PersonnesFuiteContenuPage({super.key});
@@ -25,10 +26,18 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La recherche des personnes en fuite',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+            "f00002",
+            'La recherche des personnes en fuite',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'Les conditions d\'application de l\'article 74-2 du Code de procédure pénale.',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00003",
+              'Les conditions d\'application de l\'article 74-2 du Code de procédure pénale.',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +64,16 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Articles 74-2 du code de procédure pénale — définition, champ '
-            'd’application et déroulement procédural.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+                  "f00004",
+                  'Articles 74-2 du code de procédure pénale — définition, champ ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+                  "f00005",
+                  'd’application et déroulement procédural.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +86,16 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
           // ===================== MODULE INTRO GLOBAL =======================
           _ModuleCard(
             tag: 'fuite_intro',
-            title: 'Panorama de la recherche des personnes en fuite',
-            subtitle:
-                'Cadre juridique de l’article 74-2 du C.P.P., objectifs, missions de l’O.P.J. et place de ce dispositif après la clôture de l’information.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00006",
+              'Panorama de la recherche des personnes en fuite',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00007",
+              'Cadre juridique de l’article 74-2 du C.P.P., objectifs, missions de l’O.P.J. et place de ce dispositif après la clôture de l’information.',
+            ),
             imagePath: 'assets/images/mandat_arret.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,9 +109,16 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 1 ================================
           _ModuleCard(
             tag: 'fuite_chap1',
-            title: 'Les conditions d’application',
-            subtitle:
-                'Personnes visées par l’article 74-2, types de mandats, condamnations, décisions juridictionnelles et fichages concernés.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00008",
+              'Les conditions d’application',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00009",
+              'Personnes visées par l’article 74-2, types de mandats, condamnations, décisions juridictionnelles et fichages concernés.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -97,9 +132,16 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 2 ================================
           _ModuleCard(
             tag: 'fuite_chap2',
-            title: 'La procédure applicable',
-            subtitle:
-                'Rôle du procureur, du JLD et de l’O.P.J., actes possibles, interceptions, techniques spéciales et limites procédurales.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00010",
+              'La procédure applicable',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00011",
+              'Rôle du procureur, du JLD et de l’O.P.J., actes possibles, interceptions, techniques spéciales et limites procédurales.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -113,9 +155,16 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 3 ================================
           _ModuleCard(
             tag: 'fuite_chap3',
-            title: 'Les techniques spéciales d’enquête',
-            subtitle:
-                'Interceptions téléphoniques, IMSI-catcher, sonorisations, captations de données et conditions d’emploi.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00012",
+              'Les techniques spéciales d’enquête',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00013",
+              'Interceptions téléphoniques, IMSI-catcher, sonorisations, captations de données et conditions d’emploi.',
+            ),
             imagePath: 'assets/images/copic_institutions.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -129,8 +178,16 @@ class PersonnesFuiteContenuPage extends StatelessWidget {
           // ===================== QUIZ MODULE ===============================
           _ModuleCard(
             tag: 'flagrant_quiz',
-            title: 'Quiz — Personnes en fuite',
-            subtitle: 'Testez vos réflexes : définition, conditions.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00014",
+              'Quiz — Personnes en fuite',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart",
+              "f00015",
+              'Testez vos réflexes : définition, conditions.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

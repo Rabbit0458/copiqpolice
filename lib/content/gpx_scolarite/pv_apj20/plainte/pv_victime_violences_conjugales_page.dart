@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVVictimeViolencesConjugalesPage extends StatelessWidget {
   const PVVictimeViolencesConjugalesPage({super.key});
@@ -56,10 +57,18 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Violences conjugales",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+            "f00002",
+            "Violences conjugales",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas & PV de plainte d’une victime de violences conjugales",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+              "f00003",
+              "Canevas & PV de plainte d’une victime de violences conjugales",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,11 +103,23 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette page regroupe un canevas opérationnel et des modèles de procès-verbaux utiles "
-                "pour la prise de plainte d’une victime de violences conjugales. "
-                "Le but : une procédure claire, chronologique, exploitable, et une prise en charge adaptée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00004",
+                      "Cette page regroupe un canevas opérationnel et des modèles de procès-verbaux utiles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00005",
+                      "pour la prise de plainte d’une victime de violences conjugales. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00006",
+                      "Le but : une procédure claire, chronologique, exploitable, et une prise en charge adaptée.",
+                    ),
               ),
             ],
           ),
@@ -103,43 +128,68 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles en rouge)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Obligation de recevoir les plaintes — "),
                 TextSpan(
-                  text: "article 15-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00008",
+                    "Obligation de recevoir les plaintes — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00009",
+                    "article 15-3 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Information des droits des victimes — "),
                 TextSpan(
-                  text: "article 10-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00010",
+                    "Information des droits des victimes — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00011",
+                    "article 10-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Récépissé / copie sur demande — "),
                 TextSpan(
-                  text: "article 15-3 alinéa 2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00012",
+                    "Récépissé / copie sur demande — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00013",
+                    "article 15-3 alinéa 2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -148,8 +198,16 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Selon la situation, préciser le cadre juridique : enquête de flagrance "
-                        "(articles 53 et suivants) ou enquête préliminaire (articles 75 et suivants).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                          "f00014",
+                          "Selon la situation, préciser le cadre juridique : enquête de flagrance ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                          "f00015",
+                          "(articles 53 et suivants) ou enquête préliminaire (articles 75 et suivants).",
+                        ),
                   ),
                 ],
               ),
@@ -160,63 +218,127 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
 
           // II — Canevas (pratique)
           _ConditionCard(
-            title: "II — Canevas (prise de plainte)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+              "f00016",
+              "II — Canevas (prise de plainte)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Accueil & confidentialité"),
-              _BulletPoint(
-                text:
-                    "Installer la victime dans un lieu calme, confidentiel et sécurisant, dans la mesure du possible.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00017",
+                  "1) Accueil & confidentialité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Autoriser qu’elle soit accompagnée (si elle le souhaite), tout en veillant à la liberté de parole.",
-              ),
-              SizedBox(height: 12),
-
-              _SubTitle("2) Recueil du récit"),
-              _BulletPoint(
-                text:
-                    "Commencer par un récit libre, puis questions ouvertes (ne jamais suggérer).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00018",
+                  "Installer la victime dans un lieu calme, confidentiel et sécurisant, dans la mesure du possible.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Faire ressortir : chronologie, fréquence, contexte, menaces, témoins, preuves, blessures, retentissement psychologique.",
-              ),
-              SizedBox(height: 12),
-
-              _SubTitle("3) Points essentiels à qualifier"),
-              _BulletPoint(
-                text:
-                    "Lien victime/auteur : conjoint, ex-conjoint, concubin, ex-concubin, partenaire PACS, ex-partenaire…",
-              ),
-              _BulletPoint(
-                text:
-                    "Caractéristiques : violences physiques / sexuelles / psychologiques / verbales / économiques, contrôle, harcèlement.",
-              ),
-              _BulletPoint(
-                text:
-                    "Présence d’enfants, grossesse, isolement, dépendance financière, armes, addictions, antécédents.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00019",
+                  "Autoriser qu’elle soit accompagnée (si elle le souhaite), tout en veillant à la liberté de parole.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("4) Diligences"),
-              _BulletPoint(
-                text:
-                    "Selon le contexte : avis OPJ / parquet, réquisition médicale, clichés, consultation fichiers (TAJ, FPR, etc.).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00020",
+                  "2) Recueil du récit",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Proposer / organiser la mise en sécurité (proche, foyer, 115, dispositifs locaux).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00021",
+                  "Commencer par un récit libre, puis questions ouvertes (ne jamais suggérer).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00022",
+                  "Faire ressortir : chronologie, fréquence, contexte, menaces, témoins, preuves, blessures, retentissement psychologique.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("5) Clôture"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00023",
+                  "3) Points essentiels à qualifier",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Lecture + signature. Mentionner tout refus (ITT, mise en sécurité, etc.) en procédure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00024",
+                  "Lien victime/auteur : conjoint, ex-conjoint, concubin, ex-concubin, partenaire PACS, ex-partenaire…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00025",
+                  "Caractéristiques : violences physiques / sexuelles / psychologiques / verbales / économiques, contrôle, harcèlement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00026",
+                  "Présence d’enfants, grossesse, isolement, dépendance financière, armes, addictions, antécédents.",
+                ),
+              ),
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00027",
+                  "4) Diligences",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00028",
+                  "Selon le contexte : avis OPJ / parquet, réquisition médicale, clichés, consultation fichiers (TAJ, FPR, etc.).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00029",
+                  "Proposer / organiser la mise en sécurité (proche, foyer, 115, dispositifs locaux).",
+                ),
+              ),
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00030",
+                  "5) Clôture",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00031",
+                  "Lecture + signature. Mentionner tout refus (ITT, mise en sécurité, etc.) en procédure.",
+                ),
               ),
             ],
           ),
@@ -225,16 +347,36 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
 
           // III — Élément moral (pédagogique, sans inventer l’infraction précise)
           _ConditionCard(
-            title: "III — Élément moral (rappel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+              "f00032",
+              "III — Élément moral (rappel)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour la plupart des infractions, l’élément moral correspond à la volonté de commettre les faits "
-                "(intention), ou à la conscience de l’acte et de ses conséquences. "
-                "En matière de violences au sein du couple, l’analyse s’appuie sur les déclarations, le contexte, "
-                "la répétition, les menaces, le contrôle, et tout élément objectif (messages, témoins, certificats…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00033",
+                      "Pour la plupart des infractions, l’élément moral correspond à la volonté de commettre les faits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00034",
+                      "(intention), ou à la conscience de l’acte et de ses conséquences. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00035",
+                      "En matière de violences au sein du couple, l’analyse s’appuie sur les déclarations, le contexte, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00036",
+                      "la répétition, les menaces, le contrôle, et tout élément objectif (messages, témoins, certificats…).",
+                    ),
               ),
             ],
           ),
@@ -243,33 +385,57 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
 
           // IV — Circonstances aggravantes (générique + visuel)
           _ConditionCard(
-            title: "IV — Circonstances aggravantes (à rechercher)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+              "f00037",
+              "IV — Circonstances aggravantes (à rechercher)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Lien conjugal / ex-conjugal / concubinage / PACS (cadre violences conjugales).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00038",
+                  "Lien conjugal / ex-conjugal / concubinage / PACS (cadre violences conjugales).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présence de mineurs, violences en leur présence, menaces envers eux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00039",
+                  "Présence de mineurs, violences en leur présence, menaces envers eux.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Usage ou détention d’arme, alcool/drogues, escalade de fréquence ou de gravité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00040",
+                  "Usage ou détention d’arme, alcool/drogues, escalade de fréquence ou de gravité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Vulnérabilité particulière de la victime (grossesse, handicap, isolement, dépendance).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00041",
+                  "Vulnérabilité particulière de la victime (grossesse, handicap, isolement, dépendance).",
+                ),
               ),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ces éléments orientent la qualification et les mesures de protection (TGD, ordonnance de protection, etc.) "
-                        "selon les consignes locales et l’autorité judiciaire.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                          "f00042",
+                          "Ces éléments orientent la qualification et les mesures de protection (TGD, ordonnance de protection, etc.) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                          "f00043",
+                          "selon les consignes locales et l’autorité judiciaire.",
+                        ),
                   ),
                 ],
               ),
@@ -280,38 +446,72 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
 
           // V — Tentative & complicité (générique, sans copyWith)
           _ConditionCard(
-            title: "V — Tentative & complicité (rappel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+              "f00044",
+              "V — Tentative & complicité (rappel)",
+            ),
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Tentative"),
               _Paragraph(
-                "La tentative est punissable lorsqu’un commencement d’exécution a eu lieu et que l’infraction "
-                "n’a pas été consommée en raison de circonstances indépendantes de la volonté de l’auteur "
-                "(selon la qualification retenue).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00045",
+                      "La tentative est punissable lorsqu’un commencement d’exécution a eu lieu et que l’infraction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00046",
+                      "n’a pas été consommée en raison de circonstances indépendantes de la volonté de l’auteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00047",
+                      "(selon la qualification retenue).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00048",
+                  "Complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "La complicité est réprimée par "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00049",
+                    "La complicité est réprimée par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00050",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00051",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions…).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                    "f00052",
+                    " (aide/assistance, provocation, instructions…).",
+                  ),
                 ),
               ]),
             ],
@@ -321,13 +521,21 @@ class PVVictimeViolencesConjugalesPage extends StatelessWidget {
 
           // VI — Modèles (images)
           _ConditionCard(
-            title: "VI — Modèles & canevas (images)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+              "f00053",
+              "VI — Modèles & canevas (images)",
+            ),
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur l’image pour l’ouvrir en plein écran. Tu peux zoomer et tourner.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                  "f00054",
+                  "Appuie sur l’image pour l’ouvrir en plein écran. Tu peux zoomer et tourner.",
+                ),
               ),
               SizedBox(height: 10),
 
@@ -387,7 +595,9 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
-              color: isDark ? Colors.black.withValues(alpha: .18) : Colors.black12,
+              color: isDark
+                  ? Colors.black.withValues(alpha: .18)
+                  : Colors.black12,
               border: Border(bottom: BorderSide(color: border, width: 1)),
             ),
             child: SingleChildScrollView(
@@ -398,12 +608,20 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                 children: [
                   IconButton(
                     onPressed: _rotateLeft,
-                    tooltip: 'Tourner à gauche',
+                    tooltip: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00055",
+                      'Tourner à gauche',
+                    ),
                     icon: const Icon(Icons.rotate_left_rounded),
                   ),
                   IconButton(
                     onPressed: _rotateRight,
-                    tooltip: 'Tourner à droite',
+                    tooltip: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                      "f00056",
+                      'Tourner à droite',
+                    ),
                     icon: const Icon(Icons.rotate_right_rounded),
                   ),
                   const SizedBox(width: 6),
@@ -411,7 +629,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                     onPressed: _reset,
                     icon: const Icon(Icons.refresh_rounded),
                     label: Text(
-                      "Réinitialiser",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                        "f00057",
+                        "Réinitialiser",
+                      ),
                       style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                     ),
                   ),
@@ -420,7 +642,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                     onPressed: () => _openFullscreen(context),
                     icon: const Icon(Icons.fullscreen_rounded),
                     label: Text(
-                      "Plein écran",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                        "f00058",
+                        "Plein écran",
+                      ),
                       style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                     ),
                   ),
@@ -480,7 +706,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                           IconButton(
                             onPressed: () =>
                                 setLocalState(() => turns = (turns - 1) % 4),
-                            tooltip: 'Tourner à gauche',
+                            tooltip: ScolariteText.value(
+                              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                              "f00059",
+                              'Tourner à gauche',
+                            ),
                             icon: const Icon(
                               Icons.rotate_left_rounded,
                               color: Colors.white,
@@ -489,7 +719,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                           IconButton(
                             onPressed: () =>
                                 setLocalState(() => turns = (turns + 1) % 4),
-                            tooltip: 'Tourner à droite',
+                            tooltip: ScolariteText.value(
+                              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                              "f00060",
+                              'Tourner à droite',
+                            ),
                             icon: const Icon(
                               Icons.rotate_right_rounded,
                               color: Colors.white,
@@ -503,7 +737,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                               color: Colors.white,
                             ),
                             label: Text(
-                              "Réinitialiser",
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/pv_apj20/plainte/pv_victime_violences_conjugales_page.dart",
+                                "f00061",
+                                "Réinitialiser",
+                              ),
                               style: GoogleFonts.fustat(
                                 fontWeight: FontWeight.w900,
                                 color: Colors.white,
@@ -800,9 +1038,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

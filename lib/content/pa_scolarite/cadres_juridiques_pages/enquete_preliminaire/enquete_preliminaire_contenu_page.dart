@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/generalite_pages/complicite/complicite_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEnquetePreliminaireContenuPage extends StatelessWidget {
   const PaEnquetePreliminaireContenuPage({super.key});
@@ -14,8 +15,8 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
-? Colors.white70
-: const Color(0xFF222222).withValues(alpha: .70);
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -26,10 +27,18 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'L\'enquête préliminaire',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+            "f00002",
+            'L\'enquête préliminaire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -44,9 +53,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // CHAPITRE 1 — DOMAINE D'APPLICATION
           _ModuleCard(
             tag: 'chap1_domaine_enquete_preliminaire',
-            title: 'Domaine d’application',
-            subtitle:
-                'Situations, infractions et cadre juridique relevant de l’enquête préliminaire.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00003",
+              'Domaine d’application',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00004",
+              'Situations, infractions et cadre juridique relevant de l’enquête préliminaire.',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -60,9 +76,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // CHAPITRE 2 — PROCÉDURE D’ENQUÊTE PRÉLIMINAIRE
           _ModuleCard(
             tag: 'chap2_procedure_enquete_preliminaire',
-            title: 'Procédure d’enquête préliminaire',
-            subtitle:
-                'Déclenchement, direction par le parquet, déroulement et contrôle de l’enquête.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00005",
+              'Procédure d’enquête préliminaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00006",
+              'Déclenchement, direction par le parquet, déroulement et contrôle de l’enquête.',
+            ),
             imagePath: 'assets/images/aggravations.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -76,9 +99,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // ACTES DE L’ENQUÊTE PRÉLIMINAIRE — CONSTATATIONS & RÉQUISITIONS
           _ModuleCard(
             tag: 'actes_enquete_preliminaire_constatations_requisitions',
-            title: 'Constatations & réquisitions',
-            subtitle:
-                'Transport sur les lieux, préservation des traces, réquisitions à personnes qualifiées et aux organismes.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00007",
+              'Constatations & réquisitions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00008",
+              'Transport sur les lieux, préservation des traces, réquisitions à personnes qualifiées et aux organismes.',
+            ),
             imagePath: 'assets/images/atteintes_involontaires.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -92,9 +122,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // ACTES DE L’ENQUÊTE PRÉLIMINAIRE — FOUILLES
           _ModuleCard(
             tag: 'actes_enquete_preliminaire_fouilles',
-            title: 'Les fouilles',
-            subtitle:
-                'Fouilles de personnes, fouilles de véhicules et cadre légal des mesures de sécurité.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00009",
+              'Les fouilles',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00010",
+              'Fouilles de personnes, fouilles de véhicules et cadre légal des mesures de sécurité.',
+            ),
             imagePath: 'assets/images/background.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -108,9 +145,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // ACTES DE L’ENQUÊTE PRÉLIMINAIRE — AUDITIONS
           _ModuleCard(
             tag: 'actes_enquete_preliminaire_auditions',
-            title: 'Les auditions',
-            subtitle:
-                'Témoins, suspects libres, personnes gardées à vue : statuts, droits et formalisme des auditions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00011",
+              'Les auditions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00012",
+              'Témoins, suspects libres, personnes gardées à vue : statuts, droits et formalisme des auditions.',
+            ),
             imagePath: 'assets/images/criminalite_organisee.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -124,9 +168,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // ACTES DE L’ENQUÊTE PRÉLIMINAIRE — GARDE À VUE
           _ModuleCard(
             tag: 'actes_enquete_preliminaire_gav',
-            title: 'La garde à vue',
-            subtitle:
-                'Conditions, durée, droits de la personne retenue et contrôle de la mesure en enquête préliminaire.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00013",
+              'La garde à vue',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00014",
+              'Conditions, durée, droits de la personne retenue et contrôle de la mesure en enquête préliminaire.',
+            ),
             imagePath: 'assets/images/gav.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -140,9 +191,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // ACTES DE L’ENQUÊTE PRÉLIMINAIRE — SAISIE DES COMPTES BANCAIRES
           _ModuleCard(
             tag: 'actes_enquete_preliminaire_saisie_comptes',
-            title: 'Saisie des comptes bancaires',
-            subtitle:
-                'Saisie spéciale des avoirs, rôle du procureur et contrôle du juge des libertés et de la détention.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00015",
+              'Saisie des comptes bancaires',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00016",
+              'Saisie spéciale des avoirs, rôle du procureur et contrôle du juge des libertés et de la détention.',
+            ),
             imagePath: 'assets/images/generalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -156,9 +214,16 @@ class PaEnquetePreliminaireContenuPage extends StatelessWidget {
           // QUIZ — ENQUÊTE PRÉLIMINAIRE
           _ModuleCard(
             tag: 'quiz_enquete_preliminaire',
-            title: 'Quiz — Enquête préliminaire',
-            subtitle:
-                'Testez vos connaissances : domaine d’application, procédure et actes de l’enquête préliminaire.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00017",
+              'Quiz — Enquête préliminaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart",
+              "f00018",
+              'Testez vos connaissances : domaine d’application, procédure et actes de l’enquête préliminaire.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

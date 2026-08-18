@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDemarchesAdministrativesPage extends StatelessWidget {
   const PaDemarchesAdministrativesPage({super.key});
@@ -58,10 +59,18 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accueil du public",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+            "f00002",
+            "Accueil du public",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -76,7 +85,11 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Quelques démarches administratives",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00003",
+              "Quelques démarches administratives",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,15 +100,31 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "But de la fiche",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00004",
+              "But de la fiche",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette page regroupe des repères pratiques (CNI, sortie de territoire du mineur, permis, "
-                "passeport, état civil, livret de famille, nationalité, procuration de vote). "
-                "Objectif : orienter rapidement le public et sécuriser les démarches.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00005",
+                      "Cette page regroupe des repères pratiques (CNI, sortie de territoire du mineur, permis, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00006",
+                      "passeport, état civil, livret de famille, nationalité, procuration de vote). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00007",
+                      "Objectif : orienter rapidement le public et sécuriser les démarches.",
+                    ),
               ),
             ],
           ),
@@ -104,25 +133,54 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
 
           // I — CNI
           _ConditionCard(
-            title: "I — Carte Nationale d’Identité (CNI)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00008",
+              "I — Carte Nationale d’Identité (CNI)",
+            ),
             cardColor: cardCni,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La carte nationale d’identité est délivrée gratuitement. Elle n’est pas obligatoire. "
-                "Même périmée, elle peut justifier l’identité d’un Français tant que la photo est ressemblante. "
-                "En cours de validité, elle permet l’entrée dans certains pays sans passeport (selon règles du pays).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00009",
+                      "La carte nationale d’identité est délivrée gratuitement. Elle n’est pas obligatoire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00010",
+                      "Même périmée, elle peut justifier l’identité d’un Français tant que la photo est ressemblante. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00011",
+                      "En cours de validité, elle permet l’entrée dans certains pays sans passeport (selon règles du pays).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Durée de validité"),
-              _BulletPoint(
-                text: "CNI sécurisée : 15 ans (majeurs) / 10 ans (mineurs).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00012",
+                  "Durée de validité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Nouvelle CNI électronique (format carte bancaire) : 10 ans (majeurs et mineurs).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00013",
+                  "CNI sécurisée : 15 ans (majeurs) / 10 ans (mineurs).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00014",
+                  "Nouvelle CNI électronique (format carte bancaire) : 10 ans (majeurs et mineurs).",
+                ),
               ),
               SizedBox(height: 10),
 
@@ -131,53 +189,115 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La prolongation de 10 à 15 ans est automatique pour certaines CNI sécurisées (délivrées entre 2004 et 2013 pour des majeurs). "
-                        "La date sur le titre n’est pas modifiée. "
-                        "Vérifier les pays acceptant l’extension de validité (diplomatie).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                          "f00015",
+                          "La prolongation de 10 à 15 ans est automatique pour certaines CNI sécurisées (délivrées entre 2004 et 2013 pour des majeurs). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                          "f00016",
+                          "La date sur le titre n’est pas modifiée. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                          "f00017",
+                          "Vérifier les pays acceptant l’extension de validité (diplomatie).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Où la demander ?"),
-              _BulletPoint(
-                text:
-                    "Dans n’importe quelle mairie équipée d’une station d’enregistrement (pas lié au domicile).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00018",
+                  "Où la demander ?",
+                ),
               ),
               _BulletPoint(
-                text: "Liste des mairies disponibles sur service-public.fr.",
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle("Comment la faire établir ?"),
-              _BulletPoint(
-                text: "Pré-demande possible en ligne via ants.gouv.fr.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00019",
+                  "Dans n’importe quelle mairie équipée d’une station d’enregistrement (pas lié au domicile).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présence du demandeur indispensable (prise d’empreintes).",
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle("Cas particuliers"),
-              _BulletPoint(
-                text:
-                    "Mineurs : l’enfant + le responsable légal doivent être présents. Le responsable présente sa propre pièce d’identité.",
-              ),
-              _BulletPoint(
-                text:
-                    "Parents séparés/divorcés : jugement utile uniquement si résidence alternée (inscrire 2 adresses).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00020",
+                  "Liste des mairies disponibles sur service-public.fr.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Perte / vol"),
-              _BulletPoint(
-                text:
-                    "Vol : déclaration préalable en commissariat/gendarmerie (ou autorités locales + consulat à l’étranger) contre récépissé.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00021",
+                  "Comment la faire établir ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Perte : si renouvellement immédiat, déclaration faite au guichet lors du dépôt ; sinon déclaration en commissariat/gendarmerie.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00022",
+                  "Pré-demande possible en ligne via ants.gouv.fr.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00023",
+                  "Présence du demandeur indispensable (prise d’empreintes).",
+                ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00024",
+                  "Cas particuliers",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00025",
+                  "Mineurs : l’enfant + le responsable légal doivent être présents. Le responsable présente sa propre pièce d’identité.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00026",
+                  "Parents séparés/divorcés : jugement utile uniquement si résidence alternée (inscrire 2 adresses).",
+                ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00027",
+                  "Perte / vol",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00028",
+                  "Vol : déclaration préalable en commissariat/gendarmerie (ou autorités locales + consulat à l’étranger) contre récépissé.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00029",
+                  "Perte : si renouvellement immédiat, déclaration faite au guichet lors du dépôt ; sinon déclaration en commissariat/gendarmerie.",
+                ),
               ),
             ],
           ),
@@ -186,60 +306,114 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
 
           // II — SORTIE DU TERRITOIRE DU MINEUR
           _ConditionCard(
-            title: "II — Sortie de territoire du mineur",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00030",
+              "II — Sortie de territoire du mineur",
+            ),
             cardColor: cardMineur,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Autorisation de sortie du territoire (AST)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00031",
+                  "A) Autorisation de sortie du territoire (AST)",
+                ),
+              ),
               _Paragraph(
-                "Un mineur résidant en France qui voyage à l’étranger seul ou sans l’un de ses parents "
-                "doit avoir une AST. Un mineur voyageant avec son père ou sa mère n’a pas besoin d’AST.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00032",
+                      "Un mineur résidant en France qui voyage à l’étranger seul ou sans l’un de ses parents ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00033",
+                      "doit avoir une AST. Un mineur voyageant avec son père ou sa mère n’a pas besoin d’AST.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(text: "Formulaire "),
                 TextSpan(
-                  text: "CERFA n°15646*01",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00034",
+                    "CERFA n°15646*01",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " disponible sur service-public.fr (aucun passage en mairie/préfecture).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00035",
+                    " disponible sur service-public.fr (aucun passage en mairie/préfecture).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("Documents à avoir (voyage sans parent)"),
-              _BulletPoint(
-                text:
-                    "Pièce d’identité valide du mineur (CNI ou passeport) + visa si nécessaire (selon pays).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00036",
+                  "Documents à avoir (voyage sans parent)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Photocopie du titre d’identité du parent signataire (valide ou périmé depuis moins de 5 ans).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00037",
+                  "Pièce d’identité valide du mineur (CNI ou passeport) + visa si nécessaire (selon pays).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Original de l’AST signée par un parent titulaire de l’autorité parentale.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00038",
+                  "Photocopie du titre d’identité du parent signataire (valide ou périmé depuis moins de 5 ans).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00039",
+                  "Original de l’AST signée par un parent titulaire de l’autorité parentale.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Opposition à sortie du territoire (OST)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00040",
+                  "B) Opposition à sortie du territoire (OST)",
+                ),
+              ),
               _Paragraph(
-                "En cas d’urgence et face à un risque avéré, un parent peut demander une OST.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00041",
+                  "En cas d’urgence et face à un risque avéré, un parent peut demander une OST.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Demande en préfecture / sous-préfecture.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00042",
+                  "Demande en préfecture / sous-préfecture.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Nuits / week-ends / jours fériés : possible en commissariat ou brigade de gendarmerie.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00043",
+                  "Nuits / week-ends / jours fériés : possible en commissariat ou brigade de gendarmerie.",
+                ),
               ),
               SizedBox(height: 10),
 
@@ -247,25 +421,45 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
                 title: "Effets",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si OST décidée : inscription au FPR et signalement au SIS. Durée maximale : 15 jours (non prolongeable).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00044",
+                      "Si OST décidée : inscription au FPR et signalement au SIS. Durée maximale : 15 jours (non prolongeable).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Interdiction de sortie du territoire (IST)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00045",
+                  "C) Interdiction de sortie du territoire (IST)",
+                ),
+              ),
               _Paragraph(
-                "Mesure judiciaire décidée par le JAF (autorité parentale / protection) ou le juge des enfants "
-                "(assistance éducative).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00046",
+                      "Mesure judiciaire décidée par le JAF (autorité parentale / protection) ou le juge des enfants ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00047",
+                      "(assistance éducative).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un mineur sous IST peut voyager si les deux parents autorisent expressément : autorisation recueillie au commissariat sur PV (au moins 5 jours avant).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00048",
+                      "Un mineur sous IST peut voyager si les deux parents autorisent expressément : autorisation recueillie au commissariat sur PV (au moins 5 jours avant).",
+                    ),
                   ),
                 ],
               ),
@@ -276,54 +470,117 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
 
           // III — PERMIS / ÉCHANGES + PERMIS INTERNATIONAL
           _ConditionCard(
-            title: "III — Permis de conduire (échanges & permis international)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00049",
+              "III — Permis de conduire (échanges & permis international)",
+            ),
             cardColor: cardPermis,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Échanger un permis UE/EEE"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00050",
+                  "A) Échanger un permis UE/EEE",
+                ),
+              ),
               _Paragraph(
-                "Concerne les résidents en France titulaires d’un permis délivré par un autre État UE/EEE. "
-                "L’échange n’est pas obligatoire sauf dans certains cas (infraction entraînant suspension/retrait, "
-                "ou permis obtenu en échange d’un pays tiers sans réciprocité).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00051",
+                      "Concerne les résidents en France titulaires d’un permis délivré par un autre État UE/EEE. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00052",
+                      "L’échange n’est pas obligatoire sauf dans certains cas (infraction entraînant suspension/retrait, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00053",
+                      "ou permis obtenu en échange d’un pays tiers sans réciprocité).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Demande (par courrier)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00054",
+                  "Demande (par courrier)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(text: "Formulaire "),
                 TextSpan(
-                  text: "CERFA n°14879*01",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00055",
+                    "CERFA n°14879*01",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " + formulaire "),
                 TextSpan(
-                  text: "CERFA n°14948*01 (référence 06)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00056",
+                    " + formulaire ",
                   ),
                 ),
-                TextSpan(text: " (imprimé en couleur)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00057",
+                    "CERFA n°14948*01 (référence 06)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00058",
+                    " (imprimé en couleur).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "Copie couleur recto/verso du permis + justificatifs d’identité et de domicile + photos + enveloppe lettre suivie.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00059",
+                  "Copie couleur recto/verso du permis + justificatifs d’identité et de domicile + photos + enveloppe lettre suivie.",
+                ),
               ),
               _BulletPoint(
-                text: "Dossier adressé au CERT (ou CREPIC si Paris).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00060",
+                  "Dossier adressé au CERT (ou CREPIC si Paris).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Échanger un permis hors UE/EEE"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00061",
+                  "B) Échanger un permis hors UE/EEE",
+                ),
+              ),
               _Paragraph(
-                "Obligatoire pour continuer à conduire : échange à demander dans l’année suivant l’acquisition de la résidence habituelle en France "
-                "(sauf étudiants étrangers pendant leurs études).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00062",
+                      "Obligatoire pour continuer à conduire : échange à demander dans l’année suivant l’acquisition de la résidence habituelle en France ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00063",
+                      "(sauf étudiants étrangers pendant leurs études).",
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -331,38 +588,62 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
                 title: "Conditions",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Permis valide, pays pratiquant l’échange, conditions de reconnaissance (traduction officielle si nécessaire, âge requis, absence de suspension/retrait…).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00064",
+                      "Permis valide, pays pratiquant l’échange, conditions de reconnaissance (traduction officielle si nécessaire, âge requis, absence de suspension/retrait…).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Permis international"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00065",
+                  "C) Permis international",
+                ),
+              ),
               _Paragraph(
-                "Certains pays exigent un permis international (traduction officielle du permis français). "
-                "Coût : gratuit. Demande par courrier.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00066",
+                      "Certains pays exigent un permis international (traduction officielle du permis français). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00067",
+                      "Coût : gratuit. Demande par courrier.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(text: "Formulaire "),
                 TextSpan(
-                  text: "CERFA n°14881*01",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00068",
+                    "CERFA n°14881*01",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (1er volet) + copies permis/identité/domicile + 2 photos + enveloppe lettre suivie.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00069",
+                    " (1er volet) + copies permis/identité/domicile + 2 photos + enveloppe lettre suivie.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Dossier au CERT Permis internationaux (ou CREPIC si Paris).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00070",
+                  "Dossier au CERT Permis internationaux (ou CREPIC si Paris).",
+                ),
               ),
             ],
           ),
@@ -371,66 +652,128 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
 
           // IV — PASSEPORT + ÉTAT CIVIL + LIVRET + NATIONALITÉ
           _ConditionCard(
-            title: "IV — Passeport & actes d’état civil",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00071",
+              "IV — Passeport & actes d’état civil",
+            ),
             cardColor: cardEtatCivil,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Passeport"),
               _BulletPoint(
-                text:
-                    "Demande en mairie équipée (pas lié au domicile). Pré-demande possible sur ants.gouv.fr. Présence obligatoire (empreintes).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00072",
+                  "Demande en mairie équipée (pas lié au domicile). Pré-demande possible sur ants.gouv.fr. Présence obligatoire (empreintes).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mineur : enfant + responsable légal présents. Un enfant ne peut pas être inscrit sur le passeport d’un parent.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00073",
+                  "Mineur : enfant + responsable légal présents. Un enfant ne peut pas être inscrit sur le passeport d’un parent.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Validité : 10 ans (majeur) / 5 ans (mineur) / 1 an (urgence, sur justificatifs).",
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle("Extrait / copie d’acte de naissance"),
-              _BulletPoint(
-                text:
-                    "3 formats : copie intégrale, extrait avec filiation, extrait sans filiation.",
-              ),
-              _BulletPoint(
-                text:
-                    "Demande : mairie du lieu de naissance (en ligne, sur place, ou par courrier) ou service central de Nantes pour Français nés à l’étranger.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00074",
+                  "Validité : 10 ans (majeur) / 5 ans (mineur) / 1 an (urgence, sur justificatifs).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Copie d’acte de décès"),
-              _BulletPoint(
-                text: "Toute personne peut en demander une (gratuit).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00075",
+                  "Extrait / copie d’acte de naissance",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Demande : mairie du décès / mairie du dernier domicile, ou via service-public.fr, ou Nantes si décès à l’étranger (Français).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00076",
+                  "3 formats : copie intégrale, extrait avec filiation, extrait sans filiation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00077",
+                  "Demande : mairie du lieu de naissance (en ligne, sur place, ou par courrier) ou service central de Nantes pour Français nés à l’étranger.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Livret de famille"),
-              _BulletPoint(
-                text:
-                    "Peut être demandé comme justificatif (CNI/passeport), avec d’autres pièces selon le cas.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00078",
+                  "Copie d’acte de décès",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mise à jour à la charge du titulaire (présentation à chaque changement d’état civil).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00079",
+                  "Toute personne peut en demander une (gratuit).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00080",
+                  "Demande : mairie du décès / mairie du dernier domicile, ou via service-public.fr, ou Nantes si décès à l’étranger (Français).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Certificat de nationalité française"),
-              _BulletPoint(
-                text:
-                    "Prouve la nationalité française (peut être exigé pour 1ère CNI, passeport, concours FP).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00081",
+                  "Livret de famille",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pas de durée de validité limitée (fait foi jusqu’à preuve contraire).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00082",
+                  "Peut être demandé comme justificatif (CNI/passeport), avec d’autres pièces selon le cas.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00083",
+                  "Mise à jour à la charge du titulaire (présentation à chaque changement d’état civil).",
+                ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00084",
+                  "Certificat de nationalité française",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00085",
+                  "Prouve la nationalité française (peut être exigé pour 1ère CNI, passeport, concours FP).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00086",
+                  "Pas de durée de validité limitée (fait foi jusqu’à preuve contraire).",
+                ),
               ),
             ],
           ),
@@ -439,79 +782,159 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
 
           // X — VOTE PAR PROCURATION
           _ConditionCard(
-            title: "V — Vote par procuration",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00087",
+              "V — Vote par procuration",
+            ),
             cardColor: cardVote,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Permet à un électeur absent (mandant) de choisir un autre électeur (mandataire) "
-                "pour voter à sa place.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00088",
+                      "Permet à un électeur absent (mandant) de choisir un autre électeur (mandataire) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                      "f00089",
+                      "pour voter à sa place.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Conditions pour le mandataire"),
-              _BulletPoint(
-                text:
-                    "Inscrit dans la même commune que le mandant (pas forcément même bureau).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00090",
+                  "Conditions pour le mandataire",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne détient pas plus de 2 procurations (selon règles France/étranger).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00091",
+                  "Inscrit dans la même commune que le mandant (pas forcément même bureau).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00092",
+                  "Ne détient pas plus de 2 procurations (selon règles France/étranger).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Où faire la démarche ?"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00093",
+                  "Où faire la démarche ?",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Commissariat / gendarmerie (où que soit le mandant), ou tribunal judiciaire (domicile / travail).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00094",
+                  "Commissariat / gendarmerie (où que soit le mandant), ou tribunal judiciaire (domicile / travail).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Comment faire ?"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00095",
+                  "Comment faire ?",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Option 1 : formulaire papier sur place.\n",
-                ),
-                TextSpan(text: "Option 2 : formulaire "),
-                TextSpan(
-                  text: "CERFA n°14952*02",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00096",
+                    "Option 1 : formulaire papier sur place.\n",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " rempli en ligne puis imprimé (2 feuilles, pas recto-verso) et finalisé au guichet.\n",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00097",
+                    "Option 2 : formulaire ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "Option 3 : demande en ligne via maprocuration.gouv.fr (puis déplacement obligatoire pour validation d’identité).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00098",
+                    "CERFA n°14952*02",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00099",
+                    " rempli en ligne puis imprimé (2 feuilles, pas recto-verso) et finalisé au guichet.\n",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                    "f00100",
+                    "Option 3 : demande en ligne via maprocuration.gouv.fr (puis déplacement obligatoire pour validation d’identité).",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Délais",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00101",
+                  "Délais",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Même si la procuration peut être établie jusqu’au jour du vote, il est recommandé d’anticiper "
-                        "pour éviter que la mairie ne la reçoive trop tard.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                          "f00102",
+                          "Même si la procuration peut être établie jusqu’au jour du vote, il est recommandé d’anticiper ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                          "f00103",
+                          "pour éviter que la mairie ne la reçoive trop tard.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Déroulement du vote"),
-              _BulletPoint(
-                text:
-                    "Le mandataire vote avec sa propre pièce d’identité, au bureau du mandant.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00104",
+                  "Déroulement du vote",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le mandant peut voter lui-même s’il se présente avant le mandataire.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00105",
+                  "Le mandataire vote avec sa propre pièce d’identité, au bureau du mandant.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00106",
+                  "Le mandant peut voter lui-même s’il se présente avant le mandataire.",
+                ),
               ),
             ],
           ),
@@ -520,30 +943,49 @@ class PaDemarchesAdministrativesPage extends StatelessWidget {
 
           // Synthèse rapide
           _ConditionCard(
-            title: "Synthèse (mémo)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+              "f00107",
+              "Synthèse (mémo)",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "CNI/Passeport : mairie équipée + pré-demande possible sur ANTS + empreintes obligatoires.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00108",
+                  "CNI/Passeport : mairie équipée + pré-demande possible sur ANTS + empreintes obligatoires.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mineur à l’étranger sans parent : AST (CERFA) + pièces d’identité + copie du parent signataire.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00109",
+                  "Mineur à l’étranger sans parent : AST (CERFA) + pièces d’identité + copie du parent signataire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Permis : échanges via CERFA + CERT/CREPIC ; permis international gratuit via CERFA.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00110",
+                  "Permis : échanges via CERFA + CERT/CREPIC ; permis international gratuit via CERFA.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "État civil : actes via mairie / en ligne / courrier (Nantes pour Français à l’étranger).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00111",
+                  "État civil : actes via mairie / en ligne / courrier (Nantes pour Français à l’étranger).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Vote : procuration possible commissariat/gendarmerie/tribunal + option maprocuration.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart",
+                  "f00112",
+                  "Vote : procuration possible commissariat/gendarmerie/tribunal + option maprocuration.",
+                ),
               ),
             ],
           ),

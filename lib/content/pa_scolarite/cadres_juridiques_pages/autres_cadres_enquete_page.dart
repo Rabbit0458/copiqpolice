@@ -1,6 +1,7 @@
 // lib/pa/dps_dpg/cadres_juridiques_pages/autres_cadres_enquete_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : Autres cadres d’enquête
 /// Route : /pa/dps_dpg/cadres_juridiques/autres_cadres_enquete
@@ -23,7 +24,11 @@ class PaAutresCadresEnquetePage extends StatelessWidget {
         surfaceTintColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          tooltip: "Retour",
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+            "f00001",
+            "Retour",
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
@@ -32,8 +37,16 @@ class PaAutresCadresEnquetePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            title: 'Autres cadres d’enquête',
-            subtitle: 'JI · Commission rogatoire · Douanes · Spécialisés',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+              "f00002",
+              'Autres cadres d’enquête',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+              "f00003",
+              'JI · Commission rogatoire · Douanes · Spécialisés',
+            ),
             image: 'assets/images/cadres_juridiques.jpeg',
             onPrimaryTap: () {},
           ),
@@ -41,126 +54,262 @@ class PaAutresCadresEnquetePage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
+                _SectionCard(
                   title: 'Panorama',
                   child: Text(
-                    'Au-delà de la flagrance et du préliminaire, d’autres cadres existent : '
-                    'instruction par juge d’instruction, commission rogatoire, douanes, et dispositifs spécialisés. '
-                    'Chaque régime a ses propres actes, seuils et autorisations.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00004",
+                          'Au-delà de la flagrance et du préliminaire, d’autres cadres existent : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00005",
+                          'instruction par juge d’instruction, commission rogatoire, douanes, et dispositifs spécialisés. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00006",
+                          'Chaque régime a ses propres actes, seuils et autorisations.',
+                        ),
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
-                    'Juge d’instruction',
-                    'Commission rogatoire',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                      "f00007",
+                      'Juge d’instruction',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                      "f00008",
+                      'Commission rogatoire',
+                    ),
                     'Douanes',
-                    'Spécialités',
-                    'Autorités compétentes',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                      "f00009",
+                      'Spécialités',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                      "f00010",
+                      'Autorités compétentes',
+                    ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Instruction (JI) & commission rogatoire (CR)',
-                  caption: 'Actes délégués & contrôle judiciaire',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00011",
+                    'Instruction (JI) & commission rogatoire (CR)',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00012",
+                    'Actes délégués & contrôle judiciaire',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Le JI dirige l’instruction : actes coercitifs possibles dans un cadre très encadré.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00013",
+                          'Le JI dirige l’instruction : actes coercitifs possibles dans un cadre très encadré.',
+                        ),
                       ),
                       _Bullet(
-                        'CR : délégation d’actes à des enquêteurs désignés ; respecter strictement la mission.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00014",
+                          'CR : délégation d’actes à des enquêteurs désignés ; respecter strictement la mission.',
+                        ),
                       ),
                       _Bullet(
-                        'Traçabilité : visas du JI, périmètre de la mission, rapports d’exécution.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00015",
+                          'Traçabilité : visas du JI, périmètre de la mission, rapports d’exécution.',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Douanes / régimes spéciaux',
-                  caption: 'Textes particuliers',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00016",
+                    'Douanes / régimes spéciaux',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00017",
+                    'Textes particuliers',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Pouvoirs douaniers spécifiques (visites, retenues, saisies) : se référer aux textes applicables.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00018",
+                          'Pouvoirs douaniers spécifiques (visites, retenues, saisies) : se référer aux textes applicables.',
+                        ),
                       ),
                       _Bullet(
-                        'Coordination parquet/douanes selon la nature des faits.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00019",
+                          'Coordination parquet/douanes selon la nature des faits.',
+                        ),
                       ),
                       _Bullet(
-                        'Garanties : droits des personnes, délais, mentions aux registres.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00020",
+                          'Garanties : droits des personnes, délais, mentions aux registres.',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Enquêtes spécialisées',
-                  caption: 'Techniques spéciales',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00021",
+                    'Enquêtes spécialisées',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00022",
+                    'Techniques spéciales',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Interceptions, captations, sonorisations : autorisations judiciaires strictes.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00023",
+                          'Interceptions, captations, sonorisations : autorisations judiciaires strictes.',
+                        ),
                       ),
                       _Bullet(
-                        'Infiltration/surveillances longues : encadrement renforcé, proportion/nécessité.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00024",
+                          'Infiltration/surveillances longues : encadrement renforcé, proportion/nécessité.',
+                        ),
                       ),
                       _Bullet(
-                        'Toujours vérifier compétence matérielle et territoriale.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00025",
+                          'Toujours vérifier compétence matérielle et territoriale.',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Réflexes PV',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00026",
+                    'Réflexes PV',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _ChecklistLine(
-                        'Citer le fondement (ordonnance JI/CR, texte douanier, autorisation).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00027",
+                          'Citer le fondement (ordonnance JI/CR, texte douanier, autorisation).',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Respecter les limites précises de la mission/autorisations.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00028",
+                          'Respecter les limites précises de la mission/autorisations.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Consigner les délais, scellés, restitutions et notifications.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00029",
+                          'Consigner les délais, scellés, restitutions et notifications.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Sécuriser la chaîne de preuve (traçabilité exhaustive).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                          "f00030",
+                          'Sécuriser la chaîne de preuve (traçabilité exhaustive).',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00031",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'Les cadres d’enquête (vue d’ensemble)',
-                  subtitle: 'Flagrance · Préliminaire · Autres',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00032",
+                    'Les cadres d’enquête (vue d’ensemble)',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00033",
+                    'Flagrance · Préliminaire · Autres',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/cadres_enquete',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Enquête de flagrant délit',
-                  subtitle: 'Actes immédiats · Pouvoirs renforcés',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00034",
+                    'Enquête de flagrant délit',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00035",
+                    'Actes immédiats · Pouvoirs renforcés',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/enquete_flagrant_delit',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Enquête préliminaire',
-                  subtitle: 'Direction Procureur · Autorisations requises',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00036",
+                    'Enquête préliminaire',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                    "f00037",
+                    'Direction Procureur · Autorisations requises',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/enquete_preliminaire',
                 ),
               ],
@@ -232,7 +381,13 @@ class _HeroHeader extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const _Badge(text: 'Cadres juridiques'),
+                    _Badge(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart",
+                        "f00038",
+                        'Cadres juridiques',
+                      ),
+                    ),
                     const SizedBox(height: 8),
                     Text(
                       title,

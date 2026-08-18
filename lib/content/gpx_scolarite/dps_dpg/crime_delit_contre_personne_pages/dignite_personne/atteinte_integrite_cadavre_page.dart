@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteinteIntegriteCadavrePage extends StatelessWidget {
   const AtteinteIntegriteCadavrePage({super.key});
@@ -56,10 +57,18 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la dignité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+            "f00002",
+            "Atteintes à la dignité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’atteinte à l’intégrité du cadavre",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+              "f00003",
+              "L’atteinte à l’intégrité du cadavre",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,13 +99,21 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute atteinte à l’intégrité du cadavre, par quelque moyen que ce soit, constitue une infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00005",
+                  "Toute atteinte à l’intégrité du cadavre, par quelque moyen que ce soit, constitue une infraction.",
+                ),
               ),
             ],
           ),
@@ -101,19 +122,30 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-17 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00007",
+                    "Article 225-17 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime l’atteinte à l’intégrité du cadavre.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00008",
+                    " : prévoit et réprime l’atteinte à l’intégrité du cadavre.",
+                  ),
                 ),
               ]),
             ],
@@ -123,54 +155,116 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+              "f00009",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Le corps d’un défunt"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00010",
+                  "A) Le corps d’un défunt",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le texte tend à protéger la dépouille mortelle humaine : il n’est pas nécessaire qu’il y ait eu inhumation. "
-                      "L’infraction peut être réalisée indépendamment de tout apprêt funéraire. — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                        "f00011",
+                        "Le texte tend à protéger la dépouille mortelle humaine : il n’est pas nécessaire qu’il y ait eu inhumation. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                        "f00012",
+                        "L’infraction peut être réalisée indépendamment de tout apprêt funéraire. — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article 225-17 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00013",
+                    "article 225-17 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’infraction peut être constatée sur les lieux mêmes du décès, à la morgue ou en chambre funéraire, "
-                "mais aussi plus tardivement après l’inhumation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00014",
+                      "L’infraction peut être constatée sur les lieux mêmes du décès, à la morgue ou en chambre funéraire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00015",
+                      "mais aussi plus tardivement après l’inhumation.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une atteinte à l’intégrité du cadavre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00016",
+                  "B) Une atteinte à l’intégrité du cadavre",
+                ),
+              ),
               _Paragraph(
-                "L’atteinte à l’intégrité du cadavre n’est pas définie par le code pénal : le texte vise une atteinte "
-                "commise « par quelque moyen que ce soit ».",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00017",
+                      "L’atteinte à l’intégrité du cadavre n’est pas définie par le code pénal : le texte vise une atteinte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00018",
+                      "commise « par quelque moyen que ce soit ».",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Exemples d’atteintes (illustratifs)"),
-              _BulletPoint(
-                text:
-                    "Dépeçage ; tirs ; coups (couteau, bâton…) ayant entraîné lésion ou ecchymose.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00019",
+                  "Exemples d’atteintes (illustratifs)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Morsures, griffures ; fait d’exciter un animal pour qu’il s’attaque au corps.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00020",
+                  "Dépeçage ; tirs ; coups (couteau, bâton…) ayant entraîné lésion ou ecchymose.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exhumation illicite ; vol dans un cercueil ; prélèvements d’organes ou expérimentations hors cadre légal.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00021",
+                  "Morsures, griffures ; fait d’exciter un animal pour qu’il s’attaque au corps.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pratiques nécrophiles (entrent dans le champ de l’incrimination).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00022",
+                  "Exhumation illicite ; vol dans un cercueil ; prélèvements d’organes ou expérimentations hors cadre légal.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00023",
+                  "Pratiques nécrophiles (entrent dans le champ de l’incrimination).",
+                ),
               ),
 
               SizedBox(height: 12),
@@ -179,11 +273,18 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
                 title: "Jurisprudences",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Délit retenu contre des fossoyeurs accusés de sauter sur des cercueils ou de les forcer pour y prendre bijoux/dents en or ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00024",
+                      "Délit retenu contre des fossoyeurs accusés de sauter sur des cercueils ou de les forcer pour y prendre bijoux/dents en or ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 25 octobre 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00025",
+                      "(Cass. crim., 25 octobre 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -191,11 +292,18 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "Incrimination retenue contre des individus ayant exhumé le cadavre d’une jeune fille pour prendre des clichés indécents ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00026",
+                      "Incrimination retenue contre des individus ayant exhumé le cadavre d’une jeune fille pour prendre des clichés indécents ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(T.G.I. Arras, 27 octobre 1998)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00027",
+                      "(T.G.I. Arras, 27 octobre 1998)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -211,19 +319,34 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ne relève pas de cette infraction l’activité des médecins pratiquant autopsies, prélèvements d’organes ou dissections : "
-                        "ces actes sont couverts par ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                          "f00028",
+                          "Ne relève pas de cette infraction l’activité des médecins pratiquant autopsies, prélèvements d’organes ou dissections : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                          "f00029",
+                          "ces actes sont couverts par ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 122-4 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00030",
+                      "l’article 122-4 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " (acte prescrit ou autorisé par des dispositions législatives ou réglementaires).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00031",
+                      " (acte prescrit ou autorisé par des dispositions législatives ou réglementaires).",
+                    ),
                   ),
                 ],
               ),
@@ -234,14 +357,26 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+              "f00032",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’auteur a pleinement conscience de commettre un acte de nature à porter atteinte à l’intégrité du cadavre "
-                "et au respect dû aux morts. Le mobile importe peu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00033",
+                      "L’auteur a pleinement conscience de commettre un acte de nature à porter atteinte à l’intégrité du cadavre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                      "f00034",
+                      "et au respect dû aux morts. Le mobile importe peu.",
+                    ),
               ),
             ],
           ),
@@ -250,30 +385,66 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+              "f00035",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [_Paragraph("Aucune.")],
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00036",
+                  "Aucune.",
+                ),
+              ),
+            ],
           ),
 
           const SizedBox(height: 14),
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+              "f00037",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00038",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00039",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-17 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00040",
+                    "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00041",
+                    "article 225-17 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -281,41 +452,106 @@ class AtteinteIntegriteCadavrePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00042",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 225-18-1 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: " ; amende selon "),
-                TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: " + peines des "),
-                TextSpan(
-                  text: "articles 131-39 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00043",
+                    "Responsabilité pénale prévue par ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      " (dissolution, interdiction d’exercer une ou plusieurs activités professionnelles, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00044",
+                    "l’article 225-18-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00045",
+                    " ; amende selon ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00046",
+                    "l’article 131-38 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00047",
+                    " + peines des ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00048",
+                    "articles 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00049",
+                    " (dissolution, interdiction d’exercer une ou plusieurs activités professionnelles, etc.).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00050",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                  "f00051",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00052",
+                    "Complicité : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00053",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/atteinte_integrite_cadavre_page.dart",
+                    "f00054",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
             ],

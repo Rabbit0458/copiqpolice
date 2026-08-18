@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EnregistrementImagesViolencePage extends StatelessWidget {
   const EnregistrementImagesViolencePage({super.key});
@@ -68,10 +69,18 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -86,7 +95,11 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’enregistrement d’images de violence (happy slapping)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00003",
+              "L’enregistrement d’images de violence (happy slapping)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -98,16 +111,36 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’enregistrer sciemment, par quelque moyen que ce soit et sur tout support, "
-                "des images relatives à la commission d’atteintes volontaires à l’intégrité de la personne "
-                "(violences, viol, agressions sexuelles délictuelles, administration de substance à fin sexuelle, "
-                "harcèlement sexuel…) constitue un acte de complicité de ces infractions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00005",
+                      "Le fait d’enregistrer sciemment, par quelque moyen que ce soit et sur tout support, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00006",
+                      "des images relatives à la commission d’atteintes volontaires à l’intégrité de la personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00007",
+                      "(violences, viol, agressions sexuelles délictuelles, administration de substance à fin sexuelle, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00008",
+                      "harcèlement sexuel…) constitue un acte de complicité de ces infractions.",
+                    ),
               ),
             ],
           ),
@@ -116,16 +149,34 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-33-3 du Code pénal"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00010",
+                    "Article 222-33-3 du Code pénal",
+                  ),
+                ),
                 _t(
-                  " : incrimine le fait d’enregistrer sciemment des images relatives à des atteintes volontaires "
-                  "à l’intégrité physique de la personne. La répression est celle des infractions enregistrées.",
+                  ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                        "f00011",
+                        " : incrimine le fait d’enregistrer sciemment des images relatives à des atteintes volontaires ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                        "f00012",
+                        "à l’intégrité physique de la personne. La répression est celle des infractions enregistrées.",
+                      ),
                 ),
               ]),
             ],
@@ -135,77 +186,203 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Un enregistrement d’images de violence"),
-              const _Paragraph(
-                "L’acte d’enregistrement est assimilé à un cas de complicité au sens du droit commun. "
-                "Il doit s’agir d’une représentation visuelle obtenue par un procédé technique (photo, film…). "
-                "Sont exclus : dessin/peinture (représentation analogique) et fixation sonore (cris, audio seul).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00014",
+                  "A) Un enregistrement d’images de violence",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00015",
+                      "L’acte d’enregistrement est assimilé à un cas de complicité au sens du droit commun. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00016",
+                      "Il doit s’agir d’une représentation visuelle obtenue par un procédé technique (photo, film…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00017",
+                      "Sont exclus : dessin/peinture (représentation analogique) et fixation sonore (cris, audio seul).",
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Des violences visées limitativement par la loi",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00018",
+                  "B) Des violences visées limitativement par la loi",
+                ),
               ),
               _Paragraph.rich([
-                _t("Sont visées par "),
-                _law("l’article 222-33-3 du Code pénal"),
-                _t(" (liste limitative) :"),
+                _t(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00019",
+                    "Sont visées par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00020",
+                    "l’article 222-33-3 du Code pénal",
+                  ),
+                ),
+                _t(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00021",
+                    " (liste limitative) :",
+                  ),
+                ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Tortures et actes de barbarie."),
-              const _BulletPoint(
-                text:
-                    "Violences volontaires délictuelles (même aggravées), à l’exclusion des violences sur forces de sécurité intérieure prévues à l’article 222-14-5 du Code pénal.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00022",
+                  "Tortures et actes de barbarie.",
+                ),
               ),
-              const _BulletPoint(text: "Viol."),
-              const _BulletPoint(text: "Agressions sexuelles délictuelles."),
-              const _BulletPoint(
-                text:
-                    "Administration d’une substance afin de commettre un viol ou une agression sexuelle.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00023",
+                  "Violences volontaires délictuelles (même aggravées), à l’exclusion des violences sur forces de sécurité intérieure prévues à l’article 222-14-5 du Code pénal.",
+                ),
               ),
-              const _BulletPoint(text: "Harcèlement sexuel."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00024",
+                  "Viol.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00025",
+                  "Agressions sexuelles délictuelles.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00026",
+                  "Administration d’une substance afin de commettre un viol ou une agression sexuelle.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00027",
+                  "Harcèlement sexuel.",
+                ),
+              ),
               const SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
                   _t(
-                    "La liste est limitative : les infractions voisines sont exclues du champ d’application.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00028",
+                      "La liste est limitative : les infractions voisines sont exclues du champ d’application.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Moment décisif : pendant l’exécution"),
-              const _Paragraph(
-                "L’objet de l’enregistrement doit porter sur des images relatives à la commission de l’infraction : "
-                "cela couvre la consommation et la tentative, mais seulement pendant la phase d’exécution.\n\n"
-                "Ne relèvent pas du texte : images antérieures (menaces, approche) ou postérieures (victime au sol) "
-                "si l’atteinte n’est plus en cours.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00029",
+                  "C) Moment décisif : pendant l’exécution",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00030",
+                      "L’objet de l’enregistrement doit porter sur des images relatives à la commission de l’infraction : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00031",
+                      "cela couvre la consommation et la tentative, mais seulement pendant la phase d’exécution.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00032",
+                      "Ne relèvent pas du texte : images antérieures (menaces, approche) ou postérieures (victime au sol) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00033",
+                      "si l’atteinte n’est plus en cours.",
+                    ),
               ),
               const SizedBox(height: 12),
 
               _NotaBox(
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00034",
+                  "À retenir",
+                ),
                 bodySpans: [
                   _t(
-                    "Enregistrer un contenu violent déjà existant (ex. vidéo trouvée sur Internet) ne relève pas de cet article : "
-                    "on pourra retenir une autre qualification (ex. recel), selon les faits.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                          "f00035",
+                          "Enregistrer un contenu violent déjà existant (ex. vidéo trouvée sur Internet) ne relève pas de cet article : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                          "f00036",
+                          "on pourra retenir une autre qualification (ex. recel), selon les faits.",
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("D) Victime consentante : infraction possible"),
-              const _Paragraph(
-                "Le fait d’enregistrer des violences volontaires commises sur un individu consentant peut entrer dans le champ "
-                "du texte, car les violences volontaires sont constituées même si la victime est consentante.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00037",
+                  "D) Victime consentante : infraction possible",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00038",
+                      "Le fait d’enregistrer des violences volontaires commises sur un individu consentant peut entrer dans le champ ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00039",
+                      "du texte, car les violences volontaires sont constituées même si la victime est consentante.",
+                    ),
               ),
             ],
           ),
@@ -214,21 +391,43 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00040",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un enregistrement réalisé sciemment"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00041",
+                  "A) Un enregistrement réalisé sciemment",
+                ),
+              ),
               _Paragraph(
-                "L’acte doit être volontaire : l’auteur a conscience de filmer/photographier une scène de violences.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00042",
+                  "L’acte doit être volontaire : l’auteur a conscience de filmer/photographier une scène de violences.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle(
-                "B) Conscience de filmer une infraction de violence",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00043",
+                  "B) Conscience de filmer une infraction de violence",
+                ),
               ),
               _Paragraph(
-                "La responsabilité est exclue en cas d’erreur de fait : par exemple si l’auteur croit que les coups portés sont feints.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00044",
+                  "La responsabilité est exclue en cas d’erreur de fait : par exemple si l’auteur croit que les coups portés sont feints.",
+                ),
               ),
             ],
           ),
@@ -237,24 +436,46 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
 
           // Faits justificatifs (placé visuellement comme une zone clé)
           _ConditionCard(
-            title: "Faits justificatifs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00045",
+              "Faits justificatifs",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
                 _t("Selon "),
-                _law("l’article 222-33-3 alinéa 3 du Code pénal"),
-                _t(", l’incrimination ne s’applique pas lorsque :"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00046",
+                    "l’article 222-33-3 alinéa 3 du Code pénal",
+                  ),
+                ),
+                _t(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00047",
+                    ", l’incrimination ne s’applique pas lorsque :",
+                  ),
+                ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "L’enregistrement ou la diffusion résulte de l’exercice normal d’une profession ayant pour objet d’informer le public (journalisme), sous réserve du respect des règles (dignité, identification…).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00048",
+                  "L’enregistrement ou la diffusion résulte de l’exercice normal d’une profession ayant pour objet d’informer le public (journalisme), sous réserve du respect des règles (dignité, identification…).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "L’enregistrement est réalisé afin de servir de preuve en justice (établir la matérialité des faits, identifier les auteurs).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00049",
+                  "L’enregistrement est réalisé afin de servir de preuve en justice (établir la matérialité des faits, identifier les auteurs).",
+                ),
               ),
             ],
           ),
@@ -263,15 +484,31 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00050",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enregistrement étant un fait de complicité, les circonstances aggravantes de l’infraction principale "
-                "peuvent être communicables au complice.\n\n"
-                "De même, la circonstance aggravante de réunion peut être retenue si l’auteur de l’enregistrement est complice de l’infraction initiale.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00051",
+                      "L’enregistrement étant un fait de complicité, les circonstances aggravantes de l’infraction principale ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00052",
+                      "peuvent être communicables au complice.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00053",
+                      "De même, la circonstance aggravante de réunion peut être retenue si l’auteur de l’enregistrement est complice de l’infraction initiale.",
+                    ),
               ),
             ],
           ),
@@ -280,44 +517,124 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
 
           // Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+              "f00054",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — principe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00055",
+                  "Peines encourues — principe",
+                ),
+              ),
               _Paragraph.rich([
                 _t(
-                  "Les peines sont celles prévues pour les infractions faisant l’objet de l’enregistrement — ",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00056",
+                    "Les peines sont celles prévues pour les infractions faisant l’objet de l’enregistrement — ",
+                  ),
                 ),
-                _law("article 222-33-3 alinéa 1 du Code pénal"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00057",
+                    "article 222-33-3 alinéa 1 du Code pénal",
+                  ),
+                ),
                 _t("."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00058",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                _t("Responsabilité pénale prévue par "),
-                _law("l’article 121-2 du Code pénal"),
+                _t(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00059",
+                    "Responsabilité pénale prévue par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00060",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                ),
                 _t("."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00061",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                  "f00062",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                _t("Complicité : OUI, conformément aux "),
-                _law("articles 121-6"),
+                _t(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00063",
+                    "Complicité : OUI, conformément aux ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00064",
+                    "articles 121-6",
+                  ),
+                ),
                 _t(" et "),
-                _law("121-7 du Code pénal"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                    "f00065",
+                    "121-7 du Code pénal",
+                  ),
+                ),
                 _t("."),
               ]),
               const SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  _t("La complicité de complicité est répréhensible "),
-                  _law("(Cass. crim., 15 décembre 2004)"),
+                  _t(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00066",
+                      "La complicité de complicité est répréhensible ",
+                    ),
+                  ),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00067",
+                      "(Cass. crim., 15 décembre 2004)",
+                    ),
+                  ),
                   _t("."),
                 ],
               ),
@@ -326,7 +643,11 @@ class EnregistrementImagesViolencePage extends StatelessWidget {
                 title: "Important",
                 bodySpans: [
                   _t(
-                    "L’auteur de l’infraction principale ne peut pas être considéré comme complice si c’est lui qui demande à être filmé.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart",
+                      "f00068",
+                      "L’auteur de l’infraction principale ne peut pas être considéré comme complice si c’est lui qui demande à être filmé.",
+                    ),
                   ),
                 ],
               ),

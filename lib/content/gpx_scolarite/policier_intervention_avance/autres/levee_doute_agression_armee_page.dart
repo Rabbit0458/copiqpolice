@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class LeveeDouteAgressionArmeePage extends StatelessWidget {
   const LeveeDouteAgressionArmeePage({super.key});
@@ -59,10 +60,18 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Pratiques pro en intervention",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+            "f00002",
+            "Pratiques pro en intervention",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Levée de doute lors d’agressions armées",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00003",
+              "Levée de doute lors d’agressions armées",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,7 +100,11 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Réf. vS.08-2018 — Mise à jour : 15/06/2025",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00004",
+              "Réf. vS.08-2018 — Mise à jour : 15/06/2025",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w700,
               fontSize: 13.5,
@@ -98,20 +115,40 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (pédagogique, sans inventer d’article)
           _ConditionCard(
-            title: "Cadre légal (à compléter selon réquisition / mission)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00005",
+              "Cadre légal (à compléter selon réquisition / mission)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le document fourni décrit une méthode opérationnelle. "
-                        "Aucun article précis (CP/CPP/CSI) n’est indiqué dans ton texte. "
-                        "Ajoute ici les articles internes/notes de service ou références juridiques que tu utilises, "
-                        "et je les mettrai en rouge automatiquement.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                          "f00006",
+                          "Le document fourni décrit une méthode opérationnelle. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                          "f00007",
+                          "Aucun article précis (CP/CPP/CSI) n’est indiqué dans ton texte. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                          "f00008",
+                          "Ajoute ici les articles internes/notes de service ou références juridiques que tu utilises, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                          "f00009",
+                          "et je les mettrai en rouge automatiquement.",
+                        ),
                   ),
                 ],
               ),
@@ -122,45 +159,110 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // 1 - Introduction
           _ConditionCard(
-            title: "1 — Introduction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00010",
+              "1 — Introduction",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention des forces de sécurité intérieure, d’initiative ou sur réquisition, "
-                "à la suite de détonations ou de signalements de personnes armées, nécessite la mise en œuvre "
-                "de précautions particulières.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00011",
+                      "L’intervention des forces de sécurité intérieure, d’initiative ou sur réquisition, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00012",
+                      "à la suite de détonations ou de signalements de personnes armées, nécessite la mise en œuvre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00013",
+                      "de précautions particulières.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dans les établissements à caractère financier ou commercial, la réquisition peut être transmise "
-                "via des systèmes d’alarme reliés à des sociétés de gardiennage, de vidéo-protection, ou parfois "
-                "directement au service de police le plus proche par un système de communication adapté.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00014",
+                      "Dans les établissements à caractère financier ou commercial, la réquisition peut être transmise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00015",
+                      "via des systèmes d’alarme reliés à des sociétés de gardiennage, de vidéo-protection, ou parfois ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00016",
+                      "directement au service de police le plus proche par un système de communication adapté.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ces alarmes peuvent être déclenchées volontairement ou de façon intempestive "
-                "(fausse manœuvre, coupure de courant, dysfonctionnement du réseau téléphonique, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00017",
+                      "Ces alarmes peuvent être déclenchées volontairement ou de façon intempestive ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00018",
+                      "(fausse manœuvre, coupure de courant, dysfonctionnement du réseau téléphonique, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dans tous les cas, afin de s’assurer de la réalité et de la nature de l’évènement, "
-                "les policiers procèdent à une « levée de doute ».",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00019",
+                      "Dans tous les cas, afin de s’assurer de la réalité et de la nature de l’évènement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00020",
+                      "les policiers procèdent à une « levée de doute ».",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("La levée de doute peut être effectuée :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00021",
+                  "La levée de doute peut être effectuée :",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Par l’exploitation de systèmes de communication (sonores et/ou vidéo).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00022",
+                  "Par l’exploitation de systèmes de communication (sonores et/ou vidéo).",
+                ),
               ),
               _IntroBullet(
-                text: "Par l’envoi d’une ou plusieurs patrouilles de police.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00023",
+                  "Par l’envoi d’une ou plusieurs patrouilles de police.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ce type d’intervention doit impérativement conduire les policiers à faire preuve "
-                "d’une grande vigilance et d’une extrême prudence.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00024",
+                      "Ce type d’intervention doit impérativement conduire les policiers à faire preuve ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00025",
+                      "d’une grande vigilance et d’une extrême prudence.",
+                    ),
               ),
             ],
           ),
@@ -169,20 +271,44 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // 2 - Définition / objectif
           _ConditionCard(
-            title: "2 — La levée de doute (objectif)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00026",
+              "2 — La levée de doute (objectif)",
+            ),
             cardColor: cardMro,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La levée de doute consiste au recueil d’informations ou à des observations permettant "
-                "de confirmer si les policiers sont en présence (ou non) d’une agression armée, "
-                "dont le caractère peut être crapuleux ou meurtrier.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00027",
+                      "La levée de doute consiste au recueil d’informations ou à des observations permettant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00028",
+                      "de confirmer si les policiers sont en présence (ou non) d’une agression armée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00029",
+                      "dont le caractère peut être crapuleux ou meurtrier.",
+                    ),
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Pour répondre de manière adaptée aux problématiques liées à la situation et à son évolution, "
-                "l’intervention impose de préparer et réaliser l’action selon la méthode de raisonnement opérationnel (MRO).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00030",
+                      "Pour répondre de manière adaptée aux problématiques liées à la situation et à son évolution, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00031",
+                      "l’intervention impose de préparer et réaliser l’action selon la méthode de raisonnement opérationnel (MRO).",
+                    ),
               ),
             ],
           ),
@@ -191,21 +317,42 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // MRO (3 phases)
           _ConditionCard(
-            title: "Méthode de raisonnement opérationnel (MRO)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00032",
+              "Méthode de raisonnement opérationnel (MRO)",
+            ),
             cardColor: cardMro,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Les 3 phases chronologiques"),
-              _BulletPoint(
-                text: "Analyse de la situation : « Que se passe-t-il ? »",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00033",
+                  "Les 3 phases chronologiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Cadre juridique : « Quel est le cadre légal de l’intervention ? »",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00034",
+                  "Analyse de la situation : « Que se passe-t-il ? »",
+                ),
               ),
               _BulletPoint(
-                text: "Tactique d’action : « Comment intervenir ? »",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00035",
+                  "Cadre juridique : « Quel est le cadre légal de l’intervention ? »",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00036",
+                  "Tactique d’action : « Comment intervenir ? »",
+                ),
               ),
             ],
           ),
@@ -214,22 +361,42 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // Discrétion + principes généraux
           _ConditionCard(
-            title: "Principes généraux",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00037",
+              "Principes généraux",
+            ),
             cardColor: cardNota,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le recueil d’informations participant à la levée de doute nécessite une grande discrétion. "
-                "Les policiers en civil peuvent, en la matière, être plus adaptés à la discrétion souhaitée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00038",
+                      "Le recueil d’informations participant à la levée de doute nécessite une grande discrétion. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00039",
+                      "Les policiers en civil peuvent, en la matière, être plus adaptés à la discrétion souhaitée.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Pour le bon déroulement de l’intervention, il est indispensable de prendre en compte "
-                        "les paramètres de sécurité, d’observation, de coordination et de protection balistique.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                          "f00040",
+                          "Pour le bon déroulement de l’intervention, il est indispensable de prendre en compte ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                          "f00041",
+                          "les paramètres de sécurité, d’observation, de coordination et de protection balistique.",
+                        ),
                   ),
                 ],
               ),
@@ -240,30 +407,49 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // Ce qu'il ne faut pas faire
           _ConditionCard(
-            title: "Ce qu’il ne faut pas faire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00042",
+              "Ce qu’il ne faut pas faire",
+            ),
             cardColor: cardDont,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Passer devant l’établissement avec un véhicule sérigraphié ou banalisé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00043",
+                  "Passer devant l’établissement avec un véhicule sérigraphié ou banalisé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Stationner le véhicule de police à proximité immédiate du lieu d’intervention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00044",
+                  "Stationner le véhicule de police à proximité immédiate du lieu d’intervention.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Approcher les lieux en utilisant les avertisseurs sonores et/ou lumineux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00045",
+                  "Approcher les lieux en utilisant les avertisseurs sonores et/ou lumineux.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Traverser une rue dans l’alignement de l’établissement (présence possible d’un guetteur).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00046",
+                  "Traverser une rue dans l’alignement de l’établissement (présence possible d’un guetteur).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S’il s’agit d’un établissement, tenter d’y pénétrer (principe : éviter l’entrée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00047",
+                  "S’il s’agit d’un établissement, tenter d’y pénétrer (principe : éviter l’entrée).",
+                ),
               ),
             ],
           ),
@@ -272,22 +458,43 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // Ce qu'il est préconisé de faire
           _ConditionCard(
-            title: "Ce qu’il est préconisé de faire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00048",
+              "Ce qu’il est préconisé de faire",
+            ),
             cardColor: cardDo,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "S’équiper des matériels de protection individuels et collectifs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00049",
+                  "S’équiper des matériels de protection individuels et collectifs.",
+                ),
               ),
               _BulletPoint(
-                text: "Contrôler le personnel, l’armement, le matériel (PAM).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00050",
+                  "Contrôler le personnel, l’armement, le matériel (PAM).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Se poster (installer un point d’observation)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00051",
+                  "Se poster (installer un point d’observation)",
+                ),
+              ),
               _Paragraph(
-                "Se poster, c’est s’installer en un point du terrain permettant d’agir efficacement selon les objectifs ci-dessous :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00052",
+                  "Se poster, c’est s’installer en un point du terrain permettant d’agir efficacement selon les objectifs ci-dessous :",
+                ),
               ),
             ],
           ),
@@ -296,35 +503,85 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // V I T A L (Voir / Invisible / Tirer / Abrité / Liaison)
           _ConditionCard(
-            title: "Objectifs du dispositif de poste (V.I.T.A.L.)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00053",
+              "Objectifs du dispositif de poste (V.I.T.A.L.)",
+            ),
             cardColor: cardDo,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Voir"),
               _Paragraph(
-                "Mettre en place un dispositif d’observation permettant :\n"
-                "• de signaler toute présence suspecte de véhicules ou de personnes susceptibles d’assurer le guet ;\n"
-                "• d’observer les entrées/sorties, les mouvements de panique ;\n"
-                "• de déterminer l’ambiance générale (ex. si VMA en cours : la clientèle ne sort pas librement).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00054",
+                      "Mettre en place un dispositif d’observation permettant :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00055",
+                      "• de signaler toute présence suspecte de véhicules ou de personnes susceptibles d’assurer le guet ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00056",
+                      "• d’observer les entrées/sorties, les mouvements de panique ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00057",
+                      "• de déterminer l’ambiance générale (ex. si VMA en cours : la clientèle ne sort pas librement).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Invisible (sans être vu)"),
-              _Paragraph("Limiter le risque d’être décelé par les agresseurs."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00058",
+                  "Invisible (sans être vu)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00059",
+                  "Limiter le risque d’être décelé par les agresseurs.",
+                ),
+              ),
               SizedBox(height: 10),
               _SubTitle("Tirer"),
               _Paragraph(
-                "Être en mesure de riposter instantanément par l’usage des armes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00060",
+                  "Être en mesure de riposter instantanément par l’usage des armes.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Abrité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00061",
+                  "Abrité",
+                ),
+              ),
               _Paragraph(
-                "Se positionner dans un endroit assurant une protection balistique réelle.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00062",
+                  "Se positionner dans un endroit assurant une protection balistique réelle.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Liaison"),
               _Paragraph(
-                "Maintenir un contact permanent au sein du dispositif policier et avec le CIC.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                  "f00063",
+                  "Maintenir un contact permanent au sein du dispositif policier et avec le CIC.",
+                ),
               ),
             ],
           ),
@@ -333,22 +590,41 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
 
           // Exception : intervention dans l’établissement
           _ConditionCard(
-            title: "Intervention dans l’établissement (exceptionnel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+              "f00064",
+              "Intervention dans l’établissement (exceptionnel)",
+            ),
             cardColor: cardNota,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention des policiers dans l’établissement peut exceptionnellement être envisagée, "
-                "notamment lorsque les circonstances liées à la protection des personnes l’exigent, "
-                "et que les renseignements, l’équipement et le nombre de policiers le permettent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00065",
+                      "L’intervention des policiers dans l’établissement peut exceptionnellement être envisagée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00066",
+                      "notamment lorsque les circonstances liées à la protection des personnes l’exigent, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00067",
+                      "et que les renseignements, l’équipement et le nombre de policiers le permettent.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans certains cas, des brigades spécialisées connaissant une affaire en cours peuvent également intervenir.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/levee_doute_agression_armee_page.dart",
+                      "f00068",
+                      "Dans certains cas, des brigades spécialisées connaissant une affaire en cours peuvent également intervenir.",
+                    ),
                   ),
                 ],
               ),

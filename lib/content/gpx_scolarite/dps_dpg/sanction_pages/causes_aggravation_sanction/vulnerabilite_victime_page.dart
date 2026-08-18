@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class VulnerabiliteVictimePage extends StatelessWidget {
   const VulnerabiliteVictimePage({super.key});
@@ -44,7 +45,11 @@ class VulnerabiliteVictimePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Vulnérabilité particulière de la victime',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+            "f00001",
+            'Vulnérabilité particulière de la victime',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,22 +75,34 @@ class VulnerabiliteVictimePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(
                       text:
-                          "« Sur une personne dont la particulière vulnérabilité due à son âge, à une maladie, à une infirmité, "
-                          "à une déficience physique ou psychique ou à un état de grossesse ou résultant de la précarité de sa "
-                          "situation économique ou sociale est apparente ou connue de son auteur. »",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00002",
+                            "« Sur une personne dont la particulière vulnérabilité due à son âge, à une maladie, à une infirmité, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00003",
+                            "à une déficience physique ou psychique ou à un état de grossesse ou résultant de la précarité de sa ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00004",
+                            "situation économique ou sociale est apparente ou connue de son auteur. »",
+                          ),
                     ),
                   ]),
                 ),
@@ -94,24 +111,50 @@ class VulnerabiliteVictimePage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                    "f00005",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            "Cette circonstance aggravante vise à protéger les victimes hors d’état de le faire vu leur état de faiblesse. "
-                            "Les causes de cette faiblesse sont limitatives et doivent résulter d’un état préexistant aux faits constitutifs "
-                            "de l’infraction et non être de la conséquence de ces faits eux-mêmes (",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                              "f00006",
+                              "Cette circonstance aggravante vise à protéger les victimes hors d’état de le faire vu leur état de faiblesse. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                              "f00007",
+                              "Les causes de cette faiblesse sont limitatives et doivent résulter d’un état préexistant aux faits constitutifs ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                              "f00008",
+                              "de l’infraction et non être de la conséquence de ces faits eux-mêmes (",
+                            ),
                       ),
-                      law("Cass. crim., n° 83-94.450 du 17 octobre 1984"),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00009",
+                          "Cass. crim., n° 83-94.450 du 17 octobre 1984",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00010",
+                        "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -120,61 +163,179 @@ class VulnerabiliteVictimePage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                    "f00011",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Ces causes de vulnérabilité sont limitées au nombre de sept. Pour être retenue, cette faiblesse particulière "
-                      "doit être apparente ou connue de l’auteur de l’infraction.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00012",
+                            "Ces causes de vulnérabilité sont limitées au nombre de sept. Pour être retenue, cette faiblesse particulière ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00013",
+                            "doit être apparente ou connue de l’auteur de l’infraction.",
+                          ),
                     ),
                     SizedBox(height: 10),
-                    _SubTitle("2.1 - Les causes de vulnérabilité"),
-                    _SubTitle("2.1.1 - L’âge"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00014",
+                        "2.1 - Les causes de vulnérabilité",
+                      ),
+                    ),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00015",
+                        "2.1.1 - L’âge",
+                      ),
+                    ),
                     _Paragraph(
-                      "Il n’est pas déterminé précisément. La minorité de 15 ans ne rentre pas dans le champ de cette circonstance aggravante "
-                      "puisqu’elle fait l’objet d’une aggravation spécifique. L’aggravation pourra toutefois être retenue lorsque la victime est un mineur "
-                      "de plus de quinze ans.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00016",
+                            "Il n’est pas déterminé précisément. La minorité de 15 ans ne rentre pas dans le champ de cette circonstance aggravante ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00017",
+                            "puisqu’elle fait l’objet d’une aggravation spécifique. L’aggravation pourra toutefois être retenue lorsque la victime est un mineur ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00018",
+                            "de plus de quinze ans.",
+                          ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph.rich([
                       TextSpan(
                         text:
-                            "Cette notion ne se suffit pas à elle-même car l’état de faiblesse ne peut résulter du seul âge de la victime "
-                            "(TGI Montpellier, 7 décembre 2000). Il doit s’y ajouter la preuve d’une vulnérabilité particulière "
-                            "(Cass. crim., n° 96-80.068 du 30 avril 1996). L’âge plus ou moins avancé de la victime ne suffit pas, "
-                            "à défaut d’autres constatations, à caractériser sa particulière vulnérabilité (Cass. crim., n° 98-84.158 du 23 juin 1999).",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                              "f00019",
+                              "Cette notion ne se suffit pas à elle-même car l’état de faiblesse ne peut résulter du seul âge de la victime ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                              "f00020",
+                              "(TGI Montpellier, 7 décembre 2000). Il doit s’y ajouter la preuve d’une vulnérabilité particulière ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                              "f00021",
+                              "(Cass. crim., n° 96-80.068 du 30 avril 1996). L’âge plus ou moins avancé de la victime ne suffit pas, ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                              "f00022",
+                              "à défaut d’autres constatations, à caractériser sa particulière vulnérabilité (Cass. crim., n° 98-84.158 du 23 juin 1999).",
+                            ),
                       ),
                     ]),
                     SizedBox(height: 10),
                     _SubTitle(
-                      "2.1.2 - La maladie, l’infirmité, la déficience physique ou psychique",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00023",
+                        "2.1.2 - La maladie, l’infirmité, la déficience physique ou psychique",
+                      ),
                     ),
                     _Paragraph(
-                      "La jurisprudence semble assimiler ces notions vu leur proximité. Il s’agit de dysfonctionnements corporels, physiques ou mentaux, "
-                      "innés ou acquis, naturels ou provoqués, organiques ou fonctionnels.\n\n"
-                      "De plus, elles servent parfois à prouver la particulière vulnérabilité due au grand âge.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00024",
+                            "La jurisprudence semble assimiler ces notions vu leur proximité. Il s’agit de dysfonctionnements corporels, physiques ou mentaux, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00025",
+                            "innés ou acquis, naturels ou provoqués, organiques ou fonctionnels.\n\n",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00026",
+                            "De plus, elles servent parfois à prouver la particulière vulnérabilité due au grand âge.",
+                          ),
                     ),
                     SizedBox(height: 10),
-                    _SubTitle("2.1.3 - L’état de grossesse"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00027",
+                        "2.1.3 - L’état de grossesse",
+                      ),
+                    ),
                     _Paragraph(
-                      "Cet état est susceptible d’entraîner une vulnérabilité particulière pendant la grossesse mais aussi après l’accouchement. "
-                      "En effet, les observations des autorités médicales mettent en exergue l’état dépressif qu’une grossesse ou qu’un accouchement peut provoquer.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00028",
+                            "Cet état est susceptible d’entraîner une vulnérabilité particulière pendant la grossesse mais aussi après l’accouchement. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00029",
+                            "En effet, les observations des autorités médicales mettent en exergue l’état dépressif qu’une grossesse ou qu’un accouchement peut provoquer.",
+                          ),
                     ),
                     SizedBox(height: 10),
-                    _SubTitle("2.1.4 - La précarité économique ou sociale"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00030",
+                        "2.1.4 - La précarité économique ou sociale",
+                      ),
+                    ),
                     _Paragraph(
-                      "Elle peut se définir comme « l’absence d’une ou plusieurs des sécurités, notamment celle de l’emploi, permettant aux personnes et familles "
-                      "d’assumer leurs obligations professionnelles, familiales et sociales, et de jouir de leurs droits fondamentaux. »\n\n"
-                      "Il s’agit de personnes vulnérables aux atteintes résultant de l’exploitation de la misère. Leur statut social, marqué par la précarité économique, "
-                      "est susceptible de les placer dans une situation de dépendance.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00031",
+                            "Elle peut se définir comme « l’absence d’une ou plusieurs des sécurités, notamment celle de l’emploi, permettant aux personnes et familles ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00032",
+                            "d’assumer leurs obligations professionnelles, familiales et sociales, et de jouir de leurs droits fondamentaux. »\n\n",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00033",
+                            "Il s’agit de personnes vulnérables aux atteintes résultant de l’exploitation de la misère. Leur statut social, marqué par la précarité économique, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00034",
+                            "est susceptible de les placer dans une situation de dépendance.",
+                          ),
                     ),
                     SizedBox(height: 10),
-                    _SubTitle("2.2 - L’état apparent ou connu de l’auteur"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00035",
+                        "2.2 - L’état apparent ou connu de l’auteur",
+                      ),
+                    ),
                     _Paragraph(
-                      "La cause de vulnérabilité doit être soit visible, soit révélée. L’auteur agit donc en raison de la particulière vulnérabilité de la victime. "
-                      "La partie poursuivante doit établir que cette condition était apparente ou connue de l’auteur.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00036",
+                            "La cause de vulnérabilité doit être soit visible, soit révélée. L’auteur agit donc en raison de la particulière vulnérabilité de la victime. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00037",
+                            "La partie poursuivante doit établir que cette condition était apparente ou connue de l’auteur.",
+                          ),
                     ),
                   ],
                 ),
@@ -183,132 +344,339 @@ class VulnerabiliteVictimePage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                    "f00038",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _IntroBullet(
-                      text:
-                          "Cette circonstance aggravante peut notamment s’appliquer aux infractions suivantes :",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                        "f00039",
+                        "Cette circonstance aggravante peut notamment s’appliquer aux infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le meurtre ("),
-                      law("article 221-4, 3° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• L’empoisonnement ("),
-                      law("article 221-5 al. 3 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Les tortures ou actes de barbarie (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00040",
+                          "• Le meurtre (",
+                        ),
                       ),
-                      law("article 222-3, 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Les violences volontaires ("),
-                      law("articles 222-8, 222-10, 222-12 et 222-13, 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’administration de substances nuisibles (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00041",
+                          "article 221-4, 3° C.P.",
+                        ),
                       ),
-                      law("article 222-15 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le viol ("),
-                      law("article 222-24, 3° et 3° bis C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Les agressions sexuelles ("),
-                      law("article 222-29 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le harcèlement sexuel ("),
-                      law("article 222-33 III, 3° et 4° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le harcèlement moral ("),
-                      law("article 222-33-2-2, 3° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• La traite des êtres humains ("),
-                      law("article 225-4-1 I C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le proxénétisme ("),
-                      law("article 225-7, 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le recours à la prostitution ("),
-                      law("article 225-12-1 al. 2 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le vol ("),
-                      law("article 311-5, 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• L’extorsion ("),
-                      law("article 312-2, 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• L’escroquerie ("),
-                      law("article 313-2, 4° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• L’abus de confiance ("),
-                      law("article 314-2, 6° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• Les destructions, dégradations et détériorations (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00042",
+                          "• L’empoisonnement (",
+                        ),
                       ),
-                      law("article 322-3, 2° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00043",
+                          "article 221-5 al. 3 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00044",
+                          "• Les tortures ou actes de barbarie (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00045",
+                          "article 222-3, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00046",
+                          "• Les violences volontaires (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00047",
+                          "articles 222-8, 222-10, 222-12 et 222-13, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00048",
+                          "• L’administration de substances nuisibles (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00049",
+                          "article 222-15 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00050",
+                          "• Le viol (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00051",
+                          "article 222-24, 3° et 3° bis C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00052",
+                          "• Les agressions sexuelles (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00053",
+                          "article 222-29 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00054",
+                          "• Le harcèlement sexuel (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00055",
+                          "article 222-33 III, 3° et 4° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00056",
+                          "• Le harcèlement moral (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00057",
+                          "article 222-33-2-2, 3° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00058",
+                          "• La traite des êtres humains (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00059",
+                          "article 225-4-1 I C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00060",
+                          "• Le proxénétisme (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00061",
+                          "article 225-7, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00062",
+                          "• Le recours à la prostitution (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00063",
+                          "article 225-12-1 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00064",
+                          "• Le vol (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00065",
+                          "article 311-5, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00066",
+                          "• L’extorsion (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00067",
+                          "article 312-2, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00068",
+                          "• L’escroquerie (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00069",
+                          "article 313-2, 4° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00070",
+                          "• L’abus de confiance (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00071",
+                          "article 314-2, 6° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00072",
+                          "• Les destructions, dégradations et détériorations (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                          "f00073",
+                          "article 322-3, 2° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
 
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
-                          text:
-                              "Pour être retenue, la vulnérabilité doit correspondre à une des causes prévues (liste limitative) et être apparente ou connue de l’auteur.",
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart",
+                            "f00074",
+                            "Pour être retenue, la vulnérabilité doit correspondre à une des causes prévues (liste limitative) et être apparente ou connue de l’auteur.",
+                          ),
                         ),
                       ],
                     ),
@@ -574,9 +942,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PPNullitesSubstantiellesPage extends StatelessWidget {
   const PPNullitesSubstantiellesPage({super.key});
@@ -32,10 +33,18 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Les nullités substantielles',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+            "f00002",
+            'Les nullités substantielles',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,7 +58,11 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Les nullités substantielles en procédure pénale',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+              "f00003",
+              'Les nullités substantielles en procédure pénale',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -60,8 +73,16 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            'Comprendre la nullité lorsqu’aucun texte ne la prévoit expressément, mais que '
-            'la violation d’une garantie essentielle a porté atteinte aux droits des parties.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00004",
+                  'Comprendre la nullité lorsqu’aucun texte ne la prévoit expressément, mais que ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00005",
+                  'la violation d’une garantie essentielle a porté atteinte aux droits des parties.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -72,31 +93,67 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
 
           const SizedBox(height: 18),
 
-          const _SubTitle('1.2 – Les nullités substantielles'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+              "f00006",
+              '1.2 – Les nullités substantielles',
+            ),
+          ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'Les nullités substantielles interviennent lorsque la méconnaissance d’une formalité importante, '
-                  'prévue par une disposition de procédure pénale, porte atteinte aux intérêts de la partie qu’elle concerne. '
-                  'À la différence des nullités textuelles, aucun texte ne prévoit nécessairement, de manière expresse, la nullité pour l’acte vicié.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                    "f00007",
+                    'Les nullités substantielles interviennent lorsque la méconnaissance d’une formalité importante, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                    "f00008",
+                    'prévue par une disposition de procédure pénale, porte atteinte aux intérêts de la partie qu’elle concerne. ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                    "f00009",
+                    'À la différence des nullités textuelles, aucun texte ne prévoit nécessairement, de manière expresse, la nullité pour l’acte vicié.',
+                  ),
             ),
           ]),
           const SizedBox(height: 10),
 
           _Paragraph.rich([
-            const TextSpan(text: 'L’'),
             TextSpan(
-              text: 'Article 171 du Code de Procédure Pénale',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                "f00010",
+                'L’',
+              ),
+            ),
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                "f00011",
+                'Article 171 du Code de Procédure Pénale',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w800,
                 color: Colors.red.shade700,
               ),
             ),
-            const TextSpan(
+            TextSpan(
               text:
-                  ' donne une définition centrale de cette notion : « Il y a nullité lorsque la méconnaissance d’une formalité substantielle, '
-                  'prévue par une disposition du présent code ou par toute autre disposition de procédure pénale, a porté atteinte aux intérêts de la partie qu’elle concerne. »',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                    "f00012",
+                    ' donne une définition centrale de cette notion : « Il y a nullité lorsque la méconnaissance d’une formalité substantielle, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                    "f00013",
+                    'prévue par une disposition du présent code ou par toute autre disposition de procédure pénale, a porté atteinte aux intérêts de la partie qu’elle concerne. »',
+                  ),
             ),
           ]),
 
@@ -104,31 +161,61 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
 
           // ============= CARD 1 — DÉFINITION & CRITÈRE =====================
           _ConditionCard(
-            title: 'Définition et critère de la nullité substantielle',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+              "f00014",
+              'Définition et critère de la nullité substantielle',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'Selon le système des nullités substantielles, la nullité peut être prononcée même si la loi est silencieuse sur la sanction. '
-                'L’irrégularité n’est pas forcément assortie d’une mention « à peine de nullité », mais son importance impose qu’elle soit sanctionnée '
-                'lorsqu’elle porte atteinte aux droits fondamentaux des parties.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00015",
+                      'Selon le système des nullités substantielles, la nullité peut être prononcée même si la loi est silencieuse sur la sanction. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00016",
+                      'L’irrégularité n’est pas forcément assortie d’une mention « à peine de nullité », mais son importance impose qu’elle soit sanctionnée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00017",
+                      'lorsqu’elle porte atteinte aux droits fondamentaux des parties.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'La jurisprudence de la chambre criminelle de la Cour de cassation exige, pour prononcer une nullité substantielle, '
-                      'qu’il y ait : ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00018",
+                        'La jurisprudence de la chambre criminelle de la Cour de cassation exige, pour prononcer une nullité substantielle, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00019",
+                        'qu’il y ait : ',
+                      ),
                 ),
               ]),
               _IntroBullet(
-                text:
-                    'Une atteinte grave aux droits de la défense (droit à un avocat, droit de se taire, droit à l’information, etc.).',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00020",
+                  'Une atteinte grave aux droits de la défense (droit à un avocat, droit de se taire, droit à l’information, etc.).',
+                ),
               ),
               _IntroBullet(
-                text:
-                    'Ou un vice fondamental dans la recherche et l’établissement de la vérité (actes d’enquête ou d’instruction déloyaux, irréguliers ou trompeurs).',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00021",
+                  'Ou un vice fondamental dans la recherche et l’établissement de la vérité (actes d’enquête ou d’instruction déloyaux, irréguliers ou trompeurs).',
+                ),
               ),
             ],
           ),
@@ -137,48 +224,118 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
 
           // ============= CARD 2 — EXEMPLES PRATIQUES =======================
           _ConditionCard(
-            title: 'Exemples typiques de nullités substantielles',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+              "f00022",
+              'Exemples typiques de nullités substantielles',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'La circulaire du ministre de la Justice du 24 août 1991 rappelle que la suppression de certaines nullités textuelles, '
-                      'notamment en matière de garde à vue, ne signifie pas que les garanties prévues par la loi sont dépourvues de sanction. '
-                      'Elles peuvent être protégées par la nullité substantielle lorsque leur violation porte atteinte aux droits de la défense.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00023",
+                        'La circulaire du ministre de la Justice du 24 août 1991 rappelle que la suppression de certaines nullités textuelles, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00024",
+                        'notamment en matière de garde à vue, ne signifie pas que les garanties prévues par la loi sont dépourvues de sanction. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00025",
+                        'Elles peuvent être protégées par la nullité substantielle lorsque leur violation porte atteinte aux droits de la défense.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle('Garde à vue irrégulière'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00026",
+                  'Garde à vue irrégulière',
+                ),
+              ),
               _BulletPoint(
                 text:
-                    'Une garde à vue ordonnée par un agent de police judiciaire ou par un officier de police judiciaire territorialement incompétent '
-                    'est annulée pour violation d’une règle d’ordre public. L’irrégularité affecte la légalité même de la mesure privative de liberté.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00027",
+                      'Une garde à vue ordonnée par un agent de police judiciaire ou par un officier de police judiciaire territorialement incompétent ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00028",
+                      'est annulée pour violation d’une règle d’ordre public. L’irrégularité affecte la légalité même de la mesure privative de liberté.',
+                    ),
               ),
 
               SizedBox(height: 8),
-              _SubTitle('Non-respect du droit à l’avocat'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00029",
+                  'Non-respect du droit à l’avocat',
+                ),
+              ),
               _BulletPoint(
                 text:
-                    'Le non-respect de la notification du droit à être assisté par un avocat justifie la nullité, en raison de l’atteinte directe aux droits de la défense. '
-                    'La personne n’a pas pu exercer pleinement ses prérogatives pendant la mesure.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00030",
+                      'Le non-respect de la notification du droit à être assisté par un avocat justifie la nullité, en raison de l’atteinte directe aux droits de la défense. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00031",
+                      'La personne n’a pas pu exercer pleinement ses prérogatives pendant la mesure.',
+                    ),
               ),
 
               SizedBox(height: 8),
-              _SubTitle('Commission rogatoire et apparition d’indices graves'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00032",
+                  'Commission rogatoire et apparition d’indices graves',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Lorsque, au cours d’une commission rogatoire, apparaissent des indices graves et concordants à l’encontre d’une personne, '
-                      'l’officier de police judiciaire ne peut pas poursuivre son audition comme simple témoin. '
-                      'S’il ne modifie pas le cadre juridique de l’audition pour respecter les droits de la défense, il s’expose à une nullité pour avoir fait échec à ces droits, '
-                      'conformément à l’',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00033",
+                        'Lorsque, au cours d’une commission rogatoire, apparaissent des indices graves et concordants à l’encontre d’une personne, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00034",
+                        'l’officier de police judiciaire ne peut pas poursuivre son audition comme simple témoin. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00035",
+                        'S’il ne modifie pas le cadre juridique de l’audition pour respecter les droits de la défense, il s’expose à une nullité pour avoir fait échec à ces droits, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00036",
+                        'conformément à l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'Article 105 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                    "f00037",
+                    'Article 105 du Code de Procédure Pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Colors.redAccent,
@@ -192,23 +349,51 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
           const SizedBox(height: 18),
 
           // =============== NOTA — CONSEIL CONSTITUTIONNEL ==================
-          const _NotaBox(
-            title: 'POINT CLÉ – CRIMINALITÉ ORGANISÉE',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+              "f00038",
+              'POINT CLÉ – CRIMINALITÉ ORGANISÉE',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Le Conseil constitutionnel, dans la décision n° 2004-492 du 2 mars 2004, a censuré une disposition qui tendait à valider a posteriori, '
-                    'de manière automatique, toute procédure menée selon le régime de la criminalité organisée alors qu’en définitive la circonstance aggravante '
-                    'de bande organisée ne pouvait pas être retenue.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00039",
+                      'Le Conseil constitutionnel, dans la décision n° 2004-492 du 2 mars 2004, a censuré une disposition qui tendait à valider a posteriori, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00040",
+                      'de manière automatique, toute procédure menée selon le régime de la criminalité organisée alors qu’en définitive la circonstance aggravante ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00041",
+                      'de bande organisée ne pouvait pas être retenue.',
+                    ),
               ),
               TextSpan(text: ' '),
               TextSpan(
                 text:
-                    'Cette décision implique que l’autorité judiciaire ne peut autoriser le recours aux procédures spéciales de criminalité organisée que lorsqu’elle dispose '
-                    'd’une ou plusieurs raisons plausibles de soupçonner que les faits constituent l’une des infractions énumérées à l’',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00042",
+                      'Cette décision implique que l’autorité judiciaire ne peut autoriser le recours aux procédures spéciales de criminalité organisée que lorsqu’elle dispose ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00043",
+                      'd’une ou plusieurs raisons plausibles de soupçonner que les faits constituent l’une des infractions énumérées à l’',
+                    ),
               ),
               TextSpan(
-                text: 'Article 706-73 du Code de Procédure Pénale',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00044",
+                  'Article 706-73 du Code de Procédure Pénale',
+                ),
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
                   color: Colors.redAccent,
@@ -216,14 +401,30 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
               ),
               TextSpan(
                 text:
-                    '. Les actes d’enquête ou d’instruction peuvent être exonérés de nullité si, au jour où ils ont été autorisés, la circonstance aggravante de bande organisée '
-                    'paraissait caractérisée.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00045",
+                      '. Les actes d’enquête ou d’instruction peuvent être exonérés de nullité si, au jour où ils ont été autorisés, la circonstance aggravante de bande organisée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00046",
+                      'paraissait caractérisée.',
+                    ),
               ),
               TextSpan(text: ' '),
               TextSpan(
                 text:
-                    'En revanche, les actes autorisés sans circonstance de bande organisée, ou sans raisons plausibles de soupçonner l’une des infractions concernées, '
-                    'peuvent faire l’objet d’une annulation au titre des nullités substantielles.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00047",
+                      'En revanche, les actes autorisés sans circonstance de bande organisée, ou sans raisons plausibles de soupçonner l’une des infractions concernées, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00048",
+                      'peuvent faire l’objet d’une annulation au titre des nullités substantielles.',
+                    ),
               ),
             ],
           ),
@@ -232,27 +433,53 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
 
           // ============== CARD 3 — ENREGISTREMENT AUDITION MINEUR ==========
           _ConditionCard(
-            title:
-                'Enregistrement vidéo de l’audition d’un mineur placé en garde à vue',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+              "f00049",
+              'Enregistrement vidéo de l’audition d’un mineur placé en garde à vue',
+            ),
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'Lorsque la loi impose l’enregistrement audiovisuel de l’audition d’un mineur placé en garde à vue, une impossibilité technique peut être rencontrée. '
-                'Dans ce cas, il doit en être fait mention dans un procès-verbal d’interrogatoire qui précise la nature de cette impossibilité, et le procureur de la République '
-                'ou le juge d’instruction doit être immédiatement avisé.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00050",
+                      'Lorsque la loi impose l’enregistrement audiovisuel de l’audition d’un mineur placé en garde à vue, une impossibilité technique peut être rencontrée. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00051",
+                      'Dans ce cas, il doit en être fait mention dans un procès-verbal d’interrogatoire qui précise la nature de cette impossibilité, et le procureur de la République ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                      "f00052",
+                      'ou le juge d’instruction doit être immédiatement avisé.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Le non-respect de ces modalités a été jugé comme une cause de nullité par la chambre criminelle de la Cour de cassation (arrêt du 26 mars 2008). ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                    "f00053",
+                    'Le non-respect de ces modalités a été jugé comme une cause de nullité par la chambre criminelle de la Cour de cassation (arrêt du 26 mars 2008). ',
+                  ),
                 ),
                 TextSpan(
                   text:
-                      'Bien que cette nullité ne relève pas à proprement parler d’un texte mentionnant une sanction expresse, la Cour n’a pas exigé la démonstration d’une atteinte grave '
-                      'aux intérêts de l’enfant pour annuler : le défaut d’enregistrement semble alors relever d’une nullité d’ordre public, tant la garantie est jugée essentielle.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00054",
+                        'Bien que cette nullité ne relève pas à proprement parler d’un texte mentionnant une sanction expresse, la Cour n’a pas exigé la démonstration d’une atteinte grave ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                        "f00055",
+                        'aux intérêts de l’enfant pour annuler : le défaut d’enregistrement semble alors relever d’une nullité d’ordre public, tant la garantie est jugée essentielle.',
+                      ),
                 ),
               ]),
             ],
@@ -261,16 +488,42 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
           const SizedBox(height: 18),
 
           // ============== CONCLUSION GÉNÉRALE ==============================
-          const _SubTitle('Conclusion : rôle des nullités substantielles'),
-          const _Paragraph(
-            'Les nullités substantielles jouent un rôle essentiel de protection des droits fondamentaux des parties lorsqu’aucun texte ne prévoit explicitement '
-            'la nullité. Elles permettent au juge d’écarter des actes accomplis en violation de formalités essentielles ayant porté atteinte aux droits de la défense '
-            'ou à la loyauté de la recherche de la vérité.',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+              "f00056",
+              'Conclusion : rôle des nullités substantielles',
+            ),
+          ),
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00057",
+                  'Les nullités substantielles jouent un rôle essentiel de protection des droits fondamentaux des parties lorsqu’aucun texte ne prévoit explicitement ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00058",
+                  'la nullité. Elles permettent au juge d’écarter des actes accomplis en violation de formalités essentielles ayant porté atteinte aux droits de la défense ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00059",
+                  'ou à la loyauté de la recherche de la vérité.',
+                ),
           ),
           const SizedBox(height: 6),
-          const _Paragraph(
-            'Qu’elle soit textuelle ou substantielle, la nullité obéit dans tous les cas à une procédure spécifique d’invocation et de jugement. '
-            'Ces modalités relèvent du régime général de l’action en nullité, distinctement étudié dans une autre partie.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00060",
+                  'Qu’elle soit textuelle ou substantielle, la nullité obéit dans tous les cas à une procédure spécifique d’invocation et de jugement. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_nullites_substantielles_page.dart",
+                  "f00061",
+                  'Ces modalités relèvent du régime général de l’action en nullité, distinctement étudié dans une autre partie.',
+                ),
           ),
 
           const SizedBox(height: 26),

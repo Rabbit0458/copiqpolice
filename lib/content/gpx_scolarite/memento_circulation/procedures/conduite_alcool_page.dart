@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConduiteAlcoolPage extends StatelessWidget {
   const ConduiteAlcoolPage({super.key});
@@ -59,10 +60,18 @@ class ConduiteAlcoolPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mémento — circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+            "f00002",
+            "Mémento — circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class ConduiteAlcoolPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Conduite sous l’influence de l’alcool",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00003",
+              "Conduite sous l’influence de l’alcool",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,34 +102,41 @@ class ConduiteAlcoolPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles L. 234-1 et L. 234-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00005",
+                    "Articles L. 234-1 et L. 234-8 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ", "),
                 TextSpan(
-                  text: "article R. 234-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00006",
+                    "article R. 234-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article L. 3354-2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00007",
+                    "article L. 3354-2 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -125,8 +145,16 @@ class ConduiteAlcoolPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Deux grands blocs : C.E.E.A. (taux mesuré) + C.E.I. (ivresse manifeste). "
-                        "Les vérifications (éthylomètre / sang) sont le cœur de la preuve.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00008",
+                          "Deux grands blocs : C.E.E.A. (taux mesuré) + C.E.I. (ivresse manifeste). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00009",
+                          "Les vérifications (éthylomètre / sang) sont le cœur de la preuve.",
+                        ),
                   ),
                 ],
               ),
@@ -137,23 +165,53 @@ class ConduiteAlcoolPage extends StatelessWidget {
 
           // Définition / panorama
           _ConditionCard(
-            title: "II — Définition & faits réprimés",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00010",
+              "II — Définition & faits réprimés",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "C.E.E.A. — Conduite sous l’empire d’un état alcoolique",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00011",
+                  "C.E.E.A. — Conduite sous l’empire d’un état alcoolique",
+                ),
               ),
               _Paragraph(
-                "Infraction fondée sur la constatation d’un taux d’alcool dans l’air expiré ou dans le sang. "
-                "Selon les seuils, l’infraction est délictuelle ou contraventionnelle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00012",
+                      "Infraction fondée sur la constatation d’un taux d’alcool dans l’air expiré ou dans le sang. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00013",
+                      "Selon les seuils, l’infraction est délictuelle ou contraventionnelle.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C.E.I. — Conduite en état d’ivresse manifeste"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00014",
+                  "C.E.I. — Conduite en état d’ivresse manifeste",
+                ),
+              ),
               _Paragraph(
-                "Infraction fondée sur des signes extérieurs (haleine alcoolisée, propos incohérents, titubation, "
-                "somnolence, etc.). Elle est indépendante du taux d’alcool : le taux peut être inférieur au seuil légal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00015",
+                      "Infraction fondée sur des signes extérieurs (haleine alcoolisée, propos incohérents, titubation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00016",
+                      "somnolence, etc.). Elle est indépendante du taux d’alcool : le taux peut être inférieur au seuil légal.",
+                    ),
               ),
             ],
           ),
@@ -162,65 +220,144 @@ class ConduiteAlcoolPage extends StatelessWidget {
 
           // Élément matériel : vérifications / modes / seuils
           _ConditionCard(
-            title: "III — Élément matériel (preuve & seuils)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00017",
+              "III — Élément matériel (preuve & seuils)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle(
-                "A) Obligation de se soumettre aux vérifications",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00018",
+                  "A) Obligation de se soumettre aux vérifications",
+                ),
               ),
-              const _Paragraph(
-                "Le conducteur (ou l’accompagnateur d’un élève conducteur) doit se soumettre aux vérifications "
-                "destinées à établir l’état alcoolique :\n"
-                "• lorsque la loi permet des vérifications sans dépistage préalable ;\n"
-                "• en cas de dépistage positif ;\n"
-                "• en cas de refus de dépistage.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00019",
+                      "Le conducteur (ou l’accompagnateur d’un élève conducteur) doit se soumettre aux vérifications ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00020",
+                      "destinées à établir l’état alcoolique :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00021",
+                      "• lorsque la loi permet des vérifications sans dépistage préalable ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00022",
+                      "• en cas de dépistage positif ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00023",
+                      "• en cas de refus de dépistage.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sauf impossibilité, les vérifications sont réalisées à l’éthylomètre. En cas d’impossibilité (incapacité physique attestée par médecin), prélèvement sanguin.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00024",
+                      "Sauf impossibilité, les vérifications sont réalisées à l’éthylomètre. En cas d’impossibilité (incapacité physique attestée par médecin), prélèvement sanguin.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Seuils de qualification (taux retenu)"),
-              const _Paragraph(
-                "Les seuils ci-dessous déterminent la qualification (délit / contravention). "
-                "Le taux retenu est calculé après soustraction de la marge d’erreur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00025",
+                  "B) Seuils de qualification (taux retenu)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00026",
+                      "Les seuils ci-dessous déterminent la qualification (délit / contravention). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00027",
+                      "Le taux retenu est calculé après soustraction de la marge d’erreur.",
+                    ),
               ),
               const SizedBox(height: 10),
 
               _ConditionCard(
-                title: "Seuils délictuels (C.E.E.A.)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00028",
+                  "Seuils délictuels (C.E.E.A.)",
+                ),
                 cardColor: cardProc,
                 accent: accentGrey,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _Paragraph.rich([
-                    TextSpan(text: "Délit si : "),
                     TextSpan(
-                      text: "≥ 0,40 mg/l",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00029",
+                        "Délit si : ",
+                      ),
+                    ),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00030",
+                        "≥ 0,40 mg/l",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w900),
                     ),
-                    TextSpan(text: " d’air expiré "),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00031",
+                        " d’air expiré ",
+                      ),
+                    ),
                     TextSpan(
                       text: "ou",
                       style: TextStyle(fontWeight: FontWeight.w900),
                     ),
                     TextSpan(text: " "),
                     TextSpan(
-                      text: "≥ 0,80 g/l",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00032",
+                        "≥ 0,80 g/l",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w900),
                     ),
-                    TextSpan(text: " de sang. — "),
                     TextSpan(
-                      text: "L. 234-1 du Code de la route",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00033",
+                        " de sang. — ",
+                      ),
+                    ),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00034",
+                        "L. 234-1 du Code de la route",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -233,129 +370,284 @@ class ConduiteAlcoolPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               _ConditionCard(
-                title: "Seuils contraventionnels (C.E.E.A.)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00035",
+                  "Seuils contraventionnels (C.E.E.A.)",
+                ),
                 cardColor: cardProc,
                 accent: accentGrey,
                 titleColor: textMain,
-                children: const [
-                  _SubTitle("1) Conducteurs à seuil abaissé"),
+                children: [
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00036",
+                      "1) Conducteurs à seuil abaissé",
+                    ),
+                  ),
                   _Paragraph(
-                    "Concerne notamment :\n"
-                    "• transport en commun ;\n"
-                    "• droit de conduire limité aux véhicules équipés E.A.D. ;\n"
-                    "• permis probatoire ;\n"
-                    "• apprentissage de la conduite (élève conducteur / accompagnateur).",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00037",
+                          "Concerne notamment :\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00038",
+                          "• transport en commun ;\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00039",
+                          "• droit de conduire limité aux véhicules équipés E.A.D. ;\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00040",
+                          "• permis probatoire ;\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00041",
+                          "• apprentissage de la conduite (élève conducteur / accompagnateur).",
+                        ),
                   ),
                   SizedBox(height: 8),
                   _BulletPoint(
-                    text:
-                        "Contravention si ≥ 0,10 mg/l et < 0,40 mg/l (air expiré) OU ≥ 0,20 g/l et < 0,80 g/l (sang).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00042",
+                      "Contravention si ≥ 0,10 mg/l et < 0,40 mg/l (air expiré) OU ≥ 0,20 g/l et < 0,80 g/l (sang).",
+                    ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("2) Autres conducteurs / accompagnateur"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00043",
+                      "2) Autres conducteurs / accompagnateur",
+                    ),
+                  ),
                   _BulletPoint(
-                    text:
-                        "Contravention si ≥ 0,25 mg/l et < 0,40 mg/l (air expiré) OU ≥ 0,50 g/l et < 0,80 g/l (sang).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00044",
+                      "Contravention si ≥ 0,25 mg/l et < 0,40 mg/l (air expiré) OU ≥ 0,50 g/l et < 0,80 g/l (sang).",
+                    ),
                   ),
                   SizedBox(height: 10),
                   _Paragraph.rich([
-                    TextSpan(text: "Référence : "),
                     TextSpan(
-                      text: "R. 234-1 du Code de la route",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00045",
+                        "Référence : ",
+                      ),
+                    ),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00046",
+                        "R. 234-1 du Code de la route",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    TextSpan(text: " (contravention 4e classe)."),
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                        "f00047",
+                        " (contravention 4e classe).",
+                      ),
+                    ),
                   ]),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("C) Vérifications par éthylomètre (règles clés)"),
-              const _BulletPoint(
-                text: "Deux fonctionnaires procèdent au contrôle.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00048",
+                  "C) Vérifications par éthylomètre (règles clés)",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Mentionner l’identification de l’éthylomètre et la date de dernière vérification en procédure.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00049",
+                  "Deux fonctionnaires procèdent au contrôle.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Notifier immédiatement : taux affiché (mesuré) + taux retenu (après marge d’erreur).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00050",
+                  "Mentionner l’identification de l’éthylomètre et la date de dernière vérification en procédure.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00051",
+                  "Notifier immédiatement : taux affiché (mesuré) + taux retenu (après marge d’erreur).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "MARGE D’ERREUR (arrêté du 08/07/2003)",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00052",
+                  "MARGE D’ERREUR (arrêté du 08/07/2003)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "• Taux affiché < 0,40 mg/l : soustraire 0,032 mg/l.\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00053",
+                      "• Taux affiché < 0,40 mg/l : soustraire 0,032 mg/l.\n",
+                    ),
                   ),
-                  TextSpan(text: "• Entre 0,40 et 2 mg/l : soustraire 8 %.\n"),
-                  TextSpan(text: "• > 2 mg/l : soustraire 30 %.\n"),
-                  TextSpan(text: "Puis arrondir à la 2e décimale inférieure."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00054",
+                      "• Entre 0,40 et 2 mg/l : soustraire 8 %.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00055",
+                      "• > 2 mg/l : soustraire 30 %.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00056",
+                      "Puis arrondir à la 2e décimale inférieure.",
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 12),
-              const _SubTitle("Second contrôle"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00057",
+                  "Second contrôle",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’intéressé peut demander un second contrôle ; les agents peuvent aussi le décider d’office. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00058",
+                    "L’intéressé peut demander un second contrôle ; les agents peuvent aussi le décider d’office. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "R. 234-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00059",
+                    "R. 234-4 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _NotaBox(
-                title: "RÈGLE",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00060",
+                  "RÈGLE",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si le taux retenu du second contrôle est inférieur au premier, "
-                        "c’est lui qui détermine la nature de l’infraction.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00061",
+                          "Si le taux retenu du second contrôle est inférieur au premier, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00062",
+                          "c’est lui qui détermine la nature de l’infraction.",
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "D) Vérifications par prélèvement sanguin (quand ? + procédure)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00063",
+                  "D) Vérifications par prélèvement sanguin (quand ? + procédure)",
+                ),
               ),
-              const _Paragraph(
-                "Recours au sang lorsque l’éthylomètre est impossible (panne/indisponible) ou lorsque :\n"
-                "• blessure grave / décès ;\n"
-                "• ivresse manifeste empêchant de souffler ;\n"
-                "• incapacité physique attestée par médecin.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00064",
+                      "Recours au sang lorsque l’éthylomètre est impossible (panne/indisponible) ou lorsque :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00065",
+                      "• blessure grave / décès ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00066",
+                      "• ivresse manifeste empêchant de souffler ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00067",
+                      "• incapacité physique attestée par médecin.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "MINEUR",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Pour un mineur : prélèvement sanguin uniquement après autorisation du parquet "
-                        "ou de la personne ayant autorité. Mentionner l’autorisation ou l’impossibilité de l’obtenir rapidement.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00068",
+                          "Pour un mineur : prélèvement sanguin uniquement après autorisation du parquet ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00069",
+                          "ou de la personne ayant autorité. Mentionner l’autorisation ou l’impossibilité de l’obtenir rapidement.",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Conduire à l’hôpital + réquisition médecin/infirmier + fiche A (comportement) + fiches B-C (constatations).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00070",
+                  "Conduire à l’hôpital + réquisition médecin/infirmier + fiche A (comportement) + fiches B-C (constatations).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Assister au prélèvement, sceller les flacons, faire apposer les signatures (ou mentionner refus/incapacité).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00071",
+                  "Assister au prélèvement, sceller les flacons, faire apposer les signatures (ou mentionner refus/incapacité).",
+                ),
               ),
             ],
           ),
@@ -364,23 +656,41 @@ class ConduiteAlcoolPage extends StatelessWidget {
 
           // Élément moral : ici = intention pas nécessaire; mais on explique logique + CEI
           _ConditionCard(
-            title: "IV — Élément moral (logique pénale)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00072",
+              "IV — Élément moral (logique pénale)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En pratique, ces infractions reposent sur un constat objectif (taux) ou des signes extérieurs (ivresse manifeste). "
-                "L’élément déterminant est la matérialité des constatations et la régularité de la procédure.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00073",
+                      "En pratique, ces infractions reposent sur un constat objectif (taux) ou des signes extérieurs (ivresse manifeste). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00074",
+                      "L’élément déterminant est la matérialité des constatations et la régularité de la procédure.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "C.E.I. : signes extérieurs suffisent (haleine alcoolisée, élocution hésitante, titubation, somnolence…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00075",
+                  "C.E.I. : signes extérieurs suffisent (haleine alcoolisée, élocution hésitante, titubation, somnolence…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Même en C.E.I., l’auteur présumé doit être soumis aux vérifications (éthylomètre ou sang si impossible).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00076",
+                  "Même en C.E.I., l’auteur présumé doit être soumis aux vérifications (éthylomètre ou sang si impossible).",
+                ),
               ),
             ],
           ),
@@ -389,29 +699,40 @@ class ConduiteAlcoolPage extends StatelessWidget {
 
           // Aggravantes / alcool + stup
           _ConditionCard(
-            title: "V — Circonstances aggravantes & cumul stupéfiants",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00077",
+              "V — Circonstances aggravantes & cumul stupéfiants",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Alcool + stupéfiants : une alcoolémie supérieure aux seuils aggrave les peines du délit de conduite après usage de stupéfiants. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00078",
+                    "Alcool + stupéfiants : une alcoolémie supérieure aux seuils aggrave les peines du délit de conduite après usage de stupéfiants. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "L. 235-1 alinéa 2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00079",
+                    "L. 235-1 alinéa 2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Dans tous les cas liés à l’alcool : procéder aussi au dépistage stupéfiants (et vérifications si nécessaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00080",
+                  "Dans tous les cas liés à l’alcool : procéder aussi au dépistage stupéfiants (et vérifications si nécessaire).",
+                ),
               ),
             ],
           ),
@@ -420,69 +741,118 @@ class ConduiteAlcoolPage extends StatelessWidget {
 
           // Tentative & complicité + refus
           _ConditionCard(
-            title: "VI — Tentative, complicité & refus",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00081",
+              "VI — Tentative, complicité & refus",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Refus de se soumettre aux vérifications (délit)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00082",
+                  "Refus de se soumettre aux vérifications (délit)",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Refus C.R. : "),
                 TextSpan(
-                  text: "L. 234-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00083",
+                    "Refus C.R. : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — puni de 2 ans d’emprisonnement et 4 500 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00084",
+                    "L. 234-8 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00085",
+                    " — puni de 2 ans d’emprisonnement et 4 500 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Refus C.S.P. : "),
                 TextSpan(
-                  text: "L. 3354-2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00086",
+                    "Refus C.S.P. : ",
                   ),
                 ),
                 TextSpan(
-                  text: " — puni de 1 an d’emprisonnement et 3 750 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00087",
+                    "L. 3354-2 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00088",
+                    " — puni de 1 an d’emprisonnement et 3 750 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À SAVOIR",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00089",
+                  "À SAVOIR",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le refus de dépistage n’est pas une infraction : il entraîne l’obligation de se soumettre aux vérifications.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                      "f00090",
+                      "Le refus de dépistage n’est pas une infraction : il entraîne l’obligation de se soumettre aux vérifications.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00091",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : non pertinente ici (infraction consommée dès la conduite sous influence / constat).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00092",
+                  "Tentative : non pertinente ici (infraction consommée dès la conduite sous influence / constat).",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Complicité : possible selon les règles générales de complicité. ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00093",
+                    "Complicité : possible selon les règles générales de complicité. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00094",
+                    "Articles 121-6 et 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -493,19 +863,31 @@ class ConduiteAlcoolPage extends StatelessWidget {
 
           // Table NATINF (délits + contraventions)
           _ConditionCard(
-            title: "VII — NATINF (repères opérationnels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00095",
+              "VII — NATINF (repères opérationnels)",
+            ),
             cardColor: cardProc,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _NatinfAlcoolTable(),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les A.P.J.A. ne sont pas habilités à constater par procès-verbal les délits et contraventions "
-                        "en matière de conduite sous l’influence de l’alcool.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00096",
+                          "Les A.P.J.A. ne sont pas habilités à constater par procès-verbal les délits et contraventions ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                          "f00097",
+                          "en matière de conduite sous l’influence de l’alcool.",
+                        ),
                   ),
                 ],
               ),
@@ -513,8 +895,14 @@ class ConduiteAlcoolPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 12),
-          const _Paragraph.rich([
-            TextSpan(text: "Mis à jour le "),
+          _Paragraph.rich([
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                "f00098",
+                "Mis à jour le ",
+              ),
+            ),
             TextSpan(
               text: "15/06/2025",
               style: TextStyle(fontWeight: FontWeight.w900),
@@ -644,7 +1032,15 @@ class _NatinfAlcoolTable extends StatelessWidget {
                 const SizedBox(width: 8),
                 headerCell("Fait", flex: 7),
                 const SizedBox(width: 8),
-                headerCell("Réf.", flex: 4, align: TextAlign.right),
+                headerCell(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                    "f00099",
+                    "Réf.",
+                  ),
+                  flex: 4,
+                  align: TextAlign.right,
+                ),
               ],
             ),
           ),
@@ -652,43 +1048,72 @@ class _NatinfAlcoolTable extends StatelessWidget {
           // DÉLITS
           row(
             natinf: "1247",
-            intitule:
-                "Conduite sous l’empire d’un état alcoolique (≥ 0,80 g/l sang ou ≥ 0,40 mg/l air)",
-            refSpans: const [
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00100",
+              "Conduite sous l’empire d’un état alcoolique (≥ 0,80 g/l sang ou ≥ 0,40 mg/l air)",
+            ),
+            refSpans: [
               TextSpan(
-                text: "L. 234-1 CR",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00101",
+                  "L. 234-1 CR",
+                ),
                 style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
               ),
             ],
           ),
           row(
             natinf: "41",
-            intitule: "Conduite en état d’ivresse manifeste",
-            refSpans: const [
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00102",
+              "Conduite en état d’ivresse manifeste",
+            ),
+            refSpans: [
               TextSpan(
-                text: "C.E.I.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00103",
+                  "C.E.I.",
+                ),
                 style: TextStyle(fontWeight: FontWeight.w900),
               ),
             ],
           ),
           row(
             natinf: "51",
-            intitule:
-                "Refus de se soumettre aux vérifications tendant à établir l’état alcoolique (Code de la route)",
-            refSpans: const [
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00104",
+              "Refus de se soumettre aux vérifications tendant à établir l’état alcoolique (Code de la route)",
+            ),
+            refSpans: [
               TextSpan(
-                text: "L. 234-8 CR",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00105",
+                  "L. 234-8 CR",
+                ),
                 style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
               ),
             ],
           ),
           row(
             natinf: "2000",
-            intitule:
-                "Refus de se soumettre aux vérifications (cas prévus par le Code de la santé publique)",
-            refSpans: const [
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00106",
+              "Refus de se soumettre aux vérifications (cas prévus par le Code de la santé publique)",
+            ),
+            refSpans: [
               TextSpan(
-                text: "L. 3354-2 CSP",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00107",
+                  "L. 3354-2 CSP",
+                ),
                 style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
               ),
             ],
@@ -697,22 +1122,36 @@ class _NatinfAlcoolTable extends StatelessWidget {
           // CONTRAVENTIONS (regroupées)
           row(
             natinf: "25434",
-            intitule:
-                "Conduite avec alcool ≥ 0,10 mg/l (air) / 0,20 g/l (sang) — conducteurs à seuil abaissé",
-            refSpans: const [
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00108",
+              "Conduite avec alcool ≥ 0,10 mg/l (air) / 0,20 g/l (sang) — conducteurs à seuil abaissé",
+            ),
+            refSpans: [
               TextSpan(
-                text: "R. 234-1 CR",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00109",
+                  "R. 234-1 CR",
+                ),
                 style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
               ),
             ],
           ),
           row(
             natinf: "33329",
-            intitule:
-                "Conduite avec alcool ≥ 0,25 mg/l (air) / 0,50 g/l (sang) — autres conducteurs",
-            refSpans: const [
+            intitule: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+              "f00110",
+              "Conduite avec alcool ≥ 0,25 mg/l (air) / 0,50 g/l (sang) — autres conducteurs",
+            ),
+            refSpans: [
               TextSpan(
-                text: "R. 234-1 CR",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/conduite_alcool_page.dart",
+                  "f00111",
+                  "R. 234-1 CR",
+                ),
                 style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
               ),
             ],

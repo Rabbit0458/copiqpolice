@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/sanction_pages/causes_aggravation_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : La sanction — Causes d’aggravation de la sanction
 /// Route alignée avec la config : /gpx/sanction/causes_aggravation
@@ -17,13 +18,33 @@ class CausesAggravationPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            badge: 'La sanction',
-            title: 'Causes d’aggravation de la sanction',
-            subtitle: 'Récidive · Circonstances aggravantes · Pluralité',
+            badge: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+              "f00001",
+              'La sanction',
+            ),
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+              "f00002",
+              'Causes d’aggravation de la sanction',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+              "f00003",
+              'Récidive · Circonstances aggravantes · Pluralité',
+            ),
             image: 'assets/images/sanction.jpeg',
             onPrimaryTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Aggravations — Récap 👌')),
+                SnackBar(
+                  content: Text(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                      "f00004",
+                      'Aggravations — Récap 👌',
+                    ),
+                  ),
+                ),
               );
             },
           ),
@@ -32,102 +53,208 @@ class CausesAggravationPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
+                _SectionCard(
                   title: 'Objet',
                   child: Text(
-                    'Identifier les causes d’aggravation prévues par la loi (récidive, circonstances aggravantes, '
-                    'statuts particuliers) et leur impact sur la qualification et l’échelle des peines.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00005",
+                          'Identifier les causes d’aggravation prévues par la loi (récidive, circonstances aggravantes, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00006",
+                          'statuts particuliers) et leur impact sur la qualification et l’échelle des peines.',
+                        ),
                   ),
                 ),
 
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
-                    'Récidive',
-                    'Circonstances aggravantes',
-                    'Statuts protégés',
-                    'Peines planchers (si texte)',
-                    'Motivation renforcée',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                      "f00007",
+                      'Récidive',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                      "f00008",
+                      'Circonstances aggravantes',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                      "f00009",
+                      'Statuts protégés',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                      "f00010",
+                      'Peines planchers (si texte)',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                      "f00011",
+                      'Motivation renforcée',
+                    ),
                   ],
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '1) Récidive',
-                  caption: 'Conditions temporelles et matérielles',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00012",
+                    '1) Récidive',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00013",
+                    'Conditions temporelles et matérielles',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Contrainte légale : antécédent définitif + nouvelle infraction dans les délais légaux.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00014",
+                          'Contrainte légale : antécédent définitif + nouvelle infraction dans les délais légaux.',
+                        ),
                       ),
                       _Bullet(
-                        'Effets : élévation des maxima, planchers éventuels, aménagements limités selon textes.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00015",
+                          'Effets : élévation des maxima, planchers éventuels, aménagements limités selon textes.',
+                        ),
                       ),
                       _Bullet(
-                        'PV : relever les références du jugement antérieur et dates utiles.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00016",
+                          'PV : relever les références du jugement antérieur et dates utiles.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '2) Circonstances aggravantes',
-                  caption:
-                      'Qualité de la victime · Bande organisée · Arme · Lieu',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00017",
+                    '2) Circonstances aggravantes',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00018",
+                    'Qualité de la victime · Bande organisée · Arme · Lieu',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Victime vulnérable / dépositaire de l’autorité publique.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00019",
+                          'Victime vulnérable / dépositaire de l’autorité publique.',
+                        ),
                       ),
                       _Bullet(
-                        'Bande organisée, préméditation, réunion, escalade…',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00020",
+                          'Bande organisée, préméditation, réunion, escalade…',
+                        ),
                       ),
                       _Bullet(
-                        'Usage/port d’arme, véhicule comme arme, lieu protégé (école, transports…).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00021",
+                          'Usage/port d’arme, véhicule comme arme, lieu protégé (école, transports…).',
+                        ),
                       ),
                       _Bullet(
-                        'Effet : requalification possible (délit → crime) et maxima relevés.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00022",
+                          'Effet : requalification possible (délit → crime) et maxima relevés.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '3) Statuts/professions protégés',
-                  caption:
-                      'Ex. conjoint, mineur, magistrat, policier… (suivant textes)',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00023",
+                    '3) Statuts/professions protégés',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00024",
+                    'Ex. conjoint, mineur, magistrat, policier… (suivant textes)',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Aggravations automatiques si l’infraction vise certaines victimes ou fonctions.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00025",
+                          'Aggravations automatiques si l’infraction vise certaines victimes ou fonctions.',
+                        ),
                       ),
                       _Bullet(
-                        'Rappeler précisément la qualité et le contexte dans la procédure.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00026",
+                          'Rappeler précisément la qualité et le contexte dans la procédure.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '4) Vigilance procédurale',
-                  caption: 'Preuves & mentions',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00027",
+                    '4) Vigilance procédurale',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00028",
+                    'Preuves & mentions',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _ChecklistLine(
-                        'Rassembler les éléments objectifs (pièces du casier, jugement, constats).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00029",
+                          'Rassembler les éléments objectifs (pièces du casier, jugement, constats).',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Identifier clairement la circonstance retenue et le texte applicable.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00030",
+                          'Identifier clairement la circonstance retenue et le texte applicable.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Motiver le prononcé de la peine (individualisation + aggravation).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00031",
+                          'Motiver le prononcé de la peine (individualisation + aggravation).',
+                        ),
                       ),
                     ],
                   ),
@@ -135,22 +262,42 @@ class CausesAggravationPage extends StatelessWidget {
 
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00032",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'Classification des peines',
-                  subtitle: 'Natures · Alternatives · Mesures de sûreté',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00033",
+                    'Classification des peines',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00034",
+                    'Natures · Alternatives · Mesures de sûreté',
+                  ),
                   route: '/gpx/sanction/classification_peines',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Pluralité d’infractions',
-                  subtitle: 'Concours & cumul · Confusion de peines',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00035",
+                    'Pluralité d’infractions',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                    "f00036",
+                    'Concours & cumul · Confusion de peines',
+                  ),
                   route: '/gpx/sanction/pluralite_infractions',
                 ),
               ],
@@ -243,7 +390,13 @@ class _HeroHeader extends StatelessWidget {
                     ElevatedButton.icon(
                       onPressed: onPrimaryTap,
                       icon: const Icon(Icons.play_arrow_rounded),
-                      label: const Text('Découvrir'),
+                      label: Text(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart",
+                          "f00037",
+                          'Découvrir',
+                        ),
+                      ),
                       style: ElevatedButton.styleFrom(
                         elevation: 0,
                         backgroundColor: Colors.white,

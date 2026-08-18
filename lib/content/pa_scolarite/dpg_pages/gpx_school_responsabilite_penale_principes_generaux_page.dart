@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaGPXSchoolResponsabilitePenalePrincipesGenerauxPage
     extends StatelessWidget {
@@ -15,7 +16,11 @@ class PaGPXSchoolResponsabilitePenalePrincipesGenerauxPage
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Principes généraux de la responsabilité pénale',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+            "f00001",
+            'Principes généraux de la responsabilité pénale',
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
       ),
@@ -23,22 +28,46 @@ class PaGPXSchoolResponsabilitePenalePrincipesGenerauxPage
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 28),
         children: [
           _ConditionCard(
-            title: 'Définition de la responsabilité pénale',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+              "f00002",
+              'Définition de la responsabilité pénale',
+            ),
             cardColor: isDark
                 ? const Color(0xFF1F2A38)
                 : const Color(0xFFE3F2FD),
             accent: const Color(0xFF1565C0),
             titleColor: const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'La responsabilité pénale consiste dans l’obligation, pour une personne, '
-                'de répondre de ses actes délictueux et, en cas de condamnation, '
-                'd’exécuter la sanction pénale prévue pour l’infraction commise.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00003",
+                      'La responsabilité pénale consiste dans l’obligation, pour une personne, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00004",
+                      'de répondre de ses actes délictueux et, en cas de condamnation, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00005",
+                      'd’exécuter la sanction pénale prévue pour l’infraction commise.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Elle ne constitue pas un élément de l’infraction : elle en est la conséquence '
-                'juridique. Elle intervient après la constatation de l’infraction.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00006",
+                      'Elle ne constitue pas un élément de l’infraction : elle en est la conséquence ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00007",
+                      'juridique. Elle intervient après la constatation de l’infraction.',
+                    ),
               ),
             ],
           ),
@@ -46,37 +75,74 @@ class PaGPXSchoolResponsabilitePenalePrincipesGenerauxPage
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: 'Principe de responsabilité personnelle',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+              "f00008",
+              'Principe de responsabilité personnelle',
+            ),
             cardColor: isDark
                 ? const Color(0xFF263238)
                 : const Color(0xFFE0F7FA),
             accent: const Color(0xFF00838F),
             titleColor: const Color(0xFF006064),
-            children: const [
+            children: [
               _Paragraph(
-                'Le droit pénal repose sur le principe fondamental de responsabilité personnelle. '
-                'Le Code pénal pose le principe selon lequel nul ne peut être déclaré responsable '
-                'pénalement des faits d’autrui.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00009",
+                      'Le droit pénal repose sur le principe fondamental de responsabilité personnelle. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00010",
+                      'Le Code pénal pose le principe selon lequel nul ne peut être déclaré responsable ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00011",
+                      'pénalement des faits d’autrui.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: 'Ce principe est affirmé par '),
                 TextSpan(
-                  text: 'l’article 121-1 du Code pénal',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                    "f00012",
+                    'Ce principe est affirmé par ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                    "f00013",
+                    'l’article 121-1 du Code pénal',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' qui dispose que « nul n’est responsable pénalement que de son propre fait ».',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                    "f00014",
+                    ' qui dispose que « nul n’est responsable pénalement que de son propre fait ».',
+                  ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph(
-                'Ce principe s’applique aussi bien aux personnes physiques qu’aux personnes morales, '
-                'ce qui constitue une innovation majeure par rapport à la législation antérieure.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00015",
+                      'Ce principe s’applique aussi bien aux personnes physiques qu’aux personnes morales, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00016",
+                      'ce qui constitue une innovation majeure par rapport à la législation antérieure.',
+                    ),
               ),
             ],
           ),
@@ -84,23 +150,55 @@ class PaGPXSchoolResponsabilitePenalePrincipesGenerauxPage
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: 'Conditions de la responsabilité pénale',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+              "f00017",
+              'Conditions de la responsabilité pénale',
+            ),
             cardColor: isDark
                 ? const Color(0xFF2E1A1A)
                 : const Color(0xFFFFEBEE),
             accent: const Color(0xFFC62828),
             titleColor: const Color(0xFFB71C1C),
-            children: const [
-              _SubTitle('Culpabilité'),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                  "f00018",
+                  'Culpabilité',
+                ),
+              ),
               _Paragraph(
-                'Pour qu’il y ait responsabilité pénale, il faut que l’auteur ait commis une faute. '
-                'Cette faute correspond à l’élément moral de l’infraction.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00019",
+                      'Pour qu’il y ait responsabilité pénale, il faut que l’auteur ait commis une faute. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00020",
+                      'Cette faute correspond à l’élément moral de l’infraction.',
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle('Imputabilité'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                  "f00021",
+                  'Imputabilité',
+                ),
+              ),
               _Paragraph(
-                'La faute doit pouvoir être imputée à son auteur. Cela suppose que la personne '
-                'ait été en mesure de comprendre et de vouloir l’acte commis.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00022",
+                      'La faute doit pouvoir être imputée à son auteur. Cela suppose que la personne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00023",
+                      'ait été en mesure de comprendre et de vouloir l’acte commis.',
+                    ),
               ),
             ],
           ),
@@ -108,33 +206,73 @@ class PaGPXSchoolResponsabilitePenalePrincipesGenerauxPage
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: 'Qualité de l’auteur',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+              "f00024",
+              'Qualité de l’auteur',
+            ),
             cardColor: isDark
                 ? const Color(0xFF1B263B)
                 : const Color(0xFFE8EAF6),
             accent: const Color(0xFF303F9F),
             titleColor: const Color(0xFF1A237E),
-            children: const [
+            children: [
               _Paragraph(
-                'Pour être déclarée pénalement responsable, une personne doit avoir participé '
-                'à la commission de l’infraction.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00025",
+                      'Pour être déclarée pénalement responsable, une personne doit avoir participé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00026",
+                      'à la commission de l’infraction.',
+                    ),
               ),
               SizedBox(height: 6),
-              _BulletPoint(text: 'Soit en qualité d’auteur'),
-              _BulletPoint(text: 'Soit en qualité de complice'),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                  "f00027",
+                  'Soit en qualité d’auteur',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                  "f00028",
+                  'Soit en qualité de complice',
+                ),
+              ),
             ],
           ),
 
           const SizedBox(height: 18),
 
-          const _NotaBox(
-            title: 'À retenir',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+              "f00029",
+              'À retenir',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Certaines circonstances prévues par la loi peuvent constituer des causes '
-                    'd’irresponsabilité pénale ou d’atténuation de la responsabilité, '
-                    'limitant ou supprimant les effets de la sanction pénale.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00030",
+                      'Certaines circonstances prévues par la loi peuvent constituer des causes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00031",
+                      'd’irresponsabilité pénale ou d’atténuation de la responsabilité, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart",
+                      "f00032",
+                      'limitant ou supprimant les effets de la sanction pénale.',
+                    ),
               ),
             ],
           ),

@@ -6,6 +6,7 @@ import 'crime_page.dart';
 import 'delit_page.dart';
 import 'contravention_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz_generalit%C3%A9/quiz_classification_infractions_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// =============================================================
 ///  COP'IQ — Classification des infractions
@@ -41,10 +42,18 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+            "f00004",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Classification des infractions',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+            "f00005",
+            'Classification des infractions',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -59,7 +68,11 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
           _InfractionCard(
             tag: 'crime',
             title: 'Crimes',
-            subtitle: 'Les infractions les plus graves',
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+              "f00006",
+              'Les infractions les plus graves',
+            ),
             imagePath: 'assets/images/crime.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -67,11 +80,19 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
             isDark: isDark,
             onTap: () => _open(context, const CrimePage(), 'crime'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           _InfractionCard(
             tag: 'delit',
-            title: 'Délits',
-            subtitle: 'Infractions intermédiaires',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+              "f00007",
+              'Délits',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+              "f00008",
+              'Infractions intermédiaires',
+            ),
             imagePath: 'assets/images/delit.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -79,11 +100,15 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
             isDark: isDark,
             onTap: () => _open(context, const DelitPage(), 'delit'),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           _InfractionCard(
             tag: 'contravention',
             title: 'Contraventions',
-            subtitle: 'De la 1re à la 5e classe',
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+              "f00009",
+              'De la 1re à la 5e classe',
+            ),
             imagePath: 'assets/images/contravention.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -93,11 +118,19 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
                 _open(context, const ContraventionPage(), 'contravention'),
           ),
 
-          const SizedBox(height: 22), // un peu plus bas que les autres (voulu)
+          const SizedBox(height: 10),
           _InfractionCard(
             tag: 'quiz',
-            title: 'Quiz — Classification des infractions',
-            subtitle: 'Testez vos connaissances.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+              "f00010",
+              'Quiz — Classification des infractions',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+              "f00011",
+              'Testez vos connaissances.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -113,9 +146,13 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
 
                 if (user == null) {
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
+                    SnackBar(
                       content: Text(
-                        'Erreur : utilisateur non connecté ou session expirée.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+                          "f00012",
+                          'Erreur : utilisateur non connecté ou session expirée.',
+                        ),
                       ),
                       backgroundColor: Colors.redAccent,
                     ),
@@ -144,7 +181,7 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
               }
             },
           ),
-          const SizedBox(height: 22), // Respiration en bas
+          const SizedBox(height: 10),
         ],
       ),
     );
@@ -197,7 +234,9 @@ class _InfractionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-    final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+    final Color borderClr = Colors.white.withValues(
+      alpha: isDark ? 0.18 : 0.14,
+    );
 
     return GestureDetector(
       onTap: onTap,
@@ -205,7 +244,11 @@ class _InfractionCard extends StatelessWidget {
         button: true,
         label: '$title — découvrir',
         child: Container(
-          height: 190,
+          height: ScolariteText.adaptiveCardHeight(
+            context,
+            cardCount: 4,
+            maxHeight: 190,
+          ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,
@@ -260,22 +303,32 @@ class _InfractionCard extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    Text(
-                      title,
-                      style: GoogleFonts.fustat(
-                        fontWeight: FontWeight.w900,
-                        fontSize: 28,
-                        color: Colors.white,
-                        height: 1.0,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 126),
+                      child: Text(
+                        title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: GoogleFonts.fustat(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 24,
+                          color: Colors.white,
+                          height: 1.0,
+                        ),
                       ),
                     ),
                     const SizedBox(height: 6),
-                    Text(
-                      subtitle,
-                      style: GoogleFonts.fustat(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 14,
-                        color: Colors.white.withValues(alpha: .85),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 126),
+                      child: Text(
+                        subtitle,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: GoogleFonts.fustat(
+                          fontWeight: FontWeight.w600,
+                          fontSize: 13,
+                          color: Colors.white.withValues(alpha: .85),
+                        ),
                       ),
                     ),
                   ],
@@ -309,7 +362,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 6),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart",
+                "f00016",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,

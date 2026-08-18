@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuditionSuspectGeneralitesPage extends StatelessWidget {
   const AuditionSuspectGeneralitesPage({super.key});
@@ -60,10 +61,18 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Audition du suspect",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+            "f00002",
+            "Audition du suspect",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Généralités & bonnes pratiques d’audition",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+              "f00003",
+              "Généralités & bonnes pratiques d’audition",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -94,11 +107,23 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Recueillir des déclarations (et parfois des aveux) est un objectif fréquent, mais ils doivent être "
-                "précis, circonstanciés et exploitables. La conduite d’une audition impose des règles : préparation, "
-                "neutralité, sécurité, et traçabilité dans le procès-verbal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                      "f00004",
+                      "Recueillir des déclarations (et parfois des aveux) est un objectif fréquent, mais ils doivent être ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                      "f00005",
+                      "précis, circonstanciés et exploitables. La conduite d’une audition impose des règles : préparation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                      "f00006",
+                      "neutralité, sécurité, et traçabilité dans le procès-verbal.",
+                    ),
               ),
             ],
           ),
@@ -107,32 +132,63 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
 
           // ✅ “Élément légal” en haut (ici : fondements juridiques cités dans tes notes)
           _ConditionCard(
-            title: "Fondements juridiques (à citer au besoin)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+              "f00007",
+              "Fondements juridiques (à citer au besoin)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article L. 311-1 du CJPM"),
-                const TextSpan(
-                  text:
-                      " : accompagnement possible du mineur par les représentants légaux ou un adulte approprié (si intérêt supérieur de l’enfant et sans préjudice à la procédure).",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00008",
+                    "Article L. 311-1 du CJPM",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00009",
+                    " : accompagnement possible du mineur par les représentants légaux ou un adulte approprié (si intérêt supérieur de l’enfant et sans préjudice à la procédure).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article L. 413-12 du CJPM"),
-                const TextSpan(
-                  text:
-                      " : enregistrement audiovisuel obligatoire des interrogatoires des mineurs en garde à vue ou en retenue (systématique).",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00010",
+                    "Article L. 413-12 du CJPM",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00011",
+                    " : enregistrement audiovisuel obligatoire des interrogatoires des mineurs en garde à vue ou en retenue (systématique).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article 64-1 du Code de procédure pénale"),
-                const TextSpan(
-                  text:
-                      " : enregistrement audiovisuel obligatoire des interrogatoires des majeurs en garde à vue en matière criminelle (avec exceptions encadrées).",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00012",
+                    "Article 64-1 du Code de procédure pénale",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00013",
+                    " : enregistrement audiovisuel obligatoire des interrogatoires des majeurs en garde à vue en matière criminelle (avec exceptions encadrées).",
+                  ),
                 ),
               ]),
             ],
@@ -142,68 +198,142 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
 
           // I. Avant l'audition
           _ConditionCard(
-            title: "I — Avant l’audition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+              "f00014",
+              "I — Avant l’audition",
+            ),
             cardColor: cardPrep,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance de l’affaire et de la personne"),
-              _BulletPoint(
-                text:
-                    "Maîtriser le dossier : lecture préalable et attentive de toutes les pièces de procédure.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00015",
+                  "A) Connaissance de l’affaire et de la personne",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préparer les questions : déterminer celles à poser et celles à éviter.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00016",
+                  "Maîtriser le dossier : lecture préalable et attentive de toutes les pièces de procédure.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Recueillir des renseignements sur la personnalité du suspect (milieu, situation, relations…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00017",
+                  "Préparer les questions : déterminer celles à poser et celles à éviter.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conserver une approche objective : distinguer ce qui est avéré de ce qui reste incertain.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00018",
+                  "Recueillir des renseignements sur la personnalité du suspect (milieu, situation, relations…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00019",
+                  "Conserver une approche objective : distinguer ce qui est avéré de ce qui reste incertain.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Conditions matérielles"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00020",
+                  "B) Conditions matérielles",
+                ),
+              ),
             ],
           ),
 
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "B — Conditions matérielles de l’audition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+              "f00021",
+              "B — Conditions matérielles de l’audition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Le lieu"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00022",
+                  "1) Le lieu",
+                ),
+              ),
               _Paragraph(
-                "Sauf rares exceptions, ne pas entendre une personne suspecte à son domicile ou sur son lieu de travail. "
-                "Le lieu privilégié reste le bureau de l’enquêteur : calme, confidentialité, disponibilité, sans interventions parasites.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                      "f00023",
+                      "Sauf rares exceptions, ne pas entendre une personne suspecte à son domicile ou sur son lieu de travail. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                      "f00024",
+                      "Le lieu privilégié reste le bureau de l’enquêteur : calme, confidentialité, disponibilité, sans interventions parasites.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Nombre de participants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00025",
+                  "2) Nombre de participants",
+                ),
+              ),
               _Paragraph(
-                "En principe, l’audition est menée par un seul enquêteur. Un assistant peut être utile, mais n’intervient que si l’enquêteur l’y invite.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00026",
+                  "En principe, l’audition est menée par un seul enquêteur. Un assistant peut être utile, mais n’intervient que si l’enquêteur l’y invite.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("3) Règles de sécurité"),
-              _BulletPoint(
-                text:
-                    "Prévenir toute évasion : surveillance des issues (portes, fenêtres…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00027",
+                  "3) Règles de sécurité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Retirer tout objet utilisable comme arme (ciseaux, presse-livres, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00028",
+                  "Prévenir toute évasion : surveillance des issues (portes, fenêtres…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes de service : hors de la vue et hors d’atteinte du suspect.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00029",
+                  "Retirer tout objet utilisable comme arme (ciseaux, presse-livres, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Individu dangereux : menottage et/ou surveillance rapprochée par un fonctionnaire prêt à intervenir.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00030",
+                  "Armes de service : hors de la vue et hors d’atteinte du suspect.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00031",
+                  "Individu dangereux : menottage et/ou surveillance rapprochée par un fonctionnaire prêt à intervenir.",
+                ),
               ),
             ],
           ),
@@ -212,44 +342,102 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
 
           // II. Pendant l'audition
           _ConditionCard(
-            title: "II — Pendant l’audition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+              "f00032",
+              "II — Pendant l’audition",
+            ),
             cardColor: cardConduite,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Généralités"),
-              _BulletPoint(
-                text:
-                    "Rester neutre et objectif : maintenir un climat de confiance, orienté vers la manifestation de la vérité.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00033",
+                  "A) Généralités",
+                ),
               ),
-              _BulletPoint(text: "Ne rien révéler des éléments de l’enquête."),
               _BulletPoint(
-                text:
-                    "Mettre en évidence les contradictions qui apparaissent pendant l’entretien.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00034",
+                  "Rester neutre et objectif : maintenir un climat de confiance, orienté vers la manifestation de la vérité.",
+                ),
               ),
-              _BulletPoint(text: "Éviter les questions suggestives."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00035",
+                  "Ne rien révéler des éléments de l’enquête.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00036",
+                  "Mettre en évidence les contradictions qui apparaissent pendant l’entretien.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00037",
+                  "Éviter les questions suggestives.",
+                ),
+              ),
               SizedBox(height: 12),
-              _SubTitle("Le PV d’audition doit faire ressortir"),
-              _BulletPoint(
-                text:
-                    "Les actes matériels correspondant aux éléments constitutifs de l’infraction et aux circonstances aggravantes éventuelles.",
-              ),
-              _BulletPoint(text: "L’intention coupable (élément moral)."),
-              _BulletPoint(text: "Le mobile."),
-              _BulletPoint(
-                text:
-                    "Les circonstances susceptibles d’excuser ou de justifier l’acte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00038",
+                  "Le PV d’audition doit faire ressortir",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le rôle de la personne interrogée et celui des éventuels coauteurs/complices.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00039",
+                  "Les actes matériels correspondant aux éléments constitutifs de l’infraction et aux circonstances aggravantes éventuelles.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00040",
+                  "L’intention coupable (élément moral).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00041",
+                  "Le mobile.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00042",
+                  "Les circonstances susceptibles d’excuser ou de justifier l’acte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00043",
+                  "Le rôle de la personne interrogée et celui des éventuels coauteurs/complices.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les déclarations doivent être très circonstanciées et être corroborées par le travail d’enquête (avant ou après audition).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                      "f00044",
+                      "Les déclarations doivent être très circonstanciées et être corroborées par le travail d’enquête (avant ou après audition).",
+                    ),
                   ),
                 ],
               ),
@@ -260,38 +448,66 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
 
           // Mineur suspecté
           _ConditionCard(
-            title: "B — Le mineur suspecté",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+              "f00045",
+              "B — Le mineur suspecté",
+            ),
             cardColor: cardPrep,
             accent: accentGreen,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Le mineur suspecté (retenu, gardé à vue ou entendu librement) peut être accompagné par ses représentants légaux ou par un adulte approprié ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00046",
+                    "Le mineur suspecté (retenu, gardé à vue ou entendu librement) peut être accompagné par ses représentants légaux ou par un adulte approprié ",
+                  ),
                 ),
-                _law("(article L. 311-1 du CJPM)"),
-                const TextSpan(
-                  text:
-                      ", si l’enquêteur estime que c’est conforme à l’intérêt supérieur de l’enfant et que cela ne porte pas préjudice à la procédure.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00047",
+                    "(article L. 311-1 du CJPM)",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00048",
+                    ", si l’enquêteur estime que c’est conforme à l’intérêt supérieur de l’enfant et que cela ne porte pas préjudice à la procédure.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "L’audition peut débuter sans ces personnes après un délai de 2 heures à compter du moment où elles ont été invitées.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00049",
+                  "L’audition peut débuter sans ces personnes après un délai de 2 heures à compter du moment où elles ont été invitées.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Leur présence (ou absence) doit être mentionnée au procès-verbal.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00050",
+                  "Leur présence (ou absence) doit être mentionnée au procès-verbal.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Elles ne posent pas de questions et ne formulent pas d’observations.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00051",
+                  "Elles ne posent pas de questions et ne formulent pas d’observations.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Si elles gênent, mettre fin à l’accompagnement en le mentionnant dans le PV.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00052",
+                  "Si elles gênent, mettre fin à l’accompagnement en le mentionnant dans le PV.",
+                ),
               ),
             ],
           ),
@@ -300,58 +516,107 @@ class AuditionSuspectGeneralitesPage extends StatelessWidget {
 
           // III. Enregistrement audiovisuel
           _ConditionCard(
-            title: "III — Enregistrement audiovisuel des interrogatoires",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+              "f00053",
+              "III — Enregistrement audiovisuel des interrogatoires",
+            ),
             cardColor: cardEnreg,
             accent: accentAmber,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Mineurs en garde à vue / retenue"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Les interrogatoires des mineurs placés en garde à vue ou en retenue font obligatoirement l’objet d’un enregistrement audiovisuel ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00054",
+                  "A) Mineurs en garde à vue / retenue",
                 ),
-                _law("(article L. 413-12 du CJPM)"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00055",
+                    "Les interrogatoires des mineurs placés en garde à vue ou en retenue font obligatoirement l’objet d’un enregistrement audiovisuel ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00056",
+                    "(article L. 413-12 du CJPM)",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Enregistrement systématique, quel que soit le cadre d’enquête.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00057",
+                  "Enregistrement systématique, quel que soit le cadre d’enquête.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le mineur (ou son représentant légal) n’a pas à être informé et aucun accord n’est requis.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00058",
+                  "Le mineur (ou son représentant légal) n’a pas à être informé et aucun accord n’est requis.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si impossibilité technique : aviser immédiatement le procureur de la République ou le juge d’instruction, et préciser la nature de l’impossibilité dans le PV.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                      "f00059",
+                      "Si impossibilité technique : aviser immédiatement le procureur de la République ou le juge d’instruction, et préciser la nature de l’impossibilité dans le PV.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Majeurs en garde à vue – matière criminelle"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Les interrogatoires des personnes placées en garde à vue pour crime font obligatoirement l’objet d’un enregistrement audiovisuel ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00060",
+                  "B) Majeurs en garde à vue – matière criminelle",
                 ),
-                _law("(article 64-1 du Code de procédure pénale)"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00061",
+                    "Les interrogatoires des personnes placées en garde à vue pour crime font obligatoirement l’objet d’un enregistrement audiovisuel ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00062",
+                    "(article 64-1 du Code de procédure pénale)",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Dérogation possible si le nombre de GAV simultanées empêche l’enregistrement : l’OPJ saisit sans délai le procureur, qui désigne par décision écrite versée au dossier les auditions non enregistrées.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00063",
+                  "Dérogation possible si le nombre de GAV simultanées empêche l’enregistrement : l’OPJ saisit sans délai le procureur, qui désigne par décision écrite versée au dossier les auditions non enregistrées.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Dérogation possible en cas d’impossibilité technique : procureur immédiatement avisé + PV précisant la nature de l’impossibilité.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00064",
+                  "Dérogation possible en cas d’impossibilité technique : procureur immédiatement avisé + PV précisant la nature de l’impossibilité.",
+                ),
               ),
             ],
           ),
@@ -607,9 +872,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -674,8 +937,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+        "f00065",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+        "f00066",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -848,7 +1119,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                    "f00067",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -917,7 +1192,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart",
+                  "f00068",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -945,7 +1224,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -980,7 +1261,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

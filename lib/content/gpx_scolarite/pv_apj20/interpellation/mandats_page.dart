@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MandatsPage extends StatelessWidget {
   const MandatsPage({super.key});
@@ -43,10 +44,18 @@ class MandatsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV APJ 20",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+            "f00002",
+            "PV APJ 20",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -61,7 +70,11 @@ class MandatsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les mandats (schémas + points clés)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00003",
+              "Les mandats (schémas + points clés)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -72,22 +85,35 @@ class MandatsPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "À retenir",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00004",
+              "À retenir",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Un mandat = acte d’autorité (souvent magistrat) visant une personne déterminée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00005",
+                  "Un mandat = acte d’autorité (souvent magistrat) visant une personne déterminée.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Certains mandats permettent la coercition (contrainte), d’autres non.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00006",
+                  "Certains mandats permettent la coercition (contrainte), d’autres non.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Quand il est exécuté : notification / exhibition du mandat / remise d’une copie (selon le mandat).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00007",
+                  "Quand il est exécuté : notification / exhibition du mandat / remise d’une copie (selon le mandat).",
+                ),
               ),
             ],
           ),
@@ -96,7 +122,11 @@ class MandatsPage extends StatelessWidget {
 
           // ✅ Schémas (zoomables)
           _ConditionCard(
-            title: "Schémas (zoom)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00008",
+              "Schémas (zoom)",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
@@ -105,7 +135,7 @@ class MandatsPage extends StatelessWidget {
                 builder: (context, constraints) {
                   const double gap = 12;
                   final double itemWidth = (constraints.maxWidth - gap) / 2;
-                  return const Wrap(
+                  return Wrap(
                     spacing: gap,
                     runSpacing: gap,
                     children: [
@@ -113,35 +143,55 @@ class MandatsPage extends StatelessWidget {
                         width: 220,
                         child: _ZoomableAssetImage(
                           assetPath: 'assets/images/mandant_recherche.png',
-                          label: 'Mandat de recherche',
+                          label: ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                            "f00009",
+                            'Mandat de recherche',
+                          ),
                         ),
                       ),
                       SizedBox(
                         width: 220,
                         child: _ZoomableAssetImage(
                           assetPath: 'assets/images/mandat_comparution.png',
-                          label: 'Mandat de comparution',
+                          label: ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                            "f00010",
+                            'Mandat de comparution',
+                          ),
                         ),
                       ),
                       SizedBox(
                         width: 220,
                         child: _ZoomableAssetImage(
                           assetPath: 'assets/images/mandat-damener.png',
-                          label: 'Mandat d’amener',
+                          label: ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                            "f00011",
+                            'Mandat d’amener',
+                          ),
                         ),
                       ),
                       SizedBox(
                         width: 220,
                         child: _ZoomableAssetImage(
                           assetPath: 'assets/images/madant_darret.png',
-                          label: 'Mandat d’arrêt',
+                          label: ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                            "f00012",
+                            'Mandat d’arrêt',
+                          ),
                         ),
                       ),
                       SizedBox(
                         width: 220,
                         child: _ZoomableAssetImage(
                           assetPath: 'assets/images/mandat_darret_europeen.png',
-                          label: 'Mandat d’arrêt européen',
+                          label: ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                            "f00013",
+                            'Mandat d’arrêt européen',
+                          ),
                         ),
                       ),
                     ],
@@ -157,51 +207,87 @@ class MandatsPage extends StatelessWidget {
           // 1) Mandat de recherche
           // =========================
           _ConditionCard(
-            title: "1 — Mandat de recherche",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00014",
+              "1 — Mandat de recherche",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 122 alinéa 2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00015",
+                    "Article 122 alinéa 2 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : ordre donné à la force publique (par un magistrat).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00016",
+                    " : ordre donné à la force publique (par un magistrat).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _SubTitle("Objet"),
               _BulletPoint(
-                text: "Rechercher la personne visée par le mandat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00017",
+                  "Rechercher la personne visée par le mandat.",
+                ),
               ),
               _BulletPoint(
-                text: "La placer en garde à vue après découverte (par O.P.J.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00018",
+                  "La placer en garde à vue après découverte (par O.P.J.).",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Coercition"),
-              _BulletPoint(text: "Coercition possible."),
               _BulletPoint(
-                text:
-                    "Introduction au domicile possible pendant les heures légales.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00019",
+                  "Coercition possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00020",
+                  "Introduction au domicile possible pendant les heures légales.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exécution / formalités : notification et exécution par ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00021",
+                      "Exécution / formalités : notification et exécution par ",
+                    ),
                   ),
                   TextSpan(
-                    text: "O.P.J., A.P.J. ou agent de la force publique",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00022",
+                      "O.P.J., A.P.J. ou agent de la force publique",
+                    ),
                   ),
                   TextSpan(
-                    text: ", exhibition du mandat et remise d’une copie.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00023",
+                      ", exhibition du mandat et remise d’une copie.",
+                    ),
                   ),
                 ],
               ),
@@ -214,40 +300,88 @@ class MandatsPage extends StatelessWidget {
           // 2) Mandat de comparution
           // =========================
           _ConditionCard(
-            title: "2 — Mandat de comparution",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00024",
+              "2 — Mandat de comparution",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 122 alinéa 4 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00025",
+                    "Article 122 alinéa 4 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00026",
+                    " : simple assignation à comparaître.",
                   ),
                 ),
-                TextSpan(text: " : simple assignation à comparaître."),
               ]),
               SizedBox(height: 10),
               _SubTitle("Objet"),
               _BulletPoint(
-                text:
-                    "Mettre en demeure la personne de se présenter à la date et l’heure indiquées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00027",
+                  "Mettre en demeure la personne de se présenter à la date et l’heure indiquées.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Coercition"),
-              _BulletPoint(text: "Pas de coercition."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00028",
+                  "Pas de coercition.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Signification / notification : "),
-                  TextSpan(text: "par huissier"),
-                  TextSpan(text: " ou notifié par "),
                   TextSpan(
-                    text: "O.P.J., A.P.J. ou agent de la force publique",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00029",
+                      "Signification / notification : ",
+                    ),
                   ),
-                  TextSpan(text: ", avec remise d’une copie."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00030",
+                      "par huissier",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00031",
+                      " ou notifié par ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00032",
+                      "O.P.J., A.P.J. ou agent de la force publique",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00033",
+                      ", avec remise d’une copie.",
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -259,57 +393,102 @@ class MandatsPage extends StatelessWidget {
           // 3) Mandat d’amener
           // =========================
           _ConditionCard(
-            title: "3 — Mandat d’amener",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00034",
+              "3 — Mandat d’amener",
+            ),
             cardColor: cardFocus,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 122 alinéa 5 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00035",
+                    "Article 122 alinéa 5 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : ordre donné à la force publique (par un magistrat).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00036",
+                    " : ordre donné à la force publique (par un magistrat).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _SubTitle("Objet"),
               _BulletPoint(
-                text: "Conduire immédiatement la personne devant le magistrat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00037",
+                  "Conduire immédiatement la personne devant le magistrat.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Coercition"),
-              _BulletPoint(text: "Coercition possible."),
               _BulletPoint(
-                text:
-                    "Introduction au domicile possible pendant les heures légales.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00038",
+                  "Coercition possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00039",
+                  "Introduction au domicile possible pendant les heures légales.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Délais / distance"),
-              _BulletPoint(
-                text:
-                    "Exécution à 200 km au plus : présentation immédiate au magistrat mandant OU rétention 24 h maximum.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00040",
+                  "Délais / distance",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exécution à plus de 200 km : présentation dans les 24 h au magistrat mandant OU au J.L.D. du lieu d’arrestation si conduite impossible dans les 24 h.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00041",
+                  "Exécution à 200 km au plus : présentation immédiate au magistrat mandant OU rétention 24 h maximum.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00042",
+                  "Exécution à plus de 200 km : présentation dans les 24 h au magistrat mandant OU au J.L.D. du lieu d’arrestation si conduite impossible dans les 24 h.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Formalités : notification/exécution par ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00043",
+                      "Formalités : notification/exécution par ",
+                    ),
                   ),
                   TextSpan(
-                    text: "O.P.J., A.P.J. ou agent de la force publique",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00044",
+                      "O.P.J., A.P.J. ou agent de la force publique",
+                    ),
                   ),
                   TextSpan(
-                    text: ", exhibition du mandat + remise d’une copie.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00045",
+                      ", exhibition du mandat + remise d’une copie.",
+                    ),
                   ),
                 ],
               ),
@@ -322,62 +501,109 @@ class MandatsPage extends StatelessWidget {
           // 4) Mandat d’arrêt
           // =========================
           _ConditionCard(
-            title: "4 — Mandat d’arrêt",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00046",
+              "4 — Mandat d’arrêt",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 122 alinéa 6 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00047",
+                    "Article 122 alinéa 6 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : ordre donné à la force publique (par un magistrat).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00048",
+                    " : ordre donné à la force publique (par un magistrat).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _SubTitle("Objet"),
               _BulletPoint(
-                text:
-                    "Rechercher la personne (notamment en fuite / pouvant résider hors du territoire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00049",
+                  "Rechercher la personne (notamment en fuite / pouvant résider hors du territoire).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La conduire devant le magistrat (avec possible conduite préalable à la maison d’arrêt indiquée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00050",
+                  "La conduire devant le magistrat (avec possible conduite préalable à la maison d’arrêt indiquée).",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Coercition"),
-              _BulletPoint(text: "Coercition possible."),
               _BulletPoint(
-                text:
-                    "Introduction au domicile possible pendant les heures légales.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00051",
+                  "Coercition possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00052",
+                  "Introduction au domicile possible pendant les heures légales.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Délais / distance"),
-              _BulletPoint(
-                text:
-                    "Exécution à 200 km au plus : présentation dans les 24 h au JI mandant OU président du tribunal judiciaire / juge désigné.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00053",
+                  "Délais / distance",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exécution à plus de 200 km : présentation dans les 24 h au magistrat mandant OU au J.L.D. du lieu d’arrestation si conduite impossible dans les 24 h.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00054",
+                  "Exécution à 200 km au plus : présentation dans les 24 h au JI mandant OU président du tribunal judiciaire / juge désigné.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00055",
+                  "Exécution à plus de 200 km : présentation dans les 24 h au magistrat mandant OU au J.L.D. du lieu d’arrestation si conduite impossible dans les 24 h.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Formalités : notification/exécution par ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00056",
+                      "Formalités : notification/exécution par ",
+                    ),
                   ),
                   TextSpan(
-                    text: "O.P.J., A.P.J. ou agent de la force publique",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00057",
+                      "O.P.J., A.P.J. ou agent de la force publique",
+                    ),
                   ),
                   TextSpan(
-                    text: ", exhibition du mandat + remise d’une copie.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00058",
+                      ", exhibition du mandat + remise d’une copie.",
+                    ),
                   ),
                 ],
               ),
@@ -390,43 +616,79 @@ class MandatsPage extends StatelessWidget {
           // 5) Mandat d’arrêt européen
           // =========================
           _ConditionCard(
-            title: "5 — Mandat d’arrêt européen",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+              "f00059",
+              "5 — Mandat d’arrêt européen",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 695-11 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00060",
+                    "Article 695-11 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                    "f00061",
+                    " : MAE (mandat d’arrêt européen).",
                   ),
                 ),
-                TextSpan(text: " : MAE (mandat d’arrêt européen)."),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Point de départ"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00062",
+                  "Point de départ",
+                ),
+              ),
               _BulletPoint(
-                text: "Mandat d’arrêt OU décision de condamnation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00063",
+                  "Mandat d’arrêt OU décision de condamnation.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Deux situations"),
-              _BulletPoint(
-                text:
-                    "Personne localisée : acceptation de l’État → mandat adressé à l’autorité judiciaire d’exécution.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00064",
+                  "Deux situations",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Personne non localisée : signalement diffusé (SIS-Schengen) et via Interpol.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00065",
+                  "Personne localisée : acceptation de l’État → mandat adressé à l’autorité judiciaire d’exécution.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                  "f00066",
+                  "Personne non localisée : signalement diffusé (SIS-Schengen) et via Interpol.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "But",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Permet la recherche et l’arrestation dans un cadre européen, avec un circuit d’exécution judiciaire.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                      "f00067",
+                      "Permet la recherche et l’arrestation dans un cadre européen, avec un circuit d’exécution judiciaire.",
+                    ),
                   ),
                 ],
               ),
@@ -529,7 +791,11 @@ class _ZoomableAssetImage extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        "Plein écran",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/mandats_page.dart",
+                          "f00069",
+                          "Plein écran",
+                        ),
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w800,
                           fontSize: 12.5,

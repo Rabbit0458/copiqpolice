@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaCaractereRacistePage extends StatelessWidget {
   const PaCaractereRacistePage({super.key});
@@ -44,7 +45,11 @@ class PaCaractereRacistePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Le caractère raciste',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+            "f00001",
+            'Le caractère raciste',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,23 +75,39 @@ class PaCaractereRacistePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(
                       text:
-                          "« Lorsqu’un crime ou un délit est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature "
-                          "qui soit portent atteinte à l’honneur ou à la considération de la victime ou d’un groupe de personnes dont fait partie la victime "
-                          "à raison de son appartenance ou de sa non-appartenance, vraie ou supposée, à une prétendue race, une ethnie, une nation ou "
-                          "une religion déterminée, soit établissent que les faits ont été commis contre la victime pour l’une de ces raisons. »",
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00002",
+                            "« Lorsqu’un crime ou un délit est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00003",
+                            "qui soit portent atteinte à l’honneur ou à la considération de la victime ou d’un groupe de personnes dont fait partie la victime ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00004",
+                            "à raison de son appartenance ou de sa non-appartenance, vraie ou supposée, à une prétendue race, une ethnie, une nation ou ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00005",
+                            "une religion déterminée, soit établissent que les faits ont été commis contre la victime pour l’une de ces raisons. »",
+                          ),
                     ),
                   ]),
                 ),
@@ -95,21 +116,38 @@ class PaCaractereRacistePage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                    "f00006",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      law("L’article 132-76 du C.P."),
-                      const TextSpan(
-                        text:
-                            " définit le caractère raciste d’une infraction. Il prévoit une aggravation systématique des peines.",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00007",
+                          "L’article 132-76 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00008",
+                          " définit le caractère raciste d’une infraction. Il prévoit une aggravation systématique des peines.",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00009",
+                        "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -118,145 +156,333 @@ class PaCaractereRacistePage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                    "f00010",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "Un crime ou un délit est aggravé dès lors qu’il est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature qui :",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00011",
+                        "Un crime ou un délit est aggravé dès lors qu’il est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature qui :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
-                    const _BulletPoint(
+                    _BulletPoint(
                       text:
-                          "soit portent atteinte à l’honneur ou à la considération de la victime à raison de son appartenance ou de sa non-appartenance, "
-                          "vraie ou supposée, à une prétendue race, à une ethnie, une nation ou une religion déterminée.",
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00012",
+                            "soit portent atteinte à l’honneur ou à la considération de la victime à raison de son appartenance ou de sa non-appartenance, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00013",
+                            "vraie ou supposée, à une prétendue race, à une ethnie, une nation ou une religion déterminée.",
+                          ),
                     ),
-                    const _Paragraph(
-                      "L’aggravation résulte de circonstances objectives, que la personne ait agi ou non pour des motifs discriminatoires.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00014",
+                        "L’aggravation résulte de circonstances objectives, que la personne ait agi ou non pour des motifs discriminatoires.",
+                      ),
                     ),
                     const SizedBox(height: 8),
-                    const _BulletPoint(
-                      text:
-                          "soit établissent que les faits ont été commis contre la victime pour l’une de ces raisons.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00015",
+                        "soit établissent que les faits ont été commis contre la victime pour l’une de ces raisons.",
+                      ),
                     ),
                     const SizedBox(height: 8),
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            "L’aggravation est possible même si ces éléments de fait ne portent pas atteinte à l’honneur ou à la considération de la victime, "
-                            "dès lors qu’ils démontrent l’intention discriminatoire de leur auteur (exemple : choix des victimes revendiqué avant les faits) (",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00016",
+                              "L’aggravation est possible même si ces éléments de fait ne portent pas atteinte à l’honneur ou à la considération de la victime, ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00017",
+                              "dès lors qu’ils démontrent l’intention discriminatoire de leur auteur (exemple : choix des victimes revendiqué avant les faits) (",
+                            ),
                       ),
-                      law("circulaire JUSD1712060C du 20 avril 2017"),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00018",
+                          "circulaire JUSD1712060C du 20 avril 2017",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
 
                     const SizedBox(height: 12),
-                    const _SubTitle(
-                      "2.1 - L’appartenance de la victime à une catégorie",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00019",
+                        "2.1 - L’appartenance de la victime à une catégorie",
+                      ),
                     ),
                     _Paragraph.rich([
-                      law("L’article 132-76"),
-                      const TextSpan(text: " vise quatre catégories :"),
-                    ]),
-                    const SizedBox(height: 10),
-
-                    const _SubTitle("2.1.1 - L’ethnie"),
-                    const _Paragraph.rich([
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00020",
+                          "L’article 132-76",
+                        ),
+                      ),
                       TextSpan(
-                        text:
-                            "Définition Larousse : « Groupement humain qui possède une structure familiale, économique et sociale homogène, et dont l’unité repose "
-                            "sur une communauté de langue, de culture et de conscience de groupe. »",
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00021",
+                          " vise quatre catégories :",
+                        ),
                       ),
                     ]),
-
                     const SizedBox(height: 10),
-                    const _SubTitle("2.1.2 - La nation"),
-                    const _Paragraph.rich([
-                      TextSpan(
-                        text:
-                            "Définition Larousse : « Ensemble des êtres humains vivant dans un même territoire, ayant une communauté d’origine, d’histoire, de culture, "
-                            "de traditions, parfois de langue, et constituant une communauté politique. »",
+
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00022",
+                        "2.1.1 - L’ethnie",
                       ),
-                    ]),
-
-                    const SizedBox(height: 10),
-                    const _SubTitle("2.1.3 - La prétendue race"),
-                    const _Paragraph.rich([
-                      TextSpan(
-                        text:
-                            "Définition Larousse : « Catégorie de classement de l’espèce humaine selon des critères morphologiques ou culturels, sans aucune base scientifique "
-                            "et dont l’emploi est au fondement des divers racismes et de leurs pratiques. »",
-                      ),
-                    ]),
-
-                    const SizedBox(height: 10),
-                    const _SubTitle("2.1.4 - La religion"),
+                    ),
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            "Définition Larousse : « Ensemble déterminé de croyances et de dogmes définissant le rapport de l’homme avec le sacré. »\n\n",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00023",
+                              "Définition Larousse : « Groupement humain qui possède une structure familiale, économique et sociale homogène, et dont l’unité repose ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00024",
+                              "sur une communauté de langue, de culture et de conscience de groupe. »",
+                            ),
                       ),
-                      const TextSpan(
-                        text: "« Une secte ne constitue pas une religion » (",
+                    ]),
+
+                    const SizedBox(height: 10),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00025",
+                        "2.1.2 - La nation",
                       ),
-                      law("C.A. Paris, 25 mars 1996"),
+                    ),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text:
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00026",
+                              "Définition Larousse : « Ensemble des êtres humains vivant dans un même territoire, ayant une communauté d’origine, d’histoire, de culture, ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00027",
+                              "de traditions, parfois de langue, et constituant une communauté politique. »",
+                            ),
+                      ),
+                    ]),
+
+                    const SizedBox(height: 10),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00028",
+                        "2.1.3 - La prétendue race",
+                      ),
+                    ),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text:
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00029",
+                              "Définition Larousse : « Catégorie de classement de l’espèce humaine selon des critères morphologiques ou culturels, sans aucune base scientifique ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00030",
+                              "et dont l’emploi est au fondement des divers racismes et de leurs pratiques. »",
+                            ),
+                      ),
+                    ]),
+
+                    const SizedBox(height: 10),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00031",
+                        "2.1.4 - La religion",
+                      ),
+                    ),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00032",
+                          "Définition Larousse : « Ensemble déterminé de croyances et de dogmes définissant le rapport de l’homme avec le sacré. »\n\n",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00033",
+                          "« Une secte ne constitue pas une religion » (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00034",
+                          "C.A. Paris, 25 mars 1996",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
 
                     const SizedBox(height: 12),
-                    const _SubTitle(
-                      "2.2 - La matérialisation du mobile de l’auteur",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00035",
+                        "2.2 - La matérialisation du mobile de l’auteur",
+                      ),
                     ),
-                    const _Paragraph(
-                      "Ce sont les éléments objectifs tirés de la procédure qui permettront la mise en évidence et la constatation de cette circonstance aggravante.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00036",
+                        "Ce sont les éléments objectifs tirés de la procédure qui permettront la mise en évidence et la constatation de cette circonstance aggravante.",
+                      ),
                     ),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Le mobile raciste, xénophobe ou antisémite de l’auteur peut se matérialiser par des actes portant atteinte à l’honneur ou à la considération de la victime :",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00037",
+                        "Le mobile raciste, xénophobe ou antisémite de l’auteur peut se matérialiser par des actes portant atteinte à l’honneur ou à la considération de la victime :",
+                      ),
                     ),
                     const SizedBox(height: 8),
-                    const _BulletPoint(
-                      text: "Des propos (conversations, cris, injures, etc.).",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00038",
+                        "Des propos (conversations, cris, injures, etc.).",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "Des écrits (lettres, graffitis, inscriptions, etc.).",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00039",
+                        "Des écrits (lettres, graffitis, inscriptions, etc.).",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text: "Des images (dessins, croquis, affiches, etc.).",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00040",
+                        "Des images (dessins, croquis, affiches, etc.).",
+                      ),
                     ),
-                    const _BulletPoint(text: "Des objets."),
-                    const _BulletPoint(text: "Des actes de toute nature."),
-                    const _BulletPoint(
-                      text:
-                          "Un groupe de personnes dont fait partie la victime.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00041",
+                        "Des objets.",
+                      ),
+                    ),
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00042",
+                        "Des actes de toute nature.",
+                      ),
+                    ),
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00043",
+                        "Un groupe de personnes dont fait partie la victime.",
+                      ),
                     ),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Il s’agit de permettre de prendre en compte des comportements et actes racistes, xénophobes ou antisémites de l’auteur. "
-                      "Ces agissements ne visent pas nécessairement spécifiquement la victime mais conditionnent la commission de l’infraction principale.",
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00044",
+                            "Il s’agit de permettre de prendre en compte des comportements et actes racistes, xénophobes ou antisémites de l’auteur. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                            "f00045",
+                            "Ces agissements ne visent pas nécessairement spécifiquement la victime mais conditionnent la commission de l’infraction principale.",
+                          ),
                     ),
 
                     const SizedBox(height: 12),
-                    const _SubTitle("2.3 - Le but poursuivi"),
-                    const _Paragraph(
-                      "L’auteur peut agir pour différentes raisons :",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00046",
+                        "2.3 - Le but poursuivi",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00047",
+                        "L’auteur peut agir pour différentes raisons :",
+                      ),
                     ),
                     const SizedBox(height: 8),
 
-                    const _SubTitle(
-                      "2.3.1 - L’appartenance ou la non-appartenance",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00048",
+                        "2.3.1 - L’appartenance ou la non-appartenance",
+                      ),
                     ),
-                    const _Paragraph(
-                      "L’auteur agit soit parce que la victime fait partie d’une des catégories précitées, soit parce qu’elle n’appartient pas à l’une de ces catégories.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00049",
+                        "L’auteur agit soit parce que la victime fait partie d’une des catégories précitées, soit parce qu’elle n’appartient pas à l’une de ces catégories.",
+                      ),
                     ),
 
                     const SizedBox(height: 10),
-                    const _SubTitle("2.3.2 - L’appartenance vraie ou supposée"),
-                    const _Paragraph(
-                      "Peu importe que l’auteur de l’infraction ait agi à tort, croyant que la victime appartenait ou n’appartenait pas à l’une des catégories.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00050",
+                        "2.3.2 - L’appartenance vraie ou supposée",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00051",
+                        "Peu importe que l’auteur de l’infraction ait agi à tort, croyant que la victime appartenait ou n’appartenait pas à l’une des catégories.",
+                      ),
                     ),
                   ],
                 ),
@@ -265,80 +491,150 @@ class PaCaractereRacistePage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                    "f00052",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      law("L’article 132-76 du C.P."),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                          "f00053",
+                          "L’article 132-76 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            " généralise la circonstance aggravante de racisme. Afin de respecter le principe constitutionnel de légalité des délits et des peines, "
-                            "cette circonstance aggravante générale n’est pas applicable :",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00054",
+                              " généralise la circonstance aggravante de racisme. Afin de respecter le principe constitutionnel de légalité des délits et des peines, ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                              "f00055",
+                              "cette circonstance aggravante générale n’est pas applicable :",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _BulletPoint(
-                      text:
-                          "aux délits de discriminations prévus par le code pénal ;",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00056",
+                        "aux délits de discriminations prévus par le code pénal ;",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "aux délits de provocations, diffamations et injures discriminatoires prévus par la loi du 29 juillet 1881 ;",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00057",
+                        "aux délits de provocations, diffamations et injures discriminatoires prévus par la loi du 29 juillet 1881 ;",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "aux violences volontaires prévues à l’article 222-13 du C.P.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00058",
+                        "aux violences volontaires prévues à l’article 222-13 du C.P.",
+                      ),
                     ),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "En effet, le caractère discriminatoire ne peut être à la fois un élément constitutif de l’infraction et une circonstance aggravante.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00059",
+                        "En effet, le caractère discriminatoire ne peut être à la fois un élément constitutif de l’infraction et une circonstance aggravante.",
+                      ),
                     ),
 
                     const SizedBox(height: 12),
-                    const _SubTitle("Relèvement du maximum de la peine"),
-                    const _Paragraph(
-                      "Le maximum de la peine privative de liberté encourue est relevé ainsi qu’il suit :",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00060",
+                        "Relèvement du maximum de la peine",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00061",
+                        "Le maximum de la peine privative de liberté encourue est relevé ainsi qu’il suit :",
+                      ),
                     ),
                     const SizedBox(height: 8),
 
-                    const _BulletPoint(
-                      text:
-                          "1° Porté à la réclusion criminelle à perpétuité lorsque l’infraction est punie de trente ans de réclusion criminelle.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00062",
+                        "1° Porté à la réclusion criminelle à perpétuité lorsque l’infraction est punie de trente ans de réclusion criminelle.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "2° Porté à trente ans de réclusion criminelle lorsque l’infraction est punie de vingt ans de réclusion criminelle.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00063",
+                        "2° Porté à trente ans de réclusion criminelle lorsque l’infraction est punie de vingt ans de réclusion criminelle.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "3° Porté à vingt ans de réclusion criminelle lorsque l’infraction est punie de quinze ans de réclusion criminelle.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00064",
+                        "3° Porté à vingt ans de réclusion criminelle lorsque l’infraction est punie de quinze ans de réclusion criminelle.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "4° Porté à quinze ans de réclusion criminelle lorsque l’infraction est punie de dix ans d’emprisonnement.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00065",
+                        "4° Porté à quinze ans de réclusion criminelle lorsque l’infraction est punie de dix ans d’emprisonnement.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "5° Porté à dix ans d’emprisonnement lorsque l’infraction est punie de sept ans d’emprisonnement.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00066",
+                        "5° Porté à dix ans d’emprisonnement lorsque l’infraction est punie de sept ans d’emprisonnement.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "6° Porté à sept ans d’emprisonnement lorsque l’infraction est punie de cinq ans d’emprisonnement.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00067",
+                        "6° Porté à sept ans d’emprisonnement lorsque l’infraction est punie de cinq ans d’emprisonnement.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "7° Porté au double lorsque l’infraction est punie de trois ans d’emprisonnement au plus.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                        "f00068",
+                        "7° Porté au double lorsque l’infraction est punie de trois ans d’emprisonnement au plus.",
+                      ),
                     ),
 
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
                           text:
-                              "On ne peut pas cumuler : si le caractère discriminatoire est déjà un élément constitutif de l’infraction, "
-                              "il ne peut pas être repris comme circonstance aggravante.",
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                                "f00069",
+                                "On ne peut pas cumuler : si le caractère discriminatoire est déjà un élément constitutif de l’infraction, ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart",
+                                "f00070",
+                                "il ne peut pas être repris comme circonstance aggravante.",
+                              ),
                         ),
                       ],
                     ),
@@ -602,9 +898,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

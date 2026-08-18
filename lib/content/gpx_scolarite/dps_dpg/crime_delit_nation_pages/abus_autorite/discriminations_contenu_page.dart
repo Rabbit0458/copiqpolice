@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DiscriminationsAbusAutoritePage extends StatelessWidget {
   const DiscriminationsAbusAutoritePage({super.key});
@@ -56,10 +57,18 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Abus d’autorité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+            "f00002",
+            "Abus d’autorité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les discriminations",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+              "f00003",
+              "Les discriminations",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,17 +99,41 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La discrimination définie aux articles 225-1 et 225-1-1, commise par une personne dépositaire de "
-                "l’autorité publique ou chargée d’une mission de service public, dans l’exercice ou à l’occasion de "
-                "l’exercice de ses fonctions ou de sa mission, consiste :\n"
-                "1° À refuser le bénéfice d’un droit accordé par la loi ;\n"
-                "2° À entraver l’exercice normal d’une activité économique quelconque.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00005",
+                      "La discrimination définie aux articles 225-1 et 225-1-1, commise par une personne dépositaire de ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00006",
+                      "l’autorité publique ou chargée d’une mission de service public, dans l’exercice ou à l’occasion de ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00007",
+                      "l’exercice de ses fonctions ou de sa mission, consiste :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00008",
+                      "1° À refuser le bénéfice d’un droit accordé par la loi ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00009",
+                      "2° À entraver l’exercice normal d’une activité économique quelconque.",
+                    ),
               ),
             ],
           ),
@@ -105,30 +142,48 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00011",
+                    "Article 432-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00012",
+                    " : prévoit et réprime l’infraction.",
                   ),
                 ),
-                TextSpan(text: " : prévoit et réprime l’infraction."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Définition de la discrimination : "),
                 TextSpan(
-                  text: "articles 225-1 et 225-1-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00013",
+                    "Définition de la discrimination : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00014",
+                    "articles 225-1 et 225-1-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -139,33 +194,76 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une discrimination"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00016",
+                  "A) Une discrimination",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’une distinction opérée entre les personnes sur des critères prohibés, notamment : origine, sexe, "
-                "situation de famille, grossesse, apparence physique, particulière vulnérabilité économique (apparente ou connue), "
-                "patronyme, lieu de résidence, état de santé, perte d’autonomie, handicap, caractéristiques génétiques, mœurs, "
-                "orientation sexuelle, identité de genre, âge, opinions politiques, activités syndicales, qualité de lanceur d’alerte "
-                "(ou personne en lien), capacité à s’exprimer dans une autre langue que le français, appartenance ou non-appartenance "
-                "(vraie ou supposée) à une ethnie, une Nation, une prétendue race ou une religion déterminée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00017",
+                      "Il s’agit d’une distinction opérée entre les personnes sur des critères prohibés, notamment : origine, sexe, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00018",
+                      "situation de famille, grossesse, apparence physique, particulière vulnérabilité économique (apparente ou connue), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00019",
+                      "patronyme, lieu de résidence, état de santé, perte d’autonomie, handicap, caractéristiques génétiques, mœurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00020",
+                      "orientation sexuelle, identité de genre, âge, opinions politiques, activités syndicales, qualité de lanceur d’alerte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00021",
+                      "(ou personne en lien), capacité à s’exprimer dans une autre langue que le français, appartenance ou non-appartenance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00022",
+                      "(vraie ou supposée) à une ethnie, une Nation, une prétendue race ou une religion déterminée.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Est aussi visée la distinction opérée parce qu’une personne a subi ou refusé de subir des faits de harcèlement sexuel, "
-                      "ou a témoigné de tels faits, au sens de ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                        "f00023",
+                        "Est aussi visée la distinction opérée parce qu’une personne a subi ou refusé de subir des faits de harcèlement sexuel, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                        "f00024",
+                        "ou a témoigné de tels faits, au sens de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’article 222-33 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00025",
+                    "l’article 222-33 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -173,72 +271,186 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Commise par une personne exerçant une fonction publique",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00026",
+                  "B) Commise par une personne exerçant une fonction publique",
+                ),
               ),
-              _SubTitle("1) Dépositaire de l’autorité publique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00027",
+                  "1) Dépositaire de l’autorité publique",
+                ),
+              ),
               _Paragraph(
-                "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle "
-                "d’autorité publique conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou "
-                "ministériel, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00028",
+                      "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00029",
+                      "d’autorité publique conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00030",
+                      "ministériel, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, commissaires-priseurs, "
-                "fonctionnaires des eaux et forêts. Certains exécutifs locaux et élus (maires, présidents d’intercommunalités, "
-                "conseils départementaux et régionaux, adjoints/élus délégués selon leurs attributions) peuvent également être concernés.",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("2) Chargé d’une mission de service public"),
-              _Paragraph(
-                "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement "
-                "ou sur réquisition, un service public quelconque. Il réalise ou participe à une mission d’intérêt général sans "
-                "pouvoir de décision ou de commandement.",
-              ),
-              SizedBox(height: 10),
-              _Paragraph(
-                "Les élus locaux qui ne se voient confier par délégation aucune prérogative de puissance publique, ainsi que les "
-                "parlementaires, peuvent relever de cette catégorie.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00031",
+                      "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, commissaires-priseurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00032",
+                      "fonctionnaires des eaux et forêts. Certains exécutifs locaux et élus (maires, présidents d’intercommunalités, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00033",
+                      "conseils départementaux et régionaux, adjoints/élus délégués selon leurs attributions) peuvent également être concernés.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Dans l’exercice ou à l’occasion des fonctions / mission",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00034",
+                  "2) Chargé d’une mission de service public",
+                ),
               ),
               _Paragraph(
-                "L’auteur doit agir dans le cadre de ses attributions : l’incrimination vise l’abus lié à la fonction. "
-                "Un agent agissant totalement en dehors de sa mission n’entre pas dans le champ de cette qualification.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00035",
+                      "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00036",
+                      "ou sur réquisition, un service public quelconque. Il réalise ou participe à une mission d’intérêt général sans ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00037",
+                      "pouvoir de décision ou de commandement.",
+                    ),
+              ),
+              SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00038",
+                      "Les élus locaux qui ne se voient confier par délégation aucune prérogative de puissance publique, ainsi que les ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00039",
+                      "parlementaires, peuvent relever de cette catégorie.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) L’objet de la discrimination (2 formes)"),
-
               _SubTitle(
-                "1) Refuser le bénéfice d’un droit accordé par la loi",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00040",
+                  "C) Dans l’exercice ou à l’occasion des fonctions / mission",
+                ),
               ),
               _Paragraph(
-                "Le terme « loi » s’entend largement : toute règle de portée générale et impersonnelle. "
-                "Le droit doit être prévu par un texte (libertés publiques, prestation sociale, document administratif, "
-                "bien/service, inscription à un concours, mutation, congé, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00041",
+                      "L’auteur doit agir dans le cadre de ses attributions : l’incrimination vise l’abus lié à la fonction. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00042",
+                      "Un agent agissant totalement en dehors de sa mission n’entre pas dans le champ de cette qualification.",
+                    ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00043",
+                  "D) L’objet de la discrimination (2 formes)",
+                ),
+              ),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00044",
+                  "1) Refuser le bénéfice d’un droit accordé par la loi",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00045",
+                      "Le terme « loi » s’entend largement : toute règle de portée générale et impersonnelle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00046",
+                      "Le droit doit être prévu par un texte (libertés publiques, prestation sociale, document administratif, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00047",
+                      "bien/service, inscription à un concours, mutation, congé, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ne constitue pas un « droit » la simple liberté d’appréciation laissée à la discrétion d’un fonctionnaire "
-                "(ex. attribution d’une distinction).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00048",
+                      "Ne constitue pas un « droit » la simple liberté d’appréciation laissée à la discrétion d’un fonctionnaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00049",
+                      "(ex. attribution d’une distinction).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Jurisprudence : l’exercice d’un droit de préemption, même abusif, ne constitue pas un refus du bénéfice d’un droit accordé par la loi "
-                        "au sens de la discrimination commise par une personne dépositaire de l’autorité publique. ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                          "f00050",
+                          "Jurisprudence : l’exercice d’un droit de préemption, même abusif, ne constitue pas un refus du bénéfice d’un droit accordé par la loi ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                          "f00051",
+                          "au sens de la discrimination commise par une personne dépositaire de l’autorité publique. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 17 juin 2008)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00052",
+                      "(Cass. crim., 17 juin 2008)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -251,19 +463,45 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "2) Entraver l’exercice d’une activité économique",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00053",
+                  "2) Entraver l’exercice d’une activité économique",
+                ),
               ),
               _Paragraph(
-                "L’entrave consiste à rendre plus difficile l’exercice d’une activité économique quelconque. "
-                "Peuvent notamment constituer une entrave : tracasseries administratives, dénigrement, pressions auprès des fournisseurs, etc.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00054",
+                      "L’entrave consiste à rendre plus difficile l’exercice d’une activité économique quelconque. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00055",
+                      "Peuvent notamment constituer une entrave : tracasseries administratives, dénigrement, pressions auprès des fournisseurs, etc.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("E) Une victime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00056",
+                  "E) Une victime",
+                ),
+              ),
               _Paragraph(
-                "Les agissements discriminatoires sont répréhensibles qu’ils soient commis au détriment d’une personne physique "
-                "ou des membres d’une personne morale.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00057",
+                      "Les agissements discriminatoires sont répréhensibles qu’ils soient commis au détriment d’une personne physique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00058",
+                      "ou des membres d’une personne morale.",
+                    ),
               ),
             ],
           ),
@@ -272,15 +510,33 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+              "f00059",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Existence d’une volonté discriminatoire"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00060",
+                  "Existence d’une volonté discriminatoire",
+                ),
+              ),
               _Paragraph(
-                "Elle se caractérise par la conscience de se livrer à des agissements discriminatoires : "
-                "l’auteur sait qu’il opère une distinction prohibée et qu’il refuse un droit / entrave une activité pour ce motif.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00061",
+                      "Elle se caractérise par la conscience de se livrer à des agissements discriminatoires : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                      "f00062",
+                      "l’auteur sait qu’il opère une distinction prohibée et qu’il refuse un droit / entrave une activité pour ce motif.",
+                    ),
               ),
             ],
           ),
@@ -289,12 +545,22 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+              "f00063",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante n’est prévue."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00064",
+                  "Aucune circonstance aggravante n’est prévue.",
+                ),
+              ),
             ],
           ),
 
@@ -302,23 +568,44 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+              "f00065",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00066",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit — "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00067",
+                    "Délit — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 432-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00068",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00069",
+                    "article 432-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -329,47 +616,89 @@ class DiscriminationsAbusAutoritePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La répression est écartée lorsqu’un texte autorise certains agissements. Exemple : la loi du 7 juin 1977 prévoit que le délit de discrimination "
-                        "n’est pas constitué lorsque les agissements sont conformes aux directives prises par le gouvernement dans sa politique économique ou commerciale "
-                        "ou en application de ses engagements internationaux.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                          "f00070",
+                          "La répression est écartée lorsqu’un texte autorise certains agissements. Exemple : la loi du 7 juin 1977 prévoit que le délit de discrimination ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                          "f00071",
+                          "n’est pas constitué lorsque les agissements sont conformes aux directives prises par le gouvernement dans sa politique économique ou commerciale ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                          "f00072",
+                          "ou en application de ses engagements internationaux.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00073",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph(
-                "La responsabilité pénale des personnes morales peut être retenue (selon les règles générales).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00074",
+                  "La responsabilité pénale des personnes morales peut être retenue (selon les règles générales).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00075",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : NON (non incriminée en matière de discrimination).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                  "f00076",
+                  "Tentative : NON (non incriminée en matière de discrimination).",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00077",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00078",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00079",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide/assistance, provocation, instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/abus_autorite/discriminations_contenu_page.dart",
+                    "f00080",
+                    " (aide/assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
             ],
@@ -626,9 +955,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

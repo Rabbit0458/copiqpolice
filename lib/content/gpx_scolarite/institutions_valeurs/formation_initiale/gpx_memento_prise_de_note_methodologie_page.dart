@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
   const GpxMementoPriseDeNoteMethodologiePage({super.key});
@@ -59,10 +60,18 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mémo",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+            "f00002",
+            "Mémo",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Mémento prise de note & méthodologie",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+              "f00003",
+              "Mémento prise de note & méthodologie",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -93,10 +106,18 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce document a pour objectif d’aider les futurs élèves à appréhender des éléments qui leur permettront "
-                "de mieux aborder leur scolarité. La mise en pratique de ces conseils pourra se faire progressivement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00004",
+                      "Ce document a pour objectif d’aider les futurs élèves à appréhender des éléments qui leur permettront ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00005",
+                      "de mieux aborder leur scolarité. La mise en pratique de ces conseils pourra se faire progressivement.",
+                    ),
               ),
             ],
           ),
@@ -105,53 +126,105 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
 
           // Pourquoi prendre des notes
           _ConditionCard(
-            title: "Pourquoi prendre des notes ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+              "f00006",
+              "Pourquoi prendre des notes ?",
+            ),
             cardColor: cardWhy,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La prise de notes est le meilleur moyen d’apprendre le cours. Elle consiste à transcrire à l’écrit "
-                "les éléments essentiels d’information donnés à l’oral, avec ou sans l’aide d’un support pédagogique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00007",
+                      "La prise de notes est le meilleur moyen d’apprendre le cours. Elle consiste à transcrire à l’écrit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00008",
+                      "les éléments essentiels d’information donnés à l’oral, avec ou sans l’aide d’un support pédagogique.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Ce que ça t’apporte"),
-              _BulletPoint(
-                text:
-                    "Adapter ton écriture au débit oral (≈ 150 mots/min) et reformuler avec ton propre vocabulaire pour mieux retenir.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00009",
+                  "Ce que ça t’apporte",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présenter l’information de façon claire et synthétique pour faciliter la compréhension.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00010",
+                  "Adapter ton écriture au débit oral (≈ 150 mots/min) et reformuler avec ton propre vocabulaire pour mieux retenir.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mettre en valeur les éléments pertinents pour organiser tes connaissances et enclencher la mémorisation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00011",
+                  "Présenter l’information de façon claire et synthétique pour faciliter la compréhension.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Maintenir ta concentration pendant tout l’exposé et profiter intégralement du contenu.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00012",
+                  "Mettre en valeur les éléments pertinents pour organiser tes connaissances et enclencher la mémorisation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Noter tes questions / points à éclaircir pour interagir avec le formateur au bon moment.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00013",
+                  "Maintenir ta concentration pendant tout l’exposé et profiter intégralement du contenu.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accélérer l’apprentissage et préparer les révisions pour gagner en autonomie et en efficacité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00014",
+                  "Noter tes questions / points à éclaircir pour interagir avec le formateur au bon moment.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00015",
+                  "Accélérer l’apprentissage et préparer les révisions pour gagner en autonomie et en efficacité.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Quand l’utiliser ?"),
-              _IntroBullet(
-                text:
-                    "Pendant un cours : exposé, groupe de travail, étude de cas, observation d’une simulation…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00016",
+                  "Quand l’utiliser ?",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Lors d’un stage : à l’issue d’une vacation, pour relever une situation intéressante.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00017",
+                  "Pendant un cours : exposé, groupe de travail, étude de cas, observation d’une simulation…",
+                ),
               ),
               _IntroBullet(
-                text: "Lors d’une étude documentaire : livre, texte, film…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00018",
+                  "Lors d’un stage : à l’issue d’une vacation, pour relever une situation intéressante.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00019",
+                  "Lors d’une étude documentaire : livre, texte, film…",
+                ),
               ),
             ],
           ),
@@ -160,83 +233,169 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
 
           // Comment prendre des notes
           _ConditionCard(
-            title: "Comment prendre des notes ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+              "f00020",
+              "Comment prendre des notes ?",
+            ),
             cardColor: cardHow,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Les règles d’or"),
-              _NotaBox(
-                title: "Avant le cours",
-                bodySpans: [
-                  TextSpan(
-                    text:
-                        "• Le sujet tu connaîtras et tes notes précédentes sur le thème tu reliras.\n",
-                  ),
-                  TextSpan(text: "• Ton matériel tu préparerás."),
-                ],
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00021",
+                  "Les règles d’or",
+                ),
               ),
-              SizedBox(height: 10),
               _NotaBox(
-                title: "Pendant le cours",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00022",
+                  "Avant le cours",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "• La date, la séquence, l’objectif, les intervenants et le plan sur ta feuille tu noteras.\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00023",
+                      "• Le sujet tu connaîtras et tes notes précédentes sur le thème tu reliras.\n",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "• Les pages tu numéroteras et de manière lisible, aérée et uniquement au recto tu écriras.\n",
-                  ),
-                  TextSpan(
-                    text:
-                        "• Pour tes commentaires et tes questions, une marge à gauche tu laisseras.\n",
-                  ),
-                  TextSpan(
-                    text:
-                        "• Des phrases courtes, des schémas, des symboles et des abréviations tu utiliseras.\n",
-                  ),
-                  TextSpan(
-                    text:
-                        "• L’essentiel tu prendras, et avec des couleurs / surligneurs tu le mettras en évidence.\n",
-                  ),
-                  TextSpan(
-                    text:
-                        "• Les définitions, mots-clés et références à retenir, en entier et en rouge tu noteras.\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00024",
+                      "• Ton matériel tu préparerás.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Après le cours",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00025",
+                  "Pendant le cours",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "• Le jour même, tes notes tu reliras, tu les compléteras et au bon endroit tu les classeras.\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00026",
+                      "• La date, la séquence, l’objectif, les intervenants et le plan sur ta feuille tu noteras.\n",
+                    ),
                   ),
                   TextSpan(
-                    text: "• Régulièrement sur tes notes tu reviendras.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00027",
+                      "• Les pages tu numéroteras et de manière lisible, aérée et uniquement au recto tu écriras.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00028",
+                      "• Pour tes commentaires et tes questions, une marge à gauche tu laisseras.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00029",
+                      "• Des phrases courtes, des schémas, des symboles et des abréviations tu utiliseras.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00030",
+                      "• L’essentiel tu prendras, et avec des couleurs / surligneurs tu le mettras en évidence.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00031",
+                      "• Les définitions, mots-clés et références à retenir, en entier et en rouge tu noteras.\n",
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(height: 10),
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00032",
+                  "Après le cours",
+                ),
+                bodySpans: [
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00033",
+                      "• Le jour même, tes notes tu reliras, tu les compléteras et au bon endroit tu les classeras.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00034",
+                      "• Régulièrement sur tes notes tu reviendras.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Les supports"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00035",
+                  "Les supports",
+                ),
+              ),
               _Paragraph(
-                "Selon ton organisation : cahier spirale (pratique), bloc/cahier à feuilles détachables, ou feuilles volantes "
-                "(qui demandent une rigueur). La règle impérative : être capable de tout retrouver facilement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00036",
+                      "Selon ton organisation : cahier spirale (pratique), bloc/cahier à feuilles détachables, ou feuilles volantes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00037",
+                      "(qui demandent une rigueur). La règle impérative : être capable de tout retrouver facilement.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Tu peux aussi annoter les supports distribués (diaporama, texte…). Ils doivent être classés avec soin.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00038",
+                  "Tu peux aussi annoter les supports distribués (diaporama, texte…). Ils doivent être classés avec soin.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00039",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La prise de note informatique « à la volée » est moins efficace pour l’apprentissage. "
-                        "Si tu maîtrises l’outil, il peut être utile pour remettre tes notes au propre.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                          "f00040",
+                          "La prise de note informatique « à la volée » est moins efficace pour l’apprentissage. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                          "f00041",
+                          "Si tu maîtrises l’outil, il peut être utile pour remettre tes notes au propre.",
+                        ),
                   ),
                 ],
               ),
@@ -247,42 +406,89 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
 
           // Abréviations
           _ConditionCard(
-            title: "La clef : les abréviations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+              "f00042",
+              "La clef : les abréviations",
+            ),
             cardColor: cardAbbrev,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les abréviations permettent de synthétiser les mots les plus utilisés. "
-                "On distingue les abréviations générales (ex : cordialement → cdlt) et les abréviations techniques « métier » "
-                "(policier adjoint : P.A., gardien de la paix : Gpx, brigadier-chef : B/C, major : Mj…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00043",
+                      "Les abréviations permettent de synthétiser les mots les plus utilisés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00044",
+                      "On distingue les abréviations générales (ex : cordialement → cdlt) et les abréviations techniques « métier » ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00045",
+                      "(policier adjoint : P.A., gardien de la paix : Gpx, brigadier-chef : B/C, major : Mj…).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Règles à respecter"),
-              _BulletPoint(
-                text:
-                    "Les raccourcis doivent devenir instinctifs : commence par ceux que tu maîtrises et enrichis progressivement.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00046",
+                  "Règles à respecter",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Utilise toujours les mêmes abréviations pour les mêmes termes (sinon tu te perds en relisant).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00047",
+                  "Les raccourcis doivent devenir instinctifs : commence par ceux que tu maîtrises et enrichis progressivement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne retranscris pas mot pour mot : vise le sens simplifié (ex. « L’eau est bonne pour la santé » → « Eau bonne pr santé »).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00048",
+                  "Utilise toujours les mêmes abréviations pour les mêmes termes (sinon tu te perds en relisant).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00049",
+                  "Ne retranscris pas mot pour mot : vise le sens simplifié (ex. « L’eau est bonne pour la santé » → « Eau bonne pr santé »).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Méthodes pour abréger"),
-              _BulletPoint(
-                text: "Retirer les voyelles : cependant → cpdt.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00050",
+                  "Méthodes pour abréger",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Remplacer la fin du mot : ion → « ° » ; ère → « R » ; ent → « » ; que → q.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00051",
+                  "Retirer les voyelles : cependant → cpdt.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garder les liens logiques : verbes, flèches, mots de liaison… pour ne pas perdre le sens.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00052",
+                  "Remplacer la fin du mot : ion → « ° » ; ère → « R » ; ent → « » ; que → q.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00053",
+                  "Garder les liens logiques : verbes, flèches, mots de liaison… pour ne pas perdre le sens.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
@@ -290,8 +496,16 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ne confonds pas abréviation et sigle : « Gpx » = abréviation de gardien de la paix, "
-                        "alors que « OPJ » est un sigle (Officier de Police Judiciaire).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                          "f00054",
+                          "Ne confonds pas abréviation et sigle : « Gpx » = abréviation de gardien de la paix, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                          "f00055",
+                          "alors que « OPJ » est un sigle (Officier de Police Judiciaire).",
+                        ),
                   ),
                 ],
               ),
@@ -302,39 +516,79 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
 
           // Organisation / Planification
           _ConditionCard(
-            title: "S’organiser en formation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+              "f00056",
+              "S’organiser en formation",
+            ),
             cardColor: cardOrg,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Planifier son travail"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00057",
+                  "Planifier son travail",
+                ),
+              ),
               _Paragraph(
-                "Il convient de travailler régulièrement : un temps quotidien de reprise des notes de la journée et un temps de "
-                "consolidation (souvent le week-end). À cela s’ajoutent des périodes de révision selon les évaluations.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00058",
+                      "Il convient de travailler régulièrement : un temps quotidien de reprise des notes de la journée et un temps de ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00059",
+                      "consolidation (souvent le week-end). À cela s’ajoutent des périodes de révision selon les évaluations.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Mémo",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00060",
+                  "Mémo",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "50 % du contenu d’un cours est oublié au bout de 24 heures si on ne l’apprend pas.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00061",
+                      "50 % du contenu d’un cours est oublié au bout de 24 heures si on ne l’apprend pas.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Calendrier simple"),
-              _BulletPoint(
-                text:
-                    "J0 (le jour même) : relis, complète, souligne/surligne, réécris si besoin, classe tes notes et annote les supports.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00062",
+                  "Calendrier simple",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "J+1 : apprends une première fois le lendemain (tu te souviens encore du plan et des concepts).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00063",
+                  "J0 (le jour même) : relis, complète, souligne/surligne, réécris si besoin, classe tes notes et annote les supports.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Week-end suivant : reprise plus aisée, exercices/études de cas, début des fiches de révision.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00064",
+                  "J+1 : apprends une première fois le lendemain (tu te souviens encore du plan et des concepts).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00065",
+                  "Week-end suivant : reprise plus aisée, exercices/études de cas, début des fiches de révision.",
+                ),
               ),
             ],
           ),
@@ -343,54 +597,112 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
 
           // Stratégie d’apprentissage + Fiche de révision
           _ConditionCard(
-            title: "Apprendre & mémoriser",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+              "f00066",
+              "Apprendre & mémoriser",
+            ),
             cardColor: cardMethod,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Stratégie d’apprentissage"),
-              _BulletPoint(text: "Après le cours : identifie les mots-clés."),
-              _BulletPoint(
-                text:
-                    "Note des questions dont les réponses sont dans tes notes.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00067",
+                  "Stratégie d’apprentissage",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Masque tes notes et reformule l’information (écrit / oral) avec mots-clés + questions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00068",
+                  "Après le cours : identifie les mots-clés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Analyse avec : qui ? quoi ? quand ? où ? comment ? pourquoi ? combien ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00069",
+                  "Note des questions dont les réponses sont dans tes notes.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "10 minutes par jour : réviser de cette façon en vérifiant que tu comprends vraiment la matière.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00070",
+                  "Masque tes notes et reformule l’information (écrit / oral) avec mots-clés + questions.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00071",
+                  "Analyse avec : qui ? quoi ? quand ? où ? comment ? pourquoi ? combien ?",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00072",
+                  "10 minutes par jour : réviser de cette façon en vérifiant que tu comprends vraiment la matière.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("La fiche de révision"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00073",
+                  "La fiche de révision",
+                ),
+              ),
               _Paragraph(
-                "C’est une synthèse de tes notes (souvent sur une fiche). Elle aide à mémoriser en la rédigeant, "
-                "et à préparer les examens en l’apprenant. Fais de même pour les supports distribués.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00074",
+                      "C’est une synthèse de tes notes (souvent sur une fiche). Elle aide à mémoriser en la rédigeant, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                      "f00075",
+                      "et à préparer les examens en l’apprenant. Fais de même pour les supports distribués.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Une couleur de fiche par thématique, titres clairs, fiches numérotées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00076",
+                  "Une couleur de fiche par thématique, titres clairs, fiches numérotées.",
+                ),
               ),
               _BulletPoint(
-                text: "Une fiche par thème à partir des notes et supports.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00077",
+                  "Une fiche par thème à partir des notes et supports.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Reprendre schématiquement les éléments clefs en gardant la cohérence du cours.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00078",
+                  "Reprendre schématiquement les éléments clefs en gardant la cohérence du cours.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mettre en avant les points importants (et en rouge les éléments à savoir par cœur).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00079",
+                  "Mettre en avant les points importants (et en rouge les éléments à savoir par cœur).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Au verso : écrire des questions pour t’auto-interroger seul ou en groupe.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart",
+                  "f00080",
+                  "Au verso : écrire des questions pour t’auto-interroger seul ou en groupe.",
+                ),
               ),
             ],
           ),

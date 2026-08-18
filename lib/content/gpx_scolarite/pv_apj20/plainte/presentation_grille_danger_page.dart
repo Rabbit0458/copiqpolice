@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PresentationGrilleDangerPage extends StatelessWidget {
   const PresentationGrilleDangerPage({super.key});
@@ -56,10 +57,18 @@ class PresentationGrilleDangerPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Violences conjugales",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+            "f00002",
+            "Violences conjugales",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PresentationGrilleDangerPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Présentation de la grille d’évaluation du danger",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00003",
+              "Présentation de la grille d’évaluation du danger",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,12 +103,28 @@ class PresentationGrilleDangerPage extends StatelessWidget {
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La grille d’évaluation du danger vise à apprécier le niveau de danger encouru par une victime "
-                "de violences conjugales. Combinée à d’autres éléments de contexte, elle peut conduire à la mise "
-                "en œuvre de mesures d’accompagnement et de protection. Elle aide aussi la victime à prendre conscience "
-                "du danger encouru.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00004",
+                      "La grille d’évaluation du danger vise à apprécier le niveau de danger encouru par une victime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00005",
+                      "de violences conjugales. Combinée à d’autres éléments de contexte, elle peut conduire à la mise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00006",
+                      "en œuvre de mesures d’accompagnement et de protection. Elle aide aussi la victime à prendre conscience ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00007",
+                      "du danger encouru.",
+                    ),
               ),
             ],
           ),
@@ -104,22 +133,30 @@ class PresentationGrilleDangerPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles en rouge)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Information des droits des victimes (dans le cadre d’une plainte) — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                    "f00009",
+                    "Information des droits des victimes (dans le cadre d’une plainte) — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 10-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                    "f00010",
+                    "article 10-2 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -128,8 +165,16 @@ class PresentationGrilleDangerPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La grille est transmise à l’autorité judiciaire lorsqu’elle est renseignée, "
-                        "en l’annexant à l’audition ou à la main courante informatisée (MCI).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                          "f00011",
+                          "La grille est transmise à l’autorité judiciaire lorsqu’elle est renseignée, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                          "f00012",
+                          "en l’annexant à l’audition ou à la main courante informatisée (MCI).",
+                        ),
                   ),
                 ],
               ),
@@ -140,27 +185,48 @@ class PresentationGrilleDangerPage extends StatelessWidget {
 
           // Présentation / contenu du questionnaire
           _ConditionCard(
-            title: "II — Présentation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00013",
+              "II — Présentation",
+            ),
             cardColor: cardUse,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La grille se présente sous la forme de 23 questions fermées. "
-                "Parmi elles, 5 questions signalées en rouge définissent un degré de danger particulier.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00014",
+                      "La grille se présente sous la forme de 23 questions fermées. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00015",
+                      "Parmi elles, 5 questions signalées en rouge définissent un degré de danger particulier.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Permet une évaluation structurée et rapide de la situation de danger.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00016",
+                  "Permet une évaluation structurée et rapide de la situation de danger.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sert d’appui pour décider et déclencher des mesures adaptées (protection, accompagnement, partenariats).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00017",
+                  "Sert d’appui pour décider et déclencher des mesures adaptées (protection, accompagnement, partenariats).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Doit être remplie par le policier à partir des déclarations de la victime.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00018",
+                  "Doit être remplie par le policier à partir des déclarations de la victime.",
+                ),
               ),
             ],
           ),
@@ -169,26 +235,62 @@ class PresentationGrilleDangerPage extends StatelessWidget {
 
           // Où trouver la grille (LRPPN) + cas refus de plainte
           _ConditionCard(
-            title: "III — Renseignement & transmission",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00019",
+              "III — Renseignement & transmission",
+            ),
             cardColor: cardReco,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Disponibilité (LRPPN)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00020",
+                  "Disponibilité (LRPPN)",
+                ),
+              ),
               _Paragraph(
-                "Disponible dans le logiciel de rédaction des procédures (LRPPN) : "
-                "« RÉDACTION PJ » → fonction « création/suite de dossier – Violences conjugales ».",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00021",
+                      "Disponible dans le logiciel de rédaction des procédures (LRPPN) : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00022",
+                      "« RÉDACTION PJ » → fonction « création/suite de dossier – Violences conjugales ».",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Quand la victime refuse la plainte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00023",
+                  "Quand la victime refuse la plainte",
+                ),
+              ),
               _Paragraph(
-                "Si la victime privilégie une main courante informatisée (MCI), il convient d’imprimer la grille "
-                "et de la remplir manuellement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00024",
+                      "Si la victime privilégie une main courante informatisée (MCI), il convient d’imprimer la grille ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00025",
+                      "et de la remplir manuellement.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle("Transmission"),
               _Paragraph(
-                "La grille doit être transmise à l’autorité judiciaire, annexée à l’audition ou à la MCI.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00026",
+                  "La grille doit être transmise à l’autorité judiciaire, annexée à l’audition ou à la MCI.",
+                ),
               ),
             ],
           ),
@@ -197,26 +299,42 @@ class PresentationGrilleDangerPage extends StatelessWidget {
 
           // Préconisations (pédagogie + confidentialité etc.)
           _ConditionCard(
-            title: "IV — Préconisations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00027",
+              "IV — Préconisations",
+            ),
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Recevoir la victime dans un lieu sécurisant et respectant la confidentialité (dans la mesure du possible).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00028",
+                  "Recevoir la victime dans un lieu sécurisant et respectant la confidentialité (dans la mesure du possible).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Informer la victime : ce questionnaire sert à mieux évaluer la situation pour mieux l’accompagner.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00029",
+                  "Informer la victime : ce questionnaire sert à mieux évaluer la situation pour mieux l’accompagner.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Laisser un temps de parole, puis compléter la grille avec la victime (ne pas lui remettre pour qu’elle la remplisse seule).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00030",
+                  "Laisser un temps de parole, puis compléter la grille avec la victime (ne pas lui remettre pour qu’elle la remplisse seule).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Adopter une posture bienveillante et pédagogique pour rassurer et déculpabiliser.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00031",
+                  "Adopter une posture bienveillante et pédagogique pour rassurer et déculpabiliser.",
+                ),
               ),
             ],
           ),
@@ -225,30 +343,52 @@ class PresentationGrilleDangerPage extends StatelessWidget {
 
           // Critères danger (2 hypothèses non cumulatives)
           _ConditionCard(
-            title: "V — Critères de danger (non cumulatif)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00032",
+              "V — Critères de danger (non cumulatif)",
+            ),
             cardColor: cardCriteria,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le danger est susceptible d’être caractérisé dans deux hypothèses non cumulatives :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00033",
+                  "Le danger est susceptible d’être caractérisé dans deux hypothèses non cumulatives :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Réponse positive à au moins 2 questions signalées en rouge dans le formulaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00034",
+                  "Réponse positive à au moins 2 questions signalées en rouge dans le formulaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Réponse positive à 12 questions (qu’elles soient en rouge ou non).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00035",
+                  "Réponse positive à 12 questions (qu’elles soient en rouge ou non).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La conduite à tenir est adaptée au résultat (danger identifié ou non), avec mobilisation des partenaires "
-                        "engagés dans la lutte contre les violences conjugales.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                          "f00036",
+                          "La conduite à tenir est adaptée au résultat (danger identifié ou non), avec mobilisation des partenaires ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                          "f00037",
+                          "engagés dans la lutte contre les violences conjugales.",
+                        ),
                   ),
                 ],
               ),
@@ -259,34 +399,59 @@ class PresentationGrilleDangerPage extends StatelessWidget {
 
           // “Rappel / conduite à tenir” (résumé opérationnel)
           _ConditionCard(
-            title: "VI — Rappel opérationnel (conduites à tenir)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00038",
+              "VI — Rappel opérationnel (conduites à tenir)",
+            ),
             cardColor: cardUse,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Diligences essentielles"),
-              _BulletPoint(
-                text:
-                    "Accueillir la victime : confidentialité, sécurité, possibilité d’être accompagnée.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00039",
+                  "Diligences essentielles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Écouter et prendre les déclarations (plainte ou MCI), avis OPJ si nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00040",
+                  "Accueillir la victime : confidentialité, sécurité, possibilité d’être accompagnée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Renseigner systématiquement la grille d’évaluation du danger.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00041",
+                  "Écouter et prendre les déclarations (plainte ou MCI), avis OPJ si nécessaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Remise à la victime : information droits victimes, récépissés, coordonnées utiles (ISC / associations / etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00042",
+                  "Renseigner systématiquement la grille d’évaluation du danger.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00043",
+                  "Remise à la victime : information droits victimes, récépissés, coordonnées utiles (ISC / associations / etc.).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Tout refus de la victime (ITT, mise en sécurité, etc.) doit être mentionné en procédure.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00044",
+                      "Tout refus de la victime (ITT, mise en sécurité, etc.) doit être mentionné en procédure.",
+                    ),
                   ),
                 ],
               ),
@@ -297,13 +462,21 @@ class PresentationGrilleDangerPage extends StatelessWidget {
 
           // Documents/images (zoom + rotation)
           _ConditionCard(
-            title: "VII — Documents (zoom / rotation)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+              "f00045",
+              "VII — Documents (zoom / rotation)",
+            ),
             cardColor: cardDocs,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur l’image pour l’ouvrir en plein écran. Tu peux zoomer et tourner.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                  "f00046",
+                  "Appuie sur l’image pour l’ouvrir en plein écran. Tu peux zoomer et tourner.",
+                ),
               ),
               SizedBox(height: 10),
               _ZoomRotateImage(assetPath: 'assets/images/protocole.png'),
@@ -358,7 +531,9 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
-              color: isDark ? Colors.black.withValues(alpha: .18) : Colors.black12,
+              color: isDark
+                  ? Colors.black.withValues(alpha: .18)
+                  : Colors.black12,
               border: Border(bottom: BorderSide(color: border, width: 1)),
             ),
 
@@ -371,12 +546,20 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                 children: [
                   IconButton(
                     onPressed: _rotateLeft,
-                    tooltip: 'Tourner à gauche',
+                    tooltip: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00047",
+                      'Tourner à gauche',
+                    ),
                     icon: const Icon(Icons.rotate_left_rounded),
                   ),
                   IconButton(
                     onPressed: _rotateRight,
-                    tooltip: 'Tourner à droite',
+                    tooltip: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                      "f00048",
+                      'Tourner à droite',
+                    ),
                     icon: const Icon(Icons.rotate_right_rounded),
                   ),
                   const SizedBox(width: 6),
@@ -384,7 +567,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                     onPressed: _reset,
                     icon: const Icon(Icons.refresh_rounded),
                     label: Text(
-                      "Réinitialiser",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                        "f00049",
+                        "Réinitialiser",
+                      ),
                       style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                     ),
                   ),
@@ -393,7 +580,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                     onPressed: () => _openFullscreen(context),
                     icon: const Icon(Icons.fullscreen_rounded),
                     label: Text(
-                      "Plein écran",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                        "f00050",
+                        "Plein écran",
+                      ),
                       style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                     ),
                   ),
@@ -455,7 +646,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                           IconButton(
                             onPressed: () =>
                                 setLocalState(() => turns = (turns - 1) % 4),
-                            tooltip: 'Tourner à gauche',
+                            tooltip: ScolariteText.value(
+                              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                              "f00051",
+                              'Tourner à gauche',
+                            ),
                             icon: const Icon(
                               Icons.rotate_left_rounded,
                               color: Colors.white,
@@ -464,7 +659,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                           IconButton(
                             onPressed: () =>
                                 setLocalState(() => turns = (turns + 1) % 4),
-                            tooltip: 'Tourner à droite',
+                            tooltip: ScolariteText.value(
+                              "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                              "f00052",
+                              'Tourner à droite',
+                            ),
                             icon: const Icon(
                               Icons.rotate_right_rounded,
                               color: Colors.white,
@@ -478,7 +677,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                               color: Colors.white,
                             ),
                             label: Text(
-                              "Réinitialiser",
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/pv_apj20/plainte/presentation_grille_danger_page.dart",
+                                "f00053",
+                                "Réinitialiser",
+                              ),
                               style: GoogleFonts.fustat(
                                 fontWeight: FontWeight.w900,
                                 color: Colors.white,
@@ -775,9 +978,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

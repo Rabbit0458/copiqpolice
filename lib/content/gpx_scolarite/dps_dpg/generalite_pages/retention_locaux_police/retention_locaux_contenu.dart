@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_judiciaires_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 // ===================== PAGE QUIZ RÉTENTION (à créer si besoin) =====================
 
@@ -38,10 +39,18 @@ class RetentionLocauxContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Rétention dans les locaux de police',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+            "f00002",
+            'Rétention dans les locaux de police',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -56,9 +65,16 @@ class RetentionLocauxContenuPage extends StatelessWidget {
           // ===== PRINCIPES GÉNÉRAUX =====
           _ModuleCard(
             tag: 'retention_principes',
-            title: 'Principes généraux',
-            subtitle:
-                'Liberté individuelle, contrôle judiciaire et limites à la coercition.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00003",
+              'Principes généraux',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00004",
+              'Liberté individuelle, contrôle judiciaire et limites à la coercition.',
+            ),
             imagePath: 'assets/images/pv_regles.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -68,14 +84,21 @@ class RetentionLocauxContenuPage extends StatelessWidget {
               'retention_principes',
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // ===== MESURES À CARACTÈRE JUDICIAIRE =====
           _ModuleCard(
             tag: 'retention_judiciaire',
-            title: 'Mesures à caractère judiciaire',
-            subtitle:
-                'Garde à vue, retenue des mineurs, vérification d’identité, mandats…',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00005",
+              'Mesures à caractère judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00006",
+              'Garde à vue, retenue des mineurs, vérification d’identité, mandats…',
+            ),
             imagePath: 'assets/images/repression.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -85,14 +108,21 @@ class RetentionLocauxContenuPage extends StatelessWidget {
               'retention_judiciaire',
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
           // ===== MESURES À CARACTÈRE ADMINISTRATIF =====
           _ModuleCard(
             tag: 'retention_admin',
-            title: 'Mesures à caractère administratif',
-            subtitle:
-                'Droit au séjour, chambre de sûreté, mineurs en fugue, terrorisme…',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00007",
+              'Mesures à caractère administratif',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00008",
+              'Droit au séjour, chambre de sûreté, mineurs en fugue, terrorisme…',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -102,14 +132,21 @@ class RetentionLocauxContenuPage extends StatelessWidget {
               'retention_admin',
             ),
           ),
-          const SizedBox(height: 24),
+          const SizedBox(height: 10),
 
           // ===== QUIZ =====
           _ModuleCard(
             tag: 'quiz_retention',
-            title: 'Quiz — Rétention locaux de police',
-            subtitle:
-                'Durées, bases légales et bonnes pratiques opérationnelles.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00009",
+              'Quiz — Rétention locaux de police',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+              "f00010",
+              'Durées, bases légales et bonnes pratiques opérationnelles.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -117,7 +154,7 @@ class RetentionLocauxContenuPage extends StatelessWidget {
               context,
             ).pushNamed('/gpx/generalites/quiz/retention_locaux_police'),
           ),
-          const SizedBox(height: 22),
+          const SizedBox(height: 10),
         ],
       ),
     );
@@ -171,7 +208,13 @@ class _ModuleCard extends StatelessWidget {
         label: '$title — découvrir',
         child: Container(
           // on garde la même hauteur de carte
-          height: 200,
+          height:
+              ((MediaQuery.sizeOf(context).height -
+                          MediaQuery.paddingOf(context).vertical -
+                          kToolbarHeight -
+                          94) /
+                      4)
+                  .clamp(158.0, 200.0),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(18),
             color: Colors.transparent,
@@ -205,7 +248,6 @@ class _ModuleCard extends StatelessWidget {
                 padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min, // <-- important
                   children: [
                     Container(
                       padding: const EdgeInsets.symmetric(
@@ -226,9 +268,7 @@ class _ModuleCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const SizedBox(
-                      height: 52,
-                    ), // 60 -> 52 pour gagner de la place
+                    const Spacer(),
                     Text(
                       title,
                       maxLines: 2,
@@ -242,7 +282,7 @@ class _ModuleCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Padding(
-                      padding: const EdgeInsets.only(right: 80),
+                      padding: const EdgeInsets.only(right: 126),
                       child: Text(
                         subtitle,
                         maxLines: 2,
@@ -286,7 +326,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 4),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+                "f00013",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,
@@ -390,7 +434,11 @@ class _QuizCTA extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Quiz — Rétention locaux de police',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+                            "f00014",
+                            'Quiz — Rétention locaux de police',
+                          ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(
@@ -402,7 +450,11 @@ class _QuizCTA extends StatelessWidget {
                         ),
                         const SizedBox(height: 2),
                         Text(
-                          'Cadre juridique, durées maximales et distinction judiciaire / administratif.',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_locaux_contenu.dart",
+                            "f00015",
+                            'Cadre juridique, durées maximales et distinction judiciaire / administratif.',
+                          ),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(

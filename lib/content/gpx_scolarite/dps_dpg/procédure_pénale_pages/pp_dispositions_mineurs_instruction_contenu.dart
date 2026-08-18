@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DispositionsMineursContenuPage extends StatelessWidget {
   const DispositionsMineursContenuPage({super.key});
@@ -25,10 +26,18 @@ class DispositionsMineursContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Dispositions applicables aux mineurs",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+            "f00002",
+            "Dispositions applicables aux mineurs",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class DispositionsMineursContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Dispositions applicables aux mineurs",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00003",
+              "Dispositions applicables aux mineurs",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,8 +66,16 @@ class DispositionsMineursContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Organisation particulière de la justice pénale des mineurs : "
-            "principes généraux, instruction préparatoire et rétention dans le cadre des mandats.",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+                  "f00004",
+                  "Organisation particulière de la justice pénale des mineurs : ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+                  "f00005",
+                  "principes généraux, instruction préparatoire et rétention dans le cadre des mandats.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -68,9 +89,16 @@ class DispositionsMineursContenuPage extends StatelessWidget {
           // ========== MODULE 1 — PRINCIPES GÉNÉRAUX DE LA JUSTICE PÉNALE DES MINEURS ====
           _ModuleCard(
             tag: 'pp_mineurs_principes_generaux',
-            title: "Principes généraux de la justice pénale des mineurs",
-            subtitle:
-                "Spécificités de la responsabilité pénale, primauté de l’éducatif, rôle du juge des enfants et de la juridiction spécialisée.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00006",
+              "Principes généraux de la justice pénale des mineurs",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00007",
+              "Spécificités de la responsabilité pénale, primauté de l’éducatif, rôle du juge des enfants et de la juridiction spécialisée.",
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -84,9 +112,16 @@ class DispositionsMineursContenuPage extends StatelessWidget {
           // ================= MODULE 2 — INSTRUCTION PRÉPARATOIRE ====================
           _ModuleCard(
             tag: 'pp_mineurs_instruction_preparatoire',
-            title: "Instruction préparatoire",
-            subtitle:
-                "Ouverture de l’information, rôle du juge des enfants et du juge d’instruction, mesures éducatives et de sûreté applicables au mineur.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00008",
+              "Instruction préparatoire",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00009",
+              "Ouverture de l’information, rôle du juge des enfants et du juge d’instruction, mesures éducatives et de sûreté applicables au mineur.",
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -100,9 +135,16 @@ class DispositionsMineursContenuPage extends StatelessWidget {
           // ========== MODULE 3 — RÉTENTION DANS LE CADRE DES MANDATS ==========
           _ModuleCard(
             tag: 'pp_mineurs_retention_mandats',
-            title: "Rétention dans le cadre des mandats",
-            subtitle:
-                "Conditions et limites de la rétention d’un mineur lors de l’exécution des mandats de justice, garanties procédurales renforcées.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00010",
+              "Rétention dans le cadre des mandats",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00011",
+              "Conditions et limites de la rétention d’un mineur lors de l’exécution des mandats de justice, garanties procédurales renforcées.",
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -118,8 +160,11 @@ class DispositionsMineursContenuPage extends StatelessWidget {
           _ModuleCard(
             tag: 'quiz_dispositions_applicables_mineurs',
             title: 'Quiz ',
-            subtitle:
-                'Testez votre maîtrise des mesures de contrainte et du déroulement des dispositions applicables aux mineurs',
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_dispositions_mineurs_instruction_contenu.dart",
+              "f00012",
+              'Testez votre maîtrise des mesures de contrainte et du déroulement des dispositions applicables aux mineurs',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -175,7 +220,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MemoTph900Page extends StatelessWidget {
   const MemoTph900Page({super.key});
@@ -35,7 +36,11 @@ class MemoTph900Page extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -53,7 +58,11 @@ class MemoTph900Page extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Mémo TPH 900",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+              "f00002",
+              "Mémo TPH 900",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -69,10 +78,18 @@ class MemoTph900Page extends StatelessWidget {
             cardColor: cardNeutral,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Avoir un repère visuel immédiat pour appliquer la bonne procédure au bon moment. "
-                "Ce mémo sert de support terrain : simple, rapide, opérationnel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                      "f00003",
+                      "Avoir un repère visuel immédiat pour appliquer la bonne procédure au bon moment. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                      "f00004",
+                      "Ce mémo sert de support terrain : simple, rapide, opérationnel.",
+                    ),
               ),
             ],
           ),
@@ -81,7 +98,11 @@ class MemoTph900Page extends StatelessWidget {
 
           // Image principale (le mémo)
           _ConditionCard(
-            title: "Mémo (image)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+              "f00005",
+              "Mémo (image)",
+            ),
             cardColor: cardPrimary,
             accent: accentBlue,
             titleColor: textMain,
@@ -112,9 +133,21 @@ class MemoTph900Page extends StatelessWidget {
                         return Padding(
                           padding: const EdgeInsets.all(14),
                           child: Text(
-                            "Image introuvable : memo_tph.png\n\n"
-                            "➡️ Vérifie le chemin d’assets (pubspec.yaml)\n"
-                            "➡️ Et ajuste le Image.asset(...) si besoin",
+                            ScolariteText.value(
+                                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                                  "f00006",
+                                  "Image introuvable : memo_tph.png\n\n",
+                                ) +
+                                ScolariteText.value(
+                                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                                  "f00007",
+                                  "➡️ Vérifie le chemin d’assets (pubspec.yaml)\n",
+                                ) +
+                                ScolariteText.value(
+                                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                                  "f00008",
+                                  "➡️ Et ajuste le Image.asset(...) si besoin",
+                                ),
                             textAlign: TextAlign.center,
                             style: GoogleFonts.fustat(
                               fontSize: 13.5,
@@ -136,35 +169,72 @@ class MemoTph900Page extends StatelessWidget {
 
           // Conseils d’utilisation (pédagogique, ultra clair)
           _ConditionCard(
-            title: "Utilisation terrain (rappel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+              "f00009",
+              "Utilisation terrain (rappel)",
+            ),
             cardColor: cardNeutral,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Avant l’action"),
-              _BulletPoint(
-                text:
-                    "Avoir le mémo accessible rapidement (favoris, onglet, capture).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00010",
+                  "Avant l’action",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S’assurer que la procédure suivie est adaptée au contexte (urgence / routine).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00011",
+                  "Avoir le mémo accessible rapidement (favoris, onglet, capture).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00012",
+                  "S’assurer que la procédure suivie est adaptée au contexte (urgence / routine).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Pendant l’action"),
-              _BulletPoint(
-                text:
-                    "Se référer au mémo uniquement pour sécuriser et standardiser (pas pour rallonger les communications).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00013",
+                  "Pendant l’action",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garder des messages brefs : l’essentiel opérationnel d’abord.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00014",
+                  "Se référer au mémo uniquement pour sécuriser et standardiser (pas pour rallonger les communications).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00015",
+                  "Garder des messages brefs : l’essentiel opérationnel d’abord.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Après l’action"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00016",
+                  "Après l’action",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Corriger les écarts si nécessaire (discipline radio / procédure).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+                  "f00017",
+                  "Corriger les écarts si nécessaire (discipline radio / procédure).",
+                ),
               ),
             ],
           ),
@@ -420,9 +490,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -475,7 +543,11 @@ class _MemoTphFullscreenViewerState extends State<_MemoTphFullscreenViewer> {
           tooltip: 'Fermer',
         ),
         title: Text(
-          "Mémo TPH 900",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+            "f00018",
+            "Mémo TPH 900",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16.5,
@@ -489,12 +561,20 @@ class _MemoTphFullscreenViewerState extends State<_MemoTphFullscreenViewer> {
               Icons.screen_rotation_rounded,
               color: Colors.white,
             ),
-            tooltip: 'Tourner (90°)',
+            tooltip: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+              "f00019",
+              'Tourner (90°)',
+            ),
           ),
           IconButton(
             onPressed: _reset,
             icon: const Icon(Icons.restart_alt_rounded, color: Colors.white),
-            tooltip: 'Réinitialiser',
+            tooltip: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/memo_tph_900_page.dart",
+              "f00020",
+              'Réinitialiser',
+            ),
           ),
           const SizedBox(width: 6),
         ],
@@ -522,7 +602,9 @@ class _MemoTphFullscreenViewerState extends State<_MemoTphFullscreenViewer> {
                           ? Colors.white.withValues(alpha: .08)
                           : Colors.black.withValues(alpha: .08),
                       borderRadius: BorderRadius.circular(14),
-                      border: Border.all(color: Colors.white.withValues(alpha: .15)),
+                      border: Border.all(
+                        color: Colors.white.withValues(alpha: .15),
+                      ),
                     ),
                     child: Text(
                       "Image introuvable.\nVérifie : ${widget.assetPath}",

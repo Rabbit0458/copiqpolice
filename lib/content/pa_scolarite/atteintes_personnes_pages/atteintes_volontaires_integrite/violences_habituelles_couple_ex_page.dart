@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
   const PaViolencesHabituellesCoupleExPage({super.key});
@@ -59,10 +60,18 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes volontaires à l’intégrité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+            "f00002",
+            "Atteintes volontaires à l’intégrité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les violences habituelles au sein du couple (ou commises par un « ex »)",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+              "f00003",
+              "Les violences habituelles au sein du couple (ou commises par un « ex »)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,16 +102,36 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les violences habituelles commises par le conjoint ou le concubin de la victime, "
-                "ou par le partenaire lié à celle-ci par un pacte civil de solidarité, constituent une infraction. "
-                "Le même régime s’applique lorsque les faits sont commis par un ancien conjoint/concubin/partenaire (« ex »), "
-                "dès lors qu’ils sont commis en raison des relations ayant existé.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00005",
+                      "Les violences habituelles commises par le conjoint ou le concubin de la victime, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00006",
+                      "ou par le partenaire lié à celle-ci par un pacte civil de solidarité, constituent une infraction. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00007",
+                      "Le même régime s’applique lorsque les faits sont commis par un ancien conjoint/concubin/partenaire (« ex »), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00008",
+                      "dès lors qu’ils sont commis en raison des relations ayant existé.",
+                    ),
               ),
             ],
           ),
@@ -107,20 +140,36 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14 alinéa 6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00010",
+                    "Article 222-14 alinéa 6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit les violences habituelles au sein du couple ou commises par un « ex » ; "
-                      "les alinéas 2 à 5 précisent la répression selon la gravité du résultat.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00011",
+                        " : définit les violences habituelles au sein du couple ou commises par un « ex » ; ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00012",
+                        "les alinéas 2 à 5 précisent la répression selon la gravité du résultat.",
+                      ),
                 ),
               ]),
             ],
@@ -130,64 +179,141 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte positif"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00014",
+                  "A) Un acte positif",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent un acte : une action positive. "
-                "La simple abstention ne constitue pas une violence (d’autres qualifications peuvent alors s’appliquer : privation de soins, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00015",
+                      "Les violences supposent un acte : une action positive. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00016",
+                      "La simple abstention ne constitue pas une violence (d’autres qualifications peuvent alors s’appliquer : privation de soins, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Un contact physique (direct ou indirect)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00017",
+                  "1) Un contact physique (direct ou indirect)",
+                ),
+              ),
               _Paragraph(
-                "Sont compris tous les comportements impliquant un contact physique entre l’auteur et la victime "
-                "(coups, gifles, morsures, etc.). Le contact peut être indirect : l’auteur peut utiliser un moyen "
-                "pour atteindre la victime (arme, objet, animal excité, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00018",
+                      "Sont compris tous les comportements impliquant un contact physique entre l’auteur et la victime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00019",
+                      "(coups, gifles, morsures, etc.). Le contact peut être indirect : l’auteur peut utiliser un moyen ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00020",
+                      "pour atteindre la victime (arme, objet, animal excité, etc.).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "2) Une atteinte psychique (violences psychologiques)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00021",
+                  "2) Une atteinte psychique (violences psychologiques)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le délit de violences peut être constitué même sans atteinte physique, par tout acte de nature à impressionner vivement la victime "
-                      "et à lui causer un choc émotif ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00022",
+                        "Le délit de violences peut être constitué même sans atteinte physique, par tout acte de nature à impressionner vivement la victime ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00023",
+                        "et à lui causer un choc émotif ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 18 mars 2008, n° 07-86.075)",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00024",
+                    "(Cass. crim., 18 mars 2008, n° 07-86.075)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Cette approche est codifiée par "),
                 TextSpan(
-                  text: "l’article 222-14-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00025",
+                    "Cette approche est codifiée par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00026",
+                    "l’article 222-14-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : les violences au sens des articles 222-7 et suivants sont constituées quelle que soit leur nature, "
-                      "y compris lorsqu’il s’agit de violences psychologiques.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00027",
+                        " : les violences au sens des articles 222-7 et suivants sont constituées quelle que soit leur nature, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00028",
+                        "y compris lorsqu’il s’agit de violences psychologiques.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : individu descendant de sa voiture avec une barre de fer et frappant l’arrière du véhicule de la victime ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00029",
+                      "Jurisprudence : individu descendant de sa voiture avec une barre de fer et frappant l’arrière du véhicule de la victime ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 18 mars 2008)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00030",
+                      "(Cass. crim., 18 mars 2008)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -199,32 +325,71 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Des violences habituelles (répétition)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00031",
+                  "B) Des violences habituelles (répétition)",
+                ),
+              ),
               _Paragraph(
-                "L’habitude suppose que les violences aient été commises à plusieurs reprises. "
-                "Ce n’est pas un fait isolé : c’est la répétition qui caractérise l’habitude.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00032",
+                      "L’habitude suppose que les violences aient été commises à plusieurs reprises. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00033",
+                      "Ce n’est pas un fait isolé : c’est la répétition qui caractérise l’habitude.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Un lien particulier entre la victime et l’auteur",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00034",
+                  "C) Un lien particulier entre la victime et l’auteur",
+                ),
               ),
-              _Paragraph("L’infraction vise :"),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00035",
+                  "L’infraction vise :",
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité (même sans cohabitation).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00036",
+                  "Le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité (même sans cohabitation).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le régime s’étend à l’« ex » : la circonstance aggravante est constituée lorsque les faits sont commis par l’ancien conjoint, l’ancien concubin "
-                      "ou l’ancien partenaire lié par un pacte civil de solidarité, dès lors que l’infraction est commise en raison des relations ayant existé ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00037",
+                        "Le régime s’étend à l’« ex » : la circonstance aggravante est constituée lorsque les faits sont commis par l’ancien conjoint, l’ancien concubin ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                        "f00038",
+                        "ou l’ancien partenaire lié par un pacte civil de solidarité, dès lors que l’infraction est commise en raison des relations ayant existé ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(article 132-80 alinéa 2 du Code pénal)",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00039",
+                    "(article 132-80 alinéa 2 du Code pénal)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -232,28 +397,69 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un résultat dommageable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00040",
+                  "D) Un résultat dommageable",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent une atteinte à l’intégrité physique et/ou psychique de la personne. "
-                "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00041",
+                      "Les violences supposent une atteinte à l’intégrité physique et/ou psychique de la personne. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00042",
+                      "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Selon l’article 222-14 du Code pénal, la gravité est appréciée selon que les violences :\n"
-                "• ont entraîné la mort ;\n"
-                "• ont entraîné une mutilation ou une infirmité permanente ;\n"
-                "• ont entraîné une I.T.T. > 8 jours ;\n"
-                "• n’ont pas entraîné d’I.T.T. > 8 jours.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00043",
+                      "Selon l’article 222-14 du Code pénal, la gravité est appréciée selon que les violences :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00044",
+                      "• ont entraîné la mort ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00045",
+                      "• ont entraîné une mutilation ou une infirmité permanente ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00046",
+                      "• ont entraîné une I.T.T. > 8 jours ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00047",
+                      "• n’ont pas entraîné d’I.T.T. > 8 jours.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : brimades ayant plongé une salariée dans un état anxio-dépressif grave avec I.T.T. > 8 jours ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00048",
+                      "Jurisprudence : brimades ayant plongé une salariée dans un état anxio-dépressif grave avec I.T.T. > 8 jours ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 4 mars 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00049",
+                      "(Cass. crim., 4 mars 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -269,14 +475,26 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+              "f00050",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délit est consommé lorsque les violences sont intentionnelles : "
-                "l’auteur agit avec la conscience que son acte va affecter l’intégrité physique et/ou psychique d’autrui.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00051",
+                      "Le délit est consommé lorsque les violences sont intentionnelles : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                      "f00052",
+                      "l’auteur agit avec la conscience que son acte va affecter l’intégrité physique et/ou psychique d’autrui.",
+                    ),
               ),
             ],
           ),
@@ -285,118 +503,235 @@ class PaViolencesHabituellesCoupleExPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+              "f00053",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [_Paragraph("Aucune (au titre de cette fiche).")],
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00054",
+                  "Aucune (au titre de cette fiche).",
+                ),
+              ),
+            ],
           ),
 
           const SizedBox(height: 14),
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+              "f00055",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Violences habituelles (I.T.T. de 0 à 8 jours) : ",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00056",
+                  "Peines encourues — personnes physiques",
                 ),
-                TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
-                ),
-                TextSpan(
-                  text: "article 222-14 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: "."),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Violences habituelles (I.T.T. > 8 jours) : ",
-                ),
-                TextSpan(
-                  text: "10 ans d’emprisonnement et 150 000 € d’amende — ",
-                ),
-                TextSpan(
-                  text: "article 222-14 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: "."),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Mutilation ou infirmité permanente : "),
-                TextSpan(
-                  text: "20 ans de réclusion criminelle + période de sûreté — ",
-                ),
-                TextSpan(
-                  text: "article 222-14 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: "."),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Mort sans intention de la donner : "),
-                TextSpan(
-                  text: "30 ans de réclusion criminelle + période de sûreté — ",
-                ),
-                TextSpan(
-                  text: "article 222-14 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: "."),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Les personnes morales encourent les peines prévues par ",
-                ),
-                TextSpan(
-                  text: "l’article 222-16-1 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: "."),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(
-                text:
-                    "Tentative : NON pour les violences délictuelles (les textes ne visent pas la tentative).",
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En matière criminelle, la tentative est théoriquement punissable, mais elle est difficile à établir car l’infraction dépend en partie du résultat (mort, infirmité, etc.). ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00057",
+                    "Violences habituelles (I.T.T. de 0 à 8 jours) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(article 121-4 (2°) du Code pénal)",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00058",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00059",
+                    "article 222-14 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00060",
+                    "Violences habituelles (I.T.T. > 8 jours) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00061",
+                    "10 ans d’emprisonnement et 150 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00062",
+                    "article 222-14 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00063",
+                    "Mutilation ou infirmité permanente : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00064",
+                    "20 ans de réclusion criminelle + période de sûreté — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00065",
+                    "article 222-14 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00066",
+                    "Mort sans intention de la donner : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00067",
+                    "30 ans de réclusion criminelle + période de sûreté — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00068",
+                    "article 222-14 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00069",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00070",
+                    "Les personnes morales encourent les peines prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00071",
+                    "l’article 222-16-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00072",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                  "f00073",
+                  "Tentative : NON pour les violences délictuelles (les textes ne visent pas la tentative).",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00074",
+                    "En matière criminelle, la tentative est théoriquement punissable, mais elle est difficile à établir car l’infraction dépend en partie du résultat (mort, infirmité, etc.). ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00075",
+                    "(article 121-4 (2°) du Code pénal)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00076",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00077",
+                    "l’article 121-6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart",
+                    "f00078",
+                    "l’article 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -656,9 +991,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

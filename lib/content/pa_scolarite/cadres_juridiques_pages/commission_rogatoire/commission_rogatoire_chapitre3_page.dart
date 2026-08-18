@@ -12,7 +12,6 @@ class PaCommissionRogatoireChapitre3Page extends StatelessWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-
     const cardBlueAccent = Color(0xFF1565C0);
 
     const cardGreenAccent = Color(0xFF2E7D32);

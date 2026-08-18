@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — LA TENTATIVE INFRUCTUEUSE
@@ -44,7 +45,11 @@ class LdPersonnesPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'La légitime défense – Personnes',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+            "f00001",
+            'La légitime défense – Personnes',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -59,7 +64,11 @@ class LdPersonnesPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            'I. La légitime défense d’une personne\n(Article 122-5 du Code Pénal.)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+              "f00002",
+              'I. La légitime défense d’une personne\n(Article 122-5 du Code Pénal.)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -68,10 +77,26 @@ class LdPersonnesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'N’est pas pénalement responsable la personne qui, face à une atteinte '
-            'injustifiée envers elle-même ou autrui, réagit dans le même temps '
-            'par un acte dicté par la nécessité de la défense, sauf disproportion '
-            'entre les moyens employés et la gravité de l’atteinte.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                  "f00003",
+                  'N’est pas pénalement responsable la personne qui, face à une atteinte ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                  "f00004",
+                  'injustifiée envers elle-même ou autrui, réagit dans le même temps ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                  "f00005",
+                  'par un acte dicté par la nécessité de la défense, sauf disproportion ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                  "f00006",
+                  'entre les moyens employés et la gravité de l’atteinte.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 14,
@@ -82,7 +107,11 @@ class LdPersonnesPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           Text(
-            'En pratique, la légitime défense repose sur deux blocs :',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+              "f00007",
+              'En pratique, la légitime défense repose sur deux blocs :',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 14,
@@ -93,15 +122,23 @@ class LdPersonnesPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           // ===== BULLETS INTRO =====
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text: 'Atteinte INJUSTIFIÉE, ACTUELLE et RÉELLE.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                "f00008",
+                'Atteinte INJUSTIFIÉE, ACTUELLE et RÉELLE.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
           ]),
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text: 'Défense NÉCESSAIRE, SIMULTANÉE et PROPORTIONNÉE.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                "f00009",
+                'Défense NÉCESSAIRE, SIMULTANÉE et PROPORTIONNÉE.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
           ]),
@@ -112,22 +149,38 @@ class LdPersonnesPage extends StatelessWidget {
           // 1 — ATTEINTE SUBIE
           // ============================================
           _HypoCard(
-            title: '1. L’atteinte subie',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+              "f00010",
+              '1. L’atteinte subie',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Pour invoquer la légitime défense, la personne doit être confrontée '
-                'à une atteinte clairement caractérisée. Trois conditions cumulatives sont exigées.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                      "f00011",
+                      'Pour invoquer la légitime défense, la personne doit être confrontée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                      "f00012",
+                      'à une atteinte clairement caractérisée. Trois conditions cumulatives sont exigées.',
+                    ),
               ),
               SizedBox(height: 10),
 
               // ----- INJUSTIFIÉE -----
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'INJUSTIFIÉE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00013",
+                    'INJUSTIFIÉE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -135,8 +188,16 @@ class LdPersonnesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : sans motif légitime, contraire au droit. Aucun droit de riposte '
-                      'contre une action régulière de police.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                        "f00014",
+                        ' : sans motif légitime, contraire au droit. Aucun droit de riposte ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                        "f00015",
+                        'contre une action régulière de police.',
+                      ),
                 ),
               ]),
 
@@ -151,15 +212,27 @@ class LdPersonnesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : en cours ou imminente. Une attaque passée ne justifie pas '
-                      'une riposte de vengeance.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                        "f00016",
+                        ' : en cours ou imminente. Une attaque passée ne justifie pas ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                        "f00017",
+                        'une riposte de vengeance.',
+                      ),
                 ),
               ]),
 
               // ----- RÉELLE -----
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'RÉELLE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00018",
+                    'RÉELLE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -167,8 +240,16 @@ class LdPersonnesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : l’atteinte doit exister objectivement. Une simple peur subjective '
-                      'ne suffit pas.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                        "f00019",
+                        ' : l’atteinte doit exister objectivement. Une simple peur subjective ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                        "f00020",
+                        'ne suffit pas.',
+                      ),
                 ),
               ]),
 
@@ -179,9 +260,21 @@ class LdPersonnesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Une personne est saisie violemment au cou en pleine rue. '
-                        'L’attaque est injustifiée, actuelle et réelle : les conditions du premier '
-                        'bloc sont réunies.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                          "f00021",
+                          'Une personne est saisie violemment au cou en pleine rue. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                          "f00022",
+                          'L’attaque est injustifiée, actuelle et réelle : les conditions du premier ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                          "f00023",
+                          'bloc sont réunies.',
+                        ),
                   ),
                 ],
               ),
@@ -194,60 +287,93 @@ class LdPersonnesPage extends StatelessWidget {
           // 2 — ACTE DE DÉFENSE
           // ============================================
           _HypoCard(
-            title: '2. L’acte de défense',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+              "f00024",
+              '2. L’acte de défense',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La riposte doit également respecter trois exigences cumulatives pour '
-                'être couverte par la légitime défense.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                      "f00025",
+                      'La riposte doit également respecter trois exigences cumulatives pour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                      "f00026",
+                      'être couverte par la légitime défense.',
+                    ),
               ),
               SizedBox(height: 10),
 
               // ----- NÉCESSAIRE -----
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'NÉCESSAIRE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00027",
+                    'NÉCESSAIRE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' : pas d’alternative raisonnable (fuite impossible, aide indisponible).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00028",
+                    ' : pas d’alternative raisonnable (fuite impossible, aide indisponible).',
+                  ),
                 ),
               ]),
 
               // ----- SIMULTANÉE -----
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'SIMULTANÉE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00029",
+                    'SIMULTANÉE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' : la défense doit intervenir au même moment que l’atteinte.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00030",
+                    ' : la défense doit intervenir au même moment que l’atteinte.',
+                  ),
                 ),
               ]),
 
               // ----- PROPORTIONNÉE -----
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'PROPORTIONNÉE',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00031",
+                    'PROPORTIONNÉE',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' : les moyens utilisés doivent rester adaptés à la gravité du danger.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                    "f00032",
+                    ' : les moyens utilisés doivent rester adaptés à la gravité du danger.',
+                  ),
                 ),
               ]),
 
@@ -257,25 +383,47 @@ class LdPersonnesPage extends StatelessWidget {
                 title: 'Exemples',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        '• Une personne repousse un agresseur qui la frappe : une riposte mesurée peut être admise.\n',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                      "f00033",
+                      '• Une personne repousse un agresseur qui la frappe : une riposte mesurée peut être admise.\n',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        '• Tirer sur un agresseur légèrement armé ou déjà en fuite rompt la proportionnalité.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                      "f00034",
+                      '• Tirer sur un agresseur légèrement armé ou déjà en fuite rompt la proportionnalité.',
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: 'À retenir',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                  "f00035",
+                  'À retenir',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Si les conditions sont remplies, la légitime défense efface '
-                        'la responsabilité pénale. Les juges vérifient strictement la réalité '
-                        'du danger et la proportion de la riposte.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                          "f00036",
+                          'Si les conditions sont remplies, la légitime défense efface ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                          "f00037",
+                          'la responsabilité pénale. Les juges vérifient strictement la réalité ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/legitime_defense/ld_personnes_page.dart",
+                          "f00038",
+                          'du danger et la proportion de la riposte.',
+                        ),
                   ),
                 ],
               ),

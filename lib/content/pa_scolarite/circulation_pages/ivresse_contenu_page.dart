@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaIvressePage extends StatelessWidget {
   const PaIvressePage({super.key});
@@ -59,10 +60,18 @@ class PaIvressePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infraction circulation routière",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+            "f00002",
+            "Infraction circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaIvressePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La conduite en état d’ivresse manifeste",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+              "f00003",
+              "La conduite en état d’ivresse manifeste",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,14 +102,26 @@ class PaIvressePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de conduire un véhicule en état d’ivresse manifeste constitue une infraction.\n"
-                "Ces dispositions sont applicables à l’accompagnateur d’un élève conducteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00005",
+                      "Le fait de conduire un véhicule en état d’ivresse manifeste constitue une infraction.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00006",
+                      "Ces dispositions sont applicables à l’accompagnateur d’un élève conducteur.",
+                    ),
               ),
             ],
           ),
@@ -105,23 +130,36 @@ class PaIvressePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 234-1 / II et V du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00008",
+                    "Article L. 234-1 / II et V du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit et réprime le fait de conduire un véhicule ou d’accompagner un élève conducteur "
-                      "en se trouvant en état d’ivresse manifeste.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00009",
+                        " : définit et réprime le fait de conduire un véhicule ou d’accompagner un élève conducteur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00010",
+                        "en se trouvant en état d’ivresse manifeste.",
+                      ),
                 ),
               ]),
             ],
@@ -131,37 +169,90 @@ class PaIvressePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une personne visée"),
-              _SubTitle("1) Un conducteur de véhicule"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00012",
+                  "A) Une personne visée",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00013",
+                  "1) Un conducteur de véhicule",
+                ),
+              ),
               _Paragraph(
-                "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, véhicules de transport en commun, "
-                "motocyclettes, cyclomoteurs, matériels agricoles et forestiers, engins de travaux publics, engins spéciaux, trolleybus), "
-                "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00014",
+                      "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, véhicules de transport en commun, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00015",
+                      "motocyclettes, cyclomoteurs, matériels agricoles et forestiers, engins de travaux publics, engins spéciaux, trolleybus), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00016",
+                      "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("2) Un accompagnateur d’élève conducteur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00017",
+                  "2) Un accompagnateur d’élève conducteur",
+                ),
+              ),
               _Paragraph(
-                "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre "
-                "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00018",
+                      "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00019",
+                      "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00020",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les seuls faits d’avoir pris le volant, mis le contact et enclenché une vitesse suffisent pour caractériser la conduite d’un véhicule ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00021",
+                      "Les seuls faits d’avoir pris le volant, mis le contact et enclenché une vitesse suffisent pour caractériser la conduite d’un véhicule ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 23 mars 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00022",
+                      "(Cass. crim., 23 mars 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -172,14 +263,25 @@ class PaIvressePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00023",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’infraction peut être relevée même si le prévenu vient de quitter son véhicule, dès lors qu’il peut être prouvé qu’il l’a conduit sous l’emprise de l’alcool ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00024",
+                      "L’infraction peut être relevée même si le prévenu vient de quitter son véhicule, dès lors qu’il peut être prouvé qu’il l’a conduit sous l’emprise de l’alcool ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 7 mars 1989)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00025",
+                      "(Cass. crim., 7 mars 1989)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -192,41 +294,79 @@ class PaIvressePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) La preuve de l’alcoolémie (ivresse manifeste)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00026",
+                  "B) La preuve de l’alcoolémie (ivresse manifeste)",
+                ),
               ),
               _Paragraph(
-                "Certaines personnes particulièrement sensibles à l’alcool peuvent présenter des signes d’ivresse "
-                "alors qu’elles ont un taux inférieur au seuil légal.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00027",
+                      "Certaines personnes particulièrement sensibles à l’alcool peuvent présenter des signes d’ivresse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00028",
+                      "alors qu’elles ont un taux inférieur au seuil légal.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’état d’ivresse s’établit par des constatations matérielles portant sur le comportement de la personne : "
-                "haleine sentant fortement l’alcool, excitation, propos incohérents, titubation, imprécision des réflexes, "
-                "perte de concentration, etc.\n"
-                "Il ne dépend donc pas de la quantité d’alcool dans l’organisme : le taux peut être inférieur au seuil légal.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00029",
+                      "L’état d’ivresse s’établit par des constatations matérielles portant sur le comportement de la personne : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00030",
+                      "haleine sentant fortement l’alcool, excitation, propos incohérents, titubation, imprécision des réflexes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00031",
+                      "perte de concentration, etc.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00032",
+                      "Il ne dépend donc pas de la quantité d’alcool dans l’organisme : le taux peut être inférieur au seuil légal.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "L’auteur présumé doit être soumis aux vérifications destinées à établir l’état alcoolique. "
-                      "Il peut y être soumis directement, sans dépistage préalable (",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00033",
+                        "L’auteur présumé doit être soumis aux vérifications destinées à établir l’état alcoolique. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00034",
+                        "Il peut y être soumis directement, sans dépistage préalable (",
+                      ),
                 ),
                 TextSpan(
-                  text: "article L. 234-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00035",
+                    "article L. 234-6 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "Cass. crim., 9 octobre 1984",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00036",
+                    "Cass. crim., 9 octobre 1984",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
@@ -238,8 +378,16 @@ class PaIvressePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les juges du fond peuvent recourir à tout autre moyen de preuve pour se prononcer sur la culpabilité "
-                        "conformément à leur intime conviction, même si les vérifications n’aboutissent à aucun résultat positif.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                          "f00037",
+                          "Les juges du fond peuvent recourir à tout autre moyen de preuve pour se prononcer sur la culpabilité ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                          "f00038",
+                          "conformément à leur intime conviction, même si les vérifications n’aboutissent à aucun résultat positif.",
+                        ),
                   ),
                 ],
               ),
@@ -250,25 +398,37 @@ class PaIvressePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+              "f00039",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté de conduire après avoir consommé de l’alcool",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00040",
+                  "Volonté de conduire après avoir consommé de l’alcool",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’élément moral peut résulter du simple fait de consommer de l’alcool alors que le conducteur sait qu’il va prendre le volant ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00041",
+                    "L’élément moral peut résulter du simple fait de consommer de l’alcool alors que le conducteur sait qu’il va prendre le volant ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 19 décembre 1994)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00042",
+                    "(Cass. crim., 19 décembre 1994)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -279,27 +439,54 @@ class PaIvressePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+              "f00043",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est prévue pour ce délit.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00044",
+                  "Aucune circonstance aggravante spécifique n’est prévue pour ce délit.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00045",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La conduite d’un véhicule terrestre à moteur en état d’ivresse manifeste peut aggraver les peines "
-                        "en cas d’homicide involontaire ou d’atteintes involontaires : le délit d’ivresse manifeste peut alors constituer "
-                        "une circonstance aggravante (",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                          "f00046",
+                          "La conduite d’un véhicule terrestre à moteur en état d’ivresse manifeste peut aggraver les peines ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                          "f00047",
+                          "en cas d’homicide involontaire ou d’atteintes involontaires : le délit d’ivresse manifeste peut alors constituer ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                          "f00048",
+                          "une circonstance aggravante (",
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                      "f00049",
+                      "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -315,72 +502,149 @@ class PaIvressePage extends StatelessWidget {
 
           // Répression + tentative/complicité + immunités
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+              "f00050",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00051",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : "),
-                TextSpan(text: "délit. "),
-                TextSpan(text: "Peines principales : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 4 500 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00052",
+                    "Qualification : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 234-1 / II du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00053",
+                    "délit. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00054",
+                    "Peines principales : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00055",
+                    "2 ans d’emprisonnement et 4 500 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00056",
+                    "article L. 234-1 / II du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00057",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00058",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00059",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00060",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00061",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide ou assistance ayant facilité la préparation ou la commission de l’infraction).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00062",
+                    " (aide ou assistance ayant facilité la préparation ou la commission de l’infraction).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Immunité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                  "f00063",
+                  "Immunité",
+                ),
+              ),
               _SubTitle("Diplomates"),
               _Paragraph.rich([
-                TextSpan(text: "La convention de Vienne ("),
                 TextSpan(
-                  text: "article 27, décret 71-284 du 29/03/1971",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00064",
+                    "La convention de Vienne (",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00065",
+                    "article 27, décret 71-284 du 29/03/1971",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      ") prévoit que les diplomates ne peuvent être soumis à aucune forme d’arrestation. "
-                      "En conséquence, il convient de ne pas leur faire subir de dépistage ou de vérification de l’alcoolémie.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00066",
+                        ") prévoit que les diplomates ne peuvent être soumis à aucune forme d’arrestation. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00067",
+                        "En conséquence, il convient de ne pas leur faire subir de dépistage ou de vérification de l’alcoolémie.",
+                      ),
                 ),
               ]),
 
@@ -388,21 +652,48 @@ class PaIvressePage extends StatelessWidget {
 
               _SubTitle("Parlementaires"),
               _Paragraph.rich([
-                TextSpan(text: "La Constitution de 1958 ("),
                 TextSpan(
-                  text: "article 26",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00068",
+                    "La Constitution de 1958 (",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                    "f00069",
+                    "article 26",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      ") consacre l’inviolabilité des parlementaires : hors le cas du flagrant délit, on ne peut poursuivre "
-                      "ou arrêter un parlementaire en cas de crime ou de délit (sauf autorisation).\n"
-                      "Concernant le dépistage de l’alcoolémie, obligatoire à la suite d’un flagrant délit "
-                      "(accident mortel ou corporel grave, etc.), rien ne s’oppose à ce qu’il soit effectué, "
-                      "mais lorsque cela est possible, le procureur doit être préalablement informé.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00070",
+                        ") consacre l’inviolabilité des parlementaires : hors le cas du flagrant délit, on ne peut poursuivre ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00071",
+                        "ou arrêter un parlementaire en cas de crime ou de délit (sauf autorisation).\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00072",
+                        "Concernant le dépistage de l’alcoolémie, obligatoire à la suite d’un flagrant délit ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00073",
+                        "(accident mortel ou corporel grave, etc.), rien ne s’oppose à ce qu’il soit effectué, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart",
+                        "f00074",
+                        "mais lorsque cela est possible, le procureur doit être préalablement informé.",
+                      ),
                 ),
               ]),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ReleveIdentiteGpxSchool extends StatelessWidget {
   const ReleveIdentiteGpxSchool({super.key});
@@ -38,10 +39,18 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Chapitre 2 — Relevé d’identité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+            "f00002",
+            'Chapitre 2 — Relevé d’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO ============================
           Text(
-            'Le relevé d’identité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+              "f00003",
+              'Le relevé d’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,8 +77,16 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Rôle du relevé d’identité, agents habilités, infractions concernées et articulation avec le contrôle '
-            'et la vérification d’identité.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00004",
+                  'Rôle du relevé d’identité, agents habilités, infractions concernées et articulation avec le contrôle ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00005",
+                  'et la vérification d’identité.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -76,174 +97,423 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: 'Chapitre 2 — Le relevé d’identité',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+              "f00006",
+              'Chapitre 2 — Le relevé d’identité',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               // ===================== EN-TÊTE CHAPITRE ====================
-              const _SubTitle('Fondement juridique'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00007",
+                  'Fondement juridique',
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Le relevé d’identité trouve son fondement dans les dispositions de ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00008",
+                    'Le relevé d’identité trouve son fondement dans les dispositions de ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 78-6 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00009",
+                    'l’article 78-6 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      '. Ce texte permet aux volontaires servant en qualité de militaire dans la gendarmerie et aux '
-                      'militaires de la réserve opérationnelle de la gendarmerie (',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                        "f00010",
+                        '. Ce texte permet aux volontaires servant en qualité de militaire dans la gendarmerie et aux ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                        "f00011",
+                        'militaires de la réserve opérationnelle de la gendarmerie (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 21, 1° bis du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00012",
+                    'article 21, 1° bis du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      '), aux policiers adjoints et aux membres de la réserve opérationnelle de la police nationale (',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00013",
+                    '), aux policiers adjoints et aux membres de la réserve opérationnelle de la police nationale (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 21, 1° ter du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00014",
+                    'article 21, 1° ter du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      '), aux contrôleurs des administrations parisiennes exerçant leurs fonctions dans la spécialité '
-                      'voie publique et aux agents de surveillance de Paris (',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                        "f00015",
+                        '), aux contrôleurs des administrations parisiennes exerçant leurs fonctions dans la spécialité ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                        "f00016",
+                        'voie publique et aux agents de surveillance de Paris (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 21, 1° quater du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00017",
+                    'article 21, 1° quater du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
-                  text: ') ainsi qu’aux agents de police municipale (',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00018",
+                    ') ainsi qu’aux agents de police municipale (',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 21, 2° du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                    "f00019",
+                    'article 21, 2° du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ') de relever l’identité des contrevenants pour dresser les procès-verbaux de certaines '
-                      'contraventions.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                        "f00020",
+                        ') de relever l’identité des contrevenants pour dresser les procès-verbaux de certaines ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                        "f00021",
+                        'contraventions.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle('Infractions concernées'),
-              const _Paragraph(
-                'Le relevé d’identité peut être effectué à l’encontre des contrevenants aux arrêtés de police du maire, '
-                'aux dispositions du code de la route dont la liste est fixée par décret en Conseil d’État, ou encore '
-                'en vertu d’une disposition législative expresse (par exemple en matière de publicité, d’enseignes et '
-                'de pré-enseignes, article L. 581-40 du code de l’environnement).',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00022",
+                  'Infractions concernées',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00023",
+                      'Le relevé d’identité peut être effectué à l’encontre des contrevenants aux arrêtés de police du maire, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00024",
+                      'aux dispositions du code de la route dont la liste est fixée par décret en Conseil d’État, ou encore ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00025",
+                      'en vertu d’une disposition législative expresse (par exemple en matière de publicité, d’enseignes et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00026",
+                      'de pré-enseignes, article L. 581-40 du code de l’environnement).',
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle('Nature du relevé d’identité'),
-              const _Paragraph(
-                'Le relevé d’identité d’une personne est une opération de nature judiciaire : une infraction doit avoir '
-                'été préalablement commise pour pouvoir y procéder. Il s’agit d’une procédure intermédiaire entre le '
-                'recueil d’identité et le contrôle d’identité.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00027",
+                  'Nature du relevé d’identité',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00028",
+                      'Le relevé d’identité d’une personne est une opération de nature judiciaire : une infraction doit avoir ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00029",
+                      'été préalablement commise pour pouvoir y procéder. Il s’agit d’une procédure intermédiaire entre le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00030",
+                      'recueil d’identité et le contrôle d’identité.',
+                    ),
               ),
               const SizedBox(height: 8),
 
-              const _Paragraph(
-                'Le recueil d’identité permet de demander l’identité à un contrevenant sans pouvoir exiger de celui-ci '
-                'un document justificatif. Dans ce cas, l’agent verbalisateur se fonde sur la bonne foi du contrevenant, '
-                'sauf à requérir l’assistance d’un agent de police judiciaire ou d’un officier de police judiciaire.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00031",
+                      'Le recueil d’identité permet de demander l’identité à un contrevenant sans pouvoir exiger de celui-ci ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00032",
+                      'un document justificatif. Dans ce cas, l’agent verbalisateur se fonde sur la bonne foi du contrevenant, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00033",
+                      'sauf à requérir l’assistance d’un agent de police judiciaire ou d’un officier de police judiciaire.',
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle('Pouvoirs des agents de police judiciaire adjoints'),
-              const _Paragraph(
-                'Les agents de police judiciaire adjoints précités peuvent, quant à eux, exiger du contrevenant la '
-                'présentation d’une pièce d’identité afin d’en relever les mentions. Le plus souvent, le relevé d’identité '
-                's’effectue au moyen des pièces administratives relatives à la conduite et à la circulation des véhicules.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00034",
+                  'Pouvoirs des agents de police judiciaire adjoints',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00035",
+                      'Les agents de police judiciaire adjoints précités peuvent, quant à eux, exiger du contrevenant la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00036",
+                      'présentation d’une pièce d’identité afin d’en relever les mentions. Le plus souvent, le relevé d’identité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00037",
+                      's’effectue au moyen des pièces administratives relatives à la conduite et à la circulation des véhicules.',
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle('Refus ou impossibilité de justifier de son identité'),
-              const _Paragraph(
-                'En cas de refus ou d’impossibilité pour le contrevenant de justifier de son identité, l’agent de police '
-                'judiciaire adjoint en rend compte à l’officier de police judiciaire territorialement compétent, qui peut '
-                'ordonner que la personne lui soit immédiatement présentée aux fins de vérification d’identité ou de '
-                'retenir celle-ci pendant le temps nécessaire à son arrivée ou à celle d’un agent de police judiciaire '
-                'agissant sous son contrôle. À défaut d’un tel ordre, l’agent de police judiciaire adjoint ne peut retenir '
-                'le contrevenant.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00038",
+                  'Refus ou impossibilité de justifier de son identité',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00039",
+                      'En cas de refus ou d’impossibilité pour le contrevenant de justifier de son identité, l’agent de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00040",
+                      'judiciaire adjoint en rend compte à l’officier de police judiciaire territorialement compétent, qui peut ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00041",
+                      'ordonner que la personne lui soit immédiatement présentée aux fins de vérification d’identité ou de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00042",
+                      'retenir celle-ci pendant le temps nécessaire à son arrivée ou à celle d’un agent de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00043",
+                      'agissant sous son contrôle. À défaut d’un tel ordre, l’agent de police judiciaire adjoint ne peut retenir ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00044",
+                      'le contrevenant.',
+                    ),
               ),
               const SizedBox(height: 8),
 
-              const _Paragraph(
-                'Pendant le temps nécessaire à l’information et à la décision de l’officier de police judiciaire, l’agent de '
-                'police judiciaire adjoint peut maintenir le contrevenant sur place et faire usage de la coercition si ce '
-                'dernier refuse. La violation de cette obligation est punie de deux mois d’emprisonnement et de 7 500 euros '
-                'd’amende. La rétention sur la voie publique ne doit pas excéder le temps rigoureusement nécessaire pour '
-                'joindre l’officier de police judiciaire et recueillir ses instructions.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00045",
+                      'Pendant le temps nécessaire à l’information et à la décision de l’officier de police judiciaire, l’agent de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00046",
+                      'police judiciaire adjoint peut maintenir le contrevenant sur place et faire usage de la coercition si ce ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00047",
+                      'dernier refuse. La violation de cette obligation est punie de deux mois d’emprisonnement et de 7 500 euros ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00048",
+                      'd’amende. La rétention sur la voie publique ne doit pas excéder le temps rigoureusement nécessaire pour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00049",
+                      'joindre l’officier de police judiciaire et recueillir ses instructions.',
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Outre les agents de police judiciaire adjoints précités, le législateur a autorisé, pour certains '
-                        'domaines de réglementation particuliers, d’autres agents de contrôle à relever l’identité des '
-                        'contrevenants. ',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                          "f00050",
+                          'Outre les agents de police judiciaire adjoints précités, le législateur a autorisé, pour certains ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                          "f00051",
+                          'domaines de réglementation particuliers, d’autres agents de contrôle à relever l’identité des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                          "f00052",
+                          'contrevenants. ',
+                        ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00053",
+                      'Ainsi, les agents de l’exploitant d’un service public de transports terrestres',
+                    ),
                   ),
                   TextSpan(
                     text:
-                        'Ainsi, les agents de l’exploitant d’un service public de transports terrestres',
-                  ),
-                  TextSpan(
-                    text:
-                        ' (SNCF, RATP, etc.) sont habilités par l’article L. 2241-2 du code des transports, dans les '
-                        'conditions prévues par l’article 529-4 du code de procédure pénale, à relever l’identité et '
-                        'l’adresse des contrevenants, lorsque plusieurs conditions sont réunies :',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                          "f00054",
+                          ' (SNCF, RATP, etc.) sont habilités par l’article L. 2241-2 du code des transports, dans les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                          "f00055",
+                          'conditions prévues par l’article 529-4 du code de procédure pénale, à relever l’identité et ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                          "f00056",
+                          'l’adresse des contrevenants, lorsque plusieurs conditions sont réunies :',
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
 
-              const _BulletPoint(
-                text:
-                    'Ils ont été agréés par le procureur de la République et assermentés.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00057",
+                  'Ils ont été agréés par le procureur de la République et assermentés.',
+                ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Le relevé concerne des contraventions des quatre premières classes à la police des services publics '
-                    'de transports terrestres pouvant donner lieu à transaction, ou la contravention prévue à l’article '
-                    'R. 625-8-3 du code pénal (outrage sexiste et sexuel).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00058",
+                      'Le relevé concerne des contraventions des quatre premières classes à la police des services publics ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00059",
+                      'de transports terrestres pouvant donner lieu à transaction, ou la contravention prévue à l’article ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00060",
+                      'R. 625-8-3 du code pénal (outrage sexiste et sexuel).',
+                    ),
               ),
-              const _BulletPoint(
-                text:
-                    'Ils n’ont pas reçu immédiatement paiement entre leurs mains.',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                  "f00061",
+                  'Ils n’ont pas reçu immédiatement paiement entre leurs mains.',
+                ),
               ),
               const SizedBox(height: 10),
 
-              const _Paragraph(
-                'Si le contrevenant refuse ou se déclare dans l’impossibilité de justifier de son identité, ces agents '
-                'avisent sans délai un officier de police judiciaire. Ils peuvent garder à disposition la personne auteur '
-                'de l’infraction, qui fait alors l’objet d’une rétention jusqu’à l’arrivée sur place de l’officier de police '
-                'judiciaire ou de l’agent de police judiciaire agissant sous son contrôle. L’officier de police judiciaire '
-                'peut également demander à ce que la personne soit conduite devant lui.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00062",
+                      'Si le contrevenant refuse ou se déclare dans l’impossibilité de justifier de son identité, ces agents ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00063",
+                      'avisent sans délai un officier de police judiciaire. Ils peuvent garder à disposition la personne auteur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00064",
+                      'de l’infraction, qui fait alors l’objet d’une rétention jusqu’à l’arrivée sur place de l’officier de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00065",
+                      'judiciaire ou de l’agent de police judiciaire agissant sous son contrôle. L’officier de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart",
+                      "f00066",
+                      'peut également demander à ce que la personne soit conduite devant lui.',
+                    ),
               ),
             ],
           ),
@@ -499,9 +769,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

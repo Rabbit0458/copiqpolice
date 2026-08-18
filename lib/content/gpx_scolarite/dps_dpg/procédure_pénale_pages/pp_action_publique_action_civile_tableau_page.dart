@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PPActionPubliqueActionCivileTableauPage extends StatelessWidget {
   const PPActionPubliqueActionCivileTableauPage({super.key});
@@ -52,7 +53,11 @@ class PPActionPubliqueActionCivileTableauPage extends StatelessWidget {
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
         title: Text(
-          "Actions publique et civile",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+            "f00001",
+            "Actions publique et civile",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w700),
         ),
         elevation: 1,
@@ -87,7 +92,14 @@ class PPActionPubliqueActionCivileTableauPage extends StatelessWidget {
                         ),
                       ),
                       alignment: Alignment.center,
-                      child: Text("ACTION PUBLIQUE", style: headerStyle),
+                      child: Text(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                          "f00002",
+                          "ACTION PUBLIQUE",
+                        ),
+                        style: headerStyle,
+                      ),
                     ),
                   ),
                   Expanded(
@@ -100,7 +112,14 @@ class PPActionPubliqueActionCivileTableauPage extends StatelessWidget {
                         ),
                       ),
                       alignment: Alignment.center,
-                      child: Text("ACTION CIVILE", style: headerStyle),
+                      child: Text(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                          "f00003",
+                          "ACTION CIVILE",
+                        ),
+                        style: headerStyle,
+                      ),
                     ),
                   ),
                 ],
@@ -109,98 +128,289 @@ class PPActionPubliqueActionCivileTableauPage extends StatelessWidget {
               // --------------------- TABLE BODY ---------------------
               _row(
                 leftTitle: "ORIGINE",
-                left: "Une infraction pénale ayant causé ou non un préjudice",
+                left: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00004",
+                  "Une infraction pénale ayant causé ou non un préjudice",
+                ),
                 rightTitle: "ORIGINE",
-                right: "Une infraction pénale ayant causé un préjudice",
+                right: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00005",
+                  "Une infraction pénale ayant causé un préjudice",
+                ),
               ),
 
               _row(
                 leftTitle: "OBJET",
-                left: "Faire appliquer une peine",
+                left: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00006",
+                  "Faire appliquer une peine",
+                ),
                 rightTitle: "OBJET",
-                right: "Obtenir la réparation du préjudice causé",
+                right: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00007",
+                  "Obtenir la réparation du préjudice causé",
+                ),
               ),
 
               _row(
-                leftTitle: "MISE EN MOUVEMENT",
+                leftTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00008",
+                  "MISE EN MOUVEMENT",
+                ),
                 leftWidget: _rich([
-                  "Par :\n",
-                  " - les magistrats du ministère public (Parquet – Maires, Commissaires ou Officiers)\n",
-                  " - Exceptionnellement par les fonctionnaires de certaines administrations\n\n",
-                  "Indirectement : la personne lésée ou ses ayants droit",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00009",
+                    "Par :\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00010",
+                    " - les magistrats du ministère public (Parquet – Maires, Commissaires ou Officiers)\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00011",
+                    " - Exceptionnellement par les fonctionnaires de certaines administrations\n\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00012",
+                    "Indirectement : la personne lésée ou ses ayants droit",
+                  ),
                 ]),
-                rightTitle: "MISE EN MOUVEMENT",
-                right:
-                    "Par la personne lésée, ses ayants droit ou certaines personnes morales agissant pour la défense d’intérêts collectifs\n\n→ Constitution de partie civile",
+                rightTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00013",
+                  "MISE EN MOUVEMENT",
+                ),
+                right: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00014",
+                  "Par la personne lésée, ses ayants droit ou certaines personnes morales agissant pour la défense d’intérêts collectifs\n\n→ Constitution de partie civile",
+                ),
               ),
 
               _row(
-                leftTitle: "COMPÉTENCE",
-                left: "Juridictions répressives",
-                rightTitle: "COMPÉTENCE",
-                right: "Juridictions civiles et juridictions répressives",
+                leftTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00015",
+                  "COMPÉTENCE",
+                ),
+                left: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00016",
+                  "Juridictions répressives",
+                ),
+                rightTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00017",
+                  "COMPÉTENCE",
+                ),
+                right: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00018",
+                  "Juridictions civiles et juridictions répressives",
+                ),
               ),
 
               _row(
                 leftTitle: "EXERCICE",
                 leftWidget: _rich([
-                  "MINISTÈRE PUBLIC\n",
-                  "Exceptionnellement : certaines administrations",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00019",
+                    "MINISTÈRE PUBLIC\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00020",
+                    "Exceptionnellement : certaines administrations",
+                  ),
                 ]),
                 rightTitle: "EXERCICE",
                 rightWidget: _rich([
-                  "PERSONNE LÉSÉE\n",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00021",
+                    "PERSONNE LÉSÉE\n",
+                  ),
                   "ou\n",
-                  "ses héritiers – ses créanciers",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00022",
+                    "ses héritiers – ses créanciers",
+                  ),
                 ]),
               ),
 
               _row(
-                leftTitle: "SUJET ACTIF",
-                left: "Auteur de l’infraction",
-                rightTitle: "SUJET ACTIF",
-                right: "Auteur de l’infraction",
+                leftTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00023",
+                  "SUJET ACTIF",
+                ),
+                left: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00024",
+                  "Auteur de l’infraction",
+                ),
+                rightTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00025",
+                  "SUJET ACTIF",
+                ),
+                right: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00026",
+                  "Auteur de l’infraction",
+                ),
               ),
 
               _row(
-                leftTitle: "SUJET PASSIF",
-                left: "La personne lésée",
-                rightTitle: "SUJET PASSIF",
+                leftTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00027",
+                  "SUJET PASSIF",
+                ),
+                left: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00028",
+                  "La personne lésée",
+                ),
+                rightTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00029",
+                  "SUJET PASSIF",
+                ),
                 rightWidget: _rich([
-                  "Auteur de l’infraction ou :\n",
-                  " - Ses héritiers\n",
-                  " - Personnes civilement responsables\n",
-                  " - Personne morale pour son préposé",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00030",
+                    "Auteur de l’infraction ou :\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00031",
+                    " - Ses héritiers\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00032",
+                    " - Personnes civilement responsables\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00033",
+                    " - Personne morale pour son préposé",
+                  ),
                 ]),
               ),
 
               _row(
-                leftTitle: "CLÔTURE",
-                left: "Condamnation à une peine",
-                rightTitle: "CLÔTURE",
-                right: "Condamnation à réparation",
+                leftTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00034",
+                  "CLÔTURE",
+                ),
+                left: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00035",
+                  "Condamnation à une peine",
+                ),
+                rightTitle: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00036",
+                  "CLÔTURE",
+                ),
+                right: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                  "f00037",
+                  "Condamnation à réparation",
+                ),
               ),
 
               _row(
                 leftTitle: "EXTINCTION",
                 leftWidget: _rich([
-                  " - Le décès de l’auteur de l’infraction\n",
-                  " - L’abrogation de la loi pénale\n",
-                  " - L’amnistie\n",
-                  " - L’exécution de la composition pénale\n",
-                  " - L’autorité de la chose jugée\n",
-                  " - La prescription\n",
-                  "Exceptionnellement :\n",
-                  " - Le retrait de la plainte\n",
-                  " - La transaction",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00038",
+                    " - Le décès de l’auteur de l’infraction\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00039",
+                    " - L’abrogation de la loi pénale\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00040",
+                    " - L’amnistie\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00041",
+                    " - L’exécution de la composition pénale\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00042",
+                    " - L’autorité de la chose jugée\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00043",
+                    " - La prescription\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00044",
+                    "Exceptionnellement :\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00045",
+                    " - Le retrait de la plainte\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00046",
+                    " - La transaction",
+                  ),
                 ]),
                 rightTitle: "EXTINCTION",
                 rightWidget: _rich([
-                  " - Le désistement\n",
-                  " - La transaction (accord de la victime – auteur)\n",
-                  " - L’acquiescement\n",
-                  " - L’autorité de la chose jugée\n",
-                  " - La prescription",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00047",
+                    " - Le désistement\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00048",
+                    " - La transaction (accord de la victime – auteur)\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00049",
+                    " - L’acquiescement\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00050",
+                    " - L’autorité de la chose jugée\n",
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_action_civile_tableau_page.dart",
+                    "f00051",
+                    " - La prescription",
+                  ),
                 ]),
               ),
             ],

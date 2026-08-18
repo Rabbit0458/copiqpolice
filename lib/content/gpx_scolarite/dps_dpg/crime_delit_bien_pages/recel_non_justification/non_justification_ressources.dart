@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class NonJustificationRessources extends StatelessWidget {
   const NonJustificationRessources({super.key});
@@ -59,10 +60,18 @@ class NonJustificationRessources extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre les biens",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+            "f00002",
+            "Crimes & délits contre les biens",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class NonJustificationRessources extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La non-justification de ressources",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+              "f00003",
+              "La non-justification de ressources",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,17 +102,41 @@ class NonJustificationRessources extends StatelessWidget {
 
           // ================= Définition =================
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de ne pas pouvoir justifier de ressources correspondant à son train de vie "
-                "ou de ne pas pouvoir justifier de l’origine d’un bien détenu, tout en étant en relations "
-                "habituelles avec une ou plusieurs personnes qui soit se livrent à la commission de crimes "
-                "ou délits punis d’au moins cinq ans d’emprisonnement et procurant un profit direct ou indirect, "
-                "soit sont les victimes d’une de ces infractions, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00005",
+                      "Le fait de ne pas pouvoir justifier de ressources correspondant à son train de vie ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00006",
+                      "ou de ne pas pouvoir justifier de l’origine d’un bien détenu, tout en étant en relations ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00007",
+                      "habituelles avec une ou plusieurs personnes qui soit se livrent à la commission de crimes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00008",
+                      "ou délits punis d’au moins cinq ans d’emprisonnement et procurant un profit direct ou indirect, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00009",
+                      "soit sont les victimes d’une de ces infractions, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -108,33 +145,48 @@ class NonJustificationRessources extends StatelessWidget {
 
           // ================= I — Élément légal (en haut) =================
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 321-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00011",
+                    "Article 321-6 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la non-justification de ressources.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00012",
+                    " : définit et réprime la non-justification de ressources.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Il existe des incriminations spécifiques en matière de : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00013",
+                      "Il existe des incriminations spécifiques en matière de : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "terrorisme (article 421-2-3 C.P.)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00014",
+                      "terrorisme (article 421-2-3 C.P.)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -142,7 +194,11 @@ class NonJustificationRessources extends StatelessWidget {
                   ),
                   TextSpan(text: ", "),
                   TextSpan(
-                    text: "proxénétisme (article 225-6 3° C.P.)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00015",
+                      "proxénétisme (article 225-6 3° C.P.)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -150,7 +206,11 @@ class NonJustificationRessources extends StatelessWidget {
                   ),
                   TextSpan(text: ", "),
                   TextSpan(
-                    text: "mendicité (article 225-12-5 alinéa 6 C.P.)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00016",
+                      "mendicité (article 225-12-5 alinéa 6 C.P.)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -166,36 +226,85 @@ class NonJustificationRessources extends StatelessWidget {
 
           // ================= II — Élément matériel =================
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+              "f00017",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Absence de justification"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00018",
+                  "A) Absence de justification",
+                ),
+              ),
               _Paragraph(
-                "L’infraction suppose :\n"
-                "• l’absence de justification de ressources correspondant au train de vie ; ou\n"
-                "• l’absence de justification de l’origine d’un bien détenu.\n"
-                "La preuve se construit à partir d’éléments objectifs (revenus connus, dépenses, patrimoine, mouvements de fonds, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00019",
+                      "L’infraction suppose :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00020",
+                      "• l’absence de justification de ressources correspondant au train de vie ; ou\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00021",
+                      "• l’absence de justification de l’origine d’un bien détenu.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00022",
+                      "La preuve se construit à partir d’éléments objectifs (revenus connus, dépenses, patrimoine, mouvements de fonds, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _SubTitle(
-                "1) Ressources ne correspondant pas au train de vie",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00023",
+                  "1) Ressources ne correspondant pas au train de vie",
+                ),
               ),
               _Paragraph(
-                "Le patrimoine ou le train de vie est sans rapport avec les revenus. "
-                "Il revient au mis en cause de justifier de ses moyens d’existence par des documents probants "
-                "(factures, bulletins de paye, déclarations de revenus…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00024",
+                      "Le patrimoine ou le train de vie est sans rapport avec les revenus. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00025",
+                      "Il revient au mis en cause de justifier de ses moyens d’existence par des documents probants ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00026",
+                      "(factures, bulletins de paye, déclarations de revenus…).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La loi n’édicte aucune présomption de responsabilité pénale : il appartient à l’accusation d’en rapporter la preuve ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00027",
+                      "La loi n’édicte aucune présomption de responsabilité pénale : il appartient à l’accusation d’en rapporter la preuve ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 13 juin 2012)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00028",
+                      "(Cass. crim., 13 juin 2012)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -208,11 +317,18 @@ class NonJustificationRessources extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Condamnation d’un couple (train de vie modeste) mais avoirs bancaires disproportionnés, nombreux mouvements de fonds et paiements en espèces ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00029",
+                      "Condamnation d’un couple (train de vie modeste) mais avoirs bancaires disproportionnés, nombreux mouvements de fonds et paiements en espèces ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 6 février 2008)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00030",
+                      "(Cass. crim., 6 février 2008)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -225,11 +341,18 @@ class NonJustificationRessources extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Possession d’importantes liquidités sans rapport avec les ressources issues de l’exploitation d’un bar-restaurant ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00031",
+                      "Possession d’importantes liquidités sans rapport avec les ressources issues de l’exploitation d’un bar-restaurant ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 19 mai 1999)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00032",
+                      "(Cass. crim., 19 mai 1999)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -241,20 +364,41 @@ class NonJustificationRessources extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Origine indéterminée d’un bien détenu"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00033",
+                  "2) Origine indéterminée d’un bien détenu",
+                ),
+              ),
               _Paragraph(
-                "L’infraction peut aussi porter sur un bien (mobilier ou immobilier) dont l’origine n’est pas justifiée. "
-                "La justification de la détention licite se fait notamment par la production de factures.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00034",
+                      "L’infraction peut aussi porter sur un bien (mobilier ou immobilier) dont l’origine n’est pas justifiée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00035",
+                      "La justification de la détention licite se fait notamment par la production de factures.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Non-justification de sommes versées sur un compte bancaire, de la possession d’un véhicule Mercedes et de la construction d’une maison individuelle ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00036",
+                      "Non-justification de sommes versées sur un compte bancaire, de la possession d’un véhicule Mercedes et de la construction d’une maison individuelle ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 27 avril 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00037",
+                      "(Cass. crim., 27 avril 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -266,22 +410,51 @@ class NonJustificationRessources extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Relations habituelles"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00038",
+                  "B) Relations habituelles",
+                ),
+              ),
               _Paragraph(
-                "Le mis en cause doit être en relations habituelles :\n"
-                "• avec un ou plusieurs auteurs d’infractions (crimes/délits punis d’au moins 5 ans) procurant un profit direct ou indirect ; ou\n"
-                "• avec la victime d’une de ces infractions.\n"
-                "Les relations habituelles peuvent être prouvées par des rencontres, visites, entrevues…",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00039",
+                      "Le mis en cause doit être en relations habituelles :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00040",
+                      "• avec un ou plusieurs auteurs d’infractions (crimes/délits punis d’au moins 5 ans) procurant un profit direct ou indirect ; ou\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00041",
+                      "• avec la victime d’une de ces infractions.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00042",
+                      "Les relations habituelles peuvent être prouvées par des rencontres, visites, entrevues…",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Parents en possession de numéraires/vêtements provenant de vols réalisés par leurs enfants, vivant en groupe étroit et organisé, ressources insuffisantes pour expliquer la fortune ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00043",
+                      "Parents en possession de numéraires/vêtements provenant de vols réalisés par leurs enfants, vivant en groupe étroit et organisé, ressources insuffisantes pour expliquer la fortune ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 08 février 1989)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00044",
+                      "(Cass. crim., 08 février 1989)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -294,8 +467,11 @@ class NonJustificationRessources extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La condamnation peut intervenir sans condamnation définitive préalable de la personne fréquentée (relation habituelle avec une personne se livrant à des infractions punies d’au moins 5 ans)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00045",
+                      "La condamnation peut intervenir sans condamnation définitive préalable de la personne fréquentée (relation habituelle avec une personne se livrant à des infractions punies d’au moins 5 ans)",
+                    ),
                   ),
                 ],
               ),
@@ -306,27 +482,50 @@ class NonJustificationRessources extends StatelessWidget {
 
           // ================= III — Élément moral =================
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+              "f00046",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Conscience de bénéficier du produit d’infractions",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00047",
+                  "A) Conscience de bénéficier du produit d’infractions",
+                ),
               ),
               _Paragraph(
-                "L’auteur doit avoir conscience de bénéficier du produit d’infractions commises par une personne "
-                "avec laquelle il entretient des relations habituelles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00048",
+                      "L’auteur doit avoir conscience de bénéficier du produit d’infractions commises par une personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00049",
+                      "avec laquelle il entretient des relations habituelles.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "N’est pas coupable la compagne d’un trafiquant de drogue qui « croit » vivre avec un dirigeant de société ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00050",
+                      "N’est pas coupable la compagne d’un trafiquant de drogue qui « croit » vivre avec un dirigeant de société ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 25 juin 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00051",
+                      "(Cass. crim., 25 juin 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -337,11 +536,23 @@ class NonJustificationRessources extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Conscience de profiter des ressources de la victime",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00052",
+                  "B) Conscience de profiter des ressources de la victime",
+                ),
               ),
               _Paragraph(
-                "L’auteur peut aussi avoir conscience de bénéficier de ressources provenant de la victime "
-                "(ex. traite des êtres humains, proxénétisme, extorsion…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00053",
+                      "L’auteur peut aussi avoir conscience de bénéficier de ressources provenant de la victime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00054",
+                      "(ex. traite des êtres humains, proxénétisme, extorsion…).",
+                    ),
               ),
             ],
           ),
@@ -350,50 +561,66 @@ class NonJustificationRessources extends StatelessWidget {
 
           // ================= IV — Circonstances aggravantes =================
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+              "f00055",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 321-6-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00056",
+                    "Article 321-6-1 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque les crimes/délits sont commis par un mineur sur lequel l’auteur a autorité.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00057",
+                    " : lorsque les crimes/délits sont commis par un mineur sur lequel l’auteur a autorité.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 321-6-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00058",
+                    "Article 321-6-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque les infractions concernées relèvent notamment de la traite des êtres humains, extorsion, association de malfaiteurs, armes/explosifs, trafic de stupéfiants (y compris relations avec usagers).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00059",
+                    " : lorsque les infractions concernées relèvent notamment de la traite des êtres humains, extorsion, association de malfaiteurs, armes/explosifs, trafic de stupéfiants (y compris relations avec usagers).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 321-6-1 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00060",
+                    "Article 321-6-1 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsqu’il s’agit d’une infraction mentionnée à l’alinéa précédent commise par un ou plusieurs mineurs.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00061",
+                    " : lorsqu’il s’agit d’une infraction mentionnée à l’alinéa précédent commise par un ou plusieurs mineurs.",
+                  ),
                 ),
               ]),
             ],
@@ -403,68 +630,122 @@ class NonJustificationRessources extends StatelessWidget {
 
           // ================= V — Répression =================
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+              "f00062",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00063",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Forme simple : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00064",
+                    "Forme simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 321-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00065",
+                    "3 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00066",
+                    "article 321-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (alinéa 1) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 150 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00067",
+                    "Aggravée (alinéa 1) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 321-6-1 al. 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00068",
+                    "5 ans d’emprisonnement et 150 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00069",
+                    "article 321-6-1 al. 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (alinéa 2) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 200 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00070",
+                    "Aggravée (alinéa 2) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 321-6-1 al. 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00071",
+                    "7 ans d’emprisonnement et 200 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00072",
+                    "article 321-6-1 al. 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (alinéa 3) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 300 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00073",
+                    "Aggravée (alinéa 3) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 321-6-1 al. 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00074",
+                    "10 ans d’emprisonnement et 300 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00075",
+                    "article 321-6-1 al. 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -472,16 +753,29 @@ class NonJustificationRessources extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La confiscation des biens saisis dont le propriétaire ne peut justifier de l’origine est ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00076",
+                      "La confiscation des biens saisis dont le propriétaire ne peut justifier de l’origine est ",
+                    ),
                   ),
                   TextSpan(
                     text: "obligatoire",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  TextSpan(text: " en cas de condamnation au titre de "),
                   TextSpan(
-                    text: "l’article 321-6 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00077",
+                      " en cas de condamnation au titre de ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                      "f00078",
+                      "l’article 321-6 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -491,27 +785,51 @@ class NonJustificationRessources extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00079",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                  "f00080",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00081",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00082",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00083",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/recel_non_justification/non_justification_ressources.dart",
+                    "f00084",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
             ],
@@ -768,9 +1086,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

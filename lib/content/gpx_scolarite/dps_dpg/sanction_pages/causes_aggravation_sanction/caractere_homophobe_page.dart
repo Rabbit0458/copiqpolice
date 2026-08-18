@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CaractereHomophobePage extends StatelessWidget {
   const CaractereHomophobePage({super.key});
@@ -44,7 +45,11 @@ class CaractereHomophobePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Le caractère homophobe',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+            "f00001",
+            'Le caractère homophobe',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,23 +75,39 @@ class CaractereHomophobePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(
                       text:
-                          "« Lorsqu’un crime ou un délit est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature "
-                          "qui soit portent atteinte à l’honneur ou à la considération de la victime ou d’un groupe de personnes dont fait partie la victime "
-                          "à raison de son sexe, son orientation sexuelle ou identité de genre vraie ou supposée, soit établissent que les faits ont été commis "
-                          "contre la victime pour l’une de ces raisons. »",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00002",
+                            "« Lorsqu’un crime ou un délit est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00003",
+                            "qui soit portent atteinte à l’honneur ou à la considération de la victime ou d’un groupe de personnes dont fait partie la victime ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00004",
+                            "à raison de son sexe, son orientation sexuelle ou identité de genre vraie ou supposée, soit établissent que les faits ont été commis ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00005",
+                            "contre la victime pour l’une de ces raisons. »",
+                          ),
                     ),
                   ]),
                 ),
@@ -95,22 +116,44 @@ class CaractereHomophobePage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                    "f00006",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      law("L’article 132-77 du C.P."),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                          "f00007",
+                          "L’article 132-77 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            " définit le caractère homophobe ou sexiste d’une infraction. Il prévoit une aggravation des sanctions prononcées "
-                            "en répression des infractions commises pour des motifs d’homophobie ou de sexisme.",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                              "f00008",
+                              " définit le caractère homophobe ou sexiste d’une infraction. Il prévoit une aggravation des sanctions prononcées ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                              "f00009",
+                              "en répression des infractions commises pour des motifs d’homophobie ou de sexisme.",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Cette circonstance aggravante est réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00010",
+                        "Cette circonstance aggravante est réelle. Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -119,65 +162,138 @@ class CaractereHomophobePage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                    "f00011",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "Un crime ou un délit est aggravé dès lors qu’il est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature qui :",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00012",
+                        "Un crime ou un délit est aggravé dès lors qu’il est précédé, accompagné ou suivi de propos, écrits, images, objets ou actes de toute nature qui :",
+                      ),
                     ),
                     const SizedBox(height: 10),
-                    const _BulletPoint(
+                    _BulletPoint(
                       text:
-                          "soit portent atteinte à l’honneur ou à la considération de la victime ou d’un groupe de personnes dont fait partie la victime "
-                          "à raison de son sexe, son orientation sexuelle ou identité de genre vraie ou supposée,",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00013",
+                            "soit portent atteinte à l’honneur ou à la considération de la victime ou d’un groupe de personnes dont fait partie la victime ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00014",
+                            "à raison de son sexe, son orientation sexuelle ou identité de genre vraie ou supposée,",
+                          ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "soit établissent que les faits ont été commis contre la victime pour l’une de ces raisons.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00015",
+                        "soit établissent que les faits ont été commis contre la victime pour l’une de ces raisons.",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
-                    const _SubTitle(
-                      "2.1 - Le sexe, l’orientation sexuelle ou l’identité de genre",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00016",
+                        "2.1 - Le sexe, l’orientation sexuelle ou l’identité de genre",
+                      ),
                     ),
-                    const _Paragraph(
-                      "Cette circonstance aggravante vise non seulement les personnes homosexuelles, mais également les personnes transsexuelles "
-                      "ou transgenres ou travesties.",
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00017",
+                            "Cette circonstance aggravante vise non seulement les personnes homosexuelles, mais également les personnes transsexuelles ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00018",
+                            "ou transgenres ou travesties.",
+                          ),
                     ),
 
                     const SizedBox(height: 10),
-                    const _SubTitle(
-                      "2.2 - La matérialisation du mobile de l’auteur",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00019",
+                        "2.2 - La matérialisation du mobile de l’auteur",
+                      ),
                     ),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "Il s’agit exactement des mêmes éléments que ceux cités par ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                          "f00020",
+                          "Il s’agit exactement des mêmes éléments que ceux cités par ",
+                        ),
                       ),
-                      law("l’article 132-76 du C.P."),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                          "f00021",
+                          "l’article 132-76 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            " : propos, écrits, images, objets ou actes de toute nature visant la victime ou un groupe de personnes dont fait partie la victime. "
-                            "Ces éléments permettront de caractériser le mobile homophobe de l’auteur ou son rejet des personnes transgenres ou transsexuelles.",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                              "f00022",
+                              " : propos, écrits, images, objets ou actes de toute nature visant la victime ou un groupe de personnes dont fait partie la victime. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                              "f00023",
+                              "Ces éléments permettront de caractériser le mobile homophobe de l’auteur ou son rejet des personnes transgenres ou transsexuelles.",
+                            ),
                       ),
                     ]),
 
                     const SizedBox(height: 10),
-                    const _SubTitle("2.3 - Le but poursuivi"),
-                    const _Paragraph(
-                      "L’auteur agit en raison du sexe ou de l’orientation sexuelle ou de l’identité de genre vraie ou supposée de la victime. "
-                      "La circonstance est constituée dès lors que l’auteur de l’infraction croyait que la victime était homosexuelle, transsexuelle "
-                      "ou transgenre bien qu’elle ne l’ait pas été.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00024",
+                        "2.3 - Le but poursuivi",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00025",
+                            "L’auteur agit en raison du sexe ou de l’orientation sexuelle ou de l’identité de genre vraie ou supposée de la victime. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00026",
+                            "La circonstance est constituée dès lors que l’auteur de l’infraction croyait que la victime était homosexuelle, transsexuelle ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00027",
+                            "ou transgenre bien qu’elle ne l’ait pas été.",
+                          ),
                     ),
 
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
-                          text:
-                              "La circonstance peut être retenue même si l’orientation/identité de genre attribuée à la victime est seulement supposée par l’auteur.",
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00028",
+                            "La circonstance peut être retenue même si l’orientation/identité de genre attribuée à la victime est seulement supposée par l’auteur.",
+                          ),
                         ),
                       ],
                     ),
@@ -188,100 +304,192 @@ class CaractereHomophobePage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                    "f00029",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      law("L’article 132-77 du C.P."),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                          "f00030",
+                          "L’article 132-77 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            " généralise la circonstance aggravante d’homophobie, de sexisme et de transphobie. "
-                            "Afin de respecter le principe constitutionnel de légalité des délits et des peines, cette circonstance aggravante générale n’est pas applicable :",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                              "f00031",
+                              " généralise la circonstance aggravante d’homophobie, de sexisme et de transphobie. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                              "f00032",
+                              "Afin de respecter le principe constitutionnel de légalité des délits et des peines, cette circonstance aggravante générale n’est pas applicable :",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 10),
 
-                    const _BulletPoint(
-                      text:
-                          "aux violences volontaires prévues à l’article 222-13 du C.P.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00033",
+                        "aux violences volontaires prévues à l’article 222-13 du C.P.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "au délit de harcèlement sexuel (art. 222-33 du C.P.).",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00034",
+                        "au délit de harcèlement sexuel (art. 222-33 du C.P.).",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "aux délits de discriminations prévus par le code pénal (art. 225-1 du C.P.).",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00035",
+                        "aux délits de discriminations prévus par le code pénal (art. 225-1 du C.P.).",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "aux délits visant à modifier l’orientation sexuelle ou l’identité de genre (art. 225-4-13 du C.P.).",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00036",
+                        "aux délits visant à modifier l’orientation sexuelle ou l’identité de genre (art. 225-4-13 du C.P.).",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "aux délits de provocations, diffamations et injures discriminatoires prévus par la loi du 29 juillet 1881.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00037",
+                        "aux délits de provocations, diffamations et injures discriminatoires prévus par la loi du 29 juillet 1881.",
+                      ),
                     ),
-                    const _BulletPoint(
+                    _BulletPoint(
                       text:
-                          "aux infractions déjà aggravées parce qu’elles sont commises par le conjoint, le concubin de la victime ou le partenaire lié à celle-ci par un PACS "
-                          "(meurtre, tortures et actes de barbarie, certaines violences, menaces, viol, agressions sexuelles, harcèlement moral, etc.).",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00038",
+                            "aux infractions déjà aggravées parce qu’elles sont commises par le conjoint, le concubin de la victime ou le partenaire lié à celle-ci par un PACS ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00039",
+                            "(meurtre, tortures et actes de barbarie, certaines violences, menaces, viol, agressions sexuelles, harcèlement moral, etc.).",
+                          ),
                     ),
-                    const _BulletPoint(
+                    _BulletPoint(
                       text:
-                          "aux infractions déjà aggravées parce qu’elles sont commises contre une personne afin de la contraindre à contracter un mariage ou à conclure une union "
-                          "ou en raison de son refus (meurtre, tortures et actes de barbarie, certaines violences, etc.).",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00040",
+                            "aux infractions déjà aggravées parce qu’elles sont commises contre une personne afin de la contraindre à contracter un mariage ou à conclure une union ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                            "f00041",
+                            "ou en raison de son refus (meurtre, tortures et actes de barbarie, certaines violences, etc.).",
+                          ),
                     ),
 
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Le caractère discriminatoire ne peut être à la fois un élément constitutif de l’infraction et une circonstance aggravante.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00042",
+                        "Le caractère discriminatoire ne peut être à la fois un élément constitutif de l’infraction et une circonstance aggravante.",
+                      ),
                     ),
 
                     const SizedBox(height: 12),
-                    const _SubTitle("Relèvement du maximum de la peine"),
-                    const _Paragraph(
-                      "Le maximum de la peine privative de liberté encourue est relevé ainsi qu’il suit :",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00043",
+                        "Relèvement du maximum de la peine",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00044",
+                        "Le maximum de la peine privative de liberté encourue est relevé ainsi qu’il suit :",
+                      ),
                     ),
                     const SizedBox(height: 8),
 
-                    const _BulletPoint(
-                      text:
-                          "1° Porté à la réclusion criminelle à perpétuité lorsque l’infraction est punie de trente ans de réclusion criminelle.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00045",
+                        "1° Porté à la réclusion criminelle à perpétuité lorsque l’infraction est punie de trente ans de réclusion criminelle.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "2° Porté à trente ans de réclusion criminelle lorsque l’infraction est punie de vingt ans de réclusion criminelle.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00046",
+                        "2° Porté à trente ans de réclusion criminelle lorsque l’infraction est punie de vingt ans de réclusion criminelle.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "3° Porté à vingt ans de réclusion criminelle lorsque l’infraction est punie de quinze ans de réclusion criminelle.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00047",
+                        "3° Porté à vingt ans de réclusion criminelle lorsque l’infraction est punie de quinze ans de réclusion criminelle.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "4° Porté à quinze ans de réclusion criminelle lorsque l’infraction est punie de dix ans d’emprisonnement.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00048",
+                        "4° Porté à quinze ans de réclusion criminelle lorsque l’infraction est punie de dix ans d’emprisonnement.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "5° Porté à dix ans d’emprisonnement lorsque l’infraction est punie de sept ans d’emprisonnement.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00049",
+                        "5° Porté à dix ans d’emprisonnement lorsque l’infraction est punie de sept ans d’emprisonnement.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "6° Porté à sept ans d’emprisonnement lorsque l’infraction est punie de cinq ans d’emprisonnement.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00050",
+                        "6° Porté à sept ans d’emprisonnement lorsque l’infraction est punie de cinq ans d’emprisonnement.",
+                      ),
                     ),
-                    const _BulletPoint(
-                      text:
-                          "7° Porté au double lorsque l’infraction est punie de trois ans d’emprisonnement au plus.",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                        "f00051",
+                        "7° Porté au double lorsque l’infraction est punie de trois ans d’emprisonnement au plus.",
+                      ),
                     ),
 
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
                           text:
-                              "Le mobile discriminatoire doit être prouvé (propos/écrits/images/actes, etc.) et ne peut pas compter deux fois "
-                              "(élément constitutif + circonstance aggravante).",
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                                "f00052",
+                                "Le mobile discriminatoire doit être prouvé (propos/écrits/images/actes, etc.) et ne peut pas compter deux fois ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart",
+                                "f00053",
+                                "(élément constitutif + circonstance aggravante).",
+                              ),
                         ),
                       ],
                     ),
@@ -547,9 +755,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

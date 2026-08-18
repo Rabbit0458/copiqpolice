@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
   const PaPPNulliteActesProcedureContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Nullité des actes de procédure',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+            "f00002",
+            'Nullité des actes de procédure',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'La nullité des actes de procédure',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00003",
+              'La nullité des actes de procédure',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            'Les nullités textuelles, les nullités substantielles, l’action en nullité '
-            'et les effets de la nullité dans la procédure pénale.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+                  "f00004",
+                  'Les nullités textuelles, les nullités substantielles, l’action en nullité ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+                  "f00005",
+                  'et les effets de la nullité dans la procédure pénale.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -66,9 +89,16 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
           // ================= MODULE 1 — NULLITÉS TEXTUELLES =================
           _ModuleCard(
             tag: 'pp_nullites_textuelles',
-            title: 'Les nullités textuelles',
-            subtitle:
-                'Nullités prévues expressément par un texte pour sanctionner la violation d’une formalité imposée par la loi.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00006",
+              'Les nullités textuelles',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00007",
+              'Nullités prévues expressément par un texte pour sanctionner la violation d’une formalité imposée par la loi.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -82,9 +112,16 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
           // ============= MODULE 2 — NULLITÉS SUBSTANTIELLES =================
           _ModuleCard(
             tag: 'pp_nullites_substantielles',
-            title: 'Les nullités substantielles',
-            subtitle:
-                'Atteinte à une garantie essentielle, aux droits de la défense ou aux libertés individuelles, même sans texte exprès.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00008",
+              'Les nullités substantielles',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00009",
+              'Atteinte à une garantie essentielle, aux droits de la défense ou aux libertés individuelles, même sans texte exprès.',
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -98,9 +135,16 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
           // ================= MODULE 3 — ACTION EN NULLITÉ ====================
           _ModuleCard(
             tag: 'pp_action_en_nullite',
-            title: 'L’action en nullité',
-            subtitle:
-                'Conditions, titulaires, délais et juridictions compétentes pour demander l’annulation d’un acte de procédure.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00010",
+              'L’action en nullité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00011",
+              'Conditions, titulaires, délais et juridictions compétentes pour demander l’annulation d’un acte de procédure.',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -114,9 +158,16 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
           // ================= MODULE 4 — EFFETS DE LA NULLITÉ =================
           _ModuleCard(
             tag: 'pp_effets_nullite',
-            title: 'Les effets de la nullité',
-            subtitle:
-                'Effets de l’annulation sur l’acte irrégulier, les actes subséquents et la validité des preuves recueillies.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00012",
+              'Les effets de la nullité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00013",
+              'Effets de l’annulation sur l’acte irrégulier, les actes subséquents et la validité des preuves recueillies.',
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -131,8 +182,16 @@ class PaPPNulliteActesProcedureContenuPage extends StatelessWidget {
           // ================= MODULE 5 — Quizz =================
           _ModuleCard(
             tag: 'quiz_nullite',
-            title: 'Quiz — Nullité',
-            subtitle: 'Vérifiez votre maîtrise des conditions, de la nullité.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00014",
+              'Quiz — Nullité',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart",
+              "f00015",
+              'Vérifiez votre maîtrise des conditions, de la nullité.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

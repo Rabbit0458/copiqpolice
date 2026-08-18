@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ChargementPage extends StatelessWidget {
   const ChargementPage({super.key});
@@ -60,10 +61,18 @@ class ChargementPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class ChargementPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Chargement des véhicules",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+              "f00003",
+              "Chargement des véhicules",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -93,11 +106,23 @@ class ChargementPage extends StatelessWidget {
             cardColor: cardInfra,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le chargement d’un véhicule ne doit pas être une cause de dommage ou de danger. "
-                "Les précautions utiles doivent être prises afin d’éviter tout débordement, chute, oscillation dangereuse "
-                "ou accessoire traînant sur la chaussée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00004",
+                      "Le chargement d’un véhicule ne doit pas être une cause de dommage ou de danger. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00005",
+                      "Les précautions utiles doivent être prises afin d’éviter tout débordement, chute, oscillation dangereuse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00006",
+                      "ou accessoire traînant sur la chaussée.",
+                    ),
               ),
             ],
           ),
@@ -106,16 +131,29 @@ class ChargementPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 312-19 à R. 312-22 du Code de la route"),
-                const TextSpan(
-                  text:
-                      " : règles générales relatives au chargement des véhicules et aux limites autorisées (sécurisation, dimensions, débords).",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00008",
+                    "R. 312-19 à R. 312-22 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00009",
+                    " : règles générales relatives au chargement des véhicules et aux limites autorisées (sécurisation, dimensions, débords).",
+                  ),
                 ),
               ]),
             ],
@@ -125,34 +163,60 @@ class ChargementPage extends StatelessWidget {
 
           // Règles essentielles (sécurisation)
           _ConditionCard(
-            title: "II — Règles essentielles de sécurité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+              "f00010",
+              "II — Règles essentielles de sécurité",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Amarrage obligatoire"),
-              _BulletPoint(
-                text:
-                    "Tout chargement débordant (ou pouvant déborder à cause des oscillations) doit être solidement amarré — NATINF 22595.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00011",
+                  "A) Amarrage obligatoire",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les pièces de grande longueur doivent être solidement amarrées entre elles et au véhicule, afin de ne pas déborder latéralement lors des oscillations — NATINF 22595.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00012",
+                  "Tout chargement débordant (ou pouvant déborder à cause des oscillations) doit être solidement amarré — NATINF 22595.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00013",
+                  "Les pièces de grande longueur doivent être solidement amarrées entre elles et au véhicule, afin de ne pas déborder latéralement lors des oscillations — NATINF 22595.",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Accessoires (chaînes, bâches, éléments flottants)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00014",
+                  "B) Accessoires (chaînes, bâches, éléments flottants)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les chaînes, bâches et autres accessoires mobiles ou flottants doivent être fixés de façon à ne jamais sortir du contour extérieur du chargement et à ne pas traîner au sol — NATINF 22596.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00015",
+                  "Les chaînes, bâches et autres accessoires mobiles ou flottants doivent être fixés de façon à ne jamais sortir du contour extérieur du chargement et à ne pas traîner au sol — NATINF 22596.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En pratique : un accessoire qui bat au vent, dépasse le gabarit ou frotte le sol = non conforme.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00016",
+                      "En pratique : un accessoire qui bat au vent, dépasse le gabarit ou frotte le sol = non conforme.",
+                    ),
                   ),
                 ],
               ),
@@ -163,39 +227,102 @@ class ChargementPage extends StatelessWidget {
 
           // Dimensions / débords
           _ConditionCard(
-            title: "III — Largeur & longueur maximales",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+              "f00017",
+              "III — Largeur & longueur maximales",
+            ),
             cardColor: cardLimits,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Rappel"),
-              const _Paragraph(
-                "Hors cas particuliers (ex. transports exceptionnels), le chargement doit respecter des limites strictes "
-                "de largeur et de débordement.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00018",
+                  "A) Rappel",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00019",
+                      "Hors cas particuliers (ex. transports exceptionnels), le chargement doit respecter des limites strictes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00020",
+                      "de largeur et de débordement.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("B) Largeur maximale"),
-              const _BulletPoint(text: "Largeur maximale : 2,55 m."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00021",
+                  "B) Largeur maximale",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00022",
+                  "Largeur maximale : 2,55 m.",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Références NATINF : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00023",
+                    "Références NATINF : ",
+                  ),
+                ),
                 _boldSpan("22597"),
-                const TextSpan(text: " (dépassement ≤ 20%) et "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00024",
+                    " (dépassement ≤ 20%) et ",
+                  ),
+                ),
                 _boldSpan("22598"),
-                const TextSpan(text: " (dépassement > 20%)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00025",
+                    " (dépassement > 20%).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("C) Longueur / débords"),
-              const _BulletPoint(
-                text:
-                    "Vers l’avant : le chargement ne doit pas dépasser l’aplomb antérieur du véhicule — NATINF 22599.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00026",
+                  "C) Longueur / débords",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Vers l’arrière : le chargement ne doit pas dépasser de plus de 3 mètres l’extrémité du véhicule ou de la remorque — NATINF 22601 / 22602.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00027",
+                  "Vers l’avant : le chargement ne doit pas dépasser l’aplomb antérieur du véhicule — NATINF 22599.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le chargement ne doit pas traîner sur le sol — NATINF 22600.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00028",
+                  "Vers l’arrière : le chargement ne doit pas dépasser de plus de 3 mètres l’extrémité du véhicule ou de la remorque — NATINF 22601 / 22602.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00029",
+                  "Le chargement ne doit pas traîner sur le sol — NATINF 22600.",
+                ),
               ),
             ],
           ),
@@ -204,99 +331,226 @@ class ChargementPage extends StatelessWidget {
 
           // Infractions (avec bases légales + pédagogique)
           _ConditionCard(
-            title: "IV — Infractions (NATINF) & points clés",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+              "f00030",
+              "IV — Infractions (NATINF) & points clés",
+            ),
             cardColor: cardInfra,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Sécurisation / accessoires"),
-              _Paragraph.rich([
-                _boldSpan("NATINF 22595"),
-                const TextSpan(
-                  text:
-                      " — Absence d’amarrage (chargement débordant / grande longueur). Base : ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00031",
+                  "A) Sécurisation / accessoires",
                 ),
-                _lawSpan("R. 312-19 du Code de la route"),
+              ),
+              _Paragraph.rich([
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00032",
+                    "NATINF 22595",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00033",
+                    " — Absence d’amarrage (chargement débordant / grande longueur). Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00034",
+                    "R. 312-19 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 22596"),
-                const TextSpan(
-                  text:
-                      " — Absence de fixation des chaînes, bâches et accessoires. Base : ",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00035",
+                    "NATINF 22596",
+                  ),
                 ),
-                _lawSpan("R. 312-20 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00036",
+                    " — Absence de fixation des chaînes, bâches et accessoires. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00037",
+                    "R. 312-20 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Largeur excessive"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00038",
+                  "B) Largeur excessive",
+                ),
+              ),
               _Paragraph.rich([
-                _boldSpan("NATINF 22597"),
-                const TextSpan(
-                  text:
-                      " — Largeur du chargement dépassant le maximum réglementaire (dépassement ≤ 20%).",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00039",
+                    "NATINF 22597",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00040",
+                    " — Largeur du chargement dépassant le maximum réglementaire (dépassement ≤ 20%).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                _boldSpan("NATINF 22598"),
-                const TextSpan(
-                  text:
-                      " — Largeur du chargement dépassant le maximum réglementaire (dépassement > 20%).",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00041",
+                    "NATINF 22598",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00042",
+                    " — Largeur du chargement dépassant le maximum réglementaire (dépassement > 20%).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À noter : NATINF 22598 relève d’une procédure plus sévère (PVO 5e classe).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00043",
+                      "À noter : NATINF 22598 relève d’une procédure plus sévère (PVO 5e classe).",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "C) Débord avant / arrière / chargement traînant",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00044",
+                  "C) Débord avant / arrière / chargement traînant",
+                ),
               ),
               _Paragraph.rich([
-                _boldSpan("NATINF 22599"),
-                const TextSpan(
-                  text: " — Chargement dépassant l’aplomb antérieur. Base : ",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00045",
+                    "NATINF 22599",
+                  ),
                 ),
-                _lawSpan("R. 312-22 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00046",
+                    " — Chargement dépassant l’aplomb antérieur. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00047",
+                    "R. 312-22 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 22600"),
-                const TextSpan(text: " — Chargement traînant sur le sol."),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00048",
+                    "NATINF 22600",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00049",
+                    " — Chargement traînant sur le sol.",
+                  ),
+                ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 22601"),
-                const TextSpan(
-                  text:
-                      " — Dépassement arrière > 3 m (dépassement ≤ 20%). Base : ",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00050",
+                    "NATINF 22601",
+                  ),
                 ),
-                _lawSpan("R. 312-21 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00051",
+                    " — Dépassement arrière > 3 m (dépassement ≤ 20%). Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00052",
+                    "R. 312-21 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _boldSpan("NATINF 22602"),
-                const TextSpan(
-                  text: " — Dépassement arrière > 3 m (dépassement > 20%).",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00053",
+                    "NATINF 22602",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                    "f00054",
+                    " — Dépassement arrière > 3 m (dépassement > 20%).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Beaucoup de ces infractions peuvent entraîner une immobilisation (selon situation de danger).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00055",
+                      "Beaucoup de ces infractions peuvent entraîner une immobilisation (selon situation de danger).",
+                    ),
                   ),
                 ],
               ),
@@ -307,27 +561,48 @@ class ChargementPage extends StatelessWidget {
 
           // Réflexe PV / précision
           _ConditionCard(
-            title: "V — Réflexes rédactionnels (P.V.)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+              "f00056",
+              "V — Réflexes rédactionnels (P.V.)",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour un dossier propre et exploitable, pense à décrire précisément le chargement, "
-                "la nature du débordement, et la manière dont il est (ou n’est pas) sécurisé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00057",
+                      "Pour un dossier propre et exploitable, pense à décrire précisément le chargement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                      "f00058",
+                      "la nature du débordement, et la manière dont il est (ou n’est pas) sécurisé.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Décrire : type de chargement, localisation (avant/arrière/latéral), risque (oscillation, chute, traînage).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00059",
+                  "Décrire : type de chargement, localisation (avant/arrière/latéral), risque (oscillation, chute, traînage).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser : dépassement estimé (mètres / pourcentage) lorsque c’est utile (largeur / débord arrière).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00060",
+                  "Préciser : dépassement estimé (mètres / pourcentage) lorsque c’est utile (largeur / débord arrière).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mentionner : accessoires flottants (bâche, sangle, chaîne) et effets observés (traîne au sol, dépasse le gabarit).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/chargement_page.dart",
+                  "f00061",
+                  "Mentionner : accessoires flottants (bâche, sangle, chaîne) et effets observés (traîne au sol, dépasse le gabarit).",
+                ),
               ),
             ],
           ),
@@ -583,9 +858,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — LIBERTÉS PUBLIQUES
@@ -60,7 +61,11 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Régime juridique des libertés',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+            "f00001",
+            'Régime juridique des libertés',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -76,8 +81,16 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
         children: [
           // ================= TITRE + INTRO =================
           Text(
-            'Le régime juridique ou la réglementation\n'
-            'et l’aménagement des libertés publiques',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00002",
+                  'Le régime juridique ou la réglementation\n',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00003",
+                  'et l’aménagement des libertés publiques',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -85,23 +98,51 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'Il ne peut exister de liberté publique absolue : sans règles, la liberté se transforme en anarchie. '
-                  'Le droit encadre donc l’exercice des libertés pour concilier protection des droits et maintien de l’ordre public. '
-                  'La Déclaration de 1789 admet d’ailleurs des limites à la liberté de chacun, à condition qu’elles ne portent pas atteinte '
-                  'à l’exercice de cette même liberté par les autres individus.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00004",
+                    'Il ne peut exister de liberté publique absolue : sans règles, la liberté se transforme en anarchie. ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00005",
+                    'Le droit encadre donc l’exercice des libertés pour concilier protection des droits et maintien de l’ordre public. ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00006",
+                    'La Déclaration de 1789 admet d’ailleurs des limites à la liberté de chacun, à condition qu’elles ne portent pas atteinte ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00007",
+                    'à l’exercice de cette même liberté par les autres individus.',
+                  ),
             ),
           ]),
           const SizedBox(height: 16),
-          const _NotaBox(
-            title: 'Idée directrice',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+              "f00008",
+              'Idée directrice',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Réglementer une liberté publique ne signifie pas la supprimer. Il s’agit de fixer des bornes juridiques pour que la liberté demeure la règle, '
-                    'et que la restriction reste l’exception, strictement justifiée par l’intérêt général.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00009",
+                      'Réglementer une liberté publique ne signifie pas la supprimer. Il s’agit de fixer des bornes juridiques pour que la liberté demeure la règle, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00010",
+                      'et que la restriction reste l’exception, strictement justifiée par l’intérêt général.',
+                    ),
               ),
             ],
           ),
@@ -111,22 +152,37 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
           // CHAPITRE 1 — LES AUTORITÉS RÉGLEMENTANT LES LIBERTÉS
           // =====================================================
           _HypoCard(
-            title:
-                'Chapitre 1 — Les autorités réglementant les libertés publiques',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+              "f00011",
+              'Chapitre 1 — Les autorités réglementant les libertés publiques',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Deux grands acteurs interviennent pour encadrer les libertés publiques : '
-                'le législateur (compétence de principe) et le pouvoir exécutif (pouvoir réglementaire).',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00012",
+                      'Deux grands acteurs interviennent pour encadrer les libertés publiques : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00013",
+                      'le législateur (compétence de principe) et le pouvoir exécutif (pouvoir réglementaire).',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // ---------- 1.1 LÉGISLATEUR ----------
               Text(
-                '1.1 – La compétence de principe et le rôle du législateur',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00014",
+                  '1.1 – La compétence de principe et le rôle du législateur',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15.5,
@@ -134,80 +190,149 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Traditionnellement, la loi est l’outil principal pour fixer le régime des libertés publiques. '
-                      'La Déclaration de 1789 rappelle que seule la loi peut poser les "bornes" à l’exercice des droits. '
-                      'La Constitution de 1958 confie au Parlement le soin de déterminer les règles concernant les droits civiques '
-                      'et les garanties fondamentales accordées aux citoyens pour leur exercice (article 34). ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00015",
+                        'Traditionnellement, la loi est l’outil principal pour fixer le régime des libertés publiques. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00016",
+                        'La Déclaration de 1789 rappelle que seule la loi peut poser les "bornes" à l’exercice des droits. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00017",
+                        'La Constitution de 1958 confie au Parlement le soin de déterminer les règles concernant les droits civiques ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00018",
+                        'et les garanties fondamentales accordées aux citoyens pour leur exercice (article 34). ',
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      'Le législateur dispose donc d’une compétence de principe ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00019",
+                    'Le législateur dispose donc d’une compétence de principe ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
-                  text:
-                      'en matière de libertés publiques, sous réserve du respect de la hiérarchie des normes (Constitution, traités, lois…).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00020",
+                    'en matière de libertés publiques, sous réserve du respect de la hiérarchie des normes (Constitution, traités, lois…).',
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph('Concrètement, la loi peut :'),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00021",
+                  'Concrètement, la loi peut :',
+                ),
+              ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Créer de nouvelles libertés reconnues au niveau législatif ou constitutionnel (ex. droit au respect de la vie privée, liberté de recourir à l’IVG).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00022",
+                    'Créer de nouvelles libertés reconnues au niveau législatif ou constitutionnel (ex. droit au respect de la vie privée, liberté de recourir à l’IVG).',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Définir les modalités d’exercice permettant aux citoyens de jouir effectivement de leurs droits (conditions pratiques, procédures, garanties).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00023",
+                    'Définir les modalités d’exercice permettant aux citoyens de jouir effectivement de leurs droits (conditions pratiques, procédures, garanties).',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Restreindre l’exercice de libertés, y compris constitutionnelles, pour concilier plusieurs exigences de valeur identique '
-                      '(ex. droit de grève et continuité du service public).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00024",
+                        'Restreindre l’exercice de libertés, y compris constitutionnelles, pour concilier plusieurs exigences de valeur identique ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00025",
+                        '(ex. droit de grève et continuité du service public).',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Supprimer une liberté préexistante, mais uniquement sous contrôle du Conseil constitutionnel et pour des raisons impérieuses.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00026",
+                    'Supprimer une liberté préexistante, mais uniquement sous contrôle du Conseil constitutionnel et pour des raisons impérieuses.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'En revanche, le législateur ne peut revenir sur une liberté publique déjà acquise que dans deux cas : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00027",
+                    'En revanche, le législateur ne peut revenir sur une liberté publique déjà acquise que dans deux cas : ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'soit parce qu’elle n’a jamais été légalement consacrée, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00028",
+                    'soit parce qu’elle n’a jamais été légalement consacrée, ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
                 TextSpan(
                   text:
-                      'soit parce que sa remise en cause est indispensable pour atteindre un objectif de valeur constitutionnelle '
-                      '(sécurité, ordre public, continuité du service, etc.).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00029",
+                        'soit parce que sa remise en cause est indispensable pour atteindre un objectif de valeur constitutionnelle ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00030",
+                        '(sécurité, ordre public, continuité du service, etc.).',
+                      ),
                 ),
               ]),
               const SizedBox(height: 12),
-              const _ExempleBox(
-                title: 'Exemples de lois marquantes',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00031",
+                  'Exemples de lois marquantes',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        '• Loi du 17 juillet 1970 : renforce la protection de la vie privée (atteintes illicites punies, droit au respect du domicile…).\n',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00032",
+                      '• Loi du 17 juillet 1970 : renforce la protection de la vie privée (atteintes illicites punies, droit au respect du domicile…).\n',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        '• Loi du 8 mars 2024 : consacre la liberté de recourir à l’interruption volontaire de grossesse dans le respect du cadre constitutionnel.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00033",
+                      '• Loi du 8 mars 2024 : consacre la liberté de recourir à l’interruption volontaire de grossesse dans le respect du cadre constitutionnel.',
+                    ),
                   ),
                 ],
               ),
@@ -215,7 +340,11 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
 
               // ---------- 1.2 POUVOIR EXÉCUTIF ----------
               Text(
-                '1.2 – Le rôle du pouvoir exécutif : le pouvoir réglementaire',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00034",
+                  '1.2 – Le rôle du pouvoir exécutif : le pouvoir réglementaire',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15.5,
@@ -223,33 +352,69 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Si la loi fixe les principes fondamentaux, le pouvoir exécutif (gouvernement, préfet, maire…) est chargé de mettre en œuvre, '
-                      'par des règlements, l’aménagement concret des libertés. '
-                      'Ce pouvoir réglementaire s’exerce principalement dans deux hypothèses : ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00035",
+                        'Si la loi fixe les principes fondamentaux, le pouvoir exécutif (gouvernement, préfet, maire…) est chargé de mettre en œuvre, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00036",
+                        'par des règlements, l’aménagement concret des libertés. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00037",
+                        'Ce pouvoir réglementaire s’exerce principalement dans deux hypothèses : ',
+                      ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Compléter la loi lorsque celle-ci renvoie à un décret ou à un règlement pour préciser les conditions d’exercice de la liberté '
-                      '(ex. partie réglementaire du code de la route).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00038",
+                        'Compléter la loi lorsque celle-ci renvoie à un décret ou à un règlement pour préciser les conditions d’exercice de la liberté ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00039",
+                        '(ex. partie réglementaire du code de la route).',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Prendre, au plan national ou local, les mesures nécessaires au maintien de l’ordre public, '
-                      'en conciliant la sécurité collective avec l’exercice des libertés (circulation, manifestations, ouverture de lieux recevant du public…).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00040",
+                        'Prendre, au plan national ou local, les mesures nécessaires au maintien de l’ordre public, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00041",
+                        'en conciliant la sécurité collective avec l’exercice des libertés (circulation, manifestations, ouverture de lieux recevant du public…).',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Le pouvoir réglementaire peut donc restreindre l’exercice d’une liberté, mais à condition de respecter les principes de légalité, de nécessité et de proportionnalité. '
-                'Son intensité varie selon que l’on se trouve en période normale ou en période exceptionnelle.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00042",
+                      'Le pouvoir réglementaire peut donc restreindre l’exercice d’une liberté, mais à condition de respecter les principes de légalité, de nécessité et de proportionnalité. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00043",
+                      'Son intensité varie selon que l’on se trouve en période normale ou en période exceptionnelle.',
+                    ),
               ),
             ],
           ),
@@ -260,8 +425,11 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
           // 1.2.1 / 1.2.2 — PÉRIODE NORMALE & EXCEPTIONNELLE
           // =====================================================
           _HypoCard(
-            title:
-                '1.2.1 – Réglementation en période normale\n1.2.2 – Réglementation en période exceptionnelle',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+              "f00044",
+              '1.2.1 – Réglementation en période normale\n1.2.2 – Réglementation en période exceptionnelle',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
@@ -269,7 +437,11 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
             children: [
               // ------- PÉRIODE NORMALE -------
               Text(
-                'A. Exercices des pouvoirs en période normale',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00045",
+                  'A. Exercices des pouvoirs en période normale',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -277,35 +449,71 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'En période ordinaire, la réglementation des libertés doit rester mesurée. '
-                'Deux règles classiques gouvernent l’action de l’autorité administrative :',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00046",
+                      'En période ordinaire, la réglementation des libertés doit rester mesurée. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00047",
+                      'Deux règles classiques gouvernent l’action de l’autorité administrative :',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'L’autorité ne peut interdire de manière générale et absolue l’exercice d’une liberté publique. '
-                      'Toute interdiction doit être limitée dans le temps, l’espace et l’objet.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00048",
+                        'L’autorité ne peut interdire de manière générale et absolue l’exercice d’une liberté publique. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00049",
+                        'Toute interdiction doit être limitée dans le temps, l’espace et l’objet.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Toute mesure d’interdiction doit être indispensable au maintien de l’ordre public, '
-                      'et motivée par des circonstances précises et établies.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00050",
+                        'Toute mesure d’interdiction doit être indispensable au maintien de l’ordre public, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00051",
+                        'et motivée par des circonstances précises et établies.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Plus une liberté est regardée comme fondamentale (liberté d’aller et venir, de réunion, d’expression…), '
-                'plus le juge administratif contrôle strictement la proportionnalité des restrictions décidées par l’exécutif.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00052",
+                      'Plus une liberté est regardée comme fondamentale (liberté d’aller et venir, de réunion, d’expression…), ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00053",
+                      'plus le juge administratif contrôle strictement la proportionnalité des restrictions décidées par l’exécutif.',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // ------- PÉRIODE EXCEPTIONNELLE -------
               Text(
-                'B. Réglementation en période exceptionnelle',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00054",
+                  'B. Réglementation en période exceptionnelle',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -313,19 +521,35 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Lorsque la survie des institutions, l’indépendance de la Nation ou la sécurité intérieure sont gravement menacées, '
-                      'le droit prévoit des régimes d’exception permettant un renforcement temporaire des pouvoirs de l’exécutif. '
-                      'Ces régimes demeurent encadrés par la Constitution et contrôlés par le juge. ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00055",
+                        'Lorsque la survie des institutions, l’indépendance de la Nation ou la sécurité intérieure sont gravement menacées, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00056",
+                        'le droit prévoit des régimes d’exception permettant un renforcement temporaire des pouvoirs de l’exécutif. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00057",
+                        'Ces régimes demeurent encadrés par la Constitution et contrôlés par le juge. ',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
 
               // -- ÉTAT DE SIÈGE --
               Text(
-                '1) L’état de siège',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00058",
+                  '1) L’état de siège',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -333,17 +557,37 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Issu d’une loi du XIXᵉ siècle et désormais prévu par la Constitution, l’état de siège est proclamé '
-                'en cas de péril résultant d’une guerre étrangère ou d’une insurrection armée. '
-                'Il entraîne le transfert de certaines compétences de police à l’autorité militaire et autorise des mesures restrictives importantes '
-                '(perquisitions de nuit, contrôle des publications, interdiction de réunions…). Sa prolongation au-delà d’une certaine durée suppose l’intervention du Parlement.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00059",
+                      'Issu d’une loi du XIXᵉ siècle et désormais prévu par la Constitution, l’état de siège est proclamé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00060",
+                      'en cas de péril résultant d’une guerre étrangère ou d’une insurrection armée. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00061",
+                      'Il entraîne le transfert de certaines compétences de police à l’autorité militaire et autorise des mesures restrictives importantes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00062",
+                      '(perquisitions de nuit, contrôle des publications, interdiction de réunions…). Sa prolongation au-delà d’une certaine durée suppose l’intervention du Parlement.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               // -- ARTICLE 16 (ÉTAT DE CRISE) --
               Text(
-                '2) L’état de crise (article 16 de la Constitution)',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00063",
+                  '2) L’état de crise (article 16 de la Constitution)',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -351,17 +595,37 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Lorsque les institutions de la République, l’indépendance de la Nation ou l’intégrité du territoire sont gravement et immédiatement menacées, '
-                'et que le fonctionnement régulier des pouvoirs publics est interrompu, le Président de la République peut mettre en œuvre les pouvoirs exceptionnels prévus à l’article 16. '
-                'Après consultation de plusieurs autorités (Premier ministre, présidents des Assemblées, Conseil constitutionnel), il concentre temporairement la plénitude des pouvoirs exécutifs et réglementaires, '
-                'sous le contrôle du Conseil constitutionnel et de l’opinion publique.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00064",
+                      'Lorsque les institutions de la République, l’indépendance de la Nation ou l’intégrité du territoire sont gravement et immédiatement menacées, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00065",
+                      'et que le fonctionnement régulier des pouvoirs publics est interrompu, le Président de la République peut mettre en œuvre les pouvoirs exceptionnels prévus à l’article 16. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00066",
+                      'Après consultation de plusieurs autorités (Premier ministre, présidents des Assemblées, Conseil constitutionnel), il concentre temporairement la plénitude des pouvoirs exécutifs et réglementaires, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00067",
+                      'sous le contrôle du Conseil constitutionnel et de l’opinion publique.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               // -- ÉTAT D’URGENCE --
               Text(
-                '3) L’état d’urgence',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00068",
+                  '3) L’état d’urgence',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -369,16 +633,31 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Créé en 1955 et plusieurs fois modifié, ce régime permet de faire face à des situations de péril imminent résultant d’atteintes graves à l’ordre public '
-                      'ou de calamités publiques. Il autorise notamment l’assignation à résidence, les perquisitions administratives, les interdictions de réunions ou de '
-                      'manifestations, ainsi que des mesures renforcées de contrôle d’identité. ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00069",
+                        'Créé en 1955 et plusieurs fois modifié, ce régime permet de faire face à des situations de péril imminent résultant d’atteintes graves à l’ordre public ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00070",
+                        'ou de calamités publiques. Il autorise notamment l’assignation à résidence, les perquisitions administratives, les interdictions de réunions ou de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00071",
+                        'manifestations, ainsi que des mesures renforcées de contrôle d’identité. ',
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      'Les lois adoptées à la suite des attentats récents ont étendu ces prérogatives, notamment en matière de lutte antiterroriste.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00072",
+                    'Les lois adoptées à la suite des attentats récents ont étendu ces prérogatives, notamment en matière de lutte antiterroriste.',
+                  ),
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
@@ -386,7 +665,11 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
 
               // -- ÉTAT D’URGENCE SANITAIRE --
               Text(
-                '4) L’état d’urgence sanitaire',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00073",
+                  '4) L’état d’urgence sanitaire',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -394,17 +677,37 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Institué pour faire face à la pandémie de Covid-19, ce régime permet au gouvernement de prendre des mesures exceptionnelles '
-                'pour lutter contre une catastrophe sanitaire : restrictions de déplacements, fermetures d’établissements recevant du public, limitation des rassemblements, '
-                'fixation de plafonds de prix pour certains produits, etc. Il illustre la manière dont l’exécutif peut, sous contrôle du Parlement et du juge, '
-                'adapter l’étendue des libertés en fonction d’un risque sanitaire majeur.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00074",
+                      'Institué pour faire face à la pandémie de Covid-19, ce régime permet au gouvernement de prendre des mesures exceptionnelles ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00075",
+                      'pour lutter contre une catastrophe sanitaire : restrictions de déplacements, fermetures d’établissements recevant du public, limitation des rassemblements, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00076",
+                      'fixation de plafonds de prix pour certains produits, etc. Il illustre la manière dont l’exécutif peut, sous contrôle du Parlement et du juge, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00077",
+                      'adapter l’étendue des libertés en fonction d’un risque sanitaire majeur.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               // -- THÉORIE DES CIRCONSTANCES EXCEPTIONNELLES --
               Text(
-                '5) La théorie des circonstances exceptionnelles',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00078",
+                  '5) La théorie des circonstances exceptionnelles',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -412,18 +715,42 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Élaborée par la jurisprudence administrative, cette théorie permet au juge d’admettre que, dans des circonstances anormales '
-                '(guerre, troubles graves, catastrophes…), l’administration puisse disposer de pouvoirs plus étendus que ceux prévus en temps normal, '
-                'afin d’assurer la continuité du service public et la sauvegarde de l’ordre. '
-                'En contrepartie, ces mesures restent contrôlées a posteriori par le juge, qui vérifie que les circonstances invoquées justifiaient réellement '
-                'la restriction des libertés.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00079",
+                      'Élaborée par la jurisprudence administrative, cette théorie permet au juge d’admettre que, dans des circonstances anormales ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00080",
+                      '(guerre, troubles graves, catastrophes…), l’administration puisse disposer de pouvoirs plus étendus que ceux prévus en temps normal, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00081",
+                      'afin d’assurer la continuité du service public et la sauvegarde de l’ordre. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00082",
+                      'En contrepartie, ces mesures restent contrôlées a posteriori par le juge, qui vérifie que les circonstances invoquées justifiaient réellement ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00083",
+                      'la restriction des libertés.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               // -- PLAN VIGIPIRATE --
               Text(
-                '6) Une mesure intermédiaire : le plan Vigipirate',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00084",
+                  '6) Une mesure intermédiaire : le plan Vigipirate',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -431,42 +758,78 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Le plan Vigipirate est un dispositif gouvernemental permanent, associant autorités civiles et militaires, visant à prévenir la menace terroriste. '
-                'Il repose sur différents niveaux d’alerte et permet de déclencher, sans basculer dans un régime d’exception formel, '
-                'un ensemble de mesures graduées de protection de la population et des infrastructures sensibles.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00085",
+                      'Le plan Vigipirate est un dispositif gouvernemental permanent, associant autorités civiles et militaires, visant à prévenir la menace terroriste. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00086",
+                      'Il repose sur différents niveaux d’alerte et permet de déclencher, sans basculer dans un régime d’exception formel, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00087",
+                      'un ensemble de mesures graduées de protection de la population et des infrastructures sensibles.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Objectifs principaux : assurer en permanence une protection adaptée du territoire, développer la culture de vigilance de l’ensemble des acteurs, '
-                'et permettre une réaction rapide et coordonnée en cas de menace identifiée.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00088",
+                      'Objectifs principaux : assurer en permanence une protection adaptée du territoire, développer la culture de vigilance de l’ensemble des acteurs, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00089",
+                      'et permettre une réaction rapide et coordonnée en cas de menace identifiée.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Niveau « vigilance » : renforcement ponctuel face à une menace localisée ou à une vulnérabilité particulière.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00090",
+                    'Niveau « vigilance » : renforcement ponctuel face à une menace localisée ou à une vulnérabilité particulière.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Niveau « sécurité renforcée – risque attentat » : activation de mesures complémentaires pour une menace élevée.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00091",
+                    'Niveau « sécurité renforcée – risque attentat » : activation de mesures complémentaires pour une menace élevée.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Niveau « urgence attentat » : déclenché après un attentat ou en cas de menace imminente liée à un groupe terroriste identifié.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00092",
+                    'Niveau « urgence attentat » : déclenché après un attentat ou en cas de menace imminente liée à un groupe terroriste identifié.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _NotaBox(
-                title: 'Attention',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00093",
+                  'Attention',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Même en période exceptionnelle, les mesures prises restent soumises au contrôle du juge et doivent cesser dès que redevient possible un fonctionnement normal des institutions.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00094",
+                      'Même en période exceptionnelle, les mesures prises restent soumises au contrôle du juge et doivent cesser dès que redevient possible un fonctionnement normal des institutions.',
+                    ),
                   ),
                 ],
               ),
@@ -479,22 +842,37 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
           // CHAPITRE 2 — MOYENS DE RÉGLEMENTATION
           // =====================================================
           _HypoCard(
-            title:
-                'Chapitre 2 — Les moyens de réglementation :\nL’aménagement des libertés publiques',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+              "f00095",
+              'Chapitre 2 — Les moyens de réglementation :\nL’aménagement des libertés publiques',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Aménager une liberté publique, c’est fixer les limites de son exercice. '
-                'En régime démocratique, deux techniques se partagent cette fonction : le régime répressif et le régime préventif.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00096",
+                      'Aménager une liberté publique, c’est fixer les limites de son exercice. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00097",
+                      'En régime démocratique, deux techniques se partagent cette fonction : le régime répressif et le régime préventif.',
+                    ),
               ),
               const SizedBox(height: 16),
 
               // ---------- 2.1 RÉGIME RÉPRESSIF ----------
               Text(
-                '2.1 – Le régime répressif',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00098",
+                  '2.1 – Le régime répressif',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15.5,
@@ -503,14 +881,25 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Contrairement à ce que son nom pourrait laisser penser, le régime répressif est en réalité le plus favorable aux libertés publiques. '
-                      'Le principe est simple : ',
-                ),
                 TextSpan(
                   text:
-                      'la liberté est la règle, la sanction n’intervient qu’en cas d’abus caractérisé.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00099",
+                        'Contrairement à ce que son nom pourrait laisser penser, le régime répressif est en réalité le plus favorable aux libertés publiques. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00100",
+                        'Le principe est simple : ',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00101",
+                    'la liberté est la règle, la sanction n’intervient qu’en cas d’abus caractérisé.',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
@@ -518,19 +907,43 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Abuse de sa liberté celui qui commet une infraction prévue par la loi (délit de presse, provocation à la haine, atteintes à la vie privée, etc.) '
-                'ou qui trouble gravement l’ordre public. La sanction est alors prononcée par le juge, à l’issue d’une procédure contradictoire, '
-                'sur le fondement des textes pénaux ou administratifs applicables.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00102",
+                      'Abuse de sa liberté celui qui commet une infraction prévue par la loi (délit de presse, provocation à la haine, atteintes à la vie privée, etc.) ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00103",
+                      'ou qui trouble gravement l’ordre public. La sanction est alors prononcée par le juge, à l’issue d’une procédure contradictoire, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00104",
+                      'sur le fondement des textes pénaux ou administratifs applicables.',
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: 'Point clef',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00105",
+                  'Point clef',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Dans le régime répressif, l’autorité publique n’empêche pas a priori l’exercice de la liberté : le citoyen est libre d’agir, '
-                        'mais il engage sa responsabilité s’il dépasse les limites fixées par la loi.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                          "f00106",
+                          'Dans le régime répressif, l’autorité publique n’empêche pas a priori l’exercice de la liberté : le citoyen est libre d’agir, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                          "f00107",
+                          'mais il engage sa responsabilité s’il dépasse les limites fixées par la loi.',
+                        ),
                   ),
                 ],
               ),
@@ -538,7 +951,11 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
 
               // ---------- 2.2 RÉGIME PRÉVENTIF ----------
               Text(
-                '2.2 – Le régime préventif',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00108",
+                  '2.2 – Le régime préventif',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15.5,
@@ -547,14 +964,25 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'À la différence du régime répressif, le régime préventif intervient en amont : il vise à éviter les troubles avant qu’ils ne se produisent. '
-                      'Selon une formule classique, ',
-                ),
                 TextSpan(
                   text:
-                      '« n’est permis que ce qui est autorisé expressément ou tacitement ».',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00109",
+                        'À la différence du régime répressif, le régime préventif intervient en amont : il vise à éviter les troubles avant qu’ils ne se produisent. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00110",
+                        'Selon une formule classique, ',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00111",
+                    '« n’est permis que ce qui est autorisé expressément ou tacitement ».',
+                  ),
                   style: TextStyle(
                     fontStyle: FontStyle.italic,
                     color: referenceColor,
@@ -562,15 +990,27 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Ce régime repose sur l’action du pouvoir exécutif, responsable de l’ordre public. '
-                'Trois techniques principales sont utilisées : l’autorisation préalable, la déclaration préalable et l’interdiction préalable.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00112",
+                      'Ce régime repose sur l’action du pouvoir exécutif, responsable de l’ordre public. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00113",
+                      'Trois techniques principales sont utilisées : l’autorisation préalable, la déclaration préalable et l’interdiction préalable.',
+                    ),
               ),
               const SizedBox(height: 12),
 
               // ------ 2.2.1 Autorisation préalable ------
               Text(
-                '2.2.1 – L’autorisation préalable',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00114",
+                  '2.2.1 – L’autorisation préalable',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -578,36 +1018,68 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Certaines activités ne peuvent être exercées que si l’autorité administrative a donné son accord à l’avance. '
-                'À défaut d’autorisation, la liberté ne peut s’exercer licitement.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00115",
+                      'Certaines activités ne peuvent être exercées que si l’autorité administrative a donné son accord à l’avance. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00116",
+                      'À défaut d’autorisation, la liberté ne peut s’exercer licitement.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Visa d’exploitation cinématographique délivré par le ministre de la Culture pour la diffusion d’un film ;',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00117",
+                    'Visa d’exploitation cinématographique délivré par le ministre de la Culture pour la diffusion d’un film ;',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
-                TextSpan(text: 'Permis de construire ;'),
-              ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Permis de conduire, soumis à des conditions de capacité et d’aptitude ;',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00118",
+                    'Permis de construire ;',
+                  ),
+                ),
+              ]),
+              _BulletPoint.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00119",
+                    'Permis de conduire, soumis à des conditions de capacité et d’aptitude ;',
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'L’administration peut disposer d’un pouvoir d’appréciation plus ou moins large. '
-                'Le juge administratif contrôle que le refus d’autorisation repose sur des motifs légaux, proportionnés et exempts d’erreur manifeste.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00120",
+                      'L’administration peut disposer d’un pouvoir d’appréciation plus ou moins large. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00121",
+                      'Le juge administratif contrôle que le refus d’autorisation repose sur des motifs légaux, proportionnés et exempts d’erreur manifeste.',
+                    ),
               ),
               const SizedBox(height: 12),
 
               // ------ 2.2.2 Déclaration préalable ------
               Text(
-                '2.2.2 – La déclaration préalable',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00122",
+                  '2.2.2 – La déclaration préalable',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -615,42 +1087,71 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Dans ce régime, la liberté peut s’exercer, mais son titulaire doit informer préalablement l’autorité administrative, '
-                'qui enregistre la déclaration et peut éventuellement prendre des mesures d’encadrement.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00123",
+                      'Dans ce régime, la liberté peut s’exercer, mais son titulaire doit informer préalablement l’autorité administrative, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00124",
+                      'qui enregistre la déclaration et peut éventuellement prendre des mesures d’encadrement.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Déclaration en préfecture pour l’organisation d’une manifestation sur la voie publique ;',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00125",
+                    'Déclaration en préfecture pour l’organisation d’une manifestation sur la voie publique ;',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Information de l’employeur pour l’exercice du droit de grève ;',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00126",
+                    'Information de l’employeur pour l’exercice du droit de grève ;',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Déclaration auprès du parquet pour la création d’un journal ou d’une publication périodique.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00127",
+                    'Déclaration auprès du parquet pour la création d’un journal ou d’une publication périodique.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'L’omission de la déclaration peut entraîner des sanctions pénales ou administratives. '
-                      'Elle ne supprime pas la liberté en elle-même, mais expose celui qui l’exerce à un risque juridique accru. ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00128",
+                        'L’omission de la déclaration peut entraîner des sanctions pénales ou administratives. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00129",
+                        'Elle ne supprime pas la liberté en elle-même, mais expose celui qui l’exerce à un risque juridique accru. ',
+                      ),
                 ),
               ]),
               const SizedBox(height: 12),
 
               // ------ 2.2.3 Interdiction préalable ------
               Text(
-                '2.2.3 – L’interdiction préalable',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00130",
+                  '2.2.3 – L’interdiction préalable',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14.5,
@@ -658,21 +1159,36 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Technique la plus attentatoire aux libertés, l’interdiction préalable permet à l’autorité administrative de prohiber, avant qu’elle ne se réalise, '
-                      'une activité jugée dangereuse pour l’ordre public. ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00131",
+                        'Technique la plus attentatoire aux libertés, l’interdiction préalable permet à l’autorité administrative de prohiber, avant qu’elle ne se réalise, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                        "f00132",
+                        'une activité jugée dangereuse pour l’ordre public. ',
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      'Elle doit rester l’ultime recours, strictement encadré par le juge.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                    "f00133",
+                    'Elle doit rester l’ultime recours, strictement encadré par le juge.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
               const SizedBox(height: 6),
               Text(
-                'a) Au titre de polices spéciales',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00134",
+                  'a) Au titre de polices spéciales',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -680,13 +1196,25 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Certains textes prévoient explicitement la possibilité d’interdire l’exercice d’une liberté particulière : '
-                'interdiction de manifester sur la voie publique en cas de risque manifeste de troubles graves, dissolution d’associations représentant une menace pour l’ordre public, etc.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00135",
+                      'Certains textes prévoient explicitement la possibilité d’interdire l’exercice d’une liberté particulière : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00136",
+                      'interdiction de manifester sur la voie publique en cas de risque manifeste de troubles graves, dissolution d’associations représentant une menace pour l’ordre public, etc.',
+                    ),
               ),
               const SizedBox(height: 8),
               Text(
-                'b) Au titre de la police générale',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00137",
+                  'b) Au titre de la police générale',
+                ),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -694,25 +1222,61 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'En dehors de tout texte spécial, le maire ou le préfet peuvent interdire une manifestation ou une réunion lorsqu’il apparaît qu’aucune autre mesure '
-                'ne permet de prévenir un trouble grave à l’ordre public. Dans les communes à police étatisée, le préfet détient seul ce pouvoir pour les manifestations.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00138",
+                      'En dehors de tout texte spécial, le maire ou le préfet peuvent interdire une manifestation ou une réunion lorsqu’il apparaît qu’aucune autre mesure ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00139",
+                      'ne permet de prévenir un trouble grave à l’ordre public. Dans les communes à police étatisée, le préfet détient seul ce pouvoir pour les manifestations.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Le juge administratif contrôle : la compétence de l’auteur de la décision, la forme de l’acte, le but poursuivi, les motifs invoqués et l’examen complet des circonstances. '
-                'Ce contrôle est particulièrement approfondi lorsque sont en cause des libertés fondamentales (réunion, association, circulation…).',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00140",
+                      'Le juge administratif contrôle : la compétence de l’auteur de la décision, la forme de l’acte, le but poursuivi, les motifs invoqués et l’examen complet des circonstances. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                      "f00141",
+                      'Ce contrôle est particulièrement approfondi lorsque sont en cause des libertés fondamentales (réunion, association, circulation…).',
+                    ),
               ),
               const SizedBox(height: 10),
-              const _ExempleBox(
-                title: 'Arrêt Benjamin (Conseil d’État, 1933)',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                  "f00142",
+                  'Arrêt Benjamin (Conseil d’État, 1933)',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le maire de Nevers avait interdit une conférence littéraire, invoquant le risque de troubles lors d’une manifestation d’opposition. '
-                        'Le Conseil d’État annule l’interdiction : il estime qu’il existait d’autres moyens moins radicaux pour assurer l’ordre public (mobilisation de forces de police), '
-                        'sans empêcher la réunion elle-même. Cet arrêt consacre le principe selon lequel l’interdiction d’une liberté ne peut être décidée que si aucune mesure moins restrictive '
-                        'n’est suffisante pour prévenir le trouble.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                          "f00143",
+                          'Le maire de Nevers avait interdit une conférence littéraire, invoquant le risque de troubles lors d’une manifestation d’opposition. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                          "f00144",
+                          'Le Conseil d’État annule l’interdiction : il estime qu’il existait d’autres moyens moins radicaux pour assurer l’ordre public (mobilisation de forces de police), ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                          "f00145",
+                          'sans empêcher la réunion elle-même. Cet arrêt consacre le principe selon lequel l’interdiction d’une liberté ne peut être décidée que si aucune mesure moins restrictive ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/introduction/regime_juridique_libertes_publiques_page.dart",
+                          "f00146",
+                          'n’est suffisante pour prévenir le trouble.',
+                        ),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class TraficInfluencePage extends StatelessWidget {
   const TraficInfluencePage({super.key});
@@ -59,10 +60,18 @@ class TraficInfluencePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Probité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+            "f00002",
+            "Probité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class TraficInfluencePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le trafic d’influence",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+              "f00003",
+              "Le trafic d’influence",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,18 +102,46 @@ class TraficInfluencePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le trafic d’influence consiste, pour une personne dépositaire de l’autorité publique, "
-                "chargée d’une mission de service public, ou investie d’un mandat électif public, à solliciter "
-                "ou agréer, sans droit, à tout moment, directement ou indirectement, des offres, promesses, dons, "
-                "présents ou avantages, pour elle-même ou pour autrui, afin d’abuser (ou d’avoir abusé) de son "
-                "influence réelle ou supposée en vue de faire obtenir d’une autorité ou d’une administration publique "
-                "des distinctions, des emplois, des marchés ou toute autre décision favorable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00005",
+                      "Le trafic d’influence consiste, pour une personne dépositaire de l’autorité publique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00006",
+                      "chargée d’une mission de service public, ou investie d’un mandat électif public, à solliciter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00007",
+                      "ou agréer, sans droit, à tout moment, directement ou indirectement, des offres, promesses, dons, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00008",
+                      "présents ou avantages, pour elle-même ou pour autrui, afin d’abuser (ou d’avoir abusé) de son ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00009",
+                      "influence réelle ou supposée en vue de faire obtenir d’une autorité ou d’une administration publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00010",
+                      "des distinctions, des emplois, des marchés ou toute autre décision favorable.",
+                    ),
               ),
             ],
           ),
@@ -109,21 +150,30 @@ class TraficInfluencePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-11 alinéas 1 et 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00012",
+                    "Article 432-11 alinéas 1 et 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime le trafic d’influence.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00013",
+                    " : définit et réprime le trafic d’influence.",
+                  ),
                 ),
               ]),
             ],
@@ -133,80 +183,162 @@ class TraficInfluencePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un auteur particulier"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00015",
+                  "A) Un auteur particulier",
+                ),
+              ),
               _Paragraph(
-                "L’infraction suppose un auteur appartenant à l’une des catégories suivantes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00016",
+                  "L’infraction suppose un auteur appartenant à l’une des catégories suivantes.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Personne dépositaire de l’autorité publique : détient un pouvoir de décision lié à une parcelle d’autorité publique (ex. policiers, gendarmes, douaniers, magistrats, militaires, officiers publics, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00017",
+                  "Personne dépositaire de l’autorité publique : détient un pouvoir de décision lié à une parcelle d’autorité publique (ex. policiers, gendarmes, douaniers, magistrats, militaires, officiers publics, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Personne investie d’un mandat électif public : élus nationaux, régionaux, départementaux, communaux, et certains élus d’établissements publics administratifs (chambres consulaires, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00018",
+                  "Personne investie d’un mandat électif public : élus nationaux, régionaux, départementaux, communaux, et certains élus d’établissements publics administratifs (chambres consulaires, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Personne chargée d’une mission de service public : accomplit ou participe à une mission d’intérêt général, temporaire ou permanente, sans nécessaire pouvoir de décision/commandement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00019",
+                  "Personne chargée d’une mission de service public : accomplit ou participe à une mission d’intérêt général, temporaire ou permanente, sans nécessaire pouvoir de décision/commandement.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un acte : sollicitation ou agrément"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00020",
+                  "B) Un acte : sollicitation ou agrément",
+                ),
+              ),
               _Paragraph(
-                "Le trafic d’influence repose sur l’un des deux comportements suivants :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00021",
+                  "Le trafic d’influence repose sur l’un des deux comportements suivants :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "La sollicitation : démarche/initiative de l’auteur (directe ou détournée) laissant entendre qu’il faut « payer » pour obtenir la décision recherchée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00022",
+                  "La sollicitation : démarche/initiative de l’auteur (directe ou détournée) laissant entendre qu’il faut « payer » pour obtenir la décision recherchée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’agrément : accord donné par l’auteur à la proposition (accord de volontés entre celui qui propose et celui qui accepte).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00023",
+                  "L’agrément : accord donné par l’auteur à la proposition (accord de volontés entre celui qui propose et celui qui accepte).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La sollicitation ou l’agrément peut être direct(e) ou indirect(e) (par personne interposée).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00024",
+                  "La sollicitation ou l’agrément peut être direct(e) ou indirect(e) (par personne interposée).",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Le texte vise des faits possibles « à tout moment » : il inclut aussi les avantages demandés/acceptés en remerciement d’actes accomplis antérieurement.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00025",
+                  "Le texte vise des faits possibles « à tout moment » : il inclut aussi les avantages demandés/acceptés en remerciement d’actes accomplis antérieurement.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un bénéfice attendu"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00026",
+                  "C) Un bénéfice attendu",
+                ),
+              ),
               _Paragraph(
-                "L’avantage peut prendre des formes très variées : somme d’argent, cadeau, service, voyage, droits, etc. "
-                "Les termes « offres, promesses, dons, présents ou avantages quelconques » sont entendus largement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00027",
+                      "L’avantage peut prendre des formes très variées : somme d’argent, cadeau, service, voyage, droits, etc. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00028",
+                      "Les termes « offres, promesses, dons, présents ou avantages quelconques » sont entendus largement.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un acte d’influence (réelle ou supposée)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00029",
+                  "D) Un acte d’influence (réelle ou supposée)",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit abuser (ou accepter d’abuser) de son influence réelle ou supposée auprès d’une autorité ou d’une administration publique.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00030",
+                  "L’auteur doit abuser (ou accepter d’abuser) de son influence réelle ou supposée auprès d’une autorité ou d’une administration publique.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’influence doit être directe : c’est l’auteur qui est censé intervenir lui-même auprès du service ou de la personne disposant d’un pouvoir de décision.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00031",
+                  "L’influence doit être directe : c’est l’auteur qui est censé intervenir lui-même auprès du service ou de la personne disposant d’un pouvoir de décision.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : sollicitation d’une somme pour « intervenir » afin que des PV n’aient aucune suite pénale, alors même que l’auteur n’avait pas le pouvoir de classer ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00032",
+                      "Jurisprudence : sollicitation d’une somme pour « intervenir » afin que des PV n’aient aucune suite pénale, alors même que l’auteur n’avait pas le pouvoir de classer ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 06 juin 1989)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00033",
+                      "(Cass. crim., 06 juin 1989)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -217,41 +349,74 @@ class TraficInfluencePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Peu importe que la personne sollicitée obtienne concrètement l’avantage recherché : l’infraction peut être caractérisée même si l’influence se révèle vaine.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00034",
+                  "Peu importe que la personne sollicitée obtienne concrètement l’avantage recherché : l’infraction peut être caractérisée même si l’influence se révèle vaine.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("E) Finalité : obtenir une décision favorable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00035",
+                  "E) Finalité : obtenir une décision favorable",
+                ),
+              ),
               _Paragraph(
-                "L’influence doit tendre à faire obtenir d’une autorité ou d’une administration publique :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00036",
+                  "L’influence doit tendre à faire obtenir d’une autorité ou d’une administration publique :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Des distinctions (décorations, médailles, récompenses, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00037",
+                  "Des distinctions (décorations, médailles, récompenses, etc.).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Des emplois (tout poste, quel que soit le niveau, nommé/investi par l’autorité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00038",
+                  "Des emplois (tout poste, quel que soit le niveau, nommé/investi par l’autorité).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Des marchés (même privés, dès lors qu’ils nécessitent l’agrément de l’autorité publique).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00039",
+                  "Des marchés (même privés, dès lors qu’ils nécessitent l’agrément de l’autorité publique).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toute autre décision favorable (même régulière en elle-même : ce sont les moyens d’influence irréguliers qui constituent l’infraction).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00040",
+                  "Toute autre décision favorable (même régulière en elle-même : ce sont les moyens d’influence irréguliers qui constituent l’infraction).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : acceptation de sommes pour tenter d’obtenir la délivrance d’un titre de séjour et intervention auprès d’un assistant parlementaire ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00041",
+                      "Jurisprudence : acceptation de sommes pour tenter d’obtenir la délivrance d’un titre de séjour et intervention auprès d’un assistant parlementaire ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Toulouse, 31 janvier 2002)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00042",
+                      "(C.A. Toulouse, 31 janvier 2002)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -264,11 +429,18 @@ class TraficInfluencePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : marché privé nécessitant l’agrément de l’autorité publique ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00043",
+                      "Jurisprudence : marché privé nécessitant l’agrément de l’autorité publique ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 15 mars 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00044",
+                      "(Cass. crim., 15 mars 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -284,19 +456,41 @@ class TraficInfluencePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+              "f00045",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Intention frauduleuse"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00046",
+                  "Intention frauduleuse",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir conscience d’agir en violation de son devoir de probité et vouloir obtenir un avantage "
-                "en contrepartie de l’influence exercée (ou promise).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00047",
+                      "L’auteur doit avoir conscience d’agir en violation de son devoir de probité et vouloir obtenir un avantage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                      "f00048",
+                      "en contrepartie de l’influence exercée (ou promise).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Peu importe que l’influence ne soit finalement pas exercée ou qu’elle soit inefficace. Le mobile est indifférent.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00049",
+                  "Peu importe que l’influence ne soit finalement pas exercée ou qu’elle soit inefficace. Le mobile est indifférent.",
+                ),
               ),
             ],
           ),
@@ -305,22 +499,30 @@ class TraficInfluencePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+              "f00050",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-11 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00051",
+                    "Article 432-11 alinéa 4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : aggravation lorsque l’infraction est commise en bande organisée.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00052",
+                    " : aggravation lorsque l’infraction est commise en bande organisée.",
+                  ),
                 ),
               ]),
             ],
@@ -330,97 +532,183 @@ class TraficInfluencePage extends StatelessWidget {
 
           // Répression + tentative/complicité + réduction
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+              "f00053",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00054",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 1 000 000 € d’amende ",
-                ),
-                TextSpan(
-                  text:
-                      "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
-                ),
-                TextSpan(
-                  text: "article 432-11 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00055",
+                    "Qualification simple : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00056",
+                    "10 ans d’emprisonnement et 1 000 000 € d’amende ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00057",
+                    "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00058",
+                    "article 432-11 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (bande organisée) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 2 000 000 € d’amende ",
-                ),
-                TextSpan(
-                  text:
-                      "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
-                ),
-                TextSpan(
-                  text: "article 432-11 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00059",
+                    "Aggravée (bande organisée) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00060",
+                    "10 ans d’emprisonnement et 2 000 000 € d’amende ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00061",
+                    "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00062",
+                    "article 432-11 alinéa 4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00063",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph(
-                "Les personnes morales peuvent être reconnues responsables.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00064",
+                  "Les personnes morales peuvent être reconnues responsables.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00065",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00066",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00067",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00068",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00069",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide/assistance, provocation, instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00070",
+                    " (aide/assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Réduction ou exemption de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                  "f00071",
+                  "Réduction ou exemption de peine",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-11-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                    "f00072",
+                    "Article 432-11-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : l’auteur ou le complice de trafic d’influence qui permet soit de faire cesser l’infraction, "
-                      "soit d’identifier les autres auteurs/complices, voit sa peine privative de liberté réduite de moitié.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                        "f00073",
+                        " : l’auteur ou le complice de trafic d’influence qui permet soit de faire cesser l’infraction, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/trafic_influence_contenu_page.dart",
+                        "f00074",
+                        "soit d’identifier les autres auteurs/complices, voit sa peine privative de liberté réduite de moitié.",
+                      ),
                 ),
               ]),
             ],
@@ -677,9 +965,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDemandeFondsSousContraintePage extends StatelessWidget {
   const PaDemandeFondsSousContraintePage({super.key});
@@ -56,10 +57,18 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions voisines du vol",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+            "f00002",
+            "Infractions voisines du vol",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La demande de fonds sous contrainte",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+              "f00003",
+              "La demande de fonds sous contrainte",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La demande de fonds sous contrainte est le fait, en réunion et de manière agressive, "
-                "ou sous la menace d’un animal dangereux, de solliciter, sur la voie publique, la remise "
-                "de fonds, de valeurs ou d’un bien.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00005",
+                      "La demande de fonds sous contrainte est le fait, en réunion et de manière agressive, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00006",
+                      "ou sous la menace d’un animal dangereux, de solliciter, sur la voie publique, la remise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00007",
+                      "de fonds, de valeurs ou d’un bien.",
+                    ),
               ),
             ],
           ),
@@ -103,22 +132,30 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 312-12-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00009",
+                    "Article 312-12-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la demande de fonds sous contrainte.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime la demande de fonds sous contrainte.",
+                  ),
                 ),
               ]),
             ],
@@ -128,44 +165,83 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La demande de fonds sous contrainte se distingue de l’extorsion par les moyens employés "
-                "(réunion + manière agressive, ou menace d’un animal dangereux) et vise exclusivement "
-                "les comportements de personnes se livrant à la mendicité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00012",
+                      "La demande de fonds sous contrainte se distingue de l’extorsion par les moyens employés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00013",
+                      "(réunion + manière agressive, ou menace d’un animal dangereux) et vise exclusivement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00014",
+                      "les comportements de personnes se livrant à la mendicité.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Un comportement de contrainte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00015",
+                  "A) Un comportement de contrainte",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "L’article 312-12-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00016",
+                    "L’article 312-12-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00017",
+                    " prévoit deux situations :",
                   ),
                 ),
-                TextSpan(text: " prévoit deux situations :"),
               ]),
               SizedBox(height: 8),
 
               _BulletPoint(
-                text:
-                    "En réunion et de manière agressive (au moins deux auteurs).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00018",
+                  "En réunion et de manière agressive (au moins deux auteurs).",
+                ),
               ),
               SizedBox(height: 6),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : deux personnes munies de pancartes contraignent des automobilistes à s’arrêter et frappent aux vitres pour demander de l’argent ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00019",
+                      "Jurisprudence : deux personnes munies de pancartes contraignent des automobilistes à s’arrêter et frappent aux vitres pour demander de l’argent ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Grenoble, 18 décembre 2007)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00020",
+                      "(C.A. Grenoble, 18 décembre 2007)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -176,44 +252,117 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La manière agressive peut résulter d’un comportement injurieux, vaguement menaçant "
-                "ou impressionnant, l’intimidation pouvant aussi découler de la réunion des auteurs.\n"
-                "En principe, il ne doit pas s’agir de menaces de violences caractérisant l’extorsion, "
-                "ni de violences effectives (qui relèveraient alors d’une tentative d’extorsion ou d’autres qualifications).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00021",
+                      "La manière agressive peut résulter d’un comportement injurieux, vaguement menaçant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00022",
+                      "ou impressionnant, l’intimidation pouvant aussi découler de la réunion des auteurs.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00023",
+                      "En principe, il ne doit pas s’agir de menaces de violences caractérisant l’extorsion, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00024",
+                      "ni de violences effectives (qui relèveraient alors d’une tentative d’extorsion ou d’autres qualifications).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _BulletPoint(text: "Sous la menace d’un animal dangereux."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00025",
+                  "Sous la menace d’un animal dangereux.",
+                ),
+              ),
               SizedBox(height: 6),
               _Paragraph(
-                "L’auteur utilise un animal pour contraindre la personne sollicitée. "
-                "La dangerosité vise tout animal présentant un danger apparent ou raisonnablement supposé, "
-                "c’est-à-dire susceptible d’occasionner un dommage.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00026",
+                      "L’auteur utilise un animal pour contraindre la personne sollicitée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00027",
+                      "La dangerosité vise tout animal présentant un danger apparent ou raisonnablement supposé, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00028",
+                      "c’est-à-dire susceptible d’occasionner un dommage.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une sollicitation sur la voie publique"),
-              _BulletPoint(text: "Sur la voie publique."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00029",
+                  "B) Une sollicitation sur la voie publique",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00030",
+                  "Sur la voie publique.",
+                ),
+              ),
               SizedBox(height: 6),
               _Paragraph(
-                "La sollicitation doit être effectuée sur la voie publique, c’est-à-dire dans les lieux "
-                "où s’exerce habituellement la mendicité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00031",
+                      "La sollicitation doit être effectuée sur la voie publique, c’est-à-dire dans les lieux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00032",
+                      "où s’exerce habituellement la mendicité.",
+                    ),
               ),
 
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "Portant sur la remise de fonds, de valeurs ou d’un bien.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00033",
+                  "Portant sur la remise de fonds, de valeurs ou d’un bien.",
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                "La sollicitation peut concerner des fonds, des instruments de paiement, des valeurs mobilières, "
-                "mais aussi tout objet ou denrée ayant une valeur marchande.\n"
-                "Pour que l’infraction soit constituée, il n’est pas nécessaire que la remise soit effective : "
-                "le délit est constitué dès la sollicitation.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00034",
+                      "La sollicitation peut concerner des fonds, des instruments de paiement, des valeurs mobilières, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00035",
+                      "mais aussi tout objet ou denrée ayant une valeur marchande.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00036",
+                      "Pour que l’infraction soit constituée, il n’est pas nécessaire que la remise soit effective : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00037",
+                      "le délit est constitué dès la sollicitation.",
+                    ),
               ),
             ],
           ),
@@ -222,16 +371,36 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+              "f00038",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intention coupable est requise : l’auteur a conscience d’adopter un comportement menaçant "
-                "pour obtenir la remise de fonds, de valeurs ou d’un bien.\n"
-                "Il sait que la remise ne saurait être le résultat d’un accord librement consenti. "
-                "La preuve résulte des actes accomplis.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00039",
+                      "L’intention coupable est requise : l’auteur a conscience d’adopter un comportement menaçant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00040",
+                      "pour obtenir la remise de fonds, de valeurs ou d’un bien.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00041",
+                      "Il sait que la remise ne saurait être le résultat d’un accord librement consenti. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                      "f00042",
+                      "La preuve résulte des actes accomplis.",
+                    ),
               ),
             ],
           ),
@@ -240,12 +409,22 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+              "f00043",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue par le texte."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00044",
+                  "Aucune circonstance aggravante prévue par le texte.",
+                ),
+              ),
             ],
           ),
 
@@ -253,58 +432,112 @@ class PaDemandeFondsSousContraintePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+              "f00045",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                TextSpan(text: "Délit : "),
-                TextSpan(
-                  text: "6 mois d’emprisonnement et 3 750 € d’amende. — ",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00046",
+                  "Peines encourues — personnes physiques",
                 ),
-                TextSpan(
-                  text: "article 312-12-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
-                TextSpan(
-                  text: "l’article 312-15 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text: " (responsabilité pénale des personnes morales).",
-                ),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(
-                text:
-                    "Tentative : NON (le délit est constitué dès la sollicitation, donc pas de tentative).",
               ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00047",
+                    "Délit : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00048",
+                    "6 mois d’emprisonnement et 3 750 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00049",
+                    "article 312-12-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00050",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00051",
+                    "Peines prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00052",
+                    "l’article 312-15 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00053",
+                    " (responsabilité pénale des personnes morales).",
+                  ),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00054",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                  "f00055",
+                  "Tentative : NON (le délit est constitué dès la sollicitation, donc pas de tentative).",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00056",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart",
+                    "f00057",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -563,9 +796,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

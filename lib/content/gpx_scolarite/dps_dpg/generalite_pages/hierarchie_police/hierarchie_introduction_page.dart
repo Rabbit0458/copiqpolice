@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class HierarchieIntroStructurePage extends StatelessWidget {
   const HierarchieIntroStructurePage({super.key});
@@ -32,10 +33,18 @@ class HierarchieIntroStructurePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Structure des fonctions judiciaires',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+            "f00002",
+            'Structure des fonctions judiciaires',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -51,7 +60,11 @@ class HierarchieIntroStructurePage extends StatelessWidget {
         children: [
           // ---------------------- TITRE --------------------------
           Text(
-            'La hiérarchie des fonctions judiciaires',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+              "f00003",
+              'La hiérarchie des fonctions judiciaires',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,31 +74,51 @@ class HierarchieIntroStructurePage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO GÉNÉRALE -------------------
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'La police judiciaire est exercée sous la direction du procureur de la République, conformément à l’article 12 du code de procédure pénale. ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                "f00004",
+                'La police judiciaire est exercée sous la direction du procureur de la République, conformément à l’article 12 du code de procédure pénale. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'Dans chaque ressort de cour d’appel, elle est placée sous la surveillance du procureur général et sous le contrôle de la chambre de l’instruction (article 13 du code de procédure pénale).',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                "f00005",
+                'Dans chaque ressort de cour d’appel, elle est placée sous la surveillance du procureur général et sous le contrôle de la chambre de l’instruction (article 13 du code de procédure pénale).',
+              ),
             ),
           ]),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'Pour exercer cette mission essentiellement répressive, la loi – en particulier le code de procédure pénale – confère aux personnels de la police nationale une qualification judiciaire : officier de police judiciaire, agent de police judiciaire ou agent de police judiciaire adjoint. '
-            'Les officiers de police judiciaire et les agents de police judiciaire peuvent être secondés par des assistants d’enquête pour certaines démarches procédurales.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00006",
+                  'Pour exercer cette mission essentiellement répressive, la loi – en particulier le code de procédure pénale – confère aux personnels de la police nationale une qualification judiciaire : officier de police judiciaire, agent de police judiciaire ou agent de police judiciaire adjoint. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00007",
+                  'Les officiers de police judiciaire et les agents de police judiciaire peuvent être secondés par des assistants d’enquête pour certaines démarches procédurales.',
+                ),
           ),
           const SizedBox(height: 14),
 
-          const _IntroBullet(
-            text:
-                'La police judiciaire agit toujours sous l’autorité du ministère public et sous le contrôle de la juridiction d’instruction.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+              "f00008",
+              'La police judiciaire agit toujours sous l’autorité du ministère public et sous le contrôle de la juridiction d’instruction.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Les qualifications judiciaires (officier de police judiciaire, agent de police judiciaire, agent de police judiciaire adjoint, assistants d’enquête) structurent la répartition des missions et des responsabilités au sein des services.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+              "f00009",
+              'Les qualifications judiciaires (officier de police judiciaire, agent de police judiciaire, agent de police judiciaire adjoint, assistants d’enquête) structurent la répartition des missions et des responsabilités au sein des services.',
+            ),
           ),
 
           const SizedBox(height: 20),
@@ -94,37 +127,85 @@ class HierarchieIntroStructurePage extends StatelessWidget {
           // A. DIRECTION ET CONTRÔLE DE LA POLICE JUDICIAIRE
           // =======================================================
           _ConditionCard(
-            title: 'A. Direction et contrôle de la police judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+              "f00010",
+              'A. Direction et contrôle de la police judiciaire',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La police judiciaire ne fonctionne jamais de manière autonome. Elle agit dans un cadre hiérarchique et judiciaire très précis, qui garantit le respect des libertés individuelles et la régularité de la procédure pénale.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00011",
+                  'La police judiciaire ne fonctionne jamais de manière autonome. Elle agit dans un cadre hiérarchique et judiciaire très précis, qui garantit le respect des libertés individuelles et la régularité de la procédure pénale.',
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle('Rôle du procureur de la République'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00012",
+                  'Rôle du procureur de la République',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Le procureur de la République dirige l’activité de la police judiciaire. ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                    "f00013",
+                    'Le procureur de la République dirige l’activité de la police judiciaire. ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'Il oriente les enquêtes, fixe les priorités, décide de l’opportunité des poursuites et contrôle la légalité des actes réalisés par les services enquêteurs.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                    "f00014",
+                    'Il oriente les enquêtes, fixe les priorités, décide de l’opportunité des poursuites et contrôle la légalité des actes réalisés par les services enquêteurs.',
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
-              _SubTitle('Surveillance du procureur général'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00015",
+                  'Surveillance du procureur général',
+                ),
+              ),
               _Paragraph(
-                'Au niveau du ressort de la cour d’appel, le procureur général exerce une surveillance sur l’ensemble de l’activité de police judiciaire. '
-                'Il veille notamment à la cohérence des pratiques, au respect de la loi et au bon fonctionnement des services enquêteurs.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00016",
+                      'Au niveau du ressort de la cour d’appel, le procureur général exerce une surveillance sur l’ensemble de l’activité de police judiciaire. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00017",
+                      'Il veille notamment à la cohérence des pratiques, au respect de la loi et au bon fonctionnement des services enquêteurs.',
+                    ),
               ),
               SizedBox(height: 8),
-              _SubTitle('Contrôle de la chambre de l’instruction'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00018",
+                  'Contrôle de la chambre de l’instruction',
+                ),
+              ),
               _Paragraph(
-                'La chambre de l’instruction contrôle certains actes et décisions pris dans le cadre des enquêtes et de l’instruction. '
-                'Elle peut, par exemple, vérifier la régularité des actes, statuer sur des nullités de procédure ou encore apprécier la manière dont les pouvoirs de police judiciaire ont été exercés.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00019",
+                      'La chambre de l’instruction contrôle certains actes et décisions pris dans le cadre des enquêtes et de l’instruction. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00020",
+                      'Elle peut, par exemple, vérifier la régularité des actes, statuer sur des nullités de procédure ou encore apprécier la manière dont les pouvoirs de police judiciaire ont été exercés.',
+                    ),
               ),
             ],
           ),
@@ -135,45 +216,110 @@ class HierarchieIntroStructurePage extends StatelessWidget {
           // B. LES TROIS NIVEAUX DE QUALIFICATION JUDICIAIRE
           // =======================================================
           _ConditionCard(
-            title: 'B. Les trois niveaux de qualification judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+              "f00021",
+              'B. Les trois niveaux de qualification judiciaire',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La loi distingue trois grandes catégories de personnels investis de pouvoirs de police judiciaire au sein de la police nationale et de la gendarmerie nationale. '
-                'Chacune de ces catégories dispose d’un niveau de responsabilité et de prérogatives différent.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00022",
+                      'La loi distingue trois grandes catégories de personnels investis de pouvoirs de police judiciaire au sein de la police nationale et de la gendarmerie nationale. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00023",
+                      'Chacune de ces catégories dispose d’un niveau de responsabilité et de prérogatives différent.',
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle('1. Les officiers de police judiciaire'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00024",
+                  '1. Les officiers de police judiciaire',
+                ),
+              ),
               _Paragraph(
-                'Les officiers de police judiciaire disposent des pouvoirs les plus étendus en matière d’enquête pénale. '
-                'Ils dirigent les investigations, prennent certaines décisions coercitives prévues par le code de procédure pénale et rendent compte directement au procureur de la République ou au juge d’instruction.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00025",
+                      'Les officiers de police judiciaire disposent des pouvoirs les plus étendus en matière d’enquête pénale. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00026",
+                      'Ils dirigent les investigations, prennent certaines décisions coercitives prévues par le code de procédure pénale et rendent compte directement au procureur de la République ou au juge d’instruction.',
+                    ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('2. Les agents de police judiciaire'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00027",
+                  '2. Les agents de police judiciaire',
+                ),
+              ),
               _Paragraph(
-                'Les agents de police judiciaire assistent les officiers de police judiciaire dans la conduite des enquêtes. '
-                'Ils réalisent de nombreux actes de procédure dans le cadre des instructions qui leur sont données (constatations, auditions, notifications, etc.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00028",
+                      'Les agents de police judiciaire assistent les officiers de police judiciaire dans la conduite des enquêtes. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00029",
+                      'Ils réalisent de nombreux actes de procédure dans le cadre des instructions qui leur sont données (constatations, auditions, notifications, etc.).',
+                    ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle('3. Les agents de police judiciaire adjoints'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00030",
+                  '3. Les agents de police judiciaire adjoints',
+                ),
+              ),
               _Paragraph(
-                'Les agents de police judiciaire adjoints disposent de pouvoirs plus limités, mais contribuent directement aux missions de police judiciaire sur le terrain : '
-                'policiers adjoints, agents de police municipale, gardes champêtres, réservistes, etc. '
-                'Ils agissent sous le contrôle des officiers de police judiciaire et des agents de police judiciaire.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00031",
+                      'Les agents de police judiciaire adjoints disposent de pouvoirs plus limités, mais contribuent directement aux missions de police judiciaire sur le terrain : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00032",
+                      'policiers adjoints, agents de police municipale, gardes champêtres, réservistes, etc. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00033",
+                      'Ils agissent sous le contrôle des officiers de police judiciaire et des agents de police judiciaire.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: 'Logique de hiérarchie fonctionnelle',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00034",
+                  'Logique de hiérarchie fonctionnelle',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Cette organisation par niveaux (officiers de police judiciaire, agents de police judiciaire, agents de police judiciaire adjoints) permet de répartir les responsabilités en fonction des compétences, de la formation et du degré d’initiative attendu de chaque catégorie de personnels.',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                      "f00035",
+                      'Cette organisation par niveaux (officiers de police judiciaire, agents de police judiciaire, agents de police judiciaire adjoints) permet de répartir les responsabilités en fonction des compétences, de la formation et du degré d’initiative attendu de chaque catégorie de personnels.',
+                    ),
                   ),
                 ],
               ),
@@ -186,33 +332,59 @@ class HierarchieIntroStructurePage extends StatelessWidget {
           // C. LES ASSISTANTS D’ENQUÊTE ET LE TRAVAIL EN ÉQUIPE
           // =======================================================
           _ConditionCard(
-            title: 'C. Les assistants d’enquête et le travail en équipe',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+              "f00036",
+              'C. Les assistants d’enquête et le travail en équipe',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les officiers de police judiciaire et les agents de police judiciaire peuvent être secondés par des assistants d’enquête, désignés à l’article 21-3 du code de procédure pénale. ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                    "f00037",
+                    'Les officiers de police judiciaire et les agents de police judiciaire peuvent être secondés par des assistants d’enquête, désignés à l’article 21-3 du code de procédure pénale. ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'Ces personnels participent à l’accomplissement de certaines formalités procédurales et renforcent la capacité opérationnelle des services d’enquête.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                    "f00038",
+                    'Ces personnels participent à l’accomplissement de certaines formalités procédurales et renforcent la capacité opérationnelle des services d’enquête.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Ils sont recrutés parmi des personnels spécifiquement identifiés (corps de soutien, personnels administratifs, agents de police judiciaire adjoints, etc.) et doivent suivre une formation assortie d’un examen attestant leur aptitude à exercer ces missions.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00039",
+                  'Ils sont recrutés parmi des personnels spécifiquement identifiés (corps de soutien, personnels administratifs, agents de police judiciaire adjoints, etc.) et doivent suivre une formation assortie d’un examen attestant leur aptitude à exercer ces missions.',
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Une chaîne judiciaire coordonnée',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                  "f00040",
+                  'Une chaîne judiciaire coordonnée',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La police judiciaire repose sur un travail d’équipe : officiers de police judiciaire, agents de police judiciaire, agents de police judiciaire adjoints et assistants d’enquête agissent de manière complémentaire, '
-                        'sous la direction de l’autorité judiciaire, pour garantir l’efficacité de l’enquête et la protection des droits fondamentaux.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                          "f00041",
+                          'La police judiciaire repose sur un travail d’équipe : officiers de police judiciaire, agents de police judiciaire, agents de police judiciaire adjoints et assistants d’enquête agissent de manière complémentaire, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/hierarchie_police/hierarchie_introduction_page.dart",
+                          "f00042",
+                          'sous la direction de l’autorité judiciaire, pour garantir l’efficacité de l’enquête et la protection des droits fondamentaux.',
+                        ),
                   ),
                 ],
               ),

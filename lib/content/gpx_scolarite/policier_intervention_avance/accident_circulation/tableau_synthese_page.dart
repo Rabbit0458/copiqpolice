@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:math' as math;
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class TableauSynthesePage extends StatelessWidget {
   const TableauSynthesePage({super.key});
@@ -37,10 +38,18 @@ class TableauSynthesePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+            "f00002",
+            "Accident circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -55,7 +64,11 @@ class TableauSynthesePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Tableau de synthèse",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+              "f00003",
+              "Tableau de synthèse",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -70,12 +83,28 @@ class TableauSynthesePage extends StatelessWidget {
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ces tableaux servent de support rapide pour structurer le constat et vérifier "
-                "que les points essentiels ont bien été relevés.\n\n"
-                "Astuce : ouvre l’image en plein écran pour zoomer sur les cases et faire pivoter "
-                "si besoin (boutons ↺ ↻).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00004",
+                      "Ces tableaux servent de support rapide pour structurer le constat et vérifier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00005",
+                      "que les points essentiels ont bien été relevés.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00006",
+                      "Astuce : ouvre l’image en plein écran pour zoomer sur les cases et faire pivoter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00007",
+                      "si besoin (boutons ↺ ↻).",
+                    ),
               ),
             ],
           ),
@@ -87,21 +116,45 @@ class TableauSynthesePage extends StatelessWidget {
             cardColor: cardDocs,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Clique sur une image pour l’ouvrir en plein écran :\n"
-                "• Zoom / déplacement\n"
-                "• Rotation (↺ ↻)\n"
-                "• Reset",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00008",
+                      "Clique sur une image pour l’ouvrir en plein écran :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00009",
+                      "• Zoom / déplacement\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00010",
+                      "• Rotation (↺ ↻)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00011",
+                      "• Reset",
+                    ),
               ),
               SizedBox(height: 12),
               _ZoomRotateImageTile(
-                title: "Tableau 1",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                  "f00012",
+                  "Tableau 1",
+                ),
                 assetPath: "assets/images/talbeau-1.png",
               ),
               SizedBox(height: 12),
               _ZoomRotateImageTile(
-                title: "Tableau 2",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                  "f00013",
+                  "Tableau 2",
+                ),
                 assetPath: "assets/images/talbeau-2.png",
               ),
             ],
@@ -219,7 +272,11 @@ class _ZoomRotateImageTile extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    "Appuyer pour ouvrir",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                      "f00015",
+                      "Appuyer pour ouvrir",
+                    ),
                     style: GoogleFonts.fustat(
                       fontWeight: FontWeight.w800,
                       fontSize: 12.5,
@@ -331,7 +388,11 @@ class _ZoomRotateImageTile extends StatelessWidget {
                                   angle -= math.pi / 2;
                                 });
                               },
-                              tooltip: "Tourner à gauche",
+                              tooltip: ScolariteText.value(
+                                "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                                "f00016",
+                                "Tourner à gauche",
+                              ),
                               icon: const Icon(Icons.rotate_left_rounded),
                               color: isDark ? Colors.white : Colors.black,
                             ),
@@ -341,7 +402,11 @@ class _ZoomRotateImageTile extends StatelessWidget {
                                   angle += math.pi / 2;
                                 });
                               },
-                              tooltip: "Tourner à droite",
+                              tooltip: ScolariteText.value(
+                                "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                                "f00017",
+                                "Tourner à droite",
+                              ),
                               icon: const Icon(Icons.rotate_right_rounded),
                               color: isDark ? Colors.white : Colors.black,
                             ),
@@ -392,7 +457,11 @@ class _ZoomRotateImageTile extends StatelessWidget {
                             const SizedBox(width: 8),
                             Expanded(
                               child: Text(
-                                "Pince pour zoomer • Glisse pour déplacer • Utilise ↺ ↻ pour tourner",
+                                ScolariteText.value(
+                                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/tableau_synthese_page.dart",
+                                  "f00018",
+                                  "Pince pour zoomer • Glisse pour déplacer • Utilise ↺ ↻ pour tourner",
+                                ),
                                 style: GoogleFonts.fustat(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 12.5,
@@ -663,9 +732,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

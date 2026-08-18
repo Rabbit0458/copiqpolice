@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ElementLegalPage extends StatefulWidget {
   static const String routeName = '/gpx/generalites/infraction/element-legal';
@@ -74,7 +75,7 @@ class _ElementLegalPageState extends State<ElementLegalPage>
           // Titre volontairement vide (exigence)
           title: const Text(''),
           leading: IconButton(
-            tooltip: 'Retour',
+            tooltip: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00001", 'Retour'),
             icon: Icon(
               Icons.arrow_back_rounded,
               color: theme.colorScheme.onSurface,
@@ -96,14 +97,14 @@ class _ElementLegalPageState extends State<ElementLegalPage>
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
                     child: _QuickNav(
-                      items: const [
-                        ('Principe de légalité', Icons.gavel_rounded),
-                        ('Lois & assimilés', Icons.menu_book_rounded),
-                        ('Traités', Icons.public_rounded),
-                        ('Règlements', Icons.rule_rounded),
+                      items:  [
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00002", 'Principe de légalité'), Icons.gavel_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00003", 'Lois & assimilés'), Icons.menu_book_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00004", 'Traités'), Icons.public_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00005", 'Règlements'), Icons.rule_rounded),
                         ('Circulaires', Icons.mail_rounded),
-                        ('Jurisprudence & doctrine', Icons.balance_rounded),
-                        ('Mémo', Icons.fact_check_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00006", 'Jurisprudence & doctrine'), Icons.balance_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00007", 'Mémo'), Icons.fact_check_rounded),
                       ],
                       onTap: (label) {
                         switch (label) {
@@ -138,96 +139,96 @@ class _ElementLegalPageState extends State<ElementLegalPage>
                 // ===== SECTIONS =====
                 SliverToBoxAdapter(
                   key: _kPrincipe,
-                  child: const _GlassCard(
-                    title: 'Principe de légalité (Article 111-3 du Code pénal)',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00014", 'Principe de légalité (Article 111-3 du Code pénal)'),
                     icon: Icons.gavel_rounded,
                     bullets: [
-                      'Nul ne peut être puni pour un crime ou pour un délit dont les éléments ne sont pas définis par la loi ; pour les contraventions, par le règlement.',
-                      'Interprétation stricte de la loi pénale : pas d’analogie créatrice.',
-                      'Fondement du droit pénal : sans texte, pas d’infraction.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00015", 'Nul ne peut être puni pour un crime ou pour un délit dont les éléments ne sont pas définis par la loi ; pour les contraventions, par le règlement.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00016", 'Interprétation stricte de la loi pénale : pas d’analogie créatrice.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00017", 'Fondement du droit pénal : sans texte, pas d’infraction.'),
                     ],
                     note:
-                        'Référence : Article 111-3 du Code pénal, ainsi que les Articles 34 et 37 de la Constitution (répartition entre la loi et le règlement).',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00018", 'Référence : Article 111-3 du Code pénal, ainsi que les Articles 34 et 37 de la Constitution (répartition entre la loi et le règlement).'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kLois,
-                  child: const _GlassCard(
-                    title: 'Lois proprement dites et textes assimilés',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00019", 'Lois proprement dites et textes assimilés'),
                     icon: Icons.menu_book_rounded,
                     bullets: [
-                      'La loi détermine les crimes et les délits et fixe les peines (Article 111-2 du Code pénal).',
-                      'Peuvent tenir lieu de loi : décisions du Président de la République (Article 16 de la Constitution), ordonnances ratifiées, anciens décrets-lois.',
-                      'L’Article 34 de la Constitution détermine ce qui relève du domaine de la loi en matière pénale.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00020", 'La loi détermine les crimes et les délits et fixe les peines (Article 111-2 du Code pénal).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00021", 'Peuvent tenir lieu de loi : décisions du Président de la République (Article 16 de la Constitution), ordonnances ratifiées, anciens décrets-lois.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00022", 'L’Article 34 de la Constitution détermine ce qui relève du domaine de la loi en matière pénale.'),
                     ],
                     note:
-                        'Toujours vérifier si un texte présenté comme « réglementaire » ne relève pas, en réalité, du domaine de la loi.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00023", 'Toujours vérifier si un texte présenté comme « réglementaire » ne relève pas, en réalité, du domaine de la loi.'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kTraites,
-                  child: const _GlassCard(
-                    title: 'Traités internationaux et conventions',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00024", 'Traités internationaux et conventions'),
                     icon: Icons.public_rounded,
                     bullets: [
-                      'Une convention régulièrement ratifiée et publiée a une valeur supérieure à la loi (Article 55 de la Constitution).',
-                      'Exemples : Traités de l’Union européenne ; Convention européenne des droits de l’Homme.',
-                      'Le juge écarte la loi interne contraire à un traité applicable.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00025", 'Une convention régulièrement ratifiée et publiée a une valeur supérieure à la loi (Article 55 de la Constitution).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00026", 'Exemples : Traités de l’Union européenne ; Convention européenne des droits de l’Homme.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00027", 'Le juge écarte la loi interne contraire à un traité applicable.'),
                     ],
                     note:
-                        'Vérifier la publication au Journal officiel et, si nécessaire, l’effet direct du traité pour pouvoir l’invoquer.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00028", 'Vérifier la publication au Journal officiel et, si nécessaire, l’effet direct du traité pour pouvoir l’invoquer.'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kReglements,
-                  child: const _GlassCard(
-                    title: 'Règlements administratifs',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00029", 'Règlements administratifs'),
                     icon: Icons.rule_rounded,
                     bullets: [
-                      'Les règlements définissent notamment les contraventions et leurs peines (Article 111-2, alinéa 2, du Code pénal).',
-                      'Sources : décrets (souvent en Conseil d’État) et arrêtés ; hiérarchie à respecter.',
-                      'Un règlement ne peut contredire la loi.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00030", 'Les règlements définissent notamment les contraventions et leurs peines (Article 111-2, alinéa 2, du Code pénal).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00031", 'Sources : décrets (souvent en Conseil d’État) et arrêtés ; hiérarchie à respecter.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00032", 'Un règlement ne peut contredire la loi.'),
                     ],
                     note:
-                        'En matière contraventionnelle, la définition et la répression relèvent principalement du pouvoir réglementaire.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00033", 'En matière contraventionnelle, la définition et la répression relèvent principalement du pouvoir réglementaire.'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kCirculaires,
-                  child: const _GlassCard(
-                    title: 'Circulaires et instructions',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00034", 'Circulaires et instructions'),
                     icon: Icons.mail_rounded,
                     bullets: [
-                      'Instructions de service (ex. Direction des affaires criminelles et des grâces).',
-                      'Aucune valeur normative générale : rôle d’orientation de l’application des textes.',
-                      'Réputées abrogées si non publiées (Article L.312-2 du Code des relations entre le public et l’administration).',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00035", 'Instructions de service (ex. Direction des affaires criminelles et des grâces).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00036", 'Aucune valeur normative générale : rôle d’orientation de l’application des textes.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00037", 'Réputées abrogées si non publiées (Article L.312-2 du Code des relations entre le public et l’administration).'),
                     ],
                     note:
-                        'Utile pour la pratique, mais ne crée ni incrimination ni peine par elle-même.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00038", 'Utile pour la pratique, mais ne crée ni incrimination ni peine par elle-même.'),
                   ),
                 ),
                 const _Gutter(),
 
                 SliverToBoxAdapter(
                   key: _kJuris,
-                  child: const _GlassCard(
-                    title: 'Jurisprudence et doctrine',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00039", 'Jurisprudence et doctrine'),
                     icon: Icons.balance_rounded,
                     bullets: [
-                      'La jurisprudence regroupe les décisions des juridictions ; rôle interprétatif (Cour de cassation, chambre criminelle ; cours d’assises).',
-                      'La doctrine rassemble les analyses des juristes : source d’inspiration, non normative.',
-                      'L’interprétation stricte de la loi pénale limite la création prétorienne.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00040", 'La jurisprudence regroupe les décisions des juridictions ; rôle interprétatif (Cour de cassation, chambre criminelle ; cours d’assises).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00041", 'La doctrine rassemble les analyses des juristes : source d’inspiration, non normative.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00042", 'L’interprétation stricte de la loi pénale limite la création prétorienne.'),
                     ],
                     note:
-                        'Indispensable pour comprendre le sens d’un texte ou l’appréciation d’un élément constitutif discuté.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00043", 'Indispensable pour comprendre le sens d’un texte ou l’appréciation d’un élément constitutif discuté.'),
                   ),
                 ),
                 const _Gutter(),
@@ -235,12 +236,12 @@ class _ElementLegalPageState extends State<ElementLegalPage>
                 // ===== MEMO =====
                 SliverToBoxAdapter(
                   key: _kMemo,
-                  child: const _MemoCard(
+                  child:  _MemoCard(
                     lines: [
-                      'Sans texte d’incrimination, il n’y a pas d’infraction.',
-                      'Crimes et délits : domaine de la loi ; contraventions : domaine du règlement.',
-                      'Toujours vérifier hiérarchie des normes et publication du texte.',
-                      'Interprétation stricte de la loi pénale : pas d’analogie créatrice.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00044", 'Sans texte d’incrimination, il n’y a pas d’infraction.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00045", 'Crimes et délits : domaine de la loi ; contraventions : domaine du règlement.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00046", 'Toujours vérifier hiérarchie des normes et publication du texte.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00047", 'Interprétation stricte de la loi pénale : pas d’analogie créatrice.'),
                     ],
                   ),
                 ),
@@ -321,7 +322,7 @@ class _HeaderHero extends StatelessWidget {
                     _chip('Module'),
                     const Spacer(),
                     Text(
-                      'Élément légal',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00048", 'Élément légal'),
                       style: GoogleFonts.fustat(
                         color: Colors.white,
                         fontWeight: FontWeight.w900,
@@ -332,7 +333,7 @@ class _HeaderHero extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      'Le texte qui fonde l’infraction.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00049", 'Le texte qui fonde l’infraction.'),
                       style: GoogleFonts.fustat(
                         color: Colors.white.withValues(alpha: .88),
                         fontWeight: FontWeight.w600,
@@ -659,7 +660,7 @@ class _MemoCard extends StatelessWidget {
                 Icon(Icons.fact_check_rounded, color: text),
                 const SizedBox(width: 8),
                 Text(
-                  'Mémo',
+                  ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_legal_page.dart", "f00050", 'Mémo'),
                   style: GoogleFonts.fustat(
                     color: text,
                     fontWeight: FontWeight.w900,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ExhibitionSexuellePage extends StatelessWidget {
   const ExhibitionSexuellePage({super.key});
@@ -70,7 +71,11 @@ class ExhibitionSexuellePage extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Exhibition sexuelle",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+            "f00001",
+            "Exhibition sexuelle",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,14 +91,30 @@ class ExhibitionSexuellePage extends StatelessWidget {
             children: [
               // ✅ EXIGENCE : élément légal en premier
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-32 du Code pénal"),
-                    normal(" : prévoit et réprime l’exhibition sexuelle."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00003",
+                        "Article 222-32 du Code pénal",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00004",
+                        " : prévoit et réprime l’exhibition sexuelle.",
+                      ),
+                    ),
                   ]),
                 ],
               ),
@@ -101,34 +122,73 @@ class ExhibitionSexuellePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                  "f00005",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "L’exhibition sexuelle imposée à la vue d’autrui, dans un lieu accessible aux regards du public, "
-                    "constitue une infraction.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00006",
+                          "L’exhibition sexuelle imposée à la vue d’autrui, dans un lieu accessible aux regards du public, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00007",
+                          "constitue une infraction.",
+                        ),
                   ),
                   SizedBox(height: 10),
                   _Paragraph(
-                    "Même en l’absence d’exposition d’une partie dénudée du corps, l’infraction est constituée si est imposée "
-                    "à la vue d’autrui, dans un lieu accessible aux regards du public, la commission explicite d’un acte sexuel "
-                    "réel ou simulé.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00008",
+                          "Même en l’absence d’exposition d’une partie dénudée du corps, l’infraction est constituée si est imposée ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00009",
+                          "à la vue d’autrui, dans un lieu accessible aux regards du public, la commission explicite d’un acte sexuel ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00010",
+                          "réel ou simulé.",
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("À retenir"),
-                  _IntroBullet(
-                    text:
-                        "Pas de contact physique : c’est l’exposition / le spectacle imposé qui est sanctionné.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00011",
+                      "À retenir",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Un acte sexuel explicite réel ou simulé suffit (même sous les vêtements).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00012",
+                      "Pas de contact physique : c’est l’exposition / le spectacle imposé qui est sanctionné.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Condition essentielle : publicité (lieu accessible aux regards du public).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00013",
+                      "Un acte sexuel explicite réel ou simulé suffit (même sous les vêtements).",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00014",
+                      "Condition essentielle : publicité (lieu accessible aux regards du public).",
+                    ),
                   ),
                 ],
               ),
@@ -136,14 +196,30 @@ class ExhibitionSexuellePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                  "f00015",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-32 du C.P."),
-                    normal(" : incrimine l’exhibition sexuelle."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00016",
+                        "Article 222-32 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00017",
+                        " : incrimine l’exhibition sexuelle.",
+                      ),
+                    ),
                   ]),
                 ],
               ),
@@ -151,75 +227,193 @@ class ExhibitionSexuellePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                  "f00018",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("1) Pas de contact physique"),
-                  const _Paragraph(
-                    "Il n’y a pas de contact physique entre la victime et l’auteur. "
-                    "L’exhibition sexuelle s’entend d’un acte (et non de simples paroles, écrits, dessins, photos, affiches…).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00019",
+                      "1) Pas de contact physique",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00020",
+                          "Il n’y a pas de contact physique entre la victime et l’auteur. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00021",
+                          "L’exhibition sexuelle s’entend d’un acte (et non de simples paroles, écrits, dessins, photos, affiches…).",
+                        ),
                   ),
                   const SizedBox(height: 12),
 
-                  const _SubTitle(
-                    "2) Comportements voisins : autres qualifications",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00022",
+                      "2) Comportements voisins : autres qualifications",
+                    ),
                   ),
                   _Paragraph.rich([
-                    normal("• Messages contraires à la décence : "),
-                    lawRef("article R. 624-2 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00023",
+                        "• Messages contraires à la décence : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00024",
+                        "article R. 624-2 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
                     normal(
-                      "• Diffusion de messages à caractère pornographique : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00025",
+                        "• Diffusion de messages à caractère pornographique : ",
+                      ),
                     ),
-                    lawRef("articles 227-23 et suivants du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00026",
+                        "articles 227-23 et suivants du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("3) Un acte matériel impudique"),
-                  const _Paragraph(
-                    "Avant la loi du 21 avril 2021, la Cour de cassation exigeait que le corps ou la partie du corps "
-                    "volontairement exposé « soit ou paraisse dénudé ».",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00027",
+                      "3) Un acte matériel impudique",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00028",
+                          "Avant la loi du 21 avril 2021, la Cour de cassation exigeait que le corps ou la partie du corps ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00029",
+                          "volontairement exposé « soit ou paraisse dénudé ».",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00030",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
-                      normal("Règle de principe : "),
-                      normal("Cass. crim., 4 janvier 2006"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00031",
+                          "Règle de principe : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00032",
+                          "Cass. crim., 4 janvier 2006",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Désormais, l’infraction vise aussi la « commission explicite d’un acte sexuel, réel ou simulé », "
-                    "même si aucune partie dénudée n’est visible (ex. masturbation sous les vêtements).",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00033",
+                          "Désormais, l’infraction vise aussi la « commission explicite d’un acte sexuel, réel ou simulé », ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00034",
+                          "même si aucune partie dénudée n’est visible (ex. masturbation sous les vêtements).",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Sont visés les gestes attentatoires à la pudeur : relations sexuelles, comportements à caractère sexuel "
-                    "nettement marqués (gestes, caresses, baisers…), que les juges doivent décrire pour condamner. "
-                    "L’appréciation du caractère impudique dépend des mœurs et de leur évolution.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00035",
+                          "Sont visés les gestes attentatoires à la pudeur : relations sexuelles, comportements à caractère sexuel ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00036",
+                          "nettement marqués (gestes, caresses, baisers…), que les juges doivent décrire pour condamner. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00037",
+                          "L’appréciation du caractère impudique dépend des mœurs et de leur évolution.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00038",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
-                      normal("Description nécessaire des gestes : "),
-                      normal("Cass. crim., 17 juin 1981"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00039",
+                          "Description nécessaire des gestes : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00040",
+                          "Cass. crim., 17 juin 1981",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Peu importe que les relations soient licites/illicites, homosexuelles/hétérosexuelles, entre majeurs consentants : "
-                    "ce n’est pas l’acte en soi qui est puni, mais le spectacle imposé à autrui.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00041",
+                          "Peu importe que les relations soient licites/illicites, homosexuelles/hétérosexuelles, entre majeurs consentants : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00042",
+                          "ce n’est pas l’acte en soi qui est puni, mais le spectacle imposé à autrui.",
+                        ),
                   ),
 
                   const SizedBox(height: 14),
@@ -228,82 +422,212 @@ class ExhibitionSexuellePage extends StatelessWidget {
                     title: "Jurisprudences",
                     bodySpans: [
                       normal(
-                        "Exhibe ses parties sexuelles au péage d’autoroute : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00043",
+                          "Exhibe ses parties sexuelles au péage d’autoroute : ",
+                        ),
                       ),
-                      normal("Cass. crim., 4 juin 1997"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00044",
+                          "Cass. crim., 4 juin 1997",
+                        ),
+                      ),
                       normal(".\n"),
                       normal(
-                        "Personne assise nue face à des témoins, position permettant de voir le sexe, refus de se vêtir : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00045",
+                          "Personne assise nue face à des témoins, position permettant de voir le sexe, refus de se vêtir : ",
+                        ),
                       ),
-                      normal("Cass. crim., 24 novembre 2021"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00046",
+                          "Cass. crim., 24 novembre 2021",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "4) La publicité de l’acte (condition essentielle)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00047",
+                      "4) La publicité de l’acte (condition essentielle)",
+                    ),
                   ),
-                  const _Paragraph(
-                    "L’acte doit être imposé à la vue d’autrui dans un lieu accessible aux regards du public. "
-                    "Il s’agit de sanctionner une forme d’agression sexuelle subie par des témoins involontaires, "
-                    "notamment lorsque des enfants y sont exposés.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00048",
+                          "L’acte doit être imposé à la vue d’autrui dans un lieu accessible aux regards du public. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00049",
+                          "Il s’agit de sanctionner une forme d’agression sexuelle subie par des témoins involontaires, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00050",
+                          "notamment lorsque des enfants y sont exposés.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00051",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Exhibition imposée à des témoins involontaires : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00052",
+                          "Exhibition imposée à des témoins involontaires : ",
+                        ),
                       ),
-                      normal("Cass. crim., 12 mai 2004"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00053",
+                          "Cass. crim., 12 mai 2004",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("• Lieux publics"),
-                  const _Paragraph(
-                    "La publicité peut résulter de la seule nature du lieu : dans un lieu public, la publicité est inhérente "
-                    "au lieu. L’infraction peut être constituée même si, en fait, personne n’a vu l’acte : il suffisait qu’il "
-                    "puisse être vu.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00054",
+                      "• Lieux publics",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00055",
+                          "La publicité peut résulter de la seule nature du lieu : dans un lieu public, la publicité est inhérente ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00056",
+                          "au lieu. L’infraction peut être constituée même si, en fait, personne n’a vu l’acte : il suffisait qu’il ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00057",
+                          "puisse être vu.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00058",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
-                      normal("Publicité inhérente au lieu public : "),
-                      normal("Cass. crim., 1er juin 1863"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00059",
+                          "Publicité inhérente au lieu public : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00060",
+                          "Cass. crim., 1er juin 1863",
+                        ),
+                      ),
                       normal(". "),
-                      normal("Constitué même si non vu (pouvait être vu) : "),
-                      normal("Cass. crim., 16 janvier 1862"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00061",
+                          "Constitué même si non vu (pouvait être vu) : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00062",
+                          "Cass. crim., 16 janvier 1862",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Sont considérés comme lieux publics : lieux ouverts au public (rue, place, jardin, plage…) et lieux "
-                    "où le public est admis sous conditions (école, hôpital, transports…).",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00063",
+                          "Sont considérés comme lieux publics : lieux ouverts au public (rue, place, jardin, plage…) et lieux ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00064",
+                          "où le public est admis sous conditions (école, hôpital, transports…).",
+                        ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("• Lieux privés visibles depuis l’extérieur"),
-                  const _Paragraph(
-                    "Les lieux privés peuvent aussi être concernés si l’acte est visible depuis un lieu public, faute "
-                    "de précautions suffisantes. Le texte vise un « lieu accessible aux regards du public ».",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00065",
+                      "• Lieux privés visibles depuis l’extérieur",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00066",
+                          "Les lieux privés peuvent aussi être concernés si l’acte est visible depuis un lieu public, faute ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00067",
+                          "de précautions suffisantes. Le texte vise un « lieu accessible aux regards du public ».",
+                        ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle(
-                    "• Pas d’infraction si l’exhibition est recherchée",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00068",
+                      "• Pas d’infraction si l’exhibition est recherchée",
+                    ),
                   ),
-                  const _Paragraph(
-                    "L’infraction n’est pas retenue si la « victime » a recherché l’exhibition (voyeurisme, plages/camps naturistes, "
-                    "spectacles érotiques, etc.).",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00069",
+                          "L’infraction n’est pas retenue si la « victime » a recherché l’exhibition (voyeurisme, plages/camps naturistes, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                          "f00070",
+                          "spectacles érotiques, etc.).",
+                        ),
                   ),
                 ],
               ),
@@ -311,14 +635,28 @@ class ExhibitionSexuellePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                  "f00071",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
-                children: const [
-                  _SubTitle("Conscience de l’impudicité"),
+                children: [
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00072",
+                      "Conscience de l’impudicité",
+                    ),
+                  ),
                   _Paragraph(
-                    "L’intention coupable est exigée : l’auteur doit agir en ayant conscience du caractère impudique de l’acte.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00073",
+                      "L’intention coupable est exigée : l’auteur doit agir en ayant conscience du caractère impudique de l’acte.",
+                    ),
                   ),
                 ],
               ),
@@ -326,19 +664,38 @@ class ExhibitionSexuellePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                  "f00074",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-32 alinéa 3 du C.P."),
-                    normal(" : l’exhibition sexuelle est aggravée :"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00075",
+                        "Article 222-32 alinéa 3 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00076",
+                        " : l’exhibition sexuelle est aggravée :",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 10),
-                  const _BulletPoint(
-                    text:
-                        "Lorsque les faits sont commis au préjudice d’un mineur de quinze ans.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00077",
+                      "Lorsque les faits sont commis au préjudice d’un mineur de quinze ans.",
+                    ),
                   ),
                 ],
               ),
@@ -346,44 +703,132 @@ class ExhibitionSexuellePage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "V — Répression, tentative et complicité",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                  "f00078",
+                  "V — Répression, tentative et complicité",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines encourues (personnes physiques)"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00079",
+                      "Peines encourues (personnes physiques)",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Forme simple ("),
-                    lawRef("article 222-32 al. 1 du C.P."),
-                    normal(") : 1 an d’emprisonnement et 15 000 € d’amende."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00080",
+                        "Forme simple (",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00081",
+                        "article 222-32 al. 1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00082",
+                        ") : 1 an d’emprisonnement et 15 000 € d’amende.",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    normal("Forme aggravée ("),
-                    lawRef("article 222-32 al. 3 du C.P."),
-                    normal(") : 2 ans d’emprisonnement et 30 000 € d’amende."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00083",
+                        "Forme aggravée (",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00084",
+                        "article 222-32 al. 3 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00085",
+                        ") : 2 ans d’emprisonnement et 30 000 € d’amende.",
+                      ),
+                    ),
                   ]),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Personnes morales"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00086",
+                      "Personnes morales",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Responsabilité pénale prévue par "),
-                    lawRef("l’article 121-2 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00087",
+                        "Responsabilité pénale prévue par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00088",
+                        "l’article 121-2 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
                   const SizedBox(height: 12),
 
                   const _SubTitle("Tentative"),
-                  const _Paragraph("Tentative : NON."),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00089",
+                      "Tentative : NON.",
+                    ),
+                  ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                      "f00090",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — punissable selon "),
-                    lawRef("les articles 121-6 et 121-7 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00091",
+                        "Complicité : OUI — punissable selon ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart",
+                        "f00092",
+                        "les articles 121-6 et 121-7 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                 ],

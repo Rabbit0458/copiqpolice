@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
     extends StatelessWidget {
@@ -62,10 +63,18 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes involontaires",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+            "f00002",
+            "Atteintes involontaires",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -80,9 +89,21 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les atteintes involontaires par violation manifestement délibérée\n"
-            "d’une obligation particulière de sécurité ou de prudence\n"
-            "(I.T.T. ≤ 3 mois)",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00003",
+                  "Les atteintes involontaires par violation manifestement délibérée\n",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00004",
+                  "d’une obligation particulière de sécurité ou de prudence\n",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00005",
+                  "(I.T.T. ≤ 3 mois)",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -94,15 +115,31 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+              "f00006",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de causer à autrui, par la violation manifestement délibérée d’une obligation "
-                "particulière de prudence ou de sécurité imposée par la loi ou le règlement, une incapacité "
-                "totale de travail (ITT) d’une durée inférieure ou égale à trois mois, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00007",
+                      "Le fait de causer à autrui, par la violation manifestement délibérée d’une obligation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00008",
+                      "particulière de prudence ou de sécurité imposée par la loi ou le règlement, une incapacité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00009",
+                      "totale de travail (ITT) d’une durée inférieure ou égale à trois mois, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -111,20 +148,31 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-20 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00011",
+                    "Article 222-20 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00012",
+                    " : prévoit et réprime l’infraction.",
                   ),
                 ),
-                TextSpan(text: " : prévoit et réprime l’infraction."),
               ]),
             ],
           ),
@@ -133,28 +181,56 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Existence d’une obligation particulière de prudence ou de sécurité",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00014",
+                  "A) Existence d’une obligation particulière de prudence ou de sécurité",
+                ),
               ),
               _Paragraph(
-                "L’obligation particulière doit être prévue par un texte : loi, décret ou arrêté. "
-                "Le règlement s’entend des actes des autorités administratives à caractère général et impersonnel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00015",
+                      "L’obligation particulière doit être prévue par un texte : loi, décret ou arrêté. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00016",
+                      "Le règlement s’entend des actes des autorités administratives à caractère général et impersonnel.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ne constitue pas une obligation particulière (au sens du texte) : arrêté préfectoral "
-                        "déclarant un immeuble insalubre et imposant des travaux : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                          "f00017",
+                          "Ne constitue pas une obligation particulière (au sens du texte) : arrêté préfectoral ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                          "f00018",
+                          "déclarant un immeuble insalubre et imposant des travaux : ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 10 mai 2000",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00019",
+                      "Cass. crim., 10 mai 2000",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -165,39 +241,94 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "On entend par obligation de prudence l’obligation d’adopter une attitude réfléchie quant "
-                "aux conséquences de ses actes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00020",
+                      "On entend par obligation de prudence l’obligation d’adopter une attitude réfléchie quant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00021",
+                      "aux conséquences de ses actes.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Connaissance de cette obligation par la personne poursuivie",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00022",
+                  "B) Connaissance de cette obligation par la personne poursuivie",
+                ),
               ),
               _Paragraph(
-                "La personne poursuivie doit avoir connaissance de l’obligation spécifique, notamment en raison "
-                "de sa formation, de ses fonctions, de ses compétences, ou de ses responsabilités personnelles "
-                "ou professionnelles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00023",
+                      "La personne poursuivie doit avoir connaissance de l’obligation spécifique, notamment en raison ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00024",
+                      "de sa formation, de ses fonctions, de ses compétences, ou de ses responsabilités personnelles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00025",
+                      "ou professionnelles.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Volonté de ne pas respecter l’obligation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00026",
+                  "C) Volonté de ne pas respecter l’obligation",
+                ),
+              ),
               _Paragraph(
-                "L’auteur fait un choix délibéré de ne pas respecter l’obligation. "
-                "Le dommage n’est pas voulu, mais le risque est pleinement assumé : "
-                "l’auteur connaît l’obligation de prudence/sécurité et décide de la transgresser.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00027",
+                      "L’auteur fait un choix délibéré de ne pas respecter l’obligation. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00028",
+                      "Le dommage n’est pas voulu, mais le risque est pleinement assumé : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00029",
+                      "l’auteur connaît l’obligation de prudence/sécurité et décide de la transgresser.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un dommage"),
-              _BulletPoint(
-                text:
-                    "La victime doit avoir subi une atteinte physique ou psychique.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00030",
+                  "D) Un dommage",
+                ),
               ),
               _BulletPoint(
-                text: "L’ITT doit être inférieure ou égale à trois mois.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00031",
+                  "La victime doit avoir subi une atteinte physique ou psychique.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00032",
+                  "L’ITT doit être inférieure ou égale à trois mois.",
+                ),
               ),
             ],
           ),
@@ -206,15 +337,31 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+              "f00033",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’élément moral se caractérise par la violation manifestement délibérée d’une obligation "
-                "particulière de sécurité ou de prudence imposée par la loi ou le règlement : "
-                "il faut démontrer un comportement volontaire de transgression de l’obligation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00034",
+                      "L’élément moral se caractérise par la violation manifestement délibérée d’une obligation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00035",
+                      "particulière de sécurité ou de prudence imposée par la loi ou le règlement : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00036",
+                      "il faut démontrer un comportement volontaire de transgression de l’obligation.",
+                    ),
               ),
             ],
           ),
@@ -223,49 +370,99 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+              "f00037",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-20-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00038",
+                    "Article 222-20-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00039",
+                    " : trois degrés d’aggravation.",
                   ),
                 ),
-                TextSpan(text: " : trois degrés d’aggravation."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("1) Premier degré"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00040",
+                  "1) Premier degré",
+                ),
+              ),
               _BulletPoint(
                 text:
-                    "Lorsque l’atteinte involontaire résulte de l’agression commise par un chien, "
-                    "à l’encontre du propriétaire de l’animal ou de celui qui le détient au moment des faits.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00041",
+                      "Lorsque l’atteinte involontaire résulte de l’agression commise par un chien, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00042",
+                      "à l’encontre du propriétaire de l’animal ou de celui qui le détient au moment des faits.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’absence de maladresse, d’imprudence, d’inattention, de négligence ou de manquement "
-                        "à une obligation est présumée lorsque l’animal est, au moment des faits, en action de protection "
-                        "d’un troupeau et identifié : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                          "f00043",
+                          "L’absence de maladresse, d’imprudence, d’inattention, de négligence ou de manquement ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                          "f00044",
+                          "à une obligation est présumée lorsque l’animal est, au moment des faits, en action de protection ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                          "f00045",
+                          "d’un troupeau et identifié : ",
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        "article L. 212-10 du Code rural et de la pêche maritime",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00046",
+                      "article L. 212-10 du Code rural et de la pêche maritime",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " (référence : "),
                   TextSpan(
-                    text: "article 222-19-2 II du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00047",
+                      " (référence : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00048",
+                      "article 222-19-2 II du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -277,19 +474,42 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Deuxième degré"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00049",
+                  "2) Deuxième degré",
+                ),
+              ),
               _BulletPoint(
                 text:
-                    "Lorsque l’infraction a été commise dans une des circonstances énumérées "
-                    "aux 1° à 7° de l’article (propriété/détention illicites, état d’ivresse du propriétaire ou du détenteur, etc.).",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00050",
+                      "Lorsque l’infraction a été commise dans une des circonstances énumérées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                      "f00051",
+                      "aux 1° à 7° de l’article (propriété/détention illicites, état d’ivresse du propriétaire ou du détenteur, etc.).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("3) Troisième degré"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00052",
+                  "3) Troisième degré",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Lorsque l’infraction a été commise avec deux ou plusieurs de ces circonstances.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00053",
+                  "Lorsque l’infraction a été commise avec deux ou plusieurs de ces circonstances.",
+                ),
               ),
             ],
           ),
@@ -298,106 +518,196 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
 
           // Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+              "f00054",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00055",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Blessures involontaires (ITT ≤ 3 mois) : ",
-                ),
-                TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 222-20 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00056",
+                    "Blessures involontaires (ITT ≤ 3 mois) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00057",
+                    "1 an d’emprisonnement et 15 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00058",
+                    "article 222-20 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravées commises par un chien (1er degré) : ",
-                ),
-                TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 222-20-2 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00059",
+                    "Aggravées commises par un chien (1er degré) : ",
                   ),
                 ),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Aggravées (2e degré — 1° à 7°) : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00060",
+                    "2 ans d’emprisonnement et 30 000 € d’amende. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-20-2 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00061",
+                    "article 222-20-2 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravées (3e degré — 2+ circonstances) : ",
-                ),
-                TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 222-20-2 dernier alinéa du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00062",
+                    "Aggravées (2e degré — 1° à 7°) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00063",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00064",
+                    "article 222-20-2 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00065",
+                    "Aggravées (3e degré — 2+ circonstances) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00066",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00067",
+                    "article 222-20-2 dernier alinéa du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00068",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 222-21 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00069",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00070",
+                    "l’article 222-21 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00071",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00072",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph(
-                "Le résultat dommageable n’étant pas voulu par l’auteur, la tentative ne peut être retenue.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00073",
+                  "Le résultat dommageable n’étant pas voulu par l’auteur, la tentative ne peut être retenue.",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Complicité : OUI."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                  "f00074",
+                  "Complicité : OUI.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Punissable conformément aux "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00075",
+                    "Punissable conformément aux ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                    "f00076",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -407,8 +717,16 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La complicité par instigation peut être retenue pour un passager qui ordonne à son chauffeur "
-                        "de franchir un feu rouge.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                          "f00077",
+                          "La complicité par instigation peut être retenue pour un passager qui ordonne à son chauffeur ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart",
+                          "f00078",
+                          "de franchir un feu rouge.",
+                        ),
                   ),
                 ],
               ),

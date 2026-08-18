@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaVictimeProstitutionPage extends StatelessWidget {
   const PaVictimeProstitutionPage({super.key});
@@ -44,7 +45,11 @@ class PaVictimeProstitutionPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Victime se livrant à la prostitution",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+            "f00001",
+            "Victime se livrant à la prostitution",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16.8,
@@ -70,21 +75,24 @@ class PaVictimeProstitutionPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Sur une personne qui se livre à la prostitution, y compris de façon occasionnelle, si les faits sont commis dans l'exercice de cette activité.",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00002",
+                        "Sur une personne qui se livre à la prostitution, y compris de façon occasionnelle, si les faits sont commis dans l'exercice de cette activité.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,17 +102,29 @@ class PaVictimeProstitutionPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante a été créée par la loi n° 2016-444 du 13 avril 2016 visant à renforcer la lutte contre le système prostitutionnel et à accompagner les personnes prostituées.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00004",
+                        "Cette circonstance aggravante a été créée par la loi n° 2016-444 du 13 avril 2016 visant à renforcer la lutte contre le système prostitutionnel et à accompagner les personnes prostituées.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Cette circonstance aggravante est réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00005",
+                        "Cette circonstance aggravante est réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -112,26 +132,58 @@ class PaVictimeProstitutionPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                    "f00006",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _SubTitle(
-                      "2.1 - Une personne qui se livre à la prostitution",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00007",
+                        "2.1 - Une personne qui se livre à la prostitution",
+                      ),
                     ),
                     _Paragraph(
-                      "La personne doit se livrer à la prostitution, ce qui implique l'existence d'un ou des rapports sexuels contre rémunération.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00008",
+                        "La personne doit se livrer à la prostitution, ce qui implique l'existence d'un ou des rapports sexuels contre rémunération.",
+                      ),
                     ),
                     SizedBox(height: 12),
-                    _SubTitle("2.2 - Y compris de façon occasionnelle"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00009",
+                        "2.2 - Y compris de façon occasionnelle",
+                      ),
+                    ),
                     _Paragraph(
-                      "Dès lors, un acte unique de prostitution peut donc suffire.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00010",
+                        "Dès lors, un acte unique de prostitution peut donc suffire.",
+                      ),
                     ),
                     SizedBox(height: 12),
-                    _SubTitle("2.3 - Dans l'exercice de son activité"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00011",
+                        "2.3 - Dans l'exercice de son activité",
+                      ),
+                    ),
                     _Paragraph(
-                      "La personne doit avoir été victime des faits répréhensibles alors qu'elle se livrait à la prostitution. Sont donc exclus les actes perpétrés contre une personne prostituée au cours d'un contentieux sans lien avec son activité prostitutionnelle.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                        "f00012",
+                        "La personne doit avoir été victime des faits répréhensibles alors qu'elle se livrait à la prostitution. Sont donc exclus les actes perpétrés contre une personne prostituée au cours d'un contentieux sans lien avec son activité prostitutionnelle.",
+                      ),
                     ),
                   ],
                 ),
@@ -139,22 +191,40 @@ class PaVictimeProstitutionPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                    "f00013",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES ET ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00014",
+                          "➤ LES TORTURES ET ACTES DE BARBARIE (ARTICLE ",
+                        ),
                       ),
-                      law("222-3, 5° quater C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00015",
+                          "222-3, 5° quater C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00016",
+                          "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                        ),
                       ),
                       law("222-8"),
                       const TextSpan(text: ", "),
@@ -162,39 +232,85 @@ class PaVictimeProstitutionPage extends StatelessWidget {
                       const TextSpan(text: ", "),
                       law("222-12"),
                       const TextSpan(text: " ET "),
-                      law("222-13, 5° quater C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00017",
+                          "222-13, 5° quater C.P.",
+                        ),
                       ),
-                      law("222-15 C.P."),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LA CONTRAINTE EXERCÉE EN VUE DE SUBIR UNE ATTEINTE SEXUELLE DE PART D'UN TIERS (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00018",
+                          "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                        ),
                       ),
-                      law("222-22-2 al. 2 C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "➤ LE VIOL (ARTICLE "),
-                      law("222-24, 13° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES AGRESSIONS SEXUELLES (ARTICLE ",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00019",
+                          "222-15 C.P.",
+                        ),
                       ),
-                      law("222-28, 9° C.P."),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00020",
+                          "➤ LA CONTRAINTE EXERCÉE EN VUE DE SUBIR UNE ATTEINTE SEXUELLE DE PART D'UN TIERS (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00021",
+                          "222-22-2 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00022",
+                          "➤ LE VIOL (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00023",
+                          "222-24, 13° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00024",
+                          "➤ LES AGRESSIONS SEXUELLES (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart",
+                          "f00025",
+                          "222-28, 9° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                   ],
@@ -458,9 +574,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

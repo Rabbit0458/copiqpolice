@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaSansDangerDommageLegerPage extends StatelessWidget {
   const PaSansDangerDommageLegerPage({super.key});
@@ -56,10 +57,18 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions, dégradations",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+            "f00002",
+            "Destructions, dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Destructions, dégradations et détériorations sans danger pour les personnes (dommage léger)",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+              "f00003",
+              "Destructions, dégradations et détériorations sans danger pour les personnes (dommage léger)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -86,14 +99,26 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La destruction, la dégradation ou la détérioration volontaires d’un bien appartenant à autrui "
-                "dont il n’est résulté qu’un dommage léger constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00005",
+                      "La destruction, la dégradation ou la détérioration volontaires d’un bien appartenant à autrui ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00006",
+                      "dont il n’est résulté qu’un dommage léger constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -102,22 +127,30 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 635-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00008",
+                    "Article R. 635-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les destructions, dégradations ou détériorations ne présentant pas un danger pour les personnes et entraînant un dommage léger.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00009",
+                    " : définit et réprime les destructions, dégradations ou détériorations ne présentant pas un danger pour les personnes et entraînant un dommage léger.",
+                  ),
                 ),
               ]),
             ],
@@ -127,57 +160,132 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsque les destructions, dégradations ou détériorations sont de faible importance, "
-                "le dommage est qualifié de « léger ». Dans ce cas, la contravention de 5e classe se substitue au délit.\n"
-                "Les éléments constitutifs sont identiques à ceux des destructions volontaires, "
-                "à l’exception de la gravité du dommage.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00011",
+                      "Lorsque les destructions, dégradations ou détériorations sont de faible importance, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00012",
+                      "le dommage est qualifié de « léger ». Dans ce cas, la contravention de 5e classe se substitue au délit.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00013",
+                      "Les éléments constitutifs sont identiques à ceux des destructions volontaires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00014",
+                      "à l’exception de la gravité du dommage.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Une atteinte matérielle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00015",
+                  "A) Une atteinte matérielle",
+                ),
+              ),
               _Paragraph(
-                "Le législateur ne précise pas les moyens : en principe, n’importe quel moyen peut être utilisé "
-                "(à l’exception de l’incendie et de l’usage de substances explosives, qui relèvent d’autres incriminations).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00016",
+                      "Le législateur ne précise pas les moyens : en principe, n’importe quel moyen peut être utilisé ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00017",
+                      "(à l’exception de l’incendie et de l’usage de substances explosives, qui relèvent d’autres incriminations).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("B) Sur un bien appartenant à autrui"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00018",
+                  "B) Sur un bien appartenant à autrui",
+                ),
+              ),
               _Paragraph(
-                "La notion de « bien appartenant à autrui » est entendue largement. "
-                "Certains biens bénéficient cependant d’une protection spécifique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00019",
+                      "La notion de « bien appartenant à autrui » est entendue largement. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00020",
+                      "Certains biens bénéficient cependant d’une protection spécifique.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exemples de protections spécifiques (hors R.635-1) : sabotage ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00021",
+                      "Exemples de protections spécifiques (hors R.635-1) : sabotage ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(article 411-9 du Code pénal)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00022",
+                      "(article 411-9 du Code pénal)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: ", biens placés sous scellés "),
                   TextSpan(
-                    text: "(article 434-22 du Code pénal)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00023",
+                      ", biens placés sous scellés ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00024",
+                      "(article 434-22 du Code pénal)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: ", biens dans un dépôt public "),
                   TextSpan(
-                    text: "(article 433-4 du Code pénal)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00025",
+                      ", biens dans un dépôt public ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00026",
+                      "(article 433-4 du Code pénal)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -188,24 +296,51 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Entraînant un dommage léger"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00027",
+                  "C) Entraînant un dommage léger",
+                ),
+              ),
               _Paragraph(
-                "Le dommage doit être « léger ». Cette notion est délicate à cerner : "
-                "seule la gravité du dommage est prise en considération et elle reste à l’appréciation du juge.\n"
-                "Le résultat peut prendre trois formes : destruction, dégradation, détérioration (mais avec une faible gravité).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00028",
+                      "Le dommage doit être « léger ». Cette notion est délicate à cerner : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00029",
+                      "seule la gravité du dommage est prise en considération et elle reste à l’appréciation du juge.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00030",
+                      "Le résultat peut prendre trois formes : destruction, dégradation, détérioration (mais avec une faible gravité).",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Destruction : le bien est rendu impropre à l’usage auquel il était destiné (même partiellement).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00031",
+                  "Destruction : le bien est rendu impropre à l’usage auquel il était destiné (même partiellement).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dégradation : les qualités du bien diminuent, sans le rendre inutilisable.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00032",
+                  "Dégradation : les qualités du bien diminuent, sans le rendre inutilisable.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Détérioration : perte de valeur, mais bien réparable et restant apte à son rôle.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00033",
+                  "Détérioration : perte de valeur, mais bien réparable et restant apte à son rôle.",
+                ),
               ),
             ],
           ),
@@ -214,27 +349,43 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+              "f00034",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Par dérogation à la règle habituelle des contraventions, le texte exige une intention coupable : "
-                "le dommage doit être « volontaire ».",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00035",
+                      "Par dérogation à la règle habituelle des contraventions, le texte exige une intention coupable : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                      "f00036",
+                      "le dommage doit être « volontaire ».",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 635-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00037",
+                    "Article R. 635-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : l’élément moral repose sur la volonté de causer le dommage léger (volonté de l’atteinte).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00038",
+                    " : l’élément moral repose sur la volonté de causer le dommage léger (volonté de l’atteinte).",
+                  ),
                 ),
               ]),
             ],
@@ -244,69 +395,131 @@ class PaSansDangerDommageLegerPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+              "f00039",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [_Paragraph("Aucune circonstance aggravante.")],
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00040",
+                  "Aucune circonstance aggravante.",
+                ),
+              ),
+            ],
           ),
 
           const SizedBox(height: 14),
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+              "f00041",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00042",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification : contravention de 5e classe — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00043",
+                    "Qualification : contravention de 5e classe — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 635-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00044",
+                    "article R. 635-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "Amende maximale : 1 500 €."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00045",
+                  "Amende maximale : 1 500 €.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00046",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
                 TextSpan(
-                  text: "l’article R. 635-1 alinéa 10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00047",
+                    "Peines prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00048",
+                    "l’article R. 635-1 alinéa 10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00049",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                  "f00050",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Complicité : OUI (instruction / aide et assistance) — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00051",
+                    "Complicité : OUI (instruction / aide et assistance) — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 635-1 alinéa 9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart",
+                    "f00052",
+                    "article R. 635-1 alinéa 9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -565,9 +778,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

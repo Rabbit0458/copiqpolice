@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EnquetePrelimSaisieComptesBancairesPage extends StatelessWidget {
   const EnquetePrelimSaisieComptesBancairesPage({super.key});
@@ -38,10 +39,18 @@ class EnquetePrelimSaisieComptesBancairesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Saisie des comptes bancaires',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+            "f00002",
+            'Saisie des comptes bancaires',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -56,7 +65,11 @@ class EnquetePrelimSaisieComptesBancairesPage extends StatelessWidget {
         children: [
           // ---------------- TITRE GLOBAL ----------------
           Text(
-            'La saisie des comptes bancaires',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+              "f00003",
+              'La saisie des comptes bancaires',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -67,11 +80,31 @@ class EnquetePrelimSaisieComptesBancairesPage extends StatelessWidget {
 
           // ---------------- INTRO -----------------------
           Text(
-            'Dans le cadre de l’enquête préliminaire, la saisie des comptes bancaires '
-            's’inscrit dans la logique de la confiscation de certains biens ou droits '
-            'mobiliers incorporels. Elle permet de préserver rapidement des sommes d’argent, '
-            'y compris sous forme d’actifs numériques, afin d’éviter leur disparition '
-            'avant l’issue de la procédure.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                  "f00004",
+                  'Dans le cadre de l’enquête préliminaire, la saisie des comptes bancaires ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                  "f00005",
+                  's’inscrit dans la logique de la confiscation de certains biens ou droits ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                  "f00006",
+                  'mobiliers incorporels. Elle permet de préserver rapidement des sommes d’argent, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                  "f00007",
+                  'y compris sous forme d’actifs numériques, afin d’éviter leur disparition ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                  "f00008",
+                  'avant l’issue de la procédure.',
+                ),
             textAlign: TextAlign.justify,
             style: GoogleFonts.fustat(
               fontSize: 14,
@@ -87,50 +120,102 @@ class EnquetePrelimSaisieComptesBancairesPage extends StatelessWidget {
           // A. CADRE JURIDIQUE ET CONDITIONS
           // =====================================================
           _ConditionCard(
-            title: 'A. Cadre juridique de la saisie des comptes bancaires',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+              "f00009",
+              'A. Cadre juridique de la saisie des comptes bancaires',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'La saisie des sommes inscrites sur un compte bancaire ou sur un compte '
-                      'd’actifs numériques intervient dans le cadre de la procédure de '
-                      'confiscation de certains biens ou droits mobiliers incorporels, lorsque :\n',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00010",
+                        'La saisie des sommes inscrites sur un compte bancaire ou sur un compte ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00011",
+                        'd’actifs numériques intervient dans le cadre de la procédure de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00012",
+                        'confiscation de certains biens ou droits mobiliers incorporels, lorsque :\n',
+                      ),
                 ),
               ]),
               const SizedBox(height: 6),
-              const _BulletPoint(
-                text:
-                    'La peine de confiscation est prévue par les textes applicables ;',
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                  "f00013",
+                  'La peine de confiscation est prévue par les textes applicables ;',
+                ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Ou lorsque l’infraction visée est un crime ou un délit puni d’une peine '
-                    'd’emprisonnement supérieure à un an.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                      "f00014",
+                      'Ou lorsque l’infraction visée est un crime ou un délit puni d’une peine ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                      "f00015",
+                      'd’emprisonnement supérieure à un an.',
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Dans ce cadre, l’officier de police judiciaire peut saisir les sommes : ',
-                ),
-                const TextSpan(
-                  text:
-                      'versées sur un compte de dépôt, un compte de paiement ou un compte '
-                      'd’actifs numériques (jetons, crypto-actifs) mentionnés à l’',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                    "f00016",
+                    'Dans ce cadre, l’officier de police judiciaire peut saisir les sommes : ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article L. 54-10-1 du Code monétaire et financier',
+                  text:
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00017",
+                        'versées sur un compte de dépôt, un compte de paiement ou un compte ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00018",
+                        'd’actifs numériques (jetons, crypto-actifs) mentionnés à l’',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                    "f00019",
+                    'article L. 54-10-1 du Code monétaire et financier',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: lawColor,
                   ),
                 ),
-                const TextSpan(text: ', conformément aux dispositions de l’'),
                 TextSpan(
-                  text: 'article 706-154 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                    "f00020",
+                    ', conformément aux dispositions de l’',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                    "f00021",
+                    'article 706-154 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: lawColor,
@@ -147,38 +232,73 @@ class EnquetePrelimSaisieComptesBancairesPage extends StatelessWidget {
           // B. AUTORISATION ET RÉACTIVITÉ DE LA MESURE
           // =====================================================
           _ConditionCard(
-            title: 'B. Autorisation par le procureur de la République',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+              "f00022",
+              'B. Autorisation par le procureur de la République',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'L’autorisation de procéder à la saisie des comptes bancaires est délivrée ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                    "f00023",
+                    'L’autorisation de procéder à la saisie des comptes bancaires est délivrée ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'par tout moyen par le procureur de la République',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                    "f00024",
+                    'par tout moyen par le procureur de la République',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: lawColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      '. Cette possibilité donnée au parquet de valider rapidement la mesure '
-                      'permet une réactivité maximale et limite le risque de transfert ou de '
-                      'dissimulation des fonds avant leur blocage effectif.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00025",
+                        '. Cette possibilité donnée au parquet de valider rapidement la mesure ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00026",
+                        'permet une réactivité maximale et limite le risque de transfert ou de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00027",
+                        'dissimulation des fonds avant leur blocage effectif.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La saisie a un caractère conservatoire : elle ne préjuge pas de la décision '
-                        'finale de confiscation, mais elle garantit que les sommes resteront '
-                        'disponibles pour une éventuelle exécution ultérieure de la peine.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                          "f00028",
+                          'La saisie a un caractère conservatoire : elle ne préjuge pas de la décision ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                          "f00029",
+                          'finale de confiscation, mais elle garantit que les sommes resteront ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                          "f00030",
+                          'disponibles pour une éventuelle exécution ultérieure de la peine.',
+                        ),
                   ),
                 ],
               ),
@@ -191,34 +311,73 @@ class EnquetePrelimSaisieComptesBancairesPage extends StatelessWidget {
           // C. CONTRÔLE PAR LE JUGE DES LIBERTÉS ET DE LA DÉTENTION
           // =====================================================
           _ConditionCard(
-            title:
-                'C. Contrôle du juge des libertés et de la détention (J.L.D.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+              "f00031",
+              'C. Contrôle du juge des libertés et de la détention (J.L.D.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Le contrôle juridictionnel de la saisie est assuré par le juge des libertés '
-                      'et de la détention. Saisi par le procureur de la République, le J.L.D. doit se '
-                      'prononcer par ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00032",
+                        'Le contrôle juridictionnel de la saisie est assuré par le juge des libertés ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00033",
+                        'et de la détention. Saisi par le procureur de la République, le J.L.D. doit se ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00034",
+                        'prononcer par ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'ordonnance motivée',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                    "f00035",
+                    'ordonnance motivée',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      ' sur le maintien ou la mainlevée de la saisie dans un délai de dix jours '
-                      'à compter de sa réalisation, et ce, même si la juridiction de jugement est déjà saisie.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00036",
+                        ' sur le maintien ou la mainlevée de la saisie dans un délai de dix jours ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                        "f00037",
+                        'à compter de sa réalisation, et ce, même si la juridiction de jugement est déjà saisie.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Ce contrôle garantit le respect des droits de la défense et du droit de propriété, '
-                'tout en préservant l’efficacité des investigations financières et de la future '
-                'exécution de la peine de confiscation.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                      "f00038",
+                      'Ce contrôle garantit le respect des droits de la défense et du droit de propriété, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                      "f00039",
+                      'tout en préservant l’efficacité des investigations financières et de la future ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart",
+                      "f00040",
+                      'exécution de la peine de confiscation.',
+                    ),
               ),
             ],
           ),
@@ -530,9 +689,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

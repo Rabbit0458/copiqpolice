@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MenacesViolencesIntimidationDerogationServicePublicPage
     extends StatelessWidget {
@@ -60,10 +61,18 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à l’administration",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+            "f00002",
+            "Atteintes à l’administration",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les menaces, violences ou actes d’intimidation aux fins d’obtention d’une dérogation aux règles de fonctionnement d’un service public",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+              "f00003",
+              "Les menaces, violences ou actes d’intimidation aux fins d’obtention d’une dérogation aux règles de fonctionnement d’un service public",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,16 +103,36 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’user de menaces ou de violences, ou de commettre tout autre acte d’intimidation, "
-                "à l’égard de toute personne participant à l’exécution d’une mission de service public, "
-                "afin d’obtenir pour soi-même ou pour autrui une exemption totale ou partielle, ou une application "
-                "différenciée des règles qui régissent le fonctionnement dudit service, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00005",
+                      "Le fait d’user de menaces ou de violences, ou de commettre tout autre acte d’intimidation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00006",
+                      "à l’égard de toute personne participant à l’exécution d’une mission de service public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00007",
+                      "afin d’obtenir pour soi-même ou pour autrui une exemption totale ou partielle, ou une application ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00008",
+                      "différenciée des règles qui régissent le fonctionnement dudit service, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -108,19 +141,30 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 433-3-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00010",
+                    "Article 433-3-1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les menaces, violences ou actes d’intimidation commis afin d’obtenir une dérogation aux règles de fonctionnement d’un service public.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00011",
+                    " : définit et réprime les menaces, violences ou actes d’intimidation commis afin d’obtenir une dérogation aux règles de fonctionnement d’un service public.",
+                  ),
                 ),
               ]),
             ],
@@ -130,73 +174,153 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle(
-                "A) Des menaces, violences ou tout acte d’intimidation",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00013",
+                  "A) Des menaces, violences ou tout acte d’intimidation",
+                ),
               ),
-              const _Paragraph(
-                "Le délit sanctionne des comportements très variés : il vise les menaces (même sans réitération), "
-                "les violences, et plus largement tout acte d’intimidation.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00014",
+                      "Le délit sanctionne des comportements très variés : il vise les menaces (même sans réitération), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00015",
+                      "les violences, et plus largement tout acte d’intimidation.",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Dirigés contre une personne participant à l’exécution d’une mission de service public",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00016",
+                  "B) Dirigés contre une personne participant à l’exécution d’une mission de service public",
+                ),
               ),
-              const _Paragraph(
-                "Est visée toute personne participant à l’exécution d’une mission de service public, "
-                "sans condition de statut, de fonction ou de responsabilités.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00017",
+                      "Est visée toute personne participant à l’exécution d’une mission de service public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00018",
+                      "sans condition de statut, de fonction ou de responsabilités.",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "C) Dans le but d’obtenir une application dérogatoire des règles de fonctionnement du service public",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00019",
+                  "C) Dans le but d’obtenir une application dérogatoire des règles de fonctionnement du service public",
+                ),
               ),
-              const _Paragraph(
-                "L’objectif précis est d’obtenir une exemption totale ou partielle, ou une application différenciée "
-                "des règles de fonctionnement du service public.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00020",
+                      "L’objectif précis est d’obtenir une exemption totale ou partielle, ou une application différenciée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00021",
+                      "des règles de fonctionnement du service public.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "La preuve de cette intention peut résulter :\n"
-                "• soit d’une expression claire de l’auteur ;\n"
-                "• soit d’éléments de contexte permettant de la déduire (ex. menaces faisant suite à des demandes répétées "
-                "auprès d’un agent participant au service public).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00022",
+                      "La preuve de cette intention peut résulter :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00023",
+                      "• soit d’une expression claire de l’auteur ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00024",
+                      "• soit d’éléments de contexte permettant de la déduire (ex. menaces faisant suite à des demandes répétées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00025",
+                      "auprès d’un agent participant au service public).",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
               _ConditionCard(
-                title: "Exemples pédagogiques",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00026",
+                  "Exemples pédagogiques",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF1E232A)
                     : const Color(0xFFF3F4F6),
                 accent: accentGrey,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _IntroBullet(
-                    text:
-                        "Obtenir des horaires réservés aux femmes pour l’accès à une piscine en faisant pression sur un agent.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00027",
+                      "Obtenir des horaires réservés aux femmes pour l’accès à une piscine en faisant pression sur un agent.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Obtenir un régime alimentaire particulier dans une cantine scolaire par intimidation.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00028",
+                      "Obtenir un régime alimentaire particulier dans une cantine scolaire par intimidation.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("D) Au bénéfice de soi-même ou d’autrui"),
-              const _Paragraph(
-                "Le comportement doit poursuivre l’objectif d’obtenir, pour soi-même ou pour autrui, "
-                "une application dérogatoire des règles de fonctionnement du service public.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00029",
+                  "D) Au bénéfice de soi-même ou d’autrui",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00030",
+                      "Le comportement doit poursuivre l’objectif d’obtenir, pour soi-même ou pour autrui, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00031",
+                      "une application dérogatoire des règles de fonctionnement du service public.",
+                    ),
               ),
             ],
           ),
@@ -205,28 +329,64 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+              "f00032",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté d’exercer une pression afin d’obtenir une application dérogatoire",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00033",
+                  "Volonté d’exercer une pression afin d’obtenir une application dérogatoire",
+                ),
               ),
               _Paragraph(
-                "L’auteur a conscience du trouble créé par les menaces, violences ou actes d’intimidation "
-                "dans l’esprit de la victime.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00034",
+                      "L’auteur a conscience du trouble créé par les menaces, violences ou actes d’intimidation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00035",
+                      "dans l’esprit de la victime.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Peu importe qu’il ait eu ou non l’intention de mettre ses menaces à exécution, "
-                "ou qu’il en ait eu ou non les moyens.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00036",
+                      "Peu importe qu’il ait eu ou non l’intention de mettre ses menaces à exécution, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00037",
+                      "ou qu’il en ait eu ou non les moyens.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La caractérisation de l’infraction exige une intention particulière : obtenir une exemption "
-                "ou une application différenciée des règles de fonctionnement du service public, "
-                "pour soi-même ou pour autrui.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00038",
+                      "La caractérisation de l’infraction exige une intention particulière : obtenir une exemption ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00039",
+                      "ou une application différenciée des règles de fonctionnement du service public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00040",
+                      "pour soi-même ou pour autrui.",
+                    ),
               ),
             ],
           ),
@@ -235,12 +395,22 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+              "f00041",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue par le texte."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00042",
+                  "Aucune circonstance aggravante prévue par le texte.",
+                ),
+              ),
             ],
           ),
 
@@ -248,43 +418,103 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+              "f00043",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00044",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit (qualification simple) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00045",
+                    "Délit (qualification simple) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 433-3-1 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00046",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00047",
+                    "article 433-3-1 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00048",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph(
-                "Les personnes morales peuvent être reconnues responsables pénalement dans les conditions prévues par la loi.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00049",
+                  "Les personnes morales peuvent être reconnues responsables pénalement dans les conditions prévues par la loi.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00050",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                  "f00051",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément aux "),
                 TextSpan(
-                  text: "articles 121-6",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00052",
+                    "Complicité : OUI, conformément aux ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00053",
+                    "articles 121-6",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                    "f00054",
+                    "121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -293,8 +523,11 @@ class MenacesViolencesIntimidationDerogationServicePublicPage
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La complicité suppose un fait constitutif prévu par la loi : aide ou assistance, provocation, ou instructions données.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart",
+                      "f00055",
+                      "La complicité suppose un fait constitutif prévu par la loi : aide ou assistance, provocation, ou instructions données.",
+                    ),
                   ),
                 ],
               ),
@@ -552,9 +785,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

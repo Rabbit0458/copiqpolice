@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
   const PaDelaissementPersonneHorsEtatPage({super.key});
@@ -56,10 +57,18 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en danger",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+            "f00002",
+            "Mise en danger",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le délaissement d’une personne qui n’est pas en mesure de se protéger",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+              "f00003",
+              "Le délaissement d’une personne qui n’est pas en mesure de se protéger",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,14 +99,26 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délaissement, en un lieu quelconque, d’une personne qui n’est pas en mesure "
-                "de se protéger en raison de son âge ou de son état physique ou psychique constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00005",
+                      "Le délaissement, en un lieu quelconque, d’une personne qui n’est pas en mesure ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00006",
+                      "de se protéger en raison de son âge ou de son état physique ou psychique constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -102,22 +127,30 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
 
           // ✅ Élément légal (en haut)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00008",
+                    "Article 223-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime le délaissement d’une personne qui n’est pas en mesure de se protéger.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00009",
+                    " : prévoit et réprime le délaissement d’une personne qui n’est pas en mesure de se protéger.",
+                  ),
                 ),
               ]),
             ],
@@ -127,61 +160,97 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délaissement consiste à abandonner une personne qui se trouve dans l’impossibilité "
-                "de subvenir à ses besoins et qui ne peut compter sur un tiers pour la prendre en charge.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00011",
+                      "Le délaissement consiste à abandonner une personne qui se trouve dans l’impossibilité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00012",
+                      "de subvenir à ses besoins et qui ne peut compter sur un tiers pour la prendre en charge.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Qualité de la victime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00013",
+                  "A) Qualité de la victime",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les mineurs de 15 ans sont exclus : leur délaissement relève d’un texte spécifique — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00014",
+                    "Les mineurs de 15 ans sont exclus : leur délaissement relève d’un texte spécifique — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00015",
+                    "article 227-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00016",
+                    "Article 223-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : vise toute personne (mineure > 15 ans ou majeure) hors d’état de se protéger, en raison de l’âge ou de son état physique/psychique.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00017",
+                    " : vise toute personne (mineure > 15 ans ou majeure) hors d’état de se protéger, en raison de l’âge ou de son état physique/psychique.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "Âge : le grand âge peut constituer un facteur de vulnérabilité (même sans régime juridique de protection).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00018",
+                  "Âge : le grand âge peut constituer un facteur de vulnérabilité (même sans régime juridique de protection).",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : condamnation pour avoir abandonné une femme de 85 ans en plein hiver dans une maison sans chauffage ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00019",
+                      "Jurisprudence : condamnation pour avoir abandonné une femme de 85 ans en plein hiver dans une maison sans chauffage ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Paris, 11 septembre 1998)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00020",
+                      "(C.A. Paris, 11 septembre 1998)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -193,39 +262,63 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "16–18 ans : la vulnérabilité liée à l’âge doit être accompagnée d’autres circonstances (état physique ou psychique).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00021",
+                  "16–18 ans : la vulnérabilité liée à l’âge doit être accompagnée d’autres circonstances (état physique ou psychique).",
+                ),
               ),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "État physique ou psychique : handicap, maladie, grossesse, dépendance (ex. toxicomanie).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00022",
+                  "État physique ou psychique : handicap, maladie, grossesse, dépendance (ex. toxicomanie).",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Situations imposées : détention, hospitalisation, etc., pouvant rendre la personne vulnérable.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00023",
+                  "Situations imposées : détention, hospitalisation, etc., pouvant rendre la personne vulnérable.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudences :\n• Maison d’arrêt après suicide d’un détenu ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00024",
+                      "Jurisprudences :\n• Maison d’arrêt après suicide d’un détenu ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 17 octobre 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00025",
+                      "(Cass. crim., 17 octobre 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text: "\n• Clinique après décès post-opératoire ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00026",
+                      "\n• Clinique après décès post-opératoire ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 14 septembre 1999)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00027",
+                      "(Cass. crim., 14 septembre 1999)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -237,17 +330,47 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un acte positif de délaissement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00028",
+                  "B) Un acte positif de délaissement",
+                ),
+              ),
               _Paragraph(
-                "Le texte vise un comportement positif :\n"
-                "• placer la personne dans un lieu puis l’abandonner ;\n"
-                "• ou s’éloigner volontairement du lieu où elle se trouve.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00029",
+                      "Le texte vise un comportement positif :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00030",
+                      "• placer la personne dans un lieu puis l’abandonner ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00031",
+                      "• ou s’éloigner volontairement du lieu où elle se trouve.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le lieu est indifférent : la loi punit le délaissement « quel que soit le lieu où il se produit ». "
-                "La jurisprudence est plus sévère lorsque le délaissement se produit dans un lieu de vie commune "
-                "où des soins doivent être prodigués (maison de retraite, hôpital).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00032",
+                      "Le lieu est indifférent : la loi punit le délaissement « quel que soit le lieu où il se produit ». ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00033",
+                      "La jurisprudence est plus sévère lorsque le délaissement se produit dans un lieu de vie commune ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                      "f00034",
+                      "où des soins doivent être prodigués (maison de retraite, hôpital).",
+                    ),
               ),
             ],
           ),
@@ -256,28 +379,46 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+              "f00035",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Volonté de délaisser la victime"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00036",
+                  "Volonté de délaisser la victime",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le délit est intentionnel : il suppose la volonté d’abandonner définitivement la victime. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00037",
+                    "Le délit est intentionnel : il suppose la volonté d’abandonner définitivement la victime. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 23 février 2000)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00038",
+                    "(Cass. crim., 23 février 2000)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’infraction est constituée même en l’absence de dommage subi par la victime.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00039",
+                  "L’infraction est constituée même en l’absence de dommage subi par la victime.",
+                ),
               ),
             ],
           ),
@@ -286,38 +427,62 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+              "f00040",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Premier degré : "),
                 TextSpan(
-                  text: "article 223-4 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00041",
+                    "Premier degré : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — lorsque le délaissement a entraîné une mutilation ou une infirmité permanente.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00042",
+                    "article 223-4 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00043",
+                    " — lorsque le délaissement a entraîné une mutilation ou une infirmité permanente.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Second degré : "),
                 TextSpan(
-                  text: "article 223-4 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00044",
+                    "Second degré : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — lorsque le délaissement a entraîné la mort de la victime.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00045",
+                    "article 223-4 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00046",
+                    " — lorsque le délaissement a entraîné la mort de la victime.",
+                  ),
                 ),
               ]),
             ],
@@ -327,107 +492,197 @@ class PaDelaissementPersonneHorsEtatPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+              "f00047",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00048",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple (délit) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00049",
+                    "Qualification simple (délit) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 223-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00050",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00051",
+                    "article 223-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravée (mutilation/infirmité permanente) : ",
-                ),
-                TextSpan(text: "15 ans de réclusion — "),
-                TextSpan(
-                  text: "article 223-4 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00052",
+                    "Aggravée (mutilation/infirmité permanente) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00053",
+                    "15 ans de réclusion — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00054",
+                    "article 223-4 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (mort) : "),
-                TextSpan(text: "20 ans de réclusion — "),
                 TextSpan(
-                  text: "article 223-4 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00055",
+                    "Aggravée (mort) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00056",
+                    "20 ans de réclusion — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00057",
+                    "article 223-4 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00058",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Responsabilité des personnes morales selon le principe général — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00059",
+                    "Responsabilité des personnes morales selon le principe général — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00060",
+                    "article 121-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                  "f00061",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : "),
-                TextSpan(text: "OUI (mais nuance).\n"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00062",
+                    "Tentative : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00063",
+                    "OUI (mais nuance).\n",
+                  ),
+                ),
                 TextSpan(
                   text:
-                      "• Pour l’infraction délictuelle (art. 223-3), la tentative n’étant pas incriminée, elle ne peut pas être retenue.\n"
-                      "• En cas de conséquences graves (art. 223-4), on est en matière criminelle : la tentative est alors toujours punissable.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                        "f00064",
+                        "• Pour l’infraction délictuelle (art. 223-3), la tentative n’étant pas incriminée, elle ne peut pas être retenue.\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                        "f00065",
+                        "• En cas de conséquences graves (art. 223-4), on est en matière criminelle : la tentative est alors toujours punissable.",
+                      ),
                 ),
                 TextSpan(text: " — "),
                 TextSpan(
-                  text: "articles 223-3 et 223-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00066",
+                    "articles 223-3 et 223-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00067",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00068",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart",
+                    "f00069",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -686,9 +941,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

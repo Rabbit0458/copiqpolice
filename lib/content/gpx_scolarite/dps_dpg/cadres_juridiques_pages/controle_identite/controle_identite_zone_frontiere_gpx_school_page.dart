@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
   const ConntroleIdentiteFrontiereGpxSchool({super.key});
@@ -38,10 +39,18 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Contrôles en zone frontière',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+            "f00002",
+            'Contrôles en zone frontière',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'Les contrôles d’identité en zone frontière',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+              "f00003",
+              'Les contrôles d’identité en zone frontière',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,10 +77,26 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Contrôles destinés à vérifier, dans certaines zones du territoire national, le respect '
-            'des obligations de détention, de port et de présentation de titres et documents, '
-            'dans un équilibre entre liberté de circulation et lutte contre la criminalité '
-            'transfrontalière.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                  "f00004",
+                  'Contrôles destinés à vérifier, dans certaines zones du territoire national, le respect ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                  "f00005",
+                  'des obligations de détention, de port et de présentation de titres et documents, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                  "f00006",
+                  'dans un équilibre entre liberté de circulation et lutte contre la criminalité ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                  "f00007",
+                  'transfrontalière.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -79,21 +108,40 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
 
           // ========== 1.2.3 – LES CONTRÔLES EN ZONE FRONTIÈRE ============
           _ConditionCard(
-            title: '1.2.3 – Les contrôles en zone frontière',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+              "f00008",
+              '1.2.3 – Les contrôles en zone frontière',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Ces contrôles sont destinés à vérifier le respect des obligations de détention, '
-                      'de port et de présentation des titres et documents prévus par les textes dans '
-                      'certaines zones du territoire national. Ils sont encadrés par l’',
-                ),
                 TextSpan(
                   text:
-                      'article 78-2 (alinéas 9 à 17) du code de procédure pénale',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00009",
+                        'Ces contrôles sont destinés à vérifier le respect des obligations de détention, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00010",
+                        'de port et de présentation des titres et documents prévus par les textes dans ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00011",
+                        'certaines zones du territoire national. Ils sont encadrés par l’',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00012",
+                    'article 78-2 (alinéas 9 à 17) du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
@@ -102,105 +150,253 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Ces dispositions sont notamment la conséquence :',
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                  "f00013",
+                  'Ces dispositions sont notamment la conséquence :',
+                ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'de la suppression des contrôles aux frontières intérieures, terrestres et aériennes, '
-                    'entre la France et les États parties à la convention de Schengen, ce qui impose de '
-                    'tenir compte des risques particuliers d’infractions et d’atteintes à l’ordre public '
-                    'liés à la circulation internationale des personnes ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00014",
+                      'de la suppression des contrôles aux frontières intérieures, terrestres et aériennes, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00015",
+                      'entre la France et les États parties à la convention de Schengen, ce qui impose de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00016",
+                      'tenir compte des risques particuliers d’infractions et d’atteintes à l’ordre public ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00017",
+                      'liés à la circulation internationale des personnes ;',
+                    ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'de la situation particulière du département de la Guyane face à l’immigration '
-                    'clandestine. Ces règles ont ensuite été étendues à la Guadeloupe, à Mayotte, à '
-                    'Saint-Barthélémy, à Saint-Martin et à la Martinique.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00018",
+                      'de la situation particulière du département de la Guyane face à l’immigration ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00019",
+                      'clandestine. Ces règles ont ensuite été étendues à la Guadeloupe, à Mayotte, à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00020",
+                      'Saint-Barthélémy, à Saint-Martin et à la Martinique.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Le Conseil constitutionnel a rappelé que ces contrôles doivent assurer un équilibre '
-                'entre les nécessités de l’ordre public et la sauvegarde de la liberté individuelle. Le '
-                'législateur a donc fixé des conditions précises de mise en œuvre.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00021",
+                      'Le Conseil constitutionnel a rappelé que ces contrôles doivent assurer un équilibre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00022",
+                      'entre les nécessités de l’ordre public et la sauvegarde de la liberté individuelle. Le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00023",
+                      'législateur a donc fixé des conditions précises de mise en œuvre.',
+                    ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Dans sa précédente rédaction, l’article de référence permettait de pratiquer des '
-                      'contrôles d’identité dans une zone de vingt kilomètres en deçà de la frontière '
-                      'terrestre, en ne se fondant que sur le lieu du contrôle, sans autre justification. '
-                      'Par un arrêt du 22 juin 2010, la Cour de justice de l’Union européenne a jugé ces '
-                      'dispositions incompatibles avec l’',
-                ),
                 TextSpan(
                   text:
-                      'article 67 du traité sur le fonctionnement de l’Union européenne',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00024",
+                        'Dans sa précédente rédaction, l’article de référence permettait de pratiquer des ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00025",
+                        'contrôles d’identité dans une zone de vingt kilomètres en deçà de la frontière ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00026",
+                        'terrestre, en ne se fondant que sur le lieu du contrôle, sans autre justification. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00027",
+                        'Par un arrêt du 22 juin 2010, la Cour de justice de l’Union européenne a jugé ces ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00028",
+                        'dispositions incompatibles avec l’',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00029",
+                    'article 67 du traité sur le fonctionnement de l’Union européenne',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ', qui consacre l’absence de contrôle des personnes aux frontières intérieures.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00030",
+                    ', qui consacre l’absence de contrôle des personnes aux frontières intérieures.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Pour se conformer à ces exigences, la loi du 14 mars 2011 d’orientation et de '
-                      'programmation pour la performance de la sécurité intérieure a modifié ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00031",
+                        'Pour se conformer à ces exigences, la loi du 14 mars 2011 d’orientation et de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00032",
+                        'programmation pour la performance de la sécurité intérieure a modifié ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’article 78-2 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00033",
+                    'l’article 78-2 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(text: ' en précisant :'),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00034",
+                    ' en précisant :',
+                  ),
+                ),
               ]),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'que les contrôles pratiqués dans la bande des vingt kilomètres ne constituent pas '
-                    'des vérifications aux frontières, mais visent à prévenir et rechercher les '
-                    'infractions liées à la criminalité transfrontalière ;',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00035",
+                      'que les contrôles pratiqués dans la bande des vingt kilomètres ne constituent pas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00036",
+                      'des vérifications aux frontières, mais visent à prévenir et rechercher les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00037",
+                      'infractions liées à la criminalité transfrontalière ;',
+                    ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'qu’ils ne peuvent être ni permanents, ni systématiques à l’égard des personnes '
-                    'présentes ou circulant dans cette zone.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00038",
+                      'qu’ils ne peuvent être ni permanents, ni systématiques à l’égard des personnes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00039",
+                      'présentes ou circulant dans cette zone.',
+                    ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'La loi du 30 octobre 2017 renforçant la sécurité intérieure et la lutte contre le '
-                      'terrorisme a ensuite prévu la possibilité d’effectuer des contrôles d’identité autour '
-                      'des ports et aéroports constituant des points de passage frontaliers désignés par '
-                      'arrêté (',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00040",
+                        'La loi du 30 octobre 2017 renforçant la sécurité intérieure et la lutte contre le ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00041",
+                        'terrorisme a ensuite prévu la possibilité d’effectuer des contrôles d’identité autour ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00042",
+                        'des ports et aéroports constituant des points de passage frontaliers désignés par ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00043",
+                        'arrêté (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-2, alinéa 10, du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00044",
+                    'article 78-2, alinéa 10, du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      '), en fixant une durée maximale de douze heures dans un même lieu et en '
-                      'interdisant tout contrôle systématique des personnes.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00045",
+                        '), en fixant une durée maximale de douze heures dans un même lieu et en ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00046",
+                        'interdisant tout contrôle systématique des personnes.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'En pratique, il est recommandé de préciser sur le procès-verbal l’heure de début du '
-                'contrôle fondé sur ces dispositions, afin de démontrer que l’opération n’a pas excédé '
-                'la durée maximale de douze heures.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00047",
+                      'En pratique, il est recommandé de préciser sur le procès-verbal l’heure de début du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00048",
+                      'contrôle fondé sur ces dispositions, afin de démontrer que l’opération n’a pas excédé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00049",
+                      'la durée maximale de douze heures.',
+                    ),
               ),
             ],
           ),
@@ -208,77 +404,216 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
 
           // ========== 1.2.3.1 – ENDROITS DÉLIMITÉS =======================
           _ConditionCard(
-            title:
-                '1.2.3.1 – Des contrôles effectués dans des endroits délimités',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+              "f00050",
+              '1.2.3.1 – Des contrôles effectués dans des endroits délimités',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les contrôles en zone frontière ne peuvent être pratiqués que dans des endroits '
-                'strictement délimités par la loi.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00051",
+                      'Les contrôles en zone frontière ne peuvent être pratiqués que dans des endroits ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00052",
+                      'strictement délimités par la loi.',
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'Dans une zone située à moins de vingt kilomètres de la frontière terrestre entre '
-                    'la France et les États limitrophes parties à la convention de Schengen, ainsi que '
-                    'dans les zones accessibles au public des ports, aéroports et gares ferroviaires '
-                    'ou routières ouverts au trafic international et désignés par arrêté interministériel, '
-                    'ainsi que dans les abords de ces gares.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00053",
+                      'Dans une zone située à moins de vingt kilomètres de la frontière terrestre entre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00054",
+                      'la France et les États limitrophes parties à la convention de Schengen, ainsi que ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00055",
+                      'dans les zones accessibles au public des ports, aéroports et gares ferroviaires ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00056",
+                      'ou routières ouverts au trafic international et désignés par arrêté interministériel, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00057",
+                      'ainsi que dans les abords de ces gares.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'À bord d’un train effectuant une liaison internationale, sur la portion du trajet '
-                    'comprise entre la frontière et le premier arrêt situé au-delà des vingt kilomètres. '
-                    'Sur certaines lignes, le contrôle peut également avoir lieu entre ce premier arrêt '
-                    'et un arrêt situé dans la limite des cinquante kilomètres suivants, lorsque la '
-                    'ligne et les arrêts sont désignés par arrêté.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00058",
+                      'À bord d’un train effectuant une liaison internationale, sur la portion du trajet ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00059",
+                      'comprise entre la frontière et le premier arrêt situé au-delà des vingt kilomètres. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00060",
+                      'Sur certaines lignes, le contrôle peut également avoir lieu entre ce premier arrêt ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00061",
+                      'et un arrêt situé dans la limite des cinquante kilomètres suivants, lorsque la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00062",
+                      'ligne et les arrêts sont désignés par arrêté.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Sur une section autoroutière qui commence dans la zone des vingt kilomètres, '
-                    'jusqu’au premier péage autoroutier situé au-delà de cette limite, ainsi que sur les '
-                    'aires de stationnement attenantes. Les péages concernés sont fixés par arrêté.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00063",
+                      'Sur une section autoroutière qui commence dans la zone des vingt kilomètres, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00064",
+                      'jusqu’au premier péage autoroutier situé au-delà de cette limite, ainsi que sur les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00065",
+                      'aires de stationnement attenantes. Les péages concernés sont fixés par arrêté.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Dans un rayon maximal de dix kilomètres autour des ports et aéroports '
-                    'constituant des points de passage frontaliers en raison de leur fréquentation et '
-                    'de leur vulnérabilité, tels que définis par arrêté, avec extension possible jusqu’au '
-                    'premier péage autoroutier dans les mêmes conditions que ci-dessus.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00066",
+                      'Dans un rayon maximal de dix kilomètres autour des ports et aéroports ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00067",
+                      'constituant des points de passage frontaliers en raison de leur fréquentation et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00068",
+                      'de leur vulnérabilité, tels que définis par arrêté, avec extension possible jusqu’au ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00069",
+                      'premier péage autoroutier dans les mêmes conditions que ci-dessus.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Dans une zone comprise entre les frontières terrestres ou le littoral du '
-                    'département de la Guyane et une ligne tracée à vingt kilomètres en deçà, ainsi '
-                    'que sur une ligne tracée à cinq kilomètres de part et d’autre, et sur la route '
-                    'nationale 2 sur le territoire de la commune de Régina.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00070",
+                      'Dans une zone comprise entre les frontières terrestres ou le littoral du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00071",
+                      'département de la Guyane et une ligne tracée à vingt kilomètres en deçà, ainsi ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00072",
+                      'que sur une ligne tracée à cinq kilomètres de part et d’autre, et sur la route ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00073",
+                      'nationale 2 sur le territoire de la commune de Régina.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'En Guadeloupe, dans une zone comprise entre le littoral et une ligne tracée à un '
-                    'kilomètre en deçà, ainsi que sur le territoire des communes traversées par les '
-                    'routes nationales 1, 2, 4, 5, 6, 9, 10 et 11.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00074",
+                      'En Guadeloupe, dans une zone comprise entre le littoral et une ligne tracée à un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00075",
+                      'kilomètre en deçà, ainsi que sur le territoire des communes traversées par les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00076",
+                      'routes nationales 1, 2, 4, 5, 6, 9, 10 et 11.',
+                    ),
               ),
               _BulletPoint(
-                text: 'À Mayotte, sur l’ensemble du territoire.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                  "f00077",
+                  'À Mayotte, sur l’ensemble du territoire.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'À Saint-Martin, dans une zone comprise entre le littoral et une ligne tracée à un '
-                    'kilomètre en deçà.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00078",
+                      'À Saint-Martin, dans une zone comprise entre le littoral et une ligne tracée à un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00079",
+                      'kilomètre en deçà.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'À Saint-Barthélémy, dans une zone comprise entre le littoral et une ligne tracée '
-                    'à un kilomètre en deçà.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00080",
+                      'À Saint-Barthélémy, dans une zone comprise entre le littoral et une ligne tracée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00081",
+                      'à un kilomètre en deçà.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'En Martinique, dans une zone comprise entre le littoral et une ligne tracée à un '
-                    'kilomètre en deçà, ainsi que dans une zone d’un kilomètre de part et d’autre des '
-                    'routes nationales 1, 2, 3, 5 et 6 et de la départementale 1.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00082",
+                      'En Martinique, dans une zone comprise entre le littoral et une ligne tracée à un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00083",
+                      'kilomètre en deçà, ainsi que dans une zone d’un kilomètre de part et d’autre des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00084",
+                      'routes nationales 1, 2, 3, 5 et 6 et de la départementale 1.',
+                    ),
               ),
             ],
           ),
@@ -286,23 +621,59 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
 
           // ========== 1.2.3.2 – FINS DÉTERMINÉES ==========================
           _ConditionCard(
-            title: '1.2.3.2 – Des contrôles effectués à des fins déterminées',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+              "f00085",
+              '1.2.3.2 – Des contrôles effectués à des fins déterminées',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
-              const _Paragraph(
-                'Les contrôles en zone frontière ont pour finalité de prévenir et de rechercher les '
-                'infractions liées à la criminalité transfrontalière, ainsi que de vérifier le respect des '
-                'obligations pesant sur certaines personnes tenues de présenter des titres ou '
-                'documents particuliers.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00086",
+                      'Les contrôles en zone frontière ont pour finalité de prévenir et de rechercher les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00087",
+                      'infractions liées à la criminalité transfrontalière, ainsi que de vérifier le respect des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00088",
+                      'obligations pesant sur certaines personnes tenues de présenter des titres ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00089",
+                      'documents particuliers.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph('Ces obligations concernent notamment :'),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                  "f00090",
+                  'Ces obligations concernent notamment :',
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: '• le permis de conduire ('),
                 TextSpan(
-                  text: 'article R. 233-1 du code de la route',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00091",
+                    '• le permis de conduire (',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00092",
+                    'article R. 233-1 du code de la route',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: articleColor,
@@ -312,9 +683,19 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
               ]),
               const SizedBox(height: 4),
               _Paragraph.rich([
-                const TextSpan(text: '• le permis de chasser ('),
                 TextSpan(
-                  text: 'article L. 423-1 du code de l’environnement',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00093",
+                    '• le permis de chasser (',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00094",
+                    'article L. 423-1 du code de l’environnement',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: articleColor,
@@ -323,20 +704,39 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
                 const TextSpan(text: ') ;'),
               ]),
               const SizedBox(height: 4),
-              const _Paragraph(
-                '• les autorisations exigées pour le port, la détention ou la circulation '
-                'transfrontière des armes ;',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00095",
+                      '• les autorisations exigées pour le port, la détention ou la circulation ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00096",
+                      'transfrontière des armes ;',
+                    ),
               ),
               const SizedBox(height: 4),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      '• les pièces ou documents sous le couvert desquels les étrangers sont autorisés '
-                      'à circuler ou à séjourner en France (',
-                ),
                 TextSpan(
                   text:
-                      'articles L. 812-1 et L. 812-2 du code de l’entrée et du séjour des étrangers et du droit d’asile',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00097",
+                        '• les pièces ou documents sous le couvert desquels les étrangers sont autorisés ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                        "f00098",
+                        'à circuler ou à séjourner en France (',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                    "f00099",
+                    'articles L. 812-1 et L. 812-2 du code de l’entrée et du séjour des étrangers et du droit d’asile',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: articleColor,
@@ -345,12 +745,32 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
                 const TextSpan(text: ').'),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Comme pour les contrôles effectués sur réquisitions du procureur de la République, '
-                'il est prévu le cas où, à l’occasion de ce contrôle, serait constatée une infraction '
-                'autre que le simple non-respect des obligations relatives aux titres et documents '
-                'exigés : le fait que le contrôle révèle une telle infraction ne constitue pas une cause '
-                'de nullité des procédures incidentes.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00100",
+                      'Comme pour les contrôles effectués sur réquisitions du procureur de la République, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00101",
+                      'il est prévu le cas où, à l’occasion de ce contrôle, serait constatée une infraction ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00102",
+                      'autre que le simple non-respect des obligations relatives aux titres et documents ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00103",
+                      'exigés : le fait que le contrôle révèle une telle infraction ne constitue pas une cause ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart",
+                      "f00104",
+                      'de nullité des procédures incidentes.',
+                    ),
               ),
             ],
           ),
@@ -606,9 +1026,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

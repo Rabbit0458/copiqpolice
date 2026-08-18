@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques/mort_inconnue/mort_inconnue_actes_delegues.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 const Color _lawColor = Color(0xFFE53935);
 
@@ -30,12 +31,20 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
         backgroundColor: bg,
         centerTitle: true,
         leading: IconButton(
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+            "f00001",
+            'Retour',
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'Mort de cause inconnue',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+            "f00002",
+            'Mort de cause inconnue',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -51,7 +60,11 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
           //                          TITRE PAGE
           // ================================================================
           Text(
-            'Les actes délégués par le procureur de la République',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+              "f00003",
+              'Les actes délégués par le procureur de la République',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -61,15 +74,39 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'L’article 74 du Code de procédure pénale dresse une liste précise des actes '
-                  'que peuvent réaliser les officiers de police judiciaire (O.P.J.) ou, sous leur contrôle, '
-                  'les agents de police judiciaire (A.P.J.), sur instructions du procureur de la République. '
-                  'Outre les constatations et réquisitions à personnes qualifiées, les enquêteurs peuvent '
-                  'également mettre en œuvre les actes prévus aux articles 56 à 62 du Code de procédure pénale, '
-                  'afin de rechercher les causes du décès.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00004",
+                    'L’article 74 du Code de procédure pénale dresse une liste précise des actes ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00005",
+                    'que peuvent réaliser les officiers de police judiciaire (O.P.J.) ou, sous leur contrôle, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00006",
+                    'les agents de police judiciaire (A.P.J.), sur instructions du procureur de la République. ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00007",
+                    'Outre les constatations et réquisitions à personnes qualifiées, les enquêteurs peuvent ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00008",
+                    'également mettre en œuvre les actes prévus aux articles 56 à 62 du Code de procédure pénale, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00009",
+                    'afin de rechercher les causes du décès.',
+                  ),
             ),
           ]),
           const SizedBox(height: 18),
@@ -78,17 +115,41 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
           //                          2.2.1.1 CONSTATATIONS
           // ================================================================
           _ConditionCard(
-            title: '1. Les constatations',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+              "f00010",
+              '1. Les constatations',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                'L’officier ou l’agent de police judiciaire procède à toutes constatations '
-                'utiles visant à déterminer les causes et les circonstances de la mort. '
-                'Cela inclut l’examen du lieu, l’environnement, la position du corps, '
-                'les traces visibles, les objets présents et tout élément susceptible '
-                'd’éclairer la nature du décès.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00011",
+                      'L’officier ou l’agent de police judiciaire procède à toutes constatations ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00012",
+                      'utiles visant à déterminer les causes et les circonstances de la mort. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00013",
+                      'Cela inclut l’examen du lieu, l’environnement, la position du corps, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00014",
+                      'les traces visibles, les objets présents et tout élément susceptible ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00015",
+                      'd’éclairer la nature du décès.',
+                    ),
               ),
             ],
           ),
@@ -98,60 +159,122 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
           //                          2.2.1.2 AUTOPSIE
           // ================================================================
           _ConditionCard(
-            title: '2. L’autopsie',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+              "f00016",
+              '2. L’autopsie',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'L’article 230-28 du Code de procédure pénale dispose qu’une autopsie peut être ordonnée '
-                      'dans le cadre d’une enquête judiciaire mise en œuvre selon ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                        "f00017",
+                        'L’article 230-28 du Code de procédure pénale dispose qu’une autopsie peut être ordonnée ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                        "f00018",
+                        'dans le cadre d’une enquête judiciaire mise en œuvre selon ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’article 74 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00019",
+                    'l’article 74 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: _lawColor,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      '. Les règles particulières figurent aux articles 230-28 à 230-31.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00020",
+                    '. Les règles particulières figurent aux articles 230-28 à 230-31.',
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
                 text:
-                    'L’autopsie ne peut être confiée qu’à un médecin titulaire d’un diplôme en médecine légale '
-                    'ou disposant d’une expertise reconnue.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00021",
+                      'L’autopsie ne peut être confiée qu’à un médecin titulaire d’un diplôme en médecine légale ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00022",
+                      'ou disposant d’une expertise reconnue.',
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                  "f00023",
+                  'Le médecin procède aux prélèvements biologiques nécessaires et peut les placer sous scellés.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Le médecin procède aux prélèvements biologiques nécessaires et peut les placer sous scellés.',
-              ),
-              _BulletPoint(
-                text:
-                    'La présence des enquêteurs n’est pas obligatoire, sauf si la nature de l’enquête justifie '
-                    'leur présence pour guider le légiste ou être informés immédiatement.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00024",
+                      'La présence des enquêteurs n’est pas obligatoire, sauf si la nature de l’enquête justifie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00025",
+                      'leur présence pour guider le légiste ou être informés immédiatement.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Il est recommandé d’inclure explicitement dans la réquisition judiciaire la possibilité '
-                        'de placer sous scellés les objets ou prélèvements effectués lors de l’autopsie '
-                        '(circulaire JUSD1910288C du 8 avril 2019).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00026",
+                          'Il est recommandé d’inclure explicitement dans la réquisition judiciaire la possibilité ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00027",
+                          'de placer sous scellés les objets ou prélèvements effectués lors de l’autopsie ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00028",
+                          '(circulaire JUSD1910288C du 8 avril 2019).',
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Le médecin légiste doit veiller à la meilleure restauration possible du corps avant sa remise '
-                'aux proches. Ceux-ci doivent être informés dans les meilleurs délais qu’une autopsie a été '
-                'ordonnée et que des prélèvements ont été réalisés, sauf impératifs de santé publique.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00029",
+                      'Le médecin légiste doit veiller à la meilleure restauration possible du corps avant sa remise ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00030",
+                      'aux proches. Ceux-ci doivent être informés dans les meilleurs délais qu’une autopsie a été ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00031",
+                      'ordonnée et que des prélèvements ont été réalisés, sauf impératifs de santé publique.',
+                    ),
               ),
             ],
           ),
@@ -161,45 +284,87 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
           //                        2.2.1.3 RÉQUISITIONS
           // ================================================================
           _ConditionCard(
-            title: '3. Les réquisitions',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+              "f00032",
+              '3. Les réquisitions',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'L’officier ou l’agent de police judiciaire reçoit délégation du procureur de la République '
-                      'pour requérir toute personne qualifiée afin ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                        "f00033",
+                        'L’officier ou l’agent de police judiciaire reçoit délégation du procureur de la République ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                        "f00034",
+                        'pour requérir toute personne qualifiée afin ',
+                      ),
                 ),
                 TextSpan(
-                  text: '« d’apprécier la nature des circonstances du décès »',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                    "f00035",
+                    '« d’apprécier la nature des circonstances du décès »',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(text: '.'),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    'Le médecin est prioritairement requis : constatation du décès et examen externe du corps.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                  "f00036",
+                  'Le médecin est prioritairement requis : constatation du décès et examen externe du corps.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'D’autres experts peuvent être requis selon la situation : armurier, serrurier, électricien, '
-                    'mécanicien, expert incendie, etc.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00037",
+                      'D’autres experts peuvent être requis selon la situation : armurier, serrurier, électricien, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                      "f00038",
+                      'mécanicien, expert incendie, etc.',
+                    ),
               ),
               _BulletPoint(
-                text:
-                    'Les personnes requises doivent prêter serment par écrit, sauf si elles figurent sur l’une des listes prévues à l’article 157 du Code de procédure pénale.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                  "f00039",
+                  'Les personnes requises doivent prêter serment par écrit, sauf si elles figurent sur l’une des listes prévues à l’article 157 du Code de procédure pénale.',
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Toute personne refusant de déférer à une réquisition s’expose aux sanctions de '
-                        'l’article R 642-1 du Code pénal (contravention de 2ᵉ classe). S’agissant d’un médecin, '
-                        'le refus constitue un délit puni par l’article L 4163-7 du Code de la santé publique.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00040",
+                          'Toute personne refusant de déférer à une réquisition s’expose aux sanctions de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00041",
+                          'l’article R 642-1 du Code pénal (contravention de 2ᵉ classe). S’agissant d’un médecin, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00042",
+                          'le refus constitue un délit puni par l’article L 4163-7 du Code de la santé publique.',
+                        ),
                   ),
                 ],
               ),
@@ -211,34 +376,60 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
           //                        2.2.1.4 à 2.2.1.8 LISTE SYNTHÉTIQUE
           // ================================================================
           _ConditionCard(
-            title: '4. Autres actes délégués',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+              "f00043",
+              '4. Autres actes délégués',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                'Liste des actes prévus par les articles 56 à 62 du Code de procédure pénale',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                  "f00044",
+                  'Liste des actes prévus par les articles 56 à 62 du Code de procédure pénale',
+                ),
               ),
               _BulletPoint(text: 'Perquisitions'),
               _BulletPoint(text: 'Saisies'),
               _BulletPoint(
-                text:
-                    'Réquisitions à toute personne, établissement ou organisme privé, public ou administration',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                  "f00045",
+                  'Réquisitions à toute personne, établissement ou organisme privé, public ou administration',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Empêcher toute personne de s’éloigner du lieu de découverte du corps jusqu’à la fin des opérations',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                  "f00046",
+                  'Empêcher toute personne de s’éloigner du lieu de découverte du corps jusqu’à la fin des opérations',
+                ),
               ),
               _BulletPoint(
-                text: 'Auditions des témoins, y compris par comparution forcée',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                  "f00047",
+                  'Auditions des témoins, y compris par comparution forcée',
+                ),
               ),
               _SizedGap(),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Dans ce cadre d’enquête, l’officier de police judiciaire ne peut pas placer une personne en garde à vue. '
-                        'Le procureur de la République ne peut pas non plus délivrer de mandat de recherche.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00048",
+                          'Dans ce cadre d’enquête, l’officier de police judiciaire ne peut pas placer une personne en garde à vue. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                          "f00049",
+                          'Le procureur de la République ne peut pas non plus délivrer de mandat de recherche.',
+                        ),
                   ),
                 ],
               ),
@@ -431,7 +622,6 @@ class _NotaBox extends StatelessWidget {
         : const Color(0xFFFFF8E1);
     final Color titleColor = borderColor;
 
-
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(12),
@@ -452,7 +642,11 @@ class _NotaBox extends StatelessWidget {
           ),
           children: [
             TextSpan(
-              text: 'NOTA : ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart",
+                "f00050",
+                'NOTA : ',
+              ),
               style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
             ),
             ...bodySpans,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class SignalementDescriptifPage extends StatelessWidget {
   const SignalementDescriptifPage({super.key});
@@ -56,7 +57,11 @@ class SignalementDescriptifPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -74,7 +79,11 @@ class SignalementDescriptifPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le signalement descriptif",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+              "f00002",
+              "Le signalement descriptif",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,16 +95,36 @@ class SignalementDescriptifPage extends StatelessWidget {
 
           // Objectif
           _ConditionCard(
-            title: "Objectif opérationnel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+              "f00003",
+              "Objectif opérationnel",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le policier doit savoir relever rapidement les éléments déterminants d’un signalement descriptif "
-                "et l’utiliser pour identifier une personne ou un véhicule.\n\n"
-                "Le principe : aller à l’essentiel pour permettre une diffusion immédiate sur les ondes et sensibiliser "
-                "les patrouilles à proximité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00004",
+                      "Le policier doit savoir relever rapidement les éléments déterminants d’un signalement descriptif ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00005",
+                      "et l’utiliser pour identifier une personne ou un véhicule.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00006",
+                      "Le principe : aller à l’essentiel pour permettre une diffusion immédiate sur les ondes et sensibiliser ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00007",
+                      "les patrouilles à proximité.",
+                    ),
               ),
             ],
           ),
@@ -104,15 +133,31 @@ class SignalementDescriptifPage extends StatelessWidget {
 
           // Élément légal (aucun article explicite fourni dans ton texte)
           _ConditionCard(
-            title: "I — Élément légal (repère)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+              "f00008",
+              "I — Élément légal (repère)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucun article précis n’est mentionné dans la fiche fournie.\n\n"
-                "➡️ Cette page est donc centrée sur la méthode opérationnelle : comment formuler un signalement "
-                "clair, neutre, utile et diffusable immédiatement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00009",
+                      "Aucun article précis n’est mentionné dans la fiche fournie.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00010",
+                      "➡️ Cette page est donc centrée sur la méthode opérationnelle : comment formuler un signalement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00011",
+                      "clair, neutre, utile et diffusable immédiatement.",
+                    ),
               ),
             ],
           ),
@@ -121,15 +166,33 @@ class SignalementDescriptifPage extends StatelessWidget {
 
           // Signalement personne
           _ConditionCard(
-            title: "II — Signalement d’une personne",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+              "f00012",
+              "II — Signalement d’une personne",
+            ),
             cardColor: cardPerson,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Règle d’or : précis, court, utile"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00013",
+                  "Règle d’or : précis, court, utile",
+                ),
+              ),
               _Paragraph(
-                "On suit des rubriques simples, dans un ordre logique. "
-                "L’objectif est de donner une image mentale rapide et exploitable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00014",
+                      "On suit des rubriques simples, dans un ordre logique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00015",
+                      "L’objectif est de donner une image mentale rapide et exploitable.",
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -137,8 +200,11 @@ class SignalementDescriptifPage extends StatelessWidget {
                 title: "Interdit",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Tout terme à caractère raciste, xénophobe, injurieux ou discriminatoire est prohibé.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                      "f00016",
+                      "Tout terme à caractère raciste, xénophobe, injurieux ou discriminatoire est prohibé.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -146,70 +212,141 @@ class SignalementDescriptifPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("Les rubriques essentielles (checklist radio)"),
-              _BulletPoint(text: "1) Sexe : masculin / féminin."),
-              _BulletPoint(
-                text:
-                    "2) Âge : mineur / majeur + estimation par tranche (ex. 20–30 ans).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00017",
+                  "Les rubriques essentielles (checklist radio)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "3) Taille : petite / moyenne / grande + estimation chiffrée si possible.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00018",
+                  "1) Sexe : masculin / féminin.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "4) Corpulence : mince/maigre/svelte — normale — trapue — forte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00019",
+                  "2) Âge : mineur / majeur + estimation par tranche (ex. 20–30 ans).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "5) Type (termes descriptifs neutres) : caucasien, méditerranéen, moyen-oriental, maghrébin, asiatique/eurasien, indo-pakistanais, métis/mulâtre, africain/antillais, polynésien, mélanésien, amérindien.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00020",
+                  "3) Taille : petite / moyenne / grande + estimation chiffrée si possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00021",
+                  "4) Corpulence : mince/maigre/svelte — normale — trapue — forte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00022",
+                  "5) Type (termes descriptifs neutres) : caucasien, méditerranéen, moyen-oriental, maghrébin, asiatique/eurasien, indo-pakistanais, métis/mulâtre, africain/antillais, polynésien, mélanésien, amérindien.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Détails d’identification (si visibles)"),
-              _BulletPoint(
-                text:
-                    "6) Cheveux : couleur (blonds/châtains/bruns/blancs…), longueur (courts/mi-longs/longs), nature (raides/frisés/crépus…), abondance (chauve/clairsemés…), coiffure (tresses/chignon/rasés…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00023",
+                  "Détails d’identification (si visibles)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "7) Yeux : couleur, forme (enfoncés/globuleux/bridés…), regard (fuyant/vif/vitreux…), indices (lunettes, strabisme, pupille rouge…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00024",
+                  "6) Cheveux : couleur (blonds/châtains/bruns/blancs…), longueur (courts/mi-longs/longs), nature (raides/frisés/crépus…), abondance (chauve/clairsemés…), coiffure (tresses/chignon/rasés…).",
+                ),
               ),
               _BulletPoint(
-                text: "8) Barbe / moustache : couleur, longueur, forme.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00025",
+                  "7) Yeux : couleur, forme (enfoncés/globuleux/bridés…), regard (fuyant/vif/vitreux…), indices (lunettes, strabisme, pupille rouge…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "9) Visage : forme (rond/ovale/carré…), teint, sourcils, front, bouche, expression, menton, oreilles + signes particuliers (cicatrice, tatouage, piercing, grains de beauté…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00026",
+                  "8) Barbe / moustache : couleur, longueur, forme.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "10) Démarche / silhouette / gestuelle : lourde/souple, voûtée/déhanchée, handicap, tics, droitier/gaucher…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00027",
+                  "9) Visage : forme (rond/ovale/carré…), teint, sourcils, front, bouche, expression, menton, oreilles + signes particuliers (cicatrice, tatouage, piercing, grains de beauté…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "11) Voix : tonalité (grave/aiguë), intensité (forte/faible), élocution (rapide/lente/hachée), accent, bégaiement…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00028",
+                  "10) Démarche / silhouette / gestuelle : lourde/souple, voûtée/déhanchée, handicap, tics, droitier/gaucher…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "12) Habillement : coiffure (bonnet/casquette…), nature (ville/sport/travail), type (survêt/tee-shirt/robe…), couleurs, marque, logo, chaussures, accessoires (sac, gants…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00029",
+                  "11) Voix : tonalité (grave/aiguë), intensité (forte/faible), élocution (rapide/lente/hachée), accent, bégaiement…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "13) Autres éléments : catégorie socio-pro présumée (si utile), nombre de personnes impliquées, direction de fuite, blessures, contexte (vol/agression…), type d’arme, moyen de locomotion, présence d’animaux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00030",
+                  "12) Habillement : coiffure (bonnet/casquette…), nature (ville/sport/travail), type (survêt/tee-shirt/robe…), couleurs, marque, logo, chaussures, accessoires (sac, gants…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00031",
+                  "13) Autres éléments : catégorie socio-pro présumée (si utile), nombre de personnes impliquées, direction de fuite, blessures, contexte (vol/agression…), type d’arme, moyen de locomotion, présence d’animaux.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Astuce radio",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00032",
+                  "Astuce radio",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Commence toujours par les éléments discriminants (sexe/âge/taille/corpulence) "
-                        "puis ajoute 2–3 détails forts (vêtement marquant, tatouage, démarche, accessoire). "
-                        "Mieux vaut 6 infos fiables que 15 incertaines.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                          "f00033",
+                          "Commence toujours par les éléments discriminants (sexe/âge/taille/corpulence) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                          "f00034",
+                          "puis ajoute 2–3 détails forts (vêtement marquant, tatouage, démarche, accessoire). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                          "f00035",
+                          "Mieux vaut 6 infos fiables que 15 incertaines.",
+                        ),
                   ),
                 ],
               ),
@@ -220,30 +357,91 @@ class SignalementDescriptifPage extends StatelessWidget {
 
           // Signalement véhicule
           _ConditionCard(
-            title: "III — Signalement d’un véhicule",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+              "f00036",
+              "III — Signalement d’un véhicule",
+            ),
             cardColor: cardVehicle,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("À annoncer en priorité"),
-              _BulletPoint(
-                text: "1) Numéro d’immatriculation (si connu, même partiel).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00037",
+                  "À annoncer en priorité",
+                ),
               ),
-              _BulletPoint(text: "2) Marque."),
-              _BulletPoint(text: "3) Type / modèle (si possible)."),
               _BulletPoint(
-                text: "4) Genre (VL, utilitaire, deux-roues, camionnette…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00038",
+                  "1) Numéro d’immatriculation (si connu, même partiel).",
+                ),
               ),
-              _BulletPoint(text: "5) Couleur de carrosserie."),
               _BulletPoint(
-                text: "6) Catégorie d’immatriculation : française / étrangère.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00039",
+                  "2) Marque.",
+                ),
               ),
-              _BulletPoint(text: "7) Nombre d’occupants."),
-              _BulletPoint(text: "8) Signalement sommaire du conducteur."),
-              _BulletPoint(text: "9) Direction prise."),
               _BulletPoint(
-                text:
-                    "10) Particularités : autocollants, chocs, éraflures, éléments distinctifs…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00040",
+                  "3) Type / modèle (si possible).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00041",
+                  "4) Genre (VL, utilitaire, deux-roues, camionnette…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00042",
+                  "5) Couleur de carrosserie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00043",
+                  "6) Catégorie d’immatriculation : française / étrangère.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00044",
+                  "7) Nombre d’occupants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00045",
+                  "8) Signalement sommaire du conducteur.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00046",
+                  "9) Direction prise.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00047",
+                  "10) Particularités : autocollants, chocs, éraflures, éléments distinctifs…",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -251,8 +449,16 @@ class SignalementDescriptifPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si tu n’as pas l’immatriculation : compense avec 3 marqueurs forts "
-                        "(couleur + type + particularité visible) et la direction de fuite.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                          "f00048",
+                          "Si tu n’as pas l’immatriculation : compense avec 3 marqueurs forts ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                          "f00049",
+                          "(couleur + type + particularité visible) et la direction de fuite.",
+                        ),
                   ),
                 ],
               ),
@@ -263,27 +469,49 @@ class SignalementDescriptifPage extends StatelessWidget {
 
           // Bonnes pratiques / diffusion
           _ConditionCard(
-            title: "IV — Bonnes pratiques de diffusion",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+              "f00050",
+              "IV — Bonnes pratiques de diffusion",
+            ),
             cardColor: cardGoodPractice,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Ce qui rend un signalement exploitable"),
-              _BulletPoint(
-                text:
-                    "Ordre logique : QUI ? (personne) / QUOI ? (véhicule) / OÙ ? / VERS OÙ ?",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00051",
+                  "Ce qui rend un signalement exploitable",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Infos courtes et factuelles : éviter les interprétations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00052",
+                  "Ordre logique : QUI ? (personne) / QUOI ? (véhicule) / OÙ ? / VERS OÙ ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toujours donner la direction de fuite et le contexte (agression, vol, arme…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00053",
+                  "Infos courtes et factuelles : éviter les interprétations.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne pas surcharger : privilégier les éléments vraiment discriminants.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00054",
+                  "Toujours donner la direction de fuite et le contexte (agression, vol, arme…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                  "f00055",
+                  "Ne pas surcharger : privilégier les éléments vraiment discriminants.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -291,8 +519,16 @@ class SignalementDescriptifPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’objectif n’est pas de “tout dire”, mais de permettre une prise d’info immédiate "
-                        "et une reconnaissance rapide par les équipages à proximité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                          "f00056",
+                          "L’objectif n’est pas de “tout dire”, mais de permettre une prise d’info immédiate ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/signalement_descriptif_page.dart",
+                          "f00057",
+                          "et une reconnaissance rapide par les équipages à proximité.",
+                        ),
                   ),
                 ],
               ),

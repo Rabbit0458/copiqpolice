@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MaltraitanceAnimalePage extends StatelessWidget {
   const MaltraitanceAnimalePage({super.key});
@@ -55,7 +56,11 @@ class MaltraitanceAnimalePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Animal",
@@ -73,7 +78,11 @@ class MaltraitanceAnimalePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Lutte contre la maltraitance animale",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00002",
+              "Lutte contre la maltraitance animale",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,37 +94,49 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Définition + principes
           _ConditionCard(
-            title: "Définition & principes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00003",
+              "Définition & principes",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les animaux sont des êtres vivants doués de sensibilité : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00004",
+                    "Les animaux sont des êtres vivants doués de sensibilité : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 515-14 du Code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00005",
+                    "article 515-14 du Code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Ils doivent être placés par leur propriétaire dans des conditions compatibles avec les impératifs biologiques de leur espèce : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00006",
+                    "Ils doivent être placés par leur propriétaire dans des conditions compatibles avec les impératifs biologiques de leur espèce : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 214-1 du CRPM",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00007",
+                    "article L. 214-1 du CRPM",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -125,8 +146,16 @@ class MaltraitanceAnimalePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les OPJ/APJ recherchent et constatent les infractions (Code pénal / Code rural). "
-                        "Un référent “maltraitance animale” est désigné dans chaque commissariat pour appui et conseil.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                          "f00008",
+                          "Les OPJ/APJ recherchent et constatent les infractions (Code pénal / Code rural). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                          "f00009",
+                          "Un référent “maltraitance animale” est désigné dans chaque commissariat pour appui et conseil.",
+                        ),
                   ),
                 ],
               ),
@@ -137,31 +166,48 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (infraction “support” : sévices graves / cruauté)
           _ConditionCard(
-            title: "I — Élément légal (référence centrale)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00010",
+              "I — Élément légal (référence centrale)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Sévices graves / actes de cruauté : "),
                 TextSpan(
-                  text: "article 521-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00011",
+                    "Sévices graves / actes de cruauté : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (animal domestique, apprivoisé ou tenu en captivité).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00012",
+                    "article 521-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00013",
+                    " (animal domestique, apprivoisé ou tenu en captivité).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Non applicable aux courses de taureaux et combats de coqs lorsque qu’une tradition locale ininterrompue peut être invoquée/établie.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00014",
+                      "Non applicable aux courses de taureaux et combats de coqs lorsque qu’une tradition locale ininterrompue peut être invoquée/établie.",
+                    ),
                   ),
                 ],
               ),
@@ -172,33 +218,93 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Élément matériel (pédagogique)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) L’animal visé"),
-              _Paragraph(
-                "L’infraction concerne un animal domestique, apprivoisé ou tenu en captivité.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00016",
+                  "A) L’animal visé",
+                ),
               ),
-              SizedBox(height: 12),
-              _SubTitle("B) Le comportement incriminé"),
               _Paragraph(
-                "• Sévices graves : mauvais traitements d’une particulière gravité.\n"
-                "• Actes de cruauté : agissements destinés à faire souffrir, ou violences particulièrement odieuses (caractère volontaire).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00017",
+                  "L’infraction concerne un animal domestique, apprivoisé ou tenu en captivité.",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "C) Autres atteintes fréquentes (à qualifier selon les faits)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00018",
+                  "B) Le comportement incriminé",
+                ),
               ),
               _Paragraph(
-                "Selon la situation, d’autres qualifications peuvent s’ajouter :\n"
-                "• Atteinte volontaire à la vie d’un animal\n"
-                "• Atteinte involontaire à la vie ou à l’intégrité\n"
-                "• Atteintes sexuelles\n"
-                "• Abandon\n"
-                "• Expériences/recherches illicites\n"
-                "• Mauvais traitements (contraventions / délits selon les cas).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00019",
+                      "• Sévices graves : mauvais traitements d’une particulière gravité.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00020",
+                      "• Actes de cruauté : agissements destinés à faire souffrir, ou violences particulièrement odieuses (caractère volontaire).",
+                    ),
+              ),
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00021",
+                  "C) Autres atteintes fréquentes (à qualifier selon les faits)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00022",
+                      "Selon la situation, d’autres qualifications peuvent s’ajouter :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00023",
+                      "• Atteinte volontaire à la vie d’un animal\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00024",
+                      "• Atteinte involontaire à la vie ou à l’intégrité\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00025",
+                      "• Atteintes sexuelles\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00026",
+                      "• Abandon\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00027",
+                      "• Expériences/recherches illicites\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00028",
+                      "• Mauvais traitements (contraventions / délits selon les cas).",
+                    ),
               ),
             ],
           ),
@@ -207,15 +313,31 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00029",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les sévices graves et actes de cruauté supposent un comportement volontaire : "
-                "la conscience de maltraiter / faire souffrir l’animal est à caractériser par les constatations "
-                "(déclarations, contexte, traces, répétition, matériel, témoins, vidéos…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00030",
+                      "Les sévices graves et actes de cruauté supposent un comportement volontaire : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00031",
+                      "la conscience de maltraiter / faire souffrir l’animal est à caractériser par les constatations ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00032",
+                      "(déclarations, contexte, traces, répétition, matériel, témoins, vidéos…).",
+                    ),
               ),
             ],
           ),
@@ -224,33 +346,67 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Circonstances aggravantes (521-1)
           _ConditionCard(
-            title: "IV — Circonstances aggravantes (sévices / cruauté)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00033",
+              "IV — Circonstances aggravantes (sévices / cruauté)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Aggravations prévues par "),
                 TextSpan(
-                  text: "l’article 521-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00034",
+                    "Aggravations prévues par ",
                   ),
                 ),
-                TextSpan(text: " (selon les cas) :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00035",
+                    "l’article 521-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00036",
+                    " (selon les cas) :",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Animal détenu par un agent dans l’exercice d’une mission de service public.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00037",
+                  "Animal détenu par un agent dans l’exercice d’une mission de service public.",
+                ),
               ),
               _BulletPoint(
-                text: "Faits commis par le propriétaire ou le gardien.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00038",
+                  "Faits commis par le propriétaire ou le gardien.",
+                ),
               ),
-              _BulletPoint(text: "Faits commis en présence d’un mineur."),
               _BulletPoint(
-                text: "Faits ayant entraîné la mort de l’animal.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00039",
+                  "Faits commis en présence d’un mineur.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00040",
+                  "Faits ayant entraîné la mort de l’animal.",
+                ),
               ),
             ],
           ),
@@ -259,21 +415,41 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Tentative & complicité (spécificités utiles)
           _ConditionCard(
-            title: "V — Tentative & complicité (points clés)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00041",
+              "V — Tentative & complicité (points clés)",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
-                title: "Complicité (images)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00042",
+                  "Complicité (images)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Enregistrer sciemment des images de sévices graves / actes de cruauté ou d’atteintes sexuelles sur un animal peut constituer un acte de complicité, "
-                        "sauf si l’enregistrement vise un débat public d’intérêt général ou sert de preuve en justice : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                          "f00043",
+                          "Enregistrer sciemment des images de sévices graves / actes de cruauté ou d’atteintes sexuelles sur un animal peut constituer un acte de complicité, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                          "f00044",
+                          "sauf si l’enregistrement vise un débat public d’intérêt général ou sert de preuve en justice : ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article 521-1-2 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00045",
+                      "article 521-1-2 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -285,15 +461,19 @@ class MaltraitanceAnimalePage extends StatelessWidget {
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Diffusion sur internet de ces images : délit prévu par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00046",
+                    "Diffusion sur internet de ces images : délit prévu par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 521-1-2 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00047",
+                    "l’article 521-1-2 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -304,60 +484,102 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Panorama des infractions + références (super utile sur le terrain)
           _ConditionCard(
-            title: "VI — Panorama des principales infractions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00048",
+              "VI — Panorama des principales infractions",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Atteintes à la vie"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00049",
+                  "Atteintes à la vie",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Atteinte volontaire à la vie : "),
                 TextSpan(
-                  text: "article 522-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00050",
+                    "Atteinte volontaire à la vie : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00051",
+                    "article 522-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Atteinte involontaire (contravention) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00052",
+                    "Atteinte involontaire (contravention) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 653-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00053",
+                    "article R. 653-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Atteintes sexuelles / sollicitations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00054",
+                  "Atteintes sexuelles / sollicitations",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Atteinte sexuelle sur animal : "),
                 TextSpan(
-                  text: "article 521-1-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00055",
+                    "Atteinte sexuelle sur animal : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00056",
+                    "article 521-1-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "Proposition / sollicitation : "),
                 TextSpan(
-                  text: "article 521-1-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00057",
+                    "Proposition / sollicitation : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00058",
+                    "article 521-1-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -365,87 +587,137 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
               _SubTitle("Abandon"),
               _Paragraph.rich([
-                TextSpan(text: "Abandon volontaire : "),
                 TextSpan(
-                  text: "article 521-1 alinéa 13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00059",
+                    "Abandon volontaire : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00060",
+                    "article 521-1 alinéa 13 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Abandon exposant à un risque immédiat/imminent de mort : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00061",
+                    "Abandon exposant à un risque immédiat/imminent de mort : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 521-1 alinéa 15 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00062",
+                    "article 521-1 alinéa 15 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Expériences / recherches"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00063",
+                  "Expériences / recherches",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Expériences/recherches sans prescriptions : ",
-                ),
-                TextSpan(
-                  text: "article 521-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00064",
+                    "Expériences/recherches sans prescriptions : ",
                   ),
                 ),
-                TextSpan(text: " (renvoi CRPM)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00065",
+                    "article 521-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00066",
+                    " (renvoi CRPM).",
+                  ),
+                ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Mauvais traitements (contraventions / délits)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00067",
+                  "Mauvais traitements (contraventions / délits)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Mauvais traitements (contravention) : "),
                 TextSpan(
-                  text: "article R. 654-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00068",
+                    "Mauvais traitements (contravention) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00069",
+                    "article R. 654-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Manquements du gardien/détenteur (nourriture, soins, habitat…) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00070",
+                    "Manquements du gardien/détenteur (nourriture, soins, habitat…) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 215-4 du CRPM",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00071",
+                    "article R. 215-4 du CRPM",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Mauvais traitements par un professionnel : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00072",
+                    "Mauvais traitements par un professionnel : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 215-11 du CRPM",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00073",
+                    "article L. 215-11 du CRPM",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -456,15 +728,31 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Obligations détenteurs (chiens/chats/furets)
           _ConditionCard(
-            title: "VII — Obligations (chiens, chats, furets)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00074",
+              "VII — Obligations (chiens, chats, furets)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "• Depuis le 01/10/2022, l’acquéreur d’un animal de compagnie doit signer un certificat d’engagement et de connaissance.\n"
-                "• L’identification des chiens, chats et furets et l’inscription au fichier national sont obligatoires.\n"
-                "• En cession : remise des documents (cession, identification, certificat vétérinaire selon cas).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00075",
+                      "• Depuis le 01/10/2022, l’acquéreur d’un animal de compagnie doit signer un certificat d’engagement et de connaissance.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00076",
+                      "• L’identification des chiens, chats et furets et l’inscription au fichier national sont obligatoires.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00077",
+                      "• En cession : remise des documents (cession, identification, certificat vétérinaire selon cas).",
+                    ),
               ),
             ],
           ),
@@ -473,36 +761,59 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Mesures de protection + saisies + CPP 99-1
           _ConditionCard(
-            title: "VIII — Mesures de protection & intervention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00078",
+              "VIII — Mesures de protection & intervention",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Pouvoirs CRPM (protection animale)"),
-              _BulletPoint(
-                text:
-                    "Accès aux locaux/installations où se trouvent des animaux (hors domiciles) entre 8h et 20h (ou si accès public/activité en cours).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00079",
+                  "Pouvoirs CRPM (protection animale)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ouverture et contrôle de véhicules professionnels transportant des animaux (jour/nuit) et, en cas de danger vital, ouverture de tout véhicule.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00080",
+                  "Accès aux locaux/installations où se trouvent des animaux (hors domiciles) entre 8h et 20h (ou si accès public/activité en cours).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00081",
+                  "Ouverture et contrôle de véhicules professionnels transportant des animaux (jour/nuit) et, en cas de danger vital, ouverture de tout véhicule.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Sur instructions du procureur, dans l’attente d’une mesure judiciaire prévue par ",
-                ),
-                TextSpan(
-                  text: "l’article 99-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00082",
+                    "Sur instructions du procureur, dans l’attente d’une mesure judiciaire prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ", possibilité de saisie/retrait et de confier l’animal à un tiers (association/fondation…).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00083",
+                    "l’article 99-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00084",
+                    ", possibilité de saisie/retrait et de confier l’animal à un tiers (association/fondation…).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -510,26 +821,37 @@ class MaltraitanceAnimalePage extends StatelessWidget {
                 title: "Frais",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les frais de garde sont en principe à la charge du propriétaire/détenteur (sauf décision contraire du magistrat).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00085",
+                      "Les frais de garde sont en principe à la charge du propriétaire/détenteur (sauf décision contraire du magistrat).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "En urgence, l’état de nécessité peut être invoqué : ",
-                ),
-                TextSpan(
-                  text: "article 122-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00086",
+                    "En urgence, l’état de nécessité peut être invoqué : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (ex. bris de vitre pour extraire un chien enfermé en plein soleil, propriétaire injoignable).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00087",
+                    "article 122-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00088",
+                    " (ex. bris de vitre pour extraire un chien enfermé en plein soleil, propriétaire injoignable).",
+                  ),
                 ),
               ]),
             ],
@@ -539,39 +861,67 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Divagation
           _ConditionCard(
-            title: "IX — Divagation (points terrain)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00089",
+              "IX — Divagation (points terrain)",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il est interdit de laisser divaguer les animaux domestiques et les animaux sauvages apprivoisés ou tenus en captivité.\n\n"
-                "Chien divagant (hors chasse/garde/protection troupeau) : plus sous surveillance, hors portée de voix/rappel, éloigné de plus de 100 m, ou abandonné.\n\n"
-                "Chat divagant : non identifié à plus de 200 m des habitations, ou à plus de 1 000 m du domicile sans surveillance, ou propriétaire inconnu saisi sur la voie publique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00090",
+                      "Il est interdit de laisser divaguer les animaux domestiques et les animaux sauvages apprivoisés ou tenus en captivité.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00091",
+                      "Chien divagant (hors chasse/garde/protection troupeau) : plus sous surveillance, hors portée de voix/rappel, éloigné de plus de 100 m, ou abandonné.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                      "f00092",
+                      "Chat divagant : non identifié à plus de 200 m des habitations, ou à plus de 1 000 m du domicile sans surveillance, ou propriétaire inconnu saisi sur la voie publique.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Divagation d’un animal dangereux (contravention) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00093",
+                    "Divagation d’un animal dangereux (contravention) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 622-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00094",
+                    "article R. 622-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "Amende forfaitaire possible : "),
                 TextSpan(
-                  text: "article R. 48-1 (7°) du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00095",
+                    "Amende forfaitaire possible : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                    "f00096",
+                    "article R. 48-1 (7°) du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -582,26 +932,42 @@ class MaltraitanceAnimalePage extends StatelessWidget {
 
           // ✅ Partenaires (utile)
           _ConditionCard(
-            title: "X — Partenaires utiles",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+              "f00097",
+              "X — Partenaires utiles",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "DDPP : services vétérinaires (surveillance sanitaire & protection animale).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00098",
+                  "DDPP : services vétérinaires (surveillance sanitaire & protection animale).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "SPA : enquêtes / appui (contacts selon circuits locaux).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00099",
+                  "SPA : enquêtes / appui (contacts selon circuits locaux).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Associations de protection animale (ex. fondations/associations reconnues) pour mise en dépôt.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00100",
+                  "Associations de protection animale (ex. fondations/associations reconnues) pour mise en dépôt.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "30 millions d’amis / associations locales : signalements, orientations, dépôts.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/animal/maltraitance_animale_page.dart",
+                  "f00101",
+                  "30 millions d’amis / associations locales : signalements, orientations, dépôts.",
+                ),
               ),
             ],
           ),

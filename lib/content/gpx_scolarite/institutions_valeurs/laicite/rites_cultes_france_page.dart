@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RitesCultesFrancePage extends StatelessWidget {
   const RitesCultesFrancePage({super.key});
@@ -64,10 +65,18 @@ class RitesCultesFrancePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Laïcité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+            "f00002",
+            "Laïcité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -82,7 +91,11 @@ class RitesCultesFrancePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les principaux rites et pratiques des cultes en France",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+              "f00003",
+              "Les principaux rites et pratiques des cultes en France",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -94,35 +107,70 @@ class RitesCultesFrancePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (comme demandé)
           _ConditionCard(
-            title: "I — Cadre légal de la laïcité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+              "f00004",
+              "I — Cadre légal de la laïcité",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Principe constitutionnel — "),
                 TextSpan(
-                  text: "article 1er de la Constitution du 4 octobre 1958",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                    "f00005",
+                    "Principe constitutionnel — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                    "f00006",
+                    "article 1er de la Constitution du 4 octobre 1958",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : « La France est une République indivisible, laïque, démocratique et sociale… Elle respecte toutes les croyances. »",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                    "f00007",
+                    " : « La France est une République indivisible, laïque, démocratique et sociale… Elle respecte toutes les croyances. »",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Séparation des Églises et de l’État — "),
                 TextSpan(
-                  text: "loi du 9 décembre 1905",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                    "f00008",
+                    "Séparation des Églises et de l’État — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                    "f00009",
+                    "loi du 9 décembre 1905",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                "« La République assure la liberté de conscience. Elle garantit le libre exercice des cultes "
-                "sous les seules restrictions édictées ci-après dans l’intérêt de l’ordre public. »",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00010",
+                      "« La République assure la liberté de conscience. Elle garantit le libre exercice des cultes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00011",
+                      "sous les seules restrictions édictées ci-après dans l’intérêt de l’ordre public. »",
+                    ),
               ),
             ],
           ),
@@ -131,34 +179,71 @@ class RitesCultesFrancePage extends StatelessWidget {
 
           // Contexte institutionnel + posture du policier
           _ConditionCard(
-            title: "Repères institutionnels & posture professionnelle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+              "f00012",
+              "Repères institutionnels & posture professionnelle",
+            ),
             cardColor: cardCadre,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Rattaché au ministère de l’Intérieur, le bureau central des cultes est l’interlocuteur traditionnel "
-                "des institutions religieuses dans leurs relations avec l’État. Il prépare les textes et actes administratifs "
-                "relatifs aux associations cultuelles et aux congrégations, et assure l’expertise juridique interministérielle "
-                "sur les questions relatives aux cultes, à la liberté religieuse et à la laïcité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00013",
+                      "Rattaché au ministère de l’Intérieur, le bureau central des cultes est l’interlocuteur traditionnel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00014",
+                      "des institutions religieuses dans leurs relations avec l’État. Il prépare les textes et actes administratifs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00015",
+                      "relatifs aux associations cultuelles et aux congrégations, et assure l’expertise juridique interministérielle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00016",
+                      "sur les questions relatives aux cultes, à la liberté religieuse et à la laïcité.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le policier accorde la même attention et le même respect à toute personne et n’établit aucune distinction discriminatoire au sens de ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00017",
+                      "Le policier accorde la même attention et le même respect à toute personne et n’établit aucune distinction discriminatoire au sens de ",
+                    ),
                   ),
                   TextSpan(
-                    text: "l’article 225-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00018",
+                      "l’article 225-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " (voir également "),
                   TextSpan(
-                    text: "article R. 434-11 du Code de la sécurité intérieure",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00019",
+                      " (voir également ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                      "f00020",
+                      "article R. 434-11 du Code de la sécurité intérieure",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -174,84 +259,171 @@ class RitesCultesFrancePage extends StatelessWidget {
 
           // I. Rite catholique romain
           _ConditionCard(
-            title: "II — Rite catholique romain",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+              "f00021",
+              "II — Rite catholique romain",
+            ),
             cardColor: cardCath,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Écrits sacrés"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00022",
+                  "Écrits sacrés",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Conception chrétienne fondée sur l’Ancien et le Nouveau Testament.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00023",
+                  "Conception chrétienne fondée sur l’Ancien et le Nouveau Testament.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Pratiques religieuses"),
-              _BulletPoint(
-                text:
-                    "Prière et messe : lecture et méditation de la Parole de Dieu.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00024",
+                  "Pratiques religieuses",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Confession : démarche de réconciliation avec Dieu et avec l’Église.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00025",
+                  "Prière et messe : lecture et méditation de la Parole de Dieu.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Baptême : marque l’entrée dans l’Église chrétienne ; l’eau est versée sur le front de l’enfant en le nommant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00026",
+                  "Confession : démarche de réconciliation avec Dieu et avec l’Église.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00027",
+                  "Baptême : marque l’entrée dans l’Église chrétienne ; l’eau est versée sur le front de l’enfant en le nommant.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Fêtes religieuses"),
-              _BulletPoint(
-                text: "Noël, Rameaux, Pâques, Ascension, Pentecôte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00028",
+                  "Fêtes religieuses",
+                ),
               ),
-              _BulletPoint(text: "Autres : Épiphanie, Assomption, Toussaint."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00029",
+                  "Noël, Rameaux, Pâques, Ascension, Pentecôte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00030",
+                  "Autres : Épiphanie, Assomption, Toussaint.",
+                ),
+              ),
 
               SizedBox(height: 10),
 
               _SubTitle("Nourriture"),
               _BulletPoint(
-                text:
-                    "Pas de prescriptions générales. Carême (40 jours avant Pâques) : pénitence, prière, partage, parfois jeûne ou abstinence.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00031",
+                  "Pas de prescriptions générales. Carême (40 jours avant Pâques) : pénitence, prière, partage, parfois jeûne ou abstinence.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Signification de la mort"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00032",
+                  "Signification de la mort",
+                ),
+              ),
               _Paragraph(
-                "Entrée dans la plénitude de la vie nouvelle du Royaume de Dieu. Prière et lecture biblique rappellent l’espérance en la grâce de Dieu.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00033",
+                  "Entrée dans la plénitude de la vie nouvelle du Royaume de Dieu. Prière et lecture biblique rappellent l’espérance en la grâce de Dieu.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Rites de fin de vie"),
-              _BulletPoint(
-                text:
-                    "Onction des malades : sacrement donné lorsque la personne se sent menacée par la maladie.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00034",
+                  "Rites de fin de vie",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Viatique : eucharistie donnée à un mourant, dernière participation sacramentelle avant l’incorporation définitive au Christ.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00035",
+                  "Onction des malades : sacrement donné lorsque la personne se sent menacée par la maladie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00036",
+                  "Viatique : eucharistie donnée à un mourant, dernière participation sacramentelle avant l’incorporation définitive au Christ.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Funérailles"),
-              _BulletPoint(
-                text:
-                    "Lorsque possible : respect d’environ trois jours de veille avant l’inhumation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00037",
+                  "Funérailles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pendant l’office : fleurs, bougies, prières (dimension spirituelle : illumination et éclosion de l’âme).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00038",
+                  "Lorsque possible : respect d’environ trois jours de veille avant l’inhumation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00039",
+                  "Pendant l’office : fleurs, bougies, prières (dimension spirituelle : illumination et éclosion de l’âme).",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle("Autopsie"),
-              _BulletPoint(text: "Pas d’obstacle doctrinal."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00040",
+                  "Pas d’obstacle doctrinal.",
+                ),
+              ),
             ],
           ),
 
@@ -259,89 +431,195 @@ class RitesCultesFrancePage extends StatelessWidget {
 
           // II. Rite musulman
           _ConditionCard(
-            title: "III — Rite musulman",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+              "f00041",
+              "III — Rite musulman",
+            ),
             cardColor: cardIslam,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Branches principales"),
-              _BulletPoint(text: "Sunnisme (majoritaire) et chiisme."),
-
-              SizedBox(height: 10),
-
-              _SubTitle("Écrits sacrés & organisation"),
-              _BulletPoint(text: "Coran : transcription de la pensée divine."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00042",
+                  "Branches principales",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Absence de clergé/hiérarchie : tout musulman peut diriger la prière (imam).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00043",
+                  "Sunnisme (majoritaire) et chiisme.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Les cinq piliers de l’Islam"),
-              _BulletPoint(
-                text:
-                    "Profession de foi (chahada) : « Il n’y a pas d’autre divinité que Dieu (Allah) ; Mahomet est son prophète. »",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00044",
+                  "Écrits sacrés & organisation",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prière (salat) : cinq fois par jour, tournée vers l’Orient (direction de La Mecque).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00045",
+                  "Coran : transcription de la pensée divine.",
+                ),
               ),
-              _BulletPoint(text: "Aumône (zakat)."),
-              _BulletPoint(text: "Jeûne du Ramadan."),
               _BulletPoint(
-                text:
-                    "Pèlerinage à La Mecque (hajj) : au moins une fois si possible.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00046",
+                  "Absence de clergé/hiérarchie : tout musulman peut diriger la prière (imam).",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Fêtes & saisons"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00047",
+                  "Les cinq piliers de l’Islam",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "1er Muharram, Achoura, Mouloud (naissance du prophète), Ramadan, Nuit du Destin (Lailat-Al-Qadr), Aïd-El-Fitr, Aïd el-Kébir.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00048",
+                  "Profession de foi (chahada) : « Il n’y a pas d’autre divinité que Dieu (Allah) ; Mahomet est son prophète. »",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00049",
+                  "Prière (salat) : cinq fois par jour, tournée vers l’Orient (direction de La Mecque).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00050",
+                  "Aumône (zakat).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00051",
+                  "Jeûne du Ramadan.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00052",
+                  "Pèlerinage à La Mecque (hajj) : au moins une fois si possible.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00053",
+                  "Fêtes & saisons",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00054",
+                  "1er Muharram, Achoura, Mouloud (naissance du prophète), Ramadan, Nuit du Destin (Lailat-Al-Qadr), Aïd-El-Fitr, Aïd el-Kébir.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle("Naissance"),
               _BulletPoint(
-                text:
-                    "Rites et signification ; circoncision rituelle des garçons.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00055",
+                  "Rites et signification ; circoncision rituelle des garçons.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle("Nourriture"),
-              _BulletPoint(text: "Interdiction : porc et alcool."),
               _BulletPoint(
-                text:
-                    "Viande halal : animaux autorisés abattus selon le rite musulman.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00056",
+                  "Interdiction : porc et alcool.",
+                ),
               ),
               _BulletPoint(
-                text: "Ramadan : jeûne du lever au coucher du soleil.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00057",
+                  "Viande halal : animaux autorisés abattus selon le rite musulman.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00058",
+                  "Ramadan : jeûne du lever au coucher du soleil.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Signification de la mort"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00059",
+                  "Signification de la mort",
+                ),
+              ),
               _Paragraph(
-                "La vie présente est une épreuve de préparation à l’au-delà : séparation du corps et de l’âme.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00060",
+                  "La vie présente est une épreuve de préparation à l’au-delà : séparation du corps et de l’âme.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Funérailles"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00061",
+                  "Funérailles",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Le plus rapidement possible. Rite pouvant inclure le jet de terre sur le cercueil (ou le linceul) avec récitation de prières.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00062",
+                  "Le plus rapidement possible. Rite pouvant inclure le jet de terre sur le cercueil (ou le linceul) avec récitation de prières.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle("Autopsie"),
               _BulletPoint(
-                text: "Interprétations variables selon les sources.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00063",
+                  "Interprétations variables selon les sources.",
+                ),
               ),
             ],
           ),
@@ -350,86 +628,192 @@ class RitesCultesFrancePage extends StatelessWidget {
 
           // III. Rite juif
           _ConditionCard(
-            title: "IV — Rite juif",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+              "f00064",
+              "IV — Rite juif",
+            ),
             cardColor: cardJuda,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Écrits sacrés"),
-              _BulletPoint(text: "Torah (Ancien Testament hébreu)."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00065",
+                  "Écrits sacrés",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00066",
+                  "Torah (Ancien Testament hébreu).",
+                ),
+              ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Pratiques religieuses"),
-              _BulletPoint(
-                text:
-                    "Lecture quotidienne de la Torah (notamment les psaumes).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00067",
+                  "Pratiques religieuses",
+                ),
               ),
-              _BulletPoint(text: "Kippa : marque de respect envers Dieu."),
               _BulletPoint(
-                text:
-                    "Chabbat : du vendredi soir au samedi soir (cesser le travail ; certains comportements interdits).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00068",
+                  "Lecture quotidienne de la Torah (notamment les psaumes).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00069",
+                  "Kippa : marque de respect envers Dieu.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00070",
+                  "Chabbat : du vendredi soir au samedi soir (cesser le travail ; certains comportements interdits).",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Fêtes & saisons"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00071",
+                  "Fêtes & saisons",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Pourim, Pésa’h, Chavouot, Roch Hachana, Yom Kippour, Souccot, Chemini Atseret, Sim’hat Tora, Hanoucca.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00072",
+                  "Pourim, Pésa’h, Chavouot, Roch Hachana, Yom Kippour, Souccot, Chemini Atseret, Sim’hat Tora, Hanoucca.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle("Naissance"),
               _BulletPoint(
-                text:
-                    "Mariage mixte : la religion de l’enfant est déterminée par la mère.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00073",
+                  "Mariage mixte : la religion de l’enfant est déterminée par la mère.",
+                ),
               ),
-              _BulletPoint(text: "Circoncision rituelle des garçons."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00074",
+                  "Circoncision rituelle des garçons.",
+                ),
+              ),
 
               SizedBox(height: 10),
 
               _SubTitle("Nourriture"),
               _BulletPoint(
-                text:
-                    "Kasher : abattage rituel (shehita) ; interdiction de consommer certains animaux et le sang.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00075",
+                  "Kasher : abattage rituel (shehita) ; interdiction de consommer certains animaux et le sang.",
+                ),
               ),
-              _BulletPoint(text: "Pas de porc, charcuterie ou saindoux."),
               _BulletPoint(
-                text:
-                    "Séparation laitages/viandes (jamais servis au même repas).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00076",
+                  "Pas de porc, charcuterie ou saindoux.",
+                ),
               ),
-              _BulletPoint(text: "Jeûne absolu le jour de Yom Kippour."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00077",
+                  "Séparation laitages/viandes (jamais servis au même repas).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00078",
+                  "Jeûne absolu le jour de Yom Kippour.",
+                ),
+              ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Signification de la mort"),
-              _BulletPoint(text: "Séjour des morts : le Chéol."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00079",
+                  "Signification de la mort",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00080",
+                  "Séjour des morts : le Chéol.",
+                ),
+              ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Fin de vie & obsèques"),
-              _BulletPoint(
-                text:
-                    "La famille ne doit pas quitter le malade, surtout au moment de l’agonie.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00081",
+                  "Fin de vie & obsèques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Interdit de toucher le mourant (image de la bougie vacillante). Le corps doit être soigneusement recouvert.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00082",
+                  "La famille ne doit pas quitter le malade, surtout au moment de l’agonie.",
+                ),
               ),
               _BulletPoint(
-                text: "Obsèques religieuses : le plus rapidement possible.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00083",
+                  "Interdit de toucher le mourant (image de la bougie vacillante). Le corps doit être soigneusement recouvert.",
+                ),
               ),
               _BulletPoint(
-                text: "Funérailles simples : sans fleurs ni ornements.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00084",
+                  "Obsèques religieuses : le plus rapidement possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00085",
+                  "Funérailles simples : sans fleurs ni ornements.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle("Autopsie"),
               _BulletPoint(
-                text: "Interdite (l’avis médical est à considérer).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00086",
+                  "Interdite (l’avis médical est à considérer).",
+                ),
               ),
             ],
           ),
@@ -438,68 +822,156 @@ class RitesCultesFrancePage extends StatelessWidget {
 
           // IV. Rite protestant
           _ConditionCard(
-            title: "V — Rite protestant",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+              "f00087",
+              "V — Rite protestant",
+            ),
             cardColor: cardProt,
             accent: accentSteel,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Écrits sacrés"),
-              _BulletPoint(text: "Ancien et Nouveau Testament."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00088",
+                  "Écrits sacrés",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00089",
+                  "Ancien et Nouveau Testament.",
+                ),
+              ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Pratiques religieuses"),
-              _BulletPoint(
-                text: "Prière, lecture de la Bible, culte dominical.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00090",
+                  "Pratiques religieuses",
+                ),
               ),
-              _BulletPoint(text: "Participation à la Sainte-Cène."),
               _BulletPoint(
-                text:
-                    "Baptême unique : possible dans l’enfance ou à l’âge adulte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00091",
+                  "Prière, lecture de la Bible, culte dominical.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00092",
+                  "Participation à la Sainte-Cène.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00093",
+                  "Baptême unique : possible dans l’enfance ou à l’âge adulte.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Fêtes & saisons"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00094",
+                  "Fêtes & saisons",
+                ),
+              ),
               _BulletPoint(
-                text: "Noël, Pâques, Ascension, Pentecôte, fête de la Trinité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00095",
+                  "Noël, Pâques, Ascension, Pentecôte, fête de la Trinité.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle("Nourriture"),
               _BulletPoint(
-                text:
-                    "Pas de prescriptions particulières. Le repas partagé peut symboliser la communion ; la nourriture est un don du Créateur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00096",
+                  "Pas de prescriptions particulières. Le repas partagé peut symboliser la communion ; la nourriture est un don du Créateur.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Signification de la mort"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00097",
+                  "Signification de la mort",
+                ),
+              ),
               _Paragraph(
-                "Espérance de la vie éternelle : découverte d’une plénitude nouvelle, passage auprès de Dieu. Prière et lecture biblique renforcent l’espérance.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00098",
+                  "Espérance de la vie éternelle : découverte d’une plénitude nouvelle, passage auprès de Dieu. Prière et lecture biblique renforcent l’espérance.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Fin de vie"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00099",
+                  "Fin de vie",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Accompagnement par lectures bibliques et prières ; un proche peut faire fonction de pasteur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00100",
+                  "Accompagnement par lectures bibliques et prières ; un proche peut faire fonction de pasteur.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Funérailles"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00101",
+                  "Funérailles",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Centrées sur la prédication de l’Évangile (promesse de résurrection). Enterrement simple et respectueux (verset biblique + prières).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00102",
+                  "Centrées sur la prédication de l’Évangile (promesse de résurrection). Enterrement simple et respectueux (verset biblique + prières).",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Autopsie & incinération"),
-              _BulletPoint(text: "Pas d’obstacle doctrinal."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00103",
+                  "Autopsie & incinération",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                  "f00104",
+                  "Pas d’obstacle doctrinal.",
+                ),
+              ),
             ],
           ),
 
@@ -511,9 +983,15 @@ class RitesCultesFrancePage extends StatelessWidget {
             cardColor: cardInfos,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Mis à jour le "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/laicite/rites_cultes_france_page.dart",
+                    "f00105",
+                    "Mis à jour le ",
+                  ),
+                ),
                 TextSpan(
                   text: "13/03/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
@@ -774,9 +1252,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

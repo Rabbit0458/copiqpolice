@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class BraceletMaisonContenuPage extends StatelessWidget {
   const BraceletMaisonContenuPage({super.key});
@@ -25,10 +26,18 @@ class BraceletMaisonContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Assignation à résidence – Bracelet",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+            "f00002",
+            "Assignation à résidence – Bracelet",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class BraceletMaisonContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Assignation à résidence avec surveillance électronique\n(« bracelet à la maison »)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+              "f00003",
+              "Assignation à résidence avec surveillance électronique\n(« bracelet à la maison »)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,9 +66,21 @@ class BraceletMaisonContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Conditions de mise en œuvre de l’assignation à résidence, "
-            "modalités concrètes du placement sous surveillance électronique "
-            "(bracelet) et déroulement pratique de la mesure au quotidien.",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00004",
+                  "Conditions de mise en œuvre de l’assignation à résidence, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00005",
+                  "modalités concrètes du placement sous surveillance électronique ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00006",
+                  "(bracelet) et déroulement pratique de la mesure au quotidien.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -69,10 +94,22 @@ class BraceletMaisonContenuPage extends StatelessWidget {
           // ================= MODULE 1 — CONDITIONS DE MISE EN ŒUVRE ============
           _ModuleCard(
             tag: 'pp_assignation_residence_conditions',
-            title: "Conditions de mise en œuvre de l'assignation à résidence",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+              "f00007",
+              "Conditions de mise en œuvre de l'assignation à résidence",
+            ),
             subtitle:
-                "Infractions concernées, critères de recours, décision du juge, "
-                "articulation avec le contrôle judiciaire et la détention provisoire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00008",
+                  "Infractions concernées, critères de recours, décision du juge, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00009",
+                  "articulation avec le contrôle judiciaire et la détention provisoire.",
+                ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -86,10 +123,22 @@ class BraceletMaisonContenuPage extends StatelessWidget {
           // ========== MODULE 2 — MODALITÉS DU PLACEMENT SOUS SE ============
           _ModuleCard(
             tag: 'pp_bracelet_modalites_placement',
-            title: "Modalités du placement sous surveillance électronique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+              "f00010",
+              "Modalités du placement sous surveillance électronique",
+            ),
             subtitle:
-                "Mise en place du bracelet, aspects techniques et matériels, "
-                "périmètre autorisé, contrôle des horaires et rôle des différents acteurs.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00011",
+                  "Mise en place du bracelet, aspects techniques et matériels, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00012",
+                  "périmètre autorisé, contrôle des horaires et rôle des différents acteurs.",
+                ),
             imagePath: 'assets/images/bracelet.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -103,10 +152,22 @@ class BraceletMaisonContenuPage extends StatelessWidget {
           // ================= MODULE 3 — DÉROULEMENT DE LA MESURE ==============
           _ModuleCard(
             tag: 'pp_bracelet_deroulement_mesure',
-            title: 'Déroulement de la mesure',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+              "f00013",
+              'Déroulement de la mesure',
+            ),
             subtitle:
-                "Vie quotidienne sous bracelet, contrôles, incidents, manquements, "
-                "révocation, conversion en détention et fin de la mesure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00014",
+                  "Vie quotidienne sous bracelet, contrôles, incidents, manquements, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+                  "f00015",
+                  "révocation, conversion en détention et fin de la mesure.",
+                ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -120,9 +181,16 @@ class BraceletMaisonContenuPage extends StatelessWidget {
           // ================= MODULE 7 — QUIZ =================
           _ModuleCard(
             tag: 'quiz_bracelet_electronique',
-            title: 'Quiz — Bracelet électronique',
-            subtitle:
-                'Testez votre maîtrise du déroulement de la mesure et des règles applicables au bracelet électronique.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+              "f00016",
+              'Quiz — Bracelet électronique',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/bracelet_contenu_page.dart",
+              "f00017",
+              'Testez votre maîtrise du déroulement de la mesure et des règles applicables au bracelet électronique.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -178,7 +246,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

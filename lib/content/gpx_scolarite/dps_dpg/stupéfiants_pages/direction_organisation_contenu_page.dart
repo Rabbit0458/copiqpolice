@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class StupefiantsDirectionOrganisationPage extends StatelessWidget {
   const StupefiantsDirectionOrganisationPage({super.key});
@@ -66,10 +67,18 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La direction ou l’organisation\nd’un trafic de stupéfiants",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+              "f00003",
+              "La direction ou l’organisation\nd’un trafic de stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,15 +109,31 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de diriger ou d’organiser un groupement ayant pour objet la production, la fabrication, "
-                "l’importation, l’exportation, le transport, la détention, l’offre, la cession, l’acquisition ou l’emploi "
-                "illicites de stupéfiants constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00005",
+                      "Le fait de diriger ou d’organiser un groupement ayant pour objet la production, la fabrication, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00006",
+                      "l’importation, l’exportation, le transport, la détention, l’offre, la cession, l’acquisition ou l’emploi ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00007",
+                      "illicites de stupéfiants constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -113,16 +142,29 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("Article 222-34 alinéa 1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : définit et réprime la direction ou l’organisation d’un trafic de stupéfiants.",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00009",
+                    "Article 222-34 alinéa 1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime la direction ou l’organisation d’un trafic de stupéfiants.",
+                  ),
                 ),
               ]),
             ],
@@ -132,57 +174,127 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Cette incrimination ne doit pas être confondue avec l’association de malfaiteurs en vue de préparer un trafic "
-                "de stupéfiants (infraction délictuelle).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00012",
+                      "Cette incrimination ne doit pas être confondue avec l’association de malfaiteurs en vue de préparer un trafic ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00013",
+                      "de stupéfiants (infraction délictuelle).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Différence essentielle :\n"
-                "• l’association de malfaiteurs peut être constituée alors même que le trafic n’a pas encore été réalisé ;\n"
-                "• ici, l’infraction suppose la commission effective d’un trafic de stupéfiants.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00014",
+                      "Différence essentielle :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00015",
+                      "• l’association de malfaiteurs peut être constituée alors même que le trafic n’a pas encore été réalisé ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00016",
+                      "• ici, l’infraction suppose la commission effective d’un trafic de stupéfiants.",
+                    ),
               ),
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "A) La direction ou l’organisation d’un groupement",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00017",
+                  "A) La direction ou l’organisation d’un groupement",
+                ),
               ),
-              const _Paragraph(
-                "Le « groupement » désigne un ensemble de personnes (et non la simple réunion de moyens matériels par un seul individu). "
-                "Il peut prendre n’importe quelle forme, y compris celle d’une société destinée à dissimuler la nature exacte de l’activité.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00018",
+                      "Le « groupement » désigne un ensemble de personnes (et non la simple réunion de moyens matériels par un seul individu). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00019",
+                      "Il peut prendre n’importe quelle forme, y compris celle d’une société destinée à dissimuler la nature exacte de l’activité.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Il requiert une structuration minimale : l’infraction suppose qu’il est effectivement dirigé ou organisé. "
-                "La notion est voisine de l’association de malfaiteurs ou de la bande organisée.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00020",
+                      "Il requiert une structuration minimale : l’infraction suppose qu’il est effectivement dirigé ou organisé. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00021",
+                      "La notion est voisine de l’association de malfaiteurs ou de la bande organisée.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le seul fait d’être membre du groupement n’est pas réprimé au titre de cet article, "
-                        "sauf si l’intéressé fait partie de ceux qui le dirigent ou l’organisent.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                          "f00022",
+                          "Le seul fait d’être membre du groupement n’est pas réprimé au titre de cet article, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                          "f00023",
+                          "sauf si l’intéressé fait partie de ceux qui le dirigent ou l’organisent.",
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "B) Un groupement ayant pour but le trafic de stupéfiants",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00024",
+                  "B) Un groupement ayant pour but le trafic de stupéfiants",
+                ),
               ),
               _Paragraph.rich([
-                _lawSpan("Article 222-34 du Code pénal"),
-                const TextSpan(
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00025",
+                    "Article 222-34 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : vise les faits de production, fabrication, importation, exportation, transport, détention, offre, cession, "
-                      "acquisition ou emploi illicites de stupéfiants. Il s’agit des actes constitutifs d’un trafic.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                        "f00026",
+                        " : vise les faits de production, fabrication, importation, exportation, transport, détention, offre, cession, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                        "f00027",
+                        "acquisition ou emploi illicites de stupéfiants. Il s’agit des actes constitutifs d’un trafic.",
+                      ),
                 ),
               ]),
             ],
@@ -192,18 +304,34 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+              "f00028",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intention coupable est requise : l’auteur doit diriger ou organiser en connaissance de cause un groupement "
-                "ayant pour objet le trafic de stupéfiants.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00029",
+                      "L’intention coupable est requise : l’auteur doit diriger ou organiser en connaissance de cause un groupement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                      "f00030",
+                      "ayant pour objet le trafic de stupéfiants.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle peut être mise en évidence par les actes matériels accomplis, mais aussi par le profit tiré de ces actes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00031",
+                  "Elle peut être mise en évidence par les actes matériels accomplis, mais aussi par le profit tiré de ces actes.",
+                ),
               ),
             ],
           ),
@@ -212,13 +340,21 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+              "f00032",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est prévue pour cette incrimination.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00033",
+                  "Aucune circonstance aggravante spécifique n’est prévue pour cette incrimination.",
+                ),
               ),
             ],
           ),
@@ -227,72 +363,202 @@ class StupefiantsDirectionOrganisationPage extends StatelessWidget {
 
           // Répression + tentative/complicité + exemption/réduction
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+              "f00034",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                const TextSpan(text: "Qualification : "),
-                const TextSpan(text: "crime. "),
-                const TextSpan(text: "Peines principales : "),
-                const TextSpan(
-                  text:
-                      "réclusion criminelle à perpétuité et 7 500 000 € d’amende — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00035",
+                  "Peines encourues — personnes physiques",
                 ),
-                _lawSpan("article 222-34 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00036",
+                    "Qualification : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00037",
+                    "crime. ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00038",
+                    "Peines principales : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00039",
+                    "réclusion criminelle à perpétuité et 7 500 000 € d’amende — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00040",
+                    "article 222-34 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Période de sûreté : OUI."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00041",
+                  "Période de sûreté : OUI.",
+                ),
+              ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text: "La responsabilité des personnes morales est prévue à ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00042",
+                  "Personnes morales",
                 ),
-                _lawSpan("l’article 222-42 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00043",
+                    "La responsabilité des personnes morales est prévue à ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00044",
+                    "l’article 222-42 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
-                text:
-                    "Tentative : OUI (toujours punissable en matière de crime).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00045",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00046",
+                  "Tentative : OUI (toujours punissable en matière de crime).",
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément aux "),
-                _lawSpan("articles 121-6 et 121-7 du Code pénal"),
-                const TextSpan(
-                  text: " (aide et assistance, provocation, instructions).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00047",
+                    "Complicité : OUI — conformément aux ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00048",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00049",
+                    " (aide et assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                  "f00050",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : OUI — "),
-                _lawSpan("article 222-43 du Code pénal"),
-                const TextSpan(
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00051",
+                    "Réduction de peine : OUI — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00052",
+                    "article 222-43 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " (pour le cas de l’article 222-34 : la réclusion criminelle à perpétuité est ramenée à vingt ans si la personne avertit les autorités "
-                      "et permet de faire cesser les agissements et d’identifier les autres coupables).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                        "f00053",
+                        " (pour le cas de l’article 222-34 : la réclusion criminelle à perpétuité est ramenée à vingt ans si la personne avertit les autorités ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                        "f00054",
+                        "et permet de faire cesser les agissements et d’identifier les autres coupables).",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : OUI — "),
-                _lawSpan("article 222-43-1 du Code pénal"),
-                const TextSpan(
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00055",
+                    "Exemption de peine : OUI — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                    "f00056",
+                    "article 222-43-1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " (exempté si la personne avertit l’autorité administrative ou judiciaire, évite la réalisation de l’infraction et "
-                      "permet d’identifier les autres auteurs/complices).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                        "f00057",
+                        " (exempté si la personne avertit l’autorité administrative ou judiciaire, évite la réalisation de l’infraction et ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/direction_organisation_contenu_page.dart",
+                        "f00058",
+                        "permet d’identifier les autres auteurs/complices).",
+                      ),
                 ),
               ]),
             ],
@@ -549,9 +815,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

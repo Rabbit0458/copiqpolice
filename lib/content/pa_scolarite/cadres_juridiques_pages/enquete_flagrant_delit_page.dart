@@ -1,6 +1,7 @@
 // lib/pa/dps_dpg/cadres_juridiques_pages/enquete_flagrant_delit_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : Enquête de flagrant délit
 /// Route : /pa/dps_dpg/cadres_juridiques/enquete_flagrant_delit
@@ -23,7 +24,11 @@ class PaEnqueteFlagrantDelitPage extends StatelessWidget {
         surfaceTintColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          tooltip: "Retour",
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+            "f00001",
+            "Retour",
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
@@ -32,8 +37,16 @@ class PaEnqueteFlagrantDelitPage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            title: 'Enquête de flagrant délit',
-            subtitle: 'Actes immédiats · Pouvoirs renforcés · Urgence',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+              "f00002",
+              'Enquête de flagrant délit',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+              "f00003",
+              'Actes immédiats · Pouvoirs renforcés · Urgence',
+            ),
             image: 'assets/images/cadres_juridiques.jpeg',
             onPrimaryTap: () {},
           ),
@@ -41,104 +54,218 @@ class PaEnqueteFlagrantDelitPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
-                  title: 'Définition pratique',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00004",
+                    'Définition pratique',
+                  ),
                   child: Text(
-                    'La flagrance s’applique lorsque l’infraction se commet actuellement ou vient de se commettre. '
-                    'Elle confère aux OPJ des pouvoirs étendus pour agir vite, conserver la preuve et rechercher les auteurs.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00005",
+                          'La flagrance s’applique lorsque l’infraction se commet actuellement ou vient de se commettre. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00006",
+                          'Elle confère aux OPJ des pouvoirs étendus pour agir vite, conserver la preuve et rechercher les auteurs.',
+                        ),
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
                     'Urgence',
-                    'Pouvoirs renforcés',
-                    'Périmètre spatio-temporel',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                      "f00007",
+                      'Pouvoirs renforcés',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                      "f00008",
+                      'Périmètre spatio-temporel',
+                    ),
                     'GAV',
-                    'Perquisitions/saisies',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                      "f00009",
+                      'Perquisitions/saisies',
+                    ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Conditions de la flagrance',
-                  caption: 'Indices apparents & temporalité',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00010",
+                    'Conditions de la flagrance',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00011",
+                    'Indices apparents & temporalité',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _Bullet('Infraction en cours ou tout juste commise.'),
                       _Bullet(
-                        'Indices apparents d’un comportement infractionnel.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00012",
+                          'Infraction en cours ou tout juste commise.',
+                        ),
                       ),
                       _Bullet(
-                        'Périmètre de flagrance limité dans le temps et l’espace (se referme avec l’éloignement temporel).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00013",
+                          'Indices apparents d’un comportement infractionnel.',
+                        ),
+                      ),
+                      _Bullet(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00014",
+                          'Périmètre de flagrance limité dans le temps et l’espace (se referme avec l’éloignement temporel).',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Pouvoirs principaux',
-                  caption: 'Actes réalisables',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00015",
+                    'Pouvoirs principaux',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00016",
+                    'Actes réalisables',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Interpellations immédiates, GAV si conditions réunies.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00017",
+                          'Interpellations immédiates, GAV si conditions réunies.',
+                        ),
                       ),
                       _Bullet(
-                        'Perquisitions et saisies (cadre flagrant) avec formalités spécifiques.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00018",
+                          'Perquisitions et saisies (cadre flagrant) avec formalités spécifiques.',
+                        ),
                       ),
                       _Bullet(
-                        'Constatations, auditions rapides, sécurisation des lieux et personnes.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00019",
+                          'Constatations, auditions rapides, sécurisation des lieux et personnes.',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Réflexes opérationnels',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00020",
+                    'Réflexes opérationnels',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _ChecklistLine(
-                        'Justifier clairement le caractère flagrant (faits/horodatage).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00021",
+                          'Justifier clairement le caractère flagrant (faits/horodatage).',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Tracer les actes urgents et leur nécessité.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00022",
+                          'Tracer les actes urgents et leur nécessité.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Respecter les droits (GAV, perquisitions, scellés).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00023",
+                          'Respecter les droits (GAV, perquisitions, scellés).',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Basculer ensuite vers un cadre adapté si la flagrance cesse.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                          "f00024",
+                          'Basculer ensuite vers un cadre adapté si la flagrance cesse.',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00025",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'Enquête préliminaire',
-                  subtitle: 'Direction Procureur · Autorisations requises',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00026",
+                    'Enquête préliminaire',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00027",
+                    'Direction Procureur · Autorisations requises',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/enquete_preliminaire',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Autres cadres d’enquête',
-                  subtitle: 'JI · CR · Douanes · Spécialités',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00028",
+                    'Autres cadres d’enquête',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00029",
+                    'JI · CR · Douanes · Spécialités',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/autres_cadres_enquete',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Les cadres d’enquête (vue d’ensemble)',
-                  subtitle: 'Flagrance · Préliminaire · Autres',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00030",
+                    'Les cadres d’enquête (vue d’ensemble)',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                    "f00031",
+                    'Flagrance · Préliminaire · Autres',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/cadres_enquete',
                 ),
               ],
@@ -211,7 +338,13 @@ class _HeroHeader extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const _Badge(text: 'Cadres juridiques'),
+                    _Badge(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart",
+                        "f00032",
+                        'Cadres juridiques',
+                      ),
+                    ),
                     const SizedBox(height: 8),
                     Text(
                       title,

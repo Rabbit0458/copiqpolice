@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
   const PaStupefiantsBlanchimentProduitPage({super.key});
 
-  static const String routeName =
-      '/pa/dps_dpg/stupefiants/blanchiment_produit';
+  static const String routeName = '/pa/dps_dpg/stupefiants/blanchiment_produit';
 
   static const Color _lawRed = Color(0xFFE53935);
 
@@ -66,10 +66,18 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +92,11 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le blanchiment du produit\ndu trafic de stupéfiants",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+              "f00003",
+              "Le blanchiment du produit\ndu trafic de stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,15 +108,31 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une infraction le fait de faciliter, par tout moyen, la justification mensongère de l’origine "
-                "des biens ou des revenus de l’auteur d’une infraction de trafic de stupéfiants, ou d’apporter son concours "
-                "à une opération de placement, de dissimulation ou de conversion du produit de ces infractions.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00005",
+                      "Constitue une infraction le fait de faciliter, par tout moyen, la justification mensongère de l’origine ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00006",
+                      "des biens ou des revenus de l’auteur d’une infraction de trafic de stupéfiants, ou d’apporter son concours ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00007",
+                      "à une opération de placement, de dissimulation ou de conversion du produit de ces infractions.",
+                    ),
               ),
             ],
           ),
@@ -113,16 +141,29 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-38 alinéa 1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : définit et réprime le blanchiment du produit du trafic de stupéfiants.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00009",
+                    "Article 222-38 alinéa 1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime le blanchiment du produit du trafic de stupéfiants.",
+                  ),
                 ),
               ]),
             ],
@@ -132,104 +173,230 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Un agissement facilitant le blanchiment"),
-              const _Paragraph(
-                "L’infraction vise deux catégories d’agissements :\n"
-                "• faciliter une justification mensongère de l’origine des biens/revenus ;\n"
-                "• ou apporter son concours à des opérations de placement, dissimulation ou conversion.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00012",
+                  "A) Un agissement facilitant le blanchiment",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00013",
+                      "L’infraction vise deux catégories d’agissements :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00014",
+                      "• faciliter une justification mensongère de l’origine des biens/revenus ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00015",
+                      "• ou apporter son concours à des opérations de placement, dissimulation ou conversion.",
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "1) Faciliter, par un moyen frauduleux, une justification mensongère",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00016",
+                  "1) Faciliter, par un moyen frauduleux, une justification mensongère",
+                ),
               ),
-              const _Paragraph(
-                "Il s’agit d’une aide matérielle, pouvant être apportée par n’importe quel moyen "
-                "(exemples : fausses factures, fausses fiches de paie, reconnaissances de dettes, etc.).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00017",
+                      "Il s’agit d’une aide matérielle, pouvant être apportée par n’importe quel moyen ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00018",
+                      "(exemples : fausses factures, fausses fiches de paie, reconnaissances de dettes, etc.).",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "2) Apporter son concours à une opération de placement, dissimulation ou conversion",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00019",
+                  "2) Apporter son concours à une opération de placement, dissimulation ou conversion",
+                ),
               ),
-              const _Paragraph(
-                "Il s’agit principalement d’opérations bancaires ou financières. Des manquements aux obligations de vigilance "
-                "imposées à certains professionnels/établissements peuvent caractériser ces agissements répréhensibles.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00020",
+                      "Il s’agit principalement d’opérations bancaires ou financières. Des manquements aux obligations de vigilance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00021",
+                      "imposées à certains professionnels/établissements peuvent caractériser ces agissements répréhensibles.",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00022",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Exemple : alimentation d’un compte par versements en espèces/chèques et transferts à l’étranger sous couvert "
-                        "de mandats postaux — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                          "f00023",
+                          "Exemple : alimentation d’un compte par versements en espèces/chèques et transferts à l’étranger sous couvert ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                          "f00024",
+                          "de mandats postaux — ",
+                        ),
                   ),
-                  _law("Cass. crim., 23 octobre 1997"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00025",
+                      "Cass. crim., 23 octobre 1997",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "B) Sur des biens/revenus issus du « trafic » de stupéfiants",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00026",
+                  "B) Sur des biens/revenus issus du « trafic » de stupéfiants",
+                ),
               ),
-              const _Paragraph(
-                "Le blanchiment vise le produit des infractions de trafic suivantes (infractions d’origine) :",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00027",
+                  "Le blanchiment vise le produit des infractions de trafic suivantes (infractions d’origine) :",
+                ),
               ),
               const SizedBox(height: 8),
 
               _Paragraph.rich([
-                _law("Article 222-34 du Code pénal"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00028",
+                    "Article 222-34 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : diriger ou organiser un groupement ayant pour objet la production, fabrication, importation, exportation, "
-                      "transport, détention, offre, cession, acquisition ou emploi illicites de stupéfiants.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00029",
+                        " : diriger ou organiser un groupement ayant pour objet la production, fabrication, importation, exportation, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00030",
+                        "transport, détention, offre, cession, acquisition ou emploi illicites de stupéfiants.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _law("Article 222-35 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : production ou fabrication illicites de stupéfiants.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00031",
+                    "Article 222-35 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00032",
+                    " : production ou fabrication illicites de stupéfiants.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _law("Article 222-36 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : importation ou exportation illicites de stupéfiants.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00033",
+                    "Article 222-36 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00034",
+                    " : importation ou exportation illicites de stupéfiants.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                _law("Article 222-37 du Code pénal"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00035",
+                    "Article 222-37 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : transport, détention, offre, cession, acquisition ou emploi illicites de stupéfiants, "
-                      "et facilitation de l’usage illicite (dont ordonnances fictives/de complaisance).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00036",
+                        " : transport, détention, offre, cession, acquisition ou emploi illicites de stupéfiants, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00037",
+                        "et facilitation de l’usage illicite (dont ordonnances fictives/de complaisance).",
+                      ),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La jurisprudence admet le cumul des poursuites pour l’infraction principale et le blanchiment de son produit : "
-                        "l’incrimination de blanchiment peut aussi s’appliquer à l’auteur de l’infraction d’origine.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                          "f00038",
+                          "La jurisprudence admet le cumul des poursuites pour l’infraction principale et le blanchiment de son produit : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                          "f00039",
+                          "l’incrimination de blanchiment peut aussi s’appliquer à l’auteur de l’infraction d’origine.",
+                        ),
                   ),
                 ],
               ),
@@ -240,16 +407,38 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+              "f00040",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Faciliter en connaissance de cause"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00041",
+                  "Faciliter en connaissance de cause",
+                ),
+              ),
               _Paragraph(
-                "L’auteur agit en connaissance de cause : il a la volonté, par ses manœuvres, de faciliter la justification mensongère "
-                "de l’origine des biens ou des revenus, ou d’apporter son concours à une opération de placement, dissimulation "
-                "ou conversion du produit des infractions de trafic visées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00042",
+                      "L’auteur agit en connaissance de cause : il a la volonté, par ses manœuvres, de faciliter la justification mensongère ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00043",
+                      "de l’origine des biens ou des revenus, ou d’apporter son concours à une opération de placement, dissimulation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                      "f00044",
+                      "ou conversion du produit des infractions de trafic visées.",
+                    ),
               ),
             ],
           ),
@@ -258,19 +447,36 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+              "f00045",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-38 alinéa 2 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : lorsque l’infraction porte sur des biens ou fonds provenant de l’un des crimes mentionnés aux ",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00046",
+                    "Article 222-38 alinéa 2 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00047",
+                    " : lorsque l’infraction porte sur des biens ou fonds provenant de l’un des crimes mentionnés aux ",
+                  ),
                 ),
                 _law(
-                  "articles 222-34, 222-35 et 222-36 (deuxième alinéa) du Code pénal",
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00048",
+                    "articles 222-34, 222-35 et 222-36 (deuxième alinéa) du Code pénal",
+                  ),
                 ),
                 const TextSpan(text: "."),
               ]),
@@ -281,28 +487,62 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+              "f00049",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (délit) : "),
-                const TextSpan(
-                  text: "10 ans d’emprisonnement et 750 000 € d’amende. — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00050",
+                  "Peines encourues — personnes physiques",
                 ),
-                _law("article 222-38 alinéa 1 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00051",
+                    "Qualification simple (délit) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00052",
+                    "10 ans d’emprisonnement et 750 000 € d’amende. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00053",
+                    "article 222-38 alinéa 1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’amende peut être portée jusqu’à la totalité de la valeur des biens ou fonds ayant fait l’objet des opérations "
-                        "de blanchiment.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                          "f00054",
+                          "L’amende peut être portée jusqu’à la totalité de la valeur des biens ou fonds ayant fait l’objet des opérations ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                          "f00055",
+                          "de blanchiment.",
+                        ),
                   ),
                 ],
               ),
@@ -310,68 +550,192 @@ class PaStupefiantsBlanchimentProduitPage extends StatelessWidget {
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée (crime) : "),
-                const TextSpan(
-                  text:
-                      "peines prévues pour certains crimes de trafic (référence) — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00056",
+                    "Qualification aggravée (crime) : ",
+                  ),
                 ),
-                _law("article 222-38 alinéa 2 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00057",
+                    "peines prévues pour certains crimes de trafic (référence) — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00058",
+                    "article 222-38 alinéa 2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Référence aux peines de : "),
-                _law("222-34, 222-35 et 222-36 alinéa 2 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00059",
+                    "Référence aux peines de : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00060",
+                    "222-34, 222-35 et 222-36 alinéa 2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00061",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
-                _law("l’article 222-42 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00062",
+                    "Peines prévues par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00063",
+                    "l’article 222-42 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00064",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — prévue par "),
-                _law("l’article 222-40 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00065",
+                    "Tentative : OUI — prévue par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00066",
+                    "l’article 222-40 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément aux "),
-                _law("articles 121-6 et 121-7 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (aide et assistance, provocation, instructions données).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00067",
+                    "Complicité : OUI — conformément aux ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00068",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00069",
+                    " (aide et assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                  "f00070",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : "),
-                _law("article 222-43 du Code pénal"),
-                const TextSpan(
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00071",
+                    "Réduction de peine : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00072",
+                    "article 222-43 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " (réduction des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements "
-                      "ou d’identifier d’autres coupables).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00073",
+                        " (réduction des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00074",
+                        "ou d’identifier d’autres coupables).",
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : "),
-                _law("article 222-43-1 du Code pénal"),
-                const TextSpan(
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00075",
+                    "Exemption de peine : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                    "f00076",
+                    "article 222-43-1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " (si la personne ayant tenté l’infraction avertit les autorités et permet d’éviter la réalisation et d’identifier, "
-                      "le cas échéant, d’autres auteurs/complices).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00077",
+                        " (si la personne ayant tenté l’infraction avertit les autorités et permet d’éviter la réalisation et d’identifier, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart",
+                        "f00078",
+                        "le cas échéant, d’autres auteurs/complices).",
+                      ),
                 ),
               ]),
             ],

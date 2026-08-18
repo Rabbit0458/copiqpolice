@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EnqueteAdministrativePage extends StatelessWidget {
   const EnqueteAdministrativePage({super.key});
@@ -50,10 +51,18 @@ class EnqueteAdministrativePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Déontologie",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+            "f00002",
+            "Déontologie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class EnqueteAdministrativePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’enquête administrative",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00003",
+              "L’enquête administrative",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -80,20 +93,56 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // Définition / contexte
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Dans l’exercice de leurs missions, les fonctionnaires de la Police nationale sont soumis "
-                "à des obligations issues du statut général de la fonction publique, du statut spécial, "
-                "du code de déontologie et de la jurisprudence du Conseil d’État.\n\n"
-                "Lorsque l’administration a connaissance de comportements susceptibles de constituer "
-                "un manquement professionnel et/ou déontologique, une enquête administrative est ouverte.\n\n"
-                "Elle constitue une phase d’investigation préalable à d’éventuelles poursuites disciplinaires : "
-                "elle vise à circonstancier les faits, matérialiser les griefs, caractériser le manquement, "
-                "et vérifier l’absence de cause d’exonération.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00005",
+                      "Dans l’exercice de leurs missions, les fonctionnaires de la Police nationale sont soumis ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00006",
+                      "à des obligations issues du statut général de la fonction publique, du statut spécial, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00007",
+                      "du code de déontologie et de la jurisprudence du Conseil d’État.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00008",
+                      "Lorsque l’administration a connaissance de comportements susceptibles de constituer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00009",
+                      "un manquement professionnel et/ou déontologique, une enquête administrative est ouverte.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00010",
+                      "Elle constitue une phase d’investigation préalable à d’éventuelles poursuites disciplinaires : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00011",
+                      "elle vise à circonstancier les faits, matérialiser les griefs, caractériser le manquement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00012",
+                      "et vérifier l’absence de cause d’exonération.",
+                    ),
               ),
             ],
           ),
@@ -102,22 +151,30 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // ✅ Références à connaître (en haut, en rouge)
           _ConditionCard(
-            title: "Références (séparation admin / judiciaire)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00013",
+              "Références (séparation admin / judiciaire)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Obligation de différencier enquête administrative et enquête judiciaire : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                    "f00014",
+                    "Obligation de différencier enquête administrative et enquête judiciaire : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "note DGPN/PN/CAB n°2012-6371 du 22 octobre 2012",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                    "f00015",
+                    "note DGPN/PN/CAB n°2012-6371 du 22 octobre 2012",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -125,8 +182,11 @@ class EnqueteAdministrativePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Même si certaines modalités peuvent se ressembler en pratique, leurs cadres juridiques et finalités sont distincts.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00016",
+                      "Même si certaines modalités peuvent se ressembler en pratique, leurs cadres juridiques et finalités sont distincts.",
+                    ),
                   ),
                 ],
               ),
@@ -137,15 +197,31 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // I — Ouverture
           _ConditionCard(
-            title: "I — Ouverture de l’enquête administrative",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00017",
+              "I — Ouverture de l’enquête administrative",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquête administrative a pour objectif d’établir l’existence d’un manquement professionnel "
-                "et/ou déontologique. Elle est initiée par l’autorité hiérarchique, même si le pouvoir disciplinaire "
-                "appartient à l’autorité de nomination.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00018",
+                      "L’enquête administrative a pour objectif d’établir l’existence d’un manquement professionnel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00019",
+                      "et/ou déontologique. Elle est initiée par l’autorité hiérarchique, même si le pouvoir disciplinaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00020",
+                      "appartient à l’autorité de nomination.",
+                    ),
               ),
             ],
           ),
@@ -154,42 +230,121 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // II — Manquement + saisine
           _ConditionCard(
-            title: "II — Manquement & saisine",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00021",
+              "II — Manquement & saisine",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Notion de manquement"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00022",
+                  "A) Notion de manquement",
+                ),
+              ),
               _Paragraph(
-                "Aucun texte législatif ou réglementaire ne donne de définition légale du manquement "
-                "déontologique ou professionnel.\n\n"
-                "Selon l’IGPN (guide pratique de l’enquête administrative pré-disciplinaire), "
-                "il s’agit de la violation d’un devoir, d’une obligation professionnelle ou d’une instruction, "
-                "par omission ou commission, dans l’exercice ou hors l’exercice des fonctions, "
-                "appréciée au regard de la qualité de policier.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00023",
+                      "Aucun texte législatif ou réglementaire ne donne de définition légale du manquement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00024",
+                      "déontologique ou professionnel.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00025",
+                      "Selon l’IGPN (guide pratique de l’enquête administrative pré-disciplinaire), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00026",
+                      "il s’agit de la violation d’un devoir, d’une obligation professionnelle ou d’une instruction, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00027",
+                      "par omission ou commission, dans l’exercice ou hors l’exercice des fonctions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00028",
+                      "appréciée au regard de la qualité de policier.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Saisine : comment l’administration est informée",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00029",
+                  "B) Saisine : comment l’administration est informée",
+                ),
               ),
               _Paragraph(
-                "Le déclenchement est subordonné à la connaissance par l’administration d’un comportement "
-                "susceptible de constituer un manquement.\n\n"
-                "L’administration peut être avisée par de nombreux moyens :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00030",
+                      "Le déclenchement est subordonné à la connaissance par l’administration d’un comportement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00031",
+                      "susceptible de constituer un manquement.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00032",
+                      "L’administration peut être avisée par de nombreux moyens :",
+                    ),
               ),
               SizedBox(height: 8),
-              _IntroBullet(text: "Dénonciations (courriers, courriels)."),
-              _IntroBullet(text: "Remise de vidéos, supports audios."),
               _IntroBullet(
-                text: "Surveillance / signalements sur les réseaux sociaux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00033",
+                  "Dénonciations (courriers, courriels).",
+                ),
               ),
               _IntroBullet(
-                text: "Dysfonctionnements constatés par la hiérarchie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00034",
+                  "Remise de vidéos, supports audios.",
+                ),
               ),
-              _IntroBullet(text: "Révélations de l’autorité judiciaire."),
               _IntroBullet(
-                text:
-                    "Intervention du Défenseur des droits, autorités indépendantes…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00035",
+                  "Surveillance / signalements sur les réseaux sociaux.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00036",
+                  "Dysfonctionnements constatés par la hiérarchie.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00037",
+                  "Révélations de l’autorité judiciaire.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00038",
+                  "Intervention du Défenseur des droits, autorités indépendantes…",
+                ),
               ),
             ],
           ),
@@ -198,28 +353,68 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // Sujets
           _ConditionCard(
-            title: "Sujets de l’enquête administrative",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00039",
+              "Sujets de l’enquête administrative",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Sujets actifs"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00040",
+                  "A) Sujets actifs",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Ceux qui procèdent aux actes d’enquête (autorités habilitées, chefs de service, adjoints, services dédiés, services centraux…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00041",
+                  "Ceux qui procèdent aux actes d’enquête (autorités habilitées, chefs de service, adjoints, services dédiés, services centraux…).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Sujets influents : le procureur de la République"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00042",
+                  "B) Sujets influents : le procureur de la République",
+                ),
+              ),
               _Paragraph(
-                "Le procureur relève de l’enquête judiciaire. Toutefois, la commission d’une infraction "
-                "par un agent (en service ou hors service) caractérise souvent également un manquement "
-                "déontologique ou professionnel, ce qui peut enrichir l’analyse administrative.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00043",
+                      "Le procureur relève de l’enquête judiciaire. Toutefois, la commission d’une infraction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00044",
+                      "par un agent (en service ou hors service) caractérise souvent également un manquement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00045",
+                      "déontologique ou professionnel, ce qui peut enrichir l’analyse administrative.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Sujets passifs"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00046",
+                  "C) Sujets passifs",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Ceux sur lesquels s’exerce l’enquête (agents concernés).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00047",
+                  "Ceux sur lesquels s’exerce l’enquête (agents concernés).",
+                ),
               ),
             ],
           ),
@@ -228,43 +423,75 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // III — Séparation
           _ConditionCard(
-            title:
-                "III — Séparation : enquête administrative / enquête judiciaire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00048",
+              "III — Séparation : enquête administrative / enquête judiciaire",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Pourquoi c’est différent ?"),
-              _BulletPoint(
-                text:
-                    "L’enquête judiciaire est strictement encadrée (formalisme, nullités, prescriptions).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00049",
+                  "Pourquoi c’est différent ?",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les droits de la personne mise en cause y sont la contrepartie des pouvoirs de contrainte et d’investigation intrusifs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00050",
+                  "L’enquête judiciaire est strictement encadrée (formalisme, nullités, prescriptions).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00051",
+                  "Les droits de la personne mise en cause y sont la contrepartie des pouvoirs de contrainte et d’investigation intrusifs.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "L’enquête administrative n’est pas coercitive : pas de contrainte, pas de pouvoirs coercitifs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00052",
+                  "L’enquête administrative n’est pas coercitive : pas de contrainte, pas de pouvoirs coercitifs.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les finalités sont différentes : pénal (infraction) vs disciplinaire (manquement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00053",
+                  "Les finalités sont différentes : pénal (infraction) vs disciplinaire (manquement).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un fonctionnaire participant à l’enquête pénale contre un agent ne peut pas réaliser l’audition administrative de celui-ci, et inversement.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00054",
+                      "Un fonctionnaire participant à l’enquête pénale contre un agent ne peut pas réaliser l’audition administrative de celui-ci, et inversement.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Néanmoins, les deux enquêtes peuvent coexister sur les mêmes faits : "
-                "ils seront qualifiés d’infractions pénales en judiciaire et de manquements en administratif.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00055",
+                      "Néanmoins, les deux enquêtes peuvent coexister sur les mêmes faits : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00056",
+                      "ils seront qualifiés d’infractions pénales en judiciaire et de manquements en administratif.",
+                    ),
               ),
             ],
           ),
@@ -273,72 +500,163 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // IV — Actes
           _ConditionCard(
-            title: "IV — Actes de l’enquête administrative",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00057",
+              "IV — Actes de l’enquête administrative",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquête administrative est conduite à charge et à décharge. "
-                "Elle vise à éclairer l’autorité disciplinaire dans sa prise de décision. "
-                "Elle comprend une large palette d’actes d’investigation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00058",
+                      "L’enquête administrative est conduite à charge et à décharge. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00059",
+                      "Elle vise à éclairer l’autorité disciplinaire dans sa prise de décision. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00060",
+                      "Elle comprend une large palette d’actes d’investigation.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("1) Actes possibles"),
-              _BulletPoint(
-                text:
-                    "Acte de saisine : détaillé, reprenant les éléments motivant l’ouverture.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00061",
+                  "1) Actes possibles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Actes d’enquête variés : constatations, télégramme, MCI, rapports, fiches d’activités, notes de service, comptes rendus, rapports administratifs…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00062",
+                  "Acte de saisine : détaillé, reprenant les éléments motivant l’ouverture.",
+                ),
               ),
-              _BulletPoint(text: "Convocations."),
-              _BulletPoint(text: "Auditions."),
-              _BulletPoint(text: "Acte de clôture."),
-              _BulletPoint(text: "Rapport de synthèse."),
-              _BulletPoint(text: "Notification des conclusions."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00063",
+                  "Actes d’enquête variés : constatations, télégramme, MCI, rapports, fiches d’activités, notes de service, comptes rendus, rapports administratifs…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00064",
+                  "Convocations.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00065",
+                  "Auditions.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00066",
+                  "Acte de clôture.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00067",
+                  "Rapport de synthèse.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00068",
+                  "Notification des conclusions.",
+                ),
+              ),
               SizedBox(height: 12),
 
-              _SubTitle("2) Convocations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00069",
+                  "2) Convocations",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Délai raisonnable + mention sommaire des faits (référence : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                    "f00070",
+                    "Délai raisonnable + mention sommaire des faits (référence : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "note PN/CAB n°2012-6567/D du 22 octobre 2012",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                    "f00071",
+                    "note PN/CAB n°2012-6567/D du 22 octobre 2012",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("3) Auditions : règles clés"),
-              _BulletPoint(
-                text:
-                    "L’agent peut être assisté de la personne de son choix, à condition qu’elle n’ait pas de lien hiérarchique avec l’autorité enquêtrice.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00072",
+                  "3) Auditions : règles clés",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’assistant n’intervient pas pendant l’audition ; il peut uniquement produire des observations écrites annexées au PV.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00073",
+                  "L’agent peut être assisté de la personne de son choix, à condition qu’elle n’ait pas de lien hiérarchique avec l’autorité enquêtrice.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00074",
+                  "L’assistant n’intervient pas pendant l’audition ; il peut uniquement produire des observations écrites annexées au PV.",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Il n’existe pas de droit au silence en audition administrative : refuser de répondre peut être assimilé à un refus de rendre compte et constituer une faute.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00075",
+                      "Il n’existe pas de droit au silence en audition administrative : refuser de répondre peut être assimilé à un refus de rendre compte et constituer une faute.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’audition n’a pas de durée légale maximale. Si elle est longue, des temps de repos "
-                "(pause méridienne, etc.) doivent être respectés afin d’éviter toute assimilation à une contrainte.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00076",
+                      "L’audition n’a pas de durée légale maximale. Si elle est longue, des temps de repos ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00077",
+                      "(pause méridienne, etc.) doivent être respectés afin d’éviter toute assimilation à une contrainte.",
+                    ),
               ),
             ],
           ),
@@ -347,36 +665,79 @@ class EnqueteAdministrativePage extends StatelessWidget {
 
           // V — Clôture
           _ConditionCard(
-            title: "V — Clôture de l’enquête",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+              "f00078",
+              "V — Clôture de l’enquête",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquête se termine lorsqu’il n’apparaît plus nécessaire d’effectuer des actes ou recherches : "
-                "le service enquêteur estime disposer de tous les éléments utiles à la décision.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00079",
+                      "L’enquête se termine lorsqu’il n’apparaît plus nécessaire d’effectuer des actes ou recherches : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                      "f00080",
+                      "le service enquêteur estime disposer de tous les éléments utiles à la décision.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Deux questions clés à l’issue"),
-              _BulletPoint(
-                text:
-                    "1) L’enquête prouve-t-elle l’existence d’un manquement professionnel ou d’une faute déontologique ?",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00081",
+                  "Deux questions clés à l’issue",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "2) Même si la responsabilité est engagée, est-il opportun d’engager des poursuites disciplinaires ?",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00082",
+                  "1) L’enquête prouve-t-elle l’existence d’un manquement professionnel ou d’une faute déontologique ?",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00083",
+                  "2) Même si la responsabilité est engagée, est-il opportun d’engager des poursuites disciplinaires ?",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle("Notification"),
               _Paragraph(
-                "Le chef de service de l’agent mis en cause notifie les conclusions par procès-verbal administratif.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00084",
+                  "Le chef de service de l’agent mis en cause notifie les conclusions par procès-verbal administratif.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Issues possibles"),
-              _BulletPoint(text: "Classement du dossier."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00085",
+                  "Issues possibles",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Ouverture d’une procédure disciplinaire si une sanction apparaît nécessaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00086",
+                  "Classement du dossier.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/enquete_administrative_page.dart",
+                  "f00087",
+                  "Ouverture d’une procédure disciplinaire si une sanction apparaît nécessaire.",
+                ),
               ),
             ],
           ),
@@ -632,9 +993,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAbandonFamillePage extends StatelessWidget {
   const PaAbandonFamillePage({super.key});
@@ -18,13 +19,21 @@ class PaAbandonFamillePage extends StatelessWidget {
     // ⚠️ Je n’ai pas ta capture “abandon_famille”, donc je te mets une base clean
     // (tu peux ajouter/renommer les items en gardant le même format).
     final items = <_Item>[
-      const _Item(
-        title: 'L’abandon de famille',
+      _Item(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart",
+          "f00001",
+          'L’abandon de famille',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/abandon_famille/abandon_de_famille',
       ),
-      const _Item.quiz(
-        title: 'Quiz — Abandon de famille',
+      _Item.quiz(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart",
+          "f00002",
+          'Quiz — Abandon de famille',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/abandon_famille/quiz_abandon_famille',
       ),
@@ -39,10 +48,18 @@ class PaAbandonFamillePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart",
+            "f00003",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Atteintes aux mineurs & à la famille',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart",
+            "f00004",
+            'Atteintes aux mineurs & à la famille',
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -159,7 +176,9 @@ class _Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color pillBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-    final Color pillBorder = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+    final Color pillBorder = Colors.white.withValues(
+      alpha: isDark ? 0.18 : 0.14,
+    );
 
     return GestureDetector(
       onTap: onTap,
@@ -228,7 +247,17 @@ class _Card extends StatelessWidget {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    isQuiz ? 'Testez vos connaissances' : 'Accéder au contenu',
+                    isQuiz
+                        ? ScolariteText.value(
+                            "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart",
+                            "f00006",
+                            'Testez vos connaissances',
+                          )
+                        : ScolariteText.value(
+                            "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart",
+                            "f00007",
+                            'Accéder au contenu',
+                          ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.fustat(
@@ -263,7 +292,13 @@ class _Card extends StatelessWidget {
                         ),
                         const SizedBox(width: 6),
                         Text(
-                          isQuiz ? 'Quiz' : 'Découvrir',
+                          isQuiz
+                              ? 'Quiz'
+                              : ScolariteText.value(
+                                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart",
+                                  "f00008",
+                                  'Découvrir',
+                                ),
                           style: GoogleFonts.fustat(
                             color: Colors.white,
                             fontWeight: FontWeight.w800,

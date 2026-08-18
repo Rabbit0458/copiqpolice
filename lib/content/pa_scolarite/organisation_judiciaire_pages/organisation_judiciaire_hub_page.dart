@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaOrganisationJudiciaireHubPage extends StatelessWidget {
   const PaOrganisationJudiciaireHubPage({super.key});
@@ -18,7 +19,11 @@ class PaOrganisationJudiciaireHubPage extends StatelessWidget {
         surfaceTintColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+            "f00001",
+            'Retour',
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
@@ -26,91 +31,187 @@ class PaOrganisationJudiciaireHubPage extends StatelessWidget {
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
-          const _HeroHeader(
-            badge: 'Organisation judiciaire',
-            title: 'L\'organisation judiciaire',
-            subtitle: 'Juridictions · Parquet · Instruction',
+          _HeroHeader(
+            badge: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+              "f00002",
+              'Organisation judiciaire',
+            ),
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+              "f00003",
+              'L\'organisation judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+              "f00004",
+              'Juridictions · Parquet · Instruction',
+            ),
             image: 'assets/images/institution_valeurs.jpeg',
           ),
           SliverPadding(
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
-                  title: 'Objectif pédagogique',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00005",
+                    'Objectif pédagogique',
+                  ),
                   child: Text(
-                    'Maîtriser la structure des juridictions françaises, comprendre '
-                    'le rôle du parquet, du juge d\'instruction et les différentes '
-                    'juridictions pénales pour agir efficacement dans vos missions.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                          "f00006",
+                          'Maîtriser la structure des juridictions françaises, comprendre ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                          "f00007",
+                          'le rôle du parquet, du juge d\'instruction et les différentes ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                          "f00008",
+                          'juridictions pénales pour agir efficacement dans vos missions.',
+                        ),
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
                     'Juridictions',
                     'Parquet',
                     'Instruction',
                     'Tribunaux',
-                    'Cours d\'appel',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                      "f00009",
+                      'Cours d\'appel',
+                    ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Points clés',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00010",
+                    'Points clés',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'L\'ordre judiciaire se divise en juridictions civiles et pénales.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                          "f00011",
+                          'L\'ordre judiciaire se divise en juridictions civiles et pénales.',
+                        ),
                       ),
                       _Bullet(
-                        'Le ministère public (parquet) représente la société et décide des poursuites.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                          "f00012",
+                          'Le ministère public (parquet) représente la société et décide des poursuites.',
+                        ),
                       ),
                       _Bullet(
-                        'Le juge d\'instruction est saisi pour les affaires complexes.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                          "f00013",
+                          'Le juge d\'instruction est saisi pour les affaires complexes.',
+                        ),
                       ),
                       _Bullet(
-                        'La Cour d\'assises juge les crimes — seule juridiction avec jury populaire.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                          "f00014",
+                          'La Cour d\'assises juge les crimes — seule juridiction avec jury populaire.',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Cours disponibles',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00015",
+                    'Cours disponibles',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : const Color(0xFF212529),
                   ),
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Structure judiciaire',
-                  subtitle: 'Ordres, degrés et juridictions',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00016",
+                    'Structure judiciaire',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00017",
+                    'Ordres, degrés et juridictions',
+                  ),
                   route: '/pa/organisation_judiciaire/structure',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Le ministère public',
-                  subtitle: 'Parquet, procureur, substituts',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00018",
+                    'Le ministère public',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00019",
+                    'Parquet, procureur, substituts',
+                  ),
                   route: '/pa/organisation_judiciaire/ministere_public',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Le juge d\'instruction',
-                  subtitle: 'Rôle, pouvoirs et procédure',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00020",
+                    'Le juge d\'instruction',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00021",
+                    'Rôle, pouvoirs et procédure',
+                  ),
                   route: '/pa/organisation_judiciaire/juge_instruction',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Juridictions pénales',
-                  subtitle: 'Tribunal correctionnel, assises, proximité',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00022",
+                    'Juridictions pénales',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00023",
+                    'Tribunal correctionnel, assises, proximité',
+                  ),
                   route: '/pa/organisation_judiciaire/juridictions_penales',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Voies de recours',
-                  subtitle: 'Appel, cassation, opposition',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00024",
+                    'Voies de recours',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart",
+                    "f00025",
+                    'Appel, cassation, opposition',
+                  ),
                   route: '/pa/organisation_judiciaire/voies_recours',
                 ),
               ],

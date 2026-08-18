@@ -366,6 +366,34 @@ class _QuizScolariteDynamiquePageState
     });
   }
 
+  Future<void> _requestFinish() async {
+    if (_phase != _Phase.playing) return;
+    final confirmed = await showDialog<bool>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+        title: const Text('Mettre fin au quiz ?'),
+        content: const Text(
+          'Tes réponses déjà validées seront enregistrées et le résultat sera calculé sur cette base.',
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: const Text('Continuer'),
+          ),
+          FilledButton(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: const Text('Mettre fin'),
+          ),
+        ],
+      ),
+    );
+    if (confirmed != true || !mounted) return;
+    final answered = (_index + (_revealed ? 1 : 0)).clamp(0, _questions.length);
+    await _finishHistory(answered);
+    if (!mounted) return;
+    setState(() => _phase = _Phase.finished);
+  }
+
   Future<void> _report() async {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final q = _questions.isEmpty ? null : _questions[_index];
@@ -400,32 +428,50 @@ class _QuizScolariteDynamiquePageState
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final bg = isDark ? const Color(0xFF06102A) : const Color(0xFFF4F6FB);
 
-    return Scaffold(
-      backgroundColor: bg,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: Text(
-          _config?.title ?? 'Quiz',
-          style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 17),
+    return PopScope(
+      canPop: _phase != _Phase.playing,
+      onPopInvokedWithResult: (didPop, _) async {
+        if (!didPop && _phase == _Phase.playing) await _requestFinish();
+      },
+      child: Scaffold(
+        backgroundColor: bg,
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          leading: IconButton(
+            tooltip: 'Fermer',
+            onPressed: _phase == _Phase.playing
+                ? _requestFinish
+                : () => Navigator.maybePop(context),
+            icon: const Icon(Icons.close_rounded),
+          ),
+          title: Text(
+            _config?.title ?? 'Quiz',
+            style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 17),
+          ),
+          actions: [
+            if (_phase == _Phase.playing) ...[
+              TextButton(
+                onPressed: _requestFinish,
+                child: const Text('Mettre fin'),
+              ),
+              IconButton(
+                tooltip: 'Signaler cette question',
+                onPressed: _report,
+                icon: const Icon(Icons.flag_outlined, size: 20),
+              ),
+            ],
+          ],
         ),
-        actions: [
-          if (_phase == _Phase.playing)
-            IconButton(
-              tooltip: 'Signaler cette question',
-              onPressed: _report,
-              icon: const Icon(Icons.flag_outlined, size: 20),
-            ),
-        ],
-      ),
-      body: SafeArea(
-        child: switch (_phase) {
-          _Phase.loading => const Center(child: CircularProgressIndicator()),
-          _Phase.error => _buildError(isDark),
-          _Phase.intro => _buildIntro(isDark),
-          _Phase.playing => _buildQuestion(isDark),
-          _Phase.finished => _buildResult(isDark),
-        },
+        body: SafeArea(
+          child: switch (_phase) {
+            _Phase.loading => const Center(child: CircularProgressIndicator()),
+            _Phase.error => _buildError(isDark),
+            _Phase.intro => _buildIntro(isDark),
+            _Phase.playing => _buildQuestion(isDark),
+            _Phase.finished => _buildResult(isDark),
+          },
+        ),
       ),
     );
   }
@@ -613,9 +659,8 @@ class _QuizScolariteDynamiquePageState
                               : 'Aucune question pour ce niveau',
                           style: TextStyle(
                             fontSize: 12.5,
-                            color: Theme.of(
-                              context,
-                            ).textTheme.bodySmall?.color?.withValues(alpha: .75),
+                            color: Theme.of(context).textTheme.bodySmall?.color
+                                ?.withValues(alpha: .75),
                           ),
                         ),
                       ],
@@ -746,7 +791,10 @@ class _QuizScolariteDynamiquePageState
                             style: TextStyle(
                               fontSize: 12.5,
                               fontStyle: FontStyle.italic,
-                              color: Theme.of(context).textTheme.bodySmall?.color
+                              color: Theme.of(context)
+                                  .textTheme
+                                  .bodySmall
+                                  ?.color
                                   ?.withValues(alpha: .8),
                             ),
                           ),

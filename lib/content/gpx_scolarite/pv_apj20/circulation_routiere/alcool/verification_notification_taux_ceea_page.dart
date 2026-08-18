@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class VerificationNotificationTauxCeeaPage extends StatelessWidget {
   const VerificationNotificationTauxCeeaPage({super.key});
@@ -56,7 +57,11 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Alcool",
@@ -74,7 +79,11 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Vérification & notification des taux (C.E.E.A.)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+              "f00002",
+              "PV — Vérification & notification des taux (C.E.E.A.)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,27 +94,48 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Objectif du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+              "f00003",
+              "Objectif du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas sert à tracer, de manière précise et opposable, les vérifications par éthylomètre "
-                "et la notification immédiate des taux mesurés (taux affiché / taux retenu après marge d’erreur).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00004",
+                      "Ce canevas sert à tracer, de manière précise et opposable, les vérifications par éthylomètre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00005",
+                      "et la notification immédiate des taux mesurés (taux affiché / taux retenu après marge d’erreur).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Toujours indiquer : marque, n° de série et date d’étalonnage de l’éthylomètre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00006",
+                  "Toujours indiquer : marque, n° de série et date d’étalonnage de l’éthylomètre.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Tracer les taux : affiché + retenu (après soustraction de la marge d’erreur).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00007",
+                  "Tracer les taux : affiché + retenu (après soustraction de la marge d’erreur).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Le 2ᵉ contrôle : possible d’initiative, et de droit si la personne le demande.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00008",
+                  "Le 2ᵉ contrôle : possible d’initiative, et de droit si la personne le demande.",
+                ),
               ),
             ],
           ),
@@ -114,55 +144,74 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Cadre légal (à placer en tête du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+              "f00009",
+              "I — Cadre légal (à placer en tête du PV)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Vérifications après dépistage positif ou refus de dépistage : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00010",
+                    "Vérifications après dépistage positif ou refus de dépistage : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 234-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00011",
+                    "article L. 234-4 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Vérifications directes (sans dépistage préalable) quand le Code de la route le prévoit : ",
-                ),
-                TextSpan(
-                  text: "article L. 234-3 alinéa 1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00012",
+                    "Vérifications directes (sans dépistage préalable) quand le Code de la route le prévoit : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (ex. accident corporel/mortel ou infraction entraînant la suspension du permis).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00013",
+                    "article L. 234-3 alinéa 1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00014",
+                    " (ex. accident corporel/mortel ou infraction entraînant la suspension du permis).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Contrôles d’alcoolémie préventifs réalisés immédiatement sur les lieux : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00015",
+                    "Contrôles d’alcoolémie préventifs réalisés immédiatement sur les lieux : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles L. 234-9 et suivants du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00016",
+                    "articles L. 234-9 et suivants du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -173,7 +222,11 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
 
           // Image CANVA
           _ConditionCard(
-            title: "Canevas (visuel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+              "f00017",
+              "Canevas (visuel)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -189,41 +242,81 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
 
           // 3 éléments pédagogiques (adaptés à ce PV)
           _ConditionCard(
-            title: "Les 3 points clés à sécuriser",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+              "f00018",
+              "Les 3 points clés à sécuriser",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Traçabilité (où / avec qui)"),
-              _BulletPoint(
-                text:
-                    "Lieu exact de vérification : endroit précis où l’éthylomètre est utilisé.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00019",
+                  "1) Traçabilité (où / avec qui)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Assistants : fonctionnaires présents et participant à la mission.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00020",
+                  "Lieu exact de vérification : endroit précis où l’éthylomètre est utilisé.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00021",
+                  "Assistants : fonctionnaires présents et participant à la mission.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Régularité technique (éthylomètre)"),
-              _BulletPoint(
-                text:
-                    "Marque, numéro et date d’étalonnage : obligatoire dans le PV.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00022",
+                  "2) Régularité technique (éthylomètre)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rappeler le contrôle automatique de bon fonctionnement avant chaque mesure (bouton MESURE).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00023",
+                  "Marque, numéro et date d’étalonnage : obligatoire dans le PV.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00024",
+                  "Rappeler le contrôle automatique de bon fonctionnement avant chaque mesure (bouton MESURE).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Notification immédiate (preuve)"),
-              _BulletPoint(
-                text:
-                    "Pour chaque contrôle : notifier le taux affiché + le taux retenu (marge d’erreur déduite).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00025",
+                  "3) Notification immédiate (preuve)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Tracer le droit au second contrôle : possible d’initiative et de droit si demandé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00026",
+                  "Pour chaque contrôle : notifier le taux affiché + le taux retenu (marge d’erreur déduite).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00027",
+                  "Tracer le droit au second contrôle : possible d’initiative et de droit si demandé.",
+                ),
               ),
             ],
           ),
@@ -231,90 +324,195 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Déroulé chronologique (rédaction du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+              "f00028",
+              "II — Déroulé chronologique (rédaction du PV)",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1 — Lieu de vérification"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00029",
+                  "1 — Lieu de vérification",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le lieu exact de réalisation de la vérification par éthylomètre.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00030",
+                  "Indiquer le lieu exact de réalisation de la vérification par éthylomètre.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2 — Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00031",
+                  "2 — Assistants",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00032",
+                  "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3 — Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00033",
+                  "3 — Cadre juridique",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Indiquer pourquoi les vérifications sont réalisées :\n"
-                      "• après dépistage positif ou refus de dépistage : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                        "f00034",
+                        "Indiquer pourquoi les vérifications sont réalisées :\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                        "f00035",
+                        "• après dépistage positif ou refus de dépistage : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article L. 234-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00036",
+                    "article L. 234-4 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00037",
+                    "\n• ou directement (sans dépistage) selon les cas prévus : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      "\n• ou directement (sans dépistage) selon les cas prévus : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00038",
+                    "article L. 234-3 alinéa 1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "article L. 234-3 alinéa 1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00039",
+                    "\n• ou contrôle préventif sur place : ",
                   ),
                 ),
-                TextSpan(text: "\n• ou contrôle préventif sur place : "),
                 TextSpan(
-                  text: "articles L. 234-9 et suivants du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00040",
+                    "articles L. 234-9 et suivants du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("4 — Éthylomètre (infos obligatoires)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00041",
+                  "4 — Éthylomètre (infos obligatoires)",
+                ),
+              ),
               _Paragraph(
-                "Les informations relatives à l’éthylomètre doivent impérativement apparaître : "
-                "marque, numéro et date d’étalonnage de l’appareil utilisé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00042",
+                      "Les informations relatives à l’éthylomètre doivent impérativement apparaître : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00043",
+                      "marque, numéro et date d’étalonnage de l’appareil utilisé.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5 — 1er contrôle & notification"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00044",
+                  "5 — 1er contrôle & notification",
+                ),
+              ),
               _Paragraph(
-                "Constater et notifier :\n"
-                "• le taux affiché par l’appareil\n"
-                "• le taux retenu après soustraction de la marge d’erreur\n"
-                "Ces informations doivent être portées immédiatement à la connaissance de l’intéressé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00045",
+                      "Constater et notifier :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00046",
+                      "• le taux affiché par l’appareil\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00047",
+                      "• le taux retenu après soustraction de la marge d’erreur\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00048",
+                      "Ces informations doivent être portées immédiatement à la connaissance de l’intéressé.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("6 — 2e contrôle & notification"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00049",
+                  "6 — 2e contrôle & notification",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Un second contrôle peut être effectué immédiatement, après vérification du bon fonctionnement :\n"
-                      "• à l’initiative de l’agent\n"
-                      "• ou à la demande de la personne : ce contrôle est de droit — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                        "f00050",
+                        "Un second contrôle peut être effectué immédiatement, après vérification du bon fonctionnement :\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                        "f00051",
+                        "• à l’initiative de l’agent\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                        "f00052",
+                        "• ou à la demande de la personne : ce contrôle est de droit — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article L. 234-5 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00053",
+                    "article L. 234-5 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -322,40 +520,95 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dès que le bouton MESURE est activé, l’appareil effectue automatiquement un contrôle de bon fonctionnement avant chaque mesure.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00054",
+                      "Dès que le bouton MESURE est activé, l’appareil effectue automatiquement un contrôle de bon fonctionnement avant chaque mesure.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Notifier immédiatement (comme au 1er contrôle) : taux affiché + taux retenu après marge d’erreur.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00055",
+                  "Notifier immédiatement (comme au 1er contrôle) : taux affiché + taux retenu après marge d’erreur.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("7 — Cadre juridique (suite)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00056",
+                  "7 — Cadre juridique (suite)",
+                ),
+              ),
               _Paragraph(
-                "En fonction des constatations (taux délictuels), agir en flagrant délit et tracer la suite de la procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00057",
+                  "En fonction des constatations (taux délictuels), agir en flagrant délit et tracer la suite de la procédure.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("8 — Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00058",
+                  "8 — Avis O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les instructions de l’O.P.J. le cas échéant (ex : audition du mis en cause).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00059",
+                  "Mentionner les instructions de l’O.P.J. le cas échéant (ex : audition du mis en cause).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("9 — Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00060",
+                  "9 — Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "La lecture du PV est faite par la personne, sauf impossibilité (ex : ne sait pas lire). "
-                "Dans ce cas, mentionner la lecture faite par l’agent. La personne signe sous l’énonciation terminale après lecture.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00061",
+                      "La lecture du PV est faite par la personne, sauf impossibilité (ex : ne sait pas lire). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00062",
+                      "Dans ce cas, mentionner la lecture faite par l’agent. La personne signe sous l’énonciation terminale après lecture.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("10 — Présentation O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00063",
+                  "10 — Présentation O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "Présenter sans délai la personne à l’O.P.J. afin de respecter les obligations légales "
-                "liées à l’audition libre ou à une éventuelle garde à vue. Mentionner les instructions données.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00064",
+                      "Présenter sans délai la personne à l’O.P.J. afin de respecter les obligations légales ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00065",
+                      "liées à l’audition libre ou à une éventuelle garde à vue. Mentionner les instructions données.",
+                    ),
               ),
             ],
           ),
@@ -363,36 +616,52 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Mention finale (rétention permis)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+              "f00066",
+              "III — Mention finale (rétention permis)",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lorsque les mesures à l’éthylomètre établissent l’état alcoolique défini à ",
-                ),
-                TextSpan(
-                  text: "l’article L. 234-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00067",
+                    "Lorsque les mesures à l’éthylomètre établissent l’état alcoolique défini à ",
                   ),
                 ),
                 TextSpan(
-                  text: ", il est procédé à la rétention du permis : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00068",
+                    "l’article L. 234-1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "article L. 224-1 1° du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00069",
+                    ", il est procédé à la rétention du permis : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Un exemplaire de l’avis de rétention est remis au conducteur.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00070",
+                    "article L. 224-1 1° du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00071",
+                    ". Un exemplaire de l’avis de rétention est remis au conducteur.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -400,8 +669,11 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
                 title: "Rappel",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ne pas oublier : le PV doit contenir les informations techniques de l’éthylomètre (marque, numéro, date d’étalonnage).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                      "f00072",
+                      "Ne pas oublier : le PV doit contenir les informations techniques de l’éthylomètre (marque, numéro, date d’étalonnage).",
+                    ),
                   ),
                 ],
               ),
@@ -732,8 +1004,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+        "f00074",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+        "f00075",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -906,7 +1186,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                    "f00076",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -975,7 +1259,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart",
+                  "f00077",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -1003,7 +1291,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1038,7 +1328,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

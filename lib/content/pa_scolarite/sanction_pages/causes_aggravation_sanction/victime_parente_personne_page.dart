@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaVictimeParentePersonneDepositaireAutoritePage extends StatelessWidget {
   const PaVictimeParentePersonneDepositaireAutoritePage({super.key});
@@ -44,7 +45,11 @@ class PaVictimeParentePersonneDepositaireAutoritePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Victime parente d'une personne dépositaire de l'autorité publique",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+            "f00001",
+            "Victime parente d'une personne dépositaire de l'autorité publique",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16.3,
@@ -70,21 +75,24 @@ class PaVictimeParentePersonneDepositaireAutoritePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Sur le conjoint, les ascendants ou les descendants en ligne directe ou toute autre personne vivant habituellement au domicile des personnes dépositaires de l'autorité publique, des enseignants ou personnels travaillant dans des établissements d'enseignement scolaire, des agents d'un exploitant de réseau de transport public de voyageurs, toute personne chargée d'une mission de service public et professionnel de santé, en raison des fonctions exercées par ces personnes.",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00002",
+                        "Sur le conjoint, les ascendants ou les descendants en ligne directe ou toute autre personne vivant habituellement au domicile des personnes dépositaires de l'autorité publique, des enseignants ou personnels travaillant dans des établissements d'enseignement scolaire, des agents d'un exploitant de réseau de transport public de voyageurs, toute personne chargée d'une mission de service public et professionnel de santé, en raison des fonctions exercées par ces personnes.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,17 +102,29 @@ class PaVictimeParentePersonneDepositaireAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante a été créée afin de protéger les proches des personnes dépositaires de l'autorité publique ainsi que des enseignants, professionnels de santé, agents des transports publics et personnes chargées d'une mission de service public.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00004",
+                        "Cette circonstance aggravante a été créée afin de protéger les proches des personnes dépositaires de l'autorité publique ainsi que des enseignants, professionnels de santé, agents des transports publics et personnes chargées d'une mission de service public.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00005",
+                        "Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -112,44 +132,94 @@ class PaVictimeParentePersonneDepositaireAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                    "f00006",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _SubTitle(
-                      "2.1 - La qualité de dépositaire de l'autorité publique",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00007",
+                        "2.1 - La qualité de dépositaire de l'autorité publique",
+                      ),
                     ),
-                    const _Paragraph(
-                      "Il s'agit des personnes énumérées par le code pénal, des autres personnes dépositaires de l'autorité publique ou des personnes assimilées n'exerçant pas des fonctions d'autorité : magistrat, juré, avocat, officier public ou ministériel, militaire de la gendarmerie nationale, fonctionnaire de la police nationale, des douanes, de l'administration pénitentiaire, ou toute autre personne dépositaire de l'autorité publique, sapeur-pompier professionnel ou volontaire, gardien assermenté d'immeubles ou de groupes d'immeubles, ou agent exerçant pour le compte d'un bailleur des fonctions de gardiennage ou de surveillance des immeubles à usage d'habitation.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00008",
+                        "Il s'agit des personnes énumérées par le code pénal, des autres personnes dépositaires de l'autorité publique ou des personnes assimilées n'exerçant pas des fonctions d'autorité : magistrat, juré, avocat, officier public ou ministériel, militaire de la gendarmerie nationale, fonctionnaire de la police nationale, des douanes, de l'administration pénitentiaire, ou toute autre personne dépositaire de l'autorité publique, sapeur-pompier professionnel ou volontaire, gardien assermenté d'immeubles ou de groupes d'immeubles, ou agent exerçant pour le compte d'un bailleur des fonctions de gardiennage ou de surveillance des immeubles à usage d'habitation.",
+                      ),
                     ),
                     const SizedBox(height: 10),
                     _NotaBox(
                       title: "NOTA",
                       bodySpans: [
-                        const TextSpan(text: "Référence : "),
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                            "f00009",
+                            "Référence : ",
+                          ),
+                        ),
                         law(
-                          "article L. 271-1 du Code de la sécurité intérieure",
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                            "f00010",
+                            "article L. 271-1 du Code de la sécurité intérieure",
+                          ),
                         ),
                         const TextSpan(text: "."),
                       ],
                     ),
                     const SizedBox(height: 12),
-                    const _SubTitle("2.2 - Autre qualité"),
-                    const _Paragraph(
-                      "La circonstance est également applicable pour protéger les proches des enseignants ou personnels travaillant dans des établissements d'enseignement scolaire, des agents d'un exploitant de transport public de voyageurs, des professionnels de santé ainsi que toute personne chargée d'une mission de service public.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00011",
+                        "2.2 - Autre qualité",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00012",
+                        "La circonstance est également applicable pour protéger les proches des enseignants ou personnels travaillant dans des établissements d'enseignement scolaire, des agents d'un exploitant de transport public de voyageurs, des professionnels de santé ainsi que toute personne chargée d'une mission de service public.",
+                      ),
                     ),
                     const SizedBox(height: 12),
-                    const _SubTitle("2.3 - Le lien de parenté"),
-                    const _Paragraph(
-                      "Il faut que la victime soit le conjoint (époux mais aussi partenaire lié par un P.A.C.S., concubin), l'ascendant ou le descendant en ligne directe (parents ou enfants), ou une personne vivant habituellement à son domicile (personne hébergée quel que soit le lien de parenté).",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00013",
+                        "2.3 - Le lien de parenté",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00014",
+                        "Il faut que la victime soit le conjoint (époux mais aussi partenaire lié par un P.A.C.S., concubin), l'ascendant ou le descendant en ligne directe (parents ou enfants), ou une personne vivant habituellement à son domicile (personne hébergée quel que soit le lien de parenté).",
+                      ),
                     ),
                     const SizedBox(height: 12),
-                    const _SubTitle(
-                      "2.4 - La connaissance de la qualité du proche",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00015",
+                        "2.4 - La connaissance de la qualité du proche",
+                      ),
                     ),
-                    const _Paragraph(
-                      "L'infraction principale doit avoir été commise en raison des fonctions exercées par le proche de la victime. Cette condition implique que l'auteur connaissait la qualité de ce proche.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                        "f00016",
+                        "L'infraction principale doit avoir été commise en raison des fonctions exercées par le proche de la victime. Cette condition implique que l'auteur connaissait la qualité de ce proche.",
+                      ),
                     ),
                   ],
                 ),
@@ -157,34 +227,76 @@ class PaVictimeParentePersonneDepositaireAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                    "f00017",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE MEURTRE (ARTICLE "),
-                      law("221-4, 4° TER C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "➤ L'EMPOISONNEMENT (ARTICLE "),
-                      law("221-5 al. 3 C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00018",
+                          "➤ LE MEURTRE (ARTICLE ",
+                        ),
                       ),
-                      law("222-3, 4° TER C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00019",
+                          "221-4, 4° TER C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00020",
+                          "➤ L'EMPOISONNEMENT (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00021",
+                          "221-5 al. 3 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00022",
+                          "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00023",
+                          "222-3, 4° TER C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00024",
+                          "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                        ),
                       ),
                       law("222-8"),
                       const TextSpan(text: ", "),
@@ -192,16 +304,31 @@ class PaVictimeParentePersonneDepositaireAutoritePage extends StatelessWidget {
                       const TextSpan(text: ", "),
                       law("222-12"),
                       const TextSpan(text: " ET "),
-                      law("222-13, 4° TER C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00025",
+                          "222-13, 4° TER C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00026",
+                          "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                        ),
                       ),
-                      law("222-15 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart",
+                          "f00027",
+                          "222-15 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                   ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
   const IdentificationDetectionProduitsSuspectsPage({super.key});
@@ -56,10 +57,18 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Intervention — Autres",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+            "f00002",
+            "Intervention — Autres",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Identification & détection des produits stupéfiants",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00003",
+              "Identification & détection des produits stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,11 +103,23 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette fiche vise à donner des repères simples et opérationnels : vocabulaire, définitions, "
-                "grandes familles de produits, présentations habituelles et principaux effets.\n\n"
-                "⚠️ Ce contenu est informatif : il ne remplace pas les procédures, ni l’analyse scientifique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                      "f00004",
+                      "Cette fiche vise à donner des repères simples et opérationnels : vocabulaire, définitions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                      "f00005",
+                      "grandes familles de produits, présentations habituelles et principaux effets.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                      "f00006",
+                      "⚠️ Ce contenu est informatif : il ne remplace pas les procédures, ni l’analyse scientifique.",
+                    ),
               ),
             ],
           ),
@@ -103,38 +128,55 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal (référence)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00007",
+              "I — Élément légal (référence)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Les « substances vénéneuses » sont définies par : ",
-                ),
-                TextSpan(
-                  text: "l’article L. 5132-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                    "f00008",
+                    "Les « substances vénéneuses » sont définies par : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (3 catégories : stupéfiants, psychotropes, listes I & II).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                    "f00009",
+                    "l’article L. 5132-1 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                    "f00010",
+                    " (3 catégories : stupéfiants, psychotropes, listes I & II).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Les listes I et II sont mentionnées à : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                    "f00011",
+                    "Les listes I et II sont mentionnées à : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 5132-6 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                    "f00012",
+                    "l’article L. 5132-6 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -142,8 +184,11 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Quand d’autres articles (CP / CPP / CSI / CSP…) apparaissent dans tes supports, ils doivent être affichés en rouge, exactement comme ci-dessus.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                      "f00013",
+                      "Quand d’autres articles (CP / CPP / CSI / CSP…) apparaissent dans tes supports, ils doivent être affichés en rouge, exactement comme ci-dessus.",
+                    ),
                   ),
                 ],
               ),
@@ -154,50 +199,84 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
 
           // Définitions
           _ConditionCard(
-            title: "II — Quelques définitions (à connaître)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00014",
+              "II — Quelques définitions (à connaître)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Accoutumance : consommation répétée entraînant une dépendance psychique.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00015",
+                  "Accoutumance : consommation répétée entraînant une dépendance psychique.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dépendance : impossibilité de se passer d’un produit (physique et/ou psychique).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00016",
+                  "Dépendance : impossibilité de se passer d’un produit (physique et/ou psychique).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dopage : utilisation de substances/procédés interdits pour augmenter artificiellement le rendement (souvent en contexte sportif).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00017",
+                  "Dopage : utilisation de substances/procédés interdits pour augmenter artificiellement le rendement (souvent en contexte sportif).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Drogue : substance naturelle ou de synthèse agissant sur l’organisme (SNC) et modifiant conscience, sensations, comportement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00018",
+                  "Drogue : substance naturelle ou de synthèse agissant sur l’organisme (SNC) et modifiant conscience, sensations, comportement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Hallucinogènes : substances provoquant altérations et/ou hallucinations sensorielles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00019",
+                  "Hallucinogènes : substances provoquant altérations et/ou hallucinations sensorielles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Psychotrope : molécules (souvent pharmacopée) présentant un risque important sur la santé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00020",
+                  "Psychotrope : molécules (souvent pharmacopée) présentant un risque important sur la santé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sevrage : arrêt du produit → symptômes psychologiques et physiologiques (« syndrome de sevrage »).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00021",
+                  "Sevrage : arrêt du produit → symptômes psychologiques et physiologiques (« syndrome de sevrage »).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Stupéfiants : substances psychoactives dangereuses (certaines totalement prohibées : héroïne, cocaïne, cannabis…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00022",
+                  "Stupéfiants : substances psychoactives dangereuses (certaines totalement prohibées : héroïne, cocaïne, cannabis…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Surdose (overdose) : l’organisme ne tolère pas → risque vital rapide (respiration, rythme cardiaque, coma).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00023",
+                  "Surdose (overdose) : l’organisme ne tolère pas → risque vital rapide (respiration, rythme cardiaque, coma).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Tolérance : nécessité d’augmenter les doses pour obtenir le même effet.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00024",
+                  "Tolérance : nécessité d’augmenter les doses pour obtenir le même effet.",
+                ),
               ),
             ],
           ),
@@ -206,86 +285,160 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
 
           // Classification - naturelle
           _ConditionCard(
-            title:
-                "III — Classification : substances d’origine naturelle (repères)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00025",
+              "III — Classification : substances d’origine naturelle (repères)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Cannabis — herbe (kif, marijuana, chanvre indien, ganja, zamal…)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00026",
+                  "Cannabis — herbe (kif, marijuana, chanvre indien, ganja, zamal…)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aspect : feuilles/fleurs séchées, verdâtre à ocre, odeur poivrée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00027",
+                  "Aspect : feuilles/fleurs séchées, verdâtre à ocre, odeur poivrée.",
+                ),
               ),
               _BulletPoint(
-                text: "Conditionnement : enveloppes, doses ~ 5 à 10 g.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00028",
+                  "Conditionnement : enveloppes, doses ~ 5 à 10 g.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : euphorie, troubles cognitifs (mémoire/perception), humeur, angoisse/panique, altération du jugement.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Cannabis — résine (shit, haschich)"),
-              _BulletPoint(
-                text:
-                    "Aspect : morceaux/plaquettes/barrettes, brun pâle à noir, parfois vert/ocre, consistance molle à dure.",
-              ),
-              _BulletPoint(
-                text:
-                    "Conditionnement : barrettes 2 à 5 g (alu/adhésif), savonnettes/plaquettes 125 g à 1 kg.",
-              ),
-              _BulletPoint(
-                text:
-                    "Effets : proches cannabis ; risque d’angoisse/panique, réactions psychotiques, jugement altéré.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00029",
+                  "Effets : euphorie, troubles cognitifs (mémoire/perception), humeur, angoisse/panique, altération du jugement.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Huile de cannabis"),
-              _BulletPoint(
-                text:
-                    "Aspect : liquide épais visqueux brun-vert à noirâtre, odeur âcre forte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00030",
+                  "Cannabis — résine (shit, haschich)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conditionnement : petites fioles (au gramme) ou entre plastiques thermocollés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00031",
+                  "Aspect : morceaux/plaquettes/barrettes, brun pâle à noir, parfois vert/ocre, consistance molle à dure.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : effets psychoactifs marqués, altération jugement, nausées possibles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00032",
+                  "Conditionnement : barrettes 2 à 5 g (alu/adhésif), savonnettes/plaquettes 125 g à 1 kg.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00033",
+                  "Effets : proches cannabis ; risque d’angoisse/panique, réactions psychotiques, jugement altéré.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Champignons hallucinogènes"),
-              _BulletPoint(
-                text: "Familles : psilocybes, conocybes, strophaires.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00034",
+                  "Huile de cannabis",
+                ),
               ),
               _BulletPoint(
-                text: "Conditionnement : frais ou séchés (doses variables).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00035",
+                  "Aspect : liquide épais visqueux brun-vert à noirâtre, odeur âcre forte.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : hallucinations/altérations sensorielles, anxiété possible, jugement altéré.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00036",
+                  "Conditionnement : petites fioles (au gramme) ou entre plastiques thermocollés.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00037",
+                  "Effets : effets psychoactifs marqués, altération jugement, nausées possibles.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00038",
+                  "Champignons hallucinogènes",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00039",
+                  "Familles : psilocybes, conocybes, strophaires.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00040",
+                  "Conditionnement : frais ou séchés (doses variables).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00041",
+                  "Effets : hallucinations/altérations sensorielles, anxiété possible, jugement altéré.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle("Opium"),
               _BulletPoint(
-                text: "Aspect : pâte assez ferme brun/noir, odeur âcre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00042",
+                  "Aspect : pâte assez ferme brun/noir, odeur âcre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conditionnement : pains (250 g à 1 kg), boulettes, bâtonnets.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00043",
+                  "Conditionnement : pains (250 g à 1 kg), boulettes, bâtonnets.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : somnolence, abattement, myosis, constipation ; forte dépendance et risque surdosage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00044",
+                  "Effets : somnolence, abattement, myosis, constipation ; forte dépendance et risque surdosage.",
+                ),
               ),
             ],
           ),
@@ -294,53 +447,104 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
 
           // Classification - (semi) synthèse / produits “classiques”
           _ConditionCard(
-            title: "IV — Autres produits fréquemment rencontrés (repères)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00045",
+              "IV — Autres produits fréquemment rencontrés (repères)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Morphine / héroïne"),
-              _BulletPoint(
-                text: "Morphine : alcaloïde extrait de l’opium (médical).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00046",
+                  "Morphine / héroïne",
+                ),
               ),
               _BulletPoint(
-                text: "Héroïne : produit de semi-synthèse (à partir morphine).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00047",
+                  "Morphine : alcaloïde extrait de l’opium (médical).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présentation : poudre blanche à marron, odeur opium/vinaigre ; doses en boulettes/pailles/sachets.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00048",
+                  "Héroïne : produit de semi-synthèse (à partir morphine).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Signes/effets : traces de piqûres, myosis, amaigrissement ; très forte dépendance, risque surdosage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00049",
+                  "Présentation : poudre blanche à marron, odeur opium/vinaigre ; doses en boulettes/pailles/sachets.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00050",
+                  "Signes/effets : traces de piqûres, myosis, amaigrissement ; très forte dépendance, risque surdosage.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Cocaïne (chlorhydrate) / crack"),
-              _BulletPoint(
-                text:
-                    "Cocaïne : poudre blanche cristalline (« neige »), mydriase, tachycardie, HTA, convulsions possibles.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00051",
+                  "Cocaïne (chlorhydrate) / crack",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Crack : forme solide destinée à être fumée (cailloux/rocs blanc à écru).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00052",
+                  "Cocaïne : poudre blanche cristalline (« neige »), mydriase, tachycardie, HTA, convulsions possibles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : paranoïa, délires/anxiété, dépendance forte ; crack = effet bref et prises compulsives.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00053",
+                  "Crack : forme solide destinée à être fumée (cailloux/rocs blanc à écru).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00054",
+                  "Effets : paranoïa, délires/anxiété, dépendance forte ; crack = effet bref et prises compulsives.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Rachacha (décoction de pavot)"),
-              _BulletPoint(
-                text:
-                    "Aspect : pâte molle/visqueuse acajou, odeur de terre pourrie.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00055",
+                  "Rachacha (décoction de pavot)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : calmant/apaisant, modification conscience, nausées ; dépendance et risque cardio.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00056",
+                  "Aspect : pâte molle/visqueuse acajou, odeur de terre pourrie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00057",
+                  "Effets : calmant/apaisant, modification conscience, nausées ; dépendance et risque cardio.",
+                ),
               ),
             ],
           ),
@@ -349,71 +553,138 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
 
           // Synthèse
           _ConditionCard(
-            title: "V — Substances de synthèse (repères)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00058",
+              "V — Substances de synthèse (repères)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Amphétamines / méthamphétamine"),
-              _BulletPoint(
-                text:
-                    "Présentation : poudres (blanche/rose/jaune), cristaux, comprimés.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00059",
+                  "Amphétamines / méthamphétamine",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : stimulation, euphorie, anorexie, vigilance augmentée ; dépendance psychique forte, risque surdosage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00060",
+                  "Présentation : poudres (blanche/rose/jaune), cristaux, comprimés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Méthamphétamine : effets proches mais plus puissants/durables (jusqu’à 24 h).",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Ecstasy (MDMA & dérivés)"),
-              _BulletPoint(
-                text:
-                    "Présentation : comprimés souvent avec logos, parfois gélules/poudre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00061",
+                  "Effets : stimulation, euphorie, anorexie, vigilance augmentée ; dépendance psychique forte, risque surdosage.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : stimulant + parfois hallucinogène, sensations chaleur/flottement, déshydratation ; risque surdosage.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("LSD-25"),
-              _BulletPoint(
-                text:
-                    "Dose efficace très faible → supports imprégnés (buvard, gélatine, pointe graphite…), plus rarement liquide/gélules.",
-              ),
-              _BulletPoint(
-                text:
-                    "Effets : hallucinations, perturbation de l’humeur et de la pensée, flash-back possible ; risque surdosage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00062",
+                  "Méthamphétamine : effets proches mais plus puissants/durables (jusqu’à 24 h).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Colles / solvants"),
-              _BulletPoint(
-                text:
-                    "Produits : dissolvants, détachants, diluants (acétone, toluène, benzène…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00063",
+                  "Ecstasy (MDMA & dérivés)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : euphorie/ivresse, confusion (illusions/hallucinations), toxicité importante ; risque coma/décès (respiratoire/cardio).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00064",
+                  "Présentation : comprimés souvent avec logos, parfois gélules/poudre.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00065",
+                  "Effets : stimulant + parfois hallucinogène, sensations chaleur/flottement, déshydratation ; risque surdosage.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Poppers (dérivés du nitrite)"),
-              _BulletPoint(
-                text:
-                    "Liquide jaunâtre, volatil et inflammable (petites bouteilles).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00066",
+                  "LSD-25",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : vasodilatation, tachycardie, vertiges, céphalées ; risque malaise.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00067",
+                  "Dose efficace très faible → supports imprégnés (buvard, gélatine, pointe graphite…), plus rarement liquide/gélules.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00068",
+                  "Effets : hallucinations, perturbation de l’humeur et de la pensée, flash-back possible ; risque surdosage.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00069",
+                  "Colles / solvants",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00070",
+                  "Produits : dissolvants, détachants, diluants (acétone, toluène, benzène…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00071",
+                  "Effets : euphorie/ivresse, confusion (illusions/hallucinations), toxicité importante ; risque coma/décès (respiratoire/cardio).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00072",
+                  "Poppers (dérivés du nitrite)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00073",
+                  "Liquide jaunâtre, volatil et inflammable (petites bouteilles).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00074",
+                  "Effets : vasodilatation, tachycardie, vertiges, céphalées ; risque malaise.",
+                ),
               ),
             ],
           ),
@@ -422,46 +693,84 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
 
           // Médicaments
           _ConditionCard(
-            title: "VI — Médicaments détournés (repères)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00075",
+              "VI — Médicaments détournés (repères)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("GHB"),
               _BulletPoint(
-                text:
-                    "Peut se présenter en poudre cristalline ou liquide incolore/jaune (« drogue du viol »).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00076",
+                  "Peut se présenter en poudre cristalline ou liquide incolore/jaune (« drogue du viol »).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : sédatif, amnésie, vertiges, nausées ; risque dépression respiratoire.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Substitution aux opiacés (méthadone / buprénorphine)"),
-              _BulletPoint(
-                text:
-                    "Méthadone : sirop (odeur vanillée), gélules/comprimés (emballage d’origine).",
-              ),
-              _BulletPoint(
-                text: "Buprénorphine : comprimés (voie sublinguale).",
-              ),
-              _BulletPoint(
-                text:
-                    "Risques : dépendance/tolérance/surdosage ; détournement voie d’administration (complications).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00077",
+                  "Effets : sédatif, amnésie, vertiges, nausées ; risque dépression respiratoire.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Kétamine / tiletamine"),
-              _BulletPoint(
-                text:
-                    "Anesthésiques (humain/vétérinaire). Présentation : liquide incolore ou poudre blanche/beige.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00078",
+                  "Substitution aux opiacés (méthadone / buprénorphine)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Effets : dissociation (extra-corporalité), visions psychédéliques, troubles neuro ; risque coma.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00079",
+                  "Méthadone : sirop (odeur vanillée), gélules/comprimés (emballage d’origine).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00080",
+                  "Buprénorphine : comprimés (voie sublinguale).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00081",
+                  "Risques : dépendance/tolérance/surdosage ; détournement voie d’administration (complications).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00082",
+                  "Kétamine / tiletamine",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00083",
+                  "Anesthésiques (humain/vétérinaire). Présentation : liquide incolore ou poudre blanche/beige.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00084",
+                  "Effets : dissociation (extra-corporalité), visions psychédéliques, troubles neuro ; risque coma.",
+                ),
               ),
             ],
           ),
@@ -470,34 +779,98 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
 
           // Vocabulaire
           _ConditionCard(
-            title: "VII — Vocabulaire utilisé (argot / repères)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00085",
+              "VII — Vocabulaire utilisé (argot / repères)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Acid / Acide : LSD-25."),
+            children: [
               _BulletPoint(
-                text: "Amphes : amphétamines. — Speed : amphétamines.",
-              ),
-              _BulletPoint(text: "Bang : cannabis. — Boulette : haschich."),
-              _BulletPoint(text: "Neige : cocaïne. — CC / Coke : cocaïne."),
-              _BulletPoint(text: "Caillou / Galettes / Slam : crack."),
-              _BulletPoint(text: "Képa : dose individuelle."),
-              _BulletPoint(
-                text: "OD : overdose (surdose). — Descente : fin des effets.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00086",
+                  "Acid / Acide : LSD-25.",
+                ),
               ),
               _BulletPoint(
-                text: "Shoot / Fix : injection. — Shooteuse : seringue.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00087",
+                  "Amphes : amphétamines. — Speed : amphétamines.",
+                ),
               ),
               _BulletPoint(
-                text: "Flash / Super-flash : plaisir intense à l’injection.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00088",
+                  "Bang : cannabis. — Boulette : haschich.",
+                ),
               ),
               _BulletPoint(
-                text: "Flash-back : retour d’effets (LSD) sans reprise.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00089",
+                  "Neige : cocaïne. — CC / Coke : cocaïne.",
+                ),
               ),
-              _BulletPoint(text: "Trip : sous influence d’hallucinogène."),
               _BulletPoint(
-                text: "Speed ball : mélange héroïne/cocaïne (ou amphétamines).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00090",
+                  "Caillou / Galettes / Slam : crack.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00091",
+                  "Képa : dose individuelle.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00092",
+                  "OD : overdose (surdose). — Descente : fin des effets.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00093",
+                  "Shoot / Fix : injection. — Shooteuse : seringue.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00094",
+                  "Flash / Super-flash : plaisir intense à l’injection.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00095",
+                  "Flash-back : retour d’effets (LSD) sans reprise.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00096",
+                  "Trip : sous influence d’hallucinogène.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00097",
+                  "Speed ball : mélange héroïne/cocaïne (ou amphétamines).",
+                ),
               ),
             ],
           ),
@@ -505,33 +878,52 @@ class IdentificationDetectionProduitsSuspectsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "En résumé (mémo rapide)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+              "f00098",
+              "En résumé (mémo rapide)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Connaître les définitions (dépendance, sevrage, surdose, tolérance).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00099",
+                  "Connaître les définitions (dépendance, sevrage, surdose, tolérance).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Identifier les grandes familles : naturel / synthèse / médicaments détournés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00100",
+                  "Identifier les grandes familles : naturel / synthèse / médicaments détournés.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Retenir les présentations typiques (poudre, cailloux, buvards, fioles, comprimés, sachets…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00101",
+                  "Retenir les présentations typiques (poudre, cailloux, buvards, fioles, comprimés, sachets…).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Savoir citer les repères légaux CSP en cas de question de classification.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                  "f00102",
+                  "Savoir citer les repères légaux CSP en cas de question de classification.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si tu ajoutes d’autres références (CP/CPP/CSI/CSP) dans cette page plus tard, mets uniquement la partie “Article … du …” en rouge.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/autres/identification_detection_produits_suspects_page.dart",
+                      "f00103",
+                      "Si tu ajoutes d’autres références (CP/CPP/CSI/CSP) dans cette page plus tard, mets uniquement la partie “Article … du …” en rouge.",
+                    ),
                   ),
                 ],
               ),
@@ -789,9 +1181,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

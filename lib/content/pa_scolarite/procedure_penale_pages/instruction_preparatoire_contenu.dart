@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaInstructionContenuPage extends StatelessWidget {
   const PaInstructionContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaInstructionContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaInstructionContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Instruction préparatoire – Mesures",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+            "f00002",
+            "Instruction préparatoire – Mesures",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaInstructionContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "L'instruction préparatoire – les mesures de contrainte",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00003",
+              "L'instruction préparatoire – les mesures de contrainte",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,9 +66,21 @@ class PaInstructionContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Organisation de l’instruction, contrôle judiciaire, détention provisoire, "
-            "assignation à résidence avec surveillance électronique, mandats de justice "
-            "et dispositions particulières applicables aux mineurs.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+                  "f00004",
+                  "Organisation de l’instruction, contrôle judiciaire, détention provisoire, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+                  "f00005",
+                  "assignation à résidence avec surveillance électronique, mandats de justice ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+                  "f00006",
+                  "et dispositions particulières applicables aux mineurs.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,9 +94,16 @@ class PaInstructionContenuPage extends StatelessWidget {
           // ================= MODULE 1 — L'INSTRUCTION PRÉPARATOIRE =================
           _ModuleCard(
             tag: 'pp_instruction_preparatoire',
-            title: "L'instruction préparatoire",
-            subtitle:
-                "Rôle du juge d’instruction, ouverture de l’information, actes d’enquête et garanties procédurales.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00007",
+              "L'instruction préparatoire",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00008",
+              "Rôle du juge d’instruction, ouverture de l’information, actes d’enquête et garanties procédurales.",
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -83,9 +117,16 @@ class PaInstructionContenuPage extends StatelessWidget {
           // ================= MODULE 2 — LA DÉTENTION PROVISOIRE ====================
           _ModuleCard(
             tag: 'pp_detention_provisoire',
-            title: 'La détention provisoire',
-            subtitle:
-                "Conditions légales, motifs, durée, contrôle du JLD et garanties des droits de la personne mise en examen.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00009",
+              'La détention provisoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00010",
+              "Conditions légales, motifs, durée, contrôle du JLD et garanties des droits de la personne mise en examen.",
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +140,16 @@ class PaInstructionContenuPage extends StatelessWidget {
           // ================= MODULE 3 — LE CONTRÔLE JUDICIAIRE =====================
           _ModuleCard(
             tag: 'pp_controle_judiciaire',
-            title: 'Le contrôle judiciaire',
-            subtitle:
-                "Mesure alternative à la détention : conditions, obligations imposées et conséquences en cas de non-respect.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00011",
+              'Le contrôle judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00012",
+              "Mesure alternative à la détention : conditions, obligations imposées et conséquences en cas de non-respect.",
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -115,9 +163,16 @@ class PaInstructionContenuPage extends StatelessWidget {
           // ============ MODULE 4 — ASSIGNATION À RÉSIDENCE + SURVEILLANCE =========
           _ModuleCard(
             tag: 'pp_assignation_residence_surveillance',
-            title: "L'assignation à résidence avec surveillance électronique",
-            subtitle:
-                "Régime de l’assignation à résidence, surveillance électronique, articulation avec la détention provisoire.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00013",
+              "L'assignation à résidence avec surveillance électronique",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00014",
+              "Régime de l’assignation à résidence, surveillance électronique, articulation avec la détention provisoire.",
+            ),
             imagePath: 'assets/images/bracelet.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -131,9 +186,16 @@ class PaInstructionContenuPage extends StatelessWidget {
           // ================= MODULE 5 — MANDATS DE JUSTICE ========================
           _ModuleCard(
             tag: 'pp_mandats_justice',
-            title: 'Les mandats de justice (art. 122 à 136 C.P.P.)',
-            subtitle:
-                "Mandat de comparution, d’amener, de dépôt et d’arrêt : définition, effets et exécution.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00015",
+              'Les mandats de justice (art. 122 à 136 C.P.P.)',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00016",
+              "Mandat de comparution, d’amener, de dépôt et d’arrêt : définition, effets et exécution.",
+            ),
             imagePath: 'assets/images/aggravations.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -147,9 +209,16 @@ class PaInstructionContenuPage extends StatelessWidget {
           // ========== MODULE 6 — DISPOSITIONS APPLICABLES AUX MINEURS ============
           _ModuleCard(
             tag: 'pp_dispositions_mineurs_instruction',
-            title: 'Dispositions applicables aux mineurs',
-            subtitle:
-                "Règles spécifiques de l’instruction préparatoire lorsque la personne mise en cause est mineure.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00017",
+              'Dispositions applicables aux mineurs',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00018",
+              "Règles spécifiques de l’instruction préparatoire lorsque la personne mise en cause est mineure.",
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -164,9 +233,16 @@ class PaInstructionContenuPage extends StatelessWidget {
           // ================= MODULE 7 — QUIZ =================
           _ModuleCard(
             tag: 'quiz_instruction_preparatoire',
-            title: 'Quiz — Instruction préparatoire',
-            subtitle:
-                'Testez votre maîtrise des mesures de contrainte et du déroulement de l’instruction préparatoire.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00019",
+              'Quiz — Instruction préparatoire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart",
+              "f00020",
+              'Testez votre maîtrise des mesures de contrainte et du déroulement de l’instruction préparatoire.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

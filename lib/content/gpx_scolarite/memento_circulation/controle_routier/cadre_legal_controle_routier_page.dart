@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CadreLegalControleRoutierPage extends StatelessWidget {
   const CadreLegalControleRoutierPage({super.key});
@@ -63,10 +64,18 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrôle routier",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+            "f00002",
+            "Contrôle routier",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -81,7 +90,11 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le cadre légal du contrôle routier\net les pièces afférentes à la conduite",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+              "f00003",
+              "Le cadre légal du contrôle routier\net les pièces afférentes à la conduite",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -92,14 +105,26 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Repère utile",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+              "f00004",
+              "Repère utile",
+            ),
             cardColor: cardNotes,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour approfondir : guide de la police de la circulation routière "
-                "(onglet « outils professionnels / guides pratiques du policier ») via le portail Doc Pro PN.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00005",
+                      "Pour approfondir : guide de la police de la circulation routière ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00006",
+                      "(onglet « outils professionnels / guides pratiques du policier ») via le portail Doc Pro PN.",
+                    ),
               ),
             ],
           ),
@@ -108,30 +133,73 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (exigence)
           _ConditionCard(
-            title: "I — Élément légal (base du contrôle)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+              "f00007",
+              "I — Élément légal (base du contrôle)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Fondements : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00008",
+                    "Fondements : ",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                 ),
-                _lawSpan("R. 233-1"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00009",
+                    "R. 233-1",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 233-3 du Code de la route"),
-                const TextSpan(text: ", ainsi que "),
-                _lawSpan("R. 211-14-0 et suivants du Code des assurances"),
-                const TextSpan(
-                  text:
-                      ". Ces textes autorisent les policiers à demander, à tout moment, la présentation des pièces afférentes à la conduite et à la circulation du véhicule (ou à l’accompagnateur lorsqu’il y en a un).",
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00010",
+                    "R. 233-3 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00011",
+                    ", ainsi que ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00012",
+                    "R. 211-14-0 et suivants du Code des assurances",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00013",
+                    ". Ces textes autorisent les policiers à demander, à tout moment, la présentation des pièces afférentes à la conduite et à la circulation du véhicule (ou à l’accompagnateur lorsqu’il y en a un).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Les O.P.J. et les A.P.J. peuvent interrompre d’initiative la progression d’un véhicule à moteur "
-                "(VL, PL, deux-roues…) même en l’absence d’infraction préalable, afin de procéder au contrôle des pièces et obligations réglementaires.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00014",
+                      "Les O.P.J. et les A.P.J. peuvent interrompre d’initiative la progression d’un véhicule à moteur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00015",
+                      "(VL, PL, deux-roues…) même en l’absence d’infraction préalable, afin de procéder au contrôle des pièces et obligations réglementaires.",
+                    ),
               ),
             ],
           ),
@@ -139,116 +207,305 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Pièces et obligations contrôlables",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+              "f00016",
+              "II — Pièces et obligations contrôlables",
+            ),
             cardColor: cardDocs,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Justificatifs du droit de conduire"),
-              const _Paragraph(
-                "Le contrôle porte notamment sur le titre justifiant l’autorisation de conduire "
-                "(permis de conduire ou documents équivalents).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00017",
+                  "A) Justificatifs du droit de conduire",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00018",
+                      "Le contrôle porte notamment sur le titre justifiant l’autorisation de conduire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00019",
+                      "(permis de conduire ou documents équivalents).",
+                    ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Permis de conduire / certificat équivalent (NATINF 6227).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00020",
+                  "Permis de conduire / certificat équivalent (NATINF 6227).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Attestation de formation pratique / expérience (motocyclettes légères : NATINF 28094 ; tricycles L5e : NATINF 28096).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00021",
+                  "Attestation de formation pratique / expérience (motocyclettes légères : NATINF 28094 ; tricycles L5e : NATINF 28096).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Document de demande de permis (ou copie / récépissé) pour élève conducteur (NATINF 22878).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00022",
+                  "Document de demande de permis (ou copie / récépissé) pour élève conducteur (NATINF 22878).",
+                ),
               ),
-              const _BulletPoint(
-                text: "B.S.R. (référence : contrôle via la base légale).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00023",
+                  "B.S.R. (référence : contrôle via la base légale).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "Info",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "À titre expérimental, le permis peut être présenté en version numérique via « France Identité ». "
-                        "Le contrôle s’effectue depuis NEOFIC via le module « France titre » disponible sur NEO.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                          "f00024",
+                          "À titre expérimental, le permis peut être présenté en version numérique via « France Identité ». ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                          "f00025",
+                          "Le contrôle s’effectue depuis NEOFIC via le module « France titre » disponible sur NEO.",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Cas particuliers liés à des restrictions judiciaires / administratives",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00026",
+                  "B) Cas particuliers liés à des restrictions judiciaires / administratives",
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Exemples de documents : certificat remis en échange du permis en cas de restrictions, notamment ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00027",
+                    "Exemples de documents : certificat remis en échange du permis en cas de restrictions, notamment ",
+                  ),
                 ),
-                _lawSpan("R. 131-2 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00028",
+                    "R. 131-2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 131-4 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00029",
+                    "R. 131-4 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 131-4-1 du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00030",
+                    "R. 131-4-1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 224-6 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00031",
+                    "R. 224-6 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "C) E.A.D. (antidémarrage éthylotest électronique)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00032",
+                  "C) E.A.D. (antidémarrage éthylotest électronique)",
+                ),
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "Attestation d’équipement et de bon fonctionnement (NATINF 32023) lorsque le conducteur est soumis à l’obligation (condamnation / contrôle judiciaire / décision administrative). "
-                      "Références possibles : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                        "f00033",
+                        "Attestation d’équipement et de bon fonctionnement (NATINF 32023) lorsque le conducteur est soumis à l’obligation (condamnation / contrôle judiciaire / décision administrative). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                        "f00034",
+                        "Références possibles : ",
+                      ),
                 ),
-                _lawSpan("132-45 7° du Code pénal"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00035",
+                    "132-45 7° du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("41-2 4° bis du Code de procédure pénale"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00036",
+                    "41-2 4° bis du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("138 8° du Code de procédure pénale"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00037",
+                    "138 8° du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 221-1-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00038",
+                    "R. 221-1-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 226-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00039",
+                    "R. 226-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("L. 234-17 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00040",
+                    "L. 234-17 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("D) Certificat d’immatriculation"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text: "Certificat d’immatriculation (NATINF 6204) — base : ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00041",
+                  "D) Certificat d’immatriculation",
                 ),
-                _lawSpan("R. 233-1 du Code de la route"),
-                const TextSpan(
-                  text:
-                      ". Remorque si PTAC > 500 kg : NATINF 32028 / 32029. Récépissé de perte/vol valable 1 mois : ",
-                ),
-                _lawSpan("R. 322-10 du Code de la route"),
-                const TextSpan(text: "."),
-              ]),
-              const SizedBox(height: 12),
-
-              const _SubTitle("E) Assurance & équipements obligatoires"),
-              const _BulletPoint(
-                text: "Obligation d’assurance (NATINF 6168 et 6166).",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Triangle de présignalisation : "),
-                _lawSpan("R. 416-19 du Code de la route"),
-                const TextSpan(text: " (NATINF 26986)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00042",
+                    "Certificat d’immatriculation (NATINF 6204) — base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00043",
+                    "R. 233-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00044",
+                    ". Remorque si PTAC > 500 kg : NATINF 32028 / 32029. Récépissé de perte/vol valable 1 mois : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00045",
+                    "R. 322-10 du Code de la route",
+                  ),
+                ),
+                const TextSpan(text: "."),
+              ]),
+              const SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00046",
+                  "E) Assurance & équipements obligatoires",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00047",
+                  "Obligation d’assurance (NATINF 6168 et 6166).",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00048",
+                    "Triangle de présignalisation : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00049",
+                    "R. 416-19 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00050",
+                    " (NATINF 26986).",
+                  ),
+                ),
               ]),
               _Paragraph.rich([
-                const TextSpan(text: "Gilet haute visibilité : "),
-                _lawSpan("R. 416-19 du Code de la route"),
-                const TextSpan(text: " (NATINF 26987)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00051",
+                    "Gilet haute visibilité : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00052",
+                    "R. 416-19 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00053",
+                    " (NATINF 26987).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -256,48 +513,123 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Délits relatifs au contrôle routier",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+              "f00054",
+              "III — Délits relatifs au contrôle routier",
+            ),
             cardColor: cardDelits,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Refus d’obtempérer"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Constitue un délit : refuser d’obtempérer à une sommation de s’arrêter — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00055",
+                  "A) Refus d’obtempérer",
                 ),
-                _lawSpan("L. 233-1 du Code de la route"),
-                const TextSpan(text: " (NATINF 50)."),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00056",
+                    "Constitue un délit : refuser d’obtempérer à une sommation de s’arrêter — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00057",
+                    "L. 233-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00058",
+                    " (NATINF 50).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                "Formes aggravées : exposition directe d’autrui à un risque de mort/infirmité permanente, "
-                "ou exposition directe d’un agent à un tel risque.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00059",
+                      "Formes aggravées : exposition directe d’autrui à un risque de mort/infirmité permanente, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00060",
+                      "ou exposition directe d’un agent à un tel risque.",
+                    ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
-                _lawSpan("L. 233-1-1 du Code de la route"),
-                const TextSpan(text: " (NATINF 25124 et 34489)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00061",
+                    "Références : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00062",
+                    "L. 233-1-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00063",
+                    " (NATINF 25124 et 34489).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Refus de se soumettre aux vérifications"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Constitue un délit : refuser de se soumettre aux vérifications relatives au véhicule ou au conducteur — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00064",
+                  "B) Refus de se soumettre aux vérifications",
                 ),
-                _lawSpan("L. 233-2 du Code de la route"),
-                const TextSpan(text: " (NATINF 179)."),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00065",
+                    "Constitue un délit : refuser de se soumettre aux vérifications relatives au véhicule ou au conducteur — ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00066",
+                    "L. 233-2 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                    "f00067",
+                    " (NATINF 179).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00068",
+                      "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    ),
                   ),
                 ],
               ),
@@ -307,48 +639,104 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Non-présentation & non-justification (pédagogique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+              "f00069",
+              "IV — Non-présentation & non-justification (pédagogique)",
+            ),
             cardColor: cardNatinf,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Non-présentation immédiate (exemples)"),
-              _BulletPoint(
-                text:
-                    "Permis de conduire / assimilé : NATINF 6227 (base : R. 233-1 CR).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00070",
+                  "A) Non-présentation immédiate (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Attestation formation motocyclette légère (cat. B) : NATINF 28094 ; tricycle L5e : NATINF 28096.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00071",
+                  "Permis de conduire / assimilé : NATINF 6227 (base : R. 233-1 CR).",
+                ),
               ),
               _BulletPoint(
-                text: "Élève conducteur — preuve de la demande : NATINF 22878.",
-              ),
-              _BulletPoint(text: "Document E.A.D. : NATINF 32023."),
-              _BulletPoint(
-                text:
-                    "Certificat d’immatriculation : NATINF 6204 (remorque PTAC > 500 kg : NATINF 32028/32029).",
-              ),
-              _BulletPoint(
-                text:
-                    "Assurance (véhicules non soumis à immatriculation) : NATINF 6168 ; certificat/apposition : NATINF 6166.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00072",
+                  "Attestation formation motocyclette légère (cat. B) : NATINF 28094 ; tricycle L5e : NATINF 28096.",
+                ),
               ),
               _BulletPoint(
-                text: "Triangle : NATINF 26986 — gilet : NATINF 26987.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00073",
+                  "Élève conducteur — preuve de la demande : NATINF 22878.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00074",
+                  "Document E.A.D. : NATINF 32023.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00075",
+                  "Certificat d’immatriculation : NATINF 6204 (remorque PTAC > 500 kg : NATINF 32028/32029).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00076",
+                  "Assurance (véhicules non soumis à immatriculation) : NATINF 6168 ; certificat/apposition : NATINF 6166.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00077",
+                  "Triangle : NATINF 26986 — gilet : NATINF 26987.",
+                ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "B) Obligation de justifier ensuite la possession",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00078",
+                  "B) Obligation de justifier ensuite la possession",
+                ),
               ),
               _Paragraph(
-                "La non-présentation des pièces visées (et, pour les véhicules non immatriculés, l’attestation d’assurance) "
-                "entraîne l’obligation d’en justifier la possession dans un délai de 5 jours "
-                "(délai porté à 12 jours dans le cadre du PVe).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00079",
+                      "La non-présentation des pièces visées (et, pour les véhicules non immatriculés, l’attestation d’assurance) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00080",
+                      "entraîne l’obligation d’en justifier la possession dans un délai de 5 jours ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00081",
+                      "(délai porté à 12 jours dans le cadre du PVe).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "NATINF (exemples) : 7553, 7554, 21213, 22879, 28095, 28097, 32024, 32030, 32031, 6164, 32030, 32031.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00082",
+                  "NATINF (exemples) : 7553, 7554, 21213, 22879, 28095, 28097, 32024, 32030, 32031, 6164, 32030, 32031.",
+                ),
               ),
               SizedBox(height: 10),
 
@@ -356,9 +744,21 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La consultation des fichiers (SNPC, SIV, FVA) permet de traiter en temps réel les infractions "
-                        "liées au défaut ou au retrait du document (ex. conduite sans permis / malgré suspension, "
-                        "défaut de certificat d’immatriculation, défaut d’assurance…).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                          "f00083",
+                          "La consultation des fichiers (SNPC, SIV, FVA) permet de traiter en temps réel les infractions ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                          "f00084",
+                          "liées au défaut ou au retrait du document (ex. conduite sans permis / malgré suspension, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                          "f00085",
+                          "défaut de certificat d’immatriculation, défaut d’assurance…).",
+                        ),
                   ),
                 ],
               ),
@@ -368,38 +768,89 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Particularités & limites du contrôle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+              "f00086",
+              "V — Particularités & limites du contrôle",
+            ),
             cardColor: cardNotes,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("B.S.R. (brevet de sécurité routière)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00087",
+                  "B.S.R. (brevet de sécurité routière)",
+                ),
+              ),
               _Paragraph(
-                "La non-présentation immédiate du B.S.R. n’est pas réprimée. "
-                "Le titulaire doit néanmoins justifier de ce document dans un délai de cinq jours (NATINF 21213).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00088",
+                      "La non-présentation immédiate du B.S.R. n’est pas réprimée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00089",
+                      "Le titulaire doit néanmoins justifier de ce document dans un délai de cinq jours (NATINF 21213).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Ouverture du capot moteur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00090",
+                  "Ouverture du capot moteur",
+                ),
+              ),
               _Paragraph(
-                "La fouille ou la visite du coffre n’est pas autorisée lors d’un simple contrôle routier. "
-                "En revanche, le policier peut demander l’ouverture du capot moteur afin de vérifier la conformité "
-                "du numéro d’identification du véhicule avec celui figurant sur le certificat d’immatriculation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00091",
+                      "La fouille ou la visite du coffre n’est pas autorisée lors d’un simple contrôle routier. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00092",
+                      "En revanche, le policier peut demander l’ouverture du capot moteur afin de vérifier la conformité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                      "f00093",
+                      "du numéro d’identification du véhicule avec celui figurant sur le certificat d’immatriculation.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Conséquences fréquentes d’un contrôle"),
-              _IntroBullet(
-                text:
-                    "Vérifier le respect de la réglementation en matière de contrôle technique.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00094",
+                  "Conséquences fréquentes d’un contrôle",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Contrôler la présence, conformité et bon état des équipements réglementaires (pneus, éclairage…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00095",
+                  "Vérifier le respect de la réglementation en matière de contrôle technique.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Constater, le cas échéant, la violation de l’interdiction de fumer en présence d’un mineur (Code de la santé publique).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00096",
+                  "Contrôler la présence, conformité et bon état des équipements réglementaires (pneus, éclairage…).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/cadre_legal_controle_routier_page.dart",
+                  "f00097",
+                  "Constater, le cas échéant, la violation de l’interdiction de fumer en présence d’un mineur (Code de la santé publique).",
+                ),
               ),
             ],
           ),

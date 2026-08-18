@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDelitFuitePage extends StatelessWidget {
   const PaDelitFuitePage({super.key});
@@ -59,10 +60,18 @@ class PaDelitFuitePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions circulation routière",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+            "f00002",
+            "Infractions circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaDelitFuitePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le délit de fuite",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+              "f00003",
+              "Le délit de fuite",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,16 +102,36 @@ class PaDelitFuitePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour tout conducteur d’un véhicule ou engin terrestre, fluvial ou maritime, "
-                "sachant qu’il vient de causer ou d’occasionner un accident, de ne pas s’arrêter "
-                "et de tenter ainsi d’échapper à la responsabilité pénale ou civile qu’il peut avoir encourue, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00005",
+                      "Le fait, pour tout conducteur d’un véhicule ou engin terrestre, fluvial ou maritime, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00006",
+                      "sachant qu’il vient de causer ou d’occasionner un accident, de ne pas s’arrêter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00007",
+                      "et de tenter ainsi d’échapper à la responsabilité pénale ou civile qu’il peut avoir encourue, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00008",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -107,29 +140,39 @@ class PaDelitFuitePage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 434-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00010",
+                    "Article 434-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article L. 231-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00011",
+                    "article L. 231-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définissent et répriment le délit de fuite.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00012",
+                    " : définissent et répriment le délit de fuite.",
+                  ),
                 ),
               ]),
             ],
@@ -139,25 +182,50 @@ class PaDelitFuitePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un conducteur de véhicule / d’engin"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00014",
+                  "A) Un conducteur de véhicule / d’engin",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit de la personne qui assume la direction de tout véhicule (ou ensemble de véhicules). "
-                "Elle possède la maîtrise matérielle des mouvements du véhicule.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00015",
+                      "Il s’agit de la personne qui assume la direction de tout véhicule (ou ensemble de véhicules). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00016",
+                      "Elle possède la maîtrise matérielle des mouvements du véhicule.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Références : "),
                 TextSpan(
-                  text: "articles R. 412-6 et R. 412-44 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00017",
+                    "Références : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00018",
+                    "articles R. 412-6 et R. 412-44 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -166,162 +234,299 @@ class PaDelitFuitePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ne sont pas concernés : les piétons (y compris ceux qui poussent une voiture d’enfant, "
-                        "un fauteuil, un vélo/cycle à la main, un caddie…), ni les conducteurs des matériels roulants "
-                        "des chemins de fer.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                          "f00019",
+                          "Ne sont pas concernés : les piétons (y compris ceux qui poussent une voiture d’enfant, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                          "f00020",
+                          "un fauteuil, un vélo/cycle à la main, un caddie…), ni les conducteurs des matériels roulants ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                          "f00021",
+                          "des chemins de fer.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 14),
 
-              _SubTitle("B) Le véhicule / l’engin"),
-              _Paragraph("Sont visés :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00022",
+                  "B) Le véhicule / l’engin",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00023",
+                  "Sont visés :",
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Véhicules routiers : voitures, PL, transports en commun, motos, cyclomoteurs, camions, tracteurs, engins agricoles, tricycles/quadricycles à moteur, cycles, EDPM motorisés, engins à traction animale, voiture à bras.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00024",
+                  "Véhicules routiers : voitures, PL, transports en commun, motos, cyclomoteurs, camions, tracteurs, engins agricoles, tricycles/quadricycles à moteur, cycles, EDPM motorisés, engins à traction animale, voiture à bras.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Engins fluviaux et maritimes : engins nautiques sans moteur (barques, planches à voile) et engins motorisés (bateaux, péniches, off-shore, jet ski, hydroglisseurs…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00025",
+                  "Engins fluviaux et maritimes : engins nautiques sans moteur (barques, planches à voile) et engins motorisés (bateaux, péniches, off-shore, jet ski, hydroglisseurs…).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Engins volants",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00026",
+                  "Engins volants",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le délit de fuite est applicable en cas d’accident causé par un aéronef (aux personnes de la surface), selon ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00027",
+                      "Le délit de fuite est applicable en cas d’accident causé par un aéronef (aux personnes de la surface), selon ",
+                    ),
                   ),
                   TextSpan(
-                    text: "l’article L. 6142-9 du code des transports",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00028",
+                      "l’article L. 6142-9 du code des transports",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        ", sauf si l’arrêt de l’aéronef aurait compromis la sécurité des passagers (avions, hélicoptères, delta-plane, ULM, parachutes…).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00029",
+                      ", sauf si l’arrêt de l’aéronef aurait compromis la sécurité des passagers (avions, hélicoptères, delta-plane, ULM, parachutes…).",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un accident"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00030",
+                  "C) Un accident",
+                ),
+              ),
               _Paragraph(
-                "Il peut s’agir d’un accident mortel, corporel ou matériel : fait involontaire ayant provoqué "
-                "un dommage aux personnes ou aux biens, événement fortuit et anormal.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00031",
+                      "Il peut s’agir d’un accident mortel, corporel ou matériel : fait involontaire ayant provoqué ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00032",
+                      "un dommage aux personnes ou aux biens, événement fortuit et anormal.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Jurisprudence : "),
                 TextSpan(
-                  text: "Cass. crim., 4 mai 1950",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00033",
+                    "Jurisprudence : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00034",
+                    "Cass. crim., 4 mai 1950",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’accident doit s’être produit en un lieu public ou privé ouvert à la circulation et au stationnement. "
-                "Il peut concerner des biens meubles/immeubles (murs, véhicules, barrières…) ou des animaux, "
-                "mais seulement s’il cause un préjudice à autrui.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00035",
+                      "L’accident doit s’être produit en un lieu public ou privé ouvert à la circulation et au stationnement. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00036",
+                      "Il peut concerner des biens meubles/immeubles (murs, véhicules, barrières…) ou des animaux, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00037",
+                      "mais seulement s’il cause un préjudice à autrui.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Lien de causalité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00038",
+                  "D) Lien de causalité",
+                ),
+              ),
               _Paragraph(
-                "Le véhicule/engin doit avoir causé ou occasionné l’accident : le lien de causalité est exigé.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00039",
+                  "Le véhicule/engin doit avoir causé ou occasionné l’accident : le lien de causalité est exigé.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Soit le véhicule est impliqué : contact avec la victime/la chose endommagée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00040",
+                  "Soit le véhicule est impliqué : contact avec la victime/la chose endommagée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Soit le véhicule a occasionné l’accident : pas nécessairement de contact (ex. manœuvre provoquant une chute/une collision).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00041",
+                  "Soit le véhicule a occasionné l’accident : pas nécessairement de contact (ex. manœuvre provoquant une chute/une collision).",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("E) Une omission de s’arrêter"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00042",
+                  "E) Une omission de s’arrêter",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 231-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00043",
+                    "Article R. 231-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : tout conducteur/usager impliqué dans un accident doit :",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00044",
+                    " : tout conducteur/usager impliqué dans un accident doit :",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "S’arrêter aussitôt que possible sans créer un danger pour la circulation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00045",
+                  "S’arrêter aussitôt que possible sans créer un danger pour la circulation.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Si dégâts matériels uniquement : communiquer son identité et son adresse à toute personne impliquée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00046",
+                  "Si dégâts matériels uniquement : communiquer son identité et son adresse à toute personne impliquée.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "S’il y a blessés ou tués : faire avertir/avertir les services de police ou de gendarmerie, communiquer son identité/adresse, éviter de modifier l’état des lieux et préserver les traces utiles.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00047",
+                  "S’il y a blessés ou tués : faire avertir/avertir les services de police ou de gendarmerie, communiquer son identité/adresse, éviter de modifier l’état des lieux et préserver les traces utiles.",
+                ),
               ),
 
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Précisions : arrêt aussitôt et sur les lieux. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00048",
+                    "Précisions : arrêt aussitôt et sur les lieux. ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "(Cass. crim., 19 mars 1956 ; Cass. crim., 12 juillet 1966)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00049",
+                    "(Cass. crim., 19 mars 1956 ; Cass. crim., 12 juillet 1966)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La durée de l’arrêt importe peu, mais elle doit être suffisante pour permettre l’identification "
-                      "par la partie adverse et/ou les témoins, et un minimum de constatations matérielles. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                        "f00050",
+                        "La durée de l’arrêt importe peu, mais elle doit être suffisante pour permettre l’identification ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                        "f00051",
+                        "par la partie adverse et/ou les témoins, et un minimum de constatations matérielles. ",
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      "(Cass. crim., 26 mai 1910 ; Cass. crim., 2 octobre 1978)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00052",
+                    "(Cass. crim., 26 mai 1910 ; Cass. crim., 2 octobre 1978)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("Jurisprudences (illustrations)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00053",
+                  "Jurisprudences (illustrations)",
+                ),
+              ),
               _NotaBox(
                 title: "Exemples",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "• Le conducteur prend la fuite puis revient : délit constitué ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00054",
+                      "• Le conducteur prend la fuite puis revient : délit constitué ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 4 novembre 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00055",
+                      "(Cass. crim., 4 novembre 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -329,11 +534,18 @@ class PaDelitFuitePage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• Ne s’arrête pas puis se présente ensuite à la police/gendarmerie : délit constitué ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00056",
+                      "• Ne s’arrête pas puis se présente ensuite à la police/gendarmerie : délit constitué ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 19 mars 1956 ; 19 novembre 1974)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00057",
+                      "(Cass. crim., 19 mars 1956 ; 19 novembre 1974)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -341,11 +553,18 @@ class PaDelitFuitePage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• S’arrête mais donne un faux nom/une fausse adresse : délit constitué ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00058",
+                      "• S’arrête mais donne un faux nom/une fausse adresse : délit constitué ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 14 avril 1959)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00059",
+                      "(Cass. crim., 14 avril 1959)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -353,11 +572,18 @@ class PaDelitFuitePage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• Manifeste l’intention de fuir mais est empêché (véhicule endommagé / retenu) : délit constitué ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00060",
+                      "• Manifeste l’intention de fuir mais est empêché (véhicule endommagé / retenu) : délit constitué ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 10 juin 1970)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00061",
+                      "(Cass. crim., 10 juin 1970)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -365,11 +591,18 @@ class PaDelitFuitePage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "• S’arrête assez longtemps pour permettre le relevé de l’immatriculation : délit non constitué (même s’il refuse de décliner son identité) ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00062",
+                      "• S’arrête assez longtemps pour permettre le relevé de l’immatriculation : délit non constitué (même s’il refuse de décliner son identité) ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 16 janvier 1958 ; 2 juillet 1969)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00063",
+                      "(Cass. crim., 16 janvier 1958 ; 2 juillet 1969)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -385,38 +618,67 @@ class PaDelitFuitePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+              "f00064",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Conscience d’avoir causé/occasionné un accident",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00065",
+                  "A) Conscience d’avoir causé/occasionné un accident",
+                ),
               ),
               _Paragraph(
-                "Le conducteur a connaissance de l’accident : il s’en est rendu compte, il l’a vu, il l’a constaté.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00066",
+                  "Le conducteur a connaissance de l’accident : il s’en est rendu compte, il l’a vu, il l’a constaté.",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Volonté d’échapper à une responsabilité pénale ou civile",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00067",
+                  "B) Volonté d’échapper à une responsabilité pénale ou civile",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Il n’est pas nécessaire que le juge constate une responsabilité effectivement encourue : "
-                      "il suffit que l’auteur ait pu l’encourir. ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                        "f00068",
+                        "Il n’est pas nécessaire que le juge constate une responsabilité effectivement encourue : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                        "f00069",
+                        "il suffit que l’auteur ait pu l’encourir. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 23 mai 1953)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00070",
+                    "(Cass. crim., 23 mai 1953)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Le conducteur a la volonté de se soustraire à sa propre responsabilité par la fuite.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00071",
+                  "Le conducteur a la volonté de se soustraire à sa propre responsabilité par la fuite.",
+                ),
               ),
             ],
           ),
@@ -425,18 +687,32 @@ class PaDelitFuitePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+              "f00072",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune (au titre du délit de fuite lui-même)."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00073",
+                  "Aucune (au titre du délit de fuite lui-même).",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
                   TextSpan(
-                    text: "Article 434-10 alinéa 2 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00074",
+                      "Article 434-10 alinéa 2 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -444,23 +720,46 @@ class PaDelitFuitePage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " : lorsque les articles 221-6 et 222-19 s’appliquent, les peines prévues par ces articles sont portées au double "
-                        "(uniquement pour véhicule/engin terrestre sans moteur, fluvial ou maritime).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                          "f00075",
+                          " : lorsque les articles 221-6 et 222-19 s’appliquent, les peines prévues par ces articles sont portées au double ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                          "f00076",
+                          "(uniquement pour véhicule/engin terrestre sans moteur, fluvial ou maritime).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00077",
+                  "À retenir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le délit de fuite (VTM) peut aussi constituer une circonstance aggravante de l’homicide involontaire "
-                        "ou des atteintes involontaires : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                          "f00078",
+                          "Le délit de fuite (VTM) peut aussi constituer une circonstance aggravante de l’homicide involontaire ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                          "f00079",
+                          "ou des atteintes involontaires : ",
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00080",
+                      "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -476,60 +775,124 @@ class PaDelitFuitePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+              "f00081",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00082",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : "),
-                TextSpan(text: "délit. "),
-                TextSpan(text: "— Peines principales : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00083",
+                    "Qualification : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article 434-10 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00084",
+                    "délit. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00085",
+                    "— Peines principales : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00086",
+                    "3 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00087",
+                    "Article 434-10 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00088",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00089",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00090",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00091",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                    "f00092",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Illustration (complicité)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                  "f00093",
+                  "Illustration (complicité)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Est complice par provocation (assortie d’abus d’autorité) le propriétaire qui ordonne à son chauffeur de poursuivre sa route après un accident ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00094",
+                      "Est complice par provocation (assortie d’abus d’autorité) le propriétaire qui ordonne à son chauffeur de poursuivre sa route après un accident ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(TGI Paris, 19 novembre 1982)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/delit_fuite_page.dart",
+                      "f00095",
+                      "(TGI Paris, 19 novembre 1982)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,

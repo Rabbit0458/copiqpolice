@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ViolationBarPage extends StatelessWidget {
   const ViolationBarPage({super.key});
@@ -55,10 +56,18 @@ class ViolationBarPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Cadre juridique",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+            "f00002",
+            "Cadre juridique",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class ViolationBarPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Bracelet anti-rapprochement (BAR)\nViolation & intervention",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00003",
+              "Bracelet anti-rapprochement (BAR)\nViolation & intervention",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -83,7 +96,11 @@ class ViolationBarPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Mis à jour le 15/06/2025",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00004",
+              "Mis à jour le 15/06/2025",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w700,
               fontSize: 13.5,
@@ -94,47 +111,66 @@ class ViolationBarPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (sources fournies)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00005",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Loi du 28 décembre 2019",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                    "f00006",
+                    "Loi du 28 décembre 2019",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " visant à agir contre les violences au sein de la famille.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                    "f00007",
+                    " visant à agir contre les violences au sein de la famille.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Décret du 23 septembre 2020",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                    "f00008",
+                    "Décret du 23 septembre 2020",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " relatif à la mise en œuvre d’un dispositif électronique mobile anti-rapprochement.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                    "f00009",
+                    " relatif à la mise en œuvre d’un dispositif électronique mobile anti-rapprochement.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette mesure peut être ordonnée dans le cadre d’une procédure ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00010",
+                      "Cette mesure peut être ordonnée dans le cadre d’une procédure ",
+                    ),
                   ),
                   TextSpan(
-                    text: "pénale ou civile",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00011",
+                      "pénale ou civile",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -150,15 +186,31 @@ class ViolationBarPage extends StatelessWidget {
 
           // Objectif
           _ConditionCard(
-            title: "II — L’objectif",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00012",
+              "II — L’objectif",
+            ),
             cardColor: cardObj,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le BAR vise à contrôler, par un dispositif de surveillance électronique mobile, "
-                "l’interdiction faite à une personne de se rapprocher d’une autre, afin d’éviter la commission "
-                "ou la réitération de violences conjugales.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00013",
+                      "Le BAR vise à contrôler, par un dispositif de surveillance électronique mobile, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00014",
+                      "l’interdiction faite à une personne de se rapprocher d’une autre, afin d’éviter la commission ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00015",
+                      "ou la réitération de violences conjugales.",
+                    ),
               ),
             ],
           ),
@@ -167,14 +219,26 @@ class ViolationBarPage extends StatelessWidget {
 
           // Moyens
           _ConditionCard(
-            title: "III — Les moyens",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00016",
+              "III — Les moyens",
+            ),
             cardColor: cardMeans,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La personne protégée se voit attribuer un téléphone portable. "
-                "L’auteur porte un bracelet électronique et dispose également d’un téléphone portable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00017",
+                      "La personne protégée se voit attribuer un téléphone portable. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00018",
+                      "L’auteur porte un bracelet électronique et dispose également d’un téléphone portable.",
+                    ),
               ),
             ],
           ),
@@ -183,30 +247,88 @@ class ViolationBarPage extends StatelessWidget {
 
           // Qui fait quoi
           _ConditionCard(
-            title: "IV — Qui fait quoi ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00019",
+              "IV — Qui fait quoi ?",
+            ),
             cardColor: cardRoles,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Autorité judiciaire"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00020",
+                  "Autorité judiciaire",
+                ),
+              ),
               _Paragraph(
-                "Prononce l’interdiction de rapprochement et fixe une zone de protection autour de la victime, "
-                "dans laquelle l’auteur ne peut se rendre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00021",
+                      "Prononce l’interdiction de rapprochement et fixe une zone de protection autour de la victime, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00022",
+                      "dans laquelle l’auteur ne peut se rendre.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Administration pénitentiaire"),
-              _Paragraph("Est chargée de la pose du bracelet."),
-              SizedBox(height: 10),
-              _SubTitle("Société de téléassistance (Allianz)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00023",
+                  "Administration pénitentiaire",
+                ),
+              ),
               _Paragraph(
-                "Assiste la personne protégée, surveille le porteur du BAR lorsqu’il pénètre dans la zone de pré-alerte "
-                "et lui ordonne d’en sortir. Elle avise les forces de l’ordre si le porteur entre dans la zone d’alerte "
-                "et prend attache avec la victime pour lui donner des conseils de mise en sûreté.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00024",
+                  "Est chargée de la pose du bracelet.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Forces de l’ordre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00025",
+                  "Société de téléassistance (Allianz)",
+                ),
+              ),
               _Paragraph(
-                "Sont saisies lorsque le porteur du BAR pénètre dans la zone d’alerte.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00026",
+                      "Assiste la personne protégée, surveille le porteur du BAR lorsqu’il pénètre dans la zone de pré-alerte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00027",
+                      "et lui ordonne d’en sortir. Elle avise les forces de l’ordre si le porteur entre dans la zone d’alerte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00028",
+                      "et prend attache avec la victime pour lui donner des conseils de mise en sûreté.",
+                    ),
+              ),
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00029",
+                  "Forces de l’ordre",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00030",
+                  "Sont saisies lorsque le porteur du BAR pénètre dans la zone d’alerte.",
+                ),
               ),
             ],
           ),
@@ -215,48 +337,113 @@ class ViolationBarPage extends StatelessWidget {
 
           // Comment on fait
           _ConditionCard(
-            title: "V — Comment on fait ? (déclenchement & intervention)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00031",
+              "V — Comment on fait ? (déclenchement & intervention)",
+            ),
             cardColor: cardProcedure,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Modalités"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00032",
+                  "1) Modalités",
+                ),
+              ),
               _Paragraph(
-                "Lors d’une intrusion dans la zone d’alerte, le téléopérateur saisit le CIC en transmettant "
-                "une demande d’intervention par le réseau RAMSES.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00033",
+                      "Lors d’une intrusion dans la zone d’alerte, le téléopérateur saisit le CIC en transmettant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00034",
+                      "une demande d’intervention par le réseau RAMSES.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Intervention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00035",
+                  "2) Intervention",
+                ),
+              ),
               _Paragraph(
-                "Pendant toute l’intervention, un téléopérateur reste en contact avec la personne à protéger "
-                "et le porteur du BAR.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00036",
+                      "Pendant toute l’intervention, un téléopérateur reste en contact avec la personne à protéger ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00037",
+                      "et le porteur du BAR.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Un second reste en relation avec le CIC, annonce la géolocalisation de la victime et de l’auteur en temps réel "
-                "et transmet les informations opérationnelles complémentaires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00038",
+                      "Un second reste en relation avec le CIC, annonce la géolocalisation de la victime et de l’auteur en temps réel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00039",
+                      "et transmet les informations opérationnelles complémentaires.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("3) Fin de mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00040",
+                  "3) Fin de mission",
+                ),
+              ),
               _Paragraph(
-                "La victime est considérée comme mise en sûreté dans les hypothèses suivantes :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00041",
+                  "La victime est considérée comme mise en sûreté dans les hypothèses suivantes :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Le porteur du BAR a été interpellé."),
               _BulletPoint(
-                text:
-                    "Le porteur du BAR a quitté la zone d’alerte ou de pré-alerte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00042",
+                  "Le porteur du BAR a été interpellé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La victime est conduite dans un lieu non connu de l’auteur (si nécessaire : proposition d’un hébergement d’urgence).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00043",
+                  "Le porteur du BAR a quitté la zone d’alerte ou de pré-alerte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00044",
+                  "La victime est conduite dans un lieu non connu de l’auteur (si nécessaire : proposition d’un hébergement d’urgence).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Une enquête judiciaire est ouverte après l’intervention des forces de l’ordre.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00045",
+                      "Une enquête judiciaire est ouverte après l’intervention des forces de l’ordre.",
+                    ),
                   ),
                 ],
               ),
@@ -267,45 +454,87 @@ class ViolationBarPage extends StatelessWidget {
 
           // Objectifs équipe intervenante + coercition
           _ConditionCard(
-            title: "VI — Priorités opérationnelles & coercition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+              "f00046",
+              "VI — Priorités opérationnelles & coercition",
+            ),
             cardColor: cardObj,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Deux objectifs pour l’équipe intervenante"),
-              _BulletPoint(
-                text:
-                    "Mission prioritaire : mise à l’abri de la personne à protéger.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00047",
+                  "Deux objectifs pour l’équipe intervenante",
+                ),
               ),
               _BulletPoint(
-                text: "Mission secondaire : interpellation du porteur du BAR.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00048",
+                  "Mission prioritaire : mise à l’abri de la personne à protéger.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00049",
+                  "Mission secondaire : interpellation du porteur du BAR.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 title: "COERCITION",
                 bodySpans: [
                   TextSpan(
-                    text: "La coercition est possible dans le cadre de la ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00050",
+                      "La coercition est possible dans le cadre de la ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "violation de la mesure d’interdiction de se rapprocher",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00051",
+                      "violation de la mesure d’interdiction de se rapprocher",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " de la personne protégée."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                      "f00052",
+                      " de la personne protégée.",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "À COMPLÉTER",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                  "f00053",
+                  "À COMPLÉTER",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si tu me donnes l’article exact (CP/CPP/CSI) qui réprime la violation du BAR, "
-                        "je le mets ici en rouge, en tête de section, comme demandé.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                          "f00054",
+                          "Si tu me donnes l’article exact (CP/CPP/CSI) qui réprime la violation du BAR, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart",
+                          "f00055",
+                          "je le mets ici en rouge, en tête de section, comme demandé.",
+                        ),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ControleMissionJudiciairePage extends StatelessWidget {
   const ControleMissionJudiciairePage({super.key});
@@ -25,10 +26,18 @@ class ControleMissionJudiciairePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Le contrôle de la mission de police judiciaire',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+            "f00002",
+            'Le contrôle de la mission de police judiciaire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class ControleMissionJudiciairePage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Le contrôle de la mission de police judiciaire',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+              "f00003",
+              'Le contrôle de la mission de police judiciaire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -63,15 +76,35 @@ class ControleMissionJudiciairePage extends StatelessWidget {
                 color: textSoft,
               ),
               children: [
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Les membres de la police sont des fonctionnaires insérés dans le cadre d’une administration hiérarchisée et, '
-                      'à ce titre, contrôlés par leurs supérieurs. En raison de l’importance des pouvoirs de police judiciaire, '
-                      'qui impliquent des investigations dérogatoires au principe de la liberté individuelle, un contrôle de nature '
-                      'judiciaire est exercé par les magistrats garants de la liberté des citoyens. ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+                        "f00004",
+                        'Les membres de la police sont des fonctionnaires insérés dans le cadre d’une administration hiérarchisée et, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+                        "f00005",
+                        'à ce titre, contrôlés par leurs supérieurs. En raison de l’importance des pouvoirs de police judiciaire, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+                        "f00006",
+                        'qui impliquent des investigations dérogatoires au principe de la liberté individuelle, un contrôle de nature ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+                        "f00007",
+                        'judiciaire est exercé par les magistrats garants de la liberté des citoyens. ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'L’Article 13 du Code de Procédure Pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+                    "f00008",
+                    'L’Article 13 du Code de Procédure Pénale',
+                  ),
                   style: GoogleFonts.fustat(
                     fontWeight: FontWeight.w800,
                     fontSize: 13.5,
@@ -79,10 +112,18 @@ class ControleMissionJudiciairePage extends StatelessWidget {
                     color: Colors.red,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' précise que la police judiciaire est placée sous la surveillance du procureur général près la cour d’appel '
-                      'et sous le contrôle de la chambre de l’instruction.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+                        "f00009",
+                        ' précise que la police judiciaire est placée sous la surveillance du procureur général près la cour d’appel ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+                        "f00010",
+                        'et sous le contrôle de la chambre de l’instruction.',
+                      ),
                 ),
               ],
             ),
@@ -93,10 +134,16 @@ class ControleMissionJudiciairePage extends StatelessWidget {
           // =============== CHAPITRE 1 — PROCUREUR GÉNÉRAL ===================
           _ModuleCard(
             tag: 'pp_controle_pj_chap1_procureur_general',
-            title:
-                'Chapitre 1 : Le rôle du procureur général près la cour d’appel',
-            subtitle:
-                'Surveillance de la police judiciaire, pouvoir d’orientation, directives et contrôle de l’action des enquêteurs au niveau de la cour d’appel.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+              "f00011",
+              'Chapitre 1 : Le rôle du procureur général près la cour d’appel',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+              "f00012",
+              'Surveillance de la police judiciaire, pouvoir d’orientation, directives et contrôle de l’action des enquêteurs au niveau de la cour d’appel.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -110,10 +157,16 @@ class ControleMissionJudiciairePage extends StatelessWidget {
           // ======= CHAPITRE 2 — INSPECTION GÉNÉRALE DE LA JUSTICE ===========
           _ModuleCard(
             tag: 'pp_controle_pj_chap2_inspection_generale_justice',
-            title:
-                'Chapitre 2 : Le rôle de l’Inspection générale de la justice',
-            subtitle:
-                'Contrôle externe, inspections, audits des services et enquêtes administratives sur le fonctionnement de la justice et de la police judiciaire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+              "f00013",
+              'Chapitre 2 : Le rôle de l’Inspection générale de la justice',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+              "f00014",
+              'Contrôle externe, inspections, audits des services et enquêtes administratives sur le fonctionnement de la justice et de la police judiciaire.',
+            ),
             imagePath: 'assets/images/controle_identite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -127,9 +180,16 @@ class ControleMissionJudiciairePage extends StatelessWidget {
           // ======== CHAPITRE 3 — CHAMBRE DE L’INSTRUCTION ===================
           _ModuleCard(
             tag: 'pp_controle_pj_chap3_chambre_instruction',
-            title: 'Chapitre 3 : Le rôle de la chambre de l’instruction',
-            subtitle:
-                'Organe de contrôle juridictionnel, vérification de la régularité des actes, protection des libertés individuelles et contrôle des enquêtes.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+              "f00015",
+              'Chapitre 3 : Le rôle de la chambre de l’instruction',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/controle_mission_contenu_page.dart",
+              "f00016",
+              'Organe de contrôle juridictionnel, vérification de la régularité des actes, protection des libertés individuelles et contrôle des enquêtes.',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,

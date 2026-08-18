@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FicheImmobilisationPage extends StatelessWidget {
   const FicheImmobilisationPage({super.key});
@@ -36,10 +37,18 @@ class FicheImmobilisationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Formulaires utiles",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+            "f00002",
+            "Formulaires utiles",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -54,7 +63,11 @@ class FicheImmobilisationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Fiche d’immobilisation",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+              "f00003",
+              "Fiche d’immobilisation",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -65,15 +78,31 @@ class FicheImmobilisationPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Document à compléter",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+              "f00004",
+              "Document à compléter",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tu trouveras ci-dessous la fiche d’immobilisation (recto + verso). "
-                "Tu peux zoomer/pincer et déplacer l’image.\n\n"
-                "Astuce : appuie sur l’image pour l’ouvrir en plein écran.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+                      "f00005",
+                      "Tu trouveras ci-dessous la fiche d’immobilisation (recto + verso). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+                      "f00006",
+                      "Tu peux zoomer/pincer et déplacer l’image.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+                      "f00007",
+                      "Astuce : appuie sur l’image pour l’ouvrir en plein écran.",
+                    ),
               ),
             ],
           ),
@@ -185,7 +214,11 @@ class _FullScreenZoom extends StatelessWidget {
           tooltip: 'Fermer',
         ),
         title: Text(
-          "Aperçu",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/formulaires_utiles/fiche_immobilisation_page.dart",
+            "f00008",
+            "Aperçu",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -458,9 +491,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

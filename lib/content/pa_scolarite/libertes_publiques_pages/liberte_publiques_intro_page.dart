@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — L’LibertesPubliques (SPLASH IA 2025)
@@ -33,7 +34,8 @@ class PaLibertesPubliquesIntroPage extends StatefulWidget {
       _LibertesPubliquesIntroPageState();
 }
 
-class _LibertesPubliquesIntroPageState extends State<PaLibertesPubliquesIntroPage>
+class _LibertesPubliquesIntroPageState
+    extends State<PaLibertesPubliquesIntroPage>
     with TickerProviderStateMixin {
   // === EDITABLE — CONFIG ===
   static const String _kBackgroundPath = 'assets/images/reserve.jpeg';
@@ -41,7 +43,8 @@ class _LibertesPubliquesIntroPageState extends State<PaLibertesPubliquesIntroPag
   static const BoxFit _kFit = BoxFit.cover;
 
   // Cible : ta page contenu existante
-  static const String _kTargetRouteName = PaLibertesPubliquesContenuPage.routeName;
+  static const String _kTargetRouteName =
+      PaLibertesPubliquesContenuPage.routeName;
 
   // Animations
   late final AnimationController _fadeCtrl = AnimationController(
@@ -62,7 +65,11 @@ class _LibertesPubliquesIntroPageState extends State<PaLibertesPubliquesIntroPag
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LES LIBERTÉS PUBLIQUES';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_intro_page.dart",
+    "f00001",
+    'LES LIBERTÉS PUBLIQUES',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -172,7 +179,11 @@ class _LibertesPubliquesIntroPageState extends State<PaLibertesPubliquesIntroPag
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Structure, éléments et repères clés.\nPrêt(e) pour un survol éclair avant la fiche complète ?",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_intro_page.dart",
+                        "f00002",
+                        "Structure, éléments et repères clés.\nPrêt(e) pour un survol éclair avant la fiche complète ?",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -277,7 +288,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

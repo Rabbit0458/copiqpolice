@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
 import 'package:copiqpolice/content/gpx_scolarite/shared/plainte_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ProcedurePenalePage extends StatefulWidget {
   static const routeName = '/procedure_penale';
@@ -40,10 +41,18 @@ class _ProcedurePenalePageState extends State<ProcedurePenalePage> {
   Future<void> _toggleFavorite() async {
     setState(() => _isFav = !_isFav);
     await FavoritesStore.I.toggle(
-      const FavoriteItem(
+      FavoriteItem(
         route: ProcedurePenalePage.routeName,
-        title: 'Procédure Pénale',
-        subtitle: 'Cadres juridiques et actes de PJ',
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+          "f00001",
+          'Procédure Pénale',
+        ),
+        subtitle: ScolariteText.value(
+          "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+          "f00002",
+          'Cadres juridiques et actes de PJ',
+        ),
         image: 'assets/images/procedure_penale.jpg',
         rating: 4.9,
         reviews: 215,
@@ -89,7 +98,13 @@ class _ProcedurePenalePageState extends State<ProcedurePenalePage> {
                   Expanded(
                     child: FilledButton.icon(
                       icon: const Icon(Icons.how_to_vote_rounded),
-                      label: const Text('Ouvrir la page Plainte'),
+                      label: Text(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                          "f00003",
+                          'Ouvrir la page Plainte',
+                        ),
+                      ),
                       onPressed: () {
                         Navigator.of(context).push(
                           MaterialPageRoute(
@@ -111,7 +126,11 @@ class _ProcedurePenalePageState extends State<ProcedurePenalePage> {
               padding: const EdgeInsets.fromLTRB(16, 0, 16, 8),
               child: _SearchPill(
                 controller: _search,
-                hint: 'Rechercher (ex: contrôle d’identité, GAV, plainte…)',
+                hint: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00004",
+                  'Rechercher (ex: contrôle d’identité, GAV, plainte…)',
+                ),
                 onChanged: (v) => setState(() => _q = v.trim()),
               ),
             ),
@@ -123,7 +142,11 @@ class _ProcedurePenalePageState extends State<ProcedurePenalePage> {
               hasScrollBody: false,
               child: Center(
                 child: Text(
-                  'Aucun résultat',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00005",
+                    'Aucun résultat',
+                  ),
                   style: tt.titleMedium?.copyWith(color: cs.outline),
                 ),
               ),
@@ -198,12 +221,18 @@ class _HeroHeader extends StatelessWidget {
             Positioned(
               right: -30,
               top: -20,
-              child: _SoftBlob(color: cs.primary.withValues(alpha: .08), size: 160),
+              child: _SoftBlob(
+                color: cs.primary.withValues(alpha: .08),
+                size: 160,
+              ),
             ),
             Positioned(
               left: -20,
               bottom: -30,
-              child: _SoftBlob(color: cs.secondary.withValues(alpha: .06), size: 140),
+              child: _SoftBlob(
+                color: cs.secondary.withValues(alpha: .06),
+                size: 140,
+              ),
             ),
 
             // contenu
@@ -233,7 +262,7 @@ class _HeroHeader extends StatelessWidget {
                           ),
                         ),
                         const Spacer(),
-                        const Wrap(
+                        Wrap(
                           spacing: 8,
                           runSpacing: 8,
                           children: [
@@ -243,7 +272,11 @@ class _HeroHeader extends StatelessWidget {
                             ),
                             _TinyTag(
                               icon: Icons.edit_note_rounded,
-                              label: 'Trames PV',
+                              label: ScolariteText.value(
+                                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                                "f00007",
+                                'Trames PV',
+                              ),
                             ),
                             _TinyTag(icon: Icons.quiz_rounded, label: 'Quiz'),
                           ],
@@ -260,8 +293,16 @@ class _HeroHeader extends StatelessWidget {
                     ),
                     color: isFav ? Colors.redAccent : null,
                     tooltip: isFav
-                        ? 'Retirer des favoris'
-                        : 'Ajouter aux favoris',
+                        ? ScolariteText.value(
+                            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                            "f00008",
+                            'Retirer des favoris',
+                          )
+                        : ScolariteText.value(
+                            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                            "f00009",
+                            'Ajouter aux favoris',
+                          ),
                   ),
                 ],
               ),
@@ -302,11 +343,15 @@ class _SearchPill extends StatelessWidget {
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: cs.outlineVariant.withValues(alpha: .5)),
+          borderSide: BorderSide(
+            color: cs.outlineVariant.withValues(alpha: .5),
+          ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: cs.outlineVariant.withValues(alpha: .5)),
+          borderSide: BorderSide(
+            color: cs.outlineVariant.withValues(alpha: .5),
+          ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
@@ -462,7 +507,13 @@ class _ChapterTile extends StatelessWidget {
                   child: FilledButton.icon(
                     onPressed: () => onStartQuiz(chapter.quiz!, chapter.title),
                     icon: const Icon(Icons.quiz_rounded, size: 18),
-                    label: const Text('Commencer le quiz'),
+                    label: Text(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                        "f00011",
+                        'Commencer le quiz',
+                      ),
+                    ),
                   ),
                 ),
               ],
@@ -606,7 +657,11 @@ class _QuizPageState extends State<_QuizPage> {
                       onPressed: _sel == null ? null : _next,
                       child: Text(
                         _i < widget.quiz.questions.length - 1
-                            ? 'Question suivante'
+                            ? ScolariteText.value(
+                                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                                "f00014",
+                                'Question suivante',
+                              )
                             : 'Terminer',
                       ),
                     ),
@@ -650,7 +705,11 @@ class _QuizPageState extends State<_QuizPage> {
       setState(() => _done = true);
       AppNotifier.success(
         context,
-        title: 'Quiz terminé',
+        title: ScolariteText.value(
+          "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+          "f00015",
+          'Quiz terminé',
+        ),
         message: 'Score: $_score/${widget.quiz.questions.length}',
       );
     }
@@ -659,12 +718,28 @@ class _QuizPageState extends State<_QuizPage> {
   Widget _result(TextTheme tt) {
     final p = _score / widget.quiz.questions.length;
     String msg = p == 1
-        ? 'Excellent !'
+        ? ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00017",
+            'Excellent !',
+          )
         : p >= .7
-        ? 'Très bon résultat !'
+        ? ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00018",
+            'Très bon résultat !',
+          )
         : p >= .5
-        ? 'Correct, continue.'
-        : 'Revois le chapitre et réessaie.';
+        ? ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00019",
+            'Correct, continue.',
+          )
+        : ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00020",
+            'Revois le chapitre et réessaie.',
+          );
 
     return Center(
       child: Column(
@@ -687,7 +762,13 @@ class _QuizPageState extends State<_QuizPage> {
               Expanded(
                 child: OutlinedButton(
                   onPressed: () => Navigator.pop(context),
-                  child: const Text('Retour'),
+                  child: Text(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                      "f00022",
+                      'Retour',
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(width: 10),
@@ -762,28 +843,76 @@ class _Question {
 
 List<_Section> _demoData() {
   return [
-    const _Section(
+    _Section(
       id: 'ci',
-      title: 'Contrôles & vérifications d’identité',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+        "f00023",
+        'Contrôles & vérifications d’identité',
+      ),
       icon: Icons.badge_rounded,
-      badge: 'Art. 78-2 CPP',
+      badge: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+        "f00024",
+        'Art. 78-2 CPP',
+      ),
       chapters: [
         _Chapter(
-          id: 'ci-cadre',
-          title: 'Cadre général du contrôle',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00025",
+            'ci-cadre',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00026",
+            'Cadre général du contrôle',
+          ),
           content:
-              'Personnes concernées : toute personne sur le territoire national.\n'
-              'Autorités habilitées : OPJ, APJ sur ordre des OPJ.\n'
-              'Exclusions : volontaires gendarmerie, police municipale, policiers adjoints.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00027",
+                'Personnes concernées : toute personne sur le territoire national.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00028",
+                'Autorités habilitées : OPJ, APJ sur ordre des OPJ.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00029",
+                'Exclusions : volontaires gendarmerie, police municipale, policiers adjoints.',
+              ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'Qui peut procéder à un contrôle d’identité ?',
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00030",
+                  'Qui peut procéder à un contrôle d’identité ?',
+                ),
                 options: [
-                  'Les OPJ uniquement',
-                  'Les OPJ et les APJ sur ordre des OPJ',
-                  'Tous les fonctionnaires de police',
-                  'Les agents de police municipale',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00031",
+                    'Les OPJ uniquement',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00032",
+                    'Les OPJ et les APJ sur ordre des OPJ',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00033",
+                    'Tous les fonctionnaires de police',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00034",
+                    'Les agents de police municipale',
+                  ),
                 ],
                 answerIndex: 1,
               ),
@@ -791,21 +920,61 @@ List<_Section> _demoData() {
           ),
         ),
         _Chapter(
-          id: 'ci-cas',
-          title: 'Cas de contrôle d’identité',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00035",
+            'ci-cas',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00036",
+            'Cas de contrôle d’identité',
+          ),
           content:
-              'Police judiciaire : infraction commise/tentée, préparation crime/délit, renseignements utiles, violation obligations judiciaires, recherches PJ.\n\n'
-              'Préventif : prévention atteinte à l’ordre public, lieux publics, circonstances particulières.\n\n'
-              'Zone frontalière : 20 km des frontières Schengen, ports/aéroports internationaux, criminalité transfrontalière.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00037",
+                'Police judiciaire : infraction commise/tentée, préparation crime/délit, renseignements utiles, violation obligations judiciaires, recherches PJ.\n\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00038",
+                'Préventif : prévention atteinte à l’ordre public, lieux publics, circonstances particulières.\n\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00039",
+                'Zone frontalière : 20 km des frontières Schengen, ports/aéroports internationaux, criminalité transfrontalière.',
+              ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'Un contrôle préventif peut être effectué :',
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00040",
+                  'Un contrôle préventif peut être effectué :',
+                ),
                 options: [
-                  'Dans un domicile privé',
-                  'Uniquement sur personne suspecte',
-                  'Dans des lieux publics',
-                  'De façon systématique sans motif',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00041",
+                    'Dans un domicile privé',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00042",
+                    'Uniquement sur personne suspecte',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00043",
+                    'Dans des lieux publics',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00044",
+                    'De façon systématique sans motif',
+                  ),
                 ],
                 answerIndex: 2,
               ),
@@ -813,15 +982,51 @@ List<_Section> _demoData() {
           ),
         ),
         _Chapter(
-          id: 'ci-verif',
-          title: 'Vérification d’identité',
-          content:
-              'Durée maximale : 4h (8h à Mayotte/Guyane). Présentation à l’OPJ, information des droits, empreintes/photos avec autorisation magistrat, PV obligatoire, pas de mise en mémoire si sans suite.',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00045",
+            'ci-verif',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00046",
+            'Vérification d’identité',
+          ),
+          content: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00047",
+            'Durée maximale : 4h (8h à Mayotte/Guyane). Présentation à l’OPJ, information des droits, empreintes/photos avec autorisation magistrat, PV obligatoire, pas de mise en mémoire si sans suite.',
+          ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'Durée maximale de rétention pour vérification d’identité :',
-                options: ['24 heures', '4 heures', '8 heures', '12 heures'],
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00048",
+                  'Durée maximale de rétention pour vérification d’identité :',
+                ),
+                options: [
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00049",
+                    '24 heures',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00050",
+                    '4 heures',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00051",
+                    '8 heures',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00052",
+                    '12 heures',
+                  ),
+                ],
                 answerIndex: 1,
               ),
             ],
@@ -829,26 +1034,66 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    const _Section(
+    _Section(
       id: 'flagrance',
-      title: 'Enquête de flagrance',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+        "f00053",
+        'Enquête de flagrance',
+      ),
       icon: Icons.warning_amber_rounded,
       chapters: [
         _Chapter(
-          id: 'flagrance-notion',
-          title: 'Notion de flagrance',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00054",
+            'flagrance-notion',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00055",
+            'Notion de flagrance',
+          ),
           content:
-              'Proprement dite : crime/délit en train de se commettre ou venant de se commettre.\n'
-              'Par présomption : clameur publique, découverte d’objets/traces/indices.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00056",
+                'Proprement dite : crime/délit en train de se commettre ou venant de se commettre.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00057",
+                'Par présomption : clameur publique, découverte d’objets/traces/indices.',
+              ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'La flagrance par présomption peut résulter de :',
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00058",
+                  'La flagrance par présomption peut résulter de :',
+                ),
                 options: [
-                  'Une rumeur',
-                  'La clameur publique',
-                  'Un simple soupçon',
-                  'Un rapport anonyme',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00059",
+                    'Une rumeur',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00060",
+                    'La clameur publique',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00061",
+                    'Un simple soupçon',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00062",
+                    'Un rapport anonyme',
+                  ),
                 ],
                 answerIndex: 1,
               ),
@@ -856,33 +1101,119 @@ List<_Section> _demoData() {
           ),
         ),
         _Chapter(
-          id: 'flagrance-procedure',
-          title: 'Procédure & durée',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00063",
+            'flagrance-procedure',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00064",
+            'Procédure & durée',
+          ),
           content:
-              'Durée initiale : 8 jours sans discontinuer, prolongeable +8 jours sur décision PR.\n'
-              'Actes : constatations, perquisitions, saisies, auditions, GAV, réquisitions.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00065",
+                'Durée initiale : 8 jours sans discontinuer, prolongeable +8 jours sur décision PR.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00066",
+                'Actes : constatations, perquisitions, saisies, auditions, GAV, réquisitions.',
+              ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'Durée initiale d’une enquête de flagrance :',
-                options: ['24 heures', '8 jours', '15 jours', '48 heures'],
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00067",
+                  'Durée initiale d’une enquête de flagrance :',
+                ),
+                options: [
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00068",
+                    '24 heures',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00069",
+                    '8 jours',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00070",
+                    '15 jours',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00071",
+                    '48 heures',
+                  ),
+                ],
                 answerIndex: 1,
               ),
             ],
           ),
         ),
         _Chapter(
-          id: 'flagrance-gav',
-          title: 'Garde à vue — droit commun',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00072",
+            'flagrance-gav',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00073",
+            'Garde à vue — droit commun',
+          ),
           content:
-              'Conditions : soupçon plausible, crime/délit puni d’emprisonnement, nécessité pour l’enquête.\n'
-              'Durée : 24h renouvelable 24h.\n'
-              'Droits : information, avis proche/employeur, avocat, médecin, silence.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00074",
+                'Conditions : soupçon plausible, crime/délit puni d’emprisonnement, nécessité pour l’enquête.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00075",
+                'Durée : 24h renouvelable 24h.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                "f00076",
+                'Droits : information, avis proche/employeur, avocat, médecin, silence.',
+              ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'Durée maximale de GAV sans prolongation :',
-                options: ['48 heures', '24 heures', '72 heures', '12 heures'],
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00077",
+                  'Durée maximale de GAV sans prolongation :',
+                ),
+                options: [
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00078",
+                    '48 heures',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00079",
+                    '24 heures',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00080",
+                    '72 heures',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00081",
+                    '12 heures',
+                  ),
+                ],
                 answerIndex: 1,
               ),
             ],
@@ -890,25 +1221,60 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    const _Section(
+    _Section(
       id: 'prelim',
-      title: 'Enquête préliminaire',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+        "f00082",
+        'Enquête préliminaire',
+      ),
       icon: Icons.search_rounded,
       chapters: [
         _Chapter(
-          id: 'prelim-cadre',
-          title: 'Cadre & caractéristiques',
-          content:
-              'Ouverte par OPJ ou sur réquisition PR. Pas de délai légal maximum. Actes moins coercitifs qu’en flagrance. Contradictoire possible.',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00083",
+            'prelim-cadre',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00084",
+            'Cadre & caractéristiques',
+          ),
+          content: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00085",
+            'Ouverte par OPJ ou sur réquisition PR. Pas de délai légal maximum. Actes moins coercitifs qu’en flagrance. Contradictoire possible.',
+          ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'L’enquête préliminaire :',
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00086",
+                  'L’enquête préliminaire :',
+                ),
                 options: [
-                  'Dure max 8 jours',
-                  'N’a pas de durée maximale fixée',
-                  'Dure max 6 mois',
-                  'Est limitée à 48 heures',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00087",
+                    'Dure max 8 jours',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00088",
+                    'N’a pas de durée maximale fixée',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00089",
+                    'Dure max 6 mois',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00090",
+                    'Est limitée à 48 heures',
+                  ),
                 ],
                 answerIndex: 1,
               ),
@@ -917,21 +1283,57 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    const _Section(
+    _Section(
       id: 'cr',
-      title: 'Commission rogatoire',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+        "f00091",
+        'Commission rogatoire',
+      ),
       icon: Icons.assignment_rounded,
       chapters: [
         _Chapter(
-          id: 'cr-delegation',
-          title: 'Délégation d’enquête',
-          content:
-              'Délivrée par le juge d’instruction. OPJ commis pour actes déterminés, sous contrôle du juge. Respect strict du mandat.',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00092",
+            'cr-delegation',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00093",
+            'Délégation d’enquête',
+          ),
+          content: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00094",
+            'Délivrée par le juge d’instruction. OPJ commis pour actes déterminés, sous contrôle du juge. Respect strict du mandat.',
+          ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'Qui délivre la commission rogatoire ?',
-                options: ['PR', 'Juge d’instruction', 'OPJ en chef', 'Préfet'],
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00095",
+                  'Qui délivre la commission rogatoire ?',
+                ),
+                options: [
+                  'PR',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00096",
+                    'Juge d’instruction',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00097",
+                    'OPJ en chef',
+                  ),
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                    "f00098",
+                    'Préfet',
+                  ),
+                ],
                 answerIndex: 1,
               ),
             ],
@@ -939,20 +1341,39 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    const _Section(
+    _Section(
       id: 'co',
-      title: 'Criminalité organisée',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+        "f00099",
+        'Criminalité organisée',
+      ),
       icon: Icons.security_rounded,
       chapters: [
         _Chapter(
-          id: 'co-derog',
-          title: 'Mesures dérogatoires',
-          content:
-              'GAV jusqu’à 96h, perquisitions de nuit possibles, techniques spéciales (infiltration, surveillances).',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00100",
+            'co-derog',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00101",
+            'Mesures dérogatoires',
+          ),
+          content: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00102",
+            'GAV jusqu’à 96h, perquisitions de nuit possibles, techniques spéciales (infiltration, surveillances).',
+          ),
           quiz: _Quiz(
             questions: [
               _Question(
-                q: 'Durée maximale de GAV en criminalité organisée :',
+                q: ScolariteText.value(
+                  "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+                  "f00103",
+                  'Durée maximale de GAV en criminalité organisée :',
+                ),
                 options: ['24h', '48h', '96h', '72h'],
                 answerIndex: 2,
               ),
@@ -961,28 +1382,65 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    const _Section(
+    _Section(
       id: 'cas',
-      title: 'Cas particuliers',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+        "f00104",
+        'Cas particuliers',
+      ),
       icon: Icons.cases_rounded,
       chapters: [
         _Chapter(
-          id: 'cas-mci',
-          title: 'Mort cause inconnue',
-          content:
-              'Art. 74 et 80-4 CPP : enquête sur les causes, transport sur les lieux, constatations/réquisitions, autopsie si nécessaire.',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00105",
+            'cas-mci',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00106",
+            'Mort cause inconnue',
+          ),
+          content: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00107",
+            'Art. 74 et 80-4 CPP : enquête sur les causes, transport sur les lieux, constatations/réquisitions, autopsie si nécessaire.',
+          ),
         ),
         _Chapter(
-          id: 'cas-disparition',
-          title: 'Disparitions inquiétantes',
-          content:
-              'Art. 74-1 CPP : disparition flagrante et inquiétante, investigations immédiates, moyens adaptés.',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00108",
+            'cas-disparition',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00109",
+            'Disparitions inquiétantes',
+          ),
+          content: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00110",
+            'Art. 74-1 CPP : disparition flagrante et inquiétante, investigations immédiates, moyens adaptés.',
+          ),
         ),
         _Chapter(
-          id: 'cas-grievement',
-          title: 'Personnes grièvement blessées',
-          content:
-              'Art. 74 al.6 CPP : cause inconnue/suspecte, constatations urgentes, préservation des preuves.',
+          id: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00111",
+            'cas-grievement',
+          ),
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00112",
+            'Personnes grièvement blessées',
+          ),
+          content: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/procedure_penale_page.dart",
+            "f00113",
+            'Art. 74 al.6 CPP : cause inconnue/suspecte, constatations urgentes, préservation des preuves.',
+          ),
         ),
       ],
     ),

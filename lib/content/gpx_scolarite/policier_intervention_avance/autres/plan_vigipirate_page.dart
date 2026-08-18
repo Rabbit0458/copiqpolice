@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PlanVigipiratePage extends StatelessWidget {
   const PlanVigipiratePage({super.key});
@@ -58,10 +59,18 @@ class PlanVigipiratePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Police en intervention",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+            "f00002",
+            "Police en intervention",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -76,7 +85,11 @@ class PlanVigipiratePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le plan Vigipirate",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+              "f00003",
+              "Le plan Vigipirate",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,7 +99,11 @@ class PlanVigipiratePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Mis à jour le 15/06/2025",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+              "f00004",
+              "Mis à jour le 15/06/2025",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w700,
               fontSize: 13.5,
@@ -97,22 +114,42 @@ class PlanVigipiratePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (le texte ne donne pas d’article précis CP/CPP/CSI)
           _ConditionCard(
-            title: "Cadre légal (à compléter)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+              "f00005",
+              "Cadre légal (à compléter)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le texte fourni décrit le plan Vigipirate (plan gouvernemental relevant du Premier ministre) "
-                        "mais ne mentionne pas d’articles précis (CP/CPP/CSI). "
-                        "Si tu veux un article en rouge ici, envoie-moi la référence exacte et je l’intègre (ex. ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                          "f00006",
+                          "Le texte fourni décrit le plan Vigipirate (plan gouvernemental relevant du Premier ministre) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                          "f00007",
+                          "mais ne mentionne pas d’articles précis (CP/CPP/CSI). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                          "f00008",
+                          "Si tu veux un article en rouge ici, envoie-moi la référence exacte et je l’intègre (ex. ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Article 123 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00009",
+                      "Article 123 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -132,22 +169,54 @@ class PlanVigipiratePage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le plan Vigipirate est un plan gouvernemental qui relève du Premier ministre. "
-                "Outil central de lutte contre le terrorisme, son dispositif permanent de vigilance, de prévention et de protection "
-                "associe l’ensemble des acteurs du pays : collectivités territoriales, opérateurs susceptibles de concourir à la protection "
-                "et à la vigilance, ainsi que les citoyens.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00010",
+                      "Le plan Vigipirate est un plan gouvernemental qui relève du Premier ministre. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00011",
+                      "Outil central de lutte contre le terrorisme, son dispositif permanent de vigilance, de prévention et de protection ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00012",
+                      "associe l’ensemble des acteurs du pays : collectivités territoriales, opérateurs susceptibles de concourir à la protection ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00013",
+                      "et à la vigilance, ainsi que les citoyens.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il est alimenté par les services de renseignement et repose sur un socle permanent "
-                "s’appliquant aux grands domaines d’activité de la société (transports, santé, réseaux d’énergie, alimentation, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00014",
+                      "Il est alimenté par les services de renseignement et repose sur un socle permanent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00015",
+                      "s’appliquant aux grands domaines d’activité de la société (transports, santé, réseaux d’énergie, alimentation, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "En cas d’évolution de la menace terroriste et des vulnérabilités, des mesures additionnelles adaptatives "
-                "peuvent être activées, mobilisant les différents acteurs concernés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00016",
+                      "En cas d’évolution de la menace terroriste et des vulnérabilités, des mesures additionnelles adaptatives ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00017",
+                      "peuvent être activées, mobilisant les différents acteurs concernés.",
+                    ),
               ),
             ],
           ),
@@ -156,50 +225,100 @@ class PlanVigipiratePage extends StatelessWidget {
 
           // I - Principes & objectifs
           _ConditionCard(
-            title: "I — Principes & objectifs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+              "f00018",
+              "I — Principes & objectifs",
+            ),
             cardColor: cardPillars,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Les 3 piliers"),
-              _IntroBullet(
-                text:
-                    "Vigilance : liée à la connaissance de la menace terroriste et à sa juste prise en compte afin d’ajuster les comportements et les mesures de protection.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00019",
+                  "Les 3 piliers",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Prévention : s’appuie sur la sensibilisation des agents de l’État, des opérateurs et des citoyens, la connaissance du dispositif national et la préparation des moyens de protection et de réponse.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00020",
+                  "Vigilance : liée à la connaissance de la menace terroriste et à sa juste prise en compte afin d’ajuster les comportements et les mesures de protection.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Protection : repose sur un éventail de mesures adaptables en permanence pour réduire les vulnérabilités sans contraintes disproportionnées sur la vie économique et sociale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00021",
+                  "Prévention : s’appuie sur la sensibilisation des agents de l’État, des opérateurs et des citoyens, la connaissance du dispositif national et la préparation des moyens de protection et de réponse.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00022",
+                  "Protection : repose sur un éventail de mesures adaptables en permanence pour réduire les vulnérabilités sans contraintes disproportionnées sur la vie économique et sociale.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Les 3 démarches de mise en œuvre"),
-              _BulletPoint(
-                text:
-                    "Évaluer la menace terroriste en France et à l’encontre des ressortissants/intérêts français à l’étranger.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00023",
+                  "Les 3 démarches de mise en œuvre",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Connaître les vulnérabilités des principales cibles potentielles afin de les réduire et limiter préventivement les effets d’une attaque.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00024",
+                  "Évaluer la menace terroriste en France et à l’encontre des ressortissants/intérêts français à l’étranger.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Adapter la posture Vigipirate en déterminant un dispositif de sécurité répondant au niveau de risque.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00025",
+                  "Connaître les vulnérabilités des principales cibles potentielles afin de les réduire et limiter préventivement les effets d’une attaque.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00026",
+                  "Adapter la posture Vigipirate en déterminant un dispositif de sécurité répondant au niveau de risque.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Les 3 grands objectifs"),
-              _BulletPoint(
-                text:
-                    "Développer une culture de la sécurité au sein de la société.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00027",
+                  "Les 3 grands objectifs",
+                ),
               ),
               _BulletPoint(
-                text: "Créer des niveaux mieux adaptés à la menace.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00028",
+                  "Développer une culture de la sécurité au sein de la société.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mettre en œuvre de nouvelles mesures découlant des dernières évolutions législatives.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00029",
+                  "Créer des niveaux mieux adaptés à la menace.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00030",
+                  "Mettre en œuvre de nouvelles mesures découlant des dernières évolutions législatives.",
+                ),
               ),
             ],
           ),
@@ -208,46 +327,124 @@ class PlanVigipiratePage extends StatelessWidget {
 
           // II - Acteurs
           _ConditionCard(
-            title: "II — Acteurs de la sécurité nationale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+              "f00031",
+              "II — Acteurs de la sécurité nationale",
+            ),
             cardColor: cardActors,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("L’État"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00032",
+                  "L’État",
+                ),
+              ),
               _Paragraph(
-                "Le Premier ministre décide la mise en œuvre des dispositions et mesures prévues par le plan. "
-                "Le ministre de l’Intérieur veille à la bonne exécution opérationnelle sur l’ensemble du territoire. "
-                "Chaque ministre met en œuvre les consignes appropriées dans son domaine.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00033",
+                      "Le Premier ministre décide la mise en œuvre des dispositions et mesures prévues par le plan. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00034",
+                      "Le ministre de l’Intérieur veille à la bonne exécution opérationnelle sur l’ensemble du territoire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00035",
+                      "Chaque ministre met en œuvre les consignes appropriées dans son domaine.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Au niveau local, les préfets de département, sous la coordination des préfets de zone de défense et de sécurité, "
-                "veillent à l’information des acteurs publics/privés et à la cohérence de la mise en œuvre des mesures dans les territoires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00036",
+                      "Au niveau local, les préfets de département, sous la coordination des préfets de zone de défense et de sécurité, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00037",
+                      "veillent à l’information des acteurs publics/privés et à la cohérence de la mise en œuvre des mesures dans les territoires.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Collectivités territoriales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00038",
+                  "Collectivités territoriales",
+                ),
+              ),
               _Paragraph(
-                "Elles agissent pour la protection de leurs installations, infrastructures et réseaux, la continuité des services publics, "
-                "la protection de leurs agents, et la sécurité des rassemblements culturels, sportifs ou festifs.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00039",
+                      "Elles agissent pour la protection de leurs installations, infrastructures et réseaux, la continuité des services publics, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00040",
+                      "la protection de leurs agents, et la sécurité des rassemblements culturels, sportifs ou festifs.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle("Entreprises"),
               _Paragraph(
-                "Toutes les entreprises publiques et privées doivent veiller à leur propre sécurité et, éventuellement, "
-                "à celle des personnes qu’elles accueillent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00041",
+                      "Toutes les entreprises publiques et privées doivent veiller à leur propre sécurité et, éventuellement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00042",
+                      "à celle des personnes qu’elles accueillent.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle("Citoyens"),
               _Paragraph(
-                "Par un comportement responsable, chaque citoyen contribue à la vigilance, à la prévention et à la protection "
-                "de la collectivité contre les menaces terroristes. Le plan public Vigipirate familiarise les citoyens avec "
-                "les comportements à adopter.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00043",
+                      "Par un comportement responsable, chaque citoyen contribue à la vigilance, à la prévention et à la protection ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00044",
+                      "de la collectivité contre les menaces terroristes. Le plan public Vigipirate familiarise les citoyens avec ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00045",
+                      "les comportements à adopter.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Acteurs à l’étranger"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00046",
+                  "Acteurs à l’étranger",
+                ),
+              ),
               _Paragraph(
-                "À l’étranger, la sécurité des ressortissants français relève d’abord de l’État où ils se trouvent. "
-                "Néanmoins, tout opérateur ou entreprise a l’obligation d’assurer la sécurité de ses employés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00047",
+                      "À l’étranger, la sécurité des ressortissants français relève d’abord de l’État où ils se trouvent. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00048",
+                      "Néanmoins, tout opérateur ou entreprise a l’obligation d’assurer la sécurité de ses employés.",
+                    ),
               ),
             ],
           ),
@@ -256,30 +453,88 @@ class PlanVigipiratePage extends StatelessWidget {
 
           // III - Niveaux d'alerte
           _ConditionCard(
-            title: "III — Les 3 niveaux d’alerte",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+              "f00049",
+              "III — Les 3 niveaux d’alerte",
+            ),
             cardColor: cardLevels,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Vigilance"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00050",
+                  "1) Vigilance",
+                ),
+              ),
               _Paragraph(
-                "Correspond à la posture permanente de sécurité. "
-                "Peut être renforcé temporairement, géographiquement et sectoriellement pour faire face à une menace particulière "
-                "ou une vulnérabilité ponctuelle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00051",
+                      "Correspond à la posture permanente de sécurité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00052",
+                      "Peut être renforcé temporairement, géographiquement et sectoriellement pour faire face à une menace particulière ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00053",
+                      "ou une vulnérabilité ponctuelle.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Sécurité renforcée — Risque attentat"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00054",
+                  "2) Sécurité renforcée — Risque attentat",
+                ),
+              ),
               _Paragraph(
-                "Traduit la réponse de l’État à un niveau élevé de menace terroriste. "
-                "Peut concerner l’ensemble du territoire ou être ciblé sur une zone géographique ou un secteur d’activité. "
-                "N’a pas de limite de temps définie.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00055",
+                      "Traduit la réponse de l’État à un niveau élevé de menace terroriste. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00056",
+                      "Peut concerner l’ensemble du territoire ou être ciblé sur une zone géographique ou un secteur d’activité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00057",
+                      "N’a pas de limite de temps définie.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Urgence attentat"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00058",
+                  "3) Urgence attentat",
+                ),
+              ),
               _Paragraph(
-                "Déclenche un état de vigilance et de protection maximal : "
-                "soit en cas de menace d’attaque terroriste documentée et imminente, "
-                "soit immédiatement après un attentat.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00059",
+                      "Déclenche un état de vigilance et de protection maximal : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00060",
+                      "soit en cas de menace d’attaque terroriste documentée et imminente, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                      "f00061",
+                      "soit immédiatement après un attentat.",
+                    ),
               ),
             ],
           ),
@@ -288,47 +543,94 @@ class PlanVigipiratePage extends StatelessWidget {
 
           // IV - Tableau récap
           _ConditionCard(
-            title: "IV — Tableau récapitulatif (synthèse)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+              "f00062",
+              "IV — Tableau récapitulatif (synthèse)",
+            ),
             cardColor: cardTable,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Vigilance"),
-              _BulletPoint(text: "Principe : posture permanente de sécurité."),
               _BulletPoint(
-                text: "Conditions : valable en tout lieu et en tout temps.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00063",
+                  "Principe : posture permanente de sécurité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mesures : mise en œuvre de la totalité des mesures permanentes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00064",
+                  "Conditions : valable en tout lieu et en tout temps.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00065",
+                  "Mesures : mise en œuvre de la totalité des mesures permanentes.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Sécurité renforcée — Risque attentat"),
-              _BulletPoint(
-                text:
-                    "Principe : réponse à un niveau élevé de menace terroriste.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00066",
+                  "Sécurité renforcée — Risque attentat",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conditions : peut concerner tout le territoire ou une zone/secteur ciblé, sans limite de temps définie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00067",
+                  "Principe : réponse à un niveau élevé de menace terroriste.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mesures : renforcement des mesures permanentes + activation de mesures additionnelles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00068",
+                  "Conditions : peut concerner tout le territoire ou une zone/secteur ciblé, sans limite de temps définie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00069",
+                  "Mesures : renforcement des mesures permanentes + activation de mesures additionnelles.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Urgence attentat"),
-              _BulletPoint(
-                text:
-                    "Principe : posture maximale de vigilance et de protection.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00070",
+                  "Urgence attentat",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conditions : menace documentée et imminente ou suite immédiate d’un attentat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00071",
+                  "Principe : posture maximale de vigilance et de protection.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mesures : activation des mesures les plus contraignantes et mobilisation maximale des acteurs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00072",
+                  "Conditions : menace documentée et imminente ou suite immédiate d’un attentat.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart",
+                  "f00073",
+                  "Mesures : activation des mesures les plus contraignantes et mobilisation maximale des acteurs.",
+                ),
               ),
             ],
           ),

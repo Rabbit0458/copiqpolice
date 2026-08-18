@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GuetApensPage extends StatelessWidget {
   const GuetApensPage({super.key});
@@ -44,7 +45,11 @@ class GuetApensPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Le guet-apens',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+            "f00001",
+            'Le guet-apens',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,21 +75,29 @@ class GuetApensPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(
                       text:
-                          "« Le guet-apens consiste dans le fait d’attendre un certain temps une ou plusieurs personnes dans un lieu déterminé "
-                          "pour commettre à leur encontre une ou plusieurs infractions. »",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                            "f00002",
+                            "« Le guet-apens consiste dans le fait d’attendre un certain temps une ou plusieurs personnes dans un lieu déterminé ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                            "f00003",
+                            "pour commettre à leur encontre une ou plusieurs infractions. »",
+                          ),
                     ),
                   ]),
                 ),
@@ -93,36 +106,79 @@ class GuetApensPage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                    "f00004",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      law("L’article 132-71-1 du C.P."),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                          "f00005",
+                          "L’article 132-71-1 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            " définit le guet-apens. Il s’agit d’une circonstance aggravante réelle. "
-                            "Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                              "f00006",
+                              " définit le guet-apens. Il s’agit d’une circonstance aggravante réelle. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                              "f00007",
+                              "Ses effets s’étendent à tous les auteurs, coauteurs et complices de l’infraction.",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 10),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "La notion de guet-apens est proche de celle d’embuscade définie par ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                          "f00008",
+                          "La notion de guet-apens est proche de celle d’embuscade définie par ",
+                        ),
                       ),
-                      law("l’article 222-15-1 du code pénal"),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                          "f00009",
+                          "l’article 222-15-1 du code pénal",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            ". Elle diffère de l’embuscade qui est une infraction autonome, caractérisée alors même que les opérations projetées "
-                            "sont restées au stade des actes préparatoires. La question du guet-apens se pose après commission ou tentative de commission "
-                            "de certaines infractions.",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                              "f00010",
+                              ". Elle diffère de l’embuscade qui est une infraction autonome, caractérisée alors même que les opérations projetées ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                              "f00011",
+                              "sont restées au stade des actes préparatoires. La question du guet-apens se pose après commission ou tentative de commission ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                              "f00012",
+                              "de certaines infractions.",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Il s’agit d’une forme particulière de préméditation.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00013",
+                        "Il s’agit d’une forme particulière de préméditation.",
+                      ),
                     ),
                   ],
                 ),
@@ -131,37 +187,93 @@ class GuetApensPage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                    "f00014",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _SubTitle("2.1 - L’attente"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00015",
+                        "2.1 - L’attente",
+                      ),
+                    ),
                     _Paragraph.rich([
-                      law("L’article 132-71-1 du C.P."),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                          "f00016",
+                          "L’article 132-71-1 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            " ne définit dans son intitulé ni la durée minimum ni la nature du lieu de l’attente. "
-                            "C’est une notion très large que le législateur n’a pas précisée.",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                              "f00017",
+                              " ne définit dans son intitulé ni la durée minimum ni la nature du lieu de l’attente. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                              "f00018",
+                              "C’est une notion très large que le législateur n’a pas précisée.",
+                            ),
                       ),
                     ]),
                     const SizedBox(height: 10),
 
-                    const _SubTitle("2.2 - La qualité de la victime"),
-                    const _Paragraph(
-                      "Il s’agit de toute personne quelle que soit sa qualité. Le texte n’apporte aucune précision, se bornant à indiquer qu’il peut s’agir d’une ou plusieurs personnes.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00019",
+                        "2.2 - La qualité de la victime",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00020",
+                        "Il s’agit de toute personne quelle que soit sa qualité. Le texte n’apporte aucune précision, se bornant à indiquer qu’il peut s’agir d’une ou plusieurs personnes.",
+                      ),
                     ),
 
                     const SizedBox(height: 10),
-                    const _SubTitle("2.3 - Le but poursuivi"),
-                    const _Paragraph(
-                      "Ce sont les actes préparatoires en relation avec l’infraction poursuivie qui déterminent le caractère délibéré du « piège » tendu. "
-                      "Il s’agit une nouvelle fois d’une forme de préméditation.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00021",
+                        "2.3 - Le but poursuivi",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                            "f00022",
+                            "Ce sont les actes préparatoires en relation avec l’infraction poursuivie qui déterminent le caractère délibéré du « piège » tendu. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                            "f00023",
+                            "Il s’agit une nouvelle fois d’une forme de préméditation.",
+                          ),
                     ),
                     const SizedBox(height: 8),
-                    const _Paragraph(
-                      "La nature de la ou des infractions commises ou tentées importe peu, à la condition évidente que la loi l’ait visée expressément. "
-                      "Le législateur se donne ainsi la possibilité d’appliquer à l’avenir cette circonstance aggravante à d’autres infractions.",
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                            "f00024",
+                            "La nature de la ou des infractions commises ou tentées importe peu, à la condition évidente que la loi l’ait visée expressément. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                            "f00025",
+                            "Le législateur se donne ainsi la possibilité d’appliquer à l’avenir cette circonstance aggravante à d’autres infractions.",
+                          ),
                     ),
                   ],
                 ),
@@ -170,40 +282,68 @@ class GuetApensPage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                    "f00026",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "Le code pénal prévoit que la circonstance de guet-apens est susceptible d’aggraver les infractions suivantes :",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00027",
+                        "Le code pénal prévoit que la circonstance de guet-apens est susceptible d’aggraver les infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     _BulletPoint(
-                      text:
-                          "Le meurtre (${_lawInline("article 221-3 al. 1 C.P.")}) : le meurtre est alors qualifié d’assassinat.",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00028",
+                        "Le meurtre (article 221-3 al. 1 C.P.) : le meurtre est alors qualifié d’assassinat.",
+                      ),
                     ),
                     _BulletPoint(
-                      text:
-                          "L’empoisonnement (${_lawInline("article 221-5 al. 3 C.P.")}).",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00030",
+                        "L’empoisonnement (article 221-5 al. 3 C.P.).",
+                      ),
                     ),
                     _BulletPoint(
-                      text:
-                          "Les tortures ou actes de barbarie (${_lawInline("article 222-3, 9° C.P.")}).",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00031",
+                        "Les tortures ou actes de barbarie (article 222-3, 9° C.P.).",
+                      ),
                     ),
                     _BulletPoint(
-                      text:
-                          "Les violences (${_lawInline("articles 222-8, 222-10, 222-12, 222-13, 9° et 222-14-5 C.P.")}).",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                        "f00032",
+                        "Les violences (articles 222-8, 222-10, 222-12, 222-13, 9° et 222-14-5 C.P.).",
+                      ),
                     ),
 
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
                           text:
-                              "La condition essentielle est l’attente volontaire (le « piège ») + la commission ou la tentative d’une infraction expressément visée par la loi. "
-                              "Le guet-apens est une forme particulière de préméditation.",
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                                "f00033",
+                                "La condition essentielle est l’attente volontaire (le « piège ») + la commission ou la tentative d’une infraction expressément visée par la loi. ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart",
+                                "f00034",
+                                "Le guet-apens est une forme particulière de préméditation.",
+                              ),
                         ),
                       ],
                     ),
@@ -474,9 +614,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

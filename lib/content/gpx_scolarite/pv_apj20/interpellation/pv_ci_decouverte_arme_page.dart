@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVCIDecouverteArmePage extends StatelessWidget {
   const PVCIDecouverteArmePage({super.key});
@@ -56,7 +57,11 @@ class PVCIDecouverteArmePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Interpellation",
@@ -74,7 +79,11 @@ class PVCIDecouverteArmePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV de contrôle d’identité — découverte d’une arme",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+              "f00002",
+              "PV de contrôle d’identité — découverte d’une arme",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,11 +99,23 @@ class PVCIDecouverteArmePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas guide la rédaction d’un procès-verbal lorsque, à l’occasion d’un contrôle "
-                "d’identité, une arme est découverte et que la situation conduit à une interpellation "
-                "et à la remise de l’objet à l’officier de police judiciaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                      "f00003",
+                      "Ce canevas guide la rédaction d’un procès-verbal lorsque, à l’occasion d’un contrôle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                      "f00004",
+                      "d’identité, une arme est découverte et que la situation conduit à une interpellation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                      "f00005",
+                      "et à la remise de l’objet à l’officier de police judiciaire.",
+                    ),
               ),
             ],
           ),
@@ -103,18 +124,29 @@ class PVCIDecouverteArmePage extends StatelessWidget {
 
           // ✅ Fondement juridique en haut (articles en rouge)
           _ConditionCard(
-            title: "I — Fondement juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+              "f00006",
+              "I — Fondement juridique",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Le cadre du contrôle d’identité est rappelé par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                    "f00007",
+                    "Le cadre du contrôle d’identité est rappelé par ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "les articles 78-2 (alinéas 2 à 17) et 78-2-1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                    "f00008",
+                    "les articles 78-2 (alinéas 2 à 17) et 78-2-1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -122,11 +154,18 @@ class PVCIDecouverteArmePage extends StatelessWidget {
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le recours éventuel au menottage doit être justifié conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                    "f00009",
+                    "Le recours éventuel au menottage doit être justifié conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 803 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                    "f00010",
+                    "l’article 803 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -136,8 +175,16 @@ class PVCIDecouverteArmePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Dans le PV, pense à faire ressortir clairement le cadre exact (alinéa) retenu pour le contrôle, "
-                        "et à décrire précisément les circonstances ayant conduit à la découverte de l’arme.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                          "f00011",
+                          "Dans le PV, pense à faire ressortir clairement le cadre exact (alinéa) retenu pour le contrôle, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                          "f00012",
+                          "et à décrire précisément les circonstances ayant conduit à la découverte de l’arme.",
+                        ),
                   ),
                 ],
               ),
@@ -148,109 +195,242 @@ class PVCIDecouverteArmePage extends StatelessWidget {
 
           // Étapes du PV (canevas)
           _ConditionCard(
-            title: "II — Canevas du procès-verbal (structure)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+              "f00013",
+              "II — Canevas du procès-verbal (structure)",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00014",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _BulletPoint(
-                text: "Mentionner l’endroit exact où se situe l’équipage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00015",
+                  "Mentionner l’endroit exact où se situe l’équipage.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("2) Instructions (PV de saisine)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00016",
+                  "2) Instructions (PV de saisine)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Équipage en patrouille : le rédacteur agit conformément aux instructions permanentes du chef de service.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00017",
+                  "Équipage en patrouille : le rédacteur agit conformément aux instructions permanentes du chef de service.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("3) Assistants éventuels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00018",
+                  "3) Assistants éventuels",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Citer les fonctionnaires accompagnants + préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00019",
+                  "Citer les fonctionnaires accompagnants + préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("4) Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00020",
+                  "4) Mission",
+                ),
+              ),
               _BulletPoint(
-                text: "Indiquer le but de la mission initiale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00021",
+                  "Indiquer le but de la mission initiale.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("5) Constatations"),
-              _BulletPoint(
-                text:
-                    "Relater les faits de manière précise et faire ressortir les éléments justifiant le contrôle d’identité.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00022",
+                  "5) Constatations",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser le cadre du contrôle (ex. art. 78-2 al. 2 à 17 / art. 78-2-1).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00023",
+                  "Relater les faits de manière précise et faire ressortir les éléments justifiant le contrôle d’identité.",
+                ),
               ),
-
-              SizedBox(height: 10),
-              _SubTitle("6) Instructions (formule obligatoire)"),
               _BulletPoint(
-                text:
-                    "Inscrire la formule : « sur l’ordre et sous la responsabilité d’un officier de police judiciaire » (sinon risque de nullité).",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("7) Visa de l’article CPP"),
-              _BulletPoint(
-                text:
-                    "Viser l’alinéa de l’article 78-2 correspondant, ou l’article 78-2-1 selon le cas.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00024",
+                  "Préciser le cadre du contrôle (ex. art. 78-2 al. 2 à 17 / art. 78-2-1).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("8) Contrôle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00025",
+                  "6) Instructions (formule obligatoire)",
+                ),
+              ),
               _BulletPoint(
-                text: "Mentionner l’heure et le lieu du contrôle.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00026",
+                  "Inscrire la formule : « sur l’ordre et sous la responsabilité d’un officier de police judiciaire » (sinon risque de nullité).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("9) Palpation de sécurité"),
-              _BulletPoint(
-                text:
-                    "Non systématique : seulement si nécessaire selon circonstances de temps/lieux.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00027",
+                  "7) Visa de l’article CPP",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser la localisation et la description de l’arme découverte + la catégorie (port interdit).",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("10) Cadre juridique (suite à la découverte)"),
-              _BulletPoint(
-                text:
-                    "Si port interdit : intervenir en flagrant délit (adapter selon les constatations).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00028",
+                  "Viser l’alinéa de l’article 78-2 correspondant, ou l’article 78-2-1 selon le cas.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("11) Interpellation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00029",
+                  "8) Contrôle",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Indiquer l’heure et le lieu (si différent du lieu du contrôle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00030",
+                  "Mentionner l’heure et le lieu du contrôle.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00031",
+                  "9) Palpation de sécurité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00032",
+                  "Non systématique : seulement si nécessaire selon circonstances de temps/lieux.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00033",
+                  "Préciser la localisation et la description de l’arme découverte + la catégorie (port interdit).",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00034",
+                  "10) Cadre juridique (suite à la découverte)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00035",
+                  "Si port interdit : intervenir en flagrant délit (adapter selon les constatations).",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00036",
+                  "11) Interpellation",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00037",
+                  "Indiquer l’heure et le lieu (si différent du lieu du contrôle).",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Si menottage : justifier précisément, conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                    "f00038",
+                    "Si menottage : justifier précisément, conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 803 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                    "f00039",
+                    "l’article 803 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (risque de fuite / dangerosité / résistance…).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                    "f00040",
+                    " (risque de fuite / dangerosité / résistance…).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 10),
-              _SubTitle("12) Identité (style indirect)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00041",
+                  "12) Identité (style indirect)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "État civil et adresse uniquement (pas de situation familiale/professionnelle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00042",
+                  "État civil et adresse uniquement (pas de situation familiale/professionnelle).",
+                ),
               ),
             ],
           ),
@@ -259,58 +439,122 @@ class PVCIDecouverteArmePage extends StatelessWidget {
 
           // Actes spécifiques (DRDA + suite)
           _ConditionCard(
-            title: "III — Actes clés à ne pas rater",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+              "f00043",
+              "III — Actes clés à ne pas rater",
+            ),
             cardColor: cardActes,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("13) Présentation & appréhension (D.R.D.A.)"),
-              _BulletPoint(
-                text:
-                    "Représenter l’arme à la personne : elle peut faire une brève déclaration (style direct) sur l’appartenance, ou ne pas répondre.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00044",
+                  "13) Présentation & appréhension (D.R.D.A.)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ce n’est pas une audition : ne pas poser de questions hors appartenance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00045",
+                  "Représenter l’arme à la personne : elle peut faire une brève déclaration (style direct) sur l’appartenance, ou ne pas répondre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Appréhender l’arme pour remise à l’OPJ (Description — Représentée — Déclaration — Appréhendée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00046",
+                  "Ce n’est pas une audition : ne pas poser de questions hors appartenance.",
+                ),
               ),
-
-              SizedBox(height: 10),
-              _SubTitle("14) Avis O.P.J."),
               _BulletPoint(
-                text:
-                    "Mentionner les instructions reçues de l’officier de police judiciaire.",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("15) Retour au service"),
-              _BulletPoint(
-                text:
-                    "Si usage de la force : décrire la résistance + les moyens de coercition utilisés.",
-              ),
-
-              SizedBox(height: 10),
-              _SubTitle("16) Énonciation terminale (clôture)"),
-              _BulletPoint(
-                text:
-                    "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00047",
+                  "Appréhender l’arme pour remise à l’OPJ (Description — Représentée — Déclaration — Appréhendée).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("17) Présentation O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00048",
+                  "14) Avis O.P.J.",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Présenter l’individu sans délai + compte-rendu verbal + remise de l’arme.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00049",
+                  "Mentionner les instructions reçues de l’officier de police judiciaire.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("18) Mention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00050",
+                  "15) Retour au service",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Recherches administratives : FPR, TAJ (le cas échéant). Mentionner que la consultation a bien été effectuée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00051",
+                  "Si usage de la force : décrire la résistance + les moyens de coercition utilisés.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00052",
+                  "16) Énonciation terminale (clôture)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00053",
+                  "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00054",
+                  "17) Présentation O.P.J.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00055",
+                  "Présenter l’individu sans délai + compte-rendu verbal + remise de l’arme.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00056",
+                  "18) Mention",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00057",
+                  "Recherches administratives : FPR, TAJ (le cas échéant). Mentionner que la consultation a bien été effectuée.",
+                ),
               ),
             ],
           ),
@@ -319,23 +563,39 @@ class PVCIDecouverteArmePage extends StatelessWidget {
 
           // Images (tap => plein écran + zoom)
           _ConditionCard(
-            title: "IV — Canevas (images) — zoom & plein écran",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+              "f00058",
+              "IV — Canevas (images) — zoom & plein écran",
+            ),
             cardColor: cardDocs,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur une image pour l’ouvrir en plein écran. Tu peux zoomer (pincement) et déplacer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00059",
+                  "Appuie sur une image pour l’ouvrir en plein écran. Tu peux zoomer (pincement) et déplacer.",
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canva_decouverte_arme.png',
-                label: 'Recto — canevas',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00060",
+                  'Recto — canevas',
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canva_decouverte_arme_verso.png',
-                label: 'Verso — suite',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                  "f00061",
+                  'Verso — suite',
+                ),
               ),
             ],
           ),
@@ -432,7 +692,11 @@ class _ZoomableAssetImage extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        "Plein écran",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/pv_ci_decouverte_arme_page.dart",
+                          "f00063",
+                          "Plein écran",
+                        ),
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w800,
                           fontSize: 12.5,
@@ -735,9 +999,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

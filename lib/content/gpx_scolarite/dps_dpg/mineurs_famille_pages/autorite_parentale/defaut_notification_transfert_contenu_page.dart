@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DefautNotificationTransfertPage extends StatelessWidget {
   const DefautNotificationTransfertPage({super.key});
@@ -59,10 +60,18 @@ class DefautNotificationTransfertPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Autorité parentale",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+            "f00002",
+            "Autorité parentale",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class DefautNotificationTransfertPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Défaut de notification de transfert de domicile",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+              "f00003",
+              "Défaut de notification de transfert de domicile",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,16 +102,36 @@ class DefautNotificationTransfertPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour une personne qui transfère son domicile en un autre lieu alors que ses enfants "
-                "résident habituellement chez elle, de ne pas notifier ce changement de domicile dans le délai "
-                "d’un mois à ceux qui peuvent exercer un droit de visite ou d’hébergement (sur décision/accord exécutoire), "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00005",
+                      "Le fait, pour une personne qui transfère son domicile en un autre lieu alors que ses enfants ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00006",
+                      "résident habituellement chez elle, de ne pas notifier ce changement de domicile dans le délai ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00007",
+                      "d’un mois à ceux qui peuvent exercer un droit de visite ou d’hébergement (sur décision/accord exécutoire), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00008",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -107,22 +140,30 @@ class DefautNotificationTransfertPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00010",
+                    "Article 227-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le défaut de notification du transfert de domicile.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00011",
+                    " : définit et réprime le défaut de notification du transfert de domicile.",
+                  ),
                 ),
               ]),
             ],
@@ -132,37 +173,91 @@ class DefautNotificationTransfertPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un transfert de domicile"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00013",
+                  "A) Un transfert de domicile",
+                ),
+              ),
               _Paragraph(
-                "Le transfert concerne le parent chez qui les enfants résident habituellement (parent gardien). "
-                "Sont visés les parents légitimes, naturels ou adoptifs.\n\n"
-                "Concrètement, l’auteur change de domicile et emmène le ou les enfants avec lui.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00014",
+                      "Le transfert concerne le parent chez qui les enfants résident habituellement (parent gardien). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00015",
+                      "Sont visés les parents légitimes, naturels ou adoptifs.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00016",
+                      "Concrètement, l’auteur change de domicile et emmène le ou les enfants avec lui.",
+                    ),
               ),
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Une absence de notification dans le délai d’un mois",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00017",
+                  "B) Une absence de notification dans le délai d’un mois",
+                ),
               ),
               _Paragraph(
-                "Un droit de visite ou d’hébergement doit exister au profit de l’autre parent (ou d’un tiers) "
-                "en vertu d’un jugement, d’une convention judiciairement homologuée, ou d’une convention "
-                "prévue à l’article 229-1 du code civil.\n\n"
-                "La décision/Convention doit être exécutoire et portée légalement à la connaissance de l’auteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00018",
+                      "Un droit de visite ou d’hébergement doit exister au profit de l’autre parent (ou d’un tiers) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00019",
+                      "en vertu d’un jugement, d’une convention judiciairement homologuée, ou d’une convention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00020",
+                      "prévue à l’article 229-1 du code civil.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00021",
+                      "La décision/Convention doit être exécutoire et portée légalement à la connaissance de l’auteur.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Point clé",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00022",
+                  "Point clé",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La notification doit intervenir dans un délai d’un mois. La loi n’impose pas de forme particulière "
-                        "(écrit, oral, etc.) : tout dépendra des circonstances et des preuves.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                          "f00023",
+                          "La notification doit intervenir dans un délai d’un mois. La loi n’impose pas de forme particulière ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                          "f00024",
+                          "(écrit, oral, etc.) : tout dépendra des circonstances et des preuves.",
+                        ),
                   ),
                 ],
               ),
@@ -172,11 +267,23 @@ class DefautNotificationTransfertPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Exemple admis : l’infraction n’a pas été retenue contre une mère ayant informé son ex-beau-père "
-                        "de son changement d’adresse (modalité convenue avec son ex-mari) ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                          "f00025",
+                          "Exemple admis : l’infraction n’a pas été retenue contre une mère ayant informé son ex-beau-père ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                          "f00026",
+                          "de son changement d’adresse (modalité convenue avec son ex-mari) ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 20 février 1991)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00027",
+                      "(Cass. crim., 20 février 1991)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -192,18 +299,38 @@ class DefautNotificationTransfertPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+              "f00028",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté de ne pas informer le titulaire du droit de visite/hébergement",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00029",
+                  "Volonté de ne pas informer le titulaire du droit de visite/hébergement",
+                ),
               ),
               _Paragraph(
-                "Le défaut de notification est une infraction intentionnelle : il faut la volonté de faire échec "
-                "au droit de visite ou d’hébergement.\n\n"
-                "La simple négligence n’est pas punissable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00030",
+                      "Le défaut de notification est une infraction intentionnelle : il faut la volonté de faire échec ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00031",
+                      "au droit de visite ou d’hébergement.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                      "f00032",
+                      "La simple négligence n’est pas punissable.",
+                    ),
               ),
             ],
           ),
@@ -212,13 +339,21 @@ class DefautNotificationTransfertPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+              "f00033",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00034",
+                  "Aucune circonstance aggravante prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -227,56 +362,115 @@ class DefautNotificationTransfertPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+              "f00035",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00036",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00037",
+                    "Article 227-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "6 mois d’emprisonnement."),
-              _BulletPoint(text: "7 500 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00038",
+                  "6 mois d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00039",
+                  "7 500 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00040",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale possible via "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00041",
+                    "Responsabilité pénale possible via ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00042",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00043",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                  "f00044",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00045",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text: " (aide et assistance, provocation ou instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00046",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart",
+                    "f00047",
+                    " (aide et assistance, provocation ou instructions).",
+                  ),
                 ),
               ]),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
   const PaPpMandatsPrincipesGenerauxPage({super.key});
@@ -18,8 +19,12 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
         ? Colors.white70
         : const Color(0xFF222222).withValues(alpha: .75);
 
-    final Color accent = isDark ? const Color(0xFF64B5F6) : const Color(0xFF1565C0);
-    final Color cardColor = isDark ? const Color(0xFF1E1E1E) : const Color(0xFFF7F7F7);
+    final Color accent = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color cardColor = isDark
+        ? const Color(0xFF1E1E1E)
+        : const Color(0xFFF7F7F7);
     const Color articleRed = Color(0xFFD32F2F);
 
     return Scaffold(
@@ -31,10 +36,18 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Mandats de justice — Principes',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+            "f00002",
+            'Mandats de justice — Principes',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -48,7 +61,11 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Les mandats de justice\n(Articles 122 à 136 du Code de procédure pénale)',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+              "f00003",
+              'Les mandats de justice\n(Articles 122 à 136 du Code de procédure pénale)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -60,9 +77,21 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
           const SizedBox(height: 8),
 
           Text(
-            "Les mandats de justice sont des actes judiciaires écrits permettant d’ordonner la recherche, "
-            "la comparution, l’arrestation ou la détention d’une personne. Ils ne peuvent être délivrés que par des magistrats "
-            "et obéissent à des règles de forme et de fond strictes, fixées aux articles 122 à 136 du Code de procédure pénale.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00004",
+                  "Les mandats de justice sont des actes judiciaires écrits permettant d’ordonner la recherche, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00005",
+                  "la comparution, l’arrestation ou la détention d’une personne. Ils ne peuvent être délivrés que par des magistrats ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00006",
+                  "et obéissent à des règles de forme et de fond strictes, fixées aux articles 122 à 136 du Code de procédure pénale.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -74,71 +103,177 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
           const SizedBox(height: 16),
 
           _ConditionCard(
-            title: 'Chapitre 1 — Principes généraux qui régissent les mandats',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+              "f00007",
+              'Chapitre 1 — Principes généraux qui régissent les mandats',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               // ================== 1.1 DÉFINITION ============================
               _SubTitle(
-                '1.1 — Définition et nature des mandats de justice',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00008",
+                  '1.1 — Définition et nature des mandats de justice',
+                ),
               ),
               _Paragraph(
-                "Les mandats de justice sont des actes judiciaires écrits par lesquels un magistrat ordonne "
-                "soit la recherche et la présentation d’une personne, soit sa comparution, soit son arrestation, "
-                "soit encore son placement en détention. Ils constituent des instruments essentiels de contrainte "
-                "dans le cadre de la procédure pénale.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00009",
+                      "Les mandats de justice sont des actes judiciaires écrits par lesquels un magistrat ordonne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00010",
+                      "soit la recherche et la présentation d’une personne, soit sa comparution, soit son arrestation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00011",
+                      "soit encore son placement en détention. Ils constituent des instruments essentiels de contrainte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00012",
+                      "dans le cadre de la procédure pénale.",
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                "Principalement utilisés par le juge d’instruction, les textes qui définissent les mandats et fixent leurs règles "
-                "de forme et de fond figurent dans la section VI du chapitre du Code de procédure pénale consacré au juge d’instruction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00013",
+                      "Principalement utilisés par le juge d’instruction, les textes qui définissent les mandats et fixent leurs règles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00014",
+                      "de forme et de fond figurent dans la section VI du chapitre du Code de procédure pénale consacré au juge d’instruction.",
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(text: "Selon "),
                 TextSpan(
-                  text: "l’Article 122 alinéa 1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00015",
+                    "l’Article 122 alinéa 1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                TextSpan(text: ", il existe cinq types de mandats :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00016",
+                    ", il existe cinq types de mandats :",
+                  ),
+                ),
               ]),
               SizedBox(height: 4),
-              _BulletPoint(text: "le mandat de recherche ;"),
-              _BulletPoint(text: "le mandat de comparution ;"),
-              _BulletPoint(text: "le mandat d’amener ;"),
-              _BulletPoint(text: "le mandat de dépôt ;"),
-              _BulletPoint(text: "le mandat d’arrêt."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00017",
+                  "le mandat de recherche ;",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00018",
+                  "le mandat de comparution ;",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00019",
+                  "le mandat d’amener ;",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00020",
+                  "le mandat de dépôt ;",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00021",
+                  "le mandat d’arrêt.",
+                ),
+              ),
 
               SizedBox(height: 14),
 
               // ================== 1.2 PRINCIPES GÉNÉRAUX ====================
               _SubTitle(
-                '1.2 — Principes généraux applicables aux mandats',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                  "f00022",
+                  '1.2 — Principes généraux applicables aux mandats',
+                ),
               ),
               _Paragraph(
-                "Plusieurs principes généraux encadrent la délivrance et l’exécution des mandats de justice. "
-                "Ils garantissent à la fois l’efficacité de la mesure et le respect des droits fondamentaux de la personne concernée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00023",
+                      "Plusieurs principes généraux encadrent la délivrance et l’exécution des mandats de justice. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00024",
+                      "Ils garantissent à la fois l’efficacité de la mesure et le respect des droits fondamentaux de la personne concernée.",
+                    ),
               ),
               SizedBox(height: 8),
 
               // Incommunicabilité / non-délégation
               _Paragraph(
-                "Les mandats de justice sont des actes non délégables : un magistrat ne peut pas déléguer son pouvoir de délivrer un mandat "
-                "à un officier de police judiciaire, y compris lorsqu’il lui confie l’exécution d’une commission rogatoire. "
-                "Seul le magistrat signataire peut décider de décerner un mandat de comparution, d’amener, de dépôt, d’arrêt ou de recherche.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00025",
+                      "Les mandats de justice sont des actes non délégables : un magistrat ne peut pas déléguer son pouvoir de délivrer un mandat ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00026",
+                      "à un officier de police judiciaire, y compris lorsqu’il lui confie l’exécution d’une commission rogatoire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00027",
+                      "Seul le magistrat signataire peut décider de décerner un mandat de comparution, d’amener, de dépôt, d’arrêt ou de recherche.",
+                    ),
               ),
 
               SizedBox(height: 10),
 
               // Article 123 al.1 & al.2 CPP
               _Paragraph.rich([
-                TextSpan(text: "En ce qui concerne la forme, "),
                 TextSpan(
-                  text: "l’Article 123 alinéa 1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00028",
+                    "En ce qui concerne la forme, ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00029",
+                    "l’Article 123 alinéa 1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -146,19 +281,39 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      " dispose que « tout mandat précise l’identité de la personne à l’encontre de laquelle il est décerné ; "
-                      "il est daté et signé par le magistrat qui l’a décerné et est revêtu de son sceau ».",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00030",
+                        " dispose que « tout mandat précise l’identité de la personne à l’encontre de laquelle il est décerné ; ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00031",
+                        "il est daté et signé par le magistrat qui l’a décerné et est revêtu de son sceau ».",
+                      ),
                 ),
               ]),
               SizedBox(height: 4),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "En outre, les mandats d’amener, de dépôt, d’arrêt et de recherche doivent mentionner la nature des faits imputés à la personne, "
-                      "leur qualification juridique ainsi que les articles de loi applicables, conformément à ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00032",
+                        "En outre, les mandats d’amener, de dépôt, d’arrêt et de recherche doivent mentionner la nature des faits imputés à la personne, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00033",
+                        "leur qualification juridique ainsi que les articles de loi applicables, conformément à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 123 alinéa 2 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00034",
+                    "l’Article 123 alinéa 2 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -170,8 +325,16 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
               SizedBox(height: 10),
 
               _Paragraph(
-                "Les mandats de justice sont des actes individuels et écrits : ils visent nominativement une personne déterminée, "
-                "dont l’identité est précisément indiquée, et prennent nécessairement la forme d’un écrit signé par le magistrat compétent.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00035",
+                      "Les mandats de justice sont des actes individuels et écrits : ils visent nominativement une personne déterminée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                      "f00036",
+                      "dont l’identité est précisément indiquée, et prennent nécessairement la forme d’un écrit signé par le magistrat compétent.",
+                    ),
               ),
 
               SizedBox(height: 10),
@@ -180,11 +343,23 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "En cas d’urgence, certains mandats peuvent être diffusés par tous moyens de communication (télégramme, télécopie, courriel, etc.). "
-                      "Il s’agit des mandats d’amener, d’arrêt et de recherche, comme le prévoit ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00037",
+                        "En cas d’urgence, certains mandats peuvent être diffusés par tous moyens de communication (télégramme, télécopie, courriel, etc.). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00038",
+                        "Il s’agit des mandats d’amener, d’arrêt et de recherche, comme le prévoit ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’Article 123 alinéa 6 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00039",
+                    "l’Article 123 alinéa 6 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -194,9 +369,19 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "Dans ce cas, "),
                 TextSpan(
-                  text: "l’Article 123 alinéa 7 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00040",
+                    "Dans ce cas, ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00041",
+                    "l’Article 123 alinéa 7 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -204,9 +389,21 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      " exige que les mentions essentielles de l’original soient reproduites : identité de la personne visée, "
-                      "nature des faits et qualification juridique, ainsi que le nom et la qualité du magistrat mandant. "
-                      "L’original ou une copie du mandat doit ensuite être transmis à l’agent chargé de son exécution dans les délais les plus brefs.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00042",
+                        " exige que les mentions essentielles de l’original soient reproduites : identité de la personne visée, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00043",
+                        "nature des faits et qualification juridique, ainsi que le nom et la qualité du magistrat mandant. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00044",
+                        "L’original ou une copie du mandat doit ensuite être transmis à l’agent chargé de son exécution dans les délais les plus brefs.",
+                      ),
                 ),
               ]),
 
@@ -215,11 +412,18 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
               // Article 124 CPP — Exécution sur tout le territoire
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Enfin, la portée territoriale des mandats est définie par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00045",
+                    "Enfin, la portée territoriale des mandats est définie par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’Article 124 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                    "f00046",
+                    "l’Article 124 du Code de procédure pénale",
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -227,8 +431,16 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ", selon lequel « les mandats sont exécutoires dans toute l’étendue du territoire de la République ». "
-                      "Un mandat délivré par un magistrat peut donc être exécuté partout en France, sans limitation de ressort.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00047",
+                        ", selon lequel « les mandats sont exécutoires dans toute l’étendue du territoire de la République ». ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                        "f00048",
+                        "Un mandat délivré par un magistrat peut donc être exécuté partout en France, sans limitation de ressort.",
+                      ),
                 ),
               ]),
 
@@ -238,10 +450,26 @@ class PaPpMandatsPrincipesGenerauxPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les mandats de justice constituent des outils puissants de contrainte à la disposition des magistrats. "
-                        "La rigueur des règles de forme (mentions obligatoires, signature, sceau, identité précise) et de fond "
-                        "(compétence du magistrat, caractère individuel de la mesure) garantit à la fois l’efficacité de la procédure pénale "
-                        "et la protection des droits fondamentaux des personnes visées.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                          "f00049",
+                          "Les mandats de justice constituent des outils puissants de contrainte à la disposition des magistrats. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                          "f00050",
+                          "La rigueur des règles de forme (mentions obligatoires, signature, sceau, identité précise) et de fond ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                          "f00051",
+                          "(compétence du magistrat, caractère individuel de la mesure) garantit à la fois l’efficacité de la procédure pénale ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart",
+                          "f00052",
+                          "et la protection des droits fondamentaux des personnes visées.",
+                        ),
                   ),
                 ],
               ),
@@ -502,9 +730,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

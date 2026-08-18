@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PermisConduirePage extends StatelessWidget {
   const PermisConduirePage({super.key});
@@ -61,10 +62,18 @@ class PermisConduirePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrôle routier",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+            "f00002",
+            "Contrôle routier",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -79,7 +88,11 @@ class PermisConduirePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le permis de conduire",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00003",
+              "Le permis de conduire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -94,11 +107,23 @@ class PermisConduirePage extends StatelessWidget {
             cardColor: cardDelits,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Nul ne peut conduire un véhicule (ou ensemble de véhicules) pour lequel un permis est exigé "
-                "s’il n’est titulaire de la catégorie correspondante, ou si son droit de conduire fait l’objet d’une mesure "
-                "administrative ou judiciaire (rétention, suspension, annulation, invalidation, interdiction).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00004",
+                      "Nul ne peut conduire un véhicule (ou ensemble de véhicules) pour lequel un permis est exigé ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00005",
+                      "s’il n’est titulaire de la catégorie correspondante, ou si son droit de conduire fait l’objet d’une mesure ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00006",
+                      "administrative ou judiciaire (rétention, suspension, annulation, invalidation, interdiction).",
+                    ),
               ),
             ],
           ),
@@ -107,27 +132,69 @@ class PermisConduirePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (exigence)
           _ConditionCard(
-            title: "I — Élément légal (textes de référence)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00007",
+              "I — Élément légal (textes de référence)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("L. 221-1"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00008",
+                    "L. 221-1",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("L. 221-2"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00009",
+                    "L. 221-2",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 221-1 à R. 222-7"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00010",
+                    "R. 221-1 à R. 222-7",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("D. 221-3"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00011",
+                    "D. 221-3",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("D. 222-8 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00012",
+                    "D. 222-8 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Le permis est un titre unique de conduite délivré par l’autorité administrative. "
-                "Il répertorie l’ensemble des catégories détenues par son titulaire.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00013",
+                      "Le permis est un titre unique de conduite délivré par l’autorité administrative. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00014",
+                      "Il répertorie l’ensemble des catégories détenues par son titulaire.",
+                    ),
               ),
             ],
           ),
@@ -135,60 +202,142 @@ class PermisConduirePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Mesures qui retirent / limitent le droit de conduire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00015",
+              "II — Mesures qui retirent / limitent le droit de conduire",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Rétention (mesure conservatoire)"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Mesure obligatoirement prise par les policiers, pour 72 h (ou 120 h selon les cas) en attente d’une décision administrative : ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00016",
+                  "A) Rétention (mesure conservatoire)",
                 ),
-                _lawSpan("L. 224-1 à L. 224-4"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00017",
+                    "Mesure obligatoirement prise par les policiers, pour 72 h (ou 120 h selon les cas) en attente d’une décision administrative : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00018",
+                    "L. 224-1 à L. 224-4",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("L. 224-6 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00019",
+                    "L. 224-6 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Suspension"),
-              const _Paragraph(
-                "• Par le préfet : mesure de sûreté administrative, notamment pendant la rétention, ou à la suite d’un PV / contrôle médical d’aptitude.\n"
-                "• Par la juridiction pénale : peine alternative ou complémentaire (durées variables selon le fondement).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00020",
+                  "B) Suspension",
+                ),
               ),
-              const _NotaBox(
-                title: "Repères NATINF",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00021",
+                      "• Par le préfet : mesure de sûreté administrative, notamment pendant la rétention, ou à la suite d’un PV / contrôle médical d’aptitude.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00022",
+                      "• Par la juridiction pénale : peine alternative ou complémentaire (durées variables selon le fondement).",
+                    ),
+              ),
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00023",
+                  "Repères NATINF",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text: "Suspension liée au Code de la route : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00024",
+                      "Suspension liée au Code de la route : ",
+                    ),
                   ),
-                  TextSpan(text: "NATINF 5707"),
                   TextSpan(
-                    text: " ; suspension suite à infraction à un autre code : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00025",
+                      "NATINF 5707",
+                    ),
                   ),
-                  TextSpan(text: "NATINF 7953"),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00026",
+                      " ; suspension suite à infraction à un autre code : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00027",
+                      "NATINF 7953",
+                    ),
+                  ),
                   TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Annulation / interdiction / invalidation"),
-              const _BulletPoint(
-                text:
-                    "Annulation préfectorale : notamment après contrôle médical d’aptitude (NATINF 7536).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00028",
+                  "C) Annulation / interdiction / invalidation",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Annulation judiciaire : peut être assortie d’une interdiction de solliciter un nouveau permis (NATINF 5708).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00029",
+                  "Annulation préfectorale : notamment après contrôle médical d’aptitude (NATINF 7536).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Interdiction d’obtenir la délivrance du permis si l’auteur n’est pas titulaire (NATINF 5709).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00030",
+                  "Annulation judiciaire : peut être assortie d’une interdiction de solliciter un nouveau permis (NATINF 5708).",
+                ),
               ),
-              const _BulletPoint(
-                text: "Invalidation : solde de points nul (permis à points).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00031",
+                  "Interdiction d’obtenir la délivrance du permis si l’auteur n’est pas titulaire (NATINF 5709).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00032",
+                  "Invalidation : solde de points nul (permis à points).",
+                ),
               ),
             ],
           ),
@@ -196,47 +345,100 @@ class PermisConduirePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Catégories de permis (repères essentiels)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00033",
+              "III — Catégories de permis (repères essentiels)",
+            ),
             cardColor: cardCats,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Deux-roues / tricycles"),
-              _IntroBullet(
-                text:
-                    "A1 (16 ans) : motocyclettes légères (≤125 cm³, ≤11 kW, rapport ≤0,1 kW/kg) + tricycles ≤15 kW.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00034",
+                  "A) Deux-roues / tricycles",
+                ),
               ),
               _IntroBullet(
-                text: "A2 (18 ans) : motocyclettes ≤35 kW, rapport ≤0,2 kW/kg.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00035",
+                  "A1 (16 ans) : motocyclettes légères (≤125 cm³, ≤11 kW, rapport ≤0,1 kW/kg) + tricycles ≤15 kW.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "A : accès progressif (A2 depuis 2 ans + formation). Tricycles >15 kW : âge mini 21 ans (sauf exceptions anciennes).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00036",
+                  "A2 (18 ans) : motocyclettes ≤35 kW, rapport ≤0,2 kW/kg.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00037",
+                  "A : accès progressif (A2 depuis 2 ans + formation). Tricycles >15 kW : âge mini 21 ans (sauf exceptions anciennes).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Voitures / ensembles"),
-              _IntroBullet(text: "B1 (16 ans) : quadricycles lourds à moteur."),
-              _IntroBullet(
-                text:
-                    "B (dès 17 ans selon conditions) : véhicules PTAC ≤3,5 t (8 passagers max hors conducteur). Remorques selon règles (formation « 96 » pour certains ensembles).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00038",
+                  "B) Voitures / ensembles",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "BE (18 ans) : ensemble catégorie B + remorque/semiremorque selon seuils (quand l’ensemble ne relève pas de B).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00039",
+                  "B1 (16 ans) : quadricycles lourds à moteur.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00040",
+                  "B (dès 17 ans selon conditions) : véhicules PTAC ≤3,5 t (8 passagers max hors conducteur). Remorques selon règles (formation « 96 » pour certains ensembles).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00041",
+                  "BE (18 ans) : ensemble catégorie B + remorque/semiremorque selon seuils (quand l’ensemble ne relève pas de B).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Poids lourds / transport"),
-              _IntroBullet(
-                text:
-                    "C1/C1E : transport de marchandises PTAC >3,5 t et ≤7,5 t (avec règles remorque).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00042",
+                  "C) Poids lourds / transport",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "C/CE : marchandises >3,5 t (conditions d’âge / diplôme possibles).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00043",
+                  "C1/C1E : transport de marchandises PTAC >3,5 t et ≤7,5 t (avec règles remorque).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "D1/D1E/D/DE : transport de personnes (conditions d’âge + qualifications type FIMO / titres).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00044",
+                  "C/CE : marchandises >3,5 t (conditions d’âge / diplôme possibles).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00045",
+                  "D1/D1E/D/DE : transport de personnes (conditions d’âge + qualifications type FIMO / titres).",
+                ),
               ),
             ],
           ),
@@ -244,23 +446,47 @@ class PermisConduirePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Équivalences & validité des anciens titres (repère)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00046",
+              "IV — Équivalences & validité des anciens titres (repère)",
+            ),
             cardColor: cardDocs,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les permis délivrés avant le 19 janvier 2013 restent valables pour la conduite des véhicules concernés. "
-                "Ils doivent être échangés contre un nouveau modèle avant le 19/01/2033. "
-                "Les équivalences associées sont reconnues même si elles ne sont pas mentionnées sur le titre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00047",
+                      "Les permis délivrés avant le 19 janvier 2013 restent valables pour la conduite des véhicules concernés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00048",
+                      "Ils doivent être échangés contre un nouveau modèle avant le 19/01/2033. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00049",
+                      "Les équivalences associées sont reconnues même si elles ne sont pas mentionnées sur le titre.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "NOTA : une catégorie B obtenue avant le 20/01/1975 autorise la conduite des camping-cars de PTAC > 3,5 t "
-                        "(mention « 79 : B motorhome >3500 kg »).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                          "f00050",
+                          "NOTA : une catégorie B obtenue avant le 20/01/1975 autorise la conduite des camping-cars de PTAC > 3,5 t ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                          "f00051",
+                          "(mention « 79 : B motorhome >3500 kg »).",
+                        ),
                   ),
                 ],
               ),
@@ -270,30 +496,73 @@ class PermisConduirePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Permis délivrés à l’étranger (reconnaissance)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00052",
+              "V — Permis délivrés à l’étranger (reconnaissance)",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) UE / EEE"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00053",
+                  "A) UE / EEE",
+                ),
+              ),
               _Paragraph(
-                "Reconnu en France s’il est en cours de validité. Échange possible sans nouvel examen si le titulaire réside normalement en France. "
-                "L’échange devient obligatoire notamment en cas d’infraction en France ayant entraîné une mesure de restriction/suspension/retrait du droit de conduire "
-                "ou un retrait de points (NATINF 21944).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00054",
+                      "Reconnu en France s’il est en cours de validité. Échange possible sans nouvel examen si le titulaire réside normalement en France. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00055",
+                      "L’échange devient obligatoire notamment en cas d’infraction en France ayant entraîné une mesure de restriction/suspension/retrait du droit de conduire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00056",
+                      "ou un retrait de points (NATINF 21944).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Hors UE / hors EEE"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00057",
+                  "B) Hors UE / hors EEE",
+                ),
+              ),
               _Paragraph(
-                "Reconnu pendant 1 an après l’acquisition de la résidence normale en France. Au-delà, le permis n’est plus reconnu et le titulaire perd le droit de conduire "
-                "pour les véhicules soumis à permis (NATINF 7536). Échange possible pendant un an si accord de réciprocité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00058",
+                      "Reconnu pendant 1 an après l’acquisition de la résidence normale en France. Au-delà, le permis n’est plus reconnu et le titulaire perd le droit de conduire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00059",
+                      "pour les véhicules soumis à permis (NATINF 7536). Échange possible pendant un an si accord de réciprocité.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00060",
+                  "Définition",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Résidence normale : lieu où une personne demeure habituellement, soit 185 jours par année civile.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00061",
+                      "Résidence normale : lieu où une personne demeure habituellement, soit 185 jours par année civile.",
+                    ),
                   ),
                 ],
               ),
@@ -303,30 +572,80 @@ class PermisConduirePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Visites médicales (délivrance / prorogation)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00062",
+              "VI — Visites médicales (délivrance / prorogation)",
+            ),
             cardColor: cardDocs,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
-                _lawSpan("R. 221-10"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00063",
+                    "Références : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00064",
+                    "R. 221-10",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 221-11 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00065",
+                    "R. 221-11 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Le permis peut être délivré pour une durée limitée si le titulaire est atteint d’une affection susceptible de s’aggraver (NATINF 7538). "
-                "Certaines catégories ou usages sont subordonnés à un avis médical favorable (ex. transport de personnes, taxis/VTC, ambulances, ramassage scolaire, etc.).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00066",
+                      "Le permis peut être délivré pour une durée limitée si le titulaire est atteint d’une affection susceptible de s’aggraver (NATINF 7538). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00067",
+                      "Certaines catégories ou usages sont subordonnés à un avis médical favorable (ex. transport de personnes, taxis/VTC, ambulances, ramassage scolaire, etc.).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Périodicité (repère) :\n"
-                "• Tous les 5 ans avant 60 ans\n"
-                "• Tous les 2 ans entre 60 et 76 ans\n"
-                "• Tous les ans à partir de 76 ans\n"
-                "Pour C/D : contrôles renforcés (repères du mémento).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00068",
+                      "Périodicité (repère) :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00069",
+                      "• Tous les 5 ans avant 60 ans\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00070",
+                      "• Tous les 2 ans entre 60 et 76 ans\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00071",
+                      "• Tous les ans à partir de 76 ans\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00072",
+                      "Pour C/D : contrôles renforcés (repères du mémento).",
+                    ),
               ),
             ],
           ),
@@ -334,21 +653,36 @@ class PermisConduirePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VII — Mentions additionnelles / restrictives",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00073",
+              "VII — Mentions additionnelles / restrictives",
+            ),
             cardColor: cardCats,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Des mentions codifiées peuvent figurer sur le permis : restrictions médicales, adaptations du véhicule, conditions d’usage restreint "
-                "(ex : 01.01 lunettes, 67 pas d’autoroute, 69 EAD, 96 remorque, 79 L5e…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00074",
+                      "Des mentions codifiées peuvent figurer sur le permis : restrictions médicales, adaptations du véhicule, conditions d’usage restreint ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00075",
+                      "(ex : 01.01 lunettes, 67 pas d’autoroute, 69 EAD, 96 remorque, 79 L5e…).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le non-respect d’une restriction d’usage mentionnée sur le permis constitue une infraction (NATINF 25611).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00076",
+                      "Le non-respect d’une restriction d’usage mentionnée sur le permis constitue une infraction (NATINF 25611).",
+                    ),
                   ),
                 ],
               ),
@@ -358,99 +692,211 @@ class PermisConduirePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VIII — SNPC : états du dossier & délits fréquents",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+              "f00077",
+              "VIII — SNPC : états du dossier & délits fréquents",
+            ),
             cardColor: cardDelits,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) États du dossier (repères)"),
-              const _BulletPoint(
-                text:
-                    "SUSPENDU (médical ou décision admin/judiciaire) : plus de droit de conduire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00078",
+                  "A) États du dossier (repères)",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "INTERDIT SOLLICITER : non titulaire, interdiction judiciaire d’obtenir la délivrance du permis.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00079",
+                  "SUSPENDU (médical ou décision admin/judiciaire) : plus de droit de conduire.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "ANNULÉ (judiciaire/médical) : plus de droit de conduire.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00080",
+                  "INTERDIT SOLLICITER : non titulaire, interdiction judiciaire d’obtenir la délivrance du permis.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00081",
+                  "ANNULÉ (judiciaire/médical) : plus de droit de conduire.",
+                ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Délits « défaut de permis » (NATINF)"),
-              const _Paragraph.rich([
-                TextSpan(text: "Conduite sans permis : "),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                  "f00082",
+                  "B) Délits « défaut de permis » (NATINF)",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "NATINF 7536",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00083",
+                    "Conduite sans permis : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00084",
+                    "NATINF 7536",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Conduite avec catégorie non autorisante : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00085",
+                    "Conduite avec catégorie non autorisante : ",
+                  ),
                 ),
-                const TextSpan(
-                  text: "NATINF 22872",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00086",
+                    "NATINF 22872",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " — base : "),
-                _lawSpan("L. 221-2 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00087",
+                    " — base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00088",
+                    "L. 221-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Usage d’un permis faux/falsifié (catégorie) : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00089",
+                    "Usage d’un permis faux/falsifié (catégorie) : ",
+                  ),
                 ),
-                const TextSpan(
-                  text: "NATINF 32042",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00090",
+                    "NATINF 32042",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " — base : "),
-                _lawSpan("L. 221-2-1 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00091",
+                    " — base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00092",
+                    "L. 221-2-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Conduite malgré suspension administrative/judiciaire : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00093",
+                    "Conduite malgré suspension administrative/judiciaire : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "NATINF 5707",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00094",
+                    "NATINF 5707",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Conduite malgré annulation judiciaire : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00095",
+                    "Conduite malgré annulation judiciaire : ",
+                  ),
                 ),
-                const TextSpan(
-                  text: "NATINF 5708",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00096",
+                    "NATINF 5708",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " — base : "),
-                _lawSpan("L. 224-16 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00097",
+                    " — base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00098",
+                    "L. 224-16 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Conduite malgré interdiction d’obtenir la délivrance : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00099",
+                    "Conduite malgré interdiction d’obtenir la délivrance : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "NATINF 5709",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                    "f00100",
+                    "NATINF 5709",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/permis_conduire_page.dart",
+                      "f00101",
+                      "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    ),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class InterpellationGeneralitesPage extends StatelessWidget {
   const InterpellationGeneralitesPage({super.key});
@@ -55,7 +56,11 @@ class InterpellationGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Interpellation",
@@ -73,7 +78,11 @@ class InterpellationGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Généralités — Interpellation, palpation, menottage, présentation OPJ",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+              "f00002",
+              "Généralités — Interpellation, palpation, menottage, présentation OPJ",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,23 +94,36 @@ class InterpellationGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Élément légal (texte de référence)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+              "f00003",
+              "Élément légal (texte de référence)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 73 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00004",
+                    "Article 73 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : en cas de crime flagrant ou de délit flagrant puni d’emprisonnement, toute personne peut appréhender l’auteur et le conduire devant l’OPJ le plus proche. "
-                      "La GAV n’est pas obligatoire si la personne n’est pas tenue sous contrainte et est informée qu’elle peut quitter les locaux à tout moment (sauf conduite par la force publique).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00005",
+                        " : en cas de crime flagrant ou de délit flagrant puni d’emprisonnement, toute personne peut appréhender l’auteur et le conduire devant l’OPJ le plus proche. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00006",
+                        "La GAV n’est pas obligatoire si la personne n’est pas tenue sous contrainte et est informée qu’elle peut quitter les locaux à tout moment (sauf conduite par la force publique).",
+                      ),
                 ),
               ]),
             ],
@@ -111,95 +133,187 @@ class InterpellationGeneralitesPage extends StatelessWidget {
 
           // I. Interpellation — Généralités
           _ConditionCard(
-            title: "I — L’interpellation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+              "f00007",
+              "I — L’interpellation",
+            ),
             cardColor: cardGen,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Généralités"),
-              _BulletPoint(
-                text:
-                    "Autorisée uniquement en cas de crime flagrant ou de délit flagrant puni d’emprisonnement.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00008",
+                  "A) Généralités",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Impossible pour un délit puni seulement d’une amende ou une contravention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00009",
+                  "Autorisée uniquement en cas de crime flagrant ou de délit flagrant puni d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00010",
+                  "Impossible pour un délit puni seulement d’une amende ou une contravention.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’interpellation par un agent de police judiciaire est possible dans les lieux publics "
-                "(ou lieux libres d’accès).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00011",
+                      "L’interpellation par un agent de police judiciaire est possible dans les lieux publics ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00012",
+                      "(ou lieux libres d’accès).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’introduction dans des lieux privés (lieux normalement clos) pour interpeller "
-                "un auteur présumé (crime/délit flagrant puni d’emprisonnement) n’est possible que par les seuls O.P.J., "
-                "pendant les heures légales (6h–21h).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00013",
+                      "L’introduction dans des lieux privés (lieux normalement clos) pour interpeller ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00014",
+                      "un auteur présumé (crime/délit flagrant puni d’emprisonnement) n’est possible que par les seuls O.P.J., ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00015",
+                      "pendant les heures légales (6h–21h).",
+                    ),
               ),
               SizedBox(height: 10),
               _SubTitle(
-                "Cas particuliers : entrée possible pour un A.P.J",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00016",
+                  "Cas particuliers : entrée possible pour un A.P.J",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Obligation de porter secours (réclamation depuis l’intérieur).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00017",
+                  "Obligation de porter secours (réclamation depuis l’intérieur).",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 59 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00018",
+                    "Art. 59 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " — réclamation faite de l’intérieur d’un domicile.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00019",
+                    " — réclamation faite de l’intérieur d’un domicile.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Art. 223-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00020",
+                    "Art. 223-6 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00021",
+                    " — assistance à personne en péril.",
                   ),
                 ),
-                TextSpan(text: " — assistance à personne en péril."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "État de nécessité (ex. fuite de gaz, alarme intempestive…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00022",
+                  "État de nécessité (ex. fuite de gaz, alarme intempestive…).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Une introduction légale dans un lieu clos permet ensuite d’accomplir les actes autorisés par la loi "
-                "(dont l’interpellation, si les conditions sont réunies).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00023",
+                      "Une introduction légale dans un lieu clos permet ensuite d’accomplir les actes autorisés par la loi ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00024",
+                      "(dont l’interpellation, si les conditions sont réunies).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Mandats & contrainte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00025",
+                  "Mandats & contrainte",
+                ),
+              ),
               _Paragraph(
-                "Mandat d’amener / d’arrêt / de recherche : intervention uniquement pendant les heures légales "
-                "et au dernier domicile connu, pour la seule appréhension de la personne visée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00026",
+                      "Mandat d’amener / d’arrêt / de recherche : intervention uniquement pendant les heures légales ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00027",
+                      "et au dernier domicile connu, pour la seule appréhension de la personne visée.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "En enquête préliminaire, une personne convoquée par un OPJ doit comparaître. À défaut, contrainte possible "
-                      "avec autorisation du procureur : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00028",
+                        "En enquête préliminaire, une personne convoquée par un OPJ doit comparaître. À défaut, contrainte possible ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00029",
+                        "avec autorisation du procureur : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "art. 78 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00030",
+                    "art. 78 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      ". L’appréhension forcée n’est possible que sur la voie publique.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00031",
+                    ". L’appréhension forcée n’est possible que sur la voie publique.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
@@ -207,8 +321,16 @@ class InterpellationGeneralitesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Sécurité : analyser, garder son sang-froid, demander des effectifs si infériorité numérique "
-                        "ou lieu sensible. Les circonstances conditionnent ensuite la décision de GAV par l’OPJ.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                          "f00032",
+                          "Sécurité : analyser, garder son sang-froid, demander des effectifs si infériorité numérique ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                          "f00033",
+                          "ou lieu sensible. Les circonstances conditionnent ensuite la décision de GAV par l’OPJ.",
+                        ),
                   ),
                 ],
               ),
@@ -219,53 +341,83 @@ class InterpellationGeneralitesPage extends StatelessWidget {
 
           // B. Usage de la coercition
           _ConditionCard(
-            title: "B — L’usage de la coercition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+              "f00034",
+              "B — L’usage de la coercition",
+            ),
             cardColor: cardCoerc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Principe : nécessité + proportionnalité — ",
-                ),
-                TextSpan(
-                  text: "art. R. 434-18 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00035",
+                    "Principe : nécessité + proportionnalité — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Tout recours injustifié à la force peut constituer des violences illégitimes et engager la responsabilité pénale et disciplinaire.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00036",
+                    "art. R. 434-18 du C.S.I.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00037",
+                    ". Tout recours injustifié à la force peut constituer des violences illégitimes et engager la responsabilité pénale et disciplinaire.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Décrire précisément la résistance et les moyens de coercition utilisés (rapport/PV).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00038",
+                  "Décrire précisément la résistance et les moyens de coercition utilisés (rapport/PV).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser les blessures : celles dues à l’interpellation vs celles préexistantes (constat médical si besoin).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00039",
+                  "Préciser les blessures : celles dues à l’interpellation vs celles préexistantes (constat médical si besoin).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si l’état de santé est déficient : déclencher immédiatement les secours.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00040",
+                  "Si l’état de santé est déficient : déclencher immédiatement les secours.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Personne conduite sous contrainte par la force publique (menottée / contrainte à monter dans un véhicule) : "
-                      "GAV si conditions réunies. ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00041",
+                        "Personne conduite sous contrainte par la force publique (menottée / contrainte à monter dans un véhicule) : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00042",
+                        "GAV si conditions réunies. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(rappel art. 73 C.P.P.)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00043",
+                    "(rappel art. 73 C.P.P.)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
@@ -273,16 +425,36 @@ class InterpellationGeneralitesPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si l’OPJ ne souhaite pas maintenir immédiatement la personne à disposition et que la GAV "
-                        "n’est pas l’unique moyen d’atteindre un objectif, il peut la remettre en liberté et la convoquer.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                          "f00044",
+                          "Si l’OPJ ne souhaite pas maintenir immédiatement la personne à disposition et que la GAV ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                          "f00045",
+                          "n’est pas l’unique moyen d’atteindre un objectif, il peut la remettre en liberté et la convoquer.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Une personne mise à disposition ne sera pas nécessairement placée en GAV si elle est appréhendée "
-                "sans contrainte par une personne autre qu’un agent de la force publique, et accepte d’être conduite au service "
-                "sans coercition.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00046",
+                      "Une personne mise à disposition ne sera pas nécessairement placée en GAV si elle est appréhendée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00047",
+                      "sans contrainte par une personne autre qu’un agent de la force publique, et accepte d’être conduite au service ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00048",
+                      "sans coercition.",
+                    ),
               ),
             ],
           ),
@@ -291,42 +463,67 @@ class InterpellationGeneralitesPage extends StatelessWidget {
 
           // II. Palpation
           _ConditionCard(
-            title: "II — La palpation de sécurité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+              "f00049",
+              "II — La palpation de sécurité",
+            ),
             cardColor: cardPalp,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Elle doit être effectuée lorsqu’il est nécessaire de vérifier que la personne ne détient aucun objet dangereux — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00050",
+                    "Elle doit être effectuée lorsqu’il est nécessaire de vérifier que la personne ne détient aucun objet dangereux — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "art. R. 434-16 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00051",
+                    "art. R. 434-16 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Effectuée par une personne du même sexe (sauf dangerosité/urgence exceptionnelle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00052",
+                  "Effectuée par une personne du même sexe (sauf dangerosité/urgence exceptionnelle).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Par un seul fonctionnaire, pendant qu’un ou deux collègues sécurisent l’environnement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00053",
+                  "Par un seul fonctionnaire, pendant qu’un ou deux collègues sécurisent l’environnement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Au travers des vêtements : aucune dénudation n’est possible.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00054",
+                  "Au travers des vêtements : aucune dénudation n’est possible.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dès la découverte d’un objet suspect, informer immédiatement les autres intervenants. "
-                "Armes/objets dangereux : appréhension et remise à l’OPJ.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00055",
+                      "Dès la découverte d’un objet suspect, informer immédiatement les autres intervenants. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00056",
+                      "Armes/objets dangereux : appréhension et remise à l’OPJ.",
+                    ),
               ),
             ],
           ),
@@ -335,48 +532,72 @@ class InterpellationGeneralitesPage extends StatelessWidget {
 
           // III. Menottage
           _ConditionCard(
-            title: "III — Le menottage",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+              "f00057",
+              "III — Le menottage",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Justifié uniquement si dangerosité pour soi/autrui ou risque de fuite — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00058",
+                    "Justifié uniquement si dangerosité pour soi/autrui ou risque de fuite — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "art. 803 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00059",
+                    "art. 803 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "art. R. 434-17 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00060",
+                    "art. R. 434-17 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Décision sous responsabilité personnelle du fonctionnaire (appréciation des risques). "
-                "Rester mesuré : mineurs, personnes âgées, santé fragile…",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00061",
+                      "Décision sous responsabilité personnelle du fonctionnaire (appréciation des risques). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00062",
+                      "Rester mesuré : mineurs, personnes âgées, santé fragile…",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Menottage excessivement serré : interdit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                  "f00063",
+                  "Menottage excessivement serré : interdit.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Transport : dans un véhicule de service, l’interpellé est positionné à l’arrière, côté droit.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00064",
+                      "Transport : dans un véhicule de service, l’interpellé est positionné à l’arrière, côté droit.",
+                    ),
                   ),
                 ],
               ),
@@ -387,36 +608,69 @@ class InterpellationGeneralitesPage extends StatelessWidget {
 
           // IV. Présentation OPJ
           _ConditionCard(
-            title: "IV — Présentation à l’officier de police judiciaire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+              "f00065",
+              "IV — Présentation à l’officier de police judiciaire",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Dès la fin de l’intervention, conduire sans délai la personne devant un OPJ, "
-                "dans des conditions de transport dignes. Cette rapidité permet de respecter "
-                "les obligations légales liées à une éventuelle garde à vue.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00066",
+                      "Dès la fin de l’intervention, conduire sans délai la personne devant un OPJ, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00067",
+                      "dans des conditions de transport dignes. Cette rapidité permet de respecter ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00068",
+                      "les obligations légales liées à une éventuelle garde à vue.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Si la présentation ne peut être réalisée dans un délai raisonnable, l’OPJ (avisé par radio) "
-                      "peut décider une GAV et ordonner la notification verbale des droits — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00069",
+                        "Si la présentation ne peut être réalisée dans un délai raisonnable, l’OPJ (avisé par radio) ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                        "f00070",
+                        "peut décider une GAV et ordonner la notification verbale des droits — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "art. 63-1 à 63-4-3 du C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                    "f00071",
+                    "art. 63-1 à 63-4-3 du C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’interpellation se concrétise par la rédaction d’un acte : procès-verbal (APJ/OPJ) "
-                "ou rapport de mise à disposition (APJA).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00072",
+                      "L’interpellation se concrétise par la rédaction d’un acte : procès-verbal (APJ/OPJ) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/interpellation_generalites_page.dart",
+                      "f00073",
+                      "ou rapport de mise à disposition (APJA).",
+                    ),
               ),
             ],
           ),
@@ -672,9 +926,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

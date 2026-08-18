@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaOrganigrammesPnPage extends StatelessWidget {
   const PaOrganigrammesPnPage({super.key});
@@ -43,7 +44,11 @@ class PaOrganigrammesPnPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Organigrammes",
@@ -61,7 +66,11 @@ class PaOrganigrammesPnPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Organisation — organigrammes principaux",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+              "f00002",
+              "Organisation — organigrammes principaux",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -72,14 +81,26 @@ class PaOrganigrammesPnPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Comment utiliser cette page",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+              "f00003",
+              "Comment utiliser cette page",
+            ),
             cardColor: cardMain,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Chaque carte contient un organigramme officiel. "
-                "Appuie sur une image pour l’ouvrir en grand et zoomer (pincement).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                      "f00004",
+                      "Chaque carte contient un organigramme officiel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                      "f00005",
+                      "Appuie sur une image pour l’ouvrir en grand et zoomer (pincement).",
+                    ),
               ),
             ],
           ),
@@ -87,20 +108,41 @@ class PaOrganigrammesPnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Vue d’ensemble",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+              "f00006",
+              "Vue d’ensemble",
+            ),
             cardColor: cardInfo,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Direction générale de la Police nationale"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00007",
+                  "Direction générale de la Police nationale",
+                ),
+              ),
               _Paragraph(
-                "Organigramme synthétique de l’organisation nationale et des principales directions et services.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00008",
+                  "Organigramme synthétique de l’organisation nationale et des principales directions et services.",
+                ),
               ),
               SizedBox(height: 10),
               _OrgImageTile(
-                title: "Organisation globale",
-                subtitle:
-                    "Direction générale de la Police nationale — vue d’ensemble",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00009",
+                  "Organisation globale",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00010",
+                  "Direction générale de la Police nationale — vue d’ensemble",
+                ),
                 assetPath: "assets/images/organisation_pn.png",
               ),
             ],
@@ -109,108 +151,231 @@ class PaOrganigrammesPnPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Directions et services — organigrammes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+              "f00011",
+              "Directions et services — organigrammes",
+            ),
             cardColor: cardOrg,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "D.R.H.F.S — Direction des ressources humaines, des finances et des soutiens de la Police nationale",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00012",
+                  "D.R.H.F.S — Direction des ressources humaines, des finances et des soutiens de la Police nationale",
+                ),
               ),
               _OrgImageTile(
-                title: "D.R.H.F.S",
-                subtitle: "Structure de direction, services et sous-directions",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00013",
+                  "D.R.H.F.S",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00014",
+                  "Structure de direction, services et sous-directions",
+                ),
                 assetPath: "assets/images/drhfs.png",
               ),
               SizedBox(height: 14),
 
-              _SubTitle("I.G.P.N — Inspection générale de la Police nationale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00015",
+                  "I.G.P.N — Inspection générale de la Police nationale",
+                ),
+              ),
               _OrgImageTile(
-                title: "I.G.P.N",
-                subtitle:
-                    "Direction, secrétariat général, sous-directions et unités",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00016",
+                  "I.G.P.N",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00017",
+                  "Direction, secrétariat général, sous-directions et unités",
+                ),
                 assetPath: "assets/images/igpn.png",
               ),
               SizedBox(height: 14),
 
               _SubTitle(
-                "D.N.P.J — Direction nationale de la Police judiciaire",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00018",
+                  "D.N.P.J — Direction nationale de la Police judiciaire",
+                ),
               ),
               _OrgImageTile(
-                title: "D.N.P.J",
-                subtitle:
-                    "Pilotage stratégique, sous-directions, offices et services",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00019",
+                  "D.N.P.J",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00020",
+                  "Pilotage stratégique, sous-directions, offices et services",
+                ),
                 assetPath: "assets/images/dnpj.png",
               ),
               SizedBox(height: 14),
 
               _SubTitle(
-                "D.N.S.P — Direction nationale de la Sécurité publique",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00021",
+                  "D.N.S.P — Direction nationale de la Sécurité publique",
+                ),
               ),
               _OrgImageTile(
-                title: "D.N.S.P",
-                subtitle:
-                    "Sous-directions (ordre public, performance, sécurité du quotidien, numérique)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00022",
+                  "D.N.S.P",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00023",
+                  "Sous-directions (ordre public, performance, sécurité du quotidien, numérique)",
+                ),
                 assetPath: "assets/images/dnsp.png",
               ),
               SizedBox(height: 14),
 
               _SubTitle(
-                "D.N.P.A.F — Direction nationale de la Police aux frontières",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00024",
+                  "D.N.P.A.F — Direction nationale de la Police aux frontières",
+                ),
               ),
               _OrgImageTile(
-                title: "D.N.P.A.F",
-                subtitle:
-                    "Frontières, éloignement, numérique, aériens/maritimes, aéroports",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00025",
+                  "D.N.P.A.F",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00026",
+                  "Frontières, éloignement, numérique, aériens/maritimes, aéroports",
+                ),
                 assetPath: "assets/images/dnpaf.png",
               ),
               SizedBox(height: 14),
 
-              _SubTitle("A.D.P — Académie de Police"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00027",
+                  "A.D.P — Académie de Police",
+                ),
+              ),
               _OrgImageTile(
-                title: "Académie de Police",
-                subtitle:
-                    "Formation, écoles nationales, pilotage, recherche et déontologie",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00028",
+                  "Académie de Police",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00029",
+                  "Formation, écoles nationales, pilotage, recherche et déontologie",
+                ),
                 assetPath: "assets/images/ap.png",
               ),
               SizedBox(height: 14),
 
-              _SubTitle("S.D.L.P — Service de la protection"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00030",
+                  "S.D.L.P — Service de la protection",
+                ),
+              ),
               _OrgImageTile(
-                title: "S.D.L.P",
-                subtitle:
-                    "Protection rapprochée, sûreté, moyens mobiles, état-major",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00031",
+                  "S.D.L.P",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00032",
+                  "Protection rapprochée, sûreté, moyens mobiles, état-major",
+                ),
                 assetPath: "assets/images/sdlp.png",
               ),
               SizedBox(height: 14),
 
-              _SubTitle("S.N.P.S — Service national de Police scientifique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00033",
+                  "S.N.P.S — Service national de Police scientifique",
+                ),
+              ),
               _OrgImageTile(
-                title: "S.N.P.S",
-                subtitle:
-                    "Systèmes, biométrie, criminalistique, innovation, état-major",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00034",
+                  "S.N.P.S",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00035",
+                  "Systèmes, biométrie, criminalistique, innovation, état-major",
+                ),
                 assetPath: "assets/images/snps.png",
               ),
               SizedBox(height: 14),
 
               _SubTitle(
-                "D.C.I.S — Direction de la coopération internationale de sécurité",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00036",
+                  "D.C.I.S — Direction de la coopération internationale de sécurité",
+                ),
               ),
               _OrgImageTile(
-                title: "D.C.I.S",
-                subtitle:
-                    "Coopération bilatérale/multilatérale, administration, finances, cabinets",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00037",
+                  "D.C.I.S",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00038",
+                  "Coopération bilatérale/multilatérale, administration, finances, cabinets",
+                ),
                 assetPath: "assets/images/dcis.png",
               ),
               SizedBox(height: 14),
 
               _SubTitle(
-                "A.N.F.S.I — Agence du numérique des forces de sécurité intérieure",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00039",
+                  "A.N.F.S.I — Agence du numérique des forces de sécurité intérieure",
+                ),
               ),
               _OrgImageTile(
-                title: "A.N.F.S.I",
-                subtitle:
-                    "Systèmes d’information, équipements numériques, convergence et sécurité",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00040",
+                  "A.N.F.S.I",
+                ),
+                subtitle: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                  "f00041",
+                  "Systèmes d’information, équipements numériques, convergence et sécurité",
+                ),
                 assetPath: "assets/images/anfsi.png",
               ),
             ],
@@ -250,7 +415,9 @@ class _OrgImageTile extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
-            color: (isDark ? Colors.white10 : Colors.black12).withValues(alpha: .8),
+            color: (isDark ? Colors.white10 : Colors.black12).withValues(
+              alpha: .8,
+            ),
             width: 0.8,
           ),
         ),
@@ -453,7 +620,11 @@ class _OrgImageTile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(14),
                       ),
                       child: Text(
-                        "Pince pour zoomer • Glisse pour déplacer • Double-tap pour zoom",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_pn/pa_organigrammes_pn_page.dart",
+                          "f00044",
+                          "Pince pour zoomer • Glisse pour déplacer • Double-tap pour zoom",
+                        ),
                         textAlign: TextAlign.center,
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w700,
@@ -726,9 +897,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

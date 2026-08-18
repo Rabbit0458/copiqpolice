@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class NotificationDroitsArticle65CPPPage extends StatelessWidget {
   const NotificationDroitsArticle65CPPPage({super.key});
@@ -62,7 +63,11 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
           onPressed: () => Navigator.of(context).maybePop(),
         ),
         title: Text(
-          "Notification des droits – art. 65 CPP",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+            "f00001",
+            "Notification des droits – art. 65 CPP",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -75,7 +80,11 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV de notification des droits\nSuspect majeur – faits distincts en garde à vue",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00002",
+              "PV de notification des droits\nSuspect majeur – faits distincts en garde à vue",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -87,17 +96,35 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
 
           // ✅ ÉLÉMENT LÉGAL EN TÊTE
           _ConditionCard(
-            title: "Fondement légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00003",
+              "Fondement légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 65 du Code de procédure pénale"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00004",
+                    "Article 65 du Code de procédure pénale",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : lorsqu’une personne placée en garde à vue est entendue sur des faits distincts, "
-                      "elle doit être informée de droits spécifiques relatifs à cette audition.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                        "f00005",
+                        " : lorsqu’une personne placée en garde à vue est entendue sur des faits distincts, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                        "f00006",
+                        "elle doit être informée de droits spécifiques relatifs à cette audition.",
+                      ),
                 ),
               ]),
             ],
@@ -106,25 +133,49 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Instructions & cadre juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00007",
+              "Instructions & cadre juridique",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Instructions"),
               _IntroBullet(
-                text:
-                    "En flagrant délit, l’A.P.J. agit conformément aux instructions reçues de l’O.P.J.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00008",
+                  "En flagrant délit, l’A.P.J. agit conformément aux instructions reçues de l’O.P.J.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "En enquête préliminaire, il agit sous le contrôle de l’O.P.J.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00009",
+                  "En enquête préliminaire, il agit sous le contrôle de l’O.P.J.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00010",
+                  "Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "L’agent de police judiciaire doit situer son action dans un cadre juridique précis "
-                "(enquête de flagrance ou enquête préliminaire).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                      "f00011",
+                      "L’agent de police judiciaire doit situer son action dans un cadre juridique précis ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                      "f00012",
+                      "(enquête de flagrance ou enquête préliminaire).",
+                    ),
               ),
             ],
           ),
@@ -132,26 +183,47 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Situation procédurale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00013",
+              "Situation procédurale",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "La personne est actuellement placée en garde à vue dans le cadre d’une procédure distincte.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00014",
+                  "La personne est actuellement placée en garde à vue dans le cadre d’une procédure distincte.",
+                ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Au cours de cette garde à vue, elle est entendue sur des faits distincts, conformément à ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00015",
+                    "Au cours de cette garde à vue, elle est entendue sur des faits distincts, conformément à ",
+                  ),
                 ),
-                _law("l’article 65 du Code de procédure pénale"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00016",
+                    "l’article 65 du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Ces faits distincts justifient une notification spécifique de droits avant toute audition.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00017",
+                  "Ces faits distincts justifient une notification spécifique de droits avant toute audition.",
+                ),
               ),
             ],
           ),
@@ -159,41 +231,81 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Information des droits",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00018",
+              "Information des droits",
+            ),
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Avant toute audition et dans une langue qu’elle comprend, la personne doit être informée des droits prévus aux ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00019",
+                    "Avant toute audition et dans une langue qu’elle comprend, la personne doit être informée des droits prévus aux ",
+                  ),
                 ),
-                _law("1°, 3° et 4° de l’article 61-1 du C.P.P."),
-                const TextSpan(text: " ainsi qu’aux "),
-                _law("articles 63-3-1 à 63-4-1 du C.P.P."),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00020",
+                    "1°, 3° et 4° de l’article 61-1 du C.P.P.",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00021",
+                    " ainsi qu’aux ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00022",
+                    "articles 63-3-1 à 63-4-1 du C.P.P.",
+                  ),
+                ),
                 const TextSpan(text: " :"),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "La qualification, la date et le lieu présumés des faits distincts.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00023",
+                  "La qualification, la date et le lieu présumés des faits distincts.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le droit, après déclinaison d’identité, de faire des déclarations, de répondre aux questions ou de se taire.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00024",
+                  "Le droit, après déclinaison d’identité, de faire des déclarations, de répondre aux questions ou de se taire.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le droit d’être assistée par un interprète, le cas échéant.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00025",
+                  "Le droit d’être assistée par un interprète, le cas échéant.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le droit d’être assistée par un avocat lors de l’audition, des confrontations, reconstitutions ou séances d’identification.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00026",
+                  "Le droit d’être assistée par un avocat lors de l’audition, des confrontations, reconstitutions ou séances d’identification.",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Le droit d’accéder à certaines pièces du dossier (PV d’audition ou de confrontation antérieurs).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00027",
+                  "Le droit d’accéder à certaines pièces du dossier (PV d’audition ou de confrontation antérieurs).",
+                ),
               ),
             ],
           ),
@@ -201,18 +313,36 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Renonciation à l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00028",
+              "Renonciation à l’avocat",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      "Si la personne renonce à l’exercice de son droit à l’avocat et accepte d’être entendue hors la présence de son conseil, "
-                      "les enquêteurs lui rappellent les dispositions de ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                        "f00029",
+                        "Si la personne renonce à l’exercice de son droit à l’avocat et accepte d’être entendue hors la présence de son conseil, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                        "f00030",
+                        "les enquêteurs lui rappellent les dispositions de ",
+                      ),
                 ),
-                _law("l’article préliminaire du Code de procédure pénale"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00031",
+                    "l’article préliminaire du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -221,29 +351,63 @@ class NotificationDroitsArticle65CPPPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Clôture & avis",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00032",
+              "Clôture & avis",
+            ),
             cardColor: cardCanva,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Énonciation terminale"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00033",
+                  "Énonciation terminale",
+                ),
+              ),
               _Paragraph(
-                "L’heure de fin de notification doit être précisément mentionnée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00034",
+                  "L’heure de fin de notification doit être précisément mentionnée.",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Avis"),
               _BulletPoint(
-                text: "Avis à l’O.P.J. des déclarations recueillies.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00035",
+                  "Avis à l’O.P.J. des déclarations recueillies.",
+                ),
               ),
-              _BulletPoint(text: "Avis au magistrat."),
-              _BulletPoint(text: "Avis à l’avocat, le cas échéant."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00036",
+                  "Avis au magistrat.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00037",
+                  "Avis à l’avocat, le cas échéant.",
+                ),
+              ),
             ],
           ),
 
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Canevas – Article 65 CPP",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+              "f00038",
+              "Canevas – Article 65 CPP",
+            ),
             cardColor: cardCanva,
             accent: accentAmber,
             titleColor: textMain,
@@ -505,9 +669,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -572,8 +734,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+        "f00039",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+        "f00040",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -746,7 +916,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                    "f00041",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -815,7 +989,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart",
+                  "f00042",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -843,7 +1021,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -878,7 +1058,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

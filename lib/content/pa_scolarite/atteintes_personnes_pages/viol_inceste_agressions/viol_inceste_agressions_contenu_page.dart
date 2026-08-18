@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
   const PaViolIncesteAgressionsContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Viol, inceste & agressions sexuelles",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00003",
+              "Viol, inceste & agressions sexuelles",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux documents essentiels relatifs au viol, à l’inceste, aux agressions sexuelles "
-            "et aux infractions connexes (éléments constitutifs, circonstances, répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux documents essentiels relatifs au viol, à l’inceste, aux agressions sexuelles ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+                  "f00005",
+                  "et aux infractions connexes (éléments constitutifs, circonstances, répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +88,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 1 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_contrainte_tiers',
-            title:
-                "La contrainte exercée en vue de subir une atteinte sexuelle de la part d’un tiers",
-            subtitle: "Définition, conditions et régime de répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00006",
+              "La contrainte exercée en vue de subir une atteinte sexuelle de la part d’un tiers",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00007",
+              "Définition, conditions et régime de répression.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_personne_vulnerable.jpeg',
             textMain: textMain,
@@ -82,8 +112,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 2 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_substances_nuisibles',
-            title: "L’administration de substances nuisibles",
-            subtitle: "Notion, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00008",
+              "L’administration de substances nuisibles",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00009",
+              "Notion, éléments constitutifs et sanctions.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_substances_nuisibles.jpeg',
             textMain: textMain,
@@ -98,9 +136,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 3 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_substance_pour_viol_ou_agression',
-            title:
-                "L’administration d’une substance afin de commettre un viol ou une agression sexuelle",
-            subtitle: "Finalité sexuelle, caractérisation et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00010",
+              "L’administration d’une substance afin de commettre un viol ou une agression sexuelle",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00011",
+              "Finalité sexuelle, caractérisation et répression.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_substance_pour_viol_ou_agression.jpeg',
             textMain: textMain,
@@ -115,9 +160,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 4 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_agression_majeur_mineur_15',
-            title:
-                "L’agression sexuelle commise par un majeur sur un mineur de 15 ans",
-            subtitle: "Protection renforcée du mineur et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00012",
+              "L’agression sexuelle commise par un majeur sur un mineur de 15 ans",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00013",
+              "Protection renforcée du mineur et sanctions.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_agression_majeur_mineur_15.jpeg',
             textMain: textMain,
@@ -132,8 +184,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 5 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_agression_incestueuse',
-            title: "L’agression sexuelle incestueuse",
-            subtitle: "Définition de l’inceste, circonstances et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00014",
+              "L’agression sexuelle incestueuse",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00015",
+              "Définition de l’inceste, circonstances et répression.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_agression_incestueuse.jpeg',
             textMain: textMain,
@@ -148,8 +208,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 6 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_harcelement_sexuel',
-            title: "Le harcèlement sexuel",
-            subtitle: "Éléments constitutifs, preuve et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00016",
+              "Le harcèlement sexuel",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00017",
+              "Éléments constitutifs, preuve et sanctions.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_harcelement_sexuel.jpeg',
             textMain: textMain,
@@ -164,8 +232,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 7 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_viol_majeur_mineur_15',
-            title: "Le viol commis par un majeur sur un mineur de 15 ans",
-            subtitle: "Qualification, circonstances et peines.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00018",
+              "Le viol commis par un majeur sur un mineur de 15 ans",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00019",
+              "Qualification, circonstances et peines.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_agression_majeur_mineur_15.jpeg',
             textMain: textMain,
@@ -180,8 +256,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 8 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_viol_incestueux',
-            title: "Le viol incestueux",
-            subtitle: "Définition, cadre légal et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00020",
+              "Le viol incestueux",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00021",
+              "Définition, cadre légal et répression.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_viol_incestueux.jpeg',
             textMain: textMain,
@@ -196,8 +280,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 9 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_viol',
-            title: "Le viol",
-            subtitle: "Définition, éléments constitutifs et peines.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00022",
+              "Le viol",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00023",
+              "Définition, éléments constitutifs et peines.",
+            ),
             imagePath: 'assets/images/viol_inceste_agressions_viol.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -211,8 +303,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 10 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_autres_que_viol',
-            title: "Les agressions sexuelles autres que le viol",
-            subtitle: "Qualification, exemples et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00024",
+              "Les agressions sexuelles autres que le viol",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00025",
+              "Qualification, exemples et sanctions.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_autres_que_viol.jpeg',
             textMain: textMain,
@@ -227,9 +327,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 11 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_mineur_15_violences_contrainte',
-            title:
-                "Les agressions sexuelles imposées à un mineur de 15 ans par violences, contrainte, menace ou surprise",
-            subtitle: "Cadre aggravé et logique de protection du mineur.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00026",
+              "Les agressions sexuelles imposées à un mineur de 15 ans par violences, contrainte, menace ou surprise",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00027",
+              "Cadre aggravé et logique de protection du mineur.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_agression_majeur_mineur_15.jpeg',
             textMain: textMain,
@@ -244,9 +351,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 12 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_personne_vulnerable',
-            title:
-                "Les agressions sexuelles imposées à une personne vulnérable",
-            subtitle: "Vulnérabilité, preuve et circonstances aggravantes.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00028",
+              "Les agressions sexuelles imposées à une personne vulnérable",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00029",
+              "Vulnérabilité, preuve et circonstances aggravantes.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_personne_vulnerable.jpeg',
             textMain: textMain,
@@ -261,8 +375,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= PDF 13 =================
           _ModuleCard(
             tag: 'viol_inceste_agressions_exhibition_sexuelle',
-            title: "L’exhibition sexuelle",
-            subtitle: "Définition, conditions de caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00030",
+              "L’exhibition sexuelle",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00031",
+              "Définition, conditions de caractérisation et sanctions.",
+            ),
             imagePath:
                 'assets/images/viol_inceste_agressions_exhibition_sexuelle.jpeg',
             textMain: textMain,
@@ -278,9 +400,16 @@ class PaViolIncesteAgressionsContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_viol_inceste_agressions',
-            title: 'Quiz — Viol, inceste & agressions sexuelles',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00032",
+              'Quiz — Viol, inceste & agressions sexuelles',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart",
+              "f00033",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

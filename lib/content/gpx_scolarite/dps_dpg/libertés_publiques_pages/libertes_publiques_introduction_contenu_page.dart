@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
   const LibertesPubliquesIntroductionContenuPage({super.key});
@@ -26,10 +27,18 @@ class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Libertés publiques",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+            "f00002",
+            "Libertés publiques",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -54,8 +63,16 @@ class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches d’introduction aux libertés publiques : fondements, sources, "
-            "régime juridique et notions essentielles.",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+                  "f00003",
+                  "Accédez aux fiches d’introduction aux libertés publiques : fondements, sources, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+                  "f00004",
+                  "régime juridique et notions essentielles.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -68,10 +85,16 @@ class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'lp_intro_ddhc_1789',
-            title:
-                "La Déclaration des droits de l’homme et du citoyen du 26 août 1789",
-            subtitle:
-                "Texte fondateur : principes, portée et place dans la hiérarchie des normes.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00005",
+              "La Déclaration des droits de l’homme et du citoyen du 26 août 1789",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00006",
+              "Texte fondateur : principes, portée et place dans la hiérarchie des normes.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -85,10 +108,16 @@ class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'lp_intro_regime_juridique',
-            title:
-                "Le régime juridique : réglementation et aménagement des libertés publiques",
-            subtitle:
-                "Comment l’État encadre les libertés : conditions, limites, contrôles.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00007",
+              "Le régime juridique : réglementation et aménagement des libertés publiques",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00008",
+              "Comment l’État encadre les libertés : conditions, limites, contrôles.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -102,9 +131,16 @@ class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'lp_intro_sources',
-            title: "Les sources des libertés publiques",
-            subtitle:
-                "Constitution, lois, règlements, jurisprudence et sources internationales.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00009",
+              "Les sources des libertés publiques",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00010",
+              "Constitution, lois, règlements, jurisprudence et sources internationales.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -118,8 +154,16 @@ class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
           // ================= 4 =================
           _ModuleCard(
             tag: 'lp_intro_notion',
-            title: "Notion de libertés publiques",
-            subtitle: "Définition, enjeux, distinctions et cadre général.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00011",
+              "Notion de libertés publiques",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00012",
+              "Définition, enjeux, distinctions et cadre général.",
+            ),
             imagePath: 'assets/images/personnalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -134,9 +178,16 @@ class LibertesPubliquesIntroductionContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_lp_introduction',
-            title: 'Quiz — Libertés publiques (introduction)',
-            subtitle:
-                'Testez vos connaissances sur les notions, sources et encadrement des libertés.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00013",
+              'Quiz — Libertés publiques (introduction)',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/libertés_publiques_pages/libertes_publiques_introduction_contenu_page.dart",
+              "f00014",
+              'Testez vos connaissances sur les notions, sources et encadrement des libertés.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

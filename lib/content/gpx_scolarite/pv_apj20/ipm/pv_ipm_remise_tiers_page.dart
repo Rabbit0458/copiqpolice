@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PvIpmRemiseTiersPage extends StatelessWidget {
   const PvIpmRemiseTiersPage({super.key});
@@ -55,10 +56,18 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — IPM",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+            "f00002",
+            "PV — IPM",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas (Ivresse publique et manifeste) — Remise à un tiers",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+              "f00003",
+              "Canevas (Ivresse publique et manifeste) — Remise à un tiers",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -88,10 +101,18 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas t’aide à rédiger un PV d’IPM lorsque la personne est remise sous la responsabilité d’un tiers "
-                "qui se porte garante, plutôt qu’un maintien en chambre de sûreté (si l’audition n’est pas nécessaire immédiatement).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                      "f00004",
+                      "Ce canevas t’aide à rédiger un PV d’IPM lorsque la personne est remise sous la responsabilité d’un tiers ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                      "f00005",
+                      "qui se porte garante, plutôt qu’un maintien en chambre de sûreté (si l’audition n’est pas nécessaire immédiatement).",
+                    ),
               ),
             ],
           ),
@@ -100,38 +121,54 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Fondements juridiques (à citer)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+              "f00006",
+              "I — Fondements juridiques (à citer)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00007",
+                    "Article R. 3353-1 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : contravention d’ivresse publique et manifeste (2ᵉ classe) — Natinf 6252.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00008",
+                    " : contravention d’ivresse publique et manifeste (2ᵉ classe) — Natinf 6252.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Article L. 3341-1 alinéa 2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00009",
+                    "Article L. 3341-1 alinéa 2 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : possibilité, par un OPJ ou un APJ, de placer la personne sous la responsabilité d’un tiers se portant garante, "
-                      "lorsque l’audition n’a pas à être faite immédiatement après le retour à la raison.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                        "f00010",
+                        " : possibilité, par un OPJ ou un APJ, de placer la personne sous la responsabilité d’un tiers se portant garante, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                        "f00011",
+                        "lorsque l’audition n’a pas à être faite immédiatement après le retour à la raison.",
+                      ),
                 ),
               ]),
             ],
@@ -140,74 +177,153 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Trame du PV (pas à pas)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+              "f00012",
+              "II — Trame du PV (pas à pas)",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00013",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _Paragraph(
-                "Mentionner l’endroit exact où se situe l’équipage (adresse, point remarquable, commune).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00014",
+                  "Mentionner l’endroit exact où se situe l’équipage (adresse, point remarquable, commune).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00015",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Dans le PV de saisine, préciser que l’équipage étant en patrouille, le rédacteur agit conformément aux instructions permanentes du chef de service.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00016",
+                  "Dans le PV de saisine, préciser que l’équipage étant en patrouille, le rédacteur agit conformément aux instructions permanentes du chef de service.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00017",
+                  "3) Assistants",
+                ),
+              ),
               _Paragraph(
-                "Citer les fonctionnaires accompagnants et préciser la tenue (uniforme / tenue bourgeoise / port du brassard « police »).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00018",
+                  "Citer les fonctionnaires accompagnants et préciser la tenue (uniforme / tenue bourgeoise / port du brassard « police »).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4) Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00019",
+                  "4) Mission",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le but de la mission initiale (prévention, surveillance, sécurisation, intervention).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00020",
+                  "Indiquer le but de la mission initiale (prévention, surveillance, sécurisation, intervention).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5) Constatations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00021",
+                  "5) Constatations",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Relater précisément les faits observés constitutifs de l’IPM, prévue et réprimée par ",
-                ),
-                TextSpan(
-                  text: "l’article R. 3353-1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00022",
+                    "Relater précisément les faits observés constitutifs de l’IPM, prévue et réprimée par ",
                   ),
                 ),
-                TextSpan(text: " (Natinf 6252). L’ivresse doit être :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00023",
+                    "l’article R. 3353-1 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00024",
+                    " (Natinf 6252). L’ivresse doit être :",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Manifeste : évidente, constatable (haleine alcoolisée, défaut d’équilibre, élocution bégayante, propos incohérents, attitude anormale…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00025",
+                  "Manifeste : évidente, constatable (haleine alcoolisée, défaut d’équilibre, élocution bégayante, propos incohérents, attitude anormale…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Publique : constatée dans un lieu public ou privé ouvert au public (place, route, gare, café…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00026",
+                  "Publique : constatée dans un lieu public ou privé ouvert au public (place, route, gare, café…).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les critères ne sont pas forcément cumulatifs : l’important est de décrire des faits objectifs et concordants.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                      "f00027",
+                      "Les critères ne sont pas forcément cumulatifs : l’important est de décrire des faits objectifs et concordants.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("6) Contrôle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00028",
+                  "6) Contrôle",
+                ),
+              ),
               _Paragraph(
-                "Identification de la personne en style indirect : état civil et adresse, à l’exclusion de tout autre élément de personnalité.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00029",
+                  "Identification de la personne en style indirect : état civil et adresse, à l’exclusion de tout autre élément de personnalité.",
+                ),
               ),
             ],
           ),
@@ -215,38 +331,62 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Remise à un tiers (cœur du canevas)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+              "f00030",
+              "III — Remise à un tiers (cœur du canevas)",
+            ),
             cardColor: cardFocus,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("7) Conditions & modalités"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00031",
+                  "7) Conditions & modalités",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lorsque l’audition n’est pas nécessaire immédiatement (ex. infraction connexe), après recouvrement de la raison, la personne peut être placée sous la responsabilité d’un tiers se portant garante — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00032",
+                    "Lorsque l’audition n’est pas nécessaire immédiatement (ex. infraction connexe), après recouvrement de la raison, la personne peut être placée sous la responsabilité d’un tiers se portant garante — ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "article L. 3341-1 alinéa 2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00033",
+                    "article L. 3341-1 alinéa 2 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "La remise peut intervenir à tout moment : à l’hôpital, au service, ou après un passage en chambre de sûreté. "
-                "Le PV doit faire apparaître l’identité du tiers, sa qualité/lien avec la personne, et son engagement clair à la prendre en charge.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                      "f00034",
+                      "La remise peut intervenir à tout moment : à l’hôpital, au service, ou après un passage en chambre de sûreté. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                      "f00035",
+                      "Le PV doit faire apparaître l’identité du tiers, sa qualité/lien avec la personne, et son engagement clair à la prendre en charge.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pense à préciser : heure de remise, lieu, identité complète du tiers, et mention qu’il « se porte garant » et accepte la prise en charge.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                      "f00036",
+                      "Pense à préciser : heure de remise, lieu, identité complète du tiers, et mention qu’il « se porte garant » et accepte la prise en charge.",
+                    ),
                   ),
                 ],
               ),
@@ -256,19 +396,43 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Compte-rendu & clôture",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+              "f00037",
+              "IV — Compte-rendu & clôture",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("8) Compte-rendu"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00038",
+                  "8) Compte-rendu",
+                ),
+              ),
               _Paragraph(
-                "L’équipage rend compte régulièrement au C.I.C. de l’évolution de l’intervention (contrôle, décision de remise à un tiers, conditions de remise, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00039",
+                  "L’équipage rend compte régulièrement au C.I.C. de l’évolution de l’intervention (contrôle, décision de remise à un tiers, conditions de remise, etc.).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("9) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00040",
+                  "9) Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Clore clairement : suites données, remise effective à la personne garante, heure/lieu, état apparent, informations transmises au C.I.C., signatures.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00041",
+                  "Clore clairement : suites données, remise effective à la personne garante, heure/lieu, état apparent, informations transmises au C.I.C., signatures.",
+                ),
               ),
             ],
           ),
@@ -276,7 +440,11 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Aperçu du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+              "f00042",
+              "Aperçu du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -538,9 +706,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -605,8 +771,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+        "f00043",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+        "f00044",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -779,7 +953,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                    "f00045",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -848,7 +1026,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart",
+                  "f00046",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -876,7 +1058,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -911,7 +1095,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

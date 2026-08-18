@@ -1,7 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { patchNotesApi, type PatchNote } from "@/lib/admin/api"
+import { useState } from "react";
+import { CalendarClock, FilePenLine, Plus, Sparkles } from "lucide-react";
+import {
+  patchNotesApi,
+  type EditorialStatus,
+  type PatchNote,
+} from "@/lib/admin/api";
 import {
   Badge,
   Button,
@@ -11,203 +16,243 @@ import {
   Loading,
   PageHeader,
   useAsync,
-} from "@/components/admin/admin-ui"
+} from "@/components/admin/admin-ui";
+
+const labels: Record<EditorialStatus, string> = {
+  draft: "Brouillon",
+  scheduled: "Planifiée",
+  published: "Publiée",
+  archived: "Archivée",
+};
+const tones: Record<EditorialStatus, "neutral" | "warn" | "good" | "bad"> = {
+  draft: "neutral",
+  scheduled: "warn",
+  published: "good",
+  archived: "bad",
+};
 
 export default function PatchNotesPage() {
-  const [filter, setFilter] = useState<"" | "yes" | "no">("")
+  const [filter, setFilter] = useState<"" | EditorialStatus>("");
+  const [editing, setEditing] = useState<PatchNote | "new" | null>(null);
   const { data, error, loading, reload } = useAsync(
     () => patchNotesApi.list(filter || undefined),
     [filter],
-  )
-  const [creating, setCreating] = useState(false)
+  );
 
   return (
     <>
       <PageHeader
-        title="Notes de patch"
-        subtitle="Nouveautés affichées aux utilisateurs après une mise à jour"
-        action={<Button onClick={() => setCreating(true)}>+ Nouvelle note</Button>}
+        title="Notes de mise à jour"
+        subtitle="Prépare, programme et publie les nouveautés visibles sur le site et dans l’application."
+        action={
+          <Button onClick={() => setEditing("new")}>
+            <Plus size={16} /> Nouvelle note
+          </Button>
+        }
       />
 
-      {creating && (
+      {editing && (
         <NoteForm
-          onCancel={() => setCreating(false)}
+          note={editing === "new" ? undefined : editing}
+          onCancel={() => setEditing(null)}
           onSaved={() => {
-            setCreating(false)
-            reload()
+            setEditing(null);
+            reload();
           }}
         />
       )}
 
-      <div className="mb-4 flex flex-wrap gap-2">
-        {(
-          [
-            ["", "Toutes"],
-            ["yes", "Publiées"],
-            ["no", "Brouillons"],
-          ] as const
-        ).map(([v, l]) => (
-          <button
-            key={v}
-            onClick={() => setFilter(v)}
-            className={`rounded-lg px-3 py-2 text-sm transition ${
-              filter === v
-                ? "bg-[var(--brand)] text-white"
-                : "border border-[var(--outline)] text-[var(--on-surface-muted)] hover:bg-[var(--surface-container)]"
-            }`}
-          >
-            {l}
-          </button>
-        ))}
+      <div className="mb-5 flex flex-wrap gap-2">
+        {(["", "draft", "scheduled", "published", "archived"] as const).map(
+          (status) => (
+            <button
+              key={status}
+              onClick={() => setFilter(status)}
+              className={`rounded-xl px-3.5 py-2 text-sm font-medium transition ${
+                filter === status
+                  ? "bg-[var(--brand)] text-white"
+                  : "border border-[var(--outline)] text-[var(--on-surface-muted)] hover:bg-[var(--surface-container)]"
+              }`}
+            >
+              {status ? labels[status] : "Toutes"}
+            </button>
+          ),
+        )}
       </div>
 
-      {error && <ErrorBox error={error} />}
+      {Boolean(error) && <ErrorBox error={error} />}
       {loading && <Loading />}
-      {data && data.length === 0 && <Empty>Aucune note de patch.</Empty>}
+      {data?.length === 0 && <Empty>Aucune note de mise à jour.</Empty>}
 
-      <div className="space-y-3">
-        {(data ?? []).map((n) => (
-          <NoteCard key={n.id} n={n} onChanged={reload} />
+      <div className="grid gap-4 xl:grid-cols-2">
+        {(data ?? []).map((note) => (
+          <Card key={note.id} className="flex flex-col p-5">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <div className="mb-2 flex items-center gap-2">
+                  <Sparkles size={16} className="text-[var(--brand)]" />
+                  <h2 className="font-semibold">{note.title}</h2>
+                </div>
+                {note.summary && (
+                  <p className="text-sm text-[var(--on-surface-muted)]">
+                    {note.summary}
+                  </p>
+                )}
+              </div>
+              <Badge tone={tones[note.publication_status]}>
+                {labels[note.publication_status]}
+              </Badge>
+            </div>
+            <div className="mt-4 line-clamp-5 whitespace-pre-wrap rounded-xl bg-[var(--surface-container)] p-4 text-sm leading-relaxed">
+              {note.body}
+            </div>
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs text-[var(--on-surface-faint)]">
+              <span className="inline-flex items-center gap-1.5">
+                <CalendarClock size={14} />
+                {note.publication_status === "scheduled" && note.scheduled_at
+                  ? `Prévue le ${new Date(note.scheduled_at).toLocaleString("fr-FR")}`
+                  : `Modifiée le ${new Date(note.updated_at).toLocaleString("fr-FR")}`}
+              </span>
+              <Button
+                variant="ghost"
+                className="!py-1.5 !text-xs"
+                onClick={() => setEditing(note)}
+              >
+                <FilePenLine size={14} /> Modifier
+              </Button>
+            </div>
+          </Card>
         ))}
       </div>
     </>
-  )
-}
-
-function NoteCard({ n, onChanged }: { n: PatchNote; onChanged: () => void }) {
-  const [busy, setBusy] = useState(false)
-  const [err, setErr] = useState<unknown>(null)
-
-  async function run(fn: () => Promise<unknown>) {
-    setBusy(true)
-    setErr(null)
-    try {
-      await fn()
-      onChanged()
-    } catch (e) {
-      setErr(e)
-    } finally {
-      setBusy(false)
-    }
-  }
-
-  return (
-    <Card className="p-4">
-      <div className="mb-2 flex flex-wrap items-start justify-between gap-2">
-        <div className="min-w-0">
-          <div className="text-sm font-semibold">{n.title}</div>
-          <div className="text-xs text-[var(--on-surface-faint)]">
-            {new Date(n.created_at).toLocaleString("fr-FR")}
-            {n.author_email ? ` · ${n.author_email}` : ""}
-          </div>
-        </div>
-        <Badge tone={n.is_published ? "good" : "warn"}>
-          {n.is_published ? "publiée" : "brouillon"}
-        </Badge>
-      </div>
-
-      <div className="whitespace-pre-wrap rounded-lg bg-[var(--surface-container)] p-3 text-sm leading-relaxed">
-        {n.body}
-      </div>
-
-      <ErrorBox error={err} />
-      <div className="mt-3 flex flex-wrap gap-2">
-        <Button
-          variant="ghost"
-          disabled={busy}
-          onClick={() => run(() => patchNotesApi.setPublished(n.id, !n.is_published))}
-          className="!py-1.5 !text-xs"
-        >
-          {n.is_published ? "Dépublier" : "Publier"}
-        </Button>
-        <Button
-          variant="danger"
-          disabled={busy}
-          onClick={() => {
-            if (!confirm(`Supprimer définitivement « ${n.title} » ?`)) return
-            run(() => patchNotesApi.remove(n.id))
-          }}
-          className="!py-1.5 !text-xs"
-        >
-          Supprimer
-        </Button>
-      </div>
-    </Card>
-  )
+  );
 }
 
 function NoteForm({
+  note,
   onCancel,
   onSaved,
 }: {
-  onCancel: () => void
-  onSaved: () => void
+  note?: PatchNote;
+  onCancel: () => void;
+  onSaved: () => void;
 }) {
-  const [title, setTitle] = useState("")
-  const [body, setBody] = useState("")
-  const [publish, setPublish] = useState(false)
-  const [busy, setBusy] = useState(false)
-  const [err, setErr] = useState<unknown>(null)
+  const [title, setTitle] = useState(note?.title ?? "");
+  const [summary, setSummary] = useState(note?.summary ?? "");
+  const [body, setBody] = useState(note?.body ?? "");
+  const [status, setStatus] = useState<EditorialStatus>(
+    note?.publication_status ?? "draft",
+  );
+  const [scheduledAt, setScheduledAt] = useState(
+    note?.scheduled_at ? note.scheduled_at.slice(0, 16) : "",
+  );
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState<unknown>(null);
+  const input =
+    "w-full rounded-xl border border-[var(--outline)] bg-[var(--surface)] px-3.5 py-2.5 text-sm outline-none transition focus:border-[var(--brand)] focus:ring-2 focus:ring-[var(--brand)]/10";
 
   async function submit(e: React.FormEvent) {
-    e.preventDefault()
-    setBusy(true)
-    setErr(null)
+    e.preventDefault();
+    setBusy(true);
+    setErr(null);
     try {
-      await patchNotesApi.create(title, body, publish)
-      onSaved()
-    } catch (e2) {
-      setErr(e2)
+      await patchNotesApi.save({
+        id: note?.id,
+        title,
+        summary,
+        body,
+        status,
+        scheduledAt:
+          status === "scheduled" && scheduledAt
+            ? new Date(scheduledAt).toISOString()
+            : null,
+      });
+      onSaved();
+    } catch (caught) {
+      setErr(caught);
     } finally {
-      setBusy(false)
+      setBusy(false);
     }
   }
 
-  const ic =
-    "w-full rounded-lg border border-[var(--outline)] bg-[var(--surface)] px-3 py-2 text-sm outline-none focus:border-[var(--brand)]"
-
   return (
-    <Card className="mb-4 p-5">
-      <h2 className="mb-3 text-sm font-semibold">Nouvelle note de patch</h2>
-      <form onSubmit={submit} className="space-y-3">
+    <Card className="mb-6 overflow-hidden">
+      <div className="border-b border-[var(--outline)] bg-[var(--surface-container)] px-5 py-4">
+        <h2 className="font-semibold">
+          {note ? "Modifier la note" : "Créer une note de mise à jour"}
+        </h2>
+        <p className="mt-1 text-xs text-[var(--on-surface-muted)]">
+          Le contenu publié apparaîtra automatiquement dans le centre
+          d’information.
+        </p>
+      </div>
+      <form onSubmit={submit} className="grid gap-4 p-5 lg:grid-cols-2">
         <label className="block">
-          <span className="mb-1 block text-xs font-medium text-[var(--on-surface-muted)]">
-            Titre
-          </span>
+          <span className="mb-1.5 block text-xs font-semibold">Titre</span>
           <input
+            className={input}
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
-            placeholder="Version 1.2 — Cas pratiques"
-            className={ic}
           />
         </label>
         <label className="block">
-          <span className="mb-1 block text-xs font-medium text-[var(--on-surface-muted)]">
-            Contenu
+          <span className="mb-1.5 block text-xs font-semibold">Résumé</span>
+          <input
+            className={input}
+            value={summary}
+            onChange={(e) => setSummary(e.target.value)}
+          />
+        </label>
+        <label className="block">
+          <span className="mb-1.5 block text-xs font-semibold">Visibilité</span>
+          <select
+            className={input}
+            value={status}
+            onChange={(e) => setStatus(e.target.value as EditorialStatus)}
+          >
+            {Object.entries(labels).map(([value, label]) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </label>
+        {status === "scheduled" && (
+          <label className="block">
+            <span className="mb-1.5 block text-xs font-semibold">
+              Date de publication
+            </span>
+            <input
+              type="datetime-local"
+              className={input}
+              value={scheduledAt}
+              onChange={(e) => setScheduledAt(e.target.value)}
+              required
+            />
+          </label>
+        )}
+        <label className="block lg:col-span-2">
+          <span className="mb-1.5 block text-xs font-semibold">
+            Contenu complet
           </span>
           <textarea
+            className={input}
+            rows={10}
             value={body}
             onChange={(e) => setBody(e.target.value)}
-            rows={8}
             required
-            placeholder={"• 5 nouveaux cas pratiques\n• Correction du module psychotechnique\n• Corrections diverses"}
-            className={ic}
+            placeholder={
+              "## Nouveautés\n\n- Première amélioration\n- Deuxième amélioration"
+            }
           />
         </label>
-        <label className="flex items-center gap-2 text-sm">
-          <input
-            type="checkbox"
-            checked={publish}
-            onChange={(e) => setPublish(e.target.checked)}
-            className="h-4 w-4"
-          />
-          Publier immédiatement
-        </label>
-        <ErrorBox error={err} />
-        <div className="flex gap-2">
+        <div className="lg:col-span-2">
+          <ErrorBox error={err} />
+        </div>
+        <div className="flex gap-2 lg:col-span-2">
           <Button type="submit" disabled={busy}>
-            {busy ? "Création…" : "Créer"}
+            {busy ? "Enregistrement…" : "Enregistrer"}
           </Button>
           <Button type="button" variant="ghost" onClick={onCancel}>
             Annuler
@@ -215,5 +260,5 @@ function NoteForm({
         </div>
       </form>
     </Card>
-  )
+  );
 }

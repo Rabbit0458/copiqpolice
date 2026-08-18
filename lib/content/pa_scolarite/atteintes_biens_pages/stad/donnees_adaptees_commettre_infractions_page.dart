@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
   const PaDonneesAdapteesCommettreInfractionsPage({super.key});
@@ -59,10 +60,18 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes aux STAD",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+            "f00002",
+            "Atteintes aux STAD",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Données adaptées pour commettre des infractions STAD",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+              "f00003",
+              "Données adaptées pour commettre des infractions STAD",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,16 +102,36 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, sans motif légitime (notamment de recherche ou de sécurité informatique), "
-                "d’importer, de détenir, d’offrir, de céder ou de mettre à disposition un équipement, un instrument, "
-                "un programme informatique ou toute donnée conçus ou spécialement adaptés pour commettre "
-                "une ou plusieurs des infractions prévues par les articles 323-1 à 323-3 du Code pénal, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00005",
+                      "Le fait, sans motif légitime (notamment de recherche ou de sécurité informatique), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00006",
+                      "d’importer, de détenir, d’offrir, de céder ou de mettre à disposition un équipement, un instrument, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00007",
+                      "un programme informatique ou toute donnée conçus ou spécialement adaptés pour commettre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00008",
+                      "une ou plusieurs des infractions prévues par les articles 323-1 à 323-3 du Code pénal, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -107,23 +140,36 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-3-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00010",
+                    "Article 323-3-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit et réprime l’importation, la détention, l’offre, la cession et la mise à disposition "
-                      "de moyens/données adaptés pour commettre des atteintes aux systèmes de traitement automatisé de données.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                        "f00011",
+                        " : définit et réprime l’importation, la détention, l’offre, la cession et la mise à disposition ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                        "f00012",
+                        "de moyens/données adaptés pour commettre des atteintes aux systèmes de traitement automatisé de données.",
+                      ),
                 ),
               ]),
             ],
@@ -133,85 +179,190 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une fourniture de moyens"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00014",
+                  "A) Une fourniture de moyens",
+                ),
+              ),
               _Paragraph(
-                "L’infraction vise plusieurs actes portant sur un équipement, un instrument, un programme informatique "
-                "ou toute donnée permettant de commettre une ou plusieurs atteintes à un système de traitement automatisé de données.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00015",
+                      "L’infraction vise plusieurs actes portant sur un équipement, un instrument, un programme informatique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00016",
+                      "ou toute donnée permettant de commettre une ou plusieurs atteintes à un système de traitement automatisé de données.",
+                    ),
               ),
               SizedBox(height: 10),
-              _Paragraph("Sont sanctionnées :"),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00017",
+                  "Sont sanctionnées :",
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "L’importation : introduire quelque chose d’étranger.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00018",
+                  "L’importation : introduire quelque chose d’étranger.",
+                ),
               ),
               _BulletPoint(
-                text: "La détention : avoir en sa possession.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00019",
+                  "La détention : avoir en sa possession.",
+                ),
               ),
               _BulletPoint(
-                text: "L’offre : proposer/donner quelque chose à quelqu’un.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00020",
+                  "L’offre : proposer/donner quelque chose à quelqu’un.",
+                ),
               ),
               _BulletPoint(
-                text: "La cession : abandonner/remettre à autrui.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00021",
+                  "La cession : abandonner/remettre à autrui.",
+                ),
               ),
               _BulletPoint(
-                text: "La mise à disposition : donner pour usage.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00022",
+                  "La mise à disposition : donner pour usage.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Des moyens conçus ou spécialement adaptés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00023",
+                  "B) Des moyens conçus ou spécialement adaptés",
+                ),
+              ),
               _Paragraph(
-                "Les moyens doivent être conçus ou spécialement adaptés pour commettre les infractions des articles 323-1 à 323-3 du Code pénal, à savoir :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00024",
+                  "Les moyens doivent être conçus ou spécialement adaptés pour commettre les infractions des articles 323-1 à 323-3 du Code pénal, à savoir :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Accès ou maintien frauduleux dans un système de traitement automatisé de données.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00025",
+                  "Accès ou maintien frauduleux dans un système de traitement automatisé de données.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Entrave au fonctionnement d’un système de traitement automatisé de données.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00026",
+                  "Entrave au fonctionnement d’un système de traitement automatisé de données.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Introduction, modification ou suppression frauduleuse de données.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00027",
+                  "Introduction, modification ou suppression frauduleuse de données.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Ces infractions peuvent ne pas avoir été commises (ou ne pas être révélées). "
-                "À l’inverse, si une atteinte est réalisée, le prévenu pourra être poursuivi comme complice de l’infraction commise.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00028",
+                      "Ces infractions peuvent ne pas avoir été commises (ou ne pas être révélées). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00029",
+                      "À l’inverse, si une atteinte est réalisée, le prévenu pourra être poursuivi comme complice de l’infraction commise.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cette incrimination permet de sanctionner, par exemple, la simple détention ou mise à disposition de virus informatiques, "
-                        "sans qu’il soit nécessaire que le virus ait été effectivement introduit dans un système.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                          "f00030",
+                          "Cette incrimination permet de sanctionner, par exemple, la simple détention ou mise à disposition de virus informatiques, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                          "f00031",
+                          "sans qu’il soit nécessaire que le virus ait été effectivement introduit dans un système.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Une absence de motif légitime"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00032",
+                  "C) Une absence de motif légitime",
+                ),
+              ),
               _Paragraph(
-                "L’infraction ne devrait pas être retenue lorsque l’importation, la détention, l’offre, la cession "
-                "ou la mise à disposition est expressément justifiée par un motif légitime.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00033",
+                      "L’infraction ne devrait pas être retenue lorsque l’importation, la détention, l’offre, la cession ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00034",
+                      "ou la mise à disposition est expressément justifiée par un motif légitime.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les motifs légitimes ne sont pas listés : peuvent notamment entrer en compte la recherche scientifique et technique "
-                "et la sécurisation des réseaux de communications électroniques et des systèmes d’information.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00035",
+                      "Les motifs légitimes ne sont pas listés : peuvent notamment entrer en compte la recherche scientifique et technique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00036",
+                      "et la sécurisation des réseaux de communications électroniques et des systèmes d’information.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette notion étant appréciée au cas par cas, il appartient aux magistrats d’évaluer la légitimité des motifs invoqués.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00037",
+                  "Cette notion étant appréciée au cas par cas, il appartient aux magistrats d’évaluer la légitimité des motifs invoqués.",
+                ),
               ),
             ],
           ),
@@ -220,19 +371,39 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+              "f00038",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le délit n’implique pas nécessairement une volonté directe de nuire : la simple détention peut être réprimée "
-                "même si l’auteur n’avait pas, au départ, l’intention de diffuser ou de contaminer un système.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00039",
+                      "Le délit n’implique pas nécessairement une volonté directe de nuire : la simple détention peut être réprimée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00040",
+                      "même si l’auteur n’avait pas, au départ, l’intention de diffuser ou de contaminer un système.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le mobile est indifférent (jeu, intérêt technique, curiosité). Toutefois, une volonté de propager des données néfastes "
-                "peut être retenue, notamment en cas de transmissions répétées ou générales.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00041",
+                      "Le mobile est indifférent (jeu, intérêt technique, curiosité). Toutefois, une volonté de propager des données néfastes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00042",
+                      "peut être retenue, notamment en cas de transmissions répétées ou générales.",
+                    ),
               ),
             ],
           ),
@@ -241,86 +412,129 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+              "f00043",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction est punie des peines prévues respectivement pour l’infraction elle-même "
-                "ou pour l’infraction la plus sévèrement réprimée (mécanisme de renvoi).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00044",
+                      "L’infraction est punie des peines prévues respectivement pour l’infraction elle-même ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                      "f00045",
+                      "ou pour l’infraction la plus sévèrement réprimée (mécanisme de renvoi).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Renvois (principaux textes)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00046",
+                  "Renvois (principaux textes)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00047",
+                    "Article 323-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : aggravations en cas de suppression/modification de données, altération du fonctionnement, "
-                      "ou STAD à caractère personnel mis en œuvre par l’État.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                        "f00048",
+                        " : aggravations en cas de suppression/modification de données, altération du fonctionnement, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                        "f00049",
+                        "ou STAD à caractère personnel mis en œuvre par l’État.",
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00050",
+                    "Article 323-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : aggravation si l’infraction vise un STAD à caractère personnel mis en œuvre par l’État.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00051",
+                    " : aggravation si l’infraction vise un STAD à caractère personnel mis en œuvre par l’État.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00052",
+                    "Article 323-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : aggravation si l’infraction vise un STAD à caractère personnel mis en œuvre par l’État.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00053",
+                    " : aggravation si l’infraction vise un STAD à caractère personnel mis en œuvre par l’État.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00054",
+                    "Article 323-4-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque l’infraction est commise en bande organisée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00055",
+                    " : lorsque l’infraction est commise en bande organisée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00056",
+                    "Article 323-4-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque l’infraction expose autrui à un risque immédiat de mort/blessures graves ou fait obstacle aux secours.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00057",
+                    " : lorsque l’infraction expose autrui à un risque immédiat de mort/blessures graves ou fait obstacle aux secours.",
+                  ),
                 ),
               ]),
             ],
@@ -330,100 +544,164 @@ class PaDonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+              "f00058",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines — repères usuels (selon le renvoi)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00059",
+                  "Peines — repères usuels (selon le renvoi)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Base (ex. "),
                 TextSpan(
-                  text: "article 323-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00060",
+                    "Base (ex. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00061",
+                    "article 323-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ") : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 100 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00062",
+                    "3 ans d’emprisonnement et 100 000 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravations possibles (ex. "),
                 TextSpan(
-                  text: "articles 323-1 alinéas 2 et 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00063",
+                    "Aggravations possibles (ex. ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00064",
+                    "articles 323-1 alinéas 2 et 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ", "),
                 TextSpan(
                   text: "323-4-1",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ", "),
                 TextSpan(
                   text: "323-4-2",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      ") : jusqu’à 5 ans / 150 000 €, 7 ans / 300 000 € ou 10 ans / 300 000 € selon les cas.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00065",
+                    ") : jusqu’à 5 ans / 150 000 €, 7 ans / 300 000 € ou 10 ans / 300 000 € selon les cas.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00066",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 323-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00067",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (amende selon l’article 131-38 et peines de l’article 131-39 ; interdiction d’activité liée à l’infraction).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00068",
+                    "l’article 323-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00069",
+                    " (amende selon l’article 131-38 et peines de l’article 131-39 ; interdiction d’activité liée à l’infraction).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00070",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : OUI — prévue et réprimée par l’article 323-7 du Code pénal.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00071",
+                  "Tentative : OUI — prévue et réprimée par l’article 323-7 du Code pénal.",
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                "Comme pour toute tentative : commencement d’exécution et absence de résultat en raison de circonstances indépendantes de la volonté de l’auteur.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                  "f00072",
+                  "Comme pour toute tentative : commencement d’exécution et absence de résultat en raison de circonstances indépendantes de la volonté de l’auteur.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00073",
+                    "Complicité : OUI — conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00074",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart",
+                    "f00075",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],
@@ -681,9 +959,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

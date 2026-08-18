@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ReiterationInfractionsPage extends StatelessWidget {
   const ReiterationInfractionsPage({super.key});
@@ -46,10 +47,18 @@ class ReiterationInfractionsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'La sanction',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+            "f00002",
+            'La sanction',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -63,7 +72,11 @@ class ReiterationInfractionsPage extends StatelessWidget {
         children: [
           // ===================== TITRE (UNE SEULE FOIS) =====================
           Text(
-            "La réitération d’infractions",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+              "f00003",
+              "La réitération d’infractions",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -75,44 +88,94 @@ class ReiterationInfractionsPage extends StatelessWidget {
 
           // ===================== CHAPITRE 1 =====================
           _ConditionCard(
-            title: "Chapitre 1 — Conditions de la réitération d’infractions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+              "f00004",
+              "Chapitre 1 — Conditions de la réitération d’infractions",
+            ),
             cardColor: card2,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
                 t(
-                  "La loi du 12 décembre 2005 a consacré une notion jusque-là jurisprudentielle, en définissant la réitération comme étant le fait, pour une personne déjà condamnée définitivement pour un crime ou un délit, de commettre une nouvelle infraction ne répondant pas aux conditions de la récidive légale : ",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                    "f00005",
+                    "La loi du 12 décembre 2005 a consacré une notion jusque-là jurisprudentielle, en définissant la réitération comme étant le fait, pour une personne déjà condamnée définitivement pour un crime ou un délit, de commettre une nouvelle infraction ne répondant pas aux conditions de la récidive légale : ",
+                  ),
                 ),
-                law("article 132-16-7 alinéa 1 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                    "f00006",
+                    "article 132-16-7 alinéa 1 du Code pénal",
+                  ),
+                ),
                 t("."),
               ]),
               const SizedBox(height: 12),
 
-              const _Paragraph(
-                "La réitération suppose donc :\n"
-                "• une infraction commise après une condamnation définitive pour une infraction précédente ;\n"
-                "• et une nouvelle infraction qui ne remplit pas les conditions de la récidive légale.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00007",
+                      "La réitération suppose donc :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00008",
+                      "• une infraction commise après une condamnation définitive pour une infraction précédente ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00009",
+                      "• et une nouvelle infraction qui ne remplit pas les conditions de la récidive légale.",
+                    ),
               ),
               const SizedBox(height: 10),
 
               _NotaBox(
-                title: "Concrètement",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                  "f00010",
+                  "Concrètement",
+                ),
                 bodySpans: [
                   t(
-                    "La réitération peut notamment viser des situations où :\n",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00011",
+                      "La réitération peut notamment viser des situations où :\n",
+                    ),
                   ),
                   t(
-                    "• la première infraction est punie d’une peine inférieure à 10 ans ;\n",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00012",
+                      "• la première infraction est punie d’une peine inférieure à 10 ans ;\n",
+                    ),
                   ),
                   t(
-                    "• la nouvelle infraction est différente ou non assimilable à l’infraction précédente ;\n",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00013",
+                      "• la nouvelle infraction est différente ou non assimilable à l’infraction précédente ;\n",
+                    ),
                   ),
                   t(
-                    "• ou l’infraction est identique, mais commise au-delà du délai de 5 ans après l’expiration ou la prescription de la peine prononcée pour la première infraction.\n\n",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00014",
+                      "• ou l’infraction est identique, mais commise au-delà du délai de 5 ans après l’expiration ou la prescription de la peine prononcée pour la première infraction.\n\n",
+                    ),
                   ),
                   t(
-                    "Les infractions commises en réitération sont traitées comme des infractions uniques.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00015",
+                      "Les infractions commises en réitération sont traitées comme des infractions uniques.",
+                    ),
                   ),
                 ],
               ),
@@ -123,31 +186,61 @@ class ReiterationInfractionsPage extends StatelessWidget {
 
           // ===================== CHAPITRE 2 =====================
           _ConditionCard(
-            title: "Chapitre 2 — Effets de la réitération d’infractions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+              "f00016",
+              "Chapitre 2 — Effets de la réitération d’infractions",
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
                 t(
-                  "Le Code pénal prévoit que les peines prononcées pour l’infraction commise en réitération se cumulent, sans limitation de quantum, et sans qu’il soit possible d’ordonner leur confusion : ",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                    "f00017",
+                    "Le Code pénal prévoit que les peines prononcées pour l’infraction commise en réitération se cumulent, sans limitation de quantum, et sans qu’il soit possible d’ordonner leur confusion : ",
+                  ),
                 ),
-                law("article 132-16-7 alinéa 2 du Code pénal"),
+                law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                    "f00018",
+                    "article 132-16-7 alinéa 2 du Code pénal",
+                  ),
+                ),
                 t("."),
               ]),
               const SizedBox(height: 12),
 
-              const _Paragraph(
-                "Ainsi, une personne déjà condamnée définitivement qui commet une nouvelle infraction voit s’additionner, "
-                "sans possibilité de confusion, la peine prononcée pour la nouvelle infraction avec la peine liée à la première infraction.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00019",
+                      "Ainsi, une personne déjà condamnée définitivement qui commet une nouvelle infraction voit s’additionner, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                      "f00020",
+                      "sans possibilité de confusion, la peine prononcée pour la nouvelle infraction avec la peine liée à la première infraction.",
+                    ),
               ),
               const SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
                   t(
-                    "La situation du réitérant est donc moins favorable que celle du prévenu auteur de plusieurs infractions n’ayant pas fait l’objet de condamnations définitives, "
-                    "et bénéficiant du cumul plafonné des peines, voire de la confusion des peines.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                          "f00021",
+                          "La situation du réitérant est donc moins favorable que celle du prévenu auteur de plusieurs infractions n’ayant pas fait l’objet de condamnations définitives, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart",
+                          "f00022",
+                          "et bénéficiant du cumul plafonné des peines, voire de la confusion des peines.",
+                        ),
                   ),
                 ],
               ),

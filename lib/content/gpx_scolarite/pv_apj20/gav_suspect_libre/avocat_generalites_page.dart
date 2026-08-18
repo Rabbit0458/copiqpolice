@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AvocatGeneralitesPage extends StatelessWidget {
   const AvocatGeneralitesPage({super.key});
@@ -61,10 +62,18 @@ class AvocatGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Avocat – Généralités",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+            "f00002",
+            "Avocat – Généralités",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -79,7 +88,11 @@ class AvocatGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’intervention de l’avocat dans l’enquête de police",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00003",
+              "L’intervention de l’avocat dans l’enquête de police",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -91,29 +104,67 @@ class AvocatGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Fondement (principe directeur)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00004",
+              "Fondement (principe directeur)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: "Principe : "),
-                _law("article préliminaire du Code de procédure pénale"),
-                const TextSpan(
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00005",
+                    "Principe : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00006",
+                    "article préliminaire du Code de procédure pénale",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " — en matière criminelle et correctionnelle, aucune condamnation ne peut être prononcée "
-                      "sur le seul fondement de déclarations faites sans avoir pu s’entretenir avec un avocat et être assistée par lui.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                        "f00007",
+                        " — en matière criminelle et correctionnelle, aucune condamnation ne peut être prononcée ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                        "f00008",
+                        "sur le seul fondement de déclarations faites sans avoir pu s’entretenir avec un avocat et être assistée par lui.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Jurisprudence : les enquêteurs ne peuvent recueillir des déclarations spontanées sur les faits sans audition régulière "
-                        "respectant le droit au silence et à l’assistance de l’avocat — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                          "f00009",
+                          "Jurisprudence : les enquêteurs ne peuvent recueillir des déclarations spontanées sur les faits sans audition régulière ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                          "f00010",
+                          "respectant le droit au silence et à l’assistance de l’avocat — ",
+                        ),
                   ),
-                  _law("Cass. crim., 25 avril 2017"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00011",
+                      "Cass. crim., 25 avril 2017",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
@@ -123,104 +174,225 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — Désignation de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00012",
+              "I — Désignation de l’avocat",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Le suspect, qu’il soit entendu en audition libre (crime/délit puni d’emprisonnement) ou placé en garde à vue, "
-                "est informé de son droit à l’assistance d’un avocat.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00013",
+                      "Le suspect, qu’il soit entendu en audition libre (crime/délit puni d’emprisonnement) ou placé en garde à vue, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00014",
+                      "est informé de son droit à l’assistance d’un avocat.",
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("A) Conditions de désignation"),
-              const _SubTitle("1) Par le mis en cause"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La personne peut désigner un avocat de son choix ou demander qu’il lui en soit commis un d’office — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00015",
+                  "A) Conditions de désignation",
                 ),
-                _law("articles 63-3-1 et 61-1 (5°) du C.P.P."),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00016",
+                  "1) Par le mis en cause",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00017",
+                    "La personne peut désigner un avocat de son choix ou demander qu’il lui en soit commis un d’office — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00018",
+                    "articles 63-3-1 et 61-1 (5°) du C.P.P.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "À tout moment, la personne peut revenir sur un refus initial et solliciter l’assistance d’un avocat.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00019",
+                  "À tout moment, la personne peut revenir sur un refus initial et solliciter l’assistance d’un avocat.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("2) Par des tiers"),
-              const _SubTitle("• En garde à vue"),
-              _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "L’avocat peut être désigné par certaines personnes avisées de la mesure — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00020",
+                  "2) Par des tiers",
                 ),
-                _law("article 63-2 du C.P.P."),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00021",
+                  "• En garde à vue",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00022",
+                    "L’avocat peut être désigné par certaines personnes avisées de la mesure — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00023",
+                    "article 63-2 du C.P.P.",
+                  ),
+                ),
                 const TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Personne vivant habituellement avec le gardé à vue, parent en ligne directe, frère/sœur, autre personne désignée, employeur.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00024",
+                  "Personne vivant habituellement avec le gardé à vue, parent en ligne directe, frère/sœur, autre personne désignée, employeur.",
+                ),
               ),
-              const _BulletPoint(
-                text: "Autorités consulaires si la personne est étrangère.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00025",
+                  "Autorités consulaires si la personne est étrangère.",
+                ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "En cas de mesure de protection juridique, l’avocat peut être désigné par le tuteur/curateur/mandataire — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00026",
+                    "En cas de mesure de protection juridique, l’avocat peut être désigné par le tuteur/curateur/mandataire — ",
+                  ),
                 ),
-                _law("article 706-112-1 du C.P.P."),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00027",
+                    "article 706-112-1 du C.P.P.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La personne gardée à vue doit être informée de la désignation afin de pouvoir la confirmer ou l’infirmer.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00028",
+                      "La personne gardée à vue doit être informée de la désignation afin de pouvoir la confirmer ou l’infirmer.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("• Garde à vue d’un mineur"),
-              const _BulletPoint(text: "Le mineur est assisté d’un avocat."),
-              const _BulletPoint(
-                text:
-                    "À défaut de désignation, le procureur / juge / O.P.J. informe sans délai le bâtonnier pour une commission d’office.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00029",
+                  "• Garde à vue d’un mineur",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00030",
+                  "Le mineur est assisté d’un avocat.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00031",
+                  "À défaut de désignation, le procureur / juge / O.P.J. informe sans délai le bâtonnier pour une commission d’office.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("• Audition libre"),
-              const _BulletPoint(
-                text:
-                    "Si la personne est sous protection juridique : le tuteur/curateur avisé peut désigner un avocat ou demander une commission d’office.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00032",
+                  "• Audition libre",
+                ),
               ),
-              const _SubTitle("• Audition libre d’un mineur"),
-              const _BulletPoint(
-                text:
-                    "Assistance obligatoire : à défaut, information immédiate du bâtonnier pour une commission d’office.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00033",
+                  "Si la personne est sous protection juridique : le tuteur/curateur avisé peut désigner un avocat ou demander une commission d’office.",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00034",
+                  "• Audition libre d’un mineur",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00035",
+                  "Assistance obligatoire : à défaut, information immédiate du bâtonnier pour une commission d’office.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Conflit d’intérêts / pluralité d’avocats"),
-              const _BulletPoint(
-                text:
-                    "En cas de conflit d’intérêts, un autre défenseur peut être demandé ; en cas de désaccord, le bâtonnier tranche.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00036",
+                  "Conflit d’intérêts / pluralité d’avocats",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "En cas d’auditions simultanées de plusieurs gardés à vue, le procureur peut solliciter le bâtonnier pour désigner plusieurs avocats.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00037",
+                  "En cas de conflit d’intérêts, un autre défenseur peut être demandé ; en cas de désaccord, le bâtonnier tranche.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00038",
+                  "En cas d’auditions simultanées de plusieurs gardés à vue, le procureur peut solliciter le bâtonnier pour désigner plusieurs avocats.",
+                ),
               ),
             ],
           ),
@@ -228,28 +400,44 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "B) Information de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00039",
+              "B) Information de l’avocat",
+            ),
             cardColor: cardDesign,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "L’O.P.J., ou sous son contrôle l’A.P.J. / assistant d’enquête, informe sans délai et par tous moyens l’avocat choisi ou commis d’office.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00040",
+                  "L’O.P.J., ou sous son contrôle l’A.P.J. / assistant d’enquête, informe sans délai et par tous moyens l’avocat choisi ou commis d’office.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Un message laissé sur répondeur suffit à remplir l’obligation d’information.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00041",
+                  "Un message laissé sur répondeur suffit à remplir l’obligation d’information.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’avocat est informé de la qualification juridique et de la date présumée des faits.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00042",
+                  "L’avocat est informé de la qualification juridique et de la date présumée des faits.",
+                ),
               ),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pour garantir l’effectivité de l’information, privilégier un contact téléphonique direct.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00043",
+                      "Pour garantir l’effectivité de l’information, privilégier un contact téléphonique direct.",
+                    ),
                   ),
                 ],
               ),
@@ -259,13 +447,21 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Intervention de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00044",
+              "II — Intervention de l’avocat",
+            ),
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "À l’arrivée de l’avocat, l’enquêteur vérifie la carte professionnelle afin de s’assurer de son identité et de sa qualité.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00045",
+                  "À l’arrivée de l’avocat, l’enquêteur vérifie la carte professionnelle afin de s’assurer de son identité et de sa qualité.",
+                ),
               ),
             ],
           ),
@@ -273,32 +469,75 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "A) L’entretien (confidentiel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00046",
+              "A) L’entretien (confidentiel)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La personne soupçonnée peut s’entretenir avec son avocat dans des conditions garantissant la confidentialité — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00047",
+                    "La personne soupçonnée peut s’entretenir avec son avocat dans des conditions garantissant la confidentialité — ",
+                  ),
                 ),
-                _law("article 63-4 du C.P.P."),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00048",
+                    "article 63-4 du C.P.P.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle("• En garde à vue"),
-              const _BulletPoint(text: "Applicable dès le début de la mesure."),
-              const _BulletPoint(text: "Durée maximale : 30 minutes."),
-              const _BulletPoint(
-                text:
-                    "En cas de prolongation : un nouvel entretien peut être demandé (1 entretien par tranche de 24h).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00049",
+                  "• En garde à vue",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00050",
+                  "Applicable dès le début de la mesure.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00051",
+                  "Durée maximale : 30 minutes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00052",
+                  "En cas de prolongation : un nouvel entretien peut être demandé (1 entretien par tranche de 24h).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("• En audition libre"),
-              const _BulletPoint(
-                text:
-                    "Un temps suffisant est accordé à la personne souhaitant s’entretenir avec son avocat.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00053",
+                  "• En audition libre",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00054",
+                  "Un temps suffisant est accordé à la personne souhaitant s’entretenir avec son avocat.",
+                ),
               ),
             ],
           ),
@@ -306,37 +545,82 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "B) Consultation de certaines pièces",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00055",
+              "B) Consultation de certaines pièces",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’avocat ne peut pas consulter toute la procédure : seules certaines pièces sont accessibles. "
-                "Il ne peut ni demander ni réaliser de copie, mais peut prendre des notes. Après consultation, "
-                "les documents sont remis à l’enquêteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00056",
+                      "L’avocat ne peut pas consulter toute la procédure : seules certaines pièces sont accessibles. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00057",
+                      "Il ne peut ni demander ni réaliser de copie, mais peut prendre des notes. Après consultation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00058",
+                      "les documents sont remis à l’enquêteur.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("• En garde à vue"),
-              _BulletPoint(
-                text:
-                    "PV de notification de placement en GAV et des droits + réponses du gardé à vue.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00059",
+                  "• En garde à vue",
+                ),
               ),
               _BulletPoint(
-                text: "Certificat médical établi suite au placement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00060",
+                  "PV de notification de placement en GAV et des droits + réponses du gardé à vue.",
+                ),
               ),
               _BulletPoint(
-                text: "PV d’audition et de confrontation du gardé à vue.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00061",
+                  "Certificat médical établi suite au placement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le cas échéant, PV antérieurs concernant les mêmes faits (avant la GAV en cours).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00062",
+                  "PV d’audition et de confrontation du gardé à vue.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00063",
+                  "Le cas échéant, PV antérieurs concernant les mêmes faits (avant la GAV en cours).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("• En audition libre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00064",
+                  "• En audition libre",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "PV d’audition / confrontation antérieurs, réalisés avec ou sans avocat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00065",
+                  "PV d’audition / confrontation antérieurs, réalisés avec ou sans avocat.",
+                ),
               ),
             ],
           ),
@@ -344,38 +628,78 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "C) Assistance de l’avocat",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00066",
+              "C) Assistance de l’avocat",
+            ),
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Présence de l’avocat"),
-              _BulletPoint(
-                text:
-                    "En garde à vue, si la personne demande l’assistance, elle ne peut être entendue sur les faits sans l’avocat (sauf renonciation expresse mentionnée au PV).",
-              ),
-              _SubTitle("• Délai en garde à vue"),
-              _BulletPoint(
-                text:
-                    "L’avocat dispose de 2 heures à compter de l’avis pour se présenter.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00067",
+                  "1) Présence de l’avocat",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pendant ce délai : pas d’audition sur les faits, uniquement identité (et actes de signalisation possibles).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00068",
+                  "En garde à vue, si la personne demande l’assistance, elle ne peut être entendue sur les faits sans l’avocat (sauf renonciation expresse mentionnée au PV).",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00069",
+                  "• Délai en garde à vue",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ce délai s’applique à la première audition. Il peut se réappliquer en cas de demande en cours de mesure ou changement d’avocat (conflit d’intérêts).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00070",
+                  "L’avocat dispose de 2 heures à compter de l’avis pour se présenter.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si l’avocat ne vient pas : saisine du bâtonnier pour un avocat commis d’office (nouveau délai de 2h), sauf renonciation expresse.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00071",
+                  "Pendant ce délai : pas d’audition sur les faits, uniquement identité (et actes de signalisation possibles).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00072",
+                  "Ce délai s’applique à la première audition. Il peut se réappliquer en cas de demande en cours de mesure ou changement d’avocat (conflit d’intérêts).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00073",
+                  "Si l’avocat ne vient pas : saisine du bâtonnier pour un avocat commis d’office (nouveau délai de 2h), sauf renonciation expresse.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("• Audition libre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00074",
+                  "• Audition libre",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Pas de délai légal de carence : si l’avocat ne se présente pas dans un délai raisonnable, la personne peut refuser d’être entendue et être convoquée ultérieurement, ou renoncer expressément à ce droit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00075",
+                  "Pas de délai légal de carence : si l’avocat ne se présente pas dans un délai raisonnable, la personne peut refuser d’être entendue et être convoquée ultérieurement, ou renoncer expressément à ce droit.",
+                ),
               ),
             ],
           ),
@@ -383,36 +707,58 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2) Modalités d’intervention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00076",
+              "2) Modalités d’intervention",
+            ),
             cardColor: cardOps,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "L’avocat peut assister aux auditions et confrontations, reconstitutions, séances d’identification.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00077",
+                  "L’avocat peut assister aux auditions et confrontations, reconstitutions, séances d’identification.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’audition est dirigée exclusivement par l’enquêteur : l’avocat prend des notes, ne conseille pas son client pendant l’audition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00078",
+                  "L’audition est dirigée exclusivement par l’enquêteur : l’avocat prend des notes, ne conseille pas son client pendant l’audition.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "À l’issue, l’avocat peut poser des questions si l’enquêteur l’y invite ; questions/réponses sont consignées au PV.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00079",
+                  "À l’issue, l’avocat peut poser des questions si l’enquêteur l’y invite ; questions/réponses sont consignées au PV.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’enquêteur peut refuser des questions si elles nuisent au bon déroulement de l’enquête ; le refus est mentionné au PV.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00080",
+                  "L’enquêteur peut refuser des questions si elles nuisent au bon déroulement de l’enquête ; le refus est mentionné au PV.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’avocat peut rédiger des observations écrites annexées à la procédure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00081",
+                  "L’avocat peut rédiger des observations écrites annexées à la procédure.",
+                ),
               ),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En cas de difficultés, l’A.P.J. informe immédiatement l’O.P.J. (possibilité d’interrompre l’acte et d’aviser le procureur).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00082",
+                      "En cas de difficultés, l’A.P.J. informe immédiatement l’O.P.J. (possibilité d’interrompre l’acte et d’aviser le procureur).",
+                    ),
                   ),
                 ],
               ),
@@ -422,32 +768,57 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3) Transport du gardé à vue",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00083",
+              "3) Transport du gardé à vue",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Si la personne gardée à vue est transportée sur un autre lieu, l’avocat en est informé sans délai — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00084",
+                    "Si la personne gardée à vue est transportée sur un autre lieu, l’avocat en est informé sans délai — ",
+                  ),
                 ),
-                _law("article 63-4-3-1 du C.P.P."),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00085",
+                    "article 63-4-3-1 du C.P.P.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Elle ne peut être auditionnée dans un autre lieu que le service enquêteur si l’avocat n’a pas été avisé — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00086",
+                    "Elle ne peut être auditionnée dans un autre lieu que le service enquêteur si l’avocat n’a pas été avisé — ",
+                  ),
                 ),
-                _law("article D15-5-6 du C.P.P."),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00087",
+                    "article D15-5-6 du C.P.P.",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Cette information concerne les transports nécessaires : audition, reconstitution, identification de suspects.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00088",
+                  "Cette information concerne les transports nécessaires : audition, reconstitution, identification de suspects.",
+                ),
               ),
             ],
           ),
@@ -455,15 +826,31 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "4) Signalisation sans consentement",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00089",
+              "4) Signalisation sans consentement",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsque la signalisation est réalisée sans consentement et que la personne a demandé l’assistance d’un avocat : "
-                "l’avocat doit être avisé et peut y assister. L’acte ne peut être fait en son absence qu’après un délai de 2 heures "
-                "à compter de l’avis.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00090",
+                      "Lorsque la signalisation est réalisée sans consentement et que la personne a demandé l’assistance d’un avocat : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00091",
+                      "l’avocat doit être avisé et peut y assister. L’acte ne peut être fait en son absence qu’après un délai de 2 heures ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                      "f00092",
+                      "à compter de l’avis.",
+                    ),
               ),
             ],
           ),
@@ -471,13 +858,21 @@ class AvocatGeneralitesPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Pour aller plus loin",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+              "f00093",
+              "Pour aller plus loin",
+            ),
             cardColor: cardDesign,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Consultez le guide de la garde à vue et de l’audition libre (onglet « outils professionnels ») via l’intranet.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00094",
+                  "Consultez le guide de la garde à vue et de l’audition libre (onglet « outils professionnels ») via l’intranet.",
+                ),
               ),
             ],
           ),
@@ -733,9 +1128,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -800,8 +1193,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+        "f00095",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+        "f00096",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -974,7 +1375,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                    "f00097",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -1043,7 +1448,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart",
+                  "f00098",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -1071,7 +1480,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1106,7 +1517,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

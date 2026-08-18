@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaProvocationPedopornographiePage extends StatelessWidget {
   const PaProvocationPedopornographiePage({super.key});
@@ -56,10 +57,18 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en péril",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+            "f00002",
+            "Mise en péril",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La provocation à la pédopornographie",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+              "f00003",
+              "La provocation à la pédopornographie",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,27 +99,60 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de faire à une personne des offres ou des promesses, ou de lui proposer des dons, présents "
-                "ou avantages quelconques, afin qu’elle commette à l’encontre d’un mineur l’un des crimes ou délits "
-                "visés par la loi, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00005",
+                      "Le fait de faire à une personne des offres ou des promesses, ou de lui proposer des dons, présents ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00006",
+                      "ou avantages quelconques, afin qu’elle commette à l’encontre d’un mineur l’un des crimes ou délits ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00007",
+                      "visés par la loi, constitue une infraction.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Infractions visées (liste légale)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00008",
+                  "Infractions visées (liste légale)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sont notamment concernés : proxénétisme, corruption de mineur, exploitation pornographique d’un mineur, atteintes sexuelles sur mineur. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00009",
+                      "Sont notamment concernés : proxénétisme, corruption de mineur, exploitation pornographique d’un mineur, atteintes sexuelles sur mineur. ",
+                    ),
                   ),
-                  TextSpan(text: "La liste exacte est fixée par "),
                   TextSpan(
-                    text: "l’article 227-28-3 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00010",
+                      "La liste exacte est fixée par ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00011",
+                      "l’article 227-28-3 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -122,19 +168,30 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+              "f00012",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-28-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00013",
+                    "Article 227-28-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime la provocation à la pédopornographie.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00014",
+                    " : prévoit et réprime la provocation à la pédopornographie.",
+                  ),
                 ),
               ]),
             ],
@@ -144,78 +201,160 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
           // Élément matériel (3 éléments pédagogiques)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte de provocation"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00016",
+                  "A) Un acte de provocation",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "La provocation consiste à "),
                 TextSpan(
-                  text:
-                      "faire à une personne des offres ou des promesses, ou proposer des dons, présents ou avantages quelconques",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00017",
+                    "La provocation consiste à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00018",
+                    "faire à une personne des offres ou des promesses, ou proposer des dons, présents ou avantages quelconques",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ". — "),
                 TextSpan(
-                  text: "article 227-28-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00019",
+                    "article 227-28-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Il s’agit d’agissements directs qui encouragent ou incitent autrui à commettre un crime ou un délit "
-                "à l’encontre d’un mineur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00020",
+                      "Il s’agit d’agissements directs qui encouragent ou incitent autrui à commettre un crime ou un délit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00021",
+                      "à l’encontre d’un mineur.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) À commettre un crime ou un délit à l’encontre d’un mineur",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00022",
+                  "B) À commettre un crime ou un délit à l’encontre d’un mineur",
+                ),
               ),
               _Paragraph(
-                "Le texte vise uniquement des infractions précises : la provocation n’est punissable que si elle porte sur "
-                "un des crimes ou délits listés par la loi.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00023",
+                      "Le texte vise uniquement des infractions précises : la provocation n’est punissable que si elle porte sur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00024",
+                      "un des crimes ou délits listés par la loi.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Crimes / délits visés",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00025",
+                  "Crimes / délits visés",
+                ),
                 bodySpans: [
-                  TextSpan(text: "• Proxénétisme — "),
                   TextSpan(
-                    text: "articles 225-5 à 225-11 du Code pénal",
-                    style: TextStyle(
-                      color: _lawRed,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                  TextSpan(text: "\n• Corruption de mineur — "),
-                  TextSpan(
-                    text: "article 227-22 du Code pénal",
-                    style: TextStyle(
-                      color: _lawRed,
-                      fontWeight: FontWeight.w900,
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00026",
+                      "• Proxénétisme — ",
                     ),
                   ),
                   TextSpan(
-                    text:
-                        "\n• Exploitation de l’image / représentation pornographique d’un mineur — ",
-                  ),
-                  TextSpan(
-                    text: "article 227-23 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00027",
+                      "articles 225-5 à 225-11 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text: "\n• Atteintes sexuelles par un majeur — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00028",
+                      "\n• Corruption de mineur — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "articles 227-25 à 227-28 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00029",
+                      "article 227-22 du Code pénal",
+                    ),
+                    style: TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00030",
+                      "\n• Exploitation de l’image / représentation pornographique d’un mineur — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00031",
+                      "article 227-23 du Code pénal",
+                    ),
+                    style: TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00032",
+                      "\n• Atteintes sexuelles par un majeur — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00033",
+                      "articles 227-25 à 227-28 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -228,15 +367,31 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "C) Un mineur victime + absence de réalisation de l’infraction provoquée",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00034",
+                  "C) Un mineur victime + absence de réalisation de l’infraction provoquée",
+                ),
               ),
               _Paragraph(
-                "La victime visée doit être un mineur (en l’absence de précision, mineur de moins de 18 ans).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00035",
+                  "La victime visée doit être un mineur (en l’absence de précision, mineur de moins de 18 ans).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’infraction réside dans la provocation : le crime ou le délit provoqué ne doit être ni commis ni tenté. "
-                "Si l’infraction est commise ou tentée, une autre qualification pénale s’appliquera.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00036",
+                      "L’infraction réside dans la provocation : le crime ou le délit provoqué ne doit être ni commis ni tenté. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00037",
+                      "Si l’infraction est commise ou tentée, une autre qualification pénale s’appliquera.",
+                    ),
               ),
             ],
           ),
@@ -245,21 +400,41 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+              "f00038",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté de faire commettre à un tiers une infraction contre un mineur",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00039",
+                  "Volonté de faire commettre à un tiers une infraction contre un mineur",
+                ),
               ),
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : l’auteur doit vouloir faire commettre à autrui "
-                "un crime ou un délit à l’encontre d’un mineur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00040",
+                      "Il s’agit d’une infraction intentionnelle : l’auteur doit vouloir faire commettre à autrui ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                      "f00041",
+                      "un crime ou un délit à l’encontre d’un mineur.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette volonté se déduit des moyens employés : offres, promesses, propositions de dons, présents, avantages, etc.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00042",
+                  "Cette volonté se déduit des moyens employés : offres, promesses, propositions de dons, présents, avantages, etc.",
+                ),
               ),
             ],
           ),
@@ -268,12 +443,22 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+              "f00043",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00044",
+                  "Aucune circonstance aggravante prévue.",
+                ),
+              ),
             ],
           ),
 
@@ -281,22 +466,44 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+              "f00045",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00046",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Provocation portant sur un délit : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00047",
+                    "Provocation portant sur un délit : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00048",
+                    "3 ans d’emprisonnement et 45 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-28-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00049",
+                    "article 227-28-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -304,14 +511,26 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Provocation portant sur un crime : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00050",
+                    "Provocation portant sur un crime : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00051",
+                    "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-28-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00052",
+                    "article 227-28-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -319,14 +538,27 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00053",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les personnes morales peuvent être déclarées responsables pénalement dans les conditions prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00054",
+                    "Les personnes morales peuvent être déclarées responsables pénalement dans les conditions prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                    "f00055",
+                    "l’article 121-2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -334,9 +566,27 @@ class PaProvocationPedopornographiePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
-              _BulletPoint(text: "Complicité : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00056",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00057",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart",
+                  "f00058",
+                  "Complicité : NON.",
+                ),
+              ),
             ],
           ),
         ],

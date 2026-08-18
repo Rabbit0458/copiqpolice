@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CommissionRogatoireChapitre1Page extends StatelessWidget {
   const CommissionRogatoireChapitre1Page({super.key});
@@ -39,10 +40,18 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Commission rogatoire — Chapitre 1',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+            "f00002",
+            'Commission rogatoire — Chapitre 1',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -58,7 +67,11 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           // TITRE PRINCIPAL
           // ==================================================================
           Text(
-            'Chapitre 1\nLes autorités délégantes et les autorités délégataires',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00003",
+              'Chapitre 1\nLes autorités délégantes et les autorités délégataires',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -68,8 +81,16 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Origine de la commission rogatoire, juridictions habilitées à la délivrer '
-            'et services de police ou de gendarmerie chargés de son exécution.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00004",
+                  'Origine de la commission rogatoire, juridictions habilitées à la délivrer ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00005",
+                  'et services de police ou de gendarmerie chargés de son exécution.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -82,71 +103,182 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           // ==================================================================
           // PETIT RÉSUMÉ SOUS FORME DE PUCE D'INTRO
           // ==================================================================
-          const _IntroBullet(
-            text:
-                'Les juridictions d’instruction et de jugement peuvent délivrer une commission rogatoire.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00006",
+              'Les juridictions d’instruction et de jugement peuvent délivrer une commission rogatoire.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'En pratique, la plupart des commissions rogatoires émanent du juge d’instruction.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00007",
+              'En pratique, la plupart des commissions rogatoires émanent du juge d’instruction.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'L’exécution revient aux officiers de police judiciaire, dans les limites de leurs compétences matérielle et territoriale.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00008",
+              'L’exécution revient aux officiers de police judiciaire, dans les limites de leurs compétences matérielle et territoriale.',
+            ),
           ),
           const SizedBox(height: 18),
 
           // ==================================================================
           // 1.1 — LES AUTORITÉS DÉLÉGANTES
           // ==================================================================
-          const _SubTitle('1.1 — Les autorités délégantes'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00009",
+              '1.1 — Les autorités délégantes',
+            ),
+          ),
           const SizedBox(height: 4),
-          const _Paragraph(
-            'Toute juridiction d’instruction ou de jugement dispose du pouvoir de délivrer '
-            'une commission rogatoire. Il s’agit notamment : du juge d’instruction '
-            '(article 81 du Code de procédure pénale — CPP), de la chambre de '
-            'l’instruction (article 205 CPP), du tribunal de police (article 538 CPP), '
-            'du tribunal correctionnel (article 463 CPP), du président de la cour '
-            'd’assises (article 283 CPP) et du président de la cour criminelle '
-            'départementale (article 380-19 CPP).',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00010",
+                  'Toute juridiction d’instruction ou de jugement dispose du pouvoir de délivrer ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00011",
+                  'une commission rogatoire. Il s’agit notamment : du juge d’instruction ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00012",
+                  '(article 81 du Code de procédure pénale — CPP), de la chambre de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00013",
+                  'l’instruction (article 205 CPP), du tribunal de police (article 538 CPP), ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00014",
+                  'du tribunal correctionnel (article 463 CPP), du président de la cour ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00015",
+                  'd’assises (article 283 CPP) et du président de la cour criminelle ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00016",
+                  'départementale (article 380-19 CPP).',
+                ),
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'En pratique, la situation la plus courante demeure celle où la commission '
-            'rogatoire émane du juge d’instruction, dans le cadre d’une information '
-            'judiciaire qu’il dirige.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00017",
+                  'En pratique, la situation la plus courante demeure celle où la commission ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00018",
+                  'rogatoire émane du juge d’instruction, dans le cadre d’une information ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00019",
+                  'judiciaire qu’il dirige.',
+                ),
           ),
           const SizedBox(height: 10),
 
           // EXEMPLE / CITATION ARTICLE 81 AL. 4 CPP
-          const _ExempleBox(
-            title: 'Article 81 alinéa 4 du Code de procédure pénale',
+          _ExempleBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00020",
+              'Article 81 alinéa 4 du Code de procédure pénale',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Lorsque le juge d’instruction ne peut pas accomplir lui-même tous les actes '
-                    'nécessaires à l’information, il peut donner commission rogatoire aux '
-                    'officiers de police judiciaire afin qu’ils exécutent, pour son compte, '
-                    'les actes d’information nécessaires dans les conditions et sous les '
-                    'réserves prévues aux articles 151 et 152 du Code de procédure pénale.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00021",
+                      'Lorsque le juge d’instruction ne peut pas accomplir lui-même tous les actes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00022",
+                      'nécessaires à l’information, il peut donner commission rogatoire aux ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00023",
+                      'officiers de police judiciaire afin qu’ils exécutent, pour son compte, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00024",
+                      'les actes d’information nécessaires dans les conditions et sous les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00025",
+                      'réserves prévues aux articles 151 et 152 du Code de procédure pénale.',
+                    ),
               ),
             ],
           ),
           const SizedBox(height: 10),
 
           // CIRCULAIRE 1er MARS 1993 -> EXEMPLE
-          const _ExempleBox(
-            title: 'Circulaire du 1er mars 1993 (extrait)',
+          _ExempleBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00026",
+              'Circulaire du 1er mars 1993 (extrait)',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'La circulaire précise que la possibilité de délivrer une commission '
-                    'rogatoire est réservée aux situations où il est réellement impossible '
-                    'pour le juge d’instruction d’agir lui-même. Il peut s’agir, par exemple, '
-                    'd’opérations qui, en pratique, sont réalisées par les officiers de '
-                    'police judiciaire (missions de surveillance, de recherche, filatures) '
-                    'ou d’actes nécessitant des moyens matériels dont le magistrat ne '
-                    'dispose pas.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00027",
+                      'La circulaire précise que la possibilité de délivrer une commission ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00028",
+                      'rogatoire est réservée aux situations où il est réellement impossible ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00029",
+                      'pour le juge d’instruction d’agir lui-même. Il peut s’agir, par exemple, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00030",
+                      'd’opérations qui, en pratique, sont réalisées par les officiers de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00031",
+                      'police judiciaire (missions de surveillance, de recherche, filatures) ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00032",
+                      'ou d’actes nécessitant des moyens matériels dont le magistrat ne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00033",
+                      'dispose pas.',
+                    ),
               ),
             ],
           ),
@@ -155,62 +287,196 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           // ==================================================================
           // 1.2 — LES AUTORITÉS DÉLÉGATAIRES
           // ==================================================================
-          const _SubTitle('1.2 — Les autorités délégataires'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00034",
+              '1.2 — Les autorités délégataires',
+            ),
+          ),
           const SizedBox(height: 4),
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text: 'L’article 151 alinéa 1 du Code de procédure pénale ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                "f00035",
+                'L’article 151 alinéa 1 du Code de procédure pénale ',
+              ),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
             TextSpan(
               text:
-                  'prévoit que le juge d’instruction peut, par commission rogatoire, requérir '
-                  'tout juge de son tribunal, tout autre juge d’instruction ou tout officier '
-                  'de police judiciaire, lequel en informe alors le procureur de la République, '
-                  'afin de procéder aux actes d’information nécessaires dans les lieux où '
-                  'chacun d’eux est territorialement compétent.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                    "f00036",
+                    'prévoit que le juge d’instruction peut, par commission rogatoire, requérir ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                    "f00037",
+                    'tout juge de son tribunal, tout autre juge d’instruction ou tout officier ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                    "f00038",
+                    'de police judiciaire, lequel en informe alors le procureur de la République, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                    "f00039",
+                    'afin de procéder aux actes d’information nécessaires dans les lieux où ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                    "f00040",
+                    'chacun d’eux est territorialement compétent.',
+                  ),
             ),
           ]),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'En pratique policière, on retient surtout que tous les officiers de police '
-            'judiciaire du ressort d’un même tribunal ont vocation à exécuter les '
-            'commissions rogatoires, sous réserve du respect de leurs compétences '
-            'territoriales et des instructions données par le magistrat.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00041",
+                  'En pratique policière, on retient surtout que tous les officiers de police ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00042",
+                  'judiciaire du ressort d’un même tribunal ont vocation à exécuter les ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00043",
+                  'commissions rogatoires, sous réserve du respect de leurs compétences ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00044",
+                  'territoriales et des instructions données par le magistrat.',
+                ),
           ),
           const SizedBox(height: 10),
-          const _Paragraph(
-            'Le juge d’instruction dispose d’une liberté de choix quant à la formation ou au '
-            'service chargé d’exécuter la commission rogatoire (article D.2 alinéa 3 CPP). '
-            'Il doit toutefois tenir compte de la spécialisation de certains services ou '
-            'directions (par exemple, la direction nationale de la police judiciaire, la '
-            'direction nationale de la police aux frontières – article D.4 CPP). Le choix du '
-            'service exécutant dépend donc des circonstances de l’affaire.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00045",
+                  'Le juge d’instruction dispose d’une liberté de choix quant à la formation ou au ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00046",
+                  'service chargé d’exécuter la commission rogatoire (article D.2 alinéa 3 CPP). ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00047",
+                  'Il doit toutefois tenir compte de la spécialisation de certains services ou ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00048",
+                  'directions (par exemple, la direction nationale de la police judiciaire, la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00049",
+                  'direction nationale de la police aux frontières – article D.4 CPP). Le choix du ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00050",
+                  'service exécutant dépend donc des circonstances de l’affaire.',
+                ),
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'En raison de la hiérarchisation des services de police et de gendarmerie, '
-            'l’article D.33 du Code de procédure pénale précise que lorsque le juge '
-            'd’instruction adresse une commission rogatoire à un officier de police '
-            'judiciaire chef de service ou de détachement, celui-ci peut en confier '
-            'l’exécution à un autre officier de police judiciaire placé sous son autorité, '
-            'à condition que ce dernier agisse dans les limites de sa compétence territoriale.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00051",
+                  'En raison de la hiérarchisation des services de police et de gendarmerie, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00052",
+                  'l’article D.33 du Code de procédure pénale précise que lorsque le juge ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00053",
+                  'd’instruction adresse une commission rogatoire à un officier de police ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00054",
+                  'judiciaire chef de service ou de détachement, celui-ci peut en confier ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00055",
+                  'l’exécution à un autre officier de police judiciaire placé sous son autorité, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00056",
+                  'à condition que ce dernier agisse dans les limites de sa compétence territoriale.',
+                ),
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'La circulaire du 1er mars 1993 admet que, pour une même affaire, le juge '
-            'd’instruction puisse délivrer plusieurs commissions rogatoires à différents '
-            'services de police ou de gendarmerie, lorsque des vérifications distinctes '
-            'doivent être menées dans des lieux différents et selon des diligences bien '
-            'séparées.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00057",
+                  'La circulaire du 1er mars 1993 admet que, pour une même affaire, le juge ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00058",
+                  'd’instruction puisse délivrer plusieurs commissions rogatoires à différents ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00059",
+                  'services de police ou de gendarmerie, lorsque des vérifications distinctes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00060",
+                  'doivent être menées dans des lieux différents et selon des diligences bien ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00061",
+                  'séparées.',
+                ),
           ),
           const SizedBox(height: 8),
-          const _Paragraph(
-            'Seuls les officiers de police judiciaire peuvent recevoir directement une '
-            'commission rogatoire. Cependant, les agents de police judiciaire et les '
-            'assistants d’enquête peuvent, sous certaines conditions, être chargés par les '
-            'officiers de police judiciaire d’exécuter certains actes dans le cadre de cette '
-            'délégation.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00062",
+                  'Seuls les officiers de police judiciaire peuvent recevoir directement une ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00063",
+                  'commission rogatoire. Cependant, les agents de police judiciaire et les ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00064",
+                  'assistants d’enquête peuvent, sous certaines conditions, être chargés par les ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00065",
+                  'officiers de police judiciaire d’exécuter certains actes dans le cadre de cette ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                  "f00066",
+                  'délégation.',
+                ),
           ),
           const SizedBox(height: 18),
 
@@ -218,41 +484,92 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           // BLOC 1.2.1 — COMPÉTENCE MATÉRIELLE (ConditionCard + BulletPoint)
           // ==================================================================
           _ConditionCard(
-            title:
-                '1.2.1 — Compétence matérielle des officiers de police judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00067",
+              '1.2.1 — Compétence matérielle des officiers de police judiciaire',
+            ),
             cardColor: cardBlue,
             accent: cardBlueAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Base légale : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                    "f00068",
+                    'Base légale : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'article 151 du Code de procédure pénale. L’officier de police judiciaire '
-                      'exécute, sur commission rogatoire, les actes d’information nécessaires '
-                      'qui lui sont délégués par le juge d’instruction.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                        "f00069",
+                        'article 151 du Code de procédure pénale. L’officier de police judiciaire ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                        "f00070",
+                        'exécute, sur commission rogatoire, les actes d’information nécessaires ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                        "f00071",
+                        'qui lui sont délégués par le juge d’instruction.',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    'Les actes d’instruction réalisés doivent être directement liés à la '
-                    'répression de l’infraction visée par les poursuites (article 151 alinéa 3 CPP).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00072",
+                      'Les actes d’instruction réalisés doivent être directement liés à la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00073",
+                      'répression de l’infraction visée par les poursuites (article 151 alinéa 3 CPP).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'L’officier de police judiciaire ne peut pas interroger ni confronter une '
-                    'personne mise en examen. Il ne peut entendre les parties civiles ni les '
-                    'témoins assistés que si ces derniers en font eux-mêmes la demande '
-                    '(article 152 alinéa 2 CPP).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00074",
+                      'L’officier de police judiciaire ne peut pas interroger ni confronter une ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00075",
+                      'personne mise en examen. Il ne peut entendre les parties civiles ni les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00076",
+                      'témoins assistés que si ces derniers en font eux-mêmes la demande ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00077",
+                      '(article 152 alinéa 2 CPP).',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'L’officier de police judiciaire ne peut ni ordonner une expertise, ni '
-                    'délivrer des mandats : ces prérogatives demeurent réservées au magistrat.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00078",
+                      'L’officier de police judiciaire ne peut ni ordonner une expertise, ni ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00079",
+                      'délivrer des mandats : ces prérogatives demeurent réservées au magistrat.',
+                    ),
               ),
             ],
           ),
@@ -262,60 +579,163 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           // BLOC 1.2.2 — COMPÉTENCE TERRITORIALE (ConditionCard + IntroBullet)
           // ==================================================================
           _ConditionCard(
-            title:
-                '1.2.2 — Compétence territoriale des officiers de police judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+              "f00080",
+              '1.2.2 — Compétence territoriale des officiers de police judiciaire',
+            ),
             cardColor: cardGreen,
             accent: cardGreenAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF1B5E20),
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 18 alinéa 1 du Code de procédure pénale : ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                    "f00081",
+                    'Article 18 alinéa 1 du Code de procédure pénale : ',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'les officiers de police judiciaire sont compétents dans les limites '
-                      'territoriales où ils exercent habituellement leurs fonctions.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                        "f00082",
+                        'les officiers de police judiciaire sont compétents dans les limites ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                        "f00083",
+                        'territoriales où ils exercent habituellement leurs fonctions.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _IntroBullet(
                 text:
-                    'L’article 18 alinéa 3 étend la compétence territoriale d’un officier de '
-                    'police judiciaire à l’ensemble du territoire national, à condition qu’il '
-                    'en informe au préalable le juge d’instruction en charge de l’enquête. '
-                    'Cette information peut être donnée par tout moyen et doit être mentionnée '
-                    'dans un procès-verbal.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00084",
+                      'L’article 18 alinéa 3 étend la compétence territoriale d’un officier de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00085",
+                      'police judiciaire à l’ensemble du territoire national, à condition qu’il ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00086",
+                      'en informe au préalable le juge d’instruction en charge de l’enquête. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00087",
+                      'Cette information peut être donnée par tout moyen et doit être mentionnée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00088",
+                      'dans un procès-verbal.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Le juge peut exiger que les enquêteurs soient assistés par un officier de '
-                    'police judiciaire territorialement compétent. À défaut d’instruction '
-                    'expresse, il appartient aux enquêteurs d’apprécier si cette assistance '
-                    'est nécessaire.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00089",
+                      'Le juge peut exiger que les enquêteurs soient assistés par un officier de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00090",
+                      'police judiciaire territorialement compétent. À défaut d’instruction ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00091",
+                      'expresse, il appartient aux enquêteurs d’apprécier si cette assistance ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00092",
+                      'est nécessaire.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Aucune information préalable n’est requise lorsque le déplacement a lieu '
-                    'dans un ressort limitrophe de celui où l’officier exerce ses fonctions. '
-                    'Paris et les départements des Hauts-de-Seine, de Seine-Saint-Denis et du '
-                    'Val-de-Marne sont, à ce titre, considérés comme un seul et même ressort.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00093",
+                      'Aucune information préalable n’est requise lorsque le déplacement a lieu ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00094",
+                      'dans un ressort limitrophe de celui où l’officier exerce ses fonctions. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00095",
+                      'Paris et les départements des Hauts-de-Seine, de Seine-Saint-Denis et du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00096",
+                      'Val-de-Marne sont, à ce titre, considérés comme un seul et même ressort.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                'L’article 18 alinéa 4 permet en outre aux officiers de police judiciaire, sur '
-                'commission rogatoire expresse du juge d’instruction et avec l’accord des '
-                'autorités compétentes, de procéder à des auditions sur le territoire d’un '
-                'État étranger. Dans ce cas, leur compétence est limitée à l’infraction pour '
-                'laquelle ils ont été initialement saisis.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00097",
+                      'L’article 18 alinéa 4 permet en outre aux officiers de police judiciaire, sur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00098",
+                      'commission rogatoire expresse du juge d’instruction et avec l’accord des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00099",
+                      'autorités compétentes, de procéder à des auditions sur le territoire d’un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00100",
+                      'État étranger. Dans ce cas, leur compétence est limitée à l’infraction pour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00101",
+                      'laquelle ils ont été initialement saisis.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Le procureur de la République territorialement compétent doit être informé de '
-                'ces opérations internationales. En pratique, cette information est souvent '
-                'transmise par l’officier de police judiciaire lui-même, même si elle émane '
-                'à l’origine du magistrat ayant prescrit l’acte.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00102",
+                      'Le procureur de la République territorialement compétent doit être informé de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00103",
+                      'ces opérations internationales. En pratique, cette information est souvent ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00104",
+                      'transmise par l’officier de police judiciaire lui-même, même si elle émane ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00105",
+                      'à l’origine du magistrat ayant prescrit l’acte.',
+                    ),
               ),
             ],
           ),
@@ -324,18 +744,50 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           // ==================================================================
           // NOTA / INFO FINALE (APJ, APJ adjoints, assistants d'enquête)
           // ==================================================================
-          const _NotaBox(
+          _NotaBox(
             bodySpans: [
               TextSpan(
                 text:
-                    'seuls les officiers de police judiciaire sont compétents pour mettre en '
-                    'œuvre une commission rogatoire. Cependant, les agents de police '
-                    'judiciaire et les agents de police judiciaire adjoints peuvent les '
-                    'assister dans les limites territoriales où les officiers exercent leurs '
-                    'attributions (article 21-1 CPP). Les assistants d’enquête peuvent eux '
-                    'aussi être chargés, par les officiers de police judiciaire, de certaines '
-                    'tâches matérielles ou techniques dans le cadre de l’exécution de la '
-                    'commission rogatoire (article 21-3 CPP).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00106",
+                      'seuls les officiers de police judiciaire sont compétents pour mettre en ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00107",
+                      'œuvre une commission rogatoire. Cependant, les agents de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00108",
+                      'judiciaire et les agents de police judiciaire adjoints peuvent les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00109",
+                      'assister dans les limites territoriales où les officiers exercent leurs ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00110",
+                      'attributions (article 21-1 CPP). Les assistants d’enquête peuvent eux ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00111",
+                      'aussi être chargés, par les officiers de police judiciaire, de certaines ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00112",
+                      'tâches matérielles ou techniques dans le cadre de l’exécution de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart",
+                      "f00113",
+                      'commission rogatoire (article 21-3 CPP).',
+                    ),
               ),
             ],
           ),
@@ -670,9 +1122,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

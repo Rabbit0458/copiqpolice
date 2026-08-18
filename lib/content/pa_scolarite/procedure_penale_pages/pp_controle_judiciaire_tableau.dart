@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPControleJudiciaireTableauPage extends StatelessWidget {
   const PaPPControleJudiciaireTableauPage({super.key});
@@ -18,8 +19,12 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
         ? Colors.white70
         : const Color(0xFF222222).withValues(alpha: .75);
 
-    final Color accent = isDark ? const Color(0xFF64B5F6) : const Color(0xFF1565C0);
-    final Color cardColor = isDark ? const Color(0xFF1E1E1E) : const Color(0xFFF7F7F7);
+    final Color accent = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color cardColor = isDark
+        ? const Color(0xFF1E1E1E)
+        : const Color(0xFFF7F7F7);
     const Color articleRed = Color(0xFFD32F2F);
 
     return Scaffold(
@@ -31,10 +36,18 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Tableau — Contrôle judiciaire',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+            "f00002",
+            'Tableau — Contrôle judiciaire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -50,7 +63,11 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
           // TITRE
           // ===================================================================
           Text(
-            'TABLEAU\nContrôle judiciaire',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+              "f00003",
+              'TABLEAU\nContrôle judiciaire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,8 +78,16 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Synthèse des autorités compétentes pour ordonner le placement sous contrôle judiciaire '
-            'ou en modifier les modalités, avec les principaux textes de référence.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00004",
+                  'Synthèse des autorités compétentes pour ordonner le placement sous contrôle judiciaire ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00005",
+                  'ou en modifier les modalités, avec les principaux textes de référence.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -76,36 +101,69 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
           // BLOC 1 — PLACEMENT
           // ===================================================================
           _ConditionCard(
-            title: 'PLACEMENT sous contrôle judiciaire',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+              "f00006",
+              'PLACEMENT sous contrôle judiciaire',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'Qui peut ordonner le placement sous contrôle judiciaire et à quel moment de la procédure ?',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00007",
+                  'Qui peut ordonner le placement sous contrôle judiciaire et à quel moment de la procédure ?',
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle('Par le juge d’instruction'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00008",
+                  'Par le juge d’instruction',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Le juge d’instruction peut placer une personne sous contrôle judiciaire en raison des nécessités de '
-                      'l’instruction ou à titre de mesure de sûreté, conformément à ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                        "f00009",
+                        'Le juge d’instruction peut placer une personne sous contrôle judiciaire en raison des nécessités de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                        "f00010",
+                        'l’instruction ou à titre de mesure de sûreté, conformément à ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’Article 137 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                    "f00011",
+                    'l’Article 137 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      '. La décision prend la forme d’une ordonnance de placement, prévue par ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                    "f00012",
+                    '. La décision prend la forme d’une ordonnance de placement, prévue par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’Article 139 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                    "f00013",
+                    'l’Article 139 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -115,27 +173,52 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
               ]),
               SizedBox(height: 6),
               _Paragraph(
-                'Moment : à tout moment au cours de l’instruction.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00014",
+                  'Moment : à tout moment au cours de l’instruction.',
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle('Par le juge des libertés et de la détention'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00015",
+                  'Par le juge des libertés et de la détention',
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Le juge des libertés et de la détention peut décider d’un contrôle judiciaire :',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                    "f00016",
+                    'Le juge des libertés et de la détention peut décider d’un contrôle judiciaire :',
+                  ),
                 ),
               ]),
               SizedBox(height: 4),
               _BulletPoint(
                 text:
-                    'lorsqu’il est saisi par le juge d’instruction pour un placement en détention provisoire et qu’il refuse cette mesure, '
-                    'en la remplaçant par un contrôle judiciaire, conformément à l’',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00017",
+                      'lorsqu’il est saisi par le juge d’instruction pour un placement en détention provisoire et qu’il refuse cette mesure, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00018",
+                      'en la remplaçant par un contrôle judiciaire, conformément à l’',
+                    ),
               ),
               // phrase suivante en rouge dans un paragraphe séparé pour être propre
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 145 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                    "f00019",
+                    'Article 145 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -145,12 +228,24 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
               ]),
               _BulletPoint(
                 text:
-                    'dans le cadre de la comparution sur reconnaissance préalable de culpabilité, où il peut assortir la peine proposée '
-                    'd’un contrôle judiciaire, en application de l’',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00020",
+                      'dans le cadre de la comparution sur reconnaissance préalable de culpabilité, où il peut assortir la peine proposée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00021",
+                      'd’un contrôle judiciaire, en application de l’',
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 495-10 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                    "f00022",
+                    'Article 495-10 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -160,46 +255,93 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
               ]),
               SizedBox(height: 4),
               _Paragraph(
-                'Moment : lorsqu’il est saisi par le juge d’instruction (ou dans le cadre de la C.R.P.C.).',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00023",
+                  'Moment : lorsqu’il est saisi par le juge d’instruction (ou dans le cadre de la C.R.P.C.).',
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle('Par la chambre de l’instruction'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00024",
+                  'Par la chambre de l’instruction',
+                ),
+              ),
               _Paragraph(
-                'La chambre de l’instruction peut ordonner le placement sous contrôle judiciaire dans plusieurs situations :',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00025",
+                  'La chambre de l’instruction peut ordonner le placement sous contrôle judiciaire dans plusieurs situations :',
+                ),
               ),
               SizedBox(height: 4),
               _BulletPoint(
-                text:
-                    'en cas d’appel d’une ordonnance du juge d’instruction ou de saisine directe par le procureur de la République ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00026",
+                  'en cas d’appel d’une ordonnance du juge d’instruction ou de saisine directe par le procureur de la République ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'lorsqu’elle décide de la mise en liberté de la personne mise en examen et substitue le contrôle judiciaire à la détention ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00027",
+                  'lorsqu’elle décide de la mise en liberté de la personne mise en examen et substitue le contrôle judiciaire à la détention ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'lorsqu’elle dessaisit le juge d’instruction en évoquant l’affaire et en connaissant elle-même de l’information.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00028",
+                  'lorsqu’elle dessaisit le juge d’instruction en évoquant l’affaire et en connaissant elle-même de l’information.',
+                ),
               ),
               SizedBox(height: 4),
               _Paragraph(
-                'Moment : lorsque la chambre est saisie de l’information ou d’un appel portant sur la situation de la personne mise en examen.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00029",
+                  'Moment : lorsque la chambre est saisie de l’information ou d’un appel portant sur la situation de la personne mise en examen.',
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle('Par les juridictions de jugement'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00030",
+                  'Par les juridictions de jugement',
+                ),
+              ),
               _Paragraph(
-                'Les juridictions de jugement (tribunal correctionnel, cour d’assises, juridictions pour mineurs) peuvent elles aussi '
-                'prononcer un contrôle judiciaire :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00031",
+                      'Les juridictions de jugement (tribunal correctionnel, cour d’assises, juridictions pour mineurs) peuvent elles aussi ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00032",
+                      'prononcer un contrôle judiciaire :',
+                    ),
               ),
               SizedBox(height: 4),
               _BulletPoint(
-                text:
-                    'à l’audience, sur réquisitions du ministère public ou à la demande de la personne poursuivie ou de la partie civile ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00033",
+                  'à l’audience, sur réquisitions du ministère public ou à la demande de la personne poursuivie ou de la partie civile ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'depuis leur saisine par l’ordonnance ou l’acte de renvoi et jusqu’à la décision de jugement.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00034",
+                  'depuis leur saisine par l’ordonnance ou l’acte de renvoi et jusqu’à la décision de jugement.',
+                ),
               ),
             ],
           ),
@@ -210,85 +352,183 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
           // BLOC 2 — MODIFICATION
           // ===================================================================
           _ConditionCard(
-            title: 'MODIFICATION du contrôle judiciaire',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+              "f00035",
+              'MODIFICATION du contrôle judiciaire',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'Les mêmes autorités peuvent adapter, alléger ou renforcer les obligations de contrôle judiciaire en fonction '
-                'de l’évolution de la procédure et de la situation de la personne mise en examen.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00036",
+                      'Les mêmes autorités peuvent adapter, alléger ou renforcer les obligations de contrôle judiciaire en fonction ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00037",
+                      'de l’évolution de la procédure et de la situation de la personne mise en examen.',
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle('Par le juge d’instruction'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00038",
+                  'Par le juge d’instruction',
+                ),
+              ),
               _Paragraph(
-                'À tout moment de l’instruction, le juge d’instruction peut :',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00039",
+                  'À tout moment de l’instruction, le juge d’instruction peut :',
+                ),
               ),
               SizedBox(height: 4),
-              _BulletPoint(text: 'imposer de nouvelles obligations ;'),
               _BulletPoint(
-                text: 'modifier une ou plusieurs obligations existantes ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00040",
+                  'imposer de nouvelles obligations ;',
+                ),
               ),
               _BulletPoint(
-                text: 'supprimer certaines obligations devenues inutiles ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00041",
+                  'modifier une ou plusieurs obligations existantes ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'accorder une dispense temporaire d’observer certaines obligations lorsque la situation le justifie.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00042",
+                  'supprimer certaines obligations devenues inutiles ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00043",
+                  'accorder une dispense temporaire d’observer certaines obligations lorsque la situation le justifie.',
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle('Par le juge des libertés et de la détention'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00044",
+                  'Par le juge des libertés et de la détention',
+                ),
+              ),
               _Paragraph(
-                'Le juge des libertés et de la détention peut également modifier le contrôle judiciaire lorsqu’il est saisi :',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00045",
+                  'Le juge des libertés et de la détention peut également modifier le contrôle judiciaire lorsqu’il est saisi :',
+                ),
               ),
               SizedBox(height: 4),
               _BulletPoint(
-                text:
-                    'dans le cadre d’un débat sur la détention provisoire (placement ou prolongation) ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00046",
+                  'dans le cadre d’un débat sur la détention provisoire (placement ou prolongation) ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'à l’occasion d’une audience de contrôle des mesures de sûreté, en renforçant ou en assouplissant le contrôle judiciaire.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00047",
+                  'à l’occasion d’une audience de contrôle des mesures de sûreté, en renforçant ou en assouplissant le contrôle judiciaire.',
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle('Par la chambre de l’instruction'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00048",
+                  'Par la chambre de l’instruction',
+                ),
+              ),
               _Paragraph(
-                'La chambre de l’instruction, lorsqu’elle connaît d’un appel ou lorsqu’elle s’est réservée le contentieux du contrôle '
-                'judiciaire, peut :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00049",
+                      'La chambre de l’instruction, lorsqu’elle connaît d’un appel ou lorsqu’elle s’est réservée le contentieux du contrôle ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00050",
+                      'judiciaire, peut :',
+                    ),
               ),
               SizedBox(height: 4),
               _BulletPoint(
-                text: 'confirmer les obligations existantes ou les modifier ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00051",
+                  'confirmer les obligations existantes ou les modifier ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'substituer d’autres obligations plus adaptées (par exemple interdire certains lieux, personnes, activités, etc.) ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00052",
+                  'substituer d’autres obligations plus adaptées (par exemple interdire certains lieux, personnes, activités, etc.) ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'lever tout ou partie des obligations lorsque les nécessités de l’instruction ont évolué.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00053",
+                  'lever tout ou partie des obligations lorsque les nécessités de l’instruction ont évolué.',
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle('Par les juridictions de jugement'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00054",
+                  'Par les juridictions de jugement',
+                ),
+              ),
               _Paragraph(
-                'Les juridictions de jugement disposent, jusqu’au règlement définitif de l’affaire, du pouvoir de :',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00055",
+                  'Les juridictions de jugement disposent, jusqu’au règlement définitif de l’affaire, du pouvoir de :',
+                ),
               ),
               SizedBox(height: 4),
               _BulletPoint(
-                text:
-                    'maintenir le contrôle judiciaire prononcé au cours de l’instruction ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00056",
+                  'maintenir le contrôle judiciaire prononcé au cours de l’instruction ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'adapter les obligations aux conditions de la comparution de la personne (travail, domicile, éloignement de la victime, etc.) ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00057",
+                  'adapter les obligations aux conditions de la comparution de la personne (travail, domicile, éloignement de la victime, etc.) ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'prononcer la mainlevée totale du contrôle judiciaire lorsque celui-ci ne se justifie plus.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00058",
+                  'prononcer la mainlevée totale du contrôle judiciaire lorsque celui-ci ne se justifie plus.',
+                ),
               ),
             ],
           ),
@@ -298,15 +538,27 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
           // ===================================================================
           // NOTA
           // ===================================================================
-          const _NotaBox(
+          _NotaBox(
             bodySpans: [
               TextSpan(
                 text:
-                    'Ce tableau reprend les grands principes applicables au contrôle judiciaire. Les durées et les modalités '
-                    'de certaines procédures ont été adaptées par la réforme récente de la justice pénale, notamment la ',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00059",
+                      'Ce tableau reprend les grands principes applicables au contrôle judiciaire. Les durées et les modalités ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00060",
+                      'de certaines procédures ont été adaptées par la réforme récente de la justice pénale, notamment la ',
+                    ),
               ),
               TextSpan(
-                text: 'loi n° 2023-1059 du 20 novembre 2023',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                  "f00061",
+                  'loi n° 2023-1059 du 20 novembre 2023',
+                ),
                 style: TextStyle(
                   color: articleRed,
                   fontWeight: FontWeight.w700,
@@ -314,8 +566,16 @@ class PaPPControleJudiciaireTableauPage extends StatelessWidget {
               ),
               TextSpan(
                 text:
-                    ', dont plusieurs dispositions sont entrées en vigueur à compter du 3 septembre 2024 et impactent les procédures '
-                    'applicables devant le tribunal correctionnel.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00062",
+                      ', dont plusieurs dispositions sont entrées en vigueur à compter du 3 septembre 2024 et impactent les procédures ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart",
+                      "f00063",
+                      'applicables devant le tribunal correctionnel.',
+                    ),
               ),
             ],
           ),
@@ -574,9 +834,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

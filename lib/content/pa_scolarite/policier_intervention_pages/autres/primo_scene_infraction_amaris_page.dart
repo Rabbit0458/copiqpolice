@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
   const PaPrimoSceneInfractionAmarisPage({super.key});
@@ -56,7 +57,11 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "AMARIS",
@@ -74,7 +79,11 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Primo-intervenant sur une scène d’infraction",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00002",
+              "Primo-intervenant sur une scène d’infraction",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +95,31 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
 
           // Définition / enjeux
           _ConditionCard(
-            title: "De quoi s’agit-il ?",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00003",
+              "De quoi s’agit-il ?",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les premières mesures conservatoires prises dès l’arrivée sur les lieux d’un crime ou d’un délit "
-                "jouent un rôle primordial pour la préservation des traces et indices.\n\n"
-                "Elles sont essentielles pour la résolution de l’enquête et le déroulement d’un futur procès.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00004",
+                      "Les premières mesures conservatoires prises dès l’arrivée sur les lieux d’un crime ou d’un délit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00005",
+                      "jouent un rôle primordial pour la préservation des traces et indices.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00006",
+                      "Elles sont essentielles pour la résolution de l’enquête et le déroulement d’un futur procès.",
+                    ),
               ),
             ],
           ),
@@ -102,22 +127,41 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Traces & indices (exemples)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00007",
+              "Traces & indices (exemples)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les traces peuvent être visibles ou non détectables à l’œil nu : traces de pas, peinture, outils, "
-                "impacts de balle, traces biologiques (sang, sperme, salive…), traces papillaires…\n\n"
-                "Des objets peuvent constituer des indices : arme, douille/étui, balle, cagoule, gant, lettre, document d’identité…",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00008",
+                      "Les traces peuvent être visibles ou non détectables à l’œil nu : traces de pas, peinture, outils, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00009",
+                      "impacts de balle, traces biologiques (sang, sperme, salive…), traces papillaires…\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00010",
+                      "Des objets peuvent constituer des indices : arme, douille/étui, balle, cagoule, gant, lettre, document d’identité…",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Une méthodologie rigoureuse de préservation doit être suivie : c’est le protocole d’intervention des premiers intervenants.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00011",
+                      "Une méthodologie rigoureuse de préservation doit être suivie : c’est le protocole d’intervention des premiers intervenants.",
+                    ),
                   ),
                 ],
               ),
@@ -128,72 +172,123 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal (références)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00012",
+              "I — Élément légal (références)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 54 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                    "f00013",
+                    "Article 54 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : en cas de crime flagrant, l’OPJ avisé informe immédiatement le procureur, se transporte sans délai "
-                      "sur le lieu, procède aux constatations utiles et veille à la conservation des indices et de tout ce qui peut "
-                      "servir à la manifestation de la vérité (saisies, etc.).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00014",
+                        " : en cas de crime flagrant, l’OPJ avisé informe immédiatement le procureur, se transporte sans délai ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00015",
+                        "sur le lieu, procède aux constatations utiles et veille à la conservation des indices et de tout ce qui peut ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00016",
+                        "servir à la manifestation de la vérité (saisies, etc.).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article D7 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                    "f00017",
+                    "Article D7 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : les officiers et agents de police judiciaire veillent à la préservation de l’état des lieux et à la conservation "
-                      "des traces/indices jusqu’aux opérations de police technique et scientifique.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00018",
+                        " : les officiers et agents de police judiciaire veillent à la préservation de l’état des lieux et à la conservation ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00019",
+                        "des traces/indices jusqu’aux opérations de police technique et scientifique.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Articles 55 alinéas 1 et 2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                    "f00020",
+                    "Articles 55 alinéas 1 et 2 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : il est interdit (amende contravention 4e classe) à toute personne non habilitée de modifier l’état des lieux "
-                      "ou d’effectuer des prélèvements avant les premières opérations d’enquête judiciaire, sauf nécessité "
-                      "(sécurité, salubrité publique, soins aux victimes).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00021",
+                        " : il est interdit (amende contravention 4e classe) à toute personne non habilitée de modifier l’état des lieux ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00022",
+                        "ou d’effectuer des prélèvements avant les premières opérations d’enquête judiciaire, sauf nécessité ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00023",
+                        "(sécurité, salubrité publique, soins aux victimes).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 434-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                    "f00024",
+                    "Article 434-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : réprime le fait, pour faire obstacle à la manifestation de la vérité, de modifier l’état des lieux "
-                      "(altération/falsification/effacement de traces, déplacement/suppression d’objets) ou de détruire/soustraire/receler/altérer "
-                      "un document ou objet utile à la preuve (peines aggravées pour une personne concourant à la manifestation de la vérité).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00025",
+                        " : réprime le fait, pour faire obstacle à la manifestation de la vérité, de modifier l’état des lieux ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00026",
+                        "(altération/falsification/effacement de traces, déplacement/suppression d’objets) ou de détruire/soustraire/receler/altérer ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                        "f00027",
+                        "un document ou objet utile à la preuve (peines aggravées pour une personne concourant à la manifestation de la vérité).",
+                      ),
                 ),
               ]),
             ],
@@ -203,21 +298,36 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
 
           // “Ce qu’il faut savoir” structuré en 3 grands blocs
           _ConditionCard(
-            title: "II — Visite de sécurité",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00028",
+              "II — Visite de sécurité",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Seule la nécessité absolue liée à la sûreté ou au secours justifie de pénétrer dans les lieux.\n\n"
-                "La visite de sécurité vise à secourir une personne ou à s’assurer que toute menace est écartée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00029",
+                      "Seule la nécessité absolue liée à la sûreté ou au secours justifie de pénétrer dans les lieux.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00030",
+                      "La visite de sécurité vise à secourir une personne ou à s’assurer que toute menace est écartée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si possible, emprunter un cheminement unique, distinct de celui vraisemblablement suivi par le(s) auteur(s).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00031",
+                      "Si possible, emprunter un cheminement unique, distinct de celui vraisemblablement suivi par le(s) auteur(s).",
+                    ),
                   ),
                 ],
               ),
@@ -227,30 +337,49 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Préservation des lieux",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00032",
+              "III — Préservation des lieux",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Évacuer / mettre à distance les personnes présentes (famille, curieux…), sans autoriser les témoins directs à quitter les lieux.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00033",
+                  "Évacuer / mettre à distance les personnes présentes (famille, curieux…), sans autoriser les témoins directs à quitter les lieux.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne rien toucher ni manipuler. Si déplacement nécessaire : gants + masque + matérialiser précisément l’emplacement d’origine (photo, marquage…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00034",
+                  "Ne rien toucher ni manipuler. Si déplacement nécessaire : gants + masque + matérialiser précisément l’emplacement d’origine (photo, marquage…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne pas déplacer ni manipuler les armes/éléments balistiques sans autorisation PTS, sauf danger réel et immédiat.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00035",
+                  "Ne pas déplacer ni manipuler les armes/éléments balistiques sans autorisation PTS, sauf danger réel et immédiat.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Protéger les traces fragiles (intempéries : pas, pneumatiques…). Photographier ce qui peut disparaître rapidement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00036",
+                  "Protéger les traces fragiles (intempéries : pas, pneumatiques…). Photographier ce qui peut disparaître rapidement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mettre en place un périmètre de sécurité (rubalise), interdit d’accès avant l’arrivée PTS.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00037",
+                  "Mettre en place un périmètre de sécurité (rubalise), interdit d’accès avant l’arrivée PTS.",
+                ),
               ),
             ],
           ),
@@ -258,19 +387,39 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Recueil des renseignements utiles",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00038",
+              "IV — Recueil des renseignements utiles",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les fiches « premiers intervenants » doivent mentionner l’identité des personnes qui se sont succédées sur les lieux "
-                "(y compris sapeurs-pompiers et SAMU).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00039",
+                      "Les fiches « premiers intervenants » doivent mentionner l’identité des personnes qui se sont succédées sur les lieux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00040",
+                      "(y compris sapeurs-pompiers et SAMU).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Toutes les modifications de la scène doivent être indiquées : porte forcée, gants/accessoires de soins laissés, "
-                "évacuation de la victime, déplacement de mobilier/objet, fermeture arrivée de gaz, etc.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00041",
+                      "Toutes les modifications de la scène doivent être indiquées : porte forcée, gants/accessoires de soins laissés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00042",
+                      "évacuation de la victime, déplacement de mobilier/objet, fermeture arrivée de gaz, etc.",
+                    ),
               ),
             ],
           ),
@@ -278,14 +427,26 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Avis des personnes compétentes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00043",
+              "V — Avis des personnes compétentes",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’OPJ et les agents formés à la PTS, habilités à gérer les scènes d’infraction, "
-                "doivent être avisés dans les meilleurs délais.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00044",
+                      "L’OPJ et les agents formés à la PTS, habilités à gérer les scènes d’infraction, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00045",
+                      "doivent être avisés dans les meilleurs délais.",
+                    ),
               ),
             ],
           ),
@@ -294,35 +455,63 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
 
           // Répression / tentative / complicité (adapté au thème, sans inventer d’autres articles)
           _ConditionCard(
-            title: "VI — Répression, tentative & complicité (repères)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00046",
+              "VI — Répression, tentative & complicité (repères)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Répression (altération de scène)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00047",
+                  "Répression (altération de scène)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le fait de faire obstacle à la manifestation de la vérité en modifiant les lieux est réprimé par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                    "f00048",
+                    "Le fait de faire obstacle à la manifestation de la vérité en modifiant les lieux est réprimé par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 434-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                    "f00049",
+                    "l’article 434-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
               _SubTitle("Tentative"),
               _Paragraph(
-                "S’apprécie selon l’infraction retenue et les circonstances. En pratique : préserver, sécuriser, constater et rendre compte.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00050",
+                  "S’apprécie selon l’infraction retenue et les circonstances. En pratique : préserver, sécuriser, constater et rendre compte.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00051",
+                  "Complicité",
+                ),
+              ),
               _Paragraph(
-                "Peut être envisagée si un tiers aide ou facilite l’altération/destruction/soustraction d’indices ou d’objets utiles à la preuve.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00052",
+                  "Peut être envisagée si un tiers aide ou facilite l’altération/destruction/soustraction d’indices ou d’objets utiles à la preuve.",
+                ),
               ),
             ],
           ),
@@ -331,29 +520,45 @@ class PaPrimoSceneInfractionAmarisPage extends StatelessWidget {
 
           // Résumé “ultra clair”
           _ConditionCard(
-            title: "En résumé",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+              "f00053",
+              "En résumé",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Protéger les lieux = participer activement à la résolution d’une enquête.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00054",
+                  "Protéger les lieux = participer activement à la résolution d’une enquête.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Préserver au maximum jusqu’à l’arrivée des techniciens de la police scientifique.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00055",
+                  "Préserver au maximum jusqu’à l’arrivée des techniciens de la police scientifique.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Si une collecte technique est nécessaire : avis OPJ immédiat pour solliciter les personnels habilités.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                  "f00056",
+                  "Si une collecte technique est nécessaire : avis OPJ immédiat pour solliciter les personnels habilités.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette fiche n’impose pas de prescriptions exclusives : elle éclaire et aide à la réalisation des missions professionnelles.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart",
+                      "f00057",
+                      "Cette fiche n’impose pas de prescriptions exclusives : elle éclaire et aide à la réalisation des missions professionnelles.",
+                    ),
                   ),
                 ],
               ),
@@ -612,9 +817,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConntroleIdentiteDocumentGpxSchool extends StatelessWidget {
   const ConntroleIdentiteDocumentGpxSchool({super.key});
@@ -38,10 +39,18 @@ class ConntroleIdentiteDocumentGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Moyens de preuve de l’identité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+            "f00002",
+            'Moyens de preuve de l’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class ConntroleIdentiteDocumentGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO ============================
           Text(
-            'Les moyens de preuve de l’identité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+              "f00003",
+              'Les moyens de preuve de l’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,8 +77,16 @@ class ConntroleIdentiteDocumentGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Documents officiels, autres justificatifs et témoignages : comment une personne peut prouver '
-            'son identité lors d’un contrôle, dans le respect des règles posées par le code de procédure pénale.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00004",
+                  'Documents officiels, autres justificatifs et témoignages : comment une personne peut prouver ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00005",
+                  'son identité lors d’un contrôle, dans le respect des règles posées par le code de procédure pénale.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -76,98 +97,258 @@ class ConntroleIdentiteDocumentGpxSchool extends StatelessWidget {
           const SizedBox(height: 18),
 
           _ConditionCard(
-            title: '1.4 – Les moyens de preuve de l’identité',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+              "f00006",
+              '1.4 – Les moyens de preuve de l’identité',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               // ===================== INTRO GENERAL =======================
               _Paragraph.rich([
-                const TextSpan(
-                  text: 'S’agissant de la preuve de l’identité, le texte de l’',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                    "f00007",
+                    'S’agissant de la preuve de l’identité, le texte de l’',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 78-2 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                    "f00008",
+                    'article 78-2 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' est volontairement peu explicite. Il se borne à indiquer que « toute personne est tenue '
-                      'de se soumettre à un contrôle d’identité et peut justifier de son identité par tout moyen ». '
-                      'Cette formule laisse une large place à l’interprétation et à l’appréciation de l’agent contrôleur.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                        "f00009",
+                        ' est volontairement peu explicite. Il se borne à indiquer que « toute personne est tenue ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                        "f00010",
+                        'de se soumettre à un contrôle d’identité et peut justifier de son identité par tout moyen ». ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                        "f00011",
+                        'Cette formule laisse une large place à l’interprétation et à l’appréciation de l’agent contrôleur.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 14),
 
               // ===================== 1.4.1 – DOCUMENTS PROBANTS ==========
-              const _SubTitle('1.4.1 – Les documents officiels probants'),
-              const _Paragraph(
-                'Certains documents constituent, par nature, des moyens de preuve particulièrement fiables de '
-                'l’identité de la personne qui les détient et les présente. Il s’agit notamment :',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00012",
+                  '1.4.1 – Les documents officiels probants',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00013",
+                      'Certains documents constituent, par nature, des moyens de preuve particulièrement fiables de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00014",
+                      'l’identité de la personne qui les détient et les présente. Il s’agit notamment :',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint(text: 'De la carte nationale d’identité ;'),
-              const _BulletPoint(text: 'Du passeport ;'),
-              const _BulletPoint(text: 'Du permis de conduire ;'),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00015",
+                  'De la carte nationale d’identité ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00016",
+                  'Du passeport ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00017",
+                  'Du permis de conduire ;',
+                ),
+              ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Ces documents sont des titres officiels comportant une photographie et dont la délivrance a '
-                'nécessité une procédure préalable d’identification claire du titulaire. Ils sont donc, en principe, '
-                'regardés comme probants, à la condition bien entendu que leur authenticité ne soit pas contestée.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00018",
+                      'Ces documents sont des titres officiels comportant une photographie et dont la délivrance a ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00019",
+                      'nécessité une procédure préalable d’identification claire du titulaire. Ils sont donc, en principe, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00020",
+                      'regardés comme probants, à la condition bien entendu que leur authenticité ne soit pas contestée.',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // ===================== 1.4.2 – AUTRES DOCUMENTS ============
-              const _SubTitle('1.4.2 – Les autres documents'),
-              const _Paragraph(
-                'D’autres documents ne constituent qu’un simple commencement de preuve. Dépourvus de photographie '
-                'et/ou de valeur officiellement reconnue, ils ne permettent pas, à eux seuls, d’affirmer que '
-                'l’identité mentionnée correspond bien à celle de la personne qui les présente.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00021",
+                  '1.4.2 – Les autres documents',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00022",
+                      'D’autres documents ne constituent qu’un simple commencement de preuve. Dépourvus de photographie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00023",
+                      'et/ou de valeur officiellement reconnue, ils ne permettent pas, à eux seuls, d’affirmer que ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00024",
+                      'l’identité mentionnée correspond bien à celle de la personne qui les présente.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Tel est le cas, par exemple, des livrets de famille, fiches d’état civil, certificats ou cartes diverses '
-                '(cartes grises, cartes d’électeur, etc.). Ces documents doivent néanmoins être pris en considération, '
-                'en fonction des circonstances et de l’appréciation des fonctionnaires procédant au contrôle.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00025",
+                      'Tel est le cas, par exemple, des livrets de famille, fiches d’état civil, certificats ou cartes diverses ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00026",
+                      '(cartes grises, cartes d’électeur, etc.). Ces documents doivent néanmoins être pris en considération, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00027",
+                      'en fonction des circonstances et de l’appréciation des fonctionnaires procédant au contrôle.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Ils peuvent permettre d’éviter d’emmener la personne au service ou au poste pour mettre en œuvre '
-                'une procédure formelle de vérification d’identité, lorsque les éléments réunis apparaissent suffisants.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00028",
+                      'Ils peuvent permettre d’éviter d’emmener la personne au service ou au poste pour mettre en œuvre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00029",
+                      'une procédure formelle de vérification d’identité, lorsque les éléments réunis apparaissent suffisants.',
+                    ),
               ),
               const SizedBox(height: 14),
 
               // ===================== 1.4.3 – TEMOIGNAGES =================
-              const _SubTitle('1.4.3 – Le recours à des témoignages'),
-              const _Paragraph(
-                'En cas de présentation d’un document non probant, la confirmation de l’identité peut également être '
-                'obtenue au moyen de témoignages recueillis par les policiers au moment du contrôle.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                  "f00030",
+                  '1.4.3 – Le recours à des témoignages',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00031",
+                      'En cas de présentation d’un document non probant, la confirmation de l’identité peut également être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00032",
+                      'obtenue au moyen de témoignages recueillis par les policiers au moment du contrôle.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Pour être utile, ce mode de preuve suppose que les témoignages soient concomitants à l’opération de '
-                'contrôle : ils doivent être recueillis simultanément et dans l’immédiate action de contrôle, auprès de '
-                'personnes présentes sur les lieux et en mesure de confirmer l’identité du contrôlé.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00033",
+                      'Pour être utile, ce mode de preuve suppose que les témoignages soient concomitants à l’opération de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00034",
+                      'contrôle : ils doivent être recueillis simultanément et dans l’immédiate action de contrôle, auprès de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00035",
+                      'personnes présentes sur les lieux et en mesure de confirmer l’identité du contrôlé.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Ce recours au témoignage est également envisageable à l’égard d’une personne totalement dépourvue '
-                'de pièce d’identité. Il demeure toutefois aléatoire et relève de l’appréciation des policiers, qui '
-                'doivent toujours veiller à la cohérence globale des éléments recueillis.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00036",
+                      'Ce recours au témoignage est également envisageable à l’égard d’une personne totalement dépourvue ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00037",
+                      'de pièce d’identité. Il demeure toutefois aléatoire et relève de l’appréciation des policiers, qui ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                      "f00038",
+                      'doivent toujours veiller à la cohérence globale des éléments recueillis.',
+                    ),
               ),
               const SizedBox(height: 14),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'En pratique, l’officier de police judiciaire et l’agent de police judiciaire conservent une '
-                        'marge d’appréciation importante. Ils doivent cependant pouvoir expliquer, dans la procédure, '
-                        'pourquoi les pièces présentées ou les témoignages recueillis ont été jugés suffisants ou non '
-                        'pour établir l’identité de la personne contrôlée.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                          "f00039",
+                          'En pratique, l’officier de police judiciaire et l’agent de police judiciaire conservent une ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                          "f00040",
+                          'marge d’appréciation importante. Ils doivent cependant pouvoir expliquer, dans la procédure, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                          "f00041",
+                          'pourquoi les pièces présentées ou les témoignages recueillis ont été jugés suffisants ou non ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart",
+                          "f00042",
+                          'pour établir l’identité de la personne contrôlée.',
+                        ),
                   ),
                 ],
               ),
@@ -425,9 +606,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class SanctionLessonSection {
   const SanctionLessonSection({
@@ -72,7 +73,11 @@ class PremiumSanctionLessonPage extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         leading: IconButton(
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/widgets/premium_sanction_lesson_page.dart",
+            "f00001",
+            'Retour',
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
@@ -89,9 +94,13 @@ class PremiumSanctionLessonPage extends StatelessWidget {
         children: [
           _Hero(isDark: isDark, title: heroTitle, subtitle: heroSubtitle),
           const SizedBox(height: 22),
-          const _SectionHeading(
+          _SectionHeading(
             eyebrow: 'OBJECTIF',
-            title: 'Ce que tu vas maîtriser',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/widgets/premium_sanction_lesson_page.dart",
+              "f00002",
+              'Ce que tu vas maîtriser',
+            ),
           ),
           const SizedBox(height: 10),
           _ObjectiveCard(text: objective),
@@ -102,9 +111,13 @@ class PremiumSanctionLessonPage extends StatelessWidget {
             children: keywords.map((word) => _Keyword(text: word)).toList(),
           ),
           const SizedBox(height: 25),
-          const _SectionHeading(
+          _SectionHeading(
             eyebrow: 'PARCOURS',
-            title: 'Comprendre étape par étape',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/widgets/premium_sanction_lesson_page.dart",
+              "f00003",
+              'Comprendre étape par étape',
+            ),
           ),
           const SizedBox(height: 11),
           for (var index = 0; index < sections.length; index++) ...[
@@ -112,11 +125,29 @@ class PremiumSanctionLessonPage extends StatelessWidget {
             if (index != sections.length - 1) const SizedBox(height: 10),
           ],
           const SizedBox(height: 25),
-          const _SectionHeading(eyebrow: 'MÉTHODE', title: 'Les bons réflexes'),
+          _SectionHeading(
+            eyebrow: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/widgets/premium_sanction_lesson_page.dart",
+              "f00004",
+              'MÉTHODE',
+            ),
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/widgets/premium_sanction_lesson_page.dart",
+              "f00005",
+              'Les bons réflexes',
+            ),
+          ),
           const SizedBox(height: 11),
           _ChecklistCard(items: checklist),
           const SizedBox(height: 25),
-          const _SectionHeading(eyebrow: 'CONTINUER', title: 'Cours associés'),
+          _SectionHeading(
+            eyebrow: 'CONTINUER',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/sanction_pages/widgets/premium_sanction_lesson_page.dart",
+              "f00006",
+              'Cours associés',
+            ),
+          ),
           const SizedBox(height: 11),
           for (var index = 0; index < links.length; index++) ...[
             _RelatedTile(link: links[index]),
@@ -222,7 +253,11 @@ class _Badge extends StatelessWidget {
       borderRadius: BorderRadius.circular(999),
     ),
     child: Text(
-      'LA SANCTION',
+      ScolariteText.value(
+        "lib/content/pa_scolarite/sanction_pages/widgets/premium_sanction_lesson_page.dart",
+        "f00008",
+        'LA SANCTION',
+      ),
       style: GoogleFonts.fustat(
         color: PremiumSanctionLessonPage._navy,
         fontSize: 11,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaControleJudiciaireContenu extends StatelessWidget {
   const PaControleJudiciaireContenu({super.key});
@@ -12,7 +13,9 @@ class PaControleJudiciaireContenu extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaControleJudiciaireContenu extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrôle judiciaire – Contenu",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+            "f00002",
+            "Contrôle judiciaire – Contenu",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaControleJudiciaireContenu extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            "Le contrôle judiciaire",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00003",
+              "Le contrôle judiciaire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaControleJudiciaireContenu extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            "Mesure alternative à la détention provisoire permettant de maintenir la personne mise en examen en liberté, "
-            "tout en lui imposant des obligations destinées à garantir la bonne marche de la procédure et la protection de l’ordre public.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+                  "f00004",
+                  "Mesure alternative à la détention provisoire permettant de maintenir la personne mise en examen en liberté, ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+                  "f00005",
+                  "tout en lui imposant des obligations destinées à garantir la bonne marche de la procédure et la protection de l’ordre public.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -66,9 +89,16 @@ class PaControleJudiciaireContenu extends StatelessWidget {
           // =========== CHAPITRE 1 — CONDITIONS DE MISE EN ŒUVRE ==============
           _ModuleCard(
             tag: 'pp_cj_chap1_conditions',
-            title: "Conditions de mise en œuvre",
-            subtitle:
-                "Fondements légaux, infractions concernées, autorités compétentes, critères de nécessité et de proportionnalité.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00006",
+              "Conditions de mise en œuvre",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00007",
+              "Fondements légaux, infractions concernées, autorités compétentes, critères de nécessité et de proportionnalité.",
+            ),
             imagePath: 'assets/images/aggravations.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -82,9 +112,16 @@ class PaControleJudiciaireContenu extends StatelessWidget {
           // ======= CHAPITRE 2 — DÉROULEMENT ET FIN DU CONTRÔLE JUDICIAIRE =====
           _ModuleCard(
             tag: 'pp_cj_chap2_deroulement_fin',
-            title: "Déroulement et fin du contrôle judiciaire",
-            subtitle:
-                "Obligations imposables, modification ou mainlevée, manquements et conséquences (revocation, détention provisoire).",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00008",
+              "Déroulement et fin du contrôle judiciaire",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00009",
+              "Obligations imposables, modification ou mainlevée, manquements et conséquences (revocation, détention provisoire).",
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -98,9 +135,16 @@ class PaControleJudiciaireContenu extends StatelessWidget {
           // ==================== TABLEAU SYNTHÉTIQUE ===========================
           _ModuleCard(
             tag: 'pp_cj_tableau',
-            title: "Tableau — Contrôle judiciaire",
-            subtitle:
-                "Vue d’ensemble des obligations possibles, de l’autorité compétente, des durées et de l’articulation avec l’ARSE et la détention.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00010",
+              "Tableau — Contrôle judiciaire",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00011",
+              "Vue d’ensemble des obligations possibles, de l’autorité compétente, des durées et de l’articulation avec l’ARSE et la détention.",
+            ),
             imagePath: 'assets/images/cadres_juridiques.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -114,9 +158,16 @@ class PaControleJudiciaireContenu extends StatelessWidget {
           // ======================= QUIZ CONTRÔLE JUDICIAIRE ===================
           _ModuleCard(
             tag: 'quiz_controle_judiciaire',
-            title: "Quiz — Contrôle judiciaire",
-            subtitle:
-                "Évaluez votre maîtrise des conditions, du déroulement et des conséquences du contrôle judiciaire.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00012",
+              "Quiz — Contrôle judiciaire",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart",
+              "f00013",
+              "Évaluez votre maîtrise des conditions, du déroulement et des conséquences du contrôle judiciaire.",
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -173,7 +224,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

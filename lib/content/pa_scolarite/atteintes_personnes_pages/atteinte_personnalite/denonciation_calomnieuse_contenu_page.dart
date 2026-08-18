@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDenonciationCalomnieusePage extends StatelessWidget {
   const PaDenonciationCalomnieusePage({super.key});
@@ -59,10 +60,18 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la personnalité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+            "f00002",
+            "Atteintes à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La dénonciation calomnieuse",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+              "f00003",
+              "La dénonciation calomnieuse",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,27 +102,67 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La dénonciation, effectuée par tout moyen et dirigée contre une personne déterminée, "
-                "d’un fait de nature à entraîner des sanctions judiciaires, administratives ou disciplinaires, "
-                "et que l’on sait totalement ou partiellement inexact, lorsqu’elle est adressée à une autorité "
-                "ou à des supérieurs/à l’employeur pouvant y donner suite, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00005",
+                      "La dénonciation, effectuée par tout moyen et dirigée contre une personne déterminée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00006",
+                      "d’un fait de nature à entraîner des sanctions judiciaires, administratives ou disciplinaires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00007",
+                      "et que l’on sait totalement ou partiellement inexact, lorsqu’elle est adressée à une autorité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00008",
+                      "ou à des supérieurs/à l’employeur pouvant y donner suite, constitue une infraction.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La fausseté du fait dénoncé résulte nécessairement d’une décision devenue définitive "
-                "(acquittement, relaxe ou non-lieu) déclarant que le fait n’a pas été commis ou qu’il n’est pas imputable "
-                "à la personne dénoncée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00009",
+                      "La fausseté du fait dénoncé résulte nécessairement d’une décision devenue définitive ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00010",
+                      "(acquittement, relaxe ou non-lieu) déclarant que le fait n’a pas été commis ou qu’il n’est pas imputable ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00011",
+                      "à la personne dénoncée.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Dans les autres cas, le tribunal saisi des poursuites contre le dénonciateur apprécie la pertinence "
-                "des accusations portées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00012",
+                      "Dans les autres cas, le tribunal saisi des poursuites contre le dénonciateur apprécie la pertinence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00013",
+                      "des accusations portées.",
+                    ),
               ),
             ],
           ),
@@ -118,21 +171,30 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+              "f00014",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00015",
+                    "Article 226-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime la dénonciation calomnieuse.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00016",
+                    " : définit et réprime la dénonciation calomnieuse.",
+                  ),
                 ),
               ]),
             ],
@@ -142,110 +204,251 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+              "f00017",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une dénonciation"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00018",
+                  "A) Une dénonciation",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00019",
+                    "Article 226-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : la dénonciation peut être faite « par tout moyen ». ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00020",
+                    " : la dénonciation peut être faite « par tout moyen ». ",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
-              _Paragraph("Elle peut donc être écrite ou orale."),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00021",
+                  "Elle peut donc être écrite ou orale.",
+                ),
+              ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Forme de la dénonciation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00022",
+                  "1) Forme de la dénonciation",
+                ),
+              ),
               _Paragraph(
-                "• Écrite : lettre (signée ou anonyme), pétition, plainte (avec ou sans constitution de partie civile), "
-                "plainte déposée auprès de la police ou de la gendarmerie.\n"
-                "• Orale : de vive voix ou par téléphone (elle doit pouvoir être prouvée).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00023",
+                      "• Écrite : lettre (signée ou anonyme), pétition, plainte (avec ou sans constitution de partie civile), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00024",
+                      "plainte déposée auprès de la police ou de la gendarmerie.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00025",
+                      "• Orale : de vive voix ou par téléphone (elle doit pouvoir être prouvée).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Auteur de la dénonciation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00026",
+                  "2) Auteur de la dénonciation",
+                ),
+              ),
               _Paragraph(
-                "L’auteur est celui qui dénonce ou fait dénoncer par une tierce personne. "
-                "L’auteur moral est assimilé à l’auteur juridique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00027",
+                      "L’auteur est celui qui dénonce ou fait dénoncer par une tierce personne. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00028",
+                      "L’auteur moral est assimilé à l’auteur juridique.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Si la dénonciation est faite sur instructions hiérarchiques, l’exécutant ne peut être poursuivi "
-                "que s’il y a pris part personnellement (et pas s’il n’a eu qu’un rôle strictement matériel).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00029",
+                      "Si la dénonciation est faite sur instructions hiérarchiques, l’exécutant ne peut être poursuivi ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00030",
+                      "que s’il y a pris part personnellement (et pas s’il n’a eu qu’un rôle strictement matériel).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "En cas de dénonciation anonyme, l’auteur doit pouvoir être identifié.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00031",
+                  "En cas de dénonciation anonyme, l’auteur doit pouvoir être identifié.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("3) Victime : une personne déterminée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00032",
+                  "3) Victime : une personne déterminée",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00033",
+                    "Article 226-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : la dénonciation doit viser une personne déterminée (physique ou morale), identifiable.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00034",
+                    " : la dénonciation doit viser une personne déterminée (physique ou morale), identifiable.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                "L’identification est simple si la personne est nommée. "
-                "À défaut, elle peut résulter de détails rendant inévitable la désignation d’une personne précise.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00035",
+                      "L’identification est simple si la personne est nommée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00036",
+                      "À défaut, elle peut résulter de détails rendant inévitable la désignation d’une personne précise.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("4) Destinataire : autorité compétente"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00037",
+                  "4) Destinataire : autorité compétente",
+                ),
+              ),
               _Paragraph(
-                "Il suffit que la dénonciation soit adressée à l’autorité (pas besoin de remise en main propre). "
-                "La jurisprudence retient que l’infraction est consommée le jour de la réception "
-                "(début du délai de prescription).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00038",
+                      "Il suffit que la dénonciation soit adressée à l’autorité (pas besoin de remise en main propre). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00039",
+                      "La jurisprudence retient que l’infraction est consommée le jour de la réception ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00040",
+                      "(début du délai de prescription).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Le destinataire doit être une autorité investie d’un pouvoir de sanction, ou capable de saisir l’autorité compétente : "
-                "magistrats, officiers/autorités administratives ou judiciaires (maires/adjoints, policiers, gendarmes, préfets, etc.), "
-                "mais aussi supérieurs hiérarchiques, employeurs, ou personnes pouvant saisir l’autorité (médecin, assistante sociale, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00041",
+                      "Le destinataire doit être une autorité investie d’un pouvoir de sanction, ou capable de saisir l’autorité compétente : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00042",
+                      "magistrats, officiers/autorités administratives ou judiciaires (maires/adjoints, policiers, gendarmes, préfets, etc.), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00043",
+                      "mais aussi supérieurs hiérarchiques, employeurs, ou personnes pouvant saisir l’autorité (médecin, assistante sociale, etc.).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une dénonciation spontanée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00044",
+                  "B) Une dénonciation spontanée",
+                ),
+              ),
               _Paragraph(
-                "La jurisprudence exige un caractère spontané : est coupable celui qui prend l’initiative de révéler des faits inexacts. "
-                "Il n’y a pas dénonciation calomnieuse si l’on répond à une interpellation de l’autorité ou des supérieurs.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00045",
+                      "La jurisprudence exige un caractère spontané : est coupable celui qui prend l’initiative de révéler des faits inexacts. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00046",
+                      "Il n’y a pas dénonciation calomnieuse si l’on répond à une interpellation de l’autorité ou des supérieurs.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les dénonciations provoquées perdent leur caractère spontané : rapports demandés par un supérieur, "
-                        "dénonciation d’un subordonné tenu d’informer, réponses aux questions d’un magistrat instructeur, "
-                        "ou dénonciation rattachée étroitement à la défense.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                          "f00047",
+                          "Les dénonciations provoquées perdent leur caractère spontané : rapports demandés par un supérieur, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                          "f00048",
+                          "dénonciation d’un subordonné tenu d’informer, réponses aux questions d’un magistrat instructeur, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                          "f00049",
+                          "ou dénonciation rattachée étroitement à la défense.",
+                        ),
                   ),
                   TextSpan(text: " "),
                   TextSpan(
-                    text:
-                        "(Cass. crim., 16 juin 1988 ; Cass. crim., 03 mai 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00050",
+                      "(Cass. crim., 16 juin 1988 ; Cass. crim., 03 mai 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -257,39 +460,90 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Une dénonciation préjudiciable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00051",
+                  "C) Une dénonciation préjudiciable",
+                ),
+              ),
               _Paragraph(
-                "Le fait dénoncé doit être de nature à entraîner des sanctions judiciaires, administratives ou disciplinaires. "
-                "Peu importe qu’une sanction ait effectivement été prononcée : il suffit que le fait soit de nature à en entraîner.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00052",
+                      "Le fait dénoncé doit être de nature à entraîner des sanctions judiciaires, administratives ou disciplinaires. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00053",
+                      "Peu importe qu’une sanction ait effectivement été prononcée : il suffit que le fait soit de nature à en entraîner.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Différence avec la diffamation : la dénonciation calomnieuse porte atteinte à l’honneur, "
-                "mais elle vise en plus à exposer la personne à une sanction par une autorité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00054",
+                      "Différence avec la diffamation : la dénonciation calomnieuse porte atteinte à l’honneur, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00055",
+                      "mais elle vise en plus à exposer la personne à une sanction par une autorité.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) L’inexactitude des faits dénoncés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00056",
+                  "D) L’inexactitude des faits dénoncés",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Depuis la modification issue de "),
                 TextSpan(
-                  text: "l’article 16 de la loi n° 2010-769 du 9 juillet 2010",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00057",
+                    "Depuis la modification issue de ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00058",
+                    "l’article 16 de la loi n° 2010-769 du 9 juillet 2010",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      ", la fausseté résulte nécessairement d’une décision définitive d’acquittement, relaxe ou non-lieu "
-                      "déclarant expressément que le fait n’a pas été commis ou n’est pas imputable à la personne dénoncée.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                        "f00059",
+                        ", la fausseté résulte nécessairement d’une décision définitive d’acquittement, relaxe ou non-lieu ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                        "f00060",
+                        "déclarant expressément que le fait n’a pas été commis ou n’est pas imputable à la personne dénoncée.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Dans les autres hypothèses (par ex. relaxe/non-lieu pour insuffisance de charges), "
-                "le tribunal appréciera la pertinence des accusations.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00061",
+                      "Dans les autres hypothèses (par ex. relaxe/non-lieu pour insuffisance de charges), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00062",
+                      "le tribunal appréciera la pertinence des accusations.",
+                    ),
               ),
             ],
           ),
@@ -298,26 +552,56 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+              "f00063",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Conscience de dénoncer des faits inexacts"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00064",
+                  "Conscience de dénoncer des faits inexacts",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit connaître l’inexactitude des faits au moment où il les dénonce. "
-                "Il exprime ainsi une volonté de nuire à la personne visée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00065",
+                      "L’auteur doit connaître l’inexactitude des faits au moment où il les dénonce. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00066",
+                      "Il exprime ainsi une volonté de nuire à la personne visée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si l’auteur découvre son erreur après coup, l’infraction n’est pas constituée. "
-                        "En revanche, il peut être poursuivi pour omission de témoigner en faveur d’un innocent — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                          "f00067",
+                          "Si l’auteur découvre son erreur après coup, l’infraction n’est pas constituée. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                          "f00068",
+                          "En revanche, il peut être poursuivi pour omission de témoigner en faveur d’un innocent — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article 434-11 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                      "f00069",
+                      "article 434-11 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -333,13 +617,21 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+              "f00070",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00071",
+                  "Aucune circonstance aggravante prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -348,69 +640,134 @@ class PaDenonciationCalomnieusePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+              "f00072",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00073",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00074",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00075",
+                    "5 ans d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00076",
+                    "article 226-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00077",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité prévue par "),
                 TextSpan(
-                  text: "l’article 226-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00078",
+                    "Responsabilité prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00079",
+                    "l’article 226-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : amende (selon les modalités de l’article 131-38), affichage/diffusion de la décision (article 131-35), "
-                      "et interdiction définitive ou temporaire d’exercer une activité professionnelle.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                        "f00080",
+                        " : amende (selon les modalités de l’article 131-38), affichage/diffusion de la décision (article 131-35), ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                        "f00081",
+                        "et interdiction définitive ou temporaire d’exercer une activité professionnelle.",
+                      ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00082",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                  "f00083",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00084",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00085",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00086",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart",
+                    "f00087",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],
@@ -668,9 +1025,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

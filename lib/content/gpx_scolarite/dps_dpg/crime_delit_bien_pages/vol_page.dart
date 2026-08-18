@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class VolPage extends StatelessWidget {
   const VolPage({super.key});
@@ -56,10 +57,18 @@ class VolPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes aux biens",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+            "f00002",
+            "Atteintes aux biens",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class VolPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le vol",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+              "f00003",
+              "Le vol",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,44 +99,66 @@ class VolPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (exigence)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00005",
+                    "Article 311-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit le vol (« la soustraction frauduleuse de la chose d’autrui »).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00006",
+                    " : définit le vol (« la soustraction frauduleuse de la chose d’autrui »).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00007",
+                    "Article 311-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00008",
+                    " : prévoit la répression du vol simple.",
                   ),
                 ),
-                TextSpan(text: " : prévoit la répression du vol simple."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Cas assimilé : l’énergie — "),
                 TextSpan(
-                  text: "article 311-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00009",
+                    "Cas assimilé : l’énergie — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00010",
+                    "article 311-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -134,13 +169,21 @@ class VolPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+              "f00011",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le vol est la soustraction frauduleuse de la chose d’autrui.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00012",
+                  "Le vol est la soustraction frauduleuse de la chose d’autrui.",
+                ),
               ),
             ],
           ),
@@ -149,21 +192,37 @@ class VolPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "Principe",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Il y a vol lorsque la chose passe de la possession du légitime détenteur dans celle de l’auteur, "
-                        "à l’insu et contre le gré du premier ; pour soustraire, il faut prendre, enlever, ravir — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                          "f00014",
+                          "Il y a vol lorsque la chose passe de la possession du légitime détenteur dans celle de l’auteur, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                          "f00015",
+                          "à l’insu et contre le gré du premier ; pour soustraire, il faut prendre, enlever, ravir — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 18 novembre 1837",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00016",
+                      "Cass. crim., 18 novembre 1837",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -174,22 +233,47 @@ class VolPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) La soustraction"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00017",
+                  "A) La soustraction",
+                ),
+              ),
               _Paragraph(
-                "La soustraction correspond au rapt de la chose : un déplacement matériel (prise de possession) "
-                "réalisé à l’insu et/ou contre le gré du détenteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00018",
+                      "La soustraction correspond au rapt de la chose : un déplacement matériel (prise de possession) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00019",
+                      "réalisé à l’insu et/ou contre le gré du détenteur.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00020",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Manifestation : intrusion et consommation du contenu d’un réfrigérateur — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00021",
+                      "Manifestation : intrusion et consommation du contenu d’un réfrigérateur — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 03 mars 1992",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00022",
+                      "Cass. crim., 03 mars 1992",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -200,14 +284,25 @@ class VolPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00023",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Enlèvement de marchandises sans signer le bon de livraison — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00024",
+                      "Enlèvement de marchandises sans signer le bon de livraison — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 04 novembre 1977",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00025",
+                      "Cass. crim., 04 novembre 1977",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -218,14 +313,25 @@ class VolPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00026",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Soustraction de caddies avec poignées recouvertes pour masquer la marque de la victime — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00027",
+                      "Soustraction de caddies avec poignées recouvertes pour masquer la marque de la victime — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "C.A. Nancy, 22 mars 1988",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00028",
+                      "C.A. Nancy, 22 mars 1988",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -237,25 +343,67 @@ class VolPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) La chose"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00029",
+                  "B) La chose",
+                ),
+              ),
               _Paragraph(
-                "La « chose » susceptible de vol est, en principe, une chose mobilière (déplaçable). "
-                "La jurisprudence a néanmoins étendu le champ de l’incrimination.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00030",
+                      "La « chose » susceptible de vol est, en principe, une chose mobilière (déplaçable). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00031",
+                      "La jurisprudence a néanmoins étendu le champ de l’incrimination.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Chose mobilière (corporelle)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00032",
+                  "1) Chose mobilière (corporelle)",
+                ),
+              ),
               _Paragraph(
-                "Exemples : bijou, voiture, livre, animal, objet mobilier, voire parties du corps humain "
-                "(organe, sang) ou cadavre (dans certains cas).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00033",
+                      "Exemples : bijou, voiture, livre, animal, objet mobilier, voire parties du corps humain ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00034",
+                      "(organe, sang) ou cadavre (dans certains cas).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00035",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Vol d’un sanglier — "),
                   TextSpan(
-                    text: "Cass. crim., 30 janvier 1992",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00036",
+                      "Vol d’un sanglier — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00037",
+                      "Cass. crim., 30 janvier 1992",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -267,21 +415,46 @@ class VolPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Chose incorporelle : principe d’exclusion"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00038",
+                  "2) Chose incorporelle : principe d’exclusion",
+                ),
+              ),
               _Paragraph(
-                "Une prestation de services, par nature incorporelle, n’est pas susceptible d’appropriation "
-                "au titre du vol (ex. communications téléphoniques).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00039",
+                      "Une prestation de services, par nature incorporelle, n’est pas susceptible d’appropriation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00040",
+                      "au titre du vol (ex. communications téléphoniques).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00041",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Communications téléphoniques : prestation de services non susceptible d’appropriation — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00042",
+                      "Communications téléphoniques : prestation de services non susceptible d’appropriation — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 12 décembre 1990",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00043",
+                      "Cass. crim., 12 décembre 1990",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -293,21 +466,46 @@ class VolPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("3) Immeuble devenu meuble"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00044",
+                  "3) Immeuble devenu meuble",
+                ),
+              ),
               _Paragraph(
-                "Dès qu’un élément est détaché du fonds auquel il adhérait (tuiles, pierres…), "
-                "il devient meuble et peut être volé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00045",
+                      "Dès qu’un élément est détaché du fonds auquel il adhérait (tuiles, pierres…), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00046",
+                      "il devient meuble et peut être volé.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00047",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Prendre des pierres sur des propriétés voisines pour construire un mur — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00048",
+                      "Prendre des pierres sur des propriétés voisines pour construire un mur — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 27 avril 1866",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00049",
+                      "Cass. crim., 27 avril 1866",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -319,31 +517,58 @@ class VolPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("4) L’énergie (cas assimilé)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00050",
+                  "4) L’énergie (cas assimilé)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Prévu par "),
                 TextSpan(
-                  text: "l’article 311-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00051",
+                    "Prévu par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : l’électricité peut être appréhendée et faire l’objet d’une soustraction.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00052",
+                    "l’article 311-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00053",
+                    " : l’électricité peut être appréhendée et faire l’objet d’une soustraction.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00054",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’électricité passe, par transmission matériellement constatable, de la possession de l’un à celle de l’autre — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00055",
+                      "L’électricité passe, par transmission matériellement constatable, de la possession de l’un à celle de l’autre — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 03 août 1992",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00056",
+                      "Cass. crim., 03 août 1992",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -355,18 +580,46 @@ class VolPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("5) L’information"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00057",
+                  "5) L’information",
+                ),
+              ),
               _Paragraph(
-                "Par principe, l’information est incorporelle. Toutefois, une information matérialisée sur un support "
-                "peut être considérée comme mobilière et donc susceptible de vol (jurisprudence parfois discutée).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00058",
+                      "Par principe, l’information est incorporelle. Toutefois, une information matérialisée sur un support ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00059",
+                      "peut être considérée comme mobilière et donc susceptible de vol (jurisprudence parfois discutée).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00060",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Fichiers informatiques — "),
                   TextSpan(
-                    text: "Cass. crim., 04 mars 2008",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00061",
+                      "Fichiers informatiques — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00062",
+                      "Cass. crim., 04 mars 2008",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -378,81 +631,134 @@ class VolPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) « D’autrui »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00063",
+                  "C) « D’autrui »",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "On ne vole qu’une chose ayant un propriétaire au moment de l’appréhension : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00064",
+                    "On ne vole qu’une chose ayant un propriétaire au moment de l’appréhension : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Cass. crim., 30 janvier 1992",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00065",
+                    "Cass. crim., 30 janvier 1992",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’identité du propriétaire n’a pas à être connue pour caractériser le vol : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00066",
+                    "L’identité du propriétaire n’a pas à être connue pour caractériser le vol : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Cass. crim., 25 octobre 2000",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00067",
+                    "Cass. crim., 25 octobre 2000",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La preuve de la propriété relève souvent du civil (expertises, attestations, notoriété) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00068",
+                    "La preuve de la propriété relève souvent du civil (expertises, attestations, notoriété) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Cass. crim., 23 novembre 2004",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00069",
+                    "Cass. crim., 23 novembre 2004",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
-              _SubTitle("Points classiques (à connaître)"),
-              _BulletPoint(
-                text:
-                    "Chose commune : le vol est possible si un indivisaire soustrait la chose (ex. succession indivise).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00070",
+                  "Points classiques (à connaître)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Chose perdue : pas assimilée à l’abandon ; la conservation peut constituer un vol selon les circonstances.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00071",
+                  "Chose commune : le vol est possible si un indivisaire soustrait la chose (ex. succession indivise).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Épave : doit être déclarée (certaines épaves archéologiques appartiennent à l’État).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00072",
+                  "Chose perdue : pas assimilée à l’abandon ; la conservation peut constituer un vol selon les circonstances.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Trésor : règles civiles (article 716 du Code civil : moitié inventeur / moitié propriétaire du terrain).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00073",
+                  "Épave : doit être déclarée (certaines épaves archéologiques appartiennent à l’État).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Chose illicite (stupéfiants…) : la nature illicite est sans influence sur la qualification de vol.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00074",
+                  "Trésor : règles civiles (article 716 du Code civil : moitié inventeur / moitié propriétaire du terrain).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00075",
+                  "Chose illicite (stupéfiants…) : la nature illicite est sans influence sur la qualification de vol.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00076",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Succession indivise — "),
                   TextSpan(
-                    text: "Cass. crim., 27 février 1996",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00077",
+                      "Succession indivise — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00078",
+                      "Cass. crim., 27 février 1996",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -463,11 +769,25 @@ class VolPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00079",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Billet d’avion (chose perdue) — "),
                   TextSpan(
-                    text: "Cass. crim., 19 décembre 1990",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00080",
+                      "Billet d’avion (chose perdue) — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00081",
+                      "Cass. crim., 19 décembre 1990",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -478,14 +798,25 @@ class VolPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00082",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Marchandise illicite : sans influence sur la qualification de vol — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00083",
+                      "Marchandise illicite : sans influence sur la qualification de vol — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 05 novembre 1985",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00084",
+                      "Cass. crim., 05 novembre 1985",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -496,14 +827,25 @@ class VolPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00085",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Choses mises à la poubelle : présumées abandonnées — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00086",
+                      "Choses mises à la poubelle : présumées abandonnées — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 15 décembre 2015",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00087",
+                      "Cass. crim., 15 décembre 2015",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -519,35 +861,74 @@ class VolPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+              "f00088",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La soustraction n’est un vol que si elle est frauduleuse : l’infraction exige une intention coupable "
-                "(constatée au moment des faits). Le mobile est indifférent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00089",
+                      "La soustraction n’est un vol que si elle est frauduleuse : l’infraction exige une intention coupable ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00090",
+                      "(constatée au moment des faits). Le mobile est indifférent.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "A) Conscience de soustraire une chose qui ne lui appartient pas",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00091",
+                  "A) Conscience de soustraire une chose qui ne lui appartient pas",
+                ),
               ),
               _Paragraph(
-                "L’auteur doit être conscient d’agir contre le gré et à l’insu du propriétaire. "
-                "Le vol n’est pas retenu si l’auteur croyait de bonne foi que la chose était à lui "
-                "ou qu’il était autorisé à la prendre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00092",
+                      "L’auteur doit être conscient d’agir contre le gré et à l’insu du propriétaire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00093",
+                      "Le vol n’est pas retenu si l’auteur croyait de bonne foi que la chose était à lui ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00094",
+                      "ou qu’il était autorisé à la prendre.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00095",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Bonne foi possible (pratique ancienne) : défaut d’élément intentionnel — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00096",
+                      "Bonne foi possible (pratique ancienne) : défaut d’élément intentionnel — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 17 novembre 2015",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00097",
+                      "Cass. crim., 17 novembre 2015",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -560,12 +941,28 @@ class VolPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "B) Volonté de se comporter (même momentanément) en maître de la chose",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00098",
+                  "B) Volonté de se comporter (même momentanément) en maître de la chose",
+                ),
               ),
               _Paragraph(
-                "L’intention frauduleuse réside dans la volonté de s’arroger les prérogatives du propriétaire. "
-                "L’appropriation définitive n’est pas exigée : une soustraction temporaire suivie d’une restitution "
-                "peut suffire si elle révèle la volonté de se comporter en propriétaire, même brièvement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00099",
+                      "L’intention frauduleuse réside dans la volonté de s’arroger les prérogatives du propriétaire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00100",
+                      "L’appropriation définitive n’est pas exigée : une soustraction temporaire suivie d’une restitution ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00101",
+                      "peut suffire si elle révèle la volonté de se comporter en propriétaire, même brièvement.",
+                    ),
               ),
             ],
           ),
@@ -574,72 +971,141 @@ class VolPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+              "f00102",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les vols simples précédés, suivis ou accompagnés de circonstances particulières deviennent des vols aggravés. "
-                "On distingue des aggravations délictuelles et criminelles, selon les circonstances (personnes, moyens, lieux…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00103",
+                      "Les vols simples précédés, suivis ou accompagnés de circonstances particulières deviennent des vols aggravés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00104",
+                      "On distingue des aggravations délictuelles et criminelles, selon les circonstances (personnes, moyens, lieux…).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Vols aggravés délictuels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00105",
+                  "A) Vols aggravés délictuels",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00106",
+                    "Article 311-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00107",
+                    " (principales hypothèses) :",
                   ),
                 ),
-                TextSpan(text: " (principales hypothèses) :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Réunion (plusieurs auteurs/complices) hors bande organisée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00108",
+                  "Réunion (plusieurs auteurs/complices) hors bande organisée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Auteur dépositaire de l’autorité publique / mission de service public (à l’occasion des fonctions).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00109",
+                  "Auteur dépositaire de l’autorité publique / mission de service public (à l’occasion des fonctions).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prise indue de la qualité d’agent public / mission de service public.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00110",
+                  "Prise indue de la qualité d’agent public / mission de service public.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Violences n’ayant pas entraîné d’ITT (lien de connexité non exigé).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00111",
+                  "Violences n’ayant pas entraîné d’ITT (lien de connexité non exigé).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Local d’habitation / lieu d’entrepôt de fonds, valeurs, marchandises ou matériels.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00112",
+                  "Local d’habitation / lieu d’entrepôt de fonds, valeurs, marchandises ou matériels.",
+                ),
               ),
               _BulletPoint(
-                text: "Transport collectif de voyageurs (véhicule ou accès).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00113",
+                  "Transport collectif de voyageurs (véhicule ou accès).",
+                ),
               ),
               _BulletPoint(
-                text: "Destruction / dégradation / détérioration.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00114",
+                  "Destruction / dégradation / détérioration.",
+                ),
               ),
-              _BulletPoint(text: "Dissimulation volontaire du visage."),
               _BulletPoint(
-                text:
-                    "Établissements d’enseignement (ou abords, entrées/sorties).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00115",
+                  "Dissimulation volontaire du visage.",
+                ),
               ),
               _BulletPoint(
-                text: "Destiné à alimenter le commerce illégal d’animaux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00116",
+                  "Établissements d’enseignement (ou abords, entrées/sorties).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00117",
+                  "Destiné à alimenter le commerce illégal d’animaux.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
-                    text: "Vol suivi de violences (fuite/impunité) — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00118",
+                      "Vol suivi de violences (fuite/impunité) — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article 311-11 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                      "f00119",
+                      "article 311-11 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -653,108 +1119,155 @@ class VolPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-4-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00120",
+                    "Article 311-4-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : majeur aidé par un ou plusieurs mineurs (cas particulier).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00121",
+                    " : majeur aidé par un ou plusieurs mineurs (cas particulier).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00122",
+                    "Article 311-4-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : biens culturels, archives privées classées, découvertes archéologiques, etc.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00123",
+                    " : biens culturels, archives privées classées, découvertes archéologiques, etc.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00124",
+                    "Article 311-5 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : ITT ≤ 8 jours / vulnérabilité / habitation-entrepôt avec ruse-effraction-escalade.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00125",
+                    " : ITT ≤ 8 jours / vulnérabilité / habitation-entrepôt avec ruse-effraction-escalade.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00126",
+                    "Article 311-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00127",
+                    " : ITT > 8 jours.",
                   ),
                 ),
-                TextSpan(text: " : ITT > 8 jours."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("B) Vols aggravés criminels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00128",
+                  "B) Vols aggravés criminels",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00129",
+                    "Article 311-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " : mutilation ou infirmité permanente."),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00130",
+                    " : mutilation ou infirmité permanente.",
                   ),
-                ),
-                TextSpan(
-                  text:
-                      " : usage/menace d’une arme ou port d’une arme prohibée/soumise à autorisation.",
-                ),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article 311-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " : bande organisée (et combinaisons avec violences/arme).",
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00131",
+                    "Article 311-8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00132",
+                    " : usage/menace d’une arme ou port d’une arme prohibée/soumise à autorisation.",
                   ),
                 ),
-                TextSpan(text: " : mort / tortures / actes de barbarie."),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00133",
+                    "Article 311-9 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00134",
+                    " : bande organisée (et combinaisons avec violences/arme).",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00135",
+                    "Article 311-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00136",
+                    " : mort / tortures / actes de barbarie.",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -763,175 +1276,300 @@ class VolPage extends StatelessWidget {
 
           // Répression + tentative/complicité + immunité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+              "f00137",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines principales (repères)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00138",
+                  "Peines principales (repères)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Vol simple : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00139",
+                    "Vol simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 311-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00140",
+                    "3 ans d’emprisonnement et 45 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00141",
+                    "article 311-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Vol aggravé (délit) : "),
                 TextSpan(
-                  text:
-                      "paliers possibles (5/7/10 ans + amendes) selon les articles ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00142",
+                    "Vol aggravé (délit) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "311-4 à 311-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00143",
+                    "paliers possibles (5/7/10 ans + amendes) selon les articles ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00144",
+                    "311-4 à 311-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Vol aggravé (crime) : "),
                 TextSpan(
-                  text:
-                      "réclusion (15/20/30 ans ou perpétuité) selon les articles ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00145",
+                    "Vol aggravé (crime) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "311-7 à 311-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00146",
+                    "réclusion (15/20/30 ans ou perpétuité) selon les articles ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00147",
+                    "311-7 à 311-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00148",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
                 TextSpan(
-                  text: "l’article 311-16 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00149",
+                    "Peines prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00150",
+                    "l’article 311-16 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Amende forfaitaire délictuelle (vol simple)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00151",
+                  "Amende forfaitaire délictuelle (vol simple)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-3-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00152",
+                    "Article 311-3-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : possible sous conditions (notamment valeur ≤ 300 € et restitution/indemnisation). "
-                      "Procédure d’amende forfaitaire : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                        "f00153",
+                        " : possible sous conditions (notamment valeur ≤ 300 € et restitution/indemnisation). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                        "f00154",
+                        "Procédure d’amende forfaitaire : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00155",
+                    "articles 495-17 à 495-25 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00156",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 311-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00157",
+                    "Tentative : OUI — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (punissable pour le vol simple, aggravé délictuel ou criminel).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00158",
+                    "article 311-13 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00159",
+                    " (punissable pour le vol simple, aggravé délictuel ou criminel).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Complicité : OUI — application des règles générales (",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00160",
+                    "Complicité : OUI — application des règles générales (",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00161",
+                    "articles 121-6 et 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Immunité familiale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00162",
+                  "Immunité familiale",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00163",
+                    "Article 311-12 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : pas de poursuites pénales pour le vol commis au préjudice de l’ascendant/descendant ou du conjoint "
-                      "(sauf séparation de corps / résidence séparée autorisée).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                        "f00164",
+                        " : pas de poursuites pénales pour le vol commis au préjudice de l’ascendant/descendant ou du conjoint ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                        "f00165",
+                        "(sauf séparation de corps / résidence séparée autorisée).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Exceptions : objets/documents indispensables à la vie quotidienne (identité, titre de séjour, moyens de paiement, télécommunication…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00166",
+                  "Exceptions : objets/documents indispensables à la vie quotidienne (identité, titre de séjour, moyens de paiement, télécommunication…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exceptions : auteur tuteur/curateur/mandataire spécial (sauvegarde), habilitation familiale, mandat de protection future.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00167",
+                  "Exceptions : auteur tuteur/curateur/mandataire spécial (sauvegarde), habilitation familiale, mandat de protection future.",
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "Exemption / réduction de peine (bande organisée)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                  "f00168",
+                  "Exemption / réduction de peine (bande organisée)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-9-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                    "f00169",
+                    "Article 311-9-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : exemption si l’alerte permet d’éviter l’infraction ; réduction des 2/3 si l’alerte permet de faire cesser "
-                      "l’infraction / éviter des conséquences graves / identifier les autres auteurs ou complices.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                        "f00170",
+                        " : exemption si l’alerte permet d’éviter l’infraction ; réduction des 2/3 si l’alerte permet de faire cesser ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart",
+                        "f00171",
+                        "l’infraction / éviter des conséquences graves / identifier les autres auteurs ou complices.",
+                      ),
                 ),
               ]),
             ],

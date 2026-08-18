@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CorruptionPage extends StatelessWidget {
   const CorruptionPage({super.key});
@@ -56,10 +57,18 @@ class CorruptionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Probité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+            "f00002",
+            "Probité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class CorruptionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La corruption",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+              "f00003",
+              "La corruption",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,18 +99,46 @@ class CorruptionPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La corruption consiste, pour une personne dépositaire de l’autorité publique, chargée d’une mission de service public "
-                "ou investie d’un mandat électif public, à solliciter ou agréer, sans droit, directement ou indirectement, "
-                "des offres, promesses, dons, présents ou avantages quelconques (pour elle-même ou pour autrui) "
-                "afin d’accomplir (ou d’avoir accompli), ou de s’abstenir (ou de s’être abstenue) d’accomplir :\n"
-                "• un acte de sa fonction, de sa mission ou de son mandat,\n"
-                "• ou un acte facilité par sa fonction, sa mission ou son mandat.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00005",
+                      "La corruption consiste, pour une personne dépositaire de l’autorité publique, chargée d’une mission de service public ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00006",
+                      "ou investie d’un mandat électif public, à solliciter ou agréer, sans droit, directement ou indirectement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00007",
+                      "des offres, promesses, dons, présents ou avantages quelconques (pour elle-même ou pour autrui) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00008",
+                      "afin d’accomplir (ou d’avoir accompli), ou de s’abstenir (ou de s’être abstenue) d’accomplir :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00009",
+                      "• un acte de sa fonction, de sa mission ou de son mandat,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00010",
+                      "• ou un acte facilité par sa fonction, sa mission ou son mandat.",
+                    ),
               ),
             ],
           ),
@@ -106,27 +147,48 @@ class CorruptionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La qualification « active » ou « passive » ne dépend pas de l’initiative, mais de la qualité de l’auteur :\n"
-                "• Un particulier : corruption active (même s’il accepte une proposition).\n"
-                "• Un agent public : corruption passive (même s’il est à l’origine de la demande).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00012",
+                      "La qualification « active » ou « passive » ne dépend pas de l’initiative, mais de la qualité de l’auteur :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00013",
+                      "• Un particulier : corruption active (même s’il accepte une proposition).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00014",
+                      "• Un agent public : corruption passive (même s’il est à l’origine de la demande).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "La corruption passive est prévue et réprimée par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00015",
+                    "La corruption passive est prévue et réprimée par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 432-11 alinéas 1 et 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00016",
+                    "l’article 432-11 alinéas 1 et 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -137,116 +199,239 @@ class CorruptionPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+              "f00017",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il y a corruption passive lorsqu’un agent public utilise sa fonction en sollicitant ou en acceptant "
-                "des avantages pour accomplir ou avoir accompli, ou pour s’abstenir ou s’être abstenu d’accomplir "
-                "un acte de sa fonction (ou facilité par sa fonction).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00018",
+                      "Il y a corruption passive lorsqu’un agent public utilise sa fonction en sollicitant ou en acceptant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00019",
+                      "des avantages pour accomplir ou avoir accompli, ou pour s’abstenir ou s’être abstenu d’accomplir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00020",
+                      "un acte de sa fonction (ou facilité par sa fonction).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Un auteur : le corrompu"),
-              _Paragraph(
-                "Le texte vise :\n"
-                "• la personne dépositaire de l’autorité publique ;\n"
-                "• la personne chargée d’une mission de service public ;\n"
-                "• la personne investie d’un mandat électif public.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00021",
+                  "A) Un auteur : le corrompu",
+                ),
               ),
-              SizedBox(height: 10),
-
-              _SubTitle("1) Personne dépositaire de l’autorité publique"),
               _Paragraph(
-                "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle d’autorité publique "
-                "conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ministériel, etc.).\n\n"
-                "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers, commissaires-priseurs, fonctionnaires des eaux et forêts.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00022",
+                      "Le texte vise :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00023",
+                      "• la personne dépositaire de l’autorité publique ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00024",
+                      "• la personne chargée d’une mission de service public ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00025",
+                      "• la personne investie d’un mandat électif public.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "2) Personne investie d’un mandat électif public",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00026",
+                  "1) Personne dépositaire de l’autorité publique",
+                ),
               ),
               _Paragraph(
-                "Sont visés les membres des grands corps nationaux (Sénat, Assemblée nationale), mais aussi les assemblées régionales, "
-                "départementales et communales (conseil municipal, conseiller départemental, etc.).\n\n"
-                "Sont également visés les présidents et membres élus de certains établissements publics administratifs "
-                "(chambres de commerce et d’industrie, chambres d’agriculture, chambres des métiers).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00027",
+                      "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle d’autorité publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00028",
+                      "conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ministériel, etc.).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00029",
+                      "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers, commissaires-priseurs, fonctionnaires des eaux et forêts.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "3) Personne chargée d’une mission de service public",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00030",
+                  "2) Personne investie d’un mandat électif public",
+                ),
               ),
               _Paragraph(
-                "Est chargée d’une mission de service public la personne qui accomplit, à titre temporaire ou permanent, volontairement "
-                "ou sur réquisition, un service public quelconque. Elle participe à une mission d’intérêt général sans pouvoir de décision "
-                "ou de commandement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00031",
+                      "Sont visés les membres des grands corps nationaux (Sénat, Assemblée nationale), mais aussi les assemblées régionales, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00032",
+                      "départementales et communales (conseil municipal, conseiller départemental, etc.).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00033",
+                      "Sont également visés les présidents et membres élus de certains établissements publics administratifs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00034",
+                      "(chambres de commerce et d’industrie, chambres d’agriculture, chambres des métiers).",
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00035",
+                  "3) Personne chargée d’une mission de service public",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00036",
+                      "Est chargée d’une mission de service public la personne qui accomplit, à titre temporaire ou permanent, volontairement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00037",
+                      "ou sur réquisition, un service public quelconque. Elle participe à une mission d’intérêt général sans pouvoir de décision ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00038",
+                      "ou de commandement.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un comportement : solliciter ou agréer"),
-              _SubTitle("1) La sollicitation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00039",
+                  "B) Un comportement : solliciter ou agréer",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00040",
+                  "1) La sollicitation",
+                ),
+              ),
               _Paragraph(
-                "La sollicitation suppose une démarche de l’intéressé : il fait comprendre, directement ou indirectement, "
-                "qu’il faut « payer » pour obtenir l’accomplissement (ou le non-accomplissement) de l’acte.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00041",
+                      "La sollicitation suppose une démarche de l’intéressé : il fait comprendre, directement ou indirectement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00042",
+                      "qu’il faut « payer » pour obtenir l’accomplissement (ou le non-accomplissement) de l’acte.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) L’agrément"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00043",
+                  "2) L’agrément",
+                ),
+              ),
               _Paragraph(
-                "L’agrément est l’accord donné à la proposition : il existe alors un accord de volontés entre corrupteur et corrompu, "
-                "souvent appelé « pacte de corruption ». Il est indifférent que cet accord soit suivi d’exécution.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00044",
+                      "L’agrément est l’accord donné à la proposition : il existe alors un accord de volontés entre corrupteur et corrompu, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00045",
+                      "souvent appelé « pacte de corruption ». Il est indifférent que cet accord soit suivi d’exécution.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Modalités importantes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00046",
+                  "Modalités importantes",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Directement ou indirectement : la sollicitation par personne interposée est punissable (si le rôle délictueux est établi).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00047",
+                  "Directement ou indirectement : la sollicitation par personne interposée est punissable (si le rôle délictueux est établi).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "À tout moment : le pacte peut être conclu avant l’acte, après l’acte, ou même pour remercier un acte déjà accompli.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00048",
+                  "À tout moment : le pacte peut être conclu avant l’acte, après l’acte, ou même pour remercier un acte déjà accompli.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00049",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Acceptation d’avantages postérieurement à l’accomplissement d’un acte de la fonction (mandat électif) : ",
-                  ),
-                  TextSpan(
-                    text: "Cass. crim., 27 octobre 1997",
-                    style: TextStyle(
-                      color: _lawRed,
-                      fontWeight: FontWeight.w900,
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00050",
+                      "Acceptation d’avantages postérieurement à l’accomplissement d’un acte de la fonction (mandat électif) : ",
                     ),
                   ),
-                  TextSpan(text: "."),
-                ],
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("C) Un bénéfice attendu"),
-              _Paragraph(
-                "Les « offres, promesses, dons, présents ou avantages quelconques » s’entendent largement : "
-                "argent, objets de valeur, immeubles, voyages, droits de chasse, etc.",
-              ),
-              SizedBox(height: 10),
-              _NotaBox(
-                title: "Jurisprudence",
-                bodySpans: [
                   TextSpan(
-                    text:
-                        "Prise en charge de dépenses personnelles imposée à des entreprises (voyages d’agrément, frais de chasse) : ",
-                  ),
-                  TextSpan(
-                    text: "Cass. crim., 16 mai 2001",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00051",
+                      "Cass. crim., 27 octobre 1997",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -259,23 +444,101 @@ class CorruptionPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) Un lien avec un acte de la fonction (ou facilité)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00052",
+                  "C) Un bénéfice attendu",
+                ),
               ),
               _Paragraph(
-                "Il faut un lien entre la sollicitation/l’agrément et l’accomplissement (ou l’abstention) d’un acte :\n"
-                "• acte de la fonction/mission/mandat (au sens large : textes + discipline de la fonction) ;\n"
-                "• ou acte « facilité » par la fonction/mission/mandat (ex. monnayer des renseignements obtenus grâce aux facilités du poste).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00053",
+                      "Les « offres, promesses, dons, présents ou avantages quelconques » s’entendent largement : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00054",
+                      "argent, objets de valeur, immeubles, voyages, droits de chasse, etc.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00055",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Fonctionnaire de police proposant/acceptant qu’on ne dresse pas procès-verbal d’un fait délictueux qu’il avait compétence pour constater : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00056",
+                      "Prise en charge de dépenses personnelles imposée à des entreprises (voyages d’agrément, frais de chasse) : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 17 novembre 1955",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00057",
+                      "Cass. crim., 16 mai 2001",
+                    ),
+                    style: TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  TextSpan(text: "."),
+                ],
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00058",
+                  "D) Un lien avec un acte de la fonction (ou facilité)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00059",
+                      "Il faut un lien entre la sollicitation/l’agrément et l’accomplissement (ou l’abstention) d’un acte :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00060",
+                      "• acte de la fonction/mission/mandat (au sens large : textes + discipline de la fonction) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00061",
+                      "• ou acte « facilité » par la fonction/mission/mandat (ex. monnayer des renseignements obtenus grâce aux facilités du poste).",
+                    ),
+              ),
+              SizedBox(height: 10),
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00062",
+                  "Jurisprudence",
+                ),
+                bodySpans: [
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00063",
+                      "Fonctionnaire de police proposant/acceptant qu’on ne dresse pas procès-verbal d’un fait délictueux qu’il avait compétence pour constater : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00064",
+                      "Cass. crim., 17 novembre 1955",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -286,14 +549,25 @@ class CorruptionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00065",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Fonctionnaire de préfecture recevant de l’argent pour faciliter la délivrance d’un titre de séjour : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00066",
+                      "Fonctionnaire de préfecture recevant de l’argent pour faciliter la délivrance d’un titre de séjour : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 03 juin 1997",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00067",
+                      "Cass. crim., 03 juin 1997",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -306,11 +580,23 @@ class CorruptionPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "E) L’avantage peut profiter à l’auteur ou à un tiers",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00068",
+                  "E) L’avantage peut profiter à l’auteur ou à un tiers",
+                ),
               ),
               _Paragraph(
-                "L’avantage peut être reçu par l’agent public lui-même ou par un tiers : proche, ami, ou une personne morale "
-                "(ex. parti, société écran, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00069",
+                      "L’avantage peut être reçu par l’agent public lui-même ou par un tiers : proche, ami, ou une personne morale ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00070",
+                      "(ex. parti, société écran, etc.).",
+                    ),
               ),
             ],
           ),
@@ -319,20 +605,48 @@ class CorruptionPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+              "f00071",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Conscience de violer le devoir de probité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00072",
+                  "A) Conscience de violer le devoir de probité",
+                ),
+              ),
               _Paragraph(
-                "L’agent public doit avoir conscience d’agir en violation de son devoir de probité.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00073",
+                  "L’agent public doit avoir conscience d’agir en violation de son devoir de probité.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Volonté d’obtenir (ou d’accepter) un avantage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00074",
+                  "B) Volonté d’obtenir (ou d’accepter) un avantage",
+                ),
+              ),
               _Paragraph(
-                "Il faut établir que l’avantage a été accepté ou recherché en sachant qu’il constituait la contrepartie "
-                "d’un acte (ou d’une abstention) de la fonction, ou facilité par la fonction. Le mobile importe peu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00075",
+                      "Il faut établir que l’avantage a été accepté ou recherché en sachant qu’il constituait la contrepartie ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                      "f00076",
+                      "d’un acte (ou d’une abstention) de la fonction, ou facilité par la fonction. Le mobile importe peu.",
+                    ),
               ),
             ],
           ),
@@ -341,22 +655,30 @@ class CorruptionPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+              "f00077",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-11 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00078",
+                    "Article 432-11 alinéa 4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : aggravation lorsque l’infraction est commise en bande organisée.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00079",
+                    " : aggravation lorsque l’infraction est commise en bande organisée.",
+                  ),
                 ),
               ]),
             ],
@@ -366,97 +688,190 @@ class CorruptionPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+              "f00080",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00081",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 1 000 000 € d’amende ",
-                ),
-                TextSpan(
-                  text:
-                      "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
-                ),
-                TextSpan(
-                  text: "article 432-11 alinéas 1 et 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00082",
+                    "Qualification simple : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00083",
+                    "10 ans d’emprisonnement et 1 000 000 € d’amende ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00084",
+                    "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00085",
+                    "article 432-11 alinéas 1 et 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Bande organisée : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 2 000 000 € d’amende ",
-                ),
-                TextSpan(
-                  text:
-                      "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
-                ),
-                TextSpan(
-                  text: "article 432-11 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00086",
+                    "Bande organisée : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00087",
+                    "10 ans d’emprisonnement et 2 000 000 € d’amende ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00088",
+                    "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00089",
+                    "article 432-11 alinéa 4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00090",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph(
-                "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00091",
+                  "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00092",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00093",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — application de "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00094",
+                    "Complicité : OUI — application de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00095",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00096",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00097",
+                    " (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Réduction ou exemption de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                  "f00098",
+                  "Réduction ou exemption de peine",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "OUI — "),
                 TextSpan(
-                  text: "article 432-11-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00099",
+                    "OUI — ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                    "f00100",
+                    "article 432-11-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " : l’auteur ou le complice qui permet de faire cesser l’infraction ou d’identifier les autres auteurs/complices "
-                      "peut voir sa peine privative de liberté réduite de moitié.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                        "f00101",
+                        " : l’auteur ou le complice qui permet de faire cesser l’infraction ou d’identifier les autres auteurs/complices ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/corruption_page.dart",
+                        "f00102",
+                        "peut voir sa peine privative de liberté réduite de moitié.",
+                      ),
                 ),
               ]),
             ],

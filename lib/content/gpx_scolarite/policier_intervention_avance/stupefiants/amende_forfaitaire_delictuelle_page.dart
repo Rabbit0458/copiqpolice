@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
   const AmendeForfaitaireDelictuelleStupPage({super.key});
@@ -56,10 +57,18 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Amende forfaitaire délictuelle (AFD)\nUsage illicite de stupéfiants",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+              "f00003",
+              "Amende forfaitaire délictuelle (AFD)\nUsage illicite de stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,66 +99,92 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
 
           // ✅ Élément légal (en haut)
           _ConditionCard(
-            title: "I — Élément légal (textes applicables)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+              "f00004",
+              "I — Élément légal (textes applicables)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’action publique peut être éteinte par le paiement d’une AFD : ",
-                ),
-                TextSpan(
-                  text: "articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00005",
+                    "L’action publique peut être éteinte par le paiement d’une AFD : ",
                   ),
                 ),
-                TextSpan(text: " ; "),
                 TextSpan(
-                  text:
-                      "articles D. 45-3 à D. 45-21 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00006",
+                    "articles 495-17 à 495-25 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ; "),
                 TextSpan(
-                  text:
-                      "articles A. 36-14 à A. 36-18 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00007",
+                    "articles D. 45-3 à D. 45-21 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: " ; "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00008",
+                    "articles A. 36-14 à A. 36-18 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Usage illicite de stupéfiants : "),
                 TextSpan(
-                  text:
-                      "article L. 3421-1 alinéa 1 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00009",
+                    "Usage illicite de stupéfiants : ",
                   ),
                 ),
-                TextSpan(text: " (Natinf 180)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00010",
+                    "article L. 3421-1 alinéa 1 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00011",
+                    " (Natinf 180).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "AFD applicable à l’usage : "),
                 TextSpan(
-                  text:
-                      "article L. 3421-1 alinéa 3 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00012",
+                    "AFD applicable à l’usage : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00013",
+                    "article L. 3421-1 alinéa 3 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -156,17 +195,41 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
 
           // Définition / idée générale
           _ConditionCard(
-            title: "Définition (à retenir)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+              "f00014",
+              "Définition (à retenir)",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsque la loi le prévoit, l’action publique peut être éteinte par le paiement d’une "
-                "amende forfaitaire délictuelle (AFD).\n\n"
-                "En matière d’usage illicite de stupéfiants, l’AFD peut être mise en œuvre si le délit est constaté "
-                "dans un cadre juridique adapté et si les conditions de procédure sont réunies.\n\n"
-                "La constatation se fait via un procès-verbal électronique (PVe).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00015",
+                      "Lorsque la loi le prévoit, l’action publique peut être éteinte par le paiement d’une ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00016",
+                      "amende forfaitaire délictuelle (AFD).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00017",
+                      "En matière d’usage illicite de stupéfiants, l’AFD peut être mise en œuvre si le délit est constaté ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00018",
+                      "dans un cadre juridique adapté et si les conditions de procédure sont réunies.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00019",
+                      "La constatation se fait via un procès-verbal électronique (PVe).",
+                    ),
               ),
             ],
           ),
@@ -175,76 +238,151 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
 
           // Champ d'application
           _ConditionCard(
-            title: "II — Champ d’application",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+              "f00020",
+              "II — Champ d’application",
+            ),
             cardColor: cardApply,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Quand l’AFD peut être mise en œuvre"),
-              _BulletPoint(
-                text:
-                    "Lorsque le délit d’usage illicite de stupéfiants est constaté (PVe).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00021",
+                  "A) Quand l’AFD peut être mise en œuvre",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La personne est avisée qu’elle recevra un avis d’amende forfaitaire à son domicile (mention dans le PVe).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00022",
+                  "Lorsque le délit d’usage illicite de stupéfiants est constaté (PVe).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00023",
+                  "La personne est avisée qu’elle recevra un avis d’amende forfaitaire à son domicile (mention dans le PVe).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Cas où l’AFD ne doit pas être mise en œuvre"),
-              _BulletPoint(text: "Mis en cause mineur (AFD exclue)."),
-              _BulletPoint(
-                text:
-                    "Plusieurs infractions constatées simultanément dont au moins une non forfaitisable.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00024",
+                  "B) Cas où l’AFD ne doit pas être mise en œuvre",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Auteur dépositaire de l’autorité publique / chargé de mission de service public, ou personnel de transport exerçant des fonctions impactant la sécurité du transport (AFD non applicable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00025",
+                  "Mis en cause mineur (AFD exclue).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00026",
+                  "Plusieurs infractions constatées simultanément dont au moins une non forfaitisable.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00027",
+                  "Auteur dépositaire de l’autorité publique / chargé de mission de service public, ou personnel de transport exerçant des fonctions impactant la sécurité du transport (AFD non applicable).",
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "C) Situations excluant en pratique (ou à apprécier selon parquet)",
-              ),
-              _BulletPoint(text: "Plusieurs délits forfaitisables constatés."),
-              _BulletPoint(
-                text: "Plusieurs types de produits différents découverts.",
-              ),
-              _BulletPoint(
-                text:
-                    "Nécessité d’investigations complémentaires (suspicion trafic, procédure incidente…).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00028",
+                  "C) Situations excluant en pratique (ou à apprécier selon parquet)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conduite d’un véhicule : la conduite après usage de stupéfiants relève du Code de la route.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00029",
+                  "Plusieurs délits forfaitisables constatés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Impossibilité d’établir l’identité ou absence d’adresse postale déclarée/confirmée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00030",
+                  "Plusieurs types de produits différents découverts.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contestations des faits ou refus de renoncer au droit de contester la destruction des produits/accessoires saisis.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00031",
+                  "Nécessité d’investigations complémentaires (suspicion trafic, procédure incidente…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Absence de pleine capacité de compréhension/décision (barrière langue, troubles manifestes, état incompatible).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00032",
+                  "Conduite d’un véhicule : la conduite après usage de stupéfiants relève du Code de la route.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Absence de produit découvert (procédure fondée uniquement sur aveux : non).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00033",
+                  "Impossibilité d’établir l’identité ou absence d’adresse postale déclarée/confirmée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Personne notoirement connue pour plusieurs procédures stupéfiants (appréciation).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00034",
+                  "Contestations des faits ou refus de renoncer au droit de contester la destruction des produits/accessoires saisis.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Besoin apparent de prise en charge sanitaire/sociale (signes d’addiction, désociabilisation, troubles psychiques).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00035",
+                  "Absence de pleine capacité de compréhension/décision (barrière langue, troubles manifestes, état incompatible).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Quantités importantes : > 50 g cannabis, ou > 5 g cocaïne, ou jusqu’à 5 cachets / 5 g de poudre d’ecstasy (MDMA) : AFD normalement non (sauf autorisation exceptionnelle du procureur).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00036",
+                  "Absence de produit découvert (procédure fondée uniquement sur aveux : non).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00037",
+                  "Personne notoirement connue pour plusieurs procédures stupéfiants (appréciation).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00038",
+                  "Besoin apparent de prise en charge sanitaire/sociale (signes d’addiction, désociabilisation, troubles psychiques).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00039",
+                  "Quantités importantes : > 50 g cannabis, ou > 5 g cocaïne, ou jusqu’à 5 cachets / 5 g de poudre d’ecstasy (MDMA) : AFD normalement non (sauf autorisation exceptionnelle du procureur).",
+                ),
               ),
             ],
           ),
@@ -253,72 +391,130 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
 
           // Modalités de constatation
           _ConditionCard(
-            title: "III — Modalités de constatation (PVe)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+              "f00040",
+              "III — Modalités de constatation (PVe)",
+            ),
             cardColor: cardModal,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Cadre juridique de la constatation"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00041",
+                  "A) Cadre juridique de la constatation",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "La procédure repose sur une constatation flagrante : ",
-                ),
-                TextSpan(
-                  text: "article 53 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00042",
+                    "La procédure repose sur une constatation flagrante : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (initiative), ou après contrôle d’identité sur réquisitions : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00043",
+                    "article 53 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "articles 78-2 ou 78-2-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00044",
+                    " (initiative), ou après contrôle d’identité sur réquisitions : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00045",
+                    "articles 78-2 ou 78-2-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("B) Lieu de rédaction du PVe"),
-              _BulletPoint(
-                text:
-                    "Le PVe doit être établi sur les lieux de constatation du délit.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00046",
+                  "B) Lieu de rédaction du PVe",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exception : retour au service possible pour ordre public / protection agents, avec acceptation du mis en cause de suivre librement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00047",
+                  "Le PVe doit être établi sur les lieux de constatation du délit.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00048",
+                  "Exception : retour au service possible pour ordre public / protection agents, avec acceptation du mis en cause de suivre librement.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Description précise des produits"),
-              _BulletPoint(
-                text:
-                    "Renseigner : nature (cannabis/cocaïne/MDMA…), type (résine/herbe/poudre…), conditionnement (barrette/sachet…).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00049",
+                  "C) Description précise des produits",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Compléter si besoin (champ libre) : odeur, apparence, objets liés à la consommation, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00050",
+                  "Renseigner : nature (cannabis/cocaïne/MDMA…), type (résine/herbe/poudre…), conditionnement (barrette/sachet…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00051",
+                  "Compléter si besoin (champ libre) : odeur, apparence, objets liés à la consommation, etc.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("D) Gestion des produits et accessoires saisis"),
-              _BulletPoint(
-                text:
-                    "Produits et accessoires (grinder, feuilles, pipe…) : saisis et destinés à destruction selon modalités fixées avec le procureur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00052",
+                  "D) Gestion des produits et accessoires saisis",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Acter le consentement du mis en cause à la destruction (et à la remise des objets le cas échéant) via le champ prévu.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00053",
+                  "Produits et accessoires (grinder, feuilles, pipe…) : saisis et destinés à destruction selon modalités fixées avec le procureur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aucun scellé ni échantillonnage ne doivent être constitués dans ce cadre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00054",
+                  "Acter le consentement du mis en cause à la destruction (et à la remise des objets le cas échéant) via le champ prévu.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00055",
+                  "Aucun scellé ni échantillonnage ne doivent être constitués dans ce cadre.",
+                ),
               ),
             ],
           ),
@@ -327,29 +523,55 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
 
           // Montant
           _ConditionCard(
-            title: "IV — Montant de l’AFD",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+              "f00056",
+              "IV — Montant de l’AFD",
+            ),
             cardColor: cardMoney,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Montant fixé par "),
                 TextSpan(
-                  text:
-                      "l’article L. 3421-1 alinéa 3 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00057",
+                    "Montant fixé par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00058",
+                    "l’article L. 3421-1 alinéa 3 du Code de la santé publique",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 10),
-              _BulletPoint(text: "Amende forfaitaire minorée : 150 €"),
               _BulletPoint(
-                text: "Amende forfaitaire « ordinaire » : 200 €",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00059",
+                  "Amende forfaitaire minorée : 150 €",
+                ),
               ),
-              _BulletPoint(text: "Amende forfaitaire majorée : 450 €"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00060",
+                  "Amende forfaitaire « ordinaire » : 200 €",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00061",
+                  "Amende forfaitaire majorée : 450 €",
+                ),
+              ),
             ],
           ),
 
@@ -357,88 +579,170 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
 
           // Paiement / contestation
           _ConditionCard(
-            title: "V — Paiement ou contestation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+              "f00062",
+              "V — Paiement ou contestation",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Amende minorée (délais)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00063",
+                  "A) Amende minorée (délais)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Paiement minoré possible : entre les mains de l’agent, ou dans les ",
-                ),
-                TextSpan(text: "15 jours"),
-                TextSpan(
-                  text: " suivant l’envoi de l’avis d’infraction — ",
-                ),
-                TextSpan(
-                  text: "article 495-18 alinéa 2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00064",
+                    "Paiement minoré possible : entre les mains de l’agent, ou dans les ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00065",
+                    "15 jours",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00066",
+                    " suivant l’envoi de l’avis d’infraction — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00067",
+                    "article 495-18 alinéa 2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("B) Paiement ou requête en exonération"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00068",
+                  "B) Paiement ou requête en exonération",
+                ),
+              ),
               _Paragraph(
-                "Dans les 45 jours suivant la date d’envoi de l’avis d’infraction :\n"
-                "• payer l’amende, ou\n"
-                "• déposer une requête en exonération.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00069",
+                      "Dans les 45 jours suivant la date d’envoi de l’avis d’infraction :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00070",
+                      "• payer l’amende, ou\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00071",
+                      "• déposer une requête en exonération.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Amende majorée / réclamation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00072",
+                  "C) Amende majorée / réclamation",
+                ),
+              ),
               _Paragraph(
-                "À défaut de paiement ou de requête, le montant est majoré.\n"
-                "La majoration peut faire l’objet d’une réclamation dans les 30 jours suivant l’envoi de l’avis au domicile.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00073",
+                      "À défaut de paiement ou de requête, le montant est majoré.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00074",
+                      "La majoration peut faire l’objet d’une réclamation dans les 30 jours suivant l’envoi de l’avis au domicile.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("D) Modes de paiement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00075",
+                  "D) Modes de paiement",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Modes identiques à l’amende forfaitaire contraventionnelle (télépaiement, chèque, virement…) — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00076",
+                    "Modes identiques à l’amende forfaitaire contraventionnelle (télépaiement, chèque, virement…) — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article D. 45-8 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00077",
+                    "article D. 45-8 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article R. 49-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                    "f00078",
+                    "article R. 49-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("E) Requête / réclamation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00079",
+                  "E) Requête / réclamation",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Par LRAR, ou en dématérialisé via le site ANTAI (antai.fr).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                  "f00080",
+                  "Par LRAR, ou en dématérialisé via le site ANTAI (antai.fr).",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les conditions de recevabilité et, le cas échéant, la consignation sont précisées dans les documents adressés à l’intéressé.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00081",
+                      "Les conditions de recevabilité et, le cas échéant, la consignation sont précisées dans les documents adressés à l’intéressé.",
+                    ),
                   ),
                   TextSpan(text: "\n\n"),
                   TextSpan(
-                    text:
-                        "Dispense de consignation en cas d’usurpation d’identité : article 434-23 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart",
+                      "f00082",
+                      "Dispense de consignation en cas d’usurpation d’identité : article 434-23 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -701,9 +1005,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

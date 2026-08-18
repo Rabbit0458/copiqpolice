@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MenacesAvecConditionPage extends StatelessWidget {
   const MenacesAvecConditionPage({super.key});
@@ -59,10 +60,18 @@ class MenacesAvecConditionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes volontaires à l’intégrité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+            "f00002",
+            "Atteintes volontaires à l’intégrité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class MenacesAvecConditionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La menace de crime ou délit avec ordre de remplir une condition",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+              "f00003",
+              "La menace de crime ou délit avec ordre de remplir une condition",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -89,14 +102,26 @@ class MenacesAvecConditionPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La menace, par quelque moyen que ce soit, de commettre un crime ou un délit contre les personnes, "
-                "lorsqu’elle est faite avec l’ordre de remplir une condition, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00005",
+                      "La menace, par quelque moyen que ce soit, de commettre un crime ou un délit contre les personnes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00006",
+                      "lorsqu’elle est faite avec l’ordre de remplir une condition, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -105,23 +130,36 @@ class MenacesAvecConditionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-18 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00008",
+                    "Article 222-18 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : prévoit et réprime la menace de commettre un crime ou un délit contre les personnes lorsqu’elle est faite "
-                      "avec ordre de remplir une condition.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                        "f00009",
+                        " : prévoit et réprime la menace de commettre un crime ou un délit contre les personnes lorsqu’elle est faite ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                        "f00010",
+                        "avec ordre de remplir une condition.",
+                      ),
                 ),
               ]),
             ],
@@ -131,62 +169,136 @@ class MenacesAvecConditionPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Menace de tout crime ou délit contre les personnes",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00012",
+                  "A) Menace de tout crime ou délit contre les personnes",
+                ),
               ),
               _Paragraph(
-                "La menace doit porter sur la commission d’un crime ou d’un délit contre les personnes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00013",
+                  "La menace doit porter sur la commission d’un crime ou d’un délit contre les personnes.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "À la différence de la menace sans condition, est ici visé tout délit d’atteinte à la personne, sans qu’il soit "
-                        "nécessaire que la tentative soit punissable.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00014",
+                          "À la différence de la menace sans condition, est ici visé tout délit d’atteinte à la personne, sans qu’il soit ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00015",
+                          "nécessaire que la tentative soit punissable.",
+                        ),
                   ),
                 ],
-                title: "Point clé",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("B) Dirigée contre une personne"),
-              _Paragraph(
-                "La menace doit être dirigée contre une ou plusieurs personnes. La menace « à la cantonade » ne constitue pas l’infraction "
-                "(ex. promesse de tirer sur quiconque toucherait à une voiture).",
-              ),
-              SizedBox(height: 10),
-              _Paragraph(
-                "Elle peut être :\n"
-                "• directe (adressée à la personne visée),\n"
-                "• ou indirecte (en présence de tiers, ou transmise à la victime par un intermédiaire).",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00016",
+                  "Point clé",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Un moyen indéterminé (pas besoin de réitération)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00017",
+                  "B) Dirigée contre une personne",
+                ),
               ),
               _Paragraph(
-                "Le moyen de la menace n’est pas déterminé. La menace n’a pas à être réitérée : elle peut être extériorisée "
-                "par quelque moyen que ce soit (écrit, informatique, vidéo, menaces verbales, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00018",
+                      "La menace doit être dirigée contre une ou plusieurs personnes. La menace « à la cantonade » ne constitue pas l’infraction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00019",
+                      "(ex. promesse de tirer sur quiconque toucherait à une voiture).",
+                    ),
+              ),
+              SizedBox(height: 10),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00020",
+                      "Elle peut être :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00021",
+                      "• directe (adressée à la personne visée),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00022",
+                      "• ou indirecte (en présence de tiers, ou transmise à la victime par un intermédiaire).",
+                    ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00023",
+                  "C) Un moyen indéterminé (pas besoin de réitération)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00024",
+                      "Le moyen de la menace n’est pas déterminé. La menace n’a pas à être réitérée : elle peut être extériorisée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00025",
+                      "par quelque moyen que ce soit (écrit, informatique, vidéo, menaces verbales, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Jurisprudence : le prévenu reproduit la forme d’une arme avec ses doigts et dit « ça ira très mal pour toi » si une condition "
-                        "n’est pas respectée ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00026",
+                          "Jurisprudence : le prévenu reproduit la forme d’une arme avec ses doigts et dit « ça ira très mal pour toi » si une condition ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00027",
+                          "n’est pas respectée ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 27 février 2013)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00028",
+                      "(Cass. crim., 27 février 2013)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -194,35 +306,68 @@ class MenacesAvecConditionPage extends StatelessWidget {
                   ),
                   TextSpan(text: "."),
                 ],
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00029",
+                  "Jurisprudence",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Ordre de remplir une condition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00030",
+                  "D) Ordre de remplir une condition",
+                ),
+              ),
               _Paragraph(
-                "La condition peut prendre différentes formes : action/abstention, obligation de faire ou de ne pas faire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00031",
+                  "La condition peut prendre différentes formes : action/abstention, obligation de faire ou de ne pas faire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "C’est une injonction faite à autrui : la victime se sent contrainte de s’y soumettre pour éviter la réalisation de la menace. "
-                        "L’auteur porte atteinte à la liberté d’agir de la victime en l’intimidant.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00032",
+                          "C’est une injonction faite à autrui : la victime se sent contrainte de s’y soumettre pour éviter la réalisation de la menace. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00033",
+                          "L’auteur porte atteinte à la liberté d’agir de la victime en l’intimidant.",
+                        ),
                   ),
                 ],
-                title: "Point clé",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00034",
+                  "Point clé",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : menace de mort faite à une ancienne amie si elle ne se dépêchait pas d’écrire ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00035",
+                      "Jurisprudence : menace de mort faite à une ancienne amie si elle ne se dépêchait pas d’écrire ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 25 avril 1990)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00036",
+                      "(Cass. crim., 25 avril 1990)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -230,7 +375,11 @@ class MenacesAvecConditionPage extends StatelessWidget {
                   ),
                   TextSpan(text: "."),
                 ],
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00037",
+                  "Jurisprudence",
+                ),
               ),
             ],
           ),
@@ -239,28 +388,56 @@ class MenacesAvecConditionPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+              "f00038",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conscience d’exercer une pression pour contraindre",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00039",
+                  "Conscience d’exercer une pression pour contraindre",
+                ),
               ),
               _Paragraph(
-                "L’auteur agit en connaissance de cause : il sait que son attitude fait pression sur la victime "
-                "et qu’il la contraint à faire ou ne pas faire un acte déterminé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00040",
+                      "L’auteur agit en connaissance de cause : il sait que son attitude fait pression sur la victime ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                      "f00041",
+                      "et qu’il la contraint à faire ou ne pas faire un acte déterminé.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’intention se traduit par le dessein de peser méchamment, par une contrainte morale, sur la volonté d’autrui. "
-                        "L’intention de passer à l’exécution des menaces est indifférente.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00042",
+                          "L’intention se traduit par le dessein de peser méchamment, par une contrainte morale, sur la volonté d’autrui. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                          "f00043",
+                          "L’intention de passer à l’exécution des menaces est indifférente.",
+                        ),
                   ),
                 ],
-                title: "À retenir",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00044",
+                  "À retenir",
+                ),
               ),
             ],
           ),
@@ -269,44 +446,66 @@ class MenacesAvecConditionPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+              "f00045",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-18 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00046",
+                    "Article 222-18 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Lorsqu’il s’agit d’une menace de mort.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00047",
+                  "Lorsqu’il s’agit d’une menace de mort.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-18-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00048",
+                    "Article 222-18-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00049",
+                    " (deux degrés d’aggravation) :",
                   ),
                 ),
-                TextSpan(text: " (deux degrés d’aggravation) :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Premier degré : menaces commises par le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00050",
+                  "Premier degré : menaces commises par le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Second degré : menaces de mort commises par le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00051",
+                  "Second degré : menaces de mort commises par le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité.",
+                ),
               ),
             ],
           ),
@@ -315,111 +514,180 @@ class MenacesAvecConditionPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+              "f00052",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00053",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification simple : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00054",
+                    "Qualification simple : ",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
                   ),
                 ),
-                const TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
-                ),
-                const TextSpan(
-                  text: "article 222-18 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00055",
+                    "3 ans d’emprisonnement et 45 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00056",
+                    "article 222-18 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Menace de mort : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00057",
+                    "Menace de mort : ",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
                   ),
                 ),
-                const TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
-                ),
-                const TextSpan(
-                  text: "article 222-18 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00058",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00059",
+                    "article 222-18 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravations (conjoint/concubin/PACS) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00060",
+                    "Aggravations (conjoint/concubin/PACS) : ",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      "jusqu’à 7 ans d’emprisonnement et 100 000 € d’amende — ",
-                ),
-                const TextSpan(
-                  text: "article 222-18-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00061",
+                    "jusqu’à 7 ans d’emprisonnement et 100 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00062",
+                    "article 222-18-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              const _Paragraph.rich([
-                TextSpan(text: "Peines applicables prévues par "),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00063",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "l’article 222-18-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00064",
+                    "Peines applicables prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00065",
+                    "l’article 222-18-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
-              const _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00066",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                  "f00067",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00068",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00069",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart",
+                    "f00070",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),

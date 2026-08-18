@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react"
 import { CourseModule, CourseSection } from "@/data/modules"
 import { Crown, ChevronDown, Check, ArrowLeft, ArrowRight, RotateCcw, BookOpen, Layers, Zap } from "lucide-react"
+import type { LucideIcon } from "lucide-react"
 import Link from "next/link"
 
 // ─── Extended types (flashcards & keyPoints are optional additions) ────────────
@@ -81,7 +82,7 @@ export default function CoursReader({ module, tier, userEmail }: Props) {
     (s.keyPoints ?? []).map(kp => ({ text: kp, sectionTitle: s.title, sectionId: s.id }))
   )
 
-  const modes: { id: ViewMode; label: string; icon: React.ElementType }[] = [
+  const modes: { id: ViewMode; label: string; icon: LucideIcon }[] = [
     { id: "cours",      label: "Cours",      icon: BookOpen },
     { id: "flashcards", label: "Flashcards",  icon: Layers   },
     { id: "keypoints",  label: "Points clés", icon: Zap      },

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
   const GpxDoctrineAccueilVictimesVcPage({super.key});
@@ -65,10 +66,18 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accueil du public",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+            "f00002",
+            "Accueil du public",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -83,7 +92,11 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Doctrine relative à l’accueil et la prise en charge des victimes de violences conjugales",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00003",
+              "Doctrine relative à l’accueil et la prise en charge des victimes de violences conjugales",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -93,7 +106,11 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            "Mise à jour : décembre 2021",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00004",
+              "Mise à jour : décembre 2021",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w700,
               fontSize: 13.5,
@@ -104,28 +121,54 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // ✅ Élément légal / base (en haut, comme tu veux)
           _ConditionCard(
-            title: "Base juridique à connaître (en priorité)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00005",
+              "Base juridique à connaître (en priorité)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Articles 10-2 à 10-5 du Code de procédure pénale"),
-                const TextSpan(
-                  text:
-                      " : encadrent les droits des victimes (information, interprète, accompagnement, évaluation personnalisée).",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00006",
+                    "Articles 10-2 à 10-5 du Code de procédure pénale",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00007",
+                    " : encadrent les droits des victimes (information, interprète, accompagnement, évaluation personnalisée).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Ces articles servent de repère immédiat pour l’accueil, l’information et l’orientation.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00008",
+                  "Ces articles servent de repère immédiat pour l’accueil, l’information et l’orientation.",
+                ),
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "À retenir : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00009",
+                    "À retenir : ",
+                  ),
+                ),
                 _law(
-                  "le recueil des déclarations ne dépend jamais d’un certificat médical",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00010",
+                    "le recueil des déclarations ne dépend jamais d’un certificat médical",
+                  ),
                 ),
                 const TextSpan(text: "."),
               ]),
@@ -136,17 +179,41 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // 1. Propos liminaires
           _ConditionCard(
-            title: "1 — Propos liminaires",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00011",
+              "1 — Propos liminaires",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le Grenelle « lutte contre les violences conjugales » (lancé le 3 septembre 2019) a conduit à renforcer "
-                "les dispositifs d’accueil, de prise en charge et de sécurisation des victimes. "
-                "La mission d’accueil du public a été professionnalisée (référents accueil, formation dédiée). "
-                "Des policiers spécialisés (GPF / unités de protection de la famille) sont formés à ce contentieux et s’appuient "
-                "sur les associations, ISC, psychologues et permanences locales.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00012",
+                      "Le Grenelle « lutte contre les violences conjugales » (lancé le 3 septembre 2019) a conduit à renforcer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00013",
+                      "les dispositifs d’accueil, de prise en charge et de sécurisation des victimes. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00014",
+                      "La mission d’accueil du public a été professionnalisée (référents accueil, formation dédiée). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00015",
+                      "Des policiers spécialisés (GPF / unités de protection de la famille) sont formés à ce contentieux et s’appuient ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00016",
+                      "sur les associations, ISC, psychologues et permanences locales.",
+                    ),
               ),
             ],
           ),
@@ -155,98 +222,234 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // 2. Prise en charge
           _ConditionCard(
-            title: "2 — La prise en charge des victimes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00017",
+              "2 — La prise en charge des victimes",
+            ),
             cardColor: cardBlue,
             accent: accentBlue,
             titleColor: textMain,
             children: [
-              const _SubTitle("2.1 Dans les services de police"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00018",
+                  "2.1 Dans les services de police",
+                ),
+              ),
 
-              const _SubTitle("2.1.1 Le TAC (Tableau Accueil-Confidentialité)"),
-              const _Paragraph(
-                "Dispositif visant à renforcer la confidentialité dès l’accueil : la victime indique une couleur correspondant "
-                "au motif de sa venue (ex. violences sexuelles / conjugales / intrafamiliales). "
-                "En cas de situation sensible, la prise en charge est priorisée de manière discrète.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00019",
+                  "2.1.1 Le TAC (Tableau Accueil-Confidentialité)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00020",
+                      "Dispositif visant à renforcer la confidentialité dès l’accueil : la victime indique une couleur correspondant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00021",
+                      "au motif de sa venue (ex. violences sexuelles / conjugales / intrafamiliales). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00022",
+                      "En cas de situation sensible, la prise en charge est priorisée de manière discrète.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Objectif : éviter l’exposition, préserver la discrétion, déclencher une prise en compte prioritaire sans verbalisation publique.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00023",
+                  "Objectif : éviter l’exposition, préserver la discrétion, déclencher une prise en compte prioritaire sans verbalisation publique.",
+                ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("2.1.2 Le recueil des déclarations"),
-              const _Paragraph(
-                "Dès qu’elle est identifiée comme victime, la personne doit être reçue dans un lieu sécurisant et confidentiel. "
-                "Les personnels doivent faire preuve de discernement, neutralité, absence de jugement, et soutenir la démarche de plainte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00024",
+                  "2.1.2 Le recueil des déclarations",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00025",
+                      "Dès qu’elle est identifiée comme victime, la personne doit être reçue dans un lieu sécurisant et confidentiel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00026",
+                      "Les personnels doivent faire preuve de discernement, neutralité, absence de jugement, et soutenir la démarche de plainte.",
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _NotaBox(
-                title: "Règle",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00027",
+                  "Règle",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le recueil des déclarations ne doit en aucun cas être subordonné à la présentation préalable d’un certificat médical.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00028",
+                      "Le recueil des déclarations ne doit en aucun cas être subordonné à la présentation préalable d’un certificat médical.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Accompagnement : la victime peut être accompagnée par une personne majeure de son choix, ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00029",
+                    "Accompagnement : la victime peut être accompagnée par une personne majeure de son choix, ",
+                  ),
                 ),
-                _law("article 10-2 8° du Code de procédure pénale"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00030",
+                    "article 10-2 8° du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Domiciliation : possibilité de choisir l’adresse d’un tiers avec accord exprès, ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00031",
+                    "Domiciliation : possibilité de choisir l’adresse d’un tiers avec accord exprès, ",
+                  ),
                 ),
-                _law("article 10-2 9° du Code de procédure pénale"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                    "f00032",
+                    "article 10-2 9° du Code de procédure pénale",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("Principe : plainte ou audition"),
-              const _Paragraph(
-                "Le policier incite fortement la victime à déposer plainte ; à défaut, elle peut faire l’objet d’une audition. "
-                "La qualité de la première prise en charge conditionne la confiance, la suite procédurale et l’efficacité de l’enquête.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00033",
+                  "Principe : plainte ou audition",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00034",
+                      "Le policier incite fortement la victime à déposer plainte ; à défaut, elle peut faire l’objet d’une audition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00035",
+                      "La qualité de la première prise en charge conditionne la confiance, la suite procédurale et l’efficacité de l’enquête.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("Exception : MCI / mention / PV"),
-              const _Paragraph(
-                "La MCI n’est utilisée qu’en cas de refus explicite de plainte/audition et si aucun fait grave n’est révélé. "
-                "Le refus doit être mentionné. Si la victime souhaite partir après un recueil minimal, une mention détaillée est rédigée ; "
-                "si des faits graves sont révélés, un PV de saisine peut être établi.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00036",
+                  "Exception : MCI / mention / PV",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00037",
+                      "La MCI n’est utilisée qu’en cas de refus explicite de plainte/audition et si aucun fait grave n’est révélé. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00038",
+                      "Le refus doit être mentionné. Si la victime souhaite partir après un recueil minimal, une mention détaillée est rédigée ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00039",
+                      "si des faits graves sont révélés, un PV de saisine peut être établi.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("2.2 Prise de déclaration en milieu hospitalier"),
-              const _Paragraph(
-                "Des conventions permettent le dépôt de plainte à l’hôpital lorsque l’état de santé empêche le déplacement. "
-                "L’établissement doit garantir confort, dignité et confidentialité ; il met à disposition un local et les moyens nécessaires "
-                "en complément des outils numériques des enquêteurs.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00040",
+                  "2.2 Prise de déclaration en milieu hospitalier",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00041",
+                      "Des conventions permettent le dépôt de plainte à l’hôpital lorsque l’état de santé empêche le déplacement. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00042",
+                      "L’établissement doit garantir confort, dignité et confidentialité ; il met à disposition un local et les moyens nécessaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00043",
+                      "en complément des outils numériques des enquêteurs.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "2.3 Portail de signalement (violences sexuelles et sexistes)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00044",
+                  "2.3 Portail de signalement (violences sexuelles et sexistes)",
+                ),
               ),
-              const _Paragraph(
-                "Accessible 24h/24 – 7j/7 via service-public.fr : échange par tchat avec des policiers formés. "
-                "Quand des éléments pénaux existent, un signalement est rédigé et transmis au CIC pour prise de contact par le service compétent. "
-                "En cas d’urgence, l’intervention est déclenchée sans délai (victime identifiée ou via localisation IP).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00045",
+                      "Accessible 24h/24 – 7j/7 via service-public.fr : échange par tchat avec des policiers formés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00046",
+                      "Quand des éléments pénaux existent, un signalement est rédigé et transmis au CIC pour prise de contact par le service compétent. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00047",
+                      "En cas d’urgence, l’intervention est déclenchée sans délai (victime identifiée ou via localisation IP).",
+                    ),
               ),
             ],
           ),
@@ -255,44 +458,114 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // 3. Sécurisation
           _ConditionCard(
-            title: "3 — La sécurisation de la victime",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00048",
+              "3 — La sécurisation de la victime",
+            ),
             cardColor: cardGreen,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "3.1 Interventions « police-secours » au domicile",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00049",
+                  "3.1 Interventions « police-secours » au domicile",
+                ),
               ),
               _Paragraph(
-                "Toute sollicitation pour violences conjugales/intrafamiliales est traitée en priorité. "
-                "Les renseignements doivent être complets (présence d’armes, enfants, antécédents TAJ/MCI). "
-                "Les primo-intervenants agissent avec prudence : les faits exacts et les moyens utilisés ne sont pas toujours connus.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00050",
+                      "Toute sollicitation pour violences conjugales/intrafamiliales est traitée en priorité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00051",
+                      "Les renseignements doivent être complets (présence d’armes, enfants, antécédents TAJ/MCI). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00052",
+                      "Les primo-intervenants agissent avec prudence : les faits exacts et les moyens utilisés ne sont pas toujours connus.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Deux situations typiques"),
-              _BulletPoint(
-                text:
-                    "Traces/indices apparents : interpellation de l’auteur pour présentation OPJ, préservation traces/indices, relevé témoins, enquête de voisinage, incitation à plainte/audition, transport commissariat si possible.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00053",
+                  "Deux situations typiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Absence d’indices apparents : versions recueillies séparément, enquête de voisinage, doute → compte rendu à l’OPJ de permanence (consultation antécédents).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00054",
+                  "Traces/indices apparents : interpellation de l’auteur pour présentation OPJ, préservation traces/indices, relevé témoins, enquête de voisinage, incitation à plainte/audition, transport commissariat si possible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00055",
+                  "Absence d’indices apparents : versions recueillies séparément, enquête de voisinage, doute → compte rendu à l’OPJ de permanence (consultation antécédents).",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("3.2 Mise en sécurité"),
-              _SubTitle("A) Hébergement d’urgence"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00056",
+                  "3.2 Mise en sécurité",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00057",
+                  "A) Hébergement d’urgence",
+                ),
+              ),
               _Paragraph(
-                "Si la victime ne peut rester en sécurité au domicile : activation des dispositifs locaux (nuitées d’hôtel, 115). "
-                "En cas d’indisponibilité du 115, consultation d’outils de géolocalisation des places d’hébergement d’urgence. "
-                "Transport possible par équipage selon contraintes opérationnelles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00058",
+                      "Si la victime ne peut rester en sécurité au domicile : activation des dispositifs locaux (nuitées d’hôtel, 115). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00059",
+                      "En cas d’indisponibilité du 115, consultation d’outils de géolocalisation des places d’hébergement d’urgence. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00060",
+                      "Transport possible par équipage selon contraintes opérationnelles.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Récupération sécurisée d’effets personnels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00061",
+                  "B) Récupération sécurisée d’effets personnels",
+                ),
+              ),
               _Paragraph(
-                "Si la victime craint pour sa sécurité pour récupérer des effets personnels incontestables, "
-                "elle peut solliciter l’assistance des policiers selon la disponibilité opérationnelle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00062",
+                      "Si la victime craint pour sa sécurité pour récupérer des effets personnels incontestables, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00063",
+                      "elle peut solliciter l’assistance des policiers selon la disponibilité opérationnelle.",
+                    ),
               ),
             ],
           ),
@@ -301,111 +574,257 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // 4. Traitement procédure
           _ConditionCard(
-            title: "4 — Le traitement de la procédure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00064",
+              "4 — Le traitement de la procédure",
+            ),
             cardColor: cardAmber,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "4.1 Actes à réaliser lors de la prise de plainte",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00065",
+                  "4.1 Actes à réaliser lors de la prise de plainte",
+                ),
               ),
 
-              _SubTitle("4.1.1 Évaluation du danger"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00066",
+                  "4.1.1 Évaluation du danger",
+                ),
+              ),
               _Paragraph(
-                "À l’occasion d’une plainte, audition ou déclaration MCI, l’évaluation du danger est réalisée via une grille dédiée "
-                "(23 questions). Elle doit être complétée par le policier après questionnement : la remettre à la victime pour qu’elle la remplisse seule est proscrit.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00067",
+                      "À l’occasion d’une plainte, audition ou déclaration MCI, l’évaluation du danger est réalisée via une grille dédiée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00068",
+                      "(23 questions). Elle doit être complétée par le policier après questionnement : la remettre à la victime pour qu’elle la remplisse seule est proscrit.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La grille complétée est jointe à la procédure (ou à la MCI) et transmise au parquet avec la plainte/audition (ou déclaration).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00069",
+                      "La grille complétée est jointe à la procédure (ou à la MCI) et transmise au parquet avec la plainte/audition (ou déclaration).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Danger caractérisé si : au moins 2 réponses « rouges » positives OU 12 réponses positives (toutes couleurs).",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("4.1.2 Consultation des fichiers (systématique)"),
-              _Paragraph(
-                "Les consultations permettent d’éclairer l’OPJ et l’autorité judiciaire, surtout quand une situation à risque est identifiée.",
-              ),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text: "TAJ (traitement des antécédents judiciaires)",
-              ),
-              _BulletPoint(text: "MCI (main courante informatisée)"),
-              _BulletPoint(
-                text: "FPR (fichier des personnes recherchées)",
-              ),
-              _BulletPoint(text: "LRPPN (base locale procédures)"),
-              _BulletPoint(text: "AGRIPPA (armes déclarées)"),
-
-              SizedBox(height: 14),
-
-              _SubTitle("4.1.3 Avis systématique hiérarchie + parquet"),
-              _Paragraph(
-                "Plainte/audition/MCI : avis parquet après avis hiérarchique, avec grille danger. "
-                "Les situations dangereuses font l’objet d’un avis téléphonique systématique au parquet.",
-              ),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text:
-                    "Exemples (non exhaustifs) : antécédents violences conjugales, rupture envisagée, conflit garde/enfants, grossesse, accès possible à arme à feu.",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("4.1.4 Réquisition examen médical"),
-              _Paragraph(
-                "Si enquête ouverte : prise de rendez-vous UMJ et remise d’une réquisition pour descriptif lésions + retentissement psychologique.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00070",
+                  "Danger caractérisé si : au moins 2 réponses « rouges » positives OU 12 réponses positives (toutes couleurs).",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "4.1.5 Saisie des armes (systématique dès la première plainte)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00071",
+                  "4.1.2 Consultation des fichiers (systématique)",
+                ),
               ),
               _Paragraph(
-                "La recherche et saisie d’armes en possession de l’auteur est un axe majeur, notamment en perquisition. "
-                "La consultation AGRIPPA est un préalable utile à l’interpellation et à la perquisition.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00072",
+                  "Les consultations permettent d’éclairer l’OPJ et l’autorité judiciaire, surtout quand une situation à risque est identifiée.",
+                ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00073",
+                  "TAJ (traitement des antécédents judiciaires)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00074",
+                  "MCI (main courante informatisée)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00075",
+                  "FPR (fichier des personnes recherchées)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00076",
+                  "LRPPN (base locale procédures)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00077",
+                  "AGRIPPA (armes déclarées)",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "4.2 Document d’information aux victimes (systématique)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00078",
+                  "4.1.3 Avis systématique hiérarchie + parquet",
+                ),
               ),
               _Paragraph(
-                "Remise d’un document (A4 ou carte de visite) avec coordonnées locales : ISC, psychologues, associations. "
-                "Remise possible au commissariat, à l’hôpital, et lors d’intervention à domicile si cela peut être fait discrètement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00079",
+                      "Plainte/audition/MCI : avis parquet après avis hiérarchique, avec grille danger. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00080",
+                      "Les situations dangereuses font l’objet d’un avis téléphonique systématique au parquet.",
+                    ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00081",
+                  "Exemples (non exhaustifs) : antécédents violences conjugales, rupture envisagée, conflit garde/enfants, grossesse, accès possible à arme à feu.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("4.3 Priorisation des procédures"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00082",
+                  "4.1.4 Réquisition examen médical",
+                ),
+              ),
               _Paragraph(
-                "Les situations dangereuses sont traitées en priorité. La hiérarchie distingue les dossiers à traiter immédiatement, "
-                "précise les diligences et contrôle l’exécution.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00083",
+                  "Si enquête ouverte : prise de rendez-vous UMJ et remise d’une réquisition pour descriptif lésions + retentissement psychologique.",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00084",
+                  "4.1.5 Saisie des armes (systématique dès la première plainte)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00085",
+                      "La recherche et saisie d’armes en possession de l’auteur est un axe majeur, notamment en perquisition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00086",
+                      "La consultation AGRIPPA est un préalable utile à l’interpellation et à la perquisition.",
+                    ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00087",
+                  "4.2 Document d’information aux victimes (systématique)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00088",
+                      "Remise d’un document (A4 ou carte de visite) avec coordonnées locales : ISC, psychologues, associations. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00089",
+                      "Remise possible au commissariat, à l’hôpital, et lors d’intervention à domicile si cela peut être fait discrètement.",
+                    ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00090",
+                  "4.3 Priorisation des procédures",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00091",
+                      "Les situations dangereuses sont traitées en priorité. La hiérarchie distingue les dossiers à traiter immédiatement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00092",
+                      "précise les diligences et contrôle l’exécution.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Localisation/interpellation auteur (initiative ou parquet)",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00093",
+                  "Localisation/interpellation auteur (initiative ou parquet)",
+                ),
               ),
               _BulletPoint(
-                text: "Consultations fichiers (TAJ/MCI/FPR/LRPPN/AGRIPPA)",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00094",
+                  "Consultations fichiers (TAJ/MCI/FPR/LRPPN/AGRIPPA)",
+                ),
               ),
-              _BulletPoint(text: "Perquisition + recherche/saisie armes"),
               _BulletPoint(
-                text: "Propositions de protection (BAR, TGD) si nécessaire",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00095",
+                  "Perquisition + recherche/saisie armes",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00096",
+                  "Propositions de protection (BAR, TGD) si nécessaire",
+                ),
               ),
             ],
           ),
@@ -414,37 +833,83 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // 5. Dispositifs judiciaires
           _ConditionCard(
-            title: "5 — Dispositifs judiciaires de protection",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00097",
+              "5 — Dispositifs judiciaires de protection",
+            ),
             cardColor: cardPink,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("5.1 Bracelet anti-rapprochement (BAR)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00098",
+                  "5.1 Bracelet anti-rapprochement (BAR)",
+                ),
+              ),
               _Paragraph(
-                "La victime est informée qu’elle peut demander ce dispositif. Il peut être mis en place dans une procédure pénale "
-                "(avant ou après jugement) ou civile (ordonnance de protection). L’autorité judiciaire fixe des zones "
-                "(protection / pré-alerte / alerte) et inscription FPR.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00099",
+                      "La victime est informée qu’elle peut demander ce dispositif. Il peut être mis en place dans une procédure pénale ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00100",
+                      "(avant ou après jugement) ou civile (ordonnance de protection). L’autorité judiciaire fixe des zones ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00101",
+                      "(protection / pré-alerte / alerte) et inscription FPR.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Si l’auteur entre dans la zone : conseils de mise en sûreté + avis CIC → déclenchement intervention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00102",
+                  "Si l’auteur entre dans la zone : conseils de mise en sûreté + avis CIC → déclenchement intervention.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Priorité opérationnelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00103",
+                  "Priorité opérationnelle",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Protéger la victime : elle est mise en sûreté dès qu’elle est protégée par l’équipage ou que l’auteur est sorti des zones.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00104",
+                  "Protéger la victime : elle est mise en sûreté dès qu’elle est protégée par l’équipage ou que l’auteur est sorti des zones.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "5.2 Ordonnance de protection (JAF) & saisie des armes",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00105",
+                  "5.2 Ordonnance de protection (JAF) & saisie des armes",
+                ),
               ),
               _Paragraph(
-                "Après ordonnance de protection interdisant port/détention d’armes : notification rapide, convocation sous 1 jour ouvré, "
-                "accompagnement domicile pour remise. En cas de refus/carence : ouverture enquête pour violation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00106",
+                      "Après ordonnance de protection interdisant port/détention d’armes : notification rapide, convocation sous 1 jour ouvré, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00107",
+                      "accompagnement domicile pour remise. En cas de refus/carence : ouverture enquête pour violation.",
+                    ),
               ),
             ],
           ),
@@ -453,22 +918,58 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // 6. Partenariat & coordination
           _ConditionCard(
-            title: "6 — Partenariat & coordination des acteurs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00108",
+              "6 — Partenariat & coordination des acteurs",
+            ),
             cardColor: cardBlue,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("6.1 Officier référent & coordination parquet"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00109",
+                  "6.1 Officier référent & coordination parquet",
+                ),
+              ),
               _Paragraph(
-                "Un officier référent « violences intrafamiliales » est désigné. Il contrôle l’application des instructions, "
-                "le suivi des portefeuilles, la qualité des investigations et les délais. "
-                "La coordination vise une circulation fiable de l’information et une réponse cohérente avec les partenaires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00110",
+                      "Un officier référent « violences intrafamiliales » est désigné. Il contrôle l’application des instructions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00111",
+                      "le suivi des portefeuilles, la qualité des investigations et les délais. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00112",
+                      "La coordination vise une circulation fiable de l’information et une réponse cohérente avec les partenaires.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("6.2 Participation aux instances locales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00113",
+                  "6.2 Participation aux instances locales",
+                ),
+              ),
               _Paragraph(
-                "Participation aux instances de coordination stratégique (co-présidées préfet/procureur) et opérationnelle "
-                "(pilotage parquet) afin d’assurer un suivi individuel des situations.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00114",
+                      "Participation aux instances de coordination stratégique (co-présidées préfet/procureur) et opérationnelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00115",
+                      "(pilotage parquet) afin d’assurer un suivi individuel des situations.",
+                    ),
               ),
             ],
           ),
@@ -477,15 +978,31 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // 7. Formation
           _ConditionCard(
-            title: "7 — Formation des policiers",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00116",
+              "7 — Formation des policiers",
+            ),
             cardColor: cardGreen,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Un parcours renforcé est proposé aux primo-accueillants (emprise, évaluation danger, interventions domicile). "
-                "Les chefs de service veillent à l’accès à ces formations et à la prise en compte par les généralistes comme les spécialisés. "
-                "Des formations interprofessionnelles magistrats/enquêteurs renforcent l’efficacité et l’alignement des pratiques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00117",
+                      "Un parcours renforcé est proposé aux primo-accueillants (emprise, évaluation danger, interventions domicile). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00118",
+                      "Les chefs de service veillent à l’accès à ces formations et à la prise en compte par les généralistes comme les spécialisés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00119",
+                      "Des formations interprofessionnelles magistrats/enquêteurs renforcent l’efficacité et l’alignement des pratiques.",
+                    ),
               ),
             ],
           ),
@@ -494,44 +1011,81 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
 
           // Mémo ultra opérationnel (pédagogique)
           _ConditionCard(
-            title:
-                "Mémo opérationnel — Accueil d’une victime de violences conjugales",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+              "f00120",
+              "Mémo opérationnel — Accueil d’une victime de violences conjugales",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Objectif"),
               _Paragraph(
-                "Un traitement procédural de qualité ne peut fonctionner que si la victime bénéficie d’un accueil adapté. "
-                "La réussite de l’enquête dépend fortement de la qualité de cette première prise en charge.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00121",
+                      "Un traitement procédural de qualité ne peut fonctionner que si la victime bénéficie d’un accueil adapté. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00122",
+                      "La réussite de l’enquête dépend fortement de la qualité de cette première prise en charge.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Les 3 réflexes à appliquer"),
-              _IntroBullet(
-                text:
-                    "1) Accueillir sans délai, sans condition (pas de pièce d’identité, pas de certificat médical, hors ressort, etc.).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00123",
+                  "Les 3 réflexes à appliquer",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "2) Mettre la victime à l’abri (confidentialité), limiter l’attente et éviter la multiplication d’intervenants.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00124",
+                  "1) Accueillir sans délai, sans condition (pas de pièce d’identité, pas de certificat médical, hors ressort, etc.).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "3) Orienter vers un enquêteur référent (GPF) si possible, et remettre le document d’information victimes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00125",
+                  "2) Mettre la victime à l’abri (confidentialité), limiter l’attente et éviter la multiplication d’intervenants.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00126",
+                  "3) Orienter vers un enquêteur référent (GPF) si possible, et remettre le document d’information victimes.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Droits des victimes",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                  "f00127",
+                  "Droits des victimes",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ils doivent être expliqués dès le début (information, accompagnement, interprète, évaluation). Références : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00128",
+                      "Ils doivent être expliqués dès le début (information, accompagnement, interprète, évaluation). Références : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "articles 10-2 à 10-5 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart",
+                      "f00129",
+                      "articles 10-2 à 10-5 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaJuridictionContenuPage extends StatelessWidget {
   const PaJuridictionContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaJuridictionContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaJuridictionContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Les juridictions pénales',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+            "f00002",
+            'Les juridictions pénales',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -40,7 +51,11 @@ class PaJuridictionContenuPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Les juridictions pénales',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00003",
+              'Les juridictions pénales',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,7 +66,11 @@ class PaJuridictionContenuPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           Text(
-            'Les principes généraux des juridictions pénales et l’exécution des décisions de justice.',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00004",
+              'Les principes généraux des juridictions pénales et l’exécution des décisions de justice.',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +84,16 @@ class PaJuridictionContenuPage extends StatelessWidget {
           // ============ MODULE 1 — PRINCIPES GÉNÉRAUX ======================
           _ModuleCard(
             tag: 'pp_juridictions_principes_generaux',
-            title: 'Les principes généraux',
-            subtitle:
-                'Organisation des juridictions pénales, compétences, voies de recours et grands principes directeurs de la justice pénale.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00005",
+              'Les principes généraux',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00006",
+              'Organisation des juridictions pénales, compétences, voies de recours et grands principes directeurs de la justice pénale.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,9 +107,16 @@ class PaJuridictionContenuPage extends StatelessWidget {
           // ===== MODULE 2 — EXÉCUTION DES DÉCISIONS DE JUSTICE =============
           _ModuleCard(
             tag: 'pp_execution_decisions_justice',
-            title: 'L’exécution des décisions de justice',
-            subtitle:
-                'Mise à exécution des peines, rôle du parquet et du juge de l’application des peines, incidents et aménagements de peine.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00007",
+              'L’exécution des décisions de justice',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00008",
+              'Mise à exécution des peines, rôle du parquet et du juge de l’application des peines, incidents et aménagements de peine.',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -97,9 +130,16 @@ class PaJuridictionContenuPage extends StatelessWidget {
           // ===== MODULE 3 — LES JURIDICTIONS PENALES =============
           _ModuleCard(
             tag: 'pp_juridictions_penales',
-            title: 'Les juridictions pénales',
-            subtitle:
-                'Comprendre les juridictions pénales et le fonctionnement',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00009",
+              'Les juridictions pénales',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00010",
+              'Comprendre les juridictions pénales et le fonctionnement',
+            ),
             imagePath: 'assets/images/action_justice.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -113,9 +153,16 @@ class PaJuridictionContenuPage extends StatelessWidget {
           // ================= MODULE 4 — QUIZ =================
           _ModuleCard(
             tag: 'quiz_juridictions_penales',
-            title: 'Quiz — Juridictions pénales',
-            subtitle:
-                'Testez vos connaissances sur les principes généraux et l’exécution des décisions de justice.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00011",
+              'Quiz — Juridictions pénales',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart",
+              "f00012",
+              'Testez vos connaissances sur les principes généraux et l’exécution des décisions de justice.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -172,7 +219,7 @@ class _ModuleCard extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        height: 200,
+        height: ScolariteText.adaptiveCardHeight(context, cardCount: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: Colors.transparent,

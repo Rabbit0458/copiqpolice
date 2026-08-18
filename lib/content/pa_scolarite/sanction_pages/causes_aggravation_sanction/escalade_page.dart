@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEscaladePage extends StatelessWidget {
   const PaEscaladePage({super.key});
@@ -44,7 +45,11 @@ class PaEscaladePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "L'escalade",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+            "f00001",
+            "L'escalade",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,21 +75,24 @@ class PaEscaladePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "L'escalade est le fait de s'introduire dans un lieu quelconque, soit par-dessus un élément de clôture, soit par toute ouverture non destinée à servir d'entrée.",
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00002",
+                        "L'escalade est le fait de s'introduire dans un lieu quelconque, soit par-dessus un élément de clôture, soit par toute ouverture non destinée à servir d'entrée.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w800),
                     ),
                     TextSpan(text: " »"),
@@ -94,21 +102,38 @@ class PaEscaladePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      law("L'article 132-74 du C.P."),
-                      const TextSpan(
-                        text:
-                            " définit l'escalade. Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                          "f00004",
+                          "L'article 132-74 du C.P.",
+                        ),
+                      ),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                          "f00005",
+                          " définit l'escalade. Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                        ),
                       ),
                     ]),
                     const SizedBox(height: 10),
-                    const _Paragraph(
-                      "Comme l'effraction, c'est le fait d'utiliser un moyen illicite pour pénétrer dans un lieu clos. La nature du moyen diffère de celui utilisé pour l'effraction. Il s'agit ici du franchissement d'une clôture ou de l'entrée par une issue non prévue à cet effet.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00006",
+                        "Comme l'effraction, c'est le fait d'utiliser un moyen illicite pour pénétrer dans un lieu clos. La nature du moyen diffère de celui utilisé pour l'effraction. Il s'agit ici du franchissement d'une clôture ou de l'entrée par une issue non prévue à cet effet.",
+                      ),
                     ),
                   ],
                 ),
@@ -116,32 +141,74 @@ class PaEscaladePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                    "f00007",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
-                    _SubTitle('2.1 - Un endroit clos'),
+                  children: [
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00008",
+                        '2.1 - Un endroit clos',
+                      ),
+                    ),
                     _Paragraph(
-                      "Il s'agit d'un endroit quelconque dont l'accès est normalement interdit aux tiers par une clôture (haie, mur, porte, portail, toiture, etc....).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00009",
+                        "Il s'agit d'un endroit quelconque dont l'accès est normalement interdit aux tiers par une clôture (haie, mur, porte, portail, toiture, etc....).",
+                      ),
                     ),
                     SizedBox(height: 10),
-                    _SubTitle("2.2 - L'usage d'un moyen"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00010",
+                        "2.2 - L'usage d'un moyen",
+                      ),
+                    ),
                     _Paragraph(
-                      "Le moyen utilisé importe peu. Il peut s'agir d'un moyen prévu et organisé par l'auteur, trouvé par hasard ou improvisé (une échelle, un échafaudage, une corde, un grappin, etc.).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00011",
+                        "Le moyen utilisé importe peu. Il peut s'agir d'un moyen prévu et organisé par l'auteur, trouvé par hasard ou improvisé (une échelle, un échafaudage, une corde, un grappin, etc.).",
+                      ),
                     ),
                     SizedBox(height: 8),
                     _Paragraph(
-                      "Il en va de même pour toute intrusion par une issue n'étant pas de nature à servir d'entrée (fenêtre, soupirail, tunnel, etc....).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00012",
+                        "Il en va de même pour toute intrusion par une issue n'étant pas de nature à servir d'entrée (fenêtre, soupirail, tunnel, etc....).",
+                      ),
                     ),
                     SizedBox(height: 10),
-                    _SubTitle('2.3 - Le but poursuivi'),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00013",
+                        '2.3 - Le but poursuivi',
+                      ),
+                    ),
                     _Paragraph(
-                      "La circonstance d'escalade ne peut être réalisée que de l'extérieur vers l'intérieur comme précise le texte : « L'escalade est le fait de s'introduire... ».",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00014",
+                        "La circonstance d'escalade ne peut être réalisée que de l'extérieur vers l'intérieur comme précise le texte : « L'escalade est le fait de s'introduire... ».",
+                      ),
                     ),
                     SizedBox(height: 8),
                     _Paragraph(
-                      "L'escalade aggrave la peine encourue par son auteur lorsqu'elle accompagne une infraction commise ou tentée pour laquelle la loi qui la réprime le prévoit.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00015",
+                        "L'escalade aggrave la peine encourue par son auteur lorsqu'elle accompagne une infraction commise ou tentée pour laquelle la loi qui la réprime le prévoit.",
+                      ),
                     ),
                   ],
                 ),
@@ -149,34 +216,76 @@ class PaEscaladePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                    "f00016",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "Le code pénal prévoit que la circonstance de commission par escalade est susceptible d'aggraver les infractions suivantes :",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00017",
+                        "Le code pénal prévoit que la circonstance de commission par escalade est susceptible d'aggraver les infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
-                    const _BulletPoint(text: "Le vol (article 311-5, 3° C.P.)."),
-                    const _BulletPoint(
-                      text:
-                          "Les destructions, dégradations, détériorations (article 322-3, 5° C.P.).",
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00018",
+                        "Le vol (article 311-5, 3° C.P.).",
+                      ),
+                    ),
+                    _BulletPoint(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00019",
+                        "Les destructions, dégradations, détériorations (article 322-3, 5° C.P.).",
+                      ),
                     ),
                     const SizedBox(height: 8),
                     // Version "parfaite" : on colore précisément les références
                     _NotaBox(
-                      title: 'Références',
+                      title: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                        "f00020",
+                        'Références',
+                      ),
                       bodySpans: [
                         const TextSpan(text: "• "),
-                        const TextSpan(text: "Vol : "),
-                        law("article 311-5, 3° du C.P."),
-                        const TextSpan(text: "\n• "),
-                        const TextSpan(
-                          text:
-                              "Destructions / dégradations / détériorations : ",
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                            "f00021",
+                            "Vol : ",
+                          ),
                         ),
-                        law("article 322-3, 5° du C.P."),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                            "f00022",
+                            "article 311-5, 3° du C.P.",
+                          ),
+                        ),
+                        const TextSpan(text: "\n• "),
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                            "f00023",
+                            "Destructions / dégradations / détériorations : ",
+                          ),
+                        ),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart",
+                            "f00024",
+                            "article 322-3, 5° du C.P.",
+                          ),
+                        ),
                       ],
                     ),
                   ],

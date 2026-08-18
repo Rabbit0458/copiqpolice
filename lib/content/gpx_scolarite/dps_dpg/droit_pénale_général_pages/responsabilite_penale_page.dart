@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/droit_pénale_général_pages/responsabilite_penale_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : Droit pénal général — De la responsabilité pénale
 /// Route alignée avec la config centrale : /gpx/dpg/responsabilite_penale
@@ -17,15 +18,32 @@ class ResponsabilitePenalePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            badge: 'Droit pénal général',
-            title: 'De la responsabilité pénale',
-            subtitle:
-                'Auteurs & complices · Élément moral · Causes d’irresponsabilité',
+            badge: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+              "f00001",
+              'Droit pénal général',
+            ),
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+              "f00002",
+              'De la responsabilité pénale',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+              "f00003",
+              'Auteurs & complices · Élément moral · Causes d’irresponsabilité',
+            ),
             image: 'assets/images/droit_penal_general.jpeg',
             onPrimaryTap: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Panorama responsabilité pénale 👌'),
+                SnackBar(
+                  content: Text(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                      "f00004",
+                      'Panorama responsabilité pénale 👌',
+                    ),
+                  ),
                 ),
               );
             },
@@ -35,124 +53,253 @@ class ResponsabilitePenalePage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
+                _SectionCard(
                   title: 'Principes',
                   child: Text(
-                    'La responsabilité pénale suppose un fait prévu par la loi (élément légal), un comportement '
-                    'matériel (élément matériel) et un élément moral (intention/négligence). Elle peut être personnelle '
-                    'ou, dans certains cas, engagée à l’égard des personnes morales.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00005",
+                          'La responsabilité pénale suppose un fait prévu par la loi (élément légal), un comportement ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00006",
+                          'matériel (élément matériel) et un élément moral (intention/négligence). Elle peut être personnelle ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00007",
+                          'ou, dans certains cas, engagée à l’égard des personnes morales.',
+                        ),
                   ),
                 ),
 
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
-                    'Élément légal',
-                    'Élément matériel',
-                    'Élément moral',
-                    'Participation criminelle',
-                    'Irresponsabilités',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                      "f00008",
+                      'Élément légal',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                      "f00009",
+                      'Élément matériel',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                      "f00010",
+                      'Élément moral',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                      "f00011",
+                      'Participation criminelle',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                      "f00012",
+                      'Irresponsabilités',
+                    ),
                   ],
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '1) Auteurs & complices',
-                  caption:
-                      'Coauteur · Complicité par aide/assistance · Provocation/Instructions',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00013",
+                    '1) Auteurs & complices',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00014",
+                    'Coauteur · Complicité par aide/assistance · Provocation/Instructions',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Auteur/coauteur : exécution directe des éléments constitutifs.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00015",
+                          'Auteur/coauteur : exécution directe des éléments constitutifs.',
+                        ),
                       ),
                       _Bullet(
-                        'Complice : aide/assistance ou provocation/instructions, avec intention.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00016",
+                          'Complice : aide/assistance ou provocation/instructions, avec intention.',
+                        ),
                       ),
                       _Bullet(
-                        'Responsabilité autonome du complice si l’infraction principale est caractérisée.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00017",
+                          'Responsabilité autonome du complice si l’infraction principale est caractérisée.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '2) Élément moral',
-                  caption: 'Intention · Imprudence/Négligence',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00018",
+                    '2) Élément moral',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00019",
+                    'Intention · Imprudence/Négligence',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Infractions intentionnelles : volonté de commettre les faits prohibés.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00020",
+                          'Infractions intentionnelles : volonté de commettre les faits prohibés.',
+                        ),
                       ),
                       _Bullet(
-                        'Infractions non-intentionnelles : imprudence, négligence, manquement à une obligation.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00021",
+                          'Infractions non-intentionnelles : imprudence, négligence, manquement à une obligation.',
+                        ),
                       ),
                       _Bullet(
-                        'Dolos éventuels/acceptation du risque : appréciation au cas par cas (éléments objectifs).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00022",
+                          'Dolos éventuels/acceptation du risque : appréciation au cas par cas (éléments objectifs).',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '3) Tentative & faits justificatifs',
-                  caption:
-                      'Tentative punissable · Légitime défense · État de nécessité',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00023",
+                    '3) Tentative & faits justificatifs',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00024",
+                    'Tentative punissable · Légitime défense · État de nécessité',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Tentative : commencement d’exécution + absence de désistement volontaire.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00025",
+                          'Tentative : commencement d’exécution + absence de désistement volontaire.',
+                        ),
                       ),
                       _Bullet(
-                        'Faits justificatifs : légitime défense, ordre/autorisation de la loi, commandement de l’autorité légitime.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00026",
+                          'Faits justificatifs : légitime défense, ordre/autorisation de la loi, commandement de l’autorité légitime.',
+                        ),
                       ),
                       _Bullet(
-                        'État de nécessité : sauvegarde d’un intérêt supérieur, conditions strictes.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00027",
+                          'État de nécessité : sauvegarde d’un intérêt supérieur, conditions strictes.',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '4) Personnes morales',
-                  caption: 'Conditions & limites',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00028",
+                    '4) Personnes morales',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00029",
+                    'Conditions & limites',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Responsabilité pour les infractions commises pour leur compte par leurs organes/ représentants.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00030",
+                          'Responsabilité pour les infractions commises pour leur compte par leurs organes/ représentants.',
+                        ),
                       ),
                       _Bullet(
-                        'Cumul possible avec la responsabilité des personnes physiques (auteurs/complices).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00031",
+                          'Cumul possible avec la responsabilité des personnes physiques (auteurs/complices).',
+                        ),
                       ),
                       _Bullet(
-                        'Peines spécifiques : amendes, peines complémentaires (fermeture, interdictions…).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00032",
+                          'Peines spécifiques : amendes, peines complémentaires (fermeture, interdictions…).',
+                        ),
                       ),
                     ],
                   ),
                 ),
 
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: '5) Empêchements & irresponsabilités',
-                  caption:
-                      'Mineurs · Trouble mental · Erreur invincible · Contrainte',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00033",
+                    '5) Empêchements & irresponsabilités',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00034",
+                    'Mineurs · Trouble mental · Erreur invincible · Contrainte',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Mineurs : règles spécifiques d’irresponsabilité atténuée & mesures éducatives/peines adaptées.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00035",
+                          'Mineurs : règles spécifiques d’irresponsabilité atténuée & mesures éducatives/peines adaptées.',
+                        ),
                       ),
                       _Bullet(
-                        'Abolition du discernement : irresponsabilité ; altération : atténuation de responsabilité/peine.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00036",
+                          'Abolition du discernement : irresponsabilité ; altération : atténuation de responsabilité/peine.',
+                        ),
                       ),
                       _Bullet(
-                        'Erreur invincible/Contrainte : appréciation stricte, preuves circonstanciées.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00037",
+                          'Erreur invincible/Contrainte : appréciation stricte, preuves circonstanciées.',
+                        ),
                       ),
                     ],
                   ),
@@ -160,29 +307,56 @@ class ResponsabilitePenalePage extends StatelessWidget {
 
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00038",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'De la loi pénale',
-                  subtitle: 'Sources · Application · Interprétation',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00039",
+                    'De la loi pénale',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00040",
+                    'Sources · Application · Interprétation',
+                  ),
                   route: '/dpg/loi_penale',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'La sanction',
-                  subtitle: 'Classification des peines · Aggravations',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00041",
+                    'La sanction',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00042",
+                    'Classification des peines · Aggravations',
+                  ),
                   route: '/sanction',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Généralités',
-                  subtitle:
-                      'Infraction · Tentative · Complicité · Légitime défense',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00043",
+                    'Généralités',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                    "f00044",
+                    'Infraction · Tentative · Complicité · Légitime défense',
+                  ),
                   route: '/generalite',
                 ),
               ],
@@ -278,7 +452,13 @@ class _HeroHeader extends StatelessWidget {
                     ElevatedButton.icon(
                       onPressed: onPrimaryTap,
                       icon: const Icon(Icons.play_arrow_rounded),
-                      label: const Text('Découvrir'),
+                      label: Text(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/responsabilite_penale_page.dart",
+                          "f00045",
+                          'Découvrir',
+                        ),
+                      ),
                       style: ElevatedButton.styleFrom(
                         elevation: 0,
                         backgroundColor: Colors.white,

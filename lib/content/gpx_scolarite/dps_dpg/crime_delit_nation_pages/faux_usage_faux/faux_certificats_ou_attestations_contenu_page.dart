@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FauxCertificatsOuAttestationsPage extends StatelessWidget {
   const FauxCertificatsOuAttestationsPage({super.key});
@@ -59,10 +60,18 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Faux & usage de faux",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+            "f00002",
+            "Faux & usage de faux",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les faux certificats ou attestations",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+              "f00003",
+              "Les faux certificats ou attestations",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction est constituée par le fait d’établir une attestation ou un certificat faisant état de faits matériellement inexacts ; "
-                "de falsifier une attestation ou un certificat originairement sincère ; "
-                "ou de faire usage d’une attestation ou d’un certificat inexact ou falsifié.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00005",
+                      "L’infraction est constituée par le fait d’établir une attestation ou un certificat faisant état de faits matériellement inexacts ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00006",
+                      "de falsifier une attestation ou un certificat originairement sincère ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00007",
+                      "ou de faire usage d’une attestation ou d’un certificat inexact ou falsifié.",
+                    ),
               ),
             ],
           ),
@@ -106,19 +135,30 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00009",
+                    "Article 441-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’établissement et l’usage de faux certificats ou attestations.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime l’établissement et l’usage de faux certificats ou attestations.",
+                  ),
                 ),
               ]),
             ],
@@ -128,69 +168,120 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Un certificat ou une attestation"),
-              const _Paragraph(
-                "La jurisprudence vise toute déclaration écrite, quelle que soit sa forme, faite en faveur d’autrui dans un but probatoire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00012",
+                  "A) Un certificat ou une attestation",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00013",
+                  "La jurisprudence vise toute déclaration écrite, quelle que soit sa forme, faite en faveur d’autrui dans un but probatoire.",
+                ),
               ),
               const SizedBox(height: 10),
               _ConditionCard(
-                title: "Repères utiles",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00014",
+                  "Repères utiles",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF1E232A)
                     : const Color(0xFFF3F4F6),
                 accent: accentGrey,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _IntroBullet(
-                    text:
-                        "Le certificat concerne en général une personne : qualité, état de santé, situation professionnelle, familiale, sociale, etc.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00015",
+                      "Le certificat concerne en général une personne : qualité, état de santé, situation professionnelle, familiale, sociale, etc.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "L’attestation porte sur des faits, événements ou circonstances quelconques.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00016",
+                      "L’attestation porte sur des faits, événements ou circonstances quelconques.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Seul l’écrit est pris en compte"),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00017",
+                  "B) Seul l’écrit est pris en compte",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La seule fourniture de renseignements oraux, même inexacts, ne constitue pas l’établissement d’attestations ou de certificats inexacts ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00018",
+                    "La seule fourniture de renseignements oraux, même inexacts, ne constitue pas l’établissement d’attestations ou de certificats inexacts ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 21 février 1985)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00019",
+                    "(Cass. crim., 21 février 1985)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exemples admis : une simple lettre / déclaration écrite sur les circonstances d’un accident ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00020",
+                      "Exemples admis : une simple lettre / déclaration écrite sur les circonstances d’un accident ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 30 janvier 1962)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00021",
+                      "(Cass. crim., 30 janvier 1962)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " ; un certificat d’immatriculation provisoire délivré par un garagiste ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00022",
+                      " ; un certificat d’immatriculation provisoire délivré par un garagiste ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 14 février 1973)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00023",
+                      "(Cass. crim., 14 février 1973)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -202,20 +293,42 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              const _SubTitle("C) Conditions dégagées par la jurisprudence"),
-              const _BulletPoint(
-                text:
-                    "Le document doit comporter la signature authentique de son auteur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00024",
+                  "C) Conditions dégagées par la jurisprudence",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Il doit être établi au profit d’un tiers (pas une attestation sur l’honneur rédigée pour soi-même).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00025",
+                  "Le document doit comporter la signature authentique de son auteur.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00026",
+                  "Il doit être établi au profit d’un tiers (pas une attestation sur l’honneur rédigée pour soi-même).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
-                TextSpan(text: "Signature authentique exigée "),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "(Cass. crim., 15 mars 2000)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00027",
+                    "Signature authentique exigée ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00028",
+                    "(Cass. crim., 15 mars 2000)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -223,42 +336,99 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle("D) Les comportements incriminés"),
-              const _Paragraph.rich([
-                TextSpan(text: "L’"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00029",
+                  "D) Les comportements incriminés",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article 441-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00030",
+                    "L’",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00031",
+                    "article 441-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " incrimine plusieurs comportements :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00032",
+                    " incrimine plusieurs comportements :",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
 
-              const _SubTitle("1) Établir un écrit matériellement inexact"),
-              const _Paragraph(
-                "L’établissement correspond à la rédaction du document et à sa signature. "
-                "L’infraction est constituée par le simple établissement, indépendamment de l’usage ultérieur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00033",
+                  "1) Établir un écrit matériellement inexact",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00034",
+                      "L’établissement correspond à la rédaction du document et à sa signature. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00035",
+                      "L’infraction est constituée par le simple établissement, indépendamment de l’usage ultérieur.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Les « faits matériellement inexacts » renvoient à des éléments objectifs, susceptibles de vérification, de constatation ou de preuve contraire.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00036",
+                  "Les « faits matériellement inexacts » renvoient à des éléments objectifs, susceptibles de vérification, de constatation ou de preuve contraire.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("2) Falsifier un écrit sincère à l’origine"),
-              const _Paragraph(
-                "Le délit est consommé par une altération de la vérité dans le document initialement sincère.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00037",
+                  "2) Falsifier un écrit sincère à l’origine",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00038",
+                  "Le délit est consommé par une altération de la vérité dans le document initialement sincère.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : surcharge de la date de validité provisoire du certificat d’immatriculation ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00039",
+                      "Jurisprudence : surcharge de la date de validité provisoire du certificat d’immatriculation ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 14 février 1973)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00040",
+                      "(Cass. crim., 14 février 1973)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -266,11 +436,18 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "Jurisprudence : modification du résultat d’une analyse de sang sur un certificat délivré ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00041",
+                      "Jurisprudence : modification du résultat d’une analyse de sang sur un certificat délivré ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Rouen, 22 septembre 1999)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00042",
+                      "(C.A. Rouen, 22 septembre 1999)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -282,19 +459,36 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              const _SubTitle("3) Faire usage d’un écrit inexact ou falsifié"),
-              const _Paragraph(
-                "L’usage suppose au préalable l’existence d’un faux : soit un établissement matériellement inexact, soit une falsification d’un document sincère.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00043",
+                  "3) Faire usage d’un écrit inexact ou falsifié",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00044",
+                  "L’usage suppose au préalable l’existence d’un faux : soit un établissement matériellement inexact, soit une falsification d’un document sincère.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : attestation produite dans une procédure de divorce relatant faussement des violences ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00045",
+                      "Jurisprudence : attestation produite dans une procédure de divorce relatant faussement des violences ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 31 janvier 2007)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00046",
+                      "(Cass. crim., 31 janvier 2007)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -310,20 +504,48 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+              "f00047",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance de l’inexactitude"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00048",
+                  "A) Connaissance de l’inexactitude",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir connaissance de l’inexactitude des faits certifiés. "
-                "Peu importe qu’il n’ait pas prévu l’usage qu’un tiers ferait de l’attestation mensongère.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00049",
+                      "L’auteur doit avoir connaissance de l’inexactitude des faits certifiés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00050",
+                      "Peu importe qu’il n’ait pas prévu l’usage qu’un tiers ferait de l’attestation mensongère.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) En cas d’usage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00051",
+                  "B) En cas d’usage",
+                ),
+              ),
               _Paragraph(
-                "Dans le cadre de l’usage, l’infraction suppose la volonté d’user du document.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00052",
+                  "Dans le cadre de l’usage, l’infraction suppose la volonté d’user du document.",
+                ),
               ),
             ],
           ),
@@ -332,44 +554,74 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+              "f00053",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 441-7 alinéa 5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00054",
+                    "Article 441-7 alinéa 5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " : lorsque l’infraction est commise :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00055",
+                    " : lorsque l’infraction est commise :",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Soit en vue de porter préjudice au Trésor public ou au patrimoine d’autrui.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00056",
+                  "Soit en vue de porter préjudice au Trésor public ou au patrimoine d’autrui.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Soit en vue d’obtenir un titre de séjour ou le bénéfice d’une protection contre l’éloignement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00057",
+                  "Soit en vue d’obtenir un titre de séjour ou le bénéfice d’une protection contre l’éloignement.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : employeur faisant établir par des salariés de fausses attestations produites en procédure prud’homale ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00058",
+                      "Jurisprudence : employeur faisant établir par des salariés de fausses attestations produites en procédure prud’homale ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 26 septembre 2001)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00059",
+                      "(Cass. crim., 26 septembre 2001)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " — la circonstance aggravante n’était pas retenue au stade de l’établissement, mais applicable à l’usage.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                      "f00060",
+                      " — la circonstance aggravante n’était pas retenue au stade de l’établissement, mais applicable à l’usage.",
+                    ),
                   ),
                 ],
               ),
@@ -380,41 +632,95 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+              "f00061",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00062",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00063",
+                    "Simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 441-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00064",
+                    "1 an d’emprisonnement et 15 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00065",
+                    "article 441-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (alinéa 5) : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00066",
+                    "Aggravée (alinéa 5) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 441-7 alinéa 5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00067",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00068",
+                    "article 441-7 alinéa 5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00069",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 441-12 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00070",
+                    "Responsabilité pénale prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00071",
+                    "l’article 441-12 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -422,21 +728,44 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00072",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 441-9 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00073",
+                    "Tentative : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00074",
+                    "article 441-9 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (prévoit expressément la tentative des délits, dont ceux visés à l’article 441-7).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                    "f00075",
+                    " (prévoit expressément la tentative des délits, dont ceux visés à l’article 441-7).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Complicité : OUI (règles générales de la complicité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart",
+                  "f00076",
+                  "Complicité : OUI (règles générales de la complicité).",
+                ),
               ),
             ],
           ),
@@ -692,9 +1021,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

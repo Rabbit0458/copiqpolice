@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuteurAscendantVictimePage extends StatelessWidget {
   const AuteurAscendantVictimePage({super.key});
@@ -44,7 +45,11 @@ class AuteurAscendantVictimePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Auteur ascendant / autorité sur la victime",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+            "f00001",
+            "Auteur ascendant / autorité sur la victime",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,21 +75,24 @@ class AuteurAscendantVictimePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Par un ascendant légitime, naturel ou adoptif, ou par toute autre personne ayant autorité sur la victime.",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00002",
+                        "Par un ascendant légitime, naturel ou adoptif, ou par toute autre personne ayant autorité sur la victime.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,17 +102,29 @@ class AuteurAscendantVictimePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante vise le plus souvent des infractions à caractère sexuel. Elle concerne les auteurs d'infractions ayant une autorité particulière sur leur victime en raison de leur situation personnelle.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00004",
+                        "Cette circonstance aggravante vise le plus souvent des infractions à caractère sexuel. Elle concerne les auteurs d'infractions ayant une autorité particulière sur leur victime en raison de leur situation personnelle.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s'agit d'une circonstance aggravante personnelle. Ses effets ne s'étendent pas aux coauteurs de l'infraction.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00005",
+                        "Il s'agit d'une circonstance aggravante personnelle. Ses effets ne s'étendent pas aux coauteurs de l'infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -112,25 +132,51 @@ class AuteurAscendantVictimePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                    "f00006",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
-                    _SubTitle("2.1 - L'ascendant de la victime"),
+                  children: [
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00007",
+                        "2.1 - L'ascendant de la victime",
+                      ),
+                    ),
                     _Paragraph(
-                      "Il peut s'agir des père, mère, aïeux et aïeules de la victime, qu'ils soient légitimes, naturels ou adoptifs. Les parents et alliés en ligne collatérale ne sont pas visés.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00008",
+                        "Il peut s'agir des père, mère, aïeux et aïeules de la victime, qu'ils soient légitimes, naturels ou adoptifs. Les parents et alliés en ligne collatérale ne sont pas visés.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Cependant, si le cousin, la cousine, l'oncle ou la tante ont commis l'infraction en ayant une autorité de fait, la circonstance aggravante pourra être appliquée.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00009",
+                        "Cependant, si le cousin, la cousine, l'oncle ou la tante ont commis l'infraction en ayant une autorité de fait, la circonstance aggravante pourra être appliquée.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _SubTitle(
-                      "2.2 - La personne ayant autorité sur la victime",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00010",
+                        "2.2 - La personne ayant autorité sur la victime",
+                      ),
                     ),
                     _Paragraph(
-                      "Il s'agit des personnes ayant une autorité de droit (ex : tuteur d'un mineur ou d'un majeur incapable) ou une autorité de fait, permanente ou discontinue, établie par des circonstances particulières caractérisant cette autorité (concubin de la mère de la victime, second mari de la mère, cohabitation avec la victime, mari d'une nourrice, chef scout, etc.).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                        "f00011",
+                        "Il s'agit des personnes ayant une autorité de droit (ex : tuteur d'un mineur ou d'un majeur incapable) ou une autorité de fait, permanente ou discontinue, établie par des circonstances particulières caractérisant cette autorité (concubin de la mère de la victime, second mari de la mère, cohabitation avec la victime, mari d'une nourrice, chef scout, etc.).",
+                      ),
                     ),
                   ],
                 ),
@@ -138,60 +184,138 @@ class AuteurAscendantVictimePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                    "f00012",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE VIOL (ARTICLE "),
-                      law("222-24, 4° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES AGRESSIONS SEXUELLES (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00013",
+                          "➤ LE VIOL (ARTICLE ",
+                        ),
                       ),
-                      law("222-28, 2° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LES AGRESSIONS SEXUELLES SUR MINEUR DE QUINZE ANS OU PERSONNE VULNÉRABLE (ARTICLE ",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00014",
+                          "222-24, 4° C.P.",
+                        ),
                       ),
-                      law("222-30, 2° C.P."),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE HARCÈLEMENT SEXUEL (ARTICLE "),
-                      law("222-33 III, 8° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "➤ LE PROXÉNÉTISME (ARTICLE "),
-                      law("225-7, 5° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LES ATTEINTES SEXUELLES SANS VIOLENCE SUR MINEUR DE QUINZE ANS (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00015",
+                          "➤ LES AGRESSIONS SEXUELLES (ARTICLE ",
+                        ),
                       ),
-                      law("227-26, 1° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00016",
+                          "222-28, 2° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00017",
+                          "➤ LES AGRESSIONS SEXUELLES SUR MINEUR DE QUINZE ANS OU PERSONNE VULNÉRABLE (ARTICLE ",
+                        ),
                       ),
-                      law("222-3, avant-dernier alinéa C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00018",
+                          "222-30, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00019",
+                          "➤ LE HARCÈLEMENT SEXUEL (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00020",
+                          "222-33 III, 8° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00021",
+                          "➤ LE PROXÉNÉTISME (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00022",
+                          "225-7, 5° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00023",
+                          "➤ LES ATTEINTES SEXUELLES SANS VIOLENCE SUR MINEUR DE QUINZE ANS (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00024",
+                          "227-26, 1° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00025",
+                          "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart",
+                          "f00026",
+                          "222-3, avant-dernier alinéa C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                   ],
@@ -454,9 +578,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

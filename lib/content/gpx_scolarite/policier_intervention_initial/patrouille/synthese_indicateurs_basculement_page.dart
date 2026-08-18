@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class SyntheseIndicateursBasculementPage extends StatelessWidget {
   const SyntheseIndicateursBasculementPage({super.key});
@@ -61,7 +62,11 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -79,7 +84,11 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Synthèse — indicateurs de basculement",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+              "f00002",
+              "Synthèse — indicateurs de basculement",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,26 +99,58 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Référence & lecture",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+              "f00003",
+              "Référence & lecture",
+            ),
             cardColor: cardRef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tableau de synthèse des indicateurs de basculement — extrait de la mallette pédagogique "
-                "EN019 (janvier 2017), reprise « Le policier en intervention » (mise à jour 15/06/2025).\n\n"
-                "⚠️ Ce tableau sert au repérage de signaux (faibles/forts) et à l’analyse de situation : "
-                "il ne remplace pas l’évaluation professionnelle, ni les procédures internes, ni le discernement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00004",
+                      "Tableau de synthèse des indicateurs de basculement — extrait de la mallette pédagogique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00005",
+                      "EN019 (janvier 2017), reprise « Le policier en intervention » (mise à jour 15/06/2025).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00006",
+                      "⚠️ Ce tableau sert au repérage de signaux (faibles/forts) et à l’analyse de situation : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00007",
+                      "il ne remplace pas l’évaluation professionnelle, ni les procédures internes, ni le discernement.",
+                    ),
               ),
               SizedBox(height: 8),
-              _SubTitle("Rappel simple"),
-              _IntroBullet(
-                text:
-                    "Un indicateur isolé ne suffit pas : c’est l’accumulation, la cohérence et l’évolution dans le temps qui comptent.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00008",
+                  "Rappel simple",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Distinguer signaux faibles (changements progressifs, ambigus) et signaux forts (ruptures nettes, comportements structurés).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00009",
+                  "Un indicateur isolé ne suffit pas : c’est l’accumulation, la cohérence et l’évolution dans le temps qui comptent.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00010",
+                  "Distinguer signaux faibles (changements progressifs, ambigus) et signaux forts (ruptures nettes, comportements structurés).",
+                ),
               ),
             ],
           ),
@@ -117,86 +158,191 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 — Ruptures",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+              "f00011",
+              "1 — Ruptures",
+            ),
             cardColor: cardRuptures,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Comportement de rupture avec l’environnement habituel",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00012",
+                  "Comportement de rupture avec l’environnement habituel",
+                ),
               ),
               _Paragraph(
-                "Ce domaine regroupe les modifications soudaines ou persistantes du quotidien, des liens et des habitudes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00013",
+                  "Ce domaine regroupe les modifications soudaines ou persistantes du quotidien, des liens et des habitudes.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Signaux forts (exemples)"),
-              _BulletPoint(
-                text:
-                    "Rejet brutal des habitudes quotidiennes, rupture avec la famille, éloignement des proches.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00014",
+                  "Signaux forts (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rupture avec les anciens amis, modification nette des centres d’intérêts.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00015",
+                  "Rejet brutal des habitudes quotidiennes, rupture avec la famille, éloignement des proches.",
+                ),
               ),
               _BulletPoint(
-                text: "Absences prolongées et inexpliquées du domicile.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00016",
+                  "Rupture avec les anciens amis, modification nette des centres d’intérêts.",
+                ),
               ),
               _BulletPoint(
-                text: "Clivage exacerbé entre les hommes et les femmes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00017",
+                  "Absences prolongées et inexpliquées du domicile.",
+                ),
               ),
-              _BulletPoint(text: "Intérêt soudain pour les armes."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00018",
+                  "Clivage exacerbé entre les hommes et les femmes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00019",
+                  "Intérêt soudain pour les armes.",
+                ),
+              ),
 
               SizedBox(height: 12),
-              _SubTitle("Signaux faibles (exemples)"),
-              _BulletPoint(
-                text: "Rupture avec l’école / déscolarisation soudaine.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00020",
+                  "Signaux faibles (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Modification des humeurs (exaltation, fuite dans l’imaginaire/virtualité, indifférence, perte des affects).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00021",
+                  "Rupture avec l’école / déscolarisation soudaine.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Privations de soins conventionnels, manque d’hygiène important, négligence extrême des conditions de vie/santé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00022",
+                  "Modification des humeurs (exaltation, fuite dans l’imaginaire/virtualité, indifférence, perte des affects).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Investissements financiers disproportionnés dans un domaine exclusif (y compris financement d’actions humanitaires/caritatifs orientées).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00023",
+                  "Privations de soins conventionnels, manque d’hygiène important, négligence extrême des conditions de vie/santé.",
+                ),
               ),
-              _BulletPoint(text: "Privation de sommeil et de repos."),
-              _BulletPoint(text: "Incitation à un régime alimentaire carencé."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00024",
+                  "Investissements financiers disproportionnés dans un domaine exclusif (y compris financement d’actions humanitaires/caritatifs orientées).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00025",
+                  "Privation de sommeil et de repos.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00026",
+                  "Incitation à un régime alimentaire carencé.",
+                ),
+              ),
 
               SizedBox(height: 12),
-              _SubTitle("Changement d’apparence (physique/vestimentaire)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00027",
+                  "Changement d’apparence (physique/vestimentaire)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Modification soudaine et jugée non cohérente par l’entourage (volonté de dissimulation, signes d’affichage très marqués).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00028",
+                  "Modification soudaine et jugée non cohérente par l’entourage (volonté de dissimulation, signes d’affichage très marqués).",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Pratique hyper ritualisée"),
-              _BulletPoint(
-                text:
-                    "Participation à des groupes/cercle de réflexion radicaux et/ou conférences de prédicateurs extrémistes.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00029",
+                  "Pratique hyper ritualisée",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Agressivité ou hostilité justifiée par un motif religieux.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00030",
+                  "Participation à des groupes/cercle de réflexion radicaux et/ou conférences de prédicateurs extrémistes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00031",
+                  "Agressivité ou hostilité justifiée par un motif religieux.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Signaux faibles associés"),
-              _BulletPoint(
-                text:
-                    "Interdits étendus à l’entourage, obsession autour des rituels.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00032",
+                  "Signaux faibles associés",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Changement de décoration au domicile (réorganisation ascétique, retrait de photos/représentations humaines).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00033",
+                  "Interdits étendus à l’entourage, obsession autour des rituels.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Incidents lors de contrôles/accès (refus de se soumettre à certaines mesures), mimétisme culturel/identitaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00034",
+                  "Changement de décoration au domicile (réorganisation ascétique, retrait de photos/représentations humaines).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00035",
+                  "Incidents lors de contrôles/accès (refus de se soumettre à certaines mesures), mimétisme culturel/identitaire.",
+                ),
               ),
             ],
           ),
@@ -204,35 +350,74 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2 — Environnement personnel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+              "f00036",
+              "2 — Environnement personnel",
+            ),
             cardColor: cardEnv,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Image paternelle / parentale défaillante"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00037",
+                  "Image paternelle / parentale défaillante",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Absence ou rejet du père ; placement en protection de l’enfance / famille d’accueil ; recherche d’identité dégradée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00038",
+                  "Absence ou rejet du père ; placement en protection de l’enfance / famille d’accueil ; recherche d’identité dégradée.",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Environnement familial fragilisé"),
-              _BulletPoint(
-                text: "Immersion dans une famille radicalisée (signal fort).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00039",
+                  "Environnement familial fragilisé",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Traumatismes personnels ou dont l’individu a été témoin (violences, incestes, agressions sexuelles).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00040",
+                  "Immersion dans une famille radicalisée (signal fort).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Suivi psychiatrique d’un des parents ; repli sur soi ; fragilités relationnelles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00041",
+                  "Traumatismes personnels ou dont l’individu a été témoin (violences, incestes, agressions sexuelles).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00042",
+                  "Suivi psychiatrique d’un des parents ; repli sur soi ; fragilités relationnelles.",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Environnement social"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00043",
+                  "Environnement social",
+                ),
+              ),
               _BulletPoint(
-                text: "Fragilité sociale ; difficulté d’intégration.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00044",
+                  "Fragilité sociale ; difficulté d’intégration.",
+                ),
               ),
             ],
           ),
@@ -240,46 +425,105 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3 — Traits, discours & réseaux",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+              "f00045",
+              "3 — Traits, discours & réseaux",
+            ),
             cardColor: cardDiscours,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Traits de personnalité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00046",
+                  "Traits de personnalité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Dépendance à une personne/un groupe/à des sites internet (signal fort).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00047",
+                  "Dépendance à une personne/un groupe/à des sites internet (signal fort).",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Signaux faibles souvent cités : immaturité, instabilité, fragilités narcissiques, intolérance à la frustration, "
-                "pauvreté/absence d’affects, hypersensibilité, dogmatisme, refus du compromis, quête de réparation/reconnaissance, "
-                "antécédents psychiatriques ou troubles du comportement, recherche affective, anesthésie affective, imperméabilité à la critique, "
-                "provocation / besoin d’être vu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00048",
+                      "Signaux faibles souvent cités : immaturité, instabilité, fragilités narcissiques, intolérance à la frustration, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00049",
+                      "pauvreté/absence d’affects, hypersensibilité, dogmatisme, refus du compromis, quête de réparation/reconnaissance, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00050",
+                      "antécédents psychiatriques ou troubles du comportement, recherche affective, anesthésie affective, imperméabilité à la critique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                      "f00051",
+                      "provocation / besoin d’être vu.",
+                    ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Réseaux relationnels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00052",
+                  "Réseaux relationnels",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Contact avec des réseaux réputés pour leur radicalisme (signal fort).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00053",
+                  "Contact avec des réseaux réputés pour leur radicalisme (signal fort).",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Théories complotistes / conspirationnistes"),
-              _BulletPoint(
-                text:
-                    "Allusions à la fin des temps / apocalypse ; vision binaire et manichéenne du monde (signal fort).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00054",
+                  "Théories complotistes / conspirationnistes",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Double discours, admiration/vénération d’auteurs d’actes terroristes (signal fort).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00055",
+                  "Allusions à la fin des temps / apocalypse ; vision binaire et manichéenne du monde (signal fort).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00056",
+                  "Double discours, admiration/vénération d’auteurs d’actes terroristes (signal fort).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Signaux faibles associés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00057",
+                  "Signaux faibles associés",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Allusions complotistes ; changement de vocabulaire et de sémantique employés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00058",
+                  "Allusions complotistes ; changement de vocabulaire et de sémantique employés.",
+                ),
               ),
             ],
           ),
@@ -287,87 +531,196 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "4 — Changements identitaires & prosélytisme",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+              "f00059",
+              "4 — Changements identitaires & prosélytisme",
+            ),
             cardColor: cardIdentitaire,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Changements de comportements identitaires"),
-              _SubTitle("Signaux forts (exemples)"),
-              _BulletPoint(
-                text:
-                    "Menace de l’État français ; soutien explicite à des groupes djihadistes ; hostilité à l’Occident.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00060",
+                  "Changements de comportements identitaires",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00061",
+                  "Signaux forts (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Discours antisémites ; dénonciation véhémente de ceux qui ne partagent pas la foi.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00062",
+                  "Menace de l’État français ; soutien explicite à des groupes djihadistes ; hostilité à l’Occident.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Totalitarisme ; absence d’expression autonome (auto-récitation / discours instrumentalisé).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00063",
+                  "Discours antisémites ; dénonciation véhémente de ceux qui ne partagent pas la foi.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Distinction « bons / mauvais » croyants ; logique de rejet radical.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00064",
+                  "Totalitarisme ; absence d’expression autonome (auto-récitation / discours instrumentalisé).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00065",
+                  "Distinction « bons / mauvais » croyants ; logique de rejet radical.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Signaux faibles (exemples)"),
-              _BulletPoint(
-                text:
-                    "Propos associaux ; remise en cause de l’autorité ; rejet de la vie en collectivité.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00066",
+                  "Signaux faibles (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contestation du système démocratique ; critique de l’État ; attitude discriminatoire envers les femmes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00067",
+                  "Propos associaux ; remise en cause de l’autorité ; rejet de la vie en collectivité.",
+                ),
               ),
               _BulletPoint(
-                text: "Changement de sémantique, discours stéréotypé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00068",
+                  "Contestation du système démocratique ; critique de l’État ; attitude discriminatoire envers les femmes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00069",
+                  "Changement de sémantique, discours stéréotypé.",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Prosélytisme"),
-              _SubTitle("Signaux forts (exemples)"),
-              _BulletPoint(
-                text:
-                    "Activité visant à radicaliser l’entourage / recrutement.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00070",
+                  "Prosélytisme",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00071",
+                  "Signaux forts (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Incitation au départ vers une zone de conflit / à l’action violente.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00072",
+                  "Activité visant à radicaliser l’entourage / recrutement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conversion tenue secrète vis-à-vis des parents (mineurs).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00073",
+                  "Incitation au départ vers une zone de conflit / à l’action violente.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00074",
+                  "Conversion tenue secrète vis-à-vis des parents (mineurs).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Signaux faibles (exemples)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00075",
+                  "Signaux faibles (exemples)",
+                ),
+              ),
               _BulletPoint(
-                text: "Cas de prosélytisme à l’école ; conversion soudaine.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00076",
+                  "Cas de prosélytisme à l’école ; conversion soudaine.",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Usage des réseaux virtuels (techniques ou humains)"),
-              _SubTitle("Signaux forts (exemples)"),
-              _BulletPoint(
-                text: "Changements réguliers de puces téléphoniques.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00077",
+                  "Usage des réseaux virtuels (techniques ou humains)",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00078",
+                  "Signaux forts (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Fréquentation de sites/réseaux sociaux à caractère radical ou extrémiste.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00079",
+                  "Changements réguliers de puces téléphoniques.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Fréquentation de lieux/personnes défavorablement connus (parcours radical, criminel ou terroriste).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00080",
+                  "Fréquentation de sites/réseaux sociaux à caractère radical ou extrémiste.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00081",
+                  "Fréquentation de lieux/personnes défavorablement connus (parcours radical, criminel ou terroriste).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Signaux faibles (exemples)"),
-              _BulletPoint(
-                text:
-                    "Comptes ouverts sous nouvelles identités (double compte).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00082",
+                  "Signaux faibles (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Communications compulsives (sms, courriels, réseaux) ; usage excessif intense jour/nuit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00083",
+                  "Comptes ouverts sous nouvelles identités (double compte).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00084",
+                  "Communications compulsives (sms, courriels, réseaux) ; usage excessif intense jour/nuit.",
+                ),
               ),
             ],
           ),
@@ -375,53 +728,120 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "5 — Judiciaire & détention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+              "f00085",
+              "5 — Judiciaire & détention",
+            ),
             cardColor: cardJud,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Stratégies de dissimulation / duplicité"),
-              _SubTitle("Signaux forts (exemples)"),
-              _BulletPoint(
-                text:
-                    "Découverte de cartes d’itinéraires / brochures de voyage vers zones de passage ; historique de consultations de sites radicaux.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00086",
+                  "Stratégies de dissimulation / duplicité",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00087",
+                  "Signaux forts (exemples)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Recours à des itinéraires de sécurité pour déjouer une surveillance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00088",
+                  "Découverte de cartes d’itinéraires / brochures de voyage vers zones de passage ; historique de consultations de sites radicaux.",
+                ),
               ),
-              SizedBox(height: 10),
-              _SubTitle("Signaux faibles (exemples)"),
               _BulletPoint(
-                text:
-                    "Voyages touristiques ou projets humanitaires vers zones de transit ; attitude conformiste ; double discours.",
-              ),
-
-              SizedBox(height: 12),
-              _SubTitle("Condamnation / incarcération"),
-              _BulletPoint(
-                text:
-                    "Incarcération pour des faits de terrorisme ; écrou pour des faits de terrorisme (signaux forts).",
-              ),
-
-              SizedBox(height: 12),
-              _SubTitle("Antécédents / signalements (milieu pénitentiaire)"),
-              _BulletPoint(
-                text:
-                    "Signalement par cellules renseignement / services partenaires ; classement DPS ; antécédents de violences graves ; séjour en zone de conflit (signaux forts).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00089",
+                  "Recours à des itinéraires de sécurité pour déjouer une surveillance.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Signal faible"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00090",
+                  "Signaux faibles (exemples)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Commission de certaines infractions d’appropriation (acquisition de moyens pour partir en zone de conflit).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00091",
+                  "Voyages touristiques ou projets humanitaires vers zones de transit ; attitude conformiste ; double discours.",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("Comportement en détention (signaux faibles)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00092",
+                  "Condamnation / incarcération",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Nie les faits, conteste l’incarcération ; influence/tentative d’influence ; pratique sportive intensive.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00093",
+                  "Incarcération pour des faits de terrorisme ; écrou pour des faits de terrorisme (signaux forts).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00094",
+                  "Antécédents / signalements (milieu pénitentiaire)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00095",
+                  "Signalement par cellules renseignement / services partenaires ; classement DPS ; antécédents de violences graves ; séjour en zone de conflit (signaux forts).",
+                ),
+              ),
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00096",
+                  "Signal faible",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00097",
+                  "Commission de certaines infractions d’appropriation (acquisition de moyens pour partir en zone de conflit).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00098",
+                  "Comportement en détention (signaux faibles)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                  "f00099",
+                  "Nie les faits, conteste l’incarcération ; influence/tentative d’influence ; pratique sportive intensive.",
+                ),
               ),
 
               SizedBox(height: 12),
@@ -430,8 +850,16 @@ class SyntheseIndicateursBasculementPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cette synthèse est un support de repérage. Toute situation doit être appréciée avec discernement, "
-                        "en évitant les conclusions hâtives : on documente, on recoupe, on contextualise, puis on applique la doctrine/chaîne interne.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                          "f00100",
+                          "Cette synthèse est un support de repérage. Toute situation doit être appréciée avec discernement, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/synthese_indicateurs_basculement_page.dart",
+                          "f00101",
+                          "en évitant les conclusions hâtives : on documente, on recoupe, on contextualise, puis on applique la doctrine/chaîne interne.",
+                        ),
                   ),
                 ],
               ),

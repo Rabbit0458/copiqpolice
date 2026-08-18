@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
   const VerificationIdentiteProcesVerbalGpxSchool({super.key});
@@ -35,10 +36,18 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'PV de vérification d’identité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+            "f00002",
+            'PV de vérification d’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,7 +61,11 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE PRINCIPAL ===========================
           Text(
-            '3.4 — Le procès-verbal de vérification',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+              "f00003",
+              '3.4 — Le procès-verbal de vérification',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,10 +74,26 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Contenu obligatoire du procès-verbal de vérification d’identité, destination '
-            'du document, interdiction de conserver des éléments d’identification en '
-            'l’absence de poursuites et conséquences juridiques en cas de non-respect '
-            'des prescriptions légales.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00004",
+                  'Contenu obligatoire du procès-verbal de vérification d’identité, destination ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00005",
+                  'du document, interdiction de conserver des éléments d’identification en ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00006",
+                  'l’absence de poursuites et conséquences juridiques en cas de non-respect ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00007",
+                  'des prescriptions légales.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -76,28 +105,70 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
 
           // ===================== CARTE CONTENU =============================
           _ConditionCard(
-            title: '3.4 — Le procès-verbal de vérification',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+              "f00008",
+              '3.4 — Le procès-verbal de vérification',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               // ---------- 3.4.1 Contenu du PV --------------------------------
-              _SubTitle('Le contenu du procès-verbal'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00009",
+                  'Le contenu du procès-verbal',
+                ),
+              ),
               _Paragraph(
-                'Le procès-verbal de vérification d’identité n’est établi que lorsqu’une mesure '
-                'de rétention a effectivement été prononcée, c’est-à-dire uniquement en cas '
-                'd’exécution d’une vérification d’identité. Il répond à un formalisme proche de '
-                'celui utilisé pour la garde à vue, même si les heures de rétention ne sont pas '
-                'portées sur un registre spécial.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00010",
+                      'Le procès-verbal de vérification d’identité n’est établi que lorsqu’une mesure ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00011",
+                      'de rétention a effectivement été prononcée, c’est-à-dire uniquement en cas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00012",
+                      'd’exécution d’une vérification d’identité. Il répond à un formalisme proche de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00013",
+                      'celui utilisé pour la garde à vue, même si les heures de rétention ne sont pas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00014",
+                      'portées sur un registre spécial.',
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Le procès-verbal est présenté à la signature de l’intéressé. En cas de refus '
-                      'de signer, ce refus et les motifs invoqués doivent être mentionnés (',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                        "f00015",
+                        'Le procès-verbal est présenté à la signature de l’intéressé. En cas de refus ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                        "f00016",
+                        'de signer, ce refus et les motifs invoqués doivent être mentionnés (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-3, alinéa 7, du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                    "f00017",
+                    'article 78-3, alinéa 7, du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Color(0xFFD32F2F),
@@ -107,45 +178,112 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                'Afin de permettre un contrôle sérieux par la personne concernée, son défenseur '
-                'et le procureur de la République, le procès-verbal doit comporter un certain '
-                'nombre de mentions obligatoires :',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00018",
+                      'Afin de permettre un contrôle sérieux par la personne concernée, son défenseur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00019",
+                      'et le procureur de la République, le procès-verbal doit comporter un certain ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00020",
+                      'nombre de mentions obligatoires :',
+                    ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
                 text:
-                    'Les motifs précis justifiant le contrôle et la vérification, en démontrant de '
-                    'façon concrète la légalité du contrôle initial et de la vérification d’identité.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00021",
+                      'Les motifs précis justifiant le contrôle et la vérification, en démontrant de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00022",
+                      'façon concrète la légalité du contrôle initial et de la vérification d’identité.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Les conditions dans lesquelles la personne a été présentée devant l’officier '
-                    'de police judiciaire, informée de ses droits et mise en mesure de les exercer, '
-                    'ainsi que l’identification des personnes contactées par téléphone.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00023",
+                      'Les conditions dans lesquelles la personne a été présentée devant l’officier ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00024",
+                      'de police judiciaire, informée de ses droits et mise en mesure de les exercer, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00025",
+                      'ainsi que l’identification des personnes contactées par téléphone.',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Le jour et l’heure à partir desquels le contrôle d’identité ou le relevé '
-                    'd’identité a été effectué.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00026",
+                      'Le jour et l’heure à partir desquels le contrôle d’identité ou le relevé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00027",
+                      'd’identité a été effectué.',
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00028",
+                  'Le jour et l’heure de la fin de la rétention, ainsi que la durée totale de celle-ci.',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Le jour et l’heure de la fin de la rétention, ainsi que la durée totale de celle-ci.',
-              ),
-              _BulletPoint(
-                text:
-                    'Le recours éventuel à une prise d’empreintes digitales ou de photographies, '
-                    'avec les raisons concrètes ayant justifié l’utilisation de ces moyens, en '
-                    'précisant qu’il n’était pas possible d’établir l’identité autrement.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00029",
+                      'Le recours éventuel à une prise d’empreintes digitales ou de photographies, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00030",
+                      'avec les raisons concrètes ayant justifié l’utilisation de ces moyens, en ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00031",
+                      'précisant qu’il n’était pas possible d’établir l’identité autrement.',
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Cette motivation doit apparaître de manière claire dans le procès-verbal, '
-                      'conformément à l’',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                        "f00032",
+                        'Cette motivation doit apparaître de manière claire dans le procès-verbal, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                        "f00033",
+                        'conformément à l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-3, alinéa 6, du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                    "f00034",
+                    'article 78-3, alinéa 6, du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Color(0xFFD32F2F),
@@ -157,66 +295,192 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
               SizedBox(height: 16),
 
               // ---------- 3.4.2 Destination du PV ----------------------------
-              _SubTitle('La destination du procès-verbal'),
-              _Paragraph(
-                'Le procès-verbal de vérification d’identité est systématiquement transmis au '
-                'procureur de la République. Une copie peut, dans certains cas, être remise à '
-                'l’intéressé.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00035",
+                  'La destination du procès-verbal',
+                ),
               ),
-              _Paragraph('Deux hypothèses doivent être distinguées :'),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00036",
+                      'Le procès-verbal de vérification d’identité est systématiquement transmis au ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00037",
+                      'procureur de la République. Une copie peut, dans certains cas, être remise à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00038",
+                      'l’intéressé.',
+                    ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00039",
+                  'Deux hypothèses doivent être distinguées :',
+                ),
+              ),
               _IntroBullet(
-                text:
-                    'La vérification est suivie d’une procédure d’enquête ou d’exécution :',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00040",
+                  'La vérification est suivie d’une procédure d’enquête ou d’exécution :',
+                ),
               ),
               _Paragraph(
-                'Lorsque la vérification d’identité aboutit à la constatation d’une infraction, à '
-                'l’arrestation d’une personne faisant l’objet d’un mandat d’arrêt ou s’inscrit dans '
-                'l’exécution d’une commission rogatoire, le procès-verbal est versé à la procédure. '
-                'Il suit alors le sort du dossier pénal et aucune copie n’est remise à l’intéressé à '
-                'ce stade.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00041",
+                      'Lorsque la vérification d’identité aboutit à la constatation d’une infraction, à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00042",
+                      'l’arrestation d’une personne faisant l’objet d’un mandat d’arrêt ou s’inscrit dans ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00043",
+                      'l’exécution d’une commission rogatoire, le procès-verbal est versé à la procédure. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00044",
+                      'Il suit alors le sort du dossier pénal et aucune copie n’est remise à l’intéressé à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00045",
+                      'ce stade.',
+                    ),
               ),
               _IntroBullet(
-                text:
-                    'La vérification n’est suivie d’aucune procédure d’enquête ou d’exécution :',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00046",
+                  'La vérification n’est suivie d’aucune procédure d’enquête ou d’exécution :',
+                ),
               ),
               _Paragraph(
-                'Si la vérification d’identité ne débouche sur aucune enquête, ni sur aucune '
-                'mesure d’exécution, l’original du procès-verbal est transmis au parquet et une '
-                'copie est remise à la personne ayant fait l’objet de la rétention.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00047",
+                      'Si la vérification d’identité ne débouche sur aucune enquête, ni sur aucune ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00048",
+                      'mesure d’exécution, l’original du procès-verbal est transmis au parquet et une ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00049",
+                      'copie est remise à la personne ayant fait l’objet de la rétention.',
+                    ),
               ),
 
               SizedBox(height: 16),
 
               // ---------- 3.4.3 Interdiction de mise en mémoire -------------
               _SubTitle(
-                'L’interdiction de mettre en mémoire les éléments d’identification',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                  "f00050",
+                  'L’interdiction de mettre en mémoire les éléments d’identification',
+                ),
               ),
               _Paragraph(
-                'Lorsque la vérification d’identité n’est suivie d’aucune enquête ni d’aucune '
-                'mesure d’exécution, elle ne peut pas donner lieu à une mise en mémoire des '
-                'éléments d’identification recueillis pendant la rétention.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00051",
+                      'Lorsque la vérification d’identité n’est suivie d’aucune enquête ni d’aucune ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00052",
+                      'mesure d’exécution, elle ne peut pas donner lieu à une mise en mémoire des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00053",
+                      'éléments d’identification recueillis pendant la rétention.',
+                    ),
               ),
               _Paragraph(
-                'Cette interdiction vise à empêcher que les contrôles d’identité ne soient '
-                'détournés de leur finalité légale. Tout fichage, archivage ou conservation durable '
-                'des données d’identification obtenues dans ce cadre est donc prohibé.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00054",
+                      'Cette interdiction vise à empêcher que les contrôles d’identité ne soient ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00055",
+                      'détournés de leur finalité légale. Tout fichage, archivage ou conservation durable ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00056",
+                      'des données d’identification obtenues dans ce cadre est donc prohibé.',
+                    ),
               ),
               _Paragraph(
-                'En conséquence, le procès-verbal et toutes les pièces relatives à la vérification '
-                'doivent être détruits dans un délai de six mois, sous le contrôle du procureur de '
-                'la République.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00057",
+                      'En conséquence, le procès-verbal et toutes les pièces relatives à la vérification ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00058",
+                      'doivent être détruits dans un délai de six mois, sous le contrôle du procureur de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                      "f00059",
+                      'la République.',
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'L’ensemble des prescriptions prévues par l’article 78-3 du code de '
-                        'procédure pénale (durée, mentions obligatoires, information de la '
-                        'personne, contrôle du procureur, destruction des pièces en l’absence '
-                        'de suites) est imposé à peine de nullité. En pratique, tout manquement '
-                        'substantiel peut entraîner l’annulation de la procédure de vérification '
-                        'd’identité et des actes subséquents.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                          "f00060",
+                          'L’ensemble des prescriptions prévues par l’article 78-3 du code de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                          "f00061",
+                          'procédure pénale (durée, mentions obligatoires, information de la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                          "f00062",
+                          'personne, contrôle du procureur, destruction des pièces en l’absence ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                          "f00063",
+                          'de suites) est imposé à peine de nullité. En pratique, tout manquement ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                          "f00064",
+                          'substantiel peut entraîner l’annulation de la procédure de vérification ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart",
+                          "f00065",
+                          'd’identité et des actes subséquents.',
+                        ),
                   ),
                 ],
                 title: 'IMPORTANT',

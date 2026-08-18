@@ -1,6 +1,7 @@
 // lib/pa/dps_dpg/cadres_juridiques/mort_inconnue/mort_inconnue_suites_enquete.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 const Color _lawColor = Color(0xFFE53935);
 
@@ -17,11 +18,11 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF121212) : const Color(0xFFF5F7FB);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color cardColor = isDark
-? const Color(0xFF1E1E1E)
-: const Color(0xFFFFFFFF);
+        ? const Color(0xFF1E1E1E)
+        : const Color(0xFFFFFFFF);
 
     return Scaffold(
       backgroundColor: bg,
@@ -30,12 +31,20 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
         backgroundColor: bg,
         centerTitle: true,
         leading: IconButton(
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+            "f00001",
+            'Retour',
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'Mort de cause inconnue',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+            "f00002",
+            'Mort de cause inconnue',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -51,7 +60,11 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
           //                           TITRE
           // ================================================================
           Text(
-            'Suites de l’enquête\n(article 74 du Code de procédure pénale)',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+              "f00003",
+              'Suites de l’enquête\n(article 74 du Code de procédure pénale)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -61,22 +74,39 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text: 'À l’issue des investigations menées en application de l’',
-            ),
-            TextSpan(
-              text: 'article 74 du Code de procédure pénale',
-              style: TextStyle(
-                color: _lawColor,
-                fontWeight: FontWeight.w700,
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                "f00004",
+                'À l’issue des investigations menées en application de l’',
               ),
             ),
             TextSpan(
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                "f00005",
+                'article 74 du Code de procédure pénale',
+              ),
+              style: TextStyle(color: _lawColor, fontWeight: FontWeight.w700),
+            ),
+            TextSpan(
               text:
-                  ', le procureur de la République dispose de plusieurs options, '
-                  'en fonction des résultats de l’enquête concernant les causes de la mort. '
-                  'Trois grandes hypothèses sont classiquement envisagées.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00006",
+                    ', le procureur de la République dispose de plusieurs options, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00007",
+                    'en fonction des résultats de l’enquête concernant les causes de la mort. ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00008",
+                    'Trois grandes hypothèses sont classiquement envisagées.',
+                  ),
             ),
           ]),
           const SizedBox(height: 18),
@@ -85,37 +115,81 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
           // 1. MORT NATURELLE OU VIOLENTE SANS TIERS RESPONSABLE
           // ================================================================
           _ConditionCard(
-            title:
-                '1. Mort naturelle ou violente sans responsabilité d’un tiers',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+              "f00009",
+              '1. Mort naturelle ou violente sans responsabilité d’un tiers',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
-              _SubTitle('Classement de la procédure et inhumation'),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                  "f00010",
+                  'Classement de la procédure et inhumation',
+                ),
+              ),
               _Paragraph(
-                'Lorsque l’enquête a permis d’établir que la mort, initialement suspecte, '
-                'procède en réalité d’une cause naturelle ou d’une mort violente survenue '
-                'dans des circonstances ne permettant pas d’envisager la responsabilité '
-                'd’un tiers (suicide ou accident imputable à la seule imprudence de la victime), '
-                'le cadre de l’',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00011",
+                      'Lorsque l’enquête a permis d’établir que la mort, initialement suspecte, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00012",
+                      'procède en réalité d’une cause naturelle ou d’une mort violente survenue ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00013",
+                      'dans des circonstances ne permettant pas d’envisager la responsabilité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00014",
+                      'd’un tiers (suicide ou accident imputable à la seule imprudence de la victime), ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00015",
+                      'le cadre de l’',
+                    ),
               ),
             ],
           ),
 
           // On complète avec un paragraphe riche pour insérer la référence en rouge
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'Dans cette situation, le procureur de la République peut décider de ',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                "f00016",
+                'Dans cette situation, le procureur de la République peut décider de ',
+              ),
             ),
             TextSpan(
-              text: 'classer la procédure',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                "f00017",
+                'classer la procédure',
+              ),
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  ' et d’autoriser l’inhumation du défunt. Aucune poursuite pénale n’est engagée, '
-                  'faute d’infraction imputable à un tiers.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00018",
+                    ' et d’autoriser l’inhumation du défunt. Aucune poursuite pénale n’est engagée, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00019",
+                    'faute d’infraction imputable à un tiers.',
+                  ),
             ),
           ]),
           const SizedBox(height: 16),
@@ -124,33 +198,59 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
           // 2. DOUTES PERSISTANTS SUR LES CAUSES DE LA MORT
           // ================================================================
           _ConditionCard(
-            title: '2. Doutes persistants sur les causes de la mort',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+              "f00020",
+              '2. Doutes persistants sur les causes de la mort',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                'Information pour recherche des causes de la mort ou poursuite en préliminaire',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                  "f00021",
+                  'Information pour recherche des causes de la mort ou poursuite en préliminaire',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Lorsque l’enquête diligentée laisse subsister des doutes quant aux causes de la mort, '
-                      'le procureur de la République dispose de plusieurs options :',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                        "f00022",
+                        'Lorsque l’enquête diligentée laisse subsister des doutes quant aux causes de la mort, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                        "f00023",
+                        'le procureur de la République dispose de plusieurs options :',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    'Requérir l’ouverture d’une information pour recherche des causes de la mort.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                  "f00024",
+                  'Requérir l’ouverture d’une information pour recherche des causes de la mort.',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Dans ce cas, le juge d’instruction, saisi sur le fondement de l’',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00025",
+                    'Dans ce cas, le juge d’instruction, saisi sur le fondement de l’',
+                  ),
                 ),
                 TextSpan(
-                  text: 'article 80-4 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00026",
+                    'article 80-4 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: _lawColor,
                     fontWeight: FontWeight.w700,
@@ -158,21 +258,53 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ', pourra enquêter lui-même ou délivrer une commission rogatoire à un officier '
-                      'de police judiciaire territorialement compétent, notamment celui qui a déjà enquêté '
-                      'en vertu de l’article 74 du Code de procédure pénale.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                        "f00027",
+                        ', pourra enquêter lui-même ou délivrer une commission rogatoire à un officier ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                        "f00028",
+                        'de police judiciaire territorialement compétent, notamment celui qui a déjà enquêté ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                        "f00029",
+                        'en vertu de l’article 74 du Code de procédure pénale.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _IntroBullet(
                 text:
-                    'Ordonner à l’officier ou à l’agent de police judiciaire ayant enquêté en vertu de l’article 74 du Code de procédure pénale '
-                    'de poursuivre les investigations dans les formes de l’enquête préliminaire.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00030",
+                      'Ordonner à l’officier ou à l’agent de police judiciaire ayant enquêté en vertu de l’article 74 du Code de procédure pénale ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00031",
+                      'de poursuivre les investigations dans les formes de l’enquête préliminaire.',
+                    ),
               ),
               _Paragraph(
-                'Cette bascule en enquête préliminaire intervient à l’issue d’un délai de huit jours. '
-                'Elle permet de poursuivre les vérifications dans un cadre procédural plus classique, '
-                'tout en continuant à rechercher l’origine exacte du décès.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00032",
+                      'Cette bascule en enquête préliminaire intervient à l’issue d’un délai de huit jours. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00033",
+                      'Elle permet de poursuivre les vérifications dans un cadre procédural plus classique, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00034",
+                      'tout en continuant à rechercher l’origine exacte du décès.',
+                    ),
               ),
             ],
           ),
@@ -182,50 +314,102 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
           // 3. CARACTÈRE CRIMINEL OU DÉLICTUEL ÉTABLI
           // ================================================================
           _ConditionCard(
-            title: '3. Caractère criminel ou délictuel de l’événement établi',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+              "f00035",
+              '3. Caractère criminel ou délictuel de l’événement établi',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                'Basculer vers une enquête pénale classique ou une information judiciaire',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                  "f00036",
+                  'Basculer vers une enquête pénale classique ou une information judiciaire',
+                ),
               ),
               _Paragraph(
-                'Lorsque l’enquête permet d’établir que la mort a une origine criminelle ou délictuel-le, '
-                'la logique change : il ne s’agit plus seulement de rechercher les causes de la mort, '
-                'mais d’enquêter sur une infraction pénale et d’en identifier l’auteur ou les coauteurs.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00037",
+                      'Lorsque l’enquête permet d’établir que la mort a une origine criminelle ou délictuel-le, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00038",
+                      'la logique change : il ne s’agit plus seulement de rechercher les causes de la mort, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00039",
+                      'mais d’enquêter sur une infraction pénale et d’en identifier l’auteur ou les coauteurs.',
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
                 text:
-                    'Le procureur de la République peut autoriser l’officier ou l’agent de police judiciaire '
-                    'à poursuivre ses investigations selon le mode du flagrant délit ou dans le cadre de l’enquête préliminaire, '
-                    'en fonction des conditions de temps et de lieu et des indices relevés.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00040",
+                      'Le procureur de la République peut autoriser l’officier ou l’agent de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00041",
+                      'à poursuivre ses investigations selon le mode du flagrant délit ou dans le cadre de l’enquête préliminaire, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00042",
+                      'en fonction des conditions de temps et de lieu et des indices relevés.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Le procureur de la République peut également ordonner l’ouverture d’une information judiciaire. '
-                    'Dans ce cas, le juge d’instruction est saisi des faits et l’',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00043",
+                      'Le procureur de la République peut également ordonner l’ouverture d’une information judiciaire. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00044",
+                      'Dans ce cas, le juge d’instruction est saisi des faits et l’',
+                    ),
               ),
             ],
           ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'En cas d’ouverture d’une information, l’officier de police judiciaire ayant conduit les opérations en vertu de l’',
-            ),
-            TextSpan(
-              text: 'article 74 du Code de procédure pénale',
-              style: TextStyle(
-                color: _lawColor,
-                fontWeight: FontWeight.w700,
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                "f00045",
+                'En cas d’ouverture d’une information, l’officier de police judiciaire ayant conduit les opérations en vertu de l’',
               ),
             ),
             TextSpan(
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                "f00046",
+                'article 74 du Code de procédure pénale',
+              ),
+              style: TextStyle(color: _lawColor, fontWeight: FontWeight.w700),
+            ),
+            TextSpan(
               text:
-                  ' est contraint de cesser ses investigations dans ce cadre. Il ne pourra intervenir que sur commission rogatoire '
-                  'ou instructions spécifiques du juge d’instruction.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00047",
+                    ' est contraint de cesser ses investigations dans ce cadre. Il ne pourra intervenir que sur commission rogatoire ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                    "f00048",
+                    'ou instructions spécifiques du juge d’instruction.',
+                  ),
             ),
           ]),
           const SizedBox(height: 18),
@@ -233,15 +417,35 @@ class PaMortInconnueSuitesEnquetePage extends StatelessWidget {
           // ================================================================
           // NOTA
           // ================================================================
-          const _NotaBox(
+          _NotaBox(
             bodySpans: [
               TextSpan(
                 text:
-                    'Les suites de l’enquête menée sur le fondement de l’article 74 du Code de procédure pénale '
-                    'conditionnent tout le reste de la procédure : simple classement avec autorisation d’inhumation, '
-                    'ouverture d’une information pour recherche des causes de la mort, poursuite en enquête préliminaire, '
-                    'ou encore bascule vers une enquête pour crime ou délit. Pour l’enquêteur, il est essentiel de comprendre '
-                    'ces différentes issues afin d’adapter ses actes et ses comptes rendus au procureur de la République.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00049",
+                      'Les suites de l’enquête menée sur le fondement de l’article 74 du Code de procédure pénale ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00050",
+                      'conditionnent tout le reste de la procédure : simple classement avec autorisation d’inhumation, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00051",
+                      'ouverture d’une information pour recherche des causes de la mort, poursuite en enquête préliminaire, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00052",
+                      'ou encore bascule vers une enquête pour crime ou délit. Pour l’enquêteur, il est essentiel de comprendre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart",
+                      "f00053",
+                      'ces différentes issues afin d’adapter ses actes et ses comptes rendus au procureur de la République.',
+                    ),
               ),
             ],
           ),
@@ -495,9 +699,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

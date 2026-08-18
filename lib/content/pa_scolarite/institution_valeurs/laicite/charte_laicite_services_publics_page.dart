@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
   const PaCharteLaiciteServicesPublicsPage({super.key});
@@ -55,7 +56,11 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Institution",
@@ -73,7 +78,11 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Charte de la laïcité dans les services publics",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+              "f00002",
+              "Charte de la laïcité dans les services publics",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,18 +94,28 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
 
           // Intro courte (pédagogique)
           _ConditionCard(
-            title: "Repère rapide",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+              "f00003",
+              "Repère rapide",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "La laïcité garantit la liberté de conscience, l’égalité de tous devant la loi et la neutralité du service public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00004",
+                  "La laïcité garantit la liberté de conscience, l’égalité de tous devant la loi et la neutralité du service public.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Elle protège à la fois les usagers (droits) et fixe des obligations aux agents (neutralité, exemplarité).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00005",
+                  "Elle protège à la fois les usagers (droits) et fixe des obligations aux agents (neutralité, exemplarité).",
+                ),
               ),
             ],
           ),
@@ -105,42 +124,89 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
 
           // Principes généraux (charte)
           _ConditionCard(
-            title: "I — Principes de la République",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+              "f00006",
+              "I — Principes de la République",
+            ),
             cardColor: cardPrincipes,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La France est une République indivisible, laïque, démocratique et sociale.\n"
-                "Elle assure l’égalité devant la loi de tous les citoyens, sans distinction d’origine, de race ou de religion. "
-                "Elle garantit des droits égaux aux hommes et aux femmes et respecte toutes les croyances.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00007",
+                      "La France est une République indivisible, laïque, démocratique et sociale.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00008",
+                      "Elle assure l’égalité devant la loi de tous les citoyens, sans distinction d’origine, de race ou de religion. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00009",
+                      "Elle garantit des droits égaux aux hommes et aux femmes et respecte toutes les croyances.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Nul ne doit être inquiété pour ses opinions, notamment religieuses, pourvu que leur manifestation "
-                "ne trouble pas l’ordre public établi par la loi.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00010",
+                      "Nul ne doit être inquiété pour ses opinions, notamment religieuses, pourvu que leur manifestation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00011",
+                      "ne trouble pas l’ordre public établi par la loi.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La liberté de religion ou de conviction ne rencontre que des limites nécessaires au respect du pluralisme religieux, "
-                "à la protection des droits et libertés d’autrui, aux impératifs de l’ordre public et au maintien de la paix civile.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00012",
+                      "La liberté de religion ou de conviction ne rencontre que des limites nécessaires au respect du pluralisme religieux, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00013",
+                      "à la protection des droits et libertés d’autrui, aux impératifs de l’ordre public et au maintien de la paix civile.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La République assure la liberté de conscience et garantit le libre exercice des cultes dans les conditions fixées par la ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                    "f00014",
+                    "La République assure la liberté de conscience et garantit le libre exercice des cultes dans les conditions fixées par la ",
+                  ),
                 ),
                 TextSpan(
-                  text: "loi du 9 décembre 1905",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                    "f00015",
+                    "loi du 9 décembre 1905",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Pour assurer la conciliation entre liberté de conscience de chacun et égalité de tous, "
-                "la laïcité s’impose à l’ensemble des services publics, quel que soit leur mode de gestion.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00016",
+                      "Pour assurer la conciliation entre liberté de conscience de chacun et égalité de tous, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00017",
+                      "la laïcité s’impose à l’ensemble des services publics, quel que soit leur mode de gestion.",
+                    ),
               ),
             ],
           ),
@@ -149,66 +215,133 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
 
           // Agents du service public
           _ConditionCard(
-            title: "II — Les agents du service public",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+              "f00018",
+              "II — Les agents du service public",
+            ),
             cardColor: cardAgents,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Égalité & accès aux emplois"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00019",
+                  "A) Égalité & accès aux emplois",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Toute discrimination dans l’accès aux emplois publics et le déroulement de carrière des agents est interdite.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00020",
+                  "Toute discrimination dans l’accès aux emplois publics et le déroulement de carrière des agents est interdite.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("B) Neutralité & exemplarité"),
-              _BulletPoint(
-                text:
-                    "Tout agent public a un devoir de stricte neutralité dans l’exercice de ses fonctions.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00021",
+                  "B) Neutralité & exemplarité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Il incarne les valeurs du service public et se montre exemplaire : traitement égal de tous les usagers et respect de leur liberté de conscience.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00022",
+                  "Tout agent public a un devoir de stricte neutralité dans l’exercice de ses fonctions.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00023",
+                  "Il incarne les valeurs du service public et se montre exemplaire : traitement égal de tous les usagers et respect de leur liberté de conscience.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("C) Interdiction de manifester ses convictions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00024",
+                  "C) Interdiction de manifester ses convictions",
+                ),
+              ),
               _Paragraph(
-                "Le principe de laïcité interdit à l’agent de manifester ses convictions religieuses dans l’exercice de ses fonctions, "
-                "quelles qu’elles soient.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00025",
+                      "Le principe de laïcité interdit à l’agent de manifester ses convictions religieuses dans l’exercice de ses fonctions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00026",
+                      "quelles qu’elles soient.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le non-respect de cette règle constitue un manquement aux obligations pouvant donner lieu à des poursuites disciplinaires.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00027",
+                      "Le non-respect de cette règle constitue un manquement aux obligations pouvant donner lieu à des poursuites disciplinaires.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("D) Liberté de conscience des agents"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00028",
+                  "D) Liberté de conscience des agents",
+                ),
+              ),
               _Paragraph(
-                "La liberté de conscience est garantie aux agents publics. Ils peuvent bénéficier d’autorisations d’absence pour participer "
-                "à une fête religieuse, à condition que cela soit compatible avec les nécessités du fonctionnement normal du service.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00029",
+                      "La liberté de conscience est garantie aux agents publics. Ils peuvent bénéficier d’autorisations d’absence pour participer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00030",
+                      "à une fête religieuse, à condition que cela soit compatible avec les nécessités du fonctionnement normal du service.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il appartient au chef de service de faire respecter les principes de neutralité et de laïcité par les agents sur lesquels il a autorité.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00031",
+                  "Il appartient au chef de service de faire respecter les principes de neutralité et de laïcité par les agents sur lesquels il a autorité.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "E) Salariés de droit privé en mission de service public",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00032",
+                  "E) Salariés de droit privé en mission de service public",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les mêmes obligations s’appliquent aux salariés de droit privé lorsqu’ils participent à une mission de service public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00033",
+                  "Les mêmes obligations s’appliquent aux salariés de droit privé lorsqu’ils participent à une mission de service public.",
+                ),
               ),
             ],
           ),
@@ -217,65 +350,133 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
 
           // Usagers du service public
           _ConditionCard(
-            title: "III — Les usagers du service public",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+              "f00034",
+              "III — Les usagers du service public",
+            ),
             cardColor: cardUsagers,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Égalité & expression des convictions"),
-              _BulletPoint(
-                text: "Tous les usagers sont égaux devant le service public.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00035",
+                  "A) Égalité & expression des convictions",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ils peuvent exprimer leurs convictions religieuses dans les limites du respect de la neutralité du service public, de son bon fonctionnement, et des impératifs d’ordre public (sécurité, santé, hygiène).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00036",
+                  "Tous les usagers sont égaux devant le service public.",
+                ),
               ),
-
-              SizedBox(height: 10),
-
-              _SubTitle("B) Interdiction du prosélytisme"),
               _BulletPoint(
-                text:
-                    "Les usagers doivent s’abstenir de toute forme de prosélytisme.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00037",
+                  "Ils peuvent exprimer leurs convictions religieuses dans les limites du respect de la neutralité du service public, de son bon fonctionnement, et des impératifs d’ordre public (sécurité, santé, hygiène).",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle(
-                "C) Règles communes : pas d’exception au nom des croyances",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00038",
+                  "B) Interdiction du prosélytisme",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00039",
+                  "Les usagers doivent s’abstenir de toute forme de prosélytisme.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00040",
+                  "C) Règles communes : pas d’exception au nom des croyances",
+                ),
               ),
               _Paragraph(
-                "Le principe de laïcité interdit à quiconque de se prévaloir de ses croyances religieuses pour s’affranchir des règles communes "
-                "régissant les relations entre collectivités publiques et particuliers.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00041",
+                      "Le principe de laïcité interdit à quiconque de se prévaloir de ses croyances religieuses pour s’affranchir des règles communes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00042",
+                      "régissant les relations entre collectivités publiques et particuliers.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Les usagers ne peuvent récuser un agent public ou d’autres usagers, ni exiger une adaptation du service ou d’un équipement public pour des motifs religieux.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00043",
+                  "Les usagers ne peuvent récuser un agent public ou d’autres usagers, ni exiger une adaptation du service ou d’un équipement public pour des motifs religieux.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans les cas les plus graves, des sanctions pénales peuvent être appliquées.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00044",
+                      "Dans les cas les plus graves, des sanctions pénales peuvent être appliquées.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("D) Vérification d’identité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00045",
+                  "D) Vérification d’identité",
+                ),
+              ),
               _Paragraph(
-                "Lorsque la vérification de l’identité est nécessaire, les usagers doivent se conformer aux obligations qui en découlent.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00046",
+                  "Lorsque la vérification de l’identité est nécessaire, les usagers doivent se conformer aux obligations qui en découlent.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("E) Usagers accueillis à temps complet"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00047",
+                  "E) Usagers accueillis à temps complet",
+                ),
+              ),
               _Paragraph(
-                "Les usagers accueillis à temps complet dans un service public (notamment médico-social, hospitalier ou pénitentiaire) "
-                "ont droit au respect de leurs croyances et à l’exercice de leur culte, sous réserve des contraintes liées au bon fonctionnement du service.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00048",
+                      "Les usagers accueillis à temps complet dans un service public (notamment médico-social, hospitalier ou pénitentiaire) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                      "f00049",
+                      "ont droit au respect de leurs croyances et à l’exercice de leur culte, sous réserve des contraintes liées au bon fonctionnement du service.",
+                    ),
               ),
             ],
           ),
@@ -288,9 +489,15 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
             cardColor: cardInfos,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Mis à jour le "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                    "f00050",
+                    "Mis à jour le ",
+                  ),
+                ),
                 TextSpan(
                   text: "13/03/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
@@ -298,7 +505,13 @@ class PaCharteLaiciteServicesPublicsPage extends StatelessWidget {
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
-              _Paragraph("Pour en savoir plus : www.laicite.gouv.fr"),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart",
+                  "f00051",
+                  "Pour en savoir plus : www.laicite.gouv.fr",
+                ),
+              ),
             ],
           ),
         ],
@@ -554,9 +767,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

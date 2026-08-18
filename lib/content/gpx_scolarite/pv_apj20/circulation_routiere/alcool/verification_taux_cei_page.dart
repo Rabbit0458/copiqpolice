@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class VerificationTauxCeiPage extends StatelessWidget {
   const VerificationTauxCeiPage({super.key});
@@ -56,7 +57,11 @@ class VerificationTauxCeiPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Alcool",
@@ -74,7 +79,11 @@ class VerificationTauxCeiPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Vérification des taux (C.E.I.)\nNotification ultérieure des taux",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00002",
+              "PV — Vérification des taux (C.E.I.)\nNotification ultérieure des taux",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,28 +94,53 @@ class VerificationTauxCeiPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Objectif du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00003",
+              "Objectif du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas concerne la vérification des taux d’alcool dans l’air expiré au moyen d’un éthylomètre "
-                "(C.E.I.), lorsque l’état d’ivresse manifeste empêche une notification immédiate des taux.\n\n"
-                "La notification est alors réalisée ultérieurement, une fois la personne en état de comprendre la portée des informations.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00004",
+                      "Ce canevas concerne la vérification des taux d’alcool dans l’air expiré au moyen d’un éthylomètre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00005",
+                      "(C.E.I.), lorsque l’état d’ivresse manifeste empêche une notification immédiate des taux.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00006",
+                      "La notification est alors réalisée ultérieurement, une fois la personne en état de comprendre la portée des informations.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Toujours indiquer : lieu exact, assistants, marque/n°/étalonnage de l’éthylomètre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00007",
+                  "Toujours indiquer : lieu exact, assistants, marque/n°/étalonnage de l’éthylomètre.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Tracer : taux affiché + taux retenu (marge d’erreur déduite).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00008",
+                  "Tracer : taux affiché + taux retenu (marge d’erreur déduite).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Notifier ultérieurement si l’ivresse manifeste empêche la compréhension.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00009",
+                  "Notifier ultérieurement si l’ivresse manifeste empêche la compréhension.",
+                ),
               ),
             ],
           ),
@@ -115,23 +149,36 @@ class VerificationTauxCeiPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (ici : fondement jurisprudentiel donné par ton texte)
           _ConditionCard(
-            title: "I — Cadre légal (à placer en tête du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00010",
+              "I — Cadre légal (à placer en tête du PV)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Lorsque l’ivresse manifeste empêche la personne de comprendre la portée des droits pouvant lui être notifiés, "
-                      "la notification des taux d’alcool peut être retardée : ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                        "f00011",
+                        "Lorsque l’ivresse manifeste empêche la personne de comprendre la portée des droits pouvant lui être notifiés, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                        "f00012",
+                        "la notification des taux d’alcool peut être retardée : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "Cass. crim., 27 octobre 2004",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                    "f00013",
+                    "Cass. crim., 27 octobre 2004",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -142,7 +189,11 @@ class VerificationTauxCeiPage extends StatelessWidget {
 
           // Image CANVA
           _ConditionCard(
-            title: "Canevas (visuel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00014",
+              "Canevas (visuel)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -156,41 +207,81 @@ class VerificationTauxCeiPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Les 3 points clés à sécuriser",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00015",
+              "Les 3 points clés à sécuriser",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Traçabilité (lieu / assistants)"),
-              _BulletPoint(
-                text:
-                    "Lieu de vérification : endroit exact où la mesure à l’éthylomètre est réalisée.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00016",
+                  "1) Traçabilité (lieu / assistants)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Assistants : fonctionnaires présents et participant à l’opération.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00017",
+                  "Lieu de vérification : endroit exact où la mesure à l’éthylomètre est réalisée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00018",
+                  "Assistants : fonctionnaires présents et participant à l’opération.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2) Régularité technique (éthylomètre)"),
-              _BulletPoint(
-                text:
-                    "Marque, numéro, date d’étalonnage : doivent impérativement figurer au PV.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00019",
+                  "2) Régularité technique (éthylomètre)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Bon fonctionnement : l’appareil effectue un contrôle automatique avant chaque mesure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00020",
+                  "Marque, numéro, date d’étalonnage : doivent impérativement figurer au PV.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00021",
+                  "Bon fonctionnement : l’appareil effectue un contrôle automatique avant chaque mesure.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3) Notification différée (ivresse manifeste)"),
-              _BulletPoint(
-                text:
-                    "Constater les taux au moment des mesures, mais reporter la notification si la personne ne peut comprendre.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00022",
+                  "3) Notification différée (ivresse manifeste)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mentionner le motif : état d’ivresse manifeste + référence jurisprudentielle.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00023",
+                  "Constater les taux au moment des mesures, mais reporter la notification si la personne ne peut comprendre.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00024",
+                  "Mentionner le motif : état d’ivresse manifeste + référence jurisprudentielle.",
+                ),
               ),
             ],
           ),
@@ -198,54 +289,136 @@ class VerificationTauxCeiPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Déroulé chronologique (rédaction du PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00025",
+              "II — Déroulé chronologique (rédaction du PV)",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1 — Lieu de vérification"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00026",
+                  "1 — Lieu de vérification",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le lieu exact de réalisation de la vérification par éthylomètre.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00027",
+                  "Indiquer le lieu exact de réalisation de la vérification par éthylomètre.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("2 — Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00028",
+                  "2 — Assistants",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00029",
+                  "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3 — Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00030",
+                  "3 — Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "Le conducteur étant en état d’ivresse manifeste, l’enquête se poursuit dans le cadre de la flagrance.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00031",
+                  "Le conducteur étant en état d’ivresse manifeste, l’enquête se poursuit dans le cadre de la flagrance.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4 — Éthylomètre (infos obligatoires)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00032",
+                  "4 — Éthylomètre (infos obligatoires)",
+                ),
+              ),
               _Paragraph(
-                "Les informations relatives à l’éthylomètre doivent impérativement apparaître : "
-                "marque, numéro et date d’étalonnage de l’appareil utilisé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00033",
+                      "Les informations relatives à l’éthylomètre doivent impérativement apparaître : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00034",
+                      "marque, numéro et date d’étalonnage de l’appareil utilisé.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("5 — 1er contrôle (constatations)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00035",
+                  "5 — 1er contrôle (constatations)",
+                ),
+              ),
               _Paragraph(
-                "Constater :\n"
-                "• le taux affiché par l’appareil\n"
-                "• le taux retenu après soustraction de la marge d’erreur",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00036",
+                      "Constater :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00037",
+                      "• le taux affiché par l’appareil\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00038",
+                      "• le taux retenu après soustraction de la marge d’erreur",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Notification différée",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00039",
+                  "Notification différée",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’état d’ivresse manifeste empêchant la personne de comprendre la portée des droits qui pourraient lui être notifiés, "
-                        "il convient de retarder la notification des taux d’alcool — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                          "f00040",
+                          "L’état d’ivresse manifeste empêchant la personne de comprendre la portée des droits qui pourraient lui être notifiés, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                          "f00041",
+                          "il convient de retarder la notification des taux d’alcool — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 27/10/2004",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00042",
+                      "Cass. crim., 27/10/2004",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -256,31 +429,62 @@ class VerificationTauxCeiPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
 
-              _SubTitle("6 — 2e contrôle (si réalisé)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00043",
+                  "6 — 2e contrôle (si réalisé)",
+                ),
+              ),
               _Paragraph(
-                "Un second contrôle peut être immédiatement effectué, après vérification du bon fonctionnement de l’appareil, "
-                "à l’initiative de l’agent procédant aux vérifications.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00044",
+                      "Un second contrôle peut être immédiatement effectué, après vérification du bon fonctionnement de l’appareil, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00045",
+                      "à l’initiative de l’agent procédant aux vérifications.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dès que le bouton MESURE est activé, l’appareil effectue automatiquement un contrôle de bon fonctionnement avant chaque mesure.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00046",
+                      "Dès que le bouton MESURE est activé, l’appareil effectue automatiquement un contrôle de bon fonctionnement avant chaque mesure.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
 
               _Paragraph(
-                "Les taux (affiché et retenu) sont ultérieurement portés à la connaissance de l’intéressé.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00047",
+                  "Les taux (affiché et retenu) sont ultérieurement portés à la connaissance de l’intéressé.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("7 — Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00048",
+                  "7 — Avis O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "L’O.P.J. est immédiatement informé. Ses instructions peuvent être mentionnées le cas échéant.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00049",
+                  "L’O.P.J. est immédiatement informé. Ses instructions peuvent être mentionnées le cas échéant.",
+                ),
               ),
             ],
           ),
@@ -288,15 +492,31 @@ class VerificationTauxCeiPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Clôture (signature)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00050",
+              "III — Clôture (signature)",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La notification des taux d’alcool étant reportée du fait de l’ivresse manifeste, "
-                "l’intéressé ne signe pas le procès-verbal.\n\n"
-                "Mentionner l’information immédiate de l’O.P.J. et, si nécessaire, les instructions reçues.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00051",
+                      "La notification des taux d’alcool étant reportée du fait de l’ivresse manifeste, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00052",
+                      "l’intéressé ne signe pas le procès-verbal.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                      "f00053",
+                      "Mentionner l’information immédiate de l’O.P.J. et, si nécessaire, les instructions reçues.",
+                    ),
               ),
             ],
           ),
@@ -304,26 +524,42 @@ class VerificationTauxCeiPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — À ne pas oublier",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+              "f00054",
+              "IV — À ne pas oublier",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Toujours tracer l’état d’ivresse manifeste (éléments factuels si connus dans la procédure).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00055",
+                  "Toujours tracer l’état d’ivresse manifeste (éléments factuels si connus dans la procédure).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toujours tracer l’éthylomètre : marque, numéro, date d’étalonnage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00056",
+                  "Toujours tracer l’éthylomètre : marque, numéro, date d’étalonnage.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toujours tracer les deux taux : affiché + retenu (marge d’erreur).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00057",
+                  "Toujours tracer les deux taux : affiché + retenu (marge d’erreur).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Toujours expliquer clairement pourquoi la notification est différée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00058",
+                  "Toujours expliquer clairement pourquoi la notification est différée.",
+                ),
               ),
             ],
           ),
@@ -652,8 +888,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+        "f00060",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+        "f00061",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -826,7 +1070,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                    "f00062",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -895,7 +1143,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart",
+                  "f00063",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -923,7 +1175,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -958,7 +1212,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

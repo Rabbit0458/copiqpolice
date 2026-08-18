@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CompteRenduPage extends StatelessWidget {
   const CompteRenduPage({super.key});
@@ -56,10 +57,18 @@ class CompteRenduPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Hiérarchie & information",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+            "f00002",
+            "Hiérarchie & information",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class CompteRenduPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le compte-rendu",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+              "f00003",
+              "Le compte-rendu",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,14 +99,26 @@ class CompteRenduPage extends StatelessWidget {
 
           // Définition / idée générale
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les policiers doivent rendre compte, en permanence, de leurs activités à l’autorité hiérarchique.\n\n"
-                "Le compte-rendu peut être effectué oralement ou prendre la forme d’un rapport ou d’une mention de main courante.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00005",
+                      "Les policiers doivent rendre compte, en permanence, de leurs activités à l’autorité hiérarchique.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00006",
+                      "Le compte-rendu peut être effectué oralement ou prendre la forme d’un rapport ou d’une mention de main courante.",
+                    ),
               ),
             ],
           ),
@@ -102,17 +127,41 @@ class CompteRenduPage extends StatelessWidget {
 
           // ✅ Obligations (élément « légal/pro » en haut)
           _ConditionCard(
-            title: "I — Règle professionnelle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+              "f00007",
+              "I — Règle professionnelle",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’obligation de rendre compte sans délai à la hiérarchie de tout fait ou incident "
-                "à caractère personnel ou se rapportant à l’exécution du service s’applique à tous les policiers.\n\n"
-                "La hiérarchie doit être tenue informée :\n"
-                "• de l’évolution des faits signalés ;\n"
-                "• des suites données.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00008",
+                      "L’obligation de rendre compte sans délai à la hiérarchie de tout fait ou incident ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00009",
+                      "à caractère personnel ou se rapportant à l’exécution du service s’applique à tous les policiers.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00010",
+                      "La hiérarchie doit être tenue informée :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00011",
+                      "• de l’évolution des faits signalés ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00012",
+                      "• des suites données.",
+                    ),
               ),
             ],
           ),
@@ -121,24 +170,78 @@ class CompteRenduPage extends StatelessWidget {
 
           // Principe
           _ConditionCard(
-            title: "II — Le compte-rendu",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+              "f00013",
+              "II — Le compte-rendu",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Principe"),
-              _Paragraph("Le compte-rendu est un exposé qui doit être :"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00014",
+                  "A) Principe",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00015",
+                  "Le compte-rendu est un exposé qui doit être :",
+                ),
+              ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Exact et objectif"),
-              _BulletPoint(text: "Circonstancié"),
-              _BulletPoint(text: "Clair et concis"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00016",
+                  "Exact et objectif",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00017",
+                  "Circonstancié",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00018",
+                  "Clair et concis",
+                ),
+              ),
               SizedBox(height: 12),
               _Paragraph(
-                "Il relate l’action du policier :\n"
-                "• sur des faits auxquels il a participé ;\n"
-                "• soit comme témoin ;\n"
-                "• soit comme acteur ;\n"
-                "• et sur les décisions qu’il a été amené à prendre pour assurer sa mission.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00019",
+                      "Il relate l’action du policier :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00020",
+                      "• sur des faits auxquels il a participé ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00021",
+                      "• soit comme témoin ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00022",
+                      "• soit comme acteur ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00023",
+                      "• et sur les décisions qu’il a été amené à prendre pour assurer sa mission.",
+                    ),
               ),
             ],
           ),
@@ -147,28 +250,79 @@ class CompteRenduPage extends StatelessWidget {
 
           // Structure (grille)
           _ConditionCard(
-            title: "B) Structure (grille de rédaction)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+              "f00024",
+              "B) Structure (grille de rédaction)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour effectuer un compte-rendu clair et précis, il est recommandé d’utiliser une grille "
-                "répondant aux questions essentielles :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00025",
+                      "Pour effectuer un compte-rendu clair et précis, il est recommandé d’utiliser une grille ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00026",
+                      "répondant aux questions essentielles :",
+                    ),
               ),
               SizedBox(height: 10),
-              _IntroBullet(text: "Quand ?"),
-              _IntroBullet(text: "Où ?"),
-              _IntroBullet(text: "Quoi ?"),
-              _IntroBullet(text: "Comment ?"),
-              _IntroBullet(text: "Qui ?"),
-              _IntroBullet(text: "Conséquences ?"),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00027",
+                  "Quand ?",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00028",
+                  "Où ?",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00029",
+                  "Quoi ?",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00030",
+                  "Comment ?",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00031",
+                  "Qui ?",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00032",
+                  "Conséquences ?",
+                ),
+              ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Cette grille évite les oublis, améliore la lisibilité et facilite l’exploitation du compte-rendu par la hiérarchie.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                      "f00033",
+                      "Cette grille évite les oublis, améliore la lisibilité et facilite l’exploitation du compte-rendu par la hiérarchie.",
+                    ),
                   ),
                 ],
               ),
@@ -179,68 +333,175 @@ class CompteRenduPage extends StatelessWidget {
 
           // Développement (détaillé et pédagogique)
           _ConditionCard(
-            title: "C) Développement (contenu attendu)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+              "f00034",
+              "C) Développement (contenu attendu)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) QUAND ?"),
-              _BulletPoint(text: "Date et heure des faits / de l’événement."),
-
-              SizedBox(height: 10),
-
-              _SubTitle("2) OÙ ?"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00035",
+                  "1) QUAND ?",
+                ),
+              ),
               _BulletPoint(
-                text: "Lieu précis (adresse, secteur, point de repère).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00036",
+                  "Date et heure des faits / de l’événement.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("3) QUI ?"),
-              _Paragraph("Personnes impliquées ou en cause :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00037",
+                  "2) OÙ ?",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00038",
+                  "Lieu précis (adresse, secteur, point de repère).",
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00039",
+                  "3) QUI ?",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00040",
+                  "Personnes impliquées ou en cause :",
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint(text: "Auteurs"),
               _BulletPoint(text: "Victimes"),
-              _BulletPoint(text: "Plaignants / requérants"),
-              _BulletPoint(text: "Témoins"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00041",
+                  "Plaignants / requérants",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00042",
+                  "Témoins",
+                ),
+              ),
 
               SizedBox(height: 10),
 
-              _SubTitle("4) QUOI ?"),
-              _Paragraph("Nature des faits / de l’événement / de la demande :"),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text: "Faits : accident de circulation, trouble, dégradation…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00043",
+                  "4) QUOI ?",
+                ),
               ),
-              _BulletPoint(text: "Événement : explosion d’immeuble, incendie…"),
-              _BulletPoint(
-                text: "Demande : intervention des secours, renseignements…",
-              ),
-
-              SizedBox(height: 10),
-
-              _SubTitle("5) COMMENT ?"),
               _Paragraph(
-                "Circonstances dans lesquelles se sont déroulés les faits :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00044",
+                  "Nature des faits / de l’événement / de la demande :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Ce que l’on a vu ou entendu en distinguant : direct (constatations) / indirect (déclarations).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00045",
+                  "Faits : accident de circulation, trouble, dégradation…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00046",
+                  "Événement : explosion d’immeuble, incendie…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00047",
+                  "Demande : intervention des secours, renseignements…",
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00048",
+                  "5) COMMENT ?",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00049",
+                  "Circonstances dans lesquelles se sont déroulés les faits :",
+                ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00050",
+                  "Ce que l’on a vu ou entendu en distinguant : direct (constatations) / indirect (déclarations).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("6) CONSÉQUENCES ?"),
-              _Paragraph("Conséquences constatées et actions menées :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00051",
+                  "6) CONSÉQUENCES ?",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00052",
+                  "Conséquences constatées et actions menées :",
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Pour les victimes : blessures, hospitalisation, préjudices matériels.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00053",
+                  "Pour les victimes : blessures, hospitalisation, préjudices matériels.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pour la police : recherches, interpellation, conduite/convocation au commissariat, garde des lieux, déviation de circulation, avis aux secours ou aux autorités compétentes…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00054",
+                  "Pour la police : recherches, interpellation, conduite/convocation au commissariat, garde des lieux, déviation de circulation, avis aux secours ou aux autorités compétentes…",
+                ),
               ),
             ],
           ),
@@ -249,22 +510,35 @@ class CompteRenduPage extends StatelessWidget {
 
           // Synthèse / rappel qualité
           _ConditionCard(
-            title: "En résumé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+              "f00055",
+              "En résumé",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Rendre compte sans délai et tenir la hiérarchie informée de l’évolution et des suites.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00056",
+                  "Rendre compte sans délai et tenir la hiérarchie informée de l’évolution et des suites.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rédiger un compte-rendu exact, objectif, circonstancié, clair et concis.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00057",
+                  "Rédiger un compte-rendu exact, objectif, circonstancié, clair et concis.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Utiliser la grille : Quand / Où / Qui / Quoi / Comment / Conséquences.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/hierarchie_info/compte_rendu_page.dart",
+                  "f00058",
+                  "Utiliser la grille : Quand / Où / Qui / Quoi / Comment / Conséquences.",
+                ),
               ),
             ],
           ),
@@ -520,9 +794,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

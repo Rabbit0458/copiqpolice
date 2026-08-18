@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMaeDefinitionPage extends StatelessWidget {
   const PaMaeDefinitionPage({super.key});
@@ -15,11 +16,11 @@ class PaMaeDefinitionPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF2F2F2F) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color cardColor = isDark
-? const Color(0xFF424242)
-: const Color(0xFFF5F7FB);
+        ? const Color(0xFF424242)
+        : const Color(0xFFF5F7FB);
     final Color titleCardColor = isDark
         ? Colors.white
         : const Color(0xFF0D47A1);
@@ -34,11 +35,19 @@ class PaMaeDefinitionPage extends StatelessWidget {
         centerTitle: true,
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+            "f00001",
+            'Retour',
+          ),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
         ),
         title: Text(
-          'Mandat d’arrêt européen — Définition',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+            "f00002",
+            'Mandat d’arrêt européen — Définition',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -54,7 +63,11 @@ class PaMaeDefinitionPage extends StatelessWidget {
           // EN-TÊTE GÉNÉRAL
           // ===============================================================
           Text(
-            'Le mandat d’arrêt européen',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+              "f00003",
+              'Le mandat d’arrêt européen',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 13.5,
@@ -64,7 +77,11 @@ class PaMaeDefinitionPage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            '2.1 — Définition',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+              "f00004",
+              '2.1 — Définition',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -74,11 +91,27 @@ class PaMaeDefinitionPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'Le mandat d’arrêt européen s’inscrit dans le mouvement de renforcement de la '
-            'coopération judiciaire pénale au sein de l’Union européenne. Il remplace, entre '
-            'États membres, les procédures classiques d’extradition pour la remise des '
-            'personnes recherchées.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                  "f00005",
+                  'Le mandat d’arrêt européen s’inscrit dans le mouvement de renforcement de la ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                  "f00006",
+                  'coopération judiciaire pénale au sein de l’Union européenne. Il remplace, entre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                  "f00007",
+                  'États membres, les procédures classiques d’extradition pour la remise des ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                  "f00008",
+                  'personnes recherchées.',
+                ),
           ),
           const SizedBox(height: 16),
 
@@ -86,28 +119,67 @@ class PaMaeDefinitionPage extends StatelessWidget {
           // SUBSTITUTION À L’EXTRADITION
           // ===============================================================
           _ConditionCard(
-            title:
-                'Le mandat d’arrêt européen et la substitution à la procédure d’extradition',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+              "f00009",
+              'Le mandat d’arrêt européen et la substitution à la procédure d’extradition',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Pour les États membres de l’Union européenne ayant transposé la décision-cadre '
-                'relative au mandat d’arrêt européen en droit interne, ce mécanisme se substitue '
-                'à la procédure classique d’extradition. La remise de la personne recherchée '
-                'repose sur le principe de reconnaissance mutuelle des décisions judiciaires, '
-                'ce qui permet une procédure plus rapide et plus simplifiée entre autorités '
-                'judiciaires.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00010",
+                      'Pour les États membres de l’Union européenne ayant transposé la décision-cadre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00011",
+                      'relative au mandat d’arrêt européen en droit interne, ce mécanisme se substitue ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00012",
+                      'à la procédure classique d’extradition. La remise de la personne recherchée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00013",
+                      'repose sur le principe de reconnaissance mutuelle des décisions judiciaires, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00014",
+                      'ce qui permet une procédure plus rapide et plus simplifiée entre autorités ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00015",
+                      'judiciaires.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le mandat d’arrêt européen ne supprime pas l’extradition de manière générale : '
-                        'il la remplace uniquement dans les relations entre les États membres de '
-                        'l’Union européenne qui ont intégré ce dispositif dans leur ordre juridique interne.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00016",
+                          'Le mandat d’arrêt européen ne supprime pas l’extradition de manière générale : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00017",
+                          'il la remplace uniquement dans les relations entre les États membres de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00018",
+                          'l’Union européenne qui ont intégré ce dispositif dans leur ordre juridique interne.',
+                        ),
                   ),
                 ],
               ),
@@ -118,24 +190,39 @@ class PaMaeDefinitionPage extends StatelessWidget {
           // ===============================================================
           // DÉFINITION JURIDIQUE (ARTICLE 695-11)
           // ===============================================================
-          const _SubTitle(
-            '2.1 — Définition juridique du mandat d’arrêt européen',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+              "f00019",
+              '2.1 — Définition juridique du mandat d’arrêt européen',
+            ),
           ),
           const SizedBox(height: 4),
 
           _ConditionCard(
-            title: 'Texte de référence et définition légale',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+              "f00020",
+              'Texte de référence et définition légale',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'La définition du mandat d’arrêt européen est donnée par ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                    "f00021",
+                    'La définition du mandat d’arrêt européen est donnée par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 695-11 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                    "f00022",
+                    'l’article 695-11 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: lawRed(),
                     fontWeight: FontWeight.w800,
@@ -144,37 +231,84 @@ class PaMaeDefinitionPage extends StatelessWidget {
                 const TextSpan(text: ' :'),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Le mandat d’arrêt européen est une décision judiciaire émise par un État membre '
-                'de l’Union européenne, appelé État membre d’émission, en vue de l’arrestation '
-                'et de la remise, par un autre État membre, appelé État membre d’exécution, '
-                'd’une personne recherchée :',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00023",
+                      'Le mandat d’arrêt européen est une décision judiciaire émise par un État membre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00024",
+                      'de l’Union européenne, appelé État membre d’émission, en vue de l’arrestation ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00025",
+                      'et de la remise, par un autre État membre, appelé État membre d’exécution, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00026",
+                      'd’une personne recherchée :',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _IntroBullet(
-                text: 'soit pour l’exercice de poursuites pénales ;',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                  "f00027",
+                  'soit pour l’exercice de poursuites pénales ;',
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    'soit pour l’exécution d’une peine ou d’une mesure de sûreté privative de liberté.',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                  "f00028",
+                  'soit pour l’exécution d’une peine ou d’une mesure de sûreté privative de liberté.',
+                ),
               ),
               const SizedBox(height: 12),
-              const _ConditionCard(
-                title: 'Les acteurs principaux de la procédure',
+              _ConditionCard(
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                  "f00029",
+                  'Les acteurs principaux de la procédure',
+                ),
                 cardColor: Colors.transparent,
                 accent: Colors.transparent,
                 titleColor: Colors.transparent,
                 children: [
                   _BulletPoint(
                     text:
-                        'L’« État membre d’émission » : l’État de l’Union européenne dont l’autorité '
-                        'judiciaire émet le mandat d’arrêt européen pour une personne déterminée ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00030",
+                          'L’« État membre d’émission » : l’État de l’Union européenne dont l’autorité ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00031",
+                          'judiciaire émet le mandat d’arrêt européen pour une personne déterminée ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'L’« État membre d’exécution » : l’État de l’Union européenne dans lequel la '
-                        'personne recherchée est localisée et dont l’autorité judiciaire est saisie '
-                        'pour procéder à son arrestation et à sa remise.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00032",
+                          'L’« État membre d’exécution » : l’État de l’Union européenne dans lequel la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00033",
+                          'personne recherchée est localisée et dont l’autorité judiciaire est saisie ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                          "f00034",
+                          'pour procéder à son arrestation et à sa remise.',
+                        ),
                   ),
                 ],
               ),
@@ -186,31 +320,71 @@ class PaMaeDefinitionPage extends StatelessWidget {
           // SYNTHÈSE OPÉRATIONNELLE POUR L’ENQUÊTEUR
           // ===============================================================
           _ConditionCard(
-            title: 'À retenir pour l’enquêteur',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+              "f00035",
+              'À retenir pour l’enquêteur',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleCardColor,
-            children: const [
+            children: [
               _BulletPoint(
                 text:
-                    'Le mandat d’arrêt européen est une décision judiciaire, et non un simple acte de police : '
-                    'il est émis et exécuté par des autorités judiciaires (parquet, juge, juridiction) ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00036",
+                      'Le mandat d’arrêt européen est une décision judiciaire, et non un simple acte de police : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00037",
+                      'il est émis et exécuté par des autorités judiciaires (parquet, juge, juridiction) ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Il vise la remise rapide d’une personne entre deux États membres de l’Union européenne, '
-                    'pour l’exercice de poursuites ou l’exécution d’une peine ou d’une mesure de sûreté ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00038",
+                      'Il vise la remise rapide d’une personne entre deux États membres de l’Union européenne, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00039",
+                      'pour l’exercice de poursuites ou l’exécution d’une peine ou d’une mesure de sûreté ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Dans les relations entre États membres qui ont transposé la décision-cadre, il remplace '
-                    'la procédure d’extradition, permettant ainsi une coopération plus fluide et plus efficace ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00040",
+                      'Dans les relations entre États membres qui ont transposé la décision-cadre, il remplace ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00041",
+                      'la procédure d’extradition, permettant ainsi une coopération plus fluide et plus efficace ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'Sur le terrain, l’exécution d’un mandat d’arrêt européen suppose les mêmes exigences '
-                    'de sécurité et de respect des droits fondamentaux qu’une interpellation classique, '
-                    'avec une information précise de la personne sur la nature du mandat et sur ses droits.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00042",
+                      'Sur le terrain, l’exécution d’un mandat d’arrêt européen suppose les mêmes exigences ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00043",
+                      'de sécurité et de respect des droits fondamentaux qu’une interpellation classique, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart",
+                      "f00044",
+                      'avec une information précise de la personne sur la nature du mandat et sur ses droits.',
+                    ),
               ),
             ],
           ),
@@ -466,9 +640,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

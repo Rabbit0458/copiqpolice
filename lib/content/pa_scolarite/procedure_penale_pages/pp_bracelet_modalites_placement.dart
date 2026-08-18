@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
   const PaPpBraceletModalitesPlacementPage({super.key});
@@ -15,8 +16,12 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
 
-    final Color accent = isDark ? const Color(0xFF64B5F6) : const Color(0xFF1565C0);
-    final Color cardColor = isDark ? const Color(0xFF1E1E1E) : const Color(0xFFF7F7F7);
+    final Color accent = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color cardColor = isDark
+        ? const Color(0xFF1E1E1E)
+        : const Color(0xFFF7F7F7);
     const Color articleRed = Color(0xFFD32F2F);
 
     return Scaffold(
@@ -28,10 +33,18 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Surveillance électronique — Modalités',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+            "f00002",
+            'Surveillance électronique — Modalités',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -45,7 +58,11 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'CHAPITRE 2\nMODALITÉS DU PLACEMENT SOUS SURVEILLANCE ÉLECTRONIQUE',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+              "f00003",
+              'CHAPITRE 2\nMODALITÉS DU PLACEMENT SOUS SURVEILLANCE ÉLECTRONIQUE',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -56,28 +73,51 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
 
-          const _Paragraph(
-            'Ce chapitre présente les conditions concrètes de mise en œuvre de la surveillance électronique, '
-            'qu’il s’agisse d’un dispositif fixe lié à une assignation à résidence ou d’un dispositif mobile utilisé '
-            'dans des hypothèses particulières (infractions graves, violences intrafamiliales, coopération pénale internationale).',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00004",
+                  'Ce chapitre présente les conditions concrètes de mise en œuvre de la surveillance électronique, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00005",
+                  'qu’il s’agisse d’un dispositif fixe lié à une assignation à résidence ou d’un dispositif mobile utilisé ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00006",
+                  'dans des hypothèses particulières (infractions graves, violences intrafamiliales, coopération pénale internationale).',
+                ),
           ),
 
           const SizedBox(height: 16),
 
           // ====================== 2.1 PRINCIPE ==============================
           _ConditionCard(
-            title: '2.1 — Principe de la surveillance électronique',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+              "f00007",
+              '2.1 — Principe de la surveillance électronique',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'La surveillance électronique s’exerce conformément aux dispositions de ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00008",
+                    'La surveillance électronique s’exerce conformément aux dispositions de ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’Article 723-8 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00009",
+                    'l’Article 723-8 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -85,15 +125,35 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ', qui prévoient la mise en place d’un procédé permettant de détecter à distance la présence '
-                      'ou l’absence de la personne à son domicile ou dans le lieu d’assignation fixé par le juge.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                        "f00010",
+                        ', qui prévoient la mise en place d’un procédé permettant de détecter à distance la présence ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                        "f00011",
+                        'ou l’absence de la personne à son domicile ou dans le lieu d’assignation fixé par le juge.',
+                      ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                'Concrètement, la personne porte un bracelet ou un autre dispositif électronique relié à un système de contrôle, '
-                'qui vérifie le respect des horaires et des lieux imposés par la décision judiciaire. Toute sortie non autorisée '
-                'ou non-respect des plages horaires peut être immédiatement signalé à l’autorité judiciaire.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00012",
+                      'Concrètement, la personne porte un bracelet ou un autre dispositif électronique relié à un système de contrôle, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00013",
+                      'qui vérifie le respect des horaires et des lieux imposés par la décision judiciaire. Toute sortie non autorisée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00014",
+                      'ou non-respect des plages horaires peut être immédiatement signalé à l’autorité judiciaire.',
+                    ),
               ),
             ],
           ),
@@ -102,32 +162,63 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
 
           // =========== 2.2 ARSE AVEC SURVEILLANCE MOBILE ===================
           _ConditionCard(
-            title:
-                '2.2 — Assignation à résidence avec mise sous surveillance électronique mobile',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+              "f00015",
+              '2.2 — Assignation à résidence avec mise sous surveillance électronique mobile',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph(
-                'Dans certains cas prévus par la loi, il peut être recouru à une surveillance électronique « mobile », '
-                'permettant de suivre les déplacements de la personne au-delà de son domicile. Ce dispositif renforce le contrôle '
-                'exercé sur les personnes particulièrement dangereuses ou impliquées dans des procédures sensibles.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00016",
+                      'Dans certains cas prévus par la loi, il peut être recouru à une surveillance électronique « mobile », ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00017",
+                      'permettant de suivre les déplacements de la personne au-delà de son domicile. Ce dispositif renforce le contrôle ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00018",
+                      'exercé sur les personnes particulièrement dangereuses ou impliquées dans des procédures sensibles.',
+                    ),
               ),
 
               SizedBox(height: 12),
 
               // ---------- 2.2.1 INFRACTIONS PUNIES DE +7 ANS ----------------
               _SubTitle(
-                '2.2.1 — Infraction punie de plus de 7 ans et suivi socio-judiciaire',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00019",
+                  '2.2.1 — Infraction punie de plus de 7 ans et suivi socio-judiciaire',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Lorsque l’infraction ayant motivé la mise en examen est punie de plus de sept ans d’emprisonnement et que le suivi '
-                      'socio-judiciaire est encouru, il peut être fait recours au procédé de surveillance mobile prévu par ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                        "f00020",
+                        'Lorsque l’infraction ayant motivé la mise en examen est punie de plus de sept ans d’emprisonnement et que le suivi ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                        "f00021",
+                        'socio-judiciaire est encouru, il peut être fait recours au procédé de surveillance mobile prévu par ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'l’Article 763-12 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00022",
+                    'l’Article 763-12 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -135,8 +226,16 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      '. Dans cette hypothèse, le juge d’instruction exerce les prérogatives habituellement dévolues au juge de '
-                      'l’application des peines pour ce qui concerne la mise en œuvre du dispositif.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                        "f00023",
+                        '. Dans cette hypothèse, le juge d’instruction exerce les prérogatives habituellement dévolues au juge de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                        "f00024",
+                        'l’application des peines pour ce qui concerne la mise en œuvre du dispositif.',
+                      ),
                 ),
               ]),
 
@@ -144,39 +243,80 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
 
               // ---------- 2.2.2 VIOLENCES / MENACES INTRAFAMILIALES ----------
               _SubTitle(
-                '2.2.2 — Violences ou menaces au sein du couple ou de la famille',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00025",
+                  '2.2.2 — Violences ou menaces au sein du couple ou de la famille',
+                ),
               ),
               _Paragraph(
-                'L’assignation à résidence avec surveillance électronique mobile peut également être mise en œuvre lorsque la personne '
-                'est mise en examen pour certaines violences ou menaces graves commises dans le cadre familial.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00026",
+                      'L’assignation à résidence avec surveillance électronique mobile peut également être mise en œuvre lorsque la personne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00027",
+                      'est mise en examen pour certaines violences ou menaces graves commises dans le cadre familial.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Les faits doivent être punis d’au moins cinq ans d’emprisonnement et être commis :',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00028",
+                  'Les faits doivent être punis d’au moins cinq ans d’emprisonnement et être commis :',
+                ),
               ),
               SizedBox(height: 4),
-              _BulletPoint(text: 'contre son conjoint ou son concubin ;'),
               _BulletPoint(
-                text:
-                    'contre son partenaire lié par un pacte civil de solidarité (PACS) ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00029",
+                  'contre son conjoint ou son concubin ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'contre ses enfants ou ceux de son conjoint, de son concubin ou de son partenaire.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00030",
+                  'contre son partenaire lié par un pacte civil de solidarité (PACS) ;',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00031",
+                  'contre ses enfants ou ceux de son conjoint, de son concubin ou de son partenaire.',
+                ),
               ),
               SizedBox(height: 4),
               _Paragraph.rich([
-                TextSpan(text: 'Ce dispositif spécifique est prévu par '),
                 TextSpan(
-                  text: 'l’Article 142-12-1 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00032",
+                    'Ce dispositif spécifique est prévu par ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00033",
+                    'l’Article 142-12-1 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' et s’inscrit dans le renforcement de la lutte contre les violences intrafamiliales.',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00034",
+                    ' et s’inscrit dans le renforcement de la lutte contre les violences intrafamiliales.',
+                  ),
                 ),
               ]),
 
@@ -184,25 +324,53 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
 
               // ---------- 2.2.3 COOPÉRATION PÉNALE INTERNATIONALE ----------
               _SubTitle(
-                '2.2.3 — Demandes d’extradition et coopérations pénales internationales',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00035",
+                  '2.2.3 — Demandes d’extradition et coopérations pénales internationales',
+                ),
               ),
               _Paragraph(
-                'La surveillance électronique mobile peut enfin être utilisée lorsque la personne fait l’objet d’une procédure '
-                'de remise ou de coopération pénale internationale. Elle permet alors de garantir la disponibilité de l’intéressé '
-                'sans recourir systématiquement à la détention provisoire.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00036",
+                      'La surveillance électronique mobile peut enfin être utilisée lorsque la personne fait l’objet d’une procédure ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00037",
+                      'de remise ou de coopération pénale internationale. Elle permet alors de garantir la disponibilité de l’intéressé ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                      "f00038",
+                      'sans recourir systématiquement à la détention provisoire.',
+                    ),
               ),
               SizedBox(height: 8),
 
               // Demande d'extradition
               _BulletPoint(
-                text: 'dans le cadre d’une demande d’extradition ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00039",
+                  'dans le cadre d’une demande d’extradition ;',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Le fondement juridique est alors donné par ',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00040",
+                    'Le fondement juridique est alors donné par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’Article 696-11 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00041",
+                    'l’Article 696-11 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -214,12 +382,26 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
 
               // Mandat d'arrêt européen
               _BulletPoint(
-                text: 'pour l’exécution d’un mandat d’arrêt européen ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00042",
+                  'pour l’exécution d’un mandat d’arrêt européen ;',
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: 'La mesure est prévue par '),
                 TextSpan(
-                  text: 'l’Article 695-28 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00043",
+                    'La mesure est prévue par ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00044",
+                    'l’Article 695-28 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -231,13 +413,26 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
 
               // Demande CPI
               _BulletPoint(
-                text:
-                    'lorsqu’il existe une demande d’arrestation provisoire aux fins de remise à la Cour pénale internationale ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00045",
+                  'lorsqu’il existe une demande d’arrestation provisoire aux fins de remise à la Cour pénale internationale ;',
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: 'Ce cas de figure est visé par '),
                 TextSpan(
-                  text: 'l’Article 627-5 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00046",
+                    'Ce cas de figure est visé par ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00047",
+                    'l’Article 627-5 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -249,13 +444,26 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
 
               // Demande d'arrestation provisoire d'un État étranger
               _BulletPoint(
-                text:
-                    'ou encore dans le cadre d’une demande d’arrestation provisoire présentée par un État étranger ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                  "f00048",
+                  'ou encore dans le cadre d’une demande d’arrestation provisoire présentée par un État étranger ;',
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: 'dans ce cas, le texte applicable est '),
                 TextSpan(
-                  text: 'l’Article 696-23 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00049",
+                    'dans ce cas, le texte applicable est ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                    "f00050",
+                    'l’Article 696-23 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
@@ -270,9 +478,21 @@ class PaPpBraceletModalitesPlacementPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La surveillance électronique mobile demeure une mesure fortement attentatoire à la liberté d’aller et venir. '
-                        'Elle ne doit être mise en œuvre que lorsque les nécessités de la procédure et la gravité des faits le justifient, '
-                        'et lorsqu’aucune autre mesure moins restrictive (contrôle judiciaire simple, ARSE fixe) n’apparaît suffisante.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                          "f00051",
+                          'La surveillance électronique mobile demeure une mesure fortement attentatoire à la liberté d’aller et venir. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                          "f00052",
+                          'Elle ne doit être mise en œuvre que lorsque les nécessités de la procédure et la gravité des faits le justifient, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart",
+                          "f00053",
+                          'et lorsqu’aucune autre mesure moins restrictive (contrôle judiciaire simple, ARSE fixe) n’apparaît suffisante.',
+                        ),
                   ),
                 ],
               ),
@@ -533,9 +753,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

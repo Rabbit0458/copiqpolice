@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CivilementResponsableGeneralitesPage extends StatelessWidget {
   const CivilementResponsableGeneralitesPage({super.key});
@@ -50,10 +51,18 @@ class CivilementResponsableGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Audition — Mineur",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+            "f00002",
+            "Audition — Mineur",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class CivilementResponsableGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Audition du civilement responsable\nGénéralités",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+              "f00003",
+              "Audition du civilement responsable\nGénéralités",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,18 +97,28 @@ class CivilementResponsableGeneralitesPage extends StatelessWidget {
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute audition du mineur doit donner lieu à l’audition de son civilement responsable.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00004",
+                  "Toute audition du mineur doit donner lieu à l’audition de son civilement responsable.",
+                ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Le civilement responsable prend connaissance des faits reprochés et des déclarations du mineur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00005",
+                  "Le civilement responsable prend connaissance des faits reprochés et des déclarations du mineur.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Il peut être interrogé sur la personnalité de l’enfant, son comportement (domicile/école), ses antécédents, un éventuel suivi par le juge des enfants, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00006",
+                  "Il peut être interrogé sur la personnalité de l’enfant, son comportement (domicile/école), ses antécédents, un éventuel suivi par le juge des enfants, etc.",
+                ),
               ),
             ],
           ),
@@ -104,19 +127,30 @@ class CivilementResponsableGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (obligatoire)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L.12-5 du C.J.P.M.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                    "f00008",
+                    "Article L.12-5 du C.J.P.M.",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : les responsables légaux reçoivent les mêmes informations que celles communiquées au mineur au cours de la procédure.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                    "f00009",
+                    " : les responsables légaux reçoivent les mêmes informations que celles communiquées au mineur au cours de la procédure.",
+                  ),
                 ),
               ]),
             ],
@@ -126,32 +160,87 @@ class CivilementResponsableGeneralitesPage extends StatelessWidget {
 
           // Déroulé / points d’attention (pédagogique)
           _ConditionCard(
-            title: "II — Déroulé & points clés",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+              "f00010",
+              "II — Déroulé & points clés",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Présence du mineur"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00011",
+                  "A) Présence du mineur",
+                ),
+              ),
               _Paragraph(
-                "La présence du mineur n’est pas obligatoire lors de l’audition du civilement responsable.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00012",
+                  "La présence du mineur n’est pas obligatoire lors de l’audition du civilement responsable.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Contenu de l’audition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00013",
+                  "B) Contenu de l’audition",
+                ),
+              ),
               _Paragraph(
-                "À cette occasion, le civilement responsable peut être entendu sur :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00014",
+                  "À cette occasion, le civilement responsable peut être entendu sur :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "La personnalité de l’enfant et son comportement au domicile.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00015",
+                  "La personnalité de l’enfant et son comportement au domicile.",
+                ),
               ),
-              _BulletPoint(text: "Son comportement à l’école."),
-              _BulletPoint(text: "Ses antécédents judiciaires éventuels."),
-              _BulletPoint(text: "Un éventuel suivi par le juge des enfants."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00016",
+                  "Son comportement à l’école.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00017",
+                  "Ses antécédents judiciaires éventuels.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00018",
+                  "Un éventuel suivi par le juge des enfants.",
+                ),
+              ),
               SizedBox(height: 12),
-              _SubTitle("C) Information identique à celle du mineur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00019",
+                  "C) Information identique à celle du mineur",
+                ),
+              ),
               _Paragraph(
-                "Les responsables légaux doivent recevoir les mêmes informations que le mineur au cours de la procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00020",
+                  "Les responsables légaux doivent recevoir les mêmes informations que le mineur au cours de la procédure.",
+                ),
               ),
             ],
           ),
@@ -160,24 +249,39 @@ class CivilementResponsableGeneralitesPage extends StatelessWidget {
 
           // Point obligatoire en fin d’audition (mise en avant)
           _ConditionCard(
-            title: "III — Point obligatoire en fin d’audition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+              "f00021",
+              "III — Point obligatoire en fin d’audition",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "OBLIGATION",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À l’issue de l’audition, demander obligatoirement au civilement responsable s’il accepte de reprendre le mineur en charge dès sa remise en liberté.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                      "f00022",
+                      "À l’issue de l’audition, demander obligatoirement au civilement responsable s’il accepte de reprendre le mineur en charge dès sa remise en liberté.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "En effet, un mineur ne peut quitter les locaux de police qu’en étant accompagné "
-                "par le civilement responsable ou le représentant légal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                      "f00023",
+                      "En effet, un mineur ne peut quitter les locaux de police qu’en étant accompagné ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                      "f00024",
+                      "par le civilement responsable ou le représentant légal.",
+                    ),
               ),
             ],
           ),
@@ -506,8 +610,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+        "f00026",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+        "f00027",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -680,7 +792,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                    "f00028",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -749,7 +865,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart",
+                  "f00029",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -777,7 +897,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -812,7 +934,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

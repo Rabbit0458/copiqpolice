@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DefautAssurancePage extends StatelessWidget {
   const DefautAssurancePage({super.key});
@@ -65,10 +66,18 @@ class DefautAssurancePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions circulation routière",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+            "f00002",
+            "Infractions circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -83,7 +92,11 @@ class DefautAssurancePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le défaut d’assurance",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00003",
+              "Le défaut d’assurance",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -95,16 +108,36 @@ class DefautAssurancePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, y compris par négligence, de mettre ou de maintenir en circulation un véhicule terrestre "
-                "à moteur ainsi que ses remorques ou semi-remorques sans être couvert par une assurance garantissant "
-                "sa responsabilité civile conformément aux dispositions de l’article L. 211-1 du code des assurances, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00005",
+                      "Le fait, y compris par négligence, de mettre ou de maintenir en circulation un véhicule terrestre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00006",
+                      "à moteur ainsi que ses remorques ou semi-remorques sans être couvert par une assurance garantissant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00007",
+                      "sa responsabilité civile conformément aux dispositions de l’article L. 211-1 du code des assurances, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00008",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -113,21 +146,30 @@ class DefautAssurancePage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 324-2 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00010",
+                    "Article L. 324-2 I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime le défaut d’assurance.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00011",
+                    " : définit et réprime le défaut d’assurance.",
+                  ),
                 ),
               ]),
             ],
@@ -137,44 +179,106 @@ class DefautAssurancePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Véhicules concernés par l’obligation de s’assurer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00013",
+                  "A) Véhicules concernés par l’obligation de s’assurer",
+                ),
               ),
               _Paragraph(
-                "Toute personne dont la responsabilité peut être engagée en raison de la mise en circulation "
-                "d’un véhicule à moteur ainsi que ses remorques ou semi-remorques doit s’assurer. "
-                "Il s’agit de couvrir les atteintes éventuelles aux personnes et aux biens, en raison des dommages "
-                "subis par des tiers.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00014",
+                      "Toute personne dont la responsabilité peut être engagée en raison de la mise en circulation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00015",
+                      "d’un véhicule à moteur ainsi que ses remorques ou semi-remorques doit s’assurer. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00016",
+                      "Il s’agit de couvrir les atteintes éventuelles aux personnes et aux biens, en raison des dommages ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00017",
+                      "subis par des tiers.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Un contrat d’assurance doit être souscrit auprès d’une entreprise d’assurance agréée dans ce domaine.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00018",
+                  "Un contrat d’assurance doit être souscrit auprès d’une entreprise d’assurance agréée dans ce domaine.",
+                ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("B) Un défaut d’assurance"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00019",
+                  "B) Un défaut d’assurance",
+                ),
+              ),
               _Paragraph(
-                "Le défaut d’assurance peut être constitué dès que le véhicule est stationné sur la voie publique "
-                "ou sur un parking privé dès lors que celui-ci est accessible à la circulation publique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00020",
+                      "Le défaut d’assurance peut être constitué dès que le véhicule est stationné sur la voie publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00021",
+                      "ou sur un parking privé dès lors que celui-ci est accessible à la circulation publique.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il est également constitué lorsque le contrat était résilié au moment des faits. Enfin, l’infraction "
-                "est constituée lorsque l’assurance n’est pas ou n’est plus valable, sachant que le défaut de paiement "
-                "d’une prime n’entraîne pas immédiatement la suspension ou la résiliation d’un contrat d’assurance.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00022",
+                      "Il est également constitué lorsque le contrat était résilié au moment des faits. Enfin, l’infraction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00023",
+                      "est constituée lorsque l’assurance n’est pas ou n’est plus valable, sachant que le défaut de paiement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00024",
+                      "d’une prime n’entraîne pas immédiatement la suspension ou la résiliation d’un contrat d’assurance.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La charge de la preuve de la souscription d’une assurance repose sur le souscripteur, "
-                        "qui peut la justifier par tout moyen.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                          "f00025",
+                          "La charge de la preuve de la souscription d’une assurance repose sur le souscripteur, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                          "f00026",
+                          "qui peut la justifier par tout moyen.",
+                        ),
                   ),
                 ],
               ),
@@ -185,15 +289,33 @@ class DefautAssurancePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00027",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Conduire en sachant que le véhicule n’est pas assuré"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00028",
+                  "Conduire en sachant que le véhicule n’est pas assuré",
+                ),
+              ),
               _Paragraph(
-                "L’auteur agit intentionnellement et en toute connaissance de cause. "
-                "Cependant, il est parfois retenu que la négligence peut suffire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00029",
+                      "L’auteur agit intentionnellement et en toute connaissance de cause. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00030",
+                      "Cependant, il est parfois retenu que la négligence peut suffire.",
+                    ),
               ),
             ],
           ),
@@ -202,35 +324,76 @@ class DefautAssurancePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00031",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [_Paragraph("Aucune.")],
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00032",
+                  "Aucune.",
+                ),
+              ),
+            ],
           ),
 
           const SizedBox(height: 14),
 
           // Répression + tentative/complicité (pédagogique & clean)
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00033",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00034",
+                  "Peines encourues",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : "),
-                TextSpan(text: "délit. "),
-                TextSpan(text: "— Amende : "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00035",
+                    "Qualification : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00036",
+                    "délit. ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00037",
+                    "— Amende : ",
+                  ),
+                ),
                 TextSpan(text: "3 750 €"),
                 TextSpan(text: ". — "),
                 TextSpan(
-                  text: "Article L. 324-2 I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00038",
+                    "Article L. 324-2 I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -240,30 +403,58 @@ class DefautAssurancePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ce délit, non sanctionné d’une peine d’emprisonnement, interdit l’application du cadre "
-                        "juridique de flagrance et la prise d’une mesure de garde à vue.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                          "f00039",
+                          "Ce délit, non sanctionné d’une peine d’emprisonnement, interdit l’application du cadre ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                          "f00040",
+                          "juridique de flagrance et la prise d’une mesure de garde à vue.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00041",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00042",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00043",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00044",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00045",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -274,70 +465,129 @@ class DefautAssurancePage extends StatelessWidget {
 
           // Constatation / AFD (bien structuré)
           _ConditionCard(
-            title: "VI — Constatation de l’infraction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+              "f00046",
+              "VI — Constatation de l’infraction",
+            ),
             cardColor: cardConst,
             accent: accentIndigo,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "L’action publique peut être éteinte par le paiement d’une amende forfaitaire délictuelle "
-                      "fixée par la loi dans les conditions prévues à ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                        "f00047",
+                        "L’action publique peut être éteinte par le paiement d’une amende forfaitaire délictuelle ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                        "f00048",
+                        "fixée par la loi dans les conditions prévues à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’article D. 45-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00049",
+                    "l’article D. 45-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: ". Elle peut être applicable au défaut d’assurance.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00050",
+                    ". Elle peut être applicable au défaut d’assurance.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Procès-verbal électronique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00051",
+                  "Procès-verbal électronique",
+                ),
+              ),
               _Paragraph(
-                "L’infraction doit être constatée par un procès-verbal électronique dressé au moyen "
-                "d’un appareil sécurisé (terminaux Néo).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00052",
+                      "L’infraction doit être constatée par un procès-verbal électronique dressé au moyen ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                      "f00053",
+                      "d’un appareil sécurisé (terminaux Néo).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cette procédure doit être limitée aux cas ne laissant aucun doute sur la caractérisation "
-                        "de l’infraction et ne nécessitant pas d’investigations complémentaires.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                          "f00054",
+                          "Cette procédure doit être limitée aux cas ne laissant aucun doute sur la caractérisation ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                          "f00055",
+                          "de l’infraction et ne nécessitant pas d’investigations complémentaires.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 14),
               _Paragraph.rich([
-                TextSpan(text: "Par contre, "),
                 TextSpan(
-                  text: "l’article 495-17 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00056",
+                    "Par contre, ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " dispose que la procédure d’amende forfaitaire délictuelle n’est pas applicable :",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00057",
+                    "l’article 495-17 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                    "f00058",
+                    " dispose que la procédure d’amende forfaitaire délictuelle n’est pas applicable :",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Si le délit a été commis par un mineur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00059",
+                  "Si le délit a été commis par un mineur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si le délit a été commis en état de récidive légale (mention TAJ pour le même délit ou un délit assimilé), sauf dispositions contraires.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00060",
+                  "Si le délit a été commis en état de récidive légale (mention TAJ pour le même délit ou un délit assimilé), sauf dispositions contraires.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si plusieurs infractions, dont l’une au moins ne peut donner lieu à une amende forfaitaire, ont été constatées simultanément.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_assurance_page.dart",
+                  "f00061",
+                  "Si plusieurs infractions, dont l’une au moins ne peut donner lieu à une amende forfaitaire, ont été constatées simultanément.",
+                ),
               ),
             ],
           ),

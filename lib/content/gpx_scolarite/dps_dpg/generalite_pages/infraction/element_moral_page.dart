@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ElementMoralPage extends StatefulWidget {
   static const String routeName = '/gpx/generalites/infraction/element-moral';
@@ -71,7 +72,7 @@ class _ElementMoralPageState extends State<ElementMoralPage>
           centerTitle: true,
           title: const Text(''), // on masque le titre (comme demandé)
           leading: IconButton(
-            tooltip: 'Retour',
+            tooltip: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00001", 'Retour'),
             icon: Icon(
               Icons.arrow_back_rounded,
               color: theme.colorScheme.onSurface,
@@ -93,15 +94,15 @@ class _ElementMoralPageState extends State<ElementMoralPage>
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(16, 12, 16, 8),
                     child: _QuickNav(
-                      items: const [
-                        ('Définition', Icons.info_rounded),
-                        ('Faute intentionnelle', Icons.flag_rounded),
+                      items:  [
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00002", 'Définition'), Icons.info_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00003", 'Faute intentionnelle'), Icons.flag_rounded),
                         (
-                          'Faute non intentionnelle',
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00004", 'Faute non intentionnelle'),
                           Icons.warning_amber_rounded,
                         ),
-                        ('Faute contraventionnelle', Icons.rule_rounded),
-                        ('Mémo', Icons.fact_check_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00005", 'Faute contraventionnelle'), Icons.rule_rounded),
+                        (ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00006", 'Mémo'), Icons.fact_check_rounded),
                       ],
                       onTap: (label) {
                         switch (label) {
@@ -131,31 +132,31 @@ class _ElementMoralPageState extends State<ElementMoralPage>
                 // Définition
                 SliverToBoxAdapter(
                   key: _kDefinition,
-                  child: const _GlassCard(
-                    title: 'Définition de l’élément moral',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00012", 'Définition de l’élément moral'),
                     icon: Icons.info_rounded,
                     bullets: [
-                      'Pas d’infraction sans élément moral : l’acte répréhensible doit provenir de la volonté de l’auteur.',
-                      'L’auteur doit agir avec intelligence et volonté ; le mobile personnel importe peu en droit, mais peut influer sur la peine.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00013", 'Pas d’infraction sans élément moral : l’acte répréhensible doit provenir de la volonté de l’auteur.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00014", 'L’auteur doit agir avec intelligence et volonté ; le mobile personnel importe peu en droit, mais peut influer sur la peine.'),
                     ],
                     note:
-                        'Référence : “Il n’y a point de crime ou de délit sans intention de le commettre.” (Article 111-3 anciennement évoqué en doctrine pour le principe ; pour la faute non intentionnelle, se reporter à l’Article 121-3 du Code pénal).',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00015", 'Référence : “Il n’y a point de crime ou de délit sans intention de le commettre.” (Article 111-3 anciennement évoqué en doctrine pour le principe ; pour la faute non intentionnelle, se reporter à l’Article 121-3 du Code pénal).'),
                   ),
                 ),
                 const _Gutter(),
 
                 // ---- Comprendre "dol"
-                const SliverToBoxAdapter(
+                 SliverToBoxAdapter(
                   child: _GlassCard(
-                    title: 'Comprendre le mot « dol »',
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00016", 'Comprendre le mot « dol »'),
                     icon: Icons.lightbulb_rounded,
                     bullets: [
-                      'Origine : du latin « dolus » (ruse, tromperie, intention de nuire).',
-                      'Sens en droit pénal : l’intention coupable — volonté consciente d’accomplir un acte interdit.',
-                      'Idée clé : agir avec dol = agir volontairement en sachant que l’acte est illégal.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00017", 'Origine : du latin « dolus » (ruse, tromperie, intention de nuire).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00018", 'Sens en droit pénal : l’intention coupable — volonté consciente d’accomplir un acte interdit.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00019", 'Idée clé : agir avec dol = agir volontairement en sachant que l’acte est illégal.'),
                     ],
                     note:
-                        'En pratique : le dol s’oppose à la faute non intentionnelle (imprudence/négligence, art. 121-3 du Code pénal).',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00020", 'En pratique : le dol s’oppose à la faute non intentionnelle (imprudence/négligence, art. 121-3 du Code pénal).'),
                   ),
                 ),
                 const _Gutter(),
@@ -163,17 +164,17 @@ class _ElementMoralPageState extends State<ElementMoralPage>
                 // Faute intentionnelle
                 SliverToBoxAdapter(
                   key: _kIntentionnelle,
-                  child: const _GlassCard(
-                    title: 'Faute intentionnelle (dol)',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00021", 'Faute intentionnelle (dol)'),
                     icon: Icons.flag_rounded,
                     bullets: [
-                      'Dol général : volonté d’accomplir l’acte interdit en connaissance de son caractère illicite.',
-                      'Dol spécial : intention d’atteindre un résultat particulier exigé par la loi (exemples classiques : intention de tuer, de détruire…).',
-                      'Résultat déterminé : lorsque le résultat obtenu correspond exactement à celui visé par l’auteur.',
-                      'Préméditation : forme aggravée de l’intention criminelle prévue par certains textes.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00022", 'Dol général : volonté d’accomplir l’acte interdit en connaissance de son caractère illicite.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00023", 'Dol spécial : intention d’atteindre un résultat particulier exigé par la loi (exemples classiques : intention de tuer, de détruire…).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00024", 'Résultat déterminé : lorsque le résultat obtenu correspond exactement à celui visé par l’auteur.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00025", 'Préméditation : forme aggravée de l’intention criminelle prévue par certains textes.'),
                     ],
                     note:
-                        'Lorsque l’élément légal exige un résultat particulier (dol spécial), la caractérisation de ce but spécifique est requise en plus de la volonté d’agir.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00026", 'Lorsque l’élément légal exige un résultat particulier (dol spécial), la caractérisation de ce but spécifique est requise en plus de la volonté d’agir.'),
                   ),
                 ),
                 const _Gutter(),
@@ -181,16 +182,16 @@ class _ElementMoralPageState extends State<ElementMoralPage>
                 // Faute non intentionnelle
                 SliverToBoxAdapter(
                   key: _kNonIntentionnelle,
-                  child: const _GlassCard(
-                    title: 'Faute non intentionnelle',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00027", 'Faute non intentionnelle'),
                     icon: Icons.warning_amber_rounded,
                     bullets: [
-                      'Imprudence, négligence, maladresse, inattention, manquement à une obligation de prudence ou de sécurité prévue par la loi ou le règlement.',
-                      'Lien de causalité : direct (faute simple) ou indirect (faute qualifiée à établir selon les textes et la jurisprudence).',
-                      'Mise en danger délibérée de la personne d’autrui : violation manifestement délibérée d’une obligation particulière de prudence ou de sécurité.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00028", 'Imprudence, négligence, maladresse, inattention, manquement à une obligation de prudence ou de sécurité prévue par la loi ou le règlement.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00029", 'Lien de causalité : direct (faute simple) ou indirect (faute qualifiée à établir selon les textes et la jurisprudence).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00030", 'Mise en danger délibérée de la personne d’autrui : violation manifestement délibérée d’une obligation particulière de prudence ou de sécurité.'),
                     ],
                     note:
-                        'Référence pivot : Article 121-3 du Code pénal (al. 3 et 4) — modalités de répression des fautes d’imprudence et de négligence.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00031", 'Référence pivot : Article 121-3 du Code pénal (al. 3 et 4) — modalités de répression des fautes d’imprudence et de négligence.'),
                   ),
                 ),
                 const _Gutter(),
@@ -198,15 +199,15 @@ class _ElementMoralPageState extends State<ElementMoralPage>
                 // Faute contraventionnelle
                 SliverToBoxAdapter(
                   key: _kContraventionnelle,
-                  child: const _GlassCard(
-                    title: 'Faute contraventionnelle',
+                  child:  _GlassCard(
+                    title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00032", 'Faute contraventionnelle'),
                     icon: Icons.rule_rounded,
                     bullets: [
-                      'La faute est présumée : la simple violation d’un texte légal ou réglementaire suffit.',
-                      'Indépendante de la survenance d’un dommage : l’infraction est constituée dès la méconnaissance de la prescription.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00033", 'La faute est présumée : la simple violation d’un texte légal ou réglementaire suffit.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00034", 'Indépendante de la survenance d’un dommage : l’infraction est constituée dès la méconnaissance de la prescription.'),
                     ],
                     note:
-                        'Exemple typique : non-respect d’une prescription du code de la route. La responsabilité peut être écartée en cas de force majeure ou de contrainte dûment démontrée.',
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00035", 'Exemple typique : non-respect d’une prescription du code de la route. La responsabilité peut être écartée en cas de force majeure ou de contrainte dûment démontrée.'),
                   ),
                 ),
                 const _Gutter(),
@@ -214,12 +215,12 @@ class _ElementMoralPageState extends State<ElementMoralPage>
                 // Mémo
                 SliverToBoxAdapter(
                   key: _kMemo,
-                  child: const _MemoCard(
+                  child:  _MemoCard(
                     lines: [
-                      'Élément moral indispensable : l’acte doit émaner de la volonté de l’auteur.',
-                      'Dol = volonté d’agir (dol général) + parfois but particulier exigé (dol spécial).',
-                      'Faute non intentionnelle = imprudence/négligence + lien de causalité (art. 121-3).',
-                      'Contraventionnel : la violation simple du texte suffit.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00036", 'Élément moral indispensable : l’acte doit émaner de la volonté de l’auteur.'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00037", 'Dol = volonté d’agir (dol général) + parfois but particulier exigé (dol spécial).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00038", 'Faute non intentionnelle = imprudence/négligence + lien de causalité (art. 121-3).'),
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00039", 'Contraventionnel : la violation simple du texte suffit.'),
                     ],
                   ),
                 ),
@@ -292,7 +293,7 @@ class _HeaderHero extends StatelessWidget {
                     _chip('Module'),
                     const Spacer(),
                     Text(
-                      'Élément moral',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00040", 'Élément moral'),
                       style: GoogleFonts.fustat(
                         color: Colors.white,
                         fontWeight: FontWeight.w900,
@@ -303,7 +304,7 @@ class _HeaderHero extends StatelessWidget {
                     ),
                     const SizedBox(height: 6),
                     Text(
-                      'L’intention ou la faute de l’auteur.',
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00041", 'L’intention ou la faute de l’auteur.'),
                       style: GoogleFonts.fustat(
                         color: Colors.white.withValues(alpha: .88),
                         fontWeight: FontWeight.w600,
@@ -643,7 +644,7 @@ class _MemoCard extends StatelessWidget {
                 Icon(Icons.fact_check_rounded, color: text),
                 const SizedBox(width: 8),
                 Text(
-                  'Mémo',
+                  ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/element_moral_page.dart", "f00042", 'Mémo'),
                   style: GoogleFonts.fustat(
                     color: text,
                     fontWeight: FontWeight.w900,

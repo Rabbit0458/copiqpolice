@@ -15,12 +15,13 @@ import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // ==== Types publics exportés par ta home ====
 import 'package:copiqpolice/features/home/home_page.dart'
-    show CategoryConfig, SubCategoryConfig, Track, UserMode;
+    show CategoryConfig, SubCategoryConfig, UserMode;
 
 // ==== Pages existantes ====
-import 'package:copiqpolice/features/home/journal_gpx_school.dart';
 import 'package:copiqpolice/features/forum/community_models.dart';
 import 'package:copiqpolice/features/forum/community_page.dart';
+import 'package:copiqpolice/features/home/pa_exam_progress_page.dart';
+import 'package:copiqpolice/features/home/gpx_school_progress_service.dart';
 import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/details_page.dart';
@@ -113,8 +114,7 @@ class HomePageGpxSchool extends StatefulWidget {
   State<HomePageGpxSchool> createState() => _HomePageGpxSchoolState();
 }
 
-class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
-    with WidgetsBindingObserver {
+class _HomePageGpxSchoolState extends State<HomePageGpxSchool> {
   int _currentTab = 0;
 
   // ✅ Mémorisation du scroll + états enfants (deck, listes, etc.)
@@ -124,13 +124,11 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
   String? _username;
   bool _isLoadingUsername = true;
 
-  // Contexte figé : School + GPX
-  static const _mode = UserMode.school;
-  static const _track = Track.gpx;
-
   late final List<CategoryConfig> _cats =
       (gpxSchoolCategoriesConfig[HomePageGpxSchool.program] ??
       const <CategoryConfig>[]);
+
+  late final _GpxSchoolNextStep? _randomNextStep = _pickRandomNextStep();
 
   // =====================  PERSISTENCE DE L'INDEX DU DECK  =====================
 
@@ -258,72 +256,25 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
 
   // =====================  📈 PROGRESSION (Supabase quiz_history)  =====================
 
-  int _computeTotalModules() {
-    int total = 0;
-    for (final c in _cats) {
-      final subs = c.subcategories;
-      if (subs != null && subs.isNotEmpty) {
-        total += subs.length;
-      } else {
-        total += 1;
+  _GpxSchoolNextStep? _pickRandomNextStep() {
+    final candidates = <_GpxSchoolNextStep>[];
+    for (final category in _cats) {
+      final subcategories = category.subcategories;
+      if (subcategories == null || subcategories.isEmpty) continue;
+      for (final subcategory in subcategories) {
+        if (subcategory.route.trim().isEmpty) continue;
+        candidates.add(
+          _GpxSchoolNextStep(
+            category: category.label,
+            title: subcategory.label,
+            route: subcategory.route,
+            image: subcategory.image ?? category.image,
+          ),
+        );
       }
     }
-    return total;
-  }
-
-  late final SupabaseClient _sb = Supabase.instance.client;
-  late final ProgressRepository _progressRepo = ProgressRepository(_sb);
-
-  String? _uid;
-  Future<ProgressSummary>? _progressFuture;
-
-  RealtimeChannel? _progressChan;
-
-  void _refreshProgress() {
-    if (!mounted) return;
-    final uid = _uid;
-    if (uid == null || uid.isEmpty) return;
-
-    setState(() {
-      _progressFuture = _progressRepo.loadProgress(
-        uid: uid,
-        totalModules: _computeTotalModules(),
-        track: _track.name, // "pa"
-        mode: _mode.name, // "school"
-      );
-    });
-  }
-
-  Future<void> _loadUidAndProgress() async {
-    try {
-      final uid = _sb.auth.currentUser?.id;
-      _uid = uid;
-      _refreshProgress();
-      _setupRealtimeProgress();
-    } catch (_) {}
-  }
-
-  void _setupRealtimeProgress() {
-    final uid = _uid;
-    if (uid == null || uid.isEmpty) return;
-
-    _progressChan?.unsubscribe();
-    _progressChan = _sb
-        .channel('progress_home_gpx_school_$uid')
-        .onPostgresChanges(
-          event: PostgresChangeEvent.all,
-          schema: 'public',
-          table: 'quiz_history',
-          filter: PostgresChangeFilter(
-            type: PostgresChangeFilterType.eq,
-            column: 'uid',
-            value: uid,
-          ),
-          callback: (payload) {
-            _refreshProgress();
-          },
-        )
-        .subscribe();
+    if (candidates.isEmpty) return null;
+    return candidates[math.Random().nextInt(candidates.length)];
   }
 
   // =====================  LIFECYCLE  =====================
@@ -331,33 +282,20 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance.addObserver(this);
 
     _initialDeckIndex = _computeDefaultDeckIndex();
 
     _loadUsername();
     _loadSavedDeckIndex();
     _loadLastOpened();
-
-    _loadUidAndProgress();
   }
 
   @override
   void dispose() {
-    WidgetsBinding.instance.removeObserver(this);
-    _progressChan?.unsubscribe();
-
     _debounce?.cancel();
     _searchCtrl.dispose();
     _searchFocus.dispose();
     super.dispose();
-  }
-
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) {
-      _refreshProgress();
-    }
   }
 
   // =====================  STORAGE DECK  =====================
@@ -451,8 +389,6 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
       await Navigator.of(context).pushNamed(target);
     }
 
-    // ✅ refresh après retour d'un module/quiz
-    _refreshProgress();
     await _loadLastOpened();
   }
 
@@ -501,11 +437,13 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
 
     const icons = [
       Icons.home_rounded,
-      Icons.article_rounded,
-      Icons.grid_view_rounded, // Changer de catégorie GPX
+      Icons.insights_rounded,
+      Icons.forum_rounded,
       Icons.favorite_rounded,
       Icons.person_rounded,
     ];
+
+    final nextStep = _randomNextStep;
 
     final pages = <Widget>[
       PageStorage(
@@ -548,17 +486,8 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
                       ],
                     ),
                   ),
-                  _IconCircle(
-                    icon: Icons.forum_rounded,
-                    onTap: widget.tutorialLock
-                        ? null
-                        : () => Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (_) => const CommunityPage(
-                                initialScope: CommunityScope.gpxSchool,
-                              ),
-                            ),
-                          ),
+                  _SpaceGpxButton(
+                    onTap: widget.tutorialLock ? null : _pickNewGpxProgram,
                   ),
                   const SizedBox(width: 8),
                   _IconCircle(
@@ -679,7 +608,7 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
                 key: widget.heroDeckKey, // ✅ focus carré jaune
                 child: _HeroDeck(
                   // 🔥 IMPORTANT : force rebuild du deck quand _lastRoute change
-                  key: ValueKey('pa-hero-deck-${_lastRoute ?? "none"}'),
+                  key: ValueKey('gpx-hero-deck-${_lastRoute ?? "none"}'),
                   height: 330,
                   items: deckItems,
                   initialIndex: _initialDeckIndex,
@@ -703,83 +632,42 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
               ),
             ),
 
-            const SizedBox(height: 14),
-
-            // ✅ PROGRESSION
-            FutureBuilder<ProgressSummary>(
-              future: _progressFuture,
-              builder: (context, snap) {
-                if (snap.connectionState == ConnectionState.waiting) {
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      height: 170,
-                      decoration: BoxDecoration(
-                        color: theme.cardColor,
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: const [_T.shadow],
-                      ),
-                      child: const Center(child: CircularProgressIndicator()),
-                    ),
-                  );
-                }
-
-                if (snap.hasError) {
-                  return Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Container(
-                      padding: const EdgeInsets.all(16),
-                      decoration: BoxDecoration(
-                        color: theme.cardColor,
-                        borderRadius: BorderRadius.circular(20),
-                        boxShadow: const [_T.shadow],
-                      ),
-                      child: Text(
-                        'Impossible de charger la progression.',
-                        style: GoogleFonts.poppins(
-                          fontWeight: FontWeight.w700,
-                          color: _muted(context, .75),
-                        ),
-                      ),
-                    ),
-                  );
-                }
-
-                final data =
-                    snap.data ??
-                    ProgressSummary(
-                      seenModules: 0,
-                      totalModules: _computeTotalModules(),
-                      finishedQuizzes: 0, // ✅ AJOUT
-                      streakDays: 0,
-                      weeklyStudy: Duration.zero,
-                      recentDone: const [],
-                    );
-
-                return ProgressCardV4(
-                  key: widget.progressCardKey, // ✅ focus carré vert
-                  data: data,
-                  onTapDetails: () {
-                    if (widget.tutorialLock) return; // ✅ lock
-                    final uid = Supabase.instance.client.auth.currentUser?.id;
-                    if (uid == null) return;
-
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => DetailsPage(uid: uid)),
-                    );
-                  },
-                );
-              },
-            ),
-
             const SizedBox(height: 18),
+
+            if (nextStep != null)
+              KeyedSubtree(
+                key: widget.progressCardKey,
+                child: _GpxSchoolNextStepCard(
+                  data: nextStep,
+                  onTap: () => _openRouteOrDetails(
+                    label: nextStep.title,
+                    route: nextStep.route,
+                  ),
+                ),
+              ),
+
             const SizedBox(height: 24),
           ],
         ),
       ),
 
-      const JournalGpxSchoolPage(),
-      const GpxSchoolArt(),
+      PaExamProgressPage(
+        onStart: () {
+          if (_cats.isEmpty) return;
+          final first = _cats.first;
+          _openRouteOrDetails(
+            label: first.label,
+            route: first.route,
+            subs: first.subcategories,
+          );
+        },
+        dataSource: GpxSchoolProgressService(),
+        subtitle: 'Ton suivi pendant la scolarité de Gardien de la paix',
+        emptyMessage:
+            'Termine un premier quiz de scolarité pour débloquer tes statistiques, ta régularité et tes recommandations.',
+        moduleMetaResolver: gpxSchoolModuleMeta,
+      ),
+      const CommunityPage(initialScope: CommunityScope.gpxSchool),
       const FavorisHomePage(),
       const ProfilPage(),
     ];
@@ -793,16 +681,7 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
       ),
       bottomNavigationBar: _SlidingPillNavBar(
         currentIndex: _currentTab,
-        onTap: (i) {
-          if (widget.tutorialLock) return; // ✅ lock
-          if (i == 2) {
-            // Changer de catégorie GPX — même flow que home_bootstrap
-            HapticFeedback.selectionClick();
-            _pickNewGpxProgram();
-            return;
-          }
-          _goToTab(i);
-        },
+        onTap: widget.tutorialLock ? (_) {} : _goToTab,
         height: 64,
         icons: icons,
 
@@ -853,6 +732,235 @@ class _IconCircle extends StatelessWidget {
             color: disabled ? _muted(context, .55) : theme.iconTheme.color,
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _SpaceGpxButton extends StatelessWidget {
+  const _SpaceGpxButton({required this.onTap});
+
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final foreground = theme.brightness == Brightness.dark
+        ? Colors.white
+        : _T.ink;
+    return Semantics(
+      button: true,
+      label: 'Revenir à l’espace GPX',
+      child: Opacity(
+        opacity: onTap == null ? .55 : 1,
+        child: Material(
+          color: theme.cardColor,
+          borderRadius: BorderRadius.circular(14),
+          child: InkWell(
+            onTap: onTap,
+            borderRadius: BorderRadius.circular(14),
+            child: Container(
+              constraints: const BoxConstraints(minHeight: 44),
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                border: Border.all(color: foreground.withValues(alpha: .10)),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.arrow_back_rounded, size: 18, color: foreground),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Espace GPX',
+                    style: GoogleFonts.poppins(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w800,
+                      color: foreground,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _GpxSchoolNextStep {
+  const _GpxSchoolNextStep({
+    required this.category,
+    required this.title,
+    required this.route,
+    required this.image,
+  });
+
+  final String category;
+  final String title;
+  final String route;
+  final String image;
+}
+
+class _GpxSchoolNextStepCard extends StatelessWidget {
+  const _GpxSchoolNextStepCard({required this.data, required this.onTap});
+
+  final _GpxSchoolNextStep data;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    const accent = Color(0xFF2D6CDF);
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(Icons.auto_awesome_rounded, size: 19, color: accent),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  'Ta prochaine étape',
+                  style: GoogleFonts.poppins(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
+              Text(
+                'Aujourd’hui',
+                style: GoogleFonts.instrumentSans(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: _muted(context, .58),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Semantics(
+            button: true,
+            label: 'Commencer ${data.title}',
+            child: Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: () {
+                  HapticFeedback.selectionClick();
+                  onTap();
+                },
+                borderRadius: BorderRadius.circular(24),
+                child: Ink(
+                  height: 148,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    boxShadow: const [_T.shadow],
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        Image.asset(
+                          data.image,
+                          fit: BoxFit.cover,
+                          alignment: Alignment.centerRight,
+                          errorBuilder: (_, __, ___) => ColoredBox(
+                            color: isDark
+                                ? const Color(0xFF121D31)
+                                : const Color(0xFFEAF1FF),
+                          ),
+                        ),
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.centerLeft,
+                              end: Alignment.centerRight,
+                              colors: [
+                                isDark
+                                    ? const Color(0xFF0B1220)
+                                    : const Color(0xFF101C31),
+                                const Color(0xE6101C31),
+                                const Color(0x5C101C31),
+                              ],
+                              stops: const [0, .54, 1],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(16),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                data.category.toUpperCase(),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: GoogleFonts.instrumentSans(
+                                  color: const Color(0xFF9FC0FF),
+                                  fontSize: 11,
+                                  letterSpacing: .7,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                              ),
+                              const SizedBox(height: 7),
+                              ConstrainedBox(
+                                constraints: const BoxConstraints(
+                                  maxWidth: 240,
+                                ),
+                                child: Text(
+                                  data.title,
+                                  maxLines: 2,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: GoogleFonts.poppins(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    height: 1.12,
+                                    fontWeight: FontWeight.w900,
+                                  ),
+                                ),
+                              ),
+                              const Spacer(),
+                              Row(
+                                children: [
+                                  Text(
+                                    'Commencer',
+                                    style: GoogleFonts.instrumentSans(
+                                      color: Colors.white,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 8),
+                                  Container(
+                                    width: 30,
+                                    height: 30,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: const Icon(
+                                      Icons.arrow_forward_rounded,
+                                      size: 18,
+                                      color: Color(0xFF101C31),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -5987,10 +6095,10 @@ class _HomePageGpxSchoolDiscoveryTutorialState
         );
       case 3:
         return (
-          title: "Progression",
+          title: "Ta prochaine étape",
           text:
-              "Tu retrouves ici ton avancement.\n"
-              "Le bouton “Détails” te donne l’historique de tes quiz.",
+              "COP’IQ te propose ici un cours de ta scolarité.\n"
+              "La recommandation change à chaque nouvelle ouverture.",
           cta: "Suivant",
         );
       case 4:
@@ -6002,9 +6110,9 @@ class _HomePageGpxSchoolDiscoveryTutorialState
         );
       case 5:
         return (
-          title: "Journal",
+          title: "Suivi",
           text:
-              "Ici, tu accèdes au journal : cours & quiz de la scolarité GPX.",
+              "Ici, tu retrouves tes résultats, ta régularité, ton objectif quotidien et tes recommandations GPX.",
           cta: "Suivant",
         );
       case 6:

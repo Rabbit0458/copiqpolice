@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class UtilisationReseauCommunicationPage extends StatelessWidget {
   const UtilisationReseauCommunicationPage({super.key});
@@ -44,7 +45,11 @@ class UtilisationReseauCommunicationPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Utilisation d’un réseau\nde communication électronique',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+            "f00001",
+            'Utilisation d’un réseau\nde communication électronique',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,13 +75,13 @@ class UtilisationReseauCommunicationPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
@@ -84,7 +89,11 @@ class UtilisationReseauCommunicationPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'AVEC UTILISATION D’UN RÉSEAU DE\nCOMMUNICATION ÉLECTRONIQUE',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00002",
+                          'AVEC UTILISATION D’UN RÉSEAU DE\nCOMMUNICATION ÉLECTRONIQUE',
+                        ),
                         style: GoogleFonts.fustat(
                           fontSize: 14.5,
                           height: 1.15,
@@ -93,10 +102,13 @@ class UtilisationReseauCommunicationPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      const _Paragraph.rich([
+                      _Paragraph.rich([
                         TextSpan(
-                          text:
-                              '« Grâce à l’utilisation, pour la diffusion de messages à destination d’un public non déterminé, d’un réseau de communication électronique. »',
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00003",
+                            '« Grâce à l’utilisation, pour la diffusion de messages à destination d’un public non déterminé, d’un réseau de communication électronique. »',
+                          ),
                         ),
                       ]),
                     ],
@@ -107,22 +119,54 @@ class UtilisationReseauCommunicationPage extends StatelessWidget {
 
                 // 1. Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                    "f00004",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Le développement des techniques de communication électronique, notamment de l’Internet, "
-                      "a rendu certaines infractions à caractère sexuel à la fois plus faciles à commettre et plus "
-                      "difficiles à sanctionner. Elles permettent en effet d’entrer en contact avec un très grand "
-                      "nombre d’interlocuteurs alors que l’auteur du message n’est souvent pas aisément identifiable. "
-                      "Ces procédés induisent une internationalisation de délits.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00005",
+                            "Le développement des techniques de communication électronique, notamment de l’Internet, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00006",
+                            "a rendu certaines infractions à caractère sexuel à la fois plus faciles à commettre et plus ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00007",
+                            "difficiles à sanctionner. Elles permettent en effet d’entrer en contact avec un très grand ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00008",
+                            "nombre d’interlocuteurs alors que l’auteur du message n’est souvent pas aisément identifiable. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00009",
+                            "Ces procédés induisent une internationalisation de délits.",
+                          ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, "
-                      "coauteurs et complices de l’infraction.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00010",
+                            "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00011",
+                            "coauteurs et complices de l’infraction.",
+                          ),
                     ),
                   ],
                 ),
@@ -131,22 +175,48 @@ class UtilisationReseauCommunicationPage extends StatelessWidget {
 
                 // 2. Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                    "f00012",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _SubTitle(
-                      '2.1 - La diffusion de messages à destination d’un public non déterminé',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                        "f00013",
+                        '2.1 - La diffusion de messages à destination d’un public non déterminé',
+                      ),
                     ),
                     _Paragraph(
-                      "Cette circonstance aggravante vise les mineurs et les majeurs. "
-                      "Cette formule exclut l’envoi d’un courrier électronique identique à plusieurs personnes identifiées.",
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00014",
+                            "Cette circonstance aggravante vise les mineurs et les majeurs. ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                            "f00015",
+                            "Cette formule exclut l’envoi d’un courrier électronique identique à plusieurs personnes identifiées.",
+                          ),
                     ),
                     SizedBox(height: 10),
-                    _SubTitle('2.2 - Un réseau de communication électronique'),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                        "f00016",
+                        '2.2 - Un réseau de communication électronique',
+                      ),
+                    ),
                     _Paragraph(
-                      "Il s’agit du réseau Internet et du réseau téléphonique.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                        "f00017",
+                        "Il s’agit du réseau Internet et du réseau téléphonique.",
+                      ),
                     ),
                   ],
                 ),
@@ -155,103 +225,244 @@ class UtilisationReseauCommunicationPage extends StatelessWidget {
 
                 // 3. Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                    "f00018",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _IntroBullet(
-                      text:
-                          "Cette circonstance aggravante peut s’appliquer notamment aux infractions suivantes :",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                        "f00019",
+                        "Cette circonstance aggravante peut s’appliquer notamment aux infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 8),
 
                     // Liste (avec articles en rouge)
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le viol ("),
-                      law("article 222-24, 8° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Les agressions sexuelles ("),
-                      law("article 222-28, 6° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le harcèlement sexuel ("),
-                      law("article 222-33 III, 6° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• La traite des êtres humains ("),
-                      law("article 225-4-2, 3° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le proxénétisme ("),
-                      law("article 225-7, 10° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Le recours à la prostitution de mineur (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00020",
+                          "• Le viol (",
+                        ),
                       ),
-                      law("article 225-12-2, 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• Les atteintes sexuelles sans violence sur mineur de quinze ans (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00021",
+                          "article 222-24, 8° C.P.",
+                        ),
                       ),
-                      law("article 227-26, 5° C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le harcèlement moral ("),
-                      law("article 222-33-2-2, 4° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• La corruption de mineurs ("),
-                      law("article 227-22 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• La diffusion et la fixation de l’image à caractère pornographique d’un mineur (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00022",
+                          "• Les agressions sexuelles (",
+                        ),
                       ),
-                      law("article 227-23 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00023",
+                          "article 222-28, 6° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "• La diffusion de procédés de destruction (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00024",
+                          "• Le harcèlement sexuel (",
+                        ),
                       ),
-                      law("article 322-6-1 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00025",
+                          "article 222-33 III, 6° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00026",
+                          "• La traite des êtres humains (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00027",
+                          "article 225-4-2, 3° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00028",
+                          "• Le proxénétisme (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00029",
+                          "article 225-7, 10° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00030",
+                          "• Le recours à la prostitution de mineur (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00031",
+                          "article 225-12-2, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00032",
+                          "• Les atteintes sexuelles sans violence sur mineur de quinze ans (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00033",
+                          "article 227-26, 5° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00034",
+                          "• Le harcèlement moral (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00035",
+                          "article 222-33-2-2, 4° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00036",
+                          "• La corruption de mineurs (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00037",
+                          "article 227-22 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00038",
+                          "• La diffusion et la fixation de l’image à caractère pornographique d’un mineur (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00039",
+                          "article 227-23 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00040",
+                          "• La diffusion de procédés de destruction (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                          "f00041",
+                          "article 322-6-1 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
 
                     const SizedBox(height: 12),
 
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
                           text:
-                              "Cette circonstance aggravante est liée à une diffusion vers un public non déterminé : "
-                              "un envoi identique à plusieurs personnes identifiées est exclu. "
-                              "Le réseau visé inclut notamment Internet et le réseau téléphonique.",
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                                "f00042",
+                                "Cette circonstance aggravante est liée à une diffusion vers un public non déterminé : ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                                "f00043",
+                                "un envoi identique à plusieurs personnes identifiées est exclu. ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart",
+                                "f00044",
+                                "Le réseau visé inclut notamment Internet et le réseau téléphonique.",
+                              ),
                         ),
                       ],
                     ),
@@ -514,9 +725,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

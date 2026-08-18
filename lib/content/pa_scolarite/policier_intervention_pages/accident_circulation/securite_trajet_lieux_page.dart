@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaSecuriteTrajetLieuxPage extends StatelessWidget {
   const PaSecuriteTrajetLieuxPage({super.key});
@@ -56,10 +57,18 @@ class PaSecuriteTrajetLieuxPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident de circulation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+            "f00002",
+            "Accident de circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaSecuriteTrajetLieuxPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Sécurité pendant le trajet et sur les lieux du constat",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+              "f00003",
+              "Sécurité pendant le trajet et sur les lieux du constat",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,31 +99,87 @@ class PaSecuriteTrajetLieuxPage extends StatelessWidget {
 
           // Contexte
           _ConditionCard(
-            title: "Objectif & contexte",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+              "f00004",
+              "Objectif & contexte",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’accident corporel de la circulation nécessite, dans tous les cas, l’intervention des services de police "
-                "pour assurer la sécurité sur la voie publique, effectuer l’enquête et, en l’absence éventuelle des services spécialisés, porter secours.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00005",
+                      "L’accident corporel de la circulation nécessite, dans tous les cas, l’intervention des services de police ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00006",
+                      "pour assurer la sécurité sur la voie publique, effectuer l’enquête et, en l’absence éventuelle des services spécialisés, porter secours.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’intervention s’effectue en équipe, sous les ordres du chef de bord, qui désigne :\n"
-                "• les agents chargés d’assurer la sécurité de l’intervention\n"
-                "• les agents chargés d’effectuer les constatations",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00007",
+                      "L’intervention s’effectue en équipe, sous les ordres du chef de bord, qui désigne :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00008",
+                      "• les agents chargés d’assurer la sécurité de l’intervention\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00009",
+                      "• les agents chargés d’effectuer les constatations",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Pourquoi c’est important ?"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00010",
+                  "Pourquoi c’est important ?",
+                ),
+              ),
               _Paragraph(
-                "Les mesures de sécurité sont déterminantes : les accidents de policiers survenus à la suite de cette mission "
-                "représentent 7,2 % du total des accidents des fonctionnaires de police.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00011",
+                      "Les mesures de sécurité sont déterminantes : les accidents de policiers survenus à la suite de cette mission ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00012",
+                      "représentent 7,2 % du total des accidents des fonctionnaires de police.",
+                    ),
               ),
               SizedBox(height: 8),
-              _IntroBullet(text: "En allant sur les lieux : 16 %"),
-              _IntroBullet(text: "En constatant : 78 %"),
-              _IntroBullet(text: "En revenant : 6 %"),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00013",
+                  "En allant sur les lieux : 16 %",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00014",
+                  "En constatant : 78 %",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00015",
+                  "En revenant : 6 %",
+                ),
+              ),
             ],
           ),
 
@@ -118,22 +187,36 @@ class PaSecuriteTrajetLieuxPage extends StatelessWidget {
 
           // I
           _ConditionCard(
-            title: "I — Sécurité pendant le trajet",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+              "f00016",
+              "I — Sécurité pendant le trajet",
+            ),
             cardColor: cardI,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le respect des règles de sécurité commence dès le début de l’intervention, notamment sur le trajet.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00017",
+                  "Le respect des règles de sécurité commence dès le début de l’intervention, notamment sur le trajet.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Localisation précise : connaître exactement le point d’accident permet de gagner du temps sans augmenter le risque.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00018",
+                  "Localisation précise : connaître exactement le point d’accident permet de gagner du temps sans augmenter le risque.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Itinéraire adapté : le bon choix d’axe et de sens d’approche peut être aussi efficace qu’une conduite en urgence.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00019",
+                  "Itinéraire adapté : le bon choix d’axe et de sens d’approche peut être aussi efficace qu’une conduite en urgence.",
+                ),
               ),
             ],
           ),
@@ -142,41 +225,79 @@ class PaSecuriteTrajetLieuxPage extends StatelessWidget {
 
           // II
           _ConditionCard(
-            title: "II — Sécurité avant les constatations",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+              "f00020",
+              "II — Sécurité avant les constatations",
+            ),
             cardColor: cardII,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le responsable met en place une signalisation avancée dite « de danger », destinée à assurer la sécurité des intervenants.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00021",
+                  "Le responsable met en place une signalisation avancée dite « de danger », destinée à assurer la sécurité des intervenants.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Signalisation avancée « tri-flash »"),
-              _BulletPoint(
-                text:
-                    "Installer un panneau « tri-flash » portant l’inscription « accident » de part et d’autre de l’obstacle.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00022",
+                  "A) Signalisation avancée « tri-flash »",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Distance indicative : environ 150 m (augmenter si vitesse élevée ; réduire si Vmax = 50 km/h).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00023",
+                  "Installer un panneau « tri-flash » portant l’inscription « accident » de part et d’autre de l’obstacle.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Bornes à respecter : distance maximale 300 m, minimale 100 m.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00024",
+                  "Distance indicative : environ 150 m (augmenter si vitesse élevée ; réduire si Vmax = 50 km/h).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00025",
+                  "Bornes à respecter : distance maximale 300 m, minimale 100 m.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Agent « protecteur »"),
-              _BulletPoint(
-                text:
-                    "Déposer au moins un agent protecteur à proximité de l’équipe opérationnelle.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00026",
+                  "B) Agent « protecteur »",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mission : obtenir le ralentissement et, si nécessaire, l’arrêt des véhicules arrivant sur zone.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00027",
+                  "Déposer au moins un agent protecteur à proximité de l’équipe opérationnelle.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Matériel : palette de signalisation lumineuse (balancée à bout de bras dans un plan vertical).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00028",
+                  "Mission : obtenir le ralentissement et, si nécessaire, l’arrêt des véhicules arrivant sur zone.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00029",
+                  "Matériel : palette de signalisation lumineuse (balancée à bout de bras dans un plan vertical).",
+                ),
               ),
             ],
           ),
@@ -185,64 +306,154 @@ class PaSecuriteTrajetLieuxPage extends StatelessWidget {
 
           // III
           _ConditionCard(
-            title: "III — Sécurité pendant les constatations",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+              "f00030",
+              "III — Sécurité pendant les constatations",
+            ),
             cardColor: cardIII,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Positionnement du véhicule d’intervention"),
-              _BulletPoint(
-                text:
-                    "Moyens de signalisation allumés (gyrophares : bleu et orange).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00031",
+                  "A) Positionnement du véhicule d’intervention",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si le véhicule intervient en premier : se garer en protection des obstacles.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00032",
+                  "Moyens de signalisation allumés (gyrophares : bleu et orange).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si les secours sont déjà sur place : stationner sans gêner la circulation ni les opérations.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00033",
+                  "Si le véhicule intervient en premier : se garer en protection des obstacles.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00034",
+                  "Si les secours sont déjà sur place : stationner sans gêner la circulation ni les opérations.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Principes généraux sur zone"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00035",
+                  "B) Principes généraux sur zone",
+                ),
+              ),
               _Paragraph(
-                "Au cours des constatations, des mesures de sécurité doivent être prises à l’égard des véhicules accidentés "
-                "et des personnes intervenantes. Lorsque les policiers arrivent les premiers sur les lieux, ils doivent porter secours "
-                "aux blessés avec toutes les précautions nécessaires, en attendant les services spécialisés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00036",
+                      "Au cours des constatations, des mesures de sécurité doivent être prises à l’égard des véhicules accidentés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00037",
+                      "et des personnes intervenantes. Lorsque les policiers arrivent les premiers sur les lieux, ils doivent porter secours ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00038",
+                      "aux blessés avec toutes les précautions nécessaires, en attendant les services spécialisés.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Sécurité des lieux"),
-              _BulletPoint(
-                text:
-                    "Mettre en place des dispositifs coniques (cônes de Lubeck) à bandes rouges/blanches pour baliser les limites de chaussée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00039",
+                  "C) Sécurité des lieux",
+                ),
               ),
               _BulletPoint(
-                text: "Espacement : environ 5 m entre chaque élément.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00040",
+                  "Mettre en place des dispositifs coniques (cônes de Lubeck) à bandes rouges/blanches pour baliser les limites de chaussée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Fixer des bandes plastiques réfléchissantes rouges/blanches sur le véhicule accidenté du côté de la déviation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00041",
+                  "Espacement : environ 5 m entre chaque élément.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Utiliser une raquette de signalisation (feux fixes/clignotants), tenue à la main ou sur mât, au droit de l’obstacle.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00042",
+                  "Fixer des bandes plastiques réfléchissantes rouges/blanches sur le véhicule accidenté du côté de la déviation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La nuit : éclairer véhicules et chargements avec des projecteurs orientés pour éviter l’éblouissement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00043",
+                  "Utiliser une raquette de signalisation (feux fixes/clignotants), tenue à la main ou sur mât, au droit de l’obstacle.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00044",
+                  "La nuit : éclairer véhicules et chargements avec des projecteurs orientés pour éviter l’éblouissement.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("D) Mesures complémentaires"),
-              _BulletPoint(
-                text:
-                    "Vérifier que les contacts des véhicules sont coupés ; neutraliser les batteries si besoin.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00045",
+                  "D) Mesures complémentaires",
+                ),
               ),
-              _BulletPoint(text: "Éloigner les fumeurs."),
-              _BulletPoint(text: "Contenir les curieux."),
               _BulletPoint(
-                text: "Faciliter la circulation (circulation alternée, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00046",
+                  "Vérifier que les contacts des véhicules sont coupés ; neutraliser les batteries si besoin.",
+                ),
               ),
-              _BulletPoint(text: "Appeler des renforts si nécessaire."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00047",
+                  "Éloigner les fumeurs.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00048",
+                  "Contenir les curieux.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00049",
+                  "Faciliter la circulation (circulation alternée, etc.).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00050",
+                  "Appeler des renforts si nécessaire.",
+                ),
+              ),
             ],
           ),
 
@@ -250,30 +461,51 @@ class PaSecuriteTrajetLieuxPage extends StatelessWidget {
 
           // Personnel
           _ConditionCard(
-            title: "B — Sécurité du personnel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+              "f00051",
+              "B — Sécurité du personnel",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "De jour comme de nuit, les personnels de police doivent obligatoirement revêtir des équipements vestimentaires "
-                "pourvus de dispositifs réfléchissants.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00052",
+                      "De jour comme de nuit, les personnels de police doivent obligatoirement revêtir des équipements vestimentaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00053",
+                      "pourvus de dispositifs réfléchissants.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Chasuble réfléchissante ou imperméable de signalisation : obligatoire.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00054",
+                  "Chasuble réfléchissante ou imperméable de signalisation : obligatoire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La nuit : dans la mesure du possible, port du bâton lumineux lors des déplacements.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                  "f00055",
+                  "La nuit : dans la mesure du possible, port du bâton lumineux lors des déplacements.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Bon réflexe : se rendre visible très tôt, se positionner hors des flux, et anticiper les réactions des usagers pour éviter l’accident secondaire.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart",
+                      "f00056",
+                      "Bon réflexe : se rendre visible très tôt, se positionner hors des flux, et anticiper les réactions des usagers pour éviter l’accident secondaire.",
+                    ),
                   ),
                 ],
               ),
@@ -532,9 +764,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ViolencesSurFsiPage extends StatelessWidget {
   const ViolencesSurFsiPage({super.key});
@@ -59,10 +60,18 @@ class ViolencesSurFsiPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes volontaires à l’intégrité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+            "f00002",
+            "Atteintes volontaires à l’intégrité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class ViolencesSurFsiPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les violences sur les forces de sécurité intérieure\nou sur les élus locaux",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+              "f00003",
+              "Les violences sur les forces de sécurité intérieure\nou sur les élus locaux",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,38 +102,80 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
           // Définition (propre + pédagogique)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constituent des infractions les violences commises dans un cadre professionnel/fonctionnel "
-                "sur certaines catégories de personnes (forces de sécurité intérieure, personnels concourant à leurs missions, "
-                "élus locaux), ainsi que, dans certains cas, sur leurs proches.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00005",
+                      "Constituent des infractions les violences commises dans un cadre professionnel/fonctionnel ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00006",
+                      "sur certaines catégories de personnes (forces de sécurité intérieure, personnels concourant à leurs missions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00007",
+                      "élus locaux), ainsi que, dans certains cas, sur leurs proches.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Sont visées (en résumé) :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00008",
+                  "Sont visées (en résumé) :",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Les forces de sécurité intérieure et assimilés (police, gendarmerie, douanes, pénitentiaire, pompiers, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00009",
+                  "Les forces de sécurité intérieure et assimilés (police, gendarmerie, douanes, pénitentiaire, pompiers, etc.).",
+                ),
               ),
               _IntroBullet(
                 text:
-                    "Les militaires déployés sur le territoire national dans le cadre des réquisitions prévues à "
-                    "l’article L. 1321-1 du code de la défense.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00010",
+                      "Les militaires déployés sur le territoire national dans le cadre des réquisitions prévues à ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00011",
+                      "l’article L. 1321-1 du code de la défense.",
+                    ),
               ),
               _IntroBullet(
-                text:
-                    "Les élus locaux (et, jusqu’à 6 ans après la fin du mandat, l’ancien titulaire d’un mandat électif public).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00012",
+                  "Les élus locaux (et, jusqu’à 6 ans après la fin du mandat, l’ancien titulaire d’un mandat électif public).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Les proches (conjoint, ascendants/descendants, personne vivant habituellement au domicile) lorsque les violences sont commises en raison des fonctions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00013",
+                  "Les proches (conjoint, ascendants/descendants, personne vivant habituellement au domicile) lorsque les violences sont commises en raison des fonctions.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Les personnels concourant aux missions (réservistes, contractuels, administratifs, service civique…) agissant sous l’autorité des personnes visées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00014",
+                  "Les personnels concourant aux missions (réservistes, contractuels, administratifs, service civique…) agissant sous l’autorité des personnes visées.",
+                ),
               ),
             ],
           ),
@@ -129,19 +184,30 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+              "f00015",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00016",
+                    "Article 222-14-5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les violences commises sur ces personnes (et, selon les cas, sur leurs proches).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00017",
+                    " : définit et réprime les violences commises sur ces personnes (et, selon les cas, sur leurs proches).",
+                  ),
                 ),
               ]),
             ],
@@ -151,64 +217,141 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+              "f00018",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte positif"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00019",
+                  "A) Un acte positif",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent une action : elles impliquent un comportement positif. "
-                "La simple abstention ne peut constituer une violence.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00020",
+                      "Les violences supposent une action : elles impliquent un comportement positif. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00021",
+                      "La simple abstention ne peut constituer une violence.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("1) Un contact physique (direct ou indirect)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00022",
+                  "1) Un contact physique (direct ou indirect)",
+                ),
+              ),
               _Paragraph(
-                "Sont compris tous les comportements impliquant un contact physique (coups, gifles, morsures, etc.). "
-                "Le contact peut être indirect : la violence peut être réalisée au moyen d’une arme, d’un objet quelconque, "
-                "ou d’une morsure par un animal excité par l’auteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00023",
+                      "Sont compris tous les comportements impliquant un contact physique (coups, gifles, morsures, etc.). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00024",
+                      "Le contact peut être indirect : la violence peut être réalisée au moyen d’une arme, d’un objet quelconque, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00025",
+                      "ou d’une morsure par un animal excité par l’auteur.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "2) Une atteinte psychique (violences psychologiques)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00026",
+                  "2) Une atteinte psychique (violences psychologiques)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Les violences peuvent être matérialisées par une agression psychique : des agissements de nature à impressionner vivement la victime "
-                      "et à lui causer un choc émotif, voire un trouble psychologique ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                        "f00027",
+                        "Les violences peuvent être matérialisées par une agression psychique : des agissements de nature à impressionner vivement la victime ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                        "f00028",
+                        "et à lui causer un choc émotif, voire un trouble psychologique ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 18 mars 2008, n° 07-86.075)",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00029",
+                    "(Cass. crim., 18 mars 2008, n° 07-86.075)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Cette solution est codifiée par "),
                 TextSpan(
-                  text: "l’article 222-14-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00030",
+                    "Cette solution est codifiée par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00031",
+                    "l’article 222-14-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : les violences au sens des articles 222-7 et suivants sont constituées quelle que soit leur nature, "
-                      "y compris lorsqu’il s’agit de violences psychologiques.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                        "f00032",
+                        " : les violences au sens des articles 222-7 et suivants sont constituées quelle que soit leur nature, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                        "f00033",
+                        "y compris lorsqu’il s’agit de violences psychologiques.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : individu descendant de sa voiture avec une barre de fer et frappant l’arrière du véhicule de la victime ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00034",
+                      "Jurisprudence : individu descendant de sa voiture avec une barre de fer et frappant l’arrière du véhicule de la victime ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 18 mars 2008)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00035",
+                      "(Cass. crim., 18 mars 2008)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -220,96 +363,279 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une victime particulière (liste + logique)"),
-              _Paragraph("Le texte vise une liste exhaustive :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00036",
+                  "B) Une victime particulière (liste + logique)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00037",
+                  "Le texte vise une liste exhaustive :",
+                ),
+              ),
               SizedBox(height: 8),
 
-              _SubTitle("1) Membres des forces de sécurité intérieure"),
-              _BulletPoint(
-                text: "Militaire de la gendarmerie nationale.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00038",
+                  "1) Membres des forces de sécurité intérieure",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Militaire déployé sur le territoire national dans le cadre des opérations intérieures (ex. Sentinelle).",
-              ),
-              _BulletPoint(text: "Fonctionnaire de la police nationale."),
-              _BulletPoint(text: "Agent de police municipale."),
-              _BulletPoint(text: "Garde champêtre."),
-              _BulletPoint(text: "Agent des douanes."),
-              _BulletPoint(
-                text: "Sapeur-pompier professionnel ou volontaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00039",
+                  "Militaire de la gendarmerie nationale.",
+                ),
               ),
               _BulletPoint(
-                text: "Agent de l’administration pénitentiaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00040",
+                  "Militaire déployé sur le territoire national dans le cadre des opérations intérieures (ex. Sentinelle).",
+                ),
               ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("2) Élus locaux (et anciens élus récents)"),
-              _Paragraph(
-                "Sont également visées les personnes titulaires d’un mandat électif public, "
-                "ou qui l’étaient au cours des six années précédant les faits (députés, sénateurs, maires, présidents d’exécutifs locaux, "
-                "adjoints, conseillers municipaux, etc.).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00041",
+                  "Fonctionnaire de la police nationale.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00042",
+                  "Agent de police municipale.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00043",
+                  "Garde champêtre.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00044",
+                  "Agent des douanes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00045",
+                  "Sapeur-pompier professionnel ou volontaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00046",
+                  "Agent de l’administration pénitentiaire.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "3) Leurs proches (si le mobile est lié aux fonctions)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00047",
+                  "2) Élus locaux (et anciens élus récents)",
+                ),
               ),
-              _Paragraph("Peuvent être victimes :"),
-              SizedBox(height: 6),
-              _BulletPoint(text: "Le conjoint."),
-              _BulletPoint(
-                text: "Les ascendants ou descendants en ligne directe.",
-              ),
-              _BulletPoint(
-                text: "Toute autre personne vivant habituellement au domicile.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00048",
+                      "Sont également visées les personnes titulaires d’un mandat électif public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00049",
+                      "ou qui l’étaient au cours des six années précédant les faits (députés, sénateurs, maires, présidents d’exécutifs locaux, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00050",
+                      "adjoints, conseillers municipaux, etc.).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("4) Personnels concourant aux missions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00051",
+                  "3) Leurs proches (si le mobile est lié aux fonctions)",
+                ),
+              ),
               _Paragraph(
-                "Sont visées les personnes affectées dans les services (police/gendarmerie/police municipale/pénitentiaire) "
-                "qui agissent sous l’autorité des personnes mentionnées : réservistes, contractuels, personnels administratifs, "
-                "service civique, etc. (qualité apparente ou connue de l’auteur).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00052",
+                  "Peuvent être victimes :",
+                ),
+              ),
+              SizedBox(height: 6),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00053",
+                  "Le conjoint.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00054",
+                  "Les ascendants ou descendants en ligne directe.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00055",
+                  "Toute autre personne vivant habituellement au domicile.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00056",
+                  "4) Personnels concourant aux missions",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00057",
+                      "Sont visées les personnes affectées dans les services (police/gendarmerie/police municipale/pénitentiaire) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00058",
+                      "qui agissent sous l’autorité des personnes mentionnées : réservistes, contractuels, personnels administratifs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00059",
+                      "service civique, etc. (qualité apparente ou connue de l’auteur).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un contexte imposé par le texte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00060",
+                  "C) Un contexte imposé par le texte",
+                ),
+              ),
               _Paragraph(
-                "Les violences doivent être commises :\n"
-                "• soit dans l’exercice des fonctions (victime en service / accomplissant un acte entrant dans ses attributions) ;\n"
-                "• soit du fait des fonctions actuelles ou passées (en raison d’un acte déterminé de la fonction).\n"
-                "La qualité de la victime doit être apparente ou connue de l’auteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00061",
+                      "Les violences doivent être commises :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00062",
+                      "• soit dans l’exercice des fonctions (victime en service / accomplissant un acte entrant dans ses attributions) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00063",
+                      "• soit du fait des fonctions actuelles ou passées (en raison d’un acte déterminé de la fonction).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00064",
+                      "La qualité de la victime doit être apparente ou connue de l’auteur.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Pour les proches : les violences doivent être commises en raison des fonctions exercées par la personne visée "
-                "(cela implique que l’auteur connaissait la qualité de ce proche).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00065",
+                      "Pour les proches : les violences doivent être commises en raison des fonctions exercées par la personne visée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00066",
+                      "(cela implique que l’auteur connaissait la qualité de ce proche).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un résultat dommageable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00067",
+                  "D) Un résultat dommageable",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. "
-                "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00068",
+                      "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00069",
+                      "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "L’"),
                 TextSpan(
-                  text: "article 222-14-5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00070",
+                    "L’",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00071",
+                    "article 222-14-5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " distingue deux hypothèses selon le préjudice :\n"
-                      "• I.T.T. > 8 jours ;\n"
-                      "• I.T.T. ≤ 8 jours, ou absence d’incapacité de travail.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                        "f00072",
+                        " distingue deux hypothèses selon le préjudice :\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                        "f00073",
+                        "• I.T.T. > 8 jours ;\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                        "f00074",
+                        "• I.T.T. ≤ 8 jours, ou absence d’incapacité de travail.",
+                      ),
                 ),
               ]),
             ],
@@ -319,15 +645,31 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+              "f00075",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’auteur doit avoir conscience de commettre un acte de violence qui va affecter l’intégrité physique et/ou psychique d’autrui. "
-                "Il doit également vouloir commettre des violences sur une personne dont la qualité (protégée) est déterminée "
-                "(qualité apparente ou connue).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00076",
+                      "L’auteur doit avoir conscience de commettre un acte de violence qui va affecter l’intégrité physique et/ou psychique d’autrui. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00077",
+                      "Il doit également vouloir commettre des violences sur une personne dont la qualité (protégée) est déterminée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                      "f00078",
+                      "(qualité apparente ou connue).",
+                    ),
               ),
             ],
           ),
@@ -336,74 +678,145 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+              "f00079",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le régime d’aggravation varie selon la gravité (I.T.T. ≤ 8 jours / aucune I.T.T. ou I.T.T. > 8 jours).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00080",
+                  "Le régime d’aggravation varie selon la gravité (I.T.T. ≤ 8 jours / aucune I.T.T. ou I.T.T. > 8 jours).",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("A) Si aucune I.T.T. ou I.T.T. ≤ 8 jours"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00081",
+                  "A) Si aucune I.T.T. ou I.T.T. ≤ 8 jours",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Le texte renvoie à des circonstances listées aux ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00082",
+                    "Le texte renvoie à des circonstances listées aux ",
+                  ),
                 ),
                 TextSpan(
-                  text: "8° à 15° de l’article 222-12 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00083",
+                    "8° à 15° de l’article 222-12 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00084",
+                  "Par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                ),
               ),
               _BulletPoint(
-                text: "Avec préméditation ou avec guet-apens.",
-              ),
-              _BulletPoint(text: "Avec usage ou menace d’une arme."),
-              _BulletPoint(
-                text:
-                    "Dans un établissement d’enseignement/éducation ou dans des locaux de l’administration (ou aux abords, lors des entrées/sorties du public).",
-              ),
-              _BulletPoint(
-                text:
-                    "Par un majeur agissant avec l’aide ou l’assistance d’un mineur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00085",
+                  "Avec préméditation ou avec guet-apens.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dans un moyen de transport collectif de voyageurs, ou à l’accès à un tel moyen/lieu.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00086",
+                  "Avec usage ou menace d’une arme.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Par une personne en état d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00087",
+                  "Dans un établissement d’enseignement/éducation ou dans des locaux de l’administration (ou aux abords, lors des entrées/sorties du public).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Par une personne dissimulant volontairement tout ou partie de son visage pour ne pas être identifiée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00088",
+                  "Par un majeur agissant avec l’aide ou l’assistance d’un mineur.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00089",
+                  "Dans un moyen de transport collectif de voyageurs, ou à l’accès à un tel moyen/lieu.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00090",
+                  "Par une personne en état d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00091",
+                  "Par une personne dissimulant volontairement tout ou partie de son visage pour ne pas être identifiée.",
+                ),
               ),
 
               SizedBox(height: 10),
               _SubTitle(
-                "Degrés d’aggravation (I.T.T. ≤ 8 / aucune I.T.T.)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00092",
+                  "Degrés d’aggravation (I.T.T. ≤ 8 / aucune I.T.T.)",
+                ),
               ),
               _BulletPoint(
-                text: "1er degré : présence d’une de ces circonstances.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00093",
+                  "1er degré : présence d’une de ces circonstances.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "2e degré : présence d’au moins deux de ces circonstances.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00094",
+                  "2e degré : présence d’au moins deux de ces circonstances.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Si I.T.T. > 8 jours"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00095",
+                  "B) Si I.T.T. > 8 jours",
+                ),
+              ),
               _Paragraph(
-                "Un degré d’aggravation est prévu lorsque les faits sont accompagnés d’une de ces circonstances aggravantes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00096",
+                  "Un degré d’aggravation est prévu lorsque les faits sont accompagnés d’une de ces circonstances aggravantes.",
+                ),
               ),
             ],
           ),
@@ -412,21 +825,45 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+              "f00097",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00098",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
 
               // ITT <= 8 / aucune ITT
               _Paragraph.rich([
-                TextSpan(text: "Aucune I.T.T. ou I.T.T. ≤ 8 jours : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00099",
+                    "Aucune I.T.T. ou I.T.T. ≤ 8 jours : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-14-5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00100",
+                    "5 ans d’emprisonnement et 75 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00101",
+                    "article 222-14-5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -434,14 +871,25 @@ class ViolencesSurFsiPage extends StatelessWidget {
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Aggravation (1 circonstance des 8° à 15° de l’art. 222-12) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00102",
+                    "Aggravation (1 circonstance des 8° à 15° de l’art. 222-12) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00103",
+                    "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-14-5 alinéa 4 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00104",
+                    "article 222-14-5 alinéa 4 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -449,15 +897,25 @@ class ViolencesSurFsiPage extends StatelessWidget {
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Aggravation (au moins 2 circonstances des 8° à 15° de l’art. 222-12) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00105",
+                    "Aggravation (au moins 2 circonstances des 8° à 15° de l’art. 222-12) : ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté) — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00106",
+                    "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté) — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-14-5 alinéa 5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00107",
+                    "article 222-14-5 alinéa 5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -467,13 +925,26 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
               // ITT > 8
               _Paragraph.rich([
-                TextSpan(text: "I.T.T. > 8 jours : "),
                 TextSpan(
-                  text:
-                      "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté) — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00108",
+                    "I.T.T. > 8 jours : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-14-5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00109",
+                    "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté) — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00110",
+                    "article 222-14-5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -481,12 +952,25 @@ class ViolencesSurFsiPage extends StatelessWidget {
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Si les faits sont accompagnés d’une circonstance des 8° à 15° de l’art. 222-12 : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00111",
+                    "Si les faits sont accompagnés d’une circonstance des 8° à 15° de l’art. 222-12 : ",
+                  ),
                 ),
-                TextSpan(text: "aggravation prévue par "),
                 TextSpan(
-                  text: "l’article 222-14-5 alinéa 4 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00112",
+                    "aggravation prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00113",
+                    "l’article 222-14-5 alinéa 4 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -494,35 +978,71 @@ class ViolencesSurFsiPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Les personnes morales peuvent être déclarées pénalement responsables et encourent les peines prévues par ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00114",
+                  "Personnes morales",
                 ),
-                TextSpan(
-                  text: "l’article 222-16-1 du Code pénal",
-                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: "."),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(
-                text:
-                    "Tentative : NON (les textes relatifs aux violences délictuelles ne visent pas la tentative).",
               ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00115",
+                    "Les personnes morales peuvent être déclarées pénalement responsables et encourent les peines prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00116",
+                    "l’article 222-16-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: "."),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00117",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                  "f00118",
+                  "Tentative : NON (les textes relatifs aux violences délictuelles ne visent pas la tentative).",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00119",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00120",
+                    "l’article 121-6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart",
+                    "f00121",
+                    "l’article 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -781,9 +1301,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

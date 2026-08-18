@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDifferendFamilialPage extends StatelessWidget {
   const PaDifferendFamilialPage({super.key});
@@ -56,7 +57,11 @@ class PaDifferendFamilialPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Domicile",
@@ -74,7 +79,11 @@ class PaDifferendFamilialPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le différend familial",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00002",
+              "Le différend familial",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,17 +95,41 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // Définition + objectif de l’intervention
           _ConditionCard(
-            title: "Définition & objectif",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00003",
+              "Définition & objectif",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le différend familial correspond à une querelle, une dispute ou une altercation violente "
-                "entre personnes d’une même cellule familiale (mariés, concubins, partenaires PACS, "
-                "ascendants/descendants…).\n\n"
-                "L’intervention des policiers doit être conduite avec tact et discernement : "
-                "ramener le calme, protéger les victimes, et prévenir la répétition des violences.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00004",
+                      "Le différend familial correspond à une querelle, une dispute ou une altercation violente ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00005",
+                      "entre personnes d’une même cellule familiale (mariés, concubins, partenaires PACS, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00006",
+                      "ascendants/descendants…).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00007",
+                      "L’intervention des policiers doit être conduite avec tact et discernement : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00008",
+                      "ramener le calme, protéger les victimes, et prévenir la répétition des violences.",
+                    ),
               ),
             ],
           ),
@@ -105,82 +138,126 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (bases juridiques citées dans ton texte)
           _ConditionCard(
-            title: "I — Élément légal (bases citées)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00009",
+              "I — Élément légal (bases citées)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 59 alinéa 1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00010",
+                    "Article 59 alinéa 1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : permet l’introduction dans un domicile en cas de réclamation faite de l’intérieur "
-                      "(appels au secours / sollicitation d’entrer), dès lors que la gravité est établie.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00011",
+                        " : permet l’introduction dans un domicile en cas de réclamation faite de l’intérieur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00012",
+                        "(appels au secours / sollicitation d’entrer), dès lors que la gravité est établie.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00013",
+                    "Article 223-6 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : réprime le manquement volontaire à l’obligation de porter assistance à une personne en péril.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00014",
+                    " : réprime le manquement volontaire à l’obligation de porter assistance à une personne en péril.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 10-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00015",
+                    "Article 10-2 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : impose l’information des victimes (dont violences au sein du couple / mariage forcé) "
-                      "sur leurs droits, notamment la possibilité de demander une ordonnance de protection.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00016",
+                        " : impose l’information des victimes (dont violences au sein du couple / mariage forcé) ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00017",
+                        "sur leurs droits, notamment la possibilité de demander une ordonnance de protection.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 220-1 du Code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00018",
+                    "Article 220-1 du Code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : prévoit pour une victime mariée la possibilité d’obtenir l’expulsion du domicile conjugal "
-                      "pour le conjoint violent (juge aux affaires familiales).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00019",
+                        " : prévoit pour une victime mariée la possibilité d’obtenir l’expulsion du domicile conjugal ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00020",
+                        "pour le conjoint violent (juge aux affaires familiales).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 311-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00021",
+                    "Article 311-12 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : immunité du vol entre époux, qui ne s’applique pas lorsque le vol porte sur des objets/documents indispensables "
-                      "(papiers d’identité, moyens de paiement, titres de séjour/résidence, moyen de télécommunication…).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00022",
+                        " : immunité du vol entre époux, qui ne s’applique pas lorsque le vol porte sur des objets/documents indispensables ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                        "f00023",
+                        "(papiers d’identité, moyens de paiement, titres de séjour/résidence, moyen de télécommunication…).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -188,8 +265,16 @@ class PaDifferendFamilialPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le différend familial n’est pas une infraction unique : il s’agit d’une situation opérationnelle. "
-                        "La qualification dépend de ce qui est constaté (absence d’atteinte / violences / menaces / infractions connexes).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                          "f00024",
+                          "Le différend familial n’est pas une infraction unique : il s’agit d’une situation opérationnelle. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                          "f00025",
+                          "La qualification dépend de ce qui est constaté (absence d’atteinte / violences / menaces / infractions connexes).",
+                        ),
                   ),
                 ],
               ),
@@ -200,31 +285,93 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // 3 éléments (version “pédagogique” adaptée à une situation type : violences)
           _ConditionCard(
-            title: "II — 3 éléments (qualification pénale : violences)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00026",
+              "II — 3 éléments (qualification pénale : violences)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Élément légal"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00027",
+                  "A) Élément légal",
+                ),
+              ),
               _Paragraph(
-                "Les violences (notamment au sein du couple ou du foyer) relèvent du domaine délictuel. "
-                "La qualification exacte dépend des constatations (nature des violences, contexte familial, vulnérabilité, ITT, usage d’arme…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00028",
+                      "Les violences (notamment au sein du couple ou du foyer) relèvent du domaine délictuel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00029",
+                      "La qualification exacte dépend des constatations (nature des violences, contexte familial, vulnérabilité, ITT, usage d’arme…).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Élément matériel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00030",
+                  "B) Élément matériel",
+                ),
+              ),
               _Paragraph(
-                "Les violences peuvent prendre différentes formes :\n"
-                "• Contact direct (gifle, coup, bousculade…)\n"
-                "• Contact via une arme ou un animal lancé volontairement\n"
-                "• Actes sans contact mais provoquant un choc émotionnel ou un trouble psychologique "
-                "(ex. tirer dans la direction d’une personne pour l’effrayer sans la toucher).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00031",
+                      "Les violences peuvent prendre différentes formes :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00032",
+                      "• Contact direct (gifle, coup, bousculade…)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00033",
+                      "• Contact via une arme ou un animal lancé volontairement\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00034",
+                      "• Actes sans contact mais provoquant un choc émotionnel ou un trouble psychologique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00035",
+                      "(ex. tirer dans la direction d’une personne pour l’effrayer sans la toucher).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Élément moral"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00036",
+                  "C) Élément moral",
+                ),
+              ),
               _Paragraph(
-                "L’auteur agit volontairement : il doit avoir conscience de ses actes. "
-                "En intervention, la prise en compte de la dangerosité, des menaces, de l’alcoolisation, "
-                "d’éventuels antécédents et de la répétition est essentielle.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00037",
+                      "L’auteur agit volontairement : il doit avoir conscience de ses actes. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00038",
+                      "En intervention, la prise en compte de la dangerosité, des menaces, de l’alcoolisation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00039",
+                      "d’éventuels antécédents et de la répétition est essentielle.",
+                    ),
               ),
             ],
           ),
@@ -233,35 +380,63 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // Circonstances aggravantes (pédagogique : couple / mineur / vulnérabilité)
           _ConditionCard(
-            title: "III — Circonstances aggravantes (repères)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00040",
+              "III — Circonstances aggravantes (repères)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Certaines situations aggravent fortement les suites pénales lorsqu’il s’agit de violences :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00041",
+                  "Certaines situations aggravent fortement les suites pénales lorsqu’il s’agit de violences :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Violences au sein du couple : toujours délictuelles, quelle que soit la durée de l’ITT.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00042",
+                  "Violences au sein du couple : toujours délictuelles, quelle que soit la durée de l’ITT.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Violences sur mineur de 15 ans : relèvent toujours du domaine délictuel, indépendamment de l’ITT.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00043",
+                  "Violences sur mineur de 15 ans : relèvent toujours du domaine délictuel, indépendamment de l’ITT.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Violences sur ascendant : relèvent toujours du domaine délictuel, indépendamment de l’ITT.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00044",
+                  "Violences sur ascendant : relèvent toujours du domaine délictuel, indépendamment de l’ITT.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Victime vulnérable (âge, maladie, infirmité, déficience physique/psychique…) : relèvent toujours du domaine délictuel, indépendamment de l’ITT.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00045",
+                  "Victime vulnérable (âge, maladie, infirmité, déficience physique/psychique…) : relèvent toujours du domaine délictuel, indépendamment de l’ITT.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le document rappelle aussi que des sanctions sont aggravées dans le couple pour certaines infractions "
-                "(tortures/barbarie, violences ayant entraîné la mort sans intention de la donner, meurtre, viol, agression sexuelle, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00046",
+                      "Le document rappelle aussi que des sanctions sont aggravées dans le couple pour certaines infractions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00047",
+                      "(tortures/barbarie, violences ayant entraîné la mort sans intention de la donner, meurtre, viol, agression sexuelle, etc.).",
+                    ),
               ),
             ],
           ),
@@ -270,21 +445,47 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // Tentative & complicité (rendu clean, sans inventer d’articles)
           _ConditionCard(
-            title: "IV — Tentative & complicité (repères)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00048",
+              "IV — Tentative & complicité (repères)",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Tentative"),
               _Paragraph(
-                "À apprécier selon l’infraction finalement retenue (contravention / délit / crime) et selon les textes applicables. "
-                "En intervention, l’essentiel est de sécuriser, constater et qualifier précisément les faits.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00049",
+                      "À apprécier selon l’infraction finalement retenue (contravention / délit / crime) et selon les textes applicables. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00050",
+                      "En intervention, l’essentiel est de sécuriser, constater et qualifier précisément les faits.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00051",
+                  "Complicité",
+                ),
+              ),
               _Paragraph(
-                "Peut être retenue lorsque des personnes ont aidé/assisté l’auteur (ou facilité l’infraction), "
-                "selon les conditions légales propres à l’infraction visée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00052",
+                      "Peut être retenue lorsque des personnes ont aidé/assisté l’auteur (ou facilité l’infraction), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00053",
+                      "selon les conditions légales propres à l’infraction visée.",
+                    ),
               ),
             ],
           ),
@@ -293,40 +494,75 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // Intervention - MRO + tactique
           _ConditionCard(
-            title: "V — Conduite de l’intervention (MRO)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00054",
+              "V — Conduite de l’intervention (MRO)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tout policier intervenant sur un différend familial doit appliquer la Méthode de Raisonnement Opérationnel (MRO) :\n"
-                "• Analyse de la situation\n"
-                "• Cadre juridique\n"
-                "• Tactique d’action",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00055",
+                      "Tout policier intervenant sur un différend familial doit appliquer la Méthode de Raisonnement Opérationnel (MRO) :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00056",
+                      "• Analyse de la situation\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00057",
+                      "• Cadre juridique\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00058",
+                      "• Tactique d’action",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Vigilance maximale : ne pas se positionner face à la porte.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00059",
+                  "Vigilance maximale : ne pas se positionner face à la porte.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si la porte s’ouvre : expliquer le motif, demander l’autorisation d’entrer.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00060",
+                  "Si la porte s’ouvre : expliquer le motif, demander l’autorisation d’entrer.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "À l’intérieur : observer, sécuriser (écarter objets dangereux), séparer les protagonistes, entendre séparément si possible.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00061",
+                  "À l’intérieur : observer, sécuriser (écarter objets dangereux), séparer les protagonistes, entendre séparément si possible.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si règlement impossible : inviter à venir au service, proposer des orientations et organismes d’assistance.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00062",
+                  "Si règlement impossible : inviter à venir au service, proposer des orientations et organismes d’assistance.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En cas de prise d’otages ou menace de suicide : différer l’intervention, sécuriser les abords, empêcher le public d’approcher, faciliter l’arrivée des renforts et personnels spécialisés.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00063",
+                      "En cas de prise d’otages ou menace de suicide : différer l’intervention, sécuriser les abords, empêcher le public d’approcher, faciliter l’arrivée des renforts et personnels spécialisés.",
+                    ),
                   ),
                 ],
               ),
@@ -337,34 +573,81 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // Recueil d’infos (avant départ)
           _ConditionCard(
-            title: "VI — Recueil d’informations (avant l’arrivée)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00064",
+              "VI — Recueil d’informations (avant l’arrivée)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le service qui reçoit l’appel doit recueillir un maximum d’informations :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00065",
+                  "Le service qui reçoit l’appel doit recueillir un maximum d’informations :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Adresse précise (code d’accès, numéro, étage).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00066",
+                  "Adresse précise (code d’accès, numéro, étage).",
+                ),
               ),
               _BulletPoint(
-                text: "Personnes impliquées (nombre, présence d’enfants).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00067",
+                  "Personnes impliquées (nombre, présence d’enfants).",
+                ),
               ),
-              _BulletPoint(text: "Configuration du logement."),
-              _BulletPoint(text: "Degré de gravité / urgence."),
               _BulletPoint(
-                text: "Danger immédiat (arme, surexcitation, chien…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00068",
+                  "Configuration du logement.",
+                ),
               ),
-              _BulletPoint(text: "Alcool / toxicomanie."),
-              _BulletPoint(text: "Éventuels précédents."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00069",
+                  "Degré de gravité / urgence.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00070",
+                  "Danger immédiat (arme, surexcitation, chien…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00071",
+                  "Alcool / toxicomanie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00072",
+                  "Éventuels précédents.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le requérant ne doit pas être conduit sur les lieux, ni être vu par les protagonistes.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00073",
+                      "Le requérant ne doit pas être conduit sur les lieux, ni être vu par les protagonistes.",
+                    ),
                   ),
                 ],
               ),
@@ -375,57 +658,106 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // Cadre juridique + suites
           _ConditionCard(
-            title: "VII — Cadre juridique & suites",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00074",
+              "VII — Cadre juridique & suites",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La majorité des interventions de différends familiaux s’effectuent dans le cadre du flagrant délit.\n\n"
-                "Priorité : protéger la victime et les enfants, empêcher de nouveaux actes, puis apprécier les suites pénales "
-                "(interpellation en flagrance si violences caractérisées, avis OPJ immédiat).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00075",
+                      "La majorité des interventions de différends familiaux s’effectuent dans le cadre du flagrant délit.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00076",
+                      "Priorité : protéger la victime et les enfants, empêcher de nouveaux actes, puis apprécier les suites pénales ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00077",
+                      "(interpellation en flagrance si violences caractérisées, avis OPJ immédiat).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "En cas de plainte : "),
                   TextSpan(
-                    text: "article 10-2 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00078",
+                      "En cas de plainte : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00079",
+                      "article 10-2 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : information des victimes sur leurs droits (dont ordonnance de protection) et sur les peines encourues.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00080",
+                      " : information des victimes sur leurs droits (dont ordonnance de protection) et sur les peines encourues.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La victime peut quitter le domicile conjugal (les violences justifient le départ). "
-                "Pour préserver ses droits, elle peut déposer une main courante. "
-                "Elle peut aussi demander une domiciliation au service enquêteur (adresse non communiquée).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00081",
+                      "La victime peut quitter le domicile conjugal (les violences justifient le départ). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00082",
+                      "Pour préserver ses droits, elle peut déposer une main courante. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00083",
+                      "Elle peut aussi demander une domiciliation au service enquêteur (adresse non communiquée).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Victime mariée : possibilité d’expulsion du conjoint violent — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00084",
+                    "Victime mariée : possibilité d’expulsion du conjoint violent — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 220-1 du Code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                    "f00085",
+                    "article 220-1 du Code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "En cas de retrait de plainte : seul le procureur de la République décide de poursuivre ou non.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00086",
+                  "En cas de retrait de plainte : seul le procureur de la République décide de poursuivre ou non.",
+                ),
               ),
             ],
           ),
@@ -434,34 +766,74 @@ class PaDifferendFamilialPage extends StatelessWidget {
 
           // Devoirs comportementaux
           _ConditionCard(
-            title: "VIII — Devoirs comportementaux des policiers",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+              "f00087",
+              "VIII — Devoirs comportementaux des policiers",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Neutralité & absence de jugement"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00088",
+                  "Neutralité & absence de jugement",
+                ),
+              ),
               _Paragraph(
-                "Faire preuve d’impartialité, éviter tout parti pris et ne pas générer de tensions supplémentaires. "
-                "La prise en compte de la victime doit être professionnelle : une victime peut être vulnérable, dépendante financièrement "
-                "et connaître des revirements.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00089",
+                      "Faire preuve d’impartialité, éviter tout parti pris et ne pas générer de tensions supplémentaires. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00090",
+                      "La prise en compte de la victime doit être professionnelle : une victime peut être vulnérable, dépendante financièrement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                      "f00091",
+                      "et connaître des revirements.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Information à délivrer à la victime"),
-              _BulletPoint(
-                text:
-                    "Un dépôt de plainte n’entraîne pas automatiquement l’incarcération : d’autres mesures peuvent être décidées par l’autorité judiciaire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00092",
+                  "Information à délivrer à la victime",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le mis en cause peut être poursuivi même sans plainte ou en cas de retrait de plainte.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00093",
+                  "Un dépôt de plainte n’entraîne pas automatiquement l’incarcération : d’autres mesures peuvent être décidées par l’autorité judiciaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le dépôt de plainte n’entraîne pas automatiquement le placement des enfants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00094",
+                  "Le mis en cause peut être poursuivi même sans plainte ou en cas de retrait de plainte.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le conjoint violent peut être évincé du domicile sur décision du juge aux affaires familiales.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00095",
+                  "Le dépôt de plainte n’entraîne pas automatiquement le placement des enfants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart",
+                  "f00096",
+                  "Le conjoint violent peut être évincé du domicile sur décision du juge aux affaires familiales.",
+                ),
               ),
             ],
           ),
@@ -718,9 +1090,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

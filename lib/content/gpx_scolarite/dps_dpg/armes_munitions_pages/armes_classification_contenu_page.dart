@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ArmesClassificationPage extends StatelessWidget {
   const ArmesClassificationPage({super.key});
@@ -56,10 +57,18 @@ class ArmesClassificationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Armes & munitions",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+            "f00002",
+            "Armes & munitions",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ArmesClassificationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Classification des armes et des munitions",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+              "f00003",
+              "Classification des armes et des munitions",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,28 +99,44 @@ class ArmesClassificationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Élément légal (texte de référence)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+              "f00004",
+              "Élément légal (texte de référence)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 311-2 du C.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                    "f00005",
+                    "Article R. 311-2 du C.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixe la classification des armes et munitions en catégories A, B, C et D.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                    "f00006",
+                    " : fixe la classification des armes et munitions en catégories A, B, C et D.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette classification organise le régime juridique (interdiction, autorisation, déclaration ou liberté "
-                "d’acquisition/détention) selon la dangerosité et l’usage des armes/munitions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00007",
+                      "Cette classification organise le régime juridique (interdiction, autorisation, déclaration ou liberté ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00008",
+                      "d’acquisition/détention) selon la dangerosité et l’usage des armes/munitions.",
+                    ),
               ),
             ],
           ),
@@ -116,26 +145,42 @@ class ArmesClassificationPage extends StatelessWidget {
 
           // Intro pédagogique
           _ConditionCard(
-            title: "Repères rapides",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+              "f00009",
+              "Repères rapides",
+            ),
             cardColor: cardD,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Catégorie A : matériels de guerre / armes interdites à l’acquisition et à la détention (A1/A2).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00010",
+                  "Catégorie A : matériels de guerre / armes interdites à l’acquisition et à la détention (A1/A2).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Catégorie B : armes soumises à autorisation (principalement armes de poing et certaines armes d’épaule).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00011",
+                  "Catégorie B : armes soumises à autorisation (principalement armes de poing et certaines armes d’épaule).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Catégorie C : armes soumises à déclaration (certaines armes d’épaule, munitions/éléments associés).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00012",
+                  "Catégorie C : armes soumises à déclaration (certaines armes d’épaule, munitions/éléments associés).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Catégorie D : acquisition et détention libres (armes/objets listés, sous conditions selon cas).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00013",
+                  "Catégorie D : acquisition et détention libres (armes/objets listés, sous conditions selon cas).",
+                ),
               ),
             ],
           ),
@@ -144,99 +189,195 @@ class ArmesClassificationPage extends StatelessWidget {
 
           // I - Catégorie A
           _ConditionCard(
-            title: "I — Catégorie A (interdiction)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+              "f00014",
+              "I — Catégorie A (interdiction)",
+            ),
             cardColor: cardA,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La catégorie A regroupe les matériels de guerre et les armes interdits à l’acquisition et à la détention. "
-                "Elle se subdivise en A1 et A2.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00015",
+                      "La catégorie A regroupe les matériels de guerre et les armes interdits à l’acquisition et à la détention. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00016",
+                      "Elle se subdivise en A1 et A2.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Catégorie A1"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00017",
+                  "A) Catégorie A1",
+                ),
+              ),
               _Paragraph(
-                "Armes et éléments d’armes interdits, ainsi que certains systèmes d’alimentation et munitions.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00018",
+                  "Armes et éléments d’armes interdits, ainsi que certains systèmes d’alimentation et munitions.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Points clés (A1)"),
-              _BulletPoint(
-                text: "Armes à feu camouflées sous la forme d’un autre objet.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00019",
+                  "Points clés (A1)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes de poing tirant plus de 21 munitions sans réapprovisionnement (avec chargeur > 20 intégré ou inséré).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00020",
+                  "Armes à feu camouflées sous la forme d’un autre objet.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes d’épaule semi-auto : annulaire (> 31 coups) ou centrale (> 11 coups) selon chargeur intégré/inséré.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00021",
+                  "Armes de poing tirant plus de 21 munitions sans réapprovisionnement (avec chargeur > 20 intégré ou inséré).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes d’épaule alimentées par bande (quelle qu’en soit la capacité).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00022",
+                  "Armes d’épaule semi-auto : annulaire (> 31 coups) ou centrale (> 11 coups) selon chargeur intégré/inséré.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes à canon rayé + munitions si projectile ≥ 20 mm (sauf projectiles non métalliques exclusivement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00023",
+                  "Armes d’épaule alimentées par bande (quelle qu’en soit la capacité).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes à canon lisse + munitions de calibre supérieur au calibre 8 (exceptions selon arrêtés).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00024",
+                  "Armes à canon rayé + munitions si projectile ≥ 20 mm (sauf projectiles non métalliques exclusivement).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Munitions dont le projectile ≥ 20 mm (sauf celles utilisées par armes classées en catégorie C).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00025",
+                  "Armes à canon lisse + munitions de calibre supérieur au calibre 8 (exceptions selon arrêtés).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éléments d’armes/munitions + systèmes d’alimentation : poing > 20, épaule annulaire > 30, épaule centrale > 10, répétition manuelle centrale > 30.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00026",
+                  "Munitions dont le projectile ≥ 20 mm (sauf celles utilisées par armes classées en catégorie C).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00027",
+                  "Éléments d’armes/munitions + systèmes d’alimentation : poing > 20, épaule annulaire > 30, épaule centrale > 10, répétition manuelle centrale > 30.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Catégorie A2"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00028",
+                  "B) Catégorie A2",
+                ),
+              ),
               _Paragraph(
-                "Matériels de guerre, équipements destinés au combat, certaines munitions et matériels spécialisés.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00029",
+                  "Matériels de guerre, équipements destinés au combat, certaines munitions et matériels spécialisés.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Points clés (A2)"),
-              _BulletPoint(
-                text:
-                    "Armes automatiques et dispositifs permettant le tir en rafale (ou assimilé).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00030",
+                  "Points clés (A2)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Munitions à projectiles perforants, explosifs ou incendiaires.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00031",
+                  "Armes automatiques et dispositifs permettant le tir en rafale (ou assimilé).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes à effets laser/ondes électromagnétiques de grande puissance.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00032",
+                  "Munitions à projectiles perforants, explosifs ou incendiaires.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Canons, obusiers, mortiers, lance-roquettes, lance-grenades et équipements associés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00033",
+                  "Armes à effets laser/ondes électromagnétiques de grande puissance.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Bombes, torpilles, mines, missiles, grenades, engins incendiaires, leurres, équipements de lancement/largage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00034",
+                  "Canons, obusiers, mortiers, lance-roquettes, lance-grenades et équipements associés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Engins nucléaires explosifs + composants spécifiques + matériels/logiciels spécialisés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00035",
+                  "Bombes, torpilles, mines, missiles, grenades, engins incendiaires, leurres, équipements de lancement/largage.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Véhicules de combat, aéronefs militaires (pilotés ou non), navires de guerre et éléments associés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00036",
+                  "Engins nucléaires explosifs + composants spécifiques + matériels/logiciels spécialisés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Matériels de transmission/télécommunication militaires, contre-mesures électroniques, moyens de cryptologie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00037",
+                  "Véhicules de combat, aéronefs militaires (pilotés ou non), navires de guerre et éléments associés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Matériels d’observation/visée, vision nocturne, conduite de tir, détection/brouillage, protection NBC/radiologique.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00038",
+                  "Matériels de transmission/télécommunication militaires, contre-mesures électroniques, moyens de cryptologie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00039",
+                  "Matériels d’observation/visée, vision nocturne, conduite de tir, détection/brouillage, protection NBC/radiologique.",
+                ),
               ),
             ],
           ),
@@ -245,44 +386,79 @@ class ArmesClassificationPage extends StatelessWidget {
 
           // II - Catégorie B
           _ConditionCard(
-            title: "II — Catégorie B (autorisation)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+              "f00040",
+              "II — Catégorie B (autorisation)",
+            ),
             cardColor: cardB,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La catégorie B regroupe les armes soumises à autorisation pour l’acquisition et la détention.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00041",
+                  "La catégorie B regroupe les armes soumises à autorisation pour l’acquisition et la détention.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Principaux ensembles"),
-              _BulletPoint(
-                text:
-                    "B 1° : armes à feu de poing (et armes converties en armes de poing non classées ailleurs).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00042",
+                  "Principaux ensembles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "B 2° : armes à feu d’épaule (semi-auto centrale/annulaire selon capacités, longueurs, apparence, pompe…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00043",
+                  "B 1° : armes à feu de poing (et armes converties en armes de poing non classées ailleurs).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "B 4° : armes chambrant certains calibres (ex. 7,62x39 ; 5,56x45 ; 5,45x39 ; 12,7x99 ; 14,5x114) + munitions, douilles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00044",
+                  "B 2° : armes à feu d’épaule (semi-auto centrale/annulaire selon capacités, longueurs, apparence, pompe…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "B 6° / B 7° : armes à impulsion électrique (distance / contact) selon classement par arrêté.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00045",
+                  "B 4° : armes chambrant certains calibres (ex. 7,62x39 ; 5,56x45 ; 5,45x39 ; 12,7x99 ; 14,5x114) + munitions, douilles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "B 8° : générateurs d’aérosols incapacitants/lacrymogènes > 100 ml (ou classés par arrêté).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00046",
+                  "B 6° / B 7° : armes à impulsion électrique (distance / contact) selon classement par arrêté.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "B 10° / B 11° : certaines munitions à percussion centrale + systèmes d’alimentation des armes de catégorie B.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00047",
+                  "B 8° : générateurs d’aérosols incapacitants/lacrymogènes > 100 ml (ou classés par arrêté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "B 12° : armes à répétition manuelle avec mécanisme transportant la munition par action sur la détente (définition légale).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00048",
+                  "B 10° / B 11° : certaines munitions à percussion centrale + systèmes d’alimentation des armes de catégorie B.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00049",
+                  "B 12° : armes à répétition manuelle avec mécanisme transportant la munition par action sur la détente (définition légale).",
+                ),
               ),
             ],
           ),
@@ -291,41 +467,84 @@ class ArmesClassificationPage extends StatelessWidget {
 
           // III - Catégorie C
           _ConditionCard(
-            title: "III — Catégorie C (déclaration)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+              "f00050",
+              "III — Catégorie C (déclaration)",
+            ),
             cardColor: cardC,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La catégorie C concerne les armes soumises à déclaration : principalement certaines armes d’épaule, "
-                "leurs éléments, et certaines munitions/éléments associés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00051",
+                      "La catégorie C concerne les armes soumises à déclaration : principalement certaines armes d’épaule, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00052",
+                      "leurs éléments, et certaines munitions/éléments associés.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Points clés"),
-              _BulletPoint(
-                text:
-                    "C 1° : armes à feu d’épaule (semi-auto limitée à 3 coups, répétition manuelle limitée à 11 coups, un coup par canon, pompe à canon rayé sous conditions…).",
-              ),
-              _BulletPoint(text: "C 2° : éléments de ces armes."),
-              _BulletPoint(
-                text:
-                    "C 4° : armes/lanceurs non pyrotechniques avec énergie à la bouche ≥ 20 joules.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00053",
+                  "Points clés",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "C 6° à C 8° : munitions/éléments classés selon modalités prévues, y compris arrêtés conjoints.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00054",
+                  "C 1° : armes à feu d’épaule (semi-auto limitée à 3 coups, répétition manuelle limitée à 11 coups, un coup par canon, pompe à canon rayé sous conditions…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "C 9° : armes neutralisées selon modalités fixées par arrêté.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00055",
+                  "C 2° : éléments de ces armes.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "C 10° : systèmes d’alimentation des armes de catégorie C.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00056",
+                  "C 4° : armes/lanceurs non pyrotechniques avec énergie à la bouche ≥ 20 joules.",
+                ),
               ),
               _BulletPoint(
-                text: "C 12° : armes d’alarme et de signalisation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00057",
+                  "C 6° à C 8° : munitions/éléments classés selon modalités prévues, y compris arrêtés conjoints.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00058",
+                  "C 9° : armes neutralisées selon modalités fixées par arrêté.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00059",
+                  "C 10° : systèmes d’alimentation des armes de catégorie C.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00060",
+                  "C 12° : armes d’alarme et de signalisation.",
+                ),
               ),
             ],
           ),
@@ -334,45 +553,84 @@ class ArmesClassificationPage extends StatelessWidget {
 
           // IV - Catégorie D
           _ConditionCard(
-            title: "IV — Catégorie D (libre acquisition/détention)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+              "f00061",
+              "IV — Catégorie D (libre acquisition/détention)",
+            ),
             cardColor: cardD,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La catégorie D regroupe des armes et matériels dont l’acquisition et la détention sont libres, "
-                "dans les conditions fixées par les textes (et selon certains arrêtés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00062",
+                      "La catégorie D regroupe des armes et matériels dont l’acquisition et la détention sont libres, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                      "f00063",
+                      "dans les conditions fixées par les textes (et selon certains arrêtés).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Exemples et ensembles"),
-              _BulletPoint(
-                text:
-                    "Objets susceptibles de constituer une arme dangereuse (armes non à feu camouflées, poignards, matraques… selon arrêtés).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00064",
+                  "Exemples et ensembles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Aérosols lacrymogènes/incapacitants ≤ 100 ml (sauf reclassement par arrêté).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00065",
+                  "Objets susceptibles de constituer une arme dangereuse (armes non à feu camouflées, poignards, matraques… selon arrêtés).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes à impulsions électriques de contact (sauf reclassement par arrêté).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00066",
+                  "Aérosols lacrymogènes/incapacitants ≤ 100 ml (sauf reclassement par arrêté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes historiques et de collection (modèle antérieur au 1er janvier 1900) et certaines reproductions (conditions techniques/arrêtés).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00067",
+                  "Armes à impulsions électriques de contact (sauf reclassement par arrêté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Armes/lanceurs non pyrotechniques : énergie à la bouche entre 2 et 20 joules.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00068",
+                  "Armes historiques et de collection (modèle antérieur au 1er janvier 1900) et certaines reproductions (conditions techniques/arrêtés).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Certaines munitions et éléments (poudre noire, sans étui métallique, fabrications anciennes…), selon listes et conditions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00069",
+                  "Armes/lanceurs non pyrotechniques : énergie à la bouche entre 2 et 20 joules.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Certains matériels de guerre selon modèle et neutralisation (avant/après 1946), selon arrêtés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00070",
+                  "Certaines munitions et éléments (poudre noire, sans étui métallique, fabrications anciennes…), selon listes et conditions.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                  "f00071",
+                  "Certains matériels de guerre selon modèle et neutralisation (avant/après 1946), selon arrêtés.",
+                ),
               ),
               SizedBox(height: 12),
 
@@ -380,8 +638,16 @@ class ArmesClassificationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La classification exacte dépend parfois d’arrêtés conjoints (Intérieur, Défense, Douanes, Industrie). "
-                        "En pratique, on vérifie toujours la catégorie précise dans les textes applicables.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                          "f00072",
+                          "La classification exacte dépend parfois d’arrêtés conjoints (Intérieur, Défense, Douanes, Industrie). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/armes_munitions_pages/armes_classification_contenu_page.dart",
+                          "f00073",
+                          "En pratique, on vérifie toujours la catégorie précise dans les textes applicables.",
+                        ),
                   ),
                 ],
               ),
@@ -639,9 +905,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

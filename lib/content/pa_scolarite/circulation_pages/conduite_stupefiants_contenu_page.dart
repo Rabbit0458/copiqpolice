@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaConduiteStupefiantsPage extends StatelessWidget {
   const PaConduiteStupefiantsPage({super.key});
@@ -59,10 +60,18 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infraction circulation routière",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+            "f00002",
+            "Infraction circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La conduite après usage de substances ou plantes classées comme stupéfiants",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+              "f00003",
+              "La conduite après usage de substances ou plantes classées comme stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une infraction le fait, pour toute personne, de conduire un véhicule ou d'accompagner "
-                "un élève conducteur, alors qu’il résulte d’une analyse sanguine ou salivaire qu’elle a fait usage "
-                "de substances ou plantes classées comme stupéfiants.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00005",
+                      "Constitue une infraction le fait, pour toute personne, de conduire un véhicule ou d'accompagner ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00006",
+                      "un élève conducteur, alors qu’il résulte d’une analyse sanguine ou salivaire qu’elle a fait usage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00007",
+                      "de substances ou plantes classées comme stupéfiants.",
+                    ),
               ),
             ],
           ),
@@ -106,23 +135,36 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (comme tu veux)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 235-1 / I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00009",
+                    "Article L. 235-1 / I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit et réprime le fait de conduire un véhicule ou d’accompagner un élève conducteur "
-                      "en se trouvant sous l’influence de substances ou plantes classées comme stupéfiants.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                        "f00010",
+                        " : définit et réprime le fait de conduire un véhicule ou d’accompagner un élève conducteur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                        "f00011",
+                        "en se trouvant sous l’influence de substances ou plantes classées comme stupéfiants.",
+                      ),
                 ),
               ]),
             ],
@@ -132,35 +174,95 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une personne visée par le texte"),
-              _SubTitle("1) Un conducteur de véhicule"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00013",
+                  "A) Une personne visée par le texte",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00014",
+                  "1) Un conducteur de véhicule",
+                ),
+              ),
               _Paragraph(
-                "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, transports en commun, "
-                "motocyclettes, cyclomoteurs, matériels agricoles/forestiers, engins de travaux publics, engins spéciaux, trolleybus), "
-                "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00015",
+                      "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, transports en commun, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00016",
+                      "motocyclettes, cyclomoteurs, matériels agricoles/forestiers, engins de travaux publics, engins spéciaux, trolleybus), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00017",
+                      "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("2) Un accompagnateur d’élève conducteur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00018",
+                  "2) Un accompagnateur d’élève conducteur",
+                ),
+              ),
               _Paragraph(
-                "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre "
-                "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00019",
+                      "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00020",
+                      "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Un cas permettant la recherche de stupéfiants",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00021",
+                  "B) Un cas permettant la recherche de stupéfiants",
+                ),
               ),
-              _SubTitle("1) Le dépistage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00022",
+                  "1) Le dépistage",
+                ),
+              ),
               _Paragraph(
-                "Le dépistage consiste, à partir d’un recueil salivaire ou urinaire, à rechercher la présence d’une ou plusieurs "
-                "substances témoignant de l’usage de stupéfiants (cannabiniques, amphétaminiques, cocaïniques, opiacés).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00023",
+                      "Le dépistage consiste, à partir d’un recueil salivaire ou urinaire, à rechercher la présence d’une ou plusieurs ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00024",
+                      "substances témoignant de l’usage de stupéfiants (cannabiniques, amphétaminiques, cocaïniques, opiacés).",
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -168,20 +270,41 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le refus de subir le test de dépistage ne constitue pas une infraction, mais entraîne l’obligation "
-                        "pour l’intéressé de se soumettre aux vérifications. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                          "f00025",
+                          "Le refus de subir le test de dépistage ne constitue pas une infraction, mais entraîne l’obligation ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                          "f00026",
+                          "pour l’intéressé de se soumettre aux vérifications. ",
+                        ),
                   ),
-                  TextSpan(text: "Pour l’accompagnateur, "),
                   TextSpan(
-                    text: "l’article L. 235-2 alinéa 5 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00027",
+                      "Pour l’accompagnateur, ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00028",
+                      "l’article L. 235-2 alinéa 5 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " ne prévoit pas de vérifications en cas de refus ou d’impossibilité de dépistage.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00029",
+                      " ne prévoit pas de vérifications en cas de refus ou d’impossibilité de dépistage.",
+                    ),
                   ),
                 ],
               ),
@@ -189,86 +312,170 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _Paragraph.rich([
-                TextSpan(text: "Cas de dépistage ("),
                 TextSpan(
-                  text: "article L. 235-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00030",
+                    "Cas de dépistage (",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00031",
+                    "article L. 235-2 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ") :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Obligatoire : accident mortel de la circulation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00032",
+                  "Obligatoire : accident mortel de la circulation.",
+                ),
               ),
               _BulletPoint(
-                text: "Obligatoire : accident corporel de la circulation.",
-              ),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text: "Facultatif : accident matériel de la circulation.",
-              ),
-              _BulletPoint(
-                text: "Facultatif : infraction au code de la route.",
-              ),
-              _BulletPoint(
-                text:
-                    "Facultatif : raisons plausibles de soupçonner l’usage de stupéfiants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00033",
+                  "Obligatoire : accident corporel de la circulation.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Préventif : sur réquisition du procureur de la République.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00034",
+                  "Facultatif : accident matériel de la circulation.",
+                ),
               ),
               _BulletPoint(
-                text: "Préventif : à l’initiative de l’OPJ / APJ.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00035",
+                  "Facultatif : infraction au code de la route.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00036",
+                  "Facultatif : raisons plausibles de soupçonner l’usage de stupéfiants.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Impossible en cas de refus de se soumettre au dépistage, de blessures graves (contre-indication médicale) ou de décès.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00037",
+                  "Préventif : sur réquisition du procureur de la République.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00038",
+                  "Préventif : à l’initiative de l’OPJ / APJ.",
+                ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00039",
+                  "Impossible en cas de refus de se soumettre au dépistage, de blessures graves (contre-indication médicale) ou de décès.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("2) La preuve : les vérifications"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00040",
+                  "2) La preuve : les vérifications",
+                ),
+              ),
               _Paragraph(
-                "Si le dépistage est positif, ou si le conducteur refuse / est dans l’impossibilité de le subir, "
-                "les officiers ou agents de police judiciaire font procéder à des vérifications (analyses ou examens) "
-                "pour établir si la personne conduisait après avoir fait usage de stupéfiants.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00041",
+                      "Si le dépistage est positif, ou si le conducteur refuse / est dans l’impossibilité de le subir, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00042",
+                      "les officiers ou agents de police judiciaire font procéder à des vérifications (analyses ou examens) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00043",
+                      "pour établir si la personne conduisait après avoir fait usage de stupéfiants.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
-                TextSpan(text: "À cette fin, "),
                 TextSpan(
-                  text: "l’article L. 235-2 alinéa 5 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00044",
+                    "À cette fin, ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " permet à l’OPJ/APJ de requérir un médecin (ou assimilés) ou un infirmier pour effectuer notamment une prise de sang.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00045",
+                    "l’article L. 235-2 alinéa 5 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00046",
+                    " permet à l’OPJ/APJ de requérir un médecin (ou assimilés) ou un infirmier pour effectuer notamment une prise de sang.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00047",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La procédure est irrégulière si le conducteur n’a pas été informé (après dépistage positif) "
-                        "de la possibilité de demander un examen technique/une expertise ou une recherche de médicaments psychoactifs, "
-                        "ou si sa demande n’a pas été prise en compte ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                          "f00048",
+                          "La procédure est irrégulière si le conducteur n’a pas été informé (après dépistage positif) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                          "f00049",
+                          "de la possibilité de demander un examen technique/une expertise ou une recherche de médicaments psychoactifs, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                          "f00050",
+                          "ou si sa demande n’a pas été prise en compte ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Conseil d’État, n°467841, 21/11/2023)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00051",
+                      "(Conseil d’État, n°467841, 21/11/2023)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -281,40 +488,63 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _Paragraph.rich([
-                TextSpan(text: "Deux modalités possibles : "),
                 TextSpan(
-                  text: "article R. 235-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00052",
+                    "Deux modalités possibles : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00053",
+                    "article R. 235-6 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Prélèvement salivaire : réalisé par le conducteur lui-même, sous contrôle OPJ/APJ. Si le conducteur demande une expertise/examen technique, un prélèvement sanguin est réalisé au plus court délai.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00054",
+                  "Prélèvement salivaire : réalisé par le conducteur lui-même, sous contrôle OPJ/APJ. Si le conducteur demande une expertise/examen technique, un prélèvement sanguin est réalisé au plus court délai.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prélèvement sanguin : pratiqué par médecin/interne/étudiant autorisé/infirmier (ou biologiste requis). OPJ/APJ assiste au prélèvement ; examen clinique possible si l’état le permet.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00055",
+                  "Prélèvement sanguin : pratiqué par médecin/interne/étudiant autorisé/infirmier (ou biologiste requis). OPJ/APJ assiste au prélèvement ; examen clinique possible si l’état le permet.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
-                TextSpan(text: "En cas d’accident mortel, "),
                 TextSpan(
-                  text: "l’article R. 235-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00056",
+                    "En cas d’accident mortel, ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " impose que seule l’analyse d’un prélèvement sanguin puisse être réalisée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00057",
+                    "l’article R. 235-8 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00058",
+                    " impose que seule l’analyse d’un prélèvement sanguin puisse être réalisée.",
+                  ),
                 ),
               ]),
 
@@ -322,15 +552,19 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le refus de se soumettre aux vérifications constitue le délit prévu par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00059",
+                    "Le refus de se soumettre aux vérifications constitue le délit prévu par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 235-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00060",
+                    "l’article L. 235-3 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -339,19 +573,32 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "La recherche est organisée notamment par ",
-                ),
-                TextSpan(
-                  text: "l’article R. 235-10 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00061",
+                    "La recherche est organisée notamment par ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00062",
+                    "l’article R. 235-10 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      " : le prélèvement est transmis pour analyse (laboratoire, expert). Il n’est plus question de dosage : "
-                      "l’expert confirme ou infirme la présence des substances détectées.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                        "f00063",
+                        " : le prélèvement est transmis pour analyse (laboratoire, expert). Il n’est plus question de dosage : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                        "f00064",
+                        "l’expert confirme ou infirme la présence des substances détectées.",
+                      ),
                 ),
               ]),
             ],
@@ -361,15 +608,31 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+              "f00065",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : la personne doit avoir la volonté de conduire "
-                "(ou d’accompagner un élève conducteur) après avoir fait usage de substances ou plantes classées comme stupéfiants. "
-                "Le comportement est volontaire et suppose la conscience des faits.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00066",
+                      "Il s’agit d’une infraction intentionnelle : la personne doit avoir la volonté de conduire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00067",
+                      "(ou d’accompagner un élève conducteur) après avoir fait usage de substances ou plantes classées comme stupéfiants. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00068",
+                      "Le comportement est volontaire et suppose la conscience des faits.",
+                    ),
               ),
             ],
           ),
@@ -378,23 +641,36 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+              "f00069",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 235-1 / I (2ᵉ phrase) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00070",
+                    "Article L. 235-1 / I (2ᵉ phrase) du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : circonstance aggravante lorsque la personne est également sous l’empire d’un état alcoolique "
-                      "caractérisé (taux légalement fixé).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                        "f00071",
+                        " : circonstance aggravante lorsque la personne est également sous l’empire d’un état alcoolique ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                        "f00072",
+                        "caractérisé (taux légalement fixé).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -404,26 +680,44 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La conduite sous stupéfiants peut aussi aggraver les peines en matière d’homicide involontaire "
-                        "ou d’atteintes involontaires. ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                          "f00073",
+                          "La conduite sous stupéfiants peut aussi aggraver les peines en matière d’homicide involontaire ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                          "f00074",
+                          "ou d’atteintes involontaires. ",
+                        ),
                   ),
                   TextSpan(
-                    text:
-                        "Articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00075",
+                      "Articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : le délit de conduite sous stupéfiants peut constituer une circonstance aggravante.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                      "f00076",
+                      " : le délit de conduite sous stupéfiants peut constituer une circonstance aggravante.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Conséquence opérationnelle : tout accident mortel ou corporel doit donner lieu à un dépistage.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00077",
+                  "Conséquence opérationnelle : tout accident mortel ou corporel doit donner lieu à un dépistage.",
+                ),
               ),
             ],
           ),
@@ -432,79 +726,144 @@ class PaConduiteStupefiantsPage extends StatelessWidget {
 
           // Répression + tentative/complicité (rendu clean, pas répétitif)
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+              "f00078",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines principales"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00079",
+                  "Peines principales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 4 500 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00080",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 235-1 / I (1ʳᵉ phrase) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00081",
+                    "2 ans d’emprisonnement et 4 500 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00082",
+                    "article L. 235-1 / I (1ʳᵉ phrase) du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Qualification aggravée (alcool + stupéfiants) : ",
-                ),
-                TextSpan(
-                  text: "3 ans d’emprisonnement et 6 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article L. 235-1 / I (2ᵉ phrase) du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00083",
+                    "Qualification aggravée (alcool + stupéfiants) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00084",
+                    "3 ans d’emprisonnement et 6 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00085",
+                    "article L. 235-1 / I (2ᵉ phrase) du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00086",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00087",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00088",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00089",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00090",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide ou assistance ayant facilité la préparation ou la commission de l’infraction).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                    "f00091",
+                    " (aide ou assistance ayant facilité la préparation ou la commission de l’infraction).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Immunités (rappel)"),
-              _BulletPoint(
-                text:
-                    "Diplomates : immunité (Convention de Vienne). Ils ne peuvent être soumis à aucune forme d’arrestation ; ne pas faire subir de dépistage.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00092",
+                  "Immunités (rappel)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Parlementaires : inviolabilité (Constitution de 1958, art. 26). Dépistage possible notamment en cas de flagrant délit ; informer le procureur si possible avant l’opération.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00093",
+                  "Diplomates : immunité (Convention de Vienne). Ils ne peuvent être soumis à aucune forme d’arrestation ; ne pas faire subir de dépistage.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart",
+                  "f00094",
+                  "Parlementaires : inviolabilité (Constitution de 1958, art. 26). Dépistage possible notamment en cas de flagrant délit ; informer le procureur si possible avant l’opération.",
+                ),
               ),
             ],
           ),

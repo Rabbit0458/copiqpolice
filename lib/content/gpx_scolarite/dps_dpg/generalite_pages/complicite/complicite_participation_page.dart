@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — PARTICIPATION AU FAIT PRINCIPAL (COMPLICITÉ)
@@ -43,10 +44,18 @@ class CompliciteParticipationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Participation au fait principal',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+            "f00002",
+            'Participation au fait principal',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -60,7 +69,11 @@ class CompliciteParticipationPage extends StatelessWidget {
         children: [
           // En-tête
           Text(
-            'I. La participation au fait principal',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+              "f00003",
+              'I. La participation au fait principal',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -68,53 +81,100 @@ class CompliciteParticipationPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          const _Paragraph(
-            'Pour que la complicité soit punissable, la participation doit être '
-            'matérielle et répondre aux formes prévues par l’article 121-7 du Code pénal. '
-            'Le complice apporte un concours actif à la commission de l’infraction, '
-            'sans pour autant réaliser lui-même tous ses éléments constitutifs.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00004",
+                  'Pour que la complicité soit punissable, la participation doit être ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00005",
+                  'matérielle et répondre aux formes prévues par l’article 121-7 du Code pénal. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00006",
+                  'Le complice apporte un concours actif à la commission de l’infraction, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00007",
+                  'sans pour autant réaliser lui-même tous ses éléments constitutifs.',
+                ),
           ),
           const SizedBox(height: 18),
 
           // 2.2.1 Nécessité d'une participation matérielle
           _SectionCard(
-            title: '1. Nécessité d’une participation matérielle',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+              "f00008",
+              '1. Nécessité d’une participation matérielle',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Les actes de participation sont énumérés à l’article 121-7 du Code pénal. ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                    "f00009",
+                    'Les actes de participation sont énumérés à l’article 121-7 du Code pénal. ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'Ils doivent être positifs et orientés vers la réalisation de l’infraction.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                    "f00010",
+                    'Ils doivent être positifs et orientés vers la réalisation de l’infraction.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    'Ce sont des actes positifs : la simple abstention ne peut être retenue comme acte de complicité (ex. le simple spectateur passif d’une infraction).',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00011",
+                  'Ce sont des actes positifs : la simple abstention ne peut être retenue comme acte de complicité (ex. le simple spectateur passif d’une infraction).',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Les actes doivent être antérieurs ou concomitants au fait principal : il n’existe pas de complicité postérieure à l’infraction.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00012",
+                  'Les actes doivent être antérieurs ou concomitants au fait principal : il n’existe pas de complicité postérieure à l’infraction.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'La participation doit présenter un lien direct avec la préparation ou la consommation de l’infraction.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00013",
+                  'La participation doit présenter un lien direct avec la préparation ou la consommation de l’infraction.',
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'À noter',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00014",
+                  'À noter',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Plus la frontière entre auteur et complice s’affine, plus la jurisprudence examine la réalité de la participation : '
-                        'certains concours matériels très déterminants peuvent être requalifiés en coaction.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00015",
+                          'Plus la frontière entre auteur et complice s’affine, plus la jurisprudence examine la réalité de la participation : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00016",
+                          'certains concours matériels très déterminants peuvent être requalifiés en coaction.',
+                        ),
                   ),
                 ],
               ),
@@ -125,46 +185,102 @@ class CompliciteParticipationPage extends StatelessWidget {
 
           // 2.2.1.2 Les actes de complicité prévus par l’article 121-7 C. pén.
           _SectionCard(
-            title: '2. Les actes de complicité (art. 121-7 C. pén.)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+              "f00017",
+              '2. Les actes de complicité (art. 121-7 C. pén.)',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’article 121-7 énumère trois grands types d’actes de complicité : '
-                'la provocation, la fourniture d’instructions et l’aide ou l’assistance.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00018",
+                      'L’article 121-7 énumère trois grands types d’actes de complicité : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00019",
+                      'la provocation, la fourniture d’instructions et l’aide ou l’assistance.',
+                    ),
               ),
               SizedBox(height: 14),
 
               // 1. Provocation
-              _SubTitle('1. La complicité par provocation'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00020",
+                  '1. La complicité par provocation',
+                ),
+              ),
               _Paragraph(
-                'Le “provocateur” ou auteur moral de l’infraction est celui qui incite '
-                'une personne déterminée à commettre une infraction.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00021",
+                      'Le “provocateur” ou auteur moral de l’infraction est celui qui incite ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00022",
+                      'une personne déterminée à commettre une infraction.',
+                    ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    'La provocation doit être accompagnée de circonstances comme un don, une promesse, un ordre, une menace ou un abus d’autorité ou de pouvoir.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00023",
+                  'La provocation doit être accompagnée de circonstances comme un don, une promesse, un ordre, une menace ou un abus d’autorité ou de pouvoir.',
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00024",
+                  'Elle doit être individuelle : la provocation vise une personne déterminée (à la différence d’un simple message général).',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Elle doit être individuelle : la provocation vise une personne déterminée (à la différence d’un simple message général).',
-              ),
-              _BulletPoint(
-                text:
-                    'Elle doit être suivie d’effets : l’infraction doit être au moins tentée. '
-                    'Un simple conseil non suivi d’effet ne suffit pas.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00025",
+                      'Elle doit être suivie d’effets : l’infraction doit être au moins tentée. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00026",
+                      'Un simple conseil non suivi d’effet ne suffit pas.',
+                    ),
               ),
               SizedBox(height: 6),
               _ExempleBox(
-                title: 'Exemple jurisprudentiel',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00027",
+                  'Exemple jurisprudentiel',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La chambre criminelle a jugé complice par provocation le passager d’un véhicule '
-                        'ayant donné l’ordre au conducteur de forcer un barrage constitué par un véhicule de gendarmerie : '
-                        'l’ordre donné a directement entraîné la commission de l’infraction.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00028",
+                          'La chambre criminelle a jugé complice par provocation le passager d’un véhicule ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00029",
+                          'ayant donné l’ordre au conducteur de forcer un barrage constitué par un véhicule de gendarmerie : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00030",
+                          'l’ordre donné a directement entraîné la commission de l’infraction.',
+                        ),
                   ),
                 ],
               ),
@@ -172,19 +288,39 @@ class CompliciteParticipationPage extends StatelessWidget {
               SizedBox(height: 16),
 
               // 2. Fourniture d’instructions
-              _SubTitle('2. La complicité par fourniture d’instructions'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00031",
+                  '2. La complicité par fourniture d’instructions',
+                ),
+              ),
               _Paragraph(
-                'La fourniture d’instructions consiste à donner des indications précises, '
-                'de nature à faciliter l’exécution d’une infraction, en pleine connaissance de cause.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00032",
+                      'La fourniture d’instructions consiste à donner des indications précises, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00033",
+                      'de nature à faciliter l’exécution d’une infraction, en pleine connaissance de cause.',
+                    ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    'Les instructions doivent être suffisamment concrètes pour orienter la réalisation matérielle de l’infraction.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00034",
+                  'Les instructions doivent être suffisamment concrètes pour orienter la réalisation matérielle de l’infraction.',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'Le complice sait que ces indications serviront à commettre un crime ou un délit.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00035",
+                  'Le complice sait que ces indications serviront à commettre un crime ou un délit.',
+                ),
               ),
               SizedBox(height: 6),
               _ExempleBox(
@@ -192,8 +328,16 @@ class CompliciteParticipationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Indiquer, en vue d’un cambriolage, les heures où une personne est absente de chez elle, '
-                        'ou le fonctionnement d’un système d’alarme, constitue une complicité par instruction.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00036",
+                          'Indiquer, en vue d’un cambriolage, les heures où une personne est absente de chez elle, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00037",
+                          'ou le fonctionnement d’un système d’alarme, constitue une complicité par instruction.',
+                        ),
                   ),
                 ],
               ),
@@ -201,49 +345,104 @@ class CompliciteParticipationPage extends StatelessWidget {
               SizedBox(height: 16),
 
               // 3. Aide ou assistance
-              _SubTitle('3. La complicité par aide ou assistance'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00038",
+                  '3. La complicité par aide ou assistance',
+                ),
+              ),
               _Paragraph(
-                'L’aide ou l’assistance suppose un concours matériel apporté à la préparation ou à la consommation de l’infraction.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00039",
+                  'L’aide ou l’assistance suppose un concours matériel apporté à la préparation ou à la consommation de l’infraction.',
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    'Elle peut consister en la fourniture de moyens matériels (arme, véhicule, outils, faux papiers, etc.).',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00040",
+                  'Elle peut consister en la fourniture de moyens matériels (arme, véhicule, outils, faux papiers, etc.).',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'Elle peut également consister en un concours apporté à l’auteur principal '
-                    'au moment de la préparation ou de l’exécution de l’infraction (ex. faire le guet, neutraliser une victime…).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00041",
+                      'Elle peut également consister en un concours apporté à l’auteur principal ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00042",
+                      'au moment de la préparation ou de l’exécution de l’infraction (ex. faire le guet, neutraliser une victime…).',
+                    ),
               ),
               SizedBox(height: 6),
               _ExempleBox(
                 title: 'Exemples',
                 bodySpans: [
                   TextSpan(
-                    text:
-                        '• Celui qui procure une arme ou du poison à l’auteur principal.\n',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00043",
+                      '• Celui qui procure une arme ou du poison à l’auteur principal.\n',
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                      "f00044",
+                      '• La personne qui joue de la musique très fort pour couvrir les cris d’une victime pendant une agression.\n',
+                    ),
                   ),
                   TextSpan(
                     text:
-                        '• La personne qui joue de la musique très fort pour couvrir les cris d’une victime pendant une agression.\n',
-                  ),
-                  TextSpan(
-                    text:
-                        'Dans ces cas, l’aide matérielle permet la commission de l’infraction '
-                        'sans que le complice ne réalise lui-même tous les éléments de l’infraction.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00045",
+                          'Dans ces cas, l’aide matérielle permet la commission de l’infraction ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00046",
+                          'sans que le complice ne réalise lui-même tous les éléments de l’infraction.',
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Complicité et coaction',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                  "f00047",
+                  'Complicité et coaction',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La jurisprudence souligne qu’il existe parfois une “complicité corespective” : '
-                        'lorsque chacun des participants apporte un concours important à l’action, '
-                        'la frontière entre auteur et complice se brouille. '
-                        'Les juges peuvent alors qualifier certains participants de co-auteurs plutôt que de simples complices.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00048",
+                          'La jurisprudence souligne qu’il existe parfois une “complicité corespective” : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00049",
+                          'lorsque chacun des participants apporte un concours important à l’action, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00050",
+                          'la frontière entre auteur et complice se brouille. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_participation_page.dart",
+                          "f00051",
+                          'Les juges peuvent alors qualifier certains participants de co-auteurs plutôt que de simples complices.',
+                        ),
                   ),
                 ],
               ),

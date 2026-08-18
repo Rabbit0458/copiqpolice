@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteinteRepresentationPersonnePage extends StatelessWidget {
   const AtteinteRepresentationPersonnePage({super.key});
@@ -59,10 +60,18 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la personnalité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+            "f00002",
+            "Atteintes à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’atteinte à la représentation de la personne",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+              "f00003",
+              "L’atteinte à la représentation de la personne",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,21 +102,49 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
 
           // Définition (claire + pédagogique)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Constitue une infraction le fait de porter à la connaissance du public ou d’un tiers, par quelque voie que ce soit, "
-                "le montage réalisé avec les paroles ou l’image d’une personne sans son consentement, "
-                "si l’on ne voit pas à l’évidence qu’il s’agit d’un montage ou si cela n’est pas expressément indiqué.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00005",
+                      "Constitue une infraction le fait de porter à la connaissance du public ou d’un tiers, par quelque voie que ce soit, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00006",
+                      "le montage réalisé avec les paroles ou l’image d’une personne sans son consentement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00007",
+                      "si l’on ne voit pas à l’évidence qu’il s’agit d’un montage ou si cela n’est pas expressément indiqué.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Est assimilé à cette infraction le fait de diffuser un contenu visuel ou sonore généré par un traitement algorithmique "
-                "(ex. « deepfake ») représentant l’image ou les paroles d’une personne sans son consentement, "
-                "si le caractère artificiel n’est pas évident ou n’est pas clairement mentionné.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00008",
+                      "Est assimilé à cette infraction le fait de diffuser un contenu visuel ou sonore généré par un traitement algorithmique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00009",
+                      "(ex. « deepfake ») représentant l’image ou les paroles d’une personne sans son consentement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00010",
+                      "si le caractère artificiel n’est pas évident ou n’est pas clairement mentionné.",
+                    ),
               ),
             ],
           ),
@@ -112,22 +153,30 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00012",
+                    "Article 226-8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’atteinte à la représentation de la personne (montage / contenu généré algorithmiquement).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00013",
+                    " : définit et réprime l’atteinte à la représentation de la personne (montage / contenu généré algorithmiquement).",
+                  ),
                 ),
               ]),
             ],
@@ -137,22 +186,56 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un montage (paroles / image)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00015",
+                  "A) Un montage (paroles / image)",
+                ),
+              ),
               _Paragraph(
-                "Le montage peut porter sur :\n"
-                "• la voix (imitation, reproduction, déformation) ;\n"
-                "• l’image (trucage d’une photo/vidéo, découpage, détourage, synchronisation, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00016",
+                      "Le montage peut porter sur :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00017",
+                      "• la voix (imitation, reproduction, déformation) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00018",
+                      "• l’image (trucage d’une photo/vidéo, découpage, détourage, synchronisation, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’objectif typique est de faire croire qu’une personne (identifiée par son image ou sa voix) "
-                "a tenu un discours ou réalisé des actes alors qu’il n’en est rien. "
-                "Le procédé technique employé importe peu : l’infraction vise le résultat trompeur diffusé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00019",
+                      "L’objectif typique est de faire croire qu’une personne (identifiée par son image ou sa voix) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00020",
+                      "a tenu un discours ou réalisé des actes alors qu’il n’en est rien. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00021",
+                      "Le procédé technique employé importe peu : l’infraction vise le résultat trompeur diffusé.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -160,11 +243,23 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Créer des blogs/profils au nom d’un tiers uniquement par l’écrit, sans montage de parole ou d’image, "
-                        "ne relève pas de l’article 226-8 (",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00022",
+                          "Créer des blogs/profils au nom d’un tiers uniquement par l’écrit, sans montage de parole ou d’image, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00023",
+                          "ne relève pas de l’article 226-8 (",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 24 janvier 2018, n° 16-83.045",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00024",
+                      "Cass. crim., 24 janvier 2018, n° 16-83.045",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -175,15 +270,31 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "PRÉCISION",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00025",
+                  "PRÉCISION",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le montage est réprimé lorsqu’il déforme délibérément des images ou des paroles, "
-                        "par ajout ou retrait d’éléments étrangers à son objet (",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00026",
+                          "Le montage est réprimé lorsqu’il déforme délibérément des images ou des paroles, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00027",
+                          "par ajout ou retrait d’éléments étrangers à son objet (",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 30 mars 2016, n° 15-82.039",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00028",
+                      "Cass. crim., 30 mars 2016, n° 15-82.039",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -196,24 +307,60 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Un contenu visuel/sonore généré algorithmiquement (deepfake)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00029",
+                  "B) Un contenu visuel/sonore généré algorithmiquement (deepfake)",
+                ),
               ),
               _Paragraph(
-                "L’hypertrucage (« deepfake ») repose sur l’intelligence artificielle et peut :\n"
-                "• superposer/fusionner des images (changement de visage sur une vidéo) ;\n"
-                "• substituer des propos en reproduisant la voix ;\n"
-                "• générer un contenu artificiel à partir d’un modèle source ;\n"
-                "• produire des contenus réalistes à partir de commandes textuelles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00030",
+                      "L’hypertrucage (« deepfake ») repose sur l’intelligence artificielle et peut :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00031",
+                      "• superposer/fusionner des images (changement de visage sur une vidéo) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00032",
+                      "• substituer des propos en reproduisant la voix ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00033",
+                      "• générer un contenu artificiel à partir d’un modèle source ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00034",
+                      "• produire des contenus réalistes à partir de commandes textuelles.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Porter à la connaissance du public ou d’un tiers (par quelque voie que ce soit)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00035",
+                  "C) Porter à la connaissance du public ou d’un tiers (par quelque voie que ce soit)",
+                ),
               ),
               _Paragraph(
-                "Sont visés tous les moyens de diffusion ou de révélation (publication, envoi, partage, repartage…). "
-                "Le texte permet aussi de sanctionner les personnes qui repartagent le contenu.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00036",
+                      "Sont visés tous les moyens de diffusion ou de révélation (publication, envoi, partage, repartage…). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00037",
+                      "Le texte permet aussi de sanctionner les personnes qui repartagent le contenu.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
@@ -221,19 +368,34 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si l’infraction est commise par voie de presse écrite/audiovisuelle, des règles spéciales s’appliquent. "
-                        "La hiérarchie des responsables est notamment prévue par ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00038",
+                          "Si l’infraction est commise par voie de presse écrite/audiovisuelle, des règles spéciales s’appliquent. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00039",
+                          "La hiérarchie des responsables est notamment prévue par ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 42 de la loi du 29 juillet 1881",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00040",
+                      "l’article 42 de la loi du 29 juillet 1881",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " (directeur de publication, à défaut l’auteur, puis l’imprimeur, puis vendeurs/distributeurs/afficheurs).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00041",
+                      " (directeur de publication, à défaut l’auteur, puis l’imprimeur, puis vendeurs/distributeurs/afficheurs).",
+                    ),
                   ),
                 ],
               ),
@@ -241,33 +403,67 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) Absence de consentement (sauf montage évident ou signalé)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00042",
+                  "D) Absence de consentement (sauf montage évident ou signalé)",
+                ),
               ),
               _Paragraph(
-                "Le consentement requis porte sur la publication/révélation à un tiers, pas sur la création du contenu. "
-                "Ainsi, même si la personne a accepté la réalisation du montage/deepfake, l’accord à la diffusion demeure nécessaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00043",
+                      "Le consentement requis porte sur la publication/révélation à un tiers, pas sur la création du contenu. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00044",
+                      "Ainsi, même si la personne a accepté la réalisation du montage/deepfake, l’accord à la diffusion demeure nécessaire.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Toutefois, l’accord à la publication n’est pas exigé dans deux hypothèses :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00045",
+                  "Toutefois, l’accord à la publication n’est pas exigé dans deux hypothèses :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Le caractère de montage est évident : le public ne peut pas croire à l’authenticité du document.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00046",
+                  "Le caractère de montage est évident : le public ne peut pas croire à l’authenticité du document.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Il est expressément mentionné qu’il s’agit d’un montage (indication claire et non équivoque).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00047",
+                  "Il est expressément mentionné qu’il s’agit d’un montage (indication claire et non équivoque).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "IDÉE CLÉ",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00048",
+                  "IDÉE CLÉ",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ces limites évitent de sanctionner des contenus à finalité simplement récréative (ex. montages humoristiques) "
-                        "lorsque l’absence de tromperie est assurée.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00049",
+                          "Ces limites évitent de sanctionner des contenus à finalité simplement récréative (ex. montages humoristiques) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00050",
+                          "lorsque l’absence de tromperie est assurée.",
+                        ),
                   ),
                 ],
               ),
@@ -278,23 +474,47 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+              "f00051",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’infraction suppose la volonté de créer/diffuser un montage (ou un contenu généré algorithmiquement) "
-                "dans une logique de tromperie du public (ou d’un tiers).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00052",
+                      "L’infraction suppose la volonté de créer/diffuser un montage (ou un contenu généré algorithmiquement) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                      "f00053",
+                      "dans une logique de tromperie du public (ou d’un tiers).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "PRÉCISION",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00054",
+                  "PRÉCISION",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le résultat recherché (notoriété, profit, nuisance, etc.) importe peu : c’est la tromperie liée à la diffusion "
-                        "sans consentement qui est au cœur de l’infraction.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00055",
+                          "Le résultat recherché (notoriété, profit, nuisance, etc.) importe peu : c’est la tromperie liée à la diffusion ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                          "f00056",
+                          "sans consentement qui est au cœur de l’infraction.",
+                        ),
                   ),
                 ],
               ),
@@ -305,25 +525,33 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
 
           // Circonstance aggravante
           _ConditionCard(
-            title: "IV — Circonstance aggravante",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+              "f00057",
+              "IV — Circonstance aggravante",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-8 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00058",
+                    "Article 226-8 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque les faits sont réalisés en utilisant un service de communication au public en ligne.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00059",
+                  "Lorsque les faits sont réalisés en utilisant un service de communication au public en ligne.",
+                ),
               ),
             ],
           ),
@@ -332,80 +560,142 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+              "f00060",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00061",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00062",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-8 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00063",
+                    "1 an d’emprisonnement et 15 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00064",
+                    "article 226-8 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée (en ligne) : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00065",
+                    "Qualification aggravée (en ligne) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-8 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00066",
+                    "2 ans d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00067",
+                    "article 226-8 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00068",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "les articles 226-7 et 226-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00069",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00070",
+                    "les articles 226-7 et 226-9 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                  "f00071",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — prévue par "),
                 TextSpan(
-                  text: "l’article 226-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00072",
+                    "Tentative : OUI — prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00073",
+                    "l’article 226-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Complicité : OUI — les règles générales s’appliquent (",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00074",
+                    "Complicité : OUI — les règles générales s’appliquent (",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart",
+                    "f00075",
+                    "articles 121-6 et 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),

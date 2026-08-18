@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConcussionPage extends StatelessWidget {
   const ConcussionPage({super.key});
@@ -56,10 +57,18 @@ class ConcussionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Probité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+            "f00002",
+            "Probité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ConcussionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La concussion",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+              "f00003",
+              "La concussion",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,17 +99,41 @@ class ConcussionPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La concussion consiste, pour une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, "
-                "à recevoir, exiger ou ordonner de percevoir, à titre de droits ou contributions, impôts ou taxes publics, "
-                "une somme qu’elle sait ne pas être due, ou excéder ce qui est dû.\n\n"
-                "Elle se réalise également lorsque ces mêmes personnes accordent illégalement une exonération ou une franchise "
-                "des droits, contributions, impôts ou taxes publics, sous une forme quelconque et pour quelque motif que ce soit.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00005",
+                      "La concussion consiste, pour une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00006",
+                      "à recevoir, exiger ou ordonner de percevoir, à titre de droits ou contributions, impôts ou taxes publics, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00007",
+                      "une somme qu’elle sait ne pas être due, ou excéder ce qui est dû.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00008",
+                      "Elle se réalise également lorsque ces mêmes personnes accordent illégalement une exonération ou une franchise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00009",
+                      "des droits, contributions, impôts ou taxes publics, sous une forme quelconque et pour quelque motif que ce soit.",
+                    ),
               ),
             ],
           ),
@@ -105,21 +142,30 @@ class ConcussionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 432-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00011",
+                    "Article 432-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : prévoit et réprime l’infraction de concussion.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00012",
+                    " : prévoit et réprime l’infraction de concussion.",
+                  ),
                 ),
               ]),
             ],
@@ -129,38 +175,102 @@ class ConcussionPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un auteur particulier"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00014",
+                  "A) Un auteur particulier",
+                ),
+              ),
               _Paragraph(
-                "La concussion ne peut être commise que par certaines personnes listées par le texte :\n"
-                "• une personne dépositaire de l’autorité publique ;\n"
-                "• ou une personne chargée d’une mission de service public.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00015",
+                      "La concussion ne peut être commise que par certaines personnes listées par le texte :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00016",
+                      "• une personne dépositaire de l’autorité publique ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00017",
+                      "• ou une personne chargée d’une mission de service public.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Personne dépositaire de l’autorité publique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00018",
+                  "1) Personne dépositaire de l’autorité publique",
+                ),
+              ),
               _Paragraph(
-                "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle d’autorité publique "
-                "conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ministériel, etc.).\n\n"
-                "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, commissaires-priseurs, "
-                "fonctionnaires des eaux et forêts, responsables d’exécutifs locaux (maires, présidents d’intercommunalités, "
-                "des conseils départementaux et régionaux), adjoints au maire et conseillers municipaux délégués.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00019",
+                      "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle d’autorité publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00020",
+                      "conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ministériel, etc.).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00021",
+                      "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, commissaires-priseurs, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00022",
+                      "fonctionnaires des eaux et forêts, responsables d’exécutifs locaux (maires, présidents d’intercommunalités, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00023",
+                      "des conseils départementaux et régionaux), adjoints au maire et conseillers municipaux délégués.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00024",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un maire imposant à chaque promoteur/particulier le paiement d’une somme par logement construit, sans base légale, "
-                        "les perceptions étant versées sur un compte occulte : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                          "f00025",
+                          "Un maire imposant à chaque promoteur/particulier le paiement d’une somme par logement construit, sans base légale, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                          "f00026",
+                          "les perceptions étant versées sur un compte occulte : ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 16 mai 2001",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00027",
+                      "Cass. crim., 16 mai 2001",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -173,35 +283,92 @@ class ConcussionPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "2) Personne chargée d’une mission de service public",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00028",
+                  "2) Personne chargée d’une mission de service public",
+                ),
               ),
               _Paragraph(
-                "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement ou sur réquisition, "
-                "un service public quelconque. Il participe à une mission d’intérêt général sans détenir de pouvoir de décision ou de commandement.\n\n"
-                "Les élus locaux, lorsqu’ils n’exercent aucune prérogative de puissance publique par délégation, comme les parlementaires, "
-                "peuvent relever de cette catégorie.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00029",
+                      "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement ou sur réquisition, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00030",
+                      "un service public quelconque. Il participe à une mission d’intérêt général sans détenir de pouvoir de décision ou de commandement.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00031",
+                      "Les élus locaux, lorsqu’ils n’exercent aucune prérogative de puissance publique par délégation, comme les parlementaires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00032",
+                      "peuvent relever de cette catégorie.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une perception indue"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00033",
+                  "B) Une perception indue",
+                ),
+              ),
               _Paragraph(
-                "Le texte vise les sommes réclamées ou reçues à titre de droits ou contributions, impôts ou taxes publics.\n\n"
-                "Le délit peut résulter du fait de recevoir, d’exiger ou d’ordonner de percevoir, sans qu’il soit nécessaire d’abuser de son autorité "
-                "ou d’utiliser des manœuvres, menaces ou violences.\n\n"
-                "Ce qui caractérise l’infraction, c’est le caractère illégal de la perception : on compare la somme réclamée à ce que les textes "
-                "légaux ou réglementaires autorisent réellement à percevoir. La somme peut être totalement ou partiellement indue.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00034",
+                      "Le texte vise les sommes réclamées ou reçues à titre de droits ou contributions, impôts ou taxes publics.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00035",
+                      "Le délit peut résulter du fait de recevoir, d’exiger ou d’ordonner de percevoir, sans qu’il soit nécessaire d’abuser de son autorité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00036",
+                      "ou d’utiliser des manœuvres, menaces ou violences.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00037",
+                      "Ce qui caractérise l’infraction, c’est le caractère illégal de la perception : on compare la somme réclamée à ce que les textes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00038",
+                      "légaux ou réglementaires autorisent réellement à percevoir. La somme peut être totalement ou partiellement indue.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00039",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un régisseur placier exigeant des commerçants une somme excédant le montant fixé pour le droit de place : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00040",
+                      "Un régisseur placier exigeant des commerçants une somme excédant le montant fixé pour le droit de place : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "C.A. Versailles, 26 avril 2006",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00041",
+                      "C.A. Versailles, 26 avril 2006",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -212,14 +379,25 @@ class ConcussionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00042",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Gestionnaire de maison de retraite ayant reçu une rémunération d’économe sans exercer les fonctions : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00043",
+                      "Gestionnaire de maison de retraite ayant reçu une rémunération d’économe sans exercer les fonctions : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "T.G.I. Bordeaux, 22 novembre 2004",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00044",
+                      "T.G.I. Bordeaux, 22 novembre 2004",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -231,22 +409,51 @@ class ConcussionPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Nature de la perception"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00045",
+                  "Nature de la perception",
+                ),
+              ),
               _Paragraph(
-                "• La notion de « somme » s’apprécie largement : numéraire mais aussi prestations en nature.\n"
-                "• Les termes droits, contributions et taxes renvoient le plus souvent à des formes d’impôts ; "
-                "la jurisprudence inclut aussi des salaires/traitements ou certaines fournitures reçues.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00046",
+                      "• La notion de « somme » s’apprécie largement : numéraire mais aussi prestations en nature.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00047",
+                      "• Les termes droits, contributions et taxes renvoient le plus souvent à des formes d’impôts ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00048",
+                      "la jurisprudence inclut aussi des salaires/traitements ou certaines fournitures reçues.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00049",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Repas pris chaque jour par un directeur d’hôpital dans la cuisine de son établissement : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00050",
+                      "Repas pris chaque jour par un directeur d’hôpital dans la cuisine de son établissement : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 21 mars 1995",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00051",
+                      "Cass. crim., 21 mars 1995",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -257,14 +464,25 @@ class ConcussionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00052",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Agent d’une collectivité percevant au-delà de ses droits des salaires/indemnités : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00053",
+                      "Agent d’une collectivité percevant au-delà de ses droits des salaires/indemnités : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 24 octobre 2001",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00054",
+                      "Cass. crim., 24 octobre 2001",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -275,14 +493,25 @@ class ConcussionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00055",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Député-maire contournant l’interdiction de cumul via reversement d’indemnité : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00056",
+                      "Député-maire contournant l’interdiction de cumul via reversement d’indemnité : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 14 février 1995",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00057",
+                      "Cass. crim., 14 février 1995",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -294,21 +523,46 @@ class ConcussionPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Une exonération ou franchise indue"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00058",
+                  "C) Une exonération ou franchise indue",
+                ),
+              ),
               _Paragraph(
-                "La concussion peut aussi résulter d’une abstention : accorder, sous quelque forme que ce soit et pour quelque motif que ce soit, "
-                "une exonération ou une franchise de droits, contributions, impôts ou taxes publics en violation des textes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00059",
+                      "La concussion peut aussi résulter d’une abstention : accorder, sous quelque forme que ce soit et pour quelque motif que ce soit, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00060",
+                      "une exonération ou une franchise de droits, contributions, impôts ou taxes publics en violation des textes.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00061",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Maire dispensant sciemment un garagiste (son fils) du paiement d’une redevance d’occupation du domaine public (CGCT) : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00062",
+                      "Maire dispensant sciemment un garagiste (son fils) du paiement d’une redevance d’occupation du domaine public (CGCT) : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 19 mai 1999",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00063",
+                      "Cass. crim., 19 mai 1999",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -319,14 +573,25 @@ class ConcussionPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00064",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Maire dispensant un employé municipal de tout loyer pour un logement communal sans délibération du conseil municipal : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00065",
+                      "Maire dispensant un employé municipal de tout loyer pour un logement communal sans délibération du conseil municipal : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 31 janvier 2007",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00066",
+                      "Cass. crim., 31 janvier 2007",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -342,25 +607,63 @@ class ConcussionPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+              "f00067",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Conscience du caractère indu"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00068",
+                  "A) Conscience du caractère indu",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir conscience que la somme réclamée ou reçue n’était pas due, "
-                "ou qu’elle excédait ce qui était dû.\n\n"
-                "Les mobiles sont indifférents. En revanche, l’intention peut disparaître si la perception résulte d’une erreur de fait "
-                "(erreur du fonctionnaire, mauvaise interprétation d’un texte de loi ou d’un règlement).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00069",
+                      "L’auteur doit avoir conscience que la somme réclamée ou reçue n’était pas due, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00070",
+                      "ou qu’elle excédait ce qui était dû.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00071",
+                      "Les mobiles sont indifférents. En revanche, l’intention peut disparaître si la perception résulte d’une erreur de fait ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00072",
+                      "(erreur du fonctionnaire, mauvaise interprétation d’un texte de loi ou d’un règlement).",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Volonté d’accorder une exonération/franchise illégale",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00073",
+                  "B) Volonté d’accorder une exonération/franchise illégale",
+                ),
               ),
               _Paragraph(
-                "Dans l’hypothèse d’exonération/franchise, l’élément moral réside dans la volonté d’accorder une exonération ou une franchise "
-                "de droits, contributions, impôts ou taxes publics en violation des textes légaux ou réglementaires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00074",
+                      "Dans l’hypothèse d’exonération/franchise, l’élément moral réside dans la volonté d’accorder une exonération ou une franchise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                      "f00075",
+                      "de droits, contributions, impôts ou taxes publics en violation des textes légaux ou réglementaires.",
+                    ),
               ),
             ],
           ),
@@ -369,13 +672,21 @@ class ConcussionPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+              "f00076",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Aucune circonstance aggravante prévue par le texte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00077",
+                  "Aucune circonstance aggravante prévue par le texte.",
+                ),
               ),
             ],
           ),
@@ -384,80 +695,150 @@ class ConcussionPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+              "f00078",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00079",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit (concussion) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 500 000 € d’amende ",
-                ),
-                TextSpan(
-                  text:
-                      "(le montant peut être porté au double du produit tiré de l’infraction). — ",
-                ),
-                TextSpan(
-                  text: "article 432-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00080",
+                    "Délit (concussion) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00081",
+                    "5 ans d’emprisonnement et 500 000 € d’amende ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00082",
+                    "(le montant peut être porté au double du produit tiré de l’infraction). — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00083",
+                    "article 432-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00084",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph(
-                "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00085",
+                  "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00086",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — prévue par "),
                 TextSpan(
-                  text: "l’article 432-10 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00087",
+                    "Tentative : OUI — prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (en pratique, elle peut être difficile à caractériser).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00088",
+                    "l’article 432-10 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00089",
+                    " (en pratique, elle peut être difficile à caractériser).",
+                  ),
                 ),
               ]),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — application de "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00090",
+                    "Complicité : OUI — application de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00091",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                    "f00092",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point clé",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                  "f00093",
+                  "Point clé",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Est puni comme concussionnaire non seulement celui qui reçoit ou exige, mais aussi celui qui ordonne d’opérer une perception indue. "
-                        "Celui qui donne l’ordre est l’auteur principal ; le subordonné est complice s’il aide sciemment.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                          "f00094",
+                          "Est puni comme concussionnaire non seulement celui qui reçoit ou exige, mais aussi celui qui ordonne d’opérer une perception indue. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_nation_pages/probite/concussion_page.dart",
+                          "f00095",
+                          "Celui qui donne l’ordre est l’auteur principal ; le subordonné est complice s’il aide sciemment.",
+                        ),
                   ),
                 ],
               ),

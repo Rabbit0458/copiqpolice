@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class FormulaireInformationPage extends StatelessWidget {
   const FormulaireInformationPage({super.key});
@@ -50,10 +51,18 @@ class FormulaireInformationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class FormulaireInformationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Formulaire d’information (dépistage stupéfiants positif)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+              "f00003",
+              "Formulaire d’information (dépistage stupéfiants positif)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -83,12 +96,28 @@ class FormulaireInformationPage extends StatelessWidget {
             cardColor: cardAnnexes,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Document remis à la personne soupçonnée d’avoir conduit après usage de produits ou plantes "
-                "classés comme stupéfiants, lorsqu’une épreuve de dépistage s’est révélée positive. "
-                "Il explique la procédure de prélèvement et les droits liés à une demande d’examen technique / expertise "
-                "ou à la recherche de médicaments psychoactifs.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00004",
+                      "Document remis à la personne soupçonnée d’avoir conduit après usage de produits ou plantes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00005",
+                      "classés comme stupéfiants, lorsqu’une épreuve de dépistage s’est révélée positive. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00006",
+                      "Il explique la procédure de prélèvement et les droits liés à une demande d’examen technique / expertise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00007",
+                      "ou à la recherche de médicaments psychoactifs.",
+                    ),
               ),
             ],
           ),
@@ -97,79 +126,120 @@ class FormulaireInformationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Fondements juridiques (à citer correctement)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+              "f00008",
+              "I — Fondements juridiques (à citer correctement)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 235-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00009",
+                    "Article R. 235-6 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : encadre le prélèvement salivaire (réalisé par OPJ/APJ) et l’obligation d’interroger le conducteur "
-                      "sur sa volonté de se réserver la possibilité de demander un examen technique / expertise ou la recherche "
-                      "de médicaments psychoactifs.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00010",
+                        " : encadre le prélèvement salivaire (réalisé par OPJ/APJ) et l’obligation d’interroger le conducteur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00011",
+                        "sur sa volonté de se réserver la possibilité de demander un examen technique / expertise ou la recherche ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00012",
+                        "de médicaments psychoactifs.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 235-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00013",
+                    "Article R. 235-4 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : renvoie aux méthodes/conditions prescrites (notice d’emploi et procédure de prélèvement).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00014",
+                    " : renvoie aux méthodes/conditions prescrites (notice d’emploi et procédure de prélèvement).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 235-11 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00015",
+                    "Article R. 235-11 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : fixe le délai de 5 jours après notification des résultats pour demander un examen technique / une expertise "
-                      "et/ou la recherche de médicaments psychoactifs (sous conditions).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00016",
+                        " : fixe le délai de 5 jours après notification des résultats pour demander un examen technique / une expertise ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00017",
+                        "et/ou la recherche de médicaments psychoactifs (sous conditions).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Références CPP pour l’expertise : "),
                 TextSpan(
-                  text: "articles 60, 77-1 et 156 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00018",
+                    "Références CPP pour l’expertise : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00019",
+                    "articles 60, 77-1 et 156 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Référence pour la recherche de médicaments psychoactifs : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00020",
+                    "Référence pour la recherche de médicaments psychoactifs : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "p du l’article R. 5128-2 du Code de la santé publique",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00021",
+                    "p du l’article R. 5128-2 du Code de la santé publique",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -179,46 +249,102 @@ class FormulaireInformationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Ce qui est notifié à la personne",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+              "f00022",
+              "II — Ce qui est notifié à la personne",
+            ),
             cardColor: cardProcedure,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Dépistage et prélèvement salivaire"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00023",
+                  "A) Dépistage et prélèvement salivaire",
+                ),
+              ),
               _Paragraph(
-                "Vous avez fait l’objet d’une épreuve de dépistage aux produits stupéfiants qui s’est révélée positive.\n\n"
-                "Sous notre contrôle et selon la procédure indiquée sur la notice d’emploi, vous avez procédé vous-même, "
-                "aux fins d’analyse, à un prélèvement de votre salive grâce au collecteur mis à votre disposition.\n\n"
-                "Le flacon (ou tube) de conservation du prélèvement, ainsi que l’enveloppe de conditionnement, "
-                "ont été immédiatement étiquetés et scellés sur place.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00024",
+                      "Vous avez fait l’objet d’une épreuve de dépistage aux produits stupéfiants qui s’est révélée positive.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00025",
+                      "Sous notre contrôle et selon la procédure indiquée sur la notice d’emploi, vous avez procédé vous-même, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00026",
+                      "aux fins d’analyse, à un prélèvement de votre salive grâce au collecteur mis à votre disposition.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00027",
+                      "Le flacon (ou tube) de conservation du prélèvement, ainsi que l’enveloppe de conditionnement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00028",
+                      "ont été immédiatement étiquetés et scellés sur place.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Droit à expertise / examen technique (sous conditions)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00029",
+                  "B) Droit à expertise / examen technique (sous conditions)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Lors de la notification des résultats de l’analyse, vous disposerez d’un délai de 5 jours pour demander :\n"
-                      "• soit un examen technique ou une expertise ;\n"
-                      "• soit la recherche de l’usage de médicaments psychoactifs pouvant avoir des effets sur la capacité de conduire.\n\n"
-                      "Pour conserver cette possibilité (dans le cas d’un prélèvement salivaire), vous devez vous y réserver immédiatement "
-                      "en vous soumettant à un prélèvement sanguin.\n\n",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00030",
+                        "Lors de la notification des résultats de l’analyse, vous disposerez d’un délai de 5 jours pour demander :\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00031",
+                        "• soit un examen technique ou une expertise ;\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00032",
+                        "• soit la recherche de l’usage de médicaments psychoactifs pouvant avoir des effets sur la capacité de conduire.\n\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00033",
+                        "Pour conserver cette possibilité (dans le cas d’un prélèvement salivaire), vous devez vous y réserver immédiatement ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                        "f00034",
+                        "en vous soumettant à un prélèvement sanguin.\n\n",
+                      ),
                 ),
                 TextSpan(
-                  text: "Article R. 235-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00035",
+                    "Article R. 235-6 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article R. 235-11 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00036",
+                    "article R. 235-11 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -227,8 +353,16 @@ class FormulaireInformationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Délai : 5 jours à compter de la notification des résultats. "
-                        "Condition clé (salivaire) : avoir indiqué se réserver la possibilité et avoir accepté le prélèvement sanguin.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                          "f00037",
+                          "Délai : 5 jours à compter de la notification des résultats. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                          "f00038",
+                          "Condition clé (salivaire) : avoir indiqué se réserver la possibilité et avoir accepté le prélèvement sanguin.",
+                        ),
                   ),
                 ],
               ),
@@ -238,40 +372,80 @@ class FormulaireInformationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Choix à recueillir (mentions à faire signer)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+              "f00039",
+              "III — Choix à recueillir (mentions à faire signer)",
+            ),
             cardColor: cardChoix,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Expertise / examen technique"),
-              _BulletPoint(
-                text:
-                    "Je souhaite me réserver la possibilité de demander l’examen technique ou l’expertise prévue par l’article R. 235-11.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00040",
+                  "A) Expertise / examen technique",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Je ne souhaite pas me réserver la possibilité de demander l’examen technique ou l’expertise prévue par l’article R. 235-11.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00041",
+                  "Je souhaite me réserver la possibilité de demander l’examen technique ou l’expertise prévue par l’article R. 235-11.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00042",
+                  "Je ne souhaite pas me réserver la possibilité de demander l’examen technique ou l’expertise prévue par l’article R. 235-11.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Recherche de médicaments psychoactifs"),
-              _BulletPoint(
-                text:
-                    "Je souhaite me réserver la possibilité de demander la recherche de l’usage de médicaments psychoactifs prévue à l’article R. 235-11.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00043",
+                  "B) Recherche de médicaments psychoactifs",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Je ne souhaite pas me réserver la possibilité de demander la recherche de l’usage de médicaments psychoactifs prévue à l’article R. 235-11.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00044",
+                  "Je souhaite me réserver la possibilité de demander la recherche de l’usage de médicaments psychoactifs prévue à l’article R. 235-11.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00045",
+                  "Je ne souhaite pas me réserver la possibilité de demander la recherche de l’usage de médicaments psychoactifs prévue à l’article R. 235-11.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Prévoir les champs : Nom/Prénom — Date (le …) — Heure (… h …) — "
-                        "Signature de la personne mise en cause — Signature OPJ/APJ.\n",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                          "f00046",
+                          "Prévoir les champs : Nom/Prénom — Date (le …) — Heure (… h …) — ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                          "f00047",
+                          "Signature de la personne mise en cause — Signature OPJ/APJ.\n",
+                        ),
                   ),
                   TextSpan(
-                    text: "Mention : « Rayer la mention inutile ».",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                      "f00048",
+                      "Mention : « Rayer la mention inutile ».",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -282,13 +456,21 @@ class FormulaireInformationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Visuel du formulaire (à zoomer)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+              "f00049",
+              "IV — Visuel du formulaire (à zoomer)",
+            ),
             cardColor: cardAnnexes,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aperçu du formulaire tel qu’il est remis/notifié. (Image zoomable)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00050",
+                  "Aperçu du formulaire tel qu’il est remis/notifié. (Image zoomable)",
+                ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -549,9 +731,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -616,8 +796,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+        "f00051",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+        "f00052",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -790,7 +978,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                    "f00053",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -859,7 +1051,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart",
+                  "f00054",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -887,7 +1083,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -922,7 +1120,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_contenu_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — L’UsageArmes (SPLASH IA 2025)
@@ -61,7 +62,11 @@ class _UsageArmesIntroPageState extends State<UsageArmesIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LE CADRE LÉGAL D\'USAGE DES ARMES';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_intro_page.dart",
+    "f00001",
+    'LE CADRE LÉGAL D\'USAGE DES ARMES',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -168,7 +173,11 @@ class _UsageArmesIntroPageState extends State<UsageArmesIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Conditions, limites et réflexes essentiels du cadre légal d’usage des armes.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_intro_page.dart",
+                        "f00002",
+                        "Conditions, limites et réflexes essentiels du cadre légal d’usage des armes.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -274,7 +283,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/usage_des_armes_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

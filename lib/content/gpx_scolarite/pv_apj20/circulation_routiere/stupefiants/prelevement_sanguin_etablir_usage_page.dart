@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PrelevementSanguinEtablirUsagePage extends StatelessWidget {
   const PrelevementSanguinEtablirUsagePage({super.key});
@@ -41,10 +42,18 @@ class PrelevementSanguinEtablirUsagePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -59,7 +68,11 @@ class PrelevementSanguinEtablirUsagePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas PV\nPrélèvement sanguin (établir l’usage)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+              "f00003",
+              "Canevas PV\nPrélèvement sanguin (établir l’usage)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -71,43 +84,59 @@ class PrelevementSanguinEtablirUsagePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (obligatoire)
           _ConditionCard(
-            title: "I — Cadre juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+              "f00004",
+              "I — Cadre juridique",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les vérifications visant à établir l’usage de stupéfiants sont prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00005",
+                    "Les vérifications visant à établir l’usage de stupéfiants sont prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L.235-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00006",
+                    "l’article L.235-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Elles sont obligatoirement réalisées par prélèvement sanguin en cas de décès du ou des conducteurs impliqués dans un accident, conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00007",
+                    "Elles sont obligatoirement réalisées par prélèvement sanguin en cas de décès du ou des conducteurs impliqués dans un accident, conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article R.235-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00008",
+                    "l’article R.235-8 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Elles peuvent également être réalisées par prélèvement sanguin lorsque le prélèvement salivaire est impossible (ex. gravité ou nature des blessures).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00009",
+                  "Elles peuvent également être réalisées par prélèvement sanguin lorsque le prélèvement salivaire est impossible (ex. gravité ou nature des blessures).",
+                ),
               ),
             ],
           ),
@@ -116,114 +145,218 @@ class PrelevementSanguinEtablirUsagePage extends StatelessWidget {
 
           // Étapes (canevas)
           _ConditionCard(
-            title: "II — Canevas (points à faire figurer dans le PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+              "f00010",
+              "II — Canevas (points à faire figurer dans le PV)",
+            ),
             cardColor: cardSteps,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de prélèvement"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00011",
+                  "1) Lieu de prélèvement",
+                ),
+              ),
               _Paragraph(
-                "Mentionner l’endroit exact où se situe l’équipage (service, centre hospitalier, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00012",
+                  "Mentionner l’endroit exact où se situe l’équipage (service, centre hospitalier, etc.).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("2) Assistant"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00013",
+                  "2) Assistant",
+                ),
+              ),
               _Paragraph(
-                "Le rédacteur mentionne les fonctionnaires qui l’accompagnent pour l’accomplissement de la mission.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00014",
+                  "Le rédacteur mentionne les fonctionnaires qui l’accompagnent pour l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("3) Visa de la réquisition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00015",
+                  "3) Visa de la réquisition",
+                ),
+              ),
               _Paragraph(
-                "L’A.P.J. remet une réquisition au praticien chargé de procéder au prélèvement et à un examen clinique.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00016",
+                  "L’A.P.J. remet une réquisition au praticien chargé de procéder au prélèvement et à un examen clinique.",
+                ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Le prélèvement peut être effectué par un médecin, un étudiant exerçant à titre de remplaçant, un infirmier ou un biologiste, selon les réquisitions et le cadre applicable.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("4) Mise à disposition du nécessaire"),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Le policier fournit le matériel au praticien requis. Le nécessaire doit contenir (",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00017",
+                  "Le prélèvement peut être effectué par un médecin, un étudiant exerçant à titre de remplaçant, un infirmier ou un biologiste, selon les réquisitions et le cadre applicable.",
                 ),
-                TextSpan(
-                  text: "article 6 de l’arrêté du 13 décembre 2016",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " fixant les modalités du dépistage et des analyses/examens prévus par le Code de la route) :",
-                ),
-              ]),
-              SizedBox(height: 8),
-              _BulletPoint(
-                text: "Un tampon de stérilisation sans alcool.",
-              ),
-              _BulletPoint(
-                text:
-                    "Deux tubes à prélèvement sous vide de 10 ml avec héparinate de lithium + étiquettes.",
-              ),
-              _BulletPoint(
-                text:
-                    "Une aiguille à prélèvement sous vide accompagnée de l’adaptateur adéquat.",
-              ),
-              _BulletPoint(
-                text:
-                    "Deux contenants permettant l’apposition d’un scellé et la protection des tubes sous vide.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("5) Prélèvement sanguin"),
-              _Paragraph(
-                "L’A.P.J. assiste au prélèvement. Le prélèvement est réparti entre deux tubes étiquetés, puis placé dans deux contenants identifiés et scellés par l’A.P.J. ayant assisté à l’opération.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("6) Énonciation terminale (clôture)"),
-              _Paragraph(
-                "Clore le procès-verbal conformément à vos usages de rédaction (mentions finales, signatures, date/heure si nécessaire).",
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "7) Mention (transmission / réquisition analyse)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00018",
+                  "4) Mise à disposition du nécessaire",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "L’agent de police judiciaire ayant procédé aux vérifications peut requérir et adresser les échantillons sanguins, accompagnés de la fiche de suivi de prélèvement sanguin, à un laboratoire (biologie médicale, police scientifique) ou à un expert en toxicologie, conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00019",
+                    "Le policier fournit le matériel au praticien requis. Le nécessaire doit contenir (",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article R.235-9 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00020",
+                    "article 6 de l’arrêté du 13 décembre 2016",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00021",
+                    " fixant les modalités du dépistage et des analyses/examens prévus par le Code de la route) :",
+                  ),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00022",
+                  "Un tampon de stérilisation sans alcool.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00023",
+                  "Deux tubes à prélèvement sous vide de 10 ml avec héparinate de lithium + étiquettes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00024",
+                  "Une aiguille à prélèvement sous vide accompagnée de l’adaptateur adéquat.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00025",
+                  "Deux contenants permettant l’apposition d’un scellé et la protection des tubes sous vide.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00026",
+                  "5) Prélèvement sanguin",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00027",
+                  "L’A.P.J. assiste au prélèvement. Le prélèvement est réparti entre deux tubes étiquetés, puis placé dans deux contenants identifiés et scellés par l’A.P.J. ayant assisté à l’opération.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00028",
+                  "6) Énonciation terminale (clôture)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00029",
+                  "Clore le procès-verbal conformément à vos usages de rédaction (mentions finales, signatures, date/heure si nécessaire).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00030",
+                  "7) Mention (transmission / réquisition analyse)",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00031",
+                    "L’agent de police judiciaire ayant procédé aux vérifications peut requérir et adresser les échantillons sanguins, accompagnés de la fiche de suivi de prélèvement sanguin, à un laboratoire (biologie médicale, police scientifique) ou à un expert en toxicologie, conformément à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00032",
+                    "l’article R.235-9 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "En pratique, selon l’organisation du service, les éléments peuvent être transmis à l’O.P.J. ou à l’A.P.J. chargé de rédiger la réquisition au laboratoire ou à l’expert.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00033",
+                  "En pratique, selon l’organisation du service, les éléments peuvent être transmis à l’O.P.J. ou à l’A.P.J. chargé de rédiger la réquisition au laboratoire ou à l’expert.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("8) Annexe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00034",
+                  "8) Annexe",
+                ),
+              ),
               _Paragraph(
-                "Joindre la copie de la réquisition remise au praticien.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00035",
+                  "Joindre la copie de la réquisition remise au praticien.",
+                ),
               ),
             ],
           ),
@@ -232,7 +365,11 @@ class PrelevementSanguinEtablirUsagePage extends StatelessWidget {
 
           // ✅ Image (CANVA)
           _ConditionCard(
-            title: "Document (aperçu)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+              "f00036",
+              "Document (aperçu)",
+            ),
             cardColor: cardDoc,
             accent: accentGrey,
             titleColor: textMain,
@@ -496,9 +633,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -563,8 +698,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+        "f00037",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+        "f00038",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -737,7 +880,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                    "f00039",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -806,7 +953,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart",
+                  "f00040",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -834,7 +985,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -869,7 +1022,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
   const AtteintesSexuellesMajeurMineur15Page({super.key});
@@ -56,10 +57,18 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en péril",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+            "f00002",
+            "Mise en péril",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les atteintes sexuelles par un majeur sur un mineur de quinze ans",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+              "f00003",
+              "Les atteintes sexuelles par un majeur sur un mineur de quinze ans",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,14 +99,26 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Hors les cas de viol ou d’agression sexuelle (section « Du viol, de l’inceste, et des autres agressions sexuelles »), "
-                "le fait, pour un majeur, d’exercer une atteinte sexuelle sur la personne d’un mineur de quinze ans constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00005",
+                      "Hors les cas de viol ou d’agression sexuelle (section « Du viol, de l’inceste, et des autres agressions sexuelles »), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00006",
+                      "le fait, pour un majeur, d’exercer une atteinte sexuelle sur la personne d’un mineur de quinze ans constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -102,39 +127,65 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-25 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00008",
+                    "Article 227-25 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : prévoit et réprime les atteintes sexuelles commises par un majeur sur un mineur de quinze ans, "
-                      "autres que les viols ou agressions sexuelles.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                        "f00009",
+                        " : prévoit et réprime les atteintes sexuelles commises par un majeur sur un mineur de quinze ans, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                        "f00010",
+                        "autres que les viols ou agressions sexuelles.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-27-2-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00011",
+                    "Article 227-27-2-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : qualifie d’« incestueuses » ces atteintes lorsqu’elles sont commises sur un mineur par : "
-                      "un ascendant ; certains membres de la famille (frère/sœur, oncle/tante, etc.) ; "
-                      "ou le conjoint/concubin/partenaire PACS d’une de ces personnes, s’il exerce une autorité de droit ou de fait sur le mineur.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                        "f00012",
+                        " : qualifie d’« incestueuses » ces atteintes lorsqu’elles sont commises sur un mineur par : ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                        "f00013",
+                        "un ascendant ; certains membres de la famille (frère/sœur, oncle/tante, etc.) ; ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                        "f00014",
+                        "ou le conjoint/concubin/partenaire PACS d’une de ces personnes, s’il exerce une autorité de droit ou de fait sur le mineur.",
+                      ),
                 ),
               ]),
             ],
@@ -144,106 +195,212 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une atteinte sexuelle"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00016",
+                  "A) Une atteinte sexuelle",
+                ),
+              ),
               _Paragraph(
-                "L’atteinte sexuelle se définit comme tout agissement en rapport avec l’activité sexuelle. "
-                "Elle suppose un contact physique entre l’auteur et la victime.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00017",
+                      "L’atteinte sexuelle se définit comme tout agissement en rapport avec l’activité sexuelle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00018",
+                      "Elle suppose un contact physique entre l’auteur et la victime.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le contact peut être commis par l’auteur sur la victime, mais aussi être réalisé par la victime sur l’auteur.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00019",
+                  "Le contact peut être commis par l’auteur sur la victime, mais aussi être réalisé par la victime sur l’auteur.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’atteinte sexuelle visée ici est un contact physique commis ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00020",
+                      "L’atteinte sexuelle visée ici est un contact physique commis ",
+                    ),
                   ),
                   TextSpan(
-                    text: "sans violence, contrainte, menace ni surprise",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00021",
+                      "sans violence, contrainte, menace ni surprise",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                   TextSpan(
-                    text:
-                        ". En présence de ces éléments, les faits peuvent relever du viol ou de l’agression sexuelle.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00022",
+                      ". En présence de ces éléments, les faits peuvent relever du viol ou de l’agression sexuelle.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Repères (hors champ 227-25)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00023",
+                  "Repères (hors champ 227-25)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text: "Articles 222-23 et 222-24 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00024",
+                      "Articles 222-23 et 222-24 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : viol et viol aggravé (acte de pénétration sexuelle ou acte bucco-génital).\n",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00025",
+                      " : viol et viol aggravé (acte de pénétration sexuelle ou acte bucco-génital).\n",
+                    ),
                   ),
                   TextSpan(
-                    text: "Article 222-29-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00026",
+                      "Article 222-29-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : agression sexuelle imposée à un mineur de 15 ans par violence, contrainte, menace ou surprise.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00027",
+                      " : agression sexuelle imposée à un mineur de 15 ans par violence, contrainte, menace ou surprise.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un auteur majeur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00028",
+                  "B) Un auteur majeur",
+                ),
+              ),
               _Paragraph(
-                "L’infraction n’est imputable qu’à un majeur : les actes accomplis entre mineurs sont exclus du champ d’application.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00029",
+                  "L’infraction n’est imputable qu’à un majeur : les actes accomplis entre mineurs sont exclus du champ d’application.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Point de vigilance",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00030",
+                  "Point de vigilance",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Selon le cas, certains faits peuvent relever d’autres qualifications plus graves (viol/agression sexuelle), "
-                        "notamment selon les circonstances et la situation des personnes.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                          "f00031",
+                          "Selon le cas, certains faits peuvent relever d’autres qualifications plus graves (viol/agression sexuelle), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                          "f00032",
+                          "notamment selon les circonstances et la situation des personnes.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 14),
 
-              _SubTitle("C) Une victime mineure de quinze ans"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00033",
+                  "C) Une victime mineure de quinze ans",
+                ),
+              ),
               _Paragraph(
-                "C’est l’âge de la victime au moment des faits qui doit être pris en compte.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00034",
+                  "C’est l’âge de la victime au moment des faits qui doit être pris en compte.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00035",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  TextSpan(text: "Âge au moment des faits — "),
                   TextSpan(
-                    text: "Cass. crim., 21 mars 1957",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00036",
+                      "Âge au moment des faits — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00037",
+                      "Cass. crim., 21 mars 1957",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(text: ".\n"),
-                  TextSpan(text: "Âge calculé d’heure à heure — "),
                   TextSpan(
-                    text: "Cass. crim., 03 septembre 1985",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00038",
+                      "Âge calculé d’heure à heure — ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00039",
+                      "Cass. crim., 03 septembre 1985",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -251,11 +408,18 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "Preuve de l’âge par tout moyen si absence d’acte probant — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00040",
+                      "Preuve de l’âge par tout moyen si absence d’acte probant — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 17 juillet 1991",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00041",
+                      "Cass. crim., 17 juillet 1991",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -266,7 +430,11 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le texte ne précise pas que la minorité de quinze ans doit être apparente ou connue : le mineur de 15 ans bénéficie ainsi d’une protection renforcée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00042",
+                  "Le texte ne précise pas que la minorité de quinze ans doit être apparente ou connue : le mineur de 15 ans bénéficie ainsi d’une protection renforcée.",
+                ),
               ),
             ],
           ),
@@ -275,27 +443,59 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+              "f00043",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’élément moral réside dans la conscience de l’auteur de l’acte accompli. "
-                "Cette conscience est nécessaire et suffisante : l’auteur est conscient de commettre une atteinte sexuelle sur un mineur de quinze ans.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00044",
+                      "L’élément moral réside dans la conscience de l’auteur de l’acte accompli. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00045",
+                      "Cette conscience est nécessaire et suffisante : l’auteur est conscient de commettre une atteinte sexuelle sur un mineur de quinze ans.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Erreur sur l’âge",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00046",
+                  "Erreur sur l’âge",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’erreur sur l’âge n’atténue pas la responsabilité pénale. Toutefois, dans certaines hypothèses, "
-                        "des poursuites peuvent être impossibles s’il est établi que l’auteur ignorait l’âge réel de la victime, "
-                        "notamment si celle-ci avait le comportement et le développement physique d’un adulte — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                          "f00047",
+                          "L’erreur sur l’âge n’atténue pas la responsabilité pénale. Toutefois, dans certaines hypothèses, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                          "f00048",
+                          "des poursuites peuvent être impossibles s’il est établi que l’auteur ignorait l’âge réel de la victime, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                          "f00049",
+                          "notamment si celle-ci avait le comportement et le développement physique d’un adulte — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 04 janvier 1902",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00050",
+                      "Cass. crim., 04 janvier 1902",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -303,11 +503,18 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "Il appartient à l’auteur de justifier qu’il a été trompé — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00051",
+                      "Il appartient à l’auteur de justifier qu’il a été trompé — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 07 février 1957",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                      "f00052",
+                      "Cass. crim., 07 février 1957",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -323,41 +530,61 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+              "f00053",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-26 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00054",
+                    "Article 227-26 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque l’atteinte est commise par une personne majeure ayant sur la victime une autorité de droit ou de fait.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00055",
+                  "Lorsque l’atteinte est commise par une personne majeure ayant sur la victime une autorité de droit ou de fait.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque l’auteur abuse de l’autorité que lui confèrent ses fonctions (autorité légale ou de fait).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00056",
+                  "Lorsque l’auteur abuse de l’autorité que lui confèrent ses fonctions (autorité légale ou de fait).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque les faits sont commis par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00057",
+                  "Lorsque les faits sont commis par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque le mineur a été mis en contact avec l’auteur grâce à l’utilisation d’un réseau de communication électronique (diffusion à destination d’un public non déterminé).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00058",
+                  "Lorsque le mineur a été mis en contact avec l’auteur grâce à l’utilisation d’un réseau de communication électronique (diffusion à destination d’un public non déterminé).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque l’auteur agit en état d’ivresse manifeste ou sous l’emprise manifeste de produits stupéfiants.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00059",
+                  "Lorsque l’auteur agit en état d’ivresse manifeste ou sous l’emprise manifeste de produits stupéfiants.",
+                ),
               ),
             ],
           ),
@@ -366,84 +593,158 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+              "f00060",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00061",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00062",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-25 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00063",
+                    "7 ans d’emprisonnement et 100 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00064",
+                    "article 227-25 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 150 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00065",
+                    "Qualification aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-26 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00066",
+                    "10 ans d’emprisonnement et 150 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00067",
+                    "article 227-26 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00068",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité prévue par "),
                 TextSpan(
-                  text: "l’article 227-28-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00069",
+                    "Responsabilité prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00070",
+                    "l’article 227-28-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                  "f00071",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 227-27-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00072",
+                    "Tentative : OUI — ",
                   ),
                 ),
-                TextSpan(text: " (tentative punissable)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00073",
+                    "article 227-27-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00074",
+                    " (tentative punissable).",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — droit commun, "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00075",
+                    "Complicité : OUI — droit commun, ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (organisation de rencontres, fourniture d’adresses/locaux, facilitation des faits, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00076",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart",
+                    "f00077",
+                    " (organisation de rencontres, fourniture d’adresses/locaux, facilitation des faits, etc.).",
+                  ),
                 ),
               ]),
             ],

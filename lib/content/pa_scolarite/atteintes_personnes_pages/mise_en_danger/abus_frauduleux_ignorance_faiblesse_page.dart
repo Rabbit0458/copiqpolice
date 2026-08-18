@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
   const PaAbusFrauduleuxIgnoranceFaiblessePage({super.key});
@@ -56,10 +57,18 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Mise en danger",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+            "f00002",
+            "Mise en danger",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’abus frauduleux de l’état d’ignorance ou de faiblesse",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+              "f00003",
+              "L’abus frauduleux de l’état d’ignorance ou de faiblesse",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,16 +99,36 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’abus frauduleux de l’état d’ignorance ou de la situation de faiblesse, soit d’un mineur, "
-                "soit d’une personne dont la particulière vulnérabilité (âge, maladie, infirmité, déficience "
-                "physique ou psychique, grossesse) est apparente ou connue de l’auteur, "
-                "pour conduire cette personne à un acte ou une abstention gravement préjudiciables, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00005",
+                      "L’abus frauduleux de l’état d’ignorance ou de la situation de faiblesse, soit d’un mineur, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00006",
+                      "soit d’une personne dont la particulière vulnérabilité (âge, maladie, infirmité, déficience ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00007",
+                      "physique ou psychique, grossesse) est apparente ou connue de l’auteur, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00008",
+                      "pour conduire cette personne à un acte ou une abstention gravement préjudiciables, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -104,22 +137,30 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-15-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00010",
+                    "Article 223-15-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime l’abus frauduleux de l’état d’ignorance ou de la situation de faiblesse.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00011",
+                    " : prévoit et réprime l’abus frauduleux de l’état d’ignorance ou de la situation de faiblesse.",
+                  ),
                 ),
               ]),
             ],
@@ -129,25 +170,50 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte d’abus frauduleux"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00013",
+                  "A) Un acte d’abus frauduleux",
+                ),
+              ),
               _Paragraph(
-                "L’abus n’est pas défini par la loi. Il peut consister en des manœuvres grossières, "
-                "un simple mensonge, voire des pressions suscitant la crainte de la victime.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00014",
+                      "L’abus n’est pas défini par la loi. Il peut consister en des manœuvres grossières, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00015",
+                      "un simple mensonge, voire des pressions suscitant la crainte de la victime.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : obtenir d’une personne « fragile » un prêt immobilier impossible à rembourser ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00016",
+                      "Jurisprudence : obtenir d’une personne « fragile » un prêt immobilier impossible à rembourser ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 05 octobre 2004)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00017",
+                      "(Cass. crim., 05 octobre 2004)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -159,82 +225,153 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
               SizedBox(height: 12),
 
               _Paragraph(
-                "L’abus frauduleux correspond à l’exploitation excessive de l’état de la victime pour l’amener "
-                "à un acte ou une abstention qu’elle n’aurait pas acceptés si elle avait été éclairée ou en état de résister.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00018",
+                      "L’abus frauduleux correspond à l’exploitation excessive de l’état de la victime pour l’amener ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00019",
+                      "à un acte ou une abstention qu’elle n’aurait pas acceptés si elle avait été éclairée ou en état de résister.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le texte exige que l’abus « conduise » la personne à un acte/une abstention : cela ne signifie pas contraindre. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00020",
+                    "Le texte exige que l’abus « conduise » la personne à un acte/une abstention : cela ne signifie pas contraindre. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 16 octobre 2007)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00021",
+                    "(Cass. crim., 16 octobre 2007)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("B) Basé sur l’état d’ignorance ou de faiblesse"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00022",
+                  "B) Basé sur l’état d’ignorance ou de faiblesse",
+                ),
+              ),
               _Paragraph(
-                "L’acte d’abus doit être fondé sur l’état d’ignorance ou de faiblesse de la victime.\n"
-                "• L’ignorance : manque de connaissances adéquates (ex. tromper une personne sans compétence technique).\n"
-                "• La faiblesse : vulnérabilité empêchant une résistance normale aux sollicitations.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00023",
+                      "L’acte d’abus doit être fondé sur l’état d’ignorance ou de faiblesse de la victime.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00024",
+                      "• L’ignorance : manque de connaissances adéquates (ex. tromper une personne sans compétence technique).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00025",
+                      "• La faiblesse : vulnérabilité empêchant une résistance normale aux sollicitations.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Cass. crim., 26 mai 2009",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00026",
+                    "Cass. crim., 26 mai 2009",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : l’abus de faiblesse s’apprécie au regard de la vulnérabilité au moment de l’acte gravement préjudiciable.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00027",
+                    " : l’abus de faiblesse s’apprécie au regard de la vulnérabilité au moment de l’acte gravement préjudiciable.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _Paragraph(
-                "Le consentement doit être libre et éclairé au moment où l’acte est passé. "
-                "Peu importe un consentement ancien : si la vulnérabilité apparaît ensuite, il faut vérifier le consentement effectif au moment de l’acte.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00028",
+                      "Le consentement doit être libre et éclairé au moment où l’acte est passé. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00029",
+                      "Peu importe un consentement ancien : si la vulnérabilité apparaît ensuite, il faut vérifier le consentement effectif au moment de l’acte.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Une victime particulière"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00030",
+                  "C) Une victime particulière",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Sans faire disparaître tout libre arbitre, la particulière vulnérabilité empêche la personne d’agir de son plein gré. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00031",
+                    "Sans faire disparaître tout libre arbitre, la particulière vulnérabilité empêche la personne d’agir de son plein gré. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 16 octobre 2007)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00032",
+                    "(Cass. crim., 16 octobre 2007)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "La protection pénale vise une liste limitative :\n"
-                "• Les mineurs\n"
-                "• Les personnes d’une particulière vulnérabilité (âge, maladie, infirmité, déficience physique/psychique, grossesse), apparente ou connue.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00033",
+                      "La protection pénale vise une liste limitative :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00034",
+                      "• Les mineurs\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00035",
+                      "• Les personnes d’une particulière vulnérabilité (âge, maladie, infirmité, déficience physique/psychique, grossesse), apparente ou connue.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : personne de 89 ans, surdité importante, ayant souscrit un nouveau contrat en l’absence de l’aidant habituel ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00036",
+                      "Jurisprudence : personne de 89 ans, surdité importante, ayant souscrit un nouveau contrat en l’absence de l’aidant habituel ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 17 janvier 2001)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00037",
+                      "(Cass. crim., 17 janvier 2001)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -247,11 +384,18 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : un voyant recevant une forte somme d’argent d’une personne dépressive ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00038",
+                      "Jurisprudence : un voyant recevant une forte somme d’argent d’une personne dépressive ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C.A. Nîmes, 15 novembre 2002)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00039",
+                      "(C.A. Nîmes, 15 novembre 2002)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -263,20 +407,41 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Un préjudice gravement préjudiciable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00040",
+                  "D) Un préjudice gravement préjudiciable",
+                ),
+              ),
               _Paragraph(
-                "La victime doit avoir été poussée à un acte ou une abstention gravement préjudiciables. "
-                "Le préjudice peut concerner le patrimoine, la santé, l’activité professionnelle, mais aussi la vie familiale et affective.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00041",
+                      "La victime doit avoir été poussée à un acte ou une abstention gravement préjudiciables. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00042",
+                      "Le préjudice peut concerner le patrimoine, la santé, l’activité professionnelle, mais aussi la vie familiale et affective.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : des prélèvements successifs vident le patrimoine de la victime ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00043",
+                      "Jurisprudence : des prélèvements successifs vident le patrimoine de la victime ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 27 mai 2004)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00044",
+                      "(Cass. crim., 27 mai 2004)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -287,17 +452,28 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La jurisprudence n’exige pas que l’acte préjudiciable soit déjà réalisé : il peut être seulement potentiel.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00045",
+                  "La jurisprudence n’exige pas que l’acte préjudiciable soit déjà réalisé : il peut être seulement potentiel.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : femme de 83 ans, Alzheimer, placée sous sauvegarde de justice, disposant de ses biens par testament au profit de l’auteur ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00046",
+                      "Jurisprudence : femme de 83 ans, Alzheimer, placée sous sauvegarde de justice, disposant de ses biens par testament au profit de l’auteur ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 21 octobre 2008)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00047",
+                      "(Cass. crim., 21 octobre 2008)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -310,11 +486,18 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : vente en viager de deux immeubles à un prix anormalement bas (isolement + affaiblissement intellectuel) ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00048",
+                      "Jurisprudence : vente en viager de deux immeubles à un prix anormalement bas (isolement + affaiblissement intellectuel) ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 13 janvier 2016)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00049",
+                      "(Cass. crim., 13 janvier 2016)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -330,37 +513,76 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+              "f00050",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance de la minorité / vulnérabilité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00051",
+                  "A) Connaissance de la minorité / vulnérabilité",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit connaître la minorité de la victime. "
-                "La particulière vulnérabilité doit être « apparente ou connue ». "
-                "La Cour de cassation exige que cette connaissance soit démontrée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00052",
+                      "L’auteur doit connaître la minorité de la victime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00053",
+                      "La particulière vulnérabilité doit être « apparente ou connue ». ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00054",
+                      "La Cour de cassation exige que cette connaissance soit démontrée.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Cass. crim., 27 mai 2004",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00055",
+                    "Cass. crim., 27 mai 2004",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : la connaissance doit être caractérisée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00056",
+                    " : la connaissance doit être caractérisée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Conscience de pousser à un acte/abstention gravement préjudiciable",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00057",
+                  "B) Conscience de pousser à un acte/abstention gravement préjudiciable",
+                ),
               ),
               _Paragraph(
-                "L’auteur doit savoir que l’intérêt de la victime est de refuser la proposition, "
-                "et qu’il la conduit pourtant à accepter un acte ou une abstention gravement préjudiciables.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00058",
+                      "L’auteur doit savoir que l’intérêt de la victime est de refuser la proposition, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                      "f00059",
+                      "et qu’il la conduit pourtant à accepter un acte ou une abstention gravement préjudiciables.",
+                    ),
               ),
             ],
           ),
@@ -369,40 +591,53 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+              "f00060",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-15-2 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00061",
+                    "Article 223-15-2 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque l’infraction est commise par l’utilisation d’un service de communication au public en ligne ou via un support numérique/électronique.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00062",
+                  "Lorsque l’infraction est commise par l’utilisation d’un service de communication au public en ligne ou via un support numérique/électronique.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 223-15-2 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00063",
+                    "Article 223-15-2 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Lorsque l’infraction est commise en bande organisée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00064",
+                  "Lorsque l’infraction est commise en bande organisée.",
+                ),
               ),
             ],
           ),
@@ -411,89 +646,165 @@ class PaAbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+              "f00065",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00066",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 375 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00067",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 223-15-2 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00068",
+                    "3 ans d’emprisonnement et 375 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00069",
+                    "article 223-15-2 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (en ligne/numérique) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 750 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00070",
+                    "Aggravée (en ligne/numérique) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 223-15-2 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00071",
+                    "5 ans d’emprisonnement et 750 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00072",
+                    "article 223-15-2 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (bande organisée) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 1 000 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00073",
+                    "Aggravée (bande organisée) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 223-15-2 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00074",
+                    "7 ans d’emprisonnement et 1 000 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00075",
+                    "article 223-15-2 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00076",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 223-15-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00077",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00078",
+                    "l’article 223-15-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00079",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                  "f00080",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00081",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00082",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart",
+                    "f00083",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -752,9 +1063,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

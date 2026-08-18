@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DignitePersonneContenuPage extends StatelessWidget {
   const DignitePersonneContenuPage({super.key});
@@ -25,10 +26,18 @@ class DignitePersonneContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -43,7 +52,11 @@ class DignitePersonneContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Atteintes à la dignité de la personne",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00003",
+              "Atteintes à la dignité de la personne",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,8 +66,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux infractions portant atteinte à la dignité "
-            "de la personne (définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux infractions portant atteinte à la dignité ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+                  "f00005",
+                  "de la personne (définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,8 +88,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 1 =================
           _ModuleCard(
             tag: 'dignite_dissimulation_forcee_visage',
-            title: "La dissimulation forcée du visage",
-            subtitle: "Cadre légal, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00006",
+              "La dissimulation forcée du visage",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00007",
+              "Cadre légal, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/dignite_dissimulation_forcee_visage.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -82,9 +111,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 2 =================
           _ModuleCard(
             tag: 'dignite_retribution_inexistante_insuffisante',
-            title:
-                "La rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante",
-            subtitle: "Qualification, caractérisation et répression.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00008",
+              "La rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00009",
+              "Qualification, caractérisation et répression.",
+            ),
             imagePath:
                 'assets/images/dignite_retribution_inexistante_insuffisante.jpeg',
             textMain: textMain,
@@ -99,9 +135,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 3 =================
           _ModuleCard(
             tag: 'dignite_soumission_conditions_travail_hebergement',
-            title:
-                "La soumission d’une personne vulnérable ou dépendante à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine",
-            subtitle: "Notion de vulnérabilité, conditions et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00010",
+              "La soumission d’une personne vulnérable ou dépendante à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00011",
+              "Notion de vulnérabilité, conditions et sanctions.",
+            ),
             imagePath:
                 'assets/images/dignite_soumission_conditions_travail_hebergement.jpeg',
             textMain: textMain,
@@ -116,8 +159,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 4 =================
           _ModuleCard(
             tag: 'dignite_traite_etres_humains',
-            title: "La traite des êtres humains",
-            subtitle: "Définition, moyens, finalités et répression.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00012",
+              "La traite des êtres humains",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00013",
+              "Définition, moyens, finalités et répression.",
+            ),
             imagePath: 'assets/images/dignite_traite_etres_humains.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -131,9 +182,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 5 =================
           _ModuleCard(
             tag: 'dignite_violation_profanation_tombeaux',
-            title:
-                "La violation et la profanation de tombeaux, de sépultures, d’urnes cinéraires ou de monuments édifiés à la mémoire des morts",
-            subtitle: "Éléments constitutifs, aggravations et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00014",
+              "La violation et la profanation de tombeaux, de sépultures, d’urnes cinéraires ou de monuments édifiés à la mémoire des morts",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00015",
+              "Éléments constitutifs, aggravations et sanctions.",
+            ),
             imagePath:
                 'assets/images/dignite_violation_profanation_tombeaux.jpeg',
             textMain: textMain,
@@ -148,8 +206,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 6 =================
           _ModuleCard(
             tag: 'dignite_integrite_cadavre',
-            title: "L’atteinte à l’intégrité du cadavre",
-            subtitle: "Notion, comportements visés et répression.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00016",
+              "L’atteinte à l’intégrité du cadavre",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00017",
+              "Notion, comportements visés et répression.",
+            ),
             imagePath: 'assets/images/dignite_integrite_cadavre.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -163,8 +229,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 7 =================
           _ModuleCard(
             tag: 'dignite_proxenetisme_hotelier',
-            title: "Le proxénétisme hôtelier",
-            subtitle: "Qualification, conditions et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00018",
+              "Le proxénétisme hôtelier",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00019",
+              "Qualification, conditions et sanctions.",
+            ),
             imagePath: 'assets/images/dignite_proxenetisme_hotelier.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -178,8 +252,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 8 =================
           _ModuleCard(
             tag: 'dignite_proxenetisme_assimilation',
-            title: "Le proxénétisme par assimilation",
-            subtitle: "Comportements assimilés, preuve et répression.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00020",
+              "Le proxénétisme par assimilation",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00021",
+              "Comportements assimilés, preuve et répression.",
+            ),
             imagePath: 'assets/images/dignite_proxenetisme_hotelier.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -193,8 +275,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 9 =================
           _ModuleCard(
             tag: 'dignite_proxenetisme',
-            title: "Le proxénétisme",
-            subtitle: "Définition, caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00022",
+              "Le proxénétisme",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00023",
+              "Définition, caractérisation et sanctions.",
+            ),
             imagePath: 'assets/images/dignite_proxenetisme.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -208,9 +298,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 10 =================
           _ModuleCard(
             tag: 'dignite_recours_prostitution_mineurs_vulnerables',
-            title:
-                "Le recours à la prostitution de mineurs ou de personnes particulièrement vulnérables",
-            subtitle: "Protection renforcée et répression.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00024",
+              "Le recours à la prostitution de mineurs ou de personnes particulièrement vulnérables",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00025",
+              "Protection renforcée et répression.",
+            ),
             imagePath:
                 'assets/images/dignite_recours_prostitution_mineurs_vulnerables.jpeg',
             textMain: textMain,
@@ -225,8 +322,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= PDF 11 =================
           _ModuleCard(
             tag: 'dignite_discriminations',
-            title: "Les discriminations",
-            subtitle: "Définition, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00026",
+              "Les discriminations",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00027",
+              "Définition, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/dignite_discriminations.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -241,9 +346,16 @@ class DignitePersonneContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_dignite_personne',
-            title: 'Quiz — Atteintes à la dignité de la personne',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00028",
+              'Quiz — Atteintes à la dignité de la personne',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/dignite_personne_contenu_page.dart",
+              "f00029",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

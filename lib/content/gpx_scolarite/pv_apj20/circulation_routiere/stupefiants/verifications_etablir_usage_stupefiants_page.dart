@@ -13,7 +13,6 @@ class VerificationsEtablirUsageStupefiantsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-
     // Palette cards (propre + lisible)
     return const Scaffold();
   }

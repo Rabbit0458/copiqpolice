@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaTypesAccidentsCirculationPage extends StatelessWidget {
   const PaTypesAccidentsCirculationPage({super.key});
@@ -56,10 +57,18 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident de circulation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+            "f00002",
+            "Accident de circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les différents types d’accidents de la circulation routière",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+              "f00003",
+              "Les différents types d’accidents de la circulation routière",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,25 +99,69 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
 
           // Définition générale
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’accident est, par définition, un événement imprévu et soudain entraînant des dégâts matériels ou corporels ; "
-                "sont donc exclus les actes volontaires (homicides, suicides…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                      "f00005",
+                      "L’accident est, par définition, un événement imprévu et soudain entraînant des dégâts matériels ou corporels ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                      "f00006",
+                      "sont donc exclus les actes volontaires (homicides, suicides…).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Par « accident de la circulation routière », on entend tout accident impliquant au moins un véhicule en mouvement, "
-                "automoteur ou non, sur une voie ouverte à la circulation publique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                      "f00007",
+                      "Par « accident de la circulation routière », on entend tout accident impliquant au moins un véhicule en mouvement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                      "f00008",
+                      "automoteur ou non, sur une voie ouverte à la circulation publique.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Catégories (selon la nature du dommage)"),
-              _IntroBullet(text: "Accident mortel"),
-              _IntroBullet(text: "Accident corporel"),
-              _IntroBullet(text: "Accident matériel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00009",
+                  "Catégories (selon la nature du dommage)",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00010",
+                  "Accident mortel",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00011",
+                  "Accident corporel",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00012",
+                  "Accident matériel",
+                ),
+              ),
             ],
           ),
 
@@ -112,20 +169,31 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
 
           // I
           _ConditionCard(
-            title: "I — L’accident mortel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+              "f00013",
+              "I — L’accident mortel",
+            ),
             cardColor: cardI,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour l’intervention policière sur les lieux, il s’agit d’un accident ayant des conséquences immédiatement mortelles.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00014",
+                  "Pour l’intervention policière sur les lieux, il s’agit d’un accident ayant des conséquences immédiatement mortelles.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pour l’établissement des données statistiques, est considérée comme victime d’un accident mortel toute personne décédée dans les trente jours qui suivent l’accident.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                      "f00015",
+                      "Pour l’établissement des données statistiques, est considérée comme victime d’un accident mortel toute personne décédée dans les trente jours qui suivent l’accident.",
+                    ),
                   ),
                 ],
               ),
@@ -136,23 +204,43 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
 
           // II
           _ConditionCard(
-            title: "II — L’accident corporel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+              "f00016",
+              "II — L’accident corporel",
+            ),
             cardColor: cardII,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sont considérés comme blessés les victimes ayant subi un traumatisme nécessitant des soins médicaux.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00017",
+                  "Sont considérés comme blessés les victimes ayant subi un traumatisme nécessitant des soins médicaux.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Catégories de blessés"),
-              _BulletPoint(
-                text:
-                    "Blessé non hospitalisé : victime ayant reçu des soins médicaux, non hospitalisée ou admise comme patient dans un hôpital moins de 24 heures.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00018",
+                  "Catégories de blessés",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Blessé hospitalisé : victime admise comme patient dans un hôpital plus de 24 heures.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00019",
+                  "Blessé non hospitalisé : victime ayant reçu des soins médicaux, non hospitalisée ou admise comme patient dans un hôpital moins de 24 heures.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00020",
+                  "Blessé hospitalisé : victime admise comme patient dans un hôpital plus de 24 heures.",
+                ),
               ),
             ],
           ),
@@ -161,14 +249,26 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
 
           // III
           _ConditionCard(
-            title: "III — L’accident matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+              "f00021",
+              "III — L’accident matériel",
+            ),
             cardColor: cardIII,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les accidents n’entraînant que des dommages matériels donnent lieu, en principe, à la rédaction d’un constat amiable "
-                "par les conducteurs des véhicules impliqués.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                      "f00022",
+                      "Les accidents n’entraînant que des dommages matériels donnent lieu, en principe, à la rédaction d’un constat amiable ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                      "f00023",
+                      "par les conducteurs des véhicules impliqués.",
+                    ),
               ),
             ],
           ),
@@ -177,27 +277,50 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
 
           // Intervention police nécessaire
           _ConditionCard(
-            title: "Quand l’intervention police est nécessaire",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+              "f00024",
+              "Quand l’intervention police est nécessaire",
+            ),
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention des services de police est nécessaire notamment lorsque :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00025",
+                  "L’intervention des services de police est nécessaire notamment lorsque :",
+                ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Un véhicule militaire est impliqué."),
               _BulletPoint(
-                text:
-                    "Des dégâts sont causés au domaine public, à la voie publique ou à ses dépendances, aux voies ferrées ou à leurs dépendances, aux lignes téléphoniques.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00026",
+                  "Un véhicule militaire est impliqué.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Un véhicule transportant des marchandises dangereuses a subi des dégâts importants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00027",
+                  "Des dégâts sont causés au domaine public, à la voie publique ou à ses dépendances, aux voies ferrées ou à leurs dépendances, aux lignes téléphoniques.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’accident a causé la mort ou des blessures à un animal domestique.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00028",
+                  "Un véhicule transportant des marchandises dangereuses a subi des dégâts importants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00029",
+                  "L’accident a causé la mort ou des blessures à un animal domestique.",
+                ),
               ),
             ],
           ),
@@ -206,26 +329,43 @@ class PaTypesAccidentsCirculationPage extends StatelessWidget {
 
           // Intervention possible
           _ConditionCard(
-            title: "Cas où la police peut aussi intervenir",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+              "f00030",
+              "Cas où la police peut aussi intervenir",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les services de police peuvent également être amenés à intervenir dans les cas suivants :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00031",
+                  "Les services de police peuvent également être amenés à intervenir dans les cas suivants :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Sur réquisition d’un conducteur (dégâts particulièrement importants, désaccord pour établir le constat amiable, conducteur étranger impliqué…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00032",
+                  "Sur réquisition d’un conducteur (dégâts particulièrement importants, désaccord pour établir le constat amiable, conducteur étranger impliqué…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque la fluidité et la sécurité du trafic sont compromises (ne pas tolérer que les véhicules demeurent en place jusqu’à la fin du constat amiable).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00033",
+                  "Lorsque la fluidité et la sécurité du trafic sont compromises (ne pas tolérer que les véhicules demeurent en place jusqu’à la fin du constat amiable).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsqu’il semble probable que l’accident est consécutif à une infraction susceptible d’être relevée (ex : conduite en état d’ivresse).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart",
+                  "f00034",
+                  "Lorsqu’il semble probable que l’accident est consécutif à une infraction susceptible d’être relevée (ex : conduite en état d’ivresse).",
+                ),
               ),
             ],
           ),
@@ -482,9 +622,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

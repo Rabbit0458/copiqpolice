@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
   const PaConntroleIdentiteVisiteGpxSchool({super.key});
@@ -19,11 +20,11 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
         : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
-? const Color(0xFF424242)
-: const Color(0xFFF5F5F5);
+        ? const Color(0xFF424242)
+        : const Color(0xFFF5F5F5);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
     final Color articleColor = isDark
         ? const Color(0xFFFF8A80)
@@ -38,10 +39,18 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Véhicules, bagages, navires',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+            "f00002",
+            'Véhicules, bagages, navires',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO ============================
           Text(
-            'Visites de véhicules, bagages et navires',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00003",
+              'Visites de véhicules, bagages et navires',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,9 +77,21 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Contrôles d’identité, visites de véhicules, inspection visuelle et fouille de bagages, '
-            'visites de navires : régimes juridiques, infractions visées, autorités compétentes et '
-            'modalités pratiques.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00004",
+                  'Contrôles d’identité, visites de véhicules, inspection visuelle et fouille de bagages, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00005",
+                  'visites de navires : régimes juridiques, infractions visées, autorités compétentes et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00006",
+                  'modalités pratiques.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -78,39 +103,88 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.5 – GENERAL ==========================
           _ConditionCard(
-            title:
-                '1.2.5 – Les visites de véhicules, l’inspection visuelle des bagages ou leur fouille, les visites de navires',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00007",
+              '1.2.5 – Les visites de véhicules, l’inspection visuelle des bagages ou leur fouille, les visites de navires',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Le régime spécifique des visites de véhicules, de l’inspection visuelle ou de la '
-                      'fouille des bagages et des visites de navires est prévu par l’',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00008",
+                        'Le régime spécifique des visites de véhicules, de l’inspection visuelle ou de la ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00009",
+                        'fouille des bagages et des visites de navires est prévu par l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-2-2 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                    "f00010",
+                    'article 78-2-2 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
-                  text: '. Cet article distingue quatre volets autonomes :\n',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                    "f00011",
+                    '. Cet article distingue quatre volets autonomes :\n',
+                  ),
                 ),
               ]),
-              const _IntroBullet(text: 'les contrôles d’identité ;'),
-              const _IntroBullet(text: 'les visites de véhicules ;'),
-              const _IntroBullet(
-                text: 'les inspections visuelles et les fouilles de bagages ;',
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00012",
+                  'les contrôles d’identité ;',
+                ),
               ),
-              const _IntroBullet(text: 'les visites de navires.'),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00013",
+                  'les visites de véhicules ;',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00014",
+                  'les inspections visuelles et les fouilles de bagages ;',
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00015",
+                  'les visites de navires.',
+                ),
+              ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Ces opérations peuvent être réalisées indépendamment d’un contrôle préalable de '
-                'l’identité du conducteur, du propriétaire des bagages ou des occupants du navire.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00016",
+                      'Ces opérations peuvent être réalisées indépendamment d’un contrôle préalable de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00017",
+                      'l’identité du conducteur, du propriétaire des bagages ou des occupants du navire.',
+                    ),
               ),
             ],
           ),
@@ -118,27 +192,56 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.5.1 – RÉQUISITIONS PROCUREUR =========
           _ConditionCard(
-            title:
-                '1.2.5.1 – Sur réquisitions écrites du procureur de la République',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00018",
+              '1.2.5.1 – Sur réquisitions écrites du procureur de la République',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: 'Les opérations prévues à l’'),
                 TextSpan(
-                  text: 'article 78-2-2 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                    "f00019",
+                    'Les opérations prévues à l’',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                    "f00020",
+                    'article 78-2-2 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' peuvent être ordonnées sur réquisitions écrites du procureur '
-                      'de la République. Celui-ci détermine les lieux, la durée et la nature des opérations '
-                      'à mener (contrôle d’identité, visites de véhicules, inspection ou fouille de bagages, '
-                      'visites de navires).',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00021",
+                        ' peuvent être ordonnées sur réquisitions écrites du procureur ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00022",
+                        'de la République. Celui-ci détermine les lieux, la durée et la nature des opérations ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00023",
+                        'à mener (contrôle d’identité, visites de véhicules, inspection ou fouille de bagages, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00024",
+                        'visites de navires).',
+                      ),
                 ),
               ]),
             ],
@@ -147,47 +250,103 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ========== 1.2.5.1.1 – INFRACTIONS VISÉES =====================
           _ConditionCard(
-            title: '1.2.5.1.1 – Infractions visées',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00025",
+              '1.2.5.1.1 – Infractions visées',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Les opérations peuvent être décidées aux fins de recherche et de poursuite des '
-                'infractions suivantes :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00026",
+                      'Les opérations peuvent être décidées aux fins de recherche et de poursuite des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00027",
+                      'infractions suivantes :',
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00028",
+                  'actes de terrorisme prévus aux articles 421-1 à 421-6 du code pénal ;',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'actes de terrorisme prévus aux articles 421-1 à 421-6 du code pénal ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00029",
+                      'infractions en matière de prolifération des armes de destruction massive et de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00030",
+                      'leurs vecteurs, visées notamment aux articles L. 1333-9, L. 1333-11, L. 1333-13-3, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00031",
+                      'L. 1333-13-4, L. 1333-13-5, L. 2339-14, L. 2339-15, L. 2341-1, L. 2341-2, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00032",
+                      'L. 2341-4, L. 2342-59 et L. 2342-60 du code de la défense ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'infractions en matière de prolifération des armes de destruction massive et de '
-                    'leurs vecteurs, visées notamment aux articles L. 1333-9, L. 1333-11, L. 1333-13-3, '
-                    'L. 1333-13-4, L. 1333-13-5, L. 2339-14, L. 2339-15, L. 2341-1, L. 2341-2, '
-                    'L. 2341-4, L. 2342-59 et L. 2342-60 du code de la défense ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00033",
+                      'infractions en matière d’armes, notamment l’article 222-54 du code pénal et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00034",
+                      'l’article L. 317-8 du code de la sécurité intérieure ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'infractions en matière d’armes, notamment l’article 222-54 du code pénal et '
-                    'l’article L. 317-8 du code de la sécurité intérieure ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00035",
+                      'infractions en matière d’explosifs prévues par l’article 322-11-1 du code pénal ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00036",
+                      'et l’article L. 2353-4 du code de la défense ;',
+                    ),
               ),
               _BulletPoint(
-                text:
-                    'infractions en matière d’explosifs prévues par l’article 322-11-1 du code pénal '
-                    'et l’article L. 2353-4 du code de la défense ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00037",
+                  'infractions de vol prévues aux articles 311-3 à 311-11 du code pénal ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'infractions de vol prévues aux articles 311-3 à 311-11 du code pénal ;',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00038",
+                  'infractions de recel, visées aux articles 321-1 et 321-2 du code pénal ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'infractions de recel, visées aux articles 321-1 et 321-2 du code pénal ;',
-              ),
-              _BulletPoint(
-                text:
-                    'faits de trafic de stupéfiants prévus aux articles 222-34 à 222-38 du code pénal.',
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00039",
+                  'faits de trafic de stupéfiants prévus aux articles 222-34 à 222-38 du code pénal.',
+                ),
               ),
             ],
           ),
@@ -195,27 +354,67 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ========== 1.2.5.1.2 – QUALITÉ DES PERSONNES ==================
           _ConditionCard(
-            title: '1.2.5.1.2 – Qualité des personnes',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00040",
+              '1.2.5.1.2 – Qualité des personnes',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le législateur distingue les agents pouvant réaliser les différents types de mesures '
-                'prévues par les réquisitions :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00041",
+                      'Le législateur distingue les agents pouvant réaliser les différents types de mesures ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00042",
+                      'prévues par les réquisitions :',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'les contrôles d’identité peuvent être réalisés par les officiers de police judiciaire '
-                    'et, sur leur ordre et sous leur responsabilité, par les agents de police judiciaire '
-                    'et les agents de police judiciaire adjoints mentionnés aux 1°, 1° bis et 1° ter de '
-                    'l’article 21 du code de procédure pénale ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00043",
+                      'les contrôles d’identité peuvent être réalisés par les officiers de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00044",
+                      'et, sur leur ordre et sous leur responsabilité, par les agents de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00045",
+                      'et les agents de police judiciaire adjoints mentionnés aux 1°, 1° bis et 1° ter de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00046",
+                      'l’article 21 du code de procédure pénale ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'les visites de véhicules ou de navires ainsi que les inspections visuelles et fouilles '
-                    'de bagages doivent être effectuées par des officiers de police judiciaire ; la '
-                    'présence effective de l’officier de police judiciaire est donc indispensable.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00047",
+                      'les visites de véhicules ou de navires ainsi que les inspections visuelles et fouilles ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00048",
+                      'de bagages doivent être effectuées par des officiers de police judiciaire ; la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00049",
+                      'présence effective de l’officier de police judiciaire est donc indispensable.',
+                    ),
               ),
             ],
           ),
@@ -223,89 +422,257 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ========== 1.2.5.1.3 – MODALITÉS ==============================
           _ConditionCard(
-            title: '1.2.5.1.3 – Modalités',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00050",
+              '1.2.5.1.3 – Modalités',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Les opérations ne peuvent avoir lieu que sur réquisitions écrites du procureur '
-                      'de la République, qui en fixe les lieux et la durée. Cette durée ne peut excéder ',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00051",
+                        'Les opérations ne peuvent avoir lieu que sur réquisitions écrites du procureur ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00052",
+                        'de la République, qui en fixe les lieux et la durée. Cette durée ne peut excéder ',
+                      ),
                 ),
                 TextSpan(
-                  text: 'vingt-quatre heures consécutives',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                    "f00053",
+                    'vingt-quatre heures consécutives',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      ', renouvelables sur décision expresse et motivée du même magistrat. La Cour de '
-                      'cassation rappelle que plusieurs jours de contrôles ne peuvent être couverts par '
-                      'une réquisition unique (Crim., 13 septembre 2017, n°17-83.986).',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00054",
+                        ', renouvelables sur décision expresse et motivée du même magistrat. La Cour de ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00055",
+                        'cassation rappelle que plusieurs jours de contrôles ne peuvent être couverts par ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00056",
+                        'une réquisition unique (Crim., 13 septembre 2017, n°17-83.986).',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle('La visite des véhicules'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00057",
+                  'La visite des véhicules',
+                ),
+              ),
               _Paragraph(
-                'La visite des véhicules se déroule différemment selon que le véhicule est en circulation '
-                'ou à l’arrêt :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00058",
+                      'La visite des véhicules se déroule différemment selon que le véhicule est en circulation ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00059",
+                      'ou à l’arrêt :',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'véhicule en circulation : il ne peut être immobilisé que le temps strictement '
-                    'nécessaire au déroulement de la visite et en présence du conducteur ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00060",
+                      'véhicule en circulation : il ne peut être immobilisé que le temps strictement ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00061",
+                      'nécessaire au déroulement de la visite et en présence du conducteur ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'véhicule à l’arrêt ou en stationnement : la visite doit avoir lieu en présence du '
-                    'conducteur ou du propriétaire. À défaut, l’officier ou l’agent de police judiciaire '
-                    'requiert une personne extérieure ne relevant pas de son autorité administrative, '
-                    'sauf si la visite comporte des risques graves pour la sécurité des personnes et des biens.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00062",
+                      'véhicule à l’arrêt ou en stationnement : la visite doit avoir lieu en présence du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00063",
+                      'conducteur ou du propriétaire. À défaut, l’officier ou l’agent de police judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00064",
+                      'requiert une personne extérieure ne relevant pas de son autorité administrative, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00065",
+                      'sauf si la visite comporte des risques graves pour la sécurité des personnes et des biens.',
+                    ),
               ),
               _Paragraph(
-                'En cas de découverte d’une infraction, si le conducteur ou le propriétaire du véhicule '
-                'en fait la demande, ou si la visite a eu lieu en leur absence, un procès-verbal est établi. '
-                'Il indique le lieu, les dates et heures de début et de fin des opérations. Un exemplaire est '
-                'remis à l’intéressé, un autre est transmis sans délai au procureur de la République.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00066",
+                      'En cas de découverte d’une infraction, si le conducteur ou le propriétaire du véhicule ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00067",
+                      'en fait la demande, ou si la visite a eu lieu en leur absence, un procès-verbal est établi. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00068",
+                      'Il indique le lieu, les dates et heures de début et de fin des opérations. Un exemplaire est ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00069",
+                      'remis à l’intéressé, un autre est transmis sans délai au procureur de la République.',
+                    ),
               ),
               _Paragraph(
-                'La visite des véhicules spécialement aménagés à usage d’habitation et effectivement '
-                'utilisés comme résidence ne peut être effectuée que selon les règles applicables aux '
-                'perquisitions et visites domiciliaires.',
-              ),
-              SizedBox(height: 10),
-
-              _SubTitle('La visite des navires'),
-              _Paragraph(
-                'Le navire ne peut être immobilisé que le temps strictement nécessaire à la visite, '
-                'sans que celle-ci puisse excéder douze heures. Elle se déroule en présence du '
-                'capitaine ou de son représentant et comprend l’inspection des extérieurs, des cales, '
-                'des soutes et des locaux, à l’exception de ceux aménagés à un usage d’habitation.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00070",
+                      'La visite des véhicules spécialement aménagés à usage d’habitation et effectivement ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00071",
+                      'utilisés comme résidence ne peut être effectuée que selon les règles applicables aux ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00072",
+                      'perquisitions et visites domiciliaires.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                'L’inspection visuelle des bagages ou leur fouille',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00073",
+                  'La visite des navires',
+                ),
               ),
               _Paragraph(
-                'Dans les mêmes conditions de réquisitions et pour les mêmes infractions, les officiers '
-                'de police judiciaire peuvent, assistés le cas échéant des agents de police judiciaire et '
-                'des agents de police judiciaire adjoints (articles 21, 1°, 1° bis et 1° ter du code de '
-                'procédure pénale), procéder à l’inspection visuelle des bagages ou à leur fouille en '
-                'tous lieux accessibles au public.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00074",
+                      'Le navire ne peut être immobilisé que le temps strictement nécessaire à la visite, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00075",
+                      'sans que celle-ci puisse excéder douze heures. Elle se déroule en présence du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00076",
+                      'capitaine ou de son représentant et comprend l’inspection des extérieurs, des cales, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00077",
+                      'des soutes et des locaux, à l’exception de ceux aménagés à un usage d’habitation.',
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                  "f00078",
+                  'L’inspection visuelle des bagages ou leur fouille',
+                ),
               ),
               _Paragraph(
-                'Les propriétaires des bagages ne peuvent être retenus que le temps strictement '
-                'nécessaire au déroulement de l’inspection ou de la fouille, et l’opération se déroule '
-                'en leur présence.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00079",
+                      'Dans les mêmes conditions de réquisitions et pour les mêmes infractions, les officiers ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00080",
+                      'de police judiciaire peuvent, assistés le cas échéant des agents de police judiciaire et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00081",
+                      'des agents de police judiciaire adjoints (articles 21, 1°, 1° bis et 1° ter du code de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00082",
+                      'procédure pénale), procéder à l’inspection visuelle des bagages ou à leur fouille en ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00083",
+                      'tous lieux accessibles au public.',
+                    ),
               ),
               _Paragraph(
-                'En cas de découverte d’une infraction, si le propriétaire le demande, un procès-verbal '
-                'mentionnant le lieu, les dates et heures de début et de fin des opérations est rédigé. '
-                'Un exemplaire est remis à l’intéressé, un autre transmis sans délai au procureur de la '
-                'République.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00084",
+                      'Les propriétaires des bagages ne peuvent être retenus que le temps strictement ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00085",
+                      'nécessaire au déroulement de l’inspection ou de la fouille, et l’opération se déroule ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00086",
+                      'en leur présence.',
+                    ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00087",
+                      'En cas de découverte d’une infraction, si le propriétaire le demande, un procès-verbal ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00088",
+                      'mentionnant le lieu, les dates et heures de début et de fin des opérations est rédigé. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00089",
+                      'Un exemplaire est remis à l’intéressé, un autre transmis sans délai au procureur de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00090",
+                      'République.',
+                    ),
               ),
               SizedBox(height: 10),
 
@@ -313,19 +680,59 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La loi n° 2025-379 du 28 avril 2025 relative au renforcement de la sûreté dans les '
-                        'transports permet désormais aux officiers de police judiciaire et, sous leur contrôle, '
-                        'aux agents de police judiciaire et agents de police judiciaire adjoints mentionnés aux '
-                        '1°, 1° bis, 1° ter et 2° de l’article 21 du code de procédure pénale de procéder, de '
-                        'leur propre initiative, à l’inspection visuelle des bagages et, avec le consentement du '
-                        'propriétaire, à leur fouille :\n',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00091",
+                          'La loi n° 2025-379 du 28 avril 2025 relative au renforcement de la sûreté dans les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00092",
+                          'transports permet désormais aux officiers de police judiciaire et, sous leur contrôle, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00093",
+                          'aux agents de police judiciaire et agents de police judiciaire adjoints mentionnés aux ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00094",
+                          '1°, 1° bis, 1° ter et 2° de l’article 21 du code de procédure pénale de procéder, de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00095",
+                          'leur propre initiative, à l’inspection visuelle des bagages et, avec le consentement du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00096",
+                          'propriétaire, à leur fouille :\n',
+                        ),
                   ),
                   TextSpan(
                     text:
-                        '• sur les lignes et dans les gares des réseaux ferroviaires et guidés (article L. 2241-1-2 du code des transports) ;\n'
-                        '• dans les services de transport public routier de personnes réguliers ou à la demande, '
-                        'y compris dans les aménagements où ces services déposent et prennent en charge les '
-                        'passagers (article L. 3116-1 du code des transports).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00097",
+                          '• sur les lignes et dans les gares des réseaux ferroviaires et guidés (article L. 2241-1-2 du code des transports) ;\n',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00098",
+                          '• dans les services de transport public routier de personnes réguliers ou à la demande, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00099",
+                          'y compris dans les aménagements où ces services déposent et prennent en charge les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                          "f00100",
+                          'passagers (article L. 3116-1 du code des transports).',
+                        ),
                   ),
                 ],
               ),
@@ -335,22 +742,58 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ========== 1.2.5.2 – CRIME OU DÉLIT FLAGRANT ==================
           _ConditionCard(
-            title: '1.2.5.2 – En cas de crime ou de délit flagrant',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00101",
+              '1.2.5.2 – En cas de crime ou de délit flagrant',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Lorsqu’il existe à l’égard du conducteur ou d’un passager une ou plusieurs raisons '
-                'plausibles de soupçonner qu’il a commis, comme auteur ou complice, un crime ou un '
-                'délit flagrant, les officiers de police judiciaire peuvent, assistés le cas échéant des '
-                'agents de police judiciaire et des agents de police judiciaire adjoints (article 21, 1°, '
-                '1° bis et 1° ter du code de procédure pénale), procéder à la visite des véhicules '
-                'circulant ou arrêtés sur la voie publique ou dans des lieux accessibles au public.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00102",
+                      'Lorsqu’il existe à l’égard du conducteur ou d’un passager une ou plusieurs raisons ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00103",
+                      'plausibles de soupçonner qu’il a commis, comme auteur ou complice, un crime ou un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00104",
+                      'délit flagrant, les officiers de police judiciaire peuvent, assistés le cas échéant des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00105",
+                      'agents de police judiciaire et des agents de police judiciaire adjoints (article 21, 1°, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00106",
+                      '1° bis et 1° ter du code de procédure pénale), procéder à la visite des véhicules ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00107",
+                      'circulant ou arrêtés sur la voie publique ou dans des lieux accessibles au public.',
+                    ),
               ),
               _Paragraph(
-                'Les modalités d’organisation du contrôle sont alors les mêmes que celles prévues à '
-                'l’article 78-2-2 du code de procédure pénale.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00108",
+                      'Les modalités d’organisation du contrôle sont alors les mêmes que celles prévues à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00109",
+                      'l’article 78-2-2 du code de procédure pénale.',
+                    ),
               ),
             ],
           ),
@@ -358,41 +801,112 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ========== 1.2.5.3 – PRÉVENIR UNE ATTEINTE GRAVE =============
           _ConditionCard(
-            title:
-                '1.2.5.3 – Pour prévenir une atteinte grave à la sécurité des personnes et des biens',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00110",
+              '1.2.5.3 – Pour prévenir une atteinte grave à la sécurité des personnes et des biens',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Pour prévenir une atteinte grave à la sécurité des personnes et des biens, les officiers '
-                'de police judiciaire et, sur leur ordre et sous leur responsabilité, les agents de police '
-                'judiciaire et agents de police judiciaire adjoints (article 21, 1°, 1° bis et 1° ter du code '
-                'de procédure pénale) peuvent :',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00111",
+                      'Pour prévenir une atteinte grave à la sécurité des personnes et des biens, les officiers ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00112",
+                      'de police judiciaire et, sur leur ordre et sous leur responsabilité, les agents de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00113",
+                      'judiciaire et agents de police judiciaire adjoints (article 21, 1°, 1° bis et 1° ter du code ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00114",
+                      'de procédure pénale) peuvent :',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'procéder aux contrôles d’identité prévus à l’alinéa 8 de l’article 78-2 du code de '
-                    'procédure pénale ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00115",
+                      'procéder aux contrôles d’identité prévus à l’alinéa 8 de l’article 78-2 du code de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00116",
+                      'procédure pénale ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'mettre en œuvre, avec l’accord du conducteur ou, à défaut, sur instructions du '
-                    'procureur de la République communiquées par tout moyen, la visite des véhicules '
-                    'circulant, arrêtés ou stationnant sur la voie publique ou dans des lieux accessibles '
-                    'au public, pour une durée maximale de trente minutes ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00117",
+                      'mettre en œuvre, avec l’accord du conducteur ou, à défaut, sur instructions du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00118",
+                      'procureur de la République communiquées par tout moyen, la visite des véhicules ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00119",
+                      'circulant, arrêtés ou stationnant sur la voie publique ou dans des lieux accessibles ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00120",
+                      'au public, pour une durée maximale de trente minutes ;',
+                    ),
               ),
               _BulletPoint(
                 text:
-                    'procéder à l’inspection visuelle ou à la fouille des bagages, en présence du '
-                    'propriétaire, pour une durée qui ne peut excéder trente minutes.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00121",
+                      'procéder à l’inspection visuelle ou à la fouille des bagages, en présence du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00122",
+                      'propriétaire, pour une durée qui ne peut excéder trente minutes.',
+                    ),
               ),
               _Paragraph(
-                'En cas de découverte d’une infraction, si le conducteur, le propriétaire du véhicule ou '
-                'du bagage le demande, ou si la visite a eu lieu hors leur présence, un procès-verbal '
-                'mentionnant le lieu et les dates et heures de début et de fin des opérations est établi. '
-                'Un exemplaire est remis à l’intéressé, un autre transmis sans délai au procureur de la '
-                'République.',
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00123",
+                      'En cas de découverte d’une infraction, si le conducteur, le propriétaire du véhicule ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00124",
+                      'du bagage le demande, ou si la visite a eu lieu hors leur présence, un procès-verbal ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00125",
+                      'mentionnant le lieu et les dates et heures de début et de fin des opérations est établi. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00126",
+                      'Un exemplaire est remis à l’intéressé, un autre transmis sans délai au procureur de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00127",
+                      'République.',
+                    ),
               ),
             ],
           ),
@@ -400,45 +914,106 @@ class PaConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
 
           // ========== 1.2.5.4 – MANIFESTATION ET PORT D’ARME ============
           _ConditionCard(
-            title:
-                '1.2.5.4 – Recherche des auteurs d’une participation à une manifestation en étant porteur d’une arme',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+              "f00128",
+              '1.2.5.4 – Recherche des auteurs d’une participation à une manifestation en étant porteur d’une arme',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: 'En application de l’'),
                 TextSpan(
-                  text: 'article 78-2-5 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                    "f00129",
+                    'En application de l’',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                    "f00130",
+                    'article 78-2-5 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ', sur réquisitions écrites du procureur de la République, les officiers de police '
-                      'judiciaire et, sous leur contrôle, les agents de police judiciaire et agents de police '
-                      'judiciaire adjoints peuvent, sur les lieux d’une manifestation sur la voie publique '
-                      'et à ses abords immédiats, procéder :',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00131",
+                        ', sur réquisitions écrites du procureur de la République, les officiers de police ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00132",
+                        'judiciaire et, sous leur contrôle, les agents de police judiciaire et agents de police ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00133",
+                        'judiciaire adjoints peuvent, sur les lieux d’une manifestation sur la voie publique ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                        "f00134",
+                        'et à ses abords immédiats, procéder :',
+                      ),
                 ),
               ]),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'à l’inspection visuelle des bagages des personnes et à leur fouille, dans les '
-                    'conditions prévues au paragraphe III de l’article 78-2-2 ;',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00135",
+                      'à l’inspection visuelle des bagages des personnes et à leur fouille, dans les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00136",
+                      'conditions prévues au paragraphe III de l’article 78-2-2 ;',
+                    ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'à la visite des véhicules circulant, arrêtés ou stationnant sur la voie publique ou '
-                    'dans des lieux accessibles au public, dans les conditions prévues au paragraphe II '
-                    'du même article.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00137",
+                      'à la visite des véhicules circulant, arrêtés ou stationnant sur la voie publique ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00138",
+                      'dans des lieux accessibles au public, dans les conditions prévues au paragraphe II ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00139",
+                      'du même article.',
+                    ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Dans ce dispositif, les contrôles d’identité sont exclus : seules les mesures portant sur '
-                'les bagages et les véhicules sont autorisées afin de rechercher les auteurs d’une '
-                'participation à une manifestation en étant porteur d’une arme.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00140",
+                      'Dans ce dispositif, les contrôles d’identité sont exclus : seules les mesures portant sur ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00141",
+                      'les bagages et les véhicules sont autorisées afin de rechercher les auteurs d’une ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart",
+                      "f00142",
+                      'participation à une manifestation en étant porteur d’une arme.',
+                    ),
               ),
             ],
           ),
@@ -695,9 +1270,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

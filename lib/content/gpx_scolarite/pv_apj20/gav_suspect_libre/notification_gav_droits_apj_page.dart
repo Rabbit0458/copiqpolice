@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class NotificationGavDroitsApjPage extends StatelessWidget {
   const NotificationGavDroitsApjPage({super.key});
@@ -60,10 +61,18 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Procès-verbal G.A.V.",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+            "f00002",
+            "Procès-verbal G.A.V.",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de PV : notification du placement en garde à vue\net des droits par un A.P.J.",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00003",
+              "Canevas de PV : notification du placement en garde à vue\net des droits par un A.P.J.",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,14 +103,26 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // Intro
           _ConditionCard(
-            title: "Objectif de la page",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00004",
+              "Objectif de la page",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette page te donne un canevas clair et opérationnel pour rédiger un procès-verbal de notification "
-                "du placement en garde à vue et des droits, lorsqu’il est réalisé par un A.P.J. sous le contrôle d’un O.P.J.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00005",
+                      "Cette page te donne un canevas clair et opérationnel pour rédiger un procès-verbal de notification ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00006",
+                      "du placement en garde à vue et des droits, lorsqu’il est réalisé par un A.P.J. sous le contrôle d’un O.P.J.",
+                    ),
               ),
             ],
           ),
@@ -106,31 +131,48 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (exigence)
           _ConditionCard(
-            title: "I — Élément légal (visa des textes)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00007",
+              "I — Élément légal (visa des textes)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Visa obligatoire des articles "),
                 TextSpan(
-                  text: "62-2 à 63-4-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00008",
+                    "Visa obligatoire des articles ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " relatifs à la décision de placement en garde à vue et aux droits de la personne.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00009",
+                    "62-2 à 63-4-3 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00010",
+                    " relatifs à la décision de placement en garde à vue et aux droits de la personne.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le PV doit rappeler expressément que la mesure a été décidée par un O.P.J. (même si l’A.P.J. notifie).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00011",
+                      "Le PV doit rappeler expressément que la mesure a été décidée par un O.P.J. (même si l’A.P.J. notifie).",
+                    ),
                   ),
                 ],
               ),
@@ -141,135 +183,253 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // Steps (structure PV)
           _ConditionCard(
-            title: "II — Structure du procès-verbal (canevas)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00012",
+              "II — Structure du procès-verbal (canevas)",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Voici les rubriques attendues dans un PV de notification du placement en garde à vue et des droits.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00013",
+                  "Voici les rubriques attendues dans un PV de notification du placement en garde à vue et des droits.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Lieu de rédaction"),
-              _Paragraph(
-                "Indiquer précisément le lieu où le procès-verbal est établi.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00014",
+                  "1) Lieu de rédaction",
+                ),
               ),
-
-              SizedBox(height: 10),
-
-              _SubTitle("2) Cadre juridique"),
               _Paragraph(
-                "Situer l’action dans un cadre juridique clair : enquête de flagrance ou enquête préliminaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00015",
+                  "Indiquer précisément le lieu où le procès-verbal est établi.",
+                ),
               ),
 
               SizedBox(height: 10),
 
               _SubTitle(
-                "3) Visa des articles du C.P.P. relatifs à la G.A.V.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00016",
+                  "2) Cadre juridique",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00017",
+                  "Situer l’action dans un cadre juridique clair : enquête de flagrance ou enquête préliminaire.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00018",
+                  "3) Visa des articles du C.P.P. relatifs à la G.A.V.",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Viser les textes applicables, notamment ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00019",
+                    "Viser les textes applicables, notamment ",
+                  ),
                 ),
                 TextSpan(
-                  text: "62-2 à 63-4-3 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00020",
+                    "62-2 à 63-4-3 C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 10),
 
-              _SubTitle("4) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00021",
+                  "4) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Rappeler clairement que la garde à vue a été décidée par un O.P.J. (instructions reçues / décision).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00022",
+                  "Rappeler clairement que la garde à vue a été décidée par un O.P.J. (instructions reçues / décision).",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("5) Identité (petite identité)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00023",
+                  "5) Identité (petite identité)",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les éléments d’identité utiles de la personne faisant l’objet de la mesure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00024",
+                  "Mentionner les éléments d’identité utiles de la personne faisant l’objet de la mesure.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("6) Visa du ou des objectifs"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00025",
+                  "6) Visa du ou des objectifs",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La mesure doit être l’unique moyen de parvenir à au moins un objectif de l’",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00026",
+                    "La mesure doit être l’unique moyen de parvenir à au moins un objectif de l’",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 62-2 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00027",
+                    "article 62-2 C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Permettre l’exécution des investigations impliquant la présence/participation de la personne.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00028",
+                  "Permettre l’exécution des investigations impliquant la présence/participation de la personne.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garantir la présentation devant le procureur de la République (suite à l’enquête).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00029",
+                  "Garantir la présentation devant le procureur de la République (suite à l’enquête).",
+                ),
               ),
               _BulletPoint(
-                text: "Empêcher la modification des preuves/indices matériels.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00030",
+                  "Empêcher la modification des preuves/indices matériels.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Empêcher des pressions sur témoins/victimes ainsi que leurs familles/proches.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00031",
+                  "Empêcher des pressions sur témoins/victimes ainsi que leurs familles/proches.",
+                ),
               ),
               _BulletPoint(
-                text: "Empêcher la concertation avec coauteurs/complices.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00032",
+                  "Empêcher la concertation avec coauteurs/complices.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Garantir la mise en œuvre de mesures destinées à faire cesser l’infraction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00033",
+                  "Garantir la mise en œuvre de mesures destinées à faire cesser l’infraction.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("7) Information (dans une langue comprise)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00034",
+                  "7) Information (dans une langue comprise)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Conformément à "),
                 TextSpan(
-                  text: "l’article 63-1 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00035",
+                    "Conformément à ",
                   ),
                 ),
-                TextSpan(text: ", informer la personne :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00036",
+                    "l’article 63-1 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00037",
+                    ", informer la personne :",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "De la qualification juridique des faits, de la date et du lieu présumés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00038",
+                  "De la qualification juridique des faits, de la date et du lieu présumés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "De son placement en garde à vue, sur décision de l’O.P.J.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00039",
+                  "De son placement en garde à vue, sur décision de l’O.P.J.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "De la durée de la mesure et des éventuelles prolongations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00040",
+                  "De la durée de la mesure et des éventuelles prolongations.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si l’infraction est punie d’une peine d’emprisonnement inférieure à un an, la mention relative à la prolongation ne doit pas apparaître.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00041",
+                      "Si l’infraction est punie d’une peine d’emprisonnement inférieure à un an, la mention relative à la prolongation ne doit pas apparaître.",
+                    ),
                   ),
                 ],
               ),
@@ -280,50 +440,97 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // Rights
           _ConditionCard(
-            title: "III — Notification des droits",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00042",
+              "III — Notification des droits",
+            ),
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Informer la personne des droits visés aux articles ",
-                ),
-                TextSpan(
-                  text: "63-1 à 63-4-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00043",
+                    "Informer la personne des droits visés aux articles ",
                   ),
                 ),
-                TextSpan(text: ", et le cas échéant : "),
                 TextSpan(
-                  text: "706-112-1 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00044",
+                    "63-1 à 63-4-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00045",
+                    ", et le cas échéant : ",
                   ),
                 ),
-                TextSpan(text: " (mesure de protection juridique)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00046",
+                    "706-112-1 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00047",
+                    " (mesure de protection juridique).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("Droits à notifier (liste pédagogique)"),
-              _BulletPoint(
-                text:
-                    "Lors des auditions : faire des déclarations, répondre aux questions, ou se taire (droit au silence).",
-              ),
-              _BulletPoint(text: "Être assisté par un interprète."),
-              _BulletPoint(
-                text:
-                    "Consulter certaines pièces de procédure (PV de notification, certificat médical, PV d’audition(s)).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00048",
+                  "Droits à notifier (liste pédagogique)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présenter des observations au magistrat (en cas de prolongation) ou via PV d’audition communiqué avant décision.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00049",
+                  "Lors des auditions : faire des déclarations, répondre aux questions, ou se taire (droit au silence).",
+                ),
               ),
               _BulletPoint(
-                text: "Se faire remettre un document énonçant ses droits.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00050",
+                  "Être assisté par un interprète.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00051",
+                  "Consulter certaines pièces de procédure (PV de notification, certificat médical, PV d’audition(s)).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00052",
+                  "Présenter des observations au magistrat (en cas de prolongation) ou via PV d’audition communiqué avant décision.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00053",
+                  "Se faire remettre un document énonçant ses droits.",
+                ),
               ),
             ],
           ),
@@ -332,40 +539,74 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // Protected adult specifics
           _ConditionCard(
-            title: "IV — Majeur protégé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00054",
+              "IV — Majeur protégé",
+            ),
             cardColor: cardProtected,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Si la personne fait l’objet d’une mesure de protection juridique (tutelle, curatelle, sauvegarde de justice), "
-                "elle doit être informée des conséquences pratiques liées à cette situation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00055",
+                      "Si la personne fait l’objet d’une mesure de protection juridique (tutelle, curatelle, sauvegarde de justice), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00056",
+                      "elle doit être informée des conséquences pratiques liées à cette situation.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Référence : "),
                 TextSpan(
-                  text: "article 706-112-1 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00057",
+                    "Référence : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                    "f00058",
+                    "article 706-112-1 C.P.P.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
-              _SubTitle("À notifier en plus"),
-              _BulletPoint(
-                text:
-                    "Le tuteur/curateur/mandataire spécial sera également avisé de la mesure.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00059",
+                  "À notifier en plus",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Il pourra désigner un avocat (choisi ou commis d’office) si la personne ne l’a pas demandé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00060",
+                  "Le tuteur/curateur/mandataire spécial sera également avisé de la mesure.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Il pourra solliciter un examen médical si la personne ne l’a pas demandé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00061",
+                  "Il pourra désigner un avocat (choisi ou commis d’office) si la personne ne l’a pas demandé.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00062",
+                  "Il pourra solliciter un examen médical si la personne ne l’a pas demandé.",
+                ),
               ),
             ],
           ),
@@ -374,25 +615,51 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // Requests collection
           _ConditionCard(
-            title: "V — Recueil des demandes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00063",
+              "V — Recueil des demandes",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Acter clairement les demandes formulées par la personne gardée à vue.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00064",
+                  "Acter clairement les demandes formulées par la personne gardée à vue.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Avis à la famille / à une personne désignée / à l’employeur / aux autorités consulaires.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00065",
+                  "Avis à la famille / à une personne désignée / à l’employeur / aux autorités consulaires.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Droit de communiquer avec un tiers (famille, personne désignée, employeur, autorités consulaires, tuteur/curateur/mandataire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00066",
+                  "Droit de communiquer avec un tiers (famille, personne désignée, employeur, autorités consulaires, tuteur/curateur/mandataire).",
+                ),
               ),
-              _BulletPoint(text: "Droit d’être examiné par un médecin."),
-              _BulletPoint(text: "Droit d’être assisté par un avocat."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00067",
+                  "Droit d’être examiné par un médecin.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00068",
+                  "Droit d’être assisté par un avocat.",
+                ),
+              ),
             ],
           ),
 
@@ -400,25 +667,57 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // Closing / mentions
           _ConditionCard(
-            title: "VI — Clôture & mentions indispensables",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00069",
+              "VI — Clôture & mentions indispensables",
+            ),
             cardColor: cardClosure,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Énonciation terminale (clôture)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00070",
+                  "Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Terminer le PV par une clôture claire : date/heure, lecture faite, signatures (ou refus de signer mentionné).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00071",
+                  "Terminer le PV par une clôture claire : date/heure, lecture faite, signatures (ou refus de signer mentionné).",
+                ),
               ),
               SizedBox(height: 10),
               _SubTitle("Mention"),
               _Paragraph(
-                "La décision de placement en garde à vue figure, en procédure, avant le PV de notification. "
-                "Le procureur de la République a été informé de cette mesure par l’O.P.J.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00072",
+                      "La décision de placement en garde à vue figure, en procédure, avant le PV de notification. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                      "f00073",
+                      "Le procureur de la République a été informé de cette mesure par l’O.P.J.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00074",
+                  "Avis O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "Faire apparaître l’avis à l’O.P.J. et la décision de placement en garde à vue dans la procédure (PV ou mention dans le PV d’interpellation).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00075",
+                  "Faire apparaître l’avis à l’O.P.J. et la décision de placement en garde à vue dans la procédure (PV ou mention dans le PV d’interpellation).",
+                ),
               ),
             ],
           ),
@@ -427,13 +726,21 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
 
           // Canva images
           _ConditionCard(
-            title: "Supports (CANVA)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+              "f00076",
+              "Supports (CANVA)",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Affichages des supports visuels du canevas (zoomables).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+                  "f00077",
+                  "Affichages des supports visuels du canevas (zoomables).",
+                ),
               ),
               SizedBox(height: 12),
               ZoomableAssetImage(
@@ -701,9 +1008,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -750,7 +1055,11 @@ class ZoomableAssetImage extends StatelessWidget {
       onTap: () => _openViewer(context, tag),
       child: Semantics(
         button: true,
-        label: 'Ouvrir l’image en plein écran',
+        label: ScolariteText.value(
+          "lib/content/gpx_scolarite/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart",
+          "f00078",
+          'Ouvrir l’image en plein écran',
+        ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(borderRadius),
           child: Container(

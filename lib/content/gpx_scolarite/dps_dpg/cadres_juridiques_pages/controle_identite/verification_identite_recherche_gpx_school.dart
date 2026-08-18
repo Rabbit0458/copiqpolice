@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
   const VerificationIdentiteRechercheGpxSchool({super.key});
@@ -35,10 +36,18 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Recherche de l’identité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+            "f00002",
+            'Recherche de l’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -52,7 +61,11 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE PRINCIPAL ===========================
           Text(
-            '3.2 — La recherche de l’identité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+              "f00003",
+              '3.2 — La recherche de l’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,9 +74,21 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Moyens laissés à la personne contrôlée pour établir son identité, opérations de '
-            'vérification possibles par l’officier de police judiciaire et recours aux moyens '
-            'd’identité judiciaire en dernier ressort.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00004",
+                  'Moyens laissés à la personne contrôlée pour établir son identité, opérations de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00005",
+                  'vérification possibles par l’officier de police judiciaire et recours aux moyens ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00006",
+                  'd’identité judiciaire en dernier ressort.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -75,59 +100,167 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
 
           // ===================== CONTENU PRINCIPAL =========================
           _ConditionCard(
-            title: '3.2 — La recherche de l’identité',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+              "f00007",
+              '3.2 — La recherche de l’identité',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               // ---------- 3.2.1 Fourniture par tout moyen -------------------
               _SubTitle(
-                'La fourniture, par tout moyen, des éléments permettant d’établir son identité',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00008",
+                  'La fourniture, par tout moyen, des éléments permettant d’établir son identité',
+                ),
               ),
               _Paragraph(
-                'La personne contrôlée est libre de prouver son identité aussi bien par des moyens '
-                'écrits (documents d’identité) que par des moyens oraux (témoignages). Toutefois, '
-                'ces moyens doivent être suffisamment probants.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00009",
+                      'La personne contrôlée est libre de prouver son identité aussi bien par des moyens ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00010",
+                      'écrits (documents d’identité) que par des moyens oraux (témoignages). Toutefois, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00011",
+                      'ces moyens doivent être suffisamment probants.',
+                    ),
               ),
               _Paragraph(
-                'C’est notamment le cas des documents écrits comportant une photographie '
-                '(permis de conduire, permis de chasser, passeport, carte d’étudiant, etc.) ou de '
-                'toute pièce, même privée, dont l’authenticité est incontestable. Tout autre document '
-                'dépourvu de photographie, tel qu’un certificat d’immatriculation de véhicule, ne '
-                'constitue qu’un commencement de preuve.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00012",
+                      'C’est notamment le cas des documents écrits comportant une photographie ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00013",
+                      '(permis de conduire, permis de chasser, passeport, carte d’étudiant, etc.) ou de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00014",
+                      'toute pièce, même privée, dont l’authenticité est incontestable. Tout autre document ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00015",
+                      'dépourvu de photographie, tel qu’un certificat d’immatriculation de véhicule, ne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00016",
+                      'constitue qu’un commencement de preuve.',
+                    ),
               ),
 
               SizedBox(height: 10),
 
               // ---------- 3.2.2 Opérations de vérification -----------------
               _SubTitle(
-                'Mise en œuvre de certaines opérations de vérification (hors empreintes et photographies)',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00017",
+                  'Mise en œuvre de certaines opérations de vérification (hors empreintes et photographies)',
+                ),
               ),
               _Paragraph(
-                'Les opérations de vérification se résument le plus souvent à accompagner la '
-                'personne retenue jusqu’à son domicile pour qu’elle puisse y prendre un document '
-                'justificatif, à s’assurer par téléphone de son identité auprès des services de police '
-                'ou de gendarmerie compétents lorsqu’elle est domiciliée hors de la compétence '
-                'territoriale de l’officier de police judiciaire, ou encore à vérifier qu’elle n’est pas '
-                'recherchée par la justice.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00018",
+                      'Les opérations de vérification se résument le plus souvent à accompagner la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00019",
+                      'personne retenue jusqu’à son domicile pour qu’elle puisse y prendre un document ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00020",
+                      'justificatif, à s’assurer par téléphone de son identité auprès des services de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00021",
+                      'ou de gendarmerie compétents lorsqu’elle est domiciliée hors de la compétence ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00022",
+                      'territoriale de l’officier de police judiciaire, ou encore à vérifier qu’elle n’est pas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00023",
+                      'recherchée par la justice.',
+                    ),
               ),
               _Paragraph(
-                'Enfin, après avoir constaté sa totale impossibilité d’obtenir l’identité de la personne, '
-                'l’officier de police judiciaire pourra recourir à la vérification technique par les moyens '
-                'de l’identité judiciaire.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00024",
+                      'Enfin, après avoir constaté sa totale impossibilité d’obtenir l’identité de la personne, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00025",
+                      'l’officier de police judiciaire pourra recourir à la vérification technique par les moyens ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00026",
+                      'de l’identité judiciaire.',
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: 'Jurisprudence',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00027",
+                  'Jurisprudence',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Il se déduit des articles 76, 78-2 et 78-3 du code de procédure pénale et de l’article R. 434-16 '
-                        'du code de la sécurité intérieure que la palpation de sécurité opérée sur une personne faisant '
-                        'l’objet d’un contrôle d’identité n’autorise pas l’officier de police judiciaire à procéder, sans '
-                        'l’assentiment de l’intéressé, à la fouille de sa sacoche, dès lors que cette palpation n’a pas '
-                        'préalablement révélé l’existence d’un indice de la commission d’une infraction flagrante '
-                        '(Cass. crim. n° 14-87.370 du 23 mars 2016).',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                          "f00028",
+                          'Il se déduit des articles 76, 78-2 et 78-3 du code de procédure pénale et de l’article R. 434-16 ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                          "f00029",
+                          'du code de la sécurité intérieure que la palpation de sécurité opérée sur une personne faisant ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                          "f00030",
+                          'l’objet d’un contrôle d’identité n’autorise pas l’officier de police judiciaire à procéder, sans ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                          "f00031",
+                          'l’assentiment de l’intéressé, à la fouille de sa sacoche, dès lors que cette palpation n’a pas ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                          "f00032",
+                          'préalablement révélé l’existence d’un indice de la commission d’une infraction flagrante ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                          "f00033",
+                          '(Cass. crim. n° 14-87.370 du 23 mars 2016).',
+                        ),
                   ),
                 ],
               ),
@@ -135,27 +268,60 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
               SizedBox(height: 12),
 
               // ---------- 3.2.3 Prise d’empreintes / photographies --------
-              _SubTitle('La prise d’empreintes ou de photographies'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00034",
+                  'La prise d’empreintes ou de photographies',
+                ),
+              ),
               _Paragraph(
-                'Cette procédure ne peut être utilisée qu’à deux conditions :',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00035",
+                  'Cette procédure ne peut être utilisée qu’à deux conditions :',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'La personne interpellée maintient son refus de justifier de son identité ou fournit des éléments '
-                    'd’identité manifestement inexacts.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00036",
+                      'La personne interpellée maintient son refus de justifier de son identité ou fournit des éléments ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00037",
+                      'd’identité manifestement inexacts.',
+                    ),
               ),
               _BulletPoint(
-                text:
-                    'La vérification technique est l’unique moyen d’établir l’identité de la personne.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00038",
+                  'La vérification technique est l’unique moyen d’établir l’identité de la personne.',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Dans ce cadre, l’officier de police judiciaire doit solliciter l’autorisation d’un magistrat avant '
-                      'la réalisation technique permettant d’établir l’identité (',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00039",
+                        'Dans ce cadre, l’officier de police judiciaire doit solliciter l’autorisation d’un magistrat avant ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00040",
+                        'la réalisation technique permettant d’établir l’identité (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-3, alinéa 4, du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                    "f00041",
+                    'article 78-3, alinéa 4, du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Color(0xFFD32F2F),
@@ -163,19 +329,43 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      '). Cette autorisation est donnée verbalement ou par écrit soit par le procureur de la '
-                      'République (notamment en matière de police administrative), soit par le juge d’instruction '
-                      '(uniquement dans le domaine de la police judiciaire).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00042",
+                        '). Cette autorisation est donnée verbalement ou par écrit soit par le procureur de la ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00043",
+                        'République (notamment en matière de police administrative), soit par le juge d’instruction ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00044",
+                        '(uniquement dans le domaine de la police judiciaire).',
+                      ),
                 ),
               ]),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'L’officier de police judiciaire doit enfin mentionner et spécialement motiver dans le procès-verbal '
-                      'la vérification technique (prise d’empreintes digitales ou de photographies, ou les deux) conformément à l’',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00045",
+                        'L’officier de police judiciaire doit enfin mentionner et spécialement motiver dans le procès-verbal ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00046",
+                        'la vérification technique (prise d’empreintes digitales ou de photographies, ou les deux) conformément à l’',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-3, alinéa 5, du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                    "f00047",
+                    'article 78-3, alinéa 5, du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Color(0xFFD32F2F),
@@ -188,17 +378,37 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
 
               // ---------- 3.2.4 Délit de refus ----------------------------
               _SubTitle(
-                'Le délit de refus de se prêter aux mesures d’identité judiciaire',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                  "f00048",
+                  'Le délit de refus de se prêter aux mesures d’identité judiciaire',
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'La personne qui refuse de se prêter aux prises d’empreintes digitales ou de photographies, '
-                      'autorisées par le procureur de la République ou le juge d’instruction, commet un délit passible '
-                      'd’une peine d’emprisonnement de 3 mois et d’une amende de 3 750 euros (',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00049",
+                        'La personne qui refuse de se prêter aux prises d’empreintes digitales ou de photographies, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00050",
+                        'autorisées par le procureur de la République ou le juge d’instruction, commet un délit passible ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                        "f00051",
+                        'd’une peine d’emprisonnement de 3 mois et d’une amende de 3 750 euros (',
+                      ),
                 ),
                 TextSpan(
-                  text: 'article 78-5 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                    "f00052",
+                    'article 78-5 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: Color(0xFFD32F2F),
@@ -207,9 +417,21 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                 TextSpan(text: ').'),
               ]),
               _Paragraph(
-                'L’officier de police judiciaire peut, devant un refus persistant au terme du délai de rétention, '
-                'constater le flagrant délit et placer son auteur en garde à vue dans le cadre de l’enquête diligentée '
-                'pour cette infraction, notamment pour tenter d’établir, avec d’autres moyens, sa véritable identité.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00053",
+                      'L’officier de police judiciaire peut, devant un refus persistant au terme du délai de rétention, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00054",
+                      'constater le flagrant délit et placer son auteur en garde à vue dans le cadre de l’enquête diligentée ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart",
+                      "f00055",
+                      'pour cette infraction, notamment pour tenter d’établir, avec d’autres moyens, sa véritable identité.',
+                    ),
               ),
             ],
           ),

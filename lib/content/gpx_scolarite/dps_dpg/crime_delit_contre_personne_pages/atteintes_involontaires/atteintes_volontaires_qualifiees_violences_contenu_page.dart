@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
   const AtteintesVolontairesQualifieesViolencesPage({super.key});
@@ -59,7 +60,11 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Violences",
@@ -77,7 +82,11 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les atteintes volontaires à l’intégrité de la personne\nqualifiées violences",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+              "f00002",
+              "Les atteintes volontaires à l’intégrité de la personne\nqualifiées violences",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -89,14 +98,26 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+              "f00003",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les atteintes volontaires à l’intégrité physique et/ou psychique de la personne sont des violences "
-                "et constituent une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00004",
+                      "Les atteintes volontaires à l’intégrité physique et/ou psychique de la personne sont des violences ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00005",
+                      "et constituent une infraction.",
+                    ),
               ),
             ],
           ),
@@ -105,63 +126,84 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles R. 624-1 et R. 625-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00007",
+                    "Articles R. 624-1 et R. 625-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définissent et répriment les violences contraventionnelles.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00008",
+                    " : définissent et répriment les violences contraventionnelles.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-11 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00009",
+                    "Article 222-11 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime les violences délictuelles.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime les violences délictuelles.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00011",
+                    "Article 222-9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les violences ayant entraîné une mutilation ou une infirmité permanente.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00012",
+                    " : définit et réprime les violences ayant entraîné une mutilation ou une infirmité permanente.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00013",
+                    "Article 222-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les violences ayant entraîné la mort sans intention de la donner.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00014",
+                    " : définit et réprime les violences ayant entraîné la mort sans intention de la donner.",
+                  ),
                 ),
               ]),
             ],
@@ -171,45 +213,106 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+              "f00015",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte positif"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00016",
+                  "A) Un acte positif",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent un comportement actif : la simple abstention ne constitue pas une violence "
-                "(dans ce cas, d’autres qualifications peuvent être retenues : privation de soins, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00017",
+                      "Les violences supposent un comportement actif : la simple abstention ne constitue pas une violence ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00018",
+                      "(dans ce cas, d’autres qualifications peuvent être retenues : privation de soins, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Un contact physique (direct ou indirect)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00019",
+                  "1) Un contact physique (direct ou indirect)",
+                ),
+              ),
               _Paragraph(
-                "Sont visés tous les comportements impliquant un contact physique entre l’auteur et la victime : "
-                "coups de poing, gifles, morsures, etc.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00020",
+                      "Sont visés tous les comportements impliquant un contact physique entre l’auteur et la victime : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00021",
+                      "coups de poing, gifles, morsures, etc.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le contact peut ne pas être direct : le moyen importe peu (arme, objet quelconque, animal excité par l’auteur, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00022",
+                  "Le contact peut ne pas être direct : le moyen importe peu (arme, objet quelconque, animal excité par l’auteur, etc.).",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Une atteinte psychique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00023",
+                  "2) Une atteinte psychique",
+                ),
+              ),
               _Paragraph(
-                "Les violences volontaires peuvent être caractérisées par une agression psychique : "
-                "des agissements impressionnant fortement la victime, causant un choc émotif ou un trouble psychologique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00024",
+                      "Les violences volontaires peuvent être caractérisées par une agression psychique : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00025",
+                      "des agissements impressionnant fortement la victime, causant un choc émotif ou un trouble psychologique.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00026",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le délit est constitué même sans atteinte physique, par tout acte de nature à impressionner vivement la victime et à lui causer un choc émotif : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00027",
+                      "Le délit est constitué même sans atteinte physique, par tout acte de nature à impressionner vivement la victime et à lui causer un choc émotif : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 18 mars 2008 (n°07-86.075)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00028",
+                      "Cass. crim., 18 mars 2008 (n°07-86.075)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -221,16 +324,25 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00029",
+                    "Article 222-14-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : codifie la jurisprudence et rappelle que les violences, au sens des articles 222-7 et suivants, "
-                      "sont constituées quelle que soit leur nature, y compris psychologique.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                        "f00030",
+                        " : codifie la jurisprudence et rappelle que les violences, au sens des articles 222-7 et suivants, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                        "f00031",
+                        "sont constituées quelle que soit leur nature, y compris psychologique.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -238,11 +350,18 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
                 title: "Exemple",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Individu qui descend de sa voiture avec une barre de fer et frappe l’arrière du véhicule de la victime : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00032",
+                      "Individu qui descend de sa voiture avec une barre de fer et frappe l’arrière du véhicule de la victime : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 18 mars 2008",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00033",
+                      "Cass. crim., 18 mars 2008",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -254,28 +373,77 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Sur la personne d’autrui"),
-              _BulletPoint(text: "Une personne humaine."),
-              _BulletPoint(text: "Une personne vivante."),
-              _BulletPoint(text: "Une personne distincte de l’auteur."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00034",
+                  "B) Sur la personne d’autrui",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00035",
+                  "Une personne humaine.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00036",
+                  "Une personne vivante.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00037",
+                  "Une personne distincte de l’auteur.",
+                ),
+              ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un résultat dommageable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00038",
+                  "C) Un résultat dommageable",
+                ),
+              ),
               _Paragraph(
-                "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. "
-                "La réalité du dommage doit être établie (souvent par certificat médical).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00039",
+                      "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00040",
+                      "La réalité du dommage doit être établie (souvent par certificat médical).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00041",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Brimades ayant entraîné un état anxio-dépressif grave avec ITT > 8 jours : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00042",
+                      "Brimades ayant entraîné un état anxio-dépressif grave avec ITT > 8 jours : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 4 mars 2003",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00043",
+                      "Cass. crim., 4 mars 2003",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -291,30 +459,66 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+              "f00044",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conscience de commettre un acte affectant l’intégrité d’autrui",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00045",
+                  "Conscience de commettre un acte affectant l’intégrité d’autrui",
+                ),
               ),
               _Paragraph(
-                "Le délit est consommé lorsque les violences sont intentionnelles : "
-                "l’auteur agit avec la connaissance qu’il en résultera un préjudice pour la victime. "
-                "Il n’est pas nécessaire qu’il ait voulu précisément le dommage constaté.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00046",
+                      "Le délit est consommé lorsque les violences sont intentionnelles : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00047",
+                      "l’auteur agit avec la connaissance qu’il en résultera un préjudice pour la victime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00048",
+                      "Il n’est pas nécessaire qu’il ait voulu précisément le dommage constaté.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00049",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’infraction est constituée dès qu’il existe un acte volontaire de violence dirigée contre une ou plusieurs personnes, "
-                        "quel que soit le mobile, même si l’auteur n’a pas voulu le dommage résultant : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                          "f00050",
+                          "L’infraction est constituée dès qu’il existe un acte volontaire de violence dirigée contre une ou plusieurs personnes, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                          "f00051",
+                          "quel que soit le mobile, même si l’auteur n’a pas voulu le dommage résultant : ",
+                        ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 3 octobre 1991",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00052",
+                      "Cass. crim., 3 octobre 1991",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -330,109 +534,218 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+              "f00053",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Violences (ITT ≤ 8 jours ou aucune ITT)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00054",
+                  "A) Violences (ITT ≤ 8 jours ou aucune ITT)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00055",
+                    "Article 222-13 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00056",
+                    " : prévoit trois degrés d’aggravation.",
                   ),
                 ),
-                TextSpan(text: " : prévoit trois degrés d’aggravation."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Exemples de circonstances aggravantes (liste non exhaustive ici) :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00057",
+                  "Exemples de circonstances aggravantes (liste non exhaustive ici) :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Victime mineure de 15 ans."),
               _BulletPoint(
-                text:
-                    "Victime vulnérable (âge, maladie, infirmité, déficience physique/psychique, grossesse) apparente ou connue.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00058",
+                  "Victime mineure de 15 ans.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Personne dépositaire de l’autorité publique / mission de service public, dans l’exercice ou du fait des fonctions (qualité apparente ou connue).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00059",
+                  "Victime vulnérable (âge, maladie, infirmité, déficience physique/psychique, grossesse) apparente ou connue.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Professionnels visés (ex. gardiennage/surveillance) au sens de l’article L. 271-1 du CSI.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00060",
+                  "Personne dépositaire de l’autorité publique / mission de service public, dans l’exercice ou du fait des fonctions (qualité apparente ou connue).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Activité privée de sécurité au sens des articles L. 611-1 ou L. 621-1 du CSI.",
-              ),
-              _BulletPoint(text: "Conjoint/concubin/PACS."),
-              _BulletPoint(
-                text: "Réunion (plusieurs auteurs/complices).",
-              ),
-              _BulletPoint(text: "Préméditation / guet-apens."),
-              _BulletPoint(text: "Usage ou menace d’une arme."),
-              _BulletPoint(
-                text:
-                    "État d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00061",
+                  "Professionnels visés (ex. gardiennage/surveillance) au sens de l’article L. 271-1 du CSI.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dissimulation volontaire du visage pour ne pas être identifié.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00062",
+                  "Activité privée de sécurité au sens des articles L. 611-1 ou L. 621-1 du CSI.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00063",
+                  "Conjoint/concubin/PACS.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00064",
+                  "Réunion (plusieurs auteurs/complices).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00065",
+                  "Préméditation / guet-apens.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00066",
+                  "Usage ou menace d’une arme.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00067",
+                  "État d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00068",
+                  "Dissimulation volontaire du visage pour ne pas être identifié.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le texte prévoit aussi des degrés (2e et 3e) selon la combinaison de circonstances (deux ou trois).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00069",
+                      "Le texte prévoit aussi des degrés (2e et 3e) selon la combinaison de circonstances (deux ou trois).",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Violences (ITT > 8 jours)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00070",
+                  "B) Violences (ITT > 8 jours)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00071",
+                    "Article 222-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00072",
+                    " : prévoit trois degrés d’aggravation.",
                   ),
                 ),
-                TextSpan(text: " : prévoit trois degrés d’aggravation."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Mutilation / infirmité permanente"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00073",
+                  "C) Mutilation / infirmité permanente",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00074",
+                    "Article 222-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00075",
+                    " : prévoit deux degrés d’aggravation.",
                   ),
                 ),
-                TextSpan(text: " : prévoit deux degrés d’aggravation."),
               ]),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Mort sans intention de la donner"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00076",
+                  "D) Mort sans intention de la donner",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00077",
+                    "Article 222-8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00078",
+                    " : prévoit deux degrés d’aggravation.",
                   ),
                 ),
-                TextSpan(text: " : prévoit deux degrés d’aggravation."),
               ]),
             ],
           ),
@@ -441,58 +754,99 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+              "f00079",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Repères (textes)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00080",
+                  "Repères (textes)",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Contraventions : "),
                 TextSpan(
-                  text: "R. 624-1 et R. 625-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00081",
+                    "Contraventions : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00082",
+                    "R. 624-1 et R. 625-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Délits : "),
                 TextSpan(
-                  text:
-                      "articles 222-11, 222-12, 222-13, 222-9, 222-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00083",
+                    "Délits : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00084",
+                    "articles 222-11, 222-12, 222-13, 222-9, 222-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Crimes : "),
                 TextSpan(
-                  text: "articles 222-7 et 222-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00085",
+                    "Crimes : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00086",
+                    "articles 222-7 et 222-8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Personnes morales",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00087",
+                  "Personnes morales",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les personnes morales peuvent être déclarées pénalement responsables et encourent les peines prévues par ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00088",
+                      "Les personnes morales peuvent être déclarées pénalement responsables et encourent les peines prévues par ",
+                    ),
                   ),
                   TextSpan(
-                    text: "l’article 222-16-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00089",
+                      "l’article 222-16-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -504,40 +858,86 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00090",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : NON (en matière contraventionnelle et délictuelle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00091",
+                  "Tentative : NON (en matière contraventionnelle et délictuelle).",
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                "En matière criminelle, la tentative est théoriquement punissable, mais peut être difficile à établir "
-                "car l’infraction dépend en partie du résultat.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00092",
+                      "En matière criminelle, la tentative est théoriquement punissable, mais peut être difficile à établir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00093",
+                      "car l’infraction dépend en partie du résultat.",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Complicité : OUI."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00094",
+                  "Complicité : OUI.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Punissable conformément aux "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00095",
+                    "Punissable conformément aux ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                    "f00096",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Contraventions (particularité)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00097",
+                  "Contraventions (particularité)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En principe, pas de complicité de contravention. Toutefois, les textes prévoient l’aide/assistance "
-                        "punie des mêmes peines que la contravention elle-même : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                          "f00098",
+                          "En principe, pas de complicité de contravention. Toutefois, les textes prévoient l’aide/assistance ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                          "f00099",
+                          "punie des mêmes peines que la contravention elle-même : ",
+                        ),
                   ),
                   TextSpan(
-                    text: "articles R. 624-1 et R. 625-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                      "f00100",
+                      "articles R. 624-1 et R. 625-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -548,7 +948,11 @@ class AtteintesVolontairesQualifieesViolencesPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La complicité par provocation ou instructions reste punissable, y compris dans le domaine contraventionnel.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart",
+                  "f00101",
+                  "La complicité par provocation ou instructions reste punissable, y compris dans le domaine contraventionnel.",
+                ),
               ),
             ],
           ),

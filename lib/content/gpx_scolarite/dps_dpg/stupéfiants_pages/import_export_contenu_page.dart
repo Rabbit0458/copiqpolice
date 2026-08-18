@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class StupefiantsImportExportPage extends StatelessWidget {
   const StupefiantsImportExportPage({super.key});
@@ -66,10 +67,18 @@ class StupefiantsImportExportPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class StupefiantsImportExportPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’importation ou l’exportation\nillicites de stupéfiants",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+              "f00003",
+              "L’importation ou l’exportation\nillicites de stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,13 +109,21 @@ class StupefiantsImportExportPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’importation ou l’exportation illicites de stupéfiants constituent une infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00005",
+                  "L’importation ou l’exportation illicites de stupéfiants constituent une infraction.",
+                ),
               ),
             ],
           ),
@@ -111,16 +132,29 @@ class StupefiantsImportExportPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-36 alinéa 1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : réprime l’importation ou l’exportation illicites de stupéfiants.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00007",
+                    "Article 222-36 alinéa 1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00008",
+                    " : réprime l’importation ou l’exportation illicites de stupéfiants.",
+                  ),
                 ),
               ]),
             ],
@@ -130,90 +164,232 @@ class StupefiantsImportExportPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+              "f00009",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Importation / exportation illicites"),
-              const _SubTitle("1) L’importation"),
-              const _Paragraph(
-                "Elle vise aussi bien le trafiquant international dirigeant un réseau que l’individu qui en importe "
-                "au retour d’un voyage touristique. L’élément matériel est constitué dès lors que la personne "
-                "pénètre ou tente de pénétrer sur le territoire national en possession de stupéfiants.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00010",
+                  "A) Importation / exportation illicites",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00011",
+                  "1) L’importation",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00012",
+                      "Elle vise aussi bien le trafiquant international dirigeant un réseau que l’individu qui en importe ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00013",
+                      "au retour d’un voyage touristique. L’élément matériel est constitué dès lors que la personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00014",
+                      "pénètre ou tente de pénétrer sur le territoire national en possession de stupéfiants.",
+                    ),
               ),
               const SizedBox(height: 12),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00015",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Un voilier intercepté dans les eaux territoriales françaises en provenance du Maroc transportant "
-                        "10 tonnes de résine de cannabis : peu importe l’allégation selon laquelle la drogue était destinée "
-                        "aux Pays-Bas — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                          "f00016",
+                          "Un voilier intercepté dans les eaux territoriales françaises en provenance du Maroc transportant ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                          "f00017",
+                          "10 tonnes de résine de cannabis : peu importe l’allégation selon laquelle la drogue était destinée ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                          "f00018",
+                          "aux Pays-Bas — ",
+                        ),
                   ),
-                  _law("Cass. crim., 11 juin 2008"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00019",
+                      "Cass. crim., 11 juin 2008",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00020",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Des individus se rendent plusieurs fois par mois aux Pays-Bas pour acheter de l’héroïne, livrée ensuite "
-                        "à Strasbourg par un passeur : la loi n’exige pas que les prévenus franchissent eux-mêmes la frontière "
-                        "avec l’héroïne — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                          "f00021",
+                          "Des individus se rendent plusieurs fois par mois aux Pays-Bas pour acheter de l’héroïne, livrée ensuite ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                          "f00022",
+                          "à Strasbourg par un passeur : la loi n’exige pas que les prévenus franchissent eux-mêmes la frontière ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                          "f00023",
+                          "avec l’héroïne — ",
+                        ),
                   ),
-                  _law("Cass. crim., 7 avril 2004"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00024",
+                      "Cass. crim., 7 avril 2004",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 14),
 
-              const _SubTitle("2) L’exportation"),
-              const _Paragraph(
-                "Cet élément est, pour des raisons évidentes, plus rare.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00025",
+                  "2) L’exportation",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00026",
+                  "Cet élément est, pour des raisons évidentes, plus rare.",
+                ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Définition légale des « stupéfiants »"),
-              _Paragraph.rich([
-                _law("Article 222-41 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants en application de ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00027",
+                  "B) Définition légale des « stupéfiants »",
                 ),
-                _law("l’article L. 5132-7 du Code de la santé publique"),
+              ),
+              _Paragraph.rich([
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00028",
+                    "Article 222-41 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00029",
+                    " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants en application de ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00030",
+                    "l’article L. 5132-7 du Code de la santé publique",
+                  ),
+                ),
                 const TextSpan(text: " »."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article L. 5132-7 du Code de la santé publique"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00031",
+                    "Article L. 5132-7 du Code de la santé publique",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : une substance est classée comme stupéfiant par décision du directeur général de l’Agence nationale "
-                      "de sécurité du médicament et des produits de santé.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                        "f00032",
+                        " : une substance est classée comme stupéfiant par décision du directeur général de l’Agence nationale ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                        "f00033",
+                        "de sécurité du médicament et des produits de santé.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Ainsi, seules les substances figurant sur les listes arrêtées par voie réglementaire doivent être retenues "
-                "au sens de la définition légale, même si d’autres substances peuvent avoir des effets toxicomanogènes.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00034",
+                      "Ainsi, seules les substances figurant sur les listes arrêtées par voie réglementaire doivent être retenues ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00035",
+                      "au sens de la définition légale, même si d’autres substances peuvent avoir des effets toxicomanogènes.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La liste exhaustive et évolutive figure en annexes de ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00036",
+                    "La liste exhaustive et évolutive figure en annexes de ",
+                  ),
                 ),
-                _law("l’arrêté du 22 février 1990"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00037",
+                    "l’arrêté du 22 février 1990",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : l’infraction ne s’applique qu’à une substance figurant sur cette liste et désignée avec suffisamment "
-                      "de précision.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                        "f00038",
+                        " : l’infraction ne s’applique qu’à une substance figurant sur cette liste et désignée avec suffisamment ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                        "f00039",
+                        "de précision.",
+                      ),
                 ),
               ]),
             ],
@@ -223,15 +399,33 @@ class StupefiantsImportExportPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+              "f00040",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Connaissance de cause"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00041",
+                  "Connaissance de cause",
+                ),
+              ),
               _Paragraph(
-                "L’intention coupable est requise. Elle peut être démontrée par les actes matériels "
-                "comme par le profit tiré de ces actes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00042",
+                      "L’intention coupable est requise. Elle peut être démontrée par les actes matériels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00043",
+                      "comme par le profit tiré de ces actes.",
+                    ),
               ),
             ],
           ),
@@ -240,30 +434,61 @@ class StupefiantsImportExportPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+              "f00044",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-36 alinéa 2 du Code pénal"),
-                const TextSpan(
-                  text: " : lorsque les faits sont commis en bande organisée.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00045",
+                    "Article 222-36 alinéa 2 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00046",
+                    " : lorsque les faits sont commis en bande organisée.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article 222-37-1 du Code pénal"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00047",
+                    "Article 222-37-1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : lorsque l’infraction est commise par un majeur agissant avec l’aide ou l’assistance, directe ou indirecte, "
-                      "d’un mineur pour le transport, la détention, l’offre, la cession, l’acquisition ou la vente de stupéfiants.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                        "f00048",
+                        " : lorsque l’infraction est commise par un majeur agissant avec l’aide ou l’assistance, directe ou indirecte, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                        "f00049",
+                        "d’un mineur pour le transport, la détention, l’offre, la cession, l’acquisition ou la vente de stupéfiants.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "L’aide/assistance d’un mineur peut résulter de tout acte de sollicitation, d’incitation ou d’organisation intégrant un mineur dans un réseau de trafic (volontaire ou contrainte).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00050",
+                  "L’aide/assistance d’un mineur peut résulter de tout acte de sollicitation, d’incitation ou d’organisation intégrant un mineur dans un réseau de trafic (volontaire ou contrainte).",
+                ),
               ),
             ],
           ),
@@ -272,104 +497,266 @@ class StupefiantsImportExportPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+              "f00051",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (délit) : "),
-                const TextSpan(
-                  text: "10 ans d’emprisonnement et 7 500 000 € d’amende. — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00052",
+                  "Peines encourues — personnes physiques",
                 ),
-                _law("article 222-36 alinéa 1 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00053",
+                    "Qualification simple (délit) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00054",
+                    "10 ans d’emprisonnement et 7 500 000 € d’amende. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00055",
+                    "article 222-36 alinéa 1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravation (bande organisée) : "),
-                const TextSpan(
-                  text: "30 ans de réclusion et 7 500 000 € d’amende. — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00056",
+                    "Aggravation (bande organisée) : ",
+                  ),
                 ),
-                _law("article 222-36 alinéa 2 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00057",
+                    "30 ans de réclusion et 7 500 000 € d’amende. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00058",
+                    "article 222-36 alinéa 2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravation (avec mineur – 1°) : "),
-                const TextSpan(
-                  text: "15 ans de réclusion et 7 500 000 € d’amende. — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00059",
+                    "Aggravation (avec mineur – 1°) : ",
+                  ),
                 ),
-                _law("article 222-37-1 1° du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00060",
+                    "15 ans de réclusion et 7 500 000 € d’amende. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00061",
+                    "article 222-37-1 1° du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text: "Aggravation cumulée (bande organisée + mineur) : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00062",
+                    "Aggravation cumulée (bande organisée + mineur) : ",
+                  ),
                 ),
-                const TextSpan(
-                  text: "réclusion à perpétuité et 7 500 000 € d’amende. — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00063",
+                    "réclusion à perpétuité et 7 500 000 € d’amende. — ",
+                  ),
                 ),
-                _law("article 222-37-1 3° du Code pénal"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00064",
+                    "article 222-37-1 3° du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les tableaux prévoient une période de sûreté (selon les cas et les textes applicables).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                      "f00065",
+                      "Les tableaux prévoient une période de sûreté (selon les cas et les textes applicables).",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00066",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
-                _law("l’article 222-42 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00067",
+                    "Peines prévues par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00068",
+                    "l’article 222-42 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00069",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — prévue par "),
-                _law("l’article 222-40 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00070",
+                    "Tentative : OUI — prévue par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00071",
+                    "l’article 222-40 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément aux "),
-                _law("articles 121-6 et 121-7 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (aide et assistance, provocation, instructions données).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00072",
+                    "Complicité : OUI — conformément aux ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00073",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00074",
+                    " (aide et assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                  "f00075",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : "),
-                _law("article 222-43 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (réduction des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements ou d’identifier d’autres coupables).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00076",
+                    "Réduction de peine : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00077",
+                    "article 222-43 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00078",
+                    " (réduction des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements ou d’identifier d’autres coupables).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : "),
-                _law("article 222-43-1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (si la personne ayant tenté l’infraction avertit les autorités et permet d’éviter la réalisation et d’identifier, le cas échéant, d’autres auteurs/complices).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00079",
+                    "Exemption de peine : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00080",
+                    "article 222-43-1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/stupéfiants_pages/import_export_contenu_page.dart",
+                    "f00081",
+                    " (si la personne ayant tenté l’infraction avertit les autorités et permet d’éviter la réalisation et d’identifier, le cas échéant, d’autres auteurs/complices).",
+                  ),
                 ),
               ]),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPersonnesFuiteProcedureGpxSchool extends StatelessWidget {
   const PaPersonnesFuiteProcedureGpxSchool({super.key});
@@ -12,18 +13,22 @@ class PaPersonnesFuiteProcedureGpxSchool extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color cardColor = isDark
-? const Color(0xFF111218)
-: const Color(0xFFFDFDFE);
+        ? const Color(0xFF111218)
+        : const Color(0xFFFDFDFE);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
 
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'Art. 74-2 – Procédure',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+            "f00001",
+            'Art. 74-2 – Procédure',
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w700, fontSize: 16),
         ),
       ),
@@ -33,81 +38,185 @@ class PaPersonnesFuiteProcedureGpxSchool extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const _SubTitle(
-                'Chapitre 2 : La procédure de l’Article 74-2 '
-                'du Code de procédure pénale',
+              _SubTitle(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                      "f00002",
+                      'Chapitre 2 : La procédure de l’Article 74-2 ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                      "f00003",
+                      'du Code de procédure pénale',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Ce chapitre présente les autorités compétentes et les principaux actes '
-                'd’enquête pouvant être mis en œuvre dans le cadre de la recherche des '
-                'personnes en fuite prévue par l’Article 74-2 du Code de procédure pénale.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                      "f00004",
+                      'Ce chapitre présente les autorités compétentes et les principaux actes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                      "f00005",
+                      'd’enquête pouvant être mis en œuvre dans le cadre de la recherche des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                      "f00006",
+                      'personnes en fuite prévue par l’Article 74-2 du Code de procédure pénale.',
+                    ),
               ),
               const SizedBox(height: 20),
 
               // 2.1 – LES AUTORITÉS HABILITÉES
-              const _SubTitle('2.1 – Les autorités habilitées'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                  "f00007",
+                  '2.1 – Les autorités habilitées',
+                ),
+              ),
               const SizedBox(height: 8),
 
               // 2.1.1 Les magistrats – Procureur
               _ConditionCard(
-                title:
-                    '2.1.1 – Les magistrats\n2.1.1.1 – Le procureur de la République',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                  "f00008",
+                  '2.1.1 – Les magistrats\n2.1.1.1 – Le procureur de la République',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          'Aux termes de l’Article 74-2 du Code de procédure pénale ',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00009",
+                        'Aux termes de l’Article 74-2 du Code de procédure pénale ',
+                      ),
                       style: TextStyle(color: Colors.red),
                     ),
                     TextSpan(
                       text:
-                          '(alinéa 1), le cadre d’enquête visant à rechercher et découvrir '
-                          'une personne en fuite ne peut être mis en œuvre que sur '
-                          'instructions du procureur de la République.',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00010",
+                            '(alinéa 1), le cadre d’enquête visant à rechercher et découvrir ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00011",
+                            'une personne en fuite ne peut être mis en œuvre que sur ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00012",
+                            'instructions du procureur de la République.',
+                          ),
                     ),
                   ]),
                   SizedBox(height: 10),
-                  _Paragraph('Le procureur de la République peut notamment :'),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                      "f00013",
+                      'Le procureur de la République peut notamment :',
+                    ),
+                  ),
                   SizedBox(height: 8),
                   _BulletPoint(
                     text:
-                        'demander aux officiers de police judiciaire d’user des moyens '
-                        'd’investigation de l’enquête de flagrance prévus aux '
-                        'Articles 56 à 62 du Code de procédure pénale ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00014",
+                          'demander aux officiers de police judiciaire d’user des moyens ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00015",
+                          'd’investigation de l’enquête de flagrance prévus aux ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00016",
+                          'Articles 56 à 62 du Code de procédure pénale ;',
+                        ),
                   ),
                   _BulletPoint.rich(
                     text:
-                        'demander au juge des libertés et de la détention l’autorisation '
-                        'de procéder à l’interception, l’enregistrement et la transcription '
-                        'des correspondances émises par la voie des télécommunications, '
-                        'selon les modalités prévues par les ',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00017",
+                          'demander au juge des libertés et de la détention l’autorisation ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00018",
+                          'de procéder à l’interception, l’enregistrement et la transcription ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00019",
+                          'des correspondances émises par la voie des télécommunications, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00020",
+                          'selon les modalités prévues par les ',
+                        ),
                     articleSpan: TextSpan(
-                      text:
-                          'Articles 100, 100-1 et 100-3 à 100-7 du Code de procédure pénale',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00021",
+                        'Articles 100, 100-1 et 100-3 à 100-7 du Code de procédure pénale',
+                      ),
                       style: TextStyle(color: Colors.red),
                     ),
-                    endText: ' (référence à l’Article 74-2, alinéa 8).',
+                    endText: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                      "f00022",
+                      ' (référence à l’Article 74-2, alinéa 8).',
+                    ),
                   ),
                   SizedBox(height: 8),
                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          'Dans le cadre des opérations d’interception, les attributions '
-                          'habituellement confiées au juge d’instruction par les ',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00023",
+                            'Dans le cadre des opérations d’interception, les attributions ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00024",
+                            'habituellement confiées au juge d’instruction par les ',
+                          ),
                     ),
                     TextSpan(
-                      text:
-                          'Articles 100-3 à 100-5 du Code de procédure pénale ',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00025",
+                        'Articles 100-3 à 100-5 du Code de procédure pénale ',
+                      ),
                       style: TextStyle(color: Colors.red),
                     ),
                     TextSpan(
                       text:
-                          'sont, dans ce dispositif, exercées par le procureur de la '
-                          'République (ou par l’officier de police judiciaire requis par lui).',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00026",
+                            'sont, dans ce dispositif, exercées par le procureur de la ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00027",
+                            'République (ou par l’officier de police judiciaire requis par lui).',
+                          ),
                     ),
                   ]),
                 ],
@@ -117,64 +226,176 @@ class PaPersonnesFuiteProcedureGpxSchool extends StatelessWidget {
 
               // 2.1.1.2 Juge des libertés et de la détention
               _ConditionCard(
-                title: '2.1.1.2 – Le juge des libertés et de la détention',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                  "f00028",
+                  '2.1.1.2 – Le juge des libertés et de la détention',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
-                      text: 'L’Article 74-2 du Code de procédure pénale ',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00029",
+                        'L’Article 74-2 du Code de procédure pénale ',
+                      ),
                       style: TextStyle(color: Colors.red),
                     ),
                     TextSpan(
                       text:
-                          '(alinéa 8) prévoit que les écoutes téléphoniques sont autorisées, '
-                          'en raison des nécessités de l’enquête, par le juge des libertés et '
-                          'de la détention du tribunal judiciaire, à la demande du procureur '
-                          'de la République.',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00030",
+                            '(alinéa 8) prévoit que les écoutes téléphoniques sont autorisées, ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00031",
+                            'en raison des nécessités de l’enquête, par le juge des libertés et ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00032",
+                            'de la détention du tribunal judiciaire, à la demande du procureur ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00033",
+                            'de la République.',
+                          ),
                     ),
                   ]),
                   SizedBox(height: 8),
                   _Paragraph(
-                    'L’autorisation du magistrat doit respecter les modalités prévues par les '
-                    'Articles 100, 100-1 et 100-3 à 100-7 du Code de procédure pénale.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00034",
+                          'L’autorisation du magistrat doit respecter les modalités prévues par les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00035",
+                          'Articles 100, 100-1 et 100-3 à 100-7 du Code de procédure pénale.',
+                        ),
                   ),
                   SizedBox(height: 10),
                   _BulletPoint(
                     text:
-                        'L’interception téléphonique est possible en matière criminelle et en '
-                        'matière correctionnelle lorsque la peine encourue est égale ou '
-                        'supérieure à trois ans ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00036",
+                          'L’interception téléphonique est possible en matière criminelle et en ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00037",
+                          'matière correctionnelle lorsque la peine encourue est égale ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00038",
+                          'supérieure à trois ans ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'la décision d’interception est écrite, n’est susceptible d’aucun '
-                        'recours et doit être motivée par référence aux éléments de fait et '
-                        'de droit justifiant que ces opérations sont nécessaires. Elle doit '
-                        'comporter tous les éléments d’identification de la liaison à '
-                        'intercepter, l’infraction qui motive le recours à l’interception '
-                        'ainsi que la durée de celle-ci ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00039",
+                          'la décision d’interception est écrite, n’est susceptible d’aucun ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00040",
+                          'recours et doit être motivée par référence aux éléments de fait et ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00041",
+                          'de droit justifiant que ces opérations sont nécessaires. Elle doit ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00042",
+                          'comporter tous les éléments d’identification de la liaison à ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00043",
+                          'intercepter, l’infraction qui motive le recours à l’interception ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00044",
+                          'ainsi que la durée de celle-ci ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'aucune interception ne peut porter sur une ligne dépendant du '
-                        'cabinet d’un avocat ou de son domicile, sauf s’il existe des '
-                        'raisons plausibles de le soupçonner d’avoir commis ou tenté de '
-                        'commettre, en tant qu’auteur ou complice, l’infraction objet de la '
-                        'procédure ou une infraction connexe ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00045",
+                          'aucune interception ne peut porter sur une ligne dépendant du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00046",
+                          'cabinet d’un avocat ou de son domicile, sauf s’il existe des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00047",
+                          'raisons plausibles de le soupçonner d’avoir commis ou tenté de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00048",
+                          'commettre, en tant qu’auteur ou complice, l’infraction objet de la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00049",
+                          'procédure ou une infraction connexe ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'à peine de nullité, les lignes dépendant du cabinet ou du domicile '
-                        'd’un député, sénateur, avocat ou magistrat ne peuvent être '
-                        'interceptées qu’après avis à leur autorité supérieure.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00050",
+                          'à peine de nullité, les lignes dépendant du cabinet ou du domicile ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00051",
+                          'd’un député, sénateur, avocat ou magistrat ne peuvent être ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00052",
+                          'interceptées qu’après avis à leur autorité supérieure.',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _Paragraph(
-                    'Le juge des libertés et de la détention doit être informé sans délai de '
-                    'tous les actes accomplis, depuis la mise en place de l’interception '
-                    'jusqu’à la transcription des correspondances.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00053",
+                          'Le juge des libertés et de la détention doit être informé sans délai de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00054",
+                          'tous les actes accomplis, depuis la mise en place de l’interception ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00055",
+                          'jusqu’à la transcription des correspondances.',
+                        ),
                   ),
                 ],
               ),
@@ -183,18 +404,46 @@ class PaPersonnesFuiteProcedureGpxSchool extends StatelessWidget {
 
               // 2.1.2 OPJ
               _ConditionCard(
-                title: '2.1.2 – L’officier de police judiciaire',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                  "f00056",
+                  '2.1.2 – L’officier de police judiciaire',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'Un officier de police judiciaire peut se voir déléguer les pouvoirs '
-                    'visant à rechercher une personne en fuite. Cette délégation émane du '
-                    'procureur de la République, qui adresse ses instructions aux seuls '
-                    'officiers de police judiciaire. Ceux-ci peuvent se faire assister des '
-                    'agents de police judiciaire, mais seuls les officiers de police '
-                    'judiciaire sont habilités à rédiger les actes de procédure.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00057",
+                          'Un officier de police judiciaire peut se voir déléguer les pouvoirs ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00058",
+                          'visant à rechercher une personne en fuite. Cette délégation émane du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00059",
+                          'procureur de la République, qui adresse ses instructions aux seuls ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00060",
+                          'officiers de police judiciaire. Ceux-ci peuvent se faire assister des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00061",
+                          'agents de police judiciaire, mais seuls les officiers de police ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00062",
+                          'judiciaire sont habilités à rédiger les actes de procédure.',
+                        ),
                   ),
                 ],
               ),
@@ -202,44 +451,93 @@ class PaPersonnesFuiteProcedureGpxSchool extends StatelessWidget {
               const SizedBox(height: 26),
 
               // 2.2 – ACTES DE L’ENQUÊTE
-              const _SubTitle('2.2 – Les actes de l’enquête'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                  "f00063",
+                  '2.2 – Les actes de l’enquête',
+                ),
+              ),
               const SizedBox(height: 8),
 
               // 2.2.1 actes délégués
               _ConditionCard(
-                title:
-                    '2.2.1 – Les actes délégués par le procureur de la République',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                  "f00064",
+                  '2.2.1 – Les actes délégués par le procureur de la République',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          'L’officier de police judiciaire, assisté le cas échéant par des '
-                          'agents de police judiciaire, peut accomplir les actes prévus par '
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00065",
+                            'L’officier de police judiciaire, assisté le cas échéant par des ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00066",
+                            'agents de police judiciaire, peut accomplir les actes prévus par ',
+                          ) +
                           'les ',
                     ),
                     TextSpan(
-                      text: 'Articles 56 à 62 du Code de procédure pénale ',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00067",
+                        'Articles 56 à 62 du Code de procédure pénale ',
+                      ),
                       style: TextStyle(color: Colors.red),
                     ),
                     TextSpan(
                       text:
-                          'aux fins de rechercher une personne en fuite (référence à '
-                          'l’Article 74-2, alinéa 1 du Code de procédure pénale).',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00068",
+                            'aux fins de rechercher une personne en fuite (référence à ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00069",
+                            'l’Article 74-2, alinéa 1 du Code de procédure pénale).',
+                          ),
                     ),
                   ]),
                   SizedBox(height: 8),
                   _Paragraph(
-                    'L’officier de police judiciaire peut ainsi procéder à tous les actes de '
-                    'l’enquête de flagrant délit : auditions, perquisitions, réquisitions, '
-                    'examens techniques et scientifiques.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00070",
+                          'L’officier de police judiciaire peut ainsi procéder à tous les actes de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00071",
+                          'l’enquête de flagrant délit : auditions, perquisitions, réquisitions, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00072",
+                          'examens techniques et scientifiques.',
+                        ),
                   ),
                   SizedBox(height: 6),
                   _Paragraph(
-                    'Dans ce cadre spécifique de la recherche des personnes en fuite, il ne '
-                    'peut toutefois pas prendre de mesure de garde à vue.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00073",
+                          'Dans ce cadre spécifique de la recherche des personnes en fuite, il ne ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00074",
+                          'peut toutefois pas prendre de mesure de garde à vue.',
+                        ),
                   ),
                 ],
               ),
@@ -248,79 +546,209 @@ class PaPersonnesFuiteProcedureGpxSchool extends StatelessWidget {
 
               // 2.2.2 Interceptions téléphoniques
               _ConditionCard(
-                title: '2.2.2 – Les interceptions téléphoniques',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                  "f00075",
+                  '2.2.2 – Les interceptions téléphoniques',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'Le procureur de la République, préalablement autorisé à procéder à des '
-                    'interceptions téléphoniques par le juge des libertés et de la '
-                    'détention, délègue habituellement à l’officier de police judiciaire le '
-                    'soin de mettre en place les opérations d’interception.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00076",
+                          'Le procureur de la République, préalablement autorisé à procéder à des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00077",
+                          'interceptions téléphoniques par le juge des libertés et de la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00078",
+                          'détention, délègue habituellement à l’officier de police judiciaire le ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00079",
+                          'soin de mettre en place les opérations d’interception.',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          'Ces interceptions sont réalisées en application des ',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00080",
+                        'Ces interceptions sont réalisées en application des ',
+                      ),
                     ),
                     TextSpan(
-                      text:
-                          'Articles 100, 100-1 et 100-3 à 100-7 du Code de procédure pénale',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00081",
+                        'Articles 100, 100-1 et 100-3 à 100-7 du Code de procédure pénale',
+                      ),
                       style: TextStyle(color: Colors.red),
                     ),
                     TextSpan(
                       text:
-                          ' (référence à l’Article 74-2, alinéa 8 du Code de procédure '
-                          'pénale).',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00082",
+                            ' (référence à l’Article 74-2, alinéa 8 du Code de procédure ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00083",
+                            'pénale).',
+                          ),
                     ),
                   ]),
                   SizedBox(height: 10),
                   _BulletPoint(
                     text:
-                        'l’autorisation est délivrée pour une durée de deux mois, '
-                        'renouvelable dans les mêmes conditions de forme et de durée ; ce '
-                        'renouvellement est limité à six mois en matière correctionnelle, '
-                        'mais n’est pas limité en matière criminelle ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00084",
+                          'l’autorisation est délivrée pour une durée de deux mois, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00085",
+                          'renouvelable dans les mêmes conditions de forme et de durée ; ce ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00086",
+                          'renouvellement est limité à six mois en matière correctionnelle, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00087",
+                          'mais n’est pas limité en matière criminelle ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'l’officier de police judiciaire peut requérir tout agent qualifié du '
-                        'ministère des télécommunications, d’un exploitant de réseau ou '
-                        'd’un fournisseur de services de télécommunications afin de procéder '
-                        'à l’installation du dispositif d’interception ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00088",
+                          'l’officier de police judiciaire peut requérir tout agent qualifié du ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00089",
+                          'ministère des télécommunications, d’un exploitant de réseau ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00090",
+                          'd’un fournisseur de services de télécommunications afin de procéder ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00091",
+                          'à l’installation du dispositif d’interception ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'l’officier de police judiciaire rédige un procès-verbal relatant '
-                        'précisément les opérations d’interception et d’enregistrement ; les '
-                        'enregistrements sont placés sous scellés fermés ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00092",
+                          'l’officier de police judiciaire rédige un procès-verbal relatant ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00093",
+                          'précisément les opérations d’interception et d’enregistrement ; les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00094",
+                          'enregistrements sont placés sous scellés fermés ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'il transcrit sur procès-verbal les correspondances utiles à la '
-                        'manifestation de la vérité. Un interprète doit être requis pour les '
-                        'correspondances en langue étrangère.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00095",
+                          'il transcrit sur procès-verbal les correspondances utiles à la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00096",
+                          'manifestation de la vérité. Un interprète doit être requis pour les ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00097",
+                          'correspondances en langue étrangère.',
+                        ),
                   ),
                   _Paragraph(
-                    'À peine de nullité, les correspondances échangées avec un avocat ne '
-                    'peuvent être transcrites lorsqu’elles relèvent de l’exercice des '
-                    'droits de la défense et sont couvertes par le secret professionnel de '
-                    'la défense et du conseil, sauf dans les cas limitativement prévus par '
-                    'les textes relatifs aux perquisitions chez l’avocat.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00098",
+                          'À peine de nullité, les correspondances échangées avec un avocat ne ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00099",
+                          'peuvent être transcrites lorsqu’elles relèvent de l’exercice des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00100",
+                          'droits de la défense et sont couvertes par le secret professionnel de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00101",
+                          'la défense et du conseil, sauf dans les cas limitativement prévus par ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                          "f00102",
+                          'les textes relatifs aux perquisitions chez l’avocat.',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          'Il appartient à l’officier de police judiciaire d’informer '
-                          'régulièrement le procureur de la République, afin que ce dernier '
-                          'puisse informer sans délai le juge des libertés et de la '
-                          'détention, conformément aux dispositions du dernier alinéa de ',
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00103",
+                            'Il appartient à l’officier de police judiciaire d’informer ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00104",
+                            'régulièrement le procureur de la République, afin que ce dernier ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00105",
+                            'puisse informer sans délai le juge des libertés et de la ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                            "f00106",
+                            'détention, conformément aux dispositions du dernier alinéa de ',
+                          ),
                     ),
                     TextSpan(
-                      text: 'l’Article 74-2 du Code de procédure pénale.',
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart",
+                        "f00107",
+                        'l’Article 74-2 du Code de procédure pénale.',
+                      ),
                       style: TextStyle(color: Colors.red),
                     ),
                   ]),
@@ -626,9 +1054,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

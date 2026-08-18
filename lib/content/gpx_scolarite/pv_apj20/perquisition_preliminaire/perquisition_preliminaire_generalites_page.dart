@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
   const PerquisitionPreliminaireGeneralitesPage({super.key});
@@ -56,10 +57,18 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Perquisition (préliminaire)",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+            "f00002",
+            "Perquisition (préliminaire)",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La perquisition en enquête préliminaire\nGénéralités",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+              "f00003",
+              "La perquisition en enquête préliminaire\nGénéralités",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,23 +99,41 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La perquisition est la recherche, dans tout lieu normalement clos, d’indices, de documents "
-                "ou d’objets confiscables relatifs aux faits incriminés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00005",
+                      "La perquisition est la recherche, dans tout lieu normalement clos, d’indices, de documents ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00006",
+                      "ou d’objets confiscables relatifs aux faits incriminés.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "La remise spontanée de documents ne constitue pas une perquisition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00007",
+                  "La remise spontanée de documents ne constitue pas une perquisition.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "En enquête de flagrance, l’APJ n’est pas habilité à procéder à une perquisition : il assiste l’OPJ.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00008",
+                  "En enquête de flagrance, l’APJ n’est pas habilité à procéder à une perquisition : il assiste l’OPJ.",
+                ),
               ),
             ],
           ),
@@ -111,41 +142,87 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (les références CPP/CP en rouge)
           _ConditionCard(
-            title: "I — Élément légal (références essentielles)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+              "f00009",
+              "I — Élément légal (références essentielles)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Perquisition préliminaire : "),
                 TextSpan(
-                  text: "article 76 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00010",
+                    "Perquisition préliminaire : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00011",
+                    "article 76 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (assentiment / autorisation JLD et règles spécifiques, notamment pour majeurs protégés).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00012",
+                    " (assentiment / autorisation JLD et règles spécifiques, notamment pour majeurs protégés).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Heures légales : "),
                 TextSpan(
-                  text: "article 59 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00013",
+                    "Heures légales : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00014",
+                    "article 59 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " (6h à 21h)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00015",
+                    " (6h à 21h).",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Biens confiscables : "),
                 TextSpan(
-                  text: "article 131-21 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00016",
+                    "Biens confiscables : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00017",
+                    "article 131-21 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (confiscation — pièces/biens pouvant faire l’objet d’une saisie).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00018",
+                    " (confiscation — pièces/biens pouvant faire l’objet d’une saisie).",
+                  ),
                 ),
               ]),
             ],
@@ -155,69 +232,170 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
 
           // I. Perquisitions / saisies / scellés
           _ConditionCard(
-            title: "II — Perquisitions, saisies, scellés",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+              "f00019",
+              "II — Perquisitions, saisies, scellés",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Lieu & temps de la perquisition"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00020",
+                  "A) Lieu & temps de la perquisition",
+                ),
+              ),
 
-              _SubTitle("1) Lieu de la perquisition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00021",
+                  "1) Lieu de la perquisition",
+                ),
+              ),
               _Paragraph(
-                "Une perquisition peut être réalisée :\n"
-                "• au domicile de toute personne susceptible d’avoir participé à l’infraction ;\n"
-                "• au domicile de toute personne susceptible de détenir des pièces, objets ou documents relatifs aux faits.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00022",
+                      "Une perquisition peut être réalisée :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00023",
+                      "• au domicile de toute personne susceptible d’avoir participé à l’infraction ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00024",
+                      "• au domicile de toute personne susceptible de détenir des pièces, objets ou documents relatifs aux faits.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Définition du domicile : tout lieu où une personne a son principal établissement, ainsi que tout lieu où, "
-                        "qu’elle y habite ou non, elle a le droit de se dire chez elle (peu importe le titre d’occupation et l’affectation des locaux).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                          "f00025",
+                          "Définition du domicile : tout lieu où une personne a son principal établissement, ainsi que tout lieu où, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                          "f00026",
+                          "qu’elle y habite ou non, elle a le droit de se dire chez elle (peu importe le titre d’occupation et l’affectation des locaux).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Peut inclure : résidence, lieu de séjour occasionnel (propriétaire ou occupant précaire), "
-                "dépendances et annexes indissociables proches du lieu principal. Sont assimilés : box/garage, parking souterrain, cave privative.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00027",
+                      "Peut inclure : résidence, lieu de séjour occasionnel (propriétaire ou occupant précaire), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00028",
+                      "dépendances et annexes indissociables proches du lieu principal. Sont assimilés : box/garage, parking souterrain, cave privative.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Lieux protégés / règles particulières"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00029",
+                  "Lieux protégés / règles particulières",
+                ),
+              ),
               _Paragraph(
-                "Certains lieux privés sont protégés :\n"
-                "• certains n’autorisent aucune perquisition (ex. locaux diplomatiques/consulaires) ;\n"
-                "• d’autres imposent des règles spécifiques (ex. cabinet/domicile d’un avocat, entreprise de presse, "
-                "cabinet d’un médecin, notaire/huissier, lieux couverts par le secret défense, locaux d’une juridiction, "
-                "ou domicile d’une personne exerçant des fonctions juridictionnelles).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00030",
+                      "Certains lieux privés sont protégés :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00031",
+                      "• certains n’autorisent aucune perquisition (ex. locaux diplomatiques/consulaires) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00032",
+                      "• d’autres imposent des règles spécifiques (ex. cabinet/domicile d’un avocat, entreprise de presse, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00033",
+                      "cabinet d’un médecin, notaire/huissier, lieux couverts par le secret défense, locaux d’une juridiction, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00034",
+                      "ou domicile d’une personne exerçant des fonctions juridictionnelles).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Majeur protégé"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00035",
+                  "Majeur protégé",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Si la perquisition doit avoir lieu au domicile d’un majeur protégé qui ne peut pas exercer seul son droit de s’opposer : l’OPJ avise au préalable le tuteur/curateur. "
-                      "L’assentiment ne peut être donné qu’après entretien tuteur/curateur ↔ majeur protégé. À défaut : autorisation JLD. — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                        "f00036",
+                        "Si la perquisition doit avoir lieu au domicile d’un majeur protégé qui ne peut pas exercer seul son droit de s’opposer : l’OPJ avise au préalable le tuteur/curateur. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                        "f00037",
+                        "L’assentiment ne peut être donné qu’après entretien tuteur/curateur ↔ majeur protégé. À défaut : autorisation JLD. — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article 76 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00038",
+                    "article 76 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("2) Temps de la perquisition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00039",
+                  "2) Temps de la perquisition",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les perquisitions se déroulent entre 6h00 et 21h00. Une perquisition débutée avant 21h00 peut se poursuivre au-delà. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00040",
+                    "Les perquisitions se déroulent entre 6h00 et 21h00. Une perquisition débutée avant 21h00 peut se poursuivre au-delà. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 59 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00041",
+                    "article 59 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -225,71 +403,182 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Assentiment préalable"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00042",
+                  "B) Assentiment préalable",
+                ),
+              ),
 
-              _SubTitle("1) Assentiment exprès et écrit"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00043",
+                  "1) Assentiment exprès et écrit",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En enquête préliminaire, les perquisitions/saisies/scellés de pièces à conviction ou de biens confiscables nécessitent l’assentiment exprès et écrit du maître des lieux. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00044",
+                    "En enquête préliminaire, les perquisitions/saisies/scellés de pièces à conviction ou de biens confiscables nécessitent l’assentiment exprès et écrit du maître des lieux. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 76 alinéa 1 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00045",
+                    "article 76 alinéa 1 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’autorisation doit être :\n"
-                "• rédigée avant la perquisition,\n"
-                "• manuscrite,\n"
-                "• expresse.\n"
-                "Elle est personnelle et irrévocable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00046",
+                      "L’autorisation doit être :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00047",
+                      "• rédigée avant la perquisition,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00048",
+                      "• manuscrite,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00049",
+                      "• expresse.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00050",
+                      "Elle est personnelle et irrévocable.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Absence d’assentiment"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00051",
+                  "2) Absence d’assentiment",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Si l’infraction est un crime ou un délit puni d’une peine d’emprisonnement égale ou supérieure à 3 ans, "
-                      "la perquisition peut avoir lieu sans assentiment, sur autorisation du juge des libertés et de la détention, à la requête du procureur. — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                        "f00052",
+                        "Si l’infraction est un crime ou un délit puni d’une peine d’emprisonnement égale ou supérieure à 3 ans, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                        "f00053",
+                        "la perquisition peut avoir lieu sans assentiment, sur autorisation du juge des libertés et de la détention, à la requête du procureur. — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article 76 alinéa 4 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00054",
+                    "article 76 alinéa 4 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’autorisation doit être écrite et motivée. Elle doit préciser, à peine de nullité :\n"
-                "• la qualification de l’infraction,\n"
-                "• l’adresse des lieux où les opérations peuvent être effectuées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00055",
+                      "L’autorisation doit être écrite et motivée. Elle doit préciser, à peine de nullité :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00056",
+                      "• la qualification de l’infraction,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00057",
+                      "• l’adresse des lieux où les opérations peuvent être effectuées.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Déroulement de la perquisition"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00058",
+                  "C) Déroulement de la perquisition",
+                ),
+              ),
               _Paragraph(
-                "Dès l’entrée dans les lieux : inspection rapide de sécurité de toutes les pièces.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00059",
+                  "Dès l’entrée dans les lieux : inspection rapide de sécurité de toutes les pièces.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Présence de l’occupant"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00060",
+                  "1) Présence de l’occupant",
+                ),
+              ),
               _Paragraph(
-                "La perquisition doit être effectuée en présence de la personne chez qui elle a lieu, "
-                "qui doit assister personnellement et de manière constante à l’opération.\n"
-                "En cas de refus ou d’impossibilité : elle peut désigner une personne pour la représenter.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00061",
+                      "La perquisition doit être effectuée en présence de la personne chez qui elle a lieu, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00062",
+                      "qui doit assister personnellement et de manière constante à l’opération.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00063",
+                      "En cas de refus ou d’impossibilité : elle peut désigner une personne pour la représenter.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("2) Rétention sur place"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00064",
+                  "2) Rétention sur place",
+                ),
+              ),
               _Paragraph(
-                "Toute personne présente (autre que le maître des lieux) peut être retenue sur place si elle est susceptible "
-                "de fournir des renseignements sur les objets/documents saisis, uniquement le temps strictement nécessaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00065",
+                      "Toute personne présente (autre que le maître des lieux) peut être retenue sur place si elle est susceptible ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00066",
+                      "de fournir des renseignements sur les objets/documents saisis, uniquement le temps strictement nécessaire.",
+                    ),
               ),
             ],
           ),
@@ -298,53 +587,124 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
 
           // II. Fouilles
           _ConditionCard(
-            title: "III — Les fouilles",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+              "f00067",
+              "III — Les fouilles",
+            ),
             cardColor: cardFouilles,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La fouille est la recherche, dans tous autres endroits qu’un lieu immobilier clos, d’indices ou d’objets confiscables "
-                "utiles à la manifestation de la vérité et intéressant l’enquête.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00068",
+                      "La fouille est la recherche, dans tous autres endroits qu’un lieu immobilier clos, d’indices ou d’objets confiscables ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00069",
+                      "utiles à la manifestation de la vérité et intéressant l’enquête.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) La fouille intégrale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00070",
+                  "A) La fouille intégrale",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Elle ne peut être pratiquée que sur une personne gardée à vue, pour les nécessités de l’enquête, décidée par un OPJ. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00071",
+                    "Elle ne peut être pratiquée que sur une personne gardée à vue, pour les nécessités de l’enquête, décidée par un OPJ. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 63-7 du C.P.P.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                    "f00072",
+                    "article 63-7 du C.P.P.",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Il ne peut y être recouru que si une palpation ou l’utilisation de moyens électroniques de détection ne peuvent être réalisées.\n"
-                "Assimilée à une perquisition : soumise à l’assentiment de la personne, mais sans contrainte des heures légales.\n"
-                "Elle doit être réalisée dans un espace fermé et par une personne du même sexe.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00073",
+                      "Il ne peut y être recouru que si une palpation ou l’utilisation de moyens électroniques de détection ne peuvent être réalisées.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00074",
+                      "Assimilée à une perquisition : soumise à l’assentiment de la personne, mais sans contrainte des heures légales.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00075",
+                      "Elle doit être réalisée dans un espace fermé et par une personne du même sexe.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("B) La fouille de véhicule"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00076",
+                  "B) La fouille de véhicule",
+                ),
+              ),
               _Paragraph(
-                "Le véhicule n’est pas considéré comme un domicile (ni le prolongement du domicile).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00077",
+                  "Le véhicule n’est pas considéré comme un domicile (ni le prolongement du domicile).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La fouille de véhicule obéit aux mêmes règles que la perquisition :\n"
-                "• réalisée en présence de la personne trouvée en possession du véhicule,\n"
-                "• après autorisation délivrée par celle-ci dans des formes identiques à l’assentiment de perquisition.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00078",
+                      "La fouille de véhicule obéit aux mêmes règles que la perquisition :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00079",
+                      "• réalisée en présence de la personne trouvée en possession du véhicule,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00080",
+                      "• après autorisation délivrée par celle-ci dans des formes identiques à l’assentiment de perquisition.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Heures légales :\n"
-                "• pas d’obligation si le véhicule n’a jamais constitué un domicile,\n"
-                "• MAIS si le véhicule est dans l’enceinte du domicile perquisitionné (garage/cour), la fouille suit le régime du domicile (respect des heures légales).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00081",
+                      "Heures légales :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00082",
+                      "• pas d’obligation si le véhicule n’a jamais constitué un domicile,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                      "f00083",
+                      "• MAIS si le véhicule est dans l’enceinte du domicile perquisitionné (garage/cour), la fouille suit le régime du domicile (respect des heures légales).",
+                    ),
               ),
             ],
           ),
@@ -353,34 +713,58 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
 
           // Bloc mémo
           _ConditionCard(
-            title: "Mémo opérationnel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+              "f00084",
+              "Mémo opérationnel",
+            ),
             cardColor: cardCaution,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Toujours qualifier le cadre : préliminaire = assentiment écrit (sauf autorisation JLD).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00085",
+                  "Toujours qualifier le cadre : préliminaire = assentiment écrit (sauf autorisation JLD).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Respecter les heures légales 6h–21h (sauf cas particulier prévu).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00086",
+                  "Respecter les heures légales 6h–21h (sauf cas particulier prévu).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Présence du maître des lieux (ou représentant) + inspection de sécurité dès l’entrée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00087",
+                  "Présence du maître des lieux (ou représentant) + inspection de sécurité dès l’entrée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Attention aux lieux protégés et aux majeurs protégés (avis tuteur/curateur ou JLD).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                  "f00088",
+                  "Attention aux lieux protégés et aux majeurs protégés (avis tuteur/curateur ou JLD).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Astuce rédaction : toujours faire apparaître clairement le fondement (CPP/CP), "
-                        "l’assentiment (ou l’autorisation JLD) et les horaires, pour sécuriser la procédure.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                          "f00089",
+                          "Astuce rédaction : toujours faire apparaître clairement le fondement (CPP/CP), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart",
+                          "f00090",
+                          "l’assentiment (ou l’autorisation JLD) et les horaires, pour sécuriser la procédure.",
+                        ),
                   ),
                 ],
               ),
@@ -638,9 +1022,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

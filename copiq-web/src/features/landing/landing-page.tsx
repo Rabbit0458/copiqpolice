@@ -2,26 +2,19 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { motion } from "framer-motion"
+import { useState } from "react"
 import {
   Crown, Target, BookOpen, Brain, FileText,
-  Globe, Zap, Check, ArrowRight, Star, Shield, RotateCcw
+  Globe, Zap, Check, ArrowRight, RotateCcw, Shield
 } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { useScrolled } from "@/hooks/use-scrolled"
+import { SmoothScrollProvider } from "@/lib/animations/lenis-provider"
+import { HeroExperience } from "@/components/sections/hero-experience"
 
 /* ─── Assets ──────────────────────────────────────────────── */
 const LOGO = "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/logo_appstore.png"
-
-const HERO_IMAGES = [
-  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/website_assets/pv_intro.jpg",
-  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/website_assets/gpx.jpg",
-  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/website_assets/police.webp",
-  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/website_assets/pv_circulation_routiere.jpeg",
-  "https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/policier_intervention.jpg",
-]
 
 /* ─── Features (flip cards) ────────────────────────────────── */
 const FEATURES = [
@@ -77,29 +70,11 @@ const FEATURES = [
   },
 ]
 
-/* ─── Témoignages ──────────────────────────────────────────── */
-const TESTIMONIALS = [
-  {
-    name: "Mathieu D.",
-    role: "Reçu GPX — Promo 2025",
-    text: "Reçu au concours Gardien de la Paix après 3 mois sur COP'IQ. Les cas pratiques corrigés par IA m'ont fait gagner 3 points.",
-    score: "16/20",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Mathieu&backgroundColor=b6e3f4",
-  },
-  {
-    name: "Sarah L.",
-    role: "Reçue PA — Promo 2024",
-    text: "L'appli mobile + le site web : je révise partout. Ma progression est synchronisée automatiquement entre les deux.",
-    score: "14/20",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah&backgroundColor=ffdfbf",
-  },
-  {
-    name: "Kevin R.",
-    role: "Reçu GPX — Promo 2025",
-    text: "Les cours sont clairs et complets. Bien mieux que les livres classiques pour la scolarité. J'ai révisé uniquement avec COP'IQ.",
-    score: "18/20",
-    avatar: "https://api.dicebear.com/7.x/avataaars/svg?seed=Kevin&backgroundColor=d1d4f9",
-  },
+/* ─── Points de confiance (faits vérifiables, pas de chiffres inventés) ──── */
+const TRUST_POINTS = [
+  { icon: <Shield size={18} />, label: "Cours rédigés par des professionnels" },
+  { icon: <BookOpen size={18} />, label: "Programme complet PA & GPX" },
+  { icon: <Zap size={18} />, label: "Synchronisation mobile ↔ web en temps réel" },
 ]
 
 /* ─── Plans tarifaires ─────────────────────────────────────── */
@@ -151,9 +126,9 @@ const PLANS = [
     id: "year",
     name: "Annuel",
     emoji: "👑",
-    price: "71,99 €",
+    price: "86,99 €",
     period: "/ an",
-    description: "Économisez 33 % — 5,99 €/mois",
+    description: "Économisez 20 % — 7,25 €/mois",
     features: [
       "Tout l'abonnement mensuel",
       "2 mois offerts vs mensuel",
@@ -231,166 +206,64 @@ function FlipCard({ feat }: { feat: typeof FEATURES[0] }) {
   )
 }
 
-/* ─── Hero Slideshow ───────────────────────────────────────── */
-function HeroSlideshow() {
-  const [current, setCurrent] = useState(0)
-
-  useEffect(() => {
-    const t = setInterval(() => {
-      setCurrent(c => (c + 1) % HERO_IMAGES.length)
-    }, 4500)
-    return () => clearInterval(t)
-  }, [])
-
-  return (
-    <div className="absolute inset-0 overflow-hidden">
-      <AnimatePresence mode="sync">
-        <motion.div
-          key={current}
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
-          className="absolute inset-0"
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={HERO_IMAGES[current]}
-            alt=""
-            className="w-full h-full object-cover"
-          />
-        </motion.div>
-      </AnimatePresence>
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#000B36]/80 via-[#000B36]/60 to-[#000B36]/90 backdrop-blur-[2px]" />
-    </div>
-  )
-}
-
 /* ─── Main Component ───────────────────────────────────────── */
 export function LandingPage() {
+  const scrolled = useScrolled(60)
+
   return (
-    <div className="min-h-screen bg-[var(--surface)] text-[var(--on-surface)]">
+    <SmoothScrollProvider>
+      <div className="min-h-screen bg-[var(--surface)] text-[var(--on-surface)]">
 
-      {/* ── Header ── */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-[#000B36]/90 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <Image src={LOGO} alt="COP'IQ" width={40} height={40} className="rounded-xl shadow-md" unoptimized />
-            <span className="font-bold text-lg tracking-tight text-white">COP&apos;IQ</span>
-          </Link>
+        {/* ── Header — transparent over the hero, blurred once scrolled past it ── */}
+        <header
+          className={cn(
+            "sticky top-0 z-50 transition-colors duration-300",
+            scrolled ? "border-b border-white/10 bg-[#000B36]/90 backdrop-blur-xl" : "border-b border-transparent bg-transparent"
+          )}
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <Link href="/" className="flex items-center gap-3">
+              <Image src={LOGO} alt="COP'IQ" width={40} height={40} className="rounded-xl shadow-md" unoptimized />
+              <span className="font-bold text-lg tracking-tight text-white">COP&apos;IQ</span>
+            </Link>
 
-          <nav className="hidden md:flex items-center gap-6 text-sm text-white/70">
-            {[["Fonctionnalités", "#features"], ["Tarifs", "#pricing"], ["Blog", "/blog"], ["Forum", "/forum"]].map(([label, href]) => (
-              <Link key={label} href={href} className="hover:text-white transition-colors">
-                {label}
+            <nav className="hidden md:flex items-center gap-6 text-sm text-white/70">
+              {[["Fonctionnalités", "#features"], ["Tarifs", "#pricing"], ["Blog", "/blog"], ["Forum", "/forum"]].map(([label, href]) => (
+                <Link key={label} href={href} className="hover:text-white transition-colors">
+                  {label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="flex items-center gap-3">
+              <Link href="/login" className="text-sm text-white/70 hover:text-white transition-colors hidden sm:block">
+                Se connecter
               </Link>
-            ))}
-          </nav>
+              <Link href="/signup">
+                <button className="px-4 py-2 rounded-xl bg-[#1147D9] hover:bg-[#1A55E6] text-white text-sm font-semibold transition-all shadow-lg flex items-center gap-2">
+                  Commencer gratuitement <ArrowRight size={14} />
+                </button>
+              </Link>
+            </div>
+          </div>
+        </header>
 
-          <div className="flex items-center gap-3">
-            <Link href="/login" className="text-sm text-white/70 hover:text-white transition-colors hidden sm:block">
-              Se connecter
-            </Link>
-            <Link href="/signup">
-              <button className="px-4 py-2 rounded-xl bg-[#1147D9] hover:bg-[#1A55E6] text-white text-sm font-semibold transition-all shadow-lg flex items-center gap-2">
-                Commencer gratuitement <ArrowRight size={14} />
-              </button>
-            </Link>
+        {/* ── Hero — scène 3D cinématique ── */}
+        <HeroExperience />
+
+        {/* ── Points de confiance (faits réels, aucun chiffre inventé) ── */}
+        <div className="bg-[#000B36] py-8 border-y border-white/10">
+          <div className="max-w-5xl mx-auto px-4 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-center">
+            {TRUST_POINTS.map((p) => (
+              <div key={p.label} className="flex items-center gap-2.5 text-white/80">
+                <span className="text-[#7FB3FF]">{p.icon}</span>
+                <span className="text-sm font-medium">{p.label}</span>
+              </div>
+            ))}
           </div>
         </div>
-      </header>
 
-      {/* ── Hero ── */}
-      <section className="relative overflow-hidden min-h-[92vh] flex items-center">
-        <HeroSlideshow />
-
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center w-full py-24">
-          {/* Logo centré */}
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="flex justify-center mb-8"
-          >
-            <Image src={LOGO} alt="COP'IQ" width={96} height={96} className="rounded-3xl shadow-2xl" unoptimized />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white/90 text-sm mb-6 backdrop-blur-sm">
-              <Crown size={13} className="text-amber-400" />
-              Application mobile + Site web synchronisés
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6 text-white">
-              Réussissez votre concours{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4B8FFF] to-[#7FB3FF]">
-                Police Nationale
-              </span>
-            </h1>
-
-            <p className="text-lg sm:text-xl text-white/75 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Cours juridiques, quiz thématiques, cas pratiques corrigés par IA, psychotechniques et concours blancs.
-              La plateforme complète pour Policier Adjoint et Gardien de la Paix.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-14">
-              <Link href="/signup">
-                <button className="px-8 py-4 rounded-2xl bg-[#1147D9] hover:bg-[#1A55E6] text-white font-bold text-base transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5 flex items-center justify-center gap-2.5 w-full sm:w-auto">
-                  Commencer gratuitement <ArrowRight size={18} />
-                </button>
-              </Link>
-              <Link href="#features">
-                <button className="px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/25 text-white font-semibold text-base transition-all backdrop-blur-sm w-full sm:w-auto">
-                  Voir les fonctionnalités
-                </button>
-              </Link>
-            </div>
-
-            {/* Social proof */}
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/70">
-              <div className="flex items-center gap-1.5">
-                <div className="flex">{[...Array(5)].map((_, i) => <Star key={i} size={13} className="text-amber-400 fill-amber-400" />)}</div>
-                <span className="font-semibold text-white">4.9/5</span> App Store
-              </div>
-              <div className="w-px h-4 bg-white/20" />
-              <span><strong className="text-white">10 000+</strong> candidats préparés</span>
-              <div className="w-px h-4 bg-white/20" />
-              <span><strong className="text-white">5 000+</strong> questions</span>
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Slideshow dots */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-          {HERO_IMAGES.map((_, i) => (
-            <div key={i} className={cn("h-1.5 rounded-full transition-all duration-300", i === 0 ? "w-6 bg-white" : "w-1.5 bg-white/40")} />
-          ))}
-        </div>
-      </section>
-
-      {/* ── Stats band ── */}
-      <div className="bg-[#000B36] py-8 border-y border-white/10">
-        <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
-          {[
-            { v: "10 000+", l: "Candidats préparés" },
-            { v: "5 000+", l: "Questions au total" },
-            { v: "95%", l: "Taux de satisfaction" },
-            { v: "4.9/5", l: "Note App Store" },
-          ].map(s => (
-            <div key={s.l}>
-              <div className="text-2xl font-black text-white">{s.v}</div>
-              <div className="text-sm text-white/50 mt-0.5">{s.l}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* ── Features flip cards ── */}
+        {/* ── Features flip cards ── */}
       <section id="features" className="py-24 bg-[var(--surface-container)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
@@ -509,47 +382,30 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* ── Témoignages ── */}
+      {/* ── Ce que couvre COP'IQ (contenu réel, en attendant de vrais avis) ── */}
       <section className="py-24 bg-[var(--surface-container)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 text-xs font-semibold mb-4">
-              ✅ ILS ONT RÉUSSI
+              PENSÉ POUR LA RÉUSSITE
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-[var(--on-surface)]">
-              Ils ont réussi leur concours avec COP&apos;IQ
+              Une préparation complète, du premier quiz à l&apos;oral
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {TESTIMONIALS.map((t) => (
-              <div key={t.name} className="rounded-2xl border border-[var(--outline)] bg-[var(--surface)] p-6 flex flex-col">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={14} className="text-amber-400 fill-amber-400" />
-                  ))}
+            {[
+              { icon: <BookOpen size={20} />, title: "Programme officiel", text: "Droit pénal, procédure, institutions et déontologie couverts pour PA et GPX, scolarité comme concours." },
+              { icon: <FileText size={20} />, title: "Correction par IA", text: "Rédigez vos cas pratiques et recevez une correction détaillée qui pointe vos erreurs et la méthode attendue." },
+              { icon: <Zap size={20} />, title: "Progression unifiée", text: "Un quiz commencé sur mobile se retrouve dans votre historique web, synchronisé via Supabase en temps réel." },
+            ].map((item) => (
+              <div key={item.title} className="rounded-2xl border border-[var(--outline)] bg-[var(--surface)] p-6 flex flex-col">
+                <div className="w-11 h-11 rounded-xl bg-[#1147D9]/10 text-[#1147D9] flex items-center justify-center mb-4">
+                  {item.icon}
                 </div>
-                <p className="text-sm text-[var(--on-surface-muted)] leading-relaxed mb-5 flex-1">
-                  &ldquo;{t.text}&rdquo;
-                </p>
-                <div className="flex items-center gap-3 pt-4 border-t border-[var(--outline)]">
-                  <img
-                    src={t.avatar}
-                    alt={t.name}
-                    width={40}
-                    height={40}
-                    className="rounded-full bg-[var(--surface-variant)]"
-                  />
-                  <div>
-                    <div className="text-sm font-semibold text-[var(--on-surface)]">{t.name}</div>
-                    <div className="text-xs text-[var(--on-surface-muted)]">{t.role}</div>
-                  </div>
-                  <div className="ml-auto">
-                    <span className="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 text-xs font-bold">
-                      {t.score}
-                    </span>
-                  </div>
-                </div>
+                <h3 className="font-bold text-[var(--on-surface)] mb-2">{item.title}</h3>
+                <p className="text-sm text-[var(--on-surface-muted)] leading-relaxed">{item.text}</p>
               </div>
             ))}
           </div>
@@ -568,7 +424,7 @@ export function LandingPage() {
         <div className="absolute inset-0 flex items-center justify-center text-center px-6">
           <div>
             <div className="text-5xl font-black text-white mb-2">🚔</div>
-            <p className="text-white/90 font-semibold text-xl">Rejoignez les 10 000+ candidats qui préparent leur concours avec COP&apos;IQ</p>
+            <p className="text-white/90 font-semibold text-xl">Rejoignez les candidats qui préparent leur concours avec COP&apos;IQ</p>
           </div>
         </div>
       </div>
@@ -639,6 +495,7 @@ export function LandingPage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </SmoothScrollProvider>
   )
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaReglesEmploiPaPage extends StatelessWidget {
   const PaReglesEmploiPaPage({super.key});
@@ -66,10 +67,18 @@ class PaReglesEmploiPaPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Règles d'emploi — Policier Adjoint",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+            "f00002",
+            "Règles d'emploi — Policier Adjoint",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class PaReglesEmploiPaPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les règles d'emploi des policiers adjoints",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00003",
+              "Les règles d'emploi des policiers adjoints",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,14 +109,26 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Intro
           _ConditionCard(
-            title: "Principe général",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00004",
+              "Principe général",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Salarié de l’État, le Policier Adjoint (P.A.) doit accepter et respecter les obligations liées à son emploi. "
-                "Il doit notamment respecter les prescriptions du code de déontologie de la Police nationale.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00005",
+                      "Salarié de l’État, le Policier Adjoint (P.A.) doit accepter et respecter les obligations liées à son emploi. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00006",
+                      "Il doit notamment respecter les prescriptions du code de déontologie de la Police nationale.",
+                    ),
               ),
             ],
           ),
@@ -112,19 +137,38 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (usage arme)
           _ConditionCard(
-            title: "Élément légal — emploi de l'arme",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00007",
+              "Élément légal — emploi de l'arme",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "L'arme ne peut être employée que dans le strict cadre de la loi : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                    "f00008",
+                    "L'arme ne peut être employée que dans le strict cadre de la loi : ",
+                  ),
                 ),
-                lawSpan("article L. 435-1 du Code de la sécurité intérieure"),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                    "f00009",
+                    "article L. 435-1 du Code de la sécurité intérieure",
+                  ),
+                ),
                 const TextSpan(text: " ou "),
-                lawSpan("article 122-5 du Code pénal"),
+                lawSpan(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                    "f00010",
+                    "article 122-5 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -138,11 +182,23 @@ class PaReglesEmploiPaPage extends StatelessWidget {
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le policier adjoint exerce sa fonction revêtu de sa tenue d’uniforme.\n\n"
-                "Toutefois, il peut être autorisé par son chef de service à porter la tenue civile lorsque la nature des missions le justifie.\n\n"
-                "Le policier adjoint est responsable de ses effets d’uniforme.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00011",
+                      "Le policier adjoint exerce sa fonction revêtu de sa tenue d’uniforme.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00012",
+                      "Toutefois, il peut être autorisé par son chef de service à porter la tenue civile lorsque la nature des missions le justifie.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00013",
+                      "Le policier adjoint est responsable de ses effets d’uniforme.",
+                    ),
               ),
             ],
           ),
@@ -151,32 +207,75 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Arme
           _ConditionCard(
-            title: "Port de l'arme",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00014",
+              "Port de l'arme",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Aptitude au port et à l’emploi"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00015",
+                  "A) Aptitude au port et à l’emploi",
+                ),
+              ),
               _Paragraph(
-                "L’aptitude au port et à l’emploi de l’arme de service relève de la compétence exclusive de la structure de formation "
-                "et ne peut pas être délivrée postérieurement à la formation initiale par le service d’affectation.\n\n"
-                "Si le policier adjoint présente une inaptitude définitive au port de l’arme, il est mis fin à son contrat sans indemnité ni préavis.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00016",
+                      "L’aptitude au port et à l’emploi de l’arme de service relève de la compétence exclusive de la structure de formation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00017",
+                      "et ne peut pas être délivrée postérieurement à la formation initiale par le service d’affectation.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00018",
+                      "Si le policier adjoint présente une inaptitude définitive au port de l’arme, il est mis fin à son contrat sans indemnité ni préavis.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) Règles de gestion"),
-              _BulletPoint(
-                text:
-                    "Si le P.A. est doté d’une arme individuelle, il la retire à chaque prise de service et la restitue à l’issue du service quotidien.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00019",
+                  "B) Règles de gestion",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le port de l’arme est strictement réservé au seul cadre du service et nécessite le port de la tenue d’uniforme.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00020",
+                  "Si le P.A. est doté d’une arme individuelle, il la retire à chaque prise de service et la restitue à l’issue du service quotidien.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00021",
+                  "Le port de l’arme est strictement réservé au seul cadre du service et nécessite le port de la tenue d’uniforme.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("C) Incident (vol / perte / détérioration)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00022",
+                  "C) Incident (vol / perte / détérioration)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tout vol, perte ou détérioration de l’arme ou des munitions doit être immédiatement signalé.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00023",
+                  "Tout vol, perte ou détérioration de l’arme ou des munitions doit être immédiatement signalé.",
+                ),
               ),
             ],
           ),
@@ -185,23 +284,46 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Carte pro
           _ConditionCard(
-            title: "Carte professionnelle",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00024",
+              "Carte professionnelle",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le policier adjoint doit porter sa carte professionnelle lorsqu’il est en service.\n\n"
-                "Elle ne peut être utilisée qu’à des fins professionnelles. "
-                "En aucun cas elle ne peut être prêtée ou reproduite. "
-                "Elle doit être restituée à la fin du contrat.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00025",
+                      "Le policier adjoint doit porter sa carte professionnelle lorsqu’il est en service.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00026",
+                      "Elle ne peut être utilisée qu’à des fins professionnelles. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00027",
+                      "En aucun cas elle ne peut être prêtée ou reproduite. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00028",
+                      "Elle doit être restituée à la fin du contrat.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le prêt, l’utilisation frauduleuse, la perte ou le vol liés à une négligence ou à une malveillance engagent la responsabilité disciplinaire du policier adjoint.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00029",
+                      "Le prêt, l’utilisation frauduleuse, la perte ou le vol liés à une négligence ou à une malveillance engagent la responsabilité disciplinaire du policier adjoint.",
+                    ),
                   ),
                 ],
               ),
@@ -212,21 +334,36 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Matériel / locaux / véhicules
           _ConditionCard(
-            title: "Locaux, matériels et véhicules de service",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00030",
+              "Locaux, matériels et véhicules de service",
+            ),
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le policier adjoint doit prendre soin des locaux, matériels et véhicules de service dont il a l’usage.\n\n"
-                "Il ne peut les utiliser que dans le cadre du service et uniquement à des fins professionnelles.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00031",
+                      "Le policier adjoint doit prendre soin des locaux, matériels et véhicules de service dont il a l’usage.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00032",
+                      "Il ne peut les utiliser que dans le cadre du service et uniquement à des fins professionnelles.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Tout manquement expose le policier adjoint à des sanctions disciplinaires.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00033",
+                      "Tout manquement expose le policier adjoint à des sanctions disciplinaires.",
+                    ),
                   ),
                 ],
               ),
@@ -237,31 +374,57 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Régime de travail
           _ConditionCard(
-            title: "Régime de travail",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00034",
+              "Régime de travail",
+            ),
             cardColor: cardWork,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Le régime horaire du P.A. est celui de son service/unité d’appartenance (de jour comme de nuit).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00035",
+                  "Le régime horaire du P.A. est celui de son service/unité d’appartenance (de jour comme de nuit).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En cas d’événements graves ou importants, il peut être appelé à servir en tout temps et en tout lieu.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00036",
+                  "En cas d’événements graves ou importants, il peut être appelé à servir en tout temps et en tout lieu.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Le P.A. ne peut pas travailler à temps partiel.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00037",
+                  "Le P.A. ne peut pas travailler à temps partiel.",
+                ),
               ),
-              _BulletPoint(text: "Il n’est pas soumis à l’astreinte."),
               _BulletPoint(
-                text:
-                    "La permanence n’est possible que sur la base du volontariat.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00038",
+                  "Il n’est pas soumis à l’astreinte.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Il peut faire l’objet d’un rappel au service, mais le report de repos ne lui est pas applicable.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00039",
+                  "La permanence n’est possible que sur la base du volontariat.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00040",
+                  "Il peut faire l’objet d’un rappel au service, mais le report de repos ne lui est pas applicable.",
+                ),
               ),
             ],
           ),
@@ -270,16 +433,36 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Conduite véhicules
           _ConditionCard(
-            title: "Conduite des véhicules de service",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00041",
+              "Conduite des véhicules de service",
+            ),
             cardColor: cardWork,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il appartient au service d’emploi de déterminer les critères et aptitudes qu’un policier adjoint doit remplir "
-                "pour se voir confier la conduite d’un véhicule administratif (selon le type de mission : support/logistique, police secours).\n\n"
-                "En principe, tant que le P.A. est titulaire du permis pendant la période probatoire, la conduite se limite aux missions "
-                "ne revêtant aucun caractère de dangerosité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00042",
+                      "Il appartient au service d’emploi de déterminer les critères et aptitudes qu’un policier adjoint doit remplir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00043",
+                      "pour se voir confier la conduite d’un véhicule administratif (selon le type de mission : support/logistique, police secours).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00044",
+                      "En principe, tant que le P.A. est titulaire du permis pendant la période probatoire, la conduite se limite aux missions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00045",
+                      "ne revêtant aucun caractère de dangerosité.",
+                    ),
               ),
             ],
           ),
@@ -288,15 +471,31 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Accès fichiers
           _ConditionCard(
-            title: "Accès aux fichiers de police",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00046",
+              "Accès aux fichiers de police",
+            ),
             cardColor: cardWork,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Agent de police judiciaire adjoint servant dans la Police nationale, le P.A. a accès aux fichiers nécessaires "
-                "à l’exécution de ses missions uniquement dans le cadre des besoins professionnels.\n\n"
-                "Cet accès s’effectue dans le respect absolu du secret professionnel et de la discrétion professionnelle.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00047",
+                      "Agent de police judiciaire adjoint servant dans la Police nationale, le P.A. a accès aux fichiers nécessaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00048",
+                      "à l’exécution de ses missions uniquement dans le cadre des besoins professionnels.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00049",
+                      "Cet accès s’effectue dans le respect absolu du secret professionnel et de la discrétion professionnelle.",
+                    ),
               ),
             ],
           ),
@@ -305,28 +504,57 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Changement affectation
           _ConditionCard(
-            title: "Changement d’affectation",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00050",
+              "Changement d’affectation",
+            ),
             cardColor: cardDisci,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Ce que le policier adjoint peut faire"),
-              _BulletPoint(
-                text:
-                    "Occuper successivement plusieurs postes au sein d’une structure de la Police nationale.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00051",
+                  "Ce que le policier adjoint peut faire",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Changer de service au sein d’un même département (un avenant est apporté à son contrat).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00052",
+                  "Occuper successivement plusieurs postes au sein d’une structure de la Police nationale.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00053",
+                  "Changer de service au sein d’un même département (un avenant est apporté à son contrat).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Changement de département / permutation"),
-              _BulletPoint(
-                text: "Lors du renouvellement du contrat (avec avenant).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00054",
+                  "Changement de département / permutation",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "À titre dérogatoire ou en raison de circonstances graves et exceptionnelles survenues après le recrutement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00055",
+                  "Lors du renouvellement du contrat (avec avenant).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00056",
+                  "À titre dérogatoire ou en raison de circonstances graves et exceptionnelles survenues après le recrutement.",
+                ),
               ),
             ],
           ),
@@ -335,40 +563,86 @@ class PaReglesEmploiPaPage extends StatelessWidget {
 
           // Discipline + IGPN
           _ConditionCard(
-            title: "Régime disciplinaire & suspension de fonctions",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00057",
+              "Régime disciplinaire & suspension de fonctions",
+            ),
             cardColor: cardDisci,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les sanctions disciplinaires applicables aux policiers adjoints sont prises par le préfet du département d’affectation.\n\n"
-                "Elles sont, par ordre de gravité croissant :",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00058",
+                      "Les sanctions disciplinaires applicables aux policiers adjoints sont prises par le préfet du département d’affectation.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00059",
+                      "Elles sont, par ordre de gravité croissant :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(text: "Avertissement"),
-              _BulletPoint(text: "Blâme"),
               _BulletPoint(
-                text:
-                    "Exclusion temporaire de fonctions (durée maximale : 3 jours).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00060",
+                  "Blâme",
+                ),
               ),
               _BulletPoint(
-                text: "Exclusion temporaire de fonctions (4 jours à 6 mois).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00061",
+                  "Exclusion temporaire de fonctions (durée maximale : 3 jours).",
+                ),
               ),
-              _BulletPoint(text: "Licenciement sans préavis ni indemnité."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00062",
+                  "Exclusion temporaire de fonctions (4 jours à 6 mois).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                  "f00063",
+                  "Licenciement sans préavis ni indemnité.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À titre conservatoire et dans l’intérêt du service, un policier adjoint peut être suspendu de ses fonctions par arrêté du préfet.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00064",
+                      "À titre conservatoire et dans l’intérêt du service, un policier adjoint peut être suspendu de ses fonctions par arrêté du préfet.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Au-delà du contrôle hiérarchique, le policier adjoint est soumis, comme les autres personnels, au contrôle de son activité.\n\n"
-                "L’I.G.P.N. veille au respect, par les policiers, des lois et règlements et du code de déontologie de la Police nationale, "
-                "et effectue les enquêtes qui lui sont confiées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00065",
+                      "Au-delà du contrôle hiérarchique, le policier adjoint est soumis, comme les autres personnels, au contrôle de son activité.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00066",
+                      "L’I.G.P.N. veille au respect, par les policiers, des lois et règlements et du code de déontologie de la Police nationale, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                      "f00067",
+                      "et effectue les enquêtes qui lui sont confiées.",
+                    ),
               ),
             ],
           ),
@@ -376,17 +650,29 @@ class PaReglesEmploiPaPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Note importante",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+              "f00068",
+              "Note importante",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Retiens un réflexe simple : tenue, matériel, fichiers, carte pro, arme… tout s’utilise uniquement pour le service et dans le cadre légal. "
-                        "En cas de doute, tu demandes au chef de service.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                          "f00069",
+                          "Retiens un réflexe simple : tenue, matériel, fichiers, carte pro, arme… tout s’utilise uniquement pour le service et dans le cadre légal. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_pn/pa_regles_emploi_pa_page.dart",
+                          "f00070",
+                          "En cas de doute, tu demandes au chef de service.",
+                        ),
                   ),
                 ],
               ),
@@ -644,9 +930,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

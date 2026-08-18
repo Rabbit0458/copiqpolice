@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -18,7 +19,8 @@ class PaMortInconnueIntroductionPage extends StatefulWidget {
   const PaMortInconnueIntroductionPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/mort_inconnue_intro';
+  static const String routeName =
+      '/pa/dps_dpg/cadres_juridiques/mort_inconnue_intro';
 
   @override
   State<PaMortInconnueIntroductionPage> createState() =>
@@ -55,7 +57,11 @@ class _MortInconnueIntroPageState extends State<PaMortInconnueIntroductionPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LA MORT DE CAUSE INCONNUE OU SUSPECTE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_intro.dart",
+    "f00001",
+    'LA MORT DE CAUSE INCONNUE OU SUSPECTE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -162,7 +168,11 @@ class _MortInconnueIntroPageState extends State<PaMortInconnueIntroductionPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Les dispositions des quatre premiers alinéas sont également applicables en cas de découverte d'une personne grièvement blessée",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_intro.dart",
+                        "f00002",
+                        "Les dispositions des quatre premiers alinéas sont également applicables en cas de découverte d'une personne grièvement blessée",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -277,7 +287,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_intro.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

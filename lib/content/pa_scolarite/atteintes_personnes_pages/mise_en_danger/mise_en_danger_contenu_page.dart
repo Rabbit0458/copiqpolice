@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMiseEnDangerContenuPage extends StatelessWidget {
   const PaMiseEnDangerContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "La mise en danger de la personne",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00003",
+              "La mise en danger de la personne",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux documents essentiels relatifs aux infractions de mise en danger "
-            "et aux comportements pénalement réprimés qui exposent autrui à un risque.",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux documents essentiels relatifs aux infractions de mise en danger ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+                  "f00005",
+                  "et aux comportements pénalement réprimés qui exposent autrui à un risque.",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,9 +88,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           // ================= PDF 1 =================
           _ModuleCard(
             tag: 'mise_en_danger_diffusion_informations',
-            title: "La mise en danger par la diffusion d’informations",
-            subtitle:
-                "Conditions, éléments constitutifs et logique de répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00006",
+              "La mise en danger par la diffusion d’informations",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00007",
+              "Conditions, éléments constitutifs et logique de répression.",
+            ),
             imagePath: 'assets/images/mise_en_danger.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -81,9 +111,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           // ================= PDF 2 =================
           _ModuleCard(
             tag: 'mise_en_danger_non_assistance_peril',
-            title: "La non-assistance à personne en péril",
-            subtitle:
-                "Notion de péril, obligation d’assistance et limites légales.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00008",
+              "La non-assistance à personne en péril",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00009",
+              "Notion de péril, obligation d’assistance et limites légales.",
+            ),
             imagePath: 'assets/images/mise_en_danger.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -97,9 +134,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           // ================= PDF 3 =================
           _ModuleCard(
             tag: 'mise_en_danger_abus_frauduleux_ignorance_faiblesse',
-            title: "L’abus frauduleux de l’état d’ignorance ou de faiblesse",
-            subtitle:
-                "Victime vulnérable, manœuvres, élément intentionnel et preuve.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00010",
+              "L’abus frauduleux de l’état d’ignorance ou de faiblesse",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00011",
+              "Victime vulnérable, manœuvres, élément intentionnel et preuve.",
+            ),
             imagePath: 'assets/images/mise_en_danger.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -113,8 +157,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           // ================= PDF 4 =================
           _ModuleCard(
             tag: 'mise_en_danger_delaissement_personne',
-            title: "Le délaissement d’une personne hors d’état de se protéger",
-            subtitle: "Définition, circonstances, éléments matériels et moral.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00012",
+              "Le délaissement d’une personne hors d’état de se protéger",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00013",
+              "Définition, circonstances, éléments matériels et moral.",
+            ),
             imagePath: 'assets/images/mise_en_danger.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -128,9 +180,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           // ================= PDF 5 =================
           _ModuleCard(
             tag: 'mise_en_danger_non_obstacle_crime_delit',
-            title: "Le non-obstacle à la commission d’un crime ou d’un délit",
-            subtitle:
-                "Cas visés, conditions d’engagement de responsabilité, limites.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00014",
+              "Le non-obstacle à la commission d’un crime ou d’un délit",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00015",
+              "Cas visés, conditions d’engagement de responsabilité, limites.",
+            ),
             imagePath: 'assets/images/mise_en_danger.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -144,9 +203,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           // ================= PDF 6 =================
           _ModuleCard(
             tag: 'mise_en_danger_risque_cause_autrui',
-            title: "Le risque causé à autrui",
-            subtitle:
-                "Mise en danger délibérée, violation d’une obligation, caractérisation.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00016",
+              "Le risque causé à autrui",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00017",
+              "Mise en danger délibérée, violation d’une obligation, caractérisation.",
+            ),
             imagePath: 'assets/images/mise_en_danger.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -161,9 +227,16 @@ class PaMiseEnDangerContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_mise_en_danger',
-            title: 'Quiz — Mise en danger de la personne',
-            subtitle:
-                'Testez vos connaissances sur les notions clés et les infractions du module.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00018",
+              'Quiz — Mise en danger de la personne',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart",
+              "f00019",
+              'Testez vos connaissances sur les notions clés et les infractions du module.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

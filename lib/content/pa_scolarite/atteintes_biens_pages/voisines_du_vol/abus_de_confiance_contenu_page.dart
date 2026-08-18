@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAbusDeConfiancePage extends StatelessWidget {
   const PaAbusDeConfiancePage({super.key});
@@ -56,10 +57,18 @@ class PaAbusDeConfiancePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions voisines du vol",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+            "f00002",
+            "Infractions voisines du vol",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaAbusDeConfiancePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’abus de confiance",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+              "f00003",
+              "L’abus de confiance",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’abus de confiance est le fait, par une personne, de détourner, au préjudice d’autrui, "
-                "des fonds, des valeurs ou un bien quelconque qui lui ont été remis et qu’elle a acceptés "
-                "à charge de les rendre, de les représenter ou d’en faire un usage déterminé.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00005",
+                      "L’abus de confiance est le fait, par une personne, de détourner, au préjudice d’autrui, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00006",
+                      "des fonds, des valeurs ou un bien quelconque qui lui ont été remis et qu’elle a acceptés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00007",
+                      "à charge de les rendre, de les représenter ou d’en faire un usage déterminé.",
+                    ),
               ),
             ],
           ),
@@ -103,21 +132,30 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 314-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00009",
+                    "Article 314-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime l’abus de confiance.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime l’abus de confiance.",
+                  ),
                 ),
               ]),
             ],
@@ -127,41 +165,97 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’abus de confiance est une appropriation frauduleuse de la propriété d’autrui, "
-                "caractérisée par un détournement. L’auteur a légitimement la chose entre les mains "
-                "à titre précaire, après une remise librement consentie en vertu d’un accord.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00012",
+                      "L’abus de confiance est une appropriation frauduleuse de la propriété d’autrui, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00013",
+                      "caractérisée par un détournement. L’auteur a légitimement la chose entre les mains ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00014",
+                      "à titre précaire, après une remise librement consentie en vertu d’un accord.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Une remise préalable de la chose"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00015",
+                  "A) Une remise préalable de la chose",
+                ),
+              ),
               _Paragraph(
-                "La remise est une condition préalable : elle intervient avant le détournement, dans un cadre précis. "
-                "Elle ne confère qu’une détention précaire à celui qui reçoit.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00016",
+                      "La remise est une condition préalable : elle intervient avant le détournement, dans un cadre précis. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00017",
+                      "Elle ne confère qu’une détention précaire à celui qui reçoit.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("1) Cadre juridique de la remise"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00018",
+                  "1) Cadre juridique de la remise",
+                ),
+              ),
               _Paragraph(
-                "La remise peut s’opérer dans différents cadres :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00019",
+                  "La remise peut s’opérer dans différents cadres :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Un cadre contractuel : tout contrat impliquant une remise à titre précaire (louage, crédit-bail, dépôt, gage, nantissement, société, etc.).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00020",
+                  "Un cadre contractuel : tout contrat impliquant une remise à titre précaire (louage, crédit-bail, dépôt, gage, nantissement, société, etc.).",
+                ),
               ),
               _BulletPoint(
-                text: "Des dispositions légales ou réglementaires.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00021",
+                  "Des dispositions légales ou réglementaires.",
+                ),
               ),
-              _BulletPoint(text: "Une décision de justice."),
               _BulletPoint(
-                text:
-                    "Une simple situation de fait : accord non contractuel (relations amicales), sans engagement juridique formel.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00022",
+                  "Une décision de justice.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00023",
+                  "Une simple situation de fait : accord non contractuel (relations amicales), sans engagement juridique formel.",
+                ),
               ),
 
               SizedBox(height: 10),
@@ -169,11 +263,18 @@ class PaAbusDeConfiancePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’abus de confiance ne suppose pas nécessairement une remise en vertu d’un contrat. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00024",
+                      "L’abus de confiance ne suppose pas nécessairement une remise en vertu d’un contrat. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 18 octobre 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00025",
+                      "(Cass. crim., 18 octobre 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -185,27 +286,58 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("2) Contenu de la remise"),
-              _Paragraph("La remise peut porter sur :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00026",
+                  "2) Contenu de la remise",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00027",
+                  "La remise peut porter sur :",
+                ),
+              ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Des fonds : sommes d’argent."),
               _BulletPoint(
-                text:
-                    "Des valeurs : titres négociables (actions, obligations…) ou objets de valeur (bijoux, lingots, tableaux, pièces…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00028",
+                  "Des fonds : sommes d’argent.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Un bien quelconque : tout bien susceptible d’appropriation, mobilier ou immobilier, avec ou sans valeur économique.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00029",
+                  "Des valeurs : titres négociables (actions, obligations…) ou objets de valeur (bijoux, lingots, tableaux, pièces…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00030",
+                  "Un bien quelconque : tout bien susceptible d’appropriation, mobilier ou immobilier, avec ou sans valeur économique.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le bien peut être incorporel s’il est exploitable matériellement (ex. fichier clientèle, scénario, numéro de carte bancaire, connexion internet, temps de travail…). ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00031",
+                      "Le bien peut être incorporel s’il est exploitable matériellement (ex. fichier clientèle, scénario, numéro de carte bancaire, connexion internet, temps de travail…). ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 13 mars 2024, n° 22-83.689)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00032",
+                      "(Cass. crim., 13 mars 2024, n° 22-83.689)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -217,32 +349,98 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("3) Affectation de la remise"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00033",
+                  "3) Affectation de la remise",
+                ),
+              ),
               _Paragraph(
-                "La remise poursuit un but déterminé : le bénéficiaire accepte :\n"
-                "• de rendre (restituer) la chose ;\n"
-                "• de la représenter (la montrer) ;\n"
-                "• ou d’en faire un usage déterminé (utilisation convenue).\n"
-                "Il n’a donc pas la libre disposition : la détention est bien précaire.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00034",
+                      "La remise poursuit un but déterminé : le bénéficiaire accepte :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00035",
+                      "• de rendre (restituer) la chose ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00036",
+                      "• de la représenter (la montrer) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00037",
+                      "• ou d’en faire un usage déterminé (utilisation convenue).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00038",
+                      "Il n’a donc pas la libre disposition : la détention est bien précaire.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un acte matériel de détournement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00039",
+                  "B) Un acte matériel de détournement",
+                ),
+              ),
               _Paragraph(
-                "Le détournement est caractérisé par la non-restitution de la chose remise à titre précaire.\n"
-                "Il peut résulter :\n"
-                "• d’une transgression de l’affectation ;\n"
-                "• d’une aliénation ;\n"
-                "• ou d’une disparition.\n"
-                "Le délit est caractérisé par le seul détournement, sans qu’une mise en demeure de restituer soit nécessaire.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00040",
+                      "Le détournement est caractérisé par la non-restitution de la chose remise à titre précaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00041",
+                      "Il peut résulter :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00042",
+                      "• d’une transgression de l’affectation ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00043",
+                      "• d’une aliénation ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00044",
+                      "• ou d’une disparition.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00045",
+                      "Le délit est caractérisé par le seul détournement, sans qu’une mise en demeure de restituer soit nécessaire.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Aucune mise en demeure nécessaire. "),
                   TextSpan(
-                    text: "(Cass. crim., 24 mars 1969)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00046",
+                      "Aucune mise en demeure nécessaire. ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00047",
+                      "(Cass. crim., 24 mars 1969)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -254,41 +452,84 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Repères pédagogiques (formes fréquentes)"),
-              _BulletPoint(
-                text:
-                    "Usage abusif : en principe seulement civil, sauf abus manifeste directement contraire aux prévisions acceptées.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00048",
+                  "Repères pédagogiques (formes fréquentes)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Retard de restitution : en principe inexécution contractuelle, sauf retard injustifié devenant frauduleux.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00049",
+                  "Usage abusif : en principe seulement civil, sauf abus manifeste directement contraire aux prévisions acceptées.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Refus de restituer : caractérise en principe le détournement, sauf droit de rétention/compensation légitime.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00050",
+                  "Retard de restitution : en principe inexécution contractuelle, sauf retard injustifié devenant frauduleux.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Impossibilité de restituer : si volontaire (hors force majeure/cas fortuit), manifeste la volonté de ne pas respecter la finalité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00051",
+                  "Refus de restituer : caractérise en principe le détournement, sauf droit de rétention/compensation légitime.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00052",
+                  "Impossibilité de restituer : si volontaire (hors force majeure/cas fortuit), manifeste la volonté de ne pas respecter la finalité.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("C) Au préjudice d’autrui"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00053",
+                  "C) Au préjudice d’autrui",
+                ),
+              ),
               _Paragraph(
-                "Le préjudice est un élément essentiel : il suffit que l’acte soit susceptible de priver "
-                "le propriétaire/possesseur de ses droits. Il n’est pas nécessaire que l’auteur ait tiré profit "
-                "ou que le bien soit entré dans son patrimoine.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00054",
+                      "Le préjudice est un élément essentiel : il suffit que l’acte soit susceptible de priver ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00055",
+                      "le propriétaire/possesseur de ses droits. Il n’est pas nécessaire que l’auteur ait tiré profit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00056",
+                      "ou que le bien soit entré dans son patrimoine.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le préjudice peut être réel ou éventuel ; il peut découler de la seule constatation du détournement. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00057",
+                      "Le préjudice peut être réel ou éventuel ; il peut découler de la seule constatation du détournement. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 3 décembre 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00058",
+                      "(Cass. crim., 3 décembre 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -304,35 +545,67 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+              "f00059",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’abus de confiance est un délit intentionnel : aucune condamnation ne peut intervenir "
-                "sans constater le caractère frauduleux des faits.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00060",
+                      "L’abus de confiance est un délit intentionnel : aucune condamnation ne peut intervenir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00061",
+                      "sans constater le caractère frauduleux des faits.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Le caractère frauduleux découle de la conscience : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00062",
+                    "Le caractère frauduleux découle de la conscience : ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "1) de la précarité de la détention, et 2) de l’obligation de restitution / représentation / usage déterminé, ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00063",
+                    "1) de la précarité de la détention, et 2) de l’obligation de restitution / représentation / usage déterminé, ",
+                  ),
                 ),
-                TextSpan(text: "et de la volonté d’y contrevenir."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00064",
+                    "et de la volonté d’y contrevenir.",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’intention frauduleuse peut se déduire des circonstances (présomptions de fraude). ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00065",
+                      "L’intention frauduleuse peut se déduire des circonstances (présomptions de fraude). ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 30 juin 2010)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                      "f00066",
+                      "(Cass. crim., 30 juin 2010)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -348,53 +621,88 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+              "f00067",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 314-1-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00068",
+                    "Article 314-1-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : abus de confiance commis en bande organisée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00069",
+                    " : abus de confiance commis en bande organisée.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 314-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00070",
+                    "Article 314-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : circonstances aggravantes liées notamment à l’appel au public pour obtenir la remise, "
-                      "à l’exercice habituel d’opérations portant sur les biens des tiers, "
-                      "au préjudice d’une association faisant appel au public, "
-                      "ou au préjudice d’une personne vulnérable (âge, maladie, infirmité, déficience, grossesse).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                        "f00071",
+                        " : circonstances aggravantes liées notamment à l’appel au public pour obtenir la remise, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                        "f00072",
+                        "à l’exercice habituel d’opérations portant sur les biens des tiers, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                        "f00073",
+                        "au préjudice d’une association faisant appel au public, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                        "f00074",
+                        "ou au préjudice d’une personne vulnérable (âge, maladie, infirmité, déficience, grossesse).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 314-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00075",
+                    "Article 314-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : aggravation lorsque l’auteur est mandataire de justice ou officier public/ministériel, "
-                      "dans l’exercice, à l’occasion, ou en raison de ses fonctions/qualité.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                        "f00076",
+                        " : aggravation lorsque l’auteur est mandataire de justice ou officier public/ministériel, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                        "f00077",
+                        "dans l’exercice, à l’occasion, ou en raison de ses fonctions/qualité.",
+                      ),
                 ),
               ]),
             ],
@@ -404,142 +712,261 @@ class PaAbusDeConfiancePage extends StatelessWidget {
 
           // Répression + tentative/complicité + immunité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+              "f00078",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
-                TextSpan(
-                  text: "5 ans d’emprisonnement et 375 000 € d’amende. — ",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00079",
+                  "Peines encourues — personnes physiques",
                 ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text: "article 314-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00080",
+                    "Qualification simple : ",
                   ),
                 ),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Bande organisée : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 750 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 314-1-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00081",
+                    "5 ans d’emprisonnement et 375 000 € d’amende. — ",
                   ),
                 ),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Aggravations spécifiques : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 750 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 314-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00082",
+                    "article 314-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Officier public / mandataire de justice : ",
-                ),
-                TextSpan(
-                  text: "10 ans d’emprisonnement et 1 500 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 314-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00083",
+                    "Bande organisée : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00084",
+                    "7 ans d’emprisonnement et 750 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00085",
+                    "article 314-1-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00086",
+                    "Aggravations spécifiques : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00087",
+                    "7 ans d’emprisonnement et 750 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00088",
+                    "article 314-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00089",
+                    "Officier public / mandataire de justice : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00090",
+                    "10 ans d’emprisonnement et 1 500 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00091",
+                    "article 314-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00092",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale selon "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00093",
+                    "Responsabilité pénale selon ",
                   ),
                 ),
-                TextSpan(text: ", pour les infractions des "),
                 TextSpan(
-                  text: "articles 314-1 et 314-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00094",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00095",
+                    ", pour les infractions des ",
                   ),
                 ),
-                TextSpan(text: ", et peines prévues par "),
                 TextSpan(
-                  text: "l’article 314-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00096",
+                    "articles 314-1 et 314-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00097",
+                    ", et peines prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00098",
+                    "l’article 314-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00099",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Tentative : OUI — prévue expressément par ",
-                ),
-                TextSpan(
-                  text: "l’article 314-1-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00100",
+                    "Tentative : OUI — prévue expressément par ",
                   ),
                 ),
-                TextSpan(text: " (toujours punissable)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00101",
+                    "l’article 314-1-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00102",
+                    " (toujours punissable).",
+                  ),
+                ),
               ]),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Complicité : OUI (punissable pour l’infraction consommée ou tentée, personne physique ou morale).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00103",
+                  "Complicité : OUI (punissable pour l’infraction consommée ou tentée, personne physique ou morale).",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Immunité familiale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                  "f00104",
+                  "Immunité familiale",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Immunité familiale : OUI — "),
                 TextSpan(
-                  text: "article 314-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00105",
+                    "Immunité familiale : OUI — ",
                   ),
                 ),
-                TextSpan(text: " renvoyant aux dispositions de "),
                 TextSpan(
-                  text: "l’article 311-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00106",
+                    "article 314-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00107",
+                    " renvoyant aux dispositions de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart",
+                    "f00108",
+                    "l’article 311-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -798,9 +1225,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

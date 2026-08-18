@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ParticipationGroupementViolentPage extends StatelessWidget {
   const ParticipationGroupementViolentPage({super.key});
@@ -59,10 +60,18 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes involontaires",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+            "f00002",
+            "Atteintes involontaires",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La participation à un groupement violent",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+              "f00003",
+              "La participation à un groupement violent",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour une personne, de participer sciemment à un groupement, même formé de façon temporaire, "
-                "en vue de la préparation, caractérisée par un ou plusieurs faits matériels, de violences volontaires "
-                "contre les personnes ou de destructions ou dégradations de biens, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00005",
+                      "Le fait, pour une personne, de participer sciemment à un groupement, même formé de façon temporaire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00006",
+                      "en vue de la préparation, caractérisée par un ou plusieurs faits matériels, de violences volontaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00007",
+                      "contre les personnes ou de destructions ou dégradations de biens, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,22 +135,30 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-14-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00009",
+                    "Article 222-14-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la participation à un groupement violent.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00010",
+                    " : définit et réprime la participation à un groupement violent.",
+                  ),
                 ),
               ]),
             ],
@@ -131,37 +168,92 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Cette infraction vise spécifiquement la participation à une « bande » ayant l’intention de commettre, "
-                "de manière concertée, des violences contre les personnes ou des atteintes aux biens. "
-                "Elle a pour objectif de compléter l’incrimination d’association de malfaiteurs, limitée aux projets "
-                "de délits punis d’au moins cinq ans d’emprisonnement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00012",
+                      "Cette infraction vise spécifiquement la participation à une « bande » ayant l’intention de commettre, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00013",
+                      "de manière concertée, des violences contre les personnes ou des atteintes aux biens. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00014",
+                      "Elle a pour objectif de compléter l’incrimination d’association de malfaiteurs, limitée aux projets ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00015",
+                      "de délits punis d’au moins cinq ans d’emprisonnement.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "A) Participer à un groupement, même formé temporairement",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00016",
+                  "A) Participer à un groupement, même formé temporairement",
+                ),
               ),
               _Paragraph(
-                "Le groupement est ici le moyen de préparation, et non l’objet même de l’infraction. "
-                "Ce n’est ni une association de malfaiteurs (pas la même constance/organisation), "
-                "ni une bande organisée, ni un attroupement.\n\n"
-                "Il s’agit le plus souvent de « bandes » : parfois spontanées, parfois plus structurées, "
-                "composées de membres réguliers ou occasionnels.\n\n"
-                "La simple présence peut suffire à caractériser la participation, même brève, dès lors que la personne "
-                "s’intègre au groupement. Il n’est pas nécessaire de prendre part soi-même aux actes préparatoires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00017",
+                      "Le groupement est ici le moyen de préparation, et non l’objet même de l’infraction. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00018",
+                      "Ce n’est ni une association de malfaiteurs (pas la même constance/organisation), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00019",
+                      "ni une bande organisée, ni un attroupement.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00020",
+                      "Il s’agit le plus souvent de « bandes » : parfois spontanées, parfois plus structurées, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00021",
+                      "composées de membres réguliers ou occasionnels.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00022",
+                      "La simple présence peut suffire à caractériser la participation, même brève, dès lors que la personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00023",
+                      "s’intègre au groupement. Il n’est pas nécessaire de prendre part soi-même aux actes préparatoires.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’infraction ne réprime pas le simple fait d’être en groupe : une promenade pacifique entre amis n’est pas visée.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00024",
+                      "L’infraction ne réprime pas le simple fait d’être en groupe : une promenade pacifique entre amis n’est pas visée.",
+                    ),
                   ),
                 ],
               ),
@@ -169,48 +261,91 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) En vue d’une préparation caractérisée par un ou plusieurs faits matériels",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00025",
+                  "B) En vue d’une préparation caractérisée par un ou plusieurs faits matériels",
+                ),
               ),
               _Paragraph(
-                "Les actes préparatoires, situés en amont des violences/destructions, traduisent l’intention délictueuse. "
-                "Ils doivent être établis à partir de faits matériels (indices concrets).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00026",
+                      "Les actes préparatoires, situés en amont des violences/destructions, traduisent l’intention délictueuse. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00027",
+                      "Ils doivent être établis à partir de faits matériels (indices concrets).",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Port de barres de fer, battes, objets contondants, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00028",
+                  "Port de barres de fer, battes, objets contondants, etc.",
+                ),
               ),
               _BulletPoint(
-                text: "Port de cagoules / dissimulation du visage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00029",
+                  "Port de cagoules / dissimulation du visage.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Publications ou messages annonçant des violences (blog, réseaux sociaux).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00030",
+                  "Publications ou messages annonçant des violences (blog, réseaux sociaux).",
+                ),
               ),
               _BulletPoint(
-                text: "Envois de SMS / messages coordonnant l’action.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00031",
+                  "Envois de SMS / messages coordonnant l’action.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) But : violences volontaires contre les personnes ou destructions/dégradations",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00032",
+                  "C) But : violences volontaires contre les personnes ou destructions/dégradations",
+                ),
               ),
               _Paragraph(
-                "La réalisation des violences ou destructions n’est pas nécessaire : l’infraction permet "
-                "d’intervenir avant le passage à l’acte, avec une visée principalement préventive.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00033",
+                      "La réalisation des violences ou destructions n’est pas nécessaire : l’infraction permet ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00034",
+                      "d’intervenir avant le passage à l’acte, avec une visée principalement préventive.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Exemple de référence liée aux violences psychologiques : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00035",
+                    "Exemple de référence liée aux violences psychologiques : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-14-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00036",
+                    "article 222-14-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -221,42 +356,81 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+              "f00037",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Participation sciemment au groupement"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00038",
+                  "A) Participation sciemment au groupement",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit participer de manière intentionnelle. Le texte vise à exclure toute incrimination "
-                "de la personne qui se trouverait mêlée malgré elle à un groupement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00039",
+                      "L’auteur doit participer de manière intentionnelle. Le texte vise à exclure toute incrimination ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                      "f00040",
+                      "de la personne qui se trouverait mêlée malgré elle à un groupement.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Connaissance des faits de préparation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00041",
+                  "B) Connaissance des faits de préparation",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "L’auteur participe sciemment au groupement en ayant connaissance des faits matériels de préparation, "
-                      "qu’il les ait accomplis lui-même ou qu’ils aient été commis par d’autres. ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                        "f00042",
+                        "L’auteur participe sciemment au groupement en ayant connaissance des faits matériels de préparation, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                        "f00043",
+                        "qu’il les ait accomplis lui-même ou qu’ils aient été commis par d’autres. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., n° 24-80.051, 5 février 2025)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00044",
+                    "(Cass. crim., n° 24-80.051, 5 février 2025)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Soit il a personnellement réalisé un ou plusieurs faits matériels de préparation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00045",
+                  "Soit il a personnellement réalisé un ou plusieurs faits matériels de préparation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Soit il a connaissance de tels faits réalisés par d’autres membres du groupement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00046",
+                  "Soit il a connaissance de tels faits réalisés par d’autres membres du groupement.",
+                ),
               ),
             ],
           ),
@@ -265,13 +439,21 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+              "f00047",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est prévue.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00048",
+                  "Aucune circonstance aggravante spécifique n’est prévue.",
+                ),
               ),
             ],
           ),
@@ -280,68 +462,124 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+              "f00049",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00050",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification : délit — "),
                 TextSpan(
-                  text: "article 222-14-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00051",
+                    "Qualification : délit — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00052",
+                    "article 222-14-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "1 an d’emprisonnement."),
-              _BulletPoint(text: "15 000 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00053",
+                  "1 an d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00054",
+                  "15 000 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00055",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La responsabilité pénale des personnes morales peut être engagée conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00056",
+                    "La responsabilité pénale des personnes morales peut être engagée conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 222-16-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00057",
+                    "l’article 222-16-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00058",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : NON (non punissable faute de disposition expresse en matière correctionnelle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                  "f00059",
+                  "Tentative : NON (non punissable faute de disposition expresse en matière correctionnelle).",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément aux "),
                 TextSpan(
-                  text: "articles 121-6",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00060",
+                    "Complicité : OUI, conformément aux ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00061",
+                    "articles 121-6",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteintes_involontaires/participation_groupement_violent_page.dart",
+                    "f00062",
+                    "121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -599,9 +837,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EnregistrementDiffusionImagesContenuPage extends StatelessWidget {
   const EnregistrementDiffusionImagesContenuPage({super.key});
@@ -25,10 +26,18 @@ class EnregistrementDiffusionImagesContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -43,7 +52,11 @@ class EnregistrementDiffusionImagesContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Enregistrement & diffusion d’images",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+              "f00003",
+              "Enregistrement & diffusion d’images",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,8 +66,16 @@ class EnregistrementDiffusionImagesContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux documents essentiels relatifs à l’enregistrement et à la diffusion d’images "
-            "(qualification, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux documents essentiels relatifs à l’enregistrement et à la diffusion d’images ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+                  "f00005",
+                  "(qualification, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -67,8 +88,16 @@ class EnregistrementDiffusionImagesContenuPage extends StatelessWidget {
           // ================= PDF 1 =================
           _ModuleCard(
             tag: 'enregistrement_images',
-            title: "L’enregistrement d’images",
-            subtitle: "Définition, conditions de caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+              "f00006",
+              "L’enregistrement d’images",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+              "f00007",
+              "Définition, conditions de caractérisation et sanctions.",
+            ),
             imagePath: 'assets/images/refus_verifications.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -82,9 +111,16 @@ class EnregistrementDiffusionImagesContenuPage extends StatelessWidget {
           // ================= PDF 2 =================
           _ModuleCard(
             tag: 'diffusion_images',
-            title: "La diffusion d’images",
-            subtitle:
-                "Éléments constitutifs, aggravations et régime de répression.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+              "f00008",
+              "La diffusion d’images",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+              "f00009",
+              "Éléments constitutifs, aggravations et régime de répression.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -99,9 +135,16 @@ class EnregistrementDiffusionImagesContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_enregistrement_diffusion_images',
-            title: 'Quiz — Enregistrement & diffusion d’images',
-            subtitle:
-                'Testez vos connaissances : qualifications, éléments constitutifs, circonstances et répression.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+              "f00010",
+              'Quiz — Enregistrement & diffusion d’images',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart",
+              "f00011",
+              'Testez vos connaissances : qualifications, éléments constitutifs, circonstances et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

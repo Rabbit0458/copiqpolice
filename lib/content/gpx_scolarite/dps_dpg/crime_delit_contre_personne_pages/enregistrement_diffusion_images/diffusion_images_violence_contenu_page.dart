@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DiffusionImagesViolenceContenuPage extends StatelessWidget {
   const DiffusionImagesViolenceContenuPage({super.key});
@@ -66,10 +67,18 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre la personne",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La diffusion d’images de violence",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+              "f00003",
+              "La diffusion d’images de violence",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,14 +109,26 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de diffuser l’enregistrement d’images relatives à la commission d’atteintes volontaires "
-                "à l’intégrité de la personne (liste limitative du Code pénal) constitue une infraction autonome.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00005",
+                      "Le fait de diffuser l’enregistrement d’images relatives à la commission d’atteintes volontaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00006",
+                      "à l’intégrité de la personne (liste limitative du Code pénal) constitue une infraction autonome.",
+                    ),
               ),
             ],
           ),
@@ -112,19 +137,41 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (article en rouge)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-33-3 alinéa 2 du Code pénal"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00008",
+                    "Article 222-33-3 alinéa 2 du Code pénal",
+                  ),
+                ),
                 _t(
-                  " : incrimine et réprime le fait de diffuser l’enregistrement d’images relatives "
-                  "aux infractions prévues aux ",
+                  ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                        "f00009",
+                        " : incrimine et réprime le fait de diffuser l’enregistrement d’images relatives ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                        "f00010",
+                        "aux infractions prévues aux ",
+                      ),
                 ),
                 _law(
-                  "articles 222-1 à 222-14-1, 222-23 à 222-31 et 222-33 du Code pénal",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00011",
+                    "articles 222-1 à 222-14-1, 222-23 à 222-31 et 222-33 du Code pénal",
+                  ),
                 ),
                 _t("."),
               ]),
@@ -135,92 +182,236 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Une diffusion d’images de violence"),
-              const _Paragraph(
-                "La diffusion d’images de violences est érigée en infraction autonome : "
-                "il ne s’agit pas seulement d’un acte de complicité.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00013",
+                  "A) Une diffusion d’images de violence",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00014",
+                      "La diffusion d’images de violences est érigée en infraction autonome : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00015",
+                      "il ne s’agit pas seulement d’un acte de complicité.",
+                    ),
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Nature des violences concernées (liste limitative)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00016",
+                  "B) Nature des violences concernées (liste limitative)",
+                ),
               ),
-              const _Paragraph(
-                "Les violences visées sont limitativement énumérées. Les infractions voisines non citées "
-                "sont exclues du champ d’application.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00017",
+                      "Les violences visées sont limitativement énumérées. Les infractions voisines non citées ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00018",
+                      "sont exclues du champ d’application.",
+                    ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(text: "Tortures et actes de barbarie."),
-              const _BulletPoint(
-                text:
-                    "Violences délictuelles même aggravées (hors violences sur FSI prévues à l’article 222-14-5).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00019",
+                  "Tortures et actes de barbarie.",
+                ),
               ),
-              const _BulletPoint(text: "Viol."),
-              const _BulletPoint(text: "Agressions sexuelles délictuelles."),
-              const _BulletPoint(
-                text:
-                    "Administration d’une substance afin de commettre un viol ou une agression sexuelle.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00020",
+                  "Violences délictuelles même aggravées (hors violences sur FSI prévues à l’article 222-14-5).",
+                ),
               ),
-              const _BulletPoint(text: "Harcèlement sexuel."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00021",
+                  "Viol.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00022",
+                  "Agressions sexuelles délictuelles.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00023",
+                  "Administration d’une substance afin de commettre un viol ou une agression sexuelle.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00024",
+                  "Harcèlement sexuel.",
+                ),
+              ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _t("Référence : "),
-                _law("article 222-33-3 du Code pénal"),
+                _t(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00025",
+                    "Référence : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00026",
+                    "article 222-33-3 du Code pénal",
+                  ),
+                ),
                 _t("."),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("C) L’acte de diffusion"),
-              const _Paragraph(
-                "La diffusion s’entend largement : répandre, émettre, transmettre. "
-                "Cela peut aller d’un transfert entre téléphones à une mise en ligne sur Internet, "
-                "ou encore le prêt de l’original / la distribution de copies.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00027",
+                  "C) L’acte de diffusion",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00028",
+                      "La diffusion s’entend largement : répandre, émettre, transmettre. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00029",
+                      "Cela peut aller d’un transfert entre téléphones à une mise en ligne sur Internet, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                      "f00030",
+                      "ou encore le prêt de l’original / la distribution de copies.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Il n’est pas nécessaire que le diffuseur soit l’auteur de l’enregistrement : "
-                        "la responsabilité peut être engagée dès lors qu’il autorise (même tacitement) "
-                        "la diffusion d’images dont il connaît le caractère illicite.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00031",
+                          "Il n’est pas nécessaire que le diffuseur soit l’auteur de l’enregistrement : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00032",
+                          "la responsabilité peut être engagée dès lors qu’il autorise (même tacitement) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00033",
+                          "la diffusion d’images dont il connaît le caractère illicite.",
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("D) Faits justificatifs"),
-              const _Paragraph(
-                "Le texte prévoit des hypothèses limitatives où l’enregistrement/diffusion n’est pas applicable.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00034",
+                  "D) Faits justificatifs",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00035",
+                  "Le texte prévoit des hypothèses limitatives où l’enregistrement/diffusion n’est pas applicable.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Exception d’information",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00036",
+                  "Exception d’information",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La diffusion est justifiée lorsqu’elle est effectuée par des professionnels de l’information. "
-                        "La liberté d’informer peut justifier la reproduction d’une image d’actualité, sous réserve du respect "
-                        "de la loi du 29 juillet 1881 (notamment dignité et non-identification).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00037",
+                          "La diffusion est justifiée lorsqu’elle est effectuée par des professionnels de l’information. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00038",
+                          "La liberté d’informer peut justifier la reproduction d’une image d’actualité, sous réserve du respect ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00039",
+                          "de la loi du 29 juillet 1881 (notamment dignité et non-identification).",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Exception probatoire",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00040",
+                  "Exception probatoire",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Elle est difficilement applicable à la diffusion : si la personne diffuse les images, "
-                        "l’infraction est en principe constituée. Il paraît incompatible qu’une diffusion TV/Internet "
-                        "serve « de preuve ».",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00041",
+                          "Elle est difficilement applicable à la diffusion : si la personne diffuse les images, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00042",
+                          "l’infraction est en principe constituée. Il paraît incompatible qu’une diffusion TV/Internet ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                          "f00043",
+                          "serve « de preuve ».",
+                        ),
                   ),
                 ],
               ),
@@ -231,19 +422,43 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+              "f00044",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance du contenu des images"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00045",
+                  "A) Connaissance du contenu des images",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit savoir que les images qu’il diffuse sont des images d’atteintes à l’intégrité physique des personnes.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00046",
+                  "L’auteur doit savoir que les images qu’il diffuse sont des images d’atteintes à l’intégrité physique des personnes.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Volonté de diffuser"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00047",
+                  "B) Volonté de diffuser",
+                ),
+              ),
               _Paragraph(
-                "La diffusion doit être intentionnelle : l’auteur transmet volontairement des images de violences qu’il détient.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00048",
+                  "La diffusion doit être intentionnelle : l’auteur transmet volontairement des images de violences qu’il détient.",
+                ),
               ),
             ],
           ),
@@ -252,13 +467,21 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+              "f00049",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00050",
+                  "Aucune circonstance aggravante spécifique n’est prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -267,36 +490,102 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
 
           // Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+              "f00051",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00052",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Délit — "),
-                _law("article 222-33-3 alinéa 2 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00053",
+                    "Délit — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00054",
+                    "article 222-33-3 alinéa 2 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: " : "),
-                const TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende.",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00055",
+                    "5 ans d’emprisonnement et 75 000 € d’amende.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              const _Paragraph(
-                "Les personnes morales peuvent être déclarées pénalement responsables.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00056",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00057",
+                  "Les personnes morales peuvent être déclarées pénalement responsables.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00058",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                  "f00059",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
-                _law("l’article 121-6 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00060",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00061",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _law("l’article 121-7 du Code pénal"),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart",
+                    "f00062",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GpxFormationInitialeFormationPage extends StatelessWidget {
   const GpxFormationInitialeFormationPage({super.key});
@@ -50,10 +51,18 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Formation initiale",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+            "f00002",
+            "Formation initiale",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La formation initiale des gardiens de la paix",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00003",
+              "La formation initiale des gardiens de la paix",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -80,28 +93,53 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
 
           // Intro
           _ConditionCard(
-            title: "Vue d’ensemble",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00004",
+              "Vue d’ensemble",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La formation initiale des gardiens de la paix se déroule sur 24 mois : "
-                "12 mois en tant qu’élèves dans une école de police, puis 12 mois en tant que gardiens de la paix stagiaires "
-                "dans leur premier service d’affectation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00005",
+                      "La formation initiale des gardiens de la paix se déroule sur 24 mois : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00006",
+                      "12 mois en tant qu’élèves dans une école de police, puis 12 mois en tant que gardiens de la paix stagiaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00007",
+                      "dans leur premier service d’affectation.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Les 16 premières semaines : programme commun aux élèves policiers adjoints et aux élèves gardiens de la paix.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00008",
+                  "Les 16 premières semaines : programme commun aux élèves policiers adjoints et aux élèves gardiens de la paix.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "À l’issue des 16 semaines : les policiers adjoints rejoignent leur service d’affectation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00009",
+                  "À l’issue des 16 semaines : les policiers adjoints rejoignent leur service d’affectation.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Des élèves gardiens de la paix (anciens P.A. affectés depuis moins de 2 ans et titulaires de l’unité de valeur « socle initial FI PA/GPX ») sont incorporés en nombre équivalent.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00010",
+                  "Des élèves gardiens de la paix (anciens P.A. affectés depuis moins de 2 ans et titulaires de l’unité de valeur « socle initial FI PA/GPX ») sont incorporés en nombre équivalent.",
+                ),
               ),
             ],
           ),
@@ -110,26 +148,40 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
 
           // Nota UV + module e-formation
           _ConditionCard(
-            title: "À retenir",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00011",
+              "À retenir",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À titre transitoire, les P.A. formés en 16 semaines avant l’entrée en vigueur de la scolarité P.A./GPX sont réputés lauréats de l’U.V.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00012",
+                      "À titre transitoire, les P.A. formés en 16 semaines avant l’entrée en vigueur de la scolarité P.A./GPX sont réputés lauréats de l’U.V.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "E-formation",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00013",
+                  "E-formation",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Préalablement à leur incorporation, ils suivent un module e-formation d’une durée de 06h00.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00014",
+                      "Préalablement à leur incorporation, ils suivent un module e-formation d’une durée de 06h00.",
+                    ),
                   ),
                 ],
               ),
@@ -140,29 +192,65 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
 
           // I. Organisation
           _ConditionCard(
-            title: "I — Organisation de la formation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00015",
+              "I — Organisation de la formation",
+            ),
             cardColor: cardOrg,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La progression pédagogique de la formation initiale est structurée en cinq phases d’apprentissages.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00016",
+                  "La progression pédagogique de la formation initiale est structurée en cinq phases d’apprentissages.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Les 5 phases"),
-              _BulletPoint(
-                text:
-                    "Socle initial : 16 semaines (sections composées d’élèves P.A. et d’élèves G.P.X.).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00017",
+                  "Les 5 phases",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Alternance : 2 semaines (ou reprise pédagogique d’une durée équivalente pour les titulaires de l’U.V. « socle initial FI PA/GPX »).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00018",
+                  "Socle initial : 16 semaines (sections composées d’élèves P.A. et d’élèves G.P.X.).",
+                ),
               ),
-              _BulletPoint(text: "Socle avancé — 1ère partie : 18 semaines."),
               _BulletPoint(
-                text: "Alternance : 3 semaines (service opérationnel).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00019",
+                  "Alternance : 2 semaines (ou reprise pédagogique d’une durée équivalente pour les titulaires de l’U.V. « socle initial FI PA/GPX »).",
+                ),
               ),
-              _BulletPoint(text: "Socle avancé — 2ème partie : 8 semaines."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00020",
+                  "Socle avancé — 1ère partie : 18 semaines.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00021",
+                  "Alternance : 3 semaines (service opérationnel).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00022",
+                  "Socle avancé — 2ème partie : 8 semaines.",
+                ),
+              ),
             ],
           ),
 
@@ -170,85 +258,190 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
 
           // Phases détaillées
           _ConditionCard(
-            title: "Détail des phases",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00023",
+              "Détail des phases",
+            ),
             cardColor: cardPhases,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) 1ère phase — Socle initial (16 semaines)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00024",
+                  "A) 1ère phase — Socle initial (16 semaines)",
+                ),
+              ),
               _Paragraph(
-                "Ces 16 semaines sont consacrées à l’étude des fondamentaux (institution policière et ses valeurs, bases juridiques, dimension humaine) "
-                "et à des situations professionnelles (relation police/population, interpellation, violences intra-familiales, sécurité routière).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00025",
+                      "Ces 16 semaines sont consacrées à l’étude des fondamentaux (institution policière et ses valeurs, bases juridiques, dimension humaine) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00026",
+                      "et à des situations professionnelles (relation police/population, interpellation, violences intra-familiales, sécurité routière).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Elles comprennent aussi l’apprentissage des Techniques de Sécurité et d’Intervention (T.S.I.), du secourisme, "
-                "l’aptitude à l’usage du P.A. SIG SAUER, l’habilitation aux bâtons de police, ainsi que l’utilisation des outils numériques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00027",
+                      "Elles comprennent aussi l’apprentissage des Techniques de Sécurité et d’Intervention (T.S.I.), du secourisme, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00028",
+                      "l’aptitude à l’usage du P.A. SIG SAUER, l’habilitation aux bâtons de police, ainsi que l’utilisation des outils numériques.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) 2ème phase — Alternance (2 semaines) / Reprise pédagogique",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00029",
+                  "B) 2ème phase — Alternance (2 semaines) / Reprise pédagogique",
+                ),
               ),
               _Paragraph(
-                "Cette première période d’alternance est un stage de 2 semaines, permettant aux élèves incorporés dès le début "
-                "de découvrir les services et les missions d’un commissariat.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00030",
+                      "Cette première période d’alternance est un stage de 2 semaines, permettant aux élèves incorporés dès le début ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00031",
+                      "de découvrir les services et les missions d’un commissariat.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Durant cette période, 3 jours en service d’investigation permettent d’identifier les différents acteurs de l’enquête "
-                "et du procès pénal.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00032",
+                      "Durant cette période, 3 jours en service d’investigation permettent d’identifier les différents acteurs de l’enquête ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00033",
+                      "et du procès pénal.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La reprise pédagogique (pour les élèves titulaires de l’U.V. « socle initial FI PA/GPX » incorporés à la 17ème semaine) "
-                "comporte notamment des enseignements généraux et des enseignements relatifs à la T.S.I., à la dimension humaine du métier "
-                "de policier et au numérique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00034",
+                      "La reprise pédagogique (pour les élèves titulaires de l’U.V. « socle initial FI PA/GPX » incorporés à la 17ème semaine) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00035",
+                      "comporte notamment des enseignements généraux et des enseignements relatifs à la T.S.I., à la dimension humaine du métier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00036",
+                      "de policier et au numérique.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) 3ème phase — Socle avancé (1ère partie : 18 semaines)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00037",
+                  "C) 3ème phase — Socle avancé (1ère partie : 18 semaines)",
+                ),
               ),
               _Paragraph(
-                "Cette phase approfondit les contenus techniques, juridiques et humains du socle initial.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00038",
+                  "Cette phase approfondit les contenus techniques, juridiques et humains du socle initial.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Aborde l’exercice de la qualité d’agent de police judiciaire (A.P.J. 20).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00039",
+                  "Aborde l’exercice de la qualité d’agent de police judiciaire (A.P.J. 20).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dispense le module 1 de préparation à la qualification d’officier de police judiciaire (O.P.J. 16) : 6 semaines.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00040",
+                  "Dispense le module 1 de préparation à la qualification d’officier de police judiciaire (O.P.J. 16) : 6 semaines.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Délivre des habilitations TSI spécifiques (HK UMP 9 MM, DIVA) et des sensibilisations indispensables (PIE, HK G36).",
-              ),
-
-              SizedBox(height: 14),
-
-              _SubTitle("D) 4ème phase — Alternance (3 semaines)"),
-              _Paragraph(
-                "Cette deuxième période d’alternance est un stage de 3 semaines en service opérationnel, dont une semaine en service d’investigations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00041",
+                  "Délivre des habilitations TSI spécifiques (HK UMP 9 MM, DIVA) et des sensibilisations indispensables (PIE, HK G36).",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "E) 5ème phase — Socle avancé (2ème partie : 8 semaines)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00042",
+                  "D) 4ème phase — Alternance (3 semaines)",
+                ),
               ),
               _Paragraph(
-                "Cette dernière phase comprend un tronc commun, un module de spécialisation métier (M.S.M.) et la semaine de fin de promotion.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00043",
+                  "Cette deuxième période d’alternance est un stage de 3 semaines en service opérationnel, dont une semaine en service d’investigations.",
+                ),
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00044",
+                  "E) 5ème phase — Socle avancé (2ème partie : 8 semaines)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00045",
+                  "Cette dernière phase comprend un tronc commun, un module de spécialisation métier (M.S.M.) et la semaine de fin de promotion.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le tronc commun, durant les 4 semaines précédant le choix des postes, inclut l’étude de situations professionnelles "
-                "(stupéfiants, milieu confiné, renseignement) et des apprentissages complémentaires (ex : laïcité, maltraitance animale) "
-                "ainsi que des apprentissages spécifiques T.S.I.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00046",
+                      "Le tronc commun, durant les 4 semaines précédant le choix des postes, inclut l’étude de situations professionnelles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00047",
+                      "(stupéfiants, milieu confiné, renseignement) et des apprentissages complémentaires (ex : laïcité, maltraitance animale) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00048",
+                      "ainsi que des apprentissages spécifiques T.S.I.",
+                    ),
               ),
             ],
           ),
@@ -257,30 +450,57 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
 
           // MSM
           _ConditionCard(
-            title: "Modules de spécialisation métier (M.S.M.)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00049",
+              "Modules de spécialisation métier (M.S.M.)",
+            ),
             cardColor: cardPhases,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En fonction de l’affectation choisie, les élèves suivent pendant 3 semaines le module de spécialisation adapté à leur future direction d’emploi.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00050",
+                  "En fonction de l’affectation choisie, les élèves suivent pendant 3 semaines le module de spécialisation adapté à leur future direction d’emploi.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "M.S.M. Compagnies Républicaines de Sécurité (CRS).",
-              ),
-              _BulletPoint(text: "M.S.M. Police Aux Frontières (PAF)."),
-              _BulletPoint(
-                text:
-                    "M.S.M. Investigations (PP/DSPAP/SAIP : Préfecture de police de Paris / Direction de la Sécurité de Proximité de l’Agglomération Parisienne / Service de l’Accueil et de l’Investigation de Proximité).",
-              ),
-              _BulletPoint(
-                text:
-                    "M.S.M. Protection et ordre public (PP/DOPC, SDLP : Préfecture de police de Paris / Direction de l’Ordre Public et de la Circulation / Service de la Protection).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00051",
+                  "M.S.M. Compagnies Républicaines de Sécurité (CRS).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "M.S.M. Sécurité générale (DNSP, PP/DSPAP : Direction Nationale de la Sécurité Publique / Préfecture de police de Paris / Direction de la Sécurité de Proximité de l’Agglomération Parisienne).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00052",
+                  "M.S.M. Police Aux Frontières (PAF).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00053",
+                  "M.S.M. Investigations (PP/DSPAP/SAIP : Préfecture de police de Paris / Direction de la Sécurité de Proximité de l’Agglomération Parisienne / Service de l’Accueil et de l’Investigation de Proximité).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00054",
+                  "M.S.M. Protection et ordre public (PP/DOPC, SDLP : Préfecture de police de Paris / Direction de l’Ordre Public et de la Circulation / Service de la Protection).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00055",
+                  "M.S.M. Sécurité générale (DNSP, PP/DSPAP : Direction Nationale de la Sécurité Publique / Préfecture de police de Paris / Direction de la Sécurité de Proximité de l’Agglomération Parisienne).",
+                ),
               ),
             ],
           ),
@@ -289,44 +509,113 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
 
           // II. Evaluation
           _ConditionCard(
-            title: "II — Évaluation de l’aptitude professionnelle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00056",
+              "II — Évaluation de l’aptitude professionnelle",
+            ),
             cardColor: cardEval,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les évaluations portent sur : le discernement professionnel, l’implication personnelle, le respect déontologique, "
-                "les connaissances théoriques fondamentales, les savoir-faire en situation, les acquis techniques, la condition physique "
-                "et la maîtrise des applications informatiques professionnelles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00057",
+                      "Les évaluations portent sur : le discernement professionnel, l’implication personnelle, le respect déontologique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00058",
+                      "les connaissances théoriques fondamentales, les savoir-faire en situation, les acquis techniques, la condition physique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00059",
+                      "et la maîtrise des applications informatiques professionnelles.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les épreuves peuvent consister en : rédaction d’actes administratifs/judiciaires, réponses à des questions, résolution de cas pratiques, "
-                "réalisation d’exercices techniques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00060",
+                      "Les épreuves peuvent consister en : rédaction d’actes administratifs/judiciaires, réponses à des questions, résolution de cas pratiques, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00061",
+                      "réalisation d’exercices techniques.",
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("Trois types d’évaluations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00062",
+                  "Trois types d’évaluations",
+                ),
+              ),
               _Paragraph(
-                "1) Évaluations en « acquis / non acquis » pendant le socle initial :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00063",
+                  "1) Évaluations en « acquis / non acquis » pendant le socle initial :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Compétences numériques."),
               _BulletPoint(
-                text: "Test d’Endurance Cardio-Respiratoire 1 (TECR1).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00064",
+                  "Compétences numériques.",
+                ),
               ),
-              _BulletPoint(text: "Aptitude SIG."),
-              _BulletPoint(text: "Contrôle Écrit École 1 (CEE1)."),
               _BulletPoint(
-                text: "Main Courante Police Nationale (MCPN).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00065",
+                  "Test d’Endurance Cardio-Respiratoire 1 (TECR1).",
+                ),
               ),
-              _BulletPoint(text: "Contrôle École de Simulation (CES)."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00066",
+                  "Aptitude SIG.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00067",
+                  "Contrôle Écrit École 1 (CEE1).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00068",
+                  "Main Courante Police Nationale (MCPN).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00069",
+                  "Contrôle École de Simulation (CES).",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La validation de cinq compétences est nécessaire à l’acquisition de l’unité de valeur commune aux deux publics.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00070",
+                      "La validation de cinq compétences est nécessaire à l’acquisition de l’unité de valeur commune aux deux publics.",
+                    ),
                   ),
                 ],
               ),
@@ -334,29 +623,87 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _Paragraph(
-                "2) Évaluations en « acquis / non acquis » pendant la 1ère partie du socle avancé :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00071",
+                  "2) Évaluations en « acquis / non acquis » pendant la 1ère partie du socle avancé :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "CEE2."),
-              _BulletPoint(text: "Épreuve LRPPN."),
               _BulletPoint(
-                text: "Techniques de Défense et d’Intervention (TDI).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00072",
+                  "CEE2.",
+                ),
               ),
-              _BulletPoint(text: "Armement."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00073",
+                  "Épreuve LRPPN.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00074",
+                  "Techniques de Défense et d’Intervention (TDI).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00075",
+                  "Armement.",
+                ),
+              ),
 
               SizedBox(height: 14),
 
               _Paragraph(
-                "3) Évaluations notées pendant la 1ère partie du socle avancé :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00076",
+                  "3) Évaluations notées pendant la 1ère partie du socle avancé :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Contrôle National Judiciaire (CNJ)."),
-              _BulletPoint(text: "Vacation."),
-              _BulletPoint(text: "TECR 2."),
               _BulletPoint(
-                text: "Contrôle national Emploi Des Armes (EDA) 1 PM HK UMP.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00077",
+                  "Contrôle National Judiciaire (CNJ).",
+                ),
               ),
-              _BulletPoint(text: "Contrôle national EDA 2 au PA SIG."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00078",
+                  "Vacation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00079",
+                  "TECR 2.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00080",
+                  "Contrôle national Emploi Des Armes (EDA) 1 PM HK UMP.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                  "f00081",
+                  "Contrôle national EDA 2 au PA SIG.",
+                ),
+              ),
 
               SizedBox(height: 14),
 
@@ -365,15 +712,31 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le jury d’aptitude professionnelle (J.A.P.) se réunit à l’issue des évaluations et se prononce sur l’aptitude "
-                        "des élèves à être nommés gardiens de la paix stagiaires ou sur un éventuel redoublement.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                          "f00082",
+                          "Le jury d’aptitude professionnelle (J.A.P.) se réunit à l’issue des évaluations et se prononce sur l’aptitude ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                          "f00083",
+                          "des élèves à être nommés gardiens de la paix stagiaires ou sur un éventuel redoublement.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les élèves inscrits sur la liste d’aptitude choisissent leur première affectation dans la liste des postes proposés, "
-                "selon leur rang dans le classement national établi au vu des évaluations chiffrées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00084",
+                      "Les élèves inscrits sur la liste d’aptitude choisissent leur première affectation dans la liste des postes proposés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00085",
+                      "selon leur rang dans le classement national établi au vu des évaluations chiffrées.",
+                    ),
               ),
             ],
           ),
@@ -384,14 +747,26 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
 
           // Petite note qualité (optionnelle et sobre)
           _ConditionCard(
-            title: "Repères",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+              "f00086",
+              "Repères",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Objectif : progresser par étapes, consolider les fondamentaux, puis monter en compétences opérationnelles et judiciaires "
-                "jusqu’à l’affectation et la titularisation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00087",
+                      "Objectif : progresser par étapes, consolider les fondamentaux, puis monter en compétences opérationnelles et judiciaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart",
+                      "f00088",
+                      "jusqu’à l’affectation et la titularisation.",
+                    ),
               ),
             ],
           ),

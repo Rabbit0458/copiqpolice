@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMiseEnPerilDesMineursPage extends StatelessWidget {
   const PaMiseEnPerilDesMineursPage({super.key});
@@ -16,80 +17,126 @@ class PaMiseEnPerilDesMineursPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF0E0F12) : Colors.white;
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
-? Colors.white70
-: const Color(0xFF222222).withValues(alpha: .70);
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final items = <_ModuleItem>[
-      const _ModuleItem(
-        title: 'La corruption de mineur',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00001",
+          'La corruption de mineur',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/corruption_mineur',
       ),
-      const _ModuleItem(
-        title:
-            'Diffusion d’un message violent/terroriste/pornographique/dangereux susceptible d’être vu par un mineur',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00002",
+          'Diffusion d’un message violent/terroriste/pornographique/dangereux susceptible d’être vu par un mineur',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur',
       ),
-      const _ModuleItem(
-        title: 'Privation d’aliments ou de soins à mineur de quinze ans',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00003",
+          'Privation d’aliments ou de soins à mineur de quinze ans',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/privation_aliments_soins_mineur_15',
       ),
-      const _ModuleItem(
-        title: 'Provocation à la pédopornographie',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00004",
+          'Provocation à la pédopornographie',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie',
       ),
-      const _ModuleItem(
-        title:
-            'Provocation directe d’un mineur à commettre un crime ou un délit',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00005",
+          'Provocation directe d’un mineur à commettre un crime ou un délit',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit',
       ),
-      const _ModuleItem(
-        title:
-            'Provocation directe d’un mineur à la consommation de boissons alcooliques',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00006",
+          'Provocation directe d’un mineur à la consommation de boissons alcooliques',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool',
       ),
-      const _ModuleItem(
-        title: 'Provocation d’un mineur à l’usage ou au trafic de stupéfiants',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00007",
+          'Provocation d’un mineur à l’usage ou au trafic de stupéfiants',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/provocation_mineur_stupefiants',
       ),
-      const _ModuleItem(
-        title: 'Soustraction d’un parent à ses obligations légales',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00008",
+          'Soustraction d’un parent à ses obligations légales',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales',
       ),
-      const _ModuleItem(
-        title: 'Atteintes sexuelles par un majeur sur mineur de quinze ans',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00009",
+          'Atteintes sexuelles par un majeur sur mineur de quinze ans',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15',
       ),
-      const _ModuleItem(
-        title:
-            'Atteintes sexuelles par un majeur sur un mineur de plus de quinze ans',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00010",
+          'Atteintes sexuelles par un majeur sur un mineur de plus de quinze ans',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_plus_15',
       ),
-      const _ModuleItem(
-        title:
-            'Exploitation de l’image / représentation pornographique d’un mineur',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00011",
+          'Exploitation de l’image / représentation pornographique d’un mineur',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/exploitation_image_porno_mineur',
       ),
-      const _ModuleItem(
-        title:
-            'Propositions sexuelles à mineur de quinze ans via communication électronique',
+      _ModuleItem(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00012",
+          'Propositions sexuelles à mineur de quinze ans via communication électronique',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne',
       ),
 
       // ✅ QUIZ
-      const _ModuleItem.quiz(
-        title: 'Quiz — Mise en péril des mineurs',
+      _ModuleItem.quiz(
+        title: ScolariteText.value(
+          "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+          "f00013",
+          'Quiz — Mise en péril des mineurs',
+        ),
         route:
             '/pa/dps_dpg/mineurs_famille_pages/mise_en_peril/quiz_mise_en_peril',
       ),
@@ -104,10 +151,18 @@ class PaMiseEnPerilDesMineursPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+            "f00014",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Atteintes aux mineurs & à la famille',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+            "f00015",
+            'Atteintes aux mineurs & à la famille',
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -259,7 +314,9 @@ class _ModuleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color pillBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
-    final Color pillBorder = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+    final Color pillBorder = Colors.white.withValues(
+      alpha: isDark ? 0.18 : 0.14,
+    );
 
     return GestureDetector(
       onTap: onTap,
@@ -333,8 +390,16 @@ class _ModuleCard extends StatelessWidget {
                     const SizedBox(height: 6),
                     Text(
                       isQuiz
-                          ? 'Testez vos connaissances'
-                          : 'Accéder au contenu',
+                          ? ScolariteText.value(
+                              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+                              "f00018",
+                              'Testez vos connaissances',
+                            )
+                          : ScolariteText.value(
+                              "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+                              "f00019",
+                              'Accéder au contenu',
+                            ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.fustat(
@@ -369,7 +434,13 @@ class _ModuleCard extends StatelessWidget {
                           ),
                           const SizedBox(width: 6),
                           Text(
-                            isQuiz ? 'Quiz' : 'Découvrir',
+                            isQuiz
+                                ? 'Quiz'
+                                : ScolariteText.value(
+                                    "lib/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart",
+                                    "f00020",
+                                    'Découvrir',
+                                  ),
                             style: GoogleFonts.fustat(
                               color: Colors.white,
                               fontWeight: FontWeight.w800,

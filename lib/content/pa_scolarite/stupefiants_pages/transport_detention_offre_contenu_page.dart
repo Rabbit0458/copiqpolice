@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
   const PaStupefiantsTransportDetentionOffrePage({super.key});
@@ -66,10 +67,18 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Stupéfiants",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+            "f00002",
+            "Stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le transport, la détention, l’offre,\nla cession, l’acquisition ou l’emploi\nillicites de stupéfiants",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+              "f00003",
+              "Le transport, la détention, l’offre,\nla cession, l’acquisition ou l’emploi\nillicites de stupéfiants",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,14 +109,26 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le transport, la détention, l’offre, la cession, l’acquisition ou l’emploi illicites de stupéfiants "
-                "constituent des infractions.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00005",
+                      "Le transport, la détention, l’offre, la cession, l’acquisition ou l’emploi illicites de stupéfiants ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00006",
+                      "constituent des infractions.",
+                    ),
               ),
             ],
           ),
@@ -112,16 +137,29 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-37 alinéa 1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : réprime le transport, la détention, l’offre, la cession, l’acquisition ou l’emploi illicites de stupéfiants.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00008",
+                    "Article 222-37 alinéa 1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00009",
+                    " : réprime le transport, la détention, l’offre, la cession, l’acquisition ou l’emploi illicites de stupéfiants.",
+                  ),
                 ),
               ]),
             ],
@@ -131,190 +169,458 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Les agissements visés"),
-              const _Paragraph(
-                "Il s’agit des comportements d’intermédiaires, grossistes ou détaillants, acheteurs ou revendeurs. "
-                "Le trafic visé est celui réalisé entre plusieurs personnes : la cession à une personne déterminée "
-                "en vue de sa consommation personnelle est, elle, visée par un autre texte.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00011",
+                  "A) Les agissements visés",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00012",
+                      "Il s’agit des comportements d’intermédiaires, grossistes ou détaillants, acheteurs ou revendeurs. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00013",
+                      "Le trafic visé est celui réalisé entre plusieurs personnes : la cession à une personne déterminée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00014",
+                      "en vue de sa consommation personnelle est, elle, visée par un autre texte.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
-                _law("article 222-39 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00015",
+                    "Référence : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00016",
+                    "article 222-39 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "B) Trafic : preuve souvent par un faisceau d’indices",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00017",
+                  "B) Trafic : preuve souvent par un faisceau d’indices",
+                ),
               ),
-              const _Paragraph(
-                "Le trafic visé ici correspond notamment à l’achat dans le but de revendre. "
-                "En pratique, la jurisprudence facilite la démonstration du trafic grâce à un réseau d’indices (faisceau).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00018",
+                      "Le trafic visé ici correspond notamment à l’achat dans le but de revendre. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00019",
+                      "En pratique, la jurisprudence facilite la démonstration du trafic grâce à un réseau d’indices (faisceau).",
+                    ),
               ),
               const SizedBox(height: 12),
 
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00020",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Retenu : personne n’ayant pas seulement « offert » pour consommation personnelle, mais s’étant livrée au commerce "
-                        "des stupéfiants via des déplacements réguliers, sans consommer elle-même l’héroïne — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00021",
+                          "Retenu : personne n’ayant pas seulement « offert » pour consommation personnelle, mais s’étant livrée au commerce ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00022",
+                          "des stupéfiants via des déplacements réguliers, sans consommer elle-même l’héroïne — ",
+                        ),
                   ),
-                  _law("Cass. crim., 30 octobre 1995"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00023",
+                      "Cass. crim., 30 octobre 1995",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00024",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Le trafic résulte souvent d’un faisceau d’indices : témoignages de toxicomanes + découverte au domicile de stupéfiants "
-                        "et de matériel (balance/peson, couteau, produit de coupe, etc.) — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00025",
+                          "Le trafic résulte souvent d’un faisceau d’indices : témoignages de toxicomanes + découverte au domicile de stupéfiants ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00026",
+                          "et de matériel (balance/peson, couteau, produit de coupe, etc.) — ",
+                        ),
                   ),
-                  _law("Cass. crim., 5 novembre 1998"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00027",
+                      "Cass. crim., 5 novembre 1998",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "C) Les notions clés (définitions opérationnelles)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00028",
+                  "C) Les notions clés (définitions opérationnelles)",
+                ),
               ),
 
-              const _SubTitle("1) Le transport"),
-              const _Paragraph(
-                "C’est le fait de transporter des produits stupéfiants sans autorisation de l’administration.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00029",
+                  "1) Le transport",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00030",
+                  "C’est le fait de transporter des produits stupéfiants sans autorisation de l’administration.",
+                ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00031",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "Être trouvé porteur de stupéfiants sur la voie publique caractérise à la fois le délit de détention et celui de transport — ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00032",
+                      "Être trouvé porteur de stupéfiants sur la voie publique caractérise à la fois le délit de détention et celui de transport — ",
+                    ),
                   ),
-                  _law("Cass. crim., 8 avril 1999"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00033",
+                      "Cass. crim., 8 avril 1999",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("2) La détention"),
-              const _Paragraph(
-                "Elle concerne toute personne en possession de stupéfiants. La détention peut être retenue même si le produit "
-                "n’est pas sur la personne, mais à proximité (ex : cache).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00034",
+                  "2) La détention",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00035",
+                      "Elle concerne toute personne en possession de stupéfiants. La détention peut être retenue même si le produit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00036",
+                      "n’est pas sur la personne, mais à proximité (ex : cache).",
+                    ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00037",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Détention retenue : stupéfiants dissimulés dans une cache à quelques mètres ; ex. détenu sachant que des doses "
-                        "étaient cachées sous le matelas d’un autre détenu de la cellule — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00038",
+                          "Détention retenue : stupéfiants dissimulés dans une cache à quelques mètres ; ex. détenu sachant que des doses ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00039",
+                          "étaient cachées sous le matelas d’un autre détenu de la cellule — ",
+                        ),
                   ),
-                  _law("Cass. crim., 17 octobre 1994"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00040",
+                      "Cass. crim., 17 octobre 1994",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 12),
-              const _Paragraph(
-                "La jurisprudence rappelle que la détention illicite ne peut être réprimée que si elle s’inscrit dans un trafic "
-                "ou dans le cadre de l’infraction spécifique de cession/usage personnel prévue par le code pénal.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00041",
+                      "La jurisprudence rappelle que la détention illicite ne peut être réprimée que si elle s’inscrit dans un trafic ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00042",
+                      "ou dans le cadre de l’infraction spécifique de cession/usage personnel prévue par le code pénal.",
+                    ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00043",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        "Non retenu : détention pour une personne trouvée porteuse de 3 g de cannabis pour sa consommation personnelle ; "
-                        "l’usage implique une détention préalable et le délit de détention est réservé aux hypothèses de trafic — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00044",
+                          "Non retenu : détention pour une personne trouvée porteuse de 3 g de cannabis pour sa consommation personnelle ; ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                          "f00045",
+                          "l’usage implique une détention préalable et le délit de détention est réservé aux hypothèses de trafic — ",
+                        ),
                   ),
-                  _law("Cass. crim., 14 mars 2017"),
+                  _law(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00046",
+                      "Cass. crim., 14 mars 2017",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("3) L’offre"),
-              const _Paragraph(
-                "L’offre correspond à l’instant qui précède la remise : l’acte matériel de remise n’a pas encore eu lieu, "
-                "mais des stupéfiants sont proposés.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00047",
+                  "3) L’offre",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00048",
+                      "L’offre correspond à l’instant qui précède la remise : l’acte matériel de remise n’a pas encore eu lieu, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00049",
+                      "mais des stupéfiants sont proposés.",
+                    ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("4) La cession"),
-              const _Paragraph(
-                "La cession signifie que le produit a changé de mains : la transaction est réalisée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00050",
+                  "4) La cession",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00051",
+                  "La cession signifie que le produit a changé de mains : la transaction est réalisée.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("5) L’acquisition"),
-              const _Paragraph(
-                "L’acquisition est, pour celui qui reçoit le produit, le résultat de l’offre ou de la cession.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00052",
+                  "5) L’acquisition",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00053",
+                  "L’acquisition est, pour celui qui reçoit le produit, le résultat de l’offre ou de la cession.",
+                ),
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("6) L’emploi"),
-              const _Paragraph(
-                "L’emploi se distingue de l’usage : il vise toute utilisation de produits stupéfiants en dehors de la consommation "
-                "(ex : couper des doses).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00054",
+                  "6) L’emploi",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00055",
+                      "L’emploi se distingue de l’usage : il vise toute utilisation de produits stupéfiants en dehors de la consommation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00056",
+                      "(ex : couper des doses).",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "D) Définition légale des « stupéfiants » (cadre commun)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00057",
+                  "D) Définition légale des « stupéfiants » (cadre commun)",
+                ),
               ),
               _Paragraph.rich([
-                _law("Article 222-41 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants en application de ",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00058",
+                    "Article 222-41 du Code pénal",
+                  ),
                 ),
-                _law("l’article L. 5132-7 du Code de la santé publique"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00059",
+                    " : « constituent des stupéfiants, des substances ou plantes classées comme stupéfiants en application de ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00060",
+                    "l’article L. 5132-7 du Code de la santé publique",
+                  ),
+                ),
                 const TextSpan(text: " »."),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _law("Article L. 5132-7 du Code de la santé publique"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00061",
+                    "Article L. 5132-7 du Code de la santé publique",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : une substance est classée comme stupéfiant par décision du directeur général de l’Agence nationale de sécurité "
-                      "du médicament et des produits de santé.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                        "f00062",
+                        " : une substance est classée comme stupéfiant par décision du directeur général de l’Agence nationale de sécurité ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                        "f00063",
+                        "du médicament et des produits de santé.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Ainsi, seules les substances figurant sur les listes arrêtées par voie réglementaire doivent être retenues "
-                "au sens de la définition légale.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00064",
+                      "Ainsi, seules les substances figurant sur les listes arrêtées par voie réglementaire doivent être retenues ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00065",
+                      "au sens de la définition légale.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "La liste exhaustive et évolutive figure en annexes de ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00066",
+                    "La liste exhaustive et évolutive figure en annexes de ",
+                  ),
                 ),
-                _law("l’arrêté du 22 février 1990"),
-                const TextSpan(
-                  text:
-                      " : l’infraction ne s’applique qu’à une substance figurant sur cette liste et désignée avec suffisamment de précision.",
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00067",
+                    "l’arrêté du 22 février 1990",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00068",
+                    " : l’infraction ne s’applique qu’à une substance figurant sur cette liste et désignée avec suffisamment de précision.",
+                  ),
                 ),
               ]),
             ],
@@ -324,15 +630,33 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+              "f00069",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Connaissance de cause"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00070",
+                  "Connaissance de cause",
+                ),
+              ),
               _Paragraph(
-                "L’intention coupable est requise. Elle peut être mise en évidence aussi bien par les actes matériels "
-                "que par le profit tiré de ces actes.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00071",
+                      "L’intention coupable est requise. Elle peut être mise en évidence aussi bien par les actes matériels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00072",
+                      "que par le profit tiré de ces actes.",
+                    ),
               ),
             ],
           ),
@@ -341,23 +665,44 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+              "f00073",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _law("Article 222-37-1 du Code pénal"),
-                const TextSpan(
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00074",
+                    "Article 222-37-1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : lorsque l’infraction est commise par un majeur agissant avec l’aide ou l’assistance, directe ou indirecte, "
-                      "d’un mineur pour le transport, la détention, l’offre, la cession, l’acquisition ou la vente de stupéfiants.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                        "f00075",
+                        " : lorsque l’infraction est commise par un majeur agissant avec l’aide ou l’assistance, directe ou indirecte, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                        "f00076",
+                        "d’un mineur pour le transport, la détention, l’offre, la cession, l’acquisition ou la vente de stupéfiants.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "L’aide/assistance d’un mineur peut être caractérisée par tout acte de sollicitation, d’incitation ou d’organisation intégrant un mineur dans un réseau de trafic (volontaire ou contrainte).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00077",
+                  "L’aide/assistance d’un mineur peut être caractérisée par tout acte de sollicitation, d’incitation ou d’organisation intégrant un mineur dans un réseau de trafic (volontaire ou contrainte).",
+                ),
               ),
             ],
           ),
@@ -366,84 +711,216 @@ class PaStupefiantsTransportDetentionOffrePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+              "f00078",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (délit) : "),
-                const TextSpan(
-                  text: "10 ans d’emprisonnement et 7 500 000 € d’amende. — ",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00079",
+                  "Peines encourues — personnes physiques",
                 ),
-                _law("article 222-37 alinéa 1 du Code pénal"),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00080",
+                    "Qualification simple (délit) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00081",
+                    "10 ans d’emprisonnement et 7 500 000 € d’amende. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00082",
+                    "article 222-37 alinéa 1 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée (crime) : "),
-                const TextSpan(
-                  text: "15 ans de réclusion et 7 500 000 € d’amende. — ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00083",
+                    "Qualification aggravée (crime) : ",
+                  ),
                 ),
-                _law("article 222-37-1 1° du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00084",
+                    "15 ans de réclusion et 7 500 000 € d’amende. — ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00085",
+                    "article 222-37-1 1° du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les tableaux prévoient une période de sûreté (selon les cas et les textes applicables).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                      "f00086",
+                      "Les tableaux prévoient une période de sûreté (selon les cas et les textes applicables).",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00087",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
-                _law("l’article 222-42 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00088",
+                    "Peines prévues par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00089",
+                    "l’article 222-42 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00090",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — prévue par "),
-                _law("l’article 222-40 du Code pénal"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00091",
+                    "Tentative : OUI — prévue par ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00092",
+                    "l’article 222-40 du Code pénal",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément aux "),
-                _law("articles 121-6 et 121-7 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (aide et assistance, provocation, instructions données).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00093",
+                    "Complicité : OUI — conformément aux ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00094",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00095",
+                    " (aide et assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                  "f00096",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : "),
-                _law("article 222-43 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (réduction des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements ou d’identifier d’autres coupables).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00097",
+                    "Réduction de peine : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00098",
+                    "article 222-43 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00099",
+                    " (réduction des deux tiers si l’auteur/complice avertit les autorités et permet de faire cesser les agissements ou d’identifier d’autres coupables).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : "),
-                _law("article 222-43-1 du Code pénal"),
-                const TextSpan(
-                  text:
-                      " (si la personne ayant tenté l’infraction avertit les autorités et permet d’éviter la réalisation et d’identifier, le cas échéant, d’autres auteurs/complices).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00100",
+                    "Exemption de peine : ",
+                  ),
+                ),
+                _law(
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00101",
+                    "article 222-43-1 du Code pénal",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart",
+                    "f00102",
+                    " (si la personne ayant tenté l’infraction avertit les autorités et permet d’éviter la réalisation et d’identifier, le cas échéant, d’autres auteurs/complices).",
+                  ),
                 ),
               ]),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
   const PaAtteintesActionJusticeContenuPage({super.key});
@@ -12,7 +13,9 @@ class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +26,18 @@ class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crime & délit contre la nation",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+            "f00002",
+            "Crime & délit contre la nation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +52,11 @@ class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Les atteintes à l’action de la justice",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+              "f00003",
+              "Les atteintes à l’action de la justice",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +66,16 @@ class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles relatives aux atteintes à l’action de la justice "
-            "(définitions, éléments constitutifs, circonstances et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles relatives aux atteintes à l’action de la justice ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, circonstances et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,8 +88,16 @@ class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'nation_action_justice_non_denonciation_crime',
-            title: "La non dénonciation de crime",
-            subtitle: "Définition, éléments constitutifs et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+              "f00006",
+              "La non dénonciation de crime",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+              "f00007",
+              "Définition, éléments constitutifs et répression.",
+            ),
             imagePath: 'assets/images/action_justice.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -80,8 +111,16 @@ class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'nation_action_justice_temoignage_mensonger',
-            title: "Le témoignage mensonger",
-            subtitle: "Cadre, caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+              "f00008",
+              "Le témoignage mensonger",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+              "f00009",
+              "Cadre, caractérisation et sanctions.",
+            ),
             imagePath: 'assets/images/action_justice.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -96,9 +135,16 @@ class PaAtteintesActionJusticeContenuPage extends StatelessWidget {
           // ================= QUIZ (optionnel) =================
           _ModuleCard(
             tag: 'quiz_atteintes_action_justice',
-            title: 'Quiz — Atteintes à l’action de la justice',
-            subtitle:
-                'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+              "f00010",
+              'Quiz — Atteintes à l’action de la justice',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart",
+              "f00011",
+              'Testez vos connaissances sur les qualifications, éléments constitutifs et répression.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

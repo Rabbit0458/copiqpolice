@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
   const AnnoncerMauvaiseNouvellePage({super.key});
@@ -56,10 +57,18 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Accident circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+            "f00002",
+            "Accident circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Annoncer une mauvaise nouvelle",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+              "f00003",
+              "Annoncer une mauvaise nouvelle",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,24 +99,38 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
 
           // ✅ Références / cadre (en haut)
           _ConditionCard(
-            title: "Références (cadre institutionnel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+              "f00004",
+              "Références (cadre institutionnel)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Fiche mémo AMARIS « J’annonce une mauvaise nouvelle » (FM n°8 bis — Juin 2023).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                    "f00005",
+                    "Fiche mémo AMARIS « J’annonce une mauvaise nouvelle » (FM n°8 bis — Juin 2023).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Références utiles",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00006",
+                  "Références utiles",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Note du DGPN du 14/12/2022 relative à l’annonce de décès dans le cadre judiciaire et au traitement respectueux des proches du défunt.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00007",
+                      "Note du DGPN du 14/12/2022 relative à l’annonce de décès dans le cadre judiciaire et au traitement respectueux des proches du défunt.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -111,8 +138,11 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
                   ),
                   TextSpan(text: "\n"),
                   TextSpan(
-                    text:
-                        "Circulaire interministérielle du 2 décembre 2022 relative à l’annonce du décès et au traitement respectueux du défunt et de ses proches.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00008",
+                      "Circulaire interministérielle du 2 décembre 2022 relative à l’annonce du décès et au traitement respectueux du défunt et de ses proches.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -120,8 +150,11 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
                   ),
                   TextSpan(text: "\n"),
                   TextSpan(
-                    text:
-                        "Ressources du Cn2r (Centre national de ressources et de résilience) : fiche réflexe + ressources professionnelles.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00009",
+                      "Ressources du Cn2r (Centre national de ressources et de résilience) : fiche réflexe + ressources professionnelles.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -135,19 +168,51 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "De quoi s’agit-il ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+              "f00010",
+              "De quoi s’agit-il ?",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tout policier, quel que soit son grade, peut être amené à annoncer une mauvaise nouvelle "
-                "au cours de sa carrière : blessures graves, disparition, décès…\n\n"
-                "Cette annonce est un moment profondément marquant pour la personne qui la reçoit. "
-                "Elle peut aussi être une épreuve pour le policier, qui risque de se projeter dans la douleur "
-                "de la victime ou de ses proches.\n\n"
-                "C’est une mission difficile où se joue l’image de l’institution : elle exige humanité, maîtrise "
-                "de soi et professionnalisme.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00011",
+                      "Tout policier, quel que soit son grade, peut être amené à annoncer une mauvaise nouvelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00012",
+                      "au cours de sa carrière : blessures graves, disparition, décès…\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00013",
+                      "Cette annonce est un moment profondément marquant pour la personne qui la reçoit. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00014",
+                      "Elle peut aussi être une épreuve pour le policier, qui risque de se projeter dans la douleur ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00015",
+                      "de la victime ou de ses proches.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00016",
+                      "C’est une mission difficile où se joue l’image de l’institution : elle exige humanité, maîtrise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00017",
+                      "de soi et professionnalisme.",
+                    ),
               ),
             ],
           ),
@@ -155,85 +220,171 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Ce qu’il faut faire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+              "f00018",
+              "Ce qu’il faut faire",
+            ),
             cardColor: cardDo,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Se présenter physiquement"),
-              _BulletPoint(
-                text:
-                    "Se présenter physiquement (à deux ou trois) donne un aspect solennel et montre le respect dû aux proches.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00019",
+                  "1) Se présenter physiquement",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En cas d’absence, prévoir une visite ultérieure : éviter toute annonce improvisée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00020",
+                  "Se présenter physiquement (à deux ou trois) donne un aspect solennel et montre le respect dû aux proches.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si déplacement impossible, faire transmettre par un équipage territorialement compétent (mission dédiée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00021",
+                  "En cas d’absence, prévoir une visite ultérieure : éviter toute annonce improvisée.",
+                ),
               ),
               _BulletPoint(
-                text: "Éviter autant que possible l’annonce par téléphone.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00022",
+                  "Si déplacement impossible, faire transmettre par un équipage territorialement compétent (mission dédiée).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00023",
+                  "Éviter autant que possible l’annonce par téléphone.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le déplacement doit rester discret pour ne pas susciter la curiosité. "
-                        "Sur place, demander la permission d’entrer au domicile.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00024",
+                          "Le déplacement doit rester discret pour ne pas susciter la curiosité. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00025",
+                          "Sur place, demander la permission d’entrer au domicile.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("2) Annoncer sans tarder (calme, bref, tact)"),
-              _BulletPoint(
-                text:
-                    "Un seul policier annonce : il vérifie l’exactitude des informations et prépare ses mots.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00026",
+                  "2) Annoncer sans tarder (calme, bref, tact)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "S’exprimer rapidement, sur un ton calme : s’en tenir aux faits, sans détails inutiles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00027",
+                  "Un seul policier annonce : il vérifie l’exactitude des informations et prépare ses mots.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00028",
+                  "S’exprimer rapidement, sur un ton calme : s’en tenir aux faits, sans détails inutiles.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Exemple de formulation",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00029",
+                  "Exemple de formulation",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "« Je viens pour votre fille… Elle a eu un accident… Elle a été gravement blessée… "
-                        "Elle n’a pas survécu à ses blessures. »",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00030",
+                          "« Je viens pour votre fille… Elle a eu un accident… Elle a été gravement blessée… ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00031",
+                          "Elle n’a pas survécu à ses blessures. »",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("3) Laisser s’exprimer, répondre aux questions"),
-              _BulletPoint(
-                text:
-                    "Laisser le temps d’intégrer : colère, larmes, silence, agressivité, distance…",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00032",
+                  "3) Laisser s’exprimer, répondre aux questions",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rester présent, calme et bienveillant : la posture compte autant que les mots.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00033",
+                  "Laisser le temps d’intégrer : colère, larmes, silence, agressivité, distance…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éviter la présence des enfants si possible : l’annonce peut être traumatisante.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00034",
+                  "Rester présent, calme et bienveillant : la posture compte autant que les mots.",
+                ),
               ),
               _BulletPoint(
-                text: "Répondre de façon calme et brève, sans surenchère.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00035",
+                  "Éviter la présence des enfants si possible : l’annonce peut être traumatisante.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00036",
+                  "Répondre de façon calme et brève, sans surenchère.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Avant de partir",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00037",
+                  "Avant de partir",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "En cas de nouvelle très dramatique : s’assurer autant que possible que le proche ne reste pas seul. "
-                        "Orienter vers un professionnel du soutien ou une association si nécessaire.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00038",
+                          "En cas de nouvelle très dramatique : s’assurer autant que possible que le proche ne reste pas seul. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00039",
+                          "Orienter vers un professionnel du soutien ou une association si nécessaire.",
+                        ),
                   ),
                 ],
               ),
@@ -243,27 +394,49 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Ce qu’il faut éviter",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+              "f00040",
+              "Ce qu’il faut éviter",
+            ),
             cardColor: cardDont,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Faire deviner, dissimuler, enjoliver ou relativiser : cela peut créer du doute et de la colère.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00041",
+                  "Faire deviner, dissimuler, enjoliver ou relativiser : cela peut créer du doute et de la colère.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Propos culpabilisants (« vous n’auriez pas dû… ») ou jugements (« il n’a pas été raisonnable »).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00042",
+                  "Propos culpabilisants (« vous n’auriez pas dû… ») ou jugements (« il n’a pas été raisonnable »).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Évoquer des cas similaires : cela détourne et banalise la douleur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00043",
+                  "Évoquer des cas similaires : cela détourne et banalise la douleur.",
+                ),
               ),
-              _BulletPoint(text: "Donner des détails morbides non demandés."),
               _BulletPoint(
-                text:
-                    "Vouloir “avoir réponse à tout” ou être positif à tout prix.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00044",
+                  "Donner des détails morbides non demandés.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00045",
+                  "Vouloir “avoir réponse à tout” ou être positif à tout prix.",
+                ),
               ),
             ],
           ),
@@ -271,25 +444,57 @@ class AnnoncerMauvaiseNouvellePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "En résumé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+              "f00046",
+              "En résumé",
+            ),
             cardColor: cardSummary,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Annoncer une mauvaise nouvelle implique de le faire physiquement, de manière calme, brève "
-                "et diplomate, tout en se préservant soi-même.\n\n"
-                "En cas de difficulté lors de l’annonce, il est important d’en parler avec ses collègues et sa hiérarchie "
-                "et de solliciter un soutien psychologique si nécessaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00047",
+                      "Annoncer une mauvaise nouvelle implique de le faire physiquement, de manière calme, brève ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00048",
+                      "et diplomate, tout en se préservant soi-même.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00049",
+                      "En cas de difficulté lors de l’annonce, il est important d’en parler avec ses collègues et sa hiérarchie ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                      "f00050",
+                      "et de solliciter un soutien psychologique si nécessaire.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Attention",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                  "f00051",
+                  "Attention",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cette fiche apporte un éclairage et une aide, sans prescriptions contraignantes ni exclusives. "
-                        "Partageons nos expériences et renforçons notre sécurité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00052",
+                          "Cette fiche apporte un éclairage et une aide, sans prescriptions contraignantes ni exclusives. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart",
+                          "f00053",
+                          "Partageons nos expériences et renforçons notre sécurité.",
+                        ),
                   ),
                 ],
               ),

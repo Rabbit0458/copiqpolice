@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AsControleAlcoolemiePage extends StatelessWidget {
   const AsControleAlcoolemiePage({super.key});
@@ -50,10 +51,18 @@ class AsControleAlcoolemiePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Alcoolémie",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+            "f00002",
+            "Alcoolémie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class AsControleAlcoolemiePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Cas de contrôle de l’alcoolémie",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+              "f00003",
+              "Cas de contrôle de l’alcoolémie",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,11 +97,23 @@ class AsControleAlcoolemiePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Synthèse opérationnelle des cas de contrôle de l’alcoolémie : "
-                "quand le contrôle est obligatoire, facultatif ou préventif, "
-                "et quelles vérifications peuvent être réalisées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00004",
+                      "Synthèse opérationnelle des cas de contrôle de l’alcoolémie : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00005",
+                      "quand le contrôle est obligatoire, facultatif ou préventif, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00006",
+                      "et quelles vérifications peuvent être réalisées.",
+                    ),
               ),
             ],
           ),
@@ -97,47 +122,66 @@ class AsControleAlcoolemiePage extends StatelessWidget {
 
           // ✅ Élément légal en haut (obligatoire)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L.234-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00008",
+                    "Article L.234-3 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixe les hypothèses de contrôle (notamment après accident corporel et certaines infractions entraînant S.P.C.).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00009",
+                    " : fixe les hypothèses de contrôle (notamment après accident corporel et certaines infractions entraînant S.P.C.).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L.234-9 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00010",
+                    "Article L.234-9 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit le contrôle préventif (instructions du procureur / initiative O.P.J. ou A.P.J.), sans infraction préalable nécessaire.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00011",
+                    " : prévoit le contrôle préventif (instructions du procureur / initiative O.P.J. ou A.P.J.), sans infraction préalable nécessaire.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les vérifications destinées à établir la preuve de la présence d’alcool dans l’organisme peuvent aussi être réalisées dans les cas prévus par ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00012",
+                      "Les vérifications destinées à établir la preuve de la présence d’alcool dans l’organisme peuvent aussi être réalisées dans les cas prévus par ",
+                    ),
                   ),
                   TextSpan(
-                    text: "l’article L.3354-1 du Code de la santé publique",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00013",
+                      "l’article L.3354-1 du Code de la santé publique",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -145,8 +189,11 @@ class AsControleAlcoolemiePage extends StatelessWidget {
                   ),
                   TextSpan(text: ". "),
                   TextSpan(
-                    text:
-                        "Un dépistage préalable peut être effectué (loi n°70-597 du 09/07/1970 – art.3).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00014",
+                      "Un dépistage préalable peut être effectué (loi n°70-597 du 09/07/1970 – art.3).",
+                    ),
                   ),
                 ],
               ),
@@ -157,106 +204,173 @@ class AsControleAlcoolemiePage extends StatelessWidget {
 
           // I/ Faits constatés (table “propre” en cartes)
           _ConditionCard(
-            title: "II — Cas de contrôle (faits constatés)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+              "f00015",
+              "II — Cas de contrôle (faits constatés)",
+            ),
             cardColor: cardFacts,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Contrôle OBLIGATOIRE"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00016",
+                  "A) Contrôle OBLIGATOIRE",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "C.R. — Article L.234-3 alinéa 1",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00017",
+                    "C.R. — Article L.234-3 alinéa 1",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00018",
+                    " : accident corporel de la circulation.",
                   ),
                 ),
-                TextSpan(text: " : accident corporel de la circulation."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Personnes concernées : conducteur ou accompagnateur d’un élève conducteur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00019",
+                  "Personnes concernées : conducteur ou accompagnateur d’un élève conducteur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Condition : être en présence des conducteurs/accompagnateurs impliqués dans l’accident, ou de l’auteur présumé de l’infraction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00020",
+                  "Condition : être en présence des conducteurs/accompagnateurs impliqués dans l’accident, ou de l’auteur présumé de l’infraction.",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Modalités : vérifications sans dépistage préalable OU dépistage puis vérifications le cas échéant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00021",
+                  "Modalités : vérifications sans dépistage préalable OU dépistage puis vérifications le cas échéant.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Contrôle OBLIGATOIRE (infractions entraînant S.P.C.)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00022",
+                  "B) Contrôle OBLIGATOIRE (infractions entraînant S.P.C.)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "C.R. — Article L.234-3 alinéa 2",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00023",
+                    "C.R. — Article L.234-3 alinéa 2",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : infractions au code de la route entraînant S.P.C. (ex : excès de vitesse ≥ 30 km/h, C.E.I.).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00024",
+                    " : infractions au code de la route entraînant S.P.C. (ex : excès de vitesse ≥ 30 km/h, C.E.I.).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Modalités : dépistage puis vérifications le cas échéant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00025",
+                  "Modalités : dépistage puis vérifications le cas échéant.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Contrôle FACULTATIF"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00026",
+                  "C) Contrôle FACULTATIF",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "C.R. — Article L.234-3 alinéa 2",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00027",
+                    "C.R. — Article L.234-3 alinéa 2",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : toutes les autres infractions au code de la route.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00028",
+                    " : toutes les autres infractions au code de la route.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Modalités : dépistage puis vérifications le cas échéant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00029",
+                  "Modalités : dépistage puis vérifications le cas échéant.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Contrôle PRÉVENTIF"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00030",
+                  "D) Contrôle PRÉVENTIF",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "C.R. — Article L.234-9",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00031",
+                    "C.R. — Article L.234-9",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : instructions du procureur ou initiative de l’O.P.J./A.P.J. (aucune infraction préalable nécessaire).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00032",
+                    " : instructions du procureur ou initiative de l’O.P.J./A.P.J. (aucune infraction préalable nécessaire).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Modalités : dépistage puis vérifications le cas échéant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00033",
+                  "Modalités : dépistage puis vérifications le cas échéant.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "OU vérifications sans dépistage préalable uniquement si réalisées immédiatement et sur les lieux (ex : éthylomètre embarqué).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00034",
+                  "OU vérifications sans dépistage préalable uniquement si réalisées immédiatement et sur les lieux (ex : éthylomètre embarqué).",
+                ),
               ),
             ],
           ),
@@ -265,44 +379,95 @@ class AsControleAlcoolemiePage extends StatelessWidget {
 
           // Personnes / conditions complémentaires (bloc très pédagogique)
           _ConditionCard(
-            title: "III — Personnes concernées & conditions",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+              "f00035",
+              "III — Personnes concernées & conditions",
+            ),
             cardColor: cardModal,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Faits ouvrant la possibilité de vérifications",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00036",
+                  "A) Faits ouvrant la possibilité de vérifications",
+                ),
               ),
-              _IntroBullet(text: "Accident de la circulation"),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00037",
+                  "Accident de la circulation",
+                ),
+              ),
               _IntroBullet(text: "Crime"),
-              _IntroBullet(text: "Délit"),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00038",
+                  "Délit",
+                ),
+              ),
               SizedBox(height: 10),
-              _SubTitle("B) Qui peut être contrôlé ? (auteur présumé)"),
-              _BulletPoint(
-                text: "Conducteur de véhicule soumis au Code de la route.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00039",
+                  "B) Qui peut être contrôlé ? (auteur présumé)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conducteur de véhicule non soumis au Code de la route (train, tramway — R.110-3 et R.422-3 C.R.).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00040",
+                  "Conducteur de véhicule soumis au Code de la route.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Autre personne : piéton, cavalier, conducteur de troupeaux, conducteur d’un bateau ou membre d’équipage participant à la conduite/manœuvre/exploitation, responsable(s) d’un accident du travail, auteur de violences, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00041",
+                  "Conducteur de véhicule non soumis au Code de la route (train, tramway — R.110-3 et R.422-3 C.R.).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00042",
+                  "Autre personne : piéton, cavalier, conducteur de troupeaux, conducteur d’un bateau ou membre d’équipage participant à la conduite/manœuvre/exploitation, responsable(s) d’un accident du travail, auteur de violences, etc.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Conditions pratiques"),
-              _BulletPoint(
-                text:
-                    "Être en présence d’un mis en cause dont le comportement extérieur laisse présumer un état alcoolique au moment des faits.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00043",
+                  "C) Conditions pratiques",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Être en présence d’un mort : vérifications possibles même sans présomption d’alcoolémie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00044",
+                  "Être en présence d’un mis en cause dont le comportement extérieur laisse présumer un état alcoolique au moment des faits.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Victime(s) : si les vérifications paraissent utiles à l’administration de la preuve.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00045",
+                  "Être en présence d’un mort : vérifications possibles même sans présomption d’alcoolémie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00046",
+                  "Victime(s) : si les vérifications paraissent utiles à l’administration de la preuve.",
+                ),
               ),
             ],
           ),
@@ -311,83 +476,208 @@ class AsControleAlcoolemiePage extends StatelessWidget {
 
           // Modalités / procédure (éthylomètre + prélèvement sanguin)
           _ConditionCard(
-            title: "IV — Nature & modalités des vérifications",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+              "f00047",
+              "IV — Nature & modalités des vérifications",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Principe : privilégier l’éthylomètre"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00048",
+                  "A) Principe : privilégier l’éthylomètre",
+                ),
+              ),
               _Paragraph(
-                "Le choix du mode de vérifications revient exclusivement aux policiers intervenants, "
-                "qui doivent privilégier l’utilisation de l’éthylomètre. "
-                "La valeur juridique des mesures par éthylomètre est équivalente à celle d’une analyse sanguine.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00049",
+                      "Le choix du mode de vérifications revient exclusivement aux policiers intervenants, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00050",
+                      "qui doivent privilégier l’utilisation de l’éthylomètre. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00051",
+                      "La valeur juridique des mesures par éthylomètre est équivalente à celle d’une analyse sanguine.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Quand recourir au prélèvement sanguin ?"),
-              _BulletPoint(text: "Éthylomètre en panne ou indisponible."),
-              _BulletPoint(
-                text:
-                    "Conducteur gravement blessé (sauf contre-indication médicale) ou décédé.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00052",
+                  "B) Quand recourir au prélèvement sanguin ?",
+                ),
               ),
               _BulletPoint(
-                text: "Handicap / incapacité physique attestée par un médecin.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00053",
+                  "Éthylomètre en panne ou indisponible.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00054",
+                  "Conducteur gravement blessé (sauf contre-indication médicale) ou décédé.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00055",
+                  "Handicap / incapacité physique attestée par un médecin.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Dépistage impossible ou refus"),
-              _BulletPoint(
-                text:
-                    "Dépistage impossible : conducteur gravement blessé/décédé/incapacité physique attestée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00056",
+                  "C) Dépistage impossible ou refus",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Refus de dépistage : conducteur ou accompagnateur d’un élève conducteur (quel que soit le cas de contrôle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00057",
+                  "Dépistage impossible : conducteur gravement blessé/décédé/incapacité physique attestée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00058",
+                  "Refus de dépistage : conducteur ou accompagnateur d’un élève conducteur (quel que soit le cas de contrôle).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("D) Réquisitions médicales & formalités"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00059",
+                  "D) Réquisitions médicales & formalités",
+                ),
+              ),
               _Paragraph(
-                "Réquisition d’un médecin (ou à défaut : interne/étudiant autorisé, ou infirmier). "
-                "Deux échantillons de sang sont prélevés, avec examen clinique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00060",
+                      "Réquisition d’un médecin (ou à défaut : interne/étudiant autorisé, ou infirmier). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00061",
+                      "Deux échantillons de sang sont prélevés, avec examen clinique.",
+                    ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Fiche A renseignée par le policier."),
-              _BulletPoint(text: "Fiche B-C renseignée par le médecin."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00062",
+                  "Fiche A renseignée par le policier.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00063",
+                  "Fiche B-C renseignée par le médecin.",
+                ),
+              ),
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Circuit d’analyse",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00064",
+                  "Circuit d’analyse",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Envoi au laboratoire/biologiste expert : 1 échantillon + 4 exemplaires des fiches A et B-C. "
-                        "Le 2e échantillon + 1 exemplaire des fiches A et B-C sont envoyés à un autre laboratoire pour une éventuelle analyse de contrôle.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                          "f00065",
+                          "Envoi au laboratoire/biologiste expert : 1 échantillon + 4 exemplaires des fiches A et B-C. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                          "f00066",
+                          "Le 2e échantillon + 1 exemplaire des fiches A et B-C sont envoyés à un autre laboratoire pour une éventuelle analyse de contrôle.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("E) Notification du taux & marge d’erreur"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00067",
+                  "E) Notification du taux & marge d’erreur",
+                ),
+              ),
               _Paragraph(
-                "Doivent être notifiés à l’intéressé :\n"
-                "• le taux affiché (mg/l)\n"
-                "• le taux retenu après soustraction de la marge d’erreur (mg/l) :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00068",
+                      "Doivent être notifiés à l’intéressé :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00069",
+                      "• le taux affiché (mg/l)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00070",
+                      "• le taux retenu après soustraction de la marge d’erreur (mg/l) :",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Taux affiché < 0,40 mg/l → soustraire 0,032 mg/l.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00071",
+                  "Taux affiché < 0,40 mg/l → soustraire 0,032 mg/l.",
+                ),
               ),
               _BulletPoint(
-                text: "Taux affiché entre 0,40 mg/l et 2 mg/l → soustraire 8%.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00072",
+                  "Taux affiché entre 0,40 mg/l et 2 mg/l → soustraire 8%.",
+                ),
               ),
               _BulletPoint(
-                text: "Taux affiché > 2 mg/l → soustraire 30%.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00073",
+                  "Taux affiché > 2 mg/l → soustraire 30%.",
+                ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Référence pratique : application CONVERTAUX via NEO.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00074",
+                  "Référence pratique : application CONVERTAUX via NEO.",
+                ),
               ),
             ],
           ),
@@ -396,33 +686,61 @@ class AsControleAlcoolemiePage extends StatelessWidget {
 
           // Qualification selon seuils (contrav/délit) — rendu net
           _ConditionCard(
-            title: "V — Seuils & qualification (rappel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+              "f00075",
+              "V — Seuils & qualification (rappel)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Contravention"),
-              _BulletPoint(
-                text:
-                    "≥ 0,10 et < 0,40 mg/l air expiré (ou ≥ 0,20 et < 0,80 g/l sang) : transport en commun, EAD, permis probatoire, apprentissage → contravention.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00076",
+                  "A) Contravention",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "≥ 0,25 et < 0,40 mg/l air expiré (ou ≥ 0,50 et < 0,80 g/l sang) : autre conducteur ou accompagnateur d’un élève conducteur → contravention.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00077",
+                  "≥ 0,10 et < 0,40 mg/l air expiré (ou ≥ 0,20 et < 0,80 g/l sang) : transport en commun, EAD, permis probatoire, apprentissage → contravention.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00078",
+                  "≥ 0,25 et < 0,40 mg/l air expiré (ou ≥ 0,50 et < 0,80 g/l sang) : autre conducteur ou accompagnateur d’un élève conducteur → contravention.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Délit"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00079",
+                  "B) Délit",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "≥ 0,40 mg/l air expiré (ou ≥ 0,80 g/l sang) : tout conducteur ou accompagnateur d’un élève conducteur → délit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00080",
+                  "≥ 0,40 mg/l air expiré (ou ≥ 0,80 g/l sang) : tout conducteur ou accompagnateur d’un élève conducteur → délit.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si C.E.I. : penser à constater les deux délits (selon la situation).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                      "f00081",
+                      "Si C.E.I. : penser à constater les deux délits (selon la situation).",
+                    ),
                   ),
                 ],
               ),
@@ -433,36 +751,55 @@ class AsControleAlcoolemiePage extends StatelessWidget {
 
           // Tentative & complicité (comme tu l’exiges)
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+              "f00082",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Tentative"),
               _Paragraph(
-                "Non applicable ici : il s’agit d’un régime de contrôle et de constatations (pas une infraction autonome).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00083",
+                  "Non applicable ici : il s’agit d’un régime de contrôle et de constatations (pas une infraction autonome).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00084",
+                  "Complicité",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En matière d’infractions liées à l’alcool au volant : la complicité peut être retenue selon le droit commun, conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00085",
+                    "En matière d’infractions liées à l’alcool au volant : la complicité peut être retenue selon le droit commun, conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00086",
+                    "l’article 121-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                    "f00087",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -475,9 +812,13 @@ class AsControleAlcoolemiePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Recueil de PV / Retour Sommaire — mise à jour : 16/07/2024.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart",
+                  "f00088",
+                  "Recueil de PV / Retour Sommaire — mise à jour : 16/07/2024.",
+                ),
               ),
             ],
           ),

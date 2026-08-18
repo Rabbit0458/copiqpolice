@@ -41,8 +41,58 @@ const corsHeaders = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
-const DEFAULT_SUCCESS_URL = "copiqpolice://paywall/success";
+const DEFAULT_SUCCESS_URL =
+  "copiqpolice://paywall/success?session_id={CHECKOUT_SESSION_ID}";
 const DEFAULT_CANCEL_URL = "copiqpolice://paywall/cancel";
+
+const TRUSTED_RETURN_HOSTS = new Set([
+  "copiq.fr",
+  "www.copiq.fr",
+  "app.copiq.fr",
+  "copiqpolice.app",
+  "www.copiqpolice.app",
+]);
+
+function sanitizeReturnUrl(
+  candidate: string | undefined,
+  kind: "success" | "cancel",
+): string {
+  const fallback = kind === "success"
+    ? DEFAULT_SUCCESS_URL
+    : DEFAULT_CANCEL_URL;
+  if (!candidate) return fallback;
+
+  try {
+    const parsed = new URL(candidate);
+    const allowedPaths = kind === "success"
+      ? new Set(["/success", "/payment-success", "/paywall/success"])
+      : new Set([
+        "/cancel",
+        "/canceled",
+        "/cancelled",
+        "/payment-cancel",
+        "/paywall/cancel",
+      ]);
+    const isCustomScheme = parsed.protocol === "copiqpolice:" &&
+      parsed.hostname === "paywall" && allowedPaths.has(parsed.pathname);
+    const isTrustedWebUrl = parsed.protocol === "https:" &&
+      TRUSTED_RETURN_HOSTS.has(parsed.hostname) &&
+      allowedPaths.has(parsed.pathname);
+
+    if (!isCustomScheme && !isTrustedWebUrl) return fallback;
+
+    if (kind === "success") {
+      parsed.searchParams.set("session_id", "{CHECKOUT_SESSION_ID}");
+      return parsed.toString().replace(
+        "%7BCHECKOUT_SESSION_ID%7D",
+        "{CHECKOUT_SESSION_ID}",
+      );
+    }
+    return parsed.toString();
+  } catch (_) {
+    return fallback;
+  }
+}
 
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL")!;
 const SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
@@ -179,8 +229,8 @@ serve(async (req: Request) => {
       mode: "subscription",
       customer: customerId,
       line_items: [{ price: priceId, quantity: 1 }],
-      success_url: body.success_url ?? DEFAULT_SUCCESS_URL,
-      cancel_url: body.cancel_url ?? DEFAULT_CANCEL_URL,
+      success_url: sanitizeReturnUrl(body.success_url, "success"),
+      cancel_url: sanitizeReturnUrl(body.cancel_url, "cancel"),
       allow_promotion_codes: body.allow_promotion_codes ?? true,
       // Automatic Tax needs a billing location. New COP'IQ customers only
       // have an email at this point, so let Checkout collect and persist the

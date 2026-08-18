@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVEtatCivilPage extends StatelessWidget {
   const PVEtatCivilPage({super.key});
@@ -55,10 +56,18 @@ class PVEtatCivilPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — APJ 20",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+            "f00002",
+            "PV — APJ 20",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class PVEtatCivilPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’état-civil",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+              "f00003",
+              "L’état-civil",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -85,22 +98,30 @@ class PVEtatCivilPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (ici : cadre APJ20 + collecte d'identité)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 20 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                    "f00005",
+                    "Article 20 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : rappelle les missions des agents de police judiciaire, notamment la constatation des infractions et la réception des déclarations par procès-verbal, ce qui implique le recueil rigoureux de l’identité des personnes concernées.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                    "f00006",
+                    " : rappelle les missions des agents de police judiciaire, notamment la constatation des infractions et la réception des déclarations par procès-verbal, ce qui implique le recueil rigoureux de l’identité des personnes concernées.",
+                  ),
                 ),
               ]),
             ],
@@ -110,17 +131,29 @@ class PVEtatCivilPage extends StatelessWidget {
 
           // Définition / objectif
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+              "f00007",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’identité permet de désigner, de reconnaître ou de retrouver une personne. Les informations doivent être recueillies en respectant un ordre précis.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00008",
+                  "L’identité permet de désigner, de reconnaître ou de retrouver une personne. Les informations doivent être recueillies en respectant un ordre précis.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Qu’il rapporte des faits ou relate des propos, le policier est amené à relever l’identité de personnes (victime, témoin, requérant, suspect). Selon le type de procès-verbal, elle est présentée différemment.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00009",
+                  "Qu’il rapporte des faits ou relate des propos, le policier est amené à relever l’identité de personnes (victime, témoin, requérant, suspect). Selon le type de procès-verbal, elle est présentée différemment.",
+                ),
               ),
             ],
           ),
@@ -129,19 +162,45 @@ class PVEtatCivilPage extends StatelessWidget {
 
           // I. Identité succincte
           _ConditionCard(
-            title: "II — L’identité succincte",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+              "f00010",
+              "II — L’identité succincte",
+            ),
             cardColor: cardS,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Elle est employée dans la marge des procès-verbaux. Elle sert à désigner toute personne dont le nom apparaît dans la procédure sans qu’il soit procédé à son audition.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00011",
+                  "Elle est employée dans la marge des procès-verbaux. Elle sert à désigner toute personne dont le nom apparaît dans la procédure sans qu’il soit procédé à son audition.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Elle comporte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00012",
+                  "Elle comporte",
+                ),
+              ),
               _BulletPoint(text: "Nom"),
-              _BulletPoint(text: "Prénom usuel"),
-              _BulletPoint(text: "Âge"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00013",
+                  "Prénom usuel",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00014",
+                  "Âge",
+                ),
+              ),
               _BulletPoint(text: "Profession"),
               _BulletPoint(text: "Domicile"),
             ],
@@ -151,29 +210,67 @@ class PVEtatCivilPage extends StatelessWidget {
 
           // II. Petite identité
           _ConditionCard(
-            title: "III — La petite identité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+              "f00015",
+              "III — La petite identité",
+            ),
             cardColor: cardP,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Elle est insérée dans le corps du procès-verbal lorsque la personne entendue ou interrogée n’est pas mise en cause (victime, témoin).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00016",
+                  "Elle est insérée dans le corps du procès-verbal lorsque la personne entendue ou interrogée n’est pas mise en cause (victime, témoin).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Elle comporte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00017",
+                  "Elle comporte",
+                ),
+              ),
               _BulletPoint(text: "Nom"),
-              _BulletPoint(text: "Prénoms"),
-              _BulletPoint(text: "Date et lieu de naissance"),
               _BulletPoint(
-                text:
-                    "Nationalité (si vol du document d’identité ou si nationalité étrangère)",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00018",
+                  "Prénoms",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00019",
+                  "Date et lieu de naissance",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00020",
+                  "Nationalité (si vol du document d’identité ou si nationalité étrangère)",
+                ),
               ),
               _BulletPoint(text: "Profession"),
               _BulletPoint(text: "Domicile"),
-              _BulletPoint(text: "Numéro de téléphone"),
               _BulletPoint(
-                text:
-                    "Adresse mail (pour communication ultérieure avec la police/gendarmerie et/ou la justice)",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00021",
+                  "Numéro de téléphone",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00022",
+                  "Adresse mail (pour communication ultérieure avec la police/gendarmerie et/ou la justice)",
+                ),
               ),
             ],
           ),
@@ -182,149 +279,344 @@ class PVEtatCivilPage extends StatelessWidget {
 
           // III. Grande identité
           _ConditionCard(
-            title: "IV — La grande identité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+              "f00023",
+              "IV — La grande identité",
+            ),
             cardColor: cardG,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Elle doit être relevée lorsque le policier se trouve en présence de l’auteur d’un crime ou d’un délit. Elle comporte des mentions très complètes permettant d’identifier sans ambiguïté la personne.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00024",
+                  "Elle doit être relevée lorsque le policier se trouve en présence de l’auteur d’un crime ou d’un délit. Elle comporte des mentions très complètes permettant d’identifier sans ambiguïté la personne.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Identité — personne concernée"),
-              _BulletPoint(
-                text:
-                    "Nom patronymique en LETTRES CAPITALES (dit « de jeune fille »).",
-              ),
-              _BulletPoint(text: "Prénom usuel en lettres minuscules."),
-              _BulletPoint(
-                text:
-                    "Autre état civil : divorcé, époux, veuf… (suivi du nom d’époux).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00025",
+                  "A) Identité — personne concernée",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Date et lieu de naissance : préciser le pays ou le département + arrondissement pour grandes villes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00026",
+                  "Nom patronymique en LETTRES CAPITALES (dit « de jeune fille »).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Filiation : nom/prénom du père (avec mention « DÉCÉDÉ » si besoin) ; nom de jeune fille + prénom de la mère.",
-              ),
-              _BulletPoint(text: "Nationalité."),
-
-              SizedBox(height: 12),
-
-              _SubTitle("B) Adresse"),
-              _BulletPoint(text: "Domicile (au sens du droit civil)."),
-              _BulletPoint(
-                text:
-                    "Pays, département, commune + arrondissement (grandes villes).",
-              ),
-              _BulletPoint(text: "Numéro et nom de la voie."),
-              _BulletPoint(
-                text:
-                    "Précisions : bâtiment, code d’accès, étage, porte d’entrée, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00027",
+                  "Prénom usuel en lettres minuscules.",
+                ),
               ),
               _BulletPoint(
-                text: "Téléphone domicile et autres coordonnées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00028",
+                  "Autre état civil : divorcé, époux, veuf… (suivi du nom d’époux).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00029",
+                  "Date et lieu de naissance : préciser le pays ou le département + arrondissement pour grandes villes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00030",
+                  "Filiation : nom/prénom du père (avec mention « DÉCÉDÉ » si besoin) ; nom de jeune fille + prénom de la mère.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00031",
+                  "Nationalité.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "C) Communication électronique (police/gendarmerie/justice)",
-              ),
-              _BulletPoint(text: "Oui (préciser l’adresse mail) ou non."),
-
-              SizedBox(height: 12),
-
-              _SubTitle("D) Compléments d’identité"),
-              _BulletPoint(
-                text:
-                    "Titre d’occupation : locataire, propriétaire, occupant à titre gratuit.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00032",
+                  "B) Adresse",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Propriétaire (si besoin) : nom et adresse ; montant du loyer ou du crédit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00033",
+                  "Domicile (au sens du droit civil).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complément nationalité (étranger) : nature/références du titre de séjour + dates (délivrance/expiration).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00034",
+                  "Pays, département, commune + arrondissement (grandes villes).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "État de la personne : vulnérabilité éventuelle ; n° de sécurité sociale.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("E) Situation de famille"),
-              _BulletPoint(
-                text:
-                    "Statut : célibataire, concubinage, divorce, mariage, séparé, veuf, PACS.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00035",
+                  "Numéro et nom de la voie.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conjoint : nom/prénom + date/lieu de l’union ; nombre et âge des enfants.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00036",
+                  "Précisions : bâtiment, code d’accès, étage, porte d’entrée, etc.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ex-conjoint : si séparation/divorce : nom/prénom + date/lieu ; nombre/âge des enfants + droit de garde.",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("F) Emploi / employeur"),
-              _BulletPoint(text: "Activité professionnelle."),
-              _BulletPoint(text: "Statut : employé ou à son compte."),
-              _BulletPoint(
-                text: "Date de début d’activité, salaire mensuel.",
-              ),
-              _BulletPoint(text: "Adresse employeur."),
-
-              SizedBox(height: 12),
-
-              _SubTitle("G) Diplôme / distinction"),
-              _BulletPoint(
-                text: "Niveau d’étude : analphabète ou niveau d’instruction.",
-              ),
-              _BulletPoint(text: "Diplômes obtenus."),
-              _BulletPoint(text: "Situation militaire."),
-              _BulletPoint(
-                text: "Décoration, distinction, pension (civile ou militaire).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00037",
+                  "Téléphone domicile et autres coordonnées.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("H) Permis / armes"),
-              _BulletPoint(
-                text:
-                    "Permis : nature (conduite, chasse, pêche), catégorie, numéro, date et lieu de délivrance.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00038",
+                  "C) Communication électronique (police/gendarmerie/justice)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Arme détenue : références d’autorisation (défense / sportif) + numéro, date, lieu ; armes détenues (nature, catégorie, marque, calibre, numéro).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00039",
+                  "Oui (préciser l’adresse mail) ou non.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("I) Antécédents judiciaires"),
-              _BulletPoint(
-                text: "Ne jamais évoquer une condamnation amnistiée.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00040",
+                  "D) Compléments d’identité",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mentionner « NS » (non spécifié) si la personne est connue des services de police ou de justice.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00041",
+                  "Titre d’occupation : locataire, propriétaire, occupant à titre gratuit.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00042",
+                  "Propriétaire (si besoin) : nom et adresse ; montant du loyer ou du crédit.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00043",
+                  "Complément nationalité (étranger) : nature/références du titre de séjour + dates (délivrance/expiration).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00044",
+                  "État de la personne : vulnérabilité éventuelle ; n° de sécurité sociale.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00045",
+                  "E) Situation de famille",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00046",
+                  "Statut : célibataire, concubinage, divorce, mariage, séparé, veuf, PACS.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00047",
+                  "Conjoint : nom/prénom + date/lieu de l’union ; nombre et âge des enfants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00048",
+                  "Ex-conjoint : si séparation/divorce : nom/prénom + date/lieu ; nombre/âge des enfants + droit de garde.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00049",
+                  "F) Emploi / employeur",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00050",
+                  "Activité professionnelle.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00051",
+                  "Statut : employé ou à son compte.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00052",
+                  "Date de début d’activité, salaire mensuel.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00053",
+                  "Adresse employeur.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00054",
+                  "G) Diplôme / distinction",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00055",
+                  "Niveau d’étude : analphabète ou niveau d’instruction.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00056",
+                  "Diplômes obtenus.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00057",
+                  "Situation militaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00058",
+                  "Décoration, distinction, pension (civile ou militaire).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00059",
+                  "H) Permis / armes",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00060",
+                  "Permis : nature (conduite, chasse, pêche), catégorie, numéro, date et lieu de délivrance.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00061",
+                  "Arme détenue : références d’autorisation (défense / sportif) + numéro, date, lieu ; armes détenues (nature, catégorie, marque, calibre, numéro).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00062",
+                  "I) Antécédents judiciaires",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00063",
+                  "Ne jamais évoquer une condamnation amnistiée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00064",
+                  "Mentionner « NS » (non spécifié) si la personne est connue des services de police ou de justice.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Astuce rédaction",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                  "f00065",
+                  "Astuce rédaction",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Recueillir dans un ordre fixe évite les oublis. En pratique, commence par l’identité stricte, puis l’adresse, puis les compléments (famille, emploi, titres, etc.).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/introduction/etat_civil_page.dart",
+                      "f00066",
+                      "Recueillir dans un ordre fixe évite les oublis. En pratique, commence par l’identité stricte, puis l’adresse, puis les compléments (famille, emploi, titres, etc.).",
+                    ),
                   ),
                 ],
               ),

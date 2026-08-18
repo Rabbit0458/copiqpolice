@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAbandonDeFamillePage extends StatelessWidget {
   const PaAbandonDeFamillePage({super.key});
@@ -59,10 +60,18 @@ class PaAbandonDeFamillePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Abandon de famille",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+            "f00002",
+            "Abandon de famille",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaAbandonDeFamillePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’abandon de famille",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+              "f00003",
+              "L’abandon de famille",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,28 +102,72 @@ class PaAbandonDeFamillePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait, pour une personne, de ne pas exécuter une décision judiciaire ou l’un des titres "
-                "mentionnés aux 2° à 6° du I de l’article 373-2-2 du code civil lui imposant de verser au profit "
-                "d’un enfant mineur, d’un descendant, d’un ascendant ou du conjoint une pension, une contribution, "
-                "des subsides ou des prestations de toute nature dues en raison d’une obligation familiale, "
-                "en demeurant plus de deux mois sans s’acquitter intégralement de cette obligation, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00005",
+                      "Le fait, pour une personne, de ne pas exécuter une décision judiciaire ou l’un des titres ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00006",
+                      "mentionnés aux 2° à 6° du I de l’article 373-2-2 du code civil lui imposant de verser au profit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00007",
+                      "d’un enfant mineur, d’un descendant, d’un ascendant ou du conjoint une pension, une contribution, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00008",
+                      "des subsides ou des prestations de toute nature dues en raison d’une obligation familiale, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00009",
+                      "en demeurant plus de deux mois sans s’acquitter intégralement de cette obligation, constitue une infraction.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Intermédiation financière",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00010",
+                  "Intermédiation financière",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Lorsque l’intermédiation financière des pensions alimentaires est mise en œuvre, "
-                        "le fait pour le parent débiteur de demeurer plus de deux mois sans s’acquitter intégralement "
-                        "des sommes dues entre les mains de l’organisme débiteur des prestations familiales "
-                        "assurant l’intermédiation constitue la même infraction.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00011",
+                          "Lorsque l’intermédiation financière des pensions alimentaires est mise en œuvre, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00012",
+                          "le fait pour le parent débiteur de demeurer plus de deux mois sans s’acquitter intégralement ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00013",
+                          "des sommes dues entre les mains de l’organisme débiteur des prestations familiales ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00014",
+                          "assurant l’intermédiation constitue la même infraction.",
+                        ),
                   ),
                 ],
               ),
@@ -121,21 +178,30 @@ class PaAbandonDeFamillePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+              "f00015",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00016",
+                    "Article 227-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : définit et réprime le délit d’abandon de famille.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00017",
+                    " : définit et réprime le délit d’abandon de famille.",
+                  ),
                 ),
               ]),
             ],
@@ -145,81 +211,224 @@ class PaAbandonDeFamillePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+              "f00018",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Un acte imposant le versement d’une somme d’argent",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00019",
+                  "A) Un acte imposant le versement d’une somme d’argent",
+                ),
               ),
               _Paragraph(
-                "L’infraction suppose l’existence d’une obligation familiale portant sur une pension, une contribution, "
-                "des subsides ou une prestation de toute nature (obligations prévues par le code civil) au profit :\n"
-                "• d’un enfant mineur\n"
-                "• d’un descendant\n"
-                "• d’un ascendant\n"
-                "• du conjoint\n\n"
-                "Exemples : contribution aux charges du mariage, pension alimentaire, prestation compensatoire après divorce, etc.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00020",
+                      "L’infraction suppose l’existence d’une obligation familiale portant sur une pension, une contribution, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00021",
+                      "des subsides ou une prestation de toute nature (obligations prévues par le code civil) au profit :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00022",
+                      "• d’un enfant mineur\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00023",
+                      "• d’un descendant\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00024",
+                      "• d’un ascendant\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00025",
+                      "• du conjoint\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00026",
+                      "Exemples : contribution aux charges du mariage, pension alimentaire, prestation compensatoire après divorce, etc.",
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("B) Un acte exécutoire (décision ou titre)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00027",
+                  "B) Un acte exécutoire (décision ou titre)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "L’abandon de famille consiste à ne pas exécuter une décision judiciaire ou l’un des titres "
-                      "mentionnés aux 2° à 6° du I de ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                        "f00028",
+                        "L’abandon de famille consiste à ne pas exécuter une décision judiciaire ou l’un des titres ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                        "f00029",
+                        "mentionnés aux 2° à 6° du I de ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’article 373-2-2 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00030",
+                    "l’article 373-2-2 du code civil",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00031",
+                    ". L’obligation doit être exécutoire.",
                   ),
                 ),
-                TextSpan(text: ". L’obligation doit être exécutoire."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Peuvent notamment constituer un fondement exécutoire :\n"
-                "• une décision juridictionnelle\n"
-                "• une convention judiciairement homologuée\n"
-                "• une convention prévue à l’article 229-1 du code civil\n"
-                "• un acte notarié\n"
-                "• une convention à laquelle l’organisme débiteur des prestations familiales a donné force exécutoire\n"
-                "• une transaction ou un acte constatant un accord issu d’une médiation/conciliation/procédure participative\n\n"
-                "La décision doit être exécutoire et portée légalement à la connaissance du débiteur (ou exécutée volontairement, "
-                "ou dont il a eu légalement connaissance).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00032",
+                      "Peuvent notamment constituer un fondement exécutoire :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00033",
+                      "• une décision juridictionnelle\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00034",
+                      "• une convention judiciairement homologuée\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00035",
+                      "• une convention prévue à l’article 229-1 du code civil\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00036",
+                      "• un acte notarié\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00037",
+                      "• une convention à laquelle l’organisme débiteur des prestations familiales a donné force exécutoire\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00038",
+                      "• une transaction ou un acte constatant un accord issu d’une médiation/conciliation/procédure participative\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00039",
+                      "La décision doit être exécutoire et portée légalement à la connaissance du débiteur (ou exécutée volontairement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00040",
+                      "ou dont il a eu légalement connaissance).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Durée",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00041",
+                  "Durée",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’obligation de payer se poursuit pendant toute la période prévue par l’acte exécutoire, "
-                        "tant qu’une décision ultérieure ne l’a pas supprimée.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00042",
+                          "L’obligation de payer se poursuit pendant toute la période prévue par l’acte exécutoire, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00043",
+                          "tant qu’une décision ultérieure ne l’a pas supprimée.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un défaut de paiement"),
-              _SubTitle("1) Inexécution de l’intégralité du paiement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00044",
+                  "C) Un défaut de paiement",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00045",
+                  "1) Inexécution de l’intégralité du paiement",
+                ),
+              ),
               _Paragraph(
-                "Le débiteur doit s’acquitter intégralement de l’obligation :\n"
-                "• le délit est constitué si le non-paiement est total ou partiel\n"
-                "• des paiements partiels, en nature, des compensations ne permettent pas d’exonérer\n"
-                "• le refus de prendre en compte une indexation peut aussi caractériser l’infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00046",
+                      "Le débiteur doit s’acquitter intégralement de l’obligation :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00047",
+                      "• le délit est constitué si le non-paiement est total ou partiel\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00048",
+                      "• des paiements partiels, en nature, des compensations ne permettent pas d’exonérer\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00049",
+                      "• le refus de prendre en compte une indexation peut aussi caractériser l’infraction.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Refus d’indexation (réévaluation) : "),
                   TextSpan(
-                    text: "(Cass. crim., 26 octobre 1987)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00050",
+                      "Refus d’indexation (réévaluation) : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00051",
+                      "(Cass. crim., 26 octobre 1987)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -232,18 +441,40 @@ class PaAbandonDeFamillePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "2) Défaut de paiement pendant plus de deux mois",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00052",
+                  "2) Défaut de paiement pendant plus de deux mois",
+                ),
               ),
               _Paragraph(
-                "Le texte exige que le débiteur demeure plus de deux mois sans s’acquitter intégralement : "
-                "le délai doit être dépassé (plus de deux mois et non deux mois seulement).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00053",
+                      "Le texte exige que le débiteur demeure plus de deux mois sans s’acquitter intégralement : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00054",
+                      "le délai doit être dépassé (plus de deux mois et non deux mois seulement).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Délai « plus de deux mois » : "),
                   TextSpan(
-                    text: "(C.A. Paris, 16 mars 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00055",
+                      "Délai « plus de deux mois » : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00056",
+                      "(C.A. Paris, 16 mars 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -254,46 +485,104 @@ class PaAbandonDeFamillePage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Point de départ du délai :\n"
-                "• la date de signification de la décision ordonnant le versement, ou\n"
-                "• le jour du dernier versement intégral (en cas d’interruption des paiements).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00057",
+                      "Point de départ du délai :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00058",
+                      "• la date de signification de la décision ordonnant le versement, ou\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00059",
+                      "• le jour du dernier versement intégral (en cas d’interruption des paiements).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Effet du délai",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00060",
+                  "Effet du délai",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le délit est constitué dès l’expiration des deux mois : aucune situation postérieure "
-                        "n’efface rétroactivement l’infraction (même si le paiement intervient tardivement, "
-                        "ou si la décision est ensuite modifiée/cassée).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00061",
+                          "Le délit est constitué dès l’expiration des deux mois : aucune situation postérieure ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00062",
+                          "n’efface rétroactivement l’infraction (même si le paiement intervient tardivement, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00063",
+                          "ou si la décision est ensuite modifiée/cassée).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Cassation ultérieure sans effet : "),
                   TextSpan(
-                    text: "(Cass. crim., 26 juillet 1977)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00064",
+                      "Cassation ultérieure sans effet : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00065",
+                      "(Cass. crim., 26 juillet 1977)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(text: ". "),
-                  TextSpan(text: "Réformation partielle sans effet : "),
                   TextSpan(
-                    text: "(Cass. crim., 21 mai 1980)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00066",
+                      "Réformation partielle sans effet : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00067",
+                      "(Cass. crim., 21 mai 1980)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(text: ". "),
-                  TextSpan(text: "Paiement tardif sans effet : "),
                   TextSpan(
-                    text: "(Cass. crim., 23 mars 1981)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00068",
+                      "Paiement tardif sans effet : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00069",
+                      "(Cass. crim., 23 mars 1981)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -309,30 +598,66 @@ class PaAbandonDeFamillePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+              "f00070",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Volonté de ne pas exécuter l’acte imposant le versement",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00071",
+                  "Volonté de ne pas exécuter l’acte imposant le versement",
+                ),
               ),
               _Paragraph(
-                "Le délit d’abandon de famille sanctionne l’inexécution volontaire de l’acte fixant le montant "
-                "de la pension/prestation, à condition que l’auteur ait eu connaissance légale de l’acte.\n\n"
-                "La charge de la preuve (caractère intentionnel et connaissance de l’acte) appartient à la partie poursuivante.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00072",
+                      "Le délit d’abandon de famille sanctionne l’inexécution volontaire de l’acte fixant le montant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00073",
+                      "de la pension/prestation, à condition que l’auteur ait eu connaissance légale de l’acte.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00074",
+                      "La charge de la preuve (caractère intentionnel et connaissance de l’acte) appartient à la partie poursuivante.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le délit n’est pas constitué si le non-paiement résulte d’une situation de précarité persistante "
-                        "ne dépendant pas de la volonté du débiteur : ces circonstances peuvent établir le caractère involontaire "
-                        "du défaut de paiement ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00075",
+                          "Le délit n’est pas constitué si le non-paiement résulte d’une situation de précarité persistante ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00076",
+                          "ne dépendant pas de la volonté du débiteur : ces circonstances peuvent établir le caractère involontaire ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                          "f00077",
+                          "du défaut de paiement ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(C.A. Aix-en-Provence, 01 juillet 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                      "f00078",
+                      "(C.A. Aix-en-Provence, 01 juillet 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -348,13 +673,21 @@ class PaAbandonDeFamillePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+              "f00079",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00080",
+                  "Aucune circonstance aggravante prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -363,80 +696,154 @@ class PaAbandonDeFamillePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+              "f00081",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00082",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00083",
+                    "Article 227-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "2 ans d’emprisonnement."),
-              _BulletPoint(text: "15 000 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00084",
+                  "2 ans d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00085",
+                  "15 000 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00086",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-4-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00087",
+                    "Article 227-4-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit la responsabilité pénale des personnes morales.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00088",
+                    " : prévoit la responsabilité pénale des personnes morales.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Peines encourues : amende selon "),
                 TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00089",
+                    "Peines encourues : amende selon ",
                   ),
                 ),
                 TextSpan(
-                  text: ", et peines complémentaires prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00090",
+                    "l’article 131-38 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "l’article 131-39, 2° à 9° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00091",
+                    ", et peines complémentaires prévues par ",
                   ),
                 ),
-                TextSpan(text: " (interdiction d’exercer, etc.)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00092",
+                    "l’article 131-39, 2° à 9° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00093",
+                    " (interdiction d’exercer, etc.).",
+                  ),
+                ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00094",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                  "f00095",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00096",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text: " (aide et assistance, provocation ou instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00097",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart",
+                    "f00098",
+                    " (aide et assistance, provocation ou instructions).",
+                  ),
                 ),
               ]),
             ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CooperationUEPage extends StatelessWidget {
   const CooperationUEPage({super.key});
@@ -55,10 +56,18 @@ class CooperationUEPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Étrangers",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+            "f00002",
+            "Étrangers",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class CooperationUEPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Coopération policière et judiciaire au sein de l’Union européenne",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+              "f00003",
+              "Coopération policière et judiciaire au sein de l’Union européenne",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,23 +97,41 @@ class CooperationUEPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Pourquoi c’est essentiel ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+              "f00004",
+              "Pourquoi c’est essentiel ?",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La création de l’espace Schengen (libre circulation) a nécessité un renforcement "
-                "de la coopération policière et judiciaire entre États membres, afin de préserver la sécurité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00005",
+                      "La création de l’espace Schengen (libre circulation) a nécessité un renforcement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00006",
+                      "de la coopération policière et judiciaire entre États membres, afin de préserver la sécurité.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Objectif : échanger rapidement des informations, coordonner les actions, et soutenir les enquêtes transfrontalières.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00007",
+                  "Objectif : échanger rapidement des informations, coordonner les actions, et soutenir les enquêtes transfrontalières.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Principe : coopération organisée et encadrée, avec des canaux dédiés et des conditions strictes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00008",
+                  "Principe : coopération organisée et encadrée, avec des canaux dédiés et des conditions strictes.",
+                ),
               ),
             ],
           ),
@@ -109,34 +140,58 @@ class CooperationUEPage extends StatelessWidget {
 
           // ✅ Cadre en haut (sans inventer d’articles)
           _ConditionCard(
-            title: "Cadre (à retenir)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+              "f00009",
+              "Cadre (à retenir)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La coopération repose sur des mécanismes transfrontaliers encadrés, "
-                "notamment dans l’espace Schengen et au sein de l’UE, pour permettre :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00010",
+                      "La coopération repose sur des mécanismes transfrontaliers encadrés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00011",
+                      "notamment dans l’espace Schengen et au sein de l’UE, pour permettre :",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "l’observation transfrontalière (filature au-delà de la frontière, sans interpellation).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00012",
+                  "l’observation transfrontalière (filature au-delà de la frontière, sans interpellation).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "la poursuite transfrontalière (continuer une poursuite dans un État voisin, sous conditions strictes).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00013",
+                  "la poursuite transfrontalière (continuer une poursuite dans un État voisin, sous conditions strictes).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "l’échange d’informations via des services dédiés (SCCOPOL, PCC, UCAP/Prüm, N-SIS II…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00014",
+                  "l’échange d’informations via des services dédiés (SCCOPOL, PCC, UCAP/Prüm, N-SIS II…).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ici, on retient surtout les définitions, les conditions et les canaux (qui contacter / comment faire).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00015",
+                      "Ici, on retient surtout les définitions, les conditions et les canaux (qui contacter / comment faire).",
+                    ),
                   ),
                 ],
               ),
@@ -147,38 +202,84 @@ class CooperationUEPage extends StatelessWidget {
 
           // I — COOP POLICIÈRE
           _ConditionCard(
-            title: "I — Coopération policière",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+              "f00016",
+              "I — Coopération policière",
+            ),
             cardColor: cardPolice,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Droit d’observation transfrontalière"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00017",
+                  "A) Droit d’observation transfrontalière",
+                ),
+              ),
               _Paragraph(
-                "Il permet à un enquêteur de continuer, sous certaines conditions, une filature sur le territoire "
-                "d’un État voisin membre de l’espace Schengen, sans interpellation possible.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00018",
+                      "Il permet à un enquêteur de continuer, sous certaines conditions, une filature sur le territoire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00019",
+                      "d’un État voisin membre de l’espace Schengen, sans interpellation possible.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("1) Observation dite « ordinaire »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00020",
+                  "1) Observation dite « ordinaire »",
+                ),
+              ),
               _Paragraph(
-                "Elle intervient dans le cadre d’une enquête judiciaire. La personne observée doit être présumée "
-                "avoir participé (ou être susceptible de commettre) un fait puni d’une peine. "
-                "Peuvent aussi être observées des personnes susceptibles de conduire à l’identification de l’intéressé.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00021",
+                      "Elle intervient dans le cadre d’une enquête judiciaire. La personne observée doit être présumée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00022",
+                      "avoir participé (ou être susceptible de commettre) un fait puni d’une peine. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00023",
+                      "Peuvent aussi être observées des personnes susceptibles de conduire à l’identification de l’intéressé.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Condition clé : autorisation préalable de l’État requis.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00024",
+                  "Condition clé : autorisation préalable de l’État requis.",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pour les agents français : demande transmise via la ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00025",
+                      "Pour les agents français : demande transmise via la ",
+                    ),
                   ),
                   TextSpan(
-                    text: "S.C.C.O.P.O.L.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00026",
+                      "S.C.C.O.P.O.L.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -189,44 +290,95 @@ class CooperationUEPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
 
-              _SubTitle("2) Observation « en urgence »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00027",
+                  "2) Observation « en urgence »",
+                ),
+              ),
               _Paragraph(
-                "Lorsque l’autorisation préalable ne peut pas être demandée pour des raisons particulièrement urgentes, "
-                "l’agent peut continuer l’observation au-delà de la frontière pour certaines infractions graves "
-                "(liste limitative : meurtre, viol, trafic de stupéfiants, vol aggravé, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00028",
+                      "Lorsque l’autorisation préalable ne peut pas être demandée pour des raisons particulièrement urgentes, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00029",
+                      "l’agent peut continuer l’observation au-delà de la frontière pour certaines infractions graves ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00030",
+                      "(liste limitative : meurtre, viol, trafic de stupéfiants, vol aggravé, etc.).",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Obligation : franchissement immédiatement porté à la connaissance de l’autorité centrale du pays concerné.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00031",
+                  "Obligation : franchissement immédiatement porté à la connaissance de l’autorité centrale du pays concerné.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Puis : autorisation donnée a posteriori par cette autorité centrale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00032",
+                  "Puis : autorisation donnée a posteriori par cette autorité centrale.",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Droit de poursuite transfrontalière"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00033",
+                  "B) Droit de poursuite transfrontalière",
+                ),
+              ),
               _Paragraph(
-                "Il permet à des policiers (O.P.J. ou A.P.J.) poursuivant une personne prise en flagrant délit "
-                "d’une infraction grave (liste limitative), ou se trouvant en état d’arrestation provisoire / purgeant une peine, "
-                "de continuer la poursuite sur le territoire d’un État voisin membre de l’espace Schengen.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00034",
+                      "Il permet à des policiers (O.P.J. ou A.P.J.) poursuivant une personne prise en flagrant délit ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00035",
+                      "d’une infraction grave (liste limitative), ou se trouvant en état d’arrestation provisoire / purgeant une peine, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00036",
+                      "de continuer la poursuite sur le territoire d’un État voisin membre de l’espace Schengen.",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Pas d’autorisation préalable en principe, mais conditions très strictes et modalités précises.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00037",
+                  "Pas d’autorisation préalable en principe, mais conditions très strictes et modalités précises.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dès le franchissement : alerter sans délai les autorités compétentes de l’État concerné.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00038",
+                  "Dès le franchissement : alerter sans délai les autorités compétentes de l’État concerné.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À retenir : c’est proche du droit d’observation, mais dans un contexte de poursuite immédiate.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00039",
+                      "À retenir : c’est proche du droit d’observation, mais dans un contexte de poursuite immédiate.",
+                    ),
                   ),
                 ],
               ),
@@ -237,62 +389,135 @@ class CooperationUEPage extends StatelessWidget {
 
           // Services de coopération
           _ConditionCard(
-            title: "C) Services de coopération policière (France)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+              "f00040",
+              "C) Services de coopération policière (France)",
+            ),
             cardColor: cardServices,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Au sein de la D.N.P.J., la direction des relations internationales coordonne la coopération policière opérationnelle. "
-                "Elle s’appuie sur plusieurs structures.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00041",
+                      "Au sein de la D.N.P.J., la direction des relations internationales coordonne la coopération policière opérationnelle. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00042",
+                      "Elle s’appuie sur plusieurs structures.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("1) S.C.C.O.P.O.L."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00043",
+                  "1) S.C.C.O.P.O.L.",
+                ),
+              ),
               _Paragraph(
-                "La Section Centrale de Coopération Opérationnelle de Police administre des organes de coopération internationale, "
-                "dont notamment :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00044",
+                      "La Section Centrale de Coopération Opérationnelle de Police administre des organes de coopération internationale, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00045",
+                      "dont notamment :",
+                    ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Le B.C.N. France d’Interpol : coopération policière internationale (organisation mondiale).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00046",
+                  "Le B.C.N. France d’Interpol : coopération policière internationale (organisation mondiale).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’unité nationale Europol : lutte contre la criminalité organisée et le terrorisme, analyse et regroupements.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00047",
+                  "L’unité nationale Europol : lutte contre la criminalité organisée et le terrorisme, analyse et regroupements.",
+                ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) P.C.C. — Point de Contact Central"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00048",
+                  "2) P.C.C. — Point de Contact Central",
+                ),
+              ),
               _Paragraph(
-                "Il centralise les demandes nationales de coopération au sein de la SCCOPOL. "
-                "Il vérifie la légalité, effectue les premiers recoupements et choisit le canal le plus adapté.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00049",
+                      "Il centralise les demandes nationales de coopération au sein de la SCCOPOL. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00050",
+                      "Il vérifie la légalité, effectue les premiers recoupements et choisit le canal le plus adapté.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Astuce terrain : le PCC = la « tour de contrôle » qui oriente la demande sur le bon circuit.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00051",
+                      "Astuce terrain : le PCC = la « tour de contrôle » qui oriente la demande sur le bon circuit.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("3) U.C.A.P. (Prüm)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00052",
+                  "3) U.C.A.P. (Prüm)",
+                ),
+              ),
               _Paragraph(
-                "L’unité de coordination et d’assistance Prüm traite les échanges d’informations consécutifs à un « hit » "
-                "lors des comparaisons automatisées d’ADN ou d’empreintes digitales entre pays de l’UE.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00053",
+                      "L’unité de coordination et d’assistance Prüm traite les échanges d’informations consécutifs à un « hit » ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00054",
+                      "lors des comparaisons automatisées d’ADN ou d’empreintes digitales entre pays de l’UE.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("4) Office N-SIS II"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00055",
+                  "4) Office N-SIS II",
+                ),
+              ),
               _Paragraph(
-                "Il assure le bon fonctionnement et la sécurité du système N-SIS II (interface nationale du SIS).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00056",
+                  "Il assure le bon fonctionnement et la sécurité du système N-SIS II (interface nationale du SIS).",
+                ),
               ),
             ],
           ),
@@ -301,49 +526,126 @@ class CooperationUEPage extends StatelessWidget {
 
           // II — COOP JUDICIAIRE
           _ConditionCard(
-            title: "II — Coopération judiciaire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+              "f00057",
+              "II — Coopération judiciaire",
+            ),
             cardColor: cardJud,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Entraide judiciaire"),
-              _Paragraph(
-                "Une demande d’entraide judiciaire est adressée à une autorité étrangère pour exécuter un ou plusieurs actes judiciaires, "
-                "dans le but de réprimer une infraction existante.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00058",
+                  "A) Entraide judiciaire",
+                ),
               ),
-              SizedBox(height: 12),
-
-              _SubTitle("B) Équipes communes d’enquête (ECE)"),
               _Paragraph(
-                "Des équipes communes d’enquête, regroupant plusieurs États membres, peuvent être créées en France "
-                "dans le cadre d’une procédure judiciaire existante, notamment pour une enquête pénale complexe.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00059",
+                      "Une demande d’entraide judiciaire est adressée à une autorité étrangère pour exécuter un ou plusieurs actes judiciaires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00060",
+                      "dans le but de réprimer une infraction existante.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "C) C.C.P.D. — Centres de Coopération Policière et Douanière",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00061",
+                  "B) Équipes communes d’enquête (ECE)",
+                ),
               ),
               _Paragraph(
-                "Les CCPD rassemblent dans une même structure des agents de sécurité de la zone frontalière des États partenaires. "
-                "Pour la France : Police nationale, Gendarmerie nationale et Douane y sont représentées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00062",
+                      "Des équipes communes d’enquête, regroupant plusieurs États membres, peuvent être créées en France ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00063",
+                      "dans le cadre d’une procédure judiciaire existante, notamment pour une enquête pénale complexe.",
+                    ),
               ),
-              SizedBox(height: 8),
-              _BulletPoint(text: "Rôle : échange d’informations."),
-              _BulletPoint(text: "Limite : aucun pouvoir opérationnel."),
               SizedBox(height: 12),
 
-              _SubTitle("D) Commissariats européens"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00064",
+                  "C) C.C.P.D. — Centres de Coopération Policière et Douanière",
+                ),
+              ),
               _Paragraph(
-                "Ils consistent en un renfort d’agents des États membres au profit des services de sécurité publique "
-                "dans des lieux particulièrement fréquentés par des ressortissants européens, lors d’évènements ponctuels "
-                "ou pendant les périodes touristiques.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00065",
+                      "Les CCPD rassemblent dans une même structure des agents de sécurité de la zone frontalière des États partenaires. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00066",
+                      "Pour la France : Police nationale, Gendarmerie nationale et Douane y sont représentées.",
+                    ),
+              ),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00067",
+                  "Rôle : échange d’informations.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00068",
+                  "Limite : aucun pouvoir opérationnel.",
+                ),
+              ),
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                  "f00069",
+                  "D) Commissariats européens",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00070",
+                      "Ils consistent en un renfort d’agents des États membres au profit des services de sécurité publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00071",
+                      "dans des lieux particulièrement fréquentés par des ressortissants européens, lors d’évènements ponctuels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00072",
+                      "ou pendant les périodes touristiques.",
+                    ),
               ),
               SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Des policiers français peuvent aussi être désignés pour renforcer les forces de police ou de gendarmerie d’autres États.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/cooperation_ue_page.dart",
+                      "f00073",
+                      "Des policiers français peuvent aussi être désignés pour renforcer les forces de police ou de gendarmerie d’autres États.",
+                    ),
                   ),
                 ],
               ),
@@ -601,9 +903,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

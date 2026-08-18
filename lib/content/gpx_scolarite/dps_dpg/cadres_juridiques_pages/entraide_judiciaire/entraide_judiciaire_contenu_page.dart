@@ -1,6 +1,7 @@
 // lib/gpx_scolarite_pages/cadres_juridiques/entraide_judiciaire_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class EntraideJudiciaireContenuPage extends StatelessWidget {
   const EntraideJudiciaireContenuPage({super.key});
@@ -26,10 +27,18 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Entraide judiciaire internationale',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+            "f00002",
+            'Entraide judiciaire internationale',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,7 +52,11 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'L’entraide judiciaire internationale\net la coopération pénale',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00003",
+              'L’entraide judiciaire internationale\net la coopération pénale',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,9 +66,21 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Vue d’ensemble des principaux mécanismes de coopération pénale et policière, '
-            'du mandat d’arrêt européen et des procédures d’extradition. '
-            'Repères pratiques pour comprendre les acteurs, les étapes et le rôle des services enquêteurs.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+                  "f00004",
+                  'Vue d’ensemble des principaux mécanismes de coopération pénale et policière, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+                  "f00005",
+                  'du mandat d’arrêt européen et des procédures d’extradition. ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+                  "f00006",
+                  'Repères pratiques pour comprendre les acteurs, les étapes et le rôle des services enquêteurs.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -70,7 +95,11 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
           //            LA COOPÉRATION PÉNALE POLICIÈRE
           // =================================================================
           Text(
-            'CHAPITRE 1',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00007",
+              'CHAPITRE 1',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 12,
@@ -80,7 +109,11 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'La coopération pénale policière',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00008",
+              'La coopération pénale policière',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 18,
@@ -92,9 +125,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_eurojust',
-            title: 'L’Agence EUROJUST',
-            subtitle:
-                'Rôle, missions et fonctionnement d’EUROJUST dans la coordination des enquêtes et des poursuites entre États membres.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00009",
+              'L’Agence EUROJUST',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00010",
+              'Rôle, missions et fonctionnement d’EUROJUST dans la coordination des enquêtes et des poursuites entre États membres.',
+            ),
             imagePath: 'assets/images/generalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -107,9 +147,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_prum',
-            title: 'Le traité de Prüm',
-            subtitle:
-                'Échanges automatisés de données (ADN, empreintes, immatriculations) et coopération renforcée pour la lutte contre la criminalité.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00011",
+              'Le traité de Prüm',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00012",
+              'Échanges automatisés de données (ADN, empreintes, immatriculations) et coopération renforcée pour la lutte contre la criminalité.',
+            ),
             imagePath: 'assets/images/commission_rogatoire.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -122,9 +169,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_rje',
-            title: 'Le Réseau judiciaire européen (R.J.E.)',
-            subtitle:
-                'Point de contact, assistance pratique et résolution des difficultés dans la mise en œuvre de l’entraide judiciaire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00013",
+              'Le Réseau judiciaire européen (R.J.E.)',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00014",
+              'Point de contact, assistance pratique et résolution des difficultés dans la mise en œuvre de l’entraide judiciaire.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -137,9 +191,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_entraide_internationale',
-            title: 'L’entraide judiciaire internationale',
-            subtitle:
-                'Principes, bases juridiques, circuits de transmission et rôle des autorités centrales en matière d’entraide pénale.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00015",
+              'L’entraide judiciaire internationale',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00016",
+              'Principes, bases juridiques, circuits de transmission et rôle des autorités centrales en matière d’entraide pénale.',
+            ),
             imagePath: 'assets/images/gavel_desk_2.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -155,7 +216,11 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
           //                  LE MANDAT D’ARRÊT EUROPÉEN
           // =================================================================
           Text(
-            'CHAPITRE 2',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00017",
+              'CHAPITRE 2',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 12,
@@ -165,7 +230,11 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Le mandat d’arrêt européen',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00018",
+              'Le mandat d’arrêt européen',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 18,
@@ -177,9 +246,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_mae_definition',
-            title: 'Définition du mandat d’arrêt européen',
-            subtitle:
-                'Notion, finalité et conditions de recours au M.A.E. dans l’espace judiciaire européen.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00019",
+              'Définition du mandat d’arrêt européen',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00020",
+              'Notion, finalité et conditions de recours au M.A.E. dans l’espace judiciaire européen.',
+            ),
             imagePath: 'assets/images/probite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -192,9 +268,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_mae_mise_en_oeuvre',
-            title: 'Mise en œuvre du mandat d’arrêt européen',
-            subtitle:
-                'Étapes principales, acteurs compétents et articulation avec les procédures nationales.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00021",
+              'Mise en œuvre du mandat d’arrêt européen',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00022",
+              'Étapes principales, acteurs compétents et articulation avec les procédures nationales.',
+            ),
             imagePath: 'assets/images/reserve.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -207,10 +290,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_mae_mission_fr',
-            title:
-                'Mission d’un mandat d’arrêt européen\npar les juridictions françaises',
-            subtitle:
-                'Délivrance du M.A.E. par les autorités françaises, contenu de la décision et suites procédurales.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00023",
+              'Mission d’un mandat d’arrêt européen\npar les juridictions françaises',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00024",
+              'Délivrance du M.A.E. par les autorités françaises, contenu de la décision et suites procédurales.',
+            ),
             imagePath: 'assets/images/criminalite_organisee.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -223,10 +312,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_mae_execution_fr',
-            title:
-                'Exécution d’un mandat d’arrêt européen\npar les juridictions françaises',
-            subtitle:
-                'Réception d’un M.A.E., droits de la personne arrêtée, contrôle juridictionnel et remise à l’État émetteur.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00025",
+              'Exécution d’un mandat d’arrêt européen\npar les juridictions françaises',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00026",
+              'Réception d’un M.A.E., droits de la personne arrêtée, contrôle juridictionnel et remise à l’État émetteur.',
+            ),
             imagePath: 'assets/images/gav.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -242,7 +337,11 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
           //                           L’EXTRADITION
           // =================================================================
           Text(
-            'CHAPITRE 3',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00027",
+              'CHAPITRE 3',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 12,
@@ -252,7 +351,11 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'L’extradition',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00028",
+              'L’extradition',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 18,
@@ -264,9 +367,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_extradition_droit_commun',
-            title: 'La procédure d’extradition de droit commun',
-            subtitle:
-                'Conditions de recevabilité, phases administrative et judiciaire, garanties offertes à la personne recherchée.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00029",
+              'La procédure d’extradition de droit commun',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00030",
+              'Conditions de recevabilité, phases administrative et judiciaire, garanties offertes à la personne recherchée.',
+            ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -279,10 +389,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_extradition_simplifiee_ue',
-            title:
-                'La procédure simplifiée d’extradition\nentre États membres de l’Union européenne',
-            subtitle:
-                'Spécificités de la procédure allégée, délais raccourcis et articulation avec le mandat d’arrêt européen.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00031",
+              'La procédure simplifiée d’extradition\nentre États membres de l’Union européenne',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00032",
+              'Spécificités de la procédure allégée, délais raccourcis et articulation avec le mandat d’arrêt européen.',
+            ),
             imagePath: 'assets/images/generalite.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -295,9 +411,16 @@ class EntraideJudiciaireContenuPage extends StatelessWidget {
 
           _ModuleCard(
             tag: 'eji_extradition_modalites_transmission',
-            title: 'Modalités de transmission de la demande d’extradition',
-            subtitle:
-                'Rôle du ministère de la Justice, voies diplomatiques ou directes, échanges d’informations complémentaires.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00033",
+              'Modalités de transmission de la demande d’extradition',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart",
+              "f00034",
+              'Rôle du ministère de la Justice, voies diplomatiques ou directes, échanges d’informations complémentaires.',
+            ),
             imagePath: 'assets/images/commission_rogatoire.jpeg',
             textMain: textMain,
             textSoft: textSoft,

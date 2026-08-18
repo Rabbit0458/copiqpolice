@@ -14,8 +14,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 // Si tu as exposé le contrôleur du grade depuis home_page.dart
 import 'package:copiqpolice/features/home/home_page.dart'
     show UserTrackController, UserTrack;
-import 'package:copiqpolice/core/widgets/app_notifier.dart'
-    show AppNotifier;
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppNotifier;
 
 class _T {
   static const Color ink = Color(0xFF212529);
@@ -79,7 +78,8 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
       AppNotifier.info(
         context,
         title: 'Bientôt disponible',
-        message: 'Le module Réserviste sera disponible dans une prochaine mise à jour.',
+        message:
+            'Le module Réserviste sera disponible dans une prochaine mise à jour.',
       );
       return;
     }
@@ -147,66 +147,76 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
           ),
         ),
         child: SafeArea(
-          child: ListView(
-            padding: const EdgeInsets.fromLTRB(20, 24, 20, 28),
-            children: [
-              Text(
-                'Choisis ton grade',
-                style: GoogleFonts.instrumentSans(
-                  fontSize: 26,
-                  fontWeight: FontWeight.w900,
-                  letterSpacing: 0.1,
-                  color: isDark ? Colors.white : _T.ink,
-                ),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                'Réserve, Policier adjoint ou Gardien de la paix.',
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: _muted(context, .8),
-                ),
-              ),
-              const SizedBox(height: 22),
-
-              _ChoiceHeroCard(
-                image: 'assets/images/reserve.jpeg',
-                badge: 'Réserve',
-                title: 'Réserviste',
-                locked: true,
-                selected: _grade == GradeChoice.reserve,
-                onTap: () => _apply(GradeChoice.reserve),
-              ),
-              const SizedBox(height: 18),
-
-              _ChoiceHeroCard(
-                image: 'assets/images/pa.jpg',
-                badge: 'Adjoint',
-                title: 'Policier adjoint',
-                selected: _grade == GradeChoice.pa,
-                onTap: () => _apply(GradeChoice.pa),
-              ),
-              const SizedBox(height: 18),
-
-              _ChoiceHeroCard(
-                key: widget.gpxCardKey, // ✅ IMPORTANT : clé pour spotlight
-                image: 'assets/images/gpx.jpg',
-                badge: 'GPX',
-                title: 'Gardien de la paix',
-                selected: _grade == GradeChoice.gpx,
-                onTap: () => _apply(GradeChoice.gpx),
-              ),
-
-              const SizedBox(height: 26),
-              Center(
-                child: Text(
-                  'Tu pourras modifier ce choix plus tard dans “Mon compte”.',
-                  textAlign: TextAlign.center,
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: _muted(context, .7),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final compact = constraints.maxHeight < 780;
+              final cardHeight = compact ? 184.0 : 210.0;
+              final gap = compact ? 12.0 : 18.0;
+              return ListView(
+                padding: EdgeInsets.fromLTRB(20, compact ? 14 : 24, 20, 28),
+                children: [
+                  Text(
+                    'Choisis ton grade',
+                    style: GoogleFonts.instrumentSans(
+                      fontSize: 26,
+                      fontWeight: FontWeight.w900,
+                      letterSpacing: 0.1,
+                      color: isDark ? Colors.white : _T.ink,
+                    ),
                   ),
-                ),
-              ),
-            ],
+                  const SizedBox(height: 6),
+                  Text(
+                    'Réserve, Policier adjoint ou Gardien de la paix.',
+                    style: theme.textTheme.bodyMedium?.copyWith(
+                      color: _muted(context, .8),
+                    ),
+                  ),
+                  SizedBox(height: compact ? 14 : 22),
+
+                  _ChoiceHeroCard(
+                    image: 'assets/images/reserve.jpeg',
+                    badge: 'Réserve',
+                    title: 'Réserviste',
+                    locked: true,
+                    height: cardHeight,
+                    selected: _grade == GradeChoice.reserve,
+                    onTap: () => _apply(GradeChoice.reserve),
+                  ),
+                  SizedBox(height: gap),
+
+                  _ChoiceHeroCard(
+                    image: 'assets/images/pa.jpg',
+                    badge: 'Adjoint',
+                    title: 'Policier adjoint',
+                    height: cardHeight,
+                    selected: _grade == GradeChoice.pa,
+                    onTap: () => _apply(GradeChoice.pa),
+                  ),
+                  SizedBox(height: gap),
+
+                  _ChoiceHeroCard(
+                    key: widget.gpxCardKey, // ✅ IMPORTANT : clé pour spotlight
+                    image: 'assets/images/gpx.jpg',
+                    badge: 'GPX',
+                    title: 'Gardien de la paix',
+                    height: cardHeight,
+                    selected: _grade == GradeChoice.gpx,
+                    onTap: () => _apply(GradeChoice.gpx),
+                  ),
+
+                  SizedBox(height: compact ? 16 : 26),
+                  Center(
+                    child: Text(
+                      'Tu pourras modifier ce choix plus tard dans “Mon compte”.',
+                      textAlign: TextAlign.center,
+                      style: theme.textTheme.bodySmall?.copyWith(
+                        color: _muted(context, .7),
+                      ),
+                    ),
+                  ),
+                ],
+              );
+            },
           ),
         ),
       ),
@@ -221,6 +231,7 @@ class _ChoiceHeroCard extends StatelessWidget {
   final String title;
   final bool selected;
   final bool locked;
+  final double height;
   final VoidCallback onTap;
 
   const _ChoiceHeroCard({
@@ -231,6 +242,7 @@ class _ChoiceHeroCard extends StatelessWidget {
     required this.selected,
     required this.onTap,
     this.locked = false,
+    this.height = 210,
   });
 
   @override
@@ -254,7 +266,7 @@ class _ChoiceHeroCard extends StatelessWidget {
         child: GestureDetector(
           onTap: onTap,
           child: Container(
-            height: 220,
+            height: height,
             clipBehavior: Clip.antiAlias,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(24),
@@ -284,7 +296,9 @@ class _ChoiceHeroCard extends StatelessWidget {
                 Positioned.fill(
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 7, sigmaY: 7),
-                    child: Container(color: Colors.black.withValues(alpha: 0.28)),
+                    child: Container(
+                      color: Colors.black.withValues(alpha: 0.28),
+                    ),
                   ),
                 ),
 

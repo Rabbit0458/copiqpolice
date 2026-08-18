@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ProtectionMineursVoiePubliquePage extends StatelessWidget {
   const ProtectionMineursVoiePubliquePage({super.key});
@@ -55,7 +56,11 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Mineurs",
@@ -73,7 +78,11 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La protection des mineurs sur la voie publique",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00002",
+              "La protection des mineurs sur la voie publique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -85,23 +94,41 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // Contexte
           _ConditionCard(
-            title: "Finalité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00003",
+              "Finalité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les gardiens de la paix assurant la surveillance de la voie publique peuvent être amenés "
-                "à assurer des missions particulières visant la protection physique et morale des mineurs.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00004",
+                      "Les gardiens de la paix assurant la surveillance de la voie publique peuvent être amenés ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00005",
+                      "à assurer des missions particulières visant la protection physique et morale des mineurs.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Objectif : protéger le mineur, prévenir les risques et orienter vers les services compétents.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00006",
+                  "Objectif : protéger le mineur, prévenir les risques et orienter vers les services compétents.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Réflexe : identifier, sécuriser, informer/aviser, tracer (main courante / PV / rapport).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00007",
+                  "Réflexe : identifier, sécuriser, informer/aviser, tracer (main courante / PV / rapport).",
+                ),
               ),
             ],
           ),
@@ -110,55 +137,75 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // ✅ Base légale en haut
           _ConditionCard(
-            title: "Références essentielles (cadre légal)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00008",
+              "Références essentielles (cadre légal)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Obligation scolaire : l’instruction est obligatoire pour les enfants (français et étrangers) entre 3 et 16 ans. ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00009",
+                    "Obligation scolaire : l’instruction est obligatoire pour les enfants (français et étrangers) entre 3 et 16 ans. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 131-1 du Code de l’éducation",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00010",
+                    "Article L. 131-1 du Code de l’éducation",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Mendicité avec mineur de moins de 6 ans : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00011",
+                    "Mendicité avec mineur de moins de 6 ans : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 227-15 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00012",
+                    "article 227-15 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Disparition inquiétante / mineur en fugue : actes d’enquête possibles selon ",
-                ),
-                TextSpan(
-                  text: "l’article 74-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00013",
+                    "Disparition inquiétante / mineur en fugue : actes d’enquête possibles selon ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (perquisitions, saisies, réquisitions, auditions… mais pas de GAV).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00014",
+                    "l’article 74-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00015",
+                    " (perquisitions, saisies, réquisitions, auditions… mais pas de GAV).",
+                  ),
                 ),
               ]),
             ],
@@ -168,45 +215,90 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // I — Obligation scolaire
           _ConditionCard(
-            title: "I — Obligation scolaire (mineur sur la voie publique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00016",
+              "I — Obligation scolaire (mineur sur la voie publique)",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Lorsqu’un enfant d’âge scolaire se trouve sur la voie publique durant les heures de classe sans motif légitime, "
-                      "le policier adopte une conduite simple, protectrice et traçable. (",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00017",
+                        "Lorsqu’un enfant d’âge scolaire se trouve sur la voie publique durant les heures de classe sans motif légitime, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00018",
+                        "le policier adopte une conduite simple, protectrice et traçable. (",
+                      ),
                 ),
                 TextSpan(
-                  text: "art. L. 131-1 du Code de l’éducation",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00019",
+                    "art. L. 131-1 du Code de l’éducation",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")"),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Conduite à tenir (réflexe opérationnel)"),
-              _BulletPoint(
-                text:
-                    "Relever l’identité du mineur, sans oublier la filiation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00020",
+                  "Conduite à tenir (réflexe opérationnel)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le conduire dans l’établissement scolaire où il est inscrit.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00021",
+                  "Relever l’identité du mineur, sans oublier la filiation.",
+                ),
               ),
-              _BulletPoint(text: "Aviser la brigade des mineurs."),
-              _BulletPoint(text: "Rédiger une mention de main courante."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00022",
+                  "Le conduire dans l’établissement scolaire où il est inscrit.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00023",
+                  "Aviser la brigade des mineurs.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00024",
+                  "Rédiger une mention de main courante.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le but n’est pas de sanctionner sur place, mais de protéger et de remettre le mineur dans un cadre normal "
-                        "tout en assurant une traçabilité complète de l’intervention.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                          "f00025",
+                          "Le but n’est pas de sanctionner sur place, mais de protéger et de remettre le mineur dans un cadre normal ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                          "f00026",
+                          "tout en assurant une traçabilité complète de l’intervention.",
+                        ),
                   ),
                 ],
               ),
@@ -217,43 +309,74 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // II — Racket scolaire
           _ConditionCard(
-            title: "II — Racket scolaire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00027",
+              "II — Racket scolaire",
+            ),
             cardColor: cardRisk,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le racket relève de l’extorsion, prévue et réprimée par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00028",
+                    "Le racket relève de l’extorsion, prévue et réprimée par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "les articles 312-1 à 312-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00029",
+                    "les articles 312-1 à 312-9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "L’usage de la violence ou des menaces pour obtenir de l’argent, un objet ou un service est une forme de délinquance "
-                "fréquente en milieu scolaire. Les victimes hésitent souvent à parler par peur de représailles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00030",
+                      "L’usage de la violence ou des menaces pour obtenir de l’argent, un objet ou un service est une forme de délinquance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00031",
+                      "fréquente en milieu scolaire. Les victimes hésitent souvent à parler par peur de représailles.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Points d’attention terrain"),
-              _BulletPoint(
-                text:
-                    "Chaque signalement mérite une attention particulière, même si le préjudice est faible.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00032",
+                  "Points d’attention terrain",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Observation aux abords des établissements : repérer les plus âgés attendant les plus jeunes aux heures de sortie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00033",
+                  "Chaque signalement mérite une attention particulière, même si le préjudice est faible.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Prioriser la protection de la victime + recueil d’éléments (témoignages, descriptions, lieux, horaires).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00034",
+                  "Observation aux abords des établissements : repérer les plus âgés attendant les plus jeunes aux heures de sortie.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00035",
+                  "Prioriser la protection de la victime + recueil d’éléments (témoignages, descriptions, lieux, horaires).",
+                ),
               ),
             ],
           ),
@@ -262,23 +385,36 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // III — Mendicité
           _ConditionCard(
-            title: "III — Mendicité impliquant un mineur",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00036",
+              "III — Mendicité impliquant un mineur",
+            ),
             cardColor: cardAmber,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-15 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00037",
+                    "Article 227-15 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : réprime le fait de maintenir un enfant de moins de 6 ans sur la voie publique ou dans un espace affecté "
-                      "au transport collectif de voyageurs afin de solliciter la générosité des passants.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00038",
+                        " : réprime le fait de maintenir un enfant de moins de 6 ans sur la voie publique ou dans un espace affecté ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00039",
+                        "au transport collectif de voyageurs afin de solliciter la générosité des passants.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -286,15 +422,27 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
                 title: "Peines",
                 bodySpans: [
                   TextSpan(
-                    text: "7 ans d’emprisonnement et 100 000 € d’amende.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00040",
+                      "7 ans d’emprisonnement et 100 000 € d’amende.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "En présence d’un très jeune enfant exposé sur la voie publique, l’approche doit rester prioritairement protectrice : "
-                "mise à l’abri, évaluation immédiate du danger, et saisine/avis des services compétents.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00041",
+                      "En présence d’un très jeune enfant exposé sur la voie publique, l’approche doit rester prioritairement protectrice : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00042",
+                      "mise à l’abri, évaluation immédiate du danger, et saisine/avis des services compétents.",
+                    ),
               ),
             ],
           ),
@@ -303,42 +451,69 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // IV — Couvre-feu
           _ConditionCard(
-            title: "IV — Interdiction d’aller et venir la nuit (couvre-feu)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00043",
+              "IV — Interdiction d’aller et venir la nuit (couvre-feu)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le « couvre-feu » est une mesure limitant la liberté d’aller et venir des mineurs sur la voie publique "
-                "entre 23h et 6h. Elle ne s’applique pas aux mineurs accompagnés d’un parent ou d’un titulaire de l’autorité parentale.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00044",
+                      "Le « couvre-feu » est une mesure limitant la liberté d’aller et venir des mineurs sur la voie publique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00045",
+                      "entre 23h et 6h. Elle ne s’applique pas aux mineurs accompagnés d’un parent ou d’un titulaire de l’autorité parentale.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Deux cadres possibles"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00046",
+                  "Deux cadres possibles",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "• Cadre judiciaire (sanction éducative 13–18 ans) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00047",
+                    "• Cadre judiciaire (sanction éducative 13–18 ans) : ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "article L. 112-2 du Code de la justice pénale des mineurs",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00048",
+                    "article L. 112-2 du Code de la justice pénale des mineurs",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "• Cadre administratif (arrêté général < 13 ans) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00049",
+                    "• Cadre administratif (arrêté général < 13 ans) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 132-8 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00050",
+                    "article L. 132-8 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -349,20 +524,44 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // V — Cinéma / spectacle
           _ConditionCard(
-            title: "V — Accès aux salles de cinéma et de spectacle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00051",
+              "V — Accès aux salles de cinéma et de spectacle",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’accès aux salles de cinéma peut être interdit aux mineurs de 18, 16 ou 12 ans selon les films projetés. "
-                "Le gérant doit afficher l’interdiction aux guichets de délivrance des billets (le manquement constitue une contravention de 5e classe).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00052",
+                      "L’accès aux salles de cinéma peut être interdit aux mineurs de 18, 16 ou 12 ans selon les films projetés. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00053",
+                      "Le gérant doit afficher l’interdiction aux guichets de délivrance des billets (le manquement constitue une contravention de 5e classe).",
+                    ),
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Le préfet peut également interdire l’accès des mineurs à certains établissements offrant des spectacles "
-                "ou dont la fréquentation est susceptible d’exercer une mauvaise influence sur la santé ou la moralité de la jeunesse "
-                "(ex : pornographique/violent, risque de rixes…). Une affiche doit être apposée aux accès ; le non-respect est puni d’une contravention de 5e classe.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00054",
+                      "Le préfet peut également interdire l’accès des mineurs à certains établissements offrant des spectacles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00055",
+                      "ou dont la fréquentation est susceptible d’exercer une mauvaise influence sur la santé ou la moralité de la jeunesse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00056",
+                      "(ex : pornographique/violent, risque de rixes…). Une affiche doit être apposée aux accès ; le non-respect est puni d’une contravention de 5e classe.",
+                    ),
               ),
             ],
           ),
@@ -371,49 +570,66 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // VI — Prostitution des mineurs
           _ConditionCard(
-            title: "VI — Prostitution des mineurs",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00057",
+              "VI — Prostitution des mineurs",
+            ),
             cardColor: cardRisk,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Tout mineur se livrant à la prostitution est réputé en danger : son suivi relève du juge des enfants.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00058",
+                  "Tout mineur se livrant à la prostitution est réputé en danger : son suivi relève du juge des enfants.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le recours à la prostitution d’un mineur est interdit : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00059",
+                    "Le recours à la prostitution d’un mineur est interdit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-12-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00060",
+                    "article 225-12-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La mise à disposition d’un mineur à un tiers pour permettre la commission de proxénétisme est aussi un délit : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00061",
+                    "La mise à disposition d’un mineur à un tiers pour permettre la commission de proxénétisme est aussi un délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-4-1",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00062",
+                    "article 225-4-1",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article 225-4-2 (1°) du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00063",
+                    "article 225-4-2 (1°) du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -421,8 +637,11 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Réflexe terrain : mise en sécurité immédiate, évaluation du danger, et signalement/coordination avec les services spécialisés.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00064",
+                      "Réflexe terrain : mise en sécurité immédiate, évaluation du danger, et signalement/coordination avec les services spécialisés.",
+                    ),
                   ),
                 ],
               ),
@@ -433,21 +652,36 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // VII — Fugue (cadre)
           _ConditionCard(
-            title: "VII — Fugues (périmètre)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00065",
+              "VII — Fugues (périmètre)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les mesures relatives aux mineurs en fugue concernent en principe tous les mineurs de 18 ans, sauf :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00066",
+                  "Les mesures relatives aux mineurs en fugue concernent en principe tous les mineurs de 18 ans, sauf :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Les mineurs émancipés âgés d’au moins 16 ans.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00067",
+                  "Les mineurs émancipés âgés d’au moins 16 ans.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les jeunes adultes de 18 à 21 ans placés par décision d’une juridiction pour enfants (assimilés à des mineurs en matière de fugue).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00068",
+                  "Les jeunes adultes de 18 à 21 ans placés par décision d’une juridiction pour enfants (assimilés à des mineurs en matière de fugue).",
+                ),
               ),
             ],
           ),
@@ -456,46 +690,75 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
 
           // VIII — Mineur en fugue (prise en charge)
           _ConditionCard(
-            title: "VIII — Le mineur en fugue",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+              "f00069",
+              "VIII — Le mineur en fugue",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Déclaration / disparition inquiétante"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00070",
+                  "A) Déclaration / disparition inquiétante",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La fugue d’un mineur doit toujours être considérée comme une disparition inquiétante et traitée comme telle, "
-                      "même si elle paraît volontaire ou habituelle. ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00071",
+                        "La fugue d’un mineur doit toujours être considérée comme une disparition inquiétante et traitée comme telle, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00072",
+                        "même si elle paraît volontaire ou habituelle. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "Article 26 de la loi n° 95-73 du 21 janvier 1995",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00073",
+                    "Article 26 de la loi n° 95-73 du 21 janvier 1995",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (modifiée) : une disparition apparemment banale peut aboutir à un drame.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00074",
+                    " (modifiée) : une disparition apparemment banale peut aboutir à un drame.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Sur instructions du procureur, les OPJ/APJ peuvent réaliser les actes des ",
-                ),
-                TextSpan(
-                  text: "articles 56 à 62 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00075",
+                    "Sur instructions du procureur, les OPJ/APJ peuvent réaliser les actes des ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " pour découvrir la personne (perquisitions, saisies, réquisitions, auditions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00076",
+                    "articles 56 à 62 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00077",
+                    " pour découvrir la personne (perquisitions, saisies, réquisitions, auditions).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -503,11 +766,23 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Dans ce cadre, les enquêteurs ne peuvent pas décider d’une mesure de garde à vue. "
-                        "Les dispositions sont prévues par ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                          "f00078",
+                          "Dans ce cadre, les enquêteurs ne peuvent pas décider d’une mesure de garde à vue. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                          "f00079",
+                          "Les dispositions sont prévues par ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 74-1 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00080",
+                      "l’article 74-1 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -518,81 +793,155 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "Informations à recueillir lors de la déclaration",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00081",
+                  "Informations à recueillir lors de la déclaration",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Identité + filiation, lieu de résidence des parents (si différent), photographie si possible.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00082",
+                  "Identité + filiation, lieu de résidence des parents (si différent), photographie si possible.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Signalement descriptif : âge réel/apparent, tenue, signes particuliers…",
-              ),
-              _BulletPoint(text: "Situation scolaire."),
-              _BulletPoint(
-                text:
-                    "Effets emportés (sac, téléphone, argent, agenda…), derniers lieux, fréquentations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00083",
+                  "Signalement descriptif : âge réel/apparent, tenue, signes particuliers…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Moyen de locomotion éventuel (vélo, scooter…), fugues antérieures.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00084",
+                  "Situation scolaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00085",
+                  "Effets emportés (sac, téléphone, argent, agenda…), derniers lieux, fréquentations.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00086",
+                  "Moyen de locomotion éventuel (vélo, scooter…), fugues antérieures.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Certaines vérifications (voisins, camarades…) peuvent être lancées en parallèle par un autre fonctionnaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00087",
+                  "Certaines vérifications (voisins, camarades…) peuvent être lancées en parallèle par un autre fonctionnaire.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Inscription systématique du mineur au F.P.R.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00088",
+                  "Inscription systématique du mineur au F.P.R.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Découverte du mineur : prise en charge"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00089",
+                  "B) Découverte du mineur : prise en charge",
+                ),
+              ),
               _Paragraph(
-                "La prise en charge d’un fugueur n’est pas une interpellation : c’est une mesure de protection. "
-                "Le mineur doit être conduit au service, la brigade des mineurs doit être avisée, et ses directives suivies.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00090",
+                      "La prise en charge d’un fugueur n’est pas une interpellation : c’est une mesure de protection. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                      "f00091",
+                      "Le mineur doit être conduit au service, la brigade des mineurs doit être avisée, et ses directives suivies.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Précautions",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00092",
+                  "Précautions",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Placer le mineur dans un endroit neutre. Éviter les scènes violentes, la proximité de gardés à vue, "
-                        "ou toute situation impressionnante pour un enfant.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                          "f00093",
+                          "Placer le mineur dans un endroit neutre. Éviter les scènes violentes, la proximité de gardés à vue, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                          "f00094",
+                          "ou toute situation impressionnante pour un enfant.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Rédiger un rapport d’intervention / PV relatant les circonstances de la découverte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00095",
+                  "Rédiger un rapport d’intervention / PV relatant les circonstances de la découverte.",
+                ),
               ),
               _BulletPoint(
-                text: "Effectuer la cessation de recherches au F.P.R.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00096",
+                  "Effectuer la cessation de recherches au F.P.R.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Le magistrat doit obligatoirement être informé : l’adresse d’un mineur disparu ne peut être communiquée "
-                      "au représentant légal qu’avec l’autorisation du juge des enfants. (",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00097",
+                        "Le magistrat doit obligatoirement être informé : l’adresse d’un mineur disparu ne peut être communiquée ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                        "f00098",
+                        "au représentant légal qu’avec l’autorisation du juge des enfants. (",
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      "article 26 de la loi du 21 janvier 1995 modifié par l’article 66 de la loi n° 2002-1138 du 9 septembre 2002",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                    "f00099",
+                    "article 26 de la loi du 21 janvier 1995 modifié par l’article 66 de la loi n° 2002-1138 du 9 septembre 2002",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")"),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Le mineur ne quitte les locaux que sous la conduite de ses parents ou d’une personne responsable.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/mineurs/protection_mineurs_voie_publique_page.dart",
+                  "f00100",
+                  "Le mineur ne quitte les locaux que sous la conduite de ses parents ou d’une personne responsable.",
+                ),
               ),
             ],
           ),

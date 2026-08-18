@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
   const ConduitePosteDepistagesPositifsOuRefusPage({super.key});
@@ -56,10 +57,18 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — Alcool & stupéfiants",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+            "f00002",
+            "PV — Alcool & stupéfiants",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Conduite au poste suite à dépistages positifs (ou refus)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00003",
+              "Conduite au poste suite à dépistages positifs (ou refus)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,24 +99,46 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // Aperçu (pédagogique)
           _ConditionCard(
-            title: "Objectif du canevas",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00004",
+              "Objectif du canevas",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Structurer le procès-verbal lorsque l’interpellation/la conduite au poste intervient à la suite "
-                "d’un contrôle routier avec dépistage alcool/stupéfiants positif, ou en cas de refus de dépistage "
-                "entraînant l’obligation de se soumettre à des vérifications.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00005",
+                      "Structurer le procès-verbal lorsque l’interpellation/la conduite au poste intervient à la suite ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00006",
+                      "d’un contrôle routier avec dépistage alcool/stupéfiants positif, ou en cas de refus de dépistage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00007",
+                      "entraînant l’obligation de se soumettre à des vérifications.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Rester factuel : relater les constatations, les circonstances, les informations données et les actes réalisés.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00008",
+                  "Rester factuel : relater les constatations, les circonstances, les informations données et les actes réalisés.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Soigner la chronologie : lieu → instructions → assistants → mission → interception → contrôles → dépistages → suites.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00009",
+                  "Soigner la chronologie : lieu → instructions → assistants → mission → interception → contrôles → dépistages → suites.",
+                ),
               ),
             ],
           ),
@@ -112,43 +147,72 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (articles en rouge)
           _ConditionCard(
-            title: "Cadre légal à rappeler (en cas de refus)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00010",
+              "Cadre légal à rappeler (en cas de refus)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le refus initial de dépistage (alcool ou stupéfiants) n’est pas, en lui-même, l’infraction : il déclenche l’obligation de se soumettre aux vérifications. Si la personne refuse ensuite les vérifications, elle commet un délit : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00011",
+                    "Le refus initial de dépistage (alcool ou stupéfiants) n’est pas, en lui-même, l’infraction : il déclenche l’obligation de se soumettre aux vérifications. Si la personne refuse ensuite les vérifications, elle commet un délit : ",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "• Refus stupéfiants : "),
                 TextSpan(
-                  text: "Article L. 235-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00012",
+                    "• Refus stupéfiants : ",
                   ),
                 ),
                 TextSpan(
-                  text: " — 2 ans d’emprisonnement / 4 500 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00013",
+                    "Article L. 235-3 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00014",
+                    " — 2 ans d’emprisonnement / 4 500 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "• Refus alcool : "),
                 TextSpan(
-                  text: "Article L. 234-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00015",
+                    "• Refus alcool : ",
                   ),
                 ),
                 TextSpan(
-                  text: " — 2 ans d’emprisonnement / 4 500 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00016",
+                    "Article L. 234-8 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00017",
+                    " — 2 ans d’emprisonnement / 4 500 € d’amende.",
+                  ),
                 ),
               ]),
             ],
@@ -158,7 +222,11 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // Images Canva (recto/verso)
           _ConditionCard(
-            title: "Canevas (visuel)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00018",
+              "Canevas (visuel)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -179,31 +247,83 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // 1 à 4
           _ConditionCard(
-            title: "1 à 4 — Contexte initial",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00019",
+              "1 à 4 — Contexte initial",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00020",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _Paragraph(
-                "Mentionner l’endroit exact où se situe l’équipage (commune, voie, point de repère, sens de circulation).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00021",
+                  "Mentionner l’endroit exact où se situe l’équipage (commune, voie, point de repère, sens de circulation).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00022",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Préciser que, s’agissant d’un PV de saisine (équipage en patrouille), le rédacteur agit conformément "
-                "aux instructions permanentes du chef de service.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00023",
+                      "Préciser que, s’agissant d’un PV de saisine (équipage en patrouille), le rédacteur agit conformément ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00024",
+                      "aux instructions permanentes du chef de service.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00025",
+                  "3) Assistants",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires accompagnant le rédacteur (identité/grade si usage interne) et préciser la tenue : "
-                "uniforme, tenue civile, port du brassard « Police ».",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00026",
+                      "Mentionner les fonctionnaires accompagnant le rédacteur (identité/grade si usage interne) et préciser la tenue : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00027",
+                      "uniforme, tenue civile, port du brassard « Police ».",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("4) Mission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00028",
+                  "4) Mission",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le but de la mission initiale (patrouille, contrôle routier, prévention, sécurisation, etc.).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00029",
+                  "Indiquer le but de la mission initiale (patrouille, contrôle routier, prévention, sécurisation, etc.).",
+                ),
               ),
             ],
           ),
@@ -212,41 +332,91 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // 5 à 6
           _ConditionCard(
-            title: "5 à 6 — Interception & contrôle",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00030",
+              "5 à 6 — Interception & contrôle",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("5) Interception du véhicule"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00031",
+                  "5) Interception du véhicule",
+                ),
+              ),
               _Paragraph(
-                "Relater précisément les circonstances ayant motivé l’interception :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00032",
+                  "Relater précisément les circonstances ayant motivé l’interception :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Suite à la constatation d’une infraction au Code de la route : décrire les faits observés et constitutifs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00033",
+                  "Suite à la constatation d’une infraction au Code de la route : décrire les faits observés et constitutifs.",
+                ),
               ),
               _BulletPoint(
-                text: "Suite à un contrôle routier sans infraction préalable.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00034",
+                  "Suite à un contrôle routier sans infraction préalable.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Suite à un contrôle préventif alcool/stupéfiants : à l’initiative de l’agent ou sur réquisition du procureur de la République.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00035",
+                  "Suite à un contrôle préventif alcool/stupéfiants : à l’initiative de l’agent ou sur réquisition du procureur de la République.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("6) Contrôle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00036",
+                  "6) Contrôle",
+                ),
+              ),
               _Paragraph(
-                "Relater le contrôle des pièces afférentes à la conduite et à la circulation du véhicule, ainsi que l’obligation d’assurance "
-                "(consultation du fichier des véhicules assurés pour les véhicules à moteur immatriculés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00037",
+                      "Relater le contrôle des pièces afférentes à la conduite et à la circulation du véhicule, ainsi que l’obligation d’assurance ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00038",
+                      "(consultation du fichier des véhicules assurés pour les véhicules à moteur immatriculés).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "L’identification de la personne contrôlée est faite en style indirect : état civil et adresse, à l’exclusion de tout autre "
-                "élément de personnalité (situation familiale, professionnelle).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00039",
+                      "L’identification de la personne contrôlée est faite en style indirect : état civil et adresse, à l’exclusion de tout autre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00040",
+                      "élément de personnalité (situation familiale, professionnelle).",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Si le dépistage est justifié par une infraction observée : relater les faits constitutifs justifiant le dépistage.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00041",
+                  "Si le dépistage est justifié par une infraction observée : relater les faits constitutifs justifiant le dépistage.",
+                ),
               ),
             ],
           ),
@@ -255,76 +425,130 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // 7 à 8
           _ConditionCard(
-            title:
-                "7 à 8 — Dépistages & information (obligation de se soumettre)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00042",
+              "7 à 8 — Dépistages & information (obligation de se soumettre)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "7) Dépistages et résultats (alcool & stupéfiants) / ou refus",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00043",
+                  "7) Dépistages et résultats (alcool & stupéfiants) / ou refus",
+                ),
               ),
               _Paragraph(
-                "Préciser la nature des dépistages effectués (alcool, stupéfiants), l’heure, le matériel utilisé (si pertinent), "
-                "et consigner les résultats. En cas de refus : le mentionner clairement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00044",
+                      "Préciser la nature des dépistages effectués (alcool, stupéfiants), l’heure, le matériel utilisé (si pertinent), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00045",
+                      "et consigner les résultats. En cas de refus : le mentionner clairement.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Intérêt du double dépistage : les peines du délit de conduite après usage de stupéfiants peuvent être aggravées "
-                        "si la personne est également en conduite sous l’empire d’un état alcoolique (taux délictuel ou contraventionnel).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                          "f00046",
+                          "Intérêt du double dépistage : les peines du délit de conduite après usage de stupéfiants peuvent être aggravées ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                          "f00047",
+                          "si la personne est également en conduite sous l’empire d’un état alcoolique (taux délictuel ou contraventionnel).",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Si le dépistage stupéfiants est positif : préciser la/les familles concernées par le test positif : "
-                "cannabiniques, amphétaminiques, cocaïniques ou opiacés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00048",
+                      "Si le dépistage stupéfiants est positif : préciser la/les familles concernées par le test positif : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00049",
+                      "cannabiniques, amphétaminiques, cocaïniques ou opiacés.",
+                    ),
               ),
               SizedBox(height: 14),
               _SubTitle(
-                "8) Information relative à l’obligation de se soumettre aux vérifications",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00050",
+                  "8) Information relative à l’obligation de se soumettre aux vérifications",
+                ),
               ),
               _Paragraph(
-                "Rappeler que le refus de dépistage (alcool ou stupéfiants) ne constitue pas une infraction pénale en soi, "
-                "mais entraîne l’obligation de se soumettre aux vérifications.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00051",
+                      "Rappeler que le refus de dépistage (alcool ou stupéfiants) ne constitue pas une infraction pénale en soi, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00052",
+                      "mais entraîne l’obligation de se soumettre aux vérifications.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le conducteur est face à une alternative : consentir aux vérifications, ou les refuser — auquel cas il commet :\n",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00053",
+                    "Le conducteur est face à une alternative : consentir aux vérifications, ou les refuser — auquel cas il commet :\n",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "• le délit de refus de se soumettre aux analyses/examens stupéfiants : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00054",
+                    "• le délit de refus de se soumettre aux analyses/examens stupéfiants : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 235-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00055",
+                    "Article L. 235-3 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "• le délit de refus de se soumettre aux vérifications alcool : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00056",
+                    "• le délit de refus de se soumettre aux vérifications alcool : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article L. 234-8 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00057",
+                    "Article L. 234-8 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -335,27 +559,73 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // 9 à 11
           _ConditionCard(
-            title: "9 à 11 — Sécurité, conduite au poste, clôture",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00058",
+              "9 à 11 — Sécurité, conduite au poste, clôture",
+            ),
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("9) Palpation de sécurité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00059",
+                  "9) Palpation de sécurité",
+                ),
+              ),
               _Paragraph(
-                "La palpation ne doit pas être systématique. Elle est réalisée avec respect et discernement, "
-                "uniquement si les circonstances de temps/lieux le justifient, afin de vérifier l’absence d’objet dangereux "
-                "pour la personne elle-même ou pour autrui.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00060",
+                      "La palpation ne doit pas être systématique. Elle est réalisée avec respect et discernement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00061",
+                      "uniquement si les circonstances de temps/lieux le justifient, afin de vérifier l’absence d’objet dangereux ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00062",
+                      "pour la personne elle-même ou pour autrui.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("10) Retour au service / conduite au poste"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00063",
+                  "10) Retour au service / conduite au poste",
+                ),
+              ),
               _Paragraph(
-                "Mentionner que la personne accepte d’accompagner de son plein gré les fonctionnaires. "
-                "Indiquer qu’un compte-rendu radio est effectué au centre d’information et de commandement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00064",
+                      "Mentionner que la personne accepte d’accompagner de son plein gré les fonctionnaires. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00065",
+                      "Indiquer qu’un compte-rendu radio est effectué au centre d’information et de commandement.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("11) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00066",
+                  "11) Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Clore l’acte selon les usages, avec une formulation de fin, la date/heure, et la signature du rédacteur.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00067",
+                  "Clore l’acte selon les usages, avec une formulation de fin, la date/heure, et la signature du rédacteur.",
+                ),
               ),
             ],
           ),
@@ -364,32 +634,81 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
 
           // 12 à 14
           _ConditionCard(
-            title:
-                "12 à 14 — Mentions administratives & mesures sur le véhicule/permis",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+              "f00068",
+              "12 à 14 — Mentions administratives & mesures sur le véhicule/permis",
+            ),
             cardColor: cardMentions,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("12) Mention — Recherches administratives"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00069",
+                  "12) Mention — Recherches administratives",
+                ),
+              ),
               _Paragraph(
-                "Indiquer les recherches administratives effectuées (F.P.R., S.N.P.C.). "
-                "Cette mention précise que les recherches ont bien été réalisées et que la personne ne fait l’objet d’aucune recherche, le cas échéant.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00070",
+                      "Indiquer les recherches administratives effectuées (F.P.R., S.N.P.C.). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00071",
+                      "Cette mention précise que les recherches ont bien été réalisées et que la personne ne fait l’objet d’aucune recherche, le cas échéant.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("13) Mention — Immobilisation du véhicule"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00072",
+                  "13) Mention — Immobilisation du véhicule",
+                ),
+              ),
               _Paragraph(
-                "L’immobilisation du véhicule d’un conducteur présumé sous l’empire d’un état alcoolique est levée "
-                "dès qu’un conducteur qualifié, proposé par le conducteur (ou l’accompagnateur de l’élève conducteur) "
-                "ou éventuellement par le propriétaire du véhicule, peut en assurer la conduite.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00073",
+                      "L’immobilisation du véhicule d’un conducteur présumé sous l’empire d’un état alcoolique est levée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00074",
+                      "dès qu’un conducteur qualifié, proposé par le conducteur (ou l’accompagnateur de l’élève conducteur) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                      "f00075",
+                      "ou éventuellement par le propriétaire du véhicule, peut en assurer la conduite.",
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                "Un exemplaire de la fiche d’immobilisation est remis au conducteur.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00076",
+                  "Un exemplaire de la fiche d’immobilisation est remis au conducteur.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("14) Mention — Rétention du permis de conduire"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00077",
+                  "14) Mention — Rétention du permis de conduire",
+                ),
+              ),
               _Paragraph(
-                "Un exemplaire de l’avis de rétention du permis de conduire est remis au conducteur (si mesure prise).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00078",
+                  "Un exemplaire de l’avis de rétention du permis de conduire est remis au conducteur (si mesure prise).",
+                ),
               ),
             ],
           ),
@@ -645,9 +964,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -712,8 +1029,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+        "f00079",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+        "f00080",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -886,7 +1211,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                    "f00081",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -955,7 +1284,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart",
+                  "f00082",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -983,7 +1316,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1018,7 +1353,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

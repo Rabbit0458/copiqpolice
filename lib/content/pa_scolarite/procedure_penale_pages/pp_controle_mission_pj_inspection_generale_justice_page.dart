@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class PaPPControleMissionPJInspectionGeneraleJusticePage extends StatelessWidget {
+class PaPPControleMissionPJInspectionGeneraleJusticePage
+    extends StatelessWidget {
   const PaPPControleMissionPJInspectionGeneraleJusticePage({super.key});
 
   static const String routeName =
@@ -10,7 +11,7 @@ class PaPPControleMissionPJInspectionGeneraleJusticePage extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
- // bleu foncé
+    // bleu foncé
     return const Scaffold();
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
   const AdministrationSubstancesNuisiblesPage({super.key});
@@ -70,7 +71,11 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Administration de substances nuisibles",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+            "f00001",
+            "Administration de substances nuisibles",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,25 +91,53 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
             children: [
               // ✅ EXIGENCE : l’article de l’élément légal en tout premier
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-15 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00003",
+                        "Article 222-15 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : définit l’administration de substances nuisibles.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00004",
+                        " : définit l’administration de substances nuisibles.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
                     normal(
-                      "L’infraction est punie des peines mentionnées aux ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00005",
+                        "L’infraction est punie des peines mentionnées aux ",
+                      ),
                     ),
-                    lawRef("articles 222-7 à 222-14-1 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00006",
+                        "articles 222-7 à 222-14-1 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      ", suivant les distinctions prévues par ces articles (régime des violences volontaires).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00007",
+                        ", suivant les distinctions prévues par ces articles (régime des violences volontaires).",
+                      ),
                     ),
                   ]),
                 ],
@@ -113,28 +146,55 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                  "f00008",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "L’administration de substances nuisibles ayant porté atteinte à l’intégrité physique ou psychique d’autrui "
-                    "constitue une infraction.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00009",
+                          "L’administration de substances nuisibles ayant porté atteinte à l’intégrité physique ou psychique d’autrui ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00010",
+                          "constitue une infraction.",
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("À retenir"),
-                  _IntroBullet(
-                    text:
-                        "La substance doit être « nuisible » : elle est de nature à provoquer une atteinte physique ou psychique.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00011",
+                      "À retenir",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "L’infraction exige un résultat : une atteinte à la santé (altération physique et/ou psychique).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00012",
+                      "La substance doit être « nuisible » : elle est de nature à provoquer une atteinte physique ou psychique.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "La répression renvoie aux peines des violences volontaires (222-7 à 222-14-1 C.P.).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00013",
+                      "L’infraction exige un résultat : une atteinte à la santé (altération physique et/ou psychique).",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00014",
+                      "La répression renvoie aux peines des violences volontaires (222-7 à 222-14-1 C.P.).",
+                    ),
                   ),
                 ],
               ),
@@ -143,23 +203,53 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
 
               // I — Élément légal
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                  "f00015",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-15 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00016",
+                        "Article 222-15 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : incrimine l’administration de substances nuisibles.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00017",
+                        " : incrimine l’administration de substances nuisibles.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Peines applicables : "),
-                    lawRef("articles 222-7 à 222-14-1 du C.P."),
                     normal(
-                      " (violences volontaires), selon les distinctions prévues par ces textes.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00018",
+                        "Peines applicables : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00019",
+                        "articles 222-7 à 222-14-1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00020",
+                        " (violences volontaires), selon les distinctions prévues par ces textes.",
+                      ),
                     ),
                   ]),
                 ],
@@ -169,89 +259,216 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
 
               // II — Élément matériel
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                  "f00021",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("1) Administration de substances"),
-                  const _SubTitle("• Nature de la substance"),
-                  const _Paragraph(
-                    "La nature exacte importe peu dès lors que la substance est de nature à provoquer une atteinte physique ou psychique. "
-                    "Aucune liste exhaustive n’est possible : la nocivité est une question de fait, appréciée par les juges du fond.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00022",
+                      "1) Administration de substances",
+                    ),
+                  ),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00023",
+                      "• Nature de la substance",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00024",
+                          "La nature exacte importe peu dès lors que la substance est de nature à provoquer une atteinte physique ou psychique. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00025",
+                          "Aucune liste exhaustive n’est possible : la nocivité est une question de fait, appréciée par les juges du fond.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00026",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Le virus du sida a été considéré comme une substance nuisible (",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00027",
+                          "Le virus du sida a été considéré comme une substance nuisible (",
+                        ),
                       ),
-                      normal("Cass. crim., 10 janvier 2006"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00028",
+                          "Cass. crim., 10 janvier 2006",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00029",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Constitue le délit d’administration de substances nuisibles ayant entraîné une infirmité permanente : "
-                        "l’individu porteur du virus du SIDA, ayant des relations sexuelles non protégées en toute connaissance de cause, "
-                        "contaminant la victime (",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                              "f00030",
+                              "Constitue le délit d’administration de substances nuisibles ayant entraîné une infirmité permanente : ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                              "f00031",
+                              "l’individu porteur du virus du SIDA, ayant des relations sexuelles non protégées en toute connaissance de cause, ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                              "f00032",
+                              "contaminant la victime (",
+                            ),
                       ),
-                      normal("Cass. crim., 5 octobre 2010"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00033",
+                          "Cass. crim., 5 octobre 2010",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("• Mode d’administration"),
-                  const _Paragraph(
-                    "Le mode d’administration varie selon la substance : ingestion, inhalation, injection, exposition "
-                    "(solide, liquide, gaz ou rayonnement).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00034",
+                      "• Mode d’administration",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00035",
+                          "Le mode d’administration varie selon la substance : ingestion, inhalation, injection, exposition ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00036",
+                          "(solide, liquide, gaz ou rayonnement).",
+                        ),
                   ),
                   const SizedBox(height: 8),
-                  const _Paragraph(
-                    "Le comportement incriminé est proche de celui de l’empoisonnement et s’interprète de manière comparable.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00037",
+                      "Le comportement incriminé est proche de celui de l’empoisonnement et s’interprète de manière comparable.",
+                    ),
                   ),
                   const SizedBox(height: 10),
-                  const _SubTitle("Formes possibles"),
-                  const _BulletPoint(
-                    text:
-                        "Administration directe : l’auteur administre lui-même la substance.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00038",
+                      "Formes possibles",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Mise à disposition : la victime s’administre elle-même le produit.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00039",
+                      "Administration directe : l’auteur administre lui-même la substance.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Administration indirecte : recours à un tiers (de bonne foi) qui remet la substance à la victime.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00040",
+                      "Mise à disposition : la victime s’administre elle-même le produit.",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00041",
+                      "Administration indirecte : recours à un tiers (de bonne foi) qui remet la substance à la victime.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00042",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Dirigeant d’un club de football ayant dilué du Valium dans des bouteilles d’eau minérale mises à disposition "
-                        "des adversaires (",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                              "f00043",
+                              "Dirigeant d’un club de football ayant dilué du Valium dans des bouteilles d’eau minérale mises à disposition ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                              "f00044",
+                              "des adversaires (",
+                            ),
                       ),
-                      normal("Cass. crim., 14 juin 1995"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00045",
+                          "Cass. crim., 14 juin 1995",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "2) Une atteinte à la personne (résultat dommageable)",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00046",
+                      "2) Une atteinte à la personne (résultat dommageable)",
+                    ),
                   ),
-                  const _Paragraph(
-                    "L’administration doit avoir entraîné un résultat dommageable pour la santé : "
-                    "altération des capacités physiques et/ou psychiques de la victime. "
-                    "Il s’agit d’une infraction matérielle : sans résultat, pas d’infraction.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00047",
+                          "L’administration doit avoir entraîné un résultat dommageable pour la santé : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00048",
+                          "altération des capacités physiques et/ou psychiques de la victime. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00049",
+                          "Il s’agit d’une infraction matérielle : sans résultat, pas d’infraction.",
+                        ),
                   ),
                 ],
               ),
@@ -260,22 +477,48 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
 
               // III — Élément moral
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                  "f00050",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
-                children: const [
-                  _SubTitle("1) Connaissance du caractère nuisible"),
+                children: [
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00051",
+                      "1) Connaissance du caractère nuisible",
+                    ),
+                  ),
                   _Paragraph(
-                    "L’auteur doit avoir conscience du caractère nuisible de la substance administrée.",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00052",
+                      "L’auteur doit avoir conscience du caractère nuisible de la substance administrée.",
+                    ),
                   ),
                   SizedBox(height: 10),
                   _SubTitle(
-                    "2) Intention de nuire à la santé physique ou psychique",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00053",
+                      "2) Intention de nuire à la santé physique ou psychique",
+                    ),
                   ),
                   _Paragraph(
-                    "L’élément moral se traduit par une volonté délibérée et réfléchie de porter atteinte à la personne "
-                    "en altérant directement sa santé physique ou psychique.",
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00054",
+                          "L’élément moral se traduit par une volonté délibérée et réfléchie de porter atteinte à la personne ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00055",
+                          "en altérant directement sa santé physique ou psychique.",
+                        ),
                   ),
                 ],
               ),
@@ -284,17 +527,41 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
 
               // IV — Circonstances aggravantes
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                  "f00056",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    normal("Les circonstances aggravantes prévues aux "),
-                    lawRef("articles 222-7 à 222-14-1 du C.P."),
                     normal(
-                      " (violences volontaires) sont applicables à l’administration de substances nuisibles, "
-                      "selon les distinctions prévues par ces articles.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00057",
+                        "Les circonstances aggravantes prévues aux ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00058",
+                        "articles 222-7 à 222-14-1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                            "f00059",
+                            " (violences volontaires) sont applicables à l’administration de substances nuisibles, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                            "f00060",
+                            "selon les distinctions prévues par ces articles.",
+                          ),
                     ),
                   ]),
                 ],
@@ -304,51 +571,126 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
 
               // V — Répression + tentative + complicité
               _ConditionCard(
-                title: "V — Répression, tentative et complicité",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                  "f00061",
+                  "V — Répression, tentative et complicité",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines encourues"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00062",
+                      "Peines encourues",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Répression : peines prévues aux "),
-                    lawRef("articles 222-7 à 222-14-1 du Code pénal"),
                     normal(
-                      " (violences volontaires), selon les distinctions prévues par ces textes.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00063",
+                        "Répression : peines prévues aux ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00064",
+                        "articles 222-7 à 222-14-1 du Code pénal",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00065",
+                        " (violences volontaires), selon les distinctions prévues par ces textes.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 12),
                   _Paragraph.rich([
-                    normal("Responsabilité des personnes morales : "),
-                    lawRef("article 222-16-1 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00066",
+                        "Responsabilité des personnes morales : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00067",
+                        "article 222-16-1 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
                   const SizedBox(height: 12),
 
                   const _SubTitle("Tentative"),
-                  const _BulletPoint(
-                    text:
-                        "Tentative : NON (absence de disposition expresse en matière correctionnelle).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00068",
+                      "Tentative : NON (absence de disposition expresse en matière correctionnelle).",
+                    ),
                   ),
                   const SizedBox(height: 8),
-                  const _Paragraph(
-                    "L’infraction nécessite un résultat dommageable pour la santé : sans résultat, l’infraction n’est pas constituée. "
-                    "La tentative n’est donc pas concevable.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00069",
+                          "L’infraction nécessite un résultat dommageable pour la santé : sans résultat, l’infraction n’est pas constituée. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00070",
+                          "La tentative n’est donc pas concevable.",
+                        ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                      "f00071",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — punissable conformément aux "),
-                    lawRef("articles 121-6 et 121-7 du Code pénal"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00072",
+                        "Complicité : OUI — punissable conformément aux ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                        "f00073",
+                        "articles 121-6 et 121-7 du Code pénal",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 8),
-                  const _Paragraph(
-                    "La complicité par aide ou assistance peut notamment être retenue contre celui qui procure à l’auteur "
-                    "des substances nuisibles.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00074",
+                          "La complicité par aide ou assistance peut notamment être retenue contre celui qui procure à l’auteur ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart",
+                          "f00075",
+                          "des substances nuisibles.",
+                        ),
                   ),
                 ],
               ),

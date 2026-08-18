@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEmpoisonnementPage extends StatelessWidget {
   const PaEmpoisonnementPage({super.key});
@@ -56,10 +57,18 @@ class PaEmpoisonnementPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes volontaires à la vie",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+            "f00002",
+            "Atteintes volontaires à la vie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaEmpoisonnementPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’empoisonnement",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+              "f00003",
+              "L’empoisonnement",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,14 +99,26 @@ class PaEmpoisonnementPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’attenter à la vie d’autrui par l’emploi ou l’administration de substances de nature à entraîner la mort "
-                "est un empoisonnement et constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00005",
+                      "Le fait d’attenter à la vie d’autrui par l’emploi ou l’administration de substances de nature à entraîner la mort ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00006",
+                      "est un empoisonnement et constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -102,20 +127,31 @@ class PaEmpoisonnementPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00008",
+                    "Article 221-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00009",
+                    " : définit et réprime l’empoisonnement.",
                   ),
                 ),
-                TextSpan(text: " : définit et réprime l’empoisonnement."),
               ]),
             ],
           ),
@@ -124,62 +160,167 @@ class PaEmpoisonnementPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte d’emploi ou d’administration"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00011",
+                  "A) Un acte d’emploi ou d’administration",
+                ),
+              ),
               _Paragraph(
-                "L’empoisonnement est une infraction de commission : un acte positif est nécessaire. "
-                "Une simple abstention ne suffit pas.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00012",
+                      "L’empoisonnement est une infraction de commission : un acte positif est nécessaire. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00013",
+                      "Une simple abstention ne suffit pas.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le mode d’administration est indifférent : piqûre, absorption, imprégnation, inhalation, respiration, "
-                "radiation, relation sexuelle, etc.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00014",
+                      "Le mode d’administration est indifférent : piqûre, absorption, imprégnation, inhalation, respiration, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00015",
+                      "radiation, relation sexuelle, etc.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Administration vs emploi"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00016",
+                  "B) Administration vs emploi",
+                ),
+              ),
               _Paragraph(
-                "• L’administration vise l’action de faire prendre le produit : faire ingurgiter/boire, injecter, inoculer…\n"
-                "• L’emploi se situe en amont : actes de préparation (mélanger le poison à un plat, mettre le plat à disposition, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00017",
+                      "• L’administration vise l’action de faire prendre le produit : faire ingurgiter/boire, injecter, inoculer…\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00018",
+                      "• L’emploi se situe en amont : actes de préparation (mélanger le poison à un plat, mettre le plat à disposition, etc.).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("C) Acte unique ou répété"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00019",
+                  "C) Acte unique ou répété",
+                ),
+              ),
               _Paragraph(
-                "L’administration peut être unique ou répétée dans le temps. "
-                "Même si chaque absorption isolée est insuffisante, l’ensemble des administrations peut constituer un fait unique.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00020",
+                      "L’administration peut être unique ou répétée dans le temps. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00021",
+                      "Même si chaque absorption isolée est insuffisante, l’ensemble des administrations peut constituer un fait unique.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("D) Remise directe ou indirecte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00022",
+                  "D) Remise directe ou indirecte",
+                ),
+              ),
               _Paragraph(
-                "Le mode peut être :\n"
-                "• Direct (l’auteur administre lui-même)\n"
-                "• Indirect (remise via un tiers de bonne foi)\n"
-                "• Par la victime elle-même si elle a été trompée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00023",
+                      "Le mode peut être :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00024",
+                      "• Direct (l’auteur administre lui-même)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00025",
+                      "• Indirect (remise via un tiers de bonne foi)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00026",
+                      "• Par la victime elle-même si elle a été trompée.",
+                    ),
               ),
               SizedBox(height: 14),
 
-              _SubTitle("E) Sur la personne d’autrui"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00027",
+                  "E) Sur la personne d’autrui",
+                ),
+              ),
               _Paragraph(
-                "• La victime doit être une personne humaine (pas un animal).\n"
-                "• La victime doit être vivante : l’acte sur un cadavre relève de l’infraction impossible (assimilée à la tentative).\n"
-                "• La victime doit être distincte de l’auteur (le suicide n’est pas incriminé).\n"
-                "• La victime peut être déterminée ou indéterminée : l’infraction existe même si l’auteur ne sait pas précisément qui sera atteint.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00028",
+                      "• La victime doit être une personne humaine (pas un animal).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00029",
+                      "• La victime doit être vivante : l’acte sur un cadavre relève de l’infraction impossible (assimilée à la tentative).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00030",
+                      "• La victime doit être distincte de l’auteur (le suicide n’est pas incriminé).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00031",
+                      "• La victime peut être déterminée ou indéterminée : l’infraction existe même si l’auteur ne sait pas précisément qui sera atteint.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : produit mortifère jeté dans un puits alimentant en eau potable un grand nombre de personnes ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00032",
+                      "Jurisprudence : produit mortifère jeté dans un puits alimentant en eau potable un grand nombre de personnes ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 5 février 1958)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00033",
+                      "(Cass. crim., 5 février 1958)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -190,20 +331,41 @@ class PaEmpoisonnementPage extends StatelessWidget {
               ),
               SizedBox(height: 14),
 
-              _SubTitle("F) Substances de nature à entraîner la mort"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00034",
+                  "F) Substances de nature à entraîner la mort",
+                ),
+              ),
               _Paragraph(
-                "La substance doit être de nature mortifère : appréciation au cas par cas (poison végétal/animal/minéral, virus, gaz toxique, etc.).\n"
-                "Elle « peut » entraîner la mort, sans devoir nécessairement la provoquer.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00035",
+                      "La substance doit être de nature mortifère : appréciation au cas par cas (poison végétal/animal/minéral, virus, gaz toxique, etc.).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00036",
+                      "Elle « peut » entraîner la mort, sans devoir nécessairement la provoquer.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : l’arséniate de plomb dans l’eau de boisson, de nature à provoquer une intoxication lente pouvant aboutir à la mort ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00037",
+                      "Jurisprudence : l’arséniate de plomb dans l’eau de boisson, de nature à provoquer une intoxication lente pouvant aboutir à la mort ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 5 février 1958)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00038",
+                      "(Cass. crim., 5 février 1958)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -214,18 +376,33 @@ class PaEmpoisonnementPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Le caractère mortifère s’apprécie aussi selon l’usage (mélanges, doses anormales/trop nombreuses) "
-                "ou une sensibilité particulière connue de l’auteur.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00039",
+                      "Le caractère mortifère s’apprécie aussi selon l’usage (mélanges, doses anormales/trop nombreuses) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00040",
+                      "ou une sensibilité particulière connue de l’auteur.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : l’administration en connaissance de cause de produits associés peut constituer l’élément matériel de l’empoisonnement ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00041",
+                      "Jurisprudence : l’administration en connaissance de cause de produits associés peut constituer l’élément matériel de l’empoisonnement ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 8 juin 1993)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00042",
+                      "(Cass. crim., 8 juin 1993)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -237,11 +414,23 @@ class PaEmpoisonnementPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle(
-                "G) Indifférence du résultat (infraction formelle)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00043",
+                  "G) Indifférence du résultat (infraction formelle)",
+                ),
               ),
               _Paragraph(
-                "L’empoisonnement est une infraction formelle : le crime est réalisé du seul fait de l’administration "
-                "de la substance mortifère, quelles qu’en soient les suites.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00044",
+                      "L’empoisonnement est une infraction formelle : le crime est réalisé du seul fait de l’administration ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00045",
+                      "de la substance mortifère, quelles qu’en soient les suites.",
+                    ),
               ),
             ],
           ),
@@ -250,29 +439,60 @@ class PaEmpoisonnementPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+              "f00046",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Connaissance de la nature mortelle"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00047",
+                  "A) Connaissance de la nature mortelle",
+                ),
+              ),
               _Paragraph(
-                "Si l’auteur ignore le caractère mortifère de la substance, il ne peut pas y avoir empoisonnement.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00048",
+                  "Si l’auteur ignore le caractère mortifère de la substance, il ne peut pas y avoir empoisonnement.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Intention de donner la mort"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00049",
+                  "B) Intention de donner la mort",
+                ),
+              ),
               _Paragraph(
-                "La seule connaissance du caractère mortifère ne suffit pas : il faut établir l’intention de donner la mort.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00050",
+                  "La seule connaissance du caractère mortifère ne suffit pas : il faut établir l’intention de donner la mort.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : le crime d’empoisonnement ne peut être caractérisé que si l’auteur a agi avec l’intention de donner la mort ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00051",
+                      "Jurisprudence : le crime d’empoisonnement ne peut être caractérisé que si l’auteur a agi avec l’intention de donner la mort ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 18 juin 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00052",
+                      "(Cass. crim., 18 juin 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -288,22 +508,30 @@ class PaEmpoisonnementPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+              "f00053",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 221-2, 221-3 et 221-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00054",
+                    "Articles 221-2, 221-3 et 221-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : les circonstances aggravantes applicables à l’empoisonnement sont celles prévues pour le meurtre (crime concomitant, objectif de faciliter un délit / assurer l’impunité, préméditation/guet-apens, mineur de 15 ans, vulnérabilité, dépositaire de l’autorité publique, enseignant/transport/service public/santé, témoin/victime/partie civile, bande organisée, conjoint/concubin/PACS, refus de mariage/union, ivresse manifeste/stupéfiants, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00055",
+                    " : les circonstances aggravantes applicables à l’empoisonnement sont celles prévues pour le meurtre (crime concomitant, objectif de faciliter un délit / assurer l’impunité, préméditation/guet-apens, mineur de 15 ans, vulnérabilité, dépositaire de l’autorité publique, enseignant/transport/service public/santé, témoin/victime/partie civile, bande organisée, conjoint/concubin/PACS, refus de mariage/union, ivresse manifeste/stupéfiants, etc.).",
+                  ),
                 ),
               ]),
             ],
@@ -313,52 +541,95 @@ class PaEmpoisonnementPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+              "f00056",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00057",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Empoisonnement (simple) : "),
                 TextSpan(
-                  text:
-                      "30 ans de réclusion criminelle + période de sûreté. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00058",
+                    "Empoisonnement (simple) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 221-5 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00059",
+                    "30 ans de réclusion criminelle + période de sûreté. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00060",
+                    "article 221-5 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Empoisonnement aggravé : "),
                 TextSpan(
-                  text:
-                      "réclusion criminelle à perpétuité + période de sûreté. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00061",
+                    "Empoisonnement aggravé : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 221-5 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00062",
+                    "réclusion criminelle à perpétuité + période de sûreté. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00063",
+                    "article 221-5 alinéa 3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00064",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
                 TextSpan(
-                  text: "l’article 221-5-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00065",
+                    "Peines prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00066",
+                    "l’article 221-5-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -366,84 +637,154 @@ class PaEmpoisonnementPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _SubTitle("Tentative"),
-              _BulletPoint(text: "Tentative : OUI."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00067",
+                  "Tentative : OUI.",
+                ),
+              ),
               SizedBox(height: 6),
               _Paragraph(
-                "La frontière entre tentative et crime consommé se situe au moment où la substance est introduite dans l’organisme "
-                "(absorption/pénétration). Avant, il s’agit d’un commencement d’exécution ; après, le crime est consommé quel qu’en soit le résultat.\n\n"
-                "Le commencement d’exécution est retenu dès lors que le poison est présenté à la victime ou mis à sa disposition. "
-                "Les actes trop éloignés sont de simples actes préparatoires (parfois punissables : conspiration, achat/fabrication, mélange aux aliments…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00068",
+                      "La frontière entre tentative et crime consommé se situe au moment où la substance est introduite dans l’organisme ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00069",
+                      "(absorption/pénétration). Avant, il s’agit d’un commencement d’exécution ; après, le crime est consommé quel qu’en soit le résultat.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00070",
+                      "Le commencement d’exécution est retenu dès lors que le poison est présenté à la victime ou mis à sa disposition. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                      "f00071",
+                      "Les actes trop éloignés sont de simples actes préparatoires (parfois punissables : conspiration, achat/fabrication, mélange aux aliments…).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00072",
+                  "Complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00073",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00074",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00075",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Provocation à commettre un empoisonnement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00076",
+                  "Provocation à commettre un empoisonnement",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-5-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00077",
+                    "Article 221-5-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : incrimine l’instigation (offres/promesses/dons/avantages) afin qu’une personne commette un empoisonnement, "
-                      "y compris hors du territoire national, lorsque le crime n’a été ni commis ni tenté (infraction distincte).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                        "f00078",
+                        " : incrimine l’instigation (offres/promesses/dons/avantages) afin qu’une personne commette un empoisonnement, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                        "f00079",
+                        "y compris hors du territoire national, lorsque le crime n’a été ni commis ni tenté (infraction distincte).",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("Exemption / réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                  "f00080",
+                  "Exemption / réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-5-3 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00081",
+                    "Article 221-5-3 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : exemption si, ayant averti l’autorité administrative ou judiciaire, l’auteur a permis d’éviter la mort de la victime.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00082",
+                    " : exemption si, ayant averti l’autorité administrative ou judiciaire, l’auteur a permis d’éviter la mort de la victime.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-5-3 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                    "f00083",
+                    "Article 221-5-3 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : réduction des deux tiers si l’avertissement permet d’éviter la mort ou d’identifier d’autres auteurs/complices ; "
-                      "si perpétuité encourue, ramenée à 15 ans.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                        "f00084",
+                        " : réduction des deux tiers si l’avertissement permet d’éviter la mort ou d’identifier d’autres auteurs/complices ; ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart",
+                        "f00085",
+                        "si perpétuité encourue, ramenée à 15 ans.",
+                      ),
                 ),
               ]),
             ],
@@ -701,9 +1042,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConfrontationVictimeGavPage extends StatelessWidget {
   const ConfrontationVictimeGavPage({super.key});
@@ -55,7 +56,11 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Confrontation",
@@ -73,7 +78,11 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Confrontation victime / personne gardée à vue",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00002",
+              "PV — Confrontation victime / personne gardée à vue",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,21 +93,35 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Aperçu (canevas)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00003",
+              "Aperçu (canevas)",
+            ),
             cardColor: cardCloture,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Document unique : toutes les contradictions sur un même PV.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00004",
+                  "Document unique : toutes les contradictions sur un même PV.",
+                ),
               ),
               _IntroBullet(
-                text: "L’enquêteur conserve la direction exclusive de l’acte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00005",
+                  "L’enquêteur conserve la direction exclusive de l’acte.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Le temps de confrontation compte dans le déroulement de la garde à vue : l’heure de fin est indispensable.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00006",
+                  "Le temps de confrontation compte dans le déroulement de la garde à vue : l’heure de fin est indispensable.",
+                ),
               ),
             ],
           ),
@@ -107,31 +130,49 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "Visa des articles — assistance de l’avocat (CPP)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00007",
+              "Visa des articles — assistance de l’avocat (CPP)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: "Gardé à vue : "),
                 TextSpan(
-                  text: "articles 63-4-2 et 63-4-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                    "f00008",
+                    "Gardé à vue : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                    "f00009",
+                    "articles 63-4-2 et 63-4-3 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Victime : "),
                 TextSpan(
-                  text: "article 63-4-5 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                    "f00010",
+                    "Victime : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                    "f00011",
+                    "article 63-4-5 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -139,8 +180,11 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ces visas doivent apparaître en tête du PV, avant le déroulement, afin de cadrer immédiatement le régime d’assistance de l’avocat.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00012",
+                      "Ces visas doivent apparaître en tête du PV, avant le déroulement, afin de cadrer immédiatement le régime d’assistance de l’avocat.",
+                    ),
                   ),
                 ],
               ),
@@ -151,7 +195,11 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // Images CANVA (recto / verso)
           _ConditionCard(
-            title: "Modèle visuel (recto / verso)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00013",
+              "Modèle visuel (recto / verso)",
+            ),
             cardColor: cardCloture,
             accent: accentGrey,
             titleColor: textMain,
@@ -170,26 +218,68 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // Cadre + instructions
           _ConditionCard(
-            title: "1 → 3 — Lieu, instructions, cadre juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00014",
+              "1 → 3 — Lieu, instructions, cadre juridique",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de rédaction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00015",
+                  "1) Lieu de rédaction",
+                ),
+              ),
               _Paragraph(
-                "Le PV indique le lieu exact de rédaction (service / commune), comme pour tout acte de procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00016",
+                  "Le PV indique le lieu exact de rédaction (service / commune), comme pour tout acte de procédure.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00017",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.\n"
-                "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00018",
+                      "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00019",
+                      "En enquête préliminaire, il agit sous le contrôle de l’officier de police judiciaire.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("3) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00020",
+                  "3) Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "L’APJ situe l’acte : enquête de flagrance ou enquête préliminaire.\n"
-                "Ce cadre doit être clair dès le début, car il conditionne le reste de la procédure.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00021",
+                      "L’APJ situe l’acte : enquête de flagrance ou enquête préliminaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00022",
+                      "Ce cadre doit être clair dès le début, car il conditionne le reste de la procédure.",
+                    ),
               ),
             ],
           ),
@@ -198,23 +288,63 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // Présents + assistants
           _ConditionCard(
-            title: "5 → 6 — Assistants éventuels & personnes présentes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00023",
+              "5 → 6 — Assistants éventuels & personnes présentes",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("5) Assistants éventuels"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00024",
+                  "5) Assistants éventuels",
+                ),
+              ),
               _Paragraph(
-                "Prévoir des effectifs d’assistance lorsque cela est nécessaire (risque d’incident, risque d’évasion, "
-                "ou nombre important de personnes à confronter).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00025",
+                      "Prévoir des effectifs d’assistance lorsque cela est nécessaire (risque d’incident, risque d’évasion, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00026",
+                      "ou nombre important de personnes à confronter).",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("6) Personnes présentes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00027",
+                  "6) Personnes présentes",
+                ),
+              ),
               _Paragraph(
-                "Le PV précise l’identité des personnes mises en présence :\n"
-                "• victime,\n"
-                "• personne gardée à vue,\n"
-                "et indique la présence ou l’absence de leurs avocats.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00028",
+                      "Le PV précise l’identité des personnes mises en présence :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00029",
+                      "• victime,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00030",
+                      "• personne gardée à vue,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00031",
+                      "et indique la présence ou l’absence de leurs avocats.",
+                    ),
               ),
             ],
           ),
@@ -223,22 +353,41 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // Règles
           _ConditionCard(
-            title: "7 — Règles de bon déroulement",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00032",
+              "7 — Règles de bon déroulement",
+            ),
             cardColor: cardOperation,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquêteur conserve la direction exclusive de l’acte.\n"
-                "Il peut mettre fin à la confrontation en cas de difficulté.\n"
-                "Toute difficulté/incident doit être mentionné, qu’il entraîne ou non l’interruption.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00033",
+                      "L’enquêteur conserve la direction exclusive de l’acte.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00034",
+                      "Il peut mettre fin à la confrontation en cas de difficulté.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00035",
+                      "Toute difficulté/incident doit être mentionné, qu’il entraîne ou non l’interruption.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Bonne pratique : annoncer les règles avant de commencer (calme, pas d’interruption, prise de parole uniquement sur invitation).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00036",
+                      "Bonne pratique : annoncer les règles avant de commencer (calme, pas d’interruption, prise de parole uniquement sur invitation).",
+                    ),
                   ),
                 ],
               ),
@@ -249,38 +398,83 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // Opération + Q/R
           _ConditionCard(
-            title: "8 → 9 — Opération & questions / réponses",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00037",
+              "8 → 9 — Opération & questions / réponses",
+            ),
             cardColor: cardOperation,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("8) Opération"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00038",
+                  "8) Opération",
+                ),
+              ),
               _Paragraph(
-                "Lecture des déclarations en présence de toutes les parties.\n"
-                "La confrontation est une audition contradictoire : les personnes s’expriment uniquement sur les contradictions "
-                "portées à leur connaissance.\n"
-                "À aucun moment elles ne communiquent entre elles : elles s’adressent exclusivement à l’enquêteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00039",
+                      "Lecture des déclarations en présence de toutes les parties.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00040",
+                      "La confrontation est une audition contradictoire : les personnes s’expriment uniquement sur les contradictions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00041",
+                      "portées à leur connaissance.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00042",
+                      "À aucun moment elles ne communiquent entre elles : elles s’adressent exclusivement à l’enquêteur.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("9) Questions — réponses"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00043",
+                  "9) Questions — réponses",
+                ),
+              ),
               _Paragraph(
-                "Deux modalités possibles (séparément ou conjointement) :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00044",
+                  "Deux modalités possibles (séparément ou conjointement) :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Question posée à tous : chaque personne répond à son tour.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00045",
+                  "Question posée à tous : chaque personne répond à son tour.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Questions alternées : une question à chaque partie à tour de rôle, en présence de l’autre (seule la personne interrogée répond).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00046",
+                  "Questions alternées : une question à chaque partie à tour de rôle, en présence de l’autre (seule la personne interrogée répond).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Objectif : traiter les contradictions point par point, de façon lisible et chronologique dans le PV.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00047",
+                      "Objectif : traiter les contradictions point par point, de façon lisible et chronologique dans le PV.",
+                    ),
                   ),
                 ],
               ),
@@ -291,23 +485,46 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // Avocats
           _ConditionCard(
-            title: "10 — Questions des avocats & observations écrites",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00048",
+              "10 — Questions des avocats & observations écrites",
+            ),
             cardColor: cardAvocats,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les avocats peuvent poser des questions à la personne gardée à vue et/ou à la victime à l’issue de la confrontation.\n"
-                "L’enquêteur peut s’opposer aux questions si elles lui semblent de nature à nuire au bon déroulement de l’enquête : "
-                "le refus doit être mentionné.\n"
-                "Les avocats peuvent remettre des observations écrites à la fin de la confrontation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00049",
+                      "Les avocats peuvent poser des questions à la personne gardée à vue et/ou à la victime à l’issue de la confrontation.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00050",
+                      "L’enquêteur peut s’opposer aux questions si elles lui semblent de nature à nuire au bon déroulement de l’enquête : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00051",
+                      "le refus doit être mentionné.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00052",
+                      "Les avocats peuvent remettre des observations écrites à la fin de la confrontation.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si observations écrites : elles sont annexées et jointes au PV (voir point 12).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00053",
+                      "Si observations écrites : elles sont annexées et jointes au PV (voir point 12).",
+                    ),
                   ),
                 ],
               ),
@@ -318,26 +535,68 @@ class ConfrontationVictimeGavPage extends StatelessWidget {
 
           // Clôture + annexe + avis OPJ
           _ConditionCard(
-            title: "11 → 13 — Clôture, annexe, avis O.P.J.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+              "f00054",
+              "11 → 13 — Clôture, annexe, avis O.P.J.",
+            ),
             cardColor: cardCloture,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("11) Énonciation terminale (clôture)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00055",
+                  "11) Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Après lecture, l’APJ fait signer les personnes entendues.\n"
-                "Il mentionne l’heure de fin de la confrontation : c’est indispensable car le temps de cette opération "
-                "est pris en compte dans le déroulement de la garde à vue.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00056",
+                      "Après lecture, l’APJ fait signer les personnes entendues.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00057",
+                      "Il mentionne l’heure de fin de la confrontation : c’est indispensable car le temps de cette opération ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                      "f00058",
+                      "est pris en compte dans le déroulement de la garde à vue.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("12) Annexe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00059",
+                  "12) Annexe",
+                ),
+              ),
               _Paragraph(
-                "Le cas échéant, les observations écrites présentées par le ou les avocats sont jointes au présent PV.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00060",
+                  "Le cas échéant, les observations écrites présentées par le ou les avocats sont jointes au présent PV.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("13) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00061",
+                  "13) Avis O.P.J.",
+                ),
+              ),
               _Paragraph(
-                "L’O.P.J. doit être informé des déclarations faites lors de la confrontation et des éventuelles observations écrites.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00062",
+                  "L’O.P.J. doit être informé des déclarations faites lors de la confrontation et des éventuelles observations écrites.",
+                ),
               ),
             ],
           ),
@@ -593,9 +852,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -660,8 +917,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+        "f00063",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+        "f00064",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -834,7 +1099,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                    "f00065",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -903,7 +1172,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/confrontation/confrontation_victime_gav_page.dart",
+                  "f00066",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -931,7 +1204,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -966,7 +1241,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

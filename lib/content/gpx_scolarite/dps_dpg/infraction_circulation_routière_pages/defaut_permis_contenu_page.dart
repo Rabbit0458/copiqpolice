@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DefautPermisPage extends StatelessWidget {
   const DefautPermisPage({super.key});
@@ -62,10 +63,18 @@ class DefautPermisPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infraction circulation routière",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+            "f00002",
+            "Infraction circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -80,7 +89,11 @@ class DefautPermisPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le défaut de permis de conduire",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00003",
+              "Le défaut de permis de conduire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -92,14 +105,26 @@ class DefautPermisPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de conduire un véhicule sans être titulaire du permis de conduire correspondant "
-                "à la catégorie du véhicule considéré constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00005",
+                      "Le fait de conduire un véhicule sans être titulaire du permis de conduire correspondant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00006",
+                      "à la catégorie du véhicule considéré constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -108,22 +133,30 @@ class DefautPermisPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 221-2 / I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00008",
+                    "Article L. 221-2 / I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le défaut de permis de conduire.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00009",
+                    " : définit et réprime le défaut de permis de conduire.",
+                  ),
                 ),
               ]),
             ],
@@ -133,51 +166,99 @@ class DefautPermisPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un conducteur de véhicule"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00011",
+                  "A) Un conducteur de véhicule",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article R. 221-1-1 / I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00012",
+                    "Article R. 221-1-1 / I du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : « nul ne peut conduire un véhicule (ou un ensemble) pour lequel le permis est exigé s’il "
-                      "n’est titulaire de la catégorie correspondante du permis en état de validité et s’il ne respecte "
-                      "les restrictions d’usage mentionnées sur ce titre ».",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                        "f00013",
+                        " : « nul ne peut conduire un véhicule (ou un ensemble) pour lequel le permis est exigé s’il ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                        "f00014",
+                        "n’est titulaire de la catégorie correspondante du permis en état de validité et s’il ne respecte ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                        "f00015",
+                        "les restrictions d’usage mentionnées sur ce titre ».",
+                      ),
                 ),
               ]),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Un défaut de permis de conduire (au sens strict)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00016",
+                  "B) Un défaut de permis de conduire (au sens strict)",
+                ),
               ),
               _Paragraph(
-                "Les règles relatives au permis de conduire sont précisées notamment par :\n"
-                "• les articles R. 221-1-1 à R. 221-21 du Code de la route (délivrance) ;\n"
-                "• et les articles R. 222-1 à R. 222-8 du Code de la route (reconnaissances et équivalences).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00017",
+                      "Les règles relatives au permis de conduire sont précisées notamment par :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00018",
+                      "• les articles R. 221-1-1 à R. 221-21 du Code de la route (délivrance) ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00019",
+                      "• et les articles R. 222-1 à R. 222-8 du Code de la route (reconnaissances et équivalences).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 221-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00020",
+                    "Article L. 221-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : précise que sont assimilés au permis de conduire certains titres prévus par les règlements "
-                      "pour la conduite des véhicules à moteur, lorsque le permis n’est pas exigé.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                        "f00021",
+                        " : précise que sont assimilés au permis de conduire certains titres prévus par les règlements ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                        "f00022",
+                        "pour la conduite des véhicules à moteur, lorsque le permis n’est pas exigé.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -186,11 +267,23 @@ class DefautPermisPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le brevet de sécurité routière (BSR) n’entre pas dans le champ de l’infraction définie pour le défaut de permis "
-                        "au sens de l’article ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                          "f00023",
+                          "Le brevet de sécurité routière (BSR) n’entre pas dans le champ de l’infraction définie pour le défaut de permis ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                          "f00024",
+                          "au sens de l’article ",
+                        ),
                   ),
                   TextSpan(
-                    text: "L. 221-2 / I du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00025",
+                      "L. 221-2 / I du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -202,35 +295,61 @@ class DefautPermisPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) À ne pas confondre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00026",
+                  "C) À ne pas confondre",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Non-présentation du permis : ce n’est pas le défaut de permis, mais une contravention distincte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00027",
+                  "Non-présentation du permis : ce n’est pas le défaut de permis, mais une contravention distincte.",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "→ Non-présentation : "),
                 TextSpan(
-                  text: "article R. 233-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00028",
+                    "→ Non-présentation : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00029",
+                    "article R. 233-1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Conduite malgré suspension / rétention / annulation / interdiction d’obtenir un permis : infraction différente.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00030",
+                  "Conduite malgré suspension / rétention / annulation / interdiction d’obtenir un permis : infraction différente.",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "→ Conduite malgré mesure : "),
                 TextSpan(
-                  text: "article L. 224-16 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00031",
+                    "→ Conduite malgré mesure : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00032",
+                    "article L. 224-16 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -239,8 +358,11 @@ class DefautPermisPage extends StatelessWidget {
                 title: "Nota",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’article L. 221-2 / I du Code de la route prévoit une liste d’exceptions.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00033",
+                      "L’article L. 221-2 / I du Code de la route prévoit une liste d’exceptions.",
+                    ),
                   ),
                 ],
               ),
@@ -251,17 +373,33 @@ class DefautPermisPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00034",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conduite volontaire sans être titulaire du permis requis",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00035",
+                  "Conduite volontaire sans être titulaire du permis requis",
+                ),
               ),
               _Paragraph(
-                "L’infraction est intentionnelle : elle suppose la volonté de conduire un véhicule "
-                "sans être titulaire du permis correspondant à la catégorie du véhicule concerné.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00036",
+                      "L’infraction est intentionnelle : elle suppose la volonté de conduire un véhicule ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00037",
+                      "sans être titulaire du permis correspondant à la catégorie du véhicule concerné.",
+                    ),
               ),
             ],
           ),
@@ -270,25 +408,33 @@ class DefautPermisPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00038",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 221-2-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00039",
+                    "Article L. 221-2-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Défaut de permis de conduire avec usage d’un permis faux ou falsifié.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00040",
+                  "Défaut de permis de conduire avec usage d’un permis faux ou falsifié.",
+                ),
               ),
             ],
           ),
@@ -297,45 +443,95 @@ class DefautPermisPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00041",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00042",
+                  "Peines encourues",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00043",
+                    "Simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 221-2 / I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00044",
+                    "1 an d’emprisonnement et 15 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00045",
+                    "article L. 221-2 / I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (permis faux/falsifié) : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00046",
+                    "Aggravée (permis faux/falsifié) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 221-2-1 / I du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00047",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00048",
+                    "article L. 221-2-1 / I du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
-              _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00049",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00050",
+                  "Tentative : NON.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00051",
+                  "Complicité : OUI.",
+                ),
+              ),
             ],
           ),
 
@@ -343,68 +539,135 @@ class DefautPermisPage extends StatelessWidget {
 
           // Constatation (AFD)
           _ConditionCard(
-            title: "VI — Constatation de l’infraction",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+              "f00052",
+              "VI — Constatation de l’infraction",
+            ),
             cardColor: cardConst,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "L’action publique peut être éteinte par le paiement d’une amende forfaitaire délictuelle "
-                      "fixée par la loi dans les conditions prévues à ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                        "f00053",
+                        "L’action publique peut être éteinte par le paiement d’une amende forfaitaire délictuelle ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                        "f00054",
+                        "fixée par la loi dans les conditions prévues à ",
+                      ),
                 ),
                 TextSpan(
-                  text: "l’article D. 45-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00055",
+                    "l’article D. 45-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
-              _SubTitle("Champ d’application"),
-              _BulletPoint(text: "Conduite d’un véhicule sans permis."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00056",
+                  "Champ d’application",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Conduite avec un permis n’autorisant pas la conduite du véhicule concerné.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00057",
+                  "Conduite d’un véhicule sans permis.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00058",
+                  "Conduite avec un permis n’autorisant pas la conduite du véhicule concerné.",
+                ),
               ),
 
               SizedBox(height: 10),
 
-              _SubTitle("Condition pratique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00059",
+                  "Condition pratique",
+                ),
+              ),
               _Paragraph(
-                "L’infraction doit être constatée par procès-verbal électronique (PVe) dressé au moyen d’un appareil sécurisé "
-                "(terminaux Néo).\n"
-                "Cette procédure doit être limitée aux cas ne laissant aucun doute sur la caractérisation de l’infraction "
-                "et ne nécessitant pas d’investigations complémentaires.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00060",
+                      "L’infraction doit être constatée par procès-verbal électronique (PVe) dressé au moyen d’un appareil sécurisé ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00061",
+                      "(terminaux Néo).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00062",
+                      "Cette procédure doit être limitée aux cas ne laissant aucun doute sur la caractérisation de l’infraction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                      "f00063",
+                      "et ne nécessitant pas d’investigations complémentaires.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
-                TextSpan(text: "La procédure AFD n’est pas applicable ("),
                 TextSpan(
-                  text: "article 495-17 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00064",
+                    "La procédure AFD n’est pas applicable (",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                    "f00065",
+                    "article 495-17 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ") :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Si le délit a été commis par un mineur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00066",
+                  "Si le délit a été commis par un mineur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si le délit a été commis en état de récidive légale (mention TAJ pour le même délit ou un délit assimilé), sauf disposition contraire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00067",
+                  "Si le délit a été commis en état de récidive légale (mention TAJ pour le même délit ou un délit assimilé), sauf disposition contraire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si plusieurs infractions sont constatées simultanément et qu’au moins l’une ne peut donner lieu à une amende forfaitaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/infraction_circulation_routière_pages/defaut_permis_contenu_page.dart",
+                  "f00068",
+                  "Si plusieurs infractions sont constatées simultanément et qu’au moins l’une ne peut donner lieu à une amende forfaitaire.",
+                ),
               ),
             ],
           ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -55,8 +56,11 @@ class _InstructionIntroPageState extends State<PaInstructionIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull =
-      'L\'INSTRUCTION PREPARATOIRE - LES MANDATS DE JUSTICE - LE CONTROLE JUDICIAIRE - LA DETENTION PROVISOIRE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_intro.dart",
+    "f00001",
+    'L\'INSTRUCTION PREPARATOIRE - LES MANDATS DE JUSTICE - LE CONTROLE JUDICIAIRE - LA DETENTION PROVISOIRE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -163,7 +167,11 @@ class _InstructionIntroPageState extends State<PaInstructionIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Comprendre l'instruction préparatoire, les mandats et le contrôle judiciaire",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_intro.dart",
+                        "f00002",
+                        "Comprendre l'instruction préparatoire, les mandats et le contrôle judiciaire",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -278,7 +286,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_intro.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

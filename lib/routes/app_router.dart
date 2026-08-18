@@ -93,6 +93,16 @@ Future<bool> _ensureSessionHydrated({String origin = ''}) async {
 // =============================================================================
 
 Route<dynamic>? appOnGenerateRoute(RouteSettings settings) {
+  final incomingUri = settings.name == null
+      ? null
+      : Uri.tryParse(settings.name!);
+  if (incomingUri != null && PaymentResultPage.supportsUri(incomingUri)) {
+    return MaterialPageRoute(
+      settings: settings,
+      builder: (_) => PaymentResultPage.fromUri(incomingUri),
+    );
+  }
+
   if (settings.name?.startsWith('/forum/') == true) {
     final postId = settings.name!.substring('/forum/'.length);
     final arguments = settings.arguments is Map
@@ -178,6 +188,31 @@ Route<dynamic>? appOnGenerateRoute(RouteSettings settings) {
       if (builder != null) {
         return MaterialPageRoute(builder: builder, settings: settings);
       }
+      // Les quiz ajoutés ou migrés depuis le panel disposent d'une route
+      // stable sans devoir ajouter une entrée au binaire à chaque création.
+      final path = settings.name ?? '';
+      const dynamicQuizPrefix = '/scolarite/quiz/';
+      if (path.startsWith(dynamicQuizPrefix)) {
+        final module = Uri.decodeComponent(
+          path.substring(dynamicQuizPrefix.length).split('?').first,
+        );
+        if (module.isNotEmpty) {
+          return MaterialPageRoute(
+            builder: (_) => QuizScolariteDynamiquePage(module: module),
+            settings: settings,
+          );
+        }
+      }
+      // Les cours créés depuis le panel n'existent volontairement dans aucun
+      // binaire publié. Les préfixes éditoriaux sont donc résolus à la volée.
+      if (path.startsWith('/gpx_scolarite/') ||
+          path.startsWith('/pa_scolarite/') ||
+          path.startsWith('/scolarite/course/')) {
+        return MaterialPageRoute(
+          builder: (_) => CoursScolaritePage(courseRoute: path),
+          settings: settings,
+        );
+      }
       return MaterialPageRoute(
         builder: (_) => _NotFoundScreen(path: settings.name ?? 'Unknown'),
         settings: settings,
@@ -200,6 +235,7 @@ class RouteRegistry {
     '/favoris': (_) => const FavorisHomePage(),
     '/institutions': (_) => const InstitutionPage(),
     '/procedure_penale': (_) => const ProcedurePenalePage(),
+    '/scolarite/cours': (_) => const CoursScolariteCatalogPage(),
     '/picker': (_) => const ModePickerScreen(),
     // ⚠️ CORRECTIF CRITIQUE (audit 2026-07-26)
     // HomeBootstrap redirige vers '/mode_picker' et '/grade_picker' quand le
@@ -216,10 +252,12 @@ class RouteRegistry {
     // Retour de paiement Stripe Checkout (deep links copiqpolice://paywall/success
     // et copiqpolice://paywall/cancel — voir deep_links_service.dart). Donne accès
     // à toute l'app (PA/GPX exam & school) une fois l'utilisateur passé par cet écran.
-    PaymentResultPage.routeNameSuccess: (_) =>
+    PaymentResultPage.successRoute: (_) =>
         const PaymentResultPage(status: PaymentResultStatus.success),
-    PaymentResultPage.routeNameCancel: (_) =>
+    PaymentResultPage.cancelRoute: (_) =>
         const PaymentResultPage(status: PaymentResultStatus.cancel),
+    PaymentResultPage.failureRoute: (_) =>
+        const PaymentResultPage(status: PaymentResultStatus.failed),
 
     // ================== GPX : Généralités ==================
     '/gpx/generalites/classification_infractions': (_) =>

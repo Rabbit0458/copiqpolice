@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class GPXSchoolGeneralitesLegislationPenalePage extends StatelessWidget {
   const GPXSchoolGeneralitesLegislationPenalePage({super.key});
@@ -33,10 +34,18 @@ class GPXSchoolGeneralitesLegislationPenalePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Généralités sur la législation pénale",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+            "f00002",
+            "Généralités sur la législation pénale",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -49,7 +58,11 @@ class GPXSchoolGeneralitesLegislationPenalePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 10, 18, 28),
         children: [
           Text(
-            "Généralités sur la législation pénale",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+              "f00003",
+              "Généralités sur la législation pénale",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -59,8 +72,16 @@ class GPXSchoolGeneralitesLegislationPenalePage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            "Définition du droit pénal, ses branches principales, et panorama des sources "
-            "(Code pénal et Code de procédure pénale).",
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                  "f00004",
+                  "Définition du droit pénal, ses branches principales, et panorama des sources ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                  "f00005",
+                  "(Code pénal et Code de procédure pénale).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -71,47 +92,100 @@ class GPXSchoolGeneralitesLegislationPenalePage extends StatelessWidget {
           const SizedBox(height: 16),
 
           _ConditionCard(
-            title: "GÉNÉRALITÉS SUR LA LÉGISLATION PÉNALE",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+              "f00006",
+              "GÉNÉRALITÉS SUR LA LÉGISLATION PÉNALE",
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: const [
-              _SubTitle("DÉFINITION DU DROIT PÉNAL"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                  "f00007",
+                  "DÉFINITION DU DROIT PÉNAL",
+                ),
+              ),
               _Paragraph(
-                "Le droit pénal est « l’ensemble des règles juridiques qui organisent la réaction de l’État vis-à-vis des infractions et des délinquants » (Merle et Vitu). "
-                "Il établit un ensemble de règles qui ont pour but d’assurer et d’organiser la prévention et la répression des actes portant atteinte à la société.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                      "f00008",
+                      "Le droit pénal est « l’ensemble des règles juridiques qui organisent la réaction de l’État vis-à-vis des infractions et des délinquants » (Merle et Vitu). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                      "f00009",
+                      "Il établit un ensemble de règles qui ont pour but d’assurer et d’organiser la prévention et la répression des actes portant atteinte à la société.",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _Paragraph("Le droit pénal se divise en plusieurs branches :"),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                  "f00010",
+                  "Le droit pénal se divise en plusieurs branches :",
+                ),
+              ),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "Le droit pénal général, qui définit les principes généraux applicables à toutes les infractions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                  "f00011",
+                  "Le droit pénal général, qui définit les principes généraux applicables à toutes les infractions.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le droit pénal spécial, portant étude des différentes infractions.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                  "f00012",
+                  "Le droit pénal spécial, portant étude des différentes infractions.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La procédure pénale, qui comporte l’étude du déroulement du procès pénal depuis la commission de l’infraction jusqu’au prononcé de la sanction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                  "f00013",
+                  "La procédure pénale, qui comporte l’étude du déroulement du procès pénal depuis la commission de l’infraction jusqu’au prononcé de la sanction.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _Paragraph(
-                "La source principale du droit pénal est le Code pénal, conçu et rédigé en 1810, "
-                "largement remanié par les lois de 1992 (entrée en vigueur le 1er mars 1994). "
-                "Le Code comprend une partie législative formée de 7 livres et une partie réglementaire constituée de décrets pris en Conseil d’État.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                      "f00014",
+                      "La source principale du droit pénal est le Code pénal, conçu et rédigé en 1810, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                      "f00015",
+                      "largement remanié par les lois de 1992 (entrée en vigueur le 1er mars 1994). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                      "f00016",
+                      "Le Code comprend une partie législative formée de 7 livres et une partie réglementaire constituée de décrets pris en Conseil d’État.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph(
-                "Le Code de procédure pénale traite de l’action publique et de l’instruction, "
-                "des juridictions de jugement ainsi que de l’enquête policière.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                      "f00017",
+                      "Le Code de procédure pénale traite de l’action publique et de l’instruction, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/droit_pénale_général_pages/gpx_school_generalites_legislation_penale_page.dart",
+                      "f00018",
+                      "des juridictions de jugement ainsi que de l’enquête policière.",
+                    ),
               ),
             ],
           ),
@@ -369,9 +443,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

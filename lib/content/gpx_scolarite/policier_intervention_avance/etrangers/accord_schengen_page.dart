@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AccordSchengenPage extends StatelessWidget {
   const AccordSchengenPage({super.key});
@@ -55,10 +56,18 @@ class AccordSchengenPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Étrangers",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+            "f00002",
+            "Étrangers",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -73,7 +82,11 @@ class AccordSchengenPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’accord de Schengen",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+              "f00003",
+              "L’accord de Schengen",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -85,23 +98,41 @@ class AccordSchengenPage extends StatelessWidget {
 
           // Contexte (clair, sans répéter les titres)
           _ConditionCard(
-            title: "Idée clé",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+              "f00004",
+              "Idée clé",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La convention de Schengen repose sur la disparition des contrôles aux frontières intérieures "
-                "et le renforcement des frontières extérieures, afin d’assurer la sécurité dans un espace de libre circulation.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00005",
+                      "La convention de Schengen repose sur la disparition des contrôles aux frontières intérieures ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00006",
+                      "et le renforcement des frontières extérieures, afin d’assurer la sécurité dans un espace de libre circulation.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "Libre circulation : franchissement des frontières intérieures sans contrôle systématique des personnes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00007",
+                  "Libre circulation : franchissement des frontières intérieures sans contrôle systématique des personnes.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Sécurité : coordination renforcée aux frontières extérieures + coopération policière/judiciaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00008",
+                  "Sécurité : coordination renforcée aux frontières extérieures + coopération policière/judiciaire.",
+                ),
               ),
             ],
           ),
@@ -110,33 +141,48 @@ class AccordSchengenPage extends StatelessWidget {
 
           // ✅ Référence juridique en haut (cadre légal)
           _ConditionCard(
-            title: "Référence juridique (cadre)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+              "f00009",
+              "Référence juridique (cadre)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "En cas de rétablissement des contrôles : ",
-                ),
-                TextSpan(
-                  text: "article L.332-3 du CESEDA",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                    "f00010",
+                    "En cas de rétablissement des contrôles : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — le périmètre de contrôle est une zone comprise entre la frontière intérieure terrestre et une ligne tracée à 10 km en deçà.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                    "f00011",
+                    "article L.332-3 du CESEDA",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                    "f00012",
+                    " — le périmètre de contrôle est une zone comprise entre la frontière intérieure terrestre et une ligne tracée à 10 km en deçà.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans ce périmètre, l’étranger contrôlé en situation irrégulière peut faire l’objet d’un refus d’entrée sur le territoire.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00013",
+                      "Dans ce périmètre, l’étranger contrôlé en situation irrégulière peut faire l’objet d’un refus d’entrée sur le territoire.",
+                    ),
                   ),
                 ],
               ),
@@ -147,50 +193,96 @@ class AccordSchengenPage extends StatelessWidget {
 
           // I — Libre circulation
           _ConditionCard(
-            title: "I — Libre circulation des personnes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+              "f00014",
+              "I — Libre circulation des personnes",
+            ),
             cardColor: cardCircu,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Suppression des contrôles aux frontières intérieures",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00015",
+                  "A) Suppression des contrôles aux frontières intérieures",
+                ),
               ),
               _Paragraph(
-                "Les frontières intérieures correspondent aux frontières terrestres communes des États parties, "
-                "ainsi qu’aux aéroports pour les vols intérieurs et aux ports maritimes pour les liaisons intérieures. "
-                "Elles peuvent être franchies sans contrôle systématique des personnes.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00016",
+                      "Les frontières intérieures correspondent aux frontières terrestres communes des États parties, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00017",
+                      "ainsi qu’aux aéroports pour les vols intérieurs et aux ports maritimes pour les liaisons intérieures. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00018",
+                      "Elles peuvent être franchies sans contrôle systématique des personnes.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette libre circulation bénéficie à tous les individus, quelle que soit leur nationalité "
-                "(ressortissants Schengen, UE ou pays tiers) ou leur statut.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00019",
+                      "Cette libre circulation bénéficie à tous les individus, quelle que soit leur nationalité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00020",
+                      "(ressortissants Schengen, UE ou pays tiers) ou leur statut.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Certains territoires ne sont pas couverts par l’accord (ex. en France : Guadeloupe, Martinique, Réunion, Mayotte, Nouvelle-Calédonie, Polynésie française).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00021",
+                      "Certains territoires ne sont pas couverts par l’accord (ex. en France : Guadeloupe, Martinique, Réunion, Mayotte, Nouvelle-Calédonie, Polynésie française).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Limites et points d’attention"),
-              _BulletPoint(
-                text:
-                    "Un État peut rétablir temporairement les contrôles pour ordre public / sécurité nationale (évènements prévisibles ou urgence).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00022",
+                  "B) Limites et points d’attention",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La suppression des contrôles ne fait pas obstacle aux contrôles d’identité ou de régularité du séjour sur l’ensemble du territoire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00023",
+                  "Un État peut rétablir temporairement les contrôles pour ordre public / sécurité nationale (évènements prévisibles ou urgence).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00024",
+                  "La suppression des contrôles ne fait pas obstacle aux contrôles d’identité ou de régularité du séjour sur l’ensemble du territoire.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Déclaration d’entrée sur le territoire (D.E.T.) : ancienne obligation pour certains ressortissants de pays tiers lors du franchissement des frontières intérieures (en France, non exigée depuis 1998).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00025",
+                      "Déclaration d’entrée sur le territoire (D.E.T.) : ancienne obligation pour certains ressortissants de pays tiers lors du franchissement des frontières intérieures (en France, non exigée depuis 1998).",
+                    ),
                   ),
                 ],
               ),
@@ -201,33 +293,93 @@ class AccordSchengenPage extends StatelessWidget {
 
           // II — Frontières extérieures
           _ConditionCard(
-            title: "II — Frontières extérieures : contrôles coordonnés",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+              "f00026",
+              "II — Frontières extérieures : contrôles coordonnés",
+            ),
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Contrôles aux points de passage autorisés"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00027",
+                  "A) Contrôles aux points de passage autorisés",
+                ),
+              ),
               _Paragraph(
-                "Avec la suppression des frontières intérieures, les contrôles sont reportés aux frontières extérieures "
-                "(terrestres, maritimes, aéroports et ports pour le trafic extra-Schengen). "
-                "Le franchissement se fait aux points de passage autorisés et aux heures d’ouverture fixées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00028",
+                      "Avec la suppression des frontières intérieures, les contrôles sont reportés aux frontières extérieures ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00029",
+                      "(terrestres, maritimes, aéroports et ports pour le trafic extra-Schengen). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00030",
+                      "Le franchissement se fait aux points de passage autorisés et aux heures d’ouverture fixées.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Politique commune des visas"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00031",
+                  "B) Politique commune des visas",
+                ),
+              ),
               _Paragraph(
-                "Les États Schengen ont harmonisé la délivrance des visas pour les séjours de courte durée "
-                "(n’excédant pas 3 mois). Les données d’identité/biométriques des demandeurs peuvent être vérifiées aux postes de contrôle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00032",
+                      "Les États Schengen ont harmonisé la délivrance des visas pour les séjours de courte durée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00033",
+                      "(n’excédant pas 3 mois). Les données d’identité/biométriques des demandeurs peuvent être vérifiées aux postes de contrôle.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Demandeurs d’asile"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00034",
+                  "C) Demandeurs d’asile",
+                ),
+              ),
               _Paragraph(
-                "La demande d’asile est traitée par un seul État de l’espace Schengen, en principe celui de l’entrée sur le territoire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00035",
+                  "La demande d’asile est traitée par un seul État de l’espace Schengen, en principe celui de l’entrée sur le territoire.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("D) Lutte contre l’immigration illégale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00036",
+                  "D) Lutte contre l’immigration illégale",
+                ),
+              ),
               _Paragraph(
-                "La convention vise l’harmonisation des politiques : règles communes d’éloignement, "
-                "répression de l’aide à l’immigration irrégulière et mécanismes de rapatriement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00037",
+                      "La convention vise l’harmonisation des politiques : règles communes d’éloignement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00038",
+                      "répression de l’aide à l’immigration irrégulière et mécanismes de rapatriement.",
+                    ),
               ),
             ],
           ),
@@ -236,24 +388,48 @@ class AccordSchengenPage extends StatelessWidget {
 
           // III — Mesures compensatoires : coopération
           _ConditionCard(
-            title: "III — Mesures compensatoires (sécurité)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+              "f00039",
+              "III — Mesures compensatoires (sécurité)",
+            ),
             cardColor: cardCoop,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Coopération policière et judiciaire"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00040",
+                  "A) Coopération policière et judiciaire",
+                ),
+              ),
               _Paragraph(
-                "La convention prévoit l’assistance entre services de police pour prévenir et constater les infractions, "
-                "ainsi que la mise en commun des informations et la coordination de la lutte contre la criminalité (notamment via EUROPOL).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00041",
+                      "La convention prévoit l’assistance entre services de police pour prévenir et constater les infractions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00042",
+                      "ainsi que la mise en commun des informations et la coordination de la lutte contre la criminalité (notamment via EUROPOL).",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Observation transfrontalière : possibilité de poursuivre une filature sur le territoire d’un État voisin (conditions + infractions graves).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00043",
+                  "Observation transfrontalière : possibilité de poursuivre une filature sur le territoire d’un État voisin (conditions + infractions graves).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Poursuite transfrontalière : possibilité, sous conditions, de poursuivre au-delà de la frontière sans autorisation préalable lorsque l’auteur prend la fuite.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00044",
+                  "Poursuite transfrontalière : possibilité, sous conditions, de poursuivre au-delà de la frontière sans autorisation préalable lorsque l’auteur prend la fuite.",
+                ),
               ),
             ],
           ),
@@ -262,27 +438,66 @@ class AccordSchengenPage extends StatelessWidget {
 
           // IV — SIS / SIRENE
           _ConditionCard(
-            title: "IV — SIS & SIRENE : l’outil opérationnel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+              "f00045",
+              "IV — SIS & SIRENE : l’outil opérationnel",
+            ),
             cardColor: cardTools,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Le Système d’Information Schengen (SIS)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00046",
+                  "A) Le Système d’Information Schengen (SIS)",
+                ),
+              ),
               _Paragraph(
-                "Le SIS est une banque de données commune aux États Schengen, mise à jour en permanence. "
-                "Il contient des signalements concernant des personnes (disparues, recherchées, surveillées) et des objets recherchés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00047",
+                      "Le SIS est une banque de données commune aux États Schengen, mise à jour en permanence. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00048",
+                      "Il contient des signalements concernant des personnes (disparues, recherchées, surveillées) et des objets recherchés.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Lors de l’interrogation d’un fichier (ex. FPR), la réponse nationale apparaît d’abord ; en cas de correspondance, la réponse Schengen s’affiche avec une conduite à tenir.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00049",
+                  "Lors de l’interrogation d’un fichier (ex. FPR), la réponse nationale apparaît d’abord ; en cas de correspondance, la réponse Schengen s’affiche avec une conduite à tenir.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Les bureaux SIRENE"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                  "f00050",
+                  "B) Les bureaux SIRENE",
+                ),
+              ),
               _Paragraph(
-                "Les informations complémentaires et la coordination opérationnelle passent par les bureaux SIRENE. "
-                "En France, le bureau SIRENE (policiers, gendarmes, douaniers, magistrats) apporte un soutien logistique "
-                "aux utilisateurs 24h/24, 365 jours/an, pour l’exécution des conduites à tenir liées aux signalements.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00051",
+                      "Les informations complémentaires et la coordination opérationnelle passent par les bureaux SIRENE. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00052",
+                      "En France, le bureau SIRENE (policiers, gendarmes, douaniers, magistrats) apporte un soutien logistique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/etrangers/accord_schengen_page.dart",
+                      "f00053",
+                      "aux utilisateurs 24h/24, 365 jours/an, pour l’exécution des conduites à tenir liées aux signalements.",
+                    ),
               ),
             ],
           ),
@@ -538,9 +753,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

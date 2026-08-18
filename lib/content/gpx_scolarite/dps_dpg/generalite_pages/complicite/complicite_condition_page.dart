@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — CONDITIONS DE LA COMPLICITÉ
@@ -43,10 +44,18 @@ class CompliciteConditionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Conditions de la complicité',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+            "f00002",
+            'Conditions de la complicité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -60,7 +69,11 @@ class CompliciteConditionPage extends StatelessWidget {
         children: [
           // En-tête
           Text(
-            'Les conditions de la complicité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+              "f00003",
+              'Les conditions de la complicité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -68,76 +81,151 @@ class CompliciteConditionPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'La complicité consiste en l’entente momentanée entre deux ou plusieurs personnes dans le but d’accomplir une infraction déterminée. ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                "f00004",
+                'La complicité consiste en l’entente momentanée entre deux ou plusieurs personnes dans le but d’accomplir une infraction déterminée. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'Le complice est celui qui aide l’auteur dans la préparation ou l’exécution de l’infraction, ',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                "f00005",
+                'Le complice est celui qui aide l’auteur dans la préparation ou l’exécution de l’infraction, ',
+              ),
             ),
             TextSpan(
-              text:
-                  'le co-auteur réalisant, lui, les éléments constitutifs de l’infraction.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                "f00006",
+                'le co-auteur réalisant, lui, les éléments constitutifs de l’infraction.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
           ]),
           const SizedBox(height: 10),
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
-              text:
-                  'La complicité punissable exige la réunion de trois conditions :',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                "f00007",
+                'La complicité punissable exige la réunion de trois conditions :',
+              ),
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
           ]),
           const SizedBox(height: 6),
-          const _IntroBullet(text: 'un fait principal punissable ;'),
-          const _IntroBullet(text: 'une participation à l’infraction ;'),
-          const _IntroBullet(
-            text: 'une intention de participer à cette infraction.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+              "f00008",
+              'un fait principal punissable ;',
+            ),
+          ),
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+              "f00009",
+              'une participation à l’infraction ;',
+            ),
+          ),
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+              "f00010",
+              'une intention de participer à cette infraction.',
+            ),
           ),
 
           const SizedBox(height: 18),
 
           // A. Un fait principal punissable
           _ConditionCard(
-            title: 'A. Un fait principal punissable',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+              "f00011",
+              'A. Un fait principal punissable',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’existence d’un fait principal punissable est une condition '
-                'indispensable à la répression de la complicité. Le complice “emprunte” '
-                'la criminalité de l’auteur principal : on ne peut condamner le complice '
-                'que si le fait principal est lui-même prévu et réprimé par la loi.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00012",
+                      'L’existence d’un fait principal punissable est une condition ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00013",
+                      'indispensable à la répression de la complicité. Le complice “emprunte” ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00014",
+                      'la criminalité de l’auteur principal : on ne peut condamner le complice ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00015",
+                      'que si le fait principal est lui-même prévu et réprimé par la loi.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Ainsi, si le fait principal échappe pour une raison légale à la répression (par exemple, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                    "f00016",
+                    'Ainsi, si le fait principal échappe pour une raison légale à la répression (par exemple, ',
+                  ),
                 ),
                 TextSpan(
                   text:
-                      'fait justifié par la légitime défense, ordre de la loi, '
-                      'commandement de l’autorité légitime, prescription, amnistie…',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                        "f00017",
+                        'fait justifié par la légitime défense, ordre de la loi, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                        "f00018",
+                        'commandement de l’autorité légitime, prescription, amnistie…',
+                      ),
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
-                TextSpan(text: '), la complicité ne pourra pas être retenue.'),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                    "f00019",
+                    '), la complicité ne pourra pas être retenue.',
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'En matière contraventionnelle',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00020",
+                  'En matière contraventionnelle',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'En contravention, le complice par aide ou assistance n’est puni que lorsqu’un texte le prévoit expressément. ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00021",
+                      'En contravention, le complice par aide ou assistance n’est puni que lorsqu’un texte le prévoit expressément. ',
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        'En revanche, la complicité par instigation (provocation, ordres, etc.) reste toujours punissable à titre autonome (ex. art. R. 610-2 C. pén.).',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00022",
+                      'En revanche, la complicité par instigation (provocation, ordres, etc.) reste toujours punissable à titre autonome (ex. art. R. 610-2 C. pén.).',
+                    ),
                     style: TextStyle(fontStyle: FontStyle.italic),
                   ),
                 ],
@@ -149,18 +237,29 @@ class CompliciteConditionPage extends StatelessWidget {
 
           // B. Une participation à l’infraction
           _ConditionCard(
-            title: 'B. Une participation à l’infraction',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+              "f00023",
+              'B. Une participation à l’infraction',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'La participation à l’infraction suppose l’accomplissement d’un des actes matériels prévus par ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                    "f00024",
+                    'La participation à l’infraction suppose l’accomplissement d’un des actes matériels prévus par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 121-7 du Code pénal',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                    "f00025",
+                    'l’article 121-7 du Code pénal',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     decoration: TextDecoration.underline,
@@ -171,10 +270,24 @@ class CompliciteConditionPage extends StatelessWidget {
               SizedBox(height: 10),
 
               // 1. Complicité par aide ou assistance
-              _SubTitle('1. Complicité par aide ou assistance'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00026",
+                  '1. Complicité par aide ou assistance',
+                ),
+              ),
               _Paragraph(
-                'L’acte doit avoir facilité la préparation ou la consommation de l’infraction. '
-                'Il peut consister en la fourniture de moyens matériels, logistiques ou humains.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00027",
+                      'L’acte doit avoir facilité la préparation ou la consommation de l’infraction. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00028",
+                      'Il peut consister en la fourniture de moyens matériels, logistiques ou humains.',
+                    ),
               ),
               SizedBox(height: 6),
               _ExempleBox(
@@ -182,30 +295,57 @@ class CompliciteConditionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Celui qui procure une arme, du poison ou un véhicule, ou encore celui qui sert de guetteur pendant le vol, '
-                        'apporte une aide matérielle à la commission de l’infraction.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00029",
+                          'Celui qui procure une arme, du poison ou un véhicule, ou encore celui qui sert de guetteur pendant le vol, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00030",
+                          'apporte une aide matérielle à la commission de l’infraction.',
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
               // 2. Complicité par provocation
-              _SubTitle('2. Complicité par provocation'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00031",
+                  '2. Complicité par provocation',
+                ),
+              ),
               _Paragraph(
-                'Le “provocateur” ou auteur moral de l’infraction est celui qui incite une personne déterminée à commettre une infraction.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00032",
+                  'Le “provocateur” ou auteur moral de l’infraction est celui qui incite une personne déterminée à commettre une infraction.',
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    'la provocation doit être accompagnée de circonstances comme un don, une promesse, un ordre, une menace ou un abus d’autorité ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00033",
+                  'la provocation doit être accompagnée de circonstances comme un don, une promesse, un ordre, une menace ou un abus d’autorité ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'elle doit être individuelle, c’est-à-dire adressée à une personne déterminée ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00034",
+                  'elle doit être individuelle, c’est-à-dire adressée à une personne déterminée ;',
+                ),
               ),
               _BulletPoint(
-                text:
-                    'elle doit être suivie d’effets : l’infraction doit être réalisée ou au moins tentée.',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00035",
+                  'elle doit être suivie d’effets : l’infraction doit être réalisée ou au moins tentée.',
+                ),
               ),
               SizedBox(height: 6),
               _ExempleBox(
@@ -213,18 +353,40 @@ class CompliciteConditionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Un individu ordonne au conducteur d’un véhicule de forcer un barrage de gendarmerie : '
-                        'il est complice par provocation si l’ordre est exécuté.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00036",
+                          'Un individu ordonne au conducteur d’un véhicule de forcer un barrage de gendarmerie : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00037",
+                          'il est complice par provocation si l’ordre est exécuté.',
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
 
               // 3. Complicité par fourniture d’instructions
-              _SubTitle('3. Complicité par fourniture d’instructions'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00038",
+                  '3. Complicité par fourniture d’instructions',
+                ),
+              ),
               _Paragraph(
-                'Il s’agit d’indications précises, de nature à faciliter l’exécution d’une infraction, '
-                'données en connaissance de cause : l’auteur sait que ses conseils serviront à la réalisation d’un crime ou d’un délit.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00039",
+                      'Il s’agit d’indications précises, de nature à faciliter l’exécution d’une infraction, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00040",
+                      'données en connaissance de cause : l’auteur sait que ses conseils serviront à la réalisation d’un crime ou d’un délit.',
+                    ),
               ),
               SizedBox(height: 6),
               _ExempleBox(
@@ -232,8 +394,16 @@ class CompliciteConditionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Indiquer à un tiers, en vue d’un cambriolage, les heures où une personne est absente de son domicile, '
-                        'ou la localisation exacte du coffre-fort.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00041",
+                          'Indiquer à un tiers, en vue d’un cambriolage, les heures où une personne est absente de son domicile, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00042",
+                          'ou la localisation exacte du coffre-fort.',
+                        ),
                   ),
                 ],
               ),
@@ -244,36 +414,70 @@ class CompliciteConditionPage extends StatelessWidget {
 
           // C. Une intention de participer à l’infraction
           _ConditionCard(
-            title: 'C. Une intention de participer à l’infraction',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+              "f00043",
+              'C. Une intention de participer à l’infraction',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’intention criminelle du complice doit réunir deux conditions cumulatives :',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00044",
+                  'L’intention criminelle du complice doit réunir deux conditions cumulatives :',
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    'une connaissance du caractère délictueux des actes envisagés ou réalisés par l’auteur principal ;',
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00045",
+                  'une connaissance du caractère délictueux des actes envisagés ou réalisés par l’auteur principal ;',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'la volonté de s’associer à l’acte délictueux : le complice et l’auteur principal '
-                    'doivent agir “ensemble et de concert” en vue d’obtenir le résultat recherché.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00046",
+                      'la volonté de s’associer à l’acte délictueux : le complice et l’auteur principal ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00047",
+                      'doivent agir “ensemble et de concert” en vue d’obtenir le résultat recherché.',
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'À retenir',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                  "f00048",
+                  'À retenir',
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        'Celui qui ignore totalement le projet criminel de l’auteur ne peut pas être complice. ',
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                      "f00049",
+                      'Celui qui ignore totalement le projet criminel de l’auteur ne peut pas être complice. ',
+                    ),
                   ),
                   TextSpan(
                     text:
-                        'Inversement, celui qui adhère volontairement au projet en apportant aide, instructions ou provocation '
-                        'engage sa responsabilité de complice.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00050",
+                          'Inversement, celui qui adhère volontairement au projet en apportant aide, instructions ou provocation ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart",
+                          "f00051",
+                          'engage sa responsabilité de complice.',
+                        ),
                     style: TextStyle(fontWeight: FontWeight.w600),
                   ),
                 ],

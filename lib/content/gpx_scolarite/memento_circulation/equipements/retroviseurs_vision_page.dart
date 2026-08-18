@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RetroviseursVisionPage extends StatelessWidget {
   const RetroviseursVisionPage({super.key});
@@ -66,10 +67,18 @@ class RetroviseursVisionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class RetroviseursVisionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Rétroviseurs / systèmes de vision indirecte",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+              "f00003",
+              "Rétroviseurs / systèmes de vision indirecte",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -99,10 +112,18 @@ class RetroviseursVisionPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les systèmes de vision indirecte (rétroviseurs) sont imposés pour permettre au conducteur, depuis son siège, "
-                "de surveiller l’arrière du véhicule et d’assurer une conduite sûre. L’équipement dépend du type de véhicule.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00004",
+                      "Les systèmes de vision indirecte (rétroviseurs) sont imposés pour permettre au conducteur, depuis son siège, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00005",
+                      "de surveiller l’arrière du véhicule et d’assurer une conduite sûre. L’équipement dépend du type de véhicule.",
+                    ),
               ),
             ],
           ),
@@ -111,24 +132,60 @@ class RetroviseursVisionPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 316-6 du Code de la route"),
-                const TextSpan(
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00007",
+                    "R. 316-6 du Code de la route",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : impose que tout véhicule à moteur soit muni d’un ou plusieurs systèmes de vision indirecte disposés "
-                      "afin de permettre au conducteur de surveiller l’arrière du véhicule depuis son siège.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                        "f00008",
+                        " : impose que tout véhicule à moteur soit muni d’un ou plusieurs systèmes de vision indirecte disposés ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                        "f00009",
+                        "afin de permettre au conducteur de surveiller l’arrière du véhicule depuis son siège.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                _boldSpan("NATINF 22627"),
-                const TextSpan(text: " — Base : "),
-                _lawSpan("R. 316-6 du Code de la route"),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00010",
+                    "NATINF 22627",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00011",
+                    " — Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00012",
+                    "R. 316-6 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -138,34 +195,90 @@ class RetroviseursVisionPage extends StatelessWidget {
 
           // Élément matériel — obligation + exception
           _ConditionCard(
-            title: "II — Élément matériel (obligation & exception)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+              "f00013",
+              "II — Élément matériel (obligation & exception)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Principe"),
-              const _Paragraph(
-                "Tout véhicule à moteur doit être équipé d’un ou plusieurs systèmes de vision indirecte "
-                "disposés de façon à permettre au conducteur de surveiller l’arrière du véhicule depuis son siège.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00014",
+                  "A) Principe",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00015",
+                      "Tout véhicule à moteur doit être équipé d’un ou plusieurs systèmes de vision indirecte ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00016",
+                      "disposés de façon à permettre au conducteur de surveiller l’arrière du véhicule depuis son siège.",
+                    ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Exception : "),
-                  _boldSpan(
-                    "véhicules et appareils agricoles n’ayant pas de cabine fermée",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00017",
+                      "Exception : ",
+                    ),
                   ),
-                  const TextSpan(text: " (non soumis à cette obligation)."),
+                  _boldSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00018",
+                      "véhicules et appareils agricoles n’ayant pas de cabine fermée",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00019",
+                      " (non soumis à cette obligation).",
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("B) Notion pratique"),
-              const _Paragraph(
-                "On raisonne en contrôle comme suit :\n"
-                "1) Le véhicule est-il concerné par l’obligation ?\n"
-                "2) Le nombre et l’emplacement des rétroviseurs requis sont-ils présents ?\n"
-                "3) L’ensemble permet-il réellement la surveillance arrière depuis le siège conducteur ?",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00020",
+                  "B) Notion pratique",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00021",
+                      "On raisonne en contrôle comme suit :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00022",
+                      "1) Le véhicule est-il concerné par l’obligation ?\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00023",
+                      "2) Le nombre et l’emplacement des rétroviseurs requis sont-ils présents ?\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00024",
+                      "3) L’ensemble permet-il réellement la surveillance arrière depuis le siège conducteur ?",
+                    ),
               ),
             ],
           ),
@@ -174,63 +287,162 @@ class RetroviseursVisionPage extends StatelessWidget {
 
           // Tableau pédagogique (sans widget custom en plus)
           _ConditionCard(
-            title: "III — Nombre & emplacement des miroirs (mémo)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+              "f00025",
+              "III — Nombre & emplacement des miroirs (mémo)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Repères issus du mémento (à utiliser comme aide en contrôle) :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00026",
+                  "Repères issus du mémento (à utiliser comme aide en contrôle) :",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Véhicule particulier"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00027",
+                  "Véhicule particulier",
+                ),
+              ),
               _BulletPoint(
-                text: "1 intérieur + 1 latéral (extérieur gauche).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00028",
+                  "1 intérieur + 1 latéral (extérieur gauche).",
+                ),
               ),
 
               SizedBox(height: 10),
               _SubTitle(
-                "Véhicule particulier (cas imposant un miroir droit)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00029",
+                  "Véhicule particulier (cas imposant un miroir droit)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "1 intérieur + 2 latéraux (extérieur gauche + extérieur droit).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00030",
+                  "1 intérieur + 2 latéraux (extérieur gauche + extérieur droit).",
+                ),
               ),
               _Paragraph(
-                "Exemples : carrosserie commerciale/break, conduite accompagnée, ou traction d’une remorque "
-                "dépassant la largeur ou masquant la visibilité.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00031",
+                      "Exemples : carrosserie commerciale/break, conduite accompagnée, ou traction d’une remorque ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00032",
+                      "dépassant la largeur ou masquant la visibilité.",
+                    ),
               ),
-
-              SizedBox(height: 12),
-              _SubTitle("Transport en commun de personnes"),
-              _BulletPoint(
-                text: "2 latéraux (extérieur gauche + extérieur droit).",
-              ),
-
-              SizedBox(height: 12),
-              _SubTitle("Transport de marchandises (PTAC > 3,5 t)"),
-              _BulletPoint(
-                text: "2 latéraux (extérieur gauche + extérieur droit).",
-              ),
-
-              SizedBox(height: 12),
-              _SubTitle("Tricycle à moteur avec cabine"),
-              _BulletPoint(text: "1 latéral (extérieur gauche)."),
-
-              SizedBox(height: 12),
-              _SubTitle("Quadricycle à moteur"),
-              _BulletPoint(text: "1 latéral (extérieur gauche)."),
 
               SizedBox(height: 12),
               _SubTitle(
-                "Motocyclette / cyclomoteur / tricycle sans cabine",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00033",
+                  "Transport en commun de personnes",
+                ),
               ),
-              _BulletPoint(text: "1 latéral (extérieur gauche)."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00034",
+                  "2 latéraux (extérieur gauche + extérieur droit).",
+                ),
+              ),
 
               SizedBox(height: 12),
-              _SubTitle("Véhicule/appareil agricole à cabine fermée"),
-              _BulletPoint(text: "1 latéral (extérieur gauche)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00035",
+                  "Transport de marchandises (PTAC > 3,5 t)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00036",
+                  "2 latéraux (extérieur gauche + extérieur droit).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00037",
+                  "Tricycle à moteur avec cabine",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00038",
+                  "1 latéral (extérieur gauche).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00039",
+                  "Quadricycle à moteur",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00040",
+                  "1 latéral (extérieur gauche).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00041",
+                  "Motocyclette / cyclomoteur / tricycle sans cabine",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00042",
+                  "1 latéral (extérieur gauche).",
+                ),
+              ),
+
+              SizedBox(height: 12),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00043",
+                  "Véhicule/appareil agricole à cabine fermée",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00044",
+                  "1 latéral (extérieur gauche).",
+                ),
+              ),
 
               SizedBox(height: 10),
               _NotaBox(
@@ -238,8 +450,16 @@ class RetroviseursVisionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ce tableau sert de mémo opérationnel. En cas de doute (véhicule modifié, usage particulier), "
-                        "vérifier l’efficacité réelle de la vision arrière et la conformité attendue.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                          "f00045",
+                          "Ce tableau sert de mémo opérationnel. En cas de doute (véhicule modifié, usage particulier), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                          "f00046",
+                          "vérifier l’efficacité réelle de la vision arrière et la conformité attendue.",
+                        ),
                   ),
                 ],
               ),
@@ -250,21 +470,36 @@ class RetroviseursVisionPage extends StatelessWidget {
 
           // Élément moral (pédagogique) : contravention => peu d'intention
           _ConditionCard(
-            title: "IV — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+              "f00047",
+              "IV — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ici on est sur une obligation d’équipement : la contravention est généralement caractérisée "
-                "par le simple constat du défaut d’équipement conforme, sans qu’il soit nécessaire de prouver une intention particulière.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00048",
+                      "Ici on est sur une obligation d’équipement : la contravention est généralement caractérisée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00049",
+                      "par le simple constat du défaut d’équipement conforme, sans qu’il soit nécessaire de prouver une intention particulière.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En pratique : ce qui compte, c’est la conformité de l’équipement et la capacité de surveillance arrière depuis le siège conducteur.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00050",
+                      "En pratique : ce qui compte, c’est la conformité de l’équipement et la capacité de surveillance arrière depuis le siège conducteur.",
+                    ),
                   ),
                 ],
               ),
@@ -275,34 +510,63 @@ class RetroviseursVisionPage extends StatelessWidget {
 
           // Répression (contravention + points utiles)
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+              "f00051",
+              "V — Répression",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _boldSpan("NATINF 22627"),
-                const TextSpan(
-                  text:
-                      " — Circulation d’un véhicule à moteur non régulièrement équipé de rétroviseur ou de système de vision indirecte. Base : ",
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00052",
+                    "NATINF 22627",
+                  ),
                 ),
-                _lawSpan("R. 316-6 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00053",
+                    " — Circulation d’un véhicule à moteur non régulièrement équipé de rétroviseur ou de système de vision indirecte. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00054",
+                    "R. 316-6 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text: "Contravention : amende forfaitaire (minimum 3e classe).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00055",
+                  "Contravention : amende forfaitaire (minimum 3e classe).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "D.I.A. / Dépistage stupéfiants : facultatifs (selon ton mémento).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00056",
+                  "D.I.A. / Dépistage stupéfiants : facultatifs (selon ton mémento).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Bon réflexe : photographier/constater l’absence ou la non-conformité (nombre/position) si nécessaire pour la procédure interne.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                      "f00057",
+                      "Bon réflexe : photographier/constater l’absence ou la non-conformité (nombre/position) si nécessaire pour la procédure interne.",
+                    ),
                   ),
                 ],
               ),
@@ -313,19 +577,29 @@ class RetroviseursVisionPage extends StatelessWidget {
 
           // Tentative/complicité (format demandé)
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+              "f00058",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Tentative : NON (non applicable : contravention d’équipement constatée).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                  "f00059",
+                  "Tentative : NON (non applicable : contravention d’équipement constatée).",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Complicité : NON (pas pertinente ici : contravention d’équipement).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/retroviseurs_vision_page.dart",
+                    "f00060",
+                    "Complicité : NON (pas pertinente ici : contravention d’équipement).",
+                  ),
                 ),
               ]),
             ],

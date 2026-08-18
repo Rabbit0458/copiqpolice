@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolationDomicileParticulierPage extends StatelessWidget {
   const PaViolationDomicileParticulierPage({super.key});
@@ -59,10 +60,18 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la personnalité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+            "f00002",
+            "Atteintes à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La violation de domicile commise par un particulier",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+              "f00003",
+              "La violation de domicile commise par un particulier",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’introduction dans le domicile d’autrui à l’aide de manœuvres, menaces, voies de fait ou contrainte, "
-                "hors les cas où la loi le permet, constitue une infraction.\n"
-                "Le maintien dans le domicile d’autrui à l’issue de cette introduction illégitime constitue également une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00005",
+                      "L’introduction dans le domicile d’autrui à l’aide de manœuvres, menaces, voies de fait ou contrainte, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00006",
+                      "hors les cas où la loi le permet, constitue une infraction.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00007",
+                      "Le maintien dans le domicile d’autrui à l’issue de cette introduction illégitime constitue également une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,23 +135,36 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                    "f00009",
+                    "Article 226-4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit et réprime la violation de domicile commise par un particulier "
-                      "(introduction ou maintien illicites).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                        "f00010",
+                        " : définit et réprime la violation de domicile commise par un particulier ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                        "f00011",
+                        "(introduction ou maintien illicites).",
+                      ),
                 ),
               ]),
             ],
@@ -132,71 +174,155 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un domicile"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00013",
+                  "A) Un domicile",
+                ),
+              ),
               _Paragraph(
-                "Le domicile s’entend largement : tout local d’habitation contenant des biens meubles appartenant à une personne, "
-                "qu’elle y habite ou non, résidence principale ou secondaire.\n"
-                "La condition essentielle est que le lieu protège l’intimité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00014",
+                      "Le domicile s’entend largement : tout local d’habitation contenant des biens meubles appartenant à une personne, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00015",
+                      "qu’elle y habite ou non, résidence principale ou secondaire.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00016",
+                      "La condition essentielle est que le lieu protège l’intimité.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La notion peut inclure des logements inoccupés contenant des meubles caractérisant une occupation effective "
-                "(table, chaises, lit, canapé, électroménager…). À l’inverse, quelques objets isolés (ex. bicyclette, carton de livres) "
-                "ne suffisent pas à caractériser un domicile.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00017",
+                      "La notion peut inclure des logements inoccupés contenant des meubles caractérisant une occupation effective ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00018",
+                      "(table, chaises, lit, canapé, électroménager…). À l’inverse, quelques objets isolés (ex. bicyclette, carton de livres) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00019",
+                      "ne suffisent pas à caractériser un domicile.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Exemples retenus comme domiciles"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00020",
+                  "Exemples retenus comme domiciles",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Appartement loué, maison de campagne/vacances, même inoccupés temporairement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00021",
+                  "Appartement loué, maison de campagne/vacances, même inoccupés temporairement.",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Dépendances proches constituant le prolongement : débarras, garage, balcon, terrasse… "
-                    "(ex. Cass. crim., 8 février 1994, n° 92-83.151).",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00022",
+                      "Dépendances proches constituant le prolongement : débarras, garage, balcon, terrasse… ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00023",
+                      "(ex. Cass. crim., 8 février 1994, n° 92-83.151).",
+                    ),
               ),
               _BulletPoint(
-                text: "Logement occupé sans titre mais pacifiquement.",
-              ),
-              _BulletPoint(text: "Chambre d’hôtel."),
-              _BulletPoint(
-                text:
-                    "Bureau / locaux professionnels (sauf zones ouvertes au public pendant les heures d’ouverture).",
-              ),
-              _BulletPoint(
-                text:
-                    "Véhicule aménagé pour l’habitation, caravane, roulotte, tente.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00024",
+                  "Logement occupé sans titre mais pacifiquement.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Navire habitable : yacht de plaisance, voilier, péniche.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00025",
+                  "Chambre d’hôtel.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00026",
+                  "Bureau / locaux professionnels (sauf zones ouvertes au public pendant les heures d’ouverture).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00027",
+                  "Véhicule aménagé pour l’habitation, caravane, roulotte, tente.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00028",
+                  "Navire habitable : yacht de plaisance, voilier, péniche.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Assimilations jurisprudentielles : box fermé non attenant (",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00029",
+                      "Assimilations jurisprudentielles : box fermé non attenant (",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 29 mars 1994",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00030",
+                      "Cass. crim., 29 mars 1994",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        "), garage en parking souterrain annexe au domicile (",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00031",
+                      "), garage en parking souterrain annexe au domicile (",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 23 janvier 2013",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00032",
+                      "Cass. crim., 23 janvier 2013",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -207,113 +333,297 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Ne sont pas considérés comme domiciles"),
-              _BulletPoint(
-                text: "Logement vide de meubles entre deux locations.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00033",
+                  "Ne sont pas considérés comme domiciles",
+                ),
               ),
-              _BulletPoint(text: "Immeuble en construction."),
               _BulletPoint(
-                text: "Appartement partiellement détruit / inhabitable.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00034",
+                  "Logement vide de meubles entre deux locations.",
+                ),
               ),
-              _BulletPoint(text: "Cour d’immeuble non close."),
               _BulletPoint(
-                text: "Local réservé à la vente (zone commerciale ouverte).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00035",
+                  "Immeuble en construction.",
+                ),
               ),
-              _BulletPoint(text: "Hutte de chasse sans aménagement."),
-              _BulletPoint(text: "Casier de consigne en gare."),
               _BulletPoint(
-                text:
-                    "Véhicule automobile non aménagé pour l’habitation (hors notion de domicile).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00036",
+                  "Appartement partiellement détruit / inhabitable.",
+                ),
               ),
-              _BulletPoint(text: "Bateau sans aménagement intérieur."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00037",
+                  "Cour d’immeuble non close.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00038",
+                  "Local réservé à la vente (zone commerciale ouverte).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00039",
+                  "Hutte de chasse sans aménagement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00040",
+                  "Casier de consigne en gare.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00041",
+                  "Véhicule automobile non aménagé pour l’habitation (hors notion de domicile).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00042",
+                  "Bateau sans aménagement intérieur.",
+                ),
+              ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "B) Une introduction par manœuvres, menaces, voies de fait ou contrainte",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00043",
+                  "B) Une introduction par manœuvres, menaces, voies de fait ou contrainte",
+                ),
               ),
               _Paragraph(
-                "L’entrée doit être non désirée (peu importe la présence de l’occupant). "
-                "Il ne s’agit pas d’une personne initialement invitée à entrer ou à séjourner.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00044",
+                      "L’entrée doit être non désirée (peu importe la présence de l’occupant). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00045",
+                      "Il ne s’agit pas d’une personne initialement invitée à entrer ou à séjourner.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("• Manœuvres"),
-              _Paragraph(
-                "Procédé astucieux ou ruse mis en œuvre pour favoriser l’introduction illicite.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00046",
+                  "• Manœuvres",
+                ),
               ),
-              _SubTitle("• Menaces"),
               _Paragraph(
-                "Paroles ou comportements intimidants d’une personne prête à accomplir des violences.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00047",
+                  "Procédé astucieux ou ruse mis en œuvre pour favoriser l’introduction illicite.",
+                ),
               ),
-              _SubTitle("• Voies de fait"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00048",
+                  "• Menaces",
+                ),
+              ),
               _Paragraph(
-                "Violences contre les biens ou les personnes (défoncer une porte, briser une vitre, forcer une serrure, "
-                "escalader, passer par une fenêtre ouverte, enlever une partie de toiture, etc.).",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00049",
+                  "Paroles ou comportements intimidants d’une personne prête à accomplir des violences.",
+                ),
+              ),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00050",
+                  "• Voies de fait",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00051",
+                      "Violences contre les biens ou les personnes (défoncer une porte, briser une vitre, forcer une serrure, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00052",
+                      "escalader, passer par une fenêtre ouverte, enlever une partie de toiture, etc.).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Exemple : la violence contre les choses peut consister en un forçage de serrure, un bris de vitre, "
-                        "ou un descellement de barreaux. Attention : certaines décisions ont écarté l’introduction illicite lorsque "
-                        "la porte du local n’était pas fermée à clé (appréciation au cas par cas).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                          "f00053",
+                          "Exemple : la violence contre les choses peut consister en un forçage de serrure, un bris de vitre, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                          "f00054",
+                          "ou un descellement de barreaux. Attention : certaines décisions ont écarté l’introduction illicite lorsque ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                          "f00055",
+                          "la porte du local n’était pas fermée à clé (appréciation au cas par cas).",
+                        ),
                   ),
                 ],
-                title: "POINT PRATIQUE",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00056",
+                  "POINT PRATIQUE",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("• Contrainte"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00057",
+                  "• Contrainte",
+                ),
+              ),
               _Paragraph(
-                "Toute situation où le consentement de l’occupant n’est pas libre.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00058",
+                  "Toute situation où le consentement de l’occupant n’est pas libre.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Le maintien à l’issue d’une entrée illégitime",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00059",
+                  "C) Le maintien à l’issue d’une entrée illégitime",
+                ),
               ),
               _Paragraph(
-                "Le maintien vise la durée : l’occupation se prolonge au-delà du moment de l’entrée. "
-                "Peuvent aussi être poursuivies des personnes arrivées ensuite et demeurant sur place en connaissance de cause.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00060",
+                      "Le maintien vise la durée : l’occupation se prolonge au-delà du moment de l’entrée. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00061",
+                      "Peuvent aussi être poursuivies des personnes arrivées ensuite et demeurant sur place en connaissance de cause.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La violation de domicile est une infraction continue : tant que perdure l’occupation illicite, "
-                "l’enquête de flagrance peut être possible, sans devoir établir de nouvelles manœuvres/menaces/voies de fait/contrainte.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00062",
+                      "La violation de domicile est une infraction continue : tant que perdure l’occupation illicite, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00063",
+                      "l’enquête de flagrance peut être possible, sans devoir établir de nouvelles manœuvres/menaces/voies de fait/contrainte.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Hors les cas où la loi le permet"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00064",
+                  "D) Hors les cas où la loi le permet",
+                ),
+              ),
               _Paragraph(
-                "Certaines introductions sont légitimes par ordre de la loi, notamment :\n"
-                "• appels au secours depuis l’intérieur (même si l’appel est fantaisiste)\n"
-                "• incendie ou inondation menaçant le domicile\n"
-                "• assistance à personne en péril (indices sérieux : odeur suspecte, absence anormale, appel sans réponse, etc.)",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00065",
+                      "Certaines introductions sont légitimes par ordre de la loi, notamment :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00066",
+                      "• appels au secours depuis l’intérieur (même si l’appel est fantaisiste)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00067",
+                      "• incendie ou inondation menaçant le domicile\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00068",
+                      "• assistance à personne en péril (indices sérieux : odeur suspecte, absence anormale, appel sans réponse, etc.)",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les logements vacants non meublés, ainsi que les logements proposés à la location (meublés ou non), "
-                        "ne sont pas des domiciles au sens de ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                          "f00069",
+                          "Les logements vacants non meublés, ainsi que les logements proposés à la location (meublés ou non), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                          "f00070",
+                          "ne sont pas des domiciles au sens de ",
+                        ),
                   ),
                   TextSpan(
-                    text: "l’article 226-4 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00071",
+                      "l’article 226-4 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        ". L’occupation frauduleuse de tels locaux relève des infractions prévues aux ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00072",
+                      ". L’occupation frauduleuse de tels locaux relève des infractions prévues aux ",
+                    ),
                   ),
                   TextSpan(
-                    text: "articles 315-1 et 315-2 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00073",
+                      "articles 315-1 et 315-2 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -330,17 +640,28 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+              "f00074",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Volonté de s’introduire ou de se maintenir dans le domicile d’autrui à son insu ou contre son gré.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00075",
+                  "Volonté de s’introduire ou de se maintenir dans le domicile d’autrui à son insu ou contre son gré.",
+                ),
               ),
               _BulletPoint(
-                text: "Conscience d’agir en dehors des cas prévus par la loi.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00076",
+                  "Conscience d’agir en dehors des cas prévus par la loi.",
+                ),
               ),
             ],
           ),
@@ -349,13 +670,21 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+              "f00077",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00078",
+                  "Aucune circonstance aggravante prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -364,79 +693,152 @@ class PaViolationDomicileParticulierPage extends StatelessWidget {
 
           // Répression + tentative/complicité + infraction distincte
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+              "f00079",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00080",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                    "f00081",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                    "f00082",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                    "f00083",
+                    "article 226-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00084",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI, prévue par "),
                 TextSpan(
-                  text: "l’article 226-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                    "f00085",
+                    "Tentative : OUI, prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                    "f00086",
+                    "l’article 226-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Complicité : OUI (règles générales applicables).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00087",
+                  "Complicité : OUI (règles générales applicables).",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "Infraction distincte : propagande / publicité en faveur du squat",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00088",
+                  "Infraction distincte : propagande / publicité en faveur du squat",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-4-2-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                    "f00089",
+                    "Article 226-4-2-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : incrimine la propagande ou publicité (quel qu’en soit le mode) en faveur de méthodes "
-                      "visant à faciliter ou inciter la commission du délit de violation de domicile et/ou l’occupation frauduleuse.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                        "f00090",
+                        " : incrimine la propagande ou publicité (quel qu’en soit le mode) en faveur de méthodes ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                        "f00091",
+                        "visant à faciliter ou inciter la commission du délit de violation de domicile et/ou l’occupation frauduleuse.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Ce délit vise notamment les contenus diffusés en ligne assimilables à des « modes d’emploi du squat » "
-                "(techniques pour forcer une serrure, conseils pour faciliter l’installation ou la pérennisation d’un squat).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00092",
+                      "Ce délit vise notamment les contenus diffusés en ligne assimilables à des « modes d’emploi du squat » ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                      "f00093",
+                      "(techniques pour forcer une serrure, conseils pour faciliter l’installation ou la pérennisation d’un squat).",
+                    ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Peine : 3 750 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                  "f00094",
+                  "Peine : 3 750 € d’amende.",
+                ),
+              ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "PRESSE",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Lorsque l’infraction est commise par voie de presse écrite ou audiovisuelle, "
-                        "les règles spéciales de ces matières s’appliquent (responsabilités : éditeur, auteur, imprimeur…).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                          "f00095",
+                          "Lorsque l’infraction est commise par voie de presse écrite ou audiovisuelle, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart",
+                          "f00096",
+                          "les règles spéciales de ces matières s’appliquent (responsabilités : éditeur, auteur, imprimeur…).",
+                        ),
                   ),
                 ],
               ),

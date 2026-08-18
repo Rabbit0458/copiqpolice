@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-
 // Pages de destination
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/individuelles/liberte_aller_venir_detail_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/individuelles/surete_liberte_individuelle_page.dart';
@@ -9,6 +8,7 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/liber
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/individuelles/respect_personne_legislation_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/libert%C3%A9s_publiques/individuelles/cnil_protection_donnees_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/quiz_scolarite_gpx/gpx_quiz_libertes_publiques_individuelles_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Petite fonction d’ouverture avec fondu
 void _open(BuildContext context, Widget page, String tag) {
@@ -35,7 +35,9 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -46,10 +48,18 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Libertés individuelles & vie privée',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+            "f00002",
+            'Libertés individuelles & vie privée',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -63,8 +73,16 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
         children: [
           _ModuleCard(
             tag: 'liberte_aller_venir_detail',
-            title: 'La liberté d’aller et venir',
-            subtitle: 'Définition, valeur constitutionnelle et restrictions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00003",
+              'La liberté d’aller et venir',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00004",
+              'Définition, valeur constitutionnelle et restrictions.',
+            ),
             imagePath: 'assets/images/liberte_aller_venir_detail.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -79,8 +97,16 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
           const SizedBox(height: 14),
           _ModuleCard(
             tag: 'surete_liberte_individuelle',
-            title: 'La sûreté ou liberté individuelle',
-            subtitle: 'Arrestations, détentions, garanties procédurales.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00005",
+              'La sûreté ou liberté individuelle',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00006",
+              'Arrestations, détentions, garanties procédurales.',
+            ),
             imagePath: 'assets/images/surete_liberte_individuelle.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -95,8 +121,16 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
           const SizedBox(height: 14),
           _ModuleCard(
             tag: 'droit_vie_privee',
-            title: 'Le droit au respect de la vie privée',
-            subtitle: 'Domicile, correspondances, image, données personnelles.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00007",
+              'Le droit au respect de la vie privée',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00008",
+              'Domicile, correspondances, image, données personnelles.',
+            ),
             imagePath: 'assets/images/droit_vie_privee.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -107,8 +141,16 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
           const SizedBox(height: 14),
           _ModuleCard(
             tag: 'respect_personne_legislation',
-            title: 'Le respect de la personne\n(législation applicable)',
-            subtitle: 'Intégrité physique, dignité, traitement des personnes.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00009",
+              'Le respect de la personne\n(législation applicable)',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00010",
+              'Intégrité physique, dignité, traitement des personnes.',
+            ),
             imagePath: 'assets/images/respect_personne_legislation.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -123,8 +165,16 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
           const SizedBox(height: 14),
           _ModuleCard(
             tag: 'cnil',
-            title: 'La CNIL et la protection des données',
-            subtitle: 'Rôle, pouvoirs de contrôle et sanctions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00011",
+              'La CNIL et la protection des données',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00012",
+              'Rôle, pouvoirs de contrôle et sanctions.',
+            ),
             imagePath: 'assets/images/cnil.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -136,9 +186,16 @@ class PaLibertesIndividuellesViePriveePage extends StatelessWidget {
           const SizedBox(height: 22),
           _ModuleCard(
             tag: 'quiz_libertes',
-            title: 'Quiz — Individuelles',
-            subtitle:
-                'Testez votre maîtrise de la liberté individuelle / sûreté et de la liberté d’aller et venir.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00013",
+              'Quiz — Individuelles',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+              "f00014",
+              'Testez votre maîtrise de la liberté individuelle / sûreté et de la liberté d’aller et venir.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -295,7 +352,11 @@ class _RoundCTA extends StatelessWidget {
             ),
             const SizedBox(width: 6),
             Text(
-              'Découvrir',
+              ScolariteText.value(
+                "lib/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart",
+                "f00017",
+                'Découvrir',
+              ),
               style: GoogleFonts.fustat(
                 color: Colors.white,
                 fontWeight: FontWeight.w800,

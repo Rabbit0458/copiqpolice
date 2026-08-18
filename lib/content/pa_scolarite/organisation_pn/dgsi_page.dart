@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DgsiPage extends StatelessWidget {
   const DgsiPage({super.key});
@@ -56,10 +57,18 @@ class DgsiPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "D.G.S.I.",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+            "f00002",
+            "D.G.S.I.",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class DgsiPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "II — La Direction générale de la Sécurité intérieure",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+              "f00003",
+              "II — La Direction générale de la Sécurité intérieure",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,24 +99,31 @@ class DgsiPage extends StatelessWidget {
 
           // Définition (avec sigle expliqué)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(text: "La "),
                 TextSpan(
-                  text:
-                      "D.G.S.I. — Direction générale de la Sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                    "f00005",
+                    "D.G.S.I. — Direction générale de la Sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " est chargée, sur l’ensemble du territoire de la République, de rechercher, de centraliser et d’exploiter le renseignement intéressant la sécurité nationale ou les intérêts fondamentaux de la Nation.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                    "f00006",
+                    " est chargée, sur l’ensemble du territoire de la République, de rechercher, de centraliser et d’exploiter le renseignement intéressant la sécurité nationale ou les intérêts fondamentaux de la Nation.",
+                  ),
                 ),
               ]),
             ],
@@ -113,22 +133,50 @@ class DgsiPage extends StatelessWidget {
 
           // Organisation
           _ConditionCard(
-            title: "Organisation (direction et services)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+              "f00007",
+              "Organisation (direction et services)",
+            ),
             cardColor: cardOrg,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le directeur général de la Sécurité intérieure dirige et coordonne les activités des directions et services suivants :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00008",
+                  "Le directeur général de la Sécurité intérieure dirige et coordonne les activités des directions et services suivants :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Direction du renseignement et des opérations",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00009",
+                  "Direction du renseignement et des opérations",
+                ),
               ),
-              _BulletPoint(text: "Direction technique"),
-              _BulletPoint(text: "Service de l’administration générale"),
               _BulletPoint(
-                text: "Inspection générale de la Sécurité intérieure",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00010",
+                  "Direction technique",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00011",
+                  "Service de l’administration générale",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00012",
+                  "Inspection générale de la Sécurité intérieure",
+                ),
               ),
             ],
           ),
@@ -137,26 +185,42 @@ class DgsiPage extends StatelessWidget {
 
           // Missions générales
           _ConditionCard(
-            title: "Missions générales",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+              "f00013",
+              "Missions générales",
+            ),
             cardColor: cardMissions,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Rechercher, centraliser et exploiter le renseignement intéressant la sécurité nationale ou les intérêts fondamentaux de la Nation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00014",
+                  "Rechercher, centraliser et exploiter le renseignement intéressant la sécurité nationale ou les intérêts fondamentaux de la Nation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Concourir, dans ses domaines de compétence, à l’exercice des missions de police judiciaire sur l’ensemble du territoire.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00015",
+                  "Concourir, dans ses domaines de compétence, à l’exercice des missions de police judiciaire sur l’ensemble du territoire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Assurer la prévention et concourir à la répression de toute forme d’ingérence étrangère.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00016",
+                  "Assurer la prévention et concourir à la répression de toute forme d’ingérence étrangère.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Participer à la surveillance des individus et groupes d’inspiration radicale susceptibles de recourir à la violence et de porter atteinte à la sécurité nationale.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00017",
+                  "Participer à la surveillance des individus et groupes d’inspiration radicale susceptibles de recourir à la violence et de porter atteinte à la sécurité nationale.",
+                ),
               ),
             ],
           ),
@@ -165,25 +229,43 @@ class DgsiPage extends StatelessWidget {
 
           // Prévention et répression — domaines
           _ConditionCard(
-            title: "Prévention et répression : domaines d’action",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+              "f00018",
+              "Prévention et répression : domaines d’action",
+            ),
             cardColor: cardDomaines,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Menaces terroristes et atteintes aux institutions",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00019",
+                  "A) Menaces terroristes et atteintes aux institutions",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Actes de terrorisme ou portant atteinte à la sûreté de l’État, à l’intégrité du territoire ou à la permanence des institutions de la République.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00020",
+                  "Actes de terrorisme ou portant atteinte à la sûreté de l’État, à l’intégrité du territoire ou à la permanence des institutions de la République.",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: "Chef de file",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00021",
+                  "Chef de file",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La D.G.S.I. est le chef de file des services en charge de la lutte contre les menaces terroristes visant le territoire national : elle impulse, anime, pilote et coordonne l’action menée afin de détecter et d’entraver ces menaces.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                      "f00022",
+                      "La D.G.S.I. est le chef de file des services en charge de la lutte contre les menaces terroristes visant le territoire national : elle impulse, anime, pilote et coordonne l’action menée afin de détecter et d’entraver ces menaces.",
+                    ),
                   ),
                 ],
               ),
@@ -191,39 +273,81 @@ class DgsiPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Secret de la défense nationale et protection des intérêts fondamentaux",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00023",
+                  "B) Secret de la défense nationale et protection des intérêts fondamentaux",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Actes portant atteinte au secret de la défense nationale.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00024",
+                  "Actes portant atteinte au secret de la défense nationale.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Actes portant atteinte au potentiel économique, industriel ou scientifique du pays.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00025",
+                  "Actes portant atteinte au potentiel économique, industriel ou scientifique du pays.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Armes de destruction massive"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00026",
+                  "C) Armes de destruction massive",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Activités liées à l’acquisition ou à la fabrication d’armes de destruction massive.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00027",
+                  "Activités liées à l’acquisition ou à la fabrication d’armes de destruction massive.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Criminalité numérique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00028",
+                  "D) Criminalité numérique",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Criminalité liée aux technologies de l’information et de la communication.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00029",
+                  "Criminalité liée aux technologies de l’information et de la communication.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("E) Criminalité organisée internationale"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00030",
+                  "E) Criminalité organisée internationale",
+                ),
+              ),
               _Paragraph(
-                "La Direction générale de la Sécurité intérieure concourt également à la surveillance des activités menées par des organisations criminelles internationales "
-                "lorsqu’elles sont susceptibles d’affecter la sécurité nationale.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                      "f00031",
+                      "La Direction générale de la Sécurité intérieure concourt également à la surveillance des activités menées par des organisations criminelles internationales ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                      "f00032",
+                      "lorsqu’elles sont susceptibles d’affecter la sécurité nationale.",
+                    ),
               ),
             ],
           ),
@@ -232,13 +356,21 @@ class DgsiPage extends StatelessWidget {
 
           // Techniques / communications
           _ConditionCard(
-            title: "Surveillance technique",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+              "f00033",
+              "Surveillance technique",
+            ),
             cardColor: cardTech,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour les seuls besoins des missions précitées, la Direction générale de la Sécurité intérieure contribue à la surveillance des communications électroniques et radioélectriques.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                  "f00034",
+                  "Pour les seuls besoins des missions précitées, la Direction générale de la Sécurité intérieure contribue à la surveillance des communications électroniques et radioélectriques.",
+                ),
               ),
             ],
           ),
@@ -247,22 +379,30 @@ class DgsiPage extends StatelessWidget {
 
           // Transmission des renseignements
           _ConditionCard(
-            title: "Transmission des renseignements",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+              "f00035",
+              "Transmission des renseignements",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les services concourant à la sécurité nationale transmettent sans délai les renseignements se rapportant aux activités de la ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                    "f00036",
+                    "Les services concourant à la sécurité nationale transmettent sans délai les renseignements se rapportant aux activités de la ",
+                  ),
                 ),
                 TextSpan(
-                  text: "D.G.S.I.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/dgsi_page.dart",
+                    "f00037",
+                    "D.G.S.I.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),

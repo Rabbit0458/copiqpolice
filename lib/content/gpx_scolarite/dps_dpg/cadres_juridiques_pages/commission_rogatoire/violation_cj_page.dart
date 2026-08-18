@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ViolationControleJudiciairePage extends StatelessWidget {
   const ViolationControleJudiciairePage({super.key});
@@ -37,10 +38,18 @@ class ViolationControleJudiciairePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Violation du contrôle judiciaire',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+            "f00002",
+            'Violation du contrôle judiciaire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -56,7 +65,11 @@ class ViolationControleJudiciairePage extends StatelessWidget {
           // TITRE PRINCIPAL
           // ================================================================
           Text(
-            '3.9 — Violation des obligations du contrôle judiciaire',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+              "f00003",
+              '3.9 — Violation des obligations du contrôle judiciaire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -66,9 +79,21 @@ class ViolationControleJudiciairePage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Retenue d’une personne placée sous contrôle judiciaire (ou sous assignation '
-            'à résidence avec surveillance électronique) en cas de suspicion de '
-            'violation de ses obligations, et droits reconnus durant cette mesure.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00004",
+                  'Retenue d’une personne placée sous contrôle judiciaire (ou sous assignation ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00005",
+                  'à résidence avec surveillance électronique) en cas de suspicion de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00006",
+                  'violation de ses obligations, et droits reconnus durant cette mesure.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -78,16 +103,36 @@ class ViolationControleJudiciairePage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'La retenue pour violation des obligations du contrôle judiciaire est une '
-                'mesure spécifique, distincte de la garde à vue, mais qui reprend une '
-                'grande partie des droits reconnus au gardé à vue.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00007",
+                  'La retenue pour violation des obligations du contrôle judiciaire est une ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00008",
+                  'mesure spécifique, distincte de la garde à vue, mais qui reprend une ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00009",
+                  'grande partie des droits reconnus au gardé à vue.',
+                ),
           ),
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'La mesure est décidée et contrôlée par le juge d’instruction, qui est '
-                'immédiatement informé par l’officier de police judiciaire.',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00010",
+                  'La mesure est décidée et contrôlée par le juge d’instruction, qui est ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00011",
+                  'immédiatement informé par l’officier de police judiciaire.',
+                ),
           ),
           const SizedBox(height: 20),
 
@@ -95,187 +140,466 @@ class ViolationControleJudiciairePage extends StatelessWidget {
           // CARTE PRINCIPALE
           // ================================================================
           _ConditionCard(
-            title: '3.9 — Retenue pour violation du contrôle judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+              "f00012",
+              '3.9 — Retenue pour violation du contrôle judiciaire',
+            ),
             cardColor: cardBlue,
             accent: cardBlueAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
               _Paragraph.rich([
-                const TextSpan(text: 'Dans le cadre du contrôle judiciaire, '),
                 TextSpan(
-                  text: 'l’article 141-4 du Code de procédure pénale',
-                  style: lawStyle,
-                ),
-                const TextSpan(
-                  text:
-                      ' prévoit que les services de police et les unités de gendarmerie '
-                      'peuvent, d’office ou sur instruction du juge d’instruction, '
-                      'appréhender toute personne placée sous contrôle judiciaire à '
-                      'l’encontre de laquelle il existe une ou plusieurs raisons plausibles '
-                      'de soupçonner qu’elle a manqué à certaines obligations prévues à ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00013",
+                    'Dans le cadre du contrôle judiciaire, ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 138 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00014",
+                    'l’article 141-4 du Code de procédure pénale',
+                  ),
                   style: lawStyle,
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' (notamment les 1°, 2°, 3°, 8°, 9°, 14°, 17° et 17° bis).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                        "f00015",
+                        ' prévoit que les services de police et les unités de gendarmerie ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                        "f00016",
+                        'peuvent, d’office ou sur instruction du juge d’instruction, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                        "f00017",
+                        'appréhender toute personne placée sous contrôle judiciaire à ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                        "f00018",
+                        'l’encontre de laquelle il existe une ou plusieurs raisons plausibles ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                        "f00019",
+                        'de soupçonner qu’elle a manqué à certaines obligations prévues à ',
+                      ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00020",
+                    'l’article 138 du Code de procédure pénale',
+                  ),
+                  style: lawStyle,
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00021",
+                    ' (notamment les 1°, 2°, 3°, 8°, 9°, 14°, 17° et 17° bis).',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Sur décision d’un officier de police judiciaire, cette personne peut alors '
-                'être retenue pour une durée maximale de vingt-quatre heures dans un '
-                'local de police ou de gendarmerie afin que sa situation soit vérifiée et '
-                'qu’elle soit entendue sur la violation de ses obligations.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00022",
+                      'Sur décision d’un officier de police judiciaire, cette personne peut alors ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00023",
+                      'être retenue pour une durée maximale de vingt-quatre heures dans un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00024",
+                      'local de police ou de gendarmerie afin que sa situation soit vérifiée et ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00025",
+                      'qu’elle soit entendue sur la violation de ses obligations.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Dès le début de la mesure, l’officier de police judiciaire informe sans '
-                'délai le juge d’instruction.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00026",
+                      'Dès le début de la mesure, l’officier de police judiciaire informe sans ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00027",
+                      'délai le juge d’instruction.',
+                    ),
               ),
               const SizedBox(height: 14),
 
-              const _SubTitle('Information immédiate de la personne retenue'),
-              const _Paragraph(
-                'La personne retenue est immédiatement informée, par l’officier de police '
-                'judiciaire ou, sous son contrôle, par un agent de police judiciaire, dans '
-                'une langue qu’elle comprend, de la durée maximale de la mesure, de la '
-                'nature des obligations qu’elle est soupçonnée d’avoir violées, ainsi que '
-                'des droits dont elle bénéficie.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00028",
+                  'Information immédiate de la personne retenue',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00029",
+                      'La personne retenue est immédiatement informée, par l’officier de police ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00030",
+                      'judiciaire ou, sous son contrôle, par un agent de police judiciaire, dans ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00031",
+                      'une langue qu’elle comprend, de la durée maximale de la mesure, de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00032",
+                      'nature des obligations qu’elle est soupçonnée d’avoir violées, ainsi que ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00033",
+                      'des droits dont elle bénéficie.',
+                    ),
               ),
               const SizedBox(height: 10),
 
-              const _SubTitle('Droits reconnus pendant la retenue'),
-              const _BulletPoint(
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00034",
+                  'Droits reconnus pendant la retenue',
+                ),
+              ),
+              _BulletPoint(
                 text:
-                    'Droit de faire prévenir un proche et son employeur ainsi que, si elle '
-                    'est de nationalité étrangère, les autorités consulaires de l’État dont '
-                    'elle est ressortissante, conformément à ',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00035",
+                      'Droit de faire prévenir un proche et son employeur ainsi que, si elle ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00036",
+                      'est de nationalité étrangère, les autorités consulaires de l’État dont ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00037",
+                      'elle est ressortissante, conformément à ',
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'l’article 63-2 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00038",
+                    'l’article 63-2 du Code de procédure pénale',
+                  ),
                   style: lawStyle,
                 ),
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 4),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Par le renvoi à l’article 63-2 du Code de procédure pénale, la '
-                        'personne retenue peut demander à faire prévenir, par téléphone, la '
-                        'personne avec laquelle elle vit habituellement ou l’un de ses '
-                        'parents en ligne directe, ou l’un de ses frères et sœurs, ou '
-                        'toute autre personne qu’elle désigne, ainsi que son employeur et, '
-                        'le cas échéant, les autorités consulaires de son pays.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                          "f00039",
+                          'Par le renvoi à l’article 63-2 du Code de procédure pénale, la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                          "f00040",
+                          'personne retenue peut demander à faire prévenir, par téléphone, la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                          "f00041",
+                          'personne avec laquelle elle vit habituellement ou l’un de ses ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                          "f00042",
+                          'parents en ligne directe, ou l’un de ses frères et sœurs, ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                          "f00043",
+                          'toute autre personne qu’elle désigne, ainsi que son employeur et, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                          "f00044",
+                          'le cas échéant, les autorités consulaires de son pays.',
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Droit d’être examinée par un médecin, conformément à l’article 63-3 du '
-                    'Code de procédure pénale.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00045",
+                      'Droit d’être examinée par un médecin, conformément à l’article 63-3 du ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00046",
+                      'Code de procédure pénale.',
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Article 63-3 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00047",
+                    'Article 63-3 du Code de procédure pénale',
+                  ),
                   style: lawStyle,
                 ),
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 4),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Droit d’être assistée par un avocat, conformément aux articles 63-3-1 à '
-                    '63-4-3 du Code de procédure pénale (droit à l’entretien confidentiel, '
-                    'présence lors des auditions, etc.).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00048",
+                      'Droit d’être assistée par un avocat, conformément aux articles 63-3-1 à ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00049",
+                      '63-4-3 du Code de procédure pénale (droit à l’entretien confidentiel, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00050",
+                      'présence lors des auditions, etc.).',
+                    ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: 'Articles 63-3-1 à 63-4-3 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00051",
+                    'Articles 63-3-1 à 63-4-3 du Code de procédure pénale',
+                  ),
                   style: lawStyle,
                 ),
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 4),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Droit d’être assistée par un interprète, s’il y a lieu (langue qu’elle '
-                    'comprend).',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00052",
+                      'Droit d’être assistée par un interprète, s’il y a lieu (langue qu’elle ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00053",
+                      'comprend).',
+                    ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
-                    'Droit, lors des auditions, après avoir décliné son identité, de faire '
-                    'des déclarations, de répondre aux questions qui lui sont posées ou de '
-                    'se taire.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00054",
+                      'Droit, lors des auditions, après avoir décliné son identité, de faire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00055",
+                      'des déclarations, de répondre aux questions qui lui sont posées ou de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00056",
+                      'se taire.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Les pouvoirs habituellement conférés au procureur de la République par ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00057",
+                    'Les pouvoirs habituellement conférés au procureur de la République par ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'les articles 63-2 et 63-3 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00058",
+                    'les articles 63-2 et 63-3 du Code de procédure pénale',
+                  ),
                   style: lawStyle,
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' sont exercés, dans le cadre de cette retenue, par le juge '
-                      'd’instruction.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                        "f00059",
+                        ' sont exercés, dans le cadre de cette retenue, par le juge ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                        "f00060",
+                        'd’instruction.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle('Conditions d’exécution de la retenue'),
-              const _Paragraph(
-                'La retenue doit s’exécuter dans des conditions assurant le respect de la '
-                'dignité de la personne. Seules peuvent être imposées les mesures de '
-                'sécurité strictement nécessaires.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00061",
+                  'Conditions d’exécution de la retenue',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00062",
+                      'La retenue doit s’exécuter dans des conditions assurant le respect de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00063",
+                      'dignité de la personne. Seules peuvent être imposées les mesures de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00064",
+                      'sécurité strictement nécessaires.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'La personne retenue ne peut pas faire l’objet d’investigations corporelles '
-                'internes au cours de la retenue par le service de police ou par l’unité '
-                'de gendarmerie.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00065",
+                      'La personne retenue ne peut pas faire l’objet d’investigations corporelles ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00066",
+                      'internes au cours de la retenue par le service de police ou par l’unité ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00067",
+                      'de gendarmerie.',
+                    ),
               ),
               const SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Un procès-verbal récapitulatif de la mesure est dressé conformément à ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00068",
+                    'Un procès-verbal récapitulatif de la mesure est dressé conformément à ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'l’article 64 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                    "f00069",
+                    'l’article 64 du Code de procédure pénale',
+                  ),
                   style: lawStyle,
                 ),
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle('Issue de la mesure'),
-              const _Paragraph(
-                'À l’issue de la retenue, le juge d’instruction peut ordonner que la '
-                'personne soit conduite devant lui, notamment pour envisager la '
-                'révocation du contrôle judiciaire, le cas échéant en saisissant le juge '
-                'des libertés et de la détention.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                  "f00070",
+                  'Issue de la mesure',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00071",
+                      'À l’issue de la retenue, le juge d’instruction peut ordonner que la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00072",
+                      'personne soit conduite devant lui, notamment pour envisager la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00073",
+                      'révocation du contrôle judiciaire, le cas échéant en saisissant le juge ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00074",
+                      'des libertés et de la détention.',
+                    ),
               ),
               const SizedBox(height: 6),
-              const _Paragraph(
-                'Le juge d’instruction peut également demander à un officier ou à un agent '
-                'de police judiciaire d’aviser la personne qu’elle est convoquée devant '
-                'lui à une date ultérieure.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00075",
+                      'Le juge d’instruction peut également demander à un officier ou à un agent ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00076",
+                      'de police judiciaire d’aviser la personne qu’elle est convoquée devant ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00077",
+                      'lui à une date ultérieure.',
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                'Les dispositions de cet article sont également applicables aux personnes '
-                'placées sous assignation à résidence avec surveillance électronique.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00078",
+                      'Les dispositions de cet article sont également applicables aux personnes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart",
+                      "f00079",
+                      'placées sous assignation à résidence avec surveillance électronique.',
+                    ),
               ),
             ],
           ),
@@ -532,9 +856,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

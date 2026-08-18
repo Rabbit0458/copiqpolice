@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
     extends StatelessWidget {
-  const PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage({super.key});
+  const PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage({
+    super.key,
+  });
 
   static const String routeName =
       '/pa/dps_dpg/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions';
@@ -60,10 +63,18 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Violation d’ordonnances JAF",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+            "f00002",
+            "Violation d’ordonnances JAF",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +89,11 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le non-respect des obligations ou interdictions imposées par une ordonnance de protection",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+              "f00003",
+              "Le non-respect des obligations ou interdictions imposées par une ordonnance de protection",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,57 +105,86 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le fait, pour une personne faisant l’objet d’une ou plusieurs obligations ou interdictions imposées dans une ordonnance de protection rendue en application des ",
-                ),
-                TextSpan(
-                  text: "articles 515-9 ou 515-13 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00005",
+                    "Le fait, pour une personne faisant l’objet d’une ou plusieurs obligations ou interdictions imposées dans une ordonnance de protection rendue en application des ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ", ou dans une ordonnance provisoire de protection immédiate rendue en application de ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00006",
+                    "articles 515-9 ou 515-13 du code civil",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "l’article 515-13-1 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00007",
+                    ", ou dans une ordonnance provisoire de protection immédiate rendue en application de ",
                   ),
                 ),
                 TextSpan(
-                  text: ", de ne pas s’y conformer, constitue une infraction.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00008",
+                    "l’article 515-13-1 du code civil",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00009",
+                    ", de ne pas s’y conformer, constitue une infraction.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Extension UE",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00010",
+                  "Extension UE",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les mêmes peines s’appliquent à la violation d’une mesure de protection civile prononcée dans un autre État membre de l’Union européenne, reconnue et exécutoire en France en application du ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00011",
+                      "Les mêmes peines s’appliquent à la violation d’une mesure de protection civile prononcée dans un autre État membre de l’Union européenne, reconnue et exécutoire en France en application du ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "règlement (UE) n° 606/2013 du Parlement européen et du Conseil du 12 juin 2013",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00012",
+                      "règlement (UE) n° 606/2013 du Parlement européen et du Conseil du 12 juin 2013",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " relatif à la reconnaissance mutuelle des mesures de protection en matière civile.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00013",
+                      " relatif à la reconnaissance mutuelle des mesures de protection en matière civile.",
+                    ),
                   ),
                 ],
               ),
@@ -151,22 +195,30 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
 
           // ✅ Élément légal (en haut)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+              "f00014",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 227-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00015",
+                    "Article 227-4-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le non-respect des obligations ou interdictions imposées par une ordonnance de protection.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00016",
+                    " : définit et réprime le non-respect des obligations ou interdictions imposées par une ordonnance de protection.",
+                  ),
                 ),
               ]),
             ],
@@ -176,128 +228,195 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+              "f00017",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les mesures de protection des victimes de violences sont développées aux ",
-                ),
-                TextSpan(
-                  text: "articles 515-9 à 515-13 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00018",
+                    "Les mesures de protection des victimes de violences sont développées aux ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Elles renforcent les pouvoirs du juge aux affaires familiales afin d’éloigner l’auteur des violences du cadre de vie de la victime, y compris hors mariage.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00019",
+                    "articles 515-9 à 515-13 du code civil",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00020",
+                    ". Elles renforcent les pouvoirs du juge aux affaires familiales afin d’éloigner l’auteur des violences du cadre de vie de la victime, y compris hors mariage.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
               _SubTitle(
-                "A) Une personne soumise à des obligations / interdictions",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00021",
+                  "A) Une personne soumise à des obligations / interdictions",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 515-9 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00022",
+                    "Article 515-9 du code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque des violences au sein du couple (même sans cohabitation) ou commises par un ex-conjoint/ex-partenaire/ex-concubin mettent en danger la victime ou ses enfants, le JAF peut délivrer en urgence une ordonnance de protection.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00023",
+                    " : lorsque des violences au sein du couple (même sans cohabitation) ou commises par un ex-conjoint/ex-partenaire/ex-concubin mettent en danger la victime ou ses enfants, le JAF peut délivrer en urgence une ordonnance de protection.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’ordonnance de protection est délivrée dans un délai maximal de six jours à compter de la fixation de la date d’audience, si le juge estime les violences vraisemblables et le danger établi. Elle n’est pas conditionnée à un dépôt de plainte pénale.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00024",
+                      "L’ordonnance de protection est délivrée dans un délai maximal de six jours à compter de la fixation de la date d’audience, si le juge estime les violences vraisemblables et le danger établi. Elle n’est pas conditionnée à un dépôt de plainte pénale.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Des mesures précises fixées par le juge"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00025",
+                  "B) Des mesures précises fixées par le juge",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Pour une durée maximale de 12 mois (prolongeable sous conditions), le juge peut ordonner des mesures conformément à ",
-                ),
-                TextSpan(
-                  text: "l’article 515-12 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00026",
+                    "Pour une durée maximale de 12 mois (prolongeable sous conditions), le juge peut ordonner des mesures conformément à ",
                   ),
                 ),
-                TextSpan(text: ", notamment celles prévues par "),
                 TextSpan(
-                  text: "l’article 515-11 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00027",
+                    "l’article 515-12 du code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00028",
+                    ", notamment celles prévues par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00029",
+                    "l’article 515-11 du code civil",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 10),
 
               _BulletPoint(
-                text:
-                    "Interdiction de recevoir/rencontrer certaines personnes désignées, ou d’entrer en relation avec elles, de quelque façon que ce soit.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00030",
+                  "Interdiction de recevoir/rencontrer certaines personnes désignées, ou d’entrer en relation avec elles, de quelque façon que ce soit.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Interdiction de se rendre dans certains lieux désignés où se trouve habituellement la partie demanderesse.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00031",
+                  "Interdiction de se rendre dans certains lieux désignés où se trouve habituellement la partie demanderesse.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Interdiction de détenir ou porter une arme ; remise des armes.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00032",
+                  "Interdiction de détenir ou porter une arme ; remise des armes.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Proposition de prise en charge sanitaire/sociale/psychologique ou stage de responsabilisation (information du procureur en cas de refus).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00033",
+                  "Proposition de prise en charge sanitaire/sociale/psychologique ou stage de responsabilisation (information du procureur en cas de refus).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mesures sur la résidence séparée, la jouissance du logement, et la prise en charge des frais afférents.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00034",
+                  "Mesures sur la résidence séparée, la jouissance du logement, et la prise en charge des frais afférents.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Attribution possible de la jouissance de l’animal de compagnie au sein du foyer.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00035",
+                  "Attribution possible de la jouissance de l’animal de compagnie au sein du foyer.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mesures sur l’autorité parentale, droit de visite/hébergement et contributions (charges du mariage, aide matérielle, entretien/éducation des enfants).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00036",
+                  "Mesures sur l’autorité parentale, droit de visite/hébergement et contributions (charges du mariage, aide matérielle, entretien/éducation des enfants).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dissimulation du domicile/résidence et élection de domicile (avocat, procureur, personne morale qualifiée) selon les cas.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00037",
+                  "Dissimulation du domicile/résidence et élection de domicile (avocat, procureur, personne morale qualifiée) selon les cas.",
+                ),
               ),
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lorsque l’interdiction prévue au 1° de l’article 515-11 est prononcée, le juge peut également fixer une interdiction de se rapprocher et ordonner le port d’un dispositif anti-rapprochement, conformément à ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00038",
+                    "Lorsque l’interdiction prévue au 1° de l’article 515-11 est prononcée, le juge peut également fixer une interdiction de se rapprocher et ordonner le port d’un dispositif anti-rapprochement, conformément à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 515-11-1 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00039",
+                    "l’article 515-11-1 du code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -305,33 +424,57 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) L’existence d’une ordonnance provisoire de protection immédiate",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00040",
+                  "C) L’existence d’une ordonnance provisoire de protection immédiate",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 515-13-1 du code civil",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00041",
+                    "Article 515-13-1 du code civil",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque le JAF est saisi d’une demande d’ordonnance de protection, le ministère public peut, avec l’accord de la personne en danger, demander une ordonnance provisoire de protection immédiate.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00042",
+                    " : lorsque le JAF est saisi d’une demande d’ordonnance de protection, le ministère public peut, avec l’accord de la personne en danger, demander une ordonnance provisoire de protection immédiate.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle peut être délivrée dans un délai de vingt-quatre heures, au vu des seuls éléments joints à la requête, si des raisons sérieuses rendent vraisemblables les violences et le danger grave et immédiat.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00043",
+                  "Elle peut être délivrée dans un délai de vingt-quatre heures, au vu des seuls éléments joints à la requête, si des raisons sérieuses rendent vraisemblables les violences et le danger grave et immédiat.",
+                ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "D) Une violation : le non-respect concret des obligations",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00044",
+                  "D) Une violation : le non-respect concret des obligations",
+                ),
               ),
               _Paragraph(
-                "L’infraction sanctionne le non-respect effectif d’une ou plusieurs obligations/interdictions fixées par le juge. "
-                "Le texte vise à rendre l’ordonnance pleinement contraignante et opérationnelle, afin de garantir la protection de la victime.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00045",
+                      "L’infraction sanctionne le non-respect effectif d’une ou plusieurs obligations/interdictions fixées par le juge. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00046",
+                      "Le texte vise à rendre l’ordonnance pleinement contraignante et opérationnelle, afin de garantir la protection de la victime.",
+                    ),
               ),
             ],
           ),
@@ -340,22 +483,43 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+              "f00047",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Volonté de ne pas se conformer"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00048",
+                  "Volonté de ne pas se conformer",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : l’auteur agit en pleine connaissance de cause des obligations ou interdictions "
-                "dont il fait l’objet. Il doit avoir été informé des termes de l’ordonnance de protection délivrée par le juge.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00049",
+                      "Il s’agit d’une infraction intentionnelle : l’auteur agit en pleine connaissance de cause des obligations ou interdictions ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00050",
+                      "dont il fait l’objet. Il doit avoir été informé des termes de l’ordonnance de protection délivrée par le juge.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En pratique : la caractérisation repose sur la preuve que la personne connaissait la décision (notification, audience contradictoire, remise, etc.) et a néanmoins violé une ou plusieurs mesures.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                      "f00051",
+                      "En pratique : la caractérisation repose sur la preuve que la personne connaissait la décision (notification, audience contradictoire, remise, etc.) et a néanmoins violé une ou plusieurs mesures.",
+                    ),
                   ),
                 ],
               ),
@@ -366,13 +530,21 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+              "f00052",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante prévue pour cette infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00053",
+                  "Aucune circonstance aggravante prévue pour cette infraction.",
+                ),
               ),
             ],
           ),
@@ -381,43 +553,94 @@ class PaNonRespectObligationsInterdictionsOrdonnanceProtectionPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+              "f00054",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00055",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit — "),
                 TextSpan(
-                  text: "article 227-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00056",
+                    "Délit — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00057",
+                    "article 227-4-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "3 ans d’emprisonnement."),
-              _BulletPoint(text: "45 000 € d’amende."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00058",
+                  "3 ans d’emprisonnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00059",
+                  "45 000 € d’amende.",
+                ),
+              ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00060",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                  "f00061",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00062",
+                    "Complicité : OUI, conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ". Elle suppose un des faits constitutifs de complicité prévus par la loi (aide/assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00063",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart",
+                    "f00064",
+                    ". Elle suppose un des faits constitutifs de complicité prévus par la loi (aide/assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
             ],

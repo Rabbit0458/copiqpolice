@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CrimePage extends StatelessWidget {
   const CrimePage({super.key});
@@ -46,7 +47,11 @@ class CrimePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
       ),
       body: CustomScrollView(
@@ -55,7 +60,11 @@ class CrimePage extends StatelessWidget {
           SliverToBoxAdapter(
             child: _HeaderHero(
               imagePath: _headerImage,
-              title: 'Le CRIME',
+              title: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                "f00002",
+                'Le CRIME',
+              ),
               isDark: isDark,
             ),
           ),
@@ -64,7 +73,11 @@ class CrimePage extends StatelessWidget {
             sliver: SliverList.list(
               children: [
                 _SectionCard(
-                  title: 'Définition & juridiction',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00003",
+                    'Définition & juridiction',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -73,13 +86,32 @@ class CrimePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _p(
-                        "Le crime est l’infraction la plus grave, jugée par la "
-                        "cour d’assises.",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                              "f00004",
+                              "Le crime est l’infraction la plus grave, jugée par la ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                              "f00005",
+                              "cour d’assises.",
+                            ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
                       _ChipRow(
-                        labels: const ['Gravité maximale', 'Cour d’assises'],
+                        labels: [
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                            "f00006",
+                            'Gravité maximale',
+                          ),
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                            "f00007",
+                            'Cour d’assises',
+                          ),
+                        ],
                         isDark: isDark,
                       ),
                     ],
@@ -87,7 +119,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Peines encourues (repères clés)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00008",
+                    'Peines encourues (repères clés)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -96,16 +132,28 @@ class CrimePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _bullet(
-                        "Réclusion ou détention criminelle à perpétuité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00009",
+                          "Réclusion ou détention criminelle à perpétuité.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Réclusion ou détention criminelle de 10 à 30 ans au plus (seuil minimal de 10 ans).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00010",
+                          "Réclusion ou détention criminelle de 10 à 30 ans au plus (seuil minimal de 10 ans).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
                       _note(
-                        "Des peines d’amende et/ou des peines complémentaires peuvent s’ajouter.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00011",
+                          "Des peines d’amende et/ou des peines complémentaires peuvent s’ajouter.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -113,7 +161,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Tentative & complicité',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00012",
+                    'Tentative & complicité',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -122,11 +174,19 @@ class CrimePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _bullet(
-                        "Tentative : toujours punissable pour les crimes.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00013",
+                          "Tentative : toujours punissable pour les crimes.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Complicité : punissable (aide/assistance, provocation, instructions…)",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00014",
+                          "Complicité : punissable (aide/assistance, provocation, instructions…)",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -134,7 +194,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Prescription (action publique)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00015",
+                    'Prescription (action publique)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -142,13 +206,28 @@ class CrimePage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _bullet("Principe : 20 ans.", textSoft),
                       _bullet(
-                        "Exceptions : 30 ans (ex. crimes de terrorisme, trafic de stupéfiants, crimes contre des mineurs dans certains cas).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00016",
+                          "Principe : 20 ans.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Imprescriptibilité : crimes contre l’humanité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00017",
+                          "Exceptions : 30 ans (ex. crimes de terrorisme, trafic de stupéfiants, crimes contre des mineurs dans certains cas).",
+                        ),
+                        textSoft,
+                      ),
+                      _bullet(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00018",
+                          "Imprescriptibilité : crimes contre l’humanité.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -156,7 +235,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'La cour d’assises (fonctionnement)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00019",
+                    'La cour d’assises (fonctionnement)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -165,22 +248,46 @@ class CrimePage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _p(
-                        "La cour d’assises juge les crimes (meurtre, viol, vol à main armée, etc.). "
-                        "Elle connaît également des tentatives et des complicités. "
-                        "Elle siège sur saisine du juge d’instruction.",
+                        ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                              "f00020",
+                              "La cour d’assises juge les crimes (meurtre, viol, vol à main armée, etc.). ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                              "f00021",
+                              "Elle connaît également des tentatives et des complicités. ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                              "f00022",
+                              "Elle siège sur saisine du juge d’instruction.",
+                            ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
                       _bullet(
-                        "Composition : 3 magistrats professionnels + jury populaire (6 citoyens tirés au sort).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00023",
+                          "Composition : 3 magistrats professionnels + jury populaire (6 citoyens tirés au sort).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Audience : publique ou à huis clos dans des cas prévus (ex. mineurs).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00024",
+                          "Audience : publique ou à huis clos dans des cas prévus (ex. mineurs).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Formations spéciales : cour d’assises des mineurs ; cour d’assises spéciale (terrorisme, trafic de stupéfiants en bande organisée).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00025",
+                          "Formations spéciales : cour d’assises des mineurs ; cour d’assises spéciale (terrorisme, trafic de stupéfiants en bande organisée).",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -188,7 +295,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Catégories particulières de crimes (repères)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00026",
+                    'Catégories particulières de crimes (repères)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -196,27 +307,71 @@ class CrimePage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle("Crimes de droit commun", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00027",
+                          "Crimes de droit commun",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Réclusion criminelle / détention criminelle (échelle usuelle : 10 à 30 ans, ou perpétuité selon les textes).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00028",
+                          "Réclusion criminelle / détention criminelle (échelle usuelle : 10 à 30 ans, ou perpétuité selon les textes).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 10),
-                      _subtitle("Crimes politiques", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00029",
+                          "Crimes politiques",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Juridictions : règles spécifiques historiques ; aujourd’hui, qualification rare. Certains actes relèvent de juridictions spécialisées.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00030",
+                          "Juridictions : règles spécifiques historiques ; aujourd’hui, qualification rare. Certains actes relèvent de juridictions spécialisées.",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 10),
-                      _subtitle("Crimes terroristes", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00031",
+                          "Crimes terroristes",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Compétence spécifique (centralisation possible) ; peines aggravées ; procédures particulières (perquisition, garde à vue, etc.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00032",
+                          "Compétence spécifique (centralisation possible) ; peines aggravées ; procédures particulières (perquisition, garde à vue, etc.).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 10),
-                      _subtitle("Crimes militaires", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00033",
+                          "Crimes militaires",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Infractions commises par des militaires dans certains contextes : règles de compétence et de procédure spécifiques.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00034",
+                          "Infractions commises par des militaires dans certains contextes : règles de compétence et de procédure spécifiques.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -224,7 +379,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Modes de réalisation (commission / omission)',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00035",
+                    'Modes de réalisation (commission / omission)',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -232,37 +391,86 @@ class CrimePage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle("Infractions de commission", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00036",
+                          "Infractions de commission",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Réalisation d’un acte prohibé (ex. meurtre).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00037",
+                          "Réalisation d’un acte prohibé (ex. meurtre).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Infractions d’omission", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00038",
+                          "Infractions d’omission",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "L’omission est réprimée en tant que telle lorsque la loi la prévoit.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00039",
+                          "L’omission est réprimée en tant que telle lorsque la loi la prévoit.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Omission de porter secours (art. 223-6, al. 2 C. pén.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00040",
+                          "Omission de porter secours (art. 223-6, al. 2 C. pén.).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Omission de témoigner en faveur d’un innocent (art. 434-11 C. pén.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00041",
+                          "Omission de témoigner en faveur d’un innocent (art. 434-11 C. pén.).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Délaissement d’une personne vulnérable (art. 223-3 C. pén.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00042",
+                          "Délaissement d’une personne vulnérable (art. 223-3 C. pén.).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Privation d’aliments/soins à mineur de 15 ans (art. 227-15 C. pén.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00043",
+                          "Privation d’aliments/soins à mineur de 15 ans (art. 227-15 C. pén.).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Commission par omission", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00044",
+                          "Commission par omission",
+                        ),
+                        textMain,
+                      ),
                       _p(
-                        "Exceptionnellement, une abstention est assimilée à une action lorsqu’un dommage résulte de la passivité fautive (ex. homicide/blessures par imprudence — art. 221-6, 222-19 C. pén.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00045",
+                          "Exceptionnellement, une abstention est assimilée à une action lorsqu’un dommage résulte de la passivité fautive (ex. homicide/blessures par imprudence — art. 221-6, 222-19 C. pén.).",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -270,7 +478,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Instantané / continu — impacts procéduraux',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00046",
+                    'Instantané / continu — impacts procéduraux',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -278,31 +490,69 @@ class CrimePage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle("Définitions", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00047",
+                          "Définitions",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Infraction instantanée : se réalise en un instant (ex. meurtre).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00048",
+                          "Infraction instantanée : se réalise en un instant (ex. meurtre).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Infraction continue : exécution qui se prolonge (non-représentation d’enfant, port illégal de décoration, recel).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00049",
+                          "Infraction continue : exécution qui se prolonge (non-représentation d’enfant, port illégal de décoration, recel).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Intérêts de la distinction", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00050",
+                          "Intérêts de la distinction",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Prescription : point de départ au jour des faits (instantané) / fin de l’état infractionnel (continu).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00051",
+                          "Prescription : point de départ au jour des faits (instantané) / fin de l’état infractionnel (continu).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Loi nouvelle : s’applique au délit continu si celui-ci se prolonge sous la nouvelle loi.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00052",
+                          "Loi nouvelle : s’applique au délit continu si celui-ci se prolonge sous la nouvelle loi.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Compétence : délit continu possible en plusieurs lieux — pluralité de juridictions compétentes.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00053",
+                          "Compétence : délit continu possible en plusieurs lieux — pluralité de juridictions compétentes.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Amnistie : le délit continu peut demeurer punissable s’il perdure après l’amnistie.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00054",
+                          "Amnistie : le délit continu peut demeurer punissable s’il perdure après l’amnistie.",
+                        ),
                         textSoft,
                       ),
                     ],
@@ -310,7 +560,11 @@ class CrimePage extends StatelessWidget {
                 ),
 
                 _Accordion(
-                  title: 'Simple / complexe / d’habitude',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                    "f00055",
+                    'Simple / complexe / d’habitude',
+                  ),
                   textMain: textMain,
                   textSoft: textSoft,
                   cardFill: cardFill,
@@ -318,27 +572,61 @@ class CrimePage extends StatelessWidget {
                   body: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _subtitle("Définitions", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00056",
+                          "Définitions",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Infraction simple : acte unique (ex. vol).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00057",
+                          "Infraction simple : acte unique (ex. vol).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Infraction complexe : plusieurs actes de nature différente (ex. escroquerie : manœuvres + remise).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00058",
+                          "Infraction complexe : plusieurs actes de nature différente (ex. escroquerie : manœuvres + remise).",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Infraction d’habitude : répétition d’actes identiques qui, isolés, ne constitueraient pas une infraction (ex. exercice illégal de la médecine).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00059",
+                          "Infraction d’habitude : répétition d’actes identiques qui, isolés, ne constitueraient pas une infraction (ex. exercice illégal de la médecine).",
+                        ),
                         textSoft,
                       ),
                       const SizedBox(height: 8),
-                      _subtitle("Intérêts", textMain),
+                      _subtitle(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00060",
+                          "Intérêts",
+                        ),
+                        textMain,
+                      ),
                       _bullet(
-                        "Prescription : pour l’habitude, point de départ au dernier acte.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00061",
+                          "Prescription : pour l’habitude, point de départ au dernier acte.",
+                        ),
                         textSoft,
                       ),
                       _bullet(
-                        "Loi nouvelle : s’applique si le dernier acte a été commis sous son empire.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart",
+                          "f00062",
+                          "Loi nouvelle : s’applique si le dernier acte a été commis sous son empire.",
+                        ),
                         textSoft,
                       ),
                     ],

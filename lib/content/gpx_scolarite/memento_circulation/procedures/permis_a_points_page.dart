@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PermisAPointsPage extends StatelessWidget {
   const PermisAPointsPage({super.key});
@@ -56,10 +57,18 @@ class PermisAPointsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Permis à points",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+            "f00002",
+            "Permis à points",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PermisAPointsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le permis à points",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00003",
+              "Le permis à points",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,15 +99,31 @@ class PermisAPointsPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le permis de conduire est affecté d’un capital de points qui diminue automatiquement "
-                "en cas d’infractions entraînant retrait de points. En cas de perte totale, le permis est "
-                "invalidé pour solde nul et le droit de conduire disparaît à compter de la notification.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00005",
+                      "Le permis de conduire est affecté d’un capital de points qui diminue automatiquement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00006",
+                      "en cas d’infractions entraînant retrait de points. En cas de perte totale, le permis est ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00007",
+                      "invalidé pour solde nul et le droit de conduire disparaît à compter de la notification.",
+                    ),
               ),
             ],
           ),
@@ -103,41 +132,57 @@ class PermisAPointsPage extends StatelessWidget {
 
           // ✅ I — Élément légal (en haut)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles L.223-1 à L.223-9 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00009",
+                    "Articles L.223-1 à L.223-9 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "articles R.223-1 à R.223-4 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00010",
+                    "articles R.223-1 à R.223-4 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixent le capital initial, les retraits, les règles de cumul, la reconstitution, l’invalidation et les infractions liées au système.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00011",
+                    " : fixent le capital initial, les retraits, les règles de cumul, la reconstitution, l’invalidation et les infractions liées au système.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Retrait de points uniquement pour des infractions commises avec un véhicule nécessitant un permis. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00012",
+                      "Retrait de points uniquement pour des infractions commises avec un véhicule nécessitant un permis. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(L.223-1 C.R.)",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00013",
+                      "(L.223-1 C.R.)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -152,74 +197,145 @@ class PermisAPointsPage extends StatelessWidget {
 
           // II — Élément matériel (les “3 éléments” pédagogiques du système)
           _ConditionCard(
-            title: "II — Fonctionnement (3 points clés)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00014",
+              "II — Fonctionnement (3 points clés)",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Capital initial & période probatoire"),
-              _BulletPoint(
-                text:
-                    "À l’obtention du premier droit de conduire (sauf catégorie AM), le permis est affecté de 6 points.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00015",
+                  "A) Capital initial & période probatoire",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pendant le délai probatoire, l’accès aux 12 points est progressif si aucune infraction avec retrait n’est commise.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00016",
+                  "À l’obtention du premier droit de conduire (sauf catégorie AM), le permis est affecté de 6 points.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00017",
+                  "Pendant le délai probatoire, l’accès aux 12 points est progressif si aucune infraction avec retrait n’est commise.",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Fondement : "),
                 TextSpan(
-                  text: "articles L.223-1 et suivants du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00018",
+                    "Fondement : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00019",
+                    "articles L.223-1 et suivants du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("B) Retrait de points (conditions & plafonds)"),
-              _BulletPoint(
-                text: "Délits : retrait forfaitaire de 6 points.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00020",
+                  "B) Retrait de points (conditions & plafonds)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contraventions : retrait de 1, 2, 3, 4 ou 6 points selon l’infraction.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00021",
+                  "Délits : retrait forfaitaire de 6 points.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Infractions simultanées : cumul plafonné à 8 points maximum.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00022",
+                  "Contraventions : retrait de 1, 2, 3, 4 ou 6 points selon l’infraction.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00023",
+                  "Infractions simultanées : cumul plafonné à 8 points maximum.",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Règle de cumul : "),
                 TextSpan(
-                  text: "article L.223-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00024",
+                    "Règle de cumul : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00025",
+                    "article L.223-2 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("C) Quand le retrait devient effectif"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00026",
+                  "C) Quand le retrait devient effectif",
+                ),
+              ),
               _Paragraph(
-                "Le retrait de points intervient lorsque la réalité de l’infraction est devenue définitive, notamment : "
-                "paiement de l’amende forfaitaire, exécution d’une composition pénale, émission du titre exécutoire de l’AFM, "
-                "ou décision judiciaire définitive (voies de recours épuisées).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00027",
+                      "Le retrait de points intervient lorsque la réalité de l’infraction est devenue définitive, notamment : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00028",
+                      "paiement de l’amende forfaitaire, exécution d’une composition pénale, émission du titre exécutoire de l’AFM, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00029",
+                      "ou décision judiciaire définitive (voies de recours épuisées).",
+                    ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Référence : "),
                 TextSpan(
-                  text: "article L.223-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00030",
+                    "Référence : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00031",
+                    "article L.223-1 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -230,41 +346,87 @@ class PermisAPointsPage extends StatelessWidget {
 
           // III — Élément moral (adapté au contexte : obligations d’info + automatisation)
           _ConditionCard(
-            title: "III — Élément moral / garanties",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00032",
+              "III — Élément moral / garanties",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Obligation d’information du contrevenant"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00033",
+                  "A) Obligation d’information du contrevenant",
+                ),
+              ),
               _Paragraph(
-                "Le policier doit informer le contrevenant que l’infraction est susceptible d’entraîner un retrait de points, "
-                "sans être tenu de préciser le nombre de points retirés.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00034",
+                      "Le policier doit informer le contrevenant que l’infraction est susceptible d’entraîner un retrait de points, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00035",
+                      "sans être tenu de préciser le nombre de points retirés.",
+                    ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Référence : "),
                 TextSpan(
-                  text: "article L.223-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00036",
+                    "Référence : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00037",
+                    "article L.223-3 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
-              _SubTitle("B) Traitement automatisé & droit d’accès"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00038",
+                  "B) Traitement automatisé & droit d’accès",
+                ),
+              ),
               _Paragraph(
-                "Les retraits et reconstitutions sont gérés par traitement automatisé (SNPC). "
-                "Le titulaire peut exercer un droit d’accès auprès du service préfectoral compétent.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00039",
+                      "Les retraits et reconstitutions sont gérés par traitement automatisé (SNPC). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00040",
+                      "Le titulaire peut exercer un droit d’accès auprès du service préfectoral compétent.",
+                    ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Référence : "),
                 TextSpan(
-                  text: "article L.225-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00041",
+                    "Référence : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00042",
+                    "article L.225-3 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -275,50 +437,84 @@ class PermisAPointsPage extends StatelessWidget {
 
           // IV — Reconstitution (pédagogique + délais)
           _ConditionCard(
-            title: "IV — Reconstitution du nombre de points",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00043",
+              "IV — Reconstitution du nombre de points",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L.223-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00044",
+                    "Article L.223-6 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit les modalités de reconstitution automatique et le stage.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00045",
+                    " : prévoit les modalités de reconstitution automatique et le stage.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
 
-              _SubTitle("A) Reconstitution automatique (principe)"),
-              _BulletPoint(
-                text:
-                    "12 points récupérés après un délai sans nouvelle infraction avec retrait (délai variable selon la nature de l’infraction).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00046",
+                  "A) Reconstitution automatique (principe)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pour une infraction ayant entraîné le retrait d’un seul point : ce point est réattribué au terme d’un délai de 6 mois.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00047",
+                  "12 points récupérés après un délai sans nouvelle infraction avec retrait (délai variable selon la nature de l’infraction).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00048",
+                  "Pour une infraction ayant entraîné le retrait d’un seul point : ce point est réattribué au terme d’un délai de 6 mois.",
+                ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "B) Stage de sensibilisation à la sécurité routière",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00049",
+                  "B) Stage de sensibilisation à la sécurité routière",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Permet de récupérer 4 points, dans la limite du plafond du permis.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00050",
+                  "Permet de récupérer 4 points, dans la limite du plafond du permis.",
+                ),
               ),
               _BulletPoint(
-                text: "Stage volontaire : possible une fois par an.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00051",
+                  "Stage volontaire : possible une fois par an.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Stage obligatoire : en période probatoire après une infraction ayant entraîné un retrait d’au moins 3 points (selon le cas prévu par le code).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00052",
+                  "Stage obligatoire : en période probatoire après une infraction ayant entraîné un retrait d’au moins 3 points (selon le cas prévu par le code).",
+                ),
               ),
             ],
           ),
@@ -327,76 +523,126 @@ class PermisAPointsPage extends StatelessWidget {
 
           // V — Circonstances aggravantes / infractions connexes (trafic + solde nul)
           _ConditionCard(
-            title: "V — Infractions connexes & aggravations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00053",
+              "V — Infractions connexes & aggravations",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Solde nul : invalidation & injonction de restitution",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00054",
+                  "A) Solde nul : invalidation & injonction de restitution",
+                ),
               ),
               _Paragraph(
-                "En cas de perte totale des points, l’invalidation du permis pour solde nul et l’injonction de le restituer "
-                "sont notifiées par courrier recommandé. À compter de la notification, l’intéressé perd le droit de conduire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00055",
+                      "En cas de perte totale des points, l’invalidation du permis pour solde nul et l’injonction de le restituer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00056",
+                      "sont notifiées par courrier recommandé. À compter de la notification, l’intéressé perd le droit de conduire.",
+                    ),
               ),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les délits liés à la conduite malgré injonction et au refus de restituer sont notamment visés par : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00057",
+                      "Les délits liés à la conduite malgré injonction et au refus de restituer sont notamment visés par : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article L.223-5 du Code de la route",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00058",
+                      "article L.223-5 du Code de la route",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " (voir natinf 22873 / 11049)."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00059",
+                      " (voir natinf 22873 / 11049).",
+                    ),
+                  ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("B) « Trafic de points »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00060",
+                  "B) « Trafic de points »",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L.223-9 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00061",
+                    "Article L.223-9 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : réprime la vente/achat de points et les manœuvres visant à faire désigner une tierce personne comme auteur d’une contravention.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00062",
+                    " : réprime la vente/achat de points et les manœuvres visant à faire désigner une tierce personne comme auteur d’une contravention.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Lien procédure (désignation / réclamation) : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00063",
+                    "Lien procédure (désignation / réclamation) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 529-10 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00064",
+                    "article 529-10 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Aggravation : lorsque commis de façon habituelle ou par diffusion d’un message au public proposant ce service contre rémunération.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00065",
+                  "Aggravation : lorsque commis de façon habituelle ou par diffusion d’un message au public proposant ce service contre rémunération.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La désignation d’un conducteur dans un cadre familial/amical, sans contrepartie, n’est pas réprimée.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                      "f00066",
+                      "La désignation d’un conducteur dans un cadre familial/amical, sans contrepartie, n’est pas réprimée.",
+                    ),
                   ),
                 ],
               ),
@@ -407,26 +653,44 @@ class PermisAPointsPage extends StatelessWidget {
 
           // VI — Tentative & complicité (adapté : trafic de points)
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+              "f00067",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Trafic de points (L.223-9 C.R.)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00068",
+                  "Trafic de points (L.223-9 C.R.)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Tentative : en pratique, le texte vise déjà la « proposition » et l’« acceptation » contre rémunération (comportements préparatoires déjà incriminés).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                  "f00069",
+                  "Tentative : en pratique, le texte vise déjà la « proposition » et l’« acceptation » contre rémunération (comportements préparatoires déjà incriminés).",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Complicité : OUI, selon les règles générales des ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00070",
+                    "Complicité : OUI, selon les règles générales des ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/permis_a_points_page.dart",
+                    "f00071",
+                    "articles 121-6 et 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -684,9 +948,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

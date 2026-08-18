@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -18,7 +19,8 @@ class PaPersonnesFuiteIntroPage extends StatefulWidget {
   const PaPersonnesFuiteIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/personnes_fuite_intro';
+  static const String routeName =
+      '/pa/dps_dpg/cadres_juridiques/personnes_fuite_intro';
 
   @override
   State<PaPersonnesFuiteIntroPage> createState() =>
@@ -55,7 +57,11 @@ class _PersonnesFuiteIntroPageState extends State<PaPersonnesFuiteIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'LA RECHERCHE DES PERSONNES EN FUITE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_intro.dart",
+    "f00001",
+    'LA RECHERCHE DES PERSONNES EN FUITE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -162,7 +168,11 @@ class _PersonnesFuiteIntroPageState extends State<PaPersonnesFuiteIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Les conditions d'application de l'article 74-2 du Code de procédure pénale",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_intro.dart",
+                        "f00002",
+                        "Les conditions d'application de l'article 74-2 du Code de procédure pénale",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -277,7 +287,11 @@ class _CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_intro.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

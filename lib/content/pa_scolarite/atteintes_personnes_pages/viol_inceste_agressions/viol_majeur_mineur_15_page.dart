@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaViolMajeurMineur15Page extends StatelessWidget {
   const PaViolMajeurMineur15Page({super.key});
@@ -70,7 +71,11 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Viol (majeur / mineur de 15 ans)",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+            "f00001",
+            "Viol (majeur / mineur de 15 ans)",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,41 +91,93 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
             children: [
               // ✅ EXIGENCE : article légal tout en haut
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-23-1 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00003",
+                        "Article 222-23-1 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : définit le viol commis par un majeur sur un mineur de 15 ans.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00004",
+                        " : définit le viol commis par un majeur sur un mineur de 15 ans.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Répression spécifique : "),
-                    lawRef("article 222-23-3 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00005",
+                        "Répression spécifique : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00006",
+                        "article 222-23-3 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle("Conditions alternatives"),
-                  const _BulletPoint(
-                    text:
-                        "Différence d’âge ≥ 5 ans entre le majeur et le mineur.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00007",
+                      "Conditions alternatives",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Ou, si l’écart d’âge est < 5 ans : faits commis en échange d’une rémunération (ou promesse) ou d’un avantage en nature (ou promesse).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00008",
+                      "Différence d’âge ≥ 5 ans entre le majeur et le mineur.",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00009",
+                      "Ou, si l’écart d’âge est < 5 ans : faits commis en échange d’une rémunération (ou promesse) ou d’un avantage en nature (ou promesse).",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Hors champ",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00010",
+                      "Hors champ",
+                    ),
                     bodySpans: [
                       normal(
-                        "Hors le cas du viol par violence, contrainte, menace ou surprise prévu par ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00011",
+                          "Hors le cas du viol par violence, contrainte, menace ou surprise prévu par ",
+                        ),
                       ),
-                      lawRef("l’article 222-23 du C.P."),
+                      lawRef(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00012",
+                          "l’article 222-23 du C.P.",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
@@ -130,34 +187,73 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                  "f00013",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "Hors le cas du viol par violence, contrainte, menace ou surprise, tout acte de pénétration sexuelle, de quelque nature qu’il soit, "
-                    "ou tout acte bucco-génital commis par un majeur sur un mineur de 15 ans (ou commis sur l’auteur par le mineur), "
-                    "lorsque la différence d’âge est d’au moins 5 ans, constitue un viol.",
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00014",
+                          "Hors le cas du viol par violence, contrainte, menace ou surprise, tout acte de pénétration sexuelle, de quelque nature qu’il soit, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00015",
+                          "ou tout acte bucco-génital commis par un majeur sur un mineur de 15 ans (ou commis sur l’auteur par le mineur), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00016",
+                          "lorsque la différence d’âge est d’au moins 5 ans, constitue un viol.",
+                        ),
                   ),
                   SizedBox(height: 10),
                   _Paragraph(
-                    "La condition de différence d’âge ne s’applique pas si les faits sont commis en échange d’une rémunération (ou promesse) "
-                    "ou d’un avantage en nature (ou promesse).",
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00017",
+                          "La condition de différence d’âge ne s’applique pas si les faits sont commis en échange d’une rémunération (ou promesse) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00018",
+                          "ou d’un avantage en nature (ou promesse).",
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("À retenir"),
-                  _IntroBullet(
-                    text:
-                        "Infraction autonome : pas besoin de violence/menace/surprise pour la caractériser.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00019",
+                      "À retenir",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Acte visé = pénétration sexuelle OU acte bucco-génital.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00020",
+                      "Infraction autonome : pas besoin de violence/menace/surprise pour la caractériser.",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "Clause « Roméo et Juliette » : seuil des 5 ans, sauf contrepartie.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00021",
+                      "Acte visé = pénétration sexuelle OU acte bucco-génital.",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00022",
+                      "Clause « Roméo et Juliette » : seuil des 5 ans, sauf contrepartie.",
+                    ),
                   ),
                 ],
               ),
@@ -166,29 +262,70 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
 
               // I — Élément légal
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                  "f00023",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-23-1 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00024",
+                        "Article 222-23-1 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : définit le viol commis par un majeur sur un mineur de 15 ans.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00025",
+                        " : définit le viol commis par un majeur sur un mineur de 15 ans.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Réprimé par "),
-                    lawRef("l’article 222-23-3 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00026",
+                        "Réprimé par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00027",
+                        "l’article 222-23-3 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle("Conditions de qualification"),
-                  const _BulletPoint(text: "Écart d’âge ≥ 5 ans."),
-                  const _BulletPoint(
-                    text:
-                        "Ou écart d’âge < 5 ans si contrepartie (rémunération / promesse / avantage en nature / promesse).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00028",
+                      "Conditions de qualification",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00029",
+                      "Écart d’âge ≥ 5 ans.",
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00030",
+                      "Ou écart d’âge < 5 ans si contrepartie (rémunération / promesse / avantage en nature / promesse).",
+                    ),
                   ),
                 ],
               ),
@@ -197,150 +334,412 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
 
               // II — Élément matériel
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                  "f00031",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("1) Un acte de pénétration sexuelle"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00032",
+                      "1) Un acte de pénétration sexuelle",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    lawRef("Article 222-23-1 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00033",
+                        "Article 222-23-1 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " vise « tout acte de pénétration sexuelle, de quelque nature qu’il soit ».",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00034",
+                        " vise « tout acte de pénétration sexuelle, de quelque nature qu’il soit ».",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Relève de l’incrimination tout acte de pénétration dans le sexe ou par le sexe. "
-                    "La nature de l’acte importe peu : rapports dits « normaux », sodomie, introduction d’un doigt ou de corps étrangers "
-                    "dans le sexe ou l’anus de la victime.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00035",
+                          "Relève de l’incrimination tout acte de pénétration dans le sexe ou par le sexe. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00036",
+                          "La nature de l’acte importe peu : rapports dits « normaux », sodomie, introduction d’un doigt ou de corps étrangers ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00037",
+                          "dans le sexe ou l’anus de la victime.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
-                    bodySpans: [
-                      normal("Sodomie : "),
-                      normal("Cass. crim., 3 juillet 1991"),
-                      normal(". "),
-                      normal("Doigt dans le vagin contre le gré : "),
-                      normal("Cass. crim., 8 janvier 1991"),
-                      normal("."),
-                    ],
-                  ),
-
-                  const SizedBox(height: 14),
-
-                  const _SubTitle("2) Ou un acte bucco-génital"),
-                  const _Paragraph(
-                    "Le texte vise aussi « tout acte bucco-génital ». Un contact suffit : "
-                    "cela inclut fellation et cunnilingus.",
-                  ),
-                  const SizedBox(height: 10),
-                  _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00038",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Fellation constitutive de viol en cas de pénétration de la verge dans la bouche : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00039",
+                          "Sodomie : ",
+                        ),
                       ),
-                      normal("Cass. crim., 22 février 1984"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00040",
+                          "Cass. crim., 3 juillet 1991",
+                        ),
+                      ),
                       normal(". "),
-                      normal("Fellations réciproques : "),
-                      normal("Cass. crim., 28 novembre 2001"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00041",
+                          "Doigt dans le vagin contre le gré : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00042",
+                          "Cass. crim., 8 janvier 1991",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("3) Commise sur la victime ou sur l’auteur"),
-                  const _Paragraph(
-                    "Le viol est caractérisé aussi bien lorsque l’auteur commet l’acte sur la victime, "
-                    "que lorsque l’acte est réalisé sur la personne de l’auteur (par la victime).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00043",
+                      "2) Ou un acte bucco-génital",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00044",
+                          "Le texte vise aussi « tout acte bucco-génital ». Un contact suffit : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00045",
+                          "cela inclut fellation et cunnilingus.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
-                    title: "Jurisprudence",
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00046",
+                      "Jurisprudence",
+                    ),
                     bodySpans: [
                       normal(
-                        "Viol retenu pour l’introduction avec violence (par une femme) d’un manche de pioche recouvert d’un préservatif "
-                        "dans l’anus d’un homme : ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00047",
+                          "Fellation constitutive de viol en cas de pénétration de la verge dans la bouche : ",
+                        ),
                       ),
-                      normal("Cass. crim., 6 décembre 1995"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00048",
+                          "Cass. crim., 22 février 1984",
+                        ),
+                      ),
+                      normal(". "),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00049",
+                          "Fellations réciproques : ",
+                        ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00050",
+                          "Cass. crim., 28 novembre 2001",
+                        ),
+                      ),
                       normal("."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("4) Auteur majeur"),
-                  const _Paragraph(
-                    "L’infraction n’est imputable qu’à un majeur : les actes accomplis entre mineurs sont exclus.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00051",
+                      "3) Commise sur la victime ou sur l’auteur",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00052",
+                          "Le viol est caractérisé aussi bien lorsque l’auteur commet l’acte sur la victime, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00053",
+                          "que lorsque l’acte est réalisé sur la personne de l’auteur (par la victime).",
+                        ),
+                  ),
+                  const SizedBox(height: 10),
+                  _NotaBox(
+                    title: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00054",
+                      "Jurisprudence",
+                    ),
+                    bodySpans: [
+                      normal(
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                              "f00055",
+                              "Viol retenu pour l’introduction avec violence (par une femme) d’un manche de pioche recouvert d’un préservatif ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                              "f00056",
+                              "dans l’anus d’un homme : ",
+                            ),
+                      ),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00057",
+                          "Cass. crim., 6 décembre 1995",
+                        ),
+                      ),
+                      normal("."),
+                    ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("5) Victime mineure de moins de 15 ans"),
-                  const _SubTitle("• Victime vivante"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00058",
+                      "4) Auteur majeur",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00059",
+                      "L’infraction n’est imputable qu’à un majeur : les actes accomplis entre mineurs sont exclus.",
+                    ),
+                  ),
+
+                  const SizedBox(height: 14),
+
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00060",
+                      "5) Victime mineure de moins de 15 ans",
+                    ),
+                  ),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00061",
+                      "• Victime vivante",
+                    ),
+                  ),
                   _Paragraph.rich([
                     normal(
-                      "Il ne peut y avoir viol sur un cadavre. L’atteinte au cadavre relève de ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00062",
+                        "Il ne peut y avoir viol sur un cadavre. L’atteinte au cadavre relève de ",
+                      ),
                     ),
-                    lawRef("l’article 225-17 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00063",
+                        "l’article 225-17 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 10),
-                  const _SubTitle("• Âge à retenir"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00064",
+                      "• Âge à retenir",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Âge au moment des faits ("),
-                    normal("Cass. crim., 21 mars 1957"),
-                    normal("). Calcul d’heure à heure ("),
-                    normal("Cass. crim., 3 septembre 1985"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00065",
+                        "Âge au moment des faits (",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00066",
+                        "Cass. crim., 21 mars 1957",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00067",
+                        "). Calcul d’heure à heure (",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00068",
+                        "Cass. crim., 3 septembre 1985",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
                     normal(
-                      "Preuve de l’âge par tout moyen à défaut d’acte probant (",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00069",
+                        "Preuve de l’âge par tout moyen à défaut d’acte probant (",
+                      ),
                     ),
-                    normal("Cass. crim., 17 juillet 1991"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00070",
+                        "Cass. crim., 17 juillet 1991",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "Le texte n’exige pas que la minorité de 15 ans soit apparente ou connue : protection particulière.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00071",
+                      "Le texte n’exige pas que la minorité de 15 ans soit apparente ou connue : protection particulière.",
+                    ),
                   ),
                   const SizedBox(height: 10),
-                  const _Paragraph(
-                    "La question du consentement ne se pose pas : un mineur de 15 ans n’est pas apte à consentir à un acte sexuel avec un majeur. "
-                    "Il n’est donc pas nécessaire de démontrer violence, contrainte, menace ou surprise.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00072",
+                          "La question du consentement ne se pose pas : un mineur de 15 ans n’est pas apte à consentir à un acte sexuel avec un majeur. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00073",
+                          "Il n’est donc pas nécessaire de démontrer violence, contrainte, menace ou surprise.",
+                        ),
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "6) Différence d’âge ≥ 5 ans… sauf contrepartie",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00074",
+                      "6) Différence d’âge ≥ 5 ans… sauf contrepartie",
+                    ),
                   ),
-                  const _SubTitle("• Clause « Roméo et Juliette »"),
-                  const _Paragraph(
-                    "Pour ne pas incriminer une relation amoureuse de proximité d’âge, l’infraction n’est constituée que si l’écart d’âge "
-                    "entre le majeur et le mineur est égal ou supérieur à 5 ans.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00075",
+                      "• Clause « Roméo et Juliette »",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00076",
+                          "Pour ne pas incriminer une relation amoureuse de proximité d’âge, l’infraction n’est constituée que si l’écart d’âge ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00077",
+                          "entre le majeur et le mineur est égal ou supérieur à 5 ans.",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _SubTitle("• Exception : rémunération / avantage"),
-                  const _Paragraph(
-                    "Si l’écart d’âge est inférieur à 5 ans, le viol peut tout de même être retenu si les faits sont commis en échange "
-                    "d’une somme d’argent, d’un cadeau, d’un avantage (ou promesse). Cela vise notamment des relations prostitutionnelles.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00078",
+                      "• Exception : rémunération / avantage",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00079",
+                          "Si l’écart d’âge est inférieur à 5 ans, le viol peut tout de même être retenu si les faits sont commis en échange ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00080",
+                          "d’une somme d’argent, d’un cadeau, d’un avantage (ou promesse). Cela vise notamment des relations prostitutionnelles.",
+                        ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
                     title: "NOTA",
                     bodySpans: [
                       normal(
-                        "Si l’écart d’âge est < 5 ans et qu’il n’y a aucune contrepartie, les faits peuvent relever de ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00081",
+                          "Si l’écart d’âge est < 5 ans et qu’il n’y a aucune contrepartie, les faits peuvent relever de ",
+                        ),
                       ),
-                      lawRef("l’article 227-25 du C.P."),
+                      lawRef(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00082",
+                          "l’article 227-25 du C.P.",
+                        ),
+                      ),
                       normal(
-                        " (atteinte sexuelle par un majeur sur un mineur de 15 ans).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                          "f00083",
+                          " (atteinte sexuelle par un majeur sur un mineur de 15 ans).",
+                        ),
                       ),
                     ],
                   ),
@@ -351,28 +750,72 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
 
               // III — Élément moral
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                  "f00084",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("1) Volonté de commettre l’acte sexuel"),
-                  const _Paragraph(
-                    "L’intention se traduit par la volonté de commettre un acte de pénétration sexuelle ou un acte bucco-génital.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00085",
+                      "1) Volonté de commettre l’acte sexuel",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00086",
+                      "L’intention se traduit par la volonté de commettre un acte de pénétration sexuelle ou un acte bucco-génital.",
+                    ),
                   ),
                   const SizedBox(height: 12),
-                  const _SubTitle(
-                    "2) Connaissance de l’âge inférieur à 15 ans",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00087",
+                      "2) Connaissance de l’âge inférieur à 15 ans",
+                    ),
                   ),
                   _Paragraph.rich([
                     normal(
-                      "L’erreur sur l’âge n’atténue pas la responsabilité. Toutefois, l’infraction peut ne pas être retenue s’il est acquis "
-                      "que l’auteur ignorait l’âge réel, notamment si la victime avait un comportement et un développement physique d’adulte (",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                            "f00088",
+                            "L’erreur sur l’âge n’atténue pas la responsabilité. Toutefois, l’infraction peut ne pas être retenue s’il est acquis ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                            "f00089",
+                            "que l’auteur ignorait l’âge réel, notamment si la victime avait un comportement et un développement physique d’adulte (",
+                          ),
                     ),
-                    normal("Cass. crim., 4 janvier 1902"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00090",
+                        "Cass. crim., 4 janvier 1902",
+                      ),
+                    ),
                     normal("). "),
-                    normal("L’auteur doit justifier qu’il a été trompé ("),
-                    normal("Cass. crim., 7 février 1957"),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00091",
+                        "L’auteur doit justifier qu’il a été trompé (",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00092",
+                        "Cass. crim., 7 février 1957",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                 ],
@@ -382,24 +825,60 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
 
               // IV — Circonstances aggravantes
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                  "f00093",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Premier degré d’aggravation"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00094",
+                      "Premier degré d’aggravation",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    lawRef("Article 222-25 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00095",
+                        "Article 222-25 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : lorsque le viol a entraîné la mort de la victime.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00096",
+                        " : lorsque le viol a entraîné la mort de la victime.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 12),
-                  const _SubTitle("Deuxième degré d’aggravation"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00097",
+                      "Deuxième degré d’aggravation",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    lawRef("Article 222-26 du C.P."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00098",
+                        "Article 222-26 du C.P.",
+                      ),
+                    ),
                     normal(
-                      " : lorsqu’il est précédé, accompagné ou suivi de tortures ou d’actes de barbarie.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00099",
+                        " : lorsqu’il est précédé, accompagné ou suivi de tortures ou d’actes de barbarie.",
+                      ),
                     ),
                   ]),
                 ],
@@ -409,60 +888,169 @@ class PaViolMajeurMineur15Page extends StatelessWidget {
 
               // V — Répression / tentative / complicité
               _ConditionCard(
-                title: "V — Répression, tentative et complicité",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                  "f00100",
+                  "V — Répression, tentative et complicité",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines encourues (personnes physiques)"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00101",
+                      "Peines encourues (personnes physiques)",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Viol (majeur / mineur 15 ans) réprimé par "),
-                    lawRef("l’article 222-23-3 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00102",
+                        "Viol (majeur / mineur 15 ans) réprimé par ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00103",
+                        "l’article 222-23-3 du C.P.",
+                      ),
+                    ),
                     normal(" : "),
                   ]),
                   const SizedBox(height: 8),
-                  const _BulletPoint(
-                    text: "Forme « simple » : 20 ans de réclusion criminelle.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00104",
+                      "Forme « simple » : 20 ans de réclusion criminelle.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _Paragraph.rich([
-                    normal("Aggravé 1er degré : "),
-                    lawRef("article 222-25 du C.P."),
                     normal(
-                      " → 30 ans de réclusion criminelle + période de sûreté.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00105",
+                        "Aggravé 1er degré : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00106",
+                        "article 222-25 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00107",
+                        " → 30 ans de réclusion criminelle + période de sûreté.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 8),
                   _Paragraph.rich([
-                    normal("Aggravé 2e degré : "),
-                    lawRef("article 222-26 du C.P."),
                     normal(
-                      " → réclusion criminelle à perpétuité + période de sûreté.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00108",
+                        "Aggravé 2e degré : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00109",
+                        "article 222-26 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00110",
+                        " → réclusion criminelle à perpétuité + période de sûreté.",
+                      ),
                     ),
                   ]),
                   const SizedBox(height: 12),
                   _Paragraph.rich([
-                    normal("Personnes morales : "),
-                    lawRef("article 222-33-1 du C.P."),
-                    normal(" (amende + peines complémentaires prévues à "),
-                    lawRef("l’article 131-39 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00111",
+                        "Personnes morales : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00112",
+                        "article 222-33-1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00113",
+                        " (amende + peines complémentaires prévues à ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00114",
+                        "l’article 131-39 du C.P.",
+                      ),
+                    ),
                     normal(")."),
                   ]),
                   const SizedBox(height: 12),
 
                   const _SubTitle("Tentative"),
-                  const _BulletPoint(
-                    text:
-                        "Tentative : OUI (punissable comme toute tentative de crime).",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00115",
+                      "Tentative : OUI (punissable comme toute tentative de crime).",
+                    ),
                   ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                      "f00116",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — "),
-                    lawRef("articles 121-6 et 121-7 du C.P."),
-                    normal(" (aide/assistance, provocation, instructions)."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00117",
+                        "Complicité : OUI — ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00118",
+                        "articles 121-6 et 121-7 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart",
+                        "f00119",
+                        " (aide/assistance, provocation, instructions).",
+                      ),
+                    ),
                   ]),
                 ],
               ),

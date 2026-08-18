@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
     extends StatelessWidget {
@@ -59,10 +60,18 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la dignité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+            "f00002",
+            "Atteintes à la dignité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+              "f00003",
+              "La rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’obtenir d’une personne dont la vulnérabilité ou l’état de dépendance sont apparents "
-                "ou connus de l’auteur, la fourniture de services non rétribués ou en échange d’une rétribution "
-                "manifestement sans rapport avec l’importance du travail accompli, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00005",
+                      "Le fait d’obtenir d’une personne dont la vulnérabilité ou l’état de dépendance sont apparents ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00006",
+                      "ou connus de l’auteur, la fourniture de services non rétribués ou en échange d’une rétribution ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00007",
+                      "manifestement sans rapport avec l’importance du travail accompli, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,19 +135,30 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-13 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00009",
+                    "Article 225-13 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime la rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00010",
+                    " : définit et réprime la rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante.",
+                  ),
                 ),
               ]),
             ],
@@ -128,91 +168,221 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) La fourniture de services"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00012",
+                  "A) La fourniture de services",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’obtenir l’accomplissement d’un travail ou d’une tâche, et non la remise d’un bien "
-                "ou d’une somme d’argent (qui peuvent relever d’autres incriminations).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00013",
+                      "Il s’agit d’obtenir l’accomplissement d’un travail ou d’une tâche, et non la remise d’un bien ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00014",
+                      "ou d’une somme d’argent (qui peuvent relever d’autres incriminations).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exemple d’infraction voisine (hors champ de l’article 225-13) : ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00015",
+                      "Exemple d’infraction voisine (hors champ de l’article 225-13) : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article 223-15-2 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00016",
+                      "article 223-15-2 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " (abus frauduleux de l’état d’ignorance / faiblesse).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00017",
+                      " (abus frauduleux de l’état d’ignorance / faiblesse).",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "La loi vise une fourniture de services au pluriel : une simple prestation isolée ne suffit pas. "
-                "La réitération facilite la preuve de l’abus, qui peut se déduire de l’accomplissement journalier "
-                "de tâches inadaptées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00018",
+                      "La loi vise une fourniture de services au pluriel : une simple prestation isolée ne suffit pas. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00019",
+                      "La réitération facilite la preuve de l’abus, qui peut se déduire de l’accomplissement journalier ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00020",
+                      "de tâches inadaptées.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Absence ou insuffisance de rémunération"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00021",
+                  "B) Absence ou insuffisance de rémunération",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Le texte vise : "),
                 TextSpan(
-                  text: "l’absence totale de rétribution",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00022",
+                    "Le texte vise : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00023",
+                    "l’absence totale de rétribution",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w800),
                 ),
-                TextSpan(text: " ou une "),
                 TextSpan(
-                  text: "rétribution manifestement sans rapport",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00024",
+                    " ou une ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00025",
+                    "rétribution manifestement sans rapport",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w800),
                 ),
-                TextSpan(text: " avec le travail accompli."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00026",
+                    " avec le travail accompli.",
+                  ),
+                ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "• Absence totale : appréciation stricte (aucune contrepartie, même en nature : logement, nourriture, etc.).\n"
-                "• Insuffisance : appréciation par les juges du fond. Le non-respect du SMIC ou le non-paiement "
-                "des heures supplémentaires ne suffisent pas : il faut une disproportion manifeste entre la rémunération "
-                "et le travail accompli.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00027",
+                      "• Absence totale : appréciation stricte (aucune contrepartie, même en nature : logement, nourriture, etc.).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00028",
+                      "• Insuffisance : appréciation par les juges du fond. Le non-respect du SMIC ou le non-paiement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00029",
+                      "des heures supplémentaires ne suffisent pas : il faut une disproportion manifeste entre la rémunération ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00030",
+                      "et le travail accompli.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les juges peuvent comparer avec le salaire minimum de la profession, et procéder à des décomptes précis "
-                "du temps de travail et de la rémunération pour faire apparaître l’absence de rapport.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00031",
+                      "Les juges peuvent comparer avec le salaire minimum de la profession, et procéder à des décomptes précis ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00032",
+                      "du temps de travail et de la rémunération pour faire apparaître l’absence de rapport.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Si la rémunération est à ce point réduite qu’elle ne permet pas de satisfaire les besoins élémentaires, "
-                "et maintient la personne dans un rapport de dépendance, l’infraction est nécessairement constituée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00033",
+                      "Si la rémunération est à ce point réduite qu’elle ne permet pas de satisfaire les besoins élémentaires, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00034",
+                      "et maintient la personne dans un rapport de dépendance, l’infraction est nécessairement constituée.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Jurisprudences (illustrations)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00035",
+                  "C) Jurisprudences (illustrations)",
+                ),
+              ),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00036",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Infraction retenue pour des stagiaires affectés à la réception de l’hôtel, "
-                        "de 23h à 7h, 7j/7 (56 à 63h/semaine), pour une rémunération de 1 760 francs "
-                        "pour 190 heures ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                          "f00037",
+                          "Infraction retenue pour des stagiaires affectés à la réception de l’hôtel, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                          "f00038",
+                          "de 23h à 7h, 7j/7 (56 à 63h/semaine), pour une rémunération de 1 760 francs ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                          "f00039",
+                          "pour 190 heures ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 03 décembre 2002)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00040",
+                      "(Cass. crim., 03 décembre 2002)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -223,15 +393,31 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00041",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Délit constitué pour le travail d’une jeune handicapée employée au magasin "
-                        "et au service domestique, moyennant seulement le gîte et le couvert ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                          "f00042",
+                          "Délit constitué pour le travail d’une jeune handicapée employée au magasin ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                          "f00043",
+                          "et au service domestique, moyennant seulement le gîte et le couvert ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(T.A. Toulouse, 14 février 2002)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00044",
+                      "(T.A. Toulouse, 14 février 2002)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -244,26 +430,67 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
               SizedBox(height: 14),
 
               _SubTitle(
-                "D) Une victime vulnérable ou en état de dépendance",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00045",
+                  "D) Une victime vulnérable ou en état de dépendance",
+                ),
               ),
               _Paragraph(
-                "La vulnérabilité ou la dépendance doivent être entendues largement, mais elles doivent être "
-                "apparentes ou connues de l’auteur.\n\n"
-                "• Vulnérabilité : liée à l’état physique ou mental (grossesse, âge, maladie, handicap…), "
-                "ou à l’environnement économique/social/culturel (personnes immigrées, chômeurs, sans-abri…).\n"
-                "• Dépendance : économique (précarité) ou morale (ascendant : maître/domestique, parents/enfants…).\n\n"
-                "L’une ou l’autre doit exister (elles peuvent aussi se confondre).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00046",
+                      "La vulnérabilité ou la dépendance doivent être entendues largement, mais elles doivent être ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00047",
+                      "apparentes ou connues de l’auteur.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00048",
+                      "• Vulnérabilité : liée à l’état physique ou mental (grossesse, âge, maladie, handicap…), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00049",
+                      "ou à l’environnement économique/social/culturel (personnes immigrées, chômeurs, sans-abri…).\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00050",
+                      "• Dépendance : économique (précarité) ou morale (ascendant : maître/domestique, parents/enfants…).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00051",
+                      "L’une ou l’autre doit exister (elles peuvent aussi se confondre).",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Présomption : "),
                 TextSpan(
-                  text: "article 225-15-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00052",
+                    "Présomption : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00053",
+                    "article 225-15-1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : présomption de vulnérabilité/dépendance concernant les mineurs et certaines victimes à leur arrivée sur le territoire français.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00054",
+                    " : présomption de vulnérabilité/dépendance concernant les mineurs et certaines victimes à leur arrivée sur le territoire français.",
+                  ),
                 ),
               ]),
             ],
@@ -273,24 +500,58 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+              "f00055",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Conscience de la vulnérabilité / dépendance"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00056",
+                  "A) Conscience de la vulnérabilité / dépendance",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit mesurer la vulnérabilité ou l’état de dépendance de la victime. "
-                "Cet état doit être apparent ou connu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00057",
+                      "L’auteur doit mesurer la vulnérabilité ou l’état de dépendance de la victime. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00058",
+                      "Cet état doit être apparent ou connu.",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Conscience d’exiger des services non ou insuffisamment rétribués",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00059",
+                  "B) Conscience d’exiger des services non ou insuffisamment rétribués",
+                ),
               ),
               _Paragraph(
-                "L’auteur sait qu’il n’obtient ces services à ce “prix” qu’en raison de la vulnérabilité ou "
-                "de l’état de dépendance. L’intention libérale de la victime ne peut être invoquée lorsqu’il "
-                "existe un rapport de domination (le bénévolat suppose le respect).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00060",
+                      "L’auteur sait qu’il n’obtient ces services à ce “prix” qu’en raison de la vulnérabilité ou ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00061",
+                      "de l’état de dépendance. L’intention libérale de la victime ne peut être invoquée lorsqu’il ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                      "f00062",
+                      "existe un rapport de domination (le bénévolat suppose le respect).",
+                    ),
               ),
             ],
           ),
@@ -299,42 +560,80 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+              "f00063",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Premier degré d’aggravation"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00064",
+                  "Premier degré d’aggravation",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-15 I 1° du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00065",
+                    "Article 225-15 I 1° du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque l’infraction est commise à l’égard de plusieurs personnes.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00066",
+                    " : lorsque l’infraction est commise à l’égard de plusieurs personnes.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-15 II 1° du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00067",
+                    "Article 225-15 II 1° du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : lorsqu’elle est commise à l’égard d’un mineur.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00068",
+                    " : lorsqu’elle est commise à l’égard d’un mineur.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
-              _SubTitle("Second degré d’aggravation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00069",
+                  "Second degré d’aggravation",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-15 III 1° du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00070",
+                    "Article 225-15 III 1° du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsqu’elle est commise à l’égard de plusieurs personnes parmi lesquelles figurent un ou plusieurs mineurs.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00071",
+                    " : lorsqu’elle est commise à l’égard de plusieurs personnes parmi lesquelles figurent un ou plusieurs mineurs.",
+                  ),
                 ),
               ]),
             ],
@@ -344,80 +643,199 @@ class PaRetributionInexistanteInsuffisantePersonneVulnerableDependantePage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+              "f00072",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00073",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 150 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00074",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-13 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00075",
+                    "5 ans d’emprisonnement et 150 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00076",
+                    "article 225-13 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (1er degré) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 200 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00077",
+                    "Aggravée (1er degré) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 225-15 I 1° et 225-15 II 1° du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00078",
+                    "7 ans d’emprisonnement et 200 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00079",
+                    "articles 225-15 I 1° et 225-15 II 1° du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (2nd degré) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 300 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00080",
+                    "Aggravée (2nd degré) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-15 III 1° du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00081",
+                    "10 ans d’emprisonnement et 300 000 € d’amende — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00082",
+                    "article 225-15 III 1° du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00083",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité expressément prévue par "),
                 TextSpan(
-                  text: "l’article 225-16 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00084",
+                    "Responsabilité expressément prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00085",
+                    "l’article 225-16 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: ". Peine d’amende selon "),
                 TextSpan(
-                  text: "l’article 131-38 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00086",
+                    ". Peine d’amende selon ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00087",
+                    "l’article 131-38 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " + peines complémentaires "),
                 TextSpan(
-                  text: "article 131-39 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00088",
+                    " + peines complémentaires ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00089",
+                    "article 131-39 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " (dissolution, interdictions, etc.)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00090",
+                    " (dissolution, interdictions, etc.).",
+                  ),
+                ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00091",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                  "f00092",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément aux "),
                 TextSpan(
-                  text: "articles 121-6 et 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00093",
+                    "Complicité : OUI, conformément aux ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00094",
+                    "articles 121-6 et 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide/assistance, provocation, instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart",
+                    "f00095",
+                    " (aide/assistance, provocation, instructions données).",
+                  ),
                 ),
               ]),
             ],

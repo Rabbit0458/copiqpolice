@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class UaLienLegitimeDefensePage extends StatelessWidget {
   const UaLienLegitimeDefensePage({super.key});
@@ -41,7 +42,11 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Usage des armes & légitime défense',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+            "f00001",
+            'Usage des armes & légitime défense',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16,
@@ -57,7 +62,11 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
         children: [
           // ================= TITRE & RAPPEL TEXTES =================
           Text(
-            'Textes de référence',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+              "f00002",
+              'Textes de référence',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -66,43 +75,72 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           _Paragraph.rich([
-            const TextSpan(
-              text:
-                  'Trois grands ensembles de textes encadrent l’usage de la force armée par les policiers :\n\n',
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                "f00003",
+                'Trois grands ensembles de textes encadrent l’usage de la force armée par les policiers :\n\n',
+              ),
             ),
             TextSpan(
-              text: '• Article L. 435-1 du Code de la Sécurité Intérieure',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                "f00004",
+                '• Article L. 435-1 du Code de la Sécurité Intérieure',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: referenceColor,
               ),
             ),
-            const TextSpan(
-              text:
-                  ' : cadre spécifique de l’usage des armes par les agents de la Police nationale et de la Gendarmerie nationale.\n',
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                "f00005",
+                ' : cadre spécifique de l’usage des armes par les agents de la Police nationale et de la Gendarmerie nationale.\n',
+              ),
             ),
             TextSpan(
-              text: '• Article 122-5 du Code pénal',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                "f00006",
+                '• Article 122-5 du Code pénal',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: referenceColor,
               ),
             ),
-            const TextSpan(
+            TextSpan(
               text:
-                  ' : régime général de la légitime défense des personnes et des biens, applicable à tout justiciable, '
-                  'y compris aux policiers lorsqu’ils ne peuvent pas se placer dans le cadre de l’article L. 435-1.\n',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                    "f00007",
+                    ' : régime général de la légitime défense des personnes et des biens, applicable à tout justiciable, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                    "f00008",
+                    'y compris aux policiers lorsqu’ils ne peuvent pas se placer dans le cadre de l’article L. 435-1.\n',
+                  ),
             ),
             TextSpan(
-              text: '• Article L. 211-9 du Code de la Sécurité Intérieure',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                "f00009",
+                '• Article L. 211-9 du Code de la Sécurité Intérieure',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: referenceColor,
               ),
             ),
-            const TextSpan(
-              text:
-                  ' : règles particulières d’usage des armes pour la dispersion d’un attroupement, distinctes des cinq situations de l’article L. 435-1.',
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                "f00010",
+                ' : règles particulières d’usage des armes pour la dispersion d’un attroupement, distinctes des cinq situations de l’article L. 435-1.',
+              ),
             ),
           ]),
           const SizedBox(height: 18),
@@ -111,52 +149,125 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
           // 1 — CADRE SPÉCIFIQUE DE L’ARTICLE L. 435-1
           // =====================================================
           _HypoCard(
-            title:
-                '1. Le cadre spécifique de l’article L. 435-1 du Code de la Sécurité Intérieure',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+              "f00011",
+              '1. Le cadre spécifique de l’article L. 435-1 du Code de la Sécurité Intérieure',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’article L. 435-1 du Code de la Sécurité Intérieure fixe un régime spécial pour l’usage des armes '
-                'par les agents de la Police nationale et de la Gendarmerie nationale. '
-                'Ce texte ne s’applique pas à tout le monde, mais uniquement aux forces de sécurité intérieure régulièrement armées.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00012",
+                      'L’article L. 435-1 du Code de la Sécurité Intérieure fixe un régime spécial pour l’usage des armes ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00013",
+                      'par les agents de la Police nationale et de la Gendarmerie nationale. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00014",
+                      'Ce texte ne s’applique pas à tout le monde, mais uniquement aux forces de sécurité intérieure régulièrement armées.',
+                    ),
               ),
               SizedBox(height: 8),
-              _Paragraph('Ce régime repose sur deux étages :'),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00015",
+                  'Ce régime repose sur deux étages :',
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Trois conditions préalables obligatoires : agir dans l’exercice de ses fonctions, '
-                      'être identifiable comme policier (uniforme ou insignes apparents), '
-                      'et ne faire usage de l’arme qu’en cas de nécessité absolue et de manière strictement proportionnée.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00016",
+                        'Trois conditions préalables obligatoires : agir dans l’exercice de ses fonctions, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00017",
+                        'être identifiable comme policier (uniforme ou insignes apparents), ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00018",
+                        'et ne faire usage de l’arme qu’en cas de nécessité absolue et de manière strictement proportionnée.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Cinq situations limitativement énumérées dans lesquelles l’usage de l’arme peut être envisagé '
-                      '(atteintes à la vie, défense de lieux et de personnes confiées, fuite d’un individu dangereux, '
-                      'immobilisation d’un véhicule dangereux, périple meurtrier).',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00019",
+                        'Cinq situations limitativement énumérées dans lesquelles l’usage de l’arme peut être envisagé ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00020",
+                        '(atteintes à la vie, défense de lieux et de personnes confiées, fuite d’un individu dangereux, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00021",
+                        'immobilisation d’un véhicule dangereux, périple meurtrier).',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Lorsque ces conditions sont réunies, l’usage de l’arme est apprécié principalement au regard de ce texte spécial. '
-                'Les magistrats contrôlent alors si le policier était bien dans l’une des cinq situations prévues et si son tir répondait '
-                'aux exigences de nécessité absolue et de proportionnalité.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00022",
+                      'Lorsque ces conditions sont réunies, l’usage de l’arme est apprécié principalement au regard de ce texte spécial. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00023",
+                      'Les magistrats contrôlent alors si le policier était bien dans l’une des cinq situations prévues et si son tir répondait ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00024",
+                      'aux exigences de nécessité absolue et de proportionnalité.',
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Attention au champ d’application',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00025",
+                  'Attention au champ d’application',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'L’article L. 435-1 du Code de la Sécurité Intérieure ne régit pas tous les cas d’usage des armes. '
-                        'Il ne couvre pas, par exemple, les opérations de maintien de l’ordre en attroupement (régi par l’article L. 211-9) '
-                        'ni toutes les situations de légitime défense classique qui peuvent survenir dans la vie quotidienne d’un policier.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00026",
+                          'L’article L. 435-1 du Code de la Sécurité Intérieure ne régit pas tous les cas d’usage des armes. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00027",
+                          'Il ne couvre pas, par exemple, les opérations de maintien de l’ordre en attroupement (régi par l’article L. 211-9) ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00028",
+                          'ni toutes les situations de légitime défense classique qui peuvent survenir dans la vie quotidienne d’un policier.',
+                        ),
                   ),
                 ],
               ),
@@ -169,26 +280,49 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
           // 2 — RÉGIME GÉNÉRAL DE LA LÉGITIME DÉFENSE (CODE PÉNAL)
           // =====================================================
           _HypoCard(
-            title:
-                '2. La légitime défense de droit commun (article 122-5 du Code pénal)',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+              "f00029",
+              '2. La légitime défense de droit commun (article 122-5 du Code pénal)',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'L’article 122-5 du Code pénal pose le principe général de la légitime défense. '
-                      'Il s’applique à toute personne, simple citoyen ou policier, lorsque celle-ci réagit à une atteinte injustifiée. '
-                      'Ce texte couvre à la fois :\n',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00030",
+                        'L’article 122-5 du Code pénal pose le principe général de la légitime défense. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00031",
+                        'Il s’applique à toute personne, simple citoyen ou policier, lorsque celle-ci réagit à une atteinte injustifiée. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00032",
+                        'Ce texte couvre à la fois :\n',
+                      ),
                 ),
                 TextSpan(
-                  text: '• la légitime défense des personnes ;\n',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                    "f00033",
+                    '• la légitime défense des personnes ;\n',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
-                  text: '• la légitime défense des biens.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                    "f00034",
+                    '• la légitime défense des biens.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               ]),
@@ -196,34 +330,86 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Pour la défense des personnes : nécessité d’une atteinte injustifiée, actuelle et réelle, '
-                      'et d’un acte de défense simultané, nécessaire et proportionné à la gravité de l’attaque.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00035",
+                        'Pour la défense des personnes : nécessité d’une atteinte injustifiée, actuelle et réelle, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00036",
+                        'et d’un acte de défense simultané, nécessaire et proportionné à la gravité de l’attaque.',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Pour la défense des biens : nécessité d’interrompre l’exécution d’un crime ou d’un délit contre un bien, '
-                      'par un acte de défense autre qu’un homicide volontaire, strictement nécessaire au but poursuivi '
-                      'et proportionné à la gravité de l’infraction.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00037",
+                        'Pour la défense des biens : nécessité d’interrompre l’exécution d’un crime ou d’un délit contre un bien, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00038",
+                        'par un acte de défense autre qu’un homicide volontaire, strictement nécessaire au but poursuivi ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00039",
+                        'et proportionné à la gravité de l’infraction.',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Lorsque toutes ces conditions sont réunies, la personne n’est pas pénalement responsable : '
-                'la légitime défense efface l’infraction. Cela vaut également pour un policier, même s’il n’entre pas dans le cadre de l’article L. 435-1.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00040",
+                      'Lorsque toutes ces conditions sont réunies, la personne n’est pas pénalement responsable : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00041",
+                      'la légitime défense efface l’infraction. Cela vaut également pour un policier, même s’il n’entre pas dans le cadre de l’article L. 435-1.',
+                    ),
               ),
               SizedBox(height: 10),
               _ExempleBox(
-                title: 'Exemple simple de légitime défense',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00042",
+                  'Exemple simple de légitime défense',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Un policier en repos, non porteur d’insignes, est témoin d’une agression au couteau dans la rue. '
-                        'Il utilise son arme, de manière mesurée, pour neutraliser l’agresseur qui allait tuer la victime. '
-                        'Même si les conditions de l’article L. 435-1 ne sont pas réunies (absence d’uniforme, pas en service), '
-                        'la situation peut être appréciée au regard de l’article 122-5 du Code pénal : '
-                        'atteinte injustifiée, actuelle et réelle, défense nécessaire et proportionnée.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00043",
+                          'Un policier en repos, non porteur d’insignes, est témoin d’une agression au couteau dans la rue. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00044",
+                          'Il utilise son arme, de manière mesurée, pour neutraliser l’agresseur qui allait tuer la victime. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00045",
+                          'Même si les conditions de l’article L. 435-1 ne sont pas réunies (absence d’uniforme, pas en service), ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00046",
+                          'la situation peut être appréciée au regard de l’article 122-5 du Code pénal : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00047",
+                          'atteinte injustifiée, actuelle et réelle, défense nécessaire et proportionnée.',
+                        ),
                   ),
                 ],
               ),
@@ -236,22 +422,37 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
           // 3 — ARTICULATION CONCRÈTE DES DEUX RÉGIMES
           // =====================================================
           _HypoCard(
-            title:
-                '3. Comment articuler l’article L. 435-1\n   et l’article 122-5 du Code pénal ?',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+              "f00048",
+              '3. Comment articuler l’article L. 435-1\n   et l’article 122-5 du Code pénal ?',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Dans la pratique, le policier doit savoir dans quel régime il se situe au moment où il fait usage de son arme. '
-                'Les deux textes ne s’opposent pas : ils se complètent.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00049",
+                      'Dans la pratique, le policier doit savoir dans quel régime il se situe au moment où il fait usage de son arme. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00050",
+                      'Les deux textes ne s’opposent pas : ils se complètent.',
+                    ),
               ),
               const SizedBox(height: 8),
 
               // ---- Hypothèse 1
               Text(
-                'Hypothèse 1 : toutes les conditions de l’article L. 435-1 sont remplies',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00051",
+                  'Hypothèse 1 : toutes les conditions de l’article L. 435-1 sont remplies',
+                ),
                 style: GoogleFonts.fustat(
                   fontSize: 14.5,
                   fontWeight: FontWeight.w800,
@@ -259,19 +460,35 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Le policier est dans l’exercice de ses fonctions, identifiable par son uniforme ou des insignes apparents, '
-                      'et il se trouve dans l’une des cinq situations prévues par le texte. '
-                      'L’usage de l’arme est alors apprécié prioritairement au regard de l’article L. 435-1 du Code de la Sécurité Intérieure.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00052",
+                        'Le policier est dans l’exercice de ses fonctions, identifiable par son uniforme ou des insignes apparents, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00053",
+                        'et il se trouve dans l’une des cinq situations prévues par le texte. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00054",
+                        'L’usage de l’arme est alors apprécié prioritairement au regard de l’article L. 435-1 du Code de la Sécurité Intérieure.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
               // ---- Hypothèse 2
               Text(
-                'Hypothèse 2 : une condition préalable manque',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00055",
+                  'Hypothèse 2 : une condition préalable manque',
+                ),
                 style: GoogleFonts.fustat(
                   fontSize: 14.5,
                   fontWeight: FontWeight.w800,
@@ -279,27 +496,55 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Par exemple, le policier intervient sans uniforme ni insignes, ou dans un cadre privé, '
-                      'ou encore alors qu’il n’est pas clairement dans l’une des cinq situations prévues. '
-                      'Dans ce cas, l’article L. 435-1 ne peut pas, à lui seul, justifier l’usage de l’arme.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00056",
+                        'Par exemple, le policier intervient sans uniforme ni insignes, ou dans un cadre privé, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00057",
+                        'ou encore alors qu’il n’est pas clairement dans l’une des cinq situations prévues. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00058",
+                        'Dans ce cas, l’article L. 435-1 ne peut pas, à lui seul, justifier l’usage de l’arme.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Cependant, si toutes les conditions de la légitime défense sont remplies '
-                      '(atteinte injustifiée, actuelle et réelle ; défense nécessaire et proportionnée), '
-                      'l’article 122-5 du Code pénal peut être invoqué pour fonder la non-responsabilité pénale du policier.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00059",
+                        'Cependant, si toutes les conditions de la légitime défense sont remplies ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00060",
+                        '(atteinte injustifiée, actuelle et réelle ; défense nécessaire et proportionnée), ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00061",
+                        'l’article 122-5 du Code pénal peut être invoqué pour fonder la non-responsabilité pénale du policier.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
               // ---- Hypothèse 3
               Text(
-                'Hypothèse 3 : situation couverte par les deux textes',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00062",
+                  'Hypothèse 3 : situation couverte par les deux textes',
+                ),
                 style: GoogleFonts.fustat(
                   fontSize: 14.5,
                   fontWeight: FontWeight.w800,
@@ -307,36 +552,75 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Certaines scènes d’attaque armée répondent à la fois aux critères de l’article L. 435-1 '
-                      'et à ceux de la légitime défense pénale (article 122-5). '
-                      'Dans ce cas, les magistrats peuvent se référer aux deux textes, mais le contrôle de nécessité et de proportionnalité reste identique.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00063",
+                        'Certaines scènes d’attaque armée répondent à la fois aux critères de l’article L. 435-1 ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00064",
+                        'et à ceux de la légitime défense pénale (article 122-5). ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00065",
+                        'Dans ce cas, les magistrats peuvent se référer aux deux textes, mais le contrôle de nécessité et de proportionnalité reste identique.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
 
               _NotaBox(
-                title: 'Point commun central',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00066",
+                  'Point commun central',
+                ),
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
-                        'Dans tous les cas, qu’il s’agisse de l’article L. 435-1 du Code de la Sécurité Intérieure '
-                        'ou de l’article 122-5 du Code pénal, les juges vérifient rigoureusement deux éléments communs :\n\n',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00067",
+                          'Dans tous les cas, qu’il s’agisse de l’article L. 435-1 du Code de la Sécurité Intérieure ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00068",
+                          'ou de l’article 122-5 du Code pénal, les juges vérifient rigoureusement deux éléments communs :\n\n',
+                        ),
                   ),
-                  const TextSpan(
-                    text: '• la nécessité réelle de l’usage de l’arme ;\n',
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00069",
+                      '• la nécessité réelle de l’usage de l’arme ;\n',
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w700),
                   ),
-                  const TextSpan(
-                    text:
-                        '• la stricte proportionnalité entre la riposte et la gravité de la menace.\n\n',
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00070",
+                      '• la stricte proportionnalité entre la riposte et la gravité de la menace.\n\n',
+                    ),
                   ),
                   TextSpan(
                     text:
-                        'Le vocabulaire peut varier (nécessité absolue, moyens strictement proportionnés), '
-                        'mais l’esprit est le même : l’arme à feu doit rester un ultime recours, mesuré et contrôlé.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00071",
+                          'Le vocabulaire peut varier (nécessité absolue, moyens strictement proportionnés), ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00072",
+                          'mais l’esprit est le même : l’arme à feu doit rester un ultime recours, mesuré et contrôlé.',
+                        ),
                     style: TextStyle(color: warningColor),
                   ),
                 ],
@@ -350,35 +634,86 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
           // 4 — PLACE PARTICULIÈRE DE L’ARTICLE L. 211-9
           // =====================================================
           _HypoCard(
-            title:
-                '4. Dispersion d’un attroupement :\n   l’article L. 211-9 du Code de la Sécurité Intérieure',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+              "f00073",
+              '4. Dispersion d’un attroupement :\n   l’article L. 211-9 du Code de la Sécurité Intérieure',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'L’article L. 211-9 du Code de la Sécurité Intérieure prévoit un régime spécifique '
-                'pour l’usage des armes dans la dispersion d’un attroupement. '
-                'Il s’agit principalement de maintien de l’ordre, avec des règles propres sur les sommations, '
-                'la gradation des moyens employés et l’autorité habilitée à ordonner le tir.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00074",
+                      'L’article L. 211-9 du Code de la Sécurité Intérieure prévoit un régime spécifique ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00075",
+                      'pour l’usage des armes dans la dispersion d’un attroupement. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00076",
+                      'Il s’agit principalement de maintien de l’ordre, avec des règles propres sur les sommations, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00077",
+                      'la gradation des moyens employés et l’autorité habilitée à ordonner le tir.',
+                    ),
               ),
               SizedBox(height: 8),
               _Paragraph(
-                'Ce régime se situe à côté de l’article L. 435-1 et de la légitime défense classique : '
-                'il ne se confond pas avec eux. Toutefois, même en maintien de l’ordre, des cas individuels de légitime défense '
-                'peuvent survenir (par exemple, un manifestant qui attaque un policier avec une arme blanche). '
-                'Dans cette hypothèse, l’article 122-5 du Code pénal peut de nouveau être invoqué.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00078",
+                      'Ce régime se situe à côté de l’article L. 435-1 et de la légitime défense classique : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00079",
+                      'il ne se confond pas avec eux. Toutefois, même en maintien de l’ordre, des cas individuels de légitime défense ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00080",
+                      'peuvent survenir (par exemple, un manifestant qui attaque un policier avec une arme blanche). ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00081",
+                      'Dans cette hypothèse, l’article 122-5 du Code pénal peut de nouveau être invoqué.',
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: 'À retenir en maintien de l’ordre',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00082",
+                  'À retenir en maintien de l’ordre',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Le tir ordonné dans le cadre de la dispersion d’un attroupement répond aux règles de l’article L. 211-9. '
-                        'Le tir de légitime défense d’un policier agressé individuellement sera, lui, appréciée à la lumière de l’article 122-5 du Code pénal, '
-                        'éventuellement combiné avec l’article L. 435-1 si les conditions de ce dernier sont également réunies.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00083",
+                          'Le tir ordonné dans le cadre de la dispersion d’un attroupement répond aux règles de l’article L. 211-9. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00084",
+                          'Le tir de légitime défense d’un policier agressé individuellement sera, lui, appréciée à la lumière de l’article 122-5 du Code pénal, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                          "f00085",
+                          'éventuellement combiné avec l’article L. 435-1 si les conditions de ce dernier sont également réunies.',
+                        ),
                   ),
                 ],
               ),
@@ -391,43 +726,91 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
           // 5 — SYNTHÈSE OPÉRATIONNELLE POUR LE POLICIER
           // =====================================================
           _HypoCard(
-            title: '5. Synthèse opérationnelle : le réflexe en 3 questions',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+              "f00086",
+              '5. Synthèse opérationnelle : le réflexe en 3 questions',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Avant de faire usage de son arme, le policier doit, autant que possible, passer mentalement par trois questions rapides :',
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                  "f00087",
+                  'Avant de faire usage de son arme, le policier doit, autant que possible, passer mentalement par trois questions rapides :',
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      '1) Suis-je dans le champ de l’article L. 435-1 du Code de la Sécurité Intérieure ? '
-                      '(exercice de mes fonctions, uniforme ou insignes, menace grave) et dans l’une des cinq situations prévues ?',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00088",
+                        '1) Suis-je dans le champ de l’article L. 435-1 du Code de la Sécurité Intérieure ? ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00089",
+                        '(exercice de mes fonctions, uniforme ou insignes, menace grave) et dans l’une des cinq situations prévues ?',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      '2) Si une condition manque ou si la situation ne correspond pas aux cinq cas, '
-                      'les critères de la légitime défense de l’article 122-5 du Code pénal sont-ils réunis '
-                      '(atteinte injustifiée, actuelle et réelle ; défense nécessaire, simultanée et proportionnée) ?',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00090",
+                        '2) Si une condition manque ou si la situation ne correspond pas aux cinq cas, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00091",
+                        'les critères de la légitime défense de l’article 122-5 du Code pénal sont-ils réunis ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00092",
+                        '(atteinte injustifiée, actuelle et réelle ; défense nécessaire, simultanée et proportionnée) ?',
+                      ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      '3) En maintien de l’ordre, suis-je dans un tir d’attroupement relevant de l’article L. 211-9, '
-                      'ou dans un cas individuel de légitime défense au sens du Code pénal ?',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00093",
+                        '3) En maintien de l’ordre, suis-je dans un tir d’attroupement relevant de l’article L. 211-9, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                        "f00094",
+                        'ou dans un cas individuel de légitime défense au sens du Code pénal ?',
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                'Ce raisonnement n’a pas vocation à ralentir l’action, mais à structurer le réflexe professionnel. '
-                'Plus le policier connaît ces régimes et leurs articulations, plus il sera capable de prendre, en situation de stress, '
-                'une décision juridiquement solide et opérationnellement maîtrisée.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00095",
+                      'Ce raisonnement n’a pas vocation à ralentir l’action, mais à structurer le réflexe professionnel. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00096",
+                      'Plus le policier connaît ces régimes et leurs articulations, plus il sera capable de prendre, en situation de stress, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/usage_des_armes/ua_lien_legitime_defense_page.dart",
+                      "f00097",
+                      'une décision juridiquement solide et opérationnellement maîtrisée.',
+                    ),
               ),
             ],
           ),

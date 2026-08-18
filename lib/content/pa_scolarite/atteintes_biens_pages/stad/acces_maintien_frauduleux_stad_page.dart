@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
   const PaAccesMaintienFrauduleuxStadPage({super.key});
@@ -59,10 +60,18 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes aux STAD",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+            "f00002",
+            "Atteintes aux STAD",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’accès ou le maintien frauduleux dans un système de traitement automatisé de données",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+              "f00003",
+              "L’accès ou le maintien frauduleux dans un système de traitement automatisé de données",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,14 +102,26 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d'accéder ou de se maintenir, frauduleusement, dans tout ou partie d'un système "
-                "de traitement automatisé de données constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00005",
+                      "Le fait d'accéder ou de se maintenir, frauduleusement, dans tout ou partie d'un système ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00006",
+                      "de traitement automatisé de données constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -105,22 +130,30 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00008",
+                    "Article 323-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’accès ou le maintien frauduleux dans un système de traitement automatisé de données.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00009",
+                    " : définit et réprime l’accès ou le maintien frauduleux dans un système de traitement automatisé de données.",
+                  ),
                 ),
               ]),
             ],
@@ -130,32 +163,69 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Un système de traitement automatisé de données",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00011",
+                  "A) Un système de traitement automatisé de données",
+                ),
               ),
               _Paragraph(
-                "Le code pénal ne donne pas de définition du système de traitement automatisé de données. "
-                "Il peut être compris comme un ensemble de biens matériels et logiciels, doté d’une capacité "
-                "de mémoire et de traitement de l’information, capable d’accomplir des tâches et d’en restituer les résultats.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00012",
+                      "Le code pénal ne donne pas de définition du système de traitement automatisé de données. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00013",
+                      "Il peut être compris comme un ensemble de biens matériels et logiciels, doté d’une capacité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00014",
+                      "de mémoire et de traitement de l’information, capable d’accomplir des tâches et d’en restituer les résultats.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le système peut être la machine en elle-même, ses composants, mais également les programmes ou logiciels "
-                "qui en assurent le fonctionnement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00015",
+                      "Le système peut être la machine en elle-même, ses composants, mais également les programmes ou logiciels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00016",
+                      "qui en assurent le fonctionnement.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Jurisprudences : "),
                   TextSpan(
-                    text:
-                        "radiotéléphone = système (C.A. Paris, 18 novembre 1992)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00017",
+                      "Jurisprudences : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00018",
+                      "radiotéléphone = système (C.A. Paris, 18 novembre 1992)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -163,8 +233,11 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
                   ),
                   TextSpan(text: " ; "),
                   TextSpan(
-                    text:
-                        "annuaire électronique France Télécom = système (Tr. corr. Brest, 14 mars 1995)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00019",
+                      "annuaire électronique France Télécom = système (Tr. corr. Brest, 14 mars 1995)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -172,8 +245,11 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
                   ),
                   TextSpan(text: " ; "),
                   TextSpan(
-                    text:
-                        "réseau « carte bleue » = STAD (T.G.I. Paris, 25 février 2000)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00020",
+                      "réseau « carte bleue » = STAD (T.G.I. Paris, 25 février 2000)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -185,36 +261,85 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("B) Le « maître du système »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00021",
+                  "B) Le « maître du système »",
+                ),
+              ),
               _Paragraph(
-                "Le maître du système n’est pas nécessairement son concepteur. Il peut s’agir de celui qui a régulièrement "
-                "acquis le droit de l’exploiter, pour son entreprise ou pour commercialiser les services rendus.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00022",
+                      "Le maître du système n’est pas nécessairement son concepteur. Il peut s’agir de celui qui a régulièrement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00023",
+                      "acquis le droit de l’exploiter, pour son entreprise ou pour commercialiser les services rendus.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il dispose de prérogatives proches des attributs de la propriété : modifier le système, le supprimer, "
-                "le communiquer à autrui, l’utiliser ou autoriser autrui à l’utiliser.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00024",
+                      "Il dispose de prérogatives proches des attributs de la propriété : modifier le système, le supprimer, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00025",
+                      "le communiquer à autrui, l’utiliser ou autoriser autrui à l’utiliser.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Les délits supposent le non-respect de la volonté du maître du système.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00026",
+                  "Les délits supposent le non-respect de la volonté du maître du système.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un accès ou un maintien"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00027",
+                  "C) Un accès ou un maintien",
+                ),
+              ),
               _Paragraph(
-                "L’accès n’est punissable que s’il est réalisé sans droit : soit parce que la personne n’a pas d’autorisation, "
-                "soit parce qu’elle dépasse les conditions d’accès (procédure, code, paiement, limites techniques…).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00028",
+                      "L’accès n’est punissable que s’il est réalisé sans droit : soit parce que la personne n’a pas d’autorisation, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00029",
+                      "soit parce qu’elle dépasse les conditions d’accès (procédure, code, paiement, limites techniques…).",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Jurisprudences : "),
                   TextSpan(
-                    text:
-                        "usage d’un code d’accès conservé après une période d’essai (Cass. crim., 03 octobre 2007)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00030",
+                      "Jurisprudences : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00031",
+                      "usage d’un code d’accès conservé après une période d’essai (Cass. crim., 03 octobre 2007)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -222,8 +347,11 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
                   ),
                   TextSpan(text: " ; "),
                   TextSpan(
-                    text:
-                        "insertion d’un « cheval de Troie » (Tr. corr. Limoges, 14 mars 1994)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00032",
+                      "insertion d’un « cheval de Troie » (Tr. corr. Limoges, 14 mars 1994)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -237,15 +365,19 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La jurisprudence a précisé qu’il n’est pas nécessaire que l’accès soit limité par un dispositif de protection. ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00033",
+                    "La jurisprudence a précisé qu’il n’est pas nécessaire que l’accès soit limité par un dispositif de protection. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "(C.A. Paris, 05 avril 1994)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00034",
+                    "(C.A. Paris, 05 avril 1994)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -253,25 +385,56 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
               SizedBox(height: 12),
 
               _Paragraph(
-                "L’accès peut viser « tout ou partie » du STAD : cela permet de réprimer aussi bien l’intrusion dans une zone "
-                "unique (terminal, logiciel…), que le dépassement d’habilitation d’une personne pourtant autorisée sur une autre partie.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00035",
+                      "L’accès peut viser « tout ou partie » du STAD : cela permet de réprimer aussi bien l’intrusion dans une zone ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00036",
+                      "unique (terminal, logiciel…), que le dépassement d’habilitation d’une personne pourtant autorisée sur une autre partie.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("D) Le maintien"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00037",
+                  "D) Le maintien",
+                ),
+              ),
               _Paragraph(
-                "Le maintien permet de réprimer notamment un accès initialement régulier (ou accidentel) suivi d’opérations irrégulières, "
-                "ou encore une « promenade » non autorisée dans le système.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00038",
+                      "Le maintien permet de réprimer notamment un accès initialement régulier (ou accidentel) suivi d’opérations irrégulières, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00039",
+                      "ou encore une « promenade » non autorisée dans le système.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
-                    text:
-                        "usage abusif à des fins ludiques du minitel mis à disposition d’agents d’un service public (C.A. Paris, 15 décembre 1999)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00040",
+                      "Jurisprudence : ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00041",
+                      "usage abusif à des fins ludiques du minitel mis à disposition d’agents d’un service public (C.A. Paris, 15 décembre 1999)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -284,7 +447,11 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
               SizedBox(height: 10),
 
               _Paragraph(
-                "Le maintien est un délit continu : la prescription ne commence à courir qu’à la fin du maintien.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00042",
+                  "Le maintien est un délit continu : la prescription ne commence à courir qu’à la fin du maintien.",
+                ),
               ),
             ],
           ),
@@ -293,44 +460,78 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+              "f00043",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’auteur doit avoir conscience d’accéder ou de se maintenir sans droit, contre le gré du maître du système.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00044",
+                  "L’auteur doit avoir conscience d’accéder ou de se maintenir sans droit, contre le gré du maître du système.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Jurisprudence : "),
                 TextSpan(
-                  text: "(C.A. Paris, 15 décembre 1999)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00045",
+                    "Jurisprudence : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00046",
+                    "(C.A. Paris, 15 décembre 1999)",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
               _Paragraph(
-                "L’accès par erreur (notamment si le système n’est pas protégé) n’est pas pénalement sanctionné. "
-                "La vraisemblance de l’erreur est appréciée au regard des compétences informatiques du prévenu.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00047",
+                      "L’accès par erreur (notamment si le système n’est pas protégé) n’est pas pénalement sanctionné. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00048",
+                      "La vraisemblance de l’erreur est appréciée au regard des compétences informatiques du prévenu.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le mobile est indifférent : jeu, prouesse technique, volonté de démontrer une faille…",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00049",
+                  "Le mobile est indifférent : jeu, prouesse technique, volonté de démontrer une faille…",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Jurisprudence : informaticien dénonçant une mauvaise protection de données personnelles ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00050",
+                      "Jurisprudence : informaticien dénonçant une mauvaise protection de données personnelles ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(T.G.I. Paris, 13 février 2002)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                      "f00051",
+                      "(T.G.I. Paris, 13 février 2002)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -346,72 +547,93 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+              "f00052",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00053",
+                    "Article 323-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsqu'il en est résulté soit la suppression ou la modification de données contenues dans le système, soit une altération du fonctionnement de ce système.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00054",
+                  "Lorsqu'il en est résulté soit la suppression ou la modification de données contenues dans le système, soit une altération du fonctionnement de ce système.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-1 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00055",
+                    "Article 323-1 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque les infractions ont été commises à l'encontre d'un STAD à caractère personnel mis en œuvre par l'État.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00056",
+                  "Lorsque les infractions ont été commises à l'encontre d'un STAD à caractère personnel mis en œuvre par l'État.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00057",
+                    "Article 323-4-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Lorsque l'infraction a été commise en bande organisée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00058",
+                  "Lorsque l'infraction a été commise en bande organisée.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 323-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00059",
+                    "Article 323-4-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque l’infraction expose autrui à un risque immédiat de mort ou de blessures graves (mutilation/infirmité permanente) ou fait obstacle aux secours destinés à faire échapper une personne à un péril imminent ou à combattre un sinistre dangereux.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00060",
+                  "Lorsque l’infraction expose autrui à un risque immédiat de mort ou de blessures graves (mutilation/infirmité permanente) ou fait obstacle aux secours destinés à faire échapper une personne à un péril imminent ou à combattre un sinistre dangereux.",
+                ),
               ),
             ],
           ),
@@ -420,138 +642,231 @@ class PaAccesMaintienFrauduleuxStadPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+              "f00061",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00062",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "3 ans d'emprisonnement et 100 000 € d'amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00063",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 323-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00064",
+                    "3 ans d'emprisonnement et 100 000 € d'amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00065",
+                    "article 323-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Aggravée (suppression/modification de données ou altération) : ",
-                ),
-                TextSpan(
-                  text: "5 ans d'emprisonnement et 150 000 € d'amende. — ",
-                ),
-                TextSpan(
-                  text: "article 323-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00066",
+                    "Aggravée (suppression/modification de données ou altération) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00067",
+                    "5 ans d'emprisonnement et 150 000 € d'amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00068",
+                    "article 323-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Aggravée (STAD à caractère personnel mis en œuvre par l’État) : ",
-                ),
-                TextSpan(
-                  text: "7 ans d'emprisonnement et 300 000 € d'amende. — ",
-                ),
-                TextSpan(
-                  text: "article 323-1 alinéa 3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00069",
+                    "Aggravée (STAD à caractère personnel mis en œuvre par l’État) : ",
                   ),
                 ),
-              ]),
-              SizedBox(height: 8),
-              _Paragraph.rich([
-                TextSpan(text: "Bande organisée : "),
                 TextSpan(
-                  text: "10 ans d'emprisonnement et 300 000 € d'amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00070",
+                    "7 ans d'emprisonnement et 300 000 € d'amende. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 323-4-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00071",
+                    "article 323-1 alinéa 3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Risque immédiat (mort/blessures graves/obstacle aux secours) : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00072",
+                    "Bande organisée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "10 ans d'emprisonnement et 300 000 € d'amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00073",
+                    "10 ans d'emprisonnement et 300 000 € d'amende. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 323-4-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00074",
+                    "article 323-4-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00075",
+                    "Risque immédiat (mort/blessures graves/obstacle aux secours) : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00076",
+                    "10 ans d'emprisonnement et 300 000 € d'amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00077",
+                    "article 323-4-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00078",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00079",
+                    "Responsabilité pénale prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00080",
+                    "l’article 323-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00081",
+                    " (amende selon l’article 131-38 et peines de l’article 131-39, dont l’interdiction d’activité liée à l’infraction).",
                   ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                  "f00082",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 323-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00083",
+                    "Tentative : OUI — prévue et réprimée par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (amende selon l’article 131-38 et peines de l’article 131-39, dont l’interdiction d’activité liée à l’infraction).",
-                ),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Tentative & complicité"),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Tentative : OUI — prévue et réprimée par ",
-                ),
-                TextSpan(
-                  text: "l’article 323-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00084",
+                    "l’article 323-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00085",
+                    "Complicité : OUI — conformément à ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00086",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart",
+                    "f00087",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],
@@ -809,9 +1124,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

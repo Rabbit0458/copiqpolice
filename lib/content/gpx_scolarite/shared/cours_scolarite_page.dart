@@ -11,6 +11,79 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+/// Catalogue des nouvelles fiches créées depuis le panneau administrateur.
+/// Les cours historiques conservent leurs routes et leurs widgets d'origine.
+class CoursScolariteCatalogPage extends StatefulWidget {
+  const CoursScolariteCatalogPage({super.key});
+
+  @override
+  State<CoursScolariteCatalogPage> createState() =>
+      _CoursScolariteCatalogPageState();
+}
+
+class _CoursScolariteCatalogPageState extends State<CoursScolariteCatalogPage> {
+  late final Future<List<Map<String, dynamic>>> _courses = _load();
+
+  Future<List<Map<String, dynamic>>> _load() async {
+    final rows = await Supabase.instance.client
+        .from('cours_scolarite')
+        .select('route, code, title, subtitle, track, category, sort_order')
+        .eq('is_published', true)
+        .order('sort_order')
+        .order('title');
+    return (rows as List)
+        .map((row) => Map<String, dynamic>.from(row as Map))
+        .toList(growable: false);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Fiches de cours')),
+      body: FutureBuilder<List<Map<String, dynamic>>>(
+        future: _courses,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState != ConnectionState.done) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (snapshot.hasError) {
+            return const Center(
+              child: Text('Chargement des cours impossible.'),
+            );
+          }
+          final courses = snapshot.data ?? const <Map<String, dynamic>>[];
+          return ListView.separated(
+            padding: const EdgeInsets.all(16),
+            itemCount: courses.length,
+            separatorBuilder: (_, __) => const SizedBox(height: 8),
+            itemBuilder: (context, index) {
+              final course = courses[index];
+              final title = (course['title'] as String?) ?? 'Cours';
+              final code = (course['code'] as String?) ?? '';
+              final subtitle = (course['subtitle'] as String?) ?? '';
+              return Card(
+                child: ListTile(
+                  leading: CircleAvatar(child: Text(code)),
+                  title: Text(title),
+                  subtitle: subtitle.isEmpty ? null : Text(subtitle),
+                  trailing: const Icon(Icons.chevron_right_rounded),
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) => CoursScolaritePage(
+                        courseRoute: course['route'] as String?,
+                      ),
+                    ),
+                  ),
+                ),
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
+}
+
 /// Fiche de cours chargée depuis Supabase.
 ///
 /// La route est l'identifiant : soit passée au constructeur (`courseRoute`),
@@ -43,9 +116,7 @@ class _CoursScolaritePageState extends State<CoursScolaritePage> {
     final settings = ModalRoute.of(context)?.settings;
     final args = settings?.arguments;
     final key =
-        widget.courseRoute ??
-        (args is String ? args : null) ??
-        settings?.name;
+        widget.courseRoute ?? (args is String ? args : null) ?? settings?.name;
 
     if (key == null || key.isEmpty) {
       setState(() {
@@ -93,7 +164,9 @@ class _CoursScolaritePageState extends State<CoursScolaritePage> {
   Color get _accent {
     final hex = (_cours?['color_hex'] as String?) ?? '#1147D9';
     final v = hex.replaceAll('#', '').trim();
-    return Color(int.tryParse(v.length == 6 ? 'FF$v' : v, radix: 16) ?? 0xFF1147D9);
+    return Color(
+      int.tryParse(v.length == 6 ? 'FF$v' : v, radix: 16) ?? 0xFF1147D9,
+    );
   }
 
   @override
@@ -127,7 +200,11 @@ class _CoursScolaritePageState extends State<CoursScolaritePage> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const Icon(Icons.menu_book_outlined, size: 44, color: Color(0xFF94A3B8)),
+          const Icon(
+            Icons.menu_book_outlined,
+            size: 44,
+            color: Color(0xFF94A3B8),
+          ),
           const SizedBox(height: 14),
           Text(
             _error!,
@@ -328,10 +405,9 @@ class _CoursScolaritePageState extends State<CoursScolaritePage> {
               child: FilledButton.icon(
                 onPressed: () {
                   HapticFeedback.selectionClick();
-                  Navigator.of(context).pushNamed(
-                    '/gpx/scolarite/quiz',
-                    arguments: quizModule,
-                  );
+                  Navigator.of(
+                    context,
+                  ).pushNamed('/gpx/scolarite/quiz', arguments: quizModule);
                 },
                 icon: const Icon(Icons.quiz_rounded, size: 20),
                 label: const Text(
@@ -495,7 +571,10 @@ class _MarkdownBody extends StatelessWidget {
       i++;
     }
 
-    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: blocks);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: blocks,
+    );
   }
 
   Widget _listItem(BuildContext context, String bullet, String text) => Padding(
@@ -642,10 +721,9 @@ class _MarkdownBody extends StatelessWidget {
 
     return RichText(
       text: TextSpan(
-        style: DefaultTextStyle.of(context).style.copyWith(
-          fontSize: fontSize,
-          height: height,
-        ),
+        style: DefaultTextStyle.of(
+          context,
+        ).style.copyWith(fontSize: fontSize, height: height),
         children: spans,
       ),
     );

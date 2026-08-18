@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class InterventionDebitBoissonsPage extends StatelessWidget {
   const InterventionDebitBoissonsPage({super.key});
@@ -50,10 +51,18 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Débit de boissons",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+            "f00002",
+            "Débit de boissons",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Intervention dans un débit de boissons",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+              "f00003",
+              "Intervention dans un débit de boissons",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -80,41 +93,67 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Cadre légal (rappels utiles)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+              "f00004",
+              "I — Cadre légal (rappels utiles)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Selon le contexte de l’intervention, vous pouvez vous appuyer sur : ",
-                ),
-                TextSpan(
-                  text: "l’article 78-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " (contrôle d’identité), "),
-                TextSpan(
-                  text: "l’article 78-2-2 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: " (réquisitions du procureur), et "),
-                TextSpan(
-                  text: "l’article 53 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                    "f00005",
+                    "Selon le contexte de l’intervention, vous pouvez vous appuyer sur : ",
                   ),
                 ),
                 TextSpan(
-                  text: " (flagrance) lorsque les conditions sont réunies.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                    "f00006",
+                    "l’article 78-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                    "f00007",
+                    " (contrôle d’identité), ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                    "f00008",
+                    "l’article 78-2-2 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                    "f00009",
+                    " (réquisitions du procureur), et ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                    "f00010",
+                    "l’article 53 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                    "f00011",
+                    " (flagrance) lorsque les conditions sont réunies.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
@@ -123,8 +162,16 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le cadre juridique exact dépend du motif (mission commandée, réquisition, trouble à l’ordre public, infraction constatée). "
-                        "Avant l’action, clarifier le cadre et la conduite à tenir avec la hiérarchie / l’OPJ avisé.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                          "f00012",
+                          "Le cadre juridique exact dépend du motif (mission commandée, réquisition, trouble à l’ordre public, infraction constatée). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                          "f00013",
+                          "Avant l’action, clarifier le cadre et la conduite à tenir avec la hiérarchie / l’OPJ avisé.",
+                        ),
                   ),
                 ],
               ),
@@ -135,17 +182,41 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
 
           // Définition / risques
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+              "f00014",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention dans un débit de boissons requiert la plus grande vigilance en raison :\n"
-                "• de la configuration des lieux,\n"
-                "• du nombre de consommateurs,\n"
-                "• et de leur possible état d’excitation ou d’ébriété.\n\n"
-                "Une intervention dans ce type d’établissement est toujours potentiellement dangereuse.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                      "f00015",
+                      "L’intervention dans un débit de boissons requiert la plus grande vigilance en raison :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                      "f00016",
+                      "• de la configuration des lieux,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                      "f00017",
+                      "• du nombre de consommateurs,\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                      "f00018",
+                      "• et de leur possible état d’excitation ou d’ébriété.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                      "f00019",
+                      "Une intervention dans ce type d’établissement est toujours potentiellement dangereuse.",
+                    ),
               ),
             ],
           ),
@@ -154,46 +225,86 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
 
           // Cas d'intervention
           _ConditionCard(
-            title: "II — Les cas d’intervention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+              "f00020",
+              "II — Les cas d’intervention",
+            ),
             cardColor: cardCases,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Déclenchement de l’intervention"),
-              _BulletPoint(
-                text:
-                    "Contrôle ordonné par la hiérarchie (ex. contrôle d’identité).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00021",
+                  "A) Déclenchement de l’intervention",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Réquisition d’un particulier (consommateur ou non) : différend, tapage, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00022",
+                  "Contrôle ordonné par la hiérarchie (ex. contrôle d’identité).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Réquisition du débitant ou de son représentant : différend, bagarre, etc.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00023",
+                  "Réquisition d’un particulier (consommateur ou non) : différend, tapage, etc.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Constatation d’une infraction : fermeture tardive, tapage, bagarre, ivresse…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00024",
+                  "Réquisition du débitant ou de son représentant : différend, bagarre, etc.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Trouble à l’ordre public : tapage, rixe, altercation, attroupement…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00025",
+                  "Constatation d’une infraction : fermeture tardive, tapage, bagarre, ivresse…",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00026",
+                  "Trouble à l’ordre public : tapage, rixe, altercation, attroupement…",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("B) Objectifs possibles sur place"),
-              _BulletPoint(
-                text:
-                    "Constatation crimes et délits : interpellation des auteurs si nécessaire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00027",
+                  "B) Objectifs possibles sur place",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Police administrative : vérifications sécurité / hygiène / salubrité (selon mission).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00028",
+                  "Constatation crimes et délits : interpellation des auteurs si nécessaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contrôle des pièces administratives et du respect de la réglementation générale (selon compétence et cadre fixé).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00029",
+                  "Police administrative : vérifications sécurité / hygiène / salubrité (selon mission).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00030",
+                  "Contrôle des pièces administratives et du respect de la réglementation générale (selon compétence et cadre fixé).",
+                ),
               ),
             ],
           ),
@@ -202,68 +313,147 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
 
           // Principes de base
           _ConditionCard(
-            title: "III — Principes de base",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+              "f00031",
+              "III — Principes de base",
+            ),
             cardColor: cardPrinciples,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Avant l’action : se préparer"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00032",
+                  "A) Avant l’action : se préparer",
+                ),
+              ),
               _Paragraph(
-                "Recueillir un maximum d’informations sur l’établissement lorsque c’est possible :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00033",
+                  "Recueillir un maximum d’informations sur l’établissement lorsque c’est possible :",
+                ),
               ),
               SizedBox(height: 6),
-              _BulletPoint(text: "Propriétaire ou gérant."),
-              _BulletPoint(text: "Personnel de service."),
               _BulletPoint(
-                text:
-                    "Disposition interne : sous-sol, étage, arrière-salle, couloirs, points d’étranglement…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00034",
+                  "Propriétaire ou gérant.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Disposition extérieure : arrière-cour, sorties sur parking, immeuble, issues secondaires…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00035",
+                  "Personnel de service.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Clientèle habituelle / ambiance (tensions connues, habitudes, événements).",
-              ),
-              SizedBox(height: 12),
-
-              _SubTitle("B) Coordination & effectif"),
-              _BulletPoint(
-                text:
-                    "Se concerter sur le mode d’intervention et la répartition des rôles.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00036",
+                  "Disposition interne : sous-sol, étage, arrière-salle, couloirs, points d’étranglement…",
+                ),
               ),
               _BulletPoint(
-                text: "Intervenir à 3 ou 4 fonctionnaires (jamais seul).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00037",
+                  "Disposition extérieure : arrière-cour, sorties sur parking, immeuble, issues secondaires…",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Utiliser des signes conventionnels si besoin pour alerter d’un geste suspect.",
-              ),
-              SizedBox(height: 12),
-
-              _SubTitle("C) Sécurité & information radio"),
-              _BulletPoint(
-                text:
-                    "S’équiper au préalable des matériels individuels et collectifs de protection.",
-              ),
-              _BulletPoint(
-                text:
-                    "Avertir le PC radio avant l’action (mission commandée ou d’initiative) : lieu + motif.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00038",
+                  "Clientèle habituelle / ambiance (tensions connues, habitudes, événements).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("D) Arrivée sur les lieux"),
-              _BulletPoint(
-                text:
-                    "Privilégier une arrivée discrète (éviter avertisseurs sonores/lumineux).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00039",
+                  "B) Coordination & effectif",
+                ),
               ),
               _BulletPoint(
-                text: "Aux abords : mémoriser les issues (portes, fenêtres).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00040",
+                  "Se concerter sur le mode d’intervention et la répartition des rôles.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Observer si possible à travers les vitres : disposition, nombre, emplacement des consommateurs, ambiance générale.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00041",
+                  "Intervenir à 3 ou 4 fonctionnaires (jamais seul).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00042",
+                  "Utiliser des signes conventionnels si besoin pour alerter d’un geste suspect.",
+                ),
+              ),
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00043",
+                  "C) Sécurité & information radio",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00044",
+                  "S’équiper au préalable des matériels individuels et collectifs de protection.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00045",
+                  "Avertir le PC radio avant l’action (mission commandée ou d’initiative) : lieu + motif.",
+                ),
+              ),
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00046",
+                  "D) Arrivée sur les lieux",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00047",
+                  "Privilégier une arrivée discrète (éviter avertisseurs sonores/lumineux).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00048",
+                  "Aux abords : mémoriser les issues (portes, fenêtres).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                  "f00049",
+                  "Observer si possible à travers les vitres : disposition, nombre, emplacement des consommateurs, ambiance générale.",
+                ),
               ),
               SizedBox(height: 12),
 
@@ -272,8 +462,16 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un débit de boissons concentre souvent : promiscuité, alcoolisation, effet de groupe, objets détournables (bouteilles, verres), "
-                        "et multiples issues. La préparation + la coordination de l’équipage font la différence.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                          "f00050",
+                          "Un débit de boissons concentre souvent : promiscuité, alcoolisation, effet de groupe, objets détournables (bouteilles, verres), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart",
+                          "f00051",
+                          "et multiples issues. La préparation + la coordination de l’équipage font la différence.",
+                        ),
                   ),
                 ],
               ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class IncendiePrimoPage extends StatelessWidget {
   const IncendiePrimoPage({super.key});
@@ -62,10 +63,18 @@ class IncendiePrimoPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Intervention — Autres",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+            "f00002",
+            "Intervention — Autres",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -80,7 +89,11 @@ class IncendiePrimoPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Primo-intervenant sur un incendie",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00003",
+              "Primo-intervenant sur un incendie",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -91,15 +104,31 @@ class IncendiePrimoPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "De quoi s’agit-il ?",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00004",
+              "De quoi s’agit-il ?",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Lorsque des policiers sont primo-intervenants sur un incendie, les premières minutes sont déterminantes : "
-                "apprécier la situation, faciliter l’arrivée des secours, préserver la sécurité de l’équipage et des tiers.\n\n"
-                "Chaque situation est singulière, mais des actes réflexes permettent d’agir plus vite et plus sereinement.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00005",
+                      "Lorsque des policiers sont primo-intervenants sur un incendie, les premières minutes sont déterminantes : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00006",
+                      "apprécier la situation, faciliter l’arrivée des secours, préserver la sécurité de l’équipage et des tiers.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00007",
+                      "Chaque situation est singulière, mais des actes réflexes permettent d’agir plus vite et plus sereinement.",
+                    ),
               ),
             ],
           ),
@@ -108,14 +137,26 @@ class IncendiePrimoPage extends StatelessWidget {
 
           // ✅ Élément “légal” en haut : pas de texte juridique dans la fiche fournie
           _ConditionCard(
-            title: "Références (à compléter si besoin)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00008",
+              "Références (à compléter si besoin)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La fiche AMARIS fournie est un mémo opérationnel et ne cite pas d’articles de loi. "
-                "Si tu veux intégrer des bases juridiques (CPP / CSI / CP…), donne-moi les références et je les place ici en rouge, tout en haut.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00009",
+                      "La fiche AMARIS fournie est un mémo opérationnel et ne cite pas d’articles de loi. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00010",
+                      "Si tu veux intégrer des bases juridiques (CPP / CSI / CP…), donne-moi les références et je les place ici en rouge, tout en haut.",
+                    ),
               ),
             ],
           ),
@@ -123,36 +164,67 @@ class IncendiePrimoPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "1 — Apprécier vite la situation & informer",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00011",
+              "1 — Apprécier vite la situation & informer",
+            ),
             cardColor: cardEval,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Actes réflexes dès l’arrivée"),
-              _BulletPoint(
-                text:
-                    "Faire confirmer par le C.I.C que les services d’urgence ont été prévenus.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00012",
+                  "Actes réflexes dès l’arrivée",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dresser un premier bilan : nature de l’incendie, origine supposée, nombre de personnes présentes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00013",
+                  "Faire confirmer par le C.I.C que les services d’urgence ont été prévenus.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Évaluer le danger pour les personnes et les risques de propagation/aggravation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00014",
+                  "Dresser un premier bilan : nature de l’incendie, origine supposée, nombre de personnes présentes.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00015",
+                  "Évaluer le danger pour les personnes et les risques de propagation/aggravation.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Témoins"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00016",
+                  "Témoins",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Recueillir l’identité des témoins éventuels et les maintenir sur place.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00017",
+                  "Recueillir l’identité des témoins éventuels et les maintenir sur place.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Objectif : transmettre au C.I.C des informations essentielles, claires et utiles aux secours.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00018",
+                      "Objectif : transmettre au C.I.C des informations essentielles, claires et utiles aux secours.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -163,32 +235,60 @@ class IncendiePrimoPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "2 — Mettre un périmètre de sécurité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00019",
+              "2 — Mettre un périmètre de sécurité",
+            ),
             cardColor: cardPerim,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Faciliter l’arrivée des secours"),
-              _BulletPoint(
-                text:
-                    "Garantir l’accès des premiers engins de secours jusqu’au pied du bâtiment en feu.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00020",
+                  "Faciliter l’arrivée des secours",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Veiller à ce que les véhicules de police (verrouillés, stationnés à proximité) ne gênent pas l’accès des secours.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00021",
+                  "Garantir l’accès des premiers engins de secours jusqu’au pied du bâtiment en feu.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00022",
+                  "Veiller à ce que les véhicules de police (verrouillés, stationnés à proximité) ne gênent pas l’accès des secours.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Protéger les tiers"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00023",
+                  "Protéger les tiers",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Interdire tout accès à la zone du sinistre (sécuriser, canaliser, éloigner).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00024",
+                  "Interdire tout accès à la zone du sinistre (sécuriser, canaliser, éloigner).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "À l’arrivée des secours et en coordination avec le COS, adapter le périmètre sans perturber les manœuvres.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00025",
+                      "À l’arrivée des secours et en coordination avec le COS, adapter le périmètre sans perturber les manœuvres.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -197,8 +297,11 @@ class IncendiePrimoPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ne jamais se trouver à l’intérieur du périmètre de sécurité.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00026",
+                      "Ne jamais se trouver à l’intérieur du périmètre de sécurité.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -209,42 +312,74 @@ class IncendiePrimoPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "3 — Prendre en compte les occupants & rassurer",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00027",
+              "3 — Prendre en compte les occupants & rassurer",
+            ),
             cardColor: cardVict,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Paroles simples et rassurantes"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00028",
+                  "Paroles simples et rassurantes",
+                ),
+              ),
               _Paragraph(
-                "Si des personnes se manifestent aux fenêtres (ex. feu d’appartement), leur dire :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00029",
+                  "Si des personnes se manifestent aux fenêtres (ex. feu d’appartement), leur dire :",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Message",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "« Les pompiers arrivent. Restez chez vous, à votre fenêtre, porte d’appartement fermée. »",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00030",
+                      "« Les pompiers arrivent. Restez chez vous, à votre fenêtre, porte d’appartement fermée. »",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Évacuation : pas automatique"),
-              _BulletPoint(
-                text:
-                    "Ne pas faire évacuer l’immeuble s’il n’y a pas de danger immédiat pour les occupants.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00031",
+                  "Évacuation : pas automatique",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Ne pas faire évacuer les habitants situés au-dessus du foyer : risque d’exposition aux fumées toxiques.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00032",
+                  "Ne pas faire évacuer l’immeuble s’il n’y a pas de danger immédiat pour les occupants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00033",
+                  "Ne pas faire évacuer les habitants situés au-dessus du foyer : risque d’exposition aux fumées toxiques.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Certains ERP peuvent avoir un schéma d’intervention spécifique : le C.I.C donnera les instructions.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00034",
+                      "Certains ERP peuvent avoir un schéma d’intervention spécifique : le C.I.C donnera les instructions.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -255,25 +390,39 @@ class IncendiePrimoPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "4 — Sauvetage exceptionnel (péril imminent)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00035",
+              "4 — Sauvetage exceptionnel (péril imminent)",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "De façon exceptionnelle, et sans mettre ta vie ni celle des autres en danger, tenter de sauver les personnes exposées à un péril imminent.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00036",
+                  "De façon exceptionnelle, et sans mettre ta vie ni celle des autres en danger, tenter de sauver les personnes exposées à un péril imminent.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Si tu montes dans les étages : ne pas prendre l’ascenseur, emprunter les escaliers.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00037",
+                  "Si tu montes dans les étages : ne pas prendre l’ascenseur, emprunter les escaliers.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Attention : sans protection contre le feu et les fumées, tu es vulnérable.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00038",
+                      "Attention : sans protection contre le feu et les fumées, tu es vulnérable.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -284,18 +433,29 @@ class IncendiePrimoPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "5 — Préserver les traces et indices",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00039",
+              "5 — Préserver les traces et indices",
+            ),
             cardColor: cardSynth,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Même sur un incendie, garder le réflexe “enquête” : préserver les traces et indices, éviter les intrusions et noter les informations utiles.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00040",
+                  "Même sur un incendie, garder le réflexe “enquête” : préserver les traces et indices, éviter les intrusions et noter les informations utiles.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Limiter les accès, canaliser les déplacements, conserver les observations utiles (témoins, comportements, chronologie).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00041",
+                  "Limiter les accès, canaliser les déplacements, conserver les observations utiles (témoins, comportements, chronologie).",
+                ),
               ),
             ],
           ),
@@ -303,25 +463,45 @@ class IncendiePrimoPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "En résumé (3 objectifs)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+              "f00042",
+              "En résumé (3 objectifs)",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Faciliter l’arrivée des sapeurs-pompiers et renseigner les secours.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00043",
+                  "Faciliter l’arrivée des sapeurs-pompiers et renseigner les secours.",
+                ),
               ),
-              _IntroBullet(text: "Rassurer les personnes."),
               _IntroBullet(
-                text:
-                    "Tenter de sauver une personne en danger imminent (exceptionnellement, sans se mettre en danger).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00044",
+                  "Rassurer les personnes.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                  "f00045",
+                  "Tenter de sauver une personne en danger imminent (exceptionnellement, sans se mettre en danger).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "L’évacuation n’est pas systématique.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/incendie_primo_page.dart",
+                      "f00046",
+                      "L’évacuation n’est pas systématique.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],

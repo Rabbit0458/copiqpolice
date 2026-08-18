@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaHomicideInvolontairePage extends StatelessWidget {
   const PaHomicideInvolontairePage({super.key});
@@ -59,10 +60,18 @@ class PaHomicideInvolontairePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes involontaires",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+            "f00002",
+            "Atteintes involontaires",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaHomicideInvolontairePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’homicide involontaire",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+              "f00003",
+              "L’homicide involontaire",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -89,27 +102,56 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de causer, dans les conditions et selon les distinctions prévues à l’article 121-3, "
-                "par maladresse, imprudence, inattention, négligence ou manquement à une obligation de sécurité "
-                "ou de prudence imposée par la loi ou le règlement, la mort d’autrui, constitue un homicide involontaire.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00005",
+                      "Le fait de causer, dans les conditions et selon les distinctions prévues à l’article 121-3, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00006",
+                      "par maladresse, imprudence, inattention, négligence ou manquement à une obligation de sécurité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00007",
+                      "ou de prudence imposée par la loi ou le règlement, la mort d’autrui, constitue un homicide involontaire.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Définition structurée par "),
                 TextSpan(
-                  text: "l’article 121-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00008",
+                    "Définition structurée par ",
                   ),
                 ),
-                TextSpan(text: " (faute + causalité)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00009",
+                    "l’article 121-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00010",
+                    " (faute + causalité).",
+                  ),
+                ),
               ]),
             ],
           ),
@@ -118,36 +160,55 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00012",
+                    "Article 221-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : prévoit et réprime l’homicide involontaire.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00013",
+                    " : prévoit et réprime l’homicide involontaire.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Référence centrale : "),
                 TextSpan(
-                  text: "article 121-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00014",
+                    "Référence centrale : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (distinction causalité directe/indirecte et niveau de faute exigé).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00015",
+                    "article 121-3 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00016",
+                    " (distinction causalité directe/indirecte et niveau de faute exigé).",
+                  ),
                 ),
               ]),
             ],
@@ -157,57 +218,119 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+              "f00017",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Un acte involontaire : la faute"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00018",
+                  "A) Un acte involontaire : la faute",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00019",
+                    "Article 221-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (en référence à l’article 121-3) énumère 5 comportements fautifs (liste limitative).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00020",
+                    " (en référence à l’article 121-3) énumère 5 comportements fautifs (liste limitative).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
-              _SubTitle("1) La faute simple (imprudence simple)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00021",
+                  "1) La faute simple (imprudence simple)",
+                ),
+              ),
               _Paragraph(
-                "Il faut caractériser au moins un des comportements suivants :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00022",
+                  "Il faut caractériser au moins un des comportements suivants :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(text: "Maladresse"),
               _BulletPoint(text: "Imprudence"),
               _BulletPoint(text: "Inattention"),
-              _BulletPoint(text: "Négligence"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00023",
+                  "Négligence",
+                ),
+              ),
               SizedBox(height: 8),
               _Paragraph(
-                "Ces fautes s’apprécient par comparaison avec le comportement attendu d’une personne normalement "
-                "prudente, diligente et attentive (ou du professionnel moyen/diligent selon le cas).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00024",
+                      "Ces fautes s’apprécient par comparaison avec le comportement attendu d’une personne normalement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00025",
+                      "prudente, diligente et attentive (ou du professionnel moyen/diligent selon le cas).",
+                    ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "2) Manquement à une obligation de sécurité/prudence (loi ou règlement)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00026",
+                  "2) Manquement à une obligation de sécurité/prudence (loi ou règlement)",
+                ),
               ),
               _Paragraph(
-                "Le règlement s’entend des actes administratifs à caractère général et impersonnel. "
-                "L’inobservation d’une obligation textuelle peut suffire en elle-même : il faut pouvoir préciser "
-                "la source et la nature exacte de l’obligation violée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00027",
+                      "Le règlement s’entend des actes administratifs à caractère général et impersonnel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00028",
+                      "L’inobservation d’une obligation textuelle peut suffire en elle-même : il faut pouvoir préciser ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00029",
+                      "la source et la nature exacte de l’obligation violée.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Les juges doivent préciser l’obligation violée : ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00030",
+                      "Les juges doivent préciser l’obligation violée : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 18 juin 2002",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00031",
+                      "Cass. crim., 18 juin 2002",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -220,44 +343,82 @@ class PaHomicideInvolontairePage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "3) La faute caractérisée (si causalité indirecte)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00032",
+                  "3) La faute caractérisée (si causalité indirecte)",
+                ),
               ),
               _Paragraph(
-                "Si la faute a causé indirectement le dommage, il faut une faute d’imprudence lourde : "
-                "exposition d’autrui à un danger d’une particulière gravité, que l’auteur ne pouvait ignorer. "
-                "Elle apparaît grossière et inacceptable compte tenu des circonstances ou des fonctions exercées.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00033",
+                      "Si la faute a causé indirectement le dommage, il faut une faute d’imprudence lourde : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00034",
+                      "exposition d’autrui à un danger d’une particulière gravité, que l’auteur ne pouvait ignorer. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00035",
+                      "Elle apparaît grossière et inacceptable compte tenu des circonstances ou des fonctions exercées.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
                   TextSpan(
-                    text: "Exemples : battue de chasse mal encadrée ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00036",
+                      "Exemples : battue de chasse mal encadrée ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 8 mars 2005)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00037",
+                      "(Cass. crim., 8 mars 2005)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " ; remise des clés à une personne alcoolisée sans permis ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00038",
+                      " ; remise des clés à une personne alcoolisée sans permis ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 14 décembre 2010)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00039",
+                      "(Cass. crim., 14 décembre 2010)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " ; défaut de questions essentielles par un médecin du SAMU ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00040",
+                      " ; défaut de questions essentielles par un médecin du SAMU ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 2 décembre 2003)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00041",
+                      "(Cass. crim., 2 décembre 2003)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -269,20 +430,41 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un lien de causalité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00042",
+                  "B) Un lien de causalité",
+                ),
+              ),
               _Paragraph(
-                "La faute doit avoir concouru au dommage. Il peut exister plusieurs fautes ayant participé au décès.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00043",
+                  "La faute doit avoir concouru au dommage. Il peut exister plusieurs fautes ayant participé au décès.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00044",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Deux conducteurs se suivent à vive allure : responsabilité retenue car ils participent ensemble à une action dangereuse — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00045",
+                      "Deux conducteurs se suivent à vive allure : responsabilité retenue car ils participent ensemble à une action dangereuse — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 23 juillet 1986",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00046",
+                      "Cass. crim., 23 juillet 1986",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -294,58 +476,92 @@ class PaHomicideInvolontairePage extends StatelessWidget {
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Pas besoin d’un lien direct et immédiat : ",
-                ),
-                TextSpan(
-                  text: "Cass. crim., 14 février 1996",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00047",
+                    "Pas besoin d’un lien direct et immédiat : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — il suffit que l’existence d’un lien de causalité soit certaine (dommage apprécié dans son dernier état).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00048",
+                    "Cass. crim., 14 février 1996",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00049",
+                    " — il suffit que l’existence d’un lien de causalité soit certaine (dommage apprécié dans son dernier état).",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
               _SubTitle(
-                "1) Personnes physiques : causalité directe vs indirecte",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00050",
+                  "1) Personnes physiques : causalité directe vs indirecte",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 121-3 alinéa 4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00051",
+                    "Article 121-3 alinéa 4 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : sont auteurs indirects ceux qui ont créé/contribué à créer la situation ayant permis le dommage "
-                      "ou qui n’ont pas pris les mesures permettant de l’éviter.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                        "f00052",
+                        " : sont auteurs indirects ceux qui ont créé/contribué à créer la situation ayant permis le dommage ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                        "f00053",
+                        "ou qui n’ont pas pris les mesures permettant de l’éviter.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Causalité directe : une faute quelconque peut suffire (faute simple).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00054",
+                  "Causalité directe : une faute quelconque peut suffire (faute simple).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Causalité indirecte : il faut une faute délibérée ou une faute caractérisée.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00055",
+                  "Causalité indirecte : il faut une faute délibérée ou une faute caractérisée.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Illustrations",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Location d’un jet-ski confié à une personne sans permis requis — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00056",
+                      "Location d’un jet-ski confié à une personne sans permis requis — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 5 octobre 2004",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00057",
+                      "Cass. crim., 5 octobre 2004",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -353,11 +569,18 @@ class PaHomicideInvolontairePage extends StatelessWidget {
                   ),
                   TextSpan(text: ". "),
                   TextSpan(
-                    text:
-                        "Accidents du travail (direction/chef d’établissement) — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00058",
+                      "Accidents du travail (direction/chef d’établissement) — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 28 mars 2006",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00059",
+                      "Cass. crim., 28 mars 2006",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -369,19 +592,41 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Sur la personne d’autrui + dommage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00060",
+                  "C) Sur la personne d’autrui + dommage",
+                ),
+              ),
               _Paragraph(
-                "La victime doit être une personne humaine vivante, distincte de l’auteur.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00061",
+                  "La victime doit être une personne humaine vivante, distincte de l’auteur.",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: "Jurisprudence",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00062",
+                  "Jurisprudence",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text: "Enfant ayant survécu 1 heure après la naissance — ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00063",
+                      "Enfant ayant survécu 1 heure après la naissance — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 2 décembre 2003",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                      "f00064",
+                      "Cass. crim., 2 décembre 2003",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -391,7 +636,13 @@ class PaHomicideInvolontairePage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 10),
-              _Paragraph("Le dommage : la mort de la victime."),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00065",
+                  "Le dommage : la mort de la victime.",
+                ),
+              ),
             ],
           ),
 
@@ -399,20 +650,36 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+              "f00066",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En matière d’infractions non intentionnelles, l’intention de tuer n’est pas requise.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00067",
+                  "En matière d’infractions non intentionnelles, l’intention de tuer n’est pas requise.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Toutefois, en cas de violation manifestement délibérée d’une obligation particulière de sécurité/prudence, "
-                      "il faut établir que l’agent a adopté un comportement risqué en connaissance de cause (sans vouloir le résultat).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                        "f00068",
+                        "Toutefois, en cas de violation manifestement délibérée d’une obligation particulière de sécurité/prudence, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                        "f00069",
+                        "il faut établir que l’agent a adopté un comportement risqué en connaissance de cause (sans vouloir le résultat).",
+                      ),
                 ),
               ]),
             ],
@@ -422,105 +689,162 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+              "f00070",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00071",
+                    "Article 221-6 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : lorsque la mort résulte d’une violation manifestement délibérée d’une obligation particulière "
-                      "de sécurité ou de prudence imposée par la loi ou le règlement.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                        "f00072",
+                        " : lorsque la mort résulte d’une violation manifestement délibérée d’une obligation particulière ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                        "f00073",
+                        "de sécurité ou de prudence imposée par la loi ou le règlement.",
+                      ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Obligation prévue par un texte + obligation précisément déterminée (action/abstention précise).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00074",
+                  "Obligation prévue par un texte + obligation précisément déterminée (action/abstention précise).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Violation consciente + création d’un risque mortel qui se réalise.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00075",
+                  "Violation consciente + création d’un risque mortel qui se réalise.",
+                ),
               ),
               _BulletPoint(
-                text: "Lien de causalité certain (direct ou indirect).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00076",
+                  "Lien de causalité certain (direct ou indirect).",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00077",
+                    "Article 221-6-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : 3 degrés d’aggravation (conducteur VTAM).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00078",
+                    " : 3 degrés d’aggravation (conducteur VTAM).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "1er degré : homicide commis par le conducteur d’un véhicule terrestre à moteur.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00079",
+                  "1er degré : homicide commis par le conducteur d’un véhicule terrestre à moteur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "2e degré : violation manifestement délibérée OU accompagnement d’un délit routier (alcool/stupéfiants/refus vérifs/sans permis/excès ≥ 50 km/h/délit de fuite…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00080",
+                  "2e degré : violation manifestement délibérée OU accompagnement d’un délit routier (alcool/stupéfiants/refus vérifs/sans permis/excès ≥ 50 km/h/délit de fuite…).",
+                ),
               ),
               _BulletPoint(
-                text: "3e degré : deux ou plus des circonstances du 2e degré.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00081",
+                  "3e degré : deux ou plus des circonstances du 2e degré.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00082",
+                    "Article 221-6-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : 3 degrés d’aggravation (agression par un chien).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00083",
+                    " : 3 degrés d’aggravation (agression par un chien).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "1er degré : agression par un chien (propriétaire ou détenteur au moment des faits).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00084",
+                  "1er degré : agression par un chien (propriétaire ou détenteur au moment des faits).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "2e degré : une situation listée (détention illicite, ivresse/stupéfiants, absence de mesures du maire, pas de permis de détention, pas de vaccin, chien cat. 1/2 sans muselière/laisse, mauvais traitements…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00085",
+                  "2e degré : une situation listée (détention illicite, ivresse/stupéfiants, absence de mesures du maire, pas de permis de détention, pas de vaccin, chien cat. 1/2 sans muselière/laisse, mauvais traitements…).",
+                ),
               ),
               _BulletPoint(
-                text: "3e degré : deux ou plusieurs circonstances du 2e degré.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00086",
+                  "3e degré : deux ou plusieurs circonstances du 2e degré.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 434-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00087",
+                    "Article 434-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : lorsque l’homicide involontaire est suivi d’un délit de fuite (hors cas déjà visés par l’article 221-6-1).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00088",
+                    " : lorsque l’homicide involontaire est suivi d’un délit de fuite (hors cas déjà visés par l’article 221-6-1).",
+                  ),
                 ),
               ]),
             ],
@@ -530,114 +854,177 @@ class PaHomicideInvolontairePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+              "f00089",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Peines encourues — personnes physiques (synthèse)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00090",
+                  "Peines encourues — personnes physiques (synthèse)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00091",
+                    "Article 221-6 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (simple) : 3 ans d’emprisonnement et 45 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00092",
+                    " (simple) : 3 ans d’emprisonnement et 45 000 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00093",
+                    "Article 221-6 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (faute délibérée) : 5 ans d’emprisonnement et 75 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00094",
+                    " (faute délibérée) : 5 ans d’emprisonnement et 75 000 € d’amende.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
 
               _SubTitle(
-                "Aggravations spécifiques (conducteur / chien / fuite)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00095",
+                  "Aggravations spécifiques (conducteur / chien / fuite)",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00096",
+                    "Article 221-6-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : 5 ans / 7 ans / 10 ans + amendes selon degrés.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00097",
+                    " : 5 ans / 7 ans / 10 ans + amendes selon degrés.",
+                  ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 221-6-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00098",
+                    "Article 221-6-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : 5 ans / 7 ans / 10 ans + amendes selon degrés.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00099",
+                    " : 5 ans / 7 ans / 10 ans + amendes selon degrés.",
+                  ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 434-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00100",
+                    "Article 434-10 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : doublement des peines prévues (hors article 221-6-1).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00101",
+                    " : doublement des peines prévues (hors article 221-6-1).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00102",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 221-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00103",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (même si causalité indirecte : responsabilité possible en cas de faute simple).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00104",
+                    "l’article 221-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                    "f00105",
+                    " (même si causalité indirecte : responsabilité possible en cas de faute simple).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00106",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text: "Tentative : NON (résultat non recherché).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00107",
+                  "Tentative : NON (résultat non recherché).",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Complicité : NON (jurisprudence : exclue en matière non intentionnelle).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart",
+                  "f00108",
+                  "Complicité : NON (jurisprudence : exclue en matière non intentionnelle).",
+                ),
               ),
             ],
           ),

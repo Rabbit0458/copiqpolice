@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
   const PaPPDeroulementDetentionProvisoirePage({super.key});
@@ -25,10 +26,18 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Déroulement de la détention provisoire',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+            "f00002",
+            'Déroulement de la détention provisoire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
         children: [
           // ====================== CHAPITRE & TITRE ==========================
           Text(
-            'CHAPITRE 2',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00003",
+              'CHAPITRE 2',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 18,
@@ -51,7 +64,11 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            'Déroulement de la détention provisoire',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00004",
+              'Déroulement de la détention provisoire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -61,8 +78,16 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Durée de la détention provisoire, contrôle par la chambre de '
-            'l’instruction et prolongations de la mesure.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00005",
+                  'Durée de la détention provisoire, contrôle par la chambre de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00006",
+                  'l’instruction et prolongations de la mesure.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -74,33 +99,81 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
           const SizedBox(height: 18),
 
           // ====================== 2.1 – DURÉE ===============================
-          const _SubTitle('2.1 – Durée de la détention provisoire'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00007",
+              '2.1 – Durée de la détention provisoire',
+            ),
+          ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(text: 'Selon '),
             TextSpan(
-              text: 'l’article 144-1 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00008",
+                'l’article 144-1 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  ', la détention provisoire ne peut excéder une durée raisonnable, '
-                  'appréciée au regard de la gravité des faits reprochés à la '
-                  'personne mise en examen et de la complexité des investigations '
-                  'nécessaires à la manifestation de la vérité. Le magistrat doit '
-                  'ordonner la mise en liberté dès que ces conditions et celles '
-                  'prévues par ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00009",
+                    ', la détention provisoire ne peut excéder une durée raisonnable, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00010",
+                    'appréciée au regard de la gravité des faits reprochés à la ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00011",
+                    'personne mise en examen et de la complexité des investigations ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00012",
+                    'nécessaires à la manifestation de la vérité. Le magistrat doit ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00013",
+                    'ordonner la mise en liberté dès que ces conditions et celles ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00014",
+                    'prévues par ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 144 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00015",
+                'l’article 144 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
-            TextSpan(text: ' ne sont plus remplies.'),
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00016",
+                ' ne sont plus remplies.',
+              ),
+            ),
           ]),
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: 'Durées maximales initiales de détention provisoire',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00017",
+              'Durées maximales initiales de détention provisoire',
+            ),
             cardColor: isDark
                 ? const Color(0xFF102027)
                 : const Color(0xFFE3F2FD),
@@ -108,11 +181,21 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
             titleColor: isDark
                 ? const Color(0xFFBBDEFB)
                 : const Color(0xFF0D47A1),
-            children: const [
+            children: [
               _Paragraph.rich([
-                TextSpan(text: '• En matière correctionnelle : '),
                 TextSpan(
-                  text: 'l’article 145-1 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00018",
+                    '• En matière correctionnelle : ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00019",
+                    'l’article 145-1 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -120,15 +203,33 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' fixe à quatre mois la durée maximale de la détention provisoire '
-                      'pour un délit de droit commun.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00020",
+                        ' fixe à quatre mois la durée maximale de la détention provisoire ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00021",
+                        'pour un délit de droit commun.',
+                      ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: '• Pour certains délits aggravés : '),
                 TextSpan(
-                  text: 'l’article 145-1-1 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00022",
+                    '• Pour certains délits aggravés : ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00023",
+                    'l’article 145-1-1 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -136,20 +237,58 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' permet une durée maximale initiale de six mois lorsque '
-                      'l’instruction porte notamment sur un délit commis en bande '
-                      'organisée puni de dix ans d’emprisonnement ou sur certains '
-                      'délits particuliers tels que le trafic de stupéfiants '
-                      '(art. 222-37 C. pén.), le proxénétisme (art. 225-5 C. pén.), '
-                      'l’extorsion (art. 312-1 C. pén.) ou l’association de malfaiteurs '
-                      '(art. 450-1 C. pén.).',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00024",
+                        ' permet une durée maximale initiale de six mois lorsque ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00025",
+                        'l’instruction porte notamment sur un délit commis en bande ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00026",
+                        'organisée puni de dix ans d’emprisonnement ou sur certains ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00027",
+                        'délits particuliers tels que le trafic de stupéfiants ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00028",
+                        '(art. 222-37 C. pén.), le proxénétisme (art. 225-5 C. pén.), ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00029",
+                        'l’extorsion (art. 312-1 C. pén.) ou l’association de malfaiteurs ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00030",
+                        '(art. 450-1 C. pén.).',
+                      ),
                 ),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: '• En matière criminelle : '),
                 TextSpan(
-                  text: 'l’article 145-2 du Code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00031",
+                    '• En matière criminelle : ',
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00032",
+                    'l’article 145-2 du Code de procédure pénale',
+                  ),
                   style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
@@ -157,56 +296,135 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' prévoit une durée maximale initiale d’un an de détention '
-                      'provisoire.',
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00033",
+                        ' prévoit une durée maximale initiale d’un an de détention ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                        "f00034",
+                        'provisoire.',
+                      ),
                 ),
               ]),
             ],
           ),
 
           const SizedBox(height: 12),
-          const _Paragraph(
-            'À titre exceptionnel et sous les conditions fixées par les textes, ces '
-            'durées peuvent être prolongées, notamment jusqu’à deux ans et quatre '
-            'mois en matière correctionnelle et jusqu’à quatre ans et huit mois '
-            'en matière criminelle. Le détail des rythmes et modalités de '
-            'prolongation est présenté dans le tableau dédié.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00035",
+                  'À titre exceptionnel et sous les conditions fixées par les textes, ces ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00036",
+                  'durées peuvent être prolongées, notamment jusqu’à deux ans et quatre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00037",
+                  'mois en matière correctionnelle et jusqu’à quatre ans et huit mois ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00038",
+                  'en matière criminelle. Le détail des rythmes et modalités de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00039",
+                  'prolongation est présenté dans le tableau dédié.',
+                ),
           ),
 
           const SizedBox(height: 22),
 
           // ====================== 2.2 – MISE EN ÉTAT =======================
-          const _SubTitle('2.2 – Procédure de « mise en état »'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00040",
+              '2.2 – Procédure de « mise en état »',
+            ),
+          ),
 
-          const _Paragraph.rich([
-            TextSpan(text: 'La procédure de mise en état est organisée par '),
+          _Paragraph.rich([
             TextSpan(
-              text: 'l’article 221-3 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00041",
+                'La procédure de mise en état est organisée par ',
+              ),
+            ),
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00042",
+                'l’article 221-3 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  '. Lorsque trois mois se sont écoulés depuis le placement en '
-                  'détention provisoire, que cette détention est toujours en cours '
-                  'et que l’avis de fin d’information prévu par ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00043",
+                    '. Lorsque trois mois se sont écoulés depuis le placement en ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00044",
+                    'détention provisoire, que cette détention est toujours en cours ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00045",
+                    'et que l’avis de fin d’information prévu par ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 175 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00046",
+                'l’article 175 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  ' n’a pas été délivré, le président de la chambre de l’instruction '
-                  'peut décider de saisir cette chambre, d’office, à la demande du '
-                  'ministère public ou de la personne mise en examen. La chambre '
-                  'examine alors l’ensemble de la procédure.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00047",
+                    ' n’a pas été délivré, le président de la chambre de l’instruction ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00048",
+                    'peut décider de saisir cette chambre, d’office, à la demande du ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00049",
+                    'ministère public ou de la personne mise en examen. La chambre ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00050",
+                    'examine alors l’ensemble de la procédure.',
+                  ),
             ),
           ]),
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title:
-                'Pouvoirs de la chambre de l’instruction\n(lors de la mise en état – art. 221-3 C. proc. pén.)',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00051",
+              'Pouvoirs de la chambre de l’instruction\n(lors de la mise en état – art. 221-3 C. proc. pén.)',
+            ),
             cardColor: isDark
                 ? const Color(0xFF263238)
                 : const Color(0xFFE0F2F1),
@@ -214,46 +432,109 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
             titleColor: isDark
                 ? const Color(0xFFB2DFDB)
                 : const Color(0xFF004D40),
-            children: const [
+            children: [
               _IntroBullet(
                 text:
-                    'Ordonner la mise en liberté de la personne mise en examen, '
-                    'assortie ou non d’un contrôle judiciaire.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00052",
+                      'Ordonner la mise en liberté de la personne mise en examen, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00053",
+                      'assortie ou non d’un contrôle judiciaire.',
+                    ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00054",
+                  'Prononcer la nullité d’un ou de plusieurs actes de procédure.',
+                ),
               ),
               _IntroBullet(
                 text:
-                    'Prononcer la nullité d’un ou de plusieurs actes de procédure.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00055",
+                      'Évoquer le dossier et procéder, le cas échéant, dans les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00056",
+                      'conditions prévues par les articles 201, 202, 204 et 205 ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00057",
+                      'du Code de procédure pénale.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Évoquer le dossier et procéder, le cas échéant, dans les '
-                    'conditions prévues par les articles 201, 202, 204 et 205 '
-                    'du Code de procédure pénale.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00058",
+                      'Procéder à une évocation partielle du dossier pour ne réaliser ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00059",
+                      'que certains actes avant renvoi au juge d’instruction.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Procéder à une évocation partielle du dossier pour ne réaliser '
-                    'que certains actes avant renvoi au juge d’instruction.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00060",
+                      'Renvoyer le dossier au juge d’instruction afin de poursuivre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00061",
+                      'l’information en lui prescrivant certains actes.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Renvoyer le dossier au juge d’instruction afin de poursuivre '
-                    'l’information en lui prescrivant certains actes.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00062",
+                      'Désigner un ou plusieurs autres juges d’instruction pour ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00063",
+                      'poursuivre la procédure.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Désigner un ou plusieurs autres juges d’instruction pour '
-                    'poursuivre la procédure.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00064",
+                      'Décider le dessaisissement du juge d’instruction lorsque cette ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00065",
+                      'décision est indispensable à la manifestation de la vérité.',
+                    ),
               ),
               _IntroBullet(
                 text:
-                    'Décider le dessaisissement du juge d’instruction lorsque cette '
-                    'décision est indispensable à la manifestation de la vérité.',
-              ),
-              _IntroBullet(
-                text:
-                    'Ordonner le règlement, y compris partiel, de la procédure, '
-                    'notamment en prononçant un ou plusieurs non-lieux.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00066",
+                      'Ordonner le règlement, y compris partiel, de la procédure, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00067",
+                      'notamment en prononçant un ou plusieurs non-lieux.',
+                    ),
               ),
             ],
           ),
@@ -261,45 +542,129 @@ class PaPPDeroulementDetentionProvisoirePage extends StatelessWidget {
           const SizedBox(height: 22),
 
           // ====================== 2.3 – PROLONGATION =======================
-          const _SubTitle('2.3 – Prolongation de la détention provisoire'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00068",
+              '2.3 – Prolongation de la détention provisoire',
+            ),
+          ),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'La décision de prolonger une détention provisoire relève du juge '
-                  'des libertés et de la détention, saisi à cette fin par une '
-                  'ordonnance motivée du juge d’instruction, qui lui transmet le '
-                  'dossier accompagné des réquisitions du procureur de la République, '
-                  'conformément aux règles de ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00069",
+                    'La décision de prolonger une détention provisoire relève du juge ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00070",
+                    'des libertés et de la détention, saisi à cette fin par une ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00071",
+                    'ordonnance motivée du juge d’instruction, qui lui transmet le ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00072",
+                    'dossier accompagné des réquisitions du procureur de la République, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                    "f00073",
+                    'conformément aux règles de ',
+                  ),
             ),
             TextSpan(
-              text: 'l’article 145 du Code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00074",
+                'l’article 145 du Code de procédure pénale',
+              ),
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
-            TextSpan(text: ' et des articles suivants.'),
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                "f00075",
+                ' et des articles suivants.',
+              ),
+            ),
           ]),
           const SizedBox(height: 8),
 
-          const _Paragraph(
-            'Le juge des libertés et de la détention doit, à chaque prolongation, '
-            'vérifier à nouveau la réunion des conditions légales de la détention '
-            'provisoire, son caractère exceptionnel et l’insuffisance des mesures '
-            'alternatives telles que le contrôle judiciaire ou l’assignation à '
-            'résidence avec surveillance électronique.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00076",
+                  'Le juge des libertés et de la détention doit, à chaque prolongation, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00077",
+                  'vérifier à nouveau la réunion des conditions légales de la détention ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00078",
+                  'provisoire, son caractère exceptionnel et l’insuffisance des mesures ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00079",
+                  'alternatives telles que le contrôle judiciaire ou l’assignation à ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                  "f00080",
+                  'résidence avec surveillance électronique.',
+                ),
           ),
           const SizedBox(height: 10),
 
-          const _NotaBox(
-            title: 'Prolongations et tableau récapitulatif',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+              "f00081",
+              'Prolongations et tableau récapitulatif',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'Les régimes de prolongation (délais, durée maximale, nombre de '
-                    'prolongations, spécificités pour la criminalité organisée, les '
-                    'délits punis de dix ans, etc.) sont détaillés dans le tableau '
-                    'spécifique consacré à la détention provisoire. Il constitue un '
-                    'outil de synthèse essentiel pour mémoriser les différents '
-                    'cas de figure.',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00082",
+                      'Les régimes de prolongation (délais, durée maximale, nombre de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00083",
+                      'prolongations, spécificités pour la criminalité organisée, les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00084",
+                      'délits punis de dix ans, etc.) sont détaillés dans le tableau ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00085",
+                      'spécifique consacré à la détention provisoire. Il constitue un ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00086",
+                      'outil de synthèse essentiel pour mémoriser les différents ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart",
+                      "f00087",
+                      'cas de figure.',
+                    ),
               ),
             ],
           ),

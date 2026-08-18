@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AgentsVerbalisateursCirculationPage extends StatelessWidget {
   const AgentsVerbalisateursCirculationPage({super.key});
@@ -64,10 +65,18 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Circulation routière",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+            "f00002",
+            "Circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -82,7 +91,11 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Compétence des agents verbalisateurs\n(en matière de circulation routière)",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+              "f00003",
+              "Compétence des agents verbalisateurs\n(en matière de circulation routière)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -93,17 +106,41 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Cadre général",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+              "f00004",
+              "Cadre général",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le formalisme procédural de constatation (procès-verbal ou rapport) des infractions routières "
-                "varie selon la nature de l’infraction (délit ou contravention) et la qualification judiciaire "
-                "de l’agent verbalisateur.\n\n"
-                "Le non-respect de ces règles peut modifier la valeur probante de l’acte rédigé ou entraîner "
-                "la nullité de la procédure.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00005",
+                      "Le formalisme procédural de constatation (procès-verbal ou rapport) des infractions routières ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00006",
+                      "varie selon la nature de l’infraction (délit ou contravention) et la qualification judiciaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00007",
+                      "de l’agent verbalisateur.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00008",
+                      "Le non-respect de ces règles peut modifier la valeur probante de l’acte rédigé ou entraîner ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00009",
+                      "la nullité de la procédure.",
+                    ),
               ),
             ],
           ),
@@ -112,64 +149,84 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (article(s) en rouge)
           _ConditionCard(
-            title: "I — Fondement légal (compétence générale)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+              "f00010",
+              "I — Fondement légal (compétence générale)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles 12 et 14 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00011",
+                    "Articles 12 et 14 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définissent la mission de police judiciaire et la compétence générale pour rechercher et constater les infractions.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00012",
+                    " : définissent la mission de police judiciaire et la compétence générale pour rechercher et constater les infractions.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 21 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00013",
+                    "Article 21 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : encadre l’action des agents de police judiciaire (APJ) dans la constatation des infractions.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00014",
+                    " : encadre l’action des agents de police judiciaire (APJ) dans la constatation des infractions.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 21-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00015",
+                    "Article 21-1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : fixe les règles relatives aux agents de police judiciaire adjoints (APJA).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00016",
+                    " : fixe les règles relatives aux agents de police judiciaire adjoints (APJA).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 429 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00017",
+                    "Article 429 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : précise la valeur probante des procès-verbaux et rapports (régularité, compétence, constatations personnelles).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00018",
+                    " : précise la valeur probante des procès-verbaux et rapports (régularité, compétence, constatations personnelles).",
+                  ),
                 ),
               ]),
             ],
@@ -178,19 +235,51 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Recherche & constatation des infractions routières",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+              "f00019",
+              "II — Recherche & constatation des infractions routières",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les O.P.J., A.P.J. et A.P.J.A. disposent d’une compétence générale pour rechercher et constater "
-                "les infractions, conformément au code de procédure pénale.\n\n"
-                "La constatation des délits et contraventions en matière de circulation routière "
-                "(code de la route, code des assurances, code de la voirie routière, réglementation des transports routiers) "
-                "relève également de leur compétence.\n\n"
-                "D’autres agents d’administrations (ex : gardes champêtres, contrôleurs des transports terrestres, "
-                "agents des douanes) peuvent aussi constater certaines infractions routières.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00020",
+                      "Les O.P.J., A.P.J. et A.P.J.A. disposent d’une compétence générale pour rechercher et constater ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00021",
+                      "les infractions, conformément au code de procédure pénale.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00022",
+                      "La constatation des délits et contraventions en matière de circulation routière ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00023",
+                      "(code de la route, code des assurances, code de la voirie routière, réglementation des transports routiers) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00024",
+                      "relève également de leur compétence.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00025",
+                      "D’autres agents d’administrations (ex : gardes champêtres, contrôleurs des transports terrestres, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00026",
+                      "agents des douanes) peuvent aussi constater certaines infractions routières.",
+                    ),
               ),
             ],
           ),
@@ -198,38 +287,68 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Formes procédurales de constatation",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+              "f00027",
+              "III — Formes procédurales de constatation",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le code de procédure pénale confère aux O.P.J., A.P.J. et A.P.J.A. une compétence générale "
-                "pour constater les infractions à la loi pénale, y compris celles du domaine routier.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00028",
+                      "Le code de procédure pénale confère aux O.P.J., A.P.J. et A.P.J.A. une compétence générale ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00029",
+                      "pour constater les infractions à la loi pénale, y compris celles du domaine routier.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Qui peut rédiger quoi ? (règles essentielles)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00030",
+                  "Qui peut rédiger quoi ? (règles essentielles)",
+                ),
+              ),
               SizedBox(height: 6),
 
               _BulletPoint(
-                text:
-                    "OPJ : procès-verbal « ordinaire » ou PVe — délits et contraventions à la circulation routière.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00031",
+                  "OPJ : procès-verbal « ordinaire » ou PVe — délits et contraventions à la circulation routière.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "APJ : procès-verbal « ordinaire » ou PVe — contraventions au code de la route dont la liste est fixée par le code de la route.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00032",
+                  "APJ : procès-verbal « ordinaire » ou PVe — contraventions au code de la route dont la liste est fixée par le code de la route.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "APJA (policiers adjoints / réservistes opérationnels non OPJ ou APJ) : rapport — notamment pour les contraventions pour lesquelles ils ne sont pas autorisés à dresser procès-verbal.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00033",
+                  "APJA (policiers adjoints / réservistes opérationnels non OPJ ou APJ) : rapport — notamment pour les contraventions pour lesquelles ils ne sont pas autorisés à dresser procès-verbal.",
+                ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En dehors de leur ressort territorial, les OPJ, APJ et APJA peuvent rendre compte par rapport au procureur de la République compétent de toute infraction dont ils ont été témoins.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00034",
+                      "En dehors de leur ressort territorial, les OPJ, APJ et APJA peuvent rendre compte par rapport au procureur de la République compétent de toute infraction dont ils ont été témoins.",
+                    ),
                   ),
                 ],
               ),
@@ -239,46 +358,100 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Deux types de procès-verbaux utilisés",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+              "f00035",
+              "IV — Deux types de procès-verbaux utilisés",
+            ),
             cardColor: cardTypes,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Procès-verbal électronique (PVe)"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00036",
+                  "1) Procès-verbal électronique (PVe)",
+                ),
+              ),
               _Paragraph(
-                "Toutes les contraventions soumises à la procédure de l’amende forfaitaire "
-                "(ex : stationnement, vitesse, équipements…) peuvent être relevées au moyen d’appareils électroniques sécurisés.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00037",
+                      "Toutes les contraventions soumises à la procédure de l’amende forfaitaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00038",
+                      "(ex : stationnement, vitesse, équipements…) peuvent être relevées au moyen d’appareils électroniques sécurisés.",
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Terminal mobile NEO 2 (smartphone/tablette) : appareil portatif avec écran tactile permettant notamment de recueillir la signature du contrevenant.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00039",
+                  "Terminal mobile NEO 2 (smartphone/tablette) : appareil portatif avec écran tactile permettant notamment de recueillir la signature du contrevenant.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "IHM web (interface homme-machine/web) : application informatique permettant notamment de constater certaines infractions au service (ex : non justification dans les 5 jours de l’attestation d’assurance).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00040",
+                  "IHM web (interface homme-machine/web) : application informatique permettant notamment de constater certaines infractions au service (ex : non justification dans les 5 jours de l’attestation d’assurance).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’application PVe automatise et dématérialise la procédure, de la constatation à l’envoi de l’avis de contravention "
-                "au domicile du contrevenant (ou du titulaire du certificat d’immatriculation) par le centre national de traitement de Rennes.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00041",
+                      "L’application PVe automatise et dématérialise la procédure, de la constatation à l’envoi de l’avis de contravention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00042",
+                      "au domicile du contrevenant (ou du titulaire du certificat d’immatriculation) par le centre national de traitement de Rennes.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("2) Procès-verbal « ordinaire »"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00043",
+                  "2) Procès-verbal « ordinaire »",
+                ),
+              ),
               _Paragraph(
-                "Le procès-verbal « ordinaire », rédigé via le logiciel de rédaction de procédure, est utilisé pour constater :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00044",
+                  "Le procès-verbal « ordinaire », rédigé via le logiciel de rédaction de procédure, est utilisé pour constater :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Les délits."),
               _BulletPoint(
-                text:
-                    "Les contraventions non forfaitisées (plusieurs infractions simultanées dont au moins une ne peut donner lieu à amende forfaitaire).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00045",
+                  "Les délits.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Les contraventions de 5e classe, et celles de 4e classe entraînant S.P.C. sur instructions du parquet.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00046",
+                  "Les contraventions non forfaitisées (plusieurs infractions simultanées dont au moins une ne peut donner lieu à amende forfaitaire).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00047",
+                  "Les contraventions de 5e classe, et celles de 4e classe entraînant S.P.C. sur instructions du parquet.",
+                ),
               ),
             ],
           ),
@@ -286,58 +459,95 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Valeur probante des actes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+              "f00048",
+              "V — Valeur probante des actes",
+            ),
             cardColor: cardProb,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(text: "Selon "),
                 TextSpan(
-                  text: "l’article 429 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00049",
+                    "l’article 429 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      ", le procès-verbal ou le rapport n’a valeur probante que s’il est régulier en la forme, "
-                      "si l’auteur agit dans l’exercice de ses fonctions et rapporte, sur une matière de sa compétence, "
-                      "ce qu’il a vu, entendu ou constaté personnellement.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                        "f00050",
+                        ", le procès-verbal ou le rapport n’a valeur probante que s’il est régulier en la forme, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                        "f00051",
+                        "si l’auteur agit dans l’exercice de ses fonctions et rapporte, sur une matière de sa compétence, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                        "f00052",
+                        "ce qu’il a vu, entendu ou constaté personnellement.",
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("1) Délits"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00053",
+                  "1) Délits",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les procès-verbaux et rapports constatant les délits ne valent qu’à titre de simples renseignements — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00054",
+                    "Les procès-verbaux et rapports constatant les délits ne valent qu’à titre de simples renseignements — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 430 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00055",
+                    "article 430 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("2) Contraventions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                  "f00056",
+                  "2) Contraventions",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En règle générale, les procès-verbaux et rapports constatant les contraventions font foi jusqu’à preuve contraire — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00057",
+                    "En règle générale, les procès-verbaux et rapports constatant les contraventions font foi jusqu’à preuve contraire — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 537 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00058",
+                    "article 537 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -345,23 +555,28 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En matière routière, les agents verbalisateurs autres que les OPJ et APJ doivent être assermentés afin que les procès-verbaux conservent leur valeur probante — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00059",
+                    "En matière routière, les agents verbalisateurs autres que les OPJ et APJ doivent être assermentés afin que les procès-verbaux conservent leur valeur probante — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 130-7 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00060",
+                    "article L. 130-7 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article 537 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                    "f00061",
+                    "article 537 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -369,9 +584,21 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
               SizedBox(height: 10),
 
               _Paragraph(
-                "La prestation de serment initiale des APJA n’a pas à être renouvelée en cas de changement de lieu d’affectation.\n\n"
-                "Le défaut d’assermentation modifie la force probante : l’acte ne fait plus foi jusqu’à preuve contraire, "
-                "mais ne vaut qu’à titre de simples renseignements.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00062",
+                      "La prestation de serment initiale des APJA n’a pas à être renouvelée en cas de changement de lieu d’affectation.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00063",
+                      "Le défaut d’assermentation modifie la force probante : l’acte ne fait plus foi jusqu’à preuve contraire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                      "f00064",
+                      "mais ne vaut qu’à titre de simples renseignements.",
+                    ),
               ),
 
               SizedBox(height: 12),
@@ -380,8 +607,16 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Tout procès-verbal doit être soigneusement rédigé en respectant le formalisme imposé. "
-                        "Les erreurs (date, lieu, chiffres, immatriculation, etc.) peuvent créer un doute et conduire à l’annulation de la procédure.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                          "f00065",
+                          "Tout procès-verbal doit être soigneusement rédigé en respectant le formalisme imposé. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart",
+                          "f00066",
+                          "Les erreurs (date, lieu, chiffres, immatriculation, etc.) peuvent créer un doute et conduire à l’annulation de la procédure.",
+                        ),
                   ),
                 ],
               ),
@@ -639,9 +874,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

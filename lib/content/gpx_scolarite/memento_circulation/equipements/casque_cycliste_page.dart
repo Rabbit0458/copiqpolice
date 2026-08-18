@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CasqueCyclistePage extends StatelessWidget {
   const CasqueCyclistePage({super.key});
@@ -66,10 +67,18 @@ class CasqueCyclistePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class CasqueCyclistePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            'Casque de protection "cycliste"',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00003",
+              'Casque de protection "cycliste"',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -96,16 +109,36 @@ class CasqueCyclistePage extends StatelessWidget {
 
           // Présentation / idée clé
           _ConditionCard(
-            title: "À retenir",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00004",
+              "À retenir",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En circulation, les enfants de moins de 12 ans (conducteur ou passager) doivent porter un casque "
-                "« cycliste » conforme (marquage CE) et attaché.\n"
-                "⚠️ Le mémento précise que le non-respect de cette obligation par le mineur n’est pas réprimé : "
-                "la verbalisation vise surtout les obligations des majeurs (transport/accompagnement).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00005",
+                      "En circulation, les enfants de moins de 12 ans (conducteur ou passager) doivent porter un casque ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00006",
+                      "« cycliste » conforme (marquage CE) et attaché.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00007",
+                      "⚠️ Le mémento précise que le non-respect de cette obligation par le mineur n’est pas réprimé : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00008",
+                      "la verbalisation vise surtout les obligations des majeurs (transport/accompagnement).",
+                    ),
               ),
             ],
           ),
@@ -114,22 +147,39 @@ class CasqueCyclistePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 431-1-3 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                    "f00010",
+                    "R. 431-1-3 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Définition du casque",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00011",
+                  "Définition du casque",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Casque de protection « cycliste » conforme (marquage CE) et attaché.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00012",
+                      "Casque de protection « cycliste » conforme (marquage CE) et attaché.",
+                    ),
                   ),
                 ],
               ),
@@ -139,56 +189,125 @@ class CasqueCyclistePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Qui doit porter le casque ?"),
-              const _Paragraph(
-                "En circulation : conducteur et passager d’un cycle âgés de moins de 12 ans.\n"
-                "Le casque doit être conforme (marquage CE) et attaché.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00014",
+                  "A) Qui doit porter le casque ?",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00015",
+                      "En circulation : conducteur et passager d’un cycle âgés de moins de 12 ans.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00016",
+                      "Le casque doit être conforme (marquage CE) et attaché.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Point important",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00017",
+                  "Point important",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le mémento indique que le non-respect de cette obligation par le mineur n’est pas réprimé.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00018",
+                      "Le mémento indique que le non-respect de cette obligation par le mineur n’est pas réprimé.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Obligations des personnes majeures"),
-              const _Paragraph(
-                "La verbalisation vise les obligations mises à la charge des adultes :\n"
-                "• conducteur majeur transportant un passager < 12 ans ;\n"
-                "• accompagnateur majeur encadrant un ou plusieurs enfants < 12 ans conducteurs d’un cycle.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00019",
+                  "B) Obligations des personnes majeures",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00020",
+                      "La verbalisation vise les obligations mises à la charge des adultes :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00021",
+                      "• conducteur majeur transportant un passager < 12 ans ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00022",
+                      "• accompagnateur majeur encadrant un ou plusieurs enfants < 12 ans conducteurs d’un cycle.",
+                    ),
               ),
               const SizedBox(height: 10),
 
               _NotaBox(
-                title: "Conducteur majeur (transport d’un passager < 12 ans)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00023",
+                  "Conducteur majeur (transport d’un passager < 12 ans)",
+                ),
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "S’assurer que le passager est coiffé d’un casque conforme et attaché — ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00024",
+                      "S’assurer que le passager est coiffé d’un casque conforme et attaché — ",
+                    ),
                   ),
-                  _boldSpan("NATINF 32253"),
+                  _boldSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00025",
+                      "NATINF 32253",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Accompagnateur majeur (enfant(s) < 12 ans conducteurs)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00026",
+                  "Accompagnateur majeur (enfant(s) < 12 ans conducteurs)",
+                ),
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "S’assurer que chacun est coiffé d’un casque conforme et attaché — ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00027",
+                      "S’assurer que chacun est coiffé d’un casque conforme et attaché — ",
+                    ),
                   ),
-                  _boldSpan("NATINF 32254"),
+                  _boldSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00028",
+                      "NATINF 32254",
+                    ),
+                  ),
                   const TextSpan(text: "."),
                 ],
               ),
@@ -198,14 +317,26 @@ class CasqueCyclistePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00029",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Manquement d’un majeur à son obligation de s’assurer du port effectif du casque (conforme et attaché) "
-                "dans les situations prévues : transport d’un passager mineur < 12 ans, ou accompagnement d’un mineur < 12 ans conducteur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00030",
+                      "Manquement d’un majeur à son obligation de s’assurer du port effectif du casque (conforme et attaché) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                      "f00031",
+                      "dans les situations prévues : transport d’un passager mineur < 12 ans, ou accompagnement d’un mineur < 12 ans conducteur.",
+                    ),
               ),
             ],
           ),
@@ -213,13 +344,21 @@ class CasqueCyclistePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00032",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00033",
+                  "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento.",
+                ),
               ),
             ],
           ),
@@ -227,25 +366,47 @@ class CasqueCyclistePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00034",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: "Base : "),
-                _lawSpan("R. 431-1-3 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                    "f00035",
+                    "Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                    "f00036",
+                    "R. 431-1-3 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Contravention (AF min. 4e classe) pour les obligations des majeurs.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00037",
+                  "Contravention (AF min. 4e classe) pour les obligations des majeurs.",
+                ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "D.I.A. et dépistage stupéfiants : facultatifs (mention mémento).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00038",
+                  "D.I.A. et dépistage stupéfiants : facultatifs (mention mémento).",
+                ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
@@ -263,18 +424,28 @@ class CasqueCyclistePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+              "f00039",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Tentative : NON (contravention liée à un manquement constaté).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00040",
+                  "Tentative : NON (contravention liée à un manquement constaté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complicité : NON (obligation personnelle du majeur dans les cas prévus).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_cycliste_page.dart",
+                  "f00041",
+                  "Complicité : NON (obligation personnelle du majeur dans les cas prévus).",
+                ),
               ),
             ],
           ),

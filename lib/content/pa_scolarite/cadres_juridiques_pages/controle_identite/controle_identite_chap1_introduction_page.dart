@@ -1,6 +1,7 @@
 // lib/pa/dps_dpg/cadres_juridiques/controle_identite/controle_identite_chap1_introduction_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaConntroleIdentiteIntroductionGpxSchool extends StatelessWidget {
   const PaConntroleIdentiteIntroductionGpxSchool({super.key});
@@ -26,10 +27,18 @@ class PaConntroleIdentiteIntroductionGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Chapitre 1 — Introduction',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+            "f00002",
+            'Chapitre 1 — Introduction',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -43,7 +52,11 @@ class PaConntroleIdentiteIntroductionGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE PAGE ================================
           Text(
-            'Le contrôle d’identité : principes généraux',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+              "f00003",
+              'Le contrôle d’identité : principes généraux',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -52,9 +65,21 @@ class PaConntroleIdentiteIntroductionGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Place du contrôle, du relevé et de la vérification d’identité dans les opérations de '
-            'police, entre protection des libertés individuelles et nécessité de rechercher les '
-            'infractions et de prévenir les atteintes à l’ordre public.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00004",
+                  'Place du contrôle, du relevé et de la vérification d’identité dans les opérations de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00005",
+                  'police, entre protection des libertés individuelles et nécessité de rechercher les ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00006",
+                  'infractions et de prévenir les atteintes à l’ordre public.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,46 +90,110 @@ class PaConntroleIdentiteIntroductionGpxSchool extends StatelessWidget {
           const SizedBox(height: 18),
 
           // ===================== BLOC 1 — LOGIQUE GÉNÉRALE =================
-          const _SubTitle(
-            '1. Un équilibre entre libertés et maintien de l’ordre',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+              "f00007",
+              '1. Un équilibre entre libertés et maintien de l’ordre',
+            ),
           ),
 
-          const _Paragraph(
-            'Les contrôles, les relevés et les vérifications d’identité font partie des opérations '
-            'de police tendant à établir l’identité d’une personne. Ils doivent être mis en œuvre '
-            'dans le respect d’un équilibre permanent : d’un côté l’exercice des libertés '
-            'individuelles, dont l’autorité judiciaire est gardienne, de l’autre la nécessité de '
-            'rechercher les infractions et de prévenir les atteintes à l’ordre public.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00008",
+                  'Les contrôles, les relevés et les vérifications d’identité font partie des opérations ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00009",
+                  'de police tendant à établir l’identité d’une personne. Ils doivent être mis en œuvre ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00010",
+                  'dans le respect d’un équilibre permanent : d’un côté l’exercice des libertés ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00011",
+                  'individuelles, dont l’autorité judiciaire est gardienne, de l’autre la nécessité de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00012",
+                  'rechercher les infractions et de prévenir les atteintes à l’ordre public.',
+                ),
           ),
           const SizedBox(height: 10),
 
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'Le contrôle d’identité n’est jamais une fin en soi : il s’inscrit dans une mission '
-                'de prévention, de constatation des infractions ou de protection de l’ordre public.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00013",
+                  'Le contrôle d’identité n’est jamais une fin en soi : il s’inscrit dans une mission ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00014",
+                  'de prévention, de constatation des infractions ou de protection de l’ordre public.',
+                ),
           ),
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'Officiers de police judiciaire et agents de police judiciaire doivent en permanence '
-                'adapter leurs pratiques pour concilier efficacité opérationnelle et garanties '
-                'accordées aux personnes contrôlées.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00015",
+                  'Officiers de police judiciaire et agents de police judiciaire doivent en permanence ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00016",
+                  'adapter leurs pratiques pour concilier efficacité opérationnelle et garanties ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00017",
+                  'accordées aux personnes contrôlées.',
+                ),
           ),
           const SizedBox(height: 18),
 
           // ========== BLOC 2 — BASE LÉGALE ================================
-          const _SubTitle(
-            '2. Base légale du contrôle, du relevé et de la vérification',
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+              "f00018",
+              '2. Base légale du contrôle, du relevé et de la vérification',
+            ),
           ),
 
           _Paragraph.rich([
-            const TextSpan(
+            TextSpan(
               text:
-                  'Les conditions juridiques de mise en œuvre de ces opérations, ainsi que leurs '
-                  'modalités pratiques d’application, sont prévues par le code de procédure pénale, '
-                  'notamment aux ',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00019",
+                    'Les conditions juridiques de mise en œuvre de ces opérations, ainsi que leurs ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00020",
+                    'modalités pratiques d’application, sont prévues par le code de procédure pénale, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00021",
+                    'notamment aux ',
+                  ),
             ),
             TextSpan(
-              text: 'articles 78-1 à 78-7 du code de procédure pénale',
+              text: ScolariteText.value(
+                "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                "f00022",
+                'articles 78-1 à 78-7 du code de procédure pénale',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 color: isDarkColor(context)
@@ -112,64 +201,168 @@ class PaConntroleIdentiteIntroductionGpxSchool extends StatelessWidget {
                     : const Color(0xFFD32F2F),
               ),
             ),
-            const TextSpan(
+            TextSpan(
               text:
-                  '. Ces articles définissent le cadre juridique du contrôle d’identité, du relevé '
-                  'd’identité et de la vérification d’identité.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00023",
+                    '. Ces articles définissent le cadre juridique du contrôle d’identité, du relevé ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00024",
+                    'd’identité et de la vérification d’identité.',
+                  ),
             ),
           ]),
           const SizedBox(height: 10),
 
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'Ces dispositions sont complétées par celles contenues dans le code de l’entrée '
-                  'et du séjour des étrangers et du droit d’asile, qui imposent aux ressortissants '
-                  'étrangers de présenter, à la suite d’un contrôle d’identité, les pièces ou '
-                  'documents sous le couvert desquels ils sont autorisés à circuler ou à séjourner '
-                  'en France. L’officier de police judiciaire doit donc connaître ces règles pour '
-                  'adapter son contrôle en présence d’une personne étrangère.',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00025",
+                    'Ces dispositions sont complétées par celles contenues dans le code de l’entrée ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00026",
+                    'et du séjour des étrangers et du droit d’asile, qui imposent aux ressortissants ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00027",
+                    'étrangers de présenter, à la suite d’un contrôle d’identité, les pièces ou ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00028",
+                    'documents sous le couvert desquels ils sont autorisés à circuler ou à séjourner ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00029",
+                    'en France. L’officier de police judiciaire doit donc connaître ces règles pour ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                    "f00030",
+                    'adapter son contrôle en présence d’une personne étrangère.',
+                  ),
             ),
           ]),
           const SizedBox(height: 18),
 
           // ========== BLOC 3 — DÉFINITION DU CONTRÔLE D’IDENTITÉ ==========
-          const _SubTitle('3. Définition du contrôle d’identité'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+              "f00031",
+              '3. Définition du contrôle d’identité',
+            ),
+          ),
 
-          const _Paragraph(
-            'Le contrôle d’identité est l’opération par laquelle une personne est invitée à '
-            'justifier sur le champ de son identité. Il s’agit de la première étape de l’ensemble '
-            'des opérations visant à établir l’identité d’un individu.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00032",
+                  'Le contrôle d’identité est l’opération par laquelle une personne est invitée à ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00033",
+                  'justifier sur le champ de son identité. Il s’agit de la première étape de l’ensemble ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00034",
+                  'des opérations visant à établir l’identité d’un individu.',
+                ),
           ),
           const SizedBox(height: 10),
 
-          const _Paragraph(
-            'Il doit être distingué de la vérification d’identité, qui constitue une deuxième phase '
-            'dans l’établissement de l’identité. La vérification intervient lorsque les documents '
-            'présentés sont insuffisants, contestés, ou lorsque la personne ne peut ou ne veut pas '
-            'justifier de son identité dans le cadre du contrôle initial.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00035",
+                  'Il doit être distingué de la vérification d’identité, qui constitue une deuxième phase ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00036",
+                  'dans l’établissement de l’identité. La vérification intervient lorsque les documents ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00037",
+                  'présentés sont insuffisants, contestés, ou lorsque la personne ne peut ou ne veut pas ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00038",
+                  'justifier de son identité dans le cadre du contrôle initial.',
+                ),
           ),
           const SizedBox(height: 18),
 
           // ========== BLOC 4 — SYNTHÈSE PÉDAGOGIQUE =======================
-          const _SubTitle('4. À retenir pour la suite du chapitre'),
+          _SubTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+              "f00039",
+              '4. À retenir pour la suite du chapitre',
+            ),
+          ),
 
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'Trois opérations sont à distinguer : le contrôle d’identité, le relevé d’identité et '
-                'la vérification d’identité, chacune avec ses conditions propres.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00040",
+                  'Trois opérations sont à distinguer : le contrôle d’identité, le relevé d’identité et ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00041",
+                  'la vérification d’identité, chacune avec ses conditions propres.',
+                ),
           ),
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'Le cadre juridique principal se trouve dans les articles 78-1 à 78-7 du code de '
-                'procédure pénale, complétés pour les étrangers par le code de l’entrée et du '
-                'séjour des étrangers et du droit d’asile.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00042",
+                  'Le cadre juridique principal se trouve dans les articles 78-1 à 78-7 du code de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00043",
+                  'procédure pénale, complétés pour les étrangers par le code de l’entrée et du ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00044",
+                  'séjour des étrangers et du droit d’asile.',
+                ),
           ),
-          const _IntroBullet(
+          _IntroBullet(
             text:
-                'Le contrôle d’identité est un acte de police encadré, qui doit toujours respecter '
-                'les libertés individuelles et être justifié par la finalité de prévention ou de '
-                'recherche d’infractions.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00045",
+                  'Le contrôle d’identité est un acte de police encadré, qui doit toujours respecter ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00046",
+                  'les libertés individuelles et être justifié par la finalité de prévention ou de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart",
+                  "f00047",
+                  'recherche d’infractions.',
+                ),
           ),
         ],
       ),
@@ -429,9 +622,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

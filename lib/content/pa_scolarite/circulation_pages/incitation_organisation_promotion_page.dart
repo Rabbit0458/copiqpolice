@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaIncitationOrganisationPromotionPage extends StatelessWidget {
   const PaIncitationOrganisationPromotionPage({super.key});
@@ -59,10 +60,18 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions circulation routière",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+            "f00002",
+            "Infractions circulation routière",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Incitation, organisation et promotion des rodéos motorisés",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+              "f00003",
+              "Incitation, organisation et promotion des rodéos motorisés",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’inciter directement une personne à participer à un rodéo motorisé, "
-                "d’organiser un rassemblement destiné à cette pratique et d’en faire, par tout moyen, "
-                "la promotion constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00005",
+                      "Le fait d’inciter directement une personne à participer à un rodéo motorisé, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00006",
+                      "d’organiser un rassemblement destiné à cette pratique et d’en faire, par tout moyen, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00007",
+                      "la promotion constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,22 +135,30 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
 
           // ✅ Élément légal EN HAUT
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 236-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00009",
+                    "Article L. 236-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’incitation, l’organisation et la promotion d’un rodéo motorisé.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00010",
+                    " : définit et réprime l’incitation, l’organisation et la promotion d’un rodéo motorisé.",
+                  ),
                 ),
               ]),
             ],
@@ -131,42 +168,74 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce texte a été créé afin d’empêcher en amont la commission d’un rodéo motorisé : "
-                "l’infraction vise des actes préparatoires (incitation, organisation, promotion).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00012",
+                      "Ce texte a été créé afin d’empêcher en amont la commission d’un rodéo motorisé : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00013",
+                      "l’infraction vise des actes préparatoires (incitation, organisation, promotion).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "A) Inciter directement à participer à un rodéo motorisé",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00014",
+                  "A) Inciter directement à participer à un rodéo motorisé",
+                ),
               ),
               _Paragraph(
-                "L’incitation correspond à une provocation directe à commettre un fait : "
-                "il s’agit de pousser une personne à participer à un rodéo motorisé.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00015",
+                      "L’incitation correspond à une provocation directe à commettre un fait : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00016",
+                      "il s’agit de pousser une personne à participer à un rodéo motorisé.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "B) Organiser un rassemblement destiné à permettre la commission d’un rodéo motorisé en réunion",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00017",
+                  "B) Organiser un rassemblement destiné à permettre la commission d’un rodéo motorisé en réunion",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Il s’agit d’organiser un rassemblement destiné à permettre la commission des faits mentionnés au II de ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00018",
+                    "Il s’agit d’organiser un rassemblement destiné à permettre la commission des faits mentionnés au II de ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article L. 236-1 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00019",
+                    "l’article L. 236-1 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -174,22 +243,46 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Faire la promotion, par tout moyen, d’un rodéo motorisé (ou du rassemblement)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00020",
+                  "C) Faire la promotion, par tout moyen, d’un rodéo motorisé (ou du rassemblement)",
+                ),
               ),
               _Paragraph(
-                "La promotion désigne le fait de présenter un comportement ou une pratique sous un jour favorable. "
-                "Elle peut se faire via tout moyen de communication (affichage, vidéos, publications, réseaux sociaux, etc.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00021",
+                      "La promotion désigne le fait de présenter un comportement ou une pratique sous un jour favorable. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00022",
+                      "Elle peut se faire via tout moyen de communication (affichage, vidéos, publications, réseaux sociaux, etc.).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _NotaBox(
-                title: "Point clé",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00023",
+                  "Point clé",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Même si l’incitation, l’organisation ou la promotion n’a pas été suivie d’effet, l’infraction est caractérisée : "
-                        "c’est une infraction formelle, réalisée par le seul accomplissement des actes, sans nécessité qu’un rodéo ait effectivement eu lieu.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                          "f00024",
+                          "Même si l’incitation, l’organisation ou la promotion n’a pas été suivie d’effet, l’infraction est caractérisée : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                          "f00025",
+                          "c’est une infraction formelle, réalisée par le seul accomplissement des actes, sans nécessité qu’un rodéo ait effectivement eu lieu.",
+                        ),
                   ),
                 ],
               ),
@@ -200,24 +293,50 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+              "f00026",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Volonté"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00027",
+                  "Volonté",
+                ),
+              ),
               _Paragraph(
-                "Il s’agit d’une infraction intentionnelle : l’auteur doit vouloir accomplir l’un des comportements suivants :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00028",
+                  "Il s’agit d’une infraction intentionnelle : l’auteur doit vouloir accomplir l’un des comportements suivants :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "inciter à participer à un rodéo motorisé ;"),
               _BulletPoint(
-                text:
-                    "organiser un rassemblement destiné à permettre la commission d’un rodéo motorisé en réunion ;",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00029",
+                  "inciter à participer à un rodéo motorisé ;",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "faire la promotion d’un rodéo motorisé ou d’un rassemblement destiné à permettre la commission d’un rodéo motorisé en réunion.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00030",
+                  "organiser un rassemblement destiné à permettre la commission d’un rodéo motorisé en réunion ;",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00031",
+                  "faire la promotion d’un rodéo motorisé ou d’un rassemblement destiné à permettre la commission d’un rodéo motorisé en réunion.",
+                ),
               ),
             ],
           ),
@@ -226,13 +345,21 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+              "f00032",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Aucune circonstance aggravante prévue par ce texte.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00033",
+                  "Aucune circonstance aggravante prévue par ce texte.",
+                ),
               ),
             ],
           ),
@@ -241,23 +368,38 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+              "f00034",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00035",
+                  "Peines encourues",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 236-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00036",
+                    "Article L. 236-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00037",
+                    "2 ans d’emprisonnement et 30 000 € d’amende.",
+                  ),
                 ),
               ]),
 
@@ -268,12 +410,24 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le code de la route prévoit la confiscation obligatoire du véhicule ayant servi à commettre l’infraction. "
-                        "Si la juridiction ne prononce pas cette peine, elle doit motiver sa décision.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                          "f00038",
+                          "Le code de la route prévoit la confiscation obligatoire du véhicule ayant servi à commettre l’infraction. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                          "f00039",
+                          "Si la juridiction ne prononce pas cette peine, elle doit motiver sa décision.",
+                        ),
                   ),
                   TextSpan(text: " "),
                   TextSpan(
-                    text: "(article L. 236-3 du Code de la route)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00040",
+                      "(article L. 236-3 du Code de la route)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -286,16 +440,32 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
               SizedBox(height: 10),
 
               _NotaBox(
-                title: "Mesures administratives",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00041",
+                  "Mesures administratives",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Immobilisation administrative et mise en fourrière possibles sans autorisation préalable du procureur, "
-                        "qui doit néanmoins être informé immédiatement par tout moyen.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                          "f00042",
+                          "Immobilisation administrative et mise en fourrière possibles sans autorisation préalable du procureur, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                          "f00043",
+                          "qui doit néanmoins être informé immédiatement par tout moyen.",
+                        ),
                   ),
                   TextSpan(text: " "),
                   TextSpan(
-                    text: "(article L. 325-1-2 du Code de la route)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                      "f00044",
+                      "(article L. 325-1-2 du Code de la route)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -307,24 +477,44 @@ class PaIncitationOrganisationPromotionPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00045",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                  "f00046",
+                  "Tentative : NON.",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00047",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00048",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart",
+                    "f00049",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),

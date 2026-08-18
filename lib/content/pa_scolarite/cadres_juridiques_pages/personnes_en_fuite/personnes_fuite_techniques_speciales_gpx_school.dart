@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
   const PaPersonnesFuiteTechniqueSpecialesGpxSchool({super.key});
@@ -12,18 +13,22 @@ class PaPersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color cardColor = isDark
-? const Color(0xFF111827)
-: const Color(0xFFE3F2FD);
+        ? const Color(0xFF111827)
+        : const Color(0xFFE3F2FD);
     final Color accent = isDark
-? const Color(0xFF64B5F6)
-: const Color(0xFF1565C0);
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
 
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text(
-          'Personnes en fuite – Tech. spéciales',
+        title: Text(
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+            "f00001",
+            'Personnes en fuite – Tech. spéciales',
+          ),
           style: TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
         ),
       ),
@@ -33,64 +38,141 @@ class PaPersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const _SubTitle('2.2.3 – Les techniques spéciales d’enquête'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                  "f00002",
+                  '2.2.3 – Les techniques spéciales d’enquête',
+                ),
+              ),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Lorsque les nécessités de l’enquête l’exigent, l’Article 74-2 du Code de '
-                'procédure pénale permet de mettre en œuvre certaines des techniques '
-                'd’enquête applicables à la criminalité et à la délinquance organisées, '
-                'ainsi qu’aux crimes. Ces techniques s’inscrivent dans le cadre de la '
-                'procédure applicable à la délinquance et à la criminalité organisées.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00003",
+                      'Lorsque les nécessités de l’enquête l’exigent, l’Article 74-2 du Code de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00004",
+                      'procédure pénale permet de mettre en œuvre certaines des techniques ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00005",
+                      'd’enquête applicables à la criminalité et à la délinquance organisées, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00006",
+                      'ainsi qu’aux crimes. Ces techniques s’inscrivent dans le cadre de la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00007",
+                      'procédure applicable à la délinquance et à la criminalité organisées.',
+                    ),
               ),
               const SizedBox(height: 20),
 
               // 2.2.3.1 – Dispositifs procéduraux applicables
-              const _SubTitle(
-                '2.2.3.1 – Les dispositifs procéduraux applicables',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                  "f00008",
+                  '2.2.3.1 – Les dispositifs procéduraux applicables',
+                ),
               ),
               const SizedBox(height: 8),
               _ConditionCard(
-                title: 'Principales techniques d’enquête mobilisables',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                  "f00009",
+                  'Principales techniques d’enquête mobilisables',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _IntroBullet(
                     text:
-                        'Les techniques suivantes peuvent être mises en œuvre, sous le '
-                        'contrôle de l’autorité judiciaire, pour rechercher une personne '
-                        'en fuite lorsque les conditions légales sont réunies :',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00010",
+                          'Les techniques suivantes peuvent être mises en œuvre, sous le ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00011",
+                          'contrôle de l’autorité judiciaire, pour rechercher une personne ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00012",
+                          'en fuite lorsque les conditions légales sont réunies :',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _BulletPoint(
-                    text:
-                        'La surveillance (Articles 706-80 à 706-80-2 du Code de procédure pénale) ;',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00013",
+                      'La surveillance (Articles 706-80 à 706-80-2 du Code de procédure pénale) ;',
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00014",
+                      'L’infiltration (Articles 706-81 à 706-87 du Code de procédure pénale) ;',
+                    ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00015",
+                      'Les perquisitions dérogatoires (Articles 706-89 à 706-94 du Code de procédure pénale) ;',
+                    ),
                   ),
                   _BulletPoint(
                     text:
-                        'L’infiltration (Articles 706-81 à 706-87 du Code de procédure pénale) ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00016",
+                          'L’accès à distance aux correspondances stockées par la voie des ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00017",
+                          'communications électroniques (Articles 706-95 à 706-95-3 du Code de procédure pénale) ;',
+                        ),
+                  ),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00018",
+                      'Les IMSI-catcher (Article 706-95-20 du Code de procédure pénale) ;',
+                    ),
                   ),
                   _BulletPoint(
                     text:
-                        'Les perquisitions dérogatoires (Articles 706-89 à 706-94 du Code de procédure pénale) ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00019",
+                          'La sonorisation et la fixation d’images de certains lieux ou véhicules ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00020",
+                          '(Articles 706-96 à 706-100 du Code de procédure pénale) ;',
+                        ),
                   ),
                   _BulletPoint(
-                    text:
-                        'L’accès à distance aux correspondances stockées par la voie des '
-                        'communications électroniques (Articles 706-95 à 706-95-3 du Code de procédure pénale) ;',
-                  ),
-                  _BulletPoint(
-                    text:
-                        'Les IMSI-catcher (Article 706-95-20 du Code de procédure pénale) ;',
-                  ),
-                  _BulletPoint(
-                    text:
-                        'La sonorisation et la fixation d’images de certains lieux ou véhicules '
-                        '(Articles 706-96 à 706-100 du Code de procédure pénale) ;',
-                  ),
-                  _BulletPoint(
-                    text:
-                        'La captation de données informatiques (Articles 706-102-1 à 706-102-5 du Code de procédure pénale).',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00021",
+                      'La captation de données informatiques (Articles 706-102-1 à 706-102-5 du Code de procédure pénale).',
+                    ),
                   ),
                 ],
               ),
@@ -98,60 +180,173 @@ class PaPersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
               const SizedBox(height: 24),
 
               // 2.2.3.2 – Conditions de mise en œuvre
-              const _SubTitle('2.2.3.2 – Les conditions de mise en œuvre'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                  "f00022",
+                  '2.2.3.2 – Les conditions de mise en œuvre',
+                ),
+              ),
               const SizedBox(height: 8),
               _ConditionCard(
-                title: 'Conditions pour recourir aux techniques spéciales',
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                  "f00023",
+                  'Conditions pour recourir aux techniques spéciales',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'Ces dispositions ne sont applicables que lorsque la personne concernée '
-                    'a fait l’objet, pour l’une des infractions visées par les Articles 706-73 '
-                    'ou 706-73-1 du Code de procédure pénale (infractions relevant de la '
-                    'criminalité et de la délinquance organisées, infractions économiques '
-                    'et financières ou atteintes aux systèmes de traitement automatisé de '
-                    'données), de l’une des décisions suivantes :',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00024",
+                          'Ces dispositions ne sont applicables que lorsque la personne concernée ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00025",
+                          'a fait l’objet, pour l’une des infractions visées par les Articles 706-73 ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00026",
+                          'ou 706-73-1 du Code de procédure pénale (infractions relevant de la ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00027",
+                          'criminalité et de la délinquance organisées, infractions économiques ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00028",
+                          'et financières ou atteintes aux systèmes de traitement automatisé de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00029",
+                          'données), de l’une des décisions suivantes :',
+                        ),
                   ),
                   SizedBox(height: 10),
                   _BulletPoint(
-                    text:
-                        'Mandat d’arrêt visant une personne renvoyée devant une juridiction de jugement ;',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                      "f00030",
+                      'Mandat d’arrêt visant une personne renvoyée devant une juridiction de jugement ;',
+                    ),
                   ),
                   _BulletPoint(
                     text:
-                        'Mandat d’arrêt délivré par une juridiction de jugement ou par le juge '
-                        'de l’application des peines ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00031",
+                          'Mandat d’arrêt délivré par une juridiction de jugement ou par le juge ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00032",
+                          'de l’application des peines ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'Condamnation à une peine privative de liberté sans sursis supérieure '
-                        'ou égale à un an, ou à une peine privative de liberté supérieure ou '
-                        'égale à un an résultant de la révocation d’un sursis assorti ou non '
-                        'd’une probation, lorsque cette condamnation est exécutoire ou '
-                        'passée en force de chose jugée ;',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00033",
+                          'Condamnation à une peine privative de liberté sans sursis supérieure ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00034",
+                          'ou égale à un an, ou à une peine privative de liberté supérieure ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00035",
+                          'égale à un an résultant de la révocation d’un sursis assorti ou non ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00036",
+                          'd’une probation, lorsque cette condamnation est exécutoire ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00037",
+                          'passée en force de chose jugée ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'Décision de retrait ou de révocation d’un aménagement de peine ou '
-                        'd’une libération sous contrainte, ou décision de mise à exécution de '
-                        'l’emprisonnement prévu par la juridiction de jugement en cas de '
-                        'violation des obligations et interdictions résultant d’une peine, '
-                        'dès lors que cette décision a pour conséquence la mise à exécution '
-                        'd’un quantum ou d’un reliquat de peine d’emprisonnement supérieur '
-                        'à un an.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00038",
+                          'Décision de retrait ou de révocation d’un aménagement de peine ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00039",
+                          'd’une libération sous contrainte, ou décision de mise à exécution de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00040",
+                          'l’emprisonnement prévu par la juridiction de jugement en cas de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00041",
+                          'violation des obligations et interdictions résultant d’une peine, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00042",
+                          'dès lors que cette décision a pour conséquence la mise à exécution ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00043",
+                          'd’un quantum ou d’un reliquat de peine d’emprisonnement supérieur ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                          "f00044",
+                          'à un an.',
+                        ),
                   ),
                   SizedBox(height: 14),
                   _NotaBox(
                     bodySpans: [
                       TextSpan(
                         text:
-                            'Si la personne en fuite est découverte, il est procédé soit à '
-                            'l’exécution du mandat d’arrêt (référence au fascicule sur les '
-                            'mandats), soit à l’exécution de la fiche de recherche relative au '
-                            'jugement par itératif défaut (guide de procédure – les décisions '
-                            'de justice).',
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00045",
+                              'Si la personne en fuite est découverte, il est procédé soit à ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00046",
+                              'l’exécution du mandat d’arrêt (référence au fascicule sur les ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00047",
+                              'mandats), soit à l’exécution de la fiche de recherche relative au ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00048",
+                              'jugement par itératif défaut (guide de procédure – les décisions ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00049",
+                              'de justice).',
+                            ),
                       ),
                     ],
                   ),
@@ -161,10 +356,26 @@ class PaPersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
                     bodySpans: [
                       TextSpan(
                         text:
-                            'Les dispositions de l’Article 74-2 du Code de procédure pénale '
-                            'sont également applicables en matière de mandat d’arrêt européen '
-                            '(Article 695-36 du Code de procédure pénale) et en matière '
-                            'd’extradition (Article 696-21 du Code de procédure pénale).',
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00050",
+                              'Les dispositions de l’Article 74-2 du Code de procédure pénale ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00051",
+                              'sont également applicables en matière de mandat d’arrêt européen ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00052",
+                              '(Article 695-36 du Code de procédure pénale) et en matière ',
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart",
+                              "f00053",
+                              'd’extradition (Article 696-21 du Code de procédure pénale).',
+                            ),
                       ),
                     ],
                   ),

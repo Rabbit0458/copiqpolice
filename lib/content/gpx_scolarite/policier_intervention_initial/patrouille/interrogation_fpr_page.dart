@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class InterrogationFprPage extends StatelessWidget {
   const InterrogationFprPage({super.key});
@@ -55,7 +56,11 @@ class InterrogationFprPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Patrouille",
@@ -73,7 +78,11 @@ class InterrogationFprPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’interrogation du F.P.R.",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+              "f00002",
+              "L’interrogation du F.P.R.",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,15 +93,31 @@ class InterrogationFprPage extends StatelessWidget {
           const SizedBox(height: 10),
 
           _ConditionCard(
-            title: "Définition & finalité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+              "f00003",
+              "Définition & finalité",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fichier des personnes recherchées (F.P.R.) a pour finalité de faciliter les recherches "
-                "et les contrôles effectués par les policiers et les autres agents habilités, dans le cadre "
-                "de missions de police judiciaire ou administrative.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00004",
+                      "Le fichier des personnes recherchées (F.P.R.) a pour finalité de faciliter les recherches ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00005",
+                      "et les contrôles effectués par les policiers et les autres agents habilités, dans le cadre ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00006",
+                      "de missions de police judiciaire ou administrative.",
+                    ),
               ),
             ],
           ),
@@ -101,37 +126,49 @@ class InterrogationFprPage extends StatelessWidget {
 
           // ✅ “Élément légal” en haut
           _ConditionCard(
-            title: "I — Base légale",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+              "f00007",
+              "I — Base légale",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les décisions judiciaires donnant lieu à inscription sont notamment prévues par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                    "f00008",
+                    "Les décisions judiciaires donnant lieu à inscription sont notamment prévues par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 230-19 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                    "f00009",
+                    "l’article 230-19 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le policier doit respecter les finalités du fichier et interroger dans le cadre légal, notamment via CHEOPS NG (rappel : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                    "f00010",
+                    "Le policier doit respecter les finalités du fichier et interroger dans le cadre légal, notamment via CHEOPS NG (rappel : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article R. 434-21 du Code de la sécurité intérieure",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                    "f00011",
+                    "article R. 434-21 du Code de la sécurité intérieure",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
@@ -141,33 +178,53 @@ class InterrogationFprPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Personnes inscrites au F.P.R.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+              "f00012",
+              "II — Personnes inscrites au F.P.R.",
+            ),
             cardColor: cardCat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sont inscrites dans le F.P.R. les personnes faisant l’objet :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00013",
+                  "Sont inscrites dans le F.P.R. les personnes faisant l’objet :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "De décisions judiciaires mentionnées à l’article 230-19 du CPP (mandat de recherche, interdiction de paraître, interdiction du territoire, inscription FIJAIT…), y compris celles ordonnées par un autre État de l’UE.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00014",
+                  "De décisions judiciaires mentionnées à l’article 230-19 du CPP (mandat de recherche, interdiction de paraître, interdiction du territoire, inscription FIJAIT…), y compris celles ordonnées par un autre État de l’UE.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "D’une recherche pour les besoins d’une enquête de police judiciaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00015",
+                  "D’une recherche pour les besoins d’une enquête de police judiciaire.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "De certaines décisions administratives ou situations particulières (opposition de sortie du territoire, malades mentaux à placer d’office, reconduite frontière non exécutée, interdiction de stade, mineurs en fugue, non-restitution d’un permis de conduire invalidé…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00016",
+                  "De certaines décisions administratives ou situations particulières (opposition de sortie du territoire, malades mentaux à placer d’office, reconduite frontière non exécutée, interdiction de stade, mineurs en fugue, non-restitution d’un permis de conduire invalidé…).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Important : l’existence d’une inscription ne signifie pas automatiquement interpellation. La conduite à tenir dépend de la catégorie et du numéro associés.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00017",
+                      "Important : l’existence d’une inscription ne signifie pas automatiquement interpellation. La conduite à tenir dépend de la catégorie et du numéro associés.",
+                    ),
                   ),
                 ],
               ),
@@ -177,33 +234,96 @@ class InterrogationFprPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Catégories de recherche",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+              "f00018",
+              "III — Catégories de recherche",
+            ),
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les mesures de recherche sont regroupées en 21 catégories. On trouve une ou deux lettres "
-                "indiquant la catégorie (ex : AL, E, G, IT, M, PJ, S…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00019",
+                      "Les mesures de recherche sont regroupées en 21 catégories. On trouve une ou deux lettres ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00020",
+                      "indiquant la catégorie (ex : AL, E, G, IT, M, PJ, S…).",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Exemples de catégories"),
-              _BulletPoint(text: "AL : aliénés."),
-              _BulletPoint(text: "E : étrangers."),
-              _BulletPoint(
-                text:
-                    "G : mesures administratives concernant les permis de conduire.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00021",
+                  "Exemples de catégories",
+                ),
               ),
               _BulletPoint(
-                text: "IT : interdictions judiciaires du territoire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00022",
+                  "AL : aliénés.",
+                ),
               ),
-              _BulletPoint(text: "M : mineurs en fugue."),
-              _BulletPoint(text: "PJ : recherches de police judiciaire."),
-              _BulletPoint(text: "S : sûreté de l’État."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00023",
+                  "E : étrangers.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00024",
+                  "G : mesures administratives concernant les permis de conduire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00025",
+                  "IT : interdictions judiciaires du territoire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00026",
+                  "M : mineurs en fugue.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00027",
+                  "PJ : recherches de police judiciaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00028",
+                  "S : sûreté de l’État.",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "Chaque catégorie est associée à un numéro correspondant à une instruction à exécuter. "
-                "Les conduites à tenir varient selon les situations et n’autorisent pas nécessairement la coercition.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00029",
+                      "Chaque catégorie est associée à un numéro correspondant à une instruction à exécuter. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00030",
+                      "Les conduites à tenir varient selon les situations et n’autorisent pas nécessairement la coercition.",
+                    ),
               ),
             ],
           ),
@@ -211,42 +331,88 @@ class InterrogationFprPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Exemples de conduites à tenir",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+              "f00031",
+              "IV — Exemples de conduites à tenir",
+            ),
             cardColor: cardEx,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("PJ 01 — Recherche d’adresse"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00032",
+                  "PJ 01 — Recherche d’adresse",
+                ),
+              ),
               _Paragraph(
-                "Conduite à tenir : ne pas interpeller l’intéressé, ni attirer son attention sur la recherche, "
-                "mais rechercher sa résidence et la faire connaître d’urgence au service demandeur.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00033",
+                      "Conduite à tenir : ne pas interpeller l’intéressé, ni attirer son attention sur la recherche, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00034",
+                      "mais rechercher sa résidence et la faire connaître d’urgence au service demandeur.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "AL 01 — Internés administratifs en état d’évasion",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00035",
+                  "AL 01 — Internés administratifs en état d’évasion",
+                ),
               ),
               _Paragraph(
-                "Conduite à tenir : appréhender l’intéressé, prendre toutes les mesures de sécurité utiles "
-                "et aviser d’urgence le service demandeur (qui donnera les indications et instructions).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00036",
+                      "Conduite à tenir : appréhender l’intéressé, prendre toutes les mesures de sécurité utiles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00037",
+                      "et aviser d’urgence le service demandeur (qui donnera les indications et instructions).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("J 55 — Mandat d’arrêt européen"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00038",
+                  "J 55 — Mandat d’arrêt européen",
+                ),
+              ),
               _Paragraph(
-                "Conduite à tenir : procéder à l’arrestation de l’intéressé.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                  "f00039",
+                  "Conduite à tenir : procéder à l’arrestation de l’intéressé.",
+                ),
               ),
               SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le passage au fichier doit toujours s’effectuer à distance de la personne contrôlée. En cas de réponse positive, le CIC notifiera la conduite à tenir. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00040",
+                      "Le passage au fichier doit toujours s’effectuer à distance de la personne contrôlée. En cas de réponse positive, le CIC notifiera la conduite à tenir. ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "Le service à l’origine de l’ordre de recherche doit également être contacté afin de confirmer la validité de la fiche.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_initial/patrouille/interrogation_fpr_page.dart",
+                      "f00041",
+                      "Le service à l’origine de l’ordre de recherche doit également être contacté afin de confirmer la validité de la fiche.",
+                    ),
                   ),
                 ],
               ),
@@ -504,9 +670,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -4251,25 +4251,13 @@ class _QuizLangueEtrangereEspagnolState
   /// existe, du geste retour système — sans quoi celui-ci contournerait la
   /// confirmation.
   Future<void> _fermerQuiz() async {
-    if (_sortieEnCours) return;
-    _sortieEnCours = true;
-    try {
-      // Rien n'est engagé avant le choix du niveau : on sort sans demander.
-      if (!_hasQuiz) {
-        if (mounted) _quitterEcran();
-        return;
-      }
-      final confirme = await _confirmerSortie(
-        titre: 'Quitter le quiz ?',
-        actionLabel: 'Quitter',
-      );
-      if (!confirme || !mounted) return;
-      await _updateHistoryOnFinish();
-      if (!mounted) return;
-      _quitterEcran();
-    } finally {
-      _sortieEnCours = false;
+    // La croix et « Mettre fin » partagent strictement la même clôture :
+    // confirmation, sauvegarde Supabase, calcul du score et écran de résultat.
+    if (!_hasQuiz) {
+      if (mounted) _quitterEcran();
+      return;
     }
+    await _endQuizNow();
   }
 
   /// Sortie effective de l'écran.

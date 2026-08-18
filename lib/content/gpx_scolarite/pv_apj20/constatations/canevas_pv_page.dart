@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CanevasPVConstatationsPage extends StatelessWidget {
   const CanevasPVConstatationsPage({super.key});
@@ -54,7 +55,11 @@ class CanevasPVConstatationsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Constatations",
@@ -72,7 +77,11 @@ class CanevasPVConstatationsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Canevas de procès-verbal de constatations",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+              "f00002",
+              "Canevas de procès-verbal de constatations",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,39 +93,60 @@ class CanevasPVConstatationsPage extends StatelessWidget {
 
           // ✅ Base juridique en haut
           _ConditionCard(
-            title: "Base juridique (à mentionner en procédure)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+              "f00003",
+              "Base juridique (à mentionner en procédure)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "En flagrant délit : l’agent de police judiciaire, sur instruction d’un officier de police judiciaire, "
-                      "peut placer sous scellés les objets, traces et indices utiles à la manifestation de la vérité, "
-                      "aux fins d’examens techniques et scientifiques — ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                        "f00004",
+                        "En flagrant délit : l’agent de police judiciaire, sur instruction d’un officier de police judiciaire, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                        "f00005",
+                        "peut placer sous scellés les objets, traces et indices utiles à la manifestation de la vérité, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                        "f00006",
+                        "aux fins d’examens techniques et scientifiques — ",
+                      ),
                 ),
                 TextSpan(
-                  text: "art. D. 15-5-1-1 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                    "f00007",
+                    "art. D. 15-5-1-1 C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "En enquête préliminaire : l’agent de police judiciaire peut saisir et placer sous scellés tout prélèvement effectué — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                    "f00008",
+                    "En enquête préliminaire : l’agent de police judiciaire peut saisir et placer sous scellés tout prélèvement effectué — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "art. 76 C.P.P.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                    "f00009",
+                    "art. 76 C.P.P.",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -125,9 +155,21 @@ class CanevasPVConstatationsPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Victime : le code de procédure pénale n’impose pas de réaliser les constatations "
-                        "dans un domicile (ou lieu clos) en présence du chef de maison ou de deux témoins. "
-                        "Il s’agit d’une règle traditionnelle de prudence à observer.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                          "f00010",
+                          "Victime : le code de procédure pénale n’impose pas de réaliser les constatations ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                          "f00011",
+                          "dans un domicile (ou lieu clos) en présence du chef de maison ou de deux témoins. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                          "f00012",
+                          "Il s’agit d’une règle traditionnelle de prudence à observer.",
+                        ),
                   ),
                 ],
               ),
@@ -137,14 +179,26 @@ class CanevasPVConstatationsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Objectif des constatations",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+              "f00013",
+              "Objectif des constatations",
+            ),
             cardColor: cardMain,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les constatations ont pour but de fixer l’état des lieux, d’établir la réalité de l’infraction "
-                "et de rechercher les objets, traces et indices susceptibles d’orienter l’enquête.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00014",
+                      "Les constatations ont pour but de fixer l’état des lieux, d’établir la réalité de l’infraction ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00015",
+                      "et de rechercher les objets, traces et indices susceptibles d’orienter l’enquête.",
+                    ),
               ),
             ],
           ),
@@ -152,113 +206,361 @@ class CanevasPVConstatationsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "Plan du canevas (rédaction)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+              "f00016",
+              "Plan du canevas (rédaction)",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1. Lieu de saisine"),
-              _Paragraph("Mentionner l’endroit exact où se situe l’équipage."),
-              SizedBox(height: 10),
-
-              _SubTitle("2. Instructions"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00017",
+                  "1. Lieu de saisine",
+                ),
+              ),
               _Paragraph(
-                "• Procès-verbal de saisine : l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.\n"
-                "• Constatations sur demande OPJ (après une plainte, par exemple) :\n"
-                "  ➤ en flagrant délit : conformément aux instructions reçues de l’OPJ.\n"
-                "  ➤ en préliminaire : sous le contrôle de l’OPJ.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00018",
+                  "Mentionner l’endroit exact où se situe l’équipage.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("3. Assistants éventuels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00019",
+                  "2. Instructions",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires qui accompagnent le rédacteur pour l’accomplissement de la mission.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00020",
+                      "• Procès-verbal de saisine : l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00021",
+                      "• Constatations sur demande OPJ (après une plainte, par exemple) :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00022",
+                      "  ➤ en flagrant délit : conformément aux instructions reçues de l’OPJ.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00023",
+                      "  ➤ en préliminaire : sous le contrôle de l’OPJ.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("4. Mission"),
-              _Paragraph("Indiquer le but de la mission initiale."),
-              SizedBox(height: 10),
-
-              _SubTitle("5. Saisine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00024",
+                  "3. Assistants éventuels",
+                ),
+              ),
               _Paragraph(
-                "Indiquer le mode de saisine de l’équipage intervenant : réquisition d’une victime, avis téléphonique du chef de poste, "
-                "appel radio du C.I.C., etc. Mentionner les mesures conservatoires prises ou sollicitées.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00025",
+                  "Mentionner les fonctionnaires qui accompagnent le rédacteur pour l’accomplissement de la mission.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("6. Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00026",
+                  "4. Mission",
+                ),
+              ),
               _Paragraph(
-                "En fonction des constatations et déclarations (victime notamment), indiquer le cadre juridique de l’intervention.\n"
-                "Les constatations peuvent être réalisées :\n"
-                "• peu de temps après l’infraction : enquête de flagrance ;\n"
-                "• à un moment plus éloigné (ex. cambriolage constaté plusieurs jours après) : enquête préliminaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00027",
+                  "Indiquer le but de la mission initiale.",
+                ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("7. Transport"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00028",
+                  "5. Saisine",
+                ),
+              ),
               _Paragraph(
-                "Préciser : ville, rue, numéro, immeuble, étage, porte. Indiquer l’heure d’arrivée, la prise de contact "
-                "avec le requérant ou la victime (petite identité) et la vérification de la matérialité des faits.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00029",
+                      "Indiquer le mode de saisine de l’équipage intervenant : réquisition d’une victime, avis téléphonique du chef de poste, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00030",
+                      "appel radio du C.I.C., etc. Mentionner les mesures conservatoires prises ou sollicitées.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("8. Assistance P.T.S."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00031",
+                  "6. Cadre juridique",
+                ),
+              ),
               _Paragraph(
-                "Selon le protocole de répartition des compétences, faire appel au S.D.P.T.S., à la B.P.T.S. ou au S.R.P.T.S.\n"
-                "Mentionner la présence du fonctionnaire P.T.S. ou son heure d’arrivée. Une réquisition peut être exigée.\n"
-                "L’APJ doit préserver les lieux en l’état et ne commencer ses constatations qu’en présence du P.T.S. (sauf nécessité absolue).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00032",
+                      "En fonction des constatations et déclarations (victime notamment), indiquer le cadre juridique de l’intervention.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00033",
+                      "Les constatations peuvent être réalisées :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00034",
+                      "• peu de temps après l’infraction : enquête de flagrance ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00035",
+                      "• à un moment plus éloigné (ex. cambriolage constaté plusieurs jours après) : enquête préliminaire.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("9. Constatations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00036",
+                  "7. Transport",
+                ),
+              ),
               _Paragraph(
-                "En matière criminelle : l’APJ assure uniquement la protection des lieux, seul l’OPJ procède aux constatations techniques.\n"
-                "Pour tout autre fait (petite/moyenne délinquance) : l’APJ peut procéder aux constatations sur les lieux.\n\n"
-                "Étapes :\n"
-                "➤ Description générale : situation géographique, environnement, voies d’accès.\n"
-                "➤ Description précise : mode opératoire (effraction, escalade), découverte d’objets, traces/indices.\n\n"
-                "Noter chaque M.A.S. :\n"
-                "• MODIFICATION : déplacé/endommagé (porte ouverte, dégradations, effractions…)\n"
-                "• APPORT : éléments absents avant l’infraction (traces, empreintes, objets abandonnés…)\n"
-                "• SUPPRESSION : éléments disparus (objets volés).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00037",
+                      "Préciser : ville, rue, numéro, immeuble, étage, porte. Indiquer l’heure d’arrivée, la prise de contact ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00038",
+                      "avec le requérant ou la victime (petite identité) et la vérification de la matérialité des faits.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("S.D.I.S.S. / S.D.I.A."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00039",
+                  "8. Assistance P.T.S.",
+                ),
+              ),
               _Paragraph(
-                "Pour tout objet découvert ou trace relevée :\n"
-                "➤ SITUATION\n"
-                "➤ DESCRIPTION\n"
-                "➤ INTERPELLATION (ou interrogation de la victime)\n"
-                "➤ SAISIE et SCELLÉS ou APPRÉHENSION",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00040",
+                      "Selon le protocole de répartition des compétences, faire appel au S.D.P.T.S., à la B.P.T.S. ou au S.R.P.T.S.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00041",
+                      "Mentionner la présence du fonctionnaire P.T.S. ou son heure d’arrivée. Une réquisition peut être exigée.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00042",
+                      "L’APJ doit préserver les lieux en l’état et ne commencer ses constatations qu’en présence du P.T.S. (sauf nécessité absolue).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("10. Diligences"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00043",
+                  "9. Constatations",
+                ),
+              ),
               _Paragraph(
-                "Inviter la victime à se présenter au service pour déposer plainte, munie si possible d’une liste précise "
-                "des objets dérobés et de leurs références (marque, type, n° de série…) et du chiffrage du préjudice global subi.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00044",
+                      "En matière criminelle : l’APJ assure uniquement la protection des lieux, seul l’OPJ procède aux constatations techniques.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00045",
+                      "Pour tout autre fait (petite/moyenne délinquance) : l’APJ peut procéder aux constatations sur les lieux.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00046",
+                      "Étapes :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00047",
+                      "➤ Description générale : situation géographique, environnement, voies d’accès.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00048",
+                      "➤ Description précise : mode opératoire (effraction, escalade), découverte d’objets, traces/indices.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00049",
+                      "Noter chaque M.A.S. :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00050",
+                      "• MODIFICATION : déplacé/endommagé (porte ouverte, dégradations, effractions…)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00051",
+                      "• APPORT : éléments absents avant l’infraction (traces, empreintes, objets abandonnés…)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00052",
+                      "• SUPPRESSION : éléments disparus (objets volés).",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("11. Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00053",
+                  "S.D.I.S.S. / S.D.I.A.",
+                ),
+              ),
               _Paragraph(
-                "La signature du procès-verbal par la personne présente lors des constatations est recommandée notamment :\n"
-                "• lors de la découverte d’objets abandonnés ;\n"
-                "• lors de déclarations recueillies au style direct.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00054",
+                      "Pour tout objet découvert ou trace relevée :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00055",
+                      "➤ SITUATION\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00056",
+                      "➤ DESCRIPTION\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00057",
+                      "➤ INTERPELLATION (ou interrogation de la victime)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00058",
+                      "➤ SAISIE et SCELLÉS ou APPRÉHENSION",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("12. Annexes"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00059",
+                  "10. Diligences",
+                ),
+              ),
               _Paragraph(
-                "Documents éventuellement remis par le plaignant. Copie de la réquisition éventuellement remise au service P.T.S. intervenant.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00060",
+                      "Inviter la victime à se présenter au service pour déposer plainte, munie si possible d’une liste précise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00061",
+                      "des objets dérobés et de leurs références (marque, type, n° de série…) et du chiffrage du préjudice global subi.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("13. Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00062",
+                  "11. Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "L’agent de police judiciaire avise l’officier de police judiciaire des constatations effectuées.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00063",
+                      "La signature du procès-verbal par la personne présente lors des constatations est recommandée notamment :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00064",
+                      "• lors de la découverte d’objets abandonnés ;\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00065",
+                      "• lors de déclarations recueillies au style direct.",
+                    ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00066",
+                  "12. Annexes",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00067",
+                  "Documents éventuellement remis par le plaignant. Copie de la réquisition éventuellement remise au service P.T.S. intervenant.",
+                ),
+              ),
+              SizedBox(height: 10),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00068",
+                  "13. Avis O.P.J.",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00069",
+                  "L’agent de police judiciaire avise l’officier de police judiciaire des constatations effectuées.",
+                ),
               ),
             ],
           ),
@@ -267,13 +569,21 @@ class CanevasPVConstatationsPage extends StatelessWidget {
 
           // ✅ Affichage des pages images
           _ConditionCard(
-            title: "Documents (pages du canevas)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+              "f00070",
+              "Documents (pages du canevas)",
+            ),
             cardColor: cardDocs,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "Chaque page ci-dessous est une image consultable avec zoom, déplacement, rotation et mode plein écran.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                  "f00071",
+                  "Chaque page ci-dessous est une image consultable avec zoom, déplacement, rotation et mode plein écran.",
+                ),
               ),
               const SizedBox(height: 12),
               for (int i = 0; i < pages.length; i++) ...[
@@ -489,9 +799,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -540,7 +848,9 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
-              color: isDark ? Colors.black.withValues(alpha: .18) : Colors.black12,
+              color: isDark
+                  ? Colors.black.withValues(alpha: .18)
+                  : Colors.black12,
               border: Border(bottom: BorderSide(color: border, width: 1)),
             ),
             // ✅ Wrap au lieu de Row => plus d’overflow
@@ -551,13 +861,21 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
               children: [
                 IconButton(
                   onPressed: _rotateLeft,
-                  tooltip: 'Tourner à gauche',
+                  tooltip: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                    "f00073",
+                    'Tourner à gauche',
+                  ),
                   visualDensity: VisualDensity.compact,
                   icon: const Icon(Icons.rotate_left_rounded),
                 ),
                 IconButton(
                   onPressed: _rotateRight,
-                  tooltip: 'Tourner à droite',
+                  tooltip: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                    "f00074",
+                    'Tourner à droite',
+                  ),
                   visualDensity: VisualDensity.compact,
                   icon: const Icon(Icons.rotate_right_rounded),
                 ),
@@ -565,7 +883,13 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                   onPressed: _reset,
                   icon: const Icon(Icons.refresh_rounded),
                   label: Text(
-                    compact ? "Reset" : "Réinitialiser",
+                    compact
+                        ? "Reset"
+                        : ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                            "f00075",
+                            "Réinitialiser",
+                          ),
                     style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                   ),
                 ),
@@ -573,7 +897,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                   onPressed: () => _openFullscreen(context),
                   icon: const Icon(Icons.fullscreen_rounded),
                   label: Text(
-                    "Plein écran",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                      "f00076",
+                      "Plein écran",
+                    ),
                     style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
                   ),
                 ),
@@ -653,7 +981,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                         IconButton(
                           onPressed: () =>
                               setLocalState(() => turns = (turns - 1) % 4),
-                          tooltip: 'Tourner à gauche',
+                          tooltip: ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                            "f00078",
+                            'Tourner à gauche',
+                          ),
                           visualDensity: VisualDensity.compact,
                           icon: const Icon(
                             Icons.rotate_left_rounded,
@@ -663,7 +995,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                         IconButton(
                           onPressed: () =>
                               setLocalState(() => turns = (turns + 1) % 4),
-                          tooltip: 'Tourner à droite',
+                          tooltip: ScolariteText.value(
+                            "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                            "f00079",
+                            'Tourner à droite',
+                          ),
                           visualDensity: VisualDensity.compact,
                           icon: const Icon(
                             Icons.rotate_right_rounded,
@@ -677,7 +1013,11 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                             color: Colors.white,
                           ),
                           label: Text(
-                            "Réinitialiser",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/pv_apj20/constatations/canevas_pv_page.dart",
+                              "f00080",
+                              "Réinitialiser",
+                            ),
                             style: GoogleFonts.fustat(
                               fontWeight: FontWeight.w900,
                               color: Colors.white,

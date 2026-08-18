@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/proc%C3%A9dure_p%C3%A9nale_pages/pp_action_publique_action_civile_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ==============================================================
 ///  COP'IQ — Hiérarchie (SPLASH IA 2025)
@@ -57,7 +58,11 @@ class _ActionPubliqueIntroPageState extends State<ActionPubliqueIntroPage>
   )..repeat(reverse: true);
 
   // Écriture IA (typewriter)
-  static const String _titleFull = 'ACTION PUBLIQUE ET ACTION CIVILE';
+  static final String _titleFull = ScolariteText.value(
+    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_autorites_pj_intro_page.dart",
+    "f00001",
+    'ACTION PUBLIQUE ET ACTION CIVILE',
+  );
   int _typedCount = 0;
   Timer? _typeTimer;
 
@@ -164,7 +169,11 @@ class _ActionPubliqueIntroPageState extends State<ActionPubliqueIntroPage>
                       curve: Curves.easeOutCubic,
                     ),
                     child: Text(
-                      "Comprendre l'action publique et l'action civile",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_autorites_pj_intro_page.dart",
+                        "f00002",
+                        "Comprendre l'action publique et l'action civile",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         textStyle: const TextStyle(
@@ -279,7 +288,11 @@ class CopiqHeroBackButton extends StatelessWidget {
                     ),
                     const SizedBox(width: 4),
                     Text(
-                      'Retour',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/pp_action_publique_autorites_pj_intro_page.dart",
+                        "f00003",
+                        'Retour',
+                      ),
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w700,
                         fontSize: 12,

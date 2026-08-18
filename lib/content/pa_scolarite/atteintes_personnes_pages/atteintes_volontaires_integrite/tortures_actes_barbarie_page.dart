@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaTorturesActesBarbariePage extends StatelessWidget {
   const PaTorturesActesBarbariePage({super.key});
@@ -68,10 +69,18 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes volontaires à l’intégrité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+            "f00002",
+            "Atteintes volontaires à l’intégrité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -86,7 +95,11 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les tortures et actes de barbarie",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+              "f00003",
+              "Les tortures et actes de barbarie",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -98,13 +111,21 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de soumettre une personne à des actes de torture ou de barbarie constitue une infraction.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00005",
+                  "Le fait de soumettre une personne à des actes de torture ou de barbarie constitue une infraction.",
+                ),
               ),
             ],
           ),
@@ -113,19 +134,30 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00007",
+                    "Article 222-1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime les actes de torture et de barbarie.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00008",
+                    " : prévoit et réprime les actes de torture et de barbarie.",
+                  ),
                 ),
               ]),
             ],
@@ -135,41 +167,81 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+              "f00009",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le texte ne donne pas une définition exhaustive du comportement sanctionné : l’analyse repose sur la gravité des actes "
-                "et la souffrance infligée à la victime.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00010",
+                      "Le texte ne donne pas une définition exhaustive du comportement sanctionné : l’analyse repose sur la gravité des actes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00011",
+                      "et la souffrance infligée à la victime.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("A) Des actes d’une gravité exceptionnelle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00012",
+                  "A) Des actes d’une gravité exceptionnelle",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La Convention des Nations Unies contre la torture (10 décembre 1984) vise ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00013",
+                    "La Convention des Nations Unies contre la torture (10 décembre 1984) vise ",
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      "« tout acte par lequel une douleur ou des souffrances aiguës, physiques ou mentales, sont intentionnellement infligées à une personne ».",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00014",
+                    "« tout acte par lequel une douleur ou des souffrances aiguës, physiques ou mentales, sont intentionnellement infligées à une personne ».",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Définition jurisprudentielle",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00015",
+                  "Définition jurisprudentielle",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les tortures ou actes de barbarie supposent la commission d’un ou plusieurs actes d’une gravité exceptionnelle "
-                        "dépassant de simples violences, et traduisant la volonté de nier dans la victime la dignité de la personne humaine ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                          "f00016",
+                          "Les tortures ou actes de barbarie supposent la commission d’un ou plusieurs actes d’une gravité exceptionnelle ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                          "f00017",
+                          "dépassant de simples violences, et traduisant la volonté de nier dans la victime la dignité de la personne humaine ",
+                        ),
                   ),
                   TextSpan(
-                    text: "(C.A. Lyon, 19 janvier 1996)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00018",
+                      "(C.A. Lyon, 19 janvier 1996)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -185,11 +257,18 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
                 title: "Jurisprudences",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Exemples : sévices d’une extrême violence sur une victime dénudée, ligotée et attachée, ayant entraîné la mort ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00019",
+                      "Exemples : sévices d’une extrême violence sur une victime dénudée, ligotée et attachée, ayant entraîné la mort ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 10 janvier 2006, n° 05-86.216)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00020",
+                      "(Cass. crim., 10 janvier 2006, n° 05-86.216)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -197,11 +276,18 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
                   ),
                   TextSpan(text: ".\n"),
                   TextSpan(
-                    text:
-                        "Exorcisme de plusieurs heures : flagellations répétées, ingestion forcée d’eau salée, étranglement, serviette enfoncée dans la bouche, immersions répétées ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00021",
+                      "Exorcisme de plusieurs heures : flagellations répétées, ingestion forcée d’eau salée, étranglement, serviette enfoncée dans la bouche, immersions répétées ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(Cass. crim., 3 septembre 1996)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00022",
+                      "(Cass. crim., 3 septembre 1996)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -213,20 +299,46 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une souffrance infligée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00023",
+                  "B) Une souffrance infligée",
+                ),
+              ),
               _Paragraph(
-                "La notion de torture est souvent liée à l’intensité de la souffrance infligée (physique ou morale), "
-                "ce qui permet de distinguer ces actes des violences « simples ».",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00024",
+                      "La notion de torture est souvent liée à l’intensité de la souffrance infligée (physique ou morale), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00025",
+                      "ce qui permet de distinguer ces actes des violences « simples ».",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La Cour de cassation retient que les tortures constituent des souffrances physiques pouvant faire naître un sentiment de terreur "
-                      "d’une intensité insupportable physiquement ou moralement ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                        "f00026",
+                        "La Cour de cassation retient que les tortures constituent des souffrances physiques pouvant faire naître un sentiment de terreur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                        "f00027",
+                        "d’une intensité insupportable physiquement ou moralement ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 3 septembre 1996)",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00028",
+                    "(Cass. crim., 3 septembre 1996)",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -234,12 +346,42 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Sur la personne d’autrui"),
-              _Paragraph("Les actes doivent être commis sur :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00029",
+                  "C) Sur la personne d’autrui",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00030",
+                  "Les actes doivent être commis sur :",
+                ),
+              ),
               SizedBox(height: 8),
-              _BulletPoint(text: "Une personne humaine."),
-              _BulletPoint(text: "Une personne vivante."),
-              _BulletPoint(text: "Une personne distincte de l’auteur."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00031",
+                  "Une personne humaine.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00032",
+                  "Une personne vivante.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00033",
+                  "Une personne distincte de l’auteur.",
+                ),
+              ),
             ],
           ),
 
@@ -247,22 +389,48 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+              "f00034",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Intention coupable"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00035",
+                  "A) Intention coupable",
+                ),
+              ),
               _Paragraph(
-                "L’auteur a l’intention de porter atteinte à l’intégrité d’autrui. Cette intention peut se déduire de la nature des faits commis.",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00036",
+                  "L’auteur a l’intention de porter atteinte à l’intégrité d’autrui. Cette intention peut se déduire de la nature des faits commis.",
+                ),
               ),
               SizedBox(height: 12),
               _SubTitle(
-                "B) Volonté de causer une souffrance / nier la dignité",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00037",
+                  "B) Volonté de causer une souffrance / nier la dignité",
+                ),
               ),
               _Paragraph(
-                "L’élément moral consiste dans la volonté de causer à la victime une souffrance exceptionnellement aiguë "
-                "ou de nier en elle l’existence de la dignité de la personne humaine.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00038",
+                      "L’élément moral consiste dans la volonté de causer à la victime une souffrance exceptionnellement aiguë ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00039",
+                      "ou de nier en elle l’existence de la dignité de la personne humaine.",
+                    ),
               ),
             ],
           ),
@@ -271,85 +439,170 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+              "f00040",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00041",
+                    "Article 222-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " (1er degré d’aggravation) :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00042",
+                    " (1er degré d’aggravation) :",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "Sur un mineur de 15 ans."),
-              _BulletPoint(text: "Sur une personne vulnérable."),
               _BulletPoint(
-                text:
-                    "Sur une personne en état de sujétion psychologique ou physique au sens de l’article 223-15-3 du Code pénal.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00043",
+                  "Sur un mineur de 15 ans.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur un ascendant légitime/naturel ou sur les père/mère adoptifs.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00044",
+                  "Sur une personne vulnérable.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur certaines personnes protégées (police/gendarmerie, administration pénitentiaire, dépositaire de l’autorité publique, sapeur-pompier, etc.) dans l’exercice ou du fait des fonctions (qualité apparente ou connue).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00045",
+                  "Sur une personne en état de sujétion psychologique ou physique au sens de l’article 223-15-3 du Code pénal.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur enseignant/personnels scolaires, agent de transport public, mission de service public, professionnel de santé (qualité apparente ou connue).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00046",
+                  "Sur un ascendant légitime/naturel ou sur les père/mère adoptifs.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur le conjoint/ascendants/descendants (ou personne vivant au domicile) des personnes protégées, en raison des fonctions de ces dernières.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00047",
+                  "Sur certaines personnes protégées (police/gendarmerie, administration pénitentiaire, dépositaire de l’autorité publique, sapeur-pompier, etc.) dans l’exercice ou du fait des fonctions (qualité apparente ou connue).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur un témoin, une victime ou une partie civile (empêcher de dénoncer/porter plainte/déposer, ou en raison de la dénonciation/plainte/déposition).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00048",
+                  "Sur enseignant/personnels scolaires, agent de transport public, mission de service public, professionnel de santé (qualité apparente ou connue).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur une personne se livrant à la prostitution (même occasionnellement), si les faits sont commis dans l’exercice de cette activité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00049",
+                  "Sur le conjoint/ascendants/descendants (ou personne vivant au domicile) des personnes protégées, en raison des fonctions de ces dernières.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Par le conjoint/concubin/partenaire lié par un pacte civil de solidarité.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00050",
+                  "Sur un témoin, une victime ou une partie civile (empêcher de dénoncer/porter plainte/déposer, ou en raison de la dénonciation/plainte/déposition).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pour contraindre à contracter un mariage/une union, ou en raison du refus.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00051",
+                  "Sur une personne se livrant à la prostitution (même occasionnellement), si les faits sont commis dans l’exercice de cette activité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00052",
+                  "Par le conjoint/concubin/partenaire lié par un pacte civil de solidarité.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Par plusieurs personnes agissant comme auteur ou complice.",
-              ),
-              _BulletPoint(text: "Avec préméditation ou guet-apens."),
-              _BulletPoint(text: "Avec usage ou menace d’une arme."),
-              _BulletPoint(
-                text:
-                    "Par une personne en état d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00053",
+                  "Pour contraindre à contracter un mariage/une union, ou en raison du refus.",
+                ),
               ),
               _BulletPoint(
-                text: "Avec des agressions sexuelles autres que le viol.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00054",
+                  "Par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00055",
+                  "Par plusieurs personnes agissant comme auteur ou complice.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00056",
+                  "Avec préméditation ou guet-apens.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00057",
+                  "Avec usage ou menace d’une arme.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00058",
+                  "Par une personne en état d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00059",
+                  "Avec des agressions sexuelles autres que le viol.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-3 alinéa 19 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00060",
+                    "Article 222-3 alinéa 19 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (2e degré) : sur un mineur de 15 ans par un ascendant (légitime/naturel/adoptif) ou une personne ayant autorité sur le mineur.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00061",
+                    " (2e degré) : sur un mineur de 15 ans par un ascendant (légitime/naturel/adoptif) ou une personne ayant autorité sur le mineur.",
+                  ),
                 ),
               ]),
 
@@ -357,35 +610,68 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-4 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00062",
+                    "Article 222-4 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                TextSpan(text: " (2e degré) :"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00063",
+                    " (2e degré) :",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "En bande organisée."),
               _BulletPoint(
-                text: "De manière habituelle sur un mineur de 15 ans.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00064",
+                  "En bande organisée.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur une personne dont la vulnérabilité (âge, maladie, infirmité, déficience, grossesse) est apparente ou connue.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00065",
+                  "De manière habituelle sur un mineur de 15 ans.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sur une personne en état de sujétion psychologique/physique au sens de l’article 223-15-3 du Code pénal (connu de l’auteur).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00066",
+                  "Sur une personne dont la vulnérabilité (âge, maladie, infirmité, déficience, grossesse) est apparente ou connue.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00067",
+                  "Sur une personne en état de sujétion psychologique/physique au sens de l’article 223-15-3 du Code pénal (connu de l’auteur).",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00068",
+                    "Article 222-5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (2e degré) : lorsque les tortures/actes de barbarie ont entraîné une mutilation ou une infirmité permanente.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00069",
+                    " (2e degré) : lorsque les tortures/actes de barbarie ont entraîné une mutilation ou une infirmité permanente.",
+                  ),
                 ),
               ]),
 
@@ -393,39 +679,63 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00070",
+                    "Article 222-2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (3e degré) : lorsque les tortures/actes de barbarie précèdent, accompagnent ou suivent un crime autre que le meurtre ou le viol.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00071",
+                    " (3e degré) : lorsque les tortures/actes de barbarie précèdent, accompagnent ou suivent un crime autre que le meurtre ou le viol.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 222-6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00072",
+                    "Article 222-6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (3e degré) : lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00073",
+                    " (3e degré) : lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
               _NotaBox(
-                title: "Référence (CSI)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00074",
+                  "Référence (CSI)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Certaines aggravations mentionnent aussi un cadre spécifique lié à des fonctions de gardiennage/surveillance d’immeubles.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00075",
+                      "Certaines aggravations mentionnent aussi un cadre spécifique lié à des fonctions de gardiennage/surveillance d’immeubles.",
+                    ),
                   ),
                   TextSpan(text: " Voir "),
                   TextSpan(
-                    text:
-                        "l’article L. 271-1 du Code de la sécurité intérieure",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00076",
+                      "l’article L. 271-1 du Code de la sécurité intérieure",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -441,56 +751,121 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
           // Répression + tentative/complicité + infractions connexes
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+              "f00077",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00078",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "15 ans de réclusion criminelle + période de sûreté — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00079",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00080",
+                    "15 ans de réclusion criminelle + période de sûreté — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00081",
+                    "article 222-1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (1er degré) : "),
                 TextSpan(
-                  text: "20 ans de réclusion criminelle + période de sûreté — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00082",
+                    "Aggravée (1er degré) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-3 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00083",
+                    "20 ans de réclusion criminelle + période de sûreté — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00084",
+                    "article 222-3 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (2e degré) : "),
                 TextSpan(
-                  text: "30 ans de réclusion criminelle + période de sûreté — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00085",
+                    "Aggravée (2e degré) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 222-3 al. 19, 222-4 et 222-5 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00086",
+                    "30 ans de réclusion criminelle + période de sûreté — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00087",
+                    "articles 222-3 al. 19, 222-4 et 222-5 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (3e degré) : "),
                 TextSpan(
-                  text:
-                      "réclusion criminelle à perpétuité + période de sûreté — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00088",
+                    "Aggravée (3e degré) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "articles 222-2 et 222-6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00089",
+                    "réclusion criminelle à perpétuité + période de sûreté — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00090",
+                    "articles 222-2 et 222-6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -498,11 +873,27 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00091",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 222-6-1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00092",
+                    "Responsabilité pénale prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00093",
+                    "l’article 222-6-1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -510,42 +901,86 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00094",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 121-4 (2°) du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00095",
+                    "Tentative : OUI — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00096",
+                    "article 121-4 (2°) du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      ". Exemple : ligoter la victime en vue de sévices (commencement d’exécution interrompu/empêché).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00097",
+                    ". Exemple : ligoter la victime en vue de sévices (commencement d’exécution interrompu/empêché).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00098",
+                    "Complicité : OUI, conformément à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00099",
+                    "l’article 121-6 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00100",
+                    "l’article 121-7 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _NotaBox(
-                title: "Jurisprudence (complicité)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00101",
+                  "Jurisprudence (complicité)",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Condamnation pour complicité de tortures et actes de barbarie ayant entraîné la mort : maintien fermé d’un local dans lequel l’auteur principal brûlait la victime ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00102",
+                      "Condamnation pour complicité de tortures et actes de barbarie ayant entraîné la mort : maintien fermé d’un local dans lequel l’auteur principal brûlait la victime ",
+                    ),
                   ),
                   TextSpan(
-                    text: "(C. assises, 8 avril 2006)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                      "f00103",
+                      "(C. assises, 8 avril 2006)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -557,57 +992,112 @@ class PaTorturesActesBarbariePage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("Provocation (infraction distincte)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00104",
+                  "Provocation (infraction distincte)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(text: "Le "),
                 TextSpan(
-                  text: "fait de faire des offres/promesses/dons/avantages",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00105",
+                    "fait de faire des offres/promesses/dons/avantages",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " pour qu’une personne commette (y compris hors du territoire national) des tortures et actes de barbarie est incriminé : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00106",
+                    " pour qu’une personne commette (y compris hors du territoire national) des tortures et actes de barbarie est incriminé : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 222-6-4 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00107",
+                    "article 222-6-4 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "L’auteur de la provocation est poursuivi même si les faits ne sont pas suivis d’effet (10 ans et 150 000 €).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00108",
+                  "L’auteur de la provocation est poursuivi même si les faits ne sont pas suivis d’effet (10 ans et 150 000 €).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si la provocation est suivie de faits ou d’une tentative, les règles de complicité s’appliquent.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00109",
+                  "Si la provocation est suivie de faits ou d’une tentative, les règles de complicité s’appliquent.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("Exemption & réduction de peine"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                  "f00110",
+                  "Exemption & réduction de peine",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Exemption de peine : "),
                 TextSpan(
-                  text: "article 222-6-2 alinéa 1 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00111",
+                    "Exemption de peine : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00112",
+                    "article 222-6-2 alinéa 1 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (avertissement de l’autorité administrative/judiciaire permettant d’éviter la réalisation de l’infraction).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00113",
+                    " (avertissement de l’autorité administrative/judiciaire permettant d’éviter la réalisation de l’infraction).",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Réduction de peine : "),
                 TextSpan(
-                  text: "article 222-6-2 alinéa 2 du Code pénal",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00114",
+                    "Réduction de peine : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00115",
+                    "article 222-6-2 alinéa 2 du Code pénal",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (réduction des 2/3 si avertissement permettant de faire cesser les faits, d’éviter mort/infirmité, ou d’identifier les autres auteurs/complices ; perpétuité ramenée à 20 ans).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart",
+                    "f00116",
+                    " (réduction des 2/3 si avertissement permettant de faire cesser les faits, d’éviter mort/infirmité, ou d’identifier les autres auteurs/complices ; perpétuité ramenée à 20 ans).",
+                  ),
                 ),
               ]),
             ],

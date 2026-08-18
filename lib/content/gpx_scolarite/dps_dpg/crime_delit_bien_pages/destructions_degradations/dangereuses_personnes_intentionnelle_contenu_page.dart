@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DestructionsDangereusesPersonnesIntentionnellePage
     extends StatelessWidget {
@@ -57,10 +58,18 @@ class DestructionsDangereusesPersonnesIntentionnellePage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Destructions, dégradations",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+            "f00002",
+            "Destructions, dégradations",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -75,7 +84,11 @@ class DestructionsDangereusesPersonnesIntentionnellePage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les destructions, dégradations et détériorations dangereuses pour les personnes (infraction intentionnelle)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+              "f00003",
+              "Les destructions, dégradations et détériorations dangereuses pour les personnes (infraction intentionnelle)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20.5,
@@ -87,15 +100,31 @@ class DestructionsDangereusesPersonnesIntentionnellePage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La destruction, la dégradation ou la détérioration d’un bien appartenant à autrui "
-                "par l’effet d’une substance explosive, d’un incendie ou de tout autre moyen "
-                "de nature à créer un danger pour les personnes, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00005",
+                      "La destruction, la dégradation ou la détérioration d’un bien appartenant à autrui ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00006",
+                      "par l’effet d’une substance explosive, d’un incendie ou de tout autre moyen ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00007",
+                      "de nature à créer un danger pour les personnes, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -104,22 +133,30 @@ class DestructionsDangereusesPersonnesIntentionnellePage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00009",
+                    "Article 322-6 alinéa 1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les destructions, dégradations ou détériorations volontaires et dangereuses pour les personnes.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00010",
+                    " : définit et réprime les destructions, dégradations ou détériorations volontaires et dangereuses pour les personnes.",
+                  ),
                 ),
               ]),
             ],
@@ -129,110 +166,244 @@ class DestructionsDangereusesPersonnesIntentionnellePage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Une atteinte matérielle de nature à créer un danger pour les personnes",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00012",
+                  "A) Une atteinte matérielle de nature à créer un danger pour les personnes",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Les moyens employés sont précisés par "),
                 TextSpan(
-                  text: "l’article 322-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00013",
+                    "Les moyens employés sont précisés par ",
                   ),
                 ),
                 TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00014",
+                    "l’article 322-6 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
                   text:
-                      ". Ils doivent être de nature à créer un danger pour les personnes.\n"
-                      "Il suffit que l’intégrité physique des personnes ait été mise en danger (danger potentiel).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                        "f00015",
+                        ". Ils doivent être de nature à créer un danger pour les personnes.\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                        "f00016",
+                        "Il suffit que l’intégrité physique des personnes ait été mise en danger (danger potentiel).",
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("B) Les moyens visés"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00017",
+                  "B) Les moyens visés",
+                ),
+              ),
               _NotaBox(
-                title: "Idée clé",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00018",
+                  "Idée clé",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "On recherche un moyen dangereux (explosion, incendie, ou tout autre procédé) + un bien atteint (détruit/dégradé/détérioré) + une mise en danger des personnes.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00019",
+                      "On recherche un moyen dangereux (explosion, incendie, ou tout autre procédé) + un bien atteint (détruit/dégradé/détérioré) + une mise en danger des personnes.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("1) L’effet d’une substance explosive"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00020",
+                  "1) L’effet d’une substance explosive",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00021",
+                    "Article 322-6 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " vise une substance explosive utilisée du fait de l’homme (pas un phénomène naturel). "
-                      "Sont concernés les explosifs de toute nature (déflagration/détonation), de confection artisanale ou industrielle. "
-                      "La présentation (cocktail Molotov, dynamite…) et le mode d’action importent peu.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                        "f00022",
+                        " vise une substance explosive utilisée du fait de l’homme (pas un phénomène naturel). ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                        "f00023",
+                        "Sont concernés les explosifs de toute nature (déflagration/détonation), de confection artisanale ou industrielle. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                        "f00024",
+                        "La présentation (cocktail Molotov, dynamite…) et le mode d’action importent peu.",
+                      ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("2) L’incendie"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00025",
+                  "2) L’incendie",
+                ),
+              ),
               _Paragraph(
-                "L’incendie consiste à allumer un feu : provoquer une combustion rapide et brutale. "
-                "Le commencement d’exécution recouvre la période allant des premiers actes accomplis sur place révélant l’intention coupable "
-                "jusqu’au moment de l’embrasement du bien visé.\n"
-                "L’incendie se distingue du simple feu par ses conséquences : il se propage, n’est pas maîtrisé et représente un danger pour les personnes. "
-                "Pour cette raison, la qualification de l’article 322-6 est retenue plutôt que celle de 322-1.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00026",
+                      "L’incendie consiste à allumer un feu : provoquer une combustion rapide et brutale. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00027",
+                      "Le commencement d’exécution recouvre la période allant des premiers actes accomplis sur place révélant l’intention coupable ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00028",
+                      "jusqu’au moment de l’embrasement du bien visé.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00029",
+                      "L’incendie se distingue du simple feu par ses conséquences : il se propage, n’est pas maîtrisé et représente un danger pour les personnes. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00030",
+                      "Pour cette raison, la qualification de l’article 322-6 est retenue plutôt que celle de 322-1.",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "3) Tout autre moyen de nature à créer un danger",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00031",
+                  "3) Tout autre moyen de nature à créer un danger",
+                ),
               ),
               _Paragraph(
-                "La formule doit s’entendre largement : dès lors que la sécurité des personnes est gravement mise en danger "
-                "(ex. dérèglement volontaire du freinage d’un autocar, création d’une voie d’eau dans la coque d’un bateau, "
-                "ou favorisation d’un phénomène type avalanche/éboulement…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00032",
+                      "La formule doit s’entendre largement : dès lors que la sécurité des personnes est gravement mise en danger ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00033",
+                      "(ex. dérèglement volontaire du freinage d’un autocar, création d’une voie d’eau dans la coque d’un bateau, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00034",
+                      "ou favorisation d’un phénomène type avalanche/éboulement…).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Sur un bien appartenant à autrui"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00035",
+                  "C) Sur un bien appartenant à autrui",
+                ),
+              ),
               _Paragraph(
-                "La notion de « bien » est large : immeubles, véhicules, meubles, documents, forêts, bois… "
-                "Le bien endommagé ou détruit doit appartenir à une autre personne que l’auteur.\n"
-                "La jurisprudence peut retenir l’infraction même lorsque l’auteur a un droit limité sur le bien (ex. copropriétaire).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00036",
+                      "La notion de « bien » est large : immeubles, véhicules, meubles, documents, forêts, bois… ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00037",
+                      "Le bien endommagé ou détruit doit appartenir à une autre personne que l’auteur.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00038",
+                      "La jurisprudence peut retenir l’infraction même lorsque l’auteur a un droit limité sur le bien (ex. copropriétaire).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("D) Entraînant un dommage"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00039",
+                  "D) Entraînant un dommage",
+                ),
+              ),
               _Paragraph(
-                "Le texte vise 3 résultats possibles : destruction, dégradation, détérioration.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00040",
+                  "Le texte vise 3 résultats possibles : destruction, dégradation, détérioration.",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Destruction : atteinte la plus grave, le bien devient impropre à l’usage (totale ou partielle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00041",
+                  "Destruction : atteinte la plus grave, le bien devient impropre à l’usage (totale ou partielle).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Dégradation : diminution des qualités du bien, sans le rendre inutilisable.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00042",
+                  "Dégradation : diminution des qualités du bien, sans le rendre inutilisable.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Détérioration : atteinte moins grave, perte de valeur mais bien réparable et encore apte à son rôle.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00043",
+                  "Détérioration : atteinte moins grave, perte de valeur mais bien réparable et encore apte à son rôle.",
+                ),
               ),
             ],
           ),
@@ -241,26 +412,43 @@ class DestructionsDangereusesPersonnesIntentionnellePage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+              "f00044",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Agir en connaissant l’efficacité du moyen et le danger pour les personnes",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00045",
+                  "Agir en connaissant l’efficacité du moyen et le danger pour les personnes",
+                ),
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "La Cour de cassation considère que l’emploi d’une substance explosive ou de l’incendie caractérise suffisamment l’intention, "
-                      "en raison du danger grave inhérent à ces moyens, dont chacun est censé connaître l’efficacité. ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                        "f00046",
+                        "La Cour de cassation considère que l’emploi d’une substance explosive ou de l’incendie caractérise suffisamment l’intention, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                        "f00047",
+                        "en raison du danger grave inhérent à ces moyens, dont chacun est censé connaître l’efficacité. ",
+                      ),
                 ),
                 TextSpan(
-                  text: "(Cass. crim., 24 juin 1998)",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00048",
+                    "(Cass. crim., 24 juin 1998)",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -271,104 +459,156 @@ class DestructionsDangereusesPersonnesIntentionnellePage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+              "f00049",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-6 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00050",
+                    "Article 322-6 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui, dans des conditions exposant les personnes à un dommage corporel ou créant un dommage irréversible à l’environnement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00051",
+                  "Incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui, dans des conditions exposant les personnes à un dommage corporel ou créant un dommage irréversible à l’environnement.",
+                ),
               ),
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00052",
+                    "Article 322-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Lorsqu’elle a entraîné pour autrui une ITT ≤ 8 jours.",
-              ),
-              _BulletPoint(
-                text:
-                    "Lorsqu’il s’agit de l’incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui.",
-              ),
-
-              SizedBox(height: 12),
-
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article 322-8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00053",
+                  "Lorsqu’elle a entraîné pour autrui une ITT ≤ 8 jours.",
                 ),
-                TextSpan(text: " :"),
-              ]),
-              SizedBox(height: 8),
-              _BulletPoint(text: "Commission en bande organisée."),
-              _BulletPoint(text: "ITT > 8 jours."),
-              _BulletPoint(
-                text:
-                    "Commission en raison de la qualité (magistrat, militaire gendarmerie, fonctionnaire police nationale, douanes, administration pénitentiaire, dépositaire de l’autorité publique/mission de service public, sapeur-pompier/marin-pompier) du propriétaire ou utilisateur du bien.",
               ),
               _BulletPoint(
-                text:
-                    "Incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00054",
+                  "Lorsqu’il s’agit de l’incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-9 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00055",
+                    "Article 322-8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "Mutilation ou infirmité permanente."),
               _BulletPoint(
-                text:
-                    "Incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00056",
+                  "Commission en bande organisée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00057",
+                  "ITT > 8 jours.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00058",
+                  "Commission en raison de la qualité (magistrat, militaire gendarmerie, fonctionnaire police nationale, douanes, administration pénitentiaire, dépositaire de l’autorité publique/mission de service public, sapeur-pompier/marin-pompier) du propriétaire ou utilisateur du bien.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00059",
+                  "Incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui.",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 322-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00060",
+                    "Article 322-9 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
-              _BulletPoint(text: "Mort d’autrui."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00061",
+                  "Mutilation ou infirmité permanente.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00062",
+                  "Incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui.",
+                ),
+              ),
+
+              SizedBox(height: 12),
+
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00063",
+                    "Article 322-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: " :"),
+              ]),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00064",
+                  "Mort d’autrui.",
+                ),
+              ),
             ],
           ),
 
@@ -376,23 +616,44 @@ class DestructionsDangereusesPersonnesIntentionnellePage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+              "f00065",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00066",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Infraction de base (délit) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 150 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00067",
+                    "Infraction de base (délit) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 322-6 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00068",
+                    "10 ans d’emprisonnement et 150 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00069",
+                    "article 322-6 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -402,48 +663,93 @@ class DestructionsDangereusesPersonnesIntentionnellePage
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les circonstances aggravantes (322-6 al.2, 322-7, 322-8, 322-9, 322-10) font basculer vers des peines criminelles "
-                        "(réclusion 15 ans, 20 ans, 30 ans, voire perpétuité) selon le résultat (ITT, infirmité, décès) et le contexte (bande organisée, incendies de forêts…).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                          "f00070",
+                          "Les circonstances aggravantes (322-6 al.2, 322-7, 322-8, 322-9, 322-10) font basculer vers des peines criminelles ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                          "f00071",
+                          "(réclusion 15 ans, 20 ans, 30 ans, voire perpétuité) selon le résultat (ITT, infirmité, décès) et le contexte (bande organisée, incendies de forêts…).",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00072",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Peines prévues par "),
                 TextSpan(
-                  text: "l’article 322-17 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00073",
+                    "Peines prévues par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00074",
+                    "l’article 322-17 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                  "f00075",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 322-11 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00076",
+                    "Tentative : OUI — ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " prévoit la tentative punissable pour le délit de l’article 322-6.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00077",
+                    "article 322-11 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                    "f00078",
+                    " prévoit la tentative punissable pour le délit de l’article 322-6.",
+                  ),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph(
-                "Complicité : OUI. Elle est punissable au regard de l’infraction consommée comme tentée, "
-                "si un fait de complicité est caractérisé et si l’intention de s’associer à l’action de l’auteur principal est démontrée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00079",
+                      "Complicité : OUI. Elle est punissable au regard de l’infraction consommée comme tentée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart",
+                      "f00080",
+                      "si un fait de complicité est caractérisé et si l’intention de s’associer à l’action de l’auteur principal est démontrée.",
+                    ),
               ),
             ],
           ),

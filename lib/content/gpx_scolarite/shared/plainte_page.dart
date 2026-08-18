@@ -1,6 +1,7 @@
 // lib/pages/gpx/plainte_page.dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PlaintePage extends StatefulWidget {
   static const routeName = '/plainte';
@@ -56,7 +57,9 @@ class _PlaintePageState extends State<PlaintePage> {
                     end: Alignment.bottomRight,
                     colors: [cs.primary.withValues(alpha: .10), cs.surface],
                   ),
-                  border: Border.all(color: cs.outlineVariant.withValues(alpha: .35)),
+                  border: Border.all(
+                    color: cs.outlineVariant.withValues(alpha: .35),
+                  ),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(18, 16, 14, 12),
@@ -78,13 +81,17 @@ class _PlaintePageState extends State<PlaintePage> {
                             ),
                             const SizedBox(height: 4),
                             Text(
-                              'Recueil, mentions obligatoires, droits, trames PV',
+                              ScolariteText.value(
+                                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                                "f00001",
+                                'Recueil, mentions obligatoires, droits, trames PV',
+                              ),
                               style: tt.bodyMedium?.copyWith(
                                 color: cs.onSurfaceVariant,
                               ),
                             ),
                             const Spacer(),
-                            const Wrap(
+                            Wrap(
                               spacing: 8,
                               runSpacing: 8,
                               children: [
@@ -94,7 +101,11 @@ class _PlaintePageState extends State<PlaintePage> {
                                 ),
                                 _TinyTag(
                                   icon: Icons.info_rounded,
-                                  label: 'Droits victime',
+                                  label: ScolariteText.value(
+                                    "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                                    "f00002",
+                                    'Droits victime',
+                                  ),
                                 ),
                                 _TinyTag(
                                   icon: Icons.checklist_rounded,
@@ -122,8 +133,11 @@ class _PlaintePageState extends State<PlaintePage> {
                 textInputAction: TextInputAction.search,
                 decoration: InputDecoration(
                   prefixIcon: const Icon(Icons.search_rounded),
-                  hintText:
-                      'Rechercher (ex: mentions, droits, violences, ITT, témoin…)',
+                  hintText: ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                    "f00003",
+                    'Rechercher (ex: mentions, droits, violences, ITT, témoin…)',
+                  ),
                   isDense: true,
                   filled: true,
                   fillColor: cs.surfaceContainerHighest.withValues(alpha: .55),
@@ -145,7 +159,9 @@ class _PlaintePageState extends State<PlaintePage> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(28),
-                    borderSide: BorderSide(color: cs.primary.withValues(alpha: .6)),
+                    borderSide: BorderSide(
+                      color: cs.primary.withValues(alpha: .6),
+                    ),
                   ),
                 ),
               ),
@@ -158,7 +174,11 @@ class _PlaintePageState extends State<PlaintePage> {
               hasScrollBody: false,
               child: Center(
                 child: Text(
-                  'Aucun résultat',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                    "f00004",
+                    'Aucun résultat',
+                  ),
                   style: tt.titleMedium?.copyWith(color: cs.outline),
                 ),
               ),
@@ -335,14 +355,27 @@ class _CopyBox extends StatelessWidget {
               children: [
                 const Icon(Icons.description_rounded, size: 18),
                 const SizedBox(width: 8),
-                Text('Trame à copier', style: tt.labelLarge),
+                Text(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                    "f00005",
+                    'Trame à copier',
+                  ),
+                  style: tt.labelLarge,
+                ),
                 const Spacer(),
                 TextButton.icon(
                   onPressed: () async {
                     await Clipboard.setData(ClipboardData(text: text));
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Trame copiée dans le presse-papiers'),
+                      SnackBar(
+                        content: Text(
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                            "f00006",
+                            'Trame copiée dans le presse-papiers',
+                          ),
+                        ),
                       ),
                     );
                   },
@@ -445,248 +478,822 @@ class _Item {
 
 List<_Bloc> _blocsPlainte() {
   return [
-    const _Bloc(
+    _Bloc(
       id: 'accueil',
-      title: 'Accueil & sécurité',
-      subtitle: 'Posture, confidentialité, besoins immédiats',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00007",
+        'Accueil & sécurité',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00008",
+        'Posture, confidentialité, besoins immédiats',
+      ),
       icon: Icons.volunteer_activism_rounded,
       items: [
         _Item(
           title: 'Principes',
-          tags: ['écoute', 'neutralité', 'confidentialité'],
+          tags: [
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00009",
+              'écoute',
+            ),
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00010",
+              'neutralité',
+            ),
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00011",
+              'confidentialité',
+            ),
+          ],
           body:
-              '• Se présenter (nom, qualité), vérifier l’intimité du lieu.\n'
-              '• Évaluer la sécurité immédiate (besoin de soins, mise à l’abri, mise en relation 17/SAMU).\n'
-              '• Adapter le rythme, vérifier la langue (interprète si besoin), éviter les questions suggestives.\n'
-              '• Informer sur le déroulé : recueil des faits, mentions au PV, orientation et suites.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00012",
+                '• Se présenter (nom, qualité), vérifier l’intimité du lieu.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00013",
+                '• Évaluer la sécurité immédiate (besoin de soins, mise à l’abri, mise en relation 17/SAMU).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00014",
+                '• Adapter le rythme, vérifier la langue (interprète si besoin), éviter les questions suggestives.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00015",
+                '• Informer sur le déroulé : recueil des faits, mentions au PV, orientation et suites.',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'mentions',
-      title: 'Mentions obligatoires du PV de plainte',
-      subtitle: 'Structure type et éléments à ne pas oublier',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00016",
+        'Mentions obligatoires du PV de plainte',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00017",
+        'Structure type et éléments à ne pas oublier',
+      ),
       icon: Icons.fact_check_rounded,
       items: [
         _Item(
-          title: 'Mentions clés',
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00018",
+            'Mentions clés',
+          ),
           tags: ['CPP', 'PV', 'horodatage'],
           body:
-              '• Lieu, date, heures de début/fin du PV.\n'
-              '• Identité et qualité du rédacteur (OPJ/APJ), matricule, service.\n'
-              '• Identité complète du plaignant (état civil, adresses, contacts), régime matrimonial si utile.\n'
-              '• Information sur droits (information victime, associations, indemnisation, orientation).\n'
-              '• Déroulé fidèle des déclarations (guillemets si propos rapportés).\n'
-              '• Références des pièces jointes (certificat médical, justificatifs, captures).\n'
-              '• Signature plaignant et agent (mention de refus/empêchement si non-signature).',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00019",
+                '• Lieu, date, heures de début/fin du PV.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00020",
+                '• Identité et qualité du rédacteur (OPJ/APJ), matricule, service.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00021",
+                '• Identité complète du plaignant (état civil, adresses, contacts), régime matrimonial si utile.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00022",
+                '• Information sur droits (information victime, associations, indemnisation, orientation).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00023",
+                '• Déroulé fidèle des déclarations (guillemets si propos rapportés).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00024",
+                '• Références des pièces jointes (certificat médical, justificatifs, captures).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00025",
+                '• Signature plaignant et agent (mention de refus/empêchement si non-signature).',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'recueil',
-      title: 'Recueil des faits — Checklist',
-      subtitle: 'Ce qu’il faut documenter systématiquement',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00026",
+        'Recueil des faits — Checklist',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00027",
+        'Ce qu’il faut documenter systématiquement',
+      ),
       icon: Icons.checklist_rounded,
       items: [
         _Item(
-          title: 'Checklist essentielle',
-          tags: ['faits', 'témoins', 'préjudice'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00028",
+            'Checklist essentielle',
+          ),
+          tags: [
+            'faits',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00029",
+              'témoins',
+            ),
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00030",
+              'préjudice',
+            ),
+          ],
           body:
-              '• Quand ? (date, heure de début/fin, fréquence si faits répétés)\n'
-              '• Où ? (adresse, local, véhicule, en ligne : plateforme/lien)\n'
-              '• Comment ? (modus operandi, menaces, armes, contraintes, numérique)\n'
-              '• Qui ? (auteur(s) supposé(s)/inconnu(s), description, liens avec victime)\n'
-              '• Témoins (identité/contact)\n'
-              '• Préjudice (corporel : douleurs, ITT si connue ; matériel : objets/valeur ; moral)\n'
-              '• Éléments conservatoires (captures écran, mails, vidéos, factures, IBAN)\n'
-              '• Suites immédiates (soins, changement serrures, blocage CB, dépôt opposition).',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00031",
+                '• Quand ? (date, heure de début/fin, fréquence si faits répétés)\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00032",
+                '• Où ? (adresse, local, véhicule, en ligne : plateforme/lien)\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00033",
+                '• Comment ? (modus operandi, menaces, armes, contraintes, numérique)\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00034",
+                '• Qui ? (auteur(s) supposé(s)/inconnu(s), description, liens avec victime)\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00035",
+                '• Témoins (identité/contact)\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00036",
+                '• Préjudice (corporel : douleurs, ITT si connue ; matériel : objets/valeur ; moral)\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00037",
+                '• Éléments conservatoires (captures écran, mails, vidéos, factures, IBAN)\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00038",
+                '• Suites immédiates (soins, changement serrures, blocage CB, dépôt opposition).',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'qualification',
-      title: 'Qualification pénale — repères rapides',
-      subtitle: 'Orienter la qualification dès le recueil',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00039",
+        'Qualification pénale — repères rapides',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00040",
+        'Orienter la qualification dès le recueil',
+      ),
       icon: Icons.gavel_rounded,
       items: [
         _Item(
-          title: 'Atteintes aux personnes',
-          tags: ['violences', 'conjugales', 'menaces', 'harcèlement'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00041",
+            'Atteintes aux personnes',
+          ),
+          tags: [
+            'violences',
+            'conjugales',
+            'menaces',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00042",
+              'harcèlement',
+            ),
+          ],
           body:
-              '• Violences (ITT inconnue/≤8j/>8j), coups, strangulation, arme.\n'
-              '• Menaces (mort, crime) et chantage.\n'
-              '• Harcèlement (répétition, contexte conjugal/professionnel/numérique).\n'
-              '• Agressions sexuelles, viol (contrainte, menace, surprise, violence).',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00043",
+                '• Violences (ITT inconnue/≤8j/>8j), coups, strangulation, arme.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00044",
+                '• Menaces (mort, crime) et chantage.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00045",
+                '• Harcèlement (répétition, contexte conjugal/professionnel/numérique).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00046",
+                '• Agressions sexuelles, viol (contrainte, menace, surprise, violence).',
+              ),
         ),
         _Item(
-          title: 'Atteintes aux biens',
-          tags: ['vol', 'dégradation', 'escroquerie'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00047",
+            'Atteintes aux biens',
+          ),
+          tags: [
+            'vol',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00048",
+              'dégradation',
+            ),
+            'escroquerie',
+          ],
           body:
-              '• Vol simple/aggravé (effraction, réunion, arme), vol à la tire.\n'
-              '• Dégradations (simple/volontaire en réunion/commune).\n'
-              '• Escroquerie/abus de confiance (manœuvres frauduleuses, remise volontaire).',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00049",
+                '• Vol simple/aggravé (effraction, réunion, arme), vol à la tire.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00050",
+                '• Dégradations (simple/volontaire en réunion/commune).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00051",
+                '• Escroquerie/abus de confiance (manœuvres frauduleuses, remise volontaire).',
+              ),
         ),
         _Item(
-          title: 'Cyber & fraudes',
-          tags: ['hameçonnage', 'CB', 'usurpation'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00052",
+            'Cyber & fraudes',
+          ),
+          tags: [
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00053",
+              'hameçonnage',
+            ),
+            'CB',
+            'usurpation',
+          ],
           body:
-              '• Fraude carte bancaire, hameçonnage (site/app/numéro, flux financiers).\n'
-              '• Usurpation d’identité, accès frauduleux à un STAD, revenge porn.\n'
-              '• Rançongiciel/compte piraté : dépôt éléments techniques (adresses, logs).',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00054",
+                '• Fraude carte bancaire, hameçonnage (site/app/numéro, flux financiers).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00055",
+                '• Usurpation d’identité, accès frauduleux à un STAD, revenge porn.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00056",
+                '• Rançongiciel/compte piraté : dépôt éléments techniques (adresses, logs).',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'pieces',
-      title: 'Pièces à joindre',
-      subtitle: 'Consolider la plainte',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00057",
+        'Pièces à joindre',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00058",
+        'Consolider la plainte',
+      ),
       icon: Icons.attach_file_rounded,
       items: [
         _Item(
-          title: 'Liste type',
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00059",
+            'Liste type',
+          ),
           tags: ['preuves', 'certificat', 'captures'],
           body:
-              '• Justificatif identité du plaignant.\n'
-              '• Certificat médical/UMJ (violences) avec ITT si connue.\n'
-              '• Factures, devis, photos/vidéos (atteintes aux biens).\n'
-              '• Captures d’écran, échanges (SMS, messageries), historiques, liens URL.\n'
-              '• Relevés bancaires, oppositions, IBAN/trace virement.\n'
-              '• Tout élément d’identification d’auteur (pseudo, numéro, plaque).',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00060",
+                '• Justificatif identité du plaignant.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00061",
+                '• Certificat médical/UMJ (violences) avec ITT si connue.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00062",
+                '• Factures, devis, photos/vidéos (atteintes aux biens).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00063",
+                '• Captures d’écran, échanges (SMS, messageries), historiques, liens URL.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00064",
+                '• Relevés bancaires, oppositions, IBAN/trace virement.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00065",
+                '• Tout élément d’identification d’auteur (pseudo, numéro, plaque).',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'droits',
-      title: 'Droits & informations à délivrer',
-      subtitle: 'Information victime (orientation, aides, suites)',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00066",
+        'Droits & informations à délivrer',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00067",
+        'Information victime (orientation, aides, suites)',
+      ),
       icon: Icons.info_rounded,
       items: [
         _Item(
-          title: 'Informer clairement',
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00068",
+            'Informer clairement',
+          ),
           tags: ['victime', 'associations', 'CIVI', 'AJ'],
           body:
-              '• Possibilité d’assistance (avocat, association d’aide aux victimes, interprète).\n'
-              '• Indemnisation : CIVI selon cas, assurance, fonds.\n'
-              '• Aide juridictionnelle (selon ressources) et accompagnement social.\n'
-              '• Suites : transmission parquet, numéro de plainte, éventuels actes PJ.\n'
-              '• Pour violences intrafamiliales : ordonnance de protection, mise à l’abri, téléphone grave danger (selon dispositifs).',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00069",
+                '• Possibilité d’assistance (avocat, association d’aide aux victimes, interprète).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00070",
+                '• Indemnisation : CIVI selon cas, assurance, fonds.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00071",
+                '• Aide juridictionnelle (selon ressources) et accompagnement social.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00072",
+                '• Suites : transmission parquet, numéro de plainte, éventuels actes PJ.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00073",
+                '• Pour violences intrafamiliales : ordonnance de protection, mise à l’abri, téléphone grave danger (selon dispositifs).',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'distinctions',
-      title: 'Plainte vs. Main courante',
-      subtitle: 'Bien orienter la demande',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00074",
+        'Plainte vs. Main courante',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00075",
+        'Bien orienter la demande',
+      ),
       icon: Icons.compare_arrows_rounded,
       items: [
         _Item(
-          title: 'Différences',
-          tags: ['orientation', 'procédure'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00076",
+            'Différences',
+          ),
+          tags: [
+            'orientation',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00077",
+              'procédure',
+            ),
+          ],
           body:
-              '• Plainte : déclenche poursuites/actes d’enquête, information parquet.\n'
-              '• Main courante : enregistrement de faits sans poursuite immédiate ; utile pour traces contextuelles mais pas d’enquête systématique.\n'
-              '• Expliquer les enjeux et laisser la personne choisir informée.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00078",
+                '• Plainte : déclenche poursuites/actes d’enquête, information parquet.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00079",
+                '• Main courante : enregistrement de faits sans poursuite immédiate ; utile pour traces contextuelles mais pas d’enquête systématique.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00080",
+                '• Expliquer les enjeux et laisser la personne choisir informée.',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'suites',
-      title: 'Suites procédurales',
-      subtitle: 'Après l’enregistrement',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00081",
+        'Suites procédurales',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00082",
+        'Après l’enregistrement',
+      ),
       icon: Icons.forward_to_inbox_rounded,
       items: [
         _Item(
-          title: 'Chaîne',
-          tags: ['parquet', 'enquête', 'classement'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00083",
+            'Chaîne',
+          ),
+          tags: [
+            'parquet',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00084",
+              'enquête',
+            ),
+            'classement',
+          ],
           body:
-              '• Envoi au parquet (RPPN/numéro de plainte).\n'
-              '• Possibles actes : auditions, réquisitions, expertises, gardes à vue.\n'
-              '• Décisions parquet : poursuites, alternative, médiation, classement.\n'
-              '• Information du plaignant des suites significatives.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00085",
+                '• Envoi au parquet (RPPN/numéro de plainte).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00086",
+                '• Possibles actes : auditions, réquisitions, expertises, gardes à vue.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00087",
+                '• Décisions parquet : poursuites, alternative, médiation, classement.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00088",
+                '• Information du plaignant des suites significatives.',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'trames',
-      title: 'Trames prêtes à l’emploi (copier/coller)',
-      subtitle: 'Modèles rapides avec variables à compléter',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00089",
+        'Trames prêtes à l’emploi (copier/coller)',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00090",
+        'Modèles rapides avec variables à compléter',
+      ),
       icon: Icons.edit_note_rounded,
       items: [
         _Item(
-          title: 'Trame — PV de plainte (générique)',
-          tags: ['PV', 'modèle'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00091",
+            'Trame — PV de plainte (générique)',
+          ),
+          tags: [
+            'PV',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00092",
+              'modèle',
+            ),
+          ],
           trameText:
-              'Je soussigné(e) <GRADE QUALITÉ> <NOM Prénom>, immatriculé(e) <MATRICULE>, affecté(e) à <SERVICE>,\n'
-              'dresse le présent procès-verbal ce jour <DATE>, de <HEURE_DEBUT> à <HEURE_FIN>, à <LIEU>.\n'
-              'Est présent(e) <IDENTITÉ_VICTIME> né(e) le <NAISSANCE> à <LIEU_NAISS>, demeurant <ADRESSE>,\n'
-              'joignable au <TÉL> / <EMAIL>. Sur sa demande, je recueille sa plainte pour les faits suivants :\n\n'
-              '— EXPOSÉ DES FAITS —\n'
-              '<RELATER LES FAITS DANS L’ORDRE CHRONOLOGIQUE, TERMES SIMPLES, FACTUELS, ÉVENTUELLES CITATIONS ENTRE GUILLEMETS.>\n\n'
-              '— ÉLÉMENTS COMPLÉMENTAIRES —\n'
-              'Témoins : <NOMS/CONTACTS> ; Préjudices : <CORPOREL/MATÉRIEL/MORAL> ; Pièces remises : <LISTE>.\n'
-              'Souhaite être tenu(e) informé(e) des suites : <OUI/NON>.\n\n'
-              'Le(la) plaignant(e) reconnaît exacte la présente déclaration, lecture faite, et signe avec nous.\n'
-              'Signatures : <SIGNATURES>.\n'
-              'Clôturé à <HEURE_FIN>.\n',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00093",
+                'Je soussigné(e) <GRADE QUALITÉ> <NOM Prénom>, immatriculé(e) <MATRICULE>, affecté(e) à <SERVICE>,\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00094",
+                'dresse le présent procès-verbal ce jour <DATE>, de <HEURE_DEBUT> à <HEURE_FIN>, à <LIEU>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00095",
+                'Est présent(e) <IDENTITÉ_VICTIME> né(e) le <NAISSANCE> à <LIEU_NAISS>, demeurant <ADRESSE>,\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00096",
+                'joignable au <TÉL> / <EMAIL>. Sur sa demande, je recueille sa plainte pour les faits suivants :\n\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00097",
+                '— EXPOSÉ DES FAITS —\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00098",
+                '<RELATER LES FAITS DANS L’ORDRE CHRONOLOGIQUE, TERMES SIMPLES, FACTUELS, ÉVENTUELLES CITATIONS ENTRE GUILLEMETS.>\n\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00099",
+                '— ÉLÉMENTS COMPLÉMENTAIRES —\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00100",
+                'Témoins : <NOMS/CONTACTS> ; Préjudices : <CORPOREL/MATÉRIEL/MORAL> ; Pièces remises : <LISTE>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00101",
+                'Souhaite être tenu(e) informé(e) des suites : <OUI/NON>.\n\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00102",
+                'Le(la) plaignant(e) reconnaît exacte la présente déclaration, lecture faite, et signe avec nous.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00103",
+                'Signatures : <SIGNATURES>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00104",
+                'Clôturé à <HEURE_FIN>.\n',
+              ),
         ),
         _Item(
-          title: 'Trame — Violences intrafamiliales (victime)',
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00105",
+            'Trame — Violences intrafamiliales (victime)',
+          ),
           tags: ['violences', 'conjugales', 'VIF'],
           trameText:
-              'La victime déclare vivre avec <IDENTITÉ_AUTEUR / LIEN>. Faits survenus le <DATE> à <LIEU>.\n'
-              'Modes opératoires (ex : coups, strangulation, menaces) : <DÉTAILS>.\n'
-              'Antériorité des faits (répétition, escalade) : <OUI/NON + PRÉCISIONS>.\n'
-              'Enfants exposés : <OUI/NON + IDENTITÉS>.\n'
-              'Préjudices (douleurs, lésions visibles) : <DÉTAILS>. Orientation médicale/UMJ : <OUI/NON>.\n'
-              'Mesures de protection évoquées : <OP, éviction, TGD…>.\n'
-              'Pièces remises (photos, certificats, messages) : <LISTE>.\n',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00106",
+                'La victime déclare vivre avec <IDENTITÉ_AUTEUR / LIEN>. Faits survenus le <DATE> à <LIEU>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00107",
+                'Modes opératoires (ex : coups, strangulation, menaces) : <DÉTAILS>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00108",
+                'Antériorité des faits (répétition, escalade) : <OUI/NON + PRÉCISIONS>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00109",
+                'Enfants exposés : <OUI/NON + IDENTITÉS>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00110",
+                'Préjudices (douleurs, lésions visibles) : <DÉTAILS>. Orientation médicale/UMJ : <OUI/NON>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00111",
+                'Mesures de protection évoquées : <OP, éviction, TGD…>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00112",
+                'Pièces remises (photos, certificats, messages) : <LISTE>.\n',
+              ),
         ),
         _Item(
-          title: 'Trame — Escroquerie/fraude CB',
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00113",
+            'Trame — Escroquerie/fraude CB',
+          ),
           tags: ['cyber', 'escroquerie', 'CB'],
           trameText:
-              'Le plaignant relate la découverte de débits frauduleux le <DATE> pour un montant total de <MONTANT> €.\n'
-              'Banque : <NOM>, carte <RÉF>, opposition faite le <DATE> (réf. <NUM_OPP>). Plateforme/app suspecte : <NOM/LINK>.\n'
-              'Communications reçues (mail/SMS/appels) : <COPIER LES CONTENUS/LIENS>.\n'
-              'Signalement banque/plateforme : <RÉF> ; dépôt Cybermalveillance/Pharos : <OUI/NON>.\n'
-              'Pièces jointes : relevés, captures d’écran, IBAN destinataire(s) si connus.\n',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00114",
+                'Le plaignant relate la découverte de débits frauduleux le <DATE> pour un montant total de <MONTANT> €.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00115",
+                'Banque : <NOM>, carte <RÉF>, opposition faite le <DATE> (réf. <NUM_OPP>). Plateforme/app suspecte : <NOM/LINK>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00116",
+                'Communications reçues (mail/SMS/appels) : <COPIER LES CONTENUS/LIENS>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00117",
+                'Signalement banque/plateforme : <RÉF> ; dépôt Cybermalveillance/Pharos : <OUI/NON>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00118",
+                'Pièces jointes : relevés, captures d’écran, IBAN destinataire(s) si connus.\n',
+              ),
         ),
         _Item(
-          title: 'Trame — Vol simple avec effraction',
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00119",
+            'Trame — Vol simple avec effraction',
+          ),
           tags: ['vol', 'effraction', 'biens'],
           trameText:
-              'Faits découverts le <DATE/HEURE> à <ADRESSE>. Serrure/ouvrants fracturés : <DÉTAILS>.\n'
-              'Objets manquants : <LISTE + VALEUR ESTIMATIVE>. Traces/indices préservés : <OUI/NON + PRÉCISIONS>.\n'
-              'Système vidéo / alarme : <OUI/NON + RÉCUPÉRATION EN COURS>.\n'
-              'Voisinage/témoins : <IDENTITÉS/COORDONNÉES>.\n'
-              'Assurance : <COMPAGNIE + NUM CONTRAT>.\n',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00120",
+                'Faits découverts le <DATE/HEURE> à <ADRESSE>. Serrure/ouvrants fracturés : <DÉTAILS>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00121",
+                'Objets manquants : <LISTE + VALEUR ESTIMATIVE>. Traces/indices préservés : <OUI/NON + PRÉCISIONS>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00122",
+                'Système vidéo / alarme : <OUI/NON + RÉCUPÉRATION EN COURS>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00123",
+                'Voisinage/témoins : <IDENTITÉS/COORDONNÉES>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00124",
+                'Assurance : <COMPAGNIE + NUM CONTRAT>.\n',
+              ),
         ),
         _Item(
-          title: 'Trame — Menaces/harcèlement numérique',
-          tags: ['menaces', 'harcèlement', 'numérique'],
+          title: ScolariteText.value(
+            "lib/content/gpx_scolarite/shared/plainte_page.dart",
+            "f00125",
+            'Trame — Menaces/harcèlement numérique',
+          ),
+          tags: [
+            'menaces',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00126",
+              'harcèlement',
+            ),
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00127",
+              'numérique',
+            ),
+          ],
           trameText:
-              'Depuis le <DATE>, le plaignant reçoit des messages <MENACES/INSULTES> via <RÉSEAUX/APP> de la part de <IDENTITÉ/PSEUDO/INCONNU>.\n'
-              'Fréquence : <NOMBRE/JOUR/SEMAINE> ; Heure : <PLAGES> ; Contenu type : <EXEMPLES>.\n'
-              'Captures conservées et remises : <OUI/NON + LISTE>. Signalement plateforme : <RÉF>.\n'
-              'Impact (anxiété, sommeil, travail) : <DÉCRIRE>.\n',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00128",
+                'Depuis le <DATE>, le plaignant reçoit des messages <MENACES/INSULTES> via <RÉSEAUX/APP> de la part de <IDENTITÉ/PSEUDO/INCONNU>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00129",
+                'Fréquence : <NOMBRE/JOUR/SEMAINE> ; Heure : <PLAGES> ; Contenu type : <EXEMPLES>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00130",
+                'Captures conservées et remises : <OUI/NON + LISTE>. Signalement plateforme : <RÉF>.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00131",
+                'Impact (anxiété, sommeil, travail) : <DÉCRIRE>.\n',
+              ),
         ),
       ],
     ),
-    const _Bloc(
+    _Bloc(
       id: 'bonnespratiques',
-      title: 'Bonnes pratiques de rédaction',
-      subtitle: 'Lisibilité & solidité procédurale',
+      title: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00132",
+        'Bonnes pratiques de rédaction',
+      ),
+      subtitle: ScolariteText.value(
+        "lib/content/gpx_scolarite/shared/plainte_page.dart",
+        "f00133",
+        'Lisibilité & solidité procédurale',
+      ),
       icon: Icons.tips_and_updates_rounded,
       items: [
         _Item(
           title: 'Conseils',
-          tags: ['rédaction', 'qualité'],
+          tags: [
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00134",
+              'rédaction',
+            ),
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/shared/plainte_page.dart",
+              "f00135",
+              'qualité',
+            ),
+          ],
           body:
-              '• Phrases courtes, ordre chronologique, mots simples.\n'
-              '• Éviter jargon non compris ; expliciter abréviations.\n'
-              '• Citer les propos sensibles entre guillemets ; pas d’interprétation.\n'
-              '• Rattacher chaque pièce jointe dans le corps du PV (référence claire).\n'
-              '• Relire avec la personne, corriger si besoin, faire signer.',
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00136",
+                '• Phrases courtes, ordre chronologique, mots simples.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00137",
+                '• Éviter jargon non compris ; expliciter abréviations.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00138",
+                '• Citer les propos sensibles entre guillemets ; pas d’interprétation.\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00139",
+                '• Rattacher chaque pièce jointe dans le corps du PV (référence claire).\n',
+              ) +
+              ScolariteText.value(
+                "lib/content/gpx_scolarite/shared/plainte_page.dart",
+                "f00140",
+                '• Relire avec la personne, corriger si besoin, faire signer.',
+              ),
         ),
       ],
     ),

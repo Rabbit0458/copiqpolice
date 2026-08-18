@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — RECOURS DEVANT LES ORGANES INTERNATIONAUX
@@ -47,7 +48,11 @@ class RecoursOrganesInternationauxPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Recours devant les organes internationaux',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+            "f00001",
+            'Recours devant les organes internationaux',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16,
@@ -63,7 +68,11 @@ class RecoursOrganesInternationauxPage extends StatelessWidget {
         children: [
           // ================= TITRE + INTRO =================
           Text(
-            'Les recours devant les organes internationaux',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+              "f00002",
+              'Les recours devant les organes internationaux',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -72,13 +81,19 @@ class RecoursOrganesInternationauxPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           _Paragraph.rich([
-            const TextSpan(
-              text:
-                  'Au-delà des juridictions françaises, certains organes internationaux peuvent être saisis par les ressortissants français lorsqu’ils estiment que leurs droits fondamentaux ont été violés. ',
+            TextSpan(
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                "f00003",
+                'Au-delà des juridictions françaises, certains organes internationaux peuvent être saisis par les ressortissants français lorsqu’ils estiment que leurs droits fondamentaux ont été violés. ',
+              ),
             ),
             TextSpan(
-              text:
-                  'Ces mécanismes complètent la protection interne : ils jouent un rôle de “filet de sécurité” lorsque les recours nationaux ont été épuisés.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                "f00004",
+                'Ces mécanismes complètent la protection interne : ils jouent un rôle de “filet de sécurité” lorsque les recours nationaux ont été épuisés.',
+              ),
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: referenceColor,
@@ -86,13 +101,25 @@ class RecoursOrganesInternationauxPage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 14),
-          const _NotaBox(
-            title: 'Principe de subsidiarité',
+          _NotaBox(
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+              "f00005",
+              'Principe de subsidiarité',
+            ),
             bodySpans: [
               TextSpan(
                 text:
-                    'D’une manière générale, un recours international n’est recevable que si la personne a d’abord utilisé les voies de recours internes (tribunaux français) sans obtenir satisfaction. '
-                    'Les organes internationaux n’interviennent donc qu’en dernier ressort, pour contrôler le respect des engagements pris par la France.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00006",
+                      'D’une manière générale, un recours international n’est recevable que si la personne a d’abord utilisé les voies de recours internes (tribunaux français) sans obtenir satisfaction. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00007",
+                      'Les organes internationaux n’interviennent donc qu’en dernier ressort, pour contrôler le respect des engagements pris par la France.',
+                    ),
               ),
             ],
           ),
@@ -102,63 +129,99 @@ class RecoursOrganesInternationauxPage extends StatelessWidget {
           // CHAPITRE 1 — COMITÉ POUR L’ÉLIMINATION DE LA DISCRIMINATION RACIALE
           // =====================================================
           _HypoCard(
-            title:
-                'Chapitre 1 — Le comité pour l’élimination de la discrimination raciale',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+              "f00008",
+              'Chapitre 1 — Le comité pour l’élimination de la discrimination raciale',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Ce comité est un organe des Nations Unies créé en 1969, à la suite de l’entrée en vigueur de la ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00009",
+                    'Ce comité est un organe des Nations Unies créé en 1969, à la suite de l’entrée en vigueur de la ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'Convention internationale sur l’élimination de toutes les formes de discrimination raciale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00010",
+                    'Convention internationale sur l’élimination de toutes les formes de discrimination raciale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ', ratifiée par la France en 1971. Sa mission est de veiller à l’application effective des droits garantis par cette convention.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00011",
+                    ', ratifiée par la France en 1971. Sa mission est de veiller à l’application effective des droits garantis par cette convention.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Composition : 18 experts indépendants, élus pour quatre ans par les États parties à la convention. Le comité siège à Genève, environ deux mois par an (sessions au printemps et en été).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00012",
+                    'Composition : 18 experts indépendants, élus pour quatre ans par les États parties à la convention. Le comité siège à Genève, environ deux mois par an (sessions au printemps et en été).',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Contrôle de la mise en œuvre : les États doivent présenter régulièrement des rapports sur la lutte contre les discriminations raciales sur leur territoire. Le comité formule des recommandations.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00013",
+                    'Contrôle de la mise en œuvre : les États doivent présenter régulièrement des rapports sur la lutte contre les discriminations raciales sur leur territoire. Le comité formule des recommandations.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Recours individuel : depuis 1982, toute personne s’estimant victime, de la part de l’État français, d’une discrimination raciale peut saisir le comité, ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00014",
+                    'Recours individuel : depuis 1982, toute personne s’estimant victime, de la part de l’État français, d’une discrimination raciale peut saisir le comité, ',
+                  ),
                 ),
                 TextSpan(
-                  text:
-                      'à condition d’avoir au préalable épuisé les recours juridictionnels internes.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00015",
+                    'à condition d’avoir au préalable épuisé les recours juridictionnels internes.',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _ExempleBox(
-                title: 'Exemple de situation',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                  "f00016",
+                  'Exemple de situation',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Une personne dénonce un traitement discriminatoire fondé sur l’origine ou la couleur de peau dans l’accès à un service public. '
-                        'Après avoir porté l’affaire devant les juridictions françaises sans résultat satisfaisant, elle peut déposer une communication individuelle devant le comité, qui examinera la conformité de la pratique avec la convention.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                          "f00017",
+                          'Une personne dénonce un traitement discriminatoire fondé sur l’origine ou la couleur de peau dans l’accès à un service public. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                          "f00018",
+                          'Après avoir porté l’affaire devant les juridictions françaises sans résultat satisfaisant, elle peut déposer une communication individuelle devant le comité, qui examinera la conformité de la pratique avec la convention.',
+                        ),
                   ),
                 ],
               ),
@@ -171,66 +234,118 @@ class RecoursOrganesInternationauxPage extends StatelessWidget {
           // CHAPITRE 2 — COUR EUROPÉENNE DES DROITS DE L’HOMME
           // =====================================================
           _HypoCard(
-            title: 'Chapitre 2 — La Cour européenne des droits de l’Homme',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+              "f00019",
+              'Chapitre 2 — La Cour européenne des droits de l’Homme',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'Depuis sa création en 1959, la Cour européenne des droits de l’Homme (CEDH) n’a cessé de prendre de l’ampleur. Elle veille au respect de la ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00020",
+                    'Depuis sa création en 1959, la Cour européenne des droits de l’Homme (CEDH) n’a cessé de prendre de l’ampleur. Elle veille au respect de la ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'Convention européenne des droits de l’Homme de 1950',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00021",
+                    'Convention européenne des droits de l’Homme de 1950',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' dans les États membres du Conseil de l’Europe. Son siège est à Strasbourg et elle compte autant de juges que d’États parties.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00022",
+                    ' dans les États membres du Conseil de l’Europe. Son siège est à Strasbourg et elle compte autant de juges que d’États parties.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const Text(
-                '2.1 — Qui peut saisir la CEDH ?',
+              Text(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                  "f00023",
+                  '2.1 — Qui peut saisir la CEDH ?',
+                ),
                 style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Un État contre un autre État (requête étatique) ; ce type de recours demeure rare.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00024",
+                    'Un État contre un autre État (requête étatique) ; ce type de recours demeure rare.',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Toute personne physique, ONG ou groupe de particuliers (requête individuelle) s’estimant victime d’une violation de la Convention par un État partie, après épuisement des recours internes.',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00025",
+                    'Toute personne physique, ONG ou groupe de particuliers (requête individuelle) s’estimant victime d’une violation de la Convention par un État partie, après épuisement des recours internes.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const Text(
-                '2.2 — Effets des décisions',
+              Text(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                  "f00026",
+                  '2.2 — Effets des décisions',
+                ),
                 style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Lorsque la Cour constate une violation, elle peut accorder une satisfaction équitable à la victime (dommages-intérêts) et, surtout, '
-                'oblige l’État condamné à modifier sa législation ou ses pratiques pour se conformer à la Convention. Les arrêts ont donc un impact direct sur le droit français.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00027",
+                      'Lorsque la Cour constate une violation, elle peut accorder une satisfaction équitable à la victime (dommages-intérêts) et, surtout, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00028",
+                      'oblige l’État condamné à modifier sa législation ou ses pratiques pour se conformer à la Convention. Les arrêts ont donc un impact direct sur le droit français.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _ExempleBox(
-                title: 'Condamnations de la France',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                  "f00029",
+                  'Condamnations de la France',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'La France a déjà été condamnée à plusieurs reprises pour des atteintes aux droits fondamentaux : '
-                        'conditions de détention et surpopulation carcérale, réglementation des étrangers, protection de la vie familiale, etc. '
-                        'Ces condamnations ont conduit à des réformes importantes du droit interne.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                          "f00030",
+                          'La France a déjà été condamnée à plusieurs reprises pour des atteintes aux droits fondamentaux : ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                          "f00031",
+                          'conditions de détention et surpopulation carcérale, réglementation des étrangers, protection de la vie familiale, etc. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                          "f00032",
+                          'Ces condamnations ont conduit à des réformes importantes du droit interne.',
+                        ),
                   ),
                 ],
               ),
@@ -243,81 +358,147 @@ class RecoursOrganesInternationauxPage extends StatelessWidget {
           // CHAPITRE 3 — COUR DE JUSTICE DE L’UNION EUROPÉENNE
           // =====================================================
           _HypoCard(
-            title: 'Chapitre 3 — La Cour de justice de l’Union européenne',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+              "f00033",
+              'Chapitre 3 — La Cour de justice de l’Union européenne',
+            ),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      'La Cour de justice de l’Union européenne (CJUE) est l’institution juridictionnelle de l’UE, chargée d’assurer le respect du ',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00034",
+                    'La Cour de justice de l’Union européenne (CJUE) est l’institution juridictionnelle de l’UE, chargée d’assurer le respect du ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'droit de l’Union',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00035",
+                    'droit de l’Union',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
-                  text:
-                      ' dans l’interprétation et l’application des traités. Son siège est établi à Luxembourg.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00036",
+                    ' dans l’interprétation et l’application des traités. Son siège est établi à Luxembourg.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const Text(
-                '3.1 — Compétences principales',
+              Text(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                  "f00037",
+                  '3.1 — Compétences principales',
+                ),
                 style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Trancher les litiges entre les institutions de l’UE et les États membres (recours en manquement, annulation d’actes, etc.) ;',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00038",
+                    'Trancher les litiges entre les institutions de l’UE et les États membres (recours en manquement, annulation d’actes, etc.) ;',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Interpréter le droit de l’Union à la demande des juridictions nationales via le ',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00039",
+                    'Interpréter le droit de l’Union à la demande des juridictions nationales via le ',
+                  ),
                 ),
                 TextSpan(
-                  text: 'renvoi préjudiciel',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00040",
+                    'renvoi préjudiciel',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
-                  text:
-                      ' : une question posée par un juge français sur la signification d’une règle européenne ;',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00041",
+                    ' : une question posée par un juge français sur la signification d’une règle européenne ;',
+                  ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text:
-                      'Connaître de certains recours introduits par des particuliers ou des entreprises contre les institutions de l’UE (notamment devant le Tribunal).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                    "f00042",
+                    'Connaître de certains recours introduits par des particuliers ou des entreprises contre les institutions de l’UE (notamment devant le Tribunal).',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const Text(
-                '3.2 — Organisation',
+              Text(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                  "f00043",
+                  '3.2 — Organisation',
+                ),
                 style: TextStyle(fontWeight: FontWeight.w800, fontSize: 15),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'La Cour de justice de l’Union européenne comprend deux juridictions : '
-                'la Cour de justice (formation la plus solennelle) et le Tribunal. '
-                'En pratique, de nombreuses questions relatives aux libertés publiques (protection des données, non-discrimination, droits des travailleurs, etc.) '
-                'passent par la CJUE via les renvois préjudiciels formés par les juges nationaux.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00044",
+                      'La Cour de justice de l’Union européenne comprend deux juridictions : ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00045",
+                      'la Cour de justice (formation la plus solennelle) et le Tribunal. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00046",
+                      'En pratique, de nombreuses questions relatives aux libertés publiques (protection des données, non-discrimination, droits des travailleurs, etc.) ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                      "f00047",
+                      'passent par la CJUE via les renvois préjudiciels formés par les juges nationaux.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _ExempleBox(
-                title: 'Intérêt pour le policier',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                  "f00048",
+                  'Intérêt pour le policier',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Les règles européennes sur la protection des données personnelles, la non-discrimination ou la libre circulation influencent directement les pratiques policières (fichiers, contrôles, coopération européenne). '
-                        'Les arrêts de la CJUE peuvent donc conduire à adapter la réglementation française et les instructions données aux services.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                          "f00049",
+                          'Les règles européennes sur la protection des données personnelles, la non-discrimination ou la libre circulation influencent directement les pratiques policières (fichiers, contrôles, coopération européenne). ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/libertés_publiques/garanties/recours_organes_internationaux_page.dart",
+                          "f00050",
+                          'Les arrêts de la CJUE peuvent donc conduire à adapter la réglementation française et les instructions données aux services.',
+                        ),
                   ),
                 ],
               ),

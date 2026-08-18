@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RecherchesInfructueusesMandatPage extends StatelessWidget {
   const RecherchesInfructueusesMandatPage({super.key});
@@ -50,7 +51,11 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Interpellation",
@@ -68,7 +73,11 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV — Perquisition / recherches infructueuses\n(exécution d’un mandat d’amener ou d’arrêt)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+              "f00002",
+              "PV — Perquisition / recherches infructueuses\n(exécution d’un mandat d’amener ou d’arrêt)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -83,24 +92,45 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
             cardColor: cardCanva,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas sert à rédiger un procès-verbal lorsque, en exécution d’un mandat "
-                "(d’amener ou d’arrêt), la personne visée n’est pas trouvée : les recherches au domicile "
-                "sont réalisées, puis l’absence est constatée et la transmission au magistrat est formalisée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00003",
+                      "Ce canevas sert à rédiger un procès-verbal lorsque, en exécution d’un mandat ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00004",
+                      "(d’amener ou d’arrêt), la personne visée n’est pas trouvée : les recherches au domicile ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00005",
+                      "sont réalisées, puis l’absence est constatée et la transmission au magistrat est formalisée.",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "But exclusif : rechercher la personne visée par le mandat (et non « perquisitionner » au sens classique).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00006",
+                  "But exclusif : rechercher la personne visée par le mandat (et non « perquisitionner » au sens classique).",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Respecter strictement les heures légales d’introduction au domicile : 06h00 → 21h00.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00007",
+                  "Respecter strictement les heures légales d’introduction au domicile : 06h00 → 21h00.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Mentionner l’heure précise d’arrivée, les assistants, et le déroulé de la visite.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00008",
+                  "Mentionner l’heure précise d’arrivée, les assistants, et le déroulé de la visite.",
+                ),
               ),
             ],
           ),
@@ -109,23 +139,44 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (cadre juridique)
           _ConditionCard(
-            title: "I — Cadre juridique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+              "f00009",
+              "I — Cadre juridique",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "La « visite domiciliaire » liée au mandat ",
-                ),
-                TextSpan(text: "ne doit pas être assimilée "),
-                TextSpan(text: "à la perquisition de l’"),
-                TextSpan(
-                  text: "article 56 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                    "f00010",
+                    "La « visite domiciliaire » liée au mandat ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                    "f00011",
+                    "ne doit pas être assimilée ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                    "f00012",
+                    "à la perquisition de l’",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                    "f00013",
+                    "article 56 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -134,11 +185,23 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si la personne ne peut être saisie, un PV de perquisition et de recherches infructueuses "
-                        "est adressé au magistrat qui a délivré le mandat : ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                          "f00014",
+                          "Si la personne ne peut être saisie, un PV de perquisition et de recherches infructueuses ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                          "f00015",
+                          "est adressé au magistrat qui a délivré le mandat : ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article 134 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00016",
+                      "article 134 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -153,35 +216,63 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Structure du PV (plan pédagogique)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+              "f00017",
+              "II — Structure du PV (plan pédagogique)",
+            ),
             cardColor: cardGuide,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("À écrire comme un déroulé chronologique"),
-              _BulletPoint(
-                text:
-                    "Style clair, factuel, daté/horodaté (heure précise d’arrivée, déroulé, clôture).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00018",
+                  "À écrire comme un déroulé chronologique",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Identité : relever l’identité succincte de la personne présente (si quelqu’un ouvre) + préciser le support de vérification.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00019",
+                  "Style clair, factuel, daté/horodaté (heure précise d’arrivée, déroulé, clôture).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Déclaration éventuelle (style indirect) : absence de la personne visée, et lieu possible où elle se trouve.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00020",
+                  "Identité : relever l’identité succincte de la personne présente (si quelqu’un ouvre) + préciser le support de vérification.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Visite des lieux : préciser les conditions (serrurier réquisitionné si nécessaire, présence de deux témoins requis).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00021",
+                  "Déclaration éventuelle (style indirect) : absence de la personne visée, et lieu possible où elle se trouve.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Avis magistrat : informer et noter les instructions reçues.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00022",
+                  "Visite des lieux : préciser les conditions (serrurier réquisitionné si nécessaire, présence de deux témoins requis).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Clôture / transmission : mentionner la transmission du PV et la fin de mission.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00023",
+                  "Avis magistrat : informer et noter les instructions reçues.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00024",
+                  "Clôture / transmission : mentionner la transmission du PV et la fin de mission.",
+                ),
               ),
             ],
           ),
@@ -189,105 +280,259 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Canevas détaillé (à recopier / adapter)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+              "f00025",
+              "III — Canevas détaillé (à recopier / adapter)",
+            ),
             cardColor: cardSteps,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de rédaction"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00026",
+                  "1) Lieu de rédaction",
+                ),
+              ),
               _Paragraph(
-                "Indiquer la ville / service / date et l’heure de rédaction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00027",
+                  "Indiquer la ville / service / date et l’heure de rédaction.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("2) Instructions"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00028",
+                  "2) Instructions",
+                ),
+              ),
               _Paragraph(
-                "Rappeler que l’agent de police judiciaire agit sous le contrôle de l’officier de police judiciaire.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00029",
+                  "Rappeler que l’agent de police judiciaire agit sous le contrôle de l’officier de police judiciaire.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("3) Exécution de mandat"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00030",
+                  "3) Exécution de mandat",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Indiquer les références du mandat en vertu duquel vous agissez :\n"
-                      "• type de mandat (amener ou arrêt)\n"
-                      "• date de délivrance + nom/qualité du magistrat mandant\n"
-                      "• identité de la personne concernée\n"
-                      "• motif (soupçonnée / témoin assisté / mise en examen)\n"
-                      "• infraction visée\n\n"
-                      "Puis : renvoyer aux articles relatifs au mandat et préciser le cadre.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00031",
+                        "Indiquer les références du mandat en vertu duquel vous agissez :\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00032",
+                        "• type de mandat (amener ou arrêt)\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00033",
+                        "• date de délivrance + nom/qualité du magistrat mandant\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00034",
+                        "• identité de la personne concernée\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00035",
+                        "• motif (soupçonnée / témoin assisté / mise en examen)\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00036",
+                        "• infraction visée\n\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00037",
+                        "Puis : renvoyer aux articles relatifs au mandat et préciser le cadre.",
+                      ),
                 ),
               ]),
 
               SizedBox(height: 10),
-              _SubTitle("4) Assistants"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00038",
+                  "4) Assistants",
+                ),
+              ),
               _Paragraph(
-                "Mentionner les fonctionnaires accompagnants + la tenue de l’équipage "
-                "(uniforme, tenue bourgeoise, port du brassard police).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00039",
+                      "Mentionner les fonctionnaires accompagnants + la tenue de l’équipage ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00040",
+                      "(uniforme, tenue bourgeoise, port du brassard police).",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("5) Transport"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00041",
+                  "5) Transport",
+                ),
+              ),
               _Paragraph(
-                "Préciser l’adresse du dernier domicile connu, rappeler le respect des heures légales (06h–21h) "
-                "et indiquer l’heure précise d’arrivée sur place.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00042",
+                      "Préciser l’adresse du dernier domicile connu, rappeler le respect des heures légales (06h–21h) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00043",
+                      "et indiquer l’heure précise d’arrivée sur place.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("6) Identité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00044",
+                  "6) Identité",
+                ),
+              ),
               _Paragraph(
-                "Relever l’identité succincte de la personne présente (si une personne est sur place). "
-                "Préciser le document à partir duquel l’identité est vérifiée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00045",
+                      "Relever l’identité succincte de la personne présente (si une personne est sur place). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                      "f00046",
+                      "Préciser le document à partir duquel l’identité est vérifiée.",
+                    ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("7) Visite"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00047",
+                  "7) Visite",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "Visiter les lieux afin de s’assurer de la présence ou non de la personne visée.\n\n"
-                      "Cette visite a pour but exclusif de rechercher la personne faisant l’objet du mandat. ",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00048",
+                        "Visiter les lieux afin de s’assurer de la présence ou non de la personne visée.\n\n",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00049",
+                        "Cette visite a pour but exclusif de rechercher la personne faisant l’objet du mandat. ",
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      "Elle n’est pas assimilée à la perquisition de l’article 56 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                    "f00050",
+                    "Elle n’est pas assimilée à la perquisition de l’article 56 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ".\n\n"),
                 TextSpan(
                   text:
-                      "En l’absence de la personne : la visite peut être réalisée après réquisition d’un serrurier "
-                      "et en présence de deux témoins requis.\n\n",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00051",
+                        "En l’absence de la personne : la visite peut être réalisée après réquisition d’un serrurier ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                        "f00052",
+                        "et en présence de deux témoins requis.\n\n",
+                      ),
                 ),
                 TextSpan(
-                  text:
-                      "Si la personne ne peut être saisie : PV adressé au magistrat délivrant le mandat — article 134 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                    "f00053",
+                    "Si la personne ne peut être saisie : PV adressé au magistrat délivrant le mandat — article 134 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 10),
-              _SubTitle("8) Énonciation terminale (clôture)"),
-              _Paragraph("Clore le PV en précisant l’heure."),
-
-              SizedBox(height: 10),
-              _SubTitle("9) Avis magistrat"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00054",
+                  "8) Énonciation terminale (clôture)",
+                ),
+              ),
               _Paragraph(
-                "Informer le magistrat mandant et indiquer les instructions reçues.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00055",
+                  "Clore le PV en précisant l’heure.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("10) Clôture / transmission"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00056",
+                  "9) Avis magistrat",
+                ),
+              ),
               _Paragraph(
-                "Mentionner la transmission du procès-verbal (et à qui), puis fin de mission.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00057",
+                  "Informer le magistrat mandant et indiquer les instructions reçues.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00058",
+                  "10) Clôture / transmission",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00059",
+                  "Mentionner la transmission du procès-verbal (et à qui), puis fin de mission.",
+                ),
               ),
 
               SizedBox(height: 12),
@@ -295,8 +540,16 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Conseil : notez systématiquement les heures clés (arrivée, début/fin visite, clôture) "
-                        "et les personnes présentes (serrurier, témoins requis, assistants).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                          "f00060",
+                          "Conseil : notez systématiquement les heures clés (arrivée, début/fin visite, clôture) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                          "f00061",
+                          "et les personnes présentes (serrurier, témoins requis, assistants).",
+                        ),
                   ),
                 ],
               ),
@@ -306,18 +559,30 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "CANVA — Modèle PV (zoom)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+              "f00062",
+              "CANVA — Modèle PV (zoom)",
+            ),
             cardColor: cardCanva,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuyez sur l’image pour l’ouvrir en plein écran et zoomer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00063",
+                  "Appuyez sur l’image pour l’ouvrir en plein écran et zoomer.",
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canva_infructueuse_pv_recto.png',
-                label: 'Modèle PV',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                  "f00064",
+                  'Modèle PV',
+                ),
               ),
             ],
           ),
@@ -573,9 +838,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -669,7 +932,11 @@ class _ZoomableAssetImage extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        "Plein écran",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart",
+                          "f00066",
+                          "Plein écran",
+                        ),
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w800,
                           fontSize: 12.5,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVPreambulePage extends StatelessWidget {
   const PVPreambulePage({super.key});
@@ -49,10 +50,18 @@ class PVPreambulePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "PV — APJ 20",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+            "f00002",
+            "PV — APJ 20",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -67,7 +76,11 @@ class PVPreambulePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Préambule",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+              "f00003",
+              "Préambule",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -77,7 +90,11 @@ class PVPreambulePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Académie de Police",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+              "f00004",
+              "Académie de Police",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w800,
               fontSize: 15.5,
@@ -90,17 +107,29 @@ class PVPreambulePage extends StatelessWidget {
 
           // Intro / idée directrice
           _ConditionCard(
-            title: "Idée directrice",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+              "f00005",
+              "Idée directrice",
+            ),
             cardColor: cardIntro,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquête de police se définit comme une suite d’actes ayant pour finalité la manifestation de la vérité.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00006",
+                  "L’enquête de police se définit comme une suite d’actes ayant pour finalité la manifestation de la vérité.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle doit permettre de qualifier les faits, de rassembler les preuves et de rechercher les auteurs de l’infraction.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00007",
+                  "Elle doit permettre de qualifier les faits, de rassembler les preuves et de rechercher les auteurs de l’infraction.",
+                ),
               ),
             ],
           ),
@@ -109,17 +138,49 @@ class PVPreambulePage extends StatelessWidget {
 
           // Définition + finalité
           _ConditionCard(
-            title: "Définition — ce qu’est une enquête",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+              "f00008",
+              "Définition — ce qu’est une enquête",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Finalité"),
-              _IntroBullet(text: "Manifester la vérité."),
-              _IntroBullet(text: "Qualifier juridiquement les faits."),
-              _IntroBullet(text: "Rassembler les preuves."),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00009",
+                  "Finalité",
+                ),
+              ),
               _IntroBullet(
-                text: "Identifier et rechercher l’auteur (ou les auteurs).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00010",
+                  "Manifester la vérité.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00011",
+                  "Qualifier juridiquement les faits.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00012",
+                  "Rassembler les preuves.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00013",
+                  "Identifier et rechercher l’auteur (ou les auteurs).",
+                ),
               ),
             ],
           ),
@@ -128,27 +189,51 @@ class PVPreambulePage extends StatelessWidget {
 
           // Dossier de procédure
           _ConditionCard(
-            title: "Le dossier de procédure",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+              "f00014",
+              "Le dossier de procédure",
+            ),
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’enquêteur, qu’il soit officier ou agent de police judiciaire, constitue un dossier de la procédure.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00015",
+                  "L’enquêteur, qu’il soit officier ou agent de police judiciaire, constitue un dossier de la procédure.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Ce dossier comprend un nombre variable de procès-verbaux selon la gravité des faits et l’importance des investigations menées.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00016",
+                  "Ce dossier comprend un nombre variable de procès-verbaux selon la gravité des faits et l’importance des investigations menées.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("À retenir"),
-              _BulletPoint(
-                text:
-                    "Le dossier s’adapte : plus les faits sont graves et l’enquête dense, plus le volume d’actes augmente.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00017",
+                  "À retenir",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Chaque acte (PV) doit être clair, daté, cohérent et exploitable par la suite (hiérarchie / parquet / juridiction).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00018",
+                  "Le dossier s’adapte : plus les faits sont graves et l’enquête dense, plus le volume d’actes augmente.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00019",
+                  "Chaque acte (PV) doit être clair, daté, cohérent et exploitable par la suite (hiérarchie / parquet / juridiction).",
+                ),
               ),
             ],
           ),
@@ -157,27 +242,51 @@ class PVPreambulePage extends StatelessWidget {
 
           // Objectif du recueil
           _ConditionCard(
-            title: "Objectif de ce recueil",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+              "f00020",
+              "Objectif de ce recueil",
+            ),
             cardColor: cardMethod,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce recueil présente les principaux procès-verbaux qu’un A.P.J. 20 peut être amené à rédiger, quel que soit son service d’affectation.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00021",
+                  "Ce recueil présente les principaux procès-verbaux qu’un A.P.J. 20 peut être amené à rédiger, quel que soit son service d’affectation.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Il est conçu comme une aide pratique : les principales étapes d’une enquête de police sont exposées, pour te guider de manière structurée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00022",
+                  "Il est conçu comme une aide pratique : les principales étapes d’une enquête de police sont exposées, pour te guider de manière structurée.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Organisation pédagogique"),
-              _BulletPoint(
-                text:
-                    "Une fiche de cours précède le ou les modèles de procès-verbaux.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00023",
+                  "Organisation pédagogique",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Un canevas fournit des explications sur le contenu propre à chaque acte.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00024",
+                  "Une fiche de cours précède le ou les modèles de procès-verbaux.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                  "f00025",
+                  "Un canevas fournit des explications sur le contenu propre à chaque acte.",
+                ),
               ),
               SizedBox(height: 12),
 
@@ -186,12 +295,18 @@ class PVPreambulePage extends StatelessWidget {
                 title: "Conseil",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Avant de rédiger un PV, identifie toujours : le contexte, l’objectif de l’acte, les personnes concernées, et les éléments factuels indispensables. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                      "f00026",
+                      "Avant de rédiger un PV, identifie toujours : le contexte, l’objectif de l’acte, les personnes concernées, et les éléments factuels indispensables. ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "Ensuite seulement, structure la rédaction (chronologie, constatations, auditions, annexes).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                      "f00027",
+                      "Ensuite seulement, structure la rédaction (chronologie, constatations, auditions, annexes).",
+                    ),
                   ),
                 ],
               ),
@@ -201,17 +316,23 @@ class PVPreambulePage extends StatelessWidget {
               // Placeholder loi (si tu veux en mettre plus tard), mais je respecte ton contenu fourni (pas de loi dans le préambule).
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Remarque : si tu ajoutes plus tard des références légales (CPP / CP / CSI…), elles devront apparaître en ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                    "f00028",
+                    "Remarque : si tu ajoutes plus tard des références légales (CPP / CP / CSI…), elles devront apparaître en ",
+                  ),
                 ),
                 TextSpan(
                   text: "rouge",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart",
+                    "f00029",
+                    " conformément à ta règle d’affichage.",
                   ),
                 ),
-                TextSpan(text: " conformément à ta règle d’affichage."),
               ]),
             ],
           ),

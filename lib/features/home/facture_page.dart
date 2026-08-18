@@ -2,7 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
+import 'package:copiqpolice/core/services/stripe_payment_service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 enum BillingStatus { paid, due, failed, refunded }
 
@@ -109,8 +111,19 @@ class BillingProfile {
 class SubscriptionInfo {
   final String plan;
   final String status; // active/canceled/past_due
+  final DateTime? periodStart;
+  final DateTime? periodEnd;
+  final DateTime? trialEndsAt;
+  final bool cancelAtPeriodEnd;
 
-  const SubscriptionInfo({required this.plan, required this.status});
+  const SubscriptionInfo({
+    required this.plan,
+    required this.status,
+    this.periodStart,
+    this.periodEnd,
+    this.trialEndsAt,
+    this.cancelAtPeriodEnd = false,
+  });
 }
 
 /// ===========================================================================
@@ -248,32 +261,26 @@ class BillingRepo {
     if (uid == null) throw Exception("Not authenticated");
 
     final row = await sb
-        .from('billing_subscriptions')
+        .from('cp_my_subscription')
         .select()
         .eq('user_id', uid)
-        .order('created_at', ascending: false)
         .maybeSingle();
 
     if (row == null) {
-      // default subscription record
-      await sb.from('billing_subscriptions').insert({
-        'user_id': uid,
-        'plan': 'Pro Mensuel',
-        'status': 'active',
-      });
-
-      await sb.from('billing_events').insert({
-        'user_id': uid,
-        'event_type': 'subscription.created',
-        'payload': {'plan': 'Pro Mensuel'},
-      });
-
-      return const SubscriptionInfo(plan: 'Pro Mensuel', status: 'active');
+      return const SubscriptionInfo(plan: 'Gratuit', status: 'inactive');
     }
 
     return SubscriptionInfo(
-      plan: (row['plan'] as String?) ?? 'Pro Mensuel',
+      plan: switch ('${row['tier']}') {
+        'premium_trial' => 'Premium annuel · essai',
+        'premium' => 'Premium',
+        _ => 'Gratuit',
+      },
       status: (row['status'] as String?) ?? 'active',
+      periodStart: DateTime.tryParse('${row['current_period_start'] ?? ''}'),
+      periodEnd: DateTime.tryParse('${row['current_period_end'] ?? ''}'),
+      trialEndsAt: DateTime.tryParse('${row['trial_ends_at'] ?? ''}'),
+      cancelAtPeriodEnd: (row['cancel_at_period_end'] as bool?) ?? false,
     );
   }
 
@@ -396,8 +403,9 @@ class _FacturePageState extends State<FacturePage> {
 
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;
 
-  Color get _stroke =>
-      _isDark ? Colors.white.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.06);
+  Color get _stroke => _isDark
+      ? Colors.white.withValues(alpha: 0.08)
+      : Colors.black.withValues(alpha: 0.06);
 
   Future<void> _bootstrap() async {
     if (!mounted) return;
@@ -500,6 +508,96 @@ class _FacturePageState extends State<FacturePage> {
     }
   }
 
+  Future<void> _editBillingProfile() async {
+    final profile = _profile;
+    if (profile == null) return;
+
+    final updated = await showModalBottomSheet<BillingProfile>(
+      context: context,
+      isScrollControlled: true,
+      useSafeArea: true,
+      backgroundColor: Colors.transparent,
+      builder: (context) => _BillingProfileSheet(profile: profile),
+    );
+    if (updated == null) return;
+
+    try {
+      await _repo.updateProfile(updated);
+      if (!mounted) return;
+      setState(() => _profile = updated);
+      AppNotifier.success(
+        context,
+        title: 'Coordonnées enregistrées',
+        message: 'Tes informations de facturation ont bien été mises à jour.',
+      );
+    } catch (e) {
+      if (!mounted) return;
+      AppNotifier.error(
+        context,
+        title: 'Enregistrement impossible',
+        message: 'Tes coordonnées n’ont pas pu être enregistrées.',
+      );
+    }
+  }
+
+  Future<void> _openStripePortal() async {
+    HapticFeedback.lightImpact();
+    final result = await StripePaymentService.instance.openPortal();
+    if (!mounted) return;
+    if (!result.ok) {
+      AppNotifier.error(
+        context,
+        title: 'Portail indisponible',
+        message:
+            'Impossible d’ouvrir Stripe pour le moment. Réessaie dans quelques instants.',
+      );
+      return;
+    }
+    AppNotifier.info(
+      context,
+      title: 'Portail Stripe ouvert',
+      message:
+          'Tu peux gérer ton abonnement, ta carte et télécharger tes factures dans le navigateur sécurisé.',
+    );
+  }
+
+  Future<void> _openInvoice(Invoice invoice) async {
+    final raw = invoice.pdfUrl;
+    if (raw == null || raw.isEmpty) {
+      await _openStripePortal();
+      return;
+    }
+    final opened = await launchUrl(
+      Uri.parse(raw),
+      mode: LaunchMode.externalApplication,
+    );
+    if (!opened && mounted) {
+      AppNotifier.error(
+        context,
+        title: 'Facture indisponible',
+        message: 'Le document n’a pas pu être ouvert.',
+      );
+    }
+  }
+
+  Future<void> _emailInvoice(Invoice invoice) async {
+    final email =
+        _profile?.billingEmail ??
+        Supabase.instance.client.auth.currentUser?.email ??
+        '';
+    final uri = Uri(
+      scheme: 'mailto',
+      path: email,
+      queryParameters: {
+        'subject': 'Facture COP’IQ ${invoice.invoiceNumber}',
+        'body': invoice.pdfUrl == null
+            ? 'Retrouve ta facture dans ton portail Stripe COP’IQ.'
+            : 'Voici le lien sécurisé vers ta facture : ${invoice.pdfUrl}',
+      },
+    );
+    await launchUrl(uri);
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -567,15 +665,10 @@ class _FacturePageState extends State<FacturePage> {
                   ),
                 ),
               ] else ...[
-                _SectionCard(
-                  title: "Abonnement",
-                  subtitle: _sub?.plan ?? "—",
-                  meta: _sub?.status ?? "—",
-                  leading: const Icon(Icons.workspace_premium_rounded),
-                  trailing: const Icon(Icons.chevron_right_rounded),
-                  onTap: () async {
-                    // à toi: ouvrir ton picker et appeler _repo.updateSubscriptionPlan(plan)
-                  },
+                _SubscriptionOverview(
+                  subscription: _sub!,
+                  invoices: _invoices,
+                  onManage: _openStripePortal,
                 ),
 
                 const SizedBox(height: 10),
@@ -591,12 +684,10 @@ class _FacturePageState extends State<FacturePage> {
                   leading: const Icon(Icons.receipt_long_rounded),
                   trailing: IconButton(
                     tooltip: "Modifier",
-                    onPressed: () {
-                      // à toi: ouvrir le sheet et appeler _repo.updateProfile(...)
-                    },
+                    onPressed: _editBillingProfile,
                     icon: const Icon(Icons.edit_rounded),
                   ),
-                  onTap: () {},
+                  onTap: _editBillingProfile,
                 ),
 
                 const SizedBox(height: 10),
@@ -611,7 +702,7 @@ class _FacturePageState extends State<FacturePage> {
                       : "Exp ${_pm!.expMonth.toString().padLeft(2, '0')}/${(_pm!.expYear % 100).toString().padLeft(2, '0')}",
                   leading: const Icon(Icons.credit_card_rounded),
                   trailing: const Icon(Icons.chevron_right_rounded),
-                  onTap: () {},
+                  onTap: _openStripePortal,
                 ),
 
                 const SizedBox(height: 14),
@@ -717,9 +808,14 @@ class _FacturePageState extends State<FacturePage> {
                               color: theme.colorScheme.primary,
                             ),
                             const SizedBox(width: 10),
-                            const Expanded(
+                            Expanded(
                               child: Text(
-                                "Aucune facture ne correspond à la recherche.",
+                                _searchCtl.text.trim().isNotEmpty ||
+                                        _statusFilter != null
+                                    ? "Aucune facture ne correspond à la recherche."
+                                    : _sub?.status.toLowerCase() == 'trialing'
+                                    ? "Aucune facture pour le moment. La première apparaîtra après le premier prélèvement Stripe, à la fin de l’essai."
+                                    : "Aucune facture disponible pour le moment.",
                                 style: TextStyle(fontWeight: FontWeight.w700),
                               ),
                             ),
@@ -738,12 +834,12 @@ class _FacturePageState extends State<FacturePage> {
                                 "${(inv.cents / 100).toStringAsFixed(2)} ${inv.currency}",
                             statusLabel: _statusLabel(inv.status),
                             statusColor: _statusColor(inv.status),
-                            onDownload: () {},
-                            onSendMail: () {},
+                            onDownload: () => _openInvoice(inv),
+                            onSendMail: () => _emailInvoice(inv),
                             onRetryPayment:
                                 (inv.status == BillingStatus.due ||
                                     inv.status == BillingStatus.failed)
-                                ? () {}
+                                ? _openStripePortal
                                 : null,
                           ),
                           const SizedBox(height: 10),
@@ -861,6 +957,228 @@ class _FacturePageState extends State<FacturePage> {
 /// Components (Premium & safe)
 /// ===============================
 
+class _SubscriptionOverview extends StatelessWidget {
+  final SubscriptionInfo subscription;
+  final List<Invoice> invoices;
+  final VoidCallback onManage;
+
+  const _SubscriptionOverview({
+    required this.subscription,
+    required this.invoices,
+    required this.onManage,
+  });
+
+  String _date(DateTime? value) {
+    if (value == null) return 'Non renseignée';
+    return '${value.day.toString().padLeft(2, '0')}/${value.month.toString().padLeft(2, '0')}/${value.year}';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final t = Theme.of(context);
+    final active = const [
+      'active',
+      'trialing',
+    ].contains(subscription.status.toLowerCase());
+    final paid = invoices
+        .where((invoice) => invoice.status == BillingStatus.paid)
+        .toList();
+    final total = paid.fold<int>(0, (sum, invoice) => sum + invoice.cents);
+    final isTrial = subscription.status.toLowerCase() == 'trialing';
+    final end = isTrial
+        ? subscription.trialEndsAt ?? subscription.periodEnd
+        : subscription.periodEnd;
+    final remaining = end?.difference(DateTime.now()).inDays;
+
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF0D2B3E),
+        borderRadius: BorderRadius.circular(26),
+        border: Border.all(
+          color: const Color(0xFF2E6F95).withValues(alpha: .55),
+        ),
+      ),
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                width: 44,
+                height: 44,
+                decoration: BoxDecoration(
+                  color: Colors.white.withValues(alpha: .10),
+                  borderRadius: BorderRadius.circular(14),
+                ),
+                child: const Icon(
+                  Icons.workspace_premium_rounded,
+                  color: Color(0xFFF6C85F),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'MON ABONNEMENT',
+                      style: t.textTheme.labelSmall?.copyWith(
+                        color: Colors.white60,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 1.1,
+                      ),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      subscription.plan,
+                      style: t.textTheme.titleLarge?.copyWith(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 6,
+                ),
+                decoration: BoxDecoration(
+                  color: (active ? const Color(0xFF31C48D) : Colors.white)
+                      .withValues(alpha: .14),
+                  borderRadius: BorderRadius.circular(999),
+                ),
+                child: Text(
+                  isTrial
+                      ? 'ESSAI'
+                      : active
+                      ? 'ACTIF'
+                      : 'INACTIF',
+                  style: TextStyle(
+                    color: active ? const Color(0xFF75E6B8) : Colors.white70,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 18),
+          Text(
+            end == null
+                ? 'Aucune échéance disponible'
+                : isTrial
+                ? 'Essai gratuit encore $remaining jour${remaining == 1 ? '' : 's'}'
+                : subscription.cancelAtPeriodEnd
+                ? 'Accès maintenu jusqu’à la fin de la période payée'
+                : remaining != null && remaining >= 0
+                ? 'Accès maintenu encore $remaining jour${remaining > 1 ? 's' : ''}'
+                : 'Période terminée',
+            style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w800,
+            ),
+          ),
+          const SizedBox(height: 5),
+          Text(
+            isTrial
+                ? 'Premier prélèvement annuel prévu le ${_date(end)}'
+                : subscription.cancelAtPeriodEnd
+                ? 'Fin d’accès : ${_date(end)}'
+                : 'Prochaine échéance : ${_date(end)}',
+            style: const TextStyle(color: Colors.white70),
+          ),
+          const SizedBox(height: 18),
+          Row(
+            children: [
+              Expanded(
+                child: _BillingMetric(
+                  label: 'FACTURES',
+                  value: '${paid.length}',
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: _BillingMetric(
+                  label: 'TOTAL PAYÉ',
+                  value:
+                      '${(total / 100).toStringAsFixed(2).replaceAll('.', ',')} €',
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            height: 48,
+            child: FilledButton.icon(
+              onPressed: onManage,
+              style: FilledButton.styleFrom(
+                backgroundColor: const Color(0xFFF6C85F),
+                foregroundColor: const Color(0xFF17202A),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
+                ),
+              ),
+              icon: const Icon(Icons.open_in_new_rounded, size: 18),
+              label: const Text(
+                'Gérer avec Stripe',
+                style: TextStyle(fontWeight: FontWeight.w900),
+              ),
+            ),
+          ),
+          const SizedBox(height: 9),
+          const Center(
+            child: Text(
+              'Paiement sécurisé par carte bancaire via Stripe',
+              style: TextStyle(color: Colors.white54, fontSize: 11),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BillingMetric extends StatelessWidget {
+  final String label;
+  final String value;
+  const _BillingMetric({required this.label, required this.value});
+  @override
+  Widget build(BuildContext context) => Container(
+    padding: const EdgeInsets.all(12),
+    decoration: BoxDecoration(
+      color: Colors.white.withValues(alpha: .08),
+      borderRadius: BorderRadius.circular(14),
+    ),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          label,
+          style: const TextStyle(
+            color: Colors.white54,
+            fontSize: 10,
+            fontWeight: FontWeight.w800,
+            letterSpacing: .7,
+          ),
+        ),
+        const SizedBox(height: 5),
+        Text(
+          value,
+          style: const TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.w900,
+            fontSize: 16,
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
 class _BillingHeader extends StatelessWidget {
   final String title;
   final VoidCallback onBack;
@@ -922,13 +1240,181 @@ class _IconPillButton extends StatelessWidget {
             BoxShadow(
               blurRadius: 18,
               offset: const Offset(0, 8),
-              color: Colors.black.withValues(alpha: 
-                theme.brightness == Brightness.dark ? .30 : .08,
+              color: Colors.black.withValues(
+                alpha: theme.brightness == Brightness.dark ? .30 : .08,
               ),
             ),
           ],
         ),
         child: Icon(icon, color: theme.colorScheme.onSurface),
+      ),
+    );
+  }
+}
+
+class _BillingProfileSheet extends StatefulWidget {
+  final BillingProfile profile;
+
+  const _BillingProfileSheet({required this.profile});
+
+  @override
+  State<_BillingProfileSheet> createState() => _BillingProfileSheetState();
+}
+
+class _BillingProfileSheetState extends State<_BillingProfileSheet> {
+  final _formKey = GlobalKey<FormState>();
+  late final TextEditingController _name;
+  late final TextEditingController _email;
+  late final TextEditingController _address;
+  late final TextEditingController _vat;
+
+  @override
+  void initState() {
+    super.initState();
+    _name = TextEditingController(text: widget.profile.billingName ?? '');
+    _email = TextEditingController(text: widget.profile.billingEmail ?? '');
+    _address = TextEditingController(text: widget.profile.billingAddress ?? '');
+    _vat = TextEditingController(text: widget.profile.vatNumber ?? '');
+  }
+
+  @override
+  void dispose() {
+    _name.dispose();
+    _email.dispose();
+    _address.dispose();
+    _vat.dispose();
+    super.dispose();
+  }
+
+  String? _optional(String value) {
+    final clean = value.trim();
+    return clean.isEmpty ? null : clean;
+  }
+
+  void _save() {
+    if (!_formKey.currentState!.validate()) return;
+    Navigator.of(context).pop(
+      BillingProfile(
+        billingName: _optional(_name.text),
+        billingEmail: _optional(_email.text),
+        billingAddress: _optional(_address.text),
+        vatNumber: _optional(_vat.text),
+        autoInvoicesByMail: widget.profile.autoInvoicesByMail,
+        notifyPaymentEvents: widget.profile.notifyPaymentEvents,
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final keyboard = MediaQuery.viewInsetsOf(context).bottom;
+
+    return Container(
+      decoration: BoxDecoration(
+        color: theme.colorScheme.surface,
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
+      ),
+      padding: EdgeInsets.fromLTRB(20, 14, 20, 20 + keyboard),
+      child: SingleChildScrollView(
+        child: Form(
+          key: _formKey,
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Container(
+                  width: 44,
+                  height: 5,
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.onSurface.withValues(alpha: .18),
+                    borderRadius: BorderRadius.circular(99),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 18),
+              Text(
+                'Coordonnées de facturation',
+                style: theme.textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              const SizedBox(height: 5),
+              Text(
+                'Ces informations apparaissent dans ton espace de facturation COP’IQ.',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurface.withValues(alpha: .65),
+                ),
+              ),
+              const SizedBox(height: 18),
+              TextFormField(
+                controller: _name,
+                textCapitalization: TextCapitalization.words,
+                decoration: const InputDecoration(
+                  labelText: 'Nom ou entreprise',
+                  prefixIcon: Icon(Icons.person_outline_rounded),
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _email,
+                keyboardType: TextInputType.emailAddress,
+                autocorrect: false,
+                validator: (value) {
+                  final email = value?.trim() ?? '';
+                  if (email.isEmpty) return null;
+                  if (!RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$').hasMatch(email)) {
+                    return 'Entre une adresse e-mail valide.';
+                  }
+                  return null;
+                },
+                decoration: const InputDecoration(
+                  labelText: 'E-mail de facturation',
+                  prefixIcon: Icon(Icons.mail_outline_rounded),
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _address,
+                minLines: 2,
+                maxLines: 3,
+                textCapitalization: TextCapitalization.sentences,
+                decoration: const InputDecoration(
+                  labelText: 'Adresse de facturation',
+                  prefixIcon: Icon(Icons.location_on_outlined),
+                  border: OutlineInputBorder(),
+                  alignLabelWithHint: true,
+                ),
+              ),
+              const SizedBox(height: 12),
+              TextFormField(
+                controller: _vat,
+                textCapitalization: TextCapitalization.characters,
+                decoration: const InputDecoration(
+                  labelText: 'N° de TVA (facultatif)',
+                  prefixIcon: Icon(Icons.business_outlined),
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              const SizedBox(height: 18),
+              SizedBox(
+                width: double.infinity,
+                height: 52,
+                child: FilledButton.icon(
+                  onPressed: _save,
+                  icon: const Icon(Icons.check_rounded),
+                  label: const Text(
+                    'Enregistrer mes coordonnées',
+                    style: TextStyle(fontWeight: FontWeight.w900),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -1022,8 +1508,8 @@ class _SectionCard extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.textTheme.bodySmall?.color?.withValues(alpha: 
-                            0.75,
+                          color: theme.textTheme.bodySmall?.color?.withValues(
+                            alpha: 0.75,
                           ),
                           fontWeight: FontWeight.w600,
                         ),
@@ -1141,8 +1627,8 @@ class _InfoCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: tone.withValues(alpha: 
-          theme.brightness == Brightness.dark ? .12 : .10,
+        color: tone.withValues(
+          alpha: theme.brightness == Brightness.dark ? .12 : .10,
         ),
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: tone.withValues(alpha: .35)),
@@ -1236,10 +1722,12 @@ class _StatusChip extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
           color: selected
-              ? color.withValues(alpha: 
-                  theme.brightness == Brightness.dark ? .22 : .14,
+              ? color.withValues(
+                  alpha: theme.brightness == Brightness.dark ? .22 : .14,
                 )
-              : theme.colorScheme.surfaceContainerHighest.withValues(alpha: .35),
+              : theme.colorScheme.surfaceContainerHighest.withValues(
+                  alpha: .35,
+                ),
           borderRadius: BorderRadius.circular(999),
           border: Border.all(
             color: selected
@@ -1294,8 +1782,8 @@ class _InvoiceTilePro extends StatelessWidget {
           BoxShadow(
             blurRadius: 18,
             offset: const Offset(0, 10),
-            color: Colors.black.withValues(alpha: 
-              theme.brightness == Brightness.dark ? .30 : .08,
+            color: Colors.black.withValues(
+              alpha: theme.brightness == Brightness.dark ? .30 : .08,
             ),
           ),
         ],
@@ -1307,8 +1795,8 @@ class _InvoiceTilePro extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
             decoration: BoxDecoration(
-              color: statusColor.withValues(alpha: 
-                theme.brightness == Brightness.dark ? .16 : .10,
+              color: statusColor.withValues(
+                alpha: theme.brightness == Brightness.dark ? .16 : .10,
               ),
               borderRadius: BorderRadius.circular(999),
               border: Border.all(color: statusColor.withValues(alpha: .55)),
@@ -1422,11 +1910,13 @@ class _InvoiceTilePro extends StatelessWidget {
               width: 42,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 
-                  .35,
+                color: theme.colorScheme.surfaceContainerHighest.withValues(
+                  alpha: .35,
                 ),
                 borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: theme.dividerColor.withValues(alpha: .18)),
+                border: Border.all(
+                  color: theme.dividerColor.withValues(alpha: .18),
+                ),
               ),
               child: Icon(
                 Icons.more_horiz_rounded,
@@ -1491,14 +1981,20 @@ class _LabeledField extends StatelessWidget {
           maxLines: maxLines,
           decoration: InputDecoration(
             filled: true,
-            fillColor: t.colorScheme.surfaceContainerHighest.withValues(alpha: .55),
+            fillColor: t.colorScheme.surfaceContainerHighest.withValues(
+              alpha: .55,
+            ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: BorderSide(color: t.dividerColor.withValues(alpha: .25)),
+              borderSide: BorderSide(
+                color: t.dividerColor.withValues(alpha: .25),
+              ),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: BorderSide(color: t.dividerColor.withValues(alpha: .25)),
+              borderSide: BorderSide(
+                color: t.dividerColor.withValues(alpha: .25),
+              ),
             ),
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 12,

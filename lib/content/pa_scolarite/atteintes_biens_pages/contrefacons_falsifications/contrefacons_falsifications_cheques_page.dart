@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
   const PaContrefaconsFalsificationsChequesPage({super.key});
@@ -59,10 +60,18 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrefaçons & falsifications",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+            "f00002",
+            "Contrefaçons & falsifications",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Contrefaçons et falsifications de chèques ou autres instruments de paiement",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+              "f00003",
+              "Contrefaçons et falsifications de chèques ou autres instruments de paiement",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,24 +102,43 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Constitue une infraction le fait de :"),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00005",
+                  "Constitue une infraction le fait de :",
+                ),
+              ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Contrefaire ou falsifier un chèque ou un autre instrument mentionné à l’article L. 133-4 du code monétaire et financier.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00006",
+                  "Contrefaire ou falsifier un chèque ou un autre instrument mentionné à l’article L. 133-4 du code monétaire et financier.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Faire ou tenter de faire usage, en connaissance de cause, d’un chèque ou d’un autre instrument mentionné à l’article L. 133-4 contrefait ou falsifié.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00007",
+                  "Faire ou tenter de faire usage, en connaissance de cause, d’un chèque ou d’un autre instrument mentionné à l’article L. 133-4 contrefait ou falsifié.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Accepter, en connaissance de cause, de recevoir un chèque ou un autre instrument mentionné à l’article L. 133-4 contrefait ou falsifié.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00008",
+                  "Accepter, en connaissance de cause, de recevoir un chèque ou un autre instrument mentionné à l’article L. 133-4 contrefait ou falsifié.",
+                ),
               ),
             ],
           ),
@@ -115,23 +147,36 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 163-3 du Code monétaire et financier",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00010",
+                    "Article L. 163-3 du Code monétaire et financier",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : incrimine les actes délictueux concernant les chèques et les autres instruments de paiement "
-                      "mentionnés à l’article L. 133-4 (dont les cartes de paiement ou de retrait).",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                        "f00011",
+                        " : incrimine les actes délictueux concernant les chèques et les autres instruments de paiement ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                        "f00012",
+                        "mentionnés à l’article L. 133-4 (dont les cartes de paiement ou de retrait).",
+                      ),
                 ),
               ]),
             ],
@@ -141,63 +186,149 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+              "f00013",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le texte fait apparaître trois comportements répréhensibles distincts, "
-                "relatifs à l’usage de moyens de paiement expressément énumérés (chèques et instruments visés par l’article L. 133-4 du C.M.F.).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00014",
+                      "Le texte fait apparaître trois comportements répréhensibles distincts, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00015",
+                      "relatifs à l’usage de moyens de paiement expressément énumérés (chèques et instruments visés par l’article L. 133-4 du C.M.F.).",
+                    ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("A) Un moyen de paiement visé par la loi"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00016",
+                  "A) Un moyen de paiement visé par la loi",
+                ),
+              ),
               _NotaBox(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00017",
+                  "Définition",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un instrument de paiement s’entend de tout dispositif personnalisé et/ou de l’ensemble de procédures convenu "
-                        "entre l’utilisateur et le prestataire de services de paiement, utilisé pour donner un ordre de paiement "
-                        "(virements, prélèvements, cartes de paiement et de retrait).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                          "f00018",
+                          "Un instrument de paiement s’entend de tout dispositif personnalisé et/ou de l’ensemble de procédures convenu ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                          "f00019",
+                          "entre l’utilisateur et le prestataire de services de paiement, utilisé pour donner un ordre de paiement ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                          "f00020",
+                          "(virements, prélèvements, cartes de paiement et de retrait).",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un comportement répréhensible"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00021",
+                  "B) Un comportement répréhensible",
+                ),
+              ),
               _Paragraph(
-                "L’article L. 163-3 du C.M.F. vise trois comportements distincts :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00022",
+                  "L’article L. 163-3 du C.M.F. vise trois comportements distincts :",
+                ),
               ),
               SizedBox(height: 8),
 
-              _SubTitle("1) La contrefaçon ou la falsification"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00023",
+                  "1) La contrefaçon ou la falsification",
+                ),
+              ),
               _Paragraph(
-                "• La contrefaçon consiste soit en l’imitation de modèles existants et véritables, soit en la création de modèles totalement imaginaires. "
-                "Le document contrefaisant doit correspondre à la définition légale du document d’origine.\n\n"
-                "• La falsification consiste en l’altération d’un document réel et véritable : ajouts, surcharges, grattages, ratures, suppressions, intercalations…",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00024",
+                      "• La contrefaçon consiste soit en l’imitation de modèles existants et véritables, soit en la création de modèles totalement imaginaires. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00025",
+                      "Le document contrefaisant doit correspondre à la définition légale du document d’origine.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00026",
+                      "• La falsification consiste en l’altération d’un document réel et véritable : ajouts, surcharges, grattages, ratures, suppressions, intercalations…",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "2) L’usage d’un moyen de paiement contrefait ou falsifié",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00027",
+                  "2) L’usage d’un moyen de paiement contrefait ou falsifié",
+                ),
               ),
               _Paragraph(
-                "Il s’agit d’actes distincts de la contrefaçon/falsification. L’auteur de l’usage peut être la même personne ou une personne différente. "
-                "L’usager est punissable même si l’auteur de la falsification reste inconnu ou impuni, à condition qu’il sache que le chèque/la carte est contrefait(e) ou falsifié(e).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00028",
+                      "Il s’agit d’actes distincts de la contrefaçon/falsification. L’auteur de l’usage peut être la même personne ou une personne différente. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00029",
+                      "L’usager est punissable même si l’auteur de la falsification reste inconnu ou impuni, à condition qu’il sache que le chèque/la carte est contrefait(e) ou falsifié(e).",
+                    ),
               ),
 
               SizedBox(height: 14),
 
               _SubTitle(
-                "3) L’acceptation d’un moyen de paiement contrefait ou falsifié",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00030",
+                  "3) L’acceptation d’un moyen de paiement contrefait ou falsifié",
+                ),
               ),
               _Paragraph(
-                "Dans ce cas, l’auteur accepte « en connaissance de cause » que le chèque ou la carte de paiement/retrait "
-                "soit utilisé(e) dans son établissement.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00031",
+                      "Dans ce cas, l’auteur accepte « en connaissance de cause » que le chèque ou la carte de paiement/retrait ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00032",
+                      "soit utilisé(e) dans son établissement.",
+                    ),
               ),
             ],
           ),
@@ -206,16 +337,36 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+              "f00033",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il s’agit d’infractions intentionnelles : l’agent doit agir sciemment et volontairement, en mauvaise foi. "
-                "La mauvaise foi se déduit souvent des moyens employés et du but poursuivi.\n\n"
-                "L’intention simple suffit : l’auteur est punissable dès lors qu’il a agi sciemment et volontairement, "
-                "sachant que son intervention permet de contrefaire, falsifier, user ou accepter un moyen de paiement contrefait.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00034",
+                      "Il s’agit d’infractions intentionnelles : l’agent doit agir sciemment et volontairement, en mauvaise foi. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00035",
+                      "La mauvaise foi se déduit souvent des moyens employés et du but poursuivi.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00036",
+                      "L’intention simple suffit : l’auteur est punissable dès lors qu’il a agi sciemment et volontairement, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00037",
+                      "sachant que son intervention permet de contrefaire, falsifier, user ou accepter un moyen de paiement contrefait.",
+                    ),
               ),
             ],
           ),
@@ -224,21 +375,30 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+              "f00038",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article L. 163-4-2 du Code monétaire et financier",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00039",
+                    "Article L. 163-4-2 du Code monétaire et financier",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " : lorsque les faits sont commis en bande organisée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00040",
+                    " : lorsque les faits sont commis en bande organisée.",
+                  ),
                 ),
               ]),
             ],
@@ -248,130 +408,253 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+              "f00041",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00042",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "5 ans d’emprisonnement et 375 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00043",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 163-3 du C.M.F.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00044",
+                    "5 ans d’emprisonnement et 375 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00045",
+                    "article L. 163-3 du C.M.F.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (bande organisée) : "),
                 TextSpan(
-                  text: "10 ans d’emprisonnement et 1 000 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00046",
+                    "Aggravée (bande organisée) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L. 163-4-2 du C.M.F.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00047",
+                    "10 ans d’emprisonnement et 1 000 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00048",
+                    "article L. 163-4-2 du C.M.F.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00049",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article L. 163-10-1 du C.M.F.",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: ", dans les conditions de "),
-                TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00050",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (infractions définies notamment aux articles L. 163-2 à L. 163-4, L. 163-7 et L. 163-10).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00051",
+                    "l’article L. 163-10-1 du C.M.F.",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00052",
+                    ", dans les conditions de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00053",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00054",
+                    " (infractions définies notamment aux articles L. 163-2 à L. 163-4, L. 163-7 et L. 163-10).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00055",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text: "Tentative : OUI (selon le comportement visé).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                  "f00056",
+                  "Tentative : OUI (selon le comportement visé).",
+                ),
               ),
               SizedBox(height: 6),
               _NotaBox(
                 title: "Tentative",
                 bodySpans: [
-                  TextSpan(text: "• Délits prévus au 1° de "),
                   TextSpan(
-                    text: "l’article L. 163-3",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00057",
+                      "• Délits prévus au 1° de ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00058",
+                      "l’article L. 163-3",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " : tentative prévue et réprimée par "),
                   TextSpan(
-                    text: "l’article L. 163-4-1 du C.M.F.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00059",
+                      " : tentative prévue et réprimée par ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00060",
+                      "l’article L. 163-4-1 du C.M.F.",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(text: ".\n"),
-                  TextSpan(text: "• Délits figurant au 2° de "),
                   TextSpan(
-                    text: "l’article L. 163-3",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00061",
+                      "• Délits figurant au 2° de ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00062",
+                      "l’article L. 163-3",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text: " : la tentative est directement prévue.\n",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00063",
+                      " : la tentative est directement prévue.\n",
+                    ),
                   ),
-                  TextSpan(text: "• Délits définis au 3° de "),
                   TextSpan(
-                    text: "l’article L. 163-3",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00064",
+                      "• Délits définis au 3° de ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00065",
+                      "l’article L. 163-3",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  TextSpan(text: " : tentative non expressément prévue."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00066",
+                      " : tentative non expressément prévue.",
+                    ),
+                  ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Complicité : OUI — règles générales, notamment ",
-                ),
-                TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00067",
+                    "Complicité : OUI — règles générales, notamment ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (aide/assistance, provocation, instructions), punissable pour l’infraction consommée comme pour l’infraction tentée.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00068",
+                    "l’article 121-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                    "f00069",
+                    " (aide/assistance, provocation, instructions), punissable pour l’infraction consommée comme pour l’infraction tentée.",
+                  ),
                 ),
               ]),
 
@@ -381,7 +664,11 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
-                    text: "L’article L. 163-4 du Code monétaire et financier",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                      "f00070",
+                      "L’article L. 163-4 du Code monétaire et financier",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -389,9 +676,21 @@ class PaContrefaconsFalsificationsChequesPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text:
-                        " prévoit et réprime la fabrication, l’acquisition, la détention, la cession, l’offre ou la mise à disposition "
-                        "d’équipements, instruments, programmes informatiques ou données conçus/spécialement adaptés dans l’objectif de "
-                        "contrefaire ou falsifier un chèque ou un instrument mentionné à l’article L. 133-4 du C.M.F.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                          "f00071",
+                          " prévoit et réprime la fabrication, l’acquisition, la détention, la cession, l’offre ou la mise à disposition ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                          "f00072",
+                          "d’équipements, instruments, programmes informatiques ou données conçus/spécialement adaptés dans l’objectif de ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart",
+                          "f00073",
+                          "contrefaire ou falsifier un chèque ou un instrument mentionné à l’article L. 133-4 du C.M.F.",
+                        ),
                   ),
                 ],
               ),

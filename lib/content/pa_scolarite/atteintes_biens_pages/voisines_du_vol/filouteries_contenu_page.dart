@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaFilouteriesPage extends StatelessWidget {
   const PaFilouteriesPage({super.key});
@@ -56,10 +57,18 @@ class PaFilouteriesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Infractions voisines du vol",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+            "f00002",
+            "Infractions voisines du vol",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PaFilouteriesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les filouteries",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+              "f00003",
+              "Les filouteries",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -86,20 +99,39 @@ class PaFilouteriesPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La filouterie est le fait, pour une personne qui sait être dans l’impossibilité absolue de payer "
-                "ou qui est déterminée à ne pas payer, d’obtenir certains biens ou services auprès de professionnels "
-                "(restauration, hôtellerie, carburant servi, transport en taxi/voiture de place).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00005",
+                      "La filouterie est le fait, pour une personne qui sait être dans l’impossibilité absolue de payer ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00006",
+                      "ou qui est déterminée à ne pas payer, d’obtenir certains biens ou services auprès de professionnels ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00007",
+                      "(restauration, hôtellerie, carburant servi, transport en taxi/voiture de place).",
+                    ),
               ),
               SizedBox(height: 10),
               _IntroBullet(
-                text:
-                    "4 hypothèses limitatives : restaurant/café, hôtel (≤ 10 jours), carburant/lubrifiants servis, taxi/voiture de place.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00008",
+                  "4 hypothèses limitatives : restaurant/café, hôtel (≤ 10 jours), carburant/lubrifiants servis, taxi/voiture de place.",
+                ),
               ),
             ],
           ),
@@ -108,22 +140,30 @@ class PaFilouteriesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 313-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00010",
+                    "Article 313-5 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime les filouteries (4 cas limitatifs).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00011",
+                    " : définit et réprime les filouteries (4 cas limitatifs).",
+                  ),
                 ),
               ]),
             ],
@@ -133,41 +173,77 @@ class PaFilouteriesPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La filouterie consiste à obtenir, auprès de professionnels, certains biens ou services "
-                "en se sachant dans l’impossibilité absolue de payer ou en étant déterminé à ne pas payer.\n"
-                "Elle protège des professions où les usages ne permettent pas de vérifier la solvabilité "
-                "ou d’exiger un paiement d’avance.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00013",
+                      "La filouterie consiste à obtenir, auprès de professionnels, certains biens ou services ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00014",
+                      "en se sachant dans l’impossibilité absolue de payer ou en étant déterminé à ne pas payer.\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00015",
+                      "Elle protège des professions où les usages ne permettent pas de vérifier la solvabilité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00016",
+                      "ou d’exiger un paiement d’avance.",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "A) Une condition préalable : impécuniosité absolue ou refus de payer",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00017",
+                  "A) Une condition préalable : impécuniosité absolue ou refus de payer",
+                ),
               ),
               SizedBox(height: 6),
               _BulletPoint(
-                text:
-                    "Impossibilité absolue de payer : aucune ressource, aucun patrimoine, aucun moyen de paiement au moment des faits.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00018",
+                  "Impossibilité absolue de payer : aucune ressource, aucun patrimoine, aucun moyen de paiement au moment des faits.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Détermination à ne pas payer : l’auteur est solvable, mais décide de ne pas régler (souvent révélée par la fuite au moment de payer).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00019",
+                  "Détermination à ne pas payer : l’auteur est solvable, mais décide de ne pas régler (souvent révélée par la fuite au moment de payer).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La notion d’« impossibilité absolue » est très exigeante : si le professionnel consent un crédit ou des délais de paiement, la répression est en principe exclue. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00020",
+                      "La notion d’« impossibilité absolue » est très exigeante : si le professionnel consent un crédit ou des délais de paiement, la répression est en principe exclue. ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "(ex. C.A. Paris, 22 février 1883 ; C.A. Paris, 9 avril 1986)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00021",
+                      "(ex. C.A. Paris, 22 février 1883 ; C.A. Paris, 9 avril 1986)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -179,73 +255,132 @@ class PaFilouteriesPage extends StatelessWidget {
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Une remise volontaire dans 4 cas limitatifs"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00022",
+                  "B) Une remise volontaire dans 4 cas limitatifs",
+                ),
+              ),
               _Paragraph(
-                "La filouterie se distingue du vol (remise volontaire par la victime) et de l’escroquerie "
-                "(pas de manœuvres frauduleuses déterminantes : la remise résulte du fonctionnement normal de la profession).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00023",
+                      "La filouterie se distingue du vol (remise volontaire par la victime) et de l’escroquerie ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00024",
+                      "(pas de manœuvres frauduleuses déterminantes : la remise résulte du fonctionnement normal de la profession).",
+                    ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "1) Boissons ou aliments (établissement vendant boissons/aliments)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00025",
+                  "1) Boissons ou aliments (établissement vendant boissons/aliments)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "L’auteur doit prendre l’initiative (passer commande, « se faire servir »).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00026",
+                  "L’auteur doit prendre l’initiative (passer commande, « se faire servir »).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Uniquement boissons et aliments (exclut les autres marchandises).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00027",
+                  "Uniquement boissons et aliments (exclut les autres marchandises).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Établissement accessible au public dont l’activité principale est la vente de boissons/aliments (café, restaurant, brasserie, buvette…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00028",
+                  "Établissement accessible au public dont l’activité principale est la vente de boissons/aliments (café, restaurant, brasserie, buvette…).",
+                ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "2) Chambres d’hôtel (occupation effective ≤ 10 jours)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00029",
+                  "2) Chambres d’hôtel (occupation effective ≤ 10 jours)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Doit s’agir d’un établissement louant des chambres (hôtel, auberge…).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00030",
+                  "Doit s’agir d’un établissement louant des chambres (hôtel, auberge…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La simple réservation ne suffit pas : il faut attribution + occupation effective (la chambre n’est plus attribuable à un autre client).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00031",
+                  "La simple réservation ne suffit pas : il faut attribution + occupation effective (la chambre n’est plus attribuable à un autre client).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Occupation n’ayant pas excédé 10 jours ; prestations annexes (téléphone, consommations…) non visées.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00032",
+                  "Occupation n’ayant pas excédé 10 jours ; prestations annexes (téléphone, consommations…) non visées.",
+                ),
               ),
               SizedBox(height: 12),
 
               _SubTitle(
-                "3) Carburants ou lubrifiants (servis par un professionnel)",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00033",
+                  "3) Carburants ou lubrifiants (servis par un professionnel)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La victime doit être un professionnel (exploitant de station-service).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00034",
+                  "La victime doit être un professionnel (exploitant de station-service).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Condition clé : l’auteur doit « se faire servir » (si libre-service et remplissage par l’auteur, on bascule vers le vol).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00035",
+                  "Condition clé : l’auteur doit « se faire servir » (si libre-service et remplissage par l’auteur, on bascule vers le vol).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Produit versé dans le réservoir du véhicule (pas dans des jerrycans).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00036",
+                  "Produit versé dans le réservoir du véhicule (pas dans des jerrycans).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Libre-service : pas de filouterie (remplissage par l’auteur), mais plutôt vol selon les cas. ",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00037",
+                      "Libre-service : pas de filouterie (remplissage par l’auteur), mais plutôt vol selon les cas. ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "(C.A. Rennes, 8 décembre 1980 ; C.A. Montpellier, 25 septembre 2008 ; Cass. crim., avis, 4 mai 2010)",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00038",
+                      "(C.A. Rennes, 8 décembre 1980 ; C.A. Montpellier, 25 septembre 2008 ; Cass. crim., avis, 4 mai 2010)",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -257,17 +392,33 @@ class PaFilouteriesPage extends StatelessWidget {
 
               SizedBox(height: 12),
 
-              _SubTitle("4) Taxi ou voiture de place"),
-              _BulletPoint(
-                text: "Se faire transporter puis ne pas payer la course.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00039",
+                  "4) Taxi ou voiture de place",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sont visés : taxis et voitures de place (transport privé loué sur la voie publique, paiement à l’arrivée).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00040",
+                  "Se faire transporter puis ne pas payer la course.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sont exclus : transports en commun (train, métro, tram, bus…) où le paiement est en principe immédiat.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00041",
+                  "Sont visés : taxis et voitures de place (transport privé loué sur la voie publique, paiement à l’arrivée).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00042",
+                  "Sont exclus : transports en commun (train, métro, tram, bus…) où le paiement est en principe immédiat.",
+                ),
               ),
             ],
           ),
@@ -276,37 +427,59 @@ class PaFilouteriesPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+              "f00043",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 313-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00044",
+                    "Article 313-5 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : l’élément moral repose sur l’une des deux situations suivantes :",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00045",
+                    " : l’élément moral repose sur l’une des deux situations suivantes :",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Conscience de son impécuniosité : l’auteur sait que son impossibilité de payer est absolue.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00046",
+                  "Conscience de son impécuniosité : l’auteur sait que son impossibilité de payer est absolue.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Volonté de ne pas payer : l’auteur est solvable mais refuse de régler (souvent établi par la fuite ou un motif manifestement fallacieux).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00047",
+                  "Volonté de ne pas payer : l’auteur est solvable mais refuse de régler (souvent établi par la fuite ou un motif manifestement fallacieux).",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "N’est pas punissable : l’oubli du moyen de paiement, la perte du portefeuille au moment de payer, "
-                "ou la bonne foi liée à une mauvaise estimation de la somme due.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00048",
+                      "N’est pas punissable : l’oubli du moyen de paiement, la perte du portefeuille au moment de payer, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                      "f00049",
+                      "ou la bonne foi liée à une mauvaise estimation de la somme due.",
+                    ),
               ),
             ],
           ),
@@ -315,13 +488,21 @@ class PaFilouteriesPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+              "f00050",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Aucune circonstance aggravante prévue par le texte.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00051",
+                  "Aucune circonstance aggravante prévue par le texte.",
+                ),
               ),
             ],
           ),
@@ -330,80 +511,146 @@ class PaFilouteriesPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+              "f00052",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
-              _Paragraph.rich([
-                TextSpan(text: "Délit : "),
-                TextSpan(
-                  text: "6 mois d’emprisonnement et 7 500 € d’amende. — ",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00053",
+                  "Peines encourues — personnes physiques",
                 ),
-                TextSpan(
-                  text: "article 313-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                TextSpan(
-                  text:
-                      "Responsabilité pénale possible ; amende selon les modalités de ",
-                ),
-                TextSpan(
-                  text: "l’article 131-38 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " (quintuple du montant prévu pour les personnes physiques).",
-                ),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Amende forfaitaire délictuelle"),
-              _Paragraph.rich([
-                TextSpan(
-                  text: "Article 313-5 alinéas 7 et 8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(
-                  text:
-                      " : possibilité de recourir à la procédure d’amende forfaitaire délictuelle, prévue par ",
-                ),
-                TextSpan(
-                  text:
-                      "les articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
-                TextSpan(text: ", y compris en cas de récidive."),
-              ]),
-
-              SizedBox(height: 12),
-
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(
-                text: "Tentative : NON (non prévue, donc non punissable).",
               ),
-              _BulletPoint(text: "Complicité : OUI."),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00054",
+                    "Délit : ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00055",
+                    "6 mois d’emprisonnement et 7 500 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00056",
+                    "article 313-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00057",
+                  "Personnes morales",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00058",
+                    "Responsabilité pénale possible ; amende selon les modalités de ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00059",
+                    "l’article 131-38 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00060",
+                    " (quintuple du montant prévu pour les personnes physiques).",
+                  ),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00061",
+                  "Amende forfaitaire délictuelle",
+                ),
+              ),
+              _Paragraph.rich([
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00062",
+                    "Article 313-5 alinéas 7 et 8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00063",
+                    " : possibilité de recourir à la procédure d’amende forfaitaire délictuelle, prévue par ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00064",
+                    "les articles 495-17 à 495-25 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                    "f00065",
+                    ", y compris en cas de récidive.",
+                  ),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00066",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00067",
+                  "Tentative : NON (non prévue, donc non punissable).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart",
+                  "f00068",
+                  "Complicité : OUI.",
+                ),
+              ),
             ],
           ),
         ],
@@ -659,9 +906,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

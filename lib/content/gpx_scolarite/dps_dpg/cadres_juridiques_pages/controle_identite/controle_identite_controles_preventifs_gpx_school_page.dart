@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
   const ConntroleIdentitePreventionGpxSchool({super.key});
@@ -38,10 +39,18 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Contrôles préventifs',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+            "f00002",
+            'Contrôles préventifs',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -55,7 +64,11 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'Les contrôles préventifs d’identité',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+              "f00003",
+              'Les contrôles préventifs d’identité',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -64,8 +77,16 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Contrôles d’identité sans lien direct avec une infraction, fondés sur la prévention '
-            'des atteintes à l’ordre public et encadrés par l’article 78-2 du code de procédure pénale.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                  "f00004",
+                  'Contrôles d’identité sans lien direct avec une infraction, fondés sur la prévention ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                  "f00005",
+                  'des atteintes à l’ordre public et encadrés par l’article 78-2 du code de procédure pénale.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -77,50 +98,128 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.2 – LES CONTROLES PREVENTIFS ==========
           _ConditionCard(
-            title: '1.2.2 – Les contrôles préventifs',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+              "f00006",
+              '1.2.2 – Les contrôles préventifs',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
-                      'Les contrôles préventifs peuvent être mis en œuvre sans qu’ils aient un lien '
-                      'direct avec la commission ou la préparation d’une infraction. Ces contrôles, '
-                      'dits « préventifs », sont prévus par le huitième alinéa de l’article ',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00007",
+                        'Les contrôles préventifs peuvent être mis en œuvre sans qu’ils aient un lien ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00008",
+                        'direct avec la commission ou la préparation d’une infraction. Ces contrôles, ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00009",
+                        'dits « préventifs », sont prévus par le huitième alinéa de l’article ',
+                      ),
                 ),
                 TextSpan(
-                  text: '78-2 du code de procédure pénale',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                    "f00010",
+                    '78-2 du code de procédure pénale',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: articleColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      '. Les officiers de police judiciaire et les agents de police judiciaire peuvent '
-                      'ainsi contrôler l’identité de toute personne, quel que soit son '
-                      'comportement, pour prévenir une atteinte à l’ordre public, notamment à la '
-                      'sécurité des personnes ou des biens.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00011",
+                        '. Les officiers de police judiciaire et les agents de police judiciaire peuvent ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00012",
+                        'ainsi contrôler l’identité de toute personne, quel que soit son ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00013",
+                        'comportement, pour prévenir une atteinte à l’ordre public, notamment à la ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00014",
+                        'sécurité des personnes ou des biens.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle('Le contrôle vise « toute personne »'),
-              const _Paragraph(
-                'Contrairement au contrôle de police judiciaire, le contrôle préventif n’est pas '
-                'individualisé. Il ne cible pas une personne déterminée en lien avec une infraction, '
-                'mais toute personne présente dans le périmètre où l’opération est mise en œuvre. '
-                'Le contrôle est donc généralisé à l’ensemble des personnes se trouvant sur les lieux.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                  "f00015",
+                  'Le contrôle vise « toute personne »',
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00016",
+                      'Contrairement au contrôle de police judiciaire, le contrôle préventif n’est pas ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00017",
+                      'individualisé. Il ne cible pas une personne déterminée en lien avec une infraction, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00018",
+                      'mais toute personne présente dans le périmètre où l’opération est mise en œuvre. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00019",
+                      'Le contrôle est donc généralisé à l’ensemble des personnes se trouvant sur les lieux.',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _SubTitle(
-                'Le contrôle n’est pas lié au « comportement » de la personne',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                  "f00020",
+                  'Le contrôle n’est pas lié au « comportement » de la personne',
+                ),
               ),
-              const _Paragraph(
-                'La loi précise expressément que le comportement de la personne contrôlée ne '
-                'constitue pas une condition de régularité du contrôle préventif. Autrement dit, le '
-                'simple fait de se trouver dans la zone et au moment du dispositif suffit pour être '
-                'invité à justifier de son identité, dès lors que les autres conditions légales sont réunies.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00021",
+                      'La loi précise expressément que le comportement de la personne contrôlée ne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00022",
+                      'constitue pas une condition de régularité du contrôle préventif. Autrement dit, le ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00023",
+                      'simple fait de se trouver dans la zone et au moment du dispositif suffit pour être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00024",
+                      'invité à justifier de son identité, dès lors que les autres conditions légales sont réunies.',
+                    ),
               ),
             ],
           ),
@@ -128,76 +227,242 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
 
           // ===================== 1.2.2.1 – CONDITIONS DE MISE EN OEUVRE ===
           _ConditionCard(
-            title: '1.2.2.1 – Les conditions de mise en œuvre',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+              "f00025",
+              '1.2.2.1 – Les conditions de mise en œuvre',
+            ),
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: const [
+            children: [
               _Paragraph(
-                'Le contrôle préventif est destiné à prévenir une atteinte à l’ordre public, en '
-                'particulier à la sécurité des personnes ou des biens. Il ne peut donc jamais être '
-                'organisé en l’absence de toute condition de fond : il doit reposer sur des éléments '
-                'objectifs permettant de présumer une menace réelle pour l’ordre public.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00026",
+                      'Le contrôle préventif est destiné à prévenir une atteinte à l’ordre public, en ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00027",
+                      'particulier à la sécurité des personnes ou des biens. Il ne peut donc jamais être ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00028",
+                      'organisé en l’absence de toute condition de fond : il doit reposer sur des éléments ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00029",
+                      'objectifs permettant de présumer une menace réelle pour l’ordre public.',
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle('1.2.2.1.1 – Les conditions de lieux'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                  "f00030",
+                  '1.2.2.1.1 – Les conditions de lieux',
+                ),
+              ),
               _Paragraph(
-                'Les contrôles préventifs ne peuvent être pratiqués que dans des lieux publics ou '
-                'ouverts au public (gares, débits de boissons, salles de spectacles, galeries '
-                'marchandes, etc.). La circulaire du ministère de l’Intérieur du 21 octobre 1993 '
-                'rappelle qu’un contrôle d’identité dans un lieu privé conférerait à cette opération '
-                'la nature juridique d’une perquisition. En conséquence, tout contrôle d’identité au '
-                'domicile d’une personne, même lorsque celle-ci fait appel aux fonctionnaires de '
-                'police, ne peut être effectué que dans le cadre des missions de police judiciaire.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00031",
+                      'Les contrôles préventifs ne peuvent être pratiqués que dans des lieux publics ou ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00032",
+                      'ouverts au public (gares, débits de boissons, salles de spectacles, galeries ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00033",
+                      'marchandes, etc.). La circulaire du ministère de l’Intérieur du 21 octobre 1993 ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00034",
+                      'rappelle qu’un contrôle d’identité dans un lieu privé conférerait à cette opération ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00035",
+                      'la nature juridique d’une perquisition. En conséquence, tout contrôle d’identité au ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00036",
+                      'domicile d’une personne, même lorsque celle-ci fait appel aux fonctionnaires de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00037",
+                      'police, ne peut être effectué que dans le cadre des missions de police judiciaire.',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'En revanche, les contrôles préventifs peuvent être organisés dans des lieux où des '
-                'actes de délinquance sont habituellement commis (vols à l’arraché, trafics divers, '
-                'délits liés à la prostitution, etc.), ou à proximité de points sensibles (installations '
-                'classées, sites stratégiques) ainsi que dans les lieux favorisant la commission de '
-                'vols ou d’agressions (couloirs de métro, rues désertes la nuit…).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00038",
+                      'En revanche, les contrôles préventifs peuvent être organisés dans des lieux où des ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00039",
+                      'actes de délinquance sont habituellement commis (vols à l’arraché, trafics divers, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00040",
+                      'délits liés à la prostitution, etc.), ou à proximité de points sensibles (installations ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00041",
+                      'classées, sites stratégiques) ainsi que dans les lieux favorisant la commission de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00042",
+                      'vols ou d’agressions (couloirs de métro, rues désertes la nuit…).',
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle('1.2.2.1.2 – Les conditions de temps'),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                  "f00043",
+                  '1.2.2.1.2 – Les conditions de temps',
+                ),
+              ),
               _Paragraph(
-                'L’exercice de contrôles préventifs peut également être justifié par la présence de '
-                'circonstances particulières laissant apparaître des risques spécifiques pour la '
-                'sécurité des personnes ou des biens : alertes à la bombe, grands rassemblements '
-                'de personnes (manifestations, événements sportifs ou musicaux importants, etc.).',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00044",
+                      'L’exercice de contrôles préventifs peut également être justifié par la présence de ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00045",
+                      'circonstances particulières laissant apparaître des risques spécifiques pour la ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00046",
+                      'sécurité des personnes ou des biens : alertes à la bombe, grands rassemblements ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00047",
+                      'de personnes (manifestations, événements sportifs ou musicaux importants, etc.).',
+                    ),
               ),
               SizedBox(height: 6),
               _Paragraph(
-                'Dans tous les cas, les policiers doivent pouvoir justifier des circonstances ayant '
-                'fait apparaître le risque d’atteinte à l’ordre public qui a motivé l’opération. Il ne '
-                'suffit pas d’affirmer de manière générale qu’un lieu serait simplement « propice » '
-                'à la commission d’infractions.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00048",
+                      'Dans tous les cas, les policiers doivent pouvoir justifier des circonstances ayant ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00049",
+                      'fait apparaître le risque d’atteinte à l’ordre public qui a motivé l’opération. Il ne ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00050",
+                      'suffit pas d’affirmer de manière générale qu’un lieu serait simplement « propice » ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00051",
+                      'à la commission d’infractions.',
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Le Conseil constitutionnel, dans sa décision n° 93-323 du 5 août 1993, a rappelé '
-                      'ces exigences en se référant à la sauvegarde de principes et de droits ayant '
-                      'valeur constitutionnelle. Il souligne que la pratique de contrôles généralisés '
-                      'et discrétionnaires est incompatible avec le respect de la liberté individuelle et '
-                      'que l’autorité judiciaire doit surveiller les conditions relatives à la légalité, à la '
-                      'réalité et à la pertinence des raisons ayant motivé ces opérations.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00052",
+                        'Le Conseil constitutionnel, dans sa décision n° 93-323 du 5 août 1993, a rappelé ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00053",
+                        'ces exigences en se référant à la sauvegarde de principes et de droits ayant ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00054",
+                        'valeur constitutionnelle. Il souligne que la pratique de contrôles généralisés ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00055",
+                        'et discrétionnaires est incompatible avec le respect de la liberté individuelle et ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00056",
+                        'que l’autorité judiciaire doit surveiller les conditions relatives à la légalité, à la ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                        "f00057",
+                        'réalité et à la pertinence des raisons ayant motivé ces opérations.',
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
-              _SubTitle('Jurisprudence et exigences pratiques'),
-              _BulletPoint(
-                text:
-                    'La motivation du contrôle : les agents doivent caractériser de façon suffisante '
-                    'en quoi la sécurité des personnes et des biens est menacée, en décrivant les '
-                    'éléments objectifs justifiant le recours au dispositif préventif.',
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                  "f00058",
+                  'Jurisprudence et exigences pratiques',
+                ),
               ),
               _BulletPoint(
                 text:
-                    'L’appréciation de la menace à l’ordre public : le pouvoir d’appréciation est '
-                    'laissé à l’agent qui procède au contrôle, mais il doit être exercé dans le cadre '
-                    'strict défini par la loi et sous le contrôle de l’autorité judiciaire.',
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00059",
+                      'La motivation du contrôle : les agents doivent caractériser de façon suffisante ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00060",
+                      'en quoi la sécurité des personnes et des biens est menacée, en décrivant les ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00061",
+                      'éléments objectifs justifiant le recours au dispositif préventif.',
+                    ),
+              ),
+              _BulletPoint(
+                text:
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00062",
+                      'L’appréciation de la menace à l’ordre public : le pouvoir d’appréciation est ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00063",
+                      'laissé à l’agent qui procède au contrôle, mais il doit être exercé dans le cadre ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart",
+                      "f00064",
+                      'strict défini par la loi et sous le contrôle de l’autorité judiciaire.',
+                    ),
               ),
             ],
           ),
@@ -453,9 +718,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

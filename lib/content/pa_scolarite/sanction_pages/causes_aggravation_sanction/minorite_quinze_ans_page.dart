@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaMinoriteQuinzeAnsPage extends StatelessWidget {
   const PaMinoriteQuinzeAnsPage({super.key});
@@ -44,7 +45,11 @@ class PaMinoriteQuinzeAnsPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'La minorité de quinze ans',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+            "f00001",
+            'La minorité de quinze ans',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,18 +75,24 @@ class PaMinoriteQuinzeAnsPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
-                    TextSpan(text: "« Sur un mineur de 15 ans »."),
+                  child: _Paragraph.rich([
+                    TextSpan(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                        "f00002",
+                        "« Sur un mineur de 15 ans ».",
+                      ),
+                    ),
                   ]),
                 ),
 
@@ -89,19 +100,39 @@ class PaMinoriteQuinzeAnsPage extends StatelessWidget {
 
                 // 1 : Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "C’est l’âge de 15 ans accompli qui a été choisi pour déterminer la limite en dessous de laquelle "
-                      "la circonstance aggravante est caractérisée (quel que soit l’âge en dessous de 15 ans).",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                            "f00004",
+                            "C’est l’âge de 15 ans accompli qui a été choisi pour déterminer la limite en dessous de laquelle ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                            "f00005",
+                            "la circonstance aggravante est caractérisée (quel que soit l’âge en dessous de 15 ans).",
+                          ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, "
-                      "coauteurs et complices de l’infraction.",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                            "f00006",
+                            "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                            "f00007",
+                            "coauteurs et complices de l’infraction.",
+                          ),
                     ),
                   ],
                 ),
@@ -110,39 +141,90 @@ class PaMinoriteQuinzeAnsPage extends StatelessWidget {
 
                 // 2 : Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                    "f00008",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _SubTitle("2.1 - La détermination de l’âge"),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                        "f00009",
+                        "2.1 - La détermination de l’âge",
+                      ),
+                    ),
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
-                            "C’est l’âge qu’avait la victime au moment des faits qui doit être pris en considération (Cass. crim., 21 mars 1957).\n\n"
-                            "Il se calcule d’heure à heure (Cass. crim., ",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                              "f00010",
+                              "C’est l’âge qu’avait la victime au moment des faits qui doit être pris en considération (Cass. crim., 21 mars 1957).\n\n",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                              "f00011",
+                              "Il se calcule d’heure à heure (Cass. crim., ",
+                            ),
                       ),
-                      law("n° 85-93.591 du 3 septembre 1985"),
-                      const TextSpan(
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00012",
+                          "n° 85-93.591 du 3 septembre 1985",
+                        ),
+                      ),
+                      TextSpan(
                         text:
-                            ").\n\n"
-                            "À défaut d’acte ayant valeur probante, la preuve de l’âge du mineur peut se faire par tout moyen (Cass. crim., ",
+                            ").\n\n" +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                              "f00013",
+                              "À défaut d’acte ayant valeur probante, la preuve de l’âge du mineur peut se faire par tout moyen (Cass. crim., ",
+                            ),
                       ),
-                      law("n° 91-82.771 du 17 juillet 1991"),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00014",
+                          "n° 91-82.771 du 17 juillet 1991",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 10),
-                    const _SubTitle("2.2 - L’indifférence de l’âge apparent"),
-                    const _Paragraph(
-                      "Contrairement à d’autres circonstances aggravantes, le législateur n’exige pas que la minorité de quinze ans "
-                      "soit apparente ou connue de l’auteur de l’infraction. Le mineur de quinze ans bénéficie donc d’une protection particulière.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                        "f00015",
+                        "2.2 - L’indifférence de l’âge apparent",
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                            "f00016",
+                            "Contrairement à d’autres circonstances aggravantes, le législateur n’exige pas que la minorité de quinze ans ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                            "f00017",
+                            "soit apparente ou connue de l’auteur de l’infraction. Le mineur de quinze ans bénéficie donc d’une protection particulière.",
+                          ),
                     ),
                     const SizedBox(height: 12),
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
-                          text:
-                              "La minorité de 15 ans n’a pas à être apparente ou connue : la protection est attachée à l’âge réel au moment des faits.",
+                          text: ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                            "f00018",
+                            "La minorité de 15 ans n’a pas à être apparente ou connue : la protection est attachée à l’âge réel au moment des faits.",
+                          ),
                         ),
                       ],
                     ),
@@ -153,126 +235,310 @@ class PaMinoriteQuinzeAnsPage extends StatelessWidget {
 
                 // 3 : Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                    "f00019",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _IntroBullet(
-                      text:
-                          "Cette circonstance aggravante peut notamment aggraver les infractions suivantes :",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                        "f00020",
+                        "Cette circonstance aggravante peut notamment aggraver les infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le meurtre ("),
-                      law("article 221-4 1° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• L’empoisonnement ("),
-                      law("article 221-5 al. 3 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Les tortures ou actes de barbarie (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00021",
+                          "• Le meurtre (",
+                        ),
                       ),
-                      law("article 222-3 1° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Les violences volontaires ("),
-                      law("articles 222-8, 222-10, 222-12 et 222-13, 1° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’administration de substances nuisibles (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00022",
+                          "article 221-4 1° C.P.",
+                        ),
                       ),
-                      law("article 222-15 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le viol ("),
-                      law("article 222-24 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Les agressions sexuelles ("),
-                      law("article 222-29-1 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• L’administration d’une substance afin de commettre un viol ou une agression sexuelle (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00023",
+                          "• L’empoisonnement (",
+                        ),
                       ),
-                      law("article 222-30-1 al. 2 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• L’exhibition sexuelle ("),
-                      law("article 222-32 al. 3 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le harcèlement sexuel ("),
-                      law("article 222-33 III, 2° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• La non-assistance à personne en péril (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00024",
+                          "article 221-5 al. 3 C.P.",
+                        ),
                       ),
-                      law("article 223-6 al. 3 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• La provocation au suicide ("),
-                      law("article 223-13 al. 2 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’enlèvement et la séquestration (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00025",
+                          "• Les tortures ou actes de barbarie (",
+                        ),
                       ),
-                      law("article 224-5 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "• Le proxénétisme ("),
-                      law("article 225-7-1 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• Le recours à la prostitution de mineur (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00026",
+                          "article 222-3 1° C.P.",
+                        ),
                       ),
-                      law("article 225-12-2 al. 6 C.P."),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00027",
+                          "• Les violences volontaires (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00028",
+                          "articles 222-8, 222-10, 222-12 et 222-13, 1° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00029",
+                          "• L’administration de substances nuisibles (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00030",
+                          "article 222-15 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00031",
+                          "• Le viol (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00032",
+                          "article 222-24 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00033",
+                          "• Les agressions sexuelles (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00034",
+                          "article 222-29-1 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00035",
+                          "• L’administration d’une substance afin de commettre un viol ou une agression sexuelle (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00036",
+                          "article 222-30-1 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00037",
+                          "• L’exhibition sexuelle (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00038",
+                          "article 222-32 al. 3 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00039",
+                          "• Le harcèlement sexuel (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00040",
+                          "article 222-33 III, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00041",
+                          "• La non-assistance à personne en péril (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00042",
+                          "article 223-6 al. 3 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00043",
+                          "• La provocation au suicide (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00044",
+                          "article 223-13 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00045",
+                          "• L’enlèvement et la séquestration (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00046",
+                          "article 224-5 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00047",
+                          "• Le proxénétisme (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00048",
+                          "article 225-7-1 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00049",
+                          "• Le recours à la prostitution de mineur (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00050",
+                          "article 225-12-2 al. 6 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
 
                     const SizedBox(height: 10),
 
                     _Paragraph.rich([
-                      const TextSpan(text: "• La mise en péril de mineurs ("),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00051",
+                          "• La mise en péril de mineurs (",
+                        ),
+                      ),
                       law(
-                        "articles 227-18 al. 2, 227-18-1 al. 2, 227-19 al. 3, 227-21 al. 2, 227-22 al. 3, 227-22-2 al. 2, 227-23-1 C.P.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart",
+                          "f00052",
+                          "articles 227-18 al. 2, 227-18-1 al. 2, 227-19 al. 3, 227-21 al. 2, 227-22 al. 3, 227-22-2 al. 2, 227-23-1 C.P.",
+                        ),
                       ),
                       const TextSpan(text: ")."),
                     ]),
@@ -539,9 +805,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

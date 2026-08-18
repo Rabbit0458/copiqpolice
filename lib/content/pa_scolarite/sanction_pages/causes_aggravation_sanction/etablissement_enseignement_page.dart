@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaEtablissementEnseignementPage extends StatelessWidget {
   const PaEtablissementEnseignementPage({super.key});
@@ -44,7 +45,11 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          'Dans un établissement\nd’enseignement / d’éducation\nou dans les locaux de l’administration',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+            "f00001",
+            'Dans un établissement\nd’enseignement / d’éducation\nou dans les locaux de l’administration',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,13 +75,13 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
@@ -84,7 +89,11 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "DANS UN ÉTABLISSEMENT D’ENSEIGNEMENT,\nD’ÉDUCATION OU DANS LES LOCAUX DE\nL’ADMINISTRATION",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00002",
+                          "DANS UN ÉTABLISSEMENT D’ENSEIGNEMENT,\nD’ÉDUCATION OU DANS LES LOCAUX DE\nL’ADMINISTRATION",
+                        ),
                         style: GoogleFonts.fustat(
                           fontSize: 14.5,
                           height: 1.15,
@@ -93,12 +102,24 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      const _Paragraph.rich([
+                      _Paragraph.rich([
                         TextSpan(
                           text:
-                              "« Dans des établissements d’enseignement ou d’éducation ou dans les locaux de l’administration, "
-                              "ainsi que, lors des entrées et sorties des élèves ou du public ou dans un temps très voisin de celles-ci, "
-                              "aux abords de ces établissements ou locaux. »",
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00003",
+                                "« Dans des établissements d’enseignement ou d’éducation ou dans les locaux de l’administration, ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00004",
+                                "ainsi que, lors des entrées et sorties des élèves ou du public ou dans un temps très voisin de celles-ci, ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00005",
+                                "aux abords de ces établissements ou locaux. »",
+                              ),
                         ),
                       ]),
                     ],
@@ -109,19 +130,39 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
 
                 // 1. Définition
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                    "f00006",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante vise à réprimer plus sévèrement certaines infractions "
-                      "commises en milieu scolaire notamment, mais aussi dans les locaux de l’administration.",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                            "f00007",
+                            "Cette circonstance aggravante vise à réprimer plus sévèrement certaines infractions ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                            "f00008",
+                            "commises en milieu scolaire notamment, mais aussi dans les locaux de l’administration.",
+                          ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, "
-                      "coauteurs et complices de l’infraction.",
+                      ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                            "f00009",
+                            "Il s’agit d’une circonstance aggravante réelle. Ses effets s’étendent à tous les auteurs, ",
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                            "f00010",
+                            "coauteurs et complices de l’infraction.",
+                          ),
                     ),
                   ],
                 ),
@@ -130,34 +171,98 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
 
                 // 2. Conditions
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                    "f00011",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
-                    _SubTitle('2.1 - La nature du lieu'),
+                  children: [
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                        "f00012",
+                        '2.1 - La nature du lieu',
+                      ),
+                    ),
                     _Paragraph.rich([
                       TextSpan(
                         text:
-                            "L’infraction principale doit avoir été commise « dans des établissements d’enseignement ou d’éducation "
-                            "ou dans les locaux de l’administration ».\n\n"
-                            "Cette formule vise les écoles, les collèges, les lycées, les centres éducatifs, les établissements universitaires, "
-                            "et les locaux administratifs dépendant de ces établissements d’enseignement.\n\n"
-                            "Un arrêt de la chambre criminelle de la Cour de cassation du 14 octobre 2020 est venu préciser que la notion de "
-                            "« locaux de l’administration » ne saurait être étendue à des locaux pouvant dépendre d’autres administrations.\n\n"
-                            "Les faits peuvent avoir été commis dans quelque partie que ce soit de l’établissement (bureau, salle, escalier, cour, …). "
-                            "Ils peuvent également être commis à l’extérieur, à condition que ce soit aux abords, c’est-à-dire à une distance pas trop importante "
-                            "de l’entrée de l’établissement.",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00013",
+                              "L’infraction principale doit avoir été commise « dans des établissements d’enseignement ou d’éducation ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00014",
+                              "ou dans les locaux de l’administration ».\n\n",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00015",
+                              "Cette formule vise les écoles, les collèges, les lycées, les centres éducatifs, les établissements universitaires, ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00016",
+                              "et les locaux administratifs dépendant de ces établissements d’enseignement.\n\n",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00017",
+                              "Un arrêt de la chambre criminelle de la Cour de cassation du 14 octobre 2020 est venu préciser que la notion de ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00018",
+                              "« locaux de l’administration » ne saurait être étendue à des locaux pouvant dépendre d’autres administrations.\n\n",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00019",
+                              "Les faits peuvent avoir été commis dans quelque partie que ce soit de l’établissement (bureau, salle, escalier, cour, …). ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00020",
+                              "Ils peuvent également être commis à l’extérieur, à condition que ce soit aux abords, c’est-à-dire à une distance pas trop importante ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00021",
+                              "de l’entrée de l’établissement.",
+                            ),
                       ),
                     ]),
                     SizedBox(height: 10),
-                    _SubTitle('2.2 - Le moment des faits'),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                        "f00022",
+                        '2.2 - Le moment des faits',
+                      ),
+                    ),
                     _Paragraph.rich([
                       TextSpan(
                         text:
-                            "Aucune précision n’est apportée quant au moment de commission des faits dans ces établissements.\n\n"
-                            "Concernant les abords, les faits devront avoir été commis au moment « des entrées et des sorties » "
-                            "ou « dans un temps très voisin de celles-ci ».",
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00023",
+                              "Aucune précision n’est apportée quant au moment de commission des faits dans ces établissements.\n\n",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00024",
+                              "Concernant les abords, les faits devront avoir été commis au moment « des entrées et des sorties » ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                              "f00025",
+                              "ou « dans un temps très voisin de celles-ci ».",
+                            ),
                       ),
                     ]),
                     SizedBox(height: 12),
@@ -165,8 +270,16 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
                       bodySpans: [
                         TextSpan(
                           text:
-                              "Pour les faits commis aux abords, l’exigence porte sur le moment : entrées/sorties des élèves ou du public, "
-                              "ou un temps très proche.",
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00026",
+                                "Pour les faits commis aux abords, l’exigence porte sur le moment : entrées/sorties des élèves ou du public, ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00027",
+                                "ou un temps très proche.",
+                              ),
                         ),
                       ],
                     ),
@@ -177,106 +290,225 @@ class PaEtablissementEnseignementPage extends StatelessWidget {
 
                 // 3. Champ d'application
                 _ConditionCard(
-                  title: '3 : CHAMP D’APPLICATION',
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                    "f00028",
+                    '3 : CHAMP D’APPLICATION',
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _IntroBullet(
-                      text:
-                          "Cette circonstance aggravante peut s’appliquer notamment aux infractions suivantes :",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                        "f00029",
+                        "Cette circonstance aggravante peut s’appliquer notamment aux infractions suivantes :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• La provocation d’un mineur à l’usage des stupéfiants (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00030",
+                          "• La provocation d’un mineur à l’usage des stupéfiants (",
+                        ),
                       ),
-                      law("article 227-18 al. 2 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• La provocation d’un mineur à la détention ou au commerce de stupéfiants (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00031",
+                          "article 227-18 al. 2 C.P.",
+                        ),
                       ),
-                      law("article 227-18-1 al. 2 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• La provocation d’un mineur à la consommation excessive de boissons alcooliques (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00032",
+                          "• La provocation d’un mineur à la détention ou au commerce de stupéfiants (",
+                        ),
                       ),
-                      law("article 227-19 al. 3 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• La provocation d’un mineur à commettre un crime ou un délit (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00033",
+                          "article 227-18-1 al. 2 C.P.",
+                        ),
                       ),
-                      law("article 227-21 al. 2 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• Les violences volontaires ("),
-                      law("articles 222-12 et 222-13, 11° C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "• L’administration de substances nuisibles (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00034",
+                          "• La provocation d’un mineur à la consommation excessive de boissons alcooliques (",
+                        ),
                       ),
-                      law("article 222-15 C.P."),
-                      const TextSpan(text: ")."),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• L’outrage à personne chargée d’une mission de service public (",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00035",
+                          "article 227-19 al. 3 C.P.",
+                        ),
                       ),
-                      law("article 433-5 al. 3 C.P."),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "• La cession ou l’offre illicites de stupéfiants à une personne en vue de sa consommation personnelle (",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00036",
+                          "• La provocation d’un mineur à commettre un crime ou un délit (",
+                        ),
                       ),
-                      law("article 222-39 al. 2 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00037",
+                          "article 227-21 al. 2 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• Le vol ("),
-                      law("article 311-4, 11° C.P."),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00038",
+                          "• Les violences volontaires (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00039",
+                          "articles 222-12 et 222-13, 11° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "• L’extorsion ("),
-                      law("article 312-2, 5° C.P."),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00040",
+                          "• L’administration de substances nuisibles (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00041",
+                          "article 222-15 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00042",
+                          "• L’outrage à personne chargée d’une mission de service public (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00043",
+                          "article 433-5 al. 3 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00044",
+                          "• La cession ou l’offre illicites de stupéfiants à une personne en vue de sa consommation personnelle (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00045",
+                          "article 222-39 al. 2 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00046",
+                          "• Le vol (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00047",
+                          "article 311-4, 11° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")."),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00048",
+                          "• L’extorsion (",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                          "f00049",
+                          "article 312-2, 5° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
 
                     const SizedBox(height: 12),
 
-                    const _NotaBox(
+                    _NotaBox(
                       bodySpans: [
                         TextSpan(
                           text:
-                              "Cette circonstance aggravante est une circonstance réelle : elle s’étend aux auteurs, coauteurs et complices. "
-                              "Elle vise les faits commis dans l’établissement (toutes zones), et peut aussi viser l’extérieur si c’est aux abords "
-                              "et au moment des entrées/sorties (ou un temps très voisin).",
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00050",
+                                "Cette circonstance aggravante est une circonstance réelle : elle s’étend aux auteurs, coauteurs et complices. ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00051",
+                                "Elle vise les faits commis dans l’établissement (toutes zones), et peut aussi viser l’extérieur si c’est aux abords ",
+                              ) +
+                              ScolariteText.value(
+                                "lib/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart",
+                                "f00052",
+                                "et au moment des entrées/sorties (ou un temps très voisin).",
+                              ),
                         ),
                       ],
                     ),
@@ -543,9 +775,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AutoriteInvestiesLoiPage extends StatelessWidget {
   const AutoriteInvestiesLoiPage({super.key});
@@ -25,10 +26,18 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Les autorités investies par la loi de fonctions de police judiciaire',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+            "f00002",
+            'Les autorités investies par la loi de fonctions de police judiciaire',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +51,11 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
         children: [
           // ====================== TITRE PRINCIPAL ===========================
           Text(
-            'Les autorités investies par la loi de fonctions de police judiciaire',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+              "f00003",
+              'Les autorités investies par la loi de fonctions de police judiciaire',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -53,49 +66,100 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           // ====================== INTRO / DÉFINITION ========================
-          const _Paragraph.rich([
+          _Paragraph.rich([
             TextSpan(
               text:
-                  'La police judiciaire est chargée de « constater les infractions à la loi pénale, '
-                  'à en rassembler les preuves et à en rechercher les auteurs, tant qu’une information '
-                  'n’est pas ouverte ». Cette définition est donnée par ',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                    "f00004",
+                    'La police judiciaire est chargée de « constater les infractions à la loi pénale, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                    "f00005",
+                    'à en rassembler les preuves et à en rechercher les auteurs, tant qu’une information ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                    "f00006",
+                    'n’est pas ouverte ». Cette définition est donnée par ',
+                  ),
             ),
             TextSpan(
-              text: 'l’Article 14 du Code de Procédure Pénale',
-              style: TextStyle(
-                color: Colors.red,
-                fontWeight: FontWeight.w700,
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                "f00007",
+                'l’Article 14 du Code de Procédure Pénale',
               ),
+              style: TextStyle(color: Colors.red, fontWeight: FontWeight.w700),
             ),
             TextSpan(
               text:
-                  '. La police judiciaire désigne également l’ensemble des fonctionnaires chargés, '
-                  'sous la direction du procureur de la République, d’accomplir les actes prévus par cet article.',
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                    "f00008",
+                    '. La police judiciaire désigne également l’ensemble des fonctionnaires chargés, ',
+                  ) +
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                    "f00009",
+                    'sous la direction du procureur de la République, d’accomplir les actes prévus par cet article.',
+                  ),
             ),
           ]),
 
           const SizedBox(height: 8),
 
-          const _Paragraph(
-            'On distingue deux grandes catégories d’autorités liées à la police judiciaire :\n'
-            '\n'
-            '• Une première catégorie composée des officiers et agents de police judiciaire, ainsi que des assistants d’enquête, '
-            'qui assument à titre principal des missions de police judiciaire (police nationale, gendarmerie nationale, '
-            'et, pour certaines attributions, des agents d’autres administrations ou des gardes particuliers).\n'
-            '\n'
-            '• Une seconde catégorie composée d’autorités auxquelles la loi confie, en plus de leur mission principale '
-            'à caractère administratif ou judiciaire, des fonctions de police judiciaire, notamment certains magistrats.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                  "f00010",
+                  'On distingue deux grandes catégories d’autorités liées à la police judiciaire :\n',
+                ) +
+                '\n' +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                  "f00011",
+                  '• Une première catégorie composée des officiers et agents de police judiciaire, ainsi que des assistants d’enquête, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                  "f00012",
+                  'qui assument à titre principal des missions de police judiciaire (police nationale, gendarmerie nationale, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                  "f00013",
+                  'et, pour certaines attributions, des agents d’autres administrations ou des gardes particuliers).\n',
+                ) +
+                '\n' +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                  "f00014",
+                  '• Une seconde catégorie composée d’autorités auxquelles la loi confie, en plus de leur mission principale ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+                  "f00015",
+                  'à caractère administratif ou judiciaire, des fonctions de police judiciaire, notamment certains magistrats.',
+                ),
           ),
 
           const SizedBox(height: 10),
 
-          const _IntroBullet(
-            text:
-                'Missions principales : constater les infractions, rassembler les preuves, rechercher les auteurs tant qu’aucune information n’est ouverte.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+              "f00016",
+              'Missions principales : constater les infractions, rassembler les preuves, rechercher les auteurs tant qu’aucune information n’est ouverte.',
+            ),
           ),
-          const _IntroBullet(
-            text:
-                'Une catégorie d’agents spécialisés (officiers, agents de police judiciaire, assistants d’enquête) et une catégorie d’autorités auxquelles la loi confère des attributions de police judiciaire à titre accessoire.',
+          _IntroBullet(
+            text: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+              "f00017",
+              'Une catégorie d’agents spécialisés (officiers, agents de police judiciaire, assistants d’enquête) et une catégorie d’autorités auxquelles la loi confère des attributions de police judiciaire à titre accessoire.',
+            ),
           ),
 
           const SizedBox(height: 18),
@@ -103,10 +167,16 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
           // ====== CHAPITRE 1 — AUTORITÉS HABITUELLES DE POLICE JUDICIAIRE ======
           _ModuleCard(
             tag: 'pp_autorites_investies_habituelles',
-            title:
-                'Chapitre 1 : Les autorités investies de fonctions habituelles de police judiciaire',
-            subtitle:
-                'Officiers et agents de police judiciaire, assistants d’enquête, et agents spécialement habilités exerçant à titre principal des missions de police judiciaire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+              "f00018",
+              'Chapitre 1 : Les autorités investies de fonctions habituelles de police judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+              "f00019",
+              'Officiers et agents de police judiciaire, assistants d’enquête, et agents spécialement habilités exerçant à titre principal des missions de police judiciaire.',
+            ),
             imagePath: 'assets/images/libertes_intro.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -120,10 +190,16 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
           // == CHAPITRE 2 — AUTORITÉS À MISSION OCCASIONNELLE DE POLICE JUDICIAIRE ==
           _ModuleCard(
             tag: 'pp_autorites_investies_occasionnelles',
-            title:
-                'Chapitre 2 : Les autorités investies d’une mission occasionnelle de police judiciaire',
-            subtitle:
-                'Autorités administratives ou judiciaires, notamment certains magistrats, auxquelles la loi confie ponctuellement des attributions de police judiciaire.',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+              "f00020",
+              'Chapitre 2 : Les autorités investies d’une mission occasionnelle de police judiciaire',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/autorites_investies_contenu.dart",
+              "f00021",
+              'Autorités administratives ou judiciaires, notamment certains magistrats, auxquelles la loi confie ponctuellement des attributions de police judiciaire.',
+            ),
             imagePath: 'assets/images/procedure_penale.jpg',
             textMain: textMain,
             textSoft: textSoft,

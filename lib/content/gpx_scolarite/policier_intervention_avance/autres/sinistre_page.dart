@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class SinistrePage extends StatelessWidget {
   const SinistrePage({super.key});
@@ -75,10 +76,18 @@ class SinistrePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Intervention — Autres",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+            "f00002",
+            "Intervention — Autres",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -93,7 +102,11 @@ class SinistrePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Intervention sur les lieux d’un sinistre",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+              "f00003",
+              "Intervention sur les lieux d’un sinistre",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -108,13 +121,33 @@ class SinistrePage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’intervention de police sur les lieux d’un sinistre se fait en renfort des services spécialisés, "
-                "mais répond aussi à des missions précises.\n\n"
-                "En présence d’un incendie ou d’une explosion (ex. gaz), les policiers interviennent notamment "
-                "pour porter secours, effectuer les premières constatations et rendre compte à la hiérarchie afin "
-                "de faciliter l’enquête et/ou renseigner les familles.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00004",
+                      "L’intervention de police sur les lieux d’un sinistre se fait en renfort des services spécialisés, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00005",
+                      "mais répond aussi à des missions précises.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00006",
+                      "En présence d’un incendie ou d’une explosion (ex. gaz), les policiers interviennent notamment ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00007",
+                      "pour porter secours, effectuer les premières constatations et rendre compte à la hiérarchie afin ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00008",
+                      "de faciliter l’enquête et/ou renseigner les familles.",
+                    ),
               ),
             ],
           ),
@@ -124,14 +157,26 @@ class SinistrePage extends StatelessWidget {
           // ✅ Élément “légal” en haut : ici, pas d’article fourni dans ton texte
           // => on met un cadre “Références” clair + neutre (sans inventer)
           _ConditionCard(
-            title: "Références (à compléter si besoin)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+              "f00009",
+              "Références (à compléter si besoin)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le texte fourni ne mentionne pas d’articles de loi spécifiques pour cette fiche “sinistre”. "
-                "Si tu veux, tu me donnes la/les référence(s) (CPP / CSI / CRPM…) et je les place ici en rouge, tout en haut.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00010",
+                      "Le texte fourni ne mentionne pas d’articles de loi spécifiques pour cette fiche “sinistre”. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00011",
+                      "Si tu veux, tu me donnes la/les référence(s) (CPP / CSI / CRPM…) et je les place ici en rouge, tout en haut.",
+                    ),
               ),
             ],
           ),
@@ -139,28 +184,80 @@ class SinistrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "I — Analyser la situation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+              "f00012",
+              "I — Analyser la situation",
+            ),
             cardColor: cardAnalyse,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Dès l’arrivée sur les lieux, les premiers intervenants doivent établir un premier bilan "
-                "(blessés, tués, ampleur du sinistre) afin de permettre au C.I.C d’évaluer les moyens nécessaires "
-                "et d’aviser les services de secours.\n\n"
-                "Les messages radio doivent être clairs et concis.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00013",
+                      "Dès l’arrivée sur les lieux, les premiers intervenants doivent établir un premier bilan ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00014",
+                      "(blessés, tués, ampleur du sinistre) afin de permettre au C.I.C d’évaluer les moyens nécessaires ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00015",
+                      "et d’aviser les services de secours.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00016",
+                      "Les messages radio doivent être clairs et concis.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Signaux à signaler immédiatement"),
-              _IntroBullet(text: "Bruits d’explosions / détonations."),
-              _IntroBullet(text: "Présence de fumées, nuage coloré."),
-              _IntroBullet(text: "Liquide répandu ou projeté."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00017",
+                  "Signaux à signaler immédiatement",
+                ),
+              ),
               _IntroBullet(
-                text: "Bruits anormaux, fuite de gaz, odeurs particulières.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00018",
+                  "Bruits d’explosions / détonations.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00019",
+                  "Présence de fumées, nuage coloré.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00020",
+                  "Liquide répandu ou projeté.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00021",
+                  "Bruits anormaux, fuite de gaz, odeurs particulières.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "À l’arrivée d’un gradé, officier ou commissaire : rendre compte immédiatement des éléments disponibles.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00022",
+                  "À l’arrivée d’un gradé, officier ou commissaire : rendre compte immédiatement des éléments disponibles.",
+                ),
               ),
             ],
           ),
@@ -168,33 +265,54 @@ class SinistrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Secourir les victimes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+              "f00023",
+              "II — Secourir les victimes",
+            ),
             cardColor: cardSecours,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En attendant l’arrivée en nombre suffisant des personnels spécialisés (sapeurs-pompiers, SAMU), "
-                "les effectifs de police arrivés sur place prodiguent les premiers soins.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00024",
+                      "En attendant l’arrivée en nombre suffisant des personnels spécialisés (sapeurs-pompiers, SAMU), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00025",
+                      "les effectifs de police arrivés sur place prodiguent les premiers soins.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Aucune conduite à l’hôpital ne doit être effectuée d’initiative par les services de police.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00026",
+                      "Aucune conduite à l’hôpital ne doit être effectuée d’initiative par les services de police.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Rendre compte au C.I.C de la destination des blessés (où ils sont évacués).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00027",
+                  "Rendre compte au C.I.C de la destination des blessés (où ils sont évacués).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Si relogement nécessaire (personnes sinistrées), informer le C.I.C pour répercussion aux services municipaux compétents.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00028",
+                  "Si relogement nécessaire (personnes sinistrées), informer le C.I.C pour répercussion aux services municipaux compétents.",
+                ),
               ),
             ],
           ),
@@ -202,36 +320,70 @@ class SinistrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Mettre en place un périmètre de sécurité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+              "f00029",
+              "III — Mettre en place un périmètre de sécurité",
+            ),
             cardColor: cardPerimetre,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Au fur et à mesure de l’arrivée des renforts, et le cas échéant sous l’autorité d’un officier ou commissaire, "
-                "établir un périmètre de sécurité selon la configuration des lieux.\n\n"
-                "Ce périmètre doit intégrer les risques d’extension éventuelle du sinistre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00030",
+                      "Au fur et à mesure de l’arrivée des renforts, et le cas échéant sous l’autorité d’un officier ou commissaire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00031",
+                      "établir un périmètre de sécurité selon la configuration des lieux.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00032",
+                      "Ce périmètre doit intégrer les risques d’extension éventuelle du sinistre.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Organisation du périmètre"),
-              _BulletPoint(
-                text:
-                    "Prévoir des zones réservées au stationnement des véhicules de secours et de police.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00033",
+                  "Organisation du périmètre",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Assurer la circulation, dévier si nécessaire (prévenir les sociétés de transport en commun).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00034",
+                  "Prévoir des zones réservées au stationnement des véhicules de secours et de police.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Faire déplacer les véhicules en stationnement pour faciliter l’intervention des secours.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00035",
+                  "Assurer la circulation, dévier si nécessaire (prévenir les sociétés de transport en commun).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00036",
+                  "Faire déplacer les véhicules en stationnement pour faciliter l’intervention des secours.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "En présence (ou suspicion) de fuite de gaz ou vapeurs inflammables : ne pas rester dans le périmètre de sécurité avec un appareil de transmission (radio / téléphone), même éteint.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00037",
+                      "En présence (ou suspicion) de fuite de gaz ou vapeurs inflammables : ne pas rester dans le périmètre de sécurité avec un appareil de transmission (radio / téléphone), même éteint.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -240,8 +392,11 @@ class SinistrePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Éloigner/arrêter toute source d’étincelles ou de chaleur : notamment interdire le fonctionnement des véhicules automobiles dans le périmètre.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00038",
+                      "Éloigner/arrêter toute source d’étincelles ou de chaleur : notamment interdire le fonctionnement des véhicules automobiles dans le périmètre.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -252,23 +407,41 @@ class SinistrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Préserver les traces et indices",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+              "f00039",
+              "IV — Préserver les traces et indices",
+            ),
             cardColor: cardTraces,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Dès le début, garder à l’esprit la nécessité de préserver les traces et indices et de conserver les lieux en l’état, "
-                "en vue de l’enquête judiciaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00040",
+                      "Dès le début, garder à l’esprit la nécessité de préserver les traces et indices et de conserver les lieux en l’état, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00041",
+                      "en vue de l’enquête judiciaire.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Avant l’arrivée de l’identité judiciaire : seuls les secours aux personnes doivent pouvoir approcher du lieu du sinistre.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00042",
+                  "Avant l’arrivée de l’identité judiciaire : seuls les secours aux personnes doivent pouvoir approcher du lieu du sinistre.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Diriger et contrôler strictement les mouvements de personnel vers la zone.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00043",
+                  "Diriger et contrôler strictement les mouvements de personnel vers la zone.",
+                ),
               ),
             ],
           ),
@@ -276,56 +449,111 @@ class SinistrePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Effectuer les constatations (premiers intervenants)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+              "f00044",
+              "V — Effectuer les constatations (premiers intervenants)",
+            ),
             cardColor: cardConstat,
             accent: accentOrange,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les premiers intervenants effectuent les diligences inhérentes aux constatations initiales, "
-                "afin de figer les informations utiles avant dégradation des lieux ou modification par les secours.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00045",
+                      "Les premiers intervenants effectuent les diligences inhérentes aux constatations initiales, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00046",
+                      "afin de figer les informations utiles avant dégradation des lieux ou modification par les secours.",
+                    ),
               ),
               SizedBox(height: 10),
 
-              _SubTitle("Checklist de constatations"),
-              _BulletPoint(
-                text:
-                    "Localiser le(s) foyer(s) et décrire : couleurs des fumées/flammes, odeurs, hauteur, rapidité de propagation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00047",
+                  "Checklist de constatations",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rechercher supports/matières inflammables et indices éventuels d’une mise à feu intentionnelle (allumettes, liquides inflammables, bouteilles de gaz…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00048",
+                  "Localiser le(s) foyer(s) et décrire : couleurs des fumées/flammes, odeurs, hauteur, rapidité de propagation.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Décrire l’état des lieux avant extension : accès ouverts/fermés, traces d’effraction, mise en scène, anomalies, sabotage des installations de détection/protection.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00049",
+                  "Rechercher supports/matières inflammables et indices éventuels d’une mise à feu intentionnelle (allumettes, liquides inflammables, bouteilles de gaz…).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Noter les modifications apportées par les sapeurs-pompiers.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00050",
+                  "Décrire l’état des lieux avant extension : accès ouverts/fermés, traces d’effraction, mise en scène, anomalies, sabotage des installations de détection/protection.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Identifier les personnes présentes, notamment le public : comportements inhabituels (agitation, fascination, personnes déjà vues sur un autre événement).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00051",
+                  "Noter les modifications apportées par les sapeurs-pompiers.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00052",
+                  "Identifier les personnes présentes, notamment le public : comportements inhabituels (agitation, fascination, personnes déjà vues sur un autre événement).",
+                ),
               ),
               SizedBox(height: 12),
 
-              _SubTitle("Témoignages (résumé structuré)"),
-              _IntroBullet(text: "Identité, adresse, qualité du témoin."),
-              _IntroBullet(
-                text: "Précisions apportées (faits observés, chronologie).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00053",
+                  "Témoignages (résumé structuré)",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Nature et valeur du témoignage (direct/indirect, cohérence, éléments matériels).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00054",
+                  "Identité, adresse, qualité du témoin.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00055",
+                  "Précisions apportées (faits observés, chronologie).",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                  "f00056",
+                  "Nature et valeur du témoignage (direct/indirect, cohérence, éléments matériels).",
+                ),
               ),
               SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "De retour au service, rédiger un procès-verbal de saisine-constatations, même si l’O.P.J. rédigera ensuite des constatations plus détaillées.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/autres/sinistre_page.dart",
+                      "f00057",
+                      "De retour au service, rédiger un procès-verbal de saisine-constatations, même si l’O.P.J. rédigera ensuite des constatations plus détaillées.",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
@@ -584,9 +812,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

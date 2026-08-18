@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteinteSecretProfessionnelPage extends StatelessWidget {
   const AtteinteSecretProfessionnelPage({super.key});
@@ -59,10 +60,18 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteinte à la personnalité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+            "f00002",
+            "Atteinte à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’atteinte au secret professionnel",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+              "f00003",
+              "L’atteinte au secret professionnel",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,15 +102,31 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La révélation d’une information à caractère secret par une personne qui en est dépositaire "
-                "soit par état ou par profession, soit en raison d’une fonction ou d’une mission temporaire, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00005",
+                      "La révélation d’une information à caractère secret par une personne qui en est dépositaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00006",
+                      "soit par état ou par profession, soit en raison d’une fonction ou d’une mission temporaire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00007",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -106,22 +135,30 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00009",
+                    "Article 226-13 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime l’atteinte au secret professionnel.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00010",
+                    " : définit et réprime l’atteinte au secret professionnel.",
+                  ),
                 ),
               ]),
             ],
@@ -131,122 +168,284 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+              "f00011",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "L’article 226-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00012",
+                    "L’article 226-13 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " incrimine la révélation d’une information à caractère secret par une personne qui en est dépositaire. "
-                      "Ce délit protège la confiance nécessaire à l’exercice de certaines professions ou fonctions, mais aussi "
-                      "l’intérêt des particuliers.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                        "f00013",
+                        " incrimine la révélation d’une information à caractère secret par une personne qui en est dépositaire. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                        "f00014",
+                        "Ce délit protège la confiance nécessaire à l’exercice de certaines professions ou fonctions, mais aussi ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                        "f00015",
+                        "l’intérêt des particuliers.",
+                      ),
                 ),
               ]),
               SizedBox(height: 14),
 
-              _SubTitle("A) Une personne dépositaire d’un secret"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00016",
+                  "A) Une personne dépositaire d’un secret",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "L’article 226-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00017",
+                    "L’article 226-13 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " vise la personne dépositaire « soit par son état ou sa profession, soit en raison d’une fonction ou d’une mission temporaire ». "
-                      "Cette formule évite une énumération trop longue (médecin, pharmacien, policier, magistrat, greffier, avocat, banquier, expert-comptable, etc.).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                        "f00018",
+                        " vise la personne dépositaire « soit par son état ou sa profession, soit en raison d’une fonction ou d’une mission temporaire ». ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                        "f00019",
+                        "Cette formule évite une énumération trop longue (médecin, pharmacien, policier, magistrat, greffier, avocat, banquier, expert-comptable, etc.).",
+                      ),
                 ),
               ]),
               SizedBox(height: 12),
               _Paragraph(
-                "En l’absence de texte spécial, les juges apprécient au cas par cas si une personne est tenue au secret professionnel.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00020",
+                  "En l’absence de texte spécial, les juges apprécient au cas par cas si une personne est tenue au secret professionnel.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph(
-                "Le dépositaire n’est pas seulement un confident : c’est celui qui a appris des données à caractère confidentiel, "
-                "de quelque manière que ce soit, à l’occasion de son état, profession, fonction ou mission.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00021",
+                      "Le dépositaire n’est pas seulement un confident : c’est celui qui a appris des données à caractère confidentiel, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00022",
+                      "de quelque manière que ce soit, à l’occasion de son état, profession, fonction ou mission.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("• Dépositaire en raison de son état"),
-              _Paragraph(
-                "L’« état » renvoie à une situation de fait ou de droit et à un statut juridique professionnel. "
-                "Exemples : ministre du culte, étudiants/élèves en formation vers une profession soumise au secret "
-                "(ex. élèves orthophonistes, masseurs-kinésithérapeutes, etc.).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00023",
+                  "• Dépositaire en raison de son état",
+                ),
               ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("• Dépositaire en raison de sa profession"),
               _Paragraph(
-                "La profession est l’activité habituellement exercée pour subvenir à ses besoins. Certaines professions, "
-                "par leurs règles, astreignent leurs membres au secret (professions médicales, avocats, professions financières/commerciales, "
-                "policiers, magistrats, etc.).",
-              ),
-
-              SizedBox(height: 12),
-
-              _SubTitle("• Dépositaire en raison de sa fonction"),
-              _Paragraph(
-                "La fonction est une charge et l’activité qu’elle occasionne. Le secret s’applique aux destinataires d’informations "
-                "en raison de leurs fonctions (catégorie interprétée par la jurisprudence : agents de la fonction publique, services divers, etc.).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00024",
+                      "L’« état » renvoie à une situation de fait ou de droit et à un statut juridique professionnel. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00025",
+                      "Exemples : ministre du culte, étudiants/élèves en formation vers une profession soumise au secret ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00026",
+                      "(ex. élèves orthophonistes, masseurs-kinésithérapeutes, etc.).",
+                    ),
               ),
 
               SizedBox(height: 12),
 
               _SubTitle(
-                "• Dépositaire en raison d’une mission temporaire",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00027",
+                  "• Dépositaire en raison de sa profession",
+                ),
               ),
               _Paragraph(
-                "La mission temporaire vise une tâche ponctuelle confiée : jurés, membres assesseurs, experts, etc. "
-                "Il faut que l’intéressé ait accès à des informations confidentielles ou destinées à l’être.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00028",
+                      "La profession est l’activité habituellement exercée pour subvenir à ses besoins. Certaines professions, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00029",
+                      "par leurs règles, astreignent leurs membres au secret (professions médicales, avocats, professions financières/commerciales, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00030",
+                      "policiers, magistrats, etc.).",
+                    ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00031",
+                  "• Dépositaire en raison de sa fonction",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00032",
+                      "La fonction est une charge et l’activité qu’elle occasionne. Le secret s’applique aux destinataires d’informations ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00033",
+                      "en raison de leurs fonctions (catégorie interprétée par la jurisprudence : agents de la fonction publique, services divers, etc.).",
+                    ),
+              ),
+
+              SizedBox(height: 12),
+
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00034",
+                  "• Dépositaire en raison d’une mission temporaire",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00035",
+                      "La mission temporaire vise une tâche ponctuelle confiée : jurés, membres assesseurs, experts, etc. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00036",
+                      "Il faut que l’intéressé ait accès à des informations confidentielles ou destinées à l’être.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un secret"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00037",
+                  "B) Un secret",
+                ),
+              ),
               _Paragraph(
-                "Le secret peut être une confidence, une situation, une formule, ou plus largement toute information "
-                "dont le dépositaire a connaissance à l’occasion de sa profession/fonction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00038",
+                      "Le secret peut être une confidence, une situation, une formule, ou plus largement toute information ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00039",
+                      "dont le dépositaire a connaissance à l’occasion de sa profession/fonction.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La Cour de cassation étend la notion à tout ce que la personne tenue au secret a pu constater, découvrir "
-                "ou déduire personnellement dans l’exercice de ses missions.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00040",
+                      "La Cour de cassation étend la notion à tout ce que la personne tenue au secret a pu constater, découvrir ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00041",
+                      "ou déduire personnellement dans l’exercice de ses missions.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le caractère secret de l’information ne s’éteint pas avec le décès de la personne concernée.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00042",
+                  "Le caractère secret de l’information ne s’éteint pas avec le décès de la personne concernée.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Un acte de révélation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00043",
+                  "C) Un acte de révélation",
+                ),
+              ),
               _Paragraph(
-                "La forme de la révélation importe peu : elle peut être orale, écrite, ou résulter de la transmission d’un document "
-                "couvert par le secret.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00044",
+                      "La forme de la révélation importe peu : elle peut être orale, écrite, ou résulter de la transmission d’un document ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00045",
+                      "couvert par le secret.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le délit est constitué dès que l’information est communiquée à une seule personne, même si elle est elle-même soumise "
-                "au secret professionnel.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00046",
+                      "Le délit est constitué dès que l’information est communiquée à une seule personne, même si elle est elle-même soumise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00047",
+                      "au secret professionnel.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Si l’information a déjà été rendue publique, l’infraction peut quand même être retenue contre le dépositaire "
-                "qui la confirme ou l’infirme.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00048",
+                      "Si l’information a déjà été rendue publique, l’infraction peut quand même être retenue contre le dépositaire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00049",
+                      "qui la confirme ou l’infirme.",
+                    ),
               ),
             ],
           ),
@@ -255,19 +454,41 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+              "f00050",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Conscience de révéler un secret"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00051",
+                  "Conscience de révéler un secret",
+                ),
+              ),
               _Paragraph(
-                "L’infraction est intentionnelle : l’auteur a conscience de révéler une information secrète dont il est dépositaire, "
-                "et la révélation est volontaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00052",
+                      "L’infraction est intentionnelle : l’auteur a conscience de révéler une information secrète dont il est dépositaire, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                      "f00053",
+                      "et la révélation est volontaire.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’intention de nuire n’est pas requise : le mobile importe peu.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00054",
+                  "L’intention de nuire n’est pas requise : le mobile importe peu.",
+                ),
               ),
             ],
           ),
@@ -276,12 +497,22 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+              "f00055",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00056",
+                  "Aucune circonstance aggravante prévue.",
+                ),
+              ),
             ],
           ),
 
@@ -289,109 +520,226 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
 
           // Répression + tentative/complicité + NOTA 226-14
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+              "f00057",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00058",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-13 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00059",
+                    "Article 226-13 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : 1 an d’emprisonnement et 15 000€ d'amende (peine principale) et délit constitué par la révélation d’un secret.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00060",
+                    " : 1 an d’emprisonnement et 15 000€ d'amende (peine principale) et délit constitué par la révélation d’un secret.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00061",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 121-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00062",
+                    "Responsabilité pénale prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00063",
+                    "l’article 121-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Peines complémentaires possibles (notamment) via ",
-                ),
-                TextSpan(
-                  text: "l’article 226-12 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00064",
+                    "Peines complémentaires possibles (notamment) via ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : affichage/diffusion de la décision, interdiction définitive ou temporaire d’exercer une activité sociale ou professionnelle.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00065",
+                    "l’article 226-12 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00066",
+                    " : affichage/diffusion de la décision, interdiction définitive ou temporaire d’exercer une activité sociale ou professionnelle.",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00067",
+                  "Tentative & complicité",
+                ),
+              ),
               _BulletPoint(
-                text: "Tentative : NON (non prévue / non punissable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00068",
+                  "Tentative : NON (non prévue / non punissable).",
+                ),
               ),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00069",
+                    "Complicité : OUI — conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00070",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                    "f00071",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle suppose un des faits constitutifs de complicité prévus par la loi : aide et assistance, provocation ou instructions données.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00072",
+                  "Elle suppose un des faits constitutifs de complicité prévus par la loi : aide et assistance, provocation ou instructions données.",
+                ),
               ),
 
               SizedBox(height: 14),
 
               _NotaBox(
-                title: "Exception (article 226-14 C.P.)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                  "f00073",
+                  "Exception (article 226-14 C.P.)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’article 226-14 du Code pénal prévoit des cas où l’article 226-13 n’est pas applicable, notamment :\n"
-                        "• Signalement aux autorités (judiciaires, médicales ou administratives) de maltraitances, privations ou sévices "
-                        "infligés à un mineur ou à une personne vulnérable.\n"
-                        "• Signalement par un professionnel de santé, avec l’accord de la victime (ou sans accord si mineur/personne vulnérable), "
-                        "au procureur ou aux cellules compétentes pour les mineurs en danger.\n"
-                        "• Signalement au procureur de faits de sujétion psychologique/physique (au sens de l’article 223-15-3 C.P.) "
-                        "avec accord de la victime (ou sans accord si mineur/personne vulnérable), sous conditions.\n"
-                        "• Signalement de violences au sein du couple mettant la vie de la victime majeure en danger immédiat, lorsque la victime "
-                        "n’est pas en mesure de se protéger en raison de l’emprise (le professionnel doit s’efforcer d’obtenir l’accord, et informer la victime en cas d’impossibilité).\n"
-                        "• Information du préfet (ou du préfet de police à Paris) par des professionnels de santé/action sociale du caractère dangereux "
-                        "d’une personne détenant une arme ou ayant manifesté l’intention d’en acquérir une.\n"
-                        "• Signalement par un vétérinaire de sévices graves, acte de cruauté ou atteinte sexuelle sur un animal.\n\n"
-                        "Le signalement effectué dans ces conditions ne peut engager la responsabilité civile, pénale ou disciplinaire de son auteur, "
-                        "sauf s’il est établi qu’il n’a pas agi de bonne foi.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00074",
+                          "L’article 226-14 du Code pénal prévoit des cas où l’article 226-13 n’est pas applicable, notamment :\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00075",
+                          "• Signalement aux autorités (judiciaires, médicales ou administratives) de maltraitances, privations ou sévices ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00076",
+                          "infligés à un mineur ou à une personne vulnérable.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00077",
+                          "• Signalement par un professionnel de santé, avec l’accord de la victime (ou sans accord si mineur/personne vulnérable), ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00078",
+                          "au procureur ou aux cellules compétentes pour les mineurs en danger.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00079",
+                          "• Signalement au procureur de faits de sujétion psychologique/physique (au sens de l’article 223-15-3 C.P.) ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00080",
+                          "avec accord de la victime (ou sans accord si mineur/personne vulnérable), sous conditions.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00081",
+                          "• Signalement de violences au sein du couple mettant la vie de la victime majeure en danger immédiat, lorsque la victime ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00082",
+                          "n’est pas en mesure de se protéger en raison de l’emprise (le professionnel doit s’efforcer d’obtenir l’accord, et informer la victime en cas d’impossibilité).\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00083",
+                          "• Information du préfet (ou du préfet de police à Paris) par des professionnels de santé/action sociale du caractère dangereux ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00084",
+                          "d’une personne détenant une arme ou ayant manifesté l’intention d’en acquérir une.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00085",
+                          "• Signalement par un vétérinaire de sévices graves, acte de cruauté ou atteinte sexuelle sur un animal.\n\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00086",
+                          "Le signalement effectué dans ces conditions ne peut engager la responsabilité civile, pénale ou disciplinaire de son auteur, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_secret_professionnel.dart",
+                          "f00087",
+                          "sauf s’il est établi qu’il n’a pas agi de bonne foi.",
+                        ),
                   ),
                 ],
               ),

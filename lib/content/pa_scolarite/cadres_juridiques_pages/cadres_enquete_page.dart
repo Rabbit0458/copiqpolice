@@ -1,6 +1,7 @@
 // lib/pa/dps_dpg/cadres_juridiques_pages/cadres_enquete_page.dart
 
 import 'package:flutter/material.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// Page : Les cadres d'enquête (vue d’ensemble)
 /// Route : /pa/dps_dpg/cadres_juridiques/cadres_enquete
@@ -23,7 +24,11 @@ class PaCadresEnquetePage extends StatelessWidget {
         surfaceTintColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          tooltip: "Retour",
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+            "f00001",
+            "Retour",
+          ),
           onPressed: () => Navigator.of(context).maybePop(),
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
         ),
@@ -32,8 +37,16 @@ class PaCadresEnquetePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         slivers: [
           _HeroHeader(
-            title: 'Les cadres d’enquête',
-            subtitle: 'Flagrance · Préliminaire · Autres cadres',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+              "f00002",
+              'Les cadres d’enquête',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+              "f00003",
+              'Flagrance · Préliminaire · Autres cadres',
+            ),
             image: 'assets/images/cadres_juridiques.jpeg',
             onPrimaryTap: () {},
           ),
@@ -41,107 +54,231 @@ class PaCadresEnquetePage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                const _SectionCard(
-                  title: 'Vue d’ensemble',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00004",
+                    'Vue d’ensemble',
+                  ),
                   child: Text(
-                    'L’enquête judiciaire repose sur plusieurs cadres légaux. '
-                    'Chaque cadre détermine les pouvoirs d’enquête, la durée, les autorisations requises '
-                    'et les garanties procédurales. Le choix du cadre sécurise la preuve et conditionne la suite procédurale.',
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00005",
+                          'L’enquête judiciaire repose sur plusieurs cadres légaux. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00006",
+                          'Chaque cadre détermine les pouvoirs d’enquête, la durée, les autorisations requises ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00007",
+                          'et les garanties procédurales. Le choix du cadre sécurise la preuve et conditionne la suite procédurale.',
+                        ),
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _KeyChips(
+                _KeyChips(
                   items: [
-                    'Base légale',
-                    'Pouvoirs d’enquête',
-                    'Autorisation judiciaire',
-                    'Durée',
-                    'Garanties procédurales',
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                      "f00008",
+                      'Base légale',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                      "f00009",
+                      'Pouvoirs d’enquête',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                      "f00010",
+                      'Autorisation judiciaire',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                      "f00011",
+                      'Durée',
+                    ),
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                      "f00012",
+                      'Garanties procédurales',
+                    ),
                   ],
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Pourquoi qualifier le cadre ?',
-                  caption: 'Sécurisation de la preuve',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00013",
+                    'Pourquoi qualifier le cadre ?',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00014",
+                    'Sécurisation de la preuve',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Détermine l’étendue des actes possibles (perquisition, saisie, interceptions…).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00015",
+                          'Détermine l’étendue des actes possibles (perquisition, saisie, interceptions…).',
+                        ),
                       ),
                       _Bullet(
-                        'Impacte la durée des mesures de contrainte (ex. GAV) et les formalités.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00016",
+                          'Impacte la durée des mesures de contrainte (ex. GAV) et les formalités.',
+                        ),
                       ),
                       _Bullet(
-                        'Conditionne l’autorisation requise (OPJ/Procureur/JLD/JI).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00017",
+                          'Conditionne l’autorisation requise (OPJ/Procureur/JLD/JI).',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Cadres principaux',
-                  caption: 'Les trois blocs usuels',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00018",
+                    'Cadres principaux',
+                  ),
+                  caption: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00019",
+                    'Les trois blocs usuels',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _Bullet(
-                        'Enquête de flagrance : infraction en train de se commettre ou venant de se commettre.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00020",
+                          'Enquête de flagrance : infraction en train de se commettre ou venant de se commettre.',
+                        ),
                       ),
                       _Bullet(
-                        'Enquête préliminaire : en l’absence de flagrance, sous direction Procureur.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00021",
+                          'Enquête préliminaire : en l’absence de flagrance, sous direction Procureur.',
+                        ),
                       ),
                       _Bullet(
-                        'Autres cadres : commission rogatoire, JI, douanes, enquêtes spécialisées, etc.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00022",
+                          'Autres cadres : commission rogatoire, JI, douanes, enquêtes spécialisées, etc.',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 16),
-                const _SectionCard(
-                  title: 'Réflexes PV',
+                _SectionCard(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00023",
+                    'Réflexes PV',
+                  ),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       _ChecklistLine(
-                        'Poser le contexte factuel justifiant le cadre choisi.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00024",
+                          'Poser le contexte factuel justifiant le cadre choisi.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Tracer les autorisations/avis donnés (Procureur/JLD/JI).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00025",
+                          'Tracer les autorisations/avis donnés (Procureur/JLD/JI).',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Respecter les durées/process PV, informer des droits.',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00026",
+                          'Respecter les durées/process PV, informer des droits.',
+                        ),
                       ),
                       _ChecklistLine(
-                        'Adapter le cadre si la situation évolue (requalification).',
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                          "f00027",
+                          'Adapter le cadre si la situation évolue (requalification).',
+                        ),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 24),
                 Text(
-                  'Aller plus loin',
+                  ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00028",
+                    'Aller plus loin',
+                  ),
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     fontWeight: FontWeight.w900,
                     color: isDark ? Colors.white : _Ink.ink,
                   ),
                 ),
                 const SizedBox(height: 12),
-                const _LinkTile(
-                  title: 'Enquête de flagrant délit',
-                  subtitle: 'Actes immédiats · Pouvoirs renforcés',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00029",
+                    'Enquête de flagrant délit',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00030",
+                    'Actes immédiats · Pouvoirs renforcés',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/enquete_flagrant_delit',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Enquête préliminaire',
-                  subtitle: 'Direction Procureur · Autorisations requises',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00031",
+                    'Enquête préliminaire',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00032",
+                    'Direction Procureur · Autorisations requises',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/enquete_preliminaire',
                 ),
                 const SizedBox(height: 10),
-                const _LinkTile(
-                  title: 'Autres cadres d’enquête',
-                  subtitle: 'JI · CR · Douanes · Spécialités',
+                _LinkTile(
+                  title: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00033",
+                    'Autres cadres d’enquête',
+                  ),
+                  subtitle: ScolariteText.value(
+                    "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                    "f00034",
+                    'JI · CR · Douanes · Spécialités',
+                  ),
                   route: '/pa/dps_dpg/cadres_juridiques/autres_cadres_enquete',
                 ),
               ],
@@ -213,7 +350,13 @@ class _HeroHeader extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const _Badge(text: 'Cadres juridiques'),
+                    _Badge(
+                      text: ScolariteText.value(
+                        "lib/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart",
+                        "f00035",
+                        'Cadres juridiques',
+                      ),
+                    ),
                     const SizedBox(height: 8),
                     Text(
                       title,

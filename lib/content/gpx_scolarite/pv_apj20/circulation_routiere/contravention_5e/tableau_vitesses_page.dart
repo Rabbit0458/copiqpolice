@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class TableauVitessesPage extends StatelessWidget {
   const TableauVitessesPage({super.key});
@@ -44,10 +45,18 @@ class TableauVitessesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrôles vitesse",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+            "f00002",
+            "Contrôles vitesse",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -62,7 +71,11 @@ class TableauVitessesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Tableau des vitesses retenues",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+              "f00003",
+              "Tableau des vitesses retenues",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -74,48 +87,85 @@ class TableauVitessesPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (format “pédagogique”)
           _ConditionCard(
-            title: "Référence (à rappeler en PV)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+              "f00004",
+              "Référence (à rappeler en PV)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Lors de la rédaction, on distingue toujours la vitesse enregistrée et la vitesse retenue :\n\n",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00005",
+                    "Lors de la rédaction, on distingue toujours la vitesse enregistrée et la vitesse retenue :\n\n",
+                  ),
                 ),
                 TextSpan(
-                  text: "• Vitesse enregistrée : ",
-                  style: TextStyle(fontWeight: FontWeight.w900),
-                ),
-                TextSpan(text: "valeur affichée par le cinémomètre.\n"),
-                TextSpan(
-                  text: "• Vitesse retenue : ",
-                  style: TextStyle(fontWeight: FontWeight.w900),
-                ),
-                TextSpan(
-                  text:
-                      "vitesse enregistrée minorée de la marge technique applicable (cf. tableau ci-dessous).\n\n",
-                ),
-                TextSpan(
-                  text: "À formuler clairement",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00006",
+                    "• Vitesse enregistrée : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " dans les constatations, car c’est la vitesse retenue qui sert à caractériser le dépassement.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00007",
+                    "valeur affichée par le cinémomètre.\n",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00008",
+                    "• Vitesse retenue : ",
+                  ),
+                  style: TextStyle(fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00009",
+                    "vitesse enregistrée minorée de la marge technique applicable (cf. tableau ci-dessous).\n\n",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00010",
+                    "À formuler clairement",
+                  ),
+                  style: TextStyle(fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00011",
+                    " dans les constatations, car c’est la vitesse retenue qui sert à caractériser le dépassement.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
-                    text:
-                        "Astuce PV : écris en une phrase simple du type « la vitesse enregistrée est de X km/h ; la vitesse retenue, après application de la marge technique, est de Y km/h ». ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                      "f00012",
+                      "Astuce PV : écris en une phrase simple du type « la vitesse enregistrée est de X km/h ; la vitesse retenue, après application de la marge technique, est de Y km/h ». ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "Cette précision sécurise (et clarifie) tes constatations.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                      "f00013",
+                      "Cette précision sécurise (et clarifie) tes constatations.",
+                    ),
                     style: TextStyle(
                       color: isDark ? Colors.white : Colors.black,
                       fontWeight: FontWeight.w800,
@@ -130,26 +180,49 @@ class TableauVitessesPage extends StatelessWidget {
 
           // Mode d’emploi rapide
           _ConditionCard(
-            title: "Comment l’utiliser",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+              "f00014",
+              "Comment l’utiliser",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Étapes"),
-              _BulletPoint(
-                text:
-                    "Relever la vitesse enregistrée indiquée par l’appareil (km/h).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                  "f00015",
+                  "Étapes",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Identifier dans le tableau la marge applicable (selon la plage de vitesse / le type d’appareil).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                  "f00016",
+                  "Relever la vitesse enregistrée indiquée par l’appareil (km/h).",
+                ),
               ),
               _BulletPoint(
-                text: "Calculer la vitesse retenue (enregistrée − marge).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                  "f00017",
+                  "Identifier dans le tableau la marge applicable (selon la plage de vitesse / le type d’appareil).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Rédiger le PV en mentionnant clairement les deux valeurs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                  "f00018",
+                  "Calculer la vitesse retenue (enregistrée − marge).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                  "f00019",
+                  "Rédiger le PV en mentionnant clairement les deux valeurs.",
+                ),
               ),
             ],
           ),
@@ -158,7 +231,11 @@ class TableauVitessesPage extends StatelessWidget {
 
           // Image tableau
           _ConditionCard(
-            title: "Tableau (zoomable)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+              "f00020",
+              "Tableau (zoomable)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
@@ -421,9 +498,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );
@@ -488,8 +563,16 @@ class ZoomableAssetImage extends StatelessWidget {
     }
 
     return Semantics(
-      label: "Image zoomable",
-      hint: "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      label: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+        "f00021",
+        "Image zoomable",
+      ),
+      hint: ScolariteText.value(
+        "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+        "f00022",
+        "Touchez pour ouvrir, pincez pour zoomer, glissez pour déplacer",
+      ),
       button: true,
       child: Material(
         color: Colors.transparent,
@@ -662,7 +745,11 @@ class _TopBar extends StatelessWidget {
                 Icon(Icons.touch_app_rounded, size: 18, color: fg),
                 const SizedBox(width: 8),
                 Text(
-                  "Aperçu",
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                    "f00023",
+                    "Aperçu",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
                     color: fg,
@@ -731,7 +818,11 @@ class _HintBar extends StatelessWidget {
             const SizedBox(width: 8),
             Flexible(
               child: Text(
-                "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart",
+                  "f00024",
+                  "Pincez pour zoomer • Glissez pour déplacer • Tapez pour fermer",
+                ),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: fg,
@@ -759,7 +850,9 @@ class _Badge extends StatelessWidget {
     final Color bg = isDark
         ? Colors.white.withValues(alpha: .12)
         : Colors.black.withValues(alpha: .06);
-    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
+    final Color fg = isDark
+        ? Colors.white
+        : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -794,7 +887,10 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
+        border: Border.all(
+          color: Colors.white.withValues(alpha: .12),
+          width: 1,
+        ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

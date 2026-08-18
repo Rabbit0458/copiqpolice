@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ControleTechniquePage extends StatelessWidget {
   const ControleTechniquePage({super.key});
@@ -61,10 +62,18 @@ class ControleTechniquePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Contrôle routier",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+            "f00002",
+            "Contrôle routier",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -79,7 +88,11 @@ class ControleTechniquePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le contrôle technique",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00003",
+              "Le contrôle technique",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -91,14 +104,26 @@ class ControleTechniquePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardInfra,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les véhicules concernés sont soumis à des contrôles techniques destinés à vérifier leur bon état "
-                "de marche et d’entretien. Ils doivent être réalisés dans un centre agréé, à l’initiative du propriétaire.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00005",
+                      "Les véhicules concernés sont soumis à des contrôles techniques destinés à vérifier leur bon état ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00006",
+                      "de marche et d’entretien. Ils doivent être réalisés dans un centre agréé, à l’initiative du propriétaire.",
+                    ),
               ),
             ],
           ),
@@ -107,13 +132,23 @@ class ControleTechniquePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 323-22 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00008",
+                    "R. 323-22 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
             ],
@@ -123,79 +158,189 @@ class ControleTechniquePage extends StatelessWidget {
 
           // Véhicules légers
           _ConditionCard(
-            title: "II — Véhicules légers (VL)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00009",
+              "II — Véhicules légers (VL)",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Catégories concernées"),
-              const _Paragraph(
-                "Sont visées :\n"
-                "• Voitures particulières (VP)\n"
-                "• Camionnettes (CTTE)\n"
-                "Identifiables sur le certificat d’immatriculation (rubrique genre J1).\n\n"
-                "Sont exclues : celles immatriculées dans la série diplomatique.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00010",
+                  "A) Catégories concernées",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00011",
+                      "Sont visées :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00012",
+                      "• Voitures particulières (VP)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00013",
+                      "• Camionnettes (CTTE)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00014",
+                      "Identifiables sur le certificat d’immatriculation (rubrique genre J1).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00015",
+                      "Sont exclues : celles immatriculées dans la série diplomatique.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("B) Exclusions (réglementations spécifiques)"),
-              const _Paragraph(
-                "Sont exclus de ce régime, notamment :\n"
-                "• Véhicules de dépannage\n"
-                "• Véhicules (-10 places, conducteur compris) affectés au transport public de personnes\n"
-                "• Véhicules de transports sanitaires\n"
-                "• Véhicules utilisés pour l’enseignement de la conduite\n"
-                "• Taxis et VTC (y compris véhicules de collection utilisés comme VTC)\n"
-                "• Véhicules de collection",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00016",
+                  "B) Exclusions (réglementations spécifiques)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00017",
+                      "Sont exclus de ce régime, notamment :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00018",
+                      "• Véhicules de dépannage\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00019",
+                      "• Véhicules (-10 places, conducteur compris) affectés au transport public de personnes\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00020",
+                      "• Véhicules de transports sanitaires\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00021",
+                      "• Véhicules utilisés pour l’enseignement de la conduite\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00022",
+                      "• Taxis et VTC (y compris véhicules de collection utilisés comme VTC)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00023",
+                      "• Véhicules de collection",
+                    ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("C) Périodicité (VL)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00024",
+                  "C) Périodicité (VL)",
+                ),
+              ),
               _Paragraph.rich([
                 const TextSpan(text: "Voir "),
                 TextSpan(
-                  text: "NATINF 12522",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00025",
+                    "NATINF 12522",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: " / "),
                 TextSpan(
-                  text: "NATINF 12523",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00026",
+                    "NATINF 12523",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "1er contrôle : au plus tard dans les 6 mois précédant le 4e anniversaire de la 1re mise en circulation.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00027",
+                  "1er contrôle : au plus tard dans les 6 mois précédant le 4e anniversaire de la 1re mise en circulation.",
+                ),
               ),
-              const _BulletPoint(
-                text: "Ensuite : renouvellement tous les 2 ans.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00028",
+                  "Ensuite : renouvellement tous les 2 ans.",
+                ),
               ),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Avant toute mutation d’un véhicule mis en circulation depuis plus de 4 ans : contrôle dans les 6 mois précédant la demande du nouveau certificat d’immatriculation (",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00029",
+                    "Avant toute mutation d’un véhicule mis en circulation depuis plus de 4 ans : contrôle dans les 6 mois précédant la demande du nouveau certificat d’immatriculation (",
+                  ),
                 ),
                 TextSpan(
-                  text: "NATINF 5678",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00030",
+                    "NATINF 5678",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("D) Contrôle des émissions polluantes (CTTE)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00031",
+                  "D) Contrôle des émissions polluantes (CTTE)",
+                ),
+              ),
               _Paragraph.rich([
                 const TextSpan(text: "Voir "),
                 TextSpan(
-                  text: "NATINF 12523",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00032",
+                    "NATINF 12523",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                "Les camionnettes (CTTE) doivent faire l’objet d’une visite complémentaire « émissions polluantes » "
-                "dans les 2 mois précédant l’expiration du délai d’un an après chaque contrôle technique.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00033",
+                      "Les camionnettes (CTTE) doivent faire l’objet d’une visite complémentaire « émissions polluantes » ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00034",
+                      "dans les 2 mois précédant l’expiration du délai d’un an après chaque contrôle technique.",
+                    ),
               ),
             ],
           ),
@@ -204,44 +349,111 @@ class ControleTechniquePage extends StatelessWidget {
 
           // 2/3 roues & quadricycles (catégorie L)
           _ConditionCard(
-            title: "III — 2/3 roues & quadricycles (catégorie L)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00035",
+              "III — 2/3 roues & quadricycles (catégorie L)",
+            ),
             cardColor: cardCalendrier,
             accent: accentPink,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Les véhicules motorisés à deux ou trois roues et les quadricycles à moteur relèvent de la catégorie L au sens de ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00036",
+                    "Les véhicules motorisés à deux ou trois roues et les quadricycles à moteur relèvent de la catégorie L au sens de ",
+                  ),
                 ),
-                _lawSpan("R. 311-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00037",
+                    "R. 311-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle("A) Repérage (exemples)"),
-              const _Paragraph(
-                "Ils sont identifiables sur le certificat d’immatriculation (rubriques J).\n\n"
-                "Exemples (catégories) :\n"
-                "• L1e : cyclomoteur ≤ 50 cm³\n"
-                "• L2e : cyclomoteur à 3 roues\n"
-                "• L3e : motocyclette (≤ 125 cm³ / > 125 cm³…)\n"
-                "• L4e : side-car\n"
-                "• L5e : tricycle à moteur\n"
-                "• L6e : quadricycle léger à moteur (quad ≤ 4 kW, VSP/voiturette, etc.)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00038",
+                  "A) Repérage (exemples)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00039",
+                      "Ils sont identifiables sur le certificat d’immatriculation (rubriques J).\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00040",
+                      "Exemples (catégories) :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00041",
+                      "• L1e : cyclomoteur ≤ 50 cm³\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00042",
+                      "• L2e : cyclomoteur à 3 roues\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00043",
+                      "• L3e : motocyclette (≤ 125 cm³ / > 125 cm³…)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00044",
+                      "• L4e : side-car\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00045",
+                      "• L5e : tricycle à moteur\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00046",
+                      "• L6e : quadricycle léger à moteur (quad ≤ 4 kW, VSP/voiturette, etc.)",
+                    ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("B) Périodicité"),
-              const _BulletPoint(
-                text:
-                    "1er contrôle : au plus tard dans les 6 mois précédant le 5e anniversaire de la 1re mise en circulation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00047",
+                  "B) Périodicité",
+                ),
               ),
-              const _BulletPoint(
-                text: "Ensuite : renouvellement tous les 3 ans.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00048",
+                  "1er contrôle : au plus tard dans les 6 mois précédant le 5e anniversaire de la 1re mise en circulation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00049",
+                  "Ensuite : renouvellement tous les 3 ans.",
+                ),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Avant toute mutation d’un véhicule mis en circulation depuis plus de 5 ans : contrôle dans les 6 mois précédant la demande du nouveau certificat d’immatriculation.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00050",
+                  "Avant toute mutation d’un véhicule mis en circulation depuis plus de 5 ans : contrôle dans les 6 mois précédant la demande du nouveau certificat d’immatriculation.",
+                ),
               ),
             ],
           ),
@@ -250,49 +462,89 @@ class ControleTechniquePage extends StatelessWidget {
 
           // Calendrier (mise en place)
           _ConditionCard(
-            title: "IV — Calendrier de mise en place (2/3 roues & quad.)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00051",
+              "IV — Calendrier de mise en place (2/3 roues & quad.)",
+            ),
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                const TextSpan(text: "Pour info : art. 43 de l’arrêté du "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00052",
+                    "Pour info : art. 43 de l’arrêté du ",
+                  ),
+                ),
                 TextSpan(
                   text: "23/10/2023",
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 323-7 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00053",
+                    "R. 323-7 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _SubTitle("Repères pratiques"),
-              const _IntroBullet(
-                text:
-                    "Avant le 01/01/2017 avec anniversaire avant le 15 avril : 1re visite entre le 15/04/2024 et le 14/08/2024.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00054",
+                  "Repères pratiques",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Avant le 01/01/2017 (cas général) : 1re visite au plus tard le 31/12/2024.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00055",
+                  "Avant le 01/01/2017 avec anniversaire avant le 15 avril : 1re visite entre le 15/04/2024 et le 14/08/2024.",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Entre 01/01/2017 et 31/12/2019 : 1re visite au plus tard en 2025.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00056",
+                  "Avant le 01/01/2017 (cas général) : 1re visite au plus tard le 31/12/2024.",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Entre 01/01/2020 et 31/12/2021 : 1re visite au plus tard en 2026.",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00057",
+                  "Entre 01/01/2017 et 31/12/2019 : 1re visite au plus tard en 2025.",
+                ),
               ),
-              const _IntroBullet(
-                text:
-                    "Entre 01/01/2022 et 25/10/2023 : dans les 6 mois précédant le 5e anniversaire (au plus tôt 01/07/2026).",
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00058",
+                  "Entre 01/01/2020 et 31/12/2021 : 1re visite au plus tard en 2026.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00059",
+                  "Entre 01/01/2022 et 25/10/2023 : dans les 6 mois précédant le 5e anniversaire (au plus tôt 01/07/2026).",
+                ),
               ),
               const SizedBox(height: 12),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les motos utilisées dans le cadre de compétitions sportives et appartenant à une personne titulaire d’une licence délivrée par une fédération sportive ne sont pas concernées par la mise en place de ce contrôle technique.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00060",
+                      "Les motos utilisées dans le cadre de compétitions sportives et appartenant à une personne titulaire d’une licence délivrée par une fédération sportive ne sont pas concernées par la mise en place de ce contrôle technique.",
+                    ),
                   ),
                 ],
               ),
@@ -303,66 +555,147 @@ class ControleTechniquePage extends StatelessWidget {
 
           // Conséquences
           _ConditionCard(
-            title: "V — Conséquences du contrôle technique",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00061",
+              "V — Conséquences du contrôle technique",
+            ),
             cardColor: cardConsequences,
             accent: accentAmber,
             titleColor: textMain,
             children: [
-              const _Paragraph(
-                "À l’issue du contrôle, un procès-verbal est établi (un exemplaire est remis). "
-                "Il liste les défauts constatés et peut imposer une contre-visite dans un délai maximal de 2 mois.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00062",
+                      "À l’issue du contrôle, un procès-verbal est établi (un exemplaire est remis). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00063",
+                      "Il liste les défauts constatés et peut imposer une contre-visite dans un délai maximal de 2 mois.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _SubTitle("A) Contre-visite obligatoire si…"),
-              const _BulletPoint(
-                text:
-                    "Défaillance majeure : susceptible de compromettre la sécurité, d’avoir une incidence négative sur l’environnement, ou de mettre en danger les autres usagers.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00064",
+                  "A) Contre-visite obligatoire si…",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Défaillance critique : danger direct et immédiat pour la sécurité routière ou incidence grave sur l’environnement.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00065",
+                  "Défaillance majeure : susceptible de compromettre la sécurité, d’avoir une incidence négative sur l’environnement, ou de mettre en danger les autres usagers.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00066",
+                  "Défaillance critique : danger direct et immédiat pour la sécurité routière ou incidence grave sur l’environnement.",
+                ),
               ),
               const SizedBox(height: 12),
-              const _SubTitle("B) Timbre apposé sur le certificat"),
-              const _Paragraph(
-                "Le contrôleur appose un timbre indiquant :\n"
-                "• A : résultat favorable\n"
-                "• S : résultat défavorable (défaillance majeure)\n"
-                "• R : résultat défavorable (défaillance critique)\n\n"
-                "Le timbre mentionne aussi la date limite de validité et l’immatriculation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00067",
+                  "B) Timbre apposé sur le certificat",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00068",
+                      "Le contrôleur appose un timbre indiquant :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00069",
+                      "• A : résultat favorable\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00070",
+                      "• S : résultat défavorable (défaillance majeure)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00071",
+                      "• R : résultat défavorable (défaillance critique)\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00072",
+                      "Le timbre mentionne aussi la date limite de validité et l’immatriculation.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La mention « report de la visite » peut figurer sur le PV si l’état du véhicule ne permet pas la vérification des points de contrôle "
-                        "(accès impossible à des éléments d’identification/sécurité, installations hors service, etc.).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                          "f00073",
+                          "La mention « report de la visite » peut figurer sur le PV si l’état du véhicule ne permet pas la vérification des points de contrôle ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                          "f00074",
+                          "(accès impossible à des éléments d’identification/sécurité, installations hors service, etc.).",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
-                  text:
-                      "Si la contre-visite n’est pas effectuée dans les 2 mois, un nouveau contrôle est requis (",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00075",
+                    "Si la contre-visite n’est pas effectuée dans les 2 mois, un nouveau contrôle est requis (",
+                  ),
                 ),
                 TextSpan(
-                  text: "NATINF 12522",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00076",
+                    "NATINF 12522",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: " / "),
                 TextSpan(
-                  text: "NATINF 12523",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00077",
+                    "NATINF 12523",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Lorsque aucune contre-visite n’est prescrite, une vignette est apposée en bas à droite du pare-brise "
-                "avec notamment la date limite de validité.\n\n"
-                "La non-apposition de la vignette sur le pare-brise ne constitue pas une infraction.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00078",
+                      "Lorsque aucune contre-visite n’est prescrite, une vignette est apposée en bas à droite du pare-brise ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00079",
+                      "avec notamment la date limite de validité.\n\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                      "f00080",
+                      "La non-apposition de la vignette sur le pare-brise ne constitue pas une infraction.",
+                    ),
               ),
             ],
           ),
@@ -371,74 +704,183 @@ class ControleTechniquePage extends StatelessWidget {
 
           // Infractions / NATINF
           _ConditionCard(
-            title: "VI — Infractions (NATINF) & bases légales",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+              "f00081",
+              "VI — Infractions (NATINF) & bases légales",
+            ),
             cardColor: cardInfra,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Maintien en circulation sans contrôle"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00082",
+                  "Maintien en circulation sans contrôle",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "NATINF 12522",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00083",
+                    "NATINF 12522",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
-                  text:
-                      " — Maintien en circulation de voiture particulière sans contrôle technique périodique (base : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00084",
+                    " — Maintien en circulation de voiture particulière sans contrôle technique périodique (base : ",
+                  ),
                 ),
-                _lawSpan("R. 323-1"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00085",
+                    "R. 323-1",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 323-6"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00086",
+                    "R. 323-6",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 323-22 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00087",
+                    "R. 323-22 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "NATINF 12523",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00088",
+                    "NATINF 12523",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
-                  text:
-                      " — Maintien en circulation de camionnette (≤ 3,5 t) sans contrôle technique périodique (base : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00089",
+                    " — Maintien en circulation de camionnette (≤ 3,5 t) sans contrôle technique périodique (base : ",
+                  ),
                 ),
-                _lawSpan("R. 323-1"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00090",
+                    "R. 323-1",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 323-6"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00091",
+                    "R. 323-6",
+                  ),
+                ),
                 const TextSpan(text: " et "),
-                _lawSpan("R. 323-22 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00092",
+                    "R. 323-22 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 12),
-              const _SubTitle("Vente / mutation"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                  "f00093",
+                  "Vente / mutation",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "NATINF 5678",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00094",
+                    "NATINF 5678",
+                  ),
                   style: GoogleFonts.fustat(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
-                  text:
-                      " — Vente d’un véhicule de plus de 4 ans sans remise du rapport de contrôle à l’acheteur professionnel (bases : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00095",
+                    " — Vente d’un véhicule de plus de 4 ans sans remise du rapport de contrôle à l’acheteur professionnel (bases : ",
+                  ),
                 ),
-                _lawSpan("R. 323-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00096",
+                    "R. 323-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("D. 78-993 du 04/10/1978"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00097",
+                    "D. 78-993 du 04/10/1978",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("L. 412-1 du Code de la consommation"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00098",
+                    "L. 412-1 du Code de la consommation",
+                  ),
+                ),
                 const TextSpan(text: ", "),
-                _lawSpan("R. 451-1 du Code de la consommation"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                    "f00099",
+                    "R. 451-1 du Code de la consommation",
+                  ),
+                ),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 12),
-              const _NotaBox(
+              _NotaBox(
                 title: "Mesures",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "AF min. 4e classe. DIA et dépistages stupéfiants facultatifs. Immobilisation possible "
-                        "(fiche de circulation provisoire valable 7 jours). MEF possible si véhicule non présenté au CT "
-                        "ou réparations prescrites non exécutées. PVO possible (5e classe).",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                          "f00100",
+                          "AF min. 4e classe. DIA et dépistages stupéfiants facultatifs. Immobilisation possible ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                          "f00101",
+                          "(fiche de circulation provisoire valable 7 jours). MEF possible si véhicule non présenté au CT ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/controle_routier/controle_technique_page.dart",
+                          "f00102",
+                          "ou réparations prescrites non exécutées. PVO possible (5e classe).",
+                        ),
                   ),
                 ],
               ),

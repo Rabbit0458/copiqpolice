@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — RÉTENTION DANS LES LOCAUX DE POLICE
@@ -45,7 +46,11 @@ class RetentionPrincipesPage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'Rétention – Principes généraux',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+            "f00001",
+            'Rétention – Principes généraux',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -61,7 +66,11 @@ class RetentionPrincipesPage extends StatelessWidget {
         children: [
           // ================= TITRE GLOBAL =================
           Text(
-            'I. Rétention dans les locaux de police\n(Principes généraux)',
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+              "f00002",
+              'I. Rétention dans les locaux de police\n(Principes généraux)',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 20,
@@ -70,17 +79,41 @@ class RetentionPrincipesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
 
-          const _Paragraph(
-            'Les services de police disposent presque tous de locaux de rétention de personnes '
-            '(geôles, locaux de garde à vue). Comme la gendarmerie, les douanes et l’autorité judiciaire, '
-            'ils peuvent retenir des individus, mais uniquement dans les cas et les formes prévus par la loi.',
+          _Paragraph(
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00003",
+                  'Les services de police disposent presque tous de locaux de rétention de personnes ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00004",
+                  '(geôles, locaux de garde à vue). Comme la gendarmerie, les douanes et l’autorité judiciaire, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00005",
+                  'ils peuvent retenir des individus, mais uniquement dans les cas et les formes prévus par la loi.',
+                ),
           ),
           const SizedBox(height: 10),
 
           Text(
-            'En toile de fond, un principe majeur : la liberté individuelle, dont la liberté d’aller et venir '
-            'est une composante essentielle. Toute rétention constitue donc une atteinte exceptionnelle à cette '
-            'liberté, justifiée seulement lorsqu’il faut protéger un autre droit ou une autre liberté.',
+            ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00006",
+                  'En toile de fond, un principe majeur : la liberté individuelle, dont la liberté d’aller et venir ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00007",
+                  'est une composante essentielle. Toute rétention constitue donc une atteinte exceptionnelle à cette ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00008",
+                  'liberté, justifiée seulement lorsqu’il faut protéger un autre droit ou une autre liberté.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 14,
@@ -90,17 +123,23 @@ class RetentionPrincipesPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
 
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text:
-                  'La liberté est le principe, la rétention est l’exception encadrée par la loi.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                "f00009",
+                'La liberté est le principe, la rétention est l’exception encadrée par la loi.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
           ]),
-          const _BulletPoint.rich([
+          _BulletPoint.rich([
             TextSpan(
-              text:
-                  'Chaque mesure de rétention doit pouvoir être rattachée à un texte précis, avec une durée et un niveau de coercition clairement définis.',
+              text: ScolariteText.value(
+                "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                "f00010",
+                'Chaque mesure de rétention doit pouvoir être rattachée à un texte précis, avec une durée et un niveau de coercition clairement définis.',
+              ),
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
           ]),
@@ -111,48 +150,86 @@ class RetentionPrincipesPage extends StatelessWidget {
           // 1 — LOCAUX DE RÉTENTION & ADMINISTRATIONS
           // =====================================================
           _HypoCard(
-            title: '1. Locaux de rétention et administrations concernées',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+              "f00011",
+              '1. Locaux de rétention et administrations concernées',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Les locaux de rétention de personnes regroupent notamment les geôles et locaux de garde à vue. '
-                'Ils permettent de maintenir temporairement une personne sous la main de la police, le temps d’une mesure judiciaire '
-                'ou administrative clairement encadrée.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00012",
+                      'Les locaux de rétention de personnes regroupent notamment les geôles et locaux de garde à vue. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00013",
+                      'Ils permettent de maintenir temporairement une personne sous la main de la police, le temps d’une mesure judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00014",
+                      'ou administrative clairement encadrée.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Police nationale et gendarmerie',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00015",
+                    'Police nationale et gendarmerie',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      ' : administrations principalement concernées par la rétention dans leurs locaux opérationnels.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00016",
+                    ' : administrations principalement concernées par la rétention dans leurs locaux opérationnels.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Douanes et justice',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00017",
+                    'Douanes et justice',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      ' : disposent également de prérogatives de rétention dans un cadre spécifique (rétention douanière, locaux pénitentiaires ou judiciaires).',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00018",
+                    ' : disposent également de prérogatives de rétention dans un cadre spécifique (rétention douanière, locaux pénitentiaires ou judiciaires).',
+                  ),
                 ),
               ]),
 
               const SizedBox(height: 10),
-              const _ExempleBox(
+              _ExempleBox(
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Une personne interpellée pour vol aggravé est placée en garde à vue dans les locaux du commissariat. '
-                        'Son retenu n’est licite que parce qu’elle s’inscrit dans une procédure judiciaire prévue par le Code de procédure pénale.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00019",
+                          'Une personne interpellée pour vol aggravé est placée en garde à vue dans les locaux du commissariat. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00020",
+                          'Son retenu n’est licite que parce qu’elle s’inscrit dans une procédure judiciaire prévue par le Code de procédure pénale.',
+                        ),
                   ),
                 ],
               ),
@@ -165,53 +242,91 @@ class RetentionPrincipesPage extends StatelessWidget {
           // 2 — LIBERTÉ INDIVIDUELLE & LIBERTÉ D’ALLER ET VENIR
           // =====================================================
           _HypoCard(
-            title: '2. Liberté individuelle et liberté d’aller et venir',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+              "f00021",
+              '2. Liberté individuelle et liberté d’aller et venir',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: const [
+            children: [
               _Paragraph(
-                'La liberté d’aller et venir est l’une des composantes centrales de la liberté individuelle. '
-                'Retenir quelqu’un dans un local de police revient donc à limiter directement cette liberté fondamentale.',
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00022",
+                      'La liberté d’aller et venir est l’une des composantes centrales de la liberté individuelle. ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00023",
+                      'Retenir quelqu’un dans un local de police revient donc à limiter directement cette liberté fondamentale.',
+                    ),
               ),
               SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Atteinte justifiée par un autre droit',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00024",
+                    'Atteinte justifiée par un autre droit',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' : la rétention ne se conçoit que pour protéger un autre intérêt majeur (sécurité des personnes, ordre public, exécution des décisions de justice, etc.).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00025",
+                    ' : la rétention ne se conçoit que pour protéger un autre intérêt majeur (sécurité des personnes, ordre public, exécution des décisions de justice, etc.).',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Atteinte strictement limitée',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00026",
+                    'Atteinte strictement limitée',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
                   ),
                 ),
                 TextSpan(
-                  text:
-                      ' : le temps et le niveau de contrainte doivent rester réduits à ce qui est nécessaire à la mesure (durée maximale, fouilles, usage de menottes…).',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00027",
+                    ' : le temps et le niveau de contrainte doivent rester réduits à ce qui est nécessaire à la mesure (durée maximale, fouilles, usage de menottes…).',
+                  ),
                 ),
               ]),
 
               SizedBox(height: 10),
               _NotaBox(
-                title: 'Idée clé',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00028",
+                  'Idée clé',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Ce n’est pas parce qu’une personne est placée en geôle qu’elle perd tous ses droits. '
-                        'Elle reste titulaire de la liberté individuelle : seule la portion strictement nécessaire à la mesure est temporairement restreinte.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00029",
+                          'Ce n’est pas parce qu’une personne est placée en geôle qu’elle perd tous ses droits. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00030",
+                          'Elle reste titulaire de la liberté individuelle : seule la portion strictement nécessaire à la mesure est temporairement restreinte.',
+                        ),
                   ),
                 ],
               ),
@@ -224,37 +339,67 @@ class RetentionPrincipesPage extends StatelessWidget {
           // 3 — ENCADREMENT LÉGAL & ARTICLE 9 DDHC
           // =====================================================
           _HypoCard(
-            title:
-                '3. Encadrement légal, article 9 DDHC et contrôle judiciaire',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+              "f00031",
+              '3. Encadrement légal, article 9 DDHC et contrôle judiciaire',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'Les atteintes à la liberté d’aller et venir ont été codifiées par le législateur lui-même, '
-                'afin de concilier protection des libertés et exigences de sécurité. Elles s’accompagnent toujours d’un formalisme précis '
-                'et d’un contrôle par l’autorité judiciaire.',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00032",
+                      'Les atteintes à la liberté d’aller et venir ont été codifiées par le législateur lui-même, ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00033",
+                      'afin de concilier protection des libertés et exigences de sécurité. Elles s’accompagnent toujours d’un formalisme précis ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00034",
+                      'et d’un contrôle par l’autorité judiciaire.',
+                    ),
               ),
               const SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      'Article 9 de la Déclaration des droits de l’homme et du citoyen',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00035",
+                    'Article 9 de la Déclaration des droits de l’homme et du citoyen',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
-                      ' : toute personne est présumée innocente tant que sa culpabilité n’a pas été légalement établie. '
-                      'Si l’on juge indispensable de l’arrêter, les rigueurs imposées doivent rester strictement nécessaires pour s’assurer de sa personne.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                        "f00036",
+                        ' : toute personne est présumée innocente tant que sa culpabilité n’a pas été légalement établie. ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                        "f00037",
+                        'Si l’on juge indispensable de l’arrêter, les rigueurs imposées doivent rester strictement nécessaires pour s’assurer de sa personne.',
+                      ),
                 ),
               ]),
               const SizedBox(height: 8),
 
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Pas de texte = rétention arbitraire',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00038",
+                    'Pas de texte = rétention arbitraire',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -262,13 +407,25 @@ class RetentionPrincipesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : une mesure non prévue par la loi ou qui déborde le cadre fixé (durée, droits, niveau de contrainte) '
-                      'peut être qualifiée d’arbitraire et engager la responsabilité de l’agent et de l’État.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                        "f00039",
+                        ' : une mesure non prévue par la loi ou qui déborde le cadre fixé (durée, droits, niveau de contrainte) ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                        "f00040",
+                        'peut être qualifiée d’arbitraire et engager la responsabilité de l’agent et de l’État.',
+                      ),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
-                  text: 'Contrôle du juge',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00041",
+                    'Contrôle du juge',
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: redAccent,
@@ -276,19 +433,39 @@ class RetentionPrincipesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text:
-                      ' : l’autorité judiciaire vérifie, a posteriori, la régularité de la rétention (fondement juridique, durée, respect des droits). '
-                      'Un manquement peut entraîner annulation de procédure et indemnisations.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                        "f00042",
+                        ' : l’autorité judiciaire vérifie, a posteriori, la régularité de la rétention (fondement juridique, durée, respect des droits). ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                        "f00043",
+                        'Un manquement peut entraîner annulation de procédure et indemnisations.',
+                      ),
                 ),
               ]),
 
               const SizedBox(height: 10),
-              const _ExempleBox(
-                title: 'Exemple opérationnel',
+              _ExempleBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00044",
+                  'Exemple opérationnel',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Une personne est maintenue plusieurs heures dans un local de police sans base légale claire ni mention d’horaire de début. '
-                        'En cas de contestation, le juge peut considérer la rétention comme arbitraire, annuler les actes subséquents et engager des poursuites.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00045",
+                          'Une personne est maintenue plusieurs heures dans un local de police sans base légale claire ni mention d’horaire de début. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00046",
+                          'En cas de contestation, le juge peut considérer la rétention comme arbitraire, annuler les actes subséquents et engager des poursuites.',
+                        ),
                   ),
                 ],
               ),
@@ -301,48 +478,94 @@ class RetentionPrincipesPage extends StatelessWidget {
           // 4 — JUDICIAIRE / ADMINISTRATIF : CLÉ PÉDAGOGIQUE
           // =====================================================
           _HypoCard(
-            title: '4. Rétention judiciaire / rétention administrative',
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+              "f00047",
+              '4. Rétention judiciaire / rétention administrative',
+            ),
             cardColor: card,
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'La rétention d’une personne dans les locaux de police peut reposer sur une mesure à caractère judiciaire '
-                '(garde à vue, vérification d’identité, exécution d’un mandat, etc.) ou sur une mesure à caractère administratif '
-                '(droit au séjour, ivresse publique et manifeste, mineurs en fugue, terrorisme, etc.).',
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00048",
+                      'La rétention d’une personne dans les locaux de police peut reposer sur une mesure à caractère judiciaire ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00049",
+                      '(garde à vue, vérification d’identité, exécution d’un mandat, etc.) ou sur une mesure à caractère administratif ',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                      "f00050",
+                      '(droit au séjour, ivresse publique et manifeste, mineurs en fugue, terrorisme, etc.).',
+                    ),
               ),
               const SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Mesures à caractère judiciaire',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00051",
+                    'Mesures à caractère judiciaire',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      ' : décidées ou contrôlées par l’autorité judiciaire, elles s’inscrivent dans une procédure pénale ou quasi-pénale.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00052",
+                    ' : décidées ou contrôlées par l’autorité judiciaire, elles s’inscrivent dans une procédure pénale ou quasi-pénale.',
+                  ),
                 ),
               ]),
               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Mesures à caractère administratif',
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00053",
+                    'Mesures à caractère administratif',
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900, color: accent),
                 ),
-                const TextSpan(
-                  text:
-                      ' : décidées par l’autorité administrative (préfet, maire, administration), elles visent principalement la protection de l’ordre public.',
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                    "f00054",
+                    ' : décidées par l’autorité administrative (préfet, maire, administration), elles visent principalement la protection de l’ordre public.',
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _NotaBox(
-                title: 'Attention pratique',
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                  "f00055",
+                  'Attention pratique',
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Dans certaines situations (par exemple la vérification d’identité), la frontière entre judiciaire et administratif peut être floue. '
-                        'La distinction reste surtout pédagogique : sur le terrain, l’important est de connaître le fondement juridique exact, la durée maximale '
-                        'et les droits de la personne retenue.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00056",
+                          'Dans certaines situations (par exemple la vérification d’identité), la frontière entre judiciaire et administratif peut être floue. ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00057",
+                          'La distinction reste surtout pédagogique : sur le terrain, l’important est de connaître le fondement juridique exact, la durée maximale ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_principes_page.dart",
+                          "f00058",
+                          'et les droits de la personne retenue.',
+                        ),
                   ),
                 ],
               ),

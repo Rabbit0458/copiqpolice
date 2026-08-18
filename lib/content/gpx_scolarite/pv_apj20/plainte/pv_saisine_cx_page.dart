@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PVPvSaisineCxPage extends StatelessWidget {
   const PVPvSaisineCxPage({super.key});
@@ -55,7 +56,11 @@ class PVPvSaisineCxPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Plainte",
@@ -73,7 +78,11 @@ class PVPvSaisineCxPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV de saisine — contre X",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+              "f00002",
+              "PV de saisine — contre X",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 22,
@@ -85,37 +94,49 @@ class PVPvSaisineCxPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+              "f00003",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les officiers et agents de police judiciaire sont tenus de recevoir les plaintes, y compris si le service est territorialement incompétent (transmission si besoin). — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00004",
+                    "Les officiers et agents de police judiciaire sont tenus de recevoir les plaintes, y compris si le service est territorialement incompétent (transmission si besoin). — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 15-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00005",
+                    "article 15-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La plainte peut également être déposée par voie électronique (atteintes aux biens, auteur inconnu), sans pouvoir être imposée à la victime. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00006",
+                    "La plainte peut également être déposée par voie électronique (atteintes aux biens, auteur inconnu), sans pouvoir être imposée à la victime. — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 15-3-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00007",
+                    "article 15-3-1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -123,8 +144,11 @@ class PVPvSaisineCxPage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Dans tous les cas : dépôt de plainte = procès-verbal + récépissé immédiat, et copie si la victime le demande.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                      "f00008",
+                      "Dans tous les cas : dépôt de plainte = procès-verbal + récépissé immédiat, et copie si la victime le demande.",
+                    ),
                   ),
                 ],
               ),
@@ -135,18 +159,34 @@ class PVPvSaisineCxPage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+              "f00009",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La plainte « contre X » est utilisée lorsque l’auteur n’est pas identifié. "
-                "Le PV de saisine formalise la déclaration de la victime et fixe une base claire pour diligenter les premières investigations.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                      "f00010",
+                      "La plainte « contre X » est utilisée lorsque l’auteur n’est pas identifié. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                      "f00011",
+                      "Le PV de saisine formalise la déclaration de la victime et fixe une base claire pour diligenter les premières investigations.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’objectif n’est pas seulement de « raconter » : il faut rendre le dossier exploitable (qualification, pistes, actes à réaliser, preuves).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00012",
+                  "L’objectif n’est pas seulement de « raconter » : il faut rendre le dossier exploitable (qualification, pistes, actes à réaliser, preuves).",
+                ),
               ),
             ],
           ),
@@ -155,64 +195,128 @@ class PVPvSaisineCxPage extends StatelessWidget {
 
           // Comment le faire (checklist opérationnelle)
           _ConditionCard(
-            title: "II — Contenu indispensable (checklist)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+              "f00013",
+              "II — Contenu indispensable (checklist)",
+            ),
             cardColor: cardHow,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Situer les faits (temps / espace)"),
-              _BulletPoint(
-                text:
-                    "Date/heure (ou période) la plus précise possible, et chronologie simple.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00014",
+                  "A) Situer les faits (temps / espace)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lieu précis (adresse, étage, parties communes, parking, voie publique…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00015",
+                  "Date/heure (ou période) la plus précise possible, et chronologie simple.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Contexte : comment la victime découvre les faits, première constatation.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00016",
+                  "Lieu précis (adresse, étage, parties communes, parking, voie publique…).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00017",
+                  "Contexte : comment la victime découvre les faits, première constatation.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Décrire l’infraction et le mode opératoire"),
-              _BulletPoint(
-                text:
-                    "Ce qui s’est passé (faits matériels), ce que la victime a vu/entendu/constaté.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00018",
+                  "B) Décrire l’infraction et le mode opératoire",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mode opératoire : accès, effraction, ruse, fraude, moyen utilisé, timing.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00019",
+                  "Ce qui s’est passé (faits matériels), ce que la victime a vu/entendu/constaté.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éléments techniques utiles : identifiants, numéros, IBAN, pseudo, URL, plateforme, IMEI, immatriculation…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00020",
+                  "Mode opératoire : accès, effraction, ruse, fraude, moyen utilisé, timing.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00021",
+                  "Éléments techniques utiles : identifiants, numéros, IBAN, pseudo, URL, plateforme, IMEI, immatriculation…",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("C) Exploitabilité immédiate"),
-              _BulletPoint(
-                text:
-                    "Signalements : description auteur(s) si aperçu(s), tenue, direction de fuite, véhicule.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00022",
+                  "C) Exploitabilité immédiate",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Objets/biens : liste détaillée (marque, modèle, série, valeur, particularités).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00023",
+                  "Signalements : description auteur(s) si aperçu(s), tenue, direction de fuite, véhicule.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préjudice : matériel, financier, moral (montants, dates de débits, factures).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00024",
+                  "Objets/biens : liste détaillée (marque, modèle, série, valeur, particularités).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Pièces remises : captures, mails, messages, relevés, factures, certificats… (à mentionner en ANNEXE).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00025",
+                  "Préjudice : matériel, financier, moral (montants, dates de débits, factures).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00026",
+                  "Pièces remises : captures, mails, messages, relevés, factures, certificats… (à mentionner en ANNEXE).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Astuce rédaction",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00027",
+                  "Astuce rédaction",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Écrire simple, factuel, chronologique. Faire ressortir : « quoi / quand / où / comment / preuves ». "
-                        "Le PV doit permettre d’engager des actes sans recontacter immédiatement la victime.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                          "f00028",
+                          "Écrire simple, factuel, chronologique. Faire ressortir : « quoi / quand / où / comment / preuves ». ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                          "f00029",
+                          "Le PV doit permettre d’engager des actes sans recontacter immédiatement la victime.",
+                        ),
                   ),
                 ],
               ),
@@ -223,45 +327,83 @@ class PVPvSaisineCxPage extends StatelessWidget {
 
           // Modèles
           _ConditionCard(
-            title: "III — Modèles de procès-verbaux",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+              "f00030",
+              "III — Modèles de procès-verbaux",
+            ),
             cardColor: cardModels,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Deux grands types de modèles peuvent être utilisés selon la situation.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00031",
+                  "Deux grands types de modèles peuvent être utilisés selon la situation.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("A) Procès-verbal ordinaire (P.V.O.)"),
-              _BulletPoint(
-                text:
-                    "Utilisé lorsque la victime connaît l’auteur (personne dénommée) ou quand le dossier ne nécessite pas de recherches complexes immédiates.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00032",
+                  "A) Procès-verbal ordinaire (P.V.O.)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exemples : violences entre époux, dégradations, violences en général (selon contexte).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00033",
+                  "Utilisé lorsque la victime connaît l’auteur (personne dénommée) ou quand le dossier ne nécessite pas de recherches complexes immédiates.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00034",
+                  "Exemples : violences entre époux, dégradations, violences en général (selon contexte).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Procès-verbaux normalisés (contre inconnu)"),
-              _BulletPoint(
-                text:
-                    "Conçus pour le recueil des plaintes contre X (atteintes aux biens, auteur inconnu).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00035",
+                  "B) Procès-verbaux normalisés (contre inconnu)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exemples : PV de voie publique, C.R.I. (Compte-Rendu d’Infraction Initiale), compte-rendu complémentaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00036",
+                  "Conçus pour le recueil des plaintes contre X (atteintes aux biens, auteur inconnu).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Exemples : vol de véhicule immatriculé, découverte/restitution de véhicule, usage frauduleux de moyen de paiement…",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00037",
+                  "Exemples : PV de voie publique, C.R.I. (Compte-Rendu d’Infraction Initiale), compte-rendu complémentaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00038",
+                  "Exemples : vol de véhicule immatriculé, découverte/restitution de véhicule, usage frauduleux de moyen de paiement…",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 title: "But",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Standardiser la collecte d’informations clés pour gagner du temps et sécuriser la qualité du PV (rubriques complètes).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                      "f00039",
+                      "Standardiser la collecte d’informations clés pour gagner du temps et sécuriser la qualité du PV (rubriques complètes).",
+                    ),
                   ),
                 ],
               ),
@@ -272,68 +414,105 @@ class PVPvSaisineCxPage extends StatelessWidget {
 
           // Services en ligne
           _ConditionCard(
-            title: "IV — Services en ligne",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+              "f00040",
+              "IV — Services en ligne",
+            ),
             cardColor: cardOnline,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Plainte en ligne"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00041",
+                  "A) Plainte en ligne",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Service accessible aux usagers pour une plainte par voie électronique (atteintes aux biens, auteur inconnu). — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00042",
+                    "Service accessible aux usagers pour une plainte par voie électronique (atteintes aux biens, auteur inconnu). — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 15-3-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00043",
+                    "article 15-3-1 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Les infractions concernées sont listées notamment par ",
-                ),
-                TextSpan(
-                  text: "l’article D. 8-2-1 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00044",
+                    "Les infractions concernées sont listées notamment par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " (atteintes aux biens : appropriations frauduleuses, destructions/dégradations, délit de fuite, certaines contraventions…).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00045",
+                    "l’article D. 8-2-1 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00046",
+                    " (atteintes aux biens : appropriations frauduleuses, destructions/dégradations, délit de fuite, certaines contraventions…).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Deux traitements : plainte entièrement dématérialisée (si aucun acte en présence requis) ou plainte finalisée en présentiel.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00047",
+                  "Deux traitements : plainte entièrement dématérialisée (si aucun acte en présence requis) ou plainte finalisée en présentiel.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La plainte en ligne ne dispense pas d’une audition ultérieure si la nature/gravitée des faits le justifie.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00048",
+                  "La plainte en ligne ne dispense pas d’une audition ultérieure si la nature/gravitée des faits le justifie.",
+                ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) THÉSÉE (e-escroqueries)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00049",
+                  "B) THÉSÉE (e-escroqueries)",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Pour les escroqueries commises sur internet : télédéclaration / plainte via le téléservice THÉSÉE (traitement harmonisé des enquêtes et signalements e-escroqueries). Référence mentionnée : ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00050",
+                    "Pour les escroqueries commises sur internet : télédéclaration / plainte via le téléservice THÉSÉE (traitement harmonisé des enquêtes et signalements e-escroqueries). Référence mentionnée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article A 1er du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                    "f00051",
+                    "article A 1er du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -342,8 +521,11 @@ class PVPvSaisineCxPage extends StatelessWidget {
                 title: "Rappel",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les infractions visées (exemples) : e-escroquerie, e-chantage, e-extorsion (selon les cas et connexités).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                      "f00052",
+                      "Les infractions visées (exemples) : e-escroquerie, e-chantage, e-extorsion (selon les cas et connexités).",
+                    ),
                   ),
                 ],
               ),
@@ -351,18 +533,29 @@ class PVPvSaisineCxPage extends StatelessWidget {
               SizedBox(height: 14),
 
               _SubTitle(
-                "C) Signalement VSS (violences sexuelles et sexistes)",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00053",
+                  "C) Signalement VSS (violences sexuelles et sexistes)",
+                ),
               ),
               _Paragraph(
-                "Portail accessible 24h/24 et 7j/7 via une messagerie de type « tchat », permettant d’échanger avec des policiers formés à l’accueil des victimes de violences sexuelles, sexistes ou conjugales.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                  "f00054",
+                  "Portail accessible 24h/24 et 7j/7 via une messagerie de type « tchat », permettant d’échanger avec des policiers formés à l’accueil des victimes de violences sexuelles, sexistes ou conjugales.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "Objectif",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Faciliter le premier contact, orienter, sécuriser l’accueil et préparer une prise en charge adaptée (plainte, audition, protection).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/plainte/pv_saisine_cx_page.dart",
+                      "f00055",
+                      "Faciliter le premier contact, orienter, sécuriser l’accueil et préparer une prise en charge adaptée (plainte, audition, protection).",
+                    ),
                   ),
                 ],
               ),

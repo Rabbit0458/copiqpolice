@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaOutrageSexistePage extends StatelessWidget {
   const PaOutrageSexistePage({super.key});
@@ -58,10 +59,18 @@ class PaOutrageSexistePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes volontaires à l'intégrité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+            "f00002",
+            "Atteintes volontaires à l'intégrité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -76,7 +85,11 @@ class PaOutrageSexistePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L'outrage sexiste et sexuel",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00003",
+              "L'outrage sexiste et sexuel",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -88,23 +101,47 @@ class PaOutrageSexistePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L'outrage sexiste et sexuel est constitué par tout propos ou comportement à connotation sexuelle "
-                "ou sexiste portant atteinte à la dignité d'une personne en raison de leur caractère dégradant "
-                "ou humiliant, ou créant à son encontre une situation intimidante, hostile ou offensante.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00005",
+                      "L'outrage sexiste et sexuel est constitué par tout propos ou comportement à connotation sexuelle ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00006",
+                      "ou sexiste portant atteinte à la dignité d'une personne en raison de leur caractère dégradant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00007",
+                      "ou humiliant, ou créant à son encontre une situation intimidante, hostile ou offensante.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L'outrage sexiste a été créé par la loi n° 2018-703 du 3 août 2018 renforçant la lutte "
-                        "contre les violences sexuelles et sexistes, dite « loi Schiappa ».",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00008",
+                          "L'outrage sexiste a été créé par la loi n° 2018-703 du 3 août 2018 renforçant la lutte ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00009",
+                          "contre les violences sexuelles et sexistes, dite « loi Schiappa ».",
+                        ),
                   ),
                 ],
               ),
@@ -115,23 +152,36 @@ class PaOutrageSexistePage extends StatelessWidget {
 
           // Élément légal
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00010",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 621-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                    "f00011",
+                    "Article 621-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : prévoit et réprime l'outrage sexiste et sexuel. "
-                      "Il s'agit d'une contravention, non d'un délit.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                        "f00012",
+                        " : prévoit et réprime l'outrage sexiste et sexuel. ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                        "f00013",
+                        "Il s'agit d'une contravention, non d'un délit.",
+                      ),
                 ),
               ]),
             ],
@@ -141,55 +191,143 @@ class PaOutrageSexistePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00014",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Des propos ou des comportements"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00015",
+                  "A) Des propos ou des comportements",
+                ),
+              ),
               _Paragraph(
-                "L'outrage peut résulter :\n"
-                "• de propos (verbaux, écrits, images, gestes à caractère sonore),\n"
-                "• de comportements (attitudes, gestes physiques).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00016",
+                      "L'outrage peut résulter :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00017",
+                      "• de propos (verbaux, écrits, images, gestes à caractère sonore),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00018",
+                      "• de comportements (attitudes, gestes physiques).",
+                    ),
               ),
               SizedBox(height: 14),
-              _SubTitle("B) À connotation sexuelle ou sexiste"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00019",
+                  "B) À connotation sexuelle ou sexiste",
+                ),
+              ),
               _Paragraph(
-                "Les propos ou comportements doivent avoir une connotation :\n"
-                "• sexuelle (relatifs au sexe, à la sexualité),\n"
-                "• ou sexiste (fondés sur le genre, discriminatoires à l'égard du sexe de la victime).",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00020",
+                      "Les propos ou comportements doivent avoir une connotation :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00021",
+                      "• sexuelle (relatifs au sexe, à la sexualité),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00022",
+                      "• ou sexiste (fondés sur le genre, discriminatoires à l'égard du sexe de la victime).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un commentaire sur le physique d'une femme dans la rue, des sifflements ou des propositions "
-                        "à caractère sexuel non sollicités peuvent constituer des actes d'outrage sexiste.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00023",
+                          "Un commentaire sur le physique d'une femme dans la rue, des sifflements ou des propositions ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00024",
+                          "à caractère sexuel non sollicités peuvent constituer des actes d'outrage sexiste.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 14),
-              _SubTitle("C) Portant atteinte à la dignité de la personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00025",
+                  "C) Portant atteinte à la dignité de la personne",
+                ),
+              ),
               _Paragraph(
-                "L'atteinte à la dignité est caractérisée par l'une ou l'autre des deux conditions alternatives :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00026",
+                  "L'atteinte à la dignité est caractérisée par l'une ou l'autre des deux conditions alternatives :",
+                ),
               ),
               SizedBox(height: 8),
               _BulletPoint(
                 text:
-                    "Caractère dégradant ou humiliant : les propos/comportements abaissent, "
-                    "méprisent ou rabaissent la victime.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00027",
+                      "Caractère dégradant ou humiliant : les propos/comportements abaissent, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00028",
+                      "méprisent ou rabaissent la victime.",
+                    ),
               ),
               _BulletPoint(
                 text:
-                    "Situation intimidante, hostile ou offensante : les propos/comportements "
-                    "créent un environnement agressif, menaçant ou blessant pour la victime.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00029",
+                      "Situation intimidante, hostile ou offensante : les propos/comportements ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00030",
+                      "créent un environnement agressif, menaçant ou blessant pour la victime.",
+                    ),
               ),
               SizedBox(height: 14),
-              _SubTitle("D) Dirigés contre une personne déterminée"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00031",
+                  "D) Dirigés contre une personne déterminée",
+                ),
+              ),
               _Paragraph(
-                "L'outrage doit être adressé à une ou plusieurs personnes identifiées. "
-                "Il ne peut s'agir de propos généraux sans destinataire précis.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00032",
+                      "L'outrage doit être adressé à une ou plusieurs personnes identifiées. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00033",
+                      "Il ne peut s'agir de propos généraux sans destinataire précis.",
+                    ),
               ),
             ],
           ),
@@ -198,22 +336,42 @@ class PaOutrageSexistePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00034",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L'auteur doit agir délibérément, en ayant conscience du caractère sexiste ou sexuel de ses propos "
-                "ou comportements et de l'atteinte portée à la dignité de la victime.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00035",
+                      "L'auteur doit agir délibérément, en ayant conscience du caractère sexiste ou sexuel de ses propos ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00036",
+                      "ou comportements et de l'atteinte portée à la dignité de la victime.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L'outrage sexiste est une infraction intentionnelle : une erreur sur la portée des propos "
-                        "ou une simple maladresse peut être invoquée pour écarter l'élément moral.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00037",
+                          "L'outrage sexiste est une infraction intentionnelle : une erreur sur la portée des propos ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00038",
+                          "ou une simple maladresse peut être invoquée pour écarter l'élément moral.",
+                        ),
                   ),
                 ],
               ),
@@ -224,49 +382,102 @@ class PaOutrageSexistePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00039",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La forme aggravée est constituée lorsque l'outrage sexiste est commis dans l'une des circonstances suivantes :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00040",
+                  "La forme aggravée est constituée lorsque l'outrage sexiste est commis dans l'une des circonstances suivantes :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Par plusieurs personnes agissant en qualité d'auteur ou de complice.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00041",
+                  "Par plusieurs personnes agissant en qualité d'auteur ou de complice.",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Dans un véhicule affecté au transport collectif de voyageurs ou dans un lieu "
-                    "destiné à l'accès à un moyen de transport collectif.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00042",
+                      "Dans un véhicule affecté au transport collectif de voyageurs ou dans un lieu ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00043",
+                      "destiné à l'accès à un moyen de transport collectif.",
+                    ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00044",
+                  "Par une personne en état d'ivresse manifeste ou sous l'emprise de produits stupéfiants.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00045",
+                  "Sur une personne mineure.",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Par une personne en état d'ivresse manifeste ou sous l'emprise de produits stupéfiants.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00046",
+                      "Sur une personne dont la particulière vulnérabilité due à son âge, à une maladie, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00047",
+                      "à une infirmité, à une déficience physique ou psychique ou à un état de grossesse est apparente ou connue de l'auteur.",
+                    ),
               ),
               _BulletPoint(
-                text: "Sur une personne mineure.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00048",
+                  "Par une personne qui abuse de l'autorité que lui confèrent ses fonctions.",
+                ),
               ),
               _BulletPoint(
                 text:
-                    "Sur une personne dont la particulière vulnérabilité due à son âge, à une maladie, "
-                    "à une infirmité, à une déficience physique ou psychique ou à un état de grossesse est apparente ou connue de l'auteur.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00049",
+                      "Sur une personne dont l'appartenance ou la non-appartenance, vraie ou supposée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00050",
+                      "à une nation, une ethnie, une race ou une religion est l'un des motifs de l'outrage.",
+                    ),
               ),
               _BulletPoint(
                 text:
-                    "Par une personne qui abuse de l'autorité que lui confèrent ses fonctions.",
-              ),
-              _BulletPoint(
-                text:
-                    "Sur une personne dont l'appartenance ou la non-appartenance, vraie ou supposée, "
-                    "à une nation, une ethnie, une race ou une religion est l'un des motifs de l'outrage.",
-              ),
-              _BulletPoint(
-                text:
-                    "Sur une personne dont l'orientation sexuelle ou l'identité de genre, vraie ou supposée, "
-                    "est l'un des motifs de l'outrage.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00051",
+                      "Sur une personne dont l'orientation sexuelle ou l'identité de genre, vraie ou supposée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00052",
+                      "est l'un des motifs de l'outrage.",
+                    ),
               ),
             ],
           ),
@@ -275,80 +486,162 @@ class PaOutrageSexistePage extends StatelessWidget {
 
           // Répression
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00053",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Forme simple — Contravention de 4e classe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00054",
+                  "Forme simple — Contravention de 4e classe",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "750 € d'amende",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                    "f00055",
+                    "750 € d'amende",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
                   ),
                 ),
-                const TextSpan(text: " (3 000 € pour les personnes morales)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                    "f00056",
+                    " (3 000 € pour les personnes morales).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La récidive est punie de la même amende portée au double, "
-                        "soit 1 500 € (6 000 € pour les personnes morales).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00057",
+                          "La récidive est punie de la même amende portée au double, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00058",
+                          "soit 1 500 € (6 000 € pour les personnes morales).",
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("Forme aggravée — Contravention de 5e classe"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00059",
+                  "Forme aggravée — Contravention de 5e classe",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "1 500 € d'amende",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                    "f00060",
+                    "1 500 € d'amende",
+                  ),
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: textMain,
                   ),
                 ),
-                const TextSpan(
-                  text: " (7 500 € pour les personnes morales).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                    "f00061",
+                    " (7 500 € pour les personnes morales).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "La récidive de la forme aggravée est punie de 3 000 € d'amende "
-                        "(15 000 € pour les personnes morales).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00062",
+                          "La récidive de la forme aggravée est punie de 3 000 € d'amende ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00063",
+                          "(15 000 € pour les personnes morales).",
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("Peines complémentaires"),
-              const _BulletPoint(
-                text:
-                    "Stage de citoyenneté (à titre de peine principale ou complémentaire).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00064",
+                  "Peines complémentaires",
+                ),
               ),
-              const _BulletPoint(
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00065",
+                  "Stage de citoyenneté (à titre de peine principale ou complémentaire).",
+                ),
+              ),
+              _BulletPoint(
                 text:
-                    "Stage de responsabilisation pour la prévention et la lutte contre les "
-                    "violences au sein du couple et sexistes.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00066",
+                      "Stage de responsabilisation pour la prévention et la lutte contre les ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00067",
+                      "violences au sein du couple et sexistes.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (contravention)."),
-              const _Paragraph.rich([
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00068",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00069",
+                  "Tentative : NON (contravention).",
+                ),
+              ),
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Complicité : OUI, conformément aux principes généraux du droit contraventionnel.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                    "f00070",
+                    "Complicité : OUI, conformément aux principes généraux du droit contraventionnel.",
+                  ),
                 ),
               ]),
             ],
@@ -358,33 +651,69 @@ class PaOutrageSexistePage extends StatelessWidget {
 
           // Distinction avec harcèlement sexuel
           _ConditionCard(
-            title: "VI — Distinction avec le harcèlement sexuel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+              "f00071",
+              "VI — Distinction avec le harcèlement sexuel",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L'outrage sexiste se distingue du harcèlement sexuel :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                  "f00072",
+                  "L'outrage sexiste se distingue du harcèlement sexuel :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
                 text:
-                    "Harcèlement sexuel (art. 222-33 Cp) : délit — implique des propos ou comportements "
-                    "répétés (ou acte unique grave), et vise à obtenir des faveurs à caractère sexuel ou "
-                    "à créer une situation humiliante durable.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00073",
+                      "Harcèlement sexuel (art. 222-33 Cp) : délit — implique des propos ou comportements ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00074",
+                      "répétés (ou acte unique grave), et vise à obtenir des faveurs à caractère sexuel ou ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00075",
+                      "à créer une situation humiliante durable.",
+                    ),
               ),
               _BulletPoint(
                 text:
-                    "Outrage sexiste (art. 621-1 Cp) : contravention — peut résulter d'un acte unique, "
-                    "sans nécessité de répétition ni de but de sollicitation sexuelle.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00076",
+                      "Outrage sexiste (art. 621-1 Cp) : contravention — peut résulter d'un acte unique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                      "f00077",
+                      "sans nécessité de répétition ni de but de sollicitation sexuelle.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Un même comportement peut, selon sa gravité et sa répétition, être qualifié "
-                        "d'outrage sexiste (contravention) ou de harcèlement sexuel (délit).",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00078",
+                          "Un même comportement peut, selon sa gravité et sa répétition, être qualifié ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart",
+                          "f00079",
+                          "d'outrage sexiste (contravention) ou de harcèlement sexuel (délit).",
+                        ),
                   ),
                 ],
               ),

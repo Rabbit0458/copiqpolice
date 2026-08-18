@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
   const PaSubstancePourViolOuAgressionPage({super.key});
@@ -70,7 +71,11 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
       backgroundColor: pageBg,
       appBar: AppBar(
         title: Text(
-          "Substance pour commettre un viol ou une agression sexuelle",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+            "f00001",
+            "Substance pour commettre un viol ou une agression sexuelle",
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
         ),
         centerTitle: false,
@@ -86,15 +91,29 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
             children: [
               // ✅ EXIGENCE : article légal tout en haut
               _ConditionCard(
-                title: "Article de référence (élément légal)",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00002",
+                  "Article de référence (élément légal)",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-30-1 du Code pénal"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00003",
+                        "Article 222-30-1 du Code pénal",
+                      ),
+                    ),
                     normal(
-                      " : définit et réprime l’administration d’une substance afin de commettre un viol ou une agression sexuelle.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00004",
+                        " : définit et réprime l’administration d’une substance afin de commettre un viol ou une agression sexuelle.",
+                      ),
                     ),
                   ]),
                 ],
@@ -103,28 +122,55 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               _ConditionCard(
-                title: "Définition",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00005",
+                  "Définition",
+                ),
                 cardColor: cIntro,
                 accent: cIntroAccent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    "Le fait d’administrer à une personne, à son insu, une substance de nature à altérer son discernement "
-                    "ou le contrôle de ses actes afin de commettre à son égard un viol ou une agression sexuelle constitue une infraction.",
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00006",
+                          "Le fait d’administrer à une personne, à son insu, une substance de nature à altérer son discernement ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00007",
+                          "ou le contrôle de ses actes afin de commettre à son égard un viol ou une agression sexuelle constitue une infraction.",
+                        ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("À retenir"),
-                  _IntroBullet(
-                    text:
-                        "L’administration doit être faite à l’insu de la victime (elle ne se doute de rien).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00008",
+                      "À retenir",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "La substance doit altérer le discernement ou le contrôle des actes (soumission chimique).",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00009",
+                      "L’administration doit être faite à l’insu de la victime (elle ne se doute de rien).",
+                    ),
                   ),
                   _IntroBullet(
-                    text:
-                        "L’administration doit être réalisée dans un but sexuel : commettre un viol ou une agression sexuelle.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00010",
+                      "La substance doit altérer le discernement ou le contrôle des actes (soumission chimique).",
+                    ),
+                  ),
+                  _IntroBullet(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00011",
+                      "L’administration doit être réalisée dans un but sexuel : commettre un viol ou une agression sexuelle.",
+                    ),
                   ),
                 ],
               ),
@@ -133,14 +179,30 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
 
               // I — Élément légal
               _ConditionCard(
-                title: "I — Élément légal",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00012",
+                  "I — Élément légal",
+                ),
                 cardColor: cLegal,
                 accent: cLegalAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-30-1 du C.P."),
-                    normal(" : incrimine et réprime cette infraction."),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00013",
+                        "Article 222-30-1 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00014",
+                        " : incrimine et réprime cette infraction.",
+                      ),
+                    ),
                   ]),
                 ],
               ),
@@ -149,63 +211,157 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
 
               // II — Élément matériel
               _ConditionCard(
-                title: "II — Élément matériel",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00015",
+                  "II — Élément matériel",
+                ),
                 cardColor: cMat,
                 accent: cMatAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("1) Administration d’une substance"),
-                  const _SubTitle("• Nature de la substance"),
-                  const _Paragraph(
-                    "La nature exacte de la substance importe peu dès lors qu’elle est de nature à altérer le discernement "
-                    "ou le contrôle des actes de la victime.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00016",
+                      "1) Administration d’une substance",
+                    ),
+                  ),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00017",
+                      "• Nature de la substance",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00018",
+                          "La nature exacte de la substance importe peu dès lors qu’elle est de nature à altérer le discernement ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00019",
+                          "ou le contrôle des actes de la victime.",
+                        ),
                   ),
                   const SizedBox(height: 10),
-                  const _SubTitle("• Mode d’administration"),
-                  const _Paragraph(
-                    "Le mode d’administration varie selon la substance : ingestion, inhalation, injection ou exposition "
-                    "(solide, liquide, gaz ou rayonnement).",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00020",
+                      "• Mode d’administration",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00021",
+                          "Le mode d’administration varie selon la substance : ingestion, inhalation, injection ou exposition ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00022",
+                          "(solide, liquide, gaz ou rayonnement).",
+                        ),
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle("2) À l’insu de la victime"),
-                  const _Paragraph(
-                    "La victime ne se doute pas qu’on lui administre une substance : l’action échappe à son attention.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00023",
+                      "2) À l’insu de la victime",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00024",
+                      "La victime ne se doute pas qu’on lui administre une substance : l’action échappe à son attention.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _NotaBox(
                     title: "NOTA",
                     bodySpans: [
                       normal(
-                        "La consommation par la victime d’alcool ou de stupéfiants en toute connaissance de cause ne suffit pas à caractériser "
-                        "cette infraction. En revanche, l’état d’ivresse peut permettre de qualifier un viol par surprise (",
+                        ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                              "f00025",
+                              "La consommation par la victime d’alcool ou de stupéfiants en toute connaissance de cause ne suffit pas à caractériser ",
+                            ) +
+                            ScolariteText.value(
+                              "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                              "f00026",
+                              "cette infraction. En revanche, l’état d’ivresse peut permettre de qualifier un viol par surprise (",
+                            ),
                       ),
-                      normal("Cass. crim., 18 décembre 1991"),
+                      normal(
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00027",
+                          "Cass. crim., 18 décembre 1991",
+                        ),
+                      ),
                       normal(")."),
                     ],
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "3) Substance de nature à altérer le discernement / le contrôle des actes",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00028",
+                      "3) Substance de nature à altérer le discernement / le contrôle des actes",
+                    ),
                   ),
-                  const _Paragraph(
-                    "Il s’agit de substances provoquant des effets comparables à l’ivresse (ex. G.H.B.). "
-                    "Elles diminuent la résistance physique et psychique : la victime se trouve dans un état second, "
-                    "sans contrôle de sa volonté ni de sa conscience. On parle de « soumission chimique ». "
-                    "Certaines substances ont un effet sédatif et amnésiant, pouvant effacer le souvenir des faits.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00029",
+                          "Il s’agit de substances provoquant des effets comparables à l’ivresse (ex. G.H.B.). ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00030",
+                          "Elles diminuent la résistance physique et psychique : la victime se trouve dans un état second, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00031",
+                          "sans contrôle de sa volonté ni de sa conscience. On parle de « soumission chimique ». ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00032",
+                          "Certaines substances ont un effet sédatif et amnésiant, pouvant effacer le souvenir des faits.",
+                        ),
                   ),
 
                   const SizedBox(height: 14),
 
-                  const _SubTitle(
-                    "4) Dans le but de commettre un viol ou une agression sexuelle",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00033",
+                      "4) Dans le but de commettre un viol ou une agression sexuelle",
+                    ),
                   ),
-                  const _Paragraph(
-                    "La substance est administrée en vue de commettre un viol ou une agression sexuelle : "
-                    "le but sexuel est un élément déterminant de l’infraction.",
+                  _Paragraph(
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00034",
+                          "La substance est administrée en vue de commettre un viol ou une agression sexuelle : ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00035",
+                          "le but sexuel est un élément déterminant de l’infraction.",
+                        ),
                   ),
                 ],
               ),
@@ -214,20 +370,48 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
 
               // III — Élément moral
               _ConditionCard(
-                title: "III — Élément moral",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00036",
+                  "III — Élément moral",
+                ),
                 cardColor: cMoral,
                 accent: cMoralAccent,
                 titleColor: titleColor,
-                children: const [
-                  _SubTitle("1) Connaissance du caractère sédatif / amnésiant"),
+                children: [
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00037",
+                      "1) Connaissance du caractère sédatif / amnésiant",
+                    ),
+                  ),
                   _Paragraph(
-                    "L’auteur a conscience du caractère sédatif et/ou amnésiant de la substance administrée.",
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00038",
+                      "L’auteur a conscience du caractère sédatif et/ou amnésiant de la substance administrée.",
+                    ),
                   ),
                   SizedBox(height: 10),
-                  _SubTitle("2) Volonté de profiter de la soumission chimique"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00039",
+                      "2) Volonté de profiter de la soumission chimique",
+                    ),
+                  ),
                   _Paragraph(
-                    "L’élément moral se traduit par une volonté délibérée et réfléchie de profiter de la soumission chimique "
-                    "pour commettre un viol ou une agression sexuelle.",
+                    ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00040",
+                          "L’élément moral se traduit par une volonté délibérée et réfléchie de profiter de la soumission chimique ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                          "f00041",
+                          "pour commettre un viol ou une agression sexuelle.",
+                        ),
                   ),
                 ],
               ),
@@ -236,23 +420,45 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
 
               // IV — Circonstances aggravantes
               _ConditionCard(
-                title: "IV — Circonstances aggravantes",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00042",
+                  "IV — Circonstances aggravantes",
+                ),
                 cardColor: cAggr,
                 accent: cAggrAccent,
                 titleColor: titleColor,
                 children: [
                   _Paragraph.rich([
-                    lawRef("Article 222-30-1 alinéa 2 du C.P."),
-                    normal(" : l’infraction est aggravée notamment :"),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00043",
+                        "Article 222-30-1 alinéa 2 du C.P.",
+                      ),
+                    ),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00044",
+                        " : l’infraction est aggravée notamment :",
+                      ),
+                    ),
                   ]),
                   const SizedBox(height: 8),
-                  const _BulletPoint(
-                    text:
-                        "Lorsque les faits sont commis sur un mineur de 15 ans.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00045",
+                      "Lorsque les faits sont commis sur un mineur de 15 ans.",
+                    ),
                   ),
-                  const _BulletPoint(
-                    text:
-                        "Lorsque les faits sont commis sur une personne particulièrement vulnérable.",
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00046",
+                      "Lorsque les faits sont commis sur une personne particulièrement vulnérable.",
+                    ),
                   ),
                 ],
               ),
@@ -261,14 +467,28 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
 
               // V — Répression + tentative + complicité
               _ConditionCard(
-                title: "V — Répression, tentative et complicité",
+                title: ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00047",
+                  "V — Répression, tentative et complicité",
+                ),
                 cardColor: cRepr,
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  const _SubTitle("Peines encourues (personnes physiques)"),
-                  const _Paragraph(
-                    "L’infraction est un délit. Les peines varient selon qu’il s’agit de la forme simple ou aggravée.",
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00048",
+                      "Peines encourues (personnes physiques)",
+                    ),
+                  ),
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00049",
+                      "L’infraction est un délit. Les peines varient selon qu’il s’agit de la forme simple ou aggravée.",
+                    ),
                   ),
                   const SizedBox(height: 10),
                   _RepressionTableSubstance(isDark: isDark),
@@ -276,27 +496,67 @@ class PaSubstancePourViolOuAgressionPage extends StatelessWidget {
                   const SizedBox(height: 12),
 
                   _Paragraph.rich([
-                    normal("Responsabilité pénale des personnes morales : "),
-                    lawRef("article 222-33-1 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00050",
+                        "Responsabilité pénale des personnes morales : ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00051",
+                        "article 222-33-1 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
 
                   const SizedBox(height: 12),
 
                   const _SubTitle("Tentative"),
-                  const _BulletPoint(text: "Tentative : OUI."),
+                  _BulletPoint(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00052",
+                      "Tentative : OUI.",
+                    ),
+                  ),
 
                   const SizedBox(height: 12),
 
-                  const _SubTitle("Complicité"),
+                  _SubTitle(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00053",
+                      "Complicité",
+                    ),
+                  ),
                   _Paragraph.rich([
-                    normal("Complicité : OUI — punissable conformément aux "),
-                    lawRef("articles 121-6 et 121-7 du C.P."),
+                    normal(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00054",
+                        "Complicité : OUI — punissable conformément aux ",
+                      ),
+                    ),
+                    lawRef(
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                        "f00055",
+                        "articles 121-6 et 121-7 du C.P.",
+                      ),
+                    ),
                     normal("."),
                   ]),
                   const SizedBox(height: 8),
-                  const _Paragraph(
-                    "La complicité par aide ou assistance peut notamment être retenue contre celui qui procure à l’auteur la substance.",
+                  _Paragraph(
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                      "f00056",
+                      "La complicité par aide ou assistance peut notamment être retenue contre celui qui procure à l’auteur la substance.",
+                    ),
                   ),
                 ],
               ),
@@ -352,26 +612,78 @@ class _RepressionTableSubstance extends StatelessWidget {
         children: [
           TableRow(
             decoration: BoxDecoration(
-              color: (isDark ? Colors.white : Colors.black).withValues(alpha: 0.05),
+              color: (isDark ? Colors.white : Colors.black).withValues(
+                alpha: 0.05,
+              ),
             ),
             children: [
               cell("Qualification", bold: true),
-              cell("Base légale", bold: true),
-              cell("Peines principales", bold: true),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00057",
+                  "Base légale",
+                ),
+                bold: true,
+              ),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00058",
+                  "Peines principales",
+                ),
+                bold: true,
+              ),
             ],
           ),
           TableRow(
             children: [
-              cell("Délit\n(simple)"),
-              cell("Art. 222-30-1 (C.P.)"),
-              cell("5 ans d'emprisonnement\n75 000 € d'amende"),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00059",
+                  "Délit\n(simple)",
+                ),
+              ),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00060",
+                  "Art. 222-30-1 (C.P.)",
+                ),
+              ),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00061",
+                  "5 ans d'emprisonnement\n75 000 € d'amende",
+                ),
+              ),
             ],
           ),
           TableRow(
             children: [
-              cell("Délit\n(aggravé)"),
-              cell("Art. 222-30-1 al. 2 (C.P.)"),
-              cell("7 ans d'emprisonnement\n100 000 € d'amende"),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00062",
+                  "Délit\n(aggravé)",
+                ),
+              ),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00063",
+                  "Art. 222-30-1 al. 2 (C.P.)",
+                ),
+              ),
+              cell(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart",
+                  "f00064",
+                  "7 ans d'emprisonnement\n100 000 € d'amende",
+                ),
+              ),
             ],
           ),
         ],

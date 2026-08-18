@@ -11,6 +11,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:copiqpolice/core/quiz/quiz_end_controller.dart';
 
 import '../models/psycho_question.dart';
 import '../services/psycho_history_service.dart';
@@ -28,7 +29,8 @@ class PsychoQuizConfig {
   final String exerciseSubtitle;
   final IconData exerciseIcon;
   final Color exerciseColor;
-  final String routeName; // ex: '/gpx_exam/concours/tests_psychotechniques/calcul_mental'
+  final String
+  routeName; // ex: '/gpx_exam/concours/tests_psychotechniques/calcul_mental'
   final String category; // ex: PsychoCategory.calculMental
   final String tableName; // ex: PsychoTable.calculMental — pour le compteur
   final String introHidePrefKey; // unique par exercice
@@ -93,6 +95,7 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
   int _correct = 0;
   int _wrong = 0;
   bool _isSavingResult = false;
+  final QuizEndController _endController = QuizEndController();
 
   // Timing
   late AnimationController _timerCtrl;
@@ -104,29 +107,38 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
-    _timerCtrl = AnimationController(
-      vsync: this,
-      duration: Duration(seconds: widget.config.questionDuration),
-    )..addStatusListener((s) {
-      if (s == AnimationStatus.completed && !_answerLocked) {
-        _onTimeout();
-      }
-    });
+    _timerCtrl =
+        AnimationController(
+          vsync: this,
+          duration: Duration(seconds: widget.config.questionDuration),
+        )..addStatusListener((s) {
+          if (s == AnimationStatus.completed && !_answerLocked) {
+            _onTimeout();
+          }
+        });
     _loadIntroPref();
+    _endController.addListener(_onEndStateChanged);
     _refreshAvailableCounts();
   }
 
   @override
   void dispose() {
+    _endController.removeListener(_onEndStateChanged);
+    _endController.dispose();
     _timerCtrl.dispose();
     super.dispose();
+  }
+
+  void _onEndStateChanged() {
+    if (mounted) setState(() => _isSavingResult = _endController.isBusy);
   }
 
   Future<void> _loadIntroPref() async {
     final prefs = await SharedPreferences.getInstance();
     if (!mounted) return;
     setState(() {
-      _hideIntroForever = prefs.getBool(widget.config.introHidePrefKey) ?? false;
+      _hideIntroForever =
+          prefs.getBool(widget.config.introHidePrefKey) ?? false;
     });
   }
 
@@ -192,6 +204,7 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
         _answerLocked = false;
         _responseTimes.clear();
         _sessionStartedAt = DateTime.now();
+        _endController.reset();
         _phase = _Phase.quiz;
       });
       _startQuestionTimer();
@@ -266,32 +279,32 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
   Future<void> _finishSession() async {
     final total = _questions.length;
     final score = total == 0 ? 0 : ((_correct / total) * 100).round();
-    final duration =
-        _sessionStartedAt == null
-            ? 0
-            : DateTime.now().difference(_sessionStartedAt!).inSeconds;
+    final duration = _sessionStartedAt == null
+        ? 0
+        : DateTime.now().difference(_sessionStartedAt!).inSeconds;
     final avg = _responseTimes.isEmpty
         ? 0.0
         : _responseTimes.reduce((a, b) => a + b) / _responseTimes.length;
 
-    setState(() {
-      _phase = _Phase.result;
-      _isSavingResult = true;
-    });
-    await _history.saveSession(
-      exerciseType: widget.config.category,
-      score: score,
-      correctAnswers: _correct,
-      wrongAnswers: _wrong,
-      totalQuestions: total,
-      durationSeconds: duration,
-      avgResponseTime: avg,
-      mode: 'concours',
+    final saved = await _endController.save(
+      () => _history.saveSession(
+        exerciseType: widget.config.category,
+        score: score,
+        correctAnswers: _correct,
+        wrongAnswers: _wrong,
+        totalQuestions: total,
+        durationSeconds: duration,
+        avgResponseTime: avg,
+        mode: 'concours',
+      ),
     );
     if (!mounted) return;
-    setState(() {
-      _isSavingResult = false;
-    });
+    if (!saved) {
+      await _showSaveFailure();
+      return;
+    }
+    setState(() => _phase = _Phase.result);
+    _endController.markResultsShown();
   }
 
   // Route home utilisée pour le retour propre lorsqu'on quitte un exercice.
@@ -323,23 +336,74 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
   }
 
   Future<void> _confirmExit() async {
+    if (!_endController.openConfirmation()) return;
     final pauseState = _pauseTimer();
     final ok = await showPsychoExitDialog(context);
     if (!mounted) return;
 
     if (ok) {
       _timerCtrl.stop();
-      // Retour à la home des exercices Gardien de la paix : on remonte la
-      // pile jusqu'à HomePageGpxExam (ou jusqu'à la racine si elle ne s'y
-      // trouve pas, par sécurité).
-      Navigator.of(context).popUntil(
-        (route) => route.settings.name == _kHomeRouteName || route.isFirst,
+      final total = _questions.length;
+      final duration = _sessionStartedAt == null
+          ? 0
+          : DateTime.now().difference(_sessionStartedAt!).inSeconds;
+      final avg = _responseTimes.isEmpty
+          ? 0.0
+          : _responseTimes.reduce((a, b) => a + b) / _responseTimes.length;
+      final saved = await _endController.save(
+        () => _history.saveSession(
+          exerciseType: widget.config.category,
+          score: total == 0 ? 0 : ((_correct / total) * 100).round(),
+          correctAnswers: _correct,
+          wrongAnswers: _wrong,
+          totalQuestions: total,
+          durationSeconds: duration,
+          avgResponseTime: avg,
+          mode: 'concours_ended_early',
+        ),
       );
+      if (!mounted) return;
+      if (!saved) {
+        await _showSaveFailure();
+        return;
+      }
+      setState(() => _phase = _Phase.result);
+      _endController.markResultsShown();
       return;
     }
 
     // L'utilisateur a choisi « Continuer » → on reprend là où on en était.
+    _endController.cancelConfirmation();
     _resumeTimer(pauseState);
+  }
+
+  Future<void> _showSaveFailure() async {
+    final retry = await showDialog<bool>(
+      context: context,
+      barrierDismissible: false,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Sauvegarde impossible'),
+        content: const Text(
+          'Ta tentative est conservée sur cet écran. Vérifie ta connexion puis réessaie.',
+        ),
+        actions: [
+          FilledButton(
+            onPressed: () => Navigator.pop(ctx, true),
+            child: const Text('Réessayer'),
+          ),
+        ],
+      ),
+    );
+    if (retry == true && mounted) {
+      final saved = await _endController.retry();
+      if (!mounted) return;
+      if (saved) {
+        setState(() => _phase = _Phase.result);
+        _endController.markResultsShown();
+      } else {
+        await _showSaveFailure();
+      }
+    }
   }
 
   Future<void> _openReportSheet() async {
@@ -386,9 +450,7 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
       case _Phase.loading:
         return const SafeArea(
           child: Center(
-            child: PsychoLoadingState(
-              message: 'Préparation de tes questions…',
-            ),
+            child: PsychoLoadingState(message: 'Préparation de tes questions…'),
           ),
         );
       case _Phase.quiz:
@@ -546,8 +608,7 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
                                 : 'Question suivante',
                           ),
                           style: FilledButton.styleFrom(
-                            backgroundColor:
-                                widget.config.exerciseColor,
+                            backgroundColor: widget.config.exerciseColor,
                             foregroundColor: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(16),
@@ -561,6 +622,26 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
                         ),
                       ),
                     ],
+                    const SizedBox(height: 12),
+                    SizedBox(
+                      height: 48,
+                      child: OutlinedButton.icon(
+                        onPressed: _endController.isBusy ? null : _confirmExit,
+                        icon: _endController.isBusy
+                            ? const SizedBox.square(
+                                dimension: 18,
+                                child: CircularProgressIndicator(
+                                  strokeWidth: 2,
+                                ),
+                              )
+                            : const Icon(Icons.stop_circle_outlined),
+                        label: Text(
+                          _endController.isBusy
+                              ? 'Sauvegarde de votre progression…'
+                              : 'Mettre fin',
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -573,10 +654,9 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
 
   Widget _buildResult() {
     final total = _questions.length;
-    final duration =
-        _sessionStartedAt == null
-            ? 0
-            : DateTime.now().difference(_sessionStartedAt!).inSeconds;
+    final duration = _sessionStartedAt == null
+        ? 0
+        : DateTime.now().difference(_sessionStartedAt!).inSeconds;
     final avg = _responseTimes.isEmpty
         ? 0.0
         : _responseTimes.reduce((a, b) => a + b) / _responseTimes.length;
@@ -598,6 +678,5 @@ class _PsychoQuizPageState extends State<PsychoQuizPage>
         (route) => route.settings.name == _kHomeRouteName || route.isFirst,
       ),
     );
-
   }
 }

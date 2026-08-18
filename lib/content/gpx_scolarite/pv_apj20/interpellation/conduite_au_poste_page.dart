@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ConduiteAuPostePage extends StatelessWidget {
   const ConduiteAuPostePage({super.key});
@@ -56,7 +57,11 @@ class ConduiteAuPostePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Interpellation",
@@ -74,7 +79,11 @@ class ConduiteAuPostePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "PV de conduite au poste — canevas de rédaction",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+              "f00002",
+              "PV de conduite au poste — canevas de rédaction",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,11 +98,23 @@ class ConduiteAuPostePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ce canevas t’aide à rédiger un procès-verbal de « conduite au poste » : "
-                "mentions obligatoires, ordre logique, points de vigilance (heure, identité en style indirect, "
-                "palpation, DRDA, avis OPJ, retour au service…).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                      "f00003",
+                      "Ce canevas t’aide à rédiger un procès-verbal de « conduite au poste » : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                      "f00004",
+                      "mentions obligatoires, ordre logique, points de vigilance (heure, identité en style indirect, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                      "f00005",
+                      "palpation, DRDA, avis OPJ, retour au service…).",
+                    ),
               ),
             ],
           ),
@@ -102,22 +123,42 @@ class ConduiteAuPostePage extends StatelessWidget {
 
           // ✅ Cadre juridique placé en haut (même si le canevas ne cite pas d’article précis)
           _ConditionCard(
-            title: "I — Cadre juridique (à poser clairement)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+              "f00006",
+              "I — Cadre juridique (à poser clairement)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En fonction des constatations, le rédacteur doit indiquer le cadre juridique de l’intervention "
-                "(ce qui fonde les pouvoirs et les droits attachés à la situation).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                      "f00007",
+                      "En fonction des constatations, le rédacteur doit indiquer le cadre juridique de l’intervention ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                      "f00008",
+                      "(ce qui fonde les pouvoirs et les droits attachés à la situation).",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "L’heure exacte de la conduite au poste est un point clé : elle peut aussi être celle du début "
-                        "d’une éventuelle mesure de garde à vue selon les circonstances.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                          "f00009",
+                          "L’heure exacte de la conduite au poste est un point clé : elle peut aussi être celle du début ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                          "f00010",
+                          "d’une éventuelle mesure de garde à vue selon les circonstances.",
+                        ),
                   ),
                 ],
               ),
@@ -127,66 +168,152 @@ class ConduiteAuPostePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Trame chronologique (mentions à rédiger)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+              "f00011",
+              "II — Trame chronologique (mentions à rédiger)",
+            ),
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Lieu de saisine"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00012",
+                  "1) Lieu de saisine",
+                ),
+              ),
               _BulletPoint(
-                text: "Mentionner l’endroit exact où se situe l’équipage.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00013",
+                  "Mentionner l’endroit exact où se situe l’équipage.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("2) Instructions (uniquement si PV de saisine)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00014",
+                  "2) Instructions (uniquement si PV de saisine)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Indiquer les instructions permanentes du chef de service (si applicable).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00015",
+                  "Indiquer les instructions permanentes du chef de service (si applicable).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("3) Assistants éventuels"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00016",
+                  "3) Assistants éventuels",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Citer les fonctionnaires accompagnants + préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00017",
+                  "Citer les fonctionnaires accompagnants + préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("4) Mission"),
-              _BulletPoint(text: "Indiquer le but de la mission initiale."),
-
-              SizedBox(height: 10),
-              _SubTitle("5) Constatations"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00018",
+                  "4) Mission",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Relater précisément les faits constitutifs de l’infraction (et si besoin l’heure de constatation / arrivée sur les lieux).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00019",
+                  "Indiquer le but de la mission initiale.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("6) Cadre juridique"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00020",
+                  "5) Constatations",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Expliquer clairement le cadre juridique retenu, en cohérence avec les constatations.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00021",
+                  "Relater précisément les faits constitutifs de l’infraction (et si besoin l’heure de constatation / arrivée sur les lieux).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("7) Identité (style indirect)"),
-              _BulletPoint(
-                text:
-                    "Prise de contact + identification : état civil et adresse uniquement (exclure situation familiale/professionnelle).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00022",
+                  "6) Cadre juridique",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préciser l’heure exacte et le lieu (si différent du lieu de saisine).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00023",
+                  "Expliquer clairement le cadre juridique retenu, en cohérence avec les constatations.",
+                ),
+              ),
+
+              SizedBox(height: 10),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00024",
+                  "7) Identité (style indirect)",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00025",
+                  "Prise de contact + identification : état civil et adresse uniquement (exclure situation familiale/professionnelle).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00026",
+                  "Préciser l’heure exacte et le lieu (si différent du lieu de saisine).",
+                ),
               ),
               SizedBox(height: 6),
               _NotaBox(
-                title: "Ordre possible",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00027",
+                  "Ordre possible",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Selon la situation (comportement/attitude), la palpation de sécurité peut être réalisée "
-                        "avant l’identité.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                          "f00028",
+                          "Selon la situation (comportement/attitude), la palpation de sécurité peut être réalisée ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                          "f00029",
+                          "avant l’identité.",
+                        ),
                   ),
                 ],
               ),
@@ -196,72 +323,154 @@ class ConduiteAuPostePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Palpation, DRDA, suites et clôture",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+              "f00030",
+              "III — Palpation, DRDA, suites et clôture",
+            ),
             cardColor: cardActes,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("8) Palpation de sécurité"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00031",
+                  "8) Palpation de sécurité",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Si découverte d’objets : les situer et les décrire précisément (où, quoi).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00032",
+                  "Si découverte d’objets : les situer et les décrire précisément (où, quoi).",
+                ),
               ),
               SizedBox(height: 8),
               _NotaBox(
-                title: "Procédure",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00033",
+                  "Procédure",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "D.R.D.A. : Décrire — Représenter — (brève) Déclaration — Appréhender. "
-                        "La déclaration doit être limitée à l’appartenance de l’objet : ce n’est pas une audition.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                          "f00034",
+                          "D.R.D.A. : Décrire — Représenter — (brève) Déclaration — Appréhender. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                          "f00035",
+                          "La déclaration doit être limitée à l’appartenance de l’objet : ce n’est pas une audition.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
-              _SubTitle("9) Constatations & appréhensions éventuelles"),
-              _BulletPoint(
-                text:
-                    "Constatations postérieures à l’appréhension : effractions, bris de serrure/vitre, objets abandonnés, etc.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00036",
+                  "9) Constatations & appréhensions éventuelles",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Objets pièces à conviction : représenter à la personne + brève déclaration éventuelle + appréhender pour remise OPJ.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00037",
+                  "Constatations postérieures à l’appréhension : effractions, bris de serrure/vitre, objets abandonnés, etc.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00038",
+                  "Objets pièces à conviction : représenter à la personne + brève déclaration éventuelle + appréhender pour remise OPJ.",
+                ),
               ),
 
               SizedBox(height: 12),
-              _SubTitle("10) Avis O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00039",
+                  "10) Avis O.P.J.",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Mentionner les instructions reçues de l’OPJ + les divers avis (invitation victime/témoin, avis radio…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00040",
+                  "Mentionner les instructions reçues de l’OPJ + les divers avis (invitation victime/témoin, avis radio…).",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("11) Retour au service de police"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00041",
+                  "11) Retour au service de police",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Indiquer que la personne accepte d’accompagner de son plein gré les fonctionnaires de police.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00042",
+                  "Indiquer que la personne accepte d’accompagner de son plein gré les fonctionnaires de police.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("12) Énonciation terminale (clôture)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00043",
+                  "12) Énonciation terminale (clôture)",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00044",
+                  "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("13) Présentation O.P.J."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00045",
+                  "13) Présentation O.P.J.",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Présenter l’individu en précisant l’heure, faire un compte-rendu verbal, remettre les objets appréhendés le cas échéant.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00046",
+                  "Présenter l’individu en précisant l’heure, faire un compte-rendu verbal, remettre les objets appréhendés le cas échéant.",
+                ),
               ),
 
               SizedBox(height: 10),
-              _SubTitle("14) Mention"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00047",
+                  "14) Mention",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Recherches administratives : FPR, TAJ (le cas échéant). Préciser qu’elles ont été effectuées et le résultat.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00048",
+                  "Recherches administratives : FPR, TAJ (le cas échéant). Préciser qu’elles ont été effectuées et le résultat.",
+                ),
               ),
             ],
           ),
@@ -269,23 +478,39 @@ class ConduiteAuPostePage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Canevas (images) — zoom & plein écran",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+              "f00049",
+              "IV — Canevas (images) — zoom & plein écran",
+            ),
             cardColor: cardDocs,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Appuie sur une image pour l’ouvrir en plein écran. Tu peux zoomer (pincement) et déplacer.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00050",
+                  "Appuie sur une image pour l’ouvrir en plein écran. Tu peux zoomer (pincement) et déplacer.",
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canva_cap_recto.png',
-                label: 'Recto — canevas CAP',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00051",
+                  'Recto — canevas CAP',
+                ),
               ),
               SizedBox(height: 12),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/canva_cap_verso.png',
-                label: 'Verso — suite',
+                label: ScolariteText.value(
+                  "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                  "f00052",
+                  'Verso — suite',
+                ),
               ),
             ],
           ),
@@ -295,18 +520,29 @@ class ConduiteAuPostePage extends StatelessWidget {
           // Petit rappel "article en rouge" : ici le canevas fourni ne cite pas d’article,
           // mais on garde le style prêt au besoin.
           _ConditionCard(
-            title: "Rappel (mise en forme)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+              "f00053",
+              "Rappel (mise en forme)",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Dès qu’un article est cité, il doit être en rouge : ex. ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                    "f00054",
+                    "Dès qu’un article est cité, il doit être en rouge : ex. ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article 803 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                    "f00055",
+                    "Article 803 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -406,7 +642,11 @@ class _ZoomableAssetImage extends StatelessWidget {
                       ),
                       const SizedBox(width: 6),
                       Text(
-                        "Plein écran",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/pv_apj20/interpellation/conduite_au_poste_page.dart",
+                          "f00057",
+                          "Plein écran",
+                        ),
                         style: GoogleFonts.fustat(
                           fontWeight: FontWeight.w800,
                           fontSize: 12.5,

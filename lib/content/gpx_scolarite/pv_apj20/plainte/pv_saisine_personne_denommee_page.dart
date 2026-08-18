@@ -13,7 +13,6 @@ class PVPvSaisinePersonneDenommeePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
-
     // Palette cards (propre + lisible) — comme ta template
     return const Scaffold();
   }

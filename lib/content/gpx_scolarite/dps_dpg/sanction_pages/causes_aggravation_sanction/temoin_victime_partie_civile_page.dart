@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class TemoinVictimePartieCivilePage extends StatelessWidget {
   const TemoinVictimePartieCivilePage({super.key});
@@ -44,7 +45,11 @@ class TemoinVictimePartieCivilePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Témoin, victime ou partie civile",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+            "f00001",
+            "Témoin, victime ou partie civile",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 16.8,
@@ -70,21 +75,24 @@ class TemoinVictimePartieCivilePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Sur un témoin, une victime ou une partie civile, soit pour l'empêcher de dénoncer les faits, de porter plainte ou de déposer en justice, soit en raison de sa dénonciation ou de sa plainte, soit à cause de sa déposition devant une juridiction nationale ou devant la Cour pénale internationale.",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00002",
+                        "Sur un témoin, une victime ou une partie civile, soit pour l'empêcher de dénoncer les faits, de porter plainte ou de déposer en justice, soit en raison de sa dénonciation ou de sa plainte, soit à cause de sa déposition devant une juridiction nationale ou devant la Cour pénale internationale.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,21 +102,37 @@ class TemoinVictimePartieCivilePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante vise à préserver le bon fonctionnement de l'administration de la justice qui est menacée par les pressions exercées sur les parties et les témoins.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00004",
+                        "Cette circonstance aggravante vise à préserver le bon fonctionnement de l'administration de la justice qui est menacée par les pressions exercées sur les parties et les témoins.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Pour qu'elle puisse être constituée, une infraction doit être préalablement commise. Les auteurs et leurs complices veulent, en commettant une nouvelle infraction, éviter des suites judiciaires, se venger de ceux qu'ils tiennent pour responsables ou dissuader ceux qui voudraient en engager.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00005",
+                        "Pour qu'elle puisse être constituée, une infraction doit être préalablement commise. Les auteurs et leurs complices veulent, en commettant une nouvelle infraction, éviter des suites judiciaires, se venger de ceux qu'ils tiennent pour responsables ou dissuader ceux qui voudraient en engager.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Dépendant de l'intention de l'auteur de l'infraction et du but qu'il poursuit, cette circonstance aggravante est de nature personnelle.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00006",
+                        "Dépendant de l'intention de l'auteur de l'infraction et du but qu'il poursuit, cette circonstance aggravante est de nature personnelle.",
+                      ),
                     ),
                   ],
                 ),
@@ -116,28 +140,58 @@ class TemoinVictimePartieCivilePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                    "f00007",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
-                    _SubTitle("2.1 - Les témoins, victimes ou parties civiles"),
+                  children: [
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00008",
+                        "2.1 - Les témoins, victimes ou parties civiles",
+                      ),
+                    ),
                     _Paragraph(
-                      "Il ne s'agit pas de toute personne mais exclusivement des témoins, victimes ou parties civiles. Il faut qu'un certain temps se soit écoulé entre l'infraction susceptible d'être dénoncée et cette nouvelle infraction.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00009",
+                        "Il ne s'agit pas de toute personne mais exclusivement des témoins, victimes ou parties civiles. Il faut qu'un certain temps se soit écoulé entre l'infraction susceptible d'être dénoncée et cette nouvelle infraction.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _SubTitle(
-                      "2.2 - Pour l'empêcher de dénoncer les faits, de porter plainte ou de déposer en justice",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00010",
+                        "2.2 - Pour l'empêcher de dénoncer les faits, de porter plainte ou de déposer en justice",
+                      ),
                     ),
                     _Paragraph(
-                      "L'auteur agit avec une intention « préventive ». Il cherche par exemple à contraindre une personne à retirer sa plainte, à ne pas se constituer partie civile ou à influencer ses déclarations.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00011",
+                        "L'auteur agit avec une intention « préventive ». Il cherche par exemple à contraindre une personne à retirer sa plainte, à ne pas se constituer partie civile ou à influencer ses déclarations.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _SubTitle(
-                      "2.3 - En raison de sa dénonciation, de sa plainte ou de sa déposition",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00012",
+                        "2.3 - En raison de sa dénonciation, de sa plainte ou de sa déposition",
+                      ),
                     ),
                     _Paragraph(
-                      "L'auteur agit avec une intention « répressive ». Il est animé par une volonté de vengeance.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                        "f00013",
+                        "L'auteur agit avec une intention « répressive ». Il est animé par une volonté de vengeance.",
+                      ),
                     ),
                   ],
                 ),
@@ -145,34 +199,76 @@ class TemoinVictimePartieCivilePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                    "f00014",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE MEURTRE (ARTICLE "),
-                      law("221-4, 5° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(text: "➤ L'EMPOISONNEMENT (ARTICLE "),
-                      law("221-5 C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00015",
+                          "➤ LE MEURTRE (ARTICLE ",
+                        ),
                       ),
-                      law("222-3, 5° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00016",
+                          "221-4, 5° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00017",
+                          "➤ L'EMPOISONNEMENT (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00018",
+                          "221-5 C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00019",
+                          "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00020",
+                          "222-3, 5° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00021",
+                          "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                        ),
                       ),
                       law("222-8"),
                       const TextSpan(text: ", "),
@@ -180,25 +276,49 @@ class TemoinVictimePartieCivilePage extends StatelessWidget {
                       const TextSpan(text: ", "),
                       law("222-12"),
                       const TextSpan(text: " ET "),
-                      law("222-13, 5° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00022",
+                          "222-13, 5° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00023",
+                          "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                        ),
                       ),
-                      law("222-15 C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00024",
+                          "222-15 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ LES DESTRUCTIONS, DÉGRADATIONS ET DÉTÉRIORATIONS (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00025",
+                          "➤ LES DESTRUCTIONS, DÉGRADATIONS ET DÉTÉRIORATIONS (ARTICLE ",
+                        ),
                       ),
-                      law("322-3, 4° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart",
+                          "f00026",
+                          "322-3, 4° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                   ],
@@ -461,9 +581,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

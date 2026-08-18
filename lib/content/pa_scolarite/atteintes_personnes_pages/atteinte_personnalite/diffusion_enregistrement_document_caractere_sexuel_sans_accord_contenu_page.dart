@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
     extends StatelessWidget {
@@ -60,10 +61,18 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteintes à la personnalité",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+            "f00002",
+            "Atteintes à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "La diffusion, sans l’accord de la personne concernée, d’un enregistrement ou document à caractère sexuel",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+              "f00003",
+              "La diffusion, sans l’accord de la personne concernée, d’un enregistrement ou document à caractère sexuel",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,15 +103,31 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La diffusion, sans l'accord de la personne concernée, d'un enregistrement ou document portant "
-                "sur des paroles ou images à caractère sexuel, préalablement obtenu avec son consentement "
-                "ou fourni par elle-même, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00005",
+                      "La diffusion, sans l'accord de la personne concernée, d'un enregistrement ou document portant ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00006",
+                      "sur des paroles ou images à caractère sexuel, préalablement obtenu avec son consentement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00007",
+                      "ou fourni par elle-même, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -107,23 +136,36 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+              "f00008",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-2-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00009",
+                    "Article 226-2-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " : définit et réprime la diffusion, sans l’accord de la personne concernée, "
-                      "d’un enregistrement ou document portant sur des paroles ou images à caractère sexuel.",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                        "f00010",
+                        " : définit et réprime la diffusion, sans l’accord de la personne concernée, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                        "f00011",
+                        "d’un enregistrement ou document portant sur des paroles ou images à caractère sexuel.",
+                      ),
                 ),
               ]),
             ],
@@ -133,67 +175,156 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ces agissements ont été popularisés sous l’appellation « revenge porn » ; "
-                "on parle aussi aujourd’hui de « pornodivulgation ».",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00013",
+                      "Ces agissements ont été popularisés sous l’appellation « revenge porn » ; ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00014",
+                      "on parle aussi aujourd’hui de « pornodivulgation ».",
+                    ),
               ),
               SizedBox(height: 10),
 
               _SubTitle(
-                "A) Un enregistrement ou document obtenu avec consentement",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                  "f00015",
+                  "A) Un enregistrement ou document obtenu avec consentement",
+                ),
               ),
               _Paragraph(
-                "La pornodivulgation consiste à obtenir (avec l’accord du partenaire/ex-partenaire) "
-                "des vidéos, photos, enregistrements, ou échanges de messages (« sexting ») à caractère intime, "
-                "puis à les diffuser sans le consentement de la personne concernée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00016",
+                      "La pornodivulgation consiste à obtenir (avec l’accord du partenaire/ex-partenaire) ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00017",
+                      "des vidéos, photos, enregistrements, ou échanges de messages (« sexting ») à caractère intime, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00018",
+                      "puis à les diffuser sans le consentement de la personne concernée.",
+                    ),
               ),
               SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
                   text:
-                      "À la différence de l’atteinte à la vie privée, la personne est consentante à être filmée, "
-                      "photographiée ou enregistrée : ",
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                        "f00019",
+                        "À la différence de l’atteinte à la vie privée, la personne est consentante à être filmée, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                        "f00020",
+                        "photographiée ou enregistrée : ",
+                      ),
                 ),
                 TextSpan(
-                  text: "article 226-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00021",
+                    "article 226-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
 
               _Paragraph(
-                "Le support peut être :\n"
-                "• visuel (photo)\n"
-                "• audio (bande son)\n"
-                "• audiovisuel (vidéo)\n"
-                "• écrit (échange de messages)\n"
-                "Peu importe qu’il soit matériel ou totalement numérisé.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00022",
+                      "Le support peut être :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00023",
+                      "• visuel (photo)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00024",
+                      "• audio (bande son)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00025",
+                      "• audiovisuel (vidéo)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00026",
+                      "• écrit (échange de messages)\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00027",
+                      "Peu importe qu’il soit matériel ou totalement numérisé.",
+                    ),
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) Un caractère sexuel"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                  "f00028",
+                  "B) Un caractère sexuel",
+                ),
+              ),
               _Paragraph(
-                "Le caractère sexuel des paroles/images s’apprécie au cas par cas. "
-                "Le Conseil constitutionnel a jugé la notion suffisamment claire et précise, "
-                "et a rappelé qu’il appartient aux juridictions d’en apprécier la réalité.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00029",
+                      "Le caractère sexuel des paroles/images s’apprécie au cas par cas. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00030",
+                      "Le Conseil constitutionnel a jugé la notion suffisamment claire et précise, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00031",
+                      "et a rappelé qu’il appartient aux juridictions d’en apprécier la réalité.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  TextSpan(text: "Décision "),
                   TextSpan(
-                    text: "n° 2021-933 QPC du 30 septembre 2021",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00032",
+                      "Décision ",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00033",
+                      "n° 2021-933 QPC du 30 septembre 2021",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -205,26 +336,60 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
 
               SizedBox(height: 14),
 
-              _SubTitle("C) Une diffusion sans accord"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                  "f00034",
+                  "C) Une diffusion sans accord",
+                ),
+              ),
               _Paragraph(
-                "L’enregistrement/document est porté à la connaissance du public ou d’un tiers "
-                "sans l’accord de la victime : soit parce qu’elle s’y oppose, soit parce qu’elle n’a pas été consultée.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00035",
+                      "L’enregistrement/document est porté à la connaissance du public ou d’un tiers ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00036",
+                      "sans l’accord de la victime : soit parce qu’elle s’y oppose, soit parce qu’elle n’a pas été consultée.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "L’accord à être filmé(e) ou photographié(e) ne vaut pas accord à la diffusion. "
-                "Il appartient à l’auteur de prouver qu’il avait reçu un accord en vue de diffuser.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00037",
+                      "L’accord à être filmé(e) ou photographié(e) ne vaut pas accord à la diffusion. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00038",
+                      "Il appartient à l’auteur de prouver qu’il avait reçu un accord en vue de diffuser.",
+                    ),
               ),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Si l’auteur exige des faveurs sexuelles en menaçant de diffuser le contenu intime, "
-                        "le harcèlement sexuel est constitué — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                          "f00039",
+                          "Si l’auteur exige des faveurs sexuelles en menaçant de diffuser le contenu intime, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                          "f00040",
+                          "le harcèlement sexuel est constitué — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article 222-33 II du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00041",
+                      "article 222-33 II du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -233,11 +398,23 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
                   TextSpan(text: ". "),
                   TextSpan(
                     text:
-                        "S’il obtient une signature, un engagement, une renonciation, une révélation de secret, ou la remise de fonds/biens "
-                        "par cette menace, le chantage est constitué — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                          "f00042",
+                          "S’il obtient une signature, un engagement, une renonciation, une révélation de secret, ou la remise de fonds/biens ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                          "f00043",
+                          "par cette menace, le chantage est constitué — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article 312-10 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00044",
+                      "article 312-10 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -251,11 +428,23 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Dans la pratique, la preuve de l’absence d’accord repose souvent sur la déclaration de la victime. "
-                        "C’est la raison pour laquelle le dépôt de plainte est requis — ",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                          "f00045",
+                          "Dans la pratique, la preuve de l’absence d’accord repose souvent sur la déclaration de la victime. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                          "f00046",
+                          "C’est la raison pour laquelle le dépôt de plainte est requis — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "article 226-6 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00047",
+                      "article 226-6 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -272,14 +461,26 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+              "f00048",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Il faut la conscience de diffuser, sans l’accord de la personne, un enregistrement ou document "
-                "portant sur des paroles ou images à caractère sexuel.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00049",
+                      "Il faut la conscience de diffuser, sans l’accord de la personne, un enregistrement ou document ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                      "f00050",
+                      "portant sur des paroles ou images à caractère sexuel.",
+                    ),
               ),
             ],
           ),
@@ -288,12 +489,22 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+              "f00051",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _Paragraph("Aucune circonstance aggravante prévue par le texte."),
+            children: [
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                  "f00052",
+                  "Aucune circonstance aggravante prévue par le texte.",
+                ),
+              ),
             ],
           ),
 
@@ -301,86 +512,149 @@ class PaDiffusionEnregistrementCaractereSexuelSansAccordPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+              "f00053",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                  "f00054",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Délit : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 60 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00055",
+                    "Délit : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-2-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00056",
+                    "2 ans d’emprisonnement et 60 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00057",
+                    "article 226-2-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                  "f00058",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité prévue par "),
                 TextSpan(
-                  text: "l’article 226-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00059",
+                    "Responsabilité prévue par ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00060",
+                    "l’article 226-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                  "f00061",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Tentative : OUI, prévue expressément par ",
-                ),
-                TextSpan(
-                  text: "l’article 226-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00062",
+                    "Tentative : OUI, prévue expressément par ",
                   ),
                 ),
-                TextSpan(text: " (tentative du délit prévu à "),
                 TextSpan(
-                  text: "l’article 226-2-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00063",
+                    "l’article 226-5 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00064",
+                    " (tentative du délit prévu à ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00065",
+                    "l’article 226-2-1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00066",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00067",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00068",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide et assistance, provocation ou instructions données).",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart",
+                    "f00069",
+                    " (aide et assistance, provocation ou instructions données).",
+                  ),
                 ),
               ]),
             ],

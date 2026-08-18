@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class IncapaciteTotaleTravailPage extends StatelessWidget {
   const IncapaciteTotaleTravailPage({super.key});
@@ -44,7 +45,11 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Incapacité totale de travail",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+            "f00001",
+            "Incapacité totale de travail",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,20 +75,24 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text: "Ayant entraîné une incapacité totale de travail.",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00002",
+                        "Ayant entraîné une incapacité totale de travail.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w800),
                     ),
                     TextSpan(text: " »"),
@@ -93,21 +102,37 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "L'incapacité totale de travail mesure la gravité des atteintes corporelles ou psychiques subies par la victime de l'infraction. L'I.T.T. ne doit pas être confondue avec l'arrêt de travail propre au droit social.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00004",
+                        "L'incapacité totale de travail mesure la gravité des atteintes corporelles ou psychiques subies par la victime de l'infraction. L'I.T.T. ne doit pas être confondue avec l'arrêt de travail propre au droit social.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Une victime n'exerçant aucune activité professionnelle (enfant, retraité,...) peut donc se voir prescrire une I.T.T.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00005",
+                        "Une victime n'exerçant aucune activité professionnelle (enfant, retraité,...) peut donc se voir prescrire une I.T.T.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00006",
+                        "Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -115,51 +140,125 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                    "f00007",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
                   children: [
-                    const _SubTitle('2.1 - Le caractère total'),
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00008",
+                        '2.1 - Le caractère total',
+                      ),
+                    ),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "L'I.T.T. doit, pour constituer la circonstance, être totale. Elle n'implique pas nécessairement l'impossibilité pour la victime de se livrer à un effort physique afin d'accomplir elle-même certaines tâches ménagères ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                          "f00009",
+                          "L'I.T.T. doit, pour constituer la circonstance, être totale. Elle n'implique pas nécessairement l'impossibilité pour la victime de se livrer à un effort physique afin d'accomplir elle-même certaines tâches ménagères ",
+                        ),
                       ),
                       const TextSpan(text: "("),
-                      law("Cass. crim., n° 81-92.856 du 22 novembre 1982"),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                          "f00010",
+                          "Cass. crim., n° 81-92.856 du 22 novembre 1982",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 10),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "L'I.T.T. ne s'applique pas seulement à l'activité professionnelle mais s'étend à toute l'activité courante et aux efforts physiques de toutes sortes nécessaires à la vie de chaque jour ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                          "f00011",
+                          "L'I.T.T. ne s'applique pas seulement à l'activité professionnelle mais s'étend à toute l'activité courante et aux efforts physiques de toutes sortes nécessaires à la vie de chaque jour ",
+                        ),
                       ),
                       const TextSpan(text: "("),
-                      law("Cass. crim., 7 mars 1967"),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                          "f00012",
+                          "Cass. crim., 7 mars 1967",
+                        ),
+                      ),
                       const TextSpan(text: ")."),
                     ]),
                     const SizedBox(height: 12),
-                    const _SubTitle('2.2 - La durée'),
-                    const _Paragraph(
-                      "La durée est prise en compte par paliers selon l'infraction que l'I.T.T. aggrave :",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00013",
+                        '2.2 - La durée',
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00014",
+                        "La durée est prise en compte par paliers selon l'infraction que l'I.T.T. aggrave :",
+                      ),
                     ),
                     const SizedBox(height: 8),
-                    const _IntroBullet(text: "inférieure ou égale à 8 jours,"),
-                    const _IntroBullet(text: "supérieure à 8 jours,"),
-                    const _IntroBullet(
-                      text: "inférieure ou égale à trois mois,",
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00015",
+                        "inférieure ou égale à 8 jours,",
+                      ),
                     ),
-                    const _IntroBullet(text: "supérieure à trois mois."),
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00016",
+                        "supérieure à 8 jours,",
+                      ),
+                    ),
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00017",
+                        "inférieure ou égale à trois mois,",
+                      ),
+                    ),
+                    _IntroBullet(
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00018",
+                        "supérieure à trois mois.",
+                      ),
+                    ),
                     const SizedBox(height: 12),
-                    const _SubTitle('2.3 - La preuve'),
-                    const _Paragraph(
-                      "Le juge a un pouvoir d'appréciation en vue de rechercher dans quelle mesure la victime s'est trouvée hors d'état d'effectuer un travail corporel.",
+                    _SubTitle(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00019",
+                        '2.3 - La preuve',
+                      ),
+                    ),
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00020",
+                        "Le juge a un pouvoir d'appréciation en vue de rechercher dans quelle mesure la victime s'est trouvée hors d'état d'effectuer un travail corporel.",
+                      ),
                     ),
                     const SizedBox(height: 8),
-                    const _Paragraph(
-                      "La preuve doit être rapportée par la partie poursuivante. Il peut s'agir de certificats médicaux, mais le juge peut également se baser sur des rapports d'experts.",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00021",
+                        "La preuve doit être rapportée par la partie poursuivante. Il peut s'agir de certificats médicaux, mais le juge peut également se baser sur des rapports d'experts.",
+                      ),
                     ),
                   ],
                 ),
@@ -167,45 +266,130 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                    "f00022",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
-                    const _Paragraph(
-                      "Cette circonstance peut aggraver notamment :",
+                    _Paragraph(
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00023",
+                        "Cette circonstance peut aggraver notamment :",
+                      ),
                     ),
                     const SizedBox(height: 10),
 
                     // On met les références en rouge via une NotaBox (propre + lisible)
                     _NotaBox(
-                      title: 'Références',
+                      title: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                        "f00024",
+                        'Références',
+                      ),
                       bodySpans: [
-                        const TextSpan(text: "• Les violences : "),
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00025",
+                            "• Les violences : ",
+                          ),
+                        ),
                         law(
-                          "articles 222-11 à 222-14-1, 222-14-5 et R.625-1 du C.P.",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00026",
+                            "articles 222-11 à 222-14-1, 222-14-5 et R.625-1 du C.P.",
+                          ),
                         ),
-                        const TextSpan(
-                          text:
-                              "\n• Les atteintes involontaires à l’intégrité de la personne : ",
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00027",
+                            "\n• Les atteintes involontaires à l’intégrité de la personne : ",
+                          ),
                         ),
-                        law("articles 222-19 à 222-21 et R.625-2 du C.P."),
-                        const TextSpan(
-                          text:
-                              "\n• L’administration de substances nuisibles : ",
+                        law(
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00028",
+                            "articles 222-19 à 222-21 et R.625-2 du C.P.",
+                          ),
                         ),
-                        law("article 222-15 du C.P."),
-                        const TextSpan(text: "\n• Les agressions sexuelles : "),
-                        law("article 222-28, 1° du C.P."),
-                        const TextSpan(text: "\n• Le vol : "),
-                        law("articles 311-5, 1° et 311-6 du C.P."),
-                        const TextSpan(text: "\n• L’extorsion : "),
-                        law("articles 312-2 et 312-3 du C.P."),
-                        const TextSpan(
-                          text:
-                              "\n• Destructions, dégradations et détériorations : ",
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00029",
+                            "\n• L’administration de substances nuisibles : ",
+                          ),
                         ),
-                        law("articles 322-5 al. 5, 322-7 et 322-8, 2° du C.P."),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00030",
+                            "article 222-15 du C.P.",
+                          ),
+                        ),
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00031",
+                            "\n• Les agressions sexuelles : ",
+                          ),
+                        ),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00032",
+                            "article 222-28, 1° du C.P.",
+                          ),
+                        ),
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00033",
+                            "\n• Le vol : ",
+                          ),
+                        ),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00034",
+                            "articles 311-5, 1° et 311-6 du C.P.",
+                          ),
+                        ),
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00035",
+                            "\n• L’extorsion : ",
+                          ),
+                        ),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00036",
+                            "articles 312-2 et 312-3 du C.P.",
+                          ),
+                        ),
+                        TextSpan(
+                          text: ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00037",
+                            "\n• Destructions, dégradations et détériorations : ",
+                          ),
+                        ),
+                        law(
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart",
+                            "f00038",
+                            "articles 322-5 al. 5, 322-7 et 322-8, 2° du C.P.",
+                          ),
+                        ),
                       ],
                     ),
                   ],

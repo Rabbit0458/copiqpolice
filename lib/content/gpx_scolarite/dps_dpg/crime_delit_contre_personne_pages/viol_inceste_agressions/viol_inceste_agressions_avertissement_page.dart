@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class ViolIncesteAgressionsAvertissementPage extends StatefulWidget {
   const ViolIncesteAgressionsAvertissementPage({super.key});
@@ -56,7 +57,11 @@ class _ViolIncesteAgressionsAvertissementPageState
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Avertissement",
@@ -129,7 +134,11 @@ class _ViolIncesteAgressionsAvertissementPageState
                               ),
                               const SizedBox(width: 6),
                               Text(
-                                'CONTENU SENSIBLE',
+                                ScolariteText.value(
+                                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                                  "f00002",
+                                  'CONTENU SENSIBLE',
+                                ),
                                 style: GoogleFonts.fustat(
                                   fontWeight: FontWeight.w900,
                                   fontSize: 12,
@@ -142,7 +151,11 @@ class _ViolIncesteAgressionsAvertissementPageState
                         ),
                         const Spacer(),
                         Text(
-                          "Viol, inceste & agressions sexuelles",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                            "f00003",
+                            "Viol, inceste & agressions sexuelles",
+                          ),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(
@@ -154,7 +167,11 @@ class _ViolIncesteAgressionsAvertissementPageState
                         ),
                         const SizedBox(height: 6),
                         Text(
-                          "Certaines personnes peuvent être heurtées par le contenu ou les illustrations.",
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                            "f00004",
+                            "Certaines personnes peuvent être heurtées par le contenu ou les illustrations.",
+                          ),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.fustat(
@@ -192,7 +209,11 @@ class _ViolIncesteAgressionsAvertissementPageState
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Avant de continuer",
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                      "f00005",
+                      "Avant de continuer",
+                    ),
                     style: GoogleFonts.fustat(
                       fontWeight: FontWeight.w900,
                       fontSize: 18,
@@ -225,8 +246,16 @@ class _ViolIncesteAgressionsAvertissementPageState
                         const SizedBox(width: 10),
                         Expanded(
                           child: Text(
-                            "Cette section traite d’infractions sexuelles. Les documents sont à visée pédagogique et professionnelle. "
-                            "Certaines images d’illustration peuvent heurter.",
+                            ScolariteText.value(
+                                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                                  "f00006",
+                                  "Cette section traite d’infractions sexuelles. Les documents sont à visée pédagogique et professionnelle. ",
+                                ) +
+                                ScolariteText.value(
+                                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                                  "f00007",
+                                  "Certaines images d’illustration peuvent heurter.",
+                                ),
                             style: GoogleFonts.fustat(
                               fontWeight: FontWeight.w600,
                               fontSize: 13.5,
@@ -254,18 +283,27 @@ class _ViolIncesteAgressionsAvertissementPageState
                   const SizedBox(height: 8),
 
                   _Bullet(
-                    text:
-                        "Si vous êtes sensible à ce sujet, il est recommandé de ne pas poursuivre.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                      "f00008",
+                      "Si vous êtes sensible à ce sujet, il est recommandé de ne pas poursuivre.",
+                    ),
                     textSoft: textSoft,
                   ),
                   _Bullet(
-                    text:
-                        "Si ce contenu ravive une expérience personnelle, interrompez la lecture et prenez soin de vous.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                      "f00009",
+                      "Si ce contenu ravive une expérience personnelle, interrompez la lecture et prenez soin de vous.",
+                    ),
                     textSoft: textSoft,
                   ),
                   _Bullet(
-                    text:
-                        "Objectif : compréhension juridique et préparation professionnelle.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                      "f00010",
+                      "Objectif : compréhension juridique et préparation professionnelle.",
+                    ),
                     textSoft: textSoft,
                   ),
 
@@ -303,7 +341,11 @@ class _ViolIncesteAgressionsAvertissementPageState
                             child: Padding(
                               padding: const EdgeInsets.only(top: 2),
                               child: Text(
-                                "Je comprends que cette section contient du contenu sensible et je souhaite continuer.",
+                                ScolariteText.value(
+                                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                                  "f00011",
+                                  "Je comprends que cette section contient du contenu sensible et je souhaite continuer.",
+                                ),
                                 style: GoogleFonts.fustat(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 13.5,
@@ -335,7 +377,11 @@ class _ViolIncesteAgressionsAvertissementPageState
                             ),
                           ),
                           child: Text(
-                            "Ne pas continuer",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                              "f00012",
+                              "Ne pas continuer",
+                            ),
                             style: GoogleFonts.fustat(
                               fontWeight: FontWeight.w800,
                               fontSize: 14.5,
@@ -368,7 +414,11 @@ class _ViolIncesteAgressionsAvertissementPageState
                             ),
                           ),
                           child: Text(
-                            "Je comprends",
+                            ScolariteText.value(
+                              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                              "f00013",
+                              "Je comprends",
+                            ),
                             style: GoogleFonts.fustat(
                               fontWeight: FontWeight.w900,
                               fontSize: 14.5,
@@ -383,7 +433,11 @@ class _ViolIncesteAgressionsAvertissementPageState
 
                   Center(
                     child: Text(
-                      "Vous pouvez revenir en arrière à tout moment.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart",
+                        "f00014",
+                        "Vous pouvez revenir en arrière à tout moment.",
+                      ),
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w600,

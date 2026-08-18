@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RetentionPermisConduirePage extends StatelessWidget {
   const RetentionPermisConduirePage({super.key});
@@ -57,7 +58,11 @@ class RetentionPermisConduirePage extends StatelessWidget {
           onPressed: () => Navigator.of(context).maybePop(),
         ),
         title: Text(
-          "Rétention du permis",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+            "f00001",
+            "Rétention du permis",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -70,7 +75,11 @@ class RetentionPermisConduirePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         children: [
           Text(
-            "La rétention du permis de conduire",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00002",
+              "La rétention du permis de conduire",
+            ),
             style: GoogleFonts.fustat(
               fontSize: 21,
               fontWeight: FontWeight.w900,
@@ -83,15 +92,31 @@ class RetentionPermisConduirePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00003",
+              "Définition",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La rétention du permis de conduire est une mesure administrative conservatoire "
-                "permettant aux forces de l’ordre de retenir immédiatement le titre de conduite "
-                "dans l’attente d’une éventuelle suspension préfectorale.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00004",
+                      "La rétention du permis de conduire est une mesure administrative conservatoire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00005",
+                      "permettant aux forces de l’ordre de retenir immédiatement le titre de conduite ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00006",
+                      "dans l’attente d’une éventuelle suspension préfectorale.",
+                    ),
               ),
             ],
           ),
@@ -100,22 +125,30 @@ class RetentionPermisConduirePage extends StatelessWidget {
 
           // I — Élément légal
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00007",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles L.224-1 à L.224-6 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00008",
+                    "Articles L.224-1 à L.224-6 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définissent les cas, les conditions et les effets de la rétention du permis de conduire.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00009",
+                    " : définissent les cas, les conditions et les effets de la rétention du permis de conduire.",
+                  ),
                 ),
               ]),
             ],
@@ -125,22 +158,58 @@ class RetentionPermisConduirePage extends StatelessWidget {
 
           // II — Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00010",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Une infraction ou une situation prévue par la loi"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00011",
+                  "A) Une infraction ou une situation prévue par la loi",
+                ),
+              ),
               _Paragraph(
-                "La rétention est possible uniquement dans les cas strictement prévus par le code "
-                "de la route, notamment en matière d’alcool, de stupéfiants, d’excès de vitesse "
-                "important, d’accident grave ou de refus d’obtempérer.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00012",
+                      "La rétention est possible uniquement dans les cas strictement prévus par le code ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00013",
+                      "de la route, notamment en matière d’alcool, de stupéfiants, d’excès de vitesse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00014",
+                      "important, d’accident grave ou de refus d’obtempérer.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("B) La remise ou la non-remise immédiate du titre"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00015",
+                  "B) La remise ou la non-remise immédiate du titre",
+                ),
+              ),
               _Paragraph(
-                "La mesure est valable même si le permis n’est pas immédiatement remis. "
-                "À défaut, le conducteur est mis en demeure de le restituer dans un délai de 24 heures.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00016",
+                      "La mesure est valable même si le permis n’est pas immédiatement remis. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00017",
+                      "À défaut, le conducteur est mis en demeure de le restituer dans un délai de 24 heures.",
+                    ),
               ),
             ],
           ),
@@ -149,14 +218,26 @@ class RetentionPermisConduirePage extends StatelessWidget {
 
           // III — Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00018",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La rétention n’est pas une sanction pénale mais une mesure administrative. "
-                "Aucun élément intentionnel n’est requis pour sa mise en œuvre.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00019",
+                      "La rétention n’est pas une sanction pénale mais une mesure administrative. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                      "f00020",
+                      "Aucun élément intentionnel n’est requis pour sa mise en œuvre.",
+                    ),
               ),
             ],
           ),
@@ -165,25 +246,57 @@ class RetentionPermisConduirePage extends StatelessWidget {
 
           // IV — Cas de rétention
           _ConditionCard(
-            title: "IV — Cas de rétention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00021",
+              "IV — Cas de rétention",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Conduite sous l’influence de l’alcool ou ivresse manifeste.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00022",
+                  "Conduite sous l’influence de l’alcool ou ivresse manifeste.",
+                ),
               ),
-              _BulletPoint(text: "Conduite après usage de stupéfiants."),
               _BulletPoint(
-                text: "Excès de vitesse égal ou supérieur à 40 km/h.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00023",
+                  "Conduite après usage de stupéfiants.",
+                ),
               ),
-              _BulletPoint(text: "Accident mortel ou corporel."),
               _BulletPoint(
-                text:
-                    "Usage du téléphone tenu en main avec infraction associée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00024",
+                  "Excès de vitesse égal ou supérieur à 40 km/h.",
+                ),
               ),
-              _BulletPoint(text: "Refus d’obtempérer."),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00025",
+                  "Accident mortel ou corporel.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00026",
+                  "Usage du téléphone tenu en main avec infraction associée.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00027",
+                  "Refus d’obtempérer.",
+                ),
+              ),
             ],
           ),
 
@@ -191,24 +304,44 @@ class RetentionPermisConduirePage extends StatelessWidget {
 
           // V — Effets et durée
           _ConditionCard(
-            title: "V — Effets et durée",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00028",
+              "V — Effets et durée",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _BulletPoint(text: "Durée maximale de 72 heures."),
+            children: [
               _BulletPoint(
-                text:
-                    "Durée portée à 120 heures lorsque des analyses médicales ou biologiques sont nécessaires.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00029",
+                  "Durée maximale de 72 heures.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                  "f00030",
+                  "Durée portée à 120 heures lorsque des analyses médicales ou biologiques sont nécessaires.",
+                ),
               ),
               _Paragraph.rich([
-                TextSpan(text: "Fondement juridique : "),
                 TextSpan(
-                  text: "articles L.224-2 et L.224-3 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00031",
+                    "Fondement juridique : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00032",
+                    "articles L.224-2 et L.224-3 du Code de la route",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -219,36 +352,48 @@ class RetentionPermisConduirePage extends StatelessWidget {
 
           // VI — Répression des manquements
           _ConditionCard(
-            title: "VI — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+              "f00033",
+              "VI — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le fait de conduire malgré la rétention du permis constitue un délit — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00034",
+                    "Le fait de conduire malgré la rétention du permis constitue un délit — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L.224-16 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00035",
+                    "article L.224-16 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Le refus de restituer son permis après notification constitue également un délit — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00036",
+                    "Le refus de restituer son permis après notification constitue également un délit — ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article L.224-17 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/retention_permis_conduire_page.dart",
+                    "f00037",
+                    "article L.224-17 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
             ],
@@ -505,9 +650,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

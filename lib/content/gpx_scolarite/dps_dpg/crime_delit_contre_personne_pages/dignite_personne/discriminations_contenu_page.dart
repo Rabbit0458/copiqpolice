@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class DiscriminationsPage extends StatelessWidget {
   const DiscriminationsPage({super.key});
@@ -59,10 +60,18 @@ class DiscriminationsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Dignité de la personne",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+            "f00002",
+            "Dignité de la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class DiscriminationsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les discriminations",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+              "f00003",
+              "Les discriminations",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,23 +102,61 @@ class DiscriminationsPage extends StatelessWidget {
 
           // Définition (propre, sans répétitions)
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Toute distinction opérée entre les personnes (physiques ou morales) fondée sur un motif "
-                "protégé par la loi constitue une discrimination et, dans les cas prévus, une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00005",
+                      "Toute distinction opérée entre les personnes (physiques ou morales) fondée sur un motif ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00006",
+                      "protégé par la loi constitue une discrimination et, dans les cas prévus, une infraction.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Motifs protégés (exemples majeurs)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00007",
+                  "Motifs protégés (exemples majeurs)",
+                ),
+              ),
               _Paragraph(
-                "Origine, sexe, situation de famille, grossesse, apparence physique, vulnérabilité économique "
-                "(apparente ou connue), patronyme, lieu de résidence, état de santé, perte d’autonomie, handicap, "
-                "caractéristiques génétiques, mœurs, orientation sexuelle, identité de genre, âge, opinions politiques, "
-                "activités syndicales, capacité à s’exprimer dans une langue autre que le français, appartenance ou non "
-                "appartenance (réelle ou supposée) à une ethnie, une Nation, une prétendue race ou une religion déterminée.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00008",
+                      "Origine, sexe, situation de famille, grossesse, apparence physique, vulnérabilité économique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00009",
+                      "(apparente ou connue), patronyme, lieu de résidence, état de santé, perte d’autonomie, handicap, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00010",
+                      "caractéristiques génétiques, mœurs, orientation sexuelle, identité de genre, âge, opinions politiques, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00011",
+                      "activités syndicales, capacité à s’exprimer dans une langue autre que le français, appartenance ou non ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00012",
+                      "appartenance (réelle ou supposée) à une ethnie, une Nation, une prétendue race ou une religion déterminée.",
+                    ),
               ),
             ],
           ),
@@ -114,64 +165,84 @@ class DiscriminationsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (exigé) — Articles en rouge
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+              "f00013",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00014",
+                    "Article 225-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit la discrimination (personnes physiques et personnes morales).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00015",
+                    " : définit la discrimination (personnes physiques et personnes morales).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-1-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00016",
+                    "Article 225-1-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : vise la discrimination résultant d’un harcèlement sexuel (subi/refusé) ou du témoignage.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00017",
+                    " : vise la discrimination résultant d’un harcèlement sexuel (subi/refusé) ou du témoignage.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-1-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00018",
+                    "Article 225-1-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : vise la discrimination résultant de faits de bizutage (subis/refusés) ou du témoignage.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00019",
+                    " : vise la discrimination résultant de faits de bizutage (subis/refusés) ou du témoignage.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00020",
+                    "Article 225-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : incrimine certaines situations précises dans lesquelles il est interdit de procéder à une discrimination.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00021",
+                    " : incrimine certaines situations précises dans lesquelles il est interdit de procéder à une discrimination.",
+                  ),
                 ),
               ]),
             ],
@@ -181,43 +252,75 @@ class DiscriminationsPage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+              "f00022",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00023",
+                    "Article 225-2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " ne vise pas tous les comportements discriminatoires : il cible six situations typiques.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00024",
+                    " ne vise pas tous les comportements discriminatoires : il cible six situations typiques.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 12),
 
-              const _SubTitle(
-                "A) Refuser la fourniture d’un bien ou d’un service",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00025",
+                  "A) Refuser la fourniture d’un bien ou d’un service",
+                ),
               ),
-              const _Paragraph(
-                "Cela recouvre les conventions portant sur un bien ou un service (vente, location, prêt, assurance, etc.), "
-                "sans distinction entre particulier/professionnel ni entre gratuit/onéreux.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00026",
+                      "Cela recouvre les conventions portant sur un bien ou un service (vente, location, prêt, assurance, etc.), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00027",
+                      "sans distinction entre particulier/professionnel ni entre gratuit/onéreux.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Les termes « bien » et « service » s’entendent largement : toutes choses susceptibles d’être l’objet d’un droit "
-                        "et représentant une valeur pécuniaire ou un avantage — ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                          "f00028",
+                          "Les termes « bien » et « service » s’entendent largement : toutes choses susceptibles d’être l’objet d’un droit ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                          "f00029",
+                          "et représentant une valeur pécuniaire ou un avantage — ",
+                        ),
                   ),
                   TextSpan(
-                    text: "C.A. Paris, 21 novembre 1974",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00030",
+                      "C.A. Paris, 21 novembre 1974",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -228,20 +331,31 @@ class DiscriminationsPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               _ConditionCard(
-                title: "Exemples jurisprudentiels",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00031",
+                  "Exemples jurisprudentiels",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF1B1B1B)
                     : const Color(0xFFFFFFFF),
                 accent: accentGreen,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Refus de vendre un appartement à raison du patronyme — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00032",
+                        "Refus de vendre un appartement à raison du patronyme — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "C.A. Besançon, 27 janvier 2005",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00033",
+                        "C.A. Besançon, 27 janvier 2005",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -252,11 +366,18 @@ class DiscriminationsPage extends StatelessWidget {
                   SizedBox(height: 6),
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Refus d’accepter des personnes handicapées à bord d’avions — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00034",
+                        "Refus d’accepter des personnes handicapées à bord d’avions — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "C.A. Paris, 19 septembre 1994",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00035",
+                        "C.A. Paris, 19 septembre 1994",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -269,13 +390,29 @@ class DiscriminationsPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "B) Entraver l’exercice normal d’une activité économique",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00036",
+                  "B) Entraver l’exercice normal d’une activité économique",
+                ),
               ),
-              const _Paragraph(
-                "Il s’agit de rendre plus difficile une activité économique (production, distribution, consommation), "
-                "par des formes variées : dénigrement, pressions, « liste noire », etc. L’activité n’a pas besoin d’être totalement empêchée : "
-                "il suffit que les agissements aient pu produire des effets.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00037",
+                      "Il s’agit de rendre plus difficile une activité économique (production, distribution, consommation), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00038",
+                      "par des formes variées : dénigrement, pressions, « liste noire », etc. L’activité n’a pas besoin d’être totalement empêchée : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00039",
+                      "il suffit que les agissements aient pu produire des effets.",
+                    ),
               ),
               const SizedBox(height: 10),
               _ConditionCard(
@@ -285,14 +422,21 @@ class DiscriminationsPage extends StatelessWidget {
                     : const Color(0xFFFFFFFF),
                 accent: accentGreen,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Entrave : refus d’entretien à une femme journaliste + consigne de refuser tout contact — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00040",
+                        "Entrave : refus d’entretien à une femme journaliste + consigne de refuser tout contact — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "C.A. Bordeaux, 20 novembre 1991",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00041",
+                        "C.A. Bordeaux, 20 novembre 1991",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -303,11 +447,18 @@ class DiscriminationsPage extends StatelessWidget {
                   SizedBox(height: 6),
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Exigence d’une attestation discriminatoire à un exportateur (transit par certains pays) — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00042",
+                        "Exigence d’une attestation discriminatoire à un exportateur (transit par certains pays) — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "Cass. crim., 09 novembre 2004",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00043",
+                        "Cass. crim., 09 novembre 2004",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -320,22 +471,41 @@ class DiscriminationsPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "C) Refuser d’embaucher, sanctionner ou licencier",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00044",
+                  "C) Refuser d’embaucher, sanctionner ou licencier",
+                ),
               ),
-              const _Paragraph(
-                "Le refus d’embauche s’entend largement : il peut viser le refus d’entretien, ou le congédiement pendant la période d’essai "
-                "(l’embauche n’étant définitive qu’à l’issue de cette période).",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00045",
+                      "Le refus d’embauche s’entend largement : il peut viser le refus d’entretien, ou le congédiement pendant la période d’essai ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00046",
+                      "(l’embauche n’étant définitive qu’à l’issue de cette période).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le congédiement pendant la période d’essai peut constituer un refus d’embauche — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00047",
+                      "Le congédiement pendant la période d’essai peut constituer un refus d’embauche — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 14 octobre 1986",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00048",
+                      "Cass. crim., 14 octobre 1986",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -346,20 +516,31 @@ class DiscriminationsPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               _ConditionCard(
-                title: "Repères",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00049",
+                  "Repères",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF1B1B1B)
                     : const Color(0xFFFFFFFF),
                 accent: accentGreen,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Refus de renouvellement d’un CDD lié à l’engagement politique d’un membre de la famille — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00050",
+                        "Refus de renouvellement d’un CDD lié à l’engagement politique d’un membre de la famille — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "Cass. crim., 21 juin 2016",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00051",
+                        "Cass. crim., 21 juin 2016",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -370,11 +551,18 @@ class DiscriminationsPage extends StatelessWidget {
                   SizedBox(height: 6),
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Refus d’embauche en raison de la « race » alléguée (propos explicites de l’employeur) — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00052",
+                        "Refus d’embauche en raison de la « race » alléguée (propos explicites de l’employeur) — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "C.A. Paris, 7 juin 2004",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00053",
+                        "C.A. Paris, 7 juin 2004",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -385,11 +573,18 @@ class DiscriminationsPage extends StatelessWidget {
                   SizedBox(height: 6),
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Licenciement discriminatoire à raison de l’origine (même si ce n’est pas l’unique motif) — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00054",
+                        "Licenciement discriminatoire à raison de l’origine (même si ce n’est pas l’unique motif) — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "C.A. Paris, 20 mars 1997",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00055",
+                        "C.A. Paris, 20 mars 1997",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -400,18 +595,29 @@ class DiscriminationsPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Sanctionner : vise les mesures disciplinaires (avertissement, blâme, mise à pied, rétrogradation, mutation, refus d’avancement, etc.).",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00056",
+                  "Sanctionner : vise les mesures disciplinaires (avertissement, blâme, mise à pied, rétrogradation, mutation, refus d’avancement, etc.).",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Discrimination syndicale : mise à pied d’une déléguée du personnel à raison de son appartenance — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00057",
+                      "Discrimination syndicale : mise à pied d’une déléguée du personnel à raison de son appartenance — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 23 novembre 2004",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00058",
+                      "Cass. crim., 23 novembre 2004",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -423,21 +629,36 @@ class DiscriminationsPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "D) Subordonner un bien/service à une condition discriminatoire",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00059",
+                  "D) Subordonner un bien/service à une condition discriminatoire",
+                ),
               ),
-              const _Paragraph(
-                "Au lieu de refuser, l’auteur impose une ou plusieurs conditions discriminatoires pour obtenir le bien ou le service.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00060",
+                  "Au lieu de refuser, l’auteur impose une ou plusieurs conditions discriminatoires pour obtenir le bien ou le service.",
+                ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Prime municipale de naissance subordonnée à une nationalité — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00061",
+                      "Prime municipale de naissance subordonnée à une nationalité — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "C.A. Aix-en-Provence, 18 juin 2001",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00062",
+                      "C.A. Aix-en-Provence, 18 juin 2001",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -449,11 +670,19 @@ class DiscriminationsPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "E) Subordonner une offre d’emploi / stage / formation à une condition discriminatoire",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00063",
+                  "E) Subordonner une offre d’emploi / stage / formation à une condition discriminatoire",
+                ),
               ),
-              const _Paragraph(
-                "La matérialité peut exister avant même toute relation directe avec le candidat : la condition discriminatoire est posée dès l’offre.",
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00064",
+                  "La matérialité peut exister avant même toute relation directe avec le candidat : la condition discriminatoire est posée dès l’offre.",
+                ),
               ),
               const SizedBox(height: 10),
               _ConditionCard(
@@ -463,14 +692,21 @@ class DiscriminationsPage extends StatelessWidget {
                     : const Color(0xFFFFFFFF),
                 accent: accentGreen,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Offre réservée à des confrères musulmans (exclusion des autres) — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00065",
+                        "Offre réservée à des confrères musulmans (exclusion des autres) — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "T.C. Paris, 19 décembre 1991",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00066",
+                        "T.C. Paris, 19 décembre 1991",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -481,11 +717,18 @@ class DiscriminationsPage extends StatelessWidget {
                   SizedBox(height: 6),
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Complicité : diffuser des offres excluant des candidats d’origine nord-africaine — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00067",
+                        "Complicité : diffuser des offres excluant des candidats d’origine nord-africaine — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "Cass. crim., 18 juillet 1985",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00068",
+                        "Cass. crim., 18 juillet 1985",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -496,11 +739,18 @@ class DiscriminationsPage extends StatelessWidget {
                   SizedBox(height: 6),
                   _Paragraph.rich([
                     TextSpan(
-                      text:
-                          "Refus de valider une inscription (voile islamique) — ",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00069",
+                        "Refus de valider une inscription (voile islamique) — ",
+                      ),
                     ),
                     TextSpan(
-                      text: "C.A. Paris, 8 juin 2010",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00070",
+                        "C.A. Paris, 8 juin 2010",
+                      ),
                       style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
@@ -513,49 +763,94 @@ class DiscriminationsPage extends StatelessWidget {
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "F) Refuser l’accès à certains stages (sécurité sociale)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00071",
+                  "F) Refuser l’accès à certains stages (sécurité sociale)",
+                ),
               ),
-              const _Paragraph(
-                "Sont visés notamment les stages d’élèves/étudiants, la formation professionnelle continue, ou des stages d’initiation/complément "
-                "en organisme privé/public, lorsque le refus est fondé sur un motif discriminatoire.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00072",
+                      "Sont visés notamment les stages d’élèves/étudiants, la formation professionnelle continue, ou des stages d’initiation/complément ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00073",
+                      "en organisme privé/public, lorsque le refus est fondé sur un motif discriminatoire.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("À connaître : victimes, exceptions, auteur"),
-              const _Paragraph(
-                "Victimes : toute personne physique ou morale peut être victime (et, pour le harcèlement sexuel/bizutage, "
-                "les victimes comme les témoins sont protégés).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00074",
+                  "À connaître : victimes, exceptions, auteur",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00075",
+                      "Victimes : toute personne physique ou morale peut être victime (et, pour le harcèlement sexuel/bizutage, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00076",
+                      "les victimes comme les témoins sont protégés).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Actes commis par un dépositaire de l’autorité publique / mission de service public : ",
-                ),
-                TextSpan(
-                  text: "article 432-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00077",
+                    "Actes commis par un dépositaire de l’autorité publique / mission de service public : ",
                   ),
                 ),
-                TextSpan(text: " (référence)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00078",
+                    "article 432-7 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00079",
+                    " (référence).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-3 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00080",
+                    "Article 225-3 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " prévoit des exceptions (assurance/risques, inaptitude médicalement constatée, exigence professionnelle essentielle et déterminante, "
-                      "certaines différenciations liées au sexe dans l’accès aux biens/services, etc.).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00081",
+                        " prévoit des exceptions (assurance/risques, inaptitude médicalement constatée, exigence professionnelle essentielle et déterminante, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00082",
+                        "certaines différenciations liées au sexe dans l’accès aux biens/services, etc.).",
+                      ),
                 ),
               ]),
             ],
@@ -565,27 +860,50 @@ class DiscriminationsPage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+              "f00083",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Conscience de se livrer à des agissements discriminatoires",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00084",
+                  "Conscience de se livrer à des agissements discriminatoires",
+                ),
               ),
               _Paragraph(
-                "Délit intentionnel : il faut établir qu’au moment des faits, l’auteur avait conscience du caractère discriminatoire "
-                "de ses agissements. Peu importe l’existence d’une hostilité personnelle.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00085",
+                      "Délit intentionnel : il faut établir qu’au moment des faits, l’auteur avait conscience du caractère discriminatoire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00086",
+                      "de ses agissements. Peu importe l’existence d’une hostilité personnelle.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Un restaurateur ne peut refuser une table à un handicapé en invoquant l’intolérance de sa clientèle — ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00087",
+                      "Un restaurateur ne peut refuser une table à un handicapé en invoquant l’intolérance de sa clientèle — ",
+                    ),
                   ),
                   TextSpan(
-                    text: "T.C. Nantes, 01 mars 1990",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                      "f00088",
+                      "T.C. Nantes, 01 mars 1990",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -597,16 +915,25 @@ class DiscriminationsPage extends StatelessWidget {
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-3-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00089",
+                    "Article 225-3-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text:
-                      " encadre les « tests de discrimination » : l’infraction peut être constituée même si la demande a été faite pour démontrer le comportement, "
-                      "à condition que la preuve soit établie et que les informations fournies ne soient pas fictives/mensongères.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00090",
+                        " encadre les « tests de discrimination » : l’infraction peut être constituée même si la demande a été faite pour démontrer le comportement, ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                        "f00091",
+                        "à condition que la preuve soit établie et que les informations fournies ne soient pas fictives/mensongères.",
+                      ),
                 ),
               ]),
             ],
@@ -616,25 +943,33 @@ class DiscriminationsPage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+              "f00092",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-2 alinéa 8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00093",
+                    "Article 225-2 alinéa 8 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsque le refus discriminatoire (1°) est commis dans un lieu accueillant du public ou aux fins d’en interdire l’accès.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00094",
+                  "Lorsque le refus discriminatoire (1°) est commis dans un lieu accueillant du public ou aux fins d’en interdire l’accès.",
+                ),
               ),
             ],
           ),
@@ -643,93 +978,162 @@ class DiscriminationsPage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+              "f00095",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00096",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Forme simple : "),
                 TextSpan(
-                  text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00097",
+                    "Forme simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00098",
+                    "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00099",
+                    "article 225-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Forme aggravée (lieu accueillant du public / interdiction d’accès) : ",
-                ),
-                TextSpan(
-                  text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 225-2 alinéa 8 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00100",
+                    "Forme aggravée (lieu accueillant du public / interdiction d’accès) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00101",
+                    "5 ans d’emprisonnement et 75 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00102",
+                    "article 225-2 alinéa 8 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00103",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 225-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00104",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : amende au quintuple + sanctions/réparations + peines complémentaires (notamment 2°, 3°, 4°, 5°, 8° et 9° de ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00105",
+                    "l’article 225-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: "l’article 131-39 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00106",
+                    " : amende au quintuple + sanctions/réparations + peines complémentaires (notamment 2°, 3°, 4°, 5°, 8° et 9° de ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00107",
+                    "l’article 131-39 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: ")."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00108",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                  "f00109",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00110",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00111",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00112",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " (aide/assistance, provocation ou instructions + intention de s’associer).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/discriminations_contenu_page.dart",
+                    "f00113",
+                    " (aide/assistance, provocation ou instructions + intention de s’associer).",
+                  ),
                 ),
               ]),
             ],
@@ -986,9 +1390,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

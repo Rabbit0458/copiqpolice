@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PrefecturePolicePage extends StatelessWidget {
   const PrefecturePolicePage({super.key});
@@ -56,10 +57,18 @@ class PrefecturePolicePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Préfecture de Police",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+            "f00002",
+            "Préfecture de Police",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -74,7 +83,11 @@ class PrefecturePolicePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "III — La Préfecture de Police",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+              "f00003",
+              "III — La Préfecture de Police",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,10 +103,18 @@ class PrefecturePolicePage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "À Paris, le préfet de police est un haut fonctionnaire nommé en Conseil des ministres. "
-                "Il assure la direction et la coordination de missions essentielles de sécurité et d’ordre public.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                      "f00004",
+                      "À Paris, le préfet de police est un haut fonctionnaire nommé en Conseil des ministres. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                      "f00005",
+                      "Il assure la direction et la coordination de missions essentielles de sécurité et d’ordre public.",
+                    ),
               ),
             ],
           ),
@@ -102,33 +123,56 @@ class PrefecturePolicePage extends StatelessWidget {
 
           // Rôle du préfet de police
           _ConditionCard(
-            title: "Rôle du préfet de police",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+              "f00006",
+              "Rôle du préfet de police",
+            ),
             cardColor: cardRole,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text: "Responsable de la sécurité dans la capitale.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00007",
+                  "Responsable de la sécurité dans la capitale.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Responsable de la police administrative exercée au nom de l’État dans la capitale.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00008",
+                  "Responsable de la police administrative exercée au nom de l’État dans la capitale.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Supérieur hiérarchique des fonctionnaires, y compris ceux de la police judiciaire (pouvoir disciplinaire et de notation).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00009",
+                  "Supérieur hiérarchique des fonctionnaires, y compris ceux de la police judiciaire (pouvoir disciplinaire et de notation).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préfet pour l’administration de la police de Paris et des départements des Hauts-de-Seine, de la Seine-Saint-Denis et du Val-de-Marne.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00010",
+                  "Préfet pour l’administration de la police de Paris et des départements des Hauts-de-Seine, de la Seine-Saint-Denis et du Val-de-Marne.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Préfet de la zone de défense de Paris (8 départements d’Île-de-France).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00011",
+                  "Préfet de la zone de défense de Paris (8 départements d’Île-de-France).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Responsable du commandement opérationnel unique de la sécurité dans les transports ferrés en Île-de-France.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00012",
+                  "Responsable du commandement opérationnel unique de la sécurité dans les transports ferrés en Île-de-France.",
+                ),
               ),
             ],
           ),
@@ -137,27 +181,64 @@ class PrefecturePolicePage extends StatelessWidget {
 
           // Attributions
           _ConditionCard(
-            title: "Attributions principales",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+              "f00013",
+              "Attributions principales",
+            ),
             cardColor: cardAttrib,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La Préfecture de Police se voit confier de nombreuses attributions, notamment :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00014",
+                  "La Préfecture de Police se voit confier de nombreuses attributions, notamment :",
+                ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text: "Assurer la sécurité des personnes et des biens.",
-              ),
-              _BulletPoint(text: "Assurer la sécurité civile."),
-              _BulletPoint(text: "Délivrer des titres administratifs."),
-              _BulletPoint(text: "Assurer la circulation."),
-              _BulletPoint(
-                text:
-                    "Lutter contre les nuisances et protéger l’environnement.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00015",
+                  "Assurer la sécurité des personnes et des biens.",
+                ),
               ),
               _BulletPoint(
-                text: "Prévenir les événements troublant l’ordre public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00016",
+                  "Assurer la sécurité civile.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00017",
+                  "Délivrer des titres administratifs.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00018",
+                  "Assurer la circulation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00019",
+                  "Lutter contre les nuisances et protéger l’environnement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00020",
+                  "Prévenir les événements troublant l’ordre public.",
+                ),
               ),
             ],
           ),
@@ -166,43 +247,107 @@ class PrefecturePolicePage extends StatelessWidget {
 
           // Structure de la PP
           _ConditionCard(
-            title: "Organisation de la Préfecture de Police",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+              "f00021",
+              "Organisation de la Préfecture de Police",
+            ),
             cardColor: cardStruct,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Services administratifs"),
-              _BulletPoint(
-                text: "Direction des usagers et des polices administratives",
-              ),
-              _BulletPoint(text: "Direction des ressources humaines"),
-              _BulletPoint(
-                text:
-                    "Direction des finances, de la commande publique et de la performance",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00022",
+                  "A) Services administratifs",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Direction de l’innovation, de la logistique et des technologies",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00023",
+                  "Direction des usagers et des polices administratives",
+                ),
               ),
               _BulletPoint(
-                text: "Direction de l’immobilier et de l’environnement",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00024",
+                  "Direction des ressources humaines",
+                ),
               ),
               _BulletPoint(
-                text: "Service des affaires juridiques et du contentieux",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00025",
+                  "Direction des finances, de la commande publique et de la performance",
+                ),
               ),
-              _BulletPoint(text: "Service de l’administration des étrangers"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00026",
+                  "Direction de l’innovation, de la logistique et des technologies",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00027",
+                  "Direction de l’immobilier et de l’environnement",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00028",
+                  "Service des affaires juridiques et du contentieux",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00029",
+                  "Service de l’administration des étrangers",
+                ),
+              ),
               SizedBox(height: 14),
-              _SubTitle("B) Services actifs"),
-              _BulletPoint(
-                text:
-                    "Direction de la sécurité de proximité de l’agglomération parisienne",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00030",
+                  "B) Services actifs",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "D.O.P.C. — Direction de l’Ordre public et de la Circulation",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00031",
+                  "Direction de la sécurité de proximité de l’agglomération parisienne",
+                ),
               ),
-              _BulletPoint(text: "Direction de la police judiciaire"),
-              _BulletPoint(text: "Direction du renseignement"),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00032",
+                  "D.O.P.C. — Direction de l’Ordre public et de la Circulation",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00033",
+                  "Direction de la police judiciaire",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00034",
+                  "Direction du renseignement",
+                ),
+              ),
             ],
           ),
 
@@ -210,28 +355,59 @@ class PrefecturePolicePage extends StatelessWidget {
 
           // Cabinet du préfet
           _ConditionCard(
-            title: "Services rattachés au cabinet du préfet de police",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+              "f00035",
+              "Services rattachés au cabinet du préfet de police",
+            ),
             cardColor: cardCab,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Certains services sont directement attachés au cabinet du préfet de police :",
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00036",
+                  "Certains services sont directement attachés au cabinet du préfet de police :",
+                ),
               ),
               SizedBox(height: 10),
-              _BulletPoint(text: "Le laboratoire central"),
-              _BulletPoint(text: "Le laboratoire de toxicologie"),
               _BulletPoint(
-                text:
-                    "La brigade des sapeurs-pompiers de Paris (unité militaire à la disposition du préfet de police)",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00037",
+                  "Le laboratoire central",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00038",
+                  "Le laboratoire de toxicologie",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                  "f00039",
+                  "La brigade des sapeurs-pompiers de Paris (unité militaire à la disposition du préfet de police)",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Le sigle « P.P. » est souvent utilisé pour désigner la Préfecture de Police, mais dans cette page, "
-                        "les intitulés sont volontairement écrits en clair pour un apprentissage plus pédagogique.",
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                          "f00040",
+                          "Le sigle « P.P. » est souvent utilisé pour désigner la Préfecture de Police, mais dans cette page, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                          "f00041",
+                          "les intitulés sont volontairement écrits en clair pour un apprentissage plus pédagogique.",
+                        ),
                   ),
                 ],
               ),
@@ -242,24 +418,34 @@ class PrefecturePolicePage extends StatelessWidget {
 
           // Petit rappel “style loi” (même si ici pas d’article, ça garde le standard)
           _ConditionCard(
-            title: "Repère visuel (articles de loi)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+              "f00042",
+              "Repère visuel (articles de loi)",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Rappel : lorsque des références juridiques sont présentes dans une page (Code pénal, Code de procédure pénale, Code de la sécurité intérieure, etc.), elles doivent apparaître en ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                    "f00043",
+                    "Rappel : lorsque des références juridiques sont présentes dans une page (Code pénal, Code de procédure pénale, Code de la sécurité intérieure, etc.), elles doivent apparaître en ",
+                  ),
                 ),
                 TextSpan(
                   text: "rouge",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/organisation_pn/prefecture_police_page.dart",
+                    "f00044",
+                    " pour être repérées immédiatement.",
                   ),
                 ),
-                TextSpan(text: " pour être repérées immédiatement."),
               ]),
             ],
           ),
@@ -515,9 +701,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

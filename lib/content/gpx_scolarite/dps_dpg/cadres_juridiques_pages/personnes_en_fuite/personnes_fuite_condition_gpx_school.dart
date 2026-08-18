@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PersonnesFuiteConditionGpxSchool extends StatelessWidget {
   const PersonnesFuiteConditionGpxSchool({super.key});
@@ -23,7 +24,11 @@ class PersonnesFuiteConditionGpxSchool extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'Art. 74-2 – Conditions d’application',
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+            "f00001",
+            'Art. 74-2 – Conditions d’application',
+          ),
           style: GoogleFonts.fustat(fontWeight: FontWeight.w700, fontSize: 16),
         ),
       ),
@@ -33,92 +38,206 @@ class PersonnesFuiteConditionGpxSchool extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const _SubTitle(
-                'Chapitre 1 : Les conditions d’application\n'
-                'de l’Article 74-2 du Code de procédure pénale',
+              _SubTitle(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                      "f00002",
+                      'Chapitre 1 : Les conditions d’application\n',
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                      "f00003",
+                      'de l’Article 74-2 du Code de procédure pénale',
+                    ),
               ),
               const SizedBox(height: 8),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
-                      'La procédure de l’Article 74-2 du Code de procédure pénale est '
-                      'applicable à l’encontre d’une personne en fuite qui remplit '
-                      'certaines conditions strictement définies par la loi.',
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                        "f00004",
+                        'La procédure de l’Article 74-2 du Code de procédure pénale est ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                        "f00005",
+                        'applicable à l’encontre d’une personne en fuite qui remplit ',
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                        "f00006",
+                        'certaines conditions strictement définies par la loi.',
+                      ),
                   style: TextStyle(color: Colors.red),
                 ),
               ]),
               const SizedBox(height: 16),
 
               _ConditionCard(
-                title: '1 – La personne fait l’objet d’un mandat d’arrêt',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                  "f00007",
+                  '1 – La personne fait l’objet d’un mandat d’arrêt',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'La procédure s’applique tout d’abord lorsque la personne en fuite '
-                    'fait l’objet d’un mandat d’arrêt.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00008",
+                          'La procédure s’applique tout d’abord lorsque la personne en fuite ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00009",
+                          'fait l’objet d’un mandat d’arrêt.',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _BulletPoint(
                     text:
-                        'Lors de son renvoi devant une juridiction de jugement : à ce '
-                        'stade, le mandat d’arrêt est délivré par le juge d’instruction, '
-                        'le juge des libertés et de la détention, la chambre de '
-                        'l’instruction ou son président, ou le président de la cour '
-                        'd’assises ;',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00010",
+                          'Lors de son renvoi devant une juridiction de jugement : à ce ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00011",
+                          'stade, le mandat d’arrêt est délivré par le juge d’instruction, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00012",
+                          'le juge des libertés et de la détention, la chambre de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00013",
+                          'l’instruction ou son président, ou le président de la cour ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00014",
+                          'd’assises ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'Lorsque le mandat d’arrêt est délivré par une juridiction de '
-                        'jugement ou par le juge de l’application des peines.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00015",
+                          'Lorsque le mandat d’arrêt est délivré par une juridiction de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00016",
+                          'jugement ou par le juge de l’application des peines.',
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 22),
               _ConditionCard(
-                title:
-                    '2 – La personne est condamnée à une peine privative de liberté',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                  "f00017",
+                  '2 – La personne est condamnée à une peine privative de liberté',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'La procédure de l’Article 74-2 du Code de procédure pénale est '
-                    'également applicable lorsque la personne :',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00018",
+                          'La procédure de l’Article 74-2 du Code de procédure pénale est ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00019",
+                          'également applicable lorsque la personne :',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _BulletPoint(
                     text:
-                        'est condamnée à une peine privative de liberté, sans sursis ou '
-                        'résultant de la révocation d’un sursis assorti ou non d’une '
-                        'probation, supérieure ou égale à un an, lorsque cette '
-                        'condamnation est exécutoire ou passée en force de chose jugée.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00020",
+                          'est condamnée à une peine privative de liberté, sans sursis ou ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00021",
+                          'résultant de la révocation d’un sursis assorti ou non d’une ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00022",
+                          'probation, supérieure ou égale à un an, lorsque cette ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00023",
+                          'condamnation est exécutoire ou passée en force de chose jugée.',
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 22),
               _ConditionCard(
-                title:
-                    '3 – La personne est inscrite dans certains fichiers judiciaires',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                  "f00024",
+                  '3 – La personne est inscrite dans certains fichiers judiciaires',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'L’Article 74-2 du Code de procédure pénale vise aussi les situations '
-                    'dans lesquelles la personne en fuite est soumise à des obligations '
-                    'liées à une inscription dans un fichier judiciaire national automatisé.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00025",
+                          'L’Article 74-2 du Code de procédure pénale vise aussi les situations ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00026",
+                          'dans lesquelles la personne en fuite est soumise à des obligations ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00027",
+                          'liées à une inscription dans un fichier judiciaire national automatisé.',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          'Elle est inscrite au fichier judiciaire national automatisé des '
-                          'auteurs d’infractions terroristes ayant manqué aux obligations '
-                          'prévues à l’Article 706-25-7 du Code de procédure pénale ;',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                            "f00028",
+                            'Elle est inscrite au fichier judiciaire national automatisé des ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                            "f00029",
+                            'auteurs d’infractions terroristes ayant manqué aux obligations ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                            "f00030",
+                            'prévues à l’Article 706-25-7 du Code de procédure pénale ;',
+                          ),
                       style: TextStyle(color: Colors.red),
                     ),
                   ]),
@@ -126,10 +245,26 @@ class PersonnesFuiteConditionGpxSchool extends StatelessWidget {
                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          'Elle est inscrite au fichier judiciaire national automatisé des '
-                          'auteurs d’infractions sexuelles ou violentes ayant manqué aux '
-                          'obligations prévues à l’Article 706-53-5 du Code de procédure '
-                          'pénale.',
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                            "f00031",
+                            'Elle est inscrite au fichier judiciaire national automatisé des ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                            "f00032",
+                            'auteurs d’infractions sexuelles ou violentes ayant manqué aux ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                            "f00033",
+                            'obligations prévues à l’Article 706-53-5 du Code de procédure ',
+                          ) +
+                          ScolariteText.value(
+                            "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                            "f00034",
+                            'pénale.',
+                          ),
                       style: TextStyle(color: Colors.red),
                     ),
                   ]),
@@ -138,46 +273,109 @@ class PersonnesFuiteConditionGpxSchool extends StatelessWidget {
 
               const SizedBox(height: 22),
               _ConditionCard(
-                title:
-                    '4 – Décision de retrait ou de révocation d’un aménagement de peine',
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                  "f00035",
+                  '4 – Décision de retrait ou de révocation d’un aménagement de peine',
+                ),
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: const [
+                children: [
                   _Paragraph(
-                    'Enfin, la procédure de recherche des personnes en fuite s’applique '
-                    'lorsque la personne :',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00036",
+                          'Enfin, la procédure de recherche des personnes en fuite s’applique ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00037",
+                          'lorsque la personne :',
+                        ),
                   ),
                   SizedBox(height: 8),
                   _BulletPoint(
                     text:
-                        'fait l’objet d’une décision de retrait ou de révocation d’un '
-                        'aménagement de peine ou d’une libération sous contrainte ;',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00038",
+                          'fait l’objet d’une décision de retrait ou de révocation d’un ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00039",
+                          'aménagement de peine ou d’une libération sous contrainte ;',
+                        ),
                   ),
                   _BulletPoint(
                     text:
-                        'ou d’une décision de mise à exécution de l’emprisonnement prévu '
-                        'par la juridiction de jugement en cas de violation des obligations '
-                        'et interdictions résultant d’une peine ;',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00040",
+                          'ou d’une décision de mise à exécution de l’emprisonnement prévu ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00041",
+                          'par la juridiction de jugement en cas de violation des obligations ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00042",
+                          'et interdictions résultant d’une peine ;',
+                        ),
                   ),
                   _Paragraph(
-                    'et que cette décision a pour conséquence la mise à exécution d’un '
-                    'quantum ou d’un reliquat de peine d’emprisonnement supérieur à un an.',
+                    ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00043",
+                          'et que cette décision a pour conséquence la mise à exécution d’un ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00044",
+                          'quantum ou d’un reliquat de peine d’emprisonnement supérieur à un an.',
+                        ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 24),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        'En résumé, l’Article 74-2 du Code de procédure pénale ne vise pas '
-                        'toute personne recherchée mais uniquement celles qui sont '
-                        'concernées par un mandat d’arrêt, une peine d’emprisonnement '
-                        'significative, une inscription dans certains fichiers judiciaires, '
-                        'ou une décision de retrait ou de révocation d’un aménagement de '
-                        'peine. Version au 01/07/2025 – SDCP – Tous droits réservés.',
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00045",
+                          'En résumé, l’Article 74-2 du Code de procédure pénale ne vise pas ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00046",
+                          'toute personne recherchée mais uniquement celles qui sont ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00047",
+                          'concernées par un mandat d’arrêt, une peine d’emprisonnement ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00048",
+                          'significative, une inscription dans certains fichiers judiciaires, ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00049",
+                          'ou une décision de retrait ou de révocation d’un aménagement de ',
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart",
+                          "f00050",
+                          'peine. Version au 01/07/2025 – SDCP – Tous droits réservés.',
+                        ),
                   ),
                 ],
               ),
@@ -435,9 +633,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

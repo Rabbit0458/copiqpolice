@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class RecoursProstitutionMineursPersonnesVulnerablesPage
     extends StatelessWidget {
@@ -60,10 +61,18 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Dignité de la personne",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+            "f00002",
+            "Dignité de la personne",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -78,7 +87,11 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Le recours à la prostitution de mineur\nou de personne particulièrement vulnérable",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+              "f00003",
+              "Le recours à la prostitution de mineur\nou de personne particulièrement vulnérable",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -90,18 +103,46 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait de solliciter, d’accepter ou d’obtenir, en échange d’une rémunération, d’une promesse "
-                "de rémunération, de la fourniture d’un avantage en nature ou de la promesse d’un tel avantage, "
-                "des relations de nature sexuelle de la part d’une personne se livrant à la prostitution (même "
-                "de façon occasionnelle), lorsque cette personne est mineure ou présente une particulière vulnérabilité "
-                "(apparente ou connue de l’auteur) due à une maladie, une infirmité, un handicap ou un état de grossesse, "
-                "constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00005",
+                      "Le fait de solliciter, d’accepter ou d’obtenir, en échange d’une rémunération, d’une promesse ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00006",
+                      "de rémunération, de la fourniture d’un avantage en nature ou de la promesse d’un tel avantage, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00007",
+                      "des relations de nature sexuelle de la part d’une personne se livrant à la prostitution (même ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00008",
+                      "de façon occasionnelle), lorsque cette personne est mineure ou présente une particulière vulnérabilité ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00009",
+                      "(apparente ou connue de l’auteur) due à une maladie, une infirmité, un handicap ou un état de grossesse, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00010",
+                      "constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -110,37 +151,52 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
 
           // ✅ Élément légal en haut (exigé)
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+              "f00011",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-12-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00012",
+                    "Article 225-12-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : définit et réprime le recours à la prostitution d’un mineur ou d’une personne particulièrement vulnérable.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00013",
+                    " : définit et réprime le recours à la prostitution d’un mineur ou d’une personne particulièrement vulnérable.",
+                  ),
                 ),
               ]),
               SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Article 611-1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00014",
+                      "Article 611-1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " (créé par la loi n° 2016-444 du 13 avril 2016) réprime le recours à la prostitution d’une personne majeure (contravention de 5e classe).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00015",
+                      " (créé par la loi n° 2016-444 du 13 avril 2016) réprime le recours à la prostitution d’une personne majeure (contravention de 5e classe).",
+                    ),
                   ),
                 ],
               ),
@@ -148,15 +204,22 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Article 225-12-1 alinéa 1 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00016",
+                      "Article 225-12-1 alinéa 1 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " réprime le recours à la prostitution d’une personne majeure lorsqu’il est commis en récidive (délit non puni d’une peine d’emprisonnement).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00017",
+                      " réprime le recours à la prostitution d’une personne majeure lorsqu’il est commis en récidive (délit non puni d’une peine d’emprisonnement).",
+                    ),
                   ),
                 ],
               ),
@@ -167,135 +230,241 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
 
           // Élément matériel (pédagogique, structuré)
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+              "f00018",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle(
-                "A) Les actes visés : solliciter, accepter, obtenir",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00019",
+                  "A) Les actes visés : solliciter, accepter, obtenir",
+                ),
               ),
-              const _Paragraph(
-                "Les termes « solliciter », « accepter » ou « obtenir » s’entendent dans leur sens courant. "
-                "Le choix de ces verbes traduit la volonté du législateur d’incriminer :\n"
-                "• les actes de nature sexuelle (relation consommée ou simple attouchement),\n"
-                "• mais aussi les actes préalables, même non sexuels, qui tendent à obtenir une relation sexuelle.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00020",
+                      "Les termes « solliciter », « accepter » ou « obtenir » s’entendent dans leur sens courant. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00021",
+                      "Le choix de ces verbes traduit la volonté du législateur d’incriminer :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00022",
+                      "• les actes de nature sexuelle (relation consommée ou simple attouchement),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00023",
+                      "• mais aussi les actes préalables, même non sexuels, qui tendent à obtenir une relation sexuelle.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La procédure peut être diligentée dès qu’il apparaît qu’un accord est conclu, ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00024",
+                      "La procédure peut être diligentée dès qu’il apparaît qu’un accord est conclu, ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "sans attendre le commencement d’un attouchement ou d’un rapprochement sexuel ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00025",
+                      "sans attendre le commencement d’un attouchement ou d’un rapprochement sexuel ",
+                    ),
                   ),
                   TextSpan(
-                    text:
-                        "(circulaire ministère de la Justice du 24 avril 2002).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00026",
+                      "(circulaire ministère de la Justice du 24 avril 2002).",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
-              const _Paragraph(
-                "Il n’est pas nécessaire que l’auteur ait pris l’initiative. Le simple fait d’accepter une telle relation "
-                "est punissable, même si elle a été proposée par la personne se livrant à la prostitution.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00027",
+                      "Il n’est pas nécessaire que l’auteur ait pris l’initiative. Le simple fait d’accepter une telle relation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00028",
+                      "est punissable, même si elle a été proposée par la personne se livrant à la prostitution.",
+                    ),
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "B) La victime : mineur ou personne particulièrement vulnérable",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00029",
+                  "B) La victime : mineur ou personne particulièrement vulnérable",
+                ),
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "La prostitution est définie comme l’activité consistant à se prêter, moyennant rémunération, ",
-                ),
-                TextSpan(
-                  text:
-                      "à des contacts physiques afin de satisfaire les besoins sexuels d’autrui — ",
-                ),
-                TextSpan(
-                  text: "Cass. crim., 26 mars 1996",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00030",
+                    "La prostitution est définie comme l’activité consistant à se prêter, moyennant rémunération, ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00031",
+                    "à des contacts physiques afin de satisfaire les besoins sexuels d’autrui — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00032",
+                    "Cass. crim., 26 mars 1996",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "La personne se livrant à la prostitution, même occasionnellement (une seule fois suffit), doit être :\n"
-                "• un mineur (y compris entre 15 et 18 ans, ou émancipé),\n"
-                "• ou une personne présentant une particulière vulnérabilité.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00033",
+                      "La personne se livrant à la prostitution, même occasionnellement (une seule fois suffit), doit être :\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00034",
+                      "• un mineur (y compris entre 15 et 18 ans, ou émancipé),\n",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00035",
+                      "• ou une personne présentant une particulière vulnérabilité.",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La preuve de l’âge peut être rapportée par tout moyen. ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00036",
+                      "La preuve de l’âge peut être rapportée par tout moyen. ",
+                    ),
                   ),
                   TextSpan(
-                    text: "Cass. crim., 17 juillet 1991",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00037",
+                      "Cass. crim., 17 juillet 1991",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : aucune force probante automatique n’est donnée aux actes d’état civil étrangers.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00038",
+                      " : aucune force probante automatique n’est donnée aux actes d’état civil étrangers.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
-              const _SubTitle("Jurisprudences utiles (âge / apparence)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00039",
+                  "Jurisprudences utiles (âge / apparence)",
+                ),
+              ),
               _ConditionCard(
-                title: "Repères jurisprudentiels",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00040",
+                  "Repères jurisprudentiels",
+                ),
                 cardColor: isDark
                     ? const Color(0xFF1B1B1B)
                     : const Color(0xFFFFFFFF),
                 accent: accentGreen,
                 titleColor: textMain,
-                children: const [
+                children: [
                   _BulletPoint(
-                    text:
-                        "L’argument « je ne connaissais pas l’âge » peut être écarté si l’apparence et le contexte rendent l’ignorance impossible.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00041",
+                      "L’argument « je ne connaissais pas l’âge » peut être écarté si l’apparence et le contexte rendent l’ignorance impossible.",
+                    ),
                   ),
                   _BulletPoint(
-                    text:
-                        "Un visage imberbe peut être incompatible avec la croyance du client en la majorité.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00042",
+                      "Un visage imberbe peut être incompatible avec la croyance du client en la majorité.",
+                    ),
                   ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "C) La contrepartie : rémunération / promesse / avantage",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00043",
+                  "C) La contrepartie : rémunération / promesse / avantage",
+                ),
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-12-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00044",
+                    "Article 225-12-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " exige une rémunération (ou promesse) ou un avantage (ou promesse d’avantage) pour caractériser l’infraction.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00045",
+                    " exige une rémunération (ou promesse) ou un avantage (ou promesse d’avantage) pour caractériser l’infraction.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _Paragraph(
-                "Le délit n’est pas constitué si une relation sexuelle intervient sans être la contrepartie d’une rémunération "
-                "ou d’une promesse, même si la personne se prostitue habituellement ou occasionnellement.",
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00046",
+                      "Le délit n’est pas constitué si une relation sexuelle intervient sans être la contrepartie d’une rémunération ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00047",
+                      "ou d’une promesse, même si la personne se prostitue habituellement ou occasionnellement.",
+                    ),
               ),
             ],
           ),
@@ -304,22 +473,46 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+              "f00048",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "Intention de l’auteur + connaissance de la situation",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00049",
+                  "Intention de l’auteur + connaissance de la situation",
+                ),
               ),
               _Paragraph(
-                "Il suffit que l’auteur ait l’intention d’obtenir des relations de nature sexuelle avec une personne "
-                "se livrant à la prostitution, en sachant qu’elle est mineure ou particulièrement vulnérable.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00050",
+                      "Il suffit que l’auteur ait l’intention d’obtenir des relations de nature sexuelle avec une personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00051",
+                      "se livrant à la prostitution, en sachant qu’elle est mineure ou particulièrement vulnérable.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "La minorité doit être connue, et la vulnérabilité doit être « apparente ou connue ». "
-                "Autrement dit : l’auteur ne peut pas se retrancher derrière une ignorance invraisemblable si les indices sont évidents.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00052",
+                      "La minorité doit être connue, et la vulnérabilité doit être « apparente ou connue ». ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00053",
+                      "Autrement dit : l’auteur ne peut pas se retrancher derrière une ignorance invraisemblable si les indices sont évidents.",
+                    ),
               ),
             ],
           ),
@@ -328,61 +521,102 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+              "f00054",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-12-2 1° à 4° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00055",
+                    "Article 225-12-2 1° à 4° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00056",
+                    " — Premier degré d’aggravation :",
                   ),
                 ),
-                TextSpan(text: " — Premier degré d’aggravation :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Infraction commise de façon habituelle ou à l’égard de plusieurs personnes (l’habitude peut être retenue dès deux actes).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00057",
+                  "Infraction commise de façon habituelle ou à l’égard de plusieurs personnes (l’habitude peut être retenue dès deux actes).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Mise en contact via l’utilisation d’un réseau de communication pour diffuser des messages à un public non déterminé.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00058",
+                  "Mise en contact via l’utilisation d’un réseau de communication pour diffuser des messages à un public non déterminé.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Faits commis par une personne abusant de l’autorité que lui confèrent ses fonctions (autorité légale ou de fait).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00059",
+                  "Faits commis par une personne abusant de l’autorité que lui confèrent ses fonctions (autorité légale ou de fait).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Auteur ayant délibérément ou par imprudence mis la vie de la personne en danger ou commis des violences.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00060",
+                  "Auteur ayant délibérément ou par imprudence mis la vie de la personne en danger ou commis des violences.",
+                ),
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 225-12-2 alinéa 6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00061",
+                    "Article 225-12-2 alinéa 6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00062",
+                    " — Second degré d’aggravation :",
                   ),
                 ),
-                TextSpan(text: " — Second degré d’aggravation :"),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Lorsqu’il s’agit d’un mineur de quinze ans (hors les cas où les faits constituent un viol ou une agression sexuelle).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00063",
+                  "Lorsqu’il s’agit d’un mineur de quinze ans (hors les cas où les faits constituent un viol ou une agression sexuelle).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cette circonstance aggravante peut s’appliquer même si la relation sexuelle n’a pas été consommée. "
-                        "Lorsque la relation est consommée et que l’auteur est majeur, les faits peuvent relever du viol ou de l’agression sexuelle.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                          "f00064",
+                          "Cette circonstance aggravante peut s’appliquer même si la relation sexuelle n’a pas été consommée. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                          "f00065",
+                          "Lorsque la relation est consommée et que l’auteur est majeur, les faits peuvent relever du viol ou de l’agression sexuelle.",
+                        ),
                   ),
                 ],
               ),
@@ -393,114 +627,210 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+              "f00066",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00067",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
-                TextSpan(text: "75 000 € d’amende. — "),
                 TextSpan(
-                  text: "article 225-12-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00068",
+                    "Qualification simple : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00069",
+                    "75 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00070",
+                    "article 225-12-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Aggravée (1er degré) : "),
                 TextSpan(
-                  text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00071",
+                    "Aggravée (1er degré) : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 225-12-2 1° à 4° du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00072",
+                    "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00073",
+                    "article 225-12-2 1° à 4° du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Aggravée (2e degré – mineur de 15 ans) : ",
-                ),
-                TextSpan(
-                  text: "10 ans d’emprisonnement et 150 000 € d’amende. — ",
-                ),
-                TextSpan(
-                  text: "article 225-12-2 alinéa 6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00074",
+                    "Aggravée (2e degré – mineur de 15 ans) : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00075",
+                    "10 ans d’emprisonnement et 150 000 € d’amende. — ",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00076",
+                    "article 225-12-2 alinéa 6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Application de la loi française"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00077",
+                  "Application de la loi française",
+                ),
+              ),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text: "Article 225-12-3 du Code pénal",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00078",
+                      "Article 225-12-3 du Code pénal",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        " : la loi française est applicable lorsque les délits sont commis à l’étranger par un Français ou par une personne résidant habituellement sur le territoire français.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                      "f00079",
+                      " : la loi française est applicable lorsque les délits sont commis à l’étranger par un Français ou par une personne résidant habituellement sur le territoire français.",
+                    ),
                   ),
                 ],
               ),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00080",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
-                  text: "l’article 225-12-4 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00081",
+                    "Responsabilité pénale prévue par ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " : amende (selon les modalités de l’article 131-38) + peines complémentaires (article 131-39 : dissolution, interdiction d’exercer, etc.).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00082",
+                    "l’article 225-12-4 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00083",
+                    " : amende (selon les modalités de l’article 131-38) + peines complémentaires (article 131-39 : dissolution, interdiction d’exercer, etc.).",
+                  ),
                 ),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
-              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00084",
+                  "Tentative & complicité",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                  "f00085",
+                  "Tentative : NON (non punissable).",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00086",
+                    "Complicité : OUI, conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00087",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00088",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text: " (aide et assistance, provocation, instructions).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart",
+                    "f00089",
+                    " (aide et assistance, provocation, instructions).",
+                  ),
                 ),
               ]),
             ],
@@ -757,9 +1087,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

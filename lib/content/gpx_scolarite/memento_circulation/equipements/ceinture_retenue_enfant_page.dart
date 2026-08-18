@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CeintureRetenueEnfantPage extends StatelessWidget {
   const CeintureRetenueEnfantPage({super.key});
@@ -66,10 +67,18 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Ceinture de sécurité & retenue enfant",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+              "f00003",
+              "Ceinture de sécurité & retenue enfant",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -99,10 +112,18 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Assurer la sécurité des occupants : port obligatoire de la ceinture homologuée, "
-                "règles de transport des mineurs, et usage d’un système de retenue enfant adapté.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00004",
+                      "Assurer la sécurité des occupants : port obligatoire de la ceinture homologuée, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00005",
+                      "règles de transport des mineurs, et usage d’un système de retenue enfant adapté.",
+                    ),
               ),
             ],
           ),
@@ -111,39 +132,105 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 412-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00007",
+                    "R. 412-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("R. 412-1-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00008",
+                    "R. 412-1-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: " — "),
-                _lawSpan("R. 412-2 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00009",
+                    "R. 412-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Repères NATINF",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00010",
+                  "Repères NATINF",
+                ),
                 bodySpans: [
                   _boldSpan("12929"),
-                  const TextSpan(text: " (conducteur sans ceinture) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00011",
+                      " (conducteur sans ceinture) • ",
+                    ),
+                  ),
                   _boldSpan("12930"),
-                  const TextSpan(text: " (passager sans ceinture) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00012",
+                      " (passager sans ceinture) • ",
+                    ),
+                  ),
                   _boldSpan("26813"),
-                  const TextSpan(
-                    text: " (plusieurs personnes sur un siège) • ",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00013",
+                      " (plusieurs personnes sur un siège) • ",
+                    ),
                   ),
                   _boldSpan("32933"),
-                  const TextSpan(text: " (passagers en surnombre) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00014",
+                      " (passagers en surnombre) • ",
+                    ),
+                  ),
                   _boldSpan("11065"),
-                  const TextSpan(text: " (mineur non retenu) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00015",
+                      " (mineur non retenu) • ",
+                    ),
+                  ),
                   _boldSpan("27193"),
-                  const TextSpan(text: " (enfant < 3 ans sans ceinture) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00016",
+                      " (enfant < 3 ans sans ceinture) • ",
+                    ),
+                  ),
                   _boldSpan("237"),
-                  const TextSpan(text: " (enfant < 10 ans à l’avant)."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00017",
+                      " (enfant < 10 ans à l’avant).",
+                    ),
+                  ),
                 ],
               ),
             ],
@@ -152,172 +239,412 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+              "f00018",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle(
-                "A) Port de la ceinture (conducteur + passagers)",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00019",
+                  "A) Port de la ceinture (conducteur + passagers)",
+                ),
               ),
               _Paragraph.rich([
-                _lawSpan("R. 412-1 du Code de la route"),
-                const TextSpan(
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00020",
+                    "R. 412-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : tout conducteur ou passager d’un véhicule à moteur doit porter une ceinture de sécurité homologuée "
-                      "(sauf dérogations ou véhicule réceptionné sans être équipé).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                        "f00021",
+                        " : tout conducteur ou passager d’un véhicule à moteur doit porter une ceinture de sécurité homologuée ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                        "f00022",
+                        "(sauf dérogations ou véhicule réceptionné sans être équipé).",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _BulletPoint(
-                text:
-                    "Obligation valable pour le conducteur ET les passagers (si véhicule réceptionné avec ceinture).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00023",
+                  "Obligation valable pour le conducteur ET les passagers (si véhicule réceptionné avec ceinture).",
+                ),
               ),
-              const _BulletPoint(
-                text:
-                    "Un siège équipé d’une ceinture ne peut être occupé que par une seule personne.",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00024",
+                  "Un siège équipé d’une ceinture ne peut être occupé que par une seule personne.",
+                ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
-                _lawSpan("R. 412-1-1 du Code de la route"),
-                const TextSpan(text: " (occupation d’un siège) • NATINF "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00025",
+                    "Références : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00026",
+                    "R. 412-1-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00027",
+                    " (occupation d’un siège) • NATINF ",
+                  ),
+                ),
                 _boldSpan("26813"),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Nombre de passagers (places assises)"),
-              const _Paragraph(
-                "Le nombre de personnes transportées dans le véhicule est limité au nombre de places assises "
-                "indiqué sur le certificat d’immatriculation.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00028",
+                  "B) Nombre de passagers (places assises)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00029",
+                      "Le nombre de personnes transportées dans le véhicule est limité au nombre de places assises ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00030",
+                      "indiqué sur le certificat d’immatriculation.",
+                    ),
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Repère : NATINF "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00031",
+                    "Repère : NATINF ",
+                  ),
+                ),
                 _boldSpan("32933"),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle(
-                "C) Mineurs : ceinture / système de retenue enfant",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00032",
+                  "C) Mineurs : ceinture / système de retenue enfant",
+                ),
               ),
               _Paragraph.rich([
-                _lawSpan("R. 412-2 du Code de la route"),
-                const TextSpan(
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00033",
+                    "R. 412-2 du Code de la route",
+                  ),
+                ),
+                TextSpan(
                   text:
-                      " : le conducteur d’un véhicule (≤ 9 places assises, conducteur inclus) doit s’assurer que tout passager mineur "
-                      "est maintenu par une ceinture de sécurité, ou par un système homologué de retenue pour enfant lorsque l’enfant "
-                      "a moins de 10 ans.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                        "f00034",
+                        " : le conducteur d’un véhicule (≤ 9 places assises, conducteur inclus) doit s’assurer que tout passager mineur ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                        "f00035",
+                        "est maintenu par une ceinture de sécurité, ou par un système homologué de retenue pour enfant lorsque l’enfant ",
+                      ) +
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                        "f00036",
+                        "a moins de 10 ans.",
+                      ),
                 ),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Mineurs < 10 ans",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00037",
+                  "Mineurs < 10 ans",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Système homologué de retenue adapté à la taille et au poids (sauf exceptions prévues).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00038",
+                      "Système homologué de retenue adapté à la taille et au poids (sauf exceptions prévues).",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Mineurs 10 à 18 ans",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00039",
+                  "Mineurs 10 à 18 ans",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Système homologué de retenue ou ceinture de sécurité.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00040",
+                      "Système homologué de retenue ou ceinture de sécurité.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 12),
 
-              const _SubTitle("D) Enfant < 3 ans & sièges sans ceinture"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00041",
+                  "D) Enfant < 3 ans & sièges sans ceinture",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Si un siège n’est "),
-                _boldSpan("pas équipé"),
-                const TextSpan(
-                  text:
-                      " de ceinture de sécurité, il est interdit d’y transporter un enfant de moins de trois ans.",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00042",
+                    "Si un siège n’est ",
+                  ),
+                ),
+                _boldSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00043",
+                    "pas équipé",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00044",
+                    " de ceinture de sécurité, il est interdit d’y transporter un enfant de moins de trois ans.",
+                  ),
                 ),
               ]),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Repère : NATINF "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00045",
+                    "Repère : NATINF ",
+                  ),
+                ),
                 _boldSpan("27193"),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("E) Transport d’un enfant < 10 ans à l’avant"),
-              const _Paragraph(
-                "Les enfants de moins de 10 ans ne peuvent être transportés sur un siège avant, sauf exceptions.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00046",
+                  "E) Transport d’un enfant < 10 ans à l’avant",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00047",
+                  "Les enfants de moins de 10 ans ne peuvent être transportés sur un siège avant, sauf exceptions.",
+                ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Exceptions (avant autorisé)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00048",
+                  "Exceptions (avant autorisé)",
+                ),
                 bodySpans: [
-                  const TextSpan(text: "• Enfant transporté "),
-                  _boldSpan("dos à la route"),
-                  const TextSpan(
-                    text:
-                        " dans un siège homologué et airbag frontal désactivé.\n",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00049",
+                      "• Enfant transporté ",
+                    ),
                   ),
-                  const TextSpan(
-                    text:
-                        "• Véhicule sans siège arrière ou siège arrière sans ceinture.\n",
+                  _boldSpan(
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00050",
+                      "dos à la route",
+                    ),
                   ),
-                  const TextSpan(
-                    text:
-                        "• Siège arrière momentanément inutilisable ou déjà occupé par des enfants < 10 ans en retenue.",
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00051",
+                      " dans un siège homologué et airbag frontal désactivé.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00052",
+                      "• Véhicule sans siège arrière ou siège arrière sans ceinture.\n",
+                    ),
+                  ),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00053",
+                      "• Siège arrière momentanément inutilisable ou déjà occupé par des enfants < 10 ans en retenue.",
+                    ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Repère : NATINF "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00054",
+                    "Repère : NATINF ",
+                  ),
+                ),
                 _boldSpan("237"),
-                const TextSpan(text: " — base "),
-                _lawSpan("R. 412-2 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00055",
+                    " — base ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00056",
+                    "R. 412-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("F) Dérogations (ceinture / retenue enfant)"),
-              const _Paragraph(
-                "Le port de la ceinture ou l’usage d’un système de retenue peut ne pas être obligatoire dans certains cas "
-                "(dérogations prévues par les textes).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00057",
+                  "F) Dérogations (ceinture / retenue enfant)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00058",
+                      "Le port de la ceinture ou l’usage d’un système de retenue peut ne pas être obligatoire dans certains cas ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00059",
+                      "(dérogations prévues par les textes).",
+                    ),
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Ceinture non obligatoire (exemples)",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00060",
+                  "Ceinture non obligatoire (exemples)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "• Morphologie manifestement inadaptée.\n"
-                        "• Contre-indication médicale avec certificat (durée de validité + symbole d’exemption).\n"
-                        "• Occupants de véhicules d’intérêt général prioritaire en intervention urgente (police, gendarmerie, douanes, pompiers, etc.).\n"
-                        "• Conducteurs de taxis en service.\n"
-                        "• Services publics avec arrêts fréquents en agglomération.\n"
-                        "• Livraisons de porte à porte en agglomération.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00061",
+                          "• Morphologie manifestement inadaptée.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00062",
+                          "• Contre-indication médicale avec certificat (durée de validité + symbole d’exemption).\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00063",
+                          "• Occupants de véhicules d’intérêt général prioritaire en intervention urgente (police, gendarmerie, douanes, pompiers, etc.).\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00064",
+                          "• Conducteurs de taxis en service.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00065",
+                          "• Services publics avec arrêts fréquents en agglomération.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00066",
+                          "• Livraisons de porte à porte en agglomération.",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Retenue enfant non obligatoire (dérogations)",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00067",
+                  "Retenue enfant non obligatoire (dérogations)",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "• Enfant dont la taille est adaptée au port de la ceinture.\n"
-                        "• Certificat médical d’exemption (durée + symbole).\n"
-                        "• Enfant transporté dans un taxi ou un véhicule de transport en commun.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00068",
+                          "• Enfant dont la taille est adaptée au port de la ceinture.\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00069",
+                          "• Certificat médical d’exemption (durée + symbole).\n",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                          "f00070",
+                          "• Enfant transporté dans un taxi ou un véhicule de transport en commun.",
+                        ),
                   ),
                 ],
               ),
@@ -327,14 +654,26 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+              "f00071",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Ces infractions sont généralement constatées par l’absence de port de la ceinture / l’absence de dispositif "
-                "de retenue ou le non-respect des règles de transport. La matérialité du manquement suffit en pratique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00072",
+                      "Ces infractions sont généralement constatées par l’absence de port de la ceinture / l’absence de dispositif ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00073",
+                      "de retenue ou le non-respect des règles de transport. La matérialité du manquement suffit en pratique.",
+                    ),
               ),
             ],
           ),
@@ -342,14 +681,26 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+              "f00074",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento. "
-                "En revanche, plusieurs manquements peuvent se cumuler (ex. mineur non retenu + enfant à l’avant + surnombre).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00075",
+                      "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00076",
+                      "En revanche, plusieurs manquements peuvent se cumuler (ex. mineur non retenu + enfant à l’avant + surnombre).",
+                    ),
               ),
             ],
           ),
@@ -357,76 +708,164 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+              "f00077",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Récapitulatif NATINF (infractions)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00078",
+                  "Récapitulatif NATINF (infractions)",
+                ),
+              ),
               _Paragraph.rich([
                 _boldSpan("12929"),
-                const TextSpan(text: " — Conducteur sans ceinture. Base : "),
-                _lawSpan("R. 412-1 du Code de la route"),
-                const TextSpan(text: " (4e classe, retrait 3 points)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00079",
+                    " — Conducteur sans ceinture. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00080",
+                    "R. 412-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00081",
+                    " (4e classe, retrait 3 points).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 _boldSpan("12930"),
-                const TextSpan(text: " — Passager sans ceinture. Base : "),
-                _lawSpan("R. 412-1 du Code de la route"),
-                const TextSpan(text: " (4e classe)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00082",
+                    " — Passager sans ceinture. Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00083",
+                    "R. 412-1 du Code de la route",
+                  ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00084",
+                    " (4e classe).",
+                  ),
+                ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 _boldSpan("26813"),
-                const TextSpan(
-                  text: " — Plusieurs personnes sur un siège. Base : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00085",
+                    " — Plusieurs personnes sur un siège. Base : ",
+                  ),
                 ),
-                _lawSpan("R. 412-1-1 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00086",
+                    "R. 412-1-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 _boldSpan("32933"),
-                const TextSpan(
-                  text: " — Surnombre de passagers (places assises).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00087",
+                    " — Surnombre de passagers (places assises).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 _boldSpan("11065"),
-                const TextSpan(
-                  text:
-                      " — Mineur transporté sans ceinture / sans retenue homologuée. Base : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00088",
+                    " — Mineur transporté sans ceinture / sans retenue homologuée. Base : ",
+                  ),
                 ),
-                _lawSpan("R. 412-2 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00089",
+                    "R. 412-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 _boldSpan("27193"),
-                const TextSpan(
-                  text:
-                      " — Enfant < 3 ans transporté sur un siège sans ceinture. (4e classe).",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00090",
+                    " — Enfant < 3 ans transporté sur un siège sans ceinture. (4e classe).",
+                  ),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
                 _boldSpan("237"),
-                const TextSpan(
-                  text:
-                      " — Enfant < 10 ans transporté à l’avant (interdit). Base : ",
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00091",
+                    " — Enfant < 10 ans transporté à l’avant (interdit). Base : ",
+                  ),
                 ),
-                _lawSpan("R. 412-2 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                    "f00092",
+                    "R. 412-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
-              const _NotaBox(
-                title: "Mesures & mentions",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00093",
+                  "Mesures & mentions",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le mémento mentionne des contrôles DIA / dépistage stupéfiants facultatifs sur plusieurs NATINF de cette rubrique.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                      "f00094",
+                      "Le mémento mentionne des contrôles DIA / dépistage stupéfiants facultatifs sur plusieurs NATINF de cette rubrique.",
+                    ),
                   ),
                 ],
               ),
@@ -436,18 +875,28 @@ class CeintureRetenueEnfantPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+              "f00095",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Tentative : NON (contraventions liées à un non-respect constaté).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00096",
+                  "Tentative : NON (contraventions liées à un non-respect constaté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complicité : NON (verbalisation centrée sur l’obligation du conducteur / occupant).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/ceinture_retenue_enfant_page.dart",
+                  "f00097",
+                  "Complicité : NON (verbalisation centrée sur l’obligation du conducteur / occupant).",
+                ),
               ),
             ],
           ),

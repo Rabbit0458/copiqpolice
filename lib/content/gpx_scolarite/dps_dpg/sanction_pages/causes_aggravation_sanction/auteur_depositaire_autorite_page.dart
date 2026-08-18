@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AuteurDepositaireAutoritePage extends StatelessWidget {
   const AuteurDepositaireAutoritePage({super.key});
@@ -44,7 +45,11 @@ class AuteurDepositaireAutoritePage extends StatelessWidget {
         elevation: 0,
         centerTitle: false,
         title: Text(
-          "Auteur dépositaire de l'autorité publique",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+            "f00001",
+            "Auteur dépositaire de l'autorité publique",
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -70,21 +75,24 @@ class AuteurDepositaireAutoritePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                      .06,
+                    color: (isDark ? Colors.white : Colors.black).withValues(
+                      alpha: .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
-                        .08,
+                      color: (isDark ? Colors.white : Colors.black).withValues(
+                        alpha: .08,
                       ),
                     ),
                   ),
-                  child: const _Paragraph.rich([
+                  child: _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
-                      text:
-                          "Par une personne dépositaire de l'autorité publique ou chargée d'une mission de service public dans l'exercice ou à l'occasion de l'exercice de ses fonctions ou de sa mission.",
+                      text: ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00002",
+                        "Par une personne dépositaire de l'autorité publique ou chargée d'une mission de service public dans l'exercice ou à l'occasion de l'exercice de ses fonctions ou de sa mission.",
+                      ),
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
                     TextSpan(text: " »"),
@@ -94,17 +102,29 @@ class AuteurDepositaireAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '1 : DÉFINITION',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                    "f00003",
+                    '1 : DÉFINITION',
+                  ),
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Cette circonstance aggravante est la face inversée de celle liée à la qualité de la victime dépositaire de l'autorité publique ou chargée d'une mission de service public.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00004",
+                        "Cette circonstance aggravante est la face inversée de celle liée à la qualité de la victime dépositaire de l'autorité publique ou chargée d'une mission de service public.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Il s'agit d'une circonstance aggravante personnelle. Ses effets ne s'étendent pas aux coauteurs de l'infraction.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00005",
+                        "Il s'agit d'une circonstance aggravante personnelle. Ses effets ne s'étendent pas aux coauteurs de l'infraction.",
+                      ),
                     ),
                   ],
                 ),
@@ -112,38 +132,74 @@ class AuteurDepositaireAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: '2 : CONDITIONS',
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                    "f00006",
+                    '2 : CONDITIONS',
+                  ),
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: const [
+                  children: [
                     _Paragraph(
-                      "Les conditions listées sont celles développées précédemment dans les circonstances liées à la qualité de la victime.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00007",
+                        "Les conditions listées sont celles développées précédemment dans les circonstances liées à la qualité de la victime.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _SubTitle(
-                      "2.1 - La qualité de dépositaire de l'autorité publique",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00008",
+                        "2.1 - La qualité de dépositaire de l'autorité publique",
+                      ),
                     ),
                     _Paragraph(
-                      "Est dépositaire de l'autorité publique celui qui a un pouvoir de décision fondé sur la parcelle de l'autorité publique que lui confèrent ses fonctions, qu'il soit fonctionnaire au sens strict, militaire, magistrat, officier public ou ministériel.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00009",
+                        "Est dépositaire de l'autorité publique celui qui a un pouvoir de décision fondé sur la parcelle de l'autorité publique que lui confèrent ses fonctions, qu'il soit fonctionnaire au sens strict, militaire, magistrat, officier public ou ministériel.",
+                      ),
                     ),
                     SizedBox(height: 10),
                     _Paragraph(
-                      "Sont notamment concernés : les policiers, les militaires de la gendarmerie, les douaniers, les huissiers de justice, les commissaires-priseurs et les fonctionnaires des eaux et forêts.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00010",
+                        "Sont notamment concernés : les policiers, les militaires de la gendarmerie, les douaniers, les huissiers de justice, les commissaires-priseurs et les fonctionnaires des eaux et forêts.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _SubTitle(
-                      "2.2 - Les personnes chargées d'une mission de service public",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00011",
+                        "2.2 - Les personnes chargées d'une mission de service public",
+                      ),
                     ),
                     _Paragraph(
-                      "La circulaire générale d'application du code pénal du 14 mai 1993 estime que cette expression désigne : les personnes privées ou publiques qui, sans être dépositaires d'une parcelle de l'autorité publique, accomplissent à titre temporaire ou permanent, volontairement ou sur réquisition des autorités, un service quelconque.",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00012",
+                        "La circulaire générale d'application du code pénal du 14 mai 1993 estime que cette expression désigne : les personnes privées ou publiques qui, sans être dépositaires d'une parcelle de l'autorité publique, accomplissent à titre temporaire ou permanent, volontairement ou sur réquisition des autorités, un service quelconque.",
+                      ),
                     ),
                     SizedBox(height: 12),
                     _SubTitle(
-                      "2.3 - Dans l'exercice ou à l'occasion de l'exercice de ses fonctions ou de sa mission",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00013",
+                        "2.3 - Dans l'exercice ou à l'occasion de l'exercice de ses fonctions ou de sa mission",
+                      ),
                     ),
                     _Paragraph(
-                      "Ces personnes doivent avoir agi alors qu'elles étaient en service ou qu'elles procédaient à un des actes entrant dans leurs attributions (dans l'exercice de ses fonctions), ou en raison des fonctions exercées ou d'un acte antérieurement accompli (à l'occasion de ses fonctions : « du fait de ses fonctions »).",
+                      ScolariteText.value(
+                        "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                        "f00014",
+                        "Ces personnes doivent avoir agi alors qu'elles étaient en service ou qu'elles procédaient à un des actes entrant dans leurs attributions (dans l'exercice de ses fonctions), ou en raison des fonctions exercées ou d'un acte antérieurement accompli (à l'occasion de ses fonctions : « du fait de ses fonctions »).",
+                      ),
                     ),
                   ],
                 ),
@@ -151,22 +207,40 @@ class AuteurDepositaireAutoritePage extends StatelessWidget {
                 const SizedBox(height: 14),
 
                 _ConditionCard(
-                  title: "3 : CHAMP D'APPLICATION",
+                  title: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                    "f00015",
+                    "3 : CHAMP D'APPLICATION",
+                  ),
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
                   children: [
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00016",
+                          "➤ LES TORTURES OU ACTES DE BARBARIE (ARTICLE ",
+                        ),
                       ),
-                      law("222-3 7° C.P."),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00017",
+                          "222-3 7° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(
-                        text: "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00018",
+                          "➤ LES VIOLENCES VOLONTAIRES (ARTICLES ",
+                        ),
                       ),
                       law("222-8"),
                       const TextSpan(text: ", "),
@@ -174,28 +248,67 @@ class AuteurDepositaireAutoritePage extends StatelessWidget {
                       const TextSpan(text: ", "),
                       law("222-12"),
                       const TextSpan(text: " ET "),
-                      law("222-13, 7° C.P."),
-                      const TextSpan(text: ")"),
-                    ]),
-                    const SizedBox(height: 6),
-                    _Paragraph.rich([
-                      const TextSpan(
-                        text:
-                            "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00019",
+                          "222-13, 7° C.P.",
+                        ),
                       ),
-                      law("222-15 C.P."),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ LE VOL (ARTICLE "),
-                      law("311-4, 2° C.P."),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00020",
+                          "➤ L'ADMINISTRATION DE SUBSTANCES NUISIBLES (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00021",
+                          "222-15 C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                     const SizedBox(height: 6),
                     _Paragraph.rich([
-                      const TextSpan(text: "➤ L'ESCROQUERIE (ARTICLE "),
-                      law("313-2, 1° C.P."),
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00022",
+                          "➤ LE VOL (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00023",
+                          "311-4, 2° C.P.",
+                        ),
+                      ),
+                      const TextSpan(text: ")"),
+                    ]),
+                    const SizedBox(height: 6),
+                    _Paragraph.rich([
+                      TextSpan(
+                        text: ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00024",
+                          "➤ L'ESCROQUERIE (ARTICLE ",
+                        ),
+                      ),
+                      law(
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart",
+                          "f00025",
+                          "313-2, 1° C.P.",
+                        ),
+                      ),
                       const TextSpan(text: ")"),
                     ]),
                   ],
@@ -458,9 +571,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaHistoireReperesPage extends StatelessWidget {
   const PaHistoireReperesPage({super.key});
@@ -53,7 +54,11 @@ class PaHistoireReperesPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Institution",
@@ -71,7 +76,11 @@ class PaHistoireReperesPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Histoire de la Police nationale — repères",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+              "f00002",
+              "Histoire de la Police nationale — repères",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -83,26 +92,40 @@ class PaHistoireReperesPage extends StatelessWidget {
 
           // Image d'illustration (zoom + plein écran)
           _ConditionCard(
-            title: "Points de repères — chronologiques",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+              "f00003",
+              "Points de repères — chronologiques",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Astuce : ",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                    "f00004",
+                    "Astuce : ",
+                  ),
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      "tape sur l’image pour l’ouvrir en plein écran et zoomer.",
+                  text: ScolariteText.value(
+                    "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                    "f00005",
+                    "tape sur l’image pour l’ouvrir en plein écran et zoomer.",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _ZoomableAssetImage(
                 assetPath: 'assets/images/histoire_pn.png',
-                semanticLabel:
-                    "Frise chronologique : Points de repères de l’histoire en France et repères Police nationale",
+                semanticLabel: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00006",
+                  "Frise chronologique : Points de repères de l’histoire en France et repères Police nationale",
+                ),
               ),
             ],
           ),
@@ -111,18 +134,28 @@ class PaHistoireReperesPage extends StatelessWidget {
 
           // Intro pédagogique
           _ConditionCard(
-            title: "Repère rapide",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+              "f00007",
+              "Repère rapide",
+            ),
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _IntroBullet(
-                text:
-                    "Cette page te donne des repères simples : comprendre l’évolution, retenir quelques dates clés, et replacer le rôle de la Police nationale dans l’organisation de l’État.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00008",
+                  "Cette page te donne des repères simples : comprendre l’évolution, retenir quelques dates clés, et replacer le rôle de la Police nationale dans l’organisation de l’État.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Objectif : une lecture claire et mémorisable (chronologie + idées forces).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00009",
+                  "Objectif : une lecture claire et mémorisable (chronologie + idées forces).",
+                ),
               ),
             ],
           ),
@@ -131,25 +164,55 @@ class PaHistoireReperesPage extends StatelessWidget {
 
           // Repères généraux
           _ConditionCard(
-            title: "I — Repères essentiels",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+              "f00010",
+              "I — Repères essentiels",
+            ),
             cardColor: cardRep,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
-              _SubTitle("À retenir"),
-              _BulletPoint(
-                text:
-                    "La police en France évolue avec l’État : centralisation, professionnalisation, modernisation des moyens et des missions.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00011",
+                  "À retenir",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "La Police nationale s’inscrit dans une logique républicaine : protection des personnes et des biens, maintien de l’ordre public, lutte contre la criminalité, assistance aux populations.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00012",
+                  "La police en France évolue avec l’État : centralisation, professionnalisation, modernisation des moyens et des missions.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00013",
+                  "La Police nationale s’inscrit dans une logique républicaine : protection des personnes et des biens, maintien de l’ordre public, lutte contre la criminalité, assistance aux populations.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Pourquoi ces repères sont utiles ?"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00014",
+                  "Pourquoi ces repères sont utiles ?",
+                ),
+              ),
               _Paragraph(
-                "En intervention et dans le cadre institutionnel, connaître quelques repères historiques aide à comprendre : "
-                "les missions, les évolutions, et le sens des règles de neutralité, d’égalité de traitement et de service au public.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                      "f00015",
+                      "En intervention et dans le cadre institutionnel, connaître quelques repères historiques aide à comprendre : ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                      "f00016",
+                      "les missions, les évolutions, et le sens des règles de neutralité, d’égalité de traitement et de service au public.",
+                    ),
               ),
             ],
           ),
@@ -158,42 +221,73 @@ class PaHistoireReperesPage extends StatelessWidget {
 
           // Chronologie (repères)
           _ConditionCard(
-            title: "II — Repères chronologiques",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+              "f00017",
+              "II — Repères chronologiques",
+            ),
             cardColor: cardDates,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Quelques jalons (à mémoriser)"),
-              _BulletPoint(
-                text:
-                    "1667 : création de la Lieutenance générale de police à Paris (organisation policière structurée).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00018",
+                  "Quelques jalons (à mémoriser)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "1791–1795 : réorganisations révolutionnaires (police au service de l’ordre public et des institutions).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00019",
+                  "1667 : création de la Lieutenance générale de police à Paris (organisation policière structurée).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "XIXe siècle : professionnalisation progressive, développement de la police judiciaire et des services spécialisés.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00020",
+                  "1791–1795 : réorganisations révolutionnaires (police au service de l’ordre public et des institutions).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "1941 : création de la « Police nationale » (unification dans le contexte de l’époque).",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00021",
+                  "XIXe siècle : professionnalisation progressive, développement de la police judiciaire et des services spécialisés.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Après 1945 : refondation républicaine, modernisation, structuration des directions et spécialités.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00022",
+                  "1941 : création de la « Police nationale » (unification dans le contexte de l’époque).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Période contemporaine : adaptation aux nouvelles menaces (terrorisme, cyber, criminalités organisées) et aux exigences de l’État de droit.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00023",
+                  "Après 1945 : refondation républicaine, modernisation, structuration des directions et spécialités.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00024",
+                  "Période contemporaine : adaptation aux nouvelles menaces (terrorisme, cyber, criminalités organisées) et aux exigences de l’État de droit.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Astuce mémo : retiens 1667 (structuration), 1941 (Police nationale), après 1945 (refondation) + une idée-force : modernisation continue.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                      "f00025",
+                      "Astuce mémo : retiens 1667 (structuration), 1941 (Police nationale), après 1945 (refondation) + une idée-force : modernisation continue.",
+                    ),
                   ),
                 ],
               ),
@@ -204,37 +298,85 @@ class PaHistoireReperesPage extends StatelessWidget {
 
           // Missions & valeurs
           _ConditionCard(
-            title: "III — Missions & valeurs (fil conducteur)",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+              "f00026",
+              "III — Missions & valeurs (fil conducteur)",
+            ),
             cardColor: cardMission,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle("Missions"),
-              _BulletPoint(text: "Protection des personnes et des biens."),
               _BulletPoint(
-                text: "Maintien / rétablissement de l’ordre public.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00027",
+                  "Protection des personnes et des biens.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Police judiciaire : constatation des infractions, recherche des auteurs, rassemblement des preuves.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00028",
+                  "Maintien / rétablissement de l’ordre public.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Sécurité routière, assistance et secours aux populations, prévention.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00029",
+                  "Police judiciaire : constatation des infractions, recherche des auteurs, rassemblement des preuves.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00030",
+                  "Sécurité routière, assistance et secours aux populations, prévention.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Valeurs professionnelles"),
-              _BulletPoint(
-                text: "Neutralité, respect, sang-froid, discernement.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00031",
+                  "Valeurs professionnelles",
+                ),
               ),
-              _BulletPoint(text: "Égalité de traitement des usagers."),
               _BulletPoint(
-                text: "Proportionnalité et cadre légal de l’action.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00032",
+                  "Neutralité, respect, sang-froid, discernement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00033",
+                  "Égalité de traitement des usagers.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00034",
+                  "Proportionnalité et cadre légal de l’action.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "À travers l’histoire, ce fil conducteur reste le même : agir au service du public, dans un cadre républicain, "
-                "avec des missions qui s’adaptent aux évolutions de la société.",
+                ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                      "f00035",
+                      "À travers l’histoire, ce fil conducteur reste le même : agir au service du public, dans un cadre républicain, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                      "f00036",
+                      "avec des missions qui s’adaptent aux évolutions de la société.",
+                    ),
               ),
             ],
           ),
@@ -243,29 +385,52 @@ class PaHistoireReperesPage extends StatelessWidget {
 
           // Pour aller plus loin / méthode d'apprentissage
           _ConditionCard(
-            title: "IV — Méthode rapide pour réviser",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+              "f00037",
+              "IV — Méthode rapide pour réviser",
+            ),
             cardColor: cardCadre,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Mini-plan de révision (2 minutes)"),
-              _BulletPoint(
-                text: "1) Récite : 1667 → 1941 → après 1945 → aujourd’hui.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00038",
+                  "Mini-plan de révision (2 minutes)",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "2) Associe chaque date à 1 mot-clé : structuration / unification / refondation / adaptation.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00039",
+                  "1) Récite : 1667 → 1941 → après 1945 → aujourd’hui.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "3) Termine par 3 missions : protéger / maintenir l’ordre / enquêter.",
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00040",
+                  "2) Associe chaque date à 1 mot-clé : structuration / unification / refondation / adaptation.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                  "f00041",
+                  "3) Termine par 3 missions : protéger / maintenir l’ordre / enquêter.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Si tu veux, tu peux me donner tes captures d’écran « Histoire » et je te mets exactement le contenu attendu, au mot près, dans ce template.",
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart",
+                      "f00042",
+                      "Si tu veux, tu peux me donner tes captures d’écran « Histoire » et je te mets exactement le contenu attendu, au mot près, dans ce template.",
+                    ),
                   ),
                 ],
               ),
@@ -524,9 +689,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

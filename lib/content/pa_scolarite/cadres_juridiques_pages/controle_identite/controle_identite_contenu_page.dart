@@ -1,11 +1,13 @@
 // lib/pa/dps_dpg/cadres_juridiques/controle_identite_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaControleIdentiteContenuPage extends StatelessWidget {
   const PaControleIdentiteContenuPage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/controle_identite';
+  static const String routeName =
+      '/pa/dps_dpg/cadres_juridiques/controle_identite';
 
   @override
   Widget build(BuildContext context) {
@@ -13,8 +15,8 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
-? Colors.white70
-: const Color(0xFF222222).withValues(alpha: .70);
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -25,10 +27,18 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Contrôle d’identité',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+            "f00002",
+            'Contrôle d’identité',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -42,7 +52,11 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
         children: [
           // ===================== TITRE & INTRO RAPIDE ======================
           Text(
-            'Le contrôle d’identité en procédure pénale',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+              "f00003",
+              'Le contrôle d’identité en procédure pénale',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +65,16 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Cadre général du contrôle d’identité, relevé d’identité et vérification d’identité : '
-            'principales catégories de contrôles et obligations de l’officier de police judiciaire.',
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00004",
+                  'Cadre général du contrôle d’identité, relevé d’identité et vérification d’identité : ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00005",
+                  'principales catégories de contrôles et obligations de l’officier de police judiciaire.',
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,10 +87,22 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
           // ===================== MODULE INTRO GLOBAL =======================
           _ModuleCard(
             tag: 'controle_intro',
-            title: 'Introduction au contrôle d’identité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+              "f00006",
+              'Introduction au contrôle d’identité',
+            ),
             subtitle:
-                'Finalités du contrôle d’identité, place dans la procédure pénale et articulation '
-                'avec les autres cadres juridiques.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00007",
+                  'Finalités du contrôle d’identité, place dans la procédure pénale et articulation ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00008",
+                  'avec les autres cadres juridiques.',
+                ),
             imagePath: 'assets/images/infraction_legal.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -82,12 +116,32 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 1 ================================
           _ModuleCard(
             tag: 'controle_chap1',
-            title: 'Contrôle d’identité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+              "f00009",
+              'Contrôle d’identité',
+            ),
             subtitle:
-                'Introduction, cadre général du contrôle, contrôles préventifs, contrôles en zone '
-                'frontière, contrôles dans les locaux professionnels, visites de véhicules et bagages, '
-                'distinction contrôle d’identité / contrôle de réglementation, contrôle du séjour des '
-                'étrangers et moyens de preuve de l’identité.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00010",
+                  'Introduction, cadre général du contrôle, contrôles préventifs, contrôles en zone ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00011",
+                  'frontière, contrôles dans les locaux professionnels, visites de véhicules et bagages, ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00012",
+                  'distinction contrôle d’identité / contrôle de réglementation, contrôle du séjour des ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00013",
+                  'étrangers et moyens de preuve de l’identité.',
+                ),
             imagePath: 'assets/images/controle_identité_chap1.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -101,10 +155,22 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 2 ================================
           _ModuleCard(
             tag: 'controle_chap2',
-            title: 'Relevé d’identité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+              "f00014",
+              'Relevé d’identité',
+            ),
             subtitle:
-                'Notion de relevé d’identité, finalité, conditions de mise en œuvre et rédaction '
-                'des mentions sur les actes de procédure.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00015",
+                  'Notion de relevé d’identité, finalité, conditions de mise en œuvre et rédaction ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00016",
+                  'des mentions sur les actes de procédure.',
+                ),
             imagePath: 'assets/images/releve_identite_chap2.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -118,10 +184,22 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
           // ===================== CHAPITRE 3 ================================
           _ModuleCard(
             tag: 'controle_chap3',
-            title: 'Vérification d’identité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+              "f00017",
+              'Vérification d’identité',
+            ),
             subtitle:
-                'Rétention de la personne contrôlée, conditions d’exécution, recherche de '
-                'l’identité, obligations légales de procédure et procès-verbal de vérification.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00018",
+                  'Rétention de la personne contrôlée, conditions d’exécution, recherche de ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00019",
+                  'l’identité, obligations légales de procédure et procès-verbal de vérification.',
+                ),
             imagePath: 'assets/images/verficiation_identite_chap3.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -135,10 +213,22 @@ class PaControleIdentiteContenuPage extends StatelessWidget {
           // ===================== QUIZ MODULE (OPTIONNEL) ===================
           _ModuleCard(
             tag: 'controle_quiz',
-            title: 'Quiz — Contrôle d’identité',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+              "f00020",
+              'Quiz — Contrôle d’identité',
+            ),
             subtitle:
-                'Testez vos réflexes : conditions légales, limites des contrôles et distinctions '
-                'entre contrôle, relevé et vérification d’identité.',
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00021",
+                  'Testez vos réflexes : conditions légales, limites des contrôles et distinctions ',
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart",
+                  "f00022",
+                  'entre contrôle, relevé et vérification d’identité.',
+                ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,

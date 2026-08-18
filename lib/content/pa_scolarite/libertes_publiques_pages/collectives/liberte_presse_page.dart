@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 /// ===================================================================
 ///  COP'IQ — LA LIBERTÉ DE LA PRESSE
@@ -55,7 +56,7 @@ class PaLibertePressePage extends StatelessWidget {
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: titleColor),
         ),
         title: Text(
-          'La liberté de la presse',
+          ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00001", 'La liberté de la presse'),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 18,
@@ -71,7 +72,7 @@ class PaLibertePressePage extends StatelessWidget {
         children: [
           // ================= TITRE + INTRO =================
           Text(
-            'La liberté de la presse',
+            ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00002", 'La liberté de la presse'),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -80,16 +81,13 @@ class PaLibertePressePage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           _Paragraph.rich([
-            const TextSpan(
+             TextSpan(
               text:
-                  'La liberté de la presse est une liberté fondamentale. Elle est le corollaire '
-                  'de la liberté d’opinion et, plus largement, un pilier de la démocratie. ',
+                  ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00003", 'La liberté de la presse est une liberté fondamentale. Elle est le corollaire ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00004", 'de la liberté d’opinion et, plus largement, un pilier de la démocratie. '),
             ),
             TextSpan(
               text:
-                  'La presse est parfois qualifiée de « 4ème pouvoir » : elle peut influencer durablement '
-                  'l’opinion publique, dénoncer les dérives du pouvoir, mais aussi fragiliser les '
-                  'institutions lorsqu’elle s’éloigne de ses responsabilités.',
+                  ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00005", 'La presse est parfois qualifiée de « 4ème pouvoir » : elle peut influencer durablement ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00006", 'l’opinion publique, dénoncer les dérives du pouvoir, mais aussi fragiliser les ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00007", 'institutions lorsqu’elle s’éloigne de ses responsabilités.'),
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: referenceColor,
@@ -97,15 +95,12 @@ class PaLibertePressePage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 10),
-          const _NotaBox(
-            title: 'Repères doctrinaux',
+           _NotaBox(
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00008", 'Repères doctrinaux'),
             bodySpans: [
               TextSpan(
                 text:
-                    'Alexis de Tocqueville souligne que la souveraineté du peuple et la liberté de la presse '
-                    'sont deux réalités inséparables : sans l’une, l’autre ne peut se maintenir. '
-                    'Philippe Burdeau rappelle toutefois que cette liberté rend parfois difficile '
-                    'la tâche de gouverner, car elle se heurte aux nécessités de l’ordre public. ',
+                    ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00009", 'Alexis de Tocqueville souligne que la souveraineté du peuple et la liberté de la presse ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00010", 'sont deux réalités inséparables : sans l’une, l’autre ne peut se maintenir. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00011", 'Philippe Burdeau rappelle toutefois que cette liberté rend parfois difficile ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00012", 'la tâche de gouverner, car elle se heurte aux nécessités de l’ordre public. '),
               ),
             ],
           ),
@@ -114,15 +109,13 @@ class PaLibertePressePage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 1 — ÉTAPES FONDAMENTALES
           // =====================================================
-          const _NotaBox(
+           _NotaBox(
             title:
-                'Chapitre 1 — Les étapes fondamentales de la liberté de la presse',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00013", 'Chapitre 1 — Les étapes fondamentales de la liberté de la presse'),
             bodySpans: [
               TextSpan(
                 text:
-                    'Le régime de la presse a connu de très fortes variations : périodes libérales, '
-                    'puis phases de contrôle strict voire de censure. La grande rupture reste la loi '
-                    'du 29 juillet 1881, véritable charte de la liberté de la presse en France.',
+                    ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00014", 'Le régime de la presse a connu de très fortes variations : périodes libérales, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00015", 'puis phases de contrôle strict voire de censure. La grande rupture reste la loi ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00016", 'du 29 juillet 1881, véritable charte de la liberté de la presse en France.'),
               ),
             ],
           ),
@@ -131,88 +124,74 @@ class PaLibertePressePage extends StatelessWidget {
           // 1.1 AVANT 1881
           _HypoCard(
             title:
-                '1.1 — La liberté de la presse avant la loi du 29 juillet 1881',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00017", '1.1 — La liberté de la presse avant la loi du 29 juillet 1881'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                const TextSpan(
+                 TextSpan(
                   text:
-                      'Avant 1881, la presse reste largement soumise au contrôle du pouvoir. '
-                      'La liberté proclamée à la Révolution est vite encadrée par un régime '
-                      'd’autorisation préalable et de censure. ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00018", 'Avant 1881, la presse reste largement soumise au contrôle du pouvoir. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00019", 'La liberté proclamée à la Révolution est vite encadrée par un régime ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00020", 'd’autorisation préalable et de censure. '),
                 ),
                 TextSpan(
                   text:
-                      'L’article 11 de la Déclaration des droits de l’Homme et du citoyen de 1789',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00021", 'L’article 11 de la Déclaration des droits de l’Homme et du citoyen de 1789'),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
+                 TextSpan(
                   text:
-                      ' proclame pourtant « la libre communication des pensées et des opinions ». '
-                      'En pratique, les régimes successifs oscillent entre ouverture et répression.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00022", ' proclame pourtant « la libre communication des pensées et des opinions ». ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00023", 'En pratique, les régimes successifs oscillent entre ouverture et répression.'),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Période révolutionnaire : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00024", 'Période révolutionnaire : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'affirmation de la liberté d’expression, multiplication des journaux, mais '
-                      'déjà mise en place de mécanismes de contrôle lorsque la situation politique '
-                      'se tend (excès de certains écrits, troubles à l’ordre public).',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00025", 'affirmation de la liberté d’expression, multiplication des journaux, mais ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00026", 'déjà mise en place de mécanismes de contrôle lorsque la situation politique ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00027", 'se tend (excès de certains écrits, troubles à l’ordre public).'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Directoire, Consulat, Empire : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00028", 'Directoire, Consulat, Empire : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'régimes rigoureux, censure efficace. Le pouvoir freine la liberté de la presse '
-                      'par autorisations, saisies, poursuites. Sous l’Empire, la presse devient un '
-                      'instrument de propagande étroitement surveillé.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00029", 'régimes rigoureux, censure efficace. Le pouvoir freine la liberté de la presse ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00030", 'par autorisations, saisies, poursuites. Sous l’Empire, la presse devient un ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00031", 'instrument de propagande étroitement surveillé.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Restauration et monarchie de Juillet : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00032", 'Restauration et monarchie de Juillet : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'le régime oscille entre liberté et « liberté surveillée ». Les périodes de crise '
-                      'conduisent à des lois répressives, à des poursuites facilitée contre les journaux. '
-                      'Les mécanismes d’autorisation préalable et de censure demeurent fréquents.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00033", 'le régime oscille entre liberté et « liberté surveillée ». Les périodes de crise ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00034", 'conduisent à des lois répressives, à des poursuites facilitée contre les journaux. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00035", 'Les mécanismes d’autorisation préalable et de censure demeurent fréquents.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Second Empire : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00036", 'Second Empire : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'jusqu’aux années 1860, la presse est strictement encadrée : avertissements, '
-                      'suspensions, cautionnements élevés. Le régime se libéralise légèrement en fin '
-                      'de période, mais sans véritable statut protecteur.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00037", 'jusqu’aux années 1860, la presse est strictement encadrée : avertissements, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00038", 'suspensions, cautionnements élevés. Le régime se libéralise légèrement en fin ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00039", 'de période, mais sans véritable statut protecteur.'),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Au total, avant 1881, le régime est marqué par un contrôle très fort de la presse : '
-                'autorisations préalables, censure, cautionnement financier, saisies administratives. '
-                'La nécessité d’une loi libérale, garantissant à la fois la liberté et la responsabilité, '
-                'devient évidente.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00040", 'Au total, avant 1881, le régime est marqué par un contrôle très fort de la presse : ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00041", 'autorisations préalables, censure, cautionnement financier, saisies administratives. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00042", 'La nécessité d’une loi libérale, garantissant à la fois la liberté et la responsabilité, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00043", 'devient évidente.'),
               ),
             ],
           ),
@@ -222,71 +201,62 @@ class PaLibertePressePage extends StatelessWidget {
           // 1.2 APRES 1881
           _HypoCard(
             title:
-                '1.2 — La liberté de la presse après la loi du 29 juillet 1881',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00044", '1.2 — La liberté de la presse après la loi du 29 juillet 1881'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'La loi du 29 juillet 1881 marque la grande rupture. Elle met fin à l’arbitraire '
-                'gouvernemental et organise un régime libéral : la liberté est le principe, la répression '
-                'n’intervient qu’a posteriori, en cas d’abus.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00045", 'La loi du 29 juillet 1881 marque la grande rupture. Elle met fin à l’arbitraire ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00046", 'gouvernemental et organise un régime libéral : la liberté est le principe, la répression ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00047", 'n’intervient qu’a posteriori, en cas d’abus.'),
               ),
               const SizedBox(height: 8),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'La loi ne s’intéresse qu’à la liberté d’opinion et d’expression : l’aspect matériel '
-                      'de la presse (organisation industrielle, concentration, transparence des entreprises) '
-                      'reste d’abord en retrait.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00048", 'La loi ne s’intéresse qu’à la liberté d’opinion et d’expression : l’aspect matériel ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00049", 'de la presse (organisation industrielle, concentration, transparence des entreprises) ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00050", 'reste d’abord en retrait.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Après la Seconde Guerre mondiale, l’ordonnance du 26 août 1944 cherche à éviter '
-                      'les concentrations excessives et à encadrer la transparence des organes de presse. '
-                      'Elle sera ensuite complétée par les lois du 23 octobre 1984, du 1ᵉʳ août 1986 et du '
-                      '27 novembre 1986.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00051", 'Après la Seconde Guerre mondiale, l’ordonnance du 26 août 1944 cherche à éviter ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00052", 'les concentrations excessives et à encadrer la transparence des organes de presse. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00053", 'Elle sera ensuite complétée par les lois du 23 octobre 1984, du 1ᵉʳ août 1986 et du ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00054", '27 novembre 1986.'),
                 ),
               ]),
               const SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                 TextSpan(
                   text:
-                      'Par une décision importante du 11 octobre 1984, le Conseil constitutionnel fait du ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00055", 'Par une décision importante du 11 octobre 1984, le Conseil constitutionnel fait du '),
                 ),
                 TextSpan(
-                  text: 'pluralisme des courants d’expression',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00056", 'pluralisme des courants d’expression'),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
                   ),
                 ),
-                const TextSpan(
+                 TextSpan(
                   text:
-                      ' un principe à valeur constitutionnelle. Il souligne également la nécessité de '
-                      'la transparence pour garantir un équilibre entre liberté d’opinion et moyens '
-                      'd’expression.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00057", ' un principe à valeur constitutionnelle. Il souligne également la nécessité de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00058", 'la transparence pour garantir un équilibre entre liberté d’opinion et moyens ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00059", 'd’expression.'),
                 ),
               ]),
               const SizedBox(height: 8),
-              const _Paragraph(
-                'Aujourd’hui, le régime de la liberté de la presse repose donc sur quatre piliers :',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00060", 'Aujourd’hui, le régime de la liberté de la presse repose donc sur quatre piliers :'),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
-                TextSpan(text: '• Article 11 de la D.D.H.C. de 1789 ;'),
+               _BulletPoint.rich([
+                TextSpan(text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00061", '• Article 11 de la D.D.H.C. de 1789 ;')),
               ]),
-              const _BulletPoint.rich([
-                TextSpan(text: '• Loi du 29 juillet 1881 ;'),
+               _BulletPoint.rich([
+                TextSpan(text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00062", '• Loi du 29 juillet 1881 ;')),
               ]),
-              const _BulletPoint.rich([
-                TextSpan(text: '• Loi du 1ᵉʳ août 1986 ;'),
+               _BulletPoint.rich([
+                TextSpan(text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00063", '• Loi du 1ᵉʳ août 1986 ;')),
               ]),
-              const _BulletPoint.rich([
-                TextSpan(text: '• Loi du 27 novembre 1986.'),
+               _BulletPoint.rich([
+                TextSpan(text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00064", '• Loi du 27 novembre 1986.')),
               ]),
             ],
           ),
@@ -296,16 +266,12 @@ class PaLibertePressePage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 2 — CONTENU DE LA LIBERTÉ DE LA PRESSE
           // =====================================================
-          const _NotaBox(
-            title: 'Chapitre 2 — Le contenu de la liberté de la presse',
+           _NotaBox(
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00065", 'Chapitre 2 — Le contenu de la liberté de la presse'),
             bodySpans: [
               TextSpan(
                 text:
-                    'La liberté de la presse peut être menacée par plusieurs facteurs : un régime '
-                    'préventif (autorisation préalable ou censure), la dépendance à l’égard des '
-                    'pouvoirs publics, ou encore la domination des puissances financières. Les textes '
-                    'postérieurs à 1881 cherchent précisément à protéger l’indépendance de la presse, '
-                    'tout en rappelant les responsabilités des acteurs.',
+                    ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00066", 'La liberté de la presse peut être menacée par plusieurs facteurs : un régime ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00067", 'préventif (autorisation préalable ou censure), la dépendance à l’égard des ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00068", 'pouvoirs publics, ou encore la domination des puissances financières. Les textes ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00069", 'postérieurs à 1881 cherchent précisément à protéger l’indépendance de la presse, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00070", 'tout en rappelant les responsabilités des acteurs.'),
               ),
             ],
           ),
@@ -313,14 +279,14 @@ class PaLibertePressePage extends StatelessWidget {
 
           // 2.1 ENTREPRISE DE PRESSE
           _HypoCard(
-            title: '2.1 — L’entreprise de presse',
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00071", '2.1 — L’entreprise de presse'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               Text(
-                '2.1.1 — La création d’une entreprise de presse',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00072", '2.1.1 — La création d’une entreprise de presse'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -328,14 +294,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'L’article 5 de la loi de 1881 prévoit que « tout journal ou écrit périodique peut être publié '
-                'sans autorisation préalable, ni dépôt de cautionnement ». Il s’agit d’un régime de simple '
-                'déclaration, beaucoup plus libéral que celui de l’audiovisuel ou du cinéma.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00073", 'L’article 5 de la loi de 1881 prévoit que « tout journal ou écrit périodique peut être publié ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00074", 'sans autorisation préalable, ni dépôt de cautionnement ». Il s’agit d’un régime de simple ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00075", 'déclaration, beaucoup plus libéral que celui de l’audiovisuel ou du cinéma.'),
               ),
               const SizedBox(height: 10),
               Text(
-                '2.1.2 — Le fonctionnement d’une entreprise de presse',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00076", '2.1.2 — Le fonctionnement d’une entreprise de presse'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -344,7 +308,7 @@ class PaLibertePressePage extends StatelessWidget {
               ),
               const SizedBox(height: 6),
               Text(
-                '2.1.2.1 — La transparence',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00077", '2.1.2.1 — La transparence'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -352,40 +316,37 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'L’objectif est de favoriser la transparence des organes de presse et de permettre au lecteur '
-                'de connaître les véritables responsables. L’ordonnance de 1944, puis la loi du 23 octobre '
-                '1984 et les lois des 1ᵉʳ août et 27 novembre 1986, imposent des règles de publicité sur la '
-                'propriété et la direction des entreprises de presse.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00078", 'L’objectif est de favoriser la transparence des organes de presse et de permettre au lecteur ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00079", 'de connaître les véritables responsables. L’ordonnance de 1944, puis la loi du 23 octobre ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00080", '1984 et les lois des 1ᵉʳ août et 27 novembre 1986, imposent des règles de publicité sur la ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00081", 'propriété et la direction des entreprises de presse.'),
               ),
               const SizedBox(height: 6),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Chaque journal doit avoir un directeur de la publication, véritable responsable pénal ;',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00082", 'Chaque journal doit avoir un directeur de la publication, véritable responsable pénal ;'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'L’actionnaire majoritaire ou son représentant légal doit être identifié ;',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00083", 'L’actionnaire majoritaire ou son représentant légal doit être identifié ;'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Chaque numéro doit mentionner les principaux dirigeants (P.-D.G., directeurs, propriétaires, etc.) ;',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00084", 'Chaque numéro doit mentionner les principaux dirigeants (P.-D.G., directeurs, propriétaires, etc.) ;'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Les investissements étrangers sont limités à une certaine fraction du capital (20 % dans les règles classiques).',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00085", 'Les investissements étrangers sont limités à une certaine fraction du capital (20 % dans les règles classiques).'),
                 ),
               ]),
               const SizedBox(height: 8),
               Text(
-                '2.1.2.2 — Le pluralisme',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00086", '2.1.2.2 — Le pluralisme'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -393,16 +354,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Le pluralisme consiste à éviter les concentrations excessives qui mettraient en péril la diversité '
-                'des opinions. La décision du Conseil constitutionnel du 29 juillet 1986 fait du pluralisme des '
-                'quotidiens d’information politique et générale un objectif de valeur constitutionnelle. La loi du '
-                '27 novembre 1986 précise les limites de concentration admissibles (quotas de diffusion, part du '
-                'tirage national, nombre maximum de titres contrôlés par une même personne).',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00087", 'Le pluralisme consiste à éviter les concentrations excessives qui mettraient en péril la diversité ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00088", 'des opinions. La décision du Conseil constitutionnel du 29 juillet 1986 fait du pluralisme des ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00089", 'quotidiens d’information politique et générale un objectif de valeur constitutionnelle. La loi du ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00090", '27 novembre 1986 précise les limites de concentration admissibles (quotas de diffusion, part du ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00091", 'tirage national, nombre maximum de titres contrôlés par une même personne).'),
               ),
               const SizedBox(height: 8),
               Text(
-                '2.1.2.3 — Les aides publiques',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00092", '2.1.2.3 — Les aides publiques'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -410,11 +367,8 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'L’État soutient la presse écrite par différents mécanismes : aides fiscales (TVA réduite, exonérations), '
-                'tarifs postaux préférentiels, aides directes aux titres les plus fragiles. L’objectif affiché est de '
-                'favoriser le pluralisme, mais ces aides alimentent aussi le débat sur l’indépendance réelle de la presse '
-                'vis-à-vis du pouvoir politique.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00093", 'L’État soutient la presse écrite par différents mécanismes : aides fiscales (TVA réduite, exonérations), ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00094", 'tarifs postaux préférentiels, aides directes aux titres les plus fragiles. L’objectif affiché est de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00095", 'favoriser le pluralisme, mais ces aides alimentent aussi le débat sur l’indépendance réelle de la presse ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00096", 'vis-à-vis du pouvoir politique.'),
               ),
             ],
           ),
@@ -423,14 +377,14 @@ class PaLibertePressePage extends StatelessWidget {
 
           // 2.2 LES JOURNALISTES
           _HypoCard(
-            title: '2.2 — Les journalistes',
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00097", '2.2 — Les journalistes'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
               Text(
-                '2.2.1 — Le statut du journaliste',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00098", '2.2.1 — Le statut du journaliste'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -439,7 +393,7 @@ class PaLibertePressePage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '2.2.1.1 — Définition',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00099", '2.2.1.1 — Définition'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -447,16 +401,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'L’article 2 de la loi du 29 juillet 1881, complété par le Code du travail, définit le journaliste '
-                'professionnel comme toute personne qui exerce, à titre principal et rétribué, une activité de '
-                'rédaction ou de diffusion d’informations pour un ou plusieurs organes de presse ou de communication '
-                'au public. Sont assimilés certains collaborateurs directs (rédacteurs, photographes, reporters, '
-                'secrétaires de rédaction, etc.).',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00100", 'L’article 2 de la loi du 29 juillet 1881, complété par le Code du travail, définit le journaliste ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00101", 'professionnel comme toute personne qui exerce, à titre principal et rétribué, une activité de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00102", 'rédaction ou de diffusion d’informations pour un ou plusieurs organes de presse ou de communication ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00103", 'au public. Sont assimilés certains collaborateurs directs (rédacteurs, photographes, reporters, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00104", 'secrétaires de rédaction, etc.).'),
               ),
               const SizedBox(height: 6),
               Text(
-                '2.2.1.2 — La carte d’identité professionnelle',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00105", '2.2.1.2 — La carte d’identité professionnelle'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -464,15 +414,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'La carte de presse est délivrée par une Commission paritaire composée de journalistes et '
-                'd’éditeurs. Elle atteste de la qualité de journaliste professionnel et ouvre certains droits '
-                '(facilités de circulation, accès à certains lieux, etc.). Le refus ou le retrait de la carte '
-                'peuvent être contestés devant le juge administratif par un recours pour excès de pouvoir.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00106", 'La carte de presse est délivrée par une Commission paritaire composée de journalistes et ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00107", 'd’éditeurs. Elle atteste de la qualité de journaliste professionnel et ouvre certains droits ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00108", '(facilités de circulation, accès à certains lieux, etc.). Le refus ou le retrait de la carte ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00109", 'peuvent être contestés devant le juge administratif par un recours pour excès de pouvoir.'),
               ),
               const SizedBox(height: 6),
               Text(
-                '2.2.1.3 — La clause de conscience',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00110", '2.2.1.3 — La clause de conscience'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -480,15 +427,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'La clause de conscience permet au journaliste de rompre son contrat de travail avec indemnités '
-                'majorées lorsqu’un changement important dans l’orientation du journal porte atteinte à son honneur '
-                'ou à ses intérêts moraux (cession du journal, cessation de la publication, modification profonde de la '
-                'ligne éditoriale…).',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00111", 'La clause de conscience permet au journaliste de rompre son contrat de travail avec indemnités ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00112", 'majorées lorsqu’un changement important dans l’orientation du journal porte atteinte à son honneur ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00113", 'ou à ses intérêts moraux (cession du journal, cessation de la publication, modification profonde de la ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00114", 'ligne éditoriale…).'),
               ),
               const SizedBox(height: 10),
               Text(
-                '2.2.2 — La liberté du journaliste',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00115", '2.2.2 — La liberté du journaliste'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -497,7 +441,7 @@ class PaLibertePressePage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '2.2.2.1 — Liberté dans son travail',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00116", '2.2.2.1 — Liberté dans son travail'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -505,15 +449,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Le journaliste se veut indépendant dans ses jugements, mais il reste salarié. Son contrat de travail '
-                'est encadré par le Code du travail et par les conventions collectives. Pour protéger au mieux cette '
-                'indépendance, des « sociétés de journalistes » se sont créées dans certains organes de presse, afin '
-                'de veiller au respect d’une éthique professionnelle (charte de 1918, Déclaration de Munich de 1971).',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00117", 'Le journaliste se veut indépendant dans ses jugements, mais il reste salarié. Son contrat de travail ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00118", 'est encadré par le Code du travail et par les conventions collectives. Pour protéger au mieux cette ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00119", 'indépendance, des « sociétés de journalistes » se sont créées dans certains organes de presse, afin ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00120", 'de veiller au respect d’une éthique professionnelle (charte de 1918, Déclaration de Munich de 1971).'),
               ),
               const SizedBox(height: 6),
               Text(
-                '2.2.2.2 — Les limites à la liberté du journaliste',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00121", '2.2.2.2 — Les limites à la liberté du journaliste'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -521,16 +462,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Le journaliste doit vérifier ses informations, refuser les méthodes déloyales (intrusion, vol de documents, '
-                'enregistrements clandestins…) et respecter le secret des sources recueillies dans l’exercice de sa fonction. '
-                'Le Code de procédure pénale et le Code pénal organisent également un secret professionnel renforcé '
-                'pour protéger ses sources, sous peine de faire du journaliste un auxiliaire de police plutôt qu’un '
-                'acteur indépendant de l’information.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00122", 'Le journaliste doit vérifier ses informations, refuser les méthodes déloyales (intrusion, vol de documents, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00123", 'enregistrements clandestins…) et respecter le secret des sources recueillies dans l’exercice de sa fonction. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00124", 'Le Code de procédure pénale et le Code pénal organisent également un secret professionnel renforcé ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00125", 'pour protéger ses sources, sous peine de faire du journaliste un auxiliaire de police plutôt qu’un ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00126", 'acteur indépendant de l’information.'),
               ),
               const SizedBox(height: 10),
               Text(
-                '2.2.3 — La protection du secret des sources',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00127", '2.2.3 — La protection du secret des sources'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -539,7 +476,7 @@ class PaLibertePressePage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '2.2.3.1 — Principe général',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00128", '2.2.3.1 — Principe général'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -548,15 +485,13 @@ class PaLibertePressePage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               _Paragraph.rich([
-                const TextSpan(
+                 TextSpan(
                   text:
-                      'La loi du 29 juillet 1881, complétée par le Code de procédure pénale, dispose qu’il ne peut être porté atteinte '
-                      'au secret des sources que si un impératif prépondérant d’intérêt public l’exige, et si les mesures d’investigation '
-                      'sont strictement nécessaires et proportionnées. ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00129", 'La loi du 29 juillet 1881, complétée par le Code de procédure pénale, dispose qu’il ne peut être porté atteinte ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00130", 'au secret des sources que si un impératif prépondérant d’intérêt public l’exige, et si les mesures d’investigation ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00131", 'sont strictement nécessaires et proportionnées. '),
                 ),
                 TextSpan(
                   text:
-                      'Le journaliste a le droit de refuser de révéler l’origine de ses informations.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00132", 'Le journaliste a le droit de refuser de révéler l’origine de ses informations.'),
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     color: referenceColor,
@@ -565,7 +500,7 @@ class PaLibertePressePage extends StatelessWidget {
               ]),
               const SizedBox(height: 6),
               Text(
-                '2.2.3.2 — Perquisitions et saisies',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00133", '2.2.3.2 — Perquisitions et saisies'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -573,15 +508,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Les perquisitions dans les locaux d’une entreprise de presse, d’une agence ou au domicile d’un journaliste '
-                'sont encadrées : elles doivent être décidées et dirigées par un magistrat, qui doit préciser l’infraction '
-                'visée et les documents recherchés. Toute perquisition irrégulière est frappée de nullité, de même que les '
-                'saisies qui en résulteraient.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00134", 'Les perquisitions dans les locaux d’une entreprise de presse, d’une agence ou au domicile d’un journaliste ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00135", 'sont encadrées : elles doivent être décidées et dirigées par un magistrat, qui doit préciser l’infraction ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00136", 'visée et les documents recherchés. Toute perquisition irrégulière est frappée de nullité, de même que les ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00137", 'saisies qui en résulteraient.'),
               ),
               const SizedBox(height: 6),
               Text(
-                '2.2.3.3 — Secret des sources et témoignage',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00138", '2.2.3.3 — Secret des sources et témoignage'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -589,11 +521,8 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Lorsqu’un journaliste est entendu comme témoin sur des informations recueillies dans le cadre de son activité, '
-                'il bénéficie d’une protection renforcée : il peut refuser de révéler l’identité de la source. Les décisions de '
-                'la Cour de cassation et de la Cour européenne des droits de l’Homme sont venues rappeler que la protection '
-                'des sources est une condition essentielle de la liberté de la presse.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00139", 'Lorsqu’un journaliste est entendu comme témoin sur des informations recueillies dans le cadre de son activité, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00140", 'il bénéficie d’une protection renforcée : il peut refuser de révéler l’identité de la source. Les décisions de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00141", 'la Cour de cassation et de la Cour européenne des droits de l’Homme sont venues rappeler que la protection ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00142", 'des sources est une condition essentielle de la liberté de la presse.'),
               ),
             ],
           ),
@@ -604,21 +533,18 @@ class PaLibertePressePage extends StatelessWidget {
           // CHAPITRE 3 — LIMITES À LA LIBERTÉ DE LA PRESSE
           // =====================================================
           _HypoCard(
-            title: 'Chapitre 3 — Les limites à la liberté de la presse',
+            title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00143", 'Chapitre 3 — Les limites à la liberté de la presse'),
             cardColor: cardColor,
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              const _Paragraph(
-                'La liberté de la presse ne consiste pas à pouvoir dire ou écrire n’importe quoi. '
-                'La société et les individus doivent être protégés contre certains abus. La loi de '
-                '1881 et les textes ultérieurs définissent donc un ensemble d’infractions commises par '
-                'voie de presse.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00144", 'La liberté de la presse ne consiste pas à pouvoir dire ou écrire n’importe quoi. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00145", 'La société et les individus doivent être protégés contre certains abus. La loi de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00146", '1881 et les textes ultérieurs définissent donc un ensemble d’infractions commises par ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00147", 'voie de presse.'),
               ),
               const SizedBox(height: 10),
               Text(
-                '3.1 — Les infractions commises par voie de presse',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00148", '3.1 — Les infractions commises par voie de presse'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -627,7 +553,7 @@ class PaLibertePressePage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '3.1.1 — Protection des particuliers',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00149", '3.1.1 — Protection des particuliers'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -635,45 +561,39 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Les injures publiques : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00150", 'Les injures publiques : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'toute expression outrageante ou terme de mépris ne renfermant l’imputation d’aucun fait. '
-                      'Le régime est aggravé lorsque l’injure vise un agent public ou repose sur un motif discriminatoire '
-                      '(origine, appartenance à une race ou une religion déterminée, sexe, orientation sexuelle, handicap…).',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00151", 'toute expression outrageante ou terme de mépris ne renfermant l’imputation d’aucun fait. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00152", 'Le régime est aggravé lorsque l’injure vise un agent public ou repose sur un motif discriminatoire ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00153", '(origine, appartenance à une race ou une religion déterminée, sexe, orientation sexuelle, handicap…).'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'La diffamation : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00154", 'La diffamation : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'allégation ou imputation d’un fait précis portant atteinte à l’honneur ou à la considération '
-                      'd’une personne. Elle nécessite la preuve d’un fait susceptible de contrôle. La victime peut '
-                      'demander la publication d’un droit de réponse et obtenir réparation. La diffamation non publique '
-                      'constitue une contravention moins gravement sanctionnée.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00155", 'allégation ou imputation d’un fait précis portant atteinte à l’honneur ou à la considération ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00156", 'd’une personne. Elle nécessite la preuve d’un fait susceptible de contrôle. La victime peut ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00157", 'demander la publication d’un droit de réponse et obtenir réparation. La diffamation non publique ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00158", 'constitue une contravention moins gravement sanctionnée.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Atteintes à la vie privée : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00159", 'Atteintes à la vie privée : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'divulgation non autorisée d’éléments de la vie personnelle (adresse, santé, vie sentimentale…). '
-                      'Elles sont réprimées par les dispositions relatives au droit au respect de la vie privée.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00160", 'divulgation non autorisée d’éléments de la vie personnelle (adresse, santé, vie sentimentale…). ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00161", 'Elles sont réprimées par les dispositions relatives au droit au respect de la vie privée.'),
                 ),
               ]),
               const SizedBox(height: 8),
               Text(
-                '3.1.2 — Protection de la société',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00162", '3.1.2 — Protection de la société'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -681,39 +601,35 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Publication de fausses nouvelles : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00163", 'Publication de fausses nouvelles : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'diffusion de nouvelles inexactes ou falsifiées de nature à troubler la paix publique ou à '
-                      'démoraliser les forces armées (article 27 loi 1881).',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00164", 'diffusion de nouvelles inexactes ou falsifiées de nature à troubler la paix publique ou à ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00165", 'démoraliser les forces armées (article 27 loi 1881).'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Publication d’informations secrètes : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00166", 'Publication d’informations secrètes : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'divulgation d’informations relatives à la défense nationale, aux opérations de police, à la justice '
-                      'ou au secret de l’instruction. De nombreux textes (articles 38 à 41-1 de la loi de 1881, article 39 sexies, etc.) '
-                      'encadrent ces atteintes.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00167", 'divulgation d’informations relatives à la défense nationale, aux opérations de police, à la justice ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00168", 'ou au secret de l’instruction. De nombreux textes (articles 38 à 41-1 de la loi de 1881, article 39 sexies, etc.) ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00169", 'encadrent ces atteintes.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
                   text:
-                      'Provocation ou apologie de crimes et délits, notamment crimes de guerre, crimes contre l’humanité '
-                      'ou actes terroristes (articles 23, 24 et 24 bis loi 1881). ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00170", 'Provocation ou apologie de crimes et délits, notamment crimes de guerre, crimes contre l’humanité ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00171", 'ou actes terroristes (articles 23, 24 et 24 bis loi 1881). '),
                 ),
               ]),
               const SizedBox(height: 8),
               Text(
-                '3.1.3 — Protection de l’autorité de l’État et de ses représentants',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00172", '3.1.3 — Protection de l’autorité de l’État et de ses représentants'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -721,14 +637,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Sont notamment réprimés : le non-respect des décisions de justice, la pression exercée sur les magistrats, '
-                'l’injure ou la diffamation envers le Président de la République ou les membres du Gouvernement, '
-                'dans les conditions prévues par le Code pénal et la loi de 1881.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00173", 'Sont notamment réprimés : le non-respect des décisions de justice, la pression exercée sur les magistrats, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00174", 'l’injure ou la diffamation envers le Président de la République ou les membres du Gouvernement, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00175", 'dans les conditions prévues par le Code pénal et la loi de 1881.'),
               ),
               const SizedBox(height: 8),
               Text(
-                '3.1.4 — Personnes responsables et prescription',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00176", '3.1.4 — Personnes responsables et prescription'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -736,43 +650,39 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Personne responsable principale : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00177", 'Personne responsable principale : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'pour les écrits périodiques, il s’agit du directeur de la publication ; pour les autres, l’éditeur. '
-                      'À défaut, l’auteur, puis l’imprimeur, peuvent être poursuivis.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00178", 'pour les écrits périodiques, il s’agit du directeur de la publication ; pour les autres, l’éditeur. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00179", 'À défaut, l’auteur, puis l’imprimeur, peuvent être poursuivis.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Les complices : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00180", 'Les complices : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'ceux qui ont participé à la diffusion ou à la publication peuvent être poursuivis comme complices, '
-                      'dans les conditions du Code pénal.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00181", 'ceux qui ont participé à la diffusion ou à la publication peuvent être poursuivis comme complices, ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00182", 'dans les conditions du Code pénal.'),
                 ),
               ]),
-              const _BulletPoint.rich([
+               _BulletPoint.rich([
                 TextSpan(
-                  text: 'Prescription : ',
+                  text: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00183", 'Prescription : '),
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text:
-                      'le délai de prescription de l’action publique en matière de délits de presse est en principe de '
-                      'trois mois à compter de la publication, porté à un an pour certains délits à caractère raciste ou '
-                      'discriminatoire.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00184", 'le délai de prescription de l’action publique en matière de délits de presse est en principe de ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00185", 'trois mois à compter de la publication, porté à un an pour certains délits à caractère raciste ou ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00186", 'discriminatoire.'),
                 ),
               ]),
               const SizedBox(height: 10),
               Text(
-                '3.2 — Contrôles et saisies en matière de presse',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00187", '3.2 — Contrôles et saisies en matière de presse'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w800,
                   fontSize: 15,
@@ -781,7 +691,7 @@ class PaLibertePressePage extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                '3.2.1 — Les contrôles',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00188", '3.2.1 — Les contrôles'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -789,15 +699,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph(
-                'Certaines publications sont plus strictement encadrées, notamment celles destinées à la jeunesse : '
-                'contenu à caractère violent, pornographique ou discriminatoire. Les tribunaux peuvent ordonner la saisie '
-                'ou la destruction des supports. En période d’état de siège ou d’état d’urgence, des mesures de censure '
-                'exceptionnelles peuvent également être décidées.',
+               _Paragraph(
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00189", 'Certaines publications sont plus strictement encadrées, notamment celles destinées à la jeunesse : ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00190", 'contenu à caractère violent, pornographique ou discriminatoire. Les tribunaux peuvent ordonner la saisie ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00191", 'ou la destruction des supports. En période d’état de siège ou d’état d’urgence, des mesures de censure ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00192", 'exceptionnelles peuvent également être décidées.'),
               ),
               const SizedBox(height: 8),
               Text(
-                '3.2.2 — Les perquisitions',
+                ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00193", '3.2.2 — Les perquisitions'),
                 style: GoogleFonts.fustat(
                   fontWeight: FontWeight.w700,
                   fontSize: 14,
@@ -805,15 +712,14 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              const _Paragraph.rich([
+               _Paragraph.rich([
                 TextSpan(
                   text:
-                      'Les perquisitions dans les locaux de presse ou chez les journalistes sont particulièrement sensibles. '
-                      'Elles ne peuvent être décidées que par un magistrat et doivent respecter le principe de proportionnalité. ',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00194", 'Les perquisitions dans les locaux de presse ou chez les journalistes sont particulièrement sensibles. ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00195", 'Elles ne peuvent être décidées que par un magistrat et doivent respecter le principe de proportionnalité. '),
                 ),
                 TextSpan(
                   text:
-                      'Toute dérive peut remettre en cause la confiance entre les médias et les forces de l’ordre.',
+                      ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00196", 'Toute dérive peut remettre en cause la confiance entre les médias et les forces de l’ordre.'),
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
                     color: dangerColor,
@@ -821,15 +727,12 @@ class PaLibertePressePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              const _ExempleBox(
-                title: 'Réflexe pratique pour le policier',
+               _ExempleBox(
+                title: ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00197", 'Réflexe pratique pour le policier'),
                 bodySpans: [
                   TextSpan(
                     text:
-                        'Lorsqu’une enquête touche un média ou un journaliste, l’agent doit toujours garder à l’esprit la '
-                        'protection de la liberté de la presse : prudence dans les contacts avec les rédactions, respect '
-                        'des réquisitions judiciaires, attention particulière à la confidentialité des sources. La recherche '
-                        'de la vérité ne doit jamais servir de prétexte à une pression illégitime sur le travail journalistique.',
+                        ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00198", 'Lorsqu’une enquête touche un média ou un journaliste, l’agent doit toujours garder à l’esprit la ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00199", 'protection de la liberté de la presse : prudence dans les contacts avec les rédactions, respect ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00200", 'des réquisitions judiciaires, attention particulière à la confidentialité des sources. La recherche ') + ScolariteText.value("lib/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart", "f00201", 'de la vérité ne doit jamais servir de prétexte à une pression illégitime sur le travail journalistique.'),
                   ),
                 ],
               ),

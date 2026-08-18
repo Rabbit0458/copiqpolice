@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
   const JuridictionsExecutionDecisionsJusticePage({super.key});
@@ -41,7 +42,7 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
-      appBar: AppBar(title: const Text("Exécution des décisions de justice")),
+      appBar: AppBar(title:  Text(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00001", "Exécution des décisions de justice"))),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
@@ -50,7 +51,7 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
             children: [
               Center(
                 child: Text(
-                  'Version au 01/07/2025  © COPIQ',
+                  ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00002", 'Version au 01/07/2025  © COPIQ'),
                   style: GoogleFonts.fustat(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
@@ -67,7 +68,7 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               /// INTRO GÉNÉRALE – EXÉCUTION DES DÉCISIONS DE JUSTICE
               ////////////////////////////////////////////////////////////
               _ConditionCard(
-                title: "L'exécution des décisions de justice",
+                title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00003", "L'exécution des décisions de justice"),
                 cardColor: isDark
                     ? const Color(0xFF111820)
                     : const Color(0xFFE3F2FD),
@@ -75,80 +76,54 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
                   const _SubTitle('Introduction'),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "La loi n° 2019-222 du 23 mars 2019 de programmation 2018-2022 "
-                          "et de réforme pour la justice a refondé le droit de la peine, "
-                          "afin de rendre son application plus lisible et plus efficace, "
-                          "en favorisant sa mise à exécution rapide dans le respect du "
-                          "principe d'individualisation des peines.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00004", "La loi n° 2019-222 du 23 mars 2019 de programmation 2018-2022 ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00005", "et de réforme pour la justice a refondé le droit de la peine, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00006", "afin de rendre son application plus lisible et plus efficace, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00007", "en favorisant sa mise à exécution rapide dans le respect du ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00008", "principe d'individualisation des peines."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "La loi n° 2012-409 du 27 mars 2012 relative à l'exécution des "
-                          "peines a apporté plusieurs dispositions de procédure pénale "
-                          "visant à garantir l'effectivité de l'exécution des peines, "
-                          "renforcer les dispositifs de prévention de la récidive et "
-                          "améliorer la prise en charge des mineurs délinquants.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00009", "La loi n° 2012-409 du 27 mars 2012 relative à l'exécution des ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00010", "peines a apporté plusieurs dispositions de procédure pénale ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00011", "visant à garantir l'effectivité de l'exécution des peines, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00012", "renforcer les dispositifs de prévention de la récidive et ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00013", "améliorer la prise en charge des mineurs délinquants."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "La loi portant adaptation de la justice aux évolutions de la "
-                          "criminalité du 9 mars 2004 a apporté de nouvelles modifications "
-                          "substantielles au droit de l'application des peines, "
-                          "complétant la réforme entamée en 2000 et poursuivant le "
-                          "mouvement de juridictionnalisation des peines, notamment par "
-                          "l’abandon définitif de la notion de mesures d'administration "
-                          "judiciaire.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00014", "La loi portant adaptation de la justice aux évolutions de la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00015", "criminalité du 9 mars 2004 a apporté de nouvelles modifications ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00016", "substantielles au droit de l'application des peines, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00017", "complétant la réforme entamée en 2000 et poursuivant le ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00018", "mouvement de juridictionnalisation des peines, notamment par ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00019", "l’abandon définitif de la notion de mesures d'administration ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00020", "judiciaire."),
                     ),
                   ]),
                   const SizedBox(height: 10),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Selon les termes de la loi, le procureur de la République "
-                          "poursuit l'exécution des peines privatives de liberté et de "
-                          "certaines peines de substitution ainsi que des peines "
-                          "complémentaires. Mais l’exécution des peines relève de plus en "
-                          "plus du juge de l'application des peines, qui gère notamment "
-                          "les modalités d'application de la peine.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00021", "Selon les termes de la loi, le procureur de la République ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00022", "poursuit l'exécution des peines privatives de liberté et de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00023", "certaines peines de substitution ainsi que des peines ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00024", "complémentaires. Mais l’exécution des peines relève de plus en ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00025", "plus du juge de l'application des peines, qui gère notamment ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00026", "les modalités d'application de la peine."),
                     ),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Le juge intervient de plus en plus dans l'exécution des "
-                          "décisions de justice, par exemple pour le retrait de la "
-                          "semi-liberté ou du placement à l'extérieur accordé par jugement (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00027", "Le juge intervient de plus en plus dans l'exécution des ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00028", "décisions de justice, par exemple pour le retrait de la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00029", "semi-liberté ou du placement à l'extérieur accordé par jugement ("),
                     ),
-                    _cpp("Article 723-2 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00030", "Article 723-2 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Pour les peines privatives de liberté, l'individualisation de la "
-                          "peine doit permettre le retour progressif du condamné à la "
-                          "liberté, mais également éviter une remise en liberté sans "
-                          "aucune forme de suivi judiciaire.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00031", "Pour les peines privatives de liberté, l'individualisation de la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00032", "peine doit permettre le retour progressif du condamné à la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00033", "liberté, mais également éviter une remise en liberté sans ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00034", "aucune forme de suivi judiciaire."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Pour les peines pécuniaires, le législateur a prévu le système "
-                          "de la contrainte judiciaire afin de garantir l'exécution des "
-                          "amendes et autres condamnations pécuniaires.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00035", "Pour les peines pécuniaires, le législateur a prévu le système ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00036", "de la contrainte judiciaire afin de garantir l'exécution des ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00037", "amendes et autres condamnations pécuniaires."),
                     ),
                   ]),
                 ],
@@ -160,127 +135,106 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               ////////////////////////////////////////////////
               _ConditionCard(
                 title:
-                    "Chapitre 1 : L'exécution des peines – principes généraux",
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00038", "Chapitre 1 : L'exécution des peines – principes généraux"),
                 cardColor: isDark
                     ? const Color(0xFF101318)
                     : const Color(0xFFE8EAF6),
                 accent: const Color(0xFF1A237E),
                 titleColor: isDark ? Colors.white : const Color(0xFF1A237E),
                 children: [
-                  const _SubTitle('1.1 - Les parties intervenantes'),
-                  const _Paragraph.rich([
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00039", '1.1 - Les parties intervenantes')),
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "L’Article 707-1 alinéa 1 du Code de procédure pénale dispose : "
-                          "« Le ministère public et les parties poursuivent l'exécution de "
-                          "la sentence, chacun en ce qui le concerne ».",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00040", "L’Article 707-1 alinéa 1 du Code de procédure pénale dispose : ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00041", "« Le ministère public et les parties poursuivent l'exécution de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00042", "la sentence, chacun en ce qui le concerne »."),
                     ),
                   ]),
                   const SizedBox(height: 8),
 
-                  const _SubTitle('1.1.1 - La partie civile'),
-                  const _Paragraph(
-                    "La partie civile obtient en principe réparation sous la forme du "
-                    "versement de dommages et intérêts, mais elle peut aussi bénéficier "
-                    "d’autres formes de réparation (publication de la décision, remise en "
-                    "état du bien, etc.).",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00043", '1.1.1 - La partie civile')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00044", "La partie civile obtient en principe réparation sous la forme du ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00045", "versement de dommages et intérêts, mais elle peut aussi bénéficier ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00046", "d’autres formes de réparation (publication de la décision, remise en ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00047", "état du bien, etc.)."),
                   ),
                   const SizedBox(height: 6),
-                  const _Paragraph(
-                    "Elle a seule qualité pour faire exécuter les condamnations prononcées "
-                    "à son profit par les voies civiles (saisies, mesures d’exécution sur "
-                    "les biens du débiteur).",
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00048", "Elle a seule qualité pour faire exécuter les condamnations prononcées ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00049", "à son profit par les voies civiles (saisies, mesures d’exécution sur ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00050", "les biens du débiteur)."),
                   ),
                   const SizedBox(height: 8),
 
-                  const _SubTitle('1.1.2 - Les administrations'),
-                  const _Paragraph(
-                    "Certaines administrations représentant l’État poursuivent l’exécution "
-                    "de certaines peines ou sanctions.",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00051", '1.1.2 - Les administrations')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00052", "Certaines administrations représentant l’État poursuivent l’exécution ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00053", "de certaines peines ou sanctions."),
                   ),
                   const SizedBox(height: 6),
-                  const _BulletPoint(
+                   _BulletPoint(
                     text:
-                        "Administration des impôts : recouvrement des amendes à caractère "
-                        "fiscal et des confiscations ayant le caractère d’une peine et "
-                        "d’une indemnité au profit du Trésor.",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00054", "Administration des impôts : recouvrement des amendes à caractère ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00055", "fiscal et des confiscations ayant le caractère d’une peine et ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00056", "d’une indemnité au profit du Trésor."),
                   ),
-                  const _BulletPoint(
+                   _BulletPoint(
                     text:
-                        "Administration des douanes : exécution des sanctions d’ordre "
-                        "pécuniaire prononcées suite à des infractions douanières.",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00057", "Administration des douanes : exécution des sanctions d’ordre ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00058", "pécuniaire prononcées suite à des infractions douanières."),
                   ),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Elles disposent notamment d’un droit de transaction qu’elles "
-                          "peuvent exercer avant ou après jugement.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00059", "Elles disposent notamment d’un droit de transaction qu’elles ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00060", "peuvent exercer avant ou après jugement."),
                     ),
                   ]),
 
                   const SizedBox(height: 8),
-                  const _SubTitle('1.1.3 - Le ministère public'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00061", '1.1.3 - Le ministère public')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "C’est au ministère public qu’il appartient essentiellement "
-                          "d’assurer l’exécution des sanctions pénales. L’",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00062", "C’est au ministère public qu’il appartient essentiellement ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00063", "d’assurer l’exécution des sanctions pénales. L’"),
                     ),
-                    _cpp("Article 707-1 du Code de procédure pénale"),
-                    const TextSpan(
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00064", "Article 707-1 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " précise son rôle dans l’exécution des peines de toutes natures.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00065", " précise son rôle dans l’exécution des peines de toutes natures."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([TextSpan(text: "Il : ")]),
+                   _Paragraph.rich([TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00066", "Il : "))]),
                   const SizedBox(height: 4),
-                  const _BulletPoint(
+                   _BulletPoint(
                     text:
-                        "fait exécuter toutes les peines privatives de liberté ;",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00067", "fait exécuter toutes les peines privatives de liberté ;"),
                   ),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "fait exécuter les peines prévues aux articles 131-1 à 131-49 du ",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00068", "fait exécuter les peines prévues aux articles 131-1 à 131-49 du "),
                     ),
-                    _cp("Code pénal"),
-                    const TextSpan(
+                    _cp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00069", "Code pénal")),
+                     TextSpan(
                       text:
-                          " (peines principales, complémentaires et accessoires) ;",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00070", " (peines principales, complémentaires et accessoires) ;"),
                     ),
                   ]),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "poursuit l’exécution des sanctions pécuniaires prononcées par "
-                          "les autorités compétentes des États membres de l’Union "
-                          "européenne (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00071", "poursuit l’exécution des sanctions pécuniaires prononcées par ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00072", "les autorités compétentes des États membres de l’Union ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00073", "européenne ("),
                     ),
-                    _cpp("Article 707-1 alinéa 6 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00074", "Article 707-1 alinéa 6 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Pour les peines pécuniaires, le recouvrement est assuré soit par "
-                          "le comptable public compétent, soit par l’Agence de gestion et "
-                          "de recouvrement des avoirs saisis et confisqués lorsque la "
-                          "confiscation porte sur des biens meubles ou immeubles (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00075", "Pour les peines pécuniaires, le recouvrement est assuré soit par ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00076", "le comptable public compétent, soit par l’Agence de gestion et ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00077", "de recouvrement des avoirs saisis et confisqués lorsque la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00078", "confiscation porte sur des biens meubles ou immeubles ("),
                     ),
-                    _cpp("Article 707-1 alinéa 2 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00079", "Article 707-1 alinéa 2 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "L’Article 709 du Code de procédure pénale prévoit que le "
-                          "procureur de la République et le procureur général peuvent "
-                          "requérir directement l’assistance de la force publique pour "
-                          "assurer l’exécution des décisions de justice.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00080", "L’Article 709 du Code de procédure pénale prévoit que le ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00081", "procureur de la République et le procureur général peuvent ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00082", "requérir directement l’assistance de la force publique pour ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00083", "assurer l’exécution des décisions de justice."),
                     ),
                   ]),
                 ],
@@ -291,7 +245,7 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               /// 1.2 – DÉCISION DÉFINITIVE
               ////////////////////////////////////////////////
               _ConditionCard(
-                title: "1.2 - La décision doit être définitive",
+                title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00084", "1.2 - La décision doit être définitive"),
                 cardColor: isDark
                     ? const Color(0xFF12151C)
                     : const Color(0xFFE8F5E9),
@@ -299,48 +253,40 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF1B5E20),
                 children: [
                   _Paragraph.rich([
-                    const TextSpan(text: "L’"),
-                    _cpp("Article 708 alinéa 1 du Code de procédure pénale"),
-                    const TextSpan(
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00085", "L’")),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00086", "Article 708 alinéa 1 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " dispose que l’exécution a lieu lorsque la décision est "
-                          "devenue définitive.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00087", " dispose que l’exécution a lieu lorsque la décision est ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00088", "devenue définitive."),
                     ),
                   ]),
                   const SizedBox(height: 8),
-                  const _SubTitle('1.2.1 - Le délai d’opposition'),
-                  const _Paragraph(
-                    "Lorsque la décision est rendue par défaut, elle ne peut être mise à "
-                    "exécution tant que court le délai d’opposition. Ce délai suspend "
-                    "l’exécution de la peine.",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00089", '1.2.1 - Le délai d’opposition')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00090", "Lorsque la décision est rendue par défaut, elle ne peut être mise à ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00091", "exécution tant que court le délai d’opposition. Ce délai suspend ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00092", "l’exécution de la peine."),
                   ),
                   const SizedBox(height: 8),
-                  const _SubTitle("1.2.2 - Le délai d'appel"),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00093", "1.2.2 - Le délai d'appel")),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Le délai d’appel est de 10 jours à compter du prononcé de la "
-                          "décision : ",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00094", "Le délai d’appel est de 10 jours à compter du prononcé de la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00095", "décision : "),
                     ),
-                    _cpp("Article 380-9 du Code de procédure pénale"),
-                    const TextSpan(text: " (cour d’assises), "),
-                    _cpp("Article 498 du Code de procédure pénale"),
-                    const TextSpan(text: " (tribunal correctionnel), "),
-                    _cpp("Article 547 du Code de procédure pénale"),
-                    const TextSpan(text: " (tribunal de police)."),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00096", "Article 380-9 du Code de procédure pénale")),
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00097", " (cour d’assises), ")),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00098", "Article 498 du Code de procédure pénale")),
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00099", " (tribunal correctionnel), ")),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00100", "Article 547 du Code de procédure pénale")),
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00101", " (tribunal de police).")),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph(
-                    "Pendant le délai d’appel et durant l’instance d’appel, il est "
-                    "généralement sursis à l’exécution, sauf exceptions (exécution "
-                    "provisoire de certaines mesures, maintien en détention, etc.).",
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00102", "Pendant le délai d’appel et durant l’instance d’appel, il est ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00103", "généralement sursis à l’exécution, sauf exceptions (exécution ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00104", "provisoire de certaines mesures, maintien en détention, etc.)."),
                   ),
                   const SizedBox(height: 8),
-                  const _SubTitle('1.2.3 - Le pourvoi en cassation'),
-                  const _Paragraph(
-                    "Le pourvoi en cassation n’est en principe pas suspensif, sauf dans "
-                    "certains cas prévus par la loi. Il n’empêche donc pas "
-                    "l’exécution de la décision sauf texte contraire.",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00105", '1.2.3 - Le pourvoi en cassation')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00106", "Le pourvoi en cassation n’est en principe pas suspensif, sauf dans ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00107", "certains cas prévus par la loi. Il n’empêche donc pas ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00108", "l’exécution de la décision sauf texte contraire."),
                   ),
                 ],
               ),
@@ -350,79 +296,64 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               /// 1.3 – PEINES PRIVATIVES DE LIBERTÉ
               ////////////////////////////////////////////////
               _ConditionCard(
-                title: "1.3 - L'exécution des peines privatives de liberté",
+                title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00109", "1.3 - L'exécution des peines privatives de liberté"),
                 cardColor: isDark
                     ? const Color(0xFF15161F)
                     : const Color(0xFFFFF3E0),
                 accent: const Color(0xFFEF6C00),
                 titleColor: isDark ? Colors.white : const Color(0xFFE65100),
                 children: [
-                  const _SubTitle('1.3.1 - Le rôle du ministère public'),
-                  const _Paragraph(
-                    "Le ministère public doit faire exécuter les peines privatives de "
-                    "liberté, qu’elles soient prononcées par le tribunal correctionnel ou "
-                    "la cour d’assises.",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00110", '1.3.1 - Le rôle du ministère public')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00111", "Le ministère public doit faire exécuter les peines privatives de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00112", "liberté, qu’elles soient prononcées par le tribunal correctionnel ou ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00113", "la cour d’assises."),
                   ),
                   const SizedBox(height: 6),
-                  const _IntroBullet(
+                   _IntroBullet(
                     text:
-                        "Lorsque la cour d’assises siège au niveau de la cour d’appel, "
-                        "l’exécution est assurée par le parquet général.",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00114", "Lorsque la cour d’assises siège au niveau de la cour d’appel, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00115", "l’exécution est assurée par le parquet général."),
                   ),
-                  const _IntroBullet(
+                   _IntroBullet(
                     text:
-                        "Lorsque la cour d’assises siège dans les locaux du tribunal "
-                        "judiciaire, c’est le parquet de ce tribunal qui assure "
-                        "l’exécution.",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00116", "Lorsque la cour d’assises siège dans les locaux du tribunal ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00117", "judiciaire, c’est le parquet de ce tribunal qui assure ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00118", "l’exécution."),
                   ),
                   const SizedBox(height: 8),
-                  const _SubTitle('1.3.2 - Modalités pratiques'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00119", '1.3.2 - Modalités pratiques')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Le Code de procédure pénale ne fixe pas de délai précis pour "
-                          "l’incarcération des condamnés, mais l’instruction générale pour "
-                          "l’application du C.P.P. (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00120", "Le Code de procédure pénale ne fixe pas de délai précis pour ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00121", "l’incarcération des condamnés, mais l’instruction générale pour ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00122", "l’application du C.P.P. ("),
                     ),
                     _autreCode(
-                      "Article C 816 de l’instruction générale pour l’application du Code de procédure pénale",
+                      ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00123", "Article C 816 de l’instruction générale pour l’application du Code de procédure pénale"),
                     ),
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          ") prescrit que la peine d’emprisonnement doit être mise à "
-                          "exécution dans un délai de 15 jours.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00124", ") prescrit que la peine d’emprisonnement doit être mise à ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00125", "exécution dans un délai de 15 jours."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph(
-                    "Un extrait de la décision exécutoire est établi par le greffe puis "
-                    "adressé à l’établissement pénitentiaire à l’appui de l’écrou.",
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00126", "Un extrait de la décision exécutoire est établi par le greffe puis ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00127", "adressé à l’établissement pénitentiaire à l’appui de l’écrou."),
                   ),
                   const SizedBox(height: 6),
-                  const _IntroBullet(
+                   _IntroBullet(
                     text:
-                        "Si le condamné est déjà détenu, l’écrou est régularisé sur place.",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00128", "Si le condamné est déjà détenu, l’écrou est régularisé sur place."),
                   ),
-                  const _IntroBullet(
+                   _IntroBullet(
                     text:
-                        "S’il est libre, le parquet peut le faire convoquer pour une mise "
-                        "à exécution ou délivrer un réquisitoire d’arrestation aux forces "
-                        "de police ou de gendarmerie.",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00129", "S’il est libre, le parquet peut le faire convoquer pour une mise ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00130", "à exécution ou délivrer un réquisitoire d’arrestation aux forces ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00131", "de police ou de gendarmerie."),
                   ),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Les agents de la force publique peuvent être autorisés à "
-                          "pénétrer au domicile d’une personne condamnée afin d’assurer "
-                          "l’exécution d’une peine d’emprisonnement. Cette intrusion est "
-                          "encadrée par l’",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00132", "Les agents de la force publique peuvent être autorisés à ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00133", "pénétrer au domicile d’une personne condamnée afin d’assurer ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00134", "l’exécution d’une peine d’emprisonnement. Cette intrusion est ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00135", "encadrée par l’"),
                     ),
-                    _cpp("Article 716-5 du Code de procédure pénale"),
-                    const TextSpan(
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00136", "Article 716-5 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " et doit respecter les heures légales et les règles relatives à "
-                          "la protection du domicile.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00137", " et doit respecter les heures légales et les règles relatives à ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00138", "la protection du domicile."),
                     ),
                   ]),
                 ],
@@ -433,124 +364,95 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               /// 1.4 – PEINES NON PRIVATIVES
               ////////////////////////////////////////////////
               _ConditionCard(
-                title: "1.4 - L'exécution des peines non privatives de liberté",
+                title: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00139", "1.4 - L'exécution des peines non privatives de liberté"),
                 cardColor: isDark
                     ? const Color(0xFF17171F)
                     : const Color(0xFFE3F2FD),
                 accent: const Color(0xFF1565C0),
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
-                  const _SubTitle(
-                    '1.4.1 - Peines applicables aux personnes physiques',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00140", '1.4.1 - Peines applicables aux personnes physiques'),
                   ),
-                  const _SubTitle('1.4.1.1 - Les amendes'),
-                  const _Paragraph.rich([
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00141", '1.4.1.1 - Les amendes')),
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Les condamnations pécuniaires (amendes pénales, civiles ou "
-                          "administratives, certaines condamnations fiscales, "
-                          "confiscations, réparations, dommages et intérêts…) sont "
-                          "exigibles dès que la décision les prononçant est devenue "
-                          "exécutoire.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00142", "Les condamnations pécuniaires (amendes pénales, civiles ou ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00143", "administratives, certaines condamnations fiscales, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00144", "confiscations, réparations, dommages et intérêts…) sont ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00145", "exigibles dès que la décision les prononçant est devenue ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00146", "exécutoire."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Le recouvrement des amendes est assuré par le comptable public "
-                          "compétent au nom du procureur de la République. Les extraits de "
-                          "jugement ou d’arrêt doivent être adressés au Trésorier principal "
-                          "dans un délai de 35 jours (45 jours en cas de pourvoi en "
-                          "cassation).",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00147", "Le recouvrement des amendes est assuré par le comptable public ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00148", "compétent au nom du procureur de la République. Les extraits de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00149", "jugement ou d’arrêt doivent être adressés au Trésorier principal ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00150", "dans un délai de 35 jours (45 jours en cas de pourvoi en ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00151", "cassation)."),
                     ),
                   ]),
                   const SizedBox(height: 6),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Le paiement de l’amende est toujours privilégié. Le défaut total "
-                          "ou partiel de paiement peut entraîner l’incarcération du "
-                          "condamné dans le cadre de la contrainte judiciaire (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00152", "Le paiement de l’amende est toujours privilégié. Le défaut total ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00153", "ou partiel de paiement peut entraîner l’incarcération du ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00154", "condamné dans le cadre de la contrainte judiciaire ("),
                     ),
-                    _cpp("Article 707-1 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00155", "Article 707-1 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 8),
-                  const _SubTitle('1.4.1.2 - Les jours-amende'),
-                  const _Paragraph.rich([
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00156", '1.4.1.2 - Les jours-amende')),
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Les jours-amende sont une peine pécuniaire particulière. "
-                          "L’intéressé s’acquitte d’une somme journalière ; à défaut de "
-                          "paiement, le juge de l’application des peines peut ordonner un "
-                          "emprisonnement pour une durée égale au nombre de jours-amende "
-                          "impayés.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00157", "Les jours-amende sont une peine pécuniaire particulière. ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00158", "L’intéressé s’acquitte d’une somme journalière ; à défaut de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00159", "paiement, le juge de l’application des peines peut ordonner un ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00160", "emprisonnement pour une durée égale au nombre de jours-amende ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00161", "impayés."),
                     ),
                   ]),
                   const SizedBox(height: 8),
-                  const _SubTitle('1.4.1.3 - Autres sanctions'),
-                  const _SubTitle('1.4.1.3.1 - Les peines de substitution'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00162", '1.4.1.3 - Autres sanctions')),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00163", '1.4.1.3.1 - Les peines de substitution')),
                   _Paragraph.rich([
-                    const TextSpan(
-                      text: "Les peines de substitution prévues à l’",
+                     TextSpan(
+                      text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00164", "Les peines de substitution prévues à l’"),
                     ),
-                    _cp("Article 131-6 du Code pénal"),
-                    const TextSpan(
+                    _cp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00165", "Article 131-6 du Code pénal")),
+                     TextSpan(
                       text:
-                          " comprennent notamment la suspension ou l’annulation du permis "
-                          "de conduire, l’interdiction de conduire certains véhicules, "
-                          "l’interdiction de détenir ou porter une arme, la confiscation de "
-                          "la chose qui a servi ou était destinée à commettre l’infraction, "
-                          "etc.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00166", " comprennent notamment la suspension ou l’annulation du permis ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00167", "de conduire, l’interdiction de conduire certains véhicules, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00168", "l’interdiction de détenir ou porter une arme, la confiscation de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00169", "la chose qui a servi ou était destinée à commettre l’infraction, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00170", "etc."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle(
-                    '1.4.1.3.2 - Peines complémentaires pouvant se substituer',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00171", '1.4.1.3.2 - Peines complémentaires pouvant se substituer'),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Il existe également des peines complémentaires prévues à divers "
-                          "articles du ",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00172", "Il existe également des peines complémentaires prévues à divers ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00173", "articles du "),
                     ),
-                    _cp("Code pénal"),
-                    const TextSpan(
+                    _cp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00174", "Code pénal")),
+                     TextSpan(
                       text:
-                          " : interdiction de droits civiques, civils et de famille, "
-                          "interdiction d’exercer certaines fonctions, fermeture "
-                          "d’établissement, affichage ou diffusion de la décision, etc.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00175", " : interdiction de droits civiques, civils et de famille, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00176", "interdiction d’exercer certaines fonctions, fermeture ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00177", "d’établissement, affichage ou diffusion de la décision, etc."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle(
-                    '1.4.1.3.3 - La peine de sanction-réparation',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00178", '1.4.1.3.3 - La peine de sanction-réparation'),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(text: "L’"),
-                    _cp("Article 131-8-1 du Code pénal"),
-                    const TextSpan(
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00179", "L’")),
+                    _cp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00180", "Article 131-8-1 du Code pénal")),
+                     TextSpan(
                       text:
-                          " dispose qu’en cas de délit, la juridiction peut prononcer, à la "
-                          "place ou en même temps que la peine d’emprisonnement ou "
-                          "d’amende, une peine de sanction-réparation. Elle consiste pour "
-                          "le condamné à indemniser la victime (remise en état d’un bien, "
-                          "versements, etc.).",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00181", " dispose qu’en cas de délit, la juridiction peut prononcer, à la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00182", "place ou en même temps que la peine d’emprisonnement ou ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00183", "d’amende, une peine de sanction-réparation. Elle consiste pour ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00184", "le condamné à indemniser la victime (remise en état d’un bien, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00185", "versements, etc.)."),
                     ),
                   ]),
                   const SizedBox(height: 8),
-                  const _SubTitle(
-                    '1.4.2 - Peines applicables aux personnes morales',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00186", '1.4.2 - Peines applicables aux personnes morales'),
                   ),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Les personnes morales peuvent être condamnées à des peines "
-                          "d’amende et à diverses peines complémentaires. Le recouvrement "
-                          "des amendes s’effectue comme pour les personnes physiques, "
-                          "sauf pour la contrainte judiciaire qui ne leur est pas "
-                          "applicable.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00187", "Les personnes morales peuvent être condamnées à des peines ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00188", "d’amende et à diverses peines complémentaires. Le recouvrement ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00189", "des amendes s’effectue comme pour les personnes physiques, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00190", "sauf pour la contrainte judiciaire qui ne leur est pas ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00191", "applicable."),
                     ),
                   ]),
                 ],
@@ -562,143 +464,117 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               ////////////////////////////////////////////////
               _ConditionCard(
                 title:
-                    "Chapitre 2 : Garantie d’exécution – la contrainte judiciaire",
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00192", "Chapitre 2 : Garantie d’exécution – la contrainte judiciaire"),
                 cardColor: isDark
                     ? const Color(0xFF15151D)
                     : const Color(0xFFFFF8E1),
                 accent: const Color(0xFFF9A825),
                 titleColor: isDark ? Colors.white : const Color(0xFF5D4037),
                 children: [
-                  const _SubTitle('2.1 - Définition'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00193", '2.1 - Définition')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "La contrainte judiciaire est une voie d’exécution qui permet, "
-                          "en cas d’inexécution volontaire d’une condamnation pécuniaire, "
-                          "d’incarcérer le condamné pour une durée déterminée. Elle succède "
-                          "à l’ancienne contrainte par corps. La loi du 9 mars 2004 a "
-                          "consacré le rôle du juge de l’application des peines chargé "
-                          "d’ordonner cette mesure (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00194", "La contrainte judiciaire est une voie d’exécution qui permet, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00195", "en cas d’inexécution volontaire d’une condamnation pécuniaire, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00196", "d’incarcérer le condamné pour une durée déterminée. Elle succède ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00197", "à l’ancienne contrainte par corps. La loi du 9 mars 2004 a ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00198", "consacré le rôle du juge de l’application des peines chargé ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00199", "d’ordonner cette mesure ("),
                     ),
-                    _cpp("Article 749 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00200", "Article 749 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 8),
-                  const _SubTitle('2.2 - Conditions de mise en œuvre'),
-                  const _BulletPoint(
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00201", '2.2 - Conditions de mise en œuvre')),
+                   _BulletPoint(
                     text:
-                        "Inexécution volontaire de la condamnation pécuniaire par le "
-                        "condamné ;",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00202", "Inexécution volontaire de la condamnation pécuniaire par le ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00203", "condamné ;"),
                   ),
-                  const _BulletPoint(
+                   _BulletPoint(
                     text:
-                        "Condamnation consistant en une peine d’amende prononcée pour un "
-                        "crime ou un délit puni d’une peine d’emprisonnement ;",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00204", "Condamnation consistant en une peine d’amende prononcée pour un ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00205", "crime ou un délit puni d’une peine d’emprisonnement ;"),
                   ),
-                  const _BulletPoint(
+                   _BulletPoint(
                     text:
-                        "Ne s’applique pas lorsque seule une peine d’amende contraventionnelle est encourue.",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00206", "Ne s’applique pas lorsque seule une peine d’amende contraventionnelle est encourue."),
                   ),
                   const SizedBox(height: 8),
-                  const _SubTitle('2.3 - Personnes soumises à la contrainte'),
-                  const _Paragraph(
-                    "La contrainte judiciaire ne peut s’exercer que contre le délinquant "
-                    "dont la culpabilité a été judiciairement constatée (auteur, co-auteur "
-                    "ou complice).",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00207", '2.3 - Personnes soumises à la contrainte')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00208", "La contrainte judiciaire ne peut s’exercer que contre le délinquant ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00209", "dont la culpabilité a été judiciairement constatée (auteur, co-auteur ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00210", "ou complice)."),
                   ),
                   const SizedBox(height: 8),
-                  const _SubTitle('2.4 - Causes d’exemption'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00211", '2.4 - Causes d’exemption')),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Minorité pénale : la contrainte judiciaire ne peut être "
-                          "prononcée contre les mineurs de moins de 18 ans (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00212", "Minorité pénale : la contrainte judiciaire ne peut être ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00213", "prononcée contre les mineurs de moins de 18 ans ("),
                     ),
-                    _cpp("Article 751 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00214", "Article 751 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Personnes âgées : elle ne peut être exercée contre les débiteurs "
-                          "âgés d’au moins 65 ans à l’époque des faits (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00215", "Personnes âgées : elle ne peut être exercée contre les débiteurs ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00216", "âgés d’au moins 65 ans à l’époque des faits ("),
                     ),
-                    _cpp("Article 751 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00217", "Article 751 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Personnes insolvables : pas de contrainte judiciaire contre les "
-                          "condamnés qui justifient par tout moyen de leur insolvabilité (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00218", "Personnes insolvables : pas de contrainte judiciaire contre les ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00219", "condamnés qui justifient par tout moyen de leur insolvabilité ("),
                     ),
-                    _cpp("Article 752 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00220", "Article 752 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   _BulletPoint.rich([
-                    const TextSpan(text: "Époux : l’"),
-                    _cpp("Article 753 du Code de procédure pénale"),
-                    const TextSpan(
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00221", "Époux : l’")),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00222", "Article 753 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " interdit d’exercer simultanément la contrainte judiciaire "
-                          "contre deux époux, même en cas de condamnations différentes.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00223", " interdit d’exercer simultanément la contrainte judiciaire ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00224", "contre deux époux, même en cas de condamnations différentes."),
                     ),
                   ]),
                   const SizedBox(height: 8),
-                  const _SubTitle('2.5 - Procédure (Article 754 du C.P.P.)'),
-                  const _SubTitle('2.5.1 - Commandement'),
-                  const _Paragraph(
-                    "Avant toute incarcération, la partie poursuivante doit inviter une "
-                    "dernière fois le débiteur à payer : un commandement de payer lui est "
-                    "signifié sous peine de contrainte judiciaire.",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00225", '2.5 - Procédure (Article 754 du C.P.P.)')),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00226", '2.5.1 - Commandement')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00227", "Avant toute incarcération, la partie poursuivante doit inviter une ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00228", "dernière fois le débiteur à payer : un commandement de payer lui est ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00229", "signifié sous peine de contrainte judiciaire."),
                   ),
                   const SizedBox(height: 6),
-                  const _SubTitle('2.5.2 - Demande d’incarcération'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00230", '2.5.2 - Demande d’incarcération')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Si, dans l’année de la signification du commandement, le "
-                          "condamné n’a pas payé, le procureur de la République peut "
-                          "requérir le juge de l’application des peines pour qu’il "
-                          "prononce la contrainte judiciaire. La procédure se déroule en "
-                          "débat contradictoire (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00231", "Si, dans l’année de la signification du commandement, le ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00232", "condamné n’a pas payé, le procureur de la République peut ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00233", "requérir le juge de l’application des peines pour qu’il ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00234", "prononce la contrainte judiciaire. La procédure se déroule en ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00235", "débat contradictoire ("),
                     ),
-                    _cpp("Article 712-6 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00236", "Article 712-6 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('2.5.3 - Durée de la contrainte'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00237", '2.5.3 - Durée de la contrainte')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "La contrainte judiciaire est exclue lorsque le montant de "
-                          "l’amende est inférieur à 2 000 €. Au-delà, la durée maximale "
-                          "varie selon des tranches de montant (20 jours, 1 mois, 2 mois, "
-                          "3 mois), avec un plafond fixé notamment par l’",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00238", "La contrainte judiciaire est exclue lorsque le montant de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00239", "l’amende est inférieur à 2 000 €. Au-delà, la durée maximale ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00240", "varie selon des tranches de montant (20 jours, 1 mois, 2 mois, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00241", "3 mois), avec un plafond fixé notamment par l’"),
                     ),
-                    _cpp("Article 750 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00242", "Article 750 du Code de procédure pénale")),
                     const TextSpan(text: "."),
                   ]),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "En matière de trafic de stupéfiants, la durée maximale peut être "
-                          "portée à un an (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00243", "En matière de trafic de stupéfiants, la durée maximale peut être ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00244", "portée à un an ("),
                     ),
-                    _cpp("Article 706-31 alinéa 3 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00245", "Article 706-31 alinéa 3 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('2.5.4 - Fin de la contrainte'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00246", '2.5.4 - Fin de la contrainte')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "La libération peut être anticipée si le débiteur s’acquitte de "
-                          "sa dette, verse un acompte jugé suffisant ou fournit une "
-                          "caution reconnue bonne et valable. Néanmoins, la dette "
-                          "subsiste malgré l’exécution de la contrainte (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00247", "La libération peut être anticipée si le débiteur s’acquitte de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00248", "sa dette, verse un acompte jugé suffisant ou fournit une ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00249", "caution reconnue bonne et valable. Néanmoins, la dette ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00250", "subsiste malgré l’exécution de la contrainte ("),
                     ),
-                    _cpp("Article 761-1 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00251", "Article 761-1 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                 ],
@@ -710,213 +586,171 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               ////////////////////////////////////////////////
               _ConditionCard(
                 title:
-                    "Chapitre 3 : Les juridictions de l'application des peines",
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00252", "Chapitre 3 : Les juridictions de l'application des peines"),
                 cardColor: isDark
                     ? const Color(0xFF171822)
                     : const Color(0xFFE8EAF6),
                 accent: const Color(0xFF1A237E),
                 titleColor: isDark ? Colors.white : const Color(0xFF1A237E),
                 children: [
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "La loi n° 2000-516 du 15 juin 2000 a prévu la "
-                          "juridictionnalisation des décisions du juge de l'application "
-                          "des peines, notamment pour la semi-liberté, le placement à "
-                          "l’extérieur, le fractionnement et la suspension des peines et "
-                          "la libération conditionnelle. Toute décision d’octroi, "
-                          "d’ajournement, de refus, de retrait ou de révocation de ces "
-                          "mesures doit être prise après un débat contradictoire.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00253", "La loi n° 2000-516 du 15 juin 2000 a prévu la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00254", "juridictionnalisation des décisions du juge de l'application ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00255", "des peines, notamment pour la semi-liberté, le placement à ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00256", "l’extérieur, le fractionnement et la suspension des peines et ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00257", "la libération conditionnelle. Toute décision d’octroi, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00258", "d’ajournement, de refus, de retrait ou de révocation de ces ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00259", "mesures doit être prise après un débat contradictoire."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "La loi n° 2004-204 du 9 mars 2004 a clarifié les règles "
-                          "relatives à l’application des peines et renforcé la "
-                          "juridictionnalisation des mesures de milieu ouvert.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00260", "La loi n° 2004-204 du 9 mars 2004 a clarifié les règles ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00261", "relatives à l’application des peines et renforcé la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00262", "juridictionnalisation des mesures de milieu ouvert."),
                     ),
                   ]),
                   const SizedBox(height: 10),
 
-                  const _SubTitle(
-                    '3.1 - Juridictions de l’application des peines du premier degré',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00263", '3.1 - Juridictions de l’application des peines du premier degré'),
                   ),
-                  const _SubTitle(
-                    '3.1.1 - Le juge de l’application des peines',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00264", '3.1.1 - Le juge de l’application des peines'),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(text: "L’"),
-                    _cpp("Article 712-2 du Code de procédure pénale"),
-                    const TextSpan(
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00265", "L’")),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00266", "Article 712-2 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " prévoit que dans chaque tribunal judiciaire, un ou plusieurs "
-                          "magistrats du siège exercent les fonctions de juge de "
-                          "l’application des peines.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00267", " prévoit que dans chaque tribunal judiciaire, un ou plusieurs ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00268", "magistrats du siège exercent les fonctions de juge de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00269", "l’application des peines."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _Paragraph.rich([
+                   _Paragraph.rich([
                     TextSpan(
                       text:
-                          "Le juge de l’application des peines (JAP) fixe les principales "
-                          "modalités d’exécution des peines privatives ou restrictives de "
-                          "liberté et en contrôle les conditions d’application.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00270", "Le juge de l’application des peines (JAP) fixe les principales ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00271", "modalités d’exécution des peines privatives ou restrictives de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00272", "liberté et en contrôle les conditions d’application."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.1.1.1 - Décisions en milieu fermé'),
-                  const _Paragraph(
-                    "En milieu fermé, le JAP intervient notamment pour : le placement à "
-                    "l’extérieur, la semi-liberté, la suspension ou le fractionnement des "
-                    "peines, la détention à domicile sous surveillance électronique, la "
-                    "libération conditionnelle, après avis de la commission de "
-                    "l’application des peines.",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00273", '3.1.1.1 - Décisions en milieu fermé')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00274", "En milieu fermé, le JAP intervient notamment pour : le placement à ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00275", "l’extérieur, la semi-liberté, la suspension ou le fractionnement des ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00276", "peines, la détention à domicile sous surveillance électronique, la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00277", "libération conditionnelle, après avis de la commission de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00278", "l’application des peines."),
                   ),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.1.1.2 - Décisions en milieu ouvert'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00279", '3.1.1.2 - Décisions en milieu ouvert')),
                   _Paragraph.rich([
-                    const TextSpan(text: "En milieu ouvert, l’"),
-                    _cpp("Article 712-6 du Code de procédure pénale"),
-                    const TextSpan(
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00280", "En milieu ouvert, l’")),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00281", "Article 712-6 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " précise que le JAP détermine les conditions d’exécution de la "
-                          "peine en fonction de la situation du condamné (sursis "
-                          "probatoire, travail d’intérêt général, suivi socio-judiciaire, "
-                          "interdiction de séjour, etc.).",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00282", " précise que le JAP détermine les conditions d’exécution de la ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00283", "peine en fonction de la situation du condamné (sursis ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00284", "probatoire, travail d’intérêt général, suivi socio-judiciaire, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00285", "interdiction de séjour, etc.)."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.1.1.3 - Pouvoirs du JAP'),
-                  const _BulletPoint(
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00286", '3.1.1.3 - Pouvoirs du JAP')),
+                   _BulletPoint(
                     text:
-                        "Peut ordonner la suspension d’une mesure (semi-liberté, placement "
-                        "extérieur, détention à domicile sous surveillance électronique) "
-                        "en cas de non-respect des obligations ;",
+                        ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00287", "Peut ordonner la suspension d’une mesure (semi-liberté, placement ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00288", "extérieur, détention à domicile sous surveillance électronique) ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00289", "en cas de non-respect des obligations ;"),
                   ),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Peut ordonner l’incarcération provisoire du condamné après avis "
-                          "du procureur de la République dans certaines hypothèses (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00290", "Peut ordonner l’incarcération provisoire du condamné après avis ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00291", "du procureur de la République dans certaines hypothèses ("),
                     ),
-                    _cpp("Article 712-19 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00292", "Article 712-19 du Code de procédure pénale")),
                     const TextSpan(text: ");"),
                   ]),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Peut révoquer ou retirer les mesures prises en application des ",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00293", "Peut révoquer ou retirer les mesures prises en application des "),
                     ),
-                    _cpp("Articles 712-6 et 712-7 du Code de procédure pénale"),
-                    const TextSpan(
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00294", "Articles 712-6 et 712-7 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " lorsque le condamné ne respecte pas ses obligations (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00295", " lorsque le condamné ne respecte pas ses obligations ("),
                     ),
-                    _cpp("Article 712-20 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00296", "Article 712-20 du Code de procédure pénale")),
                     const TextSpan(text: ");"),
                   ]),
                   _BulletPoint.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Peut informer la victime ou la partie civile de ses droits et "
-                          "lui permettre de présenter des observations (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00297", "Peut informer la victime ou la partie civile de ses droits et ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00298", "lui permettre de présenter des observations ("),
                     ),
-                    _cpp("Article 712-16-1 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00299", "Article 712-16-1 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 8),
 
-                  const _SubTitle(
-                    '3.1.2 - Le tribunal de l’application des peines',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00300", '3.1.2 - Le tribunal de l’application des peines'),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(text: "L’"),
-                    _cpp("Article 712-3 du Code de procédure pénale"),
-                    const TextSpan(
+                     TextSpan(text: ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00301", "L’")),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00302", "Article 712-3 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          " prévoit que dans le ressort de chaque cour d’appel est établi "
-                          "un tribunal de l’application des peines (TAP).",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00303", " prévoit que dans le ressort de chaque cour d’appel est établi ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00304", "un tribunal de l’application des peines (TAP)."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.1.2.2 - Composition'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00305", '3.1.2.2 - Composition')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Le TAP est composé d’un président et de deux assesseurs, "
-                          "désignés parmi les juges de l’application des peines du ressort "
-                          "de la cour d’appel (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00306", "Le TAP est composé d’un président et de deux assesseurs, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00307", "désignés parmi les juges de l’application des peines du ressort ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00308", "de la cour d’appel ("),
                     ),
-                    _cpp("Article 712-10 alinéa 4 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00309", "Article 712-10 alinéa 4 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.1.2.3 - Compétence'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00310", '3.1.2.3 - Compétence')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Le TAP est compétent pour les mesures qui ne relèvent pas du "
-                          "JAP, en particulier pour les décisions relatives : au "
-                          "relèvement de la période de sûreté, à la libération "
-                          "conditionnelle des condamnés à des peines supérieures à 10 ans, "
-                          "à certaines suspensions de peine (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00311", "Le TAP est compétent pour les mesures qui ne relèvent pas du ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00312", "JAP, en particulier pour les décisions relatives : au ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00313", "relèvement de la période de sûreté, à la libération ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00314", "conditionnelle des condamnés à des peines supérieures à 10 ans, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00315", "à certaines suspensions de peine ("),
                     ),
-                    _cpp("Article 712-11 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00316", "Article 712-11 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.1.2.4 - Pouvoirs et voies de recours'),
-                  const _Paragraph(
-                    "Les décisions du TAP sont exécutoires par provision. Lorsque "
-                    "l’appel du ministère public est formé dans les 24 heures, il est "
-                    "suspensif. Les décisions peuvent être attaquées par la voie de "
-                    "l’appel par le condamné, le procureur de la République ou le "
-                    "procureur général.",
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00317", '3.1.2.4 - Pouvoirs et voies de recours')),
+                   _Paragraph(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00318", "Les décisions du TAP sont exécutoires par provision. Lorsque ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00319", "l’appel du ministère public est formé dans les 24 heures, il est ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00320", "suspensif. Les décisions peuvent être attaquées par la voie de ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00321", "l’appel par le condamné, le procureur de la République ou le ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00322", "procureur général."),
                   ),
                   const SizedBox(height: 10),
 
-                  const _SubTitle(
-                    '3.2 - La chambre de l’application des peines',
+                   _SubTitle(
+                    ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00323", '3.2 - La chambre de l’application des peines'),
                   ),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "La chambre de l’application des peines de la cour d’appel est "
-                          "compétente pour connaître des appels formés contre les décisions "
-                          "du JAP et du TAP (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00324", "La chambre de l’application des peines de la cour d’appel est ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00325", "compétente pour connaître des appels formés contre les décisions ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00326", "du JAP et du TAP ("),
                     ),
-                    _cpp("Article 712-13 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00327", "Article 712-13 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.2.2 - Composition'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00328", '3.2.2 - Composition')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "Elle est composée d’un président et de deux conseillers. Pour "
-                          "certains jugements (notamment ceux de l’",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00329", "Elle est composée d’un président et de deux conseillers. Pour ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00330", "certains jugements (notamment ceux de l’"),
                     ),
-                    _cpp("Article 712-7 du Code de procédure pénale"),
-                    const TextSpan(
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00331", "Article 712-7 du Code de procédure pénale")),
+                     TextSpan(
                       text:
-                          "), la chambre peut être complétée par un responsable d’une "
-                          "association de réinsertion et un responsable d’une association "
-                          "d’aide aux victimes.",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00332", "), la chambre peut être complétée par un responsable d’une ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00333", "association de réinsertion et un responsable d’une association ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00334", "d’aide aux victimes."),
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  const _SubTitle('3.2.3 - Décisions'),
+                   _SubTitle(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00335", '3.2.3 - Décisions')),
                   _Paragraph.rich([
-                    const TextSpan(
+                     TextSpan(
                       text:
-                          "La chambre de l’application des peines statue par arrêt motivé "
-                          "après débat contradictoire. Les arrêts peuvent faire l’objet, "
-                          "dans les 5 jours de leur notification, d’un pourvoi en "
-                          "cassation non suspensif (",
+                          ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00336", "La chambre de l’application des peines statue par arrêt motivé ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00337", "après débat contradictoire. Les arrêts peuvent faire l’objet, ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00338", "dans les 5 jours de leur notification, d’un pourvoi en ") + ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00339", "cassation non suspensif ("),
                     ),
-                    _cpp("Article 712-15 du Code de procédure pénale"),
+                    _cpp(ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00340", "Article 712-15 du Code de procédure pénale")),
                     const TextSpan(text: ")."),
                   ]),
                 ],
@@ -925,7 +759,7 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
               const SizedBox(height: 24),
               Center(
                 child: Text(
-                  '© COPIQ - Tous droits réservés',
+                  ScolariteText.value("lib/content/gpx_scolarite/dps_dpg/procédure_pénale_pages/juridictions_execution_decisions_justice_page.dart", "f00341", '© COPIQ - Tous droits réservés'),
                   style: GoogleFonts.fustat(
                     fontSize: 11,
                     fontWeight: FontWeight.w500,

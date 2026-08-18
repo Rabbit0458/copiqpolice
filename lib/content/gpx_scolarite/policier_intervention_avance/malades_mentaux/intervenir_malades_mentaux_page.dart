@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class IntervenirMaladesMentauxPage extends StatelessWidget {
   const IntervenirMaladesMentauxPage({super.key});
@@ -50,7 +51,11 @@ class IntervenirMaladesMentauxPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
           "Intervention",
@@ -68,7 +73,11 @@ class IntervenirMaladesMentauxPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Intervenir auprès de personnes ne jouissant pas de toutes leurs capacités mentales",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+              "f00002",
+              "Intervenir auprès de personnes ne jouissant pas de toutes leurs capacités mentales",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,11 +93,23 @@ class IntervenirMaladesMentauxPage extends StatelessWidget {
             cardColor: cardGen,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Si la plupart des urgences sont dues à l’alcoolisme (notamment en violences intra-familiales), "
-                "le gardien de la paix peut aussi être confronté à des usagers dont le comportement incohérent "
-                "traduit des difficultés de type psychiatrique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00003",
+                      "Si la plupart des urgences sont dues à l’alcoolisme (notamment en violences intra-familiales), ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00004",
+                      "le gardien de la paix peut aussi être confronté à des usagers dont le comportement incohérent ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00005",
+                      "traduit des difficultés de type psychiatrique.",
+                    ),
               ),
             ],
           ),
@@ -97,29 +118,48 @@ class IntervenirMaladesMentauxPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (sans inventer de texte juridique)
           _ConditionCard(
-            title: "I — Cadre légal (référence du support)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+              "f00006",
+              "I — Cadre légal (référence du support)",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 title: "NOTE",
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Dans l’extrait fourni, aucun article de loi n’est cité. "
-                        "Si tu me donnes les références (CPP / CP / CSI / CSP…), je les intégrerai ici et elles seront affichées en rouge.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                          "f00007",
+                          "Dans l’extrait fourni, aucun article de loi n’est cité. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                          "f00008",
+                          "Si tu me donnes les références (CPP / CP / CSI / CSP…), je les intégrerai ici et elles seront affichées en rouge.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Rappel visuel : un article affiché en rouge ressemble à ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                    "f00009",
+                    "Rappel visuel : un article affiché en rouge ressemble à ",
+                  ),
                 ),
                 TextSpan(
-                  text: "Article 123 du Code de procédure pénale",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                    "f00010",
+                    "Article 123 du Code de procédure pénale",
+                  ),
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
@@ -131,38 +171,102 @@ class IntervenirMaladesMentauxPage extends StatelessWidget {
 
           // I. CARACTÉRISTIQUES GÉNÉRALES
           _ConditionCard(
-            title: "II — Caractéristiques générales",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+              "f00011",
+              "II — Caractéristiques générales",
+            ),
             cardColor: cardGen,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour faciliter la relation, il faut garder à l’esprit qu’un malade mental est avant tout "
-                "quelqu’un qui souffre (angoisse) et dont la compréhension ordinaire de l’environnement est rompue.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00012",
+                      "Pour faciliter la relation, il faut garder à l’esprit qu’un malade mental est avant tout ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00013",
+                      "quelqu’un qui souffre (angoisse) et dont la compréhension ordinaire de l’environnement est rompue.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Perception de l’entourage"),
-              _IntroBullet(text: "Soit partiellement décalée."),
-              _IntroBullet(text: "Soit complètement distordue."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00014",
+                  "Perception de l’entourage",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00015",
+                  "Soit partiellement décalée.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00016",
+                  "Soit complètement distordue.",
+                ),
+              ),
               SizedBox(height: 10),
               _Paragraph(
-                "Cette perception entraîne régulièrement des difficultés de communication.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00017",
+                  "Cette perception entraîne régulièrement des difficultés de communication.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Dangerosité : attention aux idées reçues"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00018",
+                  "Dangerosité : attention aux idées reçues",
+                ),
+              ),
               _Paragraph(
-                "Les personnes les plus dangereuses (pour elles-mêmes ou pour autrui) ne sont pas forcément celles "
-                "qui crient ou s’agitent le plus. Un malade mental, surtout s’il est étranger, peut crier pour se faire "
-                "« mieux comprendre » : le plus spectaculaire n’est pas toujours le plus dangereux.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00019",
+                      "Les personnes les plus dangereuses (pour elles-mêmes ou pour autrui) ne sont pas forcément celles ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00020",
+                      "qui crient ou s’agitent le plus. Un malade mental, surtout s’il est étranger, peut crier pour se faire ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00021",
+                      "« mieux comprendre » : le plus spectaculaire n’est pas toujours le plus dangereux.",
+                    ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "À l’inverse, une personne apathique n’est pas forcément inoffensive, et une personne muette "
-                        "n’a pas forcément « quelque chose à cacher ». L’angoisse peut paralyser l’expression, parfois "
-                        "de manière ponctuelle, puis laisser place à un désordre comportemental important.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                          "f00022",
+                          "À l’inverse, une personne apathique n’est pas forcément inoffensive, et une personne muette ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                          "f00023",
+                          "n’a pas forcément « quelque chose à cacher ». L’angoisse peut paralyser l’expression, parfois ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                          "f00024",
+                          "de manière ponctuelle, puis laisser place à un désordre comportemental important.",
+                        ),
                   ),
                 ],
               ),
@@ -173,47 +277,95 @@ class IntervenirMaladesMentauxPage extends StatelessWidget {
 
           // II. AVANT L'INTERVENTION
           _ConditionCard(
-            title: "III — Avant l’intervention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+              "f00025",
+              "III — Avant l’intervention",
+            ),
             cardColor: cardBefore,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Pour éviter des erreurs aux conséquences parfois graves, il est conseillé de se renseigner le plus "
-                "possible avant la prise de contact : sur la personne et sur son entourage.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00026",
+                      "Pour éviter des erreurs aux conséquences parfois graves, il est conseillé de se renseigner le plus ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00027",
+                      "possible avant la prise de contact : sur la personne et sur son entourage.",
+                    ),
               ),
               SizedBox(height: 10),
-              _SubTitle("Objectifs des renseignements"),
-              _BulletPoint(
-                text:
-                    "Comprendre le contexte : antécédents de tentative de suicide, d’agression, épisodes récents, déclencheur.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00028",
+                  "Objectifs des renseignements",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Identifier les personnes ressources : proches, référents, habitudes de communication.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00029",
+                  "Comprendre le contexte : antécédents de tentative de suicide, d’agression, épisodes récents, déclencheur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Accélérer une prise en charge adaptée en contactant les personnes compétentes.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00030",
+                  "Identifier les personnes ressources : proches, référents, habitudes de communication.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00031",
+                  "Accélérer une prise en charge adaptée en contactant les personnes compétentes.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Personnes compétentes à mobiliser"),
-              _Paragraph("Deux types de personnes peuvent aider :"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00032",
+                  "Personnes compétentes à mobiliser",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00033",
+                  "Deux types de personnes peuvent aider :",
+                ),
+              ),
               SizedBox(height: 8),
               _BulletPoint(
-                text:
-                    "Compétentes affectivement : mère, époux/épouse, ami(e)… (ils savent souvent « comment le prendre »).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00034",
+                  "Compétentes affectivement : mère, époux/épouse, ami(e)… (ils savent souvent « comment le prendre »).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Compétentes professionnellement : médecin habituel, spécialiste.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00035",
+                  "Compétentes professionnellement : médecin habituel, spécialiste.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Ces informations facilitent aussi le dialogue en attendant l’intervention des personnes compétentes.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00036",
+                      "Ces informations facilitent aussi le dialogue en attendant l’intervention des personnes compétentes.",
+                    ),
                   ),
                 ],
               ),
@@ -224,56 +376,118 @@ class IntervenirMaladesMentauxPage extends StatelessWidget {
 
           // III. CONSEILS PRATIQUES
           _ConditionCard(
-            title: "IV — Conseils pratiques (sur place)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+              "f00037",
+              "IV — Conseils pratiques (sur place)",
+            ),
             cardColor: cardPrat,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Communication & ambiance"),
-              _BulletPoint(
-                text:
-                    "Ne jamais laisser la personne crier seule : parler calmement, maintenir le dialogue, garder un environnement éclairé.",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00038",
+                  "Communication & ambiance",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Éviter le silence et l’obscurité : ils augmentent l’angoisse et peuvent aggraver l’incohérence du comportement.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00039",
+                  "Ne jamais laisser la personne crier seule : parler calmement, maintenir le dialogue, garder un environnement éclairé.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00040",
+                  "Éviter le silence et l’obscurité : ils augmentent l’angoisse et peuvent aggraver l’incohérence du comportement.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Posture professionnelle"),
-              _BulletPoint(
-                text:
-                    "Rester neutre, courtois, et éviter toute ironie ou moquerie sur le comportement.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00041",
+                  "Posture professionnelle",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Proscrire toute grivoiserie ou remarque à connotation sexuelle (risque de perception fantasmatique : viol, insultes, menace…).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00042",
+                  "Rester neutre, courtois, et éviter toute ironie ou moquerie sur le comportement.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00043",
+                  "Proscrire toute grivoiserie ou remarque à connotation sexuelle (risque de perception fantasmatique : viol, insultes, menace…).",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Vérité & confiance"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00044",
+                  "Vérité & confiance",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Ne pas mentir : mieux vaut mesurer la vérité que l’on peut dire plutôt que d’inventer une version rapidement démasquée.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00045",
+                  "Ne pas mentir : mieux vaut mesurer la vérité que l’on peut dire plutôt que d’inventer une version rapidement démasquée.",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Exemple : il peut être plus sécurisant d’indiquer une conduite vers l’hôpital (lieu perçu comme « sécurisé ») "
-                        "plutôt que de raconter des mensonges. Le mensonge augmente souvent l’angoisse, donc les cris et la gesticulation.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                          "f00046",
+                          "Exemple : il peut être plus sécurisant d’indiquer une conduite vers l’hôpital (lieu perçu comme « sécurisé ») ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                          "f00047",
+                          "plutôt que de raconter des mensonges. Le mensonge augmente souvent l’angoisse, donc les cris et la gesticulation.",
+                        ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
-              _SubTitle("Fermeté & sécurité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00048",
+                  "Fermeté & sécurité",
+                ),
+              ),
               _Paragraph(
-                "Ces principes n’excluent pas la fermeté si nécessaire, ni l’usage d’une force strictement adaptée "
-                "pour éviter tout danger à la personne et aux tiers.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00049",
+                      "Ces principes n’excluent pas la fermeté si nécessaire, ni l’usage d’une force strictement adaptée ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                      "f00050",
+                      "pour éviter tout danger à la personne et aux tiers.",
+                    ),
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Dédramatiser autant que possible (vis-à-vis du malade et de l’entourage), sans perdre de vue la sécurité de tous.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart",
+                  "f00051",
+                  "Dédramatiser autant que possible (vis-à-vis du malade et de l’entourage), sans perdre de vue la sécurité de tous.",
+                ),
               ),
             ],
           ),

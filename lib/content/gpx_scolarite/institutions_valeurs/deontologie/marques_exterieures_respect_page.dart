@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class MarquesExterieuresRespectPage extends StatelessWidget {
   const MarquesExterieuresRespectPage({super.key});
@@ -50,10 +51,18 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Déontologie",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+            "f00002",
+            "Déontologie",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -68,7 +77,11 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Les marques extérieures de respect",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00003",
+              "Les marques extérieures de respect",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -84,11 +97,23 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Agissant en uniforme, les policiers doivent adopter un comportement net et irréprochable, "
-                "tel qu’attendu des agents de l’autorité. Cela implique notamment la maîtrise des gestes "
-                "de salut et de présentation, exécutés avec précision et tenue.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00004",
+                      "Agissant en uniforme, les policiers doivent adopter un comportement net et irréprochable, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00005",
+                      "tel qu’attendu des agents de l’autorité. Cela implique notamment la maîtrise des gestes ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00006",
+                      "de salut et de présentation, exécutés avec précision et tenue.",
+                    ),
               ),
             ],
           ),
@@ -97,28 +122,39 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
 
           // ✅ Élément légal en haut (même si la notion est “déonto/usage”, tu voulais un encart légal en premier)
           _ConditionCard(
-            title: "Référence réglementaire",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00007",
+              "Référence réglementaire",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Règlement général d’emploi (RGE) de la Police nationale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                    "f00008",
+                    "Règlement général d’emploi (RGE) de la Police nationale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : encadre les usages, appellations et règles de tenue/comportement (salut, présentation, respect de la hiérarchie).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                    "f00009",
+                    " : encadre les usages, appellations et règles de tenue/comportement (salut, présentation, respect de la hiérarchie).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Objectif : garantir une attitude professionnelle, lisible et respectueuse, autant envers la hiérarchie qu’envers le public.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00010",
+                  "Objectif : garantir une attitude professionnelle, lisible et respectueuse, autant envers la hiérarchie qu’envers le public.",
+                ),
               ),
             ],
           ),
@@ -127,20 +163,46 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
 
           // I — Le salut
           _ConditionCard(
-            title: "I — Le salut",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00011",
+              "I — Le salut",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "En uniforme, le salut est une marque de respect, de politesse et de considération envers tout interlocuteur. "
-                "Une exécution parfaite traduit la disponibilité et l’attention du policier.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00012",
+                      "En uniforme, le salut est une marque de respect, de politesse et de considération envers tout interlocuteur. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00013",
+                      "Une exécution parfaite traduit la disponibilité et l’attention du policier.",
+                    ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Sens et particularité (Police nationale)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00014",
+                  "Sens et particularité (Police nationale)",
+                ),
+              ),
               _Paragraph(
-                "Le salut se distingue du salut militaire : il exprime à la fois le respect dû à la hiérarchie "
-                "et un signe de courtoisie à l’égard du public.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00015",
+                      "Le salut se distingue du salut militaire : il exprime à la fois le respect dû à la hiérarchie ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00016",
+                      "et un signe de courtoisie à l’égard du public.",
+                    ),
               ),
             ],
           ),
@@ -148,23 +210,49 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "A) Une marque de respect",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00017",
+              "A) Une marque de respect",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Le salut est dû à tout supérieur, qu’il soit en civil ou en tenue.",
-              ),
-              _BulletPoint(text: "Il est également dû au drapeau."),
-              _BulletPoint(text: "Il est dû aux membres du corps préfectoral."),
-              _BulletPoint(
-                text: "Il est dû aux officiers de l’armée française.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00018",
+                  "Le salut est dû à tout supérieur, qu’il soit en civil ou en tenue.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Par extension : les autorités politiques et judiciaires sont saluées.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00019",
+                  "Il est également dû au drapeau.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00020",
+                  "Il est dû aux membres du corps préfectoral.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00021",
+                  "Il est dû aux officiers de l’armée française.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00022",
+                  "Par extension : les autorités politiques et judiciaires sont saluées.",
+                ),
               ),
             ],
           ),
@@ -172,14 +260,26 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "B) Un signe de courtoisie",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00023",
+              "B) Un signe de courtoisie",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Une pratique de la Police nationale veut qu’un salut bref marque, sur la voie publique, "
-                "la prise de contact avec la personne qui requiert l’intervention du policier.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00024",
+                      "Une pratique de la Police nationale veut qu’un salut bref marque, sur la voie publique, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00025",
+                      "la prise de contact avec la personne qui requiert l’intervention du policier.",
+                    ),
               ),
             ],
           ),
@@ -188,14 +288,26 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
 
           // II — Présentation
           _ConditionCard(
-            title: "II — La présentation",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00026",
+              "II — La présentation",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "La présentation s’entend de l’entrée dans un bureau, après y avoir été invité. "
-                "Elle suit une logique simple : posture, salut, annonce, puis attente des ordres.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00027",
+                      "La présentation s’entend de l’entrée dans un bureau, après y avoir été invité. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00028",
+                      "Elle suit une logique simple : posture, salut, annonce, puis attente des ordres.",
+                    ),
               ),
             ],
           ),
@@ -204,36 +316,80 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
 
           // Déroulé pratique (pédagogique + visuel)
           _ConditionCard(
-            title: "Déroulé pratique (étapes)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00029",
+              "Déroulé pratique (étapes)",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
-              _SubTitle("1) Entrée et tenue"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00030",
+                  "1) Entrée et tenue",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Se mettre au garde à vous, saluer, puis enlever la coiffure.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00031",
+                  "Se mettre au garde à vous, saluer, puis enlever la coiffure.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("2) Présentation proprement dite"),
-              _BulletPoint(
-                text: "Énoncer : grade, nom, prénom, section ou peloton.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00032",
+                  "2) Présentation proprement dite",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Adapter la formule à l’autorité rencontrée (voir encadré ci-dessous).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00033",
+                  "Énoncer : grade, nom, prénom, section ou peloton.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00034",
+                  "Adapter la formule à l’autorité rencontrée (voir encadré ci-dessous).",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("3) Suite de l’entretien"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00035",
+                  "3) Suite de l’entretien",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Se mettre au repos (sur ordre), exposer les faits, puis attendre l’ordre de disposition.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00036",
+                  "Se mettre au repos (sur ordre), exposer les faits, puis attendre l’ordre de disposition.",
+                ),
               ),
               SizedBox(height: 10),
-              _SubTitle("4) Sortie"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00037",
+                  "4) Sortie",
+                ),
+              ),
               _BulletPoint(
-                text:
-                    "Reprendre le garde à vous, se coiffer, saluer, puis sortir.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00038",
+                  "Reprendre le garde à vous, se coiffer, saluer, puis sortir.",
+                ),
               ),
             ],
           ),
@@ -242,21 +398,58 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
 
           // Formules (encadré propre)
           _ConditionCard(
-            title: "Formules usuelles",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00039",
+              "Formules usuelles",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Formule « à vos ordres »"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00040",
+                  "Formule « à vos ordres »",
+                ),
+              ),
               _IntroBullet(
-                text:
-                    "Commandant, capitaine, lieutenant, major, brigadier-chef.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00041",
+                  "Commandant, capitaine, lieutenant, major, brigadier-chef.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Formule « Mes respects »"),
-              _IntroBullet(text: "M. ou Mme le directeur."),
-              _IntroBullet(text: "M. ou Mme le commissaire divisionnaire."),
-              _IntroBullet(text: "M. ou Mme le commissaire de police."),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00042",
+                  "Formule « Mes respects »",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00043",
+                  "M. ou Mme le directeur.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00044",
+                  "M. ou Mme le commissaire divisionnaire.",
+                ),
+              ),
+              _IntroBullet(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                  "f00045",
+                  "M. ou Mme le commissaire de police.",
+                ),
+              ),
             ],
           ),
 
@@ -264,20 +457,36 @@ class MarquesExterieuresRespectPage extends StatelessWidget {
 
           // Nota (exigence appellations)
           _ConditionCard(
-            title: "Point d’attention",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+              "f00046",
+              "Point d’attention",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Il est admis, dans la pratique, de s’adresser à un supérieur en disant « Mr le divisionnaire » au lieu de « Mr le commissaire divisionnaire ». "
-                        "Toutefois, la hiérarchie peut exiger les appellations usuelles conformes au ",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                          "f00047",
+                          "Il est admis, dans la pratique, de s’adresser à un supérieur en disant « Mr le divisionnaire » au lieu de « Mr le commissaire divisionnaire ». ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                          "f00048",
+                          "Toutefois, la hiérarchie peut exiger les appellations usuelles conformes au ",
+                        ),
                   ),
                   TextSpan(
-                    text: "règlement général d’emploi de la Police nationale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/institutions_valeurs/deontologie/marques_exterieures_respect_page.dart",
+                      "f00049",
+                      "règlement général d’emploi de la Police nationale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -540,9 +749,7 @@ class _NotaBox extends StatelessWidget {
                 ? Colors.white70
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
-          children: [
-            ...bodySpans,
-          ],
+          children: [...bodySpans],
         ),
       ),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AmendeForfaitaireDelictuellePage extends StatelessWidget {
   const AmendeForfaitaireDelictuellePage({super.key});
@@ -59,10 +60,18 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Procédures — circulation",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+            "f00002",
+            "Procédures — circulation",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’amende forfaitaire délictuelle (A.F.D.)",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00003",
+              "L’amende forfaitaire délictuelle (A.F.D.)",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,44 +102,50 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00004",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Articles L. 221-2 et L. 324-2 du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00005",
+                    "Articles L. 221-2 et L. 324-2 du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ; "),
                 TextSpan(
-                  text: "articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00006",
+                    "articles 495-17 à 495-25 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ; "),
                 TextSpan(
-                  text:
-                      "articles D. 45-3 à D. 45-21 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00007",
+                    "articles D. 45-3 à D. 45-21 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " ; "),
                 TextSpan(
-                  text:
-                      "articles A. 36-14 à A. 36-18 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00008",
+                    "articles A. 36-14 à A. 36-18 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -134,8 +153,11 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
               _NotaBox(
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00009",
+                      "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
+                    ),
                   ),
                 ],
               ),
@@ -146,33 +168,58 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
 
           // Cadre + info au contrevenant
           _ConditionCard(
-            title: "II — Cadre & information du contrevenant",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00010",
+              "II — Cadre & information du contrevenant",
+            ),
             cardColor: cardCadre,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les délits concernés sont constatés par procès-verbal électronique (PVe). "
-                "Au moment de la verbalisation, l’intéressé doit être avisé (mention inscrite dans le PVe) :",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00011",
+                      "Les délits concernés sont constatés par procès-verbal électronique (PVe). ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00012",
+                      "Au moment de la verbalisation, l’intéressé doit être avisé (mention inscrite dans le PVe) :",
+                    ),
               ),
               SizedBox(height: 8),
               _IntroBullet(
-                text:
-                    "Qu’il recevra par lettre simple à son domicile : avis d’amende forfaitaire, notice de paiement et formulaire de requête en exonération.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00013",
+                  "Qu’il recevra par lettre simple à son domicile : avis d’amende forfaitaire, notice de paiement et formulaire de requête en exonération.",
+                ),
               ),
               _IntroBullet(
-                text:
-                    "Qu’il peut payer immédiatement l’A.F.D. minorée entre les mains de l’agent verbalisateur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00014",
+                  "Qu’il peut payer immédiatement l’A.F.D. minorée entre les mains de l’agent verbalisateur.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Référence paiement immédiat : "),
                 TextSpan(
-                  text: "article A. 37-27-6 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00015",
+                    "Référence paiement immédiat : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00016",
+                    "article A. 37-27-6 du Code de procédure pénale",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
@@ -183,26 +230,49 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
 
           // Délits concernés
           _ConditionCard(
-            title: "III — Délits concernés (A.F.D.)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00017",
+              "III — Délits concernés (A.F.D.)",
+            ),
             cardColor: cardInfra,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Délits pouvant donner lieu à A.F.D."),
-              _BulletPoint(
-                text: "Conduite d’un véhicule sans permis (Natinf 7536).",
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00018",
+                  "Délits pouvant donner lieu à A.F.D.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conduite avec un permis d’une catégorie n’autorisant pas la conduite du véhicule (Natinf 22872).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00019",
+                  "Conduite d’un véhicule sans permis (Natinf 7536).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conduite d’un véhicule terrestre à moteur sans assurance (Natinf 6163).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00020",
+                  "Conduite avec un permis d’une catégorie n’autorisant pas la conduite du véhicule (Natinf 22872).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Entrave à la circulation des véhicules sur une voie publique (Natinf 2271).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00021",
+                  "Conduite d’un véhicule terrestre à moteur sans assurance (Natinf 6163).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00022",
+                  "Entrave à la circulation des véhicules sur une voie publique (Natinf 2271).",
+                ),
               ),
             ],
           ),
@@ -211,94 +281,178 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
 
           // Exclusions / impossibilité AFD
           _ConditionCard(
-            title: "IV — Cas d’exclusion (A.F.D. impossible)",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00023",
+              "IV — Cas d’exclusion (A.F.D. impossible)",
+            ),
             cardColor: cardExclu,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "L’A.F.D. ne peut pas être mise en œuvre si l’auteur des faits :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00024",
+                  "L’A.F.D. ne peut pas être mise en œuvre si l’auteur des faits :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "N’est pas formellement identifié."),
-              _BulletPoint(text: "Est mineur."),
               _BulletPoint(
-                text:
-                    "Présente une difficulté de compréhension (pas dans un état normal, ne maîtrise pas la langue française, discernement altéré, majeur protégé).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00025",
+                  "N’est pas formellement identifié.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Est en état de récidive légale (même délit ou délit assimilé).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00026",
+                  "Est mineur.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00027",
+                  "Présente une difficulté de compréhension (pas dans un état normal, ne maîtrise pas la langue française, discernement altéré, majeur protégé).",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00028",
+                  "Est en état de récidive légale (même délit ou délit assimilé).",
+                ),
               ),
               SizedBox(height: 10),
               _NotaBox(
                 title: "TAJ",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "La consultation préalable du traitement des antécédents judiciaires (T.A.J.) est impérative.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00029",
+                      "La consultation préalable du traitement des antécédents judiciaires (T.A.J.) est impérative.",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 12),
               _Paragraph.rich([
-                TextSpan(text: "Récidive (délai 5 ans) : "),
                 TextSpan(
-                  text: "article 132-10 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00030",
+                    "Récidive (délai 5 ans) : ",
                   ),
                 ),
                 TextSpan(
-                  text:
-                      " — sauf délits ayant déjà fait l’objet d’une A.F.D. (une succession d’A.F.D. pour le même délit est possible).",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00031",
+                    "article 132-10 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00032",
+                    " — sauf délits ayant déjà fait l’objet d’une A.F.D. (une succession d’A.F.D. pour le même délit est possible).",
+                  ),
                 ),
               ]),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Délits assimilés : "),
                 TextSpan(
-                  text: "article 132-16-2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00033",
+                    "Délits assimilés : ",
                   ),
                 ),
-                TextSpan(text: " (exemples listés ci-dessous)."),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00034",
+                    "article 132-16-2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00035",
+                    " (exemples listés ci-dessous).",
+                  ),
+                ),
               ]),
               SizedBox(height: 8),
               _BulletPoint(
-                text: "Défaut de permis de conduire : L. 221-2 C. route.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00036",
+                  "Défaut de permis de conduire : L. 221-2 C. route.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "CEEA / CEI / refus de se soumettre aux vérifications : L. 234-1 C. route.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00037",
+                  "CEEA / CEI / refus de se soumettre aux vérifications : L. 234-1 C. route.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Conduite après usage de stupéfiants / refus de vérifications : L. 235-1 C. route.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00038",
+                  "Conduite après usage de stupéfiants / refus de vérifications : L. 235-1 C. route.",
+                ),
               ),
               _BulletPoint(
-                text: "Délit de grande vitesse : L. 413-1 C. route.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00039",
+                  "Délit de grande vitesse : L. 413-1 C. route.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Refus d’obtempérer (y compris aggravé) : L. 233-1 et L. 233-1-1 C. route.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00040",
+                  "Refus d’obtempérer (y compris aggravé) : L. 233-1 et L. 233-1-1 C. route.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("Autres situations excluant l’A.F.D."),
-              _BulletPoint(
-                text:
-                    "Si le délit n’est pas constaté sur les lieux du contrôle et en présence du conducteur (ex : constaté après enquête suite à non présentation / non justification).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00041",
+                  "Autres situations excluant l’A.F.D.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En cas de commission de plusieurs infractions dont l’une au moins ne peut donner lieu à amende forfaitaire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00042",
+                  "Si le délit n’est pas constaté sur les lieux du contrôle et en présence du conducteur (ex : constaté après enquête suite à non présentation / non justification).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "En cas de commission simultanée des délits de défaut d’assurance et de défaut de permis de conduire.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00043",
+                  "En cas de commission de plusieurs infractions dont l’une au moins ne peut donner lieu à amende forfaitaire.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00044",
+                  "En cas de commission simultanée des délits de défaut d’assurance et de défaut de permis de conduire.",
+                ),
               ),
             ],
           ),
@@ -307,34 +461,49 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
 
           // Montants
           _ConditionCard(
-            title: "V — Montant de l’amende",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00045",
+              "V — Montant de l’amende",
+            ),
             cardColor: cardMontants,
             accent: accentPink,
             titleColor: textMain,
             children: [
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Références : L. 221-2 IV et L. 324-2 IV du Code de la route",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00046",
+                    "Références : L. 221-2 IV et L. 324-2 IV du Code de la route",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
               _AfdAmountTable(isDark: isDark),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Assurance — majoration FGAO",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00047",
+                  "Assurance — majoration FGAO",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Pour le délit de circulation sans assurance : majoration de 50% au profit du fonds de garantie des assurances obligatoires de dommages (FGAO). Références : ",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00048",
+                      "Pour le délit de circulation sans assurance : majoration de 50% au profit du fonds de garantie des assurances obligatoires de dommages (FGAO). Références : ",
+                    ),
                   ),
                   TextSpan(
-                    text: "article D. 45-5 du Code de procédure pénale",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00049",
+                      "article D. 45-5 du Code de procédure pénale",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -342,7 +511,11 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
                   ),
                   TextSpan(text: " et "),
                   TextSpan(
-                    text: "article L. 211-27 du Code des assurances",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00050",
+                      "article L. 211-27 du Code des assurances",
+                    ),
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
@@ -350,8 +523,11 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
                   ),
                   TextSpan(text: ". "),
                   TextSpan(
-                    text:
-                        "Montants portés à 600 € (minorée), 750 € (ordinaire) et 1 500 € (majorée).",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00051",
+                      "Montants portés à 600 € (minorée), 750 € (ordinaire) et 1 500 € (majorée).",
+                    ),
                     style: TextStyle(fontWeight: FontWeight.w800),
                   ),
                 ],
@@ -363,76 +539,118 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
 
           // Paiement / contestation
           _ConditionCard(
-            title: "VI — Paiement ou contestation de l’A.F.D.",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00052",
+              "VI — Paiement ou contestation de l’A.F.D.",
+            ),
             cardColor: cardPaiement,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Les délais de paiement / contestation et les modalités de paiement sont identiques à ceux de l’amende forfaitaire contraventionnelle.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00053",
+                  "Les délais de paiement / contestation et les modalités de paiement sont identiques à ceux de l’amende forfaitaire contraventionnelle.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
-                  text:
-                      "Références : article D. 45-8 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00054",
+                    "Références : article D. 45-8 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "article R. 49-3 du Code de procédure pénale",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00055",
+                    "article R. 49-3 du Code de procédure pénale",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
               _Paragraph(
-                "Les conditions de recevabilité (requête en exonération / réclamation), ainsi que les modalités de consignation (hors cas d’exonération) sont précisées dans les documents reçus (formulaire / avis d’amende majorée).",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00056",
+                  "Les conditions de recevabilité (requête en exonération / réclamation), ainsi que les modalités de consignation (hors cas d’exonération) sont précisées dans les documents reçus (formulaire / avis d’amende majorée).",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
-                title: "Dispense de consignation",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00057",
+                  "Dispense de consignation",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "L’auteur de la requête (ou réclamation) est dispensé du paiement de la consignation s’il adresse :",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                      "f00058",
+                      "L’auteur de la requête (ou réclamation) est dispensé du paiement de la consignation s’il adresse :",
+                    ),
                   ),
                 ],
               ),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Une photocopie du permis de conduire en cours de validité à la date de constatation des faits.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00059",
+                  "Une photocopie du permis de conduire en cours de validité à la date de constatation des faits.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Une photocopie d’une attestation d’assurance en cours de validité à la date de constatation des faits.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00060",
+                  "Une photocopie d’une attestation d’assurance en cours de validité à la date de constatation des faits.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Le récépissé de dépôt de plainte pour usurpation d’identité.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                  "f00061",
+                  "Le récépissé de dépôt de plainte pour usurpation d’identité.",
+                ),
               ),
               SizedBox(height: 10),
               _Paragraph.rich([
-                TextSpan(text: "Usurpation d’identité : "),
                 TextSpan(
-                  text: "article 434-23 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00062",
+                    "Usurpation d’identité : ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00063",
+                    "article 434-23 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 12),
               _Paragraph.rich([
-                TextSpan(text: "Mis à jour le "),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00064",
+                    "Mis à jour le ",
+                  ),
+                ),
                 TextSpan(
                   text: "15/06/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
@@ -543,22 +761,52 @@ class _AfdAmountTable extends StatelessWidget {
             ),
             child: Row(
               children: [
-                headerCell("Délit", flex: 5),
-                headerCell("Minorée", flex: 2, align: TextAlign.right),
+                headerCell(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00065",
+                    "Délit",
+                  ),
+                  flex: 5,
+                ),
+                headerCell(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00066",
+                    "Minorée",
+                  ),
+                  flex: 2,
+                  align: TextAlign.right,
+                ),
                 headerCell("Ordinaire", flex: 2, align: TextAlign.right),
-                headerCell("Majorée", flex: 2, align: TextAlign.right),
+                headerCell(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+                    "f00067",
+                    "Majorée",
+                  ),
+                  flex: 2,
+                  align: TextAlign.right,
+                ),
               ],
             ),
           ),
           row(
-            delit:
-                "Conduite d’un véhicule sans permis OU avec permis d’une catégorie non autorisée",
+            delit: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00068",
+              "Conduite d’un véhicule sans permis OU avec permis d’une catégorie non autorisée",
+            ),
             minoree: "640 €",
             ordinaire: "800 €",
             majoree: "1 600 €",
           ),
           row(
-            delit: "Circulation d’un véhicule à moteur sans assurance",
+            delit: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart",
+              "f00069",
+              "Circulation d’un véhicule à moteur sans assurance",
+            ),
             minoree: "400 €*",
             ordinaire: "500 €*",
             majoree: "1 000 €*",

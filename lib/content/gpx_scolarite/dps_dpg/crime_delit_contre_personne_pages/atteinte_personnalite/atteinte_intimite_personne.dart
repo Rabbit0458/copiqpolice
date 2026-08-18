@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class AtteinteIntimitePersonnePage extends StatelessWidget {
   const AtteinteIntimitePersonnePage({super.key});
@@ -59,10 +60,18 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Atteinte à la personnalité",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+            "f00002",
+            "Atteinte à la personnalité",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -77,7 +86,11 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "L’atteinte à l’intimité d’une personne",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+              "f00003",
+              "L’atteinte à l’intimité d’une personne",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -89,16 +102,36 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
 
           // Définition
           _ConditionCard(
-            title: "Définition",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+              "f00004",
+              "Définition",
+            ),
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Le fait d’user de tout moyen afin d’apercevoir les parties intimes d’une personne "
-                "que celle-ci, du fait de son habillement ou de sa présence dans un lieu clos, "
-                "a caché à la vue des tiers, lorsqu’il est commis à l’insu ou sans le consentement "
-                "de la personne, constitue une infraction.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                      "f00005",
+                      "Le fait d’user de tout moyen afin d’apercevoir les parties intimes d’une personne ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                      "f00006",
+                      "que celle-ci, du fait de son habillement ou de sa présence dans un lieu clos, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                      "f00007",
+                      "a caché à la vue des tiers, lorsqu’il est commis à l’insu ou sans le consentement ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                      "f00008",
+                      "de la personne, constitue une infraction.",
+                    ),
               ),
             ],
           ),
@@ -107,22 +140,30 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+              "f00009",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-3-1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00010",
+                    "Article 226-3-1 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
-                  text:
-                      " : prévoit et réprime l’atteinte à l’intimité d’une personne.",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00011",
+                    " : prévoit et réprime l’atteinte à l’intimité d’une personne.",
+                  ),
                 ),
               ]),
             ],
@@ -132,26 +173,56 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
 
           // Élément matériel
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: const [
+            children: [
               _SubTitle(
-                "A) Observation des parties intimes dissimulées d’une personne",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00013",
+                  "A) Observation des parties intimes dissimulées d’une personne",
+                ),
               ),
               _Paragraph(
-                "La loi n°2018-703 du 3 août 2018 prévoit que tout moyen peut être utilisé "
-                "pour apercevoir les parties intimes de la victime.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                      "f00014",
+                      "La loi n°2018-703 du 3 août 2018 prévoit que tout moyen peut être utilisé ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                      "f00015",
+                      "pour apercevoir les parties intimes de la victime.",
+                    ),
               ),
               SizedBox(height: 10),
               _Paragraph(
-                "Le délit est constitué si la victime a caché son intimité à la vue des tiers :",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00016",
+                  "Le délit est constitué si la victime a caché son intimité à la vue des tiers :",
+                ),
               ),
               SizedBox(height: 8),
-              _BulletPoint(text: "soit avec ses habits ;"),
               _BulletPoint(
-                text: "soit parce qu’elle se trouvait dans un lieu clos.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00017",
+                  "soit avec ses habits ;",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00018",
+                  "soit parce qu’elle se trouvait dans un lieu clos.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
@@ -159,18 +230,40 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Cette infraction permet notamment de réprimer l’utilisation d’un miroir pour regarder l’entrejambe "
-                        "de femmes assises ou debout lorsqu’elles sont en robe ou en jupe. Elle vise également les individus "
-                        "qui regardent en cachette dans les cabines d’essayage.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                          "f00019",
+                          "Cette infraction permet notamment de réprimer l’utilisation d’un miroir pour regarder l’entrejambe ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                          "f00020",
+                          "de femmes assises ou debout lorsqu’elles sont en robe ou en jupe. Elle vise également les individus ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                          "f00021",
+                          "qui regardent en cachette dans les cabines d’essayage.",
+                        ),
                   ),
                 ],
               ),
 
               SizedBox(height: 14),
 
-              _SubTitle("B) À l’insu ou sans le consentement"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00022",
+                  "B) À l’insu ou sans le consentement",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir agi à l’insu de la victime ou sans son consentement.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00023",
+                  "L’auteur doit avoir agi à l’insu de la victime ou sans son consentement.",
+                ),
               ),
             ],
           ),
@@ -179,19 +272,43 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
 
           // Élément moral
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+              "f00024",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
-              _SubTitle("A) Conscience de commettre un acte impudique"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00025",
+                  "A) Conscience de commettre un acte impudique",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit avoir conscience de réaliser une observation portant atteinte à la pudeur/intimité de la victime.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00026",
+                  "L’auteur doit avoir conscience de réaliser une observation portant atteinte à la pudeur/intimité de la victime.",
+                ),
               ),
               SizedBox(height: 12),
-              _SubTitle("B) Volonté d’attenter à l’intimité de la personne"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00027",
+                  "B) Volonté d’attenter à l’intimité de la personne",
+                ),
+              ),
               _Paragraph(
-                "L’auteur doit vouloir porter atteinte à l’intimité de la victime, en recherchant l’observation des parties intimes dissimulées.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00028",
+                  "L’auteur doit vouloir porter atteinte à l’intimité de la victime, en recherchant l’observation des parties intimes dissimulées.",
+                ),
               ),
             ],
           ),
@@ -200,42 +317,68 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
 
           // Circonstances aggravantes
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+              "f00029",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph.rich([
                 TextSpan(
-                  text: "Article 226-3-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00030",
+                    "Article 226-3-1 alinéa 2 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " :"),
               ]),
               SizedBox(height: 10),
               _BulletPoint(
-                text:
-                    "Lorsqu’ils sont commis par une personne qui abuse de l’autorité que lui confèrent ses fonctions.",
-              ),
-              _BulletPoint(text: "Lorsqu’ils sont commis sur un mineur."),
-              _BulletPoint(
-                text:
-                    "Lorsqu’ils sont commis sur une personne dont la particulière vulnérabilité (âge, maladie, infirmité, déficience physique ou psychique, état de grossesse) est apparente ou connue de l’auteur.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00031",
+                  "Lorsqu’ils sont commis par une personne qui abuse de l’autorité que lui confèrent ses fonctions.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsqu’ils sont commis par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00032",
+                  "Lorsqu’ils sont commis sur un mineur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsqu’ils sont commis dans un véhicule affecté au transport collectif de voyageurs ou dans un lieu destiné à l’accès à un moyen de transport collectif de voyageurs.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00033",
+                  "Lorsqu’ils sont commis sur une personne dont la particulière vulnérabilité (âge, maladie, infirmité, déficience physique ou psychique, état de grossesse) est apparente ou connue de l’auteur.",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Lorsque des images ont été fixées, enregistrées ou transmises.",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00034",
+                  "Lorsqu’ils sont commis par plusieurs personnes agissant en qualité d’auteur ou de complice.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00035",
+                  "Lorsqu’ils sont commis dans un véhicule affecté au transport collectif de voyageurs ou dans un lieu destiné à l’accès à un moyen de transport collectif de voyageurs.",
+                ),
+              ),
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00036",
+                  "Lorsque des images ont été fixées, enregistrées ou transmises.",
+                ),
               ),
               SizedBox(height: 12),
               _NotaBox(
@@ -243,9 +386,21 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Ces aggravations visent notamment les situations où des individus utilisent un téléphone, "
-                        "un petit appareil photo ou une petite caméra pour filmer l’entrejambe de femmes "
-                        "(assises ou debout) lorsqu’elles sont en robe ou en jupe.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                          "f00037",
+                          "Ces aggravations visent notamment les situations où des individus utilisent un téléphone, ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                          "f00038",
+                          "un petit appareil photo ou une petite caméra pour filmer l’entrejambe de femmes ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                          "f00039",
+                          "(assises ou debout) lorsqu’elles sont en robe ou en jupe.",
+                        ),
                   ),
                 ],
               ),
@@ -256,96 +411,164 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
 
           // Répression + tentative/complicité
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+              "f00040",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
-              _SubTitle("Peines encourues — personnes physiques"),
+            children: [
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00041",
+                  "Peines encourues — personnes physiques",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Qualification simple : "),
                 TextSpan(
-                  text: "1 an d’emprisonnement et 15 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00042",
+                    "Qualification simple : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-3-1 alinéa 1 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00043",
+                    "1 an d’emprisonnement et 15 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00044",
+                    "article 226-3-1 alinéa 1 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 8),
               _Paragraph.rich([
-                TextSpan(text: "Qualification aggravée : "),
                 TextSpan(
-                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00045",
+                    "Qualification aggravée : ",
+                  ),
                 ),
                 TextSpan(
-                  text: "article 226-3-1 alinéa 2 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00046",
+                    "2 ans d’emprisonnement et 30 000 € d’amende — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00047",
+                    "article 226-3-1 alinéa 2 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Personnes morales"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00048",
+                  "Personnes morales",
+                ),
+              ),
               _Paragraph.rich([
                 TextSpan(
-                  text: "Responsabilité pénale prévue expressément par ",
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00049",
+                    "Responsabilité pénale prévue expressément par ",
+                  ),
                 ),
                 TextSpan(
-                  text: "l’article 226-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00050",
+                    "l’article 226-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
 
               SizedBox(height: 12),
 
-              _SubTitle("Tentative & complicité"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00051",
+                  "Tentative & complicité",
+                ),
+              ),
               _Paragraph.rich([
-                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
-                  text: "article 226-5 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00052",
+                    "Tentative : OUI — ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00053",
+                    "article 226-5 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 6),
               _Paragraph.rich([
-                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
-                  text: "l’article 121-6 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00054",
+                    "Complicité : OUI — conformément à ",
                   ),
+                ),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00055",
+                    "l’article 121-6 du Code pénal",
+                  ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: " et "),
                 TextSpan(
-                  text: "l’article 121-7 du Code pénal",
-                  style: TextStyle(
-                    color: _lawRed,
-                    fontWeight: FontWeight.w900,
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                    "f00056",
+                    "l’article 121-7 du Code pénal",
                   ),
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
                 TextSpan(text: "."),
               ]),
               SizedBox(height: 10),
               _Paragraph(
-                "Elle suppose un des faits constitutifs de complicité prévus par la loi : aide et assistance, provocation ou instructions données.",
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/dps_dpg/crime_delit_contre_personne_pages/atteinte_personnalite/atteinte_intimite_personne.dart",
+                  "f00057",
+                  "Elle suppose un des faits constitutifs de complicité prévus par la loi : aide et assistance, provocation ou instructions données.",
+                ),
               ),
             ],
           ),

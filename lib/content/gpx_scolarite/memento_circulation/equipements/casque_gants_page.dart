@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class CasqueGantsPage extends StatelessWidget {
   const CasqueGantsPage({super.key});
@@ -66,10 +67,18 @@ class CasqueGantsPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Équipements",
+          ScolariteText.value(
+            "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+            "f00002",
+            "Équipements",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -84,7 +93,11 @@ class CasqueGantsPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
         children: [
           Text(
-            "Casque & gants de protection",
+            ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+              "f00003",
+              "Casque & gants de protection",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -99,10 +112,18 @@ class CasqueGantsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Sécuriser les usagers des deux-roues / cycles à moteur : port obligatoire d’un casque homologué et attaché, "
-                "et port obligatoire de gants conformes aux équipements de protection individuelle (EPI).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00004",
+                      "Sécuriser les usagers des deux-roues / cycles à moteur : port obligatoire d’un casque homologué et attaché, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00005",
+                      "et port obligatoire de gants conformes aux équipements de protection individuelle (EPI).",
+                    ),
               ),
             ],
           ),
@@ -111,33 +132,58 @@ class CasqueGantsPage extends StatelessWidget {
 
           // ✅ Élément légal en haut
           _ConditionCard(
-            title: "I — Élément légal",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+              "f00006",
+              "I — Élément légal",
+            ),
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                _lawSpan("R. 431-1 à R. 431-1-2 du Code de la route"),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                    "f00007",
+                    "R. 431-1 à R. 431-1-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Champ d’application",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00008",
+                  "Champ d’application",
+                ),
                 bodySpans: [
                   TextSpan(
                     text:
-                        "Motocyclette, cyclomoteur, tricycle ou quadricycle à moteur. "
-                        "Obligation pour le conducteur et le passager.",
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                          "f00009",
+                          "Motocyclette, cyclomoteur, tricycle ou quadricycle à moteur. ",
+                        ) +
+                        ScolariteText.value(
+                          "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                          "f00010",
+                          "Obligation pour le conducteur et le passager.",
+                        ),
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
+              _NotaBox(
                 title: "Exception",
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Sauf conducteurs ou passagers portant la ceinture de sécurité lorsque le véhicule a été réceptionné avec ce dispositif.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00011",
+                      "Sauf conducteurs ou passagers portant la ceinture de sécurité lorsque le véhicule a été réceptionné avec ce dispositif.",
+                    ),
                   ),
                 ],
               ),
@@ -147,72 +193,184 @@ class CasqueGantsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "II — Élément matériel",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+              "f00012",
+              "II — Élément matériel",
+            ),
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              const _SubTitle("A) Casque homologué et attaché"),
-              const _Paragraph(
-                "Tout conducteur ou passager doit être coiffé d’un casque homologué, et ce casque doit être attaché.",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00013",
+                  "A) Casque homologué et attaché",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00014",
+                  "Tout conducteur ou passager doit être coiffé d’un casque homologué, et ce casque doit être attaché.",
+                ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Repères NATINF — conducteur",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00015",
+                  "Repères NATINF — conducteur",
+                ),
                 bodySpans: [
                   _boldSpan("12931"),
-                  const TextSpan(text: " (motocyclette) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00016",
+                      " (motocyclette) • ",
+                    ),
+                  ),
                   _boldSpan("12932"),
-                  const TextSpan(text: " (cyclomoteur) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00017",
+                      " (cyclomoteur) • ",
+                    ),
+                  ),
                   _boldSpan("22921"),
-                  const TextSpan(text: " (tricycle ou quadricycle)."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00018",
+                      " (tricycle ou quadricycle).",
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Repères NATINF — passager",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00019",
+                  "Repères NATINF — passager",
+                ),
                 bodySpans: [
                   _boldSpan("12933"),
-                  const TextSpan(text: " (moto / cyclo) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00020",
+                      " (moto / cyclo) • ",
+                    ),
+                  ),
                   _boldSpan("22922"),
-                  const TextSpan(text: " (tricycle ou quadricycle)."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00021",
+                      " (tricycle ou quadricycle).",
+                    ),
+                  ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("B) Gants conformes (EPI)"),
-              const _Paragraph(
-                "Le conducteur et, selon les cas, le passager doivent porter des gants conformes à la réglementation "
-                "relative aux équipements de protection individuelle (EPI).",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00022",
+                  "B) Gants conformes (EPI)",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00023",
+                      "Le conducteur et, selon les cas, le passager doivent porter des gants conformes à la réglementation ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00024",
+                      "relative aux équipements de protection individuelle (EPI).",
+                    ),
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Repères NATINF — conducteur",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00025",
+                  "Repères NATINF — conducteur",
+                ),
                 bodySpans: [
                   _boldSpan("32034"),
-                  const TextSpan(text: " (motocyclette) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00026",
+                      " (motocyclette) • ",
+                    ),
+                  ),
                   _boldSpan("32033"),
-                  const TextSpan(text: " (cyclomoteur) • "),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00027",
+                      " (cyclomoteur) • ",
+                    ),
+                  ),
                   _boldSpan("32035"),
-                  const TextSpan(text: " (tricycle ou quadricycle)."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00028",
+                      " (tricycle ou quadricycle).",
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 10),
               _NotaBox(
-                title: "Repère NATINF — passager",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00029",
+                  "Repère NATINF — passager",
+                ),
                 bodySpans: [
                   _boldSpan("32032"),
-                  const TextSpan(text: " (quel que soit le cycle à moteur)."),
+                  TextSpan(
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00030",
+                      " (quel que soit le cycle à moteur).",
+                    ),
+                  ),
                 ],
               ),
 
               const SizedBox(height: 14),
 
-              const _SubTitle("C) Mention E.D.P.M."),
-              const _Paragraph(
-                "Le port du casque pour les engins de déplacement personnel motorisés (EDPM) est traité dans la rubrique "
-                "« Règles de circulation des E.D.P.M. / Dispositions particulières… ».",
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00031",
+                  "C) Mention E.D.P.M.",
+                ),
+              ),
+              _Paragraph(
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00032",
+                      "Le port du casque pour les engins de déplacement personnel motorisés (EDPM) est traité dans la rubrique ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00033",
+                      "« Règles de circulation des E.D.P.M. / Dispositions particulières… ».",
+                    ),
               ),
             ],
           ),
@@ -220,14 +378,26 @@ class CasqueGantsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "III — Élément moral",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+              "f00034",
+              "III — Élément moral",
+            ),
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Infractions constatées par le non-port de l’équipement obligatoire (casque non porté, non attaché, "
-                "ou absence de gants conformes). La matérialité du manquement suffit en pratique.",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00035",
+                      "Infractions constatées par le non-port de l’équipement obligatoire (casque non porté, non attaché, ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00036",
+                      "ou absence de gants conformes). La matérialité du manquement suffit en pratique.",
+                    ),
               ),
             ],
           ),
@@ -235,14 +405,26 @@ class CasqueGantsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "IV — Circonstances aggravantes",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+              "f00037",
+              "IV — Circonstances aggravantes",
+            ),
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: const [
+            children: [
               _Paragraph(
-                "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento. "
-                "En revanche, plusieurs manquements peuvent être relevés séparément (ex. casque + gants).",
+                ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00038",
+                      "Aucune circonstance aggravante spécifique n’est mentionnée dans l’extrait du mémento. ",
+                    ) +
+                    ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00039",
+                      "En revanche, plusieurs manquements peuvent être relevés séparément (ex. casque + gants).",
+                    ),
               ),
             ],
           ),
@@ -250,25 +432,54 @@ class CasqueGantsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "V — Répression",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+              "f00040",
+              "V — Répression",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
             children: [
-              const _SubTitle("Casque (R. 431-1 C.R.)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00041",
+                  "Casque (R. 431-1 C.R.)",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Base : "),
-                _lawSpan("R. 431-1 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                    "f00042",
+                    "Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                    "f00043",
+                    "R. 431-1 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Casque : contravention (4e classe). Immobilisation possible. Retrait de 3 points (conducteur).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00044",
+                  "Casque : contravention (4e classe). Immobilisation possible. Retrait de 3 points (conducteur).",
+                ),
               ),
               const SizedBox(height: 8),
               _NotaBox(
-                title: "NATINF (casque)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00045",
+                  "NATINF (casque)",
+                ),
                 bodySpans: [
                   _boldSpan("12931"),
                   const TextSpan(text: " • "),
@@ -285,20 +496,45 @@ class CasqueGantsPage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              const _SubTitle("Gants (R. 431-1-2 C.R.)"),
+              _SubTitle(
+                ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00046",
+                  "Gants (R. 431-1-2 C.R.)",
+                ),
+              ),
               _Paragraph.rich([
-                const TextSpan(text: "Base : "),
-                _lawSpan("R. 431-1-2 du Code de la route"),
+                TextSpan(
+                  text: ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                    "f00047",
+                    "Base : ",
+                  ),
+                ),
+                _lawSpan(
+                  ScolariteText.value(
+                    "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                    "f00048",
+                    "R. 431-1-2 du Code de la route",
+                  ),
+                ),
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              const _BulletPoint(
-                text:
-                    "Gants : contravention (3e classe). Retrait de 1 point (moto, tricycle ou quadricycle).",
+              _BulletPoint(
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00049",
+                  "Gants : contravention (3e classe). Retrait de 1 point (moto, tricycle ou quadricycle).",
+                ),
               ),
               const SizedBox(height: 8),
               _NotaBox(
-                title: "NATINF (gants)",
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00050",
+                  "NATINF (gants)",
+                ),
                 bodySpans: [
                   _boldSpan("32034"),
                   const TextSpan(text: " • "),
@@ -311,12 +547,19 @@ class CasqueGantsPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              const _NotaBox(
-                title: "Contrôles associés",
+              _NotaBox(
+                title: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00051",
+                  "Contrôles associés",
+                ),
                 bodySpans: [
                   TextSpan(
-                    text:
-                        "Le mémento mentionne des contrôles DIA et dépistage stupéfiants facultatifs sur plusieurs NATINF de cette rubrique.",
+                    text: ScolariteText.value(
+                      "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                      "f00052",
+                      "Le mémento mentionne des contrôles DIA et dépistage stupéfiants facultatifs sur plusieurs NATINF de cette rubrique.",
+                    ),
                   ),
                 ],
               ),
@@ -326,18 +569,28 @@ class CasqueGantsPage extends StatelessWidget {
           const SizedBox(height: 14),
 
           _ConditionCard(
-            title: "VI — Tentative & complicité",
+            title: ScolariteText.value(
+              "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+              "f00053",
+              "VI — Tentative & complicité",
+            ),
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: const [
+            children: [
               _BulletPoint(
-                text:
-                    "Tentative : NON (contraventions liées à un manquement constaté).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00054",
+                  "Tentative : NON (contraventions liées à un manquement constaté).",
+                ),
               ),
               _BulletPoint(
-                text:
-                    "Complicité : NON (obligation personnelle de l’usager/occupant).",
+                text: ScolariteText.value(
+                  "lib/content/gpx_scolarite/memento_circulation/equipements/casque_gants_page.dart",
+                  "f00055",
+                  "Complicité : NON (obligation personnelle de l’usager/occupant).",
+                ),
               ),
             ],
           ),

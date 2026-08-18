@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaPpGavConditionsPlacementPage extends StatelessWidget {
   const PaPpGavConditionsPlacementPage({super.key});
@@ -35,16 +36,16 @@ class PaPpGavConditionsPlacementPage extends StatelessWidget {
     const cardIndigoAccent = Color(0xFF4527A0);
 
     Widget sectionTitle(String text) => Padding(
-          padding: const EdgeInsets.only(top: 22, bottom: 8),
-          child: Text(
-            text,
-            style: GoogleFonts.fustat(
-              fontWeight: FontWeight.w900,
-              fontSize: 15,
-              color: cardBlueAccent,
-            ),
-          ),
-        );
+      padding: const EdgeInsets.only(top: 22, bottom: 8),
+      child: Text(
+        text,
+        style: GoogleFonts.fustat(
+          fontWeight: FontWeight.w900,
+          fontSize: 15,
+          color: cardBlueAccent,
+        ),
+      ),
+    );
 
     Widget condCard({
       required Color bg,
@@ -52,48 +53,47 @@ class PaPpGavConditionsPlacementPage extends StatelessWidget {
       required IconData icon,
       required String title,
       required String body,
-  }) =>
-        Container(
-          margin: const EdgeInsets.only(bottom: 12),
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: accent.withValues(alpha: .3)),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Icon(icon, color: accent, size: 22),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      title,
-                      style: GoogleFonts.fustat(
-                        fontWeight: FontWeight.w800,
-                        fontSize: 13.5,
-                        color: accent,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      body,
-                      style: GoogleFonts.fustat(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 13,
-                        height: 1.4,
-                        color: textSoft,
-                      ),
-                    ),
-                  ],
+    }) => Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: accent.withValues(alpha: .3)),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(icon, color: accent, size: 22),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: GoogleFonts.fustat(
+                    fontWeight: FontWeight.w800,
+                    fontSize: 13.5,
+                    color: accent,
+                  ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 4),
+                Text(
+                  body,
+                  style: GoogleFonts.fustat(
+                    fontWeight: FontWeight.w500,
+                    fontSize: 13,
+                    height: 1.4,
+                    color: textSoft,
+                  ),
+                ),
+              ],
+            ),
           ),
-        );
+        ],
+      ),
+    );
 
     return Scaffold(
       backgroundColor: bg,
@@ -104,10 +104,18 @@ class PaPpGavConditionsPlacementPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          'Conditions GAV',
+          ScolariteText.value(
+            "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+            "f00002",
+            'Conditions GAV',
+          ),
           style: GoogleFonts.fustat(
             fontWeight: FontWeight.w900,
             fontSize: 17.5,
@@ -120,7 +128,11 @@ class PaPpGavConditionsPlacementPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 32),
         children: [
           Text(
-            'Conditions de placement en garde à vue',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00003",
+              'Conditions de placement en garde à vue',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -130,7 +142,11 @@ class PaPpGavConditionsPlacementPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Art. 62-2 CPP — Placement & durée',
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00004",
+              'Art. 62-2 CPP — Placement & durée',
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 13,
@@ -140,83 +156,163 @@ class PaPpGavConditionsPlacementPage extends StatelessWidget {
           const SizedBox(height: 20),
 
           // ----------------------------------------------------------------
-          sectionTitle('1. Conditions légales de placement (art. 62-2 CPP)'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00005",
+              '1. Conditions légales de placement (art. 62-2 CPP)',
+            ),
+          ),
           // ----------------------------------------------------------------
           condCard(
             bg: cardBlue,
             accent: cardBlueAccent,
             icon: Icons.gavel_outlined,
-            title: 'Raisons plausibles de soupçon',
-            body:
-                'Il doit exister des raisons plausibles de soupçonner que la personne a commis ou tenté de commettre un crime ou un délit puni d\'une peine d\'emprisonnement.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00006",
+              'Raisons plausibles de soupçon',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00007",
+              'Il doit exister des raisons plausibles de soupçonner que la personne a commis ou tenté de commettre un crime ou un délit puni d\'une peine d\'emprisonnement.',
+            ),
           ),
           condCard(
             bg: cardBlue,
             accent: cardBlueAccent,
             icon: Icons.list_alt_outlined,
-            title: 'Nécessité de la mesure (l\'une des conditions)',
-            body:
-                '• Permettre l\'exécution des investigations\n• Garantir la représentation en justice\n• Empêcher une modification des preuves ou indices\n• Empêcher des pressions sur victimes ou témoins\n• Empêcher la concertation avec des coauteurs ou complices\n• Garantir la mise en œuvre de mesures destinées à faire cesser le crime',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00008",
+              'Nécessité de la mesure (l\'une des conditions)',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00009",
+              '• Permettre l\'exécution des investigations\n• Garantir la représentation en justice\n• Empêcher une modification des preuves ou indices\n• Empêcher des pressions sur victimes ou témoins\n• Empêcher la concertation avec des coauteurs ou complices\n• Garantir la mise en œuvre de mesures destinées à faire cesser le crime',
+            ),
           ),
 
           // ----------------------------------------------------------------
-          sectionTitle('2. Qui peut placer en GAV ?'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00010",
+              '2. Qui peut placer en GAV ?',
+            ),
+          ),
           // ----------------------------------------------------------------
           condCard(
             bg: cardGreen,
             accent: cardGreenAccent,
             icon: Icons.badge_outlined,
-            title: 'Officier de Police Judiciaire (OPJ)',
-            body:
-                'Seul l\'OPJ peut décider du placement en GAV. L\'APJ et l\'APJA peuvent mener des auditions mais ne peuvent pas ordonner de GAV.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00011",
+              'Officier de Police Judiciaire (OPJ)',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00012",
+              'Seul l\'OPJ peut décider du placement en GAV. L\'APJ et l\'APJA peuvent mener des auditions mais ne peuvent pas ordonner de GAV.',
+            ),
           ),
           condCard(
             bg: cardGreen,
             accent: cardGreenAccent,
             icon: Icons.account_balance_outlined,
-            title: 'Information du Procureur',
-            body:
-                'L\'OPJ doit informer sans délai le Procureur de la République du placement en GAV. Le Parquet peut mettre fin à la mesure à tout moment.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00013",
+              'Information du Procureur',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00014",
+              'L\'OPJ doit informer sans délai le Procureur de la République du placement en GAV. Le Parquet peut mettre fin à la mesure à tout moment.',
+            ),
           ),
 
           // ----------------------------------------------------------------
-          sectionTitle('3. Durée de la garde à vue'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00015",
+              '3. Durée de la garde à vue',
+            ),
+          ),
           // ----------------------------------------------------------------
           condCard(
             bg: cardOrange,
             accent: cardOrangeAccent,
             icon: Icons.hourglass_empty_outlined,
-            title: 'Durée initiale : 24 heures',
-            body:
-                'La garde à vue ne peut excéder 24 heures à compter du placement effectif de la personne.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00016",
+              'Durée initiale : 24 heures',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00017",
+              'La garde à vue ne peut excéder 24 heures à compter du placement effectif de la personne.',
+            ),
           ),
           condCard(
             bg: cardOrange,
             accent: cardOrangeAccent,
             icon: Icons.hourglass_full_outlined,
-            title: 'Prolongation : + 24 heures',
-            body:
-                'Sur autorisation du Procureur de la République (ou du juge des libertés), la GAV peut être prolongée une fois pour une durée maximale de 24 heures supplémentaires.\n\nTotal possible : 48 heures.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00018",
+              'Prolongation : + 24 heures',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00019",
+              'Sur autorisation du Procureur de la République (ou du juge des libertés), la GAV peut être prolongée une fois pour une durée maximale de 24 heures supplémentaires.\n\nTotal possible : 48 heures.',
+            ),
           ),
           condCard(
             bg: cardOrange,
             accent: cardOrangeAccent,
             icon: Icons.dangerous_outlined,
-            title: 'Durées spéciales (régimes dérogatoires)',
-            body:
-                '• Criminalité organisée : jusqu\'à 96 heures\n• Terrorisme : jusqu\'à 144 heures (6 jours)\n• Ces prolongations nécessitent l\'autorisation du JLD.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00020",
+              'Durées spéciales (régimes dérogatoires)',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00021",
+              '• Criminalité organisée : jusqu\'à 96 heures\n• Terrorisme : jusqu\'à 144 heures (6 jours)\n• Ces prolongations nécessitent l\'autorisation du JLD.',
+            ),
           ),
 
           // ----------------------------------------------------------------
-          sectionTitle('4. PV de placement en GAV'),
+          sectionTitle(
+            ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00022",
+              '4. PV de placement en GAV',
+            ),
+          ),
           // ----------------------------------------------------------------
           condCard(
             bg: cardIndigo,
             accent: cardIndigoAccent,
             icon: Icons.assignment_outlined,
-            title: 'Contenu du PV',
-            body:
-                'Le PV de placement doit mentionner :\n• La date et l\'heure du placement\n• Les motifs justifiant la GAV\n• La nature de l\'infraction\n• La notification des droits (mention explicite)',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00023",
+              'Contenu du PV',
+            ),
+            body: ScolariteText.value(
+              "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+              "f00024",
+              'Le PV de placement doit mentionner :\n• La date et l\'heure du placement\n• Les motifs justifiant la GAV\n• La nature de l\'infraction\n• La notification des droits (mention explicite)',
+            ),
           ),
 
           const SizedBox(height: 8),
@@ -235,17 +331,24 @@ class PaPpGavConditionsPlacementPage extends StatelessWidget {
                   height: 1.45,
                   color: textSoft,
                 ),
-                children: const [
+                children: [
                   TextSpan(
-                    text: 'À retenir : ',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+                      "f00025",
+                      'À retenir : ',
+                    ),
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
                       color: cardIndigoAccent,
                     ),
                   ),
                   TextSpan(
-                    text:
-                        'La GAV est une mesure privative de liberté soumise au contrôle du Parquet. Toute irrégularité dans le placement ou la notification des droits peut entraîner la nullité de la procédure.',
+                    text: ScolariteText.value(
+                      "lib/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart",
+                      "f00026",
+                      'La GAV est une mesure privative de liberté soumise au contrôle du Parquet. Toute irrégularité dans le placement ou la notification des droits peut entraîner la nullité de la procédure.',
+                    ),
                   ),
                 ],
               ),

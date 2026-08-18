@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/scolarite_text.dart';
 
 class PaVoisinesDuVolContenuPage extends StatelessWidget {
   const PaVoisinesDuVolContenuPage({super.key});
 
-  static const String routeName =
-      '/pa/dps_dpg/atteintes_biens/voisines_du_vol';
+  static const String routeName = '/pa/dps_dpg/atteintes_biens/voisines_du_vol';
 
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -23,10 +25,18 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.of(context).maybePop(),
           icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
-          tooltip: 'Retour',
+          tooltip: ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+            "f00001",
+            'Retour',
+          ),
         ),
         title: Text(
-          "Crimes & délits contre les biens",
+          ScolariteText.value(
+            "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+            "f00002",
+            "Crimes & délits contre les biens",
+          ),
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.fustat(
@@ -41,7 +51,11 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(18, 8, 18, 24),
         children: [
           Text(
-            "Les infractions voisines du vol",
+            ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00003",
+              "Les infractions voisines du vol",
+            ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w900,
               fontSize: 21,
@@ -51,8 +65,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Accédez aux fiches essentielles sur les infractions voisines du vol "
-            "(définitions, éléments constitutifs, aggravations et répression).",
+            ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+                  "f00004",
+                  "Accédez aux fiches essentielles sur les infractions voisines du vol ",
+                ) +
+                ScolariteText.value(
+                  "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+                  "f00005",
+                  "(définitions, éléments constitutifs, aggravations et répression).",
+                ),
             style: GoogleFonts.fustat(
               fontWeight: FontWeight.w500,
               fontSize: 13.5,
@@ -65,8 +87,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           // ================= 1 =================
           _ModuleCard(
             tag: 'demande_fonds_sous_contrainte',
-            title: "La demande de fonds sous contrainte",
-            subtitle: "Cadre légal, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00006",
+              "La demande de fonds sous contrainte",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00007",
+              "Cadre légal, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -80,8 +110,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           // ================= 2 =================
           _ModuleCard(
             tag: 'abus_de_confiance',
-            title: "L’abus de confiance",
-            subtitle: "Qualification, éléments et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00008",
+              "L’abus de confiance",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00009",
+              "Qualification, éléments et répression.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -95,8 +133,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           // ================= 3 =================
           _ModuleCard(
             tag: 'chantage',
-            title: "Le chantage",
-            subtitle: "Définition, caractérisation et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00010",
+              "Le chantage",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00011",
+              "Définition, caractérisation et sanctions.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -110,8 +156,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           // ================= 4 =================
           _ModuleCard(
             tag: 'filouteries',
-            title: "Les filouteries",
-            subtitle: "Conditions, variantes et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00012",
+              "Les filouteries",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00013",
+              "Conditions, variantes et répression.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -125,8 +179,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           // ================= 5 =================
           _ModuleCard(
             tag: 'escroquerie',
-            title: "L’escroquerie",
-            subtitle: "Manœuvres, éléments constitutifs et sanctions.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00014",
+              "L’escroquerie",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00015",
+              "Manœuvres, éléments constitutifs et sanctions.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -140,8 +202,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           // ================= 6 =================
           _ModuleCard(
             tag: 'extorsion',
-            title: "L’extorsion",
-            subtitle: "Violences/menaces, remise et répression.",
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00016",
+              "L’extorsion",
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00017",
+              "Violences/menaces, remise et répression.",
+            ),
             imagePath: 'assets/images/stad.jpeg',
             textMain: textMain,
             textSoft: textSoft,
@@ -156,9 +226,16 @@ class PaVoisinesDuVolContenuPage extends StatelessWidget {
           // ================= QUIZ =================
           _ModuleCard(
             tag: 'quiz_voisines_du_vol',
-            title: 'Quiz — Infractions voisines du vol',
-            subtitle:
-                'Testez vos connaissances sur les définitions, éléments constitutifs et sanctions.',
+            title: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00018",
+              'Quiz — Infractions voisines du vol',
+            ),
+            subtitle: ScolariteText.value(
+              "lib/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart",
+              "f00019",
+              'Testez vos connaissances sur les définitions, éléments constitutifs et sanctions.',
+            ),
             imagePath: 'assets/images/quiz.jpeg',
             textMain: textMain,
             textSoft: textSoft,
